@@ -636,8 +636,7 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+                            this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
                         }
@@ -674,8 +673,7 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
+                            this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
                         }
@@ -737,8 +735,7 @@ this.setPaused(false);
 
 
     public isGameOver(): boolean{
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
     
 
 
@@ -1160,8 +1157,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
 ;
     
-this.baseGameStatistics!.add(new StringMaker().
-                            append(StartCanvas.BOT_GAME_STATS)!.append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
+this.baseGameStatistics!.add(new StringMaker().append(StartCanvas.BOT_GAME_STATS)!.append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 this.baseGameStatistics!.init();
     

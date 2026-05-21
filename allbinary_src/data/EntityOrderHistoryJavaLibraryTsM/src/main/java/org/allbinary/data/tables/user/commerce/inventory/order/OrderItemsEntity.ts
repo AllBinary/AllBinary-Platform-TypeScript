@@ -167,8 +167,7 @@ i < itemsSize; i++)
     
 vector= new Vector();
     
-vector.add(new OrderItemIdGenerator().
-                            getNext());
+vector.add(new OrderItemIdGenerator().getNext());
     
 vector.add(order.getId());
     

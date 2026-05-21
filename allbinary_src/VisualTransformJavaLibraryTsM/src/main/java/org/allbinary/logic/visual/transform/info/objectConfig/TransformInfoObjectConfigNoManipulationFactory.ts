@@ -92,8 +92,7 @@ private constructor (){
 ;
     
 
-    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(objectConfigFileAbPath)!;
+    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).get(objectConfigFileAbPath)!;
 ;
     
 

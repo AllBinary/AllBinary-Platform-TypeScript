@@ -66,8 +66,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-                        if(new InitInfoEntity().
-                            dropTable())
+                        if(new InitInfoEntity().dropTable())
                         
 
 
@@ -112,8 +111,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new InitInfoEntity().
-                            createTable();;
+                        return new InitInfoEntity().createTable();;
     
 
                 //: 

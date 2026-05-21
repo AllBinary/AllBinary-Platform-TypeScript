@@ -273,8 +273,7 @@ this.inGameProcessor= this.IN_GAME_PROCESSOR;
     readonly ADD_EARLY_PORTION: string = "addEarlyPortion";
 
     public addEarlyPortion(value: number, text: string, index: number){
-this.setText(new StringMaker().
-                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
+this.setText(new StringMaker().append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
     
 this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
     
@@ -282,8 +281,7 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
 
 
     public addPortion(value: number, text: string, index: number){
-this.setText(new StringMaker().
-                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
+this.setText(new StringMaker().append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
     
 PreLogUtil.put(this.text, this, this.ADD_PORTION);
     

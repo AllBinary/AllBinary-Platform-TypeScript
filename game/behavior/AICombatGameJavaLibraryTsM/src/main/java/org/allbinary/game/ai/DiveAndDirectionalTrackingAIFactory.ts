@@ -85,15 +85,13 @@ export class DiveAndDirectionalTrackingAIFactory
                                     }
                                 
 
-    var hashtable2: Hashtable<any, any> = new BasicProbabilityAIDataFactory().
-                            getInstance()!;
+    var hashtable2: Hashtable<any, any> = new BasicProbabilityAIDataFactory().getInstance()!;
 ;
     
 hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
     
 
-    var artificialIntelligenceInterface: ArtificialIntelligenceInterface = new BasicRandomAIFactory().
-                            getInstance(hashtable2, ownerLayerInterface, gameInput)!;
+    var artificialIntelligenceInterface: ArtificialIntelligenceInterface = new BasicRandomAIFactory().getInstance(hashtable2, ownerLayerInterface, gameInput)!;
 ;
     
 

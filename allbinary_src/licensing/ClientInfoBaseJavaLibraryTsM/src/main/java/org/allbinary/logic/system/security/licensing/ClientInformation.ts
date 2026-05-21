@@ -92,8 +92,7 @@ this.version= version;
     
 this.specialName= specialName;
     
-this.shortName= new StringMaker().
-                            append(shortName)!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(version)!.toString();
+this.shortName= new StringMaker().append(shortName)!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(version)!.toString();
     
 this.init();
     

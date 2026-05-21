@@ -407,8 +407,7 @@ this.glVersion= this.VERSION_UNK;
                         if(this.possiblyAccelerated)
                         
                                     {
-                                    PreLogUtil.put(new StringMaker().
-                            append("VBO:?")!.appendboolean((this.glInstanceVersion == this.VERSION_1_1))!.append("||")!.appendboolean(this.isExtension(openGLFeatureFactory!.OPENGL_VERTEX_BUFFER_OBJECT))!.toString(), this, METHOD_NAME);
+                                    PreLogUtil.put(new StringMaker().append("VBO:?")!.appendboolean((this.glInstanceVersion == this.VERSION_1_1))!.append("||")!.appendboolean(this.isExtension(openGLFeatureFactory!.OPENGL_VERTEX_BUFFER_OBJECT))!.toString(), this, METHOD_NAME);
     
 
                         if((this.glInstanceVersion == this.VERSION_1_1 || this.isExtension(openGLFeatureFactory!.OPENGL_VERTEX_BUFFER_OBJECT)))

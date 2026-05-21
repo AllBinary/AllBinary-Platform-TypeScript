@@ -63,8 +63,7 @@ public constructor (size: number){
                                     
 
 
-                            throw new IllegalArgumentException(new StringMaker().
-                            append("Init Size Exception: ")!.appendint(size)!.toString());
+                            throw new IllegalArgumentException(new StringMaker().append("Init Size Exception: ")!.appendint(size)!.toString());
                     
 
                                     }

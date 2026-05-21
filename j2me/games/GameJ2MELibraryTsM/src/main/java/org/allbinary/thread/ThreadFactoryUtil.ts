@@ -126,8 +126,7 @@ export class ThreadFactoryUtil
     var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
+PreLogUtil.put(new StringMaker().append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
@@ -139,8 +138,7 @@ primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
                                     }
                                 
                         else {
-                            PreLogUtil.put(new StringMaker().
-                            append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
+                            PreLogUtil.put(new StringMaker().append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;

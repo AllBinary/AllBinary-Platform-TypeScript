@@ -394,8 +394,7 @@ name= this.enumerationUtil!.nextElement(enumeration)! as string;
                 //@Throws(Exception.constructor)
             
     updateExclusive(selectedChoiceLabel: string){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive");
     
 
     var gameFeature: Feature = Feature.getInstance(selectedChoiceLabel)!;

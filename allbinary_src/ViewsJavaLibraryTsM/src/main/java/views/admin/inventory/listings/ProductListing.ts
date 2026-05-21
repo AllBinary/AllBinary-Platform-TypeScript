@@ -281,8 +281,7 @@ StreamUtil.getInstance()!.close(idOutData);
 hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
     
 
-    var pageName: string = new Replace(hashMap).
-                            all(keywordData)!;
+    var pageName: string = new Replace(hashMap).all(keywordData)!;
 ;
     
 
@@ -346,8 +345,7 @@ index < productListingPages!.length; index++)
                         if(index > 0)
                         
                                     {
-                                    indexStr= new Integer(index).
-                            toString();
+                                    indexStr= new Integer(index).toString();
     
 
                                     }

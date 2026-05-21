@@ -281,8 +281,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
                                 }
-                            .
-                            start();
+                            .start();
     
 }
 

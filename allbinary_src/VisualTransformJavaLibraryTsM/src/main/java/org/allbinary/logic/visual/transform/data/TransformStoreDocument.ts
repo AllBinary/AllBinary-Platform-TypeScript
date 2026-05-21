@@ -85,8 +85,7 @@ public constructor (pageContext: PageContext, weblisketSession: WeblisketSession
                                 
 this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(storeName)!.toXmlNode(this.getDoc()));
     
-this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as HttpServletRequest).
-                            toXmlNode(this.getDoc()));
+this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as HttpServletRequest).toXmlNode(this.getDoc()));
     
 
                 //: 

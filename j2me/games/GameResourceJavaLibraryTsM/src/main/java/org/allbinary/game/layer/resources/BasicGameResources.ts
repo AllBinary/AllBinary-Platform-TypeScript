@@ -92,8 +92,7 @@ protected constructor (){
                             
 
 
-                            throw new Exception(new StringMaker().
-                            append("Invalid Value: ")!.appendint(scale)!.toString());
+                            throw new Exception(new StringMaker().append("Invalid Value: ")!.appendint(scale)!.toString());
                     
 
                         }

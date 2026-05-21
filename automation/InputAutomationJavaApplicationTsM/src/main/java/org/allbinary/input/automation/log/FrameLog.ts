@@ -64,14 +64,11 @@ export class FrameLog
          {
         
 
-    private static frameBytes: number[] = .toCharArray().
-                            encodeToByteArray()!;
+    private static frameBytes: number[] = .toCharArray().encodeToByteArray()!;
 
-    private static info: number[] = .toCharArray().
-                            encodeToByteArray()!;
+    private static info: number[] = .toCharArray().encodeToByteArray()!;
 
-    private static actions: number[] = .toCharArray().
-                            encodeToByteArray()!;
+    private static actions: number[] = .toCharArray().encodeToByteArray()!;
 
     private readonly frame: Long
 

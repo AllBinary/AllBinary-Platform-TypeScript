@@ -272,8 +272,7 @@ rootView= replace.all(rootView);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Template: " +completeTemplateViewBytes.decodeToString().
-                            toString(), this, "createInputStream()");
+                                    this.logUtil!.putF("Template: " +completeTemplateViewBytes.decodeToString().toString(), this, "createInputStream()");
     
 
                                     }

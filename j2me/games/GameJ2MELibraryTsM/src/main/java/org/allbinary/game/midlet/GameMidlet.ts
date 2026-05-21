@@ -246,8 +246,7 @@ export class GameMidlet extends ProgressMidlet implements CommandListener {
 
     private readonly NO_DISPLAYABLE: string = "No Displayable";
 
-    private readonly COMMAND_ACTION: string = new StringMaker().
-                            append("GameMidlet::")!.append(this.midletStrings!.COMMAND_ACTION)!.toString()!;
+    private readonly COMMAND_ACTION: string = new StringMaker().append("GameMidlet::")!.append(this.midletStrings!.COMMAND_ACTION)!.toString()!;
 
     private readonly PAUSE_APP_BACKGROUND: string = "pauseAppBackground";
 
@@ -597,8 +596,7 @@ this.notifyDestroyed();
 
                                     }
                                 
-PreLogUtil.put(new StringMaker().
-                            append(this.COMMAND_NAME)!.append(label)!.append(this.DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION);
+PreLogUtil.put(new StringMaker().append(this.COMMAND_NAME)!.append(label)!.append(this.DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION);
     
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
@@ -1444,8 +1442,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 this.thread= threadFactoryUtil!.getInstanceGameCanvasRunnable(this.allbinaryGameCanvasRunnableInterface);
     
-this.logUtil!.putF(new StringMaker().
-                            append("Thread Priority: ")!.appendint(this.thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface");
+this.logUtil!.putF(new StringMaker().append("Thread Priority: ")!.appendint(this.thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface");
     
 this.allbinaryGameCanvasRunnableInterface!.setThread(this.thread);
     

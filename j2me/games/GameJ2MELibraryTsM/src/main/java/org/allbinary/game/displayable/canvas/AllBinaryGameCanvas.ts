@@ -1149,8 +1149,7 @@ GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, this.
     var features: Features = Features.getInstance()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable");
+this.logUtil!.putF(new StringMaker().append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable");
     
 this.mediaInit();
     
@@ -1349,8 +1348,7 @@ this.addCommand(gameCommandsFactory!.QUIT_COMMAND);
                         
                                     {
                                     
-                        if(TouchScreenFactory.getInstance()!.isTouch() && new InGameFeatures().
-                            isAny())
+                        if(TouchScreenFactory.getInstance()!.isTouch() && new InGameFeatures().isAny())
                         
                                     {
                                     this.addCommand(InGameOptionsForm.DISPLAY);
@@ -1375,8 +1373,7 @@ this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM);
     var itemLabel: string = item.getLabel()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
+this.logUtil!.putF(new StringMaker().append(this.commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
                         if(item instanceof ChoiceGroup)
@@ -1548,8 +1545,7 @@ this.highScoreSubmitted= highScoreSubmitted;
 
                                     }
                                 
-this.logUtil!.putF(new StringMaker().
-                            append("isHighScoreSubmitted: ")!.appendboolean(highScoreSubmitted)!.toString(), this, "setHighScoreSubmitted");
+this.logUtil!.putF(new StringMaker().append("isHighScoreSubmitted: ")!.appendboolean(highScoreSubmitted)!.toString(), this, "setHighScoreSubmitted");
     
 }
 
@@ -1567,8 +1563,7 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public setGameState(gameState: GameState){
-this.logUtil!.putF(new StringMaker().
-                            append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE);
+this.logUtil!.putF(new StringMaker().append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE);
     
 this.gameState= gameState;
     
@@ -1864,8 +1859,7 @@ this.gameBehavior!.buildGame(this);
 
 
     public buildGame2(){
-PreLogUtil.put(new StringMaker().
-                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, this.BUILD_GAME);
+PreLogUtil.put(new StringMaker().append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, this.BUILD_GAME);
     
 
     var playerGameInput: PlayerGameInput
@@ -1881,8 +1875,7 @@ index >= 0; index--)
         {
 playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
-PreLogUtil.put(new StringMaker().
-                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, this.BUILD_GAME);
+PreLogUtil.put(new StringMaker().append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, this.BUILD_GAME);
     
 playerGameInput!.removeNonAIInputGameKeyEvents();
     
@@ -1945,8 +1938,7 @@ gameInfo!.setCurrentLevel(level);
                 //@Throws(Exception.constructor)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
+this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
     
 
 
@@ -1958,8 +1950,7 @@ this.logUtil!.putF(new StringMaker().
 
 
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
+this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
     
 this.hashtable= hashtable;
     
@@ -1977,8 +1968,7 @@ this.hashtable= hashtable;
     
 hashtable.put(GameInfo.LEVEL_NAME.toString(), level.toString());
     
-this.logUtil!.putF(new StringMaker().
-                            append("End: ")!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "getCurrentStateHashtable");
+this.logUtil!.putF(new StringMaker().append("End: ")!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "getCurrentStateHashtable");
     
 
 
@@ -2470,8 +2460,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     public end(){
 this.screenCapture!.endRecording();
     
-this.baseGameStatistics!.add(new StringMaker().
-                            append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
+this.baseGameStatistics!.add(new StringMaker().append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 this.baseGameStatistics!.init();
     

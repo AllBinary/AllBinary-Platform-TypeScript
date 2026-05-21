@@ -142,8 +142,7 @@ timeHelper!.setStartTimeTNT();
     var motionRectangles: MotionRectangles = motionRectanglesResultsEvent!.getMotionRectangles()!;
 ;
     
-new MotionRectanglesImageInputOutput().
-                            save(motionRectangles, motionRectanglesResultsEvent!.getFrame());
+new MotionRectanglesImageInputOutput().save(motionRectangles, motionRectanglesResultsEvent!.getFrame());
     
 this.getMotionRectanglesVector()!.remove(motionRectangles);
     

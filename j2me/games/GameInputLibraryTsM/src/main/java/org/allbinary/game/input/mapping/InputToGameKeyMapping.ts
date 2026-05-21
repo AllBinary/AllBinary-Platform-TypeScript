@@ -175,8 +175,7 @@ this.set(input, mappedToInput);
 
 
     public remove(input: Input, mappedToInput: Input){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove");
     
 super.remove(input, mappedToInput);
     
@@ -295,8 +294,7 @@ index < this.platformToGameKeyMapping!.length; index++)
                                     }
                                 
                         else {
-                            PreLogUtil.putOE(new StringMaker().
-                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, this.commonStrings!.INIT, new Exception());
+                            PreLogUtil.putOE(new StringMaker().append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, this.commonStrings!.INIT, new Exception());
     
 
                         }

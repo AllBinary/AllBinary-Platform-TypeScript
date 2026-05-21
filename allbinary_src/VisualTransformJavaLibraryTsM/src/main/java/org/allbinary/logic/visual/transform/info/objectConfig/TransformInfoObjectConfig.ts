@@ -528,8 +528,7 @@ index < size; index++)
     var viewNode: Node = viewNodeVector!.get(index) as Node;
 ;
     
-viewVector!.add(new TransformInfoDomNode(viewNode).
-                            getTransformInfoInterface());
+viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
     
 }
 

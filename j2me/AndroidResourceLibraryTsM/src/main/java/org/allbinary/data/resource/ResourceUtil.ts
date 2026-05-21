@@ -134,8 +134,7 @@ this.context= aContext;
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    PreLogUtil.put(new StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId");
+                                    PreLogUtil.put(new StringMaker().append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId");
     
 
                                     }
@@ -154,15 +153,13 @@ this.context= aContext;
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
                                     {
-                                    PreLogUtil.put(new StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource");
+                                    PreLogUtil.put(new StringMaker().append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource");
     
 
                         if(this.containsDuplicate(resource, value))
                         
                                     {
-                                    ForcedLogUtil.log(new StringMaker().
-                            append("Found Duplicate Resource: ")!.append(resource)!.toString(), this);
+                                    ForcedLogUtil.log(new StringMaker().append("Found Duplicate Resource: ")!.append(resource)!.toString(), this);
     
 
                                     }
@@ -232,8 +229,7 @@ this.hashMap!.put(resource, value);
 
 
     public setResources(resources: Resources){
-this.logUtil!.putF(new StringMaker().
-                            append("Resource Loader: ")!.append(resources.constructor.name.toString()!)!.toString(), this, "setResources");
+this.logUtil!.putF(new StringMaker().append("Resource Loader: ")!.append(resources.constructor.name.toString()!)!.toString(), this, "setResources");
     
 this.resources= resources;
     

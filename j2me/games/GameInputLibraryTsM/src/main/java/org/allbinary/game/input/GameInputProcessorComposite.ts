@@ -100,8 +100,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            append(super.toString())!.append(this.NAME_LABEL)!.append(this.name)!.toString();;
+                        return new StringMaker().append(super.toString())!.append(this.NAME_LABEL)!.append(this.name)!.toString();;
     
 }
 

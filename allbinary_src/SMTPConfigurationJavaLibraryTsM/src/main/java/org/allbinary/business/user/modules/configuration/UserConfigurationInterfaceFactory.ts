@@ -85,8 +85,7 @@ export class UserConfigurationInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new UserConfigurationView(configurationNode).
-                            getUserConfigurationInterface() as UserConfigurationInterface;
+                        return new UserConfigurationView(configurationNode).getUserConfigurationInterface() as UserConfigurationInterface;
     
 }
 
@@ -99,8 +98,7 @@ export class UserConfigurationInterfaceFactory
 ;
     
 
-    var documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).
-                            get(abPath)!;
+    var documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).get(abPath)!;
 ;
     
 

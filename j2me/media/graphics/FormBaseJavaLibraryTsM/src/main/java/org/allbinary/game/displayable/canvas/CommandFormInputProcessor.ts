@@ -187,8 +187,7 @@ this.logUtil!.putF(command.toString(), this, this.PROCESS_COMMAND);
                         if(SWTUtil.isSWT && features.isFeature(openGLFeatureFactory!.OPENGL) && command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
                         
                                     {
-                                    new CommandRunnable(this, command).
-                            run();
+                                    new CommandRunnable(this, command).run();
     
 
                                     }
@@ -467,8 +466,7 @@ this.hasPressed= true;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            append(super.toString())!.append(this.NAME_LABEL)!.append(this.form.toString())!.toString();;
+                        return new StringMaker().append(super.toString())!.append(this.NAME_LABEL)!.append(this.form.toString())!.toString();;
     
 }
 

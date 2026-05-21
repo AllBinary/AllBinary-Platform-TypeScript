@@ -151,8 +151,7 @@ this.createInstance(column, row);
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-this.logUtil!.put(new StringMaker().
-                            append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(new StringMaker().append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
 
 

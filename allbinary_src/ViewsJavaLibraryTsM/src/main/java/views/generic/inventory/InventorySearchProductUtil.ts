@@ -119,16 +119,14 @@ export class InventorySearchProductUtil
     var viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;
 ;
     
-viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterface, new Vector()).
-                            toXmlNode(viewDocumentInterface!.getDoc()));
+viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterface, new Vector()).toXmlNode(viewDocumentInterface!.getDoc()));
     
 
     var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;
 ;
     
 
-    var outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
-                            translate(success)!;
+    var outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).translate(success)!;
 ;
     
 

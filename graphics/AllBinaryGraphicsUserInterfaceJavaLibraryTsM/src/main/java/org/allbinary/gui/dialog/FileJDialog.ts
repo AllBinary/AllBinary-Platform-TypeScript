@@ -65,8 +65,7 @@ java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
     public run(){
-new FileJDialog(new javax.swing.JFrame(), true).
-                            setVisible(true);
+new FileJDialog(new javax.swing.JFrame(), true).setVisible(true);
     
 }
 

@@ -172,8 +172,7 @@ index= this.totalDevicesMapped;
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append("Added DeviceId: ")!.appendint(deviceId)!.append(" beyond fast Id list")!.toString(), this, "getPlayerForDevice");
+                            this.logUtil!.putF(new StringMaker().append("Added DeviceId: ")!.appendint(deviceId)!.append(" beyond fast Id list")!.toString(), this, "getPlayerForDevice");
     
 
                         }
@@ -184,8 +183,7 @@ AnalogLocationInputFactory.getInstance()!.addPlayer(this.totalDevicesMapped);
     
 this.totalDevicesMapped++;
     
-this.logUtil!.putF(new StringMaker().
-                            append("Added DeviceId: ")!.appendint(deviceId)!.append(" at: ")!.appendint(index)!.append(" Total: ")!.appendint(this.totalDevicesMapped)!.toString(), this, "getPlayerForDevice");
+this.logUtil!.putF(new StringMaker().append("Added DeviceId: ")!.appendint(deviceId)!.append(" at: ")!.appendint(index)!.append(" Total: ")!.appendint(this.totalDevicesMapped)!.toString(), this, "getPlayerForDevice");
     
 
 
@@ -240,8 +238,7 @@ index >= 0; index--)
 
 
     public setPlayerInPlay(playerInputId: number){
-this.logUtil!.putF(new StringMaker().
-                            append("Setting PlayerInPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerInPlay");
+this.logUtil!.putF(new StringMaker().append("Setting PlayerInPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerInPlay");
     
 this.playersInPlay[playerInputId]= true;
     
@@ -249,8 +246,7 @@ this.playersInPlay[playerInputId]= true;
 
 
     public setPlayerOutOfPlay(playerInputId: number){
-this.logUtil!.putF(new StringMaker().
-                            append("Setting PlayerOutOfPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerOutOfPlay");
+this.logUtil!.putF(new StringMaker().append("Setting PlayerOutOfPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerOutOfPlay");
     
 this.playersInPlay[playerInputId]= false;
     

@@ -80,8 +80,7 @@ this.eventList!.add(gameKeyCompleteMotionGestureInputEvent);
 
 
     public updateAll(){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.appendint(this.eventList!.size())!.toString(), this, "updateAll");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.appendint(this.eventList!.size())!.toString(), this, "updateAll");
     
 
 

@@ -88,8 +88,7 @@ export class StupidTimer
     var WAITING_FOR: string = "Waiting for: ";
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, this.commonStrings!.VISIT);
+PreLogUtil.put(new StringMaker().append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, this.commonStrings!.VISIT);
     
 
     var index: number = 0;
@@ -102,8 +101,7 @@ PreLogUtil.put(new StringMaker().
                         if(index % 10 == 0)
                         
                                     {
-                                    PreLogUtil.put(new StringMaker().
-                            append(WAITING_FOR)!.appendint(index)!.toString(), this, this.commonStrings!.VISIT);
+                                    PreLogUtil.put(new StringMaker().append(WAITING_FOR)!.appendint(index)!.toString(), this, this.commonStrings!.VISIT);
     
 
                                     }
@@ -139,8 +137,7 @@ break;
                         if(tookTooLong)
                         
                                     {
-                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.VISIT, new Exception(new StringMaker().
-                            append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()));
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.VISIT, new Exception(new StringMaker().append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()));
     
 
                                     }

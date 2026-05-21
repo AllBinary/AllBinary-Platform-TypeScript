@@ -95,8 +95,7 @@ import { Node } from '../../org/w3c/dom/Node.js';
 export class CategoryRequestHelper extends ModifyTable {
         
 
-    private static readonly categoryRequest: string = new StringMaker().
-                            append("<")!.append(CategoryData.getInstance()!.REQUEST)!.append(">")!.toString()!;
+    private static readonly categoryRequest: string = new StringMaker().append("<")!.append(CategoryData.getInstance()!.REQUEST)!.append(">")!.toString()!;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -228,8 +227,7 @@ this.setCategoryLoader(requestNode);
     var categoryNode: Node = DomSearchHelper.getNode(categoryData!.NAME, parentCategoryNode!.getChildNodes())!;
 ;
     
-this.categoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getRootInstanceFromNode(categoryNode) as CategoryInterface;
+this.categoryInterface= new StoreCategoryFactory(this.transformInfoInterface).getRootInstanceFromNode(categoryNode) as CategoryInterface;
     
 this.categoryInterface= this.categoryLoaderInterface!.get(this.categoryInterface);
     
@@ -263,8 +261,7 @@ this.logUtil!.putF("Loaded Parent Category", this, "getXmlData()");
 
                                     }
                                 
-this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getInstance(childCategoryNode) as CategoryInterface;
+this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterface).getInstance(childCategoryNode) as CategoryInterface;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -527,8 +524,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
 
         try {
             
-    var document: Document = new CategoryComponent(this.childCategoryInterface).
-                            toXmlDoc()!;
+    var document: Document = new CategoryComponent(this.childCategoryInterface).toXmlDoc()!;
 ;
     
 

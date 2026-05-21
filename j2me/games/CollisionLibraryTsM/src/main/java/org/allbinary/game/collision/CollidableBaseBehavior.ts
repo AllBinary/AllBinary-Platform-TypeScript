@@ -116,8 +116,7 @@ this.collidable= collidable;
 
 
 
-                            throw new Exception(new StringMaker().
-                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString());
+                            throw new Exception(new StringMaker().append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString());
                     
 }
 

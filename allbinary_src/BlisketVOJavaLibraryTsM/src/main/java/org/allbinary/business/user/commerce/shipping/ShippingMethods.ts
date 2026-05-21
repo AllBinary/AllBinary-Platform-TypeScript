@@ -72,11 +72,9 @@ export class ShippingMethods
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
             super();
-        this.defaultShippingMethodInterface= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
-                            getDefaultInstance();
+        this.defaultShippingMethodInterface= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).getDefaultInstance();
     
-this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
-                            getInstance();
+this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).getInstance();
     
 }
 

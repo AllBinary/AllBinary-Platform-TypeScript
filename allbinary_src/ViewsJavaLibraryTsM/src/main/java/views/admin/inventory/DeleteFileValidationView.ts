@@ -85,8 +85,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).
-                            toHashMap()!;
+    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;
 ;
     
 

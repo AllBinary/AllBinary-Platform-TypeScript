@@ -560,8 +560,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                         if(this.rectangleCollisionUtil!.isInside(this.x, this.y -this.halfBorder, this.rectangle.getMaxX() +this.border, this.rectangle.getMaxY() +this.border, point.getX(), point.getY()))
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append(StringUtil.getInstance()!.toString(point))!.append(ScrollSelectionForm.INSIDE_FORM)!.toString(), this, ScrollSelectionForm.IS_IN_FORM);
+                                    this.logUtil!.putF(new StringMaker().append(StringUtil.getInstance()!.toString(point))!.append(ScrollSelectionForm.INSIDE_FORM)!.toString(), this, ScrollSelectionForm.IS_IN_FORM);
     
 
 

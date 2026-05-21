@@ -88,8 +88,7 @@ private constructor (){
 
         try {
             
-    var osString: string = new StringMaker().
-                            append("OperatingSystem Info: ")!.append(this.genericOperatingSystem!.toString())!.toString()!;
+    var osString: string = new StringMaker().append("OperatingSystem Info: ")!.append(this.genericOperatingSystem!.toString())!.toString()!;
 ;
     
 console.log(osString);

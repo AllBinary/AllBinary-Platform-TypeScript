@@ -130,8 +130,7 @@ this.yBorder= yBorder;
     
 this.updateRectangle();
     
-this.logUtil!.putF(new StringMaker().
-                            append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(new StringMaker().append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
 

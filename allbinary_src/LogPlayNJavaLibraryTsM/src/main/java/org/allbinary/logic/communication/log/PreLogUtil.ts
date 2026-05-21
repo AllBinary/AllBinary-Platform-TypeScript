@@ -75,8 +75,7 @@ import { PlayN } from '../../../../../playn/core/PlayN.js';
 
                                     }
                                 
-className= new StringMaker().
-                            append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
+className= new StringMaker().append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
     
 
     var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
@@ -105,8 +104,7 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
 
                                     }
                                 
-className= new StringMaker().
-                            append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
+className= new StringMaker().append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
     
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;

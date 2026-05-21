@@ -151,18 +151,15 @@ this.setTableName(this.tableName);
 
         try {
             
-    var paymentInterface: PaymentInterface = new PaymentEntity().
-                            getDefault(userName)!;
+    var paymentInterface: PaymentInterface = new PaymentEntity().getDefault(userName)!;
 ;
     
 
-    var billingAddress: StreetAddress = new BillingAddressesEntity(userName).
-                            getDefault()!;
+    var billingAddress: StreetAddress = new BillingAddressesEntity(userName).getDefault()!;
 ;
     
 
-    var shippingAddress: StreetAddress = new ShippingAddressesEntity(userName).
-                            getDefault()!;
+    var shippingAddress: StreetAddress = new ShippingAddressesEntity(userName).getDefault()!;
 ;
     
 
@@ -174,8 +171,7 @@ this.setTableName(this.tableName);
 ;
     
 
-    var shippingInterface: ShippingInterface = new ShippingMethods(abeClientInformation, storeFrontInterface).
-                            getShippingInterface(order.getShippingMethod())!;
+    var shippingInterface: ShippingInterface = new ShippingMethods(abeClientInformation, storeFrontInterface).getShippingInterface(order.getShippingMethod())!;
 ;
     
 
@@ -216,8 +212,7 @@ total.add(tax.toString());
     var empty: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;
     
-vector.add(new OrderHistoryIdGenerator().
-                            getNext());
+vector.add(new OrderHistoryIdGenerator().getNext());
     
 
     var ZERO: string = TableDataFactory.getInstance()!.ZERO_STRING;
@@ -234,8 +229,7 @@ vector.add(order.getStoreName());
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 vector.add(ZERO);
@@ -263,15 +257,12 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = new Random().
-                            nextInt(SuperCrypt.KEYMAX)!;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
 ;
     
-vector.add(new SuperCrypt(random).
-                            encrypt(paymentInterface!.getNumber()));
+vector.add(new SuperCrypt(random).encrypt(paymentInterface!.getNumber()));
     
-vector.add(new Integer(random).
-                            toString());
+vector.add(new Integer(random).toString());
     
 
                                     }
@@ -453,8 +444,7 @@ this.insert(vector);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 
@@ -509,8 +499,7 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 

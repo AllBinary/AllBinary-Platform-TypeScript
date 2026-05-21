@@ -76,8 +76,7 @@ export class NewWorkAreaJDialog extends javax.swing.JDialog {
     public static main(args: string[]){
 
         try {
-            new NewWorkAreaJDialog(new MyFrame(), true, new Dimension(100, 100), "testing").
-                            show();
+            new NewWorkAreaJDialog(new MyFrame(), true, new Dimension(100, 100), "testing").show();
     
 
                 //: 

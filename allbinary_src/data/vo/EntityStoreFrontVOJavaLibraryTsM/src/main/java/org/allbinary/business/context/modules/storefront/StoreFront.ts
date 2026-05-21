@@ -205,8 +205,7 @@ public constructor (){
 public constructor (request: HttpServletRequest){
 
             super();
-        this.getFormData(new RequestParams(request).
-                            toHashMap());
+        this.getFormData(new RequestParams(request).toHashMap());
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
@@ -483,8 +482,7 @@ hashMap!.put(
                                                     CommonSeps.getInstance()!.SPACE
                                                 ], this.ONE_EMPTY_STRING_ARRAY);
     
-this.name= new Replace(hashMap).
-                            all(this.name);
+this.name= new Replace(hashMap).all(this.name);
     
 
                                     }
@@ -2038,8 +2036,7 @@ dataVector!.add(this.testFtpPassword);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 dataVector!.add(time);
@@ -2125,8 +2122,7 @@ dataHashMap!.put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);

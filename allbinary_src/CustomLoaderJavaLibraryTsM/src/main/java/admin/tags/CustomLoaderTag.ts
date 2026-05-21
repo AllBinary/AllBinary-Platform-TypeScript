@@ -95,8 +95,7 @@ this.webappPath= value;
 
         try {
             
-    var anyType: any = new CustomLoaderHelperFactory().
-                            getInstance(this.propertiesHashMap, pageContext)!;
+    var anyType: any = new CustomLoaderHelperFactory().getInstance(this.propertiesHashMap, pageContext)!;
 ;
     
 

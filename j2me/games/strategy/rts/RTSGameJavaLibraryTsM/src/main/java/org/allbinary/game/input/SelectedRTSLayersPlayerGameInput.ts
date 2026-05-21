@@ -533,8 +533,7 @@ this.preSelectedRTSLayersList= this.selectedRTSLayersList;
     
 this.selectedRTSLayersList= tempList;
     
-this.logUtil!.putF(new StringMaker().
-                            append("Preselected: ")!.append(this.preSelectedRTSLayersList!.toString())!.toString(), this, "setSelectedRTSLayer");
+this.logUtil!.putF(new StringMaker().append("Preselected: ")!.append(this.preSelectedRTSLayersList!.toString())!.toString(), this, "setSelectedRTSLayer");
     
 
                                     }

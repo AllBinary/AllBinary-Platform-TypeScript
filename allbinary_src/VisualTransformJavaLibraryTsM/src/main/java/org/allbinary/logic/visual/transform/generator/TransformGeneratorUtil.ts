@@ -130,8 +130,7 @@ private constructor (){
 
                         }
                             
-new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
-                            process(result);
+new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).process(result);
     
 
                 //: 

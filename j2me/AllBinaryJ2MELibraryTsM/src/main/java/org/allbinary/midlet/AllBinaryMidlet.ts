@@ -124,15 +124,13 @@ public constructor (){
                                 )
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append(this.SETTING_)!.append(title)!.append(this._DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, this.SET_DISPLAY);
+                                    this.logUtil!.putF(new StringMaker().append(this.SETTING_)!.append(title)!.append(this._DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, this.SET_DISPLAY);
     
 
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, this.SET_DISPLAY);
+                            this.logUtil!.putF(new StringMaker().append(this.SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, this.SET_DISPLAY);
     
 
                         }
@@ -230,8 +228,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
                 //@Throws(Exception.constructor)
             
     public setStartStateHashtable(hashtable: Hashtable<any, any>){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
     
 this.hashtable= hashtable;
     
@@ -241,8 +238,7 @@ this.hashtable= hashtable;
                 //@Throws(Exception.constructor)
             
     public getStartStateHashtable(): Hashtable<any, any>{
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(this.hashtable))!.toString(), this, "getStartStateHashtable");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(this.hashtable))!.toString(), this, "getStartStateHashtable");
     
 
 

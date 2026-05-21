@@ -333,8 +333,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processWaypoint");
 
 
     public processWaypointTrackedWithoutProgress(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, reason: string){
-this.logUtil!.putF(new StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(reason)!.toString(), this, "turnTo");
+this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getName())!.append(reason)!.toString(), this, "turnTo");
     
 }
 
@@ -346,8 +345,7 @@ this.logUtil!.putF(associatedAdvancedRTSGameLayer!.getName(), this, "wander");
 
 
     public targetDestroyed(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-this.logUtil!.putF(new StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" Target Destroyed")!.toString(), this, "selected: processTargeting");
+this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getName())!.append(" Target Destroyed")!.toString(), this, "selected: processTargeting");
     
 }
 
@@ -445,15 +443,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: removeWaypoint");
 
 
     public removeWaypointClear(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-this.logUtil!.putF(new StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" Clearing removed waypoint")!.toString(), this, "selected: removeWaypoint");
+this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getName())!.append(" Clearing removed waypoint")!.toString(), this, "selected: removeWaypoint");
     
 }
 
 
     public clearTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-this.logUtil!.putF(new StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" Cleared Target")!.toString(), this, "selected: clearTarget");
+this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getName())!.append(" Cleared Target")!.toString(), this, "selected: clearTarget");
     
 }
 
@@ -488,8 +484,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 
 
     public targetMovedSoRetarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-this.logUtil!.putF(new StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" - target moved so retargeting")!.toString(), this, "turnTo");
+this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getName())!.append(" - target moved so retargeting")!.toString(), this, "turnTo");
     
 }
 

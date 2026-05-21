@@ -74,8 +74,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = new TransactionEntity().
-                            dropTable()!;
+    var success: string = new TransactionEntity().dropTable()!;
 ;
     
 
@@ -125,8 +124,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = new TransactionEntity().
-                            createTable()!;
+    var success: string = new TransactionEntity().createTable()!;
 ;
     
 

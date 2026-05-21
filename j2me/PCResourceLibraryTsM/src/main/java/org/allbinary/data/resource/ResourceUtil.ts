@@ -129,8 +129,7 @@ this.ext= ext;
                                     
 
 
-                            throw new Exception(new StringMaker().
-                            append("Unable to obtain: ")!.append(resource)!.toString());
+                            throw new Exception(new StringMaker().append("Unable to obtain: ")!.append(resource)!.toString());
                     
 
                                     }
@@ -159,8 +158,7 @@ this.ext= ext;
 ;
     
 
-    var inputStream: InputStream = new FileInputStream(new StringMaker().
-                            append(this.path)!.append(resource)!.append(this.ext)!.toString());
+    var inputStream: InputStream = new FileInputStream(new StringMaker().append(this.path)!.append(resource)!.append(this.ext)!.toString());
 ;
     
 

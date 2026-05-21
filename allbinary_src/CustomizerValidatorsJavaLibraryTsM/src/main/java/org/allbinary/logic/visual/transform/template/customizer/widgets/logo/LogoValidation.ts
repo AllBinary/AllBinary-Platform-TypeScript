@@ -451,8 +451,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "processLogoFile()");
 
                                     }
                                 
-new LogoImageFileUtil(this.logoAbPath, this.logoFile).
-                            saveFiles(this.logoFileItem);
+new LogoImageFileUtil(this.logoAbPath, this.logoFile).saveFiles(this.logoFileItem);
     
 }
 

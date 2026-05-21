@@ -234,8 +234,7 @@ userInterface!.setPassword(newPassword);
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
     
-new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
-                            process();
+new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).process();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -388,8 +387,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
     
-new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
-                            process();
+new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).process();
     
 
 

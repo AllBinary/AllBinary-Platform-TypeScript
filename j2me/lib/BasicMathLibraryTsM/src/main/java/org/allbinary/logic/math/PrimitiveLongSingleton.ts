@@ -112,8 +112,7 @@ index < size; index++)
 
 
 
-                            throw new Exception(new StringMaker().
-                            append("numberAsChar was not in array: ")!.appendchar(numberAsChar)!.toString());
+                            throw new Exception(new StringMaker().append("numberAsChar was not in array: ")!.appendchar(numberAsChar)!.toString());
                     
 }
 

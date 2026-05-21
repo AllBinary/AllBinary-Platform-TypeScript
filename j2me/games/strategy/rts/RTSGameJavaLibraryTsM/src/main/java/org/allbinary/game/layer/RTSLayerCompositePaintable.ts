@@ -76,8 +76,7 @@ public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintab
                         if(rtsLayer!.isUpgradeable())
                         
                                     {
-                                    this.setUpgradeCost(new StringMaker().
-                            append(this.UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString());
+                                    this.setUpgradeCost(new StringMaker().append(this.UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString());
     
 
                                     }
@@ -92,8 +91,7 @@ public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintab
                         if(rtsLayer!.isDowngradeable())
                         
                                     {
-                                    this.setDownGradeCost(new StringMaker().
-                            append(this.DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString());
+                                    this.setDownGradeCost(new StringMaker().append(this.DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString());
     
 
                                     }

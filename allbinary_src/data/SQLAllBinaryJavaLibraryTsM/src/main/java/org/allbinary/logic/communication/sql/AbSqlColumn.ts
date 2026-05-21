@@ -135,8 +135,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var largestAsString: string = new Integer(largest).
-                            toString()!;
+    var largestAsString: string = new Integer(largest).toString()!;
 ;
     
 

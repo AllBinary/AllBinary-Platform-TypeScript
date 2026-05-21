@@ -124,8 +124,7 @@ this.storeFrontInterface= storeFrontInterface;
 ;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(fileAbPath)!;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;
 ;
     
 this.document= DomDocumentHelper.create(data);
@@ -202,8 +201,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-    var taxRateFloat: number = new number(new number(taxRate).
-                             *.01);
+    var taxRateFloat: number = new number(new number(taxRate) *.01);
 ;
     
 
@@ -241,8 +239,7 @@ this.storeFrontInterface= storeFrontInterface;
 ;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(fileAbPath)!;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;
 ;
     
 this.document= DomDocumentHelper.create(data);

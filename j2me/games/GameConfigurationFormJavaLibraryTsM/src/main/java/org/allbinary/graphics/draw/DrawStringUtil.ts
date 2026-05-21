@@ -181,8 +181,7 @@ graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor);
                 //: 
 } catch(e) 
             {
-PreLogUtil.put(new StringMaker().
-                            append("Exception: stringLength: ")!.appendint(string.length)!.append(" offset: ")!.appendint(offset)!.append(" currentLength: ")!.appendint(length)!.toString(), this, "drawCenterString");
+PreLogUtil.put(new StringMaker().append("Exception: stringLength: ")!.appendint(string.length)!.append(" offset: ")!.appendint(offset)!.append(" currentLength: ")!.appendint(length)!.toString(), this, "drawCenterString");
     
 }
 

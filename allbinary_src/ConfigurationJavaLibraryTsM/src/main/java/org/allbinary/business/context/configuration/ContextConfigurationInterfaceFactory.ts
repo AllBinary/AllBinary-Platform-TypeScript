@@ -96,8 +96,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ContextConfigurationView(contextConfigurationNode).
-                            getContextConfigurationInterface() as ContextConfigurationInterface;
+                        return new ContextConfigurationView(contextConfigurationNode).getContextConfigurationInterface() as ContextConfigurationInterface;
     
 }
 
@@ -114,8 +113,7 @@ private constructor (){
 ;
     
 
-    var documentString: string = new CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).
-                            get(abPath)!;
+    var documentString: string = new CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).get(abPath)!;
 ;
     
 

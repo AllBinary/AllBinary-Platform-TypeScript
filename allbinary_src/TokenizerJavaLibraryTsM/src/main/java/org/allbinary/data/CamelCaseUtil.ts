@@ -135,8 +135,7 @@ word= stringValidationUtil!.isEmpty(word)
                                 word
                                 :
 
-                            new StringMaker().
-                            appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.toLowerCase())!.toString();
+                            new StringMaker().appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.toLowerCase())!.toString();
 
     ;
     

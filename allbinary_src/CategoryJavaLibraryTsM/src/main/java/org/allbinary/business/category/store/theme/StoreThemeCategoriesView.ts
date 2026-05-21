@@ -71,8 +71,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = new StoreThemeCategoryView(this.categoryInterface).
-                            toXmlNode(document)!;
+    var node: Node = new StoreThemeCategoryView(this.categoryInterface).toXmlNode(document)!;
 ;
     
 
@@ -97,8 +96,7 @@ i < size; i++)
 ;
     
 
-    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).
-                            toXmlNode(document)!;
+    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).toXmlNode(document)!;
 ;
     
 node.appendChild(childCategoryNode);

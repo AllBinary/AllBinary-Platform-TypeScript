@@ -86,8 +86,7 @@ export class DatabaseEncoder
     var index: number = 0;
 index < array.length; index++)
         {
-stringBuffer!.append(array[index]!.
-                            toString());
+stringBuffer!.append(array[index]!.toString());
     
 
                         if(index < array.length -1)

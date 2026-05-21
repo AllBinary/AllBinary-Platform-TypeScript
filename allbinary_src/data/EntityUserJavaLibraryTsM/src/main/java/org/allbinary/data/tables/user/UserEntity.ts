@@ -410,9 +410,7 @@ row.put(UserData.USERNAME, userName);
                         if(encryption != 
                                     null
                                  && encryption.compareTo(this.stringUtil!.EMPTY_STRING) != 0)
-                        isUserNameAndPasswordCorrect= result.compareTo(new SuperCrypt(new Integer(encryption).
-                            intValue()).
-                            encrypt(password))
+                        isUserNameAndPasswordCorrect= result.compareTo(new SuperCrypt(new Integer(encryption).intValue()).encrypt(password))
                         else {
                             
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -485,9 +483,7 @@ stringBuffer!.append(userName);
     
 stringBuffer!.append(this.INVALID_PASSWORD_LABEL);
     
-stringBuffer!.append(new SuperCrypt(new Integer(encryption).
-                            intValue()).
-                            encrypt(password));
+stringBuffer!.append(new SuperCrypt(new Integer(encryption).intValue()).encrypt(password));
     
 stringBuffer!.append(this.NOT_EQUAL);
     

@@ -114,8 +114,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                 )
                         
                                     {
-                                    className= new StringMaker().
-                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
+                                    className= new StringMaker().append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
                                     }
@@ -130,8 +129,7 @@ console.log(LogUtil.LOG_SUCCESS + message);
 
 
     /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
-className= new StringMaker().
-                            append(className)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
+className= new StringMaker().append(className)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
@@ -153,8 +151,7 @@ console.log(LogUtil.LOG_SUCCESS + message);
                                 )
                         
                                     {
-                                    className= new StringMaker().
-                            append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
+                                    className= new StringMaker().append(anyType!.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
                                     }

@@ -190,8 +190,7 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
     var onDemandArray: number[] = layerPlacementInterfaceBasicArrayListFactoryInterface!.getOnDemandResources()!;
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append(commonStrings!.START)!.appendint(onDemandArray!.length)!.toString(), this, "initLevel");
+PreLogUtil.put(new StringMaker().append(commonStrings!.START)!.appendint(onDemandArray!.length)!.toString(), this, "initLevel");
     
 
     var onDemandResources: OnDemandResources

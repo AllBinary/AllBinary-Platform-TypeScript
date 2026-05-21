@@ -144,8 +144,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
                 //@Throws(Exception.constructor)
             
     getFormData(){
-this.setRequestHashMap(new MultipartRequestParams(this.request).
-                            toHashMap());
+this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
     
 
     var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;

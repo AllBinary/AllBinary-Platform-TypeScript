@@ -116,8 +116,7 @@ this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getVal
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            append(AngleIncrementInfo.INCREMENT)!.appendshort(this.angleIncrement)!.toString();;
+                        return new StringMaker().append(AngleIncrementInfo.INCREMENT)!.appendshort(this.angleIncrement)!.toString();;
     
 }
 

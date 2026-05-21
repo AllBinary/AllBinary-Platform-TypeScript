@@ -83,8 +83,7 @@ this.stringBuffer!.append(string);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            append(super.toString())!.append(this.stringBuffer!.toString())!.toString();;
+                        return new StringMaker().append(super.toString())!.append(this.stringBuffer!.toString())!.toString();;
     
 }
 

@@ -122,8 +122,7 @@ this.filePath= filePath;
 ;
     
 
-    var licenseIdCrypted: number[] = new WeakCrypt(1).
-                            encrypt(initData!.getLicenseId())!.encodeToByteArray()!;
+    var licenseIdCrypted: number[] = new WeakCrypt(1).encrypt(initData!.getLicenseId())!.encodeToByteArray()!;
 ;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted));
@@ -146,8 +145,7 @@ dataOutputStream!.writeInt(numberOfLicenseServers);
     var index: number = 0;
 index < numberOfLicenseServers; index++)
         {
-licenseServerCrypted= new WeakCrypt(3).
-                            encrypt(initData!.getServer(index))!.encodeToByteArray();
+licenseServerCrypted= new WeakCrypt(3).encrypt(initData!.getServer(index))!.encodeToByteArray();
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted));
     
@@ -235,8 +233,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
     var licenseIdDecoded: string = decodedByteArray.decodeToString();
 ;
     
-initInfo!.setLicenseId(new WeakCrypt(1).
-                            decrypt(licenseIdDecoded));
+initInfo!.setLicenseId(new WeakCrypt(1).decrypt(licenseIdDecoded));
     
 
     var numberOfLicenseServers: number = iData!.readInt()!;
@@ -262,8 +259,7 @@ decodedByteArray= DatabaseEncoder.decode(iData!.readUTF());
     
 licenseServerDecoded= decodedByteArray.decodeToString();
     
-initInfo!.setServer(new WeakCrypt(3).
-                            decrypt(licenseServerDecoded), index);
+initInfo!.setServer(new WeakCrypt(3).decrypt(licenseServerDecoded), index);
     
 this.logUtil!.putF(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME);
     

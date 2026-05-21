@@ -807,8 +807,7 @@ index < end; index++)
                                 
                         else {
                             
-    var path: string = new AbPath(nextFile!.getPath()).
-                            getPath()!;
+    var path: string = new AbPath(nextFile!.getPath()).getPath()!;
 ;
     
 
@@ -819,8 +818,7 @@ index < end; index++)
                         if(path.indexOf(URLGLOBALS.getWebappPath()) < 0)
                         
                                     {
-                                    beginIndex -= new AbPath(URLGLOBALS.getWebappPath()).
-                            getPath()!.length();
+                                    beginIndex -= new AbPath(URLGLOBALS.getWebappPath()).getPath()!.length();
     
 
                                     }
@@ -1419,8 +1417,7 @@ skipFile= skipFiles[index]!;
     
 
         try {
-            PreLogUtil.put(new StringMaker().
-                            append(this.WRITE_LABEL)!.append(filePath)!.append(this.DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
+            PreLogUtil.put(new StringMaker().append(this.WRITE_LABEL)!.append(filePath)!.append(this.DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
     
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;

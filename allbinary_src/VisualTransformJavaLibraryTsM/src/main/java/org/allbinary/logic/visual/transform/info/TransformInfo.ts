@@ -270,8 +270,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(new AbPath(fileAbPath!.toString(), aObject))!;
+    var fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aObject))!;
 ;
     
 
@@ -383,8 +382,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(new AbPath(fileAbPath!.toString(), aTemplate))!;
+    var fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aTemplate))!;
 ;
     
 
@@ -430,8 +428,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(new AbPath(fileAbPath!.toString(), aData))!;
+    var fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aData))!;
 ;
     
 
@@ -745,8 +742,7 @@ this.data= value;
                                     
         try {
             
-    var fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(this.getDataFilePath())!;
+    var fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(this.getDataFilePath())!;
 ;
     
 
@@ -957,8 +953,7 @@ hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.encodeToByteArray
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -1002,8 +997,7 @@ vector.add(Encoder.encode(this.data.encodeToByteArray()));
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 vector.add(time);

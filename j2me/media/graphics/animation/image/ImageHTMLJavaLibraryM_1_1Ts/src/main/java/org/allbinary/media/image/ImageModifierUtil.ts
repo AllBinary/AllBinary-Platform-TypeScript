@@ -261,8 +261,7 @@ copy(imageArray, index, image, image3);
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
     
-logUtil!.putF(new StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+logUtil!.putF(new StringMaker().append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE);
     
 }
 

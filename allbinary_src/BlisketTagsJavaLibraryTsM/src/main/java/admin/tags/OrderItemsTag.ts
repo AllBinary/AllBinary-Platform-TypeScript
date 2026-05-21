@@ -90,8 +90,7 @@ this.status= value;
 
         try {
             
-    var anyType: any = new OrderItemsRequestHelperFactory().
-                            getInstance(this.getPropertiesHashMap(), this.pageContext)!;
+    var anyType: any = new OrderItemsRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
 ;
     
 

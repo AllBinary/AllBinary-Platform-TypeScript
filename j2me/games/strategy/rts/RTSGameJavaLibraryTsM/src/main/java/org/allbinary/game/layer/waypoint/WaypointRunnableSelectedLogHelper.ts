@@ -70,15 +70,13 @@ export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     public start(pathFindingLayerInterface: PathFindingLayerInterface){
-this.logUtil!.putF(new StringMaker().
-                            append(pathFindingLayerInterface!.getName())!.append(commonStrings!.START_RUNNABLE)!.toString(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(new StringMaker().append(pathFindingLayerInterface!.getName())!.append(commonStrings!.START_RUNNABLE)!.toString(), this, this.commonStrings!.RUN);
     
 }
 
 
     public end(pathFindingLayerInterface: PathFindingLayerInterface){
-this.logUtil!.putF(new StringMaker().
-                            append(pathFindingLayerInterface!.getName())!.append(commonStrings!.END_RUNNABLE)!.toString(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(new StringMaker().append(pathFindingLayerInterface!.getName())!.append(commonStrings!.END_RUNNABLE)!.toString(), this, this.commonStrings!.RUN);
     
 }
 

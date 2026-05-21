@@ -133,8 +133,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new GatewayView(this.getTransformInfoInterface()).
-                            view();;
+                        return new GatewayView(this.getTransformInfoInterface()).view();;
     
 }
 

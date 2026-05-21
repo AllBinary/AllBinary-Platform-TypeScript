@@ -119,13 +119,11 @@ newFile!.createNewFile();
 ;
     
 
-    var cryptedUserName: number[] = new WeakCrypt(1).
-                            encrypt(this.getUserName())!.encodeToByteArray()!;
+    var cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.encodeToByteArray()!;
 ;
     
 
-    var cryptedPassword: number[] = new WeakCrypt(2).
-                            encrypt(this.getPassword())!.encodeToByteArray()!;
+    var cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.encodeToByteArray()!;
 ;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
@@ -191,11 +189,9 @@ InstallerInfo.hasRead= false;
     var decryptedPassword: string = decode.toCharArray();
 ;
     
-this.setUserName(new WeakCrypt(1).
-                            decrypt(decryptedUserName));
+this.setUserName(new WeakCrypt(1).decrypt(decryptedUserName));
     
-this.setPassword(new WeakCrypt(2).
-                            decrypt(decryptedPassword));
+this.setPassword(new WeakCrypt(2).decrypt(decryptedPassword));
     
 
                                     }

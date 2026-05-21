@@ -107,8 +107,7 @@ this.setLicenseId(NONE);
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append("Special Name: ")!.append(this.getSpecialName())!.toString(), this, commonStrings!.CONSTRUCTOR);
+PreLogUtil.put(new StringMaker().append("Special Name: ")!.append(this.getSpecialName())!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
                 //: 

@@ -124,8 +124,7 @@ ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
 System.gc();
     
-new Sounds(soundsFactoryInterface).
-                            init();
+new Sounds(soundsFactoryInterface).init();
     
 logUtil!.putF(commonString!.END, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -149,8 +148,7 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
                         if(soundsFactoryInterface!.isInitialized())
                         
                                     {
-                                    new Sounds(soundsFactoryInterface).
-                            stopAll();
+                                    new Sounds(soundsFactoryInterface).stopAll();
     
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
@@ -222,8 +220,7 @@ MediaPlayerUtil.getInstance()!.waitForMediaPlayer(androidMediaPlayerWrapper!.get
                                 
 }
 
-new Sounds(soundsFactoryInterface).
-                            closeAll();
+new Sounds(soundsFactoryInterface).closeAll();
     
 System.gc();
     

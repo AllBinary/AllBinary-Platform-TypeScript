@@ -64,8 +64,7 @@ public constructor (name: string, version: string, shortName: string){
     
 this.version= version;
     
-this.shortName= new StringMaker().
-                            append(shortName)!.append(KotlinUtil.getShortName())!.toString();
+this.shortName= new StringMaker().append(shortName)!.append(KotlinUtil.getShortName())!.toString();
     
 }
 

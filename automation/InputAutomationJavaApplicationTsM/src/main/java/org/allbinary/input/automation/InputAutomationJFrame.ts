@@ -644,8 +644,7 @@ textJDialog!.setLocationRelativeTo(this);
     modulesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
         try {
-            new DesktopBundle().
-                            start();
+            new DesktopBundle().start();
     
 
                 //: 

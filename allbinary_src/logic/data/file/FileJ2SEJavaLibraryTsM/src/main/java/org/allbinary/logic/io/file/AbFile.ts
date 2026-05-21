@@ -92,16 +92,14 @@ public constructor (file: AbFile, childPathName: string){
 public constructor (filePath: string){
 
             super();
-        this.file= new File(new AbPath(filePath).
-                            toFileSystemString());
+        this.file= new File(new AbPath(filePath).toFileSystemString());
     
 }
 
 public constructor (filePath: string, fileName: string){
 
             super();
-        this.file= new File(new AbPath(filePath).
-                            toFileSystemString(), fileName);
+        this.file= new File(new AbPath(filePath).toFileSystemString(), fileName);
     
 }
 

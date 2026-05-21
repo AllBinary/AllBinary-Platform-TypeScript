@@ -106,8 +106,7 @@ this.profilesDefaultListModelHelper= new DefaultListModelHelper();
 this.hashMap= new HashMap<any, any>();
     
 
-                        if(new File(fileName).
-                            isFile())
+                        if(new File(fileName).isFile())
                         
                                     {
                                     

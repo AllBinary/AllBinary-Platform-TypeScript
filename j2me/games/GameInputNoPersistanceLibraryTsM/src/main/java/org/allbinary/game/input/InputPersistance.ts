@@ -135,8 +135,7 @@ recordStore!.closeRecordStore();
                 //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
-PreLogUtil.put(new StringMaker().
-                            append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
+PreLogUtil.put(new StringMaker().append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 
     var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;

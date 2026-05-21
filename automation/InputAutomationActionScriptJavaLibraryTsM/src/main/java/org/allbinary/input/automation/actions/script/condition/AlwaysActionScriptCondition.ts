@@ -115,8 +115,7 @@ index < nodeList!.getLength(); index++)
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.setIsOn(.
-                            .valueOf());
+this.setIsOn(.valueOf());
     
 
                                     }

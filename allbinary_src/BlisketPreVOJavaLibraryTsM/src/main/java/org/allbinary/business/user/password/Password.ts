@@ -196,21 +196,18 @@ valid= Boolean.FALSE;
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
-    var random: number = new Random().
-                            nextInt(SuperCrypt.KEYMAX)!;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
 ;
     
 
     var vector: Vector = new Vector();
 ;
     
-vector.add(new Integer(random).
-                            toString());
+vector.add(new Integer(random).toString());
     
 vector.add(secret);
     
-vector.add(new SuperCrypt(random).
-                            encrypt(this.password));
+vector.add(new SuperCrypt(random).encrypt(this.password));
     
 
 
@@ -229,17 +226,14 @@ this.password= StringUtil.getInstance()!.getNonNull(this.password);
 ;
     
 
-    var random: number = new Random().
-                            nextInt(SuperCrypt.KEYMAX)!;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
 ;
     
-values.put(EntryData.getInstance()!.ENCRYPTION, new Integer(random).
-                            toString());
+values.put(EntryData.getInstance()!.ENCRYPTION, new Integer(random).toString());
     
 values.put(UserData.SECRET, secret);
     
-values.put(UserData.PASSWORD, new SuperCrypt(random).
-                            encrypt(this.password));
+values.put(UserData.PASSWORD, new SuperCrypt(random).encrypt(this.password));
     
 
 

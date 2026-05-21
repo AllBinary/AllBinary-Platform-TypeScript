@@ -147,8 +147,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).
-                            get(abPath)!;
+    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).get(abPath)!;
 ;
     
 

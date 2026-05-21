@@ -74,8 +74,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
 
     public runTask(task: Runnable){
-this.logUtil!.putF(new StringMaker().
-                            append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, this.threadPoolStrings!.ADD_TASK);
+this.logUtil!.putF(new StringMaker().append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, this.threadPoolStrings!.ADD_TASK);
     
 super.runTask(task);
     
@@ -83,15 +82,13 @@ super.runTask(task);
 
 
     startTask(task: Runnable){
-this.logUtil!.putF(new StringMaker().
-                            append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.toString(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(new StringMaker().append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.toString(), this, this.commonStrings!.RUN);
     
 }
 
 
     completedTask(task: Runnable){
-this.logUtil!.putF(new StringMaker().
-                            append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.toString(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(new StringMaker().append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.toString(), this, this.commonStrings!.RUN);
     
 }
 

@@ -80,8 +80,7 @@ export class OrderProcessorUtil
     var orderHistory: OrderHistoryEntity = new OrderHistoryEntity();
 ;
     
-order.setId(new OrderIdGenerator().
-                            getNext());
+order.setId(new OrderIdGenerator().getNext());
     
 orderItems!.insert(userName, order);
     

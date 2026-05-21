@@ -175,8 +175,7 @@ this.clear();
     
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append("Deleting: ")!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
+            this.logUtil!.putF(new StringMaker().append("Deleting: ")!.appendint(deleteId)!.toString(), this, this.commonStrings!.delete);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
@@ -267,8 +266,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     var id: number = recordEnum!.nextRecordId()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(LOADING_ID)!.appendint(id)!.toString(), this, this.commonStrings!.LOAD);
+this.logUtil!.putF(new StringMaker().append(LOADING_ID)!.appendint(id)!.toString(), this, this.commonStrings!.LOAD);
     
 recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
@@ -296,8 +294,7 @@ this.nameBasicArrayList!.add(smallIntegerSingletonFactory!.getAt(id));
             {
 this.save(abeClientInformation, gameInfo, this.name);
     
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, this.commonStrings!.LOAD);
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(ExceptionUtil.getInstance()!.getStackTrace(e))!.toString(), this, this.commonStrings!.LOAD);
     
 }
 
@@ -344,8 +341,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
     
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append("Saving: ")!.append(name)!.toString(), this, this.commonStrings!.SAVE);
+            this.logUtil!.putF(new StringMaker().append("Saving: ")!.append(name)!.toString(), this, this.commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     

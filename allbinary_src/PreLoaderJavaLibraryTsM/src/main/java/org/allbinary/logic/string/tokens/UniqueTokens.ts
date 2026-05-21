@@ -172,8 +172,7 @@ cleanString= cleanString!.trim();
     
 
                         if(cleanString!.indexOf('-') !=  -1)
-                        cleanString= new Replace("-", commonSeps!.SPACE).
-                            all(cleanString)
+                        cleanString= new Replace("-", commonSeps!.SPACE).all(cleanString)
 hashSet!.add(cleanString);
     
 

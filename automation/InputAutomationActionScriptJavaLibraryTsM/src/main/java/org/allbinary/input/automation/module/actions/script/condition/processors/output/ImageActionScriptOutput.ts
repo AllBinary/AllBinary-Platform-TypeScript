@@ -125,8 +125,7 @@ index < nodeList!.getLength(); index++)
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.setSaved(.
-                            .valueOf());
+this.setSaved(.valueOf());
     
 
                                     }
@@ -139,8 +138,7 @@ this.setSaved(.
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.setSaved(.
-                            .valueOf());
+this.setSaved(.valueOf());
     
 
                                     }

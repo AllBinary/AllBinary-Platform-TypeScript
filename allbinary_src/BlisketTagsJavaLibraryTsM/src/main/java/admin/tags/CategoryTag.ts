@@ -92,8 +92,7 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = new CategoryRequestHelperFactory().
-                            getInstance(this.getPropertiesHashMap(), this.pageContext)!;
+    var anyType: any = new CategoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
 ;
     
 
@@ -160,8 +159,7 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = new CategoryRequestHelperFactory().
-                            getInstance(this.getPropertiesHashMap(), this.pageContext)!;
+    var anyType: any = new CategoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
 ;
     
 

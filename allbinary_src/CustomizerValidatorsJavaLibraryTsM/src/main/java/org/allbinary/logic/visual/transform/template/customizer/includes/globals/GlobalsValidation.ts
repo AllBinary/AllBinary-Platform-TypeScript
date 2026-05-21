@@ -189,8 +189,7 @@ public constructor (document: Document){
     var node: Node = document.createElement(GlobalsData.NAME)!;
 ;
     
-node.appendChild(new StoreFrontView(this.storeFrontInterface).
-                            toXmlNode(document));
+node.appendChild(new StoreFrontView(this.storeFrontInterface).toXmlNode(document));
     
 
 

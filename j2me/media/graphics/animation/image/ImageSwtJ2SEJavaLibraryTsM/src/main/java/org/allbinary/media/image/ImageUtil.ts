@@ -345,8 +345,7 @@ ratioY= heightRatio;
 
                                     }
                                 
-this.logUtil!.putF(new StringMaker().
-                            appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, this.CREATE_BUFFERED_IMAGE);
+this.logUtil!.putF(new StringMaker().appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, this.CREATE_BUFFERED_IMAGE);
     
 
     var dx: number = 0;
@@ -364,8 +363,7 @@ this.logUtil!.putF(new StringMaker().
     
 dy= (newHeight -height) /2;
     
-this.logUtil!.putF(new StringMaker().
-                            append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, this.CREATE_BUFFERED_IMAGE);
+this.logUtil!.putF(new StringMaker().append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, this.CREATE_BUFFERED_IMAGE);
     
 
                                     }

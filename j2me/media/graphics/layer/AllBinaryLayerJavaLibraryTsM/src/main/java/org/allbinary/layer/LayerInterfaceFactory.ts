@@ -100,8 +100,7 @@ this.list= new BasicArrayListD();
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(new StringMaker().append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
     var typeInteger: Integer = hashtable.get(Layer.ID as Object) as Integer;

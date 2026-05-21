@@ -228,8 +228,7 @@ index >= 0; index--)
                         if(groupSize != 0)
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append("Group Size: ")!.appendint(groupSize)!.toString(), this, "areAllOtherGroupsEmpty");
+                                    this.logUtil!.putF(new StringMaker().append("Group Size: ")!.appendint(groupSize)!.toString(), this, "areAllOtherGroupsEmpty");
     
 
 
@@ -431,8 +430,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
                                 )
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append("id: ")!.appendint(id)!.toString(), this, "onCreateLayerManagerEvent");
+                                    this.logUtil!.putF(new StringMaker().append("id: ")!.appendint(id)!.toString(), this, "onCreateLayerManagerEvent");
     
 
                                     }

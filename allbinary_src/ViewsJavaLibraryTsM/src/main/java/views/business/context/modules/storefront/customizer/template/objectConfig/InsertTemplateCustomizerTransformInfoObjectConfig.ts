@@ -143,8 +143,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 
                                     }
                                 
-parentComponentsNodeList!.item(0)!.appendChild(new TransformInfoDomNodeView(aParentViewName).
-                            toXmlNode(document));
+parentComponentsNodeList!.item(0)!.appendChild(new TransformInfoDomNodeView(aParentViewName).toXmlNode(document));
     
 
                                     }

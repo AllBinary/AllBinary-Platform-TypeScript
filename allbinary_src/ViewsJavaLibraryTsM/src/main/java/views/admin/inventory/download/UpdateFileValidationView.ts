@@ -190,8 +190,7 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
                                     }
                                 
 
-                        if(new BasicItemValidation(this.itemInterface).
-                            isValid() == Boolean.FALSE)
+                        if(new BasicItemValidation(this.itemInterface).isValid() == Boolean.FALSE)
                         
                                     {
                                     
@@ -217,8 +216,7 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
 ;
     
 
-    var fullCategory: string = new StringMaker().
-                            append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
+    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
 ;
     
 
@@ -591,8 +589,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-    var fullCategory: string = new StringMaker().
-                            append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
+    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
 ;
     
 

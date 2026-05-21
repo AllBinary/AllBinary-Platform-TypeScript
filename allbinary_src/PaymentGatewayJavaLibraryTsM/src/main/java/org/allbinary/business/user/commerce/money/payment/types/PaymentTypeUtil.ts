@@ -245,8 +245,7 @@ stringBuffer!.append(this.PAYMENTGATEWAYFILEPATHSTRING);
 ;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
-                            get(abPath)!;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(abPath)!;
 ;
     
 

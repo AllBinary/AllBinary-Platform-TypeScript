@@ -403,8 +403,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD);
                         if(this.rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth(), rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()))
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append(this.ADDING)!.append(rtsLayer!.getName())!.toString(), this, this.METHOD);
+                                    this.logUtil!.putF(new StringMaker().append(this.ADDING)!.append(rtsLayer!.getName())!.toString(), this, this.METHOD);
     
 rtsLayer!.select();
     
@@ -548,8 +547,7 @@ getMotionGestureInputList()!.clear();
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START)!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START)!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
     
 super.setSelectedRtsFormInput(selectedRtsFormInput);
     

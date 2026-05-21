@@ -172,8 +172,7 @@ RotationSpriteImageJPanel.prototype.getParent()!.repaint();
     var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;
 ;
     
-filePath= new StringMaker().
-                            append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append("sprite")!.append(imageStrings!.PNG_EXTENSION)!.toString();
+filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append("sprite")!.append(imageStrings!.PNG_EXTENSION)!.toString();
     
 logUtil!.putF("New File Path: " +filePath, this, commonStrings!.RUN);
     
@@ -201,8 +200,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
                                 }
-                            .
-                            start();
+                            .start();
     
 }
 

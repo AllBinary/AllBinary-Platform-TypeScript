@@ -297,8 +297,7 @@ this.repaintBehavior!.onChangeRepaint(this);
             
     public createForm(): ScrollSelectionForm{
 
-    var items: ABCustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).
-                            getInstance(this.getCommandStack() as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
+    var items: ABCustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).getInstance(this.getCommandStack() as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
 ;
     
 
@@ -405,8 +404,7 @@ this.keyRepeatedByDevice(keyCode, 0);
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
+this.logUtil!.putF(new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 this.addGameKeyEvent(keyCode, 0, false);
     
@@ -455,8 +453,7 @@ this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyE
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+                            this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
                         }
@@ -495,8 +492,7 @@ this.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEve
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
+                            this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
                         }

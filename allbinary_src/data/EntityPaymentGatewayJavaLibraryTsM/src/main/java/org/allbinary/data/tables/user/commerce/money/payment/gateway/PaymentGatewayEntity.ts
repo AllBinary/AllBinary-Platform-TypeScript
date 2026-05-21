@@ -126,19 +126,16 @@ this.setTableName(this.tableName);
     var vector: Vector = new Vector();
 ;
     
-vector.add(new PaymentGatewayIdGenerator().
-                            getNext());
+vector.add(new PaymentGatewayIdGenerator().getNext());
     
-vector.addAll(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).
-                            toVector());
+vector.addAll(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toVector());
     
 
     var calendar: Calendar = Calendar.getInstance()!;
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 vector.add(time);
@@ -182,8 +179,7 @@ super.insert(vector);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 paymentGatewayInterface!.setLastModified(time);
@@ -211,8 +207,7 @@ whereKeyValuePairs!.put(PaymentGatewayData.NAME.toString(), paymentGatewayInterf
                                     }
                                 
 
-    var updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).
-                            toHashMap()!;
+    var updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toHashMap()!;
 ;
     
 super.updateWhere(whereKeyValuePairs, updateHashMap);
@@ -338,8 +333,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL8.toString(), superCrypt!.d
 paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9));
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
-                            getInstance(paymentGatewayHashMap)!;
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(paymentGatewayHashMap)!;
 ;
     
 
@@ -365,8 +359,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.d
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new PaymentGatewayInterfaceFactory().
-                            getInstance(paymentType);;
+                        return new PaymentGatewayInterfaceFactory().getInstance(paymentType);;
     
 
                         }

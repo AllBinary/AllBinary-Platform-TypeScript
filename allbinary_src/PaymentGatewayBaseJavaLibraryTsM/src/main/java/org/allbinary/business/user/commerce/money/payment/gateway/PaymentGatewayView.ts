@@ -119,8 +119,7 @@ public constructor (paymentGatewayInterface: PaymentGatewayInterface){
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new PaymentGatewayMapping(this.paymentGatewayInterface).
-                            toHashMap()!;
+    var hashMap: HashMap<any, any> = new PaymentGatewayMapping(this.paymentGatewayInterface).toHashMap()!;
 ;
     
 hashMap!.putAll(this.toHashMap());

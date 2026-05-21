@@ -127,8 +127,7 @@ index < size; index++)
     var isFeature: boolean = featureInterface!.isFeature()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, this.commonStrings!.INIT);
+this.logUtil!.putF(new StringMaker().append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, this.commonStrings!.INIT);
     
 
                         if(isLoadingLevel && isFeature)
@@ -200,8 +199,7 @@ this.list.clear();
 
 
     public add(featureInterface: GameFeatureControlledInterface){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, this.commonStrings!.ADD);
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, this.commonStrings!.ADD);
     
 this.list.add(featureInterface);
     

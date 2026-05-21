@@ -131,8 +131,7 @@ this.add(gameFeature);
                         if(!this.list.contains(gameFeature))
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, this.commonStrings!.ADD);
+                                    this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, this.commonStrings!.ADD);
     
 this.list.add(gameFeature);
     
@@ -147,8 +146,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeatur
                 //@Throws(Exception.constructor)
             
     public removeDefault(gameFeature: Feature){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, "removeDefault");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, "removeDefault");
     
 this.remove(gameFeature);
     

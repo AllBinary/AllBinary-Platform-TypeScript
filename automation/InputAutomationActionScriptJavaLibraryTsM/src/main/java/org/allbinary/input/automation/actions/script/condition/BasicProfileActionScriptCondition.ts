@@ -630,8 +630,7 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public process(frame: Long){
-this.logUtil!.putF(new StringMaker().
-                            append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, this.commonStrings!.PROCESS);
+this.logUtil!.putF(new StringMaker().append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, this.commonStrings!.PROCESS);
     
 
     var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;

@@ -123,8 +123,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
                                     }
                                 
 
-                        if(new AbFile(new AbPath(this.getStoreViewsPath())).
-                            isFile())
+                        if(new AbFile(new AbPath(this.getStoreViewsPath())).isFile())
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -212,8 +211,7 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName());
                                     }
                                 
 
-                        if(new AbFile(new AbPath(this.getStoreViewsPath())).
-                            isFile())
+                        if(new AbFile(new AbPath(this.getStoreViewsPath())).isFile())
                         
                                     {
                                     stringBuffer!.append("Store name clashes with template name<br/>");

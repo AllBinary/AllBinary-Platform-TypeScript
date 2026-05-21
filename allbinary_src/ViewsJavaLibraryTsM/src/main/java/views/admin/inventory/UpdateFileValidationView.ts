@@ -135,8 +135,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-                        if(new BasicItemValidation(this.itemInterface).
-                            isValid() == Boolean.FALSE)
+                        if(new BasicItemValidation(this.itemInterface).isValid() == Boolean.FALSE)
                         
                                     {
                                     
@@ -334,8 +333,7 @@ HttpFileUploadUtil.log(fileItem);
 
                                     }
                                 
-stringBuffer!.append(new BasicItemValidation(this.itemInterface).
-                            validationInfo());
+stringBuffer!.append(new BasicItemValidation(this.itemInterface).validationInfo());
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;

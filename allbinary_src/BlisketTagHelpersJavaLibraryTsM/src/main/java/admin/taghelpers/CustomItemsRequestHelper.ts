@@ -128,8 +128,7 @@ values.put(CustomItemData.PACKAGE, this.packageName);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -151,8 +150,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 
@@ -287,8 +285,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(v
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append(this.id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
+                                    this.logUtil!.putF(new StringMaker().append(this.id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
     
 
                                     }

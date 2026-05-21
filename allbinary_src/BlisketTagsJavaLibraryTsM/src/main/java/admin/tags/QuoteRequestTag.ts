@@ -90,8 +90,7 @@ this.storeName= storeName;
 
         try {
             
-    var anyType: any = new QuoteHelperFactory().
-                            getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = new QuoteHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;
 ;
     
 

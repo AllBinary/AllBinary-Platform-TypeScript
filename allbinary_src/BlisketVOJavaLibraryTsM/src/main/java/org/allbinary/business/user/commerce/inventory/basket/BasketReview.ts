@@ -198,8 +198,7 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
 ;
     
-weightFloat += new number(item.getWeight()).
-                            ;
+weightFloat += new number(item.getWeight());
     
 }
 
@@ -207,8 +206,7 @@ weightFloat += new number(item.getWeight()).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new number(weightFloat).
-                            toString();;
+                        return new number(weightFloat).toString();;
     
 }
 
@@ -336,8 +334,7 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
 ;
     
-node.appendChild(new ItemView(item, new Vector()).
-                            toXmlNode(document));
+node.appendChild(new ItemView(item, new Vector()).toXmlNode(document));
     
 }
 

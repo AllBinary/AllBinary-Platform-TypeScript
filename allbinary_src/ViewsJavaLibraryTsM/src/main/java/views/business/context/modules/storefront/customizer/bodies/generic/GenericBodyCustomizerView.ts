@@ -135,8 +135,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 ;
     
 
-    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
-                            translate(success)!;
+    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
 ;
     
 

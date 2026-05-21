@@ -481,8 +481,7 @@ stringBuffer!.append(PaymentGatewayEntityFactory.getInstance()!.createTable());
     
 stringBuffer!.append(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.createTable());
     
-stringBuffer!.append(new InitInfoEntity().
-                            createTable());
+stringBuffer!.append(new InitInfoEntity().createTable());
     
 stringBuffer!.append(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable());
     

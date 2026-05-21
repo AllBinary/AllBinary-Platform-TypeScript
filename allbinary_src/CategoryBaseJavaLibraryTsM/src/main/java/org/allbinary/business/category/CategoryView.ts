@@ -167,8 +167,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
                         }
                             
 
-    var childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).
-                            toXmlNode(document)!;
+    var childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).toXmlNode(document)!;
 ;
     
 node.appendChild(childCategoryNode);

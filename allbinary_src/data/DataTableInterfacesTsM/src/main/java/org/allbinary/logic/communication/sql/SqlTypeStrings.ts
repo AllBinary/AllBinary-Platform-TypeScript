@@ -70,26 +70,19 @@ export class SqlTypeStrings
 
     public readonly TWELVE_SIZE: string = "(12)";
 
-    public readonly ONE_KB_CHAR_COLUMN: string = new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append("(1024)")!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
+    public readonly ONE_KB_CHAR_COLUMN: string = new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append("(1024)")!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
 
-    public readonly MAX_CHAR_COLUMN: string = new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(MAX_SIZE)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
+    public readonly MAX_CHAR_COLUMN: string = new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(MAX_SIZE)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
 
-    public readonly MAX_CHAR_COLUMN_NOT_NULL: string = new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(MAX_SIZE)!.append(CommonSeps.getInstance()!.SPACE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
+    public readonly MAX_CHAR_COLUMN_NOT_NULL: string = new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(MAX_SIZE)!.append(CommonSeps.getInstance()!.SPACE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
 
-    public readonly SIXTY_CHAR_COLUMN_NOT_NULL: string = new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(SIXTY_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
+    public readonly SIXTY_CHAR_COLUMN_NOT_NULL: string = new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(SIXTY_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
 
-    public readonly ONE_CHAR_COLUMN_NOT_NULL: string = new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(ONE_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
+    public readonly ONE_CHAR_COLUMN_NOT_NULL: string = new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(ONE_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
 
-    public readonly SIX_CHAR_COLUMN_NOT_NULL: string = new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(SIX_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
+    public readonly SIX_CHAR_COLUMN_NOT_NULL: string = new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(SIX_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
 
-    public readonly TWELVE_CHAR_COLUMN_NOT_NULL: string = new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(this.TWELVE_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
+    public readonly TWELVE_CHAR_COLUMN_NOT_NULL: string = new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.append(CHAR_COLUMN)!.append(this.TWELVE_SIZE)!.append(NOT_NULL)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.toString()!;
 
     public readonly TWO_INT_NOT_NULL: string = " INT(2) NOT NULL, ";
 

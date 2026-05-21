@@ -113,8 +113,7 @@ private constructor (){
     
 this.genericOperatingSystem= AndroidOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
     
-this.logUtil!.putF(new StringMaker().
-                            append("Operating System Info: ")!.append(this.genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(new StringMaker().append("Operating System Info: ")!.append(this.genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -127,8 +126,7 @@ this.logUtil!.putF(new StringMaker().
     
 this.genericOperatingSystem= AndroidOperatingSystemFactory.getInstance()!.getOperatingSystemInstance();
     
-this.logUtil!.putF(new StringMaker().
-                            append("Operating System Info: ")!.append(this.genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(new StringMaker().append("Operating System Info: ")!.append(this.genericOperatingSystem!.toString())!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -137,8 +135,7 @@ this.logUtil!.putF(new StringMaker().
                             
 
 
-                            throw new Exception(new StringMaker().
-                            append("OS Not Supported: ")!.append(osName)!.toString());
+                            throw new Exception(new StringMaker().append("OS Not Supported: ")!.append(osName)!.toString());
                     
 
                         }

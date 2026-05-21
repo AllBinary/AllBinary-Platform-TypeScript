@@ -95,8 +95,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new StoreFrontHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new StoreFrontHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -159,8 +158,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new StoreFrontHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new StoreFrontHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 

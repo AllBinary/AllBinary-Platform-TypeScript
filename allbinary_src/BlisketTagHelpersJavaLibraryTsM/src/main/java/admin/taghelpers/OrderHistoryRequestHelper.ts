@@ -198,8 +198,7 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, newStatus);
     var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(this.id)!;
 ;
     
-new OrderStatusEmail(this.abeClientInformation, orderHistory).
-                            process();
+new OrderStatusEmail(this.abeClientInformation, orderHistory).process();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

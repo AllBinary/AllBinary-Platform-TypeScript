@@ -155,8 +155,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.INIT);
     
 soundInterfaceCanBeNull!.init();
     
-progressCanvas!.addNormalPortion(100, new StringMaker().
-                            append(this.soundStrings!.INIT_SOUND)!.append(indexString)!.toString());
+progressCanvas!.addNormalPortion(100, new StringMaker().append(this.soundStrings!.INIT_SOUND)!.append(indexString)!.toString());
     
 
                                     }

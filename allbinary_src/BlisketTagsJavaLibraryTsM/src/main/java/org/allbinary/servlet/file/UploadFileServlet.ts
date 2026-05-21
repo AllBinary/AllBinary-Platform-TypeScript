@@ -117,8 +117,7 @@ export class UploadFileServlet extends HttpServlet {
         try {
             BlisketServletUtil.getInstance()!.init(request);
     
-this.requestHashMap= new MultipartRequestParams(request).
-                            toHashMap();
+this.requestHashMap= new MultipartRequestParams(request).toHashMap();
     
 
     var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as string;
@@ -148,8 +147,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
 ;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
-                            getInstance(hashMap, request) as AuthenticationHelper;
+    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;
 ;
     
 
@@ -164,7 +162,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
     
 response.setContentType("text/plain");
     
-response.getOutputStream()!.write("OK!".encodeToByteArray());
+response.getOutputStream()!.write(3"OK!".encodeToByteArray());
     
 
                                     }

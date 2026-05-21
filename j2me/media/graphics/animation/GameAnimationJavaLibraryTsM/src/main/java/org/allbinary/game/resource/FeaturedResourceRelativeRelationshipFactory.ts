@@ -135,8 +135,7 @@ index < size; index++)
 
 
 
-                            throw new Exception(new StringMaker().
-                            append("Not available for current feature selection or Resource: ")!.append(resource)!.toString());
+                            throw new Exception(new StringMaker().append("Not available for current feature selection or Resource: ")!.append(resource)!.toString());
                     
 }
 

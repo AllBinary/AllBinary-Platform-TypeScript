@@ -128,8 +128,7 @@ GameFeatureItemStateListener.add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR);
     var itemLabel: string = item.getLabel()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
                         if(item instanceof GameConfigurationGauge)

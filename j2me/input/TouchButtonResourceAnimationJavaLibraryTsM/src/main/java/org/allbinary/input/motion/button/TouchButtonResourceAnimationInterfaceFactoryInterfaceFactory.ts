@@ -135,8 +135,7 @@ this.initImageCache(ImageCacheFactory.getInstance(), level);
 ;
     
 
-    var loadingString: string = new StringMaker().
-                            append(this.toString())!.append(" Loading: ")!.toString()!;
+    var loadingString: string = new StringMaker().append(this.toString())!.append(" Loading: ")!.toString()!;
 ;
     
 

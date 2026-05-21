@@ -104,8 +104,7 @@ this.categoryFactoryInterface= categoryFactoryInterface;
                                     }
                                 
 
-    var document: Document = new CategoryComponent(categoryInterface).
-                            toXmlDoc()!;
+    var document: Document = new CategoryComponent(categoryInterface).toXmlDoc()!;
 ;
     
 

@@ -189,8 +189,7 @@ index < size; index++)
     var anyType: any = list.objectArray[index]!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(ADDING_CHOICE)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
+this.logUtil!.putF(new StringMaker().append(ADDING_CHOICE)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
 choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
     

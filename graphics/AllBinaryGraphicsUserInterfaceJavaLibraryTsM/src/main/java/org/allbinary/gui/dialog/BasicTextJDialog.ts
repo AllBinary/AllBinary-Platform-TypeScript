@@ -62,8 +62,7 @@ java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
     public run(){
-new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").
-                            setVisible(true);
+new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").setVisible(true);
     
 }
 

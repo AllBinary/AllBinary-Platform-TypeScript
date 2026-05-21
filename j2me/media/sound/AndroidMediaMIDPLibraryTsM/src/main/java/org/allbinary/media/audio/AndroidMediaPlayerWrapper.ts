@@ -127,8 +127,7 @@ public constructor (resource: string){
                                     
 
 
-                            throw new Exception(new StringMaker().
-                            append("Failed to create media player for: ")!.append(resource)!.append(" with id: ")!.append(resourceUtil!.getResourceId(resource)!.toString())!.toString());
+                            throw new Exception(new StringMaker().append("Failed to create media player for: ")!.append(resource)!.append(" with id: ")!.append(resourceUtil!.getResourceId(resource)!.toString())!.toString());
                     
 
                                     }

@@ -83,12 +83,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
-                            toHashMap()!;
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;
 ;
     
-this.userName= new UserName(hashMap).
-                            get();
+this.userName= new UserName(hashMap).get();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

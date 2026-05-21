@@ -114,8 +114,7 @@ this.portion= new Portion(hashMap);
 
         try {
             
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.request).
-                            toHashMap()!;
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.request).toHashMap()!;
 ;
     
 

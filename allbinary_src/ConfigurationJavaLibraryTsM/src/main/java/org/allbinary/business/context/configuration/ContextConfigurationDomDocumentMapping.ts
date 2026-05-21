@@ -75,8 +75,7 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
 ;
     
 
-    var node: Node = new ContextConfigurationView(this.contextConfigurationInterface).
-                            toXmlNode(document)!;
+    var node: Node = new ContextConfigurationView(this.contextConfigurationInterface).toXmlNode(document)!;
 ;
     
 document.appendChild(node);

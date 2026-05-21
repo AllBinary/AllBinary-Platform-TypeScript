@@ -179,8 +179,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
                                 }
-                            .
-                            start();
+                            .start();
     
 }
 
@@ -419,8 +418,7 @@ this.getParent()!.repaint();
     var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
 ;
     
-filePath= new StringMaker().
-                            append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
+filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
 file= new File(filePath);
     
@@ -431,8 +429,7 @@ file= new File(filePath);
     var isWritten: boolean = ImageIO.write(CanvasImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     
 }
 

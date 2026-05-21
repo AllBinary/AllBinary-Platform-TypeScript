@@ -204,45 +204,33 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     var imageColorRangeResults: ImageColorRangeResults = imageAnalysisResults!.getImageColorRangeResults()!;
 ;
     
-this.matchingPixelsJTextField!.setText(new Long(imageColorRangeResults!.getMatchingPixelsChecked()).
-                            toString());
+this.matchingPixelsJTextField!.setText(new Long(imageColorRangeResults!.getMatchingPixelsChecked()).toString());
     
-this.totalPixelsJTextField!.setText(new Long(imageColorRangeResults!.getTotalPixelsChecked()).
-                            toString());
+this.totalPixelsJTextField!.setText(new Long(imageColorRangeResults!.getTotalPixelsChecked()).toString());
     
-this.percentMatchingJTextField!.setText(new number(imageColorRangeResults!.getPercent()).
-                            toString());
+this.percentMatchingJTextField!.setText(new number(imageColorRangeResults!.getPercent()).toString());
     
 
     var imageColorResults: ImageColorResults = imageAnalysisResults!.getImageColorResults()!;
 ;
     
-this.avgRedJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgRed()).
-                            toString());
+this.avgRedJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgRed()).toString());
     
-this.avgGreenJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgGreen()).
-                            toString());
+this.avgGreenJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgGreen()).toString());
     
-this.avgBlueJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgBlue()).
-                            toString());
+this.avgBlueJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgBlue()).toString());
     
-this.minRedJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMinRed()).
-                            toString());
+this.minRedJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMinRed()).toString());
     
-this.minGreenJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMinGreen()).
-                            toString());
+this.minGreenJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMinGreen()).toString());
     
-this.minBlueJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMinBlue()).
-                            toString());
+this.minBlueJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMinBlue()).toString());
     
-this.maxRedJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMaxRed()).
-                            toString());
+this.maxRedJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMaxRed()).toString());
     
-this.maxGreenJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMaxGreen()).
-                            toString());
+this.maxGreenJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMaxGreen()).toString());
     
-this.maxBlueJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMaxBlue()).
-                            toString());
+this.maxBlueJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMaxBlue()).toString());
     
 }
 

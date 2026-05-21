@@ -558,8 +558,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
     var oneHour: number = 60 *60 *1000;
 ;
     
-rangeDate= new Long(oneHour).
-                            toString();
+rangeDate= new Long(oneHour).toString();
     
 
                                     }
@@ -572,8 +571,7 @@ rangeDate= new Long(oneHour).
     var oneDay: number = 24 *60 *60 *1000;
 ;
     
-rangeDate= new Long(oneDay).
-                            toString();
+rangeDate= new Long(oneDay).toString();
     
 
                                     }
@@ -586,8 +584,7 @@ rangeDate= new Long(oneDay).
     var oneWeek: number = 7 *24 *60 *60 *1000;
 ;
     
-rangeDate= new Long(oneWeek).
-                            toString();
+rangeDate= new Long(oneWeek).toString();
     
 
                                     }
@@ -600,8 +597,7 @@ rangeDate= new Long(oneWeek).
     var thirtyDays: number = 30 *24 *60 *60 *1000;
 ;
     
-rangeDate= new Long(thirtyDays).
-                            toString();
+rangeDate= new Long(thirtyDays).toString();
     
 
                                     }
@@ -610,23 +606,19 @@ rangeDate= new Long(thirtyDays).
                         if(this.command.compareTo(this.VIEWALLORDERS) == 0)
                         
                                     {
-                                    rangeDate= new Long(currentTime).
-                            toString();
+                                    rangeDate= new Long(currentTime).toString();
     
 
                                     }
                                 
 
-    var rangeDateLong: number = new Long(rangeDate).
-                            longValue()!;
+    var rangeDateLong: number = new Long(rangeDate).longValue()!;
 ;
     
-this.fromDate= new Long(currentTime -rangeDateLong).
-                            toString();
+this.fromDate= new Long(currentTime -rangeDateLong).toString();
     
 
-    var time: string = new Long(currentTime).
-                            toString();
+    var time: string = new Long(currentTime).toString();
 ;
     
 this.toDate= time;
@@ -644,13 +636,11 @@ this.toDate= time;
     
 TimeUtil.getInstance()!.setCalendar(calendar, this.fromYear, this.fromMonth, this.fromDay, this.fromHour);
     
-this.fromDate= new Long(calendar.getTimeInMillis()).
-                            toString();
+this.fromDate= new Long(calendar.getTimeInMillis()).toString();
     
 TimeUtil.getInstance()!.setCalendar(calendar, this.toYear, this.toMonth, this.toDay, this.toHour);
     
-this.toDate= new Long(calendar.getTimeInMillis()).
-                            toString();
+this.toDate= new Long(calendar.getTimeInMillis()).toString();
     
 
                                     }

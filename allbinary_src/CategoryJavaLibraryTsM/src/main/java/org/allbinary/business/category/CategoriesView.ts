@@ -69,8 +69,7 @@ public constructor (categoryInterface: CategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = new CategoryView(this.categoryInterface).
-                            toXmlNode(document)!;
+    var node: Node = new CategoryView(this.categoryInterface).toXmlNode(document)!;
 ;
     
 
@@ -95,8 +94,7 @@ i < size; i++)
 ;
     
 
-    var childCategoryNode: Node = new CategoriesView(childCategoryInterface).
-                            toXmlNode(document)!;
+    var childCategoryNode: Node = new CategoriesView(childCategoryInterface).toXmlNode(document)!;
 ;
     
 node.appendChild(childCategoryNode);

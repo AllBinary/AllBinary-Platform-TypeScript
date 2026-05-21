@@ -93,8 +93,7 @@ public constructor (request: HttpServletRequest){
             super();
         this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-this.getFormData(new RequestParams(request).
-                            toHashMap());
+this.getFormData(new RequestParams(request).toHashMap());
     
 }
 

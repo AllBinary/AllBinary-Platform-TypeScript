@@ -319,8 +319,7 @@ orderReview!.setUserName("testing");
                                  || orderId!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
                         
                                     {
-                                    orderId= new OrderIdGenerator().
-                            getNext();
+                                    orderId= new OrderIdGenerator().getNext();
     
 orderReview!.setId(orderId);
     

@@ -173,8 +173,7 @@ export class DownloadFileServlet extends HttpServlet {
 ;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
-                            getInstance(hashMap, request) as AuthenticationHelper;
+    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;
 ;
     
 

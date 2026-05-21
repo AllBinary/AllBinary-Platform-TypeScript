@@ -205,8 +205,7 @@ generatedBufferedImageArray[index2]![index3]= bufferedImage!.getSubimage(x +widt
 
                                     }
                                 
-nameEnding= new StringMaker().
-                            appendint(index2)!.append(this.commonSeps!.UNDERSCORE)!.appendint(index3)!.toString();
+nameEnding= new StringMaker().appendint(index2)!.append(this.commonSeps!.UNDERSCORE)!.appendint(index3)!.toString();
     
 visitor.visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index);
     
@@ -254,8 +253,7 @@ index3 < columns; index3++)
         {
 tempBufferedImageArray[index3]= generatedBufferedImageArray[index2]![index3]!;
     
-nameEnding= new StringMaker().
-                            appendint(index2)!.append(this.commonSeps!.UNDERSCORE)!.appendint(1)!.append(this._ROW)!.toString();
+nameEnding= new StringMaker().appendint(index2)!.append(this.commonSeps!.UNDERSCORE)!.appendint(1)!.append(this._ROW)!.toString();
     
 }
 
@@ -351,8 +349,7 @@ generatedBufferedImageArray[index2]![index3]= bufferedImage!.getSubimage(x +widt
 
                                     }
                                 
-nameEnding= new StringMaker().
-                            append(this.commonStrings!.DIRECTION_NAME[index2]!)!.append(this.commonSeps!.UNDERSCORE)!.appendint(index3)!.toString();
+nameEnding= new StringMaker().append(this.commonStrings!.DIRECTION_NAME[index2]!)!.append(this.commonSeps!.UNDERSCORE)!.appendint(index3)!.toString();
     
 visitor.visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index);
     
@@ -400,8 +397,7 @@ index3 < columns; index3++)
         {
 tempBufferedImageArray[index3]= generatedBufferedImageArray[index2]![index3]!;
     
-nameEnding= new StringMaker().
-                            append(this.commonStrings!.DIRECTION_NAME[index2]!)!.append(this.commonSeps!.UNDERSCORE)!.appendint(1)!.append(this._ROW)!.toString();
+nameEnding= new StringMaker().append(this.commonStrings!.DIRECTION_NAME[index2]!)!.append(this.commonSeps!.UNDERSCORE)!.appendint(1)!.append(this._ROW)!.toString();
     
 }
 

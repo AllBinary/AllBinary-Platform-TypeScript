@@ -137,8 +137,7 @@ this.dimension= new IntegerDimension(0, 0);
 ;
     
 
-    var angle: number = new Double(angleTextNode!.getNodeValue()).
-                            doubleValue()!;
+    var angle: number = new Double(angleTextNode!.getNodeValue()).doubleValue()!;
 ;
     
 this.setAngle(angle);
@@ -156,8 +155,7 @@ this.setAngle(angle);
 ;
     
 
-    var x: number = new Integer(xTextNode!.getNodeValue()).
-                            intValue()!;
+    var x: number = new Integer(xTextNode!.getNodeValue()).intValue()!;
 ;
     
 
@@ -169,8 +167,7 @@ this.setAngle(angle);
 ;
     
 
-    var y: number = new Integer(yTextNode!.getNodeValue()).
-                            intValue()!;
+    var y: number = new Integer(yTextNode!.getNodeValue()).intValue()!;
 ;
     
 this.setWorkArea(x, y);
@@ -183,8 +180,7 @@ this.setWorkArea(x, y);
     var zoomTextNode: Node = zoomNode!.getFirstChild()!;
 ;
     
-this.grid.setZoom(new Integer(zoomTextNode!.getNodeValue()).
-                            intValue());
+this.grid.setZoom(new Integer(zoomTextNode!.getNodeValue()).intValue());
     
 
     var gridNode: Node = DomHelper.getInstance()!.searchNodeList(this.GRID, canvasNode!.getChildNodes())!;
@@ -203,8 +199,7 @@ this.grid.setZoom(new Integer(zoomTextNode!.getNodeValue()).
 ;
     
 
-    var gridX: number = new Integer(gridXTextNode!.getNodeValue()).
-                            intValue()!;
+    var gridX: number = new Integer(gridXTextNode!.getNodeValue()).intValue()!;
 ;
     
 
@@ -216,8 +211,7 @@ this.grid.setZoom(new Integer(zoomTextNode!.getNodeValue()).
 ;
     
 
-    var gridY: number = new Integer(gridYTextNode!.getNodeValue()).
-                            intValue()!;
+    var gridY: number = new Integer(gridYTextNode!.getNodeValue()).intValue()!;
 ;
     
 this.setGrid(gridX, gridY);
@@ -230,8 +224,7 @@ this.setGrid(gridX, gridY);
     var enableTextNode: Node = enableNode!.getFirstChild()!;
 ;
     
-this.grid.showGrid(.
-                            .valueOf());
+this.grid.showGrid(.valueOf());
     
 
     var possibleNode: Node = DomHelper.getInstance()!.searchNodeList(this.POSSIBLE, gridNode!.getChildNodes())!;
@@ -241,8 +234,7 @@ this.grid.showGrid(.
     var possibleTextNode: Node = possibleNode!.getFirstChild()!;
 ;
     
-this.grid.isGridPossible= .
-                            .valueOf();
+this.grid.isGridPossible= .valueOf();
     
 
     var graphicItemNodeList: BasicArrayList = DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.GRAPHICITEMS, canvasNode!.getChildNodes())!;
@@ -389,8 +381,7 @@ pointNode!.appendChild(yNode);
 ;
     
 
-    var angleTextNode: Node = document.createTextNode(new Double(this.getAngle()).
-                            toString()) as Node;
+    var angleTextNode: Node = document.createTextNode(new Double(this.getAngle()).toString()) as Node;
 ;
     
 angleNode!.appendChild(angleTextNode);
@@ -404,8 +395,7 @@ angleNode!.appendChild(angleTextNode);
 ;
     
 
-    var zoomTextNode: Node = document.createTextNode(new Integer(this.getGrid()!.getZoom()).
-                            toString()) as Node;
+    var zoomTextNode: Node = document.createTextNode(new Integer(this.getGrid()!.getZoom()).toString()) as Node;
 ;
     
 zoomNode!.appendChild(zoomTextNode);
@@ -425,8 +415,7 @@ gridNode!.appendChild(gridSizeNode);
 ;
     
 
-    var enableTextNode: Node = document.createTextNode(.
-                            toString()) as Node;
+    var enableTextNode: Node = document.createTextNode(.toString()) as Node;
 ;
     
 enableNode!.appendChild(enableTextNode);
@@ -438,8 +427,7 @@ gridNode!.appendChild(enableNode);
 ;
     
 
-    var possibleTextNode: Node = document.createTextNode(.
-                            toString()) as Node;
+    var possibleTextNode: Node = document.createTextNode(.toString()) as Node;
 ;
     
 possibleNode!.appendChild(possibleTextNode);

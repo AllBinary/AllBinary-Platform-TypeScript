@@ -237,8 +237,7 @@ this.stringBuffer!.append(SpecialMessageUtil.getInstance()!.get());
     
 hashtable.put(this.MESSAGE, this.stringBuffer!.toString());
     
-new XmlRpcRemoteLogClient(this.abeClientInformation).
-                            get(hashtable);
+new XmlRpcRemoteLogClient(this.abeClientInformation).get(hashtable);
     
 
                 //: 

@@ -192,8 +192,7 @@ this.updateAllFromList(this.list, inputToGameKeyMapping);
 
 
     public updateAllFromList(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.appendint(list.size())!.toString(), this, "updateAll");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.appendint(list.size())!.toString(), this, "updateAll");
     
 
     var touchButtonInput: TouchButtonInput

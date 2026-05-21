@@ -147,8 +147,7 @@ values.addAll(transactionResultInterface!.getValues());
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString()!;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
 ;
     
 values.add(time);

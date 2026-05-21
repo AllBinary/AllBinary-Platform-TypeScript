@@ -257,8 +257,7 @@ this.timeDelayHelper!.delay= 0;
     var duration: number = sound.getDuration();
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
+PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
 }
 
@@ -291,8 +290,7 @@ this.nextSongSound= NoSound.getInstance();
     var duration: number = this.currentSongSound!.getDuration();
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
+PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
 this.timeDelayHelper!.delay= Math.round(duration);
     

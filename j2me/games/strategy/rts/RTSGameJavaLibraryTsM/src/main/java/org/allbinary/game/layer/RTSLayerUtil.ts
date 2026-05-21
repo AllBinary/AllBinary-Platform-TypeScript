@@ -326,8 +326,7 @@ downgradeCost += (currentWeaponCost -downgradeWeaponCost);
 
 downgradeCost= downgradeCost *9 /10;
     
-this.logUtil!.putF(new StringMaker().
-                            append("Total Cost: ")!.appendint(downgradeCost)!.toString(), this, "getDowngradeCost");
+this.logUtil!.putF(new StringMaker().append("Total Cost: ")!.appendint(downgradeCost)!.toString(), this, "getDowngradeCost");
     
 
 
@@ -388,8 +387,7 @@ upgradeCost += (upgradedWeaponCost -currentWeaponCost);
     
 }
 
-this.logUtil!.putF(new StringMaker().
-                            append("Total Cost: ")!.appendint(upgradeCost)!.toString(), this, "getUpgradeCost");
+this.logUtil!.putF(new StringMaker().append("Total Cost: ")!.appendint(upgradeCost)!.toString(), this, "getUpgradeCost");
     
 
 

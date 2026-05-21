@@ -63,8 +63,7 @@ export class PixelDelta
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            appendint(TsUtil.getInstance()!.hashCode(point))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(colorDelta!.getKey()!.toString())!.toString();;
+                        return new StringMaker().appendint(TsUtil.getInstance()!.hashCode(point))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(colorDelta!.getKey()!.toString())!.toString();;
     
 }
 
@@ -133,8 +132,7 @@ this.colorDelta= colorDelta;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            append("PixelDelta: Point: ")!.append(this.point.toString())!.append(CommonSeps.getInstance()!.SPACE)!.append(this.colorDelta!.toString())!.toString();;
+                        return new StringMaker().append("PixelDelta: Point: ")!.append(this.point.toString())!.append(CommonSeps.getInstance()!.SPACE)!.append(this.colorDelta!.toString())!.toString();;
     
 }
 

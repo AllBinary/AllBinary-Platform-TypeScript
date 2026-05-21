@@ -431,8 +431,7 @@ lastIndex= index +1;
 ;
     
 
-    var QUERY_START: string = new StringBuilder().
-                            append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;
+    var QUERY_START: string = new StringBuilder().append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;
 ;
     
 

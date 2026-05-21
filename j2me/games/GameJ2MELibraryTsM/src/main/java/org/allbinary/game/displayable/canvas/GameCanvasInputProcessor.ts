@@ -129,8 +129,7 @@ this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyE
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+                            this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
                         }
@@ -183,8 +182,7 @@ this.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEve
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
+                            this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
                         }

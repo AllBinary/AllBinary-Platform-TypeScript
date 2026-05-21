@@ -101,8 +101,7 @@ public constructor (id: string){
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;
     
-this.id= new ProductIdGenerator().
-                            getNext();
+this.id= new ProductIdGenerator().getNext();
     
 this.basicItemId= id;
     
@@ -230,8 +229,7 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as string;
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString()!;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
 ;
     
 
@@ -313,8 +311,7 @@ values.put(DownloadItemData.RETRIES, this.getRetries());
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);

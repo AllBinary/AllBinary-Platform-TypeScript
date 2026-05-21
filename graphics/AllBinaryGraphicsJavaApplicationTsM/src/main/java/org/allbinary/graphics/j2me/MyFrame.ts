@@ -140,8 +140,7 @@ export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerIn
     
 SmallIntegerSingletonFactory.getInstance()!.init();
     
-new MyFrame().
-                            show();
+new MyFrame().show();
     
 
                 //: 

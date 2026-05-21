@@ -104,8 +104,7 @@ this.setTitle(label);
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
 
     public onEvent(keyCode: number, deviceId: number, repeated: boolean){
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
     
 this.keyPressedByDevice(keyCode, deviceId);
     
@@ -133,8 +132,7 @@ this.keyRepeatedByDevice(keyCode, 0);
     public keyPressedByDevice(keyCode: number, deviceId: number){
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
+            this.logUtil!.putF(new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 
     var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;

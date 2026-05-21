@@ -89,8 +89,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                                     }
                                 
-this.requestHashMap= new NameSpaceRequestParams(this.getPageContext()).
-                            toHashMap();
+this.requestHashMap= new NameSpaceRequestParams(this.getPageContext()).toHashMap();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

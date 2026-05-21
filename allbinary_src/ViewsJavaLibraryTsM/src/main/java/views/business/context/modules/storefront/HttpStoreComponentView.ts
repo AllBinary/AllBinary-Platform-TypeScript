@@ -104,8 +104,7 @@ this.toXmlDoc();
 ;
     
 
-    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
-                            translate(success)!;
+    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
 ;
     
 

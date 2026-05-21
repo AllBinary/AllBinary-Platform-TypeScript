@@ -127,8 +127,7 @@ this.streetAddress= new StreetAddress(this.request);
 
         try {
             
-    var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).
-                            drop()!;
+    var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).drop()!;
 ;
     
 
@@ -178,8 +177,7 @@ this.streetAddress= new StreetAddress(this.request);
 
         try {
             
-    var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).
-                            createTable()!;
+    var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).createTable()!;
 ;
     
 

@@ -178,8 +178,7 @@ index < size; index++)
         {
 product= .toCharArray();
     
-weightFloat= new number(new InventoryEntity().
-                            getWeight(product));
+weightFloat= new number(new InventoryEntity().getWeight(product));
     
 weightFloat= new number(getNumberOf(product)! *weightFloat!);
     

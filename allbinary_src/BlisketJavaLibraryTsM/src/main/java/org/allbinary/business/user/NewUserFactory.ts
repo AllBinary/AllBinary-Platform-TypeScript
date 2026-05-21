@@ -88,8 +88,7 @@ export class NewUserFactory
 ;
     
 
-    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
-                            toHashMap()!;
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;
 ;
     
 
@@ -117,8 +116,7 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
                         
                                     {
                                     
-    var requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
-                            toHashMap()!;
+    var requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;
 ;
     
 

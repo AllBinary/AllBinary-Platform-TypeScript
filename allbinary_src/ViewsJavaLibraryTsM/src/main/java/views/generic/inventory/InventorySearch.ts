@@ -120,9 +120,7 @@ this.searchRequest= searchRequest;
 ;
     
 
-    var file: string = new StaticPagesEntity().
-                            getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).
-                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as string))!;
+    var file: string = new StaticPagesEntity().getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as string))!;
 ;
     
 
@@ -158,8 +156,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
     
 
-    var filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").
-                            all(stringBuffer!.toString())!;
+    var filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").all(stringBuffer!.toString())!;
 ;
     
 

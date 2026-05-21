@@ -73,8 +73,7 @@ index < size; index++)
     var anyType: any = list.get(index)!;
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append("pathList.add(cellPositionFactory.getInstance")!.append(anyType!.toString())!.append(");")!.toString(), this, "printPath");
+PreLogUtil.put(new StringMaker().append("pathList.add(cellPositionFactory.getInstance")!.append(anyType!.toString())!.append(");")!.toString(), this, "printPath");
     
 }
 
@@ -94,8 +93,7 @@ PreLogUtil.put(new StringMaker().
     var index: number = 0;
 index < size; index++)
         {
-console.log(new StringMaker().
-                            append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
+console.log(new StringMaker().append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
     
 this.printPath(list.get(index) as BasicArrayList);
     

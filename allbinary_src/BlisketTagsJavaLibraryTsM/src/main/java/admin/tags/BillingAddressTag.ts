@@ -88,8 +88,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = new BillingAddressHelperFactory().
-                            getInstance(this.getPropertiesHashMap(), this.pageContext)!;
+    var anyType: any = new BillingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
 ;
     
 
@@ -156,8 +155,7 @@ this.value= value;
 
         try {
             
-    var anyType: any = new BillingAddressHelperFactory().
-                            getInstance(this.getPropertiesHashMap(), this.pageContext)!;
+    var anyType: any = new BillingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
 ;
     
 

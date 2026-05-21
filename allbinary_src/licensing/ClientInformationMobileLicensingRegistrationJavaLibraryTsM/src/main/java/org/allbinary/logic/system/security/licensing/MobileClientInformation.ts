@@ -62,8 +62,7 @@ export class MobileClientInformation extends AbeClientInformation {
 
     static readonly ANDROID_DESC: string = "Android" +MobileClientInformation.DESC;
 public constructor (name: string, version: string, specialName: string, shortName: string){
-            super(name, version, new StringMaker().
-                            append(specialName)!.append(CommonSeps.getInstance()!.SPACE)!.append(PartnerIdentifierFileUtil.getInstance()!.get())!.toString(), shortName);
+            super(name, version, new StringMaker().append(specialName)!.append(CommonSeps.getInstance()!.SPACE)!.append(PartnerIdentifierFileUtil.getInstance()!.get())!.toString(), shortName);
                     
 
                             //For kotlin this is before the body of the constructor.

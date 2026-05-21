@@ -107,8 +107,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).
-                            toHashMap()!;
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).toHashMap()!;
 ;
     
 this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as string;

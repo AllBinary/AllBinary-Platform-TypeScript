@@ -174,8 +174,7 @@ this.load();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.platformRecordIdUtil!.getRecordId(abeClientInformation, new StringMaker().
-                            append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(this.RECORD_ID)!.toString());;
+                        return this.platformRecordIdUtil!.getRecordId(abeClientInformation, new StringMaker().append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(this.RECORD_ID)!.toString());;
     
 }
 
@@ -188,8 +187,7 @@ this.load();
     
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, this.commonStrings!.ADD);
+            this.logUtil!.putF(new StringMaker().append("Adding HighScore: ")!.appendlong(newHighScore!.getScore())!.toString(), this, this.commonStrings!.ADD);
     
 
                         if(this.isTooManyHighScores())
@@ -348,8 +346,7 @@ inputStream= new DataInputStream(byteArrayInputStream);
                         if(bestHighScore!.getId() !=  -1)
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append("Removing Lowest HighScore: ")!.appendlong(bestHighScore!.getScore())!.toString(), this, this.commonStrings!.LOAD);
+                                    this.logUtil!.putF(new StringMaker().append("Removing Lowest HighScore: ")!.appendlong(bestHighScore!.getScore())!.toString(), this, this.commonStrings!.LOAD);
     
 recordStore!.deleteRecord(bestHighScore!.getId());
     
@@ -595,8 +592,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append("HighScores RecordStore Max Reached: ")!.appendint(this.MAXHIGHSCORES)!.toString(), this, "isTooManyHighScores");
+                            this.logUtil!.putF(new StringMaker().append("HighScores RecordStore Max Reached: ")!.appendint(this.MAXHIGHSCORES)!.toString(), this, "isTooManyHighScores");
     
 
 

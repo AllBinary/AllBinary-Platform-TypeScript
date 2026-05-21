@@ -209,8 +209,7 @@ super.keyPressedByDevice(keyCode, 0);
     addGameKeyEvent(keyCode: number, repeated: boolean){
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+            this.logUtil!.putF(new StringMaker().append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
     var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;
@@ -269,8 +268,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.PROCESS);
 
 
     setSelectedAction(gameKey: GameKey){
-this.logUtil!.putF(new StringMaker().
-                            append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction");
+this.logUtil!.putF(new StringMaker().append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction");
     
 this.selectedGameKey= gameKey;
     
@@ -316,8 +314,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "gameActionCrud");
                         if(isInputAlreadyMappedToSelectedAction)
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append("Already Mapped Input: ")!.append(this.stringUtil!.toString(input))!.toString(), this, "gameActionCrud");
+                                    this.logUtil!.putF(new StringMaker().append("Already Mapped Input: ")!.append(this.stringUtil!.toString(input))!.toString(), this, "gameActionCrud");
     
 this.selectedInput= input;
     

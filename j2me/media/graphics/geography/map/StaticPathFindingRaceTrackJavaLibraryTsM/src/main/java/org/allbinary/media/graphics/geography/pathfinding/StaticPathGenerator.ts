@@ -216,8 +216,7 @@ pathCacheFactory!.remove(smallIntegerSingletonFactory!.getAt(id));
 
                                     }
                                 
-this.logUtil!.putF(new StringMaker().
-                            append("Using Cached Path(s): ")!.append(StringUtil.getInstance()!.toString(list))!.toString(), this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(new StringMaker().append("Using Cached Path(s): ")!.append(StringUtil.getInstance()!.toString(list))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
 

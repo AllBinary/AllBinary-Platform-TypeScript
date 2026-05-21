@@ -182,8 +182,7 @@ this.setHeight(this.maxY -this.minY);
 ;
     
 
-    var s: string = new StringMaker().
-                            append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;
+    var s: string = new StringMaker().append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;
 ;
     
 this.logUtil!.putF(s, this, this.commonStrings!.GET_INSTANCE);
@@ -208,8 +207,7 @@ this.dy= middle -currentMiddleY;
     public transform(hashMap: HashMap<any, any>){
 this.calculate(hashMap);
     
-this.logUtil!.putF(new StringMaker().
-                            append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, this.commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(new StringMaker().append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, this.commonStrings!.GET_INSTANCE);
     
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;

@@ -120,8 +120,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 this.storeName= weblisketSession!.getStoreName();
     
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(pageContext).
-                            toHashMap()!;
+    var requestHashMap: HashMap<any, any> = new RequestParams(pageContext).toHashMap()!;
 ;
     
 this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
@@ -190,8 +189,7 @@ values.add(DomDocumentHelper.toString(this.workFlowDoc));
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 values.add(time);
@@ -225,8 +223,7 @@ hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.w
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);

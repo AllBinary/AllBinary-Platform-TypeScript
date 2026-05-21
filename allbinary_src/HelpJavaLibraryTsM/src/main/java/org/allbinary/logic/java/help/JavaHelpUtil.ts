@@ -124,8 +124,7 @@ private constructor (){
 
         try {
             
-    var helpSetURI: URI = new File(filePath).
-                            toURI()!;
+    var helpSetURI: URI = new File(filePath).toURI()!;
 ;
     
 
@@ -193,8 +192,7 @@ helpBroker!.setLocation(this.point);
     
 helpBroker!.setSize(this.dimension);
     
-new CSH.DisplayHelpFromSource(helpBroker).
-                            actionPerformed(this.contextSensitiveHelpActionEvent);
+new CSH.DisplayHelpFromSource(helpBroker).actionPerformed(this.contextSensitiveHelpActionEvent);
     
 this.logUtil!.putF("CSH Action", getInstance(), "show");
     

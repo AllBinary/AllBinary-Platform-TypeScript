@@ -143,8 +143,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     
 this.setRegistrationCode(dataInputStream!.readUTF());
     
-PreLogUtil.put(new StringMaker().
-                            append("Read Configuration: ")!.append(this.toString())!.toString(), this, "read");
+PreLogUtil.put(new StringMaker().append("Read Configuration: ")!.append(this.toString())!.toString(), this, "read");
     
 }
 
@@ -160,8 +159,7 @@ PreLogUtil.put(new StringMaker().
     
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append("Write Configuration: ")!.append(this.toString())!.toString(), this, "write");
+            this.logUtil!.putF(new StringMaker().append("Write Configuration: ")!.append(this.toString())!.toString(), this, "write");
     
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
@@ -192,8 +190,7 @@ dataOutputStream!.flush();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            append("Registration Code: ")!.append(this.getRegistrationCode())!.toString();;
+                        return new StringMaker().append("Registration Code: ")!.append(this.getRegistrationCode())!.toString();;
     
 }
 

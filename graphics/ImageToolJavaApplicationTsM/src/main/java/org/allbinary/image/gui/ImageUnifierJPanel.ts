@@ -242,8 +242,7 @@ tempBufferedImageArray[index]= bufferedImage;
 ;
     
 
-    var averageRatioString: string = new Double(averageRatio).
-                            toString()!;
+    var averageRatioString: string = new Double(averageRatio).toString()!;
 ;
     
 
@@ -384,8 +383,7 @@ this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
 ;
     
 
-    var cellRatioString: string = new Double(cellRatio).
-                            toString()!;
+    var cellRatioString: string = new Double(cellRatio).toString()!;
 ;
     
 
@@ -727,8 +725,7 @@ this.updateOnPropertiesChange();
     var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
 ;
     
-filePath= new StringMaker().
-                            append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
+filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
 this.logUtil!.putF("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING);
     

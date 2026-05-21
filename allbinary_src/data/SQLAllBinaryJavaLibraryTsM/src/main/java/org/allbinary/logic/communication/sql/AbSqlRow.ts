@@ -192,8 +192,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
                         else {
-                            columnValue= new Replace(this.sqlStrings!.CLOSE_QUOTE, this.ESCAPE_QUOTES).
-                            all(columnValue);
+                            columnValue= new Replace(this.sqlStrings!.CLOSE_QUOTE, this.ESCAPE_QUOTES).all(columnValue);
     
 
                         }
@@ -324,8 +323,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
                         else {
-                            columnValue= new Replace(this.sqlStrings!.CLOSE_QUOTE, this.ESCAPE_QUOTES).
-                            all(columnValue);
+                            columnValue= new Replace(this.sqlStrings!.CLOSE_QUOTE, this.ESCAPE_QUOTES).all(columnValue);
     
 
                         }
@@ -618,8 +616,7 @@ i < values.length -1; i++)
     var value: string = this.getValue(values.get(i) as string)!;
 ;
     
-value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
-                            all(value);
+value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).all(value);
     
 stringBuffer!.append(value);
     
@@ -631,8 +628,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
     var value: string = this.getValue(values.lastElement() as string)!;
 ;
     
-value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
-                            all(value);
+value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).all(value);
     
 stringBuffer!.append(value);
     

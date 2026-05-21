@@ -125,8 +125,7 @@ this.putS(specialMessage, string, functionName, NullUtil.getInstance()!.NULL_OBJ
     var className: string = this.LABEL;
 ;
     
-className= new StringMaker().
-                            append(anyType!.constructor.name.toString()!)!.append(this.commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
+className= new StringMaker().append(anyType!.constructor.name.toString()!)!.append(this.commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
     var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
@@ -142,8 +141,7 @@ hilog.info(0x0000, className, LogUtil.PUBLIC, message);
     var className: string = this.LABEL;
 ;
     
-className= new StringMaker().
-                            append(string)!.append(this.commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(string)))!.toString();
+className= new StringMaker().append(string)!.append(this.commonSeps!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(string)))!.toString();
     
 
     var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;

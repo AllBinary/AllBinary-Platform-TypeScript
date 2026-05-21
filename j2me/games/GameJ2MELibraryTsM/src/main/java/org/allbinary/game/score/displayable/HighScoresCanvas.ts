@@ -328,8 +328,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
                                 )
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append(this.commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray");
+                                    this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray");
     
 
                                     }
@@ -360,8 +359,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
                 //@Throws(Exception.constructor)
             
     public updateCommand(command: Command){
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, this.commonStrings!.UPDATE);
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, this.commonStrings!.UPDATE);
     
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;

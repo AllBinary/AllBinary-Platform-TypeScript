@@ -143,8 +143,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationRequestHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -207,8 +206,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationRequestHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -271,8 +269,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -335,8 +332,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -399,8 +395,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationRequestHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -475,8 +470,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -543,8 +537,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -611,8 +604,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -687,8 +679,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -763,8 +754,7 @@ this.roles= values;
 
         try {
             
-    var anyType: any = new AuthenticationHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new AuthenticationHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -1226,8 +1216,7 @@ pageContext!.getOut()!.print(invalidRole());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append("Major authentication error - userName: ")!.append(this.userName)!.append(" Password: ")!.append(this.password)!.append(" Command: ")!.append(this.command)!.toString(), this, tagStrings!.DO_START_TAG);
+                                    this.logUtil!.putF(new StringMaker().append("Major authentication error - userName: ")!.append(this.userName)!.append(" Password: ")!.append(this.password)!.append(" Command: ")!.append(this.command)!.toString(), this, tagStrings!.DO_START_TAG);
     
 
                                     }

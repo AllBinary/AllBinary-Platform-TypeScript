@@ -229,8 +229,7 @@ public constructor (){
     var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;
     
-this.itemId= new ProductIdGenerator().
-                            getNext();
+this.itemId= new ProductIdGenerator().getNext();
     
 this.number= CommonPhoneStrings.getInstance()!.ZERO;
     
@@ -796,8 +795,7 @@ this.downloadable= downloadable;
     var itemTotal: Money = new Money(this.price);
 ;
     
-itemTotal!.multiply(new Integer(this.number).
-                            intValue());
+itemTotal!.multiply(new Integer(this.number).intValue());
     
 
 
@@ -865,8 +863,7 @@ hashMap!.put(BasicItemData.LARGEIMAGE, this.largeImage);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString()!;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
 ;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -953,8 +950,7 @@ values.add(this.getLargeImage());
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString()!;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
 ;
     
 values.add(time);

@@ -75,8 +75,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-    var result: string = new CompoundTransform(this.getTransformInfoInterface()).
-                            translate(success)!;
+    var result: string = new CompoundTransform(this.getTransformInfoInterface()).translate(success)!;
 ;
     
 

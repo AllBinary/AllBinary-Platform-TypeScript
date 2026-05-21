@@ -99,8 +99,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new BasketHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -159,8 +158,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketRequestHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -223,8 +221,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketRequestHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -287,8 +284,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketRequestHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 

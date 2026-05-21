@@ -161,8 +161,7 @@ this.password= new Password(StringUtil.getInstance()!.EMPTY_STRING);
 public constructor (request: HttpServletRequest){
 
             super();
-        this.getFormData(new RequestParams(request).
-                            toHashMap());
+        this.getFormData(new RequestParams(request).toHashMap());
     
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
     
@@ -181,8 +180,7 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
                 //@Throws(Exception.constructor)
             
     public getFormData(userHashMap: HashMap<any, any>){
-this.userName= new UserName(userHashMap).
-                            get();
+this.userName= new UserName(userHashMap).get();
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
@@ -844,8 +842,7 @@ values.add(this.enable);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 values.add(time);
@@ -928,8 +925,7 @@ values.put(EntryData.getInstance()!.ENABLE, this.enable);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);

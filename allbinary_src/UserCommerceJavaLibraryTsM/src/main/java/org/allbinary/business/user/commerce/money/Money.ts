@@ -149,8 +149,7 @@ this.units= new Long(this.units.longValue() -convertUsdToUnits(usDollarStr));
 
 
     public multiply(multiplier: number){
-this.units= new Long(new number(this.units.longValue() *multiplier).
-                            longValue());
+this.units= new Long(new number(this.units.longValue() *multiplier).longValue());
     
 }
 
@@ -178,8 +177,7 @@ this.units= new Long(this.units.longValue() *multiplier);
     var cents: number = this.units.longValue() -(dollar *100);
 ;
     
-stringBuffer!.append(new Long(dollar).
-                            toString());
+stringBuffer!.append(new Long(dollar).toString());
     
 stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
     
@@ -192,8 +190,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 
                                     }
                                 
-stringBuffer!.append(new Long(cents).
-                            toString());
+stringBuffer!.append(new Long(cents).toString());
     
 
                                     }
@@ -249,12 +246,9 @@ centsStr= substring.toCharArray();
 
                         }
                             
-localUnit= new Long(new Long(dollarStr).
-                            longValue() *100).
-                            longValue();
+localUnit= new Long(new Long(dollarStr).longValue() *100).longValue();
     
-localUnit += new Long(centsStr).
-                            longValue();
+localUnit += new Long(centsStr).longValue();
     
 
 

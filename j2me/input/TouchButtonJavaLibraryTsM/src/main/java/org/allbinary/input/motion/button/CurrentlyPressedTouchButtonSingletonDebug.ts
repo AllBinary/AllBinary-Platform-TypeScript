@@ -97,28 +97,23 @@ stringBuffer!.append(append);
     
 this.append= stringBuffer!.toString();
     
-this.string= new StringMaker().
-                            append(this.listString)!.append(this.append)!.toString();
+this.string= new StringMaker().append(this.listString)!.append(this.append)!.toString();
     
 }
 
 
     append(append: string){
-this.append= new StringMaker().
-                            append(this.append)!.append(append)!.toString();
+this.append= new StringMaker().append(this.append)!.append(append)!.toString();
     
-this.string= new StringMaker().
-                            append(this.listString)!.append(this.append)!.toString();
+this.string= new StringMaker().append(this.listString)!.append(this.append)!.toString();
     
 }
 
 
     public clearLog(x: number, y: number){
-this.append= new StringMaker().
-                            append(GPoint.toStringStatic(x, y, 0))!.append(CommonSeps.getInstance()!.SPACE)!.toString();
+this.append= new StringMaker().append(GPoint.toStringStatic(x, y, 0))!.append(CommonSeps.getInstance()!.SPACE)!.toString();
     
-this.string= new StringMaker().
-                            append(this.listString)!.append(this.append)!.toString();
+this.string= new StringMaker().append(this.listString)!.append(this.append)!.toString();
     
 }
 
@@ -166,8 +161,7 @@ this.appendTouchButtonInput(this.PRESSED_AND_NOT_FIRED, touchButtonInput);
     
 this.listString= this.list.toString();
     
-this.string= new StringMaker().
-                            append(this.listString)!.append(this.append)!.toString();
+this.string= new StringMaker().append(this.listString)!.append(this.append)!.toString();
     
 
 
@@ -185,8 +179,7 @@ this.string= new StringMaker().
     
 this.listString= this.list.toString();
     
-this.string= new StringMaker().
-                            append(this.listString)!.append(this.append)!.toString();
+this.string= new StringMaker().append(this.listString)!.append(this.append)!.toString();
     
 
 
@@ -202,8 +195,7 @@ super.add(touchButtonInput);
     
 this.listString= this.list.toString();
     
-this.string= new StringMaker().
-                            append(this.listString)!.append(this.append)!.toString();
+this.string= new StringMaker().append(this.listString)!.append(this.append)!.toString();
     
 }
 

@@ -237,8 +237,7 @@ recordStore!.closeRecordStore();
     
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
+            this.logUtil!.putF(new StringMaker().append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     

@@ -74,8 +74,7 @@ java.awt.EventQueue.invokeLater(new class extends ARunnable
         try {
             logUtil!.putF(commonStrings!.START, this, commonStrings!.RUN);
     
-new ImageToolJFrame().
-                            setVisible(true);
+new ImageToolJFrame().setVisible(true);
     
 
                 //: 

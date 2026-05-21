@@ -53,8 +53,7 @@ export class DesktopGameInputMapping extends PCGameInputMapping {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new DesktopDefaultGameInputMapping().
-                            getInputMapping();;
+                        return new DesktopDefaultGameInputMapping().getInputMapping();;
     
 }
 

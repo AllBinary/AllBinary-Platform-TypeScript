@@ -87,8 +87,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).
-                            toHashMap()!;
+    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).toHashMap()!;
 ;
     
 

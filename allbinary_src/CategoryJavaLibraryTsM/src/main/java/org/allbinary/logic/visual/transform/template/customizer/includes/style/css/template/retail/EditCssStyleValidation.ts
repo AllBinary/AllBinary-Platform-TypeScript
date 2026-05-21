@@ -137,8 +137,7 @@ public constructor (hashMap: HashMap<any, any>){
     
 node.appendChild(styleNode);
     
-styleNode!.appendChild(new ColorsView().
-                            toXmlNode(document));
+styleNode!.appendChild(new ColorsView().toXmlNode(document));
     
 
     var size: number = this.cssStyleElementVector!.size()!;

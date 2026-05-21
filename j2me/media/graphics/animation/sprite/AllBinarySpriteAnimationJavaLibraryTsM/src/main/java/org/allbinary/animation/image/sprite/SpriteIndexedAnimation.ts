@@ -94,8 +94,7 @@ this.basicColorArray= basicColorArray;
                                     
 
 
-                            throw new Exception(new StringMaker().
-                            append(CommonLabels.getInstance()!.TOTAL_LABEL)!.appendint(this.getSize())!.append("!=")!.appendint(this.basicColorArray!.length)!.toString());
+                            throw new Exception(new StringMaker().append(CommonLabels.getInstance()!.TOTAL_LABEL)!.appendint(this.getSize())!.append("!=")!.appendint(this.basicColorArray!.length)!.toString());
                     
 
                                     }

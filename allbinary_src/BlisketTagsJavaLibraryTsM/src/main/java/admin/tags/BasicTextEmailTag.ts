@@ -95,8 +95,7 @@ propertiesHashMap!.put("Subject", this.subject);
 propertiesHashMap!.put("Body", this.body);
     
 
-    var anyType: any = new BasicTextEmailHelperFactory().
-                            getInstance(propertiesHashMap, this.pageContext)!;
+    var anyType: any = new BasicTextEmailHelperFactory().getInstance(propertiesHashMap, this.pageContext)!;
 ;
     
 

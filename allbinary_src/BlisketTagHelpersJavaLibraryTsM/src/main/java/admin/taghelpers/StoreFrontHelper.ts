@@ -83,11 +83,9 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                                     {
                                     this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
-this.currentLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").
-                            all(this.storeFrontInterface!.getCurrentHostName() +this.storeFrontInterface!.getCurrentHostNamePath());
+this.currentLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").all(this.storeFrontInterface!.getCurrentHostName() +this.storeFrontInterface!.getCurrentHostNamePath());
     
-this.currentHomeLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").
-                            all(this.storeFrontInterface!.getCurrentHomeHostName() +this.storeFrontInterface!.getCurrentHomeHostNamePath());
+this.currentHomeLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").all(this.storeFrontInterface!.getCurrentHomeHostName() +this.storeFrontInterface!.getCurrentHomeHostNamePath());
     
 
                                     }

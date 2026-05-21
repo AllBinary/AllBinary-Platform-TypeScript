@@ -111,8 +111,7 @@ public constructor (categoryInterface: CategoryInterface){
     var document: Document = DomDocumentHelper.create()!;
 ;
     
-document.appendChild(new CategoryView(this.getCategoryInterface()).
-                            toXmlNode(document));
+document.appendChild(new CategoryView(this.getCategoryInterface()).toXmlNode(document));
     
 
 

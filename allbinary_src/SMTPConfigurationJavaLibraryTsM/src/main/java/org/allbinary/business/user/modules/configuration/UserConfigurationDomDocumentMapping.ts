@@ -75,8 +75,7 @@ public constructor (userConfigurationInterface: UserConfigurationInterface){
 ;
     
 
-    var node: Node = new UserConfigurationView(this.userConfigurationInterface).
-                            toXmlNode(document)!;
+    var node: Node = new UserConfigurationView(this.userConfigurationInterface).toXmlNode(document)!;
 ;
     
 document.appendChild(node);

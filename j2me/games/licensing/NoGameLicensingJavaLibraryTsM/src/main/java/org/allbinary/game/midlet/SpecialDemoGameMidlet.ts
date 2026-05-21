@@ -65,8 +65,7 @@ public constructor (clientInformationFactory: ClientInformationFactory, licenseL
 
 
     public preInit(){
-new LicenseServerInitFileUtil().
-                            init();
+new LicenseServerInitFileUtil().init();
     
 }
 

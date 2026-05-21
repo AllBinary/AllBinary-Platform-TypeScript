@@ -78,8 +78,7 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
 
         try {
             
-    var anyType: any = new PaymentGatewayHelperFactory().
-                            getInstance(this.getPropertiesHashMap(), this.pageContext)!;
+    var anyType: any = new PaymentGatewayHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
 ;
     
 

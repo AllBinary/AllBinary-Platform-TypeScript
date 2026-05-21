@@ -63,8 +63,7 @@ export class GameSkill
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameSkill.hashMap!.get(new StringMaker().
-                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString()) as GameSkill;
+                        return GameSkill.hashMap!.get(new StringMaker().append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString()) as GameSkill;
     
 }
 
@@ -93,8 +92,7 @@ this.setTime(time);
     
 this.vector= new Vector();
     
-GameSkill.hashMap!.put(new StringMaker().
-                            append(this.getGameSkillType()!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString(), this);
+GameSkill.hashMap!.put(new StringMaker().append(this.getGameSkillType()!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString(), this);
     
 }
 

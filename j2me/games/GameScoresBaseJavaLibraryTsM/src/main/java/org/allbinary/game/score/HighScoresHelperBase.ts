@@ -73,8 +73,7 @@ export class HighScoresHelperBase
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(commonStrings!.START)!.appendint(highScoresArrayP!.length)!.toString(), this, "setHighScoresArray");
+this.logUtil!.putF(new StringMaker().append(commonStrings!.START)!.appendint(highScoresArrayP!.length)!.toString(), this, "setHighScoresArray");
     
 
                                     }

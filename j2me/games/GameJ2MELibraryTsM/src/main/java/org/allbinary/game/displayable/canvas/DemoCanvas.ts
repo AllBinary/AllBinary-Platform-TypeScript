@@ -391,8 +391,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
         try {
-            this.logUtil!.putF(new StringMaker().
-                            append(this.commonLabels!.START_LABEL)!.append(this.displayInfoSingleton!.toString())!.append(MyFont.getInstance()!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+            this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfoSingleton!.toString())!.append(MyFont.getInstance()!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 
     var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;
@@ -612,8 +611,7 @@ this.close();
     var rectangle: Rectangle = FormUtil.getInstance()!.createFormRectangle()!;
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append(this.commonLabels!.START_LABEL)!.append(this.displayInfoSingleton!.toString())!.toString(), this, "initMenu");
+PreLogUtil.put(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfoSingleton!.toString())!.toString(), this, "initMenu");
     
 
     var scrollSelectionForm: ScrollSelectionForm = CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 15, true, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;
@@ -749,8 +747,7 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     {
                                     this.lastKeyNotMapped= keyCode;
     
-this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
+this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
                                     }
@@ -790,8 +787,7 @@ UpGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                     }
                                 
                         else {
-                            this.logUtil!.putF(new StringMaker().
-                            append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
+                            this.logUtil!.putF(new StringMaker().append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.REMOVE_KEY_EVENT);
     
 
                         }
@@ -861,8 +857,7 @@ this.setPaused(false);
 
 
     public isGameOver(): boolean{
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
     
 
 
@@ -1128,8 +1123,7 @@ this.getHighScoresFactoryInterface()!.fetchHighScores(gameInfo, this.highScoresH
     var gameCanvas: AllBinaryGameCanvas = this.gameCanvas;
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append("Game Thread in DemoCanvas: ")!.append(this.stringUtil!.toString(gameCanvas))!.toString(), this, this.commonStrings!.START);
+PreLogUtil.put(new StringMaker().append("Game Thread in DemoCanvas: ")!.append(this.stringUtil!.toString(gameCanvas))!.toString(), this, this.commonStrings!.START);
     
 this.canvasThread= this.threadFactoryUtil!.getInstanceGameCanvasRunnable(gameCanvas);
     
@@ -1567,8 +1561,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     var features: Features = Features.getInstance()!;
 ;
     
-this.baseGameStatistics!.add(new StringMaker().
-                            append(DemoCanvas.BOT_GAME_STATS)!.append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
+this.baseGameStatistics!.add(new StringMaker().append(DemoCanvas.BOT_GAME_STATS)!.append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 this.baseGameStatistics!.init();
     

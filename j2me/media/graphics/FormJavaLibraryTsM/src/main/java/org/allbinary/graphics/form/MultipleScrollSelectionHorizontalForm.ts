@@ -160,8 +160,7 @@ item= this.get(index);
                         else {
                             this.logged= true;
     
-PreLogUtil.put(new StringMaker().
-                            append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, this.canvasStrings!.PAINT);
+PreLogUtil.put(new StringMaker().append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, this.canvasStrings!.PAINT);
     
 
                         }

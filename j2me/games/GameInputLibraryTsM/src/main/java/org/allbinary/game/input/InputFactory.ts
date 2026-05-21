@@ -123,8 +123,7 @@ this.inputIntegerArray[id]= input;
                         if(id > this.inputIntegerArray!.length)
                         
                                     {
-                                    this.logUtil!.putF(new StringMaker().
-                            append("Warning id: ")!.appendint(id)!.toString(), this, this.commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF(new StringMaker().append("Warning id: ")!.appendint(id)!.toString(), this, this.commonStrings!.GET_INSTANCE);
     
 
 

@@ -757,8 +757,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", 
     var jdbcDriver: string = this.databaseConnectionInfoInterface!.getJdbcDriver()!;
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!.constructor.name.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), this.INIT_SQL, "initialize()");
+PreLogUtil.put(new StringMaker().append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!.constructor.name.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), this.INIT_SQL, "initialize()");
     
 Class.forName(jdbcDriver)!.newInstance();
     

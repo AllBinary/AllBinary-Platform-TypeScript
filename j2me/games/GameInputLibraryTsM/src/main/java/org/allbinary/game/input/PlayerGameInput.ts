@@ -107,8 +107,7 @@ this.addForRemoval(gameKeyEvent);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKey(gameKeyEvent: Integer){
-PreLogUtil.put(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, this.gameInputStrings!.ON_DOWN_GAME_KEY);
+PreLogUtil.put(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, this.gameInputStrings!.ON_DOWN_GAME_KEY);
     
 }
 

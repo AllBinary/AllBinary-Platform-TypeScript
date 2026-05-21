@@ -134,8 +134,7 @@ this.highScore!.setName(name);
 
 
     public saveHighScore(){
-this.logUtil!.putF(new StringMaker().
-                            append(this.commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
     
 
     var size: number = this.highScoresArray!.length
@@ -181,8 +180,7 @@ highScores!.addHighScore(this.highScore);
     
 highScoresAsString= highScores!.toString();
     
-this.logUtil!.putF(new StringMaker().
-                            append("Added/Adding Score: ")!.append(highScoresAsString)!.toString(), this, "saveHighScore");
+this.logUtil!.putF(new StringMaker().append("Added/Adding Score: ")!.append(highScoresAsString)!.toString(), this, "saveHighScore");
     
 }
 

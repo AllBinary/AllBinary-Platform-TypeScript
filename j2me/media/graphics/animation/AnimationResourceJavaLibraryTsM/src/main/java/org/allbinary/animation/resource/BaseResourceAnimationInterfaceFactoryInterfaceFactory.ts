@@ -115,8 +115,7 @@ this.name= name;
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append("Available List of Animations: ")!.append(this.hashtable.toString())!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(new StringMaker().append("Available List of Animations: ")!.append(this.hashtable.toString())!.toString(), this, commonStrings!.INIT);
     
 this.setInitialized(true);
     
@@ -139,8 +138,7 @@ this.setInitialized(true);
                                     
 
 
-                            throw new Exception(new StringMaker().
-                            append("Resource Already Created: ")!.append(resource)!.toString());
+                            throw new Exception(new StringMaker().append("Resource Already Created: ")!.append(resource)!.toString());
                     
 
                                     }
@@ -286,8 +284,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StringMaker().
-                            append(this.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.SEMICOLON)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.name)!.toString();;
+                        return new StringMaker().append(this.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.SEMICOLON)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.name)!.toString();;
     
 }
 

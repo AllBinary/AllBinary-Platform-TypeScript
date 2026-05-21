@@ -101,8 +101,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new OrderHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new OrderHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 
@@ -169,8 +168,7 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new OrderHelperFactory().
-                            getInstance(this.propertiesHashMap, this.pageContext)!;
+    var anyType: any = new OrderHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
 ;
     
 

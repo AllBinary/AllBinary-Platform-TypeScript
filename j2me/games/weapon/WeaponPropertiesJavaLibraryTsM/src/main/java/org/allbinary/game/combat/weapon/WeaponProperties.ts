@@ -89,8 +89,7 @@ public constructor (reloadTime: number, targetingTime: number, speed: number, da
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-PreLogUtil.put(new StringMaker().
-                            append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR);
+PreLogUtil.put(new StringMaker().append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 WeaponProperties.messageSent= true;
     

@@ -88,8 +88,7 @@ public constructor (gameOptionsForm: GameOptionsForm){
     var itemLabel: string = item.getLabel()!;
 ;
     
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION);
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION);
     
 
                         if(item instanceof GameConfigurationGauge)

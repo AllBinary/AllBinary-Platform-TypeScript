@@ -315,8 +315,7 @@ paramsNode!.appendChild(this.getLengthNode(document));
             
     getFieldsNode(document: Document): Node{
 
-    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).
-                            toString())!;
+    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).toString())!;
 ;
     
 

@@ -131,8 +131,7 @@ timeHelper!.setStartTimeTNT();
     var screenBufferedImage: BufferedImage = capturedImageWorkerResultsEvent!.getBufferedImage()!;
 ;
     
-new CapturedImageInputOutput().
-                            save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame());
+new CapturedImageInputOutput().save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame());
     
 this.capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent);
     

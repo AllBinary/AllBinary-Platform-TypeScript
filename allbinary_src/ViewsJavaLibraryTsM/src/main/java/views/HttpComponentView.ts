@@ -249,8 +249,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 ;
     
 
-    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
-                            translate(success)!;
+    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
 ;
     
 

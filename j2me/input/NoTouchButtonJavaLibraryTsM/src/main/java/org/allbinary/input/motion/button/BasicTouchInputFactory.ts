@@ -147,8 +147,7 @@ this.updateAllList(this.getList(), inputToGameKeyMapping);
 
 
     public updateAllList(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
-this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START)!.appendint(list.size())!.toString(), this, "updateAll");
+this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START)!.appendint(list.size())!.toString(), this, "updateAll");
     
 
 

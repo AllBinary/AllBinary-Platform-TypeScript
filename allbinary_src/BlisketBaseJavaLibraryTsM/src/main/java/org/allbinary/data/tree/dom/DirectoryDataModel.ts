@@ -152,8 +152,7 @@ index < size; index++)
         {
 nextFile= this.fileBasicArrayList!.get(index) as AbFile;
     
-fileNode= new FileDomDataModel(nextFile).
-                            toXmlNode(document);
+fileNode= new FileDomDataModel(nextFile).toXmlNode(document);
     
 dirNode!.appendChild(fileNode);
     

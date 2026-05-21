@@ -164,8 +164,7 @@ this.availableListOfList[index]!.addAllList(this.listOfList[index]!);
     
 }
 
-this.logUtil!.putF(new StringMaker().
-                            append("ImageCache: ")!.append(this.toString())!.toString(), this, "releaseAll");
+this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toString())!.toString(), this, "releaseAll");
     
 }
 

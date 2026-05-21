@@ -114,8 +114,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var itemVector: Vector = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;
 ;
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.length).
-                            toString()));
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.length).toString()));
     
 
     var size: number = itemVector!.length!;
@@ -140,8 +139,7 @@ index < size; index++)
                         
                                     {
                                     
-    var node: Node = new BasicItemView(itemInterface, new Vector()).
-                            toXmlNode(document)!;
+    var node: Node = new BasicItemView(itemInterface, new Vector()).toXmlNode(document)!;
 ;
     
 inventoryNode!.appendChild(node);

@@ -100,8 +100,7 @@ public constructor (userName: string, request: HttpServletRequest){
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
 ;
     
-this.id= new QuoteRequestIdGenerator().
-                            getNext();
+this.id= new QuoteRequestIdGenerator().getNext();
     
 this.setUserName(userName);
     
@@ -389,8 +388,7 @@ values.add(this.comments);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 values.add(time);
@@ -432,8 +430,7 @@ values.put(quoteRequestData!.COMMENTS, this.comments);
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);

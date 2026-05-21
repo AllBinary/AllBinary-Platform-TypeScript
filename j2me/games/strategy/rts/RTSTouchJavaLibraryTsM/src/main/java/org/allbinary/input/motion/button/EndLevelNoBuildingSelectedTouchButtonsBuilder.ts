@@ -68,11 +68,9 @@ export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsL
     var list: BasicArrayList = new BasicArrayListD();
 ;
     
-list.addAllList(new BasicTouchButtonsBuilder().
-                            getList());
+list.addAllList(new BasicTouchButtonsBuilder().getList());
     
-list.addAllList(new BuildingScrollTouchButtonsBuilder().
-                            getList());
+list.addAllList(new BuildingScrollTouchButtonsBuilder().getList());
     
 this.addList(list);
     

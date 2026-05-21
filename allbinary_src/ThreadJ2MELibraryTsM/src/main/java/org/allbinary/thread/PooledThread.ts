@@ -143,8 +143,7 @@ this.threadPool!.runningTask= false;
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
     
-logUtil!.put(new StringMaker().
-                            append(this.commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, this.commonStrings!.RUN, e);
+logUtil!.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, this.commonStrings!.RUN, e);
     
 }
 

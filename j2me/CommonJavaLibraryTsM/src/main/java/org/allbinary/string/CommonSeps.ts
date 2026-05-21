@@ -76,11 +76,9 @@ export class CommonSeps
 
     public readonly UNDERSCORE: string = "_";
 
-    public readonly COLON_SEP: string = new StringMaker().
-                            append(this.COLON)!.append(this.SPACE)!.toString()!;
+    public readonly COLON_SEP: string = new StringMaker().append(this.COLON)!.append(this.SPACE)!.toString()!;
 
-    public readonly COMMA_SEP: string = new StringMaker().
-                            append(this.COMMA)!.append(this.SPACE)!.toString()!;
+    public readonly COMMA_SEP: string = new StringMaker().append(this.COMMA)!.append(this.SPACE)!.toString()!;
 
     public readonly PARENTHESIS_OPEN: string = "(";
 

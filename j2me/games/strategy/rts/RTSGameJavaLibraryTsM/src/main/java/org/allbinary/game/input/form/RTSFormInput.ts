@@ -268,8 +268,7 @@ this.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, laye
                 //@Throws(Exception.constructor)
             
     getItemAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): ABCustomItem{
-this.logUtil!.putF(new StringMaker().
-                            append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
+this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
@@ -287,8 +286,7 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     getIndexAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): number{
-this.logUtil!.putF(new StringMaker().
-                            append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
+this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
@@ -355,8 +353,7 @@ this.logUtil!.putF(new StringMaker().
 
 
     public setSelectedGeographicCellPosition(selectedGeographicCellPosition: GeographicMapCellPosition){
-this.logUtil!.putF(new StringMaker().
-                            append("Selected GeographicMapCellPosition: ")!.append(selectedGeographicCellPosition!.toString())!.toString(), this, "setSelectedGeographicCellPosition");
+this.logUtil!.putF(new StringMaker().append("Selected GeographicMapCellPosition: ")!.append(selectedGeographicCellPosition!.toString())!.toString(), this, "setSelectedGeographicCellPosition");
     
 this.selectedGeographicCellPosition= selectedGeographicCellPosition;
     

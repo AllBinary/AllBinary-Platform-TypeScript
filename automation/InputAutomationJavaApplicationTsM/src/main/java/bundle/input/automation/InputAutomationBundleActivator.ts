@@ -137,11 +137,9 @@ OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServ
                 //@Throws(Exception.constructor)
             
     public useServices(){
-new InputAutomationRobotServiceConsumer(this.getBundleContext()).
-                            process();
+new InputAutomationRobotServiceConsumer(this.getBundleContext()).process();
     
-new InputAutomationModuleServiceConsumer(this.getBundleContext()).
-                            process();
+new InputAutomationModuleServiceConsumer(this.getBundleContext()).process();
     
 }
 

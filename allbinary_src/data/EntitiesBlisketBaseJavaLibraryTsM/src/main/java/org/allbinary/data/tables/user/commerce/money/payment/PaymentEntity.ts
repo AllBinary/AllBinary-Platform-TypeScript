@@ -378,8 +378,7 @@ super.deleteWhere(whereHashMap);
     var vector: Vector = new Vector();
 ;
     
-vector.add(new PaymentIdGenerator().
-                            getNext());
+vector.add(new PaymentIdGenerator().getNext());
     
 vector.add(userName);
     
@@ -392,23 +391,19 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = new Random().
-                            nextInt(SuperCrypt.KEYMAX)!;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
 ;
     
-vector.add(new SuperCrypt(random).
-                            encrypt(paymentInterface!.getNumber()));
+vector.add(new SuperCrypt(random).encrypt(paymentInterface!.getNumber()));
     
-vector.add(new Integer(random).
-                            toString());
+vector.add(new Integer(random).toString());
     
 
     var calendar: Calendar = Calendar.getInstance()!;
 ;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).
-                            toString();
+    var time: string = new Long(calendar.getTimeInMillis()).toString();
 ;
     
 vector.add(time);

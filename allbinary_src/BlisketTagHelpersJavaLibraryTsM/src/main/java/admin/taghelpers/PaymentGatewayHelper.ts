@@ -116,8 +116,7 @@ this.portion= new Portion(hashMap);
 
         try {
             
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
-                            getInstance(this.httpServletRequest)!;
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;
 ;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
@@ -175,8 +174,7 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
 
         try {
             
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
-                            getInstance(this.httpServletRequest)!;
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;
 ;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
@@ -255,8 +253,7 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
 
         try {
             
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
-                            getInstance(this.httpServletRequest)!;
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(this.httpServletRequest)!;
 ;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());

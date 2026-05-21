@@ -118,8 +118,7 @@ this.abContext= new AbContext(propertiesHashMap, pageContext);
 
                                     }
                                 
-this.set(new RequestParams(request as HttpServletRequest).
-                            toHashMap());
+this.set(new RequestParams(request as HttpServletRequest).toHashMap());
     
 this.override(propertiesHashMap);
     
@@ -220,8 +219,7 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT) as string);
                                     }
                                 
                         else {
-                            this.setObjectConfig(new TransformInfoObjectConfig(this).
-                            toString());
+                            this.setObjectConfig(new TransformInfoObjectConfig(this).toString());
     
 
                         }

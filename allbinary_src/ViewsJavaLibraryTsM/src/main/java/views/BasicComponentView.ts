@@ -195,8 +195,7 @@ this.transformInfoInterface= transformInfoInterface;
 ;
     
 
-    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
-                            translate(success)!;
+    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
 ;
     
 

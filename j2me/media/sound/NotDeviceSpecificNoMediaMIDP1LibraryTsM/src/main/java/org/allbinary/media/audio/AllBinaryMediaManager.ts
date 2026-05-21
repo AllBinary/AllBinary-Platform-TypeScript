@@ -106,8 +106,7 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INI
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
-new Sounds(soundsFactoryInterface).
-                            init();
+new Sounds(soundsFactoryInterface).init();
     
 }
 
@@ -115,11 +114,9 @@ new Sounds(soundsFactoryInterface).
                 //@Throws(Exception.constructor)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
-new Sounds(soundsFactoryInterface).
-                            stopAll();
+new Sounds(soundsFactoryInterface).stopAll();
     
-new Sounds(soundsFactoryInterface).
-                            closeAll();
+new Sounds(soundsFactoryInterface).closeAll();
     
 System.gc();
     

@@ -157,8 +157,7 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME);
                         if(displayable.hasChild(this.displayable as MyCanvas))
                         
                                     {
-                                    PreLogUtil.put(new StringMaker().
-                            append("Child Displayable is already set for: ")!.append(this.stringUtil!.toString(displayable))!.toString(), this, this.SET_DISPLAYABLE);
+                                    PreLogUtil.put(new StringMaker().append("Child Displayable is already set for: ")!.append(this.stringUtil!.toString(displayable))!.toString(), this, this.SET_DISPLAYABLE);
     
 
 
@@ -204,8 +203,7 @@ this.update();
 
 
     public setRunnable(runnable: GameRunnable){
-PreLogUtil.put(new StringMaker().
-                            append(this.RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, this.SET_RUNNABLE);
+PreLogUtil.put(new StringMaker().append(this.RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, this.SET_RUNNABLE);
     
 this.runnable= runnable;
     
@@ -219,8 +217,7 @@ this.runnable= runnable;
                                     }
                                 
                         else {
-                            PreLogUtil.put(new StringMaker().
-                            append(this.RUNNABLE_WAS_ALREADY_IN_USE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, this.SET_RUNNABLE);
+                            PreLogUtil.put(new StringMaker().append(this.RUNNABLE_WAS_ALREADY_IN_USE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, this.SET_RUNNABLE);
     
 
                         }
@@ -229,8 +226,7 @@ this.runnable= runnable;
 
 
     public clearRunnable(){
-PreLogUtil.put(new StringMaker().
-                            append(this.RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, this.CLEAR_RUNNABLE);
+PreLogUtil.put(new StringMaker().append(this.RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, this.CLEAR_RUNNABLE);
     
 this.setUsedRunnable(NullWaitGameRunnable.getInstance());
     
@@ -326,8 +322,7 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 
 
     public setUsedRunnable(usedRunnable: GameRunnable){
-PreLogUtil.put(new StringMaker().
-                            append(this.RUNNABLE)!.append(this.stringUtil!.toString(this.runnable))!.toString(), this, this.SET_USED_RUNNABLE);
+PreLogUtil.put(new StringMaker().append(this.RUNNABLE)!.append(this.stringUtil!.toString(this.runnable))!.toString(), this, this.SET_USED_RUNNABLE);
     
 this.usedRunnable= usedRunnable;
     

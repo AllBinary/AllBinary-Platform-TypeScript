@@ -268,8 +268,7 @@ this.workAreaJTreeJPanel!.repaint();
                 //@Throws(Exception.constructor)
             
     initMyComponents(){
-this.frameLabel= new CanvasTreeLabel("FrameLabel" +new Integer(CanvasJPanel.frame).
-                            toString());
+this.frameLabel= new CanvasTreeLabel("FrameLabel" +new Integer(CanvasJPanel.frame).toString());
     
 this.canvasTreeNode= new DefaultMutableTreeNode(this.frameLabel);
     
@@ -661,8 +660,7 @@ this.repaint();
                 //@Throws(Exception.constructor)
             
     public center(){
-new VectorCenterGenerator().
-                            transform(this.getGraphicItemHashMap());
+new VectorCenterGenerator().transform(this.getGraphicItemHashMap());
     
 this.repaint();
     
@@ -949,8 +947,7 @@ this.drawGrid(graphics);
                                 
 this.drawItems(graphics);
     
-graphics.drawString(new Double(this.getAngle()).
-                            toString(), this.getWidth() -75, this.getHeight() -15);
+graphics.drawString(new Double(this.getAngle()).toString(), this.getWidth() -75, this.getHeight() -15);
     
 this.grid.isChanged= false;
     
@@ -990,8 +987,7 @@ super.repaint();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new CanvasDom(this).
-                            toDom();;
+                        return new CanvasDom(this).toDom();;
     
 }
 
