@@ -22,6 +22,8 @@
 
 
         
+            import { ClassLoader } from '../../java/lang/ClassLoader.js';
+        
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
@@ -146,12 +148,22 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
-    public matchIgnoreCase(a: string, b: string): boolean{
+    public equalIgnoreCase(a: string, b: string): boolean{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return a.equalsIgnoreCase(b);;
+    
+}
+
+
+    public getClassClassLoader(anyType: any = {}): ClassLoader{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return anyType!.constructor.namegetClassLoader();;
     
 }
 

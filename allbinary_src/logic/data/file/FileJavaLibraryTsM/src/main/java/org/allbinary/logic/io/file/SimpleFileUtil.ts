@@ -46,8 +46,6 @@ import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js'
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -256,12 +254,12 @@ export class SimpleFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.loadFileAsList(inputStream, max, byteArray1, 0);;
+                        return this.loadFileAsListReturnLine(inputStream, max, byteArray1, 0);;
     
 }
 
 
-    public loadFileAsList(inputStream: InputStream, max: number, byteArray1: number[], includeReturnLine: number): BasicArrayList{
+    public loadFileAsListReturnLine(inputStream: InputStream, max: number, byteArray1: number[], includeReturnLine: number): BasicArrayList{
 
     var stringList: BasicArrayList = new BasicArrayListD();
 ;
