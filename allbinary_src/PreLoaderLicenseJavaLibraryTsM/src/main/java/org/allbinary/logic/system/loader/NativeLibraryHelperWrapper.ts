@@ -89,7 +89,7 @@ params[0]= this.getLibraryName();
     
 classes[0]= this.getLibraryName()!.constructor;
     
-this.loader= new NativeLibraryClassLoader(this.constructor.name);
+this.loader= new NativeLibraryClassLoader(this.constructor.namegetClassLoader());
     
 
     var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;

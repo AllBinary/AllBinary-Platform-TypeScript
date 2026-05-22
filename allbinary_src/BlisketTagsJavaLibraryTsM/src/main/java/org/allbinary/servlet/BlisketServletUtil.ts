@@ -77,7 +77,7 @@ urlGlobals!.setWebappPath(request.getServletContext()!.getRealPath(AbPathData.ge
     
 URLGLOBALS.init(urlGlobals);
     
-WebappClassLoaderInfo.setLoader(constructor.name);
+WebappClassLoaderInfo.setLoader(constructor.namegetClassLoader());
     
 }
 

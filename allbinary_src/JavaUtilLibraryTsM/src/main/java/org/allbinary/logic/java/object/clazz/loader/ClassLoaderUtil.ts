@@ -54,7 +54,7 @@ export class ClassLoaderUtil
             
     public static getName(anyType: any = {}): string{
 
-    var classLoader: ClassLoader = anyType!.constructor.name!;
+    var classLoader: ClassLoader = anyType!.constructor.namegetClassLoader()!;
 ;
     
 
