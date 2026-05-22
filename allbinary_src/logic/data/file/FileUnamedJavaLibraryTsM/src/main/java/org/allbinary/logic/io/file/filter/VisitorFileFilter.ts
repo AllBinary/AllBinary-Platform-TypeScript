@@ -71,7 +71,7 @@ public constructor (booleanVisitorInterface: VisitorInterface){
 ;
     
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile);visit as Boolean
+    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile)visit as Boolean
 visit.
                     .valueOf()!;
 ;
@@ -87,7 +87,7 @@ visit.
 
     public accept(file: AbFile): boolean{
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file);visit as Boolean
+    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file)visit as Boolean
 visit.
                     .valueOf()!;
 ;

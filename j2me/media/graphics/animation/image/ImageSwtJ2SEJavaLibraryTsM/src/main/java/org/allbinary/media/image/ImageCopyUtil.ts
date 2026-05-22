@@ -752,7 +752,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage = mutableImage2!.getImage();getImage as org.eclipse.swt.graphics.Image
+getImage = mutableImage2!.getImage()getImage as org.eclipse.swt.graphics.Image
 getImage.
                     getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     
@@ -834,7 +834,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage = originalImmutableImage!.getImage();getImage as org.eclipse.swt.graphics.Image
+getImage = originalImmutableImage!.getImage()getImage as org.eclipse.swt.graphics.Image
 getImage.
                     getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     

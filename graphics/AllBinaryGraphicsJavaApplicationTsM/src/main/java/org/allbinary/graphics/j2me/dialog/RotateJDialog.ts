@@ -186,7 +186,7 @@ pack();
     
 this.hashMap!.put(Integer.valueOf(1)Integer.valueOf(this.totalRotationJTextField!.getText()));
     
-getParent = this.getParent();getParent as HashMapJDialogListenerInterface
+getParent = this.getParent()getParent as HashMapJDialogListenerInterface
 getParent.
                     onHashMap(this.hashMap);
     

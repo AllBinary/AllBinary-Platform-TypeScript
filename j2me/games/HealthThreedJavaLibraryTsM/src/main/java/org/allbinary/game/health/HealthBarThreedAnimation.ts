@@ -220,9 +220,9 @@ this.updateSize();
     var positionNumber3d: Number3d = this.rectangle.getPosition()!;
 ;
     
-positionNumber3d!.x=  -(viewPosition!.getX(););
+positionNumber3d!.x=  -(viewPosition!.getX());
     
-positionNumber3d!.z=  -(viewPosition!.getY(););
+positionNumber3d!.z=  -(viewPosition!.getY());
     
 positionNumber3d!.y= viewPosition!.getZ() +this.allbinaryLayer!.getHeight();
     
