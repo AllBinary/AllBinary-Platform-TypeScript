@@ -85,7 +85,7 @@ this.idFile= new AbFileInputStream(fileName);
     
 this.idFile!.read(bytes);
     
-this.string= bytes.decodeToString();
+this.string= String.fromCharCode(...bytes);
     
 
                 //: 

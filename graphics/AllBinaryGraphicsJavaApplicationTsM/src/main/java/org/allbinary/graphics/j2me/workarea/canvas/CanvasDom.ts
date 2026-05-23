@@ -26,6 +26,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
+            import { Double } from '../../../../../../java/lang/Double.js';
+        
 import { HashMap } from '../../../../../../java/util/HashMap.js';
       
 import { VectorCenterGenerator } from '../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js';
@@ -137,7 +139,7 @@ this.dimension= new IntegerDimension(0, 0);
 ;
     
 
-    var angle: number = new Double(angleTextNode!.getNodeValue()).doubleValue()!;
+    var angle: number = new number(angleTextNode!.getNodeValue()).doubleValue()!;
 ;
     
 this.setAngle(angle);
@@ -381,7 +383,7 @@ pointNode!.appendChild(yNode);
 ;
     
 
-    var angleTextNode: Node = document.createTextNode(new Double(this.getAngle()).toString()) as Node;
+    var angleTextNode: Node = document.createTextNode(new number(this.getAngle()).toString()) as Node;
 ;
     
 angleNode!.appendChild(angleTextNode);

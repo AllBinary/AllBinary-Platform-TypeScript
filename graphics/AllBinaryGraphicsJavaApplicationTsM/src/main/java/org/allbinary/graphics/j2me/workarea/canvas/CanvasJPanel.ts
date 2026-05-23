@@ -26,6 +26,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
+            import { Double } from '../../../../../../java/lang/Double.js';
+        
 import { awt } from '../../../../../../java/awt.js';
       
 import { HashMap } from '../../../../../../java/util/HashMap.js';
@@ -838,7 +840,7 @@ this.duplicateGraphicItem(graphicItem);
 
     public drawItems(graphics: Graphics){
 
-    var angleDouble: Double = new Double(this.angle);
+    var angleDouble: number = new number(this.angle);
 ;
     
 
@@ -947,7 +949,7 @@ this.drawGrid(graphics);
                                 
 this.drawItems(graphics);
     
-graphics.drawString(new Double(this.getAngle()).toString(), this.getWidth() -75, this.getHeight() -15);
+graphics.drawString(new number(this.getAngle()).toString(), this.getWidth() -75, this.getHeight() -15);
     
 this.grid.isChanged= false;
     

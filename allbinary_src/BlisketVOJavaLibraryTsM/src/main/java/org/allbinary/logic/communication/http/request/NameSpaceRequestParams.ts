@@ -865,21 +865,13 @@ i < keySize; i++)
 
                                     }
                                 
-hashMap!.put(key.toCharArray()
-                                        .slice(0, ).join('')
-                                    , value.toCharArray()
-                                        .slice(0, ).join('')
-                                    );
+hashMap!.put(key.toCharArray().slice(0, ).join(''), value.toCharArray().slice(0, ).join(''));
     
 
                                     }
                                 
                         else {
-                            document= this.addNameSpace(key.toCharArray()
-                                        .slice(0, ).join('')
-                                    , value.toCharArray()
-                                        .slice(0, ).join('')
-                                    , document);
+                            document= this.addNameSpace(key.toCharArray().slice(0, ).join(''), value.toCharArray().slice(0, ).join(''), document);
     
 
                         }
@@ -908,17 +900,13 @@ hashMap!.put(key.toCharArray()
 
                                     }
                                 
-hashMap!.put(key.toCharArray()
-                                        .slice(0, ).join('')
-                                    , .toCharArray());
+hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     
 
                                     }
                                 
                         else {
-                            document= this.addNameSpace(key.toCharArray()
-                                        .slice(0, ).join('')
-                                    , .toCharArray(), document);
+                            document= this.addNameSpace(key.toCharArray().slice(0, ).join(''), .toCharArray(), document);
     
 
                         }

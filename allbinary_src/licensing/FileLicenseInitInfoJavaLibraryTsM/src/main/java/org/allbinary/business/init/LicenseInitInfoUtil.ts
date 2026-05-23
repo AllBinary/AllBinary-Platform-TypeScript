@@ -230,7 +230,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 ;
     
 
-    var licenseIdDecoded: string = decodedByteArray.decodeToString();
+    var licenseIdDecoded: string = String.fromCharCode(...decodedByteArray);
 ;
     
 initInfo!.setLicenseId(new WeakCrypt(1).decrypt(licenseIdDecoded));
@@ -257,7 +257,7 @@ index < numberOfLicenseServers; index++)
         {
 decodedByteArray= DatabaseEncoder.decode(iData!.readUTF());
     
-licenseServerDecoded= decodedByteArray.decodeToString();
+licenseServerDecoded= String.fromCharCode(...decodedByteArray);
     
 initInfo!.setServer(new WeakCrypt(3).decrypt(licenseServerDecoded), index);
     

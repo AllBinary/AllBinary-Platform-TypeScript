@@ -370,7 +370,7 @@ index++;
                                     }
                                 
 
-    var s: string = byteArray.decodeToString();
+    var s: string = String.fromCharCode(...byteArray);
 ;
     
 stringList!.add(s);

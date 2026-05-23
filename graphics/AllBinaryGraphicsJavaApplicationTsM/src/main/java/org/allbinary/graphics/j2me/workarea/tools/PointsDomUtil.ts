@@ -26,6 +26,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
+            import { Double } from '../../../../../../java/lang/Double.js';
+        
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
       
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
@@ -94,7 +96,7 @@ export class PointsDomUtil
             
     public toDom(canvasDom: CanvasDom, pointVector: BasicArrayList): Node{
 
-    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new Double(canvasDom!.getAngle()), PointFactory.getInstance()!.createXY(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
+    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new number(canvasDom!.getAngle()), PointFactory.getInstance()!.createXY(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
 ;
     
 

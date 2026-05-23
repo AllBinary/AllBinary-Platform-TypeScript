@@ -67,13 +67,9 @@ export class HtmlRow extends HtmlTag {
 public constructor (before: string, after: string){
 
             super();
-        this.before= before.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+        this.before= before.toCharArray().slice(0, ).join('');
     
-this.after= after.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+this.after= after.toCharArray().slice(0, ).join('');
     
 this.htmlCellsVector= new Vector();
     

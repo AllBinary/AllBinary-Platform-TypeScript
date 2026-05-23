@@ -168,6 +168,26 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
+    public toNumber(value: string): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return value;
+    
+}
+
+
+    public toNumber(value: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return value;
+    
+}
+
+
     public isItemListener(owner: Displayable): boolean{
 
                         if(owner instanceof Form)

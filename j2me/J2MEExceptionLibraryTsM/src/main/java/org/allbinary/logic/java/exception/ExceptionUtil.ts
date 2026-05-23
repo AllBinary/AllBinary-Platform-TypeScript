@@ -94,9 +94,7 @@ e.printStackTrace();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return output.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+                        return output.toCharArray().slice(0, ).join('');
     
 
                                     }

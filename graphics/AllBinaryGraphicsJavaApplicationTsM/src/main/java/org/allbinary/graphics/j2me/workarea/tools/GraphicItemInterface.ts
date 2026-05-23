@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+            import { Double } from '../../../../../../java/lang/Double.js';
+        
 import { awt } from '../../../../../../java/awt.js';
       
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
@@ -97,7 +99,7 @@ export interface GraphicItemInterface {
 
     getAngle(): number
 
-    paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number)
+    paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number)
 
                 //@Throws(Exception.constructor)
             

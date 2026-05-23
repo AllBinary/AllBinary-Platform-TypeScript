@@ -137,9 +137,7 @@ index < size; index++)
     var values: string[] = map.get(key) as Array<String?>;
 ;
     
-hashMap!.put(key.toCharArray()
-                                        .slice(0, ).join('')
-                                    , .toCharArray());
+hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     
 stringBuffer!.delete(0, stringBuffer!.length());
     

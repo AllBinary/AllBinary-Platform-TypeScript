@@ -212,7 +212,7 @@ this.fileInit(idFile);
 ;
     
 
-    var data: string = bytes.decodeToString();
+    var data: string = String.fromCharCode(...bytes);
 ;
     
 

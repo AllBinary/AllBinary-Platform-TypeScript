@@ -26,6 +26,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
+            import { Double } from '../../../../java/lang/Double.js';
+        
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
       
 import { File } from '../../../../java/io/File.js';
@@ -242,7 +244,7 @@ tempBufferedImageArray[index]= bufferedImage;
 ;
     
 
-    var averageRatioString: string = new Double(averageRatio).toString()!;
+    var averageRatioString: string = new number(averageRatio).toString()!;
 ;
     
 
@@ -383,7 +385,7 @@ this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
 ;
     
 
-    var cellRatioString: string = new Double(cellRatio).toString()!;
+    var cellRatioString: string = new number(cellRatio).toString()!;
 ;
     
 

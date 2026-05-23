@@ -26,6 +26,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
+            import { Double } from '../../../../../../java/lang/Double.js';
+        
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
       
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -58,7 +60,7 @@ export class MeteredGameObject
          implements MeteredGameObjectInterface {
         
 
-    private ratios: Double[]
+    private ratios: number[]
 
     private good: boolean = false;
 
@@ -102,7 +104,7 @@ index < bufferedImage!.length; index++)
     var nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;
 ;
     
-this.getRatios()[index]= new Double(nominator /this.getSize());
+this.getRatios()[index]= new number(nominator /this.getSize());
     
 }
 
@@ -171,7 +173,7 @@ this.dropping= dropping;
 }
 
 
-    public getRatios(): Double[]{
+    public getRatios(): number[]{
 
 
 
@@ -236,7 +238,7 @@ stringBuffer!.appendboolean(this.isDropping());
 }
 
 
-    public setRatios(ratios: Double[]){
+    public setRatios(ratios: number[]){
 this.ratios= ratios;
     
 }

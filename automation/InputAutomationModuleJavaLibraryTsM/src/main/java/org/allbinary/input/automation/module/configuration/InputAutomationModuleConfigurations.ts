@@ -94,7 +94,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, file: F
 ;
     
 
-    var data: string = bytes.decodeToString();
+    var data: string = String.fromCharCode(...bytes);
 ;
     
 

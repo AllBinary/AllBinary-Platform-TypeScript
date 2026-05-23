@@ -174,9 +174,7 @@ stringBuffer!.append(values[0]!);
     
 this.logUtil!.putF(stringBuffer!.toString(), this, "toXmlNode(document)");
     
-node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMETER, key.toCharArray()
-                                        .slice(0, ).join('')
-                                    , .toCharArray()));
+node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMETER, key.toCharArray().slice(0, ).join(''), .toCharArray()));
     
 }
 
@@ -243,9 +241,7 @@ i < size; i++)
     var values: string[] = this.map.get(key) as Array<String?>;
 ;
     
-hashMap!.put(key.toCharArray()
-                                        .slice(0, ).join('')
-                                    , .toCharArray());
+hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     
 }
 

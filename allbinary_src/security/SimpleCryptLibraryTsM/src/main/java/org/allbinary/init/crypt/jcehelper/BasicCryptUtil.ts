@@ -108,7 +108,7 @@ buffer.write(ch);
 ;
     
 
-    var decryptedString: string = decrypted.decodeToString();
+    var decryptedString: string = String.fromCharCode(...decrypted);
 ;
     
 

@@ -229,9 +229,7 @@ stringBuffer!.append(new Long(cents).toString());
                         if(index < 1)
                         
                                     {
-                                    dollarStr= usDollarStr.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+                                    dollarStr= usDollarStr.toCharArray().slice(0, ).join('');
     
 centsStr= "00";
     

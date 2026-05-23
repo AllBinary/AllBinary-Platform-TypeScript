@@ -22,6 +22,8 @@
 
 
         
+            import { Double } from '../../../../../../java/lang/Double.js';
+        
 
 
 
@@ -44,7 +46,7 @@
 export interface MeteredGameObjectInterface {
         
 
-    getRatios(): Double[]
+    getRatios(): number[]
 
     isGood(): boolean
 

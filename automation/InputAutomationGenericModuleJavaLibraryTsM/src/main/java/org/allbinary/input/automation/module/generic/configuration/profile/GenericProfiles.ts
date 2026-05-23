@@ -122,7 +122,7 @@ this.hashMap= new HashMap<any, any>();
 ;
     
 
-    var data: string = bytes.decodeToString();
+    var data: string = String.fromCharCode(...bytes);
 ;
     
 

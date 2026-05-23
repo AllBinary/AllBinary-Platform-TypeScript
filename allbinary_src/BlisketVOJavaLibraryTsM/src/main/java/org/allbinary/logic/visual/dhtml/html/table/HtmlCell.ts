@@ -70,21 +70,13 @@ export class HtmlCell extends HtmlTag {
 public constructor (before: string, width: string, height: string, after: string){
 
             super();
-        this.before= before.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+        this.before= before.toCharArray().slice(0, ).join('');
     
-this.after= after.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+this.after= after.toCharArray().slice(0, ).join('');
     
-this.height= height.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+this.height= height.toCharArray().slice(0, ).join('');
     
-this.width= width.toCharArray()
-                                        .slice(0, ).join('')
-                                    ;
+this.width= width.toCharArray().slice(0, ).join('');
     
 addAttribute(this.HEIGHT, this.height);
     

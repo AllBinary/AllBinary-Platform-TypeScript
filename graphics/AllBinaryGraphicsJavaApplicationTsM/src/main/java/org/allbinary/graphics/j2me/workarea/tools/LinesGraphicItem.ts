@@ -26,6 +26,8 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
+            import { Double } from '../../../../../../java/lang/Double.js';
+        
 import { awt } from '../../../../../../java/awt.js';
       
 import { Vector } from '../../../../../../java/util/Vector.js';
@@ -522,7 +524,7 @@ this.fulcrumPoint= point;
 }
 
 
-    public paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number){
+    public paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number){
 
         try {
             

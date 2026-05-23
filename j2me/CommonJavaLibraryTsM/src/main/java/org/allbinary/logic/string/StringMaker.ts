@@ -295,9 +295,7 @@ this.currentLength -= (end -start);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.charArray
-                                        .slice(0, this.currentLength).join('')
-                                    ;
+                        return this.charArray.slice(0, this.currentLength).join('');
     
 }
 
