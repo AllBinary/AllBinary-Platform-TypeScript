@@ -203,7 +203,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 
@@ -396,7 +396,7 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 

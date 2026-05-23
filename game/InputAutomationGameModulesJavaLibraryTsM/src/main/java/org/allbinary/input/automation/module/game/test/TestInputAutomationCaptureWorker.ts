@@ -118,7 +118,7 @@ this.setGenericProfileActions(genericProfileActions);
 ;
     
 
-    var set: Set = hashMap!.keys!;
+    var set: Set = hashMap!.keys()!;
 ;
     
 

@@ -638,7 +638,7 @@ hashMap!.put(StreetAddressData.COUNTRY, this.country);
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 

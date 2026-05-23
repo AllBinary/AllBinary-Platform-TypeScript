@@ -177,7 +177,7 @@ public constructor (hashMap: HashMap<any, any>){
 ;
     
 
-    var keySet: Set = this.hashMap!.keys!;
+    var keySet: Set = this.hashMap!.keys()!;
 ;
     
 
@@ -350,7 +350,7 @@ totalNumberOfReplaces++;
 ;
     
 
-    var keySet: Set = this.hashMap!.keys!;
+    var keySet: Set = this.hashMap!.keys()!;
 ;
     
 

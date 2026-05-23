@@ -245,7 +245,7 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 

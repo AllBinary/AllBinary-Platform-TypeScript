@@ -288,7 +288,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
             
     processImageFiles(){
 
-    var set: Set = this.getRequestHashMap()!.keys!;
+    var set: Set = this.getRequestHashMap()!.keys()!;
 ;
     
 

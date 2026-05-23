@@ -291,7 +291,7 @@ this.save();
 ;
     
 
-    var set: Set = this.hashMap!.keys!;
+    var set: Set = this.hashMap!.keys()!;
 ;
     
 

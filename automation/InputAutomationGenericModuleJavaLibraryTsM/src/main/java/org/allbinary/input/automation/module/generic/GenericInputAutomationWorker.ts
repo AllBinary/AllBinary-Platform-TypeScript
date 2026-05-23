@@ -188,7 +188,7 @@ this.setFrame(keyArray[keyArray!.length -1]! as Long);
 ;
     
 
-    var set: Set = hashMap!.keys!;
+    var set: Set = hashMap!.keys()!;
 ;
     
 this.logUtil!.putF("Processing " +set.size() +"Actions", this, this.PROCESS_DATA_WORKER_RESULTS);

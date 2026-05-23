@@ -153,7 +153,7 @@ public constructor (userEmailEventsConfigurationInterface: UserEmailEventsConfig
 ;
     
 
-    var set: Set = emailEventHashMap!.keys!;
+    var set: Set = emailEventHashMap!.keys()!;
 ;
     
 

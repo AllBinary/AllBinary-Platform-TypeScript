@@ -389,7 +389,7 @@ this.savePage(file, productListingPages[index]!);
 
     addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap<any, any>){
 
-    var keywordHashSet: Set = keywordFilenameHashMap!.keys!;
+    var keywordHashSet: Set = keywordFilenameHashMap!.keys()!;
 ;
     
 

@@ -142,7 +142,7 @@ public constructor (pageContext: PageContext){
 ;
     
 
-    var propertyKeySet: Set = packagePropertiesHashMap!.keys!;
+    var propertyKeySet: Set = packagePropertiesHashMap!.keys()!;
 ;
     
 
@@ -328,7 +328,7 @@ document.appendChild(node);
                                     }
                                 
 
-    var propertyNameSet: Set = nextPackagePropertiesHashMap!.keys!;
+    var propertyNameSet: Set = nextPackagePropertiesHashMap!.keys()!;
 ;
     
 

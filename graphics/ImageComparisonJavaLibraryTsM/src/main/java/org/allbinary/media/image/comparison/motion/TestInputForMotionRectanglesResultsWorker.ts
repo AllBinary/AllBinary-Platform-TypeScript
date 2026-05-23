@@ -173,7 +173,7 @@ timeHelper!.setStartTimeTNT();
 ;
     
 
-    var inputTypeNameArray: any[] = robotHashtable!.keys.()!;
+    var inputTypeNameArray: any[] = robotHashtable!.keys().()!;
 ;
     
 

@@ -467,7 +467,7 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 

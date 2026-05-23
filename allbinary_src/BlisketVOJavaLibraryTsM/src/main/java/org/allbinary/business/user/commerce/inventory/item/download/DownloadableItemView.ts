@@ -172,7 +172,7 @@ hashMap!.put(DownloadItemData.VALID_TIME_MINUTES, Integer.valueOf(minuteDelta -m
 hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer.valueOf(secondDelta -second));
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 

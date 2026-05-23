@@ -154,7 +154,7 @@ indexPropertyValueHashMap!.put(indexValue, propertyValue);
 }
 
 
-    var size2: number = indexPropertyValueHashMap!.keys.size()!;
+    var size2: number = indexPropertyValueHashMap!.keys().size()!;
 ;
     
 

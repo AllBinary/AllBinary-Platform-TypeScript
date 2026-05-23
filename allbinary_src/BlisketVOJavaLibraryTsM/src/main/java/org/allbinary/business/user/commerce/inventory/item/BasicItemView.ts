@@ -114,7 +114,7 @@ hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 

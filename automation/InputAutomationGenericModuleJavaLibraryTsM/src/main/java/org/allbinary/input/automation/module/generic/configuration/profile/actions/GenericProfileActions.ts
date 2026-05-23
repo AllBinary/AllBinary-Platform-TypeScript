@@ -396,7 +396,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 ;
     
 
-    var set: Set = this.getHashMap()!.keys!;
+    var set: Set = this.getHashMap()!.keys()!;
 ;
     
 

@@ -105,7 +105,7 @@ this.writerFileTypesHashMap= new HashMap<any, any>();
 ;
     
 
-    var set: Set = hashMap!.keys!;
+    var set: Set = hashMap!.keys()!;
 ;
     
 

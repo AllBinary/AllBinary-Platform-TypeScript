@@ -436,7 +436,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "findNewModules");
 this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
     
 
-    var set: Set = hashMap!.keys!;
+    var set: Set = hashMap!.keys()!;
 ;
     
 

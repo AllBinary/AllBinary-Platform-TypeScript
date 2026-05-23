@@ -174,7 +174,7 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
 hashMap!.put(StoreFrontUsersStatisticsData.getInstance()!.NUMBEROFUSERS, this.getNumberOfUsers()!.toString());
     
 
-    var setOfUserRoles: Set = this.totalUsersByRoleHashMap!.keys!;
+    var setOfUserRoles: Set = this.totalUsersByRoleHashMap!.keys()!;
 ;
     
 

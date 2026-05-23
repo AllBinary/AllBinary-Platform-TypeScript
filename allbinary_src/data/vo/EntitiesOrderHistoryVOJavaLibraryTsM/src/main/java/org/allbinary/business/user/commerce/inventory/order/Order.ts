@@ -417,7 +417,7 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = hashMap!.keys()!;
 ;
     
 
