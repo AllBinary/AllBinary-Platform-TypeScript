@@ -471,7 +471,7 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
 ;
     
 
-    var keyArray: any[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.()!;
 ;
     
 

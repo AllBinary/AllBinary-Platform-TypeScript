@@ -104,7 +104,7 @@ private constructor (){
     
 classes[0]= hashMap!.constructor;
     
-params[0]= hashMap as Object;
+params[0]= hashMap;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;

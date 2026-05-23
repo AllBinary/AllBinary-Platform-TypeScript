@@ -429,7 +429,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
     var index: number = 0;
 index < size; index++)
         {
-anyType= objectArray[index]! as Object;
+anyType= objectArray[index]!;
     
 basicArrayList= hashtable.get(anyType) as BasicArrayList;
     

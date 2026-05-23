@@ -122,7 +122,7 @@ hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
 ;
     
 
-    var nameArray: any[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.()!;
 ;
     
 

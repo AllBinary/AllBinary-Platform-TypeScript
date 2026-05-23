@@ -207,7 +207,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 ;
     
 
-    var keyArray: any[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.()!;
 ;
     
 
@@ -232,7 +232,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = hashMap!.get(objectKey) as Object;
+    var anyType: any = hashMap!.get(objectKey);
 ;
     
 
@@ -400,7 +400,7 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 ;
     
 
-    var keyArray: any[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.()!;
 ;
     
 
@@ -421,7 +421,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = hashMap!.get(name) as Object;
+    var anyType: any = hashMap!.get(name);
 ;
     
 

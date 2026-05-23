@@ -87,7 +87,7 @@ this.keys= new Array(hashtable.length);
     var index: number = 0;
 index < size; index++)
         {
-this.keys[index]= hashtable.get(objectArray[index]! as Object) as Integer;
+this.keys[index]= hashtable.get(objectArray[index]!) as Integer;
     
 }
 

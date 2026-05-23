@@ -228,7 +228,7 @@ public constructor (canvasJPanel: CanvasJPanel){
 ;
     
 
-    var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = hashMap!.keys().()!;
 ;
     
 

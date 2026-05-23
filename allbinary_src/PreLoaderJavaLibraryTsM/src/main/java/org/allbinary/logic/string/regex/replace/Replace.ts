@@ -189,7 +189,7 @@ public constructor (hashMap: HashMap<any, any>){
 ;
     
 
-    var keyArray: any[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.()!;
 ;
     
 
@@ -362,7 +362,7 @@ totalNumberOfReplaces++;
 ;
     
 
-    var keyArray: any[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.()!;
 ;
     
 

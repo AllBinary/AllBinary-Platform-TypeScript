@@ -102,7 +102,7 @@ export class RecordStoreHighScores extends HighScores {
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{
 
-    var highScoresCanBeNull: any = RecordStoreHighScores.hashTable!.get(highScoreName as Object);
+    var highScoresCanBeNull: any = RecordStoreHighScores.hashTable!.get(highScoreName);
 ;
     
 

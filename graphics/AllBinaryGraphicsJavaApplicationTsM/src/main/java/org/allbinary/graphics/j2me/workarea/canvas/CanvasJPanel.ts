@@ -215,7 +215,7 @@ this.setCanvasSize(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimensio
 this.graphicItemHashMap= canvasDom!.getGraphicItemHashMap();
     
 
-    var graphicItemArray: any[] = this.graphicItemHashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.graphicItemHashMap!.keys().()!;
 ;
     
 
@@ -465,7 +465,7 @@ this.setAngle(this.angle +angle);
 ;
     
 
-    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;
 ;
     
 
@@ -567,7 +567,7 @@ this.workAreaJTreeJPanel!.repaint();
             
     public explode(howMuch: number, explosionType: number){
 
-    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;
 ;
     
 
@@ -620,7 +620,7 @@ this.repaint();
 ;
     
 
-    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;
 ;
     
 
@@ -725,7 +725,7 @@ this.canvasTreeNode!.add(graphicItemClone!.getTreeNode());
             
     public duplicateGraphicItemHashMap(hashMap: HashMap<any, any>){
 
-    var mutableTreeNodeArray: any[] = hashMap!.keys.toTypedArray()!;
+    var mutableTreeNodeArray: any[] = hashMap!.keys().()!;
 ;
     
 
@@ -844,7 +844,7 @@ this.duplicateGraphicItem(graphicItem);
 ;
     
 
-    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;
 ;
     
 
@@ -1202,7 +1202,7 @@ StatusFactory.getInstance()!.setStatus("Key Pressed");
 
         try {
             
-    var graphicItemArray: any[] = this.graphicItemHashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.graphicItemHashMap!.keys().()!;
 ;
     
 

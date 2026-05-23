@@ -421,7 +421,7 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
 ;
     
 
-    var keyArray: any[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.()!;
 ;
     
 

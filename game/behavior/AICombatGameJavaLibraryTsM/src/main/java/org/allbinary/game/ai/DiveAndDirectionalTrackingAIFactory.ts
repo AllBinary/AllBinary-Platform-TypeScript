@@ -70,7 +70,7 @@ export class DiveAndDirectionalTrackingAIFactory
             
     public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var visitorCanBeNull: any = hashtable.get(BasicAI.AI_VISITOR as Object);
+    var visitorCanBeNull: any = hashtable.get(BasicAI.AI_VISITOR);
 ;
     
 

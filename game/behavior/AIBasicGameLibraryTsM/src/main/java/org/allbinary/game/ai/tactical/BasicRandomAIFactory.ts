@@ -69,7 +69,7 @@ export class BasicRandomAIFactory
             
     public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR as Object) as Visitor;
+    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR) as Visitor;
 ;
     
 
@@ -87,7 +87,7 @@ export class BasicRandomAIFactory
                                     }
                                 
 
-    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY as Object) as InputProbability;
+    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY) as InputProbability;
 ;
     
 

@@ -110,9 +110,9 @@ classes[0]= hashMap!.constructor;
     
 classes[1]= AbeFactory.getInstance()!.constructor;
     
-params[0]= hashMap as Object;
+params[0]= hashMap;
     
-params[1]= pageContext as Object;
+params[1]= pageContext;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;

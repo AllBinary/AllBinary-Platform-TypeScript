@@ -101,7 +101,7 @@ this.body= body;
 ;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
 ;
     
 

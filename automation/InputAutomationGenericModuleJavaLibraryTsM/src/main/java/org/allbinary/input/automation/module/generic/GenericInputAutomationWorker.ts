@@ -166,7 +166,7 @@ this.waitForDataWorkers();
 ;
     
 
-    var keyArray: any[] = cacheInterface!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = cacheInterface!.keySet()!.()!;
 ;
     
 

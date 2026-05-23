@@ -236,7 +236,7 @@ index < size; index++)
     var node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index) as DefaultMutableTreeNode;
 ;
     
-MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DESELECT, node) as Object));
+MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DESELECT, node)));
     
 }
 
@@ -250,7 +250,7 @@ this.highlightedBasicArrayList!.clear();
     public selectGraphicItem(node: DefaultMutableTreeNode){
 this.highlightedBasicArrayList!.add(node);
     
-MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.SELECT, node) as Object));
+MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.SELECT, node)));
     
 }
 
@@ -258,7 +258,7 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
                 //@Throws(Exception.constructor)
             
     public removeGraphicItem(node: DefaultMutableTreeNode){
-MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DELETE, node) as Object));
+MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DELETE, node)));
     
 }
 
@@ -266,7 +266,7 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
                 //@Throws(Exception.constructor)
             
     public removeCanvas(node: DefaultMutableTreeNode){
-MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DELETE, node) as Object));
+MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DELETE, node)));
     
 }
 
@@ -346,13 +346,13 @@ this.repaint();
                         if(node.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
-                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DUPLICATE, node) as Object));
+                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DUPLICATE, node)));
     
 
                                     }
                                 
                         else {
-                            MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DUPLICATE, node) as Object));
+                            MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DUPLICATE, node)));
     
 
                         }
@@ -380,13 +380,13 @@ this.repaint();
                         if(node.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
-                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.ROTATE, angle, node) as Object));
+                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.ROTATE, angle, node)));
     
 
                                     }
                                 
                         else {
-                            MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.ROTATE, angle, node) as Object));
+                            MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.ROTATE, angle, node)));
     
 
                         }
@@ -619,7 +619,7 @@ index < selectedTreePathArray!.length; index++)
                         if(defaultMutableTreeNode!.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
-                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.SELECT, defaultMutableTreeNode) as Object));
+                                    MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.SELECT, defaultMutableTreeNode)));
     
 
                                     }

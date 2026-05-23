@@ -150,7 +150,7 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
         try {
             
-    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;
 ;
     
 
@@ -272,7 +272,7 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
         try {
             
-    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;
 ;
     
 

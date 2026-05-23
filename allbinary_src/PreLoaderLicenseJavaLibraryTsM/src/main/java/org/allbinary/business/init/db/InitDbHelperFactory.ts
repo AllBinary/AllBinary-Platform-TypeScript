@@ -72,7 +72,7 @@ classes[0]=
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
 ;
     
-params[0]= databaseConnectionInfoInterface as Object;
+params[0]= databaseConnectionInfoInterface;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;

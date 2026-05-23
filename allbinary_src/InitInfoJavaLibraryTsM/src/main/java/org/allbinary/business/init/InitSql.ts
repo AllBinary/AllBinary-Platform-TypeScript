@@ -427,7 +427,7 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
         try {
             
-    var columnArray: any[] = updatedKeyValuePairs!.keySet()!.toTypedArray()!;
+    var columnArray: any[] = updatedKeyValuePairs!.keySet()!.()!;
 ;
     
 

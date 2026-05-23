@@ -642,7 +642,7 @@ hashMap!.put(StreetAddressData.COUNTRY, this.country);
 ;
     
 
-    var keyArray: any[] = keySet!.toTypedArray()!;
+    var keyArray: any[] = keySet!.()!;
 ;
     
 

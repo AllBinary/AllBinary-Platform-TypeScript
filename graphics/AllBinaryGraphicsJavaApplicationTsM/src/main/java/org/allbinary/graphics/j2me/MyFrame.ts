@@ -727,7 +727,7 @@ pack();
 
         try {
             MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
-                            null) as Object));
+                            null)));
     
 
                 //: 
@@ -744,7 +744,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMouse
 
         try {
             MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
-                            null) as Object));
+                            null)));
     
 
                 //: 
@@ -853,7 +853,7 @@ this.newGraphics();
 
         try {
             MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.CENTER, 
-                            null) as Object));
+                            null)));
     
 
                 //: 

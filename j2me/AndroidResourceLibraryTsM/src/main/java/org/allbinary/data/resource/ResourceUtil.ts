@@ -187,7 +187,7 @@ this.hashMap!.put(resource, value);
 --index >= 0; )
         {
 
-    var integer: Integer = this.hashMap!.get(objectArray[index]! as Object) as Integer;
+    var integer: Integer = this.hashMap!.get(objectArray[index]!) as Integer;
 ;
     
 

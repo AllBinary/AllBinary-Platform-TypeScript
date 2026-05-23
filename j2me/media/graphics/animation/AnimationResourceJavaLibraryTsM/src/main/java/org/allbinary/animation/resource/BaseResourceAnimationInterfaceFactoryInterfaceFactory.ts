@@ -132,7 +132,7 @@ this.setInitialized(true);
             
     public add(resource: string, animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface){
 
-                        if(this.hashtable.containsKey(resource as Object))
+                        if(this.hashtable.containsKey(resource))
                         
                                     {
                                     

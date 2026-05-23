@@ -80,7 +80,7 @@ this.list= new BasicArrayListD();
 
     public getInstanceFromCollection(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
 
-    var typeInteger: Integer = hashtable.get(BasicAI.ID as Object) as Integer;
+    var typeInteger: Integer = hashtable.get(BasicAI.ID) as Integer;
 ;
     
 

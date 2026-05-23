@@ -110,7 +110,7 @@ this.setGenericProfileActions(genericProfileActions);
                                     this.logUtil!.putF(this.IMAGE_AVAILABLE_SO_PROCESSING, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var anyType: any = cacheInterface!.keySet()!.toTypedArray()[0]!;
+    var anyType: any = cacheInterface!.keySet()!.()[0]!;
 ;
     
 

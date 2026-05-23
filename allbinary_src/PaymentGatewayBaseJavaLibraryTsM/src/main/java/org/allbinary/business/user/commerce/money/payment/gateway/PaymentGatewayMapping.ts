@@ -93,7 +93,7 @@ public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentGatewayInterface!.getKey() as Object;
+                        return this.paymentGatewayInterface!.getKey();
     
 }
 

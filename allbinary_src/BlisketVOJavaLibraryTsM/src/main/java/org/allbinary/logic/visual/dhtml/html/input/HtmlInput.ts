@@ -89,7 +89,7 @@ this.after= after;
 ;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
 ;
     
 

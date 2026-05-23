@@ -147,7 +147,7 @@ this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.C
 ;
     
 
-    var set: Set = hashtable.keys!;
+    var set: Set = hashtable.keys()!;
 ;
     
 

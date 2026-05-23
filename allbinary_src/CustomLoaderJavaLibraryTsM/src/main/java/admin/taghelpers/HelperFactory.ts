@@ -91,9 +91,9 @@ classes[0]= hashMap!.constructor;
     
 classes[1]= abeFactory!.constructor;
     
-params[0]= hashMap as Object;
+params[0]= hashMap;
     
-params[1]= httpServletRequest as Object;
+params[1]= httpServletRequest;
     
 
     var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
@@ -181,9 +181,9 @@ classes[0]= hashMap!.constructor;
     
 classes[1]= abeFactory!.constructor;
     
-params[0]= hashMap as Object;
+params[0]= hashMap;
     
-params[1]= pageContext as Object;
+params[1]= pageContext;
     
 
     var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
@@ -273,11 +273,11 @@ classes[1]= specialhashMap!.constructor;
     
 classes[2]= abeFactory!.constructor;
     
-params[0]= hashMap as Object;
+params[0]= hashMap;
     
-params[1]= specialhashMap as Object;
+params[1]= specialhashMap;
     
-params[2]= pageContext as Object;
+params[2]= pageContext;
     
 
     var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;

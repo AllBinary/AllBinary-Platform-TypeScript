@@ -103,7 +103,7 @@ this.list= new BasicArrayListD();
 this.logUtil!.putF(new StringMaker().append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var typeInteger: Integer = hashtable.get(Layer.ID as Object) as Integer;
+    var typeInteger: Integer = hashtable.get(Layer.ID) as Integer;
 ;
     
 

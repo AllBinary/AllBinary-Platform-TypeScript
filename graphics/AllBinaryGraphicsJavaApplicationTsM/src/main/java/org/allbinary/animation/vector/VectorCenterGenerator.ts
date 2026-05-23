@@ -123,7 +123,7 @@ public constructor (){
             
     public calculate(hashMap: HashMap<any, any>){
 
-    var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = hashMap!.keys().()!;
 ;
     
 
@@ -210,7 +210,7 @@ this.calculate(hashMap);
 this.logUtil!.putF(new StringMaker().append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, this.commonStrings!.GET_INSTANCE);
     
 
-    var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = hashMap!.keys().()!;
 ;
     
 

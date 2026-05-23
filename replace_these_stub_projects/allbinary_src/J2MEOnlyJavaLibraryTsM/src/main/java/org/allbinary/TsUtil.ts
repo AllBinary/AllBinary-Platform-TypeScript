@@ -90,7 +90,7 @@ export class TsUtil
             
     public waitFor(any: any = {}, timeoutMillis: number){
 
-    var anyType: any = any as Object;
+    var anyType: any = any;
 ;
     
 anyType!.wait(timeoutMillis);

@@ -120,11 +120,11 @@ private constructor (){
             
     public getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 
-    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0) as Object) as AllBinaryLayer;
+    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0)) as AllBinaryLayer;
 ;
     
 
-    var angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(1) as Object) as Integer;
+    var angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(1)) as Integer;
 ;
     
 

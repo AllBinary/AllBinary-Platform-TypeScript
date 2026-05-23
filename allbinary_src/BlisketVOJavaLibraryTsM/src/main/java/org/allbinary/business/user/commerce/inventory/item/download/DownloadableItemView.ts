@@ -184,7 +184,7 @@ hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer.valueOf(secondDelta -s
 ;
     
 
-    var nameArray: any[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.()!;
 ;
     
 

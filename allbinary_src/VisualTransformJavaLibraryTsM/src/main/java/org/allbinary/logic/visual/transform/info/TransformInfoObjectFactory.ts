@@ -114,7 +114,7 @@ classes[0]=
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
 ;
     
-params[0]= transformInfoInterface as Object;
+params[0]= transformInfoInterface;
     
 
     var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params) as TransformInterface;

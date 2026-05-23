@@ -104,7 +104,7 @@ this.numberOfColumns++;
 ;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
 ;
     
 

@@ -329,7 +329,7 @@ stringBuffer!.append(this.sqlStrings!.SELECT);
 
         try {
             
-    var keyArray: any[] = columnsAndValues!.keySet()!.toTypedArray()!;
+    var keyArray: any[] = columnsAndValues!.keySet()!.()!;
 ;
     
 
@@ -389,7 +389,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
         while(rset.next())
         {
 
-    var keyArray2: any[] = columnsAndValues!.keySet()!.toTypedArray()!;
+    var keyArray2: any[] = columnsAndValues!.keySet()!.()!;
 ;
     
 

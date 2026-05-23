@@ -166,7 +166,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName() as Object;
+                        return this.getName();
     
 }
 
@@ -253,7 +253,7 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var nameArray: any[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.()!;
 ;
     
 

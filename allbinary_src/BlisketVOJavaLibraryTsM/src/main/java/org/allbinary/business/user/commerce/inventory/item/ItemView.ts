@@ -106,7 +106,7 @@ node.appendChild(basicItemView!.toXmlNode(document));
 ;
     
 
-    var nameArray: any[] = keySet!.toTypedArray()!;
+    var nameArray: any[] = keySet!.()!;
 ;
     
 

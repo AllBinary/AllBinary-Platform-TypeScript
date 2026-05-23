@@ -24,6 +24,8 @@
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
       
+import { Set } from '../../../java/util/Set.js';
+      
 
 
 
@@ -42,7 +44,9 @@ import { Enumeration } from '../../../java/util/Enumeration.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //ArkTs does not have this.  So this is for the ArkTs build.
+        import { BasicArrayListD } from './BasicArrayListD.js';
+import { BasicArrayList } from './BasicArrayList.js';
+//ArkTs does not have this.  So this is for the ArkTs build.
 export class EnumerationUtil
             extends Object
          {
@@ -76,6 +80,37 @@ export class EnumerationUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return enumeration.nextElement()!;;
+    
+}
+
+
+    public getAsArray(set: Set): any[]{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return set.toArray();;
+    
+}
+
+
+    public getAsArray(enumeration: Enumeration<any>): any[]{
+
+    var basicArrayList: BasicArrayList = new BasicArrayListD();
+;
+    
+
+        while(this.hasMoreElements(enumeration))
+        {
+basicArrayList!.add(this.nextElement(enumeration)!);
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return basicArrayList!.toArray();;
     
 }
 

@@ -60,7 +60,7 @@ export class GameConfigurationTextInput
 
     public static update(textField: TextField){
 
-    var anyType: any = textField!.getLabel() as Object;
+    var anyType: any = textField!.getLabel();
 ;
     
 

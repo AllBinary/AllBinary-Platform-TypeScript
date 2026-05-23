@@ -485,7 +485,7 @@ frameNode!.appendChild(realSizeNode);
 ;
     
 
-    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;
 ;
     
 

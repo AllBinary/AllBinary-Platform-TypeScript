@@ -185,7 +185,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 this.getList()!.clear();
     
 
-    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object) as Vector;
+    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES) as Vector;
 ;
     
 

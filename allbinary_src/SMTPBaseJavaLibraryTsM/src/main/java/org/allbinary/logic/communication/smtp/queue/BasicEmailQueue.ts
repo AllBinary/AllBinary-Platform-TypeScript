@@ -92,7 +92,7 @@ private constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public offer(emailInterface: EmailInterface): boolean{
-this.offer(emailInterface as Object);
+this.offer(emailInterface);
     
 this.post(emailInterface);
     
@@ -107,7 +107,7 @@ this.post(emailInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     remove(emailInterface: EmailInterface){
-this.remove(emailInterface as Object);
+this.remove(emailInterface);
     
 }
 

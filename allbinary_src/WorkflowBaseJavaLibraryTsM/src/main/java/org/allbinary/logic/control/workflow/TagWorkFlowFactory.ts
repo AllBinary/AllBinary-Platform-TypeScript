@@ -109,9 +109,9 @@ classes[0]= propertiesHashMap!.constructor;
     
 classes[1]= AbeFactory.getInstance()!.constructor;
     
-params[0]= propertiesHashMap as Object;
+params[0]= propertiesHashMap;
     
-params[1]= pageContext as Object;
+params[1]= pageContext;
     
 
 

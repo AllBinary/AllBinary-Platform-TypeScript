@@ -76,7 +76,7 @@ public constructor (file: AbFile){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getPath() as Object;
+                        return this.file.getPath();
     
 }
 

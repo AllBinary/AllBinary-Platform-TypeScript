@@ -74,7 +74,7 @@ classes[0]=
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
 ;
     
-params[0]= userInterface as Object;
+params[0]= userInterface;
     
 
 

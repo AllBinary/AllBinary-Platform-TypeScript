@@ -104,9 +104,9 @@ export class LevelLayersFinder
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-layerHashtableCanBeNull= hashtable.get(this.enumerationUtil!.nextElement(enumeration)! as Object) as Hashtable<any, any>;
+layerHashtableCanBeNull= hashtable.get(this.enumerationUtil!.nextElement(enumeration)!) as Hashtable<any, any>;
     
-integerCanBeNull= layerHashtableCanBeNull!.get(Layer.ID as Object) as Integer;
+integerCanBeNull= layerHashtableCanBeNull!.get(Layer.ID) as Integer;
     
 cachedIntegerCanBeNull= smallIntegerSingletonFactory!.getAt(integerCanBeNull!.intValue());
     

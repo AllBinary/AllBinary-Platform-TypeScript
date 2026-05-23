@@ -149,7 +149,7 @@ this.htmlRowsVector!.add(htmlRow);
 ;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
 ;
     
 result= this.before;
