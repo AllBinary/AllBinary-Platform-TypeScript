@@ -97,9 +97,7 @@ keysAndValues!.put(this.NAME, name);
 ;
     
 
-                        if(
-
-                                    (get as string).compareTo(name) != 0)
+                        if((get as string).compareTo(name) != 0)
                         
                                     {
                                     

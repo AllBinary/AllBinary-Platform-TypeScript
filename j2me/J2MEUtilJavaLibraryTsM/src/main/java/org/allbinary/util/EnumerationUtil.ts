@@ -24,7 +24,9 @@
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
       
-import { Set } from '../../../java/util/Set.js';
+import { HashMap } from '../../../java/util/HashMap.js';
+      
+import { Map } from '../../../java/util/Map.js';
       
 
 
@@ -84,12 +86,30 @@ export class EnumerationUtil
 }
 
 
-    public getAsArray(set: Set): any[]{
+    public getHashMapAsArray(hashMap: HashMap<any, any>): any[]{
+
+    var objectArray: any[] = hashMap!.keys().()!;
+;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return set.toArray();;
+                        return objectArray;
+    
+}
+
+
+    public getMapAsArray(map: Map<any, any>): any[]{
+
+    var objectArray: any[] = map.keySet()!.()!;
+;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return objectArray;
     
 }
 

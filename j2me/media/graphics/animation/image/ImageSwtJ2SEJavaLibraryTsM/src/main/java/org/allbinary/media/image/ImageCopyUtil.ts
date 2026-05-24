@@ -685,9 +685,7 @@ image= this.openGLUtil!.add(image);
                         
                                     {
                                     
-    var originalImageData: ImageData = 
-
-                                    (getImage as org.eclipse.swt.graphics.Image).getImageData()!;
+    var originalImageData: ImageData = (getImage as org.eclipse.swt.graphics.Image).getImageData()!;
 ;
     
 
@@ -771,9 +769,7 @@ getImage.
 ;
     
 
-    var originalImageData: ImageData = 
-
-                                    (getImage as org.eclipse.swt.graphics.Image).getImageData()!;
+    var originalImageData: ImageData = (getImage as org.eclipse.swt.graphics.Image).getImageData()!;
 ;
     
 

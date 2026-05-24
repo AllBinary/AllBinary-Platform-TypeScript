@@ -79,9 +79,7 @@ public constructor (){
 
     public getInstance(): RunnableInterface{
 
-    var genericProfile: GenericProfile = 
-
-                                    (getConfigurationJPanel as GenericModuleConfigurationJPanel).getSelectedGenericProfile()!;
+    var genericProfile: GenericProfile = (getConfigurationJPanel as GenericModuleConfigurationJPanel).getSelectedGenericProfile()!;
 ;
     
 

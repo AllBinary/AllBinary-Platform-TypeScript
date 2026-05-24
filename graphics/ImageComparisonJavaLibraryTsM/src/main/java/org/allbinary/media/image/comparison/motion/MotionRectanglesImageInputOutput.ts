@@ -112,9 +112,7 @@ public constructor (){
 ;
     
 
-    var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = 
-
-                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
+    var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
 ;
     
 
@@ -129,17 +127,13 @@ public constructor (){
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable= 
-
-                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
+motionRectanglesResultsFrameCacheable= (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable= 
-
-                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
+motionRectanglesResultsFrameCacheable= (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     

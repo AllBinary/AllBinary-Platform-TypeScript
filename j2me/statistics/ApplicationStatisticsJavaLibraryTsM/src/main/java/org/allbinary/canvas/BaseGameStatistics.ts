@@ -167,17 +167,11 @@ this.totalRefreshes++;
                                                             " Total Time: ",this.EMPTY_STRING," Total Frames: ",this.EMPTY_STRING," Frames/10 Sec: ",this.EMPTY_STRING," Total Paints: ",this.EMPTY_STRING," Paints/10 Sec: ",this.EMPTY_STRING
                                                         ];
 
-    private readonly SPACE_CHAR: string = 
-                ' '
-            ;
+    private readonly SPACE_CHAR: string = ' ';
 
-    private readonly PLUS_CHAR: string = 
-                '+'
-            ;
+    private readonly PLUS_CHAR: string = '+';
 
-    private readonly X_CHAR: string = 
-                'X'
-            ;
+    private readonly X_CHAR: string = 'X';
 
     private readonly CHAR_ARRAY: string[][] = 
                                                         [
@@ -186,7 +180,7 @@ this.totalRefreshes++;
 
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
 
-    public toCharArray(): string[][]{
+    public to2DCharArray(): string[][]{
 
     var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
 ;

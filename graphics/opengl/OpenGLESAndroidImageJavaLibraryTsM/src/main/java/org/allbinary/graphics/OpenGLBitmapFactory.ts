@@ -109,9 +109,7 @@ Config = class
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new OpenGLBitmap(
-
-                                    (image as AndroidImageInterface).getBitmap());
+                        return new OpenGLBitmap((image as AndroidImageInterface).getBitmap());
     
 }
 

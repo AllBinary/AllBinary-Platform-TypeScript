@@ -85,9 +85,7 @@ export class CapturedImageInputOutput
 ;
     
 
-    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (
-
-                                    (getInstance as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);
+    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = ((getInstance as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);
 ;
     
 this.logUtil!.putF(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);

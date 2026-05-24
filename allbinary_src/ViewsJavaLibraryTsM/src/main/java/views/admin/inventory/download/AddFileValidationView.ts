@@ -403,9 +403,7 @@ hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
                                 )
                         
                                     {
-                                    hashMap!.put(DownloadItemData.LICENSE_FILE, 
-
-                                    (licenseObject as FileItem).getName());
+                                    hashMap!.put(DownloadItemData.LICENSE_FILE, (licenseObject as FileItem).getName());
     
 
                                     }
@@ -426,9 +424,7 @@ hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
                                 )
                         
                                     {
-                                    hashMap!.put(DownloadItemData.FILE, 
-
-                                    (fileObject as FileItem).getName());
+                                    hashMap!.put(DownloadItemData.FILE, (fileObject as FileItem).getName());
     
 
                                     }

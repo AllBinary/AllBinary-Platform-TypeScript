@@ -207,9 +207,7 @@ this.BUILD_BUILDING_RTS_LAYER_EVENT.setRtsLayer(layerInterface);
 BuildingEventHandler.getInstance()!.fireEvent(this.BUILD_BUILDING_RTS_LAYER_EVENT);
     
 
-                        if(
-
-                                    (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).isLocalPlayer())
+                        if((rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).isLocalPlayer())
                         
                                     {
                                     LocalPlayerBuildingEventHandler.getInstance()!.fireEvent(this.BUILD_BUILDING_RTS_LAYER_EVENT);

@@ -61,9 +61,7 @@ public constructor (key: any = {}){
             super();
         this.key= key;
     
-this.color= new Color(
-
-                                    (key as Integer).intValue());
+this.color= new Color((key as Integer).intValue());
     
 }
 

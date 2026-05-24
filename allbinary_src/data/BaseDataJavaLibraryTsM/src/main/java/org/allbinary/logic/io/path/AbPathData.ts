@@ -62,9 +62,7 @@ export class AbPathData
 
     public readonly EXTENSION_SEP: string = CommonSeps.getInstance()!.PERIOD;
 
-    public readonly SEPARATORCHAR: string = 
-                '/'
-            ;
+    public readonly SEPARATORCHAR: string = '/';
 
     public readonly SEPARATOR: string = CommonSeps.getInstance()!.FORWARD_SLASH;
 private constructor (){

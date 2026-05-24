@@ -293,9 +293,7 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
 matrix.setScale(scaleX, scaleY);
     
 
-    var canvas: Canvas = 
-
-                                    (image as AndroidImageInterface).getCanvas()!;
+    var canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;
 ;
     
 canvas.concat(matrix);

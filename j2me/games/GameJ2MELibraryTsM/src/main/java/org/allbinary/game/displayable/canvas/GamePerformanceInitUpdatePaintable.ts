@@ -67,7 +67,7 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
 
 
     public update(){
-this.baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.toCharArray();
+this.baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.to2DCharArray();
     
 }
 

@@ -281,9 +281,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 index < size; index++)
         {
 
-    var nextId: number = 
-
-                                    (get as Integer).intValue()!;
+    var nextId: number = (get as Integer).intValue()!;
 ;
     
 

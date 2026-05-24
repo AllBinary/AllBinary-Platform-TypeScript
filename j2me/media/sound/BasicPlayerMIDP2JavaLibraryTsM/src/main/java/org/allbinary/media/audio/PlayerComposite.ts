@@ -151,9 +151,7 @@ this.player.deallocate();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return 
-
-                                    (player as TimeBaseInterface).getTimeBase();;
+                        return (player as TimeBaseInterface).getTimeBase();;
     
 }
 

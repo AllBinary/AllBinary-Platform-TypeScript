@@ -139,9 +139,7 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
 ;
     
 
-    var originalPlaynImage: playn.core.Image = 
-
-                                    (originalImage as PlaynImage).getImage() as playn.core.Image;
+    var originalPlaynImage: playn.core.Image = (originalImage as PlaynImage).getImage() as playn.core.Image;
 ;
     
 
@@ -220,9 +218,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
 
     public handleImage(imageArray: Image[], index: number, image: Image){
 
-    var image3: playn.core.Image = 
-
-                                    (image as PlaynImage).getImage() as playn.core.Image;
+    var image3: playn.core.Image = (image as PlaynImage).getImage() as playn.core.Image;
 ;
     
 

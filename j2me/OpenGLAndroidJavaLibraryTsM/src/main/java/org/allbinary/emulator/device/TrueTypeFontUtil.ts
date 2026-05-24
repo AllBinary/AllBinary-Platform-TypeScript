@@ -135,9 +135,7 @@ this.logUtil!.putF(path, this, commonStrings!.CONSTRUCTOR);
 ;
     
 
-    var bitmap: Bitmap = 
-
-                                    (getImage as AndroidImageInterface).getBitmap()!;
+    var bitmap: Bitmap = (getImage as AndroidImageInterface).getBitmap()!;
 ;
     
 bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);

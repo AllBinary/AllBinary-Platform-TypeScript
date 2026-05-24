@@ -94,9 +94,7 @@ private constructor (){
                         
                                     {
                                     
-    var bitmap: Bitmap = 
-
-                                    (image as AndroidImageInterface).getBitmap()!;
+    var bitmap: Bitmap = (image as AndroidImageInterface).getBitmap()!;
 ;
     
 
@@ -110,9 +108,7 @@ private constructor (){
 this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
     
 
-    var canvas: Canvas = 
-
-                                    (image as AndroidImageInterface).getCanvas()!;
+    var canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;
 ;
     
 canvas.concat(this.matrix);

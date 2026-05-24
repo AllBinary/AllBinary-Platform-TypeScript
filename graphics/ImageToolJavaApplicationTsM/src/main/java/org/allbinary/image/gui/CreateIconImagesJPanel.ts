@@ -210,13 +210,9 @@ iconHeightList!.add(864);
     var index2: number = 0;
 index2 < size; index2++)
         {
-width= 
-
-                                    (get as Integer).intValue();
+width= (get as Integer).intValue();
     
-height= 
-
-                                    (get as Integer).intValue();
+height= (get as Integer).intValue();
     
 
     var generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;
