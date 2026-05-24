@@ -205,9 +205,9 @@ public constructor (hashMap: HashMap<any, any>){
     var index2: number = 0;
 index2 < size; index2++)
         {
-keys= keyArray[index2]! as Array<String?>;
+keys= keyArray[index2]! as string[];
     
-values= this.hashMap!.get(keys) as Array<String?>;
+values= this.hashMap!.get(keys) as string[];
     
 
     var foundTotal: number = 0;

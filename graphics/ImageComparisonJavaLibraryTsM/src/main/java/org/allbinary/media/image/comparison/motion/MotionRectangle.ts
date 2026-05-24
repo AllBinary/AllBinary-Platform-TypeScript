@@ -22,6 +22,8 @@
 
 
         
+            import { Cloneable } from '../../../../../../java/lang/Cloneable.js';
+        
 import { awt } from '../../../../../../java/awt.js';
       
 import { Vector } from '../../../../../../java/util/Vector.js';
@@ -44,8 +46,7 @@ import { Vector } from '../../../../../../java/util/Vector.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Cloneable } from './Cloneable.js';
-import { Rectangle } from './Rectangle.js';
+        import { Rectangle } from './Rectangle.js';
 
 export class MotionRectangle
             extends Object

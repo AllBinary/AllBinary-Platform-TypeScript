@@ -248,7 +248,7 @@ this.setRelease(value.concatToString()
                             
 }
 
-this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>);
+this.setKeyArray(vector.toArray(new Array(vector.length)) as Integer[]);
     
 
                                     }
@@ -482,7 +482,7 @@ index++;
 }
 
 
-    var integerArray: Integer[] = vector.toArray(new Array(vector.length)) as Array<Integer?>;
+    var integerArray: Integer[] = vector.toArray(new Array(vector.length)) as Integer[];
 ;
     
 

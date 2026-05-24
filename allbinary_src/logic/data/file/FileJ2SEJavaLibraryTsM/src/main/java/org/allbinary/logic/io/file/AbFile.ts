@@ -360,7 +360,7 @@ this.file.deleteOnExit();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.listFiles() as Array<any?>;
+                        return this.file.listFiles() as any[];
     
 }
 
@@ -370,7 +370,7 @@ this.file.deleteOnExit();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.listFiles(filter) as Array<any?>;
+                        return this.file.listFiles(filter) as any[];
     
 }
 
@@ -380,7 +380,7 @@ this.file.deleteOnExit();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.listFiles(filter) as Array<any?>;
+                        return this.file.listFiles(filter) as any[];
     
 }
 

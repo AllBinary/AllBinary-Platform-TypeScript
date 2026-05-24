@@ -68,14 +68,14 @@ export class MyGraphicItemEventService
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyGraphicItemEventListener){
-MyGraphicItemEventService.listenerList!.add(listener.constructor as Class<*>, listener as java.util.EventListener);
+MyGraphicItemEventService.listenerList!.add(listener.constructor as Class<any>, listener as java.util.EventListener);
     
 }
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyGraphicItemEventListener){
-MyGraphicItemEventService.listenerList!.remove(listener.constructor as Class<*>, listener as java.util.EventListener);
+MyGraphicItemEventService.listenerList!.remove(listener.constructor as Class<any>, listener as java.util.EventListener);
     
 }
 

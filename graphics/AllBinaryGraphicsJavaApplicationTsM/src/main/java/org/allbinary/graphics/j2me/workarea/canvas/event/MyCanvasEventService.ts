@@ -72,14 +72,14 @@ export class MyCanvasEventService
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyCanvasEventListener){
-MyCanvasEventService.listenerList!.add(listener.constructor as Class<*>, listener as java.util.EventListener);
+MyCanvasEventService.listenerList!.add(listener.constructor as Class<any>, listener as java.util.EventListener);
     
 }
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyCanvasEventListener){
-MyCanvasEventService.listenerList!.remove(listener.constructor as Class<*>, listener as java.util.EventListener);
+MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, listener as java.util.EventListener);
     
 }
 

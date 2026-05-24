@@ -139,7 +139,7 @@ index < size; index++)
 }
 
 
-    var objectArray: any[] = unsortedCustomizerViewVector!.toArray() as Array<any?>;
+    var objectArray: any[] = unsortedCustomizerViewVector!.toArray() as any[];
 ;
     
 Arrays.sort(objectArray, new StringComparator());

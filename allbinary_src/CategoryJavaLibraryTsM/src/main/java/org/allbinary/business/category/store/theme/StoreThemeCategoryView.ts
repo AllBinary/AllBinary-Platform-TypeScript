@@ -80,7 +80,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 ;
     
 
-    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray() as Array<ThemeValidation?>;
+    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray() as ThemeValidation[];
 ;
     
 Arrays.sort(themeValidationArray, new ThemeComparator());

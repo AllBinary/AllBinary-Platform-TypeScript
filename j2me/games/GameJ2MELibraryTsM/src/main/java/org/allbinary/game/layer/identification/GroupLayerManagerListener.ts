@@ -278,7 +278,7 @@ index >= 0; index--)
     var index: number = size -1;
 index >= 0; index--)
         {
-groupInterfaceArray= excludeGroupList!.objectArray[index]! as Array<Group?>;
+groupInterfaceArray= excludeGroupList!.objectArray[index]! as Group[];
     
 
     var size2: number = groupInterfaceArray!.length

@@ -884,7 +884,7 @@ hashMap!.put(key.toCharArray().slice(0, ).join(''), value.toCharArray().slice(0,
                         
                                     {
                                     
-    var values: string[] = this.getMap()!.get(key) as Array<String?>;
+    var values: string[] = this.getMap()!.get(key) as string[];
 ;
     
 

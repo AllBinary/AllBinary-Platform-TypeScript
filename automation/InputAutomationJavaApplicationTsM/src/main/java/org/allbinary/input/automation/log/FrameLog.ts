@@ -89,7 +89,7 @@ this.infoStringBuffer!.append(infoString);
 }
 
 
-    public addActions(vectorOfStrings: Vector<String>){
+    public addActions(vectorOfStrings: Vector<string>){
 
     var size: number = vectorOfStrings!.length!;
 ;

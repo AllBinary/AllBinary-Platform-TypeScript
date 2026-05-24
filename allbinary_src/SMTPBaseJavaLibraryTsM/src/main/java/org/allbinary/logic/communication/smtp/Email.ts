@@ -183,7 +183,7 @@ this.init(server, null as Authenticator,
                                                 ], 
                                                 [
                                                     new InternetAddress(to)
-                                                ], null as Array<InternetAddress?>, null as Array<InternetAddress?>, subject, mimeBodyParts);
+                                                ], null as InternetAddress[], null as InternetAddress[], subject, mimeBodyParts);
     
 
                 //: 

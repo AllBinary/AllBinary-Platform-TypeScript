@@ -114,7 +114,7 @@ this.loadAllSize(abeClientInformation, 1);
 ;
     
 
-    var hashtable: Hashtable<String, String>
+    var hashtable: Hashtable<string, string>
 ;
     
 
@@ -168,7 +168,7 @@ recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 inputStream= new DataInputStream(byteArrayInputStream);
     
-hashtable= new Hashtable<String, String>();
+hashtable= new Hashtable<string, string>();
     
 
 

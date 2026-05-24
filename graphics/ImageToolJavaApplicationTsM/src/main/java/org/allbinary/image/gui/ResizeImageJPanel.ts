@@ -602,7 +602,7 @@ this.updateFor16Below();
 
     private floatPercentJTextField: javax.swing.JTextField
 
-    private jComboBox1: javax.swing.JComboBox<String>
+    private jComboBox1: javax.swing.JComboBox<string>
 
     private jLabel1: javax.swing.JLabel
 

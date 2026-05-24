@@ -492,11 +492,11 @@ this.jLabel2!.setText(spriteSplitterUtil!.ANIMATIONS_LABELS[this.spriteTypeJComb
 
     private jPanel2: javax.swing.JPanel
 
-    private spriteTypeJComboBox: javax.swing.JComboBox<String>
+    private spriteTypeJComboBox: javax.swing.JComboBox<string>
 
-    private totalAnimationsJComboBox: javax.swing.JComboBox<String>
+    private totalAnimationsJComboBox: javax.swing.JComboBox<string>
 
-    private totalFramesJComboBox: javax.swing.JComboBox<String>
+    private totalFramesJComboBox: javax.swing.JComboBox<string>
 
     private widthReductionTextField: javax.swing.JTextField
 

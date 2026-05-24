@@ -225,7 +225,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rectangleArrayOfArraysHashtable!.get(resource)as Array<Rectangle[]?>;
+                        return this.rectangleArrayOfArraysHashtable!.get(resource)as Rectangle[][];
     
 }
 

@@ -116,7 +116,7 @@ this.ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
 
     public getInstanceArray(size: number): WeaponLayer[]{
 
-    var weaponLayerArray: WeaponLayer[] = this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]! as Array<WeaponLayer?>;
+    var weaponLayerArray: WeaponLayer[] = this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]! as WeaponLayer[];
 ;
     
 this.circularIndexUtil!.next();
