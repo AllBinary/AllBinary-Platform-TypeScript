@@ -124,7 +124,7 @@ result= (accumulated +(value /accumulated))>>1;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return 0;
+                        return 0.0;
     
 
                                     }
@@ -137,7 +137,7 @@ result= (accumulated +(value /accumulated))>>1;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  -1;
+                        return  -1.0;
     
 
                                     }
