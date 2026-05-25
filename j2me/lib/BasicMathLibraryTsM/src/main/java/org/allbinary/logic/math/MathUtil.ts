@@ -8,6 +8,10 @@
 
 
         
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      
 
 
 
@@ -105,6 +109,60 @@ result= (accumulated +(value /accumulated))>>1;
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return accumulated;
+    
+}
+
+
+    private readonly ACCURACY: number = 100;
+
+    public sqrtd(x: number): number{
+
+                        if(x == 0)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return 0;
+    
+
+                                    }
+                                
+
+                        if(x < 0)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return  -1;
+    
+
+                                    }
+                                
+
+    var result: number = x;
+;
+    
+
+
+
+
+                        for (
+    var index: number = 0;
+index < ACCURACY; index++)
+        {
+result= (result +(x /result)) /2;
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return result;
     
 }
 
