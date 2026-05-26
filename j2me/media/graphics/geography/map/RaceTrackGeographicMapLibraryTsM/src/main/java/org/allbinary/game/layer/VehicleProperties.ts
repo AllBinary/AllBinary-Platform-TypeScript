@@ -49,9 +49,10 @@ export class VehicleProperties
          {
         
 
-    private readonly velocityProperties: VelocityProperties
+    private readonly velocityProperties: VelocityProperties;
 
-    private vehicleFrictionProperties: VehicleFrictionProperties
+    private vehicleFrictionProperties: VehicleFrictionProperties;
+
 public constructor (velocityProperties: VelocityProperties, vehicleFrictionProperties: VehicleFrictionProperties){
 
             super();

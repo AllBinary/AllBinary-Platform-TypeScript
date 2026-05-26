@@ -62,11 +62,12 @@ export class BasicEmailInfo
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private subject: string
+    private subject: string;
 
-    private textBody: string
+    private textBody: string;
 
-    emailServerConfigurationInterface: EmailServerConfigurationInterface
+    emailServerConfigurationInterface: EmailServerConfigurationInterface;
+
 public constructor (subject: string, textBody: string){
 
             super();
@@ -75,8 +76,7 @@ public constructor (subject: string, textBody: string){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -128,8 +128,7 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getEmailServerConfigurationInterface()!.toString());
     

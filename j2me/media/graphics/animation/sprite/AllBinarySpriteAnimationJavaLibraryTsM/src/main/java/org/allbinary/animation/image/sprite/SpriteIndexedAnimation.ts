@@ -70,11 +70,12 @@ import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.j
 export class SpriteIndexedAnimation extends IndexedAnimation implements ColorCompositeInterface {
         
 
-    readonly sprite: Sprite
+    readonly sprite: Sprite;
 
-    readonly image: Image
+    readonly image: Image;
 
-    private readonly basicColorArray: BasicColor[]
+    private readonly basicColorArray: BasicColor[];
+
 public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -120,8 +121,7 @@ this.basicColorArray= basicColorArray;
 
 
                         for (
-    var index: number = 0;
-index < this.basicColorArray!.length; index++)
+    var index: number = 0;index < this.basicColorArray!.length; index++)
         {
 
                         if(basicColor == this.basicColorArray[index])

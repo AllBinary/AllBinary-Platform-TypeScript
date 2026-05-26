@@ -80,13 +80,14 @@ export class LogoValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private logoFileItem: FileItem
+    private logoFileItem: FileItem;
 
-    private logoAbPath: AbPath
+    private logoAbPath: AbPath;
 
-    private logoFile: string
+    private logoFile: string;
 
-    private isFile: boolean
+    private isFile: boolean;
+
 public constructor (){
 
             super();
@@ -102,6 +103,7 @@ this.logoFile=
     
 }
 
+
 public constructor (node: Node){
 
             super();
@@ -112,6 +114,7 @@ this.logoAbPath= new AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAG
 this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, node.getChildNodes())!.getNodeValue();
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -146,8 +149,7 @@ this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as s
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("HashMap: ");
     
@@ -169,12 +171,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
-    var fileData: FileData = FileData.getInstance()!;
-;
+    var fileData: FileData = FileData.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -316,8 +316,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Logo is not valid.");
     
@@ -373,12 +372,10 @@ stringBuffer!.append("Logo is not valid.");
 
     public toHashMap(): HashMap<any, any>{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(LogoData.getInstance()!.IMAGE, stringUtil!.EMPTY_STRING);
     
@@ -417,8 +414,7 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
 
@@ -437,8 +433,7 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Processing logoFile: ");
     

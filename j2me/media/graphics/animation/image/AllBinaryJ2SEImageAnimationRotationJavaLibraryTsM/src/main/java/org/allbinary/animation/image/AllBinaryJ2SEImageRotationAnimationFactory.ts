@@ -69,9 +69,10 @@ import { AllBinaryAdjustedJ2SEImageRotationAnimation } from './AllBinaryAdjusted
 export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
-    readonly angleIncrementP: number
+    readonly angleIncrementP: number;
 
-    private readonly resizeCanvasForRotation: boolean
+    private readonly resizeCanvasForRotation: boolean;
+
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                     
@@ -89,8 +90,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     getCanvasImage(): Image{
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
@@ -122,26 +122,21 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     public getInstance(instanceId: number): Animation{
 
-    var imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;
-;
+    var imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;;
     
 
-    var canvasImage: Image = this.getCanvasImage()!;
-;
+    var canvasImage: Image = this.getCanvasImage()!;;
     
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-;
+    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;
-;
+    var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;;
     
 scaledImage= openGLUtil!.add(scaledImage);
     
 
-    var copyOfScaledImage: Image = imageCopyUtil!.createImageForRotation(scaledImage)!;
-;
+    var copyOfScaledImage: Image = imageCopyUtil!.createImageForRotation(scaledImage)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)

@@ -55,7 +55,8 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 export class ArrayAI extends BasicAI {
         
 
-    private readonly artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[]
+    private readonly artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[];
+
 public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -72,16 +73,14 @@ this.artificialIntelligenceInterfaceArray= artificialIntelligenceInterface;
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
     var size: number = this.artificialIntelligenceInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManager);
     

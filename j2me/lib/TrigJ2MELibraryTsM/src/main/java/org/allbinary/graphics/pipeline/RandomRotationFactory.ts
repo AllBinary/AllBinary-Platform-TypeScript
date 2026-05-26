@@ -75,8 +75,7 @@ export class RandomRotationFactory
             
     public getInstanceList(vector: BasicArrayList, howMuch: number): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);
-;
+    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);;
     
 graphicsPipe!.createMatrix();
     

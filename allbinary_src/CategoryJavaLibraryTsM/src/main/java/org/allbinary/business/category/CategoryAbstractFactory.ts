@@ -70,6 +70,7 @@ export class CategoryAbstractFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (){
 
             super();
@@ -116,8 +117,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -162,8 +162,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -208,8 +207,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -254,8 +252,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -300,8 +297,7 @@ public constructor (){
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
     
 
 

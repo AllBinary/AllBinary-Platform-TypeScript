@@ -53,7 +53,8 @@ export class PointsLayerFactory
          implements AllBinaryLayerFactoryInterface {
         
 
-    private readonly points: number
+    private readonly points: number;
+
 public constructor (points: number){
 
             super();

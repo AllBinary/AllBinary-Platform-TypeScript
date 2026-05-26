@@ -61,6 +61,7 @@ export class HttpRequestUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -69,8 +70,7 @@ private constructor (){
 
     public getLastSeparatorIndex(requestPath: string): number{
 
-    var beginIndex: number = requestPath!.lastIndexOf(AbPathData.getInstance()!.SEPARATOR)!;
-;
+    var beginIndex: number = requestPath!.lastIndexOf(AbPathData.getInstance()!.SEPARATOR)!;;
     
 
                         if(beginIndex < 0)
@@ -94,8 +94,7 @@ private constructor (){
             
     public generateFileName(requestPath: string): string{
 
-    var beginIndex: number = this.getLastSeparatorIndex(requestPath)!;
-;
+    var beginIndex: number = this.getLastSeparatorIndex(requestPath)!;;
     
 
                         if(beginIndex < 0)

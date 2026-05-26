@@ -59,6 +59,7 @@ export class TransformInfoObjectConfigData
     
 }
 
+
 private constructor (){
 
             super();

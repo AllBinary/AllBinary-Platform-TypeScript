@@ -51,21 +51,22 @@ export class RaceTrackInfo
          {
         
 
-    private id: Integer
+    private id: Integer;
 
-    private name: string
+    private name: string;
 
-    private raceTrackFrictionProperties: RaceTrackFrictionProperties
+    private raceTrackFrictionProperties: RaceTrackFrictionProperties;
 
-    private foregroundBasicColor: BasicColor
+    private foregroundBasicColor: BasicColor;
 
-    private backgroundBasicColor: BasicColor
+    private backgroundBasicColor: BasicColor;
 
-    private qualifyTime: number
+    private qualifyTime: number;
 
-    private worstContinuePosition: number
+    private worstContinuePosition: number;
 
-    private totalLaps: number
+    private totalLaps: number;
+
 public constructor (id: Integer, name: string, raceTrackFrictionProperties: RaceTrackFrictionProperties, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, qualifyTime: number, worstContinuePosition: number, totalLaps: number){
 
             super();

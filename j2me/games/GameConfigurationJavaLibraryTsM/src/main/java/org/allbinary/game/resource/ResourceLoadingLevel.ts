@@ -46,9 +46,10 @@ export class ResourceLoadingLevel
          {
         
 
-    private readonly name: string
+    private readonly name: string;
 
-    private readonly level: number
+    private readonly level: number;
+
  constructor (name: string, level: number){
 
             super();

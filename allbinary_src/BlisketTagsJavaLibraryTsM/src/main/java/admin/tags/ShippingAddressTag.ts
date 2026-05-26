@@ -65,7 +65,8 @@ export class ShippingAddressTag extends TableTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private value: string
+    private value: string;
+
 public constructor (){
 
             super();
@@ -88,22 +89,18 @@ this.value= value;
 
         try {
             
-    var anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("set", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -126,8 +123,7 @@ this.value= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to set Shipping Address";
-;
+    var error: string = "Failed to set Shipping Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -155,22 +151,18 @@ this.value= value;
 
         try {
             
-    var anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new ShippingAddressHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("setToBillingAddress", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -193,8 +185,7 @@ this.value= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed Setting Shipping address to Billing Address";
-;
+    var error: string = "Failed Setting Shipping address to Billing Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

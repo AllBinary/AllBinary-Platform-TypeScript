@@ -70,7 +70,7 @@ export class WaypointPathRunnableBase
 
     priorityP: number = Integer.MAX_VALUE;
 
-    runningP: boolean= false
+    runningP: boolean= false;
 
     public isRunning(): boolean{
 
@@ -104,12 +104,10 @@ this.setPriority();
 
     public setPriority(){
 
-    var pathFindingLayer: AllBinaryLayer = this.pathFindingLayer as AllBinaryLayer;
-;
+    var pathFindingLayer: AllBinaryLayer = this.pathFindingLayer as AllBinaryLayer;;
     
 
-    var targetLayer: AllBinaryLayer = this.targetPathFindingLayer as AllBinaryLayer;
-;
+    var targetLayer: AllBinaryLayer = this.targetPathFindingLayer as AllBinaryLayer;;
     
 
                         if(targetLayer != 
@@ -118,12 +116,10 @@ this.setPriority();
                         
                                     {
                                     
-    var distance: number = this.layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;
-;
+    var distance: number = this.layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;;
     
 
-    var distanceCategory: number = distance /70;
-;
+    var distanceCategory: number = distance /70;;
     
 this.priorityP= distanceCategory;
     

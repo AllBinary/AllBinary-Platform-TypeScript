@@ -49,7 +49,8 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 export class CommandTextItem extends ABTextItem {
         
 
-    private readonly command: Command
+    private readonly command: Command;
+
 public constructor (command: Command, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(command.getLabel(), layout, altText, backgroundBasicColor, foregroundBasicColor);
                     

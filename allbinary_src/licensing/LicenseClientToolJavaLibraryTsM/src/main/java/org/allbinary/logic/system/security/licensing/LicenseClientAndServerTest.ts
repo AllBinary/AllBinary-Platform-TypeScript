@@ -77,8 +77,7 @@ export class LicenseClientAndServerTest
 
         try {
             
-    var licensingTest: LicenseClientAndServerTest = new LicenseClientAndServerTest(args);
-;
+    var licensingTest: LicenseClientAndServerTest = new LicenseClientAndServerTest(args);;
     
 licensingTest!.test();
     
@@ -87,8 +86,7 @@ licensingTest!.test();
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
     
@@ -100,6 +98,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private vector: BasicArrayList = new BasicArrayListD();
+
 public constructor (options: string[]){
 
             super();
@@ -110,8 +109,7 @@ public constructor (options: string[]){
 
 
                         for (
-    var index: number = 1;
-index < options.length; index++)
+    var index: number = 1;index < options.length; index++)
         {
 this.vector.add(options[index]!);
     
@@ -122,23 +120,19 @@ this.vector.add(options[index]!);
                         
                                     {
                                     
-    var file: File = new File(PrintLicenseInitInfo.PATH +"testlicenseservers.txt");
-;
+    var file: File = new File(PrintLicenseInitInfo.PATH +"testlicenseservers.txt");;
     
 
-    var reader: FileReader = new FileReader(file);
-;
+    var reader: FileReader = new FileReader(file);;
     
 
-    var lineNumberReader: LineNumberReader = new LineNumberReader(reader);
-;
+    var lineNumberReader: LineNumberReader = new LineNumberReader(reader);;
     
 
         while(true)
         {
 
-    var line: string = lineNumberReader!.readLine()!;
-;
+    var line: string = lineNumberReader!.readLine()!;;
     
 
                         if(line != 
@@ -169,71 +163,58 @@ this.vector.add(options[index]!);
 
     public test(){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
         try {
             
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var TESTING: string = "Testing with new licence:<br/>";
-;
+    var TESTING: string = "Testing with new licence:<br/>";;
     
 
-    var PROCESSING: string = "Processing: <br/>";
-;
+    var PROCESSING: string = "Processing: <br/>";;
     
 
-    var END: string = "<br/>End<br/>";
-;
+    var END: string = "<br/>End<br/>";;
     
 
-    var RESULT: string = "Test Result: ";
-;
+    var RESULT: string = "Test Result: ";;
     
 
-    var size: number = this.vector.size()!;
-;
+    var size: number = this.vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string = this.vector.get(index) as string;
-;
+    var serverName: string = this.vector.get(index) as string;;
     
 
         try {
             
-    var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();
-;
+    var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();;
     
 licenseInitInfo!.addServer(serverName);
     
 LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
     
 
-    var abeClientInformation: AbeClientInformationInterface = AbeClientInformationInterfaceFactory.getInstance()!;
-;
+    var abeClientInformation: AbeClientInformationInterface = AbeClientInformationInterfaceFactory.getInstance()!;;
     
 
-    var xmlRpcAbeLicenseClient: XmlRpcAbeLicenseRetrievalClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);
-;
+    var xmlRpcAbeLicenseClient: XmlRpcAbeLicenseRetrievalClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);;
     
 
     var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null) as AbeLicenseInterface;
-;
+                            null) as AbeLicenseInterface;;
     
 
                         if(abeLicenseInterface != 

@@ -78,6 +78,7 @@ export class AdvertisementCampaignInternalEntity extends AbSqlBean implements Ad
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "adCampaignInternal";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -123,34 +124,28 @@ this.setTableName(this.tableName);
 
     public getCampaignsInStore(storeName: string): AdvertisementCampaignsInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var hashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
-    var size: number = hashMapVector!.length!;
-;
+    var size: number = hashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;
-;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;;
     
 
                         if(hashMap != 
@@ -176,16 +171,14 @@ index < size; index++)
 
     public get(storeName: string, name: string): AdvertisementCampaignInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(hashMap != 
@@ -223,16 +216,13 @@ super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!.getInstance()!;
-;
+    var entryData: EntryData = EntryData.getInstance()!.getInstance()!;;
     
 
-    var advertisementCampaignData: AdvertisementCampaignData = AdvertisementCampaignData.getInstance()!;
-;
+    var advertisementCampaignData: AdvertisementCampaignData = AdvertisementCampaignData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -253,8 +243,7 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
 
     public createTable(): string{
 
-    var returnStr: string = super.createTable(this.createTableStatement())!;
-;
+    var returnStr: string = super.createTable(this.createTableStatement())!;;
     
 
 

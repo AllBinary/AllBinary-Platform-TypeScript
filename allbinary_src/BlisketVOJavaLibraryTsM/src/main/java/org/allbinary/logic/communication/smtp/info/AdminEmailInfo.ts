@@ -60,6 +60,7 @@ export class AdminEmailInfo extends BasicEmailInfo {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (subject: string, textBody: string){
             super(subject, textBody);
                     
@@ -71,8 +72,7 @@ public constructor (subject: string, textBody: string){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -88,16 +88,13 @@ this.init();
             
     init(){
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration() as AdminConfigurationInterface;
-;
+    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration() as AdminConfigurationInterface;;
     
 
-    var contextConfigurationInterface: ContextConfigurationInterface = adminConfigurationInterface!.getContextConfigurationInterface()!;
-;
+    var contextConfigurationInterface: ContextConfigurationInterface = adminConfigurationInterface!.getContextConfigurationInterface()!;;
     
 
-    var emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;
-;
+    var emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;;
     
 this.setEmailServerConfigurationInterface(emailServerConfigurationInterface);
     

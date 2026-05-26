@@ -64,8 +64,7 @@ export class KeyValueFactory
 
     public get(key: string): string{
 
-    var value: string = this.MAP.get(key) as string;
-;
+    var value: string = this.MAP.get(key) as string;;
     
 
                         if(value == 

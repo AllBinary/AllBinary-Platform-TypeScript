@@ -55,6 +55,7 @@ import { PopupMenuInputProcessor } from './PopupMenuInputProcessor.js';
 
 export class PopupCommandFormInputProcessor extends CommandFormInputProcessor {
         
+
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm, popupMenuInputProcessor: PopupMenuInputProcessor){
             super(gameKeyEventList, playerInputId, gameCanvas, form);
                     

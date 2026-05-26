@@ -57,6 +57,7 @@ export class OrderHistoryRequestHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.OrderHistoryRequestHelper";
 
     private static readonly FACTORYNAME: string = "OrderHistoryRequestHelperFactory";
+
 public constructor (){
 
             super();

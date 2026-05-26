@@ -65,9 +65,10 @@ export class HttpFilePermissions
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly file: AbFile
+    private readonly file: AbFile;
 
     private readonly userRoles: Vector = new Vector();
+
 public constructor (fullPath: AbPath){
 
             super();

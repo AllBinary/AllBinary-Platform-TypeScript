@@ -58,6 +58,7 @@ export class PickUpShippingModule
     private readonly name: string = "No Shipping (For Pickup Orders Only)";
 
     private readonly description: string = "This shipping method is for pickup orders only.";
+
 public constructor (){
 
             super();

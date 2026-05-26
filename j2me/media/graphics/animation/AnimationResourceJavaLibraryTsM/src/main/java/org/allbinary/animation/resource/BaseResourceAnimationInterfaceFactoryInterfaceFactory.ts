@@ -75,15 +75,16 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable<any, any>
+    private readonly hashtable: Hashtable<any, any>;
 
-    private readonly rectangleHashtable: Hashtable<any, any>
+    private readonly rectangleHashtable: Hashtable<any, any>;
 
-    private readonly rectangleArrayOfArraysHashtable: Hashtable<any, any>
+    private readonly rectangleArrayOfArraysHashtable: Hashtable<any, any>;
 
-    private readonly name: string
+    private readonly name: string;
 
-    private initialized: boolean= false
+    private initialized: boolean= false;
+
 public constructor (name: string, hashtable: Hashtable<any, any>, rectangleHashtable: Hashtable<any, any>, rectangleArrayHashtable: Hashtable<any, any>){
 
             super();
@@ -112,8 +113,7 @@ this.name= name;
             
     public init(level: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(new StringMaker().append("Available List of Animations: ")!.append(this.hashtable.toString())!.toString(), this, commonStrings!.INIT);
     
@@ -152,8 +152,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
             
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
 
-    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any = this.hashtable.get(resource);
-;
+    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any = this.hashtable.get(resource);;
     
 
                         if(basicAnimationInterfaceFactoryInterfaceCanBeNull == 
@@ -183,8 +182,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
             
     public getRectangle(resource: string): Rectangle{
 
-    var rectangleCanBeNull: any = this.rectangleHashtable!.get(resource);
-;
+    var rectangleCanBeNull: any = this.rectangleHashtable!.get(resource);;
     
 
                         if(rectangleCanBeNull == 
@@ -250,8 +248,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 
     public isLoadingLevel(level: number): boolean{
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())

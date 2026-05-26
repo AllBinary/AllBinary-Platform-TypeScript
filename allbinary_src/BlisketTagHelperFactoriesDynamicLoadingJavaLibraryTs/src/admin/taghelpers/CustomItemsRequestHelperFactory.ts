@@ -57,6 +57,7 @@ export class CustomItemsRequestHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.CustomItemsRequestHelper";
 
     private static readonly FACTORYNAME: string = "CustomItemsRequestHelperFactory";
+
 public constructor (){
 
             super();

@@ -96,8 +96,7 @@ export class ZipFileUtil
 
         try {
             
-    var zipFile: AbFile = new AbFile(outFilename);
-;
+    var zipFile: AbFile = new AbFile(outFilename);;
     
 
                         if(zipFile!.exists())
@@ -111,44 +110,35 @@ export class ZipFileUtil
 zipFile!.createNewFile();
     
 
-    var outputStream: ZipOutputStream = new ZipOutputStream(new AbFileOutputStream(zipFile));
-;
+    var outputStream: ZipOutputStream = new ZipOutputStream(new AbFileOutputStream(zipFile));;
     
 
-    var streamUtil: StreamUtil = StreamUtil.getInstance()!;
-;
+    var streamUtil: StreamUtil = StreamUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var byteArray: number[] = new Array(16384);
-;
+    var byteArray: number[] = new Array(16384);;
     
 
-    var fileInputStream: AbFileInputStream
-;
+    var fileInputStream: AbFileInputStream;;
     
 
-    var size: number = fileBasicArrayList!.size()!;
-;
+    var size: number = fileBasicArrayList!.size()!;;
     
 
-    var current: number = 0;
-;
+    var current: number = 0;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var file: AbFile = fileBasicArrayList!.get(i) as AbFile;
-;
+    var file: AbFile = fileBasicArrayList!.get(i) as AbFile;;
     
 
                         if(file.isDirectory())
@@ -215,30 +205,25 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
             
     public unzip(path: string, zipFile: AbFile, fileName: string){
 
-    var buffer: number[] = new Array(16384);
-;
+    var buffer: number[] = new Array(16384);;
     
 
     var inputStream: ZipInputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             inputStream= new ZipInputStream(new AbFileInputStream(zipFile));
     
 
-    var zipEntry: ZipEntry
-;
+    var zipEntry: ZipEntry;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var fileUtil: FileUtil = FileUtil.getInstance()!;
-;
+    var fileUtil: FileUtil = FileUtil.getInstance()!;;
     
 
         while((zipEntry= inputStream!.getNextEntry()) != 
@@ -246,8 +231,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
                                 )
         {
 
-    var entryName: string = zipEntry!.getName()!;
-;
+    var entryName: string = zipEntry!.getName()!;;
     
 
                         if(zipEntry!.isDirectory())
@@ -258,8 +242,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
                                 
                         else {
                             
-    var entryFile: AbFile = new AbFile(path +entryName);
-;
+    var entryFile: AbFile = new AbFile(path +entryName);;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -282,8 +265,7 @@ stringBuffer!.append(entryFile!.getParent());
 this.logUtil!.putF(stringBuffer!.toString(), this, "unzip");
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(entryFile)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(entryFile)!;;
     
 fileUtil!.write(inputStream, dataOutputStream, buffer);
     

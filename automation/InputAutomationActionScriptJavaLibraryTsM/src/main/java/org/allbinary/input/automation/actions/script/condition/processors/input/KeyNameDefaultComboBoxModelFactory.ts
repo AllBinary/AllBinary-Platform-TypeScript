@@ -57,24 +57,20 @@ export class KeyNameDefaultComboBoxModelFactory
 
     public static getInstance(): DefaultComboBoxModel{
 
-    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
-;
+    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
     
 
-    var keyArray: Integer[] = KeySingletonFactory.getArray()!;
-;
+    var keyArray: Integer[] = KeySingletonFactory.getArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < keyArray!.length; index++)
+    var index: number = 0;index < keyArray!.length; index++)
         {
 
-    var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;
-;
+    var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;;
     
 defaultComboBoxModel!.addElement(keyAsString);
     
@@ -87,6 +83,7 @@ defaultComboBoxModel!.addElement(keyAsString);
                         return defaultComboBoxModel;
     
 }
+
 
 private constructor (){
 

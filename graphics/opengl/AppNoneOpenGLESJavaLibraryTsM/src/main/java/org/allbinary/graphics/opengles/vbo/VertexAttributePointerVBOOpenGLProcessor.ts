@@ -61,6 +61,7 @@ export class VertexAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenGL
     
 }
 
+
 public constructor (){
 
             super();

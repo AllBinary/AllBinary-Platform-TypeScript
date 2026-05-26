@@ -55,6 +55,7 @@ export class MouseActionScriptInputData
     public static MOVE_X: string = "MOUSE_ACTION_INPUT_MOVE_X";
 
     public static MOVE_Y: string = "MOUSE_ACTION_INPUT_MOVE_Y";
+
 private constructor (){
 
             super();

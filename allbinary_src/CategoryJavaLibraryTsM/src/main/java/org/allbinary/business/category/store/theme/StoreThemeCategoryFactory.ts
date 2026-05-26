@@ -77,7 +77,8 @@ export class StoreThemeCategoryFactory
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
@@ -99,8 +100,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -136,12 +136,10 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var level: number = CategoryUtil.getPathLevel(categoryAbPath)!;
-;
+    var level: number = CategoryUtil.getPathLevel(categoryAbPath)!;;
     
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, categoryAbPath) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, categoryAbPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -177,16 +175,13 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;;
     
 
-    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node));
-;
+    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node));;
     
 
-    var level: number = CategoryUtil.getPathLevel(categoryPath)!;
-;
+    var level: number = CategoryUtil.getPathLevel(categoryPath)!;;
     
 
 
@@ -222,8 +217,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -259,8 +253,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -296,8 +289,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -333,8 +325,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -370,8 +361,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -407,8 +397,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;;
     
 
 

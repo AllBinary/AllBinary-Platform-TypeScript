@@ -70,12 +70,10 @@ export class MediaUtil
 
     static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var propertyStringArray: string[] = bufferedImage!.getPropertyNames()!;
-;
+    var propertyStringArray: string[] = bufferedImage!.getPropertyNames()!;;
     
 
                         if(propertyStringArray != 
@@ -88,12 +86,10 @@ export class MediaUtil
 
 
                         for (
-    var index: number = 0;
-index < propertyStringArray!.length; index++)
+    var index: number = 0;index < propertyStringArray!.length; index++)
         {
 
-    var propertyObject: any = bufferedImage!.getProperty(propertyStringArray[index]!)!;
-;
+    var propertyObject: any = bufferedImage!.getProperty(propertyStringArray[index]!)!;;
     
 hashMap!.put(propertyStringArray[index]!, propertyObject!.toString());
     
@@ -112,6 +108,7 @@ hashMap!.put(propertyStringArray[index]!, propertyObject!.toString());
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -136,8 +133,7 @@ private constructor (){
                                     }
                                 
 
-    var bufferedImage: BufferedImage = ImageIOUtil.read(originalImageFile)!;
-;
+    var bufferedImage: BufferedImage = ImageIOUtil.read(originalImageFile)!;;
     
 
                         if(bufferedImage == 
@@ -158,8 +154,7 @@ private constructor (){
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = this.getImageBufferPropertyHashMap(bufferedImage)!;
-;
+    var hashMap: HashMap<any, any> = this.getImageBufferPropertyHashMap(bufferedImage)!;;
     
 this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFile()");
     
@@ -167,22 +162,18 @@ this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFi
                                     }
                                 
 
-    var imageFile: AbFile = new AbFile(category +newImageFileName);
-;
+    var imageFile: AbFile = new AbFile(category +newImageFileName);;
     
 imageFile!.createNewFile();
     
 
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-;
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var newBufferedImage: BufferedImage = imageUtil!.createBufferedImageForSave(bufferedImage, newWidth, newHeight)!;
-;
+    var newBufferedImage: BufferedImage = imageUtil!.createBufferedImageForSave(bufferedImage, newWidth, newHeight)!;;
     
 
-    var isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;
-;
+    var isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;;
     
 
                         if(!isWritten)
@@ -201,12 +192,10 @@ imageFile!.createNewFile();
                         
                                     {
                                     
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Get Path: ");
     

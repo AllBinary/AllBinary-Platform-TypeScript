@@ -59,7 +59,8 @@ export class LockablePaintable extends ItemPaintable {
 
     private readonly animation: Animation = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(LockedResources.getInstance()!.LOCKED_DEMO_GAME_FEATURE_RESOURCE)!.getInstance(0)!;
 
-    private readonly lockedIndex: number
+    private readonly lockedIndex: number;
+
 public constructor (lockedIndex: number){
 
             super();

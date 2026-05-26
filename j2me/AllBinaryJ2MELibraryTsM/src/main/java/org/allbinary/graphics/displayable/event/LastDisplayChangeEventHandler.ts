@@ -65,6 +65,7 @@ export class LastDisplayChangeEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -75,8 +76,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var displayChangeEventListener: DisplayChangeEventListener = (eventListenerInterface as DisplayChangeEventListener);
-;
+    var displayChangeEventListener: DisplayChangeEventListener = (eventListenerInterface as DisplayChangeEventListener);;
     
 displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEvent);
     

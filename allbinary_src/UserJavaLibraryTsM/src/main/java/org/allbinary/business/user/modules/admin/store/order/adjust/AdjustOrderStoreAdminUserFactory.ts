@@ -54,6 +54,7 @@ export class AdjustOrderStoreAdminUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

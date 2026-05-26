@@ -86,6 +86,7 @@ export class StaticPathGenerator
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
+
 protected constructor (){
 
             super();
@@ -104,28 +105,23 @@ protected constructor (){
             
     getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory, pathList: BasicArrayList): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = pathList!.size()!;
-;
+    var size: number = pathList!.size()!;;
     
 
-    var basicGeographicMapCellPosition: CellPosition
-;
+    var basicGeographicMapCellPosition: CellPosition;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition
-;
+    var geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 basicGeographicMapCellPosition= pathList!.get(index) as CellPosition;
     
@@ -148,22 +144,18 @@ list.add(geographicMapCellPosition);
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var pathCacheFactory: PathCacheFactory = PathCacheFactory.getInstance()!;
-;
+    var pathCacheFactory: PathCacheFactory = PathCacheFactory.getInstance()!;;
     
 
-    var mapIdInteger: Integer = geographicMapInterface!.getAllBinaryTiledLayer()!.getDataId()!;
-;
+    var mapIdInteger: Integer = geographicMapInterface!.getAllBinaryTiledLayer()!.getDataId()!;;
     
 
-    var list: BasicArrayList = pathCacheFactory!.getOrCreate(mapIdInteger)!;
-;
+    var list: BasicArrayList = pathCacheFactory!.getOrCreate(mapIdInteger)!;;
     
 
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
@@ -172,36 +164,29 @@ list.add(geographicMapCellPosition);
                                     list= new BasicArrayListD();
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var id: number = PathData.getInstance()!.OFFSET +mapIdInteger!.intValue();
-;
+    var id: number = PathData.getInstance()!.OFFSET +mapIdInteger!.intValue();;
     
 
-    var basicList: BasicArrayList = pathCacheFactory!.getOrCreate(smallIntegerSingletonFactory!.getAt(id))!;
-;
+    var basicList: BasicArrayList = pathCacheFactory!.getOrCreate(smallIntegerSingletonFactory!.getAt(id))!;;
     
 
-    var size: number = basicList!.size()!;
-;
+    var size: number = basicList!.size()!;;
     
 
-    var pathList: BasicArrayList
-;
+    var pathList: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index) as BasicArrayList);
     

@@ -66,6 +66,7 @@ export class InsertCssValidationView extends CssCustomizerView implements Valida
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -91,8 +92,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -146,8 +146,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 

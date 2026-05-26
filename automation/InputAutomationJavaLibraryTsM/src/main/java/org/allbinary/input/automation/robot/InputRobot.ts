@@ -75,7 +75,8 @@ export class InputRobot
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private robot: Robot
+    private robot: Robot;
+
 public constructor (graphicsDevice: GraphicsDevice){
 
             super();
@@ -106,8 +107,7 @@ public constructor (graphicsDevice: GraphicsDevice){
 
     public getMousePoint(): Point{
 
-    var point: Point = MouseInfo.getPointerInfo()!.getLocation()!;
-;
+    var point: Point = MouseInfo.getPointerInfo()!.getLocation()!;;
     
 
 
@@ -122,14 +122,12 @@ public constructor (graphicsDevice: GraphicsDevice){
             
     public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
 
-    var point: Point = PointHelper.getCenterPoint(rectangle)!;
-;
+    var point: Point = PointHelper.getCenterPoint(rectangle)!;;
     
 this.robot.mouseMove(point.x +x, point.y +y);
     
 
-    var message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;
-;
+    var message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;;
     
 this.logUtil!.putF(message, this, "moveMouseToTarget");
     
@@ -146,8 +144,7 @@ this.mouseMove(point.x, point.y);
 this.robot.mouseMove(x, y);
     
 
-    var message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;
-;
+    var message: string = new StringMaker().append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;;
     
 this.logUtil!.putF(message, this, "moveMouse");
     

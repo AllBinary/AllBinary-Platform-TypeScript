@@ -49,11 +49,12 @@ export class MathVector
          implements MathVectorInterface {
         
 
-    private magnitudeBasicDecimal: BasicDecimal
+    private magnitudeBasicDecimal: BasicDecimal;
 
-    private direction: number
+    private direction: number;
 
-    resultBasicDecimal: BasicDecimal
+    resultBasicDecimal: BasicDecimal;
+
 public constructor (magnitudeBasicDecimal: BasicDecimal, direction: number){
 
             super();

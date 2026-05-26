@@ -65,7 +65,8 @@ import { AllBinaryAdjustedHTMLImageRotationAnimation } from './AllBinaryAdjusted
 export class AllBinaryHTMLImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
-    readonly angleIncrement: number
+    readonly angleIncrement: number;
+
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                     
@@ -81,12 +82,10 @@ this.angleIncrement= angleIncrement;
             
     public getInstance(instanceId: number): Animation{
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-;
+    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;
-;
+    var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)

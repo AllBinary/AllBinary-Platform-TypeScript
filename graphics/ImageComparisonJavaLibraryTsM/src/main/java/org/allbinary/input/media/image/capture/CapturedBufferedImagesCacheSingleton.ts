@@ -80,20 +80,16 @@ export class CapturedBufferedImagesCacheSingleton
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";
-;
+    var STATIC_BLOCK: string = "Static Block";;
     
 
-    var instance: string = "CapturedBufferedImagesCacheSingleton";
-;
+    var instance: string = "CapturedBufferedImagesCacheSingleton";;
     
 
         try {
@@ -117,6 +113,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
                 }
             
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

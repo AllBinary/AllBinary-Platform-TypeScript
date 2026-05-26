@@ -68,6 +68,7 @@ export class AndroidMediaPlayerWrapperListener
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private androidMediaPlayerWrapper: AndroidMediaPlayerWrapper = AndroidMediaPlayerWrapper.NULL_ANDROID_MEDIA_PLAYER_WRAPPER;
+
 public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
 
             super();
@@ -78,8 +79,7 @@ public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
 this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
     
 
-    var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
-;
+    var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;;
     
 mediaPlayer!.setOnCompletionListener(this.mOnCompletionListener);
     
@@ -171,8 +171,7 @@ MediaPlayerOnCompletionListener = class
                                 
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF(new StringMaker().append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, AndroidMediaPlayerWrapperListener.ON_BUFFERING_UPDATE);
     
@@ -188,12 +187,10 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
                                 
     public onPrepared(mp: MediaPlayer){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE);
     
@@ -209,8 +206,7 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
                                 
     public onError(mp: MediaPlayer, what: number, extra: number): boolean{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, AndroidMediaPlayerWrapperListener.ON_ERROR);
     
@@ -232,12 +228,10 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
                                 
     public onCompletion(mp: MediaPlayer){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE);
     

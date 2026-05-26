@@ -57,16 +57,14 @@ export class FileWrapperUtil
 
         try {
             
-    var abFileArray: AbFile[] = new Array(files.length);
-;
+    var abFileArray: AbFile[] = new Array(files.length);;
     
 
 
 
 
                         for (
-    var index: number = files.length -1;
-index >= 0; index--)
+    var index: number = files.length -1;index >= 0; index--)
         {
 abFileArray[index]= new AbFile(files[index]! as File);
     

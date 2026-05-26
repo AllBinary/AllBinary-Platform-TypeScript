@@ -61,6 +61,7 @@ export class PaymentProcessorComponent extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -74,14 +75,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     public addDomNodeInterfaces(){
 
-    var paymentProcessorInterface: PaymentProcessorInterface = PaymentProcessorInterfaceFactory.getInstance()!.getInstance(this.getTransformInfoInterface())!;
-;
+    var paymentProcessorInterface: PaymentProcessorInterface = PaymentProcessorInterfaceFactory.getInstance()!.getInstance(this.getTransformInfoInterface())!;;
     
 paymentProcessorInterface!.process();
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 httpTransformInfoInterface!.getWeblisketSession()!.removeBasket();
     

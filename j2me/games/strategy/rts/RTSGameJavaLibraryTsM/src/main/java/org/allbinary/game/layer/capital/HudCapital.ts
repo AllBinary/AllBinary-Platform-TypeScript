@@ -47,7 +47,8 @@ import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/bas
 export class HudCapital extends Capital {
         
 
-    private capitalGraphic: NumberStringHud
+    private capitalGraphic: NumberStringHud;
+
 public constructor (moneyGraphic: NumberStringHud){
 
             super();

@@ -63,13 +63,13 @@ export class BasicEmail
          implements EmailInterface {
         
 
-    private email: AbEmail
+    private email: AbEmail;
+
 public constructor (emailInfo: EmailInfo, to: string){
 
             super();
         
-    var basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;
-;
+    var basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;;
     
 this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getSmtpServer(), basicEmailInfo!.getEmailServerConfigurationInterface()!.getAccountName(), to, basicEmailInfo!.getSubject(), basicEmailInfo!.getTextBody(), emailInfo!.getHtmlAttachment(), emailInfo!.getContentBase());
     

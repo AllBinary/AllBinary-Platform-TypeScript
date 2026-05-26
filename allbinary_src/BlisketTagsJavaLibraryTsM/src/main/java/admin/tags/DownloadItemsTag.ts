@@ -58,6 +58,7 @@ import { AbTagData } from './AbTagData.js';
 
 export class DownloadItemsTag extends TableTag {
         
+
 public constructor (){
 
             super();
@@ -88,8 +89,7 @@ this.setTagRequestHelperFactory(new DownloadItemsRequestHelperFactory());
                         
                                     {
                                     
-    var parentTag: Tag = this.getParent()!;
-;
+    var parentTag: Tag = this.getParent()!;;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
     

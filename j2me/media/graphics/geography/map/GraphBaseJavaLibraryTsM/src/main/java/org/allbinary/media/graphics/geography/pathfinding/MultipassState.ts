@@ -46,11 +46,11 @@ export class MultipassState
          {
         
 
-    public step: number= 0
+    public step: number= 0;
 
-    public iteration: number= 0
+    public iteration: number= 0;
 
-    public iteration2: number= 0
+    public iteration2: number= 0;
 
 }
                 

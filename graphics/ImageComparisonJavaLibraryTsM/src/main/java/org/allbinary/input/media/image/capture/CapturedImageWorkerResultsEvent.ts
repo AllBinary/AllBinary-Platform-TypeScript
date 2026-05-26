@@ -50,9 +50,10 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
 export class CapturedImageWorkerResultsEvent extends AllBinaryEventObject {
         
 
-    private readonly frame: Long
+    private readonly frame: Long;
 
-    private bufferedImage: BufferedImage
+    private bufferedImage: BufferedImage;
+
 public constructor (anyType: any = {}, frame: Long, bufferedImage: BufferedImage){
             super(anyType);
                     

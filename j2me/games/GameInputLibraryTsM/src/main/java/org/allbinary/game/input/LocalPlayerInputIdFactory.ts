@@ -77,6 +77,7 @@ export class LocalPlayerInputIdFactory
     private readonly playersInPlay: boolean[] = new Array(this.MAX_NUMBER_OF_PLAYERS);
 
     private totalDevicesMapped: number = 0;
+
 private constructor (){
 
             super();
@@ -85,8 +86,7 @@ private constructor (){
 
 
                         for (
-    var index: number = this.deviceIdToplayerId!.length -1;
-index >= 0; index--)
+    var index: number = this.deviceIdToplayerId!.length -1;index >= 0; index--)
         {
 this.deviceIdToplayerId[index]=  -1;
     
@@ -107,16 +107,14 @@ this.deviceIdToplayerId[index]=  -1;
 
     public getPlayerForDevice(deviceId: number): number{
 
-    var index: number= 0
-;
+    var index: number= 0;;
     
 
                         if(deviceId < this.MAX_FAST_DEVICEID)
                         
                                     {
                                     
-    var playerInputId: number = this.deviceIdToplayerId[deviceId]!;
-;
+    var playerInputId: number = this.deviceIdToplayerId[deviceId]!;;
     
 
                         if(playerInputId !=  -1)
@@ -196,16 +194,14 @@ this.logUtil!.putF(new StringMaker().append("Added DeviceId: ")!.appendint(devic
 
     public getTotalDevicesInPlay(): number{
 
-    var total: number = 0;
-;
+    var total: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = this.totalDevicesMapped -1;
-index >= 0; index--)
+    var index: number = this.totalDevicesMapped -1;index >= 0; index--)
         {
 
                         if(this.playersInPlay[index] == true)

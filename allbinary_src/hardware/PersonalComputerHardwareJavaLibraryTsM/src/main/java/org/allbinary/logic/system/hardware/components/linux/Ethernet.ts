@@ -50,7 +50,8 @@ export class Ethernet
          implements HardwareComponentInterface, EthernetInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

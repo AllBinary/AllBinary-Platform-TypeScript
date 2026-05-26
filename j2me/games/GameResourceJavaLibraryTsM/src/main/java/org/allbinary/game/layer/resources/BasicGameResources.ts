@@ -66,6 +66,7 @@ export class BasicGameResources
     public RESOURCE: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     public RESOURCE_DESTROY: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 protected constructor (){
 
             super();
@@ -76,8 +77,7 @@ protected constructor (){
 
         try {
             
-    var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.intValue()!;
-;
+    var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.intValue()!;;
     
 
                         if(scale > 1 && scale -1 < SIZE.length)
@@ -102,8 +102,7 @@ protected constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
@@ -116,12 +115,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
             
     append(ROOT: string, sizeString: string){
 
-    var DESTROY: string = "_destroy";
-;
+    var DESTROY: string = "_destroy";;
     
 
-    var string: string = this.getString()!;
-;
+    var string: string = this.getString()!;;
     
 BasicGameResources.stringBuffer!.delete(0, BasicGameResources.stringBuffer!.length());
     

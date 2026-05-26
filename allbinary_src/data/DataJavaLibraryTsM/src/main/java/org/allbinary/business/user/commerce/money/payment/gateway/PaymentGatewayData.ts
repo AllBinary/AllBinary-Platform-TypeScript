@@ -110,7 +110,8 @@ export class PaymentGatewayData
 
     public static readonly SPECIAL9: PaymentGatewayData = new PaymentGatewayData("SPECIAL9");
 
-    private key: string
+    private key: string;
+
 private constructor (value: string){
 
             super();

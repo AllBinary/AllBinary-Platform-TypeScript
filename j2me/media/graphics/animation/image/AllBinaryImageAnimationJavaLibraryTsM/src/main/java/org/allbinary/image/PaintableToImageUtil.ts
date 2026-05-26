@@ -61,12 +61,10 @@ export class PaintableToImageUtil
             
     public static getImage(paintableInterface: PaintableInterface, width: number, height: number): Image{
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(PaintableToImageUtil.instance.constructor.name.toString()!, width, height)!;
-;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(PaintableToImageUtil.instance.constructor.name.toString()!, width, height)!;;
     
 
-    var graphics: Graphics = image.getGraphics()!;
-;
+    var graphics: Graphics = image.getGraphics()!;;
     
 paintableInterface!.paint(graphics);
     

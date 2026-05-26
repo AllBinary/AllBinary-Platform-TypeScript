@@ -52,13 +52,14 @@ import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/colo
 export class RectangleFilledAdjustedAnimation extends Animation implements ColorCompositeInterface {
         
 
-    private width: number
+    private width: number;
 
-    private height: number
+    private height: number;
 
-    private offsetX: number
+    private offsetX: number;
 
-    private offsetY: number
+    private offsetY: number;
+
 public constructor (width: number, height: number, offsetX: number, offsetY: number, basicColor: BasicColor){
 
             super();

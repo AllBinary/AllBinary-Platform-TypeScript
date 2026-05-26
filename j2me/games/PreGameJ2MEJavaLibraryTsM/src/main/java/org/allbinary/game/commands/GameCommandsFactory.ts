@@ -119,6 +119,7 @@ export class GameCommandsFactory
     public readonly FEATURE_UPDATE: Command = new Command("Feature Update", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
     public readonly BUY_COMMAND: Command = new Command("BUY", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
+
 protected constructor (){
 
             super();

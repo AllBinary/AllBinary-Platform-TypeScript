@@ -57,9 +57,10 @@ export class StartIntermissionProcessor extends Processor {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private gameCanvas: AllBinaryGameCanvas
+    private gameCanvas: AllBinaryGameCanvas;
 
     private readonly WAIT: number = 5000;
+
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();

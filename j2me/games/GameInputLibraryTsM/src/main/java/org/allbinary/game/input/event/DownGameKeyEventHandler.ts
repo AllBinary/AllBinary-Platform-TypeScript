@@ -70,8 +70,7 @@ export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
 
     public getInstanceForDevice(deviceId: number): DownGameKeyEventHandlerBase{
 
-    var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
-;
+    var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;;
     
 
 
@@ -91,6 +90,7 @@ export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
     
 }
 
+
 private constructor (){
 
             super();
@@ -105,8 +105,7 @@ super.removeAllListeners();
 
 
                         for (
-    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;
-index >= 0; index--)
+    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 DownGameKeyEventHandler.instanceArray[index]!.removeAllListeners();
     
@@ -123,8 +122,7 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
 
                         for (
-    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;
-index >= 0; index--)
+    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 DownGameKeyEventHandler.instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
     
@@ -142,8 +140,7 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;
-index >= 0; index--)
+    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 DownGameKeyEventHandler.instanceArray[index]!.removeListener(eventListenerInterface);
     

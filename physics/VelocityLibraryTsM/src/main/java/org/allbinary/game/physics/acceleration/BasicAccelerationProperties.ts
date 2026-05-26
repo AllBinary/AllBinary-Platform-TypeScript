@@ -46,9 +46,10 @@ export class BasicAccelerationProperties
          {
         
 
-    private forward: number= 0
+    private forward: number= 0;
 
-    private reverse: number= 0
+    private reverse: number= 0;
+
 public constructor (forward: number, reverse: number){
 
             super();

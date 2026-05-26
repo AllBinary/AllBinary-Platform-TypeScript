@@ -98,11 +98,12 @@ export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondit
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private colorAtActionScriptConditionJPanel: ColorAtActionScriptConditionJPanel
+    private colorAtActionScriptConditionJPanel: ColorAtActionScriptConditionJPanel;
 
-    private point: Point
+    private point: Point;
 
     private colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;
+
 public constructor (node: Node){
             super(ColorAtActionScriptCondition.NAME, node);
                     
@@ -112,8 +113,7 @@ public constructor (node: Node){
 this.point= new Point(0, 0);
     
 
-    var actionNode: Node = DomSearchHelper.getNode(ColorAtActionScriptConditionData.NAME, node.getChildNodes())!;
-;
+    var actionNode: Node = DomSearchHelper.getNode(ColorAtActionScriptConditionData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -122,28 +122,24 @@ this.point= new Point(0, 0);
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;
-;
+    var nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;
-;
+    var childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_X) == 0)
                         
                                     {
                                     
-    var locationX: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var locationX: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.point.x= Integer.valueOf(locationX);
     
@@ -155,8 +151,7 @@ this.point.x= Integer.valueOf(locationX);
                         
                                     {
                                     
-    var locationY: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var locationY: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.point.y= Integer.valueOf(locationY);
     
@@ -168,8 +163,7 @@ this.point.y= Integer.valueOf(locationY);
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMinRed(string.valueOf());
     
@@ -181,8 +175,7 @@ this.getColorRangeInterface()!.setMinRed(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMaxRed(string.valueOf());
     
@@ -194,8 +187,7 @@ this.getColorRangeInterface()!.setMaxRed(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMinGreen(string.valueOf());
     
@@ -207,8 +199,7 @@ this.getColorRangeInterface()!.setMinGreen(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMaxGreen(string.valueOf());
     
@@ -220,8 +211,7 @@ this.getColorRangeInterface()!.setMaxGreen(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMinBlue(string.valueOf());
     
@@ -233,8 +223,7 @@ this.getColorRangeInterface()!.setMinBlue(string.valueOf());
                         
                                     {
                                     
-    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var string: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getColorRangeInterface()!.setMaxBlue(string.valueOf());
     
@@ -258,6 +247,7 @@ this.getColorRangeInterface()!.setMaxBlue(string.valueOf());
 this.init();
     
 }
+
 
 public constructor (){
             super(ColorAtActionScriptCondition.NAME);
@@ -302,8 +292,7 @@ this.colorAtActionScriptConditionJPanel!.getColorAtActionJDialog()!.setVisible(t
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(ColorAtActionScriptConditionData.LOCATION_X, Integer.toString(this.getPoint()!.x));
     
@@ -336,8 +325,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;
-;
+    var node: Node = super.toXmlNode(document)!;;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionScriptConditionData.NAME, this.toHashMap()));
     
@@ -354,28 +342,22 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
             
     public shouldProcess(frame: number): boolean{
 
-    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (getInstance as AutomaticCacheInterface).get((frame).toLong()) as BufferedImageFrameCacheable;
-;
+    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (getInstance as AutomaticCacheInterface).get((frame).toLong()) as BufferedImageFrameCacheable;;
     
 
-    var bufferedImage: BufferedImage = capturedBufferedImageCacheable!.getBufferedImage()!;
-;
+    var bufferedImage: BufferedImage = capturedBufferedImageCacheable!.getBufferedImage()!;;
     
 
-    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;
-;
+    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;;
     
 
-    var colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y))!;
-;
+    var colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y))!;;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
-;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
     
 
-    var color: Color = colorCacheable!.getColor()!;
-;
+    var color: Color = colorCacheable!.getColor()!;;
     
 
                         if(this.colorRangeInterface!.isInRange(color))
@@ -401,8 +383,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
 
     public log(){
 
-    var message: string = new StringMaker().append("getPoint(): ")!.append(this.getPoint()!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.append(this.getColorRangeInterface()!.toString())!.toString()!;
-;
+    var message: string = new StringMaker().append("getPoint(): ")!.append(this.getPoint()!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.append(this.getColorRangeInterface()!.toString())!.toString()!;;
     
 this.logUtil!.putF(message, this, "log");
     

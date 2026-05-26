@@ -64,6 +64,7 @@ export class EditValidationView extends UserView implements ValidationComponentI
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -180,8 +181,7 @@ this.user= UserEntityFactory.getInstance()!.getUser(this.getWeblisketSession()!.
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(UserName.getInstance()!.isValid(this.getWeblisketSession()!.getUserName()) == Boolean.FALSE)

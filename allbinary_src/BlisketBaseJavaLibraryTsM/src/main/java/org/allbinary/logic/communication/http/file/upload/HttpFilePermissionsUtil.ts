@@ -68,8 +68,7 @@ export class HttpFilePermissionsUtil
             
     public create(path: AbPath){
 
-    var file: AbFile = new AbFile(path);
-;
+    var file: AbFile = new AbFile(path);;
     
 
                         if(!file.isFile())

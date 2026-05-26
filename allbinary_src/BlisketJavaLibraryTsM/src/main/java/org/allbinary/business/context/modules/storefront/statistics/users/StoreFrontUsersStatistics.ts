@@ -68,47 +68,41 @@ export class StoreFrontUsersStatistics
          implements StoreFrontUsersStatisticsInterface {
         
 
-    private totalNumberOfUsers: Long
+    private totalNumberOfUsers: Long;
 
-    private totalUsersByRoleHashMap: HashMap<any, any>
+    private totalUsersByRoleHashMap: HashMap<any, any>;
+
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
         this.totalUsersByRoleHashMap= new HashMap<any, any>();
     
 
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-;
+    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 
-    var userVector: Vector = userEntityInterface!.getCustomers()!;
-;
+    var userVector: Vector = userEntityInterface!.getCustomers()!;;
     
 this.totalNumberOfUsers= new Long(userVector!.length);
     
 
-    var size: number = userVector!.length!;
-;
+    var size: number = userVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var userInterface: UserInterface = userVector!.get(index) as UserInterface;
-;
+    var userInterface: UserInterface = userVector!.get(index) as UserInterface;;
     
 
-    var nextUserRole: UserRole = userInterface!.getRole()!;
-;
+    var nextUserRole: UserRole = userInterface!.getRole()!;;
     
 
-    var currentNumberOfUsersForRole: Long = this.getNewTotal(nextUserRole)!;
-;
+    var currentNumberOfUsersForRole: Long = this.getNewTotal(nextUserRole)!;;
     
 this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
     
@@ -119,8 +113,7 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
 
     getNewTotal(userRole: UserRole): Long{
 
-    var numberOfUsersForRoleLong: Long = this.totalUsersByRoleHashMap!.get(userRole) as Long;
-;
+    var numberOfUsersForRoleLong: Long = this.totalUsersByRoleHashMap!.get(userRole) as Long;;
     
 
                         if(numberOfUsersForRoleLong == 
@@ -154,8 +147,7 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
 
     public getNumberOfUsersByRole(role: string): Long{
 
-    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(role) as Long;
-;
+    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(role) as Long;;
     
 
 
@@ -168,41 +160,34 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(StoreFrontUsersStatisticsData.getInstance()!.NUMBEROFUSERS, this.getNumberOfUsers()!.toString());
     
 
-    var setOfUserRoles: Set = this.totalUsersByRoleHashMap!.keys()!;
-;
+    var setOfUserRoles: Set = this.totalUsersByRoleHashMap!.keys()!;;
     
 
-    var nextUserRole: UserRole
-;
+    var nextUserRole: UserRole;;
     
 
-    var userRoleArray: any[] = setOfUserRoles!.toArray()!;
-;
+    var userRoleArray: any[] = setOfUserRoles!.toArray()!;;
     
 
     var size: number = userRoleArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 nextUserRole= userRoleArray[index]! as UserRole;
     
 
-    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(nextUserRole) as Long;
-;
+    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(nextUserRole) as Long;;
     
 hashMap!.put(nextUserRole!.toString(), totalForRole!.toString());
     

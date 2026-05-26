@@ -66,6 +66,7 @@ export class NewCssValidationView extends CssCustomizerView implements Validatio
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -134,8 +135,7 @@ this.styleValidationInterface= new GenericCssStyleValidation();
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.styleValidationInterface!.validationInfo());
     

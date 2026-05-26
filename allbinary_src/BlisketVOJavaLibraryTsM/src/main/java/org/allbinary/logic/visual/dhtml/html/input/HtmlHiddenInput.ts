@@ -45,6 +45,7 @@ export class HtmlHiddenInput
             extends Object
          {
         
+
 public constructor (){
 
             super();

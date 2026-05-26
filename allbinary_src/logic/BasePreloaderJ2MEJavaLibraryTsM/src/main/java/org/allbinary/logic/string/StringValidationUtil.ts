@@ -64,6 +64,7 @@ export class StringValidationUtil
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -95,20 +96,17 @@ private constructor (){
 
     public isNumber(value: string): boolean{
 
-    var numberOfDecimalPoints: number = 0;
-;
+    var numberOfDecimalPoints: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < value.length; index++)
+    var index: number = 0;index < value.length; index++)
         {
 
-    var digit: string = value[index]!;
-;
+    var digit: string = value[index]!;;
     
 
                         if(!this.isNumberFromChar(digit) && digit != '.')

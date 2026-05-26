@@ -61,8 +61,7 @@ import { PlayN } from '../../../../../playn/core/PlayN.js';
 
     /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){
 
-    var className: string = PreLogUtil.getClassName(anyType)!;
-;
+    var className: string = PreLogUtil.getClassName(anyType)!;;
     
 
                         if(className == 
@@ -78,8 +77,7 @@ import { PlayN } from '../../../../../playn/core/PlayN.js';
 className= new StringMaker().append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
     
 
-    var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;;
     
 PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
     
@@ -90,8 +88,7 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
 
     /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
-    var className: string = PreLogUtil.getClassName(anyType)!;
-;
+    var className: string = PreLogUtil.getClassName(anyType)!;;
     
 
                         if(className == 
@@ -107,8 +104,7 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
 className= new StringMaker().append(className)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.append(StringUtil.getInstance()!.toString(anyType))!.toString();
     
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Throwable);
     
@@ -117,8 +113,7 @@ PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Throwable);
 
     /*actual*/ public static putS(specialMessage: string, className: string, functionName: string){
 
-    var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;;
     
 PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
     
@@ -127,8 +122,7 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
 
     /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Throwable);
     
@@ -145,6 +139,7 @@ PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Throwable);
 
                 //native - END
                 
+
 public constructor (){
 
             super();

@@ -69,15 +69,16 @@ import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEve
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 
-    private static index: number
+    private static index: number;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private running: boolean= false
+    private running: boolean= false;
 
-    private screenScavangerRobot: ScreenScavangerRobot
+    private screenScavangerRobot: ScreenScavangerRobot;
+
 public constructor (){
 
             super();
@@ -120,8 +121,7 @@ this.running= running;
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 
         while(isRunning())
@@ -129,20 +129,17 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var bufferedImage: BufferedImage = this.screenScavangerRobot!.getScreenAsBufferedImages()[0]!;
-;
+    var bufferedImage: BufferedImage = this.screenScavangerRobot!.getScreenAsBufferedImages()[0]!;;
     
 
-    var frame: Long = new Long(index);
-;
+    var frame: Long = new Long(index);;
     
 ScreenCaptureImagesWorker.index++;
     
 CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCacheable(bufferedImage, frame));
     
 
-    var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
-;
+    var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);;
     
 fireEvent(capturedImageEvent);
     

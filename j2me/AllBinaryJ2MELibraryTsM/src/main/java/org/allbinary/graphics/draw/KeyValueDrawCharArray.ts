@@ -52,17 +52,18 @@ export class KeyValueDrawCharArray
          {
         
 
-    private readonly LABEL: string
+    private readonly LABEL: string;
 
-    private readonly labelWidth: number
+    private readonly labelWidth: number;
 
-    private readonly labelX: number
+    private readonly labelX: number;
 
-    private valueX: number
+    private valueX: number;
 
     private value: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
 
-    private len: number= 0
+    private len: number= 0;
+
 public constructor (label: string, x: number){
 
             super();

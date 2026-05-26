@@ -80,6 +80,7 @@ export class NullIndexedAnimationFactory
 
                                 }
                             ;
+
 private constructor (){
 
             super();

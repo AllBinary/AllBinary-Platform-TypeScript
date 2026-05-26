@@ -60,7 +60,8 @@ export class StoreFrontAdvertisementsStatisticsView
          implements DomNodeInterface {
         
 
-    private storeFrontAdvertisementsStatisticsInterface: StoreFrontAdvertisementsStatisticsInterface
+    private storeFrontAdvertisementsStatisticsInterface: StoreFrontAdvertisementsStatisticsInterface;
+
 public constructor (storeFrontAdvertisementsStatisticsInterface: StoreFrontAdvertisementsStatisticsInterface){
 
             super();
@@ -73,12 +74,10 @@ public constructor (storeFrontAdvertisementsStatisticsInterface: StoreFrontAdver
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.storeFrontAdvertisementsStatisticsInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.storeFrontAdvertisementsStatisticsInterface!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontAdvertisementsStatisticsData.getInstance()!.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontAdvertisementsStatisticsData.getInstance()!.NAME, hashMap)!;;
     
 
 

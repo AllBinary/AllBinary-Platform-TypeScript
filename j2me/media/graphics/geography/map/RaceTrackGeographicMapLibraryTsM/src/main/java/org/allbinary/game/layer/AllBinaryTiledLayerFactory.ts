@@ -68,12 +68,10 @@ export class AllBinaryTiledLayerFactory
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
 
-    var allbinaryTiledLayer: AllBinaryTiledLayer
-;
+    var allbinaryTiledLayer: AllBinaryTiledLayer;;
     
 
-    var tiledLayer: TiledLayer = new TiledLayerFactory().getInstance(raceTrackData)!;
-;
+    var tiledLayer: TiledLayer = new TiledLayerFactory().getInstance(raceTrackData)!;;
     
 allbinaryTiledLayer= new AllBinaryJ2METiledLayer(raceTrackData!.getId(), tiledLayer, raceTrackData!.getMapArray(), BasicColorFactory.getInstance()!.RED.intValue());
     
@@ -92,16 +90,13 @@ allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray());
             
     public getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer{
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var tiledLayer: TiledLayer = new TiledLayerFactory().getMiniInstance(raceTrackData)!;
-;
+    var tiledLayer: TiledLayer = new TiledLayerFactory().getMiniInstance(raceTrackData)!;;
     
 
-    var allbinaryTiledLayer: AllBinaryTiledLayer = new AllBinaryJ2METiledLayer(smallIntegerSingletonFactory!.getAt(raceTrackData!.getId()!.intValue() +100 +1), tiledLayer, raceTrackData!.getMapArray(), BasicColorFactory.getInstance()!.RED.intValue());
-;
+    var allbinaryTiledLayer: AllBinaryTiledLayer = new AllBinaryJ2METiledLayer(smallIntegerSingletonFactory!.getAt(raceTrackData!.getId()!.intValue() +100 +1), tiledLayer, raceTrackData!.getMapArray(), BasicColorFactory.getInstance()!.RED.intValue());;
     
 allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray());
     

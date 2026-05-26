@@ -66,12 +66,10 @@ export class EarlySoundsFactory extends BaseSoundsFactory {
             
     public getSoundInterfaceArray(): Sound[]{
 
-    var soundInterfaceArray: Sound[] = new Array(2);
-;
+    var soundInterfaceArray: Sound[] = new Array(2);;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 soundInterfaceArray[index++]= SelectSound.getInstance();
     

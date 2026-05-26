@@ -72,6 +72,7 @@ export class FullTouchButton extends TouchButton {
     
 }
 
+
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
             super(touchButtonInput, animationInterface, hintAnimationInterface, rawRectangle, cellPosition, xBorder, yBorder);
                     
@@ -85,22 +86,18 @@ public constructor (touchButtonInput: TouchButtonInput, animationInterface: Anim
 
         try {
             
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var x: number = this.rawRectangle!.getWidth() *this.cellPositionP!.getColumn();
-;
+    var x: number = this.rawRectangle!.getWidth() *this.cellPositionP!.getColumn();;
     
 
-    var y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();
-;
+    var y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();;
     
 this.rectangleP= new Rectangle(pointFactory!.createXY(x, y), this.rawRectangle!.getWidth() +(2 *this.xBorder), this.rawRectangle!.getHeight() +(2 *this.yBorder));
     
 
-    var point: GPoint = this.rectangleP!.getPoint()!;
-;
+    var point: GPoint = this.rectangleP!.getPoint()!;;
     
 this.animationX= point.getX() +this.xBorder;
     

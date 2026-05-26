@@ -67,6 +67,7 @@ export class RaceTrackAdjacentDropLayerFactory
 
 
     private list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();

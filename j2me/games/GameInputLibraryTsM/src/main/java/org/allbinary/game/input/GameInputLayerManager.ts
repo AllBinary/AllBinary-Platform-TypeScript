@@ -47,6 +47,7 @@ import { LayerManagerNoDebug } from '../../../../org/allbinary/layer/LayerManage
         
 export class GameInputLayerManager extends LayerManager {
         
+
 public constructor (){
             super(LayerManagerNoDebug.getInstance());
                     

@@ -61,11 +61,12 @@ import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 export class BasicConstantVelocityMovement extends Movement implements VelocityInterfaceCompositeInterface {
         
 
-    private velocityProperties: BasicVelocityProperties
+    private velocityProperties: BasicVelocityProperties;
 
     private speedBasicDecimal: BasicDecimal = BasicDecimal.ZERO_BIGDECIMAL;
 
     private readonly axisMathVectorUtil: AxisMathVectorUtil = AxisMathVectorUtil.getInstance()!;
+
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
 
             super();
@@ -80,8 +81,7 @@ this.velocityProperties= velocityProperties;
 this.speedBasicDecimal= speedBasicDecimal;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 this.velocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFactory!.getAt(angle), angleFactory!.getAt(otherAngle));
     
@@ -90,20 +90,16 @@ this.velocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFacto
 
     public moveOutsideRadius(layer: AllBinaryLayer, radius: number, angle: number, otherAngle: number){
 
-    var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
-;
+    var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;;
     
 
-    var xVector: number = Math.round((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));
-;
+    var xVector: number = Math.round((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
     
 
-    var yVector: number = Math.round((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));
-;
+    var yVector: number = Math.round((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
     
 
-    var zVector: number = Math.round((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));
-;
+    var zVector: number = Math.round((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));;
     
 layer.moveDXYZ(xVector, yVector, zVector);
     

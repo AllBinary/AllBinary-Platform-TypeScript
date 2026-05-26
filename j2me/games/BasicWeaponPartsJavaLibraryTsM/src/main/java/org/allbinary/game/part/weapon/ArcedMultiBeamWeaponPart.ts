@@ -65,9 +65,10 @@ import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js'
 export class ArcedMultiBeamWeaponPart extends BasicWeaponPart {
         
 
-    private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool
+    private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool;
 
-    private readonly total: number
+    private readonly total: number;
+
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
             super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
                     
@@ -87,28 +88,23 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
 
-    var increment: number = ((this.total -1) /this.TOTAL_ANGLE);
-;
+    var increment: number = ((this.total -1) /this.TOTAL_ANGLE);;
     
 
-    var minAngle: number = (angle -((increment *this.total)>>1));
-;
+    var minAngle: number = (angle -((increment *this.total)>>1));;
     
 
-    var next: number = 0;
-;
+    var next: number = 0;;
     
 
-    var weaponLayer: WeaponLayer
-;
+    var weaponLayer: WeaponLayer;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.total; index++)
+    var index: number = 0;index < this.total; index++)
         {
 weaponLayer= this.weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, Math.round((minAngle +increment)), Math.round(otherAngle), weaponProperties, scoreableInterface);
     

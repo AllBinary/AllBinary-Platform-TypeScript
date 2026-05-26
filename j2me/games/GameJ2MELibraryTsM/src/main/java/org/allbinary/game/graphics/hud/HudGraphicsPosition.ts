@@ -52,9 +52,10 @@ export class HudGraphicsPosition
 
     public static readonly NULL_HUD_GRAPHICS_POSITION: HudGraphicsPosition = new HudGraphicsPosition(PointFactory.getInstance()!.ZERO_ZERO, 9);
 
-    private anchor: number= 0
+    private anchor: number= 0;
 
     private point: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
+
 public constructor (point: GPoint, anchor: number){
 
             super();

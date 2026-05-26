@@ -98,24 +98,20 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
 
     public init(){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             PreLogUtil.put("Compound Motion Gestures", this, commonStrings!.INIT);
     
 
-    var motionGestureConfiguration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
-;
+    var motionGestureConfiguration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;;
     
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-;
+    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 list.add(touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT);
     

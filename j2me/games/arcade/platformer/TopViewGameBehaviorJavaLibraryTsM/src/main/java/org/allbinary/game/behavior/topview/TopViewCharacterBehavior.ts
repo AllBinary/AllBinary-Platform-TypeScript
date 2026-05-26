@@ -73,20 +73,17 @@ export class TopViewCharacterBehavior
     public hasSolidBlock(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[]): boolean{
 
     var size: number = geographicMapInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var basicTopViewGeographicMapCellTypeFactory: BasicTopViewGeographicMapCellTypeFactory
-;
+    var basicTopViewGeographicMapCellTypeFactory: BasicTopViewGeographicMapCellTypeFactory;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory() as BasicTopViewGeographicMapCellTypeFactory;
     

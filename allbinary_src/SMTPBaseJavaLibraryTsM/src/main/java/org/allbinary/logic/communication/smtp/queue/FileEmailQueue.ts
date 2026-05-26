@@ -48,7 +48,8 @@ export class FileEmailQueue
          {
         
 
-    private domDocumentQueueInterface: DomDocumentQueueInterface
+    private domDocumentQueueInterface: DomDocumentQueueInterface;
+
 public constructor (){
 
             super();

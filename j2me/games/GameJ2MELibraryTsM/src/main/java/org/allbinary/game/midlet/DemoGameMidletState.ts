@@ -45,6 +45,7 @@ export class DemoGameMidletState
             extends Object
          {
         
+
 public constructor (){
 
             super();

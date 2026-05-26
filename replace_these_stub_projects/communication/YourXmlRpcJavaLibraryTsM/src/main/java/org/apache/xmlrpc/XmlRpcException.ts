@@ -31,6 +31,7 @@
         
 export class XmlRpcException extends Exception {
         
+
 public constructor (code: number, message: string){
             super(message);
                     

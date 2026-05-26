@@ -66,9 +66,10 @@ export class ShippingMethods
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private shippingVector: Vector
+    private shippingVector: Vector;
 
-    private defaultShippingMethodInterface: ShippingInterface
+    private defaultShippingMethodInterface: ShippingInterface;
+
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
             super();
@@ -93,20 +94,17 @@ this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFront
             
     public getShippingInterface(name: string): ShippingInterface{
 
-    var shipping: ShippingInterface
-;
+    var shipping: ShippingInterface;;
     
 
-    var size: number = this.shippingVector!.length!;
-;
+    var size: number = this.shippingVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 shipping= this.shippingVector!.get(index) as ShippingInterface;
     
@@ -121,8 +119,7 @@ shipping= this.shippingVector!.get(index) as ShippingInterface;
 }
 
 
-    var error: string = "Error Finding Shipping: " +name;
-;
+    var error: string = "Error Finding Shipping: " +name;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SHIPPINGERROR))

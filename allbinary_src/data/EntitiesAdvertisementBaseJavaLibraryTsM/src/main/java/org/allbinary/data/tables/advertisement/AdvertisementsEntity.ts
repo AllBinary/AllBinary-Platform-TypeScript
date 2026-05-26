@@ -74,6 +74,7 @@ export class AdvertisementsEntity extends AbSqlBean implements AdvertisementsEnt
     readonly tableName: string = "advertisements";
 
     private readonly _INDEX: string = "_index";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -119,34 +120,28 @@ this.setTableName(this.tableName);
 
     public get(storeName: string): Vector{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var hashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
-    var size: number = hashMapVector!.length!;
-;
+    var size: number = hashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;
-;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;;
     
 }
 
@@ -161,16 +156,14 @@ index < size; index++)
 
     public get(storeName: string, advertismentName: string): AdvertisementInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 keysAndValues!.put(AdvertisementData.getInstance()!.NAME, advertismentName);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
 
@@ -183,12 +176,10 @@ keysAndValues!.put(AdvertisementData.getInstance()!.NAME, advertismentName);
 
     public createTableStatement(): string{
 
-    var advertisementData: AdvertisementData = AdvertisementData.getInstance()!;
-;
+    var advertisementData: AdvertisementData = AdvertisementData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -207,8 +198,7 @@ stringBuffer!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CH
 
     public createTable(): string{
 
-    var returnStr: string = super.createTable(this.createTableStatement())!;
-;
+    var returnStr: string = super.createTable(this.createTableStatement())!;;
     
 
 

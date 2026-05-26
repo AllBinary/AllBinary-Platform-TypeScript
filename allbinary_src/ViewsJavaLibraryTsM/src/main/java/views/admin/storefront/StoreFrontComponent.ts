@@ -60,7 +60,8 @@ export class StoreFrontComponent extends HttpStoreComponentView {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    newStoreFrontInterface: StoreFrontInterface
+    newStoreFrontInterface: StoreFrontInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

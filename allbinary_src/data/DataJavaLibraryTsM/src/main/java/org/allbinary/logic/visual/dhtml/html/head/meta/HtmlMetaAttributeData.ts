@@ -46,9 +46,10 @@ export class HtmlMetaAttributeData
          {
         
 
-    private id: number
+    private id: number;
 
-    private name: string
+    private name: string;
+
 public constructor (id: number, value: string){
 
             super();

@@ -81,15 +81,16 @@ export class ShippingAddressHelper extends BasicTable {
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private userName: string
+    private userName: string;
 
-    private streetAddress: StreetAddress
+    private streetAddress: StreetAddress;
 
-    private readonly portion: Portion
+    private readonly portion: Portion;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -127,8 +128,7 @@ this.streetAddress= new StreetAddress(this.request);
 
         try {
             
-    var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).drop()!;
-;
+    var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).drop()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -150,8 +150,7 @@ this.streetAddress= new StreetAddress(this.request);
 } catch(e) 
             {
 
-    var error: string = "Failed to drop Admin table";
-;
+    var error: string = "Failed to drop Admin table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -177,8 +176,7 @@ this.streetAddress= new StreetAddress(this.request);
 
         try {
             
-    var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).createTable()!;
-;
+    var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -200,8 +198,7 @@ this.streetAddress= new StreetAddress(this.request);
 } catch(e) 
             {
 
-    var error: string = "Failed to create user table";
-;
+    var error: string = "Failed to create user table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -227,12 +224,10 @@ this.streetAddress= new StreetAddress(this.request);
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), portion)!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -254,8 +249,7 @@ this.streetAddress= new StreetAddress(this.request);
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -281,12 +275,10 @@ this.streetAddress= new StreetAddress(this.request);
 
         try {
             
-    var success: string = "Backup Successful";
-;
+    var success: string = "Backup Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -308,8 +300,7 @@ this.streetAddress= new StreetAddress(this.request);
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -335,8 +326,7 @@ this.streetAddress= new StreetAddress(this.request);
 
         try {
             
-    var success: string = "Successfully Added Shipping Address";
-;
+    var success: string = "Successfully Added Shipping Address";;
     
 ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress);
     
@@ -360,8 +350,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 } catch(e) 
             {
 
-    var error: string = "Failed to add Shipping streetAddress";
-;
+    var error: string = "Failed to add Shipping streetAddress";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -387,8 +376,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 
         try {
             
-    var success: string = "Successfully Updated Shipping Address";
-;
+    var success: string = "Successfully Updated Shipping Address";;
     
 ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress);
     
@@ -412,8 +400,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 } catch(e) 
             {
 
-    var error: string = "Failed update of a Users Shipping Address Table";
-;
+    var error: string = "Failed update of a Users Shipping Address Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -439,8 +426,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 
         try {
             
-    var streetAddress: StreetAddress = BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;
-;
+    var streetAddress: StreetAddress = BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;;
     
 
                         if(streetAddress != 
@@ -474,8 +460,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 } catch(e) 
             {
 
-    var error: string = "Failed Setting Shipping address to Billing Address";
-;
+    var error: string = "Failed Setting Shipping address to Billing Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -501,8 +486,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 
         try {
             
-    var success: string = "Successfully Removed Shipping Address";
-;
+    var success: string = "Successfully Removed Shipping Address";;
     
 ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
     
@@ -526,8 +510,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 } catch(e) 
             {
 
-    var error: string = "Failed to remove Shipping Address";
-;
+    var error: string = "Failed to remove Shipping Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -553,8 +536,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 
         try {
             
-    var success: string = "Successfully Set Shipping Address";
-;
+    var success: string = "Successfully Set Shipping Address";;
     
 ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId());
     
@@ -578,8 +560,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
 } catch(e) 
             {
 
-    var error: string = "Failed to set Shipping Address";
-;
+    var error: string = "Failed to set Shipping Address";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

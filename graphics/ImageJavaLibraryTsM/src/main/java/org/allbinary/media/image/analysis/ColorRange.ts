@@ -54,17 +54,18 @@ export class ColorRange
          implements ColorRangeInterface {
         
 
-    private minRed: number
+    private minRed: number;
 
-    private maxRed: number
+    private maxRed: number;
 
-    private minGreen: number
+    private minGreen: number;
 
-    private maxGreen: number
+    private maxGreen: number;
 
-    private minBlue: number
+    private minBlue: number;
 
-    private maxBlue: number
+    private maxBlue: number;
+
 public constructor (){
 
             super();
@@ -208,8 +209,7 @@ this.maxBlue= maxBlue;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("getMinRed(): ");
     

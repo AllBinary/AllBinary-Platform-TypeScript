@@ -64,28 +64,24 @@ export class CssPropertiesValidationFactory
             
     public static getInstance(nodeList: NodeList): Vector{
 
-    var propertiesVector: Vector = new Vector();
-;
+    var propertiesVector: Vector = new Vector();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeName()!.compareTo(CssPropertyData.getInstance()!.NAME) == 0)
                         
                                     {
                                     
-    var cssPropertyValidationInterface: ValidationInterface = CssPropertyValidationFactory.getInstance(node) as ValidationInterface;
-;
+    var cssPropertyValidationInterface: ValidationInterface = CssPropertyValidationFactory.getInstance(node) as ValidationInterface;;
     
 propertiesVector!.add(cssPropertyValidationInterface);
     
@@ -105,8 +101,7 @@ propertiesVector!.add(cssPropertyValidationInterface);
 
     public static getInstance(hashMap: HashMap<any, any>): Vector{
 
-    var styles: Vector = new Vector();
-;
+    var styles: Vector = new Vector();;
     
 
 
@@ -115,6 +110,7 @@ propertiesVector!.add(cssPropertyValidationInterface);
                         return styles;
     
 }
+
 
 private constructor (){
 

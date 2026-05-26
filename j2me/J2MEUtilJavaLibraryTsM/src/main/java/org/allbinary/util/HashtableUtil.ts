@@ -69,16 +69,13 @@ export class HashtableUtil
 
     public putAll(fromHashtable: Hashtable<any, any>, hashtable: Hashtable<any, any>){
 
-    var enumeration: Enumeration<any> = fromHashtable!.keys()!;
-;
+    var enumeration: Enumeration<any> = fromHashtable!.keys()!;;
     
 
-    var keyCanBeNull: any
-;
+    var keyCanBeNull: any;;
     
 
-    var valueCanBeNull: any
-;
+    var valueCanBeNull: any;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -109,16 +106,13 @@ valueCanBeNull= hashtable.get(keyCanBeNull);
 
     public getKeysAsArray(hashtable: Hashtable<any, any>): any[]{
 
-    var objectArray: any[] = new Array(hashtable.length);
-;
+    var objectArray: any[] = new Array(hashtable.length);;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var enumeration: Enumeration<any> = hashtable.keys()!;
-;
+    var enumeration: Enumeration<any> = hashtable.keys()!;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -138,12 +132,10 @@ objectArray[index++]= this.enumerationUtil!.nextElement(enumeration)!;
 
     public getKeysAsList(hashtable: Hashtable<any, any>): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListS(hashtable.length);
-;
+    var list: BasicArrayList = new BasicArrayListS(hashtable.length);;
     
 
-    var enumeration: Enumeration<any> = hashtable.keys()!;
-;
+    var enumeration: Enumeration<any> = hashtable.keys()!;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))

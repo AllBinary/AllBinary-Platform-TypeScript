@@ -47,6 +47,7 @@ import { HtmlInputData } from './HtmlInputData.js';
 
 export class HtmlTextInput extends HtmlLengthInput {
         
+
 public constructor (before: string, name: string, value: string, after: string){
             super(before, HtmlInputData.getInstance()!.TEXT, name, value, after);
                     

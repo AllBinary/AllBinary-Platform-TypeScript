@@ -132,6 +132,7 @@ export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityI
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "orderhistory";
+
 public constructor (){
             super(new HistoryDbInitInfo());
                     
@@ -145,58 +146,45 @@ this.setTableName(this.tableName);
 
     public insert(userName: string, order: Order){
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
         try {
             
-    var paymentInterface: PaymentInterface = new PaymentEntity().getDefault(userName)!;
-;
+    var paymentInterface: PaymentInterface = new PaymentEntity().getDefault(userName)!;;
     
 
-    var billingAddress: StreetAddress = new BillingAddressesEntity(userName).getDefault()!;
-;
+    var billingAddress: StreetAddress = new BillingAddressesEntity(userName).getDefault()!;;
     
 
-    var shippingAddress: StreetAddress = new ShippingAddressesEntity(userName).getDefault()!;
-;
+    var shippingAddress: StreetAddress = new ShippingAddressesEntity(userName).getDefault()!;;
     
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-;
+    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(order.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(order.getStoreName())!;;
     
 
-    var shippingInterface: ShippingInterface = new ShippingMethods(abeClientInformation, storeFrontInterface).getShippingInterface(order.getShippingMethod())!;
-;
+    var shippingInterface: ShippingInterface = new ShippingMethods(abeClientInformation, storeFrontInterface).getShippingInterface(order.getShippingMethod())!;;
     
 
-    var shippingCost: Money = shippingInterface!.getCost(order)!;
-;
+    var shippingCost: Money = shippingInterface!.getCost(order)!;;
     
 
-    var basketInterface: BasketInterface = order.getBasket()!;
-;
+    var basketInterface: BasketInterface = order.getBasket()!;;
     
 
-    var subTotal: Money = basketInterface!.getSubTotal()!;
-;
+    var subTotal: Money = basketInterface!.getSubTotal()!;;
     
 
-    var taxRate: number = TaxFactory.getInstance()!.getInstance(abeClientInformation, storeFrontInterface)!.getTaxRate(shippingAddress, storeFrontInterface)!;
-;
+    var taxRate: number = TaxFactory.getInstance()!.getInstance(abeClientInformation, storeFrontInterface)!.getTaxRate(shippingAddress, storeFrontInterface)!;;
     
 
-    var tax: Money = new Money();
-;
+    var tax: Money = new Money();;
     
 
-    var total: Money = new Money();
-;
+    var total: Money = new Money();;
     
 total.add(shippingCost!.toString());
     
@@ -209,14 +197,12 @@ tax.multiply(taxRate);
 total.add(tax.toString());
     
 
-    var empty: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var empty: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 vector.add(new OrderHistoryIdGenerator().getNext());
     
 
-    var ZERO: string = TableDataFactory.getInstance()!.ZERO_STRING;
-;
+    var ZERO: string = TableDataFactory.getInstance()!.ZERO_STRING;;
     
 vector.add(order.getId());
     
@@ -225,12 +211,10 @@ vector.add(userName);
 vector.add(order.getStoreName());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(ZERO);
     
@@ -257,8 +241,7 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
-;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 vector.add(new SuperCrypt(random).encrypt(paymentInterface!.getNumber()));
     
@@ -440,16 +423,13 @@ this.insert(vector);
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 updateHashMap!.put(OrderHistoryData.STATUS, status);
     
@@ -495,16 +475,13 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 updateHashMap!.put(PaymentData.METHOD, paymentMethod);
     
@@ -534,38 +511,31 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
             
     public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector{
 
-    var orderReviewVector: Vector = new Vector();
-;
+    var orderReviewVector: Vector = new Vector();;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
     
 
-    var orderHashMapVector: Vector = super.getRows(whereHashMap)!;
-;
+    var orderHashMapVector: Vector = super.getRows(whereHashMap)!;;
     
 
-    var size: number = orderHashMapVector!.length!;
-;
+    var size: number = orderHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i) as HashMap<any, any>;
-;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
-;
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -584,38 +554,31 @@ orderReviewVector!.add(orderReview);
             
     public getOrders(userName: string): Vector{
 
-    var orderReviewVector: Vector = new Vector();
-;
+    var orderReviewVector: Vector = new Vector();;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
 
-    var orderHashMapVector: Vector = super.getRows(whereHashMap)!;
-;
+    var orderHashMapVector: Vector = super.getRows(whereHashMap)!;;
     
 
-    var size: number = orderHashMapVector!.length!;
-;
+    var size: number = orderHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;
-;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
-;
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -634,38 +597,31 @@ orderReviewVector!.add(orderReview);
             
     public getOrders(status: string, fromDate: string, toDate: string): Vector{
 
-    var orderReviewVector: Vector = new Vector();
-;
+    var orderReviewVector: Vector = new Vector();;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(OrderHistoryData.STATUS, status);
     
 
-    var orderHashMapVector: Vector = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;
-;
+    var orderHashMapVector: Vector = super.getRowsWhereBetween(whereHashMap, OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
     
 
-    var size: number = orderHashMapVector!.length!;
-;
+    var size: number = orderHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;
-;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
-;
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -684,32 +640,26 @@ orderReviewVector!.add(orderReview);
             
     public getOrders(fromDate: string, toDate: string): Vector{
 
-    var orderReviewVector: Vector = new Vector();
-;
+    var orderReviewVector: Vector = new Vector();;
     
 
-    var orderHashMapVector: Vector = super.getRowsWhereBetween(OrderHistoryData.ORDERDATE, fromDate, toDate)!;
-;
+    var orderHashMapVector: Vector = super.getRowsWhereBetween(OrderHistoryData.ORDERDATE, fromDate, toDate)!;;
     
 
-    var size: number = orderHashMapVector!.length!;
-;
+    var size: number = orderHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;
-;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;;
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
-;
+    var orderReview: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 orderReviewVector!.add(orderReview);
     
@@ -728,14 +678,12 @@ orderReviewVector!.add(orderReview);
             
     public getOrder(id: string): OrderHistory{
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(OrderData.ID, id);
     
 
-    var orderReviewHashMap: HashMap<any, any> = super.getRow(whereHashMap)!;
-;
+    var orderReviewHashMap: HashMap<any, any> = super.getRow(whereHashMap)!;;
     
 
                         if(orderReviewHashMap != 
@@ -744,8 +692,7 @@ whereHashMap!.put(OrderData.ID, id);
                         
                                     {
                                     
-    var orderHistory: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);
-;
+    var orderHistory: OrderHistory = new OrderHistory(new Basket(), orderReviewHashMap);;
     
 
 
@@ -771,12 +718,10 @@ whereHashMap!.put(OrderData.ID, id);
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;
-;
+    var entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CREATE TABLE ");
     

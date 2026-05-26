@@ -47,7 +47,8 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
 export class CapitalEvent extends AllBinaryEventObject {
         
 
-    private value: number= 0
+    private value: number= 0;
+
 public constructor (anyType: any = {}){
             super(anyType);
                     
@@ -59,8 +60,7 @@ public constructor (anyType: any = {}){
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CapitalEvent: Value: \n");
     

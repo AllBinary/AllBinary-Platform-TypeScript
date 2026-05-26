@@ -90,8 +90,7 @@ export class StylesValidationFactory
             
     public static getInstance(hashMap: HashMap<any, any>): Vector{
 
-    var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT) as Document;
-;
+    var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT) as Document;;
     
 
 
@@ -103,6 +102,7 @@ export class StylesValidationFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -113,12 +113,10 @@ private constructor (){
             
     public getInstance(document: Document): Vector{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;
-;
+    var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -143,16 +141,13 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var stylesNode: Node = nodeList!.item(index)!;
-;
+    var stylesNode: Node = nodeList!.item(index)!;;
     
 
-    var styleNodeList: Vector = DomSearchHelper.getAllNodes(StyleData.getInstance()!.NAME, stylesNode!.getChildNodes())!;
-;
+    var styleNodeList: Vector = DomSearchHelper.getAllNodes(StyleData.getInstance()!.NAME, stylesNode!.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -168,16 +163,13 @@ index < nodeList!.getLength(); index++)
 
 
                         for (
-    var styleNodesIndex: number = 0;
-styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
+    var styleNodesIndex: number = 0;styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
         {
 
-    var styleNode: Node = styleNodeList!.get(styleNodesIndex) as Node;
-;
+    var styleNode: Node = styleNodeList!.get(styleNodesIndex) as Node;;
     
 
-    var cssElementStyleNodeList: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, styleNode!.getChildNodes())!;
-;
+    var cssElementStyleNodeList: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, styleNode!.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

@@ -58,9 +58,10 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
 export class LayerInterfaceFactoryImageItem extends ABCustomImageItem {
         
 
-    private readonly animationArray: Animation[]
+    private readonly animationArray: Animation[];
 
-    private readonly layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface
+    private readonly layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface;
+
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, animationArray: Animation[], layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
             super(label, img, layout, altText, basicColor, 0);
                     
@@ -93,8 +94,7 @@ super.paintXY(graphics, x, y);
 
                         for (
     var index: number = this.animationArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationArray[index]!.paintXY(graphics, x, y);
     

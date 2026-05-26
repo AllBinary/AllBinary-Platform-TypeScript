@@ -51,7 +51,8 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
 export class ScreenRepaintProcessor extends Processor {
         
 
-    private readonly displayable: Displayable
+    private readonly displayable: Displayable;
+
 public constructor (displayable: Displayable){
 
             super();

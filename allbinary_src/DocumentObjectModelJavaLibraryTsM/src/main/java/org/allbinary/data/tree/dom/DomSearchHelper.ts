@@ -56,20 +56,17 @@ export class DomSearchHelper
 
     public static getNodeNoThrow(nodeName: string, nodeList: NodeList): Node{
 
-    var numberOfNodes: number = nodeList!.getLength()!;
-;
+    var numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfNodes; index++)
+    var index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
@@ -99,8 +96,7 @@ index < numberOfNodes; index++)
             
     public static getNode(nodeName: string, nodeList: NodeList): Node{
 
-    var node: Node = DomSearchHelper.getNodeNoThrow(nodeName, nodeList)!;
-;
+    var node: Node = DomSearchHelper.getNodeNoThrow(nodeName, nodeList)!;;
     
 
                         if(node != 
@@ -133,8 +129,7 @@ index < numberOfNodes; index++)
             
     public static getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 
-    var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
-;
+    var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;;
     
 
 
@@ -149,8 +144,7 @@ index < numberOfNodes; index++)
             
     public static getAllNodes(nodeName: string, nodeList: NodeList): Vector{
 
-    var vector: Vector = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;
-;
+    var vector: Vector = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;;
     
 
                         if(vector == 
@@ -181,24 +175,20 @@ index < numberOfNodes; index++)
 
     public static getAllNodesNoThrow(nodeName: string, nodeList: NodeList): Vector{
 
-    var nodeVector: Vector = new Vector();
-;
+    var nodeVector: Vector = new Vector();;
     
 
-    var numberOfNodes: number = nodeList!.getLength()!;
-;
+    var numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfNodes; index++)
+    var index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
@@ -218,6 +208,7 @@ index < numberOfNodes; index++)
                         return nodeVector;
     
 }
+
 
 private constructor (){
 

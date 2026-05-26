@@ -55,6 +55,7 @@ import { GameKeyFactory } from './GameKeyFactory.js';
 
 export class MotionLaptopDefaultGameInputMapping extends PersistentInputMapping {
         
+
 public constructor (){
             super(GamePersistanceStrings.getInstance()!.DEFAULT_INPUT_MAPPING_RECORD_ID);
                     
@@ -62,24 +63,19 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;
-;
+    var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;;
     
 
-    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;
-;
+    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;;
     
 
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-;
+    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-;
+    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-;
+    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.FIRE, pcKeyFactory!.ENTER);
     

@@ -64,6 +64,7 @@ export class InsertGlobalsValidationView extends GlobalsView implements Validati
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -89,8 +90,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
     
@@ -128,8 +128,7 @@ CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as D
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 

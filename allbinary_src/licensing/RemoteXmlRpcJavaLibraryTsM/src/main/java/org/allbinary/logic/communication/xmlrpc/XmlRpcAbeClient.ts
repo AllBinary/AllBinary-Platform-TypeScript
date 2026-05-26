@@ -76,19 +76,19 @@ export class XmlRpcAbeClient
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly remoteMethod: string
+    private readonly remoteMethod: string;
 
-    private readonly clientInfo: AbeClientInformationInterface
+    private readonly clientInfo: AbeClientInformationInterface;
 
     private client: XmlRpcHandler = NullXmlRpcHandler.NULL_XML_RPC_HANDLER;
 
-    private server: number
+    private server: number;
 
-    private start: number= 0
+    private start: number= 0;
 
-    private maxServers: number= 0
+    private maxServers: number= 0;
 
-    private isDone: boolean
+    private isDone: boolean;
 
     private readonly START_SERVER: string = "Start With Server #";
 
@@ -115,6 +115,7 @@ export class XmlRpcAbeClient
     readonly HOST_NOT_RESOLVED: string = "Host is unresolved";
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
+
 public constructor (clientInfo: AbeClientInformationInterface, remoteMethod: string){
 
             super();
@@ -149,8 +150,7 @@ this.isDone= false;
 this.server= this.start;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.START_SERVER);
     

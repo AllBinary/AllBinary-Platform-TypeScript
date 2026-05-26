@@ -58,8 +58,7 @@ export class ServiceReferenceMap
 
     public static toString(map: Map): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -70,7 +69,8 @@ export class ServiceReferenceMap
 }
 
 
-    private serviceReference: ServiceReference
+    private serviceReference: ServiceReference;
+
 public constructor (serviceReference: ServiceReference){
 
             super();
@@ -159,8 +159,7 @@ public constructor (serviceReference: ServiceReference){
 
     public keySet(): Set{
 
-    var keyStringArray: string[] = this.serviceReference!.getPropertyKeys()!;
-;
+    var keyStringArray: string[] = this.serviceReference!.getPropertyKeys()!;;
     
 
 

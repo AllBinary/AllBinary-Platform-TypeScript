@@ -52,6 +52,7 @@ import { OpenGLImageCacheFactory } from '../../../../../org/allbinary/image/open
 
 export class TouchButtonResourceOpenGLESAnimationInterfaceFactoryInterfaceFactory extends TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory {
         
+
 public constructor (){
             super("OpenGL TouchButton Animations");
                     

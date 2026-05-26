@@ -73,9 +73,10 @@ export class GenericProfileActionsJPanel extends javax.swing.JPanel {
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private genericProfileActions: GenericProfileActions
+    private genericProfileActions: GenericProfileActions;
 
-    private genericProfileActionJPanel: GenericProfileActionJPanel
+    private genericProfileActionJPanel: GenericProfileActionJPanel;
+
 public constructor (){
 
             super();
@@ -127,8 +128,7 @@ okNewProfileActionJButtonActionPerformed(evt);
                             );
     
 
-    var newProfileActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.newProfileActionJDialog!.getContentPane());
-;
+    var newProfileActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.newProfileActionJDialog!.getContentPane());;
     
 this.newProfileActionJDialog!.getContentPane()!.setLayout(newProfileActionJDialogLayout);
     
@@ -193,8 +193,7 @@ saveJButtonActionPerformed(evt);
 this.blankGenericProfileActionJPanel!.setMinimumSize(new java.awt.Dimension(500, 300));
     
 
-    var blankGenericProfileActionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionJPanel);
-;
+    var blankGenericProfileActionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionJPanel);;
     
 this.blankGenericProfileActionJPanel!.setLayout(blankGenericProfileActionJPanelLayout);
     
@@ -203,8 +202,7 @@ blankGenericProfileActionJPanelLayout!.setHorizontalGroup(blankGenericProfileAct
 blankGenericProfileActionJPanelLayout!.setVerticalGroup(blankGenericProfileActionJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 296, Short.MAX_VALUE));
     
 
-    var genericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfileActionsJPanel);
-;
+    var genericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfileActionsJPanel);;
     
 this.genericProfileActionsJPanel!.setLayout(genericProfileActionsJPanelLayout);
     
@@ -213,8 +211,7 @@ genericProfileActionsJPanelLayout!.setHorizontalGroup(genericProfileActionsJPane
 genericProfileActionsJPanelLayout!.setVerticalGroup(genericProfileActionsJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(genericProfileActionsJPanelLayout!.createSequentialGroup()!.addGroup(genericProfileActionsJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(newActionJButton)!.addComponent(deleteActionJButton)!.addComponent(saveJButton))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(genericProfileActionsJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addComponent(blankGenericProfileActionJPanel, 0, 296, Short.MAX_VALUE)!.addComponent(genericProfileActionsJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE))!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -227,8 +224,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     public setModel(){
 
-    var defaultListModelHelper: DefaultListModelHelper = this.getGenericProfileActions()!.getDefaultListModelHelper()!;
-;
+    var defaultListModelHelper: DefaultListModelHelper = this.getGenericProfileActions()!.getDefaultListModelHelper()!;;
     
 
                         if(defaultListModelHelper!.getListModel()!.getSize() > 0)
@@ -268,8 +264,7 @@ this.blankGenericProfileActionJPanel!.removeAll();
                         
                                     {
                                     
-    var genericProfileAction: GenericProfileAction = this.getGenericProfileActions()!.getAction(profileActionNameString)!;
-;
+    var genericProfileAction: GenericProfileAction = this.getGenericProfileActions()!.getAction(profileActionNameString)!;;
     
 this.setGenericProfileActionJPanel(new GenericProfileActionJPanel());
     
@@ -278,8 +273,7 @@ this.getGenericProfileActionJPanel()!.setGenericProfileAction(genericProfileActi
 this.getGenericProfileActionJPanel()!.updateProfileActionUI();
     
 
-    var layout: javax.swing.GroupLayout = this.blankGenericProfileActionJPanel!.getLayout() as javax.swing.GroupLayout;
-;
+    var layout: javax.swing.GroupLayout = this.blankGenericProfileActionJPanel!.getLayout() as javax.swing.GroupLayout;;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
@@ -297,8 +291,7 @@ this.logUtil!.putF("Setting Configuration Profile Actions JPanel", this, "generi
 
         try {
             
-    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue() as string;
-;
+    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue() as string;;
     
 this.updateProfileActionUI(profileActionNameString);
     
@@ -317,8 +310,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfileActionsJLi
 
         try {
             
-    var newActionName: string = this.newProfileActionJTextField!.getText()!;
-;
+    var newActionName: string = this.newProfileActionJTextField!.getText()!;;
     
 this.getGenericProfileActions()!.add(newActionName);
     
@@ -345,20 +337,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileActionJButto
 
         try {
             
-    var anyType: any[] = this.genericProfileActionsJList!.getSelectedValues()!;
-;
+    var anyType: any[] = this.genericProfileActionsJList!.getSelectedValues()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < anyType!.length; index++)
+    var index: number = 0;index < anyType!.length; index++)
         {
 
-    var nextSelectedValueString: string = anyType[index]! as string;
-;
+    var nextSelectedValueString: string = anyType[index]! as string;;
     
 this.getGenericProfileActions()!.remove(nextSelectedValueString);
     
@@ -442,27 +431,27 @@ this.newProfileActionJDialog!.setVisible(true);
 }
 
 
-    private blankGenericProfileActionJPanel: javax.swing.JPanel
+    private blankGenericProfileActionJPanel: javax.swing.JPanel;
 
-    private deleteActionJButton: javax.swing.JButton
+    private deleteActionJButton: javax.swing.JButton;
 
-    private genericProfileActionsJList: javax.swing.JList
+    private genericProfileActionsJList: javax.swing.JList;
 
-    private genericProfileActionsJPanel: javax.swing.JPanel
+    private genericProfileActionsJPanel: javax.swing.JPanel;
 
-    private genericProfileActionsJScrollPane: javax.swing.JScrollPane
+    private genericProfileActionsJScrollPane: javax.swing.JScrollPane;
 
-    private newActionJButton: javax.swing.JButton
+    private newActionJButton: javax.swing.JButton;
 
-    private newProfileActionJDialog: javax.swing.JDialog
+    private newProfileActionJDialog: javax.swing.JDialog;
 
-    private newProfileActionJLabel: javax.swing.JLabel
+    private newProfileActionJLabel: javax.swing.JLabel;
 
-    private newProfileActionJTextField: javax.swing.JTextField
+    private newProfileActionJTextField: javax.swing.JTextField;
 
-    private okNewProfileActionJButton: javax.swing.JButton
+    private okNewProfileActionJButton: javax.swing.JButton;
 
-    private saveJButton: javax.swing.JButton
+    private saveJButton: javax.swing.JButton;
 
 }
                 

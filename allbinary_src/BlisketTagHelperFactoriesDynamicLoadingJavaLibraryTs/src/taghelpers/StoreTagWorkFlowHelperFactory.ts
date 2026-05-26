@@ -61,6 +61,7 @@ export class StoreTagWorkFlowHelperFactory
     private static readonly CLASSNAME: string = "taghelpers.StoreTagWorkFlowHelper";
 
     private static readonly FACTORYNAME: string = "taghelpers.StoreTagWorkFlowHelperFactory";
+
 public constructor (){
 
             super();

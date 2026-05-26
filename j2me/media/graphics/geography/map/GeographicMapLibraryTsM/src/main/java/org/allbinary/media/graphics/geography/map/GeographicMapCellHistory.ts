@@ -84,17 +84,18 @@ export class GeographicMapCellHistory
 
     private readonly booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
 
-    private readonly list: BasicArrayList
+    private readonly list: BasicArrayList;
 
-    private readonly visitedList: BasicArrayList
+    private readonly visitedList: BasicArrayList;
 
     private readonly MISSED_INFO: string = "Missed";
 
     private readonly animation: Animation = new TextAnimation(this.MISSED_INFO, AnimationBehavior.getInstance());
 
-    private totalVisited: number= 0
+    private totalVisited: number= 0;
 
     private halfWidth: number = 0;
+
 public constructor (){
 
             super();
@@ -139,24 +140,21 @@ this.init();
 
     public trackAll(list: BasicArrayList){
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 this.list.ensureCapacity(size);
     
 this.visitedList!.ensureCapacity(size);
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition
-;
+    var geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 geographicMapCellPosition= list.get(index) as GeographicMapCellPosition;
     
@@ -204,12 +202,10 @@ this.visitedList!.add(this.booleanFactory!.FALSE);
 
     public getAfterIfNotLast(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
 
-    var localList: BasicArrayList = this.list;
-;
+    var localList: BasicArrayList = this.list;;
     
 
-    var index: number = localList!.indexOf(geographicMapCellPosition)!;
-;
+    var index: number = localList!.indexOf(geographicMapCellPosition)!;;
     
 
                         if(localList!.size() > index +1)
@@ -235,28 +231,23 @@ this.visitedList!.add(this.booleanFactory!.FALSE);
 
     public getFirstUnvisited(): GeographicMapCellPosition{
 
-    var localList: BasicArrayList = this.list;
-;
+    var localList: BasicArrayList = this.list;;
     
 
-    var localVisitedList: BasicArrayList = this.visitedList;
-;
+    var localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var size: number = localVisitedList!.size()!;
-;
+    var size: number = localVisitedList!.size()!;;
     
 
-    var value: Boolean
-;
+    var value: Boolean;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 value= this.visitedList!.get(index) as Boolean;
     
@@ -286,24 +277,20 @@ value= this.visitedList!.get(index) as Boolean;
 
     public getFirstUnvisitedIndex(): number{
 
-    var localVisitedList: BasicArrayList = this.visitedList;
-;
+    var localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var size: number = localVisitedList!.size()!;
-;
+    var size: number = localVisitedList!.size()!;;
     
 
-    var value: Boolean
-;
+    var value: Boolean;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 value= this.visitedList!.get(index) as Boolean;
     
@@ -333,28 +320,23 @@ value= this.visitedList!.get(index) as Boolean;
 
     public getInPathButNotTracked(pathList: BasicArrayList): BasicArrayList{
 
-    var inPathButNotTrackedList: BasicArrayList = new BasicArrayListD();
-;
+    var inPathButNotTrackedList: BasicArrayList = new BasicArrayListD();;
     
 
-    var localList: BasicArrayList = this.list;
-;
+    var localList: BasicArrayList = this.list;;
     
 
-    var size: number = pathList!.size()!;
-;
+    var size: number = pathList!.size()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition
-;
+    var geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
     
@@ -380,16 +362,14 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
 
     public isVisited(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var index: number = this.list.indexOf(geographicMapCellPosition)!;
-;
+    var index: number = this.list.indexOf(geographicMapCellPosition)!;;
     
 
                         if(index !=  -1)
                         
                                     {
                                     
-    var value: Boolean = this.visitedList!.get(index) as Boolean;
-;
+    var value: Boolean = this.visitedList!.get(index) as Boolean;;
     
 
                         if(value == this.booleanFactory!.TRUE)
@@ -422,12 +402,10 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
 
     public visit(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var index: number = this.list.indexOf(geographicMapCellPosition)!;
-;
+    var index: number = this.list.indexOf(geographicMapCellPosition)!;;
     
 
-    var value: Boolean
-;
+    var value: Boolean;;
     
 
                         if(index !=  -1)
@@ -436,8 +414,7 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
                                     value= this.visitedList!.get(index) as Boolean;
     
 
-    var TRUE: Boolean = this.booleanFactory!.TRUE;
-;
+    var TRUE: Boolean = this.booleanFactory!.TRUE;;
     
 
                         if(value != TRUE)
@@ -534,16 +511,13 @@ this.totalVisited++;
             
     public isPortionVisited(basicDecimal: BasicDecimal): boolean{
 
-    var size: number = this.getSize()!;
-;
+    var size: number = this.getSize()!;;
     
 
-    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.round(basicDecimal!.getUnscaled());
-;
+    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.round(basicDecimal!.getUnscaled());;
     
 
-    var numberNotVisited: number = this.getSize() -1 -this.totalVisited;
-;
+    var numberNotVisited: number = this.getSize() -1 -this.totalVisited;;
     
 
                         if(size -numberNotVisited > numberRequired)
@@ -575,24 +549,20 @@ this.totalVisited++;
             
     public reset(){
 
-    var localVisitedList: BasicArrayList = this.visitedList;
-;
+    var localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var localFalseBoolean: Boolean = this.booleanFactory!.FALSE;
-;
+    var localFalseBoolean: Boolean = this.booleanFactory!.FALSE;;
     
 
-    var size: number = localVisitedList!.size()!;
-;
+    var size: number = localVisitedList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 localVisitedList!.set(index, localFalseBoolean);
     
@@ -605,12 +575,10 @@ this.totalVisited= 0;
 
     paintNotVisitedRelativeToPoint(graphics: Graphics, tiledLayer: AllBinaryTiledLayer, point: GPoint){
 
-    var x: number = point.getX() -tiledLayer!.getXP();
-;
+    var x: number = point.getX() -tiledLayer!.getXP();;
     
 
-    var y: number = point.getY() -tiledLayer!.getYP();
-;
+    var y: number = point.getY() -tiledLayer!.getYP();;
     
 
                         if(this.halfWidth == 0)
@@ -622,12 +590,10 @@ this.totalVisited= 0;
                                     }
                                 
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var height: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var height: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;;
     
 this.animation.paintXY(graphics, x +halfWidth, y +(height));
     
@@ -642,28 +608,23 @@ this.animation.paintXY(graphics, x +halfWidth, y +(height));
             graphics.setColor(this.RED);
     
 
-    var localVisitedList: BasicArrayList = this.visitedList;
-;
+    var localVisitedList: BasicArrayList = this.visitedList;;
     
 
-    var size: number = localVisitedList!.size()!;
-;
+    var size: number = localVisitedList!.size()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition
-;
+    var geographicMapCellPosition: GeographicMapCellPosition;;
     
 
-    var isCellVisitedBoolean: Boolean
-;
+    var isCellVisitedBoolean: Boolean;;
     
 
 
 
 
                         for (
-    var index: number = size;
---index >= 0; )
+    var index: number = size;--index >= 0; )
         {
 geographicMapCellPosition= this.list.get(index) as GeographicMapCellPosition;
     
@@ -685,8 +646,7 @@ isCellVisitedBoolean= localVisitedList!.get(index) as Boolean;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e);
     

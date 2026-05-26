@@ -72,13 +72,14 @@ export class MetaValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private label: string
+    private label: string;
 
-    private name: string
+    private name: string;
 
-    private httpEquiv: string
+    private httpEquiv: string;
 
-    private content: string
+    private content: string;
+
 public constructor (htmlMetaAttributeData: HtmlMetaAttributeData, label: string, attributeValue: string, contentValue: string){
 
             super();
@@ -106,6 +107,7 @@ this.content= contentValue;
     
 }
 
+
 public constructor (document: Document){
 
             super();
@@ -121,8 +123,7 @@ public constructor (document: Document){
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
 
@@ -158,8 +159,7 @@ public constructor (document: Document){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -213,12 +213,10 @@ public constructor (document: Document){
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var htmlMetaAttributeDataFactory: HtmlMetaAttributeDataFactory = HtmlMetaAttributeDataFactory.getInstance()!;
-;
+    var htmlMetaAttributeDataFactory: HtmlMetaAttributeDataFactory = HtmlMetaAttributeDataFactory.getInstance()!;;
     
 hashMap!.put(HtmlMetaData.getInstance()!.LABEL.toString(), this.label);
     
@@ -241,8 +239,7 @@ hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, HtmlMetaData.getInstance()!.NAME.toString(), this.toHashMap())!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, HtmlMetaData.getInstance()!.NAME.toString(), this.toHashMap())!;;
     
 
 

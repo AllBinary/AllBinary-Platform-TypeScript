@@ -70,9 +70,10 @@ export class DirectoryDataModel
          implements DomNodeInterface, TransformInterface {
         
 
-    private readonly fileBasicArrayList: BasicArrayList
+    private readonly fileBasicArrayList: BasicArrayList;
 
-    private transformDocumentInterface: TransformDocumentInterface
+    private transformDocumentInterface: TransformDocumentInterface;
+
 public constructor (file: AbFile){
 
             super();
@@ -127,28 +128,23 @@ this.transformDocumentInterface= transformDocumentInterface;
             
     public toXmlNode(document: Document): Node{
 
-    var dirNode: Node = document.createElement("dir")!;
-;
+    var dirNode: Node = document.createElement("dir")!;;
     
 
-    var size: number = this.fileBasicArrayList!.size()!;
-;
+    var size: number = this.fileBasicArrayList!.size()!;;
     
 
-    var nextFile: AbFile
-;
+    var nextFile: AbFile;;
     
 
-    var fileNode: Node
-;
+    var fileNode: Node;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 nextFile= this.fileBasicArrayList!.get(index) as AbFile;
     
@@ -183,8 +179,7 @@ dirNode!.appendChild(fileNode);
             
     public view(): string{
 
-    var node: Node = this.toXmlNode(this.getTransformDocumentInterface()!.getDoc())!;
-;
+    var node: Node = this.toXmlNode(this.getTransformDocumentInterface()!.getDoc())!;;
     
 this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node);
     

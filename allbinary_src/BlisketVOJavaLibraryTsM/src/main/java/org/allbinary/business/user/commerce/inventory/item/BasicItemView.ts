@@ -74,9 +74,10 @@ export class BasicItemView
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly itemInterface: ItemInterface
+    private readonly itemInterface: ItemInterface;
 
-    private readonly vector: Vector
+    private readonly vector: Vector;
+
 public constructor (itemInterface: ItemInterface, vector: Vector){
 
             super();
@@ -100,51 +101,41 @@ this.vector= vector;
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;;
     
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;
-;
+    var keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(BasicItemData.ITEM)!;
-;
+    var node: Node = document.createElement(BasicItemData.ITEM)!;;
     
 
-    var nameArray: any[] = keySet!.()!;
-;
+    var nameArray: any[] = keySet!.()!;;
     
 
     var size2: number = nameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 
-    var name: string = nameArray[index]! as string;
-;
+    var name: string = nameArray[index]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;
-;
+    var value: string = hashMap!.get(name) as string;;
     
 value= stringUtil!.getNonNull(value);
     
@@ -153,30 +144,25 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 }
 
 
-    var totalNode: Node = ModDomHelper.createNameValueNodes(document, BasicItemData.TOTAL, this.itemInterface!.getTotal()!.toString())!;
-;
+    var totalNode: Node = ModDomHelper.createNameValueNodes(document, BasicItemData.TOTAL, this.itemInterface!.getTotal()!.toString())!;;
     
 node.appendChild(totalNode);
     
 
-    var size: number = this.vector.length!;
-;
+    var size: number = this.vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.vector.get(index) as DomNodeInterface;
-;
+    var domNodeInterface: DomNodeInterface = this.vector.get(index) as DomNodeInterface;;
     
 
-    var customNode: Node = domNodeInterface!.toXmlNode(document)!;
-;
+    var customNode: Node = domNodeInterface!.toXmlNode(document)!;;
     
 node.appendChild(customNode);
     

@@ -70,14 +70,15 @@ export class AboutPaintable extends Paintable {
 
     private readonly ABOUT: string = CanvasStrings.getInstance()!.ABOUT;
 
-    private readonly info: string[]
+    private readonly info: string[];
 
-    private readonly developers: string[]
+    private readonly developers: string[];
 
     private readonly paintableArray: Paintable[] = 
                                                         [
                                                             this
                                                         ];
+
 private constructor (info: string[], developers: string[]){
 
             super();
@@ -102,39 +103,32 @@ this.developers= developers;
 
     public paint(graphics: Graphics){
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
-;
+    var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;;
     
 
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
     
 
-    var font: Font = graphics.getFont()!;
-;
+    var font: Font = graphics.getFont()!;;
     
 
-    var beginWidth: number = (font.stringWidth(this.ABOUT)>>1);
-;
+    var beginWidth: number = (font.stringWidth(this.ABOUT)>>1);;
     
 graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, this.anchor);
     
 
     var infoSize: number = this.info.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < infoSize; index++)
+    var index: number = 0;index < infoSize; index++)
         {
 beginWidth= (font.stringWidth(this.info[index]!)>>1);
     
@@ -144,16 +138,14 @@ graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHe
 
 
     var size: number = this.developers.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 beginWidth= (font.stringWidth(this.developers[index]!)>>1);
     

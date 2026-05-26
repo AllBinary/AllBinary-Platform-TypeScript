@@ -64,7 +64,8 @@ export class TransformInfoHttpComposite
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private transformInfoInterface: TransformInfoHttpInterface
+    private transformInfoInterface: TransformInfoHttpInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();

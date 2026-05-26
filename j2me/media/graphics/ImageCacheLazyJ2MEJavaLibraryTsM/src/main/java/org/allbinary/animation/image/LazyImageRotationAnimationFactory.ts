@@ -58,11 +58,12 @@ export class LazyImageRotationAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-    private readonly layoutIndex: number
+    private readonly layoutIndex: number;
 
-    private readonly animationInterfaceFactoryInterface: BaseImageAnimationFactory
+    private readonly animationInterfaceFactoryInterface: BaseImageAnimationFactory;
 
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
+
 public constructor (layoutIndex: number, associatedLazyAnimationId: number, animationInterfaceFactoryInterface: BaseImageAnimationFactory){
 
             super();

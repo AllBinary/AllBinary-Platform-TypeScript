@@ -65,6 +65,7 @@ export class InputAutomationRobotOSGIServiceVisitor
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (){
 
             super();
@@ -87,20 +88,17 @@ public constructor (){
             this.logUtil!.putF(this.commonStrings!.START, this, "visit");
     
 
-    var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface = osgiServiceInterface as InputAutomationRobotServiceInterface;
-;
+    var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface = osgiServiceInterface as InputAutomationRobotServiceInterface;;
     
 
-    var inputRobotInterfaceArray: InputRobotInterface[] = inputAutomationRobotServiceInterface!.getInputRobotInterfaceArray()!;
-;
+    var inputRobotInterfaceArray: InputRobotInterface[] = inputAutomationRobotServiceInterface!.getInputRobotInterfaceArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < inputRobotInterfaceArray!.length; index++)
+    var index: number = 0;index < inputRobotInterfaceArray!.length; index++)
         {
 this.logUtil!.putF("Adding: " +inputRobotInterfaceArray[index]!.getName(), this, "visit");
     

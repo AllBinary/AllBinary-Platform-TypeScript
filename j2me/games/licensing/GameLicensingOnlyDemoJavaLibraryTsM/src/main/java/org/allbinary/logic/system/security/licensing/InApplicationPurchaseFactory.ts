@@ -52,6 +52,7 @@ export class InApplicationPurchaseFactory
     
 }
 
+
 private constructor (){
 
             super();

@@ -65,6 +65,7 @@ export class CssPropertyValidationFactory
     
 }
 
+
 private constructor (){
 
             super();

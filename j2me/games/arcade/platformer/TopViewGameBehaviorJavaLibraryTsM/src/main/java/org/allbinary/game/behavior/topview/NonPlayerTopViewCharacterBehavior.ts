@@ -81,8 +81,7 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
 
-    var maxColumns: number = geographicMapInterfaceArray[0]!.getAllBinaryTiledLayer()!.getColumns()!;
-;
+    var maxColumns: number = geographicMapInterfaceArray[0]!.getAllBinaryTiledLayer()!.getColumns()!;;
     
 
                         if(geographicMapCellPosition!.getColumn() > 0 && geographicMapCellPosition!.getColumn() < maxColumns)
@@ -91,12 +90,10 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
                                     
     var nextTerrainGeographicMapCellPosition: GeographicMapCellPosition = 
                 null
-            ;
-;
+            ;;
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!;
-;
+    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!;;
     
 
                         if(direction == DirectionFactory.getInstance()!.LEFT)
@@ -119,16 +116,14 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
 this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, nextTerrainGeographicMapCellPosition);
     
 
-    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-;
+    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;;
     
 
                         if(!hasSolidBlock)
                         
                                     {
                                     
-    var terrainEvent: TerrainEvent = TerrainEventCircularStaticPool.getInstance()!.getNext(this.CLIFF)!;
-;
+    var terrainEvent: TerrainEvent = TerrainEventCircularStaticPool.getInstance()!.getNext(this.CLIFF)!;;
     
 TerrainEventHandler.getInstance(layer)!.fireEvent(terrainEvent);
     

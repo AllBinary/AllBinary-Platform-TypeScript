@@ -68,12 +68,10 @@ export class PlatformAssetManager
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-;
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(resource)!;
-;
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(resource)!;;
     
 
 

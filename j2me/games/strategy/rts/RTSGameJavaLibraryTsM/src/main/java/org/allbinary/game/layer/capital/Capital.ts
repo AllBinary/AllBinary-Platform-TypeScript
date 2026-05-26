@@ -46,7 +46,8 @@ export class Capital
          {
         
 
-    private value: number= 0
+    private value: number= 0;
+
 public constructor (){
 
             super();

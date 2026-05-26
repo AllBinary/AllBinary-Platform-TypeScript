@@ -61,25 +61,21 @@ export class PointsUtil
     public adjustXY(points: number[][][], x: number, y: number): number[][][]{
 
     var size: number = points.length
-                ;
-;
+                ;;
     
 
-    var newPoints: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));
-;
+    var newPoints: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
     var size2: number = points[index]!.length
-                ;
-;
+                ;;
     
 newPoints[index]= new Array(size2) [2];
     
@@ -88,8 +84,7 @@ newPoints[index]= new Array(size2) [2];
 
 
                         for (
-    var index2: number = 0;
-index2 < size2; index2++)
+    var index2: number = 0;index2 < size2; index2++)
         {
 
                         if(points[index]![index2]![0] != 1000)
@@ -135,16 +130,14 @@ newPoints[index]![index2]![1]= 1000;
 
     public adjust(points: number[][], x: number, y: number): number[][]{
 
-    var newPoints: number[][] = new Array(points.length) [2];
-;
+    var newPoints: number[][] = new Array(points.length) [2];;
     
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < points.length; index2++)
+    var index2: number = 0;index2 < points.length; index2++)
         {
 
                         if(points[index2]![0] != 1000)

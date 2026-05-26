@@ -87,12 +87,10 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LA
 
 
                         for (
-    var index: number = this.eventList!.size() -1;
-index >= 0; index--)
+    var index: number = this.eventList!.size() -1;index >= 0; index--)
         {
 
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = this.eventList!.objectArray[index]! as GameKeyCompleteMotionGestureInputEvent;
-;
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = this.eventList!.objectArray[index]! as GameKeyCompleteMotionGestureInputEvent;;
     
 gameKeyCompleteMotionGestureInputEvent!.update();
     

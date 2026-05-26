@@ -62,7 +62,8 @@ export class WorkFlowView extends HttpStoreComponentView implements DomNodeInter
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    workFlowInterface: WorkFlowInterface
+    workFlowInterface: WorkFlowInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

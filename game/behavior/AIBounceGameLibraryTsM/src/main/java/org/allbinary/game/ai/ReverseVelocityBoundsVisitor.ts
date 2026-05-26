@@ -58,17 +58,17 @@ export class ReverseVelocityBoundsVisitor
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    velocityInterface: VelocityInterface
+    velocityInterface: VelocityInterface;
 
-    private layerInterface: LayerInterface
+    private layerInterface: LayerInterface;
+
 public constructor (layerInterface: LayerInterface){
 
             super();
         this.layerInterface= layerInterface;
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;
-;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;
     

@@ -49,7 +49,8 @@ import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media
 export class GeologicalGeographicMapCellPosition extends GeographicMapCellPosition {
         
 
-    private readonly geologicalResource: GeologicalResource
+    private readonly geologicalResource: GeologicalResource;
+
 public constructor (column: number, row: number, columns: number, rows: number, width: number, height: number, geologicalResource: GeologicalResource){
             super(column, row, columns, rows, width, height);
                     

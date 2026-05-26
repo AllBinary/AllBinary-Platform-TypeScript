@@ -66,7 +66,8 @@ export class ScoreComparator
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly isHighestBest: boolean
+    private readonly isHighestBest: boolean;
+
 public constructor (isHighestBest: boolean){
 
             super();
@@ -94,28 +95,22 @@ public constructor (isHighestBest: boolean){
 
     public compare(recordOne: number[], recordTwo: number[]): number{
 
-    var byteArrayInputStreamOne: ByteArrayInputStream = new ByteArrayInputStream(recordOne);
-;
+    var byteArrayInputStreamOne: ByteArrayInputStream = new ByteArrayInputStream(recordOne);;
     
 
-    var inputStreamOne: DataInputStream = new DataInputStream(byteArrayInputStreamOne);
-;
+    var inputStreamOne: DataInputStream = new DataInputStream(byteArrayInputStreamOne);;
     
 
-    var byteArrayInputStreamTwo: ByteArrayInputStream = new ByteArrayInputStream(recordTwo);
-;
+    var byteArrayInputStreamTwo: ByteArrayInputStream = new ByteArrayInputStream(recordTwo);;
     
 
-    var inputStreamTwo: DataInputStream = new DataInputStream(byteArrayInputStreamTwo);
-;
+    var inputStreamTwo: DataInputStream = new DataInputStream(byteArrayInputStreamTwo);;
     
 
-    var scoreOne: number = 0;
-;
+    var scoreOne: number = 0;;
     
 
-    var scoreTwo: number = 0;
-;
+    var scoreTwo: number = 0;;
     
 
         try {
@@ -132,8 +127,7 @@ scoreTwo= inputStreamTwo!.readLong();
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
@@ -143,8 +137,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 /* catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
@@ -154,8 +147,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 /* catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     

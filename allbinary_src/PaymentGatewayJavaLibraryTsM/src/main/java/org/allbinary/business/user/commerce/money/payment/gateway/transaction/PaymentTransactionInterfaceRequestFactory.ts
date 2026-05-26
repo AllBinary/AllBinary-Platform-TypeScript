@@ -113,6 +113,7 @@ export class PaymentTransactionInterfaceRequestFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -127,20 +128,16 @@ private constructor (){
 
         try {
             
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;
-;
+    var pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
-;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var command: string = httpServletRequest!.getParameter(org.allbinary.globals.GLOBALS2.ADMINCOMMAND)!;
-;
+    var command: string = httpServletRequest!.getParameter(org.allbinary.globals.GLOBALS2.ADMINCOMMAND)!;;
     
 
                         if(command != 
@@ -159,36 +156,28 @@ private constructor (){
                                 
                         else {
                             
-    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;
-;
+    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);
-;
+    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
     
 
-    var order: OrderInterface = weblisketSession!.getOrder()!;
-;
+    var order: OrderInterface = weblisketSession!.getOrder()!;;
     
 
-    var orderId: string = order.getId()!;
-;
+    var orderId: string = order.getId()!;;
     
 
-    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
-;
+    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
     
 
-    var orderReview: OrderHistory = orderHistoryEntityInterface!.getOrder(orderId)!;
-;
+    var orderReview: OrderHistory = orderHistoryEntityInterface!.getOrder(orderId)!;;
     
 
-    var orderPaymentInfo: Payment = orderReview!.getPaymentInfo()!;
-;
+    var orderPaymentInfo: Payment = orderReview!.getPaymentInfo()!;;
     
 orderPaymentInfo!.setTransactionType(TransactionTypeFactory.getInstance()!.SALE.toString());
     
@@ -206,8 +195,7 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
                                     }
                                 
 
-    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;
-;
+    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;;
     
 
 
@@ -247,32 +235,25 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
 
         try {
             
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;
-;
+    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;;
     
 
-    var pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;
-;
+    var pageContext: PageContext = httpTransformInfoInterface!.getPageContext()!;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);
-;
+    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
-;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var gatewayName: string = weblisketSession!.getPaymentMethod() as string;
-;
+    var gatewayName: string = weblisketSession!.getPaymentMethod() as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(gatewayName))
@@ -284,24 +265,20 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
                                     }
                                 
 
-    var transactionType: string = httpServletRequest!.getParameter(PaymentData.TRANSACTIONTYPE)!;
-;
+    var transactionType: string = httpServletRequest!.getParameter(PaymentData.TRANSACTIONTYPE)!;;
     
 
-    var tenderType: string = httpServletRequest!.getParameter(PaymentData.TENDERTYPE)!;
-;
+    var tenderType: string = httpServletRequest!.getParameter(PaymentData.TENDERTYPE)!;;
     
 
-    var payment: Payment = new Payment();
-;
+    var payment: Payment = new Payment();;
     
 payment.setTransactionType(transactionType);
     
 payment.setTenderType(tenderType);
     
 
-    var orderReview: OrderHistory = new OrderHistory(new Basket());
-;
+    var orderReview: OrderHistory = new OrderHistory(new Basket());;
     
 orderReview!.setStoreName(storeFrontInterface!.getName());
     
@@ -310,8 +287,7 @@ orderReview!.setPaymentMethod(gatewayName);
 orderReview!.setUserName("testing");
     
 
-    var orderId: string = httpServletRequest!.getParameter("orderNumber")!;
-;
+    var orderId: string = httpServletRequest!.getParameter("orderNumber")!;;
     
 
                         if(orderId == 
@@ -324,36 +300,28 @@ orderReview!.setUserName("testing");
 orderReview!.setId(orderId);
     
 
-    var account: string = httpServletRequest!.getParameter("account")!;
-;
+    var account: string = httpServletRequest!.getParameter("account")!;;
     
 
-    var expirationDate: string = httpServletRequest!.getParameter("expirationDate")!;
-;
+    var expirationDate: string = httpServletRequest!.getParameter("expirationDate")!;;
     
 
-    var checkNumber: string = httpServletRequest!.getParameter("checkNumber")!;
-;
+    var checkNumber: string = httpServletRequest!.getParameter("checkNumber")!;;
     
 
-    var driversLicense: string = httpServletRequest!.getParameter("driversLicense")!;
-;
+    var driversLicense: string = httpServletRequest!.getParameter("driversLicense")!;;
     
 
-    var magneticInkCheckReader: string = httpServletRequest!.getParameter("magneticInkCheckReader")!;
-;
+    var magneticInkCheckReader: string = httpServletRequest!.getParameter("magneticInkCheckReader")!;;
     
 
-    var aba: string = httpServletRequest!.getParameter("aba")!;
-;
+    var aba: string = httpServletRequest!.getParameter("aba")!;;
     
 
-    var accountType: string = httpServletRequest!.getParameter("accountType")!;
-;
+    var accountType: string = httpServletRequest!.getParameter("accountType")!;;
     
 
-    var name: string = httpServletRequest!.getParameter("name")!;
-;
+    var name: string = httpServletRequest!.getParameter("name")!;;
     
 payment.setName(name);
     
@@ -372,24 +340,19 @@ payment.setAba(aba);
 payment.setAccountType(accountType);
     
 
-    var street: string = httpServletRequest!.getParameter("street")!;
-;
+    var street: string = httpServletRequest!.getParameter("street")!;;
     
 
-    var city: string = httpServletRequest!.getParameter("city")!;
-;
+    var city: string = httpServletRequest!.getParameter("city")!;;
     
 
-    var state: string = httpServletRequest!.getParameter("state")!;
-;
+    var state: string = httpServletRequest!.getParameter("state")!;;
     
 
-    var zip: string = httpServletRequest!.getParameter("zip")!;
-;
+    var zip: string = httpServletRequest!.getParameter("zip")!;;
     
 
-    var streetAddress: StreetAddress = new StreetAddress();
-;
+    var streetAddress: StreetAddress = new StreetAddress();;
     
 streetAddress!.setName(name);
     
@@ -402,12 +365,10 @@ streetAddress!.setState(state);
 streetAddress!.setCode(zip);
     
 
-    var email: string = httpServletRequest!.getParameter("email")!;
-;
+    var email: string = httpServletRequest!.getParameter("email")!;;
     
 
-    var amount: string = httpServletRequest!.getParameter("amount")!;
-;
+    var amount: string = httpServletRequest!.getParameter("amount")!;;
     
 orderReview!.setTotal(new Money(amount));
     
@@ -425,8 +386,7 @@ orderReview!.setBillingAddress(streetAddress);
 orderReview!.setPaymentInfo(payment);
     
 
-    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;
-;
+    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceFactory.getInstance()!.getInstance(orderReview)!;;
     
 
 

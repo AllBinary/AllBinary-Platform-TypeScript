@@ -109,6 +109,7 @@ export class TaxFactory
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly TAXATIONFILENAME: string = "taxationMethod.xml";
+
 private constructor (){
 
             super();
@@ -119,8 +120,7 @@ private constructor (){
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface): TaxModuleInterface{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -139,40 +139,32 @@ stringBuffer!.append("taxes");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString(), TAXATIONFILENAME);
-;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), TAXATIONFILENAME);;
     
 
-    var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;
-;
+    var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
     
 
-    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).get(abPath)!;
-;
+    var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(data)!;
-;
+    var document: Document = DomDocumentHelper.create(data)!;;
     
 
-    var taxNameNodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;
-;
+    var taxNameNodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < taxNameNodeList!.getLength(); index++)
+    var index: number = 0;index < taxNameNodeList!.getLength(); index++)
         {
 
-    var node: Node = taxNameNodeList!.item(index)!;
-;
+    var node: Node = taxNameNodeList!.item(index)!;;
     
 
-    var nodeList: NodeList = node.getChildNodes()!;
-;
+    var nodeList: NodeList = node.getChildNodes()!;;
     
 
                         if(nodeList != 
@@ -181,8 +173,7 @@ index < taxNameNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;
-;
+    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;;
     
 
                         if(classNameNode != 
@@ -191,8 +182,7 @@ index < taxNameNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var className: string = DomNodeHelper.getTextNodeValue(classNameNode)!;
-;
+    var className: string = DomNodeHelper.getTextNodeValue(classNameNode)!;;
     
 
 

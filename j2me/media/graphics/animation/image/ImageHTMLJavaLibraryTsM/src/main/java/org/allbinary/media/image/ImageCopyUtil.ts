@@ -78,6 +78,7 @@ export class ImageCopyUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly imageCreationUtil: ImageCreationUtil = ImageCreationUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -102,8 +103,7 @@ private constructor (){
             
     public createImage(originalImage: Image): Image{
 
-    var image: Image = this.imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
-;
+    var image: Image = this.imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
@@ -136,12 +136,10 @@ private constructor (){
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
 
-    var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));
-;
+    var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));;
     
 
-    var newHeight: number = Math.round((originalImage!.getHeight() *canvasScale));
-;
+    var newHeight: number = Math.round((originalImage!.getHeight() *canvasScale));;
     
 
                         if(resize)
@@ -169,24 +167,20 @@ private constructor (){
                                     }
                                 
 
-    var image: Image = this.imageCreationUtil!.getInstance(newWidth, newHeight)!;
-;
+    var image: Image = this.imageCreationUtil!.getInstance(newWidth, newHeight)!;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;
-;
+    var halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;;
     
 
-    var halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;
-;
+    var halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;;
     
 
-    var graphics: Graphics = image.getGraphics()!;
-;
+    var graphics: Graphics = image.getGraphics()!;;
     
 graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, this.anchor);
     

@@ -67,16 +67,15 @@ export class DirectionUtil
     private directionArray: Angle[] = new Array(10);
 
     private directionArray2: Angle[] = new Array(10);
+
 private constructor (){
 
             super();
         
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 this.directionArray[directionFactory!.LEFT.getValue()]= angleFactory!.LEFT;
     

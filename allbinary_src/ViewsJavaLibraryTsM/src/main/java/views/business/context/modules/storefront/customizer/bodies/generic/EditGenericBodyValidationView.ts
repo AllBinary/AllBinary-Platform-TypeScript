@@ -64,6 +64,7 @@ export class EditGenericBodyValidationView extends GenericBodyCustomizerView imp
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -77,14 +78,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var document: Document = CustomizerUtil.getInstance()!.getViewDataForComponentsInObjectConfig(this.getTransformInfoInterface())!;
-;
+    var document: Document = CustomizerUtil.getInstance()!.getViewDataForComponentsInObjectConfig(this.getTransformInfoInterface())!;;
     
 this.body= new GenericBodyValidation(document);
     
 
-    var isValid: Boolean = this.body.isValid()!;
-;
+    var isValid: Boolean = this.body.isValid()!;;
     
 
 
@@ -120,8 +119,7 @@ this.body= new GenericBodyValidation(document);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.body.validationInfo());
     

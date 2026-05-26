@@ -58,16 +58,14 @@ export class ParamsUtil
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < params.length; index++)
+    var index: number = 0;index < params.length; index++)
         {
 stringBuffer!.append(" ");
     
@@ -88,6 +86,7 @@ stringBuffer!.append(params[index]!.getName());
                         if()
                         
 }
+
 
 private constructor (){
 

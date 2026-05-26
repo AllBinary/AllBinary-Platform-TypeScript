@@ -50,7 +50,8 @@ export class Usb
          implements HardwareComponentInterface, UsbInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

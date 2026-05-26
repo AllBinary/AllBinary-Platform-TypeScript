@@ -80,16 +80,13 @@ this.list= new BasicArrayListD();
 
     public getInstanceFromCollection(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
 
-    var typeInteger: Integer = hashtable.get(BasicAI.ID) as Integer;
-;
+    var typeInteger: Integer = hashtable.get(BasicAI.ID) as Integer;;
     
 
-    var type: number = typeInteger!.intValue()!;
-;
+    var type: number = typeInteger!.intValue()!;;
     
 
-    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = this.list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;
-;
+    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = this.list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;;
     
 
 

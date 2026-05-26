@@ -63,7 +63,8 @@ export class DownloadableItemValidation extends Validation {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private downloadableItem: DownloadableItem
+    private downloadableItem: DownloadableItem;
+
 public constructor (downloadableItem: DownloadableItem){
 
             super();
@@ -197,8 +198,7 @@ public constructor (downloadableItem: DownloadableItem){
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getSize()!.toString()!;
-;
+    var size: string = this.downloadableItem!.getSize()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -233,8 +233,7 @@ public constructor (downloadableItem: DownloadableItem){
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getValidTime()!.toString()!;
-;
+    var size: string = this.downloadableItem!.getValidTime()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -269,8 +268,7 @@ public constructor (downloadableItem: DownloadableItem){
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getRetries()!.toString()!;
-;
+    var size: string = this.downloadableItem!.getRetries()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -322,8 +320,7 @@ public constructor (downloadableItem: DownloadableItem){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.downloadableItem!.getId() == 
@@ -439,8 +436,7 @@ stringBuffer!.append(" and >= 0 characters long.<br/>");
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getSize()!.toString()!;
-;
+    var size: string = this.downloadableItem!.getSize()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -471,8 +467,7 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getValidTime()!.toString()!;
-;
+    var size: string = this.downloadableItem!.getValidTime()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)
@@ -503,8 +498,7 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                                 
                         else {
                             
-    var size: string = this.downloadableItem!.getRetries()!.toString()!;
-;
+    var size: string = this.downloadableItem!.getRetries()!.toString()!;;
     
 
                         if(size.length < 1 || size.length > AbSqlData.MAXNUM)

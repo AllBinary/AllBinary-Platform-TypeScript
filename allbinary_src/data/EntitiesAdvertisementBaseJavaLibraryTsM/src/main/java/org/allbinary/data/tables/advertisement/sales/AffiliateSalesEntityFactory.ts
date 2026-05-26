@@ -58,8 +58,7 @@ export class AffiliateSalesEntityFactory
 
     public static getInstance(): AffiliateSalesEntityInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -78,8 +77,7 @@ export class AffiliateSalesEntityFactory
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "AffiliateEntityFactory", commonStrings!.GET_INSTANCE, e);
     
@@ -95,6 +93,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "AffiliateEntityFactory", commonStrings!.
 }
 
 }
+
 
 private constructor (){
 

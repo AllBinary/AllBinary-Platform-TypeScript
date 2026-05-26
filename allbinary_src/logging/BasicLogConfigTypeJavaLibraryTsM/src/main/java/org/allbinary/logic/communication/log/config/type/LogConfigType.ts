@@ -46,9 +46,10 @@ export class LogConfigType
          {
         
 
-    private name: string
+    private name: string;
 
-    private description: string
+    private description: string;
+
 public constructor (name: string, description: string){
 
             super();

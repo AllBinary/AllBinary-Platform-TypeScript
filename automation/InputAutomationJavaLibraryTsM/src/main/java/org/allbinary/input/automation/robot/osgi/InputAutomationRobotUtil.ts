@@ -56,12 +56,10 @@ export class InputAutomationRobotUtil
             
     public static getChangeEvent(inputRobotInterface: InputRobotInterface): InputAutomationRobotChangeEvent{
 
-    var inputAutomationRobotInterfaceWrapper: InputAutomationRobotInterfaceWrapper = new InputAutomationRobotInterfaceWrapper(inputRobotInterface);
-;
+    var inputAutomationRobotInterfaceWrapper: InputAutomationRobotInterfaceWrapper = new InputAutomationRobotInterfaceWrapper(inputRobotInterface);;
     
 
-    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = new InputAutomationRobotChangeEvent(inputAutomationRobotInterfaceWrapper);
-;
+    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = new InputAutomationRobotChangeEvent(inputAutomationRobotInterfaceWrapper);;
     
 
 
@@ -70,6 +68,7 @@ export class InputAutomationRobotUtil
                         return inputAutomationRobotChangeEvent;
     
 }
+
 
 private constructor (){
 

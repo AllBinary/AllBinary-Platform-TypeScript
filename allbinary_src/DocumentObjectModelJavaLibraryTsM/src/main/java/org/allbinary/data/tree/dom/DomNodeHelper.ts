@@ -59,8 +59,7 @@ export class DomNodeHelper
 
     public static getFirstChildElement(parentNode: Node): Node{
 
-    var node: Node = parentNode!.getFirstChild()!;
-;
+    var node: Node = parentNode!.getFirstChild()!;;
     
 
                         if(node != 
@@ -69,16 +68,14 @@ export class DomNodeHelper
                         
                                     {
                                     
-    var nodeList: NodeList = parentNode!.getChildNodes()!;
-;
+    var nodeList: NodeList = parentNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 node= nodeList!.item(index);
     
@@ -108,8 +105,7 @@ node= nodeList!.item(index);
 
     public static getTextNodeValue(node: Node): string{
 
-    var nodeTextNode: Node = node.getFirstChild()!;
-;
+    var nodeTextNode: Node = node.getFirstChild()!;;
     
 
                         if(nodeTextNode != 
@@ -143,8 +139,7 @@ node= nodeList!.item(index);
             
     public static getTextNodeValue(nodeName: string, nodeList: NodeList): string{
 
-    var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
-;
+    var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;;
     
 
 
@@ -157,24 +152,20 @@ node= nodeList!.item(index);
 
     public static getTextNodesValue(node: Node): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var nodeList: NodeList = node.getChildNodes()!;
-;
+    var nodeList: NodeList = node.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var nodeTextNode: Node = nodeList!.item(index)!;
-;
+    var nodeTextNode: Node = nodeList!.item(index)!;;
     
 
                         if(nodeTextNode!.getNodeType() == Node.TEXT_NODE)
@@ -203,6 +194,7 @@ index < nodeList!.getLength(); index++)
                         return stringBuffer!.toString();;
     
 }
+
 
 private constructor (){
 

@@ -57,6 +57,7 @@ export class InventoryRequestHelperFactory extends TagHelperFactory {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();

@@ -81,6 +81,7 @@ export class WindowsHardware
             extends Object
          implements HardwareInterface {
         
+
 public constructor (){
 
             super();

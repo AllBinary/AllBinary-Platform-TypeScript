@@ -100,7 +100,8 @@ export class VisibleCellPositionsSingleton
 
     private paintSimpleTiledLayer: SimpleTiledLayer = this.ALL_VISIBLE_TILEDLAYER;
 
-    private currentIndex: number= 0
+    private currentIndex: number= 0;
+
 private constructor (){
 
             super();
@@ -117,12 +118,10 @@ this.paintSimpleTiledLayer= this.ALL_VISIBLE_TILEDLAYER;
 this.currentIndex= 0;
     
 
-    var rows: number = simpleTiledLayer!.getRows()!;
-;
+    var rows: number = simpleTiledLayer!.getRows()!;;
     
 
-    var columns: number = simpleTiledLayer!.getColumns()!;
-;
+    var columns: number = simpleTiledLayer!.getColumns()!;;
     
 this.stationaryVisibleCellPositions= new Array(rows) [columns];
     
@@ -163,12 +162,10 @@ this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy());
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;
-;
+    var cellPosition: CellPosition = list.get(index) as CellPosition;;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
     
@@ -183,12 +180,10 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;
-;
+    var cellPosition: CellPosition = list.get(index) as CellPosition;;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]--;
     
@@ -203,8 +198,7 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
                         
                                     {
                                     
-    var temp: number[][] = this.currentlyVisibleCellPositions;
-;
+    var temp: number[][] = this.currentlyVisibleCellPositions;;
     
 this.currentlyVisibleCellPositions= this.visibleCellPositions;
     
@@ -215,16 +209,14 @@ this.visibleCellPositions= temp;
 
 
                         for (
-    var index: number = this.visibleCellPositions!.length -1;
-index >= 0; index--)
+    var index: number = this.visibleCellPositions!.length -1;index >= 0; index--)
         {
 
 
 
 
                         for (
-    var index2: number = this.visibleCellPositions[0]!.length -1;
-index2 >= 0; index2--)
+    var index2: number = this.visibleCellPositions[0]!.length -1;index2 >= 0; index2--)
         {
 this.visibleCellPositions[index]![index2]= this.stationaryVisibleCellPositions[index]![index2]!;
     
@@ -282,12 +274,10 @@ this.currentIndex++;
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index) as CellPosition;
-;
+    var cellPosition: CellPosition = list.get(index) as CellPosition;;
     
 this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
     

@@ -69,6 +69,7 @@ export class InventoryHelperFactory
     
 }
 
+
 private constructor (){
 
             super();

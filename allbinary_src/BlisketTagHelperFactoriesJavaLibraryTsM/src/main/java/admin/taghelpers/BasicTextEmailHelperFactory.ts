@@ -57,6 +57,7 @@ export class BasicTextEmailHelperFactory extends TagHelperFactory {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();

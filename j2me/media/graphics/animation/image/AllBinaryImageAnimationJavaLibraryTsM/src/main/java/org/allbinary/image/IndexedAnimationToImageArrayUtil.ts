@@ -57,20 +57,17 @@ export class IndexedAnimationToImageArrayUtil
             
     public static getInstance(width: number, height: number, sequentialAnimationInterface: IndexedAnimation): Image[]{
 
-    var size: number = sequentialAnimationInterface!.getAnimationSize()!;
-;
+    var size: number = sequentialAnimationInterface!.getAnimationSize()!;;
     
 
-    var imageArray: Image[] = new Array(size);
-;
+    var imageArray: Image[] = new Array(size);;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 sequentialAnimationInterface!.setFrame(index);
     

@@ -71,39 +71,40 @@ export class Payment
          implements PaymentInterface, DomNodeInterface {
         
 
-    private name: string
+    private name: string;
 
-    private expiration: string
+    private expiration: string;
 
-    private encryption: string
+    private encryption: string;
 
-    private number: string
+    private number: string;
 
-    private id: string
+    private id: string;
 
-    private type: string
+    private type: string;
 
-    private tenderType: string
+    private tenderType: string;
 
-    private transactionType: string
+    private transactionType: string;
 
-    private aba: string
+    private aba: string;
 
-    private account: string
+    private account: string;
 
-    private accountType: string
+    private accountType: string;
 
-    private authorizationCode: string
+    private authorizationCode: string;
 
-    private checkNumber: string
+    private checkNumber: string;
 
-    private checkType: string
+    private checkType: string;
 
-    private driversLicense: string
+    private driversLicense: string;
 
-    private magneticInkCheckReader: string
+    private magneticInkCheckReader: string;
 
     private isDefault: boolean = false;
+
 public constructor (payment: HashMap<any, any>){
 
             super();
@@ -120,8 +121,7 @@ this.number= new SuperCrypt(new Integer(this.encryption).intValue()).decrypt(pay
 this.id= payment.get(PaymentData.ID) as string;
     
 
-    var def: string = payment.get(EntryData.getInstance()!.DEFAULT) as string;
-;
+    var def: string = payment.get(EntryData.getInstance()!.DEFAULT) as string;;
     
 
                         if(def != 
@@ -162,6 +162,7 @@ this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER) as 
     
 }
 
+
 public constructor (request: ServletRequest){
 
             super();
@@ -195,6 +196,7 @@ this.magneticInkCheckReader= request.getParameter(PaymentData.MAGNETICINKCHECKRE
     
 }
 
+
 public constructor (){
 
             super();
@@ -203,12 +205,10 @@ public constructor (){
 
     public isValid(): Boolean{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var aFalse: Boolean = Boolean.FALSE;
-;
+    var aFalse: Boolean = Boolean.FALSE;;
     
 
                         if(this.name == 
@@ -569,8 +569,7 @@ this.number= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(PaymentData.NAME, this.name);
     
@@ -626,12 +625,10 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, PaymentData.PAYMENT, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, PaymentData.PAYMENT, hashMap)!;;
     
 
 

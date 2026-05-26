@@ -65,6 +65,7 @@ export class BasicMenuInputProcessor extends PlayerGameInput implements BaseMoti
     public readonly motionGestureEventList: BasicArrayList = new BasicArrayListD();
 
     private canvas: Canvas = NullCanvas.NULL_CANVAS;
+
 protected constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: Canvas){
             super(gameKeyEventList, new BasicArrayListD(), playerInputId);
                     

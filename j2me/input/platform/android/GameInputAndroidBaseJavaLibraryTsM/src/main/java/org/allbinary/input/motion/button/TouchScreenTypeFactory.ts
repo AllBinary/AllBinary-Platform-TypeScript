@@ -70,24 +70,19 @@ export class TouchScreenTypeFactory
 
     public update(activity: Activity){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
-;
+    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
     
 
-    var touchScreenTypesFactory: TouchScreenTypesFactory = TouchScreenTypesFactory.getInstance()!;
-;
+    var touchScreenTypesFactory: TouchScreenTypesFactory = TouchScreenTypesFactory.getInstance()!;;
     
 
-    var configuration: Configuration = activity.getResources()!.getConfiguration()!;
-;
+    var configuration: Configuration = activity.getResources()!.getConfiguration()!;;
     
 
-    var touchScreen: number = configuration.touchscreen;
-;
+    var touchScreen: number = configuration.touchscreen;;
     
 
                         if(touchScreen == Configuration.TOUCHSCREEN_FINGER)

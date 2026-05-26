@@ -66,29 +66,27 @@ export class EmailServerConfigurationView
          implements DomNodeInterface {
         
 
-    private emailServerConfigurationInterface: EmailServerConfigurationInterface
+    private emailServerConfigurationInterface: EmailServerConfigurationInterface;
+
 public constructor (node: Node){
 
             super();
         
-    var childNodeList: NodeList = node.getChildNodes()!;
-;
+    var childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var server: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.SERVER, childNodeList)!;
-;
+    var server: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.SERVER, childNodeList)!;;
     
 
-    var accountName: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.ACCOUNT, childNodeList)!;
-;
+    var accountName: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.ACCOUNT, childNodeList)!;;
     
 
-    var password: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.PASSWORD, childNodeList)!;
-;
+    var password: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.PASSWORD, childNodeList)!;;
     
 this.emailServerConfigurationInterface= new EmailServerConfiguration(accountName, password, server) as EmailServerConfigurationInterface;
     
 }
+
 
 public constructor (emailServerConfigurationInterface: EmailServerConfigurationInterface){
 
@@ -112,16 +110,13 @@ public constructor (emailServerConfigurationInterface: EmailServerConfigurationI
             
     public toXmlNode(document: Document): Node{
 
-    var emailConfigurationMapping: EmailServerConfigurationMapping = new EmailServerConfigurationMapping(this.emailServerConfigurationInterface);
-;
+    var emailConfigurationMapping: EmailServerConfigurationMapping = new EmailServerConfigurationMapping(this.emailServerConfigurationInterface);;
     
 
-    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNodeWithValueNodes(document, EmailServerConfigurationData.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNodeWithValueNodes(document, EmailServerConfigurationData.NAME, hashMap)!;;
     
 
 

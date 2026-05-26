@@ -63,7 +63,8 @@ export class AbstractInputRobot
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private helpSet: HelpSet
+    private helpSet: HelpSet;
+
 public constructor (helpSet: HelpSet){
 
             super();
@@ -94,8 +95,7 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveM
             
     public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
 
-    var point: Point = PointHelper.getCenterPoint(rectangle)!;
-;
+    var point: Point = PointHelper.getCenterPoint(rectangle)!;;
     
 this.mouseMove(point.x +x, point.y +y);
     

@@ -47,6 +47,7 @@ import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visi
         
 export class TextItemVisitor extends Visitor {
         
+
 public constructor (){
 
             super();
@@ -55,8 +56,7 @@ public constructor (){
 
     public visit(anyType: any = {}): any{
 
-    var value: string = anyType as string;
-;
+    var value: string = anyType as string;;
     
 
                         if(value.length < 2)

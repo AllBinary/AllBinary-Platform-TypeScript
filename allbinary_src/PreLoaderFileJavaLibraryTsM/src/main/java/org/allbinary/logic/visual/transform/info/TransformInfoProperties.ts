@@ -48,17 +48,18 @@ export class TransformInfoProperties
          {
         
 
-    private name: string
+    private name: string;
 
-    private label: string
+    private label: string;
 
-    private description: string
+    private description: string;
 
-    private objectFileName: string
+    private objectFileName: string;
 
-    private objectConfigFileName: string
+    private objectConfigFileName: string;
 
-    private templateFileName: string
+    private templateFileName: string;
+
 public constructor (name: string, label: string, description: string, objectFileName: string, objectConfigFileName: string, templateFileName: string){
 
             super();

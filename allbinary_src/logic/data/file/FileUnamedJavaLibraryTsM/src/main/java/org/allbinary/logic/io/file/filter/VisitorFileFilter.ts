@@ -56,7 +56,8 @@ export class VisitorFileFilter
          implements FileFilter {
         
 
-    private booleanVisitorInterface: VisitorInterface
+    private booleanVisitorInterface: VisitorInterface;
+
 public constructor (booleanVisitorInterface: VisitorInterface){
 
             super();
@@ -67,14 +68,12 @@ public constructor (booleanVisitorInterface: VisitorInterface){
 
     public accept(file: File): boolean{
 
-    var abFile: AbFile = FileWrapperUtil.wrapFile(file)!;
-;
+    var abFile: AbFile = FileWrapperUtil.wrapFile(file)!;;
     
 
     var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile)visit as Boolean
 visit.
-                    .valueOf()!;
-;
+                    .valueOf()!;;
     
 
 
@@ -89,8 +88,7 @@ visit.
 
     var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file)visit as Boolean
 visit.
-                    .valueOf()!;
-;
+                    .valueOf()!;;
     
 
 

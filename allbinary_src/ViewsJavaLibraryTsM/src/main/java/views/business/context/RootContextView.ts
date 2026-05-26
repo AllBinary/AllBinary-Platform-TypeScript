@@ -67,6 +67,7 @@ export class RootContextView extends HttpStoreComponentView implements Transform
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -100,12 +101,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var viewName: string = this.getName()!;
-;
+    var viewName: string = this.getName()!;;
     
 
-    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, viewName, this.getTransformInfoInterface())!;
-;
+    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, viewName, this.getTransformInfoInterface())!;;
     
 
 
@@ -142,12 +141,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
-;
+    var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
     
 
-    var componentsVector: Vector = objectConfig!.getTransforms()!;
-;
+    var componentsVector: Vector = objectConfig!.getTransforms()!;;
     
 
                         if(componentsVector!.length == 0)
@@ -174,12 +171,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var transformInfoInterface: TransformInfo = componentsVector!.get(0) as TransformInfo;
-;
+    var transformInfoInterface: TransformInfo = componentsVector!.get(0) as TransformInfo;;
     
 
-    var viewName: string = transformInfoInterface!.getName()!;
-;
+    var viewName: string = transformInfoInterface!.getName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

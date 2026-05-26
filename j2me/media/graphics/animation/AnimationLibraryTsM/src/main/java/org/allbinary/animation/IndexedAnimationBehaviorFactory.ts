@@ -47,9 +47,10 @@ import { AnimationBehavior } from './AnimationBehavior.js';
 export class IndexedAnimationBehaviorFactory extends AnimationBehaviorFactory {
         
 
-    public frameDelayTime: number
+    public frameDelayTime: number;
 
-    public loopTotal: number
+    public loopTotal: number;
+
 public constructor (loopTotal: number, frameDelayTime: number){
 
             super();

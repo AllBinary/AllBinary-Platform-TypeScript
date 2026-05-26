@@ -33,6 +33,7 @@ import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class NullIndexedAnimation extends IndexedAnimation {
         
+
 public constructor (animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     

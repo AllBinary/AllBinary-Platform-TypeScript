@@ -97,8 +97,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCE
 
     public getIntent(command: Command): Intent{
 
-    var url: string = this.hashtable.get(command) as string;
-;
+    var url: string = this.hashtable.get(command) as string;;
     
 
 

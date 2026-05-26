@@ -100,22 +100,18 @@ export class DomDocumentFileHelper
 
     var dataOutputStream: AbDataOutputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-;
+    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-;
+    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 
-    var domSource: DOMSource = new DOMSource(document);
-;
+    var domSource: DOMSource = new DOMSource(document);;
     
 
                         if(file.isFile())
@@ -131,8 +127,7 @@ file.createNewFile();
 dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstance(file);
     
 
-    var streamResult: StreamResult = new StreamResult(dataOutputStream);
-;
+    var streamResult: StreamResult = new StreamResult(dataOutputStream);;
     
 copyTransformer!.transform(domSource, streamResult);
     
@@ -156,6 +151,7 @@ dataOutputStream!.flush();
          }
         
 }
+
 
 private constructor (){
 

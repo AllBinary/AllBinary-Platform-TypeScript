@@ -51,6 +51,7 @@ import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
 
 export class RTSPlayerRightGameInputProcessor extends RTSPlayerGameInputProcessor {
         
+
 public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
             super(rtsPlayerGameInput);
                     

@@ -53,6 +53,7 @@ export class UserConfigurationData
     public static readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
 
     public static readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
+
 private constructor (){
 
             super();

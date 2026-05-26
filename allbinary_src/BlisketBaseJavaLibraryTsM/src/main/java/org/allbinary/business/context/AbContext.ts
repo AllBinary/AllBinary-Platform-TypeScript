@@ -62,9 +62,10 @@ export class AbContext
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
 
-    private pageContext: PageContext
+    private pageContext: PageContext;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();

@@ -53,6 +53,7 @@ import { CompoundRotationAnimation } from './CompoundRotationAnimation.js';
 
 export class CompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
                     

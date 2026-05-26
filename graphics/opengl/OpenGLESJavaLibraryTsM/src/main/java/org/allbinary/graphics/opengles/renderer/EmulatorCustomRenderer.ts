@@ -73,8 +73,7 @@ export class EmulatorCustomRenderer
 this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED);
     
 
-    var initEmulatorFactory: InitEmulatorFactory = InitEmulatorFactory.getInstance()!;
-;
+    var initEmulatorFactory: InitEmulatorFactory = InitEmulatorFactory.getInstance()!;;
     
 
                         if(!initEmulatorFactory!.isInitEmulator())
@@ -83,8 +82,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFA
                                     
         try {
             
-    var WAIT_FOR_EMULATOR: string = "Waiting on Emulator Initialization";
-;
+    var WAIT_FOR_EMULATOR: string = "Waiting on Emulator Initialization";;
     
 
         while(!initEmulatorFactory!.isInitEmulator())

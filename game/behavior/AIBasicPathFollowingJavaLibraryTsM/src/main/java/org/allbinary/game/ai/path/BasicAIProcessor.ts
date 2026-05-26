@@ -67,15 +67,16 @@ export class BasicAIProcessor
          {
         
 
-    private name: string
+    private name: string;
 
-    private geographicMapCellHistory: GeographicMapCellHistory
+    private geographicMapCellHistory: GeographicMapCellHistory;
 
-    private geographicMapCellPositionBasicArrayList: BasicArrayList
+    private geographicMapCellPositionBasicArrayList: BasicArrayList;
 
-    private geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo
+    private geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo;
 
-    private basicAI: BasicDirectionAIHelper
+    private basicAI: BasicDirectionAIHelper;
+
 public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number){
 
             super();
@@ -124,16 +125,13 @@ this.update();
             
     goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 
-    var keyDirection: number =  -1;
-;
+    var keyDirection: number =  -1;;
     
 
-    var goToGeographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPathHistoryInfo!.getNextChosenOnPathGeographicMapCellPosition()!;
-;
+    var goToGeographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPathHistoryInfo!.getNextChosenOnPathGeographicMapCellPosition()!;;
     
 
-    var geographicMapDirectionData: Direction = this.geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;
-;
+    var geographicMapDirectionData: Direction = this.geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;;
     
 
                         if(geographicMapDirectionData == DirectionFactory.getInstance()!.NOT_BORDERED_WITH)
@@ -167,8 +165,7 @@ this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosit
             
     public processAI(myManager: AllBinaryLayerManager, currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 
-    var keyDirection: number =  -1;
-;
+    var keyDirection: number =  -1;;
     
 
                         if(this.geographicMapCellPositionBasicArrayList!.contains(currentGeographicMapCellPosition))

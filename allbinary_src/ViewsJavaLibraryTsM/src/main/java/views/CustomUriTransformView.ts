@@ -78,9 +78,10 @@ export class CustomUriTransformView
 
     readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
 
-    private transformDocumentInterface: TransformDocumentInterface
+    private transformDocumentInterface: TransformDocumentInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
@@ -158,12 +159,10 @@ this.transformDocumentInterface= transformDocumentInterface;
             
     public getDoc(): Document{
 
-    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;
-;
+    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;;
     
 
-    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;
-;
+    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;;
     
 
                         if(dataNode != 
@@ -191,12 +190,10 @@ this.transformDocumentInterface= transformDocumentInterface;
 
         try {
             
-    var success: string = DomDocumentHelper.toString(this.getDoc())!;
-;
+    var success: string = DomDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
-;
+    var result: string = new TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 

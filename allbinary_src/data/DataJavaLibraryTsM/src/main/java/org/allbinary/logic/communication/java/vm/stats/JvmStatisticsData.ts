@@ -69,6 +69,7 @@ export class JvmStatisticsData
     public static readonly MAX_MEMORY_MEGABYTES: string = JvmStatisticsData.JVM_STATISTICS +"MAX_MEMORY_MEGABYTES";
 
     public static readonly NUMBER_OF_THREADS: string = JvmStatisticsData.JVM_STATISTICS +"NUMBER_OF_THREADS";
+
 private constructor (){
             super();
                     

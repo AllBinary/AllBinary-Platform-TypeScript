@@ -61,7 +61,8 @@ export class ValidationViewHelper extends ViewHelper implements ValidationCompon
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private viewInterface: ValidationComponentInterface
+    private viewInterface: ValidationComponentInterface;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             super(hashMap, pageContext);
                     

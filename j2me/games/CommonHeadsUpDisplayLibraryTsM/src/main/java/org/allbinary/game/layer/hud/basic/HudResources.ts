@@ -57,6 +57,7 @@ export class HudResources
     
 }
 
+
 private constructor (){
 
             super();

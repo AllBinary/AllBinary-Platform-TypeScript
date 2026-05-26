@@ -57,6 +57,7 @@ export class InventoryRequestHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.InventoryRequestHelper";
 
     private static readonly FACTORYNAME: string = "InventoryRequestHelperFactory";
+
 public constructor (){
 
             super();

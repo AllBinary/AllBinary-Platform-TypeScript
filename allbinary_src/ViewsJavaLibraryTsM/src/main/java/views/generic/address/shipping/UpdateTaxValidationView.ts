@@ -68,6 +68,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 
 export class UpdateTaxValidationView extends ShippingAddressView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -83,8 +84,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 this.streetAddress= new StreetAddress(this.getRequest());
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;;
     
 
                         if(TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.isValid(this.streetAddress, storeFrontInterface) == Boolean.FALSE)
@@ -100,12 +100,10 @@ this.streetAddress= new StreetAddress(this.getRequest());
                                     }
                                 
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-;
+    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: Vector = billingAddressesEntity!.get()!;
-;
+    var streetAddressList: Vector = billingAddressesEntity!.get()!;;
     
 
                         if(streetAddressList == 
@@ -123,24 +121,20 @@ this.streetAddress= new StreetAddress(this.getRequest());
                                     }
                                 
 
-    var count: number = 0;
-;
+    var count: number = 0;;
     
 
-    var size: number = streetAddressList!.length!;
-;
+    var size: number = streetAddressList!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-;
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)

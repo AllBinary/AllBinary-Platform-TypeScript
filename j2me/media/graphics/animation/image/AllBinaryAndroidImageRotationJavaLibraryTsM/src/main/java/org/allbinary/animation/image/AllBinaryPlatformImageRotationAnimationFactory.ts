@@ -50,6 +50,7 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
 
 export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryAndroidImageRotationAnimationFactory {
         
+
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
             super(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);
                     

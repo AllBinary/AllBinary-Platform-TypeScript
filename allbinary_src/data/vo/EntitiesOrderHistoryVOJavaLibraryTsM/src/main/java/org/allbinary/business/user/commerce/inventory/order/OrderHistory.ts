@@ -91,31 +91,32 @@ import { OrderHistoryData } from './OrderHistoryData.js';
 export class OrderHistory extends Order implements OrderHistoryInterface {
         
 
-    private userName: string
+    private userName: string;
 
-    private shippingAddress: StreetAddress
+    private shippingAddress: StreetAddress;
 
-    private billingAddress: StreetAddress
+    private billingAddress: StreetAddress;
 
-    private payment: Payment
+    private payment: Payment;
 
-    private shipDate: string
+    private shipDate: string;
 
-    private orderDate: string
+    private orderDate: string;
 
-    private transDate: string
+    private transDate: string;
 
-    private cancelDate: string
+    private cancelDate: string;
 
-    private status: string
+    private status: string;
 
-    private subTotal: Money
+    private subTotal: Money;
 
-    private shippingCost: Money
+    private shippingCost: Money;
 
-    private taxes: Money
+    private taxes: Money;
 
-    private total: Money
+    private total: Money;
+
 public constructor (basketInterface: BasketInterface){
             super(basketInterface);
                     
@@ -123,6 +124,7 @@ public constructor (basketInterface: BasketInterface){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (basketInterface: BasketInterface, orderHistory: OrderHistory){
             super(orderHistory!.getStoreName(), basketInterface, orderHistory!.getId(), orderHistory!.getShippingMethod(), orderHistory!.getSpecial(), orderHistory!.getPaymentMethod());
@@ -165,6 +167,7 @@ super.setStoreComments(orderHistory!.getStoreComments() as string);
 super.setStoreCancelComments(orderHistory!.getStoreCancelComments() as string);
     
 }
+
 
 public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap<any, any>){
             super(orderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME) as string, basketInterface, orderHistoryHashMap!.get(OrderData.ID) as string, orderHistoryHashMap!.get(ShippingMethodData.NAME) as string, orderHistoryHashMap!.get(EntryData.getInstance()!.SPECIAL) as string, orderHistoryHashMap!.get(PaymentData.METHOD) as string);
@@ -419,8 +422,7 @@ this.total= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(UserData.USERNAME, this.userName);
     
@@ -463,37 +465,30 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;
-;
+    var keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;
-;
+    var keyArray: any[] = keySet!.()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
-    var node: Node = document.createElement(OrderHistoryData.ORDERHISTORY)!;
-;
+    var node: Node = document.createElement(OrderHistoryData.ORDERHISTORY)!;;
     
 node.appendChild(super.toXmlNode(document));
     
 
-    var billingAddressNode: Node = document.createElement(BillingAddressData.BILLINGADDRESS)!;
-;
+    var billingAddressNode: Node = document.createElement(BillingAddressData.BILLINGADDRESS)!;;
     
 billingAddressNode!.appendChild(this.billingAddress!.toXmlNode(document));
     
 
-    var shippingAddressNode: Node = document.createElement(ShippingAddressData.SHIPPINGADDRESS)!;
-;
+    var shippingAddressNode: Node = document.createElement(ShippingAddressData.SHIPPINGADDRESS)!;;
     
 shippingAddressNode!.appendChild(this.shippingAddress!.toXmlNode(document));
     
@@ -508,16 +503,13 @@ node.appendChild(this.payment.toXmlNode(document));
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var name: string = keyArray[i]! as string;
-;
+    var name: string = keyArray[i]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;
-;
+    var value: string = hashMap!.get(name) as string;;
     
 value= StringUtil.getInstance()!.getNonNull(value);
     

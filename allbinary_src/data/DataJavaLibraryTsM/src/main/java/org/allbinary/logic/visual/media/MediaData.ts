@@ -58,8 +58,7 @@ export class MediaData
             
     public static get(a_Name: string): MediaData{
 
-    var mediaData: MediaData = MediaData.hashMap!.get(a_Name) as MediaData;
-;
+    var mediaData: MediaData = MediaData.hashMap!.get(a_Name) as MediaData;;
     
 
                         if(mediaData != 
@@ -108,11 +107,12 @@ export class MediaData
 }
 
 
-    private name: string
+    private name: string;
 
-    private type: string
+    private type: string;
 
-    private extension: string
+    private extension: string;
+
 protected constructor (a_Name: string){
 
             super();

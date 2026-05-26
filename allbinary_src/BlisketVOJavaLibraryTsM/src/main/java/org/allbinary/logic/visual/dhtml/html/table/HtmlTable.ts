@@ -91,21 +91,22 @@ export class HtmlTable extends HtmlTag {
 
     private numberOfColumns: number = 0;
 
-    private before: string
+    private before: string;
 
-    private border: string
+    private border: string;
 
-    private cellpadding: string
+    private cellpadding: string;
 
-    private cellspacing: string
+    private cellspacing: string;
 
-    private style: string
+    private style: string;
 
-    private name: string
+    private name: string;
 
-    private after: string
+    private after: string;
 
-    private htmlRowsVector: Vector
+    private htmlRowsVector: Vector;
+
 public constructor (before: string, cellpadding: string, cellspacing: string, after: string){
 
             super();
@@ -141,16 +142,13 @@ this.htmlRowsVector!.add(htmlRow);
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;
-;
+    var result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
-;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
     
 result= this.before;
     
@@ -163,16 +161,13 @@ result += " ";
 
 
                         for (
-    var i: number = 0;
-i < attributeKeys!.length; i++)
+    var i: number = 0;i < attributeKeys!.length; i++)
         {
 
-    var key: string = attributeKeys[i]! as string;
-;
+    var key: string = attributeKeys[i]! as string;;
     
 
-    var value: string = otherAttributes!.get(key) as string;
-;
+    var value: string = otherAttributes!.get(key) as string;;
     
 
                         if(value != 
@@ -196,16 +191,14 @@ result += "\" ";
 result += this.END;
     
 
-    var size: number = this.htmlRowsVector!.length!;
-;
+    var size: number = this.htmlRowsVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 result += this.htmlRowsVector!.get(i)!.toString();
     

@@ -56,7 +56,8 @@ export class FtpConfigurationMapping
          implements TableMappingInterface {
         
 
-    private ftpConfigurationInterface: FtpConfigurationInterface
+    private ftpConfigurationInterface: FtpConfigurationInterface;
+
 public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
             super();
@@ -67,8 +68,7 @@ public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(FtpConfigurationData.SERVER, this.ftpConfigurationInterface!.getServer());
     
@@ -103,8 +103,7 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
             
     public toVector(): Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.add(this.ftpConfigurationInterface!.getServer());
     

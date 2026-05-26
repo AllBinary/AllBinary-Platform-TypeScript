@@ -48,6 +48,7 @@ import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayL
 
 export class ExcludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {
         
+
 public constructor (filterStringBasicArrayList: BasicArrayList){
             super(filterStringBasicArrayList);
                     
@@ -82,20 +83,17 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
     public visit(file: AbFile, fileNameString: string): Boolean{
 
-    var fileNameAndExtension: string = file.getPath()!;
-;
+    var fileNameAndExtension: string = file.getPath()!;;
     
 
                         if(fileNameAndExtension!.length > fileNameString!.length)
                         
                                     {
                                     
-    var startIndex: number = fileNameAndExtension!.length -fileNameString!.length;
-;
+    var startIndex: number = fileNameAndExtension!.length -fileNameString!.length;;
     
 
-    var fileName: string = fileNameAndExtension!.substring(startIndex)!;
-;
+    var fileName: string = fileNameAndExtension!.substring(startIndex)!;;
     
 
                         if(fileName!.compareTo(fileNameString) == 0)

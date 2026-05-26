@@ -53,15 +53,15 @@ import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
 export class ProgressRunnable extends ARunnable {
         
 
-    readonly midletActivity: SimpleProgressActivityInterface
+    readonly midletActivity: SimpleProgressActivityInterface;
 
-    readonly progressCanvas: ProgressCanvas
+    readonly progressCanvas: ProgressCanvas;
+
 public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
 
             super();
         
-    var midletActivity2: MidletActivityBase = midletActivity as MidletActivityBase;
-;
+    var midletActivity2: MidletActivityBase = midletActivity as MidletActivityBase;;
     
 this.midletActivity= midletActivity2 as SimpleProgressActivityInterface;
     

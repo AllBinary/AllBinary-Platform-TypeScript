@@ -58,6 +58,7 @@ export class BuildingSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/building.wav");
                     

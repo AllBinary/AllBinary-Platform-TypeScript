@@ -66,15 +66,16 @@ export class CountedLayersHudPaintable
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
 
-    private readonly partInterfaceArray: PartInterface[]
+    private readonly partInterfaceArray: PartInterface[];
 
-    private readonly countedTotalStringColor: number
+    private readonly countedTotalStringColor: number;
 
-    private readonly countedPartsBorder: number
+    private readonly countedPartsBorder: number;
 
-    private readonly startIndex: number
+    private readonly startIndex: number;
 
-    private readonly dropSize: number
+    private readonly dropSize: number;
+
 public constructor (partInterfaceArray: PartInterface[], dropSize: number, startIndex: number, countedTotalStringColor: number, countedPartsBorder: number){
 
             super();
@@ -93,8 +94,7 @@ this.dropSize= dropSize;
 
     public paint(graphics: Graphics){
 
-    var height: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var height: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
     
 
                         if(this.dropSize > this.myFont!.DEFAULT_CHAR_HEIGHT)
@@ -106,49 +106,39 @@ this.dropSize= dropSize;
                                     }
                                 
 
-    var lastWidth: number = DisplayInfoSingleton.getInstance()!.getLastWidth()!;
-;
+    var lastWidth: number = DisplayInfoSingleton.getInstance()!.getLastWidth()!;;
     
 
-    var count: number = 0;
-;
+    var count: number = 0;;
     
 
-    var widthEdge: number = lastWidth -this.dropSize;
-;
+    var widthEdge: number = lastWidth -this.dropSize;;
     
 
-    var y: number= 0
-;
+    var y: number= 0;;
     
 
     var size: number = this.partInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart
-;
+    var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart;;
     
 
-    var pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface
-;
+    var pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface;;
     
 
-    var layerInterface: AllBinaryLayer
-;
+    var layerInterface: AllBinaryLayer;;
     
 
-    var charArray: string[]
-;
+    var charArray: string[];;
     
 
 
 
 
                         for (
-    var index: number = this.startIndex;
-index < size; index++)
+    var index: number = this.startIndex;index < size; index++)
         {
 countedLayerInterfaceFactory= this.partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart;
     

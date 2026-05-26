@@ -61,7 +61,8 @@ export class SpecialItemsHelper extends BasicTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly portion: Portion
+    private readonly portion: Portion;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -74,8 +75,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.createTable()!;
-;
+    var success: string = SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -97,8 +97,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to create table";
-;
+    var error: string = "Failed to create table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -124,8 +123,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.dropTable()!;
-;
+    var success: string = SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -147,8 +145,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to drop pricing tables";
-;
+    var error: string = "Failed to drop pricing tables";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -174,12 +171,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance(), portion)!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance(), portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -201,8 +196,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -228,12 +222,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance())!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -255,8 +247,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

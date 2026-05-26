@@ -44,6 +44,7 @@
 
 export class GameFeature extends Feature {
         
+
 public constructor (name: string){
             super(name);
                     

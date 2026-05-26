@@ -53,6 +53,7 @@ import { SimultaneousCompoundIndexedAnimation } from './SimultaneousCompoundInde
 
 export class SimultaneousCompoundIndexedAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
                     

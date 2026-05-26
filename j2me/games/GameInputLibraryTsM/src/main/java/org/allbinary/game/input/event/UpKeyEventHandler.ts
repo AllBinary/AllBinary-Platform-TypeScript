@@ -70,8 +70,7 @@ export class UpKeyEventHandler extends UpKeyEventHandlerBase {
 
     public getInstanceForDevice(deviceId: number): UpKeyEventHandlerBase{
 
-    var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
-;
+    var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;;
     
 
 
@@ -91,6 +90,7 @@ export class UpKeyEventHandler extends UpKeyEventHandlerBase {
     
 }
 
+
 private constructor (){
 
             super();
@@ -105,8 +105,7 @@ super.removeAllListeners();
 
 
                         for (
-    var index: number = UpKeyEventHandler.instanceArray!.length -1;
-index >= 0; index--)
+    var index: number = UpKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 UpKeyEventHandler.instanceArray[index]!.removeAllListeners();
     
@@ -123,8 +122,7 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
 
                         for (
-    var index: number = UpKeyEventHandler.instanceArray!.length -1;
-index >= 0; index--)
+    var index: number = UpKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 UpKeyEventHandler.instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
     
@@ -141,8 +139,7 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = UpKeyEventHandler.instanceArray!.length -1;
-index >= 0; index--)
+    var index: number = UpKeyEventHandler.instanceArray!.length -1;index >= 0; index--)
         {
 UpKeyEventHandler.instanceArray[index]!.removeListener(eventListenerInterface);
     

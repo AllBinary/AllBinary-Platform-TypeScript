@@ -56,13 +56,14 @@ import { BasicArrayList } from '../../../../../../../../org/allbinary/util/Basic
 export class BasePathFinderGraphVisitor extends PathFinderGraphVisitorBase {
         
 
-    geographicMapInterface: BasicGeographicMap
+    geographicMapInterface: BasicGeographicMap;
 
-    readonly edgeMinimum: number
+    readonly edgeMinimum: number;
 
-    readonly minPathWeight: number
+    readonly minPathWeight: number;
 
-    readonly maxPathWeight: number
+    readonly maxPathWeight: number;
+
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
@@ -87,16 +88,14 @@ this.maxPathWeight= maxPathWeight;
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 
-    var startPathFindingNode: PathFindingNode
-;
+    var startPathFindingNode: PathFindingNode;;
     
 
 
 
 
                         for (
-    var index: number = startPathFindingNodeList!.size() -1;
-index >= 0; index--)
+    var index: number = startPathFindingNodeList!.size() -1;index >= 0; index--)
         {
 startPathFindingNode= startPathFindingNodeList!.get(index) as PathFindingNode;
     

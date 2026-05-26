@@ -66,32 +66,26 @@ export class JavaHelpSetNotifier
 
     public static isNotified(helpSet: HelpSet): boolean{
 
-    var isNotified: boolean = false;
-;
+    var isNotified: boolean = false;;
     
 
-    var url: URL = helpSet!.getHelpSetURL()!;
-;
+    var url: URL = helpSet!.getHelpSetURL()!;;
     
 
-    var size: number = JavaHelpSetNotifier.vector.length!;
-;
+    var size: number = JavaHelpSetNotifier.vector.length!;;
     
 
-    var urlArray: any[] = JavaHelpSetNotifier.vector.toArray()!;
-;
+    var urlArray: any[] = JavaHelpSetNotifier.vector.toArray()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var nextURL: URL = urlArray[i]! as URL;
-;
+    var nextURL: URL = urlArray[i]! as URL;;
     
 
                         if(url.toString()!.compareTo(nextURL!.toString()) == 0)
@@ -113,6 +107,7 @@ JavaHelpSetNotifier.vector.add(url);
                         return isNotified;
     
 }
+
 
 private constructor (){
 

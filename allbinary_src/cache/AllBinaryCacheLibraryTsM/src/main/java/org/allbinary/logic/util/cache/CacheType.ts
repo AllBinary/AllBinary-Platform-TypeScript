@@ -48,9 +48,10 @@ export class CacheType
          {
         
 
-    private readonly vendor: string
+    private readonly vendor: string;
 
-    private readonly type: string
+    private readonly type: string;
+
 public constructor (vendor: string, type: string){
 
             super();
@@ -83,8 +84,7 @@ this.type= type;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CacheType: Vendor: ");
     

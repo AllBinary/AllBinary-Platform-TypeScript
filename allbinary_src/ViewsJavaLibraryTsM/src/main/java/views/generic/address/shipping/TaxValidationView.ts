@@ -64,6 +64,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 
 export class TaxValidationView extends ShippingAddressView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -75,12 +76,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public isValid(): Boolean{
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-;
+    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 
-    var streetAddressList: Vector = billingAddressesEntity!.get()!;
-;
+    var streetAddressList: Vector = billingAddressesEntity!.get()!;;
     
 
                         if(streetAddressList == 
@@ -98,20 +97,17 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var size: number = streetAddressList!.length!;
-;
+    var size: number = streetAddressList!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-;
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
                         if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)

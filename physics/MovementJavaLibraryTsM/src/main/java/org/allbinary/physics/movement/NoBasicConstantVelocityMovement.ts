@@ -52,6 +52,7 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
 
 export class NoBasicConstantVelocityMovement extends BasicConstantVelocityMovement {
         
+
 public constructor (){
             super(BasicDecimal.ZERO_BIGDECIMAL, new BasicVelocityProperties());
                     

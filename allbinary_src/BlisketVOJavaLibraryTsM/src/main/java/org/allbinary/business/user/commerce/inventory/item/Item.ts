@@ -66,19 +66,20 @@ import { OrderItemInterface } from './OrderItemInterface.js';
 export class Item extends BasicItem implements OrderItemInterface {
         
 
-    private group: string
+    private group: string;
 
-    private tax: string
+    private tax: string;
 
-    private shippingType: string
+    private shippingType: string;
 
-    private shippingCost: string
+    private shippingCost: string;
 
-    private shippedDate: string
+    private shippedDate: string;
 
-    private shippingAddress: StreetAddress
+    private shippingAddress: StreetAddress;
 
-    private special: string
+    private special: string;
+
 public constructor (itemHashMap: HashMap<any, any>){
             super(itemHashMap);
                     
@@ -89,12 +90,12 @@ this.setData(itemHashMap);
     
 }
 
+
 public constructor (){
 
             super();
         
-    var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 this.group= EMPTY;
     
@@ -235,8 +236,7 @@ this.special= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = super.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = super.toHashMap()!;;
     
 hashMap!.put(ShippingMethodData.GROUP, this.group);
     

@@ -54,13 +54,14 @@ export class Log
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 
-    private readonly specialMessage: string
+    private readonly specialMessage: string;
 
-    private readonly anyType: any
+    private readonly anyType: any;
 
-    private readonly functionName: string
+    private readonly functionName: string;
 
-    private readonly exception: any
+    private readonly exception: any;
+
 public constructor (specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
             super();
@@ -117,12 +118,10 @@ this.exception= exception;
 
     public toString(): string{
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = this.anyType!.constructor!;
-;
+    var clazz: Function = this.anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 

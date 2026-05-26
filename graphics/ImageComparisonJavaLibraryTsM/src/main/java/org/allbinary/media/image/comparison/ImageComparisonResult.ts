@@ -68,29 +68,30 @@ export class ImageComparisonResult
 
     private readonly bufferedImages: BufferedImage[] = new Array(2);
 
-    public readonly name: string
+    public readonly name: string;
 
-    public readonly isSameHeight: boolean= false
+    public readonly isSameHeight: boolean= false;
 
-    public readonly isSameWidth: boolean= false
+    public readonly isSameWidth: boolean= false;
 
-    public readonly imageHeight: number
+    public readonly imageHeight: number;
 
-    public readonly imageWidth: number
+    public readonly imageWidth: number;
 
-    private readonly nonMatchingPixelVector: Vector
+    private readonly nonMatchingPixelVector: Vector;
 
-    private readonly frameOne: Long
+    private readonly frameOne: Long;
 
-    private readonly frameTwo: Long
+    private readonly frameTwo: Long;
 
-    public pixelsThatMatch: number= 0
+    public pixelsThatMatch: number= 0;
 
-    public pixelsIgnored: number= 0
+    public pixelsIgnored: number= 0;
 
-    private tolerance: number= 0
+    private tolerance: number= 0;
 
     private matchingPercent: number =  -1;
+
 public constructor (name: string, bufferedImage: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number){
 
             super();
@@ -109,12 +110,10 @@ this.frameTwo= frameTwo;
 this.setTolerance(0);
     
 
-    var imageHeight: number = bufferedImage!.getHeight()!;
-;
+    var imageHeight: number = bufferedImage!.getHeight()!;;
     
 
-    var imageWidth: number = bufferedImage!.getWidth()!;
-;
+    var imageWidth: number = bufferedImage!.getWidth()!;;
     
 
                         if(bufferedImage!.getHeight() != bufferedImage2!.getHeight())
@@ -173,8 +172,7 @@ this.imageHeight= imageHeight;
                         
                                     {
                                     
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-;
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 this.logUtil!.putF("Images were not the same size? Most likely a resolution change.", this, this.commonStrings!.CONSTRUCTOR);
     

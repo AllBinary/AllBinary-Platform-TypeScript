@@ -91,19 +91,18 @@ export class PCClipWavPlayer extends BasicPlayer implements LineListener {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly audioInputStream: AudioInputStream
+    private readonly audioInputStream: AudioInputStream;
 
-    private readonly clip: Clip
+    private readonly clip: Clip;
+
 public constructor (inputStream: InputStream){
 
             super();
         
-    var audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);
-;
+    var audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);;
     
 
-    var clip: Clip = new NullClip();
-;
+    var clip: Clip = new NullClip();;
     
 
         try {
@@ -235,8 +234,7 @@ super.start();
             
     create(audioInputStream: AudioInputStream): Clip{
 
-    var clip: Clip = AudioSystem.getClip()!;
-;
+    var clip: Clip = AudioSystem.getClip()!;;
     
 clip.addLineListener(this);
     
@@ -317,8 +315,7 @@ this.setVolumeF((leftVolume) /100.0);
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
-;
+    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
     
 
 
@@ -343,8 +340,7 @@ this.setVolumeF((leftVolume) /100.0);
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
-;
+    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;;
     
 masterGainFloatControl!.setValue(20 *Math.log10(volume));
     
@@ -367,20 +363,17 @@ masterGainFloatControl!.setValue(20 *Math.log10(volume));
                         
                                     {
                                     
-    var size: number = this.listenersList!.size()!;
-;
+    var size: number = this.listenersList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.get(size) as PlayerListener;
-;
+    var listener: PlayerListener = this.listenersList!.get(size) as PlayerListener;;
     
 listener.playerUpdate(this, PlayerListener.END_OF_MEDIA, 
                             null);

@@ -62,6 +62,7 @@ export class AutomaticCacheInterfaceFactory
                     
 }
 
+
 private constructor (){
 
             super();

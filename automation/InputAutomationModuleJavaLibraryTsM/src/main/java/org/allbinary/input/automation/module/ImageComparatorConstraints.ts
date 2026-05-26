@@ -68,11 +68,12 @@ export class ImageComparatorConstraints
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private avoidVector: Vector
+    private avoidVector: Vector;
 
-    private maxNonMatchingPixelDeltas: number= 0
+    private maxNonMatchingPixelDeltas: number= 0;
 
-    private doImageComparisonEveryNthFrame: number
+    private doImageComparisonEveryNthFrame: number;
+
 public constructor (doImageComparisonEveryNthFrame: number){
 
             super();
@@ -104,28 +105,23 @@ this.setAvoidVector(new Vector());
 
     public isCollisionWithAvoidRectangles(rectangle: Rectangle): boolean{
 
-    var isCollsionWithAvoidRectangles: boolean = false;
-;
+    var isCollsionWithAvoidRectangles: boolean = false;;
     
 
-    var avoidVector: Vector = this.getAvoidVector()!;
-;
+    var avoidVector: Vector = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.length!;
-;
+    var size: number = avoidVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;
-;
+    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
     
 
                         if(RectangleCollisionUtil.isCollision(avoidRectangle, rectangle))
@@ -149,28 +145,23 @@ index < size; index++)
 
     public isCollisionWithAvoidRectangles(point: GPoint): boolean{
 
-    var isCollsionWithAvoidRectangles: boolean = false;
-;
+    var isCollsionWithAvoidRectangles: boolean = false;;
     
 
-    var avoidVector: Vector = this.getAvoidVector()!;
-;
+    var avoidVector: Vector = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.length!;
-;
+    var size: number = avoidVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;
-;
+    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
     
 
                         if(RectangleCollisionUtil.isCollision(avoidRectangle, point))
@@ -219,8 +210,7 @@ this.maxNonMatchingPixelDeltas= maxNonMatchingPixelDeltas;
 
     public isFrameAllowed(frame: number): boolean{
 
-    var remainder: number = ((frame +1) % this.doImageComparisonEveryNthFrame);
-;
+    var remainder: number = ((frame +1) % this.doImageComparisonEveryNthFrame);;
     
 this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageComparisonEveryNthFrame: " +this.doImageComparisonEveryNthFrame, this, "isCollisionWithAvoidRectangles");
     
@@ -263,24 +253,20 @@ this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageC
 
     public log(){
 
-    var avoidVector: Vector = this.getAvoidVector()!;
-;
+    var avoidVector: Vector = this.getAvoidVector()!;;
     
 
-    var size: number = avoidVector!.length!;
-;
+    var size: number = avoidVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;
-;
+    var avoidRectangle: Rectangle = avoidVector!.get(index) as Rectangle;;
     
 this.logUtil!.putF("Avoid Rectangle: " +avoidRectangle, this, "log");
     

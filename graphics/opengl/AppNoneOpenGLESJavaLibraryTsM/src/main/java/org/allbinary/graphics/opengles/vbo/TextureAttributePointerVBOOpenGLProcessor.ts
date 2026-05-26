@@ -61,6 +61,7 @@ export class TextureAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenG
     
 }
 
+
 public constructor (){
 
             super();

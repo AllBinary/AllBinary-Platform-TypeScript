@@ -56,6 +56,7 @@ import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visua
 
 export class ContextTransformer extends BasicTransformer {
         
+
 public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface){
             super(abeClientInformation, transformInfoInterface);
                     

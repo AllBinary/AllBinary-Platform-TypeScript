@@ -48,6 +48,7 @@ export class ExitCloseListener
             extends Object
          implements CloseJDialogListenerInterface {
         
+
 public constructor (){
 
             super();

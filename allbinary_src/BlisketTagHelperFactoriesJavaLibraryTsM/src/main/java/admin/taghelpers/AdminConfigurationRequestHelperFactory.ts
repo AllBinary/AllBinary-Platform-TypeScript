@@ -57,6 +57,7 @@ export class AdminConfigurationRequestHelperFactory extends TagHelperFactory {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();

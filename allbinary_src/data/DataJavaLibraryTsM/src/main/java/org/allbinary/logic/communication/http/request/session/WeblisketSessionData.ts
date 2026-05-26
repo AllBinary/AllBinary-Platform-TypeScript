@@ -61,6 +61,7 @@ export class WeblisketSessionData
     public static readonly REMOVABLEREENTERNEWPASSWORD: string = "SESSION_REMOVABLE_REENTER_NEW_PASSWORD";
 
     public static readonly AUTHENTICATED: string = "SESSION_AUTHENTICATED";
+
 public constructor (){
 
             super();

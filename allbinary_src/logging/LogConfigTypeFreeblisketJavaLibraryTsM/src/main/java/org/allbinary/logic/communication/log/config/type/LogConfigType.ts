@@ -56,9 +56,10 @@ export class LogConfigType
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private name: string
+    private name: string;
 
-    private description: string
+    private description: string;
+
 public constructor (name: string, description: string){
 
             super();

@@ -56,6 +56,7 @@ export class TouchButtonFireResource extends TouchButtonResource {
     
 }
 
+
 private constructor (){
             super("/touch_button_fire_64_by_64.png", "/touch_button_fire_hint_64_by_64.png");
                     

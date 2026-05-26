@@ -65,25 +65,25 @@ export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem {
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
 
-    private readonly rtsInterface: RTSInterface
+    private readonly rtsInterface: RTSInterface;
 
-    private readonly adjustedCostLabelY: number
+    private readonly adjustedCostLabelY: number;
 
-    private readonly adjustedCostX: number
+    private readonly adjustedCostX: number;
 
-    private readonly adjustedCostY: number
+    private readonly adjustedCostY: number;
 
     private costString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
 
-    private costLength: number= 0
+    private costLength: number= 0;
 
-    private readonly adjustedLevelX: number
+    private readonly adjustedLevelX: number;
 
-    private readonly adjustedLevelY: number
+    private readonly adjustedLevelY: number;
 
     private levelString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
 
-    private levelLength: number= 0
+    private levelLength: number= 0;
 
     private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.createPowerOfTen(10000)!;
 
@@ -92,6 +92,7 @@ export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem {
     private readonly COST: string = "Cost";
 
     private readonly DOLLAR: string = "$";
+
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, rtsInterface: RTSInterface){
             super(label, img, layout, altText, basicColor);
                     
@@ -101,16 +102,13 @@ public constructor (label: string, img: Image, layout: number, altText: string, 
 this.rtsInterface= rtsInterface;
     
 
-    var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
     
 
-    var imageHeight: number = 0;
-;
+    var imageHeight: number = 0;;
     
 
-    var image: Image = this.getImage()!;
-;
+    var image: Image = this.getImage()!;;
     
 
                         if(image != NullImage.NULL_IMAGE)
@@ -158,8 +156,7 @@ this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.g
 super.paintXY(graphics, x, y);
     
 
-    var xa: number = x +2;
-;
+    var xa: number = x +2;;
     
 graphics.drawString(this.COST, xa, y +this.adjustedCostLabelY, 0);
     

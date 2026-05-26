@@ -49,6 +49,7 @@ export class GenericProfileActionData
     public static NAME: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_NAME";
 
     public static SCRIPT: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_SCRIPT";
+
 private constructor (){
 
             super();

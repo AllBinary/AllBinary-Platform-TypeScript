@@ -84,9 +84,10 @@ export class StoreUriResolver
 
     private readonly uriResolverStrings: URIResolverStrings = URIResolverStrings.getInstance()!;
 
-    private basicURIResolver: BasicUriResolver
+    private basicURIResolver: BasicUriResolver;
 
-    private parentTransformInfoInterface: TransformInfoInterface
+    private parentTransformInfoInterface: TransformInfoInterface;
+
 public constructor (parentTransformInfoInterface: TransformInfoInterface, basicURIResolver: BasicUriResolver){
 
             super();
@@ -103,18 +104,15 @@ this.basicURIResolver= basicURIResolver;
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;
-;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;;
     
 stringBuffer!.append(URLGLOBALS.getMainPath())!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)!.append(transformInfoHttpStoreInterface!.getStoreName())!.append(AbPathData.getInstance()!.SEPARATOR)!.append(href);
     
 
-    var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;
-;
+    var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))

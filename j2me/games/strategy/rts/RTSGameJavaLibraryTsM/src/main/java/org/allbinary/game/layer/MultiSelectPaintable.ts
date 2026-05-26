@@ -69,6 +69,7 @@ export class MultiSelectPaintable extends SelectionHudPaintable {
     private totalCharArray: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
 
     private rootNamesString: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 public constructor (){
 
             super();
@@ -79,8 +80,7 @@ public constructor (){
 this.clear();
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
     
@@ -89,12 +89,10 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;
-;
+    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;;
     
 
                         if(!this.rootNameList!.contains(rtsLayer!.getRootName()))
@@ -108,24 +106,20 @@ index >= 0; index--)
 }
 
 
-    var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;
-;
+    var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = this.rootNameList!.size() -1;
-index >= 0; index--)
+    var index: number = this.rootNameList!.size() -1;index >= 0; index--)
         {
 
-    var rootName: string = this.rootNameList!.get(index) as string;
-;
+    var rootName: string = this.rootNameList!.get(index) as string;;
     
 stringBuffer!.append(rootName);
     
@@ -169,8 +163,7 @@ graphics.drawString(this.TOTAL, this.textX, y, 0);
 graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, y, 0);
     
 
-    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);
-;
+    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);;
     
 graphics.drawString(this.rootNamesString, this.textX, textLine2Y, 0);
     

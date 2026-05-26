@@ -48,9 +48,10 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
 export class MainGameDemoStatePaintable extends Paintable {
         
 
-    private readonly ownershipPaintableInterface: Paintable
+    private readonly ownershipPaintableInterface: Paintable;
 
-    private readonly menuPaintableInterface: Paintable
+    private readonly menuPaintableInterface: Paintable;
+
 public constructor (ownershipPaintableInterface: Paintable, menuPaintableInterface: Paintable){
 
             super();

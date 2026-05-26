@@ -54,6 +54,7 @@ export class RTSLayerInfoPaintable extends InitUpdatePaintable {
         
 
     private initUpdatePaintable: InitUpdatePaintable = NullInitUpdatePaintable.getInstance()!;
+
 public constructor (){
 
             super();

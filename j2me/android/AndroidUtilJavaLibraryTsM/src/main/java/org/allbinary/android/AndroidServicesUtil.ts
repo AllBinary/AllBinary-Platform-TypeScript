@@ -86,36 +86,29 @@ export class AndroidServicesUtil
 
     public isServiceRunning(name: string): boolean{
 
-    var activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager;
-;
+    var activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager;;
     
 
-    var runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(this.SERVICE_LIMIT_MAX)!;
-;
+    var runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(this.SERVICE_LIMIT_MAX)!;;
     
 
-    var runningServiceInfo: ActivityManager.RunningServiceInfo
-;
+    var runningServiceInfo: ActivityManager.RunningServiceInfo;;
     
 
-    var serviceComponent: ComponentName
-;
+    var serviceComponent: ComponentName;;
     
 
-    var serviceName: string
-;
+    var serviceName: string;;
     
 
-    var size: number = runningServicesList!.size!;
-;
+    var size: number = runningServicesList!.size!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 runningServiceInfo= runningServicesList!.get(index);
     

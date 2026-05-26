@@ -47,6 +47,7 @@ export class CustomizerTransformInfoData
         
 
     public static readonly NAME: string = "CUSTOMIZER_TRANSFORM_INFO_NAME";
+
 private constructor (){
 
             super();

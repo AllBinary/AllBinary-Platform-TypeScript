@@ -48,9 +48,10 @@ import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/
 export class RaceTrackGeographicMapCellType extends GeographicMapCellType {
         
 
-    public readonly name: string
+    public readonly name: string;
 
-    private readonly travelCost: number
+    private readonly travelCost: number;
+
 public constructor (name: string, type: number, travelCost: number, reset: number){
             super(type, reset);
                     

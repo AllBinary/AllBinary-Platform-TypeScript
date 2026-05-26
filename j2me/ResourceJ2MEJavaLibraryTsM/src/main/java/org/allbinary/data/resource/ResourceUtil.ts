@@ -71,6 +71,7 @@ export class ResourceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -81,8 +82,7 @@ private constructor (){
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resource)!;
-;
+    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resource)!;;
     
 
                         if(inputStream == 
@@ -107,16 +107,13 @@ private constructor (){
                         
                                     {
                                     
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var index: number = resource.lastIndexOf('/')!;
-;
+    var index: number = resource.lastIndexOf('/')!;;
     
 
-    var resourcePath: string = resource.substring(index +1)!;
-;
+    var resourcePath: string = resource.substring(index +1)!;;
     
 inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
@@ -137,8 +134,7 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
                         
                                     {
                                     
-    var RES: string = "res";
-;
+    var RES: string = "res";;
     
 resourcePath= stringMaker!.append(RES)!.append(resource.substring(index))!.toString();
     
@@ -157,8 +153,7 @@ resourcePath= stringMaker!.append("/")!.append(RES)!.append(resource.substring(i
 inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
-    var COLON: string = CommonSeps.getInstance()!.COLON;
-;
+    var COLON: string = CommonSeps.getInstance()!.COLON;;
     
 
                         if(inputStream == 
@@ -191,8 +186,7 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
                         
                                     {
                                     
-    var RESOURCE_STRING: string = "resource";
-;
+    var RESOURCE_STRING: string = "resource";;
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -271,20 +265,16 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var index: number = resource.indexOf(CommonSeps.getInstance()!.COLON)!;
-;
+    var index: number = resource.indexOf(CommonSeps.getInstance()!.COLON)!;;
     
 
-    var resourcePath: string = resource.substring(index +startIndex)!;
-;
+    var resourcePath: string = resource.substring(index +startIndex)!;;
     
 
-    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;
-;
+    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;;
     
 
                         if(inputStream != 

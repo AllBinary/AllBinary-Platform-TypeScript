@@ -64,13 +64,14 @@ import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArray
 export class NumberTextFieldItemValidator extends ValidatorBase {
         
 
-    private readonly textFieldItem: ABTextFieldItem
+    private readonly textFieldItem: ABTextFieldItem;
 
-    private readonly min: number
+    private readonly min: number;
 
-    private readonly max: number
+    private readonly max: number;
 
-    private readonly maxChars: number
+    private readonly maxChars: number;
+
 public constructor (textFieldItem: ABTextFieldItem, maxChars: number, min: number, max: number){
 
             super();
@@ -107,16 +108,13 @@ this.maxChars= maxChars;
 
     public isValid(): Boolean{
 
-    var result: Boolean = BooleanFactory.getInstance()!.TRUE;
-;
+    var result: Boolean = BooleanFactory.getInstance()!.TRUE;;
     
 
-    var string: string = this.textFieldItem!.getString()!;
-;
+    var string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;
-;
+    var textLength: number = string.length!;;
     
 
                         if(textLength > 0 && textLength < this.maxChars)
@@ -170,32 +168,25 @@ result= BooleanFactory.getInstance()!.FALSE;
 
     public toList(): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var string: string = this.textFieldItem!.getString()!;
-;
+    var string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;
-;
+    var textLength: number = string.length!;;
     
 
-    var label: string = this.textFieldItem!.getLabel()!;
-;
+    var label: string = this.textFieldItem!.getLabel()!;;
     
 
-    var name: string = label.substring(0, label.length -2)!;
-;
+    var name: string = label.substring(0, label.length -2)!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
                         if(textLength > 0 && textLength < this.maxChars)
@@ -204,8 +195,7 @@ result= BooleanFactory.getInstance()!.FALSE;
                                     
         try {
             
-    var number: Integer = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;
-;
+    var number: Integer = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;;
     
 
                         if(number.intValue() > this.min)

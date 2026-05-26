@@ -70,17 +70,17 @@ export class GenericProfileAction
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private name: string
+    private name: string;
 
-    private genericProfileActionScript: GenericProfileActionScript
+    private genericProfileActionScript: GenericProfileActionScript;
 
-    private genericProfileActionJPanel: GenericProfileActionJPanel
+    private genericProfileActionJPanel: GenericProfileActionJPanel;
+
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node){
 
             super();
         
-    var actionNameNode: Node = DomSearchHelper.getNode(GenericProfileActionData.NAME, node.getChildNodes())!;
-;
+    var actionNameNode: Node = DomSearchHelper.getNode(GenericProfileActionData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNameNode != 
@@ -105,6 +105,7 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node
 this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericProfileActionJPanel, node));
     
 }
+
 
 public constructor (name: string){
 
@@ -134,8 +135,7 @@ this.name= name;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(GenericProfileActionData.NAME, this.name);
     
@@ -154,8 +154,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionData.NAME, this.toHashMap())!;
-;
+    var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionData.NAME, this.toHashMap())!;;
     
 node.appendChild(getGenericProfileActionScript()!.toXmlNode(document));
     

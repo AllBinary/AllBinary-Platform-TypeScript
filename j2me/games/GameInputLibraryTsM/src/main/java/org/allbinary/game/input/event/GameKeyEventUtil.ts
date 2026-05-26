@@ -49,8 +49,7 @@ export class GameKeyEventUtil
 
     public static getKey(anyType: any = {}): number{
 
-    var gameKeyEvent: GameKeyEvent = anyType as GameKeyEvent;
-;
+    var gameKeyEvent: GameKeyEvent = anyType as GameKeyEvent;;
     
 
 
@@ -59,6 +58,7 @@ export class GameKeyEventUtil
                         return gameKeyEvent!.getKey();;
     
 }
+
 
 private constructor (){
 

@@ -101,9 +101,10 @@ export class BasicHighScoresFactory extends HighScoresBase {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly abeClientInformation: AbeClientInformationInterface
+    private readonly abeClientInformation: AbeClientInformationInterface;
 
-    private readonly softwareInformation: SoftwareInformation
+    private readonly softwareInformation: SoftwareInformation;
+
 public constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation){
 
             super();
@@ -140,8 +141,7 @@ SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -150,16 +150,13 @@ SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
 highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, new ScoreComparator(true));
     
 
-    var gameType: GameType = gameInfo!.getGameType()!;
-;
+    var gameType: GameType = gameInfo!.getGameType()!;;
     
 
-    var gameTypeFactory: GameTypeFactory = GameTypeFactory.getInstance()!;
-;
+    var gameTypeFactory: GameTypeFactory = GameTypeFactory.getInstance()!;;
     
 
-    var gameInfo2: GameInfo = gameInfo;
-;
+    var gameInfo2: GameInfo = gameInfo;;
     
 
                         if(gameType == gameTypeFactory!.SINGLE_PLAYER || gameType == gameTypeFactory!.BOT)

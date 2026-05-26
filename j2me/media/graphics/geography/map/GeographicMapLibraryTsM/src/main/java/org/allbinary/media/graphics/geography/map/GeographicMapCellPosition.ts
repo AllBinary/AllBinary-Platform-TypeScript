@@ -50,9 +50,10 @@ import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFact
 export class GeographicMapCellPosition extends CellPosition {
         
 
-    private point: GPoint
+    private point: GPoint;
 
-    private midPoint: GPoint
+    private midPoint: GPoint;
+
 public constructor (column: number, row: number, columns: number, rows: number, width: number, height: number){
             super(column, row, columns, rows);
                     
@@ -60,16 +61,13 @@ public constructor (column: number, row: number, columns: number, rows: number, 
                             //For kotlin this is before the body of the constructor.
                     
 
-    var x: number = this.getColumn() *width;
-;
+    var x: number = this.getColumn() *width;;
     
 
-    var y: number = this.getRow() *height;
-;
+    var y: number = this.getRow() *height;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 this.point= pointFactory!.createXY(x, y);
     

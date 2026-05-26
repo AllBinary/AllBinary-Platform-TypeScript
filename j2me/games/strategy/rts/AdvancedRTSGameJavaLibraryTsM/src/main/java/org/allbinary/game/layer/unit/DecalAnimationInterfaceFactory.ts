@@ -76,8 +76,7 @@ export class DecalAnimationInterfaceFactory
             
     public getAnimationFactory(basicGameResources: BasicGameResources, basicColor: BasicColor): AnimationInterfaceFactoryInterface{
 
-    var animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface
-;
+    var animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface;;
     
 
                         if(basicColor == BasicColorFactory.getInstance()!.RED)

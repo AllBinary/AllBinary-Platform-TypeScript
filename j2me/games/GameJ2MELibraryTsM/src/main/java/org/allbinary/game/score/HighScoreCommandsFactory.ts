@@ -59,6 +59,7 @@ export class HighScoreCommandsFactory extends HighScoreCommandsBaseFactory {
     
 }
 
+
 private constructor (){
             super(
                                                 [

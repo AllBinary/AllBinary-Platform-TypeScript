@@ -79,7 +79,8 @@ export class RawKeyEventHandler
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    eventListenerInterfaceList: BasicArrayList
+    eventListenerInterfaceList: BasicArrayList;
+
 public constructor (){
 
             super();
@@ -96,20 +97,17 @@ this.eventListenerInterfaceList= new BasicArrayListD();
 
     public addListeners(vector: BasicArrayList){
 
-    var eventListenerInterface: RawKeyEventListener
-;
+    var eventListenerInterface: RawKeyEventListener;;
     
 
-    var size: number = vector.size()!;
-;
+    var size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 eventListenerInterface= vector.get(index) as RawKeyEventListener;
     
@@ -162,12 +160,10 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
             
     public fireEvent(keyCode: number, deviceId: number, repeated: boolean){
 
-    var eventListenerInterface: RawKeyEventListener
-;
+    var eventListenerInterface: RawKeyEventListener;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
@@ -183,8 +179,7 @@ this.process(keyCode, deviceId, repeated, eventListenerInterface);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
@@ -217,20 +212,17 @@ eventListenerInterface!.onEvent(keyCode, deviceId, repeated);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(RawKeyEventHandler.TOTAL_LISTENERS);
     
 stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
 
-    var eventListenerInterface: RawKeyEventListener
-;
+    var eventListenerInterface: RawKeyEventListener;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
@@ -248,8 +240,7 @@ stringBuffer!.append(eventListenerInterface!.toString());
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     

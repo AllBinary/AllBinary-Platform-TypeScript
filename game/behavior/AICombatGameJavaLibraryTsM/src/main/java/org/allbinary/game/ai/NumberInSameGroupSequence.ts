@@ -60,33 +60,33 @@ export class NumberInSameGroupSequence
 }
 
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_ONE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_ONE: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_TWO: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_TWO: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_THREE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_THREE: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_SIX: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_SIX: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_NINE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_NINE: Integer;
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE: Integer[]
+    public NUMBER_ON_SAME_TEAM_SEQUENCE: Integer[];
+
 private constructor (){
 
             super();
         
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 this.NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO= smallIntegerSingletonFactory!.getAt(100);
     
@@ -110,7 +110,7 @@ this.NUMBER_ON_SAME_TEAM_SEQUENCE_NINE= smallIntegerSingletonFactory!.getAt(109)
     
 this.NUMBER_ON_SAME_TEAM_SEQUENCE= 
                                                 [
-                                                    this.NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO,this.NUMBER_ON_SAME_TEAM_SEQUENCE_ONE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_THREE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR,this.NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_SIX,this.NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN,this.NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT,this.NUMBER_ON_SAME_TEAM_SEQUENCE_NINE;
+                                                    this.NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO,this.NUMBER_ON_SAME_TEAM_SEQUENCE_ONE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_THREE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR,this.NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_SIX,this.NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN,this.NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT,this.NUMBER_ON_SAME_TEAM_SEQUENCE_NINE
                                                 ];
     
 }

@@ -51,7 +51,7 @@ export class JTreeInterfaceFactory
 }
 
 
-    private jTreeInterface: JTreeInterface
+    private jTreeInterface: JTreeInterface;
 
     public set(jTreeInterface: JTreeInterface){
 this.jTreeInterface= jTreeInterface;

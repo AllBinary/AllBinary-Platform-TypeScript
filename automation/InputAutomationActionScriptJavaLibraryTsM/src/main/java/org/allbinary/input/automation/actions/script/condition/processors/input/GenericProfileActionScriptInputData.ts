@@ -51,6 +51,7 @@ export class GenericProfileActionScriptInputData
     public static TYPE: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_TYPE";
 
     public static DELAY: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_DELAY";
+
 private constructor (){
 
             super();

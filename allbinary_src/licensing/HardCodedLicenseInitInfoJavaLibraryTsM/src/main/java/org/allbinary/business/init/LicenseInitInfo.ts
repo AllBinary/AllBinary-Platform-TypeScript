@@ -59,6 +59,7 @@ export class LicenseInitInfo
     private id: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private serverList: BasicArrayList = new BasicArrayListD();
+
  constructor (){
 
             super();

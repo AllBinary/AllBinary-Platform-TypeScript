@@ -71,7 +71,8 @@ export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestur
 
     private gameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
 
-    private inputToGameKeyMapping: InputToGameKeyMapping
+    private inputToGameKeyMapping: InputToGameKeyMapping;
+
 public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping){
             super(name, motionGestureInput);
                     
@@ -109,8 +110,7 @@ this.setGameKeyEvent(this.gameKeyEventFactory!.getInstanceForInput(this, this.ge
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     

@@ -78,11 +78,12 @@ export class BasicPersitance
 
     private readonly platformRecordIdUtil: PlatformRecordIdUtil = PlatformRecordIdUtil.getInstance()!;
 
-    private readonly recordId: string
+    private readonly recordId: string;
 
     readonly valueList: BasicArrayList = new BasicArrayListD();
 
     readonly idList: BasicArrayList = new BasicArrayListD();
+
 protected constructor (recordId: string){
 
             super();
@@ -103,20 +104,17 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface){
 
-    var size: number = this.idList!.size()!;
-;
+    var size: number = this.idList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var integer: Integer = this.idList!.objectArray[index]! as Integer;
-;
+    var integer: Integer = this.idList!.objectArray[index]! as Integer;;
     
 this.delete(abeClientInformation, integer.intValue());
     
@@ -131,8 +129,7 @@ this.clear();
             
     public delete(abeClientInformation: AbeClientInformationInterface, deleteId: number){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {

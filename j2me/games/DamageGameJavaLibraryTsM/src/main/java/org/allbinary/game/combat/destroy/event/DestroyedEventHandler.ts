@@ -76,6 +76,7 @@ export class DestroyedEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -121,14 +122,12 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.list.objectArray[index]! as CollidableDestroyableDamageableLayer;
-;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.list.objectArray[index]! as CollidableDestroyableDamageableLayer;;
     
 collidableDestroyableDamageableLayer!.onDestroyed(eventObject as DestroyedEvent);
     
@@ -151,8 +150,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var destroyedEventListenerInterface: DestroyedEventListenerInterface = eventListenerInterface as DestroyedEventListenerInterface;
-;
+    var destroyedEventListenerInterface: DestroyedEventListenerInterface = eventListenerInterface as DestroyedEventListenerInterface;;
     
 destroyedEventListenerInterface!.onDestroyed(eventObject as DestroyedEvent);
     

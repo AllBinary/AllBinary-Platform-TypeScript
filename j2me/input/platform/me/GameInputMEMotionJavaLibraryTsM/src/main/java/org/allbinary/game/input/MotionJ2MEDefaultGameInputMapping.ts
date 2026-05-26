@@ -54,6 +54,7 @@ import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motio
 
 export class MotionJ2MEDefaultGameInputMapping extends PersistentInputMapping {
         
+
 public constructor (){
             super(GamePersistanceStrings.getInstance()!.DEFAULT_INPUT_MAPPING_RECORD_ID);
                     
@@ -61,12 +62,10 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;
-;
+    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;;
     
 
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-;
+    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, gameKeyFactory!.KEY_NUM2);
     
@@ -123,8 +122,7 @@ inputToGameKeyMapping!.add(gameKeyFactory!.LEFT, TouchMotionGestureFactory.getIn
 inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, TouchMotionGestureFactory.getInstance()!.RIGHT);
     
 
-    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-;
+    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, basicTouchInputFactory!.UP);
     

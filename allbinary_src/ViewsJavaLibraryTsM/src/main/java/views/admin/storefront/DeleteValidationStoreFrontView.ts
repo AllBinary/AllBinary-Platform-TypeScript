@@ -62,6 +62,7 @@ export class DeleteValidationStoreFrontView extends StoreFrontComponent implemen
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -75,8 +76,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(this.newStoreFrontInterface!.isNameValid() == Boolean.FALSE)
@@ -134,8 +134,7 @@ this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInt
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.newStoreFrontInterface!.isNameValid() == Boolean.FALSE)

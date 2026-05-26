@@ -78,7 +78,8 @@ export class AddValidationStoreFrontView extends HttpContextView implements Vali
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    newStoreFrontInterface: StoreFrontInterface
+    newStoreFrontInterface: StoreFrontInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -99,8 +100,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)
@@ -165,8 +165,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
             
     getStoreViewsPath(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -187,8 +186,7 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName());
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.newStoreFrontInterface!.isValid() == Boolean.FALSE)

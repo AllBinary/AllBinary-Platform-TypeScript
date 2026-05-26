@@ -72,7 +72,8 @@ export class Password
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private password: string
+    private password: string;
+
 public constructor (password: string){
 
             super();
@@ -99,14 +100,12 @@ this.password= value;
 
     public isValid(): Boolean{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))
@@ -180,8 +179,7 @@ valid= Boolean.FALSE;
                                     }
                                 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
 
@@ -196,12 +194,10 @@ valid= Boolean.FALSE;
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
-;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.add(new Integer(random).toString());
     
@@ -222,12 +218,10 @@ vector.add(new SuperCrypt(random).encrypt(this.password));
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
-;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 values.put(EntryData.getInstance()!.ENCRYPTION, new Integer(random).toString());
     

@@ -58,11 +58,12 @@ export class PathFindingNodeCostInfo
 
     private readonly pathFindingNodeCostInfoData: PathFindingNodeCostInfoData = PathFindingNodeCostInfoData.getInstance()!;
 
-    public costFromStartP: number
+    public costFromStartP: number;
 
-    public costToEndP: number
+    public costToEndP: number;
 
-    public totalCostP: number= 0
+    public totalCostP: number= 0;
+
 public constructor (costFromStart: number, costToGoal: number){
 
             super();
@@ -131,8 +132,7 @@ this.costFromStartP += cost;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     

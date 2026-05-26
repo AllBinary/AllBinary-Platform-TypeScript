@@ -57,6 +57,7 @@ export class AdvertisementData
     
 }
 
+
 private constructor (){
 
             super();

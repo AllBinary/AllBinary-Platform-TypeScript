@@ -45,6 +45,7 @@ export class ShakeEvent
             extends Object
          {
         
+
  constructor (){
 
             super();

@@ -58,7 +58,8 @@ export class ContextConfigurationDomDocumentMapping
          implements DomDocumentMappingInterface {
         
 
-    private contextConfigurationInterface: ContextConfigurationInterface
+    private contextConfigurationInterface: ContextConfigurationInterface;
+
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
@@ -71,12 +72,10 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;
-;
+    var document: Document = DomDocumentHelper.create()!;;
     
 
-    var node: Node = new ContextConfigurationView(this.contextConfigurationInterface).toXmlNode(document)!;
-;
+    var node: Node = new ContextConfigurationView(this.contextConfigurationInterface).toXmlNode(document)!;;
     
 document.appendChild(node);
     

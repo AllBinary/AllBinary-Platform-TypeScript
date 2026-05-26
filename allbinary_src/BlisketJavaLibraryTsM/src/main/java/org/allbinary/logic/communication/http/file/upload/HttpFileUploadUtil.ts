@@ -76,16 +76,13 @@ export class HttpFileUploadUtil
             
     public static log(fileItem: FileItemStream){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append("FileItem Log:");
     
@@ -127,16 +124,13 @@ stringBuffer!.append(" Not Calculated Yet");
 
     public static log(fileItem: FileItem){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append("FileItem Log:");
     
@@ -177,6 +171,7 @@ stringBuffer!.appendlong(fileItem!.getSize());
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

@@ -61,6 +61,7 @@ export class EmailData
     public static readonly SUBJECT: string = "EMAIL_SUBJECT";
 
     public static readonly CONTENT: string = "EMAIL_CONTENT";
+
 private constructor (){
 
             super();

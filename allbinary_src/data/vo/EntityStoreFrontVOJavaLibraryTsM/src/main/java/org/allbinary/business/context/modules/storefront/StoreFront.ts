@@ -158,7 +158,7 @@ export class StoreFront
 
     private inventoryControl: string = this.stringUtil!.EMPTY_STRING;
 
-    private contextConfigurationInterface: ContextConfigurationInterface
+    private contextConfigurationInterface: ContextConfigurationInterface;
 
     private subStores: string = this.stringUtil!.EMPTY_STRING;
 
@@ -195,12 +195,14 @@ export class StoreFront
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private readonly ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
+
 public constructor (){
 
             super();
         this.contextConfigurationInterface= new ContextConfiguration();
     
 }
+
 
 public constructor (request: HttpServletRequest){
 
@@ -220,14 +222,14 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
     
 }
 
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();
         this.getFormData(hashMap);
     
 
-    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as string;
-;
+    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as string;;
     
 
                         if(domDocumentString == 
@@ -236,8 +238,7 @@ public constructor (hashMap: HashMap<any, any>){
                         
                                     {
                                     
-    var document: Document = DomDocumentHelper.create(domDocumentString)!;
-;
+    var document: Document = DomDocumentHelper.create(domDocumentString)!;;
     
 this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getInstance()!.getInstance(document));
     
@@ -310,8 +311,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 
     create(append: string, key: string, hashMap: HashMap<any, any>): string{
 
-    var path: string = hashMap!.get(key) as string;
-;
+    var path: string = hashMap!.get(key) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(path))
@@ -360,8 +360,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
             
     getFormData(storeHashMap: HashMap<any, any>){
 
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-;
+    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 this.name= storeHashMap!.get(storeFrontData!.NAME) as string;
     
@@ -436,12 +435,10 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
                                 
                         else {
                             
-    var isEscapedCharactersContained: boolean = false;
-;
+    var isEscapedCharactersContained: boolean = false;;
     
 
-    var storeNameEscaped: string = StringEscapeUtils.escapeHtml3(this.name)!;
-;
+    var storeNameEscaped: string = StringEscapeUtils.escapeHtml3(this.name)!;;
     
 
                         if(this.name.compareTo(storeNameEscaped) != 0)
@@ -453,12 +450,10 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var isSpacesContained: boolean = false;
-;
+    var isSpacesContained: boolean = false;;
     
 
                         if(stringValidationUtil!.containsSpaces(this.name))
@@ -474,8 +469,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;
-;
+    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;;
     
 hashMap!.put(
                                                 [
@@ -501,14 +495,12 @@ this.name= new Replace(hashMap).all(this.name);
 
     public isValid(): Boolean{
 
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 valid= this.isNameValid();
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.basketName, this.MINCHAR, this.MAXCHAR))
@@ -754,16 +746,14 @@ valid= this.isNameValid();
 
     public nameValidationInfo(): string{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.name, this.MINCHAR, this.MAXCHAR))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Name is invalid. Must be < ");
     
@@ -793,12 +783,10 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
         try {
             
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.nameValidationInfo());
     
@@ -1080,8 +1068,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHostName(): string{
 
-    var location: string = this.EMPTY_STRING;
-;
+    var location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1109,8 +1096,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHostNamePath(): string{
 
-    var location: string = this.EMPTY_STRING;
-;
+    var location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1138,8 +1124,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHomeHostName(): string{
 
-    var location: string = this.EMPTY_STRING;
-;
+    var location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1167,8 +1152,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
     public getCurrentHomeHostNamePath(): string{
 
-    var location: string = this.EMPTY_STRING;
-;
+    var location: string = this.EMPTY_STRING;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -1330,12 +1314,10 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
         try {
             
-    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);
-;
+    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);;
     
 
-    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayListD())!;
-;
+    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayListD())!;;
     
 
 
@@ -1667,8 +1649,7 @@ this.testFtpPath= new AbPath(value);
             
     createDirectories(): boolean{
 
-    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath());
-;
+    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath());;
     
 
                         if(!this.directory.create(storeAbPath))
@@ -1736,8 +1717,7 @@ this.testFtpPath= new AbPath(value);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1746,8 +1726,7 @@ stringBuffer!.append(URLGLOBALS.getMainPath());
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
     
 
-    var viewPath: string = stringBuffer!.toString()!;
-;
+    var viewPath: string = stringBuffer!.toString()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1756,8 +1735,7 @@ stringBuffer!.append(viewPath);
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH);
     
 
-    var fromDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var fromDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1768,8 +1746,7 @@ stringBuffer!.append("special");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var fromSpecialDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var fromSpecialDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1780,8 +1757,7 @@ stringBuffer!.append(this.getName());
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var toDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var toDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
                         if(current == 0)
@@ -1803,28 +1779,24 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-    var viewTotal: number = (total *85) /100;
-;
+    var viewTotal: number = (total *85) /100;;
     
 
-    var installTotal: number = (total *93) /100;
-;
+    var installTotal: number = (total *93) /100;;
     
 
                         if(current < viewTotal)
                         
                                     {
                                     
-    var file: AbFile = new AbFile(fromSpecialDirectoryAbPath);
-;
+    var file: AbFile = new AbFile(fromSpecialDirectoryAbPath);;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var halfViewTotal: number = viewTotal /2;
-;
+    var halfViewTotal: number = viewTotal /2;;
     
 
                         if(current < halfViewTotal)
@@ -1906,8 +1878,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbP
             
     installResources(fromDirectoryAbPath: AbPath, current: number, total: number){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fromDirectoryAbPath!.toString());
     
@@ -1918,8 +1889,7 @@ stringBuffer!.append("Resources");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var installCategoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var installCategoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1932,8 +1902,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(this.getCategoryPath());
     
 
-    var categoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var categoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPath, true, false, current, total);
     
@@ -1944,8 +1913,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPa
             
     installMedia(fromDirectoryAbPath: AbPath, current: number, total: number){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fromDirectoryAbPath!.toString());
     
@@ -1958,12 +1926,10 @@ stringBuffer!.append("images");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var viewStoreImagesDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var viewStoreImagesDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
-    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath());
-;
+    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath());;
     
 FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, storeAbPath, true, false, current, total);
     
@@ -1974,8 +1940,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, sto
             
     public toVector(): Vector{
 
-    var dataVector: Vector = new Vector();
-;
+    var dataVector: Vector = new Vector();;
     
 dataVector!.add(this.name);
     
@@ -2004,8 +1969,7 @@ dataVector!.add(this.categoryPath!.toString());
 dataVector!.add(this.inventoryControl);
     
 
-    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
-;
+    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());;
     
 dataVector!.add(contextConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -2032,12 +1996,10 @@ dataVector!.add(this.testFtpUserName);
 dataVector!.add(this.testFtpPassword);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 dataVector!.add(time);
     
@@ -2056,12 +2018,10 @@ dataVector!.add(time);
             
     public toHashMap(): HashMap<any, any>{
 
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-;
+    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 
-    var dataHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var dataHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 dataHashMap!.put(storeFrontData!.NAME, this.name);
     
@@ -2090,8 +2050,7 @@ dataHashMap!.put(storeFrontData!.CATEGORYPATH, this.categoryPath!.toString());
 dataHashMap!.put(storeFrontData!.INVENTORYCONTROL, this.inventoryControl);
     
 
-    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
-;
+    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());;
     
 dataHashMap!.put(storeFrontData!.CONFIGURATION, contextConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -2118,12 +2077,10 @@ dataHashMap!.put(storeFrontData!.TESTFTPUSERNAME, this.testFtpUserName);
 dataHashMap!.put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     

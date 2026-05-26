@@ -65,13 +65,14 @@ export class Animation
 
     basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    colorP: number= 0
+    colorP: number= 0;
 
     changeBasicColorP: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
 
-    changeColorP: number= 0
+    changeColorP: number= 0;
 
-    public alphaP: number= 0
+    public alphaP: number= 0;
+
 public constructor (){
 
             super();

@@ -75,6 +75,7 @@ export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourc
     
 }
 
+
 private constructor (){
 
             super();
@@ -87,32 +88,27 @@ private constructor (){
             
     public getRelativeRelationshipList(resource: string, layer: AllBinaryLayer): BasicArrayList{
 
-    var featureReleaseList: BasicArrayList = this.getList()!;
-;
+    var featureReleaseList: BasicArrayList = this.getList()!;;
     
 
-    var size: number = this.getList()!.size()!;
-;
+    var size: number = this.getList()!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var featureInterface: ResourceRelativeRelationshipFactoryInterface = featureReleaseList!.objectArray[index]! as ResourceRelativeRelationshipFactoryInterface;
-;
+    var featureInterface: ResourceRelativeRelationshipFactoryInterface = featureReleaseList!.objectArray[index]! as ResourceRelativeRelationshipFactoryInterface;;
     
 
                         if(featureInterface!.isFeature())
                         
                                     {
                                     
-    var list: BasicArrayList = featureInterface!.getResourceRelativeRelationshipList(resource)!;
-;
+    var list: BasicArrayList = featureInterface!.getResourceRelativeRelationshipList(resource)!;;
     
 
                         if(list != this.basicArrayListUtil!.getImmutableInstance())
@@ -144,28 +140,23 @@ index < size; index++)
             
     duplicate(list: BasicArrayList, layer: AllBinaryLayer): BasicArrayList{
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var newList: BasicArrayList = new BasicArrayListD();
-;
+    var newList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var relativeRelationship: RelativeRelationship = list.objectArray[index]! as RelativeRelationship;
-;
+    var relativeRelationship: RelativeRelationship = list.objectArray[index]! as RelativeRelationship;;
     
 newList!.add(new RelativeLayerRelationship(layer, pointFactory!.createXY(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
     

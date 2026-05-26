@@ -70,9 +70,10 @@ export class AnalogControllerConfigurationFactory
 
     public readonly SCALE_VALUE: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_VALUE;
 
-    private available: boolean= false
+    private available: boolean= false;
 
     private readonly analogControllerConfigurationEvent: AnalogControllerConfigurationEvent = new AnalogControllerConfigurationEvent(this);
+
 private constructor (){
 
             super();

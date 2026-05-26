@@ -68,6 +68,7 @@ export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "categories";
+
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(new InventoryDbInitInfo());
                     
@@ -77,6 +78,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 this.setTableName(this.tableName);
     
 }
+
 
 public constructor (){
             super(new InventoryDbInitInfo());
@@ -93,12 +95,10 @@ this.setTableName(this.tableName);
 
         try {
             
-    var categoryVector: Vector = category.toVector()!;
-;
+    var categoryVector: Vector = category.toVector()!;;
     
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(categoryVector!.get(0));
     
@@ -167,8 +167,7 @@ super.insert(values);
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     

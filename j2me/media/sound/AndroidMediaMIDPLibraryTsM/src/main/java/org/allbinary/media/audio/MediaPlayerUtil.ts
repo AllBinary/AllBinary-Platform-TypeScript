@@ -72,16 +72,13 @@ export class MediaPlayerUtil
             
     public waitForMediaPlayer(mediaPlayer: MediaPlayer){
 
-    var MESSAGE: string = "Not Stopped Waiting";
-;
+    var MESSAGE: string = "Not Stopped Waiting";;
     
 
-    var METHOD_NAME: string = "wait";
-;
+    var METHOD_NAME: string = "wait";;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(mediaPlayer!.isPlaying() && index < 50)

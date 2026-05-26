@@ -67,13 +67,14 @@ export class RealTimeStoreFrontStatistics
          implements StoreFrontStatisticsInterface {
         
 
-    private storeFrontAdvertisementsStatisticsInterface: StoreFrontAdvertisementsStatisticsInterface
+    private storeFrontAdvertisementsStatisticsInterface: StoreFrontAdvertisementsStatisticsInterface;
 
-    private storeFrontUsersStatisticsInterface: StoreFrontUsersStatisticsInterface
+    private storeFrontUsersStatisticsInterface: StoreFrontUsersStatisticsInterface;
 
-    private storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface
+    private storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface;
 
-    private storeFrontOrderHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface
+    private storeFrontOrderHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface;
+
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();

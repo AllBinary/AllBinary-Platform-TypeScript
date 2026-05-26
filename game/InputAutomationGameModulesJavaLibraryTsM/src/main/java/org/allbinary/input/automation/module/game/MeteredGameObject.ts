@@ -60,25 +60,26 @@ export class MeteredGameObject
          implements MeteredGameObjectInterface {
         
 
-    private ratios: number[]
+    private ratios: number[];
 
     private good: boolean = false;
 
     private dropping: boolean = false;
 
-    private minX: Integer
+    private minX: Integer;
 
-    private maxX: Integer
+    private maxX: Integer;
 
-    private y: Integer
+    private y: Integer;
 
-    private size: Integer
+    private size: Integer;
 
     private readonly RATIOS_LABEL: string = "Ratios: ";
 
     private readonly IS_GOOD_LABEL: string = "isGood: ";
 
     private readonly IS_DROPPPING_LABEL: string = "isDropping: ";
+
 public constructor (bufferedImage: BufferedImage[], minX: Integer, maxX: Integer, y: Integer){
 
             super();
@@ -97,12 +98,10 @@ this.setSize(maxX -minX);
 
 
                         for (
-    var index: number = 0;
-index < bufferedImage!.length; index++)
+    var index: number = 0;index < bufferedImage!.length; index++)
         {
 
-    var nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;
-;
+    var nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;;
     
 this.getRatios()[index]= new number(nominator /this.getSize());
     
@@ -185,12 +184,10 @@ this.dropping= dropping;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
@@ -201,8 +198,7 @@ stringBuffer!.append(this.RATIOS_LABEL);
 
 
                         for (
-    var index: number = 0;
-index < this.getRatios()!.length; index++)
+    var index: number = 0;index < this.getRatios()!.length; index++)
         {
 stringBuffer!.append(this.getRatios()[index]!.toString());
     

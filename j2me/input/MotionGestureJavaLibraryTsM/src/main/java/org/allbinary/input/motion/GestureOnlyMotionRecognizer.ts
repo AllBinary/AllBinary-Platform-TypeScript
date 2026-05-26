@@ -57,9 +57,10 @@ export class GestureOnlyMotionRecognizer extends MotionRecognizer {
 
     private static readonly pointCircularPool: GPointCircularPool = new GPointCircularPool(40);
 
-    private readonly motionGestureRecognizer: MotionGestureRecognizer
+    private readonly motionGestureRecognizer: MotionGestureRecognizer;
 
-    private readonly id: number
+    private readonly id: number;
+
 public constructor (){
 
             super();
@@ -74,8 +75,7 @@ this.motionGestureRecognizer= new MotionGestureRecognizer(this.id);
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 
-    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;
-;
+    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -90,8 +90,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 
-    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;
-;
+    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     
@@ -106,8 +105,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 
-    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;
-;
+    var point: CustomGPoint = GestureOnlyMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
     
 point.setX(x);
     

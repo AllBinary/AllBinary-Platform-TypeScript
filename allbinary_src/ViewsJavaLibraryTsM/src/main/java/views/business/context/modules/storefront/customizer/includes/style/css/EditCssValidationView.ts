@@ -64,6 +64,7 @@ export class EditCssValidationView extends CssCustomizerView implements Validati
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -77,14 +78,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var document: Document = CustomizerUtil.getInstance()!.getViewDataForComponentsInObjectConfig(this.getTransformInfoInterface())!;
-;
+    var document: Document = CustomizerUtil.getInstance()!.getViewDataForComponentsInObjectConfig(this.getTransformInfoInterface())!;;
     
 this.styleValidationInterface= new GenericCssStyleValidation(document);
     
 
-    var isValid: Boolean = this.styleValidationInterface!.isValid()!;
-;
+    var isValid: Boolean = this.styleValidationInterface!.isValid()!;;
     
 
 
@@ -120,8 +119,7 @@ this.styleValidationInterface= new GenericCssStyleValidation(document);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.styleValidationInterface!.validationInfo());
     

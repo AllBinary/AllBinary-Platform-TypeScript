@@ -80,8 +80,7 @@ java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 
     public run(){
 
-    var dialog: RotateJDialog = new RotateJDialog(new javax.swing.JFrame(), true);
-;
+    var dialog: RotateJDialog = new RotateJDialog(new javax.swing.JFrame(), true);;
     
 dialog.addWindowListener(new class extends java.awt.event.WindowAdapter
                                 {
@@ -107,6 +106,7 @@ dialog.setVisible(true);
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private hashMap: HashMap<any, any> = new HashMap<any, any>();
+
 public constructor (parent: java.awt.Frame, modal: boolean){
             super(parent, modal);
                     
@@ -155,8 +155,7 @@ jButton1ActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
-;
+    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -165,8 +164,7 @@ jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jButton1));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());;
     
 getContentPane()!.setLayout(layout);
     
@@ -197,8 +195,7 @@ this.setVisible(false);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");
     
@@ -207,17 +204,17 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");
 }
 
 
-    private angleIncrementJTextField: javax.swing.JTextField
+    private angleIncrementJTextField: javax.swing.JTextField;
 
-    private jButton1: javax.swing.JButton
+    private jButton1: javax.swing.JButton;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private totalRotationJTextField: javax.swing.JTextField
+    private totalRotationJTextField: javax.swing.JTextField;
 
 }
                 

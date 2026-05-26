@@ -60,6 +60,7 @@ export class InputAutomationModuleConfigurationsSingletonFactory
     
 }
 
+
 private constructor (){
 
             super();

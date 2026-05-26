@@ -70,11 +70,12 @@ export class BaseGameStatistics
 
     private readonly updateDelayHelper: TimeDelayHelper = new TimeDelayHelper(2000);
 
-    private totalRefreshes: number= 0
+    private totalRefreshes: number= 0;
 
-    private totalFrames: number= 0
+    private totalFrames: number= 0;
 
     readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+
 public constructor (){
 
             super();
@@ -115,16 +116,14 @@ this.totalRefreshes++;
 
     public getRefreshRate(): number{
 
-    var elapsed: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-;
+    var elapsed: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 
                         if(elapsed > 1)
                         
                                     {
                                     
-    var time: number = (this.totalRefreshes /(elapsed>>this.DEFAULT_SCALE_FACTOR));
-;
+    var time: number = (this.totalRefreshes /(elapsed>>this.DEFAULT_SCALE_FACTOR));;
     
 
 
@@ -182,8 +181,7 @@ this.totalRefreshes++;
 
     public to2DCharArray(): string[][]{
 
-    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-;
+    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (totalTime>>this.DEFAULT_SCALE_FACTOR);
     
@@ -192,8 +190,7 @@ totalTime= (totalTime>>this.DEFAULT_SCALE_FACTOR);
                         
                                     {
                                     
-    var framesPerSec: number = Math.round((this.totalFrames /totalTime));
-;
+    var framesPerSec: number = Math.round((this.totalFrames /totalTime));;
     
 
                         if(framesPerSec < 10)
@@ -211,12 +208,10 @@ this.CHAR_ARRAY[1]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPer
                         
                                     {
                                     
-    var tens: number = framesPerSec /10;
-;
+    var tens: number = framesPerSec /10;;
     
 
-    var removeTens: number = tens *10;
-;
+    var removeTens: number = tens *10;;
     
 this.CHAR_ARRAY[1]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[tens]!;
     
@@ -234,8 +229,7 @@ this.CHAR_ARRAY[1]![1]= this.PLUS_CHAR;
                         }
                             
 
-    var refreshesPerSec: number = Math.round((this.totalRefreshes /totalTime));
-;
+    var refreshesPerSec: number = Math.round((this.totalRefreshes /totalTime));;
     
 
                         if(refreshesPerSec < 10)
@@ -253,12 +247,10 @@ this.CHAR_ARRAY[3]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshes
                         
                                     {
                                     
-    var tens: number = refreshesPerSec /10;
-;
+    var tens: number = refreshesPerSec /10;;
     
 
-    var removeTens: number = tens *10;
-;
+    var removeTens: number = tens *10;;
     
 this.CHAR_ARRAY[3]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec /10]!;
     
@@ -289,8 +281,7 @@ this.CHAR_ARRAY[3]![1]= this.PLUS_CHAR;
 
     public toStringArray(): string[]{
 
-    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-;
+    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (totalTime /10000);
     
@@ -313,8 +304,7 @@ this.STRING_ARRAY[9]= (this.totalRefreshes /totalTime).toString();
                                 
                         else {
                             
-    var string: string = this.EMPTY_STRING;
-;
+    var string: string = this.EMPTY_STRING;;
     
 this.STRING_ARRAY[1]= string;
     
@@ -340,8 +330,7 @@ this.STRING_ARRAY[9]= string;
 
     public toStringAt(totalTime: number): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.STRING_ARRAY[0]!);
     
@@ -383,8 +372,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
     public toString(): string{
 
-    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-;
+    var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (totalTime /1000);
     

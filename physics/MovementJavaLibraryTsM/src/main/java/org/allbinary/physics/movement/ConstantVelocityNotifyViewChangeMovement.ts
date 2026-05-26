@@ -59,11 +59,12 @@ import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 export class ConstantVelocityNotifyViewChangeMovement extends Movement {
         
 
-    basicVelocityProperties: BasicVelocityProperties
+    basicVelocityProperties: BasicVelocityProperties;
 
-    private speedBasicDecimal: BasicDecimal
+    private speedBasicDecimal: BasicDecimal;
 
     private readonly axisMathVectorUtil: AxisMathVectorUtil = AxisMathVectorUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -78,8 +79,7 @@ this.basicVelocityProperties= new BasicVelocityProperties();
 this.speedBasicDecimal= speedBasicDecimal;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 this.basicVelocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFactory!.getAt(angle), angleFactory!.getAt(otherAngle));
     
@@ -88,20 +88,16 @@ this.basicVelocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angle
 
     public moveOutsideRadius(layer: AllBinaryLayer, radius: number, angle: number, otherAngle: number){
 
-    var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
-;
+    var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;;
     
 
-    var xVector: number = Math.round((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));
-;
+    var xVector: number = Math.round((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));;
     
 
-    var yVector: number = Math.round((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));
-;
+    var yVector: number = Math.round((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));;
     
 
-    var zVector: number = Math.round((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));
-;
+    var zVector: number = Math.round((this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue));;
     
 layer.moveDXYZ(xVector, yVector, zVector);
     
@@ -112,16 +108,13 @@ layer.moveDXYZ(xVector, yVector, zVector);
             
     public process(layer: AllBinaryGameLayer){
 
-    var x: number = this.basicVelocityProperties!.getVelocityXBasicDecimalP()!.getScaled()!;
-;
+    var x: number = this.basicVelocityProperties!.getVelocityXBasicDecimalP()!.getScaled()!;;
     
 
-    var y: number = this.basicVelocityProperties!.getVelocityYBasicDecimalP()!.getScaled()!;
-;
+    var y: number = this.basicVelocityProperties!.getVelocityYBasicDecimalP()!.getScaled()!;;
     
 
-    var z: number = this.basicVelocityProperties!.getVelocityZBasicDecimalP()!.getScaled()!;
-;
+    var z: number = this.basicVelocityProperties!.getVelocityZBasicDecimalP()!.getScaled()!;;
     
 layer.moveDXYZ(x, y, z);
     

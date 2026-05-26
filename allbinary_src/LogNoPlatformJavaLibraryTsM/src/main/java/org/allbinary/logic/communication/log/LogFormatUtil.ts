@@ -63,7 +63,9 @@ expect export class LogFormatUtil
         
 
     //private static readonly instance: LogFormatUtil
+
     public static getInstance(): LogFormatUtil
+
 
 
     public get(className: string, functionName: string, specialMessage: string, exception: any = {}): string

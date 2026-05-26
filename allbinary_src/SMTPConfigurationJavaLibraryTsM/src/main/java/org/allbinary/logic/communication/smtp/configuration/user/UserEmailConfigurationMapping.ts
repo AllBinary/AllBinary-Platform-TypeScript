@@ -56,7 +56,8 @@ export class UserEmailConfigurationMapping
          implements TableMappingInterface {
         
 
-    private userEmailConfigurationInterface: UserEmailConfigurationInterface
+    private userEmailConfigurationInterface: UserEmailConfigurationInterface;
+
 public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
 
             super();
@@ -67,8 +68,7 @@ public constructor (userEmailConfigurationInterface: UserEmailConfigurationInter
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
 
@@ -95,8 +95,7 @@ public constructor (userEmailConfigurationInterface: UserEmailConfigurationInter
             
     public toVector(): Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
 

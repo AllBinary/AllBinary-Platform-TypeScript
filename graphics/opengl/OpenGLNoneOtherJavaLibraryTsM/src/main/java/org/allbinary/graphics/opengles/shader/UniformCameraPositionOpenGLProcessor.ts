@@ -47,6 +47,7 @@ import { ShaderComposite } from './ShaderComposite.js';
 
 export class UniformCameraPositionOpenGLProcessor extends OpenGLObject3dProcessor {
         
+
 public constructor (shaderComposite: ShaderComposite, handleIndex: number){
 
             super();

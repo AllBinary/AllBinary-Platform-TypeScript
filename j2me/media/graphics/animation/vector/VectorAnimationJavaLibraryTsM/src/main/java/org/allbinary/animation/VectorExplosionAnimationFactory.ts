@@ -60,7 +60,8 @@ export class VectorExplosionAnimationFactory
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    readonly animationBehaviorFactory: AnimationBehaviorFactory
+    readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -77,20 +78,16 @@ this.setBasicColorP(basicColor);
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 
-    var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as VectorAnimationInterface;
-;
+    var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as VectorAnimationInterface;;
     
 
-    var frame: number = vectorRotationAnimationInterface!.getFrame()!;
-;
+    var frame: number = vectorRotationAnimationInterface!.getFrame()!;;
     
 
-    var framePoints: number[][] = vectorRotationAnimationInterface!.getPoints(frame)!;
-;
+    var framePoints: number[][] = vectorRotationAnimationInterface!.getPoints(frame)!;;
     
 
-    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, this.vectorExplosionGenerator!.ROTATION)!;
-;
+    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, this.vectorExplosionGenerator!.ROTATION)!;;
     
 
 

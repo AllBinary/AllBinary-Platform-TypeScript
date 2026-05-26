@@ -98,12 +98,10 @@ this.selectHighScores();
 this.circularIndexUtil!.next();
     
 
-    var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;
-;
+    var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(highScores!.getTotal() < 1 && index < this.highScoresArrayP!.length)

@@ -120,17 +120,18 @@ PreLogUtil.put(event, this, commonStrings!.PROCESS);
 
     private readonly ALREADY_ENDED: string = "Last Song already ended: ";
 
-    private readonly songList: BasicArrayList
+    private readonly songList: BasicArrayList;
 
     private currentSongSound: Sound = NoSound.getInstance()!;
 
     private nextSongSound: Sound = NoSound.getInstance()!;
 
-    private reset: boolean= false
+    private reset: boolean= false;
 
-    private noDuration: boolean= false
+    private noDuration: boolean= false;
 
     private stopped: boolean = true;
+
 public constructor (musicServiceClass: Function, songList: BasicArrayList){
 
             super();
@@ -145,8 +146,7 @@ public constructor (musicServiceClass: Function, songList: BasicArrayList){
                         
                                     {
                                     
-    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList) as Sound;
-;
+    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList) as Sound;;
     
 this.nextSong(randomSongSound, 0, 0);
     
@@ -214,12 +214,10 @@ this.reset= true;
 this.noDuration= false;
     
 
-    var endingCurrentSongSound: Sound = this.currentSongSound;
-;
+    var endingCurrentSongSound: Sound = this.currentSongSound;;
     
 
-    var nextSongSound: Sound = this.nextSongSound;
-;
+    var nextSongSound: Sound = this.nextSongSound;;
     
 this.nextSongSound= NoSound.getInstance();
     
@@ -239,12 +237,10 @@ this.nextSongSound= NoSound.getInstance();
                         }
                             
 
-    var startingCurrentSongSound: Sound = this.currentSongSound;
-;
+    var startingCurrentSongSound: Sound = this.currentSongSound;;
     
 
-    var duration: number = this.currentSongSound!.getDuration()!;
-;
+    var duration: number = this.currentSongSound!.getDuration()!;;
     
 this.timeDelayHelper!.delay= Math.round(duration);
     
@@ -253,8 +249,7 @@ this.timeDelayHelper!.delay= Math.round(duration);
                         
                                     {
                                     
-    var NO_DURATION_FOR: string = "No Duration for: ";
-;
+    var NO_DURATION_FOR: string = "No Duration for: ";;
     
 PreLogUtil.put(new StringMaker().append(NO_DURATION_FOR)!.append(this.currentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
@@ -339,8 +334,7 @@ this.currentSongSound!.getPlayerP()!.start();
 } catch(e) 
             {
 
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.currentSongSound != NoSound.getInstance())
@@ -383,8 +377,7 @@ startingCurrentSongSound!.getPlayerP()!.start();
 
         try {
             
-    var currentSongSound: Sound = this.currentSongSound;
-;
+    var currentSongSound: Sound = this.currentSongSound;;
     
 
                         if(currentSongSound != NoSound.getInstance())
@@ -408,8 +401,7 @@ PreLogUtil.put(new StringMaker().append(this.commonStrings!.END)!.append(StringU
 } catch(e) 
             {
 
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(currentSongSound != NoSound.getInstance())

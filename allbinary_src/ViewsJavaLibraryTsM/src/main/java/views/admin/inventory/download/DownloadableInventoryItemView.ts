@@ -96,15 +96,16 @@ export class DownloadableInventoryItemView extends HttpStoreComponentView implem
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    readonly request: HttpServletRequest
+    readonly request: HttpServletRequest;
 
-    id: string
+    id: string;
 
-    itemInterface: ItemInterface
+    itemInterface: ItemInterface;
 
-    downloadableItem: DownloadableItem
+    downloadableItem: DownloadableItem;
 
-    private requestHashMap: HashMap<any, any>
+    private requestHashMap: HashMap<any, any>;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -116,6 +117,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 this.getFormData();
     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string){
             super(transformInfoInterface);
@@ -150,8 +152,7 @@ this.id= this.getRequestHashMap()!.get(BasicItemData.ID) as string;
 
     public addDomNodeInterfaces(){
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
                         if(this.downloadableItem != 
@@ -209,22 +210,18 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
             
     processFile(fileItem: FileItem){
 
-    var fileName: string = fileItem!.getName()!;
-;
+    var fileName: string = fileItem!.getName()!;;
     
 
-    var fullPath: string = this.getItemFilePath()!;
-;
+    var fullPath: string = this.getItemFilePath()!;;
     
 
-    var itemResourceFile: AbFile = new AbFile(fullPath);
-;
+    var itemResourceFile: AbFile = new AbFile(fullPath);;
     
 itemResourceFile!.mkdir();
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fullPath);
     
@@ -233,16 +230,14 @@ stringBuffer!.append(fileName);
 this.logUtil!.putF("FileName: " +fileName, this, "processFile()");
     
 
-    var file: AbFile = new AbFile(stringBuffer!.toString());
-;
+    var file: AbFile = new AbFile(stringBuffer!.toString());;
     
 this.logUtil!.putF(file.getPath(), this, "processFiles()");
     
 file.createNewFile();
     
 
-    var byteArray: number[] = fileItem!.get()!;
-;
+    var byteArray: number[] = fileItem!.get()!;;
     
 FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
     
@@ -253,16 +248,13 @@ FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
             
     unzip(fileItem: FileItem){
 
-    var fileName: string = fileItem!.getName()!;
-;
+    var fileName: string = fileItem!.getName()!;;
     
 
-    var fullPath: string = this.getItemFilePath()!;
-;
+    var fullPath: string = this.getItemFilePath()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(fullPath);
     
@@ -271,8 +263,7 @@ stringBuffer!.append(fileName);
 this.logUtil!.putF("FileName: " +fileName, this, "unzip()");
     
 
-    var file: AbFile = new AbFile(stringBuffer!.toString());
-;
+    var file: AbFile = new AbFile(stringBuffer!.toString());;
     
 this.logUtil!.putF(file.getPath(), this, "unzip()");
     
@@ -283,16 +274,13 @@ ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName);
 
     getItemFilePath(): string{
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var filePathData: FilePathData = FilePathData.getInstance()!;
-;
+    var filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     

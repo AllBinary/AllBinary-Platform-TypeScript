@@ -76,19 +76,16 @@ export class PartnerIdentifierFileUtil
 
         try {
             
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-;
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
     var chars: string[] = 
                                                         
                                                         new Array(30)
-                                                    ;
-;
+                                                    ;;
     
 
-    var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
 
@@ -101,8 +98,7 @@ export class PartnerIdentifierFileUtil
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
     

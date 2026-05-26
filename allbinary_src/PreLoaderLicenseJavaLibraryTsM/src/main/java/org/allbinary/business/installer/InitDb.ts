@@ -56,7 +56,7 @@ export class InitDb
          {
         
 
-    private anyType: any
+    private anyType: any;
 
     private readonly METHOD_CALL_GET_HOST_NAME: string = "getHostName";
 
@@ -69,10 +69,12 @@ export class InitDb
     private readonly METHOD_CALL_TEMP_MAIN_PATH: string = "useTemporaryMainPath";
 
     private readonly METHOD_CALL_MAIN_PATH: string = "useNormalMainPath";
+
 public constructor (){
 
             super();
         }
+
 
 public constructor (dbConnectionInfo: DbConnectionInfo){
 
@@ -100,18 +102,15 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = this.anyType!.constructor!;
-;
+    var dynamicClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_GET_HOST_NAME, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -138,18 +137,15 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = this.anyType!.constructor!;
-;
+    var dynamicClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_USERS, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -176,18 +172,15 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = this.anyType!.constructor!;
-;
+    var dynamicClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_DATABASES, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -214,18 +207,15 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = this.anyType!.constructor!;
-;
+    var dynamicClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_TABLES, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -252,18 +242,15 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = this.anyType!.constructor!;
-;
+    var dynamicClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_TEMP_MAIN_PATH, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -290,18 +277,15 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = this.anyType!.constructor!;
-;
+    var dynamicClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_MAIN_PATH, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 

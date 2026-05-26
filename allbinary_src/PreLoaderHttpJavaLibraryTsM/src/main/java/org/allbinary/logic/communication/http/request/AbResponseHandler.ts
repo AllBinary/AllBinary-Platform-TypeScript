@@ -72,8 +72,7 @@ export class AbResponseHandler
             
     public static sendJspTagRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -115,8 +114,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendServletRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -158,8 +156,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendJspTagLicensingRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -201,8 +198,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendServletLicensingRedirect(pageContext: PageContext, e: Exception){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -244,16 +240,13 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
             
     public static sendRedirect(pageContext: PageContext, page: string){
 
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
-;
+    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var response: HttpServletResponse = pageContext!.getResponse() as HttpServletResponse;
-;
+    var response: HttpServletResponse = pageContext!.getResponse() as HttpServletResponse;;
     
 
-    var requestDispatcher: RequestDispatcher = request.getRequestDispatcher(page)!;
-;
+    var requestDispatcher: RequestDispatcher = request.getRequestDispatcher(page)!;;
     
 
                         if(response.isCommitted())
@@ -284,6 +277,7 @@ pageContext!.getOut()!.print("Error: " +page);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

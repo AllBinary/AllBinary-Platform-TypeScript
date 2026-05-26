@@ -89,17 +89,18 @@ export class AuthenticationHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private authenticated: string
+    private authenticated: string;
 
-    private sessionUserName: string
+    private sessionUserName: string;
 
-    private role: UserRole
+    private role: UserRole;
 
-    private timeout: string
+    private timeout: string;
 
-    private attemptsInteger: Integer
+    private attemptsInteger: Integer;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             this(hashMap, pageContext!.getRequest() as HttpServletRequest);
                     
@@ -107,6 +108,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
@@ -188,20 +190,16 @@ this.timeout= this.weblisketSession!.getTimeout();
                         
                                     {
                                     
-    var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-;
+    var timeCreated: number = this.weblisketSession!.getCreationTime()!;;
     
 
-    var sessionTimout: number = this.role.getSessionTimeout()!;
-;
+    var sessionTimout: number = this.role.getSessionTimeout()!;;
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeFirst: number = calendar.getTimeInMillis() -sessionTimout;
-;
+    var timeFirst: number = calendar.getTimeInMillis() -sessionTimout;;
     
 
                         if(timeFirst > timeCreated)
@@ -212,8 +210,7 @@ this.timeout= this.weblisketSession!.getTimeout();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Session Is Old - Timeout: ");
     
@@ -274,32 +271,26 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
                         
                                     {
                                     
-    var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-;
+    var timeCreated: number = this.weblisketSession!.getCreationTime()!;;
     
 
-    var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
-;
+    var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;;
     
 
-    var inactivityAllowed: number = this.role.getSessionInactivityTimeout()!;
-;
+    var inactivityAllowed: number = this.role.getSessionInactivityTimeout()!;;
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeFirst: number = calendar.getTimeInMillis() -lastAccess;
-;
+    var timeFirst: number = calendar.getTimeInMillis() -lastAccess;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATION))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Session Is Rarely Used - Timeout: ");
     
@@ -347,8 +338,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Trying New login<p/>");
     
@@ -363,8 +353,7 @@ stringBuffer!.append("Trying New login<p/>");
 } catch(e) 
             {
 
-    var error: string = "Failed to set valid role";
-;
+    var error: string = "Failed to set valid role";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
@@ -392,8 +381,7 @@ stringBuffer!.append("Trying New login<p/>");
             this.weblisketSession!.setAuthenticated(false);
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Sorry your username and password is invalid on this page. ");
     
@@ -410,8 +398,7 @@ stringBuffer!.append("Trying New login<p/>");
 } catch(e) 
             {
 
-    var error: string = "Failed to set role invalid";
-;
+    var error: string = "Failed to set role invalid";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
@@ -482,29 +469,24 @@ stringBuffer!.append("Trying New login<p/>");
                         
                                     {
                                     
-    var basicUserRole: BasicUserRole = this.role.getBasicUserRole()!;
-;
+    var basicUserRole: BasicUserRole = this.role.getBasicUserRole()!;;
     
 
-    var basicUserRoleArray: any[] = roles.toArray()!;
-;
+    var basicUserRoleArray: any[] = roles.toArray()!;;
     
 
     var size: number = basicUserRoleArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
-;
+    var mustBeOfRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;;
     
 
                         if(basicUserRole! === mustBeOfRole)
@@ -515,12 +497,10 @@ index < size; index++)
                         
                                     {
                                     
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-;
+    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 
-    var userInterface: UserInterface = userEntityInterface!.getUser(this.sessionUserName)!;
-;
+    var userInterface: UserInterface = userEntityInterface!.getUser(this.sessionUserName)!;;
     
 
                         if(!userInterface!.isSessionValid().valueOf())
@@ -649,12 +629,10 @@ index < size; index++)
                         
                                     {
                                     
-    var login: string
-;
+    var login: string;;
     
 
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-;
+    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 login= userEntityInterface!.login(userName, password);
     
@@ -663,8 +641,7 @@ login= userEntityInterface!.login(userName, password);
                         
                                     {
                                     
-    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-;
+    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;;
     
 
                         if(userInterface!.isSessionValid().valueOf())
@@ -787,20 +764,16 @@ this.nextAttempt();
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-;
+    var timeCreated: number = this.weblisketSession!.getCreationTime()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
-;
+    var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;;
     
 stringBuffer!.append("Time Since Last Access: " +(calendar.getTimeInMillis() -lastAccess) +"<br/>\n");
     

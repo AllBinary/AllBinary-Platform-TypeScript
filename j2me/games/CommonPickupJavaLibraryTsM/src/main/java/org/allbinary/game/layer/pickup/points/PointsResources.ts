@@ -65,6 +65,7 @@ export class PointsResources
     public RESOURCE_3: string = "points_3_drop_20_by_20.png";
 
     public RESOURCE_4: string = "points_4_drop_20_by_20.png";
+
 private constructor (){
 
             super();

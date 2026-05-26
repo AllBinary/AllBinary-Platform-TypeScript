@@ -47,6 +47,7 @@ import { TransformInfoInterface } from './TransformInfoInterface.js';
 
 export class CustomTransformInfo extends TransformInfo implements TransformInfoInterface {
         
+
 public constructor (outputTypeName: string, inputOutputTypeName: string, inputOutputTypeFile: string, name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string){
 
             super();

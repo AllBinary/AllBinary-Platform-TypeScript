@@ -54,9 +54,10 @@ export class IIOImageCacheable
          implements CacheableInterface {
         
 
-    private key: string
+    private key: string;
 
-    private iioImage: IIOImage
+    private iioImage: IIOImage;
+
 public constructor (key: string){
 
             super();
@@ -101,8 +102,7 @@ this.iioImage= iioImage;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     

@@ -64,7 +64,8 @@ export class PaymentGatewayComponent extends HttpStoreComponentView {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private paymentGatewayInterface: PaymentGatewayInterface
+    private paymentGatewayInterface: PaymentGatewayInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface, paymentGatewayInterface: PaymentGatewayInterface){
             super(transformInfoInterface);
                     
@@ -80,16 +81,13 @@ this.paymentGatewayInterface= paymentGatewayInterface;
             
     public addDomNodeInterfaces(){
 
-    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(this.paymentGatewayInterface!.getName())!;
-;
+    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(this.paymentGatewayInterface!.getName())!;;
     
 
-    var paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface = paymentType!.getPaymentGatewayDomNodeFactoryInterface()!;
-;
+    var paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface = paymentType!.getPaymentGatewayDomNodeFactoryInterface()!;;
     
 
-    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface) as DomNodeInterface;
-;
+    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface) as DomNodeInterface;;
     
 this.addDomNodeInterface(domNodeInterface);
     
@@ -112,8 +110,7 @@ this.addDomNodeInterface(domNodeInterface);
 } catch(e) 
             {
 
-    var error: string = "Failed to view payment gateway";
-;
+    var error: string = "Failed to view payment gateway";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))

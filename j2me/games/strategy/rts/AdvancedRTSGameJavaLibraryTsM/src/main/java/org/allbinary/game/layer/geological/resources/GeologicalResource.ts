@@ -48,9 +48,10 @@ export class GeologicalResource
          {
         
 
-    private total: number= 0
+    private total: number= 0;
 
-    private initTotal: number
+    private initTotal: number;
+
 public constructor (initTotal: number){
 
             super();
@@ -69,8 +70,7 @@ this.setTotal(this.initTotal);
 
     public add(value: number){
 
-    var max: number = Integer.MAX_VALUE;
-;
+    var max: number = Integer.MAX_VALUE;;
     
 
                         if(this.getTotal() +value > max)

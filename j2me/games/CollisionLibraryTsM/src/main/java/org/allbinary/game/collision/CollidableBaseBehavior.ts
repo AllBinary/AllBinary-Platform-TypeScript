@@ -72,6 +72,7 @@ export class CollidableBaseBehavior
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private collidable: boolean = true;
+
 public constructor (collidable: boolean){
 
             super();

@@ -78,9 +78,10 @@ export class InputAutomationModuleBundleActivator
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface[]
+    private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface[];
 
-    private serviceFactory: ServiceFactory
+    private serviceFactory: ServiceFactory;
+
 public constructor (){
 
             super();
@@ -104,8 +105,7 @@ public constructor (){
             
     getInputAutomationConfigurationModuleChangeListener(context: BundleContext): InputAutomationConfigurationModuleChangeListener{
 
-    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener.constructor.toString()!)!;
-;
+    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener.constructor.toString()!)!;;
     
 
                         if(serviceReference != 
@@ -114,8 +114,7 @@ public constructor (){
                         
                                     {
                                     
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference) as InputAutomationConfigurationModuleChangeListener;
-;
+    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference) as InputAutomationConfigurationModuleChangeListener;;
     
 
                         if(inputAutomationConfigurationModuleChangeListener == 
@@ -154,8 +153,7 @@ public constructor (){
             this.logUtil!.putF(this.commonStrings!.START, this, "addModules");
     
 
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
-;
+    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;;
     
 
                         if(inputAutomationConfigurationModuleChangeListener != 
@@ -168,12 +166,10 @@ public constructor (){
 
 
                         for (
-    var index: number = 0;
-index < this.getInputAutomationModuleInterface()!.length; index++)
+    var index: number = 0;index < this.getInputAutomationModuleInterface()!.length; index++)
         {
 
-    var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;
-;
+    var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;;
     
 inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigurationModuleChangeEvent);
     
@@ -207,8 +203,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
             this.logUtil!.putF(this.commonStrings!.START, this, "removeModules");
     
 
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
-;
+    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;;
     
 
                         if(inputAutomationConfigurationModuleChangeListener != 
@@ -221,12 +216,10 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 
 
                         for (
-    var index: number = 0;
-index < this.getInputAutomationModuleInterface()!.length; index++)
+    var index: number = 0;index < this.getInputAutomationModuleInterface()!.length; index++)
         {
 
-    var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;
-;
+    var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;;
     
 inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfigurationModuleChangeEvent);
     

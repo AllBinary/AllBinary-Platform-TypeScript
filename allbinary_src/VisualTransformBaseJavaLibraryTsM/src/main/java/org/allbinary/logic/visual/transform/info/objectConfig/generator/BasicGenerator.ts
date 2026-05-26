@@ -48,6 +48,7 @@ export class BasicGenerator extends TransformInfoObjectConfigGenerator {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();

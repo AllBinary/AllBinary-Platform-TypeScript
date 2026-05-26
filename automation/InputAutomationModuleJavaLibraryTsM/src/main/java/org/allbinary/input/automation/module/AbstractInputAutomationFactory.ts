@@ -54,11 +54,12 @@ import { JPanel } from './JPanel.js';
 export class AbstractInputAutomationFactory extends InputAutomationModuleFactoryInterface {
         
 
-    private name: string
+    private name: string;
 
-    private jPanel: JPanel
+    private jPanel: JPanel;
 
-    private helpSet: HelpSet
+    private helpSet: HelpSet;
+
 public constructor (name: string, jPanel: JPanel, helpSet: HelpSet){
 
             super();
@@ -70,6 +71,7 @@ this.helpSet= helpSet;
     
 }
 
+
 public constructor (name: string, jPanel: JPanel){
 
             super();
@@ -78,8 +80,7 @@ public constructor (name: string, jPanel: JPanel){
 this.jPanel= jPanel;
     
 
-    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
-;
+    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;;
     
 this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
     

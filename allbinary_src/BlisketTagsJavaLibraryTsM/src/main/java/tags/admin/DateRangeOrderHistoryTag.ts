@@ -56,7 +56,8 @@ export class DateRangeOrderHistoryTag extends StoreValidationTransformTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private status: string
+    private status: string;
+
 public constructor (){
             super();
                     

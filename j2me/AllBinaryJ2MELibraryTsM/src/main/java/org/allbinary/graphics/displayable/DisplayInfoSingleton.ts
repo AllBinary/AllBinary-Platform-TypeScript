@@ -114,15 +114,15 @@ export class DisplayInfoSingleton
 
     private full: number[] = new Array(4);
 
-    private top: number= 0
+    private top: number= 0;
 
-    private left: number= 0
+    private left: number= 0;
 
-    private xOffset: number= 0
+    private xOffset: number= 0;
 
-    private yOffset: number= 0
+    private yOffset: number= 0;
 
-    private scaleLargestTo: number= 0.0
+    private scaleLargestTo: number= 0.0;
 
     public readonly WIDTH: number = 0;
 
@@ -134,9 +134,10 @@ export class DisplayInfoSingleton
 
     private scalableListener: BaseScalable = new BaseScalable();
 
-    private displayRatio: number= 0.0
+    private displayRatio: number= 0.0;
 
     private ratio: number = 1.0;
+
 private constructor (){
 
             super();
@@ -229,26 +230,22 @@ this.scaleLargestTo= scaleLargestTo;
 
     setLastSizeForce(aLastWidth: number, aLastHeight: number, reason: string){
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
 
-    var aFullWidth: number = aLastWidth;
-;
+    var aFullWidth: number = aLastWidth;;
     
 
-    var aFullHeight: number = aLastHeight;
-;
+    var aFullHeight: number = aLastHeight;;
     
 stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.FULL_WIDTH)!.appendint(aFullWidth)!.append(this.FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-;
+    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())
@@ -417,8 +414,7 @@ this.add(this.SET_LAST_SIZE_METHOD_NAME);
 
     public add(reason: string){
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(this.REASON)!.append(reason)!.toString(), this, this.FIRE_METHOD_NAME);
     
@@ -460,8 +456,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.FIRE_METHOD_NAME, e);
 
         try {
             
-    var swtJOGLProcessor: SWTJOGLProcessor = SWTJOGLProcessor.getInstance()!;
-;
+    var swtJOGLProcessor: SWTJOGLProcessor = SWTJOGLProcessor.getInstance()!;;
     
 swtJOGLProcessor!.clear();
     
@@ -484,24 +479,19 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.FIRE_METHOD_NAME, e);
 
     public update(displayable: Displayable, reason: string){
 
-    var aLastWidth: number = displayable.getWidth()!;
-;
+    var aLastWidth: number = displayable.getWidth()!;;
     
 
-    var aLastHeight: number = displayable.getHeight()!;
-;
+    var aLastHeight: number = displayable.getHeight()!;;
     
 
-    var aFullWidth: number = aLastWidth;
-;
+    var aFullWidth: number = aLastWidth;;
     
 
-    var aFullHeight: number = aLastHeight;
-;
+    var aFullHeight: number = aLastHeight;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(this.LAST_WIDTH)!.appendint(aLastWidth)!.append(this.LAST_HEIGHT)!.appendint(aLastHeight)!.append(this.commonSeps!.SPACE)!.append(this.toString())!.toString(), this, this.commonStrings!.UPDATE);
     
@@ -518,8 +508,7 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
 this.logUtil!.putF(stringMaker!.append(this.UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, this.commonStrings!.UPDATE);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-;
+    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())
@@ -663,8 +652,7 @@ this.add(this.commonStrings!.UPDATE);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 

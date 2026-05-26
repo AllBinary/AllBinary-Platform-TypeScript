@@ -67,9 +67,10 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
 export class BasicInputMappingHelpPaintable extends HelpPaintable {
         
 
-    private gameInputMappingArray: GameInputMapping[]
+    private gameInputMappingArray: GameInputMapping[];
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
+
 protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: BasicColor){
             super("Help Screen", BasicColorFactory.getInstance()!.BLACK, basicColor);
                     
@@ -85,45 +86,36 @@ this.update(this.NONE, this.NONE);
 
     public update(selectedGameKey: GameKey, selectedInput: Input){
 
-    var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
-;
+    var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;;
     
 
-    var EQUAL: string = " = ";
-;
+    var EQUAL: string = " = ";;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
     var size: number = this.gameInputMappingArray!.length
-                ;
-;
+                ;;
     
 
-    var keyInfo: string[] = new Array(size);
-;
+    var keyInfo: string[] = new Array(size);;
     
 
-    var gameInputMapping: GameInputMapping
-;
+    var gameInputMapping: GameInputMapping;;
     
 
-    var gameKey: GameKey
-;
+    var gameKey: GameKey;;
     
 
-    var list: BasicArrayList
-;
+    var list: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameInputMapping= this.gameInputMappingArray[index]!;
     
@@ -144,32 +136,26 @@ super.setInputInfoP(keyInfo);
 
     get(keyList: BasicArrayList): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var AND: string = "and ";
-;
+    var AND: string = "and ";;
     
 
-    var key: Input
-;
+    var key: Input;;
     
 
-    var size: number = keyList!.size()!;
-;
+    var size: number = keyList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 key= keyList!.objectArray[index]! as Input;
     

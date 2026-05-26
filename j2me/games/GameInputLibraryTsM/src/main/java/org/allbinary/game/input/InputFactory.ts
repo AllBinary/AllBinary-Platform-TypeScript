@@ -80,21 +80,20 @@ export class InputFactory
     readonly inputIntegerArray: Input[] = new Array(this.MAX);
 
     public readonly NO_INPUT: Input = new Input(0, this.commonStrings!.UNKNOWN);
+
 private constructor (){
 
             super();
         
     var size: number = this.inputIntegerArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.inputIntegerArray[index]= this.NO_INPUT;
     

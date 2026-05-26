@@ -56,6 +56,7 @@ export class AttackSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/attack.wav");
                     

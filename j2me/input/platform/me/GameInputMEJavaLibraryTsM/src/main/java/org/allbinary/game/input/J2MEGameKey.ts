@@ -52,8 +52,7 @@ export class J2MEGameKey extends Input {
 
     public static getString(keyCode: number): string{
 
-    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;
-;
+    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;;
     
 
                         if(input != 
@@ -82,6 +81,7 @@ export class J2MEGameKey extends Input {
                             
 }
 
+
 protected constructor (key: number, keyName: string){
             super(key, keyName);
                     
@@ -89,16 +89,14 @@ protected constructor (key: number, keyName: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var id: number = this.getId()!;
-;
+    var id: number = this.getId()!;;
     
 
                         if(id >= 0)
                         
                                     {
                                     
-    var inputFactory: InputFactory = InputFactory.getInstance()!;
-;
+    var inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 inputFactory!.add(id, this);
     

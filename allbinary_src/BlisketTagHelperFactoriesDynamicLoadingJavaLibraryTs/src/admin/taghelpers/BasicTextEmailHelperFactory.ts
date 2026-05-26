@@ -57,6 +57,7 @@ export class BasicTextEmailHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.BasicTextEmailHelper";
 
     private static readonly FACTORYNAME: string = "BasicTextEmailHelperFactory";
+
 public constructor (){
 
             super();

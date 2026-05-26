@@ -58,7 +58,7 @@ export class Shader
 
     public shaderAsString: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    public shaderHandle: number= 0
+    public shaderHandle: number= 0;
 
 }
                 

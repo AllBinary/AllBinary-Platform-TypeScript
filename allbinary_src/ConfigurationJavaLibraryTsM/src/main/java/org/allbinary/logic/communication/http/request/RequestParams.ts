@@ -75,13 +75,15 @@ export class RequestParams
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private map: Map
+    private map: Map;
+
 public constructor (){
 
             super();
         this.logUtil!.putF("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR);
     
 }
+
 
 public constructor (request: HttpServletRequest){
 
@@ -91,6 +93,7 @@ public constructor (request: HttpServletRequest){
 this.logUtil!.putF("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
+
 
 public constructor (pageContext: PageContext){
 
@@ -126,41 +129,33 @@ this.map= map;
 
         try {
             
-    var node: Node = document.createElement(RequestData.REQUEST)!;
-;
+    var node: Node = document.createElement(RequestData.REQUEST)!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var keys: Set = this.map.keySet()!;
-;
+    var keys: Set = this.map.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;
-;
+    var keyArray: any[] = keys.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var key: string = keyArray[i]! as string;
-;
+    var key: string = keyArray[i]! as string;;
     
 
-    var values: string[] = this.map.get(key) as string[];
-;
+    var values: string[] = this.map.get(key) as string[];;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -205,41 +200,33 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
             
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var keys: Set = this.map.keySet()!;
-;
+    var keys: Set = this.map.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;
-;
+    var keyArray: any[] = keys.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var key: string = keyArray[i]! as string;
-;
+    var key: string = keyArray[i]! as string;;
     
 
-    var values: string[] = this.map.get(key) as string[];
-;
+    var values: string[] = this.map.get(key) as string[];;
     
 hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     

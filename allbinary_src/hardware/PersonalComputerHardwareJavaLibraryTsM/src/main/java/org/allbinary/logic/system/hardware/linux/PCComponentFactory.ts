@@ -91,6 +91,7 @@ export class PCComponentFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly componentFactory: ComponentFactory = ComponentFactory.getInstance()!;
+
 private constructor (){
 
             super();
@@ -224,8 +225,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))

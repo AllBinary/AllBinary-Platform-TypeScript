@@ -53,6 +53,7 @@ export class OpenGLESGraphics
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     gl: GL10 = NullGL10.NULL_GL10;
+
  constructor (){
 
             super();

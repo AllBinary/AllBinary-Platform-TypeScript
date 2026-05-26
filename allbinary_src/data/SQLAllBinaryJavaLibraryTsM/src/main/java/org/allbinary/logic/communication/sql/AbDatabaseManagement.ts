@@ -90,6 +90,7 @@ export class AbDatabaseManagement extends AbSqlBean {
     readonly UNABLE_TO_CREATE_TABLES: string = "Unable to Create Tables";
 
     readonly ADD_TABLES_RESULTS_LABEL: string = "Add Table Results: ";
+
 public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
             super(databaseConnectionInfoInterface as DbConnectionInfo);
                     
@@ -97,6 +98,7 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (connectionInfo: DbConnectionInfo){
             super(connectionInfo);
@@ -111,8 +113,7 @@ public constructor (connectionInfo: DbConnectionInfo){
 
         try {
             
-    var addr: InetAddress = InetAddress.getLocalHost()!;
-;
+    var addr: InetAddress = InetAddress.getLocalHost()!;;
     
 
 
@@ -141,8 +142,7 @@ this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
             
     addDbUser(hostName: string, db: string, userName: string, password: string): boolean{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.GRANT_ALL);
     
@@ -163,8 +163,7 @@ stringBuffer!.append(password);
 stringBuffer!.append(this.WITH_GRANT_OPTION);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.sqlCommandLog!.append(sqlStatement);
     
@@ -187,8 +186,7 @@ super.executeSQLStatement(sqlStatement);
             this.addDbUser(this.AT_LOCALHOST, db, userName, password);
     
 
-    var hostName: string = this.getHostName()!;
-;
+    var hostName: string = this.getHostName()!;;
     
 
                         if(hostName != 
@@ -228,8 +226,7 @@ this.logUtil!.put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_US
 
         try {
             
-    var sqlStatement: string = this.sqlStrings!.CREATE_DATABASE +db;
-;
+    var sqlStatement: string = this.sqlStrings!.CREATE_DATABASE +db;;
     
 this.sqlCommandLog!.append(sqlStatement);
     

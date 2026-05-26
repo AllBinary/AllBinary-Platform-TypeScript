@@ -65,6 +65,7 @@ export class ScoreHudWidget extends NumberStringHud {
     
 }
 
+
 public constructor (maxscore: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super("Pts ", maxscore, location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     

@@ -60,7 +60,8 @@ export class BasicGraphicsPipeline
          {
         
 
-    pointBasicArrayList: BasicArrayList
+    pointBasicArrayList: BasicArrayList;
+
 public constructor (points: BasicArrayList){
 
             super();
@@ -83,28 +84,23 @@ this.pointBasicArrayList= points;
             
     public translate(x: number, y: number){
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayListD();
-;
+    var newBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;
-;
+    var size: number = this.pointBasicArrayList!.size()!;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var secondPoint: GPoint
-;
+    var secondPoint: GPoint;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
@@ -144,52 +140,41 @@ this.rotate(Math.round(angle.getValue()));
             
     rotate(angle: number){
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayListD();
-;
+    var newBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var secondPoint: GPoint
-;
+    var secondPoint: GPoint;;
     
 
-    var y: number= 0
-;
+    var y: number= 0;;
     
 
-    var secondX: number= 0
-;
+    var secondX: number= 0;;
     
 
-    var secondY: number= 0
-;
+    var secondY: number= 0;;
     
 
-    var point: GPoint
-;
+    var point: GPoint;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;
-;
+    var size: number = this.pointBasicArrayList!.size()!;;
     
 
-    var sin: number= 0
-;
+    var sin: number= 0;;
     
 
-    var cos: number= 0
-;
+    var cos: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
@@ -231,40 +216,32 @@ this.pointBasicArrayList= newBasicArrayList;
             
     public mirror(width: number){
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var halfWidth: number = (width>>1);
-;
+    var halfWidth: number = (width>>1);;
     
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayListD();
-;
+    var newBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
-    var secondPoint: GPoint
-;
+    var secondPoint: GPoint;;
     
 
-    var newX: number= 0
-;
+    var newX: number= 0;;
     
 
-    var point: GPoint
-;
+    var point: GPoint;;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;
-;
+    var size: number = this.pointBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     

@@ -70,21 +70,19 @@ export class DownloadItemsRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly downloadableItem: DownloadableItem
+    private readonly downloadableItem: DownloadableItem;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT) as HelperTag;
-;
+    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT) as HelperTag;;
     
 
-    var inventoryItemViewParentTagHelper: InventoryItemViewParentTagHelper = InventoryItemViewParentTagHelper.getInstance()!;
-;
+    var inventoryItemViewParentTagHelper: InventoryItemViewParentTagHelper = InventoryItemViewParentTagHelper.getInstance()!;;
     
 
-    var downloadableInventoryItemView: DownloadableInventoryItemView = inventoryItemViewParentTagHelper!.getDownloadableInventoryItemView(inventoryTag)!;
-;
+    var downloadableInventoryItemView: DownloadableInventoryItemView = inventoryItemViewParentTagHelper!.getDownloadableInventoryItemView(inventoryTag)!;;
     
 this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem();
     
@@ -95,14 +93,12 @@ this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem();
 
         try {
             
-    var vector: Vector = this.downloadableItem!.toVector()!;
-;
+    var vector: Vector = this.downloadableItem!.toVector()!;;
     
 DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.insert(vector);
     
 
-    var success: string = "Successfully inserted " +this.downloadableItem!.getId() +" into downloaditems table";
-;
+    var success: string = "Successfully inserted " +this.downloadableItem!.getId() +" into downloaditems table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -124,8 +120,7 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +this.downloadableItem!.getId() +" into downloaditems table";
-;
+    var error: string = "Failed to insert " +this.downloadableItem!.getId() +" into downloaditems table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -153,8 +148,7 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
             DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.delete(this.downloadableItem!.getId());
     
 
-    var success: string = "Successfully deleted";
-;
+    var success: string = "Successfully deleted";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -176,8 +170,7 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -203,12 +196,10 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
 
         try {
             
-    var success: string = "Update Successful";
-;
+    var success: string = "Update Successful";;
     
 
-    var values: HashMap<any, any> = this.downloadableItem!.toHashMap()!;
-;
+    var values: HashMap<any, any> = this.downloadableItem!.toHashMap()!;;
     
 DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.update(values);
     
@@ -232,8 +223,7 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.upda
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +this.downloadableItem!.getId();
-;
+    var error: string = "Failed to update: " +this.downloadableItem!.getId();;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

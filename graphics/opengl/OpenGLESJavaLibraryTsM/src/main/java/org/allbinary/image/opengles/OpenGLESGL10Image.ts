@@ -76,29 +76,19 @@ export class OpenGLESGL10Image extends OpenGLESImage {
                                 {
                                 
     private readonly glUtil: GLUtil = GLUtil.getInstance()!;
-
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-
     private readonly textureVertexFloatBuffer: FloatBuffer = OpenGLESGL10Image.prototype.textureVertexFloatBuffer;
-
     private readonly regionTextureRectangleFloatArray: number[] = new Array(8);
-
     private readonly regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
-
     private readonly regionRectangleFloatArray: number[] = [0,0,0,0,0,0,0,0,0,0,0,0];
-
     readonly regionRectangleVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *3)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
-
     readonly openGLESImageProperties: OpenGLESImageProperties = OpenGLESGL10Image.prototype.openGLESImageProperties;
-
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
 
-    var imageWidth: number = OpenGLESGL10Image.prototype.getWidth()!;
-;
+    var imageWidth: number = OpenGLESGL10Image.prototype.getWidth()!;;
     
 
-    var imageHeight: number = OpenGLESGL10Image.prototype.getHeight()!;
-;
+    var imageHeight: number = OpenGLESGL10Image.prototype.getHeight()!;;
     
 this.regionRectangleFloatArray[7]= viewHeight;
     
@@ -129,20 +119,17 @@ this.regionTextureRectangleFloatArray[6]= this.regionTextureRectangleFloatArray[
 this.regionTextureRectangleFloatArray[7]= this.regionTextureRectangleFloatArray[5]!;
     
 
-    var u_center: number = (this.regionTextureRectangleFloatArray[0] +this.regionTextureRectangleFloatArray[2]) /2.0;
-;
+    var u_center: number = (this.regionTextureRectangleFloatArray[0] +this.regionTextureRectangleFloatArray[2]) /2.0;;
     
 
-    var v_center: number = (this.regionTextureRectangleFloatArray[5] +this.regionTextureRectangleFloatArray[1]) /2.0;
-;
+    var v_center: number = (this.regionTextureRectangleFloatArray[5] +this.regionTextureRectangleFloatArray[1]) /2.0;;
     
 this.glUtil!.rotateUVs(this.regionTextureRectangleFloatArray,  -this.openGLESImageProperties!.angle, u_center, v_center);
     
 gl.glPushMatrix();
     
 
-    var imageProcessor: OpenGLESImageProcessor = OpenGLESGL10Image.prototype.imageProcessor;
-;
+    var imageProcessor: OpenGLESImageProcessor = OpenGLESGL10Image.prototype.imageProcessor;;
     
 OpenGLESGL10Image.prototype.openGLESImageTranslate!.translate(gl, OpenGLESGL10Image.prototype, x,  -y);
     
@@ -186,12 +173,10 @@ gl.glPopMatrix();
 
     public draw(gl: GL10, x: number, y: number, z: number){
 
-    var width: number = OpenGLESGL10Image.prototype.getWidth()!;
-;
+    var width: number = OpenGLESGL10Image.prototype.getWidth()!;;
     
 
-    var height: number = OpenGLESGL10Image.prototype.getHeight()!;
-;
+    var height: number = OpenGLESGL10Image.prototype.getHeight()!;;
     
 this.regionRectangleFloatArray[7]= this.displayInfoSingleton!.getLastHeight();
     
@@ -226,8 +211,7 @@ gl.glPushMatrix();
 OpenGLESGL10Image.prototype.openGLESImageTranslate!.translate(gl, OpenGLESGL10Image.prototype, x,  -y);
     
 
-    var imageProcessor: OpenGLESImageProcessor = OpenGLESGL10Image.prototype.imageProcessor;
-;
+    var imageProcessor: OpenGLESImageProcessor = OpenGLESGL10Image.prototype.imageProcessor;;
     
 imageProcessor!.scale(gl, this.openGLESImageProperties!.scaleX, this.openGLESImageProperties!.scaleY);
     
@@ -275,6 +259,7 @@ gl.glPopMatrix();
                             ;
 
     private openGLESImageDraw: OpenGLESImageDraw = OpenGLESImageDraw.getInstance()!;
+
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image, bitmapFactory, textureFactory);
                     
@@ -310,8 +295,7 @@ this.textureVertexFloatBuffer!.rewind();
 
     public set(gl: GL){
 
-    var gl10: GL10 = gl as GL10;
-;
+    var gl10: GL10 = gl as GL10;;
     
 
                         if(super.initTexture(gl10))

@@ -75,8 +75,7 @@ export class GenericProfileDataWorkerType
 
     public static getInstance(node: Node): GenericProfileDataWorkerType{
 
-    var name: string = DomNodeHelper.getTextNodeValue(node)!;
-;
+    var name: string = DomNodeHelper.getTextNodeValue(node)!;;
     
 
 
@@ -87,7 +86,8 @@ export class GenericProfileDataWorkerType
 }
 
 
-    private name: string
+    private name: string;
+
 public constructor (name: string){
 
             super();
@@ -118,8 +118,7 @@ this.name= name;
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, this.name)!;
-;
+    var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, this.name)!;;
     
 
 

@@ -76,6 +76,7 @@ import { Log } from './Log.js';
     private readonly logger: Logger = Logger.getLogger(LogUtil.constructor.toString()!)!;
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -90,8 +91,7 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
 
     /*actual*/ public putL(log: Log){
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 
         try {
@@ -102,24 +102,19 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
                         
                                     {
                                     
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = anyType!.constructor!;
-;
+    var clazz: Function = anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 
@@ -133,8 +128,7 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 this.logger.log(Level.INFO, message);
     
@@ -154,12 +148,10 @@ this.logger.log(Level.INFO, message);
 
         try {
             
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = anyType!.constructor!;
-;
+    var clazz: Function = anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 
@@ -173,8 +165,7 @@ this.logger.log(Level.INFO, message);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
                         if(exception != 

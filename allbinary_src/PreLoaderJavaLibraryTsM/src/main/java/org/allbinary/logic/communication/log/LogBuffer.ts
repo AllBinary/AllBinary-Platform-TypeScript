@@ -52,7 +52,8 @@ export class LogBuffer
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    logEntryVector: Vector
+    logEntryVector: Vector;
+
 public constructor (){
 
             super();
@@ -69,20 +70,17 @@ this.logEntryVector!.add(log);
 
     public logAll(){
 
-    var size: number = this.logEntryVector!.length!;
-;
+    var size: number = this.logEntryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var log: Log = this.logEntryVector!.get(index) as Log;
-;
+    var log: Log = this.logEntryVector!.get(index) as Log;;
     
 this.logUtil!.putL(log);
     

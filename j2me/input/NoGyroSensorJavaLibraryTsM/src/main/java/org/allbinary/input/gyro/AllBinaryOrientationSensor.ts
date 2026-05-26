@@ -63,6 +63,7 @@ this.listener= completeMotionGestureInputEventListenerInterface;
     
 }
 
+
 public constructor (){
 
             super();

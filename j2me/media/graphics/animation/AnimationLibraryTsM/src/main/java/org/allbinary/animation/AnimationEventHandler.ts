@@ -58,6 +58,7 @@ export class AnimationEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();

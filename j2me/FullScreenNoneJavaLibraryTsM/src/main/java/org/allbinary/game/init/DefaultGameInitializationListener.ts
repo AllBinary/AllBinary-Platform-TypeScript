@@ -73,12 +73,12 @@ export class DefaultGameInitializationListener
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly swtJOGLProcessor: SWTJOGLProcessor = SWTJOGLProcessor.getInstance()!;
+
 public constructor (){
 
             super();
         
-    var gameInitializedEventHandler: GameInitializedEventHandler = GameInitializedEventHandler.getInstance()!;
-;
+    var gameInitializedEventHandler: GameInitializedEventHandler = GameInitializedEventHandler.getInstance()!;;
     
 gameInitializedEventHandler!.removeAllListeners();
     
@@ -97,12 +97,10 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onGameInitialized(gameInitializedEvent: GameInitializedEvent){
 
-    var ON_GAME_INITIALIZED: string = "onGameInitialized";
-;
+    var ON_GAME_INITIALIZED: string = "onGameInitialized";;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {

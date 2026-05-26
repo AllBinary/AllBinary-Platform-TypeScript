@@ -75,47 +75,40 @@ export class InputAutomationModuleConfigurations
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashMap: HashMap<any, any>
+    private hashMap: HashMap<any, any>;
+
 public constructor (abeClientInformation: AbeClientInformationInterface, file: File){
 
             super();
         this.setHashMap(new HashMap<any, any>());
     
 
-    var bytes: number[] = new Array(100000);
-;
+    var bytes: number[] = new Array(100000);;
     
 
-    var idFile: FileInputStream = new FileInputStream(file);
-;
+    var idFile: FileInputStream = new FileInputStream(file);;
     
 
-    var length: number = idFile!.read(bytes)!;
-;
+    var length: number = idFile!.read(bytes)!;;
     
 
-    var data: string = String.fromCharCode(...bytes);
-;
+    var data: string = String.fromCharCode(...bytes);;
     
 
-    var endIndex: number = data.lastIndexOf('>')!;
-;
+    var endIndex: number = data.lastIndexOf('>')!;;
     
 
-    var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;
-;
+    var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(NewInputAutomationModulesData.NAME)!;
-;
+    var nodeList: NodeList = document.getElementsByTagName(NewInputAutomationModulesData.NAME)!;;
     
 
                         if(nodeList!.getLength() > 0)
                         
                                     {
                                     
-    var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
-;
+    var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;;
     
 this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
@@ -124,12 +117,10 @@ this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(),
 
 
                         for (
-    var index: number = 0;
-index < nameNodeList!.getLength(); index++)
+    var index: number = 0;index < nameNodeList!.getLength(); index++)
         {
 
-    var node: Node = nameNodeList!.item(index)!;
-;
+    var node: Node = nameNodeList!.item(index)!;;
     
 this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
     
@@ -140,14 +131,14 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
                                 
 }
 
+
 public constructor (abeClientInformation: AbeClientInformationInterface, document: Document){
 
             super();
         this.setHashMap(new HashMap<any, any>());
     
 
-    var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
-;
+    var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;;
     
 this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
     
@@ -156,12 +147,10 @@ this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(),
 
 
                         for (
-    var index: number = 0;
-index < nameNodeList!.getLength(); index++)
+    var index: number = 0;index < nameNodeList!.getLength(); index++)
         {
 
-    var node: Node = nameNodeList!.item(index)!;
-;
+    var node: Node = nameNodeList!.item(index)!;;
     
 this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
     
@@ -169,26 +158,24 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
 
 }
 
+
 public constructor (inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration>){
 
             super();
         this.setHashMap(new HashMap<any, any>());
     
 
-    var size: number = inputAutomationModuleConfigurationList!.size!;
-;
+    var size: number = inputAutomationModuleConfigurationList!.size!;;
     
 
-    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration
-;
+    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
     
@@ -197,6 +184,7 @@ this.add(inputAutomationModuleConfiguration);
 }
 
 }
+
 
 public constructor (){
 

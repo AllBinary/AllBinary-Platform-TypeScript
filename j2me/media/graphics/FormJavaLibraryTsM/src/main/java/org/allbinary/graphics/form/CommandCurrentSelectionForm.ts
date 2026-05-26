@@ -76,6 +76,7 @@ export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
     readonly selectedAnimationArray: Animation[] = new Array(16);
 
     readonly unSelectedAnimationArray: Animation[] = new Array(16);
+
 public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
                     
@@ -91,8 +92,7 @@ this.update(items);
 
     initAnimations(){
 
-    var nullAnimation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-;
+    var nullAnimation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;;
     
 
 
@@ -100,8 +100,7 @@ this.update(items);
 
                         for (
     var index: number = this.selectedAnimationArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.selectedAnimationArray[index]= nullAnimation;
     
@@ -113,8 +112,7 @@ this.selectedAnimationArray[index]= nullAnimation;
 
                         for (
     var index: number = this.unSelectedAnimationArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.unSelectedAnimationArray[index]= nullAnimation;
     
@@ -130,8 +128,7 @@ this.unSelectedAnimationArray[index]= nullAnimation;
 
                         for (
     var index: number = items.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.updateAt(index, items[index]!);
     
@@ -142,32 +139,25 @@ this.updateAt(index, items[index]!);
 
     updateAt(index: number, item: ABCustomItem){
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-;
+    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 
-    var buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;
-;
+    var buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;;
     
 
-    var selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;
-;
+    var selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;;
     
 
-    var width: number = item.getMinimumWidth()!;
-;
+    var width: number = item.getMinimumWidth()!;;
     
 
-    var height: number = item.getMinimumHeight()!;
-;
+    var height: number = item.getMinimumHeight()!;;
     
 
-    var adjustedBorder: number = 3;
-;
+    var adjustedBorder: number = 3;;
     
 
-    var offset: number =  -(this.halfBorder +adjustedBorder);
-;
+    var offset: number =  -(this.halfBorder +adjustedBorder);;
     
 
                         if(J2MEUtil.isJ2ME())
@@ -206,12 +196,10 @@ adjustedBorder= 4;
 
     public getSelectedCommand(): Command{
 
-    var index: number = super.getSelectedIndex()!;
-;
+    var index: number = super.getSelectedIndex()!;;
     
 
-    var commandTextItem: CommandTextItem = this.get(index) as unknown as CommandTextItem;
-;
+    var commandTextItem: CommandTextItem = this.get(index) as unknown as CommandTextItem;;
     
 
 
@@ -224,8 +212,7 @@ adjustedBorder= 4;
 
     public append(item: ABCustomItem): number{
 
-    var result: number = super.append(item)!;
-;
+    var result: number = super.append(item)!;;
     
 this.updateAt(result, item);
     

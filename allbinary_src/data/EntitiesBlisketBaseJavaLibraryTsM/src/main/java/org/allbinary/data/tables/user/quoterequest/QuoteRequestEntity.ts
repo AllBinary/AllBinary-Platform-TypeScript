@@ -72,6 +72,7 @@ export class QuoteRequestEntity extends AbSqlBean implements QuoteRequestEntityI
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly tableName: string = "quoterequest";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -119,16 +120,14 @@ this.setTableName(this.tableName);
             
     public get(userName: string, id: number): QuoteRequest{
 
-    var row: HashMap<any, any> = new HashMap<any, any>();
-;
+    var row: HashMap<any, any> = new HashMap<any, any>();;
     
 row.put(UserData.USERNAME, userName);
     
 row.put(QuoteRequestData.getInstance()!.ID, id.toString());
     
 
-    var quoteRequestHashMap: HashMap<any, any> = super.getRow(row)!;
-;
+    var quoteRequestHashMap: HashMap<any, any> = super.getRow(row)!;;
     
 
                         if(quoteRequestHashMap != 
@@ -202,12 +201,10 @@ row.put(QuoteRequestData.getInstance()!.ID, id.toString());
 
     public createTableStatement(): string{
 
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-;
+    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START);
     
@@ -272,8 +269,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
     public dropTable(): string{
 
-    var result: string = dropTable.toCharArray();
-;
+    var result: string = dropTable.toCharArray();;
     
 
 

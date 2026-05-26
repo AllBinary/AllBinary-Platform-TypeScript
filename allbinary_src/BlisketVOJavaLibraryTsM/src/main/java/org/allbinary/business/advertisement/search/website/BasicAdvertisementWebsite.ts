@@ -47,7 +47,8 @@ export class BasicAdvertisementWebsite
          implements AdvertisementWebsiteInterface {
         
 
-    private websiteId: string
+    private websiteId: string;
+
 public constructor (websiteId: string){
 
             super();

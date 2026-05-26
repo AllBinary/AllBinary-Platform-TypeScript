@@ -63,15 +63,16 @@ export class LogConfig
          {
         
 
-    private isEnabled: boolean
+    private isEnabled: boolean;
 
-    private name: string
+    private name: string;
 
-    private description: string
+    private description: string;
 
-    private path: string
+    private path: string;
 
-    private fileName: string
+    private fileName: string;
+
 public constructor (aName: string, aDescription: string, aPath: string, aFileName: string){
 
             super();
@@ -87,38 +88,33 @@ this.fileName= aFileName;
     
 }
 
+
 public constructor (node: Node){
 
             super();
         
-    var enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;
-;
+    var enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;;
     
 
-    var isEnabledString: string = DomNodeHelper.getTextNodeValue(enabledValueNode)!;
-;
+    var isEnabledString: string = DomNodeHelper.getTextNodeValue(enabledValueNode)!;;
     
 this.isEnabled= BooleanUtil.getInstance()!.getFromString(isEnabledString);
     
 
-    var logConfigData: LogConfigData = LogConfigData.getInstance()!;
-;
+    var logConfigData: LogConfigData = LogConfigData.getInstance()!;;
     
 
-    var nameValueNode: Node = DomSearchHelper.getNode(logConfigData!.NAME, node.getChildNodes())!;
-;
+    var nameValueNode: Node = DomSearchHelper.getNode(logConfigData!.NAME, node.getChildNodes())!;;
     
 this.name= DomNodeHelper.getTextNodeValue(nameValueNode);
     
 
-    var descriptionValueNode: Node = DomSearchHelper.getNode(logConfigData!.DESCRIPTION, node.getChildNodes())!;
-;
+    var descriptionValueNode: Node = DomSearchHelper.getNode(logConfigData!.DESCRIPTION, node.getChildNodes())!;;
     
 this.description= DomNodeHelper.getTextNodeValue(descriptionValueNode);
     
 
-    var fileValueNode: Node = DomSearchHelper.getNode(logConfigData!.FILE, node.getChildNodes())!;
-;
+    var fileValueNode: Node = DomSearchHelper.getNode(logConfigData!.FILE, node.getChildNodes())!;;
     
 this.fileName= DomNodeHelper.getTextNodeValue(fileValueNode);
     
@@ -205,8 +201,7 @@ this.fileName= value;
             
     public getTypeVector(): BasicArrayList{
 
-    var logKeyVector: BasicArrayList = new BasicArrayListD();
-;
+    var logKeyVector: BasicArrayList = new BasicArrayListD();;
     
 
 

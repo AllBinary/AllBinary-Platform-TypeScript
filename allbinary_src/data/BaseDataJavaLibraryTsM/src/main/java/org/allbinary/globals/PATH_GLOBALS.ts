@@ -63,16 +63,15 @@ export class PATH_GLOBALS
     
 }
 
+
 private constructor (){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var abPathData: AbPathData = AbPathData.getInstance()!;
-;
+    var abPathData: AbPathData = AbPathData.getInstance()!;;
     
 stringBuffer!.append("data");
     
@@ -123,15 +122,15 @@ this.VIEWS_PATH= stringBuffer!.toString();
 }
 
 
-    public readonly DATA_PATH: string
+    public readonly DATA_PATH: string;
 
-    public readonly INIT_PATH: string
+    public readonly INIT_PATH: string;
 
-    public readonly VIEWS_PATH: string
+    public readonly VIEWS_PATH: string;
 
-    public readonly LOG_PATH: string
+    public readonly LOG_PATH: string;
 
-    public readonly BACKUP_PATH: string
+    public readonly BACKUP_PATH: string;
 
 }
                 

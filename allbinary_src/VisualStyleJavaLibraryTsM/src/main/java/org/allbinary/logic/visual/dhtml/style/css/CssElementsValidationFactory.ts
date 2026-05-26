@@ -61,28 +61,23 @@ export class CssElementsValidationFactory
             
     public static getInstance(cssElementStyleNodeList: Vector): Vector{
 
-    var styles: Vector = new Vector();
-;
+    var styles: Vector = new Vector();;
     
 
-    var size: number = cssElementStyleNodeList!.length!;
-;
+    var size: number = cssElementStyleNodeList!.length!;;
     
 
-    var cssElementStyleNode: Node
-;
+    var cssElementStyleNode: Node;;
     
 
-    var cssValidationInterface: ValidationInterface
-;
+    var cssValidationInterface: ValidationInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 cssElementStyleNode= cssElementStyleNodeList!.get(index) as Node;
     
@@ -103,8 +98,7 @@ styles.add(cssValidationInterface);
 
     public static getInstance(hashMap: HashMap<any, any>): Vector{
 
-    var styles: Vector = new Vector();
-;
+    var styles: Vector = new Vector();;
     
 
 
@@ -113,6 +107,7 @@ styles.add(cssValidationInterface);
                         return styles;
     
 }
+
 
 private constructor (){
 

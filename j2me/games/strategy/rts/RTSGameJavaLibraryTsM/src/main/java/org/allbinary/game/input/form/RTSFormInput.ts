@@ -90,30 +90,29 @@ export class RTSFormInput
 
     readonly newUnconstructedRTSLayerInterfaceArray: CollidableDestroyableDamageableLayer[] = new Array(7);
 
-    readonly groupInterfaceArray: Group[]
+    readonly groupInterfaceArray: Group[];
 
     private selectedGeographicCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
 
-    private stickyItemSelected: boolean= false
+    private stickyItemSelected: boolean= false;
 
-    private selectedStickyItemIndex: number= 0
+    private selectedStickyItemIndex: number= 0;
 
     private selectedStickyItem: ABCustomItem = ABCustomItem.NULL_CUSTOM_ITEM;
+
 public constructor (groupInterfaceArray: Group[]){
 
             super();
         
     var size: number = this.newUnconstructedRTSLayerInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
     
@@ -147,8 +146,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
 
-    var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;
-;
+    var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;;
     
 
                         if(index < 0)
@@ -164,12 +162,10 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
                                     }
                                 
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
-;
+    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
-    var item: ABCustomItem = scrollSelectionForm!.get(index)!;
-;
+    var item: ABCustomItem = scrollSelectionForm!.get(index)!;;
     
 
                         if(item == 
@@ -209,8 +205,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
 
-    var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;
-;
+    var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;;
     
 
                         if(index < 0)
@@ -226,12 +221,10 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
                                     }
                                 
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
-;
+    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
-    var item: ABCustomItem = scrollSelectionForm!.get(index)!;
-;
+    var item: ABCustomItem = scrollSelectionForm!.get(index)!;;
     
 
                         if(item == 
@@ -271,8 +264,7 @@ this.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, laye
 this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
-;
+    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
 
@@ -289,8 +281,7 @@ this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getIns
 this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
 
-    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
-;
+    var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;;
     
 
 
@@ -305,16 +296,13 @@ this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getIns
             
     getInstance(layerManager: AllBinaryLayerManager, aItem: ABCustomItem, geographicMapCellPosition: GeographicMapCellPosition): CollidableDestroyableDamageableLayer{
 
-    var item: LayerInterfaceFactoryImageItem = aItem as LayerInterfaceFactoryImageItem;
-;
+    var item: LayerInterfaceFactoryImageItem = aItem as LayerInterfaceFactoryImageItem;;
     
 
-    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = item.getLayerInterfaceFactoryInterface()!;
-;
+    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = item.getLayerInterfaceFactoryInterface()!;;
     
 
-    var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;
-;
+    var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 
                         if(layerInterfaceFactoryInterface != 

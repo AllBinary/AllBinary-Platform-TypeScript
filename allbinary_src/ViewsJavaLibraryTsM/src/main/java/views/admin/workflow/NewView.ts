@@ -72,6 +72,7 @@ export class NewView extends WorkFlowView implements ValidationComponentInterfac
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -79,8 +80,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, httpTransformInfoInterface!.getPropertiesHashMap()!.get(DynamicObjectData.NAME) as string);
     
@@ -124,8 +124,7 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Please Contact Administrator");
     

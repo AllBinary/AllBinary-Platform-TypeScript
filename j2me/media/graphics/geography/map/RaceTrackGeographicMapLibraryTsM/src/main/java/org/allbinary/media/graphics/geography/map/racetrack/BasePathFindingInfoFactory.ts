@@ -85,15 +85,15 @@ class RaceTrackGeographicMapCellPositionFactoryInitVisitor
          implements GeographicMapCellPositionFactoryInitVisitorInterface {
         
 
-    private startLineId: number
+    private startLineId: number;
 
-    private finishLineId: number
+    private finishLineId: number;
+
 public constructor (){
 
             super();
         
-    var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory()!;
-;
+    var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory()!;;
     
 this.startLineId= raceTrackGeographicMapCellTypeFactory!.getStartType();
     
@@ -106,22 +106,18 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
 
-    var row: number = cellPosition!.getRow()!;
-;
+    var row: number = cellPosition!.getRow()!;;
     
 
-    var column: number = cellPosition!.getColumn()!;
-;
+    var column: number = cellPosition!.getColumn()!;;
     
 
         try {
             
-    var cellTypeId: number = mapArray[row]![column]!;
-;
+    var cellTypeId: number = mapArray[row]![column]!;;
     
 
-    var geographicCellType: number = geographicMapInterface!.getCellTypeFromMapCellTypeInt(cellTypeId)!;
-;
+    var geographicCellType: number = geographicMapInterface!.getCellTypeFromMapCellTypeInt(cellTypeId)!;;
     
 
                         if(geographicCellType == this.startLineId)
@@ -155,12 +151,10 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                                     }
                                 
 
-    var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory()!;
-;
+    var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory()!;;
     
 
-    var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
-;
+    var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;;
     
 
                         if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellTypeFactory!.get(geographicCellType)))
@@ -180,8 +174,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
 } catch(e) 
             {
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 logUtil!.put(new StringMaker().append(commonSeps!.BRACKET_OPEN)!.appendint(row)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(column)!.append("] in [")!.appendint(mapArray!.length)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(mapArray[0]!.length)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e);
     

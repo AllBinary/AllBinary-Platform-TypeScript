@@ -45,6 +45,7 @@ import { HtmlInputData } from './HtmlInputData.js';
 
 export class HtmlSubmitInput extends HtmlValueInput {
         
+
 public constructor (before: string, name: string, value: string, after: string){
             super(before, HtmlInputData.getInstance()!.SUBMIT, name, value, after);
                     

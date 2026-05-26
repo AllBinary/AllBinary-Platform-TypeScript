@@ -69,8 +69,7 @@ export class BasicColorUtil
 
     public getRGB(red: number, green: number, blue: number): number{
 
-    var value: number = 0;
-;
+    var value: number = 0;;
     
 
                         if(this.isAlpha)

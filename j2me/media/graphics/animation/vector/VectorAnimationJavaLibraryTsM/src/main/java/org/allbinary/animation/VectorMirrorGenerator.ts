@@ -78,6 +78,7 @@ export class VectorMirrorGenerator
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly vectorAnimationUtil: VectorAnimationUtil = VectorAnimationUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -88,37 +89,30 @@ private constructor (){
 
         try {
             
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var pointBasicArrayList: BasicArrayList
-;
+    var pointBasicArrayList: BasicArrayList;;
     
 
-    var nextPoints: number[][]
-;
+    var nextPoints: number[][];;
     
 
-    var size2: number= 0
-;
+    var size2: number= 0;;
     
 
     var size: number = points.length
-                ;
-;
+                ;;
     
 
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(size);
-;
+    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(size);;
     
 
 
 
 
                         for (
-    var frame: number = 0;
-frame < size; frame++)
+    var frame: number = 0;frame < size; frame++)
         {
 nextPoints= points[frame]!;
     
@@ -131,8 +125,7 @@ pointBasicArrayList= new BasicArrayListS(size2);
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 pointBasicArrayList!.add(pointFactory!.createXY(nextPoints[index]![0]!, nextPoints[index]![1]!));
     
@@ -147,16 +140,14 @@ pointsBasicArrayList!.add(pointBasicArrayList);
 
 
                         for (
-    var index: number = 0;
-index < points.length; index++)
+    var index: number = 0;index < points.length; index++)
         {
 pointsBasicArrayList!.add(this.getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width));
     
 }
 
 
-    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointList(pointsBasicArrayList)!;
-;
+    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointList(pointsBasicArrayList)!;;
     
 
 
@@ -169,8 +160,7 @@ pointsBasicArrayList!.add(this.getInstance(pointsBasicArrayList!.objectArray[ind
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -189,8 +179,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
             
     public getInstance(pointBasicArrayList: BasicArrayList, width: number): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);
-;
+    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);;
     
 graphicsPipe!.createMatrix();
     

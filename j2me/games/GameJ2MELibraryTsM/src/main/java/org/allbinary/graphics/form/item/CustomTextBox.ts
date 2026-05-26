@@ -73,7 +73,8 @@ import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 export class CustomTextBox extends GameCommandCanvas {
         
 
-    private readonly textFieldItem: ABTextFieldItem
+    private readonly textFieldItem: ABTextFieldItem;
+
 public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, label, backgroundBasicColor, foregroundBasicColor);
                     
@@ -81,12 +82,10 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
                             //For kotlin this is before the body of the constructor.
                     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var textFieldItem: ABTextFieldItem = new ABTextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);
-;
+    var textFieldItem: ABTextFieldItem = new ABTextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);;
     
 textFieldItem!.setString(text);
     
@@ -135,12 +134,10 @@ this.keyRepeatedByDevice(keyCode, 0);
             this.logUtil!.putF(new StringMaker().append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 
-    var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;
-;
+    var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;;
     
 
-    var input: Input = this.inputFactory!.getInstanceById(keyCode)!;
-;
+    var input: Input = this.inputFactory!.getInstanceById(keyCode)!;;
     
 
                         if(platformKeyFactory!.isSubmission(input))

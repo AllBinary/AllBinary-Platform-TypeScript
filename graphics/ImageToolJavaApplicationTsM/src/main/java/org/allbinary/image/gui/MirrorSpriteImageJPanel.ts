@@ -88,9 +88,10 @@ export class MirrorSpriteImageJPanel extends javax.swing.JPanel implements Image
 
     private readonly imageStrings: ImageStrings = ImageStrings.getInstance()!;
 
-    private imageProcessorInput: ImageProcessorInput
+    private imageProcessorInput: ImageProcessorInput;
 
-    private result: BufferedImage
+    private result: BufferedImage;
+
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
                     
@@ -112,30 +113,25 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var generatedBufferedImageArray: BufferedImage[]
-;
+    var generatedBufferedImageArray: BufferedImage[];;
     
 
-    var imageProcessorInput: ImageProcessorInput = MirrorSpriteImageJPanel.prototype.getImageProcessorInput()!;
-;
+    var imageProcessorInput: ImageProcessorInput = MirrorSpriteImageJPanel.prototype.getImageProcessorInput()!;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-;
+    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < bufferedImageArray!.length; index++)
+    var index: number = 0;index < bufferedImageArray!.length; index++)
         {
 generatedBufferedImageArray= MirrorImageUtil.getInstance()!.getImages(bufferedImageArray[index]!, MirrorSpriteImageJPanel.prototype.verticleJCheckBox!.isSelected(), MirrorSpriteImageJPanel.prototype.horizontalJCheckBox!.isSelected());
     
@@ -144,20 +140,17 @@ MirrorSpriteImageJPanel.prototype.result= BufferedImageUtil2.getInstance()!.crea
 MirrorSpriteImageJPanel.prototype.getParent()!.repaint();
     
 
-    var file: File = imageProcessorInput!.getFiles()[index]!;
-;
+    var file: File = imageProcessorInput!.getFiles()[index]!;;
     
 
                         if(!MirrorSpriteImageJPanel.prototype.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;
-;
+    var filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;
-;
+    var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;;
     
 filePath= filePath!.substring(0, extensionIndex) +"_mirror" +imageStrings!.PNG_EXTENSION;
     
@@ -169,8 +162,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(MirrorSpriteImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
-;
+    var isWritten: boolean = ImageIO.write(MirrorSpriteImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
     
@@ -235,8 +227,7 @@ this.jPanel3= new javax.swing.JPanel();
 this.jLabel2= new javax.swing.JLabel();
     
 
-    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);
-;
+    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -287,8 +278,7 @@ generateJButtonActionPerformed(evt);
                             );
     
 
-    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);
-;
+    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -299,8 +289,7 @@ jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.
 this.jLabel2!.setText("Results:");
     
 
-    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);
-;
+    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);;
     
 this.jPanel3!.setLayout(jPanel3Layout);
     
@@ -309,8 +298,7 @@ jPanel3Layout!.setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdeskto
 jPanel3Layout!.setVerticalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jLabel2));
     
 
-    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);
-;
+    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -331,25 +319,25 @@ this.process();
 }
 
 
-    private generateJButton: javax.swing.JButton
+    private generateJButton: javax.swing.JButton;
 
-    private horizontalJCheckBox: javax.swing.JCheckBox
+    private horizontalJCheckBox: javax.swing.JCheckBox;
 
-    private imageHeightIsFrameSizeJCheckBox: javax.swing.JCheckBox
+    private imageHeightIsFrameSizeJCheckBox: javax.swing.JCheckBox;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private jLayeredPane1: javax.swing.JLayeredPane
+    private jLayeredPane1: javax.swing.JLayeredPane;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private jPanel2: javax.swing.JPanel
+    private jPanel2: javax.swing.JPanel;
 
-    private jPanel3: javax.swing.JPanel
+    private jPanel3: javax.swing.JPanel;
 
-    private verticleJCheckBox: javax.swing.JCheckBox
+    private verticleJCheckBox: javax.swing.JCheckBox;
 
-    private writeOverOriginalJCheckBox: javax.swing.JCheckBox
+    private writeOverOriginalJCheckBox: javax.swing.JCheckBox;
 
     public getImageProcessorInput(): ImageProcessorInput{
 

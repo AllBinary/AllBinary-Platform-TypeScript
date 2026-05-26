@@ -61,8 +61,7 @@ export class NoButtonsBuilder extends BaseTouchInput {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-;
+    var list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;;
     
 
 

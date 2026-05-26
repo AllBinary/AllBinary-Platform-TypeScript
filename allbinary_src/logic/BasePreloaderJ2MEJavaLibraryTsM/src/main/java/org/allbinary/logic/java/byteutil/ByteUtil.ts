@@ -57,6 +57,7 @@ export class ByteUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -65,21 +66,17 @@ private constructor (){
 
     public xor(array: number[], mask: number): number[]{
 
-    var bytes: number[] = new Array(array.length);
-;
+    var bytes: number[] = new Array(array.length);;
     
 
     var size: number = array.length
-                ;
-;
+                ;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var currentByte: number
-;
+    var currentByte: number;;
     
 
         while(index < size)
@@ -103,17 +100,14 @@ index++;
 
     public not(array: number[]): number[]{
 
-    var bytes: number[] = new Array(array.length);
-;
+    var bytes: number[] = new Array(array.length);;
     
 
     var size: number = array.length
-                ;
-;
+                ;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < size)
@@ -135,8 +129,7 @@ index++;
 
     public xorByte(array: number[], index: number): number[]{
 
-    var mask: number = 0;
-;
+    var mask: number = 0;;
     
 
                         if(index == 0)
@@ -191,16 +184,14 @@ index++;
                             
 
     var size: number = newByteArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(newByteArray[index] != oldByteArray[index])
@@ -255,16 +246,14 @@ stats[3]= oldByteArray!.length;
 stats[1]= 0;
     
 
-    var size: number = newSize;
-;
+    var size: number = newSize;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(newByteArray[index] != oldByteArray[index])

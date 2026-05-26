@@ -53,7 +53,8 @@ export class DestroyEventFactory
          implements AllBinaryEventObjectFactoryInterface {
         
 
-    private combatGameCanvas: AllBinaryGameCanvas
+    private combatGameCanvas: AllBinaryGameCanvas;
+
 public constructor (combatGameCanvas: AllBinaryGameCanvas){
 
             super();

@@ -77,7 +77,7 @@ export class AbeClassLoader extends ClassLoader {
 
     private static classes: Map = new HashMap<any, any>();
 
-    private static PATH: string
+    private static PATH: string;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -87,7 +87,8 @@ export class AbeClassLoader extends ClassLoader {
 
     private readonly ENCRYPTED_EXTENSION: string = AbPathData.getInstance()!.EXTENSION_SEP +"abc";
 
-    private key: string
+    private key: string;
+
 public constructor (parent: ClassLoader, key: string){
             super(parent);
                     
@@ -129,18 +130,15 @@ AbeClassLoader.PATH= org.allbinary.globals.URLGLOBALS.getWebappPath() +"WEB-INF/
 
     public loadClass(name: string, resolve: boolean): Function{
 
-    var loadedWith: string = "findLoadedClass1";
-;
+    var loadedWith: string = "findLoadedClass1";;
     
 
-    var logBuffer: LogBuffer = new LogBuffer();
-;
+    var logBuffer: LogBuffer = new LogBuffer();;
     
 
         try {
             
-    var myClass: Function = this.findLoadedClass1(name)!;
-;
+    var myClass: Function = this.findLoadedClass1(name)!;;
     
 
                         if(myClass == 
@@ -153,8 +151,7 @@ AbeClassLoader.PATH= org.allbinary.globals.URLGLOBALS.getWebappPath() +"WEB-INF/
             loadedWith= "super.loadClass";
     
 
-    var normalClass: Function = super.loadClass(name, resolve)!;
-;
+    var normalClass: Function = super.loadClass(name, resolve)!;;
     
 
                         if(normalClass != 
@@ -194,8 +191,7 @@ logBuffer!.add(LogFactory.getInstanceF("NoClassDefFoundError Failed Loaded Class
 }
 */
 
-    var classBytes: number[] = this.loadClassBytesFromFile(name)!;
-;
+    var classBytes: number[] = this.loadClassBytesFromFile(name)!;;
     
 
                         if(classBytes == 
@@ -276,12 +272,10 @@ this.logUtil!.put("Failure loading: " +name +"\nwith: " +loadedWith, this, this.
 
     var in: FileInputStream = 
                 null
-            ;
-;
+            ;;
     
 
-    var cname: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var cname: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
         try {
@@ -290,8 +284,7 @@ this.logUtil!.put("Failure loading: " +name +"\nwith: " +loadedWith, this, this.
 in= new FileInputStream(cname);
     
 
-    var decrypted: number[] = this.abCryptUtil!.decrypt(in, this.key)!;
-;
+    var decrypted: number[] = this.abCryptUtil!.decrypt(in, this.key)!;;
     
 
 
@@ -320,8 +313,7 @@ StreamUtil.getInstance()!.close(in);
 /* catch(e) 
             {
 
-    var loadedWith: string = "loadClassBytes";
-;
+    var loadedWith: string = "loadClassBytes";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
@@ -338,8 +330,7 @@ StreamUtil.getInstance()!.close(in);
 /* catch(e) 
             {
 
-    var loadedWith: string = "loadClassBytes";
-;
+    var loadedWith: string = "loadClassBytes";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
@@ -366,14 +357,12 @@ StreamUtil.getInstance()!.close(in);
 
     public oldLoadClass(name: string, resolve: boolean): Function{
 
-    var loadedWith: string = "findLoadedClass1";
-;
+    var loadedWith: string = "findLoadedClass1";;
     
 
         try {
             
-    var myClass: Function = this.findLoadedClass1(name)!;
-;
+    var myClass: Function = this.findLoadedClass1(name)!;;
     
 
                         if(myClass == 
@@ -386,8 +375,7 @@ StreamUtil.getInstance()!.close(in);
             loadedWith= "super.loadClass";
     
 
-    var normalClass: Function = super.loadClass(name, resolve)!;
-;
+    var normalClass: Function = super.loadClass(name, resolve)!;;
     
 
                         if(normalClass != 
@@ -450,8 +438,7 @@ StreamUtil.getInstance()!.close(in);
 loadedWith= "loadClassBytes";
     
 
-    var classBytes: number[] = this.loadClassBytesFromFile(name)!;
-;
+    var classBytes: number[] = this.loadClassBytesFromFile(name)!;;
     
 
                         if(classBytes == 

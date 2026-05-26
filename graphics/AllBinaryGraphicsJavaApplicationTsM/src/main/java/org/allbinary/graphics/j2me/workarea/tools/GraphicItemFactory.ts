@@ -74,9 +74,10 @@ export class GraphicItemFactory
 }
 
 
-    private readonly graphicItems: HashMap<any, any>
+    private readonly graphicItems: HashMap<any, any>;
 
     private readonly DEFAULT: GraphicsItemInterfaceFactoryInterface = new SelectionToolFactory();
+
 private constructor (){
 
             super();
@@ -89,8 +90,7 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
 
     public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
 
-    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName) as GraphicsItemInterfaceFactoryInterface;
-;
+    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName) as GraphicsItemInterfaceFactoryInterface;;
     
 
                         if(graphicsItemInterfaceFactoryInterface == 
@@ -116,12 +116,10 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
             
     public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
 
-    var numberOfItems: number = graphicItemNodeList!.size()!;
-;
+    var numberOfItems: number = graphicItemNodeList!.size()!;;
     
 
-    var graphicItemHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var graphicItemHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
                         if(LOGGING.contains(LOGGING.MENUEVENT))
@@ -135,12 +133,10 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
 
 
                         for (
-    var index: number = 0;
-index < numberOfItems; index++)
+    var index: number = 0;index < numberOfItems; index++)
         {
 
-    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;
-;
+    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;;
     
 graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem);
     

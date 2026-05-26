@@ -57,6 +57,7 @@ export class WorkFlowHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.WorkFlowHelper";
 
     private static readonly FACTORYNAME: string = "WorkFlowHelperFactory";
+
 public constructor (){
 
             super();

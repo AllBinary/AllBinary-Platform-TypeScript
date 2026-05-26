@@ -58,20 +58,17 @@ export class PrimitiveLongUtil
 
     public static createPowerOfTen(powerOfTen: number): PrimitiveLongUtil{
 
-    var primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(powerOfTen, NullUtil.getInstance()!.NULL_OBJECT);
-;
+    var primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(powerOfTen, NullUtil.getInstance()!.NULL_OBJECT);;
     
 
                         if(powerOfTen % 10 != 0)
                         
                                     {
                                     
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRUCTOR, new Exception("Max must be power of 10"));
     
@@ -89,17 +86,18 @@ logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRU
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private powerOfTen: number
+    private powerOfTen: number;
 
-    private maxValue: number
+    private maxValue: number;
 
-    private maxDigits: number
+    private maxDigits: number;
 
-    private readonly charArray: string[]
+    private readonly charArray: string[];
 
-    private currentTotalDigits: number= 0
+    private currentTotalDigits: number= 0;
 
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
+
 public constructor (powerOfTen: number, unused: any = {}){
 
             super();
@@ -146,23 +144,19 @@ this.charArray= new Array(this.maxDigits);
                                     }
                                 
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var div: number = this.powerOfTen;
-;
+    var div: number = this.powerOfTen;;
     
 
-    var lastValue: number = 0;
-;
+    var lastValue: number = 0;;
     
 
         while(div >= 1)
         {
 
-    var digit: number = (value -lastValue) /div;
-;
+    var digit: number = (value -lastValue) /div;;
     
 
                         if(digit >= 0 && digit < 10)

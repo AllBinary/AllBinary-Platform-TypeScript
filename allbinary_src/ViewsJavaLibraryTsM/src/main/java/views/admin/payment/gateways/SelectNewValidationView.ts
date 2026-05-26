@@ -56,6 +56,7 @@ import { HttpStoreComponentView } from '../../../../views/business/context/modul
 
 export class SelectNewValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

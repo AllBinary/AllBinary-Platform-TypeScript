@@ -70,7 +70,8 @@ export class CategoryView
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private categoryInterface: CategoryInterface
+    private categoryInterface: CategoryInterface;
+
 public constructor (categoryInterface: CategoryInterface){
 
             super();
@@ -93,12 +94,10 @@ public constructor (categoryInterface: CategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(CategoryData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(CategoryData.getInstance()!.NAME)!;;
     
 
-    var childCategoryVector: Vector = this.categoryInterface!.getChildNodes()!;
-;
+    var childCategoryVector: Vector = this.categoryInterface!.getChildNodes()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -110,26 +109,22 @@ public constructor (categoryInterface: CategoryInterface){
                                     }
                                 
 
-    var size: number = childCategoryVector!.length!;
-;
+    var size: number = childCategoryVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var anyType: any = childCategoryVector!.get(i)!;
-;
+    var anyType: any = childCategoryVector!.get(i)!;;
     
 
     var categoryPropertiesInterface: CategoryPropertiesInterface = 
                 null
-            ;
-;
+            ;;
     
 
                         if(InterfaceUtil.isImplemented("CategoryPropertiesInterface", anyType))
@@ -145,8 +140,7 @@ i < size; i++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = anyType as CategoryInterface;
-;
+    var categoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 categoryPropertiesInterface= categoryInterface!.getProperties();
     
@@ -155,8 +149,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
                                 
                         else {
                             
-    var isImpl: string = InterfaceUtil.viewAll(anyType!.constructor, CommonSeps.getInstance()!.NEW_LINE)!;
-;
+    var isImpl: string = InterfaceUtil.viewAll(anyType!.constructor, CommonSeps.getInstance()!.NEW_LINE)!;;
     
 
 
@@ -167,8 +160,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
                         }
                             
 
-    var childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).toXmlNode(document)!;
-;
+    var childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).toXmlNode(document)!;;
     
 node.appendChild(childCategoryNode);
     

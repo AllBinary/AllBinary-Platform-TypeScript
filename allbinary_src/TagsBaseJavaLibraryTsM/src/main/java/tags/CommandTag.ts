@@ -48,7 +48,8 @@ export class CommandTag extends CustomTagSupport {
 
     readonly tagStrings: TagStrings = TagStrings.getInstance()!;
 
-    private command: string
+    private command: string;
+
 public constructor (){
 
             super();

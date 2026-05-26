@@ -80,31 +80,25 @@ export class PartnerIdentifierFileUtil
 
         try {
             
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-;
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(this.FILE_NAME)!;
-;
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(this.FILE_NAME)!;;
     
 
-    var inputStreamReader: InputStreamReader = new InputStreamReader(inputStream);
-;
+    var inputStreamReader: InputStreamReader = new InputStreamReader(inputStream);;
     
 
     var chars: string[] = 
                                                         
                                                         new Array(30)
-                                                    ;
-;
+                                                    ;;
     
 
-    var size: number = inputStreamReader!.read(chars)!;
-;
+    var size: number = inputStreamReader!.read(chars)!;;
     
 
-    var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(size > 0)
@@ -130,8 +124,7 @@ inputStreamReader!.close();
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
     

@@ -76,7 +76,8 @@ export class ViewHelper
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private componentInterface: TransformInterface
+    private componentInterface: TransformInterface;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -113,8 +114,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to View: ";
-;
+    var error: string = "Failed to View: ";;
     
 
                         if(this.componentInterface != 
@@ -158,8 +158,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to View: ";
-;
+    var error: string = "Failed to View: ";;
     
 
                         if(this.componentInterface != 

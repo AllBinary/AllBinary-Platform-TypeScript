@@ -89,23 +89,22 @@ export class MotionGestureRecognizer
 
     private readonly line: Line = new Line(this.origin, this.origin);
 
-    private readonly motionGesturesHandler: BasicMotionGesturesHandler
+    private readonly motionGesturesHandler: BasicMotionGesturesHandler;
 
-    private readonly movedMotionGesturesHandler: BasicEventHandler
+    private readonly movedMotionGesturesHandler: BasicEventHandler;
 
-    private readonly motionEventCircularPool: MotionEventCircularPool
+    private readonly motionEventCircularPool: MotionEventCircularPool;
+
 public constructor (id: number){
 
             super();
         this.motionEventCircularPool= MotionEventCircularPool.createPool(id);
     
 
-    var motionGesturesHandler: BasicEventHandler = new BasicEventHandler();
-;
+    var motionGesturesHandler: BasicEventHandler = new BasicEventHandler();;
     
 
-    var movedMotionGesturesHandler: BasicEventHandler = motionGesturesHandler;
-;
+    var movedMotionGesturesHandler: BasicEventHandler = motionGesturesHandler;;
     
 
         try {
@@ -118,8 +117,7 @@ movedMotionGesturesHandler= MovedMotionGesturesHandler.getInstance();
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
@@ -140,8 +138,7 @@ this.intermediate= this.origin;
 this.previous= this.origin;
     
 
-    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.PRESSED)!;
-;
+    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.PRESSED)!;;
     
 event.setPreviousPoint(this.previous);
     
@@ -162,8 +159,7 @@ this.motionGesturesHandler!.fireEvent(event);
             
     public processReleasedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
 
-    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.RELEASED)!;
-;
+    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.RELEASED)!;;
     
 event.setPreviousPoint(this.previous);
     
@@ -205,8 +201,7 @@ this.line.setP1(this.previous);
 this.line.setP2(current);
     
 
-    var minimumMotionGesture: number = MotionGestureConfigurationFactory.getInstance()!.getMinimumMotionGesture()!;
-;
+    var minimumMotionGesture: number = MotionGestureConfigurationFactory.getInstance()!.getMinimumMotionGesture()!;;
     
 
                         if(this.j2seMath!.abs(this.line.getDeltaX()) < minimumMotionGesture && this.j2seMath!.abs(this.line.getDeltaY()) < minimumMotionGesture)
@@ -224,32 +219,25 @@ this.line.setP2(current);
                                     }
                                 
 
-    var gradient: number = this.line.getGradient()!;
-;
+    var gradient: number = this.line.getGradient()!;;
     
 
-    var absGradient: number = this.j2seMath!.abs(gradient);
-;
+    var absGradient: number = this.j2seMath!.abs(gradient);;
     
 
-    var conf: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
-;
+    var conf: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;;
     
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-;
+    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var newMotionGesture: MotionGestureInput = touchMotionGestureFactory!.NO_MOTION;
-;
+    var newMotionGesture: MotionGestureInput = touchMotionGestureFactory!.NO_MOTION;;
     
 
-    var diagonalToleranceHigher: number = 12.0;
-;
+    var diagonalToleranceHigher: number = 12.0;;
     
 
-    var diagonalToleranceLower: number = 12.0;
-;
+    var diagonalToleranceLower: number = 12.0;;
     
 
                         if(conf.isDiagonalMotionGestureAllowed())
@@ -360,8 +348,7 @@ this.previous= current;
 this.intermediate= current;
     
 
-    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(newMotionGesture)!;
-;
+    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(newMotionGesture)!;;
     
 event.setPreviousPoint(this.previous);
     
@@ -382,8 +369,7 @@ this.motionGesturesHandler!.fireEvent(event);
             
     public processMovedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
 
-    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.NO_MOTION)!;
-;
+    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.NO_MOTION)!;;
     
 event.setPreviousPoint(this.previous);
     

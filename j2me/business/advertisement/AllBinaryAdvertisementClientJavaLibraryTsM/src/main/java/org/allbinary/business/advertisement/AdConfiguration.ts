@@ -50,11 +50,12 @@ export class AdConfiguration
          {
         
 
-    public readonly INNERACTIVE: string
+    public readonly INNERACTIVE: string;
 
-    public readonly LEADBOLT: string
+    public readonly LEADBOLT: string;
 
-    public readonly ADMOB: string
+    public readonly ADMOB: string;
+
 public constructor (advertIdArray: any[]){
 
             super();

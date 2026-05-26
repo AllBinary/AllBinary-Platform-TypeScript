@@ -68,9 +68,10 @@ export class CollidableWeaponBehavior extends CollidableDestroyableDamageableBeh
 
     public static readonly NULL_COLLIDABLE_WEAPON_BEHAVIOR: CollidableWeaponBehavior = new CollidableWeaponBehavior(false);
 
-    private collided: boolean= false
+    private collided: boolean= false;
 
-    collisionHelper: CollisionHelper
+    collisionHelper: CollisionHelper;
+
 public constructor (collidable: boolean){
             super(collidable);
                     
@@ -142,8 +143,7 @@ this.collided= true;
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;
-;
+    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;;
     
 
                         if(ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])

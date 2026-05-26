@@ -75,23 +75,24 @@ export class BasicOptionItemsRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private id: string
+    private id: string;
 
-    private optionOneTitle: string
+    private optionOneTitle: string;
 
-    private defaultOptionItem: string
+    private defaultOptionItem: string;
 
-    private defaultOptionValue: string
+    private defaultOptionValue: string;
 
-    private optionItem: Vector
+    private optionItem: Vector;
 
-    private optionValue: Vector
+    private optionValue: Vector;
 
-    private timeEntered: string
+    private timeEntered: string;
 
-    private lastModified: string
+    private lastModified: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -160,8 +161,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 values.put(BasicItemData.ID, id);
     
@@ -202,12 +202,10 @@ values.put(BasicOptionItemData.OPTION_ONE_NINE_ITEM, this.optionItem!.get(8));
 values.put(BasicOptionItemData.OPTION_ONE_NINE_VALUE, this.optionValue!.get(8));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -224,30 +222,25 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.id);
     
 
-    var size: number = this.optionValue!.length!;
-;
+    var size: number = this.optionValue!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 values.add(this.optionValue!.get(index));
     
@@ -262,8 +255,7 @@ values.add(time);
 BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +this.id +" into items table";
-;
+    var success: string = "Successfully inserted " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -285,8 +277,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +this.id +" into items table";
-;
+    var error: string = "Failed to insert " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -314,8 +305,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
             BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.delete(this.id);
     
 
-    var success: string = "Successfully deleted";
-;
+    var success: string = "Successfully deleted";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -337,8 +327,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -364,12 +353,10 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
 
         try {
             
-    var success: string = "Update Pricing Successful";
-;
+    var success: string = "Update Pricing Successful";;
     
 
-    var values: HashMap<any, any> = this.getHashMap()!;
-;
+    var values: HashMap<any, any> = this.getHashMap()!;;
     
 BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.update(values);
     
@@ -393,8 +380,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +this.id;
-;
+    var error: string = "Failed to update: " +this.id;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

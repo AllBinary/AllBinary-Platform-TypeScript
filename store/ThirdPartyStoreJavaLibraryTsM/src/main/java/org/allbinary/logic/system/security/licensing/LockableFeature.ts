@@ -46,7 +46,8 @@ export class LockableFeature
          {
         
 
-    private readonly name: string
+    private readonly name: string;
+
 public constructor (name: string){
 
             super();

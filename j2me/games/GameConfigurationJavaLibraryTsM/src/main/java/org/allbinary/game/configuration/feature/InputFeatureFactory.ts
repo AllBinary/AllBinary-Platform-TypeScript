@@ -59,6 +59,7 @@ export class InputFeatureFactory
     
 }
 
+
 private constructor (){
 
             super();
@@ -77,8 +78,7 @@ private constructor (){
 
     public isSingleKeyProcessing(): boolean{
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(this.SINGLE_KEY_REPEAT_PRESS) || features.isFeature(this.SINGLE_KEY_PRESS))

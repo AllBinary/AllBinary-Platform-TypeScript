@@ -52,6 +52,7 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
 export class OverrideStoreTransformInfoObjectConfig extends GenericStoreTransformInfoObjectConfig {
         
+
 public constructor (abeClientInformation: Object, transformInfoInterface: Object){
             super(abeClientInformation, transformInfoInterface);
                     
@@ -59,6 +60,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object){
             super(abeClientInformation, transformInfoInterface, document);
@@ -69,6 +71,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
 this.setDocument(this.generate(this.toXmlDoc()));
     
 }
+
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string){
             super(abeClientInformation, transformInfoInterface, name, type);
@@ -85,8 +88,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
             
     generate(objectConfigDocument: Document): Document{
 
-    var newObjectConfigDocument: Document = super.generate(objectConfigDocument)!;
-;
+    var newObjectConfigDocument: Document = super.generate(objectConfigDocument)!;;
     
 
 

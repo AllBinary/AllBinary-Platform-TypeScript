@@ -61,11 +61,12 @@ export class NativeLibraryHelperWrapper
          {
         
 
-    private libraryName: string
+    private libraryName: string;
 
-    private loader: ClassLoader
+    private loader: ClassLoader;
 
-    private anyType: any
+    private anyType: any;
+
 public constructor (libraryName: string){
 
             super();
@@ -78,37 +79,31 @@ public constructor (libraryName: string){
             
     public load(){
 
-    var params: any[] = new Array(1);
-;
+    var params: any[] = new Array(1);;
     
 params[0]= this.getLibraryName();
     
 
-    var classes: Function[] = new Array(1);
-;
+    var classes: Function[] = new Array(1);;
     
 classes[0]= this.getLibraryName()!.constructor;
     
 this.loader= new NativeLibraryClassLoader(this.constructor.namegetClassLoader());
     
 
-    var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;
-;
+    var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;;
     
 
-    var constructor: Constructor = myClass!.getConstructor(classes)!;
-;
+    var constructor: Constructor = myClass!.getConstructor(classes)!;;
     
 this.anyType= constructor.newInstance(params);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
     var method: Method = this.anyType!.constructor.name.getMethod(commonStrings!.LOAD, 
-                            null)!;
-;
+                            null)!;;
     
 method.invoke(this.anyType, 
                             null);

@@ -58,6 +58,7 @@ export class SelectBuildingSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/select_building.wav");
                     

@@ -49,6 +49,7 @@ import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class ColorLessVectorAnimation extends VectorAnimation {
         
+
 public constructor (currentPoints: number[][][], animationBehavior: AnimationBehavior){
             super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior);
                     

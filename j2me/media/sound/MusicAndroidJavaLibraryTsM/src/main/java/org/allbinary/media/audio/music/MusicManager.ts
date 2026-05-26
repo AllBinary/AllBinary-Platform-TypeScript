@@ -73,12 +73,10 @@ export class MusicManager
 
     public static pause(activity: Activity, musicServiceClass: Function){
 
-    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
-;
+    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
-    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass.constructor.java);
-;
+    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass.constructor.java);;
     
 musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1);
     
@@ -93,12 +91,10 @@ activity.startService(musicPauseIntent);
                         
                                     {
                                     
-    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
-;
+    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
-    var musicResumeIntent: Intent = new Intent(activity, musicServiceClass.constructor.java);
-;
+    var musicResumeIntent: Intent = new Intent(activity, musicServiceClass.constructor.java);;
     
 musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2);
     
@@ -132,7 +128,7 @@ activity.startService(musicResumeIntent);
 
     private readonly timeDelayHelper2: TimeDelayHelper = new TimeDelayHelper(1200);
 
-    private readonly songList: BasicArrayList
+    private readonly songList: BasicArrayList;
 
     private currentSongSound: Sound = NoSound.getInstance()!;
 
@@ -142,9 +138,10 @@ activity.startService(musicResumeIntent);
 
     private rightVolume: number = 100;
 
-    private readonly musicServiceClass: Function
+    private readonly musicServiceClass: Function;
 
-    private readonly currentIntent: Intent
+    private readonly currentIntent: Intent;
+
 public constructor (musicServiceClass: Function, songList: BasicArrayList){
 
             super();
@@ -246,16 +243,13 @@ this.timeDelayHelper!.delay= 0;
 
 
                         for (
-    var index: number = this.songList!.size()!;
---index >= 0; )
+    var index: number = this.songList!.size()!;--index >= 0; )
         {
 
-    var sound: Sound = this.songList!.get(index) as Sound;
-;
+    var sound: Sound = this.songList!.get(index) as Sound;;
     
 
-    var duration: number = sound.getDuration();
-;
+    var duration: number = sound.getDuration();;
     
 PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
@@ -287,8 +281,7 @@ this.nextSongSound= NoSound.getInstance();
                         }
                             
 
-    var duration: number = this.currentSongSound!.getDuration();
-;
+    var duration: number = this.currentSongSound!.getDuration();;
     
 PreLogUtil.put(new StringMaker().append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
@@ -307,8 +300,7 @@ this.resourceUtil!.getContext()!.startService(this.currentIntent);
 } catch(e) 
             {
 
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.currentSongSound != 

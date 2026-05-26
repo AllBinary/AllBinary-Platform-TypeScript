@@ -76,38 +76,31 @@ this.baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.to2DCharAr
 
     public paint(graphics: Graphics){
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 graphics.setColor(this.RED);
     
 
-    var charArray: string[]
-;
+    var charArray: string[];;
     
 
-    var charArray2: string[]
-;
+    var charArray2: string[];;
     
 
-    var size2: number= 0
-;
+    var size2: number= 0;;
     
 
-    var size3: number= 0
-;
+    var size3: number= 0;;
     
 
-    var size: number = this.baseRefreshHelperCharArray!.length -2;
-;
+    var size: number = this.baseRefreshHelperCharArray!.length -2;;
     
 
 
 
 
                         for (
-    var index: number = size;
-index >= 0; )
+    var index: number = size;index >= 0; )
         {
 charArray= this.baseRefreshHelperCharArray[index]!;
     

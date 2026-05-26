@@ -69,6 +69,7 @@ export class AbKeys
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

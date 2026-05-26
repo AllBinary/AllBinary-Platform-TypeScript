@@ -78,8 +78,7 @@ export class AndroidImageUtil
 bitmap.eraseColor(Color.TRANSPARENT);
     
 
-    var canvas: Canvas = new android.graphics.Canvas();
-;
+    var canvas: Canvas = new android.graphics.Canvas();;
     
 canvas.setBitmap(bitmap);
     
@@ -90,18 +89,15 @@ canvas.drawBitmap(originalBitmap, 0.0, 0.0, paint);
 
     public paint(image: Image, originalImage: Image, paint: Paint){
 
-    var androidImage: AndroidImageInterface = image as AndroidImageInterface;
-;
+    var androidImage: AndroidImageInterface = image as AndroidImageInterface;;
     
 androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
     
 
-    var canvas: Canvas = androidImage!.getCanvas()!;
-;
+    var canvas: Canvas = androidImage!.getCanvas()!;;
     
 
-    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
-;
+    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;;
     
 canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0, 0.0, paint);
     
@@ -110,20 +106,17 @@ canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0, 0.0, paint);
 
     public rotate(image: Image, originalImage: Image, matrix: Matrix, paint: Paint){
 
-    var androidImage: AndroidImageInterface = image as AndroidImageInterface;
-;
+    var androidImage: AndroidImageInterface = image as AndroidImageInterface;;
     
 androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
     
 
-    var canvas: Canvas = androidImage!.getCanvas()!;
-;
+    var canvas: Canvas = androidImage!.getCanvas()!;;
     
 canvas.concat(matrix);
     
 
-    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
-;
+    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;;
     
 canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0, 0.0, paint);
     

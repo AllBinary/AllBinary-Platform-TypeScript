@@ -75,12 +75,10 @@ export class SystemHardwareFactory
 
     public static static_toString(): string{
 
-    var systemHardwareFactory: SystemHardwareFactory = SystemHardwareFactory.getInstance()!;
-;
+    var systemHardwareFactory: SystemHardwareFactory = SystemHardwareFactory.getInstance()!;;
     
 
-    var osBuffer: StringMaker = new StringMaker();
-;
+    var osBuffer: StringMaker = new StringMaker();;
     
 osBuffer!.append("Hardware Info: \n");
     
@@ -115,6 +113,7 @@ osBuffer!.append("Hardware Info: \n");
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private hardwareInterface: HardwareInterface = NoHardware.getInstance()!;
+
 private constructor (){
 
             super();

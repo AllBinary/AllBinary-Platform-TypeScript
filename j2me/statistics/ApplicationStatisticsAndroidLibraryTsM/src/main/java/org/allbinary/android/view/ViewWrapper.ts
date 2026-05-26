@@ -47,7 +47,8 @@ import { View } from '../../../../android/view/View.js';
 export class ViewWrapper extends BaseViewWrapper {
         
 
-    private readonly view: View
+    private readonly view: View;
+
 public constructor (view: View){
 
             super();

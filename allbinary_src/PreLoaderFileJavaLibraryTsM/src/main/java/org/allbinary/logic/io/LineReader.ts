@@ -61,23 +61,23 @@ export class LineReader
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private fileName: string
+    private fileName: string;
 
-    private string: string
+    private string: string;
 
     private index: number = 0;
 
-    private idFile: AbFileInputStream
+    private idFile: AbFileInputStream;
 
-    private idData: DataInputStream
+    private idData: DataInputStream;
+
 public constructor (fileName: string){
 
             super();
         
         try {
             
-    var bytes: number[] = new Array(100000);
-;
+    var bytes: number[] = new Array(100000);;
     
 this.fileName= fileName;
     
@@ -108,8 +108,7 @@ this.logUtil!.put("File: " +fileName, this, "LineReader", e);
 
         try {
             
-    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
-;
+    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
     
 
                         if(nextIndex ==  -1)
@@ -159,8 +158,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
 
         try {
             
-    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
-;
+    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;;
     
 
                         if(nextIndex ==  -1)
@@ -175,8 +173,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
                                     }
                                 
 
-    var temp: string = this.string.substring(index, nextIndex)!;
-;
+    var temp: string = this.string.substring(index, nextIndex)!;;
     
 index= nextIndex +1;
     

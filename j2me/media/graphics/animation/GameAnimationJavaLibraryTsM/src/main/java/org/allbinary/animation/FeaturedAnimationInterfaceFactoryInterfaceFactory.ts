@@ -83,6 +83,7 @@ export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedR
     
 }
 
+
 private constructor (){
 
             super();
@@ -105,40 +106,33 @@ private constructor (){
             
     public getRectangleXY(resource: string, x: number, y: number): Rectangle{
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var list: BasicArrayList = this.getList()!;
-;
+    var list: BasicArrayList = this.getList()!;;
     
 
-    var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.intValue()!;
-;
+    var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.intValue()!;;
     
 
-    var size: number = this.getList()!.size()!;
-;
+    var size: number = this.getList()!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface = list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
-;
+    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface = list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;;
     
 
                         if(featureInterface!.isFeature())
                         
                                     {
                                     
-    var rectangle: Rectangle = featureInterface!.getRectangle(resource)!;
-;
+    var rectangle: Rectangle = featureInterface!.getRectangle(resource)!;;
     
 
                         if(rectangle != RectangleFactory.SINGLETON)
@@ -194,32 +188,26 @@ index < size; index++)
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
 
-    var list: BasicArrayList = this.getList()!;
-;
+    var list: BasicArrayList = this.getList()!;;
     
 
-    var resourceTypeAvailableList: BasicArrayList = new BasicArrayListD();
-;
+    var resourceTypeAvailableList: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.getList()!.size()!;
-;
+    var size: number = this.getList()!.size()!;;
     
 
-    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface
-;
+    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface;;
     
 
-    var animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface
-;
+    var animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
     
@@ -254,28 +242,22 @@ animationInterfaceFactoryInterface= featureInterface!.getBasicAnimationInterface
                         
                                     {
                                     
-    var NO_ANIMATION_AVAILABLE_FROM: string = "No animation available from: ";
-;
+    var NO_ANIMATION_AVAILABLE_FROM: string = "No animation available from: ";;
     
 
-    var FOR_FACTORIES: string = " factories: ";
-;
+    var FOR_FACTORIES: string = " factories: ";;
     
 
-    var FOR_RESOURCE: string = " for Resource: ";
-;
+    var FOR_RESOURCE: string = " for Resource: ";;
     
 
-    var HAS_KEY: string = " has: ";
-;
+    var HAS_KEY: string = " has: ";;
     
 
-    var RESOURCES_LABEL: string = " resources ";
-;
+    var RESOURCES_LABEL: string = " resources ";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(NO_ANIMATION_AVAILABLE_FROM);
     
@@ -288,16 +270,14 @@ stringBuffer!.appendint(size);
 stringBuffer!.append(FOR_FACTORIES);
     
 
-    var size2: number = resourceTypeAvailableList!.size()!;
-;
+    var size2: number = resourceTypeAvailableList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 stringBuffer!.append(resourceTypeAvailableList!.get(index)!.toString());
     
@@ -314,8 +294,7 @@ stringBuffer!.append(resource);
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
     
@@ -348,16 +327,14 @@ stringBuffer!.append(RESOURCES_LABEL);
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
     
@@ -368,8 +345,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
 }
 
 
-    var result: string = stringBuffer!.toString()!;
-;
+    var result: string = stringBuffer!.toString()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     

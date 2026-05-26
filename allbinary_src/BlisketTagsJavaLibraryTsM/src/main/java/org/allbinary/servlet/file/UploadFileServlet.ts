@@ -96,22 +96,20 @@ export class UploadFileServlet extends HttpServlet {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    requestHashMap: HashMap<any, any>
+    requestHashMap: HashMap<any, any>;
 
-    private fileName: string
+    private fileName: string;
 
                 //@Throws(ServletException.constructor, IOException.constructor)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 
-    var isError: boolean = false;
-;
+    var isError: boolean = false;;
     
 
     var inputStream: InputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
@@ -120,8 +118,7 @@ export class UploadFileServlet extends HttpServlet {
 this.requestHashMap= new MultipartRequestParams(request).toHashMap();
     
 
-    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as string;
-;
+    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as string;;
     
 
                         if(filePath == 
@@ -143,12 +140,10 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;
-;
+    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;;
     
 
                         if(authenticationHelper!.isAuthenticated())
@@ -234,14 +229,12 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
 
     var fileOutputStream: AbFileOutputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             
-    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA) as FileItem;
-;
+    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA) as FileItem;;
     
 
                         if(fileItem != 
@@ -261,16 +254,14 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);
-;
+    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Uploaded File: ");
     
@@ -288,8 +279,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "saveFile()");
 HttpFileUploadUtil.log(fileItem);
     
 
-    var byteArray: number[] = fileItem!.get()!;
-;
+    var byteArray: number[] = fileItem!.get()!;;
     
 
                         if(file.isFile())

@@ -46,7 +46,8 @@ export class PaymentTransactionKeys
          {
         
 
-    private key: string
+    private key: string;
+
 protected constructor (value: string){
 
             super();

@@ -71,6 +71,7 @@ export class OSGIServiceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -81,8 +82,7 @@ private constructor (){
             
     public getServicesObjectVector(bundleContext: Object, serviceReferences: ServiceReference[]): Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
                         if(serviceReferences != 
@@ -92,8 +92,7 @@ private constructor (){
                                     {
                                     
     var size: number = serviceReferences!.length
-                ;
-;
+                ;;
     
 this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector");
     
@@ -102,12 +101,10 @@ this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector"
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var serviceReference: ServiceReference = serviceReferences[index]!;
-;
+    var serviceReference: ServiceReference = serviceReferences[index]!;;
     
 
                         if(serviceReference != 
@@ -116,8 +113,7 @@ index < size; index++)
                         
                                     {
                                     
-    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference) as OSGIServiceInterface;
-;
+    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference) as OSGIServiceInterface;;
     
 
                         if(osgiServiceInterface == 

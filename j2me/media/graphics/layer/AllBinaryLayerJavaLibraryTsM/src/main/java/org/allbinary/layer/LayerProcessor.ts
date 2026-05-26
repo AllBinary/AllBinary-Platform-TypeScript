@@ -56,7 +56,8 @@ export class LayerProcessor
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly layerManager: LayerManager
+    private readonly layerManager: LayerManager;
+
 public constructor (layerManager: LayerManager){
 
             super();
@@ -101,20 +102,17 @@ public constructor (layerManager: LayerManager){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var layerManager: LayerManager = this.getLayerManager()!;
-;
+    var layerManager: LayerManager = this.getLayerManager()!;;
     
 
-    var size: number = layerManager!.getSize()!;
-;
+    var size: number = layerManager!.getSize()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index);
     

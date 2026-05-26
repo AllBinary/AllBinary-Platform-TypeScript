@@ -57,6 +57,7 @@ export class StoreFrontOrdersHistoryStatisticsData
     
 }
 
+
 private constructor (){
 
             super();

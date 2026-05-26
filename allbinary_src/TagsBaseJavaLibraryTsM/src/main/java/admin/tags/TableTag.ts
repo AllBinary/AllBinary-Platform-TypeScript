@@ -76,17 +76,18 @@ export class TableTag extends PropertiesTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private enabled: string
+    private enabled: string;
 
-    private tagHelperFactoryInterface: TagHelperFactoryInterface
+    private tagHelperFactoryInterface: TagHelperFactoryInterface;
 
-    private tagRequestHelperFactoryInterface: TagHelperFactoryInterface
+    private tagRequestHelperFactoryInterface: TagHelperFactoryInterface;
 
-    private requestObject: any
+    private requestObject: any;
 
-    private current: Integer
+    private current: Integer;
 
-    private total: Integer
+    private total: Integer;
+
 public constructor (){
 
             super();
@@ -210,22 +211,18 @@ this.total= total;
 
         try {
             
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("drop", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -238,8 +235,7 @@ this.total= total;
 } catch(e) 
             {
 
-    var error: string = "Failed to drop table";
-;
+    var error: string = "Failed to drop table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -267,22 +263,18 @@ this.total= total;
 
         try {
             
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("create", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -295,8 +287,7 @@ this.total= total;
 } catch(e) 
             {
 
-    var error: string = "Failed to create table";
-;
+    var error: string = "Failed to create table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -324,22 +315,18 @@ this.total= total;
 
         try {
             
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("restore", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -352,8 +339,7 @@ this.total= total;
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -381,22 +367,18 @@ this.total= total;
 
         try {
             
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("backup", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -409,8 +391,7 @@ this.total= total;
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -438,18 +419,15 @@ this.total= total;
 
         try {
             
-    var helperClass: Function = this.requestObject!.constructor!;
-;
+    var helperClass: Function = this.requestObject!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("insert", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -462,8 +440,7 @@ this.total= total;
 } catch(e) 
             {
 
-    var error: string = "Failed to insert";
-;
+    var error: string = "Failed to insert";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -491,18 +468,15 @@ this.total= total;
 
         try {
             
-    var helperClass: Function = this.requestObject!.constructor!;
-;
+    var helperClass: Function = this.requestObject!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.delete, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -515,8 +489,7 @@ this.total= total;
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -544,18 +517,15 @@ this.total= total;
 
         try {
             
-    var helperClass: Function = this.requestObject!.constructor!;
-;
+    var helperClass: Function = this.requestObject!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("update", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -568,8 +538,7 @@ this.total= total;
 } catch(e) 
             {
 
-    var error: string = "Failed to update";
-;
+    var error: string = "Failed to update";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -601,12 +570,10 @@ this.total= total;
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
-;
+    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TableTag Helper: ");
     
@@ -712,8 +679,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.tagStrings!.DO_START_TAG
                         
                                     {
                                     
-    var output: string = this.backup()!;
-;
+    var output: string = this.backup()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -742,8 +708,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.tagStrings!.DO_START_TAG
 this.getPropertiesHashMap()!.put("total", this.getTotal());
     
 
-    var output: string = this.restore()!;
-;
+    var output: string = this.restore()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -768,8 +733,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.drop()!;
-;
+    var output: string = this.drop()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -794,8 +758,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.create()!;
-;
+    var output: string = this.create()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -820,8 +783,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.insert()!;
-;
+    var output: string = this.insert()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -840,8 +802,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.delete()!;
-;
+    var output: string = this.delete()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -860,8 +821,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                         
                                     {
                                     
-    var output: string = this.update()!;
-;
+    var output: string = this.update()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))

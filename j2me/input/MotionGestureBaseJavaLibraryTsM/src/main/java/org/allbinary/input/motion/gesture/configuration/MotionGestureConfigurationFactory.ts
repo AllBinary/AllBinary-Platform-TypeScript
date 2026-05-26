@@ -58,6 +58,7 @@ export class MotionGestureConfigurationFactory
     
 }
 
+
 public constructor (){
 
             super();

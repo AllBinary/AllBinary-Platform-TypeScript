@@ -33,6 +33,7 @@ export class EGLConfig
             extends Object
          {
         
+
 public constructor (){
 
             super();

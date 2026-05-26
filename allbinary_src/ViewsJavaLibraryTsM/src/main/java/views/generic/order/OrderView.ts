@@ -72,13 +72,14 @@ export class OrderView extends HttpStoreComponentView implements DomNodeInterfac
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    order: Order
+    order: Order;
 
-    orderHistory: OrderHistory
+    orderHistory: OrderHistory;
 
-    basketReview: BasketReview
+    basketReview: BasketReview;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -96,8 +97,7 @@ this.getFormData();
             
     getFormData(){
 
-    var id: string = this.request.getParameter(OrderData.ID)!;
-;
+    var id: string = this.request.getParameter(OrderData.ID)!;;
     
 
                         if(id == 
@@ -121,12 +121,10 @@ this.order.setId(id);
 
         try {
             
-    var orderHistoryNode: Node = this.orderHistory!.toXmlNode(document)!;
-;
+    var orderHistoryNode: Node = this.orderHistory!.toXmlNode(document)!;;
     
 
-    var node: Node = document.createElement(this.orderHistory!.getPaymentMethod())!;
-;
+    var node: Node = document.createElement(this.orderHistory!.getPaymentMethod())!;;
     
 orderHistoryNode!.appendChild(this.basketReview!.toXmlNode(document));
     

@@ -61,6 +61,7 @@ export class CustomLoaderHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.CustomLoaderHelper";
 
     private static readonly FACTORYNAME: string = "CustomLoaderHelperFactory";
+
 public constructor (){
 
             super();
@@ -71,8 +72,7 @@ public constructor (){
             
     public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-;
+    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
 

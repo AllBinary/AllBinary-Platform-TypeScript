@@ -71,7 +71,8 @@ export class CheatGameInputProcessor extends PlayerGameInput {
 
     private readonly PROCESS_GAME: string = "processGame";
 
-    private readonly gameCanvas: AllBinaryGameCanvas
+    private readonly gameCanvas: AllBinaryGameCanvas;
+
 public constructor (gameCanvas: AllBinaryGameCanvas){
             super(new BasicArrayListD(), new BasicArrayListD(),  -1);
                     
@@ -90,32 +91,26 @@ this.gameCanvas= gameCanvas;
 
         try {
             
-    var gameLayerManager: AllBinaryGameLayerManager = this.gameCanvas!.getLayerManager()!;
-;
+    var gameLayerManager: AllBinaryGameLayerManager = this.gameCanvas!.getLayerManager()!;;
     
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;
-;
+    var list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.objectArray[index]!;
-;
+    var anyType: any = list.objectArray[index]!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;
-;
+    var key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 
                         if(key == this.gameKeyFactory!.LEVEL_DOWN.getId())

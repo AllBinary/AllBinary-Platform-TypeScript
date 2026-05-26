@@ -55,6 +55,7 @@ import { Rectangle } from './Rectangle.js';
 
 export class NoMotionRectangleConstraints extends MotionRectangleConstraints {
         
+
 public constructor (){
 
             super();

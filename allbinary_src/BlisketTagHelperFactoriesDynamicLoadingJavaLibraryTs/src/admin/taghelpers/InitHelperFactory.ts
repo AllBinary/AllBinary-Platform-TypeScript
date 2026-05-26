@@ -57,6 +57,7 @@ export class InitHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.InitHelper";
 
     private static readonly FACTORYNAME: string = "InitHelperFactory";
+
 public constructor (){
 
             super();

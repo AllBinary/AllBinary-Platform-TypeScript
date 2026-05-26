@@ -68,6 +68,7 @@ export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool
     
 }
 
+
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
             super(cacheableInterfaceFactoryInterface);
                     
@@ -81,16 +82,13 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
             
     public remove(key: any = {}): CacheableInterface{
 
-    var cacheableInterface: CacheableInterface = super.remove(key)!;
-;
+    var cacheableInterface: CacheableInterface = super.remove(key)!;;
     
 
-    var allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo = key as ImageArrayRotationAnimationInfo;
-;
+    var allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo = key as ImageArrayRotationAnimationInfo;;
     
 
-    var imageArrayRotationAnimationCacheable: ImageArrayRotationAnimationCacheable = (cacheableInterface as ImageArrayRotationAnimationCacheable);
-;
+    var imageArrayRotationAnimationCacheable: ImageArrayRotationAnimationCacheable = (cacheableInterface as ImageArrayRotationAnimationCacheable);;
     
 imageArrayRotationAnimationCacheable!.setImageArray(allBinaryImageRotationAnimationInfo!.getImageArray());
     

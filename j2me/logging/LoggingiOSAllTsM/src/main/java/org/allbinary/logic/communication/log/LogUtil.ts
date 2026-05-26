@@ -75,6 +75,7 @@ import { Log } from './Log.js';
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -83,20 +84,16 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
@@ -105,8 +102,7 @@ this.put(specialMessage, anyType, functionName, exception);
 
     /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
                         if(anyType!.constructor.name.toString()! != 
@@ -120,8 +116,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 console.log(LogUtil.LOG_SUCCESS + message);
     
@@ -132,8 +127,7 @@ console.log(LogUtil.LOG_SUCCESS + message);
 className= new StringMaker().append(className)!.append(CommonSeps.getInstance()!.COLON)!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(anyType)))!.toString();
     
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 console.log(LogUtil.LOG_SUCCESS + message);
     
@@ -142,8 +136,7 @@ console.log(LogUtil.LOG_SUCCESS + message);
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
                         if(anyType!.constructor.name.toString()! != 
@@ -157,8 +150,7 @@ console.log(LogUtil.LOG_SUCCESS + message);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(LogUtil.LOG_SUCCESS + message);
     

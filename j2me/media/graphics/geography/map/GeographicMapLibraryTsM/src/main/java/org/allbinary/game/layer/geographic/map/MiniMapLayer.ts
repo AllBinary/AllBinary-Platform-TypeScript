@@ -92,17 +92,18 @@ import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.
 export class MiniMapLayer extends AllBinaryLayer implements GeographicMapCellPositionEventListenerInterface {
         
 
-    readonly allBinaryTiledLayer: AllBinaryTiledLayer
+    readonly allBinaryTiledLayer: AllBinaryTiledLayer;
 
-    private readonly geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory
+    private readonly geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory;
 
-    private readonly list: BasicArrayList
+    private readonly list: BasicArrayList;
 
-    private readonly basicColorList: BasicArrayList
+    private readonly basicColorList: BasicArrayList;
 
-    private readonly positionList: BasicArrayList
+    private readonly positionList: BasicArrayList;
 
-    private animationInterface: CircleFilledAnimation
+    private animationInterface: CircleFilledAnimation;
+
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.createXY(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
                     
@@ -147,12 +148,10 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     public onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;
-;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;;
     
 
-    var index: number = this.list.indexOf(colorCompositeInterface)!;
-;
+    var index: number = this.list.indexOf(colorCompositeInterface)!;;
     
 
                         if(index >= 0)
@@ -175,28 +174,23 @@ this.positionList!.removeAt(index);
 
     public onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;
-;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;;
     
 
-    var layerIndex: number =  -1;
-;
+    var layerIndex: number =  -1;;
     
 
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
-    var nextColorCompositeInterface: ColorCompositeInterface
-;
+    var nextColorCompositeInterface: ColorCompositeInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 nextColorCompositeInterface= this.list.get(index) as ColorCompositeInterface;
     
@@ -215,12 +209,10 @@ break;
 }
 
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPositionFactory!.getInstance(geographicMapCellPositionEvent!.getGeographicMapCellPosition())!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPositionFactory!.getInstance(geographicMapCellPositionEvent!.getGeographicMapCellPosition())!;;
     
 
-    var point: GPoint = geographicMapCellPosition!.getPoint()!;
-;
+    var point: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 
                         if(layerIndex ==  -1)
@@ -229,8 +221,7 @@ break;
                                     this.list.add(colorCompositeInterface);
     
 
-    var basicColor: BasicColor = colorCompositeInterface!.getBasicColorP()!;
-;
+    var basicColor: BasicColor = colorCompositeInterface!.getBasicColorP()!;;
     
 this.basicColorList!.add(basicColor);
     
@@ -252,32 +243,26 @@ layerIndex= this.basicColorList!.size() -1;
 
     public paintDots(graphics: Graphics){
 
-    var localPositionList: BasicArrayList = this.positionList;
-;
+    var localPositionList: BasicArrayList = this.positionList;;
     
 
-    var localBasicColorList: BasicArrayList = this.basicColorList;
-;
+    var localBasicColorList: BasicArrayList = this.basicColorList;;
     
 
-    var length: number = localPositionList!.size()!;
-;
+    var length: number = localPositionList!.size()!;;
     
 
-    var point: GPoint
-;
+    var point: GPoint;;
     
 
-    var basicColor: BasicColor
-;
+    var basicColor: BasicColor;;
     
 
 
 
 
                         for (
-    var index: number = length;
---index >= 0; )
+    var index: number = length;--index >= 0; )
         {
 point= localPositionList!.get(index) as GPoint;
     

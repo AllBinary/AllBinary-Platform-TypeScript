@@ -62,9 +62,10 @@ export class LogoImageFileUtil
 
     private readonly directory: Directory = Directory.getInstance()!;
 
-    private readonly fileName: string
+    private readonly fileName: string;
 
-    private readonly imageFileAbPath: AbPath
+    private readonly imageFileAbPath: AbPath;
+
 public constructor (imageAbPath: AbPath, imageFile: string){
 
             super();
@@ -105,8 +106,7 @@ this.imageFileAbPath= imageAbPath;
                                     }
                                 
 
-    var originalImageFile: AbFile = new AbFile(this.imageFileAbPath!.toString() +this.fileName);
-;
+    var originalImageFile: AbFile = new AbFile(this.imageFileAbPath!.toString() +this.fileName);;
     
 originalImageFile!.createNewFile();
     

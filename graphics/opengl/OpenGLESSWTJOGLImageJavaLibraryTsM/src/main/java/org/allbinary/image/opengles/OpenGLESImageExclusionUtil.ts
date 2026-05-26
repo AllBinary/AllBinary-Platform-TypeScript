@@ -67,6 +67,7 @@ export class OpenGLESImageExclusionUtil
     private readonly EXCLUSION: string = "font";
 
     public readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -75,12 +76,10 @@ private constructor (){
 
     public isCustomScaling(image: Image): boolean{
 
-    var imageName: string = image.getName()!;
-;
+    var imageName: string = image.getName()!;;
     
 
-    var isNormalScaling: boolean = this.list.size() == 0 || imageName!.startsWith(this.EXCLUSION);
-;
+    var isNormalScaling: boolean = this.list.size() == 0 || imageName!.startsWith(this.EXCLUSION);;
     
 
                         if(isNormalScaling)
@@ -97,20 +96,17 @@ private constructor (){
                                 
                         else {
                             
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
-    var name: string
-;
+    var name: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 name= this.list.get(index) as string;
     

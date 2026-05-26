@@ -48,6 +48,7 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
 
 export class NoThirdPartyStore extends ThirdPartyStore {
         
+
  constructor (){
             super(StringUtil.getInstance()!.EMPTY_STRING);
                     

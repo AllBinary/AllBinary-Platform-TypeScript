@@ -57,6 +57,7 @@ export class StoreFrontsHelperFactory extends TagHelperFactory {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();

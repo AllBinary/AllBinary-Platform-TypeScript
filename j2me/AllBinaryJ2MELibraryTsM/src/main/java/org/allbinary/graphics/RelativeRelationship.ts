@@ -54,13 +54,14 @@ export class RelativeRelationship
 
     public static readonly NULL_RELATIVE_RELATIONSHIP: RelativeRelationship = new RelativeRelationship(PointFactory.getInstance()!.ZERO_ZERO, BasicArrayListUtil.getInstance()!.getImmutableInstance());
 
-    private typesAllowedList: BasicArrayList
+    private typesAllowedList: BasicArrayList;
 
-    private x: number
+    private x: number;
 
-    private y: number
+    private y: number;
 
-    private z: number
+    private z: number;
+
 public constructor (point: GPoint, typesAllowedList: BasicArrayList){
 
             super();

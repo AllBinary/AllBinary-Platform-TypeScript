@@ -57,6 +57,7 @@ export class CharacterSetData
     
 }
 
+
 private constructor (){
 
             super();

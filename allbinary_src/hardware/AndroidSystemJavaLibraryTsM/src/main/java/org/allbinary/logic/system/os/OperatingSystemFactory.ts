@@ -77,6 +77,7 @@ export class OperatingSystemFactory
     private genericOperatingSystem: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
 
     private hasDetected: boolean = false;
+
 private constructor (){
 
             super();
@@ -86,18 +87,15 @@ private constructor (){
 
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-;
+    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var osName: string = systemProperties!.getName()!;
-;
+    var osName: string = systemProperties!.getName()!;;
     
 
                         if(!this.hasDetected)

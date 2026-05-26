@@ -66,11 +66,12 @@ export class ColorDelta
 }
 
 
-    private rgb1: number= 0
+    private rgb1: number= 0;
 
-    private rgb2: number= 0
+    private rgb2: number= 0;
 
-    private key: any
+    private key: any;
+
 public constructor (rgb1: number, rgb2: number){
 
             super();

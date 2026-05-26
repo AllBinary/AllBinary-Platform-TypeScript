@@ -59,13 +59,15 @@ export class CssPropertyView
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private cssProperty: CssProperty
+    private cssProperty: CssProperty;
+
 public constructor (name: string){
 
             super();
         this.cssProperty= new CssProperty(name);
     
 }
+
 
 public constructor (node: Node){
 

@@ -79,7 +79,8 @@ export class TransformInfoHttp extends TransformInfo implements TransformInfoHtt
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly abContext: AbContext
+    private readonly abContext: AbContext;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext, crud: boolean){
             super();
                     
@@ -100,6 +101,7 @@ this.abContext= new AbContext(propertiesHashMap, pageContext);
 this.override(propertiesHashMap);
     
 }
+
 
 public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
@@ -124,6 +126,7 @@ this.override(propertiesHashMap);
     
 }
 
+
 public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
                     
@@ -145,6 +148,7 @@ this.set(databaseHashMap);
     
 }
 
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
                     
@@ -165,6 +169,7 @@ this.abContext= new AbContext(propertiesHashMap, pageContext);
 this.set(propertiesHashMap);
     
 }
+
 
 public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp){
             super();
@@ -190,8 +195,7 @@ this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropert
                                     }
                                 
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 this.setName(hashMap!.get(transformInfoData!.NAME) as string);
     
@@ -202,12 +206,10 @@ this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as string);
 this.setObject(hashMap!.get(transformInfoData!.OBJECT) as string);
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG) as string;
-;
+    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG) as string;;
     
 
                         if(stringValidationUtil!.isValidRequired(objectConfigString, 10, AbSqlData.MAXBLOB))

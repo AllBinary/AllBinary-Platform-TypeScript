@@ -53,6 +53,7 @@ import { GameInputInterface } from './GameInputInterface.js';
 
 export class GameInputLayerProcessor extends LayerProcessor {
         
+
 public constructor (){
             super(new GameInputLayerManager());
                     
@@ -66,8 +67,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var gameInputInterface: GameInputInterface = layerInterface as GameInputInterface;
-;
+    var gameInputInterface: GameInputInterface = layerInterface as GameInputInterface;;
     
 gameInputInterface!.processInput(allBinaryLayerManager);
     

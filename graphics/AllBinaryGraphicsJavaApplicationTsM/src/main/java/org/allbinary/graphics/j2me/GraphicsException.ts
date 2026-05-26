@@ -53,6 +53,7 @@ export class GraphicsException extends java.lang.Exception {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly guiLog: GuiLog = GuiLog.getInstance()!;
+
 public constructor (msg: string, obj: any = {}, method: string){
             super(msg);
                     
@@ -72,6 +73,7 @@ this.logUtil!.put(msg, obj, method, this);
 }
 
 }
+
 
 public constructor (msg: string, className: string, method: string){
             super(msg);

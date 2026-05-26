@@ -67,9 +67,10 @@ export class ItemView
          {
         
 
-    private readonly itemInterface: OrderItemInterface
+    private readonly itemInterface: OrderItemInterface;
 
-    private readonly vector: Vector
+    private readonly vector: Vector;
+
 public constructor (itemInterface: OrderItemInterface, vector: Vector){
 
             super();
@@ -84,51 +85,41 @@ this.vector= vector;
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;
-;
+    var keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(ItemData.ITEM)!;
-;
+    var node: Node = document.createElement(ItemData.ITEM)!;;
     
 
-    var basicItemView: BasicItemView = new BasicItemView(this.itemInterface, this.vector);
-;
+    var basicItemView: BasicItemView = new BasicItemView(this.itemInterface, this.vector);;
     
 node.appendChild(basicItemView!.toXmlNode(document));
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var nameArray: any[] = keySet!.()!;
-;
+    var nameArray: any[] = keySet!.()!;;
     
 
     var size: number = nameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var name: string = nameArray[index]! as string;
-;
+    var name: string = nameArray[index]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;
-;
+    var value: string = hashMap!.get(name) as string;;
     
 value= stringUtil!.getNonNull(value);
     
@@ -137,8 +128,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 }
 
 
-    var shippingAddressNode: Node = document.createElement(StreetAddressData.NAME)!;
-;
+    var shippingAddressNode: Node = document.createElement(StreetAddressData.NAME)!;;
     
 shippingAddressNode!.appendChild(this.itemInterface!.getShippingAddress()!.toXmlNode(document));
     

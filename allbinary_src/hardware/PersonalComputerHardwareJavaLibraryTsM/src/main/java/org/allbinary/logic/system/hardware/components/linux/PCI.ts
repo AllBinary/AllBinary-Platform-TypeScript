@@ -50,7 +50,8 @@ export class PCI
          implements HardwareComponentInterface, VideoInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

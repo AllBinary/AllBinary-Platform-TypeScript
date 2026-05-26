@@ -51,7 +51,8 @@ export class Points
          implements PointsInterface {
         
 
-    private readonly pointVector: BasicArrayList
+    private readonly pointVector: BasicArrayList;
+
 public constructor (){
 
             super();

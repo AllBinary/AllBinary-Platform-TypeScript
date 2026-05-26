@@ -87,6 +87,7 @@ export class LicenseRegistrationTextBox extends CustomTextBox {
     private readonly pleaseWaitPaintable: Paintable = new SimpleTextPaintable(commonStrings!.PLEASE_WAIT, BasicColorFactory.getInstance()!.WHITE);
 
     private paintable: Paintable = NullPaintable.getInstance()!;
+
 public constructor (cmdListener: CommandListener, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, "Enter Registration Code:", StringUtil.getInstance()!.EMPTY_STRING, 60, TextField.ANY, Font.getDefaultFont(), backgrounBasicColor, foregroundBasicColor);
                     
@@ -114,8 +115,7 @@ this.setCommandListener(cmdListener);
 
         try {
             
-    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
-;
+    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
     
 virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
     
@@ -140,8 +140,7 @@ this.repaint();
 
         try {
             
-    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
-;
+    var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;;
     
 virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.HIDE_EVENT);
     
@@ -172,8 +171,7 @@ this.paintable.paint(graphics);
 
     public submit(){
 
-    var commandListener: CommandListener = this.getCustomCommandListener()!;
-;
+    var commandListener: CommandListener = this.getCustomCommandListener()!;;
     
 commandListener!.commandAction(SUBMIT_COMMAND, this);
     

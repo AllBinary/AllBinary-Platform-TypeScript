@@ -69,7 +69,8 @@ export class OrderHistoryTag extends TableTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private status: string
+    private status: string;
+
 public constructor (){
 
             super();
@@ -92,12 +93,10 @@ this.status= value;
 
         try {
             
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
-;
+    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var anyType: any = new OrderHistoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = new OrderHistoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
                         if(this.status == 
@@ -106,18 +105,15 @@ this.status= value;
                         
                                     {
                                     
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("setOrderStatus", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -130,30 +126,25 @@ this.status= value;
                                 
                         else {
                             
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var methodParams: Function[] = 
                                                         [
                                                             this.status.constructor
-                                                        ];
-;
+                                                        ];;
     
 
-    var method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;
-;
+    var method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;;
     
 
     var methodArgs: any[] = 
                                                         [
                                                             this.status
-                                                        ];
-;
+                                                        ];;
     
 
-    var result: string = method.invoke(anyType, methodArgs) as string;
-;
+    var result: string = method.invoke(anyType, methodArgs) as string;;
     
 
 
@@ -179,8 +170,7 @@ this.status= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to set Order Status";
-;
+    var error: string = "Failed to set Order Status";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

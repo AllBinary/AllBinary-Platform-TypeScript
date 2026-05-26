@@ -95,6 +95,7 @@ export class OperatingSystemFactory
     private genericOperatingSystem: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
 
     private hasDetected: boolean = false;
+
 private constructor (){
 
             super();
@@ -106,24 +107,19 @@ private constructor (){
 
         try {
             
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-;
+    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-;
+    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var osName: string = systemProperties!.getName()!;
-;
+    var osName: string = systemProperties!.getName()!;;
     
 
-    var osArch: string = systemProperties!.getArch()!;
-;
+    var osArch: string = systemProperties!.getArch()!;;
     
 
-    var osVersion: string = systemProperties!.getVersion()!;
-;
+    var osVersion: string = systemProperties!.getVersion()!;;
     
 
                         if(!this.hasDetected)
@@ -197,8 +193,7 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
                         }
                             
 
-    var log: Log = LogFactory.getInstanceF(new StringMaker().append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, this.commonStrings!.GET_INSTANCE)!;
-;
+    var log: Log = LogFactory.getInstanceF(new StringMaker().append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, this.commonStrings!.GET_INSTANCE)!;;
     
 console.log(log.toString());
     

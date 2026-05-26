@@ -65,13 +65,14 @@ export class OrderItemsRequestHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private id: string
+    private id: string;
 
-    private groupId: string
+    private groupId: string;
 
-    private status: string
+    private status: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -101,8 +102,7 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
                                 )
                         newStatus= this.status
 
-    var success: string = "Status successfully set to: " +newStatus;
-;
+    var success: string = "Status successfully set to: " +newStatus;;
     
 OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, newStatus);
     
@@ -126,8 +126,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, newStatu
 } catch(e) 
             {
 
-    var error: string = "Failed to view order table";
-;
+    var error: string = "Failed to view order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -153,8 +152,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, newStatu
 
         try {
             
-    var success: string = "Status successfully set to: " +this.status;
-;
+    var success: string = "Status successfully set to: " +this.status;;
     
 OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, this.status);
     
@@ -178,8 +176,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, this.groupId, this.sta
 } catch(e) 
             {
 
-    var error: string = "Failed to view order table";
-;
+    var error: string = "Failed to view order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

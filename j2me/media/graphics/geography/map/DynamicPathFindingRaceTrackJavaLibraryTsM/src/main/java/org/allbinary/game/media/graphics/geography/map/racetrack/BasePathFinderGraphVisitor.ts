@@ -60,13 +60,14 @@ import { BasicArrayList } from '../../../../../../../../org/allbinary/util/Basic
 export class BasePathFinderGraphVisitor extends PathFinderGraphVisitorBase {
         
 
-    geographicMapInterface: BasicGeographicMap
+    geographicMapInterface: BasicGeographicMap;
 
-    readonly edgeMinimum: number
+    readonly edgeMinimum: number;
 
-    readonly minPathWeight: number
+    readonly minPathWeight: number;
 
-    readonly maxPathWeight: number
+    readonly maxPathWeight: number;
+
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
@@ -95,12 +96,10 @@ this.maxPathWeight= maxPathWeight;
 
 
                         for (
-    var index: number = startPathFindingNodeList!.size() -1;
-index >= 0; index--)
+    var index: number = startPathFindingNodeList!.size() -1;index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;
-;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;;
     
 pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
     
@@ -140,8 +139,7 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
     public getInvalidReason(graphPath: GraphPath): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(graphPath!.getEdgeList()!.size() < this.edgeMinimum)

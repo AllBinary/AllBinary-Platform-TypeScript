@@ -50,7 +50,8 @@ export class HardDriveController
          implements HardwareComponentInterface, HardDriveControllerInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

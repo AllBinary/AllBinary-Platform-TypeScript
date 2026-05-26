@@ -64,6 +64,7 @@ export class GeographicMapCellPositionTracking
     private newGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
 
     private currentCellType: GeographicMapCellType = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE;
+
 public constructor (){
 
             super();
@@ -74,8 +75,7 @@ public constructor (){
             
     public getCurrentOverCellType(geographicMap: BasicGeographicMap): GeographicMapCellType{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellPosition;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellPosition;;
     
 
                         if(geographicMapCellPosition != this.previousGeographicMapCellPosition)
@@ -103,12 +103,10 @@ public constructor (){
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAtXY(layer.getXP() +layer.getHalfWidth(), layer.getYP() +layer.getHalfHeight());
     

@@ -65,7 +65,8 @@ export class UserDomNode
          implements DomNodeInterface {
         
 
-    private dataMappingInterface: TableMappingInterface
+    private dataMappingInterface: TableMappingInterface;
+
 public constructor (dataMappingInterface: TableMappingInterface){
 
             super();
@@ -78,12 +79,10 @@ public constructor (dataMappingInterface: TableMappingInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var hashMap: HashMap<any, any> = this.dataMappingInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.dataMappingInterface!.toHashMap()!;;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING);
     

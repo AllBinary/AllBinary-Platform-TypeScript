@@ -62,7 +62,8 @@ export class PathFindingNodeCost extends PathFindingNode implements Comparable<P
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
-    public pathFindingNodeCostInfoP: PathFindingNodeCostInfo
+    public pathFindingNodeCostInfoP: PathFindingNodeCostInfo;
+
 public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
             super(parent, geographicMapCellPosition);
                     
@@ -130,8 +131,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     
@@ -144,8 +144,7 @@ stringBuffer!.append(" Path: ");
 stringBuffer!.append(this.geographicMapCellPosition!.toString());
     
 
-    var pathFindingNode: PathFindingNode = this.parent as PathFindingNode;
-;
+    var pathFindingNode: PathFindingNode = this.parent as PathFindingNode;;
     
 
         while(pathFindingNode != 

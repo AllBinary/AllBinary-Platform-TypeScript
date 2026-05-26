@@ -66,6 +66,7 @@ export class TransformInfoHttpStoreFactory
     
 }
 
+
 private constructor (){
 
             super();

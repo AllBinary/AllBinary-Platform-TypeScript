@@ -75,9 +75,10 @@ export class MetasValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
-    private metaValidationVector: Vector
+    private metaValidationVector: Vector;
+
 public constructor (storeName: string){
 
             super();
@@ -86,20 +87,16 @@ public constructor (storeName: string){
 this.metaValidationVector= new Vector();
     
 
-    var contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";
-;
+    var contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";;
     
 
-    var keywordsMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Keywords", HtmlMetaAttributeValuesData.getInstance()!.KEYWORDS, contentValue);
-;
+    var keywordsMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Keywords", HtmlMetaAttributeValuesData.getInstance()!.KEYWORDS, contentValue);;
     
 
-    var abstractMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Abstract", HtmlMetaAttributeValuesData.getInstance()!.ABSTRACT, contentValue);
-;
+    var abstractMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Abstract", HtmlMetaAttributeValuesData.getInstance()!.ABSTRACT, contentValue);;
     
 
-    var descriptionMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Description", HtmlMetaAttributeValuesData.getInstance()!.DESCRIPTION, contentValue);
-;
+    var descriptionMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Description", HtmlMetaAttributeValuesData.getInstance()!.DESCRIPTION, contentValue);;
     
 this.metaValidationVector!.add(keywordsMetaValidation);
     
@@ -108,6 +105,7 @@ this.metaValidationVector!.add(abstractMetaValidation);
 this.metaValidationVector!.add(descriptionMetaValidation);
     
 }
+
 
 public constructor (document: Document){
 
@@ -124,8 +122,7 @@ public constructor (document: Document){
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
 
@@ -161,8 +158,7 @@ public constructor (document: Document){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -218,29 +214,24 @@ public constructor (document: Document){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;;
     
 
-    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]) as MetaValidation[];
-;
+    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]) as MetaValidation[];;
     
 
     var size: number = metaArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var metaValidation: MetaValidation = metaArray[i]!;
-;
+    var metaValidation: MetaValidation = metaArray[i]!;;
     
 node.appendChild(metaValidation!.toXmlNode(document));
     

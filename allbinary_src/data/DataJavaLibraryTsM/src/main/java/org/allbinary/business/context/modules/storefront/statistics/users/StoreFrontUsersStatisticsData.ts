@@ -57,6 +57,7 @@ export class StoreFrontUsersStatisticsData
     
 }
 
+
 private constructor (){
 
             super();

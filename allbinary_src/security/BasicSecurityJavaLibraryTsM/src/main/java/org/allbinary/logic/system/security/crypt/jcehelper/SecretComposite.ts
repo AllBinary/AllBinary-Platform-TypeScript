@@ -55,11 +55,12 @@ export class SecretComposite extends BaseSecretComposite {
 
     private readonly byteUtil: ByteUtil = ByteUtil.getInstance()!;
 
-    private readonly cipher: Cipher
+    private readonly cipher: Cipher;
 
-    private readonly secretKey: SecretKey
+    private readonly secretKey: SecretKey;
 
-    private key: number[]
+    private key: number[];
+
 public constructor (secretKey: SecretKey, cipher: Cipher, key: number[]){
 
             super();
@@ -108,12 +109,10 @@ this.cipher.init(Cipher.DECRYPT_MODE, this.secretKey);
 
 
                         for (
-    var index: number = 0;
-index < this.key.length; index++)
+    var index: number = 0;index < this.key.length; index++)
         {
 
-    var value: number = this.key[index]!;
-;
+    var value: number = this.key[index]!;;
     
 
                         if(value < 8 && value > 0)

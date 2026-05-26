@@ -73,11 +73,12 @@ export class AbTransformer
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
 
-    private inputStream: InputStream
+    private inputStream: InputStream;
 
-    private uriResolver: URIResolver
+    private uriResolver: URIResolver;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
@@ -167,8 +168,7 @@ this.uriResolver= uriResolver;
                                     }
                                 
 
-    var result: string = XslHelper.getInstance()!.translate(this.getURIResolver(), new StreamSource(this.getInputStream()), new StreamSource(new StringBufferInputStream(xmlDocumentStr)))!;
-;
+    var result: string = XslHelper.getInstance()!.translate(this.getURIResolver(), new StreamSource(this.getInputStream()), new StreamSource(new StringBufferInputStream(xmlDocumentStr)))!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGING))
@@ -180,8 +180,7 @@ this.uriResolver= uriResolver;
                                     }
                                 
 
-    var transformInfoObjectConfigGeneratorInterface: TransformInfoObjectConfigGenerator = TransformInfoObjectConfigGeneratorFactory.getInstance()!.getInstance(this.getTransformInfoInterface())!;
-;
+    var transformInfoObjectConfigGeneratorInterface: TransformInfoObjectConfigGenerator = TransformInfoObjectConfigGeneratorFactory.getInstance()!.getInstance(this.getTransformInfoInterface())!;;
     
 
 

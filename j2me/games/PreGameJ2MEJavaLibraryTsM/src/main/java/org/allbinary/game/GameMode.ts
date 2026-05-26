@@ -55,6 +55,7 @@ export class GameMode
     public static CLIENT: GameMode = new GameMode("Client");
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 private constructor (name: string){
 
             super();

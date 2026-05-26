@@ -65,6 +65,7 @@ export class GameFeatureEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -75,8 +76,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var gameFeatureListenerInterface: GameFeatureListenerInterface = (eventListenerInterface as GameFeatureListenerInterface);
-;
+    var gameFeatureListenerInterface: GameFeatureListenerInterface = (eventListenerInterface as GameFeatureListenerInterface);;
     
 gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEvent);
     

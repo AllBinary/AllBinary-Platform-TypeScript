@@ -44,11 +44,12 @@ export class BasicGameInfoFactory
 }
 
 
-    public currentReleaseIndex: number= 0
+    public currentReleaseIndex: number= 0;
 
-    public currentDestroyIndex: number= 0
+    public currentDestroyIndex: number= 0;
 
-    public total: number= 0
+    public total: number= 0;
+
 private constructor (){
 
             super();

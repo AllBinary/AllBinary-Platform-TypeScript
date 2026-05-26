@@ -49,9 +49,10 @@ export class BasicColorArrayIndexer
          {
         
 
-    private basicColorArray: BasicColor[]
+    private basicColorArray: BasicColor[];
 
-    private circularIndexUtil: CircularIndexUtil
+    private circularIndexUtil: CircularIndexUtil;
+
 public constructor (basicColorArray: BasicColor[]){
 
             super();

@@ -66,8 +66,7 @@ export class RTSTouchButtonsBuilder extends BaseTouchInput {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 list.addAllList(new BasicTouchButtonsBuilder().getList());
     

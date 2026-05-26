@@ -51,6 +51,7 @@ import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbin
         
 export class CollidableWaypointBehavior extends CollidableRTSBehavior {
         
+
 public constructor (collidable: boolean){
             super(collidable);
                     

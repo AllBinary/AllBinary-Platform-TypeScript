@@ -51,11 +51,12 @@ import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinar
 export class PathFinderGraphHackVisitorFactory extends PathFinderGraphVisitorFactoryBase {
         
 
-    private readonly edgeMinimum: number
+    private readonly edgeMinimum: number;
 
-    private readonly minPathWeight: number
+    private readonly minPathWeight: number;
 
-    private readonly maxPathWeight: number
+    private readonly maxPathWeight: number;
+
 public constructor (edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();

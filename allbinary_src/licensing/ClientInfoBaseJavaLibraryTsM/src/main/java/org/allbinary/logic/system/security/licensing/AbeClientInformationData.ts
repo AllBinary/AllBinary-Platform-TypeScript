@@ -57,6 +57,7 @@ export class AbeClientInformationData
     
 }
 
+
 private constructor (){
 
             super();

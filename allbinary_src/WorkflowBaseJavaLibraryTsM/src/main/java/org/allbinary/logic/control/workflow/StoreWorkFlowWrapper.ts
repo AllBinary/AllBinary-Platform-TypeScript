@@ -56,6 +56,7 @@ export class StoreWorkFlowWrapper extends WorkFlowWrapper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (anyType: any = {}){
             super(anyType);
                     
@@ -71,18 +72,15 @@ public constructor (anyType: any = {}){
 
         try {
             
-    var helperClass: Function = this.getWorkFlowObject()!.constructor!;
-;
+    var helperClass: Function = this.getWorkFlowObject()!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("getStoreName", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.getWorkFlowObject(), 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -95,16 +93,14 @@ public constructor (anyType: any = {}){
 } catch(e) 
             {
 
-    var error: string = "Reflection Exception";
-;
+    var error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
     

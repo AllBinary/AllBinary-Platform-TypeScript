@@ -67,6 +67,7 @@ export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends Bas
         
 
     private lastImage: Image = NullImage.NULL_IMAGE;
+
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), 0, 0, 0, 0, animationBehaviorFactory);
                     
@@ -78,8 +79,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
                         
                                     {
                                     
-    var androidImageInterface: AndroidImageInterface = this.lastImage as AndroidImageInterface;
-;
+    var androidImageInterface: AndroidImageInterface = this.lastImage as AndroidImageInterface;;
     
 androidImageInterface!.getBitmap()!.recycle();
     
@@ -87,8 +87,7 @@ androidImageInterface!.getBitmap()!.recycle();
                                     }
                                 
 
-    var scale: number = ScreenRelationalUtil.getInstance()!.getScaleImage(image)!;
-;
+    var scale: number = ScreenRelationalUtil.getInstance()!.getScaleImage(image)!;;
     
 this.lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), this.getImage(), scale, scale, false);
     

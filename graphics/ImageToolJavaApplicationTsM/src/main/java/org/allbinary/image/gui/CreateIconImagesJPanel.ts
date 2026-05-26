@@ -90,7 +90,8 @@ export class CreateIconImagesJPanel extends javax.swing.JPanel implements ImageP
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private imageProcessorInput: ImageProcessorInput
+    private imageProcessorInput: ImageProcessorInput;
+
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
                     
@@ -102,8 +103,7 @@ initComponents();
 this.imageProcessorInput= imageProcessorInput;
     
 
-    var numberStringArray: string[] = new Array(101);
-;
+    var numberStringArray: string[] = new Array(101);;
     
 numberStringArray[0]= Integer.toString( -1);
     
@@ -112,16 +112,14 @@ numberStringArray[0]= Integer.toString( -1);
 
 
                         for (
-    var index: number = 1;
-index < 100; index++)
+    var index: number = 1;index < 100; index++)
         {
 numberStringArray[index]= index.toString();
     
 }
 
 
-    var araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;
-;
+    var araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;;
     
 
                         if(araster == 
@@ -149,106 +147,86 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-;
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var imageProcessorInput: ImageProcessorInput = CreateIconImagesJPanel.prototype.getImageProcessorInput()!;
-;
+    var imageProcessorInput: ImageProcessorInput = CreateIconImagesJPanel.prototype.getImageProcessorInput()!;;
     
 
-    var files: File[] = imageProcessorInput!.getFiles()!;
-;
+    var files: File[] = imageProcessorInput!.getFiles()!;;
     
 
-    var iconWidthList: BasicArrayList = new BasicArrayListD();
-;
+    var iconWidthList: BasicArrayList = new BasicArrayListD();;
     
 
-    var iconHeightList: BasicArrayList = new BasicArrayListD();
-;
+    var iconHeightList: BasicArrayList = new BasicArrayListD();;
     
 iconWidthList!.add(864);
     
 iconHeightList!.add(864);
     
 
-    var ANDROID: string = "android-icon-";
-;
+    var ANDROID: string = "android-icon-";;
     
 
-    var IOS: string = "ios-icon-";
-;
+    var IOS: string = "ios-icon-";;
     
 
-    var size: number = iconWidthList!.size()!;
-;
+    var size: number = iconWidthList!.size()!;;
     
 
-    var width: number = 0;
-;
+    var width: number = 0;;
     
 
-    var height: number = 0;
-;
+    var height: number = 0;;
     
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < size; index2++)
+    var index2: number = 0;index2 < size; index2++)
         {
 width= (get as Integer).intValue();
     
 height= (get as Integer).intValue();
     
 
-    var generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;
-;
+    var generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;;
     
 
-    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
-;
+    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < generatedBufferedImageArray!.length; index++)
+    var index: number = 0;index < generatedBufferedImageArray!.length; index++)
         {
 
-    var filePath: string = files[index]!.getAbsolutePath()!;
-;
+    var filePath: string = files[index]!.getAbsolutePath()!;;
     
 
-    var endIndex: number = filePath!.lastIndexOf('\\')!;
-;
+    var endIndex: number = filePath!.lastIndexOf('\\')!;;
     
 
-    var path: string = filePath!.substring(0, endIndex +1)!;
-;
+    var path: string = filePath!.substring(0, endIndex +1)!;;
     
 stringMaker!.delete(0, stringMaker!.length());
     
 stringMaker!.append(path)!.append(ANDROID)!.appendint(width)!.append(CanvasStrings.getInstance()!._PNG);
     
 
-    var newFilePath: string = stringMaker!.toString()!;
-;
+    var newFilePath: string = stringMaker!.toString()!;;
     
 imagePersistanceUtil!.saveWithBatik(new AbFile(newFilePath), generatedBufferedImageArray[index]!);
     
@@ -315,8 +293,7 @@ aboveJButtonActionPerformed(evt);
                             );
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -333,7 +310,7 @@ this.process();
 }
 
 
-    private aboveJButton: javax.swing.JButton
+    private aboveJButton: javax.swing.JButton;
 
 }
                 

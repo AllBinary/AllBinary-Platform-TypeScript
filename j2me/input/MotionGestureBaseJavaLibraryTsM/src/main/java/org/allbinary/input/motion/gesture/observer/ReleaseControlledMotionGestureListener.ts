@@ -81,7 +81,8 @@ export class ReleaseControlledMotionGestureListener
 
     private motionGestureCollection: BasicArrayList = new BasicArrayListD();
 
-    private signed: CompleteMotionGestureListenerInterface
+    private signed: CompleteMotionGestureListenerInterface;
+
 public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
@@ -194,8 +195,7 @@ this.logUtil!.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!
                         return ;
     
 
-    var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;
-;
+    var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;;
     
 
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)

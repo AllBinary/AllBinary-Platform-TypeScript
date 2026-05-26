@@ -71,22 +71,19 @@ export class TransformInfoHttpFactory
             
     public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);
-;
+    var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(weblisketSession!.getStoreName()))
                         
                                     {
                                     
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;;
     
 
                         if(storeFrontInterface != 
@@ -134,8 +131,7 @@ export class TransformInfoHttpFactory
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GET_INSTANCE, e);
     
@@ -150,6 +146,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GE
 }
 
 }
+
 
 private constructor (){
 

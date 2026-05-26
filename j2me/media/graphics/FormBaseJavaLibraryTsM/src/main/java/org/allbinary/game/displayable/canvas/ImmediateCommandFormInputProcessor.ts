@@ -60,7 +60,8 @@ export class ImmediateCommandFormInputProcessor extends CommandFormInputProcesso
 
     private readonly timeHelper: TimeDelayHelper = new TimeDelayHelper(25);
 
-    gameCommandCanvas: GameCommandCanvas
+    gameCommandCanvas: GameCommandCanvas;
+
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCommandCanvas: GameCommandCanvas, form: ScrollSelectionForm){
             super(gameKeyEventList, playerInputId, gameCommandCanvas, form);
                     

@@ -74,6 +74,7 @@ export class AdvertisementAreasEntity extends AbSqlBean implements Advertisement
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "advertisements";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -121,34 +122,28 @@ this.setTableName(this.tableName);
             
     public get(storeName: string): Vector{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var hashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
-    var size: number = hashMapVector!.length!;
-;
+    var size: number = hashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;
-;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;;
     
 
                         if(hashMap != 
@@ -176,16 +171,14 @@ index < size; index++)
             
     public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(hashMap != 
@@ -217,12 +210,10 @@ keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaN
 
     public createTableStatement(): string{
 
-    var advertisementAreaData: AdvertisementAreaData = AdvertisementAreaData.getInstance()!;
-;
+    var advertisementAreaData: AdvertisementAreaData = AdvertisementAreaData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -243,8 +234,7 @@ stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.M
 
     public createTable(): string{
 
-    var returnStr: string = super.createTable(this.createTableStatement())!;
-;
+    var returnStr: string = super.createTable(this.createTableStatement())!;;
     
 
 

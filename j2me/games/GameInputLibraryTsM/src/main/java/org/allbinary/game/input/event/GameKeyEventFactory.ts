@@ -81,6 +81,7 @@ export class GameKeyEventFactory
 
     private ARRAY: GameKeyEvent[][] = new Array(this.MAX_SOURCES) [InputFactory.getInstance()!.MAX]
                                                             ;
+
 private constructor (){
 
             super();
@@ -89,28 +90,24 @@ private constructor (){
 
     public init(){
 
-    var nullUtil: NullUtil = NullUtil.getInstance()!;
-;
+    var nullUtil: NullUtil = NullUtil.getInstance()!;;
     
 
-    var size: number = InputFactory.getInstance()!.MAX;
-;
+    var size: number = InputFactory.getInstance()!.MAX;;
     
 
 
 
 
                         for (
-    var index: number = this.MAX_SOURCES;
---index >= 0; )
+    var index: number = this.MAX_SOURCES;--index >= 0; )
         {
 
 
 
 
                         for (
-    var index2: number = size;
---index2 >= 0; )
+    var index2: number = size;--index2 >= 0; )
         {
 this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, index, index2);
     
@@ -125,8 +122,7 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
             
     public getInstanceForKey(anyType: GameKeyEventSourceInterface, key: number): GameKeyEvent{
 
-    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![key]!;
-;
+    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![key]!;;
     
 
 
@@ -141,8 +137,7 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
             
     public getInstanceForInput(anyType: GameKeyEventSourceInterface, input: Input): GameKeyEvent{
 
-    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![input.getId()]!;
-;
+    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![input.getId()]!;;
     
 
 

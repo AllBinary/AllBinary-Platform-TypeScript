@@ -85,11 +85,11 @@ export class BaseGameInitialization
 
     public static readonly NULL_BASE_GAME_INITIALIZATION: BaseGameInitialization = new BaseGameInitialization([], 0);
 
-    readonly resourceInitializationArray: ResourceInitialization[]
+    readonly resourceInitializationArray: ResourceInitialization[];
 
-    private readonly portion: number
+    private readonly portion: number;
 
-    private initialized: boolean= false
+    private initialized: boolean= false;
 
     readonly EARLY_RESOURCES: number = 0;
 
@@ -98,6 +98,7 @@ export class BaseGameInitialization
     readonly EARLY_CHANGABLE_RESOURCES: number = 2;
 
     readonly GAME_CHANGABLE_RESOURCES: number = 3;
+
 public constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
 
             super();
@@ -137,16 +138,14 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(!this.isInitialized() && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
                         
                                     {
                                     
-    var localPortion: number = 40;
-;
+    var localPortion: number = 40;;
     
 
                         if(level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
@@ -166,8 +165,7 @@ this.initKeyMapping(abeClientInformation, this.getPortion());
 GameKeyEventFactory.getInstance()!.init();
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(localPortion, "Game Key Events");
     
@@ -191,16 +189,15 @@ this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
 }
 
 
-    private gameInitialized: boolean= false
+    private gameInitialized: boolean= false;
 
-    private allLoaded: boolean= false
+    private allLoaded: boolean= false;
 
                 //@Throws(Exception.constructor)
             
     public resourceInitialization(level: number){
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(this.resourceAnimationChange() && level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel())
@@ -247,12 +244,10 @@ this.allLoaded= true;
 
     public resourceAnimationChange(): boolean{
 
-    var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;
-;
+    var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;;
     
 
-    var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
-;
+    var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;;
     
 
                         if(changedGameFeatureListener!.isChangedGameConfiguration(gameConfigurationCentral!.SCALE))
@@ -295,8 +290,7 @@ this.allLoaded= false;
 GameFeatureImageCacheFactory.releaseAll();
     
 
-    var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
-;
+    var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;;
     
 featuredAnimationInterfaceFactoryInterfaceFactory!.clear();
     

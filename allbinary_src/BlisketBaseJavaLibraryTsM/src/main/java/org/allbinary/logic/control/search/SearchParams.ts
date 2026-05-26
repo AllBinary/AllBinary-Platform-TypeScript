@@ -65,17 +65,18 @@ export class SearchParams
          {
         
 
-    private columnsAndSearchValues: HashMap<any, any>
+    private columnsAndSearchValues: HashMap<any, any>;
 
-    private order: string
+    private order: string;
 
-    private sortBy: string
+    private sortBy: string;
 
-    private listLength: string
+    private listLength: string;
 
-    private startPage: string
+    private startPage: string;
 
-    private endPage: string
+    private endPage: string;
+
 public constructor (request: HttpServletRequest){
 
             super();
@@ -86,8 +87,7 @@ this.setLength(request.getParameter(SearchData.LENGTH));
 this.setOrder(request.getParameter(SearchData.ORDER));
     
 
-    var page: string = request.getParameter(SearchData.PAGE)!;
-;
+    var page: string = request.getParameter(SearchData.PAGE)!;;
     
 this.setStartPage(page);
     
@@ -96,16 +96,13 @@ this.setEndPage(page);
 this.setSortBy(request.getParameter(SearchData.SORTBY));
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var columnName: string = request.getParameter(SearchData.COLUMNNAME +"[0]")!;
-;
+    var columnName: string = request.getParameter(SearchData.COLUMNNAME +"[0]")!;;
     
 
-    var columnValue: string = request.getParameter(SearchData.COLUMNVALUE +"[0]")!;
-;
+    var columnValue: string = request.getParameter(SearchData.COLUMNVALUE +"[0]")!;;
     
 
         while(columnName != 
@@ -291,8 +288,7 @@ this.endPage= value;
             
     public getParamsNode(document: Document): Node{
 
-    var paramsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.PARAMS, SearchData.PARAMS)!;
-;
+    var paramsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.PARAMS, SearchData.PARAMS)!;;
     
 paramsNode!.appendChild(this.getFieldsNode(document));
     
@@ -315,37 +311,30 @@ paramsNode!.appendChild(this.getLengthNode(document));
             
     getFieldsNode(document: Document): Node{
 
-    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).toString())!;
-;
+    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).toString())!;;
     
 
-    var set: Set = this.columnsAndSearchValues!.keySet()!;
-;
+    var set: Set = this.columnsAndSearchValues!.keySet()!;;
     
 
-    var searchValueArray: any[] = set.toArray()!;
-;
+    var searchValueArray: any[] = set.toArray()!;;
     
 
     var size: number = searchValueArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: string = searchValueArray[index]! as string;
-;
+    var key: string = searchValueArray[index]! as string;;
     
 
-    var searchValue: string = this.columnsAndSearchValues!.get(key) as string;
-;
+    var searchValue: string = this.columnsAndSearchValues!.get(key) as string;;
     
 fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)));
     

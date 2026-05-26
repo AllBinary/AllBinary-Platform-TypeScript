@@ -58,6 +58,7 @@ export class FontFamilyValidation extends FontFamilyView implements ValidationIn
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
             super();
                     
@@ -65,6 +66,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (node: Node){
             super(node);
@@ -81,8 +83,7 @@ public constructor (node: Node){
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -138,8 +139,7 @@ public constructor (node: Node){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Css Font Family Property Validation Error");
     

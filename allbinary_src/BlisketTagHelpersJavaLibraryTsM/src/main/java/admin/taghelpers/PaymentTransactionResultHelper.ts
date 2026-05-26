@@ -61,7 +61,8 @@ export class PaymentTransactionResultHelper extends BasicTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly portion: Portion
+    private readonly portion: Portion;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -74,8 +75,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = new TransactionResultEntity().dropTable()!;
-;
+    var success: string = new TransactionResultEntity().dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -97,8 +97,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to drop payment transaction result table";
-;
+    var error: string = "Failed to drop payment transaction result table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -124,8 +123,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = new TransactionResultEntity().createTable()!;
-;
+    var success: string = new TransactionResultEntity().createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -147,8 +145,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to create payment transaction result table";
-;
+    var error: string = "Failed to create payment transaction result table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -174,12 +171,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(new TransactionResultEntity(), this.portion)!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(new TransactionResultEntity(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -201,8 +196,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -228,12 +222,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new TransactionResultEntity())!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(new TransactionResultEntity())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -255,8 +247,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

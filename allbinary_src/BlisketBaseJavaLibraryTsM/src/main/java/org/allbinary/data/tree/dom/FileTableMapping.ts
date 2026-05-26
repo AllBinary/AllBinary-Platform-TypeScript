@@ -60,7 +60,8 @@ export class FileTableMapping
          implements TableMappingInterface {
         
 
-    private file: AbFile
+    private file: AbFile;
+
 public constructor (file: AbFile){
 
             super();
@@ -85,8 +86,7 @@ public constructor (file: AbFile){
             
     public toVector(): Vector{
 
-    var filePropertyVector: Vector = new Vector();
-;
+    var filePropertyVector: Vector = new Vector();;
     
 filePropertyVector!.add(this.file.getAbsolutePath());
     
@@ -111,20 +111,16 @@ filePropertyVector!.add(this.file.getPath());
             
     public toHashMap(): HashMap<any, any>{
 
-    var filePropertyHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var filePropertyHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var pathUtil: PathUtil = PathUtil.getInstance()!;
-;
+    var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 
-    var rootFileName: string = pathUtil!.getNameFromPath(pathUtil!.getWithoutExtension(this.file.getPath()))!;
-;
+    var rootFileName: string = pathUtil!.getNameFromPath(pathUtil!.getWithoutExtension(this.file.getPath()))!;;
     
 
-    var fileData: FileData = FileData.getInstance()!;
-;
+    var fileData: FileData = FileData.getInstance()!;;
     
 filePropertyHashMap!.put(fileData!.ROOT_NAME, rootFileName);
     

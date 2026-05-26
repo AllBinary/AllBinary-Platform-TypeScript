@@ -62,15 +62,16 @@ export class GameKeyEvent extends AllBinaryEventObject {
 
     public static readonly NONE: GameKeyEvent = new GameKeyEvent(NullUtil.getInstance()!.NULL_OBJECT,  -1,  -1,  -1,  -1, false);
 
-    private readonly sourceId: number
+    private readonly sourceId: number;
 
-    private repeated: boolean= false
+    private repeated: boolean= false;
 
-    private key: number
+    private key: number;
 
-    private gameActionKey: number= 0
+    private gameActionKey: number= 0;
 
-    private originalKey: number= 0
+    private originalKey: number= 0;
+
 public constructor (anyType: any = {}, sourceId: number, originalKey: number, gameActionKey: number, key: number, repeated: boolean){
             super(anyType);
                     
@@ -124,8 +125,7 @@ this.repeated= repeated;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("\nKey: ");
     

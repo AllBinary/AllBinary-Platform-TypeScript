@@ -55,11 +55,12 @@ export class EmailInfo
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private basicEmailInfo: BasicEmailInfo
+    private basicEmailInfo: BasicEmailInfo;
 
-    private htmlAttachment: string
+    private htmlAttachment: string;
 
-    private contentBase: string
+    private contentBase: string;
+
 public constructor (basicEmailInfo: BasicEmailInfo){
 
             super();
@@ -68,8 +69,7 @@ public constructor (basicEmailInfo: BasicEmailInfo){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -82,6 +82,7 @@ this.init(basicEmailInfo,
     
 }
 
+
 public constructor (basicEmailInfo: BasicEmailInfo, htmlAttachment: string, contentBase: string){
 
             super();
@@ -90,8 +91,7 @@ public constructor (basicEmailInfo: BasicEmailInfo, htmlAttachment: string, cont
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     

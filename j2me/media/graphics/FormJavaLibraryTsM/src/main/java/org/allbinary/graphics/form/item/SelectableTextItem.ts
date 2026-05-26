@@ -49,6 +49,7 @@ import { ABStringComponent } from './ABStringComponent.js';
 
 export class SelectableTextItem extends ABTextItem {
         
+
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, layout, altText, backgroundBasicColor, foregroundBasicColor);
                     
@@ -70,8 +71,7 @@ public constructor (label: string, layout: number, altText: string, backgroundBa
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var stringComponent: ABStringComponent = this.getLabelStringComponent()!;
-;
+    var stringComponent: ABStringComponent = this.getLabelStringComponent()!;;
     
 
                         if(stringComponent != 

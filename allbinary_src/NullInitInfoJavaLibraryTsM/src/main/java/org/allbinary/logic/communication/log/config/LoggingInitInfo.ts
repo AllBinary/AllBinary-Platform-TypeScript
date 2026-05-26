@@ -167,28 +167,23 @@ LoggingInitInfo.updateIfNeeded();
 LoggingInitInfo.updateIfNeeded();
     
 
-    var allLogTypeVector: BasicArrayList = new BasicArrayListD();
-;
+    var allLogTypeVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
-;
+    var size: number = LoggingInitInfo.logConfigInfoList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
-;
+    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;;
     
 
-    var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
-;
+    var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;;
     
 
                         if(logConfigInfo!.isEnabled())
@@ -208,6 +203,7 @@ index < size; index++)
                         return allLogTypeVector;
     
 }
+
 
 public constructor (){
 

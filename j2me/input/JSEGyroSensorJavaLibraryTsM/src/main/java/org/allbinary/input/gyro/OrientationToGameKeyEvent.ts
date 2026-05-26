@@ -56,9 +56,10 @@ export class OrientationToGameKeyEvent
          {
         
 
-    private allBinaryGyroSensor: AllBinaryOrientationSensor
+    private allBinaryGyroSensor: AllBinaryOrientationSensor;
 
     private readonly MIN: number = 15;
+
 public constructor (){
 
             super();

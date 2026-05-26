@@ -54,6 +54,7 @@ import { Input } from './Input.js';
 
 export class J2MEGameInputMapping extends PersistentInputMapping {
         
+
 public constructor (){
             super(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
                     

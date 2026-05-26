@@ -49,7 +49,8 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
 export class EndLevelIntermissionProcessor extends Processor {
         
 
-    private gameCanvas: AllBinaryGameCanvas
+    private gameCanvas: AllBinaryGameCanvas;
+
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();

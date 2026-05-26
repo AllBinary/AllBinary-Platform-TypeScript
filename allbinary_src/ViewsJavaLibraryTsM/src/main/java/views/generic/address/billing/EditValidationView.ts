@@ -61,7 +61,8 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 export class EditValidationView extends BillingAddressView implements ValidationComponentInterface {
         
 
-    private value: string
+    private value: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -90,8 +91,7 @@ this.value= this.getPageContext()!.getRequest()!.getParameter(StreetAddressData.
                                     }
                                 
 
-    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());
-;
+    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
     

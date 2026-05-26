@@ -36,8 +36,7 @@ export class AndroidGameKey extends Input {
 
     public static getString(keyCode: number): string{
 
-    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;
-;
+    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;;
     
 
                         if(input != 
@@ -66,6 +65,7 @@ export class AndroidGameKey extends Input {
                             
 }
 
+
  constructor (keyCode: number, name: string){
             super(keyCode, name);
                     
@@ -73,8 +73,7 @@ export class AndroidGameKey extends Input {
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;
-;
+    var inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 inputFactory!.inputIntegerArray[this.getId()]= this;
     

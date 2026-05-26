@@ -77,6 +77,7 @@ export class HardwareFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -111,8 +112,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET_INSTANCE, e);
     

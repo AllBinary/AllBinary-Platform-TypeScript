@@ -111,7 +111,7 @@ export class AndroidBasicTitleProgressBar extends ProgressCanvas implements Disp
 
     public static readonly RESOURCE: string = "ProgressImage";
 
-    private static background: number= 0
+    private static background: number= 0;
 
     public static setBackgroundResource(background: number){
 AndroidBasicTitleProgressBar.background= background;
@@ -136,6 +136,7 @@ AndroidBasicTitleProgressBar.background= background;
     private image: Image = NullImage.NULL_IMAGE;
 
     private animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
+
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
                     
@@ -148,16 +149,14 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     
 
     var size: number = this.IMAGE.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.IMAGE[index]= NullImage.NULL_IMAGE;
     
@@ -245,12 +244,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
                         
                                     {
                                     
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var currentImage: Image
-;
+    var currentImage: Image;;
     
 
                         if(displayInfo!.isPortrait())
@@ -328,16 +325,13 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
 
         try {
             
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var lastWidth: number = displayInfo!.getLastWidth()!;
-;
+    var lastWidth: number = displayInfo!.getLastWidth()!;;
     
 
-    var lastHeight: number = displayInfo!.getLastHeight()!;
-;
+    var lastHeight: number = displayInfo!.getLastHeight()!;;
     
 
                         if(displayInfo!.isPortraitWH(lastWidth, lastHeight))
@@ -536,8 +530,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
             
     setImages(index: number, lastWidth: number, lastHeight: number){
 
-    var image: Image = this.image;
-;
+    var image: Image = this.image;;
     
 
                         if(image != NullImage.NULL_IMAGE)
@@ -561,8 +554,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
                                 
                         else {
                             
-    var nextIndex: number = index +1;
-;
+    var nextIndex: number = index +1;;
     
 
                         if(this.IMAGE[nextIndex] == NullImage.NULL_IMAGE)
@@ -590,21 +582,18 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
 this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgressBar.RESOURCE);
     
 
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-;
+    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
     var size: number = this.IMAGE.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(this.IMAGE[index] != NullImage.NULL_IMAGE)
@@ -632,21 +621,18 @@ this.initOpenGL(graphics);
 this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgressBar.RESOURCE);
     
 
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-;
+    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
     var size: number = this.IMAGE.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(this.IMAGE[index] != NullImage.NULL_IMAGE)
@@ -666,8 +652,7 @@ index < size; index++)
             
     getImage(index: number): Image{
 
-    var image: Image = NullImage.NULL_IMAGE;
-;
+    var image: Image = NullImage.NULL_IMAGE;;
     
 
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.FULL_SCREEN))

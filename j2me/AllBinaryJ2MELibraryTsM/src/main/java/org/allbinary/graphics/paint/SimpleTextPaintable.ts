@@ -55,9 +55,10 @@ import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 export class SimpleTextPaintable extends Paintable {
         
 
-    private text: string
+    private text: string;
 
-    private basicColor: BasicColor
+    private basicColor: BasicColor;
+
 public constructor (text: string, basicColor: BasicColor){
 
             super();
@@ -74,16 +75,13 @@ this.basicColor= basicColor;
 
     public paint(graphics: Graphics){
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var width: number = this.displayInfoSingleton!.getLast()[this.displayInfoSingleton!.WIDTH]!;
-;
+    var width: number = this.displayInfoSingleton!.getLast()[this.displayInfoSingleton!.WIDTH]!;;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text)>>1);
-;
+    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text)>>1);;
     
 graphics.setColor(this.getBasicColorP()!.intValue());
     

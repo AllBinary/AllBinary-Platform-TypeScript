@@ -54,6 +54,7 @@ export class StoreFrontAdvertisementsStatistics
             extends Object
          implements StoreFrontAdvertisementsStatisticsInterface {
         
+
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
@@ -62,8 +63,7 @@ public constructor (storeFrontInterface: StoreFrontInterface){
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
 

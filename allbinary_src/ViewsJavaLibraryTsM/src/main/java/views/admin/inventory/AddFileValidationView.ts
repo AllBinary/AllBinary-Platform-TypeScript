@@ -96,6 +96,7 @@ export class AddFileValidationView extends InventoryItemView implements Validati
     private static readonly NEXTSTEP: string = "Next Step";
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -109,8 +110,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;
-;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
@@ -121,8 +121,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Invalid AdminCommand: ");
     
@@ -151,8 +150,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                                     }
                                 
 
-    var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);
-;
+    var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);;
     
 
                         if(basicItemValidation!.isValid() == Boolean.FALSE)
@@ -177,18 +175,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                                     }
                                 
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.itemInterface!.getCategory());
     
 
-    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
-;
+    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;;
     
 
-    var categoryFile: AbFile = new AbFile(fullCategory);
-;
+    var categoryFile: AbFile = new AbFile(fullCategory);;
     
 
                         if(!categoryFile!.isDirectory())
@@ -237,24 +232,20 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                                     }
                                 
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
-;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
                         
                                     {
                                     
-    var fileItem: FileItem = imageFileItemObject as FileItem;
-;
+    var fileItem: FileItem = imageFileItemObject as FileItem;;
     
 
-    var fileName: string = fileItem!.getName()!;
-;
+    var fileName: string = fileItem!.getName()!;;
     
 
-    var size: number = fileItem!.getSize()!;
-;
+    var size: number = fileItem!.getSize()!;;
     
 HttpFileUploadUtil.log(fileItem);
     
@@ -328,12 +319,10 @@ HttpFileUploadUtil.log(fileItem);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;
-;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
@@ -349,8 +338,7 @@ HttpFileUploadUtil.log(fileItem);
                                     }
                                 
 
-    var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);
-;
+    var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);;
     
 
                         if(basicItemValidation!.isValid() == Boolean.FALSE)
@@ -364,12 +352,10 @@ stringBuffer!.append("<br/>");
                                     }
                                 
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
-;
+    var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -381,8 +367,7 @@ stringBuffer!.append("<br/>");
                                     }
                                 
 
-    var categoryFile: AbFile = new AbFile(fullCategory);
-;
+    var categoryFile: AbFile = new AbFile(fullCategory);;
     
 
                         if(!categoryFile!.isDirectory())
@@ -426,28 +411,23 @@ stringBuffer!.append(" does not exist.<br />");
 }
 
 
-    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
-;
+    var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(anyType))
                         
                                     {
                                     
-    var fileItem: FileItem = anyType as FileItem;
-;
+    var fileItem: FileItem = anyType as FileItem;;
     
 
-    var fileName: string = fileItem!.getName()!;
-;
+    var fileName: string = fileItem!.getName()!;;
     
 
-    var fileItemFieldName: string = fileItem!.getFieldName()!;
-;
+    var fileItemFieldName: string = fileItem!.getFieldName()!;;
     
 
-    var size: number = fileItem!.getSize()!;
-;
+    var size: number = fileItem!.getSize()!;;
     
 this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
     
@@ -488,8 +468,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
             
     isValid(fileName: string, size: number): Boolean{
 
-    var fileData: FileData = FileData.getInstance()!;
-;
+    var fileData: FileData = FileData.getInstance()!;;
     
 
                         if(size > fileData!.MINIMAGEFILESIZE)
@@ -514,16 +493,13 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                                 
                         else {
                             
-    var pathUtil: PathUtil = PathUtil.getInstance()!;
-;
+    var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 
-    var extension: string = pathUtil!.getExtension(fileName)!;
-;
+    var extension: string = pathUtil!.getExtension(fileName)!;;
     
 
-    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
-;
+    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
     
 
                         if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))
@@ -550,8 +526,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("File Size To Large: ");
     
@@ -586,8 +561,7 @@ this.processImageFiles();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("File Size To Small: ");
     
@@ -622,8 +596,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
     validationInfo(stringBuffer: StringMaker, fileName: string, fileItemFieldName: string, size: number){
 
-    var fileData: FileData = FileData.getInstance()!;
-;
+    var fileData: FileData = FileData.getInstance()!;;
     
 
                         if(size > fileData!.MINIMAGEFILESIZE)
@@ -656,16 +629,13 @@ stringBuffer!.append("<br/>");
                                 
                         else {
                             
-    var pathUtil: PathUtil = PathUtil.getInstance()!;
-;
+    var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 
-    var extension: string = pathUtil!.getExtension(fileName)!;
-;
+    var extension: string = pathUtil!.getExtension(fileName)!;;
     
 
-    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
-;
+    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
     
 
                         if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))

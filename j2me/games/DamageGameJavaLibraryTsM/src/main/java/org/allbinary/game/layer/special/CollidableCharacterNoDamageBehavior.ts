@@ -59,6 +59,7 @@ import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDam
 
 export class CollidableCharacterNoDamageBehavior extends CollidableDestroyableDamageableBehavior {
         
+
 public constructor (collidable: boolean){
             super(collidable);
                     
@@ -72,20 +73,17 @@ public constructor (collidable: boolean){
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 
-    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
-;
+    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;
-;
+    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
     
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = ownerLayer as CollidableDestroyableDamageableLayer;
-;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = ownerLayer as CollidableDestroyableDamageableLayer;;
     
 collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
     

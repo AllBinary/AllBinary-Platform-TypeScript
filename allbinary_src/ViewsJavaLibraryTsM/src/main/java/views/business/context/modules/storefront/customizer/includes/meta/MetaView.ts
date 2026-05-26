@@ -62,7 +62,8 @@ export class MetaView extends HttpStoreComponentView implements DomNodeInterface
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    metasValidation: MetasValidation
+    metasValidation: MetasValidation;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

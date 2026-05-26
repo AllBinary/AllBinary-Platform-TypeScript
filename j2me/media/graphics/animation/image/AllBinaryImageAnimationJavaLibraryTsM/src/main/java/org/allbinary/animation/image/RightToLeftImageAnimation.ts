@@ -59,9 +59,10 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
 export class RightToLeftImageAnimation extends ImageSegmentAnimation {
         
 
-    private startWidth: number= 0
+    private startWidth: number= 0;
 
-    private currentWidth: number= 0
+    private currentWidth: number= 0;
+
 public constructor (image: Image, animationBehavior: AnimationBehavior){
             super(image, PrimitiveIntUtil.getArrayInstance(), animationBehavior);
                     

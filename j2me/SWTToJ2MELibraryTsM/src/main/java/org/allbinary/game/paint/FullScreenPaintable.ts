@@ -67,6 +67,7 @@ export class FullScreenPaintable extends Paintable {
 
 
     private readonly FULLSCREEN_TEXT: string = "F11 - Toggle Fullscreen";
+
 private constructor (){
 
             super();
@@ -77,32 +78,25 @@ private constructor (){
 
     public paint(graphics: Graphics){
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var halfWidth: number = displayInfo!.getLastHalfWidth()!;
-;
+    var halfWidth: number = displayInfo!.getLastHalfWidth()!;;
     
 
-    var height: number = displayInfo!.getLastHeight()!;
-;
+    var height: number = displayInfo!.getLastHeight()!;;
     
 
-    var font: Font = graphics.getFont()!;
-;
+    var font: Font = graphics.getFont()!;;
     
 
-    var beginWidth: number = (font.stringWidth(this.FULLSCREEN_TEXT)>>1);
-;
+    var beginWidth: number = (font.stringWidth(this.FULLSCREEN_TEXT)>>1);;
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var Y: number = 4 *myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var Y: number = 4 *myFont!.DEFAULT_CHAR_HEIGHT;;
     
 graphics.drawString(this.FULLSCREEN_TEXT, halfWidth -beginWidth, height -Y, this.anchor);
     

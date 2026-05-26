@@ -52,6 +52,7 @@ import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbina
 
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         
+
 public constructor (collidable: boolean){
             super(collidable);
                     
@@ -63,12 +64,10 @@ public constructor (collidable: boolean){
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
 
-    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
-;
+    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;
-;
+    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
     
 
                         if(collisionType == collisionTypeFactory!.PICKUP)
@@ -130,12 +129,10 @@ public constructor (collidable: boolean){
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 
-    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
-;
+    var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;
-;
+    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;;
     
 
                         if(collisionType == collisionTypeFactory!.PICKUP)

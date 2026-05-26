@@ -61,7 +61,8 @@ export class BasicDecimal
 }
 
 
-    private units: number
+    private units: number;
+
 public constructor (units: number){
 
             super();
@@ -202,7 +203,7 @@ this.updateScaled();
 }
 
 
-    private scaled: number= 0
+    private scaled: number= 0;
 
     updateScaled(){
 this.scaled= Math.round((this.units /this.factorValue));

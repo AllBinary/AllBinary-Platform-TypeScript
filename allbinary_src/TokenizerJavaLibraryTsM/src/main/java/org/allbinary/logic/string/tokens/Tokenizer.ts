@@ -56,9 +56,10 @@ export class Tokenizer
          {
         
 
-    private sep: string
+    private sep: string;
 
     private endSep: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 public constructor (sep: string){
 
             super();
@@ -95,16 +96,13 @@ this.endSep= endSep;
 
     public getInsideSep(string: string): BasicArrayList{
 
-    var tokenList: BasicArrayList = new BasicArrayListD();
-;
+    var tokenList: BasicArrayList = new BasicArrayListD();;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var size: number = string.length!;
-;
+    var size: number = string.length!;;
     
 
         while(index < size)
@@ -116,8 +114,7 @@ index= string.indexOf(this.sep, index);
                         
                                     {
                                     
-    var end: number = string.indexOf(this.endSep, index +this.sep.length)!;
-;
+    var end: number = string.indexOf(this.endSep, index +this.sep.length)!;;
     
 
                         if(end !=  -1)
@@ -157,12 +154,10 @@ index= end +this.endSep!.length;
 
     public getTokens(string: string, tokenVector: BasicArrayList): BasicArrayList{
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var end: number = 0;
-;
+    var end: number = 0;;
     
 
         while(index < string.length)
@@ -202,28 +197,23 @@ break;
 
     public getTokens(stringVector: BasicArrayList): Hashtable<any, any>{
 
-    var tokenHashtable: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var tokenHashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
 
-    var string: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var string: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var end: number = 0;
-;
+    var end: number = 0;;
     
 
-    var size: number = stringVector!.size()!;
-;
+    var size: number = stringVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 string= stringVector!.objectArray[index]! as string;
     

@@ -44,6 +44,7 @@
 
 export class InputAutomationClientInformation extends AbeClientInformation {
         
+
 public constructor (){
             super("InputAutomationTool", "0.0.1", "InputAutomationTool 0.0.1", "IA");
                     

@@ -49,7 +49,8 @@ export class HtmlTags
          {
         
 
-    private htmlTagVector: Vector
+    private htmlTagVector: Vector;
+
 public constructor (){
 
             super();

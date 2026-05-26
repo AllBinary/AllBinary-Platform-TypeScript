@@ -79,20 +79,16 @@ export class InputAutomationConfigurationFactory
             
     public static init(abeClientInformation: AbeClientInformationInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var INPUT_AUTOMATION_CONFIGURATION: string = "InputAutomationConfiguration";
-;
+    var INPUT_AUTOMATION_CONFIGURATION: string = "InputAutomationConfiguration";;
     
 
-    var file: File = InputAutomationConfiguration.getFile()!;
-;
+    var file: File = InputAutomationConfiguration.getFile()!;;
     
 
                         if(file.isFile())
@@ -101,40 +97,33 @@ export class InputAutomationConfigurationFactory
                                     logUtil!.putF("LoadingConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
-    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;
-;
+    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;;
     
 
-    var unmarshaller: Unmarshaller = jaxbContext!.createUnmarshaller()!;
-;
+    var unmarshaller: Unmarshaller = jaxbContext!.createUnmarshaller()!;;
     
 
-    var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration.constructor)!;
-;
+    var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration.constructor)!;;
     
 InputAutomationConfigurationFactory.inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration;
     
 
-    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = InputAutomationConfigurationFactory.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;
-;
+    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = InputAutomationConfigurationFactory.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
     
 logUtil!.putF("isInstalled: " +InputAutomationConfigurationFactory.inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
-    var size: number = inputAutomationModuleConfigurationList!.size!;
-;
+    var size: number = inputAutomationModuleConfigurationList!.size!;;
     
 
-    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration
-;
+    var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
     
@@ -169,6 +158,7 @@ InputAutomationConfigurationFactory.inputAutomationConfiguration= new InputAutom
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

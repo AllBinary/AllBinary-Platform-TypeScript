@@ -96,9 +96,10 @@ export class InputAutomationConfiguration
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private installed: boolean= false
+    private installed: boolean= false;
 
-    private inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration>
+    private inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration>;
+
 public constructor (){
 
             super();
@@ -137,25 +138,21 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
             
     public save(){
 
-    var document: Document = DomDocumentHelper.create()!;
-;
+    var document: Document = DomDocumentHelper.create()!;;
     
 
                     //Otherwise - statement - EmptyStmt
 
 
-    var file: File = new File(FILENAME);
-;
+    var file: File = new File(FILENAME);;
     
 FileUtil.getInstance()!.copy(new AbPath(file.getAbsolutePath()), new AbPath(file.getAbsolutePath() +".bak.xml"));
     
 
-    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;
-;
+    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;;
     
 
-    var marshaller: Marshaller = jaxbContext!.createMarshaller()!;
-;
+    var marshaller: Marshaller = jaxbContext!.createMarshaller()!;;
     
 marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
     

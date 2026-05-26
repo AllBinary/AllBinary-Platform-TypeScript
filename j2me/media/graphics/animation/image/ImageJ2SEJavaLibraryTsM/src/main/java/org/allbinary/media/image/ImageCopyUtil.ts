@@ -77,6 +77,7 @@ export class ImageCopyUtil
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
 
     private readonly imageCreationUtil: ImageCreationUtil = ImageCreationUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -101,8 +102,7 @@ private constructor (){
             
     public createImage(originalImage: Image): Image{
 
-    var image: Image = this.imageCreationUtil!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
-;
+    var image: Image = this.imageCreationUtil!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
@@ -135,12 +135,10 @@ private constructor (){
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
 
-    var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));
-;
+    var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));;
     
 
-    var newHeight: number = Math.round((originalImage!.getHeight() *canvasScale));
-;
+    var newHeight: number = Math.round((originalImage!.getHeight() *canvasScale));;
     
 
                         if(resize)
@@ -168,16 +166,13 @@ private constructor (){
                                     }
                                 
 
-    var originalBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;
-;
+    var originalBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;;
     
 
-    var bufferedImage: BufferedImage = this.imageUtil!.createBufferedImageWithLargerCanvas(originalBufferedImage, newWidth, newHeight)!;
-;
+    var bufferedImage: BufferedImage = this.imageUtil!.createBufferedImageWithLargerCanvas(originalBufferedImage, newWidth, newHeight)!;;
     
 
-    var image: J2SEImmutableImage = new J2SEImmutableImage(bufferedImage);
-;
+    var image: J2SEImmutableImage = new J2SEImmutableImage(bufferedImage);;
     
 
 

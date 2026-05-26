@@ -51,6 +51,7 @@ import { WeblisketSessionInterface } from '../../../../../../../../org/allbinary
         
 export class ProductStoreAdminUser extends User {
         
+
 public constructor (){
             super();
                     
@@ -58,6 +59,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (userHashMap: HashMap<any, any>){
             super(userHashMap);

@@ -104,13 +104,14 @@ export class CanvasDom
 
     public static readonly HEIGHT: string = "height";
 
-    private graphicItemHashMap: HashMap<any, any>
+    private graphicItemHashMap: HashMap<any, any>;
 
-    private angle: number
+    private angle: number;
 
-    private dimension: IntegerDimension
+    private dimension: IntegerDimension;
 
-    private readonly grid: Grid
+    private readonly grid: Grid;
+
 public constructor (canvasNode: Node){
 
             super();
@@ -121,8 +122,7 @@ this.grid.grid= PointFactory.getInstance()!.createXY(0, 0);
 this.dimension= new IntegerDimension(0, 0);
     
 
-    var name: string = canvasNode!.getNodeName()!;
-;
+    var name: string = canvasNode!.getNodeName()!;;
     
 
                         if(name.compareTo(CanvasDom.FRAME) == 0)
@@ -131,116 +131,91 @@ this.dimension= new IntegerDimension(0, 0);
                                     this.graphicItemHashMap= new HashMap<any, any>();
     
 
-    var angleNode: Node = DomHelper.getInstance()!.searchNodeList(this.ROTATE, canvasNode!.getChildNodes())!;
-;
+    var angleNode: Node = DomHelper.getInstance()!.searchNodeList(this.ROTATE, canvasNode!.getChildNodes())!;;
     
 
-    var angleTextNode: Node = angleNode!.getFirstChild()!;
-;
+    var angleTextNode: Node = angleNode!.getFirstChild()!;;
     
 
-    var angle: number = new number(angleTextNode!.getNodeValue()).doubleValue()!;
-;
+    var angle: number = new number(angleTextNode!.getNodeValue()).doubleValue()!;;
     
 this.setAngle(angle);
     
 
-    var sizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, canvasNode!.getChildNodes())!;
-;
+    var sizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, canvasNode!.getChildNodes())!;;
     
 
-    var xNode: Node = DomHelper.getInstance()!.searchNodeList(this.X, sizeNode!.getChildNodes())!;
-;
+    var xNode: Node = DomHelper.getInstance()!.searchNodeList(this.X, sizeNode!.getChildNodes())!;;
     
 
-    var xTextNode: Node = xNode!.getFirstChild()!;
-;
+    var xTextNode: Node = xNode!.getFirstChild()!;;
     
 
-    var x: number = new Integer(xTextNode!.getNodeValue()).intValue()!;
-;
+    var x: number = new Integer(xTextNode!.getNodeValue()).intValue()!;;
     
 
-    var yNode: Node = DomHelper.getInstance()!.searchNodeList(this.Y, sizeNode!.getChildNodes())!;
-;
+    var yNode: Node = DomHelper.getInstance()!.searchNodeList(this.Y, sizeNode!.getChildNodes())!;;
     
 
-    var yTextNode: Node = yNode!.getFirstChild()!;
-;
+    var yTextNode: Node = yNode!.getFirstChild()!;;
     
 
-    var y: number = new Integer(yTextNode!.getNodeValue()).intValue()!;
-;
+    var y: number = new Integer(yTextNode!.getNodeValue()).intValue()!;;
     
 this.setWorkArea(x, y);
     
 
-    var zoomNode: Node = DomHelper.getInstance()!.searchNodeList(this.ZOOM, canvasNode!.getChildNodes())!;
-;
+    var zoomNode: Node = DomHelper.getInstance()!.searchNodeList(this.ZOOM, canvasNode!.getChildNodes())!;;
     
 
-    var zoomTextNode: Node = zoomNode!.getFirstChild()!;
-;
+    var zoomTextNode: Node = zoomNode!.getFirstChild()!;;
     
 this.grid.setZoom(new Integer(zoomTextNode!.getNodeValue()).intValue());
     
 
-    var gridNode: Node = DomHelper.getInstance()!.searchNodeList(this.GRID, canvasNode!.getChildNodes())!;
-;
+    var gridNode: Node = DomHelper.getInstance()!.searchNodeList(this.GRID, canvasNode!.getChildNodes())!;;
     
 
-    var gridSizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, gridNode!.getChildNodes())!;
-;
+    var gridSizeNode: Node = DomHelper.getInstance()!.searchNodeList(this.SIZE, gridNode!.getChildNodes())!;;
     
 
-    var gridXNode: Node = DomHelper.getInstance()!.searchNodeList(this.X, gridSizeNode!.getChildNodes())!;
-;
+    var gridXNode: Node = DomHelper.getInstance()!.searchNodeList(this.X, gridSizeNode!.getChildNodes())!;;
     
 
-    var gridXTextNode: Node = gridXNode!.getFirstChild()!;
-;
+    var gridXTextNode: Node = gridXNode!.getFirstChild()!;;
     
 
-    var gridX: number = new Integer(gridXTextNode!.getNodeValue()).intValue()!;
-;
+    var gridX: number = new Integer(gridXTextNode!.getNodeValue()).intValue()!;;
     
 
-    var gridYNode: Node = DomHelper.getInstance()!.searchNodeList(this.Y, gridSizeNode!.getChildNodes())!;
-;
+    var gridYNode: Node = DomHelper.getInstance()!.searchNodeList(this.Y, gridSizeNode!.getChildNodes())!;;
     
 
-    var gridYTextNode: Node = gridYNode!.getFirstChild()!;
-;
+    var gridYTextNode: Node = gridYNode!.getFirstChild()!;;
     
 
-    var gridY: number = new Integer(gridYTextNode!.getNodeValue()).intValue()!;
-;
+    var gridY: number = new Integer(gridYTextNode!.getNodeValue()).intValue()!;;
     
 this.setGrid(gridX, gridY);
     
 
-    var enableNode: Node = DomHelper.getInstance()!.searchNodeList(this.ENABLED, gridNode!.getChildNodes())!;
-;
+    var enableNode: Node = DomHelper.getInstance()!.searchNodeList(this.ENABLED, gridNode!.getChildNodes())!;;
     
 
-    var enableTextNode: Node = enableNode!.getFirstChild()!;
-;
+    var enableTextNode: Node = enableNode!.getFirstChild()!;;
     
 this.grid.showGrid(.valueOf());
     
 
-    var possibleNode: Node = DomHelper.getInstance()!.searchNodeList(this.POSSIBLE, gridNode!.getChildNodes())!;
-;
+    var possibleNode: Node = DomHelper.getInstance()!.searchNodeList(this.POSSIBLE, gridNode!.getChildNodes())!;;
     
 
-    var possibleTextNode: Node = possibleNode!.getFirstChild()!;
-;
+    var possibleTextNode: Node = possibleNode!.getFirstChild()!;;
     
 this.grid.isGridPossible= .valueOf();
     
 
-    var graphicItemNodeList: BasicArrayList = DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.GRAPHICITEMS, canvasNode!.getChildNodes())!;
-;
+    var graphicItemNodeList: BasicArrayList = DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.GRAPHICITEMS, canvasNode!.getChildNodes())!;;
     
 
                         if(graphicItemNodeList != 
@@ -266,6 +241,7 @@ this.grid.isGridPossible= .valueOf();
                         }
                             
 }
+
 
 public constructor (canvasJPanel: CanvasJPanel){
 
@@ -327,30 +303,24 @@ this.grid.grid= PointFactory.getInstance()!.createXY(gridX, gridY);
 
     getPointNode(point: GPoint, pointName: string): Node{
 
-    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
-;
+    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;;
     
 
-    var pointNode: Node = document.createElement(pointName) as Node;
-;
+    var pointNode: Node = document.createElement(pointName) as Node;;
     
 
-    var xNode: Node = document.createElement(this.X) as Node;
-;
+    var xNode: Node = document.createElement(this.X) as Node;;
     
 
-    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())) as Node;
-;
+    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())) as Node;;
     
 xNode!.appendChild(xTextNode);
     
 
-    var yNode: Node = document.createElement(this.Y) as Node;
-;
+    var yNode: Node = document.createElement(this.Y) as Node;;
     
 
-    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())) as Node;
-;
+    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())) as Node;;
     
 yNode!.appendChild(yTextNode);
     
@@ -371,100 +341,81 @@ pointNode!.appendChild(yNode);
             
     public toDom(): Node{
 
-    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
-;
+    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;;
     
 
-    var frameNode: Node = document.createElement(this.FRAME) as Node;
-;
+    var frameNode: Node = document.createElement(this.FRAME) as Node;;
     
 
-    var angleNode: Node = document.createElement(this.ROTATE) as Node;
-;
+    var angleNode: Node = document.createElement(this.ROTATE) as Node;;
     
 
-    var angleTextNode: Node = document.createTextNode(new number(this.getAngle()).toString()) as Node;
-;
+    var angleTextNode: Node = document.createTextNode(new number(this.getAngle()).toString()) as Node;;
     
 angleNode!.appendChild(angleTextNode);
     
 
-    var sizeNode: Node = this.getPointNode(PointFactory.getInstance()!.createXY(this.getDimension()!.getWidth(), this.getDimension()!.getHeight()), this.SIZE) as Node;
-;
+    var sizeNode: Node = this.getPointNode(PointFactory.getInstance()!.createXY(this.getDimension()!.getWidth(), this.getDimension()!.getHeight()), this.SIZE) as Node;;
     
 
-    var zoomNode: Node = document.createElement(this.ZOOM) as Node;
-;
+    var zoomNode: Node = document.createElement(this.ZOOM) as Node;;
     
 
-    var zoomTextNode: Node = document.createTextNode(new Integer(this.getGrid()!.getZoom()).toString()) as Node;
-;
+    var zoomTextNode: Node = document.createTextNode(new Integer(this.getGrid()!.getZoom()).toString()) as Node;;
     
 zoomNode!.appendChild(zoomTextNode);
     
 
-    var gridNode: Node = document.createElement(this.GRID) as Node;
-;
+    var gridNode: Node = document.createElement(this.GRID) as Node;;
     
 
-    var gridSizeNode: Node = this.getPointNode(this.getGrid()!.grid, this.SIZE) as Node;
-;
+    var gridSizeNode: Node = this.getPointNode(this.getGrid()!.grid, this.SIZE) as Node;;
     
 gridNode!.appendChild(gridSizeNode);
     
 
-    var enableNode: Node = document.createElement(this.ENABLED) as Node;
-;
+    var enableNode: Node = document.createElement(this.ENABLED) as Node;;
     
 
-    var enableTextNode: Node = document.createTextNode(.toString()) as Node;
-;
+    var enableTextNode: Node = document.createTextNode(.toString()) as Node;;
     
 enableNode!.appendChild(enableTextNode);
     
 gridNode!.appendChild(enableNode);
     
 
-    var possibleNode: Node = document.createElement(this.POSSIBLE) as Node;
-;
+    var possibleNode: Node = document.createElement(this.POSSIBLE) as Node;;
     
 
-    var possibleTextNode: Node = document.createTextNode(.toString()) as Node;
-;
+    var possibleTextNode: Node = document.createTextNode(.toString()) as Node;;
     
 possibleNode!.appendChild(possibleTextNode);
     
 gridNode!.appendChild(possibleNode);
     
 
-    var realSizeNode: Node = document.createElement(REAL_SIZE) as Node;
-;
+    var realSizeNode: Node = document.createElement(REAL_SIZE) as Node;;
     
 
-    var vectorCenterGenerator: VectorCenterGenerator = new VectorCenterGenerator();
-;
+    var vectorCenterGenerator: VectorCenterGenerator = new VectorCenterGenerator();;
     
 vectorCenterGenerator!.calculate(this.getGraphicItemHashMap());
     
 
-    var widthNode: Node = document.createElement(WIDTH) as Node;
-;
+    var widthNode: Node = document.createElement(WIDTH) as Node;;
     
 
-    var widthTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getWidth())) as Node;
-;
+    var widthTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getWidth())) as Node;;
     
 widthNode!.appendChild(widthTextNode);
     
 realSizeNode!.appendChild(widthNode);
     
 
-    var heightNode: Node = document.createElement(HEIGHT) as Node;
-;
+    var heightNode: Node = document.createElement(HEIGHT) as Node;;
     
 
-    var heightTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getHeight())) as Node;
-;
+    var heightTextNode: Node = document.createTextNode(Integer.toString(vectorCenterGenerator!.getHeight())) as Node;;
     
 heightNode!.appendChild(heightTextNode);
     
@@ -481,29 +432,24 @@ frameNode!.appendChild(gridNode);
 frameNode!.appendChild(realSizeNode);
     
 
-    var graphicItemNode: Node = document.createElement(this.GRAPHICITEMS) as Node;
-;
+    var graphicItemNode: Node = document.createElement(this.GRAPHICITEMS) as Node;;
     
 
-    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;
-;
+    var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys().()!;;
     
 
     var size: number = graphicItemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: GraphicItemInterface = this.graphicItemHashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
-;
+    var item: GraphicItemInterface = this.graphicItemHashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
                         if(item.getName() == LinesGraphicItem.getStaticName())

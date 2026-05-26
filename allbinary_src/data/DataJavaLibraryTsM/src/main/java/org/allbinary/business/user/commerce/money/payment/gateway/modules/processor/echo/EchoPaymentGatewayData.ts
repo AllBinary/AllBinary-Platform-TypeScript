@@ -185,6 +185,7 @@ export class EchoPaymentGatewayData
     public static PURCHASE_ORDER_NUMBER: string = "purchase_order_number";
 
     public static SALES_TAX: string = "sales_tax";
+
 private constructor (){
 
             super();

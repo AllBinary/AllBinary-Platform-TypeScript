@@ -68,6 +68,7 @@ export class BasketReview
         
 
     items: Vector = new Vector();
+
 public constructor (){
 
             super();
@@ -102,25 +103,21 @@ this.items.add(item);
 
     public removeItem(id: string){
 
-    var itemArray: any[] = this.items.toArray()!;
-;
+    var itemArray: any[] = this.items.toArray()!;;
     
 
     var size: number = itemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-;
+    var item: Item = itemArray[index]! as Item;;
     
 
                         if(item.getId()!.compareTo(id) == 0)
@@ -138,25 +135,21 @@ index < size; index++)
 
     public adjustItem(id: string, num: string){
 
-    var itemArray: any[] = this.items.toArray()!;
-;
+    var itemArray: any[] = this.items.toArray()!;;
     
 
     var size: number = itemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-;
+    var item: Item = itemArray[index]! as Item;;
     
 
                         if(item.getId()!.compareTo(id) == 0)
@@ -174,29 +167,24 @@ index < size; index++)
 
     public getTotalWeight(): string{
 
-    var weightFloat: number = 0;
-;
+    var weightFloat: number = 0;;
     
 
-    var itemArray: any[] = this.items.toArray()!;
-;
+    var itemArray: any[] = this.items.toArray()!;;
     
 
     var size: number = itemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-;
+    var item: Item = itemArray[index]! as Item;;
     
 weightFloat += new number(item.getWeight());
     
@@ -223,29 +211,24 @@ weightFloat += new number(item.getWeight());
 
     public getIds(): Set{
 
-    var idSet: HashSet = new HashSet();
-;
+    var idSet: HashSet = new HashSet();;
     
 
-    var itemArray: any[] = this.items.toArray()!;
-;
+    var itemArray: any[] = this.items.toArray()!;;
     
 
     var size: number = itemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-;
+    var item: Item = itemArray[index]! as Item;;
     
 idSet!.add(item.getId());
     
@@ -262,25 +245,21 @@ idSet!.add(item.getId());
 
     public getNumberOf(id: string): Integer{
 
-    var itemArray: any[] = this.items.toArray()!;
-;
+    var itemArray: any[] = this.items.toArray()!;;
     
 
     var size: number = itemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-;
+    var item: Item = itemArray[index]! as Item;;
     
 
                         if(item.getId()!.compareTo(id) == 0)
@@ -310,29 +289,24 @@ index < size; index++)
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(BasketData.BASKET)!;
-;
+    var node: Node = document.createElement(BasketData.BASKET)!;;
     
 
-    var itemArray: any[] = this.items.toArray()!;
-;
+    var itemArray: any[] = this.items.toArray()!;;
     
 
     var size: number = itemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-;
+    var item: Item = itemArray[index]! as Item;;
     
 node.appendChild(new ItemView(item, new Vector()).toXmlNode(document));
     

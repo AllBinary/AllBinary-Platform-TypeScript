@@ -78,6 +78,7 @@ export class TransformInfoObjectFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -94,8 +95,7 @@ private constructor (){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE);
     
@@ -103,12 +103,10 @@ this.logUtil!.putF("Creating View: " +transformInfoInterface!.getName(), this, c
                                     }
                                 
 
-    var params: any[] = new Array(1);
-;
+    var params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);
-;
+    var classes: Function[] = new Array(1);;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
@@ -117,8 +115,7 @@ classes[0]=
 params[0]= transformInfoInterface;
     
 
-    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params) as TransformInterface;
-;
+    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params) as TransformInterface;;
     
 
                         if(anyType == 
@@ -133,8 +130,7 @@ params[0]= transformInfoInterface;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("\nNo Such View Name: ");
     
@@ -175,8 +171,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
 } catch(e) 
             {
 
-    var error: string = "Failed To Get Instance: ";
-;
+    var error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 
@@ -194,8 +189,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
     
@@ -213,8 +207,7 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
 /* catch(e) 
             {
 
-    var error: string = "Failed To Get Instance: ";
-;
+    var error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 
@@ -232,8 +225,7 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
     

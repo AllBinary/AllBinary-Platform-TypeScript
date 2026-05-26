@@ -58,7 +58,8 @@ export class AbEmail
          implements EmailInterface {
         
 
-    private email: Email
+    private email: Email;
+
 public constructor (server: string, from: string, to: string, subject: string, textBody: string, htmlAttachment: string, contentBase: string){
 
             super();

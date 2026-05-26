@@ -60,7 +60,8 @@ export class HorizontalManeuverAI extends BasicAI {
 
     currentRelativeAngle: number = 0;
 
-    private currentSpeed: number
+    private currentSpeed: number;
+
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -76,12 +77,10 @@ this.currentSpeed= 5;
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var x: number = ownerLayerInterface!.getXP()!;
-;
+    var x: number = ownerLayerInterface!.getXP()!;;
     
 
                         if(ownerLayerInterface!.getXP() -this.currentSpeed <= 0)
@@ -185,12 +184,10 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
 
     drop(){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var y: number = ownerLayerInterface!.getYP()!;
-;
+    var y: number = ownerLayerInterface!.getYP()!;;
     
 
                         if(ownerLayerInterface!.getY2() +ownerLayerInterface!.getHeight() > DisplayInfoSingleton.getInstance()!.getLastHeight())

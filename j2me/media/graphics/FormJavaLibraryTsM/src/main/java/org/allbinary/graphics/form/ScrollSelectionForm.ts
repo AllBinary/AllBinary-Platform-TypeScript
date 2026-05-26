@@ -130,13 +130,14 @@ export class ScrollSelectionForm extends PaintableForm {
 
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
 
-    readonly border: number
+    readonly border: number;
 
-    readonly halfBorder: number
+    readonly halfBorder: number;
 
-    private buttonBasicColor: BasicColor
+    private buttonBasicColor: BasicColor;
 
     paintable: ItemPaintable = ItemPaintableFactory.getInstance()!;
+
 public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, rectangle, formType, backgroundBasicColor, foregroundBasicColor);
                     
@@ -168,8 +169,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
             
     public getSelectedItem(point: GPoint): ABCustomItem{
 
-    var index: number = this.getSelectedIndexForPoint(point)!;
-;
+    var index: number = this.getSelectedIndexForPoint(point)!;;
     
 
                         if(index !=  -1)
@@ -201,20 +201,17 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
             
     public getItemIndex(item: ABCustomItem): number{
 
-    var size: number = this.size()!;
-;
+    var size: number = this.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var nextItem: ABCustomItem = this.get(index) as ABCustomItem;
-;
+    var nextItem: ABCustomItem = this.get(index) as ABCustomItem;;
     
 
                         if(nextItem == item)
@@ -254,32 +251,25 @@ index < size; index++)
             
     public getSelectedIndexForPoint(point: GPoint): number{
 
-    var start: number = this.getStartIndex()!;
-;
+    var start: number = this.getStartIndex()!;;
     
 
-    var size: number = this.size()!;
-;
+    var size: number = this.size()!;;
     
 
-    var dx: number = this.getDx()!;
-;
+    var dx: number = this.getDx()!;;
     
 
-    var dy: number = this.getDy()!;
-;
+    var dy: number = this.getDy()!;;
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-;
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(commonLabels!.START_LABEL);
     
@@ -294,24 +284,20 @@ stringBuffer!.appendint(size);
 this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELECTED_INDEX);
     
 
-    var item: ABCustomItem
-;
+    var item: ABCustomItem;;
     
 
-    var width: number= 0
-;
+    var width: number= 0;;
     
 
-    var height: number= 0
-;
+    var height: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = start;
-index < size; index++)
+    var index: number = start;index < size; index++)
         {
 item= this.get(index);
     
@@ -320,8 +306,7 @@ width= item.getMinimumWidth();
 height= item.getMinimumHeight();
     
 
-    var diffX: number = 0;
-;
+    var diffX: number = 0;;
     
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
@@ -439,8 +424,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
             
     public processInputKey(gameKeyCode: number): number{
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-;
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
                         if(this.size() == 0)
@@ -456,8 +440,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                                     }
                                 
 
-    var index: number = this.getSelectedIndex()!;
-;
+    var index: number = this.getSelectedIndex()!;;
     
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM || this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
@@ -519,8 +502,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                         }
                             
 
-    var max: number = this.size() -1;
-;
+    var max: number = this.size() -1;;
     
 
                         if(index < 0)
@@ -584,24 +566,20 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
             
     public paintItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
 
-    var width: number = item.getMinimumWidth()!;
-;
+    var width: number = item.getMinimumWidth()!;;
     
 
-    var height: number = item.getMinimumHeight()!;
-;
+    var height: number = item.getMinimumHeight()!;;
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-;
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 item.paintXY(graphics, x, y);
     
 graphics.setColor(this.getButtonBasicColor()!.intValue());
     
 
-    var adjustedBorder: number = 3;
-;
+    var adjustedBorder: number = 3;;
     
 graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjustedBorder, width +this.border -adjustedBorder, height +this.border -adjustedBorder);
     
@@ -660,20 +638,17 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
 
-    var width: number = item.getMinimumWidth()!;
-;
+    var width: number = item.getMinimumWidth()!;;
     
 
-    var height: number = item.getMinimumHeight()!;
-;
+    var height: number = item.getMinimumHeight()!;;
     
 graphics.setColor(this.getButtonBasicColor()!.intValue());
     
 item.paintUnselected(graphics, x, y);
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-;
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
                         if(this.formType == formTypeFactory!.HORIZONTAL_FORM)

@@ -75,6 +75,7 @@ export class ShippingAddressData
     public static readonly COUNTRY: string = "SHIPPINGADDRESS_COUNTRY";
 
     public static readonly TAX: string = "SHIPPINGADDRESS_TAX";
+
 private constructor (){
 
             super();

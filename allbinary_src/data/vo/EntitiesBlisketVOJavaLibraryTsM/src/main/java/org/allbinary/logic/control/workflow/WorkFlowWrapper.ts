@@ -63,7 +63,8 @@ export class WorkFlowWrapper
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private anyType: any
+    private anyType: any;
+
 public constructor (anyType: any = {}){
 
             super();
@@ -88,18 +89,15 @@ public constructor (anyType: any = {}){
 
         try {
             
-    var helperClass: Function = this.anyType!.constructor!;
-;
+    var helperClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("getName", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -112,8 +110,7 @@ public constructor (anyType: any = {}){
 } catch(e) 
             {
 
-    var error: string = "Reflection Exception";
-;
+    var error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -140,18 +137,15 @@ public constructor (anyType: any = {}){
 
         try {
             
-    var helperClass: Function = this.anyType!.constructor!;
-;
+    var helperClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("getStoreName", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -164,8 +158,7 @@ public constructor (anyType: any = {}){
 } catch(e) 
             {
 
-    var error: string = "Reflection Exception";
-;
+    var error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -192,18 +185,15 @@ public constructor (anyType: any = {}){
 
         try {
             
-    var helperClass: Function = this.anyType!.constructor!;
-;
+    var helperClass: Function = this.anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod(this.commonStrings!.PROCESS, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Integer = method.invoke(this.anyType, 
-                            null) as Integer;
-;
+                            null) as Integer;;
     
 
 
@@ -216,8 +206,7 @@ public constructor (anyType: any = {}){
 } catch(e) 
             {
 
-    var error: string = "Reflection Exception";
-;
+    var error: string = "Reflection Exception";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

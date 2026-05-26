@@ -44,6 +44,7 @@
 
 export class TouchFeature extends Feature {
         
+
  constructor (name: string){
             super(name);
                     

@@ -78,7 +78,8 @@ export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
 
     private readonly clickTimeHelper: TimeDelayHelper = new TimeDelayHelper(this.CLICK_DELAY);
 
-    private rectangle: Rectangle
+    private rectangle: Rectangle;
+
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, rectangle: Rectangle){
             super(gameKeyEventList, playerInputId, gameCanvas);
                     
@@ -104,8 +105,7 @@ this.rectangle= rectangle;
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;
-;
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;;
     
 gameCanvas!.toggleMenu();
     
@@ -133,32 +133,26 @@ gameCanvas!.toggleMenu();
 
         try {
             
-    var motionInputsIndex: number = this.processMotionInputs()!;
-;
+    var motionInputsIndex: number = this.processMotionInputs()!;;
     
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;
-;
+    var list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var key: number = 0;
-;
+    var key: number = 0;;
     
 
-    var gameKeyEvent: GameKeyEvent
-;
+    var gameKeyEvent: GameKeyEvent;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
@@ -231,16 +225,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, GameInputStrings.getInsta
             
     public processMotionInputs(): number{
 
-    var lastIndex: number = this.motionGestureEventList!.size() -1;
-;
+    var lastIndex: number = this.motionGestureEventList!.size() -1;;
     
 
                         if(lastIndex >= 0)
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
-;
+    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;;
     
 this.processMotionInput(motionGestureEvent);
     
@@ -279,24 +271,20 @@ this.motionGestureEventList!.clear();
                                     }
                                 
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-;
+    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
-;
+    var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;;
     
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
                                     
-    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
-;
+    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;;
     
 
-    var rectPoint: GPoint = this.rectangle.getPoint()!;
-;
+    var rectPoint: GPoint = this.rectangle.getPoint()!;;
     
 
                         if(this.rectangleCollisionUtil!.isInside(rectPoint!.getX(), rectPoint!.getY(), this.rectangle.getMaxX() +20, this.rectangle.getMaxY(), point.getX(), point.getY()))
@@ -307,8 +295,7 @@ this.motionGestureEventList!.clear();
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;
-;
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas() as AllBinaryGameCanvas;;
     
 gameCanvas!.toggleMenu();
     

@@ -45,6 +45,7 @@ export class CharacterSet
             extends Object
          {
         
+
 public constructor (){
 
             super();

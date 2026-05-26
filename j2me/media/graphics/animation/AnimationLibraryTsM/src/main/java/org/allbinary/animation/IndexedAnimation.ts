@@ -55,7 +55,8 @@ export class IndexedAnimation extends Animation implements IndexedAnimationInter
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    readonly animationBehaviorP: AnimationBehavior
+    readonly animationBehaviorP: AnimationBehavior;
+
 protected constructor (animationBehavior: AnimationBehavior){
 
             super();

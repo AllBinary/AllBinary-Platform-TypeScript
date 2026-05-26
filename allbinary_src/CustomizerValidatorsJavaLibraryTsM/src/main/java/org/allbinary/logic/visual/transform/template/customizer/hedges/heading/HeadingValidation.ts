@@ -75,9 +75,10 @@ export class HeadingValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private title: TitleValidation
+    private title: TitleValidation;
 
-    private logo: LogoValidation
+    private logo: LogoValidation;
+
 public constructor (){
 
             super();
@@ -87,26 +88,25 @@ this.logo= new LogoValidation();
     
 }
 
+
 public constructor (document: Document){
 
             super();
         
-    var headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;
-;
+    var headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;;
     
 
-    var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;
-;
+    var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;;
     
 
-    var logoNode: Node = DomSearchHelper.getNode(LogoData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;
-;
+    var logoNode: Node = DomSearchHelper.getNode(LogoData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;;
     
 this.title= new TitleValidation(titleNode);
     
 this.logo= new LogoValidation(logoNode);
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -130,16 +130,13 @@ this.logo= new LogoValidation(hashMap);
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
-    var titleValid: Boolean = Boolean.TRUE;
-;
+    var titleValid: Boolean = Boolean.TRUE;;
     
 
-    var logoValid: Boolean = Boolean.TRUE;
-;
+    var logoValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -226,20 +223,16 @@ this.logo= new LogoValidation(hashMap);
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
-    var titleValid: Boolean = Boolean.TRUE;
-;
+    var titleValid: Boolean = Boolean.TRUE;;
     
 
-    var logoValid: Boolean = Boolean.TRUE;
-;
+    var logoValid: Boolean = Boolean.TRUE;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.title.isValid().valueOf())
@@ -331,8 +324,7 @@ this.logo= new LogoValidation(hashMap);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(HeadingData.NAME)!;
-;
+    var node: Node = document.createElement(HeadingData.NAME)!;;
     
 node.appendChild(this.logo.toXmlNode(document));
     

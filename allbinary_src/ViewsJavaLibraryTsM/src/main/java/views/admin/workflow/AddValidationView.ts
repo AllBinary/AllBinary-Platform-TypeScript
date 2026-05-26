@@ -70,6 +70,7 @@ export class AddValidationView extends WorkFlowView implements ValidationCompone
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -118,8 +119,7 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(WorkFlowEntityFactory.getInstance()!.create2()!.get(this.workFlowInterface!.getName(), this.getTransformInfoInterface()!.getStoreName()) != 

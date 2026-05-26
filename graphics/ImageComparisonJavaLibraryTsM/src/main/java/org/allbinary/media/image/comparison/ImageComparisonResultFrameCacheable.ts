@@ -53,9 +53,10 @@ export class ImageComparisonResultFrameCacheable
          implements CacheableInterface {
         
 
-    private frame: Long
+    private frame: Long;
 
-    private imageComparisonResult: ImageComparisonResult
+    private imageComparisonResult: ImageComparisonResult;
+
 public constructor (imageComparisonResult: ImageComparisonResult, frame: Long){
 
             super();
@@ -110,8 +111,7 @@ this.imageComparisonResult= imageComparisonResult;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     

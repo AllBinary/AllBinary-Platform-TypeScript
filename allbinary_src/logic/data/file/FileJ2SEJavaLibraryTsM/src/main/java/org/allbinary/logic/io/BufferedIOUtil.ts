@@ -66,16 +66,13 @@ export class BufferedIOUtil
             
     public static copy(backupFile: AbFile, backupFileBak: AbFile){
 
-    var line: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var line: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(backupFileBak)));
-;
+    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(backupFileBak)));;
     
 
-    var tmpIn: BufferedReader = new BufferedReader(new FileReader(AbFileNativeUtil.get(backupFile)));
-;
+    var tmpIn: BufferedReader = new BufferedReader(new FileReader(AbFileNativeUtil.get(backupFile)));;
     
 
         while(true)

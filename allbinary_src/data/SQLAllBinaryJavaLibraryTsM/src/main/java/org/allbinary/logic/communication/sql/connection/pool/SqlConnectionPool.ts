@@ -97,6 +97,7 @@ export class SqlConnectionPool
     private readonly METHOD_GET: string = "get()";
 
     private readonly METHOD_ADD: string = "add()";
+
 private constructor (){
 
             super();
@@ -135,8 +136,7 @@ private constructor (){
                                 
                         else {
                             
-    var connectionVector: Vector = this.connectionHashMap!.get(url) as Vector;
-;
+    var connectionVector: Vector = this.connectionHashMap!.get(url) as Vector;;
     
 
                         if(connectionVector == 
@@ -151,8 +151,7 @@ private constructor (){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.FIRST);
     
@@ -200,24 +199,20 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = connectionVector!.length!;
-;
+    var size: number = connectionVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var sqlConnection: Connection = connectionVector!.get(i) as Connection;
-;
+    var sqlConnection: Connection = connectionVector!.get(i) as Connection;;
     
 
                         if(!sqlConnection!.isClosed())
@@ -270,8 +265,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.NEW_CONNECTION_FOR);
     
@@ -302,8 +296,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
                         
                                     {
                                     
-    var connectionVector: Vector
-;
+    var connectionVector: Vector;;
     
 
                         if(this.connectionHashMap == 
@@ -346,8 +339,7 @@ this.connectionHashMap!.put(url, connectionVector);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.NUMBER_OF_SQL_CONNECTIONS_FOR);
     

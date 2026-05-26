@@ -52,7 +52,8 @@ import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js'
 export class SingleAnalogControllerVisitor extends AnalogControllerVisitor {
         
 
-    private readonly playerInputId: number
+    private readonly playerInputId: number;
+
 public constructor (playerInputId: number){
 
             super();
@@ -63,8 +64,7 @@ public constructor (playerInputId: number){
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInputProcessor: AnalogLocationInputProcessor){
 
-    var analogLocationInput: AnalogLocationInput = AnalogLocationInputFactory.getInstance()!.getInstanceForPlayer(this.playerInputId)!;
-;
+    var analogLocationInput: AnalogLocationInput = AnalogLocationInputFactory.getInstance()!.getInstanceForPlayer(this.playerInputId)!;;
     
 analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput);
     

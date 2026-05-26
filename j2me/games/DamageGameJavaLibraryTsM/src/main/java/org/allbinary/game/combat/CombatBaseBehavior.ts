@@ -52,11 +52,12 @@ export class CombatBaseBehavior
 
     public static readonly NULL_COMBAT_BEHAVIOR: CombatBaseBehavior = new CombatBaseBehavior(DamageableBaseBehavior.getInstance(), DestroyableBaseBehavior.getInstance());
 
-    private readonly damageableBaseBehavior: DamageableBaseBehavior
+    private readonly damageableBaseBehavior: DamageableBaseBehavior;
 
-    private readonly destroyableBaseBehavior: DestroyableBaseBehavior
+    private readonly destroyableBaseBehavior: DestroyableBaseBehavior;
 
-    private readyForExplosion: boolean= false
+    private readyForExplosion: boolean= false;
+
 public constructor (damageableBaseBehavior: DamageableBaseBehavior, destroyableBaseBehavior: DestroyableBaseBehavior){
 
             super();

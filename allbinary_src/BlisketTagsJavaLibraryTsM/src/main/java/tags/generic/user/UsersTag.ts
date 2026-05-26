@@ -54,7 +54,8 @@ import { StoreValidationTransformTag } from '../../../tags/StoreValidationTransf
 export class UsersTag extends StoreValidationTransformTag {
         
 
-    private role: string
+    private role: string;
+
 public constructor (){
 
             super();

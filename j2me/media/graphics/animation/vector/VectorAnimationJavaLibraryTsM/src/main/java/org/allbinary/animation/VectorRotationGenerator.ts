@@ -84,6 +84,7 @@ export class VectorRotationGenerator
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly vectorAnimationUtil: VectorAnimationUtil = VectorAnimationUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -106,45 +107,37 @@ private constructor (){
 
         try {
             
-    var totalAngle: number = this.angleFactory!.TOTAL_ANGLE;
-;
+    var totalAngle: number = this.angleFactory!.TOTAL_ANGLE;;
     
 
-    var angleIncrement: number = totalAngle /frames;
-;
+    var angleIncrement: number = totalAngle /frames;;
     
 
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(totalAngle /angleIncrement);
-;
+    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(totalAngle /angleIncrement);;
     
 
-    var pointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);
-;
+    var pointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
     var size: number = points.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 pointBasicArrayList!.add(pointFactory!.createXY(points[index]![0]!, points[index]![1]!));
     
 }
 
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < totalAngle)
@@ -156,8 +149,7 @@ index += angleIncrement;
 }
 
 
-    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointListWithPointsPerFrame(pointsBasicArrayList, pointBasicArrayList!.size())!;
-;
+    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointListWithPointsPerFrame(pointsBasicArrayList, pointBasicArrayList!.size())!;;
     
 
 
@@ -170,8 +162,7 @@ index += angleIncrement;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -190,8 +181,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
             
     public getListAtAngle(width: number, height: number, pointBasicArrayList: BasicArrayList, angle: Angle): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);
-;
+    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);;
     
 graphicsPipe!.createMatrix();
     

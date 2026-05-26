@@ -85,47 +85,41 @@ export class BuildingInfoHudPaintable extends SelectionHudPaintable {
 
     private readonly HEALTH: string = "Health:";
 
-    private readonly productivityHud: NumberStringHud
+    private readonly productivityHud: NumberStringHud;
 
-    private readonly efficiencyHud: NumberStringHud
+    private readonly efficiencyHud: NumberStringHud;
 
-    private readonly healthHud: NumberStringHud
+    private readonly healthHud: NumberStringHud;
 
-    private readonly maxHealthHud: NumberStringHud
+    private readonly maxHealthHud: NumberStringHud;
 
     private rtsLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
+
 private constructor (){
 
             super();
         
-    var productivityHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-;
+    var productivityHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
     
 
-    var efficiencyHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-;
+    var efficiencyHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
     
 
-    var healthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-;
+    var healthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
     
 
-    var maxHealthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-;
+    var maxHealthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
     
 
         try {
             
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
-;
+    var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;;
     
 
-    var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
     
 productivityHud= new NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
@@ -136,8 +130,7 @@ efficiencyHud= new NumberStringHud("Efficiency:", 999, basicHudFactory!.ABSOLUTE
 index++;
     
 
-    var totalLength: number = this.HEALTH.length +1;
-;
+    var totalLength: number = this.HEALTH.length +1;;
     
 healthHud= new NumberStringHud(this.HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
@@ -148,8 +141,7 @@ maxHealthHud= new NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicH
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
@@ -198,8 +190,7 @@ this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
 
     public updateSelectionInfo(){
 
-    var buildingLayer: BuildingLayer = this.rtsLayer as BuildingLayer;
-;
+    var buildingLayer: BuildingLayer = this.rtsLayer as BuildingLayer;;
     
 this.setName(buildingLayer!.getName());
     
@@ -210,14 +201,12 @@ this.productivityHud!.set(buildingLayer!.getProductivity());
 this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100);
     
 
-    var health: number = buildingLayer!.getHealthInterface()!.getHealth()!;
-;
+    var health: number = buildingLayer!.getHealthInterface()!.getHealth()!;;
     
 this.healthHud!.set(health);
     
 
-    var totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);
-;
+    var totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);;
     
 this.maxHealthHud!.setX(this.textX +MyFont.getInstance()!.defaultStringWidth(totalLength));
     

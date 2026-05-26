@@ -58,6 +58,7 @@ export class UrlGlobalsView
             extends Object
          implements DomNodeInterface {
         
+
 public constructor (){
 
             super();
@@ -68,14 +69,12 @@ public constructor (){
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(UrlGlobalsData.WEBAPPPATH, org.allbinary.globals.URLGLOBALS.getWebappPath());
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, UrlGlobalsData.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, UrlGlobalsData.NAME, hashMap)!;;
     
 
 

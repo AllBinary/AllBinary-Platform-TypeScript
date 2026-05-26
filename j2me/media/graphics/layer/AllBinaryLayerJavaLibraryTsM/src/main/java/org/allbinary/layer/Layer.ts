@@ -66,17 +66,18 @@ export class Layer
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    x: number= 0
+    x: number= 0;
 
-    y: number= 0
+    y: number= 0;
 
     z: number = 3;
 
-    private width: number= 0
+    private width: number= 0;
 
-    private height: number= 0
+    private height: number= 0;
 
     private visible: boolean = true;
+
 public constructor (width: number, height: number){
 
             super();
@@ -193,12 +194,10 @@ this.visible= visible;
 
     public paint(graphics: Graphics){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-;
+    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT);
     

@@ -59,7 +59,8 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
 export class ThemesValidation extends Validation implements DomNodeInterface {
         
 
-    private themeVector: Vector
+    private themeVector: Vector;
+
 public constructor (){
 
             super();
@@ -67,10 +68,12 @@ public constructor (){
     
 }
 
+
 public constructor (node: Node){
 
             super();
         }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -122,24 +125,20 @@ public constructor (hashMap: HashMap<any, any>){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;;
     
 
-    var size: number = this.themeVector!.length!;
-;
+    var size: number = this.themeVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i) as DomNodeInterface;
-;
+    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i) as DomNodeInterface;;
     
 node.appendChild(themeDomNodeInterface!.toXmlNode(document));
     

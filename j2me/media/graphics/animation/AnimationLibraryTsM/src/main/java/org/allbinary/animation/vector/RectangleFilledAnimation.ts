@@ -52,9 +52,10 @@ import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/colo
 export class RectangleFilledAnimation extends Animation implements ColorCompositeInterface {
         
 
-    private width: number
+    private width: number;
 
-    private height: number
+    private height: number;
+
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();

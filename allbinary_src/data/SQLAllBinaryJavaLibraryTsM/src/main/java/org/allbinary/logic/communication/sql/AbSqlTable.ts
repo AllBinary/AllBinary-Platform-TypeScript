@@ -53,7 +53,7 @@ export class AbSqlTable extends AbSqlBasic {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private tableName: string
+    private tableName: string;
 
     private readonly METHOD_CREATED_TABLE: string = "createTable()";
 
@@ -62,6 +62,7 @@ export class AbSqlTable extends AbSqlBasic {
     private readonly TABLE_CREATION_SUCCESS: string = "Table Creation Successful: ";
 
     private readonly DROPPED_SUCCESS: string = " Dropped Successfully";
+
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
                     
@@ -135,8 +136,7 @@ this.tableName= tableName;
 
     public dropTable(): string{
 
-    var sqlStatement: string = this.sqlStrings!.DROP_TABLE +this.tableName;
-;
+    var sqlStatement: string = this.sqlStrings!.DROP_TABLE +this.tableName;;
     
 
         try {

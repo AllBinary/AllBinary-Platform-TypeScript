@@ -103,53 +103,44 @@ export class PathFinder extends GeographicPathFinderBase {
 this.geographicMapInterface= geographicMapInterface;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 this.costArray= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
                                                             ;
     
 
-    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var node: PathFindingNodeCost
-;
+    var node: PathFindingNodeCost;;
     
 
     var sizeX: number = this.costArray!.length
-                ;
-;
+                ;;
     
 
     var sizeY: number = this.costArray[0]!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var column: number = 0;
-column < sizeX; column++)
+    var column: number = 0;column < sizeX; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < sizeY; row++)
+    var row: number = 0;row < sizeY; row++)
         {
 
-    var geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(basicGeographicMapCellPositionFactory!.getAt(column, row))!;
-;
+    var geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(basicGeographicMapCellPositionFactory!.getAt(column, row))!;;
     
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;
-;
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;;
     
 node= new PathFindingNodeCost(NullUtil.getInstance()!.NULL_OBJECT, basicGeographicMapCellPositionFactory!.getAt(column, row), new PathFindingNodeCostInfo(raceTrackGeographicMapCellType!.getTravelCost(),  -1));
     
@@ -176,8 +167,7 @@ this.costArray[column]![row]= node;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
     
@@ -239,12 +229,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
             
     public search(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode): BasicArrayList{
 
-    var list: BasicArrayList = this.findPath(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition)!;
-;
+    var list: BasicArrayList = this.findPath(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition)!;;
     
 
-    var pathList: BasicArrayList = new BasicArrayListD();
-;
+    var pathList: BasicArrayList = new BasicArrayListD();;
     
 pathList!.add(list);
     
@@ -269,8 +257,7 @@ this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindi
             
     public searchN(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode, multipassState: MultipassState): BasicArrayList{
 
-    var list: BasicArrayList = this.findPathEnd(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition, multipassState)!;
-;
+    var list: BasicArrayList = this.findPathEnd(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition, multipassState)!;;
     
 
                         if(list == 
@@ -288,8 +275,7 @@ this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindi
                                     }
                                 
 
-    var pathList: BasicArrayList = new BasicArrayListD();
-;
+    var pathList: BasicArrayList = new BasicArrayListD();;
     
 pathList!.add(list);
     
@@ -314,46 +300,38 @@ this.openPriorityQueue!.clear();
 this.closedSet!.clear();
     
 
-    var discoveryCalculation: number= 0
-;
+    var discoveryCalculation: number= 0;;
     
 
-    var node: PathFindingNodeCost
-;
+    var node: PathFindingNodeCost;;
     
 
-    var targetColumn: number = target.getColumn()!;
-;
+    var targetColumn: number = target.getColumn()!;;
     
 
-    var targetRow: number = target.getRow()!;
-;
+    var targetRow: number = target.getRow()!;;
     
 
     var sizeX: number = this.costArray!.length
-                ;
-;
+                ;;
     
 
     var sizeY: number = this.costArray[0]!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var column: number = 0;
-column < sizeX; column++)
+    var column: number = 0;column < sizeX; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < sizeY; row++)
+    var row: number = 0;row < sizeY; row++)
         {
 discoveryCalculation= this.mathUtil!.abs(column -targetColumn) +this.mathUtil!.abs(row -targetRow);
     
@@ -368,30 +346,24 @@ node.pathFindingNodeCostInfoP!.costToEndP= discoveryCalculation;
 }
 
 
-    var startNode: PathFindingNodeCost = this.costArray[start.getColumn()]![start.getRow()]!;
-;
+    var startNode: PathFindingNodeCost = this.costArray[start.getColumn()]![start.getRow()]!;;
     
 this.openPriorityQueue!.add(startNode);
     
 
-    var geographicMapInterface: BasicGeographicMap = this.geographicMapInterface as BasicGeographicMap;
-;
+    var geographicMapInterface: BasicGeographicMap = this.geographicMapInterface as BasicGeographicMap;;
     
 
-    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var targetNode: PathFindingNodeCost = this.costArray[target.getColumn()]![target.getRow()]!;
-;
+    var targetNode: PathFindingNodeCost = this.costArray[target.getColumn()]![target.getRow()]!;;
     
 
-    var current: PathFindingNodeCost
-;
+    var current: PathFindingNodeCost;;
     
 
         do
@@ -414,32 +386,27 @@ this.closedSet!.add(current);
                                     }
                                 
 
-    var neighbor: PathFindingNodeCost
-;
+    var neighbor: PathFindingNodeCost;;
     
 
-    var neighborInfo: PathFindingNodeCostInfo
-;
+    var neighborInfo: PathFindingNodeCostInfo;;
     
 
-    var calculatedCost: number= 0
-;
+    var calculatedCost: number= 0;;
     
 
 
 
 
                         for (
-    var column: number = current.geographicMapCellPosition!.getColumn() -1;
-column < current.geographicMapCellPosition!.getColumn() +2; column++)
+    var column: number = current.geographicMapCellPosition!.getColumn() -1;column < current.geographicMapCellPosition!.getColumn() +2; column++)
         {
 
 
 
 
                         for (
-    var row: number = current.geographicMapCellPosition!.getRow() -1;
-row < current.geographicMapCellPosition!.getRow() +2; row++)
+    var row: number = current.geographicMapCellPosition!.getRow() -1;row < current.geographicMapCellPosition!.getRow() +2; row++)
         {
 
                         if(column > 0 && row > 0 && column < allBinaryTiledLayer!.getColumns() && row < allBinaryTiledLayer!.getRows() && geographicMapInterface!.isOnMap(basicGeographicMapCellPositionFactory!.getAt(column, row)))
@@ -516,46 +483,38 @@ this.openPriorityQueue!.clear();
 this.closedSet!.clear();
     
 
-    var discoveryCalculation: number= 0
-;
+    var discoveryCalculation: number= 0;;
     
 
-    var node: PathFindingNodeCost
-;
+    var node: PathFindingNodeCost;;
     
 
-    var targetColumn: number = target.getColumn()!;
-;
+    var targetColumn: number = target.getColumn()!;;
     
 
-    var targetRow: number = target.getRow()!;
-;
+    var targetRow: number = target.getRow()!;;
     
 
     var sizeX: number = this.costArray!.length
-                ;
-;
+                ;;
     
 
     var sizeY: number = this.costArray[0]!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var column: number = 0;
-column < sizeX; column++)
+    var column: number = 0;column < sizeX; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < sizeY; row++)
+    var row: number = 0;row < sizeY; row++)
         {
 discoveryCalculation= this.mathUtil!.abs(column -targetColumn) +this.mathUtil!.abs(row -targetRow);
     
@@ -570,8 +529,7 @@ node.pathFindingNodeCostInfoP!.costToEndP= discoveryCalculation;
 }
 
 
-    var startNode: PathFindingNodeCost = this.costArray[start.getColumn()]![start.getRow()]!;
-;
+    var startNode: PathFindingNodeCost = this.costArray[start.getColumn()]![start.getRow()]!;;
     
 this.openPriorityQueue!.add(startNode);
     
@@ -584,28 +542,22 @@ multipassState!.step++;
             
     public findPathEnd(start: GeographicMapCellPosition, target: GeographicMapCellPosition, multipassState: MultipassState): BasicArrayList{
 
-    var geographicMapInterface: BasicGeographicMap = this.geographicMapInterface as BasicGeographicMap;
-;
+    var geographicMapInterface: BasicGeographicMap = this.geographicMapInterface as BasicGeographicMap;;
     
 
-    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var targetNode: PathFindingNodeCost = this.costArray[target.getColumn()]![target.getRow()]!;
-;
+    var targetNode: PathFindingNodeCost = this.costArray[target.getColumn()]![target.getRow()]!;;
     
 
-    var current: PathFindingNodeCost
-;
+    var current: PathFindingNodeCost;;
     
 
-    var total: number = 0;
-;
+    var total: number = 0;;
     
 
         do
@@ -628,32 +580,27 @@ this.closedSet!.add(current);
                                     }
                                 
 
-    var neighbor: PathFindingNodeCost
-;
+    var neighbor: PathFindingNodeCost;;
     
 
-    var neighborInfo: PathFindingNodeCostInfo
-;
+    var neighborInfo: PathFindingNodeCostInfo;;
     
 
-    var calculatedCost: number= 0
-;
+    var calculatedCost: number= 0;;
     
 
 
 
 
                         for (
-    var column: number = current.geographicMapCellPosition!.getColumn() -1;
-column < current.geographicMapCellPosition!.getColumn() +2; column++)
+    var column: number = current.geographicMapCellPosition!.getColumn() -1;column < current.geographicMapCellPosition!.getColumn() +2; column++)
         {
 
 
 
 
                         for (
-    var row: number = current.geographicMapCellPosition!.getRow() -1;
-row < current.geographicMapCellPosition!.getRow() +2; row++)
+    var row: number = current.geographicMapCellPosition!.getRow() -1;row < current.geographicMapCellPosition!.getRow() +2; row++)
         {
 
                         if(column > 0 && row > 0 && column < allBinaryTiledLayer!.getColumns() && row < allBinaryTiledLayer!.getRows() && geographicMapInterface!.isOnMap(basicGeographicMapCellPositionFactory!.getAt(column, row)))
@@ -739,8 +686,7 @@ total++;
 
     extractPath(start: GeographicMapCellPosition, current: PathFindingNodeCost): BasicArrayList{
 
-    var path: BasicArrayList = new BasicArrayListD();
-;
+    var path: BasicArrayList = new BasicArrayListD();;
     
 
         while(current.parent != NullUtil.getInstance()!.NULL_OBJECT)

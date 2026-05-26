@@ -55,6 +55,7 @@ import { Math } from './Math.js';
 
 export class GraphicsPipeline extends BasicGraphicsPipeline {
         
+
 public constructor (points: BasicArrayList){
             super(points);
                     
@@ -68,36 +69,29 @@ public constructor (points: BasicArrayList){
             
     public rotateTheta(aTheta: number){
 
-    var newVector: BasicArrayList = new BasicArrayListD();
-;
+    var newVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = this.pointBasicArrayList!.size()!;
-;
+    var size: number = this.pointBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var secondPoint: GPoint = pointBasicArrayList!.get(index) as GPoint;
-;
+    var secondPoint: GPoint = pointBasicArrayList!.get(index) as GPoint;;
     
 
-    var secondX: number = (secondPoint!.getX() *Math.cos(aTheta)) -(secondPoint!.getY() *Math.sin(aTheta));
-;
+    var secondX: number = (secondPoint!.getX() *Math.cos(aTheta)) -(secondPoint!.getY() *Math.sin(aTheta));;
     
 
-    var secondY: number = (secondPoint!.getX() *Math.sin(aTheta)) +(secondPoint!.getY() *Math.cos(aTheta));
-;
+    var secondY: number = (secondPoint!.getX() *Math.sin(aTheta)) +(secondPoint!.getY() *Math.cos(aTheta));;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY((Math.round(secondX)), (Math.round(secondY)))!;
-;
+    var point: GPoint = PointFactory.getInstance()!.createXY((Math.round(secondX)), (Math.round(secondY)))!;;
     
 newVector!.add(point);
     

@@ -47,7 +47,8 @@ import { GameInputProcessor } from '../../../../org/allbinary/game/input/GameInp
 export class RTSPlayerGameInputProcessor extends GameInputProcessor {
         
 
-    readonly rtsPlayerGameInput: RTSPlayerGameInput
+    readonly rtsPlayerGameInput: RTSPlayerGameInput;
+
 public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
 
             super();

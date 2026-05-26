@@ -62,12 +62,10 @@ export class CellPosition extends V {
 
     public static toStringColRow(i_column: number, i_row: number): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append(commonSeps!.PARENTHESIS_OPEN);
     
@@ -88,11 +86,12 @@ stringBuffer!.append(commonSeps!.PARENTHESIS_CLOSE);
 }
 
 
-    private readonly id: number
+    private readonly id: number;
 
-    private readonly column: number
+    private readonly column: number;
 
-    private readonly row: number
+    private readonly row: number;
+
 public constructor (column: number, row: number, columns: number, rows: number){
 
             super();

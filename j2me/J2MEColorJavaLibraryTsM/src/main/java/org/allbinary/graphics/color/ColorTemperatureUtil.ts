@@ -64,8 +64,7 @@ export class ColorTemperatureUtil
 
     public getBasicColor(thirdTemp: number): BasicColor{
 
-    var basicColor: BasicColor = this.basicColorFactory!.RED;
-;
+    var basicColor: BasicColor = this.basicColorFactory!.RED;;
     
 
                         if(thirdTemp > 3700)

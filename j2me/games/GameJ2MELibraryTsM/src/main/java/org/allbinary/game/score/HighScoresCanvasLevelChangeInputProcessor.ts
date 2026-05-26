@@ -68,6 +68,7 @@ export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasI
     private readonly INSTRUCTIONS: string = "(Right = Next Track, Left = Previous Track)";
 
     private anchor: number = Anchor.TOP_LEFT;
+
 public constructor (highScoresCanvas: HighScoresCanvas){
             super(highScoresCanvas);
                     
@@ -92,28 +93,23 @@ GameKeyEventHandler.getInstance()!.removeListener(this);
 
     public update(){
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;
-;
+    var list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.objectArray[index]!;
-;
+    var anyType: any = list.objectArray[index]!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;
-;
+    var key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 
                         if(key == Canvas.RIGHT)
@@ -144,16 +140,13 @@ list.clear();
 
     public paint(graphics: Graphics){
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var width: number = this.displayInfoSingleton!.getLastWidth()!;
-;
+    var width: number = this.displayInfoSingleton!.getLastWidth()!;;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.INSTRUCTIONS)>>1);
-;
+    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.INSTRUCTIONS)>>1);;
     
 graphics.drawString(this.INSTRUCTIONS, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, this.anchor);
     

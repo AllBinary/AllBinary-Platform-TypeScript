@@ -59,6 +59,7 @@ export class DisplayPointScalar
     
 }
 
+
 public constructor (){
 
             super();

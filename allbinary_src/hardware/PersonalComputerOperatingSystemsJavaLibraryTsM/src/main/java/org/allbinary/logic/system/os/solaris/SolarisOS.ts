@@ -47,6 +47,7 @@ import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/sy
         
 export class SolarisOS extends GenericOperatingSystem {
         
+
 public constructor (){
 
             super();

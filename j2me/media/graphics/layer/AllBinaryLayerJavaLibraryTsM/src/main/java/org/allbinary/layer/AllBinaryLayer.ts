@@ -86,13 +86,14 @@ export class AllBinaryLayer extends Layer implements LayerInterface {
 
     readonly viewPositionEvent: ViewPositionEvent = new ViewPositionEvent(this);
 
-    private halfWidth: number= 0
+    private halfWidth: number= 0;
 
-    private halfHeight: number= 0
+    private halfHeight: number= 0;
 
-    private readonly name: string
+    private readonly name: string;
 
     private viewPosition: ViewPosition = ViewPosition.NULL_VIEW_POSITION;
+
 public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPosition){
             super(rectangle.getWidth(), rectangle.getHeight());
                     
@@ -100,8 +101,7 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
                             //For kotlin this is before the body of the constructor.
                     
 
-    var localName: string
-;
+    var localName: string;;
     
 
                         if(name == 
@@ -123,8 +123,7 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
 this.name= localName;
     
 
-    var point: GPoint = rectangle.getPoint()!;
-;
+    var point: GPoint = rectangle.getPoint()!;;
     
 this.setPosition(point.getX(), point.getY(), point.getZ());
     
@@ -329,16 +328,13 @@ this.viewPosition= viewPosition;
 
     public toStringAppend(stringBuffer: StringMaker){
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-;
+    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 stringBuffer!.append(this.getName());
     
@@ -383,8 +379,7 @@ stringBuffer!.appendint(this.getHeight());
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 this.toStringAppend(stringBuffer);
     

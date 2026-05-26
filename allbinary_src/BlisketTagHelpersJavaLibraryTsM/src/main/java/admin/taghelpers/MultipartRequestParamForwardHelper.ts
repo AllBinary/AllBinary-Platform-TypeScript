@@ -73,15 +73,16 @@ export class MultipartRequestParamForwardHelper
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly pageContext: PageContext
+    private readonly pageContext: PageContext;
 
-    private readonly requestMapInterface: RequestMapInterface
+    private readonly requestMapInterface: RequestMapInterface;
 
-    private readonly page: string
+    private readonly page: string;
 
-    private readonly command: string
+    private readonly command: string;
 
-    private readonly paramVector: Vector
+    private readonly paramVector: Vector;
+
 public constructor (parentHelperTag: HelperTag, page: string, command: string, paramVector: Vector, pageContext: PageContext){
 
             super();
@@ -108,12 +109,10 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
                         
                                     {
                                     
-    var params: string = this.getParams()!;
-;
+    var params: string = this.getParams()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.page);
     
@@ -129,8 +128,7 @@ this.pageContext!.forward(stringBuffer!.toString());
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -148,48 +146,38 @@ this.pageContext!.forward(stringBuffer!.toString());
 
     getParams(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var AMP: string = commonSeps!.AMPERSAND;
-;
+    var AMP: string = commonSeps!.AMPERSAND;;
     
 
-    var QUESTION: string = commonSeps!.QUESTION;
-;
+    var QUESTION: string = commonSeps!.QUESTION;;
     
 
-    var EQUALS: string = commonSeps!.EQUALS;
-;
+    var EQUALS: string = commonSeps!.EQUALS;;
     
 
-    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.paramVector!.length!;
-;
+    var size: number = this.paramVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: string = this.paramVector!.get(index) as string;
-;
+    var key: string = this.paramVector!.get(index) as string;;
     
 
-    var value: string = hashMap!.get(key) as string;
-;
+    var value: string = hashMap!.get(key) as string;;
     
 
                         if(index != 0)
@@ -225,12 +213,10 @@ stringBuffer!.append(value);
 
     shouldForward(): boolean{
 
-    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;;
     
 
-    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND) as string;
-;
+    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND) as string;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand) && this.command.compareTo(requestCommand) == 0))

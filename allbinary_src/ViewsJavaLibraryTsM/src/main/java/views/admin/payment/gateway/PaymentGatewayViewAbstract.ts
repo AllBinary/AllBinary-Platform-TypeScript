@@ -54,7 +54,8 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
 export class PaymentGatewayViewAbstract extends TransformInfoHttpComposite {
         
 
-    private paymentGatewayPrimaryKey: PaymentGatewayPrimaryKey
+    private paymentGatewayPrimaryKey: PaymentGatewayPrimaryKey;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -68,12 +69,10 @@ this.getFormData(this.getPageContext()!.getRequest() as HttpServletRequest);
 
     public getFormData(request: HttpServletRequest){
 
-    var storeName: string = this.getWeblisketSession()!.getStoreName()!;
-;
+    var storeName: string = this.getWeblisketSession()!.getStoreName()!;;
     
 
-    var gatewayName: string = request.getParameter(PaymentGatewayData.NAME.toString())!;
-;
+    var gatewayName: string = request.getParameter(PaymentGatewayData.NAME.toString())!;;
     
 this.setPaymentGatewayPrimaryKey(new PaymentGatewayPrimaryKey(storeName, gatewayName));
     

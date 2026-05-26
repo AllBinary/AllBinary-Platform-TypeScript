@@ -61,7 +61,8 @@ export class UserEmailConfiguration
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface
+    private userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface;
+
 public constructor (){
 
             super();
@@ -77,6 +78,7 @@ public constructor (){
 this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration());
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 

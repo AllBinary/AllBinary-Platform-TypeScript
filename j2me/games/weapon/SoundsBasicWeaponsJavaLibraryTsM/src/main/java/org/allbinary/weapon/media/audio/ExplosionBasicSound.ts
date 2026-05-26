@@ -59,6 +59,7 @@ export class ExplosionBasicSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/explosion.wav");
                     

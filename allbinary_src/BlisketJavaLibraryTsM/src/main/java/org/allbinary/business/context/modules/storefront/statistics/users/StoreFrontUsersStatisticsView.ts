@@ -60,7 +60,8 @@ export class StoreFrontUsersStatisticsView
          implements DomNodeInterface {
         
 
-    private storeFrontUsersStatisticsInterface: StoreFrontUsersStatisticsInterface
+    private storeFrontUsersStatisticsInterface: StoreFrontUsersStatisticsInterface;
+
 public constructor (storeFrontUsersStatisticsInterface: StoreFrontUsersStatisticsInterface){
 
             super();
@@ -73,12 +74,10 @@ public constructor (storeFrontUsersStatisticsInterface: StoreFrontUsersStatistic
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.storeFrontUsersStatisticsInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.storeFrontUsersStatisticsInterface!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontUsersStatisticsData.getInstance()!.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontUsersStatisticsData.getInstance()!.NAME, hashMap)!;;
     
 
 

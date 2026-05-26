@@ -99,8 +99,7 @@ export class BuildingPropertiesFactory
 
     public getDamageFloaters(buildingLayer: BuildingLayer): DamageFloaters{
 
-    var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
-;
+    var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.DAMAGE_FLOATERS))
@@ -132,8 +131,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
             
     public getHealthBar(buildingLayer: BuildingLayer): Paintable{
 
-    var healthBar: Paintable = NullPaintable.getInstance()!;
-;
+    var healthBar: Paintable = NullPaintable.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))

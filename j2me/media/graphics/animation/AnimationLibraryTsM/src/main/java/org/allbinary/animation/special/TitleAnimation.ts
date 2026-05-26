@@ -79,29 +79,30 @@ export class TitleAnimation extends SpecialAnimation {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public deltaX: number= 0.0
+    public deltaX: number= 0.0;
 
-    public deltaY: number= 0.0
+    public deltaY: number= 0.0;
 
-    public deltaZ: number= 0.0
+    public deltaZ: number= 0.0;
 
-    readonly basicColorArray: BasicColor[]
+    readonly basicColorArray: BasicColor[];
 
-    readonly dxArray: number[]
+    readonly dxArray: number[];
 
-    readonly dyArray: number[]
+    readonly dyArray: number[];
 
-    readonly widthP: number
+    readonly widthP: number;
 
-    readonly animationInterfaceArray: IndexedAnimation[]
+    readonly animationInterfaceArray: IndexedAnimation[];
 
-    readonly sizeP: number
+    readonly sizeP: number;
 
-    readonly y: number
+    readonly y: number;
 
-    private lastFrameStartTime: number
+    private lastFrameStartTime: number;
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
 public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -131,16 +132,13 @@ this.reset();
 
     public nextFrame(){
 
-    var currentTime: number = Date.now()!;
-;
+    var currentTime: number = Date.now()!;;
     
 
-    var totalTimeElapsed: number = currentTime -this.lastFrameStartTime;
-;
+    var totalTimeElapsed: number = currentTime -this.lastFrameStartTime;;
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;
-;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;;
     
 
                         if(totalTimeElapsed > indexedAnimationBehavior!.frameDelayTime)
@@ -167,8 +165,7 @@ this.lastFrameStartTime= currentTime;
 
     public isComplete(): boolean{
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;
-;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;;
     
 
                         if(indexedAnimationBehavior!.loopTotal ==  -1 || indexedAnimationBehavior!.loopIndex < indexedAnimationBehavior!.loopTotal || this.getFrame() != 0)
@@ -236,8 +233,7 @@ this.lastFrameStartTime= currentTime;
 
 
                         for (
-    var index: number = 0;
-index < this.sizeP; index++)
+    var index: number = 0;index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.setFrame(frame);
     
@@ -256,8 +252,7 @@ this.setFrame(this.getSize() -1);
 this.setLastFrame();
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);
-;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);;
     
 indexedAnimationBehavior!.reset();
     
@@ -270,8 +265,7 @@ indexedAnimationBehavior!.reset();
 
 
                         for (
-    var index: number = 0;
-index < this.sizeP; index++)
+    var index: number = 0;index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.previousFrame();
     
@@ -292,8 +286,7 @@ this.paintXY(graphics, x, y);
 
     public paintXY(graphics: Graphics, ax: number, ay: number){
 
-    var x: number = 0;
-;
+    var x: number = 0;;
     
 
                         if(this.widthP != Integer.MIN_VALUE)
@@ -305,20 +298,17 @@ this.paintXY(graphics, x, y);
                                     }
                                 
 
-    var deltaX: number= 0
-;
+    var deltaX: number= 0;;
     
 
-    var deltaY: number= 0
-;
+    var deltaY: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.sizeP; index++)
+    var index: number = 0;index < this.sizeP; index++)
         {
 deltaX= this.dxArray[index] +x;
     

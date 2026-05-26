@@ -50,6 +50,7 @@ import { Font } from './Font.js';
 
 export class PropertiesJPanel extends javax.swing.JPanel {
         
+
 public constructor (){
 
             super();
@@ -164,31 +165,31 @@ add(this.modifierJPanel);
 }
 
 
-    private rotateJButton: javax.swing.JButton
+    private rotateJButton: javax.swing.JButton;
 
-    private copyVerticalJButton: javax.swing.JButton
+    private copyVerticalJButton: javax.swing.JButton;
 
-    private leftJButton: javax.swing.JButton
+    private leftJButton: javax.swing.JButton;
 
-    private rotateJPanel: javax.swing.JPanel
+    private rotateJPanel: javax.swing.JPanel;
 
-    private angleJTextField: javax.swing.JTextField
+    private angleJTextField: javax.swing.JTextField;
 
-    private workAreaPropertiesJPanel: javax.swing.JPanel
+    private workAreaPropertiesJPanel: javax.swing.JPanel;
 
-    private modifierJPanel: javax.swing.JPanel
+    private modifierJPanel: javax.swing.JPanel;
 
-    private upJButton: javax.swing.JButton
+    private upJButton: javax.swing.JButton;
 
-    private jPanel8: javax.swing.JPanel
+    private jPanel8: javax.swing.JPanel;
 
-    private downJButton: javax.swing.JButton
+    private downJButton: javax.swing.JButton;
 
-    private jPanel7: javax.swing.JPanel
+    private jPanel7: javax.swing.JPanel;
 
-    private rightJButton: javax.swing.JButton
+    private rightJButton: javax.swing.JButton;
 
-    private copyHorizontalJButton: javax.swing.JButton
+    private copyHorizontalJButton: javax.swing.JButton;
 
 }
                 

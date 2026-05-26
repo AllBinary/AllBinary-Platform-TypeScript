@@ -58,6 +58,7 @@ import { TransformInfoData } from './TransformInfoData.js';
 
 export class TransformInfoDomNodeView extends TransformInfoDomNode implements DomNodeInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface, mapping: string){
             super(transformInfoInterface, mapping);
                     
@@ -65,6 +66,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, mapping: str
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
@@ -74,6 +76,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                     
 }
 
+
 public constructor (name: string, mappedName: string){
             super(name, mappedName);
                     
@@ -81,6 +84,7 @@ public constructor (name: string, mappedName: string){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (name: string){
             super(name, 
@@ -96,22 +100,18 @@ public constructor (name: string){
             
     public toXmlNode(document: Document): Node{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var subViewNode: Node = document.createElement(transformInfoData!.NAME)!;
-;
+    var subViewNode: Node = document.createElement(transformInfoData!.NAME)!;;
     
 
-    var viewNameAttr: Attr = document.createAttribute(transformInfoData!.NAME)!;
-;
+    var viewNameAttr: Attr = document.createAttribute(transformInfoData!.NAME)!;;
     
 viewNameAttr!.setValue(this.getTransformInfoInterface()!.getName());
     
 
-    var componentNodeAttributes: NamedNodeMap = subViewNode!.getAttributes()!;
-;
+    var componentNodeAttributes: NamedNodeMap = subViewNode!.getAttributes()!;;
     
 componentNodeAttributes!.setNamedItem(viewNameAttr);
     
@@ -122,8 +122,7 @@ componentNodeAttributes!.setNamedItem(viewNameAttr);
                         
                                     {
                                     
-    var mappedNameAttr: Attr = document.createAttribute(transformInfoData!.MAPPED)!;
-;
+    var mappedNameAttr: Attr = document.createAttribute(transformInfoData!.MAPPED)!;;
     
 mappedNameAttr!.setValue(this.getMappedName());
     

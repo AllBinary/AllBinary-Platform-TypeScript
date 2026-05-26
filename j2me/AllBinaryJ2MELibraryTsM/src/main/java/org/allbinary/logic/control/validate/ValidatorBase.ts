@@ -70,6 +70,7 @@ export class ValidatorBase
     
 }
 
+
 public constructor (){
 
             super();

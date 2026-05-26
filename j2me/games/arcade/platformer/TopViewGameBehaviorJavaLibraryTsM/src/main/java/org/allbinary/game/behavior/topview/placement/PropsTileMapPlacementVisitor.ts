@@ -61,42 +61,35 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
 
     public visit(lastMap: TiledMap, mapData: number[][]){
 
-    var layerIndex: number = 0;
-;
+    var layerIndex: number = 0;;
     
 
-    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex) as TileLayer);
-;
+    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex) as TileLayer);;
     
 
-    var mapArray: number[][] = tileLayer!.getMapArray()!;
-;
+    var mapArray: number[][] = tileLayer!.getMapArray()!;;
     
 
     var size: number = mapData!.length
-                ;
-;
+                ;;
     
 
     var size2: number = mapData[0]!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < size2; index2++)
+    var index2: number = 0;index2 < size2; index2++)
         {
 
                         if(mapArray[index]![index2] == 14)
@@ -120,8 +113,7 @@ index2 < size2; index2++)
                         
                                     {
                                     
-    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;
-;
+    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
     
 
                         if(randomInt == 0)
@@ -158,8 +150,7 @@ index2 < size2; index2++)
                         
                                     {
                                     
-    var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(3)!;
-;
+    var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(3)!;;
     
 
                         if(randomInt == 0)
@@ -203,8 +194,7 @@ index2 < size2; index2++)
                         
                                     {
                                     
-    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(4)!;
-;
+    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(4)!;;
     
 
                         if(randomInt == 0)
@@ -257,28 +247,23 @@ index2 < size2; index2++)
 
     public visit2(mapArray: number[][], mapData: number[][], index: number, index2: number){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var countX: number = 0;
-;
+    var countX: number = 0;;
     
 
-    var countY: number = 0;
-;
+    var countY: number = 0;;
     
 
-    var index3: number = index -1;
-;
+    var index3: number = index -1;;
     
 
 
 
 
                         for (
-    var index4: number = index2 -1;
-index4 > 0; index4--)
+    var index4: number = index2 -1;index4 > 0; index4--)
         {
 index3--;
     
@@ -308,16 +293,14 @@ index3--;
 
 
                         for (
-    var index5: number = index3 +1;
-index5 < index -1; index5++)
+    var index5: number = index3 +1;index5 < index -1; index5++)
         {
 
 
 
 
                         for (
-    var index6: number = index4 +1;
-index6 < index2 -1; index6++)
+    var index6: number = index4 +1;index6 < index2 -1; index6++)
         {
 
                         if(mapArray[index5]![index6] != 14 || mapData[index5]![index6] != 0)
@@ -337,12 +320,10 @@ index6 < index2 -1; index6++)
 }
 
 
-    var x: number = index -(countX /2);
-;
+    var x: number = index -(countX /2);;
     
 
-    var y: number = index2 -(countY /2);
-;
+    var y: number = index2 -(countY /2);;
     
 
                         if(x >= 0 && y >= 0 && x < mapData!.length && y < mapData[0]!.length)

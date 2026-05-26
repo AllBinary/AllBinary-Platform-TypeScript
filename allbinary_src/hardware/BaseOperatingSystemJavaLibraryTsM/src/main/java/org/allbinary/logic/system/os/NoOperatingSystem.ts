@@ -46,6 +46,7 @@ export class NoOperatingSystem extends GenericOperatingSystem {
         
 
     public static readonly NO_OPERATING_SYSTEM: GenericOperatingSystem = new GenericOperatingSystem();
+
 public constructor (){
 
             super();

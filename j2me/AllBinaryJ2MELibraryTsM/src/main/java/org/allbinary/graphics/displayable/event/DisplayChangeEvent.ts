@@ -45,6 +45,7 @@ import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/ev
         
 export class DisplayChangeEvent extends AllBinaryEventObject {
         
+
 public constructor (anyType: any = {}){
             super(anyType);
                     

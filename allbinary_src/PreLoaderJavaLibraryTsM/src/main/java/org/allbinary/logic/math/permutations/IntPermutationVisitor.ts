@@ -38,7 +38,8 @@ import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 export class IntPermutationVisitor extends Visitor {
         
 
-    readonly data: number[]
+    readonly data: number[];
+
 public constructor (data: number[]){
 
             super();
@@ -65,8 +66,7 @@ this.print(this.data, stringBuilder);
 
     public print(data: number[]){
 
-    var stringBuilder: StringMaker = new StringMaker();
-;
+    var stringBuilder: StringMaker = new StringMaker();;
     
 this.print(data, stringBuilder);
     
@@ -75,21 +75,18 @@ this.print(data, stringBuilder);
 
     public print(data: number[], stringBuilder: StringMaker){
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
     var size: number = data.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 stringBuilder!.appendint(data[i]!);
     

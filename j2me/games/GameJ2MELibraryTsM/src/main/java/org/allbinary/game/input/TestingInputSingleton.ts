@@ -86,6 +86,7 @@ export class TestingInputSingleton extends AllBinaryGameLayer implements GameInp
 
 
     readonly inputProcessorArray: GameInputProcessor[] = new Array(InputFactory.getInstance()!.MAX);
+
 private constructor (){
             super(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.getInstanceD());
                     
@@ -105,8 +106,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 
     public initInputProcessorsForTestInput(aTestInputInterface: TestInputInterface){
 
-    var testInputInterface: TestInputInterface = aTestInputInterface;
-;
+    var testInputInterface: TestInputInterface = aTestInputInterface;;
     
 this.paintable= testInputInterface;
     
@@ -198,24 +198,20 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 
     public processInputList(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
 
-    var key: number = 0;
-;
+    var key: number = 0;;
     
 
-    var gameKeyEvent: GameKeyEvent
-;
+    var gameKeyEvent: GameKeyEvent;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameKeyEvent= (list.objectArray[index]! as GameKeyEvent);
     

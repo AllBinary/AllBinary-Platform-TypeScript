@@ -59,29 +59,24 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
             
     public static getInstance(): DefaultComboBoxModel{
 
-    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
-;
+    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
     
 
-    var set: Set = InputRobotFactory.getInstance()!.get()!.keySet()!;
-;
+    var set: Set = InputRobotFactory.getInstance()!.get()!.keySet()!;;
     
 
-    var nameArray: any[] = set.toArray()!;
-;
+    var nameArray: any[] = set.toArray()!;;
     
 
     var size: number = nameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 defaultComboBoxModel!.addElement(nameArray[index]! as string);
     
@@ -94,6 +89,7 @@ defaultComboBoxModel!.addElement(nameArray[index]! as string);
                         return defaultComboBoxModel;
     
 }
+
 
 private constructor (){
 

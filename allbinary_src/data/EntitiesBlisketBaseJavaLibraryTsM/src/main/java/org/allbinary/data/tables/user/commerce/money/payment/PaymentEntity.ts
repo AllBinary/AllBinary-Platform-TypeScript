@@ -86,6 +86,7 @@ export class PaymentEntity extends AbSqlBean implements PaymentEntityInterface {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly tableName: string = "payment";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -111,18 +112,15 @@ this.setTableName(this.tableName);
 
         try {
             
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 whereKeyAndValue!.put(UserData.USERNAME, userName);
     
 
-    var paymentInterface: PaymentInterface = this.getDefault(userName)!;
-;
+    var paymentInterface: PaymentInterface = this.getDefault(userName)!;;
     
 
                         if(paymentInterface != 
@@ -176,38 +174,31 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
         try {
             
-    var paymentVector: Vector = new Vector();
-;
+    var paymentVector: Vector = new Vector();;
     
 
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 keyAndValue!.put(UserData.USERNAME, userName);
     
 
-    var paymentList: Vector = super.getRows(keyAndValue)!;
-;
+    var paymentList: Vector = super.getRows(keyAndValue)!;;
     
 
-    var size: number = paymentList!.length!;
-;
+    var size: number = paymentList!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var paymentHashMap: HashMap<any, any> = paymentList!.get(index) as HashMap<any, any>;
-;
+    var paymentHashMap: HashMap<any, any> = paymentList!.get(index) as HashMap<any, any>;;
     
 
-    var payment: Payment = new Payment(paymentHashMap);
-;
+    var payment: Payment = new Payment(paymentHashMap);;
     
 
                         if(payment != 
@@ -256,12 +247,10 @@ index < size; index++)
 
         try {
             
-    var paymentHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var paymentHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT);
     
@@ -276,8 +265,7 @@ paymentHashMap= super.getRow(updateKeyAndValue);
                         
                                     {
                                     
-    var payment: Payment = new Payment(paymentHashMap);
-;
+    var payment: Payment = new Payment(paymentHashMap);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -335,8 +323,7 @@ paymentHashMap= super.getRow(updateKeyAndValue);
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
@@ -375,8 +362,7 @@ super.deleteWhere(whereHashMap);
 
         try {
             
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.add(new PaymentIdGenerator().getNext());
     
@@ -391,20 +377,17 @@ vector.add(paymentInterface!.getType());
 vector.add(paymentInterface!.getExpiration());
     
 
-    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;
-;
+    var random: number = new Random().nextInt(SuperCrypt.KEYMAX)!;;
     
 vector.add(new SuperCrypt(random).encrypt(paymentInterface!.getNumber()));
     
 vector.add(new Integer(random).toString());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(time);
     
@@ -439,12 +422,10 @@ super.insert(vector);
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;
-;
+    var entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(PaymentData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.TYPE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.EXPIRATION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(PaymentData.NUMBER)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(PaymentData.ID)!.append(this.sqlStrings!.END);
     

@@ -70,6 +70,7 @@ export class AbSqlColumn extends AbSqlTable {
     private readonly METHOD_GET_COLUMN_WHERE: string = "getColumnWhere";
 
     private readonly INVALID_RESULT: string = "-1";
+
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
                     
@@ -81,8 +82,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
     public getLargestIntegerInColumnWhere(columnName: string, key: string, value: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -103,25 +103,21 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
         try {
             
-    var largest: number = 0;
-;
+    var largest: number = 0;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
         {
 
-    var intValue: number = rset.getInt(columnName)!;
-;
+    var intValue: number = rset.getInt(columnName)!;;
     
 
                         if(intValue > largest)
@@ -135,8 +131,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var largestAsString: string = new Integer(largest).toString()!;
-;
+    var largestAsString: string = new Integer(largest).toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -189,12 +184,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_LARGETS_INTEG
 
     public getColumn(columnName: string): Vector{
 
-    var column: Vector = new Vector();
-;
+    var column: Vector = new Vector();;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -205,21 +198,18 @@ stringBuffer!.append(this.sqlStrings!.FROM);
 stringBuffer!.append(this.getTableName());
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
         try {
             
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
         {
 
-    var field: string = rset.getObject(columnName)!.toString()!;
-;
+    var field: string = rset.getObject(columnName)!.toString()!;;
     
 column.add(field);
     
@@ -276,8 +266,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN);
 
     public getColumnWhere(columnName: string, key: string, value: string): Vector{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -298,20 +287,16 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var column: Vector = new Vector();
-;
+    var column: Vector = new Vector();;
     
 
-    var rset: ResultSet
-;
+    var rset: ResultSet;;
     
 
-    var field: string
-;
+    var field: string;;
     
 
         try {

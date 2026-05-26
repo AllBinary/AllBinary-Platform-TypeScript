@@ -68,6 +68,7 @@ export class StoreFrontsEntity extends AbSqlBean implements StoreFrontsEntityInt
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "storefronts";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -147,14 +148,12 @@ this.setTableName(this.tableName);
             
     public getStoreFrontInterface(name: string): StoreFront{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
     
 
-    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(storeHashMap != 
@@ -186,8 +185,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
     public getStoreFrontNames(): Vector{
 
-    var storeFrontNames: Vector = super.getColumn(StoreFrontData.getInstance()!.NAME)!;
-;
+    var storeFrontNames: Vector = super.getColumn(StoreFrontData.getInstance()!.NAME)!;;
     
 
 
@@ -206,12 +204,10 @@ super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFr
 
     public createTableStatement(): string{
 
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-;
+    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     

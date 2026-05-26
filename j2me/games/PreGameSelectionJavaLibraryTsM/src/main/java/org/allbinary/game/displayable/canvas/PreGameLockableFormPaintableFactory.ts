@@ -55,7 +55,8 @@ import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphic
 export class PreGameLockableFormPaintableFactory extends ItemPaintableFactory {
         
 
-    private readonly lockedIndex: number
+    private readonly lockedIndex: number;
+
 public constructor (lockedIndex: number){
 
             super();

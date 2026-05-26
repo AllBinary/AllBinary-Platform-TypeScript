@@ -67,17 +67,18 @@ export class CustomTextAnimationFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly animationBehaviorFactory: AnimationBehaviorFactory
+    private readonly animationBehaviorFactory: AnimationBehaviorFactory;
 
     public basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
-    private text: string
+    private text: string;
 
-    private initScaleHeight: number
+    private initScaleHeight: number;
 
-    font: Font
+    font: Font;
 
-    public scaleProperties: ScaleProperties
+    public scaleProperties: ScaleProperties;
+
 public constructor (text: string, fontSize: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -100,8 +101,7 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
             
     public getInstance(instanceId: number): Animation{
 
-    var customTextAnimation: CustomTextAnimation
-;
+    var customTextAnimation: CustomTextAnimation;;
     
 customTextAnimation= new CustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
     

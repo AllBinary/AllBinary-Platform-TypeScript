@@ -67,6 +67,7 @@ export class InputAutomationModuleOSGIServiceVisitor
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (){
 
             super();
@@ -87,20 +88,17 @@ public constructor (){
 
         try {
             
-    var inputAutomationModuleService: InputAutomationModuleService = osgiServiceInterface as InputAutomationModuleService;
-;
+    var inputAutomationModuleService: InputAutomationModuleService = osgiServiceInterface as InputAutomationModuleService;;
     
 
-    var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = inputAutomationModuleService!.getInputAutomationModuleInterfaceArray()!;
-;
+    var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = inputAutomationModuleService!.getInputAutomationModuleInterfaceArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < inputAutomationModuleInterfaceArray!.length; index++)
+    var index: number = 0;index < inputAutomationModuleInterfaceArray!.length; index++)
         {
 InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInterfaceArray[index]!));
     

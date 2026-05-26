@@ -53,9 +53,10 @@ export class ColorCacheable
          implements CacheableInterface {
         
 
-    private key: any
+    private key: any;
 
-    private color: Color
+    private color: Color;
+
 public constructor (key: any = {}){
 
             super();

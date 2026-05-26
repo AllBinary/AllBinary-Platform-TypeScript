@@ -67,9 +67,10 @@ export class StoreWorkFlowTag extends HelperTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private viewName: string
+    private viewName: string;
 
-    private viewFile: string
+    private viewFile: string;
+
 public constructor (){
             super(new StoreTagWorkFlowHelperFactory());
                     
@@ -111,18 +112,15 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
                                     }
                                 
 
-    var helperClass: Function = this.getHelper()!.constructor!;
-;
+    var helperClass: Function = this.getHelper()!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Integer = method.invoke(this.getHelper(), 
-                            null) as Integer;
-;
+                            null) as Integer;;
     
 
 

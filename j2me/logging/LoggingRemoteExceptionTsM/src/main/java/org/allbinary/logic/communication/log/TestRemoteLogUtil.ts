@@ -62,18 +62,17 @@ new TestRemoteLogUtil();
     
 }
 
+
 public constructor (){
 
             super();
         Globals.getInstance()!.init(this.constructor.namegetClassLoader(), TestRemoteLogUtil.PATH);
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Exception("Pretend Exception"));
     

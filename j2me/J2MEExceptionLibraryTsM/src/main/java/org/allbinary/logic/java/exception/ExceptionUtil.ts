@@ -63,6 +63,7 @@ import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStr
     
 }
 
+
 private constructor (){
 
             super();
@@ -75,14 +76,12 @@ private constructor (){
 
     /*actual*/ public getStackTrace(e: Throwable): string{
 
-    var bs: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var bs: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 e.printStackTrace();
     
 
-    var output: string = bs.toString()!;
-;
+    var output: string = bs.toString()!;;
     
 
                         if(output != 

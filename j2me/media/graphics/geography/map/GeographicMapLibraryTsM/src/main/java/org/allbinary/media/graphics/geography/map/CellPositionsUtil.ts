@@ -75,16 +75,13 @@ export class CellPositionsUtil
 reusableList!.clear();
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var lastColumn: number = topRightGeographicMapCellPosition!.getColumn() +columns;
-;
+    var lastColumn: number = topRightGeographicMapCellPosition!.getColumn() +columns;;
     
 
-    var lastRow: number = topRightGeographicMapCellPosition!.getRow() +rows;
-;
+    var lastRow: number = topRightGeographicMapCellPosition!.getRow() +rows;;
     
 
                         if((columns > 1 && lastColumn > geographicMapInterface!.getAllBinaryTiledLayer()!.getColumns()) || (rows > 1 && lastRow > geographicMapInterface!.getAllBinaryTiledLayer()!.getRows()))
@@ -104,20 +101,17 @@ reusableList!.clear();
 
 
                         for (
-    var rowIndex: number = 0;
-rowIndex < rows; rowIndex++)
+    var rowIndex: number = 0;rowIndex < rows; rowIndex++)
         {
 
 
 
 
                         for (
-    var columnIndex: number = 0;
-columnIndex < columns; columnIndex++)
+    var columnIndex: number = 0;columnIndex < columns; columnIndex++)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(topRightGeographicMapCellPosition!.getColumn() +columnIndex, topRightGeographicMapCellPosition!.getRow() +rowIndex)!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(topRightGeographicMapCellPosition!.getColumn() +columnIndex, topRightGeographicMapCellPosition!.getRow() +rowIndex)!;;
     
 reusableList!.add(geographicMapCellPosition);
     
@@ -146,28 +140,23 @@ reusableList!.clear();
 
 
                         for (
-    var index: number = occupyList!.size() -1;
-index >= 0; index--)
+    var index: number = occupyList!.size() -1;index >= 0; index--)
         {
 
-    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index) as GeographicMapCellPosition;
-;
+    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index) as GeographicMapCellPosition;;
     
 
-    var surroundingGeographicMapCellPositionList: BasicArrayList = this.getAllSurroundingAt(geographicMapInterface, layerGeographicMapCellPosition, this.reusableSingleThreadedSurroundingList)!;
-;
+    var surroundingGeographicMapCellPositionList: BasicArrayList = this.getAllSurroundingAt(geographicMapInterface, layerGeographicMapCellPosition, this.reusableSingleThreadedSurroundingList)!;;
     
 
 
 
 
                         for (
-    var index2: number = surroundingGeographicMapCellPositionList!.size() -1;
-index2 >= 0; index2--)
+    var index2: number = surroundingGeographicMapCellPositionList!.size() -1;index2 >= 0; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2) as GeographicMapCellPosition;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2) as GeographicMapCellPosition;;
     
 
                         if(!reusableList!.contains(geographicMapCellPosition) && !occupyList!.contains(geographicMapCellPosition))
@@ -210,28 +199,23 @@ index2 >= 0; index2--)
 reusableSurroundingList!.clear();
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var row: number= 0
-;
+    var row: number= 0;;
     
 
-    var column: number= 0
-;
+    var column: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < 8; index++)
+    var index: number = 0;index < 8; index++)
         {
 column= layerGeographicMapCellPosition!.getColumn() +surroundArray[index]![0];
     
@@ -242,8 +226,7 @@ row= layerGeographicMapCellPosition!.getRow() +surroundArray[index]![1];
                         
                                     {
                                     
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;;
     
 reusableSurroundingList!.add(geographicMapCellPosition);
     

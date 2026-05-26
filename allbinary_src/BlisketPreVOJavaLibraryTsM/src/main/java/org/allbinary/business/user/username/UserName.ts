@@ -99,11 +99,13 @@ export class UserName
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private userName: string
+    private userName: string;
+
 private constructor (){
 
             super();
         }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -158,18 +160,15 @@ public constructor (hashMap: HashMap<any, any>){
 
     public isValid(aUserName: string): Boolean{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-;
+    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
-    var valid: Boolean = booleanFactory!.TRUE;
-;
+    var valid: Boolean = booleanFactory!.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VALIDATION))

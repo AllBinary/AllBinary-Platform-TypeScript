@@ -57,6 +57,7 @@ export class QuoteHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.QuoteHelper";
 
     private static readonly FACTORYNAME: string = "QuoteHelperFactory";
+
 public constructor (){
 
             super();

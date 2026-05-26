@@ -54,6 +54,7 @@ export class SubscriberUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

@@ -67,6 +67,7 @@ export class PrimitiveIntUtil
     
 }
 
+
 private constructor (){
 
             super();

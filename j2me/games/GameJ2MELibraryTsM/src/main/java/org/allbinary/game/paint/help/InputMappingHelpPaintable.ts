@@ -97,7 +97,7 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     stringUtil: StringUtil = StringUtil.getInstance()!;
 
-    private gameInputMappingArray: GameInputMapping[]
+    private gameInputMappingArray: GameInputMapping[];
 
     private keyMappingArray: BasicArrayList[] = [];
 
@@ -106,11 +106,12 @@ export class InputMappingHelpPaintable extends HelpPaintable {
     private inputBasicColorArray: BasicColor[][] = new Array(0) [0]
                                                             ;
 
-    private selectedBasicColor: BasicColor
+    private selectedBasicColor: BasicColor;
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
 
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
+
 protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasicColor: BasicColor, basicColor: BasicColor){
             super("Input Mapping", backgroundBasicColor, basicColor);
                     
@@ -141,56 +142,45 @@ this.update(this.NONE, this.NONE);
 
     public update(selectedGameKey: GameKey, selectedInput: Input){
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, this.commonStrings!.UPDATE);
     
 
-    var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
-;
+    var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;;
     
 
     var size: number = this.gameInputMappingArray!.length
-                ;
-;
+                ;;
     
 
-    var keyInfo: string[] = new Array(size);
-;
+    var keyInfo: string[] = new Array(size);;
     
 
-    var keyMappingArray: BasicArrayList[] = new Array(size);
-;
+    var keyMappingArray: BasicArrayList[] = new Array(size);;
     
 
-    var actionBasicColor: BasicColor[] = new Array(size);
-;
+    var actionBasicColor: BasicColor[] = new Array(size);;
     
 
     var inputBasicColorArray: BasicColor[][] = new Array(size)
-                                                            ;
-;
+                                                            ;;
     
 
-    var gameInputMapping: GameInputMapping
-;
+    var gameInputMapping: GameInputMapping;;
     
 
-    var gameKey: GameKey
-;
+    var gameKey: GameKey;;
     
 
-    var list: BasicArrayList
-;
+    var list: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameInputMapping= this.gameInputMappingArray[index]!;
     
@@ -199,8 +189,7 @@ gameKey= gameInputMapping!.getGameKey();
 list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey);
     
 
-    var size2: number = list.size()!;
-;
+    var size2: number = list.size()!;;
     
 inputBasicColorArray[index]= new Array(size2);
     
@@ -209,8 +198,7 @@ inputBasicColorArray[index]= new Array(size2);
 
 
                         for (
-    var index2: number = 0;
-index2 < size2; index2++)
+    var index2: number = 0;index2 < size2; index2++)
         {
 inputBasicColorArray[index]![index2]= this.basicColor;
     
@@ -227,8 +215,7 @@ this.logUtil!.putF(stringMaker!.append("Found: selected GameKey: ")!.append(this
 actionBasicColor[index]= this.selectedBasicColor;
     
 
-    var indexOfSelectedInput: number = list.indexOf(selectedInput)!;
-;
+    var indexOfSelectedInput: number = list.indexOf(selectedInput)!;;
     
 
                         if(indexOfSelectedInput >= 0)
@@ -271,24 +258,20 @@ super.setInputInfoP(keyInfo);
 
     get(keyList: BasicArrayList): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var key: Input
-;
+    var key: Input;;
     
 
-    var size: number = keyList!.size()!;
-;
+    var size: number = keyList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 key= keyList!.objectArray[index]! as Input;
     
@@ -342,16 +325,13 @@ stringBuffer!.append(key.getName());
 
     public getHeight(): number{
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var inputInfo: string[] = this.inputInfo;
-;
+    var inputInfo: string[] = this.inputInfo;;
     
 
-    var size: number = (inputInfo!.length +4);
-;
+    var size: number = (inputInfo!.length +4);;
     
 
 
@@ -366,89 +346,70 @@ stringBuffer!.append(key.getName());
 
     public paint(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;
-;
+    var font: Font = graphics.getFont()!;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
     
 
-    var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
-;
+    var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;;
     
 
-    var beginWidth: number = (font.stringWidth(this.title)>>1);
-;
+    var beginWidth: number = (font.stringWidth(this.title)>>1);;
     
 graphics.setColor(this.basicColor!.intValue());
     
 graphics.drawString(this.title, halfWidth -beginWidth, charHeight, this.anchor);
     
 
-    var inputInfo: string[] = this.inputInfo;
-;
+    var inputInfo: string[] = this.inputInfo;;
     
 
     var size: number = inputInfo!.length
-                ;
-;
+                ;;
     
 
-    var y: number = 0;
-;
+    var y: number = 0;;
     
 
-    var deltaX: number = 0;
-;
+    var deltaX: number = 0;;
     
 
-    var size2: number = 0;
-;
+    var size2: number = 0;;
     
 
-    var input: Input
-;
+    var input: Input;;
     
 
-    var actionString: string
-;
+    var actionString: string;;
     
 
-    var list: BasicArrayList
-;
+    var list: BasicArrayList;;
     
 
-    var keyMappings: string
-;
+    var keyMappings: string;;
     
 
-    var sep: string
-;
+    var sep: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 y= (index +3) *charHeight;
     
@@ -479,8 +440,7 @@ deltaX += font.stringWidth(actionString);
 
 
                         for (
-    var index2: number = 0;
-index2 < size2; index2++)
+    var index2: number = 0;index2 < size2; index2++)
         {
 input= list.objectArray[index2]! as Input;
     

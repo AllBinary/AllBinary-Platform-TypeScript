@@ -65,6 +65,7 @@ export class HitPointGameObject extends MeteredGameObject implements HitPointGam
     private readonly IS_DAMAGED_LABEL: string = "isDamaged: ";
 
     private readonly IS_CLOSE_DEATH_LABEL: string = "isCloseDeath: ";
+
 public constructor (bufferedImage: BufferedImage[], minX: Integer, maxX: Integer, y: Integer){
             super(bufferedImage, minX, maxX, y);
                     
@@ -165,12 +166,10 @@ this.damaged= damaged;
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.HP_LABEL);
     

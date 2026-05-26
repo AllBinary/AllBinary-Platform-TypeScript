@@ -56,13 +56,14 @@ import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArray
 export class TextFieldItemValidator extends ValidatorBase {
         
 
-    private readonly textFieldItem: ABTextFieldItem
+    private readonly textFieldItem: ABTextFieldItem;
 
-    private min: number
+    private min: number;
 
-    private max: number
+    private max: number;
 
-    private allowOnEmpty: boolean
+    private allowOnEmpty: boolean;
+
 public constructor (textFieldItem: ABTextFieldItem, min: number, max: number, allowOnEmpty: boolean){
 
             super();
@@ -79,20 +80,16 @@ this.allowOnEmpty= allowOnEmpty;
 
     public isValid(): Boolean{
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-;
+    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
-    var result: Boolean = booleanFactory!.TRUE;
-;
+    var result: Boolean = booleanFactory!.TRUE;;
     
 
-    var string: string = this.textFieldItem!.getString()!;
-;
+    var string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;
-;
+    var textLength: number = string.length!;;
     
 
                         if((textLength == 0 && this.allowOnEmpty) || textLength > this.min && textLength < this.max)
@@ -134,16 +131,13 @@ this.allowOnEmpty= allowOnEmpty;
 
     public toList(): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var string: string = this.textFieldItem!.getString()!;
-;
+    var string: string = this.textFieldItem!.getString()!;;
     
 
-    var textLength: number = string.length!;
-;
+    var textLength: number = string.length!;;
     
 
                         if(textLength > this.min && textLength < this.max)
@@ -154,12 +148,10 @@ this.allowOnEmpty= allowOnEmpty;
                                 
                         else {
                             
-    var label: string = this.textFieldItem!.getLabel()!;
-;
+    var label: string = this.textFieldItem!.getLabel()!;;
     
 
-    var name: string = label.substring(0, label.length -2)!;
-;
+    var name: string = label.substring(0, label.length -2)!;;
     
 
                         if(textLength < this.min)

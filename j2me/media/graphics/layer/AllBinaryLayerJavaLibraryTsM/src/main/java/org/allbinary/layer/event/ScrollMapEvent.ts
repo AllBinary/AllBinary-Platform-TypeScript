@@ -46,9 +46,10 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
 export class ScrollMapEvent extends AllBinaryEventObject {
         
 
-    private dx: number= 0
+    private dx: number= 0;
 
-    private dy: number= 0
+    private dy: number= 0;
+
 public constructor (anyType: any = {}){
             super(anyType);
                     

@@ -60,11 +60,12 @@ export class TouchScreenFactory
 }
 
 
-    private multiTouch: boolean= false
+    private multiTouch: boolean= false;
 
-    private touch: boolean= false
+    private touch: boolean= false;
 
     private touchScreenType: TouchScreenType = TouchScreenTypesFactory.getInstance()!.NOTOUCH;
+
 private constructor (){
 
             super();

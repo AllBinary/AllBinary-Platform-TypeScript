@@ -63,8 +63,7 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
     /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
                         if(anyType!.constructor.name.toString()! != 
@@ -78,8 +77,7 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(LOG_SUCCESS + message);
     
@@ -88,12 +86,12 @@ console.log(LOG_SUCCESS + message);
 
     /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(LOG_SUCCESS + message);
     
 }
+
 
 public constructor (){
 

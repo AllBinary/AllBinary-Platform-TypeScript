@@ -48,9 +48,10 @@ export class VelocityProperties extends BasicVelocityProperties implements Veloc
 
     public static readonly NULL_VELOCITY_PROPERTIES: VelocityProperties = new VelocityProperties(0, 0);
 
-    private maxForwardVelocity: number= 0
+    private maxForwardVelocity: number= 0;
 
-    private maxReverseVelocity: number= 0
+    private maxReverseVelocity: number= 0;
+
 public constructor (maxForwardVelocity: number, maxReverseVelocity: number){
 
             super();

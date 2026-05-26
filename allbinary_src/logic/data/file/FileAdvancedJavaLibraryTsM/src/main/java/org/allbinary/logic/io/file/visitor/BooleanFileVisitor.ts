@@ -58,7 +58,8 @@ export class BooleanFileVisitor
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private filterStringBasicArrayList: BasicArrayList
+    private filterStringBasicArrayList: BasicArrayList;
+
 public constructor (filterStringBasicArrayList: BasicArrayList){
 
             super();
@@ -81,24 +82,20 @@ PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.
 
     public visit(file: AbFile): Boolean{
 
-    var list: BasicArrayList = this.getFilterStringBasicArrayList()!;
-;
+    var list: BasicArrayList = this.getFilterStringBasicArrayList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var nextFileFilterString: string
-;
+    var nextFileFilterString: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 nextFileFilterString= list.get(index) as string;
     

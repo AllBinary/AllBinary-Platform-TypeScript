@@ -116,7 +116,7 @@ export class OpenGLCapabilities
 
     private glExtensions: string = this.stringUtil!.EMPTY_STRING;
 
-    private possiblyAccelerated: boolean= false
+    private possiblyAccelerated: boolean= false;
 
     private acceleratedString: string = this.stringUtil!.EMPTY_STRING;
 
@@ -146,15 +146,16 @@ export class OpenGLCapabilities
 
     public glInstanceVersion: string = this.VERSION_UNK;
 
-    private glExtensionDrawTexture: boolean= false
+    private glExtensionDrawTexture: boolean= false;
 
-    private glThreedDrawTexture: boolean= false
+    private glThreedDrawTexture: boolean= false;
 
-    private glExtensionGPUShader4: boolean= false
+    private glExtensionGPUShader4: boolean= false;
 
-    private glExtensionGPUShader100: boolean= false
+    private glExtensionGPUShader100: boolean= false;
 
-    private vertexBufferObjectSupport: boolean= false
+    private vertexBufferObjectSupport: boolean= false;
+
 private constructor (){
 
             super();
@@ -177,32 +178,26 @@ private constructor (){
 
     public initCapabilities(gl: GL10){
 
-    var METHOD_NAME: string = "initGLCapabilities";
-;
+    var METHOD_NAME: string = "initGLCapabilities";;
     
 
         try {
             
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-;
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
-    var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;
-;
+    var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 this.glVersionString= gl.glGetString(GL10.GL_VERSION);
     
 
-    var GL_SHADING_LANGUAGE_VERSION: number = 0x8b8c;
-;
+    var GL_SHADING_LANGUAGE_VERSION: number = 0x8b8c;;
     
 this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION);
     
@@ -226,8 +221,7 @@ this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION);
                         
                                     {
                                     
-    var startIndex: number = this.glShaderVersionString!.lastIndexOf(' ')!;
-;
+    var startIndex: number = this.glShaderVersionString!.lastIndexOf(' ')!;;
     
 
                         if(startIndex >= 0)
@@ -248,8 +242,7 @@ this.shaderVersion= Integer.parseInt(this.glShaderVersionString!.replace(CommonS
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
@@ -435,8 +428,7 @@ this.glVersion= this.VERSION_UNK;
                                     }
                                 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AUTO_SELECT))
@@ -481,8 +473,7 @@ openGLImageSpecificFactory!.setImageFactory(new OpenGLESGL10ImageFactory());
                         }
                             
 
-    var maxTextureSizeArray: number[] = new Array(1);
-;
+    var maxTextureSizeArray: number[] = new Array(1);;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSizeArray, 0);
     
@@ -495,8 +486,7 @@ this.initialized= true;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
@@ -507,8 +497,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 
     isExtension(gameFeature: OpenGLFeature): boolean{
 
-    var index: number = this.glExtensions!.indexOf(gameFeature!.getName())!;
-;
+    var index: number = this.glExtensions!.indexOf(gameFeature!.getName())!;;
     
 
                         if(index >= 0)
@@ -669,12 +658,10 @@ this.requireInitialization();
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("GL_VERSION: ");
     
@@ -717,24 +704,20 @@ stringBuffer!.append(" GL_EXTENSIONS: ");
 
         try {
             
-    var tokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);
-;
+    var tokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);;
     
 
-    var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, new BasicArrayListD())!;
-;
+    var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, new BasicArrayListD())!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
@@ -747,8 +730,7 @@ stringBuffer!.append(this.stringUtil!.toString(list.objectArray[index]!));
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     

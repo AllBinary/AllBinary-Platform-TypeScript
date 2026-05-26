@@ -200,6 +200,7 @@ export class LogConfigTypeFactory
     public readonly STATICPAGEGENERATIONLOGGING: LogConfigType = new LogConfigType("Static Page Generation Logging", this.NO_DESCRIPTION);
 
     public readonly STATICPAGEGENERATIONLOGGINGERROR: LogConfigType = new LogConfigType("Static Page Generation Logging Error", this.NO_DESCRIPTION);
+
 private constructor (){
 
             super();

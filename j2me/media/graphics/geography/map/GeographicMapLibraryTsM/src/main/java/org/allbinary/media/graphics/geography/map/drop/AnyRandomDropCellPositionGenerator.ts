@@ -77,40 +77,32 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
 this.geographicMapInterface= geographicMapInterface;
     
 
-    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-;
+    var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var total: number = tiledLayer!.getColumns() *tiledLayer!.getRows();
-;
+    var total: number = tiledLayer!.getColumns() *tiledLayer!.getRows();;
     
 
-    var randomColumn: number= 0
-;
+    var randomColumn: number= 0;;
     
 
-    var randomRow: number= 0
-;
+    var randomRow: number= 0;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition
-;
+    var geographicMapCellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var index: number = total;
---index >= 0; )
+    var index: number = total;--index >= 0; )
         {
 randomColumn= randomFactory!.getAbsoluteNextInt(tiledLayer!.getColumns());
     

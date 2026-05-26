@@ -50,7 +50,8 @@ export class AllBinaryEventObject
 
     public static readonly NULL_EVENT: AllBinaryEventObject = new AllBinaryEventObject(NullUtil.getInstance()!.NULL_OBJECT);
 
-    private source: any
+    private source: any;
+
 public constructor (anyType: any = {}){
 
             super();

@@ -86,17 +86,18 @@ export class InventoryHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private response: HttpServletResponse
+    private response: HttpServletResponse;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private streetAddress: StreetAddress
+    private streetAddress: StreetAddress;
 
-    private id: string
+    private id: string;
 
-    private searchRequest: SearchRequest
+    private searchRequest: SearchRequest;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -105,12 +106,10 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
-    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as string;
-;
+    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as string;;
     
 
                         if(storeName != 
@@ -119,16 +118,13 @@ this.request= pageContext!.getRequest() as HttpServletRequest;
                         
                                     {
                                     
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;;
     
 
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;
-;
+    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;;
     
 
-    var searchParams: SearchParams = new SearchParams(this.request);
-;
+    var searchParams: SearchParams = new SearchParams(this.request);;
     
 this.searchRequest= new SearchRequest(storeFrontInterface, searchParams, xslFile, contentType, propertiesHashMap, pageContext);
     
@@ -150,12 +146,10 @@ this.id= this.request.getParameter(BasicItemData.ID);
 
         try {
             
-    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;
-;
+    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;;
     
 
-    var result: string = inventoryViewSearchInterface!.getProduct(this.id)!;
-;
+    var result: string = inventoryViewSearchInterface!.getProduct(this.id)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -177,8 +171,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 } catch(e) 
             {
 
-    var error: string = "Failed to View Summary";
-;
+    var error: string = "Failed to View Summary";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -204,12 +197,10 @@ this.id= this.request.getParameter(BasicItemData.ID);
 
         try {
             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS) as string;
-;
+    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS) as string;;
     
 
                         if(keywords == 
@@ -227,12 +218,10 @@ this.id= this.request.getParameter(BasicItemData.ID);
                                     }
                                 
 
-    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;
-;
+    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;;
     
 
-    var result: string = inventoryViewSearchInterface!.searchSingleDynamicPage()!;
-;
+    var result: string = inventoryViewSearchInterface!.searchSingleDynamicPage()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -254,8 +243,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 } catch(e) 
             {
 
-    var error: string = "Failed to search Inventory by keyword";
-;
+    var error: string = "Failed to search Inventory by keyword";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

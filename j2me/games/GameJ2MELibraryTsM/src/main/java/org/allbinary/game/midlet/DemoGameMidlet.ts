@@ -64,6 +64,7 @@ import { CreateGameRunnable } from './CreateGameRunnable.js';
 
 export class DemoGameMidlet extends GameMidlet {
         
+
 public constructor (clientInformationFactory: ClientInformationFactory){
             super(clientInformationFactory);
                     
@@ -77,8 +78,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
             
     isContinue(): boolean{
 
-    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;;
     
 
                         if(hashtable != 
@@ -167,8 +167,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 this.logUtil!.putF(this.commonStrings!.START, this, "setDemo");
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.start();
     
@@ -182,20 +181,17 @@ PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
 
     public createGame(){
 
-    var CREATE_GAME: string = "createGame";
-;
+    var CREATE_GAME: string = "createGame";;
     
 this.logUtil!.putF(this.commonStrings!.START, this, CREATE_GAME);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.start();
     
 
-    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;;
     
 this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE);
     

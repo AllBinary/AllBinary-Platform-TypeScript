@@ -91,14 +91,12 @@ export class RemoteHighScores extends HighScores {
 
     public static getInstancePreload(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean, preload: boolean): HighScores{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var highScores: HighScores = RemoteHighScores.hashTable!.get(gameInfo) as HighScores;
-;
+    var highScores: HighScores = RemoteHighScores.hashTable!.get(gameInfo) as HighScores;;
     
 
                         if(highScores == 
@@ -124,8 +122,7 @@ RemoteHighScores.hashTable!.put(gameInfo, highScores);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.getInstance(), commonStrings!.GET_INSTANCE, e);
     
@@ -144,13 +141,14 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
 
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
-    private readonly abeClientInformation: AbeClientInformationInterface
+    private readonly abeClientInformation: AbeClientInformationInterface;
 
-    private readonly softwareInformation: SoftwareInformation
+    private readonly softwareInformation: SoftwareInformation;
 
-    private ascending: Boolean
+    private ascending: Boolean;
 
     public readonly ASCENDING: string = "ASCENDING";
+
 private constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, ascending: Boolean, preload: boolean){
             super(gameInfo!.toString(), heading, columnTwoHeading);
                     
@@ -185,8 +183,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 this.getList()!.clear();
     
 
-    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES) as Vector;
-;
+    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES) as Vector;;
     
 
                         if(vector != 
@@ -195,37 +192,30 @@ this.getList()!.clear();
                         
                                     {
                                     
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var highScoreVector: Vector = vector.elementAt(index) as Vector;
-;
+    var highScoreVector: Vector = vector.elementAt(index) as Vector;;
     
 
-    var displayName: string = highScoreVector!.elementAt(0) as string;
-;
+    var displayName: string = highScoreVector!.elementAt(0) as string;;
     
 
-    var score: string = highScoreVector!.elementAt(1) as string;
-;
+    var score: string = highScoreVector!.elementAt(1) as string;;
     
 
-    var longScore: number = Long.parseLong(score)!;
-;
+    var longScore: number = Long.parseLong(score)!;;
     
 
     var highScore: HighScore = new HighScore( -1, displayName, 
-                            null, longScore);
-;
+                            null, longScore);;
     
 this.getList()!.add(highScore);
     
@@ -236,20 +226,16 @@ this.getList()!.add(highScore);
                                 
                         else {
                             
-    var NEXT_ELEMENT: string = "NextElement: ";
-;
+    var NEXT_ELEMENT: string = "NextElement: ";;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var enumeration: Enumeration<any> = hashtable.elements()!;
-;
+    var enumeration: Enumeration<any> = hashtable.elements()!;;
     
 
-    var nextElement: any
-;
+    var nextElement: any;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))

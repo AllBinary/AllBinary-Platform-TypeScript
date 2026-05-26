@@ -57,6 +57,7 @@ export class GenericConfigData
     public static MMO_GAME_MODULE_RELATIVE_PATH: string = GenericConfigData.GAME_MODULE_RELATIVE_PATH +"mmog/";
 
     public static FREE_MMO_GAME_MODULE_RELATIVE_PATH: string = "free/";
+
 private constructor (){
 
             super();

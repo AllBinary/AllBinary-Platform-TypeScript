@@ -45,6 +45,7 @@ export class AbCrypt
             extends Object
          {
         
+
 public constructor (algorithm: string, key: string){
 
             super();

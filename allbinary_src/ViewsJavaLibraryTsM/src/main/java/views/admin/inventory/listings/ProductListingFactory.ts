@@ -58,8 +58,7 @@ export class ProductListingFactory
 
     public static getInstance(searchRequest: SearchRequest): ProductListingInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -78,8 +77,7 @@ export class ProductListingFactory
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "ProductListingFactory", commonStrings!.GET_INSTANCE, e);
     
@@ -95,6 +93,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "ProductListingFactory", commonStrings!.G
 }
 
 }
+
 
 private constructor (){
 

@@ -88,7 +88,8 @@ export class UnitItemArrayFactory
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    private readonly resources: BasicGameResources[]
+    private readonly resources: BasicGameResources[];
+
 protected constructor (resources: BasicGameResources[]){
 
             super();
@@ -101,12 +102,10 @@ protected constructor (resources: BasicGameResources[]){
             
     createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
 
-    var name: string = flagResources!.NAME;
-;
+    var name: string = flagResources!.NAME;;
     
 
-    var index: number = name.indexOf(this.commonSeps!.SPACE)!;
-;
+    var index: number = name.indexOf(this.commonSeps!.SPACE)!;;
     
 
                         if(index >= 0)
@@ -130,19 +129,16 @@ protected constructor (resources: BasicGameResources[]){
             
     createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
 
-    var IMAGE_CACHE: ImageCache = GameFeatureImageCacheFactory.getInstance()!;
-;
+    var IMAGE_CACHE: ImageCache = GameFeatureImageCacheFactory.getInstance()!;;
     
 
-    var image: Image = IMAGE_CACHE.getWithKey(flagResources!.RESOURCE_ICON)!;
-;
+    var image: Image = IMAGE_CACHE.getWithKey(flagResources!.RESOURCE_ICON)!;;
     
 
     var item: ABCustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, 
                                                 [
                                                     new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image)
-                                                ], layerInterfaceFactoryInterface);
-;
+                                                ], layerInterfaceFactoryInterface);;
     
 
 
@@ -181,8 +177,7 @@ protected constructor (resources: BasicGameResources[]){
 
 
                         for (
-    var index: number = this.resources.length -1;
-index >= 0; index--)
+    var index: number = this.resources.length -1;index >= 0; index--)
         {
 
                         if(this.resources[index] == basicGameResources)

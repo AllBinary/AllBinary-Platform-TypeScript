@@ -72,8 +72,7 @@ export class BufferedWriterUtil
             
     public overwrite(path: string, data: string){
 
-    var abFile: AbFile = new AbFile(path);
-;
+    var abFile: AbFile = new AbFile(path);;
     
 
                         if(abFile!.exists())
@@ -110,8 +109,7 @@ this.write(abFile, data);
             
     public write(abFile: AbFile, data: string){
 
-    var fileOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(abFile)));
-;
+    var fileOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(abFile)));;
     
 fileOut!.write(data, 0, data.length);
     

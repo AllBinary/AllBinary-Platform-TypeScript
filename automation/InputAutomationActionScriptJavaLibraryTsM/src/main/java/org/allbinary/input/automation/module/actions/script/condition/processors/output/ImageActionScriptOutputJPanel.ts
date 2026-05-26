@@ -77,7 +77,8 @@ export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private capturedImageActionScriptOutputInterface: ImageActionScriptOutputInterface
+    private capturedImageActionScriptOutputInterface: ImageActionScriptOutputInterface;
+
 public constructor (capturedImageActionScriptOutputInterface: ImageActionScriptOutputInterface){
 
             super();
@@ -96,32 +97,26 @@ this.set();
 this.setImageTypeJlistModel();
     
 
-    var imageTypes: ImageTypes = this.capturedImageActionScriptOutputInterface!.getImageTypes()!;
-;
+    var imageTypes: ImageTypes = this.capturedImageActionScriptOutputInterface!.getImageTypes()!;;
     
 
-    var vector: Vector = imageTypes!.getVector()!;
-;
+    var vector: Vector = imageTypes!.getVector()!;;
     
 
-    var selectedArray: number[] = new Array(vector.length);
-;
+    var selectedArray: number[] = new Array(vector.length);;
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index) as InputImageType;
-;
+    var imageType: InputImageType = vector.get(index) as InputImageType;;
     
 selectedArray[index++]= imageType!.getIndex();
     
@@ -154,14 +149,12 @@ this.capturedImageActionScriptOutputInterface!.log();
 
     update(){
 
-    var anyType: any[] = this.itemTypesJList!.getSelectedValues()!;
-;
+    var anyType: any[] = this.itemTypesJList!.getSelectedValues()!;;
     
 
     var imageTypes: ImageTypes = anyType.concatToString()
 
-                                    !;
-;
+                                    !;;
     
 this.capturedImageActionScriptOutputInterface!.setImageTypes(imageTypes);
     
@@ -202,28 +195,23 @@ this.capturedImageActionScriptOutputInterface!.log();
 
     setImageTypeJlistModel(){
 
-    var defaultListModel: DefaultListModel = new DefaultListModel();
-;
+    var defaultListModel: DefaultListModel = new DefaultListModel();;
     
 
-    var vector: Vector = InputImageType.getAllAsVector()!;
-;
+    var vector: Vector = InputImageType.getAllAsVector()!;;
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index) as InputImageType;
-;
+    var imageType: InputImageType = vector.get(index) as InputImageType;;
     
 defaultListModel!.addElement(imageType!.getName());
     
@@ -316,7 +304,6 @@ this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
                                                         [
                                                             "Item 1","Item 2","Item 3","Item 4","Item 5"
                                                         ];
-
     public getSize(): number{
 
 
@@ -341,8 +328,7 @@ this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
 this.jScrollPane1!.setViewportView(this.itemTypesJList);
     
 
-    var capturedImageActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.capturedImageActionJDialog!.getContentPane());
-;
+    var capturedImageActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.capturedImageActionJDialog!.getContentPane());;
     
 this.capturedImageActionJDialog!.getContentPane()!.setLayout(capturedImageActionJDialogLayout);
     
@@ -368,8 +354,7 @@ capturedImageActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Capture Image:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -398,23 +383,23 @@ this.getCapturedImageActionJDialog()!.setVisible(true);
 }
 
 
-    private capturedImageActionJButton: javax.swing.JButton
+    private capturedImageActionJButton: javax.swing.JButton;
 
-    private capturedImageActionJDialog: javax.swing.JDialog
+    private capturedImageActionJDialog: javax.swing.JDialog;
 
-    private displayJCheckBox: javax.swing.JCheckBox
+    private displayJCheckBox: javax.swing.JCheckBox;
 
-    private itemTypesJList: javax.swing.JList
+    private itemTypesJList: javax.swing.JList;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jScrollPane1: javax.swing.JScrollPane
+    private jScrollPane1: javax.swing.JScrollPane;
 
-    private okJButton: javax.swing.JButton
+    private okJButton: javax.swing.JButton;
 
-    private saveJCheckBox: javax.swing.JCheckBox
+    private saveJCheckBox: javax.swing.JCheckBox;
 
-    private titleJLabel: javax.swing.JLabel
+    private titleJLabel: javax.swing.JLabel;
 
 }
                 

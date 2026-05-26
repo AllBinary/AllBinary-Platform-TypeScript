@@ -56,6 +56,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/
 
 export class LifeLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
+
 public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 
             super();
@@ -68,16 +69,13 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
             
     public visit(sourceLayerInterface: AllBinaryLayer){
 
-    var lifeLayer: LifeLayer = this.getNextInstance() as LifeLayer;
-;
+    var lifeLayer: LifeLayer = this.getNextInstance() as LifeLayer;;
     
 
-    var lifeInterfaceCompositeInterface: LifeInterfaceCompositeInterface = sourceLayerInterface as LifeInterfaceCompositeInterface;
-;
+    var lifeInterfaceCompositeInterface: LifeInterfaceCompositeInterface = sourceLayerInterface as LifeInterfaceCompositeInterface;;
     
 
-    var lifeInterface: Life = lifeInterfaceCompositeInterface!.getLifeInterface()!;
-;
+    var lifeInterface: Life = lifeInterfaceCompositeInterface!.getLifeInterface()!;;
     
 lifeLayer!.visit(lifeInterface);
     

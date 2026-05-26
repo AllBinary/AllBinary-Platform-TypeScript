@@ -52,6 +52,7 @@ import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayLis
 
 export class MiddleRelativeLayerRelationship extends RelativeLayerRelationship {
         
+
 public constructor (layer: AllBinaryLayer){
             super(layer, PointFactory.getInstance()!.createXY(layer.getHalfWidth(), layer.getHalfHeight()), BasicArrayListUtil.getInstance()!.getImmutableInstance());
                     

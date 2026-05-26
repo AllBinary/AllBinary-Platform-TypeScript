@@ -51,6 +51,7 @@ import { BasicArrayListCacheable } from './BasicArrayListCacheable.js';
 
 export class BasicArrayListPool extends AbstractArrayListPool {
         
+
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
             super(cacheableInterfaceFactoryInterface);
                     
@@ -70,8 +71,7 @@ this.buffers.clear();
             
     public remove(key: any = {}): CacheableInterface{
 
-    var size: number = this.buffers.size()!;
-;
+    var size: number = this.buffers.size()!;;
     
 
                         if(size > 0)
@@ -107,12 +107,10 @@ this.buffers.clear();
 
 
                         for (
-    var index: number = usedList!.size()!;
---index >= 0; )
+    var index: number = usedList!.size()!;--index >= 0; )
         {
 
-    var anyType: CacheableInterface = usedList!.objectArray[index]! as CacheableInterface;
-;
+    var anyType: CacheableInterface = usedList!.objectArray[index]! as CacheableInterface;;
     
 this.add(anyType);
     
@@ -131,12 +129,10 @@ usedList!.clear();
 
 
                         for (
-    var index: number = usedList!.size()!;
---index >= 0; )
+    var index: number = usedList!.size()!;--index >= 0; )
         {
 
-    var list: BasicArrayListCacheable = usedList!.objectArray[index]! as BasicArrayListCacheable;
-;
+    var list: BasicArrayListCacheable = usedList!.objectArray[index]! as BasicArrayListCacheable;;
     
 
                         if(list.size() == 0)

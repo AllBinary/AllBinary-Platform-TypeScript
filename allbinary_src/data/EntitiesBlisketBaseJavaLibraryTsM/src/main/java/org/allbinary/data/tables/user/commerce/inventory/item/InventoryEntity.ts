@@ -76,6 +76,7 @@ export class InventoryEntity extends AbSqlBean implements InventoryEntityInterfa
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly tableName: string = "basicinventory";
+
 public constructor (){
             super(new InventoryDbInitInfo());
                     
@@ -164,32 +165,26 @@ this.setTableName(this.tableName);
                                     }
                                 
 
-    var itemVector: Vector = new Vector();
-;
+    var itemVector: Vector = new Vector();;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var itemHashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var itemHashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var size: number = itemHashMapVector!.length!;
-;
+    var size: number = itemHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i) as HashMap<any, any>;
-;
+    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i) as HashMap<any, any>;;
     
 
                         if(itemHashMap != 
@@ -198,8 +193,7 @@ i < size; i++)
                         
                                     {
                                     
-    var category: string = itemHashMap!.get(BasicItemData.CATEGORY) as string;
-;
+    var category: string = itemHashMap!.get(BasicItemData.CATEGORY) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(category) && category.startsWith(storeFrontInterface!.getCategoryPath()))
@@ -228,14 +222,12 @@ i < size; i++)
             
     public getItem(id: string): ItemInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(BasicItemData.ID, id);
     
 
-    var itemHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var itemHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(itemHashMap != 
@@ -277,8 +269,7 @@ keysAndValues!.put(BasicItemData.ID, id);
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     

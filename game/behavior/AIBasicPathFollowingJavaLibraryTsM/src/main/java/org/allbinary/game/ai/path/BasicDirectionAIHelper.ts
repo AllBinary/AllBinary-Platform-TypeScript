@@ -59,9 +59,10 @@ export class BasicDirectionAIHelper
          {
         
 
-    private name: string
+    private name: string;
 
-    private angleInfo: AngleInfo
+    private angleInfo: AngleInfo;
+
 public constructor (name: string, angleInfo: AngleInfo){
 
             super();
@@ -74,20 +75,16 @@ this.angleInfo= angleInfo;
 
     turnAI(frame: number): number{
 
-    var keyDirection: number =  -1;
-;
+    var keyDirection: number =  -1;;
     
 
-    var directionAngle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame)!;
-;
+    var directionAngle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame)!;;
     
 
-    var angle: number = this.angleInfo!.getAngle()!;
-;
+    var angle: number = this.angleInfo!.getAngle()!;;
     
 
-    var degrees: number = Math.abs(directionAngle -angle)!;
-;
+    var degrees: number = Math.abs(directionAngle -angle)!;;
     
 
                         if(degrees < 180)
@@ -147,8 +144,7 @@ this.angleInfo= angleInfo;
 
     getAIKeyPressed(frame: Integer): number{
 
-    var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.intValue());
-;
+    var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.intValue());;
     
 
                         if(this.angleInfo!.getAngle() != angle)
@@ -178,16 +174,13 @@ this.angleInfo= angleInfo;
 
     public getAIKeyPressedFromDirection(geographicMapDirectionData: Direction): number{
 
-    var keyDirection: number =  -1;
-;
+    var keyDirection: number =  -1;;
     
 
-    var angleIncrementInfo: AngleIncrementInfo = this.angleInfo!.getAngleIncrementInfo()!;
-;
+    var angleIncrementInfo: AngleIncrementInfo = this.angleInfo!.getAngleIncrementInfo()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(geographicMapDirectionData == directionFactory!.DOWN)

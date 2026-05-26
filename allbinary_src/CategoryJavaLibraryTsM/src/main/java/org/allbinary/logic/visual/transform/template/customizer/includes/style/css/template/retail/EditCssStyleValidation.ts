@@ -62,10 +62,12 @@ import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
 
 export class EditCssStyleValidation extends CssStyleValidation implements ValidationInterface, DomNodeInterface {
         
+
 public constructor (){
 
             super();
         }
+
 
 public constructor (document: Document){
             super(document);
@@ -74,6 +76,7 @@ public constructor (document: Document){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
             super(hashMap);
@@ -128,32 +131,27 @@ public constructor (hashMap: HashMap<any, any>){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;;
     
 
-    var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;
-;
+    var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;;
     
 node.appendChild(styleNode);
     
 styleNode!.appendChild(new ColorsView().toXmlNode(document));
     
 
-    var size: number = this.cssStyleElementVector!.size()!;
-;
+    var size: number = this.cssStyleElementVector!.size()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i) as DomNodeInterface;
-;
+    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i) as DomNodeInterface;;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
     

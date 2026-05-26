@@ -63,6 +63,7 @@ export class BasicLayerProcessor
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 protected constructor (){
 
             super();

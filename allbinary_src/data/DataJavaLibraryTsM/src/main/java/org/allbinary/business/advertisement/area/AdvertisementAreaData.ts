@@ -57,6 +57,7 @@ export class AdvertisementAreaData
     
 }
 
+
 private constructor (){
 
             super();

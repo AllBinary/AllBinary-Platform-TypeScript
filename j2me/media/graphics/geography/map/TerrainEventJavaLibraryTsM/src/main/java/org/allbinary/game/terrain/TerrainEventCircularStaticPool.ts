@@ -78,8 +78,7 @@ this.EVENT_POOL.init(new TerrainEventFactory());
 
     public getNext(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 
-    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance() as TerrainEvent;
-;
+    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance() as TerrainEvent;;
     
 trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo);
     

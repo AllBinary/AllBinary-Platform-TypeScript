@@ -50,9 +50,10 @@ export class LapInfo
 
     public static NULL_LAP_INFO: LapInfo = new LapInfo( -1);
 
-    private numberOfLaps: number
+    private numberOfLaps: number;
 
-    private totalLaps: number
+    private totalLaps: number;
+
 public constructor (totalLaps: number){
 
             super();
@@ -114,8 +115,7 @@ this.numberOfLaps++;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("isDone: ");
     

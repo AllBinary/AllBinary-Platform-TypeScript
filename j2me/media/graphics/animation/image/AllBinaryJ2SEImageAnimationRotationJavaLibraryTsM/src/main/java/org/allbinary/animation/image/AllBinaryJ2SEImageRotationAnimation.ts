@@ -79,15 +79,15 @@ export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimat
 
     private readonly imageModifierUtil: ImageModifierUtil = ImageModifierUtil.getInstanceOrCreate()!;
 
-    private readonly realOriginalImage: Image
+    private readonly realOriginalImage: Image;
 
     private readonly originalImageArray: Image[] = new Array(1);
 
     private readonly twoImages: Image[] = new Array(2);
 
-    private imageToShow: Image
+    private imageToShow: Image;
 
-    private bufferedImageIndex: number= 0
+    private bufferedImageIndex: number= 0;
 
     private lastScaleX: number = 1.0;
 
@@ -97,9 +97,9 @@ export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimat
 
     private scaleY: number = 1.0;
 
-    private maxScaleX: number= 0.0
+    private maxScaleX: number= 0.0;
 
-    private maxScaleY: number= 0.0
+    private maxScaleY: number= 0.0;
 
     private alphaProcessor: ModifierBaseProcessor = ModifierBaseProcessor.getInstance()!;
 
@@ -108,6 +108,7 @@ export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimat
     private changeColorProcessor: ModifierBaseProcessor = ModifierBaseProcessor.getInstance()!;
 
     private scaleProcessor: ScaleBaseProcessor = ScaleProcessor.getInstance()!;
+
 public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
                     
@@ -129,8 +130,7 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image);
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;
-;
+    var changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -161,8 +161,7 @@ this.updateImage();
 
     public changeBasicColor(basicColor: BasicColor){
 
-    var changed: boolean = false;
-;
+    var changed: boolean = false;;
     
 
                         if(this.getChangeBasicColor() == 
@@ -193,8 +192,7 @@ this.updateImage();
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;
-;
+    var changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -325,21 +323,18 @@ graphics.drawImage(this.imageToShow, x, y, this.anchor);
 super.close();
     
 
-    var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
-;
+    var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;;
     
 
     var size2: number = this.twoImages!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 disposalUtil!.disposeImage(this.twoImages[index]!);
     
@@ -347,16 +342,14 @@ disposalUtil!.disposeImage(this.twoImages[index]!);
 
 
     var size: number = this.originalImageArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 disposalUtil!.disposeImage(this.originalImageArray[index]!);
     
@@ -375,21 +368,18 @@ disposalUtil!.disposeImage(this.imageToShow);
 super.finalize();
     
 
-    var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
-;
+    var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;;
     
 
     var size2: number = this.twoImages!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 disposalUtil!.disposeImage(this.twoImages[index]!);
     
@@ -397,16 +387,14 @@ disposalUtil!.disposeImage(this.twoImages[index]!);
 
 
     var size: number = this.originalImageArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 disposalUtil!.disposeImage(this.originalImageArray[index]!);
     

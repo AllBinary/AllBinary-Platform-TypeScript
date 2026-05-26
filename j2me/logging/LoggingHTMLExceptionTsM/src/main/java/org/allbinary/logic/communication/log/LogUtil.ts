@@ -70,6 +70,7 @@ import { PreLogUtil } from './PreLogUtil.js';
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
+
 private constructor (){
 
             super();
@@ -93,20 +94,16 @@ private constructor (){
                                     }
                                 
 
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
@@ -115,8 +112,7 @@ this.put(specialMessage, anyType, functionName, exception);
 
     /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
 
-    var className: string = PreLogUtil.getClassName(anyType)!;
-;
+    var className: string = PreLogUtil.getClassName(anyType)!;;
     
 
                         if(className == 
@@ -130,8 +126,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 PlayN.log()!.debug(this.LOG_SUCCESS +message);
     
@@ -140,8 +135,7 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
 
     /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 PlayN.log()!.debug(this.LOG_SUCCESS +message);
     
@@ -150,8 +144,7 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
-    var className: string = PreLogUtil.getClassName(anyType)!;
-;
+    var className: string = PreLogUtil.getClassName(anyType)!;;
     
 
                         if(className == 
@@ -165,8 +158,7 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 
                         if(exception != 

@@ -63,7 +63,8 @@ export class LayerBounds
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    rectangle: Rectangle
+    rectangle: Rectangle;
+
 protected constructor (rectangle: Rectangle){
 
             super();

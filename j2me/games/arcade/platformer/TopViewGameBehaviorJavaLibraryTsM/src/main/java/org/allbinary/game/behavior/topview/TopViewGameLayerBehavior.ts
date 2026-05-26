@@ -51,7 +51,7 @@ import { VelocityProperties } from '../../../../../org/allbinary/game/physics/ve
 export class TopViewGameLayerBehavior extends GameLayerBehavior {
         
 
-    public readonly maxGravityActionIndex: number
+    public readonly maxGravityActionIndex: number;
 
     public isJumpAction: boolean = true;
 
@@ -60,6 +60,7 @@ export class TopViewGameLayerBehavior extends GameLayerBehavior {
     public isFallingWithoutJumpAttempt: boolean = false;
 
     public gravityActionIndex: number = 0;
+
 public constructor (maxGravityActionIndex: number){
 
             super();
@@ -113,8 +114,7 @@ this.isJumpOver= false;
                         
                                     {
                                     
-    var acceleration2: number =  -acceleration.getForward() *accelerationMultiplier;
-;
+    var acceleration2: number =  -acceleration.getForward() *accelerationMultiplier;;
     
 velocityProperties!.getVelocityYBasicDecimalP()!.addint(acceleration2);
     

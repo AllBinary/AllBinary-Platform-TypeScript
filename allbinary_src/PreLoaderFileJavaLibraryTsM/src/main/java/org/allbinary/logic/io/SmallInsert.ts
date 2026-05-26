@@ -64,9 +64,10 @@ export class SmallInsert
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private fileName: string
+    private fileName: string;
 
-    private string: string
+    private string: string;
+
 public constructor (fileName: string){
 
             super();
@@ -81,12 +82,10 @@ this.string= FileUtil.getInstance()!.readAsString(fileName);
 
         try {
             
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-;
+    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);
-;
+    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(text +this.string);
     
@@ -124,8 +123,7 @@ idOutData!.writeBytes(text +this.string);
 
         try {
             
-    var index: number = this.string.indexOf(after)!;
-;
+    var index: number = this.string.indexOf(after)!;;
     
 
                         if(index < 0)
@@ -145,20 +143,16 @@ idOutData!.writeBytes(text +this.string);
 index= index +after.length;
     
 
-    var start: string = this.string.substring(0, index)!;
-;
+    var start: string = this.string.substring(0, index)!;;
     
 
-    var end: string = this.string.substring(index +1, this.string.length)!;
-;
+    var end: string = this.string.substring(index +1, this.string.length)!;;
     
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-;
+    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);
-;
+    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(start +text +end);
     
@@ -200,12 +194,10 @@ idFile!.close();
 
         try {
             
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-;
+    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);
-;
+    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(this.string +text);
     

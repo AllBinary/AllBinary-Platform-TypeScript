@@ -52,16 +52,13 @@ import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js'
 
     /*actual*/ public static getInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var maxUtilizedMemoryAvailable: number = Runtime.getRuntime()!.maxMemory()!;
-;
+    var maxUtilizedMemoryAvailable: number = Runtime.getRuntime()!.maxMemory()!;;
     
 
-    var memoryUsed: number = Runtime.getRuntime()!.totalMemory()!;
-;
+    var memoryUsed: number = Runtime.getRuntime()!.totalMemory()!;;
     
 stringBuffer!.append("APK Memory: Available: ");
     

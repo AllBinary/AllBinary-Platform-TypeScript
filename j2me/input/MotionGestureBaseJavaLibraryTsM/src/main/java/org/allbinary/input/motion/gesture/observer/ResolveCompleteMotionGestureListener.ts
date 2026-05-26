@@ -68,12 +68,12 @@ export class ResolveCompleteMotionGestureListener
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR);
     
@@ -86,36 +86,30 @@ CompleteMotionGestureInputEventHandler.getInstance()!.addListener(new GameKeyFro
             
     public onMotionGestureCompleted(list: BasicArrayList){
 
-    var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
-;
+    var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;;
     
 
-    var commandActionsList: BasicArrayList = configuration.getAssociateCommandActionsList()!;
-;
+    var commandActionsList: BasicArrayList = configuration.getAssociateCommandActionsList()!;;
     
 
-    var size: number = commandActionsList!.size()!;
-;
+    var size: number = commandActionsList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 
-    var association: MotionGestureToMotionGestureActionAssociation = commandActionsList!.objectArray[index]! as MotionGestureToMotionGestureActionAssociation;
-;
+    var association: MotionGestureToMotionGestureActionAssociation = commandActionsList!.objectArray[index]! as MotionGestureToMotionGestureActionAssociation;;
     
 
                         if(association.isMotionGestureArrayEquals(list) == true)
                         
                                     {
                                     
-    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction() as GameKeyCompleteMotionGestureInputEvent;
-;
+    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction() as GameKeyCompleteMotionGestureInputEvent;;
     
 CompleteMotionGestureInputEventHandler.getInstance()!.fireEvent(completeMotionGestureInputEvent);
     

@@ -66,25 +66,26 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
 export class CaptionIndexedAnimation extends IndexedAnimation {
         
 
-    private animationInterface: Animation
+    private animationInterface: Animation;
 
-    private movieIndexedAnimationInterface: IndexedAnimation
+    private movieIndexedAnimationInterface: IndexedAnimation;
 
-    private captionDx: number
+    private captionDx: number;
 
-    private captionDy: number
+    private captionDy: number;
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
 
-    private time: number
+    private time: number;
 
-    private END_EVENT: AllBinaryEventObject
+    private END_EVENT: AllBinaryEventObject;
 
-    private timeDelayHelper: TimeDelayHelper
+    private timeDelayHelper: TimeDelayHelper;
 
-    private player: Player
+    private player: Player;
+
 public constructor (animationInterface: Animation, movieIndexedAnimationInterface: IndexedAnimation, player: Player, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -108,8 +109,7 @@ this.time= time;
 this.END_EVENT= new AllBinaryEventObject(this);
     
 
-    var timePerFrame: number = this.time /this.getSize();
-;
+    var timePerFrame: number = this.time /this.getSize();;
     
 this.timeDelayHelper= new TimeDelayHelper(timePerFrame);
     

@@ -90,11 +90,12 @@ export class BasicWorkFlow
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private workFlowDoc: Document
+    private workFlowDoc: Document;
 
-    private workFlowName: string
+    private workFlowName: string;
 
-    private storeName: string
+    private storeName: string;
+
 public constructor (){
 
             super();
@@ -103,31 +104,30 @@ public constructor (){
 this.workFlowDoc= DomDocumentHelper.create();
     
 
-    var workFlowNode: Node = this.workFlowDoc!.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;
-;
+    var workFlowNode: Node = this.workFlowDoc!.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;;
     
 this.workFlowDoc!.appendChild(workFlowNode);
     
 }
 
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);
-;
+    var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);;
     
 this.storeName= weblisketSession!.getStoreName();
     
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(pageContext).toHashMap()!;
-;
+    var requestHashMap: HashMap<any, any> = new RequestParams(pageContext).toHashMap()!;;
     
 this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
     
 this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as string);
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -175,8 +175,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
             
     public toVector(): Vector{
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.workFlowName);
     
@@ -185,12 +184,10 @@ values.add(this.storeName);
 values.add(DomDocumentHelper.toString(this.workFlowDoc));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -209,8 +206,7 @@ values.add(time);
             
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(WorkFlowData.getInstance()!.NAME, this.workFlowName);
     
@@ -219,12 +215,10 @@ hashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
 hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.workFlowDoc));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -241,41 +235,33 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
         try {
             
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;
-;
+    var keySet: Set = hashMap!.keys()!;;
     
 
-    var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;
-;
+    var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOW)!;;
     
 
-    var nameArray: any[] = keySet!.()!;
-;
+    var nameArray: any[] = keySet!.()!;;
     
 
     var size: number = nameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var name: string = nameArray[index]! as string;
-;
+    var name: string = nameArray[index]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;
-;
+    var value: string = hashMap!.get(name) as string;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -348,8 +334,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
         try {
             
-    var returnBoolean: Boolean = Boolean.TRUE;
-;
+    var returnBoolean: Boolean = Boolean.TRUE;;
     
 
                         if(this.workFlowName == 
@@ -396,8 +381,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.workFlowName == 

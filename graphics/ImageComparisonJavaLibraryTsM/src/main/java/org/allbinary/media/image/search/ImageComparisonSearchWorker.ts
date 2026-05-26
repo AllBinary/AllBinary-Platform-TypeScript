@@ -73,13 +73,14 @@ export class ImageComparisonSearchWorker extends BasicEventHandler implements Im
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly imageComparisonInfoVector: Vector
+    private readonly imageComparisonInfoVector: Vector;
 
-    private index: number= 0
+    private index: number= 0;
 
-    private running: boolean= false
+    private running: boolean= false;
 
-    private imageSearchConstraintsInterface: ImageComparisonSearchConstraintsInterface
+    private imageSearchConstraintsInterface: ImageComparisonSearchConstraintsInterface;
+
 public constructor (imageSearchConstraintsInterface: ImageComparisonSearchConstraintsInterface){
 
             super();
@@ -130,20 +131,17 @@ this.running= running;
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 timeHelper!.setStartTimeTNT();
     
 
-    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0) as ImageComparisonResult;
-;
+    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0) as ImageComparisonResult;;
     
 this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
     
 
-    var latestBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[1]!;
-;
+    var latestBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[1]!;;
     
 this.imageComparisonInfoVector!.remove(imageComparisonInfo);
     

@@ -63,7 +63,8 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 export class EditValidationView extends ShippingAddressView implements ValidationComponentInterface {
         
 
-    private value: string
+    private value: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -71,8 +72,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParameter(StreetAddressData.ID);
     
@@ -96,8 +96,7 @@ this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParam
                                     }
                                 
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-;
+    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
     

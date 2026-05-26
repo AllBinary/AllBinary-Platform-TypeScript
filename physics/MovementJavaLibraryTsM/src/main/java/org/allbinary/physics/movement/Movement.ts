@@ -52,6 +52,7 @@ export class Movement
             extends Object
          implements MovementInterface {
         
+
 public constructor (){
 
             super();

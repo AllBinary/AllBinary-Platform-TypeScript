@@ -54,9 +54,10 @@ export class DefaultListModelHelper
          {
         
 
-    private defaultListModel: DefaultListModel
+    private defaultListModel: DefaultListModel;
 
-    private vector: Vector
+    private vector: Vector;
+
 public constructor (){
 
             super();
@@ -71,20 +72,17 @@ this.defaultListModel= new DefaultListModel();
 this.defaultListModel= new DefaultListModel();
     
 
-    var size: number = this.vector.length!;
-;
+    var size: number = this.vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var moduleName: string = this.vector.get(index) as string;
-;
+    var moduleName: string = this.vector.get(index) as string;;
     
 this.defaultListModel!.addElement(moduleName);
     

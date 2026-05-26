@@ -82,21 +82,22 @@ export class UserNameOrderHistoryView extends HttpStoreComponentView implements 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private userName: string
+    private userName: string;
 
-    private shipped: string
+    private shipped: string;
 
-    private partiallyShipped: string
+    private partiallyShipped: string;
 
-    private processing: string
+    private processing: string;
 
-    private preprocessing: string
+    private preprocessing: string;
 
-    private cancelled: string
+    private cancelled: string;
 
     private readonly ON: string = "on";
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -166,40 +167,32 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
         try {
             
-    var node: Node = document.createElement(OrderData.ORDERS)!;
-;
+    var node: Node = document.createElement(OrderData.ORDERS)!;;
     
 
-    var orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();
-;
+    var orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();;
     
 
-    var orderReviewVector: Vector = orderHistoryEntity!.getOrders(this.userName)!;
-;
+    var orderReviewVector: Vector = orderHistoryEntity!.getOrders(this.userName)!;;
     
 
-    var size: number = orderReviewVector!.length!;
-;
+    var size: number = orderReviewVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderReviewVector!.get(index) as OrderHistory;
-;
+    var orderHistory: OrderHistory = orderReviewVector!.get(index) as OrderHistory;;
     
 
-    var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;
-;
+    var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;;
     
 
-    var orderNode: Node = document.createElement(orderHistory!.getPaymentMethod())!;
-;
+    var orderNode: Node = document.createElement(orderHistory!.getPaymentMethod())!;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     

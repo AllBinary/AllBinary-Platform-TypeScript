@@ -72,16 +72,13 @@ export class DomDocumentHelper
 
         try {
             
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-;
+    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-;
+    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.newDocument()!;
-;
+    var document: Document = builder.newDocument()!;;
     
 
 
@@ -110,16 +107,13 @@ export class DomDocumentHelper
 
         try {
             
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-;
+    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-;
+    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.parse(inputStream)!;
-;
+    var document: Document = builder.parse(inputStream)!;;
     
 
 
@@ -147,16 +141,13 @@ export class DomDocumentHelper
 
         try {
             
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-;
+    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-;
+    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.parse(new StringBufferInputStream(xmlString))!;
-;
+    var document: Document = builder.parse(new StringBufferInputStream(xmlString))!;;
     
 
 
@@ -184,24 +175,19 @@ export class DomDocumentHelper
 
         try {
             
-    var domSource: DOMSource = new DOMSource(document);
-;
+    var domSource: DOMSource = new DOMSource(document);;
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);
-;
+    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
     
 
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-;
+    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-;
+    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 copyTransformer!.transform(domSource, streamResult);
     
@@ -223,6 +209,7 @@ copyTransformer!.transform(domSource, streamResult);
 }
 
 }
+
 
 private constructor (){
 

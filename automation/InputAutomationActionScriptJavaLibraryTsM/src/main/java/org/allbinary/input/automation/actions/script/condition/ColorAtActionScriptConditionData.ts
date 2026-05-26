@@ -63,6 +63,7 @@ export class ColorAtActionScriptConditionData
     public static MIN_BLUE: string = "COLOR_AT_ACTION_CONDITION_MIN_BLUE";
 
     public static MAX_BLUE: string = "COLOR_AT_ACTION_CONDITION_MAX_BLUE";
+
 private constructor (){
 
             super();

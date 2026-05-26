@@ -74,6 +74,7 @@ export class InputPersistance extends BasicPersitance {
         
 
     private readonly hashtableUtil: HashtableUtil = HashtableUtil.getInstance()!;
+
 public constructor (name: string){
             super(name);
                     
@@ -87,28 +88,22 @@ public constructor (name: string){
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
 
-    var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;
-;
+    var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;;
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-;
+    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var hashtable: Hashtable<any, any>
-;
+    var hashtable: Hashtable<any, any>;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var id: number= 0
-;
+    var id: number= 0;;
     
 
         while(recordEnum!.hasNextElement())
@@ -138,37 +133,30 @@ recordStore!.closeRecordStore();
 PreLogUtil.put(new StringMaker().append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 
-    var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;
-;
+    var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;;
     
 
-    var gameActionInput: Input
-;
+    var gameActionInput: Input;;
     
 
-    var list: BasicArrayList
-;
+    var list: BasicArrayList;;
     
 
-    var input: Input
-;
+    var input: Input;;
     
 
-    var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;
-;
+    var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;;
     
 
     var size: number = inputObjectArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameActionInput= inputObjectArray[index]! as Input;
     
@@ -179,8 +167,7 @@ list= hashtable.get(inputObjectArray[index]!) as BasicArrayList;
 
 
                         for (
-    var index2: number = 0;
-index2 < list.size(); index2++)
+    var index2: number = 0;index2 < list.size(); index2++)
         {
 input= list.get(index2) as Input;
     

@@ -49,11 +49,12 @@ export class ImageUnifierProperties
          {
         
 
-    private rows: Integer
+    private rows: Integer;
 
-    private columns: Integer
+    private columns: Integer;
 
-    private imageUnifierCell: ImageUnifierCell
+    private imageUnifierCell: ImageUnifierCell;
+
 public constructor (){
 
             super();

@@ -118,32 +118,27 @@ this.filePath= filePath;
 
         try {
             
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, this.INITFILENAME)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, this.INITFILENAME)!;;
     
 
-    var licenseIdCrypted: number[] = new WeakCrypt(1).encrypt(initData!.getLicenseId())!.encodeToByteArray()!;
-;
+    var licenseIdCrypted: number[] = new WeakCrypt(1).encrypt(initData!.getLicenseId())!.encodeToByteArray()!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted));
     
 
-    var numberOfLicenseServers: number = initData!.getNumberOfServers()!;
-;
+    var numberOfLicenseServers: number = initData!.getNumberOfServers()!;;
     
 dataOutputStream!.writeInt(numberOfLicenseServers);
     
 
-    var licenseServerCrypted: number[]
-;
+    var licenseServerCrypted: number[];;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfLicenseServers; index++)
+    var index: number = 0;index < numberOfLicenseServers; index++)
         {
 licenseServerCrypted= new WeakCrypt(3).encrypt(initData!.getServer(index))!.encodeToByteArray();
     
@@ -187,8 +182,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
 
-    var METHOD_NAME: string = "readAgain";
-;
+    var METHOD_NAME: string = "readAgain";;
     
 
                         if(this.filePath == this.stringUtil!.EMPTY_STRING)
@@ -204,12 +198,10 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
             this.logUtil!.putF("LicenseInitInfo File: " +this.INITFILENAME, this, METHOD_NAME);
     
 
-    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, this.INITFILENAME)!;
-;
+    var iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, this.INITFILENAME)!;;
     
 
                         if(iFile != 
@@ -218,42 +210,34 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
                         
                                     {
                                     
-    var iData: AbDataInputStream = new AbDataInputStream(iFile);
-;
+    var iData: AbDataInputStream = new AbDataInputStream(iFile);;
     
 
-    var initInfo: LicenseInitInfo = new LicenseInitInfo();
-;
+    var initInfo: LicenseInitInfo = new LicenseInitInfo();;
     
 
-    var decodedByteArray: number[] = DatabaseEncoder.decode(iData!.readUTF())!;
-;
+    var decodedByteArray: number[] = DatabaseEncoder.decode(iData!.readUTF())!;;
     
 
-    var licenseIdDecoded: string = String.fromCharCode(...decodedByteArray);
-;
+    var licenseIdDecoded: string = String.fromCharCode(...decodedByteArray);;
     
 initInfo!.setLicenseId(new WeakCrypt(1).decrypt(licenseIdDecoded));
     
 
-    var numberOfLicenseServers: number = iData!.readInt()!;
-;
+    var numberOfLicenseServers: number = iData!.readInt()!;;
     
 
-    var NEXT_FILE: string = "Next License Server From File: ";
-;
+    var NEXT_FILE: string = "Next License Server From File: ";;
     
 
-    var licenseServerDecoded: string
-;
+    var licenseServerDecoded: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfLicenseServers; index++)
+    var index: number = 0;index < numberOfLicenseServers; index++)
         {
 decodedByteArray= DatabaseEncoder.decode(iData!.readUTF());
     

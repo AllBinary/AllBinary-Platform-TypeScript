@@ -61,12 +61,10 @@ export class StupidTimer
 
     visitBool(visitorInterface: Visitor): boolean{
 
-    var result: Boolean = visitorInterface!.visit(this.nullUtil!.NULL_OBJECT) as Boolean;
-;
+    var result: Boolean = visitorInterface!.visit(this.nullUtil!.NULL_OBJECT) as Boolean;;
     
 
-    var result2: boolean = result.valueOf()!;
-;
+    var result2: boolean = result.valueOf()!;;
     
 
 
@@ -81,18 +79,15 @@ export class StupidTimer
             
     public visit(visitorInterface: Visitor, timeDelayHelper: TimeDelayHelper){
 
-    var tookTooLong: boolean = false;
-;
+    var tookTooLong: boolean = false;;
     
 
-    var WAITING_FOR: string = "Waiting for: ";
-;
+    var WAITING_FOR: string = "Waiting for: ";;
     
 PreLogUtil.put(new StringMaker().append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, this.commonStrings!.VISIT);
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(this.visitBool(visitorInterface))

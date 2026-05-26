@@ -68,6 +68,7 @@ import { Log } from './Log.js';
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
+
 private constructor (){
 
             super();
@@ -89,8 +90,7 @@ private constructor (){
                                     }
                                 
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 
                         if(exception == 
@@ -108,16 +108,13 @@ private constructor (){
                                     }
                                 
 
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
@@ -134,8 +131,7 @@ this.put(specialMessage, anyType, functionName, exception);
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
                         if(anyType!.constructor.name.toString()! != 
@@ -149,8 +145,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(this.LOG_SUCCESS + message);
     

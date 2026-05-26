@@ -91,15 +91,16 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    readonly textureFactory: PlatformTextureBaseFactory
+    readonly textureFactory: PlatformTextureBaseFactory;
 
-    public readonly openGLBitmap: PlatformBitmapBase
+    public readonly openGLBitmap: PlatformBitmapBase;
 
     public imageProcessor: OpenGLESImageProcessor = OpenGLESImageProcessor.getInstance()!;
 
     public openGLESImageTranslate: OpenGLESImageTranslate = OpenGLESImageTranslate.getInstance()!;
 
     public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
+
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image.getName(), PostLoadImageProcessor.NULL_POST_LOAD_IMAGE_PROCESSOR);
                     
@@ -156,8 +157,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
                                     OpenGLESImage.texture2dList!.add(this);
     
 
-    var textures: number[] = new Array(1);
-;
+    var textures: number[] = new Array(1);;
     
 gl.glEnable(GL10.GL_TEXTURE_2D);
     
@@ -222,8 +222,7 @@ gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_
 
     public toString(): string{
 
-    var graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;
-;
+    var graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;;
     
 
 

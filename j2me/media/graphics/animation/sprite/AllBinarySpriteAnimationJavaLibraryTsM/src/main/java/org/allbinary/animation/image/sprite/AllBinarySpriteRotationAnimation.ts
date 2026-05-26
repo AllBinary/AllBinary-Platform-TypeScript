@@ -58,6 +58,7 @@ import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 
 export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedAnimation {
         
+
 public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior){
             super(sprite, image, AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /sprite.getRawFrameCount())), animationBehavior);
                     
@@ -87,8 +88,7 @@ this.angleInfo!.adjustAngle(this.sprite.getFrame());
 
     public setFrameByDirection(direction: Direction){
 
-    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
-;
+    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
     
 this.adjustFrameToAngle(angle);
     

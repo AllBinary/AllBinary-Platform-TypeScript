@@ -56,11 +56,12 @@ import { Health } from './Health.js';
 export class HealthBar extends Paintable implements HealthListenerInterface {
         
 
-    private readonly animationInterface: HealthBarAnimation
+    private readonly animationInterface: HealthBarAnimation;
 
-    private readonly healthInterface: HealthInterface
+    private readonly healthInterface: HealthInterface;
 
-    readonly allbinaryLayer: AllBinaryLayer
+    readonly allbinaryLayer: AllBinaryLayer;
+
 public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, animationInterface: HealthBarAnimation, direction: number){
 
             super();

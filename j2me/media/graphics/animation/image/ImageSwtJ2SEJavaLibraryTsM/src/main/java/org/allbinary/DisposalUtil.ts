@@ -91,8 +91,7 @@ export class DisposalUtil
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = image as SwtMutableImage;
-;
+    var mutableImage: SwtMutableImage = image as SwtMutableImage;;
     
 this.disposeResource(mutableImage!.getImage() as Resource);
     

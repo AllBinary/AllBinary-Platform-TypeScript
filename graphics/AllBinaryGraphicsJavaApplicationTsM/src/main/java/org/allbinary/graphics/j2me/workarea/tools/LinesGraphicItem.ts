@@ -131,13 +131,13 @@ export class LinesGraphicItem
 
     private readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
 
-    private treeNode: DefaultMutableTreeNode
+    private treeNode: DefaultMutableTreeNode;
 
-    private pointTreeNodeVector: Vector
+    private pointTreeNodeVector: Vector;
 
-    private currentMousePoint: GPoint
+    private currentMousePoint: GPoint;
 
-    private fulcrumPoint: GPoint
+    private fulcrumPoint: GPoint;
 
     private active: boolean = false;
 
@@ -145,7 +145,8 @@ export class LinesGraphicItem
 
     private color: Color = new Color(BasicColorFactory.getInstance()!.WHITE.intValue());
 
-    private points: Points
+    private points: Points;
+
 public constructor (){
 
             super();
@@ -167,6 +168,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 
 }
 
+
 public constructor (linesNode: Node){
 
             super();
@@ -177,32 +179,26 @@ this.init();
 this.active= false;
     
 
-    var lineNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(linesNode!.getChildNodes())!;
-;
+    var lineNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(linesNode!.getChildNodes())!;;
     
 
-    var numberOfLines: number = lineNodes!.size()!;
-;
+    var numberOfLines: number = lineNodes!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfLines; index++)
+    var index: number = 0;index < numberOfLines; index++)
         {
 
-    var lineNode: Node = lineNodes!.get(index) as Node;
-;
+    var lineNode: Node = lineNodes!.get(index) as Node;;
     
 
-    var pointNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(lineNode!.getChildNodes())!;
-;
+    var pointNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(lineNode!.getChildNodes())!;;
     
 
-    var pointOneNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTONE, pointNodes)!;
-;
+    var pointOneNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTONE, pointNodes)!;;
     
 this.addPoint(pointOneNode!.getChildNodes());
     
@@ -211,8 +207,7 @@ this.addPoint(pointOneNode!.getChildNodes());
                         
                                     {
                                     
-    var pointTwoNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTTWO, pointNodes)!;
-;
+    var pointTwoNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTTWO, pointNodes)!;;
     
 this.addPoint(pointTwoNode!.getChildNodes());
     
@@ -258,8 +253,7 @@ this.fulcrumPoint= PointFactory.getInstance()!.createXY(0, 0);
 StatusFactory.getInstance()!.setStatus("Translating: " +this.points.getPoints());
     
 
-    var basicGraphicsPipeline: BasicGraphicsPipeline = new BasicGraphicsPipeline(this.points.getPoints());
-;
+    var basicGraphicsPipeline: BasicGraphicsPipeline = new BasicGraphicsPipeline(this.points.getPoints());;
     
 basicGraphicsPipeline!.translate(x, y);
     
@@ -333,36 +327,28 @@ this.setRotate(this.theta +Math.toRadians(angle));
 
     addPoint(pointNodes: NodeList){
 
-    var list: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(pointNodes)!;
-;
+    var list: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(pointNodes)!;;
     
 
-    var xNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.X, list)!;
-;
+    var xNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.X, list)!;;
     
 
-    var xTextNode: Node = xNode!.getFirstChild()!;
-;
+    var xTextNode: Node = xNode!.getFirstChild()!;;
     
 
-    var xInteger: Integer = new Integer(xTextNode!.getNodeValue());
-;
+    var xInteger: Integer = new Integer(xTextNode!.getNodeValue());;
     
 
-    var yNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.Y, list)!;
-;
+    var yNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.Y, list)!;;
     
 
-    var yTextNode: Node = yNode!.getFirstChild()!;
-;
+    var yTextNode: Node = yNode!.getFirstChild()!;;
     
 
-    var yInteger: Integer = new Integer(yTextNode!.getNodeValue());
-;
+    var yInteger: Integer = new Integer(yTextNode!.getNodeValue());;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY(xInteger!.intValue(), yInteger!.intValue())!;
-;
+    var point: GPoint = PointFactory.getInstance()!.createXY(xInteger!.intValue(), yInteger!.intValue())!;;
     
 this.addPoint(point);
     
@@ -387,22 +373,19 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
 
     var point: GPoint = 
                 null
-            ;
-;
+            ;;
     
 
                         if(this.points.getSize() > 0)
                         
                                     {
                                     
-    var lastPoint: number = this.points.getSize() -1;
-;
+    var lastPoint: number = this.points.getSize() -1;;
     
 point= this.points.getPoints()!.removeAt(lastPoint) as GPoint;
     
 
-    var index: number = this.pointTreeNodeVector!.length -1;
-;
+    var index: number = this.pointTreeNodeVector!.length -1;;
     
 
                         if(index > 0)
@@ -453,20 +436,17 @@ this.active= true;
             
     public duplicatePoints(list: BasicArrayList){
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var point: GPoint = list.get(index) as GPoint;
-;
+    var point: GPoint = list.get(index) as GPoint;;
     
 
                         if(point != 
@@ -492,8 +472,7 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
             
     public duplicate(): GraphicItemInterface{
 
-    var linesGraphicItem: LinesGraphicItem = new LinesGraphicItem();
-;
+    var linesGraphicItem: LinesGraphicItem = new LinesGraphicItem();;
     
 linesGraphicItem!.duplicatePoints(this.points.getPoints());
     
@@ -528,8 +507,7 @@ this.fulcrumPoint= point;
 
         try {
             
-    var graphics: Graphics2D = g as Graphics2D;
-;
+    var graphics: Graphics2D = g as Graphics2D;;
     
 graphics.setColor(getColor());
     
@@ -547,8 +525,7 @@ graphics.setStroke(new BasicStroke(x));
                                     }
                                 
 
-    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(this.points.getPoints(), canvasAngle, PointFactory.getInstance()!.createXY(dimension.getWidth(), dimension.getHeight()))!;
-;
+    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(this.points.getPoints(), canvasAngle, PointFactory.getInstance()!.createXY(dimension.getWidth(), dimension.getHeight()))!;;
     
 
                         if(this.isActive() && this.currentMousePoint != 
@@ -562,14 +539,12 @@ graphics.setStroke(new BasicStroke(x));
                                     }
                                 
 
-    var size: number = tempPointVector!.size()!;
-;
+    var size: number = tempPointVector!.size()!;;
     
 
     var firstPoint: GPoint = 
                 null
-            ;
-;
+            ;;
     
 
                         if(size > 0)
@@ -585,12 +560,10 @@ graphics.setStroke(new BasicStroke(x));
 
 
                         for (
-    var index: number = 1;
-index < size; index++)
+    var index: number = 1;index < size; index++)
         {
 
-    var secondPoint: GPoint = tempPointVector!.get(index) as GPoint;
-;
+    var secondPoint: GPoint = tempPointVector!.get(index) as GPoint;;
     
 graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4));
     
@@ -667,16 +640,14 @@ this.color= color;
 
         try {
             
-    var mousePoint: GPoint = PointFactory.getInstance()!.createXY(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
-;
+    var mousePoint: GPoint = PointFactory.getInstance()!.createXY(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;;
     
 
                         if((mouseEvent!.getModifiers()&mouseEvent!.BUTTON1_MASK) == mouseEvent!.BUTTON1_MASK)
                         
                                     {
                                     
-    var point: GPoint = PointFactory.getInstance()!.createXY(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
-;
+    var point: GPoint = PointFactory.getInstance()!.createXY(mousePoint!.getX() /x, mousePoint!.getY() /y)!;;
     
 StatusFactory.getInstance()!.setStatus("Line Point Added: " +point.toString());
     
@@ -733,12 +704,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
 
         try {
             
-    var mousePoint: GPoint = PointFactory.getInstance()!.createXY(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
-;
+    var mousePoint: GPoint = PointFactory.getInstance()!.createXY(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
-;
+    var point: GPoint = PointFactory.getInstance()!.createXY(mousePoint!.getX() /x, mousePoint!.getY() /y)!;;
     
 this.currentMousePoint= point;
     
@@ -757,8 +726,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
 
         try {
             
-    var keyCode: number = keyEvent!.getKeyCode()!;
-;
+    var keyCode: number = keyEvent!.getKeyCode()!;;
     
 
                         if(keyCode == keyEvent!.VK_ESCAPE)

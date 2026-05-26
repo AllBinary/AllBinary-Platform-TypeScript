@@ -71,7 +71,8 @@ export class DeleteValidationUserView extends UserView implements ValidationComp
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private userName: string
+    private userName: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -79,12 +80,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest() as HttpServletRequest;
-;
+    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest() as HttpServletRequest;;
     
 
-    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
     
 this.userName= new UserName(hashMap).get();
     
@@ -171,8 +170,7 @@ this.userName= new UserName(hashMap).get();
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(UserName.getInstance()!.isValid(this.userName) == Boolean.TRUE)

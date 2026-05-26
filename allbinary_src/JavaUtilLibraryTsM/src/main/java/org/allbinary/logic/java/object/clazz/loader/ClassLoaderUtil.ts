@@ -54,8 +54,7 @@ export class ClassLoaderUtil
             
     public static getName(anyType: any = {}): string{
 
-    var classLoader: ClassLoader = anyType!.constructor.namegetClassLoader()!;
-;
+    var classLoader: ClassLoader = anyType!.constructor.namegetClassLoader()!;;
     
 
                         if(classLoader != 
@@ -78,6 +77,7 @@ export class ClassLoaderUtil
                             throw new Exception("Unable to get ClassLoader");
                     
 }
+
 
 private constructor (){
 

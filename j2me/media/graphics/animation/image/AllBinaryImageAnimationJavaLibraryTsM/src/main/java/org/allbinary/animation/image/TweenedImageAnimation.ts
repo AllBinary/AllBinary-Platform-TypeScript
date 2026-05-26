@@ -64,15 +64,16 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 export class TweenedImageAnimation extends IndexedAnimation {
         
 
-    private readonly image: Image
+    private readonly image: Image;
 
-    private readonly dx: number
+    private readonly dx: number;
 
-    private readonly dy: number
+    private readonly dy: number;
 
-    private totalFrames: number
+    private totalFrames: number;
 
-    circularIndexUtil: CircularIndexUtil
+    circularIndexUtil: CircularIndexUtil;
+
 public constructor (image: Image, dx: number, dy: number, totalFrames: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -160,16 +161,13 @@ this.circularIndexUtil!.setIndex(index);
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var frame: number = this.getFrame()!;
-;
+    var frame: number = this.getFrame()!;;
     
 
-    var currentX: number = this.dx *frame;
-;
+    var currentX: number = this.dx *frame;;
     
 
-    var currentY: number = this.dy *frame;
-;
+    var currentY: number = this.dy *frame;;
     
 graphics.drawImage(this.image, x +currentX, y +currentY, this.anchor);
     

@@ -69,17 +69,18 @@ export class ShippingHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
 
-    private pageContext: PageContext
+    private pageContext: PageContext;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private shippingType: string
+    private shippingType: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -88,8 +89,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -119,12 +119,10 @@ this.shippingType= this.request.getParameter(ShippingMethodData.NAME);
 
         try {
             
-    var success: string = "Successfully Set Shipping Type";
-;
+    var success: string = "Successfully Set Shipping Type";;
     
 
-    var order: OrderInterface = this.weblisketSession!.getOrder()!;
-;
+    var order: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 order.setShippingMethod(this.shippingType);
     
@@ -148,8 +146,7 @@ order.setShippingMethod(this.shippingType);
 } catch(e) 
             {
 
-    var error: string = "Failed to view Shipping Type";
-;
+    var error: string = "Failed to view Shipping Type";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

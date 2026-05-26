@@ -53,7 +53,8 @@ export class AnalogControllerHelper
          {
         
 
-    private readonly reduceTimeFactor: number
+    private readonly reduceTimeFactor: number;
+
 public constructor (reduceTimeFactor: number){
 
             super();

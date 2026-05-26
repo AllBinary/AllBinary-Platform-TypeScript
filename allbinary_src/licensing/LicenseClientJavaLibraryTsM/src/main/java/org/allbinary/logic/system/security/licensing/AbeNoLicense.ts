@@ -68,6 +68,7 @@ export class AbeNoLicense
 
 
     public serverVector: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();

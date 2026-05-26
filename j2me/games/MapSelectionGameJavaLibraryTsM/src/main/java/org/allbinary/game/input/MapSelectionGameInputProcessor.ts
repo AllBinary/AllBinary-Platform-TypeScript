@@ -88,17 +88,17 @@ export class MapSelectionGameInputProcessor extends Processor implements GameInp
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly gameCanvas: AllBinaryGameCanvas
+    private readonly gameCanvas: AllBinaryGameCanvas;
 
-    private readonly raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface
+    private readonly raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface;
 
-    private readonly preGameSelectorPaintable: PreGameSelectorPaintable
+    private readonly preGameSelectorPaintable: PreGameSelectorPaintable;
 
     private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
 
-    private readonly playerGameInput: PlayerGameInput
+    private readonly playerGameInput: PlayerGameInput;
 
-    private readonly lockedIndex: number
+    private readonly lockedIndex: number;
 
     private readonly abRunnable: ABRunnable = new class extends ABRunnable
                                 {
@@ -111,12 +111,10 @@ export class MapSelectionGameInputProcessor extends Processor implements GameInp
 SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 
-    var track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;
-;
+    var track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;;
     
 
-    var wave: number = raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;
-;
+    var wave: number = raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;;
     
 gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
     
@@ -133,12 +131,10 @@ this.setRunning(false);
 this.setRunning(false);
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
@@ -148,6 +144,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
                                 }
                             ;
+
 public constructor (gameCanvas: AllBinaryGameCanvas, raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface, mapSelectorPaintable: PreGameSelectorPaintable, lockedIndex: number){
 
             super();
@@ -176,24 +173,20 @@ this.getPlayerGameInput()!.update();
             
     public onInput(list: BasicArrayList){
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.get(index)!;
-;
+    var anyType: any = list.get(index)!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;
-;
+    var key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 
                         if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
@@ -221,8 +214,7 @@ break;
                         
                                     {
                                     
-    var selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;
-;
+    var selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;;
     
 
                         if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLocked())
@@ -235,8 +227,7 @@ break;
                                     abRunnable!.setRunning(true);
     
 
-    var thread: Thread = new Thread(abRunnable);
-;
+    var thread: Thread = new Thread(abRunnable);;
     
 thread.start();
     

@@ -59,7 +59,8 @@ export class StoreEmailInfo extends BasicEmailInfo {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
+
 public constructor (storeFrontInterface: StoreFrontInterface, subject: string, textBody: string){
             super(subject, textBody);
                     
@@ -71,8 +72,7 @@ public constructor (storeFrontInterface: StoreFrontInterface, subject: string, t
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -90,12 +90,10 @@ this.init();
             
     init(){
 
-    var contextConfigurationInterface: ContextConfigurationInterface = this.storeFrontInterface!.getContextConfigurationInterface()!;
-;
+    var contextConfigurationInterface: ContextConfigurationInterface = this.storeFrontInterface!.getContextConfigurationInterface()!;;
     
 
-    var emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;
-;
+    var emailServerConfigurationInterface: EmailServerConfigurationInterface = contextConfigurationInterface!.getEmailServerConfigurationInterface()!;;
     
 this.setEmailServerConfigurationInterface(emailServerConfigurationInterface);
     

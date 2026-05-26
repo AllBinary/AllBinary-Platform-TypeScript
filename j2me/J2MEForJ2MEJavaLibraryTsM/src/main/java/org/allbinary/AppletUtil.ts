@@ -55,6 +55,7 @@ export class AppletUtil
     
 }
 
+
 private constructor (){
 
             super();

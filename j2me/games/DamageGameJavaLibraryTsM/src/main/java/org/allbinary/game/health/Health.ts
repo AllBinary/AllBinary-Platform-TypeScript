@@ -63,11 +63,12 @@ export class Health
 
     private static readonly MAX_HEALTH_LABEL: string = " Max: ";
 
-    private health: number= 0
+    private health: number= 0;
 
-    private maxHealth: number= 0
+    private maxHealth: number= 0;
 
     private healthListenerInterface: HealthListenerInterface = NullHealthListener.NULL_HEALTH_LISTENER;
+
 public constructor (maxHealth: number){
 
             super();
@@ -80,8 +81,7 @@ this.setHealth(maxHealth);
 
     public heal(ahealth: number){
 
-    var newHealth: number = this.getHealth() +ahealth;
-;
+    var newHealth: number = this.getHealth() +ahealth;;
     
 
                         if(newHealth > this.getMaxHealth())
@@ -140,8 +140,7 @@ this.setHealth(this.getMaxHealth());
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("******* Trying to heal when damaging. Damage: ");
     
@@ -163,8 +162,7 @@ ForcedLogUtil.log(stringBuffer!.toString(), this);
                                     }
                                 
 
-    var health: number = this.getHealth() -ahealth;
-;
+    var health: number = this.getHealth() -ahealth;;
     
 this.setHealth(health);
     
@@ -271,8 +269,7 @@ this.healthListenerInterface= healthGraphic;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(Health.HEALTH_LABEL);
     

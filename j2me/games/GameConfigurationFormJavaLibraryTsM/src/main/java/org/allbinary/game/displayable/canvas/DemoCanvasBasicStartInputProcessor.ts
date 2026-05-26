@@ -62,6 +62,7 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
 
 export class DemoCanvasBasicStartInputProcessor extends BasicMenuInputProcessor {
         
+
 public constructor (gameKeyEventList: BasicArrayList, gameCanvas: RunnableCanvas){
             super(gameKeyEventList,  -1, gameCanvas);
                     
@@ -75,24 +76,20 @@ public constructor (gameKeyEventList: BasicArrayList, gameCanvas: RunnableCanvas
             
     public processInputList(): number{
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;
-;
+    var list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var gameKeyEvent: GameKeyEvent
-;
+    var gameKeyEvent: GameKeyEvent;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     

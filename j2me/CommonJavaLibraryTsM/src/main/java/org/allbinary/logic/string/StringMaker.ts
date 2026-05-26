@@ -40,9 +40,10 @@ export class StringMaker
          {
         
 
-    private charArray: string[]
+    private charArray: string[];
 
-    private currentLength: number= 0
+    private currentLength: number= 0;
+
 public constructor (){
 
             super();
@@ -53,8 +54,7 @@ public constructor (){
 
     public append(string: string): StringMaker{
 
-    var stringLength: number = string.length!;
-;
+    var stringLength: number = string.length!;;
     
 this.ensureCapacity(this.currentLength +stringLength);
     
@@ -198,16 +198,14 @@ this.charArray[this.currentLength++]= 'e';
     public ensureCapacity(minSize: number){
 
     var oldCapacity: number = this.charArray!.length
-                ;
-;
+                ;;
     
 
                         if(minSize > oldCapacity)
                         
                                     {
                                     
-    var newCapacity: number = oldCapacity *3;
-;
+    var newCapacity: number = oldCapacity *3;;
     
 
                         if(newCapacity < minSize)
@@ -216,12 +214,10 @@ this.charArray[this.currentLength++]= 'e';
     var copy: string[] = 
                                                         
                                                         new Array(newCapacity)
-                                                    ;
-;
+                                                    ;;
     
 
-    var min: number = this.min(this.charArray!.length, newCapacity)!;
-;
+    var min: number = this.min(this.charArray!.length, newCapacity)!;;
     
 System.arraycopy(this.charArray, 0, copy, 0, min);
     

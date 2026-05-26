@@ -80,7 +80,8 @@ export class UserEmailConfigurationView
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private userEmailConfigurationInterface: UserEmailConfigurationInterface
+    private userEmailConfigurationInterface: UserEmailConfigurationInterface;
+
 public constructor (node: Node){
 
             super();
@@ -96,20 +97,18 @@ public constructor (node: Node){
 this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
     
 
-    var childNodeList: NodeList = node.getChildNodes()!;
-;
+    var childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var userEmailEventsConfigurationNode: Node = DomSearchHelper.getNodeNoThrow(UserEmailEventsConfigurationData.NAME, childNodeList)!;
-;
+    var userEmailEventsConfigurationNode: Node = DomSearchHelper.getNodeNoThrow(UserEmailEventsConfigurationData.NAME, childNodeList)!;;
     
 
-    var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationNode);
-;
+    var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationNode);;
     
 this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface());
     
 }
+
 
 public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
 
@@ -133,28 +132,22 @@ public constructor (userEmailConfigurationInterface: UserEmailConfigurationInter
             
     public toXmlNode(document: Document): Node{
 
-    var emailConfigurationMapping: UserEmailConfigurationMapping = new UserEmailConfigurationMapping(this.userEmailConfigurationInterface);
-;
+    var emailConfigurationMapping: UserEmailConfigurationMapping = new UserEmailConfigurationMapping(this.userEmailConfigurationInterface);;
     
 
-    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, UserEmailConfigurationData.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, UserEmailConfigurationData.NAME, hashMap)!;;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface = this.getEmailConfigurationInterface()!;
-;
+    var userEmailConfigurationInterface: UserEmailConfigurationInterface = this.getEmailConfigurationInterface()!;;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;
-;
+    var userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;;
     
 
-    var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationInterface);
-;
+    var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationInterface);;
     
 node.appendChild(userEmailEventsConfigurationView!.toXmlNode(document));
     

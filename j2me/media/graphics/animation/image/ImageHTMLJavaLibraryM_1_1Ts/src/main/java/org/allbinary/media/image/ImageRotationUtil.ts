@@ -71,6 +71,7 @@ export class ImageRotationUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -83,22 +84,18 @@ private constructor (){
                         
                                     {
                                     
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
-;
+    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
-;
+    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-;
+    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2);
     
 
-    var image2: Image = this.rotateImageCanvasSurface(originalImage, image, canvasSurface, totalAngle)!;
-;
+    var image2: Image = this.rotateImageCanvasSurface(originalImage, image, canvasSurface, totalAngle)!;;
     
 this.drawImage(originalImage, image, canvasSurface);
     
@@ -190,16 +187,14 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
 
     var originalPlayNImage: playn.core.Image = 
                 null
-            ;
-;
+            ;;
     
 
                         if(originalImage!.isMutable())
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
-;
+    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -208,8 +203,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
-;
+    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -225,12 +219,10 @@ canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -o
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
-;
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
-    var rotatedImage: Image = this.rotateImage(originalImage, image, rotationInDegrees)!;
-;
+    var rotatedImage: Image = this.rotateImage(originalImage, image, rotationInDegrees)!;;
     
 
                         if(rotatedImage == 

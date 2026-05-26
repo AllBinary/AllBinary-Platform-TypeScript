@@ -48,13 +48,14 @@ export class Line
          {
         
 
-    private p1: GPoint
+    private p1: GPoint;
 
-    private p2: GPoint
+    private p2: GPoint;
 
-    private deltaX: number= 0.0
+    private deltaX: number= 0.0;
 
-    private deltaY: number= 0.0
+    private deltaY: number= 0.0;
+
 public constructor (p1: GPoint, p2: GPoint){
 
             super();

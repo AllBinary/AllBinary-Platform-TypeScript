@@ -49,7 +49,8 @@ export class InputAutomationRobotService
          implements InputAutomationRobotServiceInterface {
         
 
-    private inputRobotInterfaceArray: InputRobotInterface[]
+    private inputRobotInterfaceArray: InputRobotInterface[];
+
 public constructor (inputRobotInterfaceArray: InputRobotInterface[]){
 
             super();

@@ -45,6 +45,7 @@ export class SideScrollerAnimation
             extends Object
          {
         
+
 public constructor (){
 
             super();

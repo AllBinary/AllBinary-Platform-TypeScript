@@ -77,8 +77,7 @@ export class BasicTouchButtonsBuilder extends BaseTouchInput {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.GET_LIST);
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
 

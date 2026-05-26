@@ -48,11 +48,12 @@ export class ImageAnalysisResults
          {
         
 
-    private imageColorRangeResults: ImageColorRangeResults
+    private imageColorRangeResults: ImageColorRangeResults;
 
-    private imageColorResults: ImageColorResults
+    private imageColorResults: ImageColorResults;
 
-    private averageAmbientLevel: number= 0.0
+    private averageAmbientLevel: number= 0.0;
+
 public constructor (){
 
             super();

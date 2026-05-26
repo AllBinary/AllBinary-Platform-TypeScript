@@ -54,6 +54,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 
 export class ComboSequenceAI extends SequenceAI {
         
+
 public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
                     
@@ -67,21 +68,18 @@ public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInter
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[] = this.getArtificialIntelligenceInterface()!;
-;
+    var artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[] = this.getArtificialIntelligenceInterface()!;;
     
 
     var size: number = artificialIntelligenceInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.setIndex(index);
     

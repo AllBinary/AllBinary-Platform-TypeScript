@@ -65,6 +65,7 @@ export class HardwareFactory
 
 
     private readonly SINGLETON: HardwareInterface = NoHardware.getInstance()!;
+
 private constructor (){
 
             super();

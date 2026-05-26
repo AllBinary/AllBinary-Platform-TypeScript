@@ -63,6 +63,7 @@ import { MainGameDemoStatePaintable } from './MainGameDemoStatePaintable.js';
 
 export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements ColorChangeListener {
         
+
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable, basicColor: BasicColor){
             super(mainDemoStatePaintable, ownershipPaintable, helpPaintableInterface);
                     
@@ -88,16 +89,13 @@ this.setCurrentStatePaintable(this.getMainDemoStatePaintable());
 
     setColor(basicColor: BasicColor){
 
-    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable() as MainGameDemoStatePaintable;
-;
+    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable() as MainGameDemoStatePaintable;;
     
 
-    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface() as FormPaintable;
-;
+    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface() as FormPaintable;;
     
 
-    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm() as ScrollSelectionForm;
-;
+    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm() as ScrollSelectionForm;;
     
 mainGameDemoStatePaintable!.getOwnershipPaintableInterface()!.setBasicColorP(basicColor);
     
@@ -108,16 +106,13 @@ scrollSelectionForm!.setButtonBasicColor(basicColor);
 
 
                         for (
-    var index: number = scrollSelectionForm!.size() -1;
-index >= 0; index--)
+    var index: number = scrollSelectionForm!.size() -1;index >= 0; index--)
         {
 
-    var item: ABTextItem = scrollSelectionForm!.get(index) as ABTextItem;
-;
+    var item: ABTextItem = scrollSelectionForm!.get(index) as ABTextItem;;
     
 
-    var stringComponent: ABStringComponent = item.getLabelStringComponent()!;
-;
+    var stringComponent: ABStringComponent = item.getLabelStringComponent()!;;
     
 
                         if(stringComponent != 

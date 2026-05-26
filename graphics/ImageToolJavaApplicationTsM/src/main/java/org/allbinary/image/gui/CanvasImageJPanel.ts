@@ -102,9 +102,10 @@ export class CanvasImageJPanel extends javax.swing.JPanel implements ImageProces
 
     private readonly imageStrings: ImageStrings = ImageStrings.getInstance()!;
 
-    private imageProcessorInput: ImageProcessorInput
+    private imageProcessorInput: ImageProcessorInput;
 
-    private result: BufferedImage
+    private result: BufferedImage;
+
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
                     
@@ -124,34 +125,27 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var canvasTrimUtil: CanvasTrimUtil = CanvasTrimUtil.getInstance()!;
-;
+    var canvasTrimUtil: CanvasTrimUtil = CanvasTrimUtil.getInstance()!;;
     
 
-    var canvasExpandUtil: CanvasExpandUtil = CanvasExpandUtil.getInstance()!;
-;
+    var canvasExpandUtil: CanvasExpandUtil = CanvasExpandUtil.getInstance()!;;
     
 
-    var leftReduction: number = Integer.valueOf(widthReductionTextField1!.getText())!;
-;
+    var leftReduction: number = Integer.valueOf(widthReductionTextField1!.getText())!;;
     
 
-    var topReduction: number = Integer.valueOf(heightReductionTextField1!.getText())!;
-;
+    var topReduction: number = Integer.valueOf(heightReductionTextField1!.getText())!;;
     
 
-    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;
-;
+    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;;
     
 
-    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;
-;
+    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;;
     
 
                         if(leftReduction <= 0 || topReduction <= 0 || widthReduction <= 0 || heightReduction <= 0)
@@ -248,8 +242,7 @@ writeOverOriginalJCheckBoxActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
-;
+    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -311,8 +304,7 @@ this.jLabel8!.setText("Left:");
 this.heightReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 
-    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);
-;
+    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -321,8 +313,7 @@ jPanel2Layout!.setHorizontalGroup(jPanel2Layout!.createParallelGroup(javax.swing
 jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout!.createSequentialGroup()!.addGap(0, 16, Short.MAX_VALUE)!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel6)!.addComponent(heightReductionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel8)!.addComponent(widthReductionTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)!.addComponent(jLabel7)!.addComponent(heightReductionTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)!.addComponent(jLabel5)!.addComponent(widthReductionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -351,31 +342,31 @@ this.process();
 }
 
 
-    private generateJButton: javax.swing.JButton
+    private generateJButton: javax.swing.JButton;
 
-    private heightReductionTextField: javax.swing.JTextField
+    private heightReductionTextField: javax.swing.JTextField;
 
-    private heightReductionTextField1: javax.swing.JTextField
+    private heightReductionTextField1: javax.swing.JTextField;
 
-    private jLabel4: javax.swing.JLabel
+    private jLabel4: javax.swing.JLabel;
 
-    private jLabel5: javax.swing.JLabel
+    private jLabel5: javax.swing.JLabel;
 
-    private jLabel6: javax.swing.JLabel
+    private jLabel6: javax.swing.JLabel;
 
-    private jLabel7: javax.swing.JLabel
+    private jLabel7: javax.swing.JLabel;
 
-    private jLabel8: javax.swing.JLabel
+    private jLabel8: javax.swing.JLabel;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private jPanel2: javax.swing.JPanel
+    private jPanel2: javax.swing.JPanel;
 
-    private widthReductionTextField: javax.swing.JTextField
+    private widthReductionTextField: javax.swing.JTextField;
 
-    private widthReductionTextField1: javax.swing.JTextField
+    private widthReductionTextField1: javax.swing.JTextField;
 
-    private writeOverOriginalJCheckBox: javax.swing.JCheckBox
+    private writeOverOriginalJCheckBox: javax.swing.JCheckBox;
 
     public getImageProcessorInput(): ImageProcessorInput{
 
@@ -403,20 +394,17 @@ this.result= generatedBufferedImage;
 this.getParent()!.repaint();
     
 
-    var file: File = this.imageProcessorInput!.getFiles()[index]!;
-;
+    var file: File = this.imageProcessorInput!.getFiles()[index]!;;
     
 
                         if(!this.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;
-;
+    var filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
-;
+    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
@@ -426,8 +414,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(CanvasImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
-;
+    var isWritten: boolean = ImageIO.write(CanvasImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     

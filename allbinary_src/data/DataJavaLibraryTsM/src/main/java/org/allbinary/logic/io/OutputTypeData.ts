@@ -57,6 +57,7 @@ export class OutputTypeData
     
 }
 
+
 private constructor (){
 
             super();

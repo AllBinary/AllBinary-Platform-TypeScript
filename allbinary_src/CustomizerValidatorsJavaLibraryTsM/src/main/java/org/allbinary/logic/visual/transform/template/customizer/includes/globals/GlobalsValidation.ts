@@ -69,13 +69,15 @@ export class GlobalsValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
+
 public constructor (storeName: string){
 
             super();
         this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
 }
+
 
 public constructor (document: Document){
 
@@ -92,8 +94,7 @@ public constructor (document: Document){
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
 
@@ -129,8 +130,7 @@ public constructor (document: Document){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -186,8 +186,7 @@ public constructor (document: Document){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GlobalsData.NAME)!;
-;
+    var node: Node = document.createElement(GlobalsData.NAME)!;;
     
 node.appendChild(new StoreFrontView(this.storeFrontInterface).toXmlNode(document));
     

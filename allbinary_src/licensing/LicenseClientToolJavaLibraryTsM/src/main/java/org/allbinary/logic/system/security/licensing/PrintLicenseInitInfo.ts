@@ -66,12 +66,12 @@ export class PrintLicenseInitInfo
             
     public static main(args: string[]){
 
-    var initInfo: PrintLicenseInitInfo = new PrintLicenseInitInfo(args);
-;
+    var initInfo: PrintLicenseInitInfo = new PrintLicenseInitInfo(args);;
     
 initInfo!.printInitInfo();
     
 }
+
 
 public constructor (options: string[]){
 
@@ -85,8 +85,7 @@ public constructor (options: string[]){
             
     public getLicenseInitInfo(): LicenseInitInfo{
 
-    var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
-;
+    var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
     
 
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.getFilePath()))
@@ -120,26 +119,22 @@ public constructor (options: string[]){
 
         try {
             
-    var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;
-;
+    var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;;
     
 console.log("License ID: " +licenseInitInfo!.getLicenseId());
     
 
-    var list: BasicArrayList = licenseInitInfo!.getServerList()!;
-;
+    var list: BasicArrayList = licenseInitInfo!.getServerList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 console.log("Lic Serv: " +list.get(index));
     

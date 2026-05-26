@@ -82,6 +82,7 @@ export class PageValidationView extends PageView implements ValidationComponentI
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -104,8 +105,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -117,16 +117,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var pageObjectConfigInterface: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;
-;
+    var pageObjectConfigInterface: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;;
     
 
-    var allViewsToBeModifiedVector: Vector = pageObjectConfigInterface!.getGroupTransforms()!;
-;
+    var allViewsToBeModifiedVector: Vector = pageObjectConfigInterface!.getGroupTransforms()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -138,32 +135,27 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var size: number = allViewsToBeModifiedVector!.length!;
-;
+    var size: number = allViewsToBeModifiedVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
-;
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;;
     
 
-    var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;
-;
+    var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getTransformInfoInterface()!.getName());
     
@@ -177,20 +169,17 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-;
+    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getTransformInfoInterface()!.getName());
     
@@ -204,12 +193,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;
-;
+    var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;;
     
 
                         if(title.compareTo("index") == 0)
@@ -227,8 +214,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                         }
                             
 
-    var pageValidation: PageValidation = new PageValidation(hashMap);
-;
+    var pageValidation: PageValidation = new PageValidation(hashMap);;
     
 
                         if(pageValidation!.isValid() == Boolean.FALSE)
@@ -244,22 +230,19 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                         
                                     {
                                     
-    var document: Document = DomDocumentHelper.create()!;
-;
+    var document: Document = DomDocumentHelper.create()!;;
     
 document.appendChild(pageValidation!.toXmlNode(document));
     
 
-    var documentString: string = DomDocumentHelper.toString(document)!;
-;
+    var documentString: string = DomDocumentHelper.toString(document)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(viewNameOfViewToBeModified);
     
@@ -317,56 +300,44 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var objectConfig: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;
-;
+    var objectConfig: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var allViewsToBeModifiedVector: Vector = objectConfig!.getGroupTransforms()!;
-;
+    var allViewsToBeModifiedVector: Vector = objectConfig!.getGroupTransforms()!;;
     
 
-    var size: number = allViewsToBeModifiedVector!.length!;
-;
+    var size: number = allViewsToBeModifiedVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
-;
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;;
     
 
-    var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;
-;
+    var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-;
+    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;
-;
+    var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;;
     
 
                         if(title.compareTo("index") == 0)
@@ -384,8 +355,7 @@ index < size; index++)
                         }
                             
 
-    var pageValidation: PageValidation = new PageValidation(hashMap);
-;
+    var pageValidation: PageValidation = new PageValidation(hashMap);;
     
 
                         if(pageValidation!.isValid() == Boolean.FALSE)

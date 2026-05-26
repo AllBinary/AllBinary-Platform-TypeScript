@@ -64,15 +64,15 @@ export class WorkAreaDom
 
     public static readonly FRAMES: string = "frames";
 
-    private name: string
+    private name: string;
 
-    private canvasNodeList: BasicArrayList
+    private canvasNodeList: BasicArrayList;
+
 public constructor (document: Document){
 
             super();
         
-    var workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;
-;
+    var workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;;
     
 
                         if(workAreaNodeList != 
@@ -81,24 +81,20 @@ public constructor (document: Document){
                         
                                     {
                                     
-    var numberOfworkAreas: number = workAreaNodeList!.getLength()!;
-;
+    var numberOfworkAreas: number = workAreaNodeList!.getLength()!;;
     
 
                         if(numberOfworkAreas == 1)
                         
                                     {
                                     
-    var numberOfNodes: number = workAreaNodeList!.getLength()!;
-;
+    var numberOfNodes: number = workAreaNodeList!.getLength()!;;
     
 
-    var nameNode: Node = DomHelper.getInstance()!.searchNodeList(this.NAME, workAreaNodeList!.item(0)!.getChildNodes())!;
-;
+    var nameNode: Node = DomHelper.getInstance()!.searchNodeList(this.NAME, workAreaNodeList!.item(0)!.getChildNodes())!;;
     
 
-    var nameTextNode: Node = nameNode!.getFirstChild()!;
-;
+    var nameTextNode: Node = nameNode!.getFirstChild()!;;
     
 this.name= nameTextNode!.getNodeValue();
     

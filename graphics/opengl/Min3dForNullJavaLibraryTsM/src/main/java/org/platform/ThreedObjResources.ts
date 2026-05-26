@@ -64,8 +64,7 @@ export class ThreedObjResources
 
     public get(resourceName: string): string{
 
-    var resourceName2: string = this.hashtable.get(resourceName) as string;
-;
+    var resourceName2: string = this.hashtable.get(resourceName) as string;;
     
 
                         if(resourceName2 != 

@@ -57,6 +57,7 @@ export class GameYouLoseSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/youlose.wav");
                     

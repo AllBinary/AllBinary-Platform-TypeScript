@@ -113,6 +113,7 @@ export class OpenGLConfiguration
     private color: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.IMAGE_COLOR_DEPTH_4444;
 
     private versionSelector: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT;
+
 private constructor (){
 
             super();
@@ -148,24 +149,19 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
             
     read(){
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-;
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;
-;
+    var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 
-    var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);
-;
+    var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);;
     
 
-    var openGLValue: number = dataInputStream!.readInt()!;
-;
+    var openGLValue: number = dataInputStream!.readInt()!;;
     
 
                         if(openGLValue == 0)
@@ -195,8 +191,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var version: string = dataInputStream!.readUTF()!;
-;
+    var version: string = dataInputStream!.readUTF()!;;
     
 
                         if(version.compareTo(openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
@@ -226,8 +221,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var type: string = dataInputStream!.readUTF()!;
-;
+    var type: string = dataInputStream!.readUTF()!;;
     
 
                         if(type.compareTo(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
@@ -257,8 +251,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var imageColor: string = dataInputStream!.readUTF()!;
-;
+    var imageColor: string = dataInputStream!.readUTF()!;;
     
 
                         if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
@@ -297,8 +290,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                         }
                             
 
-    var color: string = dataInputStream!.readUTF()!;
-;
+    var color: string = dataInputStream!.readUTF()!;;
     
 
                         if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
@@ -345,24 +337,20 @@ PreLogUtil.put("Read Configuration: " +this.toString(), this, "read");
             
     public write(){
 
-    var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;
-;
+    var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;;
     
 
         try {
             PreLogUtil.put("Write Configuration: " +this.toString(), this, "write");
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;
-;
+    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 
-    var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);
-;
+    var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);;
     
 closeable= dataOutputStream;
     
@@ -415,8 +403,7 @@ dataOutputStream!.flush();
             
     public init(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
@@ -487,16 +474,13 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
             
     public update(gameFeature: Feature, colorLocked: boolean){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-;
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
-    var modified: boolean = false;
-;
+    var modified: boolean = false;;
     
 
                         if(gameFeature == openGLFeatureFactory!.OPENGL)
@@ -759,12 +743,10 @@ this.type= type;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append(" isOpenGL: ");
     

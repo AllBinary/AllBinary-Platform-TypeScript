@@ -73,37 +73,31 @@ export class ChoiceGroupImageUtil
 
     public init(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;
-;
+    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
     
 
-    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;
-;
+    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
     
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-;
+    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
     var size: number = imageArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 imageArray[index]= preResourceImageUtil!.encapsulate(imageArray[index]!);
     
@@ -119,37 +113,31 @@ choiceGroupFactory!.init(imageArray);
 
     public update(gl: GL){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;
-;
+    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
     
 
-    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;
-;
+    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
     
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-;
+    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
     var size: number = imageArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 preResourceImageUtil!.updateGL(gl, imageArray[index]!);
     
@@ -165,37 +153,31 @@ choiceGroupFactory!.init(imageArray);
 
     public update(graphics: Graphics){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;
-;
+    var choiceGroupFactory: ChoiceGroupImageFactory = ChoiceGroupImageFactory.getInstance()!;;
     
 
-    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;
-;
+    var imageArray: Image[] = choiceGroupFactory!.getImageArray()!;;
     
 
                         if(features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
-    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-;
+    var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;;
     
 
     var size: number = imageArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 preResourceImageUtil!.update(graphics, imageArray[index]!);
     

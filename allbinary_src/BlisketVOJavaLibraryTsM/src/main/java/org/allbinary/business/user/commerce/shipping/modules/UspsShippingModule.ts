@@ -54,6 +54,7 @@ export class UspsShippingModule
     private readonly name: string = "USPS";
 
     private readonly description: string = "Snail Mail";
+
 public constructor (){
 
             super();

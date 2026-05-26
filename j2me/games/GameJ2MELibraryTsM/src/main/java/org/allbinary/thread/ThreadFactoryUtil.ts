@@ -111,8 +111,7 @@ export class ThreadFactoryUtil
 
     getInstanceType(runnable: Runnable, type: number): Thread{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(J2MEUtil.isHTML())
@@ -123,14 +122,12 @@ export class ThreadFactoryUtil
                         
                                     {
                                     
-    var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);
-;
+    var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);;
     
 PreLogUtil.put(new StringMaker().append("Using Pseudo Thread for DemoCanvas/AllBinaryGameCanvas under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
-    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
-;
+    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
     
 primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
     
@@ -141,8 +138,7 @@ primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
                             PreLogUtil.put(new StringMaker().append("Using Pseudo Thread for Runnable under PlayN/HTML5: ")!.append(StringUtil.getInstance()!.toString(runnable))!.toString(), this, commonStrings!.CONSTRUCTOR);
     
 
-    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
-;
+    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
     
 primaryThreadPool!.runTask(runnable);
     
@@ -153,8 +149,7 @@ primaryThreadPool!.runTask(runnable);
                                     }
                                 
 
-    var thread: Thread = new Thread(runnable, runnable.toString());
-;
+    var thread: Thread = new Thread(runnable, runnable.toString());;
     
 this.logUtil!.putF(thread.toString(), this, commonStrings!.CONSTRUCTOR);
     

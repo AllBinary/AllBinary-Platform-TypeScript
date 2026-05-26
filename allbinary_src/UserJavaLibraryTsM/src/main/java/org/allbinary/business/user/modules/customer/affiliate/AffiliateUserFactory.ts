@@ -54,6 +54,7 @@ export class AffiliateUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

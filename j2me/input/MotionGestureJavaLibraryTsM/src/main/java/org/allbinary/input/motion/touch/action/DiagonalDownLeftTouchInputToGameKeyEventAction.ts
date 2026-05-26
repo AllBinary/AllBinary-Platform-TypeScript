@@ -61,6 +61,7 @@ export class DiagonalDownLeftTouchInputToGameKeyEventAction extends GameKeyCompl
     
 }
 
+
 private constructor (){
             super("Diagonal Down Left Action", TouchMotionGestureFactory.getInstance()!.DIAGONAL_DOWN_LEFT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

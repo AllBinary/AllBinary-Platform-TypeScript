@@ -81,6 +81,7 @@ export class OpenGLCapabilities
     public glInstanceVersion: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     public maxTextureSize: number = 64;
+
 private constructor (){
 
             super();

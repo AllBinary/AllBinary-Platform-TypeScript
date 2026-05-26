@@ -59,6 +59,7 @@ export class CategoryData
     
 }
 
+
 private constructor (){
 
             super();

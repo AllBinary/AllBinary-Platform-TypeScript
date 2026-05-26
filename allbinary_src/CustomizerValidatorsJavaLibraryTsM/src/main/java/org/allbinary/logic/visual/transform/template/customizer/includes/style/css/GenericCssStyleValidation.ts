@@ -71,19 +71,21 @@ export class GenericCssStyleValidation extends Validation implements DomNodeInte
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
         }
 
+
 public constructor (document: Document){
 
             super();
         
-    var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;
-;
+    var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;;
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -103,8 +105,7 @@ public constructor (hashMap: HashMap<any, any>){
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -158,8 +159,7 @@ public constructor (hashMap: HashMap<any, any>){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -215,8 +215,7 @@ public constructor (hashMap: HashMap<any, any>){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, StringUtil.getInstance()!.EMPTY_STRING)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, StringUtil.getInstance()!.EMPTY_STRING)!;;
     
 
 

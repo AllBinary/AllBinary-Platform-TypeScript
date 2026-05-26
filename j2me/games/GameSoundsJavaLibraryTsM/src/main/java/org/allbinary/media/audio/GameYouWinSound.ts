@@ -57,6 +57,7 @@ export class GameYouWinSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/youwin.wav");
                     

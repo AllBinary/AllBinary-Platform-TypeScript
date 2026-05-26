@@ -55,6 +55,7 @@ export class KeyboardActionScriptInputData
     public static PRESS: string = "KEY_ACTION_INPUT_PRESS";
 
     public static RELEASE: string = "KEY_ACTION_INPUT_RELEASE";
+
 private constructor (){
 
             super();

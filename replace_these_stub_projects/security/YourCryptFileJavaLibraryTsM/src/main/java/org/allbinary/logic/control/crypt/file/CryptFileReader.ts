@@ -37,6 +37,7 @@ export class CryptFileReader
             extends Object
          {
         
+
 public constructor (decryptedExtension: string, encryptedExtension: string){
 
             super();

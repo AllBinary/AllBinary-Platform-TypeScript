@@ -54,7 +54,9 @@ expect export class TimeStampUtil
         
 
     //private static readonly instance: TimeStampUtil
+
     public static getInstance(): TimeStampUtil
+
 
 
     public getAsString(): string

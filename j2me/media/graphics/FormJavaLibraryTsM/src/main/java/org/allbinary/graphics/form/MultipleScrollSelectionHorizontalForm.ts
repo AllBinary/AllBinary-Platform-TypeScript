@@ -67,6 +67,7 @@ export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
 
 
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.TRANSPARENT_GREY.intValue()!;
+
 public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
                     
@@ -92,24 +93,19 @@ public constructor (title: string, items: ABCustomItem[], formPaintableFactory: 
 
         try {
             
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-;
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
-    var start: number = this.getStartIndex()!;
-;
+    var start: number = this.getStartIndex()!;;
     
 
-    var size: number = this.size()!;
-;
+    var size: number = this.size()!;;
     
 
-    var dx: number = this.x;
-;
+    var dx: number = this.x;;
     
 
-    var dy: number = this.y;
-;
+    var dy: number = this.y;;
     
 
                         if(J2MEUtil.isJ2ME())
@@ -127,22 +123,19 @@ graphics.fillRect(this.x, this.y, this.rectangle.getWidth(), this.rectangle.getH
                         }
                             
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 graphics.drawString(this.getTitle(), this.x, this.y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
     
 
-    var item: ABCustomItem
-;
+    var item: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = start;
-index < size; index++)
+    var index: number = start;index < size; index++)
         {
 item= this.get(index);
     
@@ -173,8 +166,7 @@ PreLogUtil.put(new StringMaker().append("painting beyond maxx: ")!.appendint(thi
                         
                                     {
                                     
-    var dx2: number = this.paintItem(graphics, index, item, dx, dy) +this.border;
-;
+    var dx2: number = this.paintItem(graphics, index, item, dx, dy) +this.border;;
     
 this.paintable.paint(graphics, index, dx, dy);
     

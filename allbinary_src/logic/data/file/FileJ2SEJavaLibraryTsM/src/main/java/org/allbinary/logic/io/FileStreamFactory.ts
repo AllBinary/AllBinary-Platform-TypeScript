@@ -65,6 +65,7 @@ export class FileStreamFactory
     
 }
 
+
 private constructor (){
 
             super();
@@ -75,12 +76,10 @@ private constructor (){
             
     public getFileInputStreamInstance(path: string, fileName: string): AbFileInputStream{
 
-    var FILEABPATH: AbPath = new AbPath(path, fileName);
-;
+    var FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);
-;
+    var file: AbFile = new AbFile(FILEABPATH);;
     
 
 
@@ -95,12 +94,10 @@ private constructor (){
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
 
-    var FILEABPATH: AbPath = new AbPath(path, fileName);
-;
+    var FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);
-;
+    var file: AbFile = new AbFile(FILEABPATH);;
     
 
                         if(file.exists())
@@ -126,12 +123,10 @@ file.createNewFile();
             
     public delete(path: string, fileName: string){
 
-    var FILEABPATH: AbPath = new AbPath(path, fileName);
-;
+    var FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);
-;
+    var file: AbFile = new AbFile(FILEABPATH);;
     
 file.delete();
     

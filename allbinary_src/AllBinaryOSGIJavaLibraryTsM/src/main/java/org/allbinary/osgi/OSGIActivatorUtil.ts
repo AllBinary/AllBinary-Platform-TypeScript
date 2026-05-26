@@ -70,12 +70,10 @@ OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Has
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
 
-    var serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;
-;
+    var serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;;
     
 
-    var serviceReference: ServiceReference = serviceRegistration!.getReference()!;
-;
+    var serviceReference: ServiceReference = serviceRegistration!.getReference()!;;
     
 serviceReference= bundleContext!.getServiceReference(serviceName);
     
@@ -92,6 +90,7 @@ serviceReference= bundleContext!.getServiceReference(serviceName);
                                     }
                                 
 }
+
 
 private constructor (){
 

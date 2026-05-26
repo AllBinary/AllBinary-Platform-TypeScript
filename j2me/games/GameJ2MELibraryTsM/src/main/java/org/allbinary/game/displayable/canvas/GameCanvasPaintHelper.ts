@@ -49,7 +49,8 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
 export class GameCanvasPaintHelper extends ProcessPaintable {
         
 
-    private gameCanvas: AllBinaryGameCanvas
+    private gameCanvas: AllBinaryGameCanvas;
+
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();

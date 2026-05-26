@@ -61,6 +61,7 @@ export class J2MEKeyFactory
     
 }
 
+
 private constructor (){
 
             super();
@@ -74,12 +75,10 @@ private constructor (){
     var gameKeyArray: GameKey[] = 
                                                         [
                                                             this.gameKeyFactory!.DOWN,this.gameKeyFactory!.FIRE,this.gameKeyFactory!.GAME_A,this.gameKeyFactory!.GAME_B,this.gameKeyFactory!.GAME_C,this.gameKeyFactory!.GAME_D,this.gameKeyFactory!.KEY_NUM0,this.gameKeyFactory!.KEY_NUM1,this.gameKeyFactory!.KEY_NUM2,this.gameKeyFactory!.KEY_NUM3,this.gameKeyFactory!.KEY_NUM4,this.gameKeyFactory!.KEY_NUM5,this.gameKeyFactory!.KEY_NUM6,this.gameKeyFactory!.KEY_NUM7,this.gameKeyFactory!.KEY_NUM8,this.gameKeyFactory!.KEY_NUM9,this.gameKeyFactory!.KEY_POUND,this.gameKeyFactory!.KEY_STAR,this.gameKeyFactory!.LEFT,this.gameKeyFactory!.LEVEL_DOWN,this.gameKeyFactory!.LEVEL_UP,this.gameKeyFactory!.NONE,this.gameKeyFactory!.RIGHT,this.gameKeyFactory!.UP
-                                                        ];
-;
+                                                        ];;
     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;
-;
+    var inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 
 
@@ -87,8 +86,7 @@ private constructor (){
 
                         for (
     var index: number = gameKeyArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 inputFactory!.add(gameKeyArray[index]!.getId(), gameKeyArray[index]!);
     

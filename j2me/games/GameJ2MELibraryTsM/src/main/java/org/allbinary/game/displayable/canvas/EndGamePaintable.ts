@@ -49,7 +49,8 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
 export class EndGamePaintable extends Paintable {
         
 
-    private gameCanvas: AllBinaryGameCanvas
+    private gameCanvas: AllBinaryGameCanvas;
+
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();

@@ -74,7 +74,8 @@ export class ImageComparator
          {
         
 
-    private readonly imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface
+    private readonly imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface;
+
 public constructor (imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
 
             super();
@@ -87,48 +88,38 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
             
     process(imageComparisonInfo: ImageComparisonResult, point: GPoint){
 
-    var isCollsionWithAvoidRectangles: boolean = this.imageComparatorConstraintsInterface!.isCollisionWithAvoidRectangles(point)!;
-;
+    var isCollsionWithAvoidRectangles: boolean = this.imageComparatorConstraintsInterface!.isCollisionWithAvoidRectangles(point)!;;
     
 
                         if(!isCollsionWithAvoidRectangles)
                         
                                     {
                                     
-    var rgb1: number = imageComparisonInfo!.getBufferedImages()[0]!.getRGB(point.getX(), point.getY())!;
-;
+    var rgb1: number = imageComparisonInfo!.getBufferedImages()[0]!.getRGB(point.getX(), point.getY())!;;
     
 
-    var rgb2: number = imageComparisonInfo!.getBufferedImages()[1]!.getRGB(point.getX(), point.getY())!;
-;
+    var rgb2: number = imageComparisonInfo!.getBufferedImages()[1]!.getRGB(point.getX(), point.getY())!;;
     
 
-    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;
-;
+    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;;
     
 
-    var colorInteger: Integer = Integer.valueOf(rgb1)!;
-;
+    var colorInteger: Integer = Integer.valueOf(rgb1)!;;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
-;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
     
 
-    var color: Color = colorCacheable!.getColor()!;
-;
+    var color: Color = colorCacheable!.getColor()!;;
     
 
-    var colorInteger2: Integer = Integer.valueOf(rgb2)!;
-;
+    var colorInteger2: Integer = Integer.valueOf(rgb2)!;;
     
 
-    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
-;
+    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
     
 
-    var color2: Color = colorCacheable!.getColor()!;
-;
+    var color2: Color = colorCacheable!.getColor()!;;
     
 
                         if(this.imageComparatorConstraintsInterface!.isColorAllowed(0, point, color) || this.imageComparatorConstraintsInterface!.isColorAllowed(1, point, color2))
@@ -196,24 +187,21 @@ public constructor (imageComparatorConstraintsInterface: ImageComparatorConstrai
                                     }
                                 
 
-    var imageComparisonInfo: ImageComparisonResult = new ImageComparisonResult(name, bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance);
-;
+    var imageComparisonInfo: ImageComparisonResult = new ImageComparisonResult(name, bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance);;
     
 
 
 
 
                         for (
-    var indexY: number = 0;
-indexY < imageComparisonInfo!.imageHeight; indexY++)
+    var indexY: number = 0;indexY < imageComparisonInfo!.imageHeight; indexY++)
         {
 
 
 
 
                         for (
-    var indexX: number = 0;
-indexX < imageComparisonInfo!.imageWidth; indexX++)
+    var indexX: number = 0;indexX < imageComparisonInfo!.imageWidth; indexX++)
         {
 this.process(imageComparisonInfo, PointFactory.getInstance()!.createXY(indexX, indexY));
     

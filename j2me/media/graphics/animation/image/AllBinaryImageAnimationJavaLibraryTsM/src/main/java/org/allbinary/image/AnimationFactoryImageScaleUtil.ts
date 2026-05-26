@@ -76,20 +76,17 @@ export class AnimationFactoryImageScaleUtil
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Image{
 
-    var scaledImage: Image
-;
+    var scaledImage: Image;;
     
 
                         if(scaleWidth != 0 && scaleHeight != 0)
                         
                                     {
                                     
-    var scaleX: number = (scaleWidth) /(width);
-;
+    var scaleX: number = (scaleWidth) /(width);;
     
 
-    var scaleY: number = (scaleHeight) /(height);
-;
+    var scaleY: number = (scaleHeight) /(height);;
     
 
                         if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
@@ -128,24 +125,20 @@ export class AnimationFactoryImageScaleUtil
             
     public processAdjust(baseImageAnimationFactory: BaseImageAnimationFactory){
 
-    var scaleProperties: ScaleProperties = baseImageAnimationFactory!.getScalePropertiesP()!;
-;
+    var scaleProperties: ScaleProperties = baseImageAnimationFactory!.getScalePropertiesP()!;;
     
 
                         if(scaleProperties!.scaleWidth != 0 && scaleProperties!.scaleHeight != 0)
                         
                                     {
                                     
-    var animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor = baseImageAnimationFactory!.getAnimationFactoryInitializationVisitorP()!;
-;
+    var animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor = baseImageAnimationFactory!.getAnimationFactoryInitializationVisitorP()!;;
     
 
-    var scaleX: number = (scaleProperties!.scaleWidth) /(animationFactoryInitializationVisitor!.width);
-;
+    var scaleX: number = (scaleProperties!.scaleWidth) /(animationFactoryInitializationVisitor!.width);;
     
 
-    var scaleY: number = (scaleProperties!.scaleHeight) /(animationFactoryInitializationVisitor!.height);
-;
+    var scaleY: number = (scaleProperties!.scaleHeight) /(animationFactoryInitializationVisitor!.height);;
     
 
                         if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))

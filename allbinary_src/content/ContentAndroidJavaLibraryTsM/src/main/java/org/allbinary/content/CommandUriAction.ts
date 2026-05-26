@@ -88,8 +88,7 @@ this.hashtable.put(command, url);
 
         try {
             
-    var intent: Intent = this.getIntent(command)!;
-;
+    var intent: Intent = this.getIntent(command)!;;
     
 ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
     
@@ -98,8 +97,7 @@ ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
@@ -110,16 +108,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 
     public getIntent(command: Command): Intent{
 
-    var url: string = this.hashtable.get(command) as string;
-;
+    var url: string = this.hashtable.get(command) as string;;
     
 
-    var uri: Uri = Uri.parse(url)!;
-;
+    var uri: Uri = Uri.parse(url)!;;
     
 
-    var intent: Intent = new Intent(Intent.ACTION_VIEW, uri);
-;
+    var intent: Intent = new Intent(Intent.ACTION_VIEW, uri);;
     
 
 

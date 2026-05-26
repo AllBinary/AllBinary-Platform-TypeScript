@@ -79,6 +79,7 @@ export class NullAnimationFactory
                             ;
 
     public readonly EMPTY_ARRAY: Animation[] = [];
+
 private constructor (){
 
             super();

@@ -184,8 +184,7 @@ this.onStartCommandIntent(intent);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.ON_START_COMMAND);
     
 
-    var musicStrings: MusicStrings = MusicStrings.getInstance()!;
-;
+    var musicStrings: MusicStrings = MusicStrings.getInstance()!;;
     
 
                         if(intent != 
@@ -194,8 +193,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.ON_
                         
                                     {
                                     
-    var command: number = intent.getIntExtra(this.commonStateStrings!.ON_START_COMMAND,  -1)!;
-;
+    var command: number = intent.getIntExtra(this.commonStateStrings!.ON_START_COMMAND,  -1)!;;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, this.commonStateStrings!.ON_START_COMMAND);
     
@@ -262,8 +260,7 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
                         
                                     {
                                     
-    var player: MediaPlayer = this.player;
-;
+    var player: MediaPlayer = this.player;;
     
 this.logUtil!.putF(this.ALREADY_PLAYING, this, this.commonStateStrings!.ON_START_COMMAND);
     
@@ -273,16 +270,13 @@ this.logUtil!.putF(this.ALREADY_PLAYING, this, this.commonStateStrings!.ON_START
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
-;
+    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
         try {
@@ -308,12 +302,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStateStrings!.ON_START_COMMAN
 }
 
                                 }
-                            ;
-;
+                            ;;
     
 
-    var thread: Thread = new Thread(runnable);
-;
+    var thread: Thread = new Thread(runnable);;
     
 thread.start();
     

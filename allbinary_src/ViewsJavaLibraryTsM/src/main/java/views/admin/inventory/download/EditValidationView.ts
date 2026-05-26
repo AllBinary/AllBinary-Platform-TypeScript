@@ -83,7 +83,8 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 export class EditValidationView extends DownloadableInventoryItemView implements ValidationComponentInterface {
         
 
-    private downloadItemId: string
+    private downloadItemId: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
                     
@@ -99,8 +100,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
     
 
                         if(hashMap == 
@@ -159,20 +159,17 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
                                     }
                                 
 
-    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;
-;
+    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;;
     
 
                         if(downloadable != 0)
                         
                                     {
                                     
-    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-;
+    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
-;
+    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
                         if(vector.length != 1)
@@ -235,8 +232,7 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
             
     public validationInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.id == 
@@ -261,8 +257,7 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
                                     }
                                 
 
-    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;
-;
+    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;;
     
 
                         if(downloadable != 0)

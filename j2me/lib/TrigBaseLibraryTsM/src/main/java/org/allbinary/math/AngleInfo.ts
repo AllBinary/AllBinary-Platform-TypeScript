@@ -67,9 +67,10 @@ export class AngleInfo
 
     private static readonly ANGLE: string = "Angle: ";
 
-    private readonly angleIncrementInfo: AngleIncrementInfo
+    private readonly angleIncrementInfo: AngleIncrementInfo;
 
     private angle: number = 0;
+
 private constructor (angleIncrementInfo: AngleIncrementInfo){
 
             super();
@@ -82,8 +83,7 @@ private constructor (angleIncrementInfo: AngleIncrementInfo){
 
     public adjustAngle(frame: number){
 
-    var newAngle: number = this.angleIncrementInfo!.getAngleIncrement() *frame -90;
-;
+    var newAngle: number = this.angleIncrementInfo!.getAngleIncrement() *frame -90;;
     
 this.setAngle(this.frameUtil!.adjustAngleToFrameAngle(newAngle));
     
@@ -118,8 +118,7 @@ this.angle= angle;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(AngleInfo.ANGLE);
     

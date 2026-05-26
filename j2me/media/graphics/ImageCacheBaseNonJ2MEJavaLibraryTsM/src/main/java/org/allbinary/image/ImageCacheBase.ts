@@ -90,6 +90,7 @@ export class ImageCacheBase
     volume: number = 0;
 
     nextIndex: number = 0;
+
 public constructor (){
 
             super();
@@ -98,8 +99,7 @@ public constructor (){
 
 
                         for (
-    var index: number = this.listOfList!.length -1;
-index >= 0; index--)
+    var index: number = this.listOfList!.length -1;index >= 0; index--)
         {
 this.listOfList[index]= new BasicArrayListD();
     
@@ -110,8 +110,7 @@ this.listOfList[index]= new BasicArrayListD();
 
 
                         for (
-    var index: number = this.availableListOfList!.length -1;
-index >= 0; index--)
+    var index: number = this.availableListOfList!.length -1;index >= 0; index--)
         {
 this.availableListOfList[index]= new BasicArrayListD();
     
@@ -122,8 +121,7 @@ this.availableListOfList[index]= new BasicArrayListD();
 
     getImage(resourceId: any = {}): Image{
 
-    var imageCanBeNull: any = this.hashtable.get(resourceId);
-;
+    var imageCanBeNull: any = this.hashtable.get(resourceId);;
     
 
                         if(imageCanBeNull == 
@@ -155,8 +153,7 @@ this.availableListOfList[index]= new BasicArrayListD();
 
 
                         for (
-    var index: number = this.listOfList!.length -1;
-index >= 0; index--)
+    var index: number = this.listOfList!.length -1;index >= 0; index--)
         {
 this.availableListOfList[index]!.clear();
     
@@ -171,21 +168,18 @@ this.logUtil!.putF(new StringMaker().append("ImageCache: ")!.append(this.toStrin
 
     getIndexWH(width: number, height: number): number{
 
-    var foundIndex: number =  -1;
-;
+    var foundIndex: number =  -1;;
     
 
     var size: number = this.widths.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(this.widths[index] == width && this.heights[index] == height)
@@ -223,8 +217,7 @@ index < size; index++)
                         
                                     {
                                     
-    var list: BasicArrayList = this.availableListOfList[foundIndex]!;
-;
+    var list: BasicArrayList = this.availableListOfList[foundIndex]!;;
     
 
 
@@ -295,32 +288,26 @@ index < size; index++)
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = this.nextIndex -1;
-index >= 0; index--)
+    var index: number = this.nextIndex -1;index >= 0; index--)
         {
 
-    var width: number = this.widths[index]!;
-;
+    var width: number = this.widths[index]!;;
     
 
-    var height: number = this.heights[index]!;
-;
+    var height: number = this.heights[index]!;;
     
 
-    var total: number = this.listOfList[index]!.size()!;
-;
+    var total: number = this.listOfList[index]!.size()!;;
     
 
-    var totalAvailable: number = this.availableListOfList[index]!.size()!;
-;
+    var totalAvailable: number = this.availableListOfList[index]!.size()!;;
     
 stringBuffer!.append(" w: ");
     

@@ -59,6 +59,7 @@ export class GameRunnable
     public readonly FAST: number = 60;
 
     public waitInMillis: number = this.WAIT;
+
 public constructor (){
 
             super();

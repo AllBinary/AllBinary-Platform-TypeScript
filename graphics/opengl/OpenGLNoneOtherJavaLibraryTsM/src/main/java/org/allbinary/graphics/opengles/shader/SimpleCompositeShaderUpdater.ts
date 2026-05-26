@@ -44,6 +44,7 @@
 
 export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
         
+
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
             super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray);
                     

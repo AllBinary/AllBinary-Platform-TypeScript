@@ -55,6 +55,7 @@ export class Aggression
     private projectile: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
     private drops: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+
 public constructor (ram: Integer, projectile: Integer, drops: Integer){
 
             super();

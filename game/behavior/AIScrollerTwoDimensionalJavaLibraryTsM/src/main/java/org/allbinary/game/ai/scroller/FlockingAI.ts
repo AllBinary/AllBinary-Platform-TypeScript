@@ -71,7 +71,8 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
 export class FlockingAI extends BasicAI {
         
 
-    private readonly allowedDistance: number
+    private readonly allowedDistance: number;
+
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -79,8 +80,7 @@ public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBina
                             //For kotlin this is before the body of the constructor.
                     
 
-    var allowedDistance: Integer = hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer;
-;
+    var allowedDistance: Integer = hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer;;
     
 this.allowedDistance= allowedDistance!.intValue();
     
@@ -91,44 +91,36 @@ this.allowedDistance= allowedDistance!.intValue();
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var maxDistance: number = 0;
-;
+    var maxDistance: number = 0;;
     
 
-    var farAllbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-;
+    var farAllbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;;
     
 
-    var groupLayerManagerListener: GroupLayerManagerListener = GroupLayerManagerListener.getInstance()!;
-;
+    var groupLayerManagerListener: GroupLayerManagerListener = GroupLayerManagerListener.getInstance()!;;
     
 
-    var list: BasicArrayList = groupLayerManagerListener!.getList(BasicGroupFactory.getInstance()!.ENEMY)!;
-;
+    var list: BasicArrayList = groupLayerManagerListener!.getList(BasicGroupFactory.getInstance()!.ENEMY)!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var allBinaryLayer: AllBinaryLayer = list.get(index) as AllBinaryLayer;
-;
+    var allBinaryLayer: AllBinaryLayer = list.get(index) as AllBinaryLayer;;
     
 
                         if(allBinaryLayer!.getType() != WeaponLayer.getStaticType())
                         
                                     {
                                     
-    var distance: number = this.getXYDistance(allBinaryLayer)!;
-;
+    var distance: number = this.getXYDistance(allBinaryLayer)!;;
     
 
                         if(distance > maxDistance)
@@ -165,8 +157,7 @@ farAllbinaryLayer= allBinaryLayer;
                         
                                     {
                                     
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
                         if(farAllbinaryLayer!.getXP() < ownerLayerInterface!.getXP())
@@ -215,24 +206,19 @@ farAllbinaryLayer= allBinaryLayer;
 
     getXYDistance(allBinaryLayer: AllBinaryLayer): number{
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var xTotalDistance: number = (allBinaryLayer!.getXP() +allBinaryLayer!.getHalfWidth()) -(ownerLayerInterface!.getXP() +ownerLayerInterface!.getHalfWidth());
-;
+    var xTotalDistance: number = (allBinaryLayer!.getXP() +allBinaryLayer!.getHalfWidth()) -(ownerLayerInterface!.getXP() +ownerLayerInterface!.getHalfWidth());;
     
 
-    var yTotalDistance: number = (allBinaryLayer!.getYP() +allBinaryLayer!.getHalfHeight()) -(ownerLayerInterface!.getYP() +ownerLayerInterface!.getHalfHeight());
-;
+    var yTotalDistance: number = (allBinaryLayer!.getYP() +allBinaryLayer!.getHalfHeight()) -(ownerLayerInterface!.getYP() +ownerLayerInterface!.getHalfHeight());;
     
 
-    var mathUtil: MathUtil = MathUtil.getInstance()!;
-;
+    var mathUtil: MathUtil = MathUtil.getInstance()!;;
     
 
-    var totalDistance: number = mathUtil!.abs(xTotalDistance) +mathUtil!.abs(yTotalDistance);
-;
+    var totalDistance: number = mathUtil!.abs(xTotalDistance) +mathUtil!.abs(yTotalDistance);;
     
 
 

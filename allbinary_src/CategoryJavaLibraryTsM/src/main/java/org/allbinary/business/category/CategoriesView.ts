@@ -56,7 +56,8 @@ export class CategoriesView
          implements DomNodeInterface {
         
 
-    private categoryInterface: CategoryInterface
+    private categoryInterface: CategoryInterface;
+
 public constructor (categoryInterface: CategoryInterface){
 
             super();
@@ -69,33 +70,27 @@ public constructor (categoryInterface: CategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = new CategoryView(this.categoryInterface).toXmlNode(document)!;
-;
+    var node: Node = new CategoryView(this.categoryInterface).toXmlNode(document)!;;
     
 
-    var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;
-;
+    var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;;
     
 
     var size: number = childArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;
-;
+    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;;
     
 
-    var childCategoryNode: Node = new CategoriesView(childCategoryInterface).toXmlNode(document)!;
-;
+    var childCategoryNode: Node = new CategoriesView(childCategoryInterface).toXmlNode(document)!;;
     
 node.appendChild(childCategoryNode);
     

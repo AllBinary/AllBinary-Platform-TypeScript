@@ -74,9 +74,10 @@ export class TransactionResult
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private keyValuePairs: HashMap<any, any>
+    private keyValuePairs: HashMap<any, any>;
 
-    private result: string
+    private result: string;
+
 public constructor (result: string){
 
             super();
@@ -85,20 +86,16 @@ public constructor (result: string){
             this.result= result;
     
 
-    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.AMPERSAND);
-;
+    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.AMPERSAND);;
     
 
-    var tokens: BasicArrayList = tokenizer.getTokens(result, new BasicArrayListD())!;
-;
+    var tokens: BasicArrayList = tokenizer.getTokens(result, new BasicArrayListD())!;;
     
 
-    var tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);
-;
+    var tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);;
     
 
-    var hashtable: Hashtable<any, any> = tokenizer2.getTokens(tokens)!;
-;
+    var hashtable: Hashtable<any, any> = tokenizer2.getTokens(tokens)!;;
     
 this.keyValuePairs!.putAll(hashtable);
     
@@ -107,14 +104,14 @@ this.keyValuePairs!.putAll(hashtable);
 } catch(e) 
             {
 
-    var exceptionMessage: string = "TransactionResult Constructor Failed";
-;
+    var exceptionMessage: string = "TransactionResult Constructor Failed";;
     
 this.logUtil!.putF(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
 }
+
 
 public constructor (keyValuePairs: HashMap<any, any>){
 
@@ -148,12 +145,10 @@ this.result= "Needs to have the hashmap converted to string for other constructo
 
     getAllPossibleKeys(): Vector{
 
-    var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;
-;
+    var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;;
     
 
-    var verisignResponseKeys: Vector = new Vector();
-;
+    var verisignResponseKeys: Vector = new Vector();;
     
 verisignResponseKeys!.add(paymentTransactionKeysFactory!.RESULT.toString());
     
@@ -210,28 +205,23 @@ verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION7.toString());
 
     public getValues(): Vector{
 
-    var keyVector: Vector = this.getAllPossibleKeys()!;
-;
+    var keyVector: Vector = this.getAllPossibleKeys()!;;
     
 
-    var valueVector: Vector = new Vector();
-;
+    var valueVector: Vector = new Vector();;
     
 
-    var size: number = keyVector!.length!;
-;
+    var size: number = keyVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var key: string = keyVector!.get(i) as string;
-;
+    var key: string = keyVector!.get(i) as string;;
     
 
                         if(this.keyValuePairs!.containsKey(key))
@@ -244,8 +234,7 @@ i < size; i++)
                                 
                         else {
                             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 valueVector!.add(stringUtil!.EMPTY_STRING);
     

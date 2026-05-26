@@ -78,24 +78,19 @@ export class NotificationUtil
 
     public notify(command: Command, resource: string, message: string){
 
-    var context: Context = ResourceUtil.getInstance()!.getContext()!;
-;
+    var context: Context = ResourceUtil.getInstance()!.getContext()!;;
     
 
-    var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;
-;
+    var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;;
     
 
-    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
-;
+    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;;
     
 
-    var notification: Notification = new Notification(integer.intValue(), message, Date.now());
-;
+    var notification: Notification = new Notification(integer.intValue(), message, Date.now());;
     
 
-    var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, 0)!;
-;
+    var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, 0)!;;
     
 notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent);
     

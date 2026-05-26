@@ -54,6 +54,7 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
 
 export class OptimizedTickableLayerProcessor extends LayerProcessor {
         
+
 public constructor (){
             super(new OptimizedTickableLayerManager());
                     
@@ -67,8 +68,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var tickableInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;
-;
+    var tickableInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;;
     
 tickableInterface!.processTick(allBinaryLayerManager);
     

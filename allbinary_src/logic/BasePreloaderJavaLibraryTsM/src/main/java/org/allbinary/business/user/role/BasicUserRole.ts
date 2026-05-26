@@ -59,24 +59,20 @@ export class BasicUserRole
 
     public static getRole(role: string): BasicUserRole{
 
-    var roleVector: Vector<any> = BasicUserRole.getAll()!;
-;
+    var roleVector: Vector<any> = BasicUserRole.getAll()!;;
     
 
-    var size: number = roleVector!.length!;
-;
+    var size: number = roleVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var userRole: BasicUserRole = roleVector!.get(index) as BasicUserRole;
-;
+    var userRole: BasicUserRole = roleVector!.get(index) as BasicUserRole;;
     
 
                         if(role.compareTo(userRole!.toString()) == 0)
@@ -111,15 +107,16 @@ index < size; index++)
 }
 
 
-    private readonly m_int_RoleId: number
+    private readonly m_int_RoleId: number;
 
-    private readonly role: string
+    private readonly role: string;
 
-    private readonly displayValue: string
+    private readonly displayValue: string;
 
-    private readonly sessionTimeout: number
+    private readonly sessionTimeout: number;
 
-    private readonly sessionInactivityTimeout: number
+    private readonly sessionInactivityTimeout: number;
+
  constructor (aRole: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
             this(aRole, aRole, a_int_RoleId, aSessionTimeout, aSessionInactivityTimeout);
                     
@@ -127,6 +124,7 @@ index < size; index++)
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
  constructor (aRole: string, aDisplayValue: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
 

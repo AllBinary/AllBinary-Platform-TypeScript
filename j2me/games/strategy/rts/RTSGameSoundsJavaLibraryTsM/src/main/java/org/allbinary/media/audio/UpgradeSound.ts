@@ -58,6 +58,7 @@ export class UpgradeSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/upgrade.wav");
                     

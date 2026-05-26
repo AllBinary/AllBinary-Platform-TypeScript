@@ -70,6 +70,7 @@ export class ImageAnimationFactory extends BaseImageAnimationFactory {
     
 }
 
+
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
                     
@@ -83,12 +84,10 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
             
     public getInstance(instanceId: number): Animation{
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-;
+    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;
-;
+    var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;;
     
 scaledImage= openGLUtil!.add(scaledImage);
     

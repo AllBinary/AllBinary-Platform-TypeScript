@@ -56,6 +56,7 @@ export class NoAllBinarySensor extends AllBinarySensor {
     
 }
 
+
 private constructor (){
 
             super();

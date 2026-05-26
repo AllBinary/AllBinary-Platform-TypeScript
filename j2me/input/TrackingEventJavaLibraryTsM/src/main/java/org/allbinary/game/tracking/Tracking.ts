@@ -47,6 +47,7 @@ export class Tracking
             extends Object
          {
         
+
 public constructor (){
 
             super();

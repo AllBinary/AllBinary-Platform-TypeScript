@@ -109,12 +109,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -135,12 +133,10 @@ logUtil!.putF(commonString!.END, AllBinaryMediaManager.THIS, commonString!.INIT)
             
     static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
     
@@ -151,28 +147,23 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
                                     new Sounds(soundsFactoryInterface).stopAll();
     
 
-    var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
-;
+    var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;;
     
 
-    var player: Player
-;
+    var player: Player;;
     
 
-    var player2: Player
-;
+    var player2: Player;;
     
 
-    var androidMediaPlayerWrapper: AndroidMediaPlayerWrapper
-;
+    var androidMediaPlayerWrapper: AndroidMediaPlayerWrapper;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < soundInterfaceArray!.length; i++)
+    var i: number = 0;i < soundInterfaceArray!.length; i++)
         {
 
                         if(soundInterfaceArray[i] != 
@@ -240,8 +231,7 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
 AllBinaryMediaManager.mostUsedTotal++;
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.SOUND))
@@ -316,6 +306,7 @@ logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +Co
                         return true;
     
 }
+
 
 private constructor (){
 

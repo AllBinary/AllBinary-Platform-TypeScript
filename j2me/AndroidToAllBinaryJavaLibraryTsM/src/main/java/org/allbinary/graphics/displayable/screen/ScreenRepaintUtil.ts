@@ -52,8 +52,7 @@ export class ScreenRepaintUtil
 
     public static repaint(displayable: Displayable){
 
-    var canvas: Canvas = displayable as Canvas;
-;
+    var canvas: Canvas = displayable as Canvas;;
     
 canvas.repaint();
     

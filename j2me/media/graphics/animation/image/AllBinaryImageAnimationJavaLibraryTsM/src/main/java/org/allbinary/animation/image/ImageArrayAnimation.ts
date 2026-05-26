@@ -64,9 +64,10 @@ export class ImageArrayAnimation extends IndexedAnimation {
 
     private imageArray: Image[] = NullImage.NULL_IMAGE_ARRAY;
 
-    private totalFrames: number= 0
+    private totalFrames: number= 0;
 
     circularIndexUtil: CircularIndexUtil = CircularIndexUtil.NULL_CIRCULAR_INDEX_UTIL;
+
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     

@@ -55,17 +55,18 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 export class ImageSegmentAnimation extends ImageAnimation {
         
 
-    private startX: number
+    private startX: number;
 
-    private startY: number
+    private startY: number;
 
-    private drawWidth: number
+    private drawWidth: number;
 
-    private drawHeight: number
+    private drawHeight: number;
 
-    private circularIndexUtil: CircularIndexUtil
+    private circularIndexUtil: CircularIndexUtil;
 
-    private sequenceArray: number[]
+    private sequenceArray: number[];
+
 protected constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior){
             super(image, animationBehavior);
                     

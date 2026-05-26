@@ -63,8 +63,7 @@ export class RotationAnimationFactory
 
     public static createFactory(): RotationAnimationFactory{
 
-    var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
-;
+    var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE;;
     
 
 
@@ -75,9 +74,10 @@ export class RotationAnimationFactory
 }
 
 
-    private totalAngle: number
+    private totalAngle: number;
 
-    private angleIncrement: number
+    private angleIncrement: number;
+
 public constructor (totalAngle: number, angleIncrement: number){
 
             super();

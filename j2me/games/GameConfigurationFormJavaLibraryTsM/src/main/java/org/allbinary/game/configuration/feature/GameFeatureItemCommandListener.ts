@@ -72,7 +72,8 @@ export class GameFeatureItemCommandListener
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private gameOptionsForm: GameOptionsForm
+    private gameOptionsForm: GameOptionsForm;
+
 public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
@@ -85,8 +86,7 @@ public constructor (gameOptionsForm: GameOptionsForm){
 
         try {
             
-    var itemLabel: string = item.getLabel()!;
-;
+    var itemLabel: string = item.getLabel()!;;
     
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION);
     
@@ -104,8 +104,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.COMMAND_ACTION, e);
     

@@ -71,9 +71,10 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 export class StoreThemeCategory extends Category implements StoreThemeCategoryInterface {
         
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
 
-    private themeVector: Vector
+    private themeVector: Vector;
+
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
             super(categoryPropertiesFactoryInterface, level);
                     
@@ -86,6 +87,7 @@ this.themeVector= new Vector();
     
 }
 
+
 public constructor (transformInfoInterface: TransformInfoInterface, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
             super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
                     
@@ -97,6 +99,7 @@ this.transformInfoInterface= transformInfoInterface;
 this.themeVector= new Vector();
     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
             super(categoryPropertiesFactoryInterface, level);
@@ -111,6 +114,7 @@ this.themeVector= new Vector();
 this.addThemes(node);
     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
             super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
@@ -141,24 +145,20 @@ this.addThemes(node);
             
     public addThemes(node: Node){
 
-    var themesNode: Node = DomSearchHelper.getNode(ThemesData.getInstance()!.NAME, node.getChildNodes())!;
-;
+    var themesNode: Node = DomSearchHelper.getNode(ThemesData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
-    var nodeList: NodeList = themesNode!.getChildNodes()!;
-;
+    var nodeList: NodeList = themesNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var themeNode: Node = nodeList!.item(index)!;
-;
+    var themeNode: Node = nodeList!.item(index)!;;
     
 
                         if(themeNode!.getNodeName()!.compareTo(ThemeData.getInstance()!.NAME) == 0)
@@ -219,8 +219,7 @@ this.themeVector!.add(themeValidation);
             
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = super.toHashMap()!;
-;
+    var categoryHashMap: HashMap<any, any> = super.toHashMap()!;;
     
 categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
     
@@ -237,8 +236,7 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
             
     public toVector(): Vector{
 
-    var categoryVector: Vector = super.toVector()!;
-;
+    var categoryVector: Vector = super.toVector()!;;
     
 
 

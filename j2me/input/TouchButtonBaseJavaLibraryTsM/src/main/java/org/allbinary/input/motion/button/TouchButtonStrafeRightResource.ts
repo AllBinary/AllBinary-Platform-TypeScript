@@ -56,6 +56,7 @@ export class TouchButtonStrafeRightResource extends TouchButtonResource {
     
 }
 
+
 private constructor (){
             super("/touch_button_strafe_right_arrow_64_by_64.png", "/touch_button_strafe_right_arrow_hint_64_by_64.png");
                     

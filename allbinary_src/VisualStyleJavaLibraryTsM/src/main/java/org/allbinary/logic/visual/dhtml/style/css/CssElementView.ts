@@ -88,23 +88,23 @@ export class CssElementView
 
     private readonly DESCRIPTION: string = "description";
 
-    private value: string
+    private value: string;
 
-    private title: string
+    private title: string;
 
-    private description: string
+    private description: string;
 
-    cssElementVector: Vector
+    cssElementVector: Vector;
 
-    cssPropertyVector: Vector
+    cssPropertyVector: Vector;
+
 public constructor (){
 
             super();
         this.cssPropertyVector= new Vector();
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.title= stringUtil!.EMPTY_STRING;
     
@@ -114,20 +114,19 @@ this.value= stringUtil!.EMPTY_STRING;
     
 }
 
+
 public constructor (node: Node){
 
             super();
         
         try {
             
-    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
-;
+    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
     
 this.value= DomNodeHelper.getTextNodeValue(valueNode);
     
 
-    var titleValueNode: Node = DomSearchHelper.getNodeNoThrow(this.TITLE, node.getChildNodes())!;
-;
+    var titleValueNode: Node = DomSearchHelper.getNodeNoThrow(this.TITLE, node.getChildNodes())!;;
     
 
                         if(titleValueNode != 
@@ -142,8 +141,7 @@ this.value= DomNodeHelper.getTextNodeValue(valueNode);
                                 
                         else {
                             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.title= stringUtil!.EMPTY_STRING;
     
@@ -151,8 +149,7 @@ this.title= stringUtil!.EMPTY_STRING;
                         }
                             
 
-    var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(this.DESCRIPTION, node.getChildNodes())!;
-;
+    var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(this.DESCRIPTION, node.getChildNodes())!;;
     
 
                         if(descriptionValueNode != 
@@ -181,8 +178,7 @@ this.title= stringUtil!.EMPTY_STRING;
                                     }
                                 
 
-    var cssElementStyleNodeVector: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;
-;
+    var cssElementStyleNodeVector: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -196,8 +192,7 @@ this.title= stringUtil!.EMPTY_STRING;
 this.cssElementVector= CssElementsValidationFactory.getInstance(cssElementStyleNodeVector);
     
 
-    var nodeList: NodeList = node.getChildNodes()!;
-;
+    var nodeList: NodeList = node.getChildNodes()!;;
     
 this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
     
@@ -236,8 +231,7 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(DomData.VALUE, this.value);
     
@@ -258,8 +252,7 @@ hashMap!.put(this.DESCRIPTION, this.description);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -271,44 +264,37 @@ hashMap!.put(this.DESCRIPTION, this.description);
                                     }
                                 
 
-    var node: Node = ModDomHelper.createNodeWithValueNodes(document, CssElementData.getInstance()!.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNodeWithValueNodes(document, CssElementData.getInstance()!.NAME, hashMap)!;;
     
 
-    var size: number = this.cssPropertyVector!.length!;
-;
+    var size: number = this.cssPropertyVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index) as DomNodeInterface;
-;
+    var cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index) as DomNodeInterface;;
     
 node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
     
 }
 
 
-    var size2: number = this.cssElementVector!.length!;
-;
+    var size2: number = this.cssElementVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 
-    var cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index) as DomNodeInterface;
-;
+    var cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index) as DomNodeInterface;;
     
 node.appendChild(cssElementDomNodeInterface!.toXmlNode(document));
     

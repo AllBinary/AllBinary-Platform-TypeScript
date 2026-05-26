@@ -60,13 +60,14 @@ export class Direction
 }
 
 
-    private name: string
+    private name: string;
 
-    private otherName: string
+    private otherName: string;
 
-    private value: number
+    private value: number;
 
-    private frameFactor: number
+    private frameFactor: number;
+
  constructor (name: string, otherName: string, value: number, frameFactor: number){
 
             super();
@@ -125,8 +126,7 @@ Direction.directionArray[value]= this;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Direction: ");
     

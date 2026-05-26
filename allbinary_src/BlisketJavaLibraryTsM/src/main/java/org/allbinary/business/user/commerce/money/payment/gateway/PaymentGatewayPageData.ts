@@ -60,33 +60,32 @@ export class PaymentGatewayPageData
 
     public static readonly STARTCHECKOUT: string = "StartCheckout" +PaymentGatewayPageData.EXTENSION;
 
-    public readonly MAKEPAYMENT: string
+    public readonly MAKEPAYMENT: string;
 
-    public readonly CHECKOUT: string
+    public readonly CHECKOUT: string;
 
-    public readonly SHIPPING: string
+    public readonly SHIPPING: string;
 
-    public readonly SHIPPINGADDRESS: string
+    public readonly SHIPPINGADDRESS: string;
 
-    public readonly SHIPPINGADDRESSACTION: string
+    public readonly SHIPPINGADDRESSACTION: string;
 
-    public readonly BILLINGADDRESS: string
+    public readonly BILLINGADDRESS: string;
 
-    public readonly PAYMENT: string
+    public readonly PAYMENT: string;
 
-    public readonly AUTHORIZE: string
+    public readonly AUTHORIZE: string;
 
-    public readonly FINISH: string
+    public readonly FINISH: string;
+
 public constructor (location: string, paymentMethod: string){
 
             super();
         
-    var paymentMethodString: string = PaymentGatewayPageData.NAME +paymentMethod;
-;
+    var paymentMethodString: string = PaymentGatewayPageData.NAME +paymentMethod;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(location);
     

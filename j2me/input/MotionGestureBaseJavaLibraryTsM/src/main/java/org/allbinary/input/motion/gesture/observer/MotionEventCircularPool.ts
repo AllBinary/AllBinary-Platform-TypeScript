@@ -71,6 +71,7 @@ export class MotionEventCircularPool
     private static readonly MIN: number = TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()!;
 
     private eventPool: AllBinaryEventCircularPool = new AllBinaryEventCircularPool((InputFactory.getInstance()!.MAX -1) -MotionEventCircularPool.MIN);
+
 private constructor (id: number){
 
             super();

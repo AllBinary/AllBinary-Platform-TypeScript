@@ -51,6 +51,7 @@ export class TempInputRobotNames
     public static readonly SYS_NAME: string = "System Drivers";
 
     public static readonly DX_NAME: string = "DirectX";
+
 public constructor (){
 
             super();

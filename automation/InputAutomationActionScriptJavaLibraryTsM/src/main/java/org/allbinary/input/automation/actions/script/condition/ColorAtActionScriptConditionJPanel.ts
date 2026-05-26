@@ -69,7 +69,8 @@ export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private colorAtActionScriptConditionInterface: ColorAtActionScriptConditionInterface
+    private colorAtActionScriptConditionInterface: ColorAtActionScriptConditionInterface;
+
 public constructor (colorAtActionScriptConditionInterface: ColorAtActionScriptConditionInterface){
 
             super();
@@ -86,8 +87,7 @@ this.set();
 
     set(){
 
-    var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;
-;
+    var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;;
     
 this.getMinRedJTextField()!.setText(colorRangeInterface!.getMinRed().toString());
     
@@ -112,8 +112,7 @@ this.colorAtActionScriptConditionInterface!.log();
 
     update(){
 
-    var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;
-;
+    var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;;
     
 colorRangeInterface!.setMinRed(Integer.valueOf(this.getMinRedJTextField()!.getText())!.intValue());
     
@@ -128,8 +127,7 @@ colorRangeInterface!.setMinBlue(Integer.valueOf(this.getMinBlueJTextField()!.get
 colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.intValue());
     
 
-    var xString: string = this.getColorAtXJTextField()!.getText()!;
-;
+    var xString: string = this.getColorAtXJTextField()!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(xString) && StringValidationUtil.getInstance()!.isNumber(xString))
@@ -141,8 +139,7 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
                                     }
                                 
 
-    var yString: string = this.getColorAtYJTextField()!.getText()!;
-;
+    var yString: string = this.getColorAtYJTextField()!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(yString) && StringValidationUtil.getInstance()!.isNumber(yString))
@@ -399,8 +396,7 @@ okJButtonActionPerformed(evt);
                             );
     
 
-    var colorAtActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.colorAtActionJDialog!.getContentPane());
-;
+    var colorAtActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.colorAtActionJDialog!.getContentPane());;
     
 this.colorAtActionJDialog!.getContentPane()!.setLayout(colorAtActionJDialogLayout);
     
@@ -426,8 +422,7 @@ colorAtActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Color At:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -452,49 +447,49 @@ this.getColorAtActionJDialog()!.setVisible(true);
 }
 
 
-    private blueJLabel: javax.swing.JLabel
+    private blueJLabel: javax.swing.JLabel;
 
-    private colorAtActionJButton: javax.swing.JButton
+    private colorAtActionJButton: javax.swing.JButton;
 
-    private colorAtActionJDialog: javax.swing.JDialog
+    private colorAtActionJDialog: javax.swing.JDialog;
 
-    private colorAtXJTextField: javax.swing.JTextField
+    private colorAtXJTextField: javax.swing.JTextField;
 
-    private colorAtYJTextField: javax.swing.JTextField
+    private colorAtYJTextField: javax.swing.JTextField;
 
-    private colorRangeJLabel: javax.swing.JLabel
+    private colorRangeJLabel: javax.swing.JLabel;
 
-    private greenJLabel: javax.swing.JLabel
+    private greenJLabel: javax.swing.JLabel;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private locationJLabel: javax.swing.JLabel
+    private locationJLabel: javax.swing.JLabel;
 
-    private maxBlueJTextField: javax.swing.JTextField
+    private maxBlueJTextField: javax.swing.JTextField;
 
-    private maxGreenJTextField: javax.swing.JTextField
+    private maxGreenJTextField: javax.swing.JTextField;
 
-    private maxJLabel: javax.swing.JLabel
+    private maxJLabel: javax.swing.JLabel;
 
-    private maxRedJTextField: javax.swing.JTextField
+    private maxRedJTextField: javax.swing.JTextField;
 
-    private minBlueJTextField: javax.swing.JTextField
+    private minBlueJTextField: javax.swing.JTextField;
 
-    private minGreenJTextField: javax.swing.JTextField
+    private minGreenJTextField: javax.swing.JTextField;
 
-    private minJLabel: javax.swing.JLabel
+    private minJLabel: javax.swing.JLabel;
 
-    private minRedJTextField: javax.swing.JTextField
+    private minRedJTextField: javax.swing.JTextField;
 
-    private okJButton: javax.swing.JButton
+    private okJButton: javax.swing.JButton;
 
-    private redJLabel: javax.swing.JLabel
+    private redJLabel: javax.swing.JLabel;
 
-    private titleJLabel: javax.swing.JLabel
+    private titleJLabel: javax.swing.JLabel;
 
-    private xJLabel: javax.swing.JLabel
+    private xJLabel: javax.swing.JLabel;
 
-    private yJLabel: javax.swing.JLabel
+    private yJLabel: javax.swing.JLabel;
 
 }
                 

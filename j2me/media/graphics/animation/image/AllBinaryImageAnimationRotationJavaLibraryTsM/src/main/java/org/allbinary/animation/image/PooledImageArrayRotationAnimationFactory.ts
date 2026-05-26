@@ -72,12 +72,10 @@ export class PooledImageArrayRotationAnimationFactory
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
 
-    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
-;
+    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());
-;
+    var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
     
 
 
@@ -92,12 +90,10 @@ export class PooledImageArrayRotationAnimationFactory
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
 
-    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
-;
+    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());
-;
+    var angleIncrement: number = (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());;
     
 
 
@@ -110,19 +106,18 @@ export class PooledImageArrayRotationAnimationFactory
 
     private allBinaryImageRotationAnimationInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    private readonly animationBehaviorFactory: AnimationBehaviorFactory
+    private readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
         this.animationBehaviorFactory= animationBehaviorFactory;
     
 
-    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
-;
+    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var imageArray: Image[] = ImageToRotationImageArrayUtil.getInstance()!.generate(image, angleIncrement, totalAngle)!;
-;
+    var imageArray: Image[] = ImageToRotationImageArrayUtil.getInstance()!.generate(image, angleIncrement, totalAngle)!;;
     
 this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(imageArray, angleIncrement, totalAngle, dx, dy);
     

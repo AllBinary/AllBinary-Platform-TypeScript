@@ -61,6 +61,7 @@ export class DiagonalUpRightTouchInputToGameKeyEventAction extends GameKeyComple
     
 }
 
+
 private constructor (){
             super("Diagonal Up Right Action", TouchMotionGestureFactory.getInstance()!.DIAGONAL_UP_RIGHT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

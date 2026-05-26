@@ -53,9 +53,10 @@ export class MotionRectangle
          implements Cloneable {
         
 
-    private rectangle: Rectangle
+    private rectangle: Rectangle;
 
-    private pixelDeltaVector: Vector
+    private pixelDeltaVector: Vector;
+
 public constructor (rectangle: Rectangle){
 
             super();
@@ -100,8 +101,7 @@ this.pixelDeltaVector= pixelDeltaVector;
 
     public clone(): any{
 
-    var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);
-;
+    var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);;
     
 motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vector);
     

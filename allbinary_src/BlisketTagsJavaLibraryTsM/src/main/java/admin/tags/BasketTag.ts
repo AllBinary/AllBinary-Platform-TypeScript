@@ -70,11 +70,12 @@ export class BasketTag extends CustomTagSupport {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private command: string
+    private command: string;
 
-    private storeName: string
+    private storeName: string;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
+
 public constructor (){
 
             super();
@@ -99,18 +100,15 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
-;
+    var anyType: any = new BasketHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("isBasketEmpty", 
-                            null)!;
-;
+                            null)!;;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -158,18 +156,15 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
-;
+    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("addItemToBasket", 
-                            null)!;
-;
+                            null)!;;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -192,8 +187,7 @@ this.storeName= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to add item from Basket";
-;
+    var error: string = "Failed to add item from Basket";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -221,18 +215,15 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
-;
+    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("removeItemFromBasket", 
-                            null)!;
-;
+                            null)!;;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -255,8 +246,7 @@ this.storeName= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to remove item from Basket";
-;
+    var error: string = "Failed to remove item from Basket";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -284,18 +274,15 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
-;
+    var anyType: any = new BasketRequestHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("adjustBasket", 
-                            null)!;
-;
+                            null)!;;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -318,8 +305,7 @@ this.storeName= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to Adjust Basket";
-;
+    var error: string = "Failed to Adjust Basket";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

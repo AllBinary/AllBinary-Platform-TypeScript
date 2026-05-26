@@ -56,8 +56,7 @@ export class DragVelocityBehavior extends VelocityBehaviorBase {
                         
                                     {
                                     
-    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityXBasicDecimalP()!;
-;
+    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityXBasicDecimalP()!;;
     
 basicDecimal!.multiplyint(nominator);
     
@@ -71,8 +70,7 @@ basicDecimal!.divideint(denominator);
                         
                                     {
                                     
-    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityYBasicDecimalP()!;
-;
+    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityYBasicDecimalP()!;;
     
 basicDecimal!.multiplyint(nominator);
     
@@ -86,8 +84,7 @@ basicDecimal!.divideint(denominator);
 
     public reduceX(velocityProperties: BasicVelocityProperties, nominator: number, denominator: number){
 
-    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityXBasicDecimalP()!;
-;
+    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityXBasicDecimalP()!;;
     
 
                         if(basicDecimal!.getUnscaled() != 0L)
@@ -109,8 +106,7 @@ basicDecimal!.divideint(denominator);
                         
                                     {
                                     
-    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityYBasicDecimalP()!;
-;
+    var basicDecimal: BasicDecimal = velocityProperties!.getVelocityYBasicDecimalP()!;;
     
 basicDecimal!.multiplyint(nominator);
     

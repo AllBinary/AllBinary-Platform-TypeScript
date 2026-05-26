@@ -55,8 +55,7 @@ export class UserEntityFactory
 
     public static getInstance(): UserEntity{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -71,8 +70,7 @@ export class UserEntityFactory
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
@@ -92,6 +90,7 @@ export class UserEntityFactory
 }
 
 }
+
 
 private constructor (){
 

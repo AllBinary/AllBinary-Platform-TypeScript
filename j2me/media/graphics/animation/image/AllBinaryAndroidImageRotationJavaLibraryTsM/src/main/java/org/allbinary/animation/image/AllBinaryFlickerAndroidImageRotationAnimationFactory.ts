@@ -69,9 +69,10 @@ export class AllBinaryFlickerAndroidImageRotationAnimationFactory
 
     private image: Image = NullImage.NULL_IMAGE;
 
-    private readonly angleIncrement: number
+    private readonly angleIncrement: number;
 
-    readonly animationBehaviorFactory: AnimationBehaviorFactory
+    readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -88,8 +89,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
             
     public getInstance(instanceId: number): Animation{
 
-    var image: Image = ImageCopyUtil.getInstance()!.createImage(this.getImage())!;
-;
+    var image: Image = ImageCopyUtil.getInstance()!.createImage(this.getImage())!;;
     
 
 

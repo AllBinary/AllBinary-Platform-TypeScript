@@ -75,20 +75,17 @@ export class AngleFactory
 
     public static main(args: string[]){
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < 360; index++)
+    var index: number = 0;index < 360; index++)
         {
 stringMaker!.appendint(index)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.appendshort(angleFactory!.getClosestDirection(index)!.getValue())!.append(CommonSeps.getInstance()!.NEW_LINE);
     
@@ -111,23 +108,22 @@ LogUtil.getInstance()!.putF(stringMaker!.toString(), "main", "main");
 
     public readonly NOT_ANGLE: NamedAngle = new NamedAngle(this.NEGATIVE_ONE, CommonStrings.getInstance()!.EMPTY);
 
-    public readonly DOWN: NamedAngle
+    public readonly DOWN: NamedAngle;
 
-    public readonly UP: NamedAngle
+    public readonly UP: NamedAngle;
 
-    public readonly LEFT: NamedAngle
+    public readonly LEFT: NamedAngle;
 
-    public readonly RIGHT: NamedAngle
+    public readonly RIGHT: NamedAngle;
+
 public constructor (){
 
             super();
         
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-;
+    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
-    var total: number = this.angleArray!.length;
-;
+    var total: number = this.angleArray!.length;;
     
 this.UP= new NamedAngle(0, commonPhoneStrings!.UP);
     
@@ -138,8 +134,7 @@ this.angleArray[0]= this.UP;
 
 
                         for (
-    var index: number = 1;
-index < 90; index++)
+    var index: number = 1;index < 90; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -154,8 +149,7 @@ this.angleArray[90]= this.RIGHT;
 
 
                         for (
-    var index: number = 91;
-index < 180; index++)
+    var index: number = 91;index < 180; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -170,8 +164,7 @@ this.angleArray[180]= this.DOWN;
 
 
                         for (
-    var index: number = 181;
-index < 270; index++)
+    var index: number = 181;index < 270; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -186,8 +179,7 @@ this.angleArray[270]= this.LEFT;
 
 
                         for (
-    var index: number = 271;
-index < total; index++)
+    var index: number = 271;index < total; index++)
         {
 this.angleArray[index]= new Angle(index);
     
@@ -200,8 +192,7 @@ this.angleArray[index]= new Angle(index);
 
     public getAt(index: number): Angle{
 
-    var adjustedIndex: number = Math.round(this.frameUtil!.adjustAngleToFrameAngle(index));
-;
+    var adjustedIndex: number = Math.round(this.frameUtil!.adjustAngleToFrameAngle(index));;
     
 
 

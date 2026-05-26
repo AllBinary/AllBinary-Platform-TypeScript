@@ -65,12 +65,12 @@ export class TouchJ2ME
     private readonly DEVICE_ID: number = 0;
 
     private motionRecognizer: AllMotionRecognizer = new AllMotionRecognizer();
+
 public constructor (){
 
             super();
         
-    var motionGesturesHandler: BasicMotionGesturesHandler = this.motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;
-;
+    var motionGesturesHandler: BasicMotionGesturesHandler = this.motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;;
     
 motionGesturesHandler!.addListenerInterface(new GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
     
@@ -87,8 +87,7 @@ motionGesturesHandler!.addListenerInterface(new GameMotionGestureListener(Motion
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
     
@@ -107,8 +106,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
     
@@ -127,8 +125,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e);
     

@@ -75,7 +75,8 @@ export class BasicProjectileWeaponPart extends BasicWeaponPart {
 }
 
 
-    private weaponLayerCircularStaticPool: WeaponLayerCircularPool
+    private weaponLayerCircularStaticPool: WeaponLayerCircularPool;
+
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
             super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
                     
@@ -91,8 +92,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
 
-    var weaponLayer: WeaponLayer = this.weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface)!;
-;
+    var weaponLayer: WeaponLayer = this.weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface)!;;
     
 allbinaryLayerManager!.append(weaponLayer);
     

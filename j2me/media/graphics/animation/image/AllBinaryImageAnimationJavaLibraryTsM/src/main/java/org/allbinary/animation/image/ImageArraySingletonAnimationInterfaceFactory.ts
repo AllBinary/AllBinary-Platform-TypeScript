@@ -58,6 +58,7 @@ import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/imag
 
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
+
 public constructor (imageArray: Image[]){
             super(new ImageArrayAnimation(imageArray, AnimationBehavior.getInstance()));
                     

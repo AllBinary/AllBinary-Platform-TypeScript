@@ -61,6 +61,7 @@ export class UpTouchInputToGameKeyEventAction extends GameKeyCompleteMotionGestu
     
 }
 
+
 private constructor (){
             super("Up Action", TouchMotionGestureFactory.getInstance()!.UP, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

@@ -80,9 +80,10 @@ export class WaypointBase
 
     private readonly connectedWaypointList: BasicArrayList = new BasicArrayListD();
 
-    private readonly sound: Sound
+    private readonly sound: Sound;
 
     allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
+
 public constructor (sound: Sound){
 
             super();

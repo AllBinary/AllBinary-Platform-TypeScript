@@ -59,6 +59,7 @@ export class TouchButtonDowngradeResource extends TouchButtonResource {
     
 }
 
+
 private constructor (){
             super("/touch_button_downgrade_64_by_64.png", "/touch_button_downgrade_hint_64_by_64.png");
                     

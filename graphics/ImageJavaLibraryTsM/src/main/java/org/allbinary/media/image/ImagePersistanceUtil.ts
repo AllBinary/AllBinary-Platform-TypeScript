@@ -90,12 +90,10 @@ export class ImagePersistanceUtil
             
     public saveWithBatik(file: AbFile, bufferedImage: BufferedImage){
 
-    var batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();
-;
+    var batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();;
     
 
-    var fileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);
-;
+    var fileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);;
     
 
         try {
@@ -125,20 +123,17 @@ this.saveWithImageIO(new File(filePath), bufferedImage);
 
     var writer: ImageWriter = 
                 null
-            ;
-;
+            ;;
     
 
     var ios: ImageOutputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             
-    var iter: Iterator = ImageIO.getImageWritersByFormatName("jpeg")!;
-;
+    var iter: Iterator = ImageIO.getImageWritersByFormatName("jpeg")!;;
     
 
                         if(!iter.hasNext())
@@ -162,8 +157,7 @@ ios= ImageIO.createImageOutputStream(file);
 writer.setOutput(ios);
     
 
-    var iwp: ImageWriteParam = writer.getDefaultWriteParam()!;
-;
+    var iwp: ImageWriteParam = writer.getDefaultWriteParam()!;;
     
 iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
     

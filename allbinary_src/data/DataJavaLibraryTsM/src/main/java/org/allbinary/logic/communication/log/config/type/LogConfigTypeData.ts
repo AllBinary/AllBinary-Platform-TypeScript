@@ -57,6 +57,7 @@ export class LogConfigTypeData
     
 }
 
+
 private constructor (){
 
             super();

@@ -85,6 +85,7 @@ export class CompoundContextTransformInfoObjectConfig extends GenericStoreTransf
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (abeClientInformation: Object, transformInfoInterface: Object){
             super(abeClientInformation, transformInfoInterface);
                     
@@ -92,6 +93,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object){
             super(abeClientInformation, transformInfoInterface, document);
@@ -102,6 +104,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
 this.setDocument(this.generate(this.toXmlDoc()));
     
 }
+
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string){
             super(abeClientInformation, transformInfoInterface, name, type);
@@ -118,20 +121,16 @@ this.setDocument(this.generate(this.toXmlDoc()));
             
     public get(): string{
 
-    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-;
+    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;
-;
+    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(storeName);
     
@@ -142,12 +141,10 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
 stringBuffer!.append(RootTransformInfoData.NAME);
     
 
-    var rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;
-;
+    var rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;;
     
 
-    var viewVector: Vector = this.getTransformDomNodes()!;
-;
+    var viewVector: Vector = this.getTransformDomNodes()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -159,44 +156,35 @@ stringBuffer!.append(RootTransformInfoData.NAME);
                                     }
                                 
 
-    var rootView: string = rootComponentInterface!.view()!;
-;
+    var rootView: string = rootComponentInterface!.view()!;;
     
 
-    var startXMLHeader: string = "<xsl:text disable-output-escaping=\"yes\" ><![CDATA[";
-;
+    var startXMLHeader: string = "<xsl:text disable-output-escaping=\"yes\" ><![CDATA[";;
     
 
-    var endXMLHeader: string = "]]></xsl:text>";
-;
+    var endXMLHeader: string = "]]></xsl:text>";;
     
 
-    var size: number = viewVector!.length!;
-;
+    var size: number = viewVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index) as TransformInfoDomNode;
-;
+    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index) as TransformInfoDomNode;;
     
 
-    var templateKey: string = objectConfigTransformInfoDomNode!.getReplaceKey()!;
-;
+    var templateKey: string = objectConfigTransformInfoDomNode!.getReplaceKey()!;;
     
 
-    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, objectConfigTransformInfoDomNode!.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface())!;
-;
+    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, objectConfigTransformInfoDomNode!.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface())!;;
     
 
-    var replacementViewString: string = componentInterface!.view()!;
-;
+    var replacementViewString: string = componentInterface!.view()!;;
     
 replacementViewString= DocumentToNode.convertDocumentToNodeString(replacementViewString);
     
@@ -209,8 +197,7 @@ stringBuffer!.append(replacementViewString);
 stringBuffer!.append(endXMLHeader);
     
 
-    var templateValue: string = stringBuffer!.toString()!;
-;
+    var templateValue: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -232,8 +219,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "get()");
                                     }
                                 
 
-    var replace: Replace = new Replace(templateKey, templateValue);
-;
+    var replace: Replace = new Replace(templateKey, templateValue);;
     
 rootView= replace.all(rootView);
     
@@ -261,12 +247,10 @@ rootView= replace.all(rootView);
             
     public createInputStream(): InputStream{
 
-    var completeTemplateViewBytes: number[] = this.get()!.encodeToByteArray()!;
-;
+    var completeTemplateViewBytes: number[] = this.get()!.encodeToByteArray()!;;
     
 
-    var bais: ByteArrayInputStream = new ByteArrayInputStream(completeTemplateViewBytes);
-;
+    var bais: ByteArrayInputStream = new ByteArrayInputStream(completeTemplateViewBytes);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

@@ -64,36 +64,32 @@ export class CommonButtons
 }
 
 
-    public readonly STANDARD_BUTTON_SIZE: number
+    public readonly STANDARD_BUTTON_SIZE: number;
 
-    public readonly NORMAL_BUTTON: Rectangle
+    public readonly NORMAL_BUTTON: Rectangle;
 
-    public readonly LARGE_BUTTON: Rectangle
+    public readonly LARGE_BUTTON: Rectangle;
+
 private constructor (){
 
             super();
         
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var commonButtonSize: number = 128;
-;
+    var commonButtonSize: number = 128;;
     
 
         while(commonButtonSize > 64)
         {
 
-    var totalColumns: number = displayInfo!.getLastWidth() /commonButtonSize;
-;
+    var totalColumns: number = displayInfo!.getLastWidth() /commonButtonSize;;
     
 
-    var totalRows: number = displayInfo!.getLastHeight() /commonButtonSize;
-;
+    var totalRows: number = displayInfo!.getLastHeight() /commonButtonSize;;
     
 
-    var max: number = totalColumns;
-;
+    var max: number = totalColumns;;
     
 
                         if(totalRows > max)

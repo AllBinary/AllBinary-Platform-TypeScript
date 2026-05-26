@@ -61,7 +61,8 @@ import { AbTagData } from './AbTagData.js';
 export class InventoryTag extends TableTag {
         
 
-    private storeName: string
+    private storeName: string;
+
 public constructor (){
             super();
                     
@@ -101,8 +102,7 @@ this.storeName= value;
                         
                                     {
                                     
-    var parentTag: Tag = this.getParent()!;
-;
+    var parentTag: Tag = this.getParent()!;;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
     

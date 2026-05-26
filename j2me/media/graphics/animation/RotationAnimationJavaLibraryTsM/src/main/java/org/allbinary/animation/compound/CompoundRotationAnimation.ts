@@ -69,7 +69,8 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 export class CompoundRotationAnimation extends RotationAnimation implements CompoundAnimationInterface {
         
 
-    private animationInterfaceArray: RotationAnimation[]
+    private animationInterfaceArray: RotationAnimation[];
+
 public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
                     
@@ -185,8 +186,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(gr
 
     public nextAnimation(){
 
-    var frame: number = this.getFrame()!;
-;
+    var frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.next();
     
@@ -197,8 +197,7 @@ this.setFrame(frame);
 
     public previousAnimation(){
 
-    var frame: number = this.getFrame()!;
-;
+    var frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.previous();
     
@@ -209,8 +208,7 @@ this.setFrame(frame);
 
     public setAnimation(index: number){
 
-    var frame: number = this.getFrame()!;
-;
+    var frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.setIndex(index);
     
@@ -278,8 +276,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);
     

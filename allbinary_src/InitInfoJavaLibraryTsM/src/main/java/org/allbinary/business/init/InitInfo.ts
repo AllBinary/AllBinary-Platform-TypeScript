@@ -92,6 +92,7 @@ export class InitInfo
             ;
 
     private hasRead: boolean = false;
+
 private constructor (){
 
             super();
@@ -105,8 +106,7 @@ private constructor (){
 
         try {
             
-    var initInfoEntity: InitInfoEntity = new InitInfoEntity();
-;
+    var initInfoEntity: InitInfoEntity = new InitInfoEntity();;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
@@ -215,8 +215,7 @@ this.testHtmlPath=
                                     ;
     
 
-    var initInfoEntity: InitInfoEntity = new InitInfoEntity();
-;
+    var initInfoEntity: InitInfoEntity = new InitInfoEntity();;
     
 initInfoEntity!.get();
     
@@ -451,8 +450,7 @@ this.mainPath= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(this.TESTING, this.getTesting());
     

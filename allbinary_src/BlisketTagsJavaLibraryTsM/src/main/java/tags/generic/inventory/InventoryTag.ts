@@ -63,6 +63,7 @@ export class InventoryTag extends StoreValidationTransformTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
             super();
                     
@@ -78,22 +79,18 @@ public constructor (){
 
         try {
             
-    var anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("search", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 pageContext!.getOut()!.print(result);
     
@@ -112,8 +109,7 @@ pageContext!.getOut()!.print(result);
 /* catch(e) 
             {
 
-    var error: string = "Failed to search Inventory by keyword";
-;
+    var error: string = "Failed to search Inventory by keyword";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -156,22 +152,18 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 
         try {
             
-    var anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new InventoryHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("viewSummary", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 pageContext!.getOut()!.print(result);
     
@@ -190,8 +182,7 @@ pageContext!.getOut()!.print(result);
 /* catch(e) 
             {
 
-    var error: string = "Failed to View Summary";
-;
+    var error: string = "Failed to View Summary";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

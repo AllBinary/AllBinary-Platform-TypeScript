@@ -53,7 +53,8 @@ export class Scoreable
 
     public static ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(3)!;
 
-    private points: number
+    private points: number;
+
 public constructor (points: number){
 
             super();

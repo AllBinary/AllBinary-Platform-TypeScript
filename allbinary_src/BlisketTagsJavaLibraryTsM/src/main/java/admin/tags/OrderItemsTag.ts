@@ -67,7 +67,8 @@ export class OrderItemsTag extends TableTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private status: string
+    private status: string;
+
 public constructor (){
 
             super();
@@ -90,8 +91,7 @@ this.status= value;
 
         try {
             
-    var anyType: any = new OrderItemsRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new OrderItemsRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
                         if(this.status == 
@@ -100,18 +100,15 @@ this.status= value;
                         
                                     {
                                     
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("setOrderStatus", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -124,30 +121,25 @@ this.status= value;
                                 
                         else {
                             
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var methodParams: Function[] = 
                                                         [
                                                             this.status.constructor
-                                                        ];
-;
+                                                        ];;
     
 
-    var method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;
-;
+    var method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;;
     
 
     var methodArgs: any[] = 
                                                         [
                                                             this.status
-                                                        ];
-;
+                                                        ];;
     
 
-    var result: string = method.invoke(anyType, methodArgs) as string;
-;
+    var result: string = method.invoke(anyType, methodArgs) as string;;
     
 
 
@@ -173,8 +165,7 @@ this.status= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to set Order status to: " +this.status;
-;
+    var error: string = "Failed to set Order status to: " +this.status;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

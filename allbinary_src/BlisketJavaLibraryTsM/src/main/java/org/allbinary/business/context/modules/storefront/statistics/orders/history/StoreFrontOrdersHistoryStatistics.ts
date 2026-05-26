@@ -66,15 +66,16 @@ export class StoreFrontOrdersHistoryStatistics
          implements StoreFrontOrdersHistoryStatisticsInterface {
         
 
-    private numberOfOrdersLong: Long
+    private numberOfOrdersLong: Long;
 
-    private subTotalMoney: Money
+    private subTotalMoney: Money;
 
-    private shippingCostMoney: Money
+    private shippingCostMoney: Money;
 
-    private taxesMoney: Money
+    private taxesMoney: Money;
 
-    private totalMoney: Money
+    private totalMoney: Money;
+
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
@@ -87,32 +88,26 @@ this.taxesMoney= new Money();
 this.totalMoney= new Money();
     
 
-    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
-;
+    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
     
 
-    var orderHistoryInterfaceVector: Vector = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;
-;
+    var orderHistoryInterfaceVector: Vector = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;;
     
 
-    var numberOfOrders: number = 0;
-;
+    var numberOfOrders: number = 0;;
     
 
-    var orderHistoryInterface: OrderHistoryInterface
-;
+    var orderHistoryInterface: OrderHistoryInterface;;
     
 
-    var size: number = orderHistoryInterfaceVector!.length!;
-;
+    var size: number = orderHistoryInterfaceVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 orderHistoryInterface= orderHistoryInterfaceVector!.get(index) as OrderHistoryInterface;
     
@@ -185,12 +180,10 @@ this.numberOfOrdersLong= new Long(numberOfOrders);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;
-;
+    var storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;;
     
 hashMap!.put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString());
     

@@ -73,19 +73,20 @@ export class AbstractInputAutomationWorker
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private index: number= 0
+    private index: number= 0;
 
-    private running: boolean= false
+    private running: boolean= false;
 
-    private inputAutomationActionInterface: InputAutomationActionInterface
+    private inputAutomationActionInterface: InputAutomationActionInterface;
 
-    private captureWorkerInterface: CaptureWorkerInterface
+    private captureWorkerInterface: CaptureWorkerInterface;
 
-    private imageComparisonWorker: ImageComparisonWorker
+    private imageComparisonWorker: ImageComparisonWorker;
 
-    private motionRectanglesWorker: MotionRectanglesWorker
+    private motionRectanglesWorker: MotionRectanglesWorker;
 
-    private captureThread: Thread
+    private captureThread: Thread;
+
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface){
 
             super();
@@ -205,8 +206,7 @@ this.getCaptureWorker()!.setRunning(false);
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 
         while(this.isRunning())

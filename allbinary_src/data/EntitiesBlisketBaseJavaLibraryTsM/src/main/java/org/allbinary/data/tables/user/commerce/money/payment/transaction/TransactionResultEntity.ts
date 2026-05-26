@@ -78,6 +78,7 @@ export class TransactionResultEntity extends AbSqlBean implements TransactionRes
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly tableName: string = "vresults";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -93,8 +94,7 @@ this.setTableName(this.tableName);
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(OrderData.ID, orderNumber as string);
     
@@ -133,8 +133,7 @@ super.deleteWhere(whereHashMap);
 
         try {
             
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(orderNumber);
     
@@ -143,12 +142,10 @@ values.add(userName);
 values.addAll(transactionResultInterface!.getValues());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 values.add(time);
     
@@ -187,12 +184,10 @@ super.insert(values);
 
         try {
             
-    var resultHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var resultHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 updateKeyAndValue!.put(OrderData.ID, orderNumber);
     
@@ -205,8 +200,7 @@ resultHashMap= super.getRow(updateKeyAndValue);
                         
                                     {
                                     
-    var transactionResult: TransactionResult = new TransactionResult(resultHashMap);
-;
+    var transactionResult: TransactionResult = new TransactionResult(resultHashMap);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -262,12 +256,10 @@ resultHashMap= super.getRow(updateKeyAndValue);
 
     public createTableStatement(): string{
 
-    var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;
-;
+    var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     

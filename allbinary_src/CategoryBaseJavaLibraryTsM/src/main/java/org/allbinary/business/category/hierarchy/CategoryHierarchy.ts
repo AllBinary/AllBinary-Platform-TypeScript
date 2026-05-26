@@ -57,11 +57,12 @@ export class CategoryHierarchy
          implements CategoryHierarchyInterface {
         
 
-    private rootCategoryInterface: CategoryInterface
+    private rootCategoryInterface: CategoryInterface;
 
-    private parentCategoryInterface: CategoryInterface
+    private parentCategoryInterface: CategoryInterface;
 
-    private level: number
+    private level: number;
+
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface){
 
             super();
@@ -72,6 +73,7 @@ this.setRoot(rootCategoryInterface);
 this.setParent(parentCategoryInterface);
     
 }
+
 
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, level: number){
 
@@ -84,12 +86,12 @@ this.setParent(parentCategoryInterface);
     
 }
 
+
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
         
-    var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;
-;
+    var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;;
     
 this.level= Integer.valueOf(levelString)!.intValue();
     

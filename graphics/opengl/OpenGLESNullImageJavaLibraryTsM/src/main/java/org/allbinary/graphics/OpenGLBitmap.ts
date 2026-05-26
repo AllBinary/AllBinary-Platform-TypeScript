@@ -32,7 +32,8 @@ import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/Pla
 export class OpenGLBitmap extends PlatformBitmapBase {
         
 
-    public readonly bitmap: any
+    public readonly bitmap: any;
+
 public constructor (bitmap: any = {}){
 
             super();

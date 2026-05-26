@@ -45,6 +45,7 @@ import { Time } from '../../../../../org/allbinary/business/time/Time.js';
         
 export class TimeCreated extends Time {
         
+
 public constructor (time: string){
             super(time);
                     
@@ -52,6 +53,7 @@ public constructor (time: string){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (time: number){
             super(time);

@@ -32,6 +32,7 @@ import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js
 
 export class AppNameLicensingAdConfiguration extends AdConfiguration {
         
+
 public constructor (){
             super(
                                                 [

@@ -47,6 +47,7 @@ export class MultiPlayerGameFeatureFactory
     
 }
 
+
 private constructor (){
 
             super();
@@ -55,12 +56,10 @@ private constructor (){
 
     public addCommands(anyType: any = {}){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-;
+    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
-    var canvas: Canvas = anyType as Canvas;
-;
+    var canvas: Canvas = anyType as Canvas;;
     
 canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND);
     

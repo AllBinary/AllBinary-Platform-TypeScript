@@ -61,6 +61,7 @@ export class WithNormalAttributePointerOpenGLProcessor extends ObjectThreedOpenG
     
 }
 
+
 public constructor (){
 
             super();

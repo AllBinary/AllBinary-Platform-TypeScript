@@ -66,7 +66,8 @@ export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterface
 
     public static readonly NULL_COUNTED_PICKUP_LAYER_FACTORY: CountedPickedUpLayerInterfaceFactory = new CountedPickedUpLayerInterfaceFactory(PickedUpLayerTypeFactory.getInstance()!.NONE, IconLayer.NULL_ICON_LAYER, NullAnimationFactory.getFactoryInstance()!.getInstance(0));
 
-    private readonly id: number
+    private readonly id: number;
+
 public constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, animationInterface: Animation){
             super(pickeUpLayerType, iconLayer, animationInterface);
                     
@@ -74,8 +75,7 @@ public constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, a
                             //For kotlin this is before the body of the constructor.
                     
 
-    var list: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;
-;
+    var list: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;;
     
 this.id= list.size();
     

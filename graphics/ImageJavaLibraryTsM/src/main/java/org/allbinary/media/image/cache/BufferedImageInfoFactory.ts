@@ -55,8 +55,7 @@ export class BufferedImageInfoFactory
 
     public static getInstance(width: number, height: number, type: number): BufferedImageInfo{
 
-    var stringbuffer: StringMaker = new StringMaker();
-;
+    var stringbuffer: StringMaker = new StringMaker();;
     
 stringbuffer.appendint(width);
     
@@ -65,12 +64,10 @@ stringbuffer.appendint(height);
 stringbuffer.appendint(type);
     
 
-    var key: string = stringbuffer.toString()!;
-;
+    var key: string = stringbuffer.toString()!;;
     
 
-    var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.hashMap!.get(key) as BufferedImageInfo;
-;
+    var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.hashMap!.get(key) as BufferedImageInfo;;
     
 
                         if(bufferedImageInfo == 
@@ -92,6 +89,7 @@ BufferedImageInfoFactory.hashMap!.put(key, bufferedImageInfo);
                         return bufferedImageInfo;
     
 }
+
 
 private constructor (){
 

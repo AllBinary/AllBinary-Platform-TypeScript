@@ -91,9 +91,10 @@ export class GenericModuleConfigurationJPanel extends javax.swing.JPanel impleme
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private genericProfiles: GenericProfiles
+    private genericProfiles: GenericProfiles;
 
-    private selectedGenericProfile: GenericProfile
+    private selectedGenericProfile: GenericProfile;
+
 public constructor (){
 
             super();
@@ -167,8 +168,7 @@ okNewProfileJButtonActionPerformed(evt);
 this.newProfileNameJLabel!.setText("New Profile Name");
     
 
-    var newProfileJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.newProfileJDialog!.getContentPane());
-;
+    var newProfileJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.newProfileJDialog!.getContentPane());;
     
 this.newProfileJDialog!.getContentPane()!.setLayout(newProfileJDialogLayout);
     
@@ -320,8 +320,7 @@ this.jLabel3!.setText("Image Processing:");
 this.jLabel3!.setToolTipText("Turns on/off various extended image processing");
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
-;
+    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -330,8 +329,7 @@ jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel1)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel2)!.addGap(7, 7, 7)!.addComponent(screenCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(savedCaptureJRadioButton)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel3)!.addGap(7, 7, 7)!.addComponent(captureComparisonJCheckBox)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(captureMotionAnalysisJCheckBox)!.addContainerGap(106, Short.MAX_VALUE)));
     
 
-    var genericProfilesJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfilesJPanel);
-;
+    var genericProfilesJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfilesJPanel);;
     
 this.genericProfilesJPanel!.setLayout(genericProfilesJPanelLayout);
     
@@ -342,8 +340,7 @@ genericProfilesJPanelLayout!.setVerticalGroup(genericProfilesJPanelLayout!.creat
 this.genericJTabbedPane!.addTab("Profiles", genericProfilesJPanel);
     
 
-    var blankGenericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionsJPanel);
-;
+    var blankGenericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionsJPanel);;
     
 this.blankGenericProfileActionsJPanel!.setLayout(blankGenericProfileActionsJPanelLayout);
     
@@ -494,8 +491,7 @@ this.getBlankGenericProfileActionsJPanel()!.removeAll();
                         
                                     {
                                     
-    var genericProfileActionsJPanel: GenericProfileActionsJPanel = new GenericProfileActionsJPanel();
-;
+    var genericProfileActionsJPanel: GenericProfileActionsJPanel = new GenericProfileActionsJPanel();;
     
 this.setSelectedGenericProfile(this.getGenericProfiles()!.get(profileNameString));
     
@@ -506,8 +502,7 @@ genericProfileActionsJPanel!.setGenericProfileActions(this.getSelectedGenericPro
 genericProfileActionsJPanel!.selectFirstElement();
     
 
-    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout() as javax.swing.GroupLayout;
-;
+    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout() as javax.swing.GroupLayout;;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
@@ -554,12 +549,10 @@ this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as s
 this.logUtil!.putF(this.commonStrings!.START, this, "updateProfileOptions");
     
 
-    var genericProfile: GenericProfile = this.getSelectedGenericProfile()!;
-;
+    var genericProfile: GenericProfile = this.getSelectedGenericProfile()!;;
     
 
-    var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;
-;
+    var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
     
 this.screenCaptureJRadioButton!.setSelected(false);
     
@@ -570,20 +563,17 @@ this.captureComparisonJCheckBox!.setSelected(false);
 this.captureMotionAnalysisJCheckBox!.setSelected(false);
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
-;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
     
 this.logUtil!.putF(genericProfile!.getName() +" has GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "updateProfileOptions");
     
@@ -701,8 +691,7 @@ this.selectedGenericProfile= selectedGenericProfile;
 
         try {
             
-    var profileNameString: string = this.genericProfilesJList!.getSelectedValue() as string;
-;
+    var profileNameString: string = this.genericProfilesJList!.getSelectedValue() as string;;
     
 this.updateProfileUI(profileNameString);
     
@@ -721,20 +710,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfilesJListValu
 
         try {
             
-    var anyType: any[] = this.genericProfilesJList!.getSelectedValues()!;
-;
+    var anyType: any[] = this.genericProfilesJList!.getSelectedValues()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < anyType!.length; index++)
+    var index: number = 0;index < anyType!.length; index++)
         {
 
-    var nextSelectedValueString: string = anyType[index]! as string;
-;
+    var nextSelectedValueString: string = anyType[index]! as string;;
     
 this.getGenericProfiles()!.remove(nextSelectedValueString);
     
@@ -757,8 +743,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteProfileJButtonActi
 
         try {
             
-    var newProfileName: string = this.newProfileNameJTextField!.getText()!;
-;
+    var newProfileName: string = this.newProfileNameJTextField!.getText()!;;
     
 this.getGenericProfiles()!.add(newProfileName);
     
@@ -787,45 +772,45 @@ this.newProfileJDialog!.setVisible(true);
 }
 
 
-    private blankGenericProfileActionsJPanel: javax.swing.JPanel
+    private blankGenericProfileActionsJPanel: javax.swing.JPanel;
 
-    private buttonGroup2: javax.swing.ButtonGroup
+    private buttonGroup2: javax.swing.ButtonGroup;
 
-    private captureComparisonJCheckBox: javax.swing.JCheckBox
+    private captureComparisonJCheckBox: javax.swing.JCheckBox;
 
-    private captureMotionAnalysisJCheckBox: javax.swing.JCheckBox
+    private captureMotionAnalysisJCheckBox: javax.swing.JCheckBox;
 
-    private deleteProfileJButton: javax.swing.JButton
+    private deleteProfileJButton: javax.swing.JButton;
 
-    private genericJTabbedPane: javax.swing.JTabbedPane
+    private genericJTabbedPane: javax.swing.JTabbedPane;
 
-    private genericProfilesJList: javax.swing.JList
+    private genericProfilesJList: javax.swing.JList;
 
-    private genericProfilesJPanel: javax.swing.JPanel
+    private genericProfilesJPanel: javax.swing.JPanel;
 
-    private genericProfilesJScrollPane: javax.swing.JScrollPane
+    private genericProfilesJScrollPane: javax.swing.JScrollPane;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private jLabel3: javax.swing.JLabel
+    private jLabel3: javax.swing.JLabel;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private newProfileJButton: javax.swing.JButton
+    private newProfileJButton: javax.swing.JButton;
 
-    private newProfileJDialog: javax.swing.JDialog
+    private newProfileJDialog: javax.swing.JDialog;
 
-    private newProfileNameJLabel: javax.swing.JLabel
+    private newProfileNameJLabel: javax.swing.JLabel;
 
-    private newProfileNameJTextField: javax.swing.JTextField
+    private newProfileNameJTextField: javax.swing.JTextField;
 
-    private okNewProfileJButton: javax.swing.JButton
+    private okNewProfileJButton: javax.swing.JButton;
 
-    private savedCaptureJRadioButton: javax.swing.JRadioButton
+    private savedCaptureJRadioButton: javax.swing.JRadioButton;
 
-    private screenCaptureJRadioButton: javax.swing.JRadioButton
+    private screenCaptureJRadioButton: javax.swing.JRadioButton;
 
 }
                 

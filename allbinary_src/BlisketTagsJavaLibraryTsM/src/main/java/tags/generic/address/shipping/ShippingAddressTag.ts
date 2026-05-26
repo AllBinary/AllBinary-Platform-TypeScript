@@ -56,7 +56,8 @@ import { StoreValidationTransformTag } from '../../../../tags/StoreValidationTra
 export class ShippingAddressTag extends StoreValidationTransformTag {
         
 
-    private value: string
+    private value: string;
+
 public constructor (){
 
             super();

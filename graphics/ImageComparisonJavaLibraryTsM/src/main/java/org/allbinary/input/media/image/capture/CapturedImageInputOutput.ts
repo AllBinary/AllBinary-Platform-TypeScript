@@ -81,12 +81,10 @@ export class CapturedImageInputOutput
             
     public save(frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = ((getInstance as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);
-;
+    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = ((getInstance as AutomaticCacheInterface).get(frame) as BufferedImageFrameCacheable);;
     
 this.logUtil!.putF(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);
     
@@ -97,16 +95,13 @@ this.save(capturedBufferedImageCacheable!.getBufferedImage(), frame);
 
     public save(bufferedImage: BufferedImage, frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-;
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var filePathStringBuffer: StringMaker = new StringMaker();
-;
+    var filePathStringBuffer: StringMaker = new StringMaker();;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
     
@@ -115,14 +110,12 @@ filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
 filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
 
-    var filePath: string = filePathStringBuffer!.toString()!;
-;
+    var filePath: string = filePathStringBuffer!.toString()!;;
     
 this.logUtil!.putF(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE);
     
 
-    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
-;
+    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
     
 imagePersistanceUtil!.saveWithImageIO(filePath, bufferedImage);
     

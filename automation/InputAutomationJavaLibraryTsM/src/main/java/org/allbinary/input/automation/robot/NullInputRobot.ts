@@ -69,6 +69,7 @@ export class NullInputRobot extends AbstractInputRobot implements InputRobotInte
     public static readonly NAME: string = "NULL";
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
             super(
                             null);

@@ -62,7 +62,8 @@ Config = class
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
 
-    public readonly bitmapConfig: any
+    public readonly bitmapConfig: any;
+
 private constructor (bitmapConfig: any = {}){
 
             super();

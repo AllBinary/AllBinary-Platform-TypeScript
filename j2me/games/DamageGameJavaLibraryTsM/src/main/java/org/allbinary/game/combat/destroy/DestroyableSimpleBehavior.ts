@@ -48,9 +48,10 @@ import { DestroyedLayerProcessor } from './DestroyedLayerProcessor.js';
 export class DestroyableSimpleBehavior extends DestroyableBaseBehavior {
         
 
-    readonly ownerLayer: CollidableCompositeLayer
+    readonly ownerLayer: CollidableCompositeLayer;
 
     private destroyed: boolean = false;
+
 public constructor (ownerLayer: CollidableCompositeLayer){
 
             super();

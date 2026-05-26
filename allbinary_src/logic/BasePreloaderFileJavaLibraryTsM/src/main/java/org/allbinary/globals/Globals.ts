@@ -75,6 +75,7 @@ export class Globals
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -83,12 +84,10 @@ private constructor (){
 
     public init(classLoader: ClassLoader, pathString: string){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
-;
+    var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
     
 appUrlGlobals!.setWebappPath(pathString);
     
@@ -97,8 +96,7 @@ URLGLOBALS.init(appUrlGlobals);
 WebappClassLoaderInfo.setLoader(classLoader);
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Setting Up AllBinary System Configuration Args: ");
     
@@ -111,8 +109,7 @@ stringBuffer!.append(classLoader!.constructor.name.toString()!);
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(pathString))

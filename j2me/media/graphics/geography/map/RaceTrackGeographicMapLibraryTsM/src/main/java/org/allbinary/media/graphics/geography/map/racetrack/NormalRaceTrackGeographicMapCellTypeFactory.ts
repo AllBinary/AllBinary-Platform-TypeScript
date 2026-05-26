@@ -57,6 +57,7 @@ export class NormalRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeogra
     
 }
 
+
 private constructor (){
 
             super();

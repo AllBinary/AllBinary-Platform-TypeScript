@@ -92,7 +92,8 @@ export class HorizontalScreenPatrolAI extends BasicAI {
 
     private readonly secondaryPlayerQueue: PlayerQueue = SecondaryPlayerQueueFactory.getInstance()!;
 
-    private readonly sound: Sound
+    private readonly sound: Sound;
+
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -128,20 +129,17 @@ super.processKeyAI(this.keyDirection);
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var currentOwnerLayerX: number = layerInterface!.getXP()!;
-;
+    var currentOwnerLayerX: number = layerInterface!.getXP()!;;
     
 
                         if(currentOwnerLayerX <  -layerInterface!.getWidth())
                         
                                     {
                                     
-    var y: number = MyRandomFactory.getInstance()!.getAbsoluteNextIntAllowZero(50)!;
-;
+    var y: number = MyRandomFactory.getInstance()!.getAbsoluteNextIntAllowZero(50)!;;
     
 layerInterface!.setPosition(this.displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP());
     
@@ -161,12 +159,10 @@ this.secondaryPlayerQueue!.add(this.sound);
                                     super.processKeyAI(Canvas.KEY_NUM1);
     
 
-    var gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;
-;
+    var gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;;
     
 
-    var FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12)>>2;
-;
+    var FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12)>>2;;
     
 
                         if(FIRE > this.MAX_FIRE)

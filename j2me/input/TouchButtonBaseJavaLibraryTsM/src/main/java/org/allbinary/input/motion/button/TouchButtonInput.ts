@@ -71,6 +71,7 @@ export class TouchButtonInput extends Input implements GameKeyEventSourceInterfa
     private readonly TOUCH_BUTTON_SOURCE_ID: number = this.gameKeyEventFactory!.TOUCH_BUTTON_SOURCE_ID;
 
     private gameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
+
 public constructor (id: number, name: string){
             super(id, name);
                     
@@ -78,8 +79,7 @@ public constructor (id: number, name: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;
-;
+    var inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 inputFactory!.add(this.getId(), this);
     
@@ -90,8 +90,7 @@ inputFactory!.add(this.getId(), this);
 
         try {
             
-    var gameKey: GameKey = inputToGameKeyMapping!.getInstance(this.getId())!;
-;
+    var gameKey: GameKey = inputToGameKeyMapping!.getInstance(this.getId())!;;
     
 this.gameKeyEvent= this.gameKeyEventFactory!.getInstanceForInput(this, gameKey);
     
@@ -100,8 +99,7 @@ this.gameKeyEvent= this.gameKeyEventFactory!.getInstanceForInput(this, gameKey);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     

@@ -62,7 +62,8 @@ export class IconLayer extends AllBinaryLayer {
 
     public static readonly NULL_ICON_LAYER: IconLayer = new IconLayer(NullAnimationFactory.getFactoryInstance()!.getInstance(0), 0, 0);
 
-    private animationInterface: Animation
+    private animationInterface: Animation;
+
 public constructor (animationInterface: Animation, width: number, height: number){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), ViewPosition.getInstanceD());
                     

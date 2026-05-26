@@ -69,37 +69,37 @@ export class DownloadableItem
          {
         
 
-    private readonly id: string
+    private readonly id: string;
 
-    private readonly basicItemId: string
+    private readonly basicItemId: string;
 
-    private readonly enabled: string
+    private readonly enabled: string;
 
-    private readonly system: string
+    private readonly system: string;
 
-    private readonly platform: string
+    private readonly platform: string;
 
-    private readonly specialName: string
+    private readonly specialName: string;
 
-    private readonly version: string
+    private readonly version: string;
 
-    private readonly changes: string
+    private readonly changes: string;
 
-    private readonly licenseFile: string
+    private readonly licenseFile: string;
 
-    private readonly file: string
+    private readonly file: string;
 
-    private readonly size: Long
+    private readonly size: Long;
 
-    private readonly validTime: Long
+    private readonly validTime: Long;
 
-    private readonly retries: string
+    private readonly retries: string;
+
 public constructor (id: string){
 
             super();
         
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 this.id= new ProductIdGenerator().getNext();
     
@@ -129,6 +129,7 @@ this.retries= EMPTY_STRING;
     
 }
 
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();
@@ -153,8 +154,7 @@ this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE) as string;
 this.file= hashMap!.get(DownloadItemData.FILE) as string;
     
 
-    var value: string = hashMap!.get(DownloadItemData.SIZE) as string;
-;
+    var value: string = hashMap!.get(DownloadItemData.SIZE) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(value))
@@ -172,8 +172,7 @@ this.file= hashMap!.get(DownloadItemData.FILE) as string;
                         }
                             
 
-    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as string;
-;
+    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(validTime))
@@ -186,32 +185,25 @@ this.file= hashMap!.get(DownloadItemData.FILE) as string;
                                 
                         else {
                             
-    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as string;
-;
+    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as string;;
     
 
-    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as string;
-;
+    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as string;;
     
 
-    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as string;
-;
+    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as string;;
     
 
-    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as string;
-;
+    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as string;;
     
 
-    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as string;
-;
+    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as string;;
     
 
-    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as string;
-;
+    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as string;;
     
 
-    var totalTime: number = TimeUtil.getInstance()!.getTotalTime(totalYears, totalMonths, totalDays, totalHours, totalMinutes, totalSeconds)!;
-;
+    var totalTime: number = TimeUtil.getInstance()!.getTotalTime(totalYears, totalMonths, totalDays, totalHours, totalMinutes, totalSeconds)!;;
     
 this.validTime= new Long(totalTime);
     
@@ -225,16 +217,13 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as string;
 
     public toVector(): Vector{
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(getId());
     
@@ -277,8 +266,7 @@ values.add(time);
 
     public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 values.put(DownloadItemData.ID, this.getId());
     
@@ -307,12 +295,10 @@ values.put(DownloadItemData.VALID_TIME, this.getValidTime()!.toString());
 values.put(DownloadItemData.RETRIES, this.getRetries());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     

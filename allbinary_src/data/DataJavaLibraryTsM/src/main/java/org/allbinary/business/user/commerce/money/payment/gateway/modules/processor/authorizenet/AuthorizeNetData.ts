@@ -151,6 +151,7 @@ export class AuthorizeNetData
     public static readonly X_FREIGHT: string = "x_freight";
 
     public static readonly X_DUTY: string = "x_duty";
+
 private constructor (){
 
             super();

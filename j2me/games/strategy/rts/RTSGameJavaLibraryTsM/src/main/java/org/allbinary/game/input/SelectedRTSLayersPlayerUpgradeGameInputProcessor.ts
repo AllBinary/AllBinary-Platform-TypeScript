@@ -51,6 +51,7 @@ import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameI
 
 export class SelectedRTSLayersPlayerUpgradeGameInputProcessor extends SelectedRTSLayersPlayerGameInputProcessor {
         
+
 public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput){
             super(selectedRTSLayersPlayerGameInput);
                     

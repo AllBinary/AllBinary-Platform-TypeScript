@@ -54,6 +54,7 @@ import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/wor
 
 export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {
         
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     

@@ -92,32 +92,27 @@ this.list= new BasicArrayListD();
 
 
                         for (
-    var index: number = 0;
-index < partInterfaceArray!.length; index++)
+    var index: number = 0;index < partInterfaceArray!.length; index++)
         {
 this.list.add(partInterfaceArray[index]!);
     
 }
 
 
-    var countedBasicArrayList: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;
-;
+    var countedBasicArrayList: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;;
     
 
-    var layerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactory
-;
+    var layerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactory;;
     
 
-    var size: number = countedBasicArrayList!.size()!;
-;
+    var size: number = countedBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory;
     
@@ -126,8 +121,7 @@ this.list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInter
 }
 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Total Parts: ");
     
@@ -138,27 +132,23 @@ stringBuffer!.append(" Counted: ");
 stringBuffer!.appendint(countedBasicArrayList!.size());
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var newPartInterfaceArray: PartInterface[] = new Array(this.list.size());
-;
+    var newPartInterfaceArray: PartInterface[] = new Array(this.list.size());;
     
 
     var newSize: number = newPartInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < newSize; index++)
+    var index: number = 0;index < newSize; index++)
         {
 newPartInterfaceArray[index]= this.list.get(index) as PartInterface;
     

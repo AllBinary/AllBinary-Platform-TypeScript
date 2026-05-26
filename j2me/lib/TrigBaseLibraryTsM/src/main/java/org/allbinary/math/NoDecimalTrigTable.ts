@@ -77,21 +77,20 @@ export class NoDecimalTrigTable
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
 
-    private readonly noDecimalSin: number[]
+    private readonly noDecimalSin: number[];
 
-    private readonly noDecimalCos: number[]
+    private readonly noDecimalCos: number[];
 
-    private readonly noDecimalTan: number[]
+    private readonly noDecimalTan: number[];
+
 private constructor (){
 
             super();
         
-    var TOTAL_ANGLE: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
-;
+    var TOTAL_ANGLE: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);;
     
 
-    var MAX_VALUE: number = (Integer.MAX_VALUE);
-;
+    var MAX_VALUE: number = (Integer.MAX_VALUE);;
     
 this.noDecimalSin= new Array(TOTAL_ANGLE);
     
@@ -2300,24 +2299,20 @@ this.noDecimalTan[0]=  -174;
             
     public antiTan(dx: number, dy: number): number{
 
-    var MAX_VALUE: number = (Integer.MAX_VALUE);
-;
+    var MAX_VALUE: number = (Integer.MAX_VALUE);;
     
 
-    var MIN_VALUE: number = (Integer.MIN_VALUE);
-;
+    var MIN_VALUE: number = (Integer.MIN_VALUE);;
     
 
-    var ratio: number = (MAX_VALUE -1);
-;
+    var ratio: number = (MAX_VALUE -1);;
     
 
                         if(dy != 0)
                         
                                     {
                                     
-    var dxl: number = (dx);
-;
+    var dxl: number = (dx);;
     
 ratio= this.SCALE *dxl /dy;
     
@@ -2342,8 +2337,7 @@ ratio= this.SCALE *dxl /dy;
 
 
                         for (
-    var index: number = 180;
-index > 90; index--)
+    var index: number = 180;index > 90; index--)
         {
 
                         if(ratio <= this.noDecimalTan[index])
@@ -2392,8 +2386,7 @@ index > 90; index--)
 
 
                         for (
-    var index: number = 270;
-index > 180; index--)
+    var index: number = 270;index > 180; index--)
         {
 
                         if(ratio < this.noDecimalTan[index] && ratio >= this.noDecimalTan[index -1])
@@ -2422,8 +2415,7 @@ index > 180; index--)
 
 
                         for (
-    var index: number = (this.noDecimalTan!.length -1);
-index > 270; index--)
+    var index: number = (this.noDecimalTan!.length -1);index > 270; index--)
         {
 
                         if(ratio < this.noDecimalTan[index])
@@ -2472,8 +2464,7 @@ index > 270; index--)
 
 
                         for (
-    var index: number = 90;
-index > 0; index--)
+    var index: number = 90;index > 0; index--)
         {
 
                         if(ratio < this.noDecimalTan[index] && ratio >= this.noDecimalTan[index -1])
@@ -2494,8 +2485,7 @@ index > 0; index--)
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Invalid Ratio: ");
     
@@ -2525,38 +2515,30 @@ stringBuffer!.appendint(dy);
             
     public antiTanDebug(screenX: number, screenY: number, targetX: number, targetY: number): number{
 
-    var METHOD_NAME: string = "antiTanDebug";
-;
+    var METHOD_NAME: string = "antiTanDebug";;
     
 
-    var TARGET_ANGLE: string = " Targeting angle: ";
-;
+    var TARGET_ANGLE: string = " Targeting angle: ";;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 PreLogUtil.put(stringMaker!.append("screenX: ")!.appendint(screenX)!.append(" screenY: ")!.appendint(screenY)!.append(" targetX: ")!.appendint(targetX)!.append(" targetY: ")!.appendint(targetY)!.toString(), this, METHOD_NAME);
     
 
-    var targetX2: number = Math.round( -targetX);
-;
+    var targetX2: number = Math.round( -targetX);;
     
 
-    var targetY2: number = Math.round( -targetY);
-;
+    var targetY2: number = Math.round( -targetY);;
     
 
-    var screenX2: number = Math.round( -screenX);
-;
+    var screenX2: number = Math.round( -screenX);;
     
 
-    var screenY2: number = Math.round( -screenY);
-;
+    var screenY2: number = Math.round( -screenY);;
     
 
-    var dx: number[] = new Array(4);
-;
+    var dx: number[] = new Array(4);;
     
 dx[0]= (screenX -targetX);
     
@@ -2567,8 +2549,7 @@ dx[2]= (screenX2 -targetX);
 dx[3]= (screenX2 -targetX2);
     
 
-    var dy: number[] = new Array(4);
-;
+    var dy: number[] = new Array(4);;
     
 dy[0]= (screenY -targetY);
     
@@ -2579,32 +2560,27 @@ dy[2]= (screenY2 -targetY);
 dy[3]= (screenY2 -targetY2);
     
 
-    var angleOfTarget: number= 0
-;
+    var angleOfTarget: number= 0;;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
-    var angle: Angle
-;
+    var angle: Angle;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < dx.length; index++)
+    var index: number = 0;index < dx.length; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < dy.length; index2++)
+    var index2: number = 0;index2 < dy.length; index2++)
         {
 angleOfTarget= this.antiTan(dx[index]!, dy[index2]!);
     

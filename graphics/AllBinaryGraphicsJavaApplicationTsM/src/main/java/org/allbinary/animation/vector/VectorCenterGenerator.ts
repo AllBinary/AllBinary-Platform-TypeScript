@@ -78,8 +78,7 @@ export class VectorCenterGenerator
             
     public static translate(list: BasicArrayList, x: number, y: number): BasicArrayList{
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(list);
-;
+    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(list);;
     
 graphicsPipe!.createMatrix();
     
@@ -110,9 +109,10 @@ graphicsPipe!.translate(x, y);
 
     private dy: number = 0;
 
-    private width: number= 0
+    private width: number= 0;
 
-    private height: number= 0
+    private height: number= 0;
+
 public constructor (){
 
             super();
@@ -123,25 +123,21 @@ public constructor (){
             
     public calculate(hashMap: HashMap<any, any>){
 
-    var graphicItemArray: any[] = hashMap!.keys().()!;
-;
+    var graphicItemArray: any[] = hashMap!.keys().()!;;
     
 
     var size: number = graphicItemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
-;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
                         if(item.getName() == LinesGraphicItem.getStaticName())
@@ -161,8 +157,7 @@ this.setWidth(this.maxX -this.minX);
 this.setHeight(this.maxY -this.minY);
     
 
-    var max: number = this.getWidth()!;
-;
+    var max: number = this.getWidth()!;;
     
 
                         if(getHeight() > max)
@@ -174,26 +169,21 @@ this.setHeight(this.maxY -this.minY);
                                     }
                                 
 
-    var middle: number = max /2;
-;
+    var middle: number = max /2;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var s: string = new StringMaker().append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;
-;
+    var s: string = new StringMaker().append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;;
     
 this.logUtil!.putF(s, this, this.commonStrings!.GET_INSTANCE);
     
 
-    var currentMiddleX: number = this.minX +this.getWidth() /2;
-;
+    var currentMiddleX: number = this.minX +this.getWidth() /2;;
     
 
-    var currentMiddleY: number = this.minY +this.getHeight() /2;
-;
+    var currentMiddleY: number = this.minY +this.getHeight() /2;;
     
 this.dx= middle -currentMiddleX;
     
@@ -210,33 +200,27 @@ this.calculate(hashMap);
 this.logUtil!.putF(new StringMaker().append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, this.commonStrings!.GET_INSTANCE);
     
 
-    var graphicItemArray: any[] = hashMap!.keys().()!;
-;
+    var graphicItemArray: any[] = hashMap!.keys().()!;;
     
 
     var size: number = graphicItemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
-;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
-    var list: BasicArrayList = VectorCenterGenerator.translate(item.getPointsInterface()!.getPoints(), dx, dy)!;
-;
+    var list: BasicArrayList = VectorCenterGenerator.translate(item.getPointsInterface()!.getPoints(), dx, dy)!;;
     
 
-    var newPoints: Points = new Points();
-;
+    var newPoints: Points = new Points();;
     
 newPoints!.addPoints(list);
     
@@ -253,24 +237,20 @@ item.setPointsInterface(newPoints);
 
         try {
             
-    var newVector: Vector = new Vector();
-;
+    var newVector: Vector = new Vector();;
     
 
-    var size: number = pointVector!.size()!;
-;
+    var size: number = pointVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var point: GPoint = pointVector!.get(index) as GPoint;
-;
+    var point: GPoint = pointVector!.get(index) as GPoint;;
     
 
                         if(point.getX() < this.minX)

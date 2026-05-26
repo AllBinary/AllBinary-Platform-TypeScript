@@ -86,8 +86,7 @@ export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedT
 
     appendTouchButtonInput(append: string, touchButtonInput: TouchButtonInput){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(touchButtonInput!.toString());
     
@@ -156,8 +155,7 @@ this.appendTouchButtonInput(this.PRESSED_AND_NOT_FIRED, touchButtonInput);
 
     public removeAt(index: number): TouchButtonInput{
 
-    var touchButtonInput: TouchButtonInput = super.removeAt(index)!;
-;
+    var touchButtonInput: TouchButtonInput = super.removeAt(index)!;;
     
 this.listString= this.list.toString();
     
@@ -174,8 +172,7 @@ this.string= new StringMaker().append(this.listString)!.append(this.append)!.toS
 
     public remove(touchButtonInput: TouchButtonInput): boolean{
 
-    var isRemoved: boolean = super.remove(touchButtonInput)!;
-;
+    var isRemoved: boolean = super.remove(touchButtonInput)!;;
     
 this.listString= this.list.toString();
     

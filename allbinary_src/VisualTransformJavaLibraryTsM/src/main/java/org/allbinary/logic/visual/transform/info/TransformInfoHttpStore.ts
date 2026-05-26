@@ -69,6 +69,7 @@ export class TransformInfoHttpStore extends TransformInfoHttp implements Transfo
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext, true);
                     
@@ -86,6 +87,7 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
                                 
 }
 
+
 public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(databaseHashMap, propertiesHashMap, pageContext);
                     
@@ -97,8 +99,7 @@ public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashM
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Database HashMap: ");
     
@@ -116,6 +117,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap
 this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as string);
     
 }
+
 
 public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
@@ -141,8 +143,7 @@ this.setStoreName(storeFrontInterface!.getName());
             
     getPath(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     

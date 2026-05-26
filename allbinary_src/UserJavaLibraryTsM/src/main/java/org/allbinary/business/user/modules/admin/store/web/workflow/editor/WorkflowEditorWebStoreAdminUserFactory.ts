@@ -54,6 +54,7 @@ export class WorkflowEditorWebStoreAdminUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

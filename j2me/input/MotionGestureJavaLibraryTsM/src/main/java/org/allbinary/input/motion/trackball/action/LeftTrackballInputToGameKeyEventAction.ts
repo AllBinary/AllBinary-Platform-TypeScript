@@ -61,6 +61,7 @@ export class LeftTrackballInputToGameKeyEventAction extends GameKeyCompleteMotio
     
 }
 
+
 private constructor (){
             super("Left Action", TrackballMotionGestureFactory.getInstance()!.LEFT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

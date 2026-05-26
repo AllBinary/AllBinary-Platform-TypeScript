@@ -60,19 +60,20 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 export class AllBinaryTiledLayer extends Layer implements NamedInterface, PaintableInterface {
         
 
-    private cellWidth: number
+    private cellWidth: number;
 
-    private cellHeight: number
+    private cellHeight: number;
 
-    private readonly halfWidth: number
+    private readonly halfWidth: number;
 
-    private readonly halfHeight: number
+    private readonly halfHeight: number;
 
-    private readonly halfCellWidth: number
+    private readonly halfCellWidth: number;
 
-    private readonly halfCellHeight: number
+    private readonly halfCellHeight: number;
 
-    private readonly dataId: Integer
+    private readonly dataId: Integer;
+
 public constructor (dataId: Integer, width: number, height: number, cellWidth: number, cellHeight: number){
             super(0, 0);
                     
@@ -104,8 +105,7 @@ this.halfCellHeight= (cellHeight>>1);
 
     public setCells(mapTwoDArray: number[][]){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Start: r: ");
     
@@ -126,28 +126,24 @@ stringBuffer!.appendint(this.getColumns());
 this.logUtil!.putF(stringBuffer!.toString(), this, "setCells");
     
 
-    var rows: number = this.getRows()!;
-;
+    var rows: number = this.getRows()!;;
     
 
-    var columns: number = this.getColumns()!;
-;
+    var columns: number = this.getColumns()!;;
     
 
 
 
 
                         for (
-    var col: number = 0;
-col < columns; col++)
+    var col: number = 0;col < columns; col++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < rows; row++)
+    var row: number = 0;row < rows; row++)
         {
 this.setCell(col, row, mapTwoDArray[row]![col]!);
     
@@ -160,28 +156,24 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
     public updateCells(mapTwoDArray: number[][], fromTileId: number, toTileId: number){
 
-    var rows: number = this.getRows()!;
-;
+    var rows: number = this.getRows()!;;
     
 
-    var columns: number = this.getColumns()!;
-;
+    var columns: number = this.getColumns()!;;
     
 
 
 
 
                         for (
-    var col: number = 0;
-col < columns; col++)
+    var col: number = 0;col < columns; col++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < rows; row++)
+    var row: number = 0;row < rows; row++)
         {
 
                         if(fromTileId == mapTwoDArray[row]![col])

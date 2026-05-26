@@ -59,6 +59,7 @@ export class NullRotationAnimation extends RotationAnimation {
     
 }
 
+
 protected constructor (angleInfo: AngleInfo, circularIndexUtil: CircularIndexUtil, animationBehavior: AnimationBehavior){
             super(angleInfo, circularIndexUtil, animationBehavior);
                     

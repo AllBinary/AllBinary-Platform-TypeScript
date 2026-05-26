@@ -61,6 +61,7 @@ export class TextureAttributePointerOpenGLProcessor extends ObjectThreedOpenGLPr
     
 }
 
+
 public constructor (){
 
             super();

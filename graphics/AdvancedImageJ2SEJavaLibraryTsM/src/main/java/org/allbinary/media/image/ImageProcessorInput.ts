@@ -52,9 +52,10 @@ export class ImageProcessorInput
          {
         
 
-    private bufferedImageArray: BufferedImage[]
+    private bufferedImageArray: BufferedImage[];
 
-    private files: File[]
+    private files: File[];
+
 public constructor (files: File[], bufferedImageArray: BufferedImage[]){
             super();
                     

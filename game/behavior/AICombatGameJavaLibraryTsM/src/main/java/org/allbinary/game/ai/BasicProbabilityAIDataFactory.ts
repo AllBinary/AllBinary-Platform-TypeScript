@@ -60,12 +60,10 @@ export class BasicProbabilityAIDataFactory
     public getInstance(): Hashtable<any, any>{
 
     var likelyhoodIntegerArray: Integer[][] = new Array(Canvas.KEY_NUM9 +1) [2]
-                                                            ;
-;
+                                                            ;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 likelyhoodIntegerArray[Canvas.UP]![0]= smallIntegerSingletonFactory!.getAt(0);
     
@@ -96,8 +94,7 @@ likelyhoodIntegerArray[Canvas.KEY_NUM1]![0]= smallIntegerSingletonFactory!.getAt
 likelyhoodIntegerArray[Canvas.KEY_NUM1]![1]= smallIntegerSingletonFactory!.getAt(40);
     
 
-    var repeatLikelyhoodIntegerArray: Integer[] = new Array(Canvas.KEY_NUM9 +1);
-;
+    var repeatLikelyhoodIntegerArray: Integer[] = new Array(Canvas.KEY_NUM9 +1);;
     
 repeatLikelyhoodIntegerArray[Canvas.UP]= smallIntegerSingletonFactory!.getAt(0);
     
@@ -114,8 +111,7 @@ repeatLikelyhoodIntegerArray[Canvas.KEY_NUM9]= smallIntegerSingletonFactory!.get
 repeatLikelyhoodIntegerArray[Canvas.KEY_NUM1]= smallIntegerSingletonFactory!.getAt(10);
     
 
-    var inputProbability: InputProbability = new InputProbability(likelyhoodIntegerArray, repeatLikelyhoodIntegerArray, 42, NoTimeDelayHelper.SINGLETON);
-;
+    var inputProbability: InputProbability = new InputProbability(likelyhoodIntegerArray, repeatLikelyhoodIntegerArray, 42, NoTimeDelayHelper.SINGLETON);;
     
 
 

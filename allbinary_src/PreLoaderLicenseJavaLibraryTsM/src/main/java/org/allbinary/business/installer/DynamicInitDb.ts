@@ -52,12 +52,14 @@ import { LicensingException } from '../../../../org/allbinary/logic/system/secur
 //Warning you must have sql root access
 export class DynamicInitDb extends InitDb {
         
+
 public constructor (abeClientInformation: AbeClientInformationInterface){
 
             super();
         this.setHelper(InitDbHelperFactory.getInstance(abeClientInformation));
     
 }
+
 
 public constructor (abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
 

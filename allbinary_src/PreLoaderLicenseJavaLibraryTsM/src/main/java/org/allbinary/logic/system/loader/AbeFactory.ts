@@ -85,6 +85,7 @@ export class AbeFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private useCustomLoader: boolean = false;
+
 private constructor (){
 
             super();
@@ -153,26 +154,22 @@ private constructor (){
 
     var constructor: Constructor = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             
-    var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;
-;
+    var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;;
     
 
                         if(this.useCustomLoader)
                         
                                     {
                                     
-    var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));
-;
+    var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));;
     
 
-    var myClass: Function = loader.loadClass(className)!;
-;
+    var myClass: Function = loader.loadClass(className)!;;
     
 constructor= myClass!.getConstructor(classes);
     
@@ -187,8 +184,7 @@ constructor= myClass!.getConstructor(classes);
                                 
                         else {
                             
-    var myClass: Function = parent.loadClass(className)!;
-;
+    var myClass: Function = parent.loadClass(className)!;;
     
 constructor= myClass!.getConstructor(classes);
     
@@ -210,8 +206,7 @@ constructor= myClass!.getConstructor(classes);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failure for: ");
     
@@ -241,8 +236,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failure for: ");
     
@@ -275,20 +269,17 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 
         try {
             
-    var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;
-;
+    var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;;
     
 
                         if(this.useCustomLoader)
                         
                                     {
                                     
-    var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));
-;
+    var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));;
     
 
-    var c: Function = loader.loadClass(className)!;
-;
+    var c: Function = loader.loadClass(className)!;;
     
 
 
@@ -301,8 +292,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                                 
                         else {
                             
-    var c: Function = parent.loadClass(className)!;
-;
+    var c: Function = parent.loadClass(className)!;;
     
 
 

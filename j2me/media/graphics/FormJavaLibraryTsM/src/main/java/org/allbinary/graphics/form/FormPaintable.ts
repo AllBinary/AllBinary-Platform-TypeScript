@@ -49,7 +49,8 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
 export class FormPaintable extends Paintable {
         
 
-    private readonly form: PaintableForm
+    private readonly form: PaintableForm;
+
 public constructor (form: PaintableForm){
 
             super();

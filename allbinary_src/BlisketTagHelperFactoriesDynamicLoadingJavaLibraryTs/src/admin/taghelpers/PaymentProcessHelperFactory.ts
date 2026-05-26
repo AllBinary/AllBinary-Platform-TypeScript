@@ -57,6 +57,7 @@ export class PaymentProcessHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.PaymentProcessHelper";
 
     private static readonly FACTORYNAME: string = "PaymentProcessFactory";
+
 public constructor (){
 
             super();

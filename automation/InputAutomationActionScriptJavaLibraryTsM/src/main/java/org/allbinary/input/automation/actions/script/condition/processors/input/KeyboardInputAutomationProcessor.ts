@@ -67,22 +67,18 @@ export class KeyboardInputAutomationProcessor
             
     public static process(keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString(), "KeyInputAutomationProcessor", commonStrings!.PROCESS);
     
 
-    var inputRobotInterface: InputRobotInterface = keyActionScriptInputInterface!.getInputRobotInterface()!;
-;
+    var inputRobotInterface: InputRobotInterface = keyActionScriptInputInterface!.getInputRobotInterface()!;;
     
 
-    var integer: Integer[] = keyActionScriptInputInterface!.getKeyArray()!;
-;
+    var integer: Integer[] = keyActionScriptInputInterface!.getKeyArray()!;;
     
 
                         if(keyActionScriptInputInterface!.getDelayBetweenKeys() == 0)
@@ -93,8 +89,7 @@ logUtil!.putF(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.
 
 
                         for (
-    var index: number = 0;
-index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
+    var index: number = 0;index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
                         if(keyActionScriptInputInterface!.isPress())
@@ -114,8 +109,7 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
 
 
                         for (
-    var index: number = keyActionScriptInputInterface!.getKeyArray()!.length -1;
-index >= 0; index--)
+    var index: number = keyActionScriptInputInterface!.getKeyArray()!.length -1;index >= 0; index--)
         {
 
                         if(keyActionScriptInputInterface!.isRelease())
@@ -137,8 +131,7 @@ index >= 0; index--)
 
 
                         for (
-    var index: number = 0;
-index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
+    var index: number = 0;index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
                         if(keyActionScriptInputInterface!.isPress())
@@ -161,12 +154,10 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
                                     }
                                 
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(keyActionScriptInputInterface!.getDelayBetweenKeys());
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(keyActionScriptInputInterface!.getDelayBetweenKeys());;
     
 
-    var toLong: number = 0;
-;
+    var toLong: number = 0;;
     
 
         while(!timeHelper!.isTimeTNT() || toLong > 6000)
@@ -183,6 +174,7 @@ Thread.sleep(50);
                         }
                             
 }
+
 
 private constructor (){
 

@@ -86,13 +86,14 @@ export class RaceTrackDropCellPositionGenerator extends BaseDropCellPositionGene
 
     readonly list: BasicArrayList = new BasicArrayListD();
 
-    private readonly timeDelayHelper: TimeDelayHelper
+    private readonly timeDelayHelper: TimeDelayHelper;
 
     private readonly STRAIGHTAWAY: number = 4;
 
     raceTrackGeographicMap: RaceTrackGeographicMapInterface = NullRaceTrackGeographicMap.NULL_RACE_TRACK_GEOGRAPHIC_MAP;
 
     raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
+
 protected constructor (){
 
             super();
@@ -111,12 +112,10 @@ this.list.clear();
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition) as RaceTrackGeographicMapCellType;
-;
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition) as RaceTrackGeographicMapCellType;;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = this.raceTrackGeographicMapCellTypeFactory as RaceTrackGeographicMapCellTypeFactory;
-;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = this.raceTrackGeographicMapCellTypeFactory as RaceTrackGeographicMapCellTypeFactory;;
     
 
                         if(raceTrackGeographicMapCellType == raceTrackGeographicMapCellTypeFactory!.HORIZONTAL_STRAIGHT_ROAD_CELL_TYPE || raceTrackGeographicMapCellType == raceTrackGeographicMapCellTypeFactory!.VERTICAL_STRAIGHT_ROAD_CELL_TYPE)
@@ -146,44 +145,36 @@ this.list.clear();
 this.init();
     
 
-    var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = geographicMapInterface as BaseRaceTrackGeographicMap;
-;
+    var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = geographicMapInterface as BaseRaceTrackGeographicMap;;
     
 this.raceTrackGeographicMap= baseRaceTrackGeographicMap;
     
 this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;
     
 
-    var roadGeographicMapCellHistory: GeographicMapCellHistory = RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!;
-;
+    var roadGeographicMapCellHistory: GeographicMapCellHistory = RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!;;
     
 
-    var trackedList: BasicArrayList = roadGeographicMapCellHistory!.getTracked()!;
-;
+    var trackedList: BasicArrayList = roadGeographicMapCellHistory!.getTracked()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition
-;
+    var geographicMapCellPosition: GeographicMapCellPosition;;
     
 
-    var lastIndex: number = trackedList!.size() -1;
-;
+    var lastIndex: number = trackedList!.size() -1;;
     
 
-    var total: number= 0
-;
+    var total: number= 0;;
     
 
-    var ahead: number= 0
-;
+    var ahead: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = lastIndex;
-index > 0; index--)
+    var index: number = lastIndex;index > 0; index--)
         {
 geographicMapCellPosition= trackedList!.get(index) as GeographicMapCellPosition;
     
@@ -225,16 +216,14 @@ ahead++;
 }
 
 
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 this.drop(allBinaryGameLayerManager, index);
     
@@ -253,8 +242,7 @@ this.drop(allBinaryGameLayerManager, index);
                         
                                     {
                                     
-    var index: number = this.basicArrayListUtil!.getRandomIndex(this.list)!;
-;
+    var index: number = this.basicArrayListUtil!.getRandomIndex(this.list)!;;
     
 this.drop(allBinaryLayerManager, index);
     

@@ -58,11 +58,12 @@ export class VectorAnimationInterfaceFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-    private currentPoints: number[][][]
+    private currentPoints: number[][][];
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    readonly animationBehaviorFactory: AnimationBehaviorFactory
+    readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();

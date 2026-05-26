@@ -65,6 +65,7 @@ export class NoCompleteMotionGestureInputEventListener extends CompleteMotionGes
     
 }
 
+
 private constructor (){
 
             super();

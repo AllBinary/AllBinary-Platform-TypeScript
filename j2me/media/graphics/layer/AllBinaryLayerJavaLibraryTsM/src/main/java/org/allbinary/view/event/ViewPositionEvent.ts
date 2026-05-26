@@ -45,6 +45,7 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
         
 export class ViewPositionEvent extends AllBinaryEventObject {
         
+
 public constructor (anyType: any = {}){
             super(anyType);
                     

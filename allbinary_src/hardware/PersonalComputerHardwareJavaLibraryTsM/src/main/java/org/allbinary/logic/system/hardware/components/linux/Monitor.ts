@@ -50,7 +50,8 @@ export class Monitor
          implements HardwareComponentInterface, MonitorInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

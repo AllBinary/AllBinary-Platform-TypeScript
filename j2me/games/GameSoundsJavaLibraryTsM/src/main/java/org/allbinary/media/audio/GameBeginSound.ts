@@ -57,6 +57,7 @@ export class GameBeginSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/begin.wav");
                     

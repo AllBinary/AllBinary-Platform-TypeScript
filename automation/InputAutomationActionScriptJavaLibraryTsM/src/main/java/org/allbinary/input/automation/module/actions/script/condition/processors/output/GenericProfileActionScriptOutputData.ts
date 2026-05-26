@@ -49,6 +49,7 @@ export class GenericProfileActionScriptOutputData
     public static NAME: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_OUTPUT_NAME";
 
     public static TYPE: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_OUTPUT_TYPE";
+
 private constructor (){
 
             super();

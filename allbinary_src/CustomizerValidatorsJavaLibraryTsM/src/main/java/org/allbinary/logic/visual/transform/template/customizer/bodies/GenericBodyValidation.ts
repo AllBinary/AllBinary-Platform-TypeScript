@@ -79,7 +79,8 @@ export class GenericBodyValidation extends Validation implements DomNodeInterfac
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private body: string
+    private body: string;
+
 public constructor (){
 
             super();
@@ -87,34 +88,32 @@ public constructor (){
     
 }
 
+
 public constructor (document: Document){
 
             super();
         
-    var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;
-;
+    var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var aBodyNode: Node = nodeList!.item(index)!;
-;
+    var aBodyNode: Node = nodeList!.item(index)!;;
     
 
-    var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;
-;
+    var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;;
     
 this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
     
 }
 
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -136,8 +135,7 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as string;
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -200,8 +198,7 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME) as string;
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -271,8 +268,7 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;;
     
 
 

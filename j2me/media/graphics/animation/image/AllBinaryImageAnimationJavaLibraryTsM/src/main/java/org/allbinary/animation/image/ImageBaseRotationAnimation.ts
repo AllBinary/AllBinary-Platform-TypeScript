@@ -66,7 +66,8 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 export class ImageBaseRotationAnimation extends RotationAnimation {
         
 
-    private readonly image: Image
+    private readonly image: Image;
+
 public constructor (image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(angleInfo, CircularIndexUtil.createInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                     

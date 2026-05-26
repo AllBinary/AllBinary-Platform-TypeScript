@@ -64,6 +64,7 @@ export class ImageJ2MEScaleUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -78,12 +79,10 @@ private constructor (){
 
 
                         for (
-    var index: number = 0;
-index < images.length; index++)
+    var index: number = 0;index < images.length; index++)
         {
 
-    var image: Image = images[index]!;
-;
+    var image: Image = images[index]!;;
     
 images[index]= ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheFactory.getInstance(), image, width /2, image.getWidth(), height, image.getHeight(), false);
     

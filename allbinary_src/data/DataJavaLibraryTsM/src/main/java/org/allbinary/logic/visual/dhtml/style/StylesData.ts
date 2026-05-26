@@ -57,6 +57,7 @@ export class StylesData
     
 }
 
+
 private constructor (){
 
             super();

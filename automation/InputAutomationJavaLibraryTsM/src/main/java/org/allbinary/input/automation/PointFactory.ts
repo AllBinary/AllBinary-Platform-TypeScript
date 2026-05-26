@@ -54,8 +54,7 @@ export class PointFactory
 
     public static getInstance(x: number, y: number): Point{
 
-    var point: Point = PointFactory.pointArray[x]![y]!;
-;
+    var point: Point = PointFactory.pointArray[x]![y]!;;
     
 
                         if(point == 
@@ -75,6 +74,7 @@ export class PointFactory
                         return point;
     
 }
+
 
 private constructor (){
 

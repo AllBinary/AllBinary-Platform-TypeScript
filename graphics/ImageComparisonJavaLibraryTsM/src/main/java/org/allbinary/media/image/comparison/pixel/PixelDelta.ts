@@ -68,11 +68,12 @@ export class PixelDelta
 }
 
 
-    private point: GPoint
+    private point: GPoint;
 
-    private colorDelta: ColorDelta
+    private colorDelta: ColorDelta;
 
-    private key: any
+    private key: any;
+
 public constructor (point: GPoint, colorDelta: ColorDelta){
 
             super();

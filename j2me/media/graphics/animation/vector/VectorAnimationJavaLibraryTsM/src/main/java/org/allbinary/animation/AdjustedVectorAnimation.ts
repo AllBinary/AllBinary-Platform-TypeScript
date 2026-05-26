@@ -50,9 +50,10 @@ import { AnimationBehavior } from './AnimationBehavior.js';
 export class AdjustedVectorAnimation extends VectorAnimation {
         
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
+
 public constructor (currentPoints: number[][][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(currentPoints, basicColor, animationBehavior);
                     

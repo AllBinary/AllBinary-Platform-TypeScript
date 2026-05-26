@@ -70,6 +70,7 @@ export class ImageJ2SERotationUtil
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
 
     private readonly imageJ2SEUtil: ImageJ2SEUtil = ImageJ2SEUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -90,8 +91,7 @@ private constructor (){
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
-                            null))!;
-;
+                            null))!;;
     
 
 
@@ -127,8 +127,7 @@ g.dispose();
 
     public rotateImage(bufferedImage: Image, newBufferedImage: BufferedImage, totalAngle: number): BufferedImage{
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;
-;
+    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 g.setBackground(this.imageJ2SEUtil!.TRANSPARENT_COLOR);
     
@@ -145,8 +144,7 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
     public createRotatedImage(bufferedImage: Image, newBufferedImage: BufferedImage, totalAngle: number): BufferedImage{
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;
-;
+    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 
 
@@ -159,29 +157,24 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
     public getRotatedImages(bufferedImage: Image, numberOfFrames: number, totalAngle: number): BufferedImage[]{
 
-    var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);
-;
+    var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);;
     
 
-    var arc: number = () *totalAngle /360;
-;
+    var arc: number = () *totalAngle /360;;
     
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var radians: number = (arc /size) *index;
-;
+    var radians: number = (arc /size) *index;;
     
 bufferedImageArray[index]= this.getRotatedImageRadians(bufferedImage, radians);
     
@@ -198,17 +191,14 @@ bufferedImageArray[index]= this.getRotatedImageRadians(bufferedImage, radians);
 
     public createSpriteImage(bufferedImageArray: BufferedImage[]): BufferedImage{
 
-    var columns: number = 9;
-;
+    var columns: number = 9;;
     
 
-    var rows: number = 0;
-;
+    var rows: number = 0;;
     
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
                         if(size < columns)
@@ -231,38 +221,31 @@ rows= (size /columns);
                                     }
                                 
 
-    var firstBufferedImage: BufferedImage = bufferedImageArray[0]!;
-;
+    var firstBufferedImage: BufferedImage = bufferedImageArray[0]!;;
     
 
     var bufferedImage: BufferedImage = this.imageUtil!.create(firstBufferedImage!.getWidth(
                             null) *columns, firstBufferedImage!.getHeight(
-                            null) *rows)!;
-;
+                            null) *rows)!;;
     
 
-    var g: Graphics2D = bufferedImage!.createGraphics()!;
-;
+    var g: Graphics2D = bufferedImage!.createGraphics()!;;
     
 
-    var columnIndex: number = 0;
-;
+    var columnIndex: number = 0;;
     
 
-    var rowIndex: number = 0;
-;
+    var rowIndex: number = 0;;
     
 
-    var nextBufferedImage: BufferedImage
-;
+    var nextBufferedImage: BufferedImage;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(index /9 != 0 && index % 9 == 0)

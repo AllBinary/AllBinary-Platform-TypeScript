@@ -57,6 +57,7 @@ import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {
         
+
 public constructor (){
             super(new OptimizedAllBinaryCollisionLayerManager());
                     
@@ -70,40 +71,33 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, startIndex: number){
 
-    var collidableInterfaceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;
-;
+    var collidableInterfaceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;;
     
 
-    var collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;
-;
+    var collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;;
     
 
                         if(collidableBase!.isCollidable(collidableInterfaceCompositeInterface))
                         
                                     {
                                     
-    var layerManager: LayerManager = this.getLayerManager()!;
-;
+    var layerManager: LayerManager = this.getLayerManager()!;;
     
 
-    var size: number = layerManager!.getSize()!;
-;
+    var size: number = layerManager!.getSize()!;;
     
 
-    var collidableInterfaceCompositeInterface2: CollidableCompositeLayer
-;
+    var collidableInterfaceCompositeInterface2: CollidableCompositeLayer;;
     
 
-    var collidableBase2: CollidableBaseBehavior
-;
+    var collidableBase2: CollidableBaseBehavior;;
     
 
 
 
 
                         for (
-    var index: number = startIndex +1;
-index < size; index++)
+    var index: number = startIndex +1;index < size; index++)
         {
 collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index) as CollidableCompositeLayer;
     

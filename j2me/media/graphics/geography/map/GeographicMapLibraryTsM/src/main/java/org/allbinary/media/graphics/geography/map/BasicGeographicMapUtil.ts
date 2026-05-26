@@ -72,8 +72,7 @@ export class BasicGeographicMapUtil
             
     public getBorderingRow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
 
-    var LOCATION_CHANGE: number = 1;
-;
+    var LOCATION_CHANGE: number = 1;;
     
 
 
@@ -124,8 +123,7 @@ default: {
             
     public getBorderingColumn(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
 
-    var LOCATION_CHANGE: number = 1;
-;
+    var LOCATION_CHANGE: number = 1;;
     
 
 
@@ -176,20 +174,16 @@ default: {
             
     public isSameCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-;
+    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;;
     
 
-    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-;
+    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;;
     
 
-    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-;
+    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;;
     
 
-    var goRow: number = toGeographicMapCellPosition!.getRow()!;
-;
+    var goRow: number = toGeographicMapCellPosition!.getRow()!;;
     
 
                         if(fromColumn == goColumn && fromRow == goRow)
@@ -219,8 +213,7 @@ default: {
 
     public createAllBinaryTiledLayerArray(geographicMapInterfaceArray: BasicGeographicMap[]): Layer[]{
 
-    var tiledLayerArray: Layer[] = new Array(geographicMapInterfaceArray!.length);
-;
+    var tiledLayerArray: Layer[] = new Array(geographicMapInterfaceArray!.length);;
     
 
 
@@ -233,25 +226,21 @@ default: {
 
     public getAllBinaryTiledLayerArray(geographicMapInterfaceArray: BasicGeographicMap[], tiledLayerArray: Layer[], startIndex: number): Layer[]{
 
-    var geographicMapInterface: BasicGeographicMap
-;
+    var geographicMapInterface: BasicGeographicMap;;
     
 
     var size: number = geographicMapInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var count: number = 0;
-;
+    var count: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = size +startIndex;
---index >= startIndex; )
+    var index: number = size +startIndex;--index >= startIndex; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!;
     
@@ -270,21 +259,18 @@ tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer();
 
     public move(geographicMapInterfaceArray: BasicGeographicMap[], dx: number, dy: number){
 
-    var geographicMapInterface: BasicGeographicMap
-;
+    var geographicMapInterface: BasicGeographicMap;;
     
 
     var size: number = geographicMapInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = size;
---index >= 0; )
+    var index: number = size;--index >= 0; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!;
     
@@ -297,21 +283,18 @@ geographicMapInterface!.getAllBinaryTiledLayer()!.moveDXY(dx, dy);
 
     public setPosition(geographicMapInterfaceArray: BasicGeographicMap[], x: number, y: number){
 
-    var geographicMapInterface: BasicGeographicMap
-;
+    var geographicMapInterface: BasicGeographicMap;;
     
 
     var size: number = geographicMapInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = size;
---index >= 0; )
+    var index: number = size;--index >= 0; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!;
     

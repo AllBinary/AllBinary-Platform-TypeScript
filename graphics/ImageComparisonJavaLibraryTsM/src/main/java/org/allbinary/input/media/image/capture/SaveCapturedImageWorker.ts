@@ -69,9 +69,10 @@ export class SaveCapturedImageWorker extends BasicEventHandler implements Captur
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private running: boolean= false
+    private running: boolean= false;
 
     private capturedImageWorkerResultsEventVector: Vector = new Vector();
+
 public constructor (){
 
             super();
@@ -118,18 +119,15 @@ this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 timeHelper!.setStartTimeTNT();
     
 
-    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0) as CapturedImageWorkerResultsEvent);
-;
+    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0) as CapturedImageWorkerResultsEvent);;
     
 
-    var screenBufferedImage: BufferedImage = capturedImageWorkerResultsEvent!.getBufferedImage()!;
-;
+    var screenBufferedImage: BufferedImage = capturedImageWorkerResultsEvent!.getBufferedImage()!;;
     
 new CapturedImageInputOutput().save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame());
     

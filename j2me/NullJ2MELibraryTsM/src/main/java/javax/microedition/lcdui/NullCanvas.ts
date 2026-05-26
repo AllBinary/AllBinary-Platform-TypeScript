@@ -41,6 +41,7 @@ export class NullCanvas extends Canvas {
         
 
     public static readonly NULL_CANVAS: NullCanvas = new NullCanvas();
+
 public constructor (){
 
             super();

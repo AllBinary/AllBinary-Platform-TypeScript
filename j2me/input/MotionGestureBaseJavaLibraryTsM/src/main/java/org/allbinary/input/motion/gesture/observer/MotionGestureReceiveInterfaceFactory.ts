@@ -55,8 +55,7 @@ export class MotionGestureReceiveInterfaceFactory
 
     public static getInstance(): CompleteMotionGestureListenerInterface{
 
-    var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
-;
+    var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;;
     
 
                         if(!configuration.isExecutingActionsAllowed())

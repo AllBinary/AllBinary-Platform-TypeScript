@@ -61,6 +61,7 @@ export class RollRightOrientationInputToGameKeyEventAction extends GameKeyComple
     
 }
 
+
 private constructor (){
             super("Roll Right Action", OrientationMotionGestureFactory.getInstance()!.ROLL_RIGHT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

@@ -57,6 +57,7 @@ export class ErrorData
     
 }
 
+
 private constructor (){
 
             super();

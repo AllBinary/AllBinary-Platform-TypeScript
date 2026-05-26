@@ -48,11 +48,12 @@ import { FrictionData } from '../../../../../org/allbinary/game/physics/friction
 export class CharacterFrictionProperties extends FrictionProperties {
         
 
-    private readonly WATER_FRICTION_NOMINATOR: number
+    private readonly WATER_FRICTION_NOMINATOR: number;
 
-    private readonly AIR_FRICTION_NOMINATOR: number
+    private readonly AIR_FRICTION_NOMINATOR: number;
 
-    private readonly COLLISION_FRICTION_NOMINATOR: number
+    private readonly COLLISION_FRICTION_NOMINATOR: number;
+
 public constructor (airFriction: number, waterFriction: number, collisionFriction: number){
 
             super();

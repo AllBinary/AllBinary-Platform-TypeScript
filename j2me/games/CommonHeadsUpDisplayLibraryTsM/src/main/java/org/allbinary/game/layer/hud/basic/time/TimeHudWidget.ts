@@ -75,13 +75,14 @@ export class TimeHudWidget extends BasicHud {
 
     private readonly TIME_CHAR_ARRAY: string[] = ['T','i','m','e',' '];
 
-    private offset: number
+    private offset: number;
 
     private string: string[] = PrimitiveLongSingleton.getInstance()!.ZERO;
 
     private totalDigits: number = 1;
 
-    private readonly timer: Timer
+    private readonly timer: Timer;
+
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor, timer: Timer){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     
@@ -93,8 +94,7 @@ this.timer= timer;
 this.set();
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.defaultStringWidth(3);
     

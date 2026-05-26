@@ -47,6 +47,7 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
         
 export class BoundsChangeEvent extends AllBinaryEventObject {
         
+
 public constructor (rectangle: Rectangle){
             super(rectangle);
                     

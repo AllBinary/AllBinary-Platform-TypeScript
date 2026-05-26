@@ -62,6 +62,7 @@ export class ImageMiniMapLayer extends MiniMapLayer {
         
 
     private image: Image = NullImage.NULL_IMAGE;
+
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
             super(geographicMapInterface, viewPosition);
                     
@@ -75,12 +76,10 @@ public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: Vi
             
     init(){
 
-    var aWidth: number = this.allBinaryTiledLayer!.getWidth()!;
-;
+    var aWidth: number = this.allBinaryTiledLayer!.getWidth()!;;
     
 
-    var aHeight: number = this.allBinaryTiledLayer!.getHeight()!;
-;
+    var aHeight: number = this.allBinaryTiledLayer!.getHeight()!;;
     
 this.image= PaintableToImageUtil.getImage(this.allBinaryTiledLayer, aWidth, aHeight);
     

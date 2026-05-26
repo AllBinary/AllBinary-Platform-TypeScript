@@ -47,6 +47,7 @@ export class NativeLibraryClassLoader extends ClassLoader {
         
 
     private message: string = "This Class Loader Does Not Load Classes - Only For Loading and Unloading of Native Libraries";
+
 public constructor (parent: ClassLoader){
             super(parent);
                     

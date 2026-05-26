@@ -50,7 +50,8 @@ import { PaintableForm } from './PaintableForm.js';
 export class LockableFormPaintableFactory extends ItemPaintableFactory {
         
 
-    private readonly lockedIndex: number
+    private readonly lockedIndex: number;
+
 public constructor (lockedIndex: number){
 
             super();

@@ -82,25 +82,26 @@ export class OrderHistoryHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
-    private readonly propertiesHashMap: HashMap<any, any>
+    private readonly propertiesHashMap: HashMap<any, any>;
 
-    private readonly pageContext: PageContext
+    private readonly pageContext: PageContext;
 
-    private readonly request: HttpServletRequest
+    private readonly request: HttpServletRequest;
 
-    private streetAddress: StreetAddress
+    private streetAddress: StreetAddress;
 
-    private id: string
+    private id: string;
 
-    private groupId: string
+    private groupId: string;
 
-    private status: string
+    private status: string;
 
-    private newStatus: string
+    private newStatus: string;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -111,8 +112,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS) as string;
     
@@ -155,16 +155,13 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
 
         try {
             
-    var success: string = "Status successfully set to: " +this.status;
-;
+    var success: string = "Status successfully set to: " +this.status;;
     
 
-    var orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(this.id)!;
-;
+    var orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(this.id)!;;
     
 
-    var status: string = orderReviewInterface!.getStatus()!;
-;
+    var status: string = orderReviewInterface!.getStatus()!;;
     
 
                         if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
@@ -223,8 +220,7 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
                         
                                     {
                                     
-    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
-;
+    var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;;
     
 orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
     
@@ -257,8 +253,7 @@ orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
 } catch(e) 
             {
 
-    var error: string = "Failed to set order status";
-;
+    var error: string = "Failed to set order status";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

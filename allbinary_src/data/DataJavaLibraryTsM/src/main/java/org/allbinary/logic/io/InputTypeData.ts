@@ -57,6 +57,7 @@ export class InputTypeData
     
 }
 
+
 private constructor (){
 
             super();

@@ -51,6 +51,7 @@ import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
 
 export class SpecialDownGameInputInterfaceProcessor extends SpecialGameInputInterfaceProcessor {
         
+
 public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterface){
             super(collidableDestroyableDamageableLayer);
                     

@@ -77,6 +77,7 @@ export class KeySpecFactory
     public readonly DESEDE: string = "DESede";
 
     public readonly BLOWFISH: string = "Blowfish";
+
 private constructor (){
 
             super();
@@ -126,8 +127,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     

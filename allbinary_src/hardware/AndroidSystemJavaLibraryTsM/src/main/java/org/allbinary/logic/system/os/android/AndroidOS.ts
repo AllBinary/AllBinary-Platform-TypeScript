@@ -64,12 +64,12 @@ export class AndroidOS extends GenericOperatingSystem {
     private readonly DEVICE_SOFTWARE_VERSION: string = "DeviceSoftwareVersion";
 
     private readonly LINE_1_NUMBER: string = "Line1Number";
+
 public constructor (){
 
             super();
         
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
-;
+    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION > 10)
@@ -81,12 +81,10 @@ public constructor (){
                                     }
                                 
 
-    var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;
-;
+    var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;;
     
 
-    var commonStrings: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonStrings: CommonSeps = CommonSeps.getInstance()!;;
     
 this.stringBuffer!.append(this.DEVICE_ID);
     
@@ -215,8 +213,7 @@ this.stringBuffer!.append(commonStrings!.SPACE);
 
     public isOverScan(): boolean{
 
-    var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;
-;
+    var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;;
     
 
                         if(properties.getDevice()!.toLowerCase()!.indexOf(this.OUYA) >= 0)
@@ -262,8 +259,7 @@ this.stringBuffer!.append(commonStrings!.SPACE);
 
     public toString(): string{
 
-    var osBuffer: StringMaker = new StringMaker();
-;
+    var osBuffer: StringMaker = new StringMaker();;
     
 osBuffer!.append(super.toString());
     

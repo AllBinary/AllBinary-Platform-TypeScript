@@ -57,6 +57,7 @@ export class HtmlNameMathData
     
 }
 
+
 private constructor (){
 
             super();

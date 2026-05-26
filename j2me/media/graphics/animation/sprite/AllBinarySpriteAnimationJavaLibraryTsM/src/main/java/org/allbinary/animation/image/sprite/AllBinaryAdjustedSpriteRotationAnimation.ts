@@ -53,9 +53,10 @@ import { AnimationBehavior } from '../../../../../org/allbinary/animation/Animat
 export class AllBinaryAdjustedSpriteRotationAnimation extends AllBinarySpriteRotationAnimation {
         
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
+
 public constructor (sprite: Sprite, image: Image, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(sprite, image, animationBehavior);
                     

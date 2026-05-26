@@ -65,6 +65,7 @@ export class BasicColorCacheFactory
 
 
     private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+
 private constructor (){
 
             super();
@@ -80,8 +81,7 @@ this.hashtable.put(new Integer(basicDefaultColor!.intValue()), basicDefaultColor
 
     public getAndOrCreate(integer: Integer): BasicColor{
 
-    var basicColor: BasicColor = this.hashtable.get(integer) as BasicColor;
-;
+    var basicColor: BasicColor = this.hashtable.get(integer) as BasicColor;;
     
 
                         if(basicColor == 

@@ -77,6 +77,7 @@ export class TransformInfoPropertiesFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -87,24 +88,19 @@ private constructor (){
             
     public getInstance(node: Node): TransformInfoProperties{
 
-    var transformInfoChildNodeList: NodeList = node.getChildNodes()!;
-;
+    var transformInfoChildNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var attributes: NamedNodeMap = node.getAttributes()!;
-;
+    var attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;
-;
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;;
     
 
-    var name: string = attrNode!.getValue()!;
-;
+    var name: string = attrNode!.getValue()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -116,12 +112,10 @@ private constructor (){
                                     }
                                 
 
-    var labelNode: Node = DomSearchHelper.getNodeNoThrow(transformInfoData!.LABEL, transformInfoChildNodeList)!;
-;
+    var labelNode: Node = DomSearchHelper.getNodeNoThrow(transformInfoData!.LABEL, transformInfoChildNodeList)!;;
     
 
-    var label: string = DomNodeHelper.getTextNodesValue(labelNode)!;
-;
+    var label: string = DomNodeHelper.getTextNodesValue(labelNode)!;;
     
 
                         if(label == 
@@ -135,40 +129,31 @@ private constructor (){
                                     }
                                 
 
-    var descriptionNode: Node = DomSearchHelper.getNode(transformInfoData!.DESCRIPTION, transformInfoChildNodeList)!;
-;
+    var descriptionNode: Node = DomSearchHelper.getNode(transformInfoData!.DESCRIPTION, transformInfoChildNodeList)!;;
     
 
-    var description: string = DomNodeHelper.getTextNodesValue(descriptionNode)!;
-;
+    var description: string = DomNodeHelper.getTextNodesValue(descriptionNode)!;;
     
 
-    var objectFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, transformInfoChildNodeList)!;
-;
+    var objectFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, transformInfoChildNodeList)!;;
     
 
-    var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNode)!;
-;
+    var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNode)!;;
     
 
-    var objectConfigFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, transformInfoChildNodeList)!;
-;
+    var objectConfigFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, transformInfoChildNodeList)!;;
     
 
-    var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNode)!;
-;
+    var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNode)!;;
     
 
-    var templateFileNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, transformInfoChildNodeList)!;
-;
+    var templateFileNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, transformInfoChildNodeList)!;;
     
 
-    var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNode)!;
-;
+    var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNode)!;;
     
 
-    var transformInfoProperties: TransformInfoProperties = new TransformInfoProperties(name, label, description, objectFileName, objectConfigFileName, templateFileName);
-;
+    var transformInfoProperties: TransformInfoProperties = new TransformInfoProperties(name, label, description, objectFileName, objectConfigFileName, templateFileName);;
     
 
 

@@ -69,6 +69,7 @@ export class NoTemplateTransformInfoObjectConfig extends TransformInfoObjectConf
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
                     
@@ -76,6 +77,7 @@ public constructor (transformInfoInterface: Object){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (transformInfoInterface: Object, document: Object){
             super(transformInfoInterface, document);
@@ -86,6 +88,7 @@ public constructor (transformInfoInterface: Object, document: Object){
 this.setDocument(this.generate(this.toXmlDoc()));
     
 }
+
 
 public constructor (transformInfoInterface: Object, name: string, type: string){
             super(transformInfoInterface, name, type);
@@ -102,8 +105,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
             
     generate(objectConfigDocument: Document): Document{
 
-    var docString: string = DomDocumentHelper.toString(objectConfigDocument)!;
-;
+    var docString: string = DomDocumentHelper.toString(objectConfigDocument)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -115,38 +117,31 @@ this.setDocument(this.generate(this.toXmlDoc()));
                                     }
                                 
 
-    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-;
+    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
     
 
-    var viewName: string = this.getTransformInfoInterface()!.getName()!;
-;
+    var viewName: string = this.getTransformInfoInterface()!.getName()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var VARKEY: string = TransformInfoObjectConfigData.getInstance()!.VARKEY;
-;
+    var VARKEY: string = TransformInfoObjectConfigData.getInstance()!.VARKEY;;
     
 hashMap!.put(VARKEY +StoreFrontData.getInstance()!.NAME, storeName);
     
 hashMap!.put(VARKEY +TransformInfoData.getInstance()!.OWNER, viewName);
     
 
-    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface()!.getStoreName())!;
-;
+    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface()!.getStoreName())!;;
     
 hashMap!.put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
     
 
-    var replace: Replace = new Replace(hashMap);
-;
+    var replace: Replace = new Replace(hashMap);;
     
 
-    var newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(docString))!;
-;
+    var newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(docString))!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

@@ -49,9 +49,10 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
 export class AdjustCustomTextAnimation extends CustomTextAnimation {
         
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
+
 public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(text, fontSize, animationBehavior);
                     

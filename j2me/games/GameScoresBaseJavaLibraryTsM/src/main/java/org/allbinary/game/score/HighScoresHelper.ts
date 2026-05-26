@@ -62,12 +62,10 @@ this.circularIndexUtil!.setSize(this.highScoresArrayP!.length);
 
     public getNextHighScores(): HighScores{
 
-    var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;
-;
+    var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while((highScores!.getTotal() < 1 || this.lastIndex == this.circularIndexUtil!.getIndex()) && index < this.highScoresArrayP!.length)
@@ -106,20 +104,17 @@ this.lastIndex= this.circularIndexUtil!.getIndex();
                                     }
                                 
 
-    var anyScores: boolean = false;
-;
+    var anyScores: boolean = false;;
     
 
-    var highScores: HighScores
-;
+    var highScores: HighScores;;
     
 
 
 
 
                         for (
-    var index: number = this.highScoresArrayP!.length -1;
-index >= 0; index--)
+    var index: number = this.highScoresArrayP!.length -1;index >= 0; index--)
         {
 highScores= this.highScoresArrayP[index]!;
     

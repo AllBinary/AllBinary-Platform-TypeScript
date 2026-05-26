@@ -57,6 +57,7 @@ export class CloseLoopRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeo
     
 }
 
+
 private constructor (){
 
             super();

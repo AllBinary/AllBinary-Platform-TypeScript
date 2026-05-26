@@ -51,6 +51,7 @@ export class GenericInputAutomationAction
             extends Object
          implements InputAutomationActionInterface {
         
+
 public constructor (){
 
             super();

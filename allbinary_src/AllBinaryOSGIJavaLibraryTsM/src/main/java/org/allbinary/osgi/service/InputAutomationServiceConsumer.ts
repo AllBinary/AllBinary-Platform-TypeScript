@@ -69,11 +69,12 @@ export class InputAutomationServiceConsumer
 
     readonly osgiServiceUtil: OSGIServiceUtil = OSGIServiceUtil.getInstance()!;
 
-    private registryName: string
+    private registryName: string;
 
-    private bundleContext: BundleContext
+    private bundleContext: BundleContext;
 
-    private osgiServiceVisitorInterface: OSGIServiceVisitorInterface
+    private osgiServiceVisitorInterface: OSGIServiceVisitorInterface;
+
 public constructor (registryName: string, bundleContext: BundleContext, osgiServiceVisitorInterface: OSGIServiceVisitorInterface){
 
             super();
@@ -92,26 +93,22 @@ this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
-    var vector: Vector = this.osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
-;
+    var vector: Vector = this.osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;;
     
 this.logUtil!.putF("Processing " +vector.length +" Services", this, this.commonStrings!.PROCESS);
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
-    var osgiServiceInterface: OSGIServiceInterface
-;
+    var osgiServiceInterface: OSGIServiceInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 osgiServiceInterface= vector.get(index) as OSGIServiceInterface;
     

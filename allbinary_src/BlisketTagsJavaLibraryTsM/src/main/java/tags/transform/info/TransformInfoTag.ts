@@ -66,27 +66,28 @@ export class TransformInfoTag extends ModifyTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private name: string
+    private name: string;
 
-    private storeName: string
+    private storeName: string;
 
-    private objectFile: string
+    private objectFile: string;
 
-    private anyType: string
+    private anyType: string;
 
-    private objectConfigFile: string
+    private objectConfigFile: string;
 
-    private objectConfig: string
+    private objectConfig: string;
 
-    private templateFile: string
+    private templateFile: string;
 
-    private template: string
+    private template: string;
 
-    private dataFile: string
+    private dataFile: string;
 
-    private data: string
+    private data: string;
 
-    private type: string
+    private type: string;
+
 public constructor (){
             super(new TransformInfoRequestHelperFactory());
                     
@@ -94,6 +95,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             super(tagHelperFactoryInterface);

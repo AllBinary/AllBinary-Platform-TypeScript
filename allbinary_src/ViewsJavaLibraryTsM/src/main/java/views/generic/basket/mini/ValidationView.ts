@@ -54,6 +54,7 @@ import { Node } from './Node.js';
 
 export class ValidationView extends MiniBasketView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

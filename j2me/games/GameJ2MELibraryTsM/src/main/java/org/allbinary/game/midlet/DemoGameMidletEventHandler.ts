@@ -65,6 +65,7 @@ export class DemoGameMidletEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -75,8 +76,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var demoGameMidletEventListener: DemoGameMidletEventListener = eventListenerInterface as DemoGameMidletEventListener;
-;
+    var demoGameMidletEventListener: DemoGameMidletEventListener = eventListenerInterface as DemoGameMidletEventListener;;
     
 demoGameMidletEventListener!.onDemoGameMidletEvent(eventObject as DemoGameMidletEvent);
     

@@ -62,9 +62,9 @@ export class FREEBLISKET_PATH_GLOBALS
 }
 
 
-    public readonly INSTALLPATH: string
+    public readonly INSTALLPATH: string;
 
-    public readonly XSLPATH: string
+    public readonly XSLPATH: string;
 
     public readonly TEMPLATEPATH: string = "template" +AbPathData.getInstance()!.SEPARATOR;
 
@@ -76,21 +76,21 @@ export class FREEBLISKET_PATH_GLOBALS
 
     public readonly LINEDATAPATH: string = PATH_GLOBALS.getInstance()!.INIT_PATH +"lineData" +AbPathData.getInstance()!.SEPARATOR;
 
-    public readonly CONFIGURATIONPATH: string
+    public readonly CONFIGURATIONPATH: string;
 
-    public readonly USERCONFIGURATIONPATH: string
+    public readonly USERCONFIGURATIONPATH: string;
 
-    public readonly CONTEXTCONFIGURATIONPATH: string
+    public readonly CONTEXTCONFIGURATIONPATH: string;
 
     public readonly LICENSEERRORPAGE: string = "LicensingError.jsp";
 
     public readonly ERRORPAGE: string = "Error.jsp";
+
 private constructor (){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("install");
     

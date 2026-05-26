@@ -54,6 +54,7 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 
 export class ScrollOverImmediateAI extends BasicAI {
         
+
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -67,36 +68,28 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var x: number = ownerLayerInterface!.getXP()!;
-;
+    var x: number = ownerLayerInterface!.getXP()!;;
     
 
-    var y: number = ownerLayerInterface!.getYP()!;
-;
+    var y: number = ownerLayerInterface!.getYP()!;;
     
 
-    var x2: number = ownerLayerInterface!.getX2()!;
-;
+    var x2: number = ownerLayerInterface!.getX2()!;;
     
 
-    var y2: number = ownerLayerInterface!.getY2()!;
-;
+    var y2: number = ownerLayerInterface!.getY2()!;;
     
 
-    var width: number = ownerLayerInterface!.getWidth()!;
-;
+    var width: number = ownerLayerInterface!.getWidth()!;;
     
 
-    var height: number = ownerLayerInterface!.getHeight()!;
-;
+    var height: number = ownerLayerInterface!.getHeight()!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
                         if(x2 > displayInfo!.getLastWidth())

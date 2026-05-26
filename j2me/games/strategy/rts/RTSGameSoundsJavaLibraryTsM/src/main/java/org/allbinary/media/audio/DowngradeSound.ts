@@ -58,6 +58,7 @@ export class DowngradeSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/downgrade.wav");
                     

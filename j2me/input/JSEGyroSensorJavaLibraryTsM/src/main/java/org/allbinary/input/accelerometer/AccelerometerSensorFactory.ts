@@ -55,18 +55,16 @@ export class AccelerometerSensorFactory
          {
         
 
-    private static allBinaryAccelerometerSensor: AllBinaryOrientationSensor
+    private static allBinaryAccelerometerSensor: AllBinaryOrientationSensor;
 
                 //@Throws(Exception.constructor)
             
     public static init(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-;
+    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
     
 
                         if(features.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))

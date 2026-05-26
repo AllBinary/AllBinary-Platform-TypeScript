@@ -54,6 +54,7 @@ export class UserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

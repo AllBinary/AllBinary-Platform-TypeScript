@@ -65,6 +65,7 @@ export class ScrollMapEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -75,8 +76,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var scrollMapEventListenerInterface: ScrollMapEventListenerInterface = (eventListenerInterface as ScrollMapEventListenerInterface);
-;
+    var scrollMapEventListenerInterface: ScrollMapEventListenerInterface = (eventListenerInterface as ScrollMapEventListenerInterface);;
     
 scrollMapEventListenerInterface!.onMoveEvent(eventObject as ScrollMapEvent);
     

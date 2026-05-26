@@ -68,6 +68,7 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
 
 
     public fontImage: OpenGLESImage = OpenGLESImage.NULL_OPENGL_IMAGE;
+
 private constructor (){
             super(1);
                     

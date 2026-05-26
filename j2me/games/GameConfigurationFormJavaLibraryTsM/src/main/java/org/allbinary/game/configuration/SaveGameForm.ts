@@ -85,6 +85,7 @@ SaveGameForm.FORM= new SaveGameForm(commandListener, title, backgrounBasicColor,
     
 }
 
+
 private constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
                     
@@ -94,8 +95,7 @@ private constructor (commandListener: CommandListener, title: string, backgrounB
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var timeString: string = (Date.now()).toString()!;
-;
+    var timeString: string = (Date.now()).toString()!;;
     
 this.append(new TextField("Name: ", timeString, 30, TextField.ANY));
     
@@ -106,8 +106,7 @@ this.initCommands(commandListener);
 
     public initCommands(cmdListener: CommandListener){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-;
+    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 this.removeAllCommands();
     

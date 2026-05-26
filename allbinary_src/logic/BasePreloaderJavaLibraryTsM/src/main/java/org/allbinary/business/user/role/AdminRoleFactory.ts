@@ -82,12 +82,12 @@ export class AdminRoleFactory
     private readonly shippingManagementRoles: Vector<any> = new Vector<any>();
 
     private readonly webManagementRoles: Vector<any> = new Vector<any>();
+
 private constructor (){
 
             super();
         
-    var basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;
-;
+    var basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;;
     
 this.adminRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);
     

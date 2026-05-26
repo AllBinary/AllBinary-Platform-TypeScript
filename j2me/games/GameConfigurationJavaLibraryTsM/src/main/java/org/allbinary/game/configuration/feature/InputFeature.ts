@@ -44,6 +44,7 @@
 
 export class InputFeature extends Feature {
         
+
  constructor (name: string){
             super(name);
                     

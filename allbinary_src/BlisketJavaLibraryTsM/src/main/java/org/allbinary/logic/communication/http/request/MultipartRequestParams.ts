@@ -68,6 +68,7 @@ export class MultipartRequestParams extends RequestParams {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private special: boolean = false;
+
 public constructor (request: HttpServletRequest){
             super();
                     
@@ -77,6 +78,7 @@ public constructor (request: HttpServletRequest){
 this.processMultipartRequest(request);
     
 }
+
 
 public constructor (pageContext: PageContext){
             super();
@@ -99,12 +101,10 @@ this.special= true;
 
         try {
             
-    var specialRequest: HashMap<any, any> = new HashMap<any, any>();
-;
+    var specialRequest: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var multipartRequestList: List = AbFileUploadFactory.getInstance()!.getFileItemStreamList(request)!;
-;
+    var multipartRequestList: List = AbFileUploadFactory.getInstance()!.getFileItemStreamList(request)!;;
     
 
                         if(multipartRequestList != 
@@ -122,29 +122,24 @@ this.special= true;
                                     }
                                 
 
-    var fileItemArray: any[] = multipartRequestList!.toArray()!;
-;
+    var fileItemArray: any[] = multipartRequestList!.toArray()!;;
     
 
     var size: number = fileItemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var fileItem: FileItem = fileItemArray[index]! as FileItem;
-;
+    var fileItem: FileItem = fileItemArray[index]! as FileItem;;
     
 
-    var name: string = fileItem!.getName()!;
-;
+    var name: string = fileItem!.getName()!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(name))

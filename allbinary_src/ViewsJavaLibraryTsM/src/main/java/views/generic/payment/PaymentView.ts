@@ -67,6 +67,7 @@ export class PaymentView extends HttpStoreComponentView implements DomNodeInterf
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -82,30 +83,25 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var paymentNode: Node = document.createElement(PaymentData.PAYMENT)!;
-;
+    var paymentNode: Node = document.createElement(PaymentData.PAYMENT)!;;
     
 document.appendChild(paymentNode);
     
 
-    var paymentVector: Vector = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.get(this.getWeblisketSession()!.getUserName())!;
-;
+    var paymentVector: Vector = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.get(this.getWeblisketSession()!.getUserName())!;;
     
 
-    var size: number = paymentVector!.length!;
-;
+    var size: number = paymentVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var payment: Payment = paymentVector!.get(index) as Payment;
-;
+    var payment: Payment = paymentVector!.get(index) as Payment;;
     
 paymentNode!.appendChild(payment.toXmlNode(document));
     
@@ -162,8 +158,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 } catch(e) 
             {
 
-    var error: string = "Failed to view Payment";
-;
+    var error: string = "Failed to view Payment";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))

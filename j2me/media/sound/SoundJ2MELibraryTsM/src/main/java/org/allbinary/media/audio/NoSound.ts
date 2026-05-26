@@ -59,6 +59,7 @@ export class NoSound extends Sound {
 
 
     private static readonly instance: NoSound = new NoSound();
+
 private constructor (){
             super(StringUtil.getInstance()!.EMPTY_STRING);
                     

@@ -74,6 +74,7 @@ export class CollidableCompositeLayer extends AllBinaryGameLayer implements Coll
     public static readonly NULL_COLLIDABLE_COMPOSITE_LAYER: CollidableCompositeLayer = new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
 
     private collidableInferface: CollidableBaseBehavior = CollidableNeverCollideBehaviorFactory.getInstance()!.createBehavior()!;
+
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableBaseBehaviorFactory: CollidableBaseBehaviorFactory){
             super(name, layerInfo, viewPosition);
                     
@@ -132,8 +133,7 @@ this.collidableInferface= collidableInferface;
 
     public toStringAppend(stringBuffer: StringMaker){
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 super.toStringAppend(stringBuffer);
     
@@ -146,8 +146,7 @@ stringBuffer!.append(this.getCollidableInferface()!.toString());
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 this.toStringAppend(stringBuffer);
     

@@ -65,15 +65,16 @@ export class WeaponProperties extends SimpleWeaponProperties {
 
     private static readonly RELOAD: string = "Reload: ";
 
-    private reloadTime: number= 0
+    private reloadTime: number= 0;
 
-    private targetingTime: number= 0
+    private targetingTime: number= 0;
 
     private speed: BasicDecimal = BasicDecimal.ZERO_BIGDECIMAL;
 
     private readonly MAX: number = 10240L;
 
     private readonly ZERO: number = 0;
+
 public constructor (reloadTime: number, targetingTime: number, speed: number, damage: number, dissipation: number){
 
             super();
@@ -82,12 +83,10 @@ public constructor (reloadTime: number, targetingTime: number, speed: number, da
                         
                                     {
                                     
-    var MESSAGE: string = "Danger Danger Danger: Speed probably to slow if using 1 degree calculations as velocity for a single axis could be below 1024: ";
-;
+    var MESSAGE: string = "Danger Danger Danger: Speed probably to slow if using 1 degree calculations as velocity for a single axis could be below 1024: ";;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(new StringMaker().append(MESSAGE)!.appendlong(speed)!.toString(), this, commonStrings!.CONSTRUCTOR);
     
@@ -111,16 +110,13 @@ this.setSpeed(new BasicDecimal(speed));
                         
                                     {
                                     
-    var unscaledDamage: number = this.speed.getUnscaled() *damage;
-;
+    var unscaledDamage: number = this.speed.getUnscaled() *damage;;
     
 
-    var scaledDissipation: number = dissipation *this.speed.getScaledFactorValue();
-;
+    var scaledDissipation: number = dissipation *this.speed.getScaledFactorValue();;
     
 
-    var value: number = (unscaledDamage /scaledDissipation);
-;
+    var value: number = (unscaledDamage /scaledDissipation);;
     
 this.setRange(Math.round((value *9)) /10);
     
@@ -190,16 +186,13 @@ this.speed= speed;
 
     public toStringArray(): string[]{
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var stringArray: string[] = new Array(3);
-;
+    var stringArray: string[] = new Array(3);;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringArray[index++]= stringBuffer!.append(WeaponProperties.DAMAGE)!.appendint(this.getDamage())!.toString();
     
@@ -222,8 +215,7 @@ stringArray[index++]= stringBuffer!.append(WeaponProperties.RELOAD)!.appendlong(
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(WeaponProperties.DAMAGE)!.appendint(this.getDamage());
     

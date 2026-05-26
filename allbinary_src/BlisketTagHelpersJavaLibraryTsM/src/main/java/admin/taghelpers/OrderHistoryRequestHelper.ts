@@ -79,13 +79,14 @@ export class OrderHistoryRequestHelper extends TagHelper {
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private id: string
+    private id: string;
 
-    private groupId: string
+    private groupId: string;
 
-    private status: string
+    private status: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -132,8 +133,7 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
                                     }
                                 
 
-    var success: string = "Status successfully set to: " +this.status;
-;
+    var success: string = "Status successfully set to: " +this.status;;
     
 OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
     
@@ -157,8 +157,7 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
 } catch(e) 
             {
 
-    var error: string = "Failed to set order status";
-;
+    var error: string = "Failed to set order status";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -189,14 +188,12 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
                                 )
                         newStatus= this.status
 
-    var success: string = "Status successfully set to: " +newStatus;
-;
+    var success: string = "Status successfully set to: " +newStatus;;
     
 OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, newStatus);
     
 
-    var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(this.id)!;
-;
+    var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(this.id)!;;
     
 new OrderStatusEmail(this.abeClientInformation, orderHistory).process();
     
@@ -220,8 +217,7 @@ new OrderStatusEmail(this.abeClientInformation, orderHistory).process();
 } catch(e) 
             {
 
-    var error: string = "Failed to view order table";
-;
+    var error: string = "Failed to view order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

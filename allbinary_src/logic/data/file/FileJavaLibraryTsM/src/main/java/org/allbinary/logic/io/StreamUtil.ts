@@ -73,6 +73,7 @@ export class StreamUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -83,8 +84,7 @@ private constructor (){
             
     public get(inputStream: InputStream, outputStream: OutputStream, buffer: number[]): OutputStream{
 
-    var len: number = 0;
-;
+    var len: number = 0;;
     
 
         while(true)
@@ -122,8 +122,7 @@ outputStream!.write(buffer, 0, len);
             
     public getByteArray(inputStream: InputStream, outputStream2: ByteArrayOutputStream, byteArray: number[]): number[]{
 
-    var outputStream: ByteArrayOutputStream = outputStream2;
-;
+    var outputStream: ByteArrayOutputStream = outputStream2;;
     
 
         try {
@@ -180,8 +179,7 @@ outputStream!.write(buffer, 0, len);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
     

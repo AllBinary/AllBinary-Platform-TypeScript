@@ -49,6 +49,7 @@ import { Short } from './Short.js';
 
 export class InputAutomationTypeJPanel extends javax.swing.JPanel {
         
+
 public constructor (){
 
             super();
@@ -86,8 +87,7 @@ this.inputAutomationTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel
 this.jLabel1!.setText("Input Type:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -98,9 +98,9 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 }
 
 
-    private inputAutomationTypeJComboBox: javax.swing.JComboBox
+    private inputAutomationTypeJComboBox: javax.swing.JComboBox;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
 }
                 

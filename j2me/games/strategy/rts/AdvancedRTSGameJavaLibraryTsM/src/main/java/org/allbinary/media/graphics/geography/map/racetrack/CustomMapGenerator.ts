@@ -62,11 +62,12 @@ import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
 export class CustomMapGenerator extends CustomMapGeneratorBase {
         
 
-    private readonly customMapArray: number[][]
+    private readonly customMapArray: number[][];
 
-    private readonly raceTrackGeographicMap: RaceTrackGeographicMap
+    private readonly raceTrackGeographicMap: RaceTrackGeographicMap;
 
-    private readonly geographicMapCellTypeFactory: GeographicMapCellTypeFactory
+    private readonly geographicMapCellTypeFactory: GeographicMapCellTypeFactory;
+
 public constructor (raceTrackGeographicMap: RaceTrackGeographicMap){
 
             super();
@@ -75,13 +76,11 @@ public constructor (raceTrackGeographicMap: RaceTrackGeographicMap){
 this.geographicMapCellTypeFactory= this.raceTrackGeographicMap!.getGeographicMapCellTypeFactory();
     
 
-    var mapArray: number[][] = raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;
-;
+    var mapArray: number[][] = raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;;
     
 
     var size2: number = mapArray[0]!.length
-                ;
-;
+                ;;
     
 this.customMapArray= new Array(mapArray!.length) [size2];
     
@@ -104,28 +103,24 @@ this.customMapArray= new Array(mapArray!.length) [size2];
             
     public copyMapIntoCustomMap(){
 
-    var mapArray: number[][] = this.raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;
-;
+    var mapArray: number[][] = this.raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;;
     
 
-    var startIndex2: number = mapArray[0]!.length -1;
-;
+    var startIndex2: number = mapArray[0]!.length -1;;
     
 
 
 
 
                         for (
-    var index: number = mapArray!.length -1;
-index >= 0; index--)
+    var index: number = mapArray!.length -1;index >= 0; index--)
         {
 
 
 
 
                         for (
-    var index2: number = startIndex2;
-index2 >= 0; index2--)
+    var index2: number = startIndex2;index2 >= 0; index2--)
         {
 this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[index]![index2]!);
     
@@ -142,24 +137,20 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
             
     public getCustomType(column: number, row: number, currentType: number): number{
 
-    var emptyType: number = this.geographicMapCellTypeFactory!.getEmptyType()!;
-;
+    var emptyType: number = this.geographicMapCellTypeFactory!.getEmptyType()!;;
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.raceTrackGeographicMap!.getGeographicMapCellPositionFactory()!;
-;
+    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.raceTrackGeographicMap!.getGeographicMapCellPositionFactory()!;;
     
 
-    var cellPosition: CellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;
-;
+    var cellPosition: CellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;;
     
 
                         if(this.dropCellPositionHistory!.isCellPositionWithDrop(cellPosition))
                         
                                     {
                                     
-    var layer: AllBinaryLayer = dropCellPositionHistory!.getLayerInterface(cellPosition)!;
-;
+    var layer: AllBinaryLayer = dropCellPositionHistory!.getLayerInterface(cellPosition)!;;
     
 
                         if(layer == AllBinaryLayer.NULL_ALLBINARY_LAYER)
@@ -175,8 +166,7 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
                                     }
                                 
 
-    var rtsLayer: AdvancedRTSGameLayer = layer as AdvancedRTSGameLayer;
-;
+    var rtsLayer: AdvancedRTSGameLayer = layer as AdvancedRTSGameLayer;;
     
 
                         if(!(rtsLayer!.getType() == WaypointLayer.getStaticType()))

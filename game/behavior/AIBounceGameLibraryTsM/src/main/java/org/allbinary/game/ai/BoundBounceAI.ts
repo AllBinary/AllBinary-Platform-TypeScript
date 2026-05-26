@@ -63,9 +63,10 @@ export class BoundBounceAI extends BasicAI {
 
     currentRelativeAngle: number = 0;
 
-    private layerBounds: LayerBounds
+    private layerBounds: LayerBounds;
 
-    private boundsVisitorInterface: BoundsVisitorInterface
+    private boundsVisitorInterface: BoundsVisitorInterface;
+
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, layerBounds: LayerBounds, boundsVisitorInterface: BoundsVisitorInterface){
             super(ownerLayerInterface, gameInput);
                     
@@ -81,8 +82,7 @@ this.boundsVisitorInterface= boundsVisitorInterface;
 
     public paint(graphics: Graphics){
 
-    var rectange: Rectangle = this.layerBounds!.getRectangleP()!;
-;
+    var rectange: Rectangle = this.layerBounds!.getRectangleP()!;;
     
 graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rectange.getWidth(), rectange.getHeight());
     

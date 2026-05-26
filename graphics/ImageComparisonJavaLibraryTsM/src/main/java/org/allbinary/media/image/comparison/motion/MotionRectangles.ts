@@ -52,13 +52,14 @@ export class MotionRectangles
          {
         
 
-    private readonly name: string
+    private readonly name: string;
 
-    private rectangleVector: Vector
+    private rectangleVector: Vector;
 
-    private imageComparisonResult: ImageComparisonResult
+    private imageComparisonResult: ImageComparisonResult;
 
     readonly MAX_PIXEL_DISTANCE_THRESHOLD: number = 2;
+
 public constructor (name: string, imageComparisonResult: ImageComparisonResult){
 
             super();

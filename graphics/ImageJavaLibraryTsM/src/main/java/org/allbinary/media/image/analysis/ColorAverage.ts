@@ -50,11 +50,12 @@ export class ColorAverage
          {
         
 
-    private avgRed: number= 0.0
+    private avgRed: number= 0.0;
 
-    private avgGreen: number= 0.0
+    private avgGreen: number= 0.0;
 
-    private avgBlue: number= 0.0
+    private avgBlue: number= 0.0;
+
 public constructor (){
 
             super();
@@ -69,8 +70,7 @@ this.setAvgBlue(0);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("getAvgRed(): ");
     

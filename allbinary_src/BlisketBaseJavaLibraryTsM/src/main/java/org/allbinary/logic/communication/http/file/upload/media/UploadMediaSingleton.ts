@@ -62,7 +62,7 @@ export class UploadMediaSingleton
          {
         
 
-    private static uploadMedia: UploadMediaSingleton
+    private static uploadMedia: UploadMediaSingleton;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): UploadMediaSingleton{
@@ -90,9 +90,10 @@ export class UploadMediaSingleton
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readerFileTypesHashMap: HashMap<any, any>
+    private readerFileTypesHashMap: HashMap<any, any>;
 
-    private writerFileTypesHashMap: HashMap<any, any>
+    private writerFileTypesHashMap: HashMap<any, any>;
+
 private constructor (){
 
             super();
@@ -101,77 +102,64 @@ private constructor (){
 this.writerFileTypesHashMap= new HashMap<any, any>();
     
 
-    var hashMap: HashMap<any, any> = MediaData.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = MediaData.toHashMap()!;;
     
 
-    var set: Set = hashMap!.keys()!;
-;
+    var set: Set = hashMap!.keys()!;;
     
 
-    var mediaDataNameArray: any[] = set.toArray()!;
-;
+    var mediaDataNameArray: any[] = set.toArray()!;;
     
 
     var size: number = mediaDataNameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var mediaDataName: string = mediaDataNameArray[index]! as string;
-;
+    var mediaDataName: string = mediaDataNameArray[index]! as string;;
     
 
-    var mediaData: MediaData = hashMap!.get(mediaDataName) as MediaData;
-;
+    var mediaData: MediaData = hashMap!.get(mediaDataName) as MediaData;;
     
 this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
     
 }
 
 
-    var mediaIOUtil: MediaIOUtil = MediaIOUtil.getInstance()!;
-;
+    var mediaIOUtil: MediaIOUtil = MediaIOUtil.getInstance()!;;
     
 
-    var RESIZABLE_MEDIA: string = MediaTypeData.getInstance()!.RESIZABLE_MEDIA;
-;
+    var RESIZABLE_MEDIA: string = MediaTypeData.getInstance()!.RESIZABLE_MEDIA;;
     
 
-    var readerFileTypes: string[] = mediaIOUtil!.getReaderFormatNames()!;
-;
+    var readerFileTypes: string[] = mediaIOUtil!.getReaderFormatNames()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < readerFileTypes!.length; index++)
+    var index: number = 0;index < readerFileTypes!.length; index++)
         {
 this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA);
     
 }
 
 
-    var writerFileTypes: string[] = mediaIOUtil!.getWriterFormatNames()!;
-;
+    var writerFileTypes: string[] = mediaIOUtil!.getWriterFormatNames()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < writerFileTypes!.length; index++)
+    var index: number = 0;index < writerFileTypes!.length; index++)
         {
 this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA);
     
@@ -182,8 +170,7 @@ this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Supported Media Readers: ");
     
@@ -267,8 +254,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType) as string;
-;
+    var mediaType: string = hashMap!.get(mediaFileType) as string;;
     
 
                         if(mediaType!.compareTo(aMediaType) == 0)

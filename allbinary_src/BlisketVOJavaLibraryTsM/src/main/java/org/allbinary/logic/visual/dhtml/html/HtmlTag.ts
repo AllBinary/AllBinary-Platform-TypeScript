@@ -48,7 +48,8 @@ export class HtmlTag
          {
         
 
-    otherAttributes: HashMap<any, any>
+    otherAttributes: HashMap<any, any>;
+
 public constructor (){
 
             super();

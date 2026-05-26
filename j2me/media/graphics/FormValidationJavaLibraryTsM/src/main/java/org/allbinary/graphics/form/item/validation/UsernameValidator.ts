@@ -46,6 +46,7 @@ import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/i
 
 export class UsernameValidator extends TextFieldItemValidator {
         
+
 public constructor (textFieldItem: ABTextFieldItem, min: number, max: number, allowOnEmpty: boolean){
             super(textFieldItem, min, max, allowOnEmpty);
                     

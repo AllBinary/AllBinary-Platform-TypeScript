@@ -78,28 +78,22 @@ export class LevelLayersFinder
 
     public get(hashtable: Hashtable<any, any>): BasicArrayList{
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var enumeration: Enumeration<any> = hashtable.keys()!;
-;
+    var enumeration: Enumeration<any> = hashtable.keys()!;;
     
 
-    var layerHashtableCanBeNull: Hashtable<any, any>
-;
+    var layerHashtableCanBeNull: Hashtable<any, any>;;
     
 
-    var integerCanBeNull: Integer
-;
+    var integerCanBeNull: Integer;;
     
 
-    var cachedIntegerCanBeNull: Integer
-;
+    var cachedIntegerCanBeNull: Integer;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))

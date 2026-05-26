@@ -51,6 +51,7 @@ export class Encoder
     
 }
 
+
 private constructor (){
 
             super();

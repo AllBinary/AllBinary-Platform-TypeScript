@@ -82,65 +82,66 @@ export class BasicItem
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    itemId: string
+    itemId: string;
 
-    number: string
+    number: string;
 
-    inBaskets: string
+    inBaskets: string;
 
-    weight: string
+    weight: string;
 
-    enabled: string
+    enabled: string;
 
-    newOrUsed: string
+    newOrUsed: string;
 
-    summary: string
+    summary: string;
 
-    distributor: string
+    distributor: string;
 
-    idUsedByDistributor: string
+    idUsedByDistributor: string;
 
-    producedBy: string
+    producedBy: string;
 
-    productionDate: string
+    productionDate: string;
 
-    startProductionDate: string
+    startProductionDate: string;
 
-    description: string
+    description: string;
 
-    keywords: string
+    keywords: string;
 
-    category: string
+    category: string;
 
-    type: string
+    type: string;
 
-    smallImage: string
+    smallImage: string;
 
-    mediumImage: string
+    mediumImage: string;
 
-    largeImage: string
+    largeImage: string;
 
-    price: Money
+    price: Money;
 
-    comment: string
+    comment: string;
 
-    customs: string
+    customs: string;
 
-    private downloads: string
+    private downloads: string;
 
-    groups: string
+    groups: string;
 
-    options: string
+    options: string;
 
-    permissions: string
+    permissions: string;
 
-    specials: string
+    specials: string;
 
-    private downloadable: boolean= false
+    private downloadable: boolean= false;
 
-    timeEntered: string
+    timeEntered: string;
 
-    lastModified: string
+    lastModified: string;
+
 public constructor (itemHashMap: HashMap<any, any>){
 
             super();
@@ -213,6 +214,7 @@ this.specials= itemHashMap!.get(BasicItemData.SPECIALS) as string;
     
 }
 
+
 public constructor (){
 
             super();
@@ -226,8 +228,7 @@ public constructor (){
                                     }
                                 
 
-    var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 this.itemId= new ProductIdGenerator().getNext();
     
@@ -436,8 +437,7 @@ this.downloads= value;
                         
                                     {
                                     
-    var downloadInteger: Integer = Integer.valueOf(this.downloads)!;
-;
+    var downloadInteger: Integer = Integer.valueOf(this.downloads)!;;
     
 
                         if(downloadInteger!.intValue() != 0)
@@ -792,8 +792,7 @@ this.downloadable= downloadable;
 
     public getTotal(): Money{
 
-    var itemTotal: Money = new Money(this.price);
-;
+    var itemTotal: Money = new Money(this.price);;
     
 itemTotal!.multiply(new Integer(this.number).intValue());
     
@@ -817,8 +816,7 @@ itemTotal!.multiply(new Integer(this.number).intValue());
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(BasicItemData.ID, this.itemId);
     
@@ -859,12 +857,10 @@ hashMap!.put(BasicItemData.MEDIUMIMAGE, this.mediumImage);
 hashMap!.put(BasicItemData.LARGEIMAGE, this.largeImage);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -904,8 +900,7 @@ hashMap!.put(BasicItemData.SPECIALS, this.specials);
                                     }
                                 
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.itemId);
     
@@ -946,12 +941,10 @@ values.add(this.getMediumImage());
 values.add(this.getLargeImage());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString()!;
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString()!;;
     
 values.add(time);
     

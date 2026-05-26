@@ -59,7 +59,8 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
 export class ImageHealthGraphic extends HealthGraphic {
         
 
-    private image: Image[]
+    private image: Image[];
+
 public constructor (animationInterface: AnimationInterface, healthInterface: HealthInterface, location: number, direction: number){
             super(animationInterface, healthInterface, location, direction);
                     
@@ -69,16 +70,14 @@ public constructor (animationInterface: AnimationInterface, healthInterface: Hea
 this.image= new Array(this.healthInterface!.getMaxHealth());
     
 
-    var imageCacheFactory: ImageCacheFactory = ImageCacheFactory.getInstance()!;
-;
+    var imageCacheFactory: ImageCacheFactory = ImageCacheFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var numOfHealth: number = 0;
-numOfHealth <= max; numOfHealth++)
+    var numOfHealth: number = 0;numOfHealth <= max; numOfHealth++)
         {
 this.image[numOfHealth]= imageCacheFactory!.get(this, numOfHealth +1 *10, 10);
     
@@ -89,16 +88,14 @@ this.image[numOfHealth]= imageCacheFactory!.get(this, numOfHealth +1 *10, 10);
 
 
                         for (
-    var numOfHealth: number = 0;
-numOfHealth <= max; numOfHealth++)
+    var numOfHealth: number = 0;numOfHealth <= max; numOfHealth++)
         {
 
 
 
 
                         for (
-    var index: number = 0;
-index < numOfHealth; index++)
+    var index: number = 0;index < numOfHealth; index++)
         {
 this.animationInterface!.paint(this.image[numOfHealth]!.getGraphics(), numOfHealth *10, 0);
     

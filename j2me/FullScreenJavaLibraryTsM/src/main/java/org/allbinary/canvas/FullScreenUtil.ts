@@ -92,12 +92,10 @@ fullScreenInterface.
 
     public init(fullScreenInterface: Canvas){
 
-    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
-;
+    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN))
@@ -119,12 +117,10 @@ fullScreenInterface.
 
     public isScreenChange(isFullScreen: boolean): boolean{
 
-    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
-;
+    var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(mainFeatureFactory!.FULL_SCREEN) != isFullScreen)

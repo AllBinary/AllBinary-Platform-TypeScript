@@ -60,9 +60,10 @@ export class Money
          {
         
 
-    private units: Long
+    private units: Long;
 
     private readonly DEFAULT_CURRENCY: string = "USD";
+
 public constructor (money: Money){
 
             super();
@@ -70,12 +71,14 @@ public constructor (money: Money){
     
 }
 
+
 public constructor (){
 
             super();
         this.units= new Long(0);
     
 }
+
 
 public constructor (usDollarStr: string){
 
@@ -92,6 +95,7 @@ public constructor (usDollarStr: string){
                                     }
                                 
 }
+
 
 public constructor (units: number){
 
@@ -162,20 +166,17 @@ this.units= new Long(this.units.longValue() *multiplier);
 
     convertUnitsTo(currency: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(currency.compareTo(this.DEFAULT_CURRENCY) == 0)
                         
                                     {
                                     
-    var dollar: number = this.units.longValue() /100;
-;
+    var dollar: number = this.units.longValue() /100;;
     
 
-    var cents: number = this.units.longValue() -(dollar *100);
-;
+    var cents: number = this.units.longValue() -(dollar *100);;
     
 stringBuffer!.append(new Long(dollar).toString());
     
@@ -206,24 +207,19 @@ stringBuffer!.append(new Long(cents).toString());
 
     convertUsdToUnits(usDollarStr: string): number{
 
-    var localUnit: number = 0;
-;
+    var localUnit: number = 0;;
     
 
-    var index: number = usDollarStr!.indexOf(AbPathData.getInstance()!.EXTENSION_SEP)!;
-;
+    var index: number = usDollarStr!.indexOf(AbPathData.getInstance()!.EXTENSION_SEP)!;;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var dollarStr: string = stringUtil!.EMPTY_STRING;
-;
+    var dollarStr: string = stringUtil!.EMPTY_STRING;;
     
 
-    var centsStr: string = stringUtil!.EMPTY_STRING;
-;
+    var centsStr: string = stringUtil!.EMPTY_STRING;;
     
 
                         if(index < 1)

@@ -85,43 +85,43 @@ export class GameConfigurationCentral
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public readonly SCALE: GameConfiguration
+    public readonly SCALE: GameConfiguration;
 
-    public readonly ORIENTATION: GameConfiguration
+    public readonly ORIENTATION: GameConfiguration;
 
-    public readonly SENSOR_UPDATE_RATE: GameConfiguration
+    public readonly SENSOR_UPDATE_RATE: GameConfiguration;
 
-    public readonly VIBRATION: GameConfiguration
+    public readonly VIBRATION: GameConfiguration;
 
-    public readonly CHALLENGE_LEVEL: GameConfiguration
+    public readonly CHALLENGE_LEVEL: GameConfiguration;
 
-    public readonly COLLIDE_DAMAGE: GameConfiguration
+    public readonly COLLIDE_DAMAGE: GameConfiguration;
 
-    public readonly DURABILITY_CHALLENGE_LEVEL: GameConfiguration
+    public readonly DURABILITY_CHALLENGE_LEVEL: GameConfiguration;
 
-    public readonly SPEED_CHALLENGE_LEVEL: GameConfiguration
+    public readonly SPEED_CHALLENGE_LEVEL: GameConfiguration;
 
-    public readonly ATTACK_CHALLENGE_LEVEL: GameConfiguration
+    public readonly ATTACK_CHALLENGE_LEVEL: GameConfiguration;
 
-    public readonly CONTROL_LEVEL: GameConfiguration
+    public readonly CONTROL_LEVEL: GameConfiguration;
 
-    public readonly PLAYER_INPUT_WAIT: GameConfiguration
+    public readonly PLAYER_INPUT_WAIT: GameConfiguration;
 
-    public readonly SPEED: GameConfiguration
+    public readonly SPEED: GameConfiguration;
 
-    public readonly SOUND_VOLUME: GameConfiguration
+    public readonly SOUND_VOLUME: GameConfiguration;
 
-    public readonly MAX_GAME_OBJECTS: GameConfiguration
+    public readonly MAX_GAME_OBJECTS: GameConfiguration;
 
-    public readonly MAX_LAYERS: GameConfiguration
+    public readonly MAX_LAYERS: GameConfiguration;
 
     private gameControlFidelity: number = 36;
+
 private constructor (){
 
             super();
         
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 this.SCALE= new GameConfiguration("Scale", smallIntegerSingletonFactory!.getAt(2), smallIntegerSingletonFactory!.getAt(2), smallIntegerSingletonFactory!.getAt(3));
     
@@ -158,42 +158,35 @@ this.MAX_LAYERS= new GameConfiguration("Max Layers", smallIntegerSingletonFactor
 
     public load(abeClientInformation: AbeClientInformationInterface){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;
-;
+    var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;;
     
 keyValuePersistance!.clear();
     
 keyValuePersistance!.loadAll(abeClientInformation);
     
 
-    var list: BasicArrayList = keyValuePersistance!.getIds()!;
-;
+    var list: BasicArrayList = keyValuePersistance!.getIds()!;;
     
 
                         if(list.size() > 0)
                         
                                     {
                                     
-    var hashtable: Hashtable<any, any> = keyValuePersistance!.get(0)!;
-;
+    var hashtable: Hashtable<any, any> = keyValuePersistance!.get(0)!;;
     
 
-    var anyType: any = this.SCALE.getName();
-;
+    var anyType: any = this.SCALE.getName();;
     
 
-    var value: string = hashtable.get(anyType) as string;
-;
+    var value: string = hashtable.get(anyType) as string;;
     
 this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.intValue()));
     
@@ -235,12 +228,10 @@ this.gameControlFidelity= gameControlFidelity;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonStrings: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonStrings: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     

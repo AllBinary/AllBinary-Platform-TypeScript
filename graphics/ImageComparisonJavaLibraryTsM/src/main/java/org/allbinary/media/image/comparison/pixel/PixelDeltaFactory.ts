@@ -77,20 +77,16 @@ export class PixelDeltaFactory
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";
-;
+    var STATIC_BLOCK: string = "Static Block";;
     
 
-    var instance: string = "PixelDeltaFactory";
-;
+    var instance: string = "PixelDeltaFactory";;
     
 
         try {
@@ -117,16 +113,13 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
             
     public static getInstance(x: number, y: number, rgb1: number, rgb2: number): PixelDelta{
 
-    var point: GPoint = PointFactory.getInstance()!.createXY(x, y)!;
-;
+    var point: GPoint = PointFactory.getInstance()!.createXY(x, y)!;;
     
 
-    var colorDelta: ColorDelta = ColorDeltaFactory.getInstance(rgb1, rgb2)!;
-;
+    var colorDelta: ColorDelta = ColorDeltaFactory.getInstance(rgb1, rgb2)!;;
     
 
-    var pixelDelta: PixelDelta = PixelDeltaFactory.cacheInterface!.get(PixelDelta.getKey(point, colorDelta)) as PixelDelta;
-;
+    var pixelDelta: PixelDelta = PixelDeltaFactory.cacheInterface!.get(PixelDelta.getKey(point, colorDelta)) as PixelDelta;;
     
 
                         if(pixelDelta == 
@@ -149,6 +142,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

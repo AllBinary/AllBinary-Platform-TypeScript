@@ -47,6 +47,7 @@ import { OutputStream } from '../../../../java/io/OutputStream.js';
         
 export class AbDataOutputStream extends DataOutputStream {
         
+
 public constructor (out: OutputStream){
             super(out);
                     

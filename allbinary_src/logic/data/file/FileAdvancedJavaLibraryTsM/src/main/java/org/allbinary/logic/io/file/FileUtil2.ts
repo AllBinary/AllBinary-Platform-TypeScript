@@ -77,6 +77,7 @@ export class FileUtil2
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly streamUtil: StreamUtil = StreamUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -87,8 +88,7 @@ private constructor (){
 
     var inputStream: AbFileInputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {

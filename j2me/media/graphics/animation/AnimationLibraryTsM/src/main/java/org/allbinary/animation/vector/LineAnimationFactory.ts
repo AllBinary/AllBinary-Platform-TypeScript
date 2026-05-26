@@ -57,7 +57,8 @@ export class LineAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-    private basicColor: BasicColor
+    private basicColor: BasicColor;
+
 public constructor (basicColor: BasicColor){
 
             super();

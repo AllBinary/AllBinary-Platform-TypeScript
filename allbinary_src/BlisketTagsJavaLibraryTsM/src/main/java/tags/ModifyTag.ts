@@ -68,6 +68,7 @@ export class ModifyTag extends HelperTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             super(tagHelperFactoryInterface);
                     
@@ -92,18 +93,15 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
         try {
             
-    var helperClass: Function = this.getHelper()!.constructor!;
-;
+    var helperClass: Function = this.getHelper()!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("insert", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -116,8 +114,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 } catch(e) 
             {
 
-    var error: string = "Failed to insert";
-;
+    var error: string = "Failed to insert";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -145,18 +142,15 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
         try {
             
-    var helperClass: Function = this.getHelper()!.constructor!;
-;
+    var helperClass: Function = this.getHelper()!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.delete, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -169,8 +163,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -198,18 +191,15 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
         try {
             
-    var helperClass: Function = this.getHelper()!.constructor!;
-;
+    var helperClass: Function = this.getHelper()!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("update", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -222,8 +212,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 } catch(e) 
             {
 
-    var error: string = "Failed to update";
-;
+    var error: string = "Failed to update";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -255,12 +244,10 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
-;
+    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Command: ");
     
@@ -291,16 +278,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     this.setHelper();
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0)
                         
                                     {
                                     
-    var output: string = this.insert()!;
-;
+    var output: string = this.insert()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -319,8 +304,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         
                                     {
                                     
-    var output: string = this.delete()!;
-;
+    var output: string = this.delete()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -339,8 +323,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         
                                     {
                                     
-    var output: string = this.update()!;
-;
+    var output: string = this.update()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))

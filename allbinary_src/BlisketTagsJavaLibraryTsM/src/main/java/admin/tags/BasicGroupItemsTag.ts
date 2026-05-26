@@ -51,7 +51,8 @@ import { BasicGroupItemsRequestHelperFactory } from '../../admin/taghelpers/Basi
 export class BasicGroupItemsTag extends TableTag {
         
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
+
 public constructor (){
 
             super();

@@ -54,9 +54,10 @@ export class BufferedImageFrameCacheable
          implements CacheableInterface {
         
 
-    private frame: Long
+    private frame: Long;
 
-    private bufferedImage: BufferedImage
+    private bufferedImage: BufferedImage;
+
 public constructor (bufferedImage: BufferedImage, frame: Long){
 
             super();
@@ -111,8 +112,7 @@ this.frame= frame;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     

@@ -53,6 +53,7 @@ export class OpenGLESGraphics extends Graphics implements OpenGLSurfaceChangedIn
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     gl: GL10 = NullGL10.NULL_GL10;
+
 public constructor (){
 
             super();

@@ -36,15 +36,16 @@ export class AnalogLocationInput
 
     public static readonly NULL_ANALOG_LOCATION_INPUT: AnalogLocationInput = new AnalogLocationInput( -1);
 
-    private readonly playerId: number
+    private readonly playerId: number;
 
-    private readonly customGPoint: CustomGPoint
+    private readonly customGPoint: CustomGPoint;
 
-    private rz: number= 0
+    private rz: number= 0;
 
-    private rightTrigger: number= 0
+    private rightTrigger: number= 0;
 
-    private leftTrigger: number= 0
+    private leftTrigger: number= 0;
+
  constructor (playerId: number){
 
             super();

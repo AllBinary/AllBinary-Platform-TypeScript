@@ -52,8 +52,7 @@ export class CanvasUtil
 
     public static getKeyName(key: number): string{
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-;
+    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
                         if(key == Canvas.UP)
@@ -127,6 +126,7 @@ export class CanvasUtil
                         return "UNKNOWN KEY";
     
 }
+
 
 private constructor (){
 

@@ -55,7 +55,8 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
 export class CustomGravityConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 
-    private customGravity: number
+    private customGravity: number;
+
 public constructor (speedBasicDecimal: BasicDecimal, customGravity: number){
             super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
                     
@@ -77,8 +78,7 @@ super.process(layer);
 this.gravityUtil!.process(this.getVelocityProperties(), this.customGravity);
     
 
-    var velocityProperties: VelocityProperties = this.getVelocityProperties() as VelocityProperties;
-;
+    var velocityProperties: VelocityProperties = this.getVelocityProperties() as VelocityProperties;;
     
 velocityProperties!.limitMaxYForwardVelocity();
     

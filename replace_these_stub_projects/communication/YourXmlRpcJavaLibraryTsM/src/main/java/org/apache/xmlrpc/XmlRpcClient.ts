@@ -45,7 +45,8 @@ export class XmlRpcClient
          implements XmlRpcHandler {
         
 
-    private readonly url: URL
+    private readonly url: URL;
+
 public constructor (url: string){
 
             super();

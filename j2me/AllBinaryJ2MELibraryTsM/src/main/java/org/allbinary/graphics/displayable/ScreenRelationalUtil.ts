@@ -69,24 +69,19 @@ export class ScreenRelationalUtil
 
     public getScaleWHA(aWidth: number, aHeight: number, add: number): number{
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var last: number[] = displayInfoSingleton!.getLast()!;
-;
+    var last: number[] = displayInfoSingleton!.getLast()!;;
     
 
-    var width: number = last[displayInfoSingleton!.WIDTH]!;
-;
+    var width: number = last[displayInfoSingleton!.WIDTH]!;;
     
 
-    var height: number = last[displayInfoSingleton!.HEIGHT]!;
-;
+    var height: number = last[displayInfoSingleton!.HEIGHT]!;;
     
 
-    var largestSize: number = width;
-;
+    var largestSize: number = width;;
     
 
                         if(largestSize < height)
@@ -98,8 +93,7 @@ export class ScreenRelationalUtil
                                     }
                                 
 
-    var scale: number = (largestSize) /aWidth;
-;
+    var scale: number = (largestSize) /aWidth;;
     
 
 

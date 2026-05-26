@@ -50,11 +50,12 @@ export class BufferedImageInfo
          {
         
 
-    private width: number
+    private width: number;
 
-    private height: number
+    private height: number;
 
-    private type: number
+    private type: number;
+
 public constructor (width: number, height: number, type: number){
 
             super();
@@ -117,12 +118,10 @@ this.type= type;
 
     public toString(): string{
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("BufferedImageInfo -");
     

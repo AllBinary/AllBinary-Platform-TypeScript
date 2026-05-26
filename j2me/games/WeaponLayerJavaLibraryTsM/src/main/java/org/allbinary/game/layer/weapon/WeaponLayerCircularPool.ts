@@ -54,6 +54,7 @@ import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/A
 
 export class WeaponLayerCircularPool extends AllBinaryLayerCircularPool {
         
+
 public constructor (){
 
             super();
@@ -64,8 +65,7 @@ public constructor (){
             
     public getInstance(sourceLayerInterface: AllBinaryLayer, x: number, y: number, z: number, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface): WeaponLayer{
 
-    var weaponLayer: WeaponLayer = super.getNextInstance() as WeaponLayer;
-;
+    var weaponLayer: WeaponLayer = super.getNextInstance() as WeaponLayer;;
     
 weaponLayer!.initXYZ(x, y, z);
     

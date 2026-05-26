@@ -59,59 +59,58 @@ export class BasicTouchButtonCellPositionFactory
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    public readonly TOP_RIGHT: CellPosition
+    public readonly TOP_RIGHT: CellPosition;
 
-    public readonly TOP_LEFT: CellPosition
+    public readonly TOP_LEFT: CellPosition;
 
-    public readonly SECOND_FROM_TOP_LEFT: CellPosition
+    public readonly SECOND_FROM_TOP_LEFT: CellPosition;
 
-    public readonly SECOND_FROM_TOP_RIGHT: CellPosition
+    public readonly SECOND_FROM_TOP_RIGHT: CellPosition;
 
-    public readonly TOP_SECOND_FROM_LEFT: CellPosition
+    public readonly TOP_SECOND_FROM_LEFT: CellPosition;
 
-    public readonly TOP_SECOND_FROM_RIGHT: CellPosition
+    public readonly TOP_SECOND_FROM_RIGHT: CellPosition;
 
-    public readonly BOTTOM_RIGHT: CellPosition
+    public readonly BOTTOM_RIGHT: CellPosition;
 
-    public readonly BOTTOM_SECOND_FROM_RIGHT: CellPosition
+    public readonly BOTTOM_SECOND_FROM_RIGHT: CellPosition;
 
-    public readonly SECOND_FROM_BOTTOM_RIGHT: CellPosition
+    public readonly SECOND_FROM_BOTTOM_RIGHT: CellPosition;
 
-    public readonly THIRD_FROM_BOTTOM_RIGHT: CellPosition
+    public readonly THIRD_FROM_BOTTOM_RIGHT: CellPosition;
 
-    public readonly FOURTH_FROM_BOTTOM_RIGHT: CellPosition
+    public readonly FOURTH_FROM_BOTTOM_RIGHT: CellPosition;
 
-    public readonly SECOND_FROM_BOTTOM_SECOND_FROM_RIGHT: CellPosition
+    public readonly SECOND_FROM_BOTTOM_SECOND_FROM_RIGHT: CellPosition;
 
-    public readonly SECOND_FROM_BOTTOM_THIRD_FROM_RIGHT: CellPosition
+    public readonly SECOND_FROM_BOTTOM_THIRD_FROM_RIGHT: CellPosition;
 
-    public readonly SECOND_FROM_BOTTOM_FOURTH_FROM_RIGHT: CellPosition
+    public readonly SECOND_FROM_BOTTOM_FOURTH_FROM_RIGHT: CellPosition;
 
-    public readonly BOTTOM_THIRD_FROM_RIGHT: CellPosition
+    public readonly BOTTOM_THIRD_FROM_RIGHT: CellPosition;
 
-    public readonly BOTTOM_FOURTH_FROM_RIGHT: CellPosition
+    public readonly BOTTOM_FOURTH_FROM_RIGHT: CellPosition;
 
-    public readonly BOTTOM_SECOND_FROM_LEFT: CellPosition
+    public readonly BOTTOM_SECOND_FROM_LEFT: CellPosition;
 
-    public readonly SECOND_FROM_BOTTOM_LEFT: CellPosition
+    public readonly SECOND_FROM_BOTTOM_LEFT: CellPosition;
 
-    public readonly THIRD_FROM_BOTTOM_LEFT: CellPosition
+    public readonly THIRD_FROM_BOTTOM_LEFT: CellPosition;
 
-    public readonly BOTTOM_LEFT: CellPosition
+    public readonly BOTTOM_LEFT: CellPosition;
 
-    public readonly SECOND_FROM_BOTTOM_SECOND_FROM_LEFT: CellPosition
+    public readonly SECOND_FROM_BOTTOM_SECOND_FROM_LEFT: CellPosition;
+
 public constructor (){
 
             super();
         this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
-;
+    var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();;
     
 
-    var cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;
-;
+    var cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;;
     
 cellPositionFactory!.init(touchButtonLocationHelper!.getTotalColumns(), touchButtonLocationHelper!.getTotalRows());
     

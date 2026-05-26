@@ -63,15 +63,14 @@ export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly imageCache: ImageCache
+    private readonly imageCache: ImageCache;
 
     private readonly runnable: ABRunnable = new class extends ABRunnable
                                 {
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -86,8 +85,7 @@ imageCache!.loadRemainingAnimations();
 this.setRunning(false);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
                         if(!progressCanvas!.inProgress)
@@ -112,6 +110,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
                                 }
                             ;
+
 public constructor (imageCache: ImageCache){
 
             super();

@@ -47,7 +47,8 @@ import { LongArrayIdentifierInterface } from '../../../../../../org/allbinary/th
 export class StoreAppClientInformation extends AbeClientInformation implements LongArrayIdentifierInterface {
         
 
-    private readonly longArrayIdentifier: number[]
+    private readonly longArrayIdentifier: number[];
+
 public constructor (name: string, version: string, specialName: string, shortName: string, longArrayIdentifier: number[]){
             super(name, version, specialName, shortName);
                     

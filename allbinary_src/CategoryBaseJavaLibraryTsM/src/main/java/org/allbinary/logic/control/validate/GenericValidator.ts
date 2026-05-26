@@ -48,6 +48,7 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
 
 export class GenericValidator extends ValidatorBase {
         
+
 public constructor (){
 
             super();

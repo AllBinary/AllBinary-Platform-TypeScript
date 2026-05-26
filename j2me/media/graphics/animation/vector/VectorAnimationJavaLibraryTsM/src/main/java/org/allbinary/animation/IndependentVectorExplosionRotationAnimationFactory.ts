@@ -62,11 +62,12 @@ export class IndependentVectorExplosionRotationAnimationFactory
 
     private framePoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
 
-    private vectorInfo: VectorInfo
+    private vectorInfo: VectorInfo;
 
-    private basicColor: BasicColor
+    private basicColor: BasicColor;
 
-    private vectorAnimationFactoryInterface: VectorAnimationFactoryInterface
+    private vectorAnimationFactoryInterface: VectorAnimationFactoryInterface;
+
 public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, vectorAnimationFactoryInterface: VectorAnimationFactoryInterface){
 
             super();
@@ -95,8 +96,7 @@ this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vector
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 
-    var frame: number = 0;
-;
+    var frame: number = 0;;
     
 
                         if(animationInterface != 
@@ -105,8 +105,7 @@ this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vector
                         
                                     {
                                     
-    var rotationAnimationInterface: IndexedAnimation = animationInterface as IndexedAnimation;
-;
+    var rotationAnimationInterface: IndexedAnimation = animationInterface as IndexedAnimation;;
     
 frame= rotationAnimationInterface!.getFrame();
     
@@ -114,8 +113,7 @@ frame= rotationAnimationInterface!.getFrame();
                                     }
                                 
 
-    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(this.framePoints[frame]!, 6, this.vectorExplosionGenerator!.ROTATION)!;
-;
+    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(this.framePoints[frame]!, 6, this.vectorExplosionGenerator!.ROTATION)!;;
     
 
 

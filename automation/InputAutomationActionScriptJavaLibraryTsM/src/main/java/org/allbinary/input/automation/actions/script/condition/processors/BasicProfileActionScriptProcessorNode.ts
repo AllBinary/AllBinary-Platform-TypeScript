@@ -54,14 +54,15 @@ export class BasicProfileActionScriptProcessorNode
             extends Object
          {
         
+
 public constructor (node: Node){
 
             super();
         
-    var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptProcessorData.NAME, node.getChildNodes())!;
-;
+    var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptProcessorData.NAME, node.getChildNodes())!;;
     
 }
+
 
 public constructor (){
 
@@ -73,8 +74,7 @@ public constructor (){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfileActionScriptProcessorData.NAME)!;
-;
+    var node: Node = document.createElement(GenericProfileActionScriptProcessorData.NAME)!;;
     
 
 

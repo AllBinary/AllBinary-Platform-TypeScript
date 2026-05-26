@@ -75,13 +75,13 @@ export class DirectionFactory
 
     public readonly UP: Direction = new Direction(CommonPhoneStrings.getInstance()!.UP, "NORTH", 3, 0);
 
-    public readonly UP_LEFT: Direction
+    public readonly UP_LEFT: Direction;
 
-    public readonly UP_RIGHT: Direction
+    public readonly UP_RIGHT: Direction;
 
-    public readonly DOWN_LEFT: Direction
+    public readonly DOWN_LEFT: Direction;
 
-    public readonly DOWN_RIGHT: Direction
+    public readonly DOWN_RIGHT: Direction;
 
     public readonly NOT_BORDERED_WITH: Direction = new Direction("NOT_BORDERED_WITH", "NOT_BORDERED_WITH", 8, 0);
 
@@ -92,16 +92,15 @@ export class DirectionFactory
     public readonly BOTTOM: Direction = new Direction("BOTTOM", "BOTTOM", 11, 0);
 
     public readonly ALL_DIRECTION: Direction = new Direction("ALL_DIRECTION", "ALL_DIRECTION", 12, 0);
+
 private constructor (){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.UP_LEFT= new Direction("UP LEFT", stringBuffer!.append(this.UP.getOtherName())!.append(commonSeps!.SPACE)!.append(this.LEFT.getOtherName())!.toString(), 4, 0);
     

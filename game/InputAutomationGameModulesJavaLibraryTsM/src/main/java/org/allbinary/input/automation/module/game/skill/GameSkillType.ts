@@ -58,7 +58,8 @@ export class GameSkillType
 
     private readonly SPELL_GAME_SKILL_TYPE: string = "SpellGameSkillType: ";
 
-    private name: string
+    private name: string;
+
 private constructor (name: string){
 
             super();

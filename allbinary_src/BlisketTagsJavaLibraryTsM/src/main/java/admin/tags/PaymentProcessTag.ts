@@ -63,6 +63,7 @@ export class PaymentProcessTag extends StoreValidationTransformTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -75,22 +76,18 @@ public constructor (){
 
         try {
             
-    var anyType: any = new PaymentProcessHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new PaymentProcessHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 

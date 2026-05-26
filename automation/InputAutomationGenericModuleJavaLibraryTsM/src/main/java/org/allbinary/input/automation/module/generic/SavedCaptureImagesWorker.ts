@@ -86,17 +86,18 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 export class SavedCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 
-    private static index: number
+    private static index: number;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private running: boolean= false
+    private running: boolean= false;
 
-    private screenScavangerRobot: ScreenScavangerRobot
+    private screenScavangerRobot: ScreenScavangerRobot;
 
-    private savedCaptureGenericProfileDataWorkerType: SavedCaptureGenericProfileDataWorkerType
+    private savedCaptureGenericProfileDataWorkerType: SavedCaptureGenericProfileDataWorkerType;
+
 public constructor (savedCaptureGenericProfileDataWorkerType: SavedCaptureGenericProfileDataWorkerType){
 
             super();
@@ -141,8 +142,7 @@ this.running= running;
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 
         while(this.isRunning())
@@ -150,12 +150,10 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var frame: Long = new Long(index);
-;
+    var frame: Long = new Long(index);;
     
 
-    var filePathStringBuffer: StringMaker = new StringMaker();
-;
+    var filePathStringBuffer: StringMaker = new StringMaker();;
     
 filePathStringBuffer!.append(this.savedCaptureGenericProfileDataWorkerType!.getPath());
     
@@ -164,30 +162,26 @@ filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
 filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
 
-    var filePath: string = filePathStringBuffer!.toString()!;
-;
+    var filePath: string = filePathStringBuffer!.toString()!;;
     
 this.logUtil!.putF("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN);
     
 
-    var file: File = new File(filePath);
-;
+    var file: File = new File(filePath);;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var bufferedImage: BufferedImage = ImageIO.read(file)!;
-;
+    var bufferedImage: BufferedImage = ImageIO.read(file)!;;
     
 SavedCaptureImagesWorker.index++;
     
 CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCacheable(bufferedImage, frame));
     
 
-    var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
-;
+    var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);;
     
 this.fireEvent(capturedImageEvent);
     

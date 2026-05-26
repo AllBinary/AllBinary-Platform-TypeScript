@@ -57,6 +57,7 @@ export class GeographicMapCellPositionEvent extends AllBinaryEventObject {
         
 
     private geographicMapCellPosition: CellPosition = CellPositionFactory.getInstance()!.NONE;
+
 public constructor (anyType: any = {}, geographicMapCellPosition: CellPosition){
             super(anyType);
                     
@@ -92,8 +93,7 @@ this.geographicMapCellPosition= geographicMapCellPosition;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("CellPositionEvent: ");
     

@@ -70,11 +70,12 @@ export class CreateGameRunnable
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly demoGameMidlet: DemoGameMidlet
+    private readonly demoGameMidlet: DemoGameMidlet;
 
-    private readonly hashtable: Hashtable<any, any>
+    private readonly hashtable: Hashtable<any, any>;
 
-    private readonly startGameMidletEvent: DemoGameMidletEvent
+    private readonly startGameMidletEvent: DemoGameMidletEvent;
+
 public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable<any, any>){
 
             super();
@@ -93,8 +94,7 @@ this.startGameMidletEvent= new DemoGameMidletEvent(this, DemoGameMidletStateFact
             this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, progressCanvas);
     

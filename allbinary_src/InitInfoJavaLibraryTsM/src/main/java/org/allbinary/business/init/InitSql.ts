@@ -104,17 +104,17 @@ export class InitSql
 
     readonly UPDATE: string = "update";
 
-    private databaseConnectionInfoInterface: DbConnectionInfo
+    private databaseConnectionInfoInterface: DbConnectionInfo;
 
-    private userid: string
+    private userid: string;
 
-    private password: string
+    private password: string;
 
-    private tableName: string
+    private tableName: string;
 
-    private conn: Connection
+    private conn: Connection;
 
-    private useridAndPassword: boolean= false
+    private useridAndPassword: boolean= false;
 
     readonly SUCCESS_SQL_STATEMENT: string = "Success\nSQL Statement: ";
 
@@ -135,6 +135,7 @@ export class InitSql
     private readonly NO_RESULTS_IN_RESULT_SET: string = "No Results in ResultSet";
 
     private readonly INSERT_END: string = "')";
+
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
@@ -159,8 +160,7 @@ this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Creating Table: ");
     
@@ -202,8 +202,7 @@ this.executeSQLStatement(tableData);
 
     public dropTable(): boolean{
 
-    var sqlStatement: string = this.sqlStrings!.DROP_TABLE +this.tableName;
-;
+    var sqlStatement: string = this.sqlStrings!.DROP_TABLE +this.tableName;;
     
 
         try {
@@ -241,8 +240,7 @@ this.executeSQLStatement(tableData);
 
     public getRow(keysAndValues: HashMap<any, any>): HashMap<any, any>{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -255,37 +253,30 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
             
     var result: HashMap<any, any> = 
                 null
-            ;
-;
+            ;;
     
 
-    var set: Set = keysAndValues!.keySet()!;
-;
+    var set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;
-;
+    var keyArray: any[] = set.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var key: string = keyArray[i]! as string;
-;
+    var key: string = keyArray[i]! as string;;
     
 
-    var value: string = .toCharArray();
-;
+    var value: string = .toCharArray();;
     
 stringBuffer!.append(key);
     
@@ -307,8 +298,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -320,12 +310,10 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
                                     }
                                 
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
-;
+    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
         while(rset.next())
@@ -333,24 +321,20 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 result= new HashMap<any, any>();
     
 
-    var columnCount: number = resultSetMetaData!.getColumnCount()!;
-;
+    var columnCount: number = resultSetMetaData!.getColumnCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;
-index <= columnCount; index++)
+    var index: number = 1;index <= columnCount; index++)
         {
 
-    var columnName: string = resultSetMetaData!.getColumnName(index)!;
-;
+    var columnName: string = resultSetMetaData!.getColumnName(index)!;;
     
 
-    var field: string = rset.getString(columnName)!;
-;
+    var field: string = rset.getString(columnName)!;;
     
 result.put(columnName, field);
     
@@ -415,8 +399,7 @@ result.put(columnName, field);
 
     public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.UPDATE);
     
@@ -427,25 +410,21 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
         try {
             
-    var columnArray: any[] = updatedKeyValuePairs!.keySet()!.()!;
-;
+    var columnArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
     
 
     var size: number = columnArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var columnName: string = columnArray[i]!.toString()!;
-;
+    var columnName: string = columnArray[i]!.toString()!;;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -454,8 +433,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;
-;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;;
     
 
                         if(columnValue == 
@@ -498,8 +476,7 @@ stringBuffer!.append(this.getValue(value));
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -532,8 +509,7 @@ this.executeSQLStatement(sqlStatement);
 
     public insert(values: Vector){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.INSERT_INTO);
     
@@ -544,20 +520,17 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 
         try {
             
-    var size: number = values.length!;
-;
+    var size: number = values.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size -1; i++)
+    var i: number = 0;i < size -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i) as string)!;
-;
+    var value: string = this.getValue(values.get(i) as string)!;;
     
 stringBuffer!.append(value);
     
@@ -566,16 +539,14 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement() as string)!;
-;
+    var value: string = this.getValue(values.lastElement() as string)!;;
     
 stringBuffer!.append(value);
     
 stringBuffer!.append(this.INSERT_END);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -651,14 +622,12 @@ this.executeSQLStatement(sqlStatement);
                                     }
                                 
 
-    var stmt: Statement = this.conn.createStatement()!;
-;
+    var stmt: Statement = this.conn.createStatement()!;;
     
 stmt.execute(statement);
     
 
-    var rset: ResultSet = stmt.getResultSet()!;
-;
+    var rset: ResultSet = stmt.getResultSet()!;;
     
 stmt.close();
     
@@ -754,8 +723,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", 
             
         try {
             
-    var jdbcDriver: string = this.databaseConnectionInfoInterface!.getJdbcDriver()!;
-;
+    var jdbcDriver: string = this.databaseConnectionInfoInterface!.getJdbcDriver()!;;
     
 PreLogUtil.put(new StringMaker().append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!.constructor.name.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), this.INIT_SQL, "initialize()");
     

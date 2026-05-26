@@ -56,6 +56,7 @@ export class InitHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -81,8 +82,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to drop log table";
-;
+    var error: string = "Failed to drop log table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -118,8 +118,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to create new log table";
-;
+    var error: string = "Failed to create new log table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -145,8 +144,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = "Fix Me";
-;
+    var success: string = "Fix Me";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -168,8 +166,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to view Log table";
-;
+    var error: string = "Failed to view Log table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -195,12 +192,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = "Fix Me";
-;
+    var result: string = "Fix Me";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -222,8 +217,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -249,12 +243,10 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = "Fix Me";
-;
+    var result: string = "Fix Me";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -276,8 +268,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

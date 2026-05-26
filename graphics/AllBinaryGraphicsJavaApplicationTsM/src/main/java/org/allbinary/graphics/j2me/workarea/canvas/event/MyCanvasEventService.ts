@@ -89,16 +89,14 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
 
     public static fire(evt: MyCanvasEvent){
 
-    var listeners: any[] = listenerList!.getListenerList()!;
-;
+    var listeners: any[] = listenerList!.getListenerList()!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < listeners.length; )
+    var i: number = 0;i < listeners.length; )
         {
 
                         if(listeners[i] == listeners[i +1]!.constructor)
@@ -187,6 +185,7 @@ i < listeners.length; )
 }
 
 }
+
 
 private constructor (){
 

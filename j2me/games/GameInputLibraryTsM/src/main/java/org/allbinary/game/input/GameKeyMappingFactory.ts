@@ -62,12 +62,12 @@ export class GameKeyMappingFactory
 
 
     private intKeyToGameKey: GameKey[] = new Array(InputFactory.getInstance()!.MAX);
+
 private constructor (){
 
             super();
         
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-;
+    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 this.setGameKey(gameKeyFactory!.NONE);
     

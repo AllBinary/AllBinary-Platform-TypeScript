@@ -61,12 +61,10 @@ export class AccelerometerSensorFactory
             
     public static init(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-;
+    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
     
 
                         if(features.isFeature(sensorFeatureFactory!.ORIENTATION_SENSORS))

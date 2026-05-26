@@ -91,11 +91,12 @@ export class GenericProfiles
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashMap: HashMap<any, any>
+    private hashMap: HashMap<any, any>;
 
-    private profilesDefaultListModelHelper: DefaultListModelHelper
+    private profilesDefaultListModelHelper: DefaultListModelHelper;
 
-    private readonly fileName: string
+    private readonly fileName: string;
+
 public constructor (fileName: string){
 
             super();
@@ -110,32 +111,25 @@ this.hashMap= new HashMap<any, any>();
                         
                                     {
                                     
-    var bytes: number[] = new Array(100000);
-;
+    var bytes: number[] = new Array(100000);;
     
 
-    var idFile: FileInputStream = new FileInputStream(fileName);
-;
+    var idFile: FileInputStream = new FileInputStream(fileName);;
     
 
-    var length: number = idFile!.read(bytes)!;
-;
+    var length: number = idFile!.read(bytes)!;;
     
 
-    var data: string = String.fromCharCode(...bytes);
-;
+    var data: string = String.fromCharCode(...bytes);;
     
 
-    var endIndex: number = data.lastIndexOf('>')!;
-;
+    var endIndex: number = data.lastIndexOf('>')!;;
     
 
-    var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;
-;
+    var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(GenericProfilesData.NAME)!;
-;
+    var nodeList: NodeList = document.getElementsByTagName(GenericProfilesData.NAME)!;;
     
 this.logUtil!.putF("Number Of Profiles Specified: " +nodeList!.getLength(), this, "Contructor");
     
@@ -179,28 +173,24 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
             
     initProfiles(node: Node){
 
-    var nodeList: NodeList = node.getChildNodes()!;
-;
+    var nodeList: NodeList = node.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var profileNameNode: Node = nodeList!.item(index)!;
-;
+    var profileNameNode: Node = nodeList!.item(index)!;;
     
 
                         if(profileNameNode!.getNodeName()!.compareTo(GenericProfileData.NAME) == 0)
                         
                                     {
                                     
-    var genericProfile: GenericProfile = new GenericProfile(profileNameNode);
-;
+    var genericProfile: GenericProfile = new GenericProfile(profileNameNode);;
     
 this.hashMap!.put(genericProfile!.getName(), genericProfile);
     
@@ -228,8 +218,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
             
     public get(name: string): GenericProfile{
 
-    var genericProfile: GenericProfile = this.hashMap!.get(name) as GenericProfile;
-;
+    var genericProfile: GenericProfile = this.hashMap!.get(name) as GenericProfile;;
     
 
                         if(genericProfile == 
@@ -238,8 +227,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("No Generic Profile Named: " +name +" availability was: " +this.hashMap, this, commonStrings!.GET);
     
@@ -287,33 +275,27 @@ this.save();
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfilesData.NAME)!;
-;
+    var node: Node = document.createElement(GenericProfilesData.NAME)!;;
     
 
-    var set: Set = this.hashMap!.keys()!;
-;
+    var set: Set = this.hashMap!.keys()!;;
     
 
-    var nameArray: any[] = set.toArray()!;
-;
+    var nameArray: any[] = set.toArray()!;;
     
 
     var size: number = nameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as string) as GenericProfile;
-;
+    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as string) as GenericProfile;;
     
 node.appendChild(genericProfile!.toXmlNode(document));
     
@@ -332,12 +314,10 @@ node.appendChild(genericProfile!.toXmlNode(document));
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;
-;
+    var document: Document = DomDocumentHelper.create()!;;
     
 
-    var node: Node = this.toXmlNode(document)!;
-;
+    var node: Node = this.toXmlNode(document)!;;
     
 document.appendChild(node);
     
@@ -354,16 +334,13 @@ document.appendChild(node);
             
     public save(){
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-;
+    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);
-;
+    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 
-    var documentString: string = DomDocumentHelper.toString(this.toXmlDoc())!;
-;
+    var documentString: string = DomDocumentHelper.toString(this.toXmlDoc())!;;
     
 idOutData!.writeBytes(documentString);
     

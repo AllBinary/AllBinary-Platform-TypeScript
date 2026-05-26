@@ -78,11 +78,12 @@ export class BasicWorkFlow
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private validationDomNodeInterface: ValidationComponentInterface
+    private validationDomNodeInterface: ValidationComponentInterface;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
 
-    private pageContext: PageContext
+    private pageContext: PageContext;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();

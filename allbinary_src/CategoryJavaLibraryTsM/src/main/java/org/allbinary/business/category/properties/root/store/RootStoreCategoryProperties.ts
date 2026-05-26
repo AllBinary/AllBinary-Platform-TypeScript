@@ -92,17 +92,18 @@ export class RootStoreCategoryProperties
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private fileAbPath: AbPath
+    private fileAbPath: AbPath;
 
-    private abPath: AbPath
+    private abPath: AbPath;
 
-    private category: string
+    private category: string;
 
-    private isRealRoot: boolean
+    private isRealRoot: boolean;
 
-    webAppAbPath: AbPath
+    webAppAbPath: AbPath;
 
-    transformInfoInterface: TransformInfoInterface
+    transformInfoInterface: TransformInfoInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
@@ -119,6 +120,7 @@ this.initPath();
 this.log();
     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPath: AbPath){
 
@@ -146,14 +148,14 @@ this.log();
     
 }
 
+
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
 
             super();
         this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryPath: string = CategoryUtil.getNameFromNode(node)!;
-;
+    var categoryPath: string = CategoryUtil.getNameFromNode(node)!;;
     
 this.abPath= new AbPath(categoryPath);
     
@@ -176,14 +178,14 @@ this.log();
     
 }
 
+
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
         this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryPath: string = .toCharArray();
-;
+    var categoryPath: string = .toCharArray();;
     
 this.abPath= new AbPath(categoryPath);
     
@@ -211,20 +213,16 @@ this.log();
             
     initPath(){
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpInterface = this.transformInfoInterface as TransformInfoHttpInterface;
-;
+    var transformInfoHttpStoreInterface: TransformInfoHttpInterface = this.transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;;
     
 
-    var postPath: string = storeFrontInterface!.getCurrentHostNamePath() +storeFrontInterface!.getCategoryPath();
-;
+    var postPath: string = storeFrontInterface!.getCurrentHostNamePath() +storeFrontInterface!.getCategoryPath();;
     
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;
-;
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath);
     
@@ -345,8 +343,7 @@ this.category= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
     
@@ -361,8 +358,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
 
     public toVector(): Vector{
 
-    var categoryVector: Vector = new Vector();
-;
+    var categoryVector: Vector = new Vector();;
     
 categoryVector!.add(this.getValue());
     

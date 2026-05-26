@@ -187,28 +187,24 @@ LayerManagerLogging.removeFailed= true;
 this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 
-    var size: number = layerManager!.getSize()!;
-;
+    var size: number = layerManager!.getSize()!;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.stringBuilder!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(layerManager)))!.append(commonSeps!.COLON_SEP);
     
 this.stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP);
     
 
-    var allBinaryLayer: AllBinaryLayer
-;
+    var allBinaryLayer: AllBinaryLayer;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 allBinaryLayer= (layerManager!.getLayerAt(index) as AllBinaryLayer);
     

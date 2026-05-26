@@ -95,8 +95,7 @@ export class RTSLayerUtil
 
     createWeaponProperties(weaponProperties: WeaponProperties, currentLevel: number, lastLevel: number): WeaponProperties{
 
-    var reloadTime: number = weaponProperties!.getReloadTime()!;
-;
+    var reloadTime: number = weaponProperties!.getReloadTime()!;;
     
 
                         if(lastLevel > currentLevel)
@@ -117,8 +116,7 @@ export class RTSLayerUtil
                                     }
                                 
 
-    var newWeaponProperties: WeaponProperties = new WeaponProperties(reloadTime, weaponProperties!.getTargetingTime(), weaponProperties!.getSpeed()!.getUnscaled(), weaponProperties!.getDamage() /lastLevel *currentLevel, weaponProperties!.getDissipation());
-;
+    var newWeaponProperties: WeaponProperties = new WeaponProperties(reloadTime, weaponProperties!.getTargetingTime(), weaponProperties!.getSpeed()!.getUnscaled(), weaponProperties!.getDamage() /lastLevel *currentLevel, weaponProperties!.getDissipation());;
     
 
 
@@ -133,25 +131,21 @@ export class RTSLayerUtil
 rtsLayer!.setLevel(rtsLayer!.getLevel() -1);
     
 
-    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
-;
+    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;;
     
 
     var size: number = partInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var partInterface: BasicWeaponPart
-;
+    var partInterface: BasicWeaponPart;;
     
 
 
 
 
                         for (
-    var index: number = size;
---index >= 0; )
+    var index: number = size;--index >= 0; )
         {
 partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
@@ -168,25 +162,21 @@ rtsLayer!.select();
 rtsLayer!.setLevel(rtsLayer!.getLevel() +1);
     
 
-    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
-;
+    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;;
     
 
     var size: number = partInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var partInterface: BasicWeaponPart
-;
+    var partInterface: BasicWeaponPart;;
     
 
 
 
 
                         for (
-    var index: number = size;
---index >= 0; )
+    var index: number = size;--index >= 0; )
         {
 partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
@@ -213,8 +203,7 @@ rtsLayer!.select();
 
     getWeaponPropertiesCost(weaponProperties: WeaponProperties): number{
 
-    var cost: number = (weaponProperties!.getDamage() +weaponProperties!.getRange() +((this.MAX_RELOAD_TIME /weaponProperties!.getReloadTime())>>1));
-;
+    var cost: number = (weaponProperties!.getDamage() +weaponProperties!.getRange() +((this.MAX_RELOAD_TIME /weaponProperties!.getReloadTime())>>1));;
     
 cost= this.getCostExponential(cost);
     
@@ -229,33 +218,27 @@ cost= this.getCostExponential(cost);
 
     public getCost(rtsLayer: RTSLayer): number{
 
-    var total: number = 0;
-;
+    var total: number = 0;;
     
 
-    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
-;
+    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;;
     
 
     var size: number = partInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var partInterface: BasicWeaponPart
-;
+    var partInterface: BasicWeaponPart;;
     
 
-    var weaponProperties: WeaponProperties
-;
+    var weaponProperties: WeaponProperties;;
     
 
 
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
@@ -276,41 +259,33 @@ total += this.getWeaponPropertiesCost(weaponProperties);
 
     public getDowngradeCost(rtsLayer: RTSLayer): number{
 
-    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
-;
+    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;;
     
 
     var size: number = partInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var downgradeCost: number = 0;
-;
+    var downgradeCost: number = 0;;
     
 
-    var partInterface: BasicWeaponPart
-;
+    var partInterface: BasicWeaponPart;;
     
 
-    var weaponProperties: WeaponProperties
-;
+    var weaponProperties: WeaponProperties;;
     
 
-    var downgradeWeaponCost: number= 0
-;
+    var downgradeWeaponCost: number= 0;;
     
 
-    var currentWeaponCost: number= 0
-;
+    var currentWeaponCost: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
@@ -339,41 +314,33 @@ this.logUtil!.putF(new StringMaker().append("Total Cost: ")!.appendint(downgrade
 
     public getUpgradeCost(rtsLayer: RTSLayer): number{
 
-    var upgradeCost: number = 0;
-;
+    var upgradeCost: number = 0;;
     
 
-    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
-;
+    var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;;
     
 
     var size: number = partInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var partInterface: BasicWeaponPart
-;
+    var partInterface: BasicWeaponPart;;
     
 
-    var weaponProperties: WeaponProperties
-;
+    var weaponProperties: WeaponProperties;;
     
 
-    var upgradedWeaponCost: number= 0
-;
+    var upgradedWeaponCost: number= 0;;
     
 
-    var currentWeaponCost: number= 0
-;
+    var currentWeaponCost: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
@@ -402,16 +369,14 @@ this.logUtil!.putF(new StringMaker().append("Total Cost: ")!.appendint(upgradeCo
             
     public destroyAndClear(list: BasicArrayList){
 
-    var rtsLayer: RTSLayer
-;
+    var rtsLayer: RTSLayer;;
     
 
 
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 rtsLayer= list.get(index) as RTSLayer;
     
@@ -426,12 +391,10 @@ list.clear();
 
     public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
 
-    var layerManager: FakeLayerManager = new FakeLayerManager(GameInfo.NONE);
-;
+    var layerManager: FakeLayerManager = new FakeLayerManager(GameInfo.NONE);;
     
 layerManager!.setGeographicMapInterface(
                                                 [

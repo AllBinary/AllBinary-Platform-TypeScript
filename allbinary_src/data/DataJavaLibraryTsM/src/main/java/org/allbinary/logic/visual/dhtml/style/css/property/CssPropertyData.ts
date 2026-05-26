@@ -57,6 +57,7 @@ export class CssPropertyData
     
 }
 
+
 private constructor (){
 
             super();

@@ -79,6 +79,7 @@ export class PaymentProcessorInterfaceFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -92,24 +93,20 @@ private constructor (){
 
         try {
             
-    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceRequestFactory.getInstance()!.getInstance(transformInfoInterface)!;
-;
+    var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceRequestFactory.getInstance()!.getInstance(transformInfoInterface)!;;
     
 
-    var gatewayName: string = paymentTransactionInterface!.getOrderHistory()!.getPaymentMethod()!;
-;
+    var gatewayName: string = paymentTransactionInterface!.getOrderHistory()!.getPaymentMethod()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName))
                         
                                     {
                                     
-    var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;
-;
+    var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;;
     
 
-    var paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface = paymentType!.getPaymentProcessorInterfaceFactoryInterface()!;
-;
+    var paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface = paymentType!.getPaymentProcessorInterfaceFactoryInterface()!;;
     
 
 
@@ -134,8 +131,7 @@ private constructor (){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     

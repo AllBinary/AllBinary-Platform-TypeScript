@@ -45,6 +45,7 @@
         
 export class MoneyException extends Exception {
         
+
 public constructor (){
 
             super();

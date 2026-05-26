@@ -46,6 +46,7 @@ import { PaymentTransactionHelperFactory } from '../../admin/taghelpers/PaymentT
 
 export class PaymentTransactionTag extends TableTag {
         
+
 public constructor (){
 
             super();

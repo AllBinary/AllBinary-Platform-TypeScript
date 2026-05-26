@@ -62,8 +62,7 @@ export class GameSpeed
 
     public getSpeed(): number{
 
-    var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;
-;
+    var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;;
     
 
 
@@ -76,8 +75,7 @@ export class GameSpeed
 
     public getDelay(): number{
 
-    var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;
-;
+    var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;;
     
 
 

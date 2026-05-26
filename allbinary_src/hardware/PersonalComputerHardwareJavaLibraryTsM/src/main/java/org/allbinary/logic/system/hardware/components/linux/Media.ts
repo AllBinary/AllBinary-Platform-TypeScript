@@ -50,7 +50,8 @@ export class Media
          implements HardwareComponentInterface, MediaInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

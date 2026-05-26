@@ -71,23 +71,24 @@ export class StartIntermissionPaintable extends InitUpdatePaintable {
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
 
-    gameCanvas: AllBinaryGameCanvas
+    gameCanvas: AllBinaryGameCanvas;
 
-    readonly stringArray: string[]
+    readonly stringArray: string[];
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
-    private color: number
+    private color: number;
 
-    private readonly lineArray: number[]
+    private readonly lineArray: number[];
 
-    readonly fontSize: number
+    readonly fontSize: number;
 
-    readonly font: Font
+    readonly font: Font;
 
     private hasChanged: boolean = true;
 
-    public readonly lastWidth: number[]
+    public readonly lastWidth: number[];
+
 public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor, font: Font){
 
             super();
@@ -114,28 +115,24 @@ this.font= font;
 
     public paint(graphics: Graphics){
 
-    var existingFont: Font = graphics.getFont()!;
-;
+    var existingFont: Font = graphics.getFont()!;;
     
 this.fontDebugFactory!.setFont(this.font, graphics);
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.color);
     
 
-    var beginWidth: number= 0
-;
+    var beginWidth: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = this.stringArray!.length -1;
-index >= 0; index--)
+    var index: number = this.stringArray!.length -1;index >= 0; index--)
         {
 
                         if(this.hasChanged)
@@ -165,8 +162,7 @@ this.fontDebugFactory!.setFont(existingFont, graphics);
 
     public update(){
 
-    var level: number = this.gameCanvas!.getLayerManager()!.getGameInfo()!.getCurrentLevel()!;
-;
+    var level: number = this.gameCanvas!.getLayerManager()!.getGameInfo()!.getCurrentLevel()!;;
     
 this.stringArray[0]= new StringMaker().append(this.BEGIN_LEVEL)!.appendint(level)!.toString();
     
@@ -175,8 +171,7 @@ this.stringArray[0]= new StringMaker().append(this.BEGIN_LEVEL)!.appendint(level
 
 
                         for (
-    var index: number = this.stringArray!.length -1;
-index >= 1; index--)
+    var index: number = this.stringArray!.length -1;index >= 1; index--)
         {
 this.stringArray[index]= this.EMPTY_STRING;
     

@@ -53,9 +53,10 @@ export class CanvasDrawLineString
 
     public static readonly NULL_CANVAS_DRAW_LINE_STRING: CanvasDrawLineString = new CanvasDrawLineString(0, 0);
 
-    private x: number
+    private x: number;
 
-    private y: number
+    private y: number;
+
 public constructor (x: number, y: number){
 
             super();
@@ -70,8 +71,7 @@ this.y= y;
 
     public paint(graphics: Graphics, string: string, line: number){
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 this.drawStringUtil!.drawCenterString(graphics, string, 0, string.length, this.x, this.y +(line *myFont!.DEFAULT_CHAR_HEIGHT));
     

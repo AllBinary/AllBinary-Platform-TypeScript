@@ -62,11 +62,12 @@ export class GameInput
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly gameKeyEventList: BasicArrayList
+    private readonly gameKeyEventList: BasicArrayList;
 
-    private readonly removalGameKeyEventList: BasicArrayList
+    private readonly removalGameKeyEventList: BasicArrayList;
 
-    readonly isRemoveDuplicateKeyPresses: boolean
+    readonly isRemoveDuplicateKeyPresses: boolean;
+
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList){
 
             super();
@@ -142,20 +143,17 @@ this.gameKeyEventList!.clear();
 
     public removeNonAIInputGameKeyEvents(){
 
-    var list: BasicArrayList = this.gameKeyEventList;
-;
+    var list: BasicArrayList = this.gameKeyEventList;;
     
 
-    var gameKeyEvent: GameKeyEvent
-;
+    var gameKeyEvent: GameKeyEvent;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;
---index >= 0; )
+    var index: number = list.size()!;--index >= 0; )
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
@@ -176,36 +174,30 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
 
     public update(){
 
-    var removeList: BasicArrayList = this.removalGameKeyEventList;
-;
+    var removeList: BasicArrayList = this.removalGameKeyEventList;;
     
 
-    var list: BasicArrayList = this.gameKeyEventList;
-;
+    var list: BasicArrayList = this.gameKeyEventList;;
     
 
-    var size: number = removeList!.size()!;
-;
+    var size: number = removeList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = removeList!.objectArray[index]!;
-;
+    var anyType: any = removeList!.objectArray[index]!;;
     
 
 
 
 
                         for (
-    var index2: number = list.size()!;
---index2 >= 0; )
+    var index2: number = list.size()!;--index2 >= 0; )
         {
 
                         if(list.objectArray[index2] == anyType)

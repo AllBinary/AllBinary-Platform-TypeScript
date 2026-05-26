@@ -54,14 +54,14 @@ export class AcceptableResponse
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 protected constructor (candidate: string, tagName: string, index: number){
 
             super();
         this.logUtil!.putF(tagName, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;
-;
+    var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;;
     
 acceptableResponseUtil!.candidateVector!.add(index, candidate);
     

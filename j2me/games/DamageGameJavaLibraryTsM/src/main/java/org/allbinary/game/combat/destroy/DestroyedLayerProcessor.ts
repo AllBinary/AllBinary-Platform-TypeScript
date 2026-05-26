@@ -77,6 +77,7 @@ DestroyedLayerProcessor.DESTROYED_LAYER_PROCESSOR= new DestroyedLayerProcessor()
     
 }
 
+
 private constructor (){
 
             super();
@@ -87,40 +88,32 @@ private constructor (){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var list: BasicArrayList = this.getList()!;
-;
+    var list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var destroyedEventHandler: DestroyedEventHandler = DestroyedEventHandler.getInstance()!;
-;
+    var destroyedEventHandler: DestroyedEventHandler = DestroyedEventHandler.getInstance()!;;
     
 
-    var destroyEventCircularStaticPool: DestroyEventCircularStaticPool = DestroyEventCircularStaticPool.getInstance()!;
-;
+    var destroyEventCircularStaticPool: DestroyEventCircularStaticPool = DestroyEventCircularStaticPool.getInstance()!;;
     
 
-    var destroyedEvent: DestroyedEvent
-;
+    var destroyedEvent: DestroyedEvent;;
     
 
-    var layerInterface: AllBinaryLayer
-;
+    var layerInterface: AllBinaryLayer;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var layerInterfaceCanBeNull: any = list.objectArray[index];
-;
+    var layerInterfaceCanBeNull: any = list.objectArray[index];;
     
 
                         if(layerInterfaceCanBeNull != 

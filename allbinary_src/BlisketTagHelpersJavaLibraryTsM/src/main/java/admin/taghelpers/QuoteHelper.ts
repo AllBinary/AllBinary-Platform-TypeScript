@@ -107,17 +107,17 @@ export class QuoteHelper extends BasicTable {
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private readonly weblisketSession: WeblisketSession
+    private readonly weblisketSession: WeblisketSession;
 
-    private readonly storeFrontInterface: StoreFrontInterface
+    private readonly storeFrontInterface: StoreFrontInterface;
 
-    private readonly portion: Portion
+    private readonly portion: Portion;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -147,16 +147,13 @@ this.portion= new Portion(hashMap);
             
     emailUser(quoteRequest: QuoteRequest){
 
-    var user: UserInterface = UserEntityFactory.getInstance()!.getUser(quoteRequest!.getUserName())!;
-;
+    var user: UserInterface = UserEntityFactory.getInstance()!.getUser(quoteRequest!.getUserName())!;;
     
 
-    var userEmailSubject: string = "Quote Request Receipt";
-;
+    var userEmailSubject: string = "Quote Request Receipt";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("This is just a verification email. ");
     
@@ -165,20 +162,16 @@ stringBuffer!.append("We usually respond to quote request within 24 hours.");
 stringBuffer!.append("\n\nThank You For Your Business.");
     
 
-    var userEmailTextBody: string = stringBuffer!.toString()!;
-;
+    var userEmailTextBody: string = stringBuffer!.toString()!;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;
-;
+    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-;
+    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST, user)!;
-;
+    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST, user)!;;
     
 userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo);
     
@@ -189,12 +182,10 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, ema
             
     emailAdmins(quoteRequest: QuoteRequest){
 
-    var adminEmailSubject: string = "Quote Request";
-;
+    var adminEmailSubject: string = "Quote Request";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("\nUserName: ");
     
@@ -221,24 +212,19 @@ stringBuffer!.append("\nComments: \n");
 stringBuffer!.append(quoteRequest!.getComments());
     
 
-    var adminEmailTextBody: string = stringBuffer!.toString()!;
-;
+    var adminEmailTextBody: string = stringBuffer!.toString()!;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-;
+    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-;
+    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var storeAdminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST)!;
-;
+    var storeAdminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST)!;;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.QUOTEREQUEST, this.abeClientInformation, this.storeFrontInterface)!;
-;
+    var adminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.QUOTEREQUEST, this.abeClientInformation, this.storeFrontInterface)!;;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo);
     
@@ -253,36 +239,29 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 
         try {
             
-    var quoteRequestEntity: QuoteRequestEntity = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!;
-;
+    var quoteRequestEntity: QuoteRequestEntity = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!;;
     
 
-    var userName: string = this.weblisketSession!.getUserName()!;
-;
+    var userName: string = this.weblisketSession!.getUserName()!;;
     
 
-    var vector: Vector = quoteRequestEntity!.getIds(userName)!;
-;
+    var vector: Vector = quoteRequestEntity!.getIds(userName)!;;
     
 
-    var id: number = 0;
-;
+    var id: number = 0;;
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var nextId: number = (get as Integer).intValue()!;
-;
+    var nextId: number = (get as Integer).intValue()!;;
     
 
                         if(id < nextId)
@@ -296,8 +275,7 @@ index < size; index++)
 }
 
 
-    var quoteRequest: QuoteRequest = quoteRequestEntity!.get(userName, id)!;
-;
+    var quoteRequest: QuoteRequest = quoteRequestEntity!.get(userName, id)!;;
     
 
                         if(quoteRequest != 
@@ -355,8 +333,7 @@ this.emailAdmins(quoteRequest);
 
         try {
             
-    var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.dropTable()!;
-;
+    var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -378,8 +355,7 @@ this.emailAdmins(quoteRequest);
 } catch(e) 
             {
 
-    var error: string = "Failed to drop QuoteRequest table";
-;
+    var error: string = "Failed to drop QuoteRequest table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -405,8 +381,7 @@ this.emailAdmins(quoteRequest);
 
         try {
             
-    var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable()!;
-;
+    var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -428,8 +403,7 @@ this.emailAdmins(quoteRequest);
 } catch(e) 
             {
 
-    var error: string = "Failed to create new QuoteRequest table";
-;
+    var error: string = "Failed to create new QuoteRequest table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -455,12 +429,10 @@ this.emailAdmins(quoteRequest);
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance(), portion)!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance(), portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -482,8 +454,7 @@ this.emailAdmins(quoteRequest);
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -509,12 +480,10 @@ this.emailAdmins(quoteRequest);
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance())!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -536,8 +505,7 @@ this.emailAdmins(quoteRequest);
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

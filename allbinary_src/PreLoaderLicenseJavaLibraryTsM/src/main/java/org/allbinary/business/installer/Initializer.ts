@@ -85,114 +85,107 @@ export class Initializer
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private userJdbcDriver: string
+    private userJdbcDriver: string;
 
-    private userName: string
+    private userName: string;
 
-    private userUserName: string
+    private userUserName: string;
 
-    private userPassword: string
+    private userPassword: string;
 
-    private userSchema: string
+    private userSchema: string;
 
-    private userServer: string
+    private userServer: string;
 
-    private userPort: string
+    private userPort: string;
 
-    private historyJdbcDriver: string
+    private historyJdbcDriver: string;
 
-    private historyName: string
+    private historyName: string;
 
-    private historyUserName: string
+    private historyUserName: string;
 
-    private historyPassword: string
+    private historyPassword: string;
 
-    private historySchema: string
+    private historySchema: string;
 
-    private historyServer: string
+    private historyServer: string;
 
-    private historyPort: string
+    private historyPort: string;
 
-    private logJdbcDriver: string
+    private logJdbcDriver: string;
 
-    private logName: string
+    private logName: string;
 
-    private logUserName: string
+    private logUserName: string;
 
-    private logPassword: string
+    private logPassword: string;
 
-    private logSchema: string
+    private logSchema: string;
 
-    private logServer: string
+    private logServer: string;
 
-    private logPort: string
+    private logPort: string;
 
-    private inventoryJdbcDriver: string
+    private inventoryJdbcDriver: string;
 
-    private inventoryName: string
+    private inventoryName: string;
 
-    private inventoryUserName: string
+    private inventoryUserName: string;
 
-    private inventoryPassword: string
+    private inventoryPassword: string;
 
-    private inventorySchema: string
+    private inventorySchema: string;
 
-    private inventoryServer: string
+    private inventoryServer: string;
 
-    private inventoryPort: string
+    private inventoryPort: string;
 
-    private staticPagesJdbcDriver: string
+    private staticPagesJdbcDriver: string;
 
-    private staticPagesName: string
+    private staticPagesName: string;
 
-    private staticPagesUserName: string
+    private staticPagesUserName: string;
 
-    private staticPagesPassword: string
+    private staticPagesPassword: string;
 
-    private staticPagesSchema: string
+    private staticPagesSchema: string;
 
-    private staticPagesServer: string
+    private staticPagesServer: string;
 
-    private staticPagesPort: string
+    private staticPagesPort: string;
+
 public constructor (map: Map){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var keys: Set = map.keySet()!;
-;
+    var keys: Set = map.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;
-;
+    var keyArray: any[] = keys.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: string = keyArray[index]! as string;
-;
+    var key: string = keyArray[index]! as string;;
     
 
-    var values: string[] = map.get(key) as string[];
-;
+    var values: string[] = map.get(key) as string[];;
     
 hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     
@@ -214,6 +207,7 @@ this.getFormData(hashMap);
     
 }
 
+
 public constructor (initHashMap: HashMap<any, any>){
 
             super();
@@ -226,8 +220,7 @@ public constructor (initHashMap: HashMap<any, any>){
 
         try {
             
-    var initializerData: InitializerData = InitializerData.getInstance()!;
-;
+    var initializerData: InitializerData = InitializerData.getInstance()!;;
     
 this.userJdbcDriver= hashMap!.get(initializerData!.CUSTOMERJDBCDRIVER) as string;
     
@@ -330,8 +323,7 @@ this.logUtil!.put("Unable to get form data", this, "getFormData()", e);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     
@@ -351,8 +343,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 
     public isValid(): boolean{
 
-    var isValid: boolean = true;
-;
+    var isValid: boolean = true;;
     
 
                         if(!this.isJdbcDriverValid(this.userJdbcDriver))
@@ -364,8 +355,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.userName, Initializer.MIN, Initializer.MAXDB))
@@ -549,8 +539,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 
     getJdbcDriverValidationInfo(jdbcDriver: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("The JDBC driver (");
     
@@ -569,8 +558,7 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
 
     getJdbcDriverSolutionInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>");
     
@@ -601,12 +589,10 @@ stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>");
 
     public getInvalidInfo(): string{
 
-    var isJdbcDriversValid: boolean = true;
-;
+    var isJdbcDriversValid: boolean = true;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.isJdbcDriverValid(this.userJdbcDriver))
@@ -620,8 +606,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver));
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.userName, Initializer.MIN, Initializer.MAXDB))
@@ -826,8 +811,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
 this.logUtil!.putF("Creating DB connection files", this, "set()");
     
 
-    var userDbInitInfo: UserDbInitInfo = new UserDbInitInfo(false);
-;
+    var userDbInitInfo: UserDbInitInfo = new UserDbInitInfo(false);;
     
 userDbInitInfo!.setJdbcDriver(this.userJdbcDriver);
     
@@ -848,8 +832,7 @@ userDbInitInfo!.setHasRead(true);
 userDbInitInfo!.write();
     
 
-    var historyDbInitInfo: HistoryDbInitInfo = new HistoryDbInitInfo(false);
-;
+    var historyDbInitInfo: HistoryDbInitInfo = new HistoryDbInitInfo(false);;
     
 historyDbInitInfo!.setJdbcDriver(this.historyJdbcDriver);
     
@@ -870,8 +853,7 @@ historyDbInitInfo!.setHasRead(true);
 historyDbInitInfo!.write();
     
 
-    var logDbInitInfo: LogDbInitInfo = new LogDbInitInfo(false);
-;
+    var logDbInitInfo: LogDbInitInfo = new LogDbInitInfo(false);;
     
 logDbInitInfo!.setJdbcDriver(this.logJdbcDriver);
     
@@ -892,8 +874,7 @@ logDbInitInfo!.setHasRead(true);
 logDbInitInfo!.write();
     
 
-    var staticPagesDbInitInfo: StaticPagesDbInitInfo = new StaticPagesDbInitInfo(false);
-;
+    var staticPagesDbInitInfo: StaticPagesDbInitInfo = new StaticPagesDbInitInfo(false);;
     
 staticPagesDbInitInfo!.setJdbcDriver(this.staticPagesJdbcDriver);
     
@@ -914,8 +895,7 @@ staticPagesDbInitInfo!.setHasRead(true);
 staticPagesDbInitInfo!.write();
     
 
-    var inventoryDbInitInfo: InventoryDbInitInfo = new InventoryDbInitInfo(false);
-;
+    var inventoryDbInitInfo: InventoryDbInitInfo = new InventoryDbInitInfo(false);;
     
 inventoryDbInitInfo!.setJdbcDriver(this.inventoryJdbcDriver);
     

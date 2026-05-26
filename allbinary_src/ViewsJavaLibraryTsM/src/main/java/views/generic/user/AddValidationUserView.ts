@@ -68,7 +68,8 @@ export class AddValidationUserView extends HttpStoreComponentView implements Val
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    user: UserInterface
+    user: UserInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -154,8 +155,7 @@ this.user= NewUserFactory.getInstance(transformInfoInterface);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(UserEntityFactory.getInstance()!.getUser(this.user.getUserName()) != 

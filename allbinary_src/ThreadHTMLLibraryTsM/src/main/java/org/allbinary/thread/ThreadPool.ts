@@ -76,13 +76,14 @@ export class ThreadPool
 
     readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
 
-    private isAlive: boolean= false
+    private isAlive: boolean= false;
 
     private taskQueue: BasicArrayList = new BasicArrayListD();
 
-    private numThreads: number= 0
+    private numThreads: number= 0;
 
-    private runningTask: boolean= false
+    private runningTask: boolean= false;
+
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
@@ -105,8 +106,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
                                 
                         else {
                             
-    var runnable: Runnable = this.getTask()!;
-;
+    var runnable: Runnable = this.getTask()!;;
     
 
                         if(runnable == this.NULL_RUNNABLE)
@@ -144,8 +144,7 @@ this.currentPriorityRunnable!.run();
             
     public runATask(){
 
-    var runnable: Runnable = this.getTask()!;
-;
+    var runnable: Runnable = this.getTask()!;;
     
 
                         if(runnable != 
@@ -194,24 +193,20 @@ this.taskQueue= new BasicArrayListD();
                         
                                     {
                                     
-    var size: number = this.taskQueue!.size()!;
-;
+    var size: number = this.taskQueue!.size()!;;
     
 
-    var runnable: PriorityRunnable
-;
+    var runnable: PriorityRunnable;;
     
 
-    var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
-;
+    var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 runnable= this.taskQueue!.get(index) as PriorityRunnable;
     
@@ -240,8 +235,7 @@ break;
                                 
                         else {
                             
-    var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;
-;
+    var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;;
     
 this.taskQueue!.addAt(index, task);
     

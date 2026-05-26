@@ -63,7 +63,8 @@ import { Document } from '../../../../../../org/w3c/dom/Document.js';
 export class TransformInfoBasic extends AbContext implements TransformInfoHttpInterface {
         
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
+
 public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     

@@ -98,6 +98,7 @@ export class AbSqlRow extends AbSqlColumn {
     private readonly COLUMN_NAME_LABEL: string = "columnName: ";
 
     private readonly INSERT_END: string = "')";
+
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
                     
@@ -138,8 +139,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
     public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.UPDATE);
     
@@ -150,25 +150,21 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
         try {
             
-    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;
-;
+    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var columnName: string = keyArray[i]!.toString()!;
-;
+    var columnName: string = keyArray[i]!.toString()!;;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -177,8 +173,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;
-;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;;
     
 
                         if(columnValue == 
@@ -223,8 +218,7 @@ stringBuffer!.append(this.getValue(value));
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -260,8 +254,7 @@ this.executeSQLStatement(sqlStatement);
 
     public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.UPDATE);
     
@@ -272,25 +265,21 @@ stringBuffer!.append(this.sqlStrings!.SET);
 
         try {
             
-    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;
-;
+    var keyArray: any[] = updatedKeyValuePairs!.keySet()!.()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var columnName: string = keyArray[i]!.toString()!;
-;
+    var columnName: string = keyArray[i]!.toString()!;;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -308,8 +297,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;
-;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;;
     
 
                         if(columnValue == 
@@ -346,33 +334,27 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-    var set: Set = whereKeyValuePairs!.keySet()!;
-;
+    var set: Set = whereKeyValuePairs!.keySet()!;;
     
 
-    var keyArray2: any[] = set.toArray()!;
-;
+    var keyArray2: any[] = set.toArray()!;;
     
 
     var size2: number = keyArray2!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size2; i++)
+    var i: number = 0;i < size2; i++)
         {
 
-    var key: string = keyArray2[i]! as string;
-;
+    var key: string = keyArray2[i]! as string;;
     
 
-    var value: string = whereKeyValuePairs!.get(key) as string;
-;
+    var value: string = whereKeyValuePairs!.get(key) as string;;
     
 
 
@@ -400,8 +382,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -440,8 +421,7 @@ this.executeSQLStatement(sqlStatement);
 
     public deleteWhere(key: string, value: string){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.DELETE);
     
@@ -462,8 +442,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 
         try {
             
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -497,8 +476,7 @@ this.executeSQLStatement(sqlStatement);
 
     public deleteWhere(keysAndValues: HashMap<any, any>){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.DELETE);
     
@@ -511,33 +489,27 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
         try {
             
-    var set: Set = keysAndValues!.keySet()!;
-;
+    var set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;
-;
+    var keyArray: any[] = set.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var key: string = keyArray[i]! as string;
-;
+    var key: string = keyArray[i]! as string;;
     
 
-    var value: string = .toCharArray();
-;
+    var value: string = .toCharArray();;
     
 stringBuffer!.append(key);
     
@@ -559,8 +531,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -593,8 +564,7 @@ this.executeSQLStatement(sqlStatement);
 
     public insert(values: Vector){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.INSERT_INTO);
     
@@ -609,12 +579,10 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 
 
                         for (
-    var i: number = 0;
-i < values.length -1; i++)
+    var i: number = 0;i < values.length -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i) as string)!;
-;
+    var value: string = this.getValue(values.get(i) as string)!;;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).all(value);
     
@@ -625,8 +593,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement() as string)!;
-;
+    var value: string = this.getValue(values.lastElement() as string)!;;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).all(value);
     
@@ -635,8 +602,7 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.INSERT_END);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 this.executeSQLStatement(sqlStatement);
     
@@ -669,8 +635,7 @@ this.executeSQLStatement(sqlStatement);
 
     public getRow(keysAndValues: HashMap<any, any>): HashMap<any, any>{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -683,37 +648,30 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
             
     var result: HashMap<any, any> = 
                 null
-            ;
-;
+            ;;
     
 
-    var set: Set = keysAndValues!.keySet()!;
-;
+    var set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;
-;
+    var keyArray: any[] = set.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: string = keyArray[index]! as string;
-;
+    var key: string = keyArray[index]! as string;;
     
 
-    var value: string = .toCharArray();
-;
+    var value: string = .toCharArray();;
     
 stringBuffer!.append(key);
     
@@ -735,8 +693,7 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -748,12 +705,10 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
                                     }
                                 
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
-;
+    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
         while(rset.next())
@@ -761,24 +716,20 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 result= new HashMap<any, any>();
     
 
-    var columnCount: number = resultSetMetaData!.getColumnCount()!;
-;
+    var columnCount: number = resultSetMetaData!.getColumnCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;
-index <= columnCount; index++)
+    var index: number = 1;index <= columnCount; index++)
         {
 
-    var columnName: string = resultSetMetaData!.getColumnName(index)!;
-;
+    var columnName: string = resultSetMetaData!.getColumnName(index)!;;
     
 
-    var field: string = rset.getString(columnName)!;
-;
+    var field: string = rset.getString(columnName)!;;
     
 result.put(columnName, field);
     
@@ -852,8 +803,7 @@ result.put(columnName, field);
 
     public getRows(keysAndValues: HashMap<any, any>, more: string): Vector{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -864,37 +814,30 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
         try {
             
-    var rows: Vector = new Vector();
-;
+    var rows: Vector = new Vector();;
     
 
-    var set: Set = keysAndValues!.keySet()!;
-;
+    var set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;
-;
+    var keyArray: any[] = set.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: string = keyArray[index]! as string;
-;
+    var key: string = keyArray[index]! as string;;
     
 
-    var value: string = .toCharArray();
-;
+    var value: string = .toCharArray();;
     
 stringBuffer!.append(key);
     
@@ -927,51 +870,42 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 stringBuffer!.append(more);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
-;
+    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
         while(rset.next())
         {
 
-    var result: HashMap<any, any> = new HashMap<any, any>();
-;
+    var result: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var columnCount: number = resultSetMetaData!.getColumnCount()!;
-;
+    var columnCount: number = resultSetMetaData!.getColumnCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;
-index <= columnCount; index++)
+    var index: number = 1;index <= columnCount; index++)
         {
 
-    var columnName: string = resultSetMetaData!.getColumnName(index)!;
-;
+    var columnName: string = resultSetMetaData!.getColumnName(index)!;;
     
 
-    var field: string = rset.getString(columnName)!;
-;
+    var field: string = rset.getString(columnName)!;;
     
 result.put(columnName, field);
     
 }
 
 
-    var resultAsString: string = result.toString()!;
-;
+    var resultAsString: string = result.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -1018,8 +952,7 @@ rows.add(result);
 
     public getAllRows(): Vector{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -1037,47 +970,38 @@ stringBuffer!.append(this.getTableName());
                                     }
                                 
 
-    var rows: Vector = new Vector();
-;
+    var rows: Vector = new Vector();;
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
-;
+    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
         while(rset.next())
         {
 
-    var result: HashMap<any, any> = new HashMap<any, any>();
-;
+    var result: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var columnCount: number = resultSetMetaData!.getColumnCount()!;
-;
+    var columnCount: number = resultSetMetaData!.getColumnCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 1;
-index <= columnCount; index++)
+    var index: number = 1;index <= columnCount; index++)
         {
 
-    var columnName: string = resultSetMetaData!.getColumnName(index)!;
-;
+    var columnName: string = resultSetMetaData!.getColumnName(index)!;;
     
 
-    var field: string = rset.getString(columnName)!;
-;
+    var field: string = rset.getString(columnName)!;;
     
 result.put(columnName, field);
     
@@ -1128,8 +1052,7 @@ rows.add(result);
 
     public getRowsWhereBetween(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): Vector{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -1138,39 +1061,32 @@ stringBuffer!.append(this.getTableName());
 
         try {
             
-    var rows: Vector = new Vector();
-;
+    var rows: Vector = new Vector();;
     
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
-    var set: Set = whereKeyValuePairs!.keySet()!;
-;
+    var set: Set = whereKeyValuePairs!.keySet()!;;
     
 
-    var key: string
-;
+    var key: string;;
     
 
-    var value: string
-;
+    var value: string;;
     
 
-    var keyArray: any[] = set.toArray()!;
-;
+    var keyArray: any[] = set.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 key= keyArray[index]! as string;
     
@@ -1207,8 +1123,7 @@ stringBuffer!.append(largest);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -1220,32 +1135,25 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
                                     }
                                 
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
-;
+    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
-    var result: HashMap<any, any>
-;
+    var result: HashMap<any, any>;;
     
 
-    var columnNames: Vector
-;
+    var columnNames: Vector;;
     
 
-    var columnCount: number= 0
-;
+    var columnCount: number= 0;;
     
 
-    var columnName: string
-;
+    var columnName: string;;
     
 
-    var field: string
-;
+    var field: string;;
     
 
         while(rset.next())
@@ -1261,8 +1169,7 @@ columnCount= resultSetMetaData!.getColumnCount();
 
 
                         for (
-    var index: number = 1;
-index <= columnCount; index++)
+    var index: number = 1;index <= columnCount; index++)
         {
 columnName= resultSetMetaData!.getColumnName(index);
     
@@ -1317,8 +1224,7 @@ rows.add(result);
 
     public getRowsWhereBetween(betweenColumn: string, smallest: string, largest: string): Vector{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT_ALL_FROM);
     
@@ -1327,8 +1233,7 @@ stringBuffer!.append(this.getTableName());
 
         try {
             
-    var rows: Vector = new Vector();
-;
+    var rows: Vector = new Vector();;
     
 stringBuffer!.append(this.sqlStrings!.WHERE);
     
@@ -1351,8 +1256,7 @@ stringBuffer!.append(largest);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -1364,32 +1268,25 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
                                     }
                                 
 
-    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = this.executeSQLStatement(sqlStatement)!;;
     
 
-    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;
-;
+    var resultSetMetaData: ResultSetMetaData = rset.getMetaData()!;;
     
 
-    var columnName: string
-;
+    var columnName: string;;
     
 
-    var field: string
-;
+    var field: string;;
     
 
-    var result: HashMap<any, any>
-;
+    var result: HashMap<any, any>;;
     
 
-    var columnNames: Vector
-;
+    var columnNames: Vector;;
     
 
-    var columnCount: number= 0
-;
+    var columnCount: number= 0;;
     
 
         while(rset.next())
@@ -1405,8 +1302,7 @@ columnCount= resultSetMetaData!.getColumnCount();
 
 
                         for (
-    var index: number = 1;
-index <= columnCount; index++)
+    var index: number = 1;index <= columnCount; index++)
         {
 columnName= resultSetMetaData!.getColumnName(index);
     

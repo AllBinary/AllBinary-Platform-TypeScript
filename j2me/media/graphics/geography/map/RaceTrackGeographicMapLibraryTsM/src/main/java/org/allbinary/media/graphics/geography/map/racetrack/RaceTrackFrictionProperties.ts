@@ -48,9 +48,10 @@ export class RaceTrackFrictionProperties
          {
         
 
-    private readonly ROAD_FRICTION_NOMINATOR: number
+    private readonly ROAD_FRICTION_NOMINATOR: number;
 
-    private readonly GROUND_FRICTION_NOMINATOR: number
+    private readonly GROUND_FRICTION_NOMINATOR: number;
+
 public constructor (roadFriction: number, groundFriction: number){
 
             super();

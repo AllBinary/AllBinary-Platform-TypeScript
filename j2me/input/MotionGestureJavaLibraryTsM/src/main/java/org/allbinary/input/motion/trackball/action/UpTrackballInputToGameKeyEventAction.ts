@@ -61,6 +61,7 @@ export class UpTrackballInputToGameKeyEventAction extends GameKeyCompleteMotionG
     
 }
 
+
 private constructor (){
             super("Up Action", TrackballMotionGestureFactory.getInstance()!.UP, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

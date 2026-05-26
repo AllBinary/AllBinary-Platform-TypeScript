@@ -61,13 +61,15 @@ export class TimeCreatedView
          implements DomNodeInterface {
         
 
-    private timeCreated: TimeCreated
+    private timeCreated: TimeCreated;
+
 public constructor (timeCreated: TimeCreated){
 
             super();
         this.setTimeCreated(timeCreated);
     
 }
+
 
 public constructor (node: Node){
 

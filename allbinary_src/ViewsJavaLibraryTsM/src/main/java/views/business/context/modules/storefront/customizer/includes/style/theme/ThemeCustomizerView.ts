@@ -58,7 +58,8 @@ export class ThemeCustomizerView extends HttpStoreComponentView {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    validationInterface: ValidationInterface
+    validationInterface: ValidationInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

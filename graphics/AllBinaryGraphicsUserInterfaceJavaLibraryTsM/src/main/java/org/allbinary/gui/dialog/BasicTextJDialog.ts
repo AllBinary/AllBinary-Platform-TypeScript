@@ -72,7 +72,8 @@ new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").setVisible(true);
 }
 
 
-    private closeListenerInterface: CloseJDialogListenerInterface
+    private closeListenerInterface: CloseJDialogListenerInterface;
+
 public constructor (parent: java.awt.Frame, modal: boolean, text: string){
             super(parent, modal);
                     
@@ -96,6 +97,7 @@ this.textJLabel!.setText(text);
 this.closeListenerInterface= closeListenerInterface;
     
 }
+
 
 public constructor (text: string){
 
@@ -130,8 +132,7 @@ jButton1ActionPerformed(evt);
 this.textJLabel!.setText("No Text Set");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());;
     
 getContentPane()!.setLayout(layout);
     
@@ -161,9 +162,9 @@ this.setVisible(false);
 }
 
 
-    private jButton1: javax.swing.JButton
+    private jButton1: javax.swing.JButton;
 
-    private textJLabel: javax.swing.JLabel
+    private textJLabel: javax.swing.JLabel;
 
 }
                 

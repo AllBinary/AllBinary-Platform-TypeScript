@@ -40,6 +40,7 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
 
 export class ABTextFieldItem extends ABTextItem {
         
+
 public constructor (canvas: Canvas, visitor: Visitor, label: string, value: string, maxSize: number, layout: number, altText: string, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, layout, altText, backgroundBasicColor, foregroundBasicColor);
                     

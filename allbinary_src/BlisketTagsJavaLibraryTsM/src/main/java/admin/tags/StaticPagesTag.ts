@@ -69,7 +69,8 @@ export class StaticPagesTag extends TableTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private xslFile: string
+    private xslFile: string;
+
 public constructor (){
 
             super();
@@ -92,22 +93,18 @@ this.xslFile= value;
 
         try {
             
-    var anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("generateStaticPages", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -130,8 +127,7 @@ this.xslFile= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to generate staticpages table";
-;
+    var error: string = "Failed to generate staticpages table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -159,22 +155,18 @@ this.xslFile= value;
 
         try {
             
-    var anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new StaticPagesRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("makePublic", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -197,8 +189,7 @@ this.xslFile= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to makePublic";
-;
+    var error: string = "Failed to makePublic";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -242,8 +233,7 @@ this.xslFile= value;
                                     this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xslFile);
     
 
-    var output: string = this.generateStaticPages()!;
-;
+    var output: string = this.generateStaticPages()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -262,8 +252,7 @@ this.xslFile= value;
                         
                                     {
                                     
-    var output: string = this.makePublic()!;
-;
+    var output: string = this.makePublic()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))

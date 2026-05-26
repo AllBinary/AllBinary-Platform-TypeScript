@@ -64,7 +64,8 @@ export class AlwaysActionScriptConditionJPanel extends javax.swing.JPanel {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private alwaysActionScriptConditionInterface: AlwaysActionScriptConditionInterface
+    private alwaysActionScriptConditionInterface: AlwaysActionScriptConditionInterface;
+
 public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptConditionInterface){
 
             super();
@@ -177,8 +178,7 @@ this.alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 ]));
     
 
-    var alwaysActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.alwaysActionJDialog!.getContentPane());
-;
+    var alwaysActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.alwaysActionJDialog!.getContentPane());;
     
 this.alwaysActionJDialog!.getContentPane()!.setLayout(alwaysActionJDialogLayout);
     
@@ -204,8 +204,7 @@ alwaysActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Always:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -230,19 +229,19 @@ this.getAlwaysActionJDialog()!.setVisible(true);
 }
 
 
-    private alwaysActionJButton: javax.swing.JButton
+    private alwaysActionJButton: javax.swing.JButton;
 
-    private alwaysActionJDialog: javax.swing.JDialog
+    private alwaysActionJDialog: javax.swing.JDialog;
 
-    private alwaysJComboBox: javax.swing.JComboBox
+    private alwaysJComboBox: javax.swing.JComboBox;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private okJButton: javax.swing.JButton
+    private okJButton: javax.swing.JButton;
 
-    private titleJLabel: javax.swing.JLabel
+    private titleJLabel: javax.swing.JLabel;
 
 }
                 

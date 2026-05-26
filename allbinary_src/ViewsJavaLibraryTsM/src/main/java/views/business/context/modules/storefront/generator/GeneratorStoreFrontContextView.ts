@@ -59,6 +59,7 @@ export class GeneratorStoreFrontContextView extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -81,8 +82,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
     view(group: string): string{
 
-    var result: string = TransformsGeneratorUtil.getInstance()!.generateComponentsFromObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), group)!;
-;
+    var result: string = TransformsGeneratorUtil.getInstance()!.generateComponentsFromObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), group)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPEXTRAOUTPUT))

@@ -49,6 +49,7 @@ export class InputAutomationModuleData
     public static NAME: string = "INPUT_AUTOMATION_MODULE";
 
     public static MODULE_NAME_END: string = " Module";
+
 private constructor (){
 
             super();

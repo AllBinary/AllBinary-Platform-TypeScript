@@ -75,6 +75,7 @@ export class MotionGestureConfiguration
     private mouseButtonMask: number = 0;
 
     private activeCommands: BasicArrayList = new BasicArrayListD();
+
 public constructor (){
 
             super();

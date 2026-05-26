@@ -68,7 +68,8 @@ export class CategoryPrivateTree
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    categoryFactoryInterface: CategoryFactoryInterface
+    categoryFactoryInterface: CategoryFactoryInterface;
+
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 
             super();
@@ -77,8 +78,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, "CategoryPrivateTree(CategoryFactoryInterface categoryFactoryInterface)");
     
@@ -104,12 +104,10 @@ this.categoryFactoryInterface= categoryFactoryInterface;
                                     }
                                 
 
-    var document: Document = new CategoryComponent(categoryInterface).toXmlDoc()!;
-;
+    var document: Document = new CategoryComponent(categoryInterface).toXmlDoc()!;;
     
 
-    var cryptFileWriter: CryptFileWriter = new CryptFileWriter(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);
-;
+    var cryptFileWriter: CryptFileWriter = new CryptFileWriter(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
     
 cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
     
@@ -134,8 +132,7 @@ cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
                         
                                     {
                                     
-    var categoryFile: AbFile = new AbFile(categoryInterface!.getFilePath());
-;
+    var categoryFile: AbFile = new AbFile(categoryInterface!.getFilePath());;
     
 
                         if(categoryFile!.delete())

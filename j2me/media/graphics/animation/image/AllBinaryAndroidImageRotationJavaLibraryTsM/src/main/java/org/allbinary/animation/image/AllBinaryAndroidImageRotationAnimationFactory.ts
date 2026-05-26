@@ -97,8 +97,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
             
     public static createFactoryU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
 
-    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
-;
+    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);;
     
 androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.getHeight()>>2));
     
@@ -115,8 +114,7 @@ androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.get
             
     public static createFactoryDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
 
-    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
-;
+    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);;
     
 androidImageRotationAnimationFactory!.init(dx, dy);
     
@@ -141,9 +139,10 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
 }
 
 
-    private readonly angleIncrement: number
+    private readonly angleIncrement: number;
 
-    private readonly resizeCanvasForRotation: boolean
+    private readonly resizeCanvasForRotation: boolean;
+
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                     
@@ -161,8 +160,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     getCanvasImage(): Image{
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
@@ -194,16 +192,13 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
             
     public getInstance(instanceId: number): Animation{
 
-    var canvasImage: Image = this.getCanvasImage()!;
-;
+    var canvasImage: Image = this.getCanvasImage()!;;
     
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-;
+    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;
-;
+    var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)

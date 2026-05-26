@@ -98,7 +98,8 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
 
     private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-    private midletDestroyed: boolean= false
+    private midletDestroyed: boolean= false;
+
 public constructor (){
 
             super();
@@ -109,8 +110,7 @@ public constructor (){
 
     setDisplay(newDisplay: Displayable){
 
-    var title: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var title: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(newDisplay != NullCanvas.NULL_CANVAS)
@@ -139,8 +139,7 @@ public constructor (){
                                     }
                                 
 
-    var display: Display = this.getDisplay()!;
-;
+    var display: Display = this.getDisplay()!;;
     
 display.setCurrent(newDisplay);
     
@@ -203,8 +202,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     destroyApp(unconditional: boolean){
 
-    var METHOD_NAME: string = "AllBinaryMidlet::destroyApp";
-;
+    var METHOD_NAME: string = "AllBinaryMidlet::destroyApp";;
     
 
         try {

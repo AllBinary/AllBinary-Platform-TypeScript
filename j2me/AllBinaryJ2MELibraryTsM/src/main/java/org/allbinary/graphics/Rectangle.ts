@@ -53,11 +53,12 @@ export class Rectangle
          {
         
 
-    private point: GPoint
+    private point: GPoint;
 
-    private width: number
+    private width: number;
 
-    private height: number
+    private height: number;
+
 public constructor (point: GPoint, width: number, height: number){
 
             super();
@@ -140,8 +141,7 @@ this.height= height;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getPoint()!.toString());
     

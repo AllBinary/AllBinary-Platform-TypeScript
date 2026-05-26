@@ -69,11 +69,12 @@ export class WaypointBehaviorBase
          implements TickableInterface {
         
 
-    private readonly ownedWaypointList: BasicArrayList
+    private readonly ownedWaypointList: BasicArrayList;
 
     waypointOverridesAttacking: boolean = true;
 
     private waypoint: WaypointBase = WaypointBase.NULL_WAYPOINT_BASE;
+
 public constructor (){
 
             super();

@@ -74,6 +74,7 @@ export class HighScoresPaintable extends Paintable implements ColorChangeListene
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
     private highScores: HighScores = NullHighScoresSingletonFactory.getInstance()!;
+
 public constructor (){
 
             super();
@@ -82,8 +83,7 @@ public constructor (){
 
     public onEvent(eventObject: AllBinaryEventObject){
 
-    var colorChangeEvent: ColorChangeEvent = eventObject as ColorChangeEvent;
-;
+    var colorChangeEvent: ColorChangeEvent = eventObject as ColorChangeEvent;;
     
 this.basicColor= colorChangeEvent!.getBasicColorP();
     
@@ -94,71 +94,57 @@ this.basicColor= colorChangeEvent!.getBasicColorP();
 
     public paint(graphics: Graphics){
 
-    var charHeight: number = MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;;
     
 
-    var width: number = this.displayInfoSingleton!.getLastWidth()!;
-;
+    var width: number = this.displayInfoSingleton!.getLastWidth()!;;
     
 
-    var height: number = this.displayInfoSingleton!.getLastHeight()!;
-;
+    var height: number = this.displayInfoSingleton!.getLastHeight()!;;
     
 graphics.setColor(this.getBasicColorP()!.intValue());
     
 
-    var heading: string = this.highScores!.getHeading()!;
-;
+    var heading: string = this.highScores!.getHeading()!;;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading)>>1);
-;
+    var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading)>>1);;
     
 graphics.drawString(heading, (width>>1) -topScoresWidth, charHeight, this.anchor);
     
 graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, this.anchor);
     
 
-    var columnTwoHeading: string = this.highScores!.getColumnTwoHeading()!;
-;
+    var columnTwoHeading: string = this.highScores!.getColumnTwoHeading()!;;
     
 
-    var columnTwoHeadingWidth: number = graphics.getFont()!.stringWidth(columnTwoHeading)!;
-;
+    var columnTwoHeadingWidth: number = graphics.getFont()!.stringWidth(columnTwoHeading)!;;
     
 graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeight *3, this.anchor);
     
 
-    var index: number = 4;
-;
+    var index: number = 4;;
     
 
-    var largestSecondColumnWidth: number = columnTwoHeadingWidth;
-;
+    var largestSecondColumnWidth: number = columnTwoHeadingWidth;;
     
 
-    var list: BasicArrayList = this.highScores!.getList()!;
-;
+    var list: BasicArrayList = this.highScores!.getList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var vectorIndex: number = 0;
-;
+    var vectorIndex: number = 0;;
     
 
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
 
-    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;
-;
+    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;;
     
 
-    var nextScoreWidth: number = graphics.getFont()!.stringWidth(highScore!.getScoreString())!;
-;
+    var nextScoreWidth: number = graphics.getFont()!.stringWidth(highScore!.getScoreString())!;;
     
 
                         if(nextScoreWidth > largestSecondColumnWidth)
@@ -179,8 +165,7 @@ vectorIndex= 0;
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
 
-    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;
-;
+    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;;
     
 graphics.drawString(highScore!.getName(), 10, charHeight *index, this.anchor);
     

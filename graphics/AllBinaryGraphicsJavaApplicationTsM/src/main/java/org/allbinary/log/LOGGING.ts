@@ -98,7 +98,8 @@ export class LOGGING
 
     public static readonly WINDOWEVENT: LOGGING = new LOGGING("Window Action Event");
 
-    private name: string
+    private name: string;
+
 private constructor (value: string){
 
             super();

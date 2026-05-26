@@ -80,20 +80,16 @@ export class NewUserFactory
             
     public static getInstance(transformInfoInterface: TransformInfoInterface): UserInterface{
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;
-;
+    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
     
 
-    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;
-;
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;;
     
 hashMap!.put(UserRoleData.NAME.toString(), role);
     
@@ -116,12 +112,10 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
                         
                                     {
                                     
-    var requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;
-;
+    var requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).toHashMap()!;;
     
 
-    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as string;
-;
+    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as string;;
     
 requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
     
@@ -144,6 +138,7 @@ requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
                         }
                             
 }
+
 
 private constructor (){
 

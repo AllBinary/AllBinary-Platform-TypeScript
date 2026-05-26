@@ -45,12 +45,10 @@ Assertions.assertEquals(2, 1 +1);
 
     testStringEquality(){
 
-    var expected: string = "Hello World!";
-;
+    var expected: string = "Hello World!";;
     
 
-    var actual: string = "Hello World!";
-;
+    var actual: string = "Hello World!";;
     
 Assertions.assertEquals(expected, actual);
     

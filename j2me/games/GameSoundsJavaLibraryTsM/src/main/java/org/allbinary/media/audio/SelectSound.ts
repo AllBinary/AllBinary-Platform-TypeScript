@@ -57,6 +57,7 @@ export class SelectSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/select.wav");
                     

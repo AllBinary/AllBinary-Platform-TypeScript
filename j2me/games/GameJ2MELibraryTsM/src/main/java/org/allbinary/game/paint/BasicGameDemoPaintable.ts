@@ -52,13 +52,14 @@ import { StatePaintable } from '../../../../org/allbinary/graphics/paint/StatePa
 export class BasicGameDemoPaintable extends StatePaintable {
         
 
-    private readonly mainDemoStatePaintable: Paintable
+    private readonly mainDemoStatePaintable: Paintable;
 
-    private readonly ownershipPaintable: Paintable
+    private readonly ownershipPaintable: Paintable;
 
-    private readonly helpPaintableInterface: Paintable
+    private readonly helpPaintableInterface: Paintable;
 
     private currentStatePaintable: Paintable = NullPaintable.getInstance()!;
+
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable){
 
             super();

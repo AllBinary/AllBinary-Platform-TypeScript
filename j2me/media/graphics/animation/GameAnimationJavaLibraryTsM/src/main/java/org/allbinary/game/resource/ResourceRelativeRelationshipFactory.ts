@@ -63,7 +63,7 @@ export class ResourceRelativeRelationshipFactory
 
     private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-    private initialized: boolean= false
+    private initialized: boolean= false;
 
                 //@Throws(Exception.constructor)
             
@@ -77,8 +77,7 @@ this.setInitialized(true);
             
     public getResourceRelativeRelationshipList(resource: string): BasicArrayList{
 
-    var listCanBeNull: any = this.hashtable.get(resource);
-;
+    var listCanBeNull: any = this.hashtable.get(resource);;
     
 
                         if(listCanBeNull == 
@@ -108,8 +107,7 @@ this.setInitialized(true);
             
     public addResourceRelativeRelationship(resource: string, hardPoint: RelativeRelationship){
 
-    var list: BasicArrayList = this.getResourceRelativeRelationshipList(resource)!;
-;
+    var list: BasicArrayList = this.getResourceRelativeRelationshipList(resource)!;;
     
 
                         if(list == this.basicArrayListUtil!.getImmutableInstance())

@@ -59,11 +59,12 @@ export class UserConfiguration
          implements UserConfigurationInterface {
         
 
-    private userEmailConfigurationInterface: UserEmailConfigurationInterface
+    private userEmailConfigurationInterface: UserEmailConfigurationInterface;
 
-    private timeCreated: TimeCreated
+    private timeCreated: TimeCreated;
 
-    private timeLastModified: TimeLastModified
+    private timeLastModified: TimeLastModified;
+
 public constructor (){
 
             super();
@@ -74,6 +75,7 @@ this.timeCreated= new TimeCreated(0);
 this.timeLastModified= new TimeLastModified(0);
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 

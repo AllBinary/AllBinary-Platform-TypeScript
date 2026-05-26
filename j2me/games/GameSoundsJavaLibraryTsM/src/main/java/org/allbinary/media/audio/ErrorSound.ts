@@ -57,6 +57,7 @@ export class ErrorSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/error.wav");
                     

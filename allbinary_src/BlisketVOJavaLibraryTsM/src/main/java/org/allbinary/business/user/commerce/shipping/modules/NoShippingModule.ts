@@ -58,6 +58,7 @@ export class NoShippingModule
     private readonly name: string = "No Shipping";
 
     private readonly description: string = "This shipping method is for items that are not shipped.";
+
 public constructor (){
 
             super();

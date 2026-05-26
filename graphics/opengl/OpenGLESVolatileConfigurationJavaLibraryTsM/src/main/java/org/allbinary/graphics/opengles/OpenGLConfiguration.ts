@@ -93,6 +93,7 @@ export class OpenGLConfiguration
     private color: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.IMAGE_COLOR_DEPTH_4444;
 
     private versionSelector: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT;
+
 private constructor (){
 
             super();
@@ -107,8 +108,7 @@ private constructor (){
             
     public init(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
@@ -179,16 +179,13 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
             
     public update(gameFeature: Feature, colorLocked: boolean){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-;
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
-    var modified: boolean = false;
-;
+    var modified: boolean = false;;
     
 
                         if(gameFeature == openGLFeatureFactory!.OPENGL)
@@ -442,12 +439,10 @@ this.type= type;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append(" isOpenGL: ");
     

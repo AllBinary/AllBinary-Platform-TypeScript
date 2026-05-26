@@ -82,9 +82,10 @@ export class BasicProfileActionScriptInput extends BasicProfileActionScriptProce
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private inputRobotInterface: InputRobotInterface
+    private inputRobotInterface: InputRobotInterface;
 
-    private time: number= 0
+    private time: number= 0;
+
 public constructor (label: string, node: Node){
             super(label, node);
                     
@@ -94,16 +95,13 @@ public constructor (label: string, node: Node){
 this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;
-;
+    var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;;
     
 
-    var inputTypeString: string = DomNodeHelper.getTextNodeValue(actionNode)!;
-;
+    var inputTypeString: string = DomNodeHelper.getTextNodeValue(actionNode)!;;
     
 
-    var timeNode: Node = DomSearchHelper.getNodeNoThrow(GenericProfileActionScriptInputData.DELAY, node.getChildNodes())!;
-;
+    var timeNode: Node = DomSearchHelper.getNodeNoThrow(GenericProfileActionScriptInputData.DELAY, node.getChildNodes())!;;
     
 
                         if(timeNode != 
@@ -112,8 +110,7 @@ this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.C
                         
                                     {
                                     
-    var delayString: string = DomNodeHelper.getTextNodeValue(timeNode)!;
-;
+    var delayString: string = DomNodeHelper.getTextNodeValue(timeNode)!;;
     
 this.setTime(Integer.valueOf(delayString)!.intValue());
     
@@ -130,6 +127,7 @@ this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString
     
 }
 
+
 public constructor (label: string){
             super(label);
                     
@@ -139,20 +137,16 @@ public constructor (label: string){
 this.logUtil!.putF(this.commonStrings!.START +label, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;
-;
+    var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;;
     
 
-    var hashtable: Hashtable<any, any> = inputRobotFactory!.get() as Hashtable<any, any>;
-;
+    var hashtable: Hashtable<any, any> = inputRobotFactory!.get() as Hashtable<any, any>;;
     
 
-    var set: Set = hashtable.keys()!;
-;
+    var set: Set = hashtable.keys()!;;
     
 
-    var iterator: Iterator = set.iterator()!;
-;
+    var iterator: Iterator = set.iterator()!;;
     
 this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as string));
     
@@ -179,8 +173,7 @@ this.time= time;
 
     public BasicProfileActionScriptInput_toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName());
     
@@ -201,8 +194,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionScriptInputData.NAME, this.BasicProfileActionScriptInput_toHashMap())!;
-;
+    var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionScriptInputData.NAME, this.BasicProfileActionScriptInput_toHashMap())!;;
     
 
 
@@ -231,8 +223,7 @@ this.inputRobotInterface= inputRobotInterface;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     

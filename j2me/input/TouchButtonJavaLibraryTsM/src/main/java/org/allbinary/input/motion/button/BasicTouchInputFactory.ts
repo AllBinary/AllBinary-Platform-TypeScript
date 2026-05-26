@@ -76,41 +76,41 @@ export class BasicTouchInputFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public readonly SPECIAL_BUTTON_SEVEN_TESTING_ONLY: TouchButtonInput
+    public readonly SPECIAL_BUTTON_SEVEN_TESTING_ONLY: TouchButtonInput;
 
-    public readonly SPECIAL_BUTTON_EIGHT_TESTING_ONLY: TouchButtonInput
+    public readonly SPECIAL_BUTTON_EIGHT_TESTING_ONLY: TouchButtonInput;
 
-    public readonly SPECIAL_BUTTON_SIX: TouchButtonInput
+    public readonly SPECIAL_BUTTON_SIX: TouchButtonInput;
 
-    public readonly SPECIAL_BUTTON_FIVE: TouchButtonInput
+    public readonly SPECIAL_BUTTON_FIVE: TouchButtonInput;
 
-    public readonly SPECIAL_BUTTON_FOUR: TouchButtonInput
+    public readonly SPECIAL_BUTTON_FOUR: TouchButtonInput;
 
-    public readonly SPECIAL_BUTTON_THREE: TouchButtonInput
+    public readonly SPECIAL_BUTTON_THREE: TouchButtonInput;
 
-    public readonly SPECIAL_BUTTON_TWO: TouchButtonInput
+    public readonly SPECIAL_BUTTON_TWO: TouchButtonInput;
 
-    public readonly SPECIAL_BUTTON_ONE: TouchButtonInput
+    public readonly SPECIAL_BUTTON_ONE: TouchButtonInput;
 
-    public readonly UP: TouchButtonInput
+    public readonly UP: TouchButtonInput;
 
-    public readonly LEFT: TouchButtonInput
+    public readonly LEFT: TouchButtonInput;
 
-    public readonly RIGHT: TouchButtonInput
+    public readonly RIGHT: TouchButtonInput;
 
-    public readonly DOWN: TouchButtonInput
+    public readonly DOWN: TouchButtonInput;
 
-    public readonly NONE: TouchButtonInput
+    public readonly NONE: TouchButtonInput;
 
     private initialized: boolean = false;
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
         
-    var MAX: number = InputFactory.getInstance()!.MAX;
-;
+    var MAX: number = InputFactory.getInstance()!.MAX;;
     
 this.SPECIAL_BUTTON_SEVEN_TESTING_ONLY= new TouchButtonInput(MAX -41, "Button 7 - Testing Only May Cross Over Key Values");
     
@@ -195,16 +195,14 @@ this.updateAllFromList(this.list, inputToGameKeyMapping);
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.appendint(list.size())!.toString(), this, "updateAll");
     
 
-    var touchButtonInput: TouchButtonInput
-;
+    var touchButtonInput: TouchButtonInput;;
     
 
 
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 touchButtonInput= list.objectArray[index]! as TouchButtonInput;
     

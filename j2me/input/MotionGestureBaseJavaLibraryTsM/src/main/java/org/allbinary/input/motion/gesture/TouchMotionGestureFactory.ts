@@ -61,35 +61,35 @@ export class TouchMotionGestureFactory
 }
 
 
-    public readonly LEFT: MotionGestureInput
+    public readonly LEFT: MotionGestureInput;
 
-    public readonly RIGHT: MotionGestureInput
+    public readonly RIGHT: MotionGestureInput;
 
-    public readonly UP: MotionGestureInput
+    public readonly UP: MotionGestureInput;
 
-    public readonly DOWN: MotionGestureInput
+    public readonly DOWN: MotionGestureInput;
 
-    public readonly PRESSED: MotionGestureInput
+    public readonly PRESSED: MotionGestureInput;
 
-    public readonly RELEASED: MotionGestureInput
+    public readonly RELEASED: MotionGestureInput;
 
-    public readonly DIAGONAL_DOWN_RIGHT: MotionGestureInput
+    public readonly DIAGONAL_DOWN_RIGHT: MotionGestureInput;
 
-    public readonly DIAGONAL_DOWN_LEFT: MotionGestureInput
+    public readonly DIAGONAL_DOWN_LEFT: MotionGestureInput;
 
-    public readonly DIAGONAL_UP_RIGHT: MotionGestureInput
+    public readonly DIAGONAL_UP_RIGHT: MotionGestureInput;
 
-    public readonly DIAGONAL_UP_LEFT: MotionGestureInput
+    public readonly DIAGONAL_UP_LEFT: MotionGestureInput;
 
-    public readonly NO_MOTION: MotionGestureInput
+    public readonly NO_MOTION: MotionGestureInput;
 
-    public readonly LAST_MOTION: MotionGestureInput
+    public readonly LAST_MOTION: MotionGestureInput;
+
 public constructor (){
 
             super();
         
-    var MAX: number = InputFactory.getInstance()!.MAX;
-;
+    var MAX: number = InputFactory.getInstance()!.MAX;;
     
 this.LEFT= new MotionGestureInput(MAX -3, "Left Touch");
     

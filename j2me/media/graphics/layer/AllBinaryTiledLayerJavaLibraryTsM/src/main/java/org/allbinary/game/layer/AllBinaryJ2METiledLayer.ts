@@ -57,9 +57,10 @@ import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.
 export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
         
 
-    readonly tiledLayerP: TiledLayer
+    readonly tiledLayerP: TiledLayer;
 
-    readonly debugColor: number
+    readonly debugColor: number;
+
 public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number){
             super(dataId, tiledLayer!.getWidth(), tiledLayer!.getHeight(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight());
                     
@@ -85,68 +86,54 @@ this.tiledLayerP!.paint(graphics);
 
     public paintDebug(graphics: Graphics){
 
-    var font: Font = graphics.getFont()!;
-;
+    var font: Font = graphics.getFont()!;;
     
 graphics.setFont(this.font2);
     
 graphics.setColor(this.debugColor);
     
 
-    var x: number = this.tiledLayerP!.getX()!;
-;
+    var x: number = this.tiledLayerP!.getX()!;;
     
 
-    var y: number = this.tiledLayerP!.getY()!;
-;
+    var y: number = this.tiledLayerP!.getY()!;;
     
 
-    var firstColumn: number = 0;
-;
+    var firstColumn: number = 0;;
     
 
-    var firstRow: number = 0;
-;
+    var firstRow: number = 0;;
     
 
-    var totalColumns: number = this.tiledLayerP!.getColumns()!;
-;
+    var totalColumns: number = this.tiledLayerP!.getColumns()!;;
     
 
-    var totalRows: number = this.tiledLayerP!.getRows()!;
-;
+    var totalRows: number = this.tiledLayerP!.getRows()!;;
     
 
-    var x0: number = x;
-;
+    var x0: number = x;;
     
 
-    var tile: number = 0;
-;
+    var tile: number = 0;;
     
 
-    var tileHeight: number = this.tiledLayerP!.getCellHeight()!;
-;
+    var tileHeight: number = this.tiledLayerP!.getCellHeight()!;;
     
 
-    var tileWidth: number = this.tiledLayerP!.getCellWidth()!;
-;
+    var tileWidth: number = this.tiledLayerP!.getCellWidth()!;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var rowIndex: number = firstRow;
-rowIndex < totalRows; rowIndex++)
+    var rowIndex: number = firstRow;rowIndex < totalRows; rowIndex++)
         {
 x= x0;
     
@@ -155,8 +142,7 @@ x= x0;
 
 
                         for (
-    var columnIndex: number = firstColumn;
-columnIndex < totalColumns; columnIndex++)
+    var columnIndex: number = firstColumn;columnIndex < totalColumns; columnIndex++)
         {
 tile= this.tiledLayerP!.getCell(columnIndex, rowIndex);
     

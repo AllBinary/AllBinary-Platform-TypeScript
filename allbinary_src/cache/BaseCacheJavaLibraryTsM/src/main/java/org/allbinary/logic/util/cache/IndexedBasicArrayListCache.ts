@@ -55,8 +55,7 @@ export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implemen
             
     public static createCache(size: number): IndexedBasicArrayListCache{
 
-    var indexedBasicArrayListCache: IndexedBasicArrayListCache = new IndexedBasicArrayListCache();
-;
+    var indexedBasicArrayListCache: IndexedBasicArrayListCache = new IndexedBasicArrayListCache();;
     
 indexedBasicArrayListCache!.init(size);
     
@@ -74,6 +73,7 @@ indexedBasicArrayListCache!.init(size);
     private size: number = 0;
 
     index: number = 0;
+
 public constructor (){
 
             super();
@@ -94,8 +94,7 @@ public constructor (){
 
 
                         for (
-    var index: number = size -1;
-index >= this.size; index--)
+    var index: number = size -1;index >= this.size; index--)
         {
 this.addDefault();
     

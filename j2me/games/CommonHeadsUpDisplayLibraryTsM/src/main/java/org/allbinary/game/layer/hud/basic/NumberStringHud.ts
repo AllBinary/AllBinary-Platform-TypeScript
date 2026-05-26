@@ -93,19 +93,20 @@ export class NumberStringHud extends BasicHud implements PaintableInterface {
 
     public static readonly NULL_NUMBER_STRING_HUD: NumberStringHud = NumberStringHud.createHud()!;
 
-    private readonly PREPEND_STRING: string[]
+    private readonly PREPEND_STRING: string[];
 
-    private value: number
+    private value: number;
 
-    private max: number
+    private max: number;
 
-    private offset: number
+    private offset: number;
 
-    private valueString: string[]
+    private valueString: string[];
 
-    private valueTotalDigits: number= 0
+    private valueTotalDigits: number= 0;
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil
+    private readonly primitiveLongUtil: PrimitiveLongUtil;
+
 public constructor (prependString: string, max: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     
@@ -115,8 +116,7 @@ public constructor (prependString: string, max: number, location: number, direct
 this.PREPEND_STRING= prependString!.toCharArray();
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 this.offset= myFont!.stringWidth(prependString) +myFont!.defaultCharWidth();
     
@@ -192,21 +192,17 @@ super.paintDX(graphics, this.PREPEND_STRING, 0, this.PREPEND_STRING.length, this
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var charArray: string[] = this.PREPEND_STRING;
-;
+    var charArray: string[] = this.PREPEND_STRING;;
     
 
     var len: number = this.PREPEND_STRING.length
-                ;
-;
+                ;;
     
 
-    var charArray2: string[] = this.valueString;
-;
+    var charArray2: string[] = this.valueString;;
     
 
-    var len2: number = this.valueTotalDigits;
-;
+    var len2: number = this.valueTotalDigits;;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     

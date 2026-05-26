@@ -61,6 +61,7 @@ export class ViewPosition extends GPoint {
     public static readonly NULL_VIEW_POSITION: ViewPosition = ViewPosition.getInstanceD()!;
 
     private allbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
+
 protected constructor (x: number, y: number, z: number){
             super(x, y, z);
                     

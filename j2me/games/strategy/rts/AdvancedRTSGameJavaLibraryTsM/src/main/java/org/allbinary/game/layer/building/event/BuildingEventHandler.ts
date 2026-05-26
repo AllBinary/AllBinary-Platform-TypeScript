@@ -66,6 +66,7 @@ export class BuildingEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -76,8 +77,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var buildingEventListenerInterface: BuildingEventListenerInterface = (eventListenerInterface as BuildingEventListenerInterface);
-;
+    var buildingEventListenerInterface: BuildingEventListenerInterface = (eventListenerInterface as BuildingEventListenerInterface);;
     
 buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent);
     

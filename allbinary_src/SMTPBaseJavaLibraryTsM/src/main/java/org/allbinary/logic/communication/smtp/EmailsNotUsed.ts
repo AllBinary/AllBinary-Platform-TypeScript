@@ -68,7 +68,8 @@ export class EmailsNotUsed
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    emailInfoVector: Vector
+    emailInfoVector: Vector;
+
 public constructor (){
 
             super();
@@ -92,28 +93,23 @@ public constructor (){
                                     }
                                 
 
-    var node: Node = document.createElement(EmailData.NAME)!;
-;
+    var node: Node = document.createElement(EmailData.NAME)!;;
     
 
-    var size: number = this.emailInfoVector!.length!;
-;
+    var size: number = this.emailInfoVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var email: Email = this.emailInfoVector!.get(index) as Email;
-;
+    var email: Email = this.emailInfoVector!.get(index) as Email;;
     
 
-    var emailNode: Node = email.toXmlNode(document)!;
-;
+    var emailNode: Node = email.toXmlNode(document)!;;
     
 
                         if(emailNode != 
@@ -157,8 +153,7 @@ index < size; index++)
                                     }
                                 
 
-    var error: string = "Error Processing Order.  Please contact us if error persists.<p/>";
-;
+    var error: string = "Error Processing Order.  Please contact us if error persists.<p/>";;
     
 
 

@@ -44,6 +44,7 @@
 
 export class SensorFeature extends Feature {
         
+
  constructor (name: string){
             super(name);
                     

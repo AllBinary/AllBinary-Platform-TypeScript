@@ -137,7 +137,7 @@ import { EventQueue } from './EventQueue.js';
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         
 
-    private static INPUTAUTOMATION_JFRAME: InputAutomationJFrame
+    private static INPUTAUTOMATION_JFRAME: InputAutomationJFrame;
 
     public static getInstance(): InputAutomationJFrame{
 
@@ -159,8 +159,7 @@ InputAutomationJFrame.INPUTAUTOMATION_JFRAME.setVisible(false);
 LogConfigTypeFactory.getInstance();
     
 
-    var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
-;
+    var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();;
     
 appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/");
     
@@ -173,12 +172,10 @@ java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
@@ -232,25 +229,25 @@ InputAutomationJFrame.create(
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private inputAutomationModuleFactory: InputAutomationModuleFactoryFactory
+    private inputAutomationModuleFactory: InputAutomationModuleFactoryFactory;
 
-    private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface
+    private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface;
 
-    private runnableInterface: RunnableInterface
+    private runnableInterface: RunnableInterface;
 
-    private thread: Thread
+    private thread: Thread;
 
-    private helpSet: HelpSet
+    private helpSet: HelpSet;
 
     private readonly uri: URI = new URI("http://geocities.com/allbinary/");
+
 public constructor (){
 
             super();
         this.initComponents();
     
 
-    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
-;
+    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;;
     
 this.logUtil!.putF("URL: " +url, this, this.commonStrings!.CONSTRUCTOR);
     
@@ -259,8 +256,7 @@ this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
 url= this.constructor.name.getResource("/resources/allbinaryicon8bit.jpg");
     
 
-    var imageIcon: ImageIcon = new ImageIcon(url);
-;
+    var imageIcon: ImageIcon = new ImageIcon(url);;
     
 this.setIconImage(imageIcon!.getImage());
     
@@ -343,8 +339,7 @@ this.noModuleSelectedJDialog!.setMinimumSize(new java.awt.Dimension(200, 100));
 this.noModuleSelectedJLabel!.setText("Please Select A Module");
     
 
-    var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.noModuleSelectedJDialog!.getContentPane());
-;
+    var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.noModuleSelectedJDialog!.getContentPane());;
     
 this.noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout);
     
@@ -408,8 +403,7 @@ inputAutomationModuleJListValueChanged(evt);
 this.jScrollPane1!.setViewportView(this.inputAutomationModuleJList);
     
 
-    var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.inputAutomationModuleJPanel);
-;
+    var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.inputAutomationModuleJPanel);;
     
 this.inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout);
     
@@ -420,8 +414,7 @@ inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelL
 this.gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel);
     
 
-    var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.automationModuleConfigurationJPanel);
-;
+    var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.automationModuleConfigurationJPanel);;
     
 this.automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout);
     
@@ -583,8 +576,7 @@ this.mainJMenuBar!.add(this.toolsJMenu);
 setJMenuBar(this.mainJMenuBar);
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());;
     
 getContentPane()!.setLayout(layout);
     
@@ -631,8 +623,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPe
 
     aboutJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var textJDialog: JDialog = new BasicTextJDialog("Copyright (c) 2002-2007 AllBinary");
-;
+    var textJDialog: JDialog = new BasicTextJDialog("Copyright (c) 2002-2007 AllBinary");;
     
 textJDialog!.setVisible(true);
     
@@ -713,8 +704,7 @@ this.logUtil!.putF("Nothing", this, "focusLost");
 
         try {
             
-    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as string;
-;
+    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as string;;
     
 
                         if(gameAutomationRobotModuleNameString != 
@@ -727,8 +717,7 @@ this.logUtil!.putF("Nothing", this, "focusLost");
 this.getAutomationModuleConfigurationJPanel()!.removeAll();
     
 
-    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout() as javax.swing.GroupLayout;
-;
+    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout() as javax.swing.GroupLayout;;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
@@ -903,8 +892,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
             this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
     
 
-    var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;
-;
+    var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;;
     
 inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
     
@@ -927,12 +915,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
             this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");
     
 
-    var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!;
-;
+    var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!;;
     
 
-    var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(inputAutomationConfiguration!.getInputAutomationModuleConfigurationList());
-;
+    var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(inputAutomationConfiguration!.getInputAutomationModuleConfigurationList());;
     
 inputAutomationModuleConfigurations!.remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
     
@@ -949,43 +935,43 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
 }
 
 
-    private aboutJMenuItem: javax.swing.JMenuItem
+    private aboutJMenuItem: javax.swing.JMenuItem;
 
-    private automationModuleConfigurationJPanel: javax.swing.JPanel
+    private automationModuleConfigurationJPanel: javax.swing.JPanel;
 
-    private gameRobotJTabbedPane: javax.swing.JTabbedPane
+    private gameRobotJTabbedPane: javax.swing.JTabbedPane;
 
-    private helpJMenuItem: javax.swing.JMenuItem
+    private helpJMenuItem: javax.swing.JMenuItem;
 
-    private inputAutomationModuleJList: javax.swing.JList
+    private inputAutomationModuleJList: javax.swing.JList;
 
-    private inputAutomationModuleJPanel: javax.swing.JPanel
+    private inputAutomationModuleJPanel: javax.swing.JPanel;
 
-    private jScrollPane1: javax.swing.JScrollPane
+    private jScrollPane1: javax.swing.JScrollPane;
 
-    private mainJMenuBar: javax.swing.JMenuBar
+    private mainJMenuBar: javax.swing.JMenuBar;
 
-    private modulesJMenuItem: javax.swing.JMenuItem
+    private modulesJMenuItem: javax.swing.JMenuItem;
 
-    private noModuleSelectedJDialog: javax.swing.JDialog
+    private noModuleSelectedJDialog: javax.swing.JDialog;
 
-    private noModuleSelectedJLabel: javax.swing.JLabel
+    private noModuleSelectedJLabel: javax.swing.JLabel;
 
-    private optionsJMenu: javax.swing.JMenu
+    private optionsJMenu: javax.swing.JMenu;
 
-    private processingJMenu: javax.swing.JMenu
+    private processingJMenu: javax.swing.JMenu;
 
-    private startJMenuItem: javax.swing.JMenuItem
+    private startJMenuItem: javax.swing.JMenuItem;
 
-    private stopJMenuItem: javax.swing.JMenuItem
+    private stopJMenuItem: javax.swing.JMenuItem;
 
-    private stopOnFocusJCheckBoxMenuItem: javax.swing.JCheckBoxMenuItem
+    private stopOnFocusJCheckBoxMenuItem: javax.swing.JCheckBoxMenuItem;
 
-    private subscriptionJMenuItem: javax.swing.JMenuItem
+    private subscriptionJMenuItem: javax.swing.JMenuItem;
 
-    private toolsJMenu: javax.swing.JMenu
+    private toolsJMenu: javax.swing.JMenu;
 
-    private updatesJMenuItem: javax.swing.JMenuItem
+    private updatesJMenuItem: javax.swing.JMenuItem;
 
 }
                 

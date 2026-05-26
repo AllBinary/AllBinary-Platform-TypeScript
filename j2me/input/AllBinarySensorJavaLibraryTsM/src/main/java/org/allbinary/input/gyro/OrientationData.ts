@@ -57,6 +57,7 @@ export class OrientationData
     
 }
 
+
 private constructor (){
 
             super();

@@ -91,6 +91,7 @@ export class SearchData
     public static readonly SEARCH: string = "search";
 
     public static readonly MAKEPUBLIC: string = "Make Public";
+
 public constructor (){
 
             super();

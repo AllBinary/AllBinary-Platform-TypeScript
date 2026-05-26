@@ -87,15 +87,16 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
 
     readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
-    private readonly name: string
+    private readonly name: string;
 
-    private readonly childNameList: BasicArrayList
+    private readonly childNameList: BasicArrayList;
 
-    private readonly commandStack: Stack<any>
+    private readonly commandStack: Stack<any>;
 
     private commandListener: CommandListener = NullCommandListener.NULL_COMMAND_LISTENER;
 
-    private paused: boolean= false
+    private paused: boolean= false;
+
 public constructor (name: string, childNameList: BasicArrayList){
 
             super();
@@ -175,16 +176,14 @@ super.removeCommand(command);
 
     public removeAllCommands(){
 
-    var size: number = this.commandStack!.length!;
-;
+    var size: number = this.commandStack!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 super.removeCommand(this.commandStack!.pop() as Command);
     

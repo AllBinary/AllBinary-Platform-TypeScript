@@ -49,9 +49,10 @@ export class HealthTechnology
          implements RTSInterface {
         
 
-    private level: number= 0
+    private level: number= 0;
 
-    private maxLevel: number
+    private maxLevel: number;
+
 public constructor (maxLevel: number){
 
             super();
@@ -175,8 +176,7 @@ public constructor (maxLevel: number){
 this.level++;
     
 
-    var unitTechnologySingletonFactory: UnitTechnologySingletonFactory = UnitTechnologySingletonFactory.getInstance()!;
-;
+    var unitTechnologySingletonFactory: UnitTechnologySingletonFactory = UnitTechnologySingletonFactory.getInstance()!;;
     
 unitTechnologySingletonFactory!.setHealth(unitTechnologySingletonFactory!.getHealth() +(this.getLevel() *100));
     

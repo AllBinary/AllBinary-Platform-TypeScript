@@ -58,6 +58,7 @@ export class RuntimeEnvironmentVariables
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (){
 
             super();
@@ -76,8 +77,7 @@ public constructor (){
 
     public getVariable(var: string): string{
 
-    var environmentVariables: Properties = this.get()!;
-;
+    var environmentVariables: Properties = this.get()!;;
     
 
 
@@ -92,36 +92,28 @@ public constructor (){
 
         try {
             
-    var process: Process
-;
+    var process: Process;;
     
 
-    var environmentVariables: Properties = new Properties();
-;
+    var environmentVariables: Properties = new Properties();;
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-;
+    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
-    var osName: string = operatingSystemInterface!.getName()!;
-;
+    var osName: string = operatingSystemInterface!.getName()!;;
     
 
-    var linuxCommand: string = "env";
-;
+    var linuxCommand: string = "env";;
     
 
-    var windowsCommand: string = "cmd.exe /c set";
-;
+    var windowsCommand: string = "cmd.exe /c set";;
     
 
-    var solarisCommand: string = linuxCommand;
-;
+    var solarisCommand: string = linuxCommand;;
     
 
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-;
+    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)
@@ -160,16 +152,13 @@ public constructor (){
                         }
                             
 
-    var processInputStreamReader: InputStreamReader = new InputStreamReader(process.getInputStream());
-;
+    var processInputStreamReader: InputStreamReader = new InputStreamReader(process.getInputStream());;
     
 
-    var bufferedReader: BufferedReader = new BufferedReader(processInputStreamReader);
-;
+    var bufferedReader: BufferedReader = new BufferedReader(processInputStreamReader);;
     
 
-    var keyValuePair: string
-;
+    var keyValuePair: string;;
     
 
         while((keyValuePair= bufferedReader!.readLine()) != 
@@ -177,16 +166,13 @@ public constructor (){
                                 )
         {
 
-    var index: number = keyValuePair!.indexOf('=')!;
-;
+    var index: number = keyValuePair!.indexOf('=')!;;
     
 
-    var key: string = keyValuePair!.substring(0, index)!;
-;
+    var key: string = keyValuePair!.substring(0, index)!;;
     
 
-    var value: string = keyValuePair!.substring(index +1)!;
-;
+    var value: string = keyValuePair!.substring(index +1)!;;
     
 environmentVariables!.put(key, value);
     
@@ -325,8 +311,7 @@ environmentVariables!.put(key, value);
 
         try {
             
-    var existingPath: string = this.getLibraryPath()!;
-;
+    var existingPath: string = this.getLibraryPath()!;;
     
 System.setProperty("java.library.path", libPath +":" +existingPath);
     
@@ -439,24 +424,19 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
         try {
             
-    var process: Process
-;
+    var process: Process;;
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-;
+    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-;
+    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
-    var osName: string = operatingSystemInterface!.getName()!;
-;
+    var osName: string = operatingSystemInterface!.getName()!;;
     
 
-    var windowsCommand: string = "cmd.exe /c set" +var +"=" +val;
-;
+    var windowsCommand: string = "cmd.exe /c set" +var +"=" +val;;
     
 
                         if(osName!.compareTo(operatingSystems!.LINUX) == 0)

@@ -58,8 +58,7 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
             
     static createAnimation(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
 
-    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;
-;
+    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;;
     
 
 
@@ -70,7 +69,8 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
 }
 
 
-    private expectedTotalFrames: number= 0
+    private expectedTotalFrames: number= 0;
+
 public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(imageArray, angleInfo, animationBehavior);
                     

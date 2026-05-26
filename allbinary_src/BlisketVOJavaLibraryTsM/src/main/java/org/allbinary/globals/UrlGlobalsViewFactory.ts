@@ -57,8 +57,7 @@ export class UrlGlobalsViewFactory
 
     public static getInstance(): DomNodeInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -73,8 +72,7 @@ export class UrlGlobalsViewFactory
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
@@ -94,6 +92,7 @@ export class UrlGlobalsViewFactory
 }
 
 }
+
 
 private constructor (){
 

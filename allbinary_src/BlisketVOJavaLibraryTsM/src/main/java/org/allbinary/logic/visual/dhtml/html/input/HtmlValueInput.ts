@@ -47,9 +47,10 @@ import { StringUtil } from '../../../../../../../org/allbinary/logic/string/Stri
 export class HtmlValueInput extends HtmlInput {
         
 
-    private value: string
+    private value: string;
 
     private readonly VALUE: string = "VALUE";
+
 public constructor (before: string, type: string, name: string, value: string, after: string){
             super(before, type, name, after);
                     
@@ -57,8 +58,7 @@ public constructor (before: string, type: string, name: string, value: string, a
                             //For kotlin this is before the body of the constructor.
                     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.value= stringUtil!.EMPTY_STRING;
     

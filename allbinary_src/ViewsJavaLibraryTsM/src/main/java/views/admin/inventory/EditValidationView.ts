@@ -77,7 +77,8 @@ import { Node } from '../../../org/w3c/dom/Node.js';
 export class EditValidationView extends InventoryItemView implements ValidationComponentInterface {
         
 
-    private id: string
+    private id: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
                     
@@ -93,8 +94,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
     
 
                         if(hashMap == 
@@ -144,16 +144,14 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
                                     }
                                 
 
-    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;
-;
+    var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;;
     
 
                         if(downloadable != 0)
                         
                                     {
                                     
-    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-;
+    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 this.downloadableItemVector= downloadItemsEntity!.getForItem(this.itemInterface!.getId());
     
@@ -193,8 +191,7 @@ this.downloadableItemVector= downloadItemsEntity!.getForItem(this.itemInterface!
             
     public validationInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.id == 

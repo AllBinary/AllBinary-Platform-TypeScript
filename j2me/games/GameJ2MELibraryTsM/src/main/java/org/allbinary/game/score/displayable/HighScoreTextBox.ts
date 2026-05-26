@@ -91,13 +91,14 @@ export class HighScoreTextBox extends CustomTextBox {
 
     private readonly virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
 
-    private readonly highScoreUtil: HighScoreUtil
+    private readonly highScoreUtil: HighScoreUtil;
 
     private readonly pleaseWait: Paintable = new SimpleTextPaintable(this.commonStrings!.PLEASE_WAIT, BasicColorFactory.getInstance()!.WHITE);
 
     private paintable: Paintable = NullPaintable.getInstance()!;
 
     public submitted: boolean = false;
+
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, "New High Score Enter Name:", name, 12, TextField.ANY, Font.getDefaultFont(), backgrounBasicColor, foregroundBasicColor);
                     
@@ -107,16 +108,14 @@ public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, high
 this.highScoreUtil= new HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeClientInformation, gameInfo, cmdListener, name, highScore);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-;
+    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())
                         
                                     {
                                     
-    var username: string = InApplicationPurchaseFactory.getInstance()!.getUserName()!;
-;
+    var username: string = InApplicationPurchaseFactory.getInstance()!.getUserName()!;;
     
 
                         if(username != 
@@ -200,8 +199,7 @@ this.repaintBehavior!.onChangeRepaint(this);
             
     public update(){
 
-    var name: string = this.getTextFieldItem()!.getString()!;
-;
+    var name: string = this.getTextFieldItem()!.getString()!;;
     
 this.highScoreUtil!.update(name);
     

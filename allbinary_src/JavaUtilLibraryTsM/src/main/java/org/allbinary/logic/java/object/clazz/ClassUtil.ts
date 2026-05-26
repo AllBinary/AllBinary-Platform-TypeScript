@@ -86,12 +86,10 @@ export class ClassUtil
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var classes: Function[] = myClass!.getClasses()!;
-;
+    var classes: Function[] = myClass!.getClasses()!;;
     
 stringBuffer!.append(lineBreak);
     
@@ -118,8 +116,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;
-index < classes.length; index++)
+    var index: number = 0;index < classes.length; index++)
         {
 stringBuffer!.append("Class: ");
     
@@ -152,6 +149,7 @@ stringBuffer!.append(MethodUtil.viewAll(myClass.constructor.java, lineBreak));
                         if()
                         
 }
+
 
 private constructor (){
 

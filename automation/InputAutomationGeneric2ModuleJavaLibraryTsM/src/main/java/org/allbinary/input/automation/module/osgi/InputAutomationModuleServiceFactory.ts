@@ -64,7 +64,8 @@ export class InputAutomationModuleServiceFactory
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]
+    private inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[];
+
 public constructor (){
 
             super();

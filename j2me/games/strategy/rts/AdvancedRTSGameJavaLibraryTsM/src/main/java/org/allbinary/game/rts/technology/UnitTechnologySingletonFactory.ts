@@ -58,15 +58,16 @@ export class UnitTechnologySingletonFactory
 }
 
 
-    private damage: number= 0
+    private damage: number= 0;
 
-    private health: number= 0
+    private health: number= 0;
 
-    private reload: number= 0
+    private reload: number= 0;
 
-    private repair: number= 0
+    private repair: number= 0;
 
-    private speed: number= 0
+    private speed: number= 0;
+
 private constructor (){
 
             super();

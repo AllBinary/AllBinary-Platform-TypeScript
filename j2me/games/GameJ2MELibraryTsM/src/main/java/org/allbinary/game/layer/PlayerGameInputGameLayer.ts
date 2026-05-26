@@ -67,7 +67,8 @@ import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPos
 export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements PlayerGameInputCompositeInterface {
         
 
-    private playerGameInput: PlayerGameInput
+    private playerGameInput: PlayerGameInput;
+
 public constructor (playerInputId: number){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new StaticViewPosition(0, 0, 0));
                     
@@ -77,8 +78,7 @@ public constructor (playerInputId: number){
 this.playerGameInput= new PlayerGameInput(this.getGameKeyEventList(), new BasicArrayListD(), playerInputId);
     
 
-    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-;
+    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
     
 this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testing Input", this, canvasStrings!.PAINT);
     

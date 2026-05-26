@@ -94,6 +94,7 @@ export class InputPersistance extends BasicPersitance {
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly hashtableUtil: HashtableUtil = HashtableUtil.getInstance()!;
+
 public constructor (name: string){
             super(name);
                     
@@ -107,71 +108,56 @@ public constructor (name: string){
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
             recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-;
+    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var gameActionInputId: number= 0
-;
+    var gameActionInputId: number= 0;;
     
 
-    var inputId: number= 0
-;
+    var inputId: number= 0;;
     
 
-    var gameActionInput: Input
-;
+    var gameActionInput: Input;;
     
 
-    var input: Input
-;
+    var input: Input;;
     
 
-    var hashtable: Hashtable<any, any>
-;
+    var hashtable: Hashtable<any, any>;;
     
 
-    var gameKeyFactory: GameKeyMappingFactory = GameKeyMappingFactory.getInstance()!;
-;
+    var gameKeyFactory: GameKeyMappingFactory = GameKeyMappingFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;
-;
+    var inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var recordAsBytes: number[]
-;
+    var recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream
-;
+    var byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream
-;
+    var inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;
-;
+    var id: number = recordEnum!.nextRecordId()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -192,15 +178,13 @@ inputStream= new DataInputStream(byteArrayInputStream);
 hashtable= new Hashtable<any, any>();
     
 
-    var value: number= 0
-;
+    var value: number= 0;;
     
 
         while(inputStream!.available() > 0)
         {
 
-    var gameActionInputIdAsString: string = inputStream!.readUTF()!;
-;
+    var gameActionInputIdAsString: string = inputStream!.readUTF()!;;
     
 value= Integer.parseInt(gameActionInputIdAsString);
     
@@ -321,67 +305,54 @@ recordStore!.closeRecordStore();
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 PreLogUtil.put(stringBuffer!.append(this.persistanceStrings!.SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
-;
+    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 
-    var gameActionInput: Input
-;
+    var gameActionInput: Input;;
     
 
-    var list: BasicArrayList
-;
+    var list: BasicArrayList;;
     
 
-    var input: Input
-;
+    var input: Input;;
     
 
-    var savedGameBytes: number[]
-;
+    var savedGameBytes: number[];;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;
-;
+    var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;;
     
 
     var size: number = inputObjectArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameActionInput= inputObjectArray[index]! as Input;
     
@@ -392,12 +363,10 @@ list= hashtable.get(inputObjectArray[index]!) as BasicArrayList;
 
 
                         for (
-    var index2: number = 0;
-index2 < list.size(); index2++)
+    var index2: number = 0;index2 < list.size(); index2++)
         {
 
-    var gameActionInputIdAsString: string = smallIntegerSingletonFactory!.getAt(gameActionInput!.getId())!.toString()!;
-;
+    var gameActionInputIdAsString: string = smallIntegerSingletonFactory!.getAt(gameActionInput!.getId())!.toString()!;;
     
 outputStream!.writeUTF(gameActionInputIdAsString);
     
@@ -406,8 +375,7 @@ outputStream!.writeUTF(commonSeps!.EQUALS);
 input= list.objectArray[index2]! as Input;
     
 
-    var inputIdAsString: string = smallIntegerSingletonFactory!.getAt(input.getId())!.toString()!;
-;
+    var inputIdAsString: string = smallIntegerSingletonFactory!.getAt(input.getId())!.toString()!;;
     
 outputStream!.writeUTF(inputIdAsString);
     

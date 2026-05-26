@@ -57,6 +57,7 @@ export class EntryData
     
 }
 
+
 private constructor (){
 
             super();

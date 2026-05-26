@@ -56,6 +56,7 @@ export class CompoundComponentView extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -71,12 +72,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var success: string = DomDocumentHelper.toString(this.getDoc())!;
-;
+    var success: string = DomDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new CompoundTransform(this.getTransformInfoInterface()).translate(success)!;
-;
+    var result: string = new CompoundTransform(this.getTransformInfoInterface()).translate(success)!;;
     
 
 

@@ -44,6 +44,7 @@
 
 export class UserDbInitInfo extends DbInitInfo {
         
+
 public constructor (){
             super(
                             null, false);
@@ -52,6 +53,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (read: boolean){
             super(

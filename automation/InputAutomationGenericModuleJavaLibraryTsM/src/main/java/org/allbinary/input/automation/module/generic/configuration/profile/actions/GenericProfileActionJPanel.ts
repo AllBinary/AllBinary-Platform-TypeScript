@@ -70,9 +70,10 @@ export class GenericProfileActionJPanel extends javax.swing.JPanel {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private genericProfileAction: GenericProfileAction
+    private genericProfileAction: GenericProfileAction;
 
-    private genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel
+    private genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel;
+
 public constructor (){
 
             super();
@@ -85,8 +86,7 @@ public constructor (){
 this.blankProfileActionScriptJPanel!.removeAll();
     
 
-    var genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel = new GenericProfileActionScriptJPanel();
-;
+    var genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel = new GenericProfileActionScriptJPanel();;
     
 JTreeInterfaceFactory.getInstance()!.set(genericProfileActionScriptJPanel);
     
@@ -97,8 +97,7 @@ this.getGenericProfileActionScriptJPanel()!.setGenericProfileActionScript(this.g
 this.getGenericProfileActionScriptJPanel()!.updateJTree();
     
 
-    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout() as javax.swing.GroupLayout;
-;
+    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout() as javax.swing.GroupLayout;;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
@@ -163,8 +162,7 @@ this.genericProfileActionScriptJScrollPane!.setPreferredSize(new java.awt.Dimens
 this.blankProfileActionScriptJPanel!.setMinimumSize(new java.awt.Dimension(400, 200));
     
 
-    var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankProfileActionScriptJPanel);
-;
+    var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankProfileActionScriptJPanel);;
     
 this.blankProfileActionScriptJPanel!.setLayout(blankProfileActionScriptJPanelLayout);
     
@@ -216,8 +214,7 @@ newAlwaysJButtonActionPerformed(evt);
                             );
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -258,17 +255,17 @@ this.updateProfileActionUI();
 }
 
 
-    private blankProfileActionScriptJPanel: javax.swing.JPanel
+    private blankProfileActionScriptJPanel: javax.swing.JPanel;
 
-    private genericProfileActionScriptJScrollPane: javax.swing.JScrollPane
+    private genericProfileActionScriptJScrollPane: javax.swing.JScrollPane;
 
-    private ifJLabel: javax.swing.JLabel
+    private ifJLabel: javax.swing.JLabel;
 
-    private newAlwaysJButton: javax.swing.JButton
+    private newAlwaysJButton: javax.swing.JButton;
 
-    private newColorAtJButton: javax.swing.JButton
+    private newColorAtJButton: javax.swing.JButton;
 
-    private newTimeIntervalJButton: javax.swing.JButton
+    private newTimeIntervalJButton: javax.swing.JButton;
 
 }
                 

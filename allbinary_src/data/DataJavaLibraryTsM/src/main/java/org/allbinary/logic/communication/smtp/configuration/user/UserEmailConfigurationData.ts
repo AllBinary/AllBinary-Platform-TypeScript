@@ -47,6 +47,7 @@ export class UserEmailConfigurationData
         
 
     public static readonly NAME: string = "USER_EMAIL_CONFIGURATION_NAME";
+
 private constructor (){
 
             super();

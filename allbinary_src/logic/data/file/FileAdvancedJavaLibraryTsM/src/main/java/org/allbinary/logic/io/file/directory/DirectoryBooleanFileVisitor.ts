@@ -49,6 +49,7 @@ export class DirectoryBooleanFileVisitor
             extends Object
          implements VisitorInterface {
         
+
 public constructor (){
 
             super();

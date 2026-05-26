@@ -79,31 +79,28 @@ export class TransformHttpRequestDocument
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private baseNode: Node
+    private baseNode: Node;
 
-    private document: Document
+    private document: Document;
+
 public constructor (pageContext: PageContext, weblisketSession: WeblisketSession){
 
             super();
         
         try {
             
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;
-;
+    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;;
     
 this.document= DomDocumentHelper.create();
     
 
-    var contentTypeNode: Node = this.document.createElement(contentType)!;
-;
+    var contentTypeNode: Node = this.document.createElement(contentType)!;;
     
 
-    var languageTypeNode: Node = this.document.createElement(language)!;
-;
+    var languageTypeNode: Node = this.document.createElement(language)!;;
     
 
-    var localTypeNode: Node = this.document.createElement(local)!;
-;
+    var localTypeNode: Node = this.document.createElement(local)!;;
     
 this.baseNode= localTypeNode;
     
@@ -144,28 +141,25 @@ this.document.appendChild(contentTypeNode);
 
 }
 
+
 public constructor (searchRequest: SearchRequest){
 
             super();
         
         try {
             
-    var contentType: string = searchRequest!.getContentType()!;
-;
+    var contentType: string = searchRequest!.getContentType()!;;
     
 this.document= DomDocumentHelper.create();
     
 
-    var contentTypeNode: Node = this.document.createElement(contentType)!;
-;
+    var contentTypeNode: Node = this.document.createElement(contentType)!;;
     
 
-    var languageTypeNode: Node = this.document.createElement(language)!;
-;
+    var languageTypeNode: Node = this.document.createElement(language)!;;
     
 
-    var localTypeNode: Node = this.document.createElement(local)!;
-;
+    var localTypeNode: Node = this.document.createElement(local)!;;
     
 this.baseNode= localTypeNode;
     
@@ -222,8 +216,7 @@ this.document.appendChild(contentTypeNode);
             
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.baseNode != 

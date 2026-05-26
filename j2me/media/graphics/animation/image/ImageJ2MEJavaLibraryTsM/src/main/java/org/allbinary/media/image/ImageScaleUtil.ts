@@ -63,6 +63,7 @@ export class ImageScaleUtil
     
 }
 
+
 private constructor (){
 
             super();

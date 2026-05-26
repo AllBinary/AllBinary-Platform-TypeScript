@@ -67,7 +67,8 @@ export class QuoteRequestTag extends TableTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private storeName: string
+    private storeName: string;
+
 public constructor (){
 
             super();
@@ -90,22 +91,18 @@ this.storeName= storeName;
 
         try {
             
-    var anyType: any = new QuoteHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = new QuoteHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("email", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -128,8 +125,7 @@ this.storeName= storeName;
 /* catch(e) 
             {
 
-    var error: string = "Failed to send QuoteRequest emails";
-;
+    var error: string = "Failed to send QuoteRequest emails";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

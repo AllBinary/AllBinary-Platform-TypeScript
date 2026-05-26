@@ -56,8 +56,7 @@ export class BaseBasicArrayListCache
 
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("S: ");
     

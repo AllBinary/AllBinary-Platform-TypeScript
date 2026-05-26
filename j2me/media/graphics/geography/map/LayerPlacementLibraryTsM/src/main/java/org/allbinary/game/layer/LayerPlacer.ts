@@ -71,9 +71,10 @@ export class LayerPlacer
 
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
-    readonly layerInterfaceVisitor: LayerInterfaceVisitor
+    readonly layerInterfaceVisitor: LayerInterfaceVisitor;
 
-    private readonly dimension: GPoint
+    private readonly dimension: GPoint;
+
 public constructor (layerInterfaceVisitor: LayerInterfaceVisitor, dimension: GPoint){
 
             super();
@@ -88,20 +89,17 @@ this.dimension= dimension;
             
     public processList(list: BasicArrayList){
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var layerPlacementInterface: LayerPlacementInterface
-;
+    var layerPlacementInterface: LayerPlacementInterface;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface;
     
@@ -116,44 +114,34 @@ this.process(layerPlacementInterface);
             
     public process(layerPlacementInterface: LayerPlacementInterface){
 
-    var relativePoint: GPoint = this.getPoint(layerPlacementInterface)!;
-;
+    var relativePoint: GPoint = this.getPoint(layerPlacementInterface)!;;
     
 
-    var layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;
-;
+    var layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;;
     
 
-    var hashtable: Hashtable<any, any> = layerPlacementInterface!.getInstance()!;
-;
+    var hashtable: Hashtable<any, any> = layerPlacementInterface!.getInstance()!;;
     
 
-    var enumeration: Enumeration<any> = hashtable.keys()!;
-;
+    var enumeration: Enumeration<any> = hashtable.keys()!;;
     
 
-    var point: GPoint
-;
+    var point: GPoint;;
     
 
-    var layerHashtable: Hashtable<any, any>
-;
+    var layerHashtable: Hashtable<any, any>;;
     
 
-    var x: number= 0
-;
+    var x: number= 0;;
     
 
-    var y: number= 0
-;
+    var y: number= 0;;
     
 
-    var z: number= 0
-;
+    var z: number= 0;;
     
 
-    var layerInterface: AllBinaryLayer
-;
+    var layerInterface: AllBinaryLayer;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
@@ -181,32 +169,26 @@ this.layerInterfaceVisitor!.visit(layerInterface);
             
     public getPoint(layerPlacementInterface: LayerPlacementInterface): GPoint{
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var layerPlacementType: LayerPlacementType = layerPlacementInterface!.getLayerType()!;
-;
+    var layerPlacementType: LayerPlacementType = layerPlacementInterface!.getLayerType()!;;
     
 
                         if(layerPlacementType == LayerPlacementTypeFactory.getInstance()!.MAP)
                         
                                     {
                                     
-    var width: number = layerPlacementInterface!.getWidth()!;
-;
+    var width: number = layerPlacementInterface!.getWidth()!;;
     
 
-    var height: number = layerPlacementInterface!.getHeight()!;
-;
+    var height: number = layerPlacementInterface!.getHeight()!;;
     
 
-    var x: number = ((this.dimension.getX() -width) /2);
-;
+    var x: number = ((this.dimension.getX() -width) /2);;
     
 
-    var y: number = ((this.dimension.getY() -height) /2);
-;
+    var y: number = ((this.dimension.getY() -height) /2);;
     
 
 
@@ -222,20 +204,16 @@ this.layerInterfaceVisitor!.visit(layerInterface);
                         
                                     {
                                     
-    var width: number = layerPlacementInterface!.getWidth()!;
-;
+    var width: number = layerPlacementInterface!.getWidth()!;;
     
 
-    var height: number = layerPlacementInterface!.getHeight()!;
-;
+    var height: number = layerPlacementInterface!.getHeight()!;;
     
 
-    var x: number = ((this.dimension.getX() -width) /2);
-;
+    var x: number = ((this.dimension.getX() -width) /2);;
     
 
-    var y: number =  -height;
-;
+    var y: number =  -height;;
     
 
 

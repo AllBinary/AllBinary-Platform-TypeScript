@@ -64,6 +64,7 @@ export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplat
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
                     
@@ -71,6 +72,7 @@ public constructor (transformInfoInterface: Object){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (transformInfoInterface: Object, document: Object){
             super(transformInfoInterface, document);
@@ -81,6 +83,7 @@ public constructor (transformInfoInterface: Object, document: Object){
 this.setDocument(this.generate(this.toXmlDoc()));
     
 }
+
 
 public constructor (transformInfoInterface: Object, name: string, type: string){
             super(transformInfoInterface, name, type);
@@ -106,12 +109,10 @@ this.setDocument(this.generate(this.toXmlDoc()));
                                     }
                                 
 
-    var document: Document = this.toXmlDoc()!;
-;
+    var document: Document = this.toXmlDoc()!;;
     
 
-    var parentComponentsNodeList: NodeList = document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!;
-;
+    var parentComponentsNodeList: NodeList = document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!;;
     
 
                         if(parentComponentsNodeList != 
@@ -129,8 +130,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
                                     }
                                 
 
-    var componentNode: Node = parentComponentsNodeList!.item(0)!.getChildNodes()!.item(0)!;
-;
+    var componentNode: Node = parentComponentsNodeList!.item(0)!.getChildNodes()!.item(0)!;;
     
 
                         if(componentNode != 
@@ -159,18 +159,15 @@ parentComponentsNodeList!.item(0)!.appendChild(new TransformInfoDomNodeView(aPar
                                     }
                                 
 
-    var objectConfigNode: Node = document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-;
+    var objectConfigNode: Node = document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var parentComponentsNode: Node = document.createElement(TransformInfosData.getInstance()!.NAME)!;
-;
+    var parentComponentsNode: Node = document.createElement(TransformInfosData.getInstance()!.NAME)!;;
     
 objectConfigNode!.appendChild(parentComponentsNode);
     
 
-    var transformInfoDomNodeView: TransformInfoDomNodeView = new TransformInfoDomNodeView(aParentViewName);
-;
+    var transformInfoDomNodeView: TransformInfoDomNodeView = new TransformInfoDomNodeView(aParentViewName);;
     
 parentComponentsNode!.appendChild(transformInfoDomNodeView!.toXmlNode(document));
     

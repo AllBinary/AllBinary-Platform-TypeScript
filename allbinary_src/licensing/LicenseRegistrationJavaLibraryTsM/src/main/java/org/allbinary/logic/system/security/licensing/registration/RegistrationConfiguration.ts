@@ -91,6 +91,7 @@ export class RegistrationConfiguration
     public readonly NAME: string = "registrationid";
 
     private readonly FILE: string = "Registration.dat";
+
 private constructor (){
 
             super();
@@ -116,8 +117,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
@@ -130,16 +130,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
             
     read(){
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;
-;
+    var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 
-    var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);
-;
+    var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);;
     
 this.setRegistrationCode(dataInputStream!.readUTF());
     
@@ -154,20 +151,17 @@ PreLogUtil.put(new StringMaker().append("Read Configuration: ")!.append(this.toS
 
     var dataOutputStream: AbDataOutputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             this.logUtil!.putF(new StringMaker().append("Write Configuration: ")!.append(this.toString())!.toString(), this, "write");
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;
-;
+    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 dataOutputStream= new AbDataOutputStream(fileOutputStream);
     

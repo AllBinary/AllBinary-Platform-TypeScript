@@ -67,6 +67,7 @@ import { PrintStream } from '../../../../../java/io/PrintStream.js';
 
 
     /*actual*/ public static readonly PRETEND_EXCEPTION: Exception = new Exception("Not Really An Exception");
+
 private constructor (){
 
             super();
@@ -83,18 +84,15 @@ private constructor (){
                         
                                     {
                                     
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var printStream: PrintStream = new PrintStream(byteArrayOutputStream);
-;
+    var printStream: PrintStream = new PrintStream(byteArrayOutputStream);;
     
 e.printStackTrace(printStream);
     
 
-    var output: string = byteArrayOutputStream!.toString()!;
-;
+    var output: string = byteArrayOutputStream!.toString()!;;
     
 
                         if(output != 

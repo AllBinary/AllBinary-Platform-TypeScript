@@ -53,20 +53,33 @@ expect export class NullUtil
         
 
     //private static readonly instance: NullUtil
+
     public static getInstance(): NullUtil
 
     public readonly NULL_OBJECT: any
+
     public readonly NULL_CLASS: Function
+
     public readonly NULL_OBJECT_ARRAY: any[]
+
     public readonly NULL_CHAR_ARRAY: string[]
+
     public readonly NULL_BYTE_ARRAY: number[]
+
     public readonly NULL_SHORT_ARRAY_ARRAY: number[][]
+
     public readonly NULL_INT_ARRAY: number[]
+
     public readonly NULL_INT_ARRAY_ARRAY: number[][]
+
     public readonly NULL_INT_ARRAY_ARRAY_ARRAY: number[][][]
+
     public readonly NULL_FLOAT_ARRAY: number[]
+
     public readonly EMPTY_VECTOR: Vector<any>
+
     public readonly NULL_TABLE: Hashtable<any, any>
+
 }
                 
             

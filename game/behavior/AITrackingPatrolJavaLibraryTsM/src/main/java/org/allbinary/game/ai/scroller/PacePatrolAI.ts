@@ -82,11 +82,12 @@ import { Math } from './Math.js';
 export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerInterface {
         
 
-    private trackingList: BasicArrayList
+    private trackingList: BasicArrayList;
 
-    private firingDistance: number= 0
+    private firingDistance: number= 0;
 
     isFollowLimitedByTerrain: boolean = false;
+
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
@@ -106,12 +107,10 @@ this.trackingList= new BasicArrayListD();
 this.update();
     
 
-    var direction: Direction = this.setFiringDirectionForTargetIfInRange()!;
-;
+    var direction: Direction = this.setFiringDirectionForTargetIfInRange()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(direction == directionFactory!.LEFT)
@@ -172,68 +171,54 @@ super.processKeyAI(Canvas.KEY_NUM1);
 
     setFiringDirectionForTargetIfInRange(): Direction{
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var direction: Direction = directionFactory!.NOT_BORDERED_WITH;
-;
+    var direction: Direction = directionFactory!.NOT_BORDERED_WITH;;
     
 
-    var lastTrackingEvent: TrackingEvent
-;
+    var lastTrackingEvent: TrackingEvent;;
     
 
-    var lastTrackingLayerInterface: LayerInterface
-;
+    var lastTrackingLayerInterface: LayerInterface;;
     
 
-    var directionCompositeInterface: DirectionCompositeInterface
-;
+    var directionCompositeInterface: DirectionCompositeInterface;;
     
 
-    var size: number = this.trackingList!.size()!;
-;
+    var size: number = this.trackingList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 lastTrackingEvent= this.trackingList!.get(0) as TrackingEvent;
     
 lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
 
-    var x: number = lastTrackingLayerInterface!.getXP()!;
-;
+    var x: number = lastTrackingLayerInterface!.getXP()!;;
     
 
-    var y: number = lastTrackingLayerInterface!.getYP()!;
-;
+    var y: number = lastTrackingLayerInterface!.getYP()!;;
     
 
-    var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();
-;
+    var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();;
     
 
-    var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();
-;
+    var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();;
     
 
-    var absXDistance: number = Math.abs(xDistance)!;
-;
+    var absXDistance: number = Math.abs(xDistance)!;;
     
 
-    var absYDistance: number = Math.abs(yDistance)!;
-;
+    var absYDistance: number = Math.abs(yDistance)!;;
     
 
                         if(absYDistance <= 100)

@@ -55,9 +55,10 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
 export class EndGameProcessor extends Processor {
         
 
-    private gameCanvas: AllBinaryGameCanvas
+    private gameCanvas: AllBinaryGameCanvas;
 
     private readonly WAIT: number = 5000;
+
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -82,8 +83,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
                         
                                     {
                                     
-    var highScores: HighScores = this.gameCanvas!.highScoresHelper!.getSelectedHighScores()!;
-;
+    var highScores: HighScores = this.gameCanvas!.highScoresHelper!.getSelectedHighScores()!;;
     
 
                         if(highScores != NullHighScoresSingletonFactory.getInstance())

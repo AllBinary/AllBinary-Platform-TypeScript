@@ -74,8 +74,7 @@ export class DisplaysUtil
 
     public getPrimaryScreenSize(): Rectangle{
 
-    var dimension: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;
-;
+    var dimension: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;;
     
 
 
@@ -88,41 +87,33 @@ export class DisplaysUtil
 
     public getScreenSizesAsRectangleArray(): Rectangle[]{
 
-    var graphicsEnvironment: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;
-;
+    var graphicsEnvironment: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
     
 
-    var graphicsDeviceArray: GraphicsDevice[] = graphicsEnvironment!.getScreenDevices()!;
-;
+    var graphicsDeviceArray: GraphicsDevice[] = graphicsEnvironment!.getScreenDevices()!;;
     
 
-    var graphicsDevice: GraphicsDevice
-;
+    var graphicsDevice: GraphicsDevice;;
     
 
-    var displayMode: DisplayMode
-;
+    var displayMode: DisplayMode;;
     
 
-    var rectangle: Rectangle
-;
+    var rectangle: Rectangle;;
     
 
     var size: number = graphicsDeviceArray!.length
-                ;
-;
+                ;;
     
 
-    var rectangleArray: Rectangle[] = new Array(size);
-;
+    var rectangleArray: Rectangle[] = new Array(size);;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 graphicsDevice= graphicsDeviceArray[index]!;
     

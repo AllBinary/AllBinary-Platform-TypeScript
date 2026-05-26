@@ -61,12 +61,10 @@ export class InitDbHelperFactory
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface): any{
 
-    var params: any[] = new Array(1);
-;
+    var params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);
-;
+    var classes: Function[] = new Array(1);;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
@@ -75,8 +73,7 @@ classes[0]=
 params[0]= databaseConnectionInfoInterface;
     
 
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;
-;
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;;
     
 
 
@@ -93,8 +90,7 @@ params[0]= databaseConnectionInfoInterface;
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, 
                             null, 
-                            null)!;
-;
+                            null)!;;
     
 
 
@@ -103,6 +99,7 @@ params[0]= databaseConnectionInfoInterface;
                         return anyType;
     
 }
+
 
 private constructor (){
 

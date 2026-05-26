@@ -70,8 +70,7 @@ export class WaypointEventHandlerFactory
 
 
                         for (
-    var index: number = WaypointEventHandlerFactory.eventHandlerArray!.length -1;
-index >= 0; index--)
+    var index: number = WaypointEventHandlerFactory.eventHandlerArray!.length -1;index >= 0; index--)
         {
 WaypointEventHandlerFactory.eventHandlerArray[index]!.removeAllListeners();
     

@@ -55,6 +55,7 @@ export class UrlGlobalsData
     public static readonly TESTINGHTMLPATH: string = "URLGLOBALS_TESTINGHTMLPATH";
 
     public static readonly MAINPATH: string = "URLGLOBALS_MAINPATH";
+
 private constructor (){
 
             super();

@@ -76,7 +76,8 @@ export class PaymentGatewaysView extends HttpStoreComponentView implements DomNo
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private paymentGatewayVector: Vector
+    private paymentGatewayVector: Vector;
+
 public constructor (transformInfoInterface: TransformInfoInterface, gatewayVector: Vector){
             super(transformInfoInterface);
                     
@@ -94,38 +95,31 @@ this.paymentGatewayVector= gatewayVector;
 
         try {
             
-    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-;
+    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
     
 
-    var paymentGatewaysNode: Node = document.createElement(PaymentGatewaysData.NAME)!;
-;
+    var paymentGatewaysNode: Node = document.createElement(PaymentGatewaysData.NAME)!;;
     
 
-    var size: number = this.paymentGatewayVector!.length!;
-;
+    var size: number = this.paymentGatewayVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index) as BasicPaymentType;
-;
+    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index) as BasicPaymentType;;
     
 
-    var hashMap: HashMap<any, any> = paymentType!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = paymentType!.toHashMap()!;;
     
 hashMap!.put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName());
     
 
-    var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;
-;
+    var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;;
     
 paymentGatewaysNode!.appendChild(paymentGatewayNode);
     
@@ -182,8 +176,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 } catch(e) 
             {
 
-    var error: string = "Failed to view payment gateways";
-;
+    var error: string = "Failed to view payment gateways";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))

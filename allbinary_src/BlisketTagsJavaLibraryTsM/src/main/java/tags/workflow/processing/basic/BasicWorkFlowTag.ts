@@ -57,6 +57,7 @@ export class BasicWorkFlowTag extends StoreWorkFlowTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();

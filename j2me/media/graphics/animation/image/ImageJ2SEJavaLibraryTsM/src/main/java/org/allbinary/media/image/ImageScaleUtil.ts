@@ -78,6 +78,7 @@ export class ImageScaleUtil
     private readonly imageJ2SEUtil: ImageJ2SEUtil = ImageJ2SEUtil.getInstance()!;
 
     private readonly imageCreationUtil: ImageCreationUtil = ImageCreationUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -100,24 +101,19 @@ private constructor (){
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
 
-    var width: number = originalImage!.getWidth()!;
-;
+    var width: number = originalImage!.getWidth()!;;
     
 
-    var height: number = originalImage!.getHeight()!;
-;
+    var height: number = originalImage!.getHeight()!;;
     
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;
-;
+    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;
-;
+    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
-    var image: Image
-;
+    var image: Image;;
     
 
                         if(cached)
@@ -164,20 +160,16 @@ this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false);
 
     public scale(originalImage: Image, newMaxSizeImage: Image, scaleX: number, scaleY: number, clear: boolean){
 
-    var bufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;
-;
+    var bufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;;
     
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(newMaxSizeImage)!;
-;
+    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(newMaxSizeImage)!;;
     
 
-    var at: AffineTransform = AffineTransform.getScaleInstance(scaleX, scaleY)!;
-;
+    var at: AffineTransform = AffineTransform.getScaleInstance(scaleX, scaleY)!;;
     
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;
-;
+    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 
                         if(clear)

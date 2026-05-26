@@ -65,11 +65,12 @@ export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInt
 
     private readonly tableName: string = "idgenerator";
 
-    private readonly tableData: string
+    private readonly tableData: string;
 
     readonly NAME: string = "NAME";
 
     readonly VALUE: string = "VALUE";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -87,14 +88,12 @@ super.setTableName(this.tableName);
             
     public get(name: string): Long{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(this.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if((get as string).compareTo(name) != 0)
@@ -109,8 +108,7 @@ keysAndValues!.put(this.NAME, name);
                                     }
                                 
 
-    var value: string = hashMap!.get(this.VALUE) as string;
-;
+    var value: string = hashMap!.get(this.VALUE) as string;;
     
 
 
@@ -159,8 +157,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, this.commonStrings!.delete,
 
     public update(name: string, value: Long){
 
-    var map: HashMap<any, any> = new HashMap<any, any>();
-;
+    var map: HashMap<any, any> = new HashMap<any, any>();;
     
 map.put(this.NAME, name);
     
@@ -179,8 +176,7 @@ super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
 
     public createTable(): string{
 
-    var returnStr: string = super.createTable(tableData)!;
-;
+    var returnStr: string = super.createTable(tableData)!;;
     
 
 

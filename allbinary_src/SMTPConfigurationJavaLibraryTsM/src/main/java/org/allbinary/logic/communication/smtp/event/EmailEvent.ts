@@ -51,11 +51,12 @@ import { StringMaker } from '../../../../../../org/allbinary/logic/string/String
 export class EmailEvent extends EventObject {
         
 
-    private emailInfo: EmailInfo
+    private emailInfo: EmailInfo;
 
-    private userEmailEventNameData: UserEmailEventNameData
+    private userEmailEventNameData: UserEmailEventNameData;
 
-    private attempts: number= 0
+    private attempts: number= 0;
+
 public constructor (emailEventHandler: any = {}, userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo, attempts: number){
             super(emailEventHandler);
                     
@@ -97,8 +98,7 @@ this.attempts= attempts;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("EmailEvent Log: \n");
     

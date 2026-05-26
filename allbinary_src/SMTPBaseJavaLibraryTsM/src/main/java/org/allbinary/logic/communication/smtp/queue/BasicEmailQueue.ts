@@ -57,7 +57,7 @@ export class BasicEmailQueue extends BasicQueue implements EmailQueueInterface {
 
     private static readonly instance: BasicEmailQueue = new BasicEmailQueue();
 
-    private static basicEmailQueue: BasicEmailQueue
+    private static basicEmailQueue: BasicEmailQueue;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): BasicEmailQueue{
@@ -82,6 +82,7 @@ export class BasicEmailQueue extends BasicQueue implements EmailQueueInterface {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -146,20 +147,17 @@ this.processAllUnsent();
 
     processAllUnsent(){
 
-    var size: number = queueVector!.size()!;
-;
+    var size: number = queueVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var emailInterface: EmailInterface = queueVector!.get(index) as EmailInterface;
-;
+    var emailInterface: EmailInterface = queueVector!.get(index) as EmailInterface;;
     
 
                         if(this.send(emailInterface))

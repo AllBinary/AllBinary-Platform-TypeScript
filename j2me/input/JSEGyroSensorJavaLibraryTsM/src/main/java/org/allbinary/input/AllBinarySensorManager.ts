@@ -65,6 +65,7 @@ export class AllBinarySensorManager
     public readonly ORIENTATION_SENSOR_INPUT: string = "Orientation Sensor Input";
 
     public readonly ORIENTATION_TYPE: string = "Orientation Type";
+
 private constructor (){
 
             super();

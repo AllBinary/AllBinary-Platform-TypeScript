@@ -57,13 +57,13 @@ import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProc
 export class PaymentProcessHelper extends TagHelper {
         
 
-    private paymentProcessorComponent: PaymentProcessorComponent
+    private paymentProcessorComponent: PaymentProcessorComponent;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext) as TransformInfoHttpInterface;
-;
+    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext) as TransformInfoHttpInterface;;
     
 this.paymentProcessorComponent= new PaymentProcessorComponent(transformInfoInterface);
     

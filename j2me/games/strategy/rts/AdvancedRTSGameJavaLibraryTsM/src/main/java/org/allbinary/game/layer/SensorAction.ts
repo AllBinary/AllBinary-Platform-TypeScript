@@ -46,7 +46,8 @@ export class SensorAction
          {
         
 
-    public readonly name: string
+    public readonly name: string;
+
 public constructor (name: string){
 
             super();

@@ -63,9 +63,10 @@ export class SimpleTransform
          {
         
 
-    private readonly xsltFilePath: AbPath
+    private readonly xsltFilePath: AbPath;
 
-    private readonly dataFilePath: AbPath
+    private readonly dataFilePath: AbPath;
+
 public constructor (xsltFilePath: AbPath, dataFilePath: AbPath){
 
             super();
@@ -80,16 +81,13 @@ this.dataFilePath= dataFilePath;
             
     public transform(): string{
 
-    var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(new AbFile(this.xsltFilePath));
-;
+    var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(new AbFile(this.xsltFilePath));;
     
 
-    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(new AbFile(this.dataFilePath)))!;
-;
+    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(new AbFile(this.dataFilePath)))!;;
     
 
-    var result: string = XslHelper.getInstance()!.translate(new StreamSource(inputStream), new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(document))))!;
-;
+    var result: string = XslHelper.getInstance()!.translate(new StreamSource(inputStream), new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(document))))!;;
     
 
 

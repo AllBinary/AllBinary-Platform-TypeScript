@@ -75,6 +75,7 @@ export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -118,14 +119,12 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;
-;
+    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;;
     
 miniMapLayer!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
     
@@ -149,22 +148,19 @@ super.fireEvent(eventObject);
 
     public fireRemoveEvent(eventObject: AllBinaryEventObject){
 
-    var list: BasicArrayList = this.eventListenerInterfaceList;
-;
+    var list: BasicArrayList = this.eventListenerInterfaceList;;
     
 
 
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;
-;
+    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;;
     
 miniMapLayer!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
     
@@ -179,24 +175,20 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance(
 }
 
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface
-;
+    var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
         try {
@@ -223,8 +215,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance(
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface = (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
-;
+    var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface = (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);;
     
 geographicMapCellPositionEventListenerInterface!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
     

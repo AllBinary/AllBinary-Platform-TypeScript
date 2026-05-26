@@ -57,6 +57,7 @@ export class ShippingHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.ShippingHelper";
 
     private static readonly FACTORYNAME: string = "ShippingHelperFactory";
+
 public constructor (){
 
             super();

@@ -61,7 +61,8 @@ export class ContextConfiguration
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private emailServerConfigurationInterface: EmailServerConfigurationInterface
+    private emailServerConfigurationInterface: EmailServerConfigurationInterface;
+
 public constructor (){
 
             super();
@@ -70,6 +71,7 @@ public constructor (){
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as EmailServerConfigurationInterface);
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 

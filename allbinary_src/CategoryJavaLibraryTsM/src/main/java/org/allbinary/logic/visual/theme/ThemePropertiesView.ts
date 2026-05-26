@@ -58,7 +58,8 @@ export class ThemePropertiesView
          implements DomNodeInterface {
         
 
-    private themeInterface: ThemeInterface
+    private themeInterface: ThemeInterface;
+
 public constructor (themeInterface: ThemeInterface){
 
             super();
@@ -71,8 +72,7 @@ public constructor (themeInterface: ThemeInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.themeInterface!.toHashMap())!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.themeInterface!.toHashMap())!;;
     
 
 

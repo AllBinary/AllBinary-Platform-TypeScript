@@ -67,17 +67,17 @@ export class BasicWeblisketSession
          {
         
 
-    private session: HttpSession
+    private session: HttpSession;
 
-    private pageContext: PageContext
+    private pageContext: PageContext;
+
 public constructor (pageContext: PageContext){
 
             super();
         this.pageContext= pageContext;
     
 
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
-;
+    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 this.session= request.getSession(true);
     
@@ -252,8 +252,7 @@ this.session.removeAttribute(UserData.USERNAME);
 
     public getLastAccessedTime(): number{
 
-    var lastAccessedTime: number = this.session.getLastAccessedTime()!;
-;
+    var lastAccessedTime: number = this.session.getLastAccessedTime()!;;
     
 
 

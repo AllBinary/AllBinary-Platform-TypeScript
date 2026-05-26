@@ -61,7 +61,8 @@ import { ExitRunnable } from './ExitRunnable.js';
 export class ProgressMidlet extends AllBinaryMidlet {
         
 
-    public readonly abeClientInformation: AbeClientInformationInterface
+    public readonly abeClientInformation: AbeClientInformationInterface;
+
 public constructor (clientInformationFactory: ClientInformationFactory){
 
             super();
@@ -78,18 +79,15 @@ this.abeClientInformation= clientInformationFactory!.getInstance();
 
     exitProgress(isProgress: boolean){
 
-    var processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;
-;
+    var processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;;
     
 
         try {
             
-    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
-;
+    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
     
 
-    var runnable: Runnable = new ExitRunnable(this, processor, isProgress);
-;
+    var runnable: Runnable = new ExitRunnable(this, processor, isProgress);;
     
 primaryThreadPool!.runTask(runnable);
     

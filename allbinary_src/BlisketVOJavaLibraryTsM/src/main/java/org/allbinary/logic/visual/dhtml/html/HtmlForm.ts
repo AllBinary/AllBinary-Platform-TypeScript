@@ -73,11 +73,12 @@ export class HtmlForm
 
     private readonly METHOD: string = "METHOD=\"";
 
-    private method: string
+    private method: string;
 
-    private action: string
+    private action: string;
 
-    inputs: Vector
+    inputs: Vector;
+
 public constructor (action: string){
 
             super();
@@ -114,21 +115,17 @@ this.inputs.add(htmlTable);
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;
-;
+    var result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var inputArray: any[] = this.inputs.toArray()!;
-;
+    var inputArray: any[] = this.inputs.toArray()!;;
     
 
     var inputSize: number = inputArray!.length
-                ;
-;
+                ;;
     
 result= this.FORMBEGIN;
     
@@ -151,8 +148,7 @@ result += this.END;
 
 
                         for (
-    var i: number = 0;
-i < inputSize; i++)
+    var i: number = 0;i < inputSize; i++)
         {
 result += inputArray[i]!.toString();
     

@@ -62,7 +62,8 @@ export class RTSLayerCompositePaintable extends Paintable {
 
     private readonly DOWNGRADE: string = "Down: $-";
 
-    readonly upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable
+    readonly upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable;
+
 public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable){
 
             super();

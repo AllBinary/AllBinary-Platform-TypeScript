@@ -62,19 +62,18 @@ export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly scrollSelectionForm: ScrollSelectionForm
+    private readonly scrollSelectionForm: ScrollSelectionForm;
+
 protected constructor (label: string, itemArrayFactoryInterface: ItemArraySingletonFactoryInterface){
 
             super();
         
-    var scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM;
-;
+    var scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM;;
     
 
         try {
             
-    var items: ABCustomItem[] = itemArrayFactoryInterface!.getItems()!;
-;
+    var items: ABCustomItem[] = itemArrayFactoryInterface!.getItems()!;;
     
 scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items);
     
@@ -83,8 +82,7 @@ scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     

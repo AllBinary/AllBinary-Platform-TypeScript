@@ -85,8 +85,7 @@ export class WaypointSelectedLogHelper extends WaypointLogHelper {
 
     public onWaypointEvent(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -114,8 +113,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "onWaypointEvent");
 
     public addWaypointFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -143,8 +141,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 
     public addWaypointFromBuildingList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface, list: BasicArrayList){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -159,8 +156,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 
     public insertWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -181,8 +177,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
 
     public insertWaypointList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string, list: BasicArrayList){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -205,12 +200,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
 
     public setRandomGeographicMapCellHistoryList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
 
-    var size: number = pathsList!.size()!;
-;
+    var size: number = pathsList!.size()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     

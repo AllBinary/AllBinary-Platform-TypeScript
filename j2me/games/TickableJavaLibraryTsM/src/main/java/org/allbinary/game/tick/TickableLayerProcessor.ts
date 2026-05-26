@@ -53,6 +53,7 @@ import { TickableInterface } from './TickableInterface.js';
 
 export class TickableLayerProcessor extends LayerProcessor {
         
+
 public constructor (){
             super(new TickableLayerManager());
                     
@@ -66,8 +67,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var tickableInterface: TickableInterface = layerInterface as TickableInterface;
-;
+    var tickableInterface: TickableInterface = layerInterface as TickableInterface;;
     
 tickableInterface!.processTick(allBinaryLayerManager);
     

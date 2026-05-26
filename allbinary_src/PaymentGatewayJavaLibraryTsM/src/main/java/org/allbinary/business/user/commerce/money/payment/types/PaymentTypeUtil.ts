@@ -111,7 +111,7 @@ export class PaymentTypeUtil
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly PAYMENTGATEWAYFILEPATHSTRING: string
+    private readonly PAYMENTGATEWAYFILEPATHSTRING: string;
 
     private readonly SHIPPINGMETHODSFILENAME: string = "paymentGatewayTypes.xml";
 
@@ -120,16 +120,15 @@ export class PaymentTypeUtil
             ;
 
     private paymentTypeVector: Vector = new Vector();
+
 private constructor (){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var sep: string = AbPathData.getInstance()!.SEPARATOR;
-;
+    var sep: string = AbPathData.getInstance()!.SEPARATOR;;
     
 stringBuffer!.append(sep);
     
@@ -172,20 +171,17 @@ this.paymentTypeVector!.add(paymentType);
             
     public get(paymentTypeString: string): PaymentType{
 
-    var size: number = this.paymentTypeVector!.length!;
-;
+    var size: number = this.paymentTypeVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;
-;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;;
     
 
                         if(paymentType!.getBasicPaymentType()!.getName()!.compareTo(paymentTypeString) == 0)
@@ -227,8 +223,7 @@ i < size; i++)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -241,40 +236,32 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(this.PAYMENTGATEWAYFILEPATHSTRING);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
-;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(abPath)!;
-;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(data)!;
-;
+    var document: Document = DomDocumentHelper.create(data)!;;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(PaymentGatewaysData.NAME)!;
-;
+    var nodeList: NodeList = document.getElementsByTagName(PaymentGatewaysData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
-    var defaultPaymentGatewayNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.DEFAULT, node.getChildNodes())!;
-;
+    var defaultPaymentGatewayNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.DEFAULT, node.getChildNodes())!;;
     
 
-    var defaultPaymentGatewayNodeValue: string = DomNodeHelper.getTextNodeValue(defaultPaymentGatewayNode)!;
-;
+    var defaultPaymentGatewayNodeValue: string = DomNodeHelper.getTextNodeValue(defaultPaymentGatewayNode)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
@@ -349,24 +336,20 @@ this.initDefault(storeName);
 
     public difference(a_PaymentTypeVector: Vector): Vector{
 
-    var diff: Vector = new Vector();
-;
+    var diff: Vector = new Vector();;
     
 
-    var size: number = this.paymentTypeVector!.length!;
-;
+    var size: number = this.paymentTypeVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;
-;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;;
     
 
                         if(!a_PaymentTypeVector!.contains(paymentType))

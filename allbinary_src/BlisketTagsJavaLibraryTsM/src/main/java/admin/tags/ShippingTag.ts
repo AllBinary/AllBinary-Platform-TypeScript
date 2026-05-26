@@ -68,11 +68,12 @@ export class ShippingTag extends CustomTagSupport {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private command: string
+    private command: string;
 
-    private storeName: string
+    private storeName: string;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
+
 public constructor (){
 
             super();
@@ -97,22 +98,18 @@ this.storeName= value;
 
         try {
             
-    var anyType: any = new ShippingHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;
-;
+    var anyType: any = new ShippingHelperFactory().getInstance(this.propertiesHashMap, this.pageContext)!;;
     
 
-    var addressHelperClass: Function = anyType!.constructor!;
-;
+    var addressHelperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("setShippingType", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -135,8 +132,7 @@ this.storeName= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to view Shipping Type";
-;
+    var error: string = "Failed to view Shipping Type";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

@@ -61,8 +61,7 @@ export class TouchScreenTypeFactory
 
     public TouchScreenTypeFactory(){
 
-    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
-;
+    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
     
 touchScreenFactory!.setTouch(true);
     

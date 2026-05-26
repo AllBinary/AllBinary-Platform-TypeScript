@@ -54,7 +54,8 @@ export class BaseAnimationInterfaceFactoryInterfaceComposite
          implements AnimationInterfaceFactoryInterface {
         
 
-    private basicAnimationInterfaceFactoryInterfaceArray: BasicAnimationInterfaceFactoryInterface[]
+    private basicAnimationInterfaceFactoryInterfaceArray: BasicAnimationInterfaceFactoryInterface[];
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: BasicAnimationInterfaceFactoryInterface[]){
 
             super();

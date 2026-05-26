@@ -88,7 +88,8 @@ export class KeyboardActionScriptInputJPanel extends javax.swing.JPanel {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private keyActionScriptInputInterface: KeyboardActionScriptInputInterface
+    private keyActionScriptInputInterface: KeyboardActionScriptInputInterface;
+
 public constructor (keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
 
             super();
@@ -99,8 +100,7 @@ this.initComponents();
 this.keyActionScriptInputInterface= keyActionScriptInputInterface;
     
 
-    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
-;
+    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
     
 defaultComboBoxModel!.addElement(TempInputRobotNames.DX_NAME);
     
@@ -158,8 +158,7 @@ this.set();
 
     set(){
 
-    var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-;
+    var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 inputTypeComboBoxModel!.setSelectedItem(this.keyActionScriptInputInterface!.getInputRobotInterface()!.getName());
     
@@ -178,12 +177,10 @@ this.keyActionScriptInputInterface!.log();
             
     updateInputType(){
 
-    var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-;
+    var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;
-;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
@@ -199,12 +196,10 @@ this.keyActionScriptInputInterface!.log();
 
     getSelectedKey(): Integer{
 
-    var comboBoxModel: ComboBoxModel = this.keyNameJComboBox!.getModel()!;
-;
+    var comboBoxModel: ComboBoxModel = this.keyNameJComboBox!.getModel()!;;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;
-;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
@@ -230,8 +225,7 @@ this.keyActionScriptInputInterface!.log();
 
     updateKeys(){
 
-    var text: string = this.textJTextField!.getText()!;
-;
+    var text: string = this.textJTextField!.getText()!;;
     
 this.keyActionScriptInputInterface!.setText(text);
     
@@ -464,8 +458,7 @@ keyIntegerJComboBoxActionPerformed(evt);
                             );
     
 
-    var keyActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.keyActionJDialog!.getContentPane());
-;
+    var keyActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.keyActionJDialog!.getContentPane());;
     
 this.keyActionJDialog!.getContentPane()!.setLayout(keyActionJDialogLayout);
     
@@ -491,8 +484,7 @@ keyActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Key:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -511,8 +503,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
                         
                                     {
                                     
-    var newKey: string = "&#" +integer.toString() +";";
-;
+    var newKey: string = "&#" +integer.toString() +";";;
     
 this.textJTextField!.setText(newKey +this.textJTextField!.getText());
     
@@ -562,8 +553,7 @@ this.sequenceJRadioButton!.setSelected(false);
 
     keyNameJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var integer: Integer = this.getSelectedKey()!;
-;
+    var integer: Integer = this.getSelectedKey()!;;
     
 this.prependText(integer);
     
@@ -651,49 +641,49 @@ this.normalJRadioButton!.setSelected(false);
 }
 
 
-    private addKeyJLabel: javax.swing.JLabel
+    private addKeyJLabel: javax.swing.JLabel;
 
-    private delayBetweenJLabel: javax.swing.JLabel
+    private delayBetweenJLabel: javax.swing.JLabel;
 
-    private delayJTextField: javax.swing.JTextField
+    private delayJTextField: javax.swing.JTextField;
 
-    private holdTimeJLabel: javax.swing.JLabel
+    private holdTimeJLabel: javax.swing.JLabel;
 
-    private inputAutomationTypeJComboBox: javax.swing.JComboBox
+    private inputAutomationTypeJComboBox: javax.swing.JComboBox;
 
-    private inputTypeJLabel: javax.swing.JLabel
+    private inputTypeJLabel: javax.swing.JLabel;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private keyActionJButton: javax.swing.JButton
+    private keyActionJButton: javax.swing.JButton;
 
-    private keyActionJDialog: javax.swing.JDialog
+    private keyActionJDialog: javax.swing.JDialog;
 
-    private keyIntegerJComboBox: javax.swing.JComboBox
+    private keyIntegerJComboBox: javax.swing.JComboBox;
 
-    private keyNameJComboBox: javax.swing.JComboBox
+    private keyNameJComboBox: javax.swing.JComboBox;
 
-    private normalJRadioButton: javax.swing.JRadioButton
+    private normalJRadioButton: javax.swing.JRadioButton;
 
-    private okJButton: javax.swing.JButton
+    private okJButton: javax.swing.JButton;
 
-    private pressJRadioButton: javax.swing.JRadioButton
+    private pressJRadioButton: javax.swing.JRadioButton;
 
-    private releaseJRadioButton: javax.swing.JRadioButton
+    private releaseJRadioButton: javax.swing.JRadioButton;
 
-    private sequenceJRadioButton: javax.swing.JRadioButton
+    private sequenceJRadioButton: javax.swing.JRadioButton;
 
-    private simultaneousJRadioButton: javax.swing.JRadioButton
+    private simultaneousJRadioButton: javax.swing.JRadioButton;
 
-    private testJLabel: javax.swing.JLabel
+    private testJLabel: javax.swing.JLabel;
 
-    private textJTextField: javax.swing.JTextField
+    private textJTextField: javax.swing.JTextField;
 
-    private timeJTextField: javax.swing.JTextField
+    private timeJTextField: javax.swing.JTextField;
 
-    private titleJLabel: javax.swing.JLabel
+    private titleJLabel: javax.swing.JLabel;
 
 }
                 

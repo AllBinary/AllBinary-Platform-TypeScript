@@ -65,6 +65,7 @@ export class GameInputProcessor
     
 }
 
+
 protected constructor (){
 
             super();

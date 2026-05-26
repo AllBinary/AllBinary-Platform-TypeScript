@@ -65,9 +65,10 @@ export class CommandRunnable
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly commandFormInputProcessor: CommandFormInputProcessor
+    private readonly commandFormInputProcessor: CommandFormInputProcessor;
 
-    private readonly command: Command
+    private readonly command: Command;
+
 public constructor (commandFormInputProcessor: CommandFormInputProcessor, command: Command){
 
             super();
@@ -84,12 +85,10 @@ this.command= command;
             this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-    var canvas: MyCanvas = this.commandFormInputProcessor!.getCanvas()!;
-;
+    var canvas: MyCanvas = this.commandFormInputProcessor!.getCanvas()!;;
     
 
-    var commandListener: CommandListener = canvas.getCustomCommandListener()!;
-;
+    var commandListener: CommandListener = canvas.getCustomCommandListener()!;;
     
 commandListener!.commandAction(this.command, canvas);
     

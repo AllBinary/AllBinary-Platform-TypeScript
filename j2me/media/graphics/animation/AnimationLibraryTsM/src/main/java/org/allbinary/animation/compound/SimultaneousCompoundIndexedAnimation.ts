@@ -56,7 +56,8 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
 export class SimultaneousCompoundIndexedAnimation extends IndexedAnimation {
         
 
-    private animationInterfaceArray: Animation[]
+    private animationInterfaceArray: Animation[];
+
 public constructor (animationInterfaceArray: Animation[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -70,8 +71,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
     public setFrame(frameIndex: number){
 
-    var indexedAnimation: IndexedAnimation
-;
+    var indexedAnimation: IndexedAnimation;;
     
 
 
@@ -79,8 +79,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation;
     
@@ -93,8 +92,7 @@ indexedAnimation!.setFrame(frameIndex);
 
     public getFrame(): number{
 
-    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;
-;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;;
     
 
 
@@ -107,8 +105,7 @@ indexedAnimation!.setFrame(frameIndex);
 
     public getSize(): number{
 
-    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;
-;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;;
     
 
 
@@ -121,8 +118,7 @@ indexedAnimation!.setFrame(frameIndex);
 
     public previousFrame(){
 
-    var indexedAnimation: IndexedAnimation
-;
+    var indexedAnimation: IndexedAnimation;;
     
 
 
@@ -130,8 +126,7 @@ indexedAnimation!.setFrame(frameIndex);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation;
     
@@ -165,8 +160,7 @@ indexedAnimation!.previousFrame();
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextFrame();
     
@@ -178,16 +172,14 @@ this.animationInterfaceArray[index]!.nextFrame();
     public paintXY(graphics: Graphics, x: number, y: number){
 
     var size: number = this.animationInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
     
@@ -199,16 +191,14 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
 
     var size: number = this.animationInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
     

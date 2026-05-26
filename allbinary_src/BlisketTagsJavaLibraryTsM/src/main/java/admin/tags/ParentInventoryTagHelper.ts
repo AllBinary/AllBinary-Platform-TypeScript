@@ -87,8 +87,7 @@ export class ParentInventoryTagHelper
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have at least a ");
     

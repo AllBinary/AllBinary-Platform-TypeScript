@@ -45,10 +45,12 @@
         
 export class InitException extends Exception {
         
+
 public constructor (){
 
             super();
         }
+
 
 public constructor (msg: string){
             super(msg);

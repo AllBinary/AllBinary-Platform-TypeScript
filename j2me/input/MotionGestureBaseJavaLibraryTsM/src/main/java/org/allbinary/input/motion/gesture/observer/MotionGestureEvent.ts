@@ -70,11 +70,12 @@ export class MotionGestureEvent extends AllBinaryEventObject {
 
     private motionGesture: MotionGestureInput = TouchMotionGestureFactory.getInstance()!.NO_MOTION;
 
-    private readonly id: number
+    private readonly id: number;
 
     private previousPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
 
     private currentPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
+
 public constructor (source: any = {}, id: number, motionGesture: MotionGestureInput){
             super(source);
                     
@@ -138,12 +139,10 @@ this.currentPoint= currentPoint;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append(stringUtil!.toString(this.motionGesture));
     

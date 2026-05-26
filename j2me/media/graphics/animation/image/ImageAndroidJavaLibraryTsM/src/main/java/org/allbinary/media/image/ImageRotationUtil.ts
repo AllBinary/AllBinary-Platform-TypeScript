@@ -74,6 +74,7 @@ export class ImageRotationUtil
 
 
     private readonly matrix: Matrix = new Matrix();
+
 private constructor (){
 
             super();
@@ -86,30 +87,25 @@ private constructor (){
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
-;
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var bitmap: Bitmap = (image as AndroidImageInterface).getBitmap()!;
-;
+    var bitmap: Bitmap = (image as AndroidImageInterface).getBitmap()!;;
     
 
-    var width: number = bitmap.getWidth()!;
-;
+    var width: number = bitmap.getWidth()!;;
     
 
-    var height: number = bitmap.getHeight()!;
-;
+    var height: number = bitmap.getHeight()!;;
     
 this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
     
 
-    var canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;
-;
+    var canvas: Canvas = (image as AndroidImageInterface).getCanvas()!;;
     
 canvas.concat(this.matrix);
     

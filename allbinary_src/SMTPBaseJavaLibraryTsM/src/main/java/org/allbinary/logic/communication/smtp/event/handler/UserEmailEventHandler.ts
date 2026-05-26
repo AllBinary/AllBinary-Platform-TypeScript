@@ -58,11 +58,12 @@ export class UserEmailEventHandler
          {
         
 
-    private emailVector: Vector
+    private emailVector: Vector;
 
-    private emailInfo: EmailInfo
+    private emailInfo: EmailInfo;
 
-    private userEmailEventNameData: UserEmailEventNameData
+    private userEmailEventNameData: UserEmailEventNameData;
+
 public constructor (){
 
             super();
@@ -87,20 +88,17 @@ this.fireEmailEvent();
 
     public addListener(vector: Vector){
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index) as UserEmailEventListenerInterface;
-;
+    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index) as UserEmailEventListenerInterface;;
     
 this.addListener(userEmailEventListenerInterface);
     
@@ -128,24 +126,20 @@ this.emailVector!.remove(emailEventListenerInterface);
 
     public fireEmailEvent(){
 
-    var emailEvent: EmailEvent = new EmailEvent(this, this.userEmailEventNameData, this.emailInfo, 0);
-;
+    var emailEvent: EmailEvent = new EmailEvent(this, this.userEmailEventNameData, this.emailInfo, 0);;
     
 
-    var size: number = this.emailVector!.length!;
-;
+    var size: number = this.emailVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index) as UserEmailEventListenerInterface;
-;
+    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index) as UserEmailEventListenerInterface;;
     
 emailEventListenerInterface!.onEmailSendRequest(emailEvent);
     

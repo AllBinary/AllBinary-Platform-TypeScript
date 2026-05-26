@@ -68,9 +68,10 @@ export class BillingAddressView extends HttpStoreComponentView implements DomNod
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    streetAddress: StreetAddress
+    streetAddress: StreetAddress;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -98,8 +99,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 
         try {
             
-    var formNode: Node = document.createElement(StreetAddressData.FORM)!;
-;
+    var formNode: Node = document.createElement(StreetAddressData.FORM)!;;
     
 formNode!.appendChild(this.streetAddress!.toXmlNode(document));
     

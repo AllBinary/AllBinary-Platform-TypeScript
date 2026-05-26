@@ -54,6 +54,7 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
 
 export class OptimizedGameInputLayerProcessorForCollidableLayer extends LayerProcessor {
         
+
 public constructor (){
             super(new OptimizedGameInputLayerManager());
                     
@@ -67,8 +68,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var gameInputInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;
-;
+    var gameInputInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;;
     
 gameInputInterface!.processInput(allBinaryLayerManager);
     

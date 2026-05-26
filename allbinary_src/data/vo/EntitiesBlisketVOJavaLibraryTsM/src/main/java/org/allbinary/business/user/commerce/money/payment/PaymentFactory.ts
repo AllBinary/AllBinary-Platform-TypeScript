@@ -58,8 +58,7 @@ export class PaymentFactory
 
     public static getInstance(request: ServletRequest): PaymentInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -74,8 +73,7 @@ export class PaymentFactory
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
@@ -95,6 +93,7 @@ export class PaymentFactory
 }
 
 }
+
 
 private constructor (){
 

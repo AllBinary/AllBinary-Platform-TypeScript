@@ -60,6 +60,7 @@ export class LogUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -68,20 +69,16 @@ private constructor (){
 
     public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 
 

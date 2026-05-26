@@ -50,7 +50,9 @@ expect export class LogUtil
         
 
     //private static readonly instance: LogUtil
+
     public static getInstance(): LogUtil
+
 
 
     public putL(log: Log)

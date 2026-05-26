@@ -55,6 +55,7 @@ export class DisplayInBrowserContraintsData
     public static readonly QUICKFRAMEABLE: string = "DISPLAYBROWSERCONSTRAINTS_QUICKFRAMEABLE";
 
     public static readonly MOUNTABLELINK: string = "DISPLAYBROWSERCONSTRAINTS_MOUNTABLELINK";
+
 private constructor (){
 
             super();

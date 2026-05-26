@@ -63,13 +63,14 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {
         
 
-    private readonly animationInterface: HealthBarAnimation
+    private readonly animationInterface: HealthBarAnimation;
 
-    private readonly life: Life
+    private readonly life: Life;
 
-    private readonly healthInterface: HealthInterface
+    private readonly healthInterface: HealthInterface;
 
-    readonly allbinaryLayer: AllBinaryLayer
+    readonly allbinaryLayer: AllBinaryLayer;
+
 public constructor (layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, animationInterface: HealthBarAnimation, direction: number){
 
             super();
@@ -86,6 +87,7 @@ this.healthInterface!.addListener(this);
 this.onHealthChange();
     
 }
+
 
 public constructor (layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, location: number, direction: number){
             this(layerInterface, life, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction);

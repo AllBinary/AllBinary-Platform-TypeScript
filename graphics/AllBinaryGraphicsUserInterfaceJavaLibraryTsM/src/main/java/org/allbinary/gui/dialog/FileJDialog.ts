@@ -77,7 +77,8 @@ new FileJDialog(new javax.swing.JFrame(), true).setVisible(true);
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private finishedListenerInterface: FileJDialogListenerInterface
+    private finishedListenerInterface: FileJDialogListenerInterface;
+
 public constructor (){
             super();
                     
@@ -89,6 +90,7 @@ this.initComponents();
 this.getJFileChooser1()!.setMultiSelectionEnabled(true);
     
 }
+
 
 public constructor (parent: java.awt.Frame, modal: boolean){
             super(parent, modal);
@@ -126,8 +128,7 @@ jFileChooser1ActionPerformed(evt);
                             );
     
 
-    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(getContentPane());
-;
+    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(getContentPane());;
     
 getContentPane()!.setLayout(layout);
     
@@ -144,8 +145,7 @@ pack();
 this.logUtil!.putF("Starting Action Command: " +evt.getActionCommand(), this, "ActionPerformed");
     
 
-    var files: File[] = this.getJFileChooser1()!.getSelectedFiles()!;
-;
+    var files: File[] = this.getJFileChooser1()!.getSelectedFiles()!;;
     
 
                         if(evt.getActionCommand() == this.getJFileChooser1()!.CANCEL_SELECTION)
@@ -193,7 +193,7 @@ this.jFileChooser1= jFileChooser1;
 }
 
 
-    private jFileChooser1: javax.swing.JFileChooser
+    private jFileChooser1: javax.swing.JFileChooser;
 
 }
                 

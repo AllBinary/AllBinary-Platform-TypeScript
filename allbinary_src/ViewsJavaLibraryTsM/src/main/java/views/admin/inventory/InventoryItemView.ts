@@ -97,17 +97,18 @@ export class InventoryItemView extends HttpStoreComponentView implements Request
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    readonly request: HttpServletRequest
+    readonly request: HttpServletRequest;
 
-    private imageFileName: string
+    private imageFileName: string;
 
-    private mediaData: MediaData
+    private mediaData: MediaData;
 
-    itemInterface: ItemInterface
+    itemInterface: ItemInterface;
 
-    downloadableItemVector: Vector
+    downloadableItemVector: Vector;
 
-    private requestHashMap: HashMap<any, any>
+    private requestHashMap: HashMap<any, any>;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -119,6 +120,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 this.getFormData();
     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string){
             super(transformInfoInterface);
@@ -147,16 +149,14 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
     
 
-    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
-;
+    var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;;
     
 
                         if(HttpFileUploadUtil.getInstance()!.isValid(imageFileItemObject))
                         
                                     {
                                     
-    var fileItem: FileItem = imageFileItemObject as FileItem;
-;
+    var fileItem: FileItem = imageFileItemObject as FileItem;;
     
 
                         if(fileItem != 
@@ -167,8 +167,7 @@ this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
                                     this.imageFileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName());
     
 
-    var pathUtil: PathUtil = PathUtil.getInstance()!;
-;
+    var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.mediaData= MediaData.get(pathUtil!.getExtension(this.imageFileName));
     
@@ -179,8 +178,7 @@ this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Uploaded File Data: ");
     
@@ -208,24 +206,20 @@ this.itemInterface= new BasicItem(this.getRequestHashMap()) as ItemInterface;
 
     public addDomNodeInterfaces(){
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
-    var downloadableItem: DownloadableItem
-;
+    var downloadableItem: DownloadableItem;;
     
 
-    var size: number = this.downloadableItemVector!.length!;
-;
+    var size: number = this.downloadableItemVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 downloadableItem= this.downloadableItemVector!.get(index) as DownloadableItem;
     
@@ -288,45 +282,37 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
             
     processImageFiles(){
 
-    var set: Set = this.getRequestHashMap()!.keys()!;
-;
+    var set: Set = this.getRequestHashMap()!.keys()!;;
     
 
-    var fieldNameArray: any[] = set.toArray()!;
-;
+    var fieldNameArray: any[] = set.toArray()!;;
     
 
     var size: number = fieldNameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var fieldName: string = fieldNameArray[index]! as string;
-;
+    var fieldName: string = fieldNameArray[index]! as string;;
     
 
                         if(fieldName!.compareTo(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var inventoryUploadMediaUtil: InventoryUploadMediaUtil = new InventoryUploadMediaUtil(storeFrontInterface, this.itemInterface);
-;
+    var inventoryUploadMediaUtil: InventoryUploadMediaUtil = new InventoryUploadMediaUtil(storeFrontInterface, this.itemInterface);;
     
 
-    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE) as FileItem;
-;
+    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE) as FileItem;;
     
 this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData);
     

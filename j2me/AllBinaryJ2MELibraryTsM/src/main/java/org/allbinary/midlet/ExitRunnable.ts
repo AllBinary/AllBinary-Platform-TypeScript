@@ -63,11 +63,12 @@ export class ExitRunnable
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly midlet: AllBinaryMidlet
+    private readonly midlet: AllBinaryMidlet;
 
-    private readonly processor: Processor
+    private readonly processor: Processor;
 
-    private readonly isProgress: boolean
+    private readonly isProgress: boolean;
+
 public constructor (midlet: AllBinaryMidlet, processor: Processor, isProgress: boolean){
 
             super();

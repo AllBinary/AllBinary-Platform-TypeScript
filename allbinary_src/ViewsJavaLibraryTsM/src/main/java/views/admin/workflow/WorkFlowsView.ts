@@ -70,7 +70,8 @@ export class WorkFlowsView extends HttpStoreComponentView implements DomNodeInte
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private workFlowsVector: Vector
+    private workFlowsVector: Vector;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -128,24 +129,20 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
         try {
             
-    var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOWS)!;
-;
+    var node: Node = document.createElement(WorkFlowData.getInstance()!.WORKFLOWS)!;;
     
 
-    var size: number = this.workFlowsVector!.length!;
-;
+    var size: number = this.workFlowsVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index) as WorkFlowInterface;
-;
+    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index) as WorkFlowInterface;;
     
 }
 

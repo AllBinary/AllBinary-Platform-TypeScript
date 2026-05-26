@@ -57,6 +57,7 @@ export class TransformInfoTemplateData
     
 }
 
+
 private constructor (){
 
             super();

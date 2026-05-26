@@ -73,6 +73,7 @@ export class StreetAddressData
     public static readonly CODE: string = "STREETADDRESS_CODE";
 
     public static readonly COUNTRY: string = "STREETADDRESS_COUNTRY";
+
 private constructor (){
 
             super();

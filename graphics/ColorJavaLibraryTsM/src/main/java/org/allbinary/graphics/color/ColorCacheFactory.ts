@@ -69,16 +69,13 @@ export class ColorCacheFactory
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";
-;
+    var STATIC_BLOCK: string = "Static Block";;
     
 
         try {
@@ -109,6 +106,7 @@ logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory.constructor, STATIC_BLO
                         return ColorCacheFactory.cacheInterface;
     
 }
+
 
 private constructor (){
 

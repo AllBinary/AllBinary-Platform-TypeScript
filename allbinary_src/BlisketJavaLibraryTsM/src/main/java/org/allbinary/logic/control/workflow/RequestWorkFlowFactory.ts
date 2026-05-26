@@ -76,24 +76,19 @@ export class RequestWorkFlowFactory
             
     public static getInstance(request: ServletRequest, response: ServletResponse, servletConfig: ServletConfig, servletContext: ServletContext): WorkFlowInterface{
 
-    var httpRequest: HttpServletRequest = request as HttpServletRequest;
-;
+    var httpRequest: HttpServletRequest = request as HttpServletRequest;;
     
 
-    var requestCommand: string = httpRequest!.getPathInfo()!;
-;
+    var requestCommand: string = httpRequest!.getPathInfo()!;;
     
 
-    var index: number = requestCommand!.indexOf(AbPathData.getInstance()!.SEPARATOR)!;
-;
+    var index: number = requestCommand!.indexOf(AbPathData.getInstance()!.SEPARATOR)!;;
     
 
-    var storeName: string = requestCommand!.substring(0, index)!;
-;
+    var storeName: string = requestCommand!.substring(0, index)!;;
     
 
-    var requestName: string = requestCommand!.substring(index, requestCommand!.length)!;
-;
+    var requestName: string = requestCommand!.substring(index, requestCommand!.length)!;;
     
 
 
@@ -108,16 +103,13 @@ export class RequestWorkFlowFactory
             
     public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 
-    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as string;
-;
+    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as string;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);
-;
+    var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);;
     
 
-    var storeName: string = weblisketSession!.getStoreName()!;
-;
+    var storeName: string = weblisketSession!.getStoreName()!;;
     
 
 
@@ -126,6 +118,7 @@ export class RequestWorkFlowFactory
                         return WorkFlowEntityFactory.getInstance()!.create2()!.get(workFlowName, storeName);;
     
 }
+
 
 private constructor (){
 

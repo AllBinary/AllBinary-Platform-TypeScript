@@ -67,6 +67,7 @@ export class PrimaryWaypointHelper
 
 
     private waypointLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
+
 private constructor (){
 
             super();

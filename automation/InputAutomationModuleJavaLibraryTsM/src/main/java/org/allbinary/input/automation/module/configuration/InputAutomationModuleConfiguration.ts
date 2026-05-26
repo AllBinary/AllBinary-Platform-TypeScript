@@ -92,15 +92,17 @@ export class InputAutomationModuleConfiguration
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private className: string
+    private className: string;
 
-    private name: string
+    private name: string;
 
-    private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface
+    private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface;
+
 public constructor (){
 
             super();
         }
+
 
 public constructor (abeClientInformation: AbeClientInformationInterface, node: Node){
 
@@ -108,6 +110,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, node: N
         this.init(abeClientInformation, node);
     
 }
+
 
 public constructor (abeClientInformation: AbeClientInformationInterface, name: string, className: string){
 
@@ -119,6 +122,7 @@ this.setClassName(className);
 this.init(abeClientInformation);
     
 }
+
 
 public constructor (inputAutomationModuleInterface: InputAutomationModuleFactoryInterface){
 
@@ -134,8 +138,7 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
             
     public init(abeClientInformation: AbeClientInformationInterface, node: Node){
 
-    var nodeList: NodeList = node.getChildNodes()!;
-;
+    var nodeList: NodeList = node.getChildNodes()!;;
     
 
                         if(nodeList != 
@@ -144,8 +147,7 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
                         
                                     {
                                     
-    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;
-;
+    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;;
     
 
                         if(classNameNode != 
@@ -207,12 +209,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
             
     public toDomNode(document: Document): Node{
 
-    var node: Node = document.createElement(InputAutomationModuleData.NAME)!;
-;
+    var node: Node = document.createElement(InputAutomationModuleData.NAME)!;;
     
 
-    var classNameNode: Node = ModDomHelper.createTextNode(document, DynamicObjectData.NAME, this.getClassName())!;
-;
+    var classNameNode: Node = ModDomHelper.createTextNode(document, DynamicObjectData.NAME, this.getClassName())!;;
     
 node.appendChild(classNameNode);
     

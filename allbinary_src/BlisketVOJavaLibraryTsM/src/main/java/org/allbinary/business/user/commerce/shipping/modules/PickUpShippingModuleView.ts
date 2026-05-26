@@ -59,6 +59,7 @@ export class PickUpShippingModuleView extends PickUpShippingModule implements Do
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -109,8 +110,7 @@ public constructor (){
 
         try {
             
-    var shippingMethodNode: Node = document.createElement(ShippingMethodData.NAME)!;
-;
+    var shippingMethodNode: Node = document.createElement(ShippingMethodData.NAME)!;;
     
 shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.NAME, this.getName()));
     

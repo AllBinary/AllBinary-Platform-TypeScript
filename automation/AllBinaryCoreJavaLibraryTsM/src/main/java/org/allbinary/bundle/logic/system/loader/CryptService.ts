@@ -83,6 +83,7 @@ export class CryptService
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly abCryptUtil: AbCryptUtil = AbCryptUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -97,12 +98,10 @@ this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commo
 
         try {
             
-    var key: string = AbKeys.getInstance()!.getKey(abeClientInformation, name)!;
-;
+    var key: string = AbKeys.getInstance()!.getKey(abeClientInformation, name)!;;
     
 
-    var decrypted: number[] = this.abCryptUtil!.decrypt(inputStream, key)!;
-;
+    var decrypted: number[] = this.abCryptUtil!.decrypt(inputStream, key)!;;
     
 
 
@@ -140,14 +139,12 @@ this.showLicenseDialog(abeClientInformation, e);
             this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 
-    var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);
-;
+    var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);;
     
 
         try {
             
-    var abeLicenseInterface: AbeLicenseInterface = AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!;
-;
+    var abeLicenseInterface: AbeLicenseInterface = AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!;;
     
 
                         if(abeLicenseInterface != AbeNoLicense.getInstance())

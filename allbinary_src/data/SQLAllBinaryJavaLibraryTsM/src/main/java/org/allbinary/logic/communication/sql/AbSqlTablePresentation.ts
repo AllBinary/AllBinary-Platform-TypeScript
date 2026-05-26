@@ -46,6 +46,7 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
 
 export class AbSqlTablePresentation extends AbSqlBasic {
         
+
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
                     

@@ -91,7 +91,8 @@ export class PersistentInputMapping
 
     private inputMappingEventListenerInterface: InputMappingEventListenerInterface = NullInputMappingEventListener.NULL_INPUT_MAPPING_EVENT_LISTENER;
 
-    private readonly inputPersistance: InputPersistance
+    private readonly inputPersistance: InputPersistance;
+
 protected constructor (name: string){
 
             super();
@@ -199,40 +200,32 @@ this.inputPersistance!.loadAll(abeClientInformation);
 }
 
 
-    var list: BasicArrayList = this.inputPersistance!.getList()!;
-;
+    var list: BasicArrayList = this.inputPersistance!.getList()!;;
     
 
-    var totalMappedTo: number = 0;
-;
+    var totalMappedTo: number = 0;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var hashtable: Hashtable<any, any>
-;
+    var hashtable: Hashtable<any, any>;;
     
 
-    var enumeration: Enumeration<any>
-;
+    var enumeration: Enumeration<any>;;
     
 
-    var mappedToInput: Input
-;
+    var mappedToInput: Input;;
     
 
-    var gameActionInput: Input
-;
+    var gameActionInput: Input;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 hashtable= list.objectArray[index]! as Hashtable<any, any>;
     
@@ -254,8 +247,7 @@ this.getInputMapping()!.add(gameActionInput, mappedToInput);
 }
 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("End - Total Loaded Keys Mapped: ");
     

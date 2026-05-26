@@ -58,29 +58,27 @@ export class GenericOperatingSystem
          implements OperatingSystemInterface {
         
 
-    private readonly osName: string
+    private readonly osName: string;
 
-    private readonly osArch: string
+    private readonly osArch: string;
 
-    private readonly osVersion: string
+    private readonly osVersion: string;
 
     private readonly characterSet: CharacterSet = new CharacterSet();
 
     scalable: boolean = false;
+
 public constructor (){
 
             super();
         
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-;
+    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(stringValidationUtil!.isEmpty(systemProperties!.getName()))
@@ -222,12 +220,10 @@ public constructor (){
 
     public toString(): string{
 
-    var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;
-;
+    var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;;
     
 
-    var osBuffer: StringMaker = new StringMaker();
-;
+    var osBuffer: StringMaker = new StringMaker();;
     
 osBuffer!.append("Operating System Info: \n");
     

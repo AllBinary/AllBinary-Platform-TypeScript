@@ -52,7 +52,8 @@ import { IntBuffer } from './IntBuffer.js';
 export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengles.GL11 {
         
 
-    private readonly gl11: GL2
+    private readonly gl11: GL2;
+
 public constructor (gl: GL){
             this(gl, gl as com.jogamp.opengl.GL2);
                     
@@ -60,6 +61,7 @@ public constructor (gl: GL){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (gl: GL, gl2: com.jogamp.opengl.GL2){
             super(gl, gl2);

@@ -60,6 +60,7 @@ export class NoPlayerGameInput extends PlayerGameInput {
     
 }
 
+
 private constructor (){
             super(new BasicArrayListD(), new BasicArrayListD(),  -1);
                     

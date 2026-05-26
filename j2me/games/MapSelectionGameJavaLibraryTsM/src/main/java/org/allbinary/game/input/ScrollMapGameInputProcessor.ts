@@ -46,7 +46,8 @@ import { ScrollMapPlayerGameInput } from './ScrollMapPlayerGameInput.js';
 export class ScrollMapGameInputProcessor extends GameInputProcessor {
         
 
-    readonly scrollMapPlayerGameInput: ScrollMapPlayerGameInput
+    readonly scrollMapPlayerGameInput: ScrollMapPlayerGameInput;
+
 public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput){
 
             super();

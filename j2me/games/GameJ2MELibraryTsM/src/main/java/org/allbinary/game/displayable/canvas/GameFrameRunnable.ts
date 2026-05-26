@@ -62,7 +62,8 @@ export class GameFrameRunnable extends GameRunnable {
 
     private readonly gameTickDisplayInfoSingleton: GameTickDisplayInfoSingleton = GameTickDisplayInfoSingleton.getInstance()!;
 
-    private readonly allBinaryGameCanvas: AllBinaryGameCanvas
+    private readonly allBinaryGameCanvas: AllBinaryGameCanvas;
+
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -77,8 +78,7 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
         try {
             
-    var allBinaryGameCanvas: AllBinaryGameCanvas = this.allBinaryGameCanvas;
-;
+    var allBinaryGameCanvas: AllBinaryGameCanvas = this.allBinaryGameCanvas;;
     
 allBinaryGameCanvas!.getLoopTimeHelperP()!.setStartTime(this.gameTickTimeDelayHelper!.setStartTime());
     
@@ -100,8 +100,7 @@ allBinaryGameCanvas!.processGame();
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     

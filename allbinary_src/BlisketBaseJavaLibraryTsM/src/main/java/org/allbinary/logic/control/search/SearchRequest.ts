@@ -62,15 +62,16 @@ import { SearchData } from './SearchData.js';
 export class SearchRequest extends AbContext {
         
 
-    private xslFile: string
+    private xslFile: string;
 
-    private pageName: string
+    private pageName: string;
 
-    private contentType: string
+    private contentType: string;
 
-    private searchParams: SearchParams
+    private searchParams: SearchParams;
 
-    private storeFront: StoreFrontInterface
+    private storeFront: StoreFrontInterface;
+
 public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     

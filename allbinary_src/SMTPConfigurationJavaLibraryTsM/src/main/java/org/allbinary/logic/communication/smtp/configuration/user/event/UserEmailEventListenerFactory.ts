@@ -63,12 +63,10 @@ export class UserEmailEventListenerFactory
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface, userInterface: UserInterface): UserEmailEventListenerInterface{
 
-    var params: any[] = new Array(1);
-;
+    var params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);
-;
+    var classes: Function[] = new Array(1);;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
@@ -83,6 +81,7 @@ params[0]= userInterface;
                         return AbeFactory.getInstance()!.getInstance(abeClientInformation, userEmailEventConfigurationInterface!.getEventListenerClassPath(), classes, params) as UserEmailEventListenerInterface;
     
 }
+
 
 private constructor (){
 

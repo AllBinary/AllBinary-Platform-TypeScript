@@ -50,6 +50,7 @@ import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/
 //1.4.2
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor {
         
+
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
             super(geographicMapInterface, edgeMinimum, minPathWeight, maxPathWeight);
                     

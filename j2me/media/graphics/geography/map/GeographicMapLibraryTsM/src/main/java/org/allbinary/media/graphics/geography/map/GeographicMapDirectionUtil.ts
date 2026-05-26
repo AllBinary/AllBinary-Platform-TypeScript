@@ -68,6 +68,7 @@ export class GeographicMapDirectionUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -80,24 +81,19 @@ private constructor (){
             
     public getDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 
-    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-;
+    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;;
     
 
-    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-;
+    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;;
     
 
-    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-;
+    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;;
     
 
-    var goRow: number = toGeographicMapCellPosition!.getRow()!;
-;
+    var goRow: number = toGeographicMapCellPosition!.getRow()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(fromColumn -1 == goColumn)
@@ -189,24 +185,19 @@ private constructor (){
             
     public getEightDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 
-    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-;
+    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;;
     
 
-    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-;
+    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;;
     
 
-    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-;
+    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;;
     
 
-    var goRow: number = toGeographicMapCellPosition!.getRow()!;
-;
+    var goRow: number = toGeographicMapCellPosition!.getRow()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(fromRow == goRow)
@@ -371,24 +362,19 @@ private constructor (){
             
     public getDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 
-    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-;
+    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;;
     
 
-    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-;
+    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;;
     
 
-    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-;
+    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;;
     
 
-    var goRow: number = toGeographicMapCellPosition!.getRow()!;
-;
+    var goRow: number = toGeographicMapCellPosition!.getRow()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(fromColumn > goColumn)
@@ -443,12 +429,10 @@ private constructor (){
                                     }
                                 
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var string: string = stringMaker!.append(CellPosition.toStringCellPosition(fromGeographicMapCellPosition))!.append(" == ")!.append(CellPosition.toStringCellPosition(toGeographicMapCellPosition))!.toString()!;
-;
+    var string: string = stringMaker!.append(CellPosition.toStringCellPosition(fromGeographicMapCellPosition))!.append(" == ")!.append(CellPosition.toStringCellPosition(toGeographicMapCellPosition))!.toString()!;;
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -468,24 +452,19 @@ stringMaker!.delete(0, stringMaker!.length());
             
     public getEightDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 
-    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-;
+    var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;;
     
 
-    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-;
+    var fromRow: number = fromGeographicMapCellPosition!.getRow()!;;
     
 
-    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-;
+    var goColumn: number = toGeographicMapCellPosition!.getColumn()!;;
     
 
-    var goRow: number = toGeographicMapCellPosition!.getRow()!;
-;
+    var goRow: number = toGeographicMapCellPosition!.getRow()!;;
     
 
-    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-;
+    var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;;
     
 
                         if(fromGeographicMapCellPosition == toGeographicMapCellPosition)
@@ -626,8 +605,7 @@ stringMaker!.delete(0, stringMaker!.length());
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.ERROR);
     

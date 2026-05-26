@@ -55,9 +55,10 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 export class SpinnerAI extends BasicAI {
         
 
-    private isEven: boolean= false
+    private isEven: boolean= false;
 
-    private direction: number[]
+    private direction: number[];
+
 public constructor (direction: number[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     

@@ -174,8 +174,7 @@ this.surfaceCreatedAndInitialized= true;
 graphics.update();
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.update(graphics);
     
@@ -192,8 +191,7 @@ this.set(gl);
 
     public add(image: Image): Image{
 
-    var encapsulateImage: Image = this.preResourceImageUtil!.encapsulate(image)!;
-;
+    var encapsulateImage: Image = this.preResourceImageUtil!.encapsulate(image)!;;
     
 
                         if(encapsulateImage != image)
@@ -276,20 +274,17 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
         //mutex.withLock
         
 
-    var runnable: Runnable
-;
+    var runnable: Runnable;;
     
 
-    var size: number = this.runnableList!.size()!;
-;
+    var size: number = this.runnableList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 runnable= this.runnableList!.get(index) as Runnable;
     
@@ -308,20 +303,17 @@ this.runnableList!.clear();
             
     set(gl: GL10){
 
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
-    var image: any
-;
+    var image: any;;
     
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < size; index2++)
+    var index2: number = 0;index2 < size; index2++)
         {
 image= this.list.get(index2);
     

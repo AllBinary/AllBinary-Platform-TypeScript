@@ -56,7 +56,8 @@ export class ColorFillBasePaintable extends Paintable implements ColorCompositeI
 
     basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    colorP: number= 0
+    colorP: number= 0;
+
 public constructor (basicColor: BasicColor){
 
             super();

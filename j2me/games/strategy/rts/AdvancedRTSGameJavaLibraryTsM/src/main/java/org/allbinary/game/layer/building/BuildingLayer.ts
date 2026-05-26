@@ -145,12 +145,10 @@ export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnima
             
     public static createSimulated(): BuildingLayer{
 
-    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;
-;
+    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;;
     
 
-    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;
-;
+    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;;
     
 
 
@@ -171,23 +169,24 @@ export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnima
 }
 
 
-    private buildingLevelCost: number= 0
+    private buildingLevelCost: number= 0;
 
-    private productivity: number= 0
+    private productivity: number= 0;
 
-    private efficiency: number
+    private efficiency: number;
 
-    private efficiencyPerLevel: number
+    private efficiencyPerLevel: number;
 
-    private readonly trackingEvent: TrackingEvent
+    private readonly trackingEvent: TrackingEvent;
 
-    private readonly damageFloaters: DamageFloaters
+    private readonly damageFloaters: DamageFloaters;
 
-    private readonly damageFloatersPaintableInterface: Paintable
+    private readonly damageFloatersPaintableInterface: Paintable;
 
-    private readonly healthBar: Paintable
+    private readonly healthBar: Paintable;
 
-    private readonly pathsHashtable: Hashtable<any, any>
+    private readonly pathsHashtable: Hashtable<any, any>;
+
 public constructor (remoteInfo: RemoteInfo, buildingPropertiesFactory: BuildingPropertiesFactory, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
             super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, advancedRTSProperties, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
                     
@@ -223,12 +222,11 @@ this.trackingEvent= buildingPropertiesFactory!.getTrackingEvent(this);
 }
 
 
-    local: boolean= false
+    local: boolean= false;
 
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
-;
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
     
 
                         if(advancedRTSPlayerLayerInterface!.isLocalPlayer())
@@ -266,8 +264,7 @@ TrackingEventHandler.getInstance()!.addListenerInterface(this);
 
         try {
             
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;
-;
+    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;;
     
 
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
@@ -312,12 +309,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
                         
                                     {
                                     
-    var currentFrame: number = this.destroyAnimationInterface!.getFrame()!;
-;
+    var currentFrame: number = this.destroyAnimationInterface!.getFrame()!;;
     
 
-    var size: number = this.destroyAnimationInterface!.getSize() -1;
-;
+    var size: number = this.destroyAnimationInterface!.getSize() -1;;
     
 
                         if(currentFrame == size && !this.timeDelayHelper!.isTimeTNT())
@@ -386,8 +381,7 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
 
     public getCost(): number{
 
-    var total: number = RTSLayerUtil.getInstance()!.getCostExponential((this.getLevel() *this.getBuildingLevelCost()))!;
-;
+    var total: number = RTSLayerUtil.getInstance()!.getCostExponential((this.getLevel() *this.getBuildingLevelCost()))!;;
     
 
 
@@ -400,8 +394,7 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
 
     public getDowngradeCost(): number{
 
-    var downgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() -1) *getBuildingLevelCost()))!;
-;
+    var downgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() -1) *getBuildingLevelCost()))!;;
     
 this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
     
@@ -416,8 +409,7 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
     public getUpgradeCost(): number{
 
-    var upgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() +1) *getBuildingLevelCost()))!;
-;
+    var upgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() +1) *getBuildingLevelCost()))!;;
     
 
 
@@ -504,44 +496,35 @@ this.efficiency= efficiency;
             
     generateMoveOutOfBuildAreaPaths(){
 
-    var occupyList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;
-;
+    var occupyList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;;
     
 
-    var surroundList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList()!;
-;
+    var surroundList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList()!;;
     
 
-    var NO_DIRECTION: Direction = DirectionFactory.getInstance()!.NO_DIRECTION;
-;
+    var NO_DIRECTION: Direction = DirectionFactory.getInstance()!.NO_DIRECTION;;
     
 
-    var geographicMapDirectionUtil: GeographicMapDirectionUtil = GeographicMapDirectionUtil.getInstance()!;
-;
+    var geographicMapDirectionUtil: GeographicMapDirectionUtil = GeographicMapDirectionUtil.getInstance()!;;
     
 
-    var pathsList: BasicArrayList
-;
+    var pathsList: BasicArrayList;;
     
 
-    var occupyGeographicMapCellPosition: GeographicMapCellPosition
-;
+    var occupyGeographicMapCellPosition: GeographicMapCellPosition;;
     
 
-    var surroundGeographicMapCellPosition: GeographicMapCellPosition
-;
+    var surroundGeographicMapCellPosition: GeographicMapCellPosition;;
     
 
-    var list: BasicArrayList
-;
+    var list: BasicArrayList;;
     
 
 
 
 
                         for (
-    var index2: number = occupyList!.size() -1;
-index2 >= 0; index2--)
+    var index2: number = occupyList!.size() -1;index2 >= 0; index2--)
         {
 pathsList= new BasicArrayListD();
     
@@ -552,8 +535,7 @@ occupyGeographicMapCellPosition= occupyList!.get(index2) as GeographicMapCellPos
 
 
                         for (
-    var index: number = surroundList!.size() -1;
-index >= 0; index--)
+    var index: number = surroundList!.size() -1;index >= 0; index--)
         {
 surroundGeographicMapCellPosition= surroundList!.get(index) as GeographicMapCellPosition;
     
@@ -581,8 +563,7 @@ this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList);
 
     public getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
 
-    var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition) as BasicArrayList;
-;
+    var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition) as BasicArrayList;;
     
 
 
@@ -657,18 +638,15 @@ this.damageFloaters!.add(damage);
 
     public addVisibility(){
 
-    var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = this.geographicMapCellPositionAreaBase;
-;
+    var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = this.geographicMapCellPositionAreaBase;;
     
 
-    var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;
-;
+    var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;;
     
 VisibleCellPositionsSingleton.getInstance()!.addStationaryCellPositions(occupyList);
     
 
-    var surroundList: BasicArrayList = geographicMapCellPositionArea!.getSurroundingGeographicMapCellPositionList()!;
-;
+    var surroundList: BasicArrayList = geographicMapCellPositionArea!.getSurroundingGeographicMapCellPositionList()!;;
     
 VisibleCellPositionsSingleton.getInstance()!.addStationaryCellPositions(surroundList);
     
@@ -677,14 +655,12 @@ VisibleCellPositionsSingleton.getInstance()!.addStationaryCellPositions(surround
 
     public removeVisibility(){
 
-    var occupyList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;
-;
+    var occupyList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList()!;;
     
 VisibleCellPositionsSingleton.getInstance()!.removeStationaryCellPositions(occupyList);
     
 
-    var surroundList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList()!;
-;
+    var surroundList: BasicArrayList = this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList()!;;
     
 VisibleCellPositionsSingleton.getInstance()!.removeStationaryCellPositions(surroundList);
     
@@ -718,8 +694,7 @@ TrackingEventHandler.getInstance()!.removeListener(this);
                         
                                     {
                                     
-    var damage: number = this.getHealthInterface()!.getMaxHealth()!;
-;
+    var damage: number = this.getHealthInterface()!.getMaxHealth()!;;
     
 
                         if(damage > 10)
@@ -774,8 +749,7 @@ this.vibration.vibrate(this.duration *4, 0, 0);
 
     public createHudPaintable(): SelectionHudPaintable{
 
-    var buildingInfoHudPaintable: BuildingInfoHudPaintable = BuildingInfoHudPaintable.getInstance()!;
-;
+    var buildingInfoHudPaintable: BuildingInfoHudPaintable = BuildingInfoHudPaintable.getInstance()!;;
     
 buildingInfoHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor());
     
@@ -792,8 +766,7 @@ buildingInfoHudPaintable!.setRtsLayer(this);
 
     public getHudPaintable(): SelectionHudPaintable{
 
-    var buildingInfoHudPaintable: BuildingInfoHudPaintable = BuildingInfoHudPaintable.getInstance()!;
-;
+    var buildingInfoHudPaintable: BuildingInfoHudPaintable = BuildingInfoHudPaintable.getInstance()!;;
     
 
 

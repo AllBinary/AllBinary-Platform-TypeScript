@@ -49,7 +49,8 @@ import { swing } from '../../../../javax/swing.js';
 export class ImageIconUnique extends ImageIcon {
         
 
-    private id: number= 0
+    private id: number= 0;
+
 public constructor (bufferedImage: BufferedImage, index: number){
             super(bufferedImage);
                     

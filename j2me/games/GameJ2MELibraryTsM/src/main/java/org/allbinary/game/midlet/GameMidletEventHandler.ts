@@ -64,6 +64,7 @@ export class GameMidletEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -74,8 +75,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var gameMidletEventListener: GameMidletEventListener = eventListenerInterface as GameMidletEventListener;
-;
+    var gameMidletEventListener: GameMidletEventListener = eventListenerInterface as GameMidletEventListener;;
     
 gameMidletEventListener!.onGameEnd(eventObject);
     

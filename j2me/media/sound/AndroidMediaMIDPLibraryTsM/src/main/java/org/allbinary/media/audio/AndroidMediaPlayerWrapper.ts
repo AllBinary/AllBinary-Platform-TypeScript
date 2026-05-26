@@ -97,6 +97,7 @@ export class AndroidMediaPlayerWrapper extends BasicPlayer {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private mediaPlayer: MediaPlayer = NullAndroidCanvas.NULL_MEDIA_PLAYER;
+
 public constructor (resource: string){
 
             super();
@@ -111,12 +112,10 @@ public constructor (resource: string){
                                 
                         else {
                             
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-;
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.intValue())!;
-;
+    var mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.intValue())!;;
     
 
                         if(mediaPlayer == 
@@ -300,20 +299,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
 this.logUtil!.putF("LineEvent: " +event, this, this.commonStrings!.UPDATE);
     
 
-    var size: number = this.listenersList!.size()!;
-;
+    var size: number = this.listenersList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.objectArray[index]! as PlayerListener;
-;
+    var listener: PlayerListener = this.listenersList!.objectArray[index]! as PlayerListener;;
     
 listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);
     

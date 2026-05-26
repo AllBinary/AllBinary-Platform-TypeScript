@@ -70,7 +70,7 @@ export class InitInfoEntity extends InitSql {
 
     private readonly tableName: string = "initdata";
 
-    private readonly tableData: string
+    private readonly tableData: string;
 
     private readonly NOT_IN_DB: string = "Not In DB";
 
@@ -83,6 +83,7 @@ export class InitInfoEntity extends InitSql {
     private readonly CREATED_SUCCESS: string = " Created Successfully";
 
     private readonly FAILED_TO_CREATE: string = "Failed to create ";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -90,8 +91,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
@@ -132,14 +132,12 @@ this.setTable(this.tableName);
 
         try {
             
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 keyAndValue!.put(this.NOTHING, this.NOTHING);
     
 
-    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
-;
+    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;;
     
 
                         if(hashMap != 
@@ -205,14 +203,12 @@ keyAndValue!.put(this.NOTHING, this.NOTHING);
 
         try {
             
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 keyAndValue!.put(this.NOTHING, this.NOTHING);
     
 
-    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
-;
+    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;;
     
 
                         if(hashMap != 
@@ -282,8 +278,7 @@ updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap());
 
         try {
             
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.NOTHING);
     
@@ -329,8 +324,7 @@ insert(values);
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.FAILED_TO_CREATE);
     

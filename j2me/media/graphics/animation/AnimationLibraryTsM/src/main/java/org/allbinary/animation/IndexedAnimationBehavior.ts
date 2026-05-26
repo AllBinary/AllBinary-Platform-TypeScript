@@ -45,13 +45,14 @@
 export class IndexedAnimationBehavior extends AnimationBehavior {
         
 
-    public frameDelayTime: number
+    public frameDelayTime: number;
 
-    public loopTotal: number
+    public loopTotal: number;
 
-    public elapsedTime: number= 0
+    public elapsedTime: number= 0;
 
-    public loopIndex: number= 0
+    public loopIndex: number= 0;
+
 public constructor (loopTotal: number, frameDelayTime: number){
 
             super();

@@ -61,7 +61,8 @@ export class AdminConfigurationRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -92,12 +93,10 @@ this.request= pageContext!.getRequest() as HttpServletRequest;
                                     }
                                 
 
-    var success: string = "Successfully inserted AdminConfiguration";
-;
+    var success: string = "Successfully inserted AdminConfiguration";;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;
-;
+    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;;
     
 adminConfigurationInterface!.write();
     
@@ -121,8 +120,7 @@ adminConfigurationInterface!.write();
 } catch(e) 
             {
 
-    var error: string = "Failed to created AdminConfiguration";
-;
+    var error: string = "Failed to created AdminConfiguration";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -148,8 +146,7 @@ adminConfigurationInterface!.write();
 
         try {
             
-    var success: string = "Successfully deleted AdminConfiguration";
-;
+    var success: string = "Successfully deleted AdminConfiguration";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -171,8 +168,7 @@ adminConfigurationInterface!.write();
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -198,12 +194,10 @@ adminConfigurationInterface!.write();
 
         try {
             
-    var success: string = "Updated AdminConfiguration Successful";
-;
+    var success: string = "Updated AdminConfiguration Successful";;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;
-;
+    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -225,8 +219,7 @@ adminConfigurationInterface!.write();
 } catch(e) 
             {
 
-    var error: string = "Failed to update";
-;
+    var error: string = "Failed to update";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

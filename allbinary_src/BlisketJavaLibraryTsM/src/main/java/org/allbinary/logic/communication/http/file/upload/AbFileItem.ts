@@ -82,11 +82,12 @@ export class AbFileItem
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly name: string
+    private readonly name: string;
 
-    private fieldName: string
+    private fieldName: string;
 
-    private readonly byteArray: number[]
+    private readonly byteArray: number[];
+
 public constructor (name: string, fieldName: string, byteArray: number[]){
 
             super();

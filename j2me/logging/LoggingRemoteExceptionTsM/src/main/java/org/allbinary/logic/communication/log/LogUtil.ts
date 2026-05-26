@@ -91,7 +91,8 @@ import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
 
     private timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(200000);
 
-    public abeClientInformation: AbeClientInformationInterface
+    public abeClientInformation: AbeClientInformationInterface;
+
 private constructor (){
 
             super();
@@ -117,20 +118,16 @@ private constructor (){
                                     }
                                 
 
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
@@ -183,8 +180,7 @@ this.put(specialMessage, anyType, functionName, exception);
                         
                                     {
                                     
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 this.isFirstException= false;
     
@@ -202,8 +198,7 @@ this.isFirstException= false;
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 
         try {
@@ -224,8 +219,7 @@ this.isFirstException= false;
                                     }
                                 
 
-    var hashtable: Hashtable<any, any> = this.abeClientInformation!.toHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = this.abeClientInformation!.toHashtable()!;;
     
 this.stringBuffer!.delete(0, this.stringBuffer!.length());
     

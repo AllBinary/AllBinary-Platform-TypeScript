@@ -68,9 +68,10 @@ export class SaveMotionRectanglesResultsWorker
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private running: boolean= false
+    private running: boolean= false;
 
-    private motionRectanglesVector: Vector
+    private motionRectanglesVector: Vector;
+
 public constructor (){
 
             super();
@@ -129,18 +130,15 @@ this.running= running;
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 timeHelper!.setStartTimeTNT();
     
 
-    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0) as MotionRectanglesResultsEvent;
-;
+    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0) as MotionRectanglesResultsEvent;;
     
 
-    var motionRectangles: MotionRectangles = motionRectanglesResultsEvent!.getMotionRectangles()!;
-;
+    var motionRectangles: MotionRectangles = motionRectanglesResultsEvent!.getMotionRectangles()!;;
     
 new MotionRectanglesImageInputOutput().save(motionRectangles, motionRectanglesResultsEvent!.getFrame());
     

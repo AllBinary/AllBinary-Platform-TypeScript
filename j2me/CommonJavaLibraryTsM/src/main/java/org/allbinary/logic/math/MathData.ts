@@ -62,23 +62,23 @@ export class MathData
 }
 
 
-    public readonly EQUALS: string
+    public readonly EQUALS: string;
 
     public readonly PLUS: string = "+";
 
     public readonly GREATER_THAN: string = ">";
 
-    public readonly MINUS: string
+    public readonly MINUS: string;
 
-    public readonly DIVIDE: string
+    public readonly DIVIDE: string;
 
-    public readonly MULTIPLY: string
+    public readonly MULTIPLY: string;
+
 private constructor (){
 
             super();
         
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.EQUALS= commonSeps!.EQUALS;
     

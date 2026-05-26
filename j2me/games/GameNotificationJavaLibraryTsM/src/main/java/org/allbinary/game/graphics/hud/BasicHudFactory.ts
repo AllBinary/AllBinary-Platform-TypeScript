@@ -57,6 +57,7 @@ export class BasicHudFactory
     
 }
 
+
 private constructor (){
 
             super();

@@ -75,6 +75,7 @@ export class InGameFeatureChoiceGroups
 
 
     private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+
 private constructor (){
 
             super();

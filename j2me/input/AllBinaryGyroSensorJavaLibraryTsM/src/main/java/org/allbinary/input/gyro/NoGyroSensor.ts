@@ -50,6 +50,7 @@ import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js
 
 export class NoGyroSensor extends AllBinaryOrientationSensor implements AllBinarySensorListener {
         
+
 public constructor (){
 
             super();

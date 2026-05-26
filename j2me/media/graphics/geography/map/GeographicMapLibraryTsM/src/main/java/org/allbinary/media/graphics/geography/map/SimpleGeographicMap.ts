@@ -63,17 +63,18 @@ export class SimpleGeographicMap
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly id: Integer
+    private readonly id: Integer;
 
-    private readonly name: string
+    private readonly name: string;
 
-    readonly cellTypeIdToGeographicMapCellType: number[]
+    readonly cellTypeIdToGeographicMapCellType: number[];
 
-    private readonly tiledLayer: AllBinaryTiledLayer
+    private readonly tiledLayer: AllBinaryTiledLayer;
 
     private foregroundBasicColor: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
 
     private backgroundBasicColor: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
+
 public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
 
             super();
@@ -132,16 +133,13 @@ this.setForegroundBasicColor(foregroundBasicColor);
             
     public getCellTypeAt(cellPosition: GeographicMapCellPosition): GeographicMapCellType{
 
-    var i_column: number = cellPosition!.getColumn()!;
-;
+    var i_column: number = cellPosition!.getColumn()!;;
     
 
-    var i_row: number = cellPosition!.getRow()!;
-;
+    var i_row: number = cellPosition!.getRow()!;;
     
 
-    var cellTypeId: number = this.tiledLayer!.getCell(i_column, i_row)!;
-;
+    var cellTypeId: number = this.tiledLayer!.getCell(i_column, i_row)!;;
     
 
                         if(cellTypeId < 0)

@@ -65,6 +65,7 @@ export class NullRTSGameLayerPositionFinder
     
 }
 
+
 protected constructor (){
 
             super();
@@ -73,8 +74,7 @@ protected constructor (){
 
     public getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer{
 
-    var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;
-;
+    var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;;
     
 
 

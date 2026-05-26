@@ -58,11 +58,12 @@ export class EmailServerConfiguration
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private accountName: string
+    private accountName: string;
 
-    private password: string
+    private password: string;
 
-    private smtpServer: string
+    private smtpServer: string;
+
 public constructor (){
 
             super();
@@ -71,8 +72,7 @@ public constructor (){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -83,6 +83,7 @@ this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();
@@ -91,8 +92,7 @@ public constructor (hashMap: HashMap<any, any>){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
     
@@ -109,6 +109,7 @@ this.log();
     
 }
 
+
 public constructor (account: string, password: string, server: string){
 
             super();
@@ -117,8 +118,7 @@ public constructor (account: string, password: string, server: string){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
     

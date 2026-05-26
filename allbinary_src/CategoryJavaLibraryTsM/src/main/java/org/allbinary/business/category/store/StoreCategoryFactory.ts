@@ -70,7 +70,8 @@ export class StoreCategoryFactory extends CategoryAbstractFactory implements Cat
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
@@ -92,8 +93,7 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -129,12 +129,10 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var level: number = CategoryUtil.getPathLevel(categoryPath)!;
-;
+    var level: number = CategoryUtil.getPathLevel(categoryPath)!;;
     
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath) as CategoryPropertiesFactoryInterface;;
     
 
 
@@ -170,16 +168,13 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;
-;
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;;
     
 
-    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node));
-;
+    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node));;
     
 
-    var level: number = CategoryUtil.getPathLevel(categoryPath)!;
-;
+    var level: number = CategoryUtil.getPathLevel(categoryPath)!;;
     
 
 

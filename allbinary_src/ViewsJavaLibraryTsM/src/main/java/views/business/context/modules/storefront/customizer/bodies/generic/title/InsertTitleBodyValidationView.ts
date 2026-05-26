@@ -72,6 +72,7 @@ export class InsertTitleBodyValidationView extends TitleBodyCustomizerView imple
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -79,8 +80,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).toHashMap()!;
-;
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).toHashMap()!;;
     
 this.titleBody= new TitleBodyValidation(requestHashMap);
     
@@ -112,8 +112,7 @@ this.titleBody= new TitleBodyValidation(requestHashMap);
                                     }
                                 
 
-    var isValid: Boolean = this.titleBody!.isValid()!;
-;
+    var isValid: Boolean = this.titleBody!.isValid()!;;
     
 
                         if(isValid == Boolean.TRUE)
@@ -158,8 +157,7 @@ this.titleBody= new TitleBodyValidation(requestHashMap);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.titleBody!.validationInfo());
     

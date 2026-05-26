@@ -60,11 +60,12 @@ export class PaymentType
          {
         
 
-    private readonly basicPaymentType: BasicPaymentType
+    private readonly basicPaymentType: BasicPaymentType;
 
-    private readonly paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface
+    private readonly paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface;
 
-    private readonly paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface
+    private readonly paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface;
+
 protected constructor (basicPaymentType: BasicPaymentType){
 
             super();
@@ -81,6 +82,7 @@ this.paymentProcessorInterfaceFactoryInterface=
 PaymentTypeUtil.getInstance()!.add(this);
     
 }
+
 
 protected constructor (basicPaymentType: BasicPaymentType, paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface, paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface){
 
@@ -150,8 +152,7 @@ PaymentTypeUtil.getInstance()!.add(this);
 
     public toVector(): Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.addAll(this.getBasicPaymentType()!.toVector());
     
@@ -188,8 +189,7 @@ vector.addAll(this.getBasicPaymentType()!.toVector());
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.putAll(this.getBasicPaymentType()!.toHashMap());
     

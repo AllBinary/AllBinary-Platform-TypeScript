@@ -51,6 +51,7 @@ import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDam
 
 export class SpecialDownGameInputProcessor extends SpecialGameInputProcessor {
         
+
 public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
             super(collidableDestroyableDamageableLayer);
                     

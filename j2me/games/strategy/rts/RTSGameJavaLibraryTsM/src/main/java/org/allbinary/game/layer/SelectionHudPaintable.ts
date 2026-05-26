@@ -72,25 +72,26 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
 
     readonly y: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +17;
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil
+    private readonly primitiveLongUtil: PrimitiveLongUtil;
 
-    private x: number= 0
+    private x: number= 0;
 
-    textX: number= 0
+    textX: number= 0;
 
-    imageX: number= 0
+    imageX: number= 0;
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
-    private color: number= 0
+    private color: number= 0;
 
-    private width: number= 0
+    private width: number= 0;
 
-    private height: number= 0
+    private height: number= 0;
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
+
 protected constructor (){
 
             super();
@@ -103,12 +104,10 @@ this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(10000);
 
     public update(){
 
-    var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
-;
+    var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();;
     
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.x= CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
     

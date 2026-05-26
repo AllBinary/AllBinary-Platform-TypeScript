@@ -53,7 +53,8 @@ export class SingletonAnimationInterfaceFactory
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
-    private readonly animationInterface: Animation
+    private readonly animationInterface: Animation;
+
 public constructor (animationInterface: Animation){
 
             super();

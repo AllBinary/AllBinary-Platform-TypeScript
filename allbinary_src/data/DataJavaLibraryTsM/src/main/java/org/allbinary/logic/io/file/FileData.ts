@@ -57,6 +57,7 @@ export class FileData
     
 }
 
+
 private constructor (){
 
             super();

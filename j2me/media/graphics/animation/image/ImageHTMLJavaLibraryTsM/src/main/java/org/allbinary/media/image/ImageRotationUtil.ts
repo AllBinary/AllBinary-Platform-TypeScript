@@ -71,6 +71,7 @@ export class ImageRotationUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -81,8 +82,7 @@ private constructor (){
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
-;
+    var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
@@ -91,16 +91,14 @@ private constructor (){
                                     
     var originalPlayNImage: playn.core.Image = 
                 null
-            ;
-;
+            ;;
     
 
                         if(originalImage!.isMutable())
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
-;
+    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -109,8 +107,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
-;
+    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -118,16 +115,13 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                         }
                             
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
-;
+    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
-;
+    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-;
+    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.translate(originalPlayNImage!.width() /2, originalPlayNImage!.height() /2);
     

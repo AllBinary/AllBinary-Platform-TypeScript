@@ -50,8 +50,7 @@ export class MathUtil
 
     public getTotalDigits(digits: number): number{
 
-    var total: number = 0;
-;
+    var total: number = 0;;
     
 
         while(digits > 0)
@@ -86,12 +85,10 @@ total++;
                                     }
                                 
 
-    var accumulated: number = value>>1;
-;
+    var accumulated: number = value>>1;;
     
 
-    var result: number = (accumulated +(value /accumulated))>>1;
-;
+    var result: number = (accumulated +(value /accumulated))>>1;;
     
 
         do
@@ -143,16 +140,14 @@ result= (accumulated +(value /accumulated))>>1;
                                     }
                                 
 
-    var result: number = x;
-;
+    var result: number = x;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < ACCURACY; index++)
+    var index: number = 0;index < this.ACCURACY; index++)
         {
 result= (result +(x /result)) /2;
     

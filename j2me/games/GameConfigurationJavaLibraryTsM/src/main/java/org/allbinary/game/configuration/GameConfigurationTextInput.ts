@@ -60,12 +60,10 @@ export class GameConfigurationTextInput
 
     public static update(textField: TextField){
 
-    var anyType: any = textField!.getLabel();
-;
+    var anyType: any = textField!.getLabel();;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType) as GameConfigurationTextInput;
-;
+    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType) as GameConfigurationTextInput;;
     
 gameConfigurationTextInput!.setText(textField!.getString());
     
@@ -85,6 +83,7 @@ gameConfigurationTextInput!.setText(textField!.getString());
     private label: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private text: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 public constructor (label: string, text: string){
 
             super();

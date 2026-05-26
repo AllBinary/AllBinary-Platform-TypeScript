@@ -92,15 +92,15 @@ export class GameFeatureItemStateListener
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private gameOptionsForm: GameOptionsForm
+    private gameOptionsForm: GameOptionsForm;
+
 public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
         this.gameOptionsForm= gameOptionsForm;
     
 
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-;
+    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 GameFeatureItemStateListener.add(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
     
@@ -125,8 +125,7 @@ GameFeatureItemStateListener.add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR);
 
         try {
             
-    var itemLabel: string = item.getLabel()!;
-;
+    var itemLabel: string = item.getLabel()!;;
     
 this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
@@ -144,8 +143,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
                         
                                     {
                                     
-    var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;
-;
+    var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;;
     
 
                         if(gameFeatureUtil!.isExclusive(itemLabel))
@@ -170,8 +168,7 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.ITEM_LAB
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
     

@@ -69,9 +69,10 @@ export class TransformInfoDomNode
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
 
-    private mappedName: string
+    private mappedName: string;
+
 public constructor (node: Node){
 
             super();
@@ -85,24 +86,19 @@ public constructor (node: Node){
                                     }
                                 
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var attributes: NamedNodeMap = node.getAttributes()!;
-;
+    var attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;
-;
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;;
     
 
-    var name: string = attrNode!.getValue()!;
-;
+    var name: string = attrNode!.getValue()!;;
     
 
-    var nodeList: NodeList = node.getChildNodes()!;
-;
+    var nodeList: NodeList = node.getChildNodes()!;;
     
 
                         if(nodeList!.getLength() > 1)
@@ -113,8 +109,7 @@ public constructor (node: Node){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Constructing Complete TransformInfo Node For: ");
     
@@ -132,36 +127,28 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoObjectConfigCom
                                     }
                                 
 
-    var objectFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, nodeList)!;
-;
+    var objectFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, nodeList)!;;
     
 
-    var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNameNode)!;
-;
+    var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNameNode)!;;
     
 
-    var objectConfigFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, nodeList)!;
-;
+    var objectConfigFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, nodeList)!;;
     
 
-    var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNameNode)!;
-;
+    var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNameNode)!;;
     
 
-    var templateFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, nodeList)!;
-;
+    var templateFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, nodeList)!;;
     
 
-    var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNameNode)!;
-;
+    var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNameNode)!;;
     
 
-    var dataFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.DATAFILENAME, nodeList)!;
-;
+    var dataFileNameNode: Node = DomSearchHelper.getNode(transformInfoData!.DATAFILENAME, nodeList)!;;
     
 
-    var dataFileName: string = DomNodeHelper.getTextNodeValue(dataFileNameNode)!;
-;
+    var dataFileName: string = DomNodeHelper.getTextNodeValue(dataFileNameNode)!;;
     
 this.transformInfoInterface= new TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName) as TransformInfoInterface;
     
@@ -174,8 +161,7 @@ this.transformInfoInterface= new TransformInfo(name, objectFileName, objectConfi
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Constructing Partial TransformInfo Node For: ");
     
@@ -198,8 +184,7 @@ this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
                         }
                             
 
-    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED) as Attr;
-;
+    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED) as Attr;;
     
 
                         if(templateAttrNode != 
@@ -220,6 +205,7 @@ this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
                             
 }
 
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
@@ -229,6 +215,7 @@ this.mappedName= transformInfoInterface!.getName();
     
 }
 
+
 public constructor (transformInfoInterface: TransformInfoInterface, mappedName: string){
 
             super();
@@ -237,6 +224,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, mappedName: 
 this.mappedName= mappedName;
     
 }
+
 
 public constructor (name: string, mappedName: string){
 
@@ -270,8 +258,7 @@ this.mappedName= mappedName;
 
     public getReplaceKey(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("<transform:component name=\"");
     
@@ -280,8 +267,7 @@ stringBuffer!.append("body");
 stringBuffer!.append("\"/>");
     
 
-    var key: string = stringBuffer!.toString()!;
-;
+    var key: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

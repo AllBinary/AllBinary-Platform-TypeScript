@@ -68,6 +68,7 @@ export class ScreenScavangerRobot
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (){
 
             super();
@@ -80,28 +81,22 @@ public constructor (){
 this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages");
     
 
-    var dimScreenSize: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;
-;
+    var dimScreenSize: Dimension = Toolkit.getDefaultToolkit()!.getScreenSize()!;;
     
 
-    var rectScreenSize: Rectangle = new Rectangle(dimScreenSize);
-;
+    var rectScreenSize: Rectangle = new Rectangle(dimScreenSize);;
     
 
-    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
-;
+    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
-    var bufferedImageArray: BufferedImage[] = new Array(1);
-;
+    var bufferedImageArray: BufferedImage[] = new Array(1);;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot") as InputRobotInterface;
-;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot") as InputRobotInterface;;
     
 bufferedImageArray[index]= inputRobotInterface!.createScreenCapture(rectScreenSize);
     

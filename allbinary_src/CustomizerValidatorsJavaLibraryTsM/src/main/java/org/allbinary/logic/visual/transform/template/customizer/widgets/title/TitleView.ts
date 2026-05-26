@@ -77,7 +77,8 @@ export class TitleView
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private title: string
+    private title: string;
+
 public constructor (){
 
             super();
@@ -85,16 +86,15 @@ public constructor (){
     
 }
 
+
 public constructor (node: Node){
 
             super();
         
-    var titleTextNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.TEXT, node.getChildNodes())!;
-;
+    var titleTextNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.TEXT, node.getChildNodes())!;;
     
 
-    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, titleTextNode!.getChildNodes())!;
-;
+    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, titleTextNode!.getChildNodes())!;;
     
 this.title= DomNodeHelper.getTextNodeValue(valueNode);
     
@@ -117,6 +117,7 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode);
                                     }
                                 
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -162,8 +163,7 @@ this.title= hashMap!.get(TitleData.getInstance()!.TEXT) as string;
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
     
@@ -180,8 +180,7 @@ hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

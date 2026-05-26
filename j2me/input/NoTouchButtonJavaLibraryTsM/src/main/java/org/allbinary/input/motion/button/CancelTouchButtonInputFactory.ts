@@ -63,20 +63,19 @@ export class CancelTouchButtonInputFactory
 
 
     private readonly cancelInputArray: TouchButtonInput[] = new Array(InputFactory.getInstance()!.MAX);
+
 private constructor (){
 
             super();
         
-    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-;
+    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = this.cancelInputArray!.length -1;
-index >= 0; index--)
+    var index: number = this.cancelInputArray!.length -1;index >= 0; index--)
         {
 this.cancelInputArray[index]= basicTouchInputFactory!.NONE;
     

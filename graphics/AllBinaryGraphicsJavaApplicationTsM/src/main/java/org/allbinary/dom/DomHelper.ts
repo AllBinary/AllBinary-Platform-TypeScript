@@ -89,6 +89,7 @@ export class DomHelper
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -99,16 +100,13 @@ private constructor (){
 
         try {
             
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-;
+    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-;
+    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.newDocument()!;
-;
+    var document: Document = builder.newDocument()!;;
     
 
 
@@ -137,16 +135,13 @@ private constructor (){
 
         try {
             
-    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-;
+    var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;;
     
 
-    var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-;
+    var builder: DocumentBuilder = factory.newDocumentBuilder()!;;
     
 
-    var document: Document = builder.parse(xmlFile)!;
-;
+    var document: Document = builder.parse(xmlFile)!;;
     
 
 
@@ -174,24 +169,19 @@ private constructor (){
 
         try {
             
-    var domSource: DOMSource = new DOMSource(document);
-;
+    var domSource: DOMSource = new DOMSource(document);;
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);
-;
+    var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);;
     
 
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-;
+    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-;
+    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 copyTransformer!.transform(domSource, streamResult);
     
@@ -221,22 +211,18 @@ copyTransformer!.transform(domSource, streamResult);
 
         try {
             
-    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-;
+    var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-;
+    var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;;
     
 
-    var domSource: DOMSource = new DOMSource(document);
-;
+    var domSource: DOMSource = new DOMSource(document);;
     
 file.createNewFile();
     
 
-    var streamResult: StreamResult = new StreamResult(file);
-;
+    var streamResult: StreamResult = new StreamResult(file);;
     
 copyTransformer!.transform(domSource, streamResult);
     
@@ -258,20 +244,17 @@ copyTransformer!.transform(domSource, streamResult);
             
     public getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 
-    var numberOfNodes: number = nodeList!.getLength()!;
-;
+    var numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfNodes; index++)
+    var index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeName()!.compareTo(nodeName) == 0)
@@ -300,28 +283,23 @@ index < numberOfNodes; index++)
             
     public getChildrenWithoutTextNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var childNodeList: NodeList = this.getChildNodeList(nodeName, nodeList)!;
-;
+    var childNodeList: NodeList = this.getChildNodeList(nodeName, nodeList)!;;
     
 
-    var numberOfChildren: number = childNodeList!.getLength()!;
-;
+    var numberOfChildren: number = childNodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfChildren; index++)
+    var index: number = 0;index < numberOfChildren; index++)
         {
 
-    var node: Node = childNodeList!.item(index)!;
-;
+    var node: Node = childNodeList!.item(index)!;;
     
 
                         if(node.getNodeType() != Node.TEXT_NODE)
@@ -347,24 +325,20 @@ index < numberOfChildren; index++)
             
     public getWithoutTextNodes(nodeList: NodeList): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var numberOfChildren: number = nodeList!.getLength()!;
-;
+    var numberOfChildren: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfChildren; index++)
+    var index: number = 0;index < numberOfChildren; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
                         if(node.getNodeType() != Node.TEXT_NODE)
@@ -390,20 +364,17 @@ index < numberOfChildren; index++)
             
     public searchNodeList(nodeName: string, nodeList: NodeList): Node{
 
-    var numberOfNodes: number = nodeList!.getLength()!;
-;
+    var numberOfNodes: number = nodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfNodes; index++)
+    var index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
@@ -434,20 +405,17 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
             
     public searchNodeList(nodeName: string, nodeList: BasicArrayList): Node{
 
-    var numberOfNodes: number = nodeList!.size()!;
-;
+    var numberOfNodes: number = nodeList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfNodes; index++)
+    var index: number = 0;index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.get(index) as Node;
-;
+    var node: Node = nodeList!.get(index) as Node;;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     

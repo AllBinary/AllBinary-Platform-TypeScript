@@ -54,6 +54,7 @@ export class ProductStoreAdminUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

@@ -51,6 +51,7 @@ export class ImageOutputData
         
 
     public static readonly SAVE_PATH: string = System.getProperty("user.dir") +File.separator +"saves" +File.separator;
+
 private constructor (){
 
             super();

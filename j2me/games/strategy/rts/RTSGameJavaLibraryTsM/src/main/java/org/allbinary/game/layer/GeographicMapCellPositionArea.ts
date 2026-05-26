@@ -75,13 +75,14 @@ export class GeographicMapCellPositionArea extends GeographicMapCellPositionArea
 
     private readonly surroundingCircularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(0)!;
 
-    private readonly layerInterface: AllBinaryLayer
+    private readonly layerInterface: AllBinaryLayer;
 
     private LIST: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
     private occupyingGeographicMapCellPositionList: BasicArrayList = this.LIST;
 
     private surroundingGeographicMapCellPositionList: BasicArrayList = this.LIST;
+
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
@@ -124,8 +125,7 @@ this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPosi
 
     public getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()) as GeographicMapCellPosition;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()) as GeographicMapCellPosition;;
     
 this.surroundingCircularIndexUtil!.next();
     

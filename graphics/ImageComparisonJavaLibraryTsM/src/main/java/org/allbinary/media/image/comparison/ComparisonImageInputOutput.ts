@@ -79,6 +79,7 @@ export class ComparisonImageInputOutput
     private static readonly ROOT_NAME: string = "_Changed_";
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -89,16 +90,14 @@ public constructor (){
             
     public save(frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(frame > 0)
                         
                                     {
                                     
-    var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = (getInstance as AutomaticCacheInterface).get(frame) as ImageComparisonResultFrameCacheable;
-;
+    var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = (getInstance as AutomaticCacheInterface).get(frame) as ImageComparisonResultFrameCacheable;;
     
 
                         if(imageComparisonResultFrameCacheable != 
@@ -107,8 +106,7 @@ public constructor (){
                         
                                     {
                                     
-    var imageComparisonResult: ImageComparisonResult = imageComparisonResultFrameCacheable!.getImageComparisonResult()!;
-;
+    var imageComparisonResult: ImageComparisonResult = imageComparisonResultFrameCacheable!.getImageComparisonResult()!;;
     
 this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame());
     
@@ -137,12 +135,10 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
             
     public save(imageComparisonResult: ImageComparisonResult, frame: Long){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var filePathStringBuffer: StringMaker = new StringMaker();
-;
+    var filePathStringBuffer: StringMaker = new StringMaker();;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
     
@@ -151,8 +147,7 @@ filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
 filePathStringBuffer!.append(ComparisonImageInputOutput.ROOT_NAME);
     
 
-    var filePathStringBuffer1: StringMaker = new StringMaker();
-;
+    var filePathStringBuffer1: StringMaker = new StringMaker();;
     
 filePathStringBuffer1!.append(filePathStringBuffer!.toString());
     
@@ -161,12 +156,10 @@ filePathStringBuffer1!.append("_1");
 filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
 
-    var filePath1: string = filePathStringBuffer1!.toString()!;
-;
+    var filePath1: string = filePathStringBuffer1!.toString()!;;
     
 
-    var filePathStringBuffer2: StringMaker = new StringMaker();
-;
+    var filePathStringBuffer2: StringMaker = new StringMaker();;
     
 filePathStringBuffer2!.append(filePathStringBuffer!.toString());
     
@@ -175,28 +168,24 @@ filePathStringBuffer2!.append("_2");
 filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension());
     
 
-    var filePath2: string = filePathStringBuffer2!.toString()!;
-;
+    var filePath2: string = filePathStringBuffer2!.toString()!;;
     
 
-    var bufferedImageCacheables: BufferedImageCacheable[] = ChangedPixelsUtil.generateBufferedImageChacheables(imageComparisonResult)!;
-;
+    var bufferedImageCacheables: BufferedImageCacheable[] = ChangedPixelsUtil.generateBufferedImageChacheables(imageComparisonResult)!;;
     
 this.logUtil!.putF("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE);
     
 this.logUtil!.putF("Comparison Image File Path 2: " +filePath2, this, commonStrings!.SAVE);
     
 
-    var bufferedImageArray: BufferedImage[] = new Array(2);
-;
+    var bufferedImageArray: BufferedImage[] = new Array(2);;
     
 bufferedImageArray[0]= bufferedImageCacheables[0]!.getBufferedImage();
     
 bufferedImageArray[1]= bufferedImageCacheables[1]!.getBufferedImage();
     
 
-    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
-;
+    var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;;
     
 imagePersistanceUtil!.saveWithImageIO(filePath1, bufferedImageArray[0]!);
     

@@ -40,7 +40,8 @@ import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 export class ObjectPermutationVisitor extends Visitor {
         
 
-    readonly data: any[]
+    readonly data: any[];
+
 public constructor (data: any[]){
 
             super();
@@ -67,8 +68,7 @@ this.print(this.data, stringBuilder);
 
     public print(data: any[]){
 
-    var stringBuilder: StringMaker = new StringMaker();
-;
+    var stringBuilder: StringMaker = new StringMaker();;
     
 this.print(data, stringBuilder);
     
@@ -77,21 +77,18 @@ this.print(data, stringBuilder);
 
     public print(data: any[], stringBuilder: StringMaker){
 
-    var tsUtil: TsUtil = TsUtil.getInstance()!;
-;
+    var tsUtil: TsUtil = TsUtil.getInstance()!;;
     
 
     var size: number = data.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 stringBuilder!.appendint(tsUtil!.hashCode(data[i]!));
     

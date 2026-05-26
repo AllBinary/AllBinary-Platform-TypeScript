@@ -48,7 +48,8 @@ export class InputAutomationConfigurationModuleChangeEvent
          {
         
 
-    private inputAutomationModuleConfiguration: InputAutomationModuleConfiguration
+    private inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;
+
 public constructor (inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
 
             super();

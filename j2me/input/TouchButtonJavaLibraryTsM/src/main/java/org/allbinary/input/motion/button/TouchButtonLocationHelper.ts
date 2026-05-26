@@ -51,27 +51,26 @@ export class TouchButtonLocationHelper
          {
         
 
-    private readonly totalColumns: number
+    private readonly totalColumns: number;
 
-    private readonly totalRows: number
+    private readonly totalRows: number;
 
-    private columnsRemainder: number
+    private columnsRemainder: number;
 
-    private rowsRemainder: number
+    private rowsRemainder: number;
 
-    private columnsRemainderHalf: number
+    private columnsRemainderHalf: number;
 
-    private rowsRemainderHalf: number
+    private rowsRemainderHalf: number;
+
 public constructor (){
 
             super();
         
-    var buttonSize: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE;
-;
+    var buttonSize: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.totalColumns= displayInfo!.getLastWidth() /buttonSize;
     
@@ -150,8 +149,7 @@ this.rowsRemainderHalf= (this.rowsRemainder>>1);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("totalColumns: ");
     

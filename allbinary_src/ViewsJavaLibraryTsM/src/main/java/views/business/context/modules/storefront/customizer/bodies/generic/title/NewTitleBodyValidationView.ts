@@ -66,6 +66,7 @@ export class NewTitleBodyValidationView extends TitleBodyCustomizerView implemen
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -152,8 +153,7 @@ this.titleBody= new TitleBodyValidation();
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.titleBody!.validationInfo());
     

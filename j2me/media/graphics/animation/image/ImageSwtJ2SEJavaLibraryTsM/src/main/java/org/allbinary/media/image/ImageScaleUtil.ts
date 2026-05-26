@@ -84,6 +84,7 @@ export class ImageScaleUtil
     private readonly features: Features = Features.getInstance()!;
 
     private readonly NO_COPY: string = "SWT should not copy images after initial loading as the alpha is not honored";
+
 private constructor (){
 
             super();
@@ -121,24 +122,19 @@ private constructor (){
                                     }
                                 
 
-    var width: number = originalImage!.getWidth()!;
-;
+    var width: number = originalImage!.getWidth()!;;
     
 
-    var height: number = originalImage!.getHeight()!;
-;
+    var height: number = originalImage!.getHeight()!;;
     
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;
-;
+    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;
-;
+    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round((scaleX *width)), Math.round((scaleY *height)), mutable)!;
-;
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round((scaleX *width)), Math.round((scaleY *height)), mutable)!;;
     
 
 
@@ -161,16 +157,13 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
             
     public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number, mutable: boolean){
 
-    var width: number = originalImage!.getWidth()!;
-;
+    var width: number = originalImage!.getWidth()!;;
     
 
-    var height: number = originalImage!.getHeight()!;
-;
+    var height: number = originalImage!.getHeight()!;;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round(scaleX), Math.round(scaleY), mutable)!;
-;
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round(scaleX), Math.round(scaleY), mutable)!;;
     
 originalImageArray[0]= scaledImage;
     

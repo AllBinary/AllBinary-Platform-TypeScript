@@ -50,9 +50,10 @@ export class Portion
          {
         
 
-    private readonly current: Integer
+    private readonly current: Integer;
 
-    private readonly total: Integer
+    private readonly total: Integer;
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();

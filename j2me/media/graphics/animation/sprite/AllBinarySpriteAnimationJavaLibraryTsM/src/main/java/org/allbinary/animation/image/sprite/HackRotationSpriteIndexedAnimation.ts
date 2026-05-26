@@ -62,9 +62,10 @@ import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularInd
 export class HackRotationSpriteIndexedAnimation extends RotationAnimation {
         
 
-    readonly sprite: Sprite
+    readonly sprite: Sprite;
 
-    private readonly image: Image
+    private readonly image: Image;
+
 public constructor (sprite: Sprite, image: Image, angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
             super(angleInfo, CircularIndexUtil.createInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                     

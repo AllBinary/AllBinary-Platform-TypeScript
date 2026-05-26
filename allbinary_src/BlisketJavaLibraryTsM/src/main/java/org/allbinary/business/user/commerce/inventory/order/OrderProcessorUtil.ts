@@ -73,12 +73,10 @@ export class OrderProcessorUtil
             
     public process(userName: string, order: Order): string{
 
-    var orderItems: OrderItemsEntity = new OrderItemsEntity();
-;
+    var orderItems: OrderItemsEntity = new OrderItemsEntity();;
     
 
-    var orderHistory: OrderHistoryEntity = new OrderHistoryEntity();
-;
+    var orderHistory: OrderHistoryEntity = new OrderHistoryEntity();;
     
 order.setId(new OrderIdGenerator().getNext());
     

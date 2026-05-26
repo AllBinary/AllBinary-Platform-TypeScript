@@ -69,20 +69,16 @@ export class ColorDeltaFactory
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";
-;
+    var STATIC_BLOCK: string = "Static Block";;
     
 
-    var instance: string = "ColorDeltaFactory";
-;
+    var instance: string = "ColorDeltaFactory";;
     
 
         try {
@@ -109,8 +105,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
             
     public static getInstance(rgb1: number, rgb2: number): ColorDelta{
 
-    var colorDelta: ColorDelta = ColorDeltaFactory.cacheInterface!.get(ColorDelta.getKey(rgb1, rgb2)) as ColorDelta;
-;
+    var colorDelta: ColorDelta = ColorDeltaFactory.cacheInterface!.get(ColorDelta.getKey(rgb1, rgb2)) as ColorDelta;;
     
 
                         if(colorDelta == 
@@ -133,6 +128,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

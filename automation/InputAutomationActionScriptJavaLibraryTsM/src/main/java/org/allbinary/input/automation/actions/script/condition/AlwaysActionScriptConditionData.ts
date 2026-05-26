@@ -49,6 +49,7 @@ export class AlwaysActionScriptConditionData
     public static NAME: string = "ALWAYS_ACTION_CONDITION_NAME";
 
     public static IS_ON: string = "ALWAYS_ACTION_CONDITION_IS_ON";
+
 private constructor (){
 
             super();

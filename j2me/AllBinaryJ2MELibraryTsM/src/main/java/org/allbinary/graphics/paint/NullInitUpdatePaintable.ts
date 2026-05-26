@@ -56,6 +56,7 @@ export class NullInitUpdatePaintable extends InitUpdatePaintable {
     
 }
 
+
 private constructor (){
 
             super();

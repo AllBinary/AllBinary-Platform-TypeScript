@@ -118,8 +118,7 @@ this.fire(message);
             
     public fire(message: string){
 
-    var gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, message, this.TWO, BasicColorFactory.getInstance()!.RED, this.FALSE);
-;
+    var gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, message, this.TWO, BasicColorFactory.getInstance()!.RED, this.FALSE);;
     
 this.gameNotificationEventHandler!.fireEvent(gameNotificationEvent);
     

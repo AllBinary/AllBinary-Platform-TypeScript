@@ -77,6 +77,7 @@ export class CategoryLoader extends CategoryModifierTree implements CategoryLoad
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(categoryFactoryInterface);
                     
@@ -110,8 +111,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                         
                                     {
                                     
-    var rootAbFile: AbFile = new AbFile(categoryInterface!.getRootFilePath());
-;
+    var rootAbFile: AbFile = new AbFile(categoryInterface!.getRootFilePath());;
     
 
                         if(!rootAbFile!.isDirectory())
@@ -140,16 +140,13 @@ this.save(categoryInterface);
                                     }
                                 
 
-    var fileAbPath: AbPath = categoryInterface!.getFilePath()!;
-;
+    var fileAbPath: AbPath = categoryInterface!.getFilePath()!;;
     
 
-    var cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);
-;
+    var cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);;
     
 
-    var document: Document = DomDocumentHelper.create(cryptFileReader!.get(fileAbPath))!;
-;
+    var document: Document = DomDocumentHelper.create(cryptFileReader!.get(fileAbPath))!;;
     
 
 
@@ -210,12 +207,10 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
         try {
             
-    var document: Document = this.getDoc(categoryInterface)!;
-;
+    var document: Document = this.getDoc(categoryInterface)!;;
     
 
-    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;
-;
+    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
     
 
 
@@ -252,12 +247,10 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
         try {
             
-    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;
-;
+    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
     
 
-    var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;
-;
+    var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;;
     
 
 
@@ -294,8 +287,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
         try {
             
-    var document: Document = this.getDoc(categoryInterface)!;
-;
+    var document: Document = this.getDoc(categoryInterface)!;;
     
 
 
@@ -332,12 +324,10 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
         try {
             
-    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;
-;
+    var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;;
     
 
-    var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;
-;
+    var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;;
     
 
 
@@ -384,12 +374,10 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 
                         for (
-    var index: number = 0;
-index < categoryNodeList!.getLength(); index++)
+    var index: number = 0;index < categoryNodeList!.getLength(); index++)
         {
 
-    var categoryNode: Node = categoryNodeList!.item(index)!;
-;
+    var categoryNode: Node = categoryNodeList!.item(index)!;;
     
 
                         if(categoryNode != 
@@ -398,8 +386,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode) as CategoryInterface;
-;
+    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode) as CategoryInterface;;
     
 parentCategoryInterface!.addChild(categoryInterface);
     
@@ -456,12 +443,10 @@ parentCategoryInterface!.addChild(categoryInterface);
 
 
                         for (
-    var index: number = 0;
-index < categoryNodeList!.getLength(); index++)
+    var index: number = 0;index < categoryNodeList!.getLength(); index++)
         {
 
-    var categoryNode: Node = categoryNodeList!.item(index)!;
-;
+    var categoryNode: Node = categoryNodeList!.item(index)!;;
     
 
                         if(categoryNode != 
@@ -470,8 +455,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = new CategoryProperties(categoryNode) as CategoryPropertiesInterface;
-;
+    var categoryPropertiesInterface: CategoryPropertiesInterface = new CategoryProperties(categoryNode) as CategoryPropertiesInterface;;
     
 loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);
     

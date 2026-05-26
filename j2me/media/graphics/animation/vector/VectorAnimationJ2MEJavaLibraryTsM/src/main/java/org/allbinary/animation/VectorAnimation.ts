@@ -63,21 +63,18 @@ export class VectorAnimation extends IndexedAnimation implements VectorAnimation
 
     public static createVectorAnimation(currentPoints2: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior): VectorAnimation{
 
-    var currentPoints: number[][][] = Array.from({ length: 1 }, () => Array.from({ length: currentPoints2!.length }, () => new Array(0).fill(2)));
-;
+    var currentPoints: number[][][] = Array.from({ length: 1 }, () => Array.from({ length: currentPoints2!.length }, () => new Array(0).fill(2)));;
     
 
     var size: number = currentPoints2!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 currentPoints[0]![index]![0]= currentPoints2[index]![0]!;
     
@@ -99,6 +96,7 @@ currentPoints[0]![index]![1]= currentPoints2[index]![1]!;
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
 
     private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(0)!;
+
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -164,33 +162,26 @@ this.circularIndexUtil!.previous();
 
         try {
             
-    var nextPointX: number = 0;
-;
+    var nextPointX: number = 0;;
     
 
-    var nextPointY: number = 0;
-;
+    var nextPointY: number = 0;;
     
 
-    var nextPoint: number[]
-;
+    var nextPoint: number[];;
     
 
-    var point: number[]
-;
+    var point: number[];;
     
 
-    var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;
-;
+    var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;;
     
 
     var size: number = currentPointsFrame!.length
-                ;
-;
+                ;;
     
 
-    var index: number = size -2;
-;
+    var index: number = size -2;;
     
 
         while(--index >= 0)

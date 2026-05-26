@@ -372,15 +372,15 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private gameState: GameState = GameState.NO_GAME_STATE;
 
-    private gameOver: boolean= false
+    private gameOver: boolean= false;
 
-    private initialized: boolean= false
+    private initialized: boolean= false;
 
     private readonly gameStateTimeHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-    readonly highScoresHelper: HighScoresHelperBase
+    readonly highScoresHelper: HighScoresHelperBase;
 
-    private highScoreSubmitted: boolean= false
+    private highScoreSubmitted: boolean= false;
 
     private readonly realHighScoresPaintable: HighScoresPaintable = new HighScoresPaintable();
 
@@ -388,11 +388,11 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private localPlayerGameInputList: BasicArrayList = new BasicArrayListD();
 
-    private isCheating: boolean= false
+    private isCheating: boolean= false;
 
     private hashtable: Hashtable<any, any> = this.nullUtil!.NULL_TABLE;
 
-    private isSingleKeyRepeatableProcessing: boolean= false
+    private isSingleKeyRepeatableProcessing: boolean= false;
 
     private gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory = BasicBuildGameInitializerFactory.NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY;
 
@@ -426,9 +426,9 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private processGameProcessor: Processor = Processor.getInstance()!;
 
-    private readonly highScoresFactoryInterface: HighScoresFactoryInterface
+    private readonly highScoresFactoryInterface: HighScoresFactoryInterface;
 
-    private startLevel: number= 0
+    private startLevel: number= 0;
 
     private mainMenuInputProcessor: BasicMenuInputProcessor = NoMenuInputProcessor.getInstance()!;
 
@@ -464,11 +464,12 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private readonly gameKeyEventHandler: GameKeyEventHandler = GameKeyEventHandler.getInstance()!;
 
-    private readonly gameBehavior: DemoGameBehavior
+    private readonly gameBehavior: DemoGameBehavior;
 
-    private readonly menuBehavior: BaseMenuBehavior
+    private readonly menuBehavior: BaseMenuBehavior;
 
     private progressPaintable: PaintableInterface = ProgressCanvasFactory.getLazyInstance()!;
+
 public constructor (commandListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
             super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, true);
                     
@@ -568,16 +569,13 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DI
             
     public updateMenuFromEvent(displayChangeEvent: DisplayChangeEvent){
 
-    var formUtil: FormUtil = FormUtil.getInstance()!;
-;
+    var formUtil: FormUtil = FormUtil.getInstance()!;;
     
 
-    var popupMenuRectangle: Rectangle = formUtil!.createPopupMenuRectangle()!;
-;
+    var popupMenuRectangle: Rectangle = formUtil!.createPopupMenuRectangle()!;;
     
 
-    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);
-;
+    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);;
     
 basicPopupMenuPaintable!.init(popupMenuRectangle);
     
@@ -586,8 +584,7 @@ basicPopupMenuPaintable!.init(popupMenuRectangle);
                         
                                     {
                                     
-    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);
-;
+    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);;
     
 popupMenuInputProcessor!.init(popupMenuRectangle);
     
@@ -595,12 +592,10 @@ popupMenuInputProcessor!.init(popupMenuRectangle);
                                     }
                                 
 
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;
-;
+    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = formUtil!.createFormRectangle()!;
-;
+    var rectangle: Rectangle = formUtil!.createFormRectangle()!;;
     
 this.menuForm!.init(rectangle, formType);
     
@@ -653,12 +648,10 @@ super.processSleep();
             
     initPopupMenu(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var popupMenuRectangle: Rectangle = FormUtil.getInstance()!.createPopupMenuRectangle()!;
-;
+    var popupMenuRectangle: Rectangle = FormUtil.getInstance()!.createPopupMenuRectangle()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
@@ -696,38 +689,30 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
 this.closeMenu();
     
 
-    var formUtil: FormUtil = FormUtil.getInstance()!;
-;
+    var formUtil: FormUtil = FormUtil.getInstance()!;;
     
 
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;
-;
+    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;
-;
+    var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;;
     
 
-    var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;
-;
+    var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
-;
+    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
     
 
-    var rectangle: Rectangle = formUtil!.createFormRectangle()!;
-;
+    var rectangle: Rectangle = formUtil!.createFormRectangle()!;;
     
 this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 25, false, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
     
 
-    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;
-;
+    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
@@ -782,51 +767,42 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
             
     public updateMenu2(){
 
-    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;
-;
+    var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
     
 scrollSelectionForm!.deleteAll();
     
 
-    var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;
-;
+    var gameLimitedCommandTextItemArrayFactory: GameLimitedCommandTextItemArrayFactory = GameLimitedCommandTextItemArrayFactory.getInstance()!;;
     
 
-    var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;
-;
+    var commandTextItemArrayFactory: CommandTextItemArrayFactory = gameLimitedCommandTextItemArrayFactory!.getCommandTextItemArrayFactory()!;;
     
 
-    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
-;
+    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
     
 
     var size: number = items.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 scrollSelectionForm!.append(items[index]!);
     
 }
 
 
-    var formUtil: FormUtil = FormUtil.getInstance()!;
-;
+    var formUtil: FormUtil = FormUtil.getInstance()!;;
     
 
-    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;
-;
+    var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = formUtil!.createFormRectangle()!;
-;
+    var rectangle: Rectangle = formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -1016,8 +992,7 @@ this.setLayerManager(gameLayerManager);
                         
                                     {
                                     
-    var BUFF_MESSAGE: string = "XXX Not Buffering Causes Concurrency Issues XXX";
-;
+    var BUFF_MESSAGE: string = "XXX Not Buffering Causes Concurrency Issues XXX";;
     
 this.logUtil!.putF(BUFF_MESSAGE, this, this.commonStrings!.CONSTRUCTOR);
     
@@ -1036,8 +1011,7 @@ this.logUtil!.putF(BUFF_MESSAGE, this, this.commonStrings!.CONSTRUCTOR);
 this.setGameInputProcessor(Processor.getInstance());
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(GameFeatureFactory.getInstance()!.CHEATING))
@@ -1126,28 +1100,24 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 
     initConfigurable(abeClientInformation: AbeClientInformationInterface){
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(50, "Setting Configurables");
     
 GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, this.gameInitializationInterfaceFactoryInterface);
     
 
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-;
+    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 
-    var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;
-;
+    var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;;
     
 
                         if(changedGameFeatureListener!.isChangedFeature(gameFeatureFactory!.SOUND))
                         
                                     {
                                     
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 this.logUtil!.putF(new StringMaker().append("Sound Changing To: ")!.appendboolean(features.isFeature(gameFeatureFactory!.SOUND))!.toString(), this, "initConfigurable");
     
@@ -1159,8 +1129,7 @@ changedGameFeatureListener!.remove(gameFeatureFactory!.SOUND);
                                     }
                                 
 
-    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-;
+    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
     
 
                         if(changedGameFeatureListener!.isChangedFeature(sensorFeatureFactory!.ORIENTATION_SENSORS) || changedGameFeatureListener!.isChangedFeature(sensorFeatureFactory!.NO_ORIENTATION) || changedGameFeatureListener!.isChangedFeature(sensorFeatureFactory!.SIMULATED_ORIENTATION_SENSORS))
@@ -1176,8 +1145,7 @@ changedGameFeatureListener!.remove(sensorFeatureFactory!.SIMULATED_ORIENTATION_S
                                     }
                                 
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 this.loadResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_GAME);
     
@@ -1204,12 +1172,10 @@ this.initTouch();
             
     initTouch(){
 
-    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
-;
+    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
     
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_TOUCH);
     
@@ -1255,8 +1221,7 @@ this.gameBehavior!.updateTouch(this);
             
     updateTouch2(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
@@ -1299,12 +1264,10 @@ this.setCommandListener(cmdListener);
 
     public addCommands(){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-;
+    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
-    var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;
-;
+    var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;;
     
 
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
@@ -1322,12 +1285,10 @@ this.addCommand(myCommandsFactory!.PAUSE_COMMAND);
 this.addCommand(gameCommandsFactory!.QUIT_COMMAND);
     
 
-    var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;
-;
+    var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(J2MEUtil.isHTML())
@@ -1370,8 +1331,7 @@ this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM);
 
         try {
             
-    var itemLabel: string = item.getLabel()!;
-;
+    var itemLabel: string = item.getLabel()!;;
     
 this.logUtil!.putF(new StringMaker().append(this.commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
@@ -1380,8 +1340,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonLabels!.ITEM_LABEL)!.appe
                         
                                     {
                                     
-    var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;
-;
+    var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;;
     
 
                         if(gameFeatureUtil!.isExclusive(itemLabel))
@@ -1430,8 +1389,7 @@ this.gameBehavior!.updateScreenButtonPaintable(this);
 
     public updateScreenButtonPaintable2(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
@@ -1582,8 +1540,7 @@ this.gameBehavior!.setGameState(this);
             
     public updateGameState(){
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
-;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()!.getGameType());
     
@@ -1634,12 +1591,10 @@ this.logUtil!.putF("Remove PlayerInput Listeners", this, "removeAllGameKeyInputL
 
 
                         for (
-    var index: number = this.localPlayerGameInputList!.size() -1;
-index >= 0; index--)
+    var index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
         {
 
-    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index) as PlayerGameInput;
-;
+    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index) as PlayerGameInput;;
     
 this.removeKeyInputListener(playerGameInput);
     
@@ -1697,8 +1652,7 @@ this.gameBehavior!.updateEndGameProcessor(this);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CLEANUP);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(10, "Cleaning Up");
     
@@ -1715,8 +1669,7 @@ GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
             
     public loadResourceLoadingLevel(resourceLoadingLevel: ResourceLoadingLevel){
 
-    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
-;
+    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
     
 gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevel);
     
@@ -1729,8 +1682,7 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
             
     public loadResources(level: number){
 
-    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
-;
+    var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;;
     
 gameInitializedEvent!.setLevel(level);
     
@@ -1753,12 +1705,10 @@ this.screenCapture!.endRecording();
 this.screenCapture!.startRecording();
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 progressCanvas!.addNormalPortion(portion, "Generic Build");
     
@@ -1862,16 +1812,14 @@ this.gameBehavior!.buildGame(this);
 PreLogUtil.put(new StringMaker().append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, this.BUILD_GAME);
     
 
-    var playerGameInput: PlayerGameInput
-;
+    var playerGameInput: PlayerGameInput;;
     
 
 
 
 
                         for (
-    var index: number = this.localPlayerGameInputList!.size() -1;
-index >= 0; index--)
+    var index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
         {
 playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
@@ -1906,8 +1854,7 @@ this.gameCanvasStartListener= gameCanvasStartListener;
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.LOAD);
     
 
-    var hashtable: Hashtable<any, any> = this.getLoadStateHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = this.getLoadStateHashtable()!;;
     
 
                         if(hashtable != 
@@ -1916,16 +1863,13 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.LOAD);
                         
                                     {
                                     
-    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME) as string;
-;
+    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME) as string;;
     
 
-    var level: number = Integer.valueOf(levelAsString)!.intValue()!;
-;
+    var level: number = Integer.valueOf(levelAsString)!.intValue()!;;
     
 
-    var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;
-;
+    var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;;
     
 gameInfo!.setCurrentLevel(level);
     
@@ -1959,12 +1903,10 @@ this.hashtable= hashtable;
 
     public getCurrentStateHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
 
-    var level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;
-;
+    var level: number = this.gameLayerManager!.getGameInfo()!.getCurrentLevel()!;;
     
 hashtable.put(GameInfo.LEVEL_NAME.toString(), level.toString());
     
@@ -2096,20 +2038,17 @@ this.inputProcessor!.keyReleased(this, keyCode, deviceId);
 
     endProgress(isProgress: boolean): number{
 
-    var portion: number = 30;
-;
+    var portion: number = 30;;
     
 
                         if(isProgress && this.isMainCanvas())
                         
                                     {
                                     
-    var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;
-;
+    var myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;;
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.start();
     
@@ -2204,8 +2143,7 @@ this.threadObjectUtil!.notifyObject(this);
             
     public shouldWait(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(AndroidUtil.isAndroid())
@@ -2227,8 +2165,7 @@ this.threadObjectUtil!.notifyObject(this);
                         
                                     {
                                     
-    var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;
-;
+    var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;;
     
 
         while(openGLImageSpecificFactory!.updating)
@@ -2252,8 +2189,7 @@ Thread.sleep(this.YIELD_SLEEP);
             this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addNormalPortion(50, "Game Thread");
     
@@ -2286,8 +2222,7 @@ this.threadInit();
 this.open();
     
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
-;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.init();
     
@@ -2312,8 +2247,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, 
             
     public run2(){
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
@@ -2338,8 +2272,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, 
                                     }
                                 
 
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
-;
+    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.setRunnable(this.gameRunnable);
     
@@ -2408,8 +2341,7 @@ super.setRunning(running);
 
         try {
             
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(running)
@@ -2428,8 +2360,7 @@ super.setRunning(running);
                         
                                     {
                                     
-    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
-;
+    var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;;
     
 currentDisplayableFactory!.clearRunnable();
     
@@ -2483,8 +2414,7 @@ DisplayChangeEventHandler.getInstance()!.removeListener(this);
 GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
     
 
-    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
-;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;;
     
 gameAdState!.notPlayingAdState();
     
@@ -2493,8 +2423,7 @@ gameAdState!.notPlayingAdState();
 
     public createHighScore(score: number): HighScore{
 
-    var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;
-;
+    var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;;
     
 
 
@@ -2517,12 +2446,10 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
             
     public setHighScore2(abeClientInformation: AbeClientInformationInterface, name: string, score: number, autoSubmit: boolean, isLast: boolean){
 
-    var highScore: HighScore = this.createHighScore(score)!;
-;
+    var highScore: HighScore = this.createHighScore(score)!;;
     
 
-    var textBox: HighScoreTextBox = new HighScoreTextBox(this.highScoresFactoryInterface, this.highScoresHelper, abeClientInformation, this.gameLayerManager!.getGameInfo(), this.getCustomCommandListener(), name, highScore, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor());
-;
+    var textBox: HighScoreTextBox = new HighScoreTextBox(this.highScoresFactoryInterface, this.highScoresHelper, abeClientInformation, this.gameLayerManager!.getGameInfo(), this.getCustomCommandListener(), name, highScore, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor());;
     
 
                         if(isLast)
@@ -2548,8 +2475,7 @@ class SaveHighScoreRunnable
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -2740,16 +2666,14 @@ this.highScoresPaintable= highScoresPaintable;
 
     clearPlayerGameInputList(){
 
-    var playerGameInput: PlayerGameInput
-;
+    var playerGameInput: PlayerGameInput;;
     
 
 
 
 
                         for (
-    var index: number = this.localPlayerGameInputList!.size() -1;
-index >= 0; index--)
+    var index: number = this.localPlayerGameInputList!.size() -1;index >= 0; index--)
         {
 playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
@@ -3082,12 +3006,10 @@ this.gameSpecificPaintable= gameSpecificPaintable;
 
     public isRunningInAnotherThread(): boolean{
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-;
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))

@@ -89,17 +89,18 @@ export class LazyImageRotationAnimation extends RotationAnimation {
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    public readonly layoutIndex: number
+    public readonly layoutIndex: number;
 
-    public readonly instanceId: number
+    public readonly instanceId: number;
 
-    public readonly animationInterfaceFactoryInterface: BaseImageAnimationFactory
+    public readonly animationInterfaceFactoryInterface: BaseImageAnimationFactory;
 
-    private readonly NULL_INDEX_ANIMATION: IndexedAnimation
+    private readonly NULL_INDEX_ANIMATION: IndexedAnimation;
 
-    private animation: IndexedAnimation
+    private animation: IndexedAnimation;
 
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
+
 public constructor (layoutIndex: number, instanceId: number, scaleProperties: ScaleProperties, animationInterfaceFactoryInterface: BaseImageAnimationFactory, animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
                     
@@ -113,8 +114,7 @@ this.instanceId= instanceId;
 this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface;
     
 
-    var imageCache: ImageCache = ImageCacheFactory.getInstance()!;
-;
+    var imageCache: ImageCache = ImageCacheFactory.getInstance()!;;
     
 imageCache!.add(this);
     
@@ -125,8 +125,7 @@ this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.ge
 this.animation= new class extends RotationAnimation
                                 {
                                 
-    private index: number= 0
-
+    private index: number= 0;
     public setFrame(index: number){
 this.index= index;
     
@@ -153,8 +152,7 @@ animation= NULL_INDEX_ANIMATION;
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
@@ -174,8 +172,7 @@ animation= NULL_INDEX_ANIMATION;
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
@@ -193,8 +190,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 
         try {
             
-    var animation: IndexedAnimation = this.animation;
-;
+    var animation: IndexedAnimation = this.animation;;
     
 this.animationInterfaceFactoryInterface!.setInitialScale(this.scaleProperties);
     
@@ -513,12 +509,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var image: Image = this.animationInterfaceFactoryInterface!.getImage()!;
-;
+    var image: Image = this.animationInterfaceFactoryInterface!.getImage()!;;
     
 
 

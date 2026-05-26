@@ -92,18 +92,16 @@ export class ShippingMethodsFactory
          {
         
 
-    private static readonly SHIPPINGMETHODSFILEPATHSTRING: string
+    private static readonly SHIPPINGMETHODSFILEPATHSTRING: string;
 
                 private static initResult: number = ShippingMethodsFactory.init();
                 private static init(): number { 
                     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var sep: string = AbPathData.getInstance()!.SEPARATOR;
-;
+    var sep: string = AbPathData.getInstance()!.SEPARATOR;;
     
 stringBuffer!.append(sep);
     
@@ -124,21 +122,20 @@ SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
             
     private static readonly SHIPPINGMETHODSFILENAME: string = "shippingMethods.xml";
 
-    private defaultShippingMethodInterface: ShippingInterface
+    private defaultShippingMethodInterface: ShippingInterface;
 
-    private document: Document
+    private document: Document;
 
-    private shippingVector: Vector
+    private shippingVector: Vector;
+
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var sep: string = AbPathData.getInstance()!.SEPARATOR;
-;
+    var sep: string = AbPathData.getInstance()!.SEPARATOR;;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -151,62 +148,50 @@ stringBuffer!.append(sep);
 stringBuffer!.append(ShippingMethodsFactory.SHIPPINGMETHODSFILEPATHSTRING);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
-;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(abPath)!;
-;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 this.document= DomDocumentHelper.create(data);
     
 this.shippingVector= new Vector();
     
 
-    var nodeList: NodeList = this.document.getElementsByTagName(ShippingMethodsData.NAME)!;
-;
+    var nodeList: NodeList = this.document.getElementsByTagName(ShippingMethodsData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
-    var shippingMethodNodeChildren: NodeList = node.getChildNodes()!;
-;
+    var shippingMethodNodeChildren: NodeList = node.getChildNodes()!;;
     
 
-    var shippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.NAME, shippingMethodNodeChildren)!;
-;
+    var shippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.NAME, shippingMethodNodeChildren)!;;
     
 
-    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, shippingMethodNameNode!.getChildNodes())!;
-;
+    var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, shippingMethodNameNode!.getChildNodes())!;;
     
 
-    var shippingMethodClassName: string = DomNodeHelper.getTextNodeValue(classNameNode)!;
-;
+    var shippingMethodClassName: string = DomNodeHelper.getTextNodeValue(classNameNode)!;;
     
 
-    var shippingMethodInterface: ShippingInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName) as ShippingInterface;
-;
+    var shippingMethodInterface: ShippingInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName) as ShippingInterface;;
     
 this.shippingVector!.add(shippingMethodInterface);
     
 
-    var defaultShippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.DEFAULT, shippingMethodNameNode!.getChildNodes())!;
-;
+    var defaultShippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.DEFAULT, shippingMethodNameNode!.getChildNodes())!;;
     
 
-    var defaultShippingMethodNameNodeValue: string = DomNodeHelper.getTextNodeValue(defaultShippingMethodNameNode)!;
-;
+    var defaultShippingMethodNameNodeValue: string = DomNodeHelper.getTextNodeValue(defaultShippingMethodNameNode)!;;
     
 
                         if(defaultShippingMethodNameNodeValue != 

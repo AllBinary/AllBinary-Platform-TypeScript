@@ -87,15 +87,16 @@ export class NewWorkAreaJDialog extends javax.swing.JDialog {
 }
 
 
-    private parent: MyFrame
+    private parent: MyFrame;
 
-    private dimension: Dimension
+    private dimension: Dimension;
 
-    private xSizeJTextField: JTextField
+    private xSizeJTextField: JTextField;
 
-    private ySizeJTextField: JTextField
+    private ySizeJTextField: JTextField;
 
-    private nameJTextField: JTextField
+    private nameJTextField: JTextField;
+
 public constructor (parent: MyFrame, modal: boolean, dimension: Dimension, newName: string){
             super(parent as java.awt.Frame, modal);
                     
@@ -117,8 +118,7 @@ this.nameJTextField= new JTextField(newName);
 this.dimension= dimension;
     
 
-    var submitButton: JButton = new JButton("Ok");
-;
+    var submitButton: JButton = new JButton("Ok");;
     
 submitButton!.addActionListener(new class extends ActionListener
                                 {
@@ -183,16 +183,13 @@ this.show();
 
         try {
             
-    var canvasWidth: Integer = new Integer(this.xSizeJTextField!.getText());
-;
+    var canvasWidth: Integer = new Integer(this.xSizeJTextField!.getText());;
     
 
-    var canvasHeight: Integer = new Integer(this.ySizeJTextField!.getText());
-;
+    var canvasHeight: Integer = new Integer(this.ySizeJTextField!.getText());;
     
 
-    var newName: string = this.nameJTextField!.getText()!;
-;
+    var newName: string = this.nameJTextField!.getText()!;;
     
 
                         if(newName == 
@@ -202,8 +199,7 @@ this.show();
                                     throw new GraphicsException("No Name", this, "disposeNewDialog");
                                 
 
-    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidth!.intValue(), canvasHeight!.intValue());
-;
+    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidth!.intValue(), canvasHeight!.intValue());;
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));
     

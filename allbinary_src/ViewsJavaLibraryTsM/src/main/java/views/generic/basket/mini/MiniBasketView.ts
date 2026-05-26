@@ -65,6 +65,7 @@ export class MiniBasketView extends HttpStoreComponentView implements DomNodeInt
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -80,40 +81,32 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;
-;
+    var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
     
 
-    var basketNode: Node = document.createElement(BasketData.BASKET)!;
-;
+    var basketNode: Node = document.createElement(BasketData.BASKET)!;;
     
 
-    var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;
-;
+    var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;;
     
 
-    var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;
-;
+    var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;;
     
 totalNumberNode!.appendChild(totalNumberTextNode);
     
 
-    var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;
-;
+    var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;;
     
 
-    var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;
-;
+    var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;;
     
 totalWeightNode!.appendChild(totalWeightTextNode);
     
 
-    var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;
-;
+    var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;;
     
 
-    var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;
-;
+    var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;;
     
 subTotalNode!.appendChild(subTotalTextNode);
     

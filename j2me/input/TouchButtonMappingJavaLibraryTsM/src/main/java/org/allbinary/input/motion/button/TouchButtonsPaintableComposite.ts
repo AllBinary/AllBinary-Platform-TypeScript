@@ -87,13 +87,14 @@ export class TouchButtonsPaintableComposite extends ProcessPaintable implements 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private inputMappingInterface: InputMappingInterface
+    private inputMappingInterface: InputMappingInterface;
 
-    touchButtonsPaintable: TouchButtonsMappingPaintable
+    touchButtonsPaintable: TouchButtonsMappingPaintable;
 
     private timeHelper: TimeDelayHelper = new TimeDelayHelper(250);
 
     private released: boolean = true;
+
 public constructor (inputMappingInterface: InputMappingInterface, basicColor: BasicColor){
 
             super();
@@ -126,20 +127,16 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             this.logUtil!.putF(this.commonStrings!.START, this, "onCompleteMotionGestureInputEvent");
     
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-;
+    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;
-;
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;;
     
 
-    var gameKey: GameKey = gameKeyCompleteMotionGestureInputEvent!.getGameKey()!;
-;
+    var gameKey: GameKey = gameKeyCompleteMotionGestureInputEvent!.getGameKey()!;;
     
 
-    var motionGestureInput: MotionGestureInput = completeMotionGestureInputEvent!.getMotionGestureInput()!;
-;
+    var motionGestureInput: MotionGestureInput = completeMotionGestureInputEvent!.getMotionGestureInput()!;;
     
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)

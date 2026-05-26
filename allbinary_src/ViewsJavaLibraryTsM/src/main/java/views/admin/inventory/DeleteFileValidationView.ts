@@ -69,7 +69,8 @@ import { Node } from '../../../org/w3c/dom/Node.js';
 export class DeleteFileValidationView extends InventoryItemView implements ValidationComponentInterface {
         
 
-    private id: string
+    private id: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
                     
@@ -85,8 +86,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
     
 
                         if(hashMap == 
@@ -175,8 +175,7 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.id == 

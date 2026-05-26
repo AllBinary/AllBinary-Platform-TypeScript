@@ -154,12 +154,10 @@ this.logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START)!.
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var touchButtonInput: TouchButtonInput = list.get(index) as TouchButtonInput;
-;
+    var touchButtonInput: TouchButtonInput = list.get(index) as TouchButtonInput;;
     
 touchButtonInput!.update(inputToGameKeyMapping);
     

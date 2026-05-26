@@ -48,11 +48,12 @@ export class ImageColorRangeResults
          {
         
 
-    private colorRangeInterface: ColorRangeInterface
+    private colorRangeInterface: ColorRangeInterface;
 
-    private matchingPixelsChecked: number= 0
+    private matchingPixelsChecked: number= 0;
 
-    private totalPixelsChecked: number= 0
+    private totalPixelsChecked: number= 0;
+
 public constructor (){
 
             super();

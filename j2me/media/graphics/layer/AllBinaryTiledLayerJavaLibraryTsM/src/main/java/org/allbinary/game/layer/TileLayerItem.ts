@@ -55,7 +55,8 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 export class TileLayerItem extends ABCustomItem implements ABCustomItemInterface {
         
 
-    private readonly tiledLayer: AllBinaryTiledLayer
+    private readonly tiledLayer: AllBinaryTiledLayer;
+
 public constructor (label: string, tiledLayer: AllBinaryTiledLayer, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, backgroundBasicColor, foregroundBasicColor);
                     

@@ -56,6 +56,7 @@ export class LogTableEntity extends AbSqlBean implements LogTableEntityInterface
         
 
     private readonly tableName: string = "log";
+
 public constructor (){
             super(new LogDbInitInfo());
                     
@@ -69,12 +70,10 @@ this.setTableName(this.tableName);
 
     public createTableStatement(): string{
 
-    var abeHttpRequestInfoData: AbeHttpRequestInfoData = AbeHttpRequestInfoData.getInstance()!;
-;
+    var abeHttpRequestInfoData: AbeHttpRequestInfoData = AbeHttpRequestInfoData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(this.sqlStrings!.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.HTTP_USER_AGENT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REMOTE_HOST)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(abeHttpRequestInfoData!.REMOTE_ADDRESS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REQUEST_FILE_PATH)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(abeHttpRequestInfoData!.REMOTE_PORT)!.append(this.sqlTypeStrings!.MAX_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(this.sqlStrings!.ID)!.append(this.sqlStrings!.END);
     

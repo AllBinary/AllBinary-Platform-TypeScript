@@ -57,6 +57,7 @@ import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphic
         
 export class PreGameScrollSelectionForm extends ScrollCurrentSelectionForm {
         
+
 public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM, 0, false, backgroundBasicColor, foregroundBasicColor);
                     

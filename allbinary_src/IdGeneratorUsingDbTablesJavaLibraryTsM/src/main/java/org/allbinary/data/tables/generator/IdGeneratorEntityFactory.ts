@@ -68,12 +68,10 @@ export class IdGeneratorEntityFactory
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "ServerLicenseRequestEntityFactory", commonStrings!.GET_INSTANCE, e);
     
@@ -86,6 +84,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "ServerLicenseRequestEntityFactory", comm
 }
 
 }
+
 
 private constructor (){
 

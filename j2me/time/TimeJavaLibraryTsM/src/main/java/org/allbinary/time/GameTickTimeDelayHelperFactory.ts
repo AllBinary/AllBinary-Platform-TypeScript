@@ -58,6 +58,7 @@ export class GameTickTimeDelayHelperFactory
     
 }
 
+
 private constructor (){
 
             super();

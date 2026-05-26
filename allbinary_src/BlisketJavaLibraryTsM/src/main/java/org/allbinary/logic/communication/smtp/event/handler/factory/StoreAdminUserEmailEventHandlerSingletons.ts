@@ -85,6 +85,7 @@ export class StoreAdminUserEmailEventHandlerSingletons
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
+
 private constructor (){
 
             super();
@@ -113,8 +114,7 @@ private constructor (){
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData) as UserEmailEventHandler;
-;
+    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData) as UserEmailEventHandler;;
     
 
                         if(userEmailEventHandler == 
@@ -132,12 +132,10 @@ private constructor (){
                                     }
                                 
 
-    var userVector: Vector = UserEntityFactory.getInstance()!.getStoreManagers(storeFrontInterface)!;
-;
+    var userVector: Vector = UserEntityFactory.getInstance()!.getStoreManagers(storeFrontInterface)!;;
     
 
-    var newUserEmailEventHandler: UserEmailEventHandler = EmailEventHandlerUtil.getInstance()!.getEventHandler(abeClientInformation, userEmailEventNameData, userVector)!;
-;
+    var newUserEmailEventHandler: UserEmailEventHandler = EmailEventHandlerUtil.getInstance()!.getEventHandler(abeClientInformation, userEmailEventNameData, userVector)!;;
     
 this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler);
     

@@ -81,8 +81,7 @@ export class FileListFetcher
 
         try {
             
-    var files: BasicArrayList = this.subDirectory!.search(new AbFile(path))!;
-;
+    var files: BasicArrayList = this.subDirectory!.search(new AbFile(path))!;;
     
 
 
@@ -113,33 +112,28 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
-;
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
     var size: number = includeExtensions!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 includeExtensionBasicArrayList!.add(includeExtensions[index]!);
     
 }
 
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
-;
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
     
 
 
@@ -170,18 +164,15 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
-;
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
-;
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
     
 
 
@@ -212,18 +203,15 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
-;
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
     
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));
-;
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
     
 
 
@@ -254,12 +242,10 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryBooleanFileVisitor());
-;
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryBooleanFileVisitor());;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
     
 
 

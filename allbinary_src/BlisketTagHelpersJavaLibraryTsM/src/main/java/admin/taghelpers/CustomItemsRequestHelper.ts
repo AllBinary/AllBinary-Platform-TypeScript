@@ -77,17 +77,18 @@ export class CustomItemsRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private id: string
+    private id: string;
 
-    private className: string
+    private className: string;
 
-    private packageName: string
+    private packageName: string;
 
-    private timeEntered: string
+    private timeEntered: string;
 
-    private lastModified: string
+    private lastModified: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -114,8 +115,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 values.put(BasicItemData.ID, this.id);
     
@@ -124,12 +124,10 @@ values.put(DynamicObjectData.NAME, this.className);
 values.put(CustomItemData.PACKAGE, this.packageName);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -146,16 +144,13 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.id);
     
@@ -170,8 +165,7 @@ values.add(time);
 CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +this.id +" into items table";
-;
+    var success: string = "Successfully inserted " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -193,8 +187,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +this.id +" into items table";
-;
+    var error: string = "Failed to insert " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -222,8 +215,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
             CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.delete(this.id);
     
 
-    var success: string = "Successfully deleted";
-;
+    var success: string = "Successfully deleted";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -245,8 +237,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -272,12 +263,10 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
 
         try {
             
-    var success: string = "Update Pricing Successful";
-;
+    var success: string = "Update Pricing Successful";;
     
 
-    var values: HashMap<any, any> = this.getHashMap()!;
-;
+    var values: HashMap<any, any> = this.getHashMap()!;;
     
 CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(values);
     
@@ -301,8 +290,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(v
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +this.id;
-;
+    var error: string = "Failed to update: " +this.id;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

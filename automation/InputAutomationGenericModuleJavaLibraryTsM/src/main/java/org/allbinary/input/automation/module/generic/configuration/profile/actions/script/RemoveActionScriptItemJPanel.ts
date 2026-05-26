@@ -59,9 +59,10 @@ export class RemoveActionScriptItemJPanel extends java.awt.Panel {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private genericProfileActionJPanel: GenericProfileActionJPanel
+    private genericProfileActionJPanel: GenericProfileActionJPanel;
 
-    private profileActionScriptConditionInterface: ProfileActionScriptConditionInterface
+    private profileActionScriptConditionInterface: ProfileActionScriptConditionInterface;
+
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, profileActionScriptConditionInterface: ProfileActionScriptConditionInterface){
 
             super();
@@ -99,8 +100,7 @@ add(this.removeJButton);
 
     removeJButtonActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var genericProfileAction: GenericProfileAction = this.genericProfileActionJPanel!.getGenericProfileAction()!;
-;
+    var genericProfileAction: GenericProfileAction = this.genericProfileActionJPanel!.getGenericProfileAction()!;;
     
 
                         if(genericProfileAction == 
@@ -126,7 +126,7 @@ this.genericProfileActionJPanel!.updateProfileActionUI();
 }
 
 
-    private removeJButton: javax.swing.JButton
+    private removeJButton: javax.swing.JButton;
 
 }
                 

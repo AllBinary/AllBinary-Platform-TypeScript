@@ -45,7 +45,6 @@
             export class ArtificialIntelligenceTransitionInterfaceI {
         
     public static readonly ID: number = 2;
-
     
             }
         

@@ -81,29 +81,30 @@ export class ImageCaptionIndexedAnimationFactory
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
 
-    private captionImage: Image
+    private captionImage: Image;
 
-    private spriteMovieImage: Image
+    private spriteMovieImage: Image;
 
-    private frameWidth: number
+    private frameWidth: number;
 
-    private frameHeight: number
+    private frameHeight: number;
 
-    private captionDx: number
+    private captionDx: number;
 
-    private captionDy: number
+    private captionDy: number;
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
 
-    private time: number
+    private time: number;
 
-    private soundInterface: Sound
+    private soundInterface: Sound;
 
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
 
-    private readonly animationBehaviorFactory: AnimationBehaviorFactory
+    private readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -136,24 +137,19 @@ this.animationBehaviorFactory= animationBehaviorFactory;
             
     public getInstance(instanceId: number): Animation{
 
-    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-;
+    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var animationInterface: Animation = new ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
-;
+    var animationInterface: Animation = new ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());;
     
 
-    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-;
+    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
-    var movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationBehaviorFactory!.getOrCreateInstance());
-;
+    var movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationBehaviorFactory!.getOrCreateInstance());;
     
 
-    var player: Player = this.soundInterface!.getPlayerP()!;
-;
+    var player: Player = this.soundInterface!.getPlayerP()!;;
     
 
                         if(player == 

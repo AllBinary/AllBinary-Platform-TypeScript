@@ -84,6 +84,7 @@ export class OpenGLImageCache extends ImageCache {
     private readonly list: BasicArrayList = new BasicArrayListD();
 
     private renderer: AllBinaryRendererBase3 = new AllBinaryRendererBase3();
+
 public constructor (){
 
             super();
@@ -113,12 +114,10 @@ this.gl= gl;
 
 
                         for (
-    var index: number = this.list.size() -1;
-index >= 0; index--)
+    var index: number = this.list.size() -1;index >= 0; index--)
         {
 
-    var openGLESImage: OpenGLESImage = (this.list.objectArray[index]! as OpenGLESImage);
-;
+    var openGLESImage: OpenGLESImage = (this.list.objectArray[index]! as OpenGLESImage);;
     
 
                         if(openGLESImage != OpenGLESImage.NULL_OPENGL_IMAGE)
@@ -140,8 +139,7 @@ index >= 0; index--)
             
     createImage(caller: string, width: number, height: number): Image{
 
-    var textureSize: number = width;
-;
+    var textureSize: number = width;;
     
 
                         if(height > width)
@@ -164,12 +162,10 @@ width= textureSize;
 height= textureSize;
     
 
-    var image2: Image = this.imageCache!.get(caller, width, height)!;
-;
+    var image2: Image = this.imageCache!.get(caller, width, height)!;;
     
 
-    var image: Image = this.preResourceImageUtil!.encapsulate(image2)!;
-;
+    var image: Image = this.preResourceImageUtil!.encapsulate(image2)!;;
     
 
         
@@ -202,12 +198,10 @@ height= textureSize;
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
 
-    var cachedImage: Image = this.imageCache!.getWithKey(key)!;
-;
+    var cachedImage: Image = this.imageCache!.getWithKey(key)!;;
     
 
-    var image: Image = this.preResourceImageUtil!.encapsulate(cachedImage)!;
-;
+    var image: Image = this.preResourceImageUtil!.encapsulate(cachedImage)!;;
     
 
         

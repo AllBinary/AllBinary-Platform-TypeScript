@@ -75,6 +75,7 @@ export class ViewPositionEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -118,14 +119,12 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var layerInterface: AllBinaryLayer = this.list.objectArray[index]! as AllBinaryLayer;
-;
+    var layerInterface: AllBinaryLayer = this.list.objectArray[index]! as AllBinaryLayer;;
     
 layerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
     
@@ -148,8 +147,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var viewPositionEventListenerInterface: ViewPositionEventListenerInterface = (eventListenerInterface as ViewPositionEventListenerInterface);
-;
+    var viewPositionEventListenerInterface: ViewPositionEventListenerInterface = (eventListenerInterface as ViewPositionEventListenerInterface);;
     
 viewPositionEventListenerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
     

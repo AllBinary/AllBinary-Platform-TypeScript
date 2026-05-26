@@ -49,6 +49,7 @@ export class LongData
         
 
     public static MAX_LONG_LENGTH: number = new Long(Long.MAX_VALUE).toString()!.length()!;
+
 private constructor (){
 
             super();

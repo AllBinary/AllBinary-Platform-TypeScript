@@ -60,15 +60,16 @@ export class HighScore
          {
         
 
-    private readonly id: number
+    private readonly id: number;
 
-    private name: string
+    private name: string;
 
-    private readonly gameInfo: GameInfo
+    private readonly gameInfo: GameInfo;
 
-    private readonly score: number
+    private readonly score: number;
 
-    private readonly scoreString: string
+    private readonly scoreString: string;
+
 public constructor (id: number, name: string, gameInfo: GameInfo, score: number){
 
             super();
@@ -119,12 +120,10 @@ this.scoreString= (this.score).toString();
             
     public getAsBytes(): number[]{
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
-;
+    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 outputStream!.writeUTF(this.getName());
     
@@ -167,8 +166,7 @@ this.name= name;
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
 

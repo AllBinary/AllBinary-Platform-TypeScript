@@ -67,13 +67,14 @@ export class GameConfiguration
 
     private defaultValue: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private value: Integer
+    private value: Integer;
 
     private minValue: Integer = this.defaultValue;
 
     private maxValue: Integer = this.defaultValue;
 
     private modifiable: Boolean = BooleanFactory.getInstance()!.TRUE;
+
 public constructor (name: string, defaultValue: Integer, minValue: Integer, maxValue: Integer){
 
             super();
@@ -100,8 +101,7 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
                         
                                     {
                                     
-    var oldValue: Integer = this.value;
-;
+    var oldValue: Integer = this.value;;
     
 this.value= value;
     
@@ -197,8 +197,7 @@ this.setValue(this.getDefaultValue());
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Name: ");
     

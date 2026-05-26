@@ -49,6 +49,7 @@ import { InputAutomationModuleBundleActivator } from '../../../../../org/allbina
         
 export class InputAutomationGenericModuleBundleActivator extends InputAutomationModuleBundleActivator {
         
+
 public constructor (){
 
             super();
@@ -59,8 +60,7 @@ public constructor (){
             
     public init(){
 
-    var inputAutomationGenericModuleServiceFactory: InputAutomationGenericModuleServiceFactory = InputAutomationGenericModuleServiceFactory.getInstance()!;
-;
+    var inputAutomationGenericModuleServiceFactory: InputAutomationGenericModuleServiceFactory = InputAutomationGenericModuleServiceFactory.getInstance()!;;
     
 this.setInputAutomationModuleInterface(inputAutomationGenericModuleServiceFactory!.getInputAutomationModuleInterfaceArray());
     

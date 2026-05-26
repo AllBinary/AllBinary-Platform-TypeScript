@@ -51,6 +51,7 @@ import { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
 
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         
+
 public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType, demoSetupFactory: LicensedDemoSetupFactory, licenseCheckRunnableFactory: LicenseCheckRunnableFactory){
             super(clientInformationFactory);
                     

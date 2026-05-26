@@ -52,11 +52,12 @@ export class SoftwareInformation
          {
         
 
-    private readonly name: string
+    private readonly name: string;
 
-    private readonly shortName: string
+    private readonly shortName: string;
 
-    private readonly version: string
+    private readonly version: string;
+
 public constructor (name: string, version: string, shortName: string){
 
             super();
@@ -101,16 +102,13 @@ this.shortName= new StringMaker().append(shortName)!.append(KotlinUtil.getShortN
 
     public toString(): string{
 
-    var NAME: string = "Name: ";
-;
+    var NAME: string = "Name: ";;
     
 
-    var VERSION: string = "Version: ";
-;
+    var VERSION: string = "Version: ";;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(NAME);
     

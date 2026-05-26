@@ -80,6 +80,7 @@ export class InsertHeaderValidationView extends TopBarView implements Validation
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly LOGOPATH: string = "logo/";
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -87,16 +88,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).toHashMap()!;
-;
+    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).toHashMap()!;;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;;
     
 
-    var fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +this.LOGOPATH;
-;
+    var fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +this.LOGOPATH;;
     
 multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath);
     
@@ -130,8 +128,7 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
                                     }
                                 
 
-    var isValid: Boolean = this.heading.isValid()!;
-;
+    var isValid: Boolean = this.heading.isValid()!;;
     
 
                         if(isValid == Boolean.TRUE)
@@ -176,8 +173,7 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.heading.validationInfo());
     

@@ -86,17 +86,18 @@ export class BasicPopupMenuPaintable extends Paintable {
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
 
-    private readonly label: string
+    private readonly label: string;
 
-    private readonly BORDER: number
+    private readonly BORDER: number;
 
-    private readonly foregroundBasicColor: BasicColor
+    private readonly foregroundBasicColor: BasicColor;
 
-    private rectangle: Rectangle
+    private rectangle: Rectangle;
 
-    private offset: number= 0
+    private offset: number= 0;
 
-    private animationInterface: Animation
+    private animationInterface: Animation;
+
 public constructor (rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
@@ -107,16 +108,13 @@ this.label= BasicPopupMenuPaintable.NAME;
 this.rectangle= rectangle;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;
-;
+    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
     
 
-    var BORDER: number = 0;
-;
+    var BORDER: number = 0;;
     
 
                         if(J2MEUtil.isHTML() || (AndroidUtil.isAndroid() && isOpenGL))
@@ -170,12 +168,10 @@ this.init(rectangle);
 this.rectangle= rectangle;
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var heightOffset: number = rectangle.getHeight() -(myFont!.DEFAULT_CHAR_HEIGHT *BasicPopupMenuPaintable.NAME.length);
-;
+    var heightOffset: number = rectangle.getHeight() -(myFont!.DEFAULT_CHAR_HEIGHT *BasicPopupMenuPaintable.NAME.length);;
     
 
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
@@ -204,12 +200,10 @@ this.rectangle= rectangle;
 this.offset= (heightOffset>>1);
     
 
-    var width: number = this.rectangle.getWidth()!;
-;
+    var width: number = this.rectangle.getWidth()!;;
     
 
-    var height: number = this.rectangle.getHeight()!;
-;
+    var height: number = this.rectangle.getHeight()!;;
     
 
                         if(J2MEUtil.isJ2ME())
@@ -220,8 +214,7 @@ this.offset= (heightOffset>>1);
                                 
                         else {
                             
-    var rectangleFilledAnimation: RectangleFilledAnimation = this.animationInterface as RectangleFilledAnimation;
-;
+    var rectangleFilledAnimation: RectangleFilledAnimation = this.animationInterface as RectangleFilledAnimation;;
     
 rectangleFilledAnimation!.setWidth(width);
     
@@ -237,24 +230,19 @@ rectangleFilledAnimation!.setHeight(height);
 
     public paint(graphics: Graphics){
 
-    var point: GPoint = this.rectangle.getPoint()!;
-;
+    var point: GPoint = this.rectangle.getPoint()!;;
     
 
-    var x: number = point.getX()!;
-;
+    var x: number = point.getX()!;;
     
 
-    var y: number = point.getY()!;
-;
+    var y: number = point.getY()!;;
     
 
-    var width: number = this.rectangle.getWidth()!;
-;
+    var width: number = this.rectangle.getWidth()!;;
     
 
-    var height: number = this.rectangle.getHeight()!;
-;
+    var height: number = this.rectangle.getHeight()!;;
     
 this.animationInterface!.paintXY(graphics, x, y);
     

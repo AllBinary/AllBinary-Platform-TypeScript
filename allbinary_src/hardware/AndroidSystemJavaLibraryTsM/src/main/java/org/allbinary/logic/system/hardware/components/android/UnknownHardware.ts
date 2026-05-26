@@ -50,7 +50,8 @@ export class UnknownHardware
          implements HardwareComponentInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

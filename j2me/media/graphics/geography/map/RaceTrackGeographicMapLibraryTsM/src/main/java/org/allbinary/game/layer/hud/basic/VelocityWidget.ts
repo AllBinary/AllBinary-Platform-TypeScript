@@ -67,19 +67,20 @@ export class VelocityWidget extends BasicHud {
     private readonly totalChars: number = this.KILOMETERS_PER_HOUR_STR.length
                 ;
 
-    private velocity: number
+    private velocity: number;
 
-    private maxVelocity: number
+    private maxVelocity: number;
 
     private string: string[] = PrimitiveLongSingleton.getInstance()!.ZERO;
 
     private totalDigits: number = 1;
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil
+    private readonly primitiveLongUtil: PrimitiveLongUtil;
 
-    private readonly offset: number
+    private readonly offset: number;
 
-    private offset2: number= 0
+    private offset2: number= 0;
+
 public constructor (powerOfTenVelocity: number, location: number, direction: number, basicColor: BasicColor){
             super(location, direction, 14, MyFont.getInstance()!.getSize() *(5 +MathUtil.getInstance()!.getTotalDigits(powerOfTenVelocity) +1), 2, basicColor);
                     
@@ -93,8 +94,7 @@ this.velocity= 0;
 this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(powerOfTenVelocity);
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 this.offset= myFont!.defaultStringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont!.defaultStringWidth(2);
     
@@ -119,8 +119,7 @@ this.set(this.velocity +value);
 
     public set(value: number){
 
-    var lastVelocity: number = this.velocity;
-;
+    var lastVelocity: number = this.velocity;;
     
 this.velocity= value;
     
@@ -155,8 +154,7 @@ this.velocity= value;
                         }
                             
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 this.offset2= this.offset -myFont!.defaultStringWidth(this.totalDigits) -myFont!.defaultStringWidth(2);
     

@@ -48,6 +48,7 @@ import { SpecialItemsRequestHelperFactory } from '../../admin/taghelpers/Special
 
 export class SpecialItemsTag extends TableTag {
         
+
 public constructor (){
 
             super();

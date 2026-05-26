@@ -66,7 +66,8 @@ export class ImageJPanel extends javax.swing.JPanel {
 
     private isDrawn: boolean = false;
 
-    private bufferedImage: BufferedImage
+    private bufferedImage: BufferedImage;
+
 public constructor (bufferedImage: BufferedImage){
 
             super();
@@ -103,8 +104,7 @@ this.isDrawn= true;
 
     initComponents(){
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     

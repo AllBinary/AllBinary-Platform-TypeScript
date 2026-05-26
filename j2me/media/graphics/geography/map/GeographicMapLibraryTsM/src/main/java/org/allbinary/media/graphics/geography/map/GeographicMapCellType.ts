@@ -61,7 +61,8 @@ export class GeographicMapCellType
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly type: number
+    private readonly type: number;
+
 public constructor (type: number, reset: number){
 
             super();
@@ -72,12 +73,10 @@ public constructor (type: number, reset: number){
                         
                                     {
                                     
-    var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
-;
+    var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;;
     
 
-    var geographicMapCellTypeArray: GeographicMapCellType[] = geographicMapCellTypeFactory!.getGeographicMapCellTypeArray()!;
-;
+    var geographicMapCellTypeArray: GeographicMapCellType[] = geographicMapCellTypeFactory!.getGeographicMapCellTypeArray()!;;
     
 
                         if(geographicMapCellTypeArray[type] == 

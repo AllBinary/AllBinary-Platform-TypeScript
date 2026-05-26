@@ -46,7 +46,8 @@ export class Angle
          {
         
 
-    private value: number
+    private value: number;
+
 public constructor (angle: number){
 
             super();

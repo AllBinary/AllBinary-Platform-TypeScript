@@ -65,6 +65,7 @@ export class BoundsChangeEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -75,8 +76,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var boundsChangeEventListener: BoundsChangeEventListener = eventListenerInterface as BoundsChangeEventListener;
-;
+    var boundsChangeEventListener: BoundsChangeEventListener = eventListenerInterface as BoundsChangeEventListener;;
     
 boundsChangeEventListener!.onBoundsChangeEvent(eventObject as BoundsChangeEvent);
     

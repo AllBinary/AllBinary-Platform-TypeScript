@@ -82,6 +82,7 @@ export class AbFileUploadFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -94,29 +95,24 @@ private constructor (){
 
         try {
             
-    var fileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());
-;
+    var fileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());;
     
 
-    var iterator: FileItemIterator = fileUpload!.getItemIterator(httpServletRequest)!;
-;
+    var iterator: FileItemIterator = fileUpload!.getItemIterator(httpServletRequest)!;;
     
 
-    var items: List = new ArrayList();
-;
+    var items: List = new ArrayList();;
     
 
         while(iterator.hasNext())
         {
 
-    var fileItemStream: FileItemStream = iterator.next()!;
-;
+    var fileItemStream: FileItemStream = iterator.next()!;;
     
 HttpFileUploadUtil.log(fileItemStream);
     
 
-    var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.encodeToByteArray());
-;
+    var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.encodeToByteArray());;
     
 items.add(fileItem);
     
@@ -137,8 +133,7 @@ items.add(fileItem);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
     
@@ -161,8 +156,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
 
         try {
             
-    var abFileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());
-;
+    var abFileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());;
     
 
 
@@ -175,8 +169,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))

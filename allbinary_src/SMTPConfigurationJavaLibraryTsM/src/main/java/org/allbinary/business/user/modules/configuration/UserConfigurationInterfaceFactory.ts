@@ -78,8 +78,7 @@ export class UserConfigurationInterfaceFactory
             
     public static getInstance(document: Document): UserConfigurationInterface{
 
-    var configurationNode: Node = DomSearchHelper.getNode(UserConfigurationData.NAME, document.getChildNodes())!;
-;
+    var configurationNode: Node = DomSearchHelper.getNode(UserConfigurationData.NAME, document.getChildNodes())!;;
     
 
 
@@ -94,16 +93,13 @@ export class UserConfigurationInterfaceFactory
             
     public static getInstance(userRole: UserRole): UserConfigurationInterface{
 
-    var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, UserConfigurationInterfaceFactory.configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);
-;
+    var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, UserConfigurationInterfaceFactory.configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);;
     
 
-    var documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).get(abPath)!;
-;
+    var documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(documentString)!;
-;
+    var document: Document = DomDocumentHelper.create(documentString)!;;
     
 
 
@@ -124,6 +120,7 @@ export class UserConfigurationInterfaceFactory
                         return new UserConfiguration();
     
 }
+
 
 private constructor (){
 

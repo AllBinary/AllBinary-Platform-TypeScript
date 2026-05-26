@@ -70,6 +70,7 @@ export class RootCategoryPropertiesAbstract
     private readonly category: string = CategoryData.getInstance()!.ROOTCATEGORY;
 
     private readonly fileName: string = this.category +AbPathData.getInstance()!.EXTENSION_SEP +CategoryData.getInstance()!.UNCRYPTED_EXTENSION;
+
 public constructor (){
 
             super();
@@ -205,8 +206,7 @@ public constructor (){
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
     
@@ -221,8 +221,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
 
     public toVector(): Vector{
 
-    var categoryVector: Vector = new Vector();
-;
+    var categoryVector: Vector = new Vector();;
     
 categoryVector!.add(this.category);
     

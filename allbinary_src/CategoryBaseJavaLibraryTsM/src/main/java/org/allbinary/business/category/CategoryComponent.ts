@@ -57,6 +57,7 @@ import { CategoryInterface } from './CategoryInterface.js';
 
 export class CategoryComponent extends CategoryView implements TransformInterface {
         
+
 public constructor (categoryInterface: CategoryInterface){
             super(categoryInterface);
                     
@@ -108,8 +109,7 @@ public constructor (categoryInterface: CategoryInterface){
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;
-;
+    var document: Document = DomDocumentHelper.create()!;;
     
 document.appendChild(new CategoryView(this.getCategoryInterface()).toXmlNode(document));
     

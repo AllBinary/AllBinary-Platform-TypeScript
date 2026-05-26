@@ -63,7 +63,8 @@ import { AdjustedImageBaseRotationAnimation } from './AdjustedImageBaseRotationA
 export class ImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
-    readonly angleIncrement: number
+    readonly angleIncrement: number;
+
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                     

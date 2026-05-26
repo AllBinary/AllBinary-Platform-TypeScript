@@ -44,6 +44,7 @@
 
 export class StaticViewPosition extends ViewPosition {
         
+
 public constructor (x: number, y: number, z: number){
             super(x, y, z);
                     

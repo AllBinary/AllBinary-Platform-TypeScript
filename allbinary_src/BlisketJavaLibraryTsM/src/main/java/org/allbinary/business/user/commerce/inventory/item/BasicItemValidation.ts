@@ -67,7 +67,8 @@ export class BasicItemValidation extends Validation {
 
     private readonly MAXPRICE: number = 14;
 
-    private itemInterface: ItemInterface
+    private itemInterface: ItemInterface;
+
 public constructor (itemInterface: ItemInterface){
 
             super();
@@ -95,8 +96,7 @@ public constructor (itemInterface: ItemInterface){
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(this.itemInterface!.getId() != 
@@ -447,8 +447,7 @@ public constructor (itemInterface: ItemInterface){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.itemInterface!.getId() == 
@@ -462,8 +461,7 @@ public constructor (itemInterface: ItemInterface){
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(this.itemInterface!.getId() != 

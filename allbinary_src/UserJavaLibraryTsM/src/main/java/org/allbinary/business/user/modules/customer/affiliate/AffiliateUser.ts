@@ -54,7 +54,8 @@ import { WeblisketSessionInterface } from '../../../../../../../org/allbinary/lo
 export class AffiliateUser extends User {
         
 
-    private affiliateSales: AffiliateSales
+    private affiliateSales: AffiliateSales;
+
 public constructor (){
             super();
                     
@@ -64,6 +65,7 @@ public constructor (){
 this.affiliateSales= new AffiliateSales();
     
 }
+
 
 public constructor (userHashMap: HashMap<any, any>){
             super(userHashMap);

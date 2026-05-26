@@ -64,7 +64,8 @@ export class TransformInfoRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private transformInfoInterface: TransformInfoHttpInterface
+    private transformInfoInterface: TransformInfoHttpInterface;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -77,12 +78,10 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
 
         try {
             
-    var success: string = "Updated Successfully";
-;
+    var success: string = "Updated Successfully";;
     
 
-    var hashMapData: HashMap<any, any> = this.transformInfoInterface!.toHashMap()!;
-;
+    var hashMapData: HashMap<any, any> = this.transformInfoInterface!.toHashMap()!;;
     
 TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
     
@@ -106,8 +105,7 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
 } catch(e) 
             {
 
-    var error: string = "Failed to update storefronts table";
-;
+    var error: string = "Failed to update storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -133,12 +131,10 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
 
         try {
             
-    var success: string = "Added TransformInfo Successfully";
-;
+    var success: string = "Added TransformInfo Successfully";;
     
 
-    var values: Vector = this.transformInfoInterface!.toVector()!;
-;
+    var values: Vector = this.transformInfoInterface!.toVector()!;;
     
 TransformInfoEntityBuilder.getInstance()!.insert(values);
     
@@ -162,8 +158,7 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
 } catch(e) 
             {
 
-    var error: string = "Failed to add storefronts table";
-;
+    var error: string = "Failed to add storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -189,8 +184,7 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
 
         try {
             
-    var success: string = "Delete Successfully";
-;
+    var success: string = "Delete Successfully";;
     
 TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as string);
     
@@ -214,8 +208,7 @@ TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.ge
 } catch(e) 
             {
 
-    var error: string = "Failed to delete storefronts table";
-;
+    var error: string = "Failed to delete storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

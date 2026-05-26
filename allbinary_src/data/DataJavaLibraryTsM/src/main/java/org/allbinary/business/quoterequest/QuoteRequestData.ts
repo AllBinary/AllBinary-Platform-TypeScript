@@ -57,6 +57,7 @@ export class QuoteRequestData
     
 }
 
+
 private constructor (){
 
             super();

@@ -75,6 +75,7 @@ export class Directory
     
 }
 
+
 private constructor (){
 
             super();
@@ -103,8 +104,7 @@ this.remove(existingDirectoryAbPath!.toFileSystemString());
 
         try {
             
-    var directoryFile: AbFile = FileFactory.getInstance()!.getInstance(directory)!;
-;
+    var directoryFile: AbFile = FileFactory.getInstance()!.getInstance(directory)!;;
     
 
                         if(!directoryFile!.isDirectory())
@@ -155,8 +155,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
             
     remove(existingDirectory: string){
 
-    var existingDirectoryFile: AbFile = FileFactory.getInstance()!.getInstance(existingDirectory)!;
-;
+    var existingDirectoryFile: AbFile = FileFactory.getInstance()!.getInstance(existingDirectory)!;;
     
 
                         if(existingDirectoryFile!.isDirectory())
@@ -210,20 +209,17 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
 
     public search(fileFilter: FileFilter, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();
-;
+    var fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList
-;
+    var recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles(fileFilter)!;
-;
+    var fileArray: any[] = file.listFiles(fileFilter)!;;
     
 
                         if(fileArray == 
@@ -241,8 +237,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-;
+    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -261,16 +256,14 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                                 
 
     var size: number = files.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 fileList!.add(files[index]!);
     
@@ -311,20 +304,17 @@ fileList!.addAllList(recursiveFileList);
 
     public search(file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();
-;
+    var fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList
-;
+    var recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles()!;
-;
+    var fileArray: any[] = file.listFiles()!;;
     
 
                         if(fileArray == 
@@ -342,8 +332,7 @@ fileList!.addAllList(recursiveFileList);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-;
+    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -365,8 +354,7 @@ fileList!.addAllList(recursiveFileList);
 
 
                         for (
-    var index: number = 0;
-index < files.length; index++)
+    var index: number = 0;index < files.length; index++)
         {
 fileList!.add(files[index]!);
     
@@ -407,20 +395,17 @@ fileList!.addAllList(recursiveFileList);
 
     public search(searchValue: string, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();
-;
+    var fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList
-;
+    var recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles()!;
-;
+    var fileArray: any[] = file.listFiles()!;;
     
 
                         if(fileArray == 
@@ -438,8 +423,7 @@ fileList!.addAllList(recursiveFileList);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-;
+    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -461,8 +445,7 @@ fileList!.addAllList(recursiveFileList);
 
 
                         for (
-    var index: number = 0;
-index < files.length; index++)
+    var index: number = 0;index < files.length; index++)
         {
 
                         if(files[index]!.getPath()!.indexOf(searchValue) >= 0)
@@ -510,20 +493,17 @@ fileList!.addAllList(recursiveFileList);
 
     public search(level: number, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
 
-    var fileList: BasicArrayList = new BasicArrayListD();
-;
+    var fileList: BasicArrayList = new BasicArrayListD();;
     
 
-    var recursiveFileList: BasicArrayList
-;
+    var recursiveFileList: BasicArrayList;;
     
 
                         if(file.isDirectory())
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles()!;
-;
+    var fileArray: any[] = file.listFiles()!;;
     
 
                         if(fileArray == 
@@ -541,8 +521,7 @@ fileList!.addAllList(recursiveFileList);
                                     }
                                 
 
-    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-;
+    var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;;
     
 
                         if(files == 
@@ -564,8 +543,7 @@ fileList!.addAllList(recursiveFileList);
 
 
                         for (
-    var index: number = 0;
-index < files.length; index++)
+    var index: number = 0;index < files.length; index++)
         {
 fileList!.add(files[index]!);
     

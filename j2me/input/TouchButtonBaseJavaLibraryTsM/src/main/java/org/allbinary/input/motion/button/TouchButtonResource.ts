@@ -38,9 +38,10 @@ export class TouchButtonResource
          {
         
 
-    public readonly RESOURCE: string
+    public readonly RESOURCE: string;
 
-    public readonly HINT: string
+    public readonly HINT: string;
+
 protected constructor (resource: string, hint: string){
 
             super();

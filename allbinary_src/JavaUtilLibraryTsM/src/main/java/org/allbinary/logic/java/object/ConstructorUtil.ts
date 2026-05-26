@@ -56,12 +56,10 @@ export class ConstructorUtil
 
     public static viewAll(myClass: Function, lineBreak: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var constructor: Constructor[] = myClass!.getConstructors()!;
-;
+    var constructor: Constructor[] = myClass!.getConstructors()!;;
     
 stringBuffer!.append("Constructors: ");
     
@@ -72,8 +70,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;
-index < constructor.length; index++)
+    var index: number = 0;index < constructor.length; index++)
         {
 stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
     
@@ -96,26 +93,22 @@ stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
                         
                                     {
                                     
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(constructor.getName());
     
 
-    var classes: Function[] = constructor.getParameterTypes()!;
-;
+    var classes: Function[] = constructor.getParameterTypes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < classes.length; index++)
+    var index: number = 0;index < classes.length; index++)
         {
 stringBuffer!.append(commonSeps!.SPACE);
     
@@ -142,6 +135,7 @@ stringBuffer!.append(lineBreak);
                         if()
                         
 }
+
 
 private constructor (){
 

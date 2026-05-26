@@ -87,8 +87,7 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -97,8 +96,7 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
 reset2();
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
     
 
                         if(geographicMapCellPosition == 
@@ -117,8 +115,7 @@ reset2();
 pathFindingInfo= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition);
     
 
-    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
-;
+    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;;
     
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
     
@@ -142,8 +139,7 @@ list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
@@ -163,18 +159,15 @@ finish();
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
     
 
-    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
-;
+    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;;
     
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
     
@@ -192,8 +185,7 @@ list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
@@ -213,14 +205,12 @@ finish();
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;
-;
+    var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;;
     
 waypointBehavior!.setWaypointPathsList(list);
     
@@ -231,8 +221,7 @@ pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
@@ -262,6 +251,7 @@ finish();
                             ;
 
     private currentPassRunnable: Runnable = FIRST_RUNNABLE;
+
 public constructor (){
 
             super();
@@ -287,8 +277,7 @@ this.done= false;
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -299,8 +288,7 @@ this.done= false;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     

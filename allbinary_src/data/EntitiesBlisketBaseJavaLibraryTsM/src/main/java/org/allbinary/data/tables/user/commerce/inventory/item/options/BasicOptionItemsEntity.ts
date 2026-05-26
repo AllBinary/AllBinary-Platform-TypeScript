@@ -68,6 +68,7 @@ export class BasicOptionItemsEntity extends AbSqlBean implements BasicOptionItem
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "basicoptionitems";
+
 public constructor (){
             super(new InventoryDbInitInfo());
                     
@@ -145,8 +146,7 @@ this.setTableName(this.tableName);
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(BasicItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
     

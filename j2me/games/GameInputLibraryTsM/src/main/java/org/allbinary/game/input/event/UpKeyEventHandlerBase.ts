@@ -68,6 +68,7 @@ export class UpKeyEventHandlerBase extends BasicEventHandler {
     private static readonly LISTENER_LABEL: string = " PlayerGameInput Listener: ";
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
  constructor (){
 
             super();
@@ -120,14 +121,12 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
-;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
     
 playerGameInput!.onUpKeyEvent(eventObject);
     
@@ -142,12 +141,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance(
 }
 
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
@@ -177,8 +174,7 @@ index++;
             
     process(eventObject: Integer, eventListenerInterface: EventListenerInterface){
 
-    var upKeyEventListenerInterface: UpKeyEventListenerInterface = eventListenerInterface as UpKeyEventListenerInterface;
-;
+    var upKeyEventListenerInterface: UpKeyEventListenerInterface = eventListenerInterface as UpKeyEventListenerInterface;;
     
 upKeyEventListenerInterface!.onUpKeyEvent(eventObject);
     
@@ -187,8 +183,7 @@ upKeyEventListenerInterface!.onUpKeyEvent(eventObject);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
@@ -201,14 +196,12 @@ stringBuffer!.appendint(this.list.size());
 
 
                         for (
-    var index: number = 0;
-index < this.list.size(); index++)
+    var index: number = 0;index < this.list.size(); index++)
         {
 
         try {
             
-    var eventListenerInterface: EventListenerInterface = this.list.get(index) as EventListenerInterface;
-;
+    var eventListenerInterface: EventListenerInterface = this.list.get(index) as EventListenerInterface;;
     
 stringBuffer!.append(UpKeyEventHandlerBase.LISTENER_LABEL);
     

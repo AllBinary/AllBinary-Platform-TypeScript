@@ -57,31 +57,32 @@ export class Advertisement
          implements AdvertisementInterface {
         
 
-    private artist: string
+    private artist: string;
 
-    private artistLink: string
+    private artistLink: string;
 
-    private title: string
+    private title: string;
 
-    private dateAdded: string
+    private dateAdded: string;
 
-    private directory: string
+    private directory: string;
 
-    private framedLink: string
+    private framedLink: string;
 
-    private rank: number= 0
+    private rank: number= 0;
 
-    private listPrice: Money
+    private listPrice: Money;
 
-    private ourPrice: Money
+    private ourPrice: Money;
 
-    private image: AdvertisementImageInterface
+    private image: AdvertisementImageInterface;
 
-    private product: AdvertisementProductInterface
+    private product: AdvertisementProductInterface;
 
-    private thumbnail: AdvertisementThumbnailInterface
+    private thumbnail: AdvertisementThumbnailInterface;
 
-    private readonly displayInBrowserContraintsInterface: DisplayInBrowserContraintsInterface
+    private readonly displayInBrowserContraintsInterface: DisplayInBrowserContraintsInterface;
+
 public constructor (){
 
             super();

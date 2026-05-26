@@ -75,9 +75,9 @@ export class InputAutomationBundleActivator
          implements BundleActivator, InputAutomationBundleActivatorListenerInterface {
         
 
-    private static moduleManagementThread: Thread
+    private static moduleManagementThread: Thread;
 
-    private static bundleContext: BundleContext
+    private static bundleContext: BundleContext;
 
     public static getBundleContext(): BundleContext{
 

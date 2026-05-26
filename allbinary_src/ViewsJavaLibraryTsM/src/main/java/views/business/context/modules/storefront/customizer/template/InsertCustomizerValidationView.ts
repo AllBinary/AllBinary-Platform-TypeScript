@@ -90,7 +90,8 @@ export class InsertCustomizerValidationView extends HttpStoreComponentView imple
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private viewName: string
+    private viewName: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -107,8 +108,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).toHashMap()!;
-;
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).toHashMap()!;;
     
 this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as string;
     
@@ -128,8 +128,7 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as str
                                     }
                                 
 
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.viewName))
@@ -142,24 +141,20 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as str
                                 
                         else {
                             
-    var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
-;
+    var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
     
 
-    var componentVector: Vector = objectConfig!.getGroupTransforms()!;
-;
+    var componentVector: Vector = objectConfig!.getGroupTransforms()!;;
     
 
-    var size: number = componentVector!.length!;
-;
+    var size: number = componentVector!.length!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Pointing ");
     
@@ -177,16 +172,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var transformInfo: TransformInfo = componentVector!.get(index) as TransformInfo;
-;
+    var transformInfo: TransformInfo = componentVector!.get(index) as TransformInfo;;
     
 
-    var transformInfoName: string = transformInfo!.getName()!;
-;
+    var transformInfoName: string = transformInfo!.getName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -198,42 +190,33 @@ index < size; index++)
                                     }
                                 
 
-    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, transformInfoName, this.getTransformInfoInterface())!;
-;
+    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, transformInfoName, this.getTransformInfoInterface())!;;
     
 
-    var templateViewObjectConfig: InsertTemplateCustomizerTransformInfoObjectConfig = new InsertTemplateCustomizerTransformInfoObjectConfig(componentInterface!.getTransformInfoInterface(), componentInterface!.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
-;
+    var templateViewObjectConfig: InsertTemplateCustomizerTransformInfoObjectConfig = new InsertTemplateCustomizerTransformInfoObjectConfig(componentInterface!.getTransformInfoInterface(), componentInterface!.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());;
     
 
-    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-;
+    var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;;
     
 
-    var endIndex: number = this.viewName!.indexOf(storeName) +storeName!.length;
-;
+    var endIndex: number = this.viewName!.indexOf(storeName) +storeName!.length;;
     
 
-    var storePrepend: string = this.viewName!.substring(0, endIndex)!;
-;
+    var storePrepend: string = this.viewName!.substring(0, endIndex)!;;
     
 
-    var viewNamePostfix: string = this.viewName!.substring(endIndex, this.viewName!.length)!;
-;
+    var viewNamePostfix: string = this.viewName!.substring(endIndex, this.viewName!.length)!;;
     
 
-    var newViewNameStringBuffer: StringMaker = new StringMaker();
-;
+    var newViewNameStringBuffer: StringMaker = new StringMaker();;
     
 newViewNameStringBuffer!.append(storePrepend);
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var transformInfosData: TransformInfosData = TransformInfosData.getInstance()!;
-;
+    var transformInfosData: TransformInfosData = TransformInfosData.getInstance()!;;
     
 
                         if(transformInfoName!.indexOf(transformInfosData!.SMALL_PREVIEW) >= 0)
@@ -273,16 +256,14 @@ newViewNameStringBuffer!.append(GeneratorTransformInfoData.NAME);
                                     }
                                 
 
-    var newViewName: string = newViewNameStringBuffer!.toString()!;
-;
+    var newViewName: string = newViewNameStringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Template Component: ");
     
@@ -304,8 +285,7 @@ templateViewObjectConfig!.set(newViewName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Template Component: ");
     
@@ -323,8 +303,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(templateViewObjectConfig);
     
 
-    var updatedTransformInfoHashMap: HashMap<any, any> = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
-;
+    var updatedTransformInfoHashMap: HashMap<any, any> = componentInterface!.getTransformInfoInterface()!.toHashMap()!;;
     
 TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap);
     
@@ -367,8 +346,7 @@ TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error: Template Name Is Empty.");
     

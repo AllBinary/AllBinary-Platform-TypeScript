@@ -74,6 +74,7 @@ export class LogConfigTypeFactory
     public readonly GAME_SIMULATOR: LogConfigType = new LogConfigType("Game Simulator", this.NO_DESCRIPTION);
 
     public readonly CUSTOM_TYPES: LogConfigType = new LogConfigType("Custom Types", this.NO_DESCRIPTION);
+
 private constructor (){
 
             super();

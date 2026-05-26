@@ -62,6 +62,7 @@ export class PaymentGatewayTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -78,22 +79,18 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
 
         try {
             
-    var anyType: any = new PaymentGatewayHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new PaymentGatewayHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -150,8 +147,7 @@ this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
                         
                                     {
                                     
-    var output: string = this.process()!;
-;
+    var output: string = this.process()!;;
     
 
 

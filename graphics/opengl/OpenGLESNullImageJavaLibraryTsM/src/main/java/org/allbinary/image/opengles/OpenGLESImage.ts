@@ -78,15 +78,16 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    readonly textureFactory: PlatformTextureBaseFactory
+    readonly textureFactory: PlatformTextureBaseFactory;
 
-    public readonly openGLBitmap: PlatformBitmapBase
+    public readonly openGLBitmap: PlatformBitmapBase;
 
     public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
 
     public imageProcessor: OpenGLESImageProcessor = OpenGLESImageProcessor.getInstance()!;
 
     public openGLESImageTranslate: OpenGLESImageTranslate = OpenGLESImageTranslate.getInstance()!;
+
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
 
             super();

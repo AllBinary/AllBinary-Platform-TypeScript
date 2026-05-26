@@ -89,9 +89,10 @@ export class AuthenticationRequestHelper extends TagHelper {
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -100,6 +101,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
@@ -123,8 +125,7 @@ this.request= httpServletRequest;
                         
                                     {
                                     
-    var startIndex: number = this.weblisketSession!.getId()!.length()!;
-;
+    var startIndex: number = this.weblisketSession!.getId()!.length()!;;
     
 
                         if(startIndex >= 8)
@@ -167,12 +168,10 @@ this.request= httpServletRequest;
 
         try {
             
-    var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
-;
+    var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;;
     
 
-    var email: string = this.request.getParameter(UserData.MAINEMAIL)!;
-;
+    var email: string = this.request.getParameter(UserData.MAINEMAIL)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -184,12 +183,10 @@ this.request= httpServletRequest;
                                     }
                                 
 
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-;
+    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 
-    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-;
+    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;;
     
 
                         if(userInterface!.getMainEmail()!.compareTo(email) != 0)
@@ -223,14 +220,12 @@ this.request= httpServletRequest;
                                     }
                                 
 
-    var newPassword: string = this.generateNewPassword()!;
-;
+    var newPassword: string = this.generateNewPassword()!;;
     
 userInterface!.setPassword(newPassword);
     
 
-    var newPasswordHashMap: HashMap<any, any> = userInterface!.toPasswordHashMap()!;
-;
+    var newPasswordHashMap: HashMap<any, any> = userInterface!.toPasswordHashMap()!;;
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
     
@@ -279,20 +274,16 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).proc
 
         try {
             
-    var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
-;
+    var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;;
     
 
-    var passwordString: string = this.request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
-;
+    var passwordString: string = this.request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;;
     
 
-    var newPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
-;
+    var newPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;;
     
 
-    var newReenteredPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
-;
+    var newReenteredPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -304,8 +295,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).proc
                                     }
                                 
 
-    var password: Password = new Password(newPassword);
-;
+    var password: Password = new Password(newPassword);;
     
 
                         if(!password.isValid().valueOf())
@@ -352,20 +342,16 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).proc
                                     }
                                 
 
-    var sessionPassword: string = this.weblisketSession!.getPassword()!;
-;
+    var sessionPassword: string = this.weblisketSession!.getPassword()!;;
     
 
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-;
+    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 
-    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-;
+    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;;
     
 
-    var login: string = userEntityInterface!.login(userName, passwordString)!;
-;
+    var login: string = userEntityInterface!.login(userName, passwordString)!;;
     
 
                         if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
@@ -382,8 +368,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).proc
                                 
 
     var newPasswordHashMap: HashMap<any, any> = password.toHashMap(
-                            null)!;
-;
+                            null)!;;
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
     
@@ -441,12 +426,10 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).proc
 
         try {
             
-    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-;
+    var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;;
     
 
-    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-;
+    var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;;
     
 
                         if(userInterface!.getRole() == 
@@ -473,25 +456,21 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).proc
                                     }
                                 
 
-    var basicUserRoleArray: any[] = roles.toArray()!;
-;
+    var basicUserRoleArray: any[] = roles.toArray()!;;
     
 
     var size: number = basicUserRoleArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var nextRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
-;
+    var nextRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;;
     
 
                         if(userInterface!.getRole()!.getBasicUserRole()! === nextRole)
@@ -519,8 +498,7 @@ this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Role is not valid: ");
     

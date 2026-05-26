@@ -47,6 +47,7 @@ export class ThemeComparator
             extends Object
          implements Comparator {
         
+
 public constructor (){
 
             super();
@@ -55,12 +56,10 @@ public constructor (){
 
     public compare(anyType: any = {}, object2: any = {}): number{
 
-    var string: string = anyType as string;
-;
+    var string: string = anyType as string;;
     
 
-    var string2: string = object2 as string;
-;
+    var string2: string = object2 as string;;
     
 
 

@@ -106,24 +106,20 @@ export class SpriteSplitterUtil
             
     public process(imageProcessorInput: ImageProcessorInput, totalFrames: number, totalAnimations: number, widthReduction: number, heightReduction: number, increaseWidth: number, increaseHeight: number, spriteType: string, visitor: ImageProcessedVisitor){
 
-    var bufferedImage: BufferedImage
-;
+    var bufferedImage: BufferedImage;;
     
 
-    var generatedBufferedImageArray: BufferedImage[][]
-;
+    var generatedBufferedImageArray: BufferedImage[][];;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-;
+    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < bufferedImageArray!.length; index++)
+    var index: number = 0;index < bufferedImageArray!.length; index++)
         {
 bufferedImage= bufferedImageArray[index]!;
     
@@ -134,20 +130,16 @@ this.logUtil!.putF(spriteType, this, this.commonStrings!.RUN);
                         
                                     {
                                     
-    var cellHeight: number = bufferedImage!.getHeight() /totalAnimations;
-;
+    var cellHeight: number = bufferedImage!.getHeight() /totalAnimations;;
     
 
-    var cellWidth: number = bufferedImage!.getWidth() /totalFrames;
-;
+    var cellWidth: number = bufferedImage!.getWidth() /totalFrames;;
     
 
-    var columns: number = totalFrames;
-;
+    var columns: number = totalFrames;;
     
 
-    var rows: number = totalAnimations;
-;
+    var rows: number = totalAnimations;;
     
 generatedBufferedImageArray= new Array(rows) [columns]
                                                             ;
@@ -157,30 +149,25 @@ this.logUtil!.putF("Processing Individual Cells columns: " +columns +" rows: " +
 this.logUtil!.putF("Processing Individual Cells cellHeight: " +cellHeight +" cellWidth: " +cellWidth, this, this.commonStrings!.RUN);
     
 
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-;
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
     var nameEnding: string = 
                 null
-            ;
-;
+            ;;
     
 
-    var x: number = 0;
-;
+    var x: number = 0;;
     
 
-    var y: number = 0;
-;
+    var y: number = 0;;
     
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < rows; index2++)
+    var index2: number = 0;index2 < rows; index2++)
         {
 y= cellHeight *index2;
     
@@ -189,8 +176,7 @@ y= cellHeight *index2;
 
 
                         for (
-    var index3: number = 0;
-index3 < columns; index3++)
+    var index3: number = 0;index3 < columns; index3++)
         {
 x= cellWidth *index3;
     
@@ -216,16 +202,14 @@ visitor.visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index);
 this.logUtil!.putF("Processing Rows from Cells", this, this.commonStrings!.RUN);
     
 
-    var imageUnifierProperties: ImageUnifierProperties = new ImageUnifierProperties();
-;
+    var imageUnifierProperties: ImageUnifierProperties = new ImageUnifierProperties();;
     
 imageUnifierProperties!.setRows(.valueOf());
     
 imageUnifierProperties!.setColumns(columns.valueOf());
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer.valueOf(cellWidth -(2 *widthReduction))Integer.valueOf(cellHeight -(2 *heightReduction)));
-;
+    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer.valueOf(cellWidth -(2 *widthReduction))Integer.valueOf(cellHeight -(2 *heightReduction)));;
     
 imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
@@ -234,22 +218,19 @@ imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
 
 
                         for (
-    var index2: number = 0;
-index2 < rows; index2++)
+    var index2: number = 0;index2 < rows; index2++)
         {
 y= cellHeight *index2;
     
 
-    var tempBufferedImageArray: BufferedImage[] = new Array(columns);
-;
+    var tempBufferedImageArray: BufferedImage[] = new Array(columns);;
     
 
 
 
 
                         for (
-    var index3: number = 0;
-index3 < columns; index3++)
+    var index3: number = 0;index3 < columns; index3++)
         {
 tempBufferedImageArray[index3]= generatedBufferedImageArray[index2]![index3]!;
     
@@ -258,8 +239,7 @@ nameEnding= new StringMaker().appendint(index2)!.append(this.commonSeps!.UNDERSC
 }
 
 
-    var generatedBufferedImage: BufferedImage = ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, imageUnifierProperties)!;
-;
+    var generatedBufferedImage: BufferedImage = ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, imageUnifierProperties)!;;
     
 visitor.visit(generatedBufferedImage, nameEnding, index);
     
@@ -280,24 +260,19 @@ visitor.visit(generatedBufferedImage, nameEnding, index);
                         
                                     {
                                     
-    var totalFrames2: number = 4;
-;
+    var totalFrames2: number = 4;;
     
 
-    var cellHeight: number = bufferedImage!.getHeight() /totalFrames2;
-;
+    var cellHeight: number = bufferedImage!.getHeight() /totalFrames2;;
     
 
-    var cellWidth: number = bufferedImage!.getWidth() /totalAnimations;
-;
+    var cellWidth: number = bufferedImage!.getWidth() /totalAnimations;;
     
 
-    var columns: number = totalAnimations;
-;
+    var columns: number = totalAnimations;;
     
 
-    var rows: number = totalFrames2;
-;
+    var rows: number = totalFrames2;;
     
 generatedBufferedImageArray= new Array(rows) [columns]
                                                             ;
@@ -307,24 +282,20 @@ this.logUtil!.putF("Processing Individual Cells for each Direction", this, this.
 
     var nameEnding: string = 
                 null
-            ;
-;
+            ;;
     
 
-    var x: number = 0;
-;
+    var x: number = 0;;
     
 
-    var y: number = 0;
-;
+    var y: number = 0;;
     
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < rows; index2++)
+    var index2: number = 0;index2 < rows; index2++)
         {
 y= cellHeight *index2;
     
@@ -333,8 +304,7 @@ y= cellHeight *index2;
 
 
                         for (
-    var index3: number = 0;
-index3 < columns; index3++)
+    var index3: number = 0;index3 < columns; index3++)
         {
 x= cellWidth *index3;
     
@@ -358,16 +328,14 @@ visitor.visit(generatedBufferedImageArray[index2]![index3]!, nameEnding, index);
 }
 
 
-    var imageUnifierProperties: ImageUnifierProperties = new ImageUnifierProperties();
-;
+    var imageUnifierProperties: ImageUnifierProperties = new ImageUnifierProperties();;
     
 imageUnifierProperties!.setRows(.valueOf());
     
 imageUnifierProperties!.setColumns(columns.valueOf());
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer.valueOf(cellWidth -(2 *widthReduction)) +increaseWidth, Integer.valueOf(cellHeight -(2 *heightReduction) +increaseHeight));
-;
+    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer.valueOf(cellWidth -(2 *widthReduction)) +increaseWidth, Integer.valueOf(cellHeight -(2 *heightReduction) +increaseHeight));;
     
 imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
@@ -378,22 +346,19 @@ this.logUtil!.putF("Processing Rows from Cells for each Direction", this, this.c
 
 
                         for (
-    var index2: number = 0;
-index2 < rows; index2++)
+    var index2: number = 0;index2 < rows; index2++)
         {
 y= cellHeight *index2;
     
 
-    var tempBufferedImageArray: BufferedImage[] = new Array(columns);
-;
+    var tempBufferedImageArray: BufferedImage[] = new Array(columns);;
     
 
 
 
 
                         for (
-    var index3: number = 0;
-index3 < columns; index3++)
+    var index3: number = 0;index3 < columns; index3++)
         {
 tempBufferedImageArray[index3]= generatedBufferedImageArray[index2]![index3]!;
     
@@ -402,8 +367,7 @@ nameEnding= new StringMaker().append(this.commonStrings!.DIRECTION_NAME[index2]!
 }
 
 
-    var generatedBufferedImage: BufferedImage = ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, imageUnifierProperties)!;
-;
+    var generatedBufferedImage: BufferedImage = ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, imageUnifierProperties)!;;
     
 visitor.visit(generatedBufferedImage, nameEnding, index);
     

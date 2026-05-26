@@ -77,36 +77,28 @@ export class TopUBoundBounceAIFactory
             
     public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ownerLayerInterface as VelocityInterfaceCompositeInterface;
-;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ownerLayerInterface as VelocityInterfaceCompositeInterface;;
     
 
-    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;
-;
+    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;;
     
 
-    var maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity()>>velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());
-;
+    var maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity()>>velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());;
     
 
-    var halfWidth: number = ownerLayerInterface!.getWidth() *2 +maxDistancePerTick +1;
-;
+    var halfWidth: number = ownerLayerInterface!.getWidth() *2 +maxDistancePerTick +1;;
     
 
-    var halfHeight: number = ownerLayerInterface!.getHeight() *2 +maxDistancePerTick +1;
-;
+    var halfHeight: number = ownerLayerInterface!.getHeight() *2 +maxDistancePerTick +1;;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY(halfWidth, halfHeight +60)!;
-;
+    var point: GPoint = PointFactory.getInstance()!.createXY(halfWidth, halfHeight +60)!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var rectangle: Rectangle = new Rectangle(point, (displayInfo!.getLastWidth() -halfWidth -point.getX()), (displayInfo!.getLastHeight() -halfHeight -point.getY()));
-;
+    var rectangle: Rectangle = new Rectangle(point, (displayInfo!.getLastWidth() -halfWidth -point.getX()), (displayInfo!.getLastHeight() -halfHeight -point.getY()));;
     
 
 

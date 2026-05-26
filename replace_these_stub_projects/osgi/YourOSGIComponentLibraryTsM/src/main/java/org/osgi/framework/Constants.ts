@@ -33,7 +33,6 @@ import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
             export class ConstantsI {
         
     public static readonly BUNDLE_SYMBOLICNAME: string = StringUtil.getInstance()!.EMPTY_STRING;
-
             }
         
 export interface Constants {

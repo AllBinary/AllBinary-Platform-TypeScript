@@ -56,7 +56,8 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
 export class SimultaneousCompoundIndexAnimation extends IndexedAnimation {
         
 
-    private animationInterfaceArray: IndexedAnimation[]
+    private animationInterfaceArray: IndexedAnimation[];
+
 public constructor (animationInterfaceArray: IndexedAnimation[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -75,8 +76,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrame(frameIndex);
     
@@ -124,8 +124,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.previousFrame();
     
@@ -143,8 +142,7 @@ this.animationInterfaceArray[index]!.previousFrame();
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextFrame();
     
@@ -174,8 +172,7 @@ this.animationInterfaceArray[index]!.nextFrame();
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
     
@@ -191,8 +188,7 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
     
@@ -210,8 +206,7 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);
     

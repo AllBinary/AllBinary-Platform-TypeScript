@@ -56,7 +56,8 @@ export class ContextConfigurationTableMapping
          implements TableMappingInterface {
         
 
-    private contextConfigurationInterface: ContextConfigurationInterface
+    private contextConfigurationInterface: ContextConfigurationInterface;
+
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
@@ -67,8 +68,7 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
 
@@ -95,8 +95,7 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
             
     public toVector(): Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
 

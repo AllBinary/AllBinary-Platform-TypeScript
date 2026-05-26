@@ -63,39 +63,33 @@ export class MineWeaponResources extends BasicGameResources {
     public readonly DROP_RESOURCE: string = "/mine_drop_20_by_20.png";
 
     public readonly DROP_ICON_RESOURCE: string = "/mine_drop_icon_20_by_20.png";
+
 protected constructor (){
 
             super();
         
-    var ROOT: string = "/mine";
-;
+    var ROOT: string = "/mine";;
     
 
-    var SMALL: string = "_20_by_20.png";
-;
+    var SMALL: string = "_20_by_20.png";;
     
 
-    var MEDIUM: string = SMALL;
-;
+    var MEDIUM: string = SMALL;;
     
 
-    var SIZE_FOUR: string = SMALL;
-;
+    var SIZE_FOUR: string = SMALL;;
     
 
-    var SIZE_FIVE: string = SMALL;
-;
+    var SIZE_FIVE: string = SMALL;;
     
 
-    var SIZE_SIX: string = SMALL;
-;
+    var SIZE_SIX: string = SMALL;;
     
 
     var SIZE: string[] = 
                                                         [
                                                             SMALL,MEDIUM,SIZE_FOUR,SIZE_FIVE,SIZE_SIX
-                                                        ];
-;
+                                                        ];;
     
 super.init(ROOT, SIZE);
     

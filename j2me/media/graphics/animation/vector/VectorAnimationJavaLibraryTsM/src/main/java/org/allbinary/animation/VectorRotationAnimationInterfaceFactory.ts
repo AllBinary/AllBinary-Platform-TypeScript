@@ -64,7 +64,8 @@ export class VectorRotationAnimationInterfaceFactory
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    readonly animationBehaviorFactory: AnimationBehaviorFactory
+    readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();

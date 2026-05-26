@@ -57,6 +57,7 @@ import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
+
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /currentPoints!.length)), currentPoints, basicColor, animationBehavior);
                     
@@ -70,8 +71,7 @@ this.angleInfo!.adjustAngle(this.getFrame());
 
     public setFrameByDirection(direction: Direction){
 
-    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
-;
+    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
     
 this.adjustFrameToAngle(angle);
     

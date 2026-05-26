@@ -74,7 +74,7 @@ export class TestInputAutomationCaptureWorker extends AbstractInputAutomationWor
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private genericProfileActions: GenericProfileActions
+    private genericProfileActions: GenericProfileActions;
 
     private readonly MESSAGE: string = "GenericInputAutomationCaptureWorker";
 
@@ -83,6 +83,7 @@ export class TestInputAutomationCaptureWorker extends AbstractInputAutomationWor
     private readonly IMAGE_AVAILABLE_SO_PROCESSING: string = "Image Available so processing";
 
     private readonly IMAGE_NOT_AVAILABLE: string = "Image Not Available";
+
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfileActions: GenericProfileActions, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
             super(inputAutomationActionInterface);
                     
@@ -100,8 +101,7 @@ this.setGenericProfileActions(genericProfileActions);
             
     public processDataWorkerResults(){
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
-;
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;;
     
 
                         if(cacheInterface!.keySet()!.size() > 0)
@@ -110,49 +110,39 @@ this.setGenericProfileActions(genericProfileActions);
                                     this.logUtil!.putF(this.IMAGE_AVAILABLE_SO_PROCESSING, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var anyType: any = cacheInterface!.keySet()!.()[0]!;
-;
+    var anyType: any = cacheInterface!.keySet()!.()[0]!;;
     
 
-    var hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;;
     
 
-    var set: Set = hashMap!.keys()!;
-;
+    var set: Set = hashMap!.keys()!;;
     
 
-    var actionNameArray: any[] = set.toArray()!;
-;
+    var actionNameArray: any[] = set.toArray()!;;
     
 
     var size: number = actionNameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var actionNameString: string = actionNameArray[index]! as string;
-;
+    var actionNameString: string = actionNameArray[index]! as string;;
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;
-;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;;
     
 
-    var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;
-;
+    var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;;
     
 
-    var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;
-;
+    var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
     
 }
 

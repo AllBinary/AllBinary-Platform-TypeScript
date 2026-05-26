@@ -78,9 +78,10 @@ export class BasicComponentView
 
     readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private transformDocumentInterface: TransformDocumentInterface
+    private transformDocumentInterface: TransformDocumentInterface;
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
@@ -158,12 +159,10 @@ this.transformInfoInterface= transformInfoInterface;
             
     public getDoc(): Document{
 
-    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;
-;
+    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;;
     
 
-    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;
-;
+    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;;
     
 
                         if(dataNode != 
@@ -191,12 +190,10 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var success: string = DomDocumentHelper.toString(this.getDoc())!;
-;
+    var success: string = DomDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
-;
+    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 

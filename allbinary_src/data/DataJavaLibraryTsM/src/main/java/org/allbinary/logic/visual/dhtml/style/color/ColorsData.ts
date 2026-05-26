@@ -57,6 +57,7 @@ export class ColorsData
     
 }
 
+
 private constructor (){
 
             super();

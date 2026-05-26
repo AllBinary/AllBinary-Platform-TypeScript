@@ -76,24 +76,20 @@ export class NumberOnOwnGroupSequenceAIFactory
             
     public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 
-    var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;
-;
+    var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < integerArray!.length; index++)
+    var index: number = 0;index < integerArray!.length; index++)
         {
 
-    var integerCanBeNull: any = hashtable.get(integerArray[index]!);
-;
+    var integerCanBeNull: any = hashtable.get(integerArray[index]!);;
     
 
                         if(integerCanBeNull == 
@@ -112,8 +108,7 @@ list.add(integerCanBeNull);
 }
 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Total AI Properties: ");
     
@@ -126,8 +121,7 @@ stringBuffer!.appendint(artificialIntelligenceInterface!.length);
 stringBuffer!.append(" + 1");
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
@@ -156,16 +150,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     }
                                 
 
-    var numberOnSameTeam: Integer[] = new Array(list.size());
-;
+    var numberOnSameTeam: Integer[] = new Array(list.size());;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOnSameTeam!.length; index++)
+    var index: number = 0;index < numberOnSameTeam!.length; index++)
         {
 numberOnSameTeam[index]= list.objectArray[index]! as Integer;
     

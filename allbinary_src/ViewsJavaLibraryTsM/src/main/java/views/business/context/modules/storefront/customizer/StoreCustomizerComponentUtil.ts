@@ -76,6 +76,7 @@ export class StoreCustomizerComponentUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -95,32 +96,26 @@ private constructor (){
                                     }
                                 
 
-    var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;
-;
+    var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
     
 
-    var allCustomizedViews: Vector = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;
-;
+    var allCustomizedViews: Vector = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
     
 
-    var size: number = allCustomizedViews!.length!;
-;
+    var size: number = allCustomizedViews!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index) as TransformInfo;
-;
+    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index) as TransformInfo;;
     
 
-    var allViewsToBeModified: Vector = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;
-;
+    var allViewsToBeModified: Vector = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -148,28 +143,23 @@ this.generate(abeClientInformation, transformInfoInterface, allViewsToBeModified
             
     generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: Vector){
 
-    var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;
-;
+    var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;;
     
 
-    var size: number = allViewsToBeModifiedVector!.length!;
-;
+    var size: number = allViewsToBeModifiedVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
-;
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = customizerUtil!.getTransformInfoInterfaceToCustomize(transformInfoInterface, nextTransformInfoInterface)!;
-;
+    var specifiedTransformInfoInterface: TransformInfoInterface = customizerUtil!.getTransformInfoInterfaceToCustomize(transformInfoInterface, nextTransformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

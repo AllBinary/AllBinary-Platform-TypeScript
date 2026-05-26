@@ -45,6 +45,7 @@ export class EnableFacesShaderOpenGLProcessor extends ObjectThreedOpenGLProcesso
     
 }
 
+
 public constructor (){
 
             super();

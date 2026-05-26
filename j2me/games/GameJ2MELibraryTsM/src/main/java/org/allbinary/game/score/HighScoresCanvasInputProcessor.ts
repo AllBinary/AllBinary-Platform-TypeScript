@@ -56,7 +56,8 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
 export class HighScoresCanvasInputProcessor extends PlayerGameInput {
         
 
-    private readonly highScoresCanvas: HighScoresCanvas
+    private readonly highScoresCanvas: HighScoresCanvas;
+
 public constructor (highScoresCanvas: HighScoresCanvas){
             super(new BasicArrayListD(), new BasicArrayListD(),  -1);
                     

@@ -57,6 +57,7 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
         
 export class AbFileOutputStream extends OutputStream {
         
+
 public constructor (name: string){
 
             super();
@@ -65,13 +66,15 @@ public constructor (name: string){
 }
 
 
-    private fileOutputStream: FileOutputStream
+    private fileOutputStream: FileOutputStream;
+
 public constructor (file: AbFile){
 
             super();
         this.fileOutputStream= new FileOutputStream(AbFileNativeUtil.get(file));
     
 }
+
 
 public constructor (fileOutputStream: FileOutputStream){
 

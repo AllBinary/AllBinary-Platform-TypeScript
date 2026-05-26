@@ -58,8 +58,7 @@ export class AdvertisementCampaignInternalEntityFactory
 
     public static getInstance(): AdvertisementCampaignInternalEntityInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -78,8 +77,7 @@ export class AdvertisementCampaignInternalEntityFactory
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementCampaignEntityFactory", commonStrings!.GET_INSTANCE, e);
     
@@ -95,6 +93,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementCampaignEntityFactory", com
 }
 
 }
+
 
 private constructor (){
 

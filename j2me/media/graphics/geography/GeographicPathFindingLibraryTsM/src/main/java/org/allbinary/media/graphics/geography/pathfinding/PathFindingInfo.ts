@@ -60,11 +60,12 @@ export class PathFindingInfo
 
     private pathFinder: GeographicPathFinderBase = GeographicPathFinderBase.NULL_GEOGRAPHIC_PATH_FINDER_BASE;
 
-    private readonly startPathFindingNodeList: BasicArrayList
+    private readonly startPathFindingNodeList: BasicArrayList;
 
-    private readonly endPathFindingNodeList: BasicArrayList
+    private readonly endPathFindingNodeList: BasicArrayList;
 
-    private readonly pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase
+    private readonly pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase;
+
 public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 
             super();

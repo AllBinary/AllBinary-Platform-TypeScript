@@ -46,11 +46,12 @@ export class CachePolicy
          {
         
 
-    private readonly name: string
+    private readonly name: string;
 
-    private maxTime: number= 0
+    private maxTime: number= 0;
 
-    private maxSize: number= 0
+    private maxSize: number= 0;
+
 public constructor (name: string, maxTime: number, maxSize: number){
 
             super();

@@ -73,12 +73,10 @@ export class FormTypeFactory
 
     public getFormType(): FormType{
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var formType: FormType
-;
+    var formType: FormType;;
     
 
                         if(displayInfo!.isPortrait())

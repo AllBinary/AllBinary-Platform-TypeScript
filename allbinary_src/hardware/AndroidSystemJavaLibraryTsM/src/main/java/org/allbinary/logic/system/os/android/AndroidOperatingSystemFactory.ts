@@ -80,6 +80,7 @@ export class AndroidOperatingSystemFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -92,16 +93,13 @@ private constructor (){
 
         try {
             
-    var GenericOperatingSystem: GenericOperatingSystem
-;
+    var GenericOperatingSystem: GenericOperatingSystem;;
     
 
-    var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-;
+    var systemProperties: SystemProperties = SystemProperties.getInstance()!;;
     
 
-    var osName: string = systemProperties!.getName()!;
-;
+    var osName: string = systemProperties!.getName()!;;
     
 
                         if(this.tsUtil!.compareTo(osName, OperatingSystems.getInstance()!.ANDROID) == 0)
@@ -145,8 +143,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Failed to get OperatingSystem returning NoOperatingSystem", this, commonStrings!.GET_INSTANCE, e);
     

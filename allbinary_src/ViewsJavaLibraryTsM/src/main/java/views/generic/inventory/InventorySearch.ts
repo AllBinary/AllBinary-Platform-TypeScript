@@ -90,7 +90,8 @@ export class InventorySearch
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly searchRequest: SearchRequest
+    private readonly searchRequest: SearchRequest;
+
 public constructor (searchRequest: SearchRequest){
             super();
                     
@@ -108,20 +109,16 @@ this.searchRequest= searchRequest;
 
         try {
             
-    var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;
-;
+    var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;;
     
 
-    var searchParams: SearchParams = this.searchRequest!.getParams()!;
-;
+    var searchParams: SearchParams = this.searchRequest!.getParams()!;;
     
 
-    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;
-;
+    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
     
 
-    var file: string = new StaticPagesEntity().getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as string))!;
-;
+    var file: string = new StaticPagesEntity().getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as string))!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(file))
@@ -138,8 +135,7 @@ this.searchRequest= searchRequest;
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(storeFront!.getCurrentHostName());
     
@@ -156,8 +152,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
     
 
-    var filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").all(stringBuffer!.toString())!;
-;
+    var filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").all(stringBuffer!.toString())!;;
     
 
 
@@ -197,8 +192,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
         try {
             
-    var str: string[] = this.search()!;
-;
+    var str: string[] = this.search()!;;
     
 
 
@@ -233,16 +227,13 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
             
     public search(): string[]{
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-;
+    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
-    var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;
-;
+    var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;;
     
 
-    var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;
-;
+    var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;;
     
 
 
@@ -257,8 +248,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
             
     public getProduct(product: string): string{
 
-    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-;
+    var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;;
     
 
 

@@ -60,6 +60,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
 
 export class NewValidationView extends InventoryItemView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
                     

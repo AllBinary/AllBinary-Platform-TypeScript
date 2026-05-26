@@ -88,7 +88,8 @@ export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private mouseActionScriptInputInterface: MouseActionScriptInputInterface
+    private mouseActionScriptInputInterface: MouseActionScriptInputInterface;
+
 public constructor (mouseActionScriptInputInterface: MouseActionScriptInputInterface){
 
             super();
@@ -99,8 +100,7 @@ this.initComponents();
 this.mouseActionScriptInputInterface= mouseActionScriptInputInterface;
     
 
-    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
-;
+    var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();;
     
 defaultComboBoxModel!.addElement(TempInputRobotNames.LOW_NAME);
     
@@ -117,8 +117,7 @@ this.set();
 
     set(){
 
-    var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-;
+    var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 inputTypeComboBoxModel!.setSelectedItem(this.mouseActionScriptInputInterface!.getInputRobotInterface()!.getName());
     
@@ -167,12 +166,10 @@ this.mouseActionScriptInputInterface!.log();
             
     updateInputType(){
 
-    var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-;
+    var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;
-;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
@@ -262,8 +259,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
                         }
                             
 
-    var mouseXString: string = this.mouseXJTextField!.getText()!;
-;
+    var mouseXString: string = this.mouseXJTextField!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString) && StringValidationUtil.getInstance()!.isNumber(mouseXString))
@@ -275,8 +271,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
                                     }
                                 
 
-    var mouseYString: string = this.mouseYJTextField!.getText()!;
-;
+    var mouseYString: string = this.mouseYJTextField!.getText()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString) && StringValidationUtil.getInstance()!.isNumber(mouseYString))
@@ -402,8 +397,7 @@ this.jLabel6!.setText("Delay:");
 this.mouseDelayJTextField!.setText("100");
     
 
-    var mouseActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.mouseActionJDialog!.getContentPane());
-;
+    var mouseActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.mouseActionJDialog!.getContentPane());;
     
 this.mouseActionJDialog!.getContentPane()!.setLayout(mouseActionJDialogLayout);
     
@@ -429,8 +423,7 @@ mouseActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Mouse:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -469,39 +462,39 @@ this.getMouseActionJDialog()!.setVisible(true);
 }
 
 
-    private button1JCheckBox: javax.swing.JCheckBox
+    private button1JCheckBox: javax.swing.JCheckBox;
 
-    private button2JCheckBox: javax.swing.JCheckBox
+    private button2JCheckBox: javax.swing.JCheckBox;
 
-    private inputAutomationTypeJComboBox: javax.swing.JComboBox
+    private inputAutomationTypeJComboBox: javax.swing.JComboBox;
 
-    private inputTypeJLabel: javax.swing.JLabel
+    private inputTypeJLabel: javax.swing.JLabel;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private jLabel3: javax.swing.JLabel
+    private jLabel3: javax.swing.JLabel;
 
-    private jLabel4: javax.swing.JLabel
+    private jLabel4: javax.swing.JLabel;
 
-    private jLabel5: javax.swing.JLabel
+    private jLabel5: javax.swing.JLabel;
 
-    private jLabel6: javax.swing.JLabel
+    private jLabel6: javax.swing.JLabel;
 
-    private mouseActionJButton: javax.swing.JButton
+    private mouseActionJButton: javax.swing.JButton;
 
-    private mouseActionJDialog: javax.swing.JDialog
+    private mouseActionJDialog: javax.swing.JDialog;
 
-    private mouseDelayJTextField: javax.swing.JTextField
+    private mouseDelayJTextField: javax.swing.JTextField;
 
-    private mouseXJTextField: javax.swing.JTextField
+    private mouseXJTextField: javax.swing.JTextField;
 
-    private mouseYJTextField: javax.swing.JTextField
+    private mouseYJTextField: javax.swing.JTextField;
 
-    private okJButton: javax.swing.JButton
+    private okJButton: javax.swing.JButton;
 
-    private titleJLabel: javax.swing.JLabel
+    private titleJLabel: javax.swing.JLabel;
 
 }
                 

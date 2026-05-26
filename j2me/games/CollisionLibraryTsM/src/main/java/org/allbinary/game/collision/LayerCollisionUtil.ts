@@ -69,17 +69,16 @@ export class LayerCollisionUtil
 }
 
 
-    private readonly collisionProcessor: CollisionProcessor
+    private readonly collisionProcessor: CollisionProcessor;
+
 private constructor (){
 
             super();
         
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-;
+    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed() && !features.isFeature(gameFeatureFactory!.COLLISIONS_FORCED_TWO_DIMENSIONAL))

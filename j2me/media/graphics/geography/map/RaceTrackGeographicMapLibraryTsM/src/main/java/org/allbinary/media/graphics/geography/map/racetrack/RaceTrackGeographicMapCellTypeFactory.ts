@@ -66,29 +66,29 @@ export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellType
 
     public EASY_CELL_TYPE: GeographicMapCellType = this.EMPTY_CELL_TYPE;
 
-    public readonly BOTTOM_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly BOTTOM_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly BOTTOM_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly BOTTOM_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly TOP_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly TOP_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly TOP_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly TOP_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly HORIZONTAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly HORIZONTAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly VERTICAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly VERTICAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly START_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly START_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly DEFAULT_FINISH_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly DEFAULT_FINISH_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
     public FINISH_LINE_ROAD_CELL_TYPE: GeographicMapCellType = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE;
+
 public constructor (){
 
             super();
         
-    var raceTrackGeographicMapCellTypes: RaceTrackGeographicMapCellTypes = RaceTrackGeographicMapCellTypes.getInstance()!;
-;
+    var raceTrackGeographicMapCellTypes: RaceTrackGeographicMapCellTypes = RaceTrackGeographicMapCellTypes.getInstance()!;;
     
 this.BOTTOM_LEFT_TURN_ROAD_CELL_TYPE= raceTrackGeographicMapCellTypes!.BOTTOM_LEFT_TURN_ROAD_CELL_TYPE;
     

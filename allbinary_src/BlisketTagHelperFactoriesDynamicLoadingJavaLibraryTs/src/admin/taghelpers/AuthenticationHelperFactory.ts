@@ -59,6 +59,7 @@ export class AuthenticationHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.AuthenticationHelper";
 
     private static readonly FACTORYNAME: string = "AuthenticationHelperFactory";
+
 public constructor (){
 
             super();

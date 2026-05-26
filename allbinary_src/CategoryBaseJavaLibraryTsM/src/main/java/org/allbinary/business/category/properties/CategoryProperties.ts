@@ -85,7 +85,8 @@ export class CategoryProperties
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private category: string
+    private category: string;
+
 public constructor (name: string){
 
             super();
@@ -93,12 +94,14 @@ public constructor (name: string){
     
 }
 
+
 public constructor (node: Node){
 
             super();
         this.category= CategoryUtil.getNameFromNode(node);
     
 }
+
 
 public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
@@ -152,28 +155,23 @@ public constructor (categoryPropertiesHashMap: HashMap<any, any>){
             
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
 
-    var abPathData: AbPathData = AbPathData.getInstance()!;
-;
+    var abPathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var pathStringBuffer: StringMaker = new StringMaker();
-;
+    var pathStringBuffer: StringMaker = new StringMaker();;
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var nextParentCategoryInterface: CategoryInterface = categoryHierarchyInterface!.getParent()!;
-;
+    var nextParentCategoryInterface: CategoryInterface = categoryHierarchyInterface!.getParent()!;;
     
 
                         if(this != nextParentCategoryInterface!.getProperties())
                         
                                     {
                                     
-    var depthIndex: number = 0;
-;
+    var depthIndex: number = 0;;
     
 
         while(nextParentCategoryInterface != 
@@ -243,16 +241,14 @@ pathStringBuffer!.delete(0, pathStringBuffer!.length());
 pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 pathStringBuffer!.append(list.get(index) as string);
     
@@ -307,8 +303,7 @@ this.category= value;
 
     public isValid(): Boolean{
 
-    var returnBoolean: Boolean = Boolean.FALSE;
-;
+    var returnBoolean: Boolean = Boolean.FALSE;;
     
 
                         if(StringValidationUtil.getInstance()!.isValidRequired(this.category, 1, AbSqlData.MAXSTRING))
@@ -330,8 +325,7 @@ this.category= value;
 
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
     
@@ -346,8 +340,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
 
     public toVector(): Vector{
 
-    var categoryVector: Vector = new Vector();
-;
+    var categoryVector: Vector = new Vector();;
     
 categoryVector!.add(this.category);
     

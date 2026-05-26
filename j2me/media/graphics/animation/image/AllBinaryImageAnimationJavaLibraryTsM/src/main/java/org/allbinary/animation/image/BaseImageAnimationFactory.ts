@@ -83,15 +83,16 @@ export class BaseImageAnimationFactory
 
     readonly animationFactoryImageScaleUtil: AnimationFactoryImageScaleUtil = AnimationFactoryImageScaleUtil.getInstance()!;
 
-    private readonly image: Image
+    private readonly image: Image;
 
-    public readonly animationBehaviorFactory: AnimationBehaviorFactory
+    public readonly animationBehaviorFactory: AnimationBehaviorFactory;
 
-    private readonly sequenceArray: number[]
+    private readonly sequenceArray: number[];
 
-    readonly animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor
+    readonly animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor;
 
     scaleProperties: ScaleProperties = ScaleProperties.instance;
+
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -148,16 +149,13 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     

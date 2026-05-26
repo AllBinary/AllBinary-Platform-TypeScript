@@ -49,6 +49,7 @@ export class InputAutomationData
     public static NAME: string = "INPUT_AUTOMATION";
 
     public static INSTALLATION: string = "INPUT_AUTOMATION_INSTALLATION";
+
 private constructor (){
 
             super();

@@ -64,6 +64,7 @@ export class RTSGameLayerPositionFinder
     
 }
 
+
 private constructor (){
 
             super();

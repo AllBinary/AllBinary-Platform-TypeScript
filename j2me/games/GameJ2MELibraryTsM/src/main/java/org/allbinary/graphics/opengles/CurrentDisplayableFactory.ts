@@ -132,6 +132,7 @@ export class CurrentDisplayableFactory
     private runnable: GameRunnable = NullWaitGameRunnable.getInstance()!;
 
     private usedRunnable: GameRunnable = NullWaitGameRunnable.getInstance()!;
+
 private constructor (){
 
             super();
@@ -242,16 +243,13 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
         //mutex.withLock
         
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 stringMaker!.append(this.stringUtil!.toString(this.openGlReadydisplayable));
     

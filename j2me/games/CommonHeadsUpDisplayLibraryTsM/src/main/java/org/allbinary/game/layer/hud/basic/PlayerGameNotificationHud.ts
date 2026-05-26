@@ -94,7 +94,7 @@ export class PlayerGameNotificationHud extends GameNotificationHud {
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-    private readonly circularIndexUtil: CircularIndexUtil
+    private readonly circularIndexUtil: CircularIndexUtil;
 
     private readonly gameNotification: GameNotification = new GameNotification();
 
@@ -103,6 +103,7 @@ export class PlayerGameNotificationHud extends GameNotificationHud {
     private point: CustomGPoint = CustomGPoint.NULL_CUSTOM_POINT;
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     
@@ -112,8 +113,7 @@ public constructor (location: number, direction: number, maxHeight: number, maxW
 this.circularIndexUtil= CircularIndexUtil.createInstance(0);
     
 
-    var gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;
-;
+    var gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;;
     
 gameNotificationEventHandler!.removeAllListeners();
     
@@ -182,8 +182,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
                         
                                     {
                                     
-    var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;
-;
+    var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
     
 
                         if(gameAdState!.isShowingAtLocation(this.getLocation()))
@@ -236,8 +235,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
 this.string= this.gameNotification!.stringList!.removeAt(0) as string;
     
 
-    var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
-;
+    var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;;
     
 this.setX((this.displayInfo!.getLastWidth() -width)>>1);
     
@@ -246,12 +244,10 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: Integer = this.gameNotification!.timeList!.removeAt(0) as Integer;
-;
+    var time: Integer = this.gameNotification!.timeList!.removeAt(0) as Integer;;
     
 
-    var iTime: number = time.intValue() *1000;
-;
+    var iTime: number = time.intValue() *1000;;
     
 
                         if(iTime == 0)
@@ -273,14 +269,12 @@ this.setBasicColorP(this.gameNotification!.colorList!.removeAt(0) as BasicColor)
             
     setNextUnremoveable(){
 
-    var index: number = this.circularIndexUtil!.getIndex()!;
-;
+    var index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as string;
     
 
-    var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
-;
+    var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;;
     
 this.setX((this.displayInfo!.getLastWidth() -width)>>1);
     
@@ -289,8 +283,7 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: Integer = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;
-;
+    var time: Integer = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;;
     
 this.timeDelayHelper!.delay= time.intValue() *1000;
     

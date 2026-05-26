@@ -55,6 +55,7 @@ export class ShippingMethodData
     public static readonly GROUP: string = "SHIPPINGMETHOD_GROUP";
 
     public static readonly COST: string = "SHIPPINGMETHOD_COST";
+
 public constructor (){
 
             super();

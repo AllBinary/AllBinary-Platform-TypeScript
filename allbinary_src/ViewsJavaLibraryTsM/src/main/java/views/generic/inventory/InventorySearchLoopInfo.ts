@@ -64,8 +64,7 @@ export class InventorySearchLoopInfo
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.CURRENT);
     

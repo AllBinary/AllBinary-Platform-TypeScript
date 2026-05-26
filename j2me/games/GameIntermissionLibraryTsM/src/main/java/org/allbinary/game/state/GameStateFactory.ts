@@ -59,6 +59,7 @@ export class GameStateFactory
     
 }
 
+
 private constructor (){
 
             super();

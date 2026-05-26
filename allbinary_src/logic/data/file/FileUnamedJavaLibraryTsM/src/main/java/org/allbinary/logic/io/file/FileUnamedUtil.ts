@@ -64,8 +64,7 @@ export class FileUnamedUtil
 
     public process(string: string): string{
 
-    var simplifiedString: string = string.toLowerCase()!;
-;
+    var simplifiedString: string = string.toLowerCase()!;;
     
 simplifiedString= simplifiedString!.replace(this.commonSeps!.SPACE, this.commonSeps!.UNDERSCORE);
     

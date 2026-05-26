@@ -85,6 +85,7 @@ export class GameGraphicsResourceUtil
     public readonly QUARTER: string = "_quarter";
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 public constructor (){
 
             super();
@@ -97,8 +98,7 @@ public constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
@@ -111,16 +111,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
             
     getString(): string{
 
-    var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
-;
+    var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;;
     
 
-    var graphicsFeature: GraphicsFeature = graphicsFeatureFactory!.NONE;
-;
+    var graphicsFeature: GraphicsFeature = graphicsFeatureFactory!.NONE;;
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_TO_ARRAY_GRAPHICS))
@@ -171,18 +168,15 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
             
     public getStringForFeature(graphicsFeature: GraphicsFeature): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
-;
+    var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(graphicsFeatureFactory!.VECTOR_GRAPHICS))

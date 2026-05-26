@@ -46,6 +46,7 @@ import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
 
 export class LogTag extends TableTag {
         
+
 public constructor (){
 
             super();

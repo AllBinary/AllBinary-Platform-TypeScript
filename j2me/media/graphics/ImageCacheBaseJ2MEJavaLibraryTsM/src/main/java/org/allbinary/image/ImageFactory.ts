@@ -92,8 +92,7 @@ export class ImageFactory
             
     public createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
 
-    var image: Image = Image.createImage(inputStream)!;
-;
+    var image: Image = Image.createImage(inputStream)!;;
     
 
 

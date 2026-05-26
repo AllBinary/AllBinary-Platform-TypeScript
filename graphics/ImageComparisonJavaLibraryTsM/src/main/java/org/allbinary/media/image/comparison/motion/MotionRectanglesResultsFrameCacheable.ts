@@ -53,9 +53,10 @@ export class MotionRectanglesResultsFrameCacheable
          implements CacheableInterface {
         
 
-    private motionRectangles: MotionRectangles
+    private motionRectangles: MotionRectangles;
 
-    private frame: Long
+    private frame: Long;
+
 public constructor (motionRectangles: MotionRectangles, frame: Long){
 
             super();
@@ -94,8 +95,7 @@ this.motionRectangles= motionRectangles;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     

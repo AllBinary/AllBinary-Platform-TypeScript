@@ -79,6 +79,7 @@ export class TransformGeneratorUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -100,20 +101,16 @@ private constructor (){
                                     }
                                 
 
-    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getName(), ownerTransformInfoInterface)!;
-;
+    var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getName(), ownerTransformInfoInterface)!;;
     
 
-    var result: string = componentInterface!.view()!;
-;
+    var result: string = componentInterface!.view()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 
-    var inputOutputTypeData: InputOutputTypeData = InputOutputTypeData.getInstance()!;
-;
+    var inputOutputTypeData: InputOutputTypeData = InputOutputTypeData.getInstance()!;;
     
 
                         if(result.indexOf("<HTML>") >= 0)

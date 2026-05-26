@@ -78,7 +78,8 @@ export class CssPropertyValues
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private propertyValueVector: Vector
+    private propertyValueVector: Vector;
+
 public constructor (){
 
             super();
@@ -86,18 +87,17 @@ public constructor (){
     
 }
 
+
 public constructor (node: Node){
 
             super();
         
-    var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 this.propertyValueVector= new Vector();
     
 
-    var cssPropertyNodeVector: Vector = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;
-;
+    var cssPropertyNodeVector: Vector = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
@@ -109,28 +109,23 @@ this.propertyValueVector= new Vector();
                                     }
                                 
 
-    var size: number = cssPropertyNodeVector!.length!;
-;
+    var size: number = cssPropertyNodeVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index) as Node;
-;
+    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index) as Node;;
     
 
-    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, cssPropertyValueNode!.getChildNodes())!;
-;
+    var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, cssPropertyValueNode!.getChildNodes())!;;
     
 
-    var propertyValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;
-;
+    var propertyValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STYLE))
@@ -142,36 +137,30 @@ index < size; index++)
                                     }
                                 
 
-    var indexNode: Node = DomSearchHelper.getNode(DomData.INDEX, cssPropertyValueNode!.getChildNodes())!;
-;
+    var indexNode: Node = DomSearchHelper.getNode(DomData.INDEX, cssPropertyValueNode!.getChildNodes())!;;
     
 
-    var indexValue: string = DomNodeHelper.getTextNodeValue(indexNode)!;
-;
+    var indexValue: string = DomNodeHelper.getTextNodeValue(indexNode)!;;
     
 indexPropertyValueHashMap!.put(indexValue, propertyValue);
     
 }
 
 
-    var size2: number = indexPropertyValueHashMap!.keys().size()!;
-;
+    var size2: number = indexPropertyValueHashMap!.keys().size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 
-    var indexInt: Integer = new Integer(index);
-;
+    var indexInt: Integer = new Integer(index);;
     
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()) as string;
-;
+    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()) as string;;
     
 this.propertyValueVector!.add(propertyValue);
     
@@ -182,36 +171,29 @@ this.propertyValueVector!.add(propertyValue);
 
     public toHashMap(): HashMap<any, any>{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var cssPropertyValueData: CssPropertyValueData = CssPropertyValueData.getInstance()!;
-;
+    var cssPropertyValueData: CssPropertyValueData = CssPropertyValueData.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.propertyValueVector!.length!;
-;
+    var size: number = this.propertyValueVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var value: string = this.propertyValueVector!.get(index) as string;
-;
+    var value: string = this.propertyValueVector!.get(index) as string;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -246,8 +228,7 @@ index++;
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 this.logUtil!.putF("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()");
     

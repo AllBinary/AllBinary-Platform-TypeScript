@@ -71,7 +71,8 @@ export class BasicEventHandler
 
     private readonly eventStrings: EventStrings = EventStrings.getInstance()!;
 
-    eventListenerInterfaceList: BasicArrayList
+    eventListenerInterfaceList: BasicArrayList;
+
 public constructor (){
 
             super();
@@ -88,20 +89,17 @@ this.eventListenerInterfaceList= new BasicArrayListD();
 
     public addListeners(vector: BasicArrayList){
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var size: number = vector.size()!;
-;
+    var size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 eventListenerInterface= vector.get(index) as EventListenerInterface;
     
@@ -114,20 +112,17 @@ this.addListenerInterface(eventListenerInterface);
 
     public removeListeners(vector: BasicArrayList){
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var size: number = vector.size()!;
-;
+    var size: number = vector.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 eventListenerInterface= vector.get(index) as EventListenerInterface;
     
@@ -180,12 +175,10 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
             
     public fireEvent(eventObject: AllBinaryEventObject){
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
@@ -231,20 +224,17 @@ eventListenerInterface!.onEvent(eventObject);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.eventStrings!.TOTAL_LISTENERS);
     
 stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())

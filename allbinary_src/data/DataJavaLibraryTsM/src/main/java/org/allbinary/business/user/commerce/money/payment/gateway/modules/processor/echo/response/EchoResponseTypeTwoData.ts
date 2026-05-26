@@ -47,6 +47,7 @@ export class EchoResponseTypeTwoData
         
 
     public static NAME: string = "ECHOTYPE2";
+
 private constructor (){
 
             super();

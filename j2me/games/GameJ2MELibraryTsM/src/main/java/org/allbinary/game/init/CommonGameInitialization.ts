@@ -68,6 +68,7 @@ export class CommonGameInitialization extends BaseGameInitialization {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 protected constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
             super(resourceInitializationArray, portion);
                     
@@ -83,8 +84,7 @@ protected constructor (resourceInitializationArray: ResourceInitialization[], po
 super.init(abeClientInformation, commandListener, level);
     
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(!this.isGameInitialized() && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
@@ -93,8 +93,7 @@ super.init(abeClientInformation, commandListener, level);
                                     this.setGameInitialized(true);
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 SmallIntegerSingletonFactory.getInstance()!.init();
     

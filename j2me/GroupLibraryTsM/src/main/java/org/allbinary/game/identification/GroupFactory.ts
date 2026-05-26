@@ -79,8 +79,7 @@ export class GroupFactory
 
     public getNextGroup(): Group{
 
-    var group: Group = this.list.objectArray[this.index]! as Group;
-;
+    var group: Group = this.list.objectArray[this.index]! as Group;;
     
 this.index++;
     
@@ -95,8 +94,7 @@ this.index++;
 
     public getNextGroupByName(name: string): Group{
 
-    var group: Group = this.getNextGroup()!;
-;
+    var group: Group = this.getNextGroup()!;;
     
 group.setName(name);
     
@@ -111,31 +109,26 @@ group.setName(name);
 
     public init(groups: number, nameArray: string[]){
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var TEAM: string = "Team ";
-;
+    var TEAM: string = "Team ";;
     
 this.list.clear();
     
 this.index= 0;
     
 
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
         while(size < groups)
         {
 
-    var name: string = stringUtil!.EMPTY_STRING;
-;
+    var name: string = stringUtil!.EMPTY_STRING;;
     
 
                         if(size < nameArray!.length)

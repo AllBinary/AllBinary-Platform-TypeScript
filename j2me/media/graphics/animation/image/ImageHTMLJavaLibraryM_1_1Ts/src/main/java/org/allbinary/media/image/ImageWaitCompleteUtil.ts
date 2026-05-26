@@ -70,6 +70,7 @@ export class ImageWaitCompleteUtil extends ImageCompleteUtil {
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(18000);
 
     private readonly allTimeDelayHelper: TimeDelayHelper = new TimeDelayHelper(120000);
+
 public constructor (){
 
             super();
@@ -108,12 +109,10 @@ this.waitForATime(image, name, this.timeDelayHelper);
             
     waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
 
-    var playnImage: PlaynImage = image as PlaynImage;
-;
+    var playnImage: PlaynImage = image as PlaynImage;;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;
-;
+    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;;
     
 
         while(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
@@ -150,17 +149,14 @@ this.waitForATime(image, name, this.timeDelayHelper);
 this.allTimeDelayHelper!.setStartTimeTNT();
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
-;
+    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
-;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
     var size: number = objectArray!.length
-                ;
-;
+                ;;
     
 PreLogUtil.put("Image Total: " +size, this, "waitForAll");
     
@@ -169,8 +165,7 @@ PreLogUtil.put("Image Total: " +size, this, "waitForAll");
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as string, this.allTimeDelayHelper);
     

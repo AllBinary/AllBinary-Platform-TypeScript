@@ -57,6 +57,7 @@ export class MediaTypeData
     
 }
 
+
 private constructor (){
 
             super();

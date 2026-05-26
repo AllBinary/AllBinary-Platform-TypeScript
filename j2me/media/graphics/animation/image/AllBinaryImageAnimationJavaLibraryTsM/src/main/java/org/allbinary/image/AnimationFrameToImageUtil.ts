@@ -71,20 +71,16 @@ export class AnimationFrameToImageUtil
             
     public getInstanceTranslate(width: number, height: number, animationInterface: Animation): Image{
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, ((width *3)>>1), ((height *3)>>1))!;
-;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, ((width *3)>>1), ((height *3)>>1))!;;
     
 
-    var graphics: Graphics = image.getGraphics()!;
-;
+    var graphics: Graphics = image.getGraphics()!;;
     
 
-    var tranlateX: number = (width>>2);
-;
+    var tranlateX: number = (width>>2);;
     
 
-    var tranlateY: number = (height>>2);
-;
+    var tranlateY: number = (height>>2);;
     
 graphics.translate(tranlateX, tranlateY);
     
@@ -105,12 +101,10 @@ graphics.translate( -tranlateX,  -tranlateY);
             
     public getInstanceWH(width: number, height: number, animationInterface: Animation): Image{
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, width, height)!;
-;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, width, height)!;;
     
 
-    var graphics: Graphics = image.getGraphics()!;
-;
+    var graphics: Graphics = image.getGraphics()!;;
     
 animationInterface!.paintXY(graphics, 0, 0);
     

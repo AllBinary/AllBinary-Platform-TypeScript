@@ -59,11 +59,12 @@ export class HtmlRow extends HtmlTag {
 
     private numberOfColumns: number = 0;
 
-    private before: string
+    private before: string;
 
-    private after: string
+    private after: string;
 
-    private htmlCellsVector: Vector
+    private htmlCellsVector: Vector;
+
 public constructor (before: string, after: string){
 
             super();
@@ -96,25 +97,20 @@ this.numberOfColumns++;
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;
-;
+    var result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
-;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
     
 
     var attributeSize: number = attributeKeys!.length
-                ;
-;
+                ;;
     
 
-    var cellSize: number = this.htmlCellsVector!.length!;
-;
+    var cellSize: number = this.htmlCellsVector!.length!;;
     
 result= this.before;
     
@@ -127,16 +123,13 @@ result += " ";
 
 
                         for (
-    var i: number = 0;
-i < attributeSize; i++)
+    var i: number = 0;i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as string;
-;
+    var key: string = attributeKeys[i]! as string;;
     
 
-    var value: string = otherAttributes!.get(key) as string;
-;
+    var value: string = otherAttributes!.get(key) as string;;
     
 
                         if(value != 
@@ -164,8 +157,7 @@ result += this.END;
 
 
                         for (
-    var i: number = 0;
-i < cellSize; i++)
+    var i: number = 0;i < cellSize; i++)
         {
 result += this.htmlCellsVector!.get(i)!.toString();
     

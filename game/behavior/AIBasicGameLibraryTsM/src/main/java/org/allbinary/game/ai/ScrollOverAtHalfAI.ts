@@ -54,6 +54,7 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
 
 export class ScrollOverAtHalfAI extends BasicAI {
         
+
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -67,28 +68,22 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var x: number = ownerLayerInterface!.getXP()!;
-;
+    var x: number = ownerLayerInterface!.getXP()!;;
     
 
-    var y: number = ownerLayerInterface!.getYP()!;
-;
+    var y: number = ownerLayerInterface!.getYP()!;;
     
 
-    var halfWidth: number = ownerLayerInterface!.getHalfWidth()!;
-;
+    var halfWidth: number = ownerLayerInterface!.getHalfWidth()!;;
     
 
-    var halfHeight: number = ownerLayerInterface!.getHalfHeight()!;
-;
+    var halfHeight: number = ownerLayerInterface!.getHalfHeight()!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
                         if(x > displayInfo!.getLastWidth() -halfWidth)

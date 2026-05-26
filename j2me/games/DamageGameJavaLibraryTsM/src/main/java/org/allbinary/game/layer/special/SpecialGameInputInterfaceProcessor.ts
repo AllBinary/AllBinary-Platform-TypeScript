@@ -47,7 +47,8 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
 export class SpecialGameInputInterfaceProcessor extends GameInputProcessor {
         
 
-    readonly specialGameInputInterface: SpecialGameInputInterface
+    readonly specialGameInputInterface: SpecialGameInputInterface;
+
 public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterface){
 
             super();

@@ -75,17 +75,18 @@ export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimat
 
     private readonly imageModifierUtil: ImageModifierUtil = ImageModifierUtil.getInstanceOrCreate()!;
 
-    private readonly originalImage: Image
+    private readonly originalImage: Image;
 
     private readonly twoImages: Image[] = new Array(2);
 
     private readonly canvasSurfaceArray: CanvasSurface[] = new Array(2);
 
-    private imageToShow: Image
+    private imageToShow: Image;
 
-    private bufferedImageIndex: number= 0
+    private bufferedImageIndex: number= 0;
 
     private alphaProcessor: AlphaBaseProcessor = AlphaBaseProcessor.getInstance()!;
+
 protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
                     
@@ -109,16 +110,13 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
 
     public getCanvasSurface(image: Image): CanvasSurface{
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
-;
+    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
-;
+    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-;
+    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.translate(this.originalImage!.getWidth() /2, this.originalImage!.getHeight() /2);
     
@@ -133,8 +131,7 @@ canvasSurface!.translate(this.originalImage!.getWidth() /2, this.originalImage!.
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;
-;
+    var changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -163,8 +160,7 @@ super.setBasicColorP(basicColor);
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;
-;
+    var changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -209,8 +205,7 @@ this.updateImage();
 
     updateImage(){
 
-    var canvasSurface: CanvasSurface = this.canvasSurfaceArray[this.bufferedImageIndex]!;
-;
+    var canvasSurface: CanvasSurface = this.canvasSurfaceArray[this.bufferedImageIndex]!;;
     
 canvasSurface!.save();
     

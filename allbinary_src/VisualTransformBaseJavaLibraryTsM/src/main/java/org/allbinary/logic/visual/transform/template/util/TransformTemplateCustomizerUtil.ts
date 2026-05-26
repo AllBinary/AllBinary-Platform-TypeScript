@@ -80,31 +80,30 @@ export class TransformTemplateCustomizerUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly CUSTOMIZER_NAME: string
+    private readonly CUSTOMIZER_NAME: string;
 
-    private readonly BODY_VIEWNAMEKEY: string
+    private readonly BODY_VIEWNAMEKEY: string;
 
-    private readonly TITLE_VIEWNAMEKEY: string
+    private readonly TITLE_VIEWNAMEKEY: string;
 
-    private readonly GLOBALS_NEW: string
+    private readonly GLOBALS_NEW: string;
 
-    private readonly GLOBALS_INSERT: string
+    private readonly GLOBALS_INSERT: string;
 
-    private readonly GLOBALS_DELETE: string
+    private readonly GLOBALS_DELETE: string;
 
-    private readonly GLOBALS_EDIT: string
+    private readonly GLOBALS_EDIT: string;
 
-    private readonly GLOBALS_UPDATE: string
+    private readonly GLOBALS_UPDATE: string;
+
 private constructor (){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var SPACE: string = CommonSeps.getInstance()!.SPACE;
-;
+    var SPACE: string = CommonSeps.getInstance()!.SPACE;;
     
 this.CUSTOMIZER_NAME= SPACE +CustomizerTransformInfoData.NAME;
     
@@ -127,16 +126,13 @@ this.GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
 
     public getPageNameHack(viewName: string, storeName: string): string{
 
-    var SPACE: string = CommonSeps.getInstance()!.SPACE;
-;
+    var SPACE: string = CommonSeps.getInstance()!.SPACE;;
     
 
-    var ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
-;
+    var ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(
                                                 [
@@ -191,12 +187,10 @@ hashMap!.put(
 
     var replace: Replace = 
                 null
-            ;
-;
+            ;;
     
 
-    var rootViewName: string = replace.all(viewName)!;
-;
+    var rootViewName: string = replace.all(viewName)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

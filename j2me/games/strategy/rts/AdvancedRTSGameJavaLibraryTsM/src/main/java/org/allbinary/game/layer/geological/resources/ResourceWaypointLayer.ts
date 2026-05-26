@@ -63,6 +63,7 @@ import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudP
 
 export class ResourceWaypointLayer extends WaypointLayer {
         
+
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
             super(remoteInfo, parentLayer, groupInterface, rootName, name, animationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y);
                     
@@ -74,8 +75,7 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
 
     public createHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: GeologicalResourceInfoHudPaintable = GeologicalResourceInfoHudPaintableSingleton.getInstance()!;
-;
+    var rtsLayerHudPaintable: GeologicalResourceInfoHudPaintable = GeologicalResourceInfoHudPaintableSingleton.getInstance()!;;
     
 rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor());
     
@@ -92,8 +92,7 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
     public getHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: GeologicalResourceInfoHudPaintable = GeologicalResourceInfoHudPaintableSingleton.getInstance()!;
-;
+    var rtsLayerHudPaintable: GeologicalResourceInfoHudPaintable = GeologicalResourceInfoHudPaintableSingleton.getInstance()!;;
     
 
 

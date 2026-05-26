@@ -70,9 +70,10 @@ export class CssProperty
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private propertyName: string
+    private propertyName: string;
 
-    private cssPropertyValues: CssPropertyValues
+    private cssPropertyValues: CssPropertyValues;
+
 public constructor (name: string){
 
             super();
@@ -82,12 +83,12 @@ this.cssPropertyValues= new CssPropertyValues();
     
 }
 
+
 public constructor (node: Node){
 
             super();
         
-    var propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
-;
+    var propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;;
     
 this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
     
@@ -101,8 +102,7 @@ this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
                                     }
                                 
 
-    var propertyValuesNode: Node = DomSearchHelper.getNode(CssPropertyData.getInstance()!.VALUES, node.getChildNodes())!;
-;
+    var propertyValuesNode: Node = DomSearchHelper.getNode(CssPropertyData.getInstance()!.VALUES, node.getChildNodes())!;;
     
 this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
     
@@ -121,8 +121,7 @@ this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
     
@@ -139,8 +138,7 @@ hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -152,8 +150,7 @@ hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
                                     }
                                 
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, CssPropertyData.getInstance()!.NAME, this.propertyName)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, CssPropertyData.getInstance()!.NAME, this.propertyName)!;;
     
 node.appendChild(this.cssPropertyValues!.toXmlNode(document));
     

@@ -56,21 +56,22 @@ export class Timer
 
     private startTime: number =  -1;
 
-    private hundredthTime: number= 0
+    private hundredthTime: number= 0;
 
-    private maxTime: number
+    private maxTime: number;
 
-    private modifier: number= 0
+    private modifier: number= 0;
 
     private hundrethsString: string[] = PrimitiveLongSingleton.getInstance()!.ZERO;
 
     private totalDigits: number = 1;
 
-    private primitiveLongUtil: PrimitiveLongUtil
+    private primitiveLongUtil: PrimitiveLongUtil;
 
     private readonly MAX: string[] = ['L','O','L'];
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+
 public constructor (maxTime: number){
 
             super();
@@ -101,12 +102,10 @@ this.startTime= this.gameTickTimeDelayHelper!.startTime;
 
     public update(){
 
-    var lastLowerTime: number = this.hundredthTime;
-;
+    var lastLowerTime: number = this.hundredthTime;;
     
 
-    var currentTime: number = ((this.modifier +this.gameTickTimeDelayHelper!.startTime) -this.startTime);
-;
+    var currentTime: number = ((this.modifier +this.gameTickTimeDelayHelper!.startTime) -this.startTime);;
     
 
                         if(currentTime < 0)

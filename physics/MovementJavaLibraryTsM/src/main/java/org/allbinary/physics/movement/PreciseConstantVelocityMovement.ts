@@ -43,11 +43,12 @@ import { ScaleFactorFactory } from '../../../../org/allbinary/logic/math/ScaleFa
 export class PreciseConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 
-    private accumulatedX: number= 0
+    private accumulatedX: number= 0;
 
-    private accumulatedY: number= 0
+    private accumulatedY: number= 0;
 
-    private accumulatedZ: number= 0
+    private accumulatedZ: number= 0;
+
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
             super(basicDecimal, velocityProperties);
                     
@@ -67,12 +68,10 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
             
     public process(layer: AllBinaryGameLayer){
 
-    var mathUtil: MathUtil = MathUtil.getInstance()!;
-;
+    var mathUtil: MathUtil = MathUtil.getInstance()!;;
     
 
-    var velocityProperties: BasicVelocityProperties = this.getVelocityProperties()!;
-;
+    var velocityProperties: BasicVelocityProperties = this.getVelocityProperties()!;;
     
 this.accumulatedX= Math.round((this.accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled()));
     

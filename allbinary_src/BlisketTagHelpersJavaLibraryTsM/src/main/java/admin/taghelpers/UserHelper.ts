@@ -85,15 +85,16 @@ export class UserHelper extends Table {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly hashMap: HashMap<any, any>
+    private readonly hashMap: HashMap<any, any>;
 
-    private readonly pageContext: PageContext
+    private readonly pageContext: PageContext;
 
-    private readonly request: HttpServletRequest
+    private readonly request: HttpServletRequest;
 
-    private readonly path: string
+    private readonly path: string;
 
-    private readonly portion: Portion
+    private readonly portion: Portion;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -114,18 +115,15 @@ this.portion= new Portion(hashMap);
 
         try {
             
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.request).toHashMap()!;
-;
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.request).toHashMap()!;;
     
 
-    var userName: UserName = new UserName(requestHashMap);
-;
+    var userName: UserName = new UserName(requestHashMap);;
     
 UserEntityFactory.getInstance()!.deleteWhere(UserData.USERNAME, userName!.get());
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully Removed the user with ");
     
@@ -138,8 +136,7 @@ stringBuffer!.append(userName!.get());
 stringBuffer!.append(" from to the user table");
     
 
-    var success: string = stringBuffer!.toString()!;
-;
+    var success: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -161,8 +158,7 @@ stringBuffer!.append(" from to the user table");
 } catch(e) 
             {
 
-    var error: string = "Failed to remove user with " +UserData.USERNAME +" from User table";
-;
+    var error: string = "Failed to remove user with " +UserData.USERNAME +" from User table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -190,12 +186,10 @@ stringBuffer!.append(" from to the user table");
 
         try {
             
-    var userInterface: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;
-;
+    var userInterface: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
     
 
-    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as string;
-;
+    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(enable))
@@ -207,14 +201,12 @@ stringBuffer!.append(" from to the user table");
                                     }
                                 
 
-    var values: Vector = userInterface!.toVector()!;
-;
+    var values: Vector = userInterface!.toVector()!;;
     
 UserEntityFactory.getInstance()!.insert(values);
     
 
-    var success: string = "New User Successfully added to the Users Table";
-;
+    var success: string = "New User Successfully added to the Users Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -236,8 +228,7 @@ UserEntityFactory.getInstance()!.insert(values);
 } catch(e) 
             {
 
-    var error: string = "Failed to add User";
-;
+    var error: string = "Failed to add User";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -263,18 +254,15 @@ UserEntityFactory.getInstance()!.insert(values);
 
         try {
             
-    var user: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;
-;
+    var user: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;;
     
 
-    var values: HashMap<any, any> = user.toHashMap()!;
-;
+    var values: HashMap<any, any> = user.toHashMap()!;;
     
 UserEntityFactory.getInstance()!.update(user.getUserName(), values);
     
 
-    var success: string = "New User Successfully added to the Users Table";
-;
+    var success: string = "New User Successfully added to the Users Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -296,8 +284,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 } catch(e) 
             {
 
-    var error: string = "Failed to add User";
-;
+    var error: string = "Failed to add User";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -323,8 +310,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 
         try {
             
-    var success: string = UserEntityFactory.getInstance()!.dropTable()!;
-;
+    var success: string = UserEntityFactory.getInstance()!.dropTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -346,8 +332,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 } catch(e) 
             {
 
-    var error: string = "Failed to drop user table";
-;
+    var error: string = "Failed to drop user table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -373,8 +358,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 
         try {
             
-    var success: string = UserEntityFactory.getInstance()!.createTable()!;
-;
+    var success: string = UserEntityFactory.getInstance()!.createTable()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -396,8 +380,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 } catch(e) 
             {
 
-    var error: string = "Failed to create user table";
-;
+    var error: string = "Failed to create user table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -423,12 +406,10 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(UserEntityFactory.getInstance(), this.portion)!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(UserEntityFactory.getInstance(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -450,8 +431,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
@@ -477,12 +457,10 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(UserEntityFactory.getInstance())!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(UserEntityFactory.getInstance())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -504,8 +482,7 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))

@@ -48,6 +48,7 @@ import { Dimension } from './Dimension.js';
 
 export class ActionScriptItemJPanel extends javax.swing.JPanel {
         
+
 public constructor (){
 
             super();
@@ -150,8 +151,7 @@ this.removeJPanel= new javax.swing.JPanel();
 this.newActionScriptInputJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
 
-    var childActionScriptConditionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.childActionScriptConditionJPanel);
-;
+    var childActionScriptConditionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.childActionScriptConditionJPanel);;
     
 this.childActionScriptConditionJPanel!.setLayout(childActionScriptConditionJPanelLayout);
     
@@ -168,8 +168,7 @@ this.removeJPanel!.setLayout(new java.awt.GridLayout(1, 1));
 this.removeJPanel!.setMinimumSize(new java.awt.Dimension(30, 20));
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -180,15 +179,15 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 }
 
 
-    private childActionScriptConditionJPanel: javax.swing.JPanel
+    private childActionScriptConditionJPanel: javax.swing.JPanel;
 
-    private newActionScriptConditionJPanel: javax.swing.JPanel
+    private newActionScriptConditionJPanel: javax.swing.JPanel;
 
-    private newActionScriptInputJPanel: javax.swing.JPanel
+    private newActionScriptInputJPanel: javax.swing.JPanel;
 
-    private removeJPanel: javax.swing.JPanel
+    private removeJPanel: javax.swing.JPanel;
 
-    private scriptItemJPanel: javax.swing.JPanel
+    private scriptItemJPanel: javax.swing.JPanel;
 
 }
                 

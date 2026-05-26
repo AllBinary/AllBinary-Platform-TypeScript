@@ -46,11 +46,11 @@ export class SimpleWeaponProperties
          {
         
 
-    private damage: number= 0
+    private damage: number= 0;
 
-    private dissipation: number= 0
+    private dissipation: number= 0;
 
-    private range: number= 0
+    private range: number= 0;
 
     public set(simpleWeaponProperties: SimpleWeaponProperties){
 this.setDamage(simpleWeaponProperties!.getDamage());

@@ -62,8 +62,7 @@ export class BaseCircularPool
 
     public getNextInstance(): any{
 
-    var anyType: any = this.OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;
-;
+    var anyType: any = this.OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;;
     
 this.circularIndexUtil!.next();
     
@@ -80,16 +79,14 @@ this.circularIndexUtil!.next();
 this.circularIndexUtil!.setIndex(0);
     
 
-    var size: number = this.circularIndexUtil!.getSize()!;
-;
+    var size: number = this.circularIndexUtil!.getSize()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
     

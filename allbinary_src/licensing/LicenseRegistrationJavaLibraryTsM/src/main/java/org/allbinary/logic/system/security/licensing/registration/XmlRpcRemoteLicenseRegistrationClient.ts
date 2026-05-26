@@ -75,6 +75,7 @@ export class XmlRpcRemoteLicenseRegistrationClient extends XmlRpcAbeClient {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly PAGE: string = "licenseregistrationserverssl.php";
+
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "LicenseRegistrationServer.process");
                     
@@ -92,12 +93,10 @@ this.setServer(0);
 
         try {
             
-    var server: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-;
+    var server: string = getClientInfo()!.getLicenseServer(this.getServer())!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(TRYING);
     
@@ -110,22 +109,18 @@ stringBuffer!.append(server);
 this.logUtil!.putF(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, this.commonStrings!.GET);
     
 
-    var param: Vector = new Vector();
-;
+    var param: Vector = new Vector();;
     
 
-    var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-;
+    var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;;
     
 
-    var index: number = serverUrl!.lastIndexOf("/")!;
-;
+    var index: number = serverUrl!.lastIndexOf("/")!;;
     
 serverUrl= serverUrl!.substring(0, index +1) +this.PAGE;
     
 
-    var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);
-;
+    var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);;
     
 this.setClient(xmlRpcClient);
     
@@ -134,16 +129,14 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
-;
+    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, this.commonStrings!.GET);
     
 param.add(hashtable);
     
 
-    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
-;
+    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;;
     
 this.logUtil!.putF(RESULT +result.toString(), this, this.commonStrings!.GET);
     

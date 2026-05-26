@@ -66,7 +66,8 @@ export class OrderHistoryTag extends StoreValidationTransformTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private status: string
+    private status: string;
+
 public constructor (){
 
             super();
@@ -85,22 +86,18 @@ this.status= value;
 
         try {
             
-    var anyType: any = new OrderHistoryHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = new OrderHistoryHelperFactory().getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("setOrderStatus", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -123,8 +120,7 @@ this.status= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to view order table";
-;
+    var error: string = "Failed to view order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

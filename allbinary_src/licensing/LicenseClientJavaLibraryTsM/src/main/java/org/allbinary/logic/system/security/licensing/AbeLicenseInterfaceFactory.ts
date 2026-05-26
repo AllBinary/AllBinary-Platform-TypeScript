@@ -88,6 +88,7 @@ export class AbeLicenseInterfaceFactory
     private abeLicenseInterface: AbeLicenseInterface = 
                 null
             ;
+
 private constructor (){
 
             super();
@@ -133,8 +134,7 @@ private constructor (){
 this.abeLicenseInterface= AbeNoLicense.getInstance();
     
 
-    var licenseClient: AbeLicenseClient = new AbeLicenseClient();
-;
+    var licenseClient: AbeLicenseClient = new AbeLicenseClient();;
     
 this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
     
@@ -185,12 +185,10 @@ this.logUtil!.put("Licensing Failure", this, this.commonStrings!.GET, e);
 
     isTimeToGetKey(): boolean{
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var currentTime: number = calendar.getTimeInMillis()!;
-;
+    var currentTime: number = calendar.getTimeInMillis()!;;
     
 
                         if(this.abeLicenseInterface == 

@@ -48,6 +48,7 @@ import { CacheableInterface } from './CacheableInterface.js';
 
 export class BasicArrayListResetablePool extends AbstractArrayListPool {
         
+
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
             super(cacheableInterfaceFactoryInterface);
                     
@@ -65,8 +66,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
             
     public remove(key: any = {}): CacheableInterface{
 
-    var size: number = this.buffers.size()!;
-;
+    var size: number = this.buffers.size()!;;
     
 
                         if(size > 0)

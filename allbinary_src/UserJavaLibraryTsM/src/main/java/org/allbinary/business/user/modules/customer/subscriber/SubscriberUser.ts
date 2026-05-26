@@ -54,7 +54,8 @@ import { WeblisketSessionInterface } from '../../../../../../../org/allbinary/lo
 export class SubscriberUser extends User {
         
 
-    private subscription: Subscription
+    private subscription: Subscription;
+
 public constructor (){
             super();
                     
@@ -64,6 +65,7 @@ public constructor (){
 this.subscription= new Subscription();
     
 }
+
 
 public constructor (userHashMap: HashMap<any, any>){
             super(userHashMap);

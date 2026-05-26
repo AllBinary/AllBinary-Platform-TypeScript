@@ -113,39 +113,41 @@ export class LinuxHardware
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private componentInterfaceVector: Vector
+    private componentInterfaceVector: Vector;
 
-    private videoInterfaceVector: Vector
+    private videoInterfaceVector: Vector;
 
-    private hardDriveControllerInterfaceVector: Vector
+    private hardDriveControllerInterfaceVector: Vector;
 
-    private cpuInterfaceVector: Vector
+    private cpuInterfaceVector: Vector;
 
-    private usbInterfaceVector: Vector
+    private usbInterfaceVector: Vector;
 
-    private ethernetInterfaceVector: Vector
+    private ethernetInterfaceVector: Vector;
 
-    private multimediaInterfaceVector: Vector
+    private multimediaInterfaceVector: Vector;
 
-    private fireWireInterfaceVector: Vector
+    private fireWireInterfaceVector: Vector;
 
-    private bridgeInterfaceVector: Vector
+    private bridgeInterfaceVector: Vector;
 
-    private hardDriveInterfaceVector: Vector
+    private hardDriveInterfaceVector: Vector;
 
-    private macInterfaceVector: Vector
+    private macInterfaceVector: Vector;
 
-    private monitorInterfaceVector: Vector
+    private monitorInterfaceVector: Vector;
 
     private readonly NAME: string = "Linux Hardware Profile";
 
     private readonly MINHARDWARE: number = 5;
+
 public constructor (path: string){
 
             super();
         this.init(path);
     
 }
+
 
 public constructor (){
 
@@ -165,8 +167,7 @@ public constructor (){
                                     }
                                 
 
-    var cpu: Cpu = new Cpu();
-;
+    var cpu: Cpu = new Cpu();;
     
 
                         if(cpu != 
@@ -199,8 +200,7 @@ this.componentInterfaceVector!.add(cpu);
 
     var lineNumberReader: LineNumberReader = 
                 null
-            ;
-;
+            ;;
     
 
         try {
@@ -259,8 +259,7 @@ this.macInterfaceVector= new Vector();
 this.monitorInterfaceVector= new Vector();
     
 
-    var pciFile: FileReader = new FileReader(filePath);
-;
+    var pciFile: FileReader = new FileReader(filePath);;
     
 lineNumberReader= new LineNumberReader(pciFile);
     
@@ -271,16 +270,14 @@ lineNumberReader= new LineNumberReader(pciFile);
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;
-;
+    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;;
     
 
                         if(!fileVector!.isEmpty())
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0) as AbFile;
-;
+    var file: AbFile = fileVector!.get(0) as AbFile;;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
     
@@ -320,8 +317,7 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                                     }
                                 
 
-    var nextLine: string = lineNumberReader!.readLine()!;
-;
+    var nextLine: string = lineNumberReader!.readLine()!;;
     
 
         while(lineNumberReader != 
@@ -348,8 +344,7 @@ nextLine= lineNumberReader!.readLine();
         while(this.isNextHardware(nextLine))
         {
 
-    var componentData: StringMaker = new StringMaker();
-;
+    var componentData: StringMaker = new StringMaker();;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
@@ -367,8 +362,7 @@ componentData!.append(CommonSeps.getInstance()!.NEW_LINE);
 nextLine= lineNumberReader!.readLine();
     
 
-    var componentType: string = PCComponentFactory.getInstance()!.java.componentType!;
-;
+    var componentType: string = PCComponentFactory.getInstance()!.java.componentType!;;
     
 
         while(lineNumberReader != 
@@ -396,8 +390,7 @@ nextLine= lineNumberReader!.readLine();
 }
 
 
-    var componentInterface: HardwareComponentInterface = PCComponentFactory.getInstance()!.getInstance(componentType, componentData!.toString())!;
-;
+    var componentInterface: HardwareComponentInterface = PCComponentFactory.getInstance()!.getInstance(componentType, componentData!.toString())!;;
     
 
                         if(componentInterface != 
@@ -565,24 +558,20 @@ lineNumberReader!.close();
 
     public toString(): string{
 
-    var hardwareBuffer: StringMaker = new StringMaker();
-;
+    var hardwareBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.componentInterfaceVector!.length!;
-;
+    var size: number = this.componentInterfaceVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;
-;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
     
 hardwareBuffer!.append("Component ");
     
@@ -633,8 +622,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
                         
                                     {
                                     
-    var index: number = nextLine!.indexOf("Bus")!;
-;
+    var index: number = nextLine!.indexOf("Bus")!;;
     
 
                         if(index >= 0 && index < 4)

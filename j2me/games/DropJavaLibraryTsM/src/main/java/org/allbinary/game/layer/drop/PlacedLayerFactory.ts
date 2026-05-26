@@ -53,6 +53,7 @@ export class PlacedLayerFactory
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();

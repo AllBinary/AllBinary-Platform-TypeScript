@@ -87,13 +87,15 @@ export class Cpu
 
     private readonly CPUFILE: string = "/proc/cpuinfo";
 
-    private cpuHashMap: HashMap<any, any>
+    private cpuHashMap: HashMap<any, any>;
+
 public constructor (filePath: string){
 
             super();
         this.init(filePath);
     
 }
+
 
 public constructor (){
 
@@ -109,8 +111,7 @@ public constructor (){
 
     var lineNumberReader: LineNumberReader = 
                 null
-            ;
-;
+            ;;
     
 
         try {
@@ -145,8 +146,7 @@ public constructor (){
 
         try {
             
-    var fileReader: FileReader = new FileReader(filePath);
-;
+    var fileReader: FileReader = new FileReader(filePath);;
     
 lineNumberReader= new LineNumberReader(fileReader);
     
@@ -159,8 +159,7 @@ this.cpuHashMap= new HashMap<any, any>();
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;
-;
+    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))
@@ -176,8 +175,7 @@ this.cpuHashMap= new HashMap<any, any>();
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0) as AbFile;
-;
+    var file: AbFile = fileVector!.get(0) as AbFile;;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
     
@@ -194,8 +192,7 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                         
                                     {
                                     
-    var nextLine: string = lineNumberReader!.readLine()!;
-;
+    var nextLine: string = lineNumberReader!.readLine()!;;
     
 
         while(lineNumberReader != 
@@ -205,24 +202,20 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                                 )
         {
 
-    var index: number = nextLine!.indexOf(':')!;
-;
+    var index: number = nextLine!.indexOf(':')!;;
     
 
                         if(index >= 0)
                         
                                     {
                                     
-    var key: string = nextLine!.substring(0, index)!;
-;
+    var key: string = nextLine!.substring(0, index)!;;
     
 
-    var valueIndex: number = index +1;
-;
+    var valueIndex: number = index +1;;
     
 
-    var value: string = nextLine!.substring(valueIndex, nextLine!.length)!;
-;
+    var value: string = nextLine!.substring(valueIndex, nextLine!.length)!;;
     
 
                         if(key.indexOf(CpuInfo.PROCESSOR.toString()) >= 0)
@@ -373,16 +366,13 @@ nextLine= lineNumberReader!.readLine();
 
     public toString(): string{
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 stringMaker!.append(CpuInfo.PROCESSOR.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getProcessor());
     

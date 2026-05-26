@@ -114,6 +114,7 @@ export class RectangleCollisionUtil
                             
 }
 
+
 private constructor (){
 
             super();

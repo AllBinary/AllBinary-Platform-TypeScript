@@ -50,7 +50,8 @@ export class Bridge
          implements HardwareComponentInterface, BridgeInterface {
         
 
-    private data: string
+    private data: string;
+
 public constructor (data: string){
 
             super();

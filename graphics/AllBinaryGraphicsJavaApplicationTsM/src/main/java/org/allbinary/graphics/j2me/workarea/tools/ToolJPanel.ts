@@ -52,6 +52,7 @@ import { ToolFactory } from './ToolFactory.js';
 
 export class ToolJPanel extends javax.swing.JPanel {
         
+
 public constructor (){
 
             super();
@@ -476,41 +477,41 @@ ToolFactory.getInstance()!.setSelectedTool(this.lineJButton!.getText());
 }
 
 
-    private arcJButton: javax.swing.JButton
+    private arcJButton: javax.swing.JButton;
 
-    private charJButton: javax.swing.JButton
+    private charJButton: javax.swing.JButton;
 
-    private colorJList: javax.swing.JList
+    private colorJList: javax.swing.JList;
 
-    private colorJPanel: javax.swing.JPanel
+    private colorJPanel: javax.swing.JPanel;
 
-    private dottedArcJButton: javax.swing.JButton
+    private dottedArcJButton: javax.swing.JButton;
 
-    private dottedFillArcJButton: javax.swing.JButton
+    private dottedFillArcJButton: javax.swing.JButton;
 
-    private dottedFillRectJButton: javax.swing.JButton
+    private dottedFillRectJButton: javax.swing.JButton;
 
-    private dottedFillRountRectJButton: javax.swing.JButton
+    private dottedFillRountRectJButton: javax.swing.JButton;
 
-    private dottedLineJButton: javax.swing.JButton
+    private dottedLineJButton: javax.swing.JButton;
 
-    private dottedRectButton: javax.swing.JButton
+    private dottedRectButton: javax.swing.JButton;
 
-    private fillArcJButton: javax.swing.JButton
+    private fillArcJButton: javax.swing.JButton;
 
-    private fillRectJButton: javax.swing.JButton
+    private fillRectJButton: javax.swing.JButton;
 
-    private fillRoundRectJButton: javax.swing.JButton
+    private fillRoundRectJButton: javax.swing.JButton;
 
-    private imageJButton: javax.swing.JButton
+    private imageJButton: javax.swing.JButton;
 
-    private lineJButton: javax.swing.JButton
+    private lineJButton: javax.swing.JButton;
 
-    private rectJButton: javax.swing.JButton
+    private rectJButton: javax.swing.JButton;
 
-    private roundRectJButton: javax.swing.JButton
+    private roundRectJButton: javax.swing.JButton;
 
-    private stringJButton: javax.swing.JButton
+    private stringJButton: javax.swing.JButton;
 
 }
                 

@@ -48,6 +48,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 
 export class SourceCollisionHelper extends CollisionHelper {
         
+
 public constructor (layerInterface: AllBinaryLayer){
             super(layerInterface);
                     

@@ -59,6 +59,7 @@ import { ThemeComparator } from './ThemeComparator.js';
 
 export class StoreThemeCategoryView extends CategoryView implements DomNodeInterface {
         
+
 public constructor (categoryInterface: StoreThemeCategoryInterface){
             super(categoryInterface as StoreThemeCategoryInterface);
                     
@@ -72,35 +73,29 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;
-;
+    var node: Node = super.toXmlNode(document)!;;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface() as StoreThemeCategoryInterface;
-;
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface() as StoreThemeCategoryInterface;;
     
 
-    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray() as ThemeValidation[];
-;
+    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray() as ThemeValidation[];;
     
 Arrays.sort(themeValidationArray, new ThemeComparator());
     
 
     var size: number = themeValidationArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var themeValidation: ThemeValidation = themeValidationArray[index]! as ThemeValidation;
-;
+    var themeValidation: ThemeValidation = themeValidationArray[index]! as ThemeValidation;;
     
 node.appendChild(themeValidation!.toXmlNode(document));
     

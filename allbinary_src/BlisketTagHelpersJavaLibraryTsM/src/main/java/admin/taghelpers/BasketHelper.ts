@@ -65,15 +65,16 @@ export class BasketHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
 
-    private pageContext: PageContext
+    private pageContext: PageContext;
 
     private readonly MAX: number = 200;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -82,8 +83,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 this.pageContext= pageContext;
     
 
-    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -105,8 +105,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 
         try {
             
-    var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
-;
+    var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;;
     
 
                         if(basket.getNumberOfItems()!.intValue() <= 0)

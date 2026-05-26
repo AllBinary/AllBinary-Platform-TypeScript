@@ -100,7 +100,6 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
                                 {
                                 
     private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
-
     public paint(graphics: Graphics){
 AllBinaryGameLayer.prototype.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
     
@@ -115,6 +114,7 @@ AllBinaryGameLayer.prototype.basicSetColorUtil!.setBasicColorP(graphics, this.BL
     ;
 
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
+
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(name, layerInfo, viewPosition);
                     
@@ -214,16 +214,13 @@ this.paintable.paint(graphics);
 
     public paintDebug(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;
-;
+    var viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;
-;
+    var viewY: number = viewPosition!.getY()!;;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, this.RED);
     

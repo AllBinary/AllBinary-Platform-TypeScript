@@ -70,7 +70,8 @@ export class PageValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private title: TitleValidation
+    private title: TitleValidation;
+
 public constructor (){
 
             super();
@@ -78,16 +79,17 @@ public constructor (){
     
 }
 
+
 public constructor (document: Document){
 
             super();
         
-    var node: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, document.getElementsByTagName(PageData.getInstance()!.NAME))!;
-;
+    var node: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, document.getElementsByTagName(PageData.getInstance()!.NAME))!;;
     
 this.title= new TitleValidation(node);
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -107,8 +109,7 @@ this.title= new TitleValidation(hashMap);
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -171,8 +172,7 @@ this.title= new TitleValidation(hashMap);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.title.isValid().valueOf())
@@ -237,8 +237,7 @@ this.title= new TitleValidation(hashMap);
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(PageData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(PageData.getInstance()!.NAME)!;;
     
 node.appendChild(this.title.toXmlNode(document));
     

@@ -66,9 +66,10 @@ export class ImageArrayAnimationFactory
 
     private dy: number = 0;
 
-    private readonly imageArray: Image[]
+    private readonly imageArray: Image[];
 
-    private readonly animationBehaviorFactory: AnimationBehaviorFactory
+    private readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (imageArray: Image[], dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();

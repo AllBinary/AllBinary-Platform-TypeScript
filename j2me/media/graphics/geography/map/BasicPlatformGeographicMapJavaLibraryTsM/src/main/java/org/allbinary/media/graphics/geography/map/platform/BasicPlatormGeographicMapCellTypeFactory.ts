@@ -61,19 +61,19 @@ export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellT
 
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
-    public readonly BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType
+    public readonly BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType;
 
-    public readonly JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType
+    public readonly JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType;
 
-    public readonly LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType
+    public readonly LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType;
 
-    private readonly maxTileId: number
+    private readonly maxTileId: number;
+
 public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
@@ -82,44 +82,34 @@ this.maxTileId= maxTileId;
 new GeographicMapCellType(0, 0);
     
 
-    var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = BasicPlatormGeographicMapCellType.createType(1)!;
-;
+    var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = BasicPlatormGeographicMapCellType.createType(1)!;;
     
 
-    var JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;
-;
+    var JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;
-;
+    var LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;;
     
 
-    var PLATFORM: string = "Platform";
-;
+    var PLATFORM: string = "Platform";;
     
 
-    var JUMP_TRHU: string = "JumpThru";
-;
+    var JUMP_TRHU: string = "JumpThru";;
     
 
-    var LADDER: string = "Ladder";
-;
+    var LADDER: string = "Ladder";;
     
 
-    var enumeration: Enumeration<any> = tileTypeToTileIdsMap!.keys()!;
-;
+    var enumeration: Enumeration<any> = tileTypeToTileIdsMap!.keys()!;;
     
 
-    var idsWithTypeList: BasicArrayList
-;
+    var idsWithTypeList: BasicArrayList;;
     
 
-    var key: string
-;
+    var key: string;;
     
 
-    var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType
-;
+    var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType;;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))

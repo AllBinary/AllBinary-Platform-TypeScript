@@ -53,6 +53,7 @@ import { GenericProfileActionScriptOutputData } from './GenericProfileActionScri
 
 export class BasicProfileActionScriptOutput extends BasicProfileActionScriptProcessor implements ProfileActionScriptOutputInterface {
         
+
 public constructor (label: string, node: Node){
             super(label, node);
                     
@@ -60,6 +61,7 @@ public constructor (label: string, node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (label: string){
             super(label);
@@ -74,8 +76,7 @@ public constructor (label: string){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfileActionScriptOutputData.NAME)!;
-;
+    var node: Node = document.createElement(GenericProfileActionScriptOutputData.NAME)!;;
     
 
 

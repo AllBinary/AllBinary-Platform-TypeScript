@@ -49,6 +49,7 @@ export class BasicTouchButtonCellPositionFactory
     public static init(){
 }
 
+
 private constructor (){
 
             super();

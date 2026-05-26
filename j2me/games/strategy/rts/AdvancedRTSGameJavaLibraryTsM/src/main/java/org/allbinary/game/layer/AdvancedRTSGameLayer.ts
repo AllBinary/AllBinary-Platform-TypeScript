@@ -146,12 +146,10 @@ export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventList
             
     public static createSimulated(): AdvancedRTSGameLayer{
 
-    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;
-;
+    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;;
     
 
-    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;
-;
+    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;;
     
 
 
@@ -162,15 +160,16 @@ export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventList
 }
 
 
-    readonly shakeListener: ShakeAnimationListener
+    readonly shakeListener: ShakeAnimationListener;
 
-    readonly vibration: AllBinaryVibrationME
+    readonly vibration: AllBinaryVibrationME;
 
-    readonly duration: number
+    readonly duration: number;
 
     private parentLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
 
     waypointBehaviorBase: TickableInterface = NullTickable.getInstance()!;
+
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
             super(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition);
                     
@@ -204,8 +203,7 @@ this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.all
 
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
-;
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;;
     
 
                         if(advancedRTSPlayerLayerInterface!.isLocalPlayer() || advancedRTSPlayerLayerInterface!.getGameType() == GameTypeFactory.getInstance()!.BOT)
@@ -328,8 +326,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
                         
                                     {
                                     
-    var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;
-;
+    var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;;
     
 
                         if(parentAdvancedRTSGameLayer!.getType() != UnitLayer.getStaticType())
@@ -383,24 +380,19 @@ this.waypointBehaviorBase= unitWaypointHelper;
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;;
     
 
-    var buildingDirection: Direction = GeographicMapDirectionUtil.getInstance()!.getDirectionFromCellPositionToAdjacentCellPosition(geographicMapCellPosition, cellPosition)!;
-;
+    var buildingDirection: Direction = GeographicMapDirectionUtil.getInstance()!.getDirectionFromCellPositionToAdjacentCellPosition(geographicMapCellPosition, cellPosition)!;;
     
 
-    var angleInfo: AngleInfo = this.getRotationAnimationInterface()!.getAngleInfoP()!;
-;
+    var angleInfo: AngleInfo = this.getRotationAnimationInterface()!.getAngleInfoP()!;;
     
 
-    var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() +90)!;
-;
+    var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() +90)!;;
     
 
-    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-;
+    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
     
 
                         if(buildingDirection == DirectionFactory.getInstance()!.UP)
@@ -641,12 +633,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
     
@@ -699,8 +689,7 @@ this.waypointRunnableLogHelperP= WaypointRunnableLogHelper.getInstance();
 
         try {
             
-    var layerInterface: AllBinaryLayer = destroyedEvent!.getLayerInterface()!;
-;
+    var layerInterface: AllBinaryLayer = destroyedEvent!.getLayerInterface()!;;
     
 
                         if(layerInterface == this)
@@ -709,8 +698,7 @@ this.waypointRunnableLogHelperP= WaypointRunnableLogHelper.getInstance();
                                     DestroyedEventHandler.getInstance()!.removeListener(this);
     
 
-    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint() as WaypointBase;
-;
+    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint() as WaypointBase;;
     
 waypoint.reset();
     

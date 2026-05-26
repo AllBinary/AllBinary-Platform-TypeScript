@@ -73,12 +73,10 @@ export class BasicArrayListUtil
 
     public static main(args: string[]){
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-;
+    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 list.add(commonPhoneStrings!.ONE);
     
@@ -114,8 +112,7 @@ console.log(list.toString());
 
     public getRandom(list: BasicArrayList): any{
 
-    var i_random: number = this.getRandomIndex(list)!;
-;
+    var i_random: number = this.getRandomIndex(list)!;;
     
 
 
@@ -138,28 +135,23 @@ console.log(list.toString());
 
     public reverse(list: BasicArrayList){
 
-    var lastMinusOneIndex: number = list.size() -2;
-;
+    var lastMinusOneIndex: number = list.size() -2;;
     
 
-    var temp: any
-;
+    var temp: any;;
     
 
-    var size: number = lastMinusOneIndex /2;
-;
+    var size: number = lastMinusOneIndex /2;;
     
 
-    var secondSwapIndex: number= 0
-;
+    var secondSwapIndex: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index <= size; index++)
+    var index: number = 0;index <= size; index++)
         {
 secondSwapIndex= lastMinusOneIndex -index;
     
@@ -176,16 +168,13 @@ list.addAt(secondSwapIndex +1, temp);
 
     public log(list: BasicArrayList): string{
 
-    var S_LABEL: string = " s: ";
-;
+    var S_LABEL: string = " s: ";;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL);
     
@@ -196,12 +185,10 @@ stringBuffer!.appendint(size);
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 
-    var usedList: BasicArrayList = list.objectArray[index]! as BasicArrayList;
-;
+    var usedList: BasicArrayList = list.objectArray[index]! as BasicArrayList;;
     
 stringBuffer!.append(S_LABEL);
     

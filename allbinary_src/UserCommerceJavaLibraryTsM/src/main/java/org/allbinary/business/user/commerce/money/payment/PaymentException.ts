@@ -45,6 +45,7 @@
         
 export class PaymentException extends Exception {
         
+
 public constructor (error: string){
             super(error);
                     

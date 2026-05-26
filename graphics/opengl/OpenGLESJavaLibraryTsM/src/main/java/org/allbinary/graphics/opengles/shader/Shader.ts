@@ -48,13 +48,13 @@ export class Shader
          {
         
 
-    public shaderName: string
+    public shaderName: string;
 
-    public shaderStringList: BasicArrayList
+    public shaderStringList: BasicArrayList;
 
-    public shaderAsString: string
+    public shaderAsString: string;
 
-    public shaderHandle: number= 0
+    public shaderHandle: number= 0;
 
 }
                 

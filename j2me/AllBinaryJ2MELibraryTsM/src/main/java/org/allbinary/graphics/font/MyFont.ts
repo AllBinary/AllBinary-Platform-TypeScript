@@ -69,6 +69,7 @@ export class MyFont
     public DEFAULT_CHAR_HEIGHT: number = this.defaultFont!.getHeight()!;
 
     private DEFAULT_CHAR_WIDTH: number = this.defaultFont!.charWidth('C')!;
+
 private constructor (){
 
             super();
@@ -155,8 +156,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
 

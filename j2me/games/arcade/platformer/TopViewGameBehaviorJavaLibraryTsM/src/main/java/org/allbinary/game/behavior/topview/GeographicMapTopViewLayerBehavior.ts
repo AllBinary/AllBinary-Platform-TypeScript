@@ -60,6 +60,7 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
 
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {
         
+
 public constructor (maxGravityActionIndex: number){
             super(maxGravityActionIndex);
                     
@@ -144,20 +145,17 @@ public constructor (maxGravityActionIndex: number){
     public hasSolidBlock(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[]): boolean{
 
     var size: number = geographicMapInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var basicTopViewGeographicMapCellTypeFactory: BasicTopViewGeographicMapCellTypeFactory
-;
+    var basicTopViewGeographicMapCellTypeFactory: BasicTopViewGeographicMapCellTypeFactory;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory() as BasicTopViewGeographicMapCellTypeFactory;
     
@@ -188,20 +186,17 @@ basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.ge
     public isOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[]): boolean{
 
     var size: number = geographicMapInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var basicTopViewGeographicMapCellTypeFactory: BasicTopViewGeographicMapCellTypeFactory
-;
+    var basicTopViewGeographicMapCellTypeFactory: BasicTopViewGeographicMapCellTypeFactory;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory() as BasicTopViewGeographicMapCellTypeFactory;
     

@@ -53,29 +53,30 @@ export class DbConnectionInfo
          implements DatabaseConnectionInfoInterface {
         
 
-    private jdbcDriver: string
+    private jdbcDriver: string;
 
-    private name: string
+    private name: string;
 
-    private userName: string
+    private userName: string;
 
-    private password: string
+    private password: string;
 
-    private schema: string
+    private schema: string;
 
-    private server: string
+    private server: string;
 
-    private port: string
+    private port: string;
 
-    private url: string
+    private url: string;
 
-    private host: string
+    private host: string;
 
     private readonly SCHEMA_SEP: string = "://";
 
     private readonly USER_NAME_KEY: string = "?user=";
 
     private readonly PASSWORD_KEY: string = "&password=";
+
 public constructor (){
 
             super();
@@ -86,8 +87,7 @@ public constructor (){
 this.updateHost();
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getHost());
     
@@ -158,8 +158,7 @@ this.url= stringBuffer!.toString();
 
     updateHost(){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getSchema());
     

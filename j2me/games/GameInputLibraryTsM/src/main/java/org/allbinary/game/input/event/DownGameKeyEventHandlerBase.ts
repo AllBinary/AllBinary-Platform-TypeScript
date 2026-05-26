@@ -69,6 +69,7 @@ export class DownGameKeyEventHandlerBase extends BasicEventHandler {
     private static readonly LISTENER_LABEL: string = " PlayerGameInput Listener: ";
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
  constructor (){
 
             super();
@@ -121,14 +122,12 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
-;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;;
     
 playerGameInput!.onDownGameKeyEvent(eventObject as GameKeyEvent);
     
@@ -151,8 +150,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface = eventListenerInterface as DownGameKeyEventListenerInterface;
-;
+    var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface = eventListenerInterface as DownGameKeyEventListenerInterface;;
     
 downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEvent);
     
@@ -161,8 +159,7 @@ downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEven
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
@@ -171,16 +168,13 @@ stringBuffer!.append(DownGameKeyEventHandlerBase.TOTAL_LISTENERS);
 stringBuffer!.appendint(this.list.size());
     
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < size)

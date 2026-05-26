@@ -53,9 +53,10 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
 export class AdjustedLeftToRightImageAnimation extends LeftToRightImageAnimation {
         
 
-    private dx: number= 0
+    private dx: number= 0;
 
-    private dy: number= 0
+    private dy: number= 0;
+
 public constructor (image: Image, sequenceArray: number[], dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(image, sequenceArray, animationBehavior);
                     

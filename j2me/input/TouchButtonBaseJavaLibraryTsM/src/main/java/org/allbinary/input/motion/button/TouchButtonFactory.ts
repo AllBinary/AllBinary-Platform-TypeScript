@@ -69,6 +69,7 @@ export class TouchButtonFactory
     private list: BasicArrayList = this.LIST;
 
     private savedList: BasicArrayList = this.LIST;
+
 private constructor (){
 
             super();

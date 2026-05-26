@@ -52,8 +52,7 @@ import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js'
 
     /*actual*/ public static getInfo(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Memory: Free: ");
     

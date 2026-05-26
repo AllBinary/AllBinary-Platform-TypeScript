@@ -59,9 +59,10 @@ import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/Basi
 export class AdjustedSpriteIndexedAnimation extends SpriteIndexedAnimation {
         
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
+
 public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(sprite, image, basicColorArray, animationBehavior);
                     

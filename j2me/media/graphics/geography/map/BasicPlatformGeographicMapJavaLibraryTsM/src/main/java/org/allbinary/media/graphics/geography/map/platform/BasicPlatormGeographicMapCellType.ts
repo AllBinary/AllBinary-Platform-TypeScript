@@ -56,14 +56,12 @@ export class BasicPlatormGeographicMapCellType
 
     public static createType(type: number): BasicPlatormGeographicMapCellType{
 
-    var types: BasicArrayList = new BasicArrayListS(1);
-;
+    var types: BasicArrayList = new BasicArrayListS(1);;
     
 types.add(type.toString());
     
 
-    var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);
-;
+    var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);;
     
 new GeographicMapCellType(type, 0);
     
@@ -76,33 +74,29 @@ new GeographicMapCellType(type, 0);
 }
 
 
-    private readonly types: number[]
+    private readonly types: number[];
+
 public constructor (types: BasicArrayList){
 
             super();
         
-    var size: number = types.size()!;
-;
+    var size: number = types.size()!;;
     
 
-    var typeArray: number[] = new Array(size);
-;
+    var typeArray: number[] = new Array(size);;
     
 
-    var typeAsInteger: Integer
-;
+    var typeAsInteger: Integer;;
     
 
-    var type: number= 0
-;
+    var type: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 typeAsInteger= (types.get(index) as Integer);
     
@@ -132,16 +126,14 @@ this.types= typeArray;
     public hasType(type: number): boolean{
 
     var size: number = types.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(this.types[index] == type)

@@ -50,6 +50,7 @@ import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js'
 
 export class BasicArrayListS extends BasicArrayList {
         
+
 public constructor (size: number){
             super(NullUtil.getInstance()!.NULL_OBJECT_ARRAY);
                     

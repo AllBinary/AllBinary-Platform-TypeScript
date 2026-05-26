@@ -63,17 +63,17 @@ import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
 export class StoreFrontHelper extends TagHelper {
         
 
-    private readonly storeFrontInterface: StoreFrontInterface
+    private readonly storeFrontInterface: StoreFrontInterface;
 
-    private readonly currentLocation: string
+    private readonly currentLocation: string;
 
-    private readonly currentHomeLocation: string
+    private readonly currentHomeLocation: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -92,8 +92,7 @@ this.currentHomeLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").al
                                 
                         else {
                             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.storeFrontInterface= new StoreFront();
     

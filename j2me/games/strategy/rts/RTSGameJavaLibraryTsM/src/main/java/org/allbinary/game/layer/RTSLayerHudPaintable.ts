@@ -72,9 +72,10 @@ export class RTSLayerHudPaintable extends SelectionHudPaintable {
 
     private rtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
 
-    costY: number= 0
+    costY: number= 0;
 
-    costY1: number= 0
+    costY1: number= 0;
+
 private constructor (){
 
             super();
@@ -83,14 +84,12 @@ private constructor (){
 
     public updateSelectionInfo(){
 
-    var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
     
 this.setName(this.getRtsLayer()!.getName());
     
 
-    var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;
-;
+    var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;;
     
 this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
     
@@ -118,21 +117,18 @@ this.costY1= (this.y +((this.weaponProperties!.length +1) *charHeight));
 super.paint(graphics);
     
 
-    var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
     
 
     var size: number = this.weaponProperties!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 graphics.drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHeight), 0);
     

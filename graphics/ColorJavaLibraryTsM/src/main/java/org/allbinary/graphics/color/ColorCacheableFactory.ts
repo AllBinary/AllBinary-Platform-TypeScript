@@ -50,6 +50,7 @@ export class ColorCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {
         
+
 public constructor (){
 
             super();

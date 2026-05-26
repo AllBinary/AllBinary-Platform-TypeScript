@@ -90,11 +90,11 @@ export class FileLog
 
     private static logFile: File = new File(FileLog.logPath, FileLog.fileName);
 
-    private static logFileBak: File
+    private static logFileBak: File;
 
-    private static fileOut: BufferedWriter
+    private static fileOut: BufferedWriter;
 
-    private static backupIndex: number= 0
+    private static backupIndex: number= 0;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static createLogFile(): boolean{
@@ -115,8 +115,7 @@ export class FileLog
                             FileLog.firstTime= false;
     
 
-    var raFile: RandomAccessFile = new RandomAccessFile(logFile, "rw");
-;
+    var raFile: RandomAccessFile = new RandomAccessFile(logFile, "rw");;
     
 raFile!.seek(raFile!.length());
     
@@ -126,8 +125,7 @@ FileLog.fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
                         }
                             
 
-    var canWrite: boolean = FileLog.logFile!.canWrite()!;
-;
+    var canWrite: boolean = FileLog.logFile!.canWrite()!;;
     
 
 
@@ -157,8 +155,7 @@ console.log("Error Creating Log: " +e);
 
         try {
             
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 FileLog.logFileBak= new File(logPath, stringMaker!.append(backupFileName)!.append(CommonSeps.getInstance()!.PERIOD)!.appendint(backupIndex)!.toString());
     
@@ -174,16 +171,13 @@ FileLog.logFileBak= new File(logPath, stringMaker!.append(backupFileName)!.appen
 }
 
 
-    var line: string = .toCharArray();
-;
+    var line: string = .toCharArray();;
     
 
-    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(logFileBak));
-;
+    var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(logFileBak));;
     
 
-    var tmpIn: BufferedReader = new BufferedReader(new FileReader(logFile));
-;
+    var tmpIn: BufferedReader = new BufferedReader(new FileReader(logFile));;
     
 
         while((line= tmpIn!.readLine()) != 
@@ -266,8 +260,7 @@ console.log("Error Creating Backup: " +e);
                                     }
                                 
 
-    var length: number = FileLog.logFile!.length()!;
-;
+    var length: number = FileLog.logFile!.length()!;;
     
 
                         if(length > FileLog.logLength)
@@ -290,8 +283,7 @@ console.log("Error Creating Backup: " +e);
                                     }
                                 
 
-    var className: string = NULL_STRING.toCharArray();
-;
+    var className: string = NULL_STRING.toCharArray();;
     
 
                         if(functionName == 
@@ -309,8 +301,7 @@ console.log("Error Creating Backup: " +e);
                                 )
                         className= anyType!.constructor.name.toString()!
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 FileLog.fileOut!.write(message, 0, message.length);
     
@@ -378,8 +369,7 @@ FileLog.fileOut!.flush();
                                     }
                                 
 
-    var length: number = FileLog.logFile!.length()!;
-;
+    var length: number = FileLog.logFile!.length()!;;
     
 
                         if(length > FileLog.logLength)
@@ -412,8 +402,7 @@ FileLog.fileOut!.flush();
                                 )
                         specialMessage= NULL_STRING.toCharArray()
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 FileLog.fileOut!.write(message, 0, message.length);
     
@@ -450,6 +439,7 @@ FileLog.fileOut!.flush();
                         return FileLog.logPath +FileLog.fileName;
     
 }
+
 
 private constructor (){
 

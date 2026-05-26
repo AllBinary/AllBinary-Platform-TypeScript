@@ -61,9 +61,10 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {
         
 
-    private circularIndexUtil: CircularIndexUtil
+    private circularIndexUtil: CircularIndexUtil;
 
-    private animationInterfaceArray: Animation[]
+    private animationInterfaceArray: Animation[];
+
 public constructor (animationInterfaceArray: Animation[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -79,8 +80,7 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.animationInterface
 
     public setFrame(index: number){
 
-    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
-;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;;
     
 indexedAnimation!.setFrame(index);
     
@@ -89,8 +89,7 @@ indexedAnimation!.setFrame(index);
 
     public getFrame(): number{
 
-    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
-;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;;
     
 
 
@@ -103,8 +102,7 @@ indexedAnimation!.setFrame(index);
 
     public getSize(): number{
 
-    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
-;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;;
     
 
 
@@ -117,8 +115,7 @@ indexedAnimation!.setFrame(index);
 
     public previousFrame(){
 
-    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
-;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;;
     
 indexedAnimation!.previousFrame();
     
@@ -171,8 +168,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(gr
 
     public nextAnimation(){
 
-    var frame: number = this.getFrame()!;
-;
+    var frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.next();
     
@@ -183,8 +179,7 @@ this.setFrame(frame);
 
     public previousAnimation(){
 
-    var frame: number = this.getFrame()!;
-;
+    var frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.previous();
     
@@ -195,8 +190,7 @@ this.setFrame(frame);
 
     public setAnimation(index: number){
 
-    var frame: number = this.getFrame()!;
-;
+    var frame: number = this.getFrame()!;;
     
 this.circularIndexUtil!.setIndex(index);
     
@@ -230,8 +224,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);
     

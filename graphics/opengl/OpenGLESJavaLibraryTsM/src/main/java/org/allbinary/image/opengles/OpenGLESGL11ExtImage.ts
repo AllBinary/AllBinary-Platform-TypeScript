@@ -71,9 +71,10 @@ export class OpenGLESGL11ExtImage extends OpenGLESImage {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private a: number= 0
+    private a: number= 0;
 
-    private readonly rectangle: number[]
+    private readonly rectangle: number[];
+
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image, bitmapFactory, textureFactory);
                     
@@ -83,7 +84,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 this.onDisplayChangeEvent(
                             null);
     
-this.rectangle= [0,this.getHeight(), this.getWidth(),  -this.getHeight();;];
+this.rectangle= [0,this.getHeight(), this.getWidth(),  -this.getHeight();];
     
 }
 
@@ -111,8 +112,7 @@ this.onDisplayChangeEvent(
                             null);
     
 
-    var gl11: GL11 = gl as GL11;
-;
+    var gl11: GL11 = gl as GL11;;
     
 
                         if(super.initTexture(gl11))

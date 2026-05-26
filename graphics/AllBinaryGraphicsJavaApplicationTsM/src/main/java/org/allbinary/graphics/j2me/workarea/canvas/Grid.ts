@@ -48,7 +48,7 @@ export class Grid
          {
         
 
-    public grid: GPoint
+    public grid: GPoint;
 
     public isGridOn: boolean = true;
 
@@ -57,10 +57,12 @@ export class Grid
     private zoom: number = 3;
 
     public isChanged: boolean = true;
+
 public constructor (){
 
             super();
         }
+
 
 public constructor (grid: Grid){
 

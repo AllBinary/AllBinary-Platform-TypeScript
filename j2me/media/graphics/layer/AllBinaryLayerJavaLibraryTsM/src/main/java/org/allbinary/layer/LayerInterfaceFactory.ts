@@ -97,18 +97,15 @@ this.list= new BasicArrayListD();
             
     public getNexInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(new StringMaker().append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var typeInteger: Integer = hashtable.get(Layer.ID) as Integer;
-;
+    var typeInteger: Integer = hashtable.get(Layer.ID) as Integer;;
     
 
-    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = this.list.objectArray[typeInteger!.intValue() -1]! as LayerInterfaceFactoryInterface;
-;
+    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = this.list.objectArray[typeInteger!.intValue() -1]! as LayerInterfaceFactoryInterface;;
     
 
 

@@ -63,6 +63,7 @@ export class FilePathData
     public readonly SEPARATORCHAR: string = File.separatorChar;
 
     public SEPARATOR: string = File.separator;
+
 private constructor (){
 
             super();

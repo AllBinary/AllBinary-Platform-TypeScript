@@ -46,15 +46,16 @@ export class ItemInfo
          {
         
 
-    type: string[]
+    type: string[];
 
-    view: string[]
+    view: string[];
 
-    data: string[]
+    data: string[];
 
-    creationDate: string[]
+    creationDate: string[];
 
-    lastModified: string[]
+    lastModified: string[];
+
 public constructor (){
 
             super();

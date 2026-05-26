@@ -47,6 +47,7 @@ import { InitUpdatePaintableInterface } from './InitUpdatePaintableInterface.js'
 
 export class InitUpdatePaintable extends Paintable implements InitUpdatePaintableInterface {
         
+
 protected constructor (){
 
             super();

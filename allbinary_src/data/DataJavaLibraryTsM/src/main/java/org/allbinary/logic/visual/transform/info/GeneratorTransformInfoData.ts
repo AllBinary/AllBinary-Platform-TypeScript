@@ -47,6 +47,7 @@ export class GeneratorTransformInfoData
         
 
     public static readonly NAME: string = "GENERATOR_TRANSFORM_INFO_NAME";
+
 private constructor (){
 
             super();

@@ -63,18 +63,15 @@ export class MouseInputAutomationProcessor
             
     public static process(mouseActionScriptInputInterface: MouseActionScriptInputInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(new StringMaker().append("Start - Processing Mouse Input at: ")!.append(mouseActionScriptInputInterface!.getPoint()!.toString())!.append(" clicks: ")!.appendint(mouseActionScriptInputInterface!.getButtonClicks())!.toString(), "MouseInputAutomationProcessor", commonStrings!.PROCESS);
     
 
-    var inputRobotInterface: InputRobotInterface = mouseActionScriptInputInterface!.getInputRobotInterface()!;
-;
+    var inputRobotInterface: InputRobotInterface = mouseActionScriptInputInterface!.getInputRobotInterface()!;;
     
 
                         if(mouseActionScriptInputInterface!.getPoint()!.x !=  -1 && mouseActionScriptInputInterface!.getPoint()!.y !=  -1)
@@ -103,6 +100,7 @@ inputRobotInterface!.mouseRelease(mouseActionScriptInputInterface!.getButtonClic
 Thread.sleep(mouseActionScriptInputInterface!.getTime());
     
 }
+
 
 private constructor (){
 

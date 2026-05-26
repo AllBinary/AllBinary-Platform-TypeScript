@@ -86,8 +86,7 @@ export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactor
 
     public getDamageFloaters(buildingLayer: BuildingLayer): DamageFloaters{
 
-    var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
-;
+    var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;;
     
 this.damageFloatersPaintableInterface= damageFloaters;
     

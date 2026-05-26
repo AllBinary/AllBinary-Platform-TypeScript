@@ -81,6 +81,7 @@ export class KeyValuePersistance extends BasicPersitance {
         
 
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
 protected constructor (recordId: string){
             super(recordId);
                     
@@ -102,55 +103,44 @@ this.loadAllSize(abeClientInformation, 1);
             
     public loadAllSize(abeClientInformation: AbeClientInformationInterface, size: number){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
             recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-;
+    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var hashtable: Hashtable<string, string>
-;
+    var hashtable: Hashtable<string, string>;;
     
 
-    var name: string
-;
+    var name: string;;
     
 
-    var value: string
-;
+    var value: string;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var recordAsBytes: number[]
-;
+    var recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream
-;
+    var byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream
-;
+    var inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;
-;
+    var id: number = recordEnum!.nextRecordId()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -175,8 +165,7 @@ hashtable= new Hashtable<string, string>();
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 name= inputStream!.readUTF();
     
@@ -232,8 +221,7 @@ recordStore!.closeRecordStore();
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
@@ -242,41 +230,33 @@ recordStore!.closeRecordStore();
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
-;
+    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 
-    var value: string
-;
+    var value: string;;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
-;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var anyType: any
-;
+    var anyType: any;;
     
 
     var size: number = objectArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 outputStream!.writeUTF(objectArray[index]! as string);
     
@@ -291,8 +271,7 @@ outputStream!.writeUTF(value);
 }
 
 
-    var savedGameBytes: number[] = byteArrayOutputStream!.toString()!.encodeToByteArray()!;
-;
+    var savedGameBytes: number[] = byteArrayOutputStream!.toString()!.encodeToByteArray()!;;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
     
@@ -329,8 +308,7 @@ recordStore!.closeRecordStore();
 
     public get(index: number): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = this.valueList!.objectArray[index]! as Hashtable<any, any>;
-;
+    var hashtable: Hashtable<any, any> = this.valueList!.objectArray[index]! as Hashtable<any, any>;;
     
 
 

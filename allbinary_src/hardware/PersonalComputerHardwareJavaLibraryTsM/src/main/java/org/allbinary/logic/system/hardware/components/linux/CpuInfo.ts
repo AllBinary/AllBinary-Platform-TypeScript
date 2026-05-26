@@ -82,7 +82,8 @@ export class CpuInfo
 
     public static readonly BOGOMIPS: CpuInfo = new CpuInfo("bogomips");
 
-    private name: string
+    private name: string;
+
 private constructor (name: string){
 
             super();

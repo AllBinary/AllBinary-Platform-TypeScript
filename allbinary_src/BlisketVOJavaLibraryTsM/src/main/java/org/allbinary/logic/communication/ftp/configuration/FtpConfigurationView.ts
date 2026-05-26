@@ -66,41 +66,38 @@ export class FtpConfigurationView
          implements DomNodeInterface {
         
 
-    private ftpConfigurationInterface: FtpConfigurationInterface
+    private ftpConfigurationInterface: FtpConfigurationInterface;
+
 public constructor (node: Node){
 
             super();
         this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
     
 
-    var chileNodeList: NodeList = node.getChildNodes()!;
-;
+    var chileNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var server: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.SERVER, chileNodeList)!;
-;
+    var server: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.SERVER, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setServer(server);
     
 
-    var userName: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.USERNAME, chileNodeList)!;
-;
+    var userName: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.USERNAME, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setUserName(userName);
     
 
-    var password: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PASSWORD, chileNodeList)!;
-;
+    var password: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PASSWORD, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setPassword(password);
     
 
-    var path: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PATH, chileNodeList)!;
-;
+    var path: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PATH, chileNodeList)!;;
     
 this.getFtpConfigurationInterface()!.setPath(path);
     
 }
+
 
 public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
@@ -114,16 +111,13 @@ public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var ftpConfigurationMapping: FtpConfigurationMapping = new FtpConfigurationMapping(this.getFtpConfigurationInterface());
-;
+    var ftpConfigurationMapping: FtpConfigurationMapping = new FtpConfigurationMapping(this.getFtpConfigurationInterface());;
     
 
-    var hashMap: HashMap<any, any> = ftpConfigurationMapping!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = ftpConfigurationMapping!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, FtpConfigurationData.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, FtpConfigurationData.NAME, hashMap)!;;
     
 
 

@@ -47,7 +47,8 @@ import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/Fo
 export class ImmutableBasicArrayList extends BasicArrayListS {
         
 
-    private readonly name: string
+    private readonly name: string;
+
 public constructor (name: string, size: number){
             super(size);
                     

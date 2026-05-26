@@ -78,8 +78,7 @@ export class SetLicenseInitInfo
             
     public static main(args: string[]){
 
-    var initInfo: SetLicenseInitInfo = new SetLicenseInitInfo(args);
-;
+    var initInfo: SetLicenseInitInfo = new SetLicenseInitInfo(args);;
     
 initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
     
@@ -87,6 +86,7 @@ initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
 
 
     private vector: BasicArrayList = new BasicArrayListD();
+
 public constructor (options: string[]){
 
             super();
@@ -97,8 +97,7 @@ public constructor (options: string[]){
 
 
                         for (
-    var index: number = 1;
-index < options.length; index++)
+    var index: number = 1;index < options.length; index++)
         {
 this.vector.add(options[index]!);
     
@@ -111,8 +110,7 @@ this.vector.add(options[index]!);
             
     public getLicenseInitInfo(): LicenseInitInfo{
 
-    var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
-;
+    var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;;
     
 
                         if(FileFactory.getInstance()!.isFile(licenseInitInfoUtil!.INITFILENAME))
@@ -158,31 +156,26 @@ this.vector.add(options[index]!);
                                     }
                                 
 
-    var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;
-;
+    var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;;
     
 console.log("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php");
     
 licenseInitInfo!.clearServers();
     
 
-    var file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");
-;
+    var file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");;
     
 
-    var reader: FileReader = new FileReader(file);
-;
+    var reader: FileReader = new FileReader(file);;
     
 
-    var lineNumberReader: LineNumberReader = new LineNumberReader(reader);
-;
+    var lineNumberReader: LineNumberReader = new LineNumberReader(reader);;
     
 
         while(true)
         {
 
-    var line: string = lineNumberReader!.readLine()!;
-;
+    var line: string = lineNumberReader!.readLine()!;;
     
 
                         if(line != 

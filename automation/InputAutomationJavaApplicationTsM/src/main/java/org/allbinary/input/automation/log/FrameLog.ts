@@ -70,11 +70,12 @@ export class FrameLog
 
     private static actions: number[] = .toCharArray().encodeToByteArray()!;
 
-    private readonly frame: Long
+    private readonly frame: Long;
 
     private infoStringBuffer: StringMaker = new StringMaker();
 
     private actionsStringBuffer: StringMaker = new StringMaker();
+
 public constructor (frame: Long){
 
             super();
@@ -91,16 +92,14 @@ this.infoStringBuffer!.append(infoString);
 
     public addActions(vectorOfStrings: Vector<string>){
 
-    var size: number = vectorOfStrings!.length!;
-;
+    var size: number = vectorOfStrings!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.addAction(vectorOfStrings!.get(index) as string);
     
@@ -121,8 +120,7 @@ this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
             
     public write(){
 
-    var filePathStringBuffer: StringMaker = new StringMaker();
-;
+    var filePathStringBuffer: StringMaker = new StringMaker();;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
     
@@ -131,12 +129,10 @@ filePathStringBuffer!.append(LongUtil.fillIn(this.frame.toString()));
 filePathStringBuffer!.append(".txt");
     
 
-    var filePath: string = filePathStringBuffer!.toString()!;
-;
+    var filePath: string = filePathStringBuffer!.toString()!;;
     
 
-    var fileOutputStream: FileOutputStream = new FileOutputStream(new File(filePath));
-;
+    var fileOutputStream: FileOutputStream = new FileOutputStream(new File(filePath));;
     
 fileOutputStream!.write(FrameLog.frameBytes);
     

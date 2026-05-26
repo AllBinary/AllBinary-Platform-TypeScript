@@ -77,6 +77,7 @@ export class AuthorizeNetSimData
     public static readonly X_COLOR_TEXT: string = "x_color_text";
 
     public static readonly X_RELAY_URL: string = "x_relay_url";
+
 private constructor (){
 
             super();

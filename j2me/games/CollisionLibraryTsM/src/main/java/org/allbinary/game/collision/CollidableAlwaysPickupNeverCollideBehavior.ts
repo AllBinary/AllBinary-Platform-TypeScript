@@ -48,6 +48,7 @@ import { CollisionType } from './CollisionType.js';
 
 export class CollidableAlwaysPickupNeverCollideBehavior extends CollidableNeverCollideBehavior {
         
+
  constructor (){
             super(true);
                     

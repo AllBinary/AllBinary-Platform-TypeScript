@@ -66,6 +66,7 @@ export class VectorBaseRotationAnimation extends RotationAnimation implements Ve
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
+
 public constructor (angleInfo: AngleInfo, currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
             super(angleInfo, CircularIndexUtil.createInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                     
@@ -149,33 +150,26 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColor);
 
         try {
             
-    var nextPointX: number = 0;
-;
+    var nextPointX: number = 0;;
     
 
-    var nextPointY: number = 0;
-;
+    var nextPointY: number = 0;;
     
 
-    var nextPoint: number[]
-;
+    var nextPoint: number[];;
     
 
-    var point: number[]
-;
+    var point: number[];;
     
 
-    var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;
-;
+    var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;;
     
 
     var size: number = currentPointsFrame!.length
-                ;
-;
+                ;;
     
 
-    var index: number = size -2;
-;
+    var index: number = size -2;;
     
 
         while(--index >= 0)

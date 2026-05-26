@@ -107,8 +107,7 @@ export class LicenseServerInitFileUtil
 
         try {
             
-    var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;
-;
+    var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;;
     
 LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -140,38 +139,31 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
     write(){
 
-    var fileOutputStream: OutputStream = this.NULL_OUTPUT_STREAM;
-;
+    var fileOutputStream: OutputStream = this.NULL_OUTPUT_STREAM;;
     
 
         try {
             
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-;
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;
-;
+    var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(filePath)!;
-;
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(filePath)!;;
     
 this.logUtil!.putF("Writing Default License File", this, this.commonStrings!.INIT);
     
 
-    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 fileOutputStream= fileStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath);
     
 
-    var b: number= 0
-;
+    var b: number= 0;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(true)

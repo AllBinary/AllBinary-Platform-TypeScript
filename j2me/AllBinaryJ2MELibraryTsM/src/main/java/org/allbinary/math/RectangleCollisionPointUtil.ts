@@ -53,20 +53,17 @@ export class RectangleCollisionPointUtil
 
     public static allPointsInside(rectX1: number, rectY1: number, rectX2: number, rectY2: number, list: BasicArrayList): boolean{
 
-    var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
-;
+    var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;;
     
 
-    var point: GPoint
-;
+    var point: GPoint;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;
---index >= 0; )
+    var index: number = list.size()!;--index >= 0; )
         {
 point= list.objectArray[index]! as GPoint;
     
@@ -96,20 +93,17 @@ point= list.objectArray[index]! as GPoint;
 
     public static allPointsInsideCell(rectX1: number, rectY1: number, rectX2: number, rectY2: number, list: BasicArrayList, xCellSize: number, yCellSize: number): boolean{
 
-    var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
-;
+    var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;;
     
 
-    var point: GPoint
-;
+    var point: GPoint;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;
---index >= 0; )
+    var index: number = list.size()!;--index >= 0; )
         {
 point= list.objectArray[index]! as GPoint;
     
@@ -135,6 +129,7 @@ point= list.objectArray[index]! as GPoint;
                         return true;
     
 }
+
 
 private constructor (){
 

@@ -79,6 +79,7 @@ export class AbPath
     private numberOfSeps: number = 0;
 
     private readonly abPathUtil: PathUtil = PathUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -88,12 +89,12 @@ public constructor (){
 
 
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 public constructor (aPath: string){
 
             super();
         
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(aPath))
@@ -116,12 +117,12 @@ this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath
                             
 }
 
+
 public constructor (aPath: string, name: string){
 
             super();
         
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(aPath))
@@ -166,8 +167,7 @@ this.nameP= this.EMPTY_STRING;
 
     getSchema(aPath: string): string{
 
-    var beginIndex: number = aPath!.indexOf(this.commonSeps!.COLON)!;
-;
+    var beginIndex: number = aPath!.indexOf(this.commonSeps!.COLON)!;;
     
 
                         if(beginIndex >= 0)
@@ -209,12 +209,10 @@ this.hasSchema= false;
             
     public getPath(aPath: string): string{
 
-    var filePathData: FilePathData = FilePathData.getInstance()!;
-;
+    var filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
-    var tempPath: string = aPath;
-;
+    var tempPath: string = aPath;;
     
 
                         if(!this.hasSchema())
@@ -227,8 +225,7 @@ this.hasSchema= false;
                                 
                         else {
                             
-    var beginIndex: number = tempPath!.indexOf(this.commonSeps!.COLON)!;
-;
+    var beginIndex: number = tempPath!.indexOf(this.commonSeps!.COLON)!;;
     
 
                         if(beginIndex >= 0)
@@ -292,8 +289,7 @@ this.nameP= name;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.hasSchema())
@@ -325,12 +321,10 @@ stringBuffer!.append(this.nameP);
                         
                                     {
                                     
-    var filePathData: FilePathData = FilePathData.getInstance()!;
-;
+    var filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.schema);
     

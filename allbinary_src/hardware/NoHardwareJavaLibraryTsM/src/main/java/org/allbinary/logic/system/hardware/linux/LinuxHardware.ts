@@ -81,6 +81,7 @@ export class LinuxHardware
             extends Object
          implements HardwareInterface {
         
+
 public constructor (){
 
             super();

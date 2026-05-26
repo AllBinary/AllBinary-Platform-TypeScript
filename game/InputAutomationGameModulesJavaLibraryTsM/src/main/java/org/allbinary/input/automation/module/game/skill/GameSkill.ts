@@ -68,19 +68,20 @@ export class GameSkill
 }
 
 
-    private gameSkillType: GameSkillType
+    private gameSkillType: GameSkillType;
 
-    private extra: string
+    private extra: string;
 
-    private time: number= 0
+    private time: number= 0;
 
-    private vector: Vector
+    private vector: Vector;
 
     private readonly GAME_SKILL_LABEL: string = "GameSkill: ";
 
     private readonly EXTRA_LABEL: string = "Extra: ";
 
     private readonly TIME_LABEL: string = "Time: ";
+
 public constructor (gameSkillType: GameSkillType, extra: string, time: number){
 
             super();
@@ -163,12 +164,10 @@ this.vector.add(gameSkillPropertyInterface);
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.GAME_SKILL_LABEL);
     

@@ -80,25 +80,25 @@ export class QuoteRequest
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private id: string
+    private id: string;
 
-    private userName: string
+    private userName: string;
 
-    private projectInfo: string
+    private projectInfo: string;
 
-    private userComments: string
+    private userComments: string;
 
-    private budget: string
+    private budget: string;
 
-    private timeFrame: string
+    private timeFrame: string;
 
-    private comments: string
+    private comments: string;
+
 public constructor (userName: string, request: HttpServletRequest){
 
             super();
         
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-;
+    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 this.id= new QuoteRequestIdGenerator().getNext();
     
@@ -125,12 +125,12 @@ this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as string);
                                 
 }
 
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();
         
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-;
+    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 this.id= hashMap!.get(quoteRequestData!.ID) as string;
     
@@ -162,8 +162,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(this.userName == 
@@ -265,8 +264,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.userName == 
@@ -366,8 +364,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as string);
 
     public toVector(): Vector{
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.id);
     
@@ -384,12 +381,10 @@ values.add(this.timeFrame);
 values.add(this.comments);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -406,12 +401,10 @@ values.add(time);
 
     public toHashMap(): HashMap<any, any>{
 
-    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-;
+    var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;;
     
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 values.put(UserData.USERNAME, userName);
     
@@ -426,12 +419,10 @@ values.put(quoteRequestData!.TIMEFRAME, this.timeFrame);
 values.put(quoteRequestData!.COMMENTS, this.comments);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -478,8 +469,7 @@ this.timeFrame= value;
 this.comments= value;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
                         if(this.comments == 

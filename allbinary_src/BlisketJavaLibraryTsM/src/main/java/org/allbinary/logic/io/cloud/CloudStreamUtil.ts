@@ -74,12 +74,10 @@ export class CloudStreamUtil
             
     public getFile(file: AbFile): InputStream{
 
-    var inputStream: InputStream = new AbFileInputStream(file);
-;
+    var inputStream: InputStream = new AbFileInputStream(file);;
     
 
-    var available: number = inputStream!.available()!;
-;
+    var available: number = inputStream!.available()!;;
     
 
                         if(available > 0)
@@ -110,12 +108,10 @@ export class CloudStreamUtil
             
     public getFileAnyWhere(file: AbFile): InputStream{
 
-    var inputStream: InputStream = new AbFileLocalInputStream(file);
-;
+    var inputStream: InputStream = new AbFileLocalInputStream(file);;
     
 
-    var available: number = inputStream!.available()!;
-;
+    var available: number = inputStream!.available()!;;
     
 
                         if(available > 0)
@@ -170,12 +166,10 @@ available= inputStream!.available();
             
     public getFileLocal(file: AbFile): InputStream{
 
-    var inputStream: InputStream = new AbFileLocalInputStream(file);
-;
+    var inputStream: InputStream = new AbFileLocalInputStream(file);;
     
 
-    var available: number = inputStream!.available()!;
-;
+    var available: number = inputStream!.available()!;;
     
 
                         if(available > 0)

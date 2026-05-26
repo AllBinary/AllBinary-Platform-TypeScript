@@ -56,11 +56,12 @@ export class GameNotificationEvent extends AllBinaryEventObject {
 
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    private readonly seconds: Integer
+    private readonly seconds: Integer;
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
-    private readonly removeable: Boolean
+    private readonly removeable: Boolean;
+
 public constructor (anyType: any = {}, string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
             super(anyType);
                     

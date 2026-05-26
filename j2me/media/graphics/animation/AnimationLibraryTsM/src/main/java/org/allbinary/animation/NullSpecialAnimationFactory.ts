@@ -66,6 +66,7 @@ export class NullSpecialAnimationFactory
     
 }
 
+
 private constructor (){
 
             super();

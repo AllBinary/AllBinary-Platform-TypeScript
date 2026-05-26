@@ -77,6 +77,7 @@ export class CircularIndexUtil
     private lastIndex: number = 0;
 
     private size: number = 0;
+
 private constructor (index: number, size: number){
 
             super();

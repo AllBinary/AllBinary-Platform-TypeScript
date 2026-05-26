@@ -83,8 +83,7 @@ export class AbSqlTableUtil
 
     public backupTable(abSqlTable: AbSqlTable): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;
-;
+    var tableName: string = abSqlTable!.getTableName()!;;
     
 
 
@@ -98,12 +97,10 @@ export class AbSqlTableUtil
 
     public restoreTable(abSqlTable: AbSqlTable, portion: Portion): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;
-;
+    var tableName: string = abSqlTable!.getTableName()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.TABLE_LABEL);
     

@@ -52,7 +52,8 @@ import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
 export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFactoryBase {
         
 
-    private readonly pathFindingNodeCostInfoAdjacencyList: PathFindingNodeCostInfo[][]
+    private readonly pathFindingNodeCostInfoAdjacencyList: PathFindingNodeCostInfo[][];
+
 public constructor (max: number){
 
             super();
@@ -74,8 +75,7 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
             
     public getInstance(goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo{
 
-    var pathFindingNodeCostInfo: PathFindingNodeCostInfo = this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition)!;
-;
+    var pathFindingNodeCostInfo: PathFindingNodeCostInfo = this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition)!;;
     
 
                         if(pathFindingNodeCostInfo == 

@@ -70,7 +70,8 @@ export class MirrorMotionGestureEventUtil
 }
 
 
-    private readonly motionEventCircularPool: MotionEventCircularPool
+    private readonly motionEventCircularPool: MotionEventCircularPool;
+
 private constructor (){
 
             super();
@@ -83,28 +84,22 @@ private constructor (){
             
     public mirrorVerticle(motionGestureEvent: MotionGestureEvent, halfWidth: number): MotionGestureEvent{
 
-    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;
-;
+    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;;
     
 
-    var previousNewX: number = this.getNewX(motionGestureEvent!.getPreviousPoint()!.getX(), halfWidth)!;
-;
+    var previousNewX: number = this.getNewX(motionGestureEvent!.getPreviousPoint()!.getX(), halfWidth)!;;
     
 
-    var currentNewX: number = this.getNewX(motionGestureEvent!.getCurrentPoint()!.getX(), halfWidth)!;
-;
+    var currentNewX: number = this.getNewX(motionGestureEvent!.getCurrentPoint()!.getX(), halfWidth)!;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var mirroredPreviousPoint: GPoint = pointFactory!.createXY(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;
-;
+    var mirroredPreviousPoint: GPoint = pointFactory!.createXY(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;;
     
 
-    var mirroredCurrentPoint: GPoint = pointFactory!.createXY(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;
-;
+    var mirroredCurrentPoint: GPoint = pointFactory!.createXY(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;;
     
 event.setPreviousPoint(mirroredPreviousPoint);
     
@@ -121,8 +116,7 @@ event.setCurrentPoint(mirroredCurrentPoint);
 
     public getNewX(x: number, halfWidth: number): number{
 
-    var newX: number= 0
-;
+    var newX: number= 0;;
     
 
                         if(x > halfWidth)

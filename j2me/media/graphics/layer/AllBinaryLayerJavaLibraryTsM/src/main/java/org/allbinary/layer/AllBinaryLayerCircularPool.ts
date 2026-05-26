@@ -50,6 +50,7 @@ import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil
 
 export class AllBinaryLayerCircularPool extends BaseCircularPool {
         
+
 protected constructor (){
 
             super();
@@ -68,8 +69,7 @@ this.OBJECT_ARRAY= new Array(total);
 
 
                         for (
-    var localIndex: number = 0;
-localIndex < total; localIndex++)
+    var localIndex: number = 0;localIndex < total; localIndex++)
         {
 this.OBJECT_ARRAY[localIndex]= allbinaryLayerFactoryInterface!.getInstance();
     

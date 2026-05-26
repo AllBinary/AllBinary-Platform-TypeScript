@@ -72,19 +72,20 @@ export class LevelHudWidget extends BasicHud implements PaintableInterface {
 }
 
 
-    private level: number
+    private level: number;
 
-    private maxlevel: number
+    private maxlevel: number;
 
-    private readonly levelString: string[]
+    private readonly levelString: string[];
 
     private levelNumberCharArray: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
 
-    private levelNumberTotalDigits: number= 0
+    private levelNumberTotalDigits: number= 0;
 
-    private readonly offset: number
+    private readonly offset: number;
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil
+    private readonly primitiveLongUtil: PrimitiveLongUtil;
+
 public constructor (maxlevel: number, location: number, direction: number, maxWidth: number){
             super(location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY);
                     
@@ -92,14 +93,12 @@ public constructor (maxlevel: number, location: number, direction: number, maxWi
                             //For kotlin this is before the body of the constructor.
                     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
     
 
-    var LEVEL: string = "Lv ";
-;
+    var LEVEL: string = "Lv ";;
     
 this.levelString= LEVEL.toCharArray();
     

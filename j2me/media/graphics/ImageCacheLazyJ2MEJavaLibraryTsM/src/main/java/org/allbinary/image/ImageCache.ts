@@ -164,8 +164,7 @@ NotHTMLEndProcessor = class extends Processor {
 
     public process(){
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.endIfPaintedSinceStart();
     
@@ -183,8 +182,7 @@ HTMLEndProcessor = class extends Processor {
 
     public process(){
 
-    var size: number = gdResources!.currentLayoutRequiredTotal;
-;
+    var size: number = gdResources!.currentLayoutRequiredTotal;;
     
 
                     //Otherwise - statement - EmptyStmt
@@ -194,8 +192,7 @@ HTMLEndProcessor = class extends Processor {
                         
                                     {
                                     
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.endIfPaintedSinceStart();
     
@@ -207,8 +204,7 @@ progressCanvas!.endIfPaintedSinceStart();
                         
                                     {
                                     
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.endIfPaintedSinceStart();
     
@@ -241,6 +237,7 @@ ImageCache.prototype.firstProcess();
     private processor: Processor = new this.FirstProcessor();
 
     private endProcessor: Processor = Processor.getInstance()!;
+
 public constructor (){
 
             super();
@@ -249,12 +246,10 @@ public constructor (){
 
     public firstProcess(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var isHTML: boolean = J2MEUtil.isHTML()!;
-;
+    var isHTML: boolean = J2MEUtil.isHTML()!;;
     
 
                         if(isHTML)
@@ -302,12 +297,10 @@ logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHO
                         
                                     {
                                     
-    var abToGBUtil: ABToGBUtil = ABToGBUtil.getInstance()!;
-;
+    var abToGBUtil: ABToGBUtil = ABToGBUtil.getInstance()!;;
     
 
-    var abCanvas: AllBinaryGameCanvas = abToGBUtil!.abCanvas as AllBinaryGameCanvas;
-;
+    var abCanvas: AllBinaryGameCanvas = abToGBUtil!.abCanvas as AllBinaryGameCanvas;;
     
 
         while(this.loadNowList!.isEmpty() && (!abCanvas!.isInitialized() || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
@@ -332,8 +325,7 @@ this.firstTime= false;
 
     var lazyImageRotationAnimation: LazyImageRotationAnimation = 
                 null
-            ;
-;
+            ;;
     
 
         
@@ -451,8 +443,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
                         
                                     {
                                     
-    var list: BasicArrayList = this.getAssociated(lazyImageRotationAnimation)!;
-;
+    var list: BasicArrayList = this.getAssociated(lazyImageRotationAnimation)!;;
     
 
         
@@ -462,8 +453,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
         //mutex.withLock
         
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
                         if(size > 0)
@@ -480,12 +470,10 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
                                     }
                                 
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 
-    var isHTML: boolean = J2MEUtil.isHTML()!;
-;
+    var isHTML: boolean = J2MEUtil.isHTML()!;;
     
 
                         if(this.loadNowList!.isEmpty() && (!isHTML || this.firstTime))
@@ -559,8 +547,7 @@ this.loadImageForAnimation();
 
     var lazyImageRotationAnimation: LazyImageRotationAnimation = 
                 null
-            ;
-;
+            ;;
     
 
         
@@ -594,8 +581,7 @@ this.loadImageForAnimation();
             
     loadImageForLazyAnimation(lazyImageRotationAnimation: LazyImageRotationAnimation): boolean{
 
-    var image: Image = lazyImageRotationAnimation!.animationInterfaceFactoryInterface!.getImage()!;
-;
+    var image: Image = lazyImageRotationAnimation!.animationInterfaceFactoryInterface!.getImage()!;;
     
 
                         if(this.loadImage(image))
@@ -627,8 +613,7 @@ this.loadImageForAnimation();
 
     var image: Image = 
                 null
-            ;
-;
+            ;;
     
 
         
@@ -702,12 +687,10 @@ this.loadImage(image);
                                 
                         else {
                             
-    var key: string = image.getName()!;
-;
+    var key: string = image.getName()!;;
     
 
-    var image2: Image = this.creatImage(key)!;
-;
+    var image2: Image = this.creatImage(key)!;;
     
 
                         if(image2.isReady())
@@ -757,12 +740,10 @@ image.init(image2.getImage());
             
     creatImage(key: string): Image{
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key)!;
-;
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key)!;;
     
 
-    var image: Image = Image.createImage(inputStream)!;
-;
+    var image: Image = Image.createImage(inputStream)!;;
     
 image.setName(key);
     
@@ -779,12 +760,10 @@ image.setName(key);
             
     public get(caller: string, width: number, height: number): Image{
 
-    var foundIndex: number = this.getIndexWH(width, height)!;
-;
+    var foundIndex: number = this.getIndexWH(width, height)!;;
     
 
-    var image: Image = this.getFromAvailable(foundIndex, width, height)!;
-;
+    var image: Image = this.getFromAvailable(foundIndex, width, height)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
@@ -845,8 +824,7 @@ this.listOfList[foundIndex]!.add(image);
             
     public getWithKey(key: any = {}): Image{
 
-    var image: Image = this.getImage(key)!;
-;
+    var image: Image = this.getImage(key)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
@@ -855,8 +833,7 @@ this.listOfList[foundIndex]!.add(image);
                                     
     var inputStream: InputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
@@ -898,25 +875,21 @@ this.hashtable.put(key, image);
 
     public getIndex(key: any = {}): number{
 
-    var gdResources: GDResources = GDResources.getInstance()!;
-;
+    var gdResources: GDResources = GDResources.getInstance()!;;
     
 
-    var resourceStringArray: string[] = gdResources!.resourceStringArray;
-;
+    var resourceStringArray: string[] = gdResources!.resourceStringArray;;
     
 
     var size: number = resourceStringArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(resourceStringArray[index] == key)
@@ -947,25 +920,21 @@ this.logUtil!.putF(new StringMaker().append("unable to find key: ")!.append(Stri
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
 
-    var gdLazyResources: GDLazyResources = GDLazyResources.getInstance()!;
-;
+    var gdLazyResources: GDLazyResources = GDLazyResources.getInstance()!;;
     
 
-    var resourceStringArray: string[] = gdLazyResources!.requiredResourcesBeforeLoadingArray;
-;
+    var resourceStringArray: string[] = gdLazyResources!.requiredResourcesBeforeLoadingArray;;
     
 
     var size: number = resourceStringArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(key == resourceStringArray[index])
@@ -985,20 +954,16 @@ index < size; index++)
 this.runTask();
     
 
-    var index: number = this.getIndex(key)!;
-;
+    var index: number = this.getIndex(key)!;;
     
 
-    var width: number = gdLazyResources!.imageResourceWidthArray[index]!;
-;
+    var width: number = gdLazyResources!.imageResourceWidthArray[index]!;;
     
 
-    var height: number = gdLazyResources!.imageResourceHeightArray[index]!;
-;
+    var height: number = gdLazyResources!.imageResourceHeightArray[index]!;;
     
 
-    var image: Image = this.createImageLater(key as string, width, height)!;
-;
+    var image: Image = this.createImageLater(key as string, width, height)!;;
     
 
         
@@ -1034,8 +999,7 @@ this.loadList!.add(image);
 
     public getAssociated(lazyImageRotationAnimation: LazyImageRotationAnimation): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
         
@@ -1047,20 +1011,17 @@ this.loadList!.add(image);
 
     var lazyImageRotationAnimation2: LazyImageRotationAnimation = 
                 null
-            ;
-;
+            ;;
     
 
-    var size: number = this.loadAfterList!.size()!;
-;
+    var size: number = this.loadAfterList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotationAnimation;
     
@@ -1076,16 +1037,14 @@ lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotation
 }
 
 
-    var size2: number = list.size()!;
-;
+    var size2: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 this.loadAfterList!.remove(list.get(index));
     

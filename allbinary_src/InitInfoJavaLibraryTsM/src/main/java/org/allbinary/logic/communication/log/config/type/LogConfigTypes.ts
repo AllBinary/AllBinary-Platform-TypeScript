@@ -88,12 +88,10 @@ LogConfigTypes.init();
 LogConfigTypeFactory.getInstance();
     
 
-    var loggingInitInfo: LoggingInitInfo = new LoggingInitInfo();
-;
+    var loggingInitInfo: LoggingInitInfo = new LoggingInitInfo();;
     
 
-    var logConfigTypeVector: BasicArrayList = loggingInitInfo!.getTypeList()!;
-;
+    var logConfigTypeVector: BasicArrayList = loggingInitInfo!.getTypeList()!;;
     
 PreLogUtil.put("Number Of Log Configs: " +loggingInitInfo!.getNumberOfLogConfigs(), "LogConfigTypes", "init()");
     
@@ -118,16 +116,13 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
             
     public static getInstance(node: Node): LogConfigType{
 
-    var nameValueNode: Node = DomSearchHelper.getNode(LogConfigTypeData.getInstance()!.NAME, node.getChildNodes())!;
-;
+    var nameValueNode: Node = DomSearchHelper.getNode(LogConfigTypeData.getInstance()!.NAME, node.getChildNodes())!;;
     
 
-    var name: string = DomNodeHelper.getTextNodeValue(nameValueNode)!;
-;
+    var name: string = DomNodeHelper.getTextNodeValue(nameValueNode)!;;
     
 
-    var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(LogConfigTypeData.getInstance()!.DESCRIPTION, node.getChildNodes())!;
-;
+    var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(LogConfigTypeData.getInstance()!.DESCRIPTION, node.getChildNodes())!;;
     
 
                         if(descriptionValueNode != 
@@ -136,31 +131,26 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
                         
                                     {
                                     
-    var description: string = DomNodeHelper.getTextNodeValue(descriptionValueNode)!;
-;
+    var description: string = DomNodeHelper.getTextNodeValue(descriptionValueNode)!;;
     
 
                                     }
                                 
 
-    var availableLogConfigTypes: BasicArrayList = LogConfigType.availableLogConfigTypes;
-;
+    var availableLogConfigTypes: BasicArrayList = LogConfigType.availableLogConfigTypes;;
     
 
-    var size: number = availableLogConfigTypes!.size()!;
-;
+    var size: number = availableLogConfigTypes!.size()!;;
     
 
-    var logConfigType: LogConfigType
-;
+    var logConfigType: LogConfigType;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 logConfigType= availableLogConfigTypes!.get(index) as LogConfigType;
     
@@ -185,6 +175,7 @@ logConfigType= availableLogConfigTypes!.get(index) as LogConfigType;
                             throw new Exception("No Such LogConfigType: " +name);
                     
 }
+
 
 private constructor (){
 

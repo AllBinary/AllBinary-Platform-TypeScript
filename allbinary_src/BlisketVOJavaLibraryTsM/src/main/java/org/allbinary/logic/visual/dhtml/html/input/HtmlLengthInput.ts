@@ -51,9 +51,10 @@ export class HtmlLengthInput extends HtmlValueInput {
 
     private readonly SIZE: string = "SIZE";
 
-    private length: string
+    private length: string;
 
-    private size: string
+    private size: string;
+
 public constructor (before: string, type: string, name: string, value: string, after: string){
             super(before, type, name, value, after);
                     

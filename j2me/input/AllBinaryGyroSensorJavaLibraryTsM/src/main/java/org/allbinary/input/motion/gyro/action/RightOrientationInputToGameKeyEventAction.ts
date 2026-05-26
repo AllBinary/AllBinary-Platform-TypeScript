@@ -61,6 +61,7 @@ export class RightOrientationInputToGameKeyEventAction extends GameKeyCompleteMo
     
 }
 
+
 private constructor (){
             super("Right Action", OrientationMotionGestureFactory.getInstance()!.RIGHT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

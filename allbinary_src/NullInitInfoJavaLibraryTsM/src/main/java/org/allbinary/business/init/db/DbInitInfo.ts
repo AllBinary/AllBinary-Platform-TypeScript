@@ -48,6 +48,7 @@ import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log
 //import org.allbinary.logic.communication.log.config.type.LogConfigTypes;
 export class DbInitInfo extends DbConnectionInfo {
         
+
 public constructor (initFileName: string, read: boolean){
             super();
                     
@@ -59,8 +60,7 @@ public constructor (initFileName: string, read: boolean){
 
     public getUrl(): string{
 
-    var url: string = super.getUrl()!;
-;
+    var url: string = super.getUrl()!;;
     
 PreLogUtil.put("Url: " +url, this, "getUrl");
     

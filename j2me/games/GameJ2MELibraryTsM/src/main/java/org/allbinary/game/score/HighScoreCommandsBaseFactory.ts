@@ -57,7 +57,8 @@ export class HighScoreCommandsBaseFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public readonly HIGH_SCORE_COMMANDS: Command[]
+    public readonly HIGH_SCORE_COMMANDS: Command[];
+
 protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
             super();
@@ -67,7 +68,7 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
                                     {
                                     this.HIGH_SCORE_COMMANDS= 
                                                 [
-                                                    HighScoreCommands.getInstance()!.PERSONAL;
+                                                    HighScoreCommands.getInstance()!.PERSONAL
                                                 ];
     
 
@@ -88,8 +89,7 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
 
                         for (
-    var index: number = this.HIGH_SCORE_COMMANDS.length -1;
-index >= 0; index--)
+    var index: number = this.HIGH_SCORE_COMMANDS.length -1;index >= 0; index--)
         {
 
                         if(command == this.HIGH_SCORE_COMMANDS[index])
@@ -123,8 +123,7 @@ index >= 0; index--)
 
 
                         for (
-    var index: number = this.HIGH_SCORE_COMMANDS.length -1;
-index >= 0; index--)
+    var index: number = this.HIGH_SCORE_COMMANDS.length -1;index >= 0; index--)
         {
 
                         if(command == this.HIGH_SCORE_COMMANDS[index])

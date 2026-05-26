@@ -68,6 +68,7 @@ export class PermissionItemsEntity extends AbSqlBean implements PermissionItemsE
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "permissionitems";
+
 public constructor (){
             super(new InventoryDbInitInfo());
                     
@@ -145,8 +146,7 @@ this.setTableName(this.tableName);
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(BasicItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicItemData.NUMBER)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     

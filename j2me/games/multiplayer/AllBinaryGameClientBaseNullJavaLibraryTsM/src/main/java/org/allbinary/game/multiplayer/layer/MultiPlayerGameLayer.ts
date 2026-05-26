@@ -56,6 +56,7 @@ import { MultiplayerBehavior } from './MultiplayerBehavior.js';
 
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         
+
 public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(groupInterface, name, layerInfo, viewPosition);
                     

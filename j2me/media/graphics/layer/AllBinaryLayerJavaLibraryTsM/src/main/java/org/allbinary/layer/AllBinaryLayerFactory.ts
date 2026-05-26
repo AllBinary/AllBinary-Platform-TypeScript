@@ -54,7 +54,8 @@ export class AllBinaryLayerFactory
          implements AllBinaryLayerFactoryInterface {
         
 
-    private readonly rectangle: Rectangle
+    private readonly rectangle: Rectangle;
+
 public constructor (rectangle: Rectangle){
 
             super();

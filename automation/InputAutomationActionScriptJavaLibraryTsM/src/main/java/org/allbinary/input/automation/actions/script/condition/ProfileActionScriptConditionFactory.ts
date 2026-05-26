@@ -65,8 +65,7 @@ export class ProfileActionScriptConditionFactory
 
     var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = 
                 null
-            ;
-;
+            ;;
     
 
                         if(DomSearchHelper.getNodeNoThrow(ColorAtActionScriptConditionData.NAME, node.getChildNodes()) != 
@@ -108,6 +107,7 @@ export class ProfileActionScriptConditionFactory
                         return profileActionScriptConditionInterface;
     
 }
+
 
 private constructor (){
 

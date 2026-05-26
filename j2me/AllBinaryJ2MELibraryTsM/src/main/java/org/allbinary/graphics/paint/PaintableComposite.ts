@@ -48,7 +48,8 @@ import { PaintableInterface } from './PaintableInterface.js';
 export class PaintableComposite extends Paintable {
         
 
-    private paintableArray: PaintableInterface[]
+    private paintableArray: PaintableInterface[];
+
 public constructor (paintableArray: PaintableInterface[]){
 
             super();
@@ -63,8 +64,7 @@ public constructor (paintableArray: PaintableInterface[]){
 
 
                         for (
-    var index: number = this.paintableArray!.length -1;
-index >= 0; index--)
+    var index: number = this.paintableArray!.length -1;index >= 0; index--)
         {
 this.paintableArray[index]!.paint(graphics);
     
@@ -79,8 +79,7 @@ this.paintableArray[index]!.paint(graphics);
 
 
                         for (
-    var index: number = this.paintableArray!.length -1;
-index >= 0; index--)
+    var index: number = this.paintableArray!.length -1;index >= 0; index--)
         {
 this.paintableArray[index]!.paintThreed(graphics);
     

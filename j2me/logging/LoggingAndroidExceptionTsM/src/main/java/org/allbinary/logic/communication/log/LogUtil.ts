@@ -70,6 +70,7 @@ import { Log } from './Log.js';
     private readonly LABEL: string = "org.allbinary";
 
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
+
 private constructor (){
 
             super();
@@ -78,20 +79,16 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 
                         if(log != 
@@ -117,14 +114,12 @@ private constructor (){
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
-    var className: string = this.LABEL;
-;
+    var className: string = this.LABEL;;
     
 className= anyType!.constructor.name.toString()!;
     
 
-    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 android.util.Log.i(this.LABEL, this.LOG_SUCCESS +message);
     

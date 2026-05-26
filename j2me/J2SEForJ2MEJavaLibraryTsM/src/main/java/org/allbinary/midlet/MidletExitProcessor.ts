@@ -52,7 +52,8 @@ import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 export class MidletExitProcessor extends Processor {
         
 
-    private readonly midlet: MIDlet
+    private readonly midlet: MIDlet;
+
 public constructor (midlet: MIDlet){
 
             super();

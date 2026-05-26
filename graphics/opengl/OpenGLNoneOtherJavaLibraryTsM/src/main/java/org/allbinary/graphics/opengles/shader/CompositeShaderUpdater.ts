@@ -68,6 +68,7 @@ export class CompositeShaderUpdater extends ShaderUpdater {
 
 
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
+
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
 
             super();

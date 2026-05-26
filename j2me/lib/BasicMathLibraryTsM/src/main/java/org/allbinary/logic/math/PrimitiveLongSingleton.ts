@@ -83,16 +83,14 @@ export class PrimitiveLongSingleton
     public getNumberFromChar(numberAsChar: string): number{
 
     var size: number = this.NUMBER_CHAR_ARRAY.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(this.NUMBER_CHAR_ARRAY[index] == numberAsChar)

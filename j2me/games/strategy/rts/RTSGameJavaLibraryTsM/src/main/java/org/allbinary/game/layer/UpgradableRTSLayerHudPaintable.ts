@@ -76,13 +76,14 @@ export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
 
     private rtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
 
-    costY: number= 0
+    costY: number= 0;
 
-    costY1: number= 0
+    costY1: number= 0;
 
-    private percentCompleteX2: number= 0
+    private percentCompleteX2: number= 0;
 
-    private lateinit rtsLayerCompositePaintableLateInit: RTSLayerCompositePaintable
+    private lateinit rtsLayerCompositePaintableLateInit: RTSLayerCompositePaintable;
+
 private constructor (){
 
             super();
@@ -93,12 +94,10 @@ private constructor (){
 super.update();
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
     
 this.costY= (this.y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
     
@@ -107,8 +106,7 @@ this.costY1= (this.y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -(charHe
 this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -myFont!.defaultCharWidth();
     
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
                         if(displayInfoSingleton!.getLastWidth() > 320)
@@ -130,8 +128,7 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;
-;
+    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;;
     
 this.rtsLayerCompositePaintableLateInit!.update(rtsLayer);
     
@@ -142,18 +139,17 @@ this.setName(rtsLayer!.getName());
 }
 
 
-    private percentComplete: number= 0
+    private percentComplete: number= 0;
 
-    private percentCompleteX: number= 0
+    private percentCompleteX: number= 0;
 
     private percentCompleteArray: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
 
-    private currentTotalDigits: number= 0
+    private currentTotalDigits: number= 0;
 
     public updateInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;
-;
+    var rtsLayer: RTSLayer = this.getRtsLayer() as RTSLayer;;
     
 this.percentComplete= rtsLayer!.getPercentComplete();
     

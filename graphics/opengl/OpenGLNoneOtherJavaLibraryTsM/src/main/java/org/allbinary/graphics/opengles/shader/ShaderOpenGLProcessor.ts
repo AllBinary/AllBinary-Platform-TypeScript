@@ -33,6 +33,7 @@ import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/
         
 export class ShaderOpenGLProcessor extends OpenGLProcessor {
         
+
 public constructor (){
 
             super();

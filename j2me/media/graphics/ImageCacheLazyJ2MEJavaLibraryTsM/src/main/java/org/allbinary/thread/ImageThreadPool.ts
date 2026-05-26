@@ -68,6 +68,7 @@ export class ImageThreadPool extends ThreadPool {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (poolName: string, numThreads: number, priority: number){
             super(poolName, numThreads, priority);
                     

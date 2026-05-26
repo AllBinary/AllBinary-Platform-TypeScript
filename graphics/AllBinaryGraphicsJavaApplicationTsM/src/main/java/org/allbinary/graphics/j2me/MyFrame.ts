@@ -147,8 +147,7 @@ new MyFrame().show();
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(CommonStrings.getInstance()!.EXCEPTION, 
                             null, "main", e);
@@ -158,7 +157,7 @@ logUtil!.put(CommonStrings.getInstance()!.EXCEPTION,
 }
 
 
-    static statusJLabel: javax.swing.JLabel
+    static statusJLabel: javax.swing.JLabel;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -174,9 +173,10 @@ logUtil!.put(CommonStrings.getInstance()!.EXCEPTION,
 
     private readonly JAVAEXTENSION: string = ".javax";
 
-    private fileJDialog: FileJDialog
+    private fileJDialog: FileJDialog;
 
-    private rotateJDialog: RotateJDialog
+    private rotateJDialog: RotateJDialog;
+
 public constructor (){
 
             super();
@@ -904,16 +904,13 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "centerJMenuItemActionPer
 
 
                         for (
-    var index: number = 0;
-index < files.length; index++)
+    var index: number = 0;index < files.length; index++)
         {
 
-    var document: Document = DomHelper.getInstance()!.createDocument(files[index]!)!;
-;
+    var document: Document = DomHelper.getInstance()!.createDocument(files[index]!)!;;
     
 
-    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(new WorkAreaDom(document), this.getSize());
-;
+    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(new WorkAreaDom(document), this.getSize());;
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));
     
@@ -938,16 +935,13 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
 
         try {
             
-    var newName: string = "graphic" +MyFrame.numberOfWorkAreas;
-;
+    var newName: string = "graphic" +MyFrame.numberOfWorkAreas;;
     
 
-    var dim: Dimension = this.getSize()!;
-;
+    var dim: Dimension = this.getSize()!;;
     
 
-    var newDialog: NewWorkAreaJDialog = new NewWorkAreaJDialog(this, false, dim, newName);
-;
+    var newDialog: NewWorkAreaJDialog = new NewWorkAreaJDialog(this, false, dim, newName);;
     
 
                 //: 
@@ -996,16 +990,13 @@ this.fileJDialog!.setVisible(true);
 
         try {
             
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;
-;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
     
 
-    var file: File = new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.JAVAEXTENSION);
-;
+    var file: File = new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.JAVAEXTENSION);;
     
 
-    var document: Document = workAreaJPanel!.toDocument()!;
-;
+    var document: Document = workAreaJPanel!.toDocument()!;;
     
 this.logUtil!.putF("Export: " +DomHelper.getInstance()!.toString(document), this, "exportJMenuItem1ActionPerformed");
     
@@ -1033,8 +1024,7 @@ this.xslHelper!.export(file, MyFrame.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLA
 
         try {
             
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;
-;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
     
 DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.SAVEEXTENSION), workAreaJPanel!.toDocument());
     
@@ -1060,12 +1050,10 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
             
     public onHashMap(hashMap: HashMap<any, any>){
 
-    var angleIncrementInteger: Integer = hashMap!.get(Integer.valueOf(0)) as Integer;
-;
+    var angleIncrementInteger: Integer = hashMap!.get(Integer.valueOf(0)) as Integer;;
     
 
-    var totalRotationInteger: Integer = hashMap!.get(Integer.valueOf(1)) as Integer;
-;
+    var totalRotationInteger: Integer = hashMap!.get(Integer.valueOf(1)) as Integer;;
     
 this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.intValue(), totalRotationInteger!.intValue());
     
@@ -1084,28 +1072,24 @@ this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.intValue(), totalR
 
     public updateSelectedWorkArea(){
 
-    var numberOfTabs: number = this.jTabbedPane!.getTabCount()!;
-;
+    var numberOfTabs: number = this.jTabbedPane!.getTabCount()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfTabs; index++)
+    var index: number = 0;index < numberOfTabs; index++)
         {
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index) as WorkAreaJPanelInterface;
-;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index) as WorkAreaJPanelInterface;;
     
 workAreaJPanel!.deselect();
     
 }
 
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;
-;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;;
     
 
                         if(workAreaJPanel != 
@@ -1145,8 +1129,7 @@ this.jTabbedPane!.addTab(newCanvasInterface!.getName(), newCanvasInterface as JP
 this.jTabbedPane!.setSelectedComponent(newCanvasInterface as JPanel);
     
 
-    var animationThread: Thread = new Thread(newCanvasInterface as Runnable);
-;
+    var animationThread: Thread = new Thread(newCanvasInterface as Runnable);;
     
 animationThread!.start();
     
@@ -1184,97 +1167,97 @@ this.getSelectedWorkArea()!.keyPressed(keyEvent);
 }
 
 
-    private animateJButton: javax.swing.JButton
+    private animateJButton: javax.swing.JButton;
 
-    private autoDamageJMenuItem: javax.swing.JMenuItem
+    private autoDamageJMenuItem: javax.swing.JMenuItem;
 
-    private autoExplodeJMenuItem: javax.swing.JMenuItem
+    private autoExplodeJMenuItem: javax.swing.JMenuItem;
 
-    private autoGrowJMenuItem: javax.swing.JMenuItem
+    private autoGrowJMenuItem: javax.swing.JMenuItem;
 
-    private autoRotateGenerationJMenuItem: javax.swing.JMenuItem
+    private autoRotateGenerationJMenuItem: javax.swing.JMenuItem;
 
-    private autoSheildMenuItem: javax.swing.JMenuItem
+    private autoSheildMenuItem: javax.swing.JMenuItem;
 
-    private autoShrinkJMenuItem: javax.swing.JMenuItem
+    private autoShrinkJMenuItem: javax.swing.JMenuItem;
 
-    private centerJMenuItem: javax.swing.JMenuItem
+    private centerJMenuItem: javax.swing.JMenuItem;
 
-    private copyJMenuItem1: javax.swing.JMenuItem
+    private copyJMenuItem1: javax.swing.JMenuItem;
 
-    private exitJMenuItem: javax.swing.JMenuItem
+    private exitJMenuItem: javax.swing.JMenuItem;
 
-    private explodeAllJMenuItem: javax.swing.JMenuItem
+    private explodeAllJMenuItem: javax.swing.JMenuItem;
 
-    private exportJMenuItem1: javax.swing.JMenuItem
+    private exportJMenuItem1: javax.swing.JMenuItem;
 
-    private fileJMenu: javax.swing.JMenu
+    private fileJMenu: javax.swing.JMenu;
 
-    private frameJMenu: javax.swing.JMenu
+    private frameJMenu: javax.swing.JMenu;
 
-    private generateJMenu: javax.swing.JMenu
+    private generateJMenu: javax.swing.JMenu;
 
-    private insertAfterJMenuItem: javax.swing.JMenuItem
+    private insertAfterJMenuItem: javax.swing.JMenuItem;
 
-    private insertBeforeJMenuItem: javax.swing.JMenuItem
+    private insertBeforeJMenuItem: javax.swing.JMenuItem;
 
-    private jButton1: javax.swing.JButton
+    private jButton1: javax.swing.JButton;
 
-    private jButton2: javax.swing.JButton
+    private jButton2: javax.swing.JButton;
 
-    private jButton3: javax.swing.JButton
+    private jButton3: javax.swing.JButton;
 
-    private jButton4: javax.swing.JButton
+    private jButton4: javax.swing.JButton;
 
-    private jButton41: javax.swing.JButton
+    private jButton41: javax.swing.JButton;
 
-    private jButton5: javax.swing.JButton
+    private jButton5: javax.swing.JButton;
 
-    private jMenu1: javax.swing.JMenu
+    private jMenu1: javax.swing.JMenu;
 
-    private jMenuItem1: javax.swing.JMenuItem
+    private jMenuItem1: javax.swing.JMenuItem;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private jTabbedPane: javax.swing.JTabbedPane
+    private jTabbedPane: javax.swing.JTabbedPane;
 
-    private jToolBar1: javax.swing.JToolBar
+    private jToolBar1: javax.swing.JToolBar;
 
-    private mainJPanel: javax.swing.JPanel
+    private mainJPanel: javax.swing.JPanel;
 
-    private menuJMenuBar: javax.swing.JMenuBar
+    private menuJMenuBar: javax.swing.JMenuBar;
 
-    private newJMenuItem: javax.swing.JMenuItem
+    private newJMenuItem: javax.swing.JMenuItem;
 
-    private nextFrameJMenuItem: javax.swing.JMenuItem
+    private nextFrameJMenuItem: javax.swing.JMenuItem;
 
-    private objectJMenu: javax.swing.JMenu
+    private objectJMenu: javax.swing.JMenu;
 
-    private openJButton: javax.swing.JButton
+    private openJButton: javax.swing.JButton;
 
-    private openJMenuItem: javax.swing.JMenuItem
+    private openJMenuItem: javax.swing.JMenuItem;
 
-    private playJButton: javax.swing.JButton
+    private playJButton: javax.swing.JButton;
 
-    private previousFrameJMenuItem: javax.swing.JMenuItem
+    private previousFrameJMenuItem: javax.swing.JMenuItem;
 
-    private removeJMenuItem: javax.swing.JMenuItem
+    private removeJMenuItem: javax.swing.JMenuItem;
 
-    private saveAsJMenuItem: javax.swing.JMenuItem
+    private saveAsJMenuItem: javax.swing.JMenuItem;
 
-    private saveJButton: javax.swing.JButton
+    private saveJButton: javax.swing.JButton;
 
-    private saveJMenuItem: javax.swing.JMenuItem
+    private saveJMenuItem: javax.swing.JMenuItem;
 
-    private statusJPanel: javax.swing.JPanel
+    private statusJPanel: javax.swing.JPanel;
 
-    private stopJjButton: javax.swing.JButton
+    private stopJjButton: javax.swing.JButton;
 
-    private viewJMenu: javax.swing.JMenu
+    private viewJMenu: javax.swing.JMenu;
 
-    private zoomInJMenuItem: javax.swing.JMenuItem
+    private zoomInJMenuItem: javax.swing.JMenuItem;
 
-    private zoomOutJMenuItem: javax.swing.JMenuItem
+    private zoomOutJMenuItem: javax.swing.JMenuItem;
 
 }
                 

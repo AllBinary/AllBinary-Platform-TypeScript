@@ -48,7 +48,8 @@ export class NativeLibraryHelper
          {
         
 
-    private library: string
+    private library: string;
+
 public constructor (library: string){
 
             super();

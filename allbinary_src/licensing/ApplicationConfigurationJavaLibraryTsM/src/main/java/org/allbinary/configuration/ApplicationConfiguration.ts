@@ -87,6 +87,7 @@ export class ApplicationConfiguration
     private progressBarView: boolean = false;
 
     private readonly FILE: string = "ReloadConfiguration.dat";
+
 private constructor (){
 
             super();
@@ -112,8 +113,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
@@ -126,20 +126,16 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
             
     read(){
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;
-;
+    var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 
-    var dataInputStream: AbDataInputStream = new AbDataInputStream(fileInputStream);
-;
+    var dataInputStream: AbDataInputStream = new AbDataInputStream(fileInputStream);;
     
 
-    var fullScreen: number = dataInputStream!.readInt()!;
-;
+    var fullScreen: number = dataInputStream!.readInt()!;;
     
 
                         if(fullScreen == 0)
@@ -169,8 +165,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         }
                             
 
-    var progressBarView: number = dataInputStream!.readInt()!;
-;
+    var progressBarView: number = dataInputStream!.readInt()!;;
     
 
                         if(progressBarView == 0)
@@ -200,8 +195,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                         }
                             
 
-    var showTitleBar: number = dataInputStream!.readInt()!;
-;
+    var showTitleBar: number = dataInputStream!.readInt()!;;
     
 
                         if(showTitleBar == 0)
@@ -239,24 +233,20 @@ this.logUtil!.putF("Read Configuration: " +this.toString(), this, "read");
             
     public write(){
 
-    var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;
-;
+    var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;;
     
 
         try {
             this.logUtil!.putF("Write Configuration: " +this.toString(), this, "write");
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;
-;
+    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, this.FILE)!;;
     
 
-    var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);
-;
+    var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);;
     
 closeable= dataOutputStream;
     
@@ -335,8 +325,7 @@ dataOutputStream!.flush();
                         
                                     {
                                     
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(gameFeature))
@@ -427,8 +416,7 @@ this.progressBarView= progressBarView;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("isFullscreen: ");
     

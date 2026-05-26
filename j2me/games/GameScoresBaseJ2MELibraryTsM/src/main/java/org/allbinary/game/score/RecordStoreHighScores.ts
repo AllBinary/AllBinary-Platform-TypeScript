@@ -102,8 +102,7 @@ export class RecordStoreHighScores extends HighScores {
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{
 
-    var highScoresCanBeNull: any = RecordStoreHighScores.hashTable!.get(highScoreName);
-;
+    var highScoresCanBeNull: any = RecordStoreHighScores.hashTable!.get(highScoreName);;
     
 
                         if(highScoresCanBeNull == 
@@ -112,8 +111,7 @@ export class RecordStoreHighScores extends HighScores {
                         
                                     {
                                     
-    var highScores: HighScores = new RecordStoreHighScores(abeClientInformation, gameInfo, highScoreName, heading, columnTwoHeading, recordComparatorInterface);
-;
+    var highScores: HighScores = new RecordStoreHighScores(abeClientInformation, gameInfo, highScoreName, heading, columnTwoHeading, recordComparatorInterface);;
     
 RecordStoreHighScores.hashTable!.put(highScores!.getName(), highScores);
     
@@ -147,11 +145,12 @@ RecordStoreHighScores.hashTable!.put(highScores!.getName(), highScores);
 
     private readonly MAXHIGHSCORES: number = 100;
 
-    private readonly gameInfo: GameInfo
+    private readonly gameInfo: GameInfo;
 
-    private readonly abeClientInformation: AbeClientInformationInterface
+    private readonly abeClientInformation: AbeClientInformationInterface;
 
-    private readonly recordComparatorInterface: RecordComparator
+    private readonly recordComparatorInterface: RecordComparator;
+
 private constructor (abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, name: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator){
             super(name, heading, columnTwoHeading);
                     
@@ -182,8 +181,7 @@ this.load();
 
     public addHighScore(newHighScore: HighScore){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
@@ -203,12 +201,10 @@ this.removeLowestHighScore();
 recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 
-    var highScoreBytes: number[] = newHighScore!.getAsBytes()!;
-;
+    var highScoreBytes: number[] = newHighScore!.getAsBytes()!;;
     
 
-    var recordId: number = recordStore!.addRecord(highScoreBytes, 0, highScoreBytes!.length)!;
-;
+    var recordId: number = recordStore!.addRecord(highScoreBytes, 0, highScoreBytes!.length)!;;
     
 this.load();
     
@@ -266,43 +262,35 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
 
     removeLowestHighScore(){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
             recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-;
+    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var scoreComparator: ScoreComparator = (this.recordComparatorInterface as ScoreComparator);
-;
+    var scoreComparator: ScoreComparator = (this.recordComparatorInterface as ScoreComparator);;
     
 
-    var bestHighScore: HighScore = new HighScore( -1, "none", GameInfo.NONE, scoreComparator!.getBestScore());
-;
+    var bestHighScore: HighScore = new HighScore( -1, "none", GameInfo.NONE, scoreComparator!.getBestScore());;
     
 
-    var recordAsBytes: number[]
-;
+    var recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream
-;
+    var byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream
-;
+    var inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;
-;
+    var id: number = recordEnum!.nextRecordId()!;;
     
 recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
@@ -317,16 +305,13 @@ recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
 inputStream= new DataInputStream(byteArrayInputStream);
     
 
-    var name: string = inputStream!.readUTF()!;
-;
+    var name: string = inputStream!.readUTF()!;;
     
 
-    var nextScore: number = inputStream!.readLong()!;
-;
+    var nextScore: number = inputStream!.readLong()!;;
     
 
-    var nextCurrentHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, nextScore);
-;
+    var nextCurrentHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, nextScore);;
     
 
                         if(this.recordComparatorInterface!.compare(nextCurrentHighScore!.getAsBytes(), bestHighScore!.getAsBytes()) == RecordComparatorI.FOLLOWS)
@@ -400,8 +385,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeLowestHighScore", 
 
     load(){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
@@ -410,27 +394,22 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeLowestHighScore", 
 this.setList(new BasicArrayListD());
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-;
+    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var recordAsBytes: number[]
-;
+    var recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream
-;
+    var byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream
-;
+    var inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;
-;
+    var id: number = recordEnum!.nextRecordId()!;;
     
 recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
@@ -447,40 +426,32 @@ inputStream= new DataInputStream(byteArrayInputStream);
 
         try {
             
-    var name: string = inputStream!.readUTF()!;
-;
+    var name: string = inputStream!.readUTF()!;;
     
 
-    var score: number = inputStream!.readLong()!;
-;
+    var score: number = inputStream!.readLong()!;;
     
 
-    var newHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, score);
-;
+    var newHighScore: HighScore = new HighScore(id, name, GameInfo.NONE, score);;
     
 
-    var list: BasicArrayList = this.getList()!;
-;
+    var list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var lastIndex: number = size;
-;
+    var lastIndex: number = size;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var highScore: HighScore = list.objectArray[index]! as HighScore;
-;
+    var highScore: HighScore = list.objectArray[index]! as HighScore;;
     
 
                         if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparatorI.PRECEDES)
@@ -629,24 +600,20 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
                                 
                         else {
                             
-    var list: BasicArrayList = this.getList()!;
-;
+    var list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var highScore: HighScore = list.objectArray[index]! as HighScore;
-;
+    var highScore: HighScore = list.objectArray[index]! as HighScore;;
     
 
                         if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparatorI.FOLLOWS)
@@ -694,30 +661,25 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toString());
     
 
-    var list: BasicArrayList = this.getList()!;
-;
+    var list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var highScore: HighScore = list.objectArray[index]! as HighScore;
-;
+    var highScore: HighScore = list.objectArray[index]! as HighScore;;
     
 stringBuffer!.append(highScore!.getScoreString());
     

@@ -63,6 +63,7 @@ export class TechEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -73,8 +74,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);
-;
+    var techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);;
     
 techEventListenerInterface!.onTechEvent(eventObject);
     

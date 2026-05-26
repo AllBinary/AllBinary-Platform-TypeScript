@@ -54,6 +54,7 @@ export class WizardWebStoreAdminUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

@@ -61,13 +61,15 @@ export class TimeLastModifiedView
          implements DomNodeInterface {
         
 
-    private timeLastModified: TimeLastModified
+    private timeLastModified: TimeLastModified;
+
 public constructor (timeLastModified: TimeLastModified){
 
             super();
         this.setTimeLastModified(timeLastModified);
     
 }
+
 
 public constructor (node: Node){
 

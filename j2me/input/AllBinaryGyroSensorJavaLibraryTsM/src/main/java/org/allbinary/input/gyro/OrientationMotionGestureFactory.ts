@@ -62,23 +62,23 @@ export class OrientationMotionGestureFactory
 }
 
 
-    public readonly LEFT: MotionGestureInput
+    public readonly LEFT: MotionGestureInput;
 
-    public readonly RIGHT: MotionGestureInput
+    public readonly RIGHT: MotionGestureInput;
 
-    public readonly UP: MotionGestureInput
+    public readonly UP: MotionGestureInput;
 
-    public readonly DOWN: MotionGestureInput
+    public readonly DOWN: MotionGestureInput;
 
-    public readonly ROLL_LEFT: MotionGestureInput
+    public readonly ROLL_LEFT: MotionGestureInput;
 
-    public readonly ROLL_RIGHT: MotionGestureInput
+    public readonly ROLL_RIGHT: MotionGestureInput;
+
 private constructor (){
 
             super();
         
-    var MAX: number = InputFactory.getInstance()!.MAX;
-;
+    var MAX: number = InputFactory.getInstance()!.MAX;;
     
 this.LEFT= new MotionGestureInput(MAX -20, "Left Orient");
     

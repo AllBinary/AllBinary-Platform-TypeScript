@@ -51,6 +51,7 @@ export class BasicQueue
         
 
     readonly queueVector: Vector = new Vector();
+
 protected constructor (){
 
             super();
@@ -82,8 +83,7 @@ this.queueVector!.remove(anyType);
 
     removeLast(): any{
 
-    var anyType: any = this.queueVector!.lastElement()!;
-;
+    var anyType: any = this.queueVector!.lastElement()!;;
     
 this.queueVector!.remove(anyType);
     

@@ -57,9 +57,10 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 export class UserTag extends TableTag {
         
 
-    private role: string
+    private role: string;
 
-    private enable: string
+    private enable: string;
+
 public constructor (){
 
             super();

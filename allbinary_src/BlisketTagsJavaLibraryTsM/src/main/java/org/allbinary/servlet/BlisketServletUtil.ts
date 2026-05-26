@@ -70,8 +70,7 @@ export class BlisketServletUtil
 
     public init(request: HttpServletRequest){
 
-    var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
-;
+    var urlGlobals: AppUrlGlobals = new AppUrlGlobals();;
     
 urlGlobals!.setWebappPath(request.getServletContext()!.getRealPath(AbPathData.getInstance()!.SEPARATOR));
     

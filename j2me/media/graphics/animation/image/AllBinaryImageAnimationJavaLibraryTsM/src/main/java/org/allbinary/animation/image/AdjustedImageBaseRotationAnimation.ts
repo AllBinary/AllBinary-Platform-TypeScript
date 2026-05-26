@@ -55,9 +55,10 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 export class AdjustedImageBaseRotationAnimation extends ImageBaseRotationAnimation {
         
 
-    private dx: number= 0
+    private dx: number= 0;
 
-    private dy: number= 0
+    private dy: number= 0;
+
 public constructor (image: Image, angleInfo: AngleInfo, totalAngle: number, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
                     

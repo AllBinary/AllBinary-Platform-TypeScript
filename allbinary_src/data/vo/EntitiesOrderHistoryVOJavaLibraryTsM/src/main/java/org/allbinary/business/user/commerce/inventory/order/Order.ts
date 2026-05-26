@@ -79,25 +79,26 @@ export class Order
          implements OrderInterface, Serializable {
         
 
-    private readonly basket: BasketInterface
+    private readonly basket: BasketInterface;
 
-    private paymentMethod: string
+    private paymentMethod: string;
 
-    private shippingType: string
+    private shippingType: string;
 
-    private storeName: string
+    private storeName: string;
 
-    private special: string
+    private special: string;
 
-    private id: string
+    private id: string;
 
-    private userComment: string
+    private userComment: string;
 
-    private userCancelComment: string
+    private userCancelComment: string;
 
-    private storeComment: string
+    private storeComment: string;
 
-    private storeCancelComment: string
+    private storeCancelComment: string;
+
 public constructor (basket: BasketInterface){
 
             super();
@@ -110,6 +111,7 @@ this.id=
 this.shippingType= StringUtil.getInstance()!.EMPTY_STRING;
     
 }
+
 
 public constructor (storeName: string, basket: BasketInterface, id: string, shippingType: string, special: string, paymentMethod: string){
 
@@ -166,8 +168,7 @@ this.paymentMethod= paymentMethod;
 
     public getIdValidationInfo(): string{
 
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.getId() == 
@@ -379,8 +380,7 @@ this.storeCancelComment= value;
 
     public toHashMapOrder(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(PaymentData.METHOD, this.paymentMethod);
     
@@ -413,41 +413,33 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMapOrder()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMapOrder()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;
-;
+    var keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;
-;
+    var keyArray: any[] = keySet!.()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
-    var node: Node = document.createElement(OrderData.ORDER)!;
-;
+    var node: Node = document.createElement(OrderData.ORDER)!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var name: string = keyArray[i]! as string;
-;
+    var name: string = keyArray[i]! as string;;
     
 
-    var value: string = hashMap!.get(name) as string;
-;
+    var value: string = hashMap!.get(name) as string;;
     
 value= StringUtil.getInstance()!.getNonNull(value);
     

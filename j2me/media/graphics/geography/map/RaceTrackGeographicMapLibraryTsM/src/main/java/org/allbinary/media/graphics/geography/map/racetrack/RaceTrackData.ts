@@ -76,7 +76,8 @@ export class RaceTrackData
 
     private overPassGeographicMapCellPositionArray: CellPosition[] = this.NO_OVER_PASSES_ARRAY;
 
-    private id: Integer
+    private id: Integer;
+
 public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
 
             super();

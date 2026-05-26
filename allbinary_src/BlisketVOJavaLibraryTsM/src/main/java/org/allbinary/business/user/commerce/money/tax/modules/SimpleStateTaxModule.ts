@@ -95,9 +95,9 @@ export class SimpleStateTaxModule
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private streetAddress: StreetAddress
+    private streetAddress: StreetAddress;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
     private readonly ALL: string = CommonPhoneStrings.getInstance()!.STAR;
 
@@ -105,7 +105,8 @@ export class SimpleStateTaxModule
 
     private readonly STATETAXFILE: string = "stateTaxation.xml";
 
-    private document: Document
+    private document: Document;
+
 public constructor (){
 
             super();
@@ -120,12 +121,10 @@ this.streetAddress= streetAddress;
 this.storeFrontInterface= storeFrontInterface;
     
 
-    var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);
-;
+    var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;
-;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;;
     
 this.document= DomDocumentHelper.create(data);
     
@@ -139,46 +138,37 @@ this.document= DomDocumentHelper.create(data);
                                     }
                                 
 
-    var state: string = this.streetAddress!.getState()!;
-;
+    var state: string = this.streetAddress!.getState()!;;
     
 
-    var country: string = this.streetAddress!.getCountry()!;
-;
+    var country: string = this.streetAddress!.getCountry()!;;
     
 state= state.toUpperCase();
     
 
-    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;
-;
+    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
-    var taxNodeChildren: NodeList = node.getChildNodes()!;
-;
+    var taxNodeChildren: NodeList = node.getChildNodes()!;;
     
 
-    var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;
-;
+    var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;;
     
 
-    var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);
-;
+    var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
@@ -193,16 +183,13 @@ index < nodeList!.getLength(); index++)
                         
                                     {
                                     
-    var rateNode: Node = DomSearchHelper.getNode(TaxData.RATE, taxNodeChildren)!;
-;
+    var rateNode: Node = DomSearchHelper.getNode(TaxData.RATE, taxNodeChildren)!;;
     
 
-    var taxRate: string = DomNodeHelper.getTextNodeValue(rateNode)!;
-;
+    var taxRate: string = DomNodeHelper.getTextNodeValue(rateNode)!;;
     
 
-    var taxRateFloat: number = new number(new number(taxRate) *.01);
-;
+    var taxRateFloat: number = new number(new number(taxRate) *.01);;
     
 
 
@@ -235,12 +222,10 @@ index < nodeList!.getLength(); index++)
 this.storeFrontInterface= storeFrontInterface;
     
 
-    var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);
-;
+    var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);;
     
 
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;
-;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(fileAbPath)!;;
     
 this.document= DomDocumentHelper.create(data);
     
@@ -254,44 +239,36 @@ this.document= DomDocumentHelper.create(data);
                                     }
                                 
 
-    var country: string = this.streetAddress!.getCountry()!;
-;
+    var country: string = this.streetAddress!.getCountry()!;;
     
 
-    var rootNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-;
+    var rootNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;
-;
+    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var node: Node = nodeList!.item(index)!;
-;
+    var node: Node = nodeList!.item(index)!;;
     
 
-    var taxNodeChildren: NodeList = node.getChildNodes()!;
-;
+    var taxNodeChildren: NodeList = node.getChildNodes()!;;
     
 
-    var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;
-;
+    var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("StreetAddress Node: ");
     
@@ -311,12 +288,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                                     }
                                 
 
-    var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);
-;
+    var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && taxableStreetAddress!.getCountry()!.compareTo(this.ALL) == 0)
@@ -336,8 +311,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         
                                     {
                                     
-    var state: string = this.streetAddress!.getState()!;
-;
+    var state: string = this.streetAddress!.getState()!;;
     
 
                         if(state != 

@@ -72,15 +72,16 @@ export class GameInfo
 
     private readonly gameInfoData: GameInfoData = GameInfoData.getInstance()!;
 
-    private readonly gameType: GameType
+    private readonly gameType: GameType;
 
-    private readonly gameMode: GameMode
+    private readonly gameMode: GameMode;
 
-    private readonly playerType: PlayerType
+    private readonly playerType: PlayerType;
 
-    private highestLevel: number= 0
+    private highestLevel: number= 0;
 
-    private currentLevel: number
+    private currentLevel: number;
+
 public constructor (gameType: GameType, gameMode: GameMode, playerType: PlayerType, highestLevel: number, currentLevel: number){
 
             super();
@@ -220,8 +221,7 @@ this.logUtil!.putF(new StringMaker().append(this.NEXT)!.append(this.NEW_LEVEL)!.
 
     public toHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
 hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString());
     
@@ -244,12 +244,10 @@ hashtable.put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString());
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 stringBuffer!.append(this.gameInfoData!.GAME_TYPE);
     

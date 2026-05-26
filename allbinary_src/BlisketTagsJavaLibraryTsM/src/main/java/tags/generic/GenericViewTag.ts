@@ -52,9 +52,10 @@ export class GenericViewTag extends TransformTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private output: string
+    private output: string;
 
-    private file: string
+    private file: string;
+
 public constructor (){
 
             super();

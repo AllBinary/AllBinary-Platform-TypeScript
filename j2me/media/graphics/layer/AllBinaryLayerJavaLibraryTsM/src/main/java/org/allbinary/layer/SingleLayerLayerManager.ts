@@ -45,6 +45,7 @@ import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
 
 export class SingleLayerLayerManager extends LayerManager {
         
+
 public constructor (){
             super(LayerManagerNoDebug.getInstance());
                     

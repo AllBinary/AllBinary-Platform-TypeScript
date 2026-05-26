@@ -74,16 +74,13 @@ export class FormUtil
 
     public createFormRectangle(): Rectangle{
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, 10), displayInfo!.getLastWidth() -30, displayInfo!.getLastHeight() -35);
-;
+    var rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, 10), displayInfo!.getLastWidth() -30, displayInfo!.getLastHeight() -35);;
     
 
 
@@ -96,20 +93,16 @@ export class FormUtil
 
     public createPopupMenuRectangle(): Rectangle{
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var popupMenuRectangle: Rectangle = RectangleFactory.SINGLETON;
-;
+    var popupMenuRectangle: Rectangle = RectangleFactory.SINGLETON;;
     
 
-    var pointFactory: PointFactory = PointFactory.getInstance()!;
-;
+    var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
                         if(displayInfo!.getLastHeight() < 320)

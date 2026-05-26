@@ -100,6 +100,7 @@ export class ImageUtil
     private IIOIMAGE_POOL_NAME: string = "IIOIMAGE_POOL_NAME";
 
     private readonly CREATE_BUFFERED_IMAGE: string = "createBufferedImage";
+
 private constructor (){
 
             super();
@@ -120,8 +121,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 
     public create(width: number, height: number): org.eclipse.swt.graphics.Image{
 
-    var display: Display = BareMain.shell.getDisplay()!;
-;
+    var display: Display = BareMain.shell.getDisplay()!;;
     
 
 
@@ -137,40 +137,33 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
     public createBufferedImage(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
-    var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);
-;
+    var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);;
     
 
-    var bufferedImage: org.eclipse.swt.graphics.Image
-;
+    var bufferedImage: org.eclipse.swt.graphics.Image;;
     
 
-    var imageData: ImageData
-;
+    var imageData: ImageData;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!;
     
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = Math.round((imageData!.width *percent /100));
-;
+    var newWidth: number = Math.round((imageData!.width *percent /100));;
     
 
-    var newHeight: number = Math.round((imageData!.height *percent /100));
-;
+    var newHeight: number = Math.round((imageData!.height *percent /100));;
     
 scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWidth, newHeight, scale);
     
@@ -190,40 +183,33 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
     public createBufferedImage2(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
-    var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);
-;
+    var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);;
     
 
-    var bufferedImage: org.eclipse.swt.graphics.Image
-;
+    var bufferedImage: org.eclipse.swt.graphics.Image;;
     
 
-    var imageData: ImageData
-;
+    var imageData: ImageData;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!;
     
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = Math.round((imageData!.width *percent));
-;
+    var newWidth: number = Math.round((imageData!.width *percent));;
     
 
-    var newHeight: number = Math.round((imageData!.height *percent));
-;
+    var newHeight: number = Math.round((imageData!.height *percent));;
     
 scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWidth, newHeight, scale);
     
@@ -243,20 +229,17 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
     public createBufferedImage3(bufferedImageArray: org.eclipse.swt.graphics.Image[], width: number, height: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
-    var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);
-;
+    var scaledBufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(size);;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImageArray[index]!, width, height, scale);
     
@@ -299,40 +282,31 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImageArray[in
             
     public createBufferedImage6(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): org.eclipse.swt.graphics.Image{
 
-    var imageData: ImageData = bufferedImage!.getImageData()!;
-;
+    var imageData: ImageData = bufferedImage!.getImageData()!;;
     
 
-    var width: number = imageData!.width;
-;
+    var width: number = imageData!.width;;
     
 
-    var height: number = imageData!.height;
-;
+    var height: number = imageData!.height;;
     
 
-    var d_newWidth: number = newWidth;
-;
+    var d_newWidth: number = newWidth;;
     
 
-    var d_newHeight: number = newHeight;
-;
+    var d_newHeight: number = newHeight;;
     
 
-    var widthRatio: number = d_newWidth /width;
-;
+    var widthRatio: number = d_newWidth /width;;
     
 
-    var heightRatio: number = d_newHeight /height;
-;
+    var heightRatio: number = d_newHeight /height;;
     
 
-    var ratioX: number = 1.0;
-;
+    var ratioX: number = 1.0;;
     
 
-    var ratioY: number = 1.0;
-;
+    var ratioY: number = 1.0;;
     
 
                         if(scale)
@@ -348,12 +322,10 @@ ratioY= heightRatio;
 this.logUtil!.putF(new StringMaker().appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, this.CREATE_BUFFERED_IMAGE);
     
 
-    var dx: number = 0;
-;
+    var dx: number = 0;;
     
 
-    var dy: number = 0;
-;
+    var dy: number = 0;;
     
 
                         if(!scale && allowTranslate)
@@ -369,16 +341,13 @@ this.logUtil!.putF(new StringMaker().append("Translate dx: ")!.appendfloat(dx)!.
                                     }
                                 
 
-    var newBufferedImage: org.eclipse.swt.graphics.Image = new org.eclipse.swt.graphics.Image(BareMain.shell.getDisplay(), newWidth, newHeight);
-;
+    var newBufferedImage: org.eclipse.swt.graphics.Image = new org.eclipse.swt.graphics.Image(BareMain.shell.getDisplay(), newWidth, newHeight);;
     
 
-    var gc: GC = new GC(newBufferedImage);
-;
+    var gc: GC = new GC(newBufferedImage);;
     
 
-    var affineTransform: Transform = new Transform(gc.getDevice());
-;
+    var affineTransform: Transform = new Transform(gc.getDevice());;
     
 affineTransform!.scale(ratioX, ratioY);
     
@@ -405,20 +374,17 @@ gc.dispose();
 
     public drawTransformedImage(image: org.eclipse.swt.graphics.Image, parent: Composite, dx: number, dy: number, width: number, height: number): Canvas{
 
-    var imageCanvas: Canvas = new Canvas(parent, SWT.NONE);
-;
+    var imageCanvas: Canvas = new Canvas(parent, SWT.NONE);;
     
 imageCanvas!.addPaintListener(new class extends PaintListener
                                 {
                                 
     public paintControl(event: PaintEvent){
 
-    var gc: GC = event.gc;
-;
+    var gc: GC = event.gc;;
     
 
-    var affineTransform: Transform = new Transform(gc.getDevice());
-;
+    var affineTransform: Transform = new Transform(gc.getDevice());;
     
 affineTransform!.translate(dx, dy);
     
@@ -444,16 +410,13 @@ gc.drawImage(image, 0, 0, image.getBounds()!.width, image.getBounds()!.height, 0
 
     public toString(bufferedImage: org.eclipse.swt.graphics.Image): string{
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var imageData: ImageData = bufferedImage!.getImageData()!;
-;
+    var imageData: ImageData = bufferedImage!.getImageData()!;;
     
 stringBuffer!.append(" org.eclipse.swt.graphics.Image: ");
     

@@ -78,23 +78,19 @@ export class TouchButtonAndroidResources extends Init {
 
     public init(){
 
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-;
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var androidResources: AndroidResources = AndroidResources.getInstance()!;
-;
+    var androidResources: AndroidResources = AndroidResources.getInstance()!;;
     
 
     var RESOURCE_STRING_ARRAY: TouchButtonResource[] = 
                                                         [
                                                             TouchButtonBlankResource.getInstance(), TouchButtonGenericActionResource.getInstance(), TouchButtonStartResource.getInstance(), TouchButtonUpResource.getInstance(), TouchButtonDownResource.getInstance(), TouchButtonTurnLeftResource.getInstance(), TouchButtonTurnRightResource.getInstance(), TouchButtonStrafeLeftResource.getInstance(), TouchButtonStrafeRightResource.getInstance()
-                                                        ];
-;
+                                                        ];;
     
 
-    var RESOURCE_ARRAY: number[] = new Array(RESOURCE_STRING_ARRAY.length);
-;
+    var RESOURCE_ARRAY: number[] = new Array(RESOURCE_STRING_ARRAY.length);;
     
 
                         if(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE == 128)
@@ -157,8 +153,7 @@ RESOURCE_ARRAY[8]= androidResources!.raw.touch_button_strafe_right_arrow_64_by_6
 
 
                         for (
-    var index: number = 0;
-index < RESOURCE_ARRAY.length; index++)
+    var index: number = 0;index < RESOURCE_ARRAY.length; index++)
         {
 resourceUtil!.addResource(RESOURCE_STRING_ARRAY[index]!.RESOURCE, Integer.valueOf(RESOURCE_ARRAY[index]!));
     

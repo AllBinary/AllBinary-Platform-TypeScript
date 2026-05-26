@@ -77,16 +77,13 @@ this.timeDelayHelper!.delay= duration;
                                     this.timeDelayHelper!.delay= Integer.MAX_VALUE;
     
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var width: number = myFont!.stringWidth(this.VIBRATING)!;
-;
+    var width: number = myFont!.stringWidth(this.VIBRATING)!;;
     
 graphics.drawString(this.VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width>>1), 0, this.anchor);
     

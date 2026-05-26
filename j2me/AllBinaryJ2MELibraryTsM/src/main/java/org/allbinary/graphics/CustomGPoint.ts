@@ -67,11 +67,12 @@ export class CustomGPoint extends GPoint {
 }
 
 
-    private cx: number= 0
+    private cx: number= 0;
 
-    private cy: number= 0
+    private cy: number= 0;
 
-    private cz: number= 0
+    private cz: number= 0;
+
 public constructor (x: number, y: number, z: number){
             super(x, y, z);
                     

@@ -49,6 +49,7 @@ export class NullDisplayable extends Canvas {
     
 }
 
+
 private constructor (){
 
             super();

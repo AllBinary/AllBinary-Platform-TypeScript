@@ -89,6 +89,7 @@ export class UserData
     public static readonly PERMISSIONS: string = "CUSTOMER_PERMISSIONS";
 
     public static readonly CONFIGURATION: string = "CUSTOMER_CONFIGURATION";
+
 private constructor (){
 
             super();

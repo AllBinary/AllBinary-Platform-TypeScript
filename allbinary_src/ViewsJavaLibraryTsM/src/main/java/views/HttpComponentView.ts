@@ -80,9 +80,10 @@ export class HttpComponentView extends TransformInfoHttpComposite implements Tra
 
     readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private domNodeInterfaceVector: Vector
+    private domNodeInterfaceVector: Vector;
 
-    private transformDocumentInterface: TransformDocumentInterface
+    private transformDocumentInterface: TransformDocumentInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -145,20 +146,17 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 
         try {
             
-    var size: number = this.domNodeInterfaceVector!.length!;
-;
+    var size: number = this.domNodeInterfaceVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index) as DomNodeInterface;
-;
+    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index) as DomNodeInterface;;
     
 this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()));
     
@@ -197,12 +195,10 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
             
     public getDoc(): Document{
 
-    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;
-;
+    var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;;
     
 
-    var node: Node = DomNodeHelper.getFirstChildElement(document)!;
-;
+    var node: Node = DomNodeHelper.getFirstChildElement(document)!;;
     
 
                         if(node != 
@@ -211,8 +207,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
                         
                                     {
                                     
-    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(node, true)!;
-;
+    var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(node, true)!;;
     
 
                         if(dataNode != 
@@ -245,12 +240,10 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
             this.toXmlDoc();
     
 
-    var success: string = DomDocumentHelper.toString(this.getDoc())!;
-;
+    var success: string = DomDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
-;
+    var result: string = new BasicTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 

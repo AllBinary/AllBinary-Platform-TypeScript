@@ -57,6 +57,7 @@ export class StoreFrontsRequestHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.StoreFrontsRequestHelper";
 
     private static readonly FACTORYNAME: string = "StoreFrontsRequestHelperFactory";
+
 public constructor (){
 
             super();

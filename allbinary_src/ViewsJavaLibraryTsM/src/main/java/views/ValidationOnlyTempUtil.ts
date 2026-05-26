@@ -69,6 +69,7 @@ export class ValidationOnlyTempUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -79,8 +80,7 @@ private constructor (){
             
     public view(validationComponentInterface: ValidationComponentInterface): string{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {

@@ -56,6 +56,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 
 export class ValidationView extends BillingAddressesView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -67,8 +68,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public isValid(): Boolean{
 
-    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());
-;
+    var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddresses= billingAddressesEntity!.get();
     

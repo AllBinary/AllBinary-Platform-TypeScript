@@ -96,14 +96,12 @@ export class InputRobotFactory
             
     public static loadLibraries(collection: Collection){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF("Loading Libraries", "InputRobotFactory", "loadLibraries");
     
 
-    var iterator: Iterator = collection.iterator()!;
-;
+    var iterator: Iterator = collection.iterator()!;;
     
 
         while(iterator.hasNext())
@@ -119,8 +117,7 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
             
     public static loadLibrary(inputRobotInterface: InputRobotInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
                         if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface.constructor, inputRobotInterface))
@@ -129,8 +126,7 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
                                     logUtil!.putF("Loading Library: " +inputRobotInterface!.getName(), "InputRobotFactory", "loadLibraries");
     
 
-    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;
-;
+    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;;
     
 securedNativeLibraryInterface!.load();
     
@@ -146,31 +142,28 @@ securedNativeLibraryInterface!.load();
 
     private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-    private helpSetListenerInterface: HelpSetListener
+    private helpSetListenerInterface: HelpSetListener;
+
 private constructor (){
 
             super();
         
         try {
             
-    var graphenv: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;
-;
+    var graphenv: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;;
     
 
-    var screens: GraphicsDevice[] = graphenv.getScreenDevices()!;
-;
+    var screens: GraphicsDevice[] = graphenv.getScreenDevices()!;;
     
 
-    var inputRobotInterface: InputRobotInterface
-;
+    var inputRobotInterface: InputRobotInterface;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < screens.length; i++)
+    var i: number = 0;i < screens.length; i++)
         {
 inputRobotInterface= new InputRobot(screens[i]!) as InputRobotInterface;
     
@@ -207,8 +200,7 @@ this.logUtil!.putF("Adding InputRobotInterface: " +inputRobotInterface!.getName(
 this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
     
 
-    var helpSet: HelpSet = inputRobotInterface!.getHelpSet()!;
-;
+    var helpSet: HelpSet = inputRobotInterface!.getHelpSet()!;;
     
 
                         if(this.helpSetListenerInterface != 
@@ -227,8 +219,7 @@ this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
                         
                                     {
                                     
-    var helpSetEvent: HelpSetEvent = new HelpSetEvent(this, helpSet, HelpSetEvent.HELPSET_ADDED);
-;
+    var helpSetEvent: HelpSetEvent = new HelpSetEvent(this, helpSet, HelpSetEvent.HELPSET_ADDED);;
     
 this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
     
@@ -260,31 +251,26 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
             
     public loadLibraries(){
 
-    var set: Set = this.get()!.keySet()!;
-;
+    var set: Set = this.get()!.keySet()!;;
     
 this.logUtil!.putF("Loading Libraries", this, "loadLibraries");
     
 
-    var nameArray: any[] = set.toArray()!;
-;
+    var nameArray: any[] = set.toArray()!;;
     
 
     var size: number = nameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get(nameArray[index]! as string)!;
-;
+    var inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get(nameArray[index]! as string)!;;
     
 InputRobotFactory.loadLibrary(inputRobotInterface);
     
@@ -299,29 +285,24 @@ InputRobotFactory.loadLibrary(inputRobotInterface);
 this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
     
 
-    var set: Set = this.get()!.keySet()!;
-;
+    var set: Set = this.get()!.keySet()!;;
     
 
-    var inputRobotInterface: InputRobotInterface
-;
+    var inputRobotInterface: InputRobotInterface;;
     
 
-    var inputRobotArray: any[] = set.toArray()!;
-;
+    var inputRobotArray: any[] = set.toArray()!;;
     
 
     var size: number = inputRobotArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 inputRobotInterface= this.get(inputRobotArray[index]! as string);
     
@@ -332,8 +313,7 @@ inputRobotInterface= this.get(inputRobotArray[index]! as string);
                                     this.logUtil!.putF("Unloading Library: " +inputRobotInterface!.getName(), this, "unloadLibraries");
     
 
-    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;
-;
+    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;;
     
 securedNativeLibraryInterface!.unload();
     

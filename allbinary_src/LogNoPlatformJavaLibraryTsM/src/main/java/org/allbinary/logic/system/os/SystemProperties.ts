@@ -49,7 +49,9 @@ expect export class SystemProperties
         
 
     //private static readonly instance: SystemProperties
+
     public static getInstance(): SystemProperties
+
 
 
     public getName(): string

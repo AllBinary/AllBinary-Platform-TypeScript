@@ -90,8 +90,7 @@ export class TsUtil
             
     public waitFor(any: any = {}, timeoutMillis: number){
 
-    var anyType: any = any;
-;
+    var anyType: any = any;;
     
 anyType!.wait(timeoutMillis);
     
@@ -102,12 +101,10 @@ anyType!.wait(timeoutMillis);
             
     public getRecord(anyType: any = {}, recordId: number): number[]{
 
-    var recordStore: RecordStore = anyType as RecordStore;
-;
+    var recordStore: RecordStore = anyType as RecordStore;;
     
 
-    var data: number[]
-;
+    var data: number[];;
     
 
         

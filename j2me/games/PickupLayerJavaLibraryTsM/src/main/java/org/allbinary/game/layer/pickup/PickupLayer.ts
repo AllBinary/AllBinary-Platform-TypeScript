@@ -76,9 +76,10 @@ export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerIn
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
 
-    private destroyed: boolean= false
+    private destroyed: boolean= false;
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
+
 public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
                     
@@ -114,16 +115,13 @@ this.setPosition(x, y, z);
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;
-;
+    var viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;
-;
+    var viewY: number = viewPosition!.getY()!;;
     
 this.animationInterface!.paintXY(graphics, viewX, viewY);
     
@@ -132,16 +130,13 @@ this.animationInterface!.paintXY(graphics, viewX, viewY);
 
     public paintThreed(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;
-;
+    var viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;
-;
+    var viewY: number = viewPosition!.getY()!;;
     
 this.animationInterface!.paintThreed(graphics, viewX, viewY, 3);
     
@@ -207,8 +202,7 @@ this.destroyed= destroyed;
             
     public set(gl: GL){
 
-    var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;
-;
+    var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;;
     
 openGLSurfaceChangedInterface!.set(gl);
     

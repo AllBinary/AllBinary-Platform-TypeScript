@@ -54,6 +54,7 @@ import { ImageComparatorConstraints } from '../../../../../../../org/allbinary/i
 
 export class NoImageComparatorConstraints extends ImageComparatorConstraints {
         
+
 public constructor (){
             super(1);
                     

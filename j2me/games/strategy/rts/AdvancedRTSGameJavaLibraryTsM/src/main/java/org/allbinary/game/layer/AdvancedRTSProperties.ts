@@ -83,13 +83,14 @@ export class AdvancedRTSProperties
 }
 
 
-    public readonly shakeListener: ShakeAnimationListener
+    public readonly shakeListener: ShakeAnimationListener;
 
-    public readonly vibration: AllBinaryVibrationME
+    public readonly vibration: AllBinaryVibrationME;
 
-    public readonly duration: number
+    public readonly duration: number;
 
-    public waypointBehaviorBase: TickableInterface
+    public waypointBehaviorBase: TickableInterface;
+
 public constructor (shakeListener: ShakeAnimationListener, vibration: AllBinaryVibrationME, duration: number, waypointBehaviorBase: TickableInterface){
 
             super();

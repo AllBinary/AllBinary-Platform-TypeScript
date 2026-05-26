@@ -52,6 +52,7 @@ export class TerrainEvent extends AllBinaryEventObject {
         
 
     private basicTerrainInfo: BasicTerrainInfo = BasicTerrainInfo.NULL_BASIC_TERRAIN_INFO;
+
 public constructor (basicTerrainInfo: any = {}){
             super(basicTerrainInfo);
                     
@@ -65,8 +66,7 @@ this.setBasicTerrainInfo(basicTerrainInfo as BasicTerrainInfo);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TerrainEvent: \n");
     

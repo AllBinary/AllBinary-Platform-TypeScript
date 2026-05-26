@@ -100,45 +100,46 @@ export class DateRangeOrderHistoryView extends HttpStoreComponentView implements
 
     private readonly VIEWORDERSINLAST30DAYS: string = "30 Days";
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private shipped: string
+    private shipped: string;
 
-    private partiallyShipped: string
+    private partiallyShipped: string;
 
-    private processing: string
+    private processing: string;
 
-    private preprocessing: string
+    private preprocessing: string;
 
-    private cancelled: string
+    private cancelled: string;
 
-    private dateType: string
+    private dateType: string;
 
-    private toDate: string
+    private toDate: string;
 
-    private fromDate: string
+    private fromDate: string;
 
-    private fromYear: string
+    private fromYear: string;
 
-    private fromMonth: string
+    private fromMonth: string;
 
-    private fromDay: string
+    private fromDay: string;
 
-    private fromHour: string
+    private fromHour: string;
 
-    private toYear: string
+    private toYear: string;
 
-    private toMonth: string
+    private toMonth: string;
 
-    private toDay: string
+    private toDay: string;
 
-    private toHour: string
+    private toHour: string;
 
-    private command: string
+    private command: string;
 
     private readonly ON: string = "on";
 
     private MAXLEN: number = 15;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -236,8 +237,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Attempt to View orders in (fromDate=");
     
@@ -255,8 +255,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
                                     }
                                 
 
-    var node: Node = document.createElement(OrderData.ORDERS)!;
-;
+    var node: Node = document.createElement(OrderData.ORDERS)!;;
     
 
                         if(this.preprocessing != 
@@ -274,24 +273,20 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;
-;
+    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PREPROCESSING, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;
-;
+    var size: number = orderHistoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -316,24 +311,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;
-;
+    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.SHIPPED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;
-;
+    var size: number = orderHistoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -358,24 +349,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;
-;
+    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PARTIALLYSHIPPED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;
-;
+    var size: number = orderHistoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -400,24 +387,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;
-;
+    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.PROCESSING, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;
-;
+    var size: number = orderHistoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -442,24 +425,20 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;
-;
+    var orderHistoryVector: Vector = OrderHistoryEntityFactory.getInstance()!.getOrders(OrderHistoryData.CANCELLED, fromDate, toDate)!;;
     
 
-    var size: number = orderHistoryVector!.length!;
-;
+    var size: number = orderHistoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
-;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;;
     
 node.appendChild(orderHistory!.toXmlNode(document));
     
@@ -514,8 +493,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(this.dateType == 
@@ -539,24 +517,20 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         
                                     {
                                     
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var currentTime: number = calendar.getTimeInMillis()!;
-;
+    var currentTime: number = calendar.getTimeInMillis()!;;
     
 
-    var rangeDate: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var rangeDate: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(this.command.compareTo(this.VIEWORDERSINLASTHOUR) == 0)
                         
                                     {
                                     
-    var oneHour: number = 60 *60 *1000;
-;
+    var oneHour: number = 60 *60 *1000;;
     
 rangeDate= new Long(oneHour).toString();
     
@@ -568,8 +542,7 @@ rangeDate= new Long(oneHour).toString();
                         
                                     {
                                     
-    var oneDay: number = 24 *60 *60 *1000;
-;
+    var oneDay: number = 24 *60 *60 *1000;;
     
 rangeDate= new Long(oneDay).toString();
     
@@ -581,8 +554,7 @@ rangeDate= new Long(oneDay).toString();
                         
                                     {
                                     
-    var oneWeek: number = 7 *24 *60 *60 *1000;
-;
+    var oneWeek: number = 7 *24 *60 *60 *1000;;
     
 rangeDate= new Long(oneWeek).toString();
     
@@ -594,8 +566,7 @@ rangeDate= new Long(oneWeek).toString();
                         
                                     {
                                     
-    var thirtyDays: number = 30 *24 *60 *60 *1000;
-;
+    var thirtyDays: number = 30 *24 *60 *60 *1000;;
     
 rangeDate= new Long(thirtyDays).toString();
     
@@ -612,14 +583,12 @@ rangeDate= new Long(thirtyDays).toString();
                                     }
                                 
 
-    var rangeDateLong: number = new Long(rangeDate).longValue()!;
-;
+    var rangeDateLong: number = new Long(rangeDate).longValue()!;;
     
 this.fromDate= new Long(currentTime -rangeDateLong).toString();
     
 
-    var time: string = new Long(currentTime).toString();
-;
+    var time: string = new Long(currentTime).toString();;
     
 this.toDate= time;
     
@@ -631,8 +600,7 @@ this.toDate= time;
                         
                                     {
                                     
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 TimeUtil.getInstance()!.setCalendar(calendar, this.fromYear, this.fromMonth, this.fromDay, this.fromHour);
     
@@ -671,8 +639,7 @@ this.toDate= new Long(calendar.getTimeInMillis()).toString();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Attempt to View orders in (fromDate=");
     
@@ -745,8 +712,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
         try {
             
-    var result: StringMaker = new StringMaker();
-;
+    var result: StringMaker = new StringMaker();;
     
 
                         if(this.dateType == 

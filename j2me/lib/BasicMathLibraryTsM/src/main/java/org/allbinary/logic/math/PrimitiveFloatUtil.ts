@@ -55,6 +55,7 @@ export class PrimitiveFloatUtil
     
 }
 
+
 private constructor (){
 
             super();

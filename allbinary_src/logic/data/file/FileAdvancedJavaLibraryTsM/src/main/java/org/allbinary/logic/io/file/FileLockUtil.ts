@@ -74,6 +74,7 @@ export class FileLockUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -84,28 +85,23 @@ private constructor (){
             
     public getAll(vector: Vector, isReturnOnFailure: boolean): Vector{
 
-    var fileLockVector: Vector = new Vector();
-;
+    var fileLockVector: Vector = new Vector();;
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var file: AbFile = vector.get(index) as AbFile;
-;
+    var file: AbFile = vector.get(index) as AbFile;;
     
 
-    var fileLock: FileLock = this.getLock(file)!;
-;
+    var fileLock: FileLock = this.getLock(file)!;;
     
 
                         if(fileLock != 
@@ -164,8 +160,7 @@ this.logUtil!.putF("Total Locks Obtained: " +fileLockVector!.length, this, "getA
             
     public getAllOrNone(vector: Vector): Vector{
 
-    var fileLockVector: Vector = this.getAll(vector, true)!;
-;
+    var fileLockVector: Vector = this.getAll(vector, true)!;;
     
 
                         if(vector.length != fileLockVector!.length)
@@ -231,8 +226,7 @@ this.logUtil!.put("Exception returns null", this, "getLock", e);
 
         try {
             
-    var fileLock: FileLock = this.getLock(fileOutputStream!.getChannel())!;
-;
+    var fileLock: FileLock = this.getLock(fileOutputStream!.getChannel())!;;
     
 
 
@@ -271,8 +265,7 @@ StreamUtil.getInstance()!.close(fileOutputStream);
 
         try {
             
-    var fileLock: FileLock = fileChannel!.tryLock()!;
-;
+    var fileLock: FileLock = fileChannel!.tryLock()!;;
     
 
 

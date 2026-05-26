@@ -60,7 +60,8 @@ export class GeologicalGeographicMapCellPositionFactory
          implements GeographicMapCellPositionFactoryInterface {
         
 
-    private readonly resourcePerMapCellType: number[]
+    private readonly resourcePerMapCellType: number[];
+
 public constructor (resourcePerMapCellType: number[]){
 
             super();
@@ -73,12 +74,10 @@ public constructor (resourcePerMapCellType: number[]){
             
     public getInstance(geographicMapInterface: BasicGeographicMap, i_column: number, i_row: number, columns: number, rows: number, width: number, height: number): GeographicMapCellPosition{
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var resources: number = this.resourcePerMapCellType[tiledLayer!.getCell(i_column, i_row)] +MyRandomFactory.getInstance()!.getAbsoluteNextInt(1000);
-;
+    var resources: number = this.resourcePerMapCellType[tiledLayer!.getCell(i_column, i_row)] +MyRandomFactory.getInstance()!.getAbsoluteNextInt(1000);;
     
 
 

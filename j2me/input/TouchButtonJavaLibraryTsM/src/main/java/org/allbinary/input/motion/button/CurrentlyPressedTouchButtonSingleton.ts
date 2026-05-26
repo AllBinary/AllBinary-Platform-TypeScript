@@ -64,6 +64,7 @@ export class CurrentlyPressedTouchButtonSingleton
 
 
     readonly list: BasicArrayList = new BasicArrayListD();
+
 protected constructor (){
 
             super();

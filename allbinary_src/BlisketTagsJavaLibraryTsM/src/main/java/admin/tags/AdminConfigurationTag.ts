@@ -48,6 +48,7 @@ import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/A
 
 export class AdminConfigurationTag extends TableTag {
         
+
 public constructor (){
 
             super();

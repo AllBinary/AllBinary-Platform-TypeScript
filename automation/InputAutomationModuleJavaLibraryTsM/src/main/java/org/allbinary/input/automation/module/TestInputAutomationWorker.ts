@@ -60,17 +60,18 @@ export class TestInputAutomationWorker
          {
         
 
-    private captureWorker: ScreenCaptureImagesWorker
+    private captureWorker: ScreenCaptureImagesWorker;
 
-    private imageComparisonWorker: ImageComparisonWorker
+    private imageComparisonWorker: ImageComparisonWorker;
 
-    private motionRectanglesWorker: MotionRectanglesWorker
+    private motionRectanglesWorker: MotionRectanglesWorker;
 
-    private changedPixelsImageComparisonResultsWorker: SaveImageComparisonWorker
+    private changedPixelsImageComparisonResultsWorker: SaveImageComparisonWorker;
 
-    private saveMotionRectanglesAsImagesWorker: SaveMotionRectanglesResultsWorker
+    private saveMotionRectanglesAsImagesWorker: SaveMotionRectanglesResultsWorker;
 
-    private moveMouseToFirstMotionRectanglesResultsWorker: TestInputForMotionRectanglesResultsWorker
+    private moveMouseToFirstMotionRectanglesResultsWorker: TestInputForMotionRectanglesResultsWorker;
+
 public constructor (){
 
             super();

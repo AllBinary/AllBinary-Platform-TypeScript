@@ -78,6 +78,7 @@ export class AndroidTitleProgressBar extends ProgressCanvas {
     private progressActivity: ProgressActivityInterface = NullProgressActivity.NULL_PROGRESS_ACTIVITY;
 
     private portion: number = 0;
+
 protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
                     
@@ -234,18 +235,15 @@ TitleProgressBarSetProgressRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var value: number = Math.round(AndroidTitleProgressBar.prototype.getValue());
-;
+    var value: number = Math.round(AndroidTitleProgressBar.prototype.getValue());;
     
 AndroidTitleProgressBar.prototype.progressActivity!.onTitleProgressBarSetProgress(value);
     
@@ -271,18 +269,15 @@ TitleProgressBarPortionSetProgressRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var value: number = Math.round((AndroidTitleProgressBar.prototype.getValue() +AndroidTitleProgressBar.prototype.getMaxValue() /AndroidTitleProgressBar.prototype.portion));
-;
+    var value: number = Math.round((AndroidTitleProgressBar.prototype.getValue() +AndroidTitleProgressBar.prototype.getMaxValue() /AndroidTitleProgressBar.prototype.portion));;
     
 AndroidTitleProgressBar.prototype.progressActivity!.onTitleProgressBarSetProgress(value);
     
@@ -308,18 +303,15 @@ ShowTitleProgressBarRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var maxValue: number = Math.round(AndroidTitleProgressBar.prototype.getMaxValue());
-;
+    var maxValue: number = Math.round(AndroidTitleProgressBar.prototype.getMaxValue());;
     
 AndroidTitleProgressBar.prototype.progressActivity!.onShowTitleProgressBar(maxValue, false);
     
@@ -345,12 +337,10 @@ DismissTitleProgressBarRunnable = class
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {

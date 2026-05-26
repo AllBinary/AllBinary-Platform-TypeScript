@@ -49,6 +49,7 @@ export class MultiplayerBehavior
         
 
     public static readonly NULL_MULTIPLAYER_BEHAVIOR: MultiplayerBehavior = new MultiplayerBehavior(StringUtil.getInstance()!.EMPTY_STRING);
+
 protected constructor (username: string){
 
             super();

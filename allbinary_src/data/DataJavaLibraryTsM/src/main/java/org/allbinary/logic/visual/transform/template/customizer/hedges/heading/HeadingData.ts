@@ -47,6 +47,7 @@ export class HeadingData
         
 
     public static readonly NAME: string = "HEADER_NAME";
+
 private constructor (){
 
             super();

@@ -65,6 +65,7 @@ export class LogConfigTypeFactory
     public readonly OS: LogConfigType = new LogConfigType("Operating System", this.NO_DESCRIPTION);
 
     public readonly FACTORYERROR: LogConfigType = new LogConfigType("Factory Error", this.NO_DESCRIPTION);
+
 private constructor (){
 
             super();

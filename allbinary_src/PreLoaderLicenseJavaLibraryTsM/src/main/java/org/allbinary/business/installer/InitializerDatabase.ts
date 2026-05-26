@@ -84,58 +84,51 @@ export class InitializerDatabase
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private adminDbUserName: string
+    private adminDbUserName: string;
 
-    private adminDbPassword: string
+    private adminDbPassword: string;
 
-    private adminJdbcDriver: string
+    private adminJdbcDriver: string;
 
-    private adminSchema: string
+    private adminSchema: string;
 
-    private adminServer: string
+    private adminServer: string;
 
-    private adminPort: string
+    private adminPort: string;
 
-    private initDb: DynamicInitDb
+    private initDb: DynamicInitDb;
+
 public constructor (abeClientInformation: AbeClientInformationInterface, map: Map){
 
             super();
         
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var keys: Set = map.keySet()!;
-;
+    var keys: Set = map.keySet()!;;
     
 
-    var keyArray: any[] = keys.toArray()!;
-;
+    var keyArray: any[] = keys.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: string = keyArray[index]! as string;
-;
+    var key: string = keyArray[index]! as string;;
     
 
-    var values: string[] = map.get(key) as string[];
-;
+    var values: string[] = map.get(key) as string[];;
     
 hashMap!.put(key.toCharArray().slice(0, ).join(''), .toCharArray());
     
@@ -157,6 +150,7 @@ this.getFormData(abeClientInformation, hashMap);
     
 }
 
+
 public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>){
 
             super();
@@ -169,8 +163,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, initHas
 
         try {
             
-    var initializerData: InitializerData = InitializerData.getInstance()!;
-;
+    var initializerData: InitializerData = InitializerData.getInstance()!;;
     
 this.setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as string);
     
@@ -185,12 +178,10 @@ this.setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as string);
 this.setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as string);
     
 
-    var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();
-;
+    var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();;
     
 
-    var adminDbName: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var adminDbName: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 dbConnectionInfo!.setJdbcDriver(getAdminJdbcDriver());
     
@@ -239,8 +230,7 @@ this.logUtil!.put("Unable to get form data", this, "getFormData()", e);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     
@@ -260,8 +250,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 
     public isValid(): boolean{
 
-    var isValid: boolean = true;
-;
+    var isValid: boolean = true;;
     
 
                         if(!this.isJdbcDriverValid(this.adminJdbcDriver))
@@ -273,8 +262,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX))
@@ -305,8 +293,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 
     getJdbcDriverValidationInfo(jdbcDriver: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("The JDBC driver (");
     
@@ -325,16 +312,13 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
 
     public getInvalidInfo(): string{
 
-    var isValid: boolean = true;
-;
+    var isValid: boolean = true;;
     
 
-    var isJdbcDriversValid: boolean = true;
-;
+    var isJdbcDriversValid: boolean = true;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.isJdbcDriverValid(this.adminJdbcDriver))
@@ -348,8 +332,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX))

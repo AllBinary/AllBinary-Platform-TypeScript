@@ -61,11 +61,12 @@ export class WorkFlowHelper extends BasicTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly hashMap: HashMap<any, any>
+    private readonly hashMap: HashMap<any, any>;
 
-    private readonly pageContext: PageContext
+    private readonly pageContext: PageContext;
 
-    private readonly portion: Portion
+    private readonly portion: Portion;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -92,8 +93,7 @@ this.portion= new Portion(hashMap);
 } catch(e) 
             {
 
-    var error: string = "Failed to drop view info table";
-;
+    var error: string = "Failed to drop view info table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -129,8 +129,7 @@ this.portion= new Portion(hashMap);
 } catch(e) 
             {
 
-    var error: string = "Failed to create workflow table";
-;
+    var error: string = "Failed to create workflow table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -156,12 +155,10 @@ this.portion= new Portion(hashMap);
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(WorkFlowEntityFactory.getInstance()!.create2(), this.portion)!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.restoreTable(WorkFlowEntityFactory.getInstance()!.create2(), this.portion)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -183,8 +180,7 @@ this.portion= new Portion(hashMap);
 } catch(e) 
             {
 
-    var error: string = "Failed to restore backup";
-;
+    var error: string = "Failed to restore backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -210,12 +206,10 @@ this.portion= new Portion(hashMap);
 
         try {
             
-    var success: string = "Restore Successful";
-;
+    var success: string = "Restore Successful";;
     
 
-    var result: string = AbSqlTableUtil.getInstance()!.backupTable(WorkFlowEntityFactory.getInstance()!.create2())!;
-;
+    var result: string = AbSqlTableUtil.getInstance()!.backupTable(WorkFlowEntityFactory.getInstance()!.create2())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -237,8 +231,7 @@ this.portion= new Portion(hashMap);
 } catch(e) 
             {
 
-    var error: string = "Failed to make backup";
-;
+    var error: string = "Failed to make backup";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

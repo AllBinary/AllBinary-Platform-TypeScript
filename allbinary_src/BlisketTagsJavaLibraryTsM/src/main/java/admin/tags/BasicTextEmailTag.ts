@@ -62,9 +62,10 @@ export class BasicTextEmailTag extends CustomTagSupport {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private subject: string
+    private subject: string;
 
-    private body: string
+    private body: string;
+
 public constructor (){
 
             super();
@@ -87,21 +88,18 @@ this.body= value;
 
         try {
             
-    var propertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var propertiesHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 propertiesHashMap!.put("Subject", this.subject);
     
 propertiesHashMap!.put("Body", this.body);
     
 
-    var anyType: any = new BasicTextEmailHelperFactory().getInstance(propertiesHashMap, this.pageContext)!;
-;
+    var anyType: any = new BasicTextEmailHelperFactory().getInstance(propertiesHashMap, this.pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("send", 
-                            null)!;
-;
+                            null)!;;
     
 method.invoke(anyType, 
                             null);
@@ -117,8 +115,7 @@ method.invoke(anyType,
 } catch(e) 
             {
 
-    var error: string = "Failed to Send Email.";
-;
+    var error: string = "Failed to Send Email.";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

@@ -54,8 +54,7 @@ export class TimeTypeUtil
 
     public isNight(): boolean{
 
-    var hoursOfDay: number = this.getHourOfDay()!;
-;
+    var hoursOfDay: number = this.getHourOfDay()!;;
     
 
 
@@ -68,8 +67,7 @@ export class TimeTypeUtil
 
     public getHourOfDay(): number{
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
 
@@ -99,8 +97,7 @@ export class TimeTypeUtil
 
     public getHourOfDay(timeInMillis: number): number{
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 calendar.setTimeInMillis(timeInMillis);
     
@@ -115,8 +112,7 @@ calendar.setTimeInMillis(timeInMillis);
 
     public isNight(timeInMillis: number): boolean{
 
-    var hoursOfDay: number = this.getHourOfDay(timeInMillis)!;
-;
+    var hoursOfDay: number = this.getHourOfDay(timeInMillis)!;;
     
 
 

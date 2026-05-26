@@ -51,11 +51,12 @@ export class Intermission
          implements IntermissionInterface {
         
 
-    private enabled: boolean= false
+    private enabled: boolean= false;
 
     private readonly timeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
     private intermissionEnableListener: IntermissionEnableListenerInterface = NullIntermissionEnableListener.getInstance()!;
+
 public constructor (){
 
             super();

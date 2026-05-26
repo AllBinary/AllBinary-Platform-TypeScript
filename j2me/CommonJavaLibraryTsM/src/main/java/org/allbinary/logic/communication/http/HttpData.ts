@@ -60,19 +60,19 @@ export class HttpData
 }
 
 
-    public readonly EQUALS: string
+    public readonly EQUALS: string;
 
-    public readonly PARAM_SEP: string
+    public readonly PARAM_SEP: string;
 
-    public readonly URL_PARAM_SEP: string
+    public readonly URL_PARAM_SEP: string;
 
     public readonly URL_LABEL: string = "Url: ";
+
 private constructor (){
 
             super();
         
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.EQUALS= commonSeps!.EQUALS;
     

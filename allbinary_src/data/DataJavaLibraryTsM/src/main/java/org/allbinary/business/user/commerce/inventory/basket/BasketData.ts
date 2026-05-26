@@ -67,6 +67,7 @@ export class BasketData
     public static readonly DELETE: string = "BASKET_DELETE";
 
     public static readonly ADJUST: string = "BASKET_ADJUST";
+
 private constructor (){
 
             super();

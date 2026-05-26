@@ -55,7 +55,8 @@ export class AdvertisementCampaigns
          implements AdvertisementCampaignsInterface {
         
 
-    private advertisementsVector: Vector
+    private advertisementsVector: Vector;
+
 public constructor (vector: Vector){
 
             super();

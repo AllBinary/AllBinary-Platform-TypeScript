@@ -63,9 +63,10 @@ export class Group
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    private readonly teamId: number
+    private readonly teamId: number;
 
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 public constructor (teamName: string, teamId: number){
 
             super();
@@ -90,8 +91,7 @@ this.teamId= teamId;
 this.name= name;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(Group.GROUP_NAME_LABEL);
     

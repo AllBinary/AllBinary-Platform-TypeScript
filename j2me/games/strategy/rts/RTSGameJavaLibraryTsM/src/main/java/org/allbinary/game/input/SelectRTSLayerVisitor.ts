@@ -45,6 +45,7 @@ import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js
         
 export class SelectRTSLayerVisitor extends Visitor {
         
+
 public constructor (){
 
             super();

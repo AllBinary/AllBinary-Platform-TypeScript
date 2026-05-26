@@ -54,9 +54,10 @@ export class PaymentGatewayPrimaryKey
          implements java.io.Serializable {
         
 
-    private storeName: string
+    private storeName: string;
 
-    private name: string
+    private name: string;
+
 public constructor (storeName: string, gatewayName: string){
 
             super();
@@ -101,8 +102,7 @@ this.name= name;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(PaymentGatewayPrimaryKey.constructor.toString()!);
     

@@ -70,6 +70,7 @@ export class OpenGLESGL11VBOImage extends OpenGLESImage {
     private readonly glUtil: GLUtil = GLUtil.getInstance()!;
 
     private textureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
+
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image, bitmapFactory, textureFactory);
                     
@@ -109,8 +110,7 @@ this.textureVertexFloatBuffer!.rewind();
 
     public set(gl: GL){
 
-    var gl10: GL10 = gl as GL10;
-;
+    var gl10: GL10 = gl as GL10;;
     
 
                         if(super.initTexture(gl10))

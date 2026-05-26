@@ -78,7 +78,8 @@ export class AdminConfiguration
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private contextConfigurationInterface: ContextConfigurationInterface
+    private contextConfigurationInterface: ContextConfigurationInterface;
+
 public constructor (){
 
             super();
@@ -88,6 +89,7 @@ this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInst
     
 }
 
+
 public constructor (request: HttpServletRequest){
 
             super();
@@ -96,6 +98,7 @@ public constructor (request: HttpServletRequest){
 this.getFormData(new RequestParams(request).toHashMap());
     
 }
+
 
 public constructor (storeHashMap: HashMap<any, any>){
 
@@ -122,12 +125,10 @@ this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as 
 
     public write(){
 
-    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
-;
+    var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());;
     
 
-    var cryptFileWriter: CryptFileWriter = new CryptFileWriter(ContextConfigurationData.getInstance()!.UNCRYPTED_EXTENSION, ContextConfigurationData.getInstance()!.ENCRYPTED_EXTENSION);
-;
+    var cryptFileWriter: CryptFileWriter = new CryptFileWriter(ContextConfigurationData.getInstance()!.UNCRYPTED_EXTENSION, ContextConfigurationData.getInstance()!.ENCRYPTED_EXTENSION);;
     
 cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfigurationData.CONTEXTNAME), contextConfigurationDomDocumentMapping!.toXmlDoc());
     

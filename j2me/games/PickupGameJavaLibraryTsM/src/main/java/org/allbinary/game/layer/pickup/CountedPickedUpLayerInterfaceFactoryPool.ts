@@ -68,7 +68,8 @@ CountedPickedUpLayerInterfaceFactoryPool.SINGLETON= new CountedPickedUpLayerInte
 }
 
 
-    private list: BasicArrayList
+    private list: BasicArrayList;
+
 private constructor (){
 
             super();

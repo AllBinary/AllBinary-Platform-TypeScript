@@ -85,6 +85,7 @@ export class ImageSwtRotationUtil
     private readonly features: Features = Features.getInstance()!;
 
     private readonly NO_COPY: string = "SWT should not copy images after initial loading as the alpha is not honored";
+
 private constructor (){
 
             super();
@@ -163,25 +164,21 @@ private constructor (){
 
     public getRotatedImages(bufferedImage: org.eclipse.swt.graphics.Image, numberOfFrames: number, totalAngle: number): org.eclipse.swt.graphics.Image[]{
 
-    var bufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(numberOfFrames);
-;
+    var bufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(numberOfFrames);;
     
 
-    var angle: number= 0
-;
+    var angle: number= 0;;
     
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 angle= (totalAngle /size) *index;
     
@@ -200,17 +197,14 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle);
 
     public createSpriteImage(bufferedImageArray: org.eclipse.swt.graphics.Image[]): org.eclipse.swt.graphics.Image{
 
-    var columns: number = 9;
-;
+    var columns: number = 9;;
     
 
-    var rows: number = 0;
-;
+    var rows: number = 0;;
     
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
                         if(size < columns)
@@ -233,44 +227,36 @@ rows= (size /columns);
                                     }
                                 
 
-    var firstBufferedImage: org.eclipse.swt.graphics.Image = bufferedImageArray[0]!;
-;
+    var firstBufferedImage: org.eclipse.swt.graphics.Image = bufferedImageArray[0]!;;
     
 
-    var imageData: ImageData = firstBufferedImage!.getImageData()!;
-;
+    var imageData: ImageData = firstBufferedImage!.getImageData()!;;
     
 
-    var bufferedImage: org.eclipse.swt.graphics.Image = this.imageUtil!.create(imageData!.width *columns, imageData!.height *rows)!;
-;
+    var bufferedImage: org.eclipse.swt.graphics.Image = this.imageUtil!.create(imageData!.width *columns, imageData!.height *rows)!;;
     
 
-    var gc: GC = new GC(bufferedImage);
-;
+    var gc: GC = new GC(bufferedImage);;
     
 gc.setAntialias(SWT.ON);
     
 gc.setInterpolation(SWT.HIGH);
     
 
-    var columnIndex: number = 0;
-;
+    var columnIndex: number = 0;;
     
 
-    var rowIndex: number = 0;
-;
+    var rowIndex: number = 0;;
     
 
-    var nextBufferedImage: org.eclipse.swt.graphics.Image
-;
+    var nextBufferedImage: org.eclipse.swt.graphics.Image;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(index /9 != 0 && index % 9 == 0)

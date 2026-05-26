@@ -97,6 +97,7 @@ import { GameConfigurationCentral } from './GameConfigurationCentral.js';
 
 export class GameOptionsForm extends CommandForm {
         
+
 public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
                     
@@ -108,8 +109,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
 this.addConfiguration();
     
 
-    var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;
-;
+    var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;;
     
 gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getExclusiveInstance()!.get(), ChoiceI.EXCLUSIVE);
     
@@ -134,12 +134,10 @@ this.save(abeClientInformation);
 
     addTextFieldsIfSimulated(){
 
-    var key: string = OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT;
-;
+    var key: string = OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT;;
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;
-;
+    var hashtable: Hashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;;
     
 
                         if(hashtable != 
@@ -148,8 +146,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var listCanBeNull: any = hashtable.get(key);
-;
+    var listCanBeNull: any = hashtable.get(key);;
     
 
                         if(listCanBeNull != 
@@ -158,8 +155,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var list: BasicArrayList = listCanBeNull as BasicArrayList;
-;
+    var list: BasicArrayList = listCanBeNull as BasicArrayList;;
     
 
                         if(list.contains(SensorFeatureFactory.getInstance()!.SIMULATED_ORIENTATION_SENSORS))
@@ -181,32 +177,26 @@ this.save(abeClientInformation);
 
     addTextFields(){
 
-    var hashtable: Hashtable<any, any> = GameConfigurationTextInput.getHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = GameConfigurationTextInput.getHashtable()!;;
     
 
-    var size: number = hashtable.length!;
-;
+    var size: number = hashtable.length!;;
     
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
-;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput
-;
+    var gameConfigurationTextInput: GameConfigurationTextInput;;
     
 
-    var textField: TextField
-;
+    var textField: TextField;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameConfigurationTextInput= hashtable.get(objectArray[index]!) as GameConfigurationTextInput;
     
@@ -221,44 +211,35 @@ this.append(textField);
 
     addConfiguration(){
 
-    var METHOD_NAME: string = "addConfiguration";
-;
+    var METHOD_NAME: string = "addConfiguration";;
     
 
-    var NAME: string = "Name: ";
-;
+    var NAME: string = "Name: ";;
     
 
-    var list: BasicArrayList = GameConfigurationSingleton.getInstance()!.getOptionsBasicArrayList()!;
-;
+    var list: BasicArrayList = GameConfigurationSingleton.getInstance()!.getOptionsBasicArrayList()!;;
     
 
-    var GAUGE_CHANGE: Command = MyCommandsFactory.getInstance()!.GAUGE_CHANGE;
-;
+    var GAUGE_CHANGE: Command = MyCommandsFactory.getInstance()!.GAUGE_CHANGE;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var gameConfiguration: GameConfiguration
-;
+    var gameConfiguration: GameConfiguration;;
     
 
-    var gauge: GameConfigurationGauge
-;
+    var gauge: GameConfigurationGauge;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameConfiguration= list.objectArray[index]! as GameConfiguration;
     
@@ -281,8 +262,7 @@ this.append(gauge);
 
     public initCommands(cmdListener: CommandListener){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-;
+    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 this.removeAllCommands();
     
@@ -299,20 +279,17 @@ this.setCommandListener(cmdListener);
             
     public save(abeClientInformation: AbeClientInformationInterface){
 
-    var size: number = this.size()!;
-;
+    var size: number = this.size()!;;
     
 
-    var item: Item
-;
+    var item: Item;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 item= this.get(index);
     
@@ -339,44 +316,37 @@ item= this.get(index);
 GameConfigurationUtil.getInstance()!.updateCompetitionValue();
     
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
 
-    var SCALE: GameConfiguration = GameConfigurationCentral.getInstance()!.SCALE;
-;
+    var SCALE: GameConfiguration = GameConfigurationCentral.getInstance()!.SCALE;;
     
 hashtable.put(SCALE.getName(), SCALE.getValue()!.toString());
     
 
-    var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;
-;
+    var keyValuePersistance: KeyValuePersistance = GameConfigurationPersistanceSingleton.getInstance()!;;
     
 keyValuePersistance!.clear();
     
 keyValuePersistance!.loadAll(abeClientInformation);
     
 
-    var list: BasicArrayList = keyValuePersistance!.getIds()!;
-;
+    var list: BasicArrayList = keyValuePersistance!.getIds()!;;
     
 keyValuePersistance!.save(abeClientInformation, hashtable);
     
 
-    var size2: number = list.size()!;
-;
+    var size2: number = list.size()!;;
     
 
-    var integer: Integer
-;
+    var integer: Integer;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 integer= list.objectArray[index]! as Integer;
     

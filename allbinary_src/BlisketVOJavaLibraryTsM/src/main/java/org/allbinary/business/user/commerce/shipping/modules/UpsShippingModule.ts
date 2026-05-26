@@ -54,6 +54,7 @@ export class UpsShippingModule
     private readonly name: string = "UPS";
 
     private readonly description: string = "Brown Mail";
+
 public constructor (){
 
             super();

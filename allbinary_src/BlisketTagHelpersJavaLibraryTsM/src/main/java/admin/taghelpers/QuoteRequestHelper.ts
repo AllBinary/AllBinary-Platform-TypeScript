@@ -71,25 +71,24 @@ export class QuoteRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
-    private quoteRequest: QuoteRequest
+    private quoteRequest: QuoteRequest;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
-;
+    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(storeName != 
@@ -129,14 +128,12 @@ this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), reques
 
         try {
             
-    var values: Vector = this.quoteRequest!.toVector()!;
-;
+    var values: Vector = this.quoteRequest!.toVector()!;;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert(values);
     
 
-    var success: string = "New QuoteRequest Successfully added to the QuoteRequest Table";
-;
+    var success: string = "New QuoteRequest Successfully added to the QuoteRequest Table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -158,8 +155,7 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
 } catch(e) 
             {
 
-    var error: string = "Failed to add QuoteRequest";
-;
+    var error: string = "Failed to add QuoteRequest";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -185,14 +181,12 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
 
         try {
             
-    var values: HashMap<any, any> = this.quoteRequest!.toHashMap()!;
-;
+    var values: HashMap<any, any> = this.quoteRequest!.toHashMap()!;;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update(this.quoteRequest!.getUserName(), values);
     
 
-    var success: string = "New QuoteRequest Successfully updated";
-;
+    var success: string = "New QuoteRequest Successfully updated";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -214,8 +208,7 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
 } catch(e) 
             {
 
-    var error: string = "Failed to update QuoteRequest";
-;
+    var error: string = "Failed to update QuoteRequest";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

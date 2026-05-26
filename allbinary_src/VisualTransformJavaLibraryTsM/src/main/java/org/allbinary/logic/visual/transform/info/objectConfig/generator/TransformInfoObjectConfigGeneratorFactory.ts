@@ -73,6 +73,7 @@ export class TransformInfoObjectConfigGeneratorFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -83,16 +84,14 @@ private constructor (){
             
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 
-    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName() as string;
-;
+    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName() as string;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE);
     

@@ -78,6 +78,7 @@ export class ImageRotationUtil
 
 
     private readonly imageSwtRotationUtil: ImageSwtRotationUtil = ImageSwtRotationUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -88,8 +89,7 @@ private constructor (){
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number){
 
-    var originalImage2: Image = originalImage;
-;
+    var originalImage2: Image = originalImage;;
     
 
                         if(this.features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
@@ -100,8 +100,7 @@ private constructor (){
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
-;
+    var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);;
     
 openGLESImage!.openGLESImageProperties!.angle= totalAngle;
     
@@ -124,28 +123,24 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                                     }
                                 
 
-    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage() as org.eclipse.swt.graphics.Image);
-;
+    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage() as org.eclipse.swt.graphics.Image);;
     
 
     var gc: GC = 
                 null
-            ;
-;
+            ;;
     
 
     var copySwtImage: org.eclipse.swt.graphics.Image = 
                 null
-            ;
-;
+            ;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var swtImage: SwtMutableImage = image as SwtMutableImage;
-;
+    var swtImage: SwtMutableImage = image as SwtMutableImage;;
     
 copySwtImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     

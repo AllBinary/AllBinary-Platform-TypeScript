@@ -93,25 +93,23 @@ export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly output: string
+    private readonly output: string;
 
-    private readonly fileAbPath: AbPath
+    private readonly fileAbPath: AbPath;
 
-    private readonly file: AbFile
+    private readonly file: AbFile;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
         
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var weblisketSession: WeblisketSession = new WeblisketSession(httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext());
-;
+    var weblisketSession: WeblisketSession = new WeblisketSession(httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext());;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -120,30 +118,25 @@ stringBuffer!.append(weblisketSession!.getStoreName());
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
-    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE) as string;
-;
+    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE) as string;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(fileName))
                         
                                     {
                                     
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = transformInfoInterface as TransformInfoHttpStoreInterface;
-;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = transformInfoInterface as TransformInfoHttpStoreInterface;;
     
 fileName= transformInfoInterface!.getName()!.substring(transformInfoHttpStoreInterface!.getStoreName()!.length() +1);
     
 
-    var outputMappingHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var outputMappingHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 outputMappingHashMap!.put(TransformInfosData.getInstance()!.PREVIEW, "Preview");
     
@@ -152,8 +145,7 @@ outputMappingHashMap!.put(TransformInfosData.getInstance()!.SMALL_PREVIEW, "Smal
 outputMappingHashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
     
 
-    var replace: Replace = new Replace(outputMappingHashMap);
-;
+    var replace: Replace = new Replace(outputMappingHashMap);;
     
 fileName= replace.all(fileName);
     
@@ -173,8 +165,7 @@ fileName= replace.all(fileName);
                                     }
                                 
 
-    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME) as string;
-;
+    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME) as string;;
     
 
                         if(stringValidationUtil!.isEmpty(tempOutput))
@@ -251,8 +242,7 @@ this.file= new AbFile(this.fileAbPath);
                         
                                     {
                                     
-    var inputStream: InputStream = new ByteArrayInputStream(input.encodeToByteArray());
-;
+    var inputStream: InputStream = new ByteArrayInputStream(input.encodeToByteArray());;
     
 FileUtil.getInstance()!.write(inputStream, this.file);
     

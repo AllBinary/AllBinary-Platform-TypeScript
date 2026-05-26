@@ -52,7 +52,8 @@ import { StoreValidationTransformTag } from '../../tags/StoreValidationTransform
 export class UserNameOrderHistoryTag extends StoreValidationTransformTag {
         
 
-    private status: string
+    private status: string;
+
 public constructor (){
             super();
                     

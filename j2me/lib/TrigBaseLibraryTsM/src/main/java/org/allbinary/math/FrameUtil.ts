@@ -58,6 +58,7 @@ export class FrameUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -76,8 +77,7 @@ private constructor (){
 
     public getFrameAngle(frame: number, angleIncrement: number): number{
 
-    var frameAngle: number = angleIncrement *frame -90;
-;
+    var frameAngle: number = angleIncrement *frame -90;;
     
 
 
@@ -90,8 +90,7 @@ private constructor (){
 
     public adjustAngleToFrameAngle(currentAngle: number): number{
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
                         if(currentAngle > 359)

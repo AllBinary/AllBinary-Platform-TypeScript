@@ -48,9 +48,10 @@ export class ImageUnifierCell
          {
         
 
-    private width: Integer
+    private width: Integer;
 
-    private height: Integer
+    private height: Integer;
+
 public constructor (width: Integer, height: Integer){
 
             super();

@@ -84,7 +84,8 @@ export class GenericStoreTransformInfoObjectConfig extends TransformInfoObjectCo
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    readonly abeClientInformation: AbeClientInformationInterface
+    readonly abeClientInformation: AbeClientInformationInterface;
+
 public constructor (abeClientInformation: Object, transformInfoInterface: Object){
             super(transformInfoInterface);
                     
@@ -94,6 +95,7 @@ public constructor (abeClientInformation: Object, transformInfoInterface: Object
 this.abeClientInformation= abeClientInformation;
     
 }
+
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object){
             super(transformInfoInterface, document);
@@ -106,6 +108,7 @@ this.abeClientInformation= abeClientInformation;
 this.setDocument(this.generate(this.toXmlDoc()));
     
 }
+
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string){
             super(transformInfoInterface, name, type);
@@ -128,8 +131,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -156,16 +158,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
                                     }
                                 
 
-    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface() as TransformInfoHttp;
-;
+    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface() as TransformInfoHttp;;
     
 
-    var objectConfigDocumentString: string = DomDocumentHelper.toString(objectConfigDocument)!;
-;
+    var objectConfigDocumentString: string = DomDocumentHelper.toString(objectConfigDocument)!;;
     
 
-    var replaceHashMap: HashMap<any, any> = this.createReplaceHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;
-;
+    var replaceHashMap: HashMap<any, any> = this.createReplaceHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;;
     
 
 
@@ -180,22 +179,18 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
             
     createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
 
-    var storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;
-;
+    var storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;;
     
 
-    var hashMap: HashMap<any, any> = this.createHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;
-;
+    var hashMap: HashMap<any, any> = this.createHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;;
     
 
-    var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;
-;
+    var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;;
     
 hashMap!.put(transformInfoObjectConfigData!.VARKEY +StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), storeName)!;
-;
+    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), storeName)!;;
     
 hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
     
@@ -212,20 +207,16 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
             
     createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;
-;
+    var storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;;
     
 
-    var propertiesHashMap: HashMap<any, any> = transformInfoHttpStoreInterface!.getPropertiesHashMap()!;
-;
+    var propertiesHashMap: HashMap<any, any> = transformInfoHttpStoreInterface!.getPropertiesHashMap()!;;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull(propertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;
-;
+    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull(propertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL) as string)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -237,8 +228,7 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
                                     }
                                 
 
-    var templateNameStringBuffer: StringMaker = new StringMaker();
-;
+    var templateNameStringBuffer: StringMaker = new StringMaker();;
     
 templateNameStringBuffer!.append(storeName);
     
@@ -249,20 +239,17 @@ templateNameStringBuffer!.append(CommonSeps.getInstance()!.SPACE);
 templateNameStringBuffer!.append(RootTransformInfoData.NAME);
     
 
-    var templateNameKey: string = TransformInfoObjectConfigData.getInstance()!.VARKEY +TransformInfoData.getInstance()!.OWNER;
-;
+    var templateNameKey: string = TransformInfoObjectConfigData.getInstance()!.VARKEY +TransformInfoData.getInstance()!.OWNER;;
     
 
                         if(objectConfigDocumentString!.indexOf(templateNameKey) !=  -1)
                         
                                     {
                                     
-    var templateInterface: TransformTemplateInterface = TransformTemplateFactory.getInstance()!.getInstance(this.abeClientInformation, templateNameStringBuffer!.toString(), transformInfoHttpStoreInterface!.getPropertiesHashMap(), transformInfoHttpStoreInterface!.getPageContext())!;
-;
+    var templateInterface: TransformTemplateInterface = TransformTemplateFactory.getInstance()!.getInstance(this.abeClientInformation, templateNameStringBuffer!.toString(), transformInfoHttpStoreInterface!.getPropertiesHashMap(), transformInfoHttpStoreInterface!.getPageContext())!;;
     
 
-    var selectedTemplate: string = templateInterface!.getName()!;
-;
+    var selectedTemplate: string = templateInterface!.getName()!;;
     
 hashMap!.put(templateNameKey, selectedTemplate);
     
@@ -282,12 +269,10 @@ hashMap!.put(templateNameKey, selectedTemplate);
             
     generate(objectConfigDocumentString: string, hashMap: HashMap<any, any>): Document{
 
-    var replace: Replace = new Replace(hashMap);
-;
+    var replace: Replace = new Replace(hashMap);;
     
 
-    var newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(objectConfigDocumentString))!;
-;
+    var newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(objectConfigDocumentString))!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

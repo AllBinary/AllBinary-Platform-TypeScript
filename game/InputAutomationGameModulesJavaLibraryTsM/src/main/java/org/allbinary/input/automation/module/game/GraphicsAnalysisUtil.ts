@@ -71,24 +71,19 @@ export class GraphicsAnalysisUtil
 
 
                         for (
-    var index: number = max_x.intValue()!;
-index > min_x.intValue(); )
+    var index: number = max_x.intValue()!;index > min_x.intValue(); )
         {
 
-    var colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(index, y.intValue()))!;
-;
+    var colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(index, y.intValue()))!;;
     
 
-    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;
-;
+    var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
-;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;;
     
 
-    var color: Color = colorCacheable!.getColor()!;
-;
+    var color: Color = colorCacheable!.getColor()!;;
     
 
                         if(color.getRed() < GraphicsAnalysisUtil.MAX && color.getGreen() < GraphicsAnalysisUtil.MAX && color.getBlue() < GraphicsAnalysisUtil.MAX)
@@ -116,6 +111,7 @@ index > min_x.intValue(); )
                         return 0;
     
 }
+
 
 private constructor (){
 

@@ -62,6 +62,7 @@ export class ArtificialIntelligence
     
 }
 
+
 public constructor (){
 
             super();

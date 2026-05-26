@@ -50,8 +50,7 @@ export class PCGameKey extends Input {
 
     public static getString(keyCode: number): string{
 
-    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;
-;
+    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;;
     
 
                         if(input != 
@@ -80,6 +79,7 @@ export class PCGameKey extends Input {
                             
 }
 
+
  constructor (keyCode: number, name: string){
             super(keyCode, name);
                     
@@ -87,8 +87,7 @@ export class PCGameKey extends Input {
                             //For kotlin this is before the body of the constructor.
                     
 
-    var id: number = this.getId()!;
-;
+    var id: number = this.getId()!;;
     
 
                         if(id >= 0)

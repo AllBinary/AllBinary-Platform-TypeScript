@@ -104,9 +104,10 @@ export class CommandFormInputProcessor extends BasicMenuInputProcessor {
 
     readonly isSingleKeyProcessing: boolean = InputFeatureFactory.getInstance()!.isSingleKeyProcessing()!;
 
-    private form: ScrollSelectionForm
+    private form: ScrollSelectionForm;
 
     private hasPressed: boolean = false;
+
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm){
             super(gameKeyEventList, playerInputId, gameCanvas);
                     
@@ -166,22 +167,18 @@ this.form.processInputKey(key);
 
     processCommand(): number{
 
-    var commandCurrentSelectionForm: CommandCurrentSelectionForm = this.form as CommandCurrentSelectionForm;
-;
+    var commandCurrentSelectionForm: CommandCurrentSelectionForm = this.form as CommandCurrentSelectionForm;;
     
 
-    var command: Command = commandCurrentSelectionForm!.getSelectedCommand()!;
-;
+    var command: Command = commandCurrentSelectionForm!.getSelectedCommand()!;;
     
 this.logUtil!.putF(command.toString(), this, this.PROCESS_COMMAND);
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-;
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(SWTUtil.isSWT && features.isFeature(openGLFeatureFactory!.OPENGL) && command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
@@ -230,32 +227,26 @@ this.logUtil!.putF(command.toString(), this, this.PROCESS_COMMAND);
 
         try {
             
-    var motionInputsIndex: number = this.processMotionInputs()!;
-;
+    var motionInputsIndex: number = this.processMotionInputs()!;;
     
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;
-;
+    var list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var key: number = 0;
-;
+    var key: number = 0;;
     
 
-    var gameKeyEvent: GameKeyEvent
-;
+    var gameKeyEvent: GameKeyEvent;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
@@ -326,16 +317,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
             
     public processMotionInputs(): number{
 
-    var lastIndex: number = this.motionGestureEventList!.size() -1;
-;
+    var lastIndex: number = this.motionGestureEventList!.size() -1;;
     
 
                         if(lastIndex >= 0)
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
-;
+    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;;
     
 this.processMotionInput(motionGestureEvent);
     
@@ -357,28 +346,24 @@ this.motionGestureEventList!.clear();
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
 
-    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-;
+    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
     
 
-    var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
-;
+    var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;;
     
 
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
                                     
-    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
-;
+    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;;
     
 
                         if(this.form.isInForm(point))
                         
                                     {
                                     
-    var index: number = this.form.getSelectedIndexForPoint(point)!;
-;
+    var index: number = this.form.getSelectedIndexForPoint(point)!;;
     
 
                         if(index !=  -1)

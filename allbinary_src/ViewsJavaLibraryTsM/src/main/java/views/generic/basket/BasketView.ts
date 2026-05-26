@@ -86,7 +86,8 @@ export class BasketView extends HttpStoreComponentView implements DomNodeInterfa
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly request: HttpServletRequest
+    private readonly request: HttpServletRequest;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -104,53 +105,42 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 
         try {
             
-    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-;
+    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;
-;
+    var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
     
 
-    var basketNode: Node = document.createElement(BasketData.BASKET)!;
-;
+    var basketNode: Node = document.createElement(BasketData.BASKET)!;;
     
 
-    var itemsAndNumberInBasket: HashMap<any, any> = basketInterface!.getItems()!;
-;
+    var itemsAndNumberInBasket: HashMap<any, any> = basketInterface!.getItems()!;;
     
 
-    var numberOfResults: number = 1;
-;
+    var numberOfResults: number = 1;;
     
 
-    var items: Set = itemsAndNumberInBasket!.keySet()!;
-;
+    var items: Set = itemsAndNumberInBasket!.keySet()!;;
     
 
-    var productArray: any[] = items.toArray()!;
-;
+    var productArray: any[] = items.toArray()!;;
     
 
     var size: number = productArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var product: string = .toCharArray();
-;
+    var product: string = .toCharArray();;
     
 
-    var itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;
-;
+    var itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;;
     
 
                         if(itemInterface != 
@@ -159,26 +149,21 @@ index < size; index++)
                         
                                     {
                                     
-    var basicItemView: BasicItemView = new BasicItemView(itemInterface, new Vector());
-;
+    var basicItemView: BasicItemView = new BasicItemView(itemInterface, new Vector());;
     
 
-    var node: Node = basicItemView!.toXmlNode(document)!;
-;
+    var node: Node = basicItemView!.toXmlNode(document)!;;
     
 
-    var numberInBasket: string = basketInterface!.getNumberOf(product)!.toString()!;
-;
+    var numberInBasket: string = basketInterface!.getNumberOf(product)!.toString()!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBASKET, numberInBasket));
     
 
-    var itemPrice: Money = itemInterface!.getPrice()!;
-;
+    var itemPrice: Money = itemInterface!.getPrice()!;;
     
 
-    var itemTotal: Money = new Money(itemPrice);
-;
+    var itemTotal: Money = new Money(itemPrice);;
     
 itemTotal!.multiply(basketInterface!.getNumberOf(product)!.intValue());
     
@@ -200,32 +185,26 @@ numberOfResults++;
 }
 
 
-    var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;
-;
+    var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;;
     
 
-    var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;
-;
+    var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;;
     
 totalNumberNode!.appendChild(totalNumberTextNode);
     
 
-    var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;
-;
+    var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;;
     
 
-    var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;
-;
+    var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;;
     
 totalWeightNode!.appendChild(totalWeightTextNode);
     
 
-    var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;
-;
+    var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;;
     
 
-    var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;
-;
+    var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;;
     
 subTotalNode!.appendChild(subTotalTextNode);
     

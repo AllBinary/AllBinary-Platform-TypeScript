@@ -57,6 +57,7 @@ export class CaptionResources
     
 }
 
+
 private constructor (){
 
             super();

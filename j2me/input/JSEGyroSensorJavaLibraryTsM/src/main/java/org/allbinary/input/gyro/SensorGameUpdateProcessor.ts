@@ -57,7 +57,7 @@ export class SensorGameUpdateProcessor
          {
         
 
-    private inputSensor: AllBinarySensor
+    private inputSensor: AllBinarySensor;
 
     setInputSensor(inputSensor: AllBinarySensor){
 this.inputSensor= inputSensor;

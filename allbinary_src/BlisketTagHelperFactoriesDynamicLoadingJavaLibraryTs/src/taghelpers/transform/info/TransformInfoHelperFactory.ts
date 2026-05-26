@@ -59,6 +59,7 @@ export class TransformInfoHelperFactory
     private static readonly CLASSNAME: string = "taghelpers.transform.info.TransformInfoHelper";
 
     private static readonly FACTORYNAME: string = "TransformInfoHelperFactory";
+
 public constructor (){
 
             super();

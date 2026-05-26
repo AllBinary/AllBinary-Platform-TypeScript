@@ -66,7 +66,8 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 export class SimultaneousCompoundRotationAnimation extends RotationAnimation {
         
 
-    private animationInterfaceArray: RotationAnimation[]
+    private animationInterfaceArray: RotationAnimation[];
+
 public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
                     
@@ -85,8 +86,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrame(frameIndex);
     
@@ -134,8 +134,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.previousFrame();
     
@@ -153,8 +152,7 @@ this.animationInterfaceArray[index]!.previousFrame();
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextFrame();
     
@@ -170,8 +168,7 @@ this.animationInterfaceArray[index]!.nextFrame();
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.previousRotation();
     
@@ -187,8 +184,7 @@ this.animationInterfaceArray[index]!.previousRotation();
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextRotation();
     
@@ -218,8 +214,7 @@ this.animationInterfaceArray[index]!.nextRotation();
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
     
@@ -235,8 +230,7 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
     
@@ -252,8 +246,7 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrameByDirection(direction);
     
@@ -269,8 +262,7 @@ this.animationInterfaceArray[index]!.setFrameByDirection(direction);
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrameToAngle(angle);
     
@@ -292,8 +284,7 @@ this.adjustFrame(newAngle!.getValue());
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.adjustFrame(angle);
     
@@ -337,8 +328,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 
                         for (
     var index: number = this.animationInterfaceArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);
     

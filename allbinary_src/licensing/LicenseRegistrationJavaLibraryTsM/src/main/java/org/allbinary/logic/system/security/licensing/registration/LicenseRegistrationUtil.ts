@@ -67,8 +67,7 @@ export class LicenseRegistrationUtil
 
         try {
             
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +"License Registration", "LicenseRegistrationUtil", commonStrings!.PROCESS);
     
@@ -77,8 +76,7 @@ RegistrationConfiguration.getInstance()!.setRegistrationCode(registrationId);
 RegistrationConfiguration.getInstance()!.write();
     
 
-    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;;
     
 hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId);
     
@@ -95,6 +93,7 @@ PreLogUtil.putOE("License Registration Exception", "LicenseRegistrationUtil", "L
 }
 
 }
+
 
 private constructor (){
 

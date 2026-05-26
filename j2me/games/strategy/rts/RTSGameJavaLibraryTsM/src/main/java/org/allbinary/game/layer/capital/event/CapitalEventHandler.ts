@@ -52,6 +52,7 @@ import { CapitalEvent } from './CapitalEvent.js';
 
 export class CapitalEventHandler extends BasicEventHandler {
         
+
 public constructor (){
 
             super();
@@ -62,8 +63,7 @@ public constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var capitalEventListenerInterface: CapitalEventListenerInterface = (eventListenerInterface as CapitalEventListenerInterface);
-;
+    var capitalEventListenerInterface: CapitalEventListenerInterface = (eventListenerInterface as CapitalEventListenerInterface);;
     
 capitalEventListenerInterface!.onCapitalChangeEvent(eventObject as CapitalEvent);
     

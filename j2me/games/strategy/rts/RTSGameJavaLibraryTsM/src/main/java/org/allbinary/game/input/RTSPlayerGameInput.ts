@@ -125,25 +125,26 @@ export class RTSPlayerGameInput extends PlayerGameInput {
 
     readonly removeInputProcessorArray: GameInputProcessor[] = new Array(InputFactory.getInstance()!.MAX);
 
-    private readonly inputList: BasicArrayList
+    private readonly inputList: BasicArrayList;
 
     private readonly isSingleKeyProcessing: boolean = Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS) || Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_PRESS);
 
-    private readonly gameCanvas: AllBinaryGameCanvas
+    private readonly gameCanvas: AllBinaryGameCanvas;
 
     private readonly motionGestureInputList: BasicArrayList = new BasicArrayListD();
 
-    private readonly scrollPlayerGameInput: ScrollMapPlayerGameInput
+    private readonly scrollPlayerGameInput: ScrollMapPlayerGameInput;
 
-    private readonly selectedRTSLayerPlayerGameInput: SelectedRTSLayersPlayerGameInput
+    private readonly selectedRTSLayerPlayerGameInput: SelectedRTSLayersPlayerGameInput;
 
-    private readonly towerInfoPaintable: RTSLayerInfoPaintable
+    private readonly towerInfoPaintable: RTSLayerInfoPaintable;
 
-    private readonly rtsPlayerLayerInterface: RTSPlayerLayerInterface
+    private readonly rtsPlayerLayerInterface: RTSPlayerLayerInterface;
 
-    private readonly layerPositionFinderInterface: LayerPositionFinderInterface
+    private readonly layerPositionFinderInterface: LayerPositionFinderInterface;
 
     private selectedRtsFormInput: RTSFormInput = NullRTSFormInputFactory.getInstance()!;
+
 public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
             super(inputList, new BasicArrayListD(), playerInputId);
                     
@@ -172,12 +173,10 @@ this.selectedRTSLayerPlayerGameInput= new SelectedRTSLayersPlayerGameInput(this.
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.scrollPlayerGameInput= new ScrollMapPlayerGameInput(geographicMapInterface, this.inputList, playerInputId);
     
@@ -275,24 +274,20 @@ GameInputProcessorUtil.init(this.removeInputProcessorArray);
             this.processMotionInput(layerManager);
     
 
-    var size: number = this.inputList!.size()!;
-;
+    var size: number = this.inputList!.size()!;;
     
 
-    var key: number = 0;
-;
+    var key: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index) as GameKeyEvent;
-;
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index) as GameKeyEvent;;
     
 key= gameKeyEvent!.getKey();
     
@@ -342,32 +337,25 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
             
     select(motionGestureEvent: MotionGestureEvent){
 
-    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
-;
+    var point: GPoint = motionGestureEvent!.getCurrentPoint()!;;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var x: number = point.getX() +allBinaryTiledLayer!.getXP();
-;
+    var x: number = point.getX() +allBinaryTiledLayer!.getXP();;
     
 
-    var y: number = point.getY() +allBinaryTiledLayer!.getYP();
-;
+    var y: number = point.getY() +allBinaryTiledLayer!.getYP();;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(x, y)!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(x, y)!;;
     
 
                         if(geographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
@@ -376,8 +364,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
                                     SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 
-    var layer: AllBinaryLayer = this.layerPositionFinderInterface!.getLayerInterface(geographicMapCellPosition)!;
-;
+    var layer: AllBinaryLayer = this.layerPositionFinderInterface!.getLayerInterface(geographicMapCellPosition)!;;
     
 
                         if(layer == AllBinaryLayer.NULL_ALLBINARY_LAYER)
@@ -395,8 +382,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
                         }
                             
 
-    var foundRTSLayer: CollidableDestroyableDamageableLayer = layer as CollidableDestroyableDamageableLayer;
-;
+    var foundRTSLayer: CollidableDestroyableDamageableLayer = layer as CollidableDestroyableDamageableLayer;;
     
 this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition);
     
@@ -405,8 +391,7 @@ this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition);
                                 
                         else {
                             
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 this.logUtil!.putF(new StringMaker().append("Off Of Map -")!.append(commonLabels!.WIDTH_LABEL)!.appendint(allBinaryTiledLayer!.getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(allBinaryTiledLayer!.getHeight())!.toString(), this, "select");
     
@@ -426,34 +411,27 @@ this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(rtsLayer);
 
     public paint(graphics: Graphics){
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getSelectedRtsFormInput()!.getSelectedGeographicCellPosition()!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.getSelectedRtsFormInput()!.getSelectedGeographicCellPosition()!;;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 graphics.setColor(BasicColorFactory.getInstance()!.GREEN.intValue());
     
 
-    var list: BasicArrayList = this.getSelectedBuildingPlayerGameInput()!.getPaintSelectedRTSLayersList()!;
-;
+    var list: BasicArrayList = this.getSelectedBuildingPlayerGameInput()!.getPaintSelectedRTSLayersList()!;;
     
 
-    var width: number = 0;
-;
+    var width: number = 0;;
     
 
-    var height: number = 0;
-;
+    var height: number = 0;;
     
 
                         if(list.size() > 0)
@@ -464,12 +442,10 @@ graphics.setColor(BasicColorFactory.getInstance()!.GREEN.intValue());
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;
-;
+    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;;
     
 width= rtsLayer!.getWidth();
     
@@ -487,8 +463,7 @@ graphics.drawRect(rtsLayer!.getXP() -allBinaryTiledLayer!.getXP(), rtsLayer!.get
                         
                                     {
                                     
-    var point: GPoint = geographicMapCellPosition!.getPoint()!;
-;
+    var point: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 width= allBinaryTiledLayer!.getCellWidth();
     

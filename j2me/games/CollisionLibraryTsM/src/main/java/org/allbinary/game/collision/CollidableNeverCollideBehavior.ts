@@ -49,6 +49,7 @@ import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceComp
 
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
+
  constructor (isCollidable: boolean){
             super(isCollidable);
                     

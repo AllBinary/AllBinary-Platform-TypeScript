@@ -62,9 +62,10 @@ export class SmallDelete
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private fileName: string
+    private fileName: string;
 
-    private string: string
+    private string: string;
+
 public constructor (fileName: string){
 
             super();
@@ -79,9 +80,7 @@ this.string= FileUtil.getInstance()!.readAsString(fileName);
 
         try {
             
-    var beginIndex: number= 0
-var endIndex: number= 0
-;
+    var beginIndex: number= 0;var endIndex: number= 0;;
     
 beginIndex= this.string.indexOf(start);
     
@@ -92,16 +91,13 @@ endIndex= this.string.indexOf(end);
                         
                                     {
                                     
-    var text: string = this.string.substring(endIndex, this.string.length)!;
-;
+    var text: string = this.string.substring(endIndex, this.string.length)!;;
     
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-;
+    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);
-;
+    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(text);
     
@@ -148,9 +144,7 @@ idOutData!.writeBytes(text);
 
         try {
             
-    var beginIndex: number= 0
-var endIndex: number= 0
-;
+    var beginIndex: number= 0;var endIndex: number= 0;;
     
 beginIndex= this.string.indexOf(start);
     
@@ -161,20 +155,16 @@ endIndex= this.string.indexOf(end);
                         
                                     {
                                     
-    var newStart: string = this.string.substring(0, beginIndex)!;
-;
+    var newStart: string = this.string.substring(0, beginIndex)!;;
     
 
-    var text: string = this.string.substring(endIndex +end.length, this.string.length)!;
-;
+    var text: string = this.string.substring(endIndex +end.length, this.string.length)!;;
     
 
-    var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-;
+    var idFile: FileOutputStream = new FileOutputStream(this.fileName);;
     
 
-    var idOutData: DataOutputStream = new DataOutputStream(idFile);
-;
+    var idOutData: DataOutputStream = new DataOutputStream(idFile);;
     
 idOutData!.writeBytes(newStart +newText +text);
     

@@ -80,20 +80,17 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(displayChangeEvent
 
     public clear(){
 
-    var displayChangeEventHandler: BasicEventHandler = DisplayChangeEventHandler.getInstance()!;
-;
+    var displayChangeEventHandler: BasicEventHandler = DisplayChangeEventHandler.getInstance()!;;
     
 
-    var displayChangeEventListener: DisplayChangeEventListener
-;
+    var displayChangeEventListener: DisplayChangeEventListener;;
     
 
 
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 displayChangeEventListener= this.list.objectArray[index]! as DisplayChangeEventListener;
     

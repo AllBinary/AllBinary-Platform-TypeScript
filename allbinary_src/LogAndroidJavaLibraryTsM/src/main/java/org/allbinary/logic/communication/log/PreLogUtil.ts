@@ -66,12 +66,10 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
     /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
-    var className: string = PreLogUtil.LABEL;
-;
+    var className: string = PreLogUtil.LABEL;;
     
 
-    var actualClassName: string = anyType!.constructor.name.toString()!!;
-;
+    var actualClassName: string = anyType!.constructor.name.toString()!!;;
     
 
                         if(actualClassName != 
@@ -85,8 +83,7 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
                                     }
                                 
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
     
@@ -101,12 +98,12 @@ PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()
 
     /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
 
-    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-;
+    var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
     
 }
+
 
 public constructor (){
 

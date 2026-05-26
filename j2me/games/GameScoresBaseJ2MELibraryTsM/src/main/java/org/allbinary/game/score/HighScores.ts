@@ -62,13 +62,14 @@ export class HighScores
 
     private orderedHighScoresList: BasicArrayList = new BasicArrayListD();
 
-    private readonly name: string
+    private readonly name: string;
 
-    private readonly heading: string
+    private readonly heading: string;
 
     private readonly columnOneHeading: string = "Name";
 
-    private readonly columnTwoHeading: string
+    private readonly columnTwoHeading: string;
+
 public constructor (name: string, heading: string, columnTwoHeading: string){
 
             super();
@@ -167,8 +168,7 @@ this.orderedHighScoresList!.add(newHighScore);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("HighScores: ");
     

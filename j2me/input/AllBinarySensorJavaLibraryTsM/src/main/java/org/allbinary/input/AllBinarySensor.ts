@@ -78,6 +78,7 @@ AllBinarySensor.max= max;
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 protected constructor (){
 
             super();

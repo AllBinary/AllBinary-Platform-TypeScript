@@ -54,12 +54,10 @@ export class GameLayerUtil
 
     public static isOnScreen(layer: AllBinaryLayer): boolean{
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var viewPosition: ViewPosition = layer.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = layer.getViewPosition()!;;
     
 
 
@@ -95,6 +93,7 @@ export class GameLayerUtil
                         }
                             
 }
+
 
 private constructor (){
 

@@ -67,13 +67,14 @@ export class AllBinaryFlickerAndroidImageRotationAnimation extends ImageBaseRota
 
     private readonly matrix: Matrix = new Matrix();
 
-    private readonly halfWidth: number
+    private readonly halfWidth: number;
 
-    private readonly halfHeight: number
+    private readonly halfHeight: number;
 
-    private readonly increment: number
+    private readonly increment: number;
 
-    private readonly originalImage: Image
+    private readonly originalImage: Image;
+
 public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
                     
@@ -93,8 +94,7 @@ this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement());
 
     public setBasicColorP(basicColor: BasicColor){
 
-    var changed: boolean = false;
-;
+    var changed: boolean = false;;
     
 
                         if(this.getBasicColorP() == 
@@ -133,8 +133,7 @@ this.setBasicColorP(basicColor);
 
     public setAlpha(alpha: number){
 
-    var changed: boolean = false;
-;
+    var changed: boolean = false;;
     
 
                         if(this.alphaP != alpha)
@@ -191,14 +190,12 @@ this.androidImageUtil!.rotate(this.getImage(), originalImage, matrix, imageModif
 
     public setFrame(index: number){
 
-    var currentFrame: number = this.circularIndexUtil!.getIndex()!;
-;
+    var currentFrame: number = this.circularIndexUtil!.getIndex()!;;
     
 this.circularIndexUtil!.setIndex(index);
     
 
-    var newFrame: number = this.circularIndexUtil!.getIndex()!;
-;
+    var newFrame: number = this.circularIndexUtil!.getIndex()!;;
     
 this.angleInfo!.adjustAngle(newFrame);
     

@@ -57,11 +57,12 @@ export class PaintableForm extends ABCustomForm {
 
     rectangle: Rectangle = RectangleFactory.SINGLETON;
 
-    x: number= 0
+    x: number= 0;
 
-    y: number= 0
+    y: number= 0;
 
     formType: FormType = FormTypeFactory.getInstance()!.NULL_FORM_TYPE;
+
 public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, backgroundBasicColor, foregroundBasicColor);
                     
@@ -91,8 +92,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 this.rectangle= rectangle;
     
 
-    var point: GPoint = this.rectangle.getPoint()!;
-;
+    var point: GPoint = this.rectangle.getPoint()!;;
     
 this.x= point.getX();
     

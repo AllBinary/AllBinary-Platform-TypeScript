@@ -91,14 +91,14 @@ export class AndroidHardware
     private readonly DEVICES: string = this.PROC_BUS_INPUT_DIRECTORY +"devices/";
 
     private readonly MINHARDWARE: number = 3;
+
 public constructor (){
 
             super();
         this.init(this.DEVICES);
     
 
-    var size: number = this.componentInterfaceVector!.size()!;
-;
+    var size: number = this.componentInterfaceVector!.size()!;;
     
 
                         if(size < this.MINHARDWARE)
@@ -119,8 +119,7 @@ public constructor (){
             
     init(filePath: string){
 
-    var lineNumberReader: Closeable = NullCloseable.NULL_CLOSEABLE;
-;
+    var lineNumberReader: Closeable = NullCloseable.NULL_CLOSEABLE;;
     
 
         try {
@@ -163,18 +162,15 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.
 this.componentInterfaceVector= new BasicArrayListD();
     
 
-    var pciFile: FileReader = new FileReader(filePath);
-;
+    var pciFile: FileReader = new FileReader(filePath);;
     
 
-    var lineNumberReader: LineNumberReader = new LineNumberReader(pciFile);
-;
+    var lineNumberReader: LineNumberReader = new LineNumberReader(pciFile);;
     
 this.logUtil!.putF("File Found", this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var nextLine: string = lineNumberReader!.readLine()!;
-;
+    var nextLine: string = lineNumberReader!.readLine()!;;
     
 
         while(nextLine != 
@@ -208,24 +204,20 @@ this.componentInterfaceVector!.add(new UnknownHardware(nextLine));
 
     public toString(): string{
 
-    var hardwareBuffer: StringMaker = new StringMaker();
-;
+    var hardwareBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.componentInterfaceVector!.size()!;
-;
+    var size: number = this.componentInterfaceVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;
-;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
     
 hardwareBuffer!.append(componentInterface!.toString());
     

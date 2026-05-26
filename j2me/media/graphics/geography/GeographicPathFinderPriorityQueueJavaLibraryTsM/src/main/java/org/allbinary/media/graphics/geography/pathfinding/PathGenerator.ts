@@ -71,6 +71,7 @@ export class PathGenerator
     
 }
 
+
 private constructor (){
 
             super();
@@ -87,8 +88,7 @@ private constructor (){
             
     public getInstanceNoCache(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = this.create(geographicMapInterface, pathFindingInfo, totalPaths)!;
-;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = this.create(geographicMapInterface, pathFindingInfo, totalPaths)!;;
     
 
 
@@ -114,20 +114,16 @@ private constructor (){
             
     create(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
 
-    var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
-;
+    var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
     
 
-    var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;
-;
+    var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;;
     
 
-    var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;
-;
+    var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;;
     
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPath(startPathFindingNodeList, endPathFindingNodeList, totalPaths)!;
-;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPath(startPathFindingNodeList, endPathFindingNodeList, totalPaths)!;;
     
 
 
@@ -142,20 +138,16 @@ private constructor (){
             
     public createN(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 
-    var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
-;
+    var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
     
 
-    var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;
-;
+    var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;;
     
 
-    var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;
-;
+    var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;;
     
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPathN(startPathFindingNodeList, endPathFindingNodeList, totalPaths, multipassState)!;
-;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPathN(startPathFindingNodeList, endPathFindingNodeList, totalPaths, multipassState)!;;
     
 
 

@@ -80,9 +80,10 @@ export class ImageActionScriptOutput extends BasicProfileActionScriptOutput impl
 
     private display: boolean = false;
 
-    private imageTypes: ImageTypes
+    private imageTypes: ImageTypes;
 
-    private actionScriptOutputJPanel: ImageActionScriptOutputJPanel
+    private actionScriptOutputJPanel: ImageActionScriptOutputJPanel;
+
 public constructor (node: Node){
             super(NAME, node);
                     
@@ -92,8 +93,7 @@ public constructor (node: Node){
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
-    var actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;
-;
+    var actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -102,28 +102,24 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;
-;
+    var nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;
-;
+    var childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.SAVE) == 0)
                         
                                     {
                                     
-    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setSaved(.valueOf());
     
@@ -135,8 +131,7 @@ this.setSaved(.valueOf());
                         
                                     {
                                     
-    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setSaved(.valueOf());
     
@@ -181,6 +176,7 @@ this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
     
 }
 
+
 public constructor (){
             super(NAME);
                     
@@ -208,8 +204,7 @@ this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()));
     
@@ -230,12 +225,10 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;
-;
+    var node: Node = super.toXmlNode(document)!;;
     
 
-    var newNode: Node = ModDomHelper.createNodeWithValueNodes(document, ImageActionScriptOutputData.NAME, this.toHashMap())!;
-;
+    var newNode: Node = ModDomHelper.createNodeWithValueNodes(document, ImageActionScriptOutputData.NAME, this.toHashMap())!;;
     
 newNode!.appendChild(this.getImageTypes()!.toXmlNode(document));
     
@@ -298,8 +291,7 @@ this.display= display;
 
     public future_toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(" Is Save: ");
     

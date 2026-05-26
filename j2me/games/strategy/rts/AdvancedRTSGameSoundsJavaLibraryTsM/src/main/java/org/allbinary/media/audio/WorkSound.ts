@@ -56,6 +56,7 @@ export class WorkSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/work.wav");
                     

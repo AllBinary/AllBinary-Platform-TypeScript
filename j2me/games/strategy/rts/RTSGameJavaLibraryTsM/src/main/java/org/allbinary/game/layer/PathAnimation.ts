@@ -77,11 +77,12 @@ export class PathAnimation extends Animation {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly linePathAnimation: LinePathAnimation
+    private readonly linePathAnimation: LinePathAnimation;
 
-    private readonly pathFindingLayer: PathFindingLayerInterface
+    private readonly pathFindingLayer: PathFindingLayerInterface;
 
     allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
+
 public constructor (pathFindingLayer: PathFindingLayerInterface, linePathAnimation: LinePathAnimation){
 
             super();
@@ -116,8 +117,7 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 
         try {
             
-    var waypointBehaviorBase: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;
-;
+    var waypointBehaviorBase: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
     
 
                         if(waypointBehaviorBase != 
@@ -126,56 +126,45 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                         
                                     {
                                     
-    var geographicMapCellHistory: GeographicMapCellHistory = waypointBehaviorBase!.getCurrentGeographicMapCellHistory()!;
-;
+    var geographicMapCellHistory: GeographicMapCellHistory = waypointBehaviorBase!.getCurrentGeographicMapCellHistory()!;;
     
 
-    var list: BasicArrayList = geographicMapCellHistory!.getTracked()!;
-;
+    var list: BasicArrayList = geographicMapCellHistory!.getTracked()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
                         if(size > 0)
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;;
     
 
-    var nextPoint: GPoint
-;
+    var nextPoint: GPoint;;
     
 
-    var point: GPoint
-;
+    var point: GPoint;;
     
 
-    var start: number = size -2;
-;
+    var start: number = size -2;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size -1; index++)
+    var index: number = 0;index < size -1; index++)
         {
 
                         if(index == start)

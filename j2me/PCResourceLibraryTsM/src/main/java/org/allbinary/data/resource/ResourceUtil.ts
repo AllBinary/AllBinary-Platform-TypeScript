@@ -87,6 +87,7 @@ export class ResourceUtil
     private path: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private ext: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 private constructor (){
 
             super();
@@ -109,8 +110,7 @@ this.ext= ext;
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;
-;
+    var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;;
     
 
                         if(inputStream == 
@@ -150,16 +150,13 @@ this.ext= ext;
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var inputStream: InputStream = new FileInputStream(new StringMaker().append(this.path)!.append(resource)!.append(this.ext)!.toString());
-;
+    var inputStream: InputStream = new FileInputStream(new StringMaker().append(this.path)!.append(resource)!.append(this.ext)!.toString());;
     
 
                         if(inputStream != 
@@ -168,8 +165,7 @@ this.ext= ext;
                         
                                     {
                                     
-    var byteArray: number[] = new Array(inputStream!.available());
-;
+    var byteArray: number[] = new Array(inputStream!.available());;
     
 StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(), byteArray);
     

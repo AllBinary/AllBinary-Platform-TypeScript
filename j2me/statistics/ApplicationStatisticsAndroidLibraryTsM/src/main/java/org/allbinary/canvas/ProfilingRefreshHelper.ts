@@ -67,11 +67,12 @@ export class ProfilingRefreshHelper extends AndroidGameStatistics {
 
     private firstTime: boolean = true;
 
-    private bestFrameProcessingTime: number= 0
+    private bestFrameProcessingTime: number= 0;
 
-    private worstFrameProcessingTime: number= 0
+    private worstFrameProcessingTime: number= 0;
 
-    private frameProcessingTimeElapsed: number= 0
+    private frameProcessingTimeElapsed: number= 0;
+
 private constructor (){
 
             super();

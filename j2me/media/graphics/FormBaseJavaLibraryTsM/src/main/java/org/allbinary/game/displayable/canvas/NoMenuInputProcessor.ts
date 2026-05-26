@@ -64,6 +64,7 @@ export class NoMenuInputProcessor extends BasicMenuInputProcessor {
     
 }
 
+
 private constructor (){
             super(BasicArrayListUtil.getInstance()!.getImmutableInstance(),  -1, NullCanvas.NULL_CANVAS);
                     

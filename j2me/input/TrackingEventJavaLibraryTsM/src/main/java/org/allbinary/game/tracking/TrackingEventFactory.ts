@@ -51,6 +51,7 @@ export class TrackingEventFactory
             extends Object
          implements AllBinaryEventObjectFactoryInterface {
         
+
 public constructor (){
 
             super();

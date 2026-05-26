@@ -59,6 +59,7 @@ export class EndGameInfo
     private gameOverStr: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private winStr: string = this.gameOverStr;
+
 public constructor (){
 
             super();

@@ -50,6 +50,7 @@ import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
 
 export class SingleLayerLayerProcessor extends LayerProcessor {
         
+
 public constructor (){
             super(new SingleLayerLayerManager());
                     
@@ -63,8 +64,7 @@ public constructor (){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var layerManager: LayerManager = this.getLayerManager()!;
-;
+    var layerManager: LayerManager = this.getLayerManager()!;;
     
 this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLayer, 0);
     

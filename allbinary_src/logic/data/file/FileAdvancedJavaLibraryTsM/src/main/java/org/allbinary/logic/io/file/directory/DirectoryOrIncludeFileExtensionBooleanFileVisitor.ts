@@ -50,7 +50,8 @@ import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayL
 export class DirectoryOrIncludeFileExtensionBooleanFileVisitor extends IncludeFileExtensionsBooleanFileVisitor {
         
 
-    private readonly includesString: string
+    private readonly includesString: string;
+
 public constructor (filterStringBasicArrayList: BasicArrayList){
             super(filterStringBasicArrayList);
                     
@@ -62,6 +63,7 @@ this.includesString=
                                     ;
     
 }
+
 
 public constructor (filterStringBasicArrayList: BasicArrayList, includesString: string){
             super(filterStringBasicArrayList);

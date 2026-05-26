@@ -60,15 +60,16 @@ export class TableSearchRequest
          {
         
 
-    private xslFile: string
+    private xslFile: string;
 
-    private pageName: string
+    private pageName: string;
 
-    private contentType: string
+    private contentType: string;
 
-    private keywords: string
+    private keywords: string;
 
-    private searchParams: SearchParams
+    private searchParams: SearchParams;
+
 public constructor (keywords: string, searchParams: SearchParams, xslFile: string, contentType: string){
 
             super();
@@ -139,8 +140,7 @@ this.contentType= value;
             
     public getXslFile(): string{
 
-    var path: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.xslFile;
-;
+    var path: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.xslFile;;
     
 
 

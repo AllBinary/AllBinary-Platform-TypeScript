@@ -59,6 +59,7 @@ import { GenericProfileActionScriptProcessorData } from './GenericProfileActionS
 
 export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem implements ProfileActionScriptProcessorInterface {
         
+
 public constructor (label: string, node: Node){
             super(label, node);
                     
@@ -66,6 +67,7 @@ public constructor (label: string, node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (label: string){
             super(label);
@@ -88,8 +90,7 @@ super.actionPerformed(actionEvent);
                         
                                     {
                                     
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent() as ProfileActionScriptConditionInterface;
-;
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent() as ProfileActionScriptConditionInterface;;
     
 profileActionScriptConditionInterface!.removeProcessor(this as ProfileActionScriptProcessorInterface);
     
@@ -108,8 +109,7 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(GenericProfileActionScriptProcessorData.NAME)!;
-;
+    var node: Node = document.createElement(GenericProfileActionScriptProcessorData.NAME)!;;
     
 
 

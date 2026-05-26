@@ -77,7 +77,8 @@ export class BasicUriResolver
 
     private readonly uriResolverStrings: URIResolverStrings = URIResolverStrings.getInstance()!;
 
-    private extension: string
+    private extension: string;
+
 public constructor (extension: string){
 
             super();
@@ -102,8 +103,7 @@ public constructor (extension: string){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -112,8 +112,7 @@ stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
 stringBuffer!.append(href);
     
 
-    var abPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;
-;
+    var abPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
@@ -182,8 +181,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.uriResolverStrings!.RESO
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     

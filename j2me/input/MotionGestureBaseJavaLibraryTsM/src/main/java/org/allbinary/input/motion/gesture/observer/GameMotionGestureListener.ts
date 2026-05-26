@@ -79,7 +79,8 @@ export class GameMotionGestureListener
 
     private touchGestureCollection: BasicArrayList = new BasicArrayListD();
 
-    private signed: CompleteMotionGestureListenerInterface
+    private signed: CompleteMotionGestureListenerInterface;
+
 public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
@@ -164,8 +165,7 @@ this.touchGestureCollection!.clear();
 } catch(e) 
             {
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.commonStrings!.EXCEPTION_LABEL);
     
@@ -182,8 +182,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "release", e);
 
         try {
             
-    var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;
-;
+    var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;;
     
 
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.PRESSED)
@@ -220,8 +219,7 @@ this.touchGestureCollection!.clear();
 } catch(e) 
             {
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.commonStrings!.EXCEPTION_LABEL);
     

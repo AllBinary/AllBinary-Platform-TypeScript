@@ -77,81 +77,82 @@ export class UpdateOrderHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private entryId: string
+    private entryId: string;
 
-    private orderId: string
+    private orderId: string;
 
-    private userName: string
+    private userName: string;
 
-    private storeName: string
+    private storeName: string;
 
-    private shipDate: string
+    private shipDate: string;
 
-    private orderDate: string
+    private orderDate: string;
 
-    private transDate: string
+    private transDate: string;
 
-    private cancelDate: string
+    private cancelDate: string;
 
-    private status: string
+    private status: string;
 
-    private paymentMethod: string
+    private paymentMethod: string;
 
-    private name: string
+    private name: string;
 
-    private type: string
+    private type: string;
 
-    private expiration: string
+    private expiration: string;
 
-    private number: string
+    private number: string;
 
-    private encryption: string
+    private encryption: string;
 
-    private billingName: string
+    private billingName: string;
 
-    private billingStreet: string
+    private billingStreet: string;
 
-    private billingCity: string
+    private billingCity: string;
 
-    private billingState: string
+    private billingState: string;
 
-    private billingCode: string
+    private billingCode: string;
 
-    private billingCountry: string
+    private billingCountry: string;
 
-    private shippingName: string
+    private shippingName: string;
 
-    private shippingStreet: string
+    private shippingStreet: string;
 
-    private shippingCity: string
+    private shippingCity: string;
 
-    private shippingState: string
+    private shippingState: string;
 
-    private shippingCode: string
+    private shippingCode: string;
 
-    private shippingCountry: string
+    private shippingCountry: string;
 
-    private shippingMethodName: string
+    private shippingMethodName: string;
 
-    private subTotal: string
+    private subTotal: string;
 
-    private shippingCost: string
+    private shippingCost: string;
 
-    private tax: string
+    private tax: string;
 
-    private total: string
+    private total: string;
 
-    private special: string
+    private special: string;
 
-    private userComment: string
+    private userComment: string;
 
-    private userCancelComment: string
+    private userCancelComment: string;
 
-    private storeComment: string
+    private storeComment: string;
 
-    private storeCancelComment: string
+    private storeCancelComment: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -244,16 +245,13 @@ this.storeCancelComment= this.request.getParameter(OrderData.STORECANCELCOMMENT)
 
         try {
             
-    var success: string = "Successful update";
-;
+    var success: string = "Successful update";;
     
 
-    var orderHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var orderHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 orderHashMap!.put(EntryData.getInstance()!.ID, this.entryId);
     
@@ -349,8 +347,7 @@ OrderHistoryEntityFactory.getInstance()!.update(whereHashMap, orderHashMap);
 } catch(e) 
             {
 
-    var error: string = "Failed to update order table";
-;
+    var error: string = "Failed to update order table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

@@ -65,6 +65,7 @@ export class AbPathData
     public readonly SEPARATORCHAR: string = '/';
 
     public readonly SEPARATOR: string = CommonSeps.getInstance()!.FORWARD_SLASH;
+
 private constructor (){
 
             super();

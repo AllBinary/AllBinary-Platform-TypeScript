@@ -53,28 +53,24 @@ export class LongUtil
 
     public static fillIn(end: string): string{
 
-    var frameStringBuffer: StringMaker = new StringMaker();
-;
+    var frameStringBuffer: StringMaker = new StringMaker();;
     
 
                         if(frameStringBuffer!.length() < LongData.MAX_LONG_LENGTH)
                         
                                     {
                                     
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-;
+    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 
-    var size: number = LongData.MAX_LONG_LENGTH -frameStringBuffer!.length();
-;
+    var size: number = LongData.MAX_LONG_LENGTH -frameStringBuffer!.length();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 frameStringBuffer!.append(commonPhoneStrings!.ZERO);
     
@@ -92,6 +88,7 @@ frameStringBuffer!.append(end);
                         return frameStringBuffer!.toString();;
     
 }
+
 
 private constructor (){
 

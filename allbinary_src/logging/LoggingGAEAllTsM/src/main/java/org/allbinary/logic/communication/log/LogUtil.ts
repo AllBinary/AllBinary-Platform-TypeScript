@@ -75,6 +75,7 @@ import { Log } from './Log.js';
     private readonly logger: Logger = Logger.getLogger(LogUtil.constructor.toString()!)!;
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -83,20 +84,16 @@ private constructor (){
 
     /*actual*/ public putL(log: Log){
 
-    var specialMessage: string = log.getSpecialMessage()!;
-;
+    var specialMessage: string = log.getSpecialMessage()!;;
     
 
-    var anyType: any = log.getObject()!;
-;
+    var anyType: any = log.getObject()!;;
     
 
-    var functionName: string = log.getFunctionName()!;
-;
+    var functionName: string = log.getFunctionName()!;;
     
 
-    var exception: any = log.getThrowable()!;
-;
+    var exception: any = log.getThrowable()!;;
     
 this.put(specialMessage, anyType, functionName, exception);
     
@@ -119,12 +116,10 @@ this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_
 
         try {
             
-    var className: string = CommonStrings.getInstance()!.EMPTY;
-;
+    var className: string = CommonStrings.getInstance()!.EMPTY;;
     
 
-    var clazz: Function = anyType!.constructor!;
-;
+    var clazz: Function = anyType!.constructor!;;
     
 
                         if(clazz.toString()! != 
@@ -138,8 +133,7 @@ this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_
                                     }
                                 
 
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
                         if(exception != 
@@ -171,8 +165,7 @@ this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_
 
         try {
             
-    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-;
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
 
                         if(exception != 

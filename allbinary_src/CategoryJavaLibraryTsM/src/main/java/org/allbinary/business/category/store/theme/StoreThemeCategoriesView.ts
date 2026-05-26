@@ -58,7 +58,8 @@ export class StoreThemeCategoriesView
          implements DomNodeInterface {
         
 
-    private categoryInterface: StoreThemeCategoryInterface
+    private categoryInterface: StoreThemeCategoryInterface;
+
 public constructor (categoryInterface: StoreThemeCategoryInterface){
 
             super();
@@ -71,33 +72,27 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = new StoreThemeCategoryView(this.categoryInterface).toXmlNode(document)!;
-;
+    var node: Node = new StoreThemeCategoryView(this.categoryInterface).toXmlNode(document)!;;
     
 
-    var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;
-;
+    var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;;
     
 
     var size: number = childArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;
-;
+    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;;
     
 
-    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).toXmlNode(document)!;
-;
+    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).toXmlNode(document)!;;
     
 node.appendChild(childCategoryNode);
     

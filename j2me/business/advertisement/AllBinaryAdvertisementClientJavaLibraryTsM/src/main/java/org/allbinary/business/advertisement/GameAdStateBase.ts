@@ -60,11 +60,12 @@ export class GameAdStateBase
          {
         
 
-    readonly adConfigurationP: AdConfiguration
+    readonly adConfigurationP: AdConfiguration;
 
     readonly advertisementsP: Advertisements = new Advertisements();
 
-    okayToShowAdsP: boolean= false
+    okayToShowAdsP: boolean= false;
+
 public constructor (adConfiguration: AdConfiguration){
 
             super();

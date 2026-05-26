@@ -84,12 +84,10 @@ export class ImageCompleteUtil
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
 
-    var playnImage: PlaynImage = image as PlaynImage;
-;
+    var playnImage: PlaynImage = image as PlaynImage;;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;
-;
+    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;;
     
 
                         if(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
@@ -125,8 +123,7 @@ export class ImageCompleteUtil
                                     }
                                 
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
     

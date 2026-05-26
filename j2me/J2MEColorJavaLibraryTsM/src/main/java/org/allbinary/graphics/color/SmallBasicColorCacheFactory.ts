@@ -69,6 +69,7 @@ export class SmallBasicColorCacheFactory
     private readonly BASIC_COLOR_ARRAY: BasicColor[] = new Array(this.SIZE);
 
     private colorIndex: number = 0;
+
 private constructor (){
 
             super();
@@ -87,16 +88,14 @@ this.colorIndex++;
 
     public getAndOrCreate(colorAsInt: number): BasicColor{
 
-    var basicColor: BasicColor
-;
+    var basicColor: BasicColor;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.SIZE; index++)
+    var index: number = 0;index < this.SIZE; index++)
         {
 
                         if(this.INDEX_TO_COLOR[index] == colorAsInt)
@@ -114,8 +113,7 @@ index < this.SIZE; index++)
 }
 
 
-    var ALPHA_MASK: number = Math.round(0xFF000000);
-;
+    var ALPHA_MASK: number = Math.round(0xFF000000);;
     
 basicColor= BasicColorFactory.getInstance()!.createInstanceAN(colorAsInt&ALPHA_MASK, colorAsInt&0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
     

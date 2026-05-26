@@ -102,9 +102,10 @@ export class SpriteSplitterImageJPanel extends javax.swing.JPanel implements Ima
 
     private readonly imageStrings: ImageStrings = ImageStrings.getInstance()!;
 
-    private imageProcessorInput: ImageProcessorInput
+    private imageProcessorInput: ImageProcessorInput;
 
-    private result: BufferedImage
+    private result: BufferedImage;
+
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
                     
@@ -124,42 +125,33 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;
-;
+    var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;;
     
 
-    var spriteType: string = spriteTypeJComboBox!.getSelectedItem() as string;
-;
+    var spriteType: string = spriteTypeJComboBox!.getSelectedItem() as string;;
     
 
-    var totalFrames: Integer = Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string)!;
-;
+    var totalFrames: Integer = Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string)!;;
     
 
-    var totalAnimations: Integer = Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string)!;
-;
+    var totalAnimations: Integer = Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string)!;;
     
 
-    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;
-;
+    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;;
     
 
-    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;
-;
+    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;;
     
 
-    var increaseWidth: number = Integer.valueOf(increaseWidthTextField!.getText())!;
-;
+    var increaseWidth: number = Integer.valueOf(increaseWidthTextField!.getText())!;;
     
 
-    var increaseHeight: number = Integer.valueOf(increaseHeightTextField!.getText())!;
-;
+    var increaseHeight: number = Integer.valueOf(increaseHeightTextField!.getText())!;;
     
 spriteSplitterUtil!.process(SpriteSplitterImageJPanel.prototype.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, SpriteSplitterImageJPanel.prototype);
     
@@ -224,20 +216,17 @@ this.jLabel1= new javax.swing.JLabel();
 this.totalFramesJComboBox= new javax.swing.JComboBox<>();
     
 
-    var size: number = 70;
-;
+    var size: number = 70;;
     
 
-    var animationStringArray2: string[] = new Array(size -1);
-;
+    var animationStringArray2: string[] = new Array(size -1);;
     
 
 
 
 
                         for (
-    var index: number = 1;
-index < size; index++)
+    var index: number = 1;index < size; index++)
         {
 animationStringArray2[index -1]= index.toString();
     
@@ -250,16 +239,14 @@ this.jLabel2= new javax.swing.JLabel();
 this.totalAnimationsJComboBox= new javax.swing.JComboBox<>();
     
 
-    var animationStringArray: string[] = new Array(size -1);
-;
+    var animationStringArray: string[] = new Array(size -1);;
     
 
 
 
 
                         for (
-    var index: number = 1;
-index < size; index++)
+    var index: number = 1;index < size; index++)
         {
 animationStringArray[index -1]= index.toString();
     
@@ -315,8 +302,7 @@ this.jLabel5!.setText("Less Width:");
 this.jLabel4!.setText("Results:");
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
-;
+    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -385,8 +371,7 @@ spriteTypeJComboBoxActionPerformed(evt);
                             );
     
 
-    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);
-;
+    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -414,8 +399,7 @@ this.jLabel8!.setText("More Height:");
 this.increaseHeightTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -438,8 +422,7 @@ this.process();
 
     spriteTypeJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
 
-    var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;
-;
+    var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;;
     
 this.jLabel1!.setText(spriteSplitterUtil!.ANIMATIONS_LABELS[this.spriteTypeJComboBox!.getSelectedIndex()]!);
     
@@ -464,43 +447,43 @@ this.jLabel2!.setText(spriteSplitterUtil!.ANIMATIONS_LABELS[this.spriteTypeJComb
 }
 
 
-    private generateJButton: javax.swing.JButton
+    private generateJButton: javax.swing.JButton;
 
-    private heightReductionTextField: javax.swing.JTextField
+    private heightReductionTextField: javax.swing.JTextField;
 
-    private increaseHeightTextField: javax.swing.JTextField
+    private increaseHeightTextField: javax.swing.JTextField;
 
-    private increaseWidthTextField: javax.swing.JTextField
+    private increaseWidthTextField: javax.swing.JTextField;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private jLabel3: javax.swing.JLabel
+    private jLabel3: javax.swing.JLabel;
 
-    private jLabel4: javax.swing.JLabel
+    private jLabel4: javax.swing.JLabel;
 
-    private jLabel5: javax.swing.JLabel
+    private jLabel5: javax.swing.JLabel;
 
-    private jLabel6: javax.swing.JLabel
+    private jLabel6: javax.swing.JLabel;
 
-    private jLabel7: javax.swing.JLabel
+    private jLabel7: javax.swing.JLabel;
 
-    private jLabel8: javax.swing.JLabel
+    private jLabel8: javax.swing.JLabel;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private jPanel2: javax.swing.JPanel
+    private jPanel2: javax.swing.JPanel;
 
-    private spriteTypeJComboBox: javax.swing.JComboBox<string>
+    private spriteTypeJComboBox: javax.swing.JComboBox<string>;
 
-    private totalAnimationsJComboBox: javax.swing.JComboBox<string>
+    private totalAnimationsJComboBox: javax.swing.JComboBox<string>;
 
-    private totalFramesJComboBox: javax.swing.JComboBox<string>
+    private totalFramesJComboBox: javax.swing.JComboBox<string>;
 
-    private widthReductionTextField: javax.swing.JTextField
+    private widthReductionTextField: javax.swing.JTextField;
 
-    private writeOverOriginalJCheckBox: javax.swing.JCheckBox
+    private writeOverOriginalJCheckBox: javax.swing.JCheckBox;
 
     public getImageProcessorInput(): ImageProcessorInput{
 
@@ -528,20 +511,17 @@ this.result= generatedBufferedImage;
 this.getParent()!.repaint();
     
 
-    var file: File = this.imageProcessorInput!.getFiles()[index]!;
-;
+    var file: File = this.imageProcessorInput!.getFiles()[index]!;;
     
 
                         if(!this.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;
-;
+    var filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
-;
+    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
@@ -551,8 +531,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
-;
+    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF(new StringMaker().append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     

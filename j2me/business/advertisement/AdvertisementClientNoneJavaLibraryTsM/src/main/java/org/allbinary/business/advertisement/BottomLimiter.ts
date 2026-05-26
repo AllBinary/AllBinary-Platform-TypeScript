@@ -63,13 +63,14 @@ export class BottomLimiter
 }
 
 
-    private bottom: number= 0
+    private bottom: number= 0;
 
-    private deltaY: number= 0
+    private deltaY: number= 0;
 
-    private lower: number= 0
+    private lower: number= 0;
 
-    private higher: number= 0
+    private higher: number= 0;
+
 private constructor (){
 
             super();
@@ -86,12 +87,10 @@ this.higher= higher;
 
     public update(){
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;
-;
+    var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;;
     
 
                         if(gameAdState!.isShowingAt())

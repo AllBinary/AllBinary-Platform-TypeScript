@@ -63,20 +63,17 @@ export class ImageFileFilter extends FileFilter {
                                     }
                                 
 
-    var s: string = f.getName()!;
-;
+    var s: string = f.getName()!;;
     
 
-    var i: number = s.lastIndexOf('.')!;
-;
+    var i: number = s.lastIndexOf('.')!;;
     
 
                         if(i > 0 && i < s.length -1)
                         
                                     {
                                     
-    var ext: string = s.substring(i +1)!.toLowerCase()!;
-;
+    var ext: string = s.substring(i +1)!.toLowerCase()!;;
     
 
                         if(ext === "jpg" || ext === "jpeg")

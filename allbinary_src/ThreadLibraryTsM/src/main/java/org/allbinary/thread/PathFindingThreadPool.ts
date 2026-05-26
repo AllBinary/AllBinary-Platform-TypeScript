@@ -59,6 +59,7 @@ export class PathFindingThreadPool extends ThreadPool {
     
 }
 
+
 public constructor (poolName: string, numThreads: number, priority: number){
             super(poolName, numThreads, ThreadPool.NORMAL_PRIORITY);
                     

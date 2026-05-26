@@ -58,7 +58,8 @@ export class TransformInfoInterfaceView
          implements DomNodeInterface {
         
 
-    private transformInfoInterface: TransformInfoInterface
+    private transformInfoInterface: TransformInfoInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();

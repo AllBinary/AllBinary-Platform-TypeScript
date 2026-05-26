@@ -53,12 +53,10 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 
     /*actual*/ public static getInstanceD(): Log{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var nullUtil: NullUtil = NullUtil.getInstance()!;
-;
+    var nullUtil: NullUtil = NullUtil.getInstance()!;;
     
 
 
@@ -91,8 +89,7 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 
     /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
 
-    var nullUtil: NullUtil = NullUtil.getInstance()!;
-;
+    var nullUtil: NullUtil = NullUtil.getInstance()!;;
     
 
 

@@ -59,6 +59,7 @@ export class GameFeatureFactory
     
 }
 
+
 private constructor (){
 
             super();

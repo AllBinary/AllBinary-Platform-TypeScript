@@ -65,6 +65,7 @@
     private readonly OS_ARCH: string = "os.arch";
 
     private readonly OS_VERSION: string = "os.version";
+
 private constructor (){
 
             super();

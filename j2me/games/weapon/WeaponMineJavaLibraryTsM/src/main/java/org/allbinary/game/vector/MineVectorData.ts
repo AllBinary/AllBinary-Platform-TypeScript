@@ -68,6 +68,7 @@ export class MineVectorData
 ,[1000,1000]
 ]
                                                         ];
+
 private constructor (){
 
             super();

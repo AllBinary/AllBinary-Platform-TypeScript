@@ -85,48 +85,39 @@ export class ImageAnalysis
             
     public static process(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
 
-    var imageAnalysisResults: ImageAnalysisResults = new ImageAnalysisResults();
-;
+    var imageAnalysisResults: ImageAnalysisResults = new ImageAnalysisResults();;
     
 
-    var redTotal: number = 0;
-;
+    var redTotal: number = 0;;
     
 
-    var greenTotal: number = 0;
-;
+    var greenTotal: number = 0;;
     
 
-    var blueTotal: number = 0;
-;
+    var blueTotal: number = 0;;
     
 
 
 
 
                         for (
-    var indexY: number = 0;
-indexY < bufferedImage!.getHeight(); indexY++)
+    var indexY: number = 0;indexY < bufferedImage!.getHeight(); indexY++)
         {
 
 
 
 
                         for (
-    var indexX: number = 0;
-indexX < bufferedImage!.getWidth(); indexX++)
+    var indexX: number = 0;indexX < bufferedImage!.getWidth(); indexX++)
         {
 
-    var keyInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(indexX, indexY))!;
-;
+    var keyInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(indexX, indexY))!;;
     
 
-    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger) as ColorCacheable;
-;
+    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger) as ColorCacheable;;
     
 
-    var color: Color = colorCacheable!.getColor()!;
-;
+    var color: Color = colorCacheable!.getColor()!;;
     
 ImageAnalysis.processColorRangeResults(imageAnalysisResults, colorRangeInterface, color);
     
@@ -143,12 +134,10 @@ blueTotal += color.getBlue();
 }
 
 
-    var totalPixels: number = imageAnalysisResults!.getImageColorRangeResults()!.getTotalPixelsChecked()!;
-;
+    var totalPixels: number = imageAnalysisResults!.getImageColorRangeResults()!.getTotalPixelsChecked()!;;
     
 
-    var colorAverage: ColorAverage = imageAnalysisResults!.getImageColorResults()!.getColorAverage()!;
-;
+    var colorAverage: ColorAverage = imageAnalysisResults!.getImageColorResults()!.getColorAverage()!;;
     
 colorAverage!.setAvgRed(redTotal /totalPixels);
     
@@ -243,6 +232,7 @@ imageAnalysisResults!.getImageColorRangeResults()!.addTotalPixelsChecked();
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -253,22 +243,19 @@ private constructor (){
             
     public process(bufferedImageArray: BufferedImage[], colorRangeInterface: ColorRangeInterface): ImageAnalysisResults[]{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS);
     
 
-    var imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);
-;
+    var imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < bufferedImageArray!.length; index++)
+    var index: number = 0;index < bufferedImageArray!.length; index++)
         {
 imageAnalysisResultsArray[index]= ImageAnalysis.process(bufferedImageArray[index]!, colorRangeInterface);
     

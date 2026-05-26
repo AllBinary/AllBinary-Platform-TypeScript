@@ -56,27 +56,26 @@ export class AngleIncrementInfo
 
     private static readonly INCREMENT: string = "Inc: ";
 
-    private readonly angleIncrement: number
+    private readonly angleIncrement: number;
 
-    public readonly DOWN_FRAME: Integer
+    public readonly DOWN_FRAME: Integer;
 
-    public readonly UP_FRAME: Integer
+    public readonly UP_FRAME: Integer;
 
-    public readonly LEFT_FRAME: Integer
+    public readonly LEFT_FRAME: Integer;
 
-    public readonly RIGHT_FRAME: Integer
+    public readonly RIGHT_FRAME: Integer;
+
 public constructor (angleIncrement: number){
 
             super();
         this.angleIncrement= angleIncrement;
     
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 this.DOWN_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.DOWN.getValue() /this.angleIncrement);
     
@@ -123,8 +122,7 @@ this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getVal
 
     public getClosestGeneralDirection(angle: number): number{
 
-    var closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;
-;
+    var closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;;
     
 
                         if(this.UP_FRAME.intValue() -angle < closestDirection!.intValue() -angle)

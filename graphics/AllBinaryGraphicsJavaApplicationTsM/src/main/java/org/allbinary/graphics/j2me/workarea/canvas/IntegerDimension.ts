@@ -46,9 +46,10 @@ export class IntegerDimension
          {
         
 
-    private width: number= 0
+    private width: number= 0;
 
-    private height: number= 0
+    private height: number= 0;
+
 public constructor (width: number, height: number){
 
             super();

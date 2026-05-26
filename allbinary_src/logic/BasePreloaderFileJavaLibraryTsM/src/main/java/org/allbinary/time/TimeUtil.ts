@@ -66,20 +66,16 @@ export class TimeUtil
 
     public setCalendar(calendar: Calendar, yearString: string, monthString: string, dayString: string, hourString: string){
 
-    var year: number = new Integer(yearString).intValue()!;
-;
+    var year: number = new Integer(yearString).intValue()!;;
     
 
-    var month: number = new Integer(monthString).intValue()!;
-;
+    var month: number = new Integer(monthString).intValue()!;;
     
 
-    var day: number = new Integer(dayString).intValue()!;
-;
+    var day: number = new Integer(dayString).intValue()!;;
     
 
-    var hour: number = new Integer(hourString).intValue()!;
-;
+    var hour: number = new Integer(hourString).intValue()!;;
     
 calendar.set(year, month, day, hour, 0);
     
@@ -88,28 +84,22 @@ calendar.set(year, month, day, hour, 0);
 
     public setCalendar(calendar: Calendar, yearString: string, monthString: string, dayString: string, hourString: string, minuteString: string, secondString: string){
 
-    var year: number = new Integer(yearString).intValue()!;
-;
+    var year: number = new Integer(yearString).intValue()!;;
     
 
-    var month: number = new Integer(monthString).intValue()!;
-;
+    var month: number = new Integer(monthString).intValue()!;;
     
 
-    var day: number = new Integer(dayString).intValue()!;
-;
+    var day: number = new Integer(dayString).intValue()!;;
     
 
-    var hour: number = new Integer(hourString).intValue()!;
-;
+    var hour: number = new Integer(hourString).intValue()!;;
     
 
-    var minute: number = new Integer(minuteString).intValue()!;
-;
+    var minute: number = new Integer(minuteString).intValue()!;;
     
 
-    var second: number = new Integer(secondString).intValue()!;
-;
+    var second: number = new Integer(secondString).intValue()!;;
     
 calendar.set(year, month, day, hour, minute, second);
     
@@ -118,28 +108,22 @@ calendar.set(year, month, day, hour, minute, second);
 
     public setExpirationCalendar(calendar: Calendar, yearsString: string, monthsString: string, daysString: string, hoursString: string, minutesString: string, secondsString: string){
 
-    var year: number = calendar.get(Calendar.YEAR) +new Integer(yearsString).intValue();
-;
+    var year: number = calendar.get(Calendar.YEAR) +new Integer(yearsString).intValue();;
     
 
-    var month: number = calendar.get(Calendar.MONTH) +new Integer(monthsString).intValue();
-;
+    var month: number = calendar.get(Calendar.MONTH) +new Integer(monthsString).intValue();;
     
 
-    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +new Integer(daysString).intValue();
-;
+    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +new Integer(daysString).intValue();;
     
 
-    var hour: number = calendar.get(Calendar.HOUR) +new Integer(hoursString).intValue();
-;
+    var hour: number = calendar.get(Calendar.HOUR) +new Integer(hoursString).intValue();;
     
 
-    var minute: number = calendar.get(Calendar.MINUTE) +new Integer(minutesString).intValue();
-;
+    var minute: number = calendar.get(Calendar.MINUTE) +new Integer(minutesString).intValue();;
     
 
-    var second: number = calendar.get(Calendar.SECOND) +new Integer(secondsString).intValue();
-;
+    var second: number = calendar.get(Calendar.SECOND) +new Integer(secondsString).intValue();;
     
 calendar.set(year, month, day, hour, minute, second);
     
@@ -148,14 +132,12 @@ calendar.set(year, month, day, hour, minute, second);
 
     public getTotalTime(yearString: string, monthString: string, dayString: string, hourString: string, minuteString: string, secondString: string): number{
 
-    var time: number = TimeUtil.calendar.getTimeInMillis()!;
-;
+    var time: number = TimeUtil.calendar.getTimeInMillis()!;;
     
 this.setExpirationCalendar(TimeUtil.calendar, yearString, monthString, dayString, hourString, minuteString, secondString);
     
 
-    var timeDelta: number = TimeUtil.calendar.getTimeInMillis()!;
-;
+    var timeDelta: number = TimeUtil.calendar.getTimeInMillis()!;;
     
 
 

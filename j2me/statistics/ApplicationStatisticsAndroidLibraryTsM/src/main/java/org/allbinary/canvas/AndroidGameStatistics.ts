@@ -59,23 +59,22 @@ export class AndroidGameStatistics extends BaseGameStatistics {
 
     private view: BaseViewWrapper = BaseViewWrapper.NULL_VIEW_WRAPPER;
 
-    private totalOnDraws: number= 0
+    private totalOnDraws: number= 0;
 
     private readonly ANDROID_STRING_ARRAY: string[] = new Array(14);
+
 public constructor (){
 
             super();
         
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.ANDROID_STRING_ARRAY.length; index++)
+    var index: number = 0;index < this.ANDROID_STRING_ARRAY.length; index++)
         {
 this.ANDROID_STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
     
@@ -112,24 +111,21 @@ this.totalOnDraws++;
 
     public toStringArray(): string[]{
 
-    var stringArray: string[] = super.toStringArray()!;
-;
+    var stringArray: string[] = super.toStringArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < stringArray!.length; index++)
+    var index: number = 0;index < stringArray!.length; index++)
         {
 this.ANDROID_STRING_ARRAY[index]= stringArray[index]!;
     
 }
 
 
-    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-;
+    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (totalTime /10000);
     
@@ -152,8 +148,7 @@ this.ANDROID_STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
 
     public toString(): string{
 
-    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-;
+    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;;
     
 totalTime= (totalTime /1000);
     
@@ -162,8 +157,7 @@ totalTime= (totalTime /1000);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(super.toStringAt(totalTime));
     
@@ -178,8 +172,7 @@ stringBuffer!.append(this.totalOnDraws.toString());
 stringBuffer!.append(this.ONDRAWS_RATE);
     
 
-    var drawsOverTime: string = (this.totalOnDraws /totalTime).toString()!;
-;
+    var drawsOverTime: string = (this.totalOnDraws /totalTime).toString()!;;
     
 stringBuffer!.append(drawsOverTime);
     

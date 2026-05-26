@@ -64,6 +64,7 @@ export class AbSqlBean extends AbSqlRow {
     private readonly METHOD_GET_FIELD: string = "getField";
 
     private readonly METHOD_IS_SUBSET_OF_ENTRY: string = "isSubsetOfEntry";
+
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
                     
@@ -75,8 +76,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
     public getField(key: string, value: string, requestedField: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -97,18 +97,15 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
         try {
             
-    var field: string = this.stringUtil!.EMPTY_STRING;
-;
+    var field: string = this.stringUtil!.EMPTY_STRING;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
@@ -174,8 +171,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
 
     public getField(keysAndValues: HashMap<any, any>, requestedField: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
@@ -190,37 +186,30 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 
         try {
             
-    var field: string = this.stringUtil!.EMPTY_STRING;
-;
+    var field: string = this.stringUtil!.EMPTY_STRING;;
     
 
-    var set: Set = keysAndValues!.keySet()!;
-;
+    var set: Set = keysAndValues!.keySet()!;;
     
 
-    var keyArray: any[] = set.toArray()!;
-;
+    var keyArray: any[] = set.toArray()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
-    var key: string
-;
+    var key: string;;
     
 
-    var value: string
-;
+    var value: string;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 key= keyArray[i]! as string;
     
@@ -246,12 +235,10 @@ stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
         while(rset.next())
@@ -296,8 +283,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
 } catch(e) 
             {
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
@@ -321,21 +307,18 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
 
     public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap<any, any>): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.SELECT);
     
 
         try {
             
-    var keyArray: any[] = columnsAndValues!.keySet()!.()!;
-;
+    var keyArray: any[] = columnsAndValues!.keySet()!.()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -346,8 +329,7 @@ stringBuffer!.append(key);
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 stringBuffer!.append(this.commonSeps!.SPACE);
     
@@ -370,40 +352,33 @@ stringBuffer!.append(value);
 stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
-    var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = executeSQLStatement(sqlStatement)!;;
     
 
-    var columnName: string
-;
+    var columnName: string;;
     
 
-    var field: string
-;
+    var field: string;;
     
 
         while(rset.next())
         {
 
-    var keyArray2: any[] = columnsAndValues!.keySet()!.()!;
-;
+    var keyArray2: any[] = columnsAndValues!.keySet()!.()!;;
     
 
     var size2: number = keyArray2!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size2; i++)
+    var i: number = 0;i < size2; i++)
         {
 columnName= keyArray2[i]!.toString();
     
@@ -454,8 +429,7 @@ field= rset.getObject(columnName)!.toString();
 } catch(e) 
             {
 
-    var sqlStatement: string = stringBuffer!.toString()!;
-;
+    var sqlStatement: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))

@@ -79,7 +79,8 @@ export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesE
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private userName: string
+    private userName: string;
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -87,6 +88,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (userName: string){
             super(new UserDbInitInfo());
@@ -103,8 +105,7 @@ this.userName= userName;
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(UserData.USERNAME, this.userName);
     
@@ -149,8 +150,7 @@ this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING);
 
         try {
             
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(index);
     
@@ -171,12 +171,10 @@ values.add(address.getCode());
 values.add(address.getCountry());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -215,12 +213,10 @@ this.setDefault(getLastId());
 
         try {
             
-    var addressHashMap: HashMap<any, any> = address.toHashMap()!;
-;
+    var addressHashMap: HashMap<any, any> = address.toHashMap()!;;
     
 
-    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();;
     
 whereKeyValuePairs!.put(StreetAddressData.ID, address.getId());
     
@@ -271,38 +267,31 @@ this.setDefault(address.getId());
 
         try {
             
-    var streetAddressVector: Vector = new Vector();
-;
+    var streetAddressVector: Vector = new Vector();;
     
 
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 keyAndValue!.put(UserData.USERNAME, this.userName);
     
 
-    var addressList: Vector = super.getRows(keyAndValue)!;
-;
+    var addressList: Vector = super.getRows(keyAndValue)!;;
     
 
-    var size: number = addressList!.length!;
-;
+    var size: number = addressList!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var addressHashMap: HashMap<any, any> = addressList!.get(index) as HashMap<any, any>;
-;
+    var addressHashMap: HashMap<any, any> = addressList!.get(index) as HashMap<any, any>;;
     
 
-    var streetAddress: StreetAddress = new StreetAddress(addressHashMap);
-;
+    var streetAddress: StreetAddress = new StreetAddress(addressHashMap);;
     
 
                         if(streetAddress != 
@@ -351,16 +340,14 @@ index < size; index++)
 
         try {
             
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 keyAndValue!.put(UserData.USERNAME, this.userName);
     
 keyAndValue!.put(StreetAddressData.ID, index.toString());
     
 
-    var addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;
-;
+    var addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;;
     
 
                         if(addressHashMap != 
@@ -415,12 +402,10 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
 
         try {
             
-    var addressHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var addressHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT);
     
@@ -435,8 +420,7 @@ addressHashMap= super.getRow(updateKeyAndValue);
                         
                                     {
                                     
-    var streetAddress: StreetAddress = new StreetAddress(addressHashMap);
-;
+    var streetAddress: StreetAddress = new StreetAddress(addressHashMap);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -503,18 +487,15 @@ addressHashMap= super.getRow(updateKeyAndValue);
 
         try {
             
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 whereKeyAndValue!.put(UserData.USERNAME, this.userName);
     
 
-    var streetAddress: StreetAddress = this.getDefault()!;
-;
+    var streetAddress: StreetAddress = this.getDefault()!;;
     
 
                         if(streetAddress != 
@@ -576,8 +557,7 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())!.append(this.sqlStrings!.START)!.append(StreetAddressData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_AUTO_INCREMENT_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.DEFAULT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StreetAddressData.STREET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CITY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.STATE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.CODE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(StreetAddressData.COUNTRY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StreetAddressData.ID)!.append(this.sqlStrings!.END);
     

@@ -62,6 +62,7 @@ export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
     
 }
 
+
 private constructor (){
 
             super();
@@ -72,8 +73,7 @@ private constructor (){
             
     public getInstanceXYZ(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, x: number, y: number, z: number): PickedUpLayerInterface{
 
-    var pickupLayer: PickupLayer = this.getNextInstance() as PickupLayer;
-;
+    var pickupLayer: PickupLayer = this.getNextInstance() as PickupLayer;;
     
 pickupLayer!.initXYZ(x, y, z);
     

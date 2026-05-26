@@ -66,6 +66,7 @@ export class DemoGameMidletStateFactory
     public readonly START_GAME: DemoGameMidletState = new DemoGameMidletState();
 
     public readonly START_INPUT_MAPPING: DemoGameMidletState = new DemoGameMidletState();
+
 private constructor (){
 
             super();

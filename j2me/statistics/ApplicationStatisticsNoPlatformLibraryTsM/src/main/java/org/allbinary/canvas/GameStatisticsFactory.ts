@@ -48,6 +48,7 @@ expect export class GameStatisticsFactory extends BaseGameStatistics {
         
 
     //private static readonly instance: GameStatisticsFactory
+
     public static getInstance(): GameStatisticsFactory
 
     public add(string: string)

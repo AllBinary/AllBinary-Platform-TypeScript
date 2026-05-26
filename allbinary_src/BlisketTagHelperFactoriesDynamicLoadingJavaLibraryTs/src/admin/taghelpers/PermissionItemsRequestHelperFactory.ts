@@ -57,6 +57,7 @@ export class PermissionItemsRequestHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.PermissionItemsRequestHelper";
 
     private static readonly FACTORYNAME: string = "PermissionItemsRequestHelperFactory";
+
 public constructor (){
 
             super();

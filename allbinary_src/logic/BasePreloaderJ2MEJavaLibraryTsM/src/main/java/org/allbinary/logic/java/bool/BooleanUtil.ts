@@ -66,6 +66,7 @@ export class BooleanUtil
 
 
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -76,12 +77,10 @@ private constructor (){
             
     public getFromString(booleanString: string): boolean{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-;
+    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(booleanString))
@@ -97,8 +96,7 @@ private constructor (){
                                     }
                                 
 
-    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;
-;
+    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;;
     
 
                         if(this.tsUtil!.compareTo(booleanStringLowerCase, booleanFactory!.TRUE_STRING) == 0)
@@ -142,12 +140,10 @@ private constructor (){
             
     public isStringBoolean(booleanString: string): boolean{
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-;
+    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
-    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;
-;
+    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;;
     
 
                         if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)

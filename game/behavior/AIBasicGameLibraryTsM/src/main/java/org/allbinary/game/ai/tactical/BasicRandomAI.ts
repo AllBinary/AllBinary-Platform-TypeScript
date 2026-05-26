@@ -68,11 +68,12 @@ export class BasicRandomAI extends BasicAI {
 
     private i_random: number = 0;
 
-    private readonly inputProbability: InputProbability
+    private readonly inputProbability: InputProbability;
 
-    private readonly visitor: Visitor
+    private readonly visitor: Visitor;
 
     private readonly keyArray: number[] = [Canvas.UP,Canvas.DOWN,Canvas.LEFT,Canvas.RIGHT,Canvas.KEY_NUM1,Canvas.KEY_NUM7,Canvas.KEY_NUM9];
+
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, inputProbability: InputProbability, visitor: Visitor){
             super(ownerLayerInterface, gameInput);
                     
@@ -98,12 +99,10 @@ this.visitor= visitor;
                                     this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
     
 
-    var repeat: boolean = false;
-;
+    var repeat: boolean = false;;
     
 
-    var repeatLikelyhoodIntegerArray: Integer[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;
-;
+    var repeatLikelyhoodIntegerArray: Integer[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;;
     
 
                         if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.intValue() >= this.i_random)
@@ -119,31 +118,26 @@ this.visitor= visitor;
                         
                                     {
                                     
-    var likelyhoodIntegerArray: Integer[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;
-;
+    var likelyhoodIntegerArray: Integer[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;;
     
 this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
     
 
     var size: number = this.keyArray!.length
-                ;
-;
+                ;;
     
 
-    var likelyhoodIntegerKeyArray: Integer[]
-;
+    var likelyhoodIntegerKeyArray: Integer[];;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: number = this.keyArray[index]!;
-;
+    var key: number = this.keyArray[index]!;;
     
 likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!;
     

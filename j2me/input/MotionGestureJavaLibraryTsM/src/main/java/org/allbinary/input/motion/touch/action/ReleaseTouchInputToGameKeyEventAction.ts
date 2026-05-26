@@ -73,6 +73,7 @@ export class ReleaseTouchInputToGameKeyEventAction extends GameKeyCompleteMotion
 
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
+
 private constructor (){
             super("Release Action", TouchMotionGestureFactory.getInstance()!.RELEASED, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     
@@ -90,8 +91,7 @@ this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstanceForInput(this
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     

@@ -60,13 +60,14 @@ export class MotionRectangleConstraints
          implements MotionRectangleConstraintsInterface {
         
 
-    private minDimension: Dimension
+    private minDimension: Dimension;
 
-    private maxDimension: Dimension
+    private maxDimension: Dimension;
 
-    private maxMotionRectangles: number= 0
+    private maxMotionRectangles: number= 0;
 
-    private minArea: number= 0
+    private minArea: number= 0;
+
 public constructor (){
 
             super();

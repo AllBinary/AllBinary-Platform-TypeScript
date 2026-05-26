@@ -93,17 +93,18 @@ export class StoreFrontsRequestHelper extends ModifyTable {
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private readonly pageContext: PageContext
+    private readonly pageContext: PageContext;
 
-    private readonly request: HttpServletRequest
+    private readonly request: HttpServletRequest;
 
-    private readonly weblisketSession: WeblisketSession
+    private readonly weblisketSession: WeblisketSession;
 
-    private storeName: string
+    private storeName: string;
 
-    private modifyingStoreFrontInterface: StoreFrontInterface
+    private modifyingStoreFrontInterface: StoreFrontInterface;
 
-    private readonly portion: Portion
+    private readonly portion: Portion;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -134,12 +135,10 @@ this.modifyingStoreFrontInterface= new StoreFront(this.request) as StoreFrontInt
 
         try {
             
-    var success: string = "Updated Successfully";
-;
+    var success: string = "Updated Successfully";;
     
 
-    var hashMapData: HashMap<any, any> = this.modifyingStoreFrontInterface!.toHashMap()!;
-;
+    var hashMapData: HashMap<any, any> = this.modifyingStoreFrontInterface!.toHashMap()!;;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(hashMapData);
     
@@ -163,8 +162,7 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(h
 } catch(e) 
             {
 
-    var error: string = "Failed to update storefronts table";
-;
+    var error: string = "Failed to update storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -190,16 +188,13 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(h
             
     public sendStoreCreatedEmails(){
 
-    var storeManagerEmailSubject: string = "Store Manager Nofification For Store: " +this.modifyingStoreFrontInterface!.getName();
-;
+    var storeManagerEmailSubject: string = "Store Manager Nofification For Store: " +this.modifyingStoreFrontInterface!.getName();;
     
 
-    var adminEmailSubject: string = "Admin Notification For Store: " +this.modifyingStoreFrontInterface!.getName();
-;
+    var adminEmailSubject: string = "Admin Notification For Store: " +this.modifyingStoreFrontInterface!.getName();;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Store Created: ");
     
@@ -228,32 +223,25 @@ stringBuffer!.append("UserName: ");
 stringBuffer!.append(this.weblisketSession!.getUserName());
     
 
-    var adminEmailTextBody: string = stringBuffer!.toString()!;
-;
+    var adminEmailTextBody: string = stringBuffer!.toString()!;;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-;
+    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-;
+    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);
-;
+    var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);;
     
 
-    var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
-;
+    var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STORECREATED)!;
-;
+    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STORECREATED)!;;
     
 
-    var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STORECREATED, this.abeClientInformation, this.modifyingStoreFrontInterface)!;
-;
+    var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STORECREATED, this.abeClientInformation, this.modifyingStoreFrontInterface)!;;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED, storeAdminEmailInfo);
     
@@ -267,8 +255,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Intall StoreFront Successfully: ");
     
@@ -279,8 +266,7 @@ stringBuffer!.append(" of ");
 stringBuffer!.appendint(this.portion.getTotal()!.intValue());
     
 
-    var success: string = stringBuffer!.toString()!;
-;
+    var success: string = stringBuffer!.toString()!;;
     
 this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.intValue(), this.portion.getTotal()!.intValue());
     
@@ -304,8 +290,7 @@ this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.intValue()
 } catch(e) 
             {
 
-    var error: string = "Failed to Install storefront";
-;
+    var error: string = "Failed to Install storefront";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -332,12 +317,10 @@ this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.intValue()
 
         try {
             
-    var success: string = "Added Successfully";
-;
+    var success: string = "Added Successfully";;
     
 
-    var values: Vector = this.modifyingStoreFrontInterface!.toVector()!;
-;
+    var values: Vector = this.modifyingStoreFrontInterface!.toVector()!;;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(values);
     
@@ -361,8 +344,7 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(v
 } catch(e) 
             {
 
-    var error: string = "Failed to add storefront";
-;
+    var error: string = "Failed to add storefront";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -388,8 +370,7 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(v
 
         try {
             
-    var success: string = "Delete Successfully";
-;
+    var success: string = "Delete Successfully";;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.delete(this.storeName);
     
@@ -413,8 +394,7 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.delete(t
 } catch(e) 
             {
 
-    var error: string = "Failed to delete storefronts table";
-;
+    var error: string = "Failed to delete storefronts table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

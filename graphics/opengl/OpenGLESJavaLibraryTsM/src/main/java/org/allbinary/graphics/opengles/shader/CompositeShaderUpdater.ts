@@ -72,17 +72,18 @@ export class CompositeShaderUpdater extends ShaderUpdater {
 
     readonly shaderStrings: ShaderStrings = ShaderStrings.getInstance()!;
 
-    public readonly uniformBlockHandleArray: number[]
+    public readonly uniformBlockHandleArray: number[];
 
-    public readonly uniformBlockArray: string[]
+    public readonly uniformBlockArray: string[];
 
-    public readonly uniformHandleArray: number[]
+    public readonly uniformHandleArray: number[];
 
-    public readonly uniformArray: string[]
+    public readonly uniformArray: string[];
 
-    public readonly attributeHandleArray: number[]
+    public readonly attributeHandleArray: number[];
 
-    public readonly attributeArray: string[]
+    public readonly attributeArray: string[];
+
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
 
             super();

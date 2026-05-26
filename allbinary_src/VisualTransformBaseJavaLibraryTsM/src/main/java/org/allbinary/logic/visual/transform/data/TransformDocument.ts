@@ -65,9 +65,10 @@ export class TransformDocument
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private baseNode: Node
+    private baseNode: Node;
 
-    private document: Document
+    private document: Document;
+
 public constructor (){
 
             super();
@@ -76,8 +77,7 @@ public constructor (){
             this.document= DomDocumentHelper.create();
     
 
-    var allbinaryNode: Node = this.document.createElement("allbinary")!;
-;
+    var allbinaryNode: Node = this.document.createElement("allbinary")!;;
     
 this.baseNode= allbinaryNode;
     
@@ -139,8 +139,7 @@ this.document.appendChild(this.baseNode);
             
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.baseNode != 

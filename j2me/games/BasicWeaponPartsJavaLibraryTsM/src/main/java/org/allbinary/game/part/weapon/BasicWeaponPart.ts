@@ -94,6 +94,7 @@ export class BasicWeaponPart
     private scoreableInterface: ScoreableInterface = NoScoreable.getInstance()!;
 
     relativeRelationship: RelativeRelationship = RelativeRelationship.NULL_RELATIVE_RELATIONSHIP;
+
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
 
             super();
@@ -169,16 +170,13 @@ this.animationInterface= animationInterface;
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getOwnerLayerInterface()!.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.getOwnerLayerInterface()!.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;
-;
+    var viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;
-;
+    var viewY: number = viewPosition!.getY()!;;
     
 this.animationInterface!.paintXY(graphics, viewX, viewY);
     

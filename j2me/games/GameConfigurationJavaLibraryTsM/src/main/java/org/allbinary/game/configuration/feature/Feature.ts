@@ -68,7 +68,8 @@ Feature.hashtable.put(name, gameFeature);
 }
 
 
-    private readonly name: string
+    private readonly name: string;
+
 public constructor (name: string){
 
             super();

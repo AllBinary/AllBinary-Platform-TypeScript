@@ -59,6 +59,7 @@ export class TextItemNumberVisitor extends Visitor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -67,16 +68,14 @@ public constructor (){
 
     public visit(anyType: any = {}): any{
 
-    var value: string = anyType as string;
-;
+    var value: string = anyType as string;;
     
 
                         if(value.length < 2)
                         
                                     {
                                     
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isNumber(value))
@@ -101,8 +100,7 @@ public constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     

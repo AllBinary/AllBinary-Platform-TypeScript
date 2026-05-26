@@ -60,7 +60,8 @@ export class StoreFrontOrdersHistoryStatisticsView
          implements DomNodeInterface {
         
 
-    private storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface
+    private storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface;
+
 public constructor (storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface){
 
             super();
@@ -73,12 +74,10 @@ public constructor (storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrders
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.storeFrontOrdersHistoryStatisticsInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.storeFrontOrdersHistoryStatisticsInterface!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontOrdersHistoryStatisticsData.getInstance()!.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontOrdersHistoryStatisticsData.getInstance()!.NAME, hashMap)!;;
     
 
 

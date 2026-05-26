@@ -55,6 +55,7 @@ export class DomData
     public static readonly VALUE: string = "value";
 
     public static readonly INDEX: string = "index";
+
 private constructor (){
 
             super();

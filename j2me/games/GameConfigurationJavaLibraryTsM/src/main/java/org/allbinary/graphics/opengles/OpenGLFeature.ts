@@ -45,6 +45,7 @@ import { Feature } from '../../../../org/allbinary/game/configuration/feature/Fe
         
 export class OpenGLFeature extends Feature {
         
+
  constructor (name: string){
             super(name);
                     

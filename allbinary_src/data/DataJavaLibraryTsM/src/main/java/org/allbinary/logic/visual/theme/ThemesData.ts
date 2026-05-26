@@ -57,6 +57,7 @@ export class ThemesData
     
 }
 
+
 private constructor (){
 
             super();

@@ -85,6 +85,7 @@ export class UserEmailEventHandlerSingletons
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
+
 private constructor (){
 
             super();
@@ -113,8 +114,7 @@ private constructor (){
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData) as UserEmailEventHandler;
-;
+    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData) as UserEmailEventHandler;;
     
 
                         if(userEmailEventHandler == 
@@ -132,12 +132,10 @@ private constructor (){
                                     }
                                 
 
-    var newUserEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();
-;
+    var newUserEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();;
     
 
-    var vector: Vector = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;
-;
+    var vector: Vector = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;;
     
 newUserEmailEventHandler!.addListener(vector);
     

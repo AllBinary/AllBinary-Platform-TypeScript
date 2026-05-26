@@ -49,7 +49,7 @@ export class CapitalEventHandlerFactory
          {
         
 
-    private static readonly capitalEventHandlerArray: CapitalEventHandler[]
+    private static readonly capitalEventHandlerArray: CapitalEventHandler[];
 
                 private static initResult: number = CapitalEventHandlerFactory.init();
                 private static init(): number { 
@@ -61,8 +61,7 @@ capitalEventHandlerArray= new Array(10);
 
 
                         for (
-    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;
-index >= 0; index--)
+    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;index >= 0; index--)
         {
 CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHandler();
     
@@ -89,8 +88,7 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHand
 
 
                         for (
-    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;
-index >= 0; index--)
+    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;index >= 0; index--)
         {
 CapitalEventHandlerFactory.capitalEventHandlerArray[index]!.removeAllListeners();
     

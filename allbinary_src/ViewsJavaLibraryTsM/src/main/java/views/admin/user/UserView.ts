@@ -60,7 +60,8 @@ export class UserView extends HttpContextView {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    user: UserInterface
+    user: UserInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

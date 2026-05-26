@@ -92,11 +92,12 @@ export class TransformInfoObjectConfig
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly ownerTransformInfoInterface: TransformInfoInterface
+    private readonly ownerTransformInfoInterface: TransformInfoInterface;
 
-    private document: Document
+    private document: Document;
 
-    private outputTypeName: string
+    private outputTypeName: string;
+
 public constructor (transformInfoInterface: Object){
 
             super();
@@ -109,8 +110,7 @@ this.createDocument();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -142,6 +142,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
                                 
 }
 
+
 public constructor (transformInfoInterface: Object, document: Object){
 
             super();
@@ -150,8 +151,7 @@ public constructor (transformInfoInterface: Object, document: Object){
 this.document= document;
     
 
-    var node: Node = DomSearchHelper.getNodeNoThrow(OutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;
-;
+    var node: Node = DomSearchHelper.getNodeNoThrow(OutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;;
     
 
                         if(node != 
@@ -169,8 +169,7 @@ this.document= document;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -202,6 +201,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
                                 
 }
 
+
 public constructor (transformInfoInterface: Object, name: string, type: string){
 
             super();
@@ -210,14 +210,12 @@ public constructor (transformInfoInterface: Object, name: string, type: string){
 this.createDocument();
     
 
-    var configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;
-;
+    var configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;;
     
 configNameAttr!.setValue(name);
     
 
-    var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-;
+    var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 objectConfigNode!.appendChild(configNameAttr);
     
@@ -226,8 +224,7 @@ objectConfigNode!.appendChild(configNameAttr);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo: ");
     
@@ -264,8 +261,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 this.document= DomDocumentHelper.create();
     
 
-    var objectConfigNode: Node = this.document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;
-;
+    var objectConfigNode: Node = this.document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;;
     
 this.document.appendChild(objectConfigNode);
     
@@ -302,36 +298,29 @@ this.document= document;
 
     public containsView(transformInfoInterface: TransformInfoInterface): boolean{
 
-    var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-;
+    var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var viewNodeList: NodeList = objectConfigNode!.getChildNodes()!;
-;
+    var viewNodeList: NodeList = objectConfigNode!.getChildNodes()!;;
     
 
-    var numberOfViews: number = viewNodeList!.getLength()!;
-;
+    var numberOfViews: number = viewNodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfViews; index++)
+    var index: number = 0;index < numberOfViews; index++)
         {
 
-    var viewNode: Node = viewNodeList!.item(index)!;
-;
+    var viewNode: Node = viewNodeList!.item(index)!;;
     
 
-    var viewAttributes: NamedNodeMap = viewNode!.getAttributes()!;
-;
+    var viewAttributes: NamedNodeMap = viewNode!.getAttributes()!;;
     
 
-    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME) as Attr;
-;
+    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME) as Attr;;
     
 
                         if(transformInfoInterface!.getName()!.compareTo(attrNode!.getValue()) == 0)
@@ -361,8 +350,7 @@ index < numberOfViews; index++)
             
     getTemplateAttributes(): NamedNodeMap{
 
-    var componentNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-;
+    var componentNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;;
     
 
 
@@ -377,8 +365,7 @@ index < numberOfViews; index++)
             
     public getName(): string{
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;
-;
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;;
     
 
 
@@ -393,8 +380,7 @@ index < numberOfViews; index++)
             
     public setName(name: string){
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;
-;
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;;
     
 attrNode!.setValue(name);
     
@@ -405,8 +391,7 @@ attrNode!.setValue(name);
             
     getNodeVector(nodeName: string): Vector{
 
-    var componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;
-;
+    var componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;;
     
 
                         if(componentsNodeList != 
@@ -415,20 +400,17 @@ attrNode!.setValue(name);
                         
                                     {
                                     
-    var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;
-;
+    var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;;
     
 
-    var numberOfViews: number = viewNodeVector!.length!;
-;
+    var numberOfViews: number = viewNodeVector!.length!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Number Of ");
     
@@ -465,28 +447,23 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
             
     getTransformDomNodes(nodeName: string): Vector{
 
-    var viewVector: Vector = new Vector();
-;
+    var viewVector: Vector = new Vector();;
     
 
-    var viewNodeVector: Vector = this.getNodeVector(nodeName)!;
-;
+    var viewNodeVector: Vector = this.getNodeVector(nodeName)!;;
     
 
-    var size: number = viewNodeVector!.length!;
-;
+    var size: number = viewNodeVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;
-;
+    var viewNode: Node = viewNodeVector!.get(index) as Node;;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));
     
@@ -505,28 +482,23 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
             
     public getTransforms(nodeName: string): Vector{
 
-    var viewVector: Vector = new Vector();
-;
+    var viewVector: Vector = new Vector();;
     
 
-    var viewNodeVector: Vector = this.getNodeVector(nodeName)!;
-;
+    var viewNodeVector: Vector = this.getNodeVector(nodeName)!;;
     
 
-    var size: number = viewNodeVector!.length!;
-;
+    var size: number = viewNodeVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;
-;
+    var viewNode: Node = viewNodeVector!.get(index) as Node;;
     
 viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
     
@@ -554,16 +526,13 @@ viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
                                     }
                                 
 
-    var viewVector: Vector = new Vector();
-;
+    var viewVector: Vector = new Vector();;
     
 
-    var GROUP: string = TransformInfosData.getInstance()!.GROUP;
-;
+    var GROUP: string = TransformInfosData.getInstance()!.GROUP;;
     
 
-    var componentsNodeList: NodeList = this.document.getElementsByTagName(GROUP)!;
-;
+    var componentsNodeList: NodeList = this.document.getElementsByTagName(GROUP)!;;
     
 
                         if(componentsNodeList != 
@@ -572,36 +541,29 @@ viewVector!.add(new TransformInfoDomNode(viewNode).getTransformInfoInterface());
                         
                                     {
                                     
-    var componentsNode: Node = componentsNodeList!.item(0)!;
-;
+    var componentsNode: Node = componentsNodeList!.item(0)!;;
     
 
-    var length: number = componentsNodeList!.getLength()!;
-;
+    var length: number = componentsNodeList!.getLength()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < length; index++)
+    var index: number = 0;index < length; index++)
         {
 
-    var node: Node = componentsNodeList!.item(index)!;
-;
+    var node: Node = componentsNodeList!.item(index)!;;
     
 
-    var attributes: NamedNodeMap = node.getAttributes()!;
-;
+    var attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(GROUP) as Attr;
-;
+    var attrNode: Attr = attributes.getNamedItem(GROUP) as Attr;;
     
 
-    var value: string = attrNode!.getValue()!;
-;
+    var value: string = attrNode!.getValue()!;;
     
 
                         if(value.compareTo(group) == 0)
@@ -618,12 +580,10 @@ break;
 }
 
 
-    var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;
-;
+    var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;;
     
 
-    var numberOfViews: number = viewNodeVector!.length!;
-;
+    var numberOfViews: number = viewNodeVector!.length!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -635,20 +595,17 @@ break;
                                     }
                                 
 
-    var size: number = viewNodeVector!.length!;
-;
+    var size: number = viewNodeVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index) as Node;
-;
+    var viewNode: Node = viewNodeVector!.get(index) as Node;;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));
     
@@ -774,8 +731,7 @@ this.outputTypeName= outputTypeName;
             
     public getInputOutputTypeName(): string{
 
-    var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;
-;
+    var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;;
     
 
 
@@ -790,8 +746,7 @@ this.outputTypeName= outputTypeName;
             
     public getInputOutputTypeFile(): string{
 
-    var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.FILE, this.getRootNode()!.getChildNodes())!;
-;
+    var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.FILE, this.getRootNode()!.getChildNodes())!;;
     
 
 
@@ -806,8 +761,7 @@ this.outputTypeName= outputTypeName;
             
     public getImportUriPath(): string{
 
-    var node: Node = DomSearchHelper.getNode(XslData.getInstance()!.ROOT_IMPORT_URI, this.getRootNode()!.getChildNodes())!;
-;
+    var node: Node = DomSearchHelper.getNode(XslData.getInstance()!.ROOT_IMPORT_URI, this.getRootNode()!.getChildNodes())!;;
     
 
 

@@ -97,6 +97,7 @@ export class ResourceUtil
     private resources: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     private hashMap: Hashtable<any, any> = new Hashtable<any, any>();
+
 private constructor (){
 
             super();
@@ -127,8 +128,7 @@ this.context= aContext;
 
     public getResourceId(resource: string): Integer{
 
-    var value: Integer = this.hashMap!.get(resource) as Integer;
-;
+    var value: Integer = this.hashMap!.get(resource) as Integer;;
     
 
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
@@ -174,8 +174,7 @@ this.hashMap!.put(resource, value);
 
     containsDuplicate(resource: string, value: Integer): boolean{
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(this.hashMap)!;
-;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(this.hashMap)!;;
     
 
 
@@ -183,12 +182,10 @@ this.hashMap!.put(resource, value);
 
                         for (
     var index: number = objectArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 
-    var integer: Integer = this.hashMap!.get(objectArray[index]!) as Integer;
-;
+    var integer: Integer = this.hashMap!.get(objectArray[index]!) as Integer;;
     
 
                         if(resource != objectArray[index])
@@ -240,20 +237,16 @@ this.resources= resources;
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var integer: Integer = this.hashMap!.get(resource) as Integer;
-;
+    var integer: Integer = this.hashMap!.get(resource) as Integer;;
     
 
-    var id: number = integer.intValue()!;
-;
+    var id: number = integer.intValue()!;;
     
 
-    var resources: Resources = (this.resources as Resources);
-;
+    var resources: Resources = (this.resources as Resources);;
     
 
-    var inputStream: InputStream = resources.openRawResource(id)!;
-;
+    var inputStream: InputStream = resources.openRawResource(id)!;;
     
 
                         if(inputStream != 

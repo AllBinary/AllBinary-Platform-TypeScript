@@ -57,6 +57,7 @@ export class BasicViewData
     
 }
 
+
 private constructor (){
 
             super();

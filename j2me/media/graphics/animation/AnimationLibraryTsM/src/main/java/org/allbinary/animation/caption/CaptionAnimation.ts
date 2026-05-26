@@ -50,17 +50,18 @@ import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 export class CaptionAnimation extends Animation {
         
 
-    private readonly animationInterface: Animation
+    private readonly animationInterface: Animation;
 
-    private readonly overlayAnimationInterface: Animation
+    private readonly overlayAnimationInterface: Animation;
 
-    private readonly captionDx: number
+    private readonly captionDx: number;
 
-    private readonly captionDy: number
+    private readonly captionDy: number;
 
-    private readonly dx: number
+    private readonly dx: number;
 
-    private readonly dy: number
+    private readonly dy: number;
+
 public constructor (animationInterface: Animation, overlayAnimationInterface: Animation, captionDx: number, captionDy: number, dx: number, dy: number){
 
             super();

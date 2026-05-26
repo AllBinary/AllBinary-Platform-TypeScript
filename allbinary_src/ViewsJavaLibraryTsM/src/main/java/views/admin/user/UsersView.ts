@@ -68,7 +68,8 @@ export class UsersView extends HttpContextView implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    userVector: Vector
+    userVector: Vector;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -82,24 +83,20 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var usersNode: Node = document.createElement(UsersData.NAME)!;
-;
+    var usersNode: Node = document.createElement(UsersData.NAME)!;;
     
 
-    var size: number = this.userVector!.length!;
-;
+    var size: number = this.userVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var userInterface: User = this.userVector!.get(index) as User;
-;
+    var userInterface: User = this.userVector!.get(index) as User;;
     
 
                         if(userInterface != 
@@ -108,8 +105,7 @@ index < size; index++)
                         
                                     {
                                     
-    var node: Node = new UserDomNode(userInterface).toXmlNode(document)!;
-;
+    var node: Node = new UserDomNode(userInterface).toXmlNode(document)!;;
     
 usersNode!.appendChild(node);
     

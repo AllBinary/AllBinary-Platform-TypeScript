@@ -280,8 +280,7 @@ export class AndroidKeyFactory extends ActivityFractureUtil {
 
     public init(){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Start/End", this, commonStrings!.INIT);
     

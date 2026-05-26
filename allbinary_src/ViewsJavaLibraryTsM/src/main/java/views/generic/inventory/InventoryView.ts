@@ -79,6 +79,7 @@ export class InventoryView extends HttpStoreComponentView implements DomNodeInte
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -103,34 +104,28 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-;
+    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var inventoryNode: Node = document.createElement(InventoryData.INVENTORY)!;
-;
+    var inventoryNode: Node = document.createElement(InventoryData.INVENTORY)!;;
     
 
-    var itemVector: Vector = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;
-;
+    var itemVector: Vector = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;;
     
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.length).toString()));
     
 
-    var size: number = itemVector!.length!;
-;
+    var size: number = itemVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;
-;
+    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;;
     
 
                         if(itemInterface != 
@@ -139,8 +134,7 @@ index < size; index++)
                         
                                     {
                                     
-    var node: Node = new BasicItemView(itemInterface, new Vector()).toXmlNode(document)!;
-;
+    var node: Node = new BasicItemView(itemInterface, new Vector()).toXmlNode(document)!;;
     
 inventoryNode!.appendChild(node);
     
@@ -206,8 +200,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 } catch(e) 
             {
 
-    var error: string = "Failed to view Inventory";
-;
+    var error: string = "Failed to view Inventory";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))

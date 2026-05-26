@@ -73,6 +73,7 @@ export class ImageRotationUtil
 
 
     private readonly imageJ2SERotationUtil: ImageJ2SERotationUtil = ImageJ2SERotationUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -85,26 +86,22 @@ private constructor (){
                         
                                     {
                                     
-    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
-;
+    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;
-;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;;
     
 
     var originalAwtImage: java.awt.Image = 
                 null
-            ;
-;
+            ;;
     
 
                         if(originalImage!.isMutable())
                         
                                     {
                                     
-    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;
-;
+    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -113,8 +110,7 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
                                 
                         else {
                             
-    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;
-;
+    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -139,8 +135,7 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
-;
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 
                         if(image.isMutable())
@@ -149,16 +144,14 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
                                     
     var originalAwtImage: java.awt.Image = 
                 null
-            ;
-;
+            ;;
     
 
                         if(originalImage!.isMutable())
                         
                                     {
                                     
-    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;
-;
+    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -167,8 +160,7 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
                                 
                         else {
                             
-    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;
-;
+    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;;
     
 originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
     
@@ -176,16 +168,13 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
                         }
                             
 
-    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
-;
+    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;
-;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;;
     
 
-    var bufferedImage: BufferedImage = this.imageJ2SERotationUtil!.createRotatedImage(originalAwtImage, newBufferedImage, rotationInDegrees)!;
-;
+    var bufferedImage: BufferedImage = this.imageJ2SERotationUtil!.createRotatedImage(originalAwtImage, newBufferedImage, rotationInDegrees)!;;
     
 
 

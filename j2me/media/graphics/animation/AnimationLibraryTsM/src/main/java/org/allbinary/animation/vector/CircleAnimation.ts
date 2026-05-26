@@ -56,9 +56,10 @@ export class CircleAnimation extends Animation implements ColorCompositeInterfac
 
     readonly TOTAL_ANGLE: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 
-    width: number
+    width: number;
 
-    height: number
+    height: number;
+
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();

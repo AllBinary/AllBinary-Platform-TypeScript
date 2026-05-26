@@ -91,12 +91,10 @@ super.init(config);
             response.setContentType("text/html");
     
 
-    var out: PrintWriter = response.getWriter()!;
-;
+    var out: PrintWriter = response.getWriter()!;;
     
 
-    var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance(request as ServletRequest, response as ServletResponse, this.getServletConfig(), this.getServletContext())!;
-;
+    var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance(request as ServletRequest, response as ServletResponse, this.getServletConfig(), this.getServletContext())!;;
     
 
                         if(workflowInterface != 

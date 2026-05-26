@@ -57,7 +57,8 @@ export class Driver
 
     private trackPathSelectionSkill: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private aggression: Aggression
+    private aggression: Aggression;
+
 public constructor (turnSpeed: Integer, trackPathSelectionSkill: Integer, aggression: Aggression){
 
             super();

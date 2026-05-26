@@ -54,6 +54,7 @@ export class WholesaleUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

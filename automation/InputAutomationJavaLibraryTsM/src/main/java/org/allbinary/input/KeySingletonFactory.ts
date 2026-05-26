@@ -69,16 +69,13 @@ export class KeySingletonFactory
                 private static init(): number { 
                     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var STATIC_BLOCK: string = "Static Block";
-;
+    var STATIC_BLOCK: string = "Static Block";;
     
 
         try {
@@ -87,12 +84,10 @@ export class KeySingletonFactory
 
 
                         for (
-    var index: number = 0;
-index < keyArray!.length; index++)
+    var index: number = 0;index < keyArray!.length; index++)
         {
 
-    var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;
-;
+    var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;;
     
 KeySingletonFactory.keyStringHashtable!.put(keyAsString, keyArray[index]!);
     
@@ -142,6 +137,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();

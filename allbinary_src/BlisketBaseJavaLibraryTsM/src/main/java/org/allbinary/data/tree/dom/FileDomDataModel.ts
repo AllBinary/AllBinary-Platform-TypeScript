@@ -61,7 +61,8 @@ export class FileDomDataModel
          implements DomNodeInterface {
         
 
-    private file: AbFile
+    private file: AbFile;
+
 public constructor (file: AbFile){
 
             super();
@@ -74,12 +75,10 @@ public constructor (file: AbFile){
             
     public toXmlNode(document: Document): Node{
 
-    var tableMappingInterface: TableMappingInterface = new FileTableMapping(this.file) as TableMappingInterface;
-;
+    var tableMappingInterface: TableMappingInterface = new FileTableMapping(this.file) as TableMappingInterface;;
     
 
-    var hashMap: HashMap<any, any> = tableMappingInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = tableMappingInterface!.toHashMap()!;;
     
 
 

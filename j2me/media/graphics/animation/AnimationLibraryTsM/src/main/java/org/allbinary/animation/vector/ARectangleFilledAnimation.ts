@@ -52,13 +52,14 @@ import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/colo
 export class ARectangleFilledAnimation extends Animation implements ColorCompositeInterface {
         
 
-    public x: number= 0
+    public x: number= 0;
 
-    public y: number= 0
+    public y: number= 0;
 
-    public width: number= 0
+    public width: number= 0;
 
-    public height: number= 0
+    public height: number= 0;
+
 public constructor (){
 
             super();

@@ -70,6 +70,7 @@ export class GameNotificationHud extends BasicHud implements GameNotificationLis
         
 
     public static readonly NULL_GAME_NOTIFICATION: GameNotificationHud = new GameNotificationHud(BasicHudFactory.getInstance()!.TOPCENTER, BasicHudFactory.getInstance()!.HORIZONTAL, 0, 0, 0, BasicColorFactory.getInstance()!.RED);
+
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     

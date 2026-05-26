@@ -84,9 +84,10 @@ export class TitleBodyValidation extends Validation implements DomNodeInterface 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private body: string
+    private body: string;
 
-    private titleValidation: TitleNotRequiredValidation
+    private titleValidation: TitleNotRequiredValidation;
+
 public constructor (){
 
             super();
@@ -100,14 +101,14 @@ public constructor (){
                                     }
                                 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.body= stringUtil!.EMPTY_STRING;
     
 this.titleValidation= new TitleNotRequiredValidation();
     
 }
+
 
 public constructor (document: Document){
 
@@ -122,30 +123,25 @@ public constructor (document: Document){
                                     }
                                 
 
-    var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;
-;
+    var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var aBodyNode: Node = nodeList!.item(index)!;
-;
+    var aBodyNode: Node = nodeList!.item(index)!;;
     
 
-    var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;
-;
+    var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;;
     
 this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
     
 
-    var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, aBodyNode!.getChildNodes())!;
-;
+    var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, aBodyNode!.getChildNodes())!;;
     
 this.titleValidation= new TitleNotRequiredValidation(titleNode);
     
@@ -168,6 +164,7 @@ this.titleValidation= new TitleNotRequiredValidation(titleNode);
 }
 
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -200,8 +197,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -273,8 +269,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -353,8 +348,7 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
                                     }
                                 
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;;
     
 node.appendChild(this.titleValidation!.toXmlNode(document));
     

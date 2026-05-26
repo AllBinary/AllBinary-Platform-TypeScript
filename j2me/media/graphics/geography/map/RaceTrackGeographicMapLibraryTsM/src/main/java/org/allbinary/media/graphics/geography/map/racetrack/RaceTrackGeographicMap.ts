@@ -63,7 +63,8 @@ import { CustomMapGeneratorBaseFactory } from './CustomMapGeneratorBaseFactory.j
 export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
         
 
-    private readonly customMapGenerator: CustomMapGeneratorBase
+    private readonly customMapGenerator: CustomMapGeneratorBase;
+
 public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory){
             super(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface!.getInstance(raceTrackInfo, raceTrackData), new BasicGeographicMapFactory().getInstance(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory);
                     
@@ -89,16 +90,14 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.create(this);
             
     public isValid(geographicMapCellPosition: GeographicMapCellPosition): boolean{
 
-    var customMapArray: number[][] = this.customMapGenerator!.getCustomMapArray()!;
-;
+    var customMapArray: number[][] = this.customMapGenerator!.getCustomMapArray()!;;
     
 
                         if(geographicMapCellPosition!.getColumn() >= customMapArray[0]!.length)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Column: ");
     
@@ -141,8 +140,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Row: ");
     

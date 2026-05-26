@@ -52,7 +52,8 @@ export class GameInitializedEvent extends AllBinaryEventObject {
 
     private resourceLoadingLevel: ResourceLoadingLevel = ResourceLoadingLevelFactory.getInstance()!.LEVEL;
 
-    private level: number= 0
+    private level: number= 0;
+
 public constructor (anyType: any = {}){
             super(anyType);
                     

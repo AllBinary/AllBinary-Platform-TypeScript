@@ -46,13 +46,14 @@ export class VectorInfo
          {
         
 
-    private width: number
+    private width: number;
 
-    private height: number
+    private height: number;
 
-    private points: number[][]
+    private points: number[][];
 
-    private totalFrames: number
+    private totalFrames: number;
+
 public constructor (width: number, height: number, points: number[][], totalFrames: number){
 
             super();

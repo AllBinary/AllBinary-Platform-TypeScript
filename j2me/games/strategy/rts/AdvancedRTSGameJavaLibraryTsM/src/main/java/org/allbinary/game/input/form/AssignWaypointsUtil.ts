@@ -91,24 +91,20 @@ export class AssignWaypointsUtil
 
         try {
             
-    var list: BasicArrayList = ownerAdvancedRTSGameLayer!.getWaypointBehavior()!.getOwnedWaypointList()!;
-;
+    var list: BasicArrayList = ownerAdvancedRTSGameLayer!.getWaypointBehavior()!.getOwnedWaypointList()!;;
     
 
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
-;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;;
     
 
 
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var waypointLayer: RTSLayer = list.get(index) as RTSLayer;
-;
+    var waypointLayer: RTSLayer = list.get(index) as RTSLayer;;
     
 this.WAYPOINT_EVENT.setRtsLayer(waypointLayer);
     
@@ -117,8 +113,7 @@ unitWaypointBehavior!.onWaypointEvent(this.WAYPOINT_EVENT);
 }
 
 
-    var waypointLayer: PathFindingLayerInterface = PrimaryWaypointHelper.getInstance()!.getWaypointLayer()!;
-;
+    var waypointLayer: PathFindingLayerInterface = PrimaryWaypointHelper.getInstance()!.getWaypointLayer()!;;
     
 
                         if(waypointLayer != NullPathFindingLayer.NULL_PATH_FINDING_LAYER)
@@ -136,8 +131,7 @@ unitWaypointBehavior!.onWaypointEvent(this.WAYPOINT_EVENT);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "set", e);
     

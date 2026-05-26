@@ -78,6 +78,7 @@ export class WindowsOperatingSystemFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -88,16 +89,13 @@ private constructor (){
 
         try {
             
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-;
+    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
-    var osName: string = SystemProperties.getInstance()!.getName()!;
-;
+    var osName: string = SystemProperties.getInstance()!.getName()!;;
     
 
-    var operatingSystemInterface: GenericOperatingSystem
-;
+    var operatingSystemInterface: GenericOperatingSystem;;
     
 
                         if(osName!.compareTo(operatingSystems!.WINDOWS_NT) == 0)
@@ -190,8 +188,7 @@ private constructor (){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     

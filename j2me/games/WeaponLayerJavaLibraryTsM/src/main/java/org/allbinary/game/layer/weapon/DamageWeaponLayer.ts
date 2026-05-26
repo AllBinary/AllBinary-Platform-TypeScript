@@ -57,6 +57,7 @@ import { CollidableDamageWeaponBehavior } from './CollidableDamageWeaponBehavior
 
 export class DamageWeaponLayer extends WeaponLayer {
         
+
 public constructor (name: string, remoteInfo: RemoteInfo, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, username: string, actorSessionId: number, id: number, multiPlayerType: number){
             super(name, remoteInfo, multiPlayerType, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition);
                     

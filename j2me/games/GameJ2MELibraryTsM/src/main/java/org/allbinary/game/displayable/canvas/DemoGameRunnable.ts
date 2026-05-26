@@ -58,7 +58,8 @@ export class DemoGameRunnable extends GameRunnable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly demoCanvas: DemoCanvas
+    private readonly demoCanvas: DemoCanvas;
+
 public constructor (demoCanvas: DemoCanvas){
 
             super();
@@ -81,8 +82,7 @@ this.demoCanvas!.processGame();
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     

@@ -62,6 +62,7 @@ export class ImageJ2MEScaleUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -72,8 +73,7 @@ private constructor (){
             
     public scaleArray(images: Image[], width: number, height: number): Image[]{
 
-    var scaledImages: Image[] = new Array(images.length);
-;
+    var scaledImages: Image[] = new Array(images.length);;
     
 
 
@@ -81,8 +81,7 @@ private constructor (){
 
                         for (
     var index: number = images.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 scaledImages[index]= this.scale(images[index]!, width, height);
     
@@ -101,8 +100,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
             
     public scale(image: Image, width: number, height: number): Image{
 
-    var scaledImage: Image = ImageCopyUtil.getInstance()!.createImageWH(image, width, height, true)!;
-;
+    var scaledImage: Image = ImageCopyUtil.getInstance()!.createImageWH(image, width, height, true)!;;
     
 
 

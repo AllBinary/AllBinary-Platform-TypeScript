@@ -51,6 +51,7 @@ export class GeographicMapCellHistoryProgress extends GeographicMapCellHistoryPr
     private totalVisitedArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
 
     private geographicMapCellHistoryArray: GeographicMapCellHistory[] = GeographicMapCellHistory.NULL_GEOGRPAHIC_MAP_HISTORY_ARRAY;
+
 public constructor (geographicMapCellHistoryArray: GeographicMapCellHistory[]){
 
             super();
@@ -69,29 +70,24 @@ this.totalVisitedArray= new Array(this.geographicMapCellHistoryArray!.length);
 
     public isAnyProgress(): boolean{
 
-    var isProgressing: boolean = false;
-;
+    var isProgressing: boolean = false;;
     
 
     var size: number = this.geographicMapCellHistoryArray!.length
-                ;
-;
+                ;;
     
 
-    var currentTotalVisited: number= 0
-;
+    var currentTotalVisited: number= 0;;
     
 
-    var totalVisited: number= 0
-;
+    var totalVisited: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 totalVisited= this.geographicMapCellHistoryArray[index]!.getTotalVisited();
     

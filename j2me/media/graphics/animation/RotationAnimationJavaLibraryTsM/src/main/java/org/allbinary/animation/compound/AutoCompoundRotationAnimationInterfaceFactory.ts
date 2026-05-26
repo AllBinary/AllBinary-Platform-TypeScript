@@ -53,6 +53,7 @@ import { AutoCompoundRotationAnimation } from './AutoCompoundRotationAnimation.j
 
 export class AutoCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
                     

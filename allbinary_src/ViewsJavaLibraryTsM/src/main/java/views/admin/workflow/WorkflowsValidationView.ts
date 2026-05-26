@@ -60,6 +60,7 @@ export class WorkflowsValidationView extends WorkFlowsView implements Validation
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -106,8 +107,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Please Contact Administrator");
     

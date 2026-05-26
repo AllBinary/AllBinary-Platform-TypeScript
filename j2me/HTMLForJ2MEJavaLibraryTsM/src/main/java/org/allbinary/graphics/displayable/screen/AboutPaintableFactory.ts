@@ -65,6 +65,7 @@ export class AboutPaintableFactory
     
 }
 
+
 private constructor (){
 
             super();
@@ -72,15 +73,13 @@ private constructor (){
     var INFO: string[] = 
                                                         [
                                                             "Built with the","AllBinary Platform",StringUtil.getInstance()!.EMPTY_STRING,"Comments or Questions:","support@allbinary.com"
-                                                        ];
-;
+                                                        ];;
     
 
     var DEVELOPERS: string[] = 
                                                         [
                                                             "Developed By:","Travis Berthelot"
-                                                        ];
-;
+                                                        ];;
     
 this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableArrayInstance();
     

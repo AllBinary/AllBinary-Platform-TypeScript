@@ -71,7 +71,8 @@ export class BasicEventHandler
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private eventListenerInterfaceList: BasicArrayList
+    private eventListenerInterfaceList: BasicArrayList;
+
 public constructor (){
 
             super();
@@ -82,24 +83,20 @@ public constructor (){
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var LISTENER: string = " Listener: ";
-;
+    var LISTENER: string = " Listener: ";;
     
 stringBuffer!.append("Total Listeners: ");
     
 stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
@@ -117,8 +114,7 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(eventListenerInterface))
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
     
@@ -189,12 +185,10 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 
     public fireEvent(eventObject: AllBinaryEventObject){
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
         while(index < this.eventListenerInterfaceList!.size())
@@ -210,8 +204,7 @@ this.process(eventObject, eventListenerInterface);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     

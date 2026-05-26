@@ -114,12 +114,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -167,12 +165,10 @@ System.gc();
                                     
         try {
             
-    var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;
-;
+    var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;;
     
 
-    var bufferedInputStream: BufferedInputStream = new BufferedInputStream(inputStream);
-;
+    var bufferedInputStream: BufferedInputStream = new BufferedInputStream(inputStream);;
     
 
 
@@ -185,12 +181,10 @@ System.gc();
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonString!.EXCEPTION, AllBinaryMediaManager.THIS, CREATE_PLAYER, e);
     
@@ -249,6 +243,7 @@ logUtil!.put(commonString!.EXCEPTION, AllBinaryMediaManager.THIS, CREATE_PLAYER,
                         return true;
     
 }
+
 
 private constructor (){
 

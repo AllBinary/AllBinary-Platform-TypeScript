@@ -61,12 +61,12 @@ export class EmptyRaceRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeo
     
 }
 
+
 private constructor (){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.EMPTY_CELL_TYPE= new RaceTrackGeographicMapCellType(commonStrings!.EMPTY, 0, PathFindingNodeCostInfoData.getInstance()!.MAX_NODE_COST, 1);
     

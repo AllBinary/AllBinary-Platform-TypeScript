@@ -106,8 +106,7 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
             
     public static createCanvas(gameLayerManager: AllBinaryGameLayerManager): NullGameCanvas{
 
-    var nullGameCanvas: NullGameCanvas = new NullGameCanvas(gameLayerManager);
-;
+    var nullGameCanvas: NullGameCanvas = new NullGameCanvas(gameLayerManager);;
     
 nullGameCanvas!.setInitialized(true);
     
@@ -125,6 +124,7 @@ nullGameCanvas!.setTitle(NullGameCanvas.NO_GAME);
     public static readonly NO_GAME: string = "No Background Game";
 
     public static readonly TYPE: number = 1;
+
 protected constructor (gameLayerManager: AllBinaryGameLayerManager){
             super(NullCommandListener.NULL_COMMAND_LISTENER, gameLayerManager, NoHighScoresFactory.getInstance(), BasicBuildGameInitializerFactory.NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY, false);
                     

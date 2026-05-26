@@ -75,8 +75,7 @@ TerrainEventHandler.hashtable= new Hashtable<any, any>();
 
     public static getInstance(anyType: any = {}): TerrainEventHandler{
 
-    var eventHandlerCanBeNull: any = TerrainEventHandler.hashtable.get(anyType);
-;
+    var eventHandlerCanBeNull: any = TerrainEventHandler.hashtable.get(anyType);;
     
 
                         if(eventHandlerCanBeNull == 
@@ -101,6 +100,7 @@ TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull);
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -144,14 +144,12 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var terrainEventListener: TerrainEventListener = this.list.get(index) as TerrainEventListener;
-;
+    var terrainEventListener: TerrainEventListener = this.list.get(index) as TerrainEventListener;;
     
 terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent);
     
@@ -174,8 +172,7 @@ super.fireEvent(eventObject);
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;
-;
+    var terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;;
     
 terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent);
     

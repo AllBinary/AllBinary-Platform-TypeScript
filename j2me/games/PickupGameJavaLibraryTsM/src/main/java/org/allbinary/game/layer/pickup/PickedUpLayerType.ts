@@ -46,7 +46,8 @@ export class PickedUpLayerType
          {
         
 
-    private name: string
+    private name: string;
+
  constructor (name: string){
 
             super();

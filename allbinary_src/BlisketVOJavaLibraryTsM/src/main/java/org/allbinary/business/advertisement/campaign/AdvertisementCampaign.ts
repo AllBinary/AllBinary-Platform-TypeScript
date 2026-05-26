@@ -56,7 +56,8 @@ export class AdvertisementCampaign
          implements AdvertisementCampaignInterface {
         
 
-    private hashMap: HashMap<any, any>
+    private hashMap: HashMap<any, any>;
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();

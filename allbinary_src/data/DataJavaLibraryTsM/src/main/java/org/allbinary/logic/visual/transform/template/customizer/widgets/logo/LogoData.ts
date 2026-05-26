@@ -57,6 +57,7 @@ export class LogoData
     
 }
 
+
 private constructor (){
 
             super();

@@ -55,7 +55,8 @@ export class PaymentGatewayEncryptedMapping
          implements TableMappingInterface {
         
 
-    private paymentGatewayInterface: PaymentGatewayInterface
+    private paymentGatewayInterface: PaymentGatewayInterface;
+
 public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
             super();

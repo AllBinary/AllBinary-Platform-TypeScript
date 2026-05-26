@@ -67,6 +67,7 @@ export class NoHighScoresFactory extends HighScoresBase {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public readonly NO_HIGH_SCORES: HighScores[] = [];
+
 private constructor (){
 
             super();

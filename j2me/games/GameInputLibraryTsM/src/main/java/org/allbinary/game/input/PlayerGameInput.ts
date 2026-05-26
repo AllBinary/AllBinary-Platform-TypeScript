@@ -68,7 +68,8 @@ export class PlayerGameInput extends GameInput implements GameKeyEventListenerIn
 
     readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
 
-    private readonly playerInputId: number
+    private readonly playerInputId: number;
+
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList, playerInputId: number){
             super(gameKeyEventList, removalGameKeyEventList);
                     

@@ -86,7 +86,8 @@ export class WeblisketSession
          implements WeblisketSessionInterface {
         
 
-    private session: HttpSession
+    private session: HttpSession;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             this(hashMap, pageContext!.getRequest() as HttpServletRequest);
                     
@@ -95,16 +96,15 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
                     
 }
 
+
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
         
-    var propertiesHashMap: HashMap<any, any> = hashMap;
-;
+    var propertiesHashMap: HashMap<any, any> = hashMap;;
     
 
-    var request: HttpServletRequest = httpServletRequest;
-;
+    var request: HttpServletRequest = httpServletRequest;;
     
 this.session= request.getSession(true);
     
@@ -264,8 +264,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
             
     public getRole(): UserRole{
 
-    var userRole: UserRole = this.session.getAttribute(UserRoleData.NAME.toString()) as UserRole;
-;
+    var userRole: UserRole = this.session.getAttribute(UserRoleData.NAME.toString()) as UserRole;;
     
 
                         if(userRole != 
@@ -299,20 +298,17 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
             
     public getOrder(): OrderInterface{
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;;
     
 
-    var basketName: string = storeFrontInterface!.getBasketName()!;
-;
+    var basketName: string = storeFrontInterface!.getBasketName()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(basketName))
                         
                                     {
                                     
-    var orderInterface: OrderInterface = this.session.getAttribute(basketName) as OrderInterface;
-;
+    var orderInterface: OrderInterface = this.session.getAttribute(basketName) as OrderInterface;;
     
 
                         if(orderInterface == 
@@ -388,12 +384,10 @@ this.session.removeAttribute(UserData.USERNAME);
 
     public removeBasket(){
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;;
     
 
-    var basketName: string = storeFrontInterface!.getBasketName()!;
-;
+    var basketName: string = storeFrontInterface!.getBasketName()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(basketName))

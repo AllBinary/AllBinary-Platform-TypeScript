@@ -50,7 +50,8 @@ export class AllMotionRecognizer
 
     private static index: number = 0;
 
-    private readonly id: number
+    private readonly id: number;
+
 public constructor (){
 
             super();

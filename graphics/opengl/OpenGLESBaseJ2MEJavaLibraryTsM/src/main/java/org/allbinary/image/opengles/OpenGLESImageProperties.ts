@@ -56,7 +56,7 @@ export class OpenGLESImageProperties
 
     public scaleY2: number = 1.0;
 
-    public angle: number= 0
+    public angle: number= 0;
 
     public redf: number = 1.0;
 
@@ -64,7 +64,7 @@ export class OpenGLESImageProperties
 
     public bluef: number = 1.0;
 
-    public alphaf: number= 0.0
+    public alphaf: number= 0.0;
 
 }
                 

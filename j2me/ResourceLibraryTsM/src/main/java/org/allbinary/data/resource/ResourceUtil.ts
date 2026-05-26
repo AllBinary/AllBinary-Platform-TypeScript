@@ -79,6 +79,7 @@ export class ResourceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -97,8 +98,7 @@ ResourceUtil.classLoader= classLoader;
             
     public getResourceAsStream(resource: string): InputStream{
 
-    var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;
-;
+    var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;;
     
 
                         if(inputStream == 
@@ -138,20 +138,16 @@ ResourceUtil.classLoader= classLoader;
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var index: number = resource.indexOf(commonSeps!.COLON)!;
-;
+    var index: number = resource.indexOf(commonSeps!.COLON)!;;
     
 
-    var resourcePath: string = resource.substring(index +startIndex)!;
-;
+    var resourcePath: string = resource.substring(index +startIndex)!;;
     
 
-    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;
-;
+    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;;
     
 
                         if(inputStream != 
@@ -169,8 +165,7 @@ ResourceUtil.classLoader= classLoader;
                                     }
                                 
 
-    var classLoader: ClassLoader = ResourceUtil.classLoader as ClassLoader;
-;
+    var classLoader: ClassLoader = ResourceUtil.classLoader as ClassLoader;;
     
 inputStream= classLoader!.getResourceAsStream(resourcePath);
     

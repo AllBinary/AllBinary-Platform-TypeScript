@@ -88,6 +88,7 @@ export class TransformFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -111,16 +112,13 @@ private constructor (){
                                     }
                                 
 
-    var ownerTransformInfoHttpInterface: TransformInfoHttpInterface = ownerTransformInfoInterface as TransformInfoHttpInterface;
-;
+    var ownerTransformInfoHttpInterface: TransformInfoHttpInterface = ownerTransformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(viewName, ownerTransformInfoHttpInterface!.getPropertiesHashMap(), ownerTransformInfoHttpInterface!.getPageContext())!;
-;
+    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(viewName, ownerTransformInfoHttpInterface!.getPropertiesHashMap(), ownerTransformInfoHttpInterface!.getPageContext())!;;
     
 
                         if(transformInfoInterface == 
@@ -139,8 +137,7 @@ private constructor (){
 transformInfoInterface!.setChild();
     
 
-    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
-;
+    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -186,8 +183,7 @@ transformInfoInterface!.setChild();
 
         try {
             
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -199,12 +195,10 @@ transformInfoInterface!.setChild();
                                     }
                                 
 
-    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as string, propertiesHashMap, pageContext)!;
-;
+    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as string, propertiesHashMap, pageContext)!;;
     
 
                         if(transformInfoInterface != 
@@ -224,8 +218,7 @@ transformInfoInterface!.setChild();
                         }
                             
 
-    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
-;
+    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -251,8 +244,7 @@ transformInfoInterface!.setChild();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed To Get Instance: ");
     
@@ -290,8 +282,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.GET_INSTAN
                                     }
                                 
 
-    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
-;
+    var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))

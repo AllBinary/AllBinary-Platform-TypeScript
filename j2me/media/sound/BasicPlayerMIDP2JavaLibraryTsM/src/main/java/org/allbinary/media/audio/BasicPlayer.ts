@@ -69,11 +69,12 @@ export class BasicPlayer
 
     readonly listenersList: BasicArrayList = new BasicArrayListD();
 
-    private timeBase: TimeBase
+    private timeBase: TimeBase;
 
-    stateP: number= 0
+    stateP: number= 0;
 
-    loopCountP: number= 0
+    loopCountP: number= 0;
+
 public constructor (){
 
             super();

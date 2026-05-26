@@ -63,6 +63,7 @@ StaticTileLayerIntoPositionViewPosition.tiledLayer= tiledLayer;
     
 }
 
+
 public constructor (){
             super(0, 0, 0);
                     

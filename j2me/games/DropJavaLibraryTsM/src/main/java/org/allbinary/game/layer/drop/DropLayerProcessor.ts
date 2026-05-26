@@ -66,6 +66,7 @@ export class DropLayerProcessor extends BasicLayerProcessor {
     
 }
 
+
 private constructor (){
 
             super();
@@ -76,28 +77,23 @@ private constructor (){
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var list: BasicArrayList = this.getList()!;
-;
+    var list: BasicArrayList = this.getList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var layerInterface: AllBinaryLayer = list.objectArray[index]! as AllBinaryLayer;
-;
+    var layerInterface: AllBinaryLayer = list.objectArray[index]! as AllBinaryLayer;;
     
 
-    var dropLayerInterface: DropLayerInterface = layerInterface as DropLayerInterface;
-;
+    var dropLayerInterface: DropLayerInterface = layerInterface as DropLayerInterface;;
     
 allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer() as AllBinaryLayer);
     

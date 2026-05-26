@@ -50,16 +50,14 @@ export class PrimitiveArrayToString
 
     public static toString(floats: number[]): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < floats.length; index++)
+    var index: number = 0;index < floats.length; index++)
         {
 stringBuffer!.appendfloat(floats[index]!);
     

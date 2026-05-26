@@ -64,7 +64,7 @@ export class AllBinaryPreloaderActivator
          implements BundleActivator {
         
 
-    private static context: BundleContext
+    private static context: BundleContext;
 
     private static readonly CRYPT_REGISTRY_NAME: string = "bundle.abcs.logic.system.loader.CryptService";
 
@@ -79,6 +79,7 @@ export class AllBinaryPreloaderActivator
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -118,16 +119,13 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
             
     public registerAsService(){
 
-    var properties: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var properties: Hashtable<any, any> = new Hashtable<any, any>();;
     
 
-    var serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;
-;
+    var serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;;
     
 
-    var serviceReference: ServiceReference = serviceRegistration!.getReference()!;
-;
+    var serviceReference: ServiceReference = serviceRegistration!.getReference()!;;
     
 serviceReference= AllBinaryPreloaderActivator.context.getServiceReference(CRYPT_REGISTRY_NAME);
     

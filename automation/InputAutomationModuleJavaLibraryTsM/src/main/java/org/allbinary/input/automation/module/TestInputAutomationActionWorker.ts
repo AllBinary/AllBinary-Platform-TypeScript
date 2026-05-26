@@ -66,7 +66,8 @@ export class TestInputAutomationActionWorker extends AbstractInputAutomationWork
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private sleep: number
+    private sleep: number;
+
 public constructor (sleep: number, inputAutomationActionInterface: InputAutomationActionInterface, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
             super(inputAutomationActionInterface);
                     
@@ -94,37 +95,30 @@ Thread.sleep(2000);
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
-    var hashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
-;
+    var hashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
-    var set: Set = hashtable.keys()!;
-;
+    var set: Set = hashtable.keys()!;;
     
 
-    var inputTypeNameArray: any[] = set.toArray()!;
-;
+    var inputTypeNameArray: any[] = set.toArray()!;;
     
 
     var size: number = inputTypeNameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var inputTypeNameString: string = inputTypeNameArray[index]! as string;
-;
+    var inputTypeNameString: string = inputTypeNameArray[index]! as string;;
     
 
-    var robot: InputRobotInterface = hashtable.get(inputTypeNameString) as InputRobotInterface;
-;
+    var robot: InputRobotInterface = hashtable.get(inputTypeNameString) as InputRobotInterface;;
     
 
                         if(this.sleep > 0)

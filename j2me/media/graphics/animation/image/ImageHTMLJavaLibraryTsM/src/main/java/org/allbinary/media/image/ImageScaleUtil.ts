@@ -76,6 +76,7 @@ export class ImageScaleUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -98,12 +99,10 @@ private constructor (){
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
 
-    var scaleX: number = scaleNominatorX /scaleDenominatorX;
-;
+    var scaleX: number = scaleNominatorX /scaleDenominatorX;;
     
 
-    var scaleY: number = scaleNominatorY /scaleDenominatorY;
-;
+    var scaleY: number = scaleNominatorY /scaleDenominatorY;;
     
 
 
@@ -130,8 +129,7 @@ private constructor (){
             
     public createImageInternal(originalImage: Image, scaleX: number, scaleY: number): Image{
 
-    var image: Image = ImageCreationUtil.getInstance()!.getInstance(Math.round((originalImage!.getWidth() *scaleX)), Math.round((originalImage!.getHeight() *scaleY)))!;
-;
+    var image: Image = ImageCreationUtil.getInstance()!.getInstance(Math.round((originalImage!.getWidth() *scaleX)), Math.round((originalImage!.getHeight() *scaleY)))!;;
     
 
                         if(image.isMutable())
@@ -140,16 +138,14 @@ private constructor (){
                                     
     var originalPlayNImage: playn.core.Image = 
                 null
-            ;
-;
+            ;;
     
 
                         if(originalImage!.isMutable())
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
-;
+    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -158,8 +154,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
-;
+    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -167,16 +162,13 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                         }
                             
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
-;
+    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
-;
+    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-;
+    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalPlayNImage!.width(), originalPlayNImage!.height());
     

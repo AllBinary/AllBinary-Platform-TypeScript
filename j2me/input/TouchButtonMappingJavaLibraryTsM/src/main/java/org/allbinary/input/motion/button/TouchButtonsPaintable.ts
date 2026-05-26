@@ -56,13 +56,14 @@ import { TouchButton } from './TouchButton.js';
 export class TouchButtonsPaintable extends Paintable {
         
 
-    readonly foregroundBasicColor: BasicColor
+    readonly foregroundBasicColor: BasicColor;
 
-    readonly foregroundColor: number
+    readonly foregroundColor: number;
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
 
     private readonly touchButtonFactory: TouchButtonFactory = TouchButtonFactory.getInstance()!;
+
 public constructor (basicColor: BasicColor){
 
             super();
@@ -75,22 +76,19 @@ this.foregroundColor= basicColor!.intValue();
 
     public paint(graphics: Graphics){
 
-    var list: BasicArrayList = this.touchButtonFactory!.getList()!;
-;
+    var list: BasicArrayList = this.touchButtonFactory!.getList()!;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.foregroundBasicColor, this.foregroundColor);
     
 
-    var touchButton: TouchButton
-;
+    var touchButton: TouchButton;;
     
 
 
 
 
                         for (
-    var index: number = list.size()!;
---index >= 0; )
+    var index: number = list.size()!;--index >= 0; )
         {
 touchButton= list.objectArray[index]! as TouchButton;
     
@@ -103,8 +101,7 @@ touchButton!.paint(graphics);
 
 
                         for (
-    var index: number = list.size()!;
---index >= 0; )
+    var index: number = list.size()!;--index >= 0; )
         {
 touchButton= list.objectArray[index]! as TouchButton;
     

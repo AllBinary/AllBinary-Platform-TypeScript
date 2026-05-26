@@ -98,16 +98,14 @@ export class DownloadFileServlet extends HttpServlet {
 
     var inputStream: InputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             BlisketServletUtil.getInstance()!.init(request);
     
 
-    var requestPath: string = request.getRequestURI()!;
-;
+    var requestPath: string = request.getRequestURI()!;;
     
 
                         if(requestPath == 
@@ -127,12 +125,10 @@ export class DownloadFileServlet extends HttpServlet {
                                     }
                                 
 
-    var beginIndex: number = requestPath!.indexOf(this.DOWNLOAD)!;
-;
+    var beginIndex: number = requestPath!.indexOf(this.DOWNLOAD)!;;
     
 
-    var filePath: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var filePath: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(beginIndex >= 0)
@@ -150,8 +146,7 @@ export class DownloadFileServlet extends HttpServlet {
                         }
                             
 
-    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);
-;
+    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);;
     
 
                         if(!file.exists())
@@ -169,12 +164,10 @@ export class DownloadFileServlet extends HttpServlet {
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;
-;
+    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().getInstance(hashMap, request) as AuthenticationHelper;;
     
 
                         if(authenticationHelper!.isAuthenticated())
@@ -187,8 +180,7 @@ export class DownloadFileServlet extends HttpServlet {
                                     inputStream= CloudStreamUtil.getInstance()!.getFile(file);
     
 
-    var contentType: string = getServletContext()!.getMimeType(file.getName())!;
-;
+    var contentType: string = getServletContext()!.getMimeType(file.getName())!;;
     
 
                         if(contentType == 
@@ -212,8 +204,7 @@ response.setHeader("Content-Length", file.length.concatToString()
                                     );
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("attachment; filename=\"");
     

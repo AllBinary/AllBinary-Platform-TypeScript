@@ -60,6 +60,7 @@ export class BasicWeightShippingModule
     private readonly name: string = "Basic Shipping (5 to 7 working days)";
 
     private readonly description: string = "We will soon provide a variety of shipping methods.";
+
 public constructor (){
 
             super();
@@ -68,12 +69,10 @@ public constructor (){
 
     public getCost(order: OrderInterface): Money{
 
-    var basket: BasketInterface = order.getBasket()!;
-;
+    var basket: BasketInterface = order.getBasket()!;;
     
 
-    var money: Money = new Money();
-;
+    var money: Money = new Money();;
     
 money.add(basket.getTotalWeight());
     

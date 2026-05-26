@@ -48,6 +48,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 
 export class OverScanColorFillPaintable extends ColorFillPaintable {
         
+
 public constructor (basicColor: BasicColor){
             super(basicColor);
                     

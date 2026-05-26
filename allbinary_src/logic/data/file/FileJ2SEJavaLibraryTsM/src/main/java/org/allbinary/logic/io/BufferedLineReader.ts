@@ -56,7 +56,8 @@ export class BufferedLineReader
          {
         
 
-    private readonly tmpIn: BufferedReader
+    private readonly tmpIn: BufferedReader;
+
 public constructor (file: AbFile){
 
             super();

@@ -68,9 +68,10 @@ export class CaptionAnimationHelper extends CaptionAnimationHelperBase {
 
     private readonly textAnimation: TextAnimation = new TextAnimation(StringUtil.getInstance()!.EMPTY_STRING, AnimationBehavior.getInstance());
 
-    private readonly captionAnimation: Animation
+    private readonly captionAnimation: Animation;
 
     private animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
+
 public constructor (captionAnimation: Animation, captionDx: number, captionDy: number, dx: number, dy: number){
 
             super();

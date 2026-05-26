@@ -105,23 +105,23 @@ import { MirrorImageJPanel } from './MirrorImageJPanel.js';
 export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {
         
 
-    private static imageProcessorInputCompositeInterface: ImageProcessorInputCompositeInterface
+    private static imageProcessorInputCompositeInterface: ImageProcessorInputCompositeInterface;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private fileJDialog: FileJDialog
+    private fileJDialog: FileJDialog;
 
-    private imageProcessorInput: ImageProcessorInput
+    private imageProcessorInput: ImageProcessorInput;
+
 public constructor (){
 
             super();
         this.initComponents();
     
 
-    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-;
+    var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;;
     
 this.setSize(640, 480);
     
@@ -235,8 +235,7 @@ okJButtonActionPerformed(evt);
                             );
     
 
-    var analysisActionJDialogLayout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.analysisActionJDialog!.getContentPane());
-;
+    var analysisActionJDialogLayout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.analysisActionJDialog!.getContentPane());;
     
 this.analysisActionJDialog!.getContentPane()!.setLayout(analysisActionJDialogLayout);
     
@@ -458,8 +457,7 @@ pack();
 
         try {
             
-    var imageUnifierJPanel: ImageUnifierJPanel = new ImageUnifierJPanel(this.imageProcessorInput);
-;
+    var imageUnifierJPanel: ImageUnifierJPanel = new ImageUnifierJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -486,8 +484,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "createStripImageJMenuIte
             this.logUtil!.putF("Starting", this, "okJButtonActionPerformed");
     
 
-    var imageAnalysisResultsArray: ImageAnalysisResults[] = ImageAnalysis.getInstance()!.process(this.imageProcessorInput!.getBufferedImageArray(), this.getColorRangeInterface())!;
-;
+    var imageAnalysisResultsArray: ImageAnalysisResults[] = ImageAnalysis.getInstance()!.process(this.imageProcessorInput!.getBufferedImageArray(), this.getColorRangeInterface())!;;
     
 this.jPanel1!.removeAll();
     
@@ -544,12 +541,10 @@ Arrays.sort(files, new class extends Comparator<File>
                                 
     public compare(file1: File, file2: File): number{
 
-    var fileNameIndexValue1: number = extractIndexNumberIfAnyFromFileName(file1.getName())!;
-;
+    var fileNameIndexValue1: number = extractIndexNumberIfAnyFromFileName(file1.getName())!;;
     
 
-    var fileNameIndexValue2: number = extractIndexNumberIfAnyFromFileName(file2.getName())!;
-;
+    var fileNameIndexValue2: number = extractIndexNumberIfAnyFromFileName(file2.getName())!;;
     
 
 
@@ -561,22 +556,18 @@ Arrays.sort(files, new class extends Comparator<File>
 
     extractIndexNumberIfAnyFromFileName(name: string): number{
 
-    var i: number = 0;
-;
+    var i: number = 0;;
     
 
         try {
             
-    var start: number = name.lastIndexOf('_') +1;
-;
+    var start: number = name.lastIndexOf('_') +1;;
     
 
-    var end: number = name.lastIndexOf('.')!;
-;
+    var end: number = name.lastIndexOf('.')!;;
     
 
-    var number: string = name.substring(start, end)!;
-;
+    var number: string = name.substring(start, end)!;;
     
 i= Integer.parseInt(number);
     
@@ -600,16 +591,14 @@ i= 0;
                             );
     
 
-    var bufferedImageArray: BufferedImage[] = new Array(files.length);
-;
+    var bufferedImageArray: BufferedImage[] = new Array(files.length);;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < files.length; index++)
+    var index: number = 0;index < files.length; index++)
         {
 bufferedImageArray[index]= ImageIO.read(files[index]!);
     
@@ -683,8 +672,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPe
             this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
-    var spriteImageJPanel: RotationSpriteImageJPanel = new RotationSpriteImageJPanel(this.imageProcessorInput);
-;
+    var spriteImageJPanel: RotationSpriteImageJPanel = new RotationSpriteImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -711,8 +699,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationSpriteJM
             this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
-    var imageJPanel: SpriteSplitterImageJPanel = new SpriteSplitterImageJPanel(this.imageProcessorInput);
-;
+    var imageJPanel: SpriteSplitterImageJPanel = new SpriteSplitterImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -739,8 +726,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationMenuItem
             this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
     
 
-    var rotationImageJPanel: RotationImageJPanel = new RotationImageJPanel(this.imageProcessorInput);
-;
+    var rotationImageJPanel: RotationImageJPanel = new RotationImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -767,8 +753,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationMenuItem
             this.logUtil!.putF(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed");
     
 
-    var resizeImageJPanel: ResizeImageJPanel = new ResizeImageJPanel(this.imageProcessorInput);
-;
+    var resizeImageJPanel: ResizeImageJPanel = new ResizeImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -795,8 +780,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActi
             this.logUtil!.putF(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed");
     
 
-    var createIconImagesJPanel: CreateIconImagesJPanel = new CreateIconImagesJPanel(this.imageProcessorInput);
-;
+    var createIconImagesJPanel: CreateIconImagesJPanel = new CreateIconImagesJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -823,8 +807,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActi
             this.logUtil!.putF(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed");
     
 
-    var resizeImageJPanel: CanvasImageJPanel = new CanvasImageJPanel(this.imageProcessorInput);
-;
+    var resizeImageJPanel: CanvasImageJPanel = new CanvasImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -851,8 +834,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActi
             this.logUtil!.putF("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed");
     
 
-    var spriteImageJPanel: MirrorSpriteImageJPanel = new MirrorSpriteImageJPanel(this.imageProcessorInput);
-;
+    var spriteImageJPanel: MirrorSpriteImageJPanel = new MirrorSpriteImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -879,8 +861,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMen
             this.logUtil!.putF("Starting", this, "generateMirrorJMenuItemActionPerformed");
     
 
-    var mirrorImageJPanel: MirrorImageJPanel = new MirrorImageJPanel(this.imageProcessorInput);
-;
+    var mirrorImageJPanel: MirrorImageJPanel = new MirrorImageJPanel(this.imageProcessorInput);;
     
 this.jPanel1!.removeAll();
     
@@ -903,8 +884,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemA
 
     getColorRangeInterface(): ColorRangeInterface{
 
-    var colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;
-;
+    var colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;;
     
 colorRangeInterface!.setMinRed(new Integer(this.getMinRedJTextField()!.getText()).intValue());
     
@@ -1023,65 +1003,65 @@ this.minRedJTextField= this.minRedJTextField;
 }
 
 
-    private analysisActionJDialog: javax.swing.JDialog
+    private analysisActionJDialog: javax.swing.JDialog;
 
-    private analyzeJMenuItem: javax.swing.JMenuItem
+    private analyzeJMenuItem: javax.swing.JMenuItem;
 
-    private blueJLabel: javax.swing.JLabel
+    private blueJLabel: javax.swing.JLabel;
 
-    private colorRangeJLabel: javax.swing.JLabel
+    private colorRangeJLabel: javax.swing.JLabel;
 
-    private createStripImageJMenuItem: javax.swing.JMenuItem
+    private createStripImageJMenuItem: javax.swing.JMenuItem;
 
-    private fileJMenu: javax.swing.JMenu
+    private fileJMenu: javax.swing.JMenu;
 
-    private generateSpriteSplitterMenuItem: javax.swing.JMenuItem
+    private generateSpriteSplitterMenuItem: javax.swing.JMenuItem;
 
-    private generateRotationMenuItem: javax.swing.JMenuItem
+    private generateRotationMenuItem: javax.swing.JMenuItem;
 
-    private generateMirrorSpriteMenuItem: javax.swing.JMenuItem
+    private generateMirrorSpriteMenuItem: javax.swing.JMenuItem;
 
-    private generateRotationSpriteJMenuItem: javax.swing.JMenuItem
+    private generateRotationSpriteJMenuItem: javax.swing.JMenuItem;
 
-    private greenJLabel: javax.swing.JLabel
+    private greenJLabel: javax.swing.JLabel;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private mainJMenuBar: javax.swing.JMenuBar
+    private mainJMenuBar: javax.swing.JMenuBar;
 
-    private maxBlueJTextField: javax.swing.JTextField
+    private maxBlueJTextField: javax.swing.JTextField;
 
-    private maxGreenJTextField: javax.swing.JTextField
+    private maxGreenJTextField: javax.swing.JTextField;
 
-    private maxJLabel: javax.swing.JLabel
+    private maxJLabel: javax.swing.JLabel;
 
-    private maxRedJTextField: javax.swing.JTextField
+    private maxRedJTextField: javax.swing.JTextField;
 
-    private minBlueJTextField: javax.swing.JTextField
+    private minBlueJTextField: javax.swing.JTextField;
 
-    private minGreenJTextField: javax.swing.JTextField
+    private minGreenJTextField: javax.swing.JTextField;
 
-    private minJLabel: javax.swing.JLabel
+    private minJLabel: javax.swing.JLabel;
 
-    private minRedJTextField: javax.swing.JTextField
+    private minRedJTextField: javax.swing.JTextField;
 
-    private mirrorJMenuItem: javax.swing.JMenuItem
+    private mirrorJMenuItem: javax.swing.JMenuItem;
 
-    private okJButton: javax.swing.JButton
+    private okJButton: javax.swing.JButton;
 
-    private openImageJMenuItem: javax.swing.JMenuItem
+    private openImageJMenuItem: javax.swing.JMenuItem;
 
-    private processingJMenu: javax.swing.JMenu
+    private processingJMenu: javax.swing.JMenu;
 
-    private redJLabel: javax.swing.JLabel
+    private redJLabel: javax.swing.JLabel;
 
-    private scaleImagesJMenuItem: javax.swing.JMenuItem
+    private scaleImagesJMenuItem: javax.swing.JMenuItem;
 
-    private canvasImagesJMenuItem: javax.swing.JMenuItem
+    private canvasImagesJMenuItem: javax.swing.JMenuItem;
 
-    private createIconImagesJMenuItem: javax.swing.JMenuItem
+    private createIconImagesJMenuItem: javax.swing.JMenuItem;
 
-    private titleJLabel: javax.swing.JLabel
+    private titleJLabel: javax.swing.JLabel;
 
 }
                 

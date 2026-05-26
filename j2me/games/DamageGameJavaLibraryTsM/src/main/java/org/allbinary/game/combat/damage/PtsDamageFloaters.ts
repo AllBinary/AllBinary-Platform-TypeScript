@@ -74,7 +74,7 @@ export class PtsDamageFloaters extends DamageFloaters {
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
 
-    private layerInterface: AllBinaryLayer
+    private layerInterface: AllBinaryLayer;
 
     private lastDamage: number[] = new Array(5);
 
@@ -84,7 +84,8 @@ export class PtsDamageFloaters extends DamageFloaters {
 
     private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(5)!;
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil
+    private readonly primitiveLongUtil: PrimitiveLongUtil;
+
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
@@ -93,16 +94,14 @@ public constructor (layerInterface: AllBinaryLayer){
 this.layerInterface= layerInterface;
     
 
-    var CHAR_ARRAY: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-;
+    var CHAR_ARRAY: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;;
     
 
 
 
 
                         for (
-    var index: number = this.lastDamageString!.length -1;
-index >= 0; index--)
+    var index: number = this.lastDamageString!.length -1;index >= 0; index--)
         {
 this.lastDamageString[index]= CHAR_ARRAY;
     
@@ -113,8 +112,7 @@ this.lastDamageString[index]= CHAR_ARRAY;
 
     public add(damage: number){
 
-    var index: number = this.circularIndexUtil!.getIndex()!;
-;
+    var index: number = this.circularIndexUtil!.getIndex()!;;
     
 this.lastDamage[index]= damage;
     
@@ -131,32 +129,27 @@ this.circularIndexUtil!.next();
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;;
     
 
-    var x: number = viewPosition!.getX()!;
-;
+    var x: number = viewPosition!.getX()!;;
     
 
-    var y: number = viewPosition!.getY()!;
-;
+    var y: number = viewPosition!.getY()!;;
     
 
 
 
 
                         for (
-    var index: number = this.lastDamage!.length -1;
-index >= 0; index--)
+    var index: number = this.lastDamage!.length -1;index >= 0; index--)
         {
 
                         if(this.lastDamage[index] != 0)
                         
                                     {
                                     
-    var delta: number = 10 *(index +2);
-;
+    var delta: number = 10 *(index +2);;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, PtsDamageFloaters.basicColorArrayIndexer!.get());
     

@@ -63,7 +63,8 @@ export class InterfaceCastProxy
 }
 
 
-    private anyType: any
+    private anyType: any;
+
 private constructor (anyType: any = {}){
 
             super();
@@ -76,12 +77,10 @@ private constructor (anyType: any = {}){
             
     public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any{
 
-    var methodName: string = proxyMethod!.getName()!;
-;
+    var methodName: string = proxyMethod!.getName()!;;
     
 
-    var realMethod: Method = this.anyType!.constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;
-;
+    var realMethod: Method = this.anyType!.constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;;
     
 
                         if(!realMethod!.isAccessible())

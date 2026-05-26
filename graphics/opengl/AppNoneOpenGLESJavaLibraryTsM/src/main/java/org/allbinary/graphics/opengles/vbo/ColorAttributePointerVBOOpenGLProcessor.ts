@@ -61,6 +61,7 @@ export class ColorAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenGLP
     
 }
 
+
 public constructor (){
 
             super();

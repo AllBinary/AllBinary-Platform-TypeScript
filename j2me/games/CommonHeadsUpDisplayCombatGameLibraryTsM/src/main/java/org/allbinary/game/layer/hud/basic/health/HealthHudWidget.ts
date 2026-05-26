@@ -68,17 +68,18 @@ import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDel
 export class HealthHudWidget extends BasicHud implements PaintableInterface, HealthListenerInterface {
         
 
-    private healthScale: number
+    private healthScale: number;
 
-    animationInterface: Animation
+    animationInterface: Animation;
 
-    healthInterface: Health
+    healthInterface: Health;
 
-    max: number= 0
+    max: number= 0;
 
-    private xArray: number[]
+    private xArray: number[];
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+
 public constructor (animationInterface: Animation, healthInterface: Health, location: number, direction: number){
             super(location, direction, 16, healthInterface!.getMaxHealth() *16, 2, BasicColorFactory.getInstance()!.WHITE);
                     
@@ -114,8 +115,7 @@ this.update();
 
 
                         for (
-    var index: number = 0;
-index < this.xArray!.length; index++)
+    var index: number = 0;index < this.xArray!.length; index++)
         {
 this.xArray[index]= this.getX() +(index *16);
     
@@ -190,8 +190,7 @@ this.timeDelayHelper= NoTimeDelayHelper.SINGLETON;
 
 
                         for (
-    var index: number = 0;
-index < this.max; index++)
+    var index: number = 0;index < this.max; index++)
         {
 
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))

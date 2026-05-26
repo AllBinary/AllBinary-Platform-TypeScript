@@ -47,11 +47,12 @@ export class BasicLayerPlacement
          {
         
 
-    private layerType: LayerPlacementType
+    private layerType: LayerPlacementType;
 
-    private width: number
+    private width: number;
 
-    private height: number
+    private height: number;
+
 public constructor (layerType: LayerPlacementType, width: number, height: number){
 
             super();

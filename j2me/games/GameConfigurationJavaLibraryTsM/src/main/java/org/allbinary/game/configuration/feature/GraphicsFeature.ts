@@ -44,6 +44,7 @@
 
 export class GraphicsFeature extends Feature {
         
+
  constructor (name: string){
             super(name);
                     

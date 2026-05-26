@@ -61,6 +61,7 @@ export class MobileClientInformation extends AbeClientInformation {
     static readonly DESC: string = "Mobile";
 
     static readonly ANDROID_DESC: string = "Android" +MobileClientInformation.DESC;
+
 public constructor (name: string, version: string, specialName: string, shortName: string){
             super(name, version, new StringMaker().append(specialName)!.append(CommonSeps.getInstance()!.SPACE)!.append(PartnerIdentifierFileUtil.getInstance()!.get())!.toString(), shortName);
                     
@@ -68,12 +69,10 @@ public constructor (name: string, version: string, specialName: string, shortNam
                             //For kotlin this is before the body of the constructor.
                     
 
-    var string: string = this.getSpecialName()!;
-;
+    var string: string = this.getSpecialName()!;;
     
 
-    var number: string = string.substring(string.length -1)!;
-;
+    var number: string = string.substring(string.length -1)!;;
     
 
                         if(Integer.getInteger(number) == 
@@ -87,8 +86,7 @@ public constructor (name: string, version: string, specialName: string, shortNam
                                     }
                                 
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(this.isHardSale())
@@ -110,12 +108,10 @@ public constructor (name: string, version: string, specialName: string, shortNam
 
     public toHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = super.toHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = super.toHashtable()!;;
     
 
-    var registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;
-;
+    var registrationConfiguration: RegistrationConfiguration = RegistrationConfiguration.getInstance()!;;
     
 hashtable.put(registrationConfiguration!.NAME, registrationConfiguration!.getRegistrationCode());
     

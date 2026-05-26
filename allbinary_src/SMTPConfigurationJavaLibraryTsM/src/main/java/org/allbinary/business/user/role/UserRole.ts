@@ -53,9 +53,10 @@ export class UserRole
          implements Serializable {
         
 
-    private basicUserRole: BasicUserRole
+    private basicUserRole: BasicUserRole;
 
-    private userFactoryInterface: UserFactoryInterface
+    private userFactoryInterface: UserFactoryInterface;
+
 protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: UserFactoryInterface){
 
             super();

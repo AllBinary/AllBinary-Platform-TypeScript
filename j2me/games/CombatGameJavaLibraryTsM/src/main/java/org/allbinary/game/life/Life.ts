@@ -76,11 +76,12 @@ export class Life
 
     public static readonly NO_LIFE: Life = Life.createLife()!;
 
-    private lives: number
+    private lives: number;
 
-    private startLives: number
+    private startLives: number;
 
-    private maxlives: number
+    private maxlives: number;
+
 public constructor (lives: number, maxlives: number){
 
             super();

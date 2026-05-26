@@ -69,7 +69,8 @@ export class FileFactory
 }
 
 
-    private context: Context
+    private context: Context;
+
 private constructor (context: Context){
 
             super();

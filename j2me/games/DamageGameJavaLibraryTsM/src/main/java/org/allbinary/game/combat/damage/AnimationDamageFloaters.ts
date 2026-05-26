@@ -65,15 +65,16 @@ export class AnimationDamageFloaters extends DamageFloaters {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private layerInterface: AllBinaryLayer
+    private layerInterface: AllBinaryLayer;
 
-    private animationInterfaceArray: IndexedAnimation[]
+    private animationInterfaceArray: IndexedAnimation[];
 
-    private readonly circularIndexUtil: CircularIndexUtil
+    private readonly circularIndexUtil: CircularIndexUtil;
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
+
 public constructor (layerInterface: AllBinaryLayer, animationInterfaceArray: IndexedAnimation[], dx: number, dy: number){
 
             super();
@@ -84,8 +85,7 @@ public constructor (layerInterface: AllBinaryLayer, animationInterfaceArray: Ind
 
 
                         for (
-    var index: number = this.animationInterfaceArray!.length -1;
-index >= 0; index--)
+    var index: number = this.animationInterfaceArray!.length -1;index >= 0; index--)
         {
 this.animationInterfaceArray[index]!.setFrame(this.animationInterfaceArray[index]!.getSize() -1);
     
@@ -104,8 +104,7 @@ this.dy= dy;
 
     public add(damage: number){
 
-    var i: number = this.circularIndexUtil!.getIndex()!;
-;
+    var i: number = this.circularIndexUtil!.getIndex()!;;
     
 this.animationInterfaceArray[i]!.setFrame(0);
     
@@ -118,36 +117,30 @@ this.circularIndexUtil!.next();
 
         try {
             
-    var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;;
     
 
-    var x: number = viewPosition!.getX()!;
-;
+    var x: number = viewPosition!.getX()!;;
     
 
-    var y: number = viewPosition!.getY()!;
-;
+    var y: number = viewPosition!.getY()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.animationInterfaceArray!.length; index++)
+    var index: number = 0;index < this.animationInterfaceArray!.length; index++)
         {
 
-    var animationInterface: IndexedAnimation = this.animationInterfaceArray[index]!;
-;
+    var animationInterface: IndexedAnimation = this.animationInterfaceArray[index]!;;
     
 
                         if(animationInterface!.getFrame() < animationInterface!.getAnimationSize() -1)
                         
                                     {
                                     
-    var delta: number = animationInterface!.getFrame() *20;
-;
+    var delta: number = animationInterface!.getFrame() *20;;
     
 animationInterface!.paintXY(graphics, x +this.dx, y -delta +this.dy);
     
@@ -163,12 +156,10 @@ animationInterface!.nextFrame();
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-;
+    var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
     

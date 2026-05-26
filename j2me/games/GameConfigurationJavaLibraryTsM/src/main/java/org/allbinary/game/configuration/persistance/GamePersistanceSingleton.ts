@@ -57,6 +57,7 @@ export class GamePersistanceSingleton extends KeyValuePersistance {
     
 }
 
+
 private constructor (){
             super(GamePersistanceStrings.getInstance()!.SAVED_GAME_RECORD_ID);
                     

@@ -90,6 +90,7 @@ export class PaymentGatewayEntity extends AbSqlBean implements PaymentGatewayEnt
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly tableName: string = "paymentgateways";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -123,20 +124,17 @@ this.setTableName(this.tableName);
                                     }
                                 
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.add(new PaymentGatewayIdGenerator().getNext());
     
 vector.addAll(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toVector());
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(time);
     
@@ -175,18 +173,15 @@ super.insert(vector);
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 paymentGatewayInterface!.setLastModified(time);
     
 
-    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();;
     
 whereKeyValuePairs!.put(StoreFrontData.getInstance()!.NAME.toString(), paymentGatewayInterface!.getStoreName());
     
@@ -207,8 +202,7 @@ whereKeyValuePairs!.put(PaymentGatewayData.NAME.toString(), paymentGatewayInterf
                                     }
                                 
 
-    var updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toHashMap()!;
-;
+    var updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).toHashMap()!;;
     
 super.updateWhere(whereKeyValuePairs, updateHashMap);
     
@@ -243,12 +237,10 @@ super.updateWhere(whereKeyValuePairs, updateHashMap);
 
         try {
             
-    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();;
     
 whereKeyAndValue!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -263,52 +255,40 @@ paymentGatewayHashMap= super.getRow(whereKeyAndValue);
                         
                                     {
                                     
-    var userName: string = paymentGatewayHashMap!.get(UserData.USERNAME.toString()) as string;
-;
+    var userName: string = paymentGatewayHashMap!.get(UserData.USERNAME.toString()) as string;;
     
 
-    var password: string = paymentGatewayHashMap!.get(UserData.PASSWORD.toString()) as string;
-;
+    var password: string = paymentGatewayHashMap!.get(UserData.PASSWORD.toString()) as string;;
     
 
-    var special1: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString()) as string;
-;
+    var special1: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString()) as string;;
     
 
-    var special2: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString()) as string;
-;
+    var special2: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString()) as string;;
     
 
-    var special3: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString()) as string;
-;
+    var special3: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString()) as string;;
     
 
-    var special4: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString()) as string;
-;
+    var special4: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString()) as string;;
     
 
-    var special5: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString()) as string;
-;
+    var special5: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString()) as string;;
     
 
-    var special6: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString()) as string;
-;
+    var special6: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString()) as string;;
     
 
-    var special7: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString()) as string;
-;
+    var special7: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString()) as string;;
     
 
-    var special8: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString()) as string;
-;
+    var special8: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString()) as string;;
     
 
-    var special9: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString()) as string;
-;
+    var special9: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString()) as string;;
     
 
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);
-;
+    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 paymentGatewayHashMap!.put(UserData.USERNAME.toString(), superCrypt!.decrypt(userName));
     
@@ -333,8 +313,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL8.toString(), superCrypt!.d
 paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.decrypt(special9));
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(paymentGatewayHashMap)!;
-;
+    var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().getInstance(paymentGatewayHashMap)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -392,8 +371,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.d
 
         try {
             
-    var paymentGatewayNameVector: Vector = new Vector();
-;
+    var paymentGatewayNameVector: Vector = new Vector();;
     
 paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(), StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -404,28 +382,23 @@ paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(
                         
                                     {
                                     
-    var paymentGatewayVector: Vector = new Vector();
-;
+    var paymentGatewayVector: Vector = new Vector();;
     
 
-    var size: number = paymentGatewayNameVector!.length!;
-;
+    var size: number = paymentGatewayNameVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var paymentTypeString: string = paymentGatewayNameVector!.get(i) as string;
-;
+    var paymentTypeString: string = paymentGatewayNameVector!.get(i) as string;;
     
 
-    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(paymentTypeString)!;
-;
+    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(paymentTypeString)!;;
     
 paymentGatewayVector!.add(paymentType);
     
@@ -487,8 +460,7 @@ paymentGatewayVector!.add(paymentType);
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);
     
@@ -525,8 +497,7 @@ super.deleteWhere(whereHashMap);
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     

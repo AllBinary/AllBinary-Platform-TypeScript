@@ -61,6 +61,7 @@ export class AuthorizeNetAimData
     public static readonly X_DRIVERS_LICENSE_STATE: string = "x_drivers_license_state";
 
     public static readonly X_DRIVERS_LICENSE_DOB: string = "x_drivers_license_dob";
+
 private constructor (){
 
             super();

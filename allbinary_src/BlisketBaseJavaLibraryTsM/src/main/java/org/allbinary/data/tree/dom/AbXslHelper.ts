@@ -101,8 +101,7 @@ export class AbXslHelper
 
         try {
             
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 

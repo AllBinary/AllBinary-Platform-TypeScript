@@ -65,6 +65,7 @@ export class MovedMotionGesturesHandler extends BasicEventHandler {
     
 }
 
+
 protected constructor (){
 
             super();
@@ -75,8 +76,7 @@ protected constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var baseMotionGestureEventListener: BaseMotionGestureEventListener = eventListenerInterface as BaseMotionGestureEventListener;
-;
+    var baseMotionGestureEventListener: BaseMotionGestureEventListener = eventListenerInterface as BaseMotionGestureEventListener;;
     
 baseMotionGestureEventListener!.onMotionGestureEvent(eventObject as MotionGestureEvent);
     

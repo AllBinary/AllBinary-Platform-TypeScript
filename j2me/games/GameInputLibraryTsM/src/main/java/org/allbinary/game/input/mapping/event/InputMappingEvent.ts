@@ -49,6 +49,7 @@ export class InputMappingEvent extends AllBinaryEventObject {
         
 
     private inputToGameKeyMapping: InputToGameKeyMapping = InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
+
 public constructor (anyType: any = {}){
             super(anyType);
                     

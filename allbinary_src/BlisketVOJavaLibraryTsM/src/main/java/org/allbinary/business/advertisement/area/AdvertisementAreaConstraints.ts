@@ -64,15 +64,15 @@ export class AdvertisementAreaConstraints
          implements AdvertisementAreaConstraintsInterface {
         
 
-    private displayInBrowserContraintsInterface: DisplayInBrowserContraintsInterface
+    private displayInBrowserContraintsInterface: DisplayInBrowserContraintsInterface;
 
-    private twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface
+    private twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface;
+
 public constructor (document: Document){
 
             super();
         
-    var node: Node = DomSearchHelper.getNode(AdvertisementAreaData.getInstance()!.NAME, document.getChildNodes())!;
-;
+    var node: Node = DomSearchHelper.getNode(AdvertisementAreaData.getInstance()!.NAME, document.getChildNodes())!;;
     
 this.displayInBrowserContraintsInterface= new DisplayInBrowserContraints(node);
     

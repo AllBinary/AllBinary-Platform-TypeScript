@@ -77,9 +77,10 @@ export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
 }
 
 
-    private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool
+    private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool;
 
-    private readonly total: number
+    private readonly total: number;
+
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
             super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
                     
@@ -99,60 +100,47 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
 
-    var sourceLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-;
+    var sourceLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
-    var reducedWidth: number = (sourceLayerInterface!.getWidth() *8 /10);
-;
+    var reducedWidth: number = (sourceLayerInterface!.getWidth() *8 /10);;
     
 
-    var halfWidth: number = (reducedWidth>>1);
-;
+    var halfWidth: number = (reducedWidth>>1);;
     
 
-    var x: number = this.relativeRelationship!.getX()!;
-;
+    var x: number = this.relativeRelationship!.getX()!;;
     
 
-    var y: number = this.relativeRelationship!.getY()!;
-;
+    var y: number = this.relativeRelationship!.getY()!;;
     
 
-    var sine: number= 0
-;
+    var sine: number= 0;;
     
 
-    var beamX: number= 0
-;
+    var beamX: number= 0;;
     
 
-    var cosine: number= 0
-;
+    var cosine: number= 0;;
     
 
-    var beamY: number= 0
-;
+    var beamY: number= 0;;
     
 
-    var weaponLayer: WeaponLayer
-;
+    var weaponLayer: WeaponLayer;;
     
 
-    var increment: number = reducedWidth /(this.total -1);
-;
+    var increment: number = reducedWidth /(this.total -1);;
     
 
-    var next: number =  -halfWidth;
-;
+    var next: number =  -halfWidth;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.total; index++)
+    var index: number = 0;index < this.total; index++)
         {
 sine= (next *this.noDecimalTrigTable!.sin(Math.round(angle)));
     

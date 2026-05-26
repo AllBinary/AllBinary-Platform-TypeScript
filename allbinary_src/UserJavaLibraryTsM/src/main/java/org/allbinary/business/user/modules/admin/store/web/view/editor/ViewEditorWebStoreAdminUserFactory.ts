@@ -54,6 +54,7 @@ export class ViewEditorWebStoreAdminUserFactory
             extends Object
          implements UserFactoryInterface {
         
+
 public constructor (){
 
             super();

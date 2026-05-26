@@ -73,6 +73,7 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
     
 }
 
+
 private constructor (){
 
             super();
@@ -83,14 +84,12 @@ private constructor (){
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(commonStrings!.START, this, commonStrings!.GET_INSTANCE);
     
 
-    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(new PathFindingNodeCostInfoFactoryBase(), new BasicArrayListS(1), new BasicArrayListS(1));
-;
+    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(new PathFindingNodeCostInfoFactoryBase(), new BasicArrayListS(1), new BasicArrayListS(1));;
     
 RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init();
     

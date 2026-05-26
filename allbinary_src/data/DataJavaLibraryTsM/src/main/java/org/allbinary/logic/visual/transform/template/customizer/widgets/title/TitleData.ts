@@ -57,6 +57,7 @@ export class TitleData
     
 }
 
+
 private constructor (){
 
             super();

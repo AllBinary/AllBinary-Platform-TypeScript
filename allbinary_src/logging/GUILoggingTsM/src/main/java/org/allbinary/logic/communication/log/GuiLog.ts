@@ -78,6 +78,7 @@ export class GuiLog
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 private constructor (){
 
             super();
@@ -87,16 +88,13 @@ private constructor (){
 
     public showDialog(msg: string){
 
-    var error: JDialog = new JDialog();
-;
+    var error: JDialog = new JDialog();;
     
 
-    var size: number = msg.length *9;
-;
+    var size: number = msg.length *9;;
     
 
-    var x: number = size;
-;
+    var x: number = size;;
     
 
                         if(x > 550)
@@ -108,8 +106,7 @@ error.getContentPane()!.setLayout(new GridLayout(1, 1));
                         
                                     {
                                     
-    var y: number = 550;
-;
+    var y: number = 550;;
     
 error.setSize(x, y);
     
@@ -123,8 +120,7 @@ error.getContentPane()!.add(new javax.swing.JScrollPane(new javax.swing.JTextAre
                         
                                     {
                                     
-    var y: number = 50;
-;
+    var y: number = 50;;
     
 error.setSize(x, y);
     
@@ -155,8 +151,7 @@ error.show();
 
         try {
             
-    var data: string = this.logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;
-;
+    var data: string = this.logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;;
     
 this.showDialog(data);
     
@@ -202,8 +197,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
 
         try {
             
-    var data: string = this.logFormatUtil!.get(specialMessage, className, functionName, exception)!;
-;
+    var data: string = this.logFormatUtil!.get(specialMessage, className, functionName, exception)!;;
     
 this.showDialog(data);
     

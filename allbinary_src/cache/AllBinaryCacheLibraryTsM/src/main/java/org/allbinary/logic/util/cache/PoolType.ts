@@ -47,7 +47,8 @@ export class PoolType
          {
         
 
-    private readonly cacheType: CacheType
+    private readonly cacheType: CacheType;
+
 public constructor (cacheType: CacheType){
 
             super();
@@ -68,8 +69,7 @@ public constructor (cacheType: CacheType){
 
     public toString(): string{
 
-    var POOL_TYPE: string = "PoolType: ";
-;
+    var POOL_TYPE: string = "PoolType: ";;
     
 
 

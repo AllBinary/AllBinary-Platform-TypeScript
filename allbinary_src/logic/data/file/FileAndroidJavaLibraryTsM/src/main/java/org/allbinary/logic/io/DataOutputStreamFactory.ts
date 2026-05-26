@@ -69,12 +69,10 @@ export class DataOutputStreamFactory
             
     public getInstance(file: AbFile): AbDataOutputStream{
 
-    var idFileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);
-;
+    var idFileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);;
     
 
-    var idOutData: AbDataOutputStream = new AbDataOutputStream(idFileOutputStream);
-;
+    var idOutData: AbDataOutputStream = new AbDataOutputStream(idFileOutputStream);;
     
 
 
@@ -89,16 +87,13 @@ export class DataOutputStreamFactory
             
     public getInstance(filePath: string, fileName: string): AbDataOutputStream{
 
-    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: AbFileOutputStream = fileStreamFactory!.getFileOutputStreamInstance(filePath, fileName)!;
-;
+    var fileOutputStream: AbFileOutputStream = fileStreamFactory!.getFileOutputStreamInstance(filePath, fileName)!;;
     
 
-    var idOutData: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);
-;
+    var idOutData: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);;
     
 
 

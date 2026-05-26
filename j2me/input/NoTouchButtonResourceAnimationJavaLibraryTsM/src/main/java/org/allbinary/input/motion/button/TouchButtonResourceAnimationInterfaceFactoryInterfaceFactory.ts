@@ -69,6 +69,7 @@ export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extend
     
 }
 
+
 public constructor (name: string){
             super(name, new Hashtable<any, any>(), new Hashtable<any, any>(), new Hashtable<any, any>());
                     
@@ -109,8 +110,7 @@ super.init(level);
 
     public isLoadingLevel(level: number): boolean{
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(level == resourceLoadingLevelFactory!.LOAD_TOUCH.getLevel())

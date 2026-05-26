@@ -50,6 +50,7 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 
 export class AbFileLocalInputStream extends AbFileInputStream {
         
+
 public constructor (file: AbFile){
             super(AbFileNativeUtil.get(file));
                     

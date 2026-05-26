@@ -47,6 +47,7 @@ import { LayerManagerNoDebug } from '../../../../../org/allbinary/layer/LayerMan
         
 export class CollidableInterfaceLayerManager extends LayerManager {
         
+
 public constructor (){
             super(LayerManagerNoDebug.getInstance());
                     

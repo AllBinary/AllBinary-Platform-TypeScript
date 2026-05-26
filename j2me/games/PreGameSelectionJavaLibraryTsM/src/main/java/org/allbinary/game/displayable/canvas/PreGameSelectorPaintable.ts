@@ -55,19 +55,19 @@ import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint
 export class PreGameSelectorPaintable extends InitUpdatePaintable {
         
 
-    private readonly title: string
+    private readonly title: string;
 
-    private canvasDrawLineString: CanvasDrawLineString
+    private canvasDrawLineString: CanvasDrawLineString;
 
-    private readonly preGameScrollSelectionForm: PreGameScrollSelectionForm
+    private readonly preGameScrollSelectionForm: PreGameScrollSelectionForm;
+
 public constructor (title: string, preGameScrollSelectionForm: PreGameScrollSelectionForm){
 
             super();
         this.title= title;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
     
@@ -78,8 +78,7 @@ this.preGameScrollSelectionForm= preGameScrollSelectionForm;
 
     public update(){
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
     

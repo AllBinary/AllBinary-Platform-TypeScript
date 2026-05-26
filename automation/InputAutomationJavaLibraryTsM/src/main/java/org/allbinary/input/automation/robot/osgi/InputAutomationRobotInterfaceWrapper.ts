@@ -48,7 +48,8 @@ export class InputAutomationRobotInterfaceWrapper
          {
         
 
-    private inputRobotInterface: InputRobotInterface
+    private inputRobotInterface: InputRobotInterface;
+
 public constructor (inputRobotInterface: InputRobotInterface){
 
             super();

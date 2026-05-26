@@ -59,21 +59,22 @@ export class RaceTrackGeographicMapCellTypes
 }
 
 
-    public readonly BOTTOM_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly BOTTOM_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly BOTTOM_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly BOTTOM_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly TOP_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly TOP_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly TOP_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly TOP_RIGHT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly HORIZONTAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly HORIZONTAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly VERTICAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly VERTICAL_STRAIGHT_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly START_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly START_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
 
-    public readonly DEFAULT_FINISH_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
+    public readonly DEFAULT_FINISH_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType;
+
 public constructor (){
 
             super();

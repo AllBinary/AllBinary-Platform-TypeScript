@@ -50,11 +50,12 @@ export class GameTickTimeDelayHelper
          {
         
 
-    public timeDelta: number= 0
+    public timeDelta: number= 0;
 
-    public startTime: number
+    public startTime: number;
 
-    public lastStartTime: number
+    public lastStartTime: number;
+
 public constructor (startTime: number){
 
             super();

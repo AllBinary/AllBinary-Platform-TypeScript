@@ -61,6 +61,7 @@ export class LineAnimation extends Animation implements ColorCompositeInterface,
     private tempLine: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
 
     private line: number[][] = new Array(2) [2];
+
 public constructor (basicColor: BasicColor){
 
             super();
@@ -107,8 +108,7 @@ this.newLine= this.tempLine;
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var currentLine: number[][] = this.line;
-;
+    var currentLine: number[][] = this.line;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     

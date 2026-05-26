@@ -68,7 +68,8 @@ export class FileStreamFactory
 }
 
 
-    private context: any
+    private context: any;
+
 private constructor (context: Context){
 
             super();
@@ -93,8 +94,7 @@ private constructor (context: Context){
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
 
-    var context: Context = this.getContext()!;
-;
+    var context: Context = this.getContext()!;;
     
 context.deleteFile(fileName);
     

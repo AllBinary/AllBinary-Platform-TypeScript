@@ -50,7 +50,7 @@ export class GyroSensorFactory
          {
         
 
-    private static allBinaryGyroSensor: AllBinaryOrientationSensor
+    private static allBinaryGyroSensor: AllBinaryOrientationSensor;
 
                 //@Throws(Exception.constructor)
             

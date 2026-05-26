@@ -51,6 +51,7 @@ export class FrictionProperties
             extends Object
          {
         
+
 public constructor (){
 
             super();

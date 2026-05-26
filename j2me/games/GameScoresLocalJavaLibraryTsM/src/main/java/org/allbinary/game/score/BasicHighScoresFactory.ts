@@ -72,7 +72,8 @@ export class BasicHighScoresFactory extends HighScoresBase {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly abeClientInformation: AbeClientInformationInterface
+    private readonly abeClientInformation: AbeClientInformationInterface;
+
 public constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation){
 
             super();

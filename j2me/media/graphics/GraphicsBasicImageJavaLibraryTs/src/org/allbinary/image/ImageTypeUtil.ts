@@ -68,6 +68,7 @@ export class ImageTypeUtil
     public readonly GIF: string = "gif";
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -88,12 +89,10 @@ mediaFileType= mediaFileType!.toLowerCase();
 
 
                         for (
-    var index: number = this.list.size() -1;
-index >= 0; index--)
+    var index: number = this.list.size() -1;index >= 0; index--)
         {
 
-    var name: string = this.list.objectArray[index]! as string;
-;
+    var name: string = this.list.objectArray[index]! as string;;
     
 
                         if(mediaFileType!.compareTo(name) == 0)

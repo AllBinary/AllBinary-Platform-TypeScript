@@ -61,6 +61,7 @@ export class DownTouchInputToGameKeyEventAction extends GameKeyCompleteMotionGes
     
 }
 
+
 private constructor (){
             super("Down Action", TouchMotionGestureFactory.getInstance()!.DOWN, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

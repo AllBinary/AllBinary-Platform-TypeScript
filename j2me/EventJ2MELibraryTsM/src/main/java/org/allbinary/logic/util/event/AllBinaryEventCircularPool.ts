@@ -48,6 +48,7 @@ import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularInd
 
 export class AllBinaryEventCircularPool extends BaseCircularPool {
         
+
 public constructor (max: number){
 
             super();
@@ -62,16 +63,14 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(max);
 this.circularIndexUtil!.setIndex(0);
     
 
-    var size: number = this.circularIndexUtil!.getSize()!;
-;
+    var size: number = this.circularIndexUtil!.getSize()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.OBJECT_ARRAY[index]= allBinaryEventObjectFactoryInterface!.getInstance();
     

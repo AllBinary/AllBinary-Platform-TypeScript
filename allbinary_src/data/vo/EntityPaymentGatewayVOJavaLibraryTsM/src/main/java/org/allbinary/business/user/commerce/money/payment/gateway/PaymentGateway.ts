@@ -67,73 +67,74 @@ export class PaymentGateway
          implements PaymentGatewayInterface {
         
 
-    private storeName: string
+    private storeName: string;
 
-    private name: string
+    private name: string;
 
-    private enable: string
+    private enable: string;
 
-    private paymentMethod: string
+    private paymentMethod: string;
 
-    private mode: string
+    private mode: string;
 
-    private testProtocol: string
+    private testProtocol: string;
 
-    private testServer: string
+    private testServer: string;
 
-    private testPort: string
+    private testPort: string;
 
-    private testPath: string
+    private testPath: string;
 
-    private serverProtocol: string
+    private serverProtocol: string;
 
-    private server: string
+    private server: string;
 
-    private serverPort: string
+    private serverPort: string;
 
-    private serverPath: string
+    private serverPath: string;
 
-    private timeout: string
+    private timeout: string;
 
-    private userName: string
+    private userName: string;
 
-    private password: string
+    private password: string;
 
-    private proxyProtocol: string
+    private proxyProtocol: string;
 
-    private proxyServer: string
+    private proxyServer: string;
 
-    private proxyPort: string
+    private proxyPort: string;
 
-    private proxyPath: string
+    private proxyPath: string;
 
-    private proxyUserName: string
+    private proxyUserName: string;
 
-    private proxyPassword: string
+    private proxyPassword: string;
 
-    private proxyTimeout: string
+    private proxyTimeout: string;
 
-    private special1: string
+    private special1: string;
 
-    private special2: string
+    private special2: string;
 
-    private special3: string
+    private special3: string;
 
-    private special4: string
+    private special4: string;
 
-    private special5: string
+    private special5: string;
 
-    private special6: string
+    private special6: string;
 
-    private special7: string
+    private special7: string;
 
-    private special8: string
+    private special8: string;
 
-    private special9: string
+    private special9: string;
 
-    private lastModified: string
+    private lastModified: string;
 
-    private timeEntered: string
+    private timeEntered: string;
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();
@@ -144,12 +145,10 @@ public constructor (hashMap: HashMap<any, any>){
 
     public getFormData(hashMap: HashMap<any, any>){
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var empty: string = stringUtil!.EMPTY_STRING;
-;
+    var empty: string = stringUtil!.EMPTY_STRING;;
     
 this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME.toString()) as string;
     
@@ -912,8 +911,7 @@ this.timeEntered= value;
             
     public toHashMap(isEncrypted: boolean): HashMap<any, any>{
 
-    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 paymentGatewayHashMap!.put(EntryData.getInstance()!.ENABLE, this.enable);
     
@@ -946,8 +944,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SERVERPATH.toString(), this.server
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);
-;
+    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 paymentGatewayHashMap!.put(UserData.USERNAME.toString(), superCrypt!.encrypt(this.userName));
     
@@ -985,8 +982,7 @@ paymentGatewayHashMap!.put(PaymentGatewayData.PROXYTIMEOUT.toString(), this.prox
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);
-;
+    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL1.toString(), superCrypt!.encrypt(this.special1));
     
@@ -1052,8 +1048,7 @@ paymentGatewayHashMap!.put(EntryData.getInstance()!.LASTMODIFIED.toString(), thi
 
     public toVector(isEncrypted: boolean): Vector{
 
-    var updateVector: Vector = new Vector();
-;
+    var updateVector: Vector = new Vector();;
     
 updateVector!.add(this.enable);
     
@@ -1086,8 +1081,7 @@ updateVector!.add(this.serverPath);
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);
-;
+    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 updateVector!.add(superCrypt!.encrypt(this.userName));
     
@@ -1125,8 +1119,7 @@ updateVector!.add(this.proxyTimeout);
                         
                                     {
                                     
-    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);
-;
+    var superCrypt: SuperCrypt = new SuperCrypt(PaymentGatewayData.CRYPTNUM);;
     
 updateVector!.add(superCrypt!.encrypt(this.special1));
     

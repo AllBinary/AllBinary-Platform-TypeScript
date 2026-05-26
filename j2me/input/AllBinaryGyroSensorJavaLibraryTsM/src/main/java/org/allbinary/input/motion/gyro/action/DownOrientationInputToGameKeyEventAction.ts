@@ -61,6 +61,7 @@ export class DownOrientationInputToGameKeyEventAction extends GameKeyCompleteMot
     
 }
 
+
 private constructor (){
             super("Down Action", OrientationMotionGestureFactory.getInstance()!.DOWN, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

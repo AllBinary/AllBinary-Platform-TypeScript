@@ -64,6 +64,7 @@ export class PointFactory
     public init(){
 }
 
+
 private constructor (){
 
             super();

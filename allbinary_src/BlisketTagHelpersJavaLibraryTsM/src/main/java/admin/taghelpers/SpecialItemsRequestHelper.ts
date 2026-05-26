@@ -75,23 +75,24 @@ export class SpecialItemsRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private id: string
+    private id: string;
 
-    private enabled: string
+    private enabled: string;
 
-    private number: string
+    private number: string;
 
-    private startTime: string
+    private startTime: string;
 
-    private endTime: string
+    private endTime: string;
 
-    private price: string
+    private price: string;
 
-    private timeEntered: string
+    private timeEntered: string;
 
-    private lastModified: string
+    private lastModified: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -124,8 +125,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 values.put(BasicItemData.ID, this.id);
     
@@ -140,12 +140,10 @@ values.put(SpecialItemData.END_TIME, this.endTime);
 values.put(BasicItemData.PRICE, this.price);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -162,16 +160,13 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.id);
     
@@ -192,8 +187,7 @@ values.add(time);
 SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +this.id +" into items table";
-;
+    var success: string = "Successfully inserted " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -215,8 +209,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +this.id +" into items table";
-;
+    var error: string = "Failed to insert " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -244,8 +237,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
             SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.delete(this.id);
     
 
-    var success: string = "Successfully deleted";
-;
+    var success: string = "Successfully deleted";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -267,8 +259,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -294,12 +285,10 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
 
         try {
             
-    var success: string = "Update Successful";
-;
+    var success: string = "Update Successful";;
     
 
-    var values: HashMap<any, any> = this.getHashMap()!;
-;
+    var values: HashMap<any, any> = this.getHashMap()!;;
     
 SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update(values);
     
@@ -323,8 +312,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +this.id;
-;
+    var error: string = "Failed to update: " +this.id;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

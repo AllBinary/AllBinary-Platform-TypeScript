@@ -73,6 +73,7 @@ export class MirrorImageUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -85,27 +86,23 @@ this.logUtil!.putF("Starting", this, "getImage");
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
-                            null))!;
-;
+                            null))!;;
     
 
-    var g: Graphics2D = newBufferedImage!.createGraphics()!;
-;
+    var g: Graphics2D = newBufferedImage!.createGraphics()!;;
     
 
                         if(verticle)
                         
                                     {
                                     
-    var tx: AffineTransform = AffineTransform.getScaleInstance(1,  -1)!;
-;
+    var tx: AffineTransform = AffineTransform.getScaleInstance(1,  -1)!;;
     
 tx.translate(0,  -bufferedImage!.getHeight(
                             null));
     
 
-    var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
-;
+    var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);;
     
 bufferedImage= op.filter(bufferedImage, 
                             null);
@@ -118,15 +115,13 @@ bufferedImage= op.filter(bufferedImage,
                         
                                     {
                                     
-    var tx: AffineTransform = AffineTransform.getScaleInstance( -1, 1)!;
-;
+    var tx: AffineTransform = AffineTransform.getScaleInstance( -1, 1)!;;
     
 tx.translate( -bufferedImage!.getWidth(
                             null), 0);
     
 
-    var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
-;
+    var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);;
     
 bufferedImage= op.filter(bufferedImage, 
                             null);
@@ -152,28 +147,22 @@ g.dispose();
 
     public getImages(bufferedImage: BufferedImage, verticle: boolean, horizontal: boolean): BufferedImage[]{
 
-    var width: number = bufferedImage!.getWidth()!;
-;
+    var width: number = bufferedImage!.getWidth()!;;
     
 
-    var height: number = bufferedImage!.getHeight()!;
-;
+    var height: number = bufferedImage!.getHeight()!;;
     
 
-    var cellHeight: number = height;
-;
+    var cellHeight: number = height;;
     
 
-    var cellWidth: number = height;
-;
+    var cellWidth: number = height;;
     
 
-    var numberOfFramesPerOrientation: number = width /cellWidth;
-;
+    var numberOfFramesPerOrientation: number = width /cellWidth;;
     
 
-    var numberOfFrames: number = numberOfFramesPerOrientation;
-;
+    var numberOfFrames: number = numberOfFramesPerOrientation;;
     
 
                         if(verticle)
@@ -184,24 +173,20 @@ g.dispose();
 this.logUtil!.putF("numberOfFramesPerOrientation: " +numberOfFramesPerOrientation +" numberOfFrames: " +numberOfFrames, this, "getImages");
     
 
-    var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);
-;
+    var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);;
     
 
-    var y: number = 0;
-;
+    var y: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfFramesPerOrientation; index++)
+    var index: number = 0;index < numberOfFramesPerOrientation; index++)
         {
 
-    var x: number = index *cellWidth;
-;
+    var x: number = index *cellWidth;;
     
 bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeight);
     
@@ -212,8 +197,7 @@ bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeigh
 
 
                         for (
-    var index: number = 0;
-index < numberOfFramesPerOrientation; index++)
+    var index: number = 0;index < numberOfFramesPerOrientation; index++)
         {
 bufferedImageArray[index +numberOfFramesPerOrientation]= this.getImage(bufferedImageArray[index]!, verticle, horizontal);
     

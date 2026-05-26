@@ -87,15 +87,16 @@ export class OrderHelper extends TagHelper {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private weblisketSession: WeblisketSession
+    private weblisketSession: WeblisketSession;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
 
-    private pageContext: PageContext
+    private pageContext: PageContext;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -106,8 +107,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(storeName))
@@ -127,16 +127,13 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
 
         try {
             
-    var paymentGatewayBoolean: Boolean = Boolean.FALSE;
-;
+    var paymentGatewayBoolean: Boolean = Boolean.FALSE;;
     
 
-    var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;
-;
+    var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 
-    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()) as string;
-;
+    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(requestPaymentGateway))
@@ -152,28 +149,23 @@ paymentGatewayBoolean= Boolean.TRUE;
                                     }
                                 
 
-    var paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance() as PaymentGatewayEntity;
-;
+    var paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance() as PaymentGatewayEntity;;
     
 
-    var paymentTypeVector: Vector = paymentGatewayEntityInterface!.findPaymentTypeVectorByStore(this.weblisketSession!.getStoreName())!;
-;
+    var paymentTypeVector: Vector = paymentGatewayEntityInterface!.findPaymentTypeVectorByStore(this.weblisketSession!.getStoreName())!;;
     
 
                         if(paymentTypeVector!.length == 1)
                         
                                     {
                                     
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(0) as BasicPaymentType;
-;
+    var paymentType: BasicPaymentType = paymentTypeVector!.get(0) as BasicPaymentType;;
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType) as PaymentGatewayInterface;
-;
+    var paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType) as PaymentGatewayInterface;;
     
 
-    var paymentGateway: string = paymentGatewayInterface!.getName()!;
-;
+    var paymentGateway: string = paymentGatewayInterface!.getName()!;;
     
 this.weblisketSession!.setPaymentMethod(paymentGateway);
     
@@ -189,8 +181,7 @@ paymentGatewayBoolean= Boolean.TRUE;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully set PaymentGateway Order: ");
     
@@ -220,16 +211,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setPaymentGateway()");
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed to set PaymentGateway for Order: ");
     
 
         try {
             
-    var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;
-;
+    var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 
                         if(orderInterface != 
@@ -274,14 +263,12 @@ this.logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e);
 
         try {
             
-    var order: OrderInterface = this.weblisketSession!.getOrder()!;
-;
+    var order: OrderInterface = this.weblisketSession!.getOrder()!;;
     
 order.setStoreName(this.storeFrontInterface!.getName());
     
 
-    var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(), order as Order)!;
-;
+    var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(), order as Order)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -303,8 +290,7 @@ order.setStoreName(this.storeFrontInterface!.getName());
 } catch(e) 
             {
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed to Process Order: ");
     
@@ -321,8 +307,7 @@ stringBuffer!.append(" Exception Getting Id");
 }
 
 
-    var error: string = stringBuffer!.toString()!;
-;
+    var error: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

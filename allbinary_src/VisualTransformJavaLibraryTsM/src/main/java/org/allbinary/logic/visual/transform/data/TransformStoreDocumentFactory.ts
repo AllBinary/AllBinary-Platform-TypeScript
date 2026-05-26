@@ -79,6 +79,7 @@ export class TransformStoreDocumentFactory
     
 }
 
+
 private constructor (){
 
             super();

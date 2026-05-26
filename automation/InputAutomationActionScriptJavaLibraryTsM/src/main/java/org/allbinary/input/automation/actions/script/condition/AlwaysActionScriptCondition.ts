@@ -72,9 +72,10 @@ export class AlwaysActionScriptCondition extends BasicProfileActionScriptConditi
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private alwaysActionScriptConditionJPanel: AlwaysActionScriptConditionJPanel
+    private alwaysActionScriptConditionJPanel: AlwaysActionScriptConditionJPanel;
 
-    private isOn: boolean= false
+    private isOn: boolean= false;
+
 public constructor (node: Node){
             super(AlwaysActionScriptCondition.NAME, node);
                     
@@ -82,8 +83,7 @@ public constructor (node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var actionNode: Node = DomSearchHelper.getNode(AlwaysActionScriptConditionData.NAME, node.getChildNodes())!;
-;
+    var actionNode: Node = DomSearchHelper.getNode(AlwaysActionScriptConditionData.NAME, node.getChildNodes())!;;
     
 
                         if(actionNode != 
@@ -92,28 +92,24 @@ public constructor (node: Node){
                         
                                     {
                                     
-    var nodeList: NodeList = actionNode!.getChildNodes()!;
-;
+    var nodeList: NodeList = actionNode!.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;
-;
+    var childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(AlwaysActionScriptConditionData.IS_ON) == 0)
                         
                                     {
                                     
-    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.setIsOn(.valueOf());
     
@@ -146,6 +142,7 @@ this.setIsOn(.valueOf());
 this.init();
     
 }
+
 
 public constructor (){
             super(AlwaysActionScriptCondition.NAME);
@@ -188,8 +185,7 @@ this.alwaysActionScriptConditionJPanel!.getAlwaysActionJDialog()!.setVisible(tru
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()));
     
@@ -208,8 +204,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = super.toXmlNode(document)!;
-;
+    var node: Node = super.toXmlNode(document)!;;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptConditionData.NAME, this.toHashMap()));
     

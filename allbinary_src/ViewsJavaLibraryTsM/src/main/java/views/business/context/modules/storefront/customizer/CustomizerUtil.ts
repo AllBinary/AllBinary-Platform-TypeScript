@@ -85,6 +85,7 @@ export class CustomizerUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -104,20 +105,16 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var viewName: string = transformInfoInterface!.getName()!;
-;
+    var viewName: string = transformInfoInterface!.getName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-;
+    var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
 
@@ -141,20 +138,16 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var viewName: string = transformInfoInterface!.getName()!;
-;
+    var viewName: string = transformInfoInterface!.getName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-;
+    var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
 
@@ -178,8 +171,7 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
-;
+    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
 
@@ -203,8 +195,7 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
-;
+    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
 
@@ -228,26 +219,21 @@ private constructor (){
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var allViewsToBeModified: Vector = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;
-;
+    var allViewsToBeModified: Vector = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;;
     
 
-    var document: Document = DomDocumentHelper.create()!;
-;
+    var document: Document = DomDocumentHelper.create()!;;
     
 document.appendChild(domNodeInterface!.toXmlNode(document));
     
 
-    var documentString: string = DomDocumentHelper.toString(document)!;
-;
+    var documentString: string = DomDocumentHelper.toString(document)!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -269,24 +255,20 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
 transformInfoInterface!.setData(documentString);
     
 
-    var size: number = allViewsToBeModified!.length!;
-;
+    var size: number = allViewsToBeModified!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var transformInfo: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;
-;
+    var transformInfo: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;;
     
 
-    var viewNameOfViewToBeModified: string = transformInfo!.getName()!;
-;
+    var viewNameOfViewToBeModified: string = transformInfo!.getName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -306,12 +288,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-;
+    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
                         if(specifiedTransformInfoInterface == 
@@ -395,8 +375,7 @@ this.write(specifiedTransformInfoInterface, documentString);
                                     }
                                 
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 specifiedTransformInfoInterface!.setData(documentString);
     
@@ -418,44 +397,35 @@ transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap(
                                     }
                                 
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
-;
+    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;;
     
 
-    var allViewsToBeModified: Vector = transformInfoObjectConfigInterface!.getGroupTransforms()!;
-;
+    var allViewsToBeModified: Vector = transformInfoObjectConfigInterface!.getGroupTransforms()!;;
     
 
-    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var size: number = allViewsToBeModified!.length!;
-;
+    var size: number = allViewsToBeModified!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;
-;
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;;
     
 
-    var viewNameOfViewToBeModified: string = nextTransformInfoInterface!.getName()!;
-;
+    var viewNameOfViewToBeModified: string = nextTransformInfoInterface!.getName()!;;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;;
     
 
-    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-;
+    var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;;
     
 
 

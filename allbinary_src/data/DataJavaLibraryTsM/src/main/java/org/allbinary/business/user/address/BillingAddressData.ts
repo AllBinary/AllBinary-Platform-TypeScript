@@ -79,6 +79,7 @@ export class BillingAddressData
     public static readonly CODE: string = "BILLINGADDRESS_CODE";
 
     public static readonly COUNTRY: string = "BILLINGADDRESS_COUNTRY";
+
 private constructor (){
 
             super();

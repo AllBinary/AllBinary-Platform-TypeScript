@@ -53,6 +53,7 @@ import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
 
 export class CachingGeographicMapCellPositionFactory extends BasicGeographicMapCellPositionFactory {
         
+
 protected constructor (geographicMapInterface: BasicGeographicMap){
             super(geographicMapInterface);
                     
@@ -66,16 +67,13 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
 
-    var hashtable: Hashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;;
     
 
-    var cellPositionKey: string = CellPosition.toStringColRow(i_column, i_row)!;
-;
+    var cellPositionKey: string = CellPosition.toStringColRow(i_column, i_row)!;;
     
 
-    var cellPositionCanBeNull: any = hashtable.get(cellPositionKey);
-;
+    var cellPositionCanBeNull: any = hashtable.get(cellPositionKey);;
     
 
                         if(cellPositionCanBeNull == 

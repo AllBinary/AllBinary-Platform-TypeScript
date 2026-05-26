@@ -306,49 +306,50 @@ export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventList
 
     private readonly cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;
 
-    private readonly maxResourceLoad: number
+    private readonly maxResourceLoad: number;
 
-    private readonly vehicleProperties: VehicleProperties
+    private readonly vehicleProperties: VehicleProperties;
 
     accelerationBasicDecimal: BasicDecimal = new BasicDecimal(1600);
 
     decelerationBasicDecimal: BasicDecimal = new BasicDecimal( -1000);
 
-    private readonly trackingEvent: TrackingEvent
+    private readonly trackingEvent: TrackingEvent;
 
-    private readonly damageFloaters: DamageFloaters
+    private readonly damageFloaters: DamageFloaters;
 
-    private readonly damageFloatersPaintableInterface: Paintable
+    private readonly damageFloatersPaintableInterface: Paintable;
 
-    private readonly healthBar: Paintable
+    private readonly healthBar: Paintable;
 
-    private readonly moveSoundInterface: Sound
+    private readonly moveSoundInterface: Sound;
 
-    private readonly initResourceAnimation: RotationAnimation
+    private readonly initResourceAnimation: RotationAnimation;
 
     private resourceAnimation: IndexedAnimation = NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
 
-    private readonly initPathAnimation: PathAnimation
+    private readonly initPathAnimation: PathAnimation;
 
     private pathAnimation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
 
     private readonly captionAnimationHelper: CaptionAnimationHelperBase = new CaptionAnimationHelper(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(CaptionResources.getInstance()!.RESOURCE)!.getInstance(0),  -23,  -25, 6, 0);
 
-    private readonly decalAnimation: RotationAnimation
+    private readonly decalAnimation: RotationAnimation;
 
-    private readonly waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface
+    private readonly waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface;
 
     private resourceLoad: number = 0;
 
-    private weaponRange: number= 0
+    private weaponRange: number= 0;
 
     rtsLogHelper: RTSLayerLogHelper = RTSLayerLogHelper.getInstance()!;
 
-    rotationAnimationInterfaceP: RotationAnimation
+    rotationAnimationInterfaceP: RotationAnimation;
 
     private movementAngle: NamedAngle = this.angleFactory!.NOT_ANGLE;
 
     private steeringInsideGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
+
 protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxResourceLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number, viewPosition: ViewPosition){
             super(remoteInfo, parentLayer, advancedRTSProperties, groupInterface, rootName, name, healthInterface, new WaypointRTSFormInput(groupInterface, true), animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition);
                     
@@ -434,8 +435,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
 hashtable.put(Group.ID, this.getGroupInterface());
     
@@ -446,8 +446,7 @@ hashtable.put(AllBinaryGameLayerManager.ID, this.allBinaryGameLayerManagerP);
 this.setWaypointBehavior(new UnitWaypointBehavior2(this, this.waypointLayerInterfaceFactoryInterface!.getNextInstance(hashtable, x, y, z) as AdvancedRTSGameLayer));
     
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
     var waypoint: WaypointBase = J2MEUtil.isHTML()
@@ -457,8 +456,7 @@ this.setWaypointBehavior(new UnitWaypointBehavior2(this, this.waypointLayerInter
 
                             new NoCacheWaypoint(this, AttackSound.getInstance());
 
-    ;
-;
+    ;;
     
 this.getWaypointBehavior()!.setWaypoint(waypoint);
     
@@ -499,52 +497,41 @@ this.getUnitWaypointBehavior()!.setLastPathGeographicMapCellPosition(this.getUni
                         
                                     {
                                     
-    var currentGeographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;
-;
+    var currentGeographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;;
     
 this.sensorGeographicMapCellPositionList!.clear();
     
 this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition);
     
 
-    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;
-;
+    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var totalCells: number = (sensorRange /tiledLayer!.getCellHeight()) /2;
-;
+    var totalCells: number = (sensorRange /tiledLayer!.getCellHeight()) /2;;
     
 
-    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-;
+    var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;;
     
 
-    var column: number = currentGeographicMapCellPosition!.getColumn()!;
-;
+    var column: number = currentGeographicMapCellPosition!.getColumn()!;;
     
 
-    var row: number = currentGeographicMapCellPosition!.getRow()!;
-;
+    var row: number = currentGeographicMapCellPosition!.getRow()!;;
     
 
-    var lastColumn: number = column +totalCells;
-;
+    var lastColumn: number = column +totalCells;;
     
 
-    var lastRow: number = row +totalCells;
-;
+    var lastRow: number = row +totalCells;;
     
 
                         if(lastColumn > tiledLayer!.getColumns())
@@ -565,12 +552,10 @@ this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition);
                                     }
                                 
 
-    var firstColumn: number = column -totalCells;
-;
+    var firstColumn: number = column -totalCells;;
     
 
-    var firstRow: number = row -totalCells;
-;
+    var firstRow: number = row -totalCells;;
     
 
                         if(firstColumn < 0)
@@ -595,20 +580,17 @@ this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition);
 
 
                         for (
-    var index: number = lastColumn -1;
-index >= firstColumn; index--)
+    var index: number = lastColumn -1;index >= firstColumn; index--)
         {
 
 
 
 
                         for (
-    var index2: number = lastRow -1;
-index2 >= firstRow; index2--)
+    var index2: number = lastRow -1;index2 >= firstRow; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(index, index2)!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(index, index2)!;;
     
 
                         if(!this.sensorGeographicMapCellPositionList!.contains(geographicMapCellPosition))
@@ -700,32 +682,26 @@ this.rtsLayer2LogHelper= RTSLayer2LogHelper.getInstance();
 this.rtsLogHelper!.setClosestGeographicMapCellHistory(this, pathsList);
     
 
-    var closestIndex: number =  -1;
-;
+    var closestIndex: number =  -1;;
     
 
-    var shortestDistance: number = Integer.MAX_VALUE;
-;
+    var shortestDistance: number = Integer.MAX_VALUE;;
     
 
-    var currentDistance: number = Integer.MAX_VALUE;
-;
+    var currentDistance: number = Integer.MAX_VALUE;;
     
 
 
 
 
                         for (
-    var index: number = pathsList!.size() -1;
-index >= 0; index--)
+    var index: number = pathsList!.size() -1;index >= 0; index--)
         {
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(index) as BasicArrayList;
-;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(index) as BasicArrayList;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition;;
     
 currentDistance= this.layerDistanceUtil!.getDistanceAt(this, geographicMapCellPosition!.getMidPoint());
     
@@ -747,12 +723,10 @@ closestIndex= index;
                         
                                     {
                                     
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(closestIndex) as BasicArrayList;
-;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(closestIndex) as BasicArrayList;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(0) as GeographicMapCellPosition;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(0) as GeographicMapCellPosition;;
     
 this.teleportTo(geographicMapCellPosition);
     
@@ -774,8 +748,7 @@ geographicMapCellHistory!.trackAll(geographicMapCellPositionBasicArrayList);
 
         try {
             
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;
-;
+    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;;
     
 
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
@@ -803,8 +776,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
             
     public onMovementFound(trackingEvent: TrackingEvent){
 
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;
-;
+    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;;
     
 
                         if(layerInterface!.getGroupInterface()[0] != this.getGroupInterface()[0])
@@ -820,20 +792,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
 
     public initRangeHack(){
 
-    var basicWeaponPart: BasicWeaponPart = this.getPartInterfaceArray()[0]! as BasicWeaponPart;
-;
+    var basicWeaponPart: BasicWeaponPart = this.getPartInterfaceArray()[0]! as BasicWeaponPart;;
     
 
-    var weaponProperties: WeaponProperties = basicWeaponPart!.getWeaponProperties()!;
-;
+    var weaponProperties: WeaponProperties = basicWeaponPart!.getWeaponProperties()!;;
     
 this.weaponRange= weaponProperties!.getRange();
     
 this.initRangeAnimation= AdjustedCircleAnimation.createW(this.weaponRange, this.weaponRange, this.getWidth(), this.basicColorFactory!.GREEN);
     
 
-    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;
-;
+    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;;
     
 this.initSensorRangeAnimation= AdjustedCircleAnimation.createW(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED);
     
@@ -856,12 +825,10 @@ this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime()));
                         
                                     {
                                     
-    var currentFrame: number = this.destroyAnimationInterface!.getFrame()!;
-;
+    var currentFrame: number = this.destroyAnimationInterface!.getFrame()!;;
     
 
-    var size: number = this.destroyAnimationInterface!.getSize() -1;
-;
+    var size: number = this.destroyAnimationInterface!.getSize() -1;;
     
 
                         if(currentFrame == size)
@@ -920,8 +887,7 @@ this.getUnitWaypointBehavior()!.processTick(allBinaryLayerManager);
 
     public teleportTo(geographicMapCellPosition: GeographicMapCellPosition){
 
-    var point: GPoint = geographicMapCellPosition!.getMidPoint()!;
-;
+    var point: GPoint = geographicMapCellPosition!.getMidPoint()!;;
     
 this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHeight(), this.z);
     
@@ -932,20 +898,16 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(this.x +this.getHalfWidth(), this.y +this.getHalfHeight())!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(this.x +this.getHalfWidth(), this.y +this.getHalfHeight())!;;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;
-;
+    var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;;
     
 
                         if(!raceTrackGeographicMap!.isValid(geographicMapCellPosition))
@@ -1015,8 +977,7 @@ this.rotationAnimationInterfaceP!.nextRotation();
 
     public down(){
 
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;
-;
+    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
@@ -1032,8 +993,7 @@ this.rotationAnimationInterfaceP!.nextRotation();
 
     public up(){
 
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;
-;
+    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 
                         if(!velocityProperties!.isOverXYMaxForwardVelocity())
@@ -1069,28 +1029,23 @@ super.initInputProcessors();
             
     public processInput(layerManager: AllBinaryLayerManager){
 
-    var list: BasicArrayList = this.getGameKeyEventList()!;
-;
+    var list: BasicArrayList = this.getGameKeyEventList()!;;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.get(index)!;
-;
+    var anyType: any = list.get(index)!;;
     
 
-    var key: number = GameKeyEventUtil.getKey(anyType)!;
-;
+    var key: number = GameKeyEventUtil.getKey(anyType)!;;
     
 this.inputProcessorArray[key]!.processEvent(layerManager, GameKeyEvent.NONE);
     
@@ -1115,18 +1070,15 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.ge
             
     fireAll(layerManager: AllBinaryLayerManager){
 
-    var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;
-;
+    var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;;
     
 
-    var angle: number = Math.round((angleInfo!.getAngle() +this.slightAngle));
-;
+    var angle: number = Math.round((angleInfo!.getAngle() +this.slightAngle));;
     
 hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getAt(1), SmallIntegerSingletonFactory.getInstance()!.getAt(Math.round(AngleFactory.getInstance()!.getAt(angle)!.getValue())));
     
 
-    var salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;
-;
+    var salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;;
     
 salvoInterface!.process(layerManager, angle, 90);
     
@@ -1156,8 +1108,7 @@ this.initRangeHack();
 
     groundFriction(){
 
-    var vehicleFrictionProperties: VehicleFrictionProperties = this.getVehicleProperties()!.getVehicleFrictionProperties()!;
-;
+    var vehicleFrictionProperties: VehicleFrictionProperties = this.getVehicleProperties()!.getVehicleFrictionProperties()!;;
     
 this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVehicleProperties()!.getVelocityProperties(), vehicleFrictionProperties!.getTireFrictionNominator());
     
@@ -1168,24 +1119,19 @@ this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVe
             
     public trackTo(reason: string){
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
-;
+    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;
-;
+    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
-    var point: GPoint = nextUnvisitedPathGeographicMapCellPosition!.getMidPoint()!;
-;
+    var point: GPoint = nextUnvisitedPathGeographicMapCellPosition!.getMidPoint()!;;
     
 
-    var dx: number = (this.getXP() +this.getHalfWidth()) -point.getX();
-;
+    var dx: number = (this.getXP() +this.getHalfWidth()) -point.getX();;
     
 
-    var dy: number = (this.getYP() +this.getHalfHeight()) -point.getY();
-;
+    var dy: number = (this.getYP() +this.getHalfHeight()) -point.getY();;
     
 this.rtsLogHelper!.trackTo(this, nextUnvisitedPathGeographicMapCellPosition, dx, dy, reason);
     
@@ -1198,8 +1144,7 @@ this.trackToDXY(dx, dy);
             
     public trackToDXY(dx: number, dy: number){
 
-    var angleOfTarget: number = 0;
-;
+    var angleOfTarget: number = 0;;
     
 this.trackToDXYTargetAngle(dx, dy, angleOfTarget);
     
@@ -1210,16 +1155,13 @@ this.trackToDXYTargetAngle(dx, dy, angleOfTarget);
             
     turnTo(dx: number, dy: number, targetAngle: number): boolean{
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
-;
+    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;
-;
+    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
-    var evading: boolean = false;
-;
+    var evading: boolean = false;;
     
 
                         if(this.getUnitWaypointBehavior()!.getSensorAction() == SensorActionFactory.getInstance()!.EVADE)
@@ -1235,18 +1177,15 @@ targetAngle += 180;
                                     }
                                 
 
-    var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;
-;
+    var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;;
     
 
-    var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() -270)!;
-;
+    var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() -270)!;;
     
 this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle);
     
 
-    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-;
+    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
     
 
                         if(dx == 0 && dy == 0)
@@ -1393,8 +1332,7 @@ this.rtsLogHelper!.currentMoveEnded(this);
                                     }
                                 
 
-    var deltaAngle2: number = this.movementAngle!.getValue() -angle;
-;
+    var deltaAngle2: number = this.movementAngle!.getValue() -angle;;
     
 
                         if(deltaAngle2 > 0)
@@ -1444,12 +1382,10 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
 
     handleDeltalX(dx: number, dy: number){
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
-;
+    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;
-;
+    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
                         if(dx > 0)
@@ -1477,12 +1413,10 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 
     handleDeltalY(dx: number, dy: number){
 
-    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
-;
+    var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;;
     
 
-    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;
-;
+    var nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition = waypointBehaviorBase!.getNextUnvisitedPathGeographicMapCellPosition()!;;
     
 
                         if(dy > 0)
@@ -1512,8 +1446,7 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
             
     trackToDXYTargetAngle(dx: number, dy: number, targetAngle: number){
 
-    var list: BasicArrayList = this.getUnitWaypointBehavior()!.getSteeringVisitorList()!;
-;
+    var list: BasicArrayList = this.getUnitWaypointBehavior()!.getSteeringVisitorList()!;;
     
 
                         if(list.size() > 0)
@@ -1524,16 +1457,13 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 
-    var steeringVisitor: SteeringVisitor = list.get(index) as SteeringVisitor;
-;
+    var steeringVisitor: SteeringVisitor = list.get(index) as SteeringVisitor;;
     
 
-    var anyType: any = steeringVisitor!.visit(this)!;
-;
+    var anyType: any = steeringVisitor!.visit(this)!;;
     
 
                         if(anyType == 
@@ -1569,8 +1499,7 @@ this.fireOrMove();
             
     fireOrMove(){
 
-    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-;
+    var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
     
 
                         if(this.getUnitWaypointBehavior()!.needToMove())
@@ -1613,16 +1542,13 @@ TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent());
 
         try {
             
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;
-;
+    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 
-    var velocityXScaled: number = velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
-;
+    var velocityXScaled: number = velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();;
     
 
-    var velocityYScaled: number = velocityProperties!.getVelocityYBasicDecimalP()!.getScaled();
-;
+    var velocityYScaled: number = velocityProperties!.getVelocityYBasicDecimalP()!.getScaled();;
     
 this.getUnitWaypointBehavior()!.move();
     
@@ -1633,38 +1559,31 @@ this.getUnitWaypointBehavior()!.move();
                                     this.getUnitWaypointBehavior()!.setMoving(true);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, Math.round(velocityXScaled), Math.round(velocityYScaled), getPartialpositionlist());
     
 
-    var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(getPartialpositionlist()) as GeographicMapCellPosition;
-;
+    var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(getPartialpositionlist()) as GeographicMapCellPosition;;
     
 
                         if(cellPosition == this.cellPositionFactory!.NONE)
                         
                                     {
                                     
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;;
     
 
-    var tiledLayerUtil: TiledLayerUtil = TiledLayerUtil.getInstance()!;
-;
+    var tiledLayerUtil: TiledLayerUtil = TiledLayerUtil.getInstance()!;;
     
 
-    var x: number = this.x +Math.round(velocityXScaled);
-;
+    var x: number = this.x +Math.round(velocityXScaled);;
     
 
-    var y: number = this.y +Math.round(velocityYScaled);
-;
+    var y: number = this.y +Math.round(velocityYScaled);;
     
 x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.getWidth());
     
@@ -1677,8 +1596,7 @@ this.setPosition(x, y, this.z);
                                 
                         else {
                             
-    var allbinaryLayer: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(cellPosition)!;
-;
+    var allbinaryLayer: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(cellPosition)!;;
     
 this.getUnitWaypointBehavior()!.setMovingFromStopped(false);
     
@@ -1727,8 +1645,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "move", e);
 
     public allStop(){
 
-    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;
-;
+    var velocityProperties: VelocityProperties = this.getVehicleProperties()!.getVelocityProperties()!;;
     
 velocityProperties!.getVelocityXBasicDecimalP()!.setint(0);
     
@@ -1745,16 +1662,13 @@ velocityProperties!.getVelocityYBasicDecimalP()!.setint(0);
                                     super.paint(graphics);
     
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.getViewPosition()!;;
     
 
-    var viewX: number = viewPosition!.getX()!;
-;
+    var viewX: number = viewPosition!.getX()!;;
     
 
-    var viewY: number = viewPosition!.getY()!;
-;
+    var viewY: number = viewPosition!.getY()!;;
     
 this.decalAnimation!.paintXY(graphics, viewX, viewY);
     
@@ -1782,8 +1696,7 @@ this.resourceAnimation!.paintXY(graphics, viewX, viewY);
             
     public onBuildingEvent(event: RTSLayerEvent){
 
-    var buildingLayer: BuildingLayer = event.getRtsLayer() as BuildingLayer;
-;
+    var buildingLayer: BuildingLayer = event.getRtsLayer() as BuildingLayer;;
     
 this.getUnitWaypointBehavior()!.moveAwayFromBuilding(buildingLayer);
     
@@ -1853,8 +1766,7 @@ BuildingEventHandler.getInstance()!.removeListener(this);
                         
                                     {
                                     
-    var damage: number = this.getHealthInterface()!.getMaxHealth()!;
-;
+    var damage: number = this.getHealthInterface()!.getMaxHealth()!;;
     
 
                         if(damage > 10)
@@ -1977,8 +1889,7 @@ this.setLoad(0);
 
     public createHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;
-;
+    var rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;;
     
 rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor());
     
@@ -1995,8 +1906,7 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
     public getHudPaintable(): SelectionHudPaintable{
 
-    var rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;
-;
+    var rtsLayerHudPaintable: RTSLayerHudPaintable = RTSLayerHudPaintable.getInstance()!;;
     
 
 

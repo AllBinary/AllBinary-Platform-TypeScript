@@ -47,7 +47,8 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 export class StringLocationPaintable extends LocationPaintable {
         
 
-    private readonly value: string
+    private readonly value: string;
+
 public constructor (value: string){
 
             super();

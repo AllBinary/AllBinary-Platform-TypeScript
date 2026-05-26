@@ -82,11 +82,12 @@ export class MotionRectanglesWorker extends BasicEventHandler implements ImageCo
 
     private readonly imageComparisonInfoVector: Vector = new Vector();
 
-    private readonly motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface
+    private readonly motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface;
 
-    private index: number= 0
+    private index: number= 0;
 
-    private running: boolean= false
+    private running: boolean= false;
+
 public constructor (motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
 
             super();
@@ -135,36 +136,30 @@ this.running= running;
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 timeHelper!.setStartTimeTNT();
     
 
-    var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0) as ImageComparisonResultsEvent;
-;
+    var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0) as ImageComparisonResultsEvent;;
     
 
-    var imageComparisonInfo: ImageComparisonResult = imageComparisonResultsEvent!.getImageComparisonResult() as ImageComparisonResult;
-;
+    var imageComparisonInfo: ImageComparisonResult = imageComparisonResultsEvent!.getImageComparisonResult() as ImageComparisonResult;;
     
 this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
     
 
-    var allMotionRectangles: AllMotionRectangles = new AllMotionRectangles(imageComparisonInfo);
-;
+    var allMotionRectangles: AllMotionRectangles = new AllMotionRectangles(imageComparisonInfo);;
     
 AllMotionRectanglesResultsCacheSingleton.getInstance()!.add(new MotionRectanglesResultsFrameCacheable(allMotionRectangles, imageComparisonInfo!.getFrameTwo()));
     
 
-    var consolidatedMotionRectangles: ConsolidateMotionRectangles = new ConsolidateMotionRectangles(allMotionRectangles);
-;
+    var consolidatedMotionRectangles: ConsolidateMotionRectangles = new ConsolidateMotionRectangles(allMotionRectangles);;
     
 ConsolidatedMotionRectanglesResultsCacheSingleton.getInstance()!.add(new MotionRectanglesResultsFrameCacheable(consolidatedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
     
 
-    var constrainedMotionRectangles: ConstrainedMotionRectangles = new ConstrainedMotionRectangles(this.motionRectangleConstraintsInterface, consolidatedMotionRectangles);
-;
+    var constrainedMotionRectangles: ConstrainedMotionRectangles = new ConstrainedMotionRectangles(this.motionRectangleConstraintsInterface, consolidatedMotionRectangles);;
     
 constrainedMotionRectangles!.applyMotionRectangleConstraints(consolidatedMotionRectangles);
     

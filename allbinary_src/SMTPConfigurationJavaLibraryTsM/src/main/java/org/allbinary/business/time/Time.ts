@@ -48,13 +48,15 @@ export class Time
          {
         
 
-    private timeLong: Long
+    private timeLong: Long;
+
 public constructor (time: string){
 
             super();
         this.timeLong= new Long(time);
     
 }
+
 
 public constructor (time: number){
 

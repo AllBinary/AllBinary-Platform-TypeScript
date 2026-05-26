@@ -73,9 +73,10 @@ export class PlayerComposite
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly player: Player
+    private readonly player: Player;
 
     private readonly timeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
+
 public constructor (player: Player, repeatTime: number){
 
             super();
@@ -277,8 +278,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
 
     public setVolume(leftVolume: number, rightVolume: number){
 
-    var controllable2: Controllable2 = (this.player as unknown as Controllable2);
-;
+    var controllable2: Controllable2 = (this.player as unknown as Controllable2);;
     
 controllable2.setVolume(leftVolume, rightVolume);
     

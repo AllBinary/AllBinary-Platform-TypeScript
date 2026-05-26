@@ -84,19 +84,20 @@ export class HighScoreUtil
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly highScoresFactoryInterface: HighScoresFactoryInterface
+    private readonly highScoresFactoryInterface: HighScoresFactoryInterface;
 
-    private highScoresArray: HighScores[]
+    private highScoresArray: HighScores[];
 
-    private readonly highScore: HighScore
+    private readonly highScore: HighScore;
 
-    private readonly abeClientInformation: AbeClientInformationInterface
+    private readonly abeClientInformation: AbeClientInformationInterface;
 
-    private readonly gameInfo: GameInfo
+    private readonly gameInfo: GameInfo;
 
-    private readonly highScoresHelper: HighScoresHelperBase
+    private readonly highScoresHelper: HighScoresHelperBase;
 
     private firstTime: boolean = true;
+
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore){
 
             super();
@@ -138,8 +139,7 @@ this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(S
     
 
     var size: number = this.highScoresArray!.length
-                ;
-;
+                ;;
     
 
                         if(this.firstTime && size == 0)
@@ -159,20 +159,17 @@ this.highScoresFactoryInterface!.fetchHighScores(this.gameInfo, this);
                                     }
                                 
 
-    var highScores: HighScores
-;
+    var highScores: HighScores;;
     
 
-    var highScoresAsString: string
-;
+    var highScoresAsString: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 highScores= this.highScoresArray[index]!;
     
@@ -191,8 +188,7 @@ this.highScoresHelper!.setHighScoresArray(this.highScoresArray);
 
     public submit(myCanvas: MyCanvas){
 
-    var commandListener: CommandListener = myCanvas!.getCustomCommandListener()!;
-;
+    var commandListener: CommandListener = myCanvas!.getCustomCommandListener()!;;
     
 commandListener!.commandAction(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND, myCanvas);
     

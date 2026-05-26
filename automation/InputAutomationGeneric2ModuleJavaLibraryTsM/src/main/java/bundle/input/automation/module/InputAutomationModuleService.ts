@@ -49,7 +49,8 @@ export class InputAutomationModuleService
          implements InputAutomationModuleServiceInterface {
         
 
-    private inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]
+    private inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[];
+
 public constructor (inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]){
 
             super();

@@ -57,6 +57,7 @@ export class FireworksSound extends CompositeSound {
     
 }
 
+
 private constructor (){
             super("resource:/wav/fireworks.wav");
                     

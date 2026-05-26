@@ -68,6 +68,7 @@ export class WeakCrypt
                 ;
 
     private abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DES);
+
 public constructor (key: number){
 
             super();
@@ -80,8 +81,7 @@ public constructor (key: number){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
     
@@ -94,8 +94,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
 
         try {
             
-    var crypted: number[] = this.abCrypt!.encrypt(value.encodeToByteArray())!;
-;
+    var crypted: number[] = this.abCrypt!.encrypt(value.encodeToByteArray())!;;
     
 
 
@@ -124,8 +123,7 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 
         try {
             
-    var decrypted: number[] = this.abCrypt!.decrypt(DatabaseEncoder.decode(value))!;
-;
+    var decrypted: number[] = this.abCrypt!.decrypt(DatabaseEncoder.decode(value))!;;
     
 
 

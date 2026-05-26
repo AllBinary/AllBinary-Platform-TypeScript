@@ -49,13 +49,14 @@ export class DisplayInBrowserContraints
          implements DisplayInBrowserContraintsInterface {
         
 
-    private frameable: boolean= false
+    private frameable: boolean= false;
 
-    private mountable: boolean= false
+    private mountable: boolean= false;
 
-    private quickFrameable: boolean= false
+    private quickFrameable: boolean= false;
 
-    private mountedLink: string
+    private mountedLink: string;
+
 public constructor (node: Node){
 
             super();

@@ -65,9 +65,10 @@ export class RotationAnimation extends IndexedAnimation implements RotationAnima
 
     readonly directionUtil: DirectionUtil = DirectionUtil.getInstance()!;
 
-    readonly angleInfo: AngleInfo
+    readonly angleInfo: AngleInfo;
 
-    circularIndexUtil: CircularIndexUtil
+    circularIndexUtil: CircularIndexUtil;
+
 protected constructor (angleInfo: AngleInfo, circularIndexUtil: CircularIndexUtil, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -113,8 +114,7 @@ this.angleInfo!.adjustAngle(this.circularIndexUtil!.previous());
 this.circularIndexUtil!.setIndex(index);
     
 
-    var newFrame: number = this.circularIndexUtil!.getIndex()!;
-;
+    var newFrame: number = this.circularIndexUtil!.getIndex()!;;
     
 this.angleInfo!.adjustAngle(newFrame);
     
@@ -123,8 +123,7 @@ this.angleInfo!.adjustAngle(newFrame);
 
     public setFrameByDirection(direction: Direction){
 
-    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
-;
+    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;;
     
 this.adjustFrameToAngle(angle);
     

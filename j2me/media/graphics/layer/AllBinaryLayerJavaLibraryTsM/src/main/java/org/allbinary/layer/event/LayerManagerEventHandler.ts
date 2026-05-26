@@ -74,6 +74,7 @@ export class LayerManagerEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -117,14 +118,12 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
-;
+    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;;
     
 layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
     
@@ -156,14 +155,12 @@ super.fireEvent(eventObject);
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 
         try {
             
-    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
-;
+    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;;
     
 layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
     
@@ -178,20 +175,16 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance(
 }
 
 
-    var eventListenerInterfaceList: BasicArrayList = this.eventListenerInterfaceList;
-;
+    var eventListenerInterfaceList: BasicArrayList = this.eventListenerInterfaceList;;
     
 
-    var eventListenerInterface: EventListenerInterface
-;
+    var eventListenerInterface: EventListenerInterface;;
     
 
-    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface
-;
+    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
         while(index < eventListenerInterfaceList!.size())
@@ -223,8 +216,7 @@ index++;
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = (eventListenerInterface as LayerManagerEventListenerInterface);
-;
+    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = (eventListenerInterface as LayerManagerEventListenerInterface);;
     
 layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
     

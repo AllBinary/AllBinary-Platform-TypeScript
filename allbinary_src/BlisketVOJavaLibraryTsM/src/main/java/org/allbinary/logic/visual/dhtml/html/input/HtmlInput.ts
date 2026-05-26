@@ -58,13 +58,14 @@ export class HtmlInput extends HtmlTag {
 
     private readonly NAME: string = "NAME=\"";
 
-    private before: string
+    private before: string;
 
-    private type: string
+    private type: string;
 
-    private name: string
+    private name: string;
 
-    private after: string
+    private after: string;
+
 public constructor (before: string, type: string, name: string, after: string){
 
             super();
@@ -81,21 +82,17 @@ this.after= after;
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;
-;
+    var result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
-;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
     
 
     var attributeSize: number = attributeKeys!.length
-                ;
-;
+                ;;
     
 result= this.before;
     
@@ -118,16 +115,13 @@ result += "\" ";
 
 
                         for (
-    var i: number = 0;
-i < attributeSize; i++)
+    var i: number = 0;i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as string;
-;
+    var key: string = attributeKeys[i]! as string;;
     
 
-    var value: string = otherAttributes!.get(key) as string;
-;
+    var value: string = otherAttributes!.get(key) as string;;
     
 
                         if(value != 

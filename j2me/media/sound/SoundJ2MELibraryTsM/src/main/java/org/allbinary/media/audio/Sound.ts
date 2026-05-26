@@ -58,9 +58,10 @@ export class Sound
          implements SoundInterface, Runnable {
         
 
-    private resource: string
+    private resource: string;
 
     player: Player = NoPlayer.NO_PLAYER;
+
 protected constructor (resource: string){
 
             super();
@@ -121,8 +122,7 @@ this.player= player;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN);
     

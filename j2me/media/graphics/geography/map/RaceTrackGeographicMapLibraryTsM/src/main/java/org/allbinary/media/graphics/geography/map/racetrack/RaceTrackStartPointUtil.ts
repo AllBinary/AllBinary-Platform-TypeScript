@@ -66,20 +66,16 @@ export class RaceTrackStartPointUtil
             
     public static get(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, index: number): GPoint{
 
-    var list: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
-;
+    var list: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;;
     
 
-    var startPathFindingNode: PathFindingNode = list.get(index) as PathFindingNode;
-;
+    var startPathFindingNode: PathFindingNode = list.get(index) as PathFindingNode;;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = startPathFindingNode!.geographicMapCellPosition;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = startPathFindingNode!.geographicMapCellPosition;;
     
 
-    var point: GPoint = geographicMapCellPosition!.getPoint()!;
-;
+    var point: GPoint = geographicMapCellPosition!.getPoint()!;;
     
 
 

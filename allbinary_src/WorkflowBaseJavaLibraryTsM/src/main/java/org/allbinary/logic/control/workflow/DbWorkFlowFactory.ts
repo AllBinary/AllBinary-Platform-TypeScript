@@ -79,6 +79,7 @@ export class DbWorkFlowFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -91,24 +92,20 @@ private constructor (){
 
         try {
             
-    var className: string = hashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var className: string = hashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var params: any[] = new Array(1);
-;
+    var params: any[] = new Array(1);;
     
 
-    var classes: Function[] = new Array(1);
-;
+    var classes: Function[] = new Array(1);;
     
 classes[0]= hashMap!.constructor;
     
 params[0]= hashMap;
     
 
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
-;
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;;
     
 
 
@@ -125,8 +122,7 @@ params[0]= hashMap;
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
@@ -148,8 +144,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     

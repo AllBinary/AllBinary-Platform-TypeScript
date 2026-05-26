@@ -66,11 +66,11 @@ import { AbTagData } from './AbTagData.js';
 export class MultipartRequestParamForwardTag extends CustomTagSupport {
         
 
-    private page: string
+    private page: string;
 
-    private command: string
+    private command: string;
 
-    private paramVector: Vector
+    private paramVector: Vector;
 
     public setPage(page: string){
 this.page= page;
@@ -96,20 +96,17 @@ this.paramVector= paramVector;
 
         try {
             
-    var parentTag: HelperTag = this.getParent() as HelperTag;
-;
+    var parentTag: HelperTag = this.getParent() as HelperTag;;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(AbTagData.PARENT, parentTag);
     
 
-    var multipartRequestParamForwardHelper: MultipartRequestParamForwardHelper = new MultipartRequestParamForwardHelper(parentTag, this.page, this.command, this.paramVector, this.pageContext);
-;
+    var multipartRequestParamForwardHelper: MultipartRequestParamForwardHelper = new MultipartRequestParamForwardHelper(parentTag, this.page, this.command, this.paramVector, this.pageContext);;
     
 multipartRequestParamForwardHelper!.forward();
     

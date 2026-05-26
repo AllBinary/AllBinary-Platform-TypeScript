@@ -49,11 +49,12 @@ export class AdvertisementThumbnail
          implements AdvertisementThumbnailInterface {
         
 
-    private imageFileName: string
+    private imageFileName: string;
 
-    private imageUrl: string
+    private imageUrl: string;
 
-    private constraint: TwoDimensionalConstraintInterface
+    private constraint: TwoDimensionalConstraintInterface;
+
 public constructor (){
 
             super();

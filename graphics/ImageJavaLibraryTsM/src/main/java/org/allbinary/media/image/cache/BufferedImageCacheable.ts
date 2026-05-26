@@ -53,9 +53,10 @@ export class BufferedImageCacheable
          implements CacheableInterface {
         
 
-    private key: BufferedImageInfo
+    private key: BufferedImageInfo;
 
-    private bufferedImage: BufferedImage
+    private bufferedImage: BufferedImage;
+
 public constructor (key: BufferedImageInfo){
 
             super();
@@ -94,8 +95,7 @@ this.bufferedImage= bufferedImage;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.constructor.name.toString()!);
     

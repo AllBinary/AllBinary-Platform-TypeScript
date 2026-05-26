@@ -65,6 +65,7 @@ export class CategoryModifierTree extends CategoryPrivateTree implements Categor
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly directory: Directory = Directory.getInstance()!;
+
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(categoryFactoryInterface);
                     
@@ -103,8 +104,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                                     parentCategoryInterface!.addChild(newChildCategoryInterface);
     
 
-    var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString());
-;
+    var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString());;
     
 this.directory.create(directoryToBeCreatedAbPath);
     
@@ -156,8 +156,7 @@ this.save(newChildCategoryInterface);
                                     parentCategoryInterface!.addChild(existingChildCategoryInterface);
     
 
-    var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString());
-;
+    var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString());;
     
 this.delete(existingChildCategoryInterface);
     

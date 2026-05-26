@@ -65,39 +65,33 @@ export class Unit1DecalGameResources extends BasicGameResources {
     
 }
 
+
 private constructor (){
 
             super();
         
-    var ROOT: string = "/unit_decal";
-;
+    var ROOT: string = "/unit_decal";;
     
 
-    var SMALL: string = "_20_by_20.png";
-;
+    var SMALL: string = "_20_by_20.png";;
     
 
-    var MEDIUM: string = SMALL;
-;
+    var MEDIUM: string = SMALL;;
     
 
-    var SIZE_FOUR: string = SMALL;
-;
+    var SIZE_FOUR: string = SMALL;;
     
 
-    var SIZE_FIVE: string = SMALL;
-;
+    var SIZE_FIVE: string = SMALL;;
     
 
-    var SIZE_SIX: string = SMALL;
-;
+    var SIZE_SIX: string = SMALL;;
     
 
     var SIZE: string[] = 
                                                         [
                                                             SMALL,MEDIUM,SIZE_FOUR,SIZE_FIVE,SIZE_SIX
-                                                        ];
-;
+                                                        ];;
     
 super.init(ROOT, SIZE);
     

@@ -49,7 +49,7 @@ export class TestInputExample
          implements TestInputInterface {
         
 
-    private testValue: number= 0
+    private testValue: number= 0;
 
     public up(){
 }

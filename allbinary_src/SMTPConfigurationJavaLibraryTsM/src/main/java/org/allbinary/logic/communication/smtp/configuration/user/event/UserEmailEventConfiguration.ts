@@ -56,9 +56,10 @@ export class UserEmailEventConfiguration
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private name: string
+    private name: string;
 
-    private eventListenerClassPath: string
+    private eventListenerClassPath: string;
+
 public constructor (){
 
             super();
@@ -76,6 +77,7 @@ this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
                                     }
                                 
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 

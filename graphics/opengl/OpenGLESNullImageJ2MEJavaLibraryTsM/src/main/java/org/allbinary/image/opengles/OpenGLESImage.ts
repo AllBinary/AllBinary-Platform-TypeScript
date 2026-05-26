@@ -78,11 +78,12 @@ export class OpenGLESImage
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    readonly textureFactory: PlatformTextureBaseFactory
+    readonly textureFactory: PlatformTextureBaseFactory;
 
-    public readonly openGLBitmap: PlatformBitmapBase
+    public readonly openGLBitmap: PlatformBitmapBase;
 
     public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
+
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
 
             super();

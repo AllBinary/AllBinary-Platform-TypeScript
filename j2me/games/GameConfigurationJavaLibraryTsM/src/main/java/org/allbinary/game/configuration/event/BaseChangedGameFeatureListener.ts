@@ -123,12 +123,10 @@ this.changed= initialized;
 
     public isChangedFeature(gameFeature: Feature): boolean{
 
-    var isChanged: boolean = this.list.contains(gameFeature)!;
-;
+    var isChanged: boolean = this.list.contains(gameFeature)!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("GameFeature: ");
     

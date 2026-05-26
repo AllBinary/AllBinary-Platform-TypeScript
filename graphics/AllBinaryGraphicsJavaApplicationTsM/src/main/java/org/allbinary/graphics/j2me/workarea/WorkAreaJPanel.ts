@@ -103,7 +103,7 @@ import { KeyEvent } from './KeyEvent.js';
 export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, MyCanvasEventListener, EventListener, Runnable {
         
 
-    private static document: org.w3c.dom.Document
+    private static document: org.w3c.dom.Document;
 
     public static getDocument(): Document{
 
@@ -117,19 +117,20 @@ export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, M
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private canvasJPanelList: LinkedList
+    private canvasJPanelList: LinkedList;
 
-    private canvasHolderJPanel: JPanel
+    private canvasHolderJPanel: JPanel;
 
-    private name: string
+    private name: string;
 
-    private selectedFrame: number= 0
+    private selectedFrame: number= 0;
 
-    private propertiesJPanel: PropertiesJPanel
+    private propertiesJPanel: PropertiesJPanel;
 
-    private workAreaJTreeJPanel: WorkAreaJTreeJPanel
+    private workAreaJTreeJPanel: WorkAreaJTreeJPanel;
 
     private isPlaying: boolean = false;
+
 public constructor (name: string, dimension: Dimension, x: number, y: number){
 
             super();
@@ -144,8 +145,7 @@ this.initMyComponents(dimension);
 this.workAreaJTreeJPanel= new WorkAreaJTreeJPanel(this.name);
     
 
-    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), x, y);
-;
+    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), x, y);;
     
 this.canvasJPanelList!.add(canvasJPanel);
     
@@ -168,6 +168,7 @@ this.canvasHolderJPanel!.add(canvasJPanel as Component);
 
 }
 
+
 public constructor (workAreaDom: WorkAreaDom, dimension: Dimension){
 
             super();
@@ -180,28 +181,23 @@ this.name= workAreaDom!.getName();
 this.initMyComponents(dimension);
     
 
-    var canvasNodeList: BasicArrayList = workAreaDom!.getCanvasNodes()!;
-;
+    var canvasNodeList: BasicArrayList = workAreaDom!.getCanvasNodes()!;;
     
 
-    var numberOfFrames: number = canvasNodeList!.size()!;
-;
+    var numberOfFrames: number = canvasNodeList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < numberOfFrames; index++)
+    var index: number = 0;index < numberOfFrames; index++)
         {
 
-    var node: Node = canvasNodeList!.get(index) as Node;
-;
+    var node: Node = canvasNodeList!.get(index) as Node;;
     
 
-    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), new CanvasDom(node));
-;
+    var canvasJPanel: CanvasJPanel = new CanvasJPanel(this.workAreaJTreeJPanel, this.getSize(), new CanvasDom(node));;
     
 this.canvasJPanelList!.add(canvasJPanel);
     
@@ -250,12 +246,10 @@ this.setSize(dimension);
 this.canvasJPanelList= new LinkedList();
     
 
-    var gridBagLayout: GridBagLayout = new GridBagLayout();
-;
+    var gridBagLayout: GridBagLayout = new GridBagLayout();;
     
 
-    var gridBagConstraints: GridBagConstraints = new GridBagConstraints();
-;
+    var gridBagConstraints: GridBagConstraints = new GridBagConstraints();;
     
 this.innerJPanel!.setLayout(gridBagLayout);
     
@@ -272,8 +266,7 @@ gridBagConstraints!.weightx= .05;
 gridBagConstraints!.weighty= .05;
     
 
-    var toolJPanel: ToolJPanel = new ToolJPanel();
-;
+    var toolJPanel: ToolJPanel = new ToolJPanel();;
     
 gridBagLayout!.setConstraints(toolJPanel, gridBagConstraints);
     
@@ -324,24 +317,20 @@ MyCanvasEventService.addListener(this as MyCanvasEventListener);
 
     getCanvasHashMap(): HashMap<any, any>{
 
-    var canvasJPanelHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var canvasJPanelHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var size: number = this.canvasJPanelList!.size()!;
-;
+    var size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), new Integer(index));
     
@@ -423,8 +412,7 @@ super.setVisible(true);
                         
                                     {
                                     
-    var component: Component = this.canvasHolderJPanel!.getComponent(0)!;
-;
+    var component: Component = this.canvasHolderJPanel!.getComponent(0)!;;
     
 
                         if(component != 
@@ -445,20 +433,17 @@ super.setVisible(true);
 
     public changeZoom(factor: number){
 
-    var size: number = this.canvasJPanelList!.size()!;
-;
+    var size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor);
     
@@ -498,20 +483,17 @@ this.select(this.canvasJPanelList!.size() -1);
             
     duplicate(treeNode: MutableTreeNode){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
-;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
                         if(canvasJPanelHashMap!.containsKey(treeNode))
                         
                                     {
                                     
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;
-;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.intValue()) as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.intValue()) as CanvasJPanel;;
     
 this.initDuplicate(canvasJPanel!.duplicate());
     
@@ -525,24 +507,20 @@ this.initDuplicate(canvasJPanel!.duplicate());
             
     public autoRotate(increments: number, totalAngle: number){
 
-    var incrementAngle: number = Math.round((totalAngle /increments));
-;
+    var incrementAngle: number = Math.round((totalAngle /increments));;
     
 
 
 
 
                         for (
-    var index: number = 1;
-index < increments; index++)
+    var index: number = 1;index < increments; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 
-    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;
-;
+    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
     
 newCanvasJPanel!.setAngle(incrementAngle *index);
     
@@ -555,8 +533,7 @@ this.initDuplicate(newCanvasJPanel);
 
     public explodeAll(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 canvasJPanel!.explodeAll();
     
@@ -571,16 +548,13 @@ canvasJPanel!.explodeAll();
 
 
                         for (
-    var index: number = 1;
-index < numberOfFrames; index++)
+    var index: number = 1;index < numberOfFrames; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 
-    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;
-;
+    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
     
 newCanvasJPanel!.explode(index +1, explodeType);
     
@@ -595,12 +569,10 @@ this.initDuplicate(newCanvasJPanel);
             
     public autoMirror(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 
-    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;
-;
+    var newCanvasJPanel: CanvasJPanel = canvasJPanel!.duplicate()!;;
     
 newCanvasJPanel!.mirror();
     
@@ -616,8 +588,7 @@ this.initDuplicate(newCanvasJPanel);
                         
                                     {
                                     
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 
                         if(canvasJPanel != 
@@ -648,12 +619,10 @@ canvasJPanel!.repaint();
 
     select(treeNode: MutableTreeNode){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
-;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;
-;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;;
     
 
                         if(frameInteger != 
@@ -675,38 +644,31 @@ canvasJPanel!.repaint();
 WorkAreaJPanel.document= DomHelper.getInstance()!.createDocument();
     
 
-    var workAreaNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.WORKAREA)!;
-;
+    var workAreaNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.WORKAREA)!;;
     
 
-    var nameNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.NAME)!;
-;
+    var nameNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.NAME)!;;
     
 
-    var nameTextNode: Node = WorkAreaJPanel.document.createTextNode(this.name)!;
-;
+    var nameTextNode: Node = WorkAreaJPanel.document.createTextNode(this.name)!;;
     
 nameNode!.appendChild(nameTextNode);
     
 
-    var framesNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.FRAMES)!;
-;
+    var framesNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.FRAMES)!;;
     
 
-    var size: number = this.canvasJPanelList!.size()!;
-;
+    var size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;;
     
 framesNode!.appendChild(canvasJPanel!.toDom());
     
@@ -792,8 +754,7 @@ this.getCurrentFrame()!.keyPressed(keyEvent);
 
     public delete(evt: MyCanvasEvent){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
-;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
                         if(canvasJPanelHashMap!.containsKey(evt.getTreeNode()))
@@ -802,8 +763,7 @@ this.getCurrentFrame()!.keyPressed(keyEvent);
                                     this.canvasHolderJPanel!.removeAll();
     
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
-;
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;;
     
 this.canvasJPanelList!.remove(frameInt!.intValue());
     
@@ -833,20 +793,16 @@ StatusFactory.getInstance()!.setStatus("Frame Selected");
 
     public rotate(evt: MyCanvasEvent){
 
-    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
-;
+    var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;;
     
 
-    var treeNode: MutableTreeNode = evt.getTreeNode()!;
-;
+    var treeNode: MutableTreeNode = evt.getTreeNode()!;;
     
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
-;
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.intValue()) as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.intValue()) as CanvasJPanel;;
     
 
                         if(canvasJPanel != 
@@ -884,8 +840,7 @@ this.autoExplode(10, 0);
             
     public center(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
-;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;;
     
 canvasJPanel!.center();
     
@@ -911,16 +866,14 @@ this.center();
                         
                                     {
                                     
-    var size: number = this.canvasJPanelList!.size()!;
-;
+    var size: number = this.canvasJPanelList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(!this.isPlaying())
@@ -960,7 +913,7 @@ Thread.sleep(250);
 }
 
 
-    private innerJPanel: javax.swing.JPanel
+    private innerJPanel: javax.swing.JPanel;
 
 }
                 

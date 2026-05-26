@@ -137,20 +137,16 @@ export class InventorySearchUtil
             
     public getBasicItemIdColumn(searchRequest: SearchRequest): Vector{
 
-    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-;
+    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var storeFrontInterface: StoreFrontInterface = searchRequest!.getStoreFront()!;
-;
+    var storeFrontInterface: StoreFrontInterface = searchRequest!.getStoreFront()!;;
     
 
-    var inventorySearchUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;
-;
+    var inventorySearchUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;;
     
 
-    var column: Vector = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), BasicItemData.ID)!;
-;
+    var column: Vector = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, storeFrontInterface!.getCategoryPath(), BasicItemData.ID)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
@@ -162,28 +158,23 @@ export class InventorySearchUtil
                                     }
                                 
 
-    var subStoreVector: BasicArrayList = storeFrontInterface!.getSubStores()!;
-;
+    var subStoreVector: BasicArrayList = storeFrontInterface!.getSubStores()!;;
     
 
-    var size: number = subStoreVector!.size()!;
-;
+    var size: number = subStoreVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index) as string;
-;
+    var subStore: string = subStoreVector!.get(index) as string;;
     
 
-    var substoreIdColumn: Vector = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, BasicItemData.ID)!;
-;
+    var substoreIdColumn: Vector = inventorySearchUtil!.getColumnWhereLike(inventoryEntityInterface, subStore, BasicItemData.ID)!;;
     
 column.addAll(substoreIdColumn);
     
@@ -215,8 +206,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, this.commonPhoneStrings!.ZERO));
     
 
-    var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;
-;
+    var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
@@ -240,36 +230,28 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 
         try {
             
-    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-;
+    var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var searchParams: SearchParams = searchRequest!.getParams()!;
-;
+    var searchParams: SearchParams = searchRequest!.getParams()!;;
     
 
-    var startPage: number = searchParams!.getStartPageInt()!.intValue()!;
-;
+    var startPage: number = searchParams!.getStartPageInt()!.intValue()!;;
     
 
-    var endPage: number = searchParams!.getEndPageInt()!.intValue()!;
-;
+    var endPage: number = searchParams!.getEndPageInt()!.intValue()!;;
     
 
-    var pageLength: number = searchParams!.getLengthInt()!.intValue()!;
-;
+    var pageLength: number = searchParams!.getLengthInt()!.intValue()!;;
     
 
-    var savedPagesInRange: number = 0;
-;
+    var savedPagesInRange: number = 0;;
     
 
-    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;
-;
+    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;;
     
 
-    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as string)!;
-;
+    var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as string)!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(keyword))
@@ -285,8 +267,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(startPage >= 0)
@@ -302,46 +283,36 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
                                     }
                                 
 
-    var MAXPAGES: number = 100;
-;
+    var MAXPAGES: number = 100;;
     
 
-    var productListingPages: string[] = new Array(MAXPAGES);
-;
+    var productListingPages: string[] = new Array(MAXPAGES);;
     
 
-    var documents: Document[] = new Array(MAXPAGES);
-;
+    var documents: Document[] = new Array(MAXPAGES);;
     
 
-    var inventoryNodes: Node[] = new Array(MAXPAGES);
-;
+    var inventoryNodes: Node[] = new Array(MAXPAGES);;
     
 
-    var iter: ListIterator = column.listIterator()!;
-;
+    var iter: ListIterator = column.listIterator()!;;
     
 keyword= keyword.toUpperCase();
     
 
-    var lastPage: number =  -1;
-;
+    var lastPage: number =  -1;;
     
 
-    var numberOfResultsOnCurrentPage: number = 0;
-;
+    var numberOfResultsOnCurrentPage: number = 0;;
     
 
-    var numberOfResults: number = 0;
-;
+    var numberOfResults: number = 0;;
     
 
-    var viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;
-;
+    var viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;;
     
 
-    var inventoryNode: Node = viewDocumentInterface!.getDoc()!.createElement(InventoryData.INVENTORY)!;
-;
+    var inventoryNode: Node = viewDocumentInterface!.getDoc()!.createElement(InventoryData.INVENTORY)!;;
     
 viewDocumentInterface!.getBaseNode()!.appendChild(inventoryNode);
     
@@ -359,23 +330,19 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
                                     }
                                 
 
-    var currentPage: number =  -1;
-;
+    var currentPage: number =  -1;;
     
 
         while(iter.hasNext())
         {
 
-    var product: string = .toCharArray();
-;
+    var product: string = .toCharArray();;
     
 
-    var itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;
-;
+    var itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;;
     
 
-    var keywords: string = itemInterface!.getKeywords()!;
-;
+    var keywords: string = itemInterface!.getKeywords()!;;
     
 keywords= keywords.toUpperCase();
     
@@ -388,8 +355,7 @@ keywords= keywords.toUpperCase();
                         
                                     {
                                     
-    var itemNode: Node = new BasicItemView(itemInterface, new Vector()).toXmlNode(viewDocumentInterface!.getDoc())!;
-;
+    var itemNode: Node = new BasicItemView(itemInterface, new Vector()).toXmlNode(viewDocumentInterface!.getDoc())!;;
     
 itemNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), BasketData.ITEMTOTALINBASKET, this.commonPhoneStrings!.ONE));
     
@@ -502,16 +468,14 @@ savedPagesInRange++;
 
 
                         for (
-    var index: number = startPage;
-index <= endPage; index++)
+    var index: number = startPage;index <= endPage; index++)
         {
 
                         if(index <= lastPage)
                         
                                     {
                                     
-    var tempDocument: Document = documents[index]!;
-;
+    var tempDocument: Document = documents[index]!;;
     
 inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocument, SearchData.TOTAL_NUMBER_PAGES, new Integer(lastPage +1).toString()));
     
@@ -522,8 +486,7 @@ inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocumen
 
 
                         for (
-    var pageIndex: number = 0;
-pageIndex <= lastPage; pageIndex++)
+    var pageIndex: number = 0;pageIndex <= lastPage; pageIndex++)
         {
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -556,8 +519,7 @@ inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocumen
 }
 
 
-    var success: string = DomDocumentHelper.toString(tempDocument)!;
-;
+    var success: string = DomDocumentHelper.toString(tempDocument)!;;
     
 productListingPages[index]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).translate(success);
     
@@ -571,8 +533,7 @@ productListingPages[index]= new StoreTransformer(abeClientInformation, new Trans
                         
                                     {
                                     
-    var result: string = this.getNoResults(viewDocumentInterface, inventoryNode)!;
-;
+    var result: string = this.getNoResults(viewDocumentInterface, inventoryNode)!;;
     
 productListingPages[0]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest)).translate(result);
     

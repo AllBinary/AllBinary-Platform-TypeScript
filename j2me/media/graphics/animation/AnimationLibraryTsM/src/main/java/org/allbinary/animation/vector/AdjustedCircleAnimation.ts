@@ -53,8 +53,7 @@ export class AdjustedCircleAnimation extends CircleAnimation {
 
     public static createAnimation(width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor): AdjustedCircleAnimation{
 
-    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
-;
+    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);;
     
 adjustedCircleAnimation!.initXY(xAdjustment, yAdjustment);
     
@@ -69,8 +68,7 @@ adjustedCircleAnimation!.initXY(xAdjustment, yAdjustment);
 
     public static createW(width: number, height: number, innerWidth: number, basicColor: BasicColor): AdjustedCircleAnimation{
 
-    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
-;
+    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);;
     
 adjustedCircleAnimation!.init(innerWidth);
     
@@ -83,9 +81,10 @@ adjustedCircleAnimation!.init(innerWidth);
 }
 
 
-    private xAdjustment: number= 0
+    private xAdjustment: number= 0;
 
-    private yAdjustment: number= 0
+    private yAdjustment: number= 0;
+
 public constructor (width: number, height: number, basicColor: BasicColor){
             super(width, height, basicColor);
                     
@@ -109,8 +108,7 @@ this.yAdjustment= yAdjustment;
                         
                                     {
                                     
-    var widthPortion: number = (((innerWidth /3) *10) /7);
-;
+    var widthPortion: number = (((innerWidth /3) *10) /7);;
     
 this.xAdjustment=  -((this.width>>1) -widthPortion);
     

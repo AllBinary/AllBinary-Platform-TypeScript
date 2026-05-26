@@ -76,12 +76,10 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
 
     public process(activity: Activity){
 
-    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
-;
+    var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;;
     
 
-    var touchScreenTypeFactory: TouchScreenTypeFactory = TouchScreenTypeFactory.getInstance()!;
-;
+    var touchScreenTypeFactory: TouchScreenTypeFactory = TouchScreenTypeFactory.getInstance()!;;
     
 touchScreenFactory!.setTouch(this.isTouch(activity));
     
@@ -92,8 +90,7 @@ touchScreenFactory!.setMultiTouchDistinct(this.isMultiTouchDistinct(activity));
 touchScreenTypeFactory!.update(activity);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
     

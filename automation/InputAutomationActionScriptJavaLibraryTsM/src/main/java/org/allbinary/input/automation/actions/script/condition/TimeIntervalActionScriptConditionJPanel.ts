@@ -65,7 +65,8 @@ export class TimeIntervalActionScriptConditionJPanel extends javax.swing.JPanel 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private timeIntervalActionScriptConditionInterface: TimeIntervalActionScriptConditionInterface
+    private timeIntervalActionScriptConditionInterface: TimeIntervalActionScriptConditionInterface;
+
 public constructor (timeIntervalActionScriptConditionInterface: TimeIntervalActionScriptConditionInterface){
 
             super();
@@ -163,8 +164,7 @@ okJButtonActionPerformed(evt);
 this.jLabel2!.setText("Time (ms):");
     
 
-    var timeIntervalActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.timeIntervalActionJDialog!.getContentPane());
-;
+    var timeIntervalActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.timeIntervalActionJDialog!.getContentPane());;
     
 this.timeIntervalActionJDialog!.getContentPane()!.setLayout(timeIntervalActionJDialogLayout);
     
@@ -190,8 +190,7 @@ timeIntervalActionJButtonActionPerformed(evt);
 this.jLabel1!.setText("Time Interval:");
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -216,19 +215,19 @@ this.getTimeIntervalActionJDialog()!.setVisible(true);
 }
 
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private okJButton: javax.swing.JButton
+    private okJButton: javax.swing.JButton;
 
-    private timeIntervalActionJButton: javax.swing.JButton
+    private timeIntervalActionJButton: javax.swing.JButton;
 
-    private timeIntervalActionJDialog: javax.swing.JDialog
+    private timeIntervalActionJDialog: javax.swing.JDialog;
 
-    private timeIntervalJTextField: javax.swing.JTextField
+    private timeIntervalJTextField: javax.swing.JTextField;
 
-    private titleJLabel: javax.swing.JLabel
+    private titleJLabel: javax.swing.JLabel;
 
 }
                 

@@ -71,15 +71,16 @@ export class CountedLayerInterfaceFactoryPart
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
 
-    private total: number= 0
+    private total: number= 0;
 
     private totalString: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
 
-    private xOffset: number= 0
+    private xOffset: number= 0;
 
     private countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil
+    private readonly primitiveLongUtil: PrimitiveLongUtil;
+
 public constructor (total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
 
             super();
@@ -144,8 +145,7 @@ this.total= total;
 this.totalString= this.primitiveLongUtil!.getCharArray(total);
     
 
-    var font: MyFont = MyFont.getInstance()!;
-;
+    var font: MyFont = MyFont.getInstance()!;;
     
 this.setXOffset(font.charsWidth(this.totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize()>>1));
     

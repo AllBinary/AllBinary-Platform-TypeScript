@@ -71,28 +71,23 @@ export class SubDirectory
 
     public static toString(files: BasicArrayList): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;
-;
+    var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;;
     
 
-    var size: number = files.size()!;
-;
+    var size: number = files.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var file: AbFile = files.get(index) as AbFile;
-;
+    var file: AbFile = files.get(index) as AbFile;;
     
 stringBuffer!.append(file.getPath());
     
@@ -110,6 +105,7 @@ stringBuffer!.append(NEW_LINE);
 
 
     private readonly directory: Directory = Directory.getInstance()!;
+
 private constructor (){
 
             super();

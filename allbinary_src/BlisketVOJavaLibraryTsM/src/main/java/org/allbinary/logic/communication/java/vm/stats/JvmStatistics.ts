@@ -52,7 +52,8 @@ export class JvmStatistics
          {
         
 
-    private runtime: Runtime
+    private runtime: Runtime;
+
 public constructor (){
 
             super();

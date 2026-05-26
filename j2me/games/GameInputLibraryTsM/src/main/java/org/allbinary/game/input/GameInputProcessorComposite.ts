@@ -56,9 +56,10 @@ import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
 export class GameInputProcessorComposite extends PlayerGameInput {
         
 
-    private readonly name: string
+    private readonly name: string;
 
-    private readonly gameInputProcessorInterface: GameInputProcessorInterface
+    private readonly gameInputProcessorInterface: GameInputProcessorInterface;
+
 public constructor (name: string, gameInputProcessorInterface: GameInputProcessorInterface){
             super(new BasicArrayListD(), new BasicArrayListD(),  -1);
                     
@@ -77,8 +78,7 @@ this.gameInputProcessorInterface= gameInputProcessorInterface;
 
         try {
             
-    var list: BasicArrayList = this.getGameKeyEventList()!;
-;
+    var list: BasicArrayList = this.getGameKeyEventList()!;;
     
 this.gameInputProcessorInterface!.onInput(list);
     

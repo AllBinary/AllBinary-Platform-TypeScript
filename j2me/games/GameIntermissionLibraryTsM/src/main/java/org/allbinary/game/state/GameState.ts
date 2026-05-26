@@ -51,7 +51,8 @@ export class GameState
 
     public static PLAYING_GAME_STATE: GameState = GameStateFactory.getInstance("PLAYING_GAME_STATE")!;
 
-    private name: string
+    private name: string;
+
 public constructor (name: string, state: number){
 
             super();

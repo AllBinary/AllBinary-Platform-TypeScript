@@ -72,6 +72,7 @@ export class AbeLicenseClient
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly MINSERVERS: number = 3;
+
 public constructor (){
 
             super();
@@ -87,33 +88,26 @@ public constructor (){
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.GET);
     
 
-    var xmlRpcAbeLicenseClient: XmlRpcAbeClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);
-;
+    var xmlRpcAbeLicenseClient: XmlRpcAbeClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);;
     
 
     var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null) as AbeLicenseInterface;
-;
+                            null) as AbeLicenseInterface;;
     
 
-    var licenseId: string = abeLicenseInterface!.getLicenseId()!;
-;
+    var licenseId: string = abeLicenseInterface!.getLicenseId()!;;
     
 
-    var servers: BasicArrayList = abeLicenseInterface!.getServers()!;
-;
+    var servers: BasicArrayList = abeLicenseInterface!.getServers()!;;
     
 
-    var isNewLicenseId: boolean = false;
-;
+    var isNewLicenseId: boolean = false;;
     
 
-    var isBetterServerList: boolean = false;
-;
+    var isBetterServerList: boolean = false;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId))
@@ -138,8 +132,7 @@ public constructor (){
                         
                                     {
                                     
-    var initInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;
-;
+    var initInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;;
     
 initInfo!.setLicenseId(licenseId);
     

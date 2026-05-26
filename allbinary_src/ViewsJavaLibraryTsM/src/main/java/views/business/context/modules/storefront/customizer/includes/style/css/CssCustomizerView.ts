@@ -58,7 +58,8 @@ export class CssCustomizerView extends HttpStoreComponentView {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    styleValidationInterface: ValidationInterface
+    styleValidationInterface: ValidationInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

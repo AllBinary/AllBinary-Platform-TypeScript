@@ -59,9 +59,10 @@ import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/Primitive
 export class BottomToTopImageAnimation extends ImageSegmentAnimation {
         
 
-    private startHeight: number= 0
+    private startHeight: number= 0;
 
-    private currentHeight: number= 0
+    private currentHeight: number= 0;
+
 public constructor (image: Image, animationBehavior: AnimationBehavior){
             super(image, PrimitiveIntUtil.getArrayInstance(), animationBehavior);
                     

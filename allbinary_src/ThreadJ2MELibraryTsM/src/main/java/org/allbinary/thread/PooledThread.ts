@@ -68,7 +68,8 @@ export class PooledThread extends Thread {
 
     private readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
 
-    private readonly threadPool: ThreadPool
+    private readonly threadPool: ThreadPool;
+
 public constructor (threadPool: ThreadPool){
             super(threadPool!.createName());
                     
@@ -91,8 +92,7 @@ this.threadPool!.threadStarted();
         while(true)
         {
 
-    var task2: Runnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
-;
+    var task2: Runnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;;
     
 
         try {
@@ -107,8 +107,7 @@ this.threadPool!.startTask(task2);
 } catch(ex) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.putF(this.INTERRUPT_EXCEPTION, this, this.commonStrings!.RUN);
     
@@ -140,8 +139,7 @@ this.threadPool!.runningTask= false;
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 logUtil!.put(new StringMaker().append(this.commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, this.commonStrings!.RUN, e);
     

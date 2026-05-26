@@ -89,8 +89,7 @@ export class FileFactory
             
     public isFile(path: string): boolean{
 
-    var file: AbFile = new AbFile(path);
-;
+    var file: AbFile = new AbFile(path);;
     
 
                         if(file.exists())

@@ -49,7 +49,8 @@ import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 export class AnimationCompositePaintable extends InitUpdatePaintable {
         
 
-    private readonly animationInterface: Animation
+    private readonly animationInterface: Animation;
+
 public constructor (animationInterface: Animation){
 
             super();

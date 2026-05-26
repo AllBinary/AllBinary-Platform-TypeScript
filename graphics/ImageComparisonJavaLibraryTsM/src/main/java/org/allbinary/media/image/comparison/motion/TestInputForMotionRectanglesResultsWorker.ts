@@ -84,11 +84,12 @@ export class TestInputForMotionRectanglesResultsWorker
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private index: number= 0
+    private index: number= 0;
 
-    private running: boolean= false
+    private running: boolean= false;
 
-    private motionRectanglesVector: Vector
+    private motionRectanglesVector: Vector;
+
 public constructor (){
 
             super();
@@ -147,55 +148,45 @@ this.running= running;
 this.setRunning(true);
     
 
-    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-;
+    var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);;
     
 timeHelper!.setStartTimeTNT();
     
 
-    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;
-;
+    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;;
     
 
-    var motionRectangleVector: Vector = motionRectangles!.getVector()!;
-;
+    var motionRectangleVector: Vector = motionRectangles!.getVector()!;;
     
 
                         if(motionRectangleVector!.length > 0)
                         
                                     {
                                     
-    var rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;
-;
+    var rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;;
     
 
-    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
-;
+    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;;
     
 
-    var inputTypeNameArray: any[] = robotHashtable!.keys().()!;
-;
+    var inputTypeNameArray: any[] = robotHashtable!.keys().()!;;
     
 
     var size: number = inputTypeNameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var inputTypeNameString: string = inputTypeNameArray[index]! as string;
-;
+    var inputTypeNameString: string = inputTypeNameArray[index]! as string;;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString) as InputRobotInterface;
-;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString) as InputRobotInterface;;
     
 inputRobotInterface!.mouseMoveToTarget(rectangle);
     

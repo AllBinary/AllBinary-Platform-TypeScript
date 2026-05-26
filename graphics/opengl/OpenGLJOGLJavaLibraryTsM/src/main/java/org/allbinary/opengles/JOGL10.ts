@@ -76,13 +76,14 @@ export class JOGL10
 
     readonly TARGET: string = "target: ";
 
-    private readonly gl10: com.jogamp.opengl.GL2
+    private readonly gl10: com.jogamp.opengl.GL2;
 
-    public readonly glu: GLU
+    public readonly glu: GLU;
 
-    public readonly GL_LINE: number
+    public readonly GL_LINE: number;
 
-    public readonly GL_QUAD_STRIP: number
+    public readonly GL_QUAD_STRIP: number;
+
 public constructor (gl: com.jogamp.opengl.GL, gl2: com.jogamp.opengl.GL2){
 
             super();

@@ -47,6 +47,7 @@ import { YAxisMathVectorUtil } from './YAxisMathVectorUtil.js';
 
 export class YAxisMathVector extends MathVector {
         
+
 public constructor (magnitudeBasicDecimal: BasicDecimal, direction: number){
             super(magnitudeBasicDecimal, direction);
                     
@@ -70,8 +71,7 @@ this.calculate();
 
     calculate(){
 
-    var result: number = YAxisMathVectorUtil.calculate(this.getMagnitude()!.getUnscaled(), this.getDirection())!;
-;
+    var result: number = YAxisMathVectorUtil.calculate(this.getMagnitude()!.getUnscaled(), this.getDirection())!;;
     
 this.resultBasicDecimal= new BasicDecimal(result);
     

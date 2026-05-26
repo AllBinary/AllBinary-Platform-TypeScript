@@ -61,6 +61,7 @@ export class RightTouchInputToGameKeyEventAction extends GameKeyCompleteMotionGe
     
 }
 
+
 private constructor (){
             super("Right Action", TouchMotionGestureFactory.getInstance()!.RIGHT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

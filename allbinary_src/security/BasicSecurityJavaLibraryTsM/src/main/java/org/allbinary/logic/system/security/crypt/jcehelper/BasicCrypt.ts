@@ -60,13 +60,13 @@ export class BasicCrypt
 
     private readonly byteUtil: ByteUtil = ByteUtil.getInstance()!;
 
-    private readonly key: number[]
+    private readonly key: number[];
+
 public constructor (keyAsString: string){
 
             super();
         
-    var key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;
-;
+    var key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;;
     
 
         try {
@@ -77,8 +77,7 @@ public constructor (keyAsString: string){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e);
     
@@ -143,16 +142,14 @@ PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
 
     public mutilate(array: number[]): number[]{
 
-    var value: number
-;
+    var value: number;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.key.length; index++)
+    var index: number = 0;index < this.key.length; index++)
         {
 value= this.key[index]!;
     

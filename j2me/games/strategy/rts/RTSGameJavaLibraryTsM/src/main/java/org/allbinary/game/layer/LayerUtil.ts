@@ -60,16 +60,13 @@ export class LayerUtil
 
     public static toString(hashtable: Hashtable<any, any>, x: number, y: number, z: number): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-;
+    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(LayerUtil.HASHTABLE);
     

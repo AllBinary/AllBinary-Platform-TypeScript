@@ -89,11 +89,12 @@ export class TransformInfoEntity extends AbSqlBean implements TransformInfoEntit
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private readonly transformInfoFactoryInterface: TransformInfoFactoryInterface
+    private readonly transformInfoFactoryInterface: TransformInfoFactoryInterface;
 
-    private readonly transformInfoObjectConfigAndManipulatorFactoryInterface: TransformInfoObjectConfigAndManipulatorFactoryBase
+    private readonly transformInfoObjectConfigAndManipulatorFactoryInterface: TransformInfoObjectConfigAndManipulatorFactoryBase;
 
-    private readonly transformInfoObjectConfigGeneratorFactoryInterface: TransformInfoObjectConfigGeneratorFactoryInterface
+    private readonly transformInfoObjectConfigGeneratorFactoryInterface: TransformInfoObjectConfigGeneratorFactoryInterface;
+
 public constructor (transformInfoObjectConfigGeneratorFactoryInterface: TransformInfoObjectConfigGeneratorFactoryInterface, transformInfoObjectConfigAndManipulatorFactoryInterface: TransformInfoObjectConfigAndManipulatorFactoryBase, transformInfoFactoryInterface: TransformInfoFactoryInterface){
             super(new UserDbInitInfo());
                     
@@ -179,18 +180,15 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
             
     public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(transformInfoData!.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(hashMap != 
@@ -199,8 +197,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var anyType: any = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;
-;
+    var anyType: any = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;;
     
 
                         if(anyType != 
@@ -209,8 +206,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var string: string = anyType as string;
-;
+    var string: string = anyType as string;;
     
 hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
     
@@ -218,8 +214,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                                     }
                                 
 
-    var objectData: any = hashMap!.get(transformInfoData!.DATA)!;
-;
+    var objectData: any = hashMap!.get(transformInfoData!.DATA)!;;
     
 
                         if(objectData != 
@@ -228,8 +223,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                         
                                     {
                                     
-    var string: string = objectData as string;
-;
+    var string: string = objectData as string;;
     
 hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
     
@@ -262,28 +256,23 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
             
     public getObjectConfigs(storeName: string): Vector{
 
-    var objectConfigVector: Vector = new Vector();
-;
+    var objectConfigVector: Vector = new Vector();;
     
 
-    var objectConfigColumnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;
-;
+    var objectConfigColumnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;;
     
 
-    var size: number = objectConfigColumnVector!.length!;
-;
+    var size: number = objectConfigColumnVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var objectConfigString: string = objectConfigColumnVector!.get(i) as string;
-;
+    var objectConfigString: string = objectConfigColumnVector!.get(i) as string;;
     
 objectConfigString= decode.toCharArray();
     
@@ -304,28 +293,23 @@ objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInter
             
     public getNames(storeName: string): Vector{
 
-    var viewNameVector: Vector = new Vector();
-;
+    var viewNameVector: Vector = new Vector();;
     
 
-    var columnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;
-;
+    var columnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;;
     
 
-    var size: number = columnVector!.length!;
-;
+    var size: number = columnVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var viewNameString: string = columnVector!.get(i) as string;
-;
+    var viewNameString: string = columnVector!.get(i) as string;;
     
 viewNameVector!.add(viewNameString);
     
@@ -342,12 +326,10 @@ viewNameVector!.add(viewNameString);
 
     public createTableStatement(): string{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     

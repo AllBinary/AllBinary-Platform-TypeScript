@@ -69,23 +69,23 @@ export class AbeHttpRequestInfo
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
-    private httpUserAgent: string
+    private httpUserAgent: string;
 
-    private remoteAddress: string
+    private remoteAddress: string;
 
-    private remoteHost: string
+    private remoteHost: string;
 
-    private remoteHostByAddr: string
+    private remoteHostByAddr: string;
 
-    private remotePort: string
+    private remotePort: string;
 
-    private requestedFilePath: string
+    private requestedFilePath: string;
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();
         
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.httpUserAgent= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.HTTP_USER_AGENT) as string);
     
@@ -101,29 +101,26 @@ this.requestedFilePath= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestI
     
 }
 
+
 public constructor (httpServletRequest: HttpServletRequest){
 
             super();
         
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.httpUserAgent= stringUtil!.EMPTY_STRING;
     
 
-    var enumuration: Enumeration<any> = httpServletRequest!.getHeaderNames()!;
-;
+    var enumuration: Enumeration<any> = httpServletRequest!.getHeaderNames()!;;
     
 
         while(enumuration.hasMoreElements())
         {
 
-    var key: string = enumuration.nextElement()! as string;
-;
+    var key: string = enumuration.nextElement()! as string;;
     
 
-    var value: string = httpServletRequest!.getHeader(key)!;
-;
+    var value: string = httpServletRequest!.getHeader(key)!;;
     
 
                         if(key.indexOf("user") >= 0)
@@ -145,8 +142,7 @@ this.remotePort= Integer.toString(httpServletRequest!.getRemotePort());
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(abeHttpRequestInfoData!.HTTP_USER_AGENT, this.httpUserAgent);
     
@@ -171,8 +167,7 @@ hashMap!.put(abeHttpRequestInfoData!.REQUEST_FILE_PATH, this.requestedFilePath);
 
     public toVector(): Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.add(this.httpUserAgent);
     

@@ -70,7 +70,7 @@ export class DirectionalAnalogLocationInputProcessor extends AnalogLocationInput
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly inputProcessorArray: GameInputProcessor[]
+    private readonly inputProcessorArray: GameInputProcessor[];
 
     private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
 
@@ -85,6 +85,7 @@ export class DirectionalAnalogLocationInputProcessor extends AnalogLocationInput
     private leftTriggerGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
 
     private rightTriggerGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
+
 public constructor (inputProcessorArray: GameInputProcessor[]){
 
             super();
@@ -109,8 +110,7 @@ this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceFor
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
@@ -123,26 +123,21 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
         try {
             
-    var customGPoint: CustomGPoint
-;
+    var customGPoint: CustomGPoint;;
     
 customGPoint= analogLocationInput!.getCustomGPoint();
     
 
-    var x: number = customGPoint!.getX()!;
-;
+    var x: number = customGPoint!.getX()!;;
     
 
-    var y: number = customGPoint!.getY()!;
-;
+    var y: number = customGPoint!.getY()!;;
     
 
-    var leftTrigger: number = analogLocationInput!.getLeftTrigger()!;
-;
+    var leftTrigger: number = analogLocationInput!.getLeftTrigger()!;;
     
 
-    var rightTrigger: number = analogLocationInput!.getRightTrigger()!;
-;
+    var rightTrigger: number = analogLocationInput!.getRightTrigger()!;;
     
 
                         if(x < 0)
@@ -203,8 +198,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Unable to process analog input", this, commonStrings!.PROCESS, e);
     

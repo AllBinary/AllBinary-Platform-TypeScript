@@ -48,9 +48,10 @@ export class ImageColorResults
          {
         
 
-    private colorRange: ColorRange
+    private colorRange: ColorRange;
 
-    private colorAverage: ColorAverage
+    private colorAverage: ColorAverage;
+
 public constructor (){
 
             super();

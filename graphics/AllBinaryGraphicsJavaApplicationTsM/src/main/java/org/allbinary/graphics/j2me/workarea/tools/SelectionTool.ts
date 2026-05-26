@@ -101,9 +101,10 @@ export class SelectionTool
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly canvasJPanel: CanvasJPanel
+    private readonly canvasJPanel: CanvasJPanel;
 
     private active: boolean = true;
+
 public constructor (canvasJPanel: CanvasJPanel){
 
             super();
@@ -204,49 +205,40 @@ public constructor (canvasJPanel: CanvasJPanel){
 }
 
 
-    private controlIdDown: boolean= false
+    private controlIdDown: boolean= false;
 
     makeSelection(){
 
-    var xRect: number = this.getXRect()!;
-;
+    var xRect: number = this.getXRect()!;;
     
 
-    var xRect2: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX()) +xRect;
-;
+    var xRect2: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX()) +xRect;;
     
 
-    var yRect: number = this.getYRect()!;
-;
+    var yRect: number = this.getYRect()!;;
     
 
-    var yRect2: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY()) +yRect;
-;
+    var yRect2: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY()) +yRect;;
     
 
-    var hashMap: HashMap<any, any> = this.canvasJPanel!.getGraphicItemHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.canvasJPanel!.getGraphicItemHashMap()!;;
     
 
-    var graphicItemArray: any[] = hashMap!.keys().()!;
-;
+    var graphicItemArray: any[] = hashMap!.keys().()!;;
     
 
     var size: number = graphicItemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
-;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;;
     
 
                         if(item.getName() == LinesGraphicItem.getStaticName())
@@ -286,12 +278,10 @@ item.deactivate();
 
     public getXRect(): number{
 
-    var xDiff: number = this.endPoint!.getX() -this.startPoint!.getX();
-;
+    var xDiff: number = this.endPoint!.getX() -this.startPoint!.getX();;
     
 
-    var xRect: number = this.startPoint!.getX()!;
-;
+    var xRect: number = this.startPoint!.getX()!;;
     
 
                         if(xDiff < 0)
@@ -313,12 +303,10 @@ item.deactivate();
 
     public getYRect(): number{
 
-    var yDiff: number = this.endPoint!.getY() -this.startPoint!.getY();
-;
+    var yDiff: number = this.endPoint!.getY() -this.startPoint!.getY();;
     
 
-    var yRect: number = this.startPoint!.getY()!;
-;
+    var yRect: number = this.startPoint!.getY()!;;
     
 
                         if(yDiff < 0)
@@ -342,20 +330,16 @@ item.deactivate();
 g.setColor(this.rectColor);
     
 
-    var xRect: number = this.getXRect()!;
-;
+    var xRect: number = this.getXRect()!;;
     
 
-    var width: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX())!;
-;
+    var width: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX())!;;
     
 
-    var yRect: number = this.getYRect()!;
-;
+    var yRect: number = this.getYRect()!;;
     
 
-    var height: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY())!;
-;
+    var height: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY())!;;
     
 g.drawRect(xRect, yRect, width, height);
     

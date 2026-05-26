@@ -59,6 +59,7 @@ export class EmailQueueFactory
     
 }
 
+
 private constructor (){
 
             super();

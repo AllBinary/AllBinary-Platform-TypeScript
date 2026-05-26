@@ -49,9 +49,10 @@ export class BasicGeographicMapExtractedPathsCacheFactory extends BaseBasicArray
 }
 
 
-    private maxConcurrentPaths: number= 0
+    private maxConcurrentPaths: number= 0;
 
-    private maxPaths: number= 0
+    private maxPaths: number= 0;
+
 private constructor (){
 
             super();
@@ -68,8 +69,7 @@ private constructor (){
 
 
                         for (
-    var index: number = maxConcurrentPaths;
-index >= this.maxConcurrentPaths; index--)
+    var index: number = maxConcurrentPaths;index >= this.maxConcurrentPaths; index--)
         {
 this.list.add(new BasicArrayListS(maxPaths));
     
@@ -118,8 +118,7 @@ this.maxPaths= maxPaths;
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 BasicGeographicMapExtractedPathCacheFactory.getInstance()!.release(list.get(index) as BasicArrayList);
     

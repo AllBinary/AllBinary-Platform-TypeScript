@@ -45,6 +45,7 @@ export class LicenseLoadingType
             extends Object
          {
         
+
  constructor (name: string){
 
             super();

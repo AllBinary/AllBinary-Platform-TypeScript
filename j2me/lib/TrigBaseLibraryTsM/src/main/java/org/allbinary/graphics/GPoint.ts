@@ -66,12 +66,10 @@ export class GPoint
 
     public static toStringStatic(x: number, y: number, z: number): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-;
+    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 stringBuffer!.append(GPoint.POINT_LABEL);
     
@@ -100,11 +98,12 @@ stringBuffer!.appendint(z);
 }
 
 
-    private readonly x: number
+    private readonly x: number;
 
-    private readonly y: number
+    private readonly y: number;
 
-    private readonly z: number
+    private readonly z: number;
+
 public constructor (x: number, y: number, z: number){
 
             super();

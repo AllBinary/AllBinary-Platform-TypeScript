@@ -59,8 +59,7 @@ export class GeologicalGeographicMapCellPositionFactoryInitVisitor
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
 
-    var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = (cellPosition as GeologicalGeographicMapCellPosition);
-;
+    var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = (cellPosition as GeologicalGeographicMapCellPosition);;
     
 geologicalGeographicMapCellPosition!.getGeologicalResource()!.init();
     

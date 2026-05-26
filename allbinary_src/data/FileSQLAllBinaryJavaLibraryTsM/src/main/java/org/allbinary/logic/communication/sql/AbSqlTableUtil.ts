@@ -160,8 +160,7 @@ export class AbSqlTableUtil
 
         try {
             
-    var fileName: string = tableName +this.EXTENSION;
-;
+    var fileName: string = tableName +this.EXTENSION;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -173,12 +172,10 @@ export class AbSqlTableUtil
                                     }
                                 
 
-    var backupFilePath: AbPath = new AbPath(backupPath, fileName);
-;
+    var backupFilePath: AbPath = new AbPath(backupPath, fileName);;
     
 
-    var backupFile: AbFile = new AbFile(backupFilePath);
-;
+    var backupFile: AbFile = new AbFile(backupFilePath);;
     
 
                         if(backupFile!.exists())
@@ -194,8 +191,7 @@ backupFile!.delete();
 backupFile!.createNewFile();
     
 
-    var outputStream: OutputStream = new AbFileOutputStream(backupFile);
-;
+    var outputStream: OutputStream = new AbFileOutputStream(backupFile);;
     
 
 
@@ -232,24 +228,19 @@ backupFile!.createNewFile();
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var timeLong: Long = new Long(calendar.getTimeInMillis());
-;
+    var timeLong: Long = new Long(calendar.getTimeInMillis());;
     
 
-    var time: string = timeLong!.toString()!;
-;
+    var time: string = timeLong!.toString()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var fileName: string = tableName +this.EXTENSION;
-;
+    var fileName: string = tableName +this.EXTENSION;;
     
 stringBuffer!.append(backupPath);
     
@@ -258,8 +249,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(time);
     
 
-    var backupAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var backupAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -283,8 +273,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_BACKUP_FILE);
 Directory.create(backupAbPath);
     
 
-    var backupFileBak: AbFile = new AbFile(backupAbPath!.toFileSystemString());
-;
+    var backupFileBak: AbFile = new AbFile(backupAbPath!.toFileSystemString());;
     
 backupFileBak!.createNewFile();
     
@@ -322,16 +311,13 @@ FileUtil.getInstance()!.copy(path, backupAbPath);
 
     convertNewLines(value: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var lastIndex: number = 0;
-;
+    var lastIndex: number = 0;;
     
 
         while(index < value.length)
@@ -343,8 +329,7 @@ index= value.indexOf(specialCharArray[0]!, lastIndex);
                         
                                     {
                                     
-    var nextLine: string = value.substring(lastIndex, index -1)!;
-;
+    var nextLine: string = value.substring(lastIndex, index -1)!;;
     
 stringBuffer!.append(nextLine);
     
@@ -385,22 +370,18 @@ lastIndex= index +1;
 
     public backupTable(abSqlTable: AbSqlTable): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;
-;
+    var tableName: string = abSqlTable!.getTableName()!;;
     
 
         try {
             
-    var count: number = 0;
-;
+    var count: number = 0;;
     
 
-    var sqlStatement: string = this.sqlStrings!.SELECT_ALL_FROM +tableName;
-;
+    var sqlStatement: string = this.sqlStrings!.SELECT_ALL_FROM +tableName;;
     
 
-    var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;
-;
+    var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;;
     
 
                         if(!Directory.create(new AbPath(path)))
@@ -419,28 +400,22 @@ lastIndex= index +1;
                                     }
                                 
 
-    var rset: ResultSet = abSqlTable!.executeSQLStatement(sqlStatement)!;
-;
+    var rset: ResultSet = abSqlTable!.executeSQLStatement(sqlStatement)!;;
     
 
-    var rsmd: ResultSetMetaData = rset.getMetaData()!;
-;
+    var rsmd: ResultSetMetaData = rset.getMetaData()!;;
     
 
-    var colNum: number = rsmd.getColumnCount()!;
-;
+    var colNum: number = rsmd.getColumnCount()!;;
     
 
-    var QUERY_START: string = new StringBuilder().append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;
-;
+    var QUERY_START: string = new StringBuilder().append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var outputStream: OutputStream = this.getOutputStream(path, tableName)!;
-;
+    var outputStream: OutputStream = this.getOutputStream(path, tableName)!;;
     
 
         while(rset.next())
@@ -454,12 +429,10 @@ stringBuffer!.append(QUERY_START);
 
 
                         for (
-    var i: number = 1;
-i < colNum; i++)
+    var i: number = 1;i < colNum; i++)
         {
 
-    var value: string = rset.getString(i)!;
-;
+    var value: string = rset.getString(i)!;;
     
 stringBuffer!.append(this.convertNewLines(value));
     
@@ -472,8 +445,7 @@ stringBuffer!.append(rset.getString(colNum));
 stringBuffer!.append(this.END);
     
 
-    var sqlStatementLine: string = stringBuffer!.toString()!;
-;
+    var sqlStatementLine: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -523,18 +495,15 @@ StreamUtil.getInstance()!.close(outputStream);
 
     public restoreTable(abSqlTable: AbSqlTable, portion: Portion): string{
 
-    var tableName: string = abSqlTable!.getTableName()!;
-;
+    var tableName: string = abSqlTable!.getTableName()!;;
     
 
         try {
             
-    var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;
-;
+    var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;;
     
 
-    var current: number = portion.getCurrent()!.intValue()!;
-;
+    var current: number = portion.getCurrent()!.intValue()!;;
     
 
                         if(current == 0)
@@ -560,28 +529,22 @@ StreamUtil.getInstance()!.close(outputStream);
                                     }
                                 
 
-    var backupFile: AbFile = new AbFile(path, tableName +this.EXTENSION);
-;
+    var backupFile: AbFile = new AbFile(path, tableName +this.EXTENSION);;
     
 
-    var bufferedLineReader: BufferedLineReader = new BufferedLineReader(backupFile);
-;
+    var bufferedLineReader: BufferedLineReader = new BufferedLineReader(backupFile);;
     
 
-    var size: number = bufferedLineReader!.getSize()!;
-;
+    var size: number = bufferedLineReader!.getSize()!;;
     
 
-    var section: number = size /portion.getTotal()!.intValue() +1;
-;
+    var section: number = size /portion.getTotal()!.intValue() +1;;
     
 
-    var start: number = section *current;
-;
+    var start: number = section *current;;
     
 
-    var end: number = start +section;
-;
+    var end: number = start +section;;
     
 
                         if(end > size)
@@ -593,8 +556,7 @@ StreamUtil.getInstance()!.close(outputStream);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.TOTAL_LABEL);
     
@@ -620,8 +582,7 @@ stringBuffer!.append(end);
 bufferedLineReader!.readUpToLines(start);
     
 
-    var line: string = this.stringUtil!.EMPTY_STRING;
-;
+    var line: string = this.stringUtil!.EMPTY_STRING;;
     
 
         while(bufferedLineReader!.getCurrent() < end && (line= bufferedLineReader!.readLine()) != 
@@ -667,8 +628,7 @@ stringBuffer!.append(this.PORTION_RESTORED);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.TABLE_LABEL);
     

@@ -60,6 +60,7 @@ export class BasicColorSetUtil
     
 }
 
+
 protected constructor (){
 
             super();

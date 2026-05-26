@@ -66,6 +66,7 @@ export class TransformInfoHttpContext extends TransformInfoHttp {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(databaseHashMap, propertiesHashMap, pageContext);
                     
@@ -77,8 +78,7 @@ public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashM
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Database HashMap: ");
     
@@ -96,6 +96,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
 this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
+
 
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
@@ -121,8 +122,7 @@ this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING);
             
     getPath(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     

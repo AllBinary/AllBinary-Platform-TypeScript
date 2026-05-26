@@ -53,16 +53,13 @@ export class FilePathUtil
 
     public static adjust(path: string): string{
 
-    var abPathData: AbPathData = AbPathData.getInstance()!;
-;
+    var abPathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var filePathData: FilePathData = FilePathData.getInstance()!;
-;
+    var filePathData: FilePathData = FilePathData.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(path))
@@ -86,6 +83,7 @@ path= path.replace(abPathData!.SEPARATORCHAR, filePathData!.SEPARATORCHAR);
                         return path;
     
 }
+
 
 private constructor (){
 

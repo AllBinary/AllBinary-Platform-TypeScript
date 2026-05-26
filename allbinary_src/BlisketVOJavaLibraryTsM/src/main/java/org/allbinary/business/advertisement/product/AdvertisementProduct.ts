@@ -49,13 +49,14 @@ export class AdvertisementProduct
          implements AdvertisementProductInterface {
         
 
-    private type: string
+    private type: string;
 
-    private link: string
+    private link: string;
 
-    private number: number= 0
+    private number: number= 0;
 
-    private constraint: TwoDimensionalConstraintInterface
+    private constraint: TwoDimensionalConstraintInterface;
+
 public constructor (){
 
             super();

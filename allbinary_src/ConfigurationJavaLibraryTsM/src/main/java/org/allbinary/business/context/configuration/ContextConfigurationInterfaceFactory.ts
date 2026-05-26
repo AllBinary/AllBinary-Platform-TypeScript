@@ -75,6 +75,7 @@ export class ContextConfigurationInterfaceFactory
     
 }
 
+
 private constructor (){
 
             super();
@@ -85,12 +86,10 @@ private constructor (){
             
     public getInstance(document: Document): ContextConfigurationInterface{
 
-    var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;
-;
+    var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;;
     
 
-    var contextConfigurationNode: Node = DomSearchHelper.getNode(contextConfigurationData!.NAME, document.getChildNodes())!;
-;
+    var contextConfigurationNode: Node = DomSearchHelper.getNode(contextConfigurationData!.NAME, document.getChildNodes())!;;
     
 
 
@@ -105,20 +104,16 @@ private constructor (){
             
     public getInstance(contextName: string): ContextConfigurationInterface{
 
-    var abPath: AbPath = ContextConfigurationPathUtil.getAbPath(contextName)!;
-;
+    var abPath: AbPath = ContextConfigurationPathUtil.getAbPath(contextName)!;;
     
 
-    var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;
-;
+    var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;;
     
 
-    var documentString: string = new CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).get(abPath)!;
-;
+    var documentString: string = new CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).get(abPath)!;;
     
 
-    var document: Document = DomDocumentHelper.create(documentString)!;
-;
+    var document: Document = DomDocumentHelper.create(documentString)!;;
     
 
 

@@ -50,9 +50,10 @@ export class TwoDimensionalConstraint
          implements TwoDimensionalConstraintInterface {
         
 
-    private widthSizeConstraintInterface: SizeConstraintInterface
+    private widthSizeConstraintInterface: SizeConstraintInterface;
 
-    private heightSizeConstraintInterface: SizeConstraintInterface
+    private heightSizeConstraintInterface: SizeConstraintInterface;
+
 public constructor (node: Node){
 
             super();

@@ -52,7 +52,8 @@ import { SecuredNativeLibraryInterface } from './SecuredNativeLibraryInterface.j
 export class SecuredNativeLibraryHelperWrapper extends NativeLibraryHelperWrapper {
         
 
-    private securedNativeLibraryInterface: SecuredNativeLibraryInterface
+    private securedNativeLibraryInterface: SecuredNativeLibraryInterface;
+
 public constructor (securedNativeLibraryInterface: SecuredNativeLibraryInterface){
             super(securedNativeLibraryInterface!.getLibraryName());
                     

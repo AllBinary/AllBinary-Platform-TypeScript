@@ -71,6 +71,7 @@ export class UnitGameResources extends BasicGameResources {
     public RESOURCE_ICON_BUILD: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     public RESOURCE_ICON: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 protected constructor (){
 
             super();
@@ -85,8 +86,7 @@ protected constructor (){
 super.append(ROOT, sizeString);
     
 
-    var string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;
-;
+    var string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     

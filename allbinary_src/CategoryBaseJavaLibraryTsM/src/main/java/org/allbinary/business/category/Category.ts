@@ -83,9 +83,9 @@ export class Category
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private categoryHierarchyInterface: CategoryHierarchyInterface
+    private categoryHierarchyInterface: CategoryHierarchyInterface;
 
-    private categoryPropertiesInterface: CategoryPropertiesInterface
+    private categoryPropertiesInterface: CategoryPropertiesInterface;
 
     private readonly childCategoryVector: Vector = new Vector();
 
@@ -94,6 +94,7 @@ export class Category
     private readonly PROPERTIES: Integer = new Integer(1);
 
     private readonly CATEGORY: Integer = new Integer(0);
+
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
 
             super();
@@ -114,6 +115,7 @@ this.log();
     
 }
 
+
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
 
             super();
@@ -124,6 +126,7 @@ this.categoryHierarchyInterface= new CategoryHierarchy(this, this, level) as Cat
 this.log();
     
 }
+
 
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
 
@@ -153,20 +156,17 @@ this.log();
             
     public getRootFilePath(): AbPath{
 
-    var rootAbPath: AbPath = new AbPath(NOT_ROOT);
-;
+    var rootAbPath: AbPath = new AbPath(NOT_ROOT);;
     
 
-    var categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;
-;
+    var categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;;
     
 
                         if(categoryInterface!.getProperties()!.isRoot())
                         
                                     {
                                     
-    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties() as RootCategoryPropertiesInterface;
-;
+    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties() as RootCategoryPropertiesInterface;;
     
 rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
     
@@ -198,8 +198,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
             
     public getWebAppPath(): AbPath{
 
-    var categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;
-;
+    var categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;;
     
 
 
@@ -249,8 +248,7 @@ this.removeDuplicateChild(categoryInterface);
                                     }
                                 
 
-    var childCategoryHierarchyInterface: CategoryHierarchyInterface = categoryInterface!.getHierarchy()!;
-;
+    var childCategoryHierarchyInterface: CategoryHierarchyInterface = categoryInterface!.getHierarchy()!;;
     
 childCategoryHierarchyInterface!.setParent(this);
     
@@ -282,36 +280,30 @@ this.typeVector!.add(this.CATEGORY);
 
     public removeChild(categoryInterface: CategoryInterface): boolean{
 
-    var removalVector: Vector = new Vector();
-;
+    var removalVector: Vector = new Vector();;
     
 
-    var bool_return: boolean = false;
-;
+    var bool_return: boolean = false;;
     
 
-    var size: number = this.childCategoryVector!.length!;
-;
+    var size: number = this.childCategoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(this.CATEGORY == this.typeVector!.get(index))
                         
                                     {
                                     
-    var anyType: any = this.childCategoryVector!.get(index)!;
-;
+    var anyType: any = this.childCategoryVector!.get(index)!;;
     
 
-    var currentCategoryInterface: CategoryInterface = anyType as CategoryInterface;
-;
+    var currentCategoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 
                         if(currentCategoryInterface!.getProperties()!.getValue()!.compareTo(categoryInterface!.getProperties()!.getValue()) == 0)
@@ -342,24 +334,20 @@ this.removal(removalVector);
 
     removal(removalVector: Vector){
 
-    var removalSize: number = removalVector!.length!;
-;
+    var removalSize: number = removalVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < removalSize; index++)
+    var index: number = 0;index < removalSize; index++)
         {
 
-    var anyType: any = removalVector!.get(index)!;
-;
+    var anyType: any = removalVector!.get(index)!;;
     
 
-    var objectIndex: number = this.childCategoryVector!.indexOf(anyType)!;
-;
+    var objectIndex: number = this.childCategoryVector!.indexOf(anyType)!;;
     
 this.typeVector!.remove(objectIndex);
     
@@ -373,36 +361,30 @@ this.childCategoryVector!.remove(objectIndex);
 
     removeDuplicateChild(categoryInterface: CategoryInterface): boolean{
 
-    var removalVector: Vector = new Vector();
-;
+    var removalVector: Vector = new Vector();;
     
 
-    var bool_return: boolean = false;
-;
+    var bool_return: boolean = false;;
     
 
-    var size: number = this.childCategoryVector!.length!;
-;
+    var size: number = this.childCategoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = this.childCategoryVector!.get(index)!;
-;
+    var anyType: any = this.childCategoryVector!.get(index)!;;
     
 
                         if(this.PROPERTIES == this.typeVector!.get(index))
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;
-;
+    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;;
     
 
                         if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
@@ -426,12 +408,10 @@ break;
                         
                                     {
                                     
-    var existingCategoryInterface: CategoryInterface = anyType as CategoryInterface;
-;
+    var existingCategoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 
-    var categoryPropertiesInterface: CategoryPropertiesInterface = existingCategoryInterface!.getProperties()!;
-;
+    var categoryPropertiesInterface: CategoryPropertiesInterface = existingCategoryInterface!.getProperties()!;;
     
 
                         if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
@@ -556,28 +536,24 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
                                     }
                                 
 
-    var size: number = this.childCategoryVector!.length!;
-;
+    var size: number = this.childCategoryVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = this.childCategoryVector!.get(index)!;
-;
+    var anyType: any = this.childCategoryVector!.get(index)!;;
     
 
                         if(this.PROPERTIES == this.typeVector!.get(index))
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;
-;
+    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;;
     
 
                         if(!categoryPropertiesInterface!.isValid().valueOf())
@@ -600,8 +576,7 @@ index < size; index++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = anyType as CategoryInterface;
-;
+    var categoryInterface: CategoryInterface = anyType as CategoryInterface;;
     
 
                         if(!categoryInterface!.isValid().valueOf())
@@ -670,8 +645,7 @@ index < size; index++)
             
     public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap<any, any> = this.categoryPropertiesInterface!.toHashMap()!;
-;
+    var categoryHashMap: HashMap<any, any> = this.categoryPropertiesInterface!.toHashMap()!;;
     
 
 
@@ -686,8 +660,7 @@ index < size; index++)
             
     public toVector(): Vector{
 
-    var categoryVector: Vector = this.categoryPropertiesInterface!.toVector()!;
-;
+    var categoryVector: Vector = this.categoryPropertiesInterface!.toVector()!;;
     
 categoryVector!.add(this.childCategoryVector);
     
@@ -708,8 +681,7 @@ categoryVector!.add(this.childCategoryVector);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Category Name: ");
     

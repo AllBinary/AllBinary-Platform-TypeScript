@@ -57,6 +57,7 @@ export class AbeHttpRequestInfoData
     
 }
 
+
 private constructor (){
 
             super();

@@ -80,6 +80,7 @@ export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInf
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -92,8 +93,7 @@ private constructor (){
 
         try {
             
-    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(objectConfigFileAbPath)!;
-;
+    var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).get(objectConfigFileAbPath)!;;
     
 
 
@@ -130,8 +130,7 @@ private constructor (){
 
         try {
             
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(transformInfoInterface != 
@@ -163,8 +162,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var error: string = "Failed To Get Instance: ";
-;
+    var error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 
@@ -202,8 +200,7 @@ private constructor (){
 
         try {
             
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(transformInfoInterface != 
@@ -235,8 +232,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var error: string = "Failed To Get Instance: ";
-;
+    var error: string = "Failed To Get Instance: ";;
     
 
                         if(transformInfoInterface != 

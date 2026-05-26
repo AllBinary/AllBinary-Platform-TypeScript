@@ -61,6 +61,7 @@ export class DownTrackballInputToGameKeyEventAction extends GameKeyCompleteMotio
     
 }
 
+
 private constructor (){
             super("Down Action", TrackballMotionGestureFactory.getInstance()!.DOWN, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

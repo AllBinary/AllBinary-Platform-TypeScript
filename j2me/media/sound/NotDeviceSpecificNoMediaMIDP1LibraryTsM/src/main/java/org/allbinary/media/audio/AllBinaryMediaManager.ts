@@ -95,12 +95,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -125,12 +123,10 @@ System.gc();
 
     public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(InputStream)");
     
@@ -145,12 +141,10 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(Inpu
 
     public static createPlayer(locator: string): Player{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(locator)");
     
@@ -186,6 +180,7 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(loca
                         return StringUtil.getInstance()!.getArrayInstance();;
     
 }
+
 
 private constructor (){
 

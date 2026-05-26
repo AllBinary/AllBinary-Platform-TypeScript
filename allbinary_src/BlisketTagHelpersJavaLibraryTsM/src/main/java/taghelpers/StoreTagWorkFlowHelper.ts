@@ -68,7 +68,8 @@ export class StoreTagWorkFlowHelper extends TagHelper {
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private storeWorkFlowInterface: StoreWorkFlowInterface
+    private storeWorkFlowInterface: StoreWorkFlowInterface;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -111,8 +112,7 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
 } catch(e) 
             {
 
-    var error: string = "Failed to process workflow: ";
-;
+    var error: string = "Failed to process workflow: ";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

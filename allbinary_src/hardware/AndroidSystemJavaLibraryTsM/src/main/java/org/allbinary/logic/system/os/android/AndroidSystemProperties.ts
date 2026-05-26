@@ -71,6 +71,7 @@ export class AndroidSystemProperties
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (context: Context){
 
             super();

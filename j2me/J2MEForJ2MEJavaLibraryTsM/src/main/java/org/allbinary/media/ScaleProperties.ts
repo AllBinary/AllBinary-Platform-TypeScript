@@ -56,11 +56,11 @@ export class ScaleProperties
 
     public scaleY: number = 1.0;
 
-    public scaleWidth: number= 0
+    public scaleWidth: number= 0;
 
-    public scaleHeight: number= 0
+    public scaleHeight: number= 0;
 
-    public shouldScale: boolean= false
+    public shouldScale: boolean= false;
 
     public toString(): string{
 

@@ -80,6 +80,7 @@ export class ImageCache extends ImageCacheBase {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (){
 
             super();
@@ -90,12 +91,10 @@ public constructor (){
             
     public get(caller: string, width: number, height: number): Image{
 
-    var foundIndex: number = this.getIndexWH(width, height)!;
-;
+    var foundIndex: number = this.getIndexWH(width, height)!;;
     
 
-    var image: Image = this.getFromAvailable(foundIndex, width, height)!;
-;
+    var image: Image = this.getFromAvailable(foundIndex, width, height)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
@@ -149,16 +148,13 @@ this.listOfList[foundIndex]!.add(image);
             
     public get(key: any = {}): Image{
 
-    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-;
+    var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var resourceId: Integer = resourceUtil!.getResourceId(key as string)!;
-;
+    var resourceId: Integer = resourceUtil!.getResourceId(key as string)!;;
     
 
-    var image: Image = this.getImage(resourceId)!;
-;
+    var image: Image = this.getImage(resourceId)!;;
     
 
                         if(image == NullImage.NULL_IMAGE)
@@ -167,8 +163,7 @@ this.listOfList[foundIndex]!.add(image);
                                     
     var inputStream: InputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
@@ -212,25 +207,21 @@ this.hashtable.put(resourceId, image);
 
     public getIndex(key: any = {}): number{
 
-    var gdResources: GDResources = GDResources.getInstance()!;
-;
+    var gdResources: GDResources = GDResources.getInstance()!;;
     
 
-    var resourceStringArray: string[] = gdResources!.resourceStringArray;
-;
+    var resourceStringArray: string[] = gdResources!.resourceStringArray;;
     
 
     var size: number = resourceStringArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(resourceStringArray[index] == key)

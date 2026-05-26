@@ -95,7 +95,8 @@ export class ProfileActionScriptItem extends DefaultMutableTreeNode implements P
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private jPopupMenu: JPopupMenu
+    private jPopupMenu: JPopupMenu;
+
 public constructor (label: string, node: Node){
             super(label);
                     
@@ -107,6 +108,7 @@ this.init();
 this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
     
 }
+
 
 public constructor (label: string){
             super(label);
@@ -125,12 +127,10 @@ this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
 this.setJPopupMenu(new JPopupMenu());
     
 
-    var jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);
-;
+    var jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);;
     
 
-    var jMenuItemDelete: JMenuItem = new JMenuItem(DELETE);
-;
+    var jMenuItemDelete: JMenuItem = new JMenuItem(DELETE);;
     
 jMenuItemEdit!.addActionListener(this);
     

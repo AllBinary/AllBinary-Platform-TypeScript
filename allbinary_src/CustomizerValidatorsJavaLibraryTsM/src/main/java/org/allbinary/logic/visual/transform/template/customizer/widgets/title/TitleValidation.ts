@@ -63,6 +63,7 @@ export class TitleValidation extends TitleView implements ValidationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
             super();
                     
@@ -71,6 +72,7 @@ public constructor (){
                     
 }
 
+
 public constructor (node: Node){
             super(node);
                     
@@ -78,6 +80,7 @@ public constructor (node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
             super(hashMap);
@@ -101,8 +104,7 @@ public constructor (hashMap: HashMap<any, any>){
                                     }
                                 
 
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(!StringValidationUtil.getInstance()!.isValidRequired(this.getTitle(), 1, TitleData.getInstance()!.MAXLEN))
@@ -156,8 +158,7 @@ public constructor (hashMap: HashMap<any, any>){
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Title is not valid.");
     

@@ -58,6 +58,7 @@ export class LastKeyAIVisitor extends Visitor {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly TRUE: Boolean = BooleanFactory.getInstance()!.TRUE;
+
 public constructor (){
 
             super();
@@ -68,12 +69,10 @@ public constructor (){
 
         try {
             
-    var basicAI: BasicAI = anyType as BasicAI;
-;
+    var basicAI: BasicAI = anyType as BasicAI;;
     
 
-    var key: number = basicAI!.getLastKey()!;
-;
+    var key: number = basicAI!.getLastKey()!;;
     
 
                         if(key !=  -1)
@@ -89,8 +88,7 @@ public constructor (){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     

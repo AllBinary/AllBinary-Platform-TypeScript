@@ -61,6 +61,7 @@ export class ValidatedViewHelperFactory
     private static readonly CLASSNAME: string = "taghelpers.ValidationViewHelper";
 
     private static readonly FACTORYNAME: string = "taghelpers.ValidationViewHelperFactory";
+
 public constructor (){
 
             super();

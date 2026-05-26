@@ -68,24 +68,20 @@ UserRoleFactory.getInstance();
                         
                                     {
                                     
-    var roleVector: Vector = UserRoleB.getAll()!;
-;
+    var roleVector: Vector = UserRoleB.getAll()!;;
     
 
-    var size: number = roleVector!.length!;
-;
+    var size: number = roleVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var userRole: UserRole = roleVector!.get(index) as UserRole;
-;
+    var userRole: UserRole = roleVector!.get(index) as UserRole;;
     
 
                         if(role.compareTo(userRole!.toString()) == 0)
@@ -123,6 +119,7 @@ UserRoleFactory.getInstance();
                         return UserRoleB.roleVector;
     
 }
+
 
 protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: UserFactoryInterface){
             super(aBasicUserRole, aUserFactoryInterface);

@@ -61,8 +61,7 @@ export class BasicErrorNodeUtil
 
         try {
             
-    var node: Node = document.createElement(ErrorData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(ErrorData.getInstance()!.NAME)!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstance()!.TEXT, errorText));
     
@@ -84,6 +83,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstan
 }
 
 }
+
 
 private constructor (){
 

@@ -57,6 +57,7 @@ export class AdminConfigurationRequestHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.AdminConfigurationRequestHelper";
 
     private static readonly FACTORYNAME: string = "AdminConfigurationRequestHelperFactory";
+
 public constructor (){
 
             super();

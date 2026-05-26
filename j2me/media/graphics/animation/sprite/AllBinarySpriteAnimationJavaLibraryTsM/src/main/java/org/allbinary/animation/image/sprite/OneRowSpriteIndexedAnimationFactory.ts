@@ -68,8 +68,7 @@ export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFacto
             
     public static createFactoryDX(image: Image, dx: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
 
-    var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
-;
+    var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);;
     
 oneRowSpriteIndexedAnimationFactory!.initW(dx);
     
@@ -86,8 +85,7 @@ oneRowSpriteIndexedAnimationFactory!.initW(dx);
             
     public static createFactoryDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
 
-    var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
-;
+    var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);;
     
 oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
     
@@ -125,6 +123,7 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
 
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
+
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
                     
@@ -154,8 +153,7 @@ this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitia
             
     public getInstance(instanceId: number): Animation{
 
-    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-;
+    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;;
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)

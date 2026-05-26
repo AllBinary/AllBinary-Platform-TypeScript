@@ -58,9 +58,10 @@ export class CompoundAnimationInterfaceFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-    readonly basicAnimationInterfaceFactoryInterfaceArrayP: AnimationInterfaceFactoryInterface[]
+    readonly basicAnimationInterfaceFactoryInterfaceArrayP: AnimationInterfaceFactoryInterface[];
 
-    readonly animationBehaviorFactory: AnimationBehaviorFactory
+    readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -76,20 +77,17 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     public getInstance(instanceId: number): Animation{
 
     var size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
-                ;
-;
+                ;;
     
 
-    var animationInterfaceArray: Animation[] = this.createArray(size)!;
-;
+    var animationInterfaceArray: Animation[] = this.createArray(size)!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.getInstance(instanceId);
     
@@ -137,16 +135,14 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
     public setInitialScale(scaleProperties: ScaleProperties){
 
     var size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.setInitialScale(scaleProperties);
     

@@ -105,13 +105,14 @@ export class StaticPagesRequestHelper extends AbContext implements TagHelperInte
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private storeName: string
+    private storeName: string;
 
-    private searchParams: SearchParams
+    private searchParams: SearchParams;
 
-    private xslFile: string
+    private xslFile: string;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     
@@ -150,40 +151,31 @@ this.searchParams= new SearchParams(this.request);
                                     }
                                 
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;;
     
 
-    var adminEmailSubject: string = "Generated Static Pages Email Notification";
-;
+    var adminEmailSubject: string = "Generated Static Pages Email Notification";;
     
 
-    var adminEmailTextBody: string = "Generated static pages for store: " +this.storeName;
-;
+    var adminEmailTextBody: string = "Generated static pages for store: " +this.storeName;;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-;
+    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-;
+    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;;
     
 
-    var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);
-;
+    var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);;
     
 
-    var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
-;
+    var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STOREGENERATINGSTATICPAGES)!;
-;
+    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STOREGENERATINGSTATICPAGES)!;;
     
 
-    var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, this.abeClientInformation, storeFrontInterface)!;
-;
+    var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, this.abeClientInformation, storeFrontInterface)!;;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, storeAdminEmailInfo);
     
@@ -211,17 +203,14 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERAT
 
         try {
             
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;
-;
+    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;;
     
 
     var searchRequest: SearchRequest = new SearchRequest(
-                            null, this.searchParams, this.xslFile, contentType, this.getPropertiesHashMap(), this.getPageContext());
-;
+                            null, this.searchParams, this.xslFile, contentType, this.getPropertiesHashMap(), this.getPageContext());;
     
 
-    var success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(this.storeName)!;
-;
+    var success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(this.storeName)!;;
     
 this.email();
     
@@ -245,8 +234,7 @@ this.email();
 } catch(e) 
             {
 
-    var error: string = "Failed to generate staticpages table";
-;
+    var error: string = "Failed to generate staticpages table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -272,22 +260,18 @@ this.email();
 
         try {
             
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;;
     
 
-    var fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath());
-;
+    var fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath());;
     
 
-    var toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath());
-;
+    var toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath());;
     
 FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
     
 
-    var success: string = "Made Public";
-;
+    var success: string = "Made Public";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -309,8 +293,7 @@ FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
 } catch(e) 
             {
 
-    var error: string = "Failed to makePublic";
-;
+    var error: string = "Failed to makePublic";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

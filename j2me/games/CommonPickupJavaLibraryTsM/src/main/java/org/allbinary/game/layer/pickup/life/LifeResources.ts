@@ -59,6 +59,7 @@ export class LifeResources
 
 
     public RESOURCE: string = "life_drop_20_by_20.png";
+
 private constructor (){
 
             super();

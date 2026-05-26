@@ -109,12 +109,10 @@ export class FileUtil
 
     static getNewDirectory(fromFile: AbFile): string{
 
-    var newDirectory: string = fromFile!.getPath()!;
-;
+    var newDirectory: string = fromFile!.getPath()!;;
     
 
-    var separatorChar: string = java.io.File.separator;
-;
+    var separatorChar: string = java.io.File.separator;;
     
 
                         if(AbFileSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
@@ -126,8 +124,7 @@ export class FileUtil
                                     }
                                 
 
-    var lastIndex: number = newDirectory!.lastIndexOf(separatorChar)!;
-;
+    var lastIndex: number = newDirectory!.lastIndexOf(separatorChar)!;;
     
 
                         if(lastIndex >= newDirectory!.length)
@@ -158,6 +155,7 @@ lastIndex= newDirectory!.lastIndexOf(separatorChar);
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly streamUtil: StreamUtil = StreamUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -168,8 +166,7 @@ private constructor (){
             
     public write(inputStream: InputStream, file: AbFile){
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(file)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(file)!;;
     
 this.write(inputStream, dataOutputStream);
     
@@ -239,26 +236,21 @@ StreamUtil.getInstance()!.close(dataInputStream);
             
     fixPath(file: AbFile, path: AbPath, realPath: AbPath, cloud: string): AbPath{
 
-    var beginIndex: number = file.getPath()!.indexOf(cloud) +cloud.length;
-;
+    var beginIndex: number = file.getPath()!.indexOf(cloud) +cloud.length;;
     
 
-    var endIndex: number = file.getPath()!.indexOf(file.getName())!;
-;
+    var endIndex: number = file.getPath()!.indexOf(file.getName())!;;
     
 
-    var fixedPathString: string = realPath!.toFileSystemString() +file.getPath()!.substring(beginIndex, endIndex);
-;
+    var fixedPathString: string = realPath!.toFileSystemString() +file.getPath()!.substring(beginIndex, endIndex);;
     
 
-    var fixedPath: AbPath = new AbPath(fixedPathString);
-;
+    var fixedPath: AbPath = new AbPath(fixedPathString);;
     
 this.directory.create(fixedPath);
     
 
-    var string: string = fixedPath!.toFileSystemString()!;
-;
+    var string: string = fixedPath!.toFileSystemString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILE))
@@ -270,8 +262,7 @@ this.directory.create(fixedPath);
                                     }
                                 
 
-    var outPath: AbPath = new AbPath(string, file.getName());
-;
+    var outPath: AbPath = new AbPath(string, file.getName());;
     
 
 
@@ -296,12 +287,10 @@ this.copyToCloud(file, path, realPath, cloud, false, false);
 
         try {
             
-    var outPath: AbPath = this.fixPath(file, path, realPath, cloud)!;
-;
+    var outPath: AbPath = this.fixPath(file, path, realPath, cloud)!;;
     
 
-    var outFile: AbFile = new AbFile(outPath);
-;
+    var outFile: AbFile = new AbFile(outPath);;
     
 
                         if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
@@ -322,8 +311,7 @@ this.copyToCloud(file, path, realPath, cloud, false, false);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Out File: ");
     
@@ -344,12 +332,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyToCloud");
                         }
                             
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(outFile)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(outFile)!;;
     
 
-    var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);
-;
+    var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);;
     
 this.copy(fileInputStream, dataOutputStream);
     
@@ -362,8 +348,7 @@ this.copy(fileInputStream, dataOutputStream);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying File File: ");
     
@@ -400,8 +385,7 @@ this.copyToCloud(file, outFile, false, false);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
@@ -442,12 +426,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyToCloud");
                         }
                             
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(outFile)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(outFile)!;;
     
 
-    var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);
-;
+    var fileInputStream: AbFileInputStream = new AbFileLocalInputStream(file);;
     
 this.copy(fileInputStream, dataOutputStream);
     
@@ -460,8 +442,7 @@ this.copy(fileInputStream, dataOutputStream);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying File File: ");
     
@@ -492,8 +473,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(overwriteAll)
@@ -631,8 +611,7 @@ this.copyFile(fromFile, toFile, false, false);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying ");
     
@@ -665,12 +644,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
                                     }
                                 
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(toFile)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(toFile)!;;
     
 
-    var fileInputStream: AbFileInputStream = new AbFileInputStream(fromFile);
-;
+    var fileInputStream: AbFileInputStream = new AbFileInputStream(fromFile);;
     
 this.copy(fileInputStream, dataOutputStream);
     
@@ -683,8 +660,7 @@ this.copy(fileInputStream, dataOutputStream);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying File fromFile: ");
     
@@ -713,8 +689,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
             
     public copyDirectoryPortion(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number){
 
-    var file: AbFile = new AbFile(fromDirectoryAbPath);
-;
+    var file: AbFile = new AbFile(fromDirectoryAbPath);;
     
 
                         if(!file.isDirectory())
@@ -729,16 +704,13 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
                                     }
                                 
 
-    var fileList: BasicArrayList = this.directory.search(file, true)!;
-;
+    var fileList: BasicArrayList = this.directory.search(file, true)!;;
     
 
-    var size: number = fileList!.size()!;
-;
+    var size: number = fileList!.size()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Searched: ");
     
@@ -749,16 +721,13 @@ stringBuffer!.append(" Total: ");
 stringBuffer!.appendint(size);
     
 
-    var portion: number = size /total +1;
-;
+    var portion: number = size /total +1;;
     
 
-    var start: number = portion *current;
-;
+    var start: number = portion *current;;
     
 
-    var end: number = start +portion;
-;
+    var end: number = start +portion;;
     
 
                         if(end > size)
@@ -791,12 +760,10 @@ stringBuffer!.appendint(end);
 
 
                         for (
-    var index: number = start;
-index < end; index++)
+    var index: number = start;index < end; index++)
         {
 
-    var nextFile: AbFile = fileList!.get(index) as AbFile;
-;
+    var nextFile: AbFile = fileList!.get(index) as AbFile;;
     
 
                         if(nextFile!.isDirectory())
@@ -807,12 +774,10 @@ index < end; index++)
                                 
                         else {
                             
-    var path: string = new AbPath(nextFile!.getPath()).getPath()!;
-;
+    var path: string = new AbPath(nextFile!.getPath()).getPath()!;;
     
 
-    var beginIndex: number = fromDirectoryAbPath!.getPath()!.length()!;
-;
+    var beginIndex: number = fromDirectoryAbPath!.getPath()!.length()!;;
     
 
                         if(path.indexOf(URLGLOBALS.getWebappPath()) < 0)
@@ -824,12 +789,10 @@ index < end; index++)
                                     }
                                 
 
-    var newPath: string = toDirectoryAbPath!.toFileSystemString() +path.substring(beginIndex);
-;
+    var newPath: string = toDirectoryAbPath!.toFileSystemString() +path.substring(beginIndex);;
     
 
-    var toFile: AbFile = new AbFile(new AbPath(newPath));
-;
+    var toFile: AbFile = new AbFile(new AbPath(newPath));;
     
 this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
     
@@ -851,8 +814,7 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying Directory from: ");
     
@@ -868,12 +830,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     }
                                 
 
-    var newDirectory: string = FileUtil.getNewDirectory(fromFile)!;
-;
+    var newDirectory: string = FileUtil.getNewDirectory(fromFile)!;;
     
 
-    var newDirectoryAbPath: AbPath = new AbPath(to.getPath() +AbPathData.getInstance()!.SEPARATOR +newDirectory);
-;
+    var newDirectoryAbPath: AbPath = new AbPath(to.getPath() +AbPathData.getInstance()!.SEPARATOR +newDirectory);;
     
 
                         if(!this.directory.create(newDirectoryAbPath))
@@ -888,21 +848,18 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     }
                                 
 
-    var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromFile!.listFiles())!;
-;
+    var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromFile!.listFiles())!;;
     
 
     var size: number = fileArray!.length
-                ;
-;
+                ;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILE))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying ");
     
@@ -926,12 +883,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var file: AbFile = fileArray[index]!;
-;
+    var file: AbFile = fileArray[index]!;;
     
 
                         if(file.isFile())
@@ -971,8 +926,7 @@ index < size; index++)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying Directory fromFile: ");
     
@@ -1002,8 +956,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
 
     public copy(fromAbPath: AbPath, to: AbPath): boolean{
 
-    var COPY: string = "copy";
-;
+    var COPY: string = "copy";;
     
 
         try {
@@ -1012,8 +965,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copying AbPaths from: ");
     
@@ -1057,12 +1009,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                                     }
                                 
 
-    var fromLocationFile: AbFile = new AbFile(fromAbPath);
-;
+    var fromLocationFile: AbFile = new AbFile(fromAbPath);;
     
 
-    var toLocationFile: AbFile = new AbFile(to);
-;
+    var toLocationFile: AbFile = new AbFile(to);;
     
 
                         if(fromLocationFile!.isFile())
@@ -1073,8 +1023,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                         
                                     {
                                     
-    var file: AbFile = new AbFile(toLocationFile, fromLocationFile!.getName());
-;
+    var file: AbFile = new AbFile(toLocationFile, fromLocationFile!.getName());;
     
 this.copyFile(fromLocationFile, file);
     
@@ -1083,8 +1032,7 @@ this.copyFile(fromLocationFile, file);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copied file=");
     
@@ -1114,8 +1062,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Copied file with new name ");
     
@@ -1156,28 +1103,24 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                                     }
                                 
 
-    var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromLocationFile!.listFiles())!;
-;
+    var fileArray: AbFile[] = FileWrapperUtil.wrapFiles(fromLocationFile!.listFiles())!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < fileArray!.length; index++)
+    var index: number = 0;index < fileArray!.length; index++)
         {
 
-    var file: AbFile = fileArray[index]!;
-;
+    var file: AbFile = fileArray[index]!;;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var aFile: AbFile = new AbFile(toLocationFile, file.getName());
-;
+    var aFile: AbFile = new AbFile(toLocationFile, file.getName());;
     
 this.copyFile(file, aFile);
     
@@ -1258,8 +1201,7 @@ this.copyDirectory(fromLocationFile, toLocationFile);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Copying fromAbPath: ");
     
@@ -1286,8 +1228,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
 
     public readAsString(fileName: string): string{
 
-    var bytes: number[] = new Array(1000000);
-;
+    var bytes: number[] = new Array(1000000);;
     
 
 
@@ -1302,16 +1243,14 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
 
     var idFile: FileInputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             idFile= new FileInputStream(fileName);
     
 
-    var size: number = idFile!.read(bytes)!;
-;
+    var size: number = idFile!.read(bytes)!;;
     
 
                         if(size > 0)
@@ -1359,20 +1298,17 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
     public shouldSkip(file: AbFile, skipFiles: string[]): boolean{
 
     var size: number = skipFiles!.length
-                ;
-;
+                ;;
     
 
-    var skipFile: string
-;
+    var skipFile: string;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 skipFile= skipFiles[index]!;
     
@@ -1412,20 +1348,17 @@ skipFile= skipFiles[index]!;
 
     var dataOutputStream: AbDataOutputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             PreLogUtil.put(new StringMaker().append(this.WRITE_LABEL)!.append(filePath)!.append(this.DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
     
 
-    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-;
+    var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;;
     
 
-    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath)!;
-;
+    var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath)!;;
     
 dataOutputStream= new AbDataOutputStream(fileOutputStream);
     

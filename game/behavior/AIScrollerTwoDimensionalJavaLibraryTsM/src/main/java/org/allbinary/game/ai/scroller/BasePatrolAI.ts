@@ -74,15 +74,16 @@ export class BasePatrolAI extends BasicAI {
 
     public static SPEED: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(5)!;
 
-    maxDistance: Integer
+    maxDistance: Integer;
 
-    currentDistance: number
+    currentDistance: number;
 
-    xTotalDistance: number= 0
+    xTotalDistance: number= 0;
 
     lastKeyDirection: number = Canvas.RIGHT;
 
     keyDirection: number = Canvas.RIGHT;
+
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -106,12 +107,10 @@ this.changeDirectionIfReachedPacingAreaMax();
 
     updateTotalDistance(){
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;
-;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;;
     
 
-    var velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;
-;
+    var velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;;
     
 this.xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
     
@@ -120,12 +119,10 @@ this.xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScale
 
     changeDirectionIfReachedPacingAreaMax(){
 
-    var mathUtil: MathUtil = MathUtil.getInstance()!;
-;
+    var mathUtil: MathUtil = MathUtil.getInstance()!;;
     
 
-    var totalDistance: number = mathUtil!.abs(this.xTotalDistance)!;
-;
+    var totalDistance: number = mathUtil!.abs(this.xTotalDistance)!;;
     
 
                         if(totalDistance > this.currentDistance)

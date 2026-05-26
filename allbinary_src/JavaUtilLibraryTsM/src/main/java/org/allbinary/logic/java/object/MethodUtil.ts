@@ -55,12 +55,10 @@ export class MethodUtil
 
     public static viewAll(myClass: Function, lineBreak: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var method: Method[] = myClass!.getMethods()!;
-;
+    var method: Method[] = myClass!.getMethods()!;;
     
 stringBuffer!.append("Methods: ");
     
@@ -71,8 +69,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;
-index < method.length; index++)
+    var index: number = 0;index < method.length; index++)
         {
 stringBuffer!.append(method[index]!.getReturnType()!.getName());
     
@@ -97,6 +94,7 @@ stringBuffer!.append(lineBreak);
                         return stringBuffer!.toString();;
     
 }
+
 
 private constructor (){
 

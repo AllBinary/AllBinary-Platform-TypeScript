@@ -88,9 +88,10 @@ export class GenericInputAutomationWorker extends AbstractInputAutomationWorker 
 
     private lastFrame: Long = new Long( -1);
 
-    private frame: Long
+    private frame: Long;
 
-    private genericProfile: GenericProfile
+    private genericProfile: GenericProfile;
+
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfile: GenericProfile, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
             super(inputAutomationActionInterface);
                     
@@ -110,24 +111,20 @@ this.setMotionRectanglesWorker(new MotionRectanglesWorker(motionRectangleConstra
 this.setGenericProfile(genericProfile);
     
 
-    var vector: Vector = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;
-;
+    var vector: Vector = this.getGenericProfile()!.getGenericProfileDataWorkerTypeVector()!;;
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
-;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
     
 this.logUtil!.putF("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR);
     
@@ -162,12 +159,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RES
 this.waitForDataWorkers();
     
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
-;
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;;
     
 
-    var keyArray: any[] = cacheInterface!.keySet()!.()!;
-;
+    var keyArray: any[] = cacheInterface!.keySet()!.()!;;
     
 
                         if(keyArray!.length > 0)
@@ -184,49 +179,40 @@ this.setFrame(keyArray[keyArray!.length -1]! as Long);
                                     this.logUtil!.putF("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var hashMap: HashMap<any, any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;;
     
 
-    var set: Set = hashMap!.keys()!;
-;
+    var set: Set = hashMap!.keys()!;;
     
 this.logUtil!.putF("Processing " +set.size() +"Actions", this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var actionNameArray: any[] = set.toArray()!;
-;
+    var actionNameArray: any[] = set.toArray()!;;
     
 
     var size: number = actionNameArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var actionNameString: string = actionNameArray[index]! as string;
-;
+    var actionNameString: string = actionNameArray[index]! as string;;
     
 this.logUtil!.putF("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;
-;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;;
     
 
-    var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;
-;
+    var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;;
     
 
-    var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;
-;
+    var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;;
     
 CaptureWorkerUtil.processProfileActionConditions(vector, getFrame());
     

@@ -61,8 +61,7 @@ export class ProfileActionScriptOutputFactory
 
     var profileActionScriptOutputInterface: ProfileActionScriptOutputInterface = 
                 null
-            ;
-;
+            ;;
     
 
                         if(DomSearchHelper.getNodeNoThrow(ImageActionScriptOutputData.NAME, node.getChildNodes()) != 
@@ -91,6 +90,7 @@ export class ProfileActionScriptOutputFactory
                         return profileActionScriptOutputInterface;
     
 }
+
 
 private constructor (){
 

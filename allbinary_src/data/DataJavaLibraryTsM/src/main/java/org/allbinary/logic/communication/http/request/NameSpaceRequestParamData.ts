@@ -57,6 +57,7 @@ export class NameSpaceRequestParamData
     public static readonly PROPERTIESSEPARATOR: string = "_PROPDOT_";
 
     public static readonly DOCUMENT: string = "NAMESPACE_REQUESTDATA_DOCUMENT";
+
 public constructor (){
 
             super();

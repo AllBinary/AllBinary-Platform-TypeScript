@@ -62,7 +62,8 @@ export class ConstrainedMotionRectangles extends MotionRectangles {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface
+    private motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface;
+
 public constructor (motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, motionRectangles: MotionRectangles){
             super(NAME, motionRectangles!.getImageComparisonResult());
                     
@@ -80,44 +81,35 @@ this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
 this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints");
     
 
-    var bufferedImageArray: BufferedImage[] = motionRectangles!.getImageComparisonResult()!.getBufferedImages()!;
-;
+    var bufferedImageArray: BufferedImage[] = motionRectangles!.getImageComparisonResult()!.getBufferedImages()!;;
     
 
-    var bufferedImage: BufferedImage = bufferedImageArray[1]!;
-;
+    var bufferedImage: BufferedImage = bufferedImageArray[1]!;;
     
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 
-    var vector2: Vector = motionRectangles!.getVector()!;
-;
+    var vector2: Vector = motionRectangles!.getVector()!;;
     
 
-    var size: number = vector2.length!;
-;
+    var size: number = vector2.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector2.get(index) as MotionRectangle;
-;
+    var motionRectangle: MotionRectangle = vector2.get(index) as MotionRectangle;;
     
 
-    var rectangle: Rectangle = motionRectangle!.getRectangle()!;
-;
+    var rectangle: Rectangle = motionRectangle!.getRectangle()!;;
     
 
-    var isTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isTooSmall(rectangle)!;
-;
+    var isTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isTooSmall(rectangle)!;;
     
 
                         if(isTooSmall)
@@ -131,8 +123,7 @@ index < size; index++)
                                     }
                                 
 
-    var isAreaTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isAreaTooSmall(rectangle)!;
-;
+    var isAreaTooSmall: boolean = this.getMotionRectangleConstraintsInterface()!.isAreaTooSmall(rectangle)!;;
     
 
                         if(isAreaTooSmall)
@@ -146,8 +137,7 @@ index < size; index++)
                                     }
                                 
 
-    var isTooBig: boolean = this.getMotionRectangleConstraintsInterface()!.isTooBig(rectangle)!;
-;
+    var isTooBig: boolean = this.getMotionRectangleConstraintsInterface()!.isTooBig(rectangle)!;;
     
 
                         if(isTooBig)
@@ -161,8 +151,7 @@ index < size; index++)
                                     }
                                 
 
-    var isValid: boolean = this.getMotionRectangleConstraintsInterface()!.isValid(this.getImageComparisonResult()!.getFrameTwo(), bufferedImage, motionRectangle!.getRectangle())!;
-;
+    var isValid: boolean = this.getMotionRectangleConstraintsInterface()!.isValid(this.getImageComparisonResult()!.getFrameTwo(), bufferedImage, motionRectangle!.getRectangle())!;;
     
 
                         if(!isValid)

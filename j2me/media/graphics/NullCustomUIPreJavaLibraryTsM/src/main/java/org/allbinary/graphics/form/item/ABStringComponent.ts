@@ -47,6 +47,7 @@ export class ABStringComponent
     
 }
 
+
 public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();

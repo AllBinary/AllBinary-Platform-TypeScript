@@ -70,7 +70,8 @@ class MakeToast
          implements Runnable {
         
 
-    readonly string: string
+    readonly string: string;
+
 public constructor (string: string){
 
             super();
@@ -81,8 +82,7 @@ public constructor (string: string){
 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -93,8 +93,7 @@ public constructor (string: string){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     

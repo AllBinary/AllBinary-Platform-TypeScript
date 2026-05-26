@@ -60,7 +60,8 @@ export class GameCanvasPauseRunnable extends GameRunnable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly allBinaryGameCanvas: AllBinaryGameCanvas
+    private readonly allBinaryGameCanvas: AllBinaryGameCanvas;
+
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -83,12 +84,10 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
                                     
         try {
             
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;
-;
+    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
     
 
                         if(isOpenGL)
@@ -104,8 +103,7 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     

@@ -72,7 +72,8 @@ export class CssStyleValidation extends Validation implements DomNodeInterface {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    cssStyleElementVector: Vector
+    cssStyleElementVector: Vector;
+
 public constructor (){
 
             super();
@@ -80,12 +81,14 @@ public constructor (){
     
 }
 
+
 public constructor (document: Document){
 
             super();
         this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(document);
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -99,8 +102,7 @@ public constructor (hashMap: HashMap<any, any>){
 
         try {
             
-    var isValid: Boolean = Boolean.TRUE;
-;
+    var isValid: Boolean = Boolean.TRUE;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -112,20 +114,17 @@ public constructor (hashMap: HashMap<any, any>){
                                     }
                                 
 
-    var size: number = this.cssStyleElementVector!.length!;
-;
+    var size: number = this.cssStyleElementVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i) as ValidationInterface;
-;
+    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i) as ValidationInterface;;
     
 
                         if(!styleValidationInterface!.isValid().valueOf())
@@ -181,8 +180,7 @@ i < size; i++)
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
 
@@ -238,30 +236,25 @@ i < size; i++)
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;;
     
 
-    var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;
-;
+    var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;;
     
 node.appendChild(styleNode);
     
 
-    var size: number = this.cssStyleElementVector!.length!;
-;
+    var size: number = this.cssStyleElementVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i) as DomNodeInterface;
-;
+    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i) as DomNodeInterface;;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));
     

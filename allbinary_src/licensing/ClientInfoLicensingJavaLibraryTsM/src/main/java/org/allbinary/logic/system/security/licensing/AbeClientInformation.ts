@@ -64,6 +64,7 @@ export class AbeClientInformation extends ClientInformation {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (name: string, version: string, specialName: string, shortName: string){
             super(name, version, specialName, shortName);
                     
@@ -79,24 +80,21 @@ public constructor (name: string, version: string, specialName: string, shortNam
             this.setOperatingSystemInterface(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance());
     
 
-    var licenseInitInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;
-;
+    var licenseInitInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;;
     
 this.setLicenseId(licenseInitInfo!.getLicenseId());
     
 this.setLicenseServers(licenseInitInfo!.getServerList());
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(this.getLicenseId()))
                         
                                     {
                                     
-    var NONE: string = "No License Id";
-;
+    var NONE: string = "No License Id";;
     
 this.setLicenseId(NONE);
     
@@ -104,8 +102,7 @@ this.setLicenseId(NONE);
                                     }
                                 
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.put(new StringMaker().append("Special Name: ")!.append(this.getSpecialName())!.toString(), this, commonStrings!.CONSTRUCTOR);
     
@@ -114,12 +111,10 @@ PreLogUtil.put(new StringMaker().append("Special Name: ")!.append(this.getSpecia
 } catch(e) 
             {
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     

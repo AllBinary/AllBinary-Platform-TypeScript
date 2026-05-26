@@ -71,6 +71,7 @@ export class MyCommandsFactory
     public readonly PAUSE_COMMAND: Command = new Command("Pause", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 0);
 
     public readonly RESUME_COMMAND: Command = new Command("Resume", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 0);
+
 protected constructor (){
 
             super();

@@ -109,8 +109,7 @@ export class UserEmailEventNameData
 
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString) as UserEmailEventNameData;
-;
+    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString) as UserEmailEventNameData;;
     
 
                         if(userEmailEventNameData == 
@@ -139,9 +138,10 @@ export class UserEmailEventNameData
 }
 
 
-    private eventNameId: number= 0
+    private eventNameId: number= 0;
 
-    private eventHandlerName: string
+    private eventHandlerName: string;
+
 public constructor (eventHandlerName: string){
 
             super();

@@ -61,6 +61,7 @@ export class ColorAttributePointerOpenGLProcessor extends ObjectThreedOpenGLProc
     
 }
 
+
 public constructor (){
 
             super();

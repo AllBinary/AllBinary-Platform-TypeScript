@@ -44,8 +44,7 @@ export class TimeTypeTest
 
     static millisForHourLocal(hour: number): number{
 
-    var cal: Calendar = Calendar.getInstance()!;
-;
+    var cal: Calendar = Calendar.getInstance()!;;
     
 cal.set(Calendar.HOUR_OF_DAY, hour);
     
@@ -70,7 +69,8 @@ static TestableTimeTypeUtil = class extends TimeTypeUtil {
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
 
-    private readonly hour: number
+    private readonly hour: number;
+
  constructor (hour: number){
 
             super();
@@ -115,14 +115,12 @@ static TestableTimeTypeUtil = class extends TimeTypeUtil {
 
     getNightOrDay_returns_expected_label(){
 
-    var nightUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(0);
-;
+    var nightUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(0);;
     
 Assertions.assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay());
     
 
-    var dayUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(12);
-;
+    var dayUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(12);;
     
 Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
     
@@ -131,8 +129,7 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
 
     getHourOfDay_long_converts_epoch_to_local_hour(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();
-;
+    var util: TimeTypeUtil = new TimeTypeUtil();;
     
 
                     //Otherwise - statement - ForEachStmt
@@ -142,8 +139,7 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
 
     isNight_long_expected_ranges(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();
-;
+    var util: TimeTypeUtil = new TimeTypeUtil();;
     
 
                     //Otherwise - statement - ForEachStmt
@@ -156,16 +152,13 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
 
     getNightOrDay_long_consistency(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();
-;
+    var util: TimeTypeUtil = new TimeTypeUtil();;
     
 
-    var nightMillis: number = TimeTypeTest.millisForHourLocal(0)!;
-;
+    var nightMillis: number = TimeTypeTest.millisForHourLocal(0)!;;
     
 
-    var dayMillis: number = TimeTypeTest.millisForHourLocal(12)!;
-;
+    var dayMillis: number = TimeTypeTest.millisForHourLocal(12)!;;
     
 Assertions.assertEquals(util.NIGHT, util.getNightOrDay(nightMillis));
     
@@ -176,8 +169,7 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis));
 
     boundaries_day_for_long_based_api(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();
-;
+    var util: TimeTypeUtil = new TimeTypeUtil();;
     
 
                     //Otherwise - statement - ForEachStmt
@@ -187,8 +179,7 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis));
 
     constants_accessible_and_stable(){
 
-    var util: TimeTypeUtil = new TimeTypeUtil();
-;
+    var util: TimeTypeUtil = new TimeTypeUtil();;
     
 Assertions.assertEquals("Night", util.NIGHT);
     
@@ -199,12 +190,10 @@ Assertions.assertEquals("Day", util.DAY);
 
     getInstance_returns_same_singleton(){
 
-    var a: TimeTypeUtil = TimeTypeUtil.getInstance()!;
-;
+    var a: TimeTypeUtil = TimeTypeUtil.getInstance()!;;
     
 
-    var b: TimeTypeUtil = TimeTypeUtil.getInstance()!;
-;
+    var b: TimeTypeUtil = TimeTypeUtil.getInstance()!;;
     
 Assertions.assertSame(a, b);
     

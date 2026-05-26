@@ -73,6 +73,7 @@ export class ImageJ2MEScaleUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -83,8 +84,7 @@ private constructor (){
             
     public scaleArray(images: Image[], width: number, height: number): Image[]{
 
-    var scaledImages: Image[] = new Array(images.length);
-;
+    var scaledImages: Image[] = new Array(images.length);;
     
 
 
@@ -92,8 +92,7 @@ private constructor (){
 
                         for (
     var index: number = images.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 scaledImages[index]= this.scale(images[index]!, width, height);
     
@@ -114,16 +113,14 @@ scaledImages[index]= this.scale(images[index]!, width, height);
 
     var originalPlayNImage: playn.core.Image = 
                 null
-            ;
-;
+            ;;
     
 
                         if(image.isMutable())
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;
-;
+    var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -132,8 +129,7 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;
-;
+    var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;;
     
 originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
@@ -141,20 +137,16 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
                         }
                             
 
-    var scaledImage: Image = Image.createImage(width, height)!;
-;
+    var scaledImage: Image = Image.createImage(width, height)!;;
     
 
-    var htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;
-;
+    var htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
-;
+    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;;
     
 
-    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-;
+    var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;;
     
 canvasSurface!.drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());
     

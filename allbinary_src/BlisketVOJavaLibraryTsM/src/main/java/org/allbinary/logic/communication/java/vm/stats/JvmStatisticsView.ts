@@ -57,6 +57,7 @@ import { JvmStatisticsData } from './JvmStatisticsData.js';
 
 export class JvmStatisticsView extends JvmStatisticsMapping implements DomNodeInterface {
         
+
 public constructor (){
             super();
                     
@@ -70,12 +71,10 @@ public constructor (){
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, JvmStatisticsData.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, JvmStatisticsData.NAME, hashMap)!;;
     
 
 

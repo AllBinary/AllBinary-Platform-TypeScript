@@ -69,7 +69,8 @@ export class CategoryTag extends TableTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private xsl: string
+    private xsl: string;
+
 public constructor (){
 
             super();
@@ -92,22 +93,18 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = new CategoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new CategoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("viewCategory", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -130,8 +127,7 @@ this.xsl= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to view a Category";
-;
+    var error: string = "Failed to view a Category";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -159,22 +155,18 @@ this.xsl= value;
 
         try {
             
-    var anyType: any = new CategoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-;
+    var anyType: any = new CategoryRequestHelperFactory().getInstance(this.getPropertiesHashMap(), this.pageContext)!;;
     
 
-    var helperClass: Function = anyType!.constructor!;
-;
+    var helperClass: Function = anyType!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod("viewCategories", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -197,8 +189,7 @@ this.xsl= value;
 /* catch(e) 
             {
 
-    var error: string = "Failed to view a Categories";
-;
+    var error: string = "Failed to view a Categories";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -242,8 +233,7 @@ this.xsl= value;
                         
                                     {
                                     
-    var output: string = this.viewCategory()!;
-;
+    var output: string = this.viewCategory()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))
@@ -262,8 +252,7 @@ this.xsl= value;
                         
                                     {
                                     
-    var output: string = this.viewCategories()!;
-;
+    var output: string = this.viewCategories()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGEXTRAOUTPUT))

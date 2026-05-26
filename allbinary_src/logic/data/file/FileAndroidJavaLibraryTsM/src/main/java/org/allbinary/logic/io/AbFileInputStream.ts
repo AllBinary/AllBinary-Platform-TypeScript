@@ -54,7 +54,8 @@ import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
 export class AbFileInputStream extends InputStream {
         
 
-    private fileInputStream: FileInputStream
+    private fileInputStream: FileInputStream;
+
 public constructor (fileInputStream: FileInputStream){
 
             super();

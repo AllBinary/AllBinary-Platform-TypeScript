@@ -75,33 +75,34 @@ export class BasicGroupItemsRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    private id: string
+    private id: string;
 
-    private itemOne: string
+    private itemOne: string;
 
-    private itemTwo: string
+    private itemTwo: string;
 
-    private itemThree: string
+    private itemThree: string;
 
-    private itemFour: string
+    private itemFour: string;
 
-    private itemFive: string
+    private itemFive: string;
 
-    private itemSix: string
+    private itemSix: string;
 
-    private itemSeven: string
+    private itemSeven: string;
 
-    private itemEight: string
+    private itemEight: string;
 
-    private itemNine: string
+    private itemNine: string;
 
-    private itemTen: string
+    private itemTen: string;
 
-    private timeEntered: string
+    private timeEntered: string;
 
-    private lastModified: string
+    private lastModified: string;
+
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
@@ -144,8 +145,7 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 
     getHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 values.put(BasicItemData.ID, id);
     
@@ -170,12 +170,10 @@ values.put(BasicGroupItemData.ITEM_NINE, this.itemNine);
 values.put(BasicGroupItemData.ITEM_TEN, this.itemTen);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -192,16 +190,13 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
         try {
             
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.id);
     
@@ -232,8 +227,7 @@ values.add(time);
 BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +this.id +" into items table";
-;
+    var success: string = "Successfully inserted " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -255,8 +249,7 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +this.id +" into items table";
-;
+    var error: string = "Failed to insert " +this.id +" into items table";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -284,8 +277,7 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
             BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.delete(this.id);
     
 
-    var success: string = "Successfully deleted";
-;
+    var success: string = "Successfully deleted";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -307,8 +299,7 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
 } catch(e) 
             {
 
-    var error: string = "Failed to delete";
-;
+    var error: string = "Failed to delete";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -334,12 +325,10 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
 
         try {
             
-    var success: string = "Update Pricing Successful";
-;
+    var success: string = "Update Pricing Successful";;
     
 
-    var values: HashMap<any, any> = this.getHashMap()!;
-;
+    var values: HashMap<any, any> = this.getHashMap()!;;
     
 BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.update(values);
     
@@ -363,8 +352,7 @@ BasicGroupItemsEntityFactory.getInstance()!.getBasicGroupItemsEntityInstance()!.
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +this.id;
-;
+    var error: string = "Failed to update: " +this.id;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

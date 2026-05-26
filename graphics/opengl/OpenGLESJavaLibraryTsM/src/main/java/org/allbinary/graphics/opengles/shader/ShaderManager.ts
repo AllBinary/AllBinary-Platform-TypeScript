@@ -70,9 +70,10 @@ export class ShaderManager
 
     readonly __VERSION__: string = "__VERSION__";
 
-    public readonly GL_VERTEX_SHADER: number
+    public readonly GL_VERTEX_SHADER: number;
 
-    public readonly GL_FRAGMENT_SHADER: number
+    public readonly GL_FRAGMENT_SHADER: number;
+
 public constructor (GL_VERTEX_SHADER: number, GL_FRAGMENT_SHADER: number){
 
             super();

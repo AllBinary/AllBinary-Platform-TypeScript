@@ -61,7 +61,8 @@ export class AbstractArrayListPool
 
     buffers: BasicArrayList = new BasicArrayListD();
 
-    cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface
+    cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface;
+
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
 
             super();
@@ -108,8 +109,7 @@ this.buffers.add(cacheableInterface);
 
 
                         for (
-    var index: number = 0;
-index < cacheableInterfaces!.length; index++)
+    var index: number = 0;index < cacheableInterfaces!.length; index++)
         {
 this.buffers.add(cacheableInterfaces[index]!);
     

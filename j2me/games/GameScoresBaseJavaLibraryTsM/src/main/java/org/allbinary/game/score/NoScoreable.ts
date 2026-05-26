@@ -56,6 +56,7 @@ export class NoScoreable extends Scoreable {
     
 }
 
+
 private constructor (){
             super(0);
                     

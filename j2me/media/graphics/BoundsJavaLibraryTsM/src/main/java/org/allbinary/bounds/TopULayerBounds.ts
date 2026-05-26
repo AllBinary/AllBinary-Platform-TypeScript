@@ -47,6 +47,7 @@ import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
 
 export class TopULayerBounds extends LayerBounds {
         
+
 public constructor (rectangle: Rectangle){
             super(rectangle);
                     

@@ -52,6 +52,7 @@ export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
 
 
     private readonly gluUtils: OpenGLGLUUtils = OpenGLGLUUtils.getInstance()!;
+
 private constructor (){
 
             super();

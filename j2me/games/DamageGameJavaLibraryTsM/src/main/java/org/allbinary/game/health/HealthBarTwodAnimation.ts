@@ -50,6 +50,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 
 export class HealthBarTwodAnimation extends HealthBarAnimation {
         
+
 public constructor (layerInterface: AllBinaryLayer, location: number){
             super(layerInterface, location);
                     
@@ -61,8 +62,7 @@ public constructor (layerInterface: AllBinaryLayer, location: number){
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var ax: number = this.allbinaryLayer!.getViewPosition()!.getX()!;
-;
+    var ax: number = this.allbinaryLayer!.getViewPosition()!.getX()!;;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.colorP);
     

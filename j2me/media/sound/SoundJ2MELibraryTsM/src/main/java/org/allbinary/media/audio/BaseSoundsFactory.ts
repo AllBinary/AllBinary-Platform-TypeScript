@@ -50,7 +50,7 @@ export class BaseSoundsFactory
          implements SoundsFactoryInterface {
         
 
-    private initialized: boolean= false
+    private initialized: boolean= false;
 
     public init(){
 }

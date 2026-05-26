@@ -94,28 +94,22 @@ export class AuthenticationHelperUtil
                                     }
                                 
 
-    var endIndex: number = HttpRequestUtil.getInstance()!.getLastSeparatorIndex(filePath)!;
-;
+    var endIndex: number = HttpRequestUtil.getInstance()!.getLastSeparatorIndex(filePath)!;;
     
 
-    var fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex));
-;
+    var fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex));;
     
 
-    var downloadFilePermissions: HttpFilePermissions = new HttpFilePermissions(fullPath);
-;
+    var downloadFilePermissions: HttpFilePermissions = new HttpFilePermissions(fullPath);;
     
 
-    var userRoles: Vector = downloadFilePermissions!.getUserRoles()!;
-;
+    var userRoles: Vector = downloadFilePermissions!.getUserRoles()!;;
     
 
-    var userRole: UserRole = authenticationHelper!.getRole()!;
-;
+    var userRole: UserRole = authenticationHelper!.getRole()!;;
     
 
-    var basicUserRole: BasicUserRole = userRole!.getBasicUserRole()!;
-;
+    var basicUserRole: BasicUserRole = userRole!.getBasicUserRole()!;;
     
 
                         if(userRoles!.contains(basicUserRole))

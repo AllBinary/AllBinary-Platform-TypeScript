@@ -54,12 +54,10 @@ export class InterfaceUtil
 
     public static viewAll(myClass: Function, lineBreak: string): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var interfaces: Function[] = myClass!.getInterfaces()!;
-;
+    var interfaces: Function[] = myClass!.getInterfaces()!;;
     
 stringBuffer!.append(lineBreak);
     
@@ -72,8 +70,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;
-index < interfaces.length; index++)
+    var index: number = 0;index < interfaces.length; index++)
         {
 stringBuffer!.append("Interface: ");
     
@@ -106,8 +103,7 @@ stringBuffer!.append(lineBreak);
 
 
                         for (
-    var index: number = 0;
-index < interfaces.length; index++)
+    var index: number = 0;index < interfaces.length; index++)
         {
 
                         if(interfaces[index]!.getName()!.indexOf(interfaceName) >= 0)
@@ -138,16 +134,14 @@ index < interfaces.length; index++)
 
     public static isImplemented(clazz: Function, anyType: any = {}): boolean{
 
-    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
-;
+    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < classes.length; index++)
+    var index: number = 0;index < classes.length; index++)
         {
 
                         if(clazz.toString()!.compareTo(classes[index]!.getName()) == 0)
@@ -170,16 +164,14 @@ index < classes.length; index++)
 
     public static isImplemented(className: string, anyType: any = {}): boolean{
 
-    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
-;
+    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < classes.length; index++)
+    var index: number = 0;index < classes.length; index++)
         {
 
                         if(classes[index]!.getName()!.indexOf(className) == 0)
@@ -207,12 +199,10 @@ index < classes.length; index++)
 
     public static isImplementedView(clazz: Function, anyType: any = {}): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
-;
+    var classes: Function[] = anyType!.constructor.name.getInterfaces()!;;
     
 stringBuffer!.append("isImplementedView: \n");
     
@@ -221,8 +211,7 @@ stringBuffer!.append("isImplementedView: \n");
 
 
                         for (
-    var index: number = 0;
-index < classes.length; index++)
+    var index: number = 0;index < classes.length; index++)
         {
 stringBuffer!.append(clazz.toString()!);
     
@@ -243,6 +232,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
                         return stringBuffer!.toString();;
     
 }
+
 
 private constructor (){
 

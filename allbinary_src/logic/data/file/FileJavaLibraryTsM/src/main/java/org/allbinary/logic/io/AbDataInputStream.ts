@@ -47,6 +47,7 @@ import { InputStream } from '../../../../java/io/InputStream.js';
         
 export class AbDataInputStream extends DataInputStream {
         
+
 public constructor (out: InputStream){
             super(out);
                     

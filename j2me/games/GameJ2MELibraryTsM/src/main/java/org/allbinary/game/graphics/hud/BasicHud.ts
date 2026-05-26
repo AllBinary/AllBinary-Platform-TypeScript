@@ -86,29 +86,30 @@ export class BasicHud
 
     readonly canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
 
-    private location: number= 0
+    private location: number= 0;
 
-    private direction: number= 0
+    private direction: number= 0;
 
-    private bufferZone: number= 0
+    private bufferZone: number= 0;
 
-    private bufferZoneY: number= 0
+    private bufferZoneY: number= 0;
 
-    private maxWidth: number= 0
+    private maxWidth: number= 0;
 
-    private maxHeight: number= 0
+    private maxHeight: number= 0;
 
     private hudGraphicsPosition: HudGraphicsPosition = HudGraphicsPosition.NULL_HUD_GRAPHICS_POSITION;
 
-    private x: number= 0
+    private x: number= 0;
 
-    private y: number= 0
+    private y: number= 0;
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
-    private color: number
+    private color: number;
+
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
 
             super();
@@ -155,20 +156,16 @@ this.color= basicColor!.intValue();
             
     getHudGraphicsPositionWH(width: number, height: number): HudGraphicsPosition{
 
-    var x: number = 0;
-;
+    var x: number = 0;;
     
 
-    var y: number = 0;
-;
+    var y: number = 0;;
     
 
-    var anchor: number = 0;
-;
+    var anchor: number = 0;;
     
 
-    var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
-;
+    var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;;
     
 
                         if(basicHudFactory!.BOTTOMLEFT == this.getLocation())
@@ -280,8 +277,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
         try {
             
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.hudGraphicsPosition= this.getHudGraphicsPositionWH(displayInfo!.getLastWidth(), displayInfo!.getLastHeight());
     
@@ -294,8 +290,7 @@ this.setY(this.hudGraphicsPosition!.getPoint()!.getY());
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
@@ -413,8 +408,7 @@ graphics.drawString(string2, this.x +offset2, this.getY(), this.hudGraphicsPosit
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY()!;
-;
+    var y: number = this.getY()!;;
     
 graphics.drawChars(charArray, offset, len, this.x +xOffset, y, this.hudGraphicsPosition!.getAnchor());
     
@@ -427,8 +421,7 @@ graphics.drawChars(charArray2, offset2, len2, this.x +xOffset2, y, this.hudGraph
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY()!;
-;
+    var y: number = this.getY()!;;
     
 graphics.drawChars(charArray, offset, len, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
@@ -441,22 +434,20 @@ graphics.drawChars(charArray2, offset2, len2, this.x +xOffset, y, this.hudGraphi
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY()!;
-;
+    var y: number = this.getY()!;;
     
 graphics.drawChars(charArray, offset, len, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
 }
 
 
-    offsetY: number= 0
+    offsetY: number= 0;
 
     public paint(graphics: Graphics, string: string){
 this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
-    var y: number = this.getY() +this.offsetY;
-;
+    var y: number = this.getY() +this.offsetY;;
     
 graphics.drawString(string, this.x, y, this.hudGraphicsPosition!.getAnchor());
     

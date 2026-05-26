@@ -58,20 +58,17 @@ export class RaceTracksPathPrinter
 
     printPath(list: BasicArrayList){
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.get(index)!;
-;
+    var anyType: any = list.get(index)!;;
     
 PreLogUtil.put(new StringMaker().append("pathList.add(cellPositionFactory.getInstance")!.append(anyType!.toString())!.append(");")!.toString(), this, "printPath");
     
@@ -82,16 +79,14 @@ PreLogUtil.put(new StringMaker().append("pathList.add(cellPositionFactory.getIns
 
     printPaths(list: BasicArrayList){
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 console.log(new StringMaker().append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
     

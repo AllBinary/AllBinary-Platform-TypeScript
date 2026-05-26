@@ -50,20 +50,17 @@ export class StringValidationJSEUtil
 
     public static isBlank(string: string): boolean{
 
-    var len: number = string.length!;
-;
+    var len: number = string.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < len; i++)
+    var i: number = 0;i < len; i++)
         {
 
-    var c: string = string[i]!;
-;
+    var c: string = string[i]!;;
     
 
                         if(Character.isWhitespace(c) == false)
@@ -87,6 +84,7 @@ i < len; i++)
                         return true;
     
 }
+
 
 private constructor (){
 

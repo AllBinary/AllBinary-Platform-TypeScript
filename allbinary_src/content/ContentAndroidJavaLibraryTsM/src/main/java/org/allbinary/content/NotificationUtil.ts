@@ -87,13 +87,13 @@ export class NotificationUtil
 
     private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager;
 
-    private readonly notificationBuilder: NotificationBuilder
+    private readonly notificationBuilder: NotificationBuilder;
+
 private constructor (){
 
             super();
         
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
-;
+    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
                         if(SDK_VERSION > 22)
@@ -115,24 +115,19 @@ private constructor (){
 
     public notify(command: Command, resource: string, message: string){
 
-    var context: Context = ResourceUtil.getInstance()!.getContext()!;
-;
+    var context: Context = ResourceUtil.getInstance()!.getContext()!;;
     
 
-    var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;
-;
+    var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;;
     
 
-    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
-;
+    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;;
     
 
-    var FLAG_IMMUTABLE: number = 1<<26;
-;
+    var FLAG_IMMUTABLE: number = 1<<26;;
     
 
-    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
-;
+    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
     
 
     var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, SDK_VERSION > 22
@@ -142,8 +137,7 @@ private constructor (){
 
                             0;
 
-    )!;
-;
+    )!;;
     
 
                         if(this.notificationBuilder == 
@@ -152,8 +146,7 @@ private constructor (){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED);
     

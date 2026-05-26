@@ -47,6 +47,7 @@ export class GenericProfileActionScriptConditionData
         
 
     public static NAME: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_IF_NAME";
+
 private constructor (){
 
             super();

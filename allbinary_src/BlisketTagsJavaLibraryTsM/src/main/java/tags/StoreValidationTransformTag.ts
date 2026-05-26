@@ -57,7 +57,8 @@ export class StoreValidationTransformTag extends ValidationTransformTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private storeName: string
+    private storeName: string;
+
 public constructor (){
             super();
                     

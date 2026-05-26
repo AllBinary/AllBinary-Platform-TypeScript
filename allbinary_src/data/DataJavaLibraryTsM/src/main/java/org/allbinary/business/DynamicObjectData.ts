@@ -47,6 +47,7 @@ export class DynamicObjectData
         
 
     public static readonly NAME: string = "DYNAMICCOMPONENT_NAME";
+
 private constructor (){
 
             super();

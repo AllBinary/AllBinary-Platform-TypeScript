@@ -99,29 +99,30 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
 
     private static readonly READYFOREXPLOSION: string = "ReadyForExplosion: ";
 
-    private groupInterface: Group[]
+    private groupInterface: Group[];
 
-    private readyForExplosion: boolean= false
+    private readyForExplosion: boolean= false;
 
-    private initWidth: number
+    private initWidth: number;
 
-    private initHeight: number
+    private initHeight: number;
 
-    private initX: number= 0
+    private initX: number= 0;
 
-    private initY: number= 0
+    private initY: number= 0;
 
-    private initZ: number= 0
+    private initZ: number= 0;
 
     partInterfaceArrayP: PartInterface[] = PartInterfaceUtil.getZeroArray()!;
 
-    private pickupBehavior: PickupBehavior
+    private pickupBehavior: PickupBehavior;
 
     public allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
 
     public isDraggable: boolean = false;
 
     public isDragged: boolean = false;
+
 public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(name, layerInfo, viewPosition, CollidableNeverCollideBehaviorFactory.getInstance());
                     
@@ -444,33 +445,28 @@ this.partInterfaceArrayP= partInterfaceArray;
 
     public toStringAppend(stringBuffer: StringMaker){
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-;
+    var positionStrings: PositionStrings = PositionStrings.getInstance()!;;
     
 super.toStringAppend(stringBuffer);
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
 
-    var groupInterfaceArray: Group[] = this.getGroupInterface()!;
-;
+    var groupInterfaceArray: Group[] = this.getGroupInterface()!;;
     
 
     var size: number = groupInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 stringBuffer!.append(groupInterfaceArray[index]!.toString());
     
@@ -479,8 +475,7 @@ stringBuffer!.append(commonSeps!.COMMA);
 }
 
 
-    var pickupBehavior: PickupBehavior = this.getPickupBehavior()!;
-;
+    var pickupBehavior: PickupBehavior = this.getPickupBehavior()!;;
     
 
                         if(pickupBehavior != 
@@ -524,8 +519,7 @@ stringBuffer!.appendint(this.initZ);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 this.toStringAppend(stringBuffer);
     

@@ -74,11 +74,12 @@ export class NewPasswordEmail
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly abeClientInformation: AbeClientInformationInterface
+    private readonly abeClientInformation: AbeClientInformationInterface;
 
-    private userInterface: UserInterface
+    private userInterface: UserInterface;
 
-    private newPassword: string
+    private newPassword: string;
+
 public constructor (abeClientInformation: AbeClientInformationInterface, userInterface: UserInterface, newPassword: string){
 
             super();
@@ -116,24 +117,19 @@ this.notifyUser();
                                     }
                                 
 
-    var emailSubject: string = "New Password For User: " +this.userInterface!.getUserName();
-;
+    var emailSubject: string = "New Password For User: " +this.userInterface!.getUserName();;
     
 
-    var emailBody: string = "New Password: " +this.newPassword;
-;
+    var emailBody: string = "New Password: " +this.newPassword;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;
-;
+    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-;
+    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;
-;
+    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;;
     
 adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
     
@@ -170,24 +166,19 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
                                     }
                                 
 
-    var subject: string = "New Password";
-;
+    var subject: string = "New Password";;
     
 
-    var body: string = "New Password: " +this.newPassword;
-;
+    var body: string = "New Password: " +this.newPassword;;
     
 
-    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(subject, body) as BasicEmailInfo;
-;
+    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(subject, body) as BasicEmailInfo;;
     
 
-    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-;
+    var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);;
     
 
-    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;
-;
+    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;;
     
 userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
     

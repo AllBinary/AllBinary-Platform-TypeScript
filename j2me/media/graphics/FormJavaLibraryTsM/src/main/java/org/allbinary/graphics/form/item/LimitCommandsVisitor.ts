@@ -56,13 +56,13 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
 export class LimitCommandsVisitor extends Visitor {
         
 
-    private readonly isNotSmallDisplay: boolean
+    private readonly isNotSmallDisplay: boolean;
+
 public constructor (){
 
             super();
         
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT);
     
@@ -71,12 +71,10 @@ this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight
 
     public visit(anyType: any = {}): any{
 
-    var command: Command = anyType as Command;
-;
+    var command: Command = anyType as Command;;
     
 
-    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-;
+    var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;;
     
 
                         if(this.isNotSmallDisplay || command.getPriority() == 1 || command == GameCommandsFactory.getInstance()!.EXIT_COMMAND || command == GameCommandsFactory.getInstance()!.EXIT_WITHOUT_PROGRESS_COMMAND)

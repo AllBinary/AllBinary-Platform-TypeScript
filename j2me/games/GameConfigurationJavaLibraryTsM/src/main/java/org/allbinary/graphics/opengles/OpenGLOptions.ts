@@ -57,24 +57,21 @@ export class OpenGLOptions
 
     public init(){
 
-    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-;
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(openGLFeatureFactory!.OPENGL_OPTIONS))
                         
                                     {
                                     
-    var openGLMultipleList: BasicArrayList = new BasicArrayListD();
-;
+    var openGLMultipleList: BasicArrayList = new BasicArrayListD();;
     
 openGLMultipleList!.add(openGLFeatureFactory!.OPENGL);
     
 GameFeatureChoiceGroups.getMultipleInstance()!.add("OpenGL (Complete Restart)", openGLMultipleList);
     
 
-    var openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayListD();
-;
+    var openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayListD();;
     
 openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_AUTO_SELECT);
     
@@ -83,8 +80,7 @@ openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_MINIMUM);
 GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Version Selector", openGLVersionSelectorMultipleList);
     
 
-    var openGLImageColorMultipleList: BasicArrayList = new BasicArrayListD();
-;
+    var openGLImageColorMultipleList: BasicArrayList = new BasicArrayListD();;
     
 openGLImageColorMultipleList!.add(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
     

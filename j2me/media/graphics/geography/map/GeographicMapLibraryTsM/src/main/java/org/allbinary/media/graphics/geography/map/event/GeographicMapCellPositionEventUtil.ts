@@ -54,9 +54,10 @@ export class GeographicMapCellPositionEventUtil
          {
         
 
-    private readonly geographicMapCellPositionEvent: GeographicMapCellPositionEvent
+    private readonly geographicMapCellPositionEvent: GeographicMapCellPositionEvent;
 
     private readonly geographicMapCellPositionEventHandler: GeographicMapCellPositionEventHandler = GeographicMapCellPositionEventHandler.getInstance()!;
+
 public constructor (anyType: any = {}){
 
             super();

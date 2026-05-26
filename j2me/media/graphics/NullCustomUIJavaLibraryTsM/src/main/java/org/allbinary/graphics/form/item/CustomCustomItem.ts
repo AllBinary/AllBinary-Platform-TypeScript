@@ -32,6 +32,7 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 
 export class CustomCustomItem extends ABCustomItem {
         
+
 protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, backgroundBasicColor, foregroundBasicColor);
                     

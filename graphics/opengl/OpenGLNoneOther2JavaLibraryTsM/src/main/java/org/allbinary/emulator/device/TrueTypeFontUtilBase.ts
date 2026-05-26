@@ -45,6 +45,7 @@ export class TrueTypeFontUtilBase
             extends Object
          {
         
+
 public constructor (scale: number){
 
             super();

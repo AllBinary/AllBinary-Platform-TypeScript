@@ -60,7 +60,8 @@ export class StoreFrontInventoryStatisticsView
          implements DomNodeInterface {
         
 
-    private storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface
+    private storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface;
+
 public constructor (storeFrontInventoryStatisticsInterface: StoreFrontInventoryStatisticsInterface){
 
             super();
@@ -73,12 +74,10 @@ public constructor (storeFrontInventoryStatisticsInterface: StoreFrontInventoryS
             
     public toXmlNode(document: Document): Node{
 
-    var hashMap: HashMap<any, any> = this.storeFrontInventoryStatisticsInterface!.toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = this.storeFrontInventoryStatisticsInterface!.toHashMap()!;;
     
 
-    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontInventoryStatisticsData.getInstance()!.NAME, hashMap)!;
-;
+    var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontInventoryStatisticsData.getInstance()!.NAME, hashMap)!;;
     
 
 

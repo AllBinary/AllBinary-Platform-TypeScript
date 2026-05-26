@@ -70,11 +70,12 @@ export class OnDemandLoader
          {
         
 
-    private readonly onDemandResourcesFactory: OnDemandResourcesFactory
+    private readonly onDemandResourcesFactory: OnDemandResourcesFactory;
 
-    private readonly gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory: GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory
+    private readonly gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory: GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory;
 
-    private readonly resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory
+    private readonly resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory;
+
 public constructor (onDemandResourcesFactory: OnDemandResourcesFactory, gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory: GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory, resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory){
 
             super();
@@ -91,8 +92,7 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
             
     public init(imageCache: ImageCache, level: number, loadingString: string){
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(Features.getInstance()!.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
@@ -121,8 +121,7 @@ this.initAll(imageCache, loadingString);
                         
                                     {
                                     
-    var layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface = this.gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory!.getInstance(level)!;
-;
+    var layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface = this.gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory!.getInstance(level)!;;
     
 this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache, level, loadingString);
     
@@ -136,24 +135,20 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
             
     initAll(imageCache: ImageCache, loadingString: string){
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var portion: number = 120;
-;
+    var portion: number = 120;;
     
 
-    var onDemandResources: OnDemandResources
-;
+    var onDemandResources: OnDemandResources;;
     
 
 
 
 
                         for (
-    var onDemandIndex: number = this.onDemandResourcesFactory!.size()!;
---onDemandIndex >= 0; )
+    var onDemandIndex: number = this.onDemandResourcesFactory!.size()!;--onDemandIndex >= 0; )
         {
 onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
     
@@ -175,26 +170,21 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
             
     initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface, imageCache: ImageCache, level: number, loadingString: string){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var portion: number = 120;
-;
+    var portion: number = 120;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var onDemandArray: number[] = layerPlacementInterfaceBasicArrayListFactoryInterface!.getOnDemandResources()!;
-;
+    var onDemandArray: number[] = layerPlacementInterfaceBasicArrayListFactoryInterface!.getOnDemandResources()!;;
     
 PreLogUtil.put(new StringMaker().append(commonStrings!.START)!.appendint(onDemandArray!.length)!.toString(), this, "initLevel");
     
 
-    var onDemandResources: OnDemandResources
-;
+    var onDemandResources: OnDemandResources;;
     
 
 
@@ -202,8 +192,7 @@ PreLogUtil.put(new StringMaker().append(commonStrings!.START)!.appendint(onDeman
 
                         for (
     var onDemandIndex: number = onDemandArray!.length
-                ;
---onDemandIndex >= 0; )
+                ;--onDemandIndex >= 0; )
         {
 onDemandResources= this.onDemandResourcesFactory!.remove(onDemandArray[onDemandIndex]!);
     

@@ -46,6 +46,7 @@ import { StateControlledInterface } from '../../../../org/allbinary/graphics/dis
 
 export class StatePaintable extends Paintable implements StateControlledInterface {
         
+
 public constructor (){
 
             super();

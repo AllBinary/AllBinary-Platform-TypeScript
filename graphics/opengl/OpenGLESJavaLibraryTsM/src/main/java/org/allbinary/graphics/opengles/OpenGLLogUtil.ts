@@ -60,16 +60,14 @@ export class OpenGLLogUtil
 
     public logError(gl: GL10){
 
-    var error: number = gl.glGetError()!;
-;
+    var error: number = gl.glGetError()!;;
     
 
                         if(error != GL10.GL_NO_ERROR)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
     
@@ -82,8 +80,7 @@ stringBuffer!.appendint(error);
                                     stringBuffer!.append(this.MAX_TEXTURE);
     
 
-    var maxTextureSize: number[] = new Array(1);
-;
+    var maxTextureSize: number[] = new Array(1);;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
     
@@ -119,16 +116,14 @@ stringBuffer!.appendint(maxTextureSize[0]!);
 
     public logError(gl: GL10, image: Image){
 
-    var error: number = gl.glGetError()!;
-;
+    var error: number = gl.glGetError()!;;
     
 
                         if(error != GL10.GL_NO_ERROR)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
     
@@ -141,8 +136,7 @@ stringBuffer!.appendint(error);
                                     stringBuffer!.append(this.MAX_TEXTURE);
     
 
-    var maxTextureSize: number[] = new Array(1);
-;
+    var maxTextureSize: number[] = new Array(1);;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
     

@@ -71,12 +71,10 @@ export class ModDomHelper
             
     public static createTextNode(document: Document, name: string, text: string): Node{
 
-    var newValueNode: Node = document.createElement(name)!;
-;
+    var newValueNode: Node = document.createElement(name)!;;
     
 
-    var newValueTextNode: Node = document.createTextNode(text)!;
-;
+    var newValueTextNode: Node = document.createTextNode(text)!;;
     
 newValueNode!.appendChild(newValueTextNode);
     
@@ -129,8 +127,7 @@ newValueNode!.appendChild(newValueTextNode);
             
     public static createNameValueNodes(document: Document, elementName: string, nameText: string, valueText: string): Node{
 
-    var newNode: Node = document.createElement(elementName)!;
-;
+    var newNode: Node = document.createElement(elementName)!;;
     
 newNode!.appendChild(ModDomHelper.createNameNode(document, nameText));
     
@@ -149,8 +146,7 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
             
     public static createNameValueNodes(document: Document, elementNameAndNameText: string, valueText: string): Node{
 
-    var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, elementNameAndNameText, valueText)!;
-;
+    var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, elementNameAndNameText, valueText)!;;
     
 
 
@@ -165,8 +161,7 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
             
     public static createNameValueIndexNodes(document: Document, elementNameAndNameText: string, index: number, valueText: string): Node{
 
-    var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, valueText)!;
-;
+    var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, valueText)!;;
     
 newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
     
@@ -183,8 +178,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
             
     public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 
-    var node: Node = document.createElement(rootNode)!;
-;
+    var node: Node = document.createElement(rootNode)!;;
     
 
 
@@ -199,41 +193,33 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
             
     public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;
-;
+    var keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;
-;
+    var keyArray: any[] = keySet!.()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var objectKey: any = keyArray[i]!;
-;
+    var objectKey: any = keyArray[i]!;;
     
 
-    var name: string = objectKey as string;
-;
+    var name: string = objectKey as string;;
     
 
-    var anyType: any = hashMap!.get(objectKey);
-;
+    var anyType: any = hashMap!.get(objectKey);;
     
 
                         if(anyType == 
@@ -242,8 +228,7 @@ i < size; i++)
                         
                                     {
                                     
-    var value: string = stringUtil!.EMPTY_STRING;
-;
+    var value: string = stringUtil!.EMPTY_STRING;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -255,8 +240,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         
                                     {
                                     
-    var value: string = stringUtil!.getNonNull(anyType as string)!;
-;
+    var value: string = stringUtil!.getNonNull(anyType as string)!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -296,28 +280,23 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
             
     public static createNameValueNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var node: Node = document.createElement(rootNodeName)!;
-;
+    var node: Node = document.createElement(rootNodeName)!;;
     
 
-    var size: number = valueVector!.length!;
-;
+    var size: number = valueVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var value: string = stringUtil!.getNonNull(valueVector!.get(i) as string)!;
-;
+    var value: string = stringUtil!.getNonNull(valueVector!.get(i) as string)!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value));
     
@@ -336,28 +315,23 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, 
             
     public static createNameValueIndexNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var node: Node = document.createElement(rootNodeName)!;
-;
+    var node: Node = document.createElement(rootNodeName)!;;
     
 
-    var size: number = valueVector!.length!;
-;
+    var size: number = valueVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var value: string = stringUtil!.getNonNull(valueVector!.get(index) as string)!;
-;
+    var value: string = stringUtil!.getNonNull(valueVector!.get(index) as string)!;;
     
 node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, index, value));
     
@@ -376,8 +350,7 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
             
     public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 
-    var node: Node = document.createElement(rootNode)!;
-;
+    var node: Node = document.createElement(rootNode)!;;
     
 
 
@@ -392,41 +365,33 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
             
     public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var keySet: Set = hashMap!.keys()!;
-;
+    var keySet: Set = hashMap!.keys()!;;
     
 
-    var keyArray: any[] = keySet!.()!;
-;
+    var keyArray: any[] = keySet!.()!;;
     
 
     var size: number = keyArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var name: string = keyArray[i]! as string;
-;
+    var name: string = keyArray[i]! as string;;
     
 
-    var anyType: any = hashMap!.get(name);
-;
+    var anyType: any = hashMap!.get(name);;
     
 
-    var value: string = stringUtil!.getNonNull(anyType as string)!;
-;
+    var value: string = stringUtil!.getNonNull(anyType as string)!;;
     
 node.appendChild(ModDomHelper.createTextNode(document, name, value));
     
@@ -439,6 +404,7 @@ node.appendChild(ModDomHelper.createTextNode(document, name, value));
                         return node;
     
 }
+
 
 private constructor (){
 

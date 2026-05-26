@@ -68,47 +68,41 @@ export class StoreFrontInventoryStatistics
          implements StoreFrontInventoryStatisticsInterface {
         
 
-    private totalNumberOfItems: number= 0
+    private totalNumberOfItems: number= 0;
 
-    private totalInventorySaleValueMoney: Money
+    private totalInventorySaleValueMoney: Money;
+
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
         this.totalInventorySaleValueMoney= new Money();
     
 
-    var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-;
+    var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 
-    var itemVector: Vector = inventoryEntityInterface!.getItems(storeFrontInterface)!;
-;
+    var itemVector: Vector = inventoryEntityInterface!.getItems(storeFrontInterface)!;;
     
 
-    var size: number = itemVector!.length!;
-;
+    var size: number = itemVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;
-;
+    var itemInterface: ItemInterface = itemVector!.get(index) as ItemInterface;;
     
 
-    var numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.intValue()!;
-;
+    var numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.intValue()!;;
     
 this.totalNumberOfItems= this.totalNumberOfItems +numberInStock;
     
 
-    var itemPriceMoney: Money = itemInterface!.getPrice()!;
-;
+    var itemPriceMoney: Money = itemInterface!.getPrice()!;;
     
 itemPriceMoney!.multiply(numberInStock);
     
@@ -141,8 +135,7 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString());
     

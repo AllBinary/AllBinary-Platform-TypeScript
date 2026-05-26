@@ -55,6 +55,7 @@ export class ImageActionScriptOutputData
     public static TYPE: string = "TYPE_IMAGE_ACTION_OUTPUT_NAME";
 
     public static TYPES: string = "TYPES_IMAGE_ACTION_OUTPUT_NAME";
+
 private constructor (){
 
             super();

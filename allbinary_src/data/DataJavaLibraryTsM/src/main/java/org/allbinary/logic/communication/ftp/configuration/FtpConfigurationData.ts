@@ -55,6 +55,7 @@ export class FtpConfigurationData
     public static readonly USERNAME: string = "FTP_USERNAME";
 
     public static readonly PASSWORD: string = "FTP_PASSWORD";
+
 private constructor (){
 
             super();

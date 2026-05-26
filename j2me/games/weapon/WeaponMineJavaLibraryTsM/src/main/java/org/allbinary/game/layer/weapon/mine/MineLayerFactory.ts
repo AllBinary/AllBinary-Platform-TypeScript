@@ -55,7 +55,8 @@ export class MineLayerFactory
          implements AllBinaryLayerFactoryInterface {
         
 
-    private viewPositionFactoryInterface: ViewPositionFactoryInterface
+    private viewPositionFactoryInterface: ViewPositionFactoryInterface;
+
 public constructor (viewPositionFactoryInterface: ViewPositionFactoryInterface){
 
             super();

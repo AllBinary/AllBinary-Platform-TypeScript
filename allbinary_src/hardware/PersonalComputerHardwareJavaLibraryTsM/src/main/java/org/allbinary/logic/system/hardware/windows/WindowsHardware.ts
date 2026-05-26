@@ -86,35 +86,36 @@ export class WindowsHardware
          implements HardwareInterface {
         
 
-    private componentInterfaceVector: Vector
+    private componentInterfaceVector: Vector;
 
-    private videoInterfaceVector: Vector
+    private videoInterfaceVector: Vector;
 
-    private hardDriveControllerInterfaceVector: Vector
+    private hardDriveControllerInterfaceVector: Vector;
 
-    private cpuInterfaceVector: Vector
+    private cpuInterfaceVector: Vector;
 
-    private usbInterfaceVector: Vector
+    private usbInterfaceVector: Vector;
 
-    private ethernetInterfaceVector: Vector
+    private ethernetInterfaceVector: Vector;
 
-    private multimediaInterfaceVector: Vector
+    private multimediaInterfaceVector: Vector;
 
-    private fireWireInterfaceVector: Vector
+    private fireWireInterfaceVector: Vector;
 
-    private bridgeInterfaceVector: Vector
+    private bridgeInterfaceVector: Vector;
 
-    private hardDriveInterfaceVector: Vector
+    private hardDriveInterfaceVector: Vector;
 
-    private macInterfaceVector: Vector
+    private macInterfaceVector: Vector;
 
-    private monitorInterfaceVector: Vector
+    private monitorInterfaceVector: Vector;
 
     private readonly NAME: string = "Windows Hardware Profile";
 
     private readonly MINHARDWARE: number = 0;
 
     private readonly componentFactory: ComponentFactory = ComponentFactory.getInstance()!;
+
 public constructor (){
 
             super();
@@ -383,24 +384,20 @@ this.monitorInterfaceVector= new Vector();
 
     public toString(): string{
 
-    var hardwareBuffer: StringMaker = new StringMaker();
-;
+    var hardwareBuffer: StringMaker = new StringMaker();;
     
 
-    var size: number = this.componentInterfaceVector!.length!;
-;
+    var size: number = this.componentInterfaceVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;
-;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
     
 hardwareBuffer!.append(componentInterface!.toString());
     

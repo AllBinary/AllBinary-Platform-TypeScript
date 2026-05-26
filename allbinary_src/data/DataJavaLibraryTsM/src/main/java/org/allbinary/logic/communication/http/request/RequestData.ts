@@ -53,6 +53,7 @@ export class RequestData
     public static readonly VIEWS: string = "REQUESTDATA_VIEWS";
 
     public static readonly VISITORS: string = "REQUESTDATA_VISITORS";
+
 public constructor (){
 
             super();

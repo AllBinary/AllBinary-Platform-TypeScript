@@ -83,30 +83,25 @@ export class MagicalImageServlet extends HttpServlet {
 
     var inputStream: InputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
             BlisketServletUtil.getInstance()!.init(request);
     
 
-    var requestURI: string = request.getRequestURI()!;
-;
+    var requestURI: string = request.getRequestURI()!;;
     
 
-    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +requestURI);
-;
+    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +requestURI);;
     
 inputStream= CloudStreamUtil.getInstance()!.getFileAnyWhere(file);
     
 
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream(8000);
-;
+    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream(8000);;
     
 
-    var byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384))!;
-;
+    var byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384))!;;
     
 response.setContentType("image/jpeg;charset=utf-8");
     

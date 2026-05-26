@@ -104,6 +104,7 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
     private readonly realFontSize: number = 18;
 
     public fontImage: OpenGLESImage = OpenGLESImage.NULL_OPENGL_IMAGE;
+
 private constructor (){
             super(1);
                     
@@ -117,26 +118,21 @@ private constructor (){
 
         try {
             
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var file: File = ResourceUtil.getInstance()!.getContext()!.getFilesDir()!;
-;
+    var file: File = ResourceUtil.getInstance()!.getContext()!.getFilesDir()!;;
     
 
-    var path: string = file.getAbsolutePath() +CanvasStrings.getInstance()!.FONT_ATLAS;
-;
+    var path: string = file.getAbsolutePath() +CanvasStrings.getInstance()!.FONT_ATLAS;;
     
 this.logUtil!.putF(path, this, commonStrings!.CONSTRUCTOR);
     
 
-    var fos: FileOutputStream = new FileOutputStream(path);
-;
+    var fos: FileOutputStream = new FileOutputStream(path);;
     
 
-    var bitmap: Bitmap = (getImage as AndroidImageInterface).getBitmap()!;
-;
+    var bitmap: Bitmap = (getImage as AndroidImageInterface).getBitmap()!;;
     
 bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
     
@@ -145,8 +141,7 @@ bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
     
@@ -161,48 +156,37 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
                         
                                     {
                                     
-    var cellsPerRow2: number = this.CELLS_PER_ROW *2;
-;
+    var cellsPerRow2: number = this.CELLS_PER_ROW *2;;
     
 
-    var cellsPerRow3: number = this.CELLS_PER_ROW *3;
-;
+    var cellsPerRow3: number = this.CELLS_PER_ROW *3;;
     
 
-    var cellsPerRow4: number = this.CELLS_PER_ROW *4;
-;
+    var cellsPerRow4: number = this.CELLS_PER_ROW *4;;
     
 
-    var cellsPerRow5: number = this.CELLS_PER_ROW *5;
-;
+    var cellsPerRow5: number = this.CELLS_PER_ROW *5;;
     
 
-    var cellsPerRow6: number = this.CELLS_PER_ROW *6;
-;
+    var cellsPerRow6: number = this.CELLS_PER_ROW *6;;
     
 
-    var cellsPerRow7: number = this.CELLS_PER_ROW *7;
-;
+    var cellsPerRow7: number = this.CELLS_PER_ROW *7;;
     
 
-    var typeface: Typeface = Typeface.DEFAULT;
-;
+    var typeface: Typeface = Typeface.DEFAULT;;
     
 
-    var textureSize: number = this.getAsTextureSize(this.CELLS_PER_ROW *cellSize)!;
-;
+    var textureSize: number = this.getAsTextureSize(this.CELLS_PER_ROW *cellSize)!;;
     
 
-    var bitmap: Bitmap = Bitmap.createBitmap(textureSize, textureSize, Bitmap.Config.ARGB_8888)!;
-;
+    var bitmap: Bitmap = Bitmap.createBitmap(textureSize, textureSize, Bitmap.Config.ARGB_8888)!;;
     
 
-    var canvas: Canvas = new Canvas(bitmap);
-;
+    var canvas: Canvas = new Canvas(bitmap);;
     
 
-    var paint: Paint = new Paint();
-;
+    var paint: Paint = new Paint();;
     
 paint.setTypeface(typeface);
     
@@ -213,28 +197,23 @@ paint.setAlpha(Math.round(basicColor!.alpha));
 paint.setColor(basicColor!.intValue());
     
 
-    var biggestHeight: number = 0;
-;
+    var biggestHeight: number = 0;;
     
 
-    var bounds: Rect = new Rect();
-;
+    var bounds: Rect = new Rect();;
     
 
-    var x: number= 0
-;
+    var x: number= 0;;
     
 
-    var y: number= 0
-;
+    var y: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.size; index++)
+    var index: number = 0;index < this.size; index++)
         {
 this.characterArray[0]= this.pattern[index];
     
@@ -333,8 +312,7 @@ canvas.drawText(this.characterArray, 0, 1, x -3, y -6, paint);
 canvas.save();
     
 
-    var image: Image = AndroidImmutableImage.create(bitmap)!;
-;
+    var image: Image = AndroidImmutableImage.create(bitmap)!;;
     
 this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
     
@@ -362,12 +340,10 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
 
     public getFontWidths(filename: string, fontSize: number): number[]{
 
-    var typeface: Typeface = Typeface.DEFAULT;
-;
+    var typeface: Typeface = Typeface.DEFAULT;;
     
 
-    var paint: Paint = new Paint();
-;
+    var paint: Paint = new Paint();;
     
 paint.setTypeface(typeface);
     
@@ -376,16 +352,14 @@ paint.setTextSize(fontSize);
 paint.setARGB(255, 255, 255, 255);
     
 
-    var bounds: Rect = new Rect();
-;
+    var bounds: Rect = new Rect();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.size; index++)
+    var index: number = 0;index < this.size; index++)
         {
 this.characterArray[0]= this.pattern[index];
     

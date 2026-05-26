@@ -53,6 +53,7 @@ import { SimultaneousCompoundRotationAnimation } from './SimultaneousCompoundRot
 
 export class SimultaneousCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
                     

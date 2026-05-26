@@ -63,8 +63,7 @@ export class HardwareFactory
 
         try {
             
-    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-;
+    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
     
 
                         if(os.getName()!.compareTo(operatingSystems!.LINUX) == 0)
@@ -109,6 +108,7 @@ export class HardwareFactory
 }
 
 }
+
 
 private constructor (){
 

@@ -99,25 +99,26 @@ export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterfa
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
 
-    initAnimationInterface: Animation
+    initAnimationInterface: Animation;
 
-    private destroyedAnimationInterface: Animation
+    private destroyedAnimationInterface: Animation;
 
     private sourceLayerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 
-    totalDamage: number= 0
+    totalDamage: number= 0;
 
-    private initDamage: number= 0
+    private initDamage: number= 0;
 
     private destroyed: boolean = true;
 
     scoreableInterface: ScoreableInterface = NoScoreable.getInstance()!;
 
-    private movement: Movement
+    private movement: Movement;
 
     private weaponProperties: WeaponProperties = WeaponProperties.NULL_WEAPON_PROPERTIES;
 
-    private readonly multiPlayerType: number
+    private readonly multiPlayerType: number;
+
 protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
                     
@@ -198,8 +199,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
 
     setGroupInterface(){
 
-    var basicGroupFactory: BasicGroupFactory = BasicGroupFactory.getInstance()!;
-;
+    var basicGroupFactory: BasicGroupFactory = BasicGroupFactory.getInstance()!;;
     
 
                         if(this.sourceLayerInterface!.getGroupInterface()[0] == basicGroupFactory!.ENEMY)
@@ -231,12 +231,10 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
                         
                                     {
                                     
-    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface() as IndexedAnimation;
-;
+    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface() as IndexedAnimation;;
     
 
-    var currentFrame: number = indexedAnimationInterface!.getFrame()!;
-;
+    var currentFrame: number = indexedAnimationInterface!.getFrame()!;;
     
 
                         if(currentFrame < indexedAnimationInterface!.getAnimationSize() -1)
@@ -258,8 +256,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
                                 
                         else {
                             
-    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface() as CollidableWeaponBehavior;
-;
+    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface() as CollidableWeaponBehavior;;
     
 
                         if(collidableWeaponBehavior!.isCollided())
@@ -348,8 +345,7 @@ this.scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompe
                         
                                     {
                                     
-    var total: number = this.getInitDamage() -this.totalDamage;
-;
+    var total: number = this.getInitDamage() -this.totalDamage;;
     
 this.givePoints(total);
     
@@ -458,8 +454,7 @@ this.sourceLayerInterface= sourceLayerInterface;
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.getViewPosition()!;;
     
 this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight());
     
@@ -468,8 +463,7 @@ this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWid
 
     public paintThreed(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.getViewPosition()!;;
     
 this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth());
     

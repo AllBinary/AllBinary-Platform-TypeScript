@@ -50,6 +50,7 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
 export class FontFamilyView extends CssPropertyView {
         
+
 public constructor (){
             super(FontFamilyData.getInstance()!.VALUE);
                     
@@ -57,6 +58,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (node: Node){
             super(node);

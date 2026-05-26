@@ -67,27 +67,26 @@ export class ContextConfigurationView
          implements DomNodeInterface {
         
 
-    private contextConfigurationInterface: ContextConfigurationInterface
+    private contextConfigurationInterface: ContextConfigurationInterface;
+
 public constructor (node: Node){
 
             super();
         
-    var childNodeList: NodeList = node.getChildNodes()!;
-;
+    var childNodeList: NodeList = node.getChildNodes()!;;
     
 this.contextConfigurationInterface= new ContextConfiguration();
     
 
-    var emailConfigurationNode: Node = DomSearchHelper.getNode(EmailServerConfigurationData.NAME, childNodeList)!;
-;
+    var emailConfigurationNode: Node = DomSearchHelper.getNode(EmailServerConfigurationData.NAME, childNodeList)!;;
     
 
-    var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(emailConfigurationNode);
-;
+    var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(emailConfigurationNode);;
     
 this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface() as EmailServerConfigurationInterface);
     
 }
+
 
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
@@ -111,12 +110,10 @@ public constructor (contextConfigurationInterface: ContextConfigurationInterface
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(ContextConfigurationData.getInstance()!.NAME)!;
-;
+    var node: Node = document.createElement(ContextConfigurationData.getInstance()!.NAME)!;;
     
 
-    var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(this.getContextConfigurationInterface()!.getEmailServerConfigurationInterface());
-;
+    var emailServerConfigurationView: EmailServerConfigurationView = new EmailServerConfigurationView(this.getContextConfigurationInterface()!.getEmailServerConfigurationInterface());;
     
 node.appendChild(emailServerConfigurationView!.toXmlNode(document));
     

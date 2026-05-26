@@ -58,6 +58,7 @@ export class TouchFeatureFactory
     
 }
 
+
 private constructor (){
 
             super();

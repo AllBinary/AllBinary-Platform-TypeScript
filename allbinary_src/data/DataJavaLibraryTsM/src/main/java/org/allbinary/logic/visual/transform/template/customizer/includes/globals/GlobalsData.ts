@@ -47,6 +47,7 @@ export class GlobalsData
         
 
     public static readonly NAME: string = "GLOBALS_NAME";
+
 private constructor (){
 
             super();

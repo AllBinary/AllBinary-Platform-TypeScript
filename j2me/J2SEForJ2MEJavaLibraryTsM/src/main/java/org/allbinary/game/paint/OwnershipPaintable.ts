@@ -79,6 +79,7 @@ export class OwnershipPaintable extends Paintable {
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
     private color: number = this.basicColor!.intValue()!;
+
 private constructor (){
 
             super();
@@ -91,32 +92,25 @@ private constructor (){
 graphics.setColor(this.color);
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var halfWidth: number = displayInfo!.getLastHalfWidth()!;
-;
+    var halfWidth: number = displayInfo!.getLastHalfWidth()!;;
     
 
-    var height: number = displayInfo!.getLastHeight()!;
-;
+    var height: number = displayInfo!.getLastHeight()!;;
     
 
-    var font: Font = graphics.getFont()!;
-;
+    var font: Font = graphics.getFont()!;;
     
 
-    var beginWidth: number = (font.stringWidth(this.COPYRIGHT)>>1);
-;
+    var beginWidth: number = (font.stringWidth(this.COPYRIGHT)>>1);;
     
 
-    var COPYRIGHT_Y: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var COPYRIGHT_Y: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;;
     
 graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, this.anchor);
     

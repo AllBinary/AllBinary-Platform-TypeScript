@@ -74,6 +74,7 @@ export class InputMapping
     private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     private readonly mappedList: BasicArrayList = new BasicArrayListD();
+
 protected constructor (){
 
             super();
@@ -120,12 +121,10 @@ this.mappedList!.clear();
 
     public remove(input: Input, mappedToInput: Input){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 stringBuffer!.append(CommonLabels.getInstance()!.START_LABEL);
     
@@ -138,8 +137,7 @@ stringBuffer!.append(stringUtil!.toString(mappedToInput));
 this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
     
 
-    var list: BasicArrayList = this.getMappedInput(input)!;
-;
+    var list: BasicArrayList = this.getMappedInput(input)!;;
     
 
                         if(list.contains(mappedToInput))
@@ -196,8 +194,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 
     public add(input: Input, mappedToInput: Input){
 
-    var list: BasicArrayList = this.getMappedInput(input)!;
-;
+    var list: BasicArrayList = this.getMappedInput(input)!;;
     
 
                         if(!list.contains(mappedToInput))
@@ -225,8 +222,7 @@ this.mappedList!.add(mappedToInput);
 
     public getMappedInput(id: Input): BasicArrayList{
 
-    var mappingInputCanBeNullList: any = this.hashtable.get(id);
-;
+    var mappingInputCanBeNullList: any = this.hashtable.get(id);;
     
 
                         if(mappingInputCanBeNullList == 
@@ -235,8 +231,7 @@ this.mappedList!.add(mappedToInput);
                         
                                     {
                                     
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 this.hashtable.put(id, list);
     

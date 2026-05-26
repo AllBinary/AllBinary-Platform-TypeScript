@@ -60,13 +60,14 @@ export class CustomTextAnimation extends TextAnimation implements GetTextInterfa
 
     readonly fontDebugFactory: FontDebugFactory = FontDebugFactory.getInstance()!;
 
-    readonly fontSize: number
+    readonly fontSize: number;
 
-    font: Font
+    font: Font;
 
     private lastText: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     hasChanged: boolean = true;
+
 public constructor (text: string, fontSize: number, animationBehavior: AnimationBehavior){
             super(text, animationBehavior);
                     
@@ -82,8 +83,7 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize);
 
     public paintXY(graphics: Graphics, x: number, y: number){
 
-    var existingFont: Font = graphics.getFont()!;
-;
+    var existingFont: Font = graphics.getFont()!;;
     
 this.fontDebugFactory!.setFont(this.font, graphics);
     
@@ -141,7 +141,7 @@ super.setText(text);
 }
 
 
-    private textWidth: number= 0
+    private textWidth: number= 0;
 
     public getWidth(): number{
 

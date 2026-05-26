@@ -51,7 +51,8 @@ export class PropertiesTag extends CommandTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
+
 public constructor (){
 
             super();

@@ -71,6 +71,7 @@ export class PathCacheFactory
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
     private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+
 private constructor (){
 
             super();
@@ -123,8 +124,7 @@ this.hashtable.clear();
             
     public getOrCreate(pathIdInteger: Integer): BasicArrayList{
 
-    var listCanBeNull: any = this.hashtable.get(pathIdInteger);
-;
+    var listCanBeNull: any = this.hashtable.get(pathIdInteger);;
     
 
                         if(listCanBeNull == 

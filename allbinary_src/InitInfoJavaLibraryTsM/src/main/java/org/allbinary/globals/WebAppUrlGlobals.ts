@@ -51,7 +51,7 @@ import { StringValidationUtil } from '../../../org/allbinary/logic/string/String
 export class WebAppUrlGlobals extends UrlGlobalsInterface {
         
 
-    private path: string
+    private path: string;
 
     private isWebappPathSet: boolean = false;
 
@@ -98,8 +98,7 @@ this.isWebappPathSet= true;
             
     public getMainPath(): string{
 
-    var mainPath: string = InitInfo.getInstance()!.getMainPath()!;
-;
+    var mainPath: string = InitInfo.getInstance()!.getMainPath()!;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(mainPath))

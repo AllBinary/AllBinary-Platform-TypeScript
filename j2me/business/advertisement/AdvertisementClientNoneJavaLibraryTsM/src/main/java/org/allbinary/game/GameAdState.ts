@@ -55,6 +55,7 @@ import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/in
         
 export class GameAdState extends GameAdStateBase implements VirtualKeyboardEventListenerInterface {
         
+
 public constructor (adConfiguration: AdConfiguration){
             super(adConfiguration);
                     

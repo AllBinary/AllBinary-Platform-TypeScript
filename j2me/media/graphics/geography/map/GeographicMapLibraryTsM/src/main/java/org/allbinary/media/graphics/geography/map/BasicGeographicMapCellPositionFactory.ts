@@ -62,17 +62,18 @@ export class BasicGeographicMapCellPositionFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    readonly geographicMapCellPositionArray: GeographicMapCellPosition[][]
+    readonly geographicMapCellPositionArray: GeographicMapCellPosition[][];
 
-    readonly geographicMapInterface: BasicGeographicMap
+    readonly geographicMapInterface: BasicGeographicMap;
 
-    readonly geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface
+    readonly geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface;
 
-    private readonly columns: number
+    private readonly columns: number;
 
-    private readonly rows: number
+    private readonly rows: number;
 
-    private readonly tiledLayer: AllBinaryTiledLayer
+    private readonly tiledLayer: AllBinaryTiledLayer;
+
 public constructor (geographicMapInterface: BasicGeographicMap){
 
             super();
@@ -98,40 +99,33 @@ this.init();
             
     init(){
 
-    var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;
-;
+    var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;;
     
 
-    var columns: number = this.getColumns()!;
-;
+    var columns: number = this.getColumns()!;;
     
 
-    var rows: number = this.getRows()!;
-;
+    var rows: number = this.getRows()!;;
     
 
-    var width: number = tiledLayer!.getCellWidth()!;
-;
+    var width: number = tiledLayer!.getCellWidth()!;;
     
 
-    var height: number = tiledLayer!.getCellHeight()!;
-;
+    var height: number = tiledLayer!.getCellHeight()!;;
     
 
 
 
 
                         for (
-    var column: number = 0;
-column < columns; column++)
+    var column: number = 0;column < columns; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < rows; row++)
+    var row: number = 0;row < rows; row++)
         {
 this.createInstance(column, row, width, height);
     
@@ -146,38 +140,32 @@ this.createInstance(column, row, width, height);
             
     public visit(geographicMapCelPositionFactoryInitVisitorInterface: GeographicMapCellPositionFactoryInitVisitorInterface){
 
-    var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;
-;
+    var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;;
     
 
-    var columns: number = this.getColumns()!;
-;
+    var columns: number = this.getColumns()!;;
     
 
-    var rows: number = this.getRows()!;
-;
+    var rows: number = this.getRows()!;;
     
 
         try {
             
-    var cellPosition: GeographicMapCellPosition
-;
+    var cellPosition: GeographicMapCellPosition;;
     
 
 
 
 
                         for (
-    var column: number = 0;
-column < columns; column++)
+    var column: number = 0;column < columns; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < rows; row++)
+    var row: number = 0;row < rows; row++)
         {
 cellPosition= this.getAt(column, row);
     
@@ -192,8 +180,7 @@ geographicMapCelPositionFactoryInitVisitorInterface!.visit(tiledLayer, cellPosit
 } catch(e) 
             {
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 this.logUtil!.put(new StringMaker().append(commonSeps!.BRACKET_OPEN)!.appendint(rows)!.append(commonSeps!.BRACKET_CLOSE)!.append(commonSeps!.BRACKET_OPEN)!.appendint(columns)!.append(commonSeps!.BRACKET_CLOSE)!.toString(), this, "visit", e);
     
@@ -235,8 +222,7 @@ this.logUtil!.put(new StringMaker().append(commonSeps!.BRACKET_OPEN)!.appendint(
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
 
-    var cellPositionCanBeNull: any = this.geographicMapCellPositionArray[i_row]![i_column];
-;
+    var cellPositionCanBeNull: any = this.geographicMapCellPositionArray[i_row]![i_column];;
     
 
                         if(cellPositionCanBeNull == 

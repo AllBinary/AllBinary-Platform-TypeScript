@@ -46,7 +46,8 @@ export class CollisionType
          {
         
 
-    private readonly name: string
+    private readonly name: string;
+
  constructor (name: string){
 
             super();

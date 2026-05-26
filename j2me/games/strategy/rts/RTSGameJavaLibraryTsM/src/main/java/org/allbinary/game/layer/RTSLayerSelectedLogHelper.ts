@@ -90,8 +90,7 @@ export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
 
     public setClosestGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -112,8 +111,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: setClosestGeograph
 
     public trackTo(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition, dx: number, dy: number, reason: string){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -142,8 +140,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: trackTo");
 
     public turnTo(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, dx: number, dy: number, angleInfo: AngleInfo, angle: number, movementAngle: NamedAngle, evading: boolean, targetAngle: number){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
@@ -178,8 +175,7 @@ stringBuffer!.appendshort(movementAngle!.getValue());
                         
                                     {
                                     
-    var angleIncrement: number = angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()!;
-;
+    var angleIncrement: number = angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()!;;
     
 stringBuffer!.append(" angleIncrement: ");
     
@@ -271,8 +267,7 @@ this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getN
 
     public notOnPath(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, geographicMapCellHistory: GeographicMapCellHistory, currentGeographicMapCellPosition: GeographicMapCellPosition, pathList: BasicArrayList){
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.appendint(geographicMapCellHistory!.getTotalVisited())!.append(CommonSeps.getInstance()!.SPACE)!.append(stringUtil!.toString(currentGeographicMapCellPosition))!.append(" - trying to move but not on path: ")!.append(stringUtil!.toString(pathList))!.toString(), this, "turnTo");
     

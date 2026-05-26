@@ -57,6 +57,7 @@ export class OnDemandResources
     public static readonly NULL_ON_DEMAND_RESOURCES: OnDemandResources = new OnDemandResources();
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 protected constructor (){
 
             super();

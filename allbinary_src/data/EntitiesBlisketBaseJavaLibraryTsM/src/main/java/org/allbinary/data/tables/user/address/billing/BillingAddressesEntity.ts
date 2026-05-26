@@ -47,6 +47,7 @@ export class BillingAddressesEntity extends StreetAddressesEntity {
         
 
     private readonly TABLENAME: string = "billing";
+
 public constructor (userName: string){
             super(userName);
                     

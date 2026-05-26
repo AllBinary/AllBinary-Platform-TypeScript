@@ -58,13 +58,14 @@ import { FormTypeFactory } from './FormTypeFactory.js';
 export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
         
 
-    private dx: number= 0
+    private dx: number= 0;
 
-    private dy: number= 0
+    private dy: number= 0;
 
     private maxWidth: number = 0;
 
-    private readonly moveForSmallScreen: boolean
+    private readonly moveForSmallScreen: boolean;
+
 public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
                     
@@ -90,8 +91,7 @@ this.initForm();
 
     public initForm(){
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-;
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
@@ -109,24 +109,20 @@ this.dy= this.y;
                         
                                     {
                                     
-    var size: number = this.size()!;
-;
+    var size: number = this.size()!;;
     
 
-    var totalWidth: number = 0;
-;
+    var totalWidth: number = 0;;
     
 
-    var item: ABCustomItem
-;
+    var item: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 item= this.get(index);
     
@@ -143,8 +139,7 @@ this.dy= this.y +(this.rectangle.getHeight()>>1);
                         
                                     {
                                     
-    var maxTitleHeight: number = 175;
-;
+    var maxTitleHeight: number = 175;;
     
 
                         if(this.dy < maxTitleHeight)
@@ -166,24 +161,20 @@ this.dy= this.y +(this.rectangle.getHeight()>>1);
                         
                                     {
                                     
-    var totalHeight: number = 0;
-;
+    var totalHeight: number = 0;;
     
 
-    var size: number = this.size()!;
-;
+    var size: number = this.size()!;;
     
 
-    var item2: ABCustomItem
-;
+    var item2: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 item2= this.get(index);
     
@@ -213,8 +204,7 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
                         
                                     {
                                     
-    var maxTitleHeight: number = 175;
-;
+    var maxTitleHeight: number = 175;;
     
 
                         if(this.dy < maxTitleHeight)
@@ -253,42 +243,34 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
 
         try {
             
-    var delta: number = 0;
-;
+    var delta: number = 0;;
     
 
-    var deltaX: number = this.getDx()!;
-;
+    var deltaX: number = this.getDx()!;;
     
 
-    var deltaY: number = this.getDy()!;
-;
+    var deltaY: number = this.getDy()!;;
     
 
-    var size: number = this.size()!;
-;
+    var size: number = this.size()!;;
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-;
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
 
-    var item: ABCustomItem
-;
+    var item: ABCustomItem;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 item= this.get(index);
     
 
-    var diffX: number = 0;
-;
+    var diffX: number = 0;;
     
 
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)

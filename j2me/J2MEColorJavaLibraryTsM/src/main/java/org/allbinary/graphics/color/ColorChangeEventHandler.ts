@@ -58,6 +58,7 @@ export class ColorChangeEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();

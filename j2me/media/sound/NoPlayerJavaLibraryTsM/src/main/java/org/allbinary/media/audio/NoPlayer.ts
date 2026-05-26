@@ -51,6 +51,7 @@ export class NoPlayer extends BasicPlayer {
         
 
     public static readonly NO_PLAYER: NoPlayer = new NoPlayer();
+
 public constructor (){
 
             super();

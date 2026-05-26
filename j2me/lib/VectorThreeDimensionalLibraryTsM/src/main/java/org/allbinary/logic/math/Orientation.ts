@@ -74,6 +74,7 @@ Orientation.SINGLETON.roll.setint(roll);
     public pitch: BasicDecimal = new BasicDecimal(0);
 
     public roll: BasicDecimal = new BasicDecimal(0);
+
 private constructor (yaw: number, pitch: number, roll: number){
 
             super();
@@ -88,8 +89,7 @@ this.roll.setint(roll);
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Y: ");
     

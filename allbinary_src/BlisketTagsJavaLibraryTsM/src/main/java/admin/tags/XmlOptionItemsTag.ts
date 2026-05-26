@@ -48,6 +48,7 @@ import { XmlOptionItemsRequestHelperFactory } from '../../admin/taghelpers/XmlOp
 
 export class XmlOptionItemsTag extends TableTag {
         
+
 public constructor (){
 
             super();

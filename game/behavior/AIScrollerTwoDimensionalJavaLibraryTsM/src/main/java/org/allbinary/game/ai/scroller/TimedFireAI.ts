@@ -69,7 +69,8 @@ export class TimedFireAI extends BasicAI {
 
     readonly maxFireDelayTimeHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-    private readonly delay: number
+    private readonly delay: number;
+
 public constructor (delay: number, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     
@@ -85,8 +86,7 @@ this.delay= delay;
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface() as TimeFiredInterface;
-;
+    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface() as TimeFiredInterface;;
     
 
                         if(this.maxFireDelayTimeHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime) && timeFiredInterface!.getLastFireTime() +this.maxFireDelayTimeHelper!.delay < this.maxFireDelayTimeHelper!.getStartTime())

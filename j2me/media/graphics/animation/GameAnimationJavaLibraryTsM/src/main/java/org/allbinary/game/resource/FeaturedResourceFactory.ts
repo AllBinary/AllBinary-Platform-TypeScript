@@ -74,6 +74,7 @@ export class FeaturedResourceFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 public constructor (){
 
             super();
@@ -104,28 +105,23 @@ public constructor (){
             
     public init(level: number){
 
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var featureInterface: GameFeatureControlledInterface = this.list.objectArray[index]! as GameFeatureControlledInterface;
-;
+    var featureInterface: GameFeatureControlledInterface = this.list.objectArray[index]! as GameFeatureControlledInterface;;
     
 
-    var isLoadingLevel: boolean = featureInterface!.isLoadingLevel(level)!;
-;
+    var isLoadingLevel: boolean = featureInterface!.isLoadingLevel(level)!;;
     
 
-    var isFeature: boolean = featureInterface!.isFeature()!;
-;
+    var isFeature: boolean = featureInterface!.isFeature()!;;
     
 this.logUtil!.putF(new StringMaker().append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, this.commonStrings!.INIT);
     
@@ -141,16 +137,13 @@ this.logUtil!.putF(new StringMaker().append(this.GAME_FEATURE_CONTROLLED)!.appen
 }
 
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
-;
+    var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.ANIMATION_FEATURES);
     

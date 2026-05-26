@@ -78,13 +78,13 @@ export class TransformInfoPropertiesDocument
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly document: Document
+    private readonly document: Document;
+
 public constructor (filePath: string){
 
             super();
         
-    var xmlFile: AbFile = new AbFile(filePath);
-;
+    var xmlFile: AbFile = new AbFile(filePath);;
     
 this.document= DomDocumentFileHelper.createDocument(xmlFile);
     
@@ -95,20 +95,16 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
 
         try {
             
-    var transformInfoPropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var transformInfoPropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var transformInfosNode: Node = this.document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!.item(0)!;
-;
+    var transformInfosNode: Node = this.document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!.item(0)!;;
     
 
-    var transformInfosChildNodeList: NodeList = transformInfosNode!.getChildNodes()!;
-;
+    var transformInfosChildNodeList: NodeList = transformInfosNode!.getChildNodes()!;;
     
 
-    var transformInfoNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;
-;
+    var transformInfoNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -120,24 +116,20 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
                                     }
                                 
 
-    var size: number = transformInfoNodeVector!.length!;
-;
+    var size: number = transformInfoNodeVector!.length!;;
     
 
-    var node: Node
-;
+    var node: Node;;
     
 
-    var transformInfoProperties: TransformInfoProperties
-;
+    var transformInfoProperties: TransformInfoProperties;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 node= transformInfoNodeVector!.get(index) as Node;
     
@@ -162,8 +154,7 @@ transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transfor
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e);
     

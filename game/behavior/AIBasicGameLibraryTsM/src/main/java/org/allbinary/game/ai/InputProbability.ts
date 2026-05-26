@@ -56,13 +56,14 @@ export class InputProbability
 
     public static INPUT_PROBABILITY: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private readonly likelyhoodIntegerArray: Integer[][]
+    private readonly likelyhoodIntegerArray: Integer[][];
 
-    private readonly repeatLikelyhoodIntegerArray: Integer[]
+    private readonly repeatLikelyhoodIntegerArray: Integer[];
 
-    private readonly max: number
+    private readonly max: number;
 
-    private readonly timeDelayHelper: TimeDelayHelper
+    private readonly timeDelayHelper: TimeDelayHelper;
+
 public constructor (likelyhoodIntegerArray: Integer[][], repeatLikelyhoodIntegerArray: Integer[], max: number, timeDelayHelper: TimeDelayHelper){
 
             super();
@@ -119,8 +120,7 @@ this.timeDelayHelper= timeDelayHelper;
 
     public toHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-;
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
 hashtable.put(InputProbability.INPUT_PROBABILITY, this);
     

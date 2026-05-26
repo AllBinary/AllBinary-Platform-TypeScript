@@ -78,7 +78,8 @@ export class GenericBodyCustomizerView extends HttpStoreComponentView implements
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    body: GenericBodyValidation
+    body: GenericBodyValidation;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -102,8 +103,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
             
     public toXmlNode(document: Document): Node{
 
-    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;
-;
+    var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(pageName))
@@ -131,12 +131,10 @@ this.addDomNodeInterface(this as DomNodeInterface);
             this.addDomNodeInterfaces();
     
 
-    var success: string = DomDocumentHelper.toString(this.getDoc())!;
-;
+    var success: string = DomDocumentHelper.toString(this.getDoc())!;;
     
 
-    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;
-;
+    var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).translate(success)!;;
     
 
 

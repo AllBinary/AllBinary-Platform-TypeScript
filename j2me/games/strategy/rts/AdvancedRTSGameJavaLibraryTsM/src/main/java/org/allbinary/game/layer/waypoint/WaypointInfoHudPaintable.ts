@@ -56,9 +56,10 @@ import { KeyValueDrawString } from '../../../../../org/allbinary/graphics/draw/K
 export class WaypointInfoHudPaintable extends SelectionHudPaintable {
         
 
-    private readonly keyvalueDrawString: KeyValueDrawString
+    private readonly keyvalueDrawString: KeyValueDrawString;
 
     rtsLayerP: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
+
 public constructor (){
 
             super();
@@ -69,8 +70,7 @@ public constructor (){
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;
-;
+    var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;;
     
 this.setName(rtsLayer!.getName());
     
@@ -85,8 +85,7 @@ this.keyvalueDrawString!.update(rtsLayer!.getParentLayer()!.getName());
 super.paint(graphics);
     
 
-    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);
-;
+    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);;
     
 this.keyvalueDrawString!.paint(graphics, textLine2Y);
     

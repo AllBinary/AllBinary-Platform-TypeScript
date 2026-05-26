@@ -71,8 +71,7 @@ export class SpecialMessageUtil
 
     public get(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(Memory.getInfo());
     

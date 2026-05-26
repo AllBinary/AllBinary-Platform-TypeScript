@@ -70,7 +70,8 @@ import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js
 export class GameDifficultyOptions extends CommandForm {
         
 
-    private readonly list: BasicArrayList
+    private readonly list: BasicArrayList;
+
 public constructor (commandListener: CommandListener, title: string, list: BasicArrayList, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
                     
@@ -86,8 +87,7 @@ this.update();
 this.initCommands(commandListener);
     
 
-    var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
-;
+    var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;;
     
 this.setSelectedId(gameDifficultyFactory!.getLevel());
     
@@ -112,8 +112,7 @@ this.save();
             
     public save(){
 
-    var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
-;
+    var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;;
     
 gameDifficultyFactory!.setLevel(this.getSelectedId());
     
@@ -122,8 +121,7 @@ gameDifficultyFactory!.setLevel(this.getSelectedId());
 
     public initCommands(cmdListener: CommandListener){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-;
+    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 this.removeAllCommands();
     
@@ -148,8 +146,7 @@ super.update();
 
     add(list: BasicArrayList, name: string, option: number){
 
-    var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
-;
+    var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;;
     
 
                         if(list.size() > 0)
@@ -167,32 +164,26 @@ this.append(choiceGroup);
 
     getChoiceGroup(list: BasicArrayList, name: string, option: number): ChoiceGroup{
 
-    var METHOD_NAME: string = "addChoiceGroup";
-;
+    var METHOD_NAME: string = "addChoiceGroup";;
     
 
-    var NAME: string = "Adding Choice: ";
-;
+    var NAME: string = "Adding Choice: ";;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);
-;
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.objectArray[index]!;
-;
+    var anyType: any = list.objectArray[index]!;;
     
 this.logUtil!.putF(new StringMaker().append(NAME)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
@@ -211,8 +202,7 @@ choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
 
     public setSelectedId(id: number){
 
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-;
+    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
     
 choiceGroup!.setSelectedIndex(id, true);
     
@@ -221,8 +211,7 @@ choiceGroup!.setSelectedIndex(id, true);
 
     public getSelectedId(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-;
+    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
     
 
 
@@ -235,12 +224,10 @@ choiceGroup!.setSelectedIndex(id, true);
 
     public getSelectedText(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-;
+    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
     
 
-    var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.intValue()!;
-;
+    var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.intValue()!;;
     
 
 

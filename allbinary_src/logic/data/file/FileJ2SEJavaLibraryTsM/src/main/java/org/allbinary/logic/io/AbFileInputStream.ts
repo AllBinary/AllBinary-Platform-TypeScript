@@ -53,6 +53,7 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
         
 export class AbFileInputStream extends FileInputStream {
         
+
 public constructor (name: string){
             super(name);
                     
@@ -61,6 +62,7 @@ public constructor (name: string){
                     
 }
 
+
 public constructor (file: AbFile){
             super(AbFileNativeUtil.get(file));
                     
@@ -68,6 +70,7 @@ public constructor (file: AbFile){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 protected constructor (file: File){
             super(file);

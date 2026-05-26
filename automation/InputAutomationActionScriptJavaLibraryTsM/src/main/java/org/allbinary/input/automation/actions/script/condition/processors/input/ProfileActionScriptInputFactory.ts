@@ -63,8 +63,7 @@ export class ProfileActionScriptInputFactory
 
     var profileActionScriptInputInterface: ProfileActionScriptInputInterface = 
                 null
-            ;
-;
+            ;;
     
 
                         if(DomSearchHelper.getNodeNoThrow(KeyboardActionScriptInputData.NAME, node.getChildNodes()) != 
@@ -104,6 +103,7 @@ export class ProfileActionScriptInputFactory
                         return profileActionScriptInputInterface;
     
 }
+
 
 private constructor (){
 

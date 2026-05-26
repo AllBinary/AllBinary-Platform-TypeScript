@@ -90,8 +90,7 @@ export class JavaHelpUtil
 
         try {
             
-    var javaHelpUtil: JavaHelpUtil = JavaHelpUtil.getInstance()!;
-;
+    var javaHelpUtil: JavaHelpUtil = JavaHelpUtil.getInstance()!;;
     
 javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/InputAutomationJavaApplication/AllBinaryInputAutomationHelp/AllBinaryInputAutomation.hs"));
     
@@ -114,6 +113,7 @@ javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/
                             null);
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 private constructor (){
 
             super();
@@ -124,12 +124,10 @@ private constructor (){
 
         try {
             
-    var helpSetURI: URI = new File(filePath).toURI()!;
-;
+    var helpSetURI: URI = new File(filePath).toURI()!;;
     
 
-    var helpSetURL: URL = helpSetURI!.toURL()!;
-;
+    var helpSetURL: URL = helpSetURI!.toURL()!;;
     
 
 
@@ -185,8 +183,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
 
         try {
             
-    var helpBroker: HelpBroker = helpSet!.createHelpBroker()!;
-;
+    var helpBroker: HelpBroker = helpSet!.createHelpBroker()!;;
     
 helpBroker!.setLocation(this.point);
     

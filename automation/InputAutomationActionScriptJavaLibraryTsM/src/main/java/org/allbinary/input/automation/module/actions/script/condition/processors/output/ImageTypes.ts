@@ -67,20 +67,17 @@ export class ImageTypes
 
     public static valueOf(anyType: any[]): ImageTypes{
 
-    var imageTypes: ImageTypes = new ImageTypes();
-;
+    var imageTypes: ImageTypes = new ImageTypes();;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < anyType!.length; index++)
+    var index: number = 0;index < anyType!.length; index++)
         {
 
-    var imageType: InputImageType = InputImageType.getInstance(anyType[index]! as string)!;
-;
+    var imageType: InputImageType = InputImageType.getInstance(anyType[index]! as string)!;;
     
 imageTypes!.getVector()!.add(imageType);
     
@@ -96,37 +93,35 @@ imageTypes!.getVector()!.add(imageType);
 
 
     private vector: Vector = new Vector();
+
 public constructor (){
 
             super();
         }
 
+
 public constructor (node: Node){
 
             super();
         
-    var nodeList: NodeList = node.getChildNodes()!;
-;
+    var nodeList: NodeList = node.getChildNodes()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < nodeList!.getLength(); index++)
+    var index: number = 0;index < nodeList!.getLength(); index++)
         {
 
-    var childNode: Node = nodeList!.item(index)!;
-;
+    var childNode: Node = nodeList!.item(index)!;;
     
 
                         if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPE) == 0)
                         
                                     {
                                     
-    var nextImageTypeString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-;
+    var nextImageTypeString: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
 this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
     
@@ -161,24 +156,20 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
             
     public toXmlNode(document: Document): Node{
 
-    var newNode: Node = document.createElement(ImageActionScriptOutputData.TYPES)!;
-;
+    var newNode: Node = document.createElement(ImageActionScriptOutputData.TYPES)!;;
     
 
-    var size: number = this.vector.length!;
-;
+    var size: number = this.vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index) as InputImageType;
-;
+    var imageType: InputImageType = this.vector.get(index) as InputImageType;;
     
 newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()));
     
@@ -195,26 +186,22 @@ newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutp
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("ImageTypes: ");
     
 
-    var size: number = this.vector.length!;
-;
+    var size: number = this.vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index) as InputImageType;
-;
+    var imageType: InputImageType = this.vector.get(index) as InputImageType;;
     
 stringBuffer!.append(imageType!.getName());
     

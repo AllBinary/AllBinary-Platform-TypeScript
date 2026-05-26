@@ -86,6 +86,7 @@ export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface
     private readonly METHOD_GET: string = "get()";
 
     private readonly METHOD_UPDATE: string = "update";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -133,8 +134,7 @@ this.setTableName(this.tableName);
 
         try {
             
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
     
@@ -175,16 +175,14 @@ super.deleteWhere(keysAndValues);
 
         try {
             
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
 
@@ -238,34 +236,28 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
         try {
             
-    var workFlowsVector: Vector = new Vector();
-;
+    var workFlowsVector: Vector = new Vector();;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var hashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var size: number = hashMapVector!.length!;
-;
+    var size: number = hashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i) as HashMap<any, any>;
-;
+    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i) as HashMap<any, any>;;
     
 
                         if(workFlowHashMap != 
@@ -314,8 +306,7 @@ i < size; i++)
 
         try {
             
-    var wherekeysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var wherekeysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as string);
     
@@ -343,12 +334,10 @@ super.updateWhere(wherekeysAndValues, updatedValues);
 
     public createTableStatement(): string{
 
-    var workFlowData: WorkFlowData = WorkFlowData.getInstance()!;
-;
+    var workFlowData: WorkFlowData = WorkFlowData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END);
     

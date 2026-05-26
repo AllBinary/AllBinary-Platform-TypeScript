@@ -63,6 +63,7 @@ export class TitleNotRequiredValidation extends TitleView implements ValidationI
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
             super();
                     
@@ -71,6 +72,7 @@ public constructor (){
                     
 }
 
+
 public constructor (node: Node){
             super(node);
                     
@@ -78,6 +80,7 @@ public constructor (node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
             super(hashMap);
@@ -101,8 +104,7 @@ public constructor (hashMap: HashMap<any, any>){
                                     }
                                 
 
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.getTitle(), 0, TitleData.getInstance()!.MAXLEN))
@@ -118,8 +120,7 @@ public constructor (hashMap: HashMap<any, any>){
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Title: ");
     
@@ -168,8 +169,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Title is not valid.");
     

@@ -65,24 +65,20 @@ export class GenericProfileCaptureWorkerFactory
             
     public static getInstance(genericProfile: GenericProfile): CaptureWorkerInterface{
 
-    var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;
-;
+    var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;;
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
-;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;;
     
 
                         if(genericProfileDataWorkerType == GenericProfileDataWorkerType.SCREEN_CAPTURE)
@@ -118,6 +114,7 @@ index < size; index++)
                             throw new Exception("No CaptureWorkerInterface specified in GenericProfile");
                     
 }
+
 
 private constructor (){
 

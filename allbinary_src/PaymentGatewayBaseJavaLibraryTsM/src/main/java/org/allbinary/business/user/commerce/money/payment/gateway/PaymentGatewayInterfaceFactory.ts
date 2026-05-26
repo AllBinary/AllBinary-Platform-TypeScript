@@ -66,6 +66,7 @@ export class PaymentGatewayInterfaceFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -76,8 +77,7 @@ public constructor (){
             
     public getInstance(httpServletRequest: HttpServletRequest): PaymentGatewayInterface{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
@@ -123,8 +123,7 @@ public constructor (){
             
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
     
@@ -141,18 +140,15 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
             
     public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()) as string;
-;
+    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()) as string;;
     
 
-    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(gatewayName)!;
-;
+    var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(gatewayName)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
@@ -164,8 +160,7 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
                                     }
                                 
 
-    var paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface = paymentType!.getPaymentGatewayInterfaceFactoryInterface()!;
-;
+    var paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface = paymentType!.getPaymentGatewayInterfaceFactoryInterface()!;;
     
 
 

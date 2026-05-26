@@ -88,68 +88,54 @@ export class ImageModifierUtil
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
-;
+    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
     
 
-    var r: number = basicColor!.red;
-;
+    var r: number = basicColor!.red;;
     
 
-    var g: number = basicColor!.green;
-;
+    var g: number = basicColor!.green;;
     
 
-    var b: number = basicColor!.blue;
-;
+    var b: number = basicColor!.blue;;
     
 
-    var width: number = image.getWidth()!;
-;
+    var width: number = image.getWidth()!;;
     
 
-    var height: number = image.getHeight()!;
-;
+    var height: number = image.getHeight()!;;
     
 
-    var colorModel: ColorModel
-;
+    var colorModel: ColorModel;;
     
 
-    var dataElements: any
-;
+    var dataElements: any;;
     
 
-    var ax: number= 0
-;
+    var ax: number= 0;;
     
 
-    var rx: number= 0
-;
+    var rx: number= 0;;
     
 
-    var gx: number= 0
-;
+    var gx: number= 0;;
     
 
-    var bx: number= 0
-;
+    var bx: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < width; index++)
+    var index: number = 0;index < width; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < height; index2++)
+    var index2: number = 0;index2 < height; index2++)
         {
 colorModel= newBufferedImage!.getColorModel();
     
@@ -182,72 +168,57 @@ bx= colorModel!.getBlue(dataElements);
 
     public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
-;
+    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
     
 
-    var MAX: number = 255;
-;
+    var MAX: number = 255;;
     
 
-    var r: number = (basicColor!.red) /MAX;
-;
+    var r: number = (basicColor!.red) /MAX;;
     
 
-    var g: number = (basicColor!.green) /MAX;
-;
+    var g: number = (basicColor!.green) /MAX;;
     
 
-    var b: number = (basicColor!.blue) /MAX;
-;
+    var b: number = (basicColor!.blue) /MAX;;
     
 
-    var width: number = image.getWidth()!;
-;
+    var width: number = image.getWidth()!;;
     
 
-    var height: number = image.getHeight()!;
-;
+    var height: number = image.getHeight()!;;
     
 
-    var colorModel: ColorModel
-;
+    var colorModel: ColorModel;;
     
 
-    var dataElements: any
-;
+    var dataElements: any;;
     
 
-    var ax: number= 0
-;
+    var ax: number= 0;;
     
 
-    var rx: number= 0
-;
+    var rx: number= 0;;
     
 
-    var gx: number= 0
-;
+    var gx: number= 0;;
     
 
-    var bx: number= 0
-;
+    var bx: number= 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < width; index++)
+    var index: number = 0;index < width; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < height; index2++)
+    var index2: number = 0;index2 < height; index2++)
         {
 colorModel= newBufferedImage!.getColorModel();
     
@@ -279,40 +250,33 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
 
     public setAlpha(unusedOriginalImage: Image, image: Image, imageIndex: number, alphaInt: number){
 
-    var alpha: number = alphaInt;
-;
+    var alpha: number = alphaInt;;
     
 
-    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
-;
+    var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;;
     
 
-    var width: number = image.getWidth()!;
-;
+    var width: number = image.getWidth()!;;
     
 
-    var height: number = image.getHeight()!;
-;
+    var height: number = image.getHeight()!;;
     
 
-    var raster: WritableRaster = newBufferedImage!.getAlphaRaster()!;
-;
+    var raster: WritableRaster = newBufferedImage!.getAlphaRaster()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < width; index++)
+    var index: number = 0;index < width; index++)
         {
 
 
 
 
                         for (
-    var index2: number = 0;
-index2 < height; index2++)
+    var index2: number = 0;index2 < height; index2++)
         {
 raster.getPixel(index, index2, this.colorArray);
     
@@ -331,31 +295,26 @@ raster.setPixel(index, index2, this.colorArray);
 
         try {
             
-    var newImageArray: Image[] = new Array(originalImageArray!.length);
-;
+    var newImageArray: Image[] = new Array(originalImageArray!.length);;
     
 
     var size: number = newImageArray!.length
-                ;
-;
+                ;;
     
 
-    var originalImage: Image
-;
+    var originalImage: Image;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 originalImage= originalImageArray[index]!;
     
 
-    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
-;
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;;
     
 image.getGraphics()!.drawImage(originalImage, 0, 0, Anchor.TOP_LEFT);
     
@@ -374,8 +333,7 @@ newImageArray[index]= image;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
     

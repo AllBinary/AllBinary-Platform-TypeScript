@@ -58,6 +58,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 
 export class ValidationView extends ShippingAddressesView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -69,8 +70,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
     public isValid(): Boolean{
 
-    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-;
+    var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());;
     
 this.streetAddressList= billingAddressesEntity!.get();
     
@@ -90,20 +90,17 @@ this.streetAddressList= billingAddressesEntity!.get();
                                     }
                                 
 
-    var size: number = this.streetAddressList!.size()!;
-;
+    var size: number = this.streetAddressList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var streetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
-;
+    var streetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;;
     
 
                         if(streetAddress!.isValid() == Boolean.FALSE)

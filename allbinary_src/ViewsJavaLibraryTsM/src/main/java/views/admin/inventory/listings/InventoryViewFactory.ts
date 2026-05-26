@@ -63,8 +63,7 @@ export class InventoryViewFactory
             
     public static getInstance(searchRequest: SearchRequest): InventoryViewSearchInterface{
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
@@ -83,8 +82,7 @@ export class InventoryViewFactory
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(SearchRequest)", e);
     
@@ -100,6 +98,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(Sear
 }
 
 }
+
 
 private constructor (){
 

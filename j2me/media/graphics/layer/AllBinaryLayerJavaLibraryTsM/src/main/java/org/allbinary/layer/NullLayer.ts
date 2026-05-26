@@ -58,6 +58,7 @@ export class NullLayer extends Layer {
     
 }
 
+
 private constructor (){
             super(0, 0);
                     

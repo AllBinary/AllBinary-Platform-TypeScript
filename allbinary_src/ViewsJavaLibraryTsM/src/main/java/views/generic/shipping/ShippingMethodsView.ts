@@ -92,9 +92,10 @@ export class ShippingMethodsView extends HttpStoreComponentView implements DomNo
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private shippingMethods: ShippingMethods
+    private shippingMethods: ShippingMethods;
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -114,74 +115,58 @@ this.shippingMethods= new ShippingMethods(this.abeClientInformation, this.storeF
 
         try {
             
-    var shippingMethodsNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODSORDERSUMMARIES)!;
-;
+    var shippingMethodsNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODSORDERSUMMARIES)!;;
     
 
-    var order: OrderInterface = this.getWeblisketSession()!.getOrder()!;
-;
+    var order: OrderInterface = this.getWeblisketSession()!.getOrder()!;;
     
 
-    var basket: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;
-;
+    var basket: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;;
     
 
-    var shippingAddressesEntityInterface: StreetAddressesEntityInterface = ShippingAddressesEntityFactory.getInstance()!.getInstance(this.getWeblisketSession()!.getUserName())!;
-;
+    var shippingAddressesEntityInterface: StreetAddressesEntityInterface = ShippingAddressesEntityFactory.getInstance()!.getInstance(this.getWeblisketSession()!.getUserName())!;;
     
 
-    var streetAddress: StreetAddress = shippingAddressesEntityInterface!.getDefault()!;
-;
+    var streetAddress: StreetAddress = shippingAddressesEntityInterface!.getDefault()!;;
     
 
-    var shippingVector: Vector = this.shippingMethods!.get()!;
-;
+    var shippingVector: Vector = this.shippingMethods!.get()!;;
     
 
-    var size: number = shippingVector!.length!;
-;
+    var size: number = shippingVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var shippingMethodNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODORDERSUMMARY)!;
-;
+    var shippingMethodNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODORDERSUMMARY)!;;
     
 
-    var shipping: ShippingInterface = shippingVector!.get(index) as ShippingInterface;
-;
+    var shipping: ShippingInterface = shippingVector!.get(index) as ShippingInterface;;
     
 
-    var shippingView: DomNodeInterface = shipping as DomNodeInterface;
-;
+    var shippingView: DomNodeInterface = shipping as DomNodeInterface;;
     
 shippingMethodNode!.appendChild(shippingView!.toXmlNode(document));
     
 
-    var shippingCost: Money = shipping.getCost(order)!;
-;
+    var shippingCost: Money = shipping.getCost(order)!;;
     
 
-    var subTotal: Money = basket.getSubTotal()!;
-;
+    var subTotal: Money = basket.getSubTotal()!;;
     
 
-    var taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;
-;
+    var taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;;
     
 
-    var tax: Money = new Money();
-;
+    var tax: Money = new Money();;
     
 
-    var total: Money = new Money();
-;
+    var total: Money = new Money();;
     
 total.add(shippingCost!.toString());
     
@@ -260,8 +245,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 } catch(e) 
             {
 
-    var error: string = "Failed to view ShippingMethods";
-;
+    var error: string = "Failed to view ShippingMethods";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))

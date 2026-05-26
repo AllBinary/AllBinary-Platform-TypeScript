@@ -45,6 +45,7 @@ export class TouchJ2ME
             extends Object
          {
         
+
 public constructor (){
 
             super();

@@ -93,9 +93,10 @@ export class RotationImageJPanel extends javax.swing.JPanel implements ImageProc
 
     private readonly imageStrings: ImageStrings = ImageStrings.getInstance()!;
 
-    private imageProcessorInput: ImageProcessorInput
+    private imageProcessorInput: ImageProcessorInput;
 
-    private result: BufferedImage
+    private result: BufferedImage;
+
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
                     
@@ -115,14 +116,12 @@ new class extends Thread
                                 
     public run(){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var angleAsString: string = RotationImageJPanel.prototype.totalAngleJComboBox!.getSelectedItem() as string;
-;
+    var angleAsString: string = RotationImageJPanel.prototype.totalAngleJComboBox!.getSelectedItem() as string;;
     
 ImageArrayRotationUtil.getInstance()!.process(RotationImageJPanel.prototype.getImageProcessorInput(), angleAsString, RotationImageJPanel.prototype);
     
@@ -183,8 +182,7 @@ this.jPanel3= new javax.swing.JPanel();
 this.jLabel2= new javax.swing.JLabel();
     
 
-    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);
-;
+    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);;
     
 this.jPanel1!.setLayout(jPanel1Layout);
     
@@ -226,8 +224,7 @@ this.jLabel3!.setText("Total Angle:");
 this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
 
-    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);
-;
+    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);;
     
 this.jPanel2!.setLayout(jPanel2Layout);
     
@@ -238,8 +235,7 @@ jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.
 this.jLabel2!.setText("Results:");
     
 
-    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);
-;
+    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);;
     
 this.jPanel3!.setLayout(jPanel3Layout);
     
@@ -248,8 +244,7 @@ jPanel3Layout!.setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdeskto
 jPanel3Layout!.setVerticalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jLabel2));
     
 
-    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);
-;
+    var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -270,23 +265,23 @@ this.process();
 }
 
 
-    private generateJButton: javax.swing.JButton
+    private generateJButton: javax.swing.JButton;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private jLabel3: javax.swing.JLabel
+    private jLabel3: javax.swing.JLabel;
 
-    private jPanel1: javax.swing.JPanel
+    private jPanel1: javax.swing.JPanel;
 
-    private jPanel2: javax.swing.JPanel
+    private jPanel2: javax.swing.JPanel;
 
-    private jPanel3: javax.swing.JPanel
+    private jPanel3: javax.swing.JPanel;
 
-    private totalAngleJComboBox: javax.swing.JComboBox
+    private totalAngleJComboBox: javax.swing.JComboBox;
 
-    private writeOverOriginalJCheckBox: javax.swing.JCheckBox
+    private writeOverOriginalJCheckBox: javax.swing.JCheckBox;
 
     public getImageProcessorInput(): ImageProcessorInput{
 
@@ -312,20 +307,17 @@ this.result= generatedBufferedImage;
 this.getParent()!.repaint();
     
 
-    var file: File = this.imageProcessorInput!.getFiles()[index]!;
-;
+    var file: File = this.imageProcessorInput!.getFiles()[index]!;;
     
 
                         if(!this.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
-    var filePath: string = file.getAbsolutePath()!;
-;
+    var filePath: string = file.getAbsolutePath()!;;
     
 
-    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
-;
+    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;;
     
 filePath= new StringMaker().append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
@@ -335,8 +327,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(RotationImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
-;
+    var isWritten: boolean = ImageIO.write(RotationImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;;
     
 this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     

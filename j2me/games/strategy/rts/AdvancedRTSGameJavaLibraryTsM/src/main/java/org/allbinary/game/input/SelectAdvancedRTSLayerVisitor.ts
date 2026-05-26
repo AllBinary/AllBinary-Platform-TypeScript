@@ -63,7 +63,8 @@ import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js
 export class SelectAdvancedRTSLayerVisitor extends Visitor {
         
 
-    private readonly selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput
+    private readonly selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput;
+
 public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput){
 
             super();
@@ -74,40 +75,33 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
 
     public visit(anyType: any = {}): any{
 
-    var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;
-;
+    var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;;
     
 
                         if(selectedLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && selectedLayer!.getType() == BuildingLayer.getStaticType())
                         
                                     {
                                     
-    var rtsGameLayer: AdvancedRTSGameLayer = selectedLayer as AdvancedRTSGameLayer;
-;
+    var rtsGameLayer: AdvancedRTSGameLayer = selectedLayer as AdvancedRTSGameLayer;;
     
 
-    var assignWaypointsUtil: AssignWaypointsUtil = AssignWaypointsUtil.getInstance()!;
-;
+    var assignWaypointsUtil: AssignWaypointsUtil = AssignWaypointsUtil.getInstance()!;;
     
 
-    var list: BasicArrayList = this.selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;
-;
+    var list: BasicArrayList = this.selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;;
     
 
-    var currentRTSLayer: RTSLayer
-;
+    var currentRTSLayer: RTSLayer;;
     
 
-    var unitLayer: UnitLayer
-;
+    var unitLayer: UnitLayer;;
     
 
 
 
 
                         for (
-    var index: number = list.size() -1;
-index >= 0; index--)
+    var index: number = list.size() -1;index >= 0; index--)
         {
 currentRTSLayer= list.get(index) as RTSLayer;
     

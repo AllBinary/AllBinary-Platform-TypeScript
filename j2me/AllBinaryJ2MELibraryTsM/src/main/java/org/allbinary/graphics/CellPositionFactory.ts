@@ -74,9 +74,10 @@ export class CellPositionFactory
     private cellPositionArray: CellPosition[][] = new Array(0) [0]
                                                             ;
 
-    private columns: number= 0
+    private columns: number= 0;
 
-    private rows: number= 0
+    private rows: number= 0;
+
 private constructor (){
 
             super();
@@ -92,12 +93,10 @@ this.columns= columns;
 this.rows= rows;
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Init: columns: ");
     
@@ -114,16 +113,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
 
 
                         for (
-    var column: number = 0;
-column < columns; column++)
+    var column: number = 0;column < columns; column++)
         {
 
 
 
 
                         for (
-    var row: number = 0;
-row < rows; row++)
+    var row: number = 0;row < rows; row++)
         {
 this.createInstance(column, row);
     
@@ -148,8 +145,7 @@ this.createInstance(column, row);
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(new StringMaker().append("columns: ")!.appendint(this.getColumns())!.append(" rows: ")!.appendint(this.getRows())!.append(" col: ")!.appendint(i_column)!.append(" row: ")!.appendint(i_row)!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
@@ -166,8 +162,7 @@ this.logUtil!.put(new StringMaker().append("columns: ")!.appendint(this.getColum
 
     public createInstance(i_column: number, i_row: number): CellPosition{
 
-    var cellPositionCanBeNull: CellPosition = this.cellPositionArray[i_column]![i_row];
-;
+    var cellPositionCanBeNull: CellPosition = this.cellPositionArray[i_column]![i_row];;
     
 
                         if(cellPositionCanBeNull == 

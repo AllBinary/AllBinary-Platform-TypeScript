@@ -48,7 +48,8 @@ export class InitInfoDocument
          {
         
 
-    private initInfoDocument: Document
+    private initInfoDocument: Document;
+
 public constructor (){
 
             super();

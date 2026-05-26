@@ -51,6 +51,7 @@ import { GameKeyFactory } from './GameKeyFactory.js';
 
 export class DesktopDefaultGameInputMapping extends PersistentInputMapping {
         
+
 public constructor (){
             super(GamePersistanceStrings.getInstance()!.DEFAULT_INPUT_MAPPING_RECORD_ID);
                     
@@ -58,16 +59,13 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;
-;
+    var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;;
     
 
-    var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;
-;
+    var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;;
     
 
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-;
+    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.FIRE, pcKeyFactory!.ENTER);
     

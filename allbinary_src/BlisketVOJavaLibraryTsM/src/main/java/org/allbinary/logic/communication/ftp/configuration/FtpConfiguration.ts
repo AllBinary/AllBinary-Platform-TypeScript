@@ -50,17 +50,19 @@ export class FtpConfiguration
          implements FtpConfigurationInterface {
         
 
-    private ftpServer: string
+    private ftpServer: string;
 
-    private ftpPath: string
+    private ftpPath: string;
 
-    private ftpUserName: string
+    private ftpUserName: string;
 
-    private ftpPassword: string
+    private ftpPassword: string;
+
 public constructor (){
 
             super();
         }
+
 
 public constructor (hashMap: HashMap<any, any>){
 

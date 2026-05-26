@@ -61,6 +61,7 @@ export class UpOrientationInputToGameKeyEventAction extends GameKeyCompleteMotio
     
 }
 
+
 private constructor (){
             super("Up Action", OrientationMotionGestureFactory.getInstance()!.UP, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     

@@ -58,6 +58,7 @@ export class CustomizersValidationView extends CustomizersView implements Valida
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

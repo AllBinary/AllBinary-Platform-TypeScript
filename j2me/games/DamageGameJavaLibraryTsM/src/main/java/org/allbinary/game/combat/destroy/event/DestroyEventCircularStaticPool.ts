@@ -69,6 +69,7 @@ export class DestroyEventCircularStaticPool
 
 
     private EVENT_POOL: AllBinaryEventCircularPool = new AllBinaryEventCircularPool(20);
+
 private constructor (){
 
             super();
@@ -85,8 +86,7 @@ this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
             
     public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
 
-    var destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance() as DestroyedEvent;
-;
+    var destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance() as DestroyedEvent;;
     
 destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);
     

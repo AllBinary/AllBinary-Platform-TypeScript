@@ -56,6 +56,7 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 
 export class SelectValidationView extends BillingAddressView implements ValidationComponentInterface {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

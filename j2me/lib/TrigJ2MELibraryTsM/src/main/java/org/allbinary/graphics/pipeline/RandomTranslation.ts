@@ -57,20 +57,16 @@ export class RandomTranslation
             
     public static getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
 
-    var myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-;
+    var myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;;
     
 
-    var x: number =  -myRandomFactory!.getNextInt(howMuch);;
-;
+    var x: number =  -myRandomFactory!.getNextInt(howMuch);;;
     
 
-    var y: number = myRandomFactory!.getNextInt(howMuch)!;
-;
+    var y: number = myRandomFactory!.getNextInt(howMuch)!;;
     
 
-    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);
-;
+    var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);;
     
 graphicsPipe!.createMatrix();
     

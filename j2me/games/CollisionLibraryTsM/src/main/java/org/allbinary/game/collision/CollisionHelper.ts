@@ -50,7 +50,8 @@ export class CollisionHelper
          {
         
 
-    sourceLayerInterface: AllBinaryLayer
+    sourceLayerInterface: AllBinaryLayer;
+
 public constructor (sourceLayerInterface: AllBinaryLayer){
 
             super();

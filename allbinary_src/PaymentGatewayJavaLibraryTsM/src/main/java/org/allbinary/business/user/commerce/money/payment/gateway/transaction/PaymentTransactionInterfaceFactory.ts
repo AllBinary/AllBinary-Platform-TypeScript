@@ -73,6 +73,7 @@ export class PaymentTransactionInterfaceFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -85,8 +86,7 @@ private constructor (){
 
         try {
             
-    var gatewayName: string = orderReview!.getPaymentMethod()!;
-;
+    var gatewayName: string = orderReview!.getPaymentMethod()!;;
     
 
                         if(gatewayName != 
@@ -95,16 +95,13 @@ private constructor (){
                         
                                     {
                                     
-    var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;
-;
+    var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;;
     
 
-    var paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface = paymentType!.getPaymentTransactionInterfaceFactoryInterface()!;
-;
+    var paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface = paymentType!.getPaymentTransactionInterfaceFactoryInterface()!;;
     
 
-    var paymentTransactionInterface: PaymentTransactionInterface = paymentTransactionInterfaceFactoryInterface!.getInstance(orderReview)!;
-;
+    var paymentTransactionInterface: PaymentTransactionInterface = paymentTransactionInterfaceFactoryInterface!.getInstance(orderReview)!;;
     
 
 
@@ -129,8 +126,7 @@ private constructor (){
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTANCE, e);
     

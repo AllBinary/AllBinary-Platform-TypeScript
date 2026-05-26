@@ -92,20 +92,16 @@ export class LoggingInitInfo
 
     public static getDoc(): Document{
 
-    var path: string = URLGLOBALS.getWebappPath() +LoggingInitInfo.PACKAGE;
-;
+    var path: string = URLGLOBALS.getWebappPath() +LoggingInitInfo.PACKAGE;;
     
 
-    var FILEABPATH: AbPath = new AbPath(path, INITFILENAME);
-;
+    var FILEABPATH: AbPath = new AbPath(path, INITFILENAME);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);
-;
+    var file: AbFile = new AbFile(FILEABPATH);;
     
 
-    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;
-;
+    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;;
     
 
 
@@ -145,42 +141,34 @@ export class LoggingInitInfo
 
         try {
             
-    var document: Document = LoggingInitInfo.getDoc()!;
-;
+    var document: Document = LoggingInitInfo.getDoc()!;;
     
 
-    var logConfigsNodeList: NodeList = document.getElementsByTagName(LogConfigsData.getInstance()!.NAME)!;
-;
+    var logConfigsNodeList: NodeList = document.getElementsByTagName(LogConfigsData.getInstance()!.NAME)!;;
     
 
-    var logConfigsNode: Node = logConfigsNodeList!.item(0)!;
-;
+    var logConfigsNode: Node = logConfigsNodeList!.item(0)!;;
     
 
-    var logConfigNodeVector: Vector = DomSearchHelper.getAllNodes(LogConfigData.getInstance()!.NAME, logConfigsNode!.getChildNodes())!;
-;
+    var logConfigNodeVector: Vector = DomSearchHelper.getAllNodes(LogConfigData.getInstance()!.NAME, logConfigsNode!.getChildNodes())!;;
     
 LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
     
 
-    var size: number = logConfigNodeVector!.length!;
-;
+    var size: number = logConfigNodeVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var node: Node = logConfigNodeVector!.elementAt(i) as Node;
-;
+    var node: Node = logConfigNodeVector!.elementAt(i) as Node;;
     
 
-    var logConfigInfo: LogConfig = new LogConfig(node);
-;
+    var logConfigInfo: LogConfig = new LogConfig(node);;
     
 LoggingInitInfo.logConfigInfoList!.add(logConfigInfo);
     
@@ -266,28 +254,23 @@ LoggingInitInfo.updateIfNeeded();
 LoggingInitInfo.updateIfNeeded();
     
 
-    var allLogTypeVector: BasicArrayList = new BasicArrayListD();
-;
+    var allLogTypeVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
-;
+    var size: number = LoggingInitInfo.logConfigInfoList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
-;
+    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;;
     
 
-    var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
-;
+    var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;;
     
 
                         if(logConfigInfo!.isEnabled())
@@ -315,28 +298,23 @@ index < size; index++)
 LoggingInitInfo.updateIfNeeded();
     
 
-    var allLogTypeVector: BasicArrayList = new BasicArrayListD();
-;
+    var allLogTypeVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
-;
+    var size: number = LoggingInitInfo.logConfigInfoList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
-;
+    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;;
     
 
-    var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
-;
+    var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;;
     
 
                         if(logConfigInfo!.isEnabled())
@@ -356,6 +334,7 @@ index < size; index++)
                         return allLogTypeVector;
     
 }
+
 
 public constructor (){
 
@@ -403,8 +382,7 @@ public constructor (){
 
         try {
             
-    var document: Document = LoggingInitInfo.getDoc()!;
-;
+    var document: Document = LoggingInitInfo.getDoc()!;;
     
 
 

@@ -68,6 +68,7 @@ export class AcceptableResponseGenerator
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -78,22 +79,18 @@ private constructor (){
             
     public get(httpServletRequest: HttpServletRequest): string{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;
-;
+    var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;;
     
 
-    var acceptable: string = httpServletRequest!.getHeader("accept")!;
-;
+    var acceptable: string = httpServletRequest!.getHeader("accept")!;;
     
 
-    var result: string = acceptableResponseUtil!.getTagName(0)!;
-;
+    var result: string = acceptableResponseUtil!.getTagName(0)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTP))
@@ -111,16 +108,14 @@ private constructor (){
                         
                                     {
                                     
-    var size: number = acceptableResponseUtil!.size()!;
-;
+    var size: number = acceptableResponseUtil!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(acceptable.compareTo(acceptableResponseUtil!.get(index)) == 0)

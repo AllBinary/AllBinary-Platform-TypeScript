@@ -43,6 +43,7 @@ export class CustomItem
         
 
     public static readonly NULL_CUSTOM_ITEM: CustomItem = new CustomItem(StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+
 protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();

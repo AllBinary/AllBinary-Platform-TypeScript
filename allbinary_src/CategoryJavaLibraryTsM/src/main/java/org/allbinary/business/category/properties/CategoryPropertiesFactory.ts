@@ -61,7 +61,8 @@ export class CategoryPropertiesFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private categoryPropertiesInterface: CategoryPropertiesInterface
+    private categoryPropertiesInterface: CategoryPropertiesInterface;
+
 public constructor (name: string){
 
             super();
@@ -69,12 +70,14 @@ public constructor (name: string){
     
 }
 
+
 public constructor (node: Node){
 
             super();
         this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryPropertiesInterface;
     
 }
+
 
 public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
@@ -98,8 +101,7 @@ public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))

@@ -59,6 +59,7 @@ export class RaceTrackRoadsGeographicMapCellHistoryFactory
     
 }
 
+
 private constructor (){
 
             super();

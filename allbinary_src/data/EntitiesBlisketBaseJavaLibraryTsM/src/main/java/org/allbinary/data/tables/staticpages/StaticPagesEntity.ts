@@ -70,6 +70,7 @@ export class StaticPagesEntity extends AbSqlBean implements StaticPagesEntityInt
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly TABLENAME: string = "staticpages";
+
 public constructor (){
             super(new StaticPagesDbInitInfo());
                     
@@ -115,16 +116,14 @@ this.setTableName(this.TABLENAME);
 
     public getFile(store: string, keywords: string): string{
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME, store);
     
 whereHashMap!.put(BasicItemData.KEYWORDS, keywords);
     
 
-    var file: string = super.getField(whereHashMap, SearchData.PAGE)!;
-;
+    var file: string = super.getField(whereHashMap, SearchData.PAGE)!;;
     
 
 
@@ -143,8 +142,7 @@ super.deleteWhere(BasicItemData.KEYWORDS, keywords);
 
     public dropTable(): string{
 
-    var returnStr: string = super.dropTable()!;
-;
+    var returnStr: string = super.dropTable()!;;
     
 
 
@@ -163,8 +161,7 @@ super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWO
 
     public createTableStatement(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(TABLENAME)!.append(this.sqlStrings!.START)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.SIXTY_CHAR_COLUMN_NOT_NULL)!.append(BasicItemData.KEYWORDS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(SearchData.PAGE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(StoreFrontData.getInstance()!.NAME)!.append(CommonSeps.getInstance()!.COMMA_SEP)!.append(BasicItemData.KEYWORDS)!.append(this.sqlStrings!.END);
     

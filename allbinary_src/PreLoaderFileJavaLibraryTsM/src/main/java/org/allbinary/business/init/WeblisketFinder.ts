@@ -86,12 +86,10 @@ export class WeblisketFinder
             
     public static main(args: string[]){
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var vector: BasicArrayList = WeblisketFinder.getInstance()!.findAll(stringUtil!.EMPTY_STRING)!;
-;
+    var vector: BasicArrayList = WeblisketFinder.getInstance()!.findAll(stringUtil!.EMPTY_STRING)!;;
     
 console.log(vector.size());
     
@@ -103,6 +101,7 @@ console.log(vector.size());
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly subDirectory: SubDirectory = SubDirectory.getInstance()!;
+
 private constructor (){
 
             super();
@@ -150,12 +149,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "findAll", e);
 
         try {
             
-    var filePath: string = file.getPath()!;
-;
+    var filePath: string = file.getPath()!;;
     
 
-    var end: number = filePath!.indexOf(KEY)!;
-;
+    var end: number = filePath!.indexOf(KEY)!;;
     
 
                         if(end < 0)

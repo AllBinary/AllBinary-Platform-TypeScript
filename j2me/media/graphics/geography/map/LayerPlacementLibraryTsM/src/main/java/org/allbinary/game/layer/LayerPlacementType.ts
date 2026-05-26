@@ -46,7 +46,8 @@ export class LayerPlacementType
          {
         
 
-    private type: number
+    private type: number;
+
  constructor (type: number){
 
             super();

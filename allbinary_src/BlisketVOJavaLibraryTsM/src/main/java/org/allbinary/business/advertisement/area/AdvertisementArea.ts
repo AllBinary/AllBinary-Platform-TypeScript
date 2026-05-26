@@ -62,15 +62,16 @@ export class AdvertisementArea
          implements AdvertisementAreaInterface {
         
 
-    private name: string
+    private name: string;
 
-    private storeName: string
+    private storeName: string;
 
-    private description: string
+    private description: string;
 
-    private advertisementAreaConstraintsInterface: AdvertisementAreaConstraintsInterface
+    private advertisementAreaConstraintsInterface: AdvertisementAreaConstraintsInterface;
 
-    private campaign: string
+    private campaign: string;
+
 public constructor (hashMap: HashMap<any, any>){
 
             super();
@@ -81,12 +82,10 @@ this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION) as string;
     
 
-    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as string;
-;
+    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as string;;
     
 
-    var document: Document = DomDocumentHelper.create(constraintsDomString)!;
-;
+    var document: Document = DomDocumentHelper.create(constraintsDomString)!;;
     
 this.advertisementAreaConstraintsInterface= new AdvertisementAreaConstraints(document);
     

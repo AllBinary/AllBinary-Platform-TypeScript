@@ -80,9 +80,10 @@ export class CustomUriResolver
 
     private readonly uriResolverStrings: URIResolverStrings = URIResolverStrings.getInstance()!;
 
-    private path: string
+    private path: string;
 
-    private basicURIResolver: BasicUriResolver
+    private basicURIResolver: BasicUriResolver;
+
 public constructor (path: string, basicURIResolver: BasicUriResolver){
 
             super();
@@ -99,8 +100,7 @@ this.basicURIResolver= basicURIResolver;
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.path);
     
@@ -109,8 +109,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(href);
     
 
-    var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;
-;
+    var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))

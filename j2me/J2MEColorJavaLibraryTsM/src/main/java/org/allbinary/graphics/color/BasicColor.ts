@@ -49,37 +49,36 @@ export class BasicColor
          {
         
 
-    private readonly name: string
+    private readonly name: string;
 
-    private readonly value: number
+    private readonly value: number;
 
-    private readonly redComponent: number
+    private readonly redComponent: number;
 
-    private readonly greenComponent: number
+    private readonly greenComponent: number;
 
-    private readonly blueComponent: number
+    private readonly blueComponent: number;
 
-    private readonly alphaComponent: number
+    private readonly alphaComponent: number;
 
-    public readonly red: number
+    public readonly red: number;
 
-    public readonly green: number
+    public readonly green: number;
 
-    public readonly blue: number
+    public readonly blue: number;
 
-    public readonly alpha: number
+    public readonly alpha: number;
+
  constructor (alphaValue: number, value: number, name: string){
 
             super();
         this.name= name;
     
 
-    var tempValue: number= 0
-;
+    var tempValue: number= 0;;
     
 
-    var basicColorUtil: BasicColorUtil = BasicColorUtil.getInstance()!;
-;
+    var basicColorUtil: BasicColorUtil = BasicColorUtil.getInstance()!;;
     
 
                         if(basicColorUtil!.isAlpha)
@@ -110,32 +109,28 @@ export class BasicColor
                         }
                             
 
-    var alphaInt: number = ((tempValue>>24)&255);
-;
+    var alphaInt: number = ((tempValue>>24)&255);;
     
 this.alpha= alphaInt;
     
 this.alphaComponent= (alphaInt) /255;
     
 
-    var redInt: number = ((tempValue>>16)&255);
-;
+    var redInt: number = ((tempValue>>16)&255);;
     
 this.red= redInt;
     
 this.redComponent= (redInt) /255;
     
 
-    var greenInt: number = ((tempValue>>8)&255);
-;
+    var greenInt: number = ((tempValue>>8)&255);;
     
 this.green= greenInt;
     
 this.greenComponent= (greenInt) /255;
     
 
-    var blueInt: number = ((tempValue)&255);
-;
+    var blueInt: number = ((tempValue)&255);;
     
 this.blue= blueInt;
     
@@ -168,8 +163,7 @@ this.value= tempValue;
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("BasicColor: ");
     

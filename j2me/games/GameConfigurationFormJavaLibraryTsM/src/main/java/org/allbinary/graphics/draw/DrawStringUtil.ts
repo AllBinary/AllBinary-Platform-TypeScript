@@ -82,20 +82,16 @@ export class DrawStringUtil
 
     public paintVerticle(graphics: Graphics, string: string, x: number, y: number, anchor: number){
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var openGLFeatureUtil: OpenGLFeatureUtil = OpenGLFeatureUtil.getInstance()!;
-;
+    var openGLFeatureUtil: OpenGLFeatureUtil = OpenGLFeatureUtil.getInstance()!;;
     
 
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
     
 
-    var offsetY: number = 0;
-;
+    var offsetY: number = 0;;
     
 
                         if(J2MEUtil.isHTML())
@@ -129,24 +125,20 @@ export class DrawStringUtil
                                     }
                                 
 
-    var size: number = string.length!;
-;
+    var size: number = string.length!;;
     
 
-    var offsetX: number = 0;
-;
+    var offsetX: number = 0;;
     
 
-    var aChar: string
-;
+    var aChar: string;;
     
 
 
 
 
                         for (
-    var index: number = size -1;
-index >= 0; index--)
+    var index: number = size -1;index >= 0; index--)
         {
 aChar= string[index];
     
@@ -170,8 +162,7 @@ graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor);
 
     public drawCenterString(graphics: Graphics, string: string, offset: number, length: number, x: number, y: number){
 
-    var width: number = (graphics.getFont()!.substringWidth(string, offset, length)>>1);
-;
+    var width: number = (graphics.getFont()!.substringWidth(string, offset, length)>>1);;
     
 
         try {
@@ -192,40 +183,33 @@ PreLogUtil.put(new StringMaker().append("Exception: stringLength: ")!.appendint(
 
     public drawCenterStrings(graphics: Graphics, stringArray: string[], maxWidth: number, x: number, y: number){
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-;
+    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
     
 
-    var extraLines: number = 0;
-;
+    var extraLines: number = 0;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < stringArray!.length; index++)
+    var index: number = 0;index < stringArray!.length; index++)
         {
 
-    var string: string = stringArray[index]!;
-;
+    var string: string = stringArray[index]!;;
     
 
                         if(string != this.EMPTY_STRING)
                         
                                     {
                                     
-    var width: number = graphics.getFont()!.stringWidth(string)!;
-;
+    var width: number = graphics.getFont()!.stringWidth(string)!;;
     
 
-    var minTotalLines: number = 1;
-;
+    var minTotalLines: number = 1;;
     
 
                         if(width > maxWidth)
@@ -237,20 +221,16 @@ index < stringArray!.length; index++)
                                     }
                                 
 
-    var linePortion: number = string.length /minTotalLines;
-;
+    var linePortion: number = string.length /minTotalLines;;
     
 
-    var offset: number = 0;
-;
+    var offset: number = 0;;
     
 
-    var currentLength: number = linePortion;
-;
+    var currentLength: number = linePortion;;
     
 
-    var size: number = string.length!;
-;
+    var size: number = string.length!;;
     
 
         while(offset < size)

@@ -66,8 +66,7 @@ export class AbeClientLicense
 
     public static hasRequiredKeys(resultHashtable: Hashtable<any, any>): boolean{
 
-    var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
-;
+    var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
 
                         if(resultHashtable!.containsKey(abeClientInformationData!.LICENSEID) && resultHashtable!.containsKey(abeClientInformationData!.LICENSESERVERS) && resultHashtable!.containsKey(abeClientInformationData!.KEY) && resultHashtable!.containsKey(abeClientInformationData!.LICENSE_TYPE))
@@ -95,27 +94,26 @@ export class AbeClientLicense
 }
 
 
-    private hashtable: Hashtable<any, any>
+    private hashtable: Hashtable<any, any>;
 
-    private id: string
+    private id: string;
 
-    private servers: BasicArrayList
+    private servers: BasicArrayList;
 
-    private special: string
+    private special: string;
 
-    private licenseType: LicenseType
+    private licenseType: LicenseType;
+
 public constructor (hashtable: Hashtable<any, any>){
 
             super();
         this.hashtable= new Hashtable<any, any>();
     
 
-    var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
-;
+    var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;;
     
 
-    var keyValue: any = hashtable.get(abeClientInformationData!.KEY)!;
-;
+    var keyValue: any = hashtable.get(abeClientInformationData!.KEY)!;;
     
 
                         if(keyValue != 
@@ -138,36 +136,31 @@ public constructor (hashtable: Hashtable<any, any>){
 this.id= hashtable.get(abeClientInformationData!.LICENSEID) as string;
     
 
-    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS) as Vector;
-;
+    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS) as Vector;;
     
 this.servers= new BasicArrayListD();
     
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 this.servers.add(vector.get(index));
     
 }
 
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 this.setSpecial(stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.SPECIAL) as string));
     
 
-    var licenseTypeString: string = stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as string)!;
-;
+    var licenseTypeString: string = stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as string)!;;
     
 this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeString);
     
@@ -216,8 +209,7 @@ this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeStrin
 
     public isValid(): boolean{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY)))
@@ -243,12 +235,10 @@ this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeStrin
 
     public toString(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var BREAK: string = "<br/>";
-;
+    var BREAK: string = "<br/>";;
     
 stringBuffer!.append("License Id: ");
     
@@ -269,24 +259,20 @@ stringBuffer!.append(this.hashtable.toString());
 stringBuffer!.append(BREAK);
     
 
-    var serverVector: BasicArrayList = this.getServers()!;
-;
+    var serverVector: BasicArrayList = this.getServers()!;;
     
 
-    var size: number = serverVector!.size()!;
-;
+    var size: number = serverVector!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var nextServerString: string = serverVector!.get(index) as string;
-;
+    var nextServerString: string = serverVector!.get(index) as string;;
     
 stringBuffer!.append("Server: ");
     

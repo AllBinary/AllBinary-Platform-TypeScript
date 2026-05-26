@@ -68,6 +68,7 @@ export class StringUtil
                                                         ];
 
     private readonly stringArray: string[] = [];
+
 private constructor (){
 
             super();
@@ -115,20 +116,17 @@ private constructor (){
 
     public count(string: string, aChar: string): number{
 
-    var count: number = 0;
-;
+    var count: number = 0;;
     
 
-    var size: number = string.length!;
-;
+    var size: number = string.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
                         if(string[index] == aChar)

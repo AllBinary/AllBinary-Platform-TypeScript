@@ -105,12 +105,10 @@ export class AllBinaryMediaManager
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
-    var commonString: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonString: CommonStrings = CommonStrings.getInstance()!;;
     
 logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
@@ -155,8 +153,7 @@ System.gc();
                                 
                         else {
                             
-    var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;
-;
+    var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;;
     
 
 
@@ -197,6 +194,7 @@ System.gc();
                                     }
                                 
 }
+
 
 private constructor (){
 

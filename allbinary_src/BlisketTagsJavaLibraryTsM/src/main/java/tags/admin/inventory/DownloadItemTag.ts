@@ -53,6 +53,7 @@ import { StoreValidationTransformTag } from '../../../tags/StoreValidationTransf
         
 export class DownloadItemTag extends StoreValidationTransformTag {
         
+
 public constructor (){
 
             super();

@@ -63,6 +63,7 @@ export class SWTProcessor
     
 }
 
+
 protected constructor (){
 
             super();

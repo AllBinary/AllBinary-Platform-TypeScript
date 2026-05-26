@@ -73,26 +73,22 @@ export class WeaponLayerArrayLayerCircularStaticPool
     public init(){
 
     var WEAPONLAYER_ARRAY: any[][] = new Array(this.MAX *2)
-                                                            ;
-;
+                                                            ;;
     
 
     var TWO_WEAPONLAYER_ARRAY: any[][] = new Array(this.MAX)
-                                                            ;
-;
+                                                            ;;
     
 
     var THREE_WEAPONLAYER_ARRAY: any[][] = new Array(this.MAX)
-                                                            ;
-;
+                                                            ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < this.MAX; index++)
+    var index: number = 0;index < this.MAX; index++)
         {
 WEAPONLAYER_ARRAY[index]= new Array(1);
     
@@ -116,8 +112,7 @@ this.ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
 
     public getInstanceArray(size: number): WeaponLayer[]{
 
-    var weaponLayerArray: WeaponLayer[] = this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]! as WeaponLayer[];
-;
+    var weaponLayerArray: WeaponLayer[] = this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]! as WeaponLayer[];;
     
 this.circularIndexUtil!.next();
     

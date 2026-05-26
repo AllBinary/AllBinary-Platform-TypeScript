@@ -76,9 +76,10 @@ export class InputAutomationRobotBundleActivator
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private inputRobotInterface: InputRobotInterface[]
+    private inputRobotInterface: InputRobotInterface[];
 
-    private serviceFactory: ServiceFactory
+    private serviceFactory: ServiceFactory;
+
 public constructor (){
 
             super();
@@ -110,8 +111,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
             
     getInputAutomationRobotChangeListener(context: BundleContext): InputAutomationRobotChangeListener{
 
-    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener.constructor.toString()!)!;
-;
+    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener.constructor.toString()!)!;;
     
 
                         if(serviceReference != 
@@ -120,8 +120,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
                         
                                     {
                                     
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference) as InputAutomationRobotChangeListener;
-;
+    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference) as InputAutomationRobotChangeListener;;
     
 
                         if(inputAutomationRobotChangeListener == 
@@ -160,8 +159,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
             this.logUtil!.putF(this.commonStrings!.START, this, "addRobots");
     
 
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
-;
+    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;;
     
 
                         if(inputAutomationRobotChangeListener != 
@@ -174,12 +172,10 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 
 
                         for (
-    var index: number = 0;
-index < this.getInputRobotInterface()!.length; index++)
+    var index: number = 0;index < this.getInputRobotInterface()!.length; index++)
         {
 
-    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;
-;
+    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;;
     
 inputAutomationRobotChangeListener!.onAdd(inputAutomationRobotChangeEvent);
     
@@ -205,8 +201,7 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
             this.logUtil!.putF(this.commonStrings!.START, this, "removeRobots");
     
 
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
-;
+    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;;
     
 
                         if(inputAutomationRobotChangeListener != 
@@ -219,12 +214,10 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
 
 
                         for (
-    var index: number = 0;
-index < this.getInputRobotInterface()!.length; index++)
+    var index: number = 0;index < this.getInputRobotInterface()!.length; index++)
         {
 
-    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;
-;
+    var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;;
     
 inputAutomationRobotChangeListener!.onRemove(inputAutomationRobotChangeEvent);
     

@@ -49,7 +49,8 @@ export class RunAtEndAnimationListener
          implements AnimationListenerInterface {
         
 
-    runnable: Runnable
+    runnable: Runnable;
+
 protected constructor (runnable: Runnable){
 
             super();

@@ -70,13 +70,14 @@ export class AllBinaryGameLayerManager extends AllBinaryLayerManager {
 
     public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(22)!;
 
-    private backgroundBasicColor: BasicColor
+    private backgroundBasicColor: BasicColor;
 
-    private foregroundBasicColor: BasicColor
+    private foregroundBasicColor: BasicColor;
 
-    private gameInfo: GameInfo
+    private gameInfo: GameInfo;
 
     private playerGameInputCompositeInterface: PlayerGameInputCompositeInterface = NullPlayerGameInputComposite.NULL_PLAYER_GAME_INPUT_COMPOSITE;
+
 public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor, gameInfo: GameInfo){
 
             super();
@@ -85,8 +86,7 @@ public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: Basi
 this.foregroundBasicColor= foregroundBasicColor;
     
 
-    var itemColorFactory: ItemColorFactory = ItemColorFactory.getInstance()!;
-;
+    var itemColorFactory: ItemColorFactory = ItemColorFactory.getInstance()!;;
     
 itemColorFactory!.INVERT_PAINT= this.backgroundBasicColor!.intValue();
     
@@ -165,21 +165,18 @@ this.gameInfo= gameInfo;
 
     public setLayerProcessorList(list: BasicArrayList){
 
-    var layerProcessorInterfaceArray: LayerProcessor[] = new Array(list.size());
-;
+    var layerProcessorInterfaceArray: LayerProcessor[] = new Array(list.size());;
     
 
     var size: number = layerProcessorInterfaceArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 layerProcessorInterfaceArray[index]= list.objectArray[index]! as LayerProcessor;
     

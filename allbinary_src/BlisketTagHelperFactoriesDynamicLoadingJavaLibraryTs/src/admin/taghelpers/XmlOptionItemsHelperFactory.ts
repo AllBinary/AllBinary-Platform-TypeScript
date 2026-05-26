@@ -57,6 +57,7 @@ export class XmlOptionItemsHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.XmlOptionItemsHelper";
 
     private static readonly FACTORYNAME: string = "XmlOptionHelperFactory";
+
 public constructor (){
 
             super();

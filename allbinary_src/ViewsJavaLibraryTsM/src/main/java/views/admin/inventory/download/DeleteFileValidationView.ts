@@ -79,7 +79,8 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
 export class DeleteFileValidationView extends DownloadableInventoryItemView implements ValidationComponentInterface {
         
 
-    private downloadItemId: string
+    private downloadItemId: string;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
                     
@@ -95,8 +96,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;
-;
+    var hashMap: HashMap<any, any> = new RequestParams(request).toHashMap()!;;
     
 
                         if(hashMap == 
@@ -138,8 +138,7 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
                                     }
                                 
 
-    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-;
+    var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;;
     
 this.itemInterface= inventoryEntity!.getItem(this.id);
     
@@ -159,12 +158,10 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
                                     }
                                 
 
-    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-;
+    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
-;
+    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
                         if(vector.length != 1)
@@ -224,8 +221,7 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
 
         try {
             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
                         if(this.id == 
@@ -250,12 +246,10 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
                                     }
                                 
 
-    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-;
+    var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;;
     
 
-    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
-;
+    var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;;
     
 
                         if(vector.length == 0)

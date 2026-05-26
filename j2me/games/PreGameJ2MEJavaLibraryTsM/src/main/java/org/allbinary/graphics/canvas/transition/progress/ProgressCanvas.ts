@@ -90,9 +90,9 @@ import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js
 export class ProgressCanvas extends RunnableCanvas implements PaintableInterface {
         
 
-    hasPainted: boolean= false
+    hasPainted: boolean= false;
 
-    private readonly backgroundBasicColor: BasicColor
+    private readonly backgroundBasicColor: BasicColor;
 
     public readonly GAUGE_PAINTABLE: Paintable = new class extends Paintable
                                 {
@@ -107,11 +107,11 @@ ProgressCanvas.prototype.paint2(graphics);
 
     allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.NULL_ALLBINARY_MIDLET;
 
-    private value: number= 0.0
+    private value: number= 0.0;
 
     private readonly maxValue: number = 100.0;
 
-    readonly gauge: ABCustomGaugeItem
+    readonly gauge: ABCustomGaugeItem;
 
     private readonly TEXT: string = this.commonStrings!.LOADING;
 
@@ -127,7 +127,6 @@ ProgressCanvas.prototype.paint2(graphics);
                                 {
                                 
     private readonly pathFindingThreadPool: ThreadPool = PathFindingThreadPool.getInstance()!;
-
                 //@Throws(Exception.constructor)
             
     public process(){
@@ -139,6 +138,7 @@ this.pathFindingThreadPool!.runAPriorityTask();
                             ;
 
     public inGameProcessor: Processor = Processor.getInstance()!;
+
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false);
                     
@@ -208,8 +208,7 @@ this.inProgress= true;
 this.logUtil!.putF(this.commonStrings!.START, this, this.START_BACKGROUND);
     
 
-    var myFont: MyFont = MyFont.getInstance()!;
-;
+    var myFont: MyFont = MyFont.getInstance()!;;
     
 this.setBackground(background);
     
@@ -323,8 +322,7 @@ this.paintable.paint(graphics);
 
     public paint2(graphics: Graphics){
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 graphics.setColor(this.backgroundBasicColor!.intValue());
     

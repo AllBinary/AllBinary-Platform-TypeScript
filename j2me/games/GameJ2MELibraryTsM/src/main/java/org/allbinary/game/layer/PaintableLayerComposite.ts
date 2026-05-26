@@ -52,7 +52,8 @@ import { Layer } from '../../../../org/allbinary/layer/Layer.js';
 export class PaintableLayerComposite extends Paintable {
         
 
-    private readonly paintableArray: Layer[]
+    private readonly paintableArray: Layer[];
+
 public constructor (paintableArray: Layer[]){
 
             super();
@@ -68,8 +69,7 @@ public constructor (paintableArray: Layer[]){
 
                         for (
     var index: number = this.paintableArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 this.paintableArray[index]!.paint(graphics);
     
@@ -80,8 +80,7 @@ this.paintableArray[index]!.paint(graphics);
 
     public paintThreed(graphics: Graphics){
 
-    var paintableInterface: PaintableInterface
-;
+    var paintableInterface: PaintableInterface;;
     
 
 
@@ -89,8 +88,7 @@ this.paintableArray[index]!.paint(graphics);
 
                         for (
     var index: number = this.paintableArray!.length
-                ;
---index >= 0; )
+                ;--index >= 0; )
         {
 paintableInterface= this.paintableArray[index]! as PaintableInterface;
     

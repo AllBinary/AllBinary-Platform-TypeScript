@@ -47,6 +47,7 @@ import { PathUtil } from './PathUtil.js';
 
 export class AbFilePath extends AbPath {
         
+
 public constructor (aPath: string){
             super();
                     
@@ -54,8 +55,7 @@ public constructor (aPath: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var abPathUtil: PathUtil = PathUtil.getInstance()!;
-;
+    var abPathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.schema= this.getSchema(aPath);
     

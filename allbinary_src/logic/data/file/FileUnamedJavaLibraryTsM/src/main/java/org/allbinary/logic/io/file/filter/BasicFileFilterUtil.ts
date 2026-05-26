@@ -57,14 +57,12 @@ export class BasicFileFilterUtil
 
     public static getInstance(extension: string): FileFilter{
 
-    var vector: BasicArrayList = new BasicArrayListD();
-;
+    var vector: BasicArrayList = new BasicArrayListD();;
     
 vector.add(extension);
     
 
-    var includeFileExtensionsBooleanFileVisitor: IncludeFileExtensionsBooleanFileVisitor = new IncludeFileExtensionsBooleanFileVisitor(vector);
-;
+    var includeFileExtensionsBooleanFileVisitor: IncludeFileExtensionsBooleanFileVisitor = new IncludeFileExtensionsBooleanFileVisitor(vector);;
     
 
 
@@ -73,6 +71,7 @@ vector.add(extension);
                         return new VisitorFileFilter(includeFileExtensionsBooleanFileVisitor) as FileFilter;
     
 }
+
 
 private constructor (){
 

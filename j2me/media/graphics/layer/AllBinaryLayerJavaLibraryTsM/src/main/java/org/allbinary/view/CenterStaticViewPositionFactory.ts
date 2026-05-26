@@ -49,6 +49,7 @@ export class CenterStaticViewPositionFactory
             extends Object
          {
         
+
 public constructor (){
 
             super();
@@ -57,8 +58,7 @@ public constructor (){
 
     public getInstance(z: number): ViewPosition{
 
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
 

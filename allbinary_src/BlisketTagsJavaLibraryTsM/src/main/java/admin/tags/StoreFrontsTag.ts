@@ -66,6 +66,7 @@ export class StoreFrontsTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -82,18 +83,15 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 
         try {
             
-    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("generateSelect", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -116,8 +114,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 /* catch(e) 
             {
 
-    var error: string = "Failed to generate storefronts select";
-;
+    var error: string = "Failed to generate storefronts select";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -145,18 +142,15 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 
         try {
             
-    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("install", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -179,8 +173,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 /* catch(e) 
             {
 
-    var error: string = "Failed to generate storefronts select";
-;
+    var error: string = "Failed to generate storefronts select";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -208,18 +201,15 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 
         try {
             
-    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-;
+    var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;;
     
 
     var method: Method = anyType!.constructor.name.getMethod("sendStoreCreatedEmails", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -242,8 +232,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 /* catch(e) 
             {
 
-    var error: string = "Failed to send email";
-;
+    var error: string = "Failed to send email";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -281,8 +270,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         
                                     {
                                     
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-;
+    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 
                         if(this.getCommand()!.compareTo(storeFrontData!.SELECT) == 0)

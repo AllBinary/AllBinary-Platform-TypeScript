@@ -86,6 +86,7 @@ LifePickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface= new Li
 
 
     private pool: LifeLayerCircularStaticPool = new LifeLayerCircularStaticPool(new LifeLayerFactory(), 1);
+
 private constructor (){
             super(PickedUpLayerTypeFactory.getInstance()!.LIFE, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(LifeResources.getInstance()!.RESOURCE)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(LifeResources.getInstance()!.RESOURCE)!.getInstance(0));
                     

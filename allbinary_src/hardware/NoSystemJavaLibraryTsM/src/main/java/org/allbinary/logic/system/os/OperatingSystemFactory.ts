@@ -73,6 +73,7 @@ export class OperatingSystemFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private genericOperatingSystem: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
+
 private constructor (){
 
             super();
@@ -82,14 +83,12 @@ private constructor (){
 
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
         try {
             
-    var osString: string = new StringMaker().append("OperatingSystem Info: ")!.append(this.genericOperatingSystem!.toString())!.toString()!;
-;
+    var osString: string = new StringMaker().append("OperatingSystem Info: ")!.append(this.genericOperatingSystem!.toString())!.toString()!;;
     
 console.log(osString);
     

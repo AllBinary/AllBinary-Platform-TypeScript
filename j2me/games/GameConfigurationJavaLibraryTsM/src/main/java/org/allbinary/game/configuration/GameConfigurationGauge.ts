@@ -46,6 +46,7 @@ import { Gauge } from '../../../../javax/microedition/lcdui/Gauge.js';
 
 export class GameConfigurationGauge extends Gauge {
         
+
 public constructor (gameConfiguration: GameConfiguration){
             super(gameConfiguration!.getName(), gameConfiguration!.isModifiable().valueOf(), gameConfiguration!.getMaxValue()!.intValue() -gameConfiguration!.getMinValue()!.intValue(), gameConfiguration!.getValue()!.intValue() -gameConfiguration!.getMinValue()!.intValue());
                     

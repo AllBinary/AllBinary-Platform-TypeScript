@@ -60,7 +60,8 @@ export class TimeDelayHelper
 
     private elapsedTimeAtPause: number = Long.MIN_VALUE;
 
-    public delay: number
+    public delay: number;
+
 public constructor (delay: number){
 
             super();
@@ -73,8 +74,7 @@ this.setStartTimeTNT();
 
     public isTimeTNT(): boolean{
 
-    var currentTime: number = Date.now()!;
-;
+    var currentTime: number = Date.now()!;;
     
 
                         if(currentTime -this.startTime > this.delay)
@@ -102,8 +102,7 @@ this.setStartTimeTNT();
 
     public isTimeSinceTNT(delay: number): boolean{
 
-    var currentTime: number = Date.now()!;
-;
+    var currentTime: number = Date.now()!;;
     
 
                         if(currentTime -this.startTime > delay)
@@ -337,20 +336,17 @@ this.setStartTimeTNT();
 
     public toStringAt(currentTime: number): string{
 
-    var elapsed: number = this.getElapsed(currentTime)!;
-;
+    var elapsed: number = this.getElapsed(currentTime)!;;
     
 
                         if(elapsed > 0)
                         
                                     {
                                     
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var elapsedAsString: string = (elapsed).toString()!;
-;
+    var elapsedAsString: string = (elapsed).toString()!;;
     
 
 
@@ -376,24 +372,20 @@ this.setStartTimeTNT();
 
     public toString(): string{
 
-    var currentTime: number = Date.now()!;
-;
+    var currentTime: number = Date.now()!;;
     
 
-    var elapsed: number = this.getElapsed(currentTime)!;
-;
+    var elapsed: number = this.getElapsed(currentTime)!;;
     
 
                         if(elapsed > 0)
                         
                                     {
                                     
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var elapsedAsString: string = (elapsed).toString()!;
-;
+    var elapsedAsString: string = (elapsed).toString()!;;
     
 
 

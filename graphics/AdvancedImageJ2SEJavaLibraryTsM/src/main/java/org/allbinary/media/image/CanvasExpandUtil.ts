@@ -77,33 +77,27 @@ export class CanvasExpandUtil
             
     public process(imageProcessorInput: ImageProcessorInput, increaseX: number, increaseY: number, visitor: ImageProcessedVisitor){
 
-    var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-;
+    var imageUtil: ImageUtil = ImageUtil.getInstance()!;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-;
+    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
-    var subBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);
-;
+    var subBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);;
     
 
     var size: number = bufferedImageArray!.length
-                ;
-;
+                ;;
     
 
-    var bufferedImage: BufferedImage
-;
+    var bufferedImage: BufferedImage;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!;
     

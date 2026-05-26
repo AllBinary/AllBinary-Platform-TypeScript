@@ -46,6 +46,7 @@ export class NoTimeDelayHelper extends TimeDelayHelper {
         
 
     public static readonly SINGLETON: NoTimeDelayHelper = new NoTimeDelayHelper();
+
 public constructor (){
             super(0);
                     

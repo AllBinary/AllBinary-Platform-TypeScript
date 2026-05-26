@@ -37,6 +37,7 @@ export class CryptFileWriter
             extends Object
          {
         
+
 public constructor (decryptedExtension: string, encryptedExtension: string){
 
             super();

@@ -60,7 +60,8 @@ import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.
 export class PointsLayer extends AllBinaryLayer {
         
 
-    private readonly points: number
+    private readonly points: number;
+
 public constructor (points: number){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition.getInstanceD());
                     

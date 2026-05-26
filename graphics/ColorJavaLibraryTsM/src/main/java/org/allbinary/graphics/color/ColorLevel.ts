@@ -55,6 +55,7 @@ export class ColorLevel
     public static readonly LIGHT: number = 0xAA;
 
     public static readonly HIGH: number = 0xEE;
+
 private constructor (){
 
             super();

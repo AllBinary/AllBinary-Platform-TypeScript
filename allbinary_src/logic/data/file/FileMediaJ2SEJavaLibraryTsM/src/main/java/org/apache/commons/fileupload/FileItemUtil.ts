@@ -94,20 +94,17 @@ export class FileItemUtil
             
     public getBytes(fileItem: FileItemStream): number[]{
 
-    var streamUtil: StreamUtil = StreamUtil.getInstance()!;
-;
+    var streamUtil: StreamUtil = StreamUtil.getInstance()!;;
     
 
     var inputStream: InputStream = 
                 null
-            ;
-;
+            ;;
     
 
     var outputStream: ByteArrayOutputStream = 
                 null
-            ;
-;
+            ;;
     
 
         try {
@@ -126,8 +123,7 @@ outputStream= new ByteArrayOutputStream();
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Uploaded File FieldName: ");
     

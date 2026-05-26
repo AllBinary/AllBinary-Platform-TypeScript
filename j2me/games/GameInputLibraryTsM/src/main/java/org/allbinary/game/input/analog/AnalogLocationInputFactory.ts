@@ -50,6 +50,7 @@ export class AnalogLocationInputFactory
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
+
 private constructor (){
 
             super();
@@ -58,8 +59,7 @@ private constructor (){
 
     public addPlayer(playerInputId: number){
 
-    var analogLocationInput: AnalogLocationInput = AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT;
-;
+    var analogLocationInput: AnalogLocationInput = AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT;;
     
 
                         if(playerInputId < this.list.size())

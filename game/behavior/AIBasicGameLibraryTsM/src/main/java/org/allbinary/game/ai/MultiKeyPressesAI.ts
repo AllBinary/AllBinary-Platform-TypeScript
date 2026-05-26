@@ -68,6 +68,7 @@ export class MultiKeyPressesAI extends KeyPressesAI {
     private readonly toggleTimeHelper: TimeDelayHelper = new TimeDelayHelper(600);
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     
@@ -91,17 +92,14 @@ this.update();
             
     update(){
 
-    var gameInput: GameInput = this.getGameInput()!;
-;
+    var gameInput: GameInput = this.getGameInput()!;;
     
 
-    var keys: Integer[] = this.keys;
-;
+    var keys: Integer[] = this.keys;;
     
 
     var size: number = keys.length
-                ;
-;
+                ;;
     
 
                         if(this.isOn())
@@ -112,12 +110,10 @@ this.update();
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: number = keys[index]!.intValue()!;
-;
+    var key: number = keys[index]!.intValue()!;;
     
 
                         if(key !=  -1)
@@ -139,12 +135,10 @@ index < size; index++)
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var key: number = keys[index]!.intValue()!;
-;
+    var key: number = keys[index]!.intValue()!;;
     
 
                         if(key !=  -1)

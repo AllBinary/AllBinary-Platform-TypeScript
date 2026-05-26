@@ -65,72 +65,73 @@ export class BasicStoreFront
          implements BasicStoreFrontInterface {
         
 
-    private name: string
+    private name: string;
 
-    private userName: string
+    private userName: string;
 
-    private basketName: string
+    private basketName: string;
 
-    private homeHostName: string
+    private homeHostName: string;
 
-    private homeHostNamePath: string
+    private homeHostNamePath: string;
 
-    private hostName: string
+    private hostName: string;
 
-    private hostNamePath: string
+    private hostNamePath: string;
 
-    private testHomeHostName: string
+    private testHomeHostName: string;
 
-    private testHomeHostNamePath: string
+    private testHomeHostNamePath: string;
 
-    private testHostName: string
+    private testHostName: string;
 
-    private testHostNamePath: string
+    private testHostNamePath: string;
 
-    private imagePath: string
+    private imagePath: string;
 
-    private staticPath: string
+    private staticPath: string;
 
-    private categoryPath: string
+    private categoryPath: string;
 
-    private inventoryControl: string
+    private inventoryControl: string;
 
-    private subStores: string
+    private subStores: string;
 
-    private tagLocation: string
+    private tagLocation: string;
 
-    private packageLocation: string
+    private packageLocation: string;
 
-    private ftp: string
+    private ftp: string;
 
-    private ftpPath: string
+    private ftpPath: string;
 
-    private ftpUserName: string
+    private ftpUserName: string;
 
-    private ftpPassword: string
+    private ftpPassword: string;
 
-    private testFtp: string
+    private testFtp: string;
 
-    private testFtpPath: string
+    private testFtpPath: string;
 
-    private testFtpUserName: string
+    private testFtpUserName: string;
 
-    private testFtpPassword: string
+    private testFtpPassword: string;
 
-    private timeCreated: string
+    private timeCreated: string;
 
-    private lastModified: string
+    private lastModified: string;
+
 public constructor (){
 
             super();
         }
 
+
 public constructor (storeHashMap: HashMap<any, any>){
 
             super();
         
-    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-;
+    var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;;
     
 this.name= storeHashMap!.get(storeFrontData!.NAME) as string;
     
@@ -205,8 +206,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     var location: string = 
                 null
-            ;
-;
+            ;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -236,8 +236,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     var location: string = 
                 null
-            ;
-;
+            ;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -267,8 +266,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     var location: string = 
                 null
-            ;
-;
+            ;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -298,8 +296,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
     var location: string = 
                 null
-            ;
-;
+            ;;
     
 
                         if(org.allbinary.globals.URLGLOBALS.isTestingMode())
@@ -471,12 +468,10 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 
         try {
             
-    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);
-;
+    var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);;
     
 
-    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayListD())!;
-;
+    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayListD())!;;
     
 
 

@@ -73,6 +73,7 @@ export class LicenseInitInfoUtil
     public setFilePath(filePath: string){
 }
 
+
 private constructor (){
 
             super();
@@ -104,8 +105,7 @@ private constructor (){
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
 
-    var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();
-;
+    var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();;
     
 licenseInitInfo!.clearServers();
     

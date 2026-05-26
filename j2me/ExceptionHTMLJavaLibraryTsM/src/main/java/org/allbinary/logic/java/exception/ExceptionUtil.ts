@@ -63,6 +63,7 @@
 
 
     /*actual*/ public static readonly PRETEND_EXCEPTION: Exception = new Exception("Not Really An Exception");
+
 private constructor (){
 
             super();

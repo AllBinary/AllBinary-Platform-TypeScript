@@ -93,9 +93,10 @@ export class DbInitInfo extends DbConnectionInfo {
 
     private readonly PACKAGE: string = FREEBLISKET_PATH_GLOBALS.getInstance()!.DBINITPATH;
 
-    private initFileName: string
+    private initFileName: string;
 
     private hasRead: boolean = false;
+
 public constructor (initFileName: string, read: boolean){
             super();
                     
@@ -124,8 +125,7 @@ this.initFileName= initFileName;
 
     public getUrl(): string{
 
-    var url: string = super.getUrl()!;
-;
+    var url: string = super.getUrl()!;;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
@@ -149,56 +149,45 @@ this.initFileName= initFileName;
             
     public write(){
 
-    var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE);
-;
+    var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE);;
     
 this.directory.create(PATH);
     
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);
-;
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);;
     
 
         try {
             
-    var newFile: AbFile = new AbFile(FILEABPATH);
-;
+    var newFile: AbFile = new AbFile(FILEABPATH);;
     
 newFile!.createNewFile();
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;;
     
 
         try {
             
-    var cryptedJdbcDriver: number[] = new WeakCrypt(1).encrypt(this.getJdbcDriver())!.encodeToByteArray()!;
-;
+    var cryptedJdbcDriver: number[] = new WeakCrypt(1).encrypt(this.getJdbcDriver())!.encodeToByteArray()!;;
     
 
-    var cryptedName: number[] = new WeakCrypt(2).encrypt(this.getName())!.encodeToByteArray()!;
-;
+    var cryptedName: number[] = new WeakCrypt(2).encrypt(this.getName())!.encodeToByteArray()!;;
     
 
-    var cryptedUserName: number[] = new WeakCrypt(3).encrypt(this.getUserName())!.encodeToByteArray()!;
-;
+    var cryptedUserName: number[] = new WeakCrypt(3).encrypt(this.getUserName())!.encodeToByteArray()!;;
     
 
-    var cryptedPassword: number[] = new WeakCrypt(4).encrypt(this.getPassword())!.encodeToByteArray()!;
-;
+    var cryptedPassword: number[] = new WeakCrypt(4).encrypt(this.getPassword())!.encodeToByteArray()!;;
     
 
-    var cryptedSchema: number[] = new WeakCrypt(5).encrypt(this.getSchema())!.encodeToByteArray()!;
-;
+    var cryptedSchema: number[] = new WeakCrypt(5).encrypt(this.getSchema())!.encodeToByteArray()!;;
     
 
-    var cryptedServer: number[] = new WeakCrypt(6).encrypt(this.getServer())!.encodeToByteArray()!;
-;
+    var cryptedServer: number[] = new WeakCrypt(6).encrypt(this.getServer())!.encodeToByteArray()!;;
     
 
-    var cryptedPort: number[] = new WeakCrypt(7).encrypt(this.getPort())!.encodeToByteArray()!;
-;
+    var cryptedPort: number[] = new WeakCrypt(7).encrypt(this.getPort())!.encodeToByteArray()!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver));
     
@@ -245,56 +234,45 @@ this.hasRead= false;
             
     load(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);
-;
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);;
     
 
         try {
             
-    var file: AbFile = new AbFile(FILEABPATH);
-;
+    var file: AbFile = new AbFile(FILEABPATH);;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var iFile: AbFileInputStream = new AbFileInputStream(file);
-;
+    var iFile: AbFileInputStream = new AbFileInputStream(file);;
     
 
-    var iData: AbDataInputStream = new AbDataInputStream(iFile);
-;
+    var iData: AbDataInputStream = new AbDataInputStream(iFile);;
     
 
         try {
             
-    var decryptedJdbcDriver: string = decode.toCharArray();
-;
+    var decryptedJdbcDriver: string = decode.toCharArray();;
     
 
-    var decryptedName: string = decode.toCharArray();
-;
+    var decryptedName: string = decode.toCharArray();;
     
 
-    var decryptedUserName: string = decode.toCharArray();
-;
+    var decryptedUserName: string = decode.toCharArray();;
     
 
-    var decryptedPassword: string = decode.toCharArray();
-;
+    var decryptedPassword: string = decode.toCharArray();;
     
 
-    var decryptedSchema: string = decode.toCharArray();
-;
+    var decryptedSchema: string = decode.toCharArray();;
     
 
-    var decryptedServer: string = decode.toCharArray();
-;
+    var decryptedServer: string = decode.toCharArray();;
     
 
-    var decryptedPort: string = decode.toCharArray();
-;
+    var decryptedPort: string = decode.toCharArray();;
     
 this.setJdbcDriver(new WeakCrypt(1).decrypt(decryptedJdbcDriver));
     
@@ -311,8 +289,7 @@ this.setServer(new WeakCrypt(6).decrypt(decryptedServer));
 this.setPort(new WeakCrypt(7).decrypt(decryptedPort));
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
          finally {

@@ -65,6 +65,7 @@ export class XmlRpcRemoteLogClient extends XmlRpcAbeClient {
         
 
     private readonly noCrypt: NoCrypt = new NoCrypt();
+
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "SSLLogServ.logUtil");
                     
@@ -80,22 +81,18 @@ public constructor (clientInfo: AbeClientInformationInterface){
 
         try {
             
-    var param: Vector = new Vector();
-;
+    var param: Vector = new Vector();;
     
 
-    var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-;
+    var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;;
     
 
-    var index: number = serverUrl!.lastIndexOf("/")!;
-;
+    var index: number = serverUrl!.lastIndexOf("/")!;;
     
 serverUrl= serverUrl!.substring(0, index +1) +"logservssl.php";
     
 
-    var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);
-;
+    var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);;
     
 this.setClient(xmlRpcClient);
     
@@ -104,14 +101,12 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
-;
+    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;;
     
 param.add(hashtable);
     
 
-    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, this.noCrypt)!;
-;
+    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, this.noCrypt)!;;
     
 console.log("Result: \n" +result.toString());
     

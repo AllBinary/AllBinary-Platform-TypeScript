@@ -75,6 +75,7 @@ export class XmlRpcAbeLicenseRetrievalClient extends XmlRpcAbeClient {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "LicServ.getLicense");
                     
@@ -90,12 +91,10 @@ public constructor (clientInfo: AbeClientInformationInterface){
 
         try {
             
-    var server: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-;
+    var server: string = getClientInfo()!.getLicenseServer(this.getServer())!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(TRYING);
     
@@ -108,12 +107,10 @@ stringBuffer!.append(server);
 this.logUtil!.putF(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toString(), this, this.commonStrings!.GET);
     
 
-    var param: Vector = new Vector();
-;
+    var param: Vector = new Vector();;
     
 
-    var xmlRpcClient: XmlRpcClient = new XmlRpcClient(server);
-;
+    var xmlRpcClient: XmlRpcClient = new XmlRpcClient(server);;
     
 this.setClient(xmlRpcClient);
     
@@ -122,22 +119,19 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = this.getClientInfo()!.toHashtable()!;
-;
+    var hashtable: Hashtable<any, any> = this.getClientInfo()!.toHashtable()!;;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, this.commonStrings!.GET);
     
 param.add(hashtable);
     
 
-    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
-;
+    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;;
     
 this.logUtil!.putF(RESULT +result.toString(), this, this.commonStrings!.GET);
     
 
-    var resultHashtable: Hashtable<any, any> = result as Hashtable<any, any>;
-;
+    var resultHashtable: Hashtable<any, any> = result as Hashtable<any, any>;;
     
 
                         if(!AbeClientLicense.hasRequiredKeys(resultHashtable))
@@ -155,8 +149,7 @@ this.logUtil!.putF(RESULT +result.toString(), this, this.commonStrings!.GET);
                                     }
                                 
 
-    var abeLicenseInterface: AbeLicenseInterface = new AbeClientLicense(resultHashtable);
-;
+    var abeLicenseInterface: AbeLicenseInterface = new AbeClientLicense(resultHashtable);;
     
 this.logUtil!.putF(this.commonStrings!.END +stringBuffer!.toString(), this, this.commonStrings!.GET);
     

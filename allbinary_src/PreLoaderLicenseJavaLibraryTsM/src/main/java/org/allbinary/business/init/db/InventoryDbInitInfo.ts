@@ -46,6 +46,7 @@ export class InventoryDbInitInfo extends DbInitInfo {
         
 
     private static readonly INITFILE: string = "inventorydbinitdata.dat";
+
 public constructor (){
             super(INITFILE, true);
                     
@@ -53,6 +54,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (read: boolean){
             super(INITFILE, read);

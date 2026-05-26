@@ -78,7 +78,8 @@ export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimati
 
     private imageArray: Image[] = NullImage.NULL_IMAGE_ARRAY;
 
-    private angleIncrement: number= 0
+    private angleIncrement: number= 0;
+
 public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
             super(AnimationFrameToImageUtil.getInstance()!.getInstanceTranslate(vectorInfo!.getWidth(), vectorInfo!.getHeight(), VectorAnimation.createVectorAnimation(vectorInfo!.getPoints(), basicColor, animationBehaviorFactory!.getOrCreateInstance())), PrimitiveIntUtil.getArrayInstance(), 0, 0, 0, 0, animationBehaviorFactory);
                     
@@ -94,8 +95,7 @@ this.init();
             
     init(){
 
-    var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-;
+    var angleFactory: AngleFactory = AngleFactory.getInstance()!;;
     
 this.angleIncrement= angleFactory!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity();
     

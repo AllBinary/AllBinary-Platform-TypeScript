@@ -51,6 +51,7 @@ import { StoreValidationTransformTag } from '../../../../tags/StoreValidationTra
         
 export class ViewTag extends StoreValidationTransformTag {
         
+
 public constructor (){
 
             super();

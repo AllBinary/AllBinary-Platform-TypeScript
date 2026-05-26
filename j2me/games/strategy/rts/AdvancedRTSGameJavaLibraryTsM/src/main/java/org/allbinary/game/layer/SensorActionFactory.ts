@@ -58,6 +58,7 @@ export class SensorActionFactory
     
 }
 
+
 private constructor (){
 
             super();

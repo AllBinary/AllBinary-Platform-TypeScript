@@ -47,7 +47,8 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
 export class UnitGameInputProcessor extends GameInputProcessor {
         
 
-    readonly unitLayer: UnitLayer
+    readonly unitLayer: UnitLayer;
+
 public constructor (unitLayer: UnitLayer){
 
             super();

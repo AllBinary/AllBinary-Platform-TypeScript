@@ -53,10 +53,13 @@ expect export class ExceptionUtil
         
 
     //private static readonly instance: ExceptionUtil
+
     public static getInstance(): ExceptionUtil
 
 
+
     public readonly PRETEND_EXCEPTION: Exception
+
     public getStackTrace(e: Throwable): string
 
 }

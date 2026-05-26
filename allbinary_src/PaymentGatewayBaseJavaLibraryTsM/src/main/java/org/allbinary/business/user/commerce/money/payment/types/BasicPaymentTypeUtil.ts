@@ -70,6 +70,7 @@ export class BasicPaymentTypeUtil
     
 }
 
+
 private constructor (){
 
             super();
@@ -88,20 +89,17 @@ this.paymentTypeVector!.add(paymentType);
             
     public get(paymentTypeString: string): BasicPaymentType{
 
-    var size: number = this.paymentTypeVector!.length!;
-;
+    var size: number = this.paymentTypeVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;
-;
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;;
     
 
                         if(paymentType!.getName()!.compareTo(paymentTypeString) == 0)
@@ -138,24 +136,20 @@ i < size; i++)
 
     public difference(a_PaymentTypeVector: Vector): Vector{
 
-    var diff: Vector = new Vector();
-;
+    var diff: Vector = new Vector();;
     
 
-    var size: number = this.paymentTypeVector!.length!;
-;
+    var size: number = this.paymentTypeVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;
-;
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i) as BasicPaymentType;;
     
 
                         if(!a_PaymentTypeVector!.contains(paymentType))

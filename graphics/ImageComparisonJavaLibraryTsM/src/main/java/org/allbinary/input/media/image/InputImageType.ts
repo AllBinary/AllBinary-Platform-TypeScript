@@ -80,9 +80,10 @@ export class InputImageType
 }
 
 
-    private readonly name: string
+    private readonly name: string;
 
-    private readonly index: number
+    private readonly index: number;
+
 private constructor (name: string, index: number){
 
             super();

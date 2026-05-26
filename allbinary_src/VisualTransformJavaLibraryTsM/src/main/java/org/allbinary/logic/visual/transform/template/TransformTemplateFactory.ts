@@ -78,6 +78,7 @@ export class TransformTemplateFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -90,12 +91,10 @@ private constructor (){
 
         try {
             
-    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-;
+    var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(templateName, propertiesHashMap, pageContext)!;
-;
+    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(templateName, propertiesHashMap, pageContext)!;;
     
 
 
@@ -108,8 +107,7 @@ private constructor (){
 } catch(e) 
             {
 
-    var error: string = "Failed To Get Instance";
-;
+    var error: string = "Failed To Get Instance";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))

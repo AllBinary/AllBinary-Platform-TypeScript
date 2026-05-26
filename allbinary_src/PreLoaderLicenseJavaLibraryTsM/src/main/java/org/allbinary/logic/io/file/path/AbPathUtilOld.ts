@@ -79,6 +79,7 @@ export class AbPathUtilOld
     private readonly abPathData: AbPathData = AbPathData.getInstance()!;
 
     private readonly filePathData: FilePathData = FilePathData.getInstance()!;
+
 private constructor (){
 
             super();
@@ -125,12 +126,10 @@ private constructor (){
                                     }
                                 
 
-    var beginIndex: number = filePath!.length -AbPathUtilOld.MIN;
-;
+    var beginIndex: number = filePath!.length -AbPathUtilOld.MIN;;
     
 
-    var extension: string = filePath!.substring(beginIndex +1)!;
-;
+    var extension: string = filePath!.substring(beginIndex +1)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -190,12 +189,10 @@ private constructor (){
                                     }
                                 
 
-    var endIndex: number = filePath!.length -AbPathUtilOld.MIN;
-;
+    var endIndex: number = filePath!.length -AbPathUtilOld.MIN;;
     
 
-    var pathWithoutExtension: string = filePath!.substring(0, endIndex)!;
-;
+    var pathWithoutExtension: string = filePath!.substring(0, endIndex)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -385,8 +382,7 @@ private constructor (){
 
     public getNameFromPath(categoryPath: string): string{
 
-    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
-;
+    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
     
 
                         if(endIndex < 0)
@@ -410,8 +406,7 @@ private constructor (){
                         
                                     {
                                     
-    var categoryName: string = categoryPath!.substring(0, endIndex)!;
-;
+    var categoryName: string = categoryPath!.substring(0, endIndex)!;;
     
 
 
@@ -424,8 +419,7 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = categoryPath!.substring(endIndex +1)!;
-;
+    var categoryName: string = categoryPath!.substring(endIndex +1)!;;
     
 
 
@@ -444,8 +438,7 @@ private constructor (){
 
     public removeNameFromPath(categoryPath: string): AbPath{
 
-    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
-;
+    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
     
 
                         if(endIndex < 0)
@@ -484,8 +477,7 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = categoryPath!.substring(0, endIndex)!;
-;
+    var categoryName: string = categoryPath!.substring(0, endIndex)!;;
     
 
 

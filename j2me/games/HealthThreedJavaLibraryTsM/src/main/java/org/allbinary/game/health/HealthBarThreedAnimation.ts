@@ -71,9 +71,10 @@ import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 export class HealthBarThreedAnimation extends HealthBarAnimation {
         
 
-    private rectangle: Rectangle
+    private rectangle: Rectangle;
 
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
+
 public constructor (layerInterface: AllBinaryLayer, location: number){
             super(layerInterface, location);
                     
@@ -97,20 +98,17 @@ this.rectangle.setTexturesEnabled(false);
 
     updateColor(){
 
-    var colorBufferList: ColorBufferList = this.rectangle.getVertices()!.getColor4BufferList()!;
-;
+    var colorBufferList: ColorBufferList = this.rectangle.getVertices()!.getColor4BufferList()!;;
     
 
-    var size: number = colorBufferList!.size()!;
-;
+    var size: number = colorBufferList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = size;
---index >= 0; )
+    var index: number = size;--index >= 0; )
         {
 colorBufferList!.set(index, this.basicColor);
     
@@ -121,52 +119,40 @@ colorBufferList!.set(index, this.basicColor);
 
     updateSize(){
 
-    var number3dBufferList: Number3dBufferList = this.rectangle.getVertices()!.getPointsOnFacesNumber3dBufferList()!;
-;
+    var number3dBufferList: Number3dBufferList = this.rectangle.getVertices()!.getPointsOnFacesNumber3dBufferList()!;;
     
 
-    var width: number = this.x2;
-;
+    var width: number = this.x2;;
     
 
-    var height: number = this.thickness *2;
-;
+    var height: number = this.thickness *2;;
     
 
-    var segsH: number = 1;
-;
+    var segsH: number = 1;;
     
 
-    var segsW: number = 1;
-;
+    var segsW: number = 1;;
     
 
-    var row: number= 0
-;
+    var row: number= 0;;
     
 
-    var col: number= 0
-;
+    var col: number= 0;;
     
 
-    var w: number = width /segsW;
-;
+    var w: number = width /segsW;;
     
 
-    var h: number = height /segsH;
-;
+    var h: number = height /segsH;;
     
 
-    var width5: number = width /2;
-;
+    var width5: number = width /2;;
     
 
-    var height5: number = height /2;
-;
+    var height5: number = height /2;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
 
@@ -205,20 +191,16 @@ this.updateSize();
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
 
-    var openGLESGraphics: OpenGLESGraphics = graphics as OpenGLESGraphics;
-;
+    var openGLESGraphics: OpenGLESGraphics = graphics as OpenGLESGraphics;;
     
 
-    var gl: GL10 = openGLESGraphics!.getGl10()!;
-;
+    var gl: GL10 = openGLESGraphics!.getGl10()!;;
     
 
-    var viewPosition: ViewPosition = this.allbinaryLayer!.getViewPosition()!;
-;
+    var viewPosition: ViewPosition = this.allbinaryLayer!.getViewPosition()!;;
     
 
-    var positionNumber3d: Number3d = this.rectangle.getPosition()!;
-;
+    var positionNumber3d: Number3d = this.rectangle.getPosition()!;;
     
 positionNumber3d!.x=  -(viewPosition!.getX());
     

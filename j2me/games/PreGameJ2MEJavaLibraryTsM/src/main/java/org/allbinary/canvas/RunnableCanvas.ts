@@ -84,7 +84,7 @@ export class RunnableCanvas extends MyCanvas implements RunnableInterface {
 
     private currentThread: Thread = NullThread.NULL_THREAD;
 
-    private running: boolean= false
+    private running: boolean= false;
 
     readonly loopTimeHelper: TimeDelayHelper = new TimeDelayHelper(NullWaitGameRunnable.getInstance()!.WAIT);
 
@@ -93,6 +93,7 @@ export class RunnableCanvas extends MyCanvas implements RunnableInterface {
     readonly commonLabels: CommonLabels = CommonLabels.getInstance()!;
 
     readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
+
 public constructor (commandListener: CommandListener, childNameList: BasicArrayList, hasParam: boolean){
             super(CommonStrings.getInstance()!.UNKNOWN, childNameList);
                     
@@ -220,8 +221,7 @@ this.logUtil!.putF(new StringMaker().append(this.IS_RUNNING)!.appendboolean(this
                                 
                         else {
                             
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.THREAD);
     
@@ -419,8 +419,7 @@ this.runnableCanvasRefreshHelper!.process();
                         
                                     {
                                     
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(Date.now())!.append(this.PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, this.PROCESS_LOOP_SLEEP);
     
@@ -452,12 +451,10 @@ this.logUtil!.putF(stringMaker!.append(this.END_PAUSE)!.appendlong(Date.now())!.
                                     }
                                 
 
-    var elapsedTime: number = this.loopTimeHelper!.getElapsedTNT()!;
-;
+    var elapsedTime: number = this.loopTimeHelper!.getElapsedTNT()!;;
     
 
-    var wait: number = this.loopTimeHelper!.delay;
-;
+    var wait: number = this.loopTimeHelper!.delay;;
     
 
                         if(elapsedTime > wait)

@@ -52,6 +52,7 @@ import { TransformInfoObjectConfigNoManipulationFactory } from '../../../../../.
 
 export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore {
         
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     

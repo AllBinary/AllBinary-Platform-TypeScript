@@ -118,29 +118,31 @@ export class TransformInfo
 
     private isChild: boolean = false;
 
-    private name: string
+    private name: string;
 
-    private storeName: string
+    private storeName: string;
 
-    private objectFileName: string
+    private objectFileName: string;
 
-    private anyType: any
+    private anyType: any;
 
-    private objectConfigFileName: string
+    private objectConfigFileName: string;
 
-    private objectConfigInterface: TransformInfoObjectConfigInterface
+    private objectConfigInterface: TransformInfoObjectConfigInterface;
 
-    private template: string
+    private template: string;
 
-    private templateFileName: string
+    private templateFileName: string;
 
-    private dataFileName: string
+    private dataFileName: string;
 
     private data: string = StringUtil.getInstance()!.EMPTY_STRING;
+
 public constructor (){
 
             super();
         }
+
 
 public constructor (name: string){
 
@@ -148,6 +150,7 @@ public constructor (name: string){
         this.setName(name);
     
 }
+
 
 public constructor (name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string){
 
@@ -169,16 +172,13 @@ this.setDataFile(dataFileName);
             
     public override(hashMap: HashMap<any, any>){
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var aName: string = hashMap!.get(transformInfoData!.NAME) as string;
-;
+    var aName: string = hashMap!.get(transformInfoData!.NAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aName))
@@ -194,8 +194,7 @@ this.setDataFile(dataFileName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("TransformInfo properties overridden for: ");
     
@@ -211,8 +210,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
-;
+    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aStoreName))
@@ -224,8 +222,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME) as string;
-;
+    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aObjectFileName))
@@ -237,8 +234,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     
@@ -249,12 +245,10 @@ stringBuffer!.append(this.storeName);
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var fileAbPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var fileAbPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
-    var aObject: string = hashMap!.get(transformInfoData!.OBJECT) as string;
-;
+    var aObject: string = hashMap!.get(transformInfoData!.OBJECT) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aObject))
@@ -270,8 +264,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aObject))!;
-;
+    var fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aObject))!;;
     
 
                         if(fileDataString != 
@@ -306,8 +299,7 @@ this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as string);
                                     }
                                 
 
-    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string;
-;
+    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(objectConfigFileName))
@@ -328,8 +320,7 @@ this.setObjectConfigFile(objectConfigFileName);
                                     }
                                 
 
-    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME) as string;
-;
+    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(type))
@@ -352,8 +343,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as string;
-;
+    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aTemplateFileName))
@@ -365,8 +355,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE) as string;
-;
+    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aTemplate))
@@ -382,8 +371,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aTemplate))!;
-;
+    var fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aTemplate))!;;
     
 
                         if(!stringValidationUtil!.isEmpty(fileDataString))
@@ -398,8 +386,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME) as string;
-;
+    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aDataFileName))
@@ -411,8 +398,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aData: string = hashMap!.get(transformInfoData!.DATA) as string;
-;
+    var aData: string = hashMap!.get(transformInfoData!.DATA) as string;;
     
 
                         if(!stringValidationUtil!.isEmpty(aData))
@@ -428,8 +414,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aData))!;
-;
+    var fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(new AbPath(fileAbPath!.toString(), aData))!;;
     
 
                         if(!stringValidationUtil!.isEmpty(fileDataString))
@@ -498,8 +483,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoInterface(HashM
 
     public log(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Name: ");
     
@@ -610,8 +594,7 @@ this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.get
             
     setObjectConfig(value: string){
 
-    var document: Document = DomDocumentHelper.create(value)!;
-;
+    var document: Document = DomDocumentHelper.create(value)!;;
     
 this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, this, document));
     
@@ -728,12 +711,10 @@ this.data= value;
 
     getData(): string{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var dataFileString: string = this.getDataFile()!;
-;
+    var dataFileString: string = this.getDataFile()!;;
     
 
                         if(!stringValidationUtil!.isEmpty(dataFileString))
@@ -742,8 +723,7 @@ this.data= value;
                                     
         try {
             
-    var fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(this.getDataFilePath())!;
-;
+    var fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).get(this.getDataFilePath())!;;
     
 
                         if(!stringValidationUtil!.isEmpty(this.data))
@@ -805,8 +785,7 @@ this.data= fileData;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Name: ");
     
@@ -863,12 +842,10 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
             
     public getDataDocument(): Document{
 
-    var localData: string = this.getData()!;
-;
+    var localData: string = this.getData()!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(localData))
@@ -894,8 +871,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
                                 
                         else {
                             
-    var document: Document = DomDocumentHelper.create(localData)!;
-;
+    var document: Document = DomDocumentHelper.create(localData)!;;
     
 
 
@@ -921,12 +897,10 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 
     public toHashMap(): HashMap<any, any>{
 
-    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-;
+    var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(transformInfoData!.NAME, this.name);
     
@@ -949,12 +923,10 @@ hashMap!.put(transformInfoData!.DATAFILENAME, this.dataFileName);
 hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.encodeToByteArray()));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     
@@ -969,8 +941,7 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
     public toVector(): java.util.Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.add(this.name);
     
@@ -993,12 +964,10 @@ vector.add(this.dataFileName);
 vector.add(Encoder.encode(this.data.encodeToByteArray()));
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 vector.add(time);
     

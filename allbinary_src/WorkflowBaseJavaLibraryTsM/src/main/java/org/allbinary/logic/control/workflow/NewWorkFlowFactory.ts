@@ -83,6 +83,7 @@ export class NewWorkFlowFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -95,16 +96,13 @@ private constructor (){
 
         try {
             
-    var className: string = hashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var className: string = hashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var params: any[] = new Array(2);
-;
+    var params: any[] = new Array(2);;
     
 
-    var classes: Function[] = new Array(2);
-;
+    var classes: Function[] = new Array(2);;
     
 classes[0]= hashMap!.constructor;
     
@@ -115,8 +113,7 @@ params[0]= hashMap;
 params[1]= pageContext;
     
 
-    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
-;
+    var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;;
     
 
 
@@ -133,8 +130,7 @@ params[1]= pageContext;
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
@@ -156,8 +152,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
@@ -180,8 +175,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
         try {
             
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
                         if(className != 
@@ -192,8 +186,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                                     
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, 
                             null, 
-                            null)!;
-;
+                            null)!;;
     
 
 
@@ -216,8 +209,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     
@@ -239,8 +231,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     

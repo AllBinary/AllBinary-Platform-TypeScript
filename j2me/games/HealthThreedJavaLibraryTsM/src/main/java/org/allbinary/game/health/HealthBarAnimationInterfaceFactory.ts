@@ -59,6 +59,7 @@ export class HealthBarAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
+
 public constructor (){
 
             super();

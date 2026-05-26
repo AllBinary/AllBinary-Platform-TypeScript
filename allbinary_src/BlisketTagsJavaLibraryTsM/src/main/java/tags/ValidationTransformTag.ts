@@ -67,9 +67,10 @@ export class ValidationTransformTag extends TransformTag {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private xslFile: string
+    private xslFile: string;
 
-    private logic: boolean
+    private logic: boolean;
+
 public constructor (){
             super(new ValidatedViewHelperFactory());
                     
@@ -101,18 +102,15 @@ this.logic= logic;
 
         try {
             
-    var helperClass: Function = this.getHelper()!.constructor!;
-;
+    var helperClass: Function = this.getHelper()!.constructor!;;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.IS_VALID, 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: Boolean = method.invoke(this.getHelper(), 
-                            null) as Boolean;
-;
+                            null) as Boolean;;
     
 
 
@@ -149,18 +147,15 @@ this.logic= logic;
 
         try {
             
-    var addressHelperClass: Function = this.getHelper()!.constructor!;
-;
+    var addressHelperClass: Function = this.getHelper()!.constructor!;;
     
 
     var method: Method = addressHelperClass!.getMethod("validationInfo", 
-                            null)!;
-;
+                            null)!;;
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as string;
-;
+                            null) as string;;
     
 
 
@@ -201,12 +196,10 @@ this.logic= logic;
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 
-    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
-;
+    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;;
     
 stringBuffer!.append("ValidationViewTag Start For: ");
     
@@ -238,8 +231,7 @@ this.setHelper();
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("View File: ");
     
@@ -288,8 +280,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("View File: ");
     

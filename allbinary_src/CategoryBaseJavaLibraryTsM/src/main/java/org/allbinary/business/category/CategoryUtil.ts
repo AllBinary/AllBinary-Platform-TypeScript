@@ -68,8 +68,7 @@ export class CategoryUtil
 
     public static getPathLevel(categoryPath: AbPath): number{
 
-    var count: number = StringUtils.countMatches(categoryPath!.toString(), AbPathData.getInstance()!.SEPARATOR)!;
-;
+    var count: number = StringUtils.countMatches(categoryPath!.toString(), AbPathData.getInstance()!.SEPARATOR)!;;
     
 
 
@@ -83,12 +82,10 @@ export class CategoryUtil
 
     public static getNameFromNode(node: Node): string{
 
-    var attributes: NamedNodeMap = node.getAttributes()!;
-;
+    var attributes: NamedNodeMap = node.getAttributes()!;;
     
 
-    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL) as Attr;
-;
+    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL) as Attr;;
     
 
                         if(attrNode != 
@@ -107,8 +104,7 @@ export class CategoryUtil
                                 
                         else {
                             
-    var labelNode: Node = DomSearchHelper.getNodeNoThrow(CategoryData.getInstance()!.LABEL, node.getChildNodes())!;
-;
+    var labelNode: Node = DomSearchHelper.getNodeNoThrow(CategoryData.getInstance()!.LABEL, node.getChildNodes())!;;
     
 
                         if(labelNode != 
@@ -135,6 +131,7 @@ export class CategoryUtil
                         return StringUtil.getInstance()!.EMPTY_STRING;
     
 }
+
 
 private constructor (){
 

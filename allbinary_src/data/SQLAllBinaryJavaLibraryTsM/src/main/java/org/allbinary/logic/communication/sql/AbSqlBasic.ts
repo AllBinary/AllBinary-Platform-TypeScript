@@ -82,11 +82,11 @@ export class AbSqlBasic
 
     private readonly sqlConnectionPool: SqlConnectionPool = SqlConnectionPool.getInstance()!;
 
-    private databaseConnectionInfoInterface: DbConnectionInfo
+    private databaseConnectionInfoInterface: DbConnectionInfo;
 
-    private connectAttemptCounter: number
+    private connectAttemptCounter: number;
 
-    conn: Connection
+    conn: Connection;
 
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
@@ -125,6 +125,7 @@ export class AbSqlBasic
     private readonly METHOD_INITIALIZE: string = "initialize";
 
     private readonly LOAD_JDBC_DRIVER_FAILED_LABEL: string = "Load JDBC Driver Failed: ";
+
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
@@ -147,20 +148,17 @@ this.conn=
             this.initialize();
     
 
-    var stmt: Statement = this.conn.createStatement()!;
-;
+    var stmt: Statement = this.conn.createStatement()!;;
     
 stmt.execute(statement);
     
 
-    var rset: ResultSet = stmt.getResultSet()!;
-;
+    var rset: ResultSet = stmt.getResultSet()!;;
     
 stmt.close();
     
 
-    var tempConnection: Connection = this.conn;
-;
+    var tempConnection: Connection = this.conn;;
     
 this.conn= 
                                         null
@@ -309,12 +307,10 @@ this.initialize();
                             
         try {
             
-    var loader: ClassLoader = Thread.currentThread()!.getContextClassLoader()!;
-;
+    var loader: ClassLoader = Thread.currentThread()!.getContextClassLoader()!;;
     
 
-    var jdbcDriverClass: Function = loader.loadClass(this.getDatabaseConnectionInfoInterface()!.getJdbcDriver())!;
-;
+    var jdbcDriverClass: Function = loader.loadClass(this.getDatabaseConnectionInfoInterface()!.getJdbcDriver())!;;
     
 jdbcDriverClass!.newInstance();
     

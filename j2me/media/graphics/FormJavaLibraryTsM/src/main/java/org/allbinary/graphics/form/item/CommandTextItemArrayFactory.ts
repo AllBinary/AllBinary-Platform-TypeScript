@@ -70,7 +70,8 @@ export class CommandTextItemArrayFactory
 
     private readonly list: BasicArrayList = new BasicArrayListD();
 
-    private readonly visitorInterface: Visitor
+    private readonly visitorInterface: Visitor;
+
 public constructor (visitorInterface: Visitor){
 
             super();
@@ -81,26 +82,21 @@ public constructor (visitorInterface: Visitor){
 
     public getInstance(vector: Vector<any>, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ABCustomItem[]{
 
-    var size: number = vector.length!;
-;
+    var size: number = vector.length!;;
     
 this.list.clear();
     
 
-    var textItem: CommandTextItem
-;
+    var textItem: CommandTextItem;;
     
 
-    var priorityLimit: number = 7;
-;
+    var priorityLimit: number = 7;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
-;
+    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);;
     
 
                         if(!isLargeEnoughDisplayForBigMenu && size > 3)
@@ -112,16 +108,14 @@ this.list.clear();
                                     }
                                 
 
-    var command: Command
-;
+    var command: Command;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 command= vector.elementAt(index) as Command;
     
@@ -130,8 +124,7 @@ command= vector.elementAt(index) as Command;
                         
                                     {
                                     
-    var aBoolean: Boolean = this.visitorInterface!.visit(command) as Boolean;
-;
+    var aBoolean: Boolean = this.visitorInterface!.visit(command) as Boolean;;
     
 
                         if(aBoolean.valueOf())
@@ -150,21 +143,18 @@ this.list.add(textItem);
 }
 
 
-    var textItemArray: ABCustomItem[] = new Array(this.list.size());
-;
+    var textItemArray: ABCustomItem[] = new Array(this.list.size());;
     
 
     var size2: number = textItemArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size2; index++)
+    var index: number = 0;index < size2; index++)
         {
 textItemArray[index]= this.list.objectArray[index]! as ABCustomItem;
     

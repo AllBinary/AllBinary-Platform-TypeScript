@@ -49,9 +49,10 @@ import { ListModel } from './ListModel.js';
 export class JListSwingWorker extends SwingWorker {
         
 
-    private jList: JList
+    private jList: JList;
 
-    private listModel: ListModel
+    private listModel: ListModel;
+
 public constructor (jList: JList, listModel: ListModel){
 
             super();

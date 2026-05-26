@@ -61,6 +61,7 @@ import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.
         
 export class HealLayer extends AllBinaryLayer implements HealthVisitorInterface {
         
+
 public constructor (){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition.getInstanceD());
                     

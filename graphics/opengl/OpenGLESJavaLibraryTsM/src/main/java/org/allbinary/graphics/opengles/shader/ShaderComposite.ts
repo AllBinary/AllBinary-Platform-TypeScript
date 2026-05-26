@@ -58,21 +58,21 @@ export class ShaderComposite
          {
         
 
-    public readonly disableProgramShaderOpenGLProcessor: OpenGLProcessor
+    public readonly disableProgramShaderOpenGLProcessor: OpenGLProcessor;
 
-    public readonly requiresOpenGLVersion: string
+    public readonly requiresOpenGLVersion: string;
 
-    public readonly shaderArray: Shader[]
+    public readonly shaderArray: Shader[];
 
-    public readonly shaderInitializer: ShaderInitializer
+    public readonly shaderInitializer: ShaderInitializer;
 
-    public readonly compositeShaderUpdater: CompositeShaderUpdater
+    public readonly compositeShaderUpdater: CompositeShaderUpdater;
 
-    public readonly modelViewProjection: ModelViewProjection
+    public readonly modelViewProjection: ModelViewProjection;
 
-    public readonly colorOpenGLProcessor: OpenGLProcessor
+    public readonly colorOpenGLProcessor: OpenGLProcessor;
 
-    public readonly vertexOpenGLProcessor: OpenGLProcessor
+    public readonly vertexOpenGLProcessor: OpenGLProcessor;
 
     public useProgramShaderOpenGLProcessor: OpenGLProcessor = 
                 null
@@ -104,7 +104,8 @@ export class ShaderComposite
 
     public uniformTextureUnitOpenGLProcessor: OpenGLObject3dProcessor = NullOpenGLTextureProcessor.getInstance()!;
 
-    public programHandle: number= 0
+    public programHandle: number= 0;
+
 public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor, disableProgramShaderOpenGLProcessor: OpenGLProcessor){
 
             super();

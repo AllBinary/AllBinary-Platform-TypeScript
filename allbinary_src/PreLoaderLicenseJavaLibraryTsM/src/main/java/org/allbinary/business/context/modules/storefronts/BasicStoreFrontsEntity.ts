@@ -61,6 +61,7 @@ export class BasicStoreFrontsEntity extends InitSql {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly tableName: string = "storefronts";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -76,14 +77,12 @@ this.setTable(this.tableName);
             
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
     
 
-    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-;
+    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;;
     
 
                         if(storeHashMap == 

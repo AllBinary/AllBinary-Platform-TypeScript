@@ -46,7 +46,8 @@ export class TransactionType
          {
         
 
-    private name: string
+    private name: string;
+
 public constructor (name: string){
 
             super();

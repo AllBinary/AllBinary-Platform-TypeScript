@@ -62,6 +62,7 @@ export class CryptServiceFactory
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private cryptService: CryptService = new CryptService();
+
 public constructor (){
 
             super();

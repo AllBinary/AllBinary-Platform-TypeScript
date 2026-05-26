@@ -92,9 +92,10 @@ export class Features
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly list: BasicArrayList
+    private readonly list: BasicArrayList;
 
-    private readonly defaultList: BasicArrayList
+    private readonly defaultList: BasicArrayList;
+
 private constructor (){
 
             super();
@@ -178,20 +179,16 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeatur
 
         try {
             
-    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-;
+    var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;;
     
 
-    var inputFeatureFactory: InputFeatureFactory = InputFeatureFactory.getInstance()!;
-;
+    var inputFeatureFactory: InputFeatureFactory = InputFeatureFactory.getInstance()!;;
     
 
-    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-;
+    var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;;
     
 
-    var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;
-;
+    var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;;
     
 this.addDefault(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
     
@@ -210,8 +207,7 @@ this.addDefault(gameFeatureFactory!.SCREEN_SHAKE);
 this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
     
 
-    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-;
+    var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;;
     
 
                         if(operatingSystemInterface!.isOverScan())

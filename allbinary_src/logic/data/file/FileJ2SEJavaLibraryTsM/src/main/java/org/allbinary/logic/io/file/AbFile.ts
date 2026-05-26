@@ -67,13 +67,15 @@ export class AbFile
 
     public static readonly NULL_FILE: AbFile = new AbFile(StringUtil.getInstance()!.EMPTY_STRING, false);
 
-    private readonly file: File
+    private readonly file: File;
+
  constructor (filePath: string, unknown: boolean){
 
             super();
         this.file= new File(filePath);
     
 }
+
 
  constructor (file: File){
 
@@ -82,12 +84,14 @@ export class AbFile
     
 }
 
+
 public constructor (file: AbFile, childPathName: string){
 
             super();
         this.file= new File(file.getFile(), childPathName);
     
 }
+
 
 public constructor (filePath: string){
 
@@ -96,12 +100,14 @@ public constructor (filePath: string){
     
 }
 
+
 public constructor (filePath: string, fileName: string){
 
             super();
         this.file= new File(new AbPath(filePath).toFileSystemString(), fileName);
     
 }
+
 
 public constructor (abPath: AbPath){
 

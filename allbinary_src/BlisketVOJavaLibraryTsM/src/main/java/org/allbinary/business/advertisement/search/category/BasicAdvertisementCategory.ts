@@ -47,7 +47,8 @@ export class BasicAdvertisementCategory
          implements AdvertisementCategoryInterface {
         
 
-    private categoryId: string
+    private categoryId: string;
+
 public constructor (categoryId: string){
 
             super();

@@ -60,6 +60,7 @@ import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringU
 
 export class TransformInfoHttpSearch extends TransformInfoHttp {
         
+
 public constructor (searchRequest: SearchRequest){
             super(searchRequest!.getPropertiesHashMap(), searchRequest!.getPageContext());
                     
@@ -84,8 +85,7 @@ public constructor (searchRequest: SearchRequest){
                         }
                             
 
-    var dataFileName: string = searchRequest!.getXslFile()!;
-;
+    var dataFileName: string = searchRequest!.getXslFile()!;;
     
 this.setTemplateFile(dataFileName);
     
@@ -96,8 +96,7 @@ this.setTemplateFile(dataFileName);
             
     getPath(): string{
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
     

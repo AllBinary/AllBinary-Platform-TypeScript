@@ -53,6 +53,7 @@ import { CompoundIndexedAnimation } from './CompoundIndexedAnimation.js';
 
 export class CompoundIndexedAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
                     

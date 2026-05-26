@@ -61,6 +61,7 @@ export class ViewHelperFactory
     private static readonly CLASSNAME: string = "taghelpers.ViewHelper";
 
     private static readonly FACTORYNAME: string = "taghelpers.ViewHelperFactory";
+
 public constructor (){
 
             super();

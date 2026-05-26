@@ -49,9 +49,10 @@ import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/bu
 export class OnlyTouchButtonRecognizer extends MotionRecognizer {
         
 
-    private readonly touchButtonRecognizer: TouchButtonRecognizer
+    private readonly touchButtonRecognizer: TouchButtonRecognizer;
 
     private touchButtonProcessing: boolean = false;
+
 public constructor (){
 
             super();

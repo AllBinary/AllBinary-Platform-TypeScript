@@ -51,6 +51,7 @@ export class DirectoryFileVisitor
             extends Object
          implements VisitorInterface, FileFilter {
         
+
 public constructor (){
 
             super();
@@ -71,16 +72,13 @@ visit.
 
     public visit(anyType: any = {}): any{
 
-    var file: File = anyType as File;
-;
+    var file: File = anyType as File;;
     
 
-    var index: number = 1;
-;
+    var index: number = 1;;
     
 
-    var aFile: File = file.getParentFile()!;
-;
+    var aFile: File = file.getParentFile()!;;
     
 
         while((aFile= aFile!.getParentFile()) != 

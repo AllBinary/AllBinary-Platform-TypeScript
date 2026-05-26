@@ -36,6 +36,7 @@ import { ABStringComponent } from './ABStringComponent.js';
 
 export class ABTextItem extends CustomCustomItem implements ABCustomItemInterface {
         
+
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, backgroundBasicColor, foregroundBasicColor);
                     

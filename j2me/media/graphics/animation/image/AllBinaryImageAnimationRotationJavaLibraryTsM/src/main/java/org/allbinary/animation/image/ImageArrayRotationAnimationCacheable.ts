@@ -55,6 +55,7 @@ import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationIn
 
 export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {
         
+
 public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
             super((anyType as ImageArrayRotationAnimationInfo).getImageArray(), (anyType as ImageArrayRotationAnimationInfo).getAngleInfoP(), (anyType as ImageArrayRotationAnimationInfo).getTotalAngle(), (anyType as ImageArrayRotationAnimationInfo).getDx(), (anyType as ImageArrayRotationAnimationInfo).getDy(), animationBehavior);
                     

@@ -54,6 +54,7 @@ import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/Anima
 
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
+
 public constructor (animationInterface: Animation, width: number, height: number){
             super(new ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstanceWH(width, height, animationInterface), AnimationBehavior.getInstance()));
                     

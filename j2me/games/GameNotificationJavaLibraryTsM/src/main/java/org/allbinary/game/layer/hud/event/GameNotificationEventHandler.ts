@@ -69,6 +69,7 @@ export class GameNotificationEventHandler extends BasicEventHandler {
     
 }
 
+
 private constructor (){
 
             super();
@@ -80,12 +81,10 @@ private constructor (){
 
     public removeAllListeners(){
 
-    var eventListenerInterface: EventListenerInterface = NullEventListener.NULL_EVENT_LISTENER;
-;
+    var eventListenerInterface: EventListenerInterface = NullEventListener.NULL_EVENT_LISTENER;;
     
 
-    var list: BasicArrayList = this.eventListenerInterfaceList;
-;
+    var list: BasicArrayList = this.eventListenerInterfaceList;;
     
 
                         if(list.size() > 0)
@@ -127,8 +126,7 @@ super.removeAllListeners();
                                     }
                                 
 
-    var gameNotificationListenerInterface: GameNotificationListenerInterface = eventListenerInterface as GameNotificationListenerInterface;
-;
+    var gameNotificationListenerInterface: GameNotificationListenerInterface = eventListenerInterface as GameNotificationListenerInterface;;
     
 gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNotificationEvent);
     

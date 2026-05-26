@@ -79,8 +79,7 @@ TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.ge
 
     public terrainMove(layer: AllBinaryLayer, geographicMapInterfaceArray: BasicGeographicMap[], x: number, y: number){
 
-    var basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;
-;
+    var basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;;
     
 basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y);
     

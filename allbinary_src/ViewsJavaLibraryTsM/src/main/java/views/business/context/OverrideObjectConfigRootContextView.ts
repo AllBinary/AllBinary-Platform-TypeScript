@@ -77,6 +77,7 @@ export class OverrideObjectConfigRootContextView extends HttpStoreComponentView 
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
                     
@@ -110,20 +111,17 @@ public constructor (transformInfoInterface: Object){
                                     }
                                 
 
-    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;
-;
+    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.getTransformInfoInterface()!.getStoreName());
     
 stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 
-    var nameStart: string = stringBuffer!.toString()!;
-;
+    var nameStart: string = stringBuffer!.toString()!;;
     
 
                         if(this.getTransformInfoInterface()!.getName()!.indexOf(GeneratorTransformInfoData.NAME) > 0)
@@ -153,8 +151,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                         }
                             
 
-    var overrideObjectConfigDocument: Document = this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc()!;
-;
+    var overrideObjectConfigDocument: Document = this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -166,24 +163,19 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                                     }
                                 
 
-    var transformFactory: TransformFactory = TransformFactory.getInstance()!;
-;
+    var transformFactory: TransformFactory = TransformFactory.getInstance()!;;
     
 
-    var rootComponentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, rootTransformInfoInterface!.getName(), rootTransformInfoInterface)!;
-;
+    var rootComponentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, rootTransformInfoInterface!.getName(), rootTransformInfoInterface)!;;
     
 
-    var transformTemplateInterface: TransformTemplateInterface = rootComponentInterface as TransformTemplateInterface;
-;
+    var transformTemplateInterface: TransformTemplateInterface = rootComponentInterface as TransformTemplateInterface;;
     
 
-    var componentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, transformTemplateInterface!.getName(), rootComponentInterface!.getTransformInfoInterface())!;
-;
+    var componentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, transformTemplateInterface!.getName(), rootComponentInterface!.getTransformInfoInterface())!;;
     
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, componentInterface!.getTransformInfoInterface(), overrideObjectConfigDocument)!;
-;
+    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, componentInterface!.getTransformInfoInterface(), overrideObjectConfigDocument)!;;
     
 componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transformInfoObjectConfigInterface);
     

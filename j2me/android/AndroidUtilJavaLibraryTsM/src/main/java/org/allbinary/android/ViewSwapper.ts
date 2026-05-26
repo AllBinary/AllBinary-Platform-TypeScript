@@ -42,15 +42,16 @@ export class ViewSwapper
 
     public static readonly NULL_VIEW_ARRAY: View[] = [];
 
-    private readonly rootViewId: number
+    private readonly rootViewId: number;
 
-    private readonly activity: Activity
+    private readonly activity: Activity;
 
     private currentMainViewId: number =  -1;
 
     private mainViewArray: View[] = ViewSwapper.NULL_VIEW_ARRAY;
 
     private topViewArray: View[] = ViewSwapper.NULL_VIEW_ARRAY;
+
 public constructor (activity: Activity, rootViewId: number){
 
             super();
@@ -75,8 +76,7 @@ this.topViewArray= topViewArray;
 
     public setMainView(id: number){
 
-    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId) as unknown as ViewGroup;
-;
+    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId) as unknown as ViewGroup;;
     
 
                         if(id != this.currentMainViewId)
@@ -87,8 +87,7 @@ this.topViewArray= topViewArray;
 
 
                         for (
-    var index: number = 0;
-index < this.topViewArray!.length; index++)
+    var index: number = 0;index < this.topViewArray!.length; index++)
         {
 viewGroup!.removeView(this.topViewArray[index]!);
     
@@ -99,8 +98,7 @@ viewGroup!.removeView(this.topViewArray[index]!);
 
 
                         for (
-    var index: number = 0;
-index < this.mainViewArray!.length; index++)
+    var index: number = 0;index < this.mainViewArray!.length; index++)
         {
 
                         if(id != this.mainViewArray[index]!.getId())
@@ -118,8 +116,7 @@ index < this.mainViewArray!.length; index++)
 
 
                         for (
-    var index: number = 0;
-index < this.mainViewArray!.length; index++)
+    var index: number = 0;index < this.mainViewArray!.length; index++)
         {
 
                         if(id == this.mainViewArray[index]!.getId())
@@ -139,8 +136,7 @@ this.currentMainViewId= id;
 
 
                         for (
-    var index: number = 0;
-index < this.topViewArray!.length; index++)
+    var index: number = 0;index < this.topViewArray!.length; index++)
         {
 viewGroup!.addView(this.topViewArray[index]!);
     

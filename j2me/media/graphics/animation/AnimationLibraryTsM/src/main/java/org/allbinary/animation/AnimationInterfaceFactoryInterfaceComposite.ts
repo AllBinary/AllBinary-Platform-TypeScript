@@ -53,7 +53,8 @@ export class AnimationInterfaceFactoryInterfaceComposite
          implements AnimationInterfaceFactoryInterface {
         
 
-    private readonly animationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[]
+    private readonly animationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[];
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[]){
 
             super();

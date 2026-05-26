@@ -57,6 +57,7 @@ export class UpdateOrderHelperFactory
     private static readonly CLASSNAME: string = "admin.taghelpers.UpdateOrderHelper";
 
     private static readonly FACTORYNAME: string = "UpdateOrderHelperFactory";
+
 public constructor (){
 
             super();

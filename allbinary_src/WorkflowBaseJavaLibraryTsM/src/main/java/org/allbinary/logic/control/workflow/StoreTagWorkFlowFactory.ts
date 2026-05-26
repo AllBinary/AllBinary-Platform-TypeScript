@@ -82,6 +82,7 @@ export class StoreTagWorkFlowFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -94,16 +95,14 @@ private constructor (){
 
         try {
             
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Creating WorkFlow: ");
     
@@ -114,8 +113,7 @@ stringBuffer!.append("->");
 stringBuffer!.append(StoreTagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
@@ -123,12 +121,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     }
                                 
 
-    var params: any[] = new Array(2);
-;
+    var params: any[] = new Array(2);;
     
 
-    var classes: Function[] = new Array(2);
-;
+    var classes: Function[] = new Array(2);;
     
 classes[0]= propertiesHashMap!.constructor;
     
@@ -153,12 +149,10 @@ params[1]= pageContext;
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Creating WorkFlow: ");
     
@@ -169,8 +163,7 @@ stringBuffer!.append("->");
 stringBuffer!.append(StoreTagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
@@ -192,12 +185,10 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Error Creating WorkFlow: ");
     
@@ -208,8 +199,7 @@ stringBuffer!.append("->");
 stringBuffer!.append(StoreTagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     

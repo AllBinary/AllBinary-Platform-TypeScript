@@ -92,28 +92,23 @@ export class AnimationFactorySpriteScaleUtil
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Sprite{
 
-    var spriteFactory: SpriteFactory = SpriteFactory.getInstance()!;
-;
+    var spriteFactory: SpriteFactory = SpriteFactory.getInstance()!;;
     
 
-    var sprite: Sprite
-;
+    var sprite: Sprite;;
     
 
-    var scaledImage: Image
-;
+    var scaledImage: Image;;
     
 
                         if(scaleWidth != 0 && scaleHeight != 0)
                         
                                     {
                                     
-    var scaleX: number = (scaleWidth) /(width);
-;
+    var scaleX: number = (scaleWidth) /(width);;
     
 
-    var scaleY: number = (scaleHeight) /(height);
-;
+    var scaleY: number = (scaleHeight) /(height);;
     
 
                         if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
@@ -132,30 +127,24 @@ sprite= spriteFactory!.createSprite(scaledImage, width, height);
                         
                                     {
                                     
-    var width2: number = this.j2seMath!.round((scaleWidth) -0.5)!;
-;
+    var width2: number = this.j2seMath!.round((scaleWidth) -0.5)!;;
     
 
-    var height2: number = this.j2seMath!.round((scaleHeight) -0.5)!;
-;
+    var height2: number = this.j2seMath!.round((scaleHeight) -0.5)!;;
     
 
-    var multiplesOf16Width: number = width2 /16;
-;
+    var multiplesOf16Width: number = width2 /16;;
     
 
-    var by16Width: number = multiplesOf16Width *16;
-;
+    var by16Width: number = multiplesOf16Width *16;;
     
 scaleX= (by16Width) /width;
     
 
-    var multiplesOf16Height: number = height2 /16;
-;
+    var multiplesOf16Height: number = height2 /16;;
     
 
-    var by16Height: number = multiplesOf16Height *16;
-;
+    var by16Height: number = multiplesOf16Height *16;;
     
 scaleY= (by16Height) /height;
     

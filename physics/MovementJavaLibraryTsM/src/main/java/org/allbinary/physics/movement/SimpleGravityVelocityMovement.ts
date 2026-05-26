@@ -54,6 +54,7 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
 
 export class SimpleGravityVelocityMovement extends BasicConstantVelocityMovement {
         
+
 public constructor (speedBasicDecimal: BasicDecimal){
             super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
                     

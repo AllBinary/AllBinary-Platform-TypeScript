@@ -45,6 +45,7 @@ export class AffiliateSales
             extends Object
          {
         
+
 public constructor (){
 
             super();

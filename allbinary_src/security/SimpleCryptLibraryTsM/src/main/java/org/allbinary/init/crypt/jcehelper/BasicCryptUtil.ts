@@ -77,12 +77,10 @@ export class BasicCryptUtil
             
     public getDecryptedInputStream(inputStream: InputStream, cryptInterface: CryptInterface): InputStream{
 
-    var buffer: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var buffer: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var ch: number= 0
-;
+    var ch: number= 0;;
     
 
         while(true)
@@ -104,16 +102,13 @@ buffer.write(ch);
 }
 
 
-    var decrypted: number[] = cryptInterface!.decrypt(buffer.toByteArray())!;
-;
+    var decrypted: number[] = cryptInterface!.decrypt(buffer.toByteArray())!;;
     
 
-    var decryptedString: string = String.fromCharCode(...decrypted);
-;
+    var decryptedString: string = String.fromCharCode(...decrypted);;
     
 
-    var index: number = decryptedString!.indexOf(this.XML_START)!;
-;
+    var index: number = decryptedString!.indexOf(this.XML_START)!;;
     
 
                         if(index > 0)

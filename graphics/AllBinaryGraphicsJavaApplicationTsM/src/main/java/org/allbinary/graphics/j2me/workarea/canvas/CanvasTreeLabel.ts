@@ -46,7 +46,8 @@ export class CanvasTreeLabel
          {
         
 
-    private label: string
+    private label: string;
+
 public constructor (str: string){
 
             super();

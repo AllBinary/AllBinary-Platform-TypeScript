@@ -95,7 +95,8 @@ export class TechRTSFormInput extends RTSFormInput {
 
     private readonly EVENT: AllBinaryEventObject = new AllBinaryEventObject(this);
 
-    readonly noMoneyGameNotificationEvent: GameNotificationEvent
+    readonly noMoneyGameNotificationEvent: GameNotificationEvent;
+
 public constructor (groupInterface: Group[]){
             super(groupInterface);
                     
@@ -103,8 +104,7 @@ public constructor (groupInterface: Group[]){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-;
+    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
 this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
@@ -117,12 +117,10 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
-;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;;
     
 
-    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-;
+    var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
 this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
@@ -135,20 +133,16 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 super.process(layerManager);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
-    var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem = item as TechnologyRTSInterfaceImageItem;
-;
+    var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem = item as TechnologyRTSInterfaceImageItem;;
     
 
-    var rtsInterface: RTSInterface = technologyRTSInterfaceImageItem!.getRtsInterface()!;
-;
+    var rtsInterface: RTSInterface = technologyRTSInterfaceImageItem!.getRtsInterface()!;;
     
 this.logUtil!.putF(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS);
     
@@ -157,12 +151,10 @@ this.logUtil!.putF(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInte
                         
                                     {
                                     
-    var cost: number = rtsInterface!.getUpgradeCost()!;
-;
+    var cost: number = rtsInterface!.getUpgradeCost()!;;
     
 
-    var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;
-;
+    var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;;
     
 stringMaker!.delete(0, stringMaker!.length());
     

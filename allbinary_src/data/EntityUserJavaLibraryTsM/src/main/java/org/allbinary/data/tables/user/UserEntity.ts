@@ -102,6 +102,7 @@ export class UserEntity extends AbSqlBean implements UserEntityInterface {
     private readonly NOT_EQUAL: string = "\"!=\"";
 
     private readonly END_QUOTES: string = "\"";
+
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -161,36 +162,30 @@ this.setTableName(this.tableName);
             
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var usersVector: Vector = new Vector();
-;
+    var usersVector: Vector = new Vector();;
     
 keysAndValues!.put(UserRoleData.NAME.toString(), UserRoleFactory.getInstance()!.STOREMANAGER.toString());
     
 keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
     
 
-    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.length!;
-;
+    var size: number = usersHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(i) as HashMap<any, any>;
-;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(i) as HashMap<any, any>;;
     
 
                         if(userHashMap != 
@@ -224,34 +219,28 @@ i < size; i++)
             
     public getUsersWithRole(userRole: UserRole): Vector{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var usersVector: Vector = new Vector();
-;
+    var usersVector: Vector = new Vector();;
     
 keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
     
 
-    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.length!;
-;
+    var size: number = usersHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;
-;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;;
     
 
                         if(userHashMap != 
@@ -273,34 +262,28 @@ index < size; index++)
             
     public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-;
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var usersVector: Vector = new Vector();
-;
+    var usersVector: Vector = new Vector();;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
     
 
-    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;
-;
+    var usersHashMapVector: Vector = super.getRows(keysAndValues)!;;
     
 
-    var size: number = usersHashMapVector!.length!;
-;
+    var size: number = usersHashMapVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;
-;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index) as HashMap<any, any>;;
     
 
                         if(userHashMap != 
@@ -322,14 +305,12 @@ index < size; index++)
             
     public getUser(userName: string): UserInterface{
 
-    var row: HashMap<any, any> = new HashMap<any, any>();
-;
+    var row: HashMap<any, any> = new HashMap<any, any>();;
     
 row.put(UserData.USERNAME, userName);
     
 
-    var userHashMap: HashMap<any, any> = super.getRow(row)!;
-;
+    var userHashMap: HashMap<any, any> = super.getRow(row)!;;
     
 
                         if(userHashMap != 
@@ -395,16 +376,13 @@ row.put(UserData.USERNAME, userName);
 
         try {
             
-    var isUserNameAndPasswordCorrect: number = 0;
-;
+    var isUserNameAndPasswordCorrect: number = 0;;
     
 
-    var result: string = super.getField(UserData.USERNAME, userName, UserData.PASSWORD)!;
-;
+    var result: string = super.getField(UserData.USERNAME, userName, UserData.PASSWORD)!;;
     
 
-    var encryption: string = super.getField(UserData.USERNAME, userName, EntryData.getInstance()!.ENCRYPTION)!;
-;
+    var encryption: string = super.getField(UserData.USERNAME, userName, EntryData.getInstance()!.ENCRYPTION)!;;
     
 
                         if(encryption != 
@@ -439,8 +417,7 @@ row.put(UserData.USERNAME, userName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.COMMAND_SUCCESS_FOR_USER);
     
@@ -474,8 +451,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "login");
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.COMMAND_SUCCESS_BUT_LOGIN_FAILED);
     
@@ -547,12 +523,10 @@ super.updateWhere(UserData.USERNAME, userName, updatedValues);
 
     public createTableStatement(): string{
 
-    var entryData: EntryData = EntryData.getInstance()!;
-;
+    var entryData: EntryData = EntryData.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.PREFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FIRSTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.LASTNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MIDDLENAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.SUFFIXNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.COMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.POSITIONATCOMPANY)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.MAINEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.SECONDARYEMAIL)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.HOMEPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.CELLPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.WORKPHONE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.OTHERCONTACT)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.ELECTRONICDEVICE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.FAX)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserRoleData.NAME.toString())!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.CONFIGURATION)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(UserData.PERMISSIONS)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.ENCRYPTION)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(UserData.SECRET)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(UserData.PASSWORD)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(entryData!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN)!.append(entryData!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(entryData!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(UserData.USERNAME)!.append(this.sqlStrings!.END);
     

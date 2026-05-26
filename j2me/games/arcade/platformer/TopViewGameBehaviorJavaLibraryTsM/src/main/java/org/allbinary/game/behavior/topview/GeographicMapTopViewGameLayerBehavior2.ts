@@ -68,11 +68,12 @@ export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopView
 
     private readonly geographicMapBehavior: MultiGeographicMapBehavior = new MultiGeographicMapBehavior();
 
-    private readonly autoStepBlocks: boolean
+    private readonly autoStepBlocks: boolean;
 
-    private readonly offsetY: number
+    private readonly offsetY: number;
 
-    private previousGeographicMapCellPosition: GeographicMapCellPosition
+    private previousGeographicMapCellPosition: GeographicMapCellPosition;
+
 public constructor (maxGravityActionIndex: number, autoStepBlocks: boolean, offsetY: number){
             super(maxGravityActionIndex);
                     
@@ -98,8 +99,7 @@ this.offsetY= offsetY;
                                     this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition);
     
 
-    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-;
+    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;;
     
 
                         if(!hasSolidBlock)
@@ -128,12 +128,10 @@ this.gravity();
             
     getPositionTopLeft(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
 
-    var xCellPosition: number = layer.getXP() + -x;
-;
+    var xCellPosition: number = layer.getXP() + -x;;
     
 
-    var yCellPosition: number = layer.getYP() + -y;
-;
+    var yCellPosition: number = layer.getYP() + -y;;
     
 
 
@@ -148,12 +146,10 @@ this.gravity();
             
     getPositionTopRight(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
 
-    var xCellPosition: number = layer.getXP() + -x +layer.getWidth();
-;
+    var xCellPosition: number = layer.getXP() + -x +layer.getWidth();;
     
 
-    var yCellPosition: number = layer.getYP() + -y;
-;
+    var yCellPosition: number = layer.getYP() + -y;;
     
 
 
@@ -168,12 +164,10 @@ this.gravity();
             
     getPositionBottomLeft(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
 
-    var xCellPosition: number = layer.getXP() + -x;
-;
+    var xCellPosition: number = layer.getXP() + -x;;
     
 
-    var yCellPosition: number = layer.getYP() + -y +layer.getHeight();
-;
+    var yCellPosition: number = layer.getYP() + -y +layer.getHeight();;
     
 
 
@@ -188,12 +182,10 @@ this.gravity();
             
     getPositionBottomRight(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
 
-    var xCellPosition: number = layer.getXP() + -x +layer.getWidth();
-;
+    var xCellPosition: number = layer.getXP() + -x +layer.getWidth();;
     
 
-    var yCellPosition: number = layer.getYP() + -y +layer.getHeight();
-;
+    var yCellPosition: number = layer.getYP() + -y +layer.getHeight();;
     
 
 
@@ -208,12 +200,10 @@ this.gravity();
             
     getLeftPosition(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer): GeographicMapCellPosition{
 
-    var xCellPosition: number = layer.getXP()!;
-;
+    var xCellPosition: number = layer.getXP()!;;
     
 
-    var yCellPosition: number = layer.getYP() +layer.getHeight();
-;
+    var yCellPosition: number = layer.getYP() +layer.getHeight();;
     
 
 
@@ -228,12 +218,10 @@ this.gravity();
             
     getRightPosition(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer): GeographicMapCellPosition{
 
-    var xCellPosition: number = layer.getXP() +layer.getWidth();
-;
+    var xCellPosition: number = layer.getXP() +layer.getWidth();;
     
 
-    var yCellPosition: number = layer.getYP() +layer.getHeight();
-;
+    var yCellPosition: number = layer.getYP() +layer.getHeight();;
     
 
 
@@ -250,12 +238,10 @@ this.gravity();
 
     var geographicMapCellPosition: GeographicMapCellPosition = 
                 null
-            ;
-;
+            ;;
     
 
-    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionTopLeft(geographicMapInterfaceArray, layer, x, y)!;
-;
+    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionTopLeft(geographicMapInterfaceArray, layer, x, y)!;;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topLeftGeographicMapCellPosition, velocityProperties, layer);
     
@@ -275,8 +261,7 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                     }
                                 
 
-    var topRightGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionTopRight(geographicMapInterfaceArray, layer, x, y)!;
-;
+    var topRightGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionTopRight(geographicMapInterfaceArray, layer, x, y)!;;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topRightGeographicMapCellPosition, velocityProperties, layer);
     
@@ -296,8 +281,7 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                     }
                                 
 
-    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionBottomLeft(geographicMapInterfaceArray, layer, x, y)!;
-;
+    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionBottomLeft(geographicMapInterfaceArray, layer, x, y)!;;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomLeftGeographicMapCellPosition, velocityProperties, layer);
     
@@ -317,8 +301,7 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                     }
                                 
 
-    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionBottomRight(geographicMapInterfaceArray, layer, x, y)!;
-;
+    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionBottomRight(geographicMapInterfaceArray, layer, x, y)!;;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomRightGeographicMapCellPosition, velocityProperties, layer);
     
@@ -354,12 +337,10 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                         
                                     {
                                     
-    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPosition;
-;
+    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPosition;;
     
 
-    var tiledLayer: AllBinaryTiledLayer = geographicMapInterfaceArray[0]!.getAllBinaryTiledLayer()!;
-;
+    var tiledLayer: AllBinaryTiledLayer = geographicMapInterfaceArray[0]!.getAllBinaryTiledLayer()!;;
     
 
                         if(possibleStepGeographicMapCellPosition!.getColumn() > 0 && possibleStepGeographicMapCellPosition!.getRow() > 0 && possibleStepGeographicMapCellPosition!.getColumn() < tiledLayer!.getColumns() && possibleStepGeographicMapCellPosition!.getRow() < tiledLayer!.getRows())
@@ -368,12 +349,10 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                     this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
-    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-;
+    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;;
     
 
-    var hasOffMap: boolean = this.isOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-;
+    var hasOffMap: boolean = this.isOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray)!;;
     
 
                         if(hasSolidBlock || hasOffMap)
@@ -454,8 +433,7 @@ layer.
             
     public move(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): boolean{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray, geographicMapCellTypeArray, velocityProperties, layer, x, y)!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray, geographicMapCellTypeArray, velocityProperties, layer, x, y)!;;
     
 this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition, velocityProperties, layer, x, y);
     
@@ -491,8 +469,7 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
             
     public left(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getLeftPosition(geographicMapInterfaceArray, layer)!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.getLeftPosition(geographicMapInterfaceArray, layer)!;;
     
 
                         if(geographicMapCellPosition != 
@@ -501,14 +478,12 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
                         
                                     {
                                     
-    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getAt(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;
-;
+    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getAt(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;;
     
 this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
-    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-;
+    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;;
     
 
                         if(hasSolidBlock)
@@ -552,8 +527,7 @@ layer.
             
     public right(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getRightPosition(geographicMapInterfaceArray, layer)!;
-;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.getRightPosition(geographicMapInterfaceArray, layer)!;;
     
 
                         if(geographicMapCellPosition != 
@@ -562,14 +536,12 @@ layer.
                         
                                     {
                                     
-    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getAt(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;
-;
+    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getAt(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;;
     
 this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
-    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-;
+    var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;;
     
 
                         if(hasSolidBlock)

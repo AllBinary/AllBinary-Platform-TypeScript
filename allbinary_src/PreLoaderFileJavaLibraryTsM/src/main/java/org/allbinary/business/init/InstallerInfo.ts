@@ -92,6 +92,7 @@ InstallerInfo.hasRead= value;
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
@@ -103,28 +104,23 @@ public constructor (){
 
     public write(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);
-;
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);;
     
 
         try {
             
-    var newFile: AbFile = new AbFile(FILEABPATH);
-;
+    var newFile: AbFile = new AbFile(FILEABPATH);;
     
 newFile!.createNewFile();
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
-;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;;
     
 
-    var cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.encodeToByteArray()!;
-;
+    var cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.encodeToByteArray()!;;
     
 
-    var cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.encodeToByteArray()!;
-;
+    var cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.encodeToByteArray()!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
     
@@ -160,34 +156,28 @@ InstallerInfo.hasRead= false;
 
     read(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);
-;
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);;
     
 
         try {
             
-    var file: AbFile = new AbFile(FILEABPATH);
-;
+    var file: AbFile = new AbFile(FILEABPATH);;
     
 
                         if(file.isFile())
                         
                                     {
                                     
-    var iFile: AbFileLocalInputStream = new AbFileLocalInputStream(file);
-;
+    var iFile: AbFileLocalInputStream = new AbFileLocalInputStream(file);;
     
 
-    var iData: AbDataInputStream = new AbDataInputStream(iFile);
-;
+    var iData: AbDataInputStream = new AbDataInputStream(iFile);;
     
 
-    var decryptedUserName: string = decode.toCharArray();
-;
+    var decryptedUserName: string = decode.toCharArray();;
     
 
-    var decryptedPassword: string = decode.toCharArray();
-;
+    var decryptedPassword: string = decode.toCharArray();;
     
 this.setUserName(new WeakCrypt(1).decrypt(decryptedUserName));
     

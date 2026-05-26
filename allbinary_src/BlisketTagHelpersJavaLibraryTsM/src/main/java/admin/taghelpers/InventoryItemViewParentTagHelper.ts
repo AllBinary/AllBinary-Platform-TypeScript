@@ -86,20 +86,17 @@ export class InventoryItemViewParentTagHelper
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
-;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
     
 
-    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
-;
+    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
     
 
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     
@@ -148,20 +145,17 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
-;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
     
 
-    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
-;
+    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
     
 
                         if(viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     
@@ -210,20 +204,17 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
-;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;;
     
 
-    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
-;
+    var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;;
     
 
                         if(viewObject!.getTypeId() != InventoryItemView.TYPE_ID && viewObject!.getTypeId() != DownloadableInventoryItemView.TYPE_ID)
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     
@@ -268,8 +259,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Must have ");
     

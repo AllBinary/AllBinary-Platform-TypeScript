@@ -57,6 +57,7 @@ import { AllBinaryCollisionManager } from './AllBinaryCollisionManager.js';
 
 export class CollidableInterfaceLayerProcessor extends LayerProcessor {
         
+
 public constructor (){
             super(new CollidableInterfaceLayerManager());
                     
@@ -70,8 +71,7 @@ public constructor (){
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 
-    var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface = layerInterface as CollidableInterfaceCompositeInterface;
-;
+    var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface = layerInterface as CollidableInterfaceCompositeInterface;;
     
 
                         if(collidableInterfaceCompositeInterface!.getCollidableInferface()!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))

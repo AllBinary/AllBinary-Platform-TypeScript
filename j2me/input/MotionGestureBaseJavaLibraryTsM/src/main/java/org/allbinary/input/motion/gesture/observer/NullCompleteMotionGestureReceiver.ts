@@ -56,12 +56,12 @@ export class NullCompleteMotionGestureReceiver
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (){
 
             super();
         
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF("Null Gesture Reciever", this, commonStrings!.CONSTRUCTOR);
     

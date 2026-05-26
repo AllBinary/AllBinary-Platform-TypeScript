@@ -50,7 +50,8 @@ import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/gam
 export class InputProcessor extends Processor {
         
 
-    private readonly playerGameInputCompositeInterface: PlayerGameInputCompositeInterface
+    private readonly playerGameInputCompositeInterface: PlayerGameInputCompositeInterface;
+
 public constructor (playerGameInputCompositeInterface: PlayerGameInputCompositeInterface){
 
             super();

@@ -64,20 +64,16 @@ export class InGameFeatures extends Init {
 
     public init(){
 
-    var LABEL: string = "Screen Buttons";
-;
+    var LABEL: string = "Screen Buttons";;
     
 
-    var orientationData: OrientationData = OrientationData.getInstance()!;
-;
+    var orientationData: OrientationData = OrientationData.getInstance()!;;
     
 
-    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT) as BasicArrayList;
-;
+    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT) as BasicArrayList;;
     
 
-    var inGameFeatureChoiceGroups: InGameFeatureChoiceGroups = InGameFeatureChoiceGroups.getExclusiveInstance()!;
-;
+    var inGameFeatureChoiceGroups: InGameFeatureChoiceGroups = InGameFeatureChoiceGroups.getExclusiveInstance()!;;
     
 
                         if(exclusiveOrientationSensorVector != 
@@ -86,8 +82,7 @@ export class InGameFeatures extends Init {
                         
                                     {
                                     
-    var inGameExclusiveOrientationSensorVectorCanBeNull: any = inGameFeatureChoiceGroups!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT);
-;
+    var inGameExclusiveOrientationSensorVectorCanBeNull: any = inGameFeatureChoiceGroups!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT);;
     
 
                         if(inGameExclusiveOrientationSensorVectorCanBeNull == 
@@ -102,8 +97,7 @@ export class InGameFeatures extends Init {
                                 
                         else {
                             
-    var inGameExclusiveOrientationSensorVector: BasicArrayList = inGameExclusiveOrientationSensorVectorCanBeNull as BasicArrayList;
-;
+    var inGameExclusiveOrientationSensorVector: BasicArrayList = inGameExclusiveOrientationSensorVectorCanBeNull as BasicArrayList;;
     
 
                         if(inGameExclusiveOrientationSensorVector!.size() == 0)
@@ -121,20 +115,17 @@ export class InGameFeatures extends Init {
                                     }
                                 
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
                         if(features.isFeature(TouchFeatureFactory.getInstance()!.SHOW_SCREEN_BUTTONS) || features.isFeature(TouchFeatureFactory.getInstance()!.AUTO_HIDE_SHOW_SCREEN_BUTTONS) || features.isFeature(TouchFeatureFactory.getInstance()!.HIDE_SCREEN_BUTTONS))
                         
                                     {
                                     
-    var exclusiveScreenButtonsVector: BasicArrayList = new BasicArrayListD();
-;
+    var exclusiveScreenButtonsVector: BasicArrayList = new BasicArrayListD();;
     
 
-    var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;
-;
+    var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;;
     
 exclusiveScreenButtonsVector!.add(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS);
     
@@ -152,12 +143,10 @@ inGameFeatureChoiceGroups!.add(LABEL, exclusiveScreenButtonsVector);
 
     addToInGameMenu(){
 
-    var orientationData: OrientationData = OrientationData.getInstance()!;
-;
+    var orientationData: OrientationData = OrientationData.getInstance()!;;
     
 
-    var inGameExclusiveOrientationSensorVector: BasicArrayList = new BasicArrayListD();
-;
+    var inGameExclusiveOrientationSensorVector: BasicArrayList = new BasicArrayListD();;
     
 inGameExclusiveOrientationSensorVector!.add(SensorFeatureFactory.getInstance()!.ORIENTATION_SENSORS);
     
@@ -170,12 +159,10 @@ InGameFeatureChoiceGroups.getExclusiveInstance()!.add(orientationData!.ORIENTATI
 
     public isAny(): boolean{
 
-    var features: Features = Features.getInstance()!;
-;
+    var features: Features = Features.getInstance()!;;
     
 
-    var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;
-;
+    var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;;
     
 
                         if(features.isFeature(touchFeatureFactory!.SHOW_SCREEN_BUTTONS) || features.isFeature(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS) || features.isFeature(touchFeatureFactory!.HIDE_SCREEN_BUTTONS))
@@ -191,8 +178,7 @@ InGameFeatureChoiceGroups.getExclusiveInstance()!.add(orientationData!.ORIENTATI
                                     }
                                 
 
-    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT) as BasicArrayList;
-;
+    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT) as BasicArrayList;;
     
 
                         if(exclusiveOrientationSensorVector != 

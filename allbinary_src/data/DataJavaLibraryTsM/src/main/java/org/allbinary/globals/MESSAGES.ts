@@ -47,6 +47,7 @@ export class MESSAGES
         
 
     public static CONTACTADMIN: string = "Please contact the administrator.";
+
 private constructor (){
 
             super();

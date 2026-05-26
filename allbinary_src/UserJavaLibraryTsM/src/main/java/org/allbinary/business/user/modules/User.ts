@@ -104,51 +104,52 @@ export class User
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private userName: string
+    private userName: string;
 
-    private prefixName: string
+    private prefixName: string;
 
-    private firstName: string
+    private firstName: string;
 
-    private lastName: string
+    private lastName: string;
 
-    private middleName: string
+    private middleName: string;
 
-    private suffixName: string
+    private suffixName: string;
 
-    private company: string
+    private company: string;
 
-    private positionAtCompany: string
+    private positionAtCompany: string;
 
-    private mainEmail: string
+    private mainEmail: string;
 
-    private secondaryEmail: string
+    private secondaryEmail: string;
 
-    private homePhone: string
+    private homePhone: string;
 
-    private cellPhone: string
+    private cellPhone: string;
 
-    private workPhone: string
+    private workPhone: string;
 
-    private otherContact: string
+    private otherContact: string;
 
-    private electronicDevice: string
+    private electronicDevice: string;
 
-    private fax: string
+    private fax: string;
 
-    private role: UserRole
+    private role: UserRole;
 
-    private encryption: string
+    private encryption: string;
 
-    private secret: string
+    private secret: string;
 
-    private password: Password
+    private password: Password;
 
-    private enable: string
+    private enable: string;
 
-    private permissions: string
+    private permissions: string;
 
-    private userConfigurationInterface: UserConfigurationInterface
+    private userConfigurationInterface: UserConfigurationInterface;
+
 public constructor (){
 
             super();
@@ -158,6 +159,7 @@ this.password= new Password(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
+
 public constructor (request: HttpServletRequest){
 
             super();
@@ -166,6 +168,7 @@ public constructor (request: HttpServletRequest){
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
     
 }
+
 
 public constructor (userHashMap: HashMap<any, any>){
 
@@ -183,16 +186,13 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
 this.userName= new UserName(userHashMap).get();
     
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var passwordString: string = stringUtil!.getNonNull(userHashMap!.get(UserData.PASSWORD) as string)!;
-;
+    var passwordString: string = stringUtil!.getNonNull(userHashMap!.get(UserData.PASSWORD) as string)!;;
     
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(this.userName) && stringValidationUtil!.isEmpty(passwordString))
@@ -206,12 +206,10 @@ passwordString= stringUtil!.getNonNull(userHashMap!.get(WeblisketSessionData.REM
                                     }
                                 
 
-    var encryption: string = stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION) as string)!;
-;
+    var encryption: string = stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION) as string)!;;
     
 
-    var secret: string = stringUtil!.getNonNull(userHashMap!.get(UserData.SECRET) as string)!;
-;
+    var secret: string = stringUtil!.getNonNull(userHashMap!.get(UserData.SECRET) as string)!;;
     
 this.password= new Password(passwordString);
     
@@ -272,8 +270,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
 
         try {
             
-    var valid: Boolean = Boolean.TRUE;
-;
+    var valid: Boolean = Boolean.TRUE;;
     
 
                         if(!UserName.getInstance()!.isValid(this.userName).valueOf())
@@ -294,8 +291,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN))
@@ -339,8 +335,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
     
@@ -362,12 +357,10 @@ this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
 
         try {
             
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(UserName.getValidationInfo(this.userName));
     
@@ -788,8 +781,7 @@ this.enable= enable;
             
     public toVector(): Vector{
 
-    var values: Vector = new Vector();
-;
+    var values: Vector = new Vector();;
     
 values.add(this.userName);
     
@@ -826,8 +818,7 @@ values.add(this.fax);
 values.add(this.getRole()!.toString());
     
 
-    var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());
-;
+    var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());;
     
 values.add(userConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -838,12 +829,10 @@ values.addAll(this.password.toVector(this.secret));
 values.add(this.enable);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.add(time);
     
@@ -862,8 +851,7 @@ values.add(time);
             
     public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-;
+    var values: HashMap<any, any> = new HashMap<any, any>();;
     
 values.put(UserData.USERNAME, userName);
     
@@ -909,8 +897,7 @@ values.put(UserData.FAX, fax);
                                     }
                                 
 
-    var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());
-;
+    var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());;
     
 values.put(UserData.CONFIGURATION, userConfigurationDomDocumentMapping!.toDomDocumentString());
     
@@ -921,12 +908,10 @@ values.putAll(this.password.toHashMap(this.secret));
 values.put(EntryData.getInstance()!.ENABLE, this.enable);
     
 
-    var calendar: Calendar = Calendar.getInstance()!;
-;
+    var calendar: Calendar = Calendar.getInstance()!;;
     
 
-    var time: string = new Long(calendar.getTimeInMillis()).toString();
-;
+    var time: string = new Long(calendar.getTimeInMillis()).toString();;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
     

@@ -72,8 +72,7 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTS
 documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTENDSTART, DocumentToNode.XMLEND);
     
 
-    var replaceXmlRoot: Replace = new Replace(XMLROOT, StringUtil.getInstance()!.EMPTY_STRING);
-;
+    var replaceXmlRoot: Replace = new Replace(XMLROOT, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
 
@@ -96,8 +95,7 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTE
 
     public static remove(documentString: string, start: string, end: string): string{
 
-    var startIndex: number= 0
-;
+    var startIndex: number= 0;;
     
 
         while((startIndex= documentString!.indexOf(start)) !=  -1)
@@ -107,20 +105,17 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTE
                         
                                     {
                                     
-    var endIndex: number = documentString!.indexOf(end, startIndex)!;
-;
+    var endIndex: number = documentString!.indexOf(end, startIndex)!;;
     
 
                         if(endIndex >= 0)
                         
                                     {
                                     
-    var startString: string = documentString!.substring(0, startIndex)!;
-;
+    var startString: string = documentString!.substring(0, startIndex)!;;
     
 
-    var resultString: string = documentString!.substring(endIndex +1)!;
-;
+    var resultString: string = documentString!.substring(endIndex +1)!;;
     
 
 
@@ -143,6 +138,7 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTE
                         return documentString;
     
 }
+
 
 private constructor (){
 

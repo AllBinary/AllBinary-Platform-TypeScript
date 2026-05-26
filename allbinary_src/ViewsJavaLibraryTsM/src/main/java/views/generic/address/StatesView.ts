@@ -71,6 +71,7 @@ export class StatesView
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
 public constructor (){
 
             super();
@@ -81,23 +82,19 @@ public constructor (){
 
         try {
             
-    var node: Node = document.createElement(StreetAddressData.STATES)!;
-;
+    var node: Node = document.createElement(StreetAddressData.STATES)!;;
     
 
-    var statesFile: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.LINEDATAPATH +"states.txt";
-;
+    var statesFile: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.LINEDATAPATH +"states.txt";;
     
 
-    var lineReader: LineReader = new LineReader(statesFile);
-;
+    var lineReader: LineReader = new LineReader(statesFile);;
     
 
         while(lineReader!.hasNext())
         {
 
-    var option: string = lineReader!.next()!;
-;
+    var option: string = lineReader!.next()!;;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE, option));
     

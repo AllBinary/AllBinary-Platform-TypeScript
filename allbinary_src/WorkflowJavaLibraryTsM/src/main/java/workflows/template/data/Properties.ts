@@ -58,7 +58,8 @@ export class Properties
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
+
 public constructor (){
 
             super();

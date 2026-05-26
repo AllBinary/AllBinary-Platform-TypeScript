@@ -65,19 +65,21 @@ export class BasicPaymentType
          {
         
 
-    private name: string
+    private name: string;
 
-    private value: string
+    private value: string;
 
-    private paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface
+    private paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface;
 
-    private paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface
+    private paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface;
+
 protected constructor (paymentMethod: string){
 
             super();
         this.init(paymentMethod);
     
 }
+
 
 protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface, paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface){
 
@@ -93,12 +95,10 @@ this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterfac
 
     init(paymentMethod: string){
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var UNDERSCORE: string = "_";
-;
+    var UNDERSCORE: string = "_";;
     
 hashMap!.put(CommonSeps.getInstance()!.SPACE, UNDERSCORE);
     
@@ -107,8 +107,7 @@ hashMap!.put(AbPathData.getInstance()!.EXTENSION_SEP, UNDERSCORE);
 hashMap!.put("-", UNDERSCORE);
     
 
-    var replace: Replace = new Replace(hashMap);
-;
+    var replace: Replace = new Replace(hashMap);;
     
 this.name= replace.all(paymentMethod);
     
@@ -203,8 +202,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
 
     public toVector(): Vector{
 
-    var vector: Vector = new Vector();
-;
+    var vector: Vector = new Vector();;
     
 vector.add(this.name);
     
@@ -221,8 +219,7 @@ vector.add(this.value);
 
     public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-;
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 hashMap!.put(PaymentGatewayData.NAME.toString(), this.name);
     

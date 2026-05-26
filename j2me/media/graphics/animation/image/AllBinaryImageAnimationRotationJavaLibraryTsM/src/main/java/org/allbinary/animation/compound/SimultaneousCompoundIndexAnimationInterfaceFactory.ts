@@ -59,9 +59,10 @@ export class SimultaneousCompoundIndexAnimationInterfaceFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-    private readonly basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[]
+    private readonly basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[];
 
-    private readonly animationBehaviorFactory: AnimationBehaviorFactory
+    private readonly animationBehaviorFactory: AnimationBehaviorFactory;
+
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -77,20 +78,17 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     public getInstance(instanceId: number): Animation{
 
     var size: number = this.basicAnimationInterfaceFactoryInterfaceArray!.length
-                ;
-;
+                ;;
     
 
-    var animationInterfaceArray: IndexedAnimation[] = new Array(size);
-;
+    var animationInterfaceArray: IndexedAnimation[] = new Array(size);;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId) as IndexedAnimation;
     

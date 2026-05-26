@@ -73,51 +73,45 @@ export class UserConfigurationView
          implements DomNodeInterface {
         
 
-    private userConfigurationInterface: UserConfigurationInterface
+    private userConfigurationInterface: UserConfigurationInterface;
+
 public constructor (node: Node){
 
             super();
         this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
     
 
-    var childNodeList: NodeList = node.getChildNodes()!;
-;
+    var childNodeList: NodeList = node.getChildNodes()!;;
     
 
-    var emailConfigurationNode: Node = DomSearchHelper.getNode(UserEmailConfigurationData.NAME, childNodeList)!;
-;
+    var emailConfigurationNode: Node = DomSearchHelper.getNode(UserEmailConfigurationData.NAME, childNodeList)!;;
     
 
-    var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(emailConfigurationNode);
-;
+    var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(emailConfigurationNode);;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface() as UserEmailConfigurationInterface;
-;
+    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface() as UserEmailConfigurationInterface;;
     
 this.userConfigurationInterface!.setUserEmailConfigurationInterface(userEmailConfigurationInterface);
     
 
-    var timeCreatedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.TIMECREATED, childNodeList)!;
-;
+    var timeCreatedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.TIMECREATED, childNodeList)!;;
     
 
-    var timeCreatedView: TimeCreatedView = new TimeCreatedView(timeCreatedNode);
-;
+    var timeCreatedView: TimeCreatedView = new TimeCreatedView(timeCreatedNode);;
     
 this.userConfigurationInterface!.setTimeCreated(timeCreatedView!.getTimeCreated());
     
 
-    var timeLastModifiedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.LASTMODIFIED, childNodeList)!;
-;
+    var timeLastModifiedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.LASTMODIFIED, childNodeList)!;;
     
 
-    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(timeLastModifiedNode);
-;
+    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(timeLastModifiedNode);;
     
 this.userConfigurationInterface!.setTimeLastModified(timeLastModifiedView!.getTimeLastModified());
     
 }
+
 
 public constructor (userConfigurationInterface: UserConfigurationInterface){
 
@@ -141,24 +135,20 @@ public constructor (userConfigurationInterface: UserConfigurationInterface){
             
     public toXmlNode(document: Document): Node{
 
-    var node: Node = document.createElement(UserConfigurationData.NAME)!;
-;
+    var node: Node = document.createElement(UserConfigurationData.NAME)!;;
     
 
-    var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(this.userConfigurationInterface!.getUserEmailConfigurationInterface());
-;
+    var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(this.userConfigurationInterface!.getUserEmailConfigurationInterface());;
     
 node.appendChild(userEmailConfigurationView!.toXmlNode(document));
     
 
-    var timeCreatedView: TimeCreatedView = new TimeCreatedView(this.userConfigurationInterface!.getTimeCreated());
-;
+    var timeCreatedView: TimeCreatedView = new TimeCreatedView(this.userConfigurationInterface!.getTimeCreated());;
     
 node.appendChild(timeCreatedView!.toXmlNode(document));
     
 
-    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(this.userConfigurationInterface!.getTimeLastModified());
-;
+    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(this.userConfigurationInterface!.getTimeLastModified());;
     
 node.appendChild(timeLastModifiedView!.toXmlNode(document));
     

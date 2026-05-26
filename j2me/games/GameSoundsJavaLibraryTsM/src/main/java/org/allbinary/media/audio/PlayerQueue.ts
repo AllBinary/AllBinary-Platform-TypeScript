@@ -68,7 +68,8 @@ export class PlayerQueue
 
     private readonly list: BasicArrayList = new BasicArrayListD();
 
-    private max: number
+    private max: number;
+
  constructor (max: number){
 
             super();
@@ -102,14 +103,12 @@ PreLogUtil.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD);
 
     public process(): boolean{
 
-    var sound: Sound = NoSound.getInstance()!;
-;
+    var sound: Sound = NoSound.getInstance()!;;
     
 
         try {
             
-    var played: boolean = false;
-;
+    var played: boolean = false;;
     
 
                         if(this.list.size() > 0)
@@ -151,8 +150,7 @@ played= true;
 } catch(e) 
             {
 
-    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var resource: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(sound != 

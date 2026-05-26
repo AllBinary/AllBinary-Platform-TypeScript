@@ -58,6 +58,7 @@ export class NullIntermissionEnableListener
     
 }
 
+
 private constructor (){
 
             super();

@@ -71,6 +71,7 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
         
 export class RootStoreThemeCategoryProperties extends RootStoreCategoryProperties {
         
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -78,6 +79,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPath){
             super(transformInfoInterface, abPath);
@@ -87,6 +89,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPa
                     
 }
 
+
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
             super(transformInfoInterface, node);
                     
@@ -94,6 +97,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
                             //For kotlin this is before the body of the constructor.
                     
 }
+
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
             super(transformInfoInterface, categoryPropertiesHashMap);
@@ -108,16 +112,13 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
             
     public initPath(){
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.transformInfoInterface as TransformInfoHttpStoreInterface;
-;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.transformInfoInterface as TransformInfoHttpStoreInterface;;
     
 
-    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;
-;
+    var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
@@ -130,12 +131,10 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString());
-;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;
-;
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +abPath!.toString());
     

@@ -48,9 +48,10 @@ export class ThirdPartyStore
          {
         
 
-    private authorized: boolean= false
+    private authorized: boolean= false;
 
-    private readonly name: string
+    private readonly name: string;
+
 public constructor (name: string){
 
             super();

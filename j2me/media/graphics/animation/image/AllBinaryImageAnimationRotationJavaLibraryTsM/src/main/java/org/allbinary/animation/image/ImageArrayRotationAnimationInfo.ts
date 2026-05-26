@@ -50,15 +50,16 @@ export class ImageArrayRotationAnimationInfo
          {
         
 
-    private imageArray: Image[]
+    private imageArray: Image[];
 
-    private angleIncrement: number
+    private angleIncrement: number;
 
-    private totalAngle: number
+    private totalAngle: number;
 
-    private dx: number
+    private dx: number;
 
-    private dy: number
+    private dy: number;
+
 public constructor (imageArray: Image[], angleIncrement: number, totalAngle: number, dx: number, dy: number){
 
             super();

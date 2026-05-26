@@ -46,7 +46,7 @@ export class PlayersSingletonFactory
          {
         
 
-    public static total: number= 0
+    public static total: number= 0;
 
 }
                 

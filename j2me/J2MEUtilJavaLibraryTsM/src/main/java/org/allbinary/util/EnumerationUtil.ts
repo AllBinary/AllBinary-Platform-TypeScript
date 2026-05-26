@@ -90,8 +90,7 @@ export class EnumerationUtil
 
     public getHashMapAsArray(hashMap: HashMap<any, any>): any[]{
 
-    var objectArray: any[] = hashMap!.keys().()!;
-;
+    var objectArray: any[] = hashMap!.keys().()!;;
     
 
 
@@ -104,8 +103,7 @@ export class EnumerationUtil
 
     public getMapAsArray(map: Map<any, any>): any[]{
 
-    var objectArray: any[] = map.keySet()!.()!;
-;
+    var objectArray: any[] = map.keySet()!.()!;;
     
 
 
@@ -118,8 +116,7 @@ export class EnumerationUtil
 
     public getSetAsArray(set: Set<string>): any[]{
 
-    var objectArray: any[] = set.toArray()!;
-;
+    var objectArray: any[] = set.toArray()!;;
     
 
 
@@ -132,8 +129,7 @@ export class EnumerationUtil
 
     public getAsArray(enumeration: Enumeration<any>): any[]{
 
-    var basicArrayList: BasicArrayList = new BasicArrayListD();
-;
+    var basicArrayList: BasicArrayList = new BasicArrayListD();;
     
 
         while(this.hasMoreElements(enumeration))

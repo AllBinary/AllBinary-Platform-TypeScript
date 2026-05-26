@@ -93,6 +93,7 @@ import { TimeStampUtil } from '../../../../../org/allbinary/time/TimeStampUtil.j
     private readonly FUNCTION_CALL: string = CommonLabels.getInstance()!.COLON_SEP;
 
     private readonly SPECIAL_MESSAGE: string = "> ";
+
 private constructor (){
 
             super();
@@ -101,8 +102,7 @@ private constructor (){
 
     /*actual*/ public get(className: string, functionName: string, specialMessage: string, exception: any = {}): string{
 
-    var stringBuffer: StringMaker = this.getF(className, functionName)!;
-;
+    var stringBuffer: StringMaker = this.getF(className, functionName)!;;
     
 stringBuffer!.append(this.getO(exception));
     
@@ -123,8 +123,7 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
 
     /*actual*/ public getS(className: string, functionName: string, specialMessage: string): string{
 
-    var stringBuffer: StringMaker = this.getF(className, functionName)!;
-;
+    var stringBuffer: StringMaker = this.getF(className, functionName)!;;
     
 stringBuffer!.append(this.SPECIAL_MESSAGE);
     
@@ -154,8 +153,7 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
                                     }
                                 
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.TIME);
     
@@ -190,14 +188,12 @@ stringBuffer!.append(functionName);
                         
                                     {
                                     
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.LOG_ERROR);
     
 
-    var exceptionAsString: string = exception.toString()!;
-;
+    var exceptionAsString: string = exception.toString()!;;
     
 
                         if(exceptionAsString != 

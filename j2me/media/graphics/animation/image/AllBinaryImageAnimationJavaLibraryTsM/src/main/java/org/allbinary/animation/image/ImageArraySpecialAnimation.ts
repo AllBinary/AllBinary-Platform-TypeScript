@@ -62,6 +62,7 @@ export class ImageArraySpecialAnimation extends ImageArrayAnimation implements S
         
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(270);
+
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
             super(imageArray, animationBehavior);
                     

@@ -74,17 +74,16 @@ export class InventoryRequestHelper extends ModifyTable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly itemInterface: ItemInterface
+    private readonly itemInterface: ItemInterface;
+
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         
-    var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT) as HelperTag;
-;
+    var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT) as HelperTag;;
     
 
-    var itemView: InventoryItemView = InventoryItemViewParentTagHelper.getInstance()!.getInventoryItemView(inventoryTag)!;
-;
+    var itemView: InventoryItemView = InventoryItemViewParentTagHelper.getInstance()!.getInventoryItemView(inventoryTag)!;;
     
 this.itemInterface= itemView!.getItemInterface();
     
@@ -97,18 +96,15 @@ this.itemInterface= itemView!.getItemInterface();
 
         try {
             
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;
-;
+    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;;
     
 
-    var values: Vector = dataMappingInterface!.toVector()!;
-;
+    var values: Vector = dataMappingInterface!.toVector()!;;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully Added Product";
-;
+    var success: string = "Successfully Added Product";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -130,8 +126,7 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 } catch(e) 
             {
 
-    var error: string = "Failed to add item to Inventory";
-;
+    var error: string = "Failed to add item to Inventory";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -157,18 +152,15 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 
         try {
             
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;
-;
+    var dataMappingInterface: TableMappingInterface = this.getItemInterface() as TableMappingInterface;;
     
 
-    var id: string = dataMappingInterface!.getKey() as string;
-;
+    var id: string = dataMappingInterface!.getKey() as string;;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id);
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Successfully Removed the item with ");
     
@@ -181,8 +173,7 @@ stringBuffer!.append(id);
 stringBuffer!.append(" from to the Inventory table");
     
 
-    var success: string = stringBuffer!.toString()!;
-;
+    var success: string = stringBuffer!.toString()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -204,8 +195,7 @@ stringBuffer!.append(" from to the Inventory table");
 } catch(e) 
             {
 
-    var error: string = "Failed to remove item with from Inventory";
-;
+    var error: string = "Failed to remove item with from Inventory";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -235,8 +225,7 @@ stringBuffer!.append(" from to the Inventory table");
 this.insert();
     
 
-    var success: string = "Item Successfully Updated";
-;
+    var success: string = "Item Successfully Updated";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -258,8 +247,7 @@ this.insert();
 } catch(e) 
             {
 
-    var error: string = "Failed To Update Item";
-;
+    var error: string = "Failed To Update Item";;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))

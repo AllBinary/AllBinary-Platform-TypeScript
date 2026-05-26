@@ -82,6 +82,7 @@ export class TagWorkFlowFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 private constructor (){
 
             super();
@@ -94,16 +95,13 @@ private constructor (){
 
         try {
             
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var params: any[] = new Array(2);
-;
+    var params: any[] = new Array(2);;
     
 
-    var classes: Function[] = new Array(2);
-;
+    var classes: Function[] = new Array(2);;
     
 classes[0]= propertiesHashMap!.constructor;
     
@@ -128,12 +126,10 @@ params[1]= pageContext;
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed To Get Instance: ");
     
@@ -144,8 +140,7 @@ stringBuffer!.append("->");
 stringBuffer!.append(TagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     
@@ -167,12 +162,10 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
-;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append("Failed To Get Instance: ");
     
@@ -183,8 +176,7 @@ stringBuffer!.append("->");
 stringBuffer!.append(TagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e);
     

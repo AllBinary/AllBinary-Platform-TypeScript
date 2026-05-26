@@ -132,20 +132,17 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo){
 
-    var size: number = this.nameBasicArrayList!.size()!;
-;
+    var size: number = this.nameBasicArrayList!.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var integer: Integer = this.nameBasicArrayList!.objectArray[index]! as Integer;
-;
+    var integer: Integer = this.nameBasicArrayList!.objectArray[index]! as Integer;;
     
 this.delete(abeClientInformation, gameInfo, integer.intValue());
     
@@ -170,8 +167,7 @@ this.clear();
             
     public delete(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, deleteId: number){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
@@ -224,8 +220,7 @@ recordStore!.closeRecordStore();
 
     public load(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo): string{
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
@@ -234,37 +229,30 @@ recordStore!.closeRecordStore();
                         
                                     {
                                     
-    var LOADING_ID: string = "Loading id: ";
-;
+    var LOADING_ID: string = "Loading id: ";;
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-;
+    var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;;
     
 
-    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-;
+    var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;;
     
 
-    var recordAsBytes: number[]
-;
+    var recordAsBytes: number[];;
     
 
-    var byteArrayInputStream: ByteArrayInputStream
-;
+    var byteArrayInputStream: ByteArrayInputStream;;
     
 
-    var inputStream: DataInputStream
-;
+    var inputStream: DataInputStream;;
     
 
         while(recordEnum!.hasNextElement())
         {
 
-    var id: number = recordEnum!.nextRecordId()!;
-;
+    var id: number = recordEnum!.nextRecordId()!;;
     
 this.logUtil!.putF(new StringMaker().append(LOADING_ID)!.appendint(id)!.toString(), this, this.commonStrings!.LOAD);
     
@@ -336,8 +324,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
 
     public save(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, name: string){
 
-    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-;
+    var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;;
     
 
         try {
@@ -346,18 +333,15 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
-    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
-    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
-;
+    var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);;
     
 outputStream!.writeUTF(name);
     
 
-    var savedGameBytes: number[] = byteArrayOutputStream!.toByteArray()!;
-;
+    var savedGameBytes: number[] = byteArrayOutputStream!.toByteArray()!;;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
     

@@ -116,19 +116,20 @@ export class HighScoresCanvas extends GameCommandCanvas implements HighScoresRes
 
     private readonly waitPaintable: SimpleTextPaintable = new SimpleTextPaintable(this.commonStrings!.PLEASE_WAIT_FOR_SERVER, BasicColorFactory.getInstance()!.WHITE);
 
-    private readonly highScoresPaintable: HighScoresPaintable
+    private readonly highScoresPaintable: HighScoresPaintable;
 
-    private readonly highScoresFactoryInterface: HighScoresFactoryInterface
+    private readonly highScoresFactoryInterface: HighScoresFactoryInterface;
 
-    colorFillPaintable: ColorFillBasePaintable
+    colorFillPaintable: ColorFillBasePaintable;
 
     private readonly highScoresHelper: HighScoresHelperBase = new HighScoresHelperBase();
 
-    private readonly gameInfo: GameInfo
+    private readonly gameInfo: GameInfo;
 
-    private readonly highScoresCanvasInputProcessor: HighScoresCanvasInputProcessor
+    private readonly highScoresCanvasInputProcessor: HighScoresCanvasInputProcessor;
 
     private currentCommand: Command = this.highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[0]!;
+
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, gameInfo: GameInfo, paintable: HighScoresPaintable, highScoresFactoryInterface: HighScoresFactoryInterface, highScoresCanvasInputProcessorFactoryInterface: HighScoresCanvasInputProcessorFactoryInterface){
             super(commandListener, HighScoresCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
                     
@@ -175,18 +176,15 @@ SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 
     public run(){
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
     
 
         try {
             
-    var isHTML: boolean = J2MEUtil.isHTML()!;
-;
+    var isHTML: boolean = J2MEUtil.isHTML()!;;
     
 
                         if(!isHTML)
@@ -203,8 +201,7 @@ HighScoresCanvas.prototype.hasPainted= false;
                                     }
                                 
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
@@ -362,24 +359,20 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
 this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, this.commonStrings!.UPDATE);
     
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-;
+    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
                         if(this.highScoreCommandsFactory!.isHighScoreCommand(command))
                         
                                     {
                                     
-    var index: number = this.highScoreCommandsFactory!.getIndex(command)!;
-;
+    var index: number = this.highScoreCommandsFactory!.getIndex(command)!;;
     
 
-    var nextIndex: number = index +1;
-;
+    var nextIndex: number = index +1;;
     
 
-    var highScoresArray: HighScores[] = this.highScoresHelper!.getHighScoresArray()!;
-;
+    var highScoresArray: HighScores[] = this.highScoresHelper!.getHighScoresArray()!;;
     
 
                         if(nextIndex >= highScoresArray!.length)

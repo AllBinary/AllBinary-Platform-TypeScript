@@ -100,9 +100,10 @@ export class InventoryUploadMediaUtil
 
     private readonly LARGE: string = "Large";
 
-    private storeFrontInterface: StoreFrontInterface
+    private storeFrontInterface: StoreFrontInterface;
 
-    private itemInterface: ItemInterface
+    private itemInterface: ItemInterface;
+
 public constructor (storeFrontInterface: StoreFrontInterface, itemInterface: ItemInterface){
 
             super();
@@ -138,12 +139,10 @@ this.itemInterface= itemInterface;
                                     }
                                 
 
-    var fileUtil: FileUtil = FileUtil.getInstance()!;
-;
+    var fileUtil: FileUtil = FileUtil.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
@@ -152,12 +151,10 @@ stringBuffer!.append(this.storeFrontInterface!.getCurrentHostNamePath());
 stringBuffer!.append(this.itemInterface!.getCategory());
     
 
-    var fullPath: string = stringBuffer!.toString()!;
-;
+    var fullPath: string = stringBuffer!.toString()!;;
     
 
-    var imageDirectoryFile: AbFile = new AbFile(fullPath);
-;
+    var imageDirectoryFile: AbFile = new AbFile(fullPath);;
     
 
                         if(!imageDirectoryFile!.isDirectory())
@@ -182,8 +179,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(mediaData!.getName());
     
 
-    var originalImageFile: AbFile = new AbFile(stringBuffer!.toString());
-;
+    var originalImageFile: AbFile = new AbFile(stringBuffer!.toString());;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -199,12 +195,10 @@ originalImageFile!.createNewFile();
 fileUtil!.write(new ByteArrayInputStream(byteArray), originalImageFile);
     
 
-    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
-;
+    var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
     
 
-    var isMediaSupported: boolean = uploadMedia!.isWriterSupported(mediaData!.getName()) || uploadMedia!.isReaderSupported(mediaData!.getName());
-;
+    var isMediaSupported: boolean = uploadMedia!.isWriterSupported(mediaData!.getName()) || uploadMedia!.isReaderSupported(mediaData!.getName());;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -226,8 +220,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "saveFiles()");
                                     }
                                 
 
-    var defaultMediaData: MediaData = MediaData.getDefault()!;
-;
+    var defaultMediaData: MediaData = MediaData.getDefault()!;;
     
 this.setFileNames(fileName);
     
@@ -236,8 +229,7 @@ this.setFileNames(fileName);
                         
                                     {
                                     
-    var isMediaResizable: boolean = uploadMedia!.isWriterMedia(mediaData!.getName(), MediaTypeData.getInstance()!.RESIZABLE_MEDIA)!;
-;
+    var isMediaResizable: boolean = uploadMedia!.isWriterMedia(mediaData!.getName(), MediaTypeData.getInstance()!.RESIZABLE_MEDIA)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -286,8 +278,7 @@ this.mediaUtil!.saveImageFile(originalImageFile, this.itemInterface!.getLargeIma
                                 
                         else {
                             
-    var isConvertable: boolean = mediaData!.isConvertableTo(defaultMediaData)!;
-;
+    var isConvertable: boolean = mediaData!.isConvertableTo(defaultMediaData)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -336,24 +327,21 @@ this.mediaUtil!.saveImageFile(originalImageFile, this.itemInterface!.getLargeIma
                                 
                         else {
                             
-    var smallImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());
-;
+    var smallImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());;
     
 smallImageFile!.createNewFile();
     
 fileUtil!.write(new ByteArrayInputStream(byteArray), smallImageFile);
     
 
-    var mediumImageFile: AbFile = new AbFile(this.itemInterface!.getMediumImage());
-;
+    var mediumImageFile: AbFile = new AbFile(this.itemInterface!.getMediumImage());;
     
 smallImageFile!.createNewFile();
     
 fileUtil!.write(new ByteArrayInputStream(byteArray), mediumImageFile);
     
 
-    var largeImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());
-;
+    var largeImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());;
     
 largeImageFile!.createNewFile();
     
@@ -373,8 +361,7 @@ fileUtil!.write(new ByteArrayInputStream(byteArray), largeImageFile);
                         
                                     {
                                     
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
     
@@ -392,8 +379,7 @@ this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
 
     setFileNames(fileName: string){
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(this.itemInterface!.getId());
     
@@ -402,8 +388,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(MediaData.getDefault()!.getName());
     
 
-    var END: string = stringBuffer!.toString()!;
-;
+    var END: string = stringBuffer!.toString()!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -414,8 +399,7 @@ stringBuffer!.append(this.SMALL);
 stringBuffer!.append(END);
     
 
-    var newImageFileName: string = stringBuffer!.toString()!;
-;
+    var newImageFileName: string = stringBuffer!.toString()!;;
     
 this.itemInterface!.setSmallImage(newImageFileName);
     

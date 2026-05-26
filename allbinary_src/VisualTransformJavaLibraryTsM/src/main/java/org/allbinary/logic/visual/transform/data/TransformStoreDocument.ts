@@ -62,6 +62,7 @@ export class TransformStoreDocument extends TransformHttpRequestDocument {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
 public constructor (pageContext: PageContext, weblisketSession: WeblisketSession){
             super(pageContext, weblisketSession);
                     
@@ -71,8 +72,7 @@ public constructor (pageContext: PageContext, weblisketSession: WeblisketSession
 
         try {
             
-    var storeName: string = weblisketSession!.getStoreName()!;
-;
+    var storeName: string = weblisketSession!.getStoreName()!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -108,6 +108,7 @@ this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as H
 }
 
 }
+
 
 public constructor (searchRequest: SearchRequest){
             super(searchRequest);

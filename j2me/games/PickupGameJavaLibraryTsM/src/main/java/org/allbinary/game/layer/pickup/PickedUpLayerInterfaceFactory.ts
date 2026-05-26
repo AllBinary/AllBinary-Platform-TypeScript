@@ -51,11 +51,12 @@ import { IconLayer } from './IconLayer.js';
 export class PickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactoryBase {
         
 
-    private readonly pickedUpLayerType: PickedUpLayerType
+    private readonly pickedUpLayerType: PickedUpLayerType;
 
-    private readonly iconLayer: IconLayer
+    private readonly iconLayer: IconLayer;
 
-    private readonly animationInterface: Animation
+    private readonly animationInterface: Animation;
+
 protected constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, animationInterface: Animation){
 
             super();

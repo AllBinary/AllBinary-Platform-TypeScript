@@ -72,6 +72,7 @@ export class PathUtil
     private readonly abPathData: AbPathData = AbPathData.getInstance()!;
 
     private readonly filePathData: FilePathData = FilePathData.getInstance()!;
+
 private constructor (){
 
             super();
@@ -80,12 +81,10 @@ private constructor (){
 
     getExtensionIndex(filePath: string): number{
 
-    var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.abPathData!.EXTENSION_SEP)!;
-;
+    var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.abPathData!.EXTENSION_SEP)!;;
     
 
-    var indexOfLatDelimiter: number = filePath!.lastIndexOf(this.abPathData!.SEPARATORCHAR)!;
-;
+    var indexOfLatDelimiter: number = filePath!.lastIndexOf(this.abPathData!.SEPARATORCHAR)!;;
     
 
                         if(indexOfFileExtensionDelmiter < 0)
@@ -144,12 +143,10 @@ private constructor (){
 
     public getExtension(filePath: string): string{
 
-    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;
-;
+    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
     
 
-    var extension: string = StringUtil.getInstance()!.EMPTY_STRING;
-;
+    var extension: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 
                         if(indexOfFileExtensionDelmiter >= 0)
@@ -197,12 +194,10 @@ private constructor (){
             
     public getWithoutExtension(filePath: string): string{
 
-    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;
-;
+    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
     
 
-    var pathWithoutExtension: string = filePath;
-;
+    var pathWithoutExtension: string = filePath;;
     
 
                         if(indexOfFileExtensionDelmiter >= 0)
@@ -281,8 +276,7 @@ private constructor (){
 
     isValidEnd(path: string): boolean{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(path))
@@ -363,8 +357,7 @@ private constructor (){
 
     public adjust(path: string): string{
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 
                         if(stringValidationUtil!.isEmpty(path))
@@ -400,8 +393,7 @@ private constructor (){
 
     public getNameFromPath(categoryPath: string): string{
 
-    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
-;
+    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
     
 
                         if(endIndex < 0)
@@ -425,8 +417,7 @@ private constructor (){
                         
                                     {
                                     
-    var categoryName: string = categoryPath!.substring(0, endIndex)!;
-;
+    var categoryName: string = categoryPath!.substring(0, endIndex)!;;
     
 
 
@@ -439,8 +430,7 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = categoryPath!.substring(endIndex +1)!;
-;
+    var categoryName: string = categoryPath!.substring(endIndex +1)!;;
     
 
 
@@ -459,8 +449,7 @@ private constructor (){
 
     public removeNameFromPath(path: string): AbPath{
 
-    var endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;
-;
+    var endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;;
     
 
                         if(endIndex < 0)
@@ -499,8 +488,7 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = path.substring(0, endIndex)!;
-;
+    var categoryName: string = path.substring(0, endIndex)!;;
     
 
 

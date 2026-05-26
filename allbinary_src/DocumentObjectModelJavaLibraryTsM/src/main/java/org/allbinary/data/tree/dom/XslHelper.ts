@@ -81,6 +81,7 @@ export class XslHelper
     
 }
 
+
 private constructor (){
 
             super();
@@ -93,12 +94,10 @@ private constructor (){
 
         try {
             
-    var transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-;
+    var transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 
-    var transformer: Transformer = transformerFactory!.newTransformer(xsltStreamSource)!;
-;
+    var transformer: Transformer = transformerFactory!.newTransformer(xsltStreamSource)!;;
     
 transformer.transform(xmlStreamSource, streamResult);
     
@@ -128,14 +127,12 @@ transformer.transform(xmlStreamSource, streamResult);
 
         try {
             
-    var tFactory: TransformerFactory = TransformerFactory.newInstance()!;
-;
+    var tFactory: TransformerFactory = TransformerFactory.newInstance()!;;
     
 tFactory!.setURIResolver(resolver);
     
 
-    var transformer: Transformer = tFactory!.newTransformer(xsltStreamSource)!;
-;
+    var transformer: Transformer = tFactory!.newTransformer(xsltStreamSource)!;;
     
 transformer.transform(xmlStreamSource, streamResult);
     
@@ -165,8 +162,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
         try {
             
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 
@@ -194,8 +190,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
         try {
             
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 
@@ -223,8 +218,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
         try {
             
-    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-;
+    var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();;
     
 
 

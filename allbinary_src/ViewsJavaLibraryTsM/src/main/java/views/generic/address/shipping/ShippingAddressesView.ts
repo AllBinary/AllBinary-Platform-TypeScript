@@ -76,9 +76,10 @@ export class ShippingAddressesView extends HttpStoreComponentView implements Dom
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private request: HttpServletRequest
+    private request: HttpServletRequest;
 
-    streetAddressList: Vector
+    streetAddressList: Vector;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -86,8 +87,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
-;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;;
     
 this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;
     
@@ -110,24 +110,20 @@ this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as Http
 
         try {
             
-    var billingAddressesNode: Node = document.createElement(ShippingAddressData.MULTIPLE)!;
-;
+    var billingAddressesNode: Node = document.createElement(ShippingAddressData.MULTIPLE)!;;
     
 
-    var size: number = this.streetAddressList!.length!;
-;
+    var size: number = this.streetAddressList!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var streetAddress: StreetAddress = this.streetAddressList!.get(index) as StreetAddress;
-;
+    var streetAddress: StreetAddress = this.streetAddressList!.get(index) as StreetAddress;;
     
 billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));
     

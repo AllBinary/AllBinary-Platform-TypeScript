@@ -46,7 +46,8 @@ export class LicenseType
          {
         
 
-    private name: string
+    private name: string;
+
 protected constructor (name: string){
 
             super();

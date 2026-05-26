@@ -62,6 +62,7 @@ export class SpecialAnimation extends IndexedAnimation implements SpecialAnimati
     
 }
 
+
 public constructor (animationBehavior: AnimationBehavior){
             super(animationBehavior);
                     
@@ -73,8 +74,7 @@ public constructor (animationBehavior: AnimationBehavior){
 
     public nextFrame(){
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.animationBehaviorP as IndexedAnimationBehavior);
-;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.animationBehaviorP as IndexedAnimationBehavior);;
     
 indexedAnimationBehavior!.loopIndex++;
     

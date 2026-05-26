@@ -96,40 +96,32 @@ export class PointsDomUtil
             
     public toDom(canvasDom: CanvasDom, pointVector: BasicArrayList): Node{
 
-    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new number(canvasDom!.getAngle()), PointFactory.getInstance()!.createXY(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
-;
+    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new number(canvasDom!.getAngle()), PointFactory.getInstance()!.createXY(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;;
     
 
-    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
-;
+    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;;
     
 
-    var linesNode: Node = document.createElement(this.LINES) as Node;
-;
+    var linesNode: Node = document.createElement(this.LINES) as Node;;
     
 
-    var size2: number = tempPointVector!.size()!;
-;
+    var size2: number = tempPointVector!.size()!;;
     
 
-    var size: number = pointVector!.size()!;
-;
+    var size: number = pointVector!.size()!;;
     
 
     var firstPoint: GPoint = 
                 null
-            ;
-;
+            ;;
     
 
     var rotatedFirstPoint: GPoint = 
                 null
-            ;
-;
+            ;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
                         if(index < size && index < size2)
@@ -148,32 +140,25 @@ index++;
         while(index < size && index < size2)
         {
 
-    var lineNode: Node = document.createElement(this.LINE) as Node;
-;
+    var lineNode: Node = document.createElement(this.LINE) as Node;;
     
 
-    var rotatedSecondPoint: GPoint = tempPointVector!.get(index) as GPoint;
-;
+    var rotatedSecondPoint: GPoint = tempPointVector!.get(index) as GPoint;;
     
 
-    var secondPoint: GPoint = pointVector!.get(index) as GPoint;
-;
+    var secondPoint: GPoint = pointVector!.get(index) as GPoint;;
     
 
-    var pointOneNode: Node = this.getPointNode(firstPoint, this.POINTONE)!;
-;
+    var pointOneNode: Node = this.getPointNode(firstPoint, this.POINTONE)!;;
     
 
-    var pointTwoNode: Node = this.getPointNode(secondPoint, this.POINTTWO)!;
-;
+    var pointTwoNode: Node = this.getPointNode(secondPoint, this.POINTTWO)!;;
     
 
-    var rotatedPointOneNode: Node = this.getPointNode(rotatedFirstPoint, this.ROTATEDPOINTONE)!;
-;
+    var rotatedPointOneNode: Node = this.getPointNode(rotatedFirstPoint, this.ROTATEDPOINTONE)!;;
     
 
-    var rotatedPointTwoNode: Node = this.getPointNode(rotatedSecondPoint, this.ROTATEDPOINTTWO)!;
-;
+    var rotatedPointTwoNode: Node = this.getPointNode(rotatedSecondPoint, this.ROTATEDPOINTTWO)!;;
     
 lineNode!.appendChild(pointOneNode);
     
@@ -204,30 +189,24 @@ index++;
 
     getPointNode(point: GPoint, pointName: string): Node{
 
-    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
-;
+    var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;;
     
 
-    var pointNode: Node = document.createElement(pointName) as Node;
-;
+    var pointNode: Node = document.createElement(pointName) as Node;;
     
 
-    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X) as Node;
-;
+    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X) as Node;;
     
 
-    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())) as Node;
-;
+    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())) as Node;;
     
 xNode!.appendChild(xTextNode);
     
 
-    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y) as Node;
-;
+    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y) as Node;;
     
 
-    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())) as Node;
-;
+    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())) as Node;;
     
 yNode!.appendChild(yTextNode);
     

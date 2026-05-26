@@ -62,14 +62,14 @@ import { Short } from './Short.js';
 
 export class ImageAnalysisResultsJPanel extends javax.swing.JPanel {
         
+
 public constructor (imageAnalysisResultsArray: ImageAnalysisResults[]){
 
             super();
         this.initComponents();
     
 
-    var imageAnalysisResults: ImageAnalysisResults = imageAnalysisResultsArray[0]!;
-;
+    var imageAnalysisResults: ImageAnalysisResults = imageAnalysisResultsArray[0]!;;
     
 this.updateImageColorRangeResults(imageAnalysisResults);
     
@@ -187,8 +187,7 @@ this.maxGreenJTextField!.setEditable(false);
 this.maxBlueJTextField!.setEditable(false);
     
 
-    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-;
+    var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);;
     
 this.setLayout(layout);
     
@@ -201,8 +200,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
     updateImageColorRangeResults(imageAnalysisResults: ImageAnalysisResults){
 
-    var imageColorRangeResults: ImageColorRangeResults = imageAnalysisResults!.getImageColorRangeResults()!;
-;
+    var imageColorRangeResults: ImageColorRangeResults = imageAnalysisResults!.getImageColorRangeResults()!;;
     
 this.matchingPixelsJTextField!.setText(new Long(imageColorRangeResults!.getMatchingPixelsChecked()).toString());
     
@@ -211,8 +209,7 @@ this.totalPixelsJTextField!.setText(new Long(imageColorRangeResults!.getTotalPix
 this.percentMatchingJTextField!.setText(new number(imageColorRangeResults!.getPercent()).toString());
     
 
-    var imageColorResults: ImageColorResults = imageAnalysisResults!.getImageColorResults()!;
-;
+    var imageColorResults: ImageColorResults = imageAnalysisResults!.getImageColorResults()!;;
     
 this.avgRedJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgRed()).toString());
     
@@ -235,57 +232,57 @@ this.maxBlueJTextField!.setText(new Long(imageColorResults!.getColorRange()!.get
 }
 
 
-    private avgBlueJTextField: javax.swing.JTextField
+    private avgBlueJTextField: javax.swing.JTextField;
 
-    private avgGreenJTextField: javax.swing.JTextField
+    private avgGreenJTextField: javax.swing.JTextField;
 
-    private avgRedJTextField: javax.swing.JTextField
+    private avgRedJTextField: javax.swing.JTextField;
 
-    private jComboBox1: javax.swing.JComboBox
+    private jComboBox1: javax.swing.JComboBox;
 
-    private jLabel1: javax.swing.JLabel
+    private jLabel1: javax.swing.JLabel;
 
-    private jLabel10: javax.swing.JLabel
+    private jLabel10: javax.swing.JLabel;
 
-    private jLabel11: javax.swing.JLabel
+    private jLabel11: javax.swing.JLabel;
 
-    private jLabel12: javax.swing.JLabel
+    private jLabel12: javax.swing.JLabel;
 
-    private jLabel13: javax.swing.JLabel
+    private jLabel13: javax.swing.JLabel;
 
-    private jLabel2: javax.swing.JLabel
+    private jLabel2: javax.swing.JLabel;
 
-    private jLabel3: javax.swing.JLabel
+    private jLabel3: javax.swing.JLabel;
 
-    private jLabel4: javax.swing.JLabel
+    private jLabel4: javax.swing.JLabel;
 
-    private jLabel5: javax.swing.JLabel
+    private jLabel5: javax.swing.JLabel;
 
-    private jLabel6: javax.swing.JLabel
+    private jLabel6: javax.swing.JLabel;
 
-    private jLabel7: javax.swing.JLabel
+    private jLabel7: javax.swing.JLabel;
 
-    private jLabel8: javax.swing.JLabel
+    private jLabel8: javax.swing.JLabel;
 
-    private jLabel9: javax.swing.JLabel
+    private jLabel9: javax.swing.JLabel;
 
-    private matchingPixelsJTextField: javax.swing.JTextField
+    private matchingPixelsJTextField: javax.swing.JTextField;
 
-    private maxBlueJTextField: javax.swing.JTextField
+    private maxBlueJTextField: javax.swing.JTextField;
 
-    private maxGreenJTextField: javax.swing.JTextField
+    private maxGreenJTextField: javax.swing.JTextField;
 
-    private maxRedJTextField: javax.swing.JTextField
+    private maxRedJTextField: javax.swing.JTextField;
 
-    private minBlueJTextField: javax.swing.JTextField
+    private minBlueJTextField: javax.swing.JTextField;
 
-    private minGreenJTextField: javax.swing.JTextField
+    private minGreenJTextField: javax.swing.JTextField;
 
-    private minRedJTextField: javax.swing.JTextField
+    private minRedJTextField: javax.swing.JTextField;
 
-    private percentMatchingJTextField: javax.swing.JTextField
+    private percentMatchingJTextField: javax.swing.JTextField;
 
-    private totalPixelsJTextField: javax.swing.JTextField
+    private totalPixelsJTextField: javax.swing.JTextField;
 
 }
                 

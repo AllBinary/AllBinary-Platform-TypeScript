@@ -74,7 +74,8 @@ import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js
 export class LoadGameForm extends CommandForm {
         
 
-    private areChoices: boolean= false
+    private areChoices: boolean= false;
+
 public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
                     
@@ -92,8 +93,7 @@ this.initCommands(commandListener);
 
     public initCommands(cmdListener: CommandListener){
 
-    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-;
+    var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 this.removeAllCommands();
     
@@ -112,8 +112,7 @@ this.setCommandListener(cmdListener);
             
     public update(){
 
-    var list: BasicArrayList = GamePersistanceSingleton.getInstance()!.getIds()!;
-;
+    var list: BasicArrayList = GamePersistanceSingleton.getInstance()!.getIds()!;;
     
 this.deleteAll();
     
@@ -143,8 +142,7 @@ super.update();
 
     add(list: BasicArrayList, name: string, option: number){
 
-    var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
-;
+    var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;;
     
 
                         if(list.size() > 0)
@@ -162,32 +160,26 @@ this.append(choiceGroup);
 
     getChoiceGroup(list: BasicArrayList, name: string, option: number): ChoiceGroup{
 
-    var METHOD_NAME: string = "getChoiceGroup";
-;
+    var METHOD_NAME: string = "getChoiceGroup";;
     
 
-    var ADDING_CHOICE: string = "Adding Choice: ";
-;
+    var ADDING_CHOICE: string = "Adding Choice: ";;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);
-;
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);;
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var anyType: any = list.objectArray[index]!;
-;
+    var anyType: any = list.objectArray[index]!;;
     
 this.logUtil!.putF(new StringMaker().append(ADDING_CHOICE)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
@@ -210,8 +202,7 @@ choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-;
+    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
     
 
 
@@ -241,12 +232,10 @@ choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
-;
+    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;;
     
 
-    var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.intValue()!;
-;
+    var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.intValue()!;;
     
 
 

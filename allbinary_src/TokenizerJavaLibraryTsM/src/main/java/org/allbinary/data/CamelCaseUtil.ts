@@ -97,36 +97,30 @@ export class CamelCaseUtil
                                     }
                                 
 
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-;
+    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
     
 stringBuilder!.delete(0, stringBuilder!.length());
     
 
-    var list: BasicArrayList = new BasicArrayListD();
-;
+    var list: BasicArrayList = new BasicArrayListD();;
     
 
-    var tokenizer: Tokenizer = new Tokenizer(this.commonSeps!.UNDERSCORE);
-;
+    var tokenizer: Tokenizer = new Tokenizer(this.commonSeps!.UNDERSCORE);;
     
 tokenizer.getTokens(string, list);
     
 
-    var size: number = list.size()!;
-;
+    var size: number = list.size()!;;
     
 
-    var word: string
-;
+    var word: string;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < size; i++)
+    var i: number = 0;i < size; i++)
         {
 word= list.get(i) as string;
     

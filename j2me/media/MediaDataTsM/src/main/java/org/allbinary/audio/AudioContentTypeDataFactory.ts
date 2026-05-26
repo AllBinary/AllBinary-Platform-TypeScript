@@ -70,6 +70,7 @@ export class AudioContentTypeDataFactory
     public readonly MIME_AUDIO_MIDI: AudioContentTypeData = new AudioContentTypeData("audio/midi");
 
     public readonly MIME_AUDIO_SP_MIDI: AudioContentTypeData = new AudioContentTypeData("audio/sp-midi");
+
 private constructor (){
 
             super();

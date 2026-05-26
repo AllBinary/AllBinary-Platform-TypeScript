@@ -64,9 +64,10 @@ export class StoreFrontStatisticsComponent extends HttpStoreComponentView {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    newStoreFrontInterface: StoreFrontInterface
+    newStoreFrontInterface: StoreFrontInterface;
 
-    private domNodeInterface: DomNodeInterface
+    private domNodeInterface: DomNodeInterface;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     

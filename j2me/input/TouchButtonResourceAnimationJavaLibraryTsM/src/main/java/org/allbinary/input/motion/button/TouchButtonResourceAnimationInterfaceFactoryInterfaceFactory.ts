@@ -97,6 +97,7 @@ export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extend
     
 }
 
+
 public constructor (name: string){
             super(name, new Hashtable<any, any>(), new Hashtable<any, any>(), new Hashtable<any, any>());
                     
@@ -131,98 +132,75 @@ this.initImageCache(ImageCacheFactory.getInstance(), level);
                                     }
                                 
 
-    var portion: number = 140;
-;
+    var portion: number = 140;;
     
 
-    var loadingString: string = new StringMaker().append(this.toString())!.append(" Loading: ")!.toString()!;
-;
+    var loadingString: string = new StringMaker().append(this.toString())!.append(" Loading: ")!.toString()!;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-;
+    var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
     
 progressCanvas!.addPortion(portion, loadingString, index++);
     
 
-    var touchButtonBlankResource: TouchButtonResource = TouchButtonBlankResource.getInstance()!;
-;
+    var touchButtonBlankResource: TouchButtonResource = TouchButtonBlankResource.getInstance()!;;
     
 
-    var touchButtonGenericActionResource: TouchButtonResource = TouchButtonGenericActionResource.getInstance()!;
-;
+    var touchButtonGenericActionResource: TouchButtonResource = TouchButtonGenericActionResource.getInstance()!;;
     
 
-    var touchButtonStartResource: TouchButtonResource = TouchButtonStartResource.getInstance()!;
-;
+    var touchButtonStartResource: TouchButtonResource = TouchButtonStartResource.getInstance()!;;
     
 
-    var touchButtonUpResource: TouchButtonResource = TouchButtonUpResource.getInstance()!;
-;
+    var touchButtonUpResource: TouchButtonResource = TouchButtonUpResource.getInstance()!;;
     
 
-    var touchButtonDownResource: TouchButtonResource = TouchButtonDownResource.getInstance()!;
-;
+    var touchButtonDownResource: TouchButtonResource = TouchButtonDownResource.getInstance()!;;
     
 
-    var touchButtonTurnLeftResource: TouchButtonResource = TouchButtonTurnLeftResource.getInstance()!;
-;
+    var touchButtonTurnLeftResource: TouchButtonResource = TouchButtonTurnLeftResource.getInstance()!;;
     
 
-    var touchButtonTurnRightResource: TouchButtonResource = TouchButtonTurnRightResource.getInstance()!;
-;
+    var touchButtonTurnRightResource: TouchButtonResource = TouchButtonTurnRightResource.getInstance()!;;
     
 
-    var touchButtonStrafeLeftResource: TouchButtonResource = TouchButtonStrafeLeftResource.getInstance()!;
-;
+    var touchButtonStrafeLeftResource: TouchButtonResource = TouchButtonStrafeLeftResource.getInstance()!;;
     
 
-    var touchButtonStrafeRightResource: TouchButtonResource = TouchButtonStrafeRightResource.getInstance()!;
-;
+    var touchButtonStrafeRightResource: TouchButtonResource = TouchButtonStrafeRightResource.getInstance()!;;
     
 
-    var touchButtonBlankResourceImage: Image = imageCache!.getWithKey(touchButtonBlankResource!.RESOURCE)!;
-;
+    var touchButtonBlankResourceImage: Image = imageCache!.getWithKey(touchButtonBlankResource!.RESOURCE)!;;
     
 
-    var touchButtonGenericActionResourceImage: Image = imageCache!.getWithKey(touchButtonGenericActionResource!.RESOURCE)!;
-;
+    var touchButtonGenericActionResourceImage: Image = imageCache!.getWithKey(touchButtonGenericActionResource!.RESOURCE)!;;
     
 
-    var touchButtonStartResourceImage: Image = imageCache!.getWithKey(touchButtonStartResource!.RESOURCE)!;
-;
+    var touchButtonStartResourceImage: Image = imageCache!.getWithKey(touchButtonStartResource!.RESOURCE)!;;
     
 
-    var touchButtonUpResourceImage: Image = imageCache!.getWithKey(touchButtonUpResource!.RESOURCE)!;
-;
+    var touchButtonUpResourceImage: Image = imageCache!.getWithKey(touchButtonUpResource!.RESOURCE)!;;
     
 
-    var touchButtonDownResourceImage: Image = imageCache!.getWithKey(touchButtonDownResource!.RESOURCE)!;
-;
+    var touchButtonDownResourceImage: Image = imageCache!.getWithKey(touchButtonDownResource!.RESOURCE)!;;
     
 
-    var touchButtonTurnLeftResourceImage: Image = imageCache!.getWithKey(touchButtonTurnLeftResource!.RESOURCE)!;
-;
+    var touchButtonTurnLeftResourceImage: Image = imageCache!.getWithKey(touchButtonTurnLeftResource!.RESOURCE)!;;
     
 
-    var touchButtonTurnRightResourceImage: Image = imageCache!.getWithKey(touchButtonTurnRightResource!.RESOURCE)!;
-;
+    var touchButtonTurnRightResourceImage: Image = imageCache!.getWithKey(touchButtonTurnRightResource!.RESOURCE)!;;
     
 
-    var touchButtonStrafeLeftResourceImage: Image = imageCache!.getWithKey(touchButtonStrafeLeftResource!.RESOURCE)!;
-;
+    var touchButtonStrafeLeftResourceImage: Image = imageCache!.getWithKey(touchButtonStrafeLeftResource!.RESOURCE)!;;
     
 
-    var touchButtonStrafeRightResourceImage: Image = imageCache!.getWithKey(touchButtonStrafeRightResource!.RESOURCE)!;
-;
+    var touchButtonStrafeRightResourceImage: Image = imageCache!.getWithKey(touchButtonStrafeRightResource!.RESOURCE)!;;
     
 
-    var nullAnimationFactory: NullAnimationFactory = NullAnimationFactory.getFactoryInstance()!;
-;
+    var nullAnimationFactory: NullAnimationFactory = NullAnimationFactory.getFactoryInstance()!;;
     
 
                         if(OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan())
@@ -236,8 +214,7 @@ progressCanvas!.addPortion(portion, loadingString, index++);
 progressCanvas!.addPortion(portion, loadingString, index++);
     
 
-    var imageCompleteUtil: ImageCompleteUtil = ImageCompleteUtil.getInstance()!;
-;
+    var imageCompleteUtil: ImageCompleteUtil = ImageCompleteUtil.getInstance()!;;
     
 progressCanvas!.addPortion(portion, loadingString, index++);
     
@@ -314,8 +291,7 @@ this.add(touchButtonStrafeRightResource!.HINT, nullAnimationFactory);
                         
                                     {
                                     
-    var touchButtonStartHintResource: Image = imageCache!.getWithKey(TouchButtonStartResource.getInstance()!.HINT)!;
-;
+    var touchButtonStartHintResource: Image = imageCache!.getWithKey(TouchButtonStartResource.getInstance()!.HINT)!;;
     
 this.add(touchButtonStartResource!.HINT, OneRowSpriteIndexedAnimationFactory.createFactory(touchButtonStartHintResource, AnimationBehaviorFactory.getInstance()));
     
@@ -335,8 +311,7 @@ super.init(level);
 
     public isLoadingLevel(level: number): boolean{
 
-    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-;
+    var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;;
     
 
                         if(level == resourceLoadingLevelFactory!.LOAD_TOUCH.getLevel())

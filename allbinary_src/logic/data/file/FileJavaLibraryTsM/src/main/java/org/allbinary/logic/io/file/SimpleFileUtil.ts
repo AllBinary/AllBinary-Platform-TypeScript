@@ -96,8 +96,7 @@ export class SimpleFileUtil
                         return new class extends Writer
                                 {
                                 
-    private closed: boolean= false
-
+    private closed: boolean= false;
                 //@Throws(IOException.constructor)
             
     public append(c: string): Writer{
@@ -261,8 +260,7 @@ export class SimpleFileUtil
 
     public loadFileAsListReturnLine(inputStream: InputStream, max: number, byteArray1: number[], includeReturnLine: number): BasicArrayList{
 
-    var stringList: BasicArrayList = new BasicArrayListD();
-;
+    var stringList: BasicArrayList = new BasicArrayListD();;
     
 
                         if(inputStream == 
@@ -280,14 +278,12 @@ export class SimpleFileUtil
                                     }
                                 
 
-    var byteArray: number[] = this.nullUtil!.NULL_BYTE_ARRAY;
-;
+    var byteArray: number[] = this.nullUtil!.NULL_BYTE_ARRAY;;
     
 
         try {
             
-    var outputStream2: ByteArrayOutputStream = new ByteArrayOutputStream(max);
-;
+    var outputStream2: ByteArrayOutputStream = new ByteArrayOutputStream(max);;
     
 byteArray= this.streamUtil!.getByteArray(inputStream, outputStream2, byteArray1);
     
@@ -320,20 +316,16 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
                                 
 
     var size: number = byteArray!.length
-                ;
-;
+                ;;
     
 
-    var index: number = 0;
-;
+    var index: number = 0;;
     
 
-    var startIndex: number= 0
-;
+    var startIndex: number= 0;;
     
 
-    var returnLine: number = 0;
-;
+    var returnLine: number = 0;;
     
 
         while(index < size)
@@ -370,8 +362,7 @@ index++;
                                     }
                                 
 
-    var s: string = String.fromCharCode(...byteArray);
-;
+    var s: string = String.fromCharCode(...byteArray);;
     
 stringList!.add(s);
     
@@ -390,21 +381,18 @@ index++;
 
     public createStringFromArrayOfStrings(stringArray: string[]): string{
 
-    var stringMaker: StringMaker = new StringMaker();
-;
+    var stringMaker: StringMaker = new StringMaker();;
     
 
     var size: number = stringArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 stringMaker!.append(stringArray[index]!);
     

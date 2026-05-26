@@ -50,6 +50,7 @@ import { Node } from '../../../org/w3c/dom/Node.js';
 
 export class AutoSearchValidationInventoryView extends InventorySearch {
         
+
 public constructor (searchRequest: SearchRequest){
             super(searchRequest);
                     

@@ -40,7 +40,8 @@ import { SwtMutableImage } from '../../../org/microemu/device/swt/SwtMutableImag
 export class OpenGLBitmap extends PlatformBitmapBase {
         
 
-    public readonly image: Image
+    public readonly image: Image;
+
 public constructor (bitmap: any = {}){
 
             super();
@@ -65,8 +66,7 @@ public constructor (bitmap: any = {}){
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
-;
+    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;;
     
 
 
@@ -79,8 +79,7 @@ public constructor (bitmap: any = {}){
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
-;
+    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;;
     
 
 
@@ -100,8 +99,7 @@ public constructor (bitmap: any = {}){
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
-;
+    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;;
     
 mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
     
@@ -110,8 +108,7 @@ mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
-;
+    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;;
     
 immutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
     

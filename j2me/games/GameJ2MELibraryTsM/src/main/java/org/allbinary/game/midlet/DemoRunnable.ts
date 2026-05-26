@@ -70,9 +70,10 @@ export class DemoRunnable
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly demoGameMidlet: DemoGameMidlet
+    private readonly demoGameMidlet: DemoGameMidlet;
 
-    private readonly startDemoGameMidletEvent: DemoGameMidletEvent
+    private readonly startDemoGameMidletEvent: DemoGameMidletEvent;
+
 public constructor (demoGameMidlet: DemoGameMidlet){
 
             super();

@@ -70,9 +70,10 @@ export class BasicPlayer
 
     readonly listenersList: BasicArrayList = new BasicArrayListD();
 
-    stateP: number= 0
+    stateP: number= 0;
 
-    loopCountP: number= 0
+    loopCountP: number= 0;
+
 public constructor (){
 
             super();

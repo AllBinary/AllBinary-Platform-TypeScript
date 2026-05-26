@@ -81,8 +81,7 @@ export class ImageArrayRotationUtil
             
     public process(imageProcessorInput: ImageProcessorInput, input: string, visitor: ImageProcessedVisitor){
 
-    var totalAngle: Integer
-;
+    var totalAngle: Integer;;
     
 
                         if(input == this.commonStrings!.UP)
@@ -109,20 +108,17 @@ export class ImageArrayRotationUtil
                         }
                             
 
-    var generatedBufferedImage: BufferedImage
-;
+    var generatedBufferedImage: BufferedImage;;
     
 
-    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-;
+    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < bufferedImageArray!.length; index++)
+    var index: number = 0;index < bufferedImageArray!.length; index++)
         {
 this.logUtil!.putF(this.TOTAL_ANGLE +totalAngle, this, this.commonStrings!.RUN);
     

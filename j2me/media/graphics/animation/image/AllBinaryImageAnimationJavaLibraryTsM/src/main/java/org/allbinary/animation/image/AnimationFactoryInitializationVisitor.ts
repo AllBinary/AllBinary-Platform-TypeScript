@@ -54,17 +54,17 @@ export class AnimationFactoryInitializationVisitor
          {
         
 
-    public width: number= 0
+    public width: number= 0;
 
-    public height: number= 0
+    public height: number= 0;
 
-    public dx: number= 0
+    public dx: number= 0;
 
-    public dy: number= 0
+    public dy: number= 0;
 
-    public originalDx: number= 0
+    public originalDx: number= 0;
 
-    public originalDy: number= 0
+    public originalDy: number= 0;
 
     public visit(){
 }
@@ -72,16 +72,13 @@ export class AnimationFactoryInitializationVisitor
 
     public toString(): string{
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-;
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
     
 
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-;
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
     
 
-    var stringBuffer: StringMaker = new StringMaker();
-;
+    var stringBuffer: StringMaker = new StringMaker();;
     
 stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendfloat(this.dx);
     

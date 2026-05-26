@@ -76,32 +76,26 @@ export class InventoryColumnUtil
 this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
     
 
-    var keywords: Vector = new Vector();
-;
+    var keywords: Vector = new Vector();;
     
 
-    var vectorOfHashMaps: Vector = inventoryEntity!.getAllRows()!;
-;
+    var vectorOfHashMaps: Vector = inventoryEntity!.getAllRows()!;;
     
 
-    var size: number = vectorOfHashMaps!.length!;
-;
+    var size: number = vectorOfHashMaps!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index) as HashMap<any, any>;
-;
+    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index) as HashMap<any, any>;;
     
 
-    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY) as string;
-;
+    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY) as string;;
     
 
                         if(!StringValidationUtil.getInstance()!.isEmpty(categoryName) && categoryName!.startsWith(category))

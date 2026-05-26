@@ -70,21 +70,22 @@ export class HtmlSelect extends HtmlTag {
 
     private readonly ENDOPTION: string = "</OPTION>";
 
-    private before: string
+    private before: string;
 
-    private name: string
+    private name: string;
 
-    private after: string
+    private after: string;
 
-    private size: string
+    private size: string;
 
-    private selected: string
+    private selected: string;
 
-    private options: Vector
+    private options: Vector;
 
     private multiple: string = "multiple";
 
     private isMultipleSelect: boolean = false;
+
 public constructor (before: string, size: string, name: string, after: string){
 
             super();
@@ -111,15 +112,13 @@ this.options.add(key);
 
         try {
             
-    var lineReader: LineReader = new LineReader(fileName);
-;
+    var lineReader: LineReader = new LineReader(fileName);;
     
 
         while(lineReader!.hasNext())
         {
 
-    var option: string = lineReader!.next()!;
-;
+    var option: string = lineReader!.next()!;;
     
 this.addOption(option);
     
@@ -160,33 +159,27 @@ this.isMultipleSelect= value;
 
     getOptions(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;
-;
+    var result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var optionsArray: any[] = this.options.toArray()!;
-;
+    var optionsArray: any[] = this.options.toArray()!;;
     
 
     var optionsSize: number = optionsArray!.length
-                ;
-;
+                ;;
     
 
 
 
 
                         for (
-    var i: number = 0;
-i < optionsSize; i++)
+    var i: number = 0;i < optionsSize; i++)
         {
 
-    var value: string = optionsArray[i]! as string;
-;
+    var value: string = optionsArray[i]! as string;;
     
 
                         if(value != 
@@ -218,21 +211,17 @@ result += this.ENDOPTION;
 
     public toString(): string{
 
-    var stringUtil: StringUtil = StringUtil.getInstance()!;
-;
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
     
 
-    var result: string = stringUtil!.EMPTY_STRING;
-;
+    var result: string = stringUtil!.EMPTY_STRING;;
     
 
-    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;
-;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.()!;;
     
 
     var attributeSize: number = attributeKeys!.length
-                ;
-;
+                ;;
     
 result= this.before;
     
@@ -255,16 +244,13 @@ result += "\" ";
 
 
                         for (
-    var i: number = 0;
-i < attributeSize; i++)
+    var i: number = 0;i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as string;
-;
+    var key: string = attributeKeys[i]! as string;;
     
 
-    var value: string = otherAttributes!.get(key) as string;
-;
+    var value: string = otherAttributes!.get(key) as string;;
     
 
                         if(value != 

@@ -78,6 +78,7 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
                             
 }
 
+
 private constructor (){
 
             super();

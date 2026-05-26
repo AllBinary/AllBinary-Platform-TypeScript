@@ -55,11 +55,12 @@ export class LayerManager
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly layerManagerLogging: LayerManagerLoggingBase
+    private readonly layerManagerLogging: LayerManagerLoggingBase;
 
     private readonly list: BasicArrayList = new BasicArrayListD();
 
     private readonly anyType: SynchObject = new SynchObject();
+
 public constructor (layerManagerLogging: LayerManagerLoggingBase){
 
             super();
@@ -84,20 +85,17 @@ this.layerManagerLogging= layerManagerLogging;
             
     public insert(layerInterface: AllBinaryLayer){
 
-    var nextLayerInterface: AllBinaryLayer
-;
+    var nextLayerInterface: AllBinaryLayer;;
     
 
-    var size: number = this.list.size()!;
-;
+    var size: number = this.list.size()!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 nextLayerInterface= this.list.get(index) as AllBinaryLayer;
     
@@ -156,8 +154,7 @@ this.list.addAt(index, layerInterface);
 this.layerManagerLogging!.remove(layerInterface);
     
 
-    var result: boolean = this.list.remove(layerInterface)!;
-;
+    var result: boolean = this.list.remove(layerInterface)!;;
     
 this.layerManagerLogging!.removeResult(this, layerInterface, result);
     
@@ -218,16 +215,14 @@ System.gc();
         //mutex.withLock
         
 
-    var comp: Layer
-;
+    var comp: Layer;;
     
 
 
 
 
                         for (
-    var index: number = this.list.size()!;
---index >= 0; )
+    var index: number = this.list.size()!;--index >= 0; )
         {
 comp= this.list.objectArray[index]! as Layer;
     

@@ -47,6 +47,7 @@ import { LayerManagerNoDebug } from '../../../org/allbinary/layer/LayerManagerNo
         
 export class ArtificialIntelligenceLayerManager extends LayerManager {
         
+
 public constructor (){
             super(LayerManagerNoDebug.getInstance());
                     

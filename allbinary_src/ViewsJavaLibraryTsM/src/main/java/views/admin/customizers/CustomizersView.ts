@@ -88,7 +88,8 @@ export class CustomizersView extends HttpStoreComponentView implements DomNodeIn
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    readonly customizersVector: Vector
+    readonly customizersVector: Vector;
+
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     
@@ -104,28 +105,23 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 
         try {
             
-    var node: Node = document.createElement(TransformTemplateCustomizersData.NAME)!;
-;
+    var node: Node = document.createElement(TransformTemplateCustomizersData.NAME)!;;
     
 
-    var unsortedCustomizerViewVector: Vector = new Vector();
-;
+    var unsortedCustomizerViewVector: Vector = new Vector();;
     
 
-    var size: number = this.customizersVector!.length!;
-;
+    var size: number = this.customizersVector!.length!;;
     
 
 
 
 
                         for (
-    var index: number = 0;
-index < size; index++)
+    var index: number = 0;index < size; index++)
         {
 
-    var viewName: string = this.customizersVector!.get(index) as string;
-;
+    var viewName: string = this.customizersVector!.get(index) as string;;
     
 
                         if(viewName!.indexOf(CustomizerTransformInfoData.NAME) > 0 && viewName!.indexOf(GLOBALS2.EDIT) > 0 && viewName!.indexOf(BodyData.getInstance()!.VIEWNAMEKEY) > 0 && viewName!.indexOf(TitleData.getInstance()!.VIEWNAMEKEY) > 0)
@@ -139,8 +135,7 @@ index < size; index++)
 }
 
 
-    var objectArray: any[] = unsortedCustomizerViewVector!.toArray() as any[];
-;
+    var objectArray: any[] = unsortedCustomizerViewVector!.toArray() as any[];;
     
 Arrays.sort(objectArray, new StringComparator());
     
@@ -149,16 +144,13 @@ Arrays.sort(objectArray, new StringComparator());
 
 
                         for (
-    var index: number = 0;
-index < objectArray!.length; index++)
+    var index: number = 0;index < objectArray!.length; index++)
         {
 
-    var viewName: string = objectArray[index]! as string;
-;
+    var viewName: string = objectArray[index]! as string;;
     
 
-    var viewNameNode: Node = ModDomHelper.createNameValueNodes(document, TransformTemplateCustomizerData.NAME, viewName, TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(viewName, this.getWeblisketSession()!.getStoreName()))!;
-;
+    var viewNameNode: Node = ModDomHelper.createNameValueNodes(document, TransformTemplateCustomizerData.NAME, viewName, TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(viewName, this.getWeblisketSession()!.getStoreName()))!;;
     
 node.appendChild(viewNameNode);
     

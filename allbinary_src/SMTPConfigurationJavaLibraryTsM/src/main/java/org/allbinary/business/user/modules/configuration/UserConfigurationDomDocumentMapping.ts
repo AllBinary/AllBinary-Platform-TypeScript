@@ -58,7 +58,8 @@ export class UserConfigurationDomDocumentMapping
          implements DomDocumentMappingInterface {
         
 
-    private userConfigurationInterface: UserConfigurationInterface
+    private userConfigurationInterface: UserConfigurationInterface;
+
 public constructor (userConfigurationInterface: UserConfigurationInterface){
 
             super();
@@ -71,12 +72,10 @@ public constructor (userConfigurationInterface: UserConfigurationInterface){
             
     public toXmlDoc(): Document{
 
-    var document: Document = DomDocumentHelper.create()!;
-;
+    var document: Document = DomDocumentHelper.create()!;;
     
 
-    var node: Node = new UserConfigurationView(this.userConfigurationInterface).toXmlNode(document)!;
-;
+    var node: Node = new UserConfigurationView(this.userConfigurationInterface).toXmlNode(document)!;;
     
 document.appendChild(node);
     

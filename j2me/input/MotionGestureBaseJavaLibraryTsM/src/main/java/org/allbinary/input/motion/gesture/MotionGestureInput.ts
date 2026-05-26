@@ -47,6 +47,7 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
         
 export class MotionGestureInput extends Input {
         
+
 public constructor (id: number, name: string){
             super(id, name);
                     
@@ -54,8 +55,7 @@ public constructor (id: number, name: string){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var inputFactory: InputFactory = InputFactory.getInstance()!;
-;
+    var inputFactory: InputFactory = InputFactory.getInstance()!;;
     
 inputFactory!.add(this.getId(), this);
     
