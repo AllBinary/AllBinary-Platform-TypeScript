@@ -216,7 +216,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
     var fullPath: string = this.getItemFilePath()!;;
     
 
-    var itemResourceFile: AbFile = new AbFile(fullPath);;
+    var itemResourceFile: AbFile = AbFile.createAbFile(fullPath)!;;
     
 itemResourceFile!.mkdir();
     
@@ -230,7 +230,7 @@ stringBuffer!.append(fileName);
 this.logUtil!.putF("FileName: " +fileName, this, "processFile()");
     
 
-    var file: AbFile = new AbFile(stringBuffer!.toString());;
+    var file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 this.logUtil!.putF(file.getPath(), this, "processFiles()");
     
@@ -263,7 +263,7 @@ stringBuffer!.append(fileName);
 this.logUtil!.putF("FileName: " +fileName, this, "unzip()");
     
 
-    var file: AbFile = new AbFile(stringBuffer!.toString());;
+    var file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 this.logUtil!.putF(file.getPath(), this, "unzip()");
     

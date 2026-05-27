@@ -106,7 +106,7 @@ this.imageFileAbPath= imageAbPath;
                                     }
                                 
 
-    var originalImageFile: AbFile = new AbFile(this.imageFileAbPath!.toString() +this.fileName);;
+    var originalImageFile: AbFile = AbFile.createAbFile(this.imageFileAbPath!.toString() +this.fileName)!;;
     
 originalImageFile!.createNewFile();
     

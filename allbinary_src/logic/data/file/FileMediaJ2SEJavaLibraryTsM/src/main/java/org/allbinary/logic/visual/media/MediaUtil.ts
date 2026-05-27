@@ -162,7 +162,7 @@ this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFi
                                     }
                                 
 
-    var imageFile: AbFile = new AbFile(category +newImageFileName);;
+    var imageFile: AbFile = AbFile.createAbFile(category +newImageFileName)!;;
     
 imageFile!.createNewFile();
     

@@ -68,7 +68,7 @@ export class FileFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbFile(filePath, false);
+                        return AbFile.createAbFileFromRawPath(filePath);;
     
 }
 
@@ -80,7 +80,7 @@ export class FileFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbFile(file, childFilePath);
+                        return AbFile.createAbFileWithChild(file, childFilePath);;
     
 }
 
@@ -89,7 +89,7 @@ export class FileFactory
             
     public isFile(path: string): boolean{
 
-    var file: AbFile = new AbFile(path);;
+    var file: AbFile = AbFile.createAbFile(path)!;;
     
 
                         if(file.exists())

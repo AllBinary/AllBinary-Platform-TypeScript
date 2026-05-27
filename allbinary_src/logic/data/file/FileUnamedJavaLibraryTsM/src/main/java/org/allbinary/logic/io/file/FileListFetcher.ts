@@ -81,7 +81,7 @@ export class FileListFetcher
 
         try {
             
-    var files: BasicArrayList = this.subDirectory!.search(new AbFile(path))!;;
+    var files: BasicArrayList = this.subDirectory!.search(AbFile.createAbFile(path))!;;
     
 
 
@@ -133,7 +133,7 @@ includeExtensionBasicArrayList!.add(includeExtensions[index]!);
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -172,7 +172,7 @@ includeExtensionBasicArrayList!.add(includeExtension);
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -211,7 +211,7 @@ includeExtensionBasicArrayList!.add(includeExtension);
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 
@@ -245,7 +245,7 @@ console.log("Error: " +e +"\nMsg: " +e.message);
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryBooleanFileVisitor());;
     
 
-    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
     
 
 

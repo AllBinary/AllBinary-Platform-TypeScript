@@ -65,54 +65,70 @@ export class AbFile
          implements AbFileInterface {
         
 
-    public static readonly NULL_FILE: AbFile = new AbFile(StringUtil.getInstance()!.EMPTY_STRING, false);
+    public static readonly NULL_FILE: AbFile = AbFile.createAbFileFromRawPath(StringUtil.getInstance()!.EMPTY_STRING)!;
 
-    private readonly file: File;
+                //@Throws(Exception.constructor)
+            
+    public static createAbFileWithChild(file: AbFile, childPathName: string): AbFile{
 
- constructor (filePath: string, unknown: boolean){
 
-            super();
-        this.file= new File(filePath);
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFile(new File(file.getFile(), childPathName));
     
 }
 
+
+                //@Throws(Exception.constructor)
+            
+    public static createAbFile(filePath: string): AbFile{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFile(new File(new AbPath(filePath).toFileSystemString()));
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public static createAbFilePathAndName(filePath: string, fileName: string): AbFile{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFile(new File(new AbPath(filePath).toFileSystemString(), fileName));
+    
+}
+
+
+    public static createAbFileFromAbPath(abPath: AbPath): AbFile{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFile(new File(abPath!.toFileSystemString()));
+    
+}
+
+
+    public static createAbFileFromRawPath(filePath: string): AbFile{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFile(new File(filePath));
+    
+}
+
+
+    private readonly file: File;
 
 protected constructor (file: File){
 
             super();
         this.file= file;
-    
-}
-
-
-public constructor (file: AbFile, childPathName: string){
-
-            super();
-        this.file= new File(file.getFile(), childPathName);
-    
-}
-
-
-public constructor (filePath: string){
-
-            super();
-        this.file= new File(new AbPath(filePath).toFileSystemString());
-    
-}
-
-
-public constructor (filePath: string, fileName: string){
-
-            super();
-        this.file= new File(new AbPath(filePath).toFileSystemString(), fileName);
-    
-}
-
-
-public constructor (abPath: AbPath){
-
-            super();
-        this.file= new File(abPath!.toFileSystemString());
     
 }
 
@@ -351,7 +367,7 @@ this.file.deleteOnExit();
 }
 
 
-    public list(filter: FilenameFilter): string[]{
+    public listWithFilter(filter: FilenameFilter): string[]{
 
 
 
@@ -371,7 +387,7 @@ this.file.deleteOnExit();
 }
 
 
-    public listFiles(filter: FilenameFilter): any[]{
+    public listFilesFileNameFilter(filter: FilenameFilter): any[]{
 
 
 
@@ -381,7 +397,7 @@ this.file.deleteOnExit();
 }
 
 
-    public listFiles(filter: FileFilter): any[]{
+    public listFilesFileFilter(filter: FileFilter): any[]{
 
 
 
@@ -451,12 +467,12 @@ this.file.deleteOnExit();
 }
 
 
-    public  === (obj: any = {}): boolean{
+    public equals(obj: any = {}): boolean{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file. === obj;;
+                        return TsUtil.getInstance()!.equalsNotstring(this.file, obj);;
     
 }
 
@@ -466,7 +482,7 @@ this.file.deleteOnExit();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TsUtil.getInstance()!.hashCode(this.file);;
+                        return this.file.hashCode();;
     
 }
 

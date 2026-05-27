@@ -98,7 +98,7 @@ export class LoggingInitInfo
     var FILEABPATH: AbPath = new AbPath(path, INITFILENAME);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
     var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;;

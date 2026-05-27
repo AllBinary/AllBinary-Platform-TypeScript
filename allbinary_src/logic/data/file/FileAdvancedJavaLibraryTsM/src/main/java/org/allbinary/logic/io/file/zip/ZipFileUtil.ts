@@ -96,7 +96,7 @@ export class ZipFileUtil
 
         try {
             
-    var zipFile: AbFile = new AbFile(outFilename);;
+    var zipFile: AbFile = AbFile.createAbFile(outFilename)!;;
     
 
                         if(zipFile!.exists())
@@ -242,7 +242,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
                                 
                         else {
                             
-    var entryFile: AbFile = new AbFile(path +entryName);;
+    var entryFile: AbFile = AbFile.createAbFile(path +entryName)!;;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     

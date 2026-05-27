@@ -172,7 +172,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
     var fullCategory: string = stringBuffer!.toString()!;;
     
 
-    var categoryFile: AbFile = new AbFile(fullCategory);;
+    var categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
     
 
                         if(!categoryFile!.isDirectory())

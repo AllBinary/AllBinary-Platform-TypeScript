@@ -1789,7 +1789,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         
                                     {
                                     
-    var file: AbFile = new AbFile(fromSpecialDirectoryAbPath);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(fromSpecialDirectoryAbPath)!;;
     
 
                         if(file.isDirectory())

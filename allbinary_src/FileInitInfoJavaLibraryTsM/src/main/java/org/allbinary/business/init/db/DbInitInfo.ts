@@ -159,7 +159,7 @@ this.directory.create(PATH);
 
         try {
             
-    var newFile: AbFile = new AbFile(FILEABPATH);;
+    var newFile: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 newFile!.createNewFile();
     
@@ -239,7 +239,7 @@ this.hasRead= false;
 
         try {
             
-    var file: AbFile = new AbFile(FILEABPATH);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
                         if(file.isFile())

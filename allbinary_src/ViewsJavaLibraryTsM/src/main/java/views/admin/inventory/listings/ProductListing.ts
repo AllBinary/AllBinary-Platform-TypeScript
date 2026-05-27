@@ -207,7 +207,7 @@ keywords.addAll(substoreKeywords);
                                     }
                                 
 
-    var newFile: AbFile = new AbFile(file);;
+    var newFile: AbFile = AbFile.createAbFile(file)!;;
     
 
                         if(newFile!.exists())

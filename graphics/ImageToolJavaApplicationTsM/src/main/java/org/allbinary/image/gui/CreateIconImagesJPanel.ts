@@ -228,7 +228,7 @@ stringMaker!.append(path)!.append(ANDROID)!.appendint(width)!.append(CanvasStrin
 
     var newFilePath: string = stringMaker!.toString()!;;
     
-imagePersistanceUtil!.saveWithBatik(new AbFile(newFilePath), generatedBufferedImageArray[index]!);
+imagePersistanceUtil!.saveWithBatik(AbFile.createAbFile(newFilePath), generatedBufferedImageArray[index]!);
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -236,7 +236,7 @@ stringMaker!.append(path)!.append(IOS)!.appendint(width)!.append(CanvasStrings.g
     
 newFilePath= stringMaker!.toString();
     
-imagePersistanceUtil!.saveWithBatik(new AbFile(newFilePath), generatedBufferedImageArray[index]!);
+imagePersistanceUtil!.saveWithBatik(AbFile.createAbFile(newFilePath), generatedBufferedImageArray[index]!);
     
 }
 

@@ -105,7 +105,7 @@ export class BlisketBackupFactory
     var path: AbPath = new AbPath(pathString);;
     
 
-    var file: AbFile = new AbFile(path);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
     
 
 

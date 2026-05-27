@@ -60,7 +60,7 @@ this.id= id;
 }
 
 
-    public  === (htmlMetaAttributeData: HtmlMetaAttributeData): boolean{
+    public equals(htmlMetaAttributeData: HtmlMetaAttributeData): boolean{
 
                         if(htmlMetaAttributeData!.id == this.id)
                         

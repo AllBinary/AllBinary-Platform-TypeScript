@@ -90,7 +90,7 @@ export interface AbFileInterface {
 
     list(): string[]
 
-    list(filter: FilenameFilter): string[]
+    listWithFilter(filter: FilenameFilter): string[]
 
     mkdir(): boolean
 

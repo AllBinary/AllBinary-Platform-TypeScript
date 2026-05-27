@@ -175,7 +175,7 @@ export class AbSqlTableUtil
     var backupFilePath: AbPath = new AbPath(backupPath, fileName);;
     
 
-    var backupFile: AbFile = new AbFile(backupFilePath);;
+    var backupFile: AbFile = AbFile.createAbFile(backupFilePath)!;;
     
 
                         if(backupFile!.exists())
@@ -273,7 +273,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_BACKUP_FILE);
 Directory.create(backupAbPath);
     
 
-    var backupFileBak: AbFile = new AbFile(backupAbPath!.toFileSystemString());;
+    var backupFileBak: AbFile = AbFile.createAbFile(backupAbPath!.toFileSystemString())!;;
     
 backupFileBak!.createNewFile();
     
@@ -529,7 +529,7 @@ StreamUtil.getInstance()!.close(outputStream);
                                     }
                                 
 
-    var backupFile: AbFile = new AbFile(path, tableName +this.EXTENSION);;
+    var backupFile: AbFile = AbFile.createAbFile(path, tableName +this.EXTENSION)!;;
     
 
     var bufferedLineReader: BufferedLineReader = new BufferedLineReader(backupFile);;

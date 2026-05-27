@@ -107,7 +107,7 @@ stringBuffer!.append(URLGLOBALS.getWebappPath());
     var realPath: AbPath = new AbPath(stringBuffer!.toString());;
     
 
-    var file: AbFile = new AbFile(path);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
     
 
     var fileBasicArrayList: BasicArrayList = Directory.getInstance()!.search(file, true)!;;

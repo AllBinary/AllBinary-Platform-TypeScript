@@ -155,6 +155,16 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
+    public equalsNotstring(anyType: any = {}, object2: any = {}): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return anyType! === object2;;
+    
+}
+
+
     public getClassClassLoader(anyType: any = {}): ClassLoader{
 
 

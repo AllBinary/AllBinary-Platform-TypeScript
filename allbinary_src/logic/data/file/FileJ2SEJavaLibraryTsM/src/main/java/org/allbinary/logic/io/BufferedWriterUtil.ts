@@ -72,7 +72,7 @@ export class BufferedWriterUtil
             
     public overwrite(path: string, data: string){
 
-    var abFile: AbFile = new AbFile(path);;
+    var abFile: AbFile = AbFile.createAbFile(path)!;;
     
 
                         if(abFile!.exists())

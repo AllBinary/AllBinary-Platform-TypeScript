@@ -84,7 +84,7 @@ public constructor (filePath: string){
 
             super();
         
-    var xmlFile: AbFile = new AbFile(filePath);;
+    var xmlFile: AbFile = AbFile.createAbFile(filePath)!;;
     
 this.document= DomDocumentFileHelper.createDocument(xmlFile);
     

@@ -322,7 +322,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION);
     
 
-    var encFile: AbFile = new AbFile(stringBuffer!.toString());;
+    var encFile: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -369,7 +369,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setTemplateAsInputStream()")
                                 
                         else {
                             
-    var file: AbFile = new AbFile(this.getTransformInfoInterface()!.getTemplateFilePath());;
+    var file: AbFile = AbFile.createAbFileFromAbPath(this.getTransformInfoInterface()!.getTemplateFilePath())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -441,7 +441,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION);
     
 
-    var file: AbFile = new AbFile(stringBuffer!.toString());;
+    var file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 
                         if(file.isFile())

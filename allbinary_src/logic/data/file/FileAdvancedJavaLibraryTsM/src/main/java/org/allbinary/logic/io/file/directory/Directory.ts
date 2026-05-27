@@ -219,7 +219,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                         
                                     {
                                     
-    var fileArray: any[] = file.listFiles(fileFilter)!;;
+    var fileArray: any[] = file.listFilesFileFilter(fileFilter)!;;
     
 
                         if(fileArray == 

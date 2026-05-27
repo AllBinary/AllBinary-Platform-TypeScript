@@ -120,7 +120,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFile(filePathName: string, name: string){
-this.newFile= new AbFile(filePathName);
+this.newFile= AbFile.createAbFile(filePathName);
     
 }
 

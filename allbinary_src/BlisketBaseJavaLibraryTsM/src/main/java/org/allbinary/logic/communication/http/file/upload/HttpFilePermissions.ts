@@ -72,7 +72,7 @@ export class HttpFilePermissions
 public constructor (fullPath: AbPath){
 
             super();
-        this.file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getInstance()!.FILE));
+        this.file= AbFile.createAbFileFromAbPath(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getInstance()!.FILE));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))

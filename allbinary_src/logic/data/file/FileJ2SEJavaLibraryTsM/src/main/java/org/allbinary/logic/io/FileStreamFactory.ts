@@ -79,7 +79,7 @@ private constructor (){
     var FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
 
@@ -97,7 +97,7 @@ private constructor (){
     var FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
                         if(file.exists())
@@ -126,7 +126,7 @@ file.createNewFile();
     var FILEABPATH: AbPath = new AbPath(path, fileName);;
     
 
-    var file: AbFile = new AbFile(FILEABPATH);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 file.delete();
     

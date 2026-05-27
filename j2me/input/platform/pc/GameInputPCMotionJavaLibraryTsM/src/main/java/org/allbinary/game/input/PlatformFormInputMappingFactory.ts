@@ -82,20 +82,16 @@ export class PlatformFormInputMappingFactory
                         
                                     {
                                     
-    var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;
-;
+    var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;;
     
 
-    var inputToGameKeyMapping: InputToGameKeyMapping = new InputToGameKeyMapping();
-;
+    var inputToGameKeyMapping: InputToGameKeyMapping = new InputToGameKeyMapping();;
     
 
-    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-;
+    var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;;
     
 
-    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-;
+    var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, pcKeyFactory!.DPAD_UP);
     
@@ -125,8 +121,7 @@ this.SINGLETON= inputToGameKeyMapping;
 } catch(e) 
             {
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-;
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
     

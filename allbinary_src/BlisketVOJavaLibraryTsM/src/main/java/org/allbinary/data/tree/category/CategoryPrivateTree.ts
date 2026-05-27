@@ -132,7 +132,7 @@ cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
                         
                                     {
                                     
-    var categoryFile: AbFile = new AbFile(categoryInterface!.getFilePath());;
+    var categoryFile: AbFile = AbFile.createAbFileFromAbPath(categoryInterface!.getFilePath())!;;
     
 
                         if(categoryFile!.delete())

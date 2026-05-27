@@ -51,7 +51,8 @@ import { BasicOptionItemsRequestHelperFactory } from '../../admin/taghelpers/Bas
 export class BasicOptionItemsTag extends TableTag {
         
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap<any, any>;
+
 public constructor (){
 
             super();

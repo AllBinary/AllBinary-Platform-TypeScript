@@ -254,7 +254,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);;
+    var file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +filePath)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))

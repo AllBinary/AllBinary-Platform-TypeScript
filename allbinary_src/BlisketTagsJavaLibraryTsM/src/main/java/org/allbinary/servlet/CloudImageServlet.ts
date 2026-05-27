@@ -93,7 +93,7 @@ export class CloudImageServlet extends HttpServlet {
     var requestURI: string = request.getRequestURI()!;;
     
 
-    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +requestURI);;
+    var file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +requestURI)!;;
     
 inputStream= CloudStreamUtil.getInstance()!.getFile(file);
     

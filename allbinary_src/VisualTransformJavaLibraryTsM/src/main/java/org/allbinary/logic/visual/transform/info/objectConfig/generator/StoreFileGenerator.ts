@@ -202,7 +202,7 @@ abPath= new AbPath(abPath!.toString(), stringBuffer!.toString());
     
 this.fileAbPath= abPath;
     
-this.file= new AbFile(this.fileAbPath);
+this.file= AbFile.createAbFileFromAbPath(this.fileAbPath);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

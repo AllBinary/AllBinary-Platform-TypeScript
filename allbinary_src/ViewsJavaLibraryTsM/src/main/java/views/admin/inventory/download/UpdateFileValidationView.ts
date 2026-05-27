@@ -217,7 +217,7 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
     var fullCategory: string = new StringMaker().append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;;
     
 
-    var categoryFile: AbFile = new AbFile(fullCategory);;
+    var categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
     
 
                         if(!categoryFile!.isDirectory())
@@ -572,7 +572,7 @@ stringBuffer!.append("<br/>");
                                     }
                                 
 
-    var categoryFile: AbFile = new AbFile(fullCategory);;
+    var categoryFile: AbFile = AbFile.createAbFile(fullCategory)!;;
     
 
                         if(!categoryFile!.isDirectory())

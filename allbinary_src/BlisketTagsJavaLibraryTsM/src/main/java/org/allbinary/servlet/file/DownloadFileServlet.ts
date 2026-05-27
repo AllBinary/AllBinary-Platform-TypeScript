@@ -146,7 +146,7 @@ export class DownloadFileServlet extends HttpServlet {
                         }
                             
 
-    var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);;
+    var file: AbFile = AbFile.createAbFile(URLGLOBALS.getWebappPath() +filePath)!;;
     
 
                         if(!file.exists())

@@ -270,7 +270,7 @@ lineNumberReader= new LineNumberReader(pciFile);
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;;
+    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile.createAbFile(FilePathData.getInstance()!.SEPARATOR))!;;
     
 
                         if(!fileVector!.isEmpty())

@@ -154,7 +154,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
     var fullPath: string = stringBuffer!.toString()!;;
     
 
-    var imageDirectoryFile: AbFile = new AbFile(fullPath);;
+    var imageDirectoryFile: AbFile = AbFile.createAbFile(fullPath)!;;
     
 
                         if(!imageDirectoryFile!.isDirectory())
@@ -179,7 +179,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 stringBuffer!.append(mediaData!.getName());
     
 
-    var originalImageFile: AbFile = new AbFile(stringBuffer!.toString());;
+    var originalImageFile: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
@@ -327,21 +327,21 @@ this.mediaUtil!.saveImageFile(originalImageFile, this.itemInterface!.getLargeIma
                                 
                         else {
                             
-    var smallImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());;
+    var smallImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getSmallImage())!;;
     
 smallImageFile!.createNewFile();
     
 fileUtil!.write(new ByteArrayInputStream(byteArray), smallImageFile);
     
 
-    var mediumImageFile: AbFile = new AbFile(this.itemInterface!.getMediumImage());;
+    var mediumImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getMediumImage())!;;
     
 smallImageFile!.createNewFile();
     
 fileUtil!.write(new ByteArrayInputStream(byteArray), mediumImageFile);
     
 
-    var largeImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());;
+    var largeImageFile: AbFile = AbFile.createAbFile(this.itemInterface!.getSmallImage())!;;
     
 largeImageFile!.createNewFile();
     

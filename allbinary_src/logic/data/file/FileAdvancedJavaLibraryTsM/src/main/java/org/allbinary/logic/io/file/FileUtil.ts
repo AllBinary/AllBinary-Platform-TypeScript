@@ -290,7 +290,7 @@ this.copyToCloud(file, path, realPath, cloud, false, false);
     var outPath: AbPath = this.fixPath(file, path, realPath, cloud)!;;
     
 
-    var outFile: AbFile = new AbFile(outPath);;
+    var outFile: AbFile = AbFile.createAbFileFromAbPath(outPath)!;;
     
 
                         if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
@@ -689,7 +689,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
             
     public copyDirectoryPortion(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number){
 
-    var file: AbFile = new AbFile(fromDirectoryAbPath);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(fromDirectoryAbPath)!;;
     
 
                         if(!file.isDirectory())
@@ -792,7 +792,7 @@ stringBuffer!.appendint(end);
     var newPath: string = toDirectoryAbPath!.toFileSystemString() +path.substring(beginIndex);;
     
 
-    var toFile: AbFile = new AbFile(new AbPath(newPath));;
+    var toFile: AbFile = AbFile.createAbFileFromAbPath(new AbPath(newPath))!;;
     
 this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
     
@@ -892,7 +892,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                         if(file.isFile())
                         
                                     {
-                                    this.copyFile(file, new AbFile(newDirectoryAbPath!.toString(), file.getName()));
+                                    this.copyFile(file, AbFile.createAbFilePathAndName(newDirectoryAbPath!.toString(), file.getName()));
     
 
                                     }
@@ -901,7 +901,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                         if(file.isDirectory())
                         
                                     {
-                                    this.copyDirectory(file, new AbFile(newDirectoryAbPath));
+                                    this.copyDirectory(file, AbFile.createAbFileFromAbPath(newDirectoryAbPath));
     
 
                                     }
@@ -1009,10 +1009,10 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                                     }
                                 
 
-    var fromLocationFile: AbFile = new AbFile(fromAbPath);;
+    var fromLocationFile: AbFile = AbFile.createAbFileFromAbPath(fromAbPath)!;;
     
 
-    var toLocationFile: AbFile = new AbFile(to);;
+    var toLocationFile: AbFile = AbFile.createAbFileFromAbPath(to)!;;
     
 
                         if(fromLocationFile!.isFile())
@@ -1023,7 +1023,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                         
                                     {
                                     
-    var file: AbFile = new AbFile(toLocationFile, fromLocationFile!.getName());;
+    var file: AbFile = AbFile.createAbFileWithChild(toLocationFile, fromLocationFile!.getName())!;;
     
 this.copyFile(fromLocationFile, file);
     
@@ -1120,7 +1120,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), COPY);
                         
                                     {
                                     
-    var aFile: AbFile = new AbFile(toLocationFile, file.getName());;
+    var aFile: AbFile = AbFile.createAbFileWithChild(toLocationFile, file.getName())!;;
     
 this.copyFile(file, aFile);
     

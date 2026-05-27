@@ -184,7 +184,7 @@ BasicUserRole.roleVector!.add(this);
 }
 
 
-    public  === (basicUserRole: BasicUserRole): boolean{
+    public equals(basicUserRole: BasicUserRole): boolean{
 
                         if(this.getRoleId() == basicUserRole!.getRoleId())
                         

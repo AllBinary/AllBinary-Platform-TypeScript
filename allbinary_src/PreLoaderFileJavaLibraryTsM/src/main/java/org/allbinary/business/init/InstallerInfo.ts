@@ -109,7 +109,7 @@ public constructor (){
 
         try {
             
-    var newFile: AbFile = new AbFile(FILEABPATH);;
+    var newFile: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 newFile!.createNewFile();
     
@@ -161,7 +161,7 @@ InstallerInfo.hasRead= false;
 
         try {
             
-    var file: AbFile = new AbFile(FILEABPATH);;
+    var file: AbFile = AbFile.createAbFileFromAbPath(FILEABPATH)!;;
     
 
                         if(file.isFile())

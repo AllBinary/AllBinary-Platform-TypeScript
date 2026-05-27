@@ -24,8 +24,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { File } from '../../../../../java/io/File.js';
-      
 import { FileNotFoundException } from '../../../../../java/io/FileNotFoundException.js';
       
 import { Context } from '../../../../../android/content/Context.js';
@@ -124,7 +122,7 @@ private constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbFile(filePath, false);
+                        return AbFile.createAbFileFromRawPath(filePath);;
     
 }
 
@@ -136,7 +134,7 @@ private constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbFile(file, childFilePath);
+                        return AbFile.createAbFileWithChild(file, childFilePath);;
     
 }
 

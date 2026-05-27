@@ -69,13 +69,15 @@ export class UserEmailEventsConfiguration
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private emailEventHashMap: HashMap<any, any>
+    private emailEventHashMap: HashMap<any, any>;
+
 public constructor (){
 
             super();
         this.init();
     
 }
+
 
 public constructor (hashMap: HashMap<any, any>){
 
@@ -129,8 +131,7 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
             
     public getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface{
 
-    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()) as UserEmailEventConfigurationInterface;
-;
+    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()) as UserEmailEventConfigurationInterface;;
     
 
 

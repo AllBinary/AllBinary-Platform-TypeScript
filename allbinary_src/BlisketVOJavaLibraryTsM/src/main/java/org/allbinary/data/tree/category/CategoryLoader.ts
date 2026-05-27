@@ -111,7 +111,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                         
                                     {
                                     
-    var rootAbFile: AbFile = new AbFile(categoryInterface!.getRootFilePath());;
+    var rootAbFile: AbFile = AbFile.createAbFileFromAbPath(categoryInterface!.getRootFilePath())!;;
     
 
                         if(!rootAbFile!.isDirectory())

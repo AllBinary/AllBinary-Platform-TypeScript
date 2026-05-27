@@ -236,7 +236,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.INIT_PATH);
 stringBuffer!.append(this.getFileName());
     
 
-    var file: AbFile = new AbFile(stringBuffer!.toString());;
+    var file: AbFile = AbFile.createAbFile(stringBuffer!.toString())!;;
     
 
     var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;;
