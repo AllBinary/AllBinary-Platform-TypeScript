@@ -40,6 +40,8 @@ import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js'
       
 import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
       
+import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+      
 import { CommonLabels } from '../../org/allbinary/string/CommonLabels.js';
       
 
@@ -97,7 +99,7 @@ export class AuthenticationHelperUtil
     var endIndex: number = HttpRequestUtil.getInstance()!.getLastSeparatorIndex(filePath)!;;
     
 
-    var fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex));;
+    var fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var downloadFilePermissions: HttpFilePermissions = new HttpFilePermissions(fullPath);;

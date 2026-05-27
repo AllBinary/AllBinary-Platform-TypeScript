@@ -36,6 +36,8 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
       
 import { BooleanUtil } from '../../../../org/allbinary/logic/java/bool/BooleanUtil.js';
       
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      
 
 
 
@@ -176,9 +178,9 @@ this.hasRead= false;
         try {
             this.testing= hashMap!.get(this.TESTING) as string;
     
-this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as string);
+this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as string, StringUtil.getInstance()!.EMPTY_STRING);
     
-this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as string);
+this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as string, StringUtil.getInstance()!.EMPTY_STRING);
     
 
                 //: 

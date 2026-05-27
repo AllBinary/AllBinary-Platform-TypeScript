@@ -34,6 +34,8 @@ import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
       
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       
 
@@ -104,7 +106,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                                     parentCategoryInterface!.addChild(newChildCategoryInterface);
     
 
-    var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString());;
+    var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.directory.create(directoryToBeCreatedAbPath);
     
@@ -156,7 +158,7 @@ this.save(newChildCategoryInterface);
                                     parentCategoryInterface!.addChild(existingChildCategoryInterface);
     
 
-    var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString());;
+    var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.delete(existingChildCategoryInterface);
     

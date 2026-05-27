@@ -245,7 +245,7 @@ stringBuffer!.append(this.storeName);
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var fileAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var fileAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var aObject: string = hashMap!.get(transformInfoData!.OBJECT) as string;;

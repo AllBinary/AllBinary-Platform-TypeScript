@@ -109,7 +109,7 @@ public constructor (node: Node){
             super();
         this.isFile= false;
     
-this.logoAbPath= new AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue());
+this.logoAbPath= new AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue(), StringUtil.getInstance()!.EMPTY_STRING);
     
 this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, node.getChildNodes())!.getNodeValue();
     
@@ -131,7 +131,7 @@ this.getFormData(hashMap);
     public getFormData(hashMap: HashMap<any, any>){
 this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE) as FileItem;
     
-this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as string);
+this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as string, StringUtil.getInstance()!.EMPTY_STRING);
     
 
                         if(this.logoFileItem != 

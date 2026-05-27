@@ -42,6 +42,8 @@ import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log
       
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
       
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
       
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
@@ -178,7 +180,7 @@ this.transformInfoInterface= transformInfoInterface;
     var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;;
     
 
-    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node));;
+    var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var level: number = CategoryUtil.getPathLevel(categoryPath)!;;

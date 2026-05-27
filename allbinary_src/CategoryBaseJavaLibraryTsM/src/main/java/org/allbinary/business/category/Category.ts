@@ -46,6 +46,8 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
       
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       
 import { Document } from '../../../../org/w3c/dom/Document.js';
@@ -156,7 +158,7 @@ this.log();
             
     public getRootFilePath(): AbPath{
 
-    var rootAbPath: AbPath = new AbPath(NOT_ROOT);;
+    var rootAbPath: AbPath = new AbPath(NOT_ROOT, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var categoryInterface: CategoryInterface = this.categoryHierarchyInterface!.getRoot()!;;

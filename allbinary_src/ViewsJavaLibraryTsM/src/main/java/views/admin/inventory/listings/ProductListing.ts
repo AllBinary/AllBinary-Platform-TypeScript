@@ -427,7 +427,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(storeFront!.getStaticPath());
     
 
-    var staticPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var staticPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))

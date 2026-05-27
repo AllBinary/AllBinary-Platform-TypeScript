@@ -149,7 +149,7 @@ this.initFileName= initFileName;
             
     public write(){
 
-    var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE);;
+    var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.directory.create(PATH);
     

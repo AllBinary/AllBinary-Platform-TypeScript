@@ -46,6 +46,8 @@ import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathDat
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
       
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -269,7 +271,7 @@ pathStringBuffer!.append(abPathData!.SEPARATOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath(pathStringBuffer!.toString());
+                        return new AbPath(pathStringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 

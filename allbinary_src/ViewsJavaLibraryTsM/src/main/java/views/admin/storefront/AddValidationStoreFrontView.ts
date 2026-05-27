@@ -46,6 +46,8 @@ import { AbPath } from '../../../org/allbinary/logic/io/path/AbPath.js';
       
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
       
 import { Document } from '../../../org/w3c/dom/Document.js';
@@ -123,7 +125,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
                                     }
                                 
 
-                        if(AbFile.createAbFileFromAbPath(new AbPath(this.getStoreViewsPath()))!.isFile())
+                        if(AbFile.createAbFileFromAbPath(new AbPath(this.getStoreViewsPath(), StringUtil.getInstance()!.EMPTY_STRING))!.isFile())
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -209,7 +211,7 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName());
                                     }
                                 
 
-                        if(AbFile.createAbFileFromAbPath(new AbPath(this.getStoreViewsPath()))!.isFile())
+                        if(AbFile.createAbFileFromAbPath(new AbPath(this.getStoreViewsPath(), StringUtil.getInstance()!.EMPTY_STRING))!.isFile())
                         
                                     {
                                     stringBuffer!.append("Store name clashes with template name<br/>");

@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 
 
 
@@ -49,7 +51,7 @@ export class AbFilePath extends AbPath {
         
 
 public constructor (aPath: string){
-            super();
+            super(StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING);
                     
 
                             //For kotlin this is before the body of the constructor.
@@ -61,7 +63,7 @@ this.schema= this.getSchema(aPath);
     
 this.setName(abPathUtil!.getNameFromPath(aPath));
     
-this.setPath(abPathUtil!.adjust(this.getPath(abPathUtil!.removeNameFromPath(aPath)!.toString())));
+this.setPath(abPathUtil!.adjust(this.getPathFromPath(abPathUtil!.removeNameFromPath(aPath)!.toString())));
     
 }
 

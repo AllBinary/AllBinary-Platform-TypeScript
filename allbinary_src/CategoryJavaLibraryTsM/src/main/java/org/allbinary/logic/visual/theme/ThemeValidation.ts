@@ -68,6 +68,8 @@ import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
       
 import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
@@ -151,7 +153,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, hashMap: Has
         this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as string);;
+    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as string, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var pathUtil: PathUtil = PathUtil.getInstance()!;;
@@ -239,7 +241,7 @@ this.init(rootStoreThemeCategoryInterface);
                 //@Throws(Exception.constructor)
             
     init(storeThemeCategoryInterface: StoreThemeCategoryInterface){
-this.fileAbPath= new AbPath(storeThemeCategoryInterface!.getRootFilePath()!.toString() +this.categoryAbPath!.toString());
+this.fileAbPath= new AbPath(storeThemeCategoryInterface!.getRootFilePath()!.toString() +this.categoryAbPath!.toString(), StringUtil.getInstance()!.EMPTY_STRING);
     
 this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
     

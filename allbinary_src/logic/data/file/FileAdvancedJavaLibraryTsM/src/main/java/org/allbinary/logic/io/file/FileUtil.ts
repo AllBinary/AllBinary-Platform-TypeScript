@@ -245,7 +245,7 @@ StreamUtil.getInstance()!.close(dataInputStream);
     var fixedPathString: string = realPath!.toFileSystemString() +file.getPath()!.substring(beginIndex, endIndex);;
     
 
-    var fixedPath: AbPath = new AbPath(fixedPathString);;
+    var fixedPath: AbPath = new AbPath(fixedPathString, StringUtil.getInstance()!.EMPTY_STRING);;
     
 this.directory.create(fixedPath);
     
@@ -774,7 +774,7 @@ stringBuffer!.appendint(end);
                                 
                         else {
                             
-    var path: string = new AbPath(nextFile!.getPath()).getPath()!;;
+    var path: string = new AbPath(nextFile!.getPath(), StringUtil.getInstance()!.EMPTY_STRING).getPath()!;;
     
 
     var beginIndex: number = fromDirectoryAbPath!.getPath()!.length()!;;
@@ -783,7 +783,7 @@ stringBuffer!.appendint(end);
                         if(path.indexOf(URLGLOBALS.getWebappPath()) < 0)
                         
                                     {
-                                    beginIndex -= new AbPath(URLGLOBALS.getWebappPath()).getPath()!.length();
+                                    beginIndex -= new AbPath(URLGLOBALS.getWebappPath(), StringUtil.getInstance()!.EMPTY_STRING).getPath()!.length();
     
 
                                     }
@@ -792,7 +792,7 @@ stringBuffer!.appendint(end);
     var newPath: string = toDirectoryAbPath!.toFileSystemString() +path.substring(beginIndex);;
     
 
-    var toFile: AbFile = AbFile.createAbFileFromAbPath(new AbPath(newPath))!;;
+    var toFile: AbFile = AbFile.createAbFileFromAbPath(new AbPath(newPath, StringUtil.getInstance()!.EMPTY_STRING))!;;
     
 this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
     
@@ -833,7 +833,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
     var newDirectory: string = FileUtil.getNewDirectory(fromFile)!;;
     
 
-    var newDirectoryAbPath: AbPath = new AbPath(to.getPath() +AbPathData.getInstance()!.SEPARATOR +newDirectory);;
+    var newDirectoryAbPath: AbPath = new AbPath(to.getPath() +AbPathData.getInstance()!.SEPARATOR +newDirectory, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(!this.directory.create(newDirectoryAbPath))

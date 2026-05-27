@@ -70,6 +70,8 @@ import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
       
 import { AbPathData } from '../../org/allbinary/logic/io/path/AbPathData.js';
       
+import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+      
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
       
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
@@ -263,10 +265,10 @@ this.email();
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;;
     
 
-    var fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath());;
+    var fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath());;
+    var toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
     

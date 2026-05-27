@@ -118,7 +118,7 @@ stringBuffer!.append(weblisketSession!.getStoreName());
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE) as string;;

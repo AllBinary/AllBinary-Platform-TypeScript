@@ -282,7 +282,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath(this.create(this.EMPTY_STRING, key, hashMap));
+                        return new AbPath(this.create(this.EMPTY_STRING, key, hashMap), StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -294,7 +294,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath(this.create(append, key, hashMap));
+                        return new AbPath(this.create(append, key, hashMap), StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1480,7 +1480,7 @@ this.homeHostName= value;
                 //@Throws(Exception.constructor)
             
     public setHomeHostNamePath(value: string){
-this.homeHostNamePath= new AbPath(value);
+this.homeHostNamePath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1494,7 +1494,7 @@ this.hostName= value;
                 //@Throws(Exception.constructor)
             
     public setHostNamePath(value: string){
-this.hostNamePath= new AbPath(value);
+this.hostNamePath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1508,7 +1508,7 @@ this.testHomeHostName= value;
                 //@Throws(Exception.constructor)
             
     public setTestHomeHostNamePath(value: string){
-this.testHomeHostNamePath= new AbPath(value);
+this.testHomeHostNamePath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1522,7 +1522,7 @@ this.testHostName= value;
                 //@Throws(Exception.constructor)
             
     public setTestHostNamePath(value: string){
-this.testHostNamePath= new AbPath(value);
+this.testHostNamePath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1530,7 +1530,7 @@ this.testHostNamePath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setImagePath(value: string){
-this.imagePath= new AbPath(value);
+this.imagePath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1538,7 +1538,7 @@ this.imagePath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setStaticPath(value: string){
-this.staticPath= new AbPath(value);
+this.staticPath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1546,7 +1546,7 @@ this.staticPath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setCategoryPath(value: string){
-this.categoryPath= new AbPath(value);
+this.categoryPath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1632,7 +1632,7 @@ this.lastModified= value;
                 //@Throws(Exception.constructor)
             
     public setFtpPath(value: string){
-this.ftpPath= new AbPath(value);
+this.ftpPath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1640,7 +1640,7 @@ this.ftpPath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setTestFtpPath(value: string){
-this.testFtpPath= new AbPath(value);
+this.testFtpPath= new AbPath(value, StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
@@ -1649,7 +1649,7 @@ this.testFtpPath= new AbPath(value);
             
     createDirectories(): boolean{
 
-    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath());;
+    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(!this.directory.create(storeAbPath))
@@ -1665,7 +1665,7 @@ this.testFtpPath= new AbPath(value);
                                     }
                                 
 
-                        if(!this.directory.create(new AbPath(storeAbPath +this.getCategoryPath())))
+                        if(!this.directory.create(new AbPath(storeAbPath +this.getCategoryPath(), StringUtil.getInstance()!.EMPTY_STRING)))
                         
                                     {
                                     
@@ -1678,7 +1678,7 @@ this.testFtpPath= new AbPath(value);
                                     }
                                 
 
-                        if(!this.directory.create(new AbPath(storeAbPath +this.getStaticPath())))
+                        if(!this.directory.create(new AbPath(storeAbPath +this.getStaticPath(), StringUtil.getInstance()!.EMPTY_STRING)))
                         
                                     {
                                     
@@ -1735,7 +1735,7 @@ stringBuffer!.append(viewPath);
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH);
     
 
-    var fromDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var fromDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1746,7 +1746,7 @@ stringBuffer!.append("special");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var fromSpecialDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var fromSpecialDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1757,7 +1757,7 @@ stringBuffer!.append(this.getName());
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var toDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var toDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
                         if(current == 0)
@@ -1889,7 +1889,7 @@ stringBuffer!.append("Resources");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var installCategoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var installCategoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -1902,7 +1902,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(this.getCategoryPath());
     
 
-    var categoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var categoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPath, true, false, current, total);
     
@@ -1926,10 +1926,10 @@ stringBuffer!.append("images");
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
-    var viewStoreImagesDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var viewStoreImagesDirectoryAbPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
-    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath());;
+    var storeAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.getCurrentHomeHostNamePath(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, storeAbPath, true, false, current, total);
     

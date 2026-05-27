@@ -56,6 +56,8 @@ import { FileWrapperUtil } from '../../../../../org/allbinary/logic/io/file/File
       
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
       
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
       
 
@@ -146,7 +148,7 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
 
     var file: File = new File(FILENAME);;
     
-FileUtil.getInstance()!.copy(new AbPath(file.getAbsolutePath()), new AbPath(file.getAbsolutePath() +".bak.xml"));
+FileUtil.getInstance()!.copy(new AbPath(file.getAbsolutePath(), StringUtil.getInstance()!.EMPTY_STRING), new AbPath(file.getAbsolutePath() +".bak.xml", StringUtil.getInstance()!.EMPTY_STRING));
     
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;;

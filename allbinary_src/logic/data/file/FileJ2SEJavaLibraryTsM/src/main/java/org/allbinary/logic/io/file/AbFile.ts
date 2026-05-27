@@ -86,7 +86,7 @@ export class AbFile
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbFile(new File(new AbPath(filePath).toFileSystemString()));
+                        return new AbFile(new File(new AbPath(filePath, StringUtil.getInstance()!.EMPTY_STRING).toFileSystemString()));
     
 }
 
@@ -98,7 +98,7 @@ export class AbFile
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbFile(new File(new AbPath(filePath).toFileSystemString(), fileName));
+                        return new AbFile(new File(new AbPath(filePath, StringUtil.getInstance()!.EMPTY_STRING).toFileSystemString(), fileName));
     
 }
 

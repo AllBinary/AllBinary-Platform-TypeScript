@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
+        
 import { FilePathData } from '../../../../../org/allbinary/logic/io/file/FilePathData.js';
       
 import { FilePathUtil } from '../../../../../org/allbinary/logic/io/file/FilePathUtil.js';
@@ -62,61 +64,51 @@ export class AbPath
          {
         
 
+    public static createAbPath(): AbPath{
+
+        try {
+            
+    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbPath(EMPTY_STRING, EMPTY_STRING);
+    
+
+                //: 
+} catch(ex) 
+            {
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+}
+
+
     private static readonly NETWORK_SEP: string = ":/";
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
     private readonly abPathData: AbPathData = AbPathData.getInstance()!;
 
-    schema: string = StringUtil.getInstance()!.EMPTY_STRING;
-
-    private path: string = StringUtil.getInstance()!.EMPTY_STRING;
-
-    nameP: string = StringUtil.getInstance()!.EMPTY_STRING;
-
-    private hasSchema: boolean = false;
-
-    private numberOfSeps: number = 0;
-
     private readonly abPathUtil: PathUtil = PathUtil.getInstance()!;
-
-public constructor (){
-
-            super();
-        this.init();
-    
-}
-
 
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-public constructor (aPath: string){
+    schema: string = this.EMPTY_STRING;
 
-            super();
-        
-    var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;;
-    
+    private path: string = this.EMPTY_STRING;
 
-                        if(!stringValidationUtil!.isEmpty(aPath))
-                        
-                                    {
-                                    this.schema= this.getSchema(aPath);
-    
-this.nameP= this.EMPTY_STRING;
-    
-this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath)));
-    
+    nameP: string = this.EMPTY_STRING;
 
-                                    }
-                                
-                        else {
-                            this.init();
-    
+    private hasSchemaP: boolean = false;
 
-                        }
-                            
-}
-
+    private numberOfSeps: number = 0;
 
 public constructor (aPath: string, name: string){
 
@@ -132,7 +124,7 @@ public constructor (aPath: string, name: string){
     
 this.nameP= name;
     
-this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath)));
+this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPathFromPath(aPath)));
     
 
                                     }
@@ -173,7 +165,7 @@ this.nameP= this.EMPTY_STRING;
                         if(beginIndex >= 0)
                         
                                     {
-                                    this.hasSchema= true;
+                                    this.hasSchemaP= true;
     
 
 
@@ -184,7 +176,7 @@ this.nameP= this.EMPTY_STRING;
 
                                     }
                                 
-this.hasSchema= false;
+this.hasSchemaP= false;
     
 
 
@@ -200,14 +192,14 @@ this.hasSchema= false;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hasSchema;
+                        return this.hasSchemaP;
     
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public getPath(aPath: string): string{
+    public getPathFromPath(aPath: string): string{
 
     var filePathData: FilePathData = FilePathData.getInstance()!;;
     

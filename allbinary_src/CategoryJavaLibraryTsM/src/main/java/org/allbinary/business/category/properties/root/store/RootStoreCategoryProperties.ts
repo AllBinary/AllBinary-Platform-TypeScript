@@ -56,6 +56,8 @@ import { PathUtil } from '../../../../../../../org/allbinary/logic/io/path/PathU
       
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
       
 import { TransformInfoHttpInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
@@ -109,7 +111,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             super();
         this.transformInfoInterface= transformInfoInterface;
     
-this.abPath= new AbPath();
+this.abPath= AbPath.createAbPath();
     
 this.category= CategoryData.getInstance()!.ROOTCATEGORY;
     
@@ -157,7 +159,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
 
     var categoryPath: string = CategoryUtil.getNameFromNode(node)!;;
     
-this.abPath= new AbPath(categoryPath);
+this.abPath= new AbPath(categoryPath, StringUtil.getInstance()!.EMPTY_STRING);
     
 this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
     
@@ -187,7 +189,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
 
     var categoryPath: string = .toCharArray();;
     
-this.abPath= new AbPath(categoryPath);
+this.abPath= new AbPath(categoryPath, StringUtil.getInstance()!.EMPTY_STRING);
     
 this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
     
@@ -224,9 +226,9 @@ this.log();
 
     var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
     
-this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath);
+this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath, StringUtil.getInstance()!.EMPTY_STRING);
     
-this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +postPath));
+this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +postPath, StringUtil.getInstance()!.EMPTY_STRING));
     
 }
 

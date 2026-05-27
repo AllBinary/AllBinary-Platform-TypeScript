@@ -34,6 +34,8 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
       
 import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
       
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
       
 
@@ -457,7 +459,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath();
+                        return AbPath.createAbPath();;
     
 
                                     }
@@ -483,7 +485,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath(categoryName);
+                        return new AbPath(categoryName, StringUtil.getInstance()!.EMPTY_STRING);
     
 
                         }

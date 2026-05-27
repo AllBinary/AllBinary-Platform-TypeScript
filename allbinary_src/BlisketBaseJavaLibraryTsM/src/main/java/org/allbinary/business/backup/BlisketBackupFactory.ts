@@ -50,6 +50,8 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
       
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
@@ -94,6 +96,8 @@ export class BlisketBackupFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
+
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly directory: Directory = Directory.getInstance()!;
@@ -102,7 +106,7 @@ export class BlisketBackupFactory
             
     getFileBasicArrayList(pathString: string): BasicArrayList{
 
-    var path: AbPath = new AbPath(pathString);;
+    var path: AbPath = new AbPath(pathString, this.stringUtil!.EMPTY_STRING);;
     
 
     var file: AbFile = AbFile.createAbFileFromAbPath(path)!;;
@@ -132,7 +136,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     var backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath);;
+    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
     var fileBasicArrayList: BasicArrayList = this.getFileBasicArrayList(backupPath)!;;
@@ -166,7 +170,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     var backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath);;
+    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
@@ -246,7 +250,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     var backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath);;
+    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayListD();;
@@ -329,7 +333,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     var backupPath: string = stringBuffer!.toString()!;;
     
 
-    var path: AbPath = new AbPath(backupPath);;
+    var path: AbPath = new AbPath(backupPath, this.stringUtil!.EMPTY_STRING);;
     
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayListD();;

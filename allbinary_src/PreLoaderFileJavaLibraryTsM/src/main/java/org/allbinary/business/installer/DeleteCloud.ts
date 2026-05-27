@@ -40,6 +40,8 @@ import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
       
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       
 
@@ -89,7 +91,7 @@ stringBuffer!.append(URLGLOBALS.getWebappPath());
 stringBuffer!.append(prePath);
     
 
-    var path: AbPath = new AbPath(stringBuffer!.toString());;
+    var path: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var file: AbFile = AbFile.createAbFileFromAbPath(path)!;;

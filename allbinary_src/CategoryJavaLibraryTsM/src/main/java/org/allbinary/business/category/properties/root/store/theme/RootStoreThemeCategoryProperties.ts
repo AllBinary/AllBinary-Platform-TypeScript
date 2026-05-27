@@ -44,6 +44,8 @@ import { AbPathData } from '../../../../../../../../org/allbinary/logic/io/path/
       
 import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      
 import { TransformInfoHttpStoreInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreInterface.js';
       
 import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
@@ -131,14 +133,14 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH);
     
 
-    var abPath: AbPath = new AbPath(stringBuffer!.toString());;
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), StringUtil.getInstance()!.EMPTY_STRING);;
     
 
     var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;;
     
-this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +abPath!.toString());
+this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +abPath!.toString(), StringUtil.getInstance()!.EMPTY_STRING);
     
-this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +abPath!.toString()));
+this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +abPath!.toString(), StringUtil.getInstance()!.EMPTY_STRING));
     
 }
 

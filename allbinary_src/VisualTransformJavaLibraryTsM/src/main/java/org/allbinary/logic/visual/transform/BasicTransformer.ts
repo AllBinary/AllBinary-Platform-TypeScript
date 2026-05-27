@@ -294,10 +294,10 @@ this.streamUtil!.close(inputStream);
                         
                                     {
                                     
-    var extension: string = pathUtil!.getExtension(this.getTransformInfoInterface()!.getTemplateFilePath())!;;
+    var extension: string = pathUtil!.getExtensionWithAbPath(this.getTransformInfoInterface()!.getTemplateFilePath())!;;
     
 
-    var filePath: string = pathUtil!.getWithoutExtension(this.getTransformInfoInterface()!.getTemplateFilePath())!;;
+    var filePath: string = pathUtil!.getWithoutExtensionWithAbPath(this.getTransformInfoInterface()!.getTemplateFilePath())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))

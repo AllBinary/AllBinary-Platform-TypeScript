@@ -121,7 +121,7 @@ private constructor (){
 }
 
 
-    public getExtension(abFilePath: AbFilePath): string{
+    public getExtensionWithAbFilePath(abFilePath: AbFilePath): string{
 
 
 
@@ -131,7 +131,7 @@ private constructor (){
 }
 
 
-    public getExtension(abPath: AbPath): string{
+    public getExtensionWithAbPath(abPath: AbPath): string{
 
 
 
@@ -168,7 +168,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getWithoutExtension(abFilePath: AbFilePath): string{
+    public getWithoutExtensionWithAbFilePath(abFilePath: AbFilePath): string{
 
 
 
@@ -180,7 +180,7 @@ private constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getWithoutExtension(abPath: AbPath): string{
+    public getWithoutExtensionWithAbPath(abPath: AbPath): string{
 
 
 
@@ -468,7 +468,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath();
+                        return AbPath.createAbPath();;
     
 
                                     }
@@ -494,7 +494,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath(categoryName);
+                        return new AbPath(categoryName, StringUtil.getInstance()!.EMPTY_STRING);
     
 
                         }
