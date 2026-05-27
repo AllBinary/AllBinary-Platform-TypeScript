@@ -126,7 +126,7 @@ this.filePath= filePath;
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, this.INITFILENAME)!;;
     
 
-    var licenseIdCrypted: number[] = tsUtil!.getBytes(new WeakCrypt(1).encrypt(initData!.getLicenseId()))!;;
+    var licenseIdCrypted: number[] = tsUtil!.getByteArray(new WeakCrypt(1).encrypt(initData!.getLicenseId()))!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted));
     
@@ -145,7 +145,7 @@ dataOutputStream!.writeInt(numberOfLicenseServers);
                         for (
     var index: number = 0;index < numberOfLicenseServers; index++)
         {
-licenseServerCrypted= tsUtil!.getBytes(new WeakCrypt(3).encrypt(initData!.getServer(index)));
+licenseServerCrypted= tsUtil!.getByteArray(new WeakCrypt(3).encrypt(initData!.getServer(index)));
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted));
     

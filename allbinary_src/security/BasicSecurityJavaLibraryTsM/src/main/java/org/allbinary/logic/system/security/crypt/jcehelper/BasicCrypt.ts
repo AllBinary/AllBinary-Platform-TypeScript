@@ -72,7 +72,7 @@ public constructor (keyAsString: string){
     
 
         try {
-            key= TsUtil.getInstance()!.getBytes(keyAsString);
+            key= TsUtil.getInstance()!.getByteArray(keyAsString);
     
 
                 //: 

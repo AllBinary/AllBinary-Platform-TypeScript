@@ -195,7 +195,7 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
-    public getBytes(string: string): number[]{
+    public getByteArray(string: string): number[]{
 
 
 

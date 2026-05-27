@@ -106,7 +106,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 }
 
 
-    var key: number[] = this.tsUtil!.getBytes(keyAsString)!;;
+    var key: number[] = this.tsUtil!.getByteArray(keyAsString)!;;
     
 
     var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, key)!;;

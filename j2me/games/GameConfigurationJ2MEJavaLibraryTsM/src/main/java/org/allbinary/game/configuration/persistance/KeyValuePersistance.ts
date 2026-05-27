@@ -274,7 +274,7 @@ outputStream!.writeUTF(value);
     var tsUtil: TsUtil = TsUtil.getInstance()!;;
     
 
-    var savedGameBytes: number[] = tsUtil!.getBytes(byteArrayOutputStream!.toString())!;;
+    var savedGameBytes: number[] = tsUtil!.getByteArray(byteArrayOutputStream!.toString())!;;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
     

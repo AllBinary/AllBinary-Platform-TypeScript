@@ -98,7 +98,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
 
         try {
             
-    var crypted: number[] = this.abCrypt!.encrypt(this.tsUtil!.getBytes(value))!;;
+    var crypted: number[] = this.abCrypt!.encrypt(this.tsUtil!.getByteArray(value))!;;
     
 
 
