@@ -86,7 +86,7 @@ export class AndroidServicesUtil
 
     public isServiceRunning(name: string): boolean{
 
-    var activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager;;
+    var activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as unknown as ActivityManager;;
     
 
     var runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(this.SERVICE_LIMIT_MAX)!;;

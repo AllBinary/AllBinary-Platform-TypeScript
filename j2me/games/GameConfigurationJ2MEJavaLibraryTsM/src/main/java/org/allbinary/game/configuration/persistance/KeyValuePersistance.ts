@@ -271,7 +271,10 @@ outputStream!.writeUTF(value);
 }
 
 
-    var savedGameBytes: number[] = byteArrayOutputStream!.toString()!.encodeToByteArray()!;;
+    var tsUtil: TsUtil = TsUtil.getInstance()!;;
+    
+
+    var savedGameBytes: number[] = tsUtil!.getBytes(byteArrayOutputStream!.toString())!;;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
     

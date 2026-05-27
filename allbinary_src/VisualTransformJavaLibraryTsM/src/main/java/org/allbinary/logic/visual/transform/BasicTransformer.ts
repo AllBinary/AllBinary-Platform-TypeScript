@@ -203,7 +203,7 @@ this.streamUtil!.close(inputStream);
         try {
             outputStream= new ByteArrayOutputStream();
     
-inputStream= new ByteArrayInputStream(this.getTransformInfoInterface()!.getTemplate()!.encodeToByteArray());
+inputStream= new ByteArrayInputStream(this.getTransformInfoInterface()!.getTemplate()!.getBytes());
     
 outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)) as ByteArrayOutputStream;
     

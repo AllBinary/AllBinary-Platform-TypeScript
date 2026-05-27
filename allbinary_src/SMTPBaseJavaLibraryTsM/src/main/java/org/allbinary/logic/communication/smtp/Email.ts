@@ -171,7 +171,7 @@ internetHeaders!.addHeader("Content-Type", "text/html");
 
                                     }
                                 
-mimeBodyParts[1]= new MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByteArray());
+mimeBodyParts[1]= new MimeBodyPart(internetHeaders, htmlAttachment!.getBytes());
     
 
                                     }

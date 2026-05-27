@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
+      
 import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -67,6 +69,8 @@ export class WeakCrypt
     public static KEYMAX: number = WeakCrypt.keys.length
                 ;
 
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
     private abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DES);
 
 public constructor (key: number){
@@ -94,7 +98,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
 
         try {
             
-    var crypted: number[] = this.abCrypt!.encrypt(value.encodeToByteArray())!;;
+    var crypted: number[] = this.abCrypt!.encrypt(this.tsUtil!.getBytes(value))!;;
     
 
 

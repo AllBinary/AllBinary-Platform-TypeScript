@@ -124,7 +124,7 @@ export class DomDocumentFileHelper
                                 
 file.createNewFile();
     
-dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstance(file);
+dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(file);
     
 
     var streamResult: StreamResult = new StreamResult(dataOutputStream);;

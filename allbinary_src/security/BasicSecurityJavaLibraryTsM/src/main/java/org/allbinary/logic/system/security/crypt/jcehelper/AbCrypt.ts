@@ -34,13 +34,13 @@ import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
       
 import { SecretKeyFactory } from '../../../../../../../javax/crypto/SecretKeyFactory.js';
       
+import { TsUtil } from '../../../../../../../org/allbinary/TsUtil.js';
+      
 import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
       
 import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
       
 import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      
-import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
       
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       
@@ -73,6 +73,8 @@ export class AbCrypt
          implements CryptInterface {
         
 
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
     private secretComposite: BaseSecretComposite = BaseSecretComposite.NULL_SECRET_COMPOSITE;
 
     private algorithm: string;
@@ -104,7 +106,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 }
 
 
-    var key: number[] = keyAsString!.encodeToByteArray()!;;
+    var key: number[] = this.tsUtil!.getBytes(keyAsString)!;;
     
 
     var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, key)!;;

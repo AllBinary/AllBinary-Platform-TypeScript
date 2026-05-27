@@ -26,6 +26,8 @@
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -66,7 +68,7 @@ public constructor (sep: string){
         
                         if(sep == 
                                     null
-                                 || sep.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
+                                 || TsUtil.getInstance()!.compareTo(sep, StringUtil.getInstance()!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -152,7 +154,7 @@ index= end +this.endSep!.length;
 }
 
 
-    public getTokens(string: string, tokenVector: BasicArrayList): BasicArrayList{
+    public getTokensFromString(string: string, tokenVector: BasicArrayList): BasicArrayList{
 
     var index: number = 0;;
     

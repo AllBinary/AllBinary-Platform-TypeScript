@@ -164,30 +164,30 @@ this.directory.create(PATH);
 newFile!.createNewFile();
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
     
 
         try {
             
-    var cryptedJdbcDriver: number[] = new WeakCrypt(1).encrypt(this.getJdbcDriver())!.encodeToByteArray()!;;
+    var cryptedJdbcDriver: number[] = new WeakCrypt(1).encrypt(this.getJdbcDriver())!.getBytes()!;;
     
 
-    var cryptedName: number[] = new WeakCrypt(2).encrypt(this.getName())!.encodeToByteArray()!;;
+    var cryptedName: number[] = new WeakCrypt(2).encrypt(this.getName())!.getBytes()!;;
     
 
-    var cryptedUserName: number[] = new WeakCrypt(3).encrypt(this.getUserName())!.encodeToByteArray()!;;
+    var cryptedUserName: number[] = new WeakCrypt(3).encrypt(this.getUserName())!.getBytes()!;;
     
 
-    var cryptedPassword: number[] = new WeakCrypt(4).encrypt(this.getPassword())!.encodeToByteArray()!;;
+    var cryptedPassword: number[] = new WeakCrypt(4).encrypt(this.getPassword())!.getBytes()!;;
     
 
-    var cryptedSchema: number[] = new WeakCrypt(5).encrypt(this.getSchema())!.encodeToByteArray()!;;
+    var cryptedSchema: number[] = new WeakCrypt(5).encrypt(this.getSchema())!.getBytes()!;;
     
 
-    var cryptedServer: number[] = new WeakCrypt(6).encrypt(this.getServer())!.encodeToByteArray()!;;
+    var cryptedServer: number[] = new WeakCrypt(6).encrypt(this.getServer())!.getBytes()!;;
     
 
-    var cryptedPort: number[] = new WeakCrypt(7).encrypt(this.getPort())!.encodeToByteArray()!;;
+    var cryptedPort: number[] = new WeakCrypt(7).encrypt(this.getPort())!.getBytes()!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedJdbcDriver));
     

@@ -83,7 +83,7 @@ public constructor (algorithm: string, key: string){
         try {
             this.algorithm= algorithm;
     
-this.key= key.encodeToByteArray();
+this.key= key.getBytes();
     
 this.init();
     

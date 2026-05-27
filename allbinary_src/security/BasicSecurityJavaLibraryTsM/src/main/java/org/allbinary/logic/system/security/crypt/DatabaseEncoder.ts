@@ -129,7 +129,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);
     var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SPACE);;
     
 
-    var vector: BasicArrayList = tokenizer.getTokens(value, new BasicArrayListD())!;;
+    var vector: BasicArrayList = tokenizer.getTokensFromString(value, new BasicArrayListD())!;;
     
 
     var byteVector: BasicArrayList = new BasicArrayListD();;

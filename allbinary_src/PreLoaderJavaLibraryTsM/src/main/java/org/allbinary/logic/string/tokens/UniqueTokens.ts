@@ -149,7 +149,7 @@ this.specialCharacters!.add("`");
     var tokenizer: Tokenizer = new Tokenizer(commonSeps!.COMMA);;
     
 
-    var keywordVector: BasicArrayList = tokenizer.getTokens(keywords, new BasicArrayListD())!;;
+    var keywordVector: BasicArrayList = tokenizer.getTokensFromString(keywords, new BasicArrayListD())!;;
     
 
 
@@ -176,7 +176,7 @@ hashSet!.add(cleanString);
     var spaceTokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);;
     
 
-    var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokens(cleanString, new BasicArrayListD())!;;
+    var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokensFromString(cleanString, new BasicArrayListD())!;;
     
 
 

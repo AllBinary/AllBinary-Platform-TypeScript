@@ -114,13 +114,13 @@ public constructor (){
 newFile!.createNewFile();
     
 
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstanceForAbFile(newFile)!;;
     
 
-    var cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.encodeToByteArray()!;;
+    var cryptedUserName: number[] = new WeakCrypt(1).encrypt(this.getUserName())!.getBytes()!;;
     
 
-    var cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.encodeToByteArray()!;;
+    var cryptedPassword: number[] = new WeakCrypt(2).encrypt(this.getPassword())!.getBytes()!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
     

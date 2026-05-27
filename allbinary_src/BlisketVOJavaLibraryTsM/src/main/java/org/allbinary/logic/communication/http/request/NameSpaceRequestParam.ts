@@ -106,7 +106,7 @@ this.value= value;
     var sepTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.SEP);;
     
 
-    var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokens(packages, new BasicArrayListD())!;;
+    var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokensFromString(packages, new BasicArrayListD())!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -141,7 +141,7 @@ this.value= value;
 list.clear();
     
 
-    var nameSpaceAndPropertiesVector: BasicArrayList = nameSpaceAndPropertiesTokenizer!.getTokens(nameSpaceWithProperties, list)!;;
+    var nameSpaceAndPropertiesVector: BasicArrayList = nameSpaceAndPropertiesTokenizer!.getTokensFromString(nameSpaceWithProperties, list)!;;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
@@ -290,7 +290,7 @@ packageIndex++;
     var packagePropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
-    var propertyVector: BasicArrayList = propertiesTokenizer!.getTokens(properties, new BasicArrayListD())!;;
+    var propertyVector: BasicArrayList = propertiesTokenizer!.getTokensFromString(properties, new BasicArrayListD())!;;
     
 
     var list: BasicArrayList = new BasicArrayListD();;
@@ -313,7 +313,7 @@ packageIndex++;
 list.clear();
     
 
-    var propertyNameValueVector: BasicArrayList = propertyTokenizer!.getTokens(property, list)!;;
+    var propertyNameValueVector: BasicArrayList = propertyTokenizer!.getTokensFromString(property, list)!;;
     
 
     var index2: number = 0;;

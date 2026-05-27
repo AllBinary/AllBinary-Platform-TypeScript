@@ -247,7 +247,7 @@ rootView= replace.all(rootView);
             
     public createInputStream(): InputStream{
 
-    var completeTemplateViewBytes: number[] = this.get()!.encodeToByteArray()!;;
+    var completeTemplateViewBytes: number[] = this.get()!.getBytes()!;;
     
 
     var bais: ByteArrayInputStream = new ByteArrayInputStream(completeTemplateViewBytes);;

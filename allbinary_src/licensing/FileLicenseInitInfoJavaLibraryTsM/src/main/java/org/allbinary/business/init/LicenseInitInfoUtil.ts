@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      
 import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
       
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
@@ -118,10 +120,13 @@ this.filePath= filePath;
 
         try {
             
+    var tsUtil: TsUtil = TsUtil.getInstance()!;;
+    
+
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, this.INITFILENAME)!;;
     
 
-    var licenseIdCrypted: number[] = new WeakCrypt(1).encrypt(initData!.getLicenseId())!.encodeToByteArray()!;;
+    var licenseIdCrypted: number[] = tsUtil!.getBytes(new WeakCrypt(1).encrypt(initData!.getLicenseId()))!;;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted));
     
@@ -140,7 +145,7 @@ dataOutputStream!.writeInt(numberOfLicenseServers);
                         for (
     var index: number = 0;index < numberOfLicenseServers; index++)
         {
-licenseServerCrypted= new WeakCrypt(3).encrypt(initData!.getServer(index))!.encodeToByteArray();
+licenseServerCrypted= tsUtil!.getBytes(new WeakCrypt(3).encrypt(initData!.getServer(index)));
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted));
     

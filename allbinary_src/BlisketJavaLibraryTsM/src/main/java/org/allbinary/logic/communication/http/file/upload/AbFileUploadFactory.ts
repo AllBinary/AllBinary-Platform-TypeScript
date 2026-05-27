@@ -112,7 +112,7 @@ private constructor (){
 HttpFileUploadUtil.log(fileItemStream);
     
 
-    var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.encodeToByteArray());;
+    var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.getBytes(fileItemStream));;
     
 items.add(fileItem);
     

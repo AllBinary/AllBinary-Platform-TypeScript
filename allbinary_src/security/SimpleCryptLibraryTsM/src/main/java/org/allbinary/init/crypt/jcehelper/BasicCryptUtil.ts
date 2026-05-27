@@ -30,6 +30,8 @@ import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStr
       
 import { InputStream } from '../../../../../java/io/InputStream.js';
       
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 
@@ -70,6 +72,8 @@ export class BasicCryptUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly XML_START: string = "<?xml";
 
@@ -123,7 +127,7 @@ buffer.write(ch);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ByteArrayInputStream(decryptedString!.encodeToByteArray());
+                        return new ByteArrayInputStream(this.tsUtil!.getBytes(decryptedString));
     
 }
 

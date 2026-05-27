@@ -157,7 +157,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
     
 response.setContentType("text/plain");
     
-response.getOutputStream()!.write("OK!".encodeToByteArray());
+response.getOutputStream()!.write("OK!".getBytes());
     
 
                                     }

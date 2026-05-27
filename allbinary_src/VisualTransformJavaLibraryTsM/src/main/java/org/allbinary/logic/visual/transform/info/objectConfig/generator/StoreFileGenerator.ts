@@ -242,7 +242,7 @@ this.file= AbFile.createAbFileFromAbPath(this.fileAbPath);
                         
                                     {
                                     
-    var inputStream: InputStream = new ByteArrayInputStream(input.encodeToByteArray());;
+    var inputStream: InputStream = new ByteArrayInputStream(input.getBytes());;
     
 FileUtil.getInstance()!.write(inputStream, this.file);
     

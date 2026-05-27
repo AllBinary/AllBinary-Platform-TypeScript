@@ -1317,7 +1317,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
     var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);;
     
 
-    var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayListD())!;;
+    var subStoreVector: BasicArrayList = tokenizer.getTokensFromString(this.subStores, new BasicArrayListD())!;;
     
 
 

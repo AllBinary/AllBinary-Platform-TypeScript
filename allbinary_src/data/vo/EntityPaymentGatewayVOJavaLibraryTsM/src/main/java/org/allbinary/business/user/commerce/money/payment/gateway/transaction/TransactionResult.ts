@@ -89,7 +89,7 @@ public constructor (result: string){
     var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.AMPERSAND);;
     
 
-    var tokens: BasicArrayList = tokenizer.getTokens(result, new BasicArrayListD())!;;
+    var tokens: BasicArrayList = tokenizer.getTokensFromString(result, new BasicArrayListD())!;;
     
 
     var tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);;

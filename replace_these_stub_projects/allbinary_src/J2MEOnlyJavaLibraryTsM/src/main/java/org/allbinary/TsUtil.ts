@@ -195,6 +195,16 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
+    public getBytes(string: string): number[]{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return string.getBytes();;
+    
+}
+
+
     public isItemListener(owner: Displayable): boolean{
 
                         if(owner instanceof Form)

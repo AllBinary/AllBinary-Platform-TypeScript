@@ -64,11 +64,11 @@ export class FrameLog
          {
         
 
-    private static frameBytes: number[] = .toCharArray().encodeToByteArray()!;
+    private static frameBytes: number[] = .toCharArray().getBytes()!;
 
-    private static info: number[] = .toCharArray().encodeToByteArray()!;
+    private static info: number[] = .toCharArray().getBytes()!;
 
-    private static actions: number[] = .toCharArray().encodeToByteArray()!;
+    private static actions: number[] = .toCharArray().getBytes()!;
 
     private readonly frame: Long;
 
@@ -136,19 +136,19 @@ filePathStringBuffer!.append(".txt");
     
 fileOutputStream!.write(FrameLog.frameBytes);
     
-fileOutputStream!.write(getFrame()!.toString()!.encodeToByteArray());
+fileOutputStream!.write(getFrame()!.toString()!.getBytes());
     
 fileOutputStream!.write('\n');
     
 fileOutputStream!.write(FrameLog.info);
     
-fileOutputStream!.write(this.infoStringBuffer!.toString()!.encodeToByteArray());
+fileOutputStream!.write(this.infoStringBuffer!.toString()!.getBytes());
     
 fileOutputStream!.write('\n');
     
 fileOutputStream!.write(FrameLog.actions);
     
-fileOutputStream!.write(this.actionsStringBuffer!.toString()!.encodeToByteArray());
+fileOutputStream!.write(this.actionsStringBuffer!.toString()!.getBytes());
     
 fileOutputStream!.close();
     

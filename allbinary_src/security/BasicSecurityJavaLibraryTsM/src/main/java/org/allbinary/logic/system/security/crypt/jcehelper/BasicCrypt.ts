@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
+import { TsUtil } from '../../../../../../../org/allbinary/TsUtil.js';
+      
 import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
       
 import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
@@ -70,7 +72,7 @@ public constructor (keyAsString: string){
     
 
         try {
-            key= keyAsString!.encodeToByteArray();
+            key= TsUtil.getInstance()!.getBytes(keyAsString);
     
 
                 //: 

@@ -707,7 +707,7 @@ stringBuffer!.append(" GL_EXTENSIONS: ");
     var tokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);;
     
 
-    var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, new BasicArrayListD())!;;
+    var list: BasicArrayList = tokenizer.getTokensFromString(this.glExtensions, new BasicArrayListD())!;;
     
 
     var size: number = list.size()!;;

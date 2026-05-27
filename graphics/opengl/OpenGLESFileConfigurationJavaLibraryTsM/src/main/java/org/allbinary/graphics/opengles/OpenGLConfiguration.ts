@@ -32,6 +32,8 @@ import { InputStream } from '../../../../java/io/InputStream.js';
       
 import { OutputStream } from '../../../../java/io/OutputStream.js';
       
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      
 import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
       
 import { FileStreamFactory } from '../../../../org/allbinary/logic/io/FileStreamFactory.js';
@@ -103,6 +105,8 @@ export class OpenGLConfiguration
     private readonly FILE: string = "OpenGLConfiguration.dat";
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private opengl: boolean = false;
 
@@ -194,7 +198,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
     var version: string = dataInputStream!.readUTF()!;;
     
 
-                        if(version.compareTo(openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
+                        if(this.tsUtil!.compareTo(version, openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
                         
                                     {
                                     this.setVersionSelector(openGLFeatureFactory!.OPENGL_AUTO_SELECT);
@@ -203,7 +207,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                                     }
                                 
                              else 
-                        if(version.compareTo(openGLFeatureFactory!.OPENGL_MINIMUM.getName()) == 0)
+                        if(this.tsUtil!.compareTo(version, openGLFeatureFactory!.OPENGL_MINIMUM.getName()) == 0)
                         
                                     {
                                     this.setVersionSelector(openGLFeatureFactory!.OPENGL_MINIMUM);
@@ -224,7 +228,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
     var type: string = dataInputStream!.readUTF()!;;
     
 
-                        if(type.compareTo(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
+                        if(this.tsUtil!.compareTo(type, openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
                         
                                     {
                                     this.setType(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD);
@@ -233,7 +237,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                                     }
                                 
                              else 
-                        if(type.compareTo(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName()) == 0)
+                        if(this.tsUtil!.compareTo(type, openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName()) == 0)
                         
                                     {
                                     this.setType(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS);
@@ -254,7 +258,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
     var imageColor: string = dataInputStream!.readUTF()!;;
     
 
-                        if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
+                        if(this.tsUtil!.compareTo(imageColor, openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
@@ -263,7 +267,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                                     }
                                 
                              else 
-                        if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
+                        if(this.tsUtil!.compareTo(imageColor, openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
@@ -272,7 +276,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                                     }
                                 
                              else 
-                        if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
+                        if(this.tsUtil!.compareTo(imageColor, openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
@@ -293,7 +297,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
     var color: string = dataInputStream!.readUTF()!;;
     
 
-                        if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
+                        if(this.tsUtil!.compareTo(color, openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444);
@@ -302,7 +306,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                                     }
                                 
                              else 
-                        if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565.getName()) == 0)
+                        if(this.tsUtil!.compareTo(color, openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565.getName()) == 0)
                         
                                     {
                                     this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565);
@@ -311,7 +315,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                                     }
                                 
                              else 
-                        if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888.getName()) == 0)
+                        if(this.tsUtil!.compareTo(color, openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888.getName()) == 0)
                         
                                     {
                                     this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888);

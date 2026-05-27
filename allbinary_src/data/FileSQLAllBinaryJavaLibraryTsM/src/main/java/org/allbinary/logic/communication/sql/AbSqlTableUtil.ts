@@ -456,7 +456,7 @@ stringBuffer!.append(this.END);
 
                                     }
                                 
-outputStream!.write(sqlStatementLine!.encodeToByteArray());
+outputStream!.write(sqlStatementLine!.getBytes());
     
 }
 

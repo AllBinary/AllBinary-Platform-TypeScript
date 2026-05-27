@@ -912,7 +912,7 @@ hashMap!.put(transformInfoData!.OBJECT, this.anyType);
     
 hashMap!.put(transformInfoData!.OBJECTCONFIGFILENAME, this.getObjectConfigFile());
     
-hashMap!.put(transformInfoData!.OBJECTCONFIG, Encoder.encode(this.getObjectConfigInterface()!.toString()!.encodeToByteArray()));
+hashMap!.put(transformInfoData!.OBJECTCONFIG, Encoder.encode(this.getObjectConfigInterface()!.toString()!.getBytes()));
     
 hashMap!.put(transformInfoData!.TEMPLATEFILENAME, this.templateFileName);
     
@@ -920,7 +920,7 @@ hashMap!.put(transformInfoData!.TEMPLATE, this.template);
     
 hashMap!.put(transformInfoData!.DATAFILENAME, this.dataFileName);
     
-hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.encodeToByteArray()));
+hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.getBytes()));
     
 
     var calendar: Calendar = Calendar.getInstance()!;;
@@ -953,7 +953,7 @@ vector.add(this.anyType);
     
 vector.add(this.getObjectConfigFile());
     
-vector.add(Encoder.encode(this.getObjectConfigInterface()!.toString()!.encodeToByteArray()));
+vector.add(Encoder.encode(this.getObjectConfigInterface()!.toString()!.getBytes()));
     
 vector.add(this.templateFileName);
     
@@ -961,7 +961,7 @@ vector.add(this.template);
     
 vector.add(this.dataFileName);
     
-vector.add(Encoder.encode(this.data.encodeToByteArray()));
+vector.add(Encoder.encode(this.data.getBytes()));
     
 
     var calendar: Calendar = Calendar.getInstance()!;;

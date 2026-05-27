@@ -67,7 +67,7 @@ export class DataOutputStreamFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstance(file: AbFile): AbDataOutputStream{
+    public getInstanceForAbFile(file: AbFile): AbDataOutputStream{
 
     var idFileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);;
     

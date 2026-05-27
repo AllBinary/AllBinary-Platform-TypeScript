@@ -32,6 +32,8 @@ import { DESKeySpec } from '../../../../../../../javax/crypto/spec/DESKeySpec.js
       
 import { DESedeKeySpec } from '../../../../../../../javax/crypto/spec/DESedeKeySpec.js';
       
+import { TsUtil } from '../../../../../../../org/allbinary/TsUtil.js';
+      
 import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
@@ -88,7 +90,10 @@ private constructor (){
 
         try {
             
-                        if(algorithm.compareTo(this.DES) == 0)
+    var tsUtil: TsUtil = TsUtil.getInstance()!;;
+    
+
+                        if(tsUtil!.compareTo(algorithm, this.DES) == 0)
                         
                                     {
                                     
@@ -101,7 +106,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(algorithm.compareTo(this.DESEDE) == 0)
+                        if(tsUtil!.compareTo(algorithm, this.DESEDE) == 0)
                         
                                     {
                                     
