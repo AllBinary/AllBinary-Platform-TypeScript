@@ -60,8 +60,7 @@ import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArray
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Byte } from './Byte.js';
-
+        
 export class DatabaseEncoder
             extends Object
          {
@@ -83,7 +82,7 @@ export class DatabaseEncoder
                         for (
     var index: number = 0;index < array.length; index++)
         {
-stringBuffer!.append(array[index]!.toString());
+stringBuffer!.append(Number(array[index]!).toString());
     
 
                         if(index < array.length -1)
@@ -149,7 +148,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);
         {
 byteOfData= vector.objectArray[index]! as string;
     
-byteVector!.add(byteOfData.toByte());
+byteVector!.add(Number(byteOfData));
     
 }
 
@@ -160,7 +159,7 @@ byteVector!.add(byteOfData.toByte());
     var decodeIndex: number = 0;;
     
 
-    var aByte: Byte;;
+    var aByte: number;;
     
 
 
@@ -169,9 +168,9 @@ byteVector!.add(byteOfData.toByte());
                         for (
     var index: number = 0;index < size; index++)
         {
-aByte= byteVector!.objectArray[index]! as Byte;
+aByte= byteVector!.objectArray[index]! as number;
     
-decode[decodeIndex]= aByte!.byteValue();
+decode[decodeIndex]= aByte!;
     
 decodeIndex++;
     
