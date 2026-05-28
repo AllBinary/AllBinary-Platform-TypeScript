@@ -92,7 +92,7 @@ export class AndroidServicesUtil
     var runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(this.SERVICE_LIMIT_MAX)!;;
     
 
-    var runningServiceInfo: ActivityManager.RunningServiceInfo;;
+    var runningServiceInfo: RunningServiceInfo;;
     
 
     var serviceComponent: ComponentName;;
@@ -101,7 +101,7 @@ export class AndroidServicesUtil
     var serviceName: string;;
     
 
-    var size: number = runningServicesList!.size!;;
+    var size: number = runningServicesList!.length!;;
     
 
 

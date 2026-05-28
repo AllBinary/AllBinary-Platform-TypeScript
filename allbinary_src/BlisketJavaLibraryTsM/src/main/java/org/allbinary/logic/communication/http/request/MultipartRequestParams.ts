@@ -116,7 +116,7 @@ this.special= true;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
                                     {
-                                    this.logUtil!.putF("FileItem List Size: " +multipartRequestList!.size, this, "processMultipartRequest()");
+                                    this.logUtil!.putF("FileItem List Size: " +multipartRequestList!.length, this, "processMultipartRequest()");
     
 
                                     }

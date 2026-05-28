@@ -165,7 +165,7 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
         this.setHashMap(new HashMap<any, any>());
     
 
-    var size: number = inputAutomationModuleConfigurationList!.size!;;
+    var size: number = inputAutomationModuleConfigurationList!.length!;;
     
 
     var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration;;
