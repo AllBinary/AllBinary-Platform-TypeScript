@@ -76,7 +76,7 @@ export class MusicManager
     var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
-    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass.constructor.java);;
+    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass.prototype.constructor);;
     
 musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1);
     
@@ -94,7 +94,7 @@ activity.startService(musicPauseIntent);
     var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;;
     
 
-    var musicResumeIntent: Intent = new Intent(activity, musicServiceClass.constructor.java);;
+    var musicResumeIntent: Intent = new Intent(activity, musicServiceClass.prototype.constructor);;
     
 musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2);
     
@@ -149,7 +149,7 @@ public constructor (musicServiceClass: Function, songList: BasicArrayList){
     
 this.musicServiceClass= musicServiceClass;
     
-this.currentIntent= new Intent(this.resourceUtil!.getContext(), musicServiceClass.constructor.java);
+this.currentIntent= new Intent(this.resourceUtil!.getContext(), musicServiceClass.prototype.constructor);
     
 this.songList= songList;
     

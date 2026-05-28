@@ -223,7 +223,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
 
                                     }
                                 
-AbeClassLoader.classes.put(name, myClass.constructor.java);
+AbeClassLoader.classes.put(name, myClass.prototype.constructor);
     
 
                                     }
@@ -234,7 +234,7 @@ AbeClassLoader.classes.put(name, myClass.constructor.java);
 
                         }
                             
-resolveClass(myClass.constructor.java);
+resolveClass(myClass.prototype.constructor);
     
 
 
@@ -470,7 +470,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
 
                                     }
                                 
-AbeClassLoader.classes.put(name, myClass.constructor.java);
+AbeClassLoader.classes.put(name, myClass.prototype.constructor);
     
 
                                     }
@@ -488,7 +488,7 @@ AbeClassLoader.classes.put(name, myClass.constructor.java);
 
                         }
                             
-resolveClass(myClass.constructor.java);
+resolveClass(myClass.prototype.constructor);
     
 
 

@@ -126,15 +126,15 @@ stringBuffer!.append(lineBreak);
     
 }
 
-stringBuffer!.append(InterfaceUtil.viewAll(myClass.constructor.java, lineBreak));
+stringBuffer!.append(InterfaceUtil.viewAll(myClass.prototype.constructor, lineBreak));
     
 stringBuffer!.append(lineBreak);
     
-stringBuffer!.append(ConstructorUtil.viewAll(myClass.constructor.java, lineBreak));
+stringBuffer!.append(ConstructorUtil.viewAll(myClass.prototype.constructor, lineBreak));
     
 stringBuffer!.append(lineBreak);
     
-stringBuffer!.append(MethodUtil.viewAll(myClass.constructor.java, lineBreak));
+stringBuffer!.append(MethodUtil.viewAll(myClass.prototype.constructor, lineBreak));
     
 
 
