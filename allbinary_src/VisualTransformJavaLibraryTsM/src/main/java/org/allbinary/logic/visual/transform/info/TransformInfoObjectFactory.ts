@@ -78,7 +78,6 @@ export class TransformInfoObjectFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
 private constructor (){
 
             super();

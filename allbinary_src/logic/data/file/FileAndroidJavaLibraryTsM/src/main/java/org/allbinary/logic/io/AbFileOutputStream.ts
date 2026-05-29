@@ -58,23 +58,55 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 export class AbFileOutputStream extends OutputStream {
         
 
-public constructor (name: string){
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromAbFile(file: AbFile): AbFileOutputStream{
 
-            super();
-        this.fileOutputStream= new FileOutputStream(name);
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(new FileOutputStream(AbFileNativeUtil.get(file)));
+    
+}
+
+
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromAbFileAppend(file: AbFile, append: boolean): AbFileOutputStream{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(new FileOutputStream(file.getPath()));
+    
+}
+
+
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromFilePath(name: string): AbFileOutputStream{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(new FileOutputStream(name));
+    
+}
+
+
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromFilePathAppend(name: string, append: boolean): AbFileOutputStream{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(new FileOutputStream(name));
     
 }
 
 
     private fileOutputStream: FileOutputStream;
-
-public constructor (file: AbFile){
-
-            super();
-        this.fileOutputStream= new FileOutputStream(AbFileNativeUtil.get(file));
-    
-}
-
 
 public constructor (fileOutputStream: FileOutputStream){
 

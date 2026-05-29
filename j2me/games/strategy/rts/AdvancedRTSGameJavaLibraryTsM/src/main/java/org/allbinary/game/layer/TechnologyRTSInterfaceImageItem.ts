@@ -94,7 +94,7 @@ export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem {
     private readonly DOLLAR: string = "$";
 
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, rtsInterface: RTSInterface){
-            super(label, img, layout, altText, basicColor);
+            super(label, img, layout, altText, basicColor, 0);
                     
 
                             //For kotlin this is before the body of the constructor.

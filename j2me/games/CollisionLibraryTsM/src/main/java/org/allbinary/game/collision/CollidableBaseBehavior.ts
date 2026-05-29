@@ -155,7 +155,7 @@ this.collidable= collidable;
 }
 
 
-    public paint(graphics: Graphics){
+    public paint(ownerLayer: CollidableCompositeLayer, graphics: Graphics){
 }
 
 

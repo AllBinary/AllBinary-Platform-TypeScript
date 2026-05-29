@@ -22,6 +22,8 @@ import { Features } from '../../../org/allbinary/game/configuration/feature/Feat
       
 import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
       
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { AbDataInputStream } from '../../../org/allbinary/logic/io/AbDataInputStream.js';
@@ -66,14 +68,23 @@ export class ApplicationConfiguration
          {
         
 
-    private static readonly instance: ApplicationConfiguration = new ApplicationConfiguration();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): ApplicationConfiguration{
+
+                        if(ApplicationConfiguration.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    ApplicationConfiguration.instance= new ApplicationConfiguration();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ApplicationConfiguration.instance;
+                        return ApplicationConfiguration.instance as ApplicationConfiguration;
     
 }
 

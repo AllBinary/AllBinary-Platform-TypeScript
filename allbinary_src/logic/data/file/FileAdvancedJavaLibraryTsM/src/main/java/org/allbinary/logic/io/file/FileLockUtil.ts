@@ -197,7 +197,7 @@ this.logUtil!.putF("Total Locks Obtained: " +fileLockVector!.length, this, "getA
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getLock(new AbFileOutputStream(file, true));;
+                        return this.getLock(AbFileOutputStream.createFromAbFileAppend(file, true));;
     
 
                 //: 

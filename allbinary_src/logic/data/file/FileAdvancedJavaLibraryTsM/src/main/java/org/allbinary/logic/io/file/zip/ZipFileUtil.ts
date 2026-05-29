@@ -110,7 +110,7 @@ export class ZipFileUtil
 zipFile!.createNewFile();
     
 
-    var outputStream: ZipOutputStream = new ZipOutputStream(new AbFileOutputStream(zipFile));;
+    var outputStream: ZipOutputStream = new ZipOutputStream(AbFileOutputStream.createFromAbFile(zipFile));;
     
 
     var streamUtil: StreamUtil = StreamUtil.getInstance()!;;

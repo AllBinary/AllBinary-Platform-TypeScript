@@ -52,35 +52,56 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 export class AbFileOutputStream extends FileOutputStream {
         
 
-public constructor (name: string){
-            super(name);
-                    
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromAbFile(file: AbFile): AbFileOutputStream{
 
-                            //For kotlin this is before the body of the constructor.
-                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(file.getPath(), false);
+    
+}
+
+
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromAbFileAppend(file: AbFile, append: boolean): AbFileOutputStream{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(file.getPath(), append);
+    
+}
+
+
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromFilePath(name: string): AbFileOutputStream{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(name, false);
+    
+}
+
+
+                //@Throws(FileNotFoundException.constructor)
+            
+    public static createFromFilePathAppend(name: string, append: boolean): AbFileOutputStream{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AbFileOutputStream(name, append);
+    
 }
 
 
 public constructor (name: string, append: boolean){
             super(name, append);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (file: AbFile){
-            super(AbFileNativeUtil.get(file));
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-
-public constructor (file: AbFile, append: boolean){
-            super(AbFileNativeUtil.get(file), append);
                     
 
                             //For kotlin this is before the body of the constructor.

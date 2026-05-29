@@ -69,7 +69,7 @@ export class DataOutputStreamFactory
             
     public getInstanceForAbFile(file: AbFile): AbDataOutputStream{
 
-    var idFileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);;
+    var idFileOutputStream: AbFileOutputStream = AbFileOutputStream.createFromAbFile(file)!;;
     
 
     var idOutData: AbDataOutputStream = new AbDataOutputStream(idFileOutputStream);;

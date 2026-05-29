@@ -93,7 +93,7 @@ export class ImagePersistanceUtil
     var batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();;
     
 
-    var fileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);;
+    var fileOutputStream: AbFileOutputStream = AbFileOutputStream.createFromAbFile(file)!;;
     
 
         try {

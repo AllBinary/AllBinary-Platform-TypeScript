@@ -28,6 +28,8 @@ import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/Nu
       
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
       
+import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       
 
@@ -55,14 +57,23 @@ export class ProgressCanvasFactory
          {
         
 
-    private static PROGRESS_FORM_SCREEN: ProgressCanvas = new ProgressCanvas(StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    private static PROGRESS_FORM_SCREEN: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): ProgressCanvas{
+
+                        if(ProgressCanvasFactory.PROGRESS_FORM_SCREEN == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    ProgressCanvasFactory.PROGRESS_FORM_SCREEN= new ProgressCanvas(StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ProgressCanvasFactory.PROGRESS_FORM_SCREEN;
+                        return ProgressCanvasFactory.PROGRESS_FORM_SCREEN as ProgressCanvas;
     
 }
 

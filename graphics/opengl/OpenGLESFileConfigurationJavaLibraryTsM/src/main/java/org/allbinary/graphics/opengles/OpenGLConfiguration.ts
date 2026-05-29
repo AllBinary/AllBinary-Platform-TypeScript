@@ -60,6 +60,8 @@ import { Features } from '../../../../org/allbinary/game/configuration/feature/F
       
 import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { NullCloseable } from '../../../../org/allbinary/logic/io/NullCloseable.js';
       
 
@@ -88,14 +90,23 @@ export class OpenGLConfiguration
          {
         
 
-    private static readonly instance: OpenGLConfiguration = new OpenGLConfiguration();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): OpenGLConfiguration{
+
+                        if(OpenGLConfiguration.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    OpenGLConfiguration.instance= new OpenGLConfiguration();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLConfiguration.instance;
+                        return OpenGLConfiguration.instance as OpenGLConfiguration;
     
 }
 

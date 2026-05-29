@@ -292,7 +292,7 @@ file.createNewFile();
 
                                     }
                                 
-fileOutputStream= new AbFileOutputStream(file);
+fileOutputStream= AbFileOutputStream.createFromAbFile(file);
     
 fileOutputStream!.write(byteArray);
     

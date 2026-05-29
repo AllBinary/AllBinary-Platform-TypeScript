@@ -24,6 +24,8 @@
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
@@ -52,14 +54,23 @@ export class MyFont
          {
         
 
-    private static readonly instance: MyFont = new MyFont();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): MyFont{
+
+                        if(MyFont.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    MyFont.instance= new MyFont();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return MyFont.instance;
+                        return MyFont.instance as MyFont;
     
 }
 

@@ -149,7 +149,7 @@ idData= new AbDataInputStream(idFile);
 this.id= idData!.readLong();
     
 
-    var idOutFile: AbFileOutputStream = new AbFileOutputStream(this.newFile);;
+    var idOutFile: AbFileOutputStream = AbFileOutputStream.createFromAbFile(this.newFile)!;;
     
 idOutData= new AbDataOutputStream(idOutFile);
     
