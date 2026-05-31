@@ -55,7 +55,7 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
 export class WeaponProperties extends SimpleWeaponProperties {
         
 
-    public static readonly NULL_WEAPON_PROPERTIES: WeaponProperties = new WeaponProperties(0L, 0L, 0L, 0, 0);
+    public static readonly NULL_WEAPON_PROPERTIES: WeaponProperties = new WeaponProperties(0, 0, 0, 0, 0);
 
     private static messageSent: boolean = false;
 
@@ -71,7 +71,7 @@ export class WeaponProperties extends SimpleWeaponProperties {
 
     private speed: BasicDecimal = BasicDecimal.ZERO_BIGDECIMAL;
 
-    private readonly MAX: number = 10240L;
+    private readonly MAX: number = 10240;
 
     private readonly ZERO: number = 0;
 
@@ -79,7 +79,7 @@ public constructor (reloadTime: number, targetingTime: number, speed: number, da
 
             super();
         
-                        if(speed < this.MAX && speed != 0L && !WeaponProperties.messageSent)
+                        if(speed < this.MAX && speed != 0 && !WeaponProperties.messageSent)
                         
                                     {
                                     

@@ -141,7 +141,7 @@ ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
     var impactVelocityY: number = ownerVehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.getUnscaled() -vehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.getUnscaled();;
     
 
-                        if(impactVelocityX != 0L)
+                        if(impactVelocityX != 0)
                         
                                     {
                                     this.halfImpactVelocityX= (impactVelocityX>>1);
@@ -158,7 +158,7 @@ vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.addlong
                         }
                             
 
-                        if(impactVelocityY != 0L)
+                        if(impactVelocityY != 0)
                         
                                     {
                                     this.halfImpactVelocityY= (impactVelocityY>>1);

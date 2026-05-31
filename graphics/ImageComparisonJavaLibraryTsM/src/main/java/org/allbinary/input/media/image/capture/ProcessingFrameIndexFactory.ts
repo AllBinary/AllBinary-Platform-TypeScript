@@ -46,7 +46,7 @@ export class ProcessingFrameIndexFactory
          {
         
 
-    private static currentFrame: number = 0L;
+    private static currentFrame: number = 0;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static next(): number{

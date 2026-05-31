@@ -56,14 +56,23 @@ export class FileStreamFactory
          {
         
 
-    private static readonly SINGLETON: FileStreamFactory = new FileStreamFactory(ResourceUtil.getInstance()!.getContext());
+    private static SINGLETON: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): FileStreamFactory{
+
+                        if(FileStreamFactory.SINGLETON == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    FileStreamFactory.SINGLETON= new FileStreamFactory(ResourceUtil.getInstance()!.getContext());
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FileStreamFactory.SINGLETON;
+                        return FileStreamFactory.SINGLETON as FileStreamFactory;
     
 }
 

@@ -1553,7 +1553,7 @@ TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent());
 this.getUnitWaypointBehavior()!.move();
     
 
-                        if(velocityXScaled != 0L || velocityYScaled != 0L)
+                        if(velocityXScaled != 0 || velocityYScaled != 0)
                         
                                     {
                                     this.getUnitWaypointBehavior()!.setMoving(true);

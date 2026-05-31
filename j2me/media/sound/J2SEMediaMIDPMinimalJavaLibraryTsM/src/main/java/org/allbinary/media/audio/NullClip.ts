@@ -199,7 +199,7 @@ export class NullClip
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return 0L;
+                        return 0;
     
 }
 
@@ -209,7 +209,7 @@ export class NullClip
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return 0L;
+                        return 0;
     
 }
 

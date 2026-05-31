@@ -113,7 +113,7 @@ private constructor (){
 }
 
 
-    private readonly weaponProperties: WeaponProperties = new WeaponProperties( -1L,  -1L, 0, 8000, 10);
+    private readonly weaponProperties: WeaponProperties = new WeaponProperties( -1,  -1, 0, 8000, 10);
 
     private readonly smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
 

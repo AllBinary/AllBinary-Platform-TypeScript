@@ -46,7 +46,7 @@
 export class LicensingException extends Exception {
         
 
-    public static readonly serialVersionUID: number = 1L;
+    public static readonly serialVersionUID: number = 1;
 
 public constructor (){
 

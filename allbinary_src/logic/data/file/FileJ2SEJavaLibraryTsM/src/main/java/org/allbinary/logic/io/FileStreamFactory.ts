@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
       
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
@@ -54,14 +56,23 @@ export class FileStreamFactory
          {
         
 
-    private static readonly SINGLETON: FileStreamFactory = new FileStreamFactory();
+    private static SINGLETON: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): FileStreamFactory{
+
+                        if(FileStreamFactory.SINGLETON == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    FileStreamFactory.SINGLETON= new FileStreamFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FileStreamFactory.SINGLETON;
+                        return FileStreamFactory.SINGLETON as FileStreamFactory;
     
 }
 

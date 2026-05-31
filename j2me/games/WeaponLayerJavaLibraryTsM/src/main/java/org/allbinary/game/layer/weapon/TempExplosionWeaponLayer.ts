@@ -51,7 +51,7 @@ import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js'
 export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
         
 
-    public readonly weaponProperties: WeaponProperties = new WeaponProperties( -1L,  -1L, 0, 1000, 0);
+    public readonly weaponProperties: WeaponProperties = new WeaponProperties( -1,  -1, 0, 1000, 0);
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
