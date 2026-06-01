@@ -22,8 +22,6 @@
 
 
         
-            import { ClassLoader } from '../../java/lang/ClassLoader.js';
-        
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
@@ -161,16 +159,6 @@ recordStore!.getRecord(recordId, data, 0);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType! === object2;;
-    
-}
-
-
-    public getClassClassLoader(anyType: any = {}): ClassLoader{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType!.constructor.namegetClassLoader();;
     
 }
 

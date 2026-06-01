@@ -18,11 +18,15 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { Enumeration } from '../../../java/util/Enumeration.js';
+import { HashMap } from '../../java/util/HashMap.js';
+      
+import { Map } from '../../java/util/Map.js';
+      
+import { Set } from '../../java/util/Set.js';
       
 
 
@@ -42,62 +46,59 @@ import { Enumeration } from '../../../java/util/Enumeration.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicArrayListD } from './BasicArrayListD.js';
-import { BasicArrayList } from './BasicArrayList.js';
-//ArkTs does not have this.  So this is for the ArkTs build.
-export class EnumerationUtil
+        //ArkTs does not have this.  So this is for the ArkTs build.
+export class J2SEUtil
             extends Object
          {
         
 
-    private static readonly instance: EnumerationUtil = new EnumerationUtil();
+    private static readonly instance: J2SEUtil = new J2SEUtil();
 
-    public static getInstance(): EnumerationUtil{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return EnumerationUtil.instance;
-    
-}
-
-
-    public hasMoreElements(enumeration: Enumeration<any>): boolean{
+    public static getInstance(): J2SEUtil{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return enumeration.hasMoreElements();;
+                        return J2SEUtil.instance;
     
 }
 
 
-    public nextElement(enumeration: Enumeration<any>): any{
+    public getHashMapAsArray(hashMap: HashMap<any, any>): any[]{
+
+    var objectArray: any[] = hashMap!.keys().()!;;
+    
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return enumeration.nextElement()!;;
+                        return objectArray;
     
 }
 
 
-    public getAsArray(enumeration: Enumeration<any>): any[]{
+    public getMapAsArray(map: Map<any, any>): any[]{
 
-    var basicArrayList: BasicArrayList = new BasicArrayListD();;
+    var objectArray: any[] = map.keySet()!.()!;;
     
-
-        while(this.hasMoreElements(enumeration))
-        {
-basicArrayList!.add(this.nextElement(enumeration)!);
-    
-}
-
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayList!.toArray();;
+                        return objectArray;
+    
+}
+
+
+    public getSetAsArray(set: Set<string>): any[]{
+
+    var objectArray: any[] = set.toArray()!;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return objectArray;
     
 }
 
