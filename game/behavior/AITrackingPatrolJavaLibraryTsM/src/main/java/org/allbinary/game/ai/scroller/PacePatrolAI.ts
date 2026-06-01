@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+            //import { Math } from '../../../../../java/lang/Math.js';
+        
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
@@ -77,7 +79,6 @@ import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayLis
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
-import { Math } from './Math.js';
 
 export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerInterface {
         

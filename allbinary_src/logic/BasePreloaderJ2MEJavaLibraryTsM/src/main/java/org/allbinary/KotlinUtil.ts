@@ -34,8 +34,6 @@ export class KotlinUtil
          {
         
 
-    private static readonly KT: string = "kt";
-
     public static isKotlin(): boolean{
 
 
@@ -51,7 +49,7 @@ export class KotlinUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return KT;
+                        return StringUtil.getInstance()!.EMPTY_STRING;
     
 }
 

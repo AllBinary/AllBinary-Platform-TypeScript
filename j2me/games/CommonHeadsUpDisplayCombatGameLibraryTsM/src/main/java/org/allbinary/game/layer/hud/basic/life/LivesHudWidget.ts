@@ -74,7 +74,10 @@ public constructor (animationInterface: Animation, lifeInterface: Life, location
                     
 this.lifeInterface= lifeInterface;
     
-this.xArray= new Array(Math.round(this.getLifeInterface()!.getMaxlives();));
+
+    var size: number = Math.round(this.getLifeInterface()!.getMaxlives());;
+    
+this.xArray= new Array(size);
     
 this.update();
     

@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+            //import { Math } from '../../../../java/lang/Math.js';
+        
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
@@ -51,7 +53,6 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
-import { Math } from './Math.js';
 
 export class GraphicsPipeline extends BasicGraphicsPipeline {
         

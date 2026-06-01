@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+            //import { Math } from '../../../../../java/lang/Math.js';
+        
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
@@ -264,7 +266,6 @@ import { ExplosionBasicSound } from '../../../../../org/allbinary/weapon/media/a
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableUnitBehavior } from './CollidableUnitBehavior.js';
 import { UnitWaypointBehavior2 } from './UnitWaypointBehavior2.js';
-import { Math } from './Math.js';
 import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
 
 export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventListenerInterface, TrackingEventListenerInterface {

@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+            //import { Math } from '../../../../../../java/lang/Math.js';
+        
             import { Double } from '../../../../../../java/lang/Double.js';
         
 import { awt } from '../../../../../../java/awt.js';
@@ -73,7 +75,6 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
         import { GraphicItemInterface } from './GraphicItemInterface.js';
 import { Color } from './Color.js';
 import { Points } from './Points.js';
-import { Math } from './Math.js';
 import { LinesGraphicItem } from './LinesGraphicItem.js';
 import { Graphics } from './Graphics.js';
 import { MouseEvent } from './MouseEvent.js';

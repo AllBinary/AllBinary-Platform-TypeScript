@@ -22,6 +22,8 @@
 
 
         
+            //import { Math } from '../../../../java/lang/Math.js';
+        
 import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
       
 import { Image } from '../../../../java/awt/Image.js';
@@ -48,7 +50,6 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
 import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
-import { Math } from './Math.js';
 
 export class ImageJ2SERotationUtil
             extends Object

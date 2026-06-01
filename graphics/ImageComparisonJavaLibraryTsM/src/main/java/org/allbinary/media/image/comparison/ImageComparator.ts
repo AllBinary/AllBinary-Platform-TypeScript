@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+            //import { Math } from '../../../../../java/lang/Math.js';
+        
             import { Integer } from '../../../../../java/lang/Integer.js';
         
             import { Long } from '../../../../../java/lang/Long.js';
@@ -66,7 +68,6 @@ import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comp
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
 import { Color } from './Color.js';
-import { Math } from './Math.js';
 import { ImageComparisonResult } from './ImageComparisonResult.js';
 
 export class ImageComparator

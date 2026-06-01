@@ -22,6 +22,8 @@
 
 
         
+            //import { Math } from '../../../java/lang/Math.js';
+        
 import { Buffer } from '../../../java/nio/Buffer.js';
       
 import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
@@ -50,8 +52,7 @@ import { OpenGLCapabilities } from '../../../org/allbinary/graphics/opengles/Ope
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Math } from './Math.js';
-
+        
 export class GLUtil
             extends Object
          {

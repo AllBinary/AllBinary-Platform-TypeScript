@@ -28,6 +28,8 @@
         
             import { IllegalArgumentException } from '../../../../java/lang/IllegalArgumentException.js';
         
+            //import { Math } from '../../../../java/lang/Math.js';
+        
 import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
       
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
@@ -84,7 +86,6 @@ import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPoo
 import { NullAudioFormat } from './NullAudioFormat.js';
 import { NullClip } from './NullClip.js';
 import { NullControl } from './NullControl.js';
-import { Math } from './Math.js';
 
 export class PCClipWavPlayer extends BasicPlayer implements LineListener {
         

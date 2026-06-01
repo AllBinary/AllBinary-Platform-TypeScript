@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+            //import { Math } from '../../../../../../java/lang/Math.js';
+        
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
             import { Double } from '../../../../../../java/lang/Double.js';
@@ -88,7 +90,6 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 import { Color } from './Color.js';
 import { Points } from './Points.js';
 import { PointsDomUtil } from './PointsDomUtil.js';
-import { Math } from './Math.js';
 import { Graphics2D } from './Graphics2D.js';
 import { BasicStroke } from './BasicStroke.js';
 import { PointsUtil } from './PointsUtil.js';

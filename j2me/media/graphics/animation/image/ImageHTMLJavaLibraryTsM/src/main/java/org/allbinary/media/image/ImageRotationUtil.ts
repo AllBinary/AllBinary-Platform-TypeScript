@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+            //import { Math } from '../../../../java/lang/Math.js';
+        
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
 import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
@@ -53,7 +55,6 @@ import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCreationUtil } from './ImageCreationUtil.js';
-import { Math } from './Math.js';
 
 export class ImageRotationUtil
             extends Object

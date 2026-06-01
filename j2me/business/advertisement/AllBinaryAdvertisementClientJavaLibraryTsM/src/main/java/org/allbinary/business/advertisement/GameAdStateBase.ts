@@ -138,7 +138,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
                 //@Throws(Exception.constructor)
             
-    public playingAdState(width: number, height: number){
+    public playingAdStateWH(width: number, height: number){
 }
 
 

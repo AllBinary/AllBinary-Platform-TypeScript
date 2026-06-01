@@ -22,6 +22,8 @@
 
 
         
+            //import { Math } from '../../../../java/lang/Math.js';
+        
 import { awt } from '../../../../java/awt.js';
       
 
@@ -42,8 +44,7 @@ import { awt } from '../../../../java/awt.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Math } from './Math.js';
-import { Color } from './Color.js';
+        import { Color } from './Color.js';
 
 export class ColorUtil
             extends Object
