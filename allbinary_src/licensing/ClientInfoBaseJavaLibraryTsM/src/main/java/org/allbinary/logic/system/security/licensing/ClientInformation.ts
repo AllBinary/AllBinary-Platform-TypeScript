@@ -24,6 +24,8 @@
         
 import { Hashtable } from '../../../../../../java/util/Hashtable.js';
       
+import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -69,6 +71,8 @@ export class ClientInformation
         
 
     private operatingSystemInterface: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly name: string;
 
@@ -229,7 +233,7 @@ clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
 
     public isSameId(alicenseId: string): boolean{
 
-                        if(this.getLicenseId()!.compareTo(alicenseId) == 0)
+                        if(this.tsUtil!.compareTo(this.getLicenseId(), alicenseId) == 0)
                         
                                     {
                                     
@@ -295,7 +299,7 @@ clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
     var nextOldServerName: string = this.licenseServers!.objectArray[index]! as string;;
     
 
-                        if(newServerName!.compareTo(nextOldServerName) != 0)
+                        if(this.tsUtil!.compareTo(newServerName, nextOldServerName) != 0)
                         
                                     {
                                     
