@@ -44,7 +44,7 @@
 export interface RawKeyEventListener {
         
 
-    onEvent(keyCode: number, deviceId: number, repeated: boolean)
+    onEventRaw(keyCode: number, deviceId: number, repeated: boolean)
 
 }
                 

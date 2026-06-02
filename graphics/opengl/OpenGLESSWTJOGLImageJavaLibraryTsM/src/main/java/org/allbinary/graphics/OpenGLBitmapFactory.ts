@@ -75,7 +75,7 @@ private constructor (bitmapConfig: any = {}){
 }
                 
             
-    public readonly ARGB_8888: Config = new this.Config(
+    public readonly ARGB_8888 = new this.Config(
                             null);
 
     public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{

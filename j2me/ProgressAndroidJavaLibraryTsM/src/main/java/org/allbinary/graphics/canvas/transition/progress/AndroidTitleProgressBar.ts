@@ -67,13 +67,13 @@ import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStri
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
 
-    private showTitleProgressBarRunnable: ShowTitleProgressBarRunnable = new this.ShowTitleProgressBarRunnable();
+    private showTitleProgressBarRunnable = new this.ShowTitleProgressBarRunnable();
 
-    private dismissTitleProgressBarRunnable: DismissTitleProgressBarRunnable = new this.DismissTitleProgressBarRunnable();
+    private dismissTitleProgressBarRunnable = new this.DismissTitleProgressBarRunnable();
 
-    private progressDialogPortionSetProgressRunnable: TitleProgressBarPortionSetProgressRunnable = new this.TitleProgressBarPortionSetProgressRunnable();
+    private progressDialogPortionSetProgressRunnable = new this.TitleProgressBarPortionSetProgressRunnable();
 
-    private progressDialogSetProgressRunnable: TitleProgressBarSetProgressRunnable = new this.TitleProgressBarSetProgressRunnable();
+    private progressDialogSetProgressRunnable = new this.TitleProgressBarSetProgressRunnable();
 
     private progressActivity: ProgressActivityInterface = NullProgressActivity.NULL_PROGRESS_ACTIVITY;
 

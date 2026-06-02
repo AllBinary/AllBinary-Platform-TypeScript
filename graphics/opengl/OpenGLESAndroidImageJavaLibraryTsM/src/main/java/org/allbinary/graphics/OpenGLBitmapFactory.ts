@@ -68,7 +68,7 @@ Config = class
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
 
-    public readonly bitmapConfig: Bitmap.Config;
+    public readonly bitmapConfig;
 
  constructor (bitmapConfig: Bitmap.Config){
 
@@ -81,7 +81,7 @@ Config = class
 }
                 
             
-    public readonly ARGB_8888: Config = new this.Config(Bitmap.Config.ARGB_8888);
+    public readonly ARGB_8888 = new this.Config(Bitmap.Config.ARGB_8888);
 
     public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
 

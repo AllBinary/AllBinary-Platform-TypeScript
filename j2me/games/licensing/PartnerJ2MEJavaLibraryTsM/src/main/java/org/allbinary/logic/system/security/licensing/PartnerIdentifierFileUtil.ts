@@ -104,9 +104,7 @@ export class PartnerIdentifierFileUtil
                         if(size > 0)
                         
                                     {
-                                    partnerString= chars.concatToString(0, size)
-
-                                    ;
+                                    partnerString= chars.slice(0, size).join('');
     
 
                                     }

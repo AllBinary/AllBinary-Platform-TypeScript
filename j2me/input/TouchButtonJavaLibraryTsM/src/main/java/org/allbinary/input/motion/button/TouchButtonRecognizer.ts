@@ -184,7 +184,7 @@ this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index
 }
                 
             
-    private readonly releaseHelper: ReleaseHelper;
+    private readonly releaseHelper;
 
 public constructor (){
 

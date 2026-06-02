@@ -147,10 +147,10 @@ super.setWait(1200);
 }
 
 
-    private running: boolean = true;
+    private runningNull: boolean = true;
 
     public setRunning(running: boolean){
-this.running= running;
+this.runningNull= running;
     
 }
 
@@ -161,7 +161,7 @@ this.running= running;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.running;
+                        return this.runningNull;
     
 }
 

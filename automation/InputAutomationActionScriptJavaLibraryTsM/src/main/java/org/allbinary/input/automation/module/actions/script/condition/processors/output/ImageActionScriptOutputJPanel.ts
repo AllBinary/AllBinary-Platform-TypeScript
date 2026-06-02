@@ -152,9 +152,7 @@ this.capturedImageActionScriptOutputInterface!.log();
     var anyType: any[] = this.itemTypesJList!.getSelectedValues()!;;
     
 
-    var imageTypes: ImageTypes = anyType.concatToString()
-
-                                    !;;
+    var imageTypes: ImageTypes = anyType.slice(, ).join('')!;;
     
 this.capturedImageActionScriptOutputInterface!.setImageTypes(imageTypes);
     

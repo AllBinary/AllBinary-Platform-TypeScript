@@ -205,9 +205,7 @@ this.setDelayBetweenKeys(Integer.valueOf(time)!.intValue());
                                     
     var value: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
-this.setPress(value.concatToString()
-
-                                    );
+this.setPress(value.slice(, ).join(''));
     
 
                                     }
@@ -219,9 +217,7 @@ this.setPress(value.concatToString()
                                     
     var value: string = DomNodeHelper.getTextNodeValue(childNode)!;;
     
-this.setRelease(value.concatToString()
-
-                                    );
+this.setRelease(value.slice(, ).join(''));
     
 
                                     }
@@ -457,9 +453,7 @@ index= index +nextCharString!.length +3;
 
                                     }
                                 
-vector.add(KeySingletonFactory.getHashtable()!.get(aChar.concatToString()
-
-                                    ));
+vector.add(KeySingletonFactory.getHashtable()!.get(aChar.slice(, ).join('')));
     
 index++;
     

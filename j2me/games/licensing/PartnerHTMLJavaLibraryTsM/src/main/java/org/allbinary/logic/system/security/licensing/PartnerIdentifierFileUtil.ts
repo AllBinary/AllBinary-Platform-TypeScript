@@ -79,12 +79,6 @@ export class PartnerIdentifierFileUtil
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;;
     
 
-    var chars: string[] = 
-                                                        
-                                                        new Array(30)
-                                                    ;;
-    
-
     var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;;
     
 

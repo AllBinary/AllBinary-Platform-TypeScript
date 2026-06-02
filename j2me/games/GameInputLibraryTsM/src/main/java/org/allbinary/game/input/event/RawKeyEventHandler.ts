@@ -195,7 +195,7 @@ index++;
                 //@Throws(Exception.constructor)
             
     process(keyCode: number, deviceId: number, repeated: boolean, eventListenerInterface: RawKeyEventListener){
-eventListenerInterface!.onEvent(keyCode, deviceId, repeated);
+eventListenerInterface!.onEventRaw(keyCode, deviceId, repeated);
     
 }
 

@@ -1295,7 +1295,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 }
                 
             
-    private readonly buildingSteeringVisitor: BuildingSteeringVisitor = new this.BuildingSteeringVisitor();
+    private readonly buildingSteeringVisitor = new this.BuildingSteeringVisitor();
 
                 //@Throws(Exception.constructor)
             

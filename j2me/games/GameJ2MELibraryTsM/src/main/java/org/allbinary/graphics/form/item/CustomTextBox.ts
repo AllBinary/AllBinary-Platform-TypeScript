@@ -40,6 +40,8 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
       
 import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
       
+import { RawKeyEventListener } from '../../../../../org/allbinary/game/input/event/RawKeyEventListener.js';
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { TextItemVisitor } from '../../../../../org/allbinary/graphics/form/item/validation/TextItemVisitor.js';
@@ -70,7 +72,7 @@ import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextFieldItem } from './ABTextFieldItem.js';
 
-export class CustomTextBox extends GameCommandCanvas {
+export class CustomTextBox extends GameCommandCanvas implements RawKeyEventListener {
         
 
     private readonly textFieldItem: ABTextFieldItem;
@@ -102,7 +104,7 @@ this.setTitle(label);
 
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
 
-    public onEvent(keyCode: number, deviceId: number, repeated: boolean){
+    public onEventRaw(keyCode: number, deviceId: number, repeated: boolean){
 this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
     
 this.keyPressedByDevice(keyCode, deviceId);

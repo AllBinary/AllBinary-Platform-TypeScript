@@ -199,9 +199,7 @@ response.setBufferSize(this.DEFAULT_BUFFER_SIZE);
     
 response.setContentType(contentType);
     
-response.setHeader("Content-Length", file.length.concatToString()
-
-                                    );
+response.setHeader("Content-Length", length.slice(, ).join(''));
     
 
     var stringBuffer: StringMaker = new StringMaker();;

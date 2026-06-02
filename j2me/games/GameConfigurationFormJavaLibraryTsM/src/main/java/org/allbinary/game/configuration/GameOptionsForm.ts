@@ -124,7 +124,9 @@ this.addTextFieldsIfSimulated();
 }
 
 
-    public close(abeClientInformation: AbeClientInformationInterface){
+                //@Throws(Exception.constructor)
+            
+    public closeClientInformation(abeClientInformation: AbeClientInformationInterface){
 super.close();
     
 this.save(abeClientInformation);
