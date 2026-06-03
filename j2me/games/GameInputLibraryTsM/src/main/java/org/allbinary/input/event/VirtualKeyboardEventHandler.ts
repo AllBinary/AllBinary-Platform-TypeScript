@@ -34,8 +34,6 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
       
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      
 
 
 
@@ -86,7 +84,7 @@ private constructor (){
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 
-    var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as VirtualKeyboardEventListenerInterface;;
+    var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as unknown as VirtualKeyboardEventListenerInterface;;
     
 virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent);
     

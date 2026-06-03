@@ -53,14 +53,14 @@ import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMak
 export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper {
         
 
-    private static readonly instance: WaypointRunnableSelectedLogHelper = new WaypointRunnableSelectedLogHelper();
+    private static readonly instanceC: WaypointRunnableSelectedLogHelper = new WaypointRunnableSelectedLogHelper();
 
     public static getInstance(): WaypointRunnableSelectedLogHelper{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WaypointRunnableSelectedLogHelper.instance;
+                        return WaypointRunnableSelectedLogHelper.instanceC;
     
 }
 

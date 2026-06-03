@@ -47,14 +47,14 @@ import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 export class CollidableAlwaysPickupNeverCollideBehaviorFactory extends CollidableBaseBehaviorFactory {
         
 
-    private static readonly instance2: CollidableAlwaysPickupNeverCollideBehaviorFactory = new CollidableAlwaysPickupNeverCollideBehaviorFactory();
+    private static readonly instanceC: CollidableAlwaysPickupNeverCollideBehaviorFactory = new CollidableAlwaysPickupNeverCollideBehaviorFactory();
 
     public static getInstance(): CollidableAlwaysPickupNeverCollideBehaviorFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CollidableAlwaysPickupNeverCollideBehaviorFactory.instance2;
+                        return CollidableAlwaysPickupNeverCollideBehaviorFactory.instanceC;
     
 }
 

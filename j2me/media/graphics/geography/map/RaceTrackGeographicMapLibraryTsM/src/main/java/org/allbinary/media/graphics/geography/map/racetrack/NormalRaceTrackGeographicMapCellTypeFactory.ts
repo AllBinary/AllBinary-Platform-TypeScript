@@ -46,14 +46,14 @@ import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from './EmptyRaceRaceT
 export class NormalRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         
 
-    private static readonly instance: NormalRaceTrackGeographicMapCellTypeFactory = new NormalRaceTrackGeographicMapCellTypeFactory();
+    private static readonly instanceC: NormalRaceTrackGeographicMapCellTypeFactory = new NormalRaceTrackGeographicMapCellTypeFactory();
 
     public static getInstance(): NormalRaceTrackGeographicMapCellTypeFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NormalRaceTrackGeographicMapCellTypeFactory.instance;
+                        return NormalRaceTrackGeographicMapCellTypeFactory.instanceC;
     
 }
 

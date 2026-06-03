@@ -65,14 +65,14 @@ import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
 export class AlwaysRepaintBehavior extends RepaintBehavior {
         
 
-    private static readonly instance: AlwaysRepaintBehavior = new AlwaysRepaintBehavior();
+    private static readonly instanceC: AlwaysRepaintBehavior = new AlwaysRepaintBehavior();
 
     public static getInstance(): AlwaysRepaintBehavior{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AlwaysRepaintBehavior.instance;
+                        return AlwaysRepaintBehavior.instanceC;
     
 }
 

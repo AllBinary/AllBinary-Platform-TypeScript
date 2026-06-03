@@ -51,14 +51,14 @@ import { GameCanvasNonBotPaintable } from './GameCanvasNonBotPaintable.js';
 export class InGameMenuBehavior extends BaseMenuBehavior {
         
 
-    private static readonly instance: InGameMenuBehavior = new InGameMenuBehavior();
+    private static readonly instanceC: InGameMenuBehavior = new InGameMenuBehavior();
 
     public static getInstance(): InGameMenuBehavior{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InGameMenuBehavior.instance;
+                        return InGameMenuBehavior.instanceC;
     
 }
 

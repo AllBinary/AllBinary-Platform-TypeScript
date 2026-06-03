@@ -52,7 +52,7 @@ export interface InputMappingInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(gameKey: GameKey, input: Input)
+    processInputMapping(gameKey: GameKey, input: Input)
 
 }
                 

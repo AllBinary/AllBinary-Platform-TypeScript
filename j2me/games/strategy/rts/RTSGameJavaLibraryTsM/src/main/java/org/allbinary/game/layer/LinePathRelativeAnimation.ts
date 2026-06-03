@@ -51,14 +51,14 @@ import { Layer } from '../../../../org/allbinary/layer/Layer.js';
 export class LinePathRelativeAnimation extends LinePathAnimation {
         
 
-    private static readonly instance: LinePathRelativeAnimation = new LinePathRelativeAnimation();
+    private static readonly instanceC: LinePathRelativeAnimation = new LinePathRelativeAnimation();
 
     public static getInstance(): LinePathAnimation{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LinePathRelativeAnimation.instance;
+                        return LinePathRelativeAnimation.instanceC;
     
 }
 

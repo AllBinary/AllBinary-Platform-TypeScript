@@ -47,14 +47,14 @@ import { ShaderOpenGLProcessor } from './ShaderOpenGLProcessor.js';
 export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
         
 
-    private static readonly instance: AppRendererShaderUpdaterFactory = new AppRendererShaderUpdaterFactory();
+    private static readonly instanceC: AppRendererShaderUpdaterFactory = new AppRendererShaderUpdaterFactory();
 
     public static getInstance(): AppRendererShaderUpdaterFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AppRendererShaderUpdaterFactory.instance;
+                        return AppRendererShaderUpdaterFactory.instanceC;
     
 }
 

@@ -51,14 +51,14 @@ import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageMo
 export class SetColorProcessor extends ModifierBaseProcessor {
         
 
-    private static readonly instance: SetColorProcessor = new SetColorProcessor();
+    private static readonly instanceC: SetColorProcessor = new SetColorProcessor();
 
     public static getInstance(): SetColorProcessor{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SetColorProcessor.instance;
+                        return SetColorProcessor.instanceC;
     
 }
 

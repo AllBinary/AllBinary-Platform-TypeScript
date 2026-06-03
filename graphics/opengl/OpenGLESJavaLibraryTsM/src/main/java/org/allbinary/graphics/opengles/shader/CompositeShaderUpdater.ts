@@ -56,14 +56,14 @@ import { ShaderStrings } from './ShaderStrings.js';
 export class CompositeShaderUpdater extends ShaderUpdater {
         
 
-    private static readonly instance: CompositeShaderUpdater = new CompositeShaderUpdater(StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), NullUtil.getInstance()!.NULL_INT_ARRAY);
+    private static readonly instanceC: CompositeShaderUpdater = new CompositeShaderUpdater(StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), NullUtil.getInstance()!.NULL_INT_ARRAY);
 
     public static getInstance(): CompositeShaderUpdater{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CompositeShaderUpdater.instance;
+                        return CompositeShaderUpdater.instanceC;
     
 }
 

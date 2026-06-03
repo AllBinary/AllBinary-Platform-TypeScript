@@ -55,14 +55,14 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 export class ScaleProcessor extends ScaleBaseProcessor {
         
 
-    private static readonly instance: ScaleProcessor = new ScaleProcessor();
+    private static readonly instanceC: ScaleProcessor = new ScaleProcessor();
 
     public static getInstance(): ScaleBaseProcessor{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ScaleProcessor.instance;
+                        return ScaleProcessor.instanceC;
     
 }
 

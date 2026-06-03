@@ -45,14 +45,14 @@
 export class ModifierOpenGLESImageProcessor extends OpenGLESImageProcessor {
         
 
-    private static readonly instance: ModifierOpenGLESImageProcessor = new ModifierOpenGLESImageProcessor();
+    private static readonly instanceC: ModifierOpenGLESImageProcessor = new ModifierOpenGLESImageProcessor();
 
     public static getInstance(): ModifierOpenGLESImageProcessor{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModifierOpenGLESImageProcessor.instance;
+                        return ModifierOpenGLESImageProcessor.instanceC;
     
 }
 

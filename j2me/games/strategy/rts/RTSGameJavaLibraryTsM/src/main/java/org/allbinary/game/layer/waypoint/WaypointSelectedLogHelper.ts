@@ -65,14 +65,14 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
 export class WaypointSelectedLogHelper extends WaypointLogHelper {
         
 
-    private static readonly instance: WaypointSelectedLogHelper = new WaypointSelectedLogHelper();
+    private static readonly instanceC: WaypointSelectedLogHelper = new WaypointSelectedLogHelper();
 
     public static getInstance(): WaypointSelectedLogHelper{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WaypointSelectedLogHelper.instance;
+                        return WaypointSelectedLogHelper.instanceC;
     
 }
 

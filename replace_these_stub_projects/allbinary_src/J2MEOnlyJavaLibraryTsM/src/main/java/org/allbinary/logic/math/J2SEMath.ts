@@ -85,6 +85,23 @@ export class J2SEMath
 }
 
 
+    public absdouble(value: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return (value < 0)
+                        ?       
+                                 -value
+                                :
+
+                            value;
+
+    ;
+    
+}
+
+
 }
                 
             

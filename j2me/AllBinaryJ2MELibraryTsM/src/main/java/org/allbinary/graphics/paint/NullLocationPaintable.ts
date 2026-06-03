@@ -45,14 +45,14 @@
 export class NullLocationPaintable extends LocationPaintable {
         
 
-    private static readonly instance: NullLocationPaintable = new NullLocationPaintable();
+    private static readonly instanceC: NullLocationPaintable = new NullLocationPaintable();
 
     public static getInstance(): NullLocationPaintable{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullLocationPaintable.instance;
+                        return NullLocationPaintable.instanceC;
     
 }
 

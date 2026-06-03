@@ -45,14 +45,14 @@
 export class SimpleShaderInitializer extends ShaderInitializer {
         
 
-    private static readonly instance: SimpleShaderInitializer = new SimpleShaderInitializer();
+    private static readonly instanceC: SimpleShaderInitializer = new SimpleShaderInitializer();
 
     public static getInstance(): SimpleShaderInitializer{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SimpleShaderInitializer.instance;
+                        return SimpleShaderInitializer.instanceC;
     
 }
 

@@ -42,6 +42,8 @@ import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
       
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
       
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      
 import { GameAdStateFactory } from '../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
       
 import { FullScreenUtil } from '../../../../org/allbinary/canvas/FullScreenUtil.js';
@@ -237,6 +239,8 @@ export class GameMidlet extends ProgressMidlet implements CommandListener {
     readonly gameStrings: GameStrings = GameStrings.getInstance()!;
 
     readonly gameAdStateFactory: GameAdStateFactory = GameAdStateFactory.getInstance()!;
+
+    readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly DISPLAYABLE: string = " Displayable: ";
 
@@ -504,7 +508,7 @@ gameAdState!.getAdvertisements()!.startAll();
 this.logUtil!.putF(this.commonStrings!.START, this, START_APP);
     
 
-    var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
+    var gameCanvasRunnableInterface: any = this.allbinaryGameCanvasRunnableInterface;;
     
 
                         if(gameCanvasRunnableInterface == NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
@@ -591,14 +595,20 @@ PreLogUtil.put(new StringMaker().append(this.COMMAND_NAME)!.append(label)!.appen
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;;
     
 
+    var allbinaryGameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;;
+    
+
+    var gameCanvasRunnableInterface: any = allbinaryGameCanvasRunnableInterface;;
+    
+
                         if(command == gameCommandsFactory!.SHOW_GAME_CANVAS)
                         
                                     {
                                     
-                        if(this.getDisplay()!.getCurrent() != this.allbinaryGameCanvasRunnableInterface && this.allbinaryGameCanvasRunnableInterface!.getType() != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE.getType())
+                        if(this.getDisplay()!.getCurrent() != gameCanvasRunnableInterface && allbinaryGameCanvasRunnableInterface!.getType() != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE.getType())
                         
                                     {
-                                    this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
+                                    this.setDisplay(gameCanvasRunnableInterface as Displayable);
     
 
                                     }
@@ -613,11 +623,11 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as MenuListener;;
+    var menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.close();
     
-this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
+this.setDisplay(gameCanvasRunnableInterface as Displayable);
     
 this.unPauseAppBackground(false);
     
@@ -747,7 +757,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as MenuListener;;
+    var menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.close();
     
@@ -802,7 +812,7 @@ this.setDisplay(displayable);
                                     this.pauseAppBackground(false);
     
 
-    var menuListener: MenuListener = displayable as MenuListener;;
+    var menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.open();
     
@@ -818,7 +828,7 @@ this.setDisplay(displayable);
                                     this.debugInterface!.start();
     
 
-    var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
+    var gameCanvas: AllBinaryGameCanvas = allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
     
 gameCanvas!.addCommand(gameCommandsFactory!.STOP_TRACE);
     
@@ -838,7 +848,7 @@ this.debugInterface!.stop();
 this.unPauseAppBackground(false);
     
 
-    var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
+    var gameCanvas: AllBinaryGameCanvas = allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;;
     
 gameCanvas!.addCommand(gameCommandsFactory!.START_TRACE);
     
@@ -926,7 +936,7 @@ highScoresCanvas!.updateCommand(command);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as MenuListener;;
+    var menuListener: MenuListener = displayable as unknown as MenuListener;;
     
 menuListener!.close();
     
@@ -997,7 +1007,7 @@ inGameOptionsFormFactory!.init(this, new InGameFeatures(), "Options In Game", la
 
     var inGameOptionsForm: CommandForm = inGameOptionsFormFactory!.get()!;;
     
-inGameOptionsForm!.setItemStateListener(this.allbinaryGameCanvasRunnableInterface);
+inGameOptionsForm!.setItemStateListener(allbinaryGameCanvasRunnableInterface);
     
 this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm);
     
@@ -1199,14 +1209,14 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var menuListener: HighScoreTextBox = displayable as HighScoreTextBox;;
+    var highScoreTextBox: HighScoreTextBox = displayable as unknown as HighScoreTextBox;;
     
-menuListener!.submitted= true;
+highScoreTextBox!.submitted= true;
     
 
                                     }
                                 
-this.allbinaryGameCanvasRunnableInterface!.setHighScoreSubmitted(true);
+allbinaryGameCanvasRunnableInterface!.setHighScoreSubmitted(true);
     
 this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable);
     
@@ -1244,7 +1254,7 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
                                     }
                                 
                              else 
-                        if(command.getLabel()!.compareTo(gameCommandsFactory!.TOGGLE_FULLSCREEN.getLabel()) == 0)
+                        if(this.tsUtil!.compareTo(command.getLabel(), gameCommandsFactory!.TOGGLE_FULLSCREEN.getLabel()) == 0)
                         
                                     {
                                     
@@ -1308,7 +1318,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.midletStrings!.COMMA
                         
                                     {
                                     
-    var canvas: Canvas = displayable as Canvas;;
+    var canvas: Canvas = displayable as unknown as Canvas;;
     
 canvas.setFullScreenMode(isFullScreen);
     
@@ -1608,7 +1618,7 @@ this.resized= resized;
                         
                                     {
                                     
-    var demoCanvas: DemoCanvas = displayable as DemoCanvas;;
+    var demoCanvas: DemoCanvas = displayable as unknown as DemoCanvas;;
     
 
                         if(demoCanvas!.isDemoLoading())

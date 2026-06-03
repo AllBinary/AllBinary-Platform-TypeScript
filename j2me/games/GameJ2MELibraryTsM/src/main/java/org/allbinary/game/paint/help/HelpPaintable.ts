@@ -58,6 +58,8 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 export class HelpPaintable extends Paintable {
         
 
+    anchor: number = Anchor.TOP_LEFT;
+
     readonly title: string;
 
     inputInfo: string[] = StringUtil.getInstance()!.getArrayInstance()!;
@@ -92,8 +94,6 @@ this.inputInfo= inputInfo;
     
 }
 
-
-    private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
 

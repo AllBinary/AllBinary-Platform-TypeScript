@@ -189,7 +189,7 @@ this.released= false;
     
 this.logUtil!.putF(new StringMaker().append("GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKey))!.append(" MotionGestureInput: ")!.append(StringUtil.getInstance()!.toString(motionGestureInput))!.toString(), this, this.METHOD_NAME);
     
-this.inputMappingInterface!.process(gameKey, motionGestureInput);
+this.inputMappingInterface!.processInputMapping(gameKey, motionGestureInput);
     
 
                 //: 

@@ -54,14 +54,14 @@ import { TouchButtonInput } from './TouchButtonInput.js';
 export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedTouchButtonSingleton {
         
 
-    private static readonly instance: CurrentlyPressedTouchButtonSingletonDebug = new CurrentlyPressedTouchButtonSingletonDebug();
+    private static readonly instanceC: CurrentlyPressedTouchButtonSingletonDebug = new CurrentlyPressedTouchButtonSingletonDebug();
 
     public static getInstance(): CurrentlyPressedTouchButtonSingleton{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CurrentlyPressedTouchButtonSingletonDebug.instance;
+                        return CurrentlyPressedTouchButtonSingletonDebug.instanceC;
     
 }
 

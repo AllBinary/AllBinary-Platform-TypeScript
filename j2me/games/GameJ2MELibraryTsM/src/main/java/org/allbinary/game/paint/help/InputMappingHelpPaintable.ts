@@ -38,8 +38,6 @@ import { GameInputMapping } from '../../../../../org/allbinary/game/input/mappin
       
 import { PersistentInputMapping } from '../../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
       
-import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
-      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
@@ -95,7 +93,7 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    stringUtil: StringUtil = StringUtil.getInstance()!;
+    readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
     private gameInputMappingArray: GameInputMapping[];
 
@@ -341,8 +339,6 @@ stringBuffer!.append(key.getName());
     
 }
 
-
-    private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
 

@@ -46,8 +46,6 @@ import { PlatformInputMappingFactory } from '../../../../../org/allbinary/game/i
       
 import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
       
-import { InputToGameKeyMapping } from '../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
-      
 import { PersistentInputMapping } from '../../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
       
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
@@ -198,7 +196,7 @@ this.keyRepeatedByDevice(keyCode, 0);
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-this.addGameKeyEvent(keyCode, false);
+this.addGameKey(keyCode, false);
     
 super.keyPressedByDevice(keyCode, 0);
     
@@ -207,7 +205,7 @@ super.keyPressedByDevice(keyCode, 0);
 
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
 
-    addGameKeyEvent(keyCode: number, repeated: boolean){
+    addGameKey(keyCode: number, repeated: boolean){
 
         try {
             this.logUtil!.putF(new StringMaker().append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
@@ -218,7 +216,7 @@ super.keyPressedByDevice(keyCode, 0);
 
     var input: Input = this.inputFactory!.getInstanceById(keyCode)!;;
     
-this.process(gameKey, input);
+this.processInputMapping(gameKey, input);
     
 
                 //: 
@@ -233,7 +231,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 
                 //@Throws(Exception.constructor)
             
-    public process(gameKey: GameKey, input: Input){
+    public processInputMapping(gameKey: GameKey, input: Input){
 
     var stringBuffer: StringMaker = new StringMaker();;
     

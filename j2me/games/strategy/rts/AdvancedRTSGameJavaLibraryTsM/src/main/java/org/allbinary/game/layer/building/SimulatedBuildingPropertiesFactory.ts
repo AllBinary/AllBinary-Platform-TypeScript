@@ -62,14 +62,14 @@ import { BuildingLayer } from './BuildingLayer.js';
 export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactory {
         
 
-    private static readonly instance: SimulatedBuildingPropertiesFactory = new SimulatedBuildingPropertiesFactory();
+    private static readonly instanceC: SimulatedBuildingPropertiesFactory = new SimulatedBuildingPropertiesFactory();
 
     public static getInstance(): SimulatedBuildingPropertiesFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SimulatedBuildingPropertiesFactory.instance;
+                        return SimulatedBuildingPropertiesFactory.instanceC;
     
 }
 

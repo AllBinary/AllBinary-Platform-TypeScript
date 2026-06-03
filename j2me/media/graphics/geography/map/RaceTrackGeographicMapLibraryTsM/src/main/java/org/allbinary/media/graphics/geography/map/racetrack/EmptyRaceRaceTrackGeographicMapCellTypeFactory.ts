@@ -50,14 +50,14 @@ import { RaceTrackGeographicMapCellType } from './RaceTrackGeographicMapCellType
 export class EmptyRaceRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         
 
-    private static readonly instance: EmptyRaceRaceTrackGeographicMapCellTypeFactory = new EmptyRaceRaceTrackGeographicMapCellTypeFactory();
+    private static readonly instanceC: EmptyRaceRaceTrackGeographicMapCellTypeFactory = new EmptyRaceRaceTrackGeographicMapCellTypeFactory();
 
     public static getInstance(): EmptyRaceRaceTrackGeographicMapCellTypeFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return EmptyRaceRaceTrackGeographicMapCellTypeFactory.instance;
+                        return EmptyRaceRaceTrackGeographicMapCellTypeFactory.instanceC;
     
 }
 

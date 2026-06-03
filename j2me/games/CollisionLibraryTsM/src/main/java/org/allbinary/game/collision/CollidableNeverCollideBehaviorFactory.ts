@@ -47,14 +47,14 @@ import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 export class CollidableNeverCollideBehaviorFactory extends CollidableBaseBehaviorFactory {
         
 
-    private static readonly instance2: CollidableNeverCollideBehaviorFactory = new CollidableNeverCollideBehaviorFactory();
+    private static readonly instanceC: CollidableNeverCollideBehaviorFactory = new CollidableNeverCollideBehaviorFactory();
 
     public static getInstance(): CollidableNeverCollideBehaviorFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CollidableNeverCollideBehaviorFactory.instance2;
+                        return CollidableNeverCollideBehaviorFactory.instanceC;
     
 }
 

@@ -60,14 +60,14 @@ import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 export class BaseGameBehavior extends DemoGameBehavior {
         
 
-    private static readonly instance: BaseGameBehavior = new BaseGameBehavior();
+    private static readonly instanceC: BaseGameBehavior = new BaseGameBehavior();
 
     public static getInstance(): DemoGameBehavior{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BaseGameBehavior.instance;
+                        return BaseGameBehavior.instanceC;
     
 }
 

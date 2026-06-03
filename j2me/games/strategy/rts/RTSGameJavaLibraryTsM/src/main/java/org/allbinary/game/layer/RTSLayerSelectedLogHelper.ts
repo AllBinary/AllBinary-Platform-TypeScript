@@ -68,14 +68,14 @@ import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
         
 
-    private static readonly instance: RTSLayerSelectedLogHelper = new RTSLayerSelectedLogHelper();
+    private static readonly instanceC: RTSLayerSelectedLogHelper = new RTSLayerSelectedLogHelper();
 
     public static getInstance(): RTSLayerSelectedLogHelper{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RTSLayerSelectedLogHelper.instance;
+                        return RTSLayerSelectedLogHelper.instanceC;
     
 }
 
