@@ -24,7 +24,7 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            //import { Math } from '../../../../../../java/lang/Math.js';
+            import { Math } from '../../../../../../java/lang/Math.js';
         
             import { Double } from '../../../../../../java/lang/Double.js';
         

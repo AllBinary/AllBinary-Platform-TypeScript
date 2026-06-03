@@ -22,7 +22,7 @@
 
 
         
-            //import { Math } from '../../../java/lang/Math.js';
+            import { Math } from '../../../java/lang/Math.js';
         
 import { Buffer } from '../../../java/nio/Buffer.js';
       

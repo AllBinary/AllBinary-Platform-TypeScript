@@ -28,7 +28,7 @@
         
             import { IllegalArgumentException } from '../../../../java/lang/IllegalArgumentException.js';
         
-            //import { Math } from '../../../../java/lang/Math.js';
+            import { Math } from '../../../../java/lang/Math.js';
         
 import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
       

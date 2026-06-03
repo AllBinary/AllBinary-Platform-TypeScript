@@ -22,7 +22,7 @@
 
 
         
-            //import { Math } from '../../../../java/lang/Math.js';
+            import { Math } from '../../../../java/lang/Math.js';
         
 
 
