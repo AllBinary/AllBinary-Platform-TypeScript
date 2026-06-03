@@ -34,8 +34,6 @@ import { CollisionType } from '../../../../../org/allbinary/game/collision/Colli
       
 import { CollisionTypeFactory } from '../../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
       
-import { LayerCollisionUtil } from '../../../../../org/allbinary/game/collision/LayerCollisionUtil.js';
-      
 import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
       
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
@@ -135,15 +133,13 @@ this.collided= true;
 }
 
 
-    private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
-
     public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
 
                         if(this.collisionHelper!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;;
+    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as unknown as AllBinaryLayer;;
     
 
                         if(ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])
@@ -180,7 +176,13 @@ this.collided= true;
                 //@Throws(Exception.constructor)
             
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
-this.damageUtil!.process(ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
+
+    var ownerDamageableInterface: DamageableInterface = ownerLayer as unknown as DamageableInterface;;
+    
+
+    var damageableInterface: DamageableInterface = collidableInterfaceCompositeInterface as unknown as DamageableInterface;;
+    
+this.damageUtil!.process(ownerDamageableInterface, damageableInterface);
     
 this.collided= true;
     

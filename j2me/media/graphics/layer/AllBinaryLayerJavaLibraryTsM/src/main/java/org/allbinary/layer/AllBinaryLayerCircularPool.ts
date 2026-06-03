@@ -59,7 +59,7 @@ protected constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public init(allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
+    public initAllBinaryLayerCircularPool(allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 this.circularIndexUtil= CircularIndexUtil.createInstance(total);
     
 this.OBJECT_ARRAY= new Array(total);

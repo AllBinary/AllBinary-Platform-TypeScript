@@ -174,7 +174,7 @@ this.speed= speed;
 }
 
 
-    public getDamage(range: number): number{
+    public getDamageI(range: number): number{
 
 
 

@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -48,9 +48,10 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
 import { NullIndexedAnimation } from './NullIndexedAnimation.js';
 import { AnimationBehavior } from './AnimationBehavior.js';
+import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
+//import { NullIndexedAnimationInner } from './NullIndexedAnimationInner.js';
 import { Animation } from './Animation.js';
 
 export class NullIndexedAnimationFactory
@@ -72,14 +73,29 @@ export class NullIndexedAnimationFactory
 }
 
 
-    private readonly NULL_ANIMATION: Animation = new class extends NullIndexedAnimation
-                                {
-                                
+//inner= member=true isStatic=
+NullIndexedAnimationInner = class extends NullIndexedAnimation {
+        
+/*Static stuff is not allowed for Typescript inner classes*//**/
+
+
+ constructor (){
+            super(AnimationBehavior.getInstance());
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
     public paintXY(graphics: Graphics, x: number, y: number){
 }
 
-                                }
-                            ;
+
+}
+                
+            
+    private readonly NULL_ANIMATION: Animation = new this.NullIndexedAnimationInner();
 
 private constructor (){
 

@@ -116,7 +116,7 @@ super.removeListener(eventListenerInterface);
 
                 //@Throws(Exception.constructor)
             
-    public fireEvent(eventObject: Integer){
+    public fireEventI(eventObject: Integer){
 
 
 
@@ -154,7 +154,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance(
         try {
             eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
-this.process(eventObject, eventListenerInterface);
+this.processI(eventObject, eventListenerInterface);
     
 
                 //: 
@@ -233,7 +233,7 @@ index++;
 
                 //@Throws(Exception.constructor)
             
-    process(eventObject: Integer, eventListenerInterface: EventListenerInterface){
+    processI(eventObject: Integer, eventListenerInterface: EventListenerInterface){
 
     var downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;;
     

@@ -173,7 +173,7 @@ this.setOwnerLayerInterface(sourceLayerInterface);
     
 this.collidableWeaponBehavior!.init(sourceLayerInterface);
     
-this.setGroupInterface();
+this.setGroupInterfaces();
     
 
                         if(scoreable != 
@@ -197,7 +197,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
 }
 
 
-    setGroupInterface(){
+    setGroupInterfaces(){
 
     var basicGroupFactory: BasicGroupFactory = BasicGroupFactory.getInstance()!;;
     

@@ -75,7 +75,7 @@ export class MotionEventCircularPool
 private constructor (id: number){
 
             super();
-        this.eventPool!.init(new MotionEventFactory(this.eventPool, id));
+        this.eventPool!.initAllBinaryEventCircularPool(new MotionEventFactory(this.eventPool, id));
     
 }
 

@@ -68,7 +68,7 @@ export class TerrainEventCircularStaticPool
     private EVENT_POOL: AllBinaryEventCircularPool = new AllBinaryEventCircularPool(20);
 
     public init(){
-this.EVENT_POOL.init(new TerrainEventFactory());
+this.EVENT_POOL.initAllBinaryEventCircularPool(new TerrainEventFactory());
     
 }
 

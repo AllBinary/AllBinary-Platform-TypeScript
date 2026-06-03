@@ -69,7 +69,7 @@ export class TrackingEventCircularStaticPool
     private EVENT_POOL: AllBinaryEventCircularPool = new AllBinaryEventCircularPool(20);
 
     public init(){
-this.EVENT_POOL.init(new TrackingEventFactory());
+this.EVENT_POOL.initAllBinaryEventCircularPool(new TrackingEventFactory());
     
 }
 

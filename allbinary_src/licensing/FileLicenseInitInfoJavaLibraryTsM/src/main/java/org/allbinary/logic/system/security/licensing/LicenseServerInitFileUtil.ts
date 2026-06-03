@@ -24,8 +24,6 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { IOException } from '../../../../../../java/io/IOException.js';
-      
 import { InputStream } from '../../../../../../java/io/InputStream.js';
       
 import { OutputStream } from '../../../../../../java/io/OutputStream.js';
@@ -41,6 +39,8 @@ import { FileStreamFactory } from '../../../../../../org/allbinary/logic/io/File
 import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
       
 import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
+      
+import { SimpleFileUtil } from '../../../../../../org/allbinary/logic/io/file/SimpleFileUtil.js';
       
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       
@@ -70,38 +70,11 @@ export class LicenseServerInitFileUtil
          {
         
 
-    public static nullOutputStream(): OutputStream{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return new class extends OutputStream
-                                {
-                                
-                //@Throws(IOException.constructor)
-            
-    public write(b: number){
-}
-
-                //@Throws(IOException.constructor)
-            
-    public write(b: number[], off: number, len: number){
-}
-
-    public close(){
-}
-
-                                }
-                            ;
-    
-}
-
-
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly NULL_OUTPUT_STREAM: OutputStream = LicenseServerInitFileUtil.nullOutputStream()!;
+    private readonly NULL_OUTPUT_STREAM: OutputStream = SimpleFileUtil.nullOutputStream()!;
 
     public init(){
 

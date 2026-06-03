@@ -60,7 +60,7 @@ export class HealLayerCircularStaticPool extends AllBinaryLayerCircularPool {
 public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 
             super();
-        super.init(allbinaryLayerFactoryInterface, total);
+        super.initAllBinaryLayerCircularPool(allbinaryLayerFactoryInterface, total);
     
 }
 
@@ -72,7 +72,7 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
     var healLayer: HealLayer = this.getNextInstance() as HealLayer;;
     
 
-    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = sourceLayerInterface as HealthInterfaceCompositeInterface;;
+    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = sourceLayerInterface as unknown as HealthInterfaceCompositeInterface;;
     
 
     var healthInterface: HealthInterface = healthInterfaceCompositeInterface!.getHealthInterface()!;;

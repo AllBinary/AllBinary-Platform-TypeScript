@@ -77,7 +77,7 @@ private constructor (){
 
 
     public init(combatGameCanvas: AllBinaryGameCanvas){
-this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
+this.EVENT_POOL.initAllBinaryEventCircularPool(new DestroyEventFactory(combatGameCanvas));
     
 }
 

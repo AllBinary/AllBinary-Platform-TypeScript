@@ -94,7 +94,7 @@ this.countedIndex= countedIndex;
 
         try {
             
-    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = this.ownerLayerInterface as HealthInterfaceCompositeInterface;;
+    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = this.ownerLayerInterface as unknown  as HealthInterfaceCompositeInterface;;
     
 
                         if(healthInterfaceCompositeInterface!.getHealthInterface()!.isAlive())
@@ -160,7 +160,10 @@ collidableDestroyableDamageableLayer!.addPart(pickedUpLayerInterfaceFactoryInter
                                     }
                                 
                         else {
-                            this.doPickup(pickedUpLayerInterfaceFactoryInterface as PickupProcessorInterface);
+                            
+    var pickupProcessorInterface: PickupProcessorInterface = pickedUpLayerInterfaceFactoryInterface as unknown  as PickupProcessorInterface;;
+    
+this.doPickup(pickupProcessorInterface);
     
 
                         }

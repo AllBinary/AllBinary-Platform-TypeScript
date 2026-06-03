@@ -65,7 +65,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
 export class BasicProjectileWeaponPart extends BasicWeaponPart {
         
 
-    public static createPart(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): BasicProjectileWeaponPart{
+    public static createBasicProjectileWeaponPart(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): BasicProjectileWeaponPart{
 
 
 
@@ -92,7 +92,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
 
-    var weaponLayer: WeaponLayer = this.weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface)!;;
+    var weaponLayer: WeaponLayer = this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface)!;;
     
 allbinaryLayerManager!.append(weaponLayer);
     

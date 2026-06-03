@@ -60,7 +60,7 @@ export class LifeLayerCircularStaticPool extends AllBinaryLayerCircularPool {
 public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 
             super();
-        super.init(allbinaryLayerFactoryInterface, total);
+        super.initAllBinaryLayerCircularPool(allbinaryLayerFactoryInterface, total);
     
 }
 
@@ -72,7 +72,7 @@ public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterfa
     var lifeLayer: LifeLayer = this.getNextInstance() as LifeLayer;;
     
 
-    var lifeInterfaceCompositeInterface: LifeInterfaceCompositeInterface = sourceLayerInterface as LifeInterfaceCompositeInterface;;
+    var lifeInterfaceCompositeInterface: LifeInterfaceCompositeInterface = sourceLayerInterface as unknown as LifeInterfaceCompositeInterface;;
     
 
     var lifeInterface: Life = lifeInterfaceCompositeInterface!.getLifeInterface()!;;

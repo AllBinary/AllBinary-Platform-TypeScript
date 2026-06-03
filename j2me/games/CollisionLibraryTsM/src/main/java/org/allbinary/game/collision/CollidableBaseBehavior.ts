@@ -71,6 +71,8 @@ export class CollidableBaseBehavior
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
+    readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
+
     private collidable: boolean = true;
 
 public constructor (collidable: boolean){
@@ -121,8 +123,6 @@ this.collidable= collidable;
                     
 }
 
-
-    private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
 

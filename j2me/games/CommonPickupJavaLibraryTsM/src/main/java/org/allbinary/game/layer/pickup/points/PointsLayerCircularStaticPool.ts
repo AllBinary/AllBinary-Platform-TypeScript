@@ -58,7 +58,7 @@ export class PointsLayerCircularStaticPool extends AllBinaryLayerCircularPool {
 public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 
             super();
-        super.init(allbinaryLayerFactoryInterface, total);
+        super.initAllBinaryLayerCircularPool(allbinaryLayerFactoryInterface, total);
     
 }
 

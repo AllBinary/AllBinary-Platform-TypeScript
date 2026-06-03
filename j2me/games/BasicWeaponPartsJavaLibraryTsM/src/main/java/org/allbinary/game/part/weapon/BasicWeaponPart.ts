@@ -73,7 +73,7 @@ export class BasicWeaponPart
          implements PartInterface, SalvoInterface {
         
 
-    public static createPart(animationInterface: Animation): BasicWeaponPart{
+    public static createBasicWeaponPart(animationInterface: Animation): BasicWeaponPart{
 
 
 
@@ -83,7 +83,7 @@ export class BasicWeaponPart
 }
 
 
-    public static readonly NULL_BASIC_WEAPON_PART: BasicWeaponPart = BasicWeaponPart.createPart(NullAnimationFactory.getFactoryInstance()!.getInstance(0))!;
+    public static readonly NULL_BASIC_WEAPON_PART: BasicWeaponPart = BasicWeaponPart.createBasicWeaponPart(NullAnimationFactory.getFactoryInstance()!.getInstance(0))!;
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
 

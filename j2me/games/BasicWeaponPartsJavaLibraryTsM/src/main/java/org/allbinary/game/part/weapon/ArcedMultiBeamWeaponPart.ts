@@ -106,7 +106,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
                         for (
     var index: number = 0;index < this.total; index++)
         {
-weaponLayer= this.weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, Math.round((minAngle +increment)), Math.round(otherAngle), weaponProperties, scoreableInterface);
+weaponLayer= this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, Math.round((minAngle +increment)), Math.round(otherAngle), weaponProperties, scoreableInterface);
     
 allbinaryLayerManager!.append(weaponLayer);
     

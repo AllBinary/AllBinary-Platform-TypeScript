@@ -67,7 +67,7 @@ import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalT
 export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
         
 
-    public static createPart(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): StraightMultiProjectileWeaponPart{
+    public static createStraightMultiProjectileWeaponPart(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): StraightMultiProjectileWeaponPart{
 
 
 
@@ -150,7 +150,7 @@ cosine= (next *this.noDecimalTrigTable!.cos(Math.round(angle)));
     
 beamY=  -Math.round((cosine /this.noDecimalTrigTable!.SCALE));
     
-weaponLayer= this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x +beamX, y +beamY, 0, Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface);
+weaponLayer= this.weaponLayerCircularStaticPool!.getInstanceWeaponLayer(sourceLayerInterface, x +beamX, y +beamY, 0, Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface);
     
 allbinaryLayerManager!.append(weaponLayer);
     

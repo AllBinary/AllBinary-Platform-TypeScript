@@ -59,7 +59,7 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(max);
 }
 
 
-    public init(allBinaryEventObjectFactoryInterface: AllBinaryEventObjectFactoryInterface){
+    public initAllBinaryEventCircularPool(allBinaryEventObjectFactoryInterface: AllBinaryEventObjectFactoryInterface){
 this.circularIndexUtil!.setIndex(0);
     
 
