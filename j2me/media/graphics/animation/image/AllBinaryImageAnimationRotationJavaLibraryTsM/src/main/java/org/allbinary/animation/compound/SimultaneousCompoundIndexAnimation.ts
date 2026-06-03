@@ -181,7 +181,7 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
 }
 
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 
 
 
@@ -190,7 +190,7 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
     var index: number = this.animationInterfaceArray!.length
                 ;--index >= 0; )
         {
-this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
+this.animationInterfaceArray[index]!.paintThreedXYZ(graphics, x, y, z);
     
 }
 

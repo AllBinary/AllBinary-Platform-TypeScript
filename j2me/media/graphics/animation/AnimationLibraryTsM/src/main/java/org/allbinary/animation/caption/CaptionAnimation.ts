@@ -94,10 +94,10 @@ this.overlayAnimationInterface!.paintXY(graphics, x +this.captionDx +this.dx, y 
 }
 
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z);
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
+this.animationInterface!.paintThreedXYZ(graphics, x +this.captionDx, y +this.captionDy, z);
     
-this.overlayAnimationInterface!.paintThreed(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy, z);
+this.overlayAnimationInterface!.paintThreedXYZ(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy, z);
     
 }
 

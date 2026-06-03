@@ -97,7 +97,7 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
 }
 
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 }
 
 

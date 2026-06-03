@@ -789,7 +789,7 @@ this.progressPaintable!.paint(graphics);
     public paintThreed(graphics: Graphics){
 this.paintableInterface!.paintThreed(graphics);
     
-this.paintedSpecialAnimationInterface!.paintThreed(graphics, 0, 0, 0);
+this.paintedSpecialAnimationInterface!.paintThreedXYZ(graphics, 0, 0, 0);
     
 }
 

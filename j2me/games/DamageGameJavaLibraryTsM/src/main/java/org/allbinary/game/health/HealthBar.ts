@@ -91,7 +91,7 @@ this.animationInterface!.paintXY(graphics, 0, 0);
 
 
     public paintThreed(graphics: Graphics){
-this.animationInterface!.paintThreed(graphics, 0, 0, 0);
+this.animationInterface!.paintThreedXYZ(graphics, 0, 0, 0);
     
 }
 

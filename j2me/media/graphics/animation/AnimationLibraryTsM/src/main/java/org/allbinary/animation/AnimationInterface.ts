@@ -54,7 +54,7 @@ export interface AnimationInterface extends LocationPaintableInterface {
             
     nextFrame()
 
-    paintThreed(graphics: Graphics, x: number, y: number, z: number)
+    paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number)
 
 }
                 

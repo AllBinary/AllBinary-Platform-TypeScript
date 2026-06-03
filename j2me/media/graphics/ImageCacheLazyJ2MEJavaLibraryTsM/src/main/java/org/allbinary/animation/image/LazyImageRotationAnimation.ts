@@ -160,7 +160,7 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 
 }
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 
         try {
             ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.prototype);
@@ -491,10 +491,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 }
 
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 
         try {
-            this.animation.paintThreed(graphics, x, y, z);
+            this.animation.paintThreedXYZ(graphics, x, y, z);
     
 
                 //: 

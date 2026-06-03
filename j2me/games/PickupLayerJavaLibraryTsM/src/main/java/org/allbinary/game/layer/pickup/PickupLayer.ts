@@ -138,7 +138,7 @@ this.animationInterface!.paintXY(graphics, viewX, viewY);
 
     var viewY: number = viewPosition!.getY()!;;
     
-this.animationInterface!.paintThreed(graphics, viewX, viewY, 3);
+this.animationInterface!.paintThreedXYZ(graphics, viewX, viewY, 3);
     
 }
 

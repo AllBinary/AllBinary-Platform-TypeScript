@@ -465,7 +465,7 @@ this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWid
 
     var viewPosition: ViewPosition = this.getViewPosition()!;;
     
-this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth());
+this.animationInterface!.paintThreedXYZ(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth());
     
 }
 

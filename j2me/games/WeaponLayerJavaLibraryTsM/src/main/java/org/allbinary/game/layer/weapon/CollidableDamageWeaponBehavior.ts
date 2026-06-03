@@ -133,8 +133,6 @@ this.collided= true;
 }
 
 
-    private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
-
     public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
 
                         if(this.collisionHelper!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))

@@ -150,8 +150,8 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintXY(graphi
 }
 
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(graphics, x, y, z);
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreedXYZ(graphics, x, y, z);
     
 }
 

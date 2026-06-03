@@ -189,7 +189,7 @@ this.updateSize();
 
     private readonly object3dProcessor: Object3dProcessor = Object3dProcessorUtil.getInstance()!.getInstanceObject3dProcessor()!;
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
 
     var openGLESGraphics: OpenGLESGraphics = graphics as OpenGLESGraphics;;
     

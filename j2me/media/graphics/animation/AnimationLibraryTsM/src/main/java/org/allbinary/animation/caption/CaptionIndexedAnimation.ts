@@ -225,10 +225,10 @@ this.movieIndexedAnimationInterface!.paintXY(graphics, x +this.captionDx +this.d
 }
 
 
-    public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z);
+    public paintThreedXYZ(graphics: Graphics, x: number, y: number, z: number){
+this.animationInterface!.paintThreedXYZ(graphics, x +this.captionDx, y +this.captionDy, z);
     
-this.movieIndexedAnimationInterface!.paintThreed(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy, z);
+this.movieIndexedAnimationInterface!.paintThreedXYZ(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy, z);
     
 }
 
