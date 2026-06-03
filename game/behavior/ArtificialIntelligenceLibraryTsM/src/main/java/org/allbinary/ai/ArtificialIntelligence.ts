@@ -51,6 +51,8 @@ export class ArtificialIntelligence
          implements ArtificialIntelligenceInterface {
         
 
+    public static readonly AI_ID: number = 2;
+
     private static readonly instance: ArtificialIntelligence = new ArtificialIntelligence();
 
     public static getInstance(): ArtificialIntelligence{

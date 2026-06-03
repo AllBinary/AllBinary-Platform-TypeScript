@@ -30,8 +30,6 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
       
-import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
-      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
       
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
@@ -85,8 +83,6 @@ this.update();
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 }
 
-
-    private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
                 //@Throws(Exception.constructor)
             

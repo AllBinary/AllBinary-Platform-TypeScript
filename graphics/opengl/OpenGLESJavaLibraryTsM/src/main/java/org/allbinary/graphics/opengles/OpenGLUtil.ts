@@ -189,7 +189,7 @@ this.set(gl);
 }
 
 
-    public add(image: Image): Image{
+    public addImage(image: Image): Image{
 
     var encapsulateImage: Image = this.preResourceImageUtil!.encapsulate(image)!;;
     
@@ -241,7 +241,7 @@ this.list.clear();
 }
 
 
-    public add(runnable: Runnable){
+    public addRunnable(runnable: Runnable){
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.

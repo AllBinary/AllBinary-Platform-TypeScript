@@ -105,7 +105,7 @@ super.initApp(abeClientInformation);
 }
 
 
-    initConfigurable(portion: number){
+    initConfigurablePortion(portion: number){
 DestroyedLayerProcessor.init();
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(portion, "Basic Processors");

@@ -128,7 +128,7 @@ private constructor (){
                                     
     var image: Image = originalImage;;
     
-image= this.openGLUtil!.add(image);
+image= this.openGLUtil!.addImage(image);
     
 
 
@@ -218,7 +218,7 @@ image= new SwtMutableImage(SwtDeviceComponent.createImage(originalImmutableImage
 
                         }
                             
-image= this.openGLUtil!.add(image);
+image= this.openGLUtil!.addImage(image);
     
 
 
@@ -350,7 +350,7 @@ image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.create
 
                         }
                             
-image= this.openGLUtil!.add(image);
+image= this.openGLUtil!.addImage(image);
     
 
 
@@ -442,7 +442,7 @@ image= openGLESImage;
                             image= originalImage;
     
 
-    var openGLESImage: OpenGLESImage = this.openGLUtil!.add(image) as OpenGLESImage;;
+    var openGLESImage: OpenGLESImage = this.openGLUtil!.addImage(image) as OpenGLESImage;;
     
 
     var openGLESImageProperties: OpenGLESImageProperties = openGLESImage!.openGLESImageProperties;;
@@ -580,7 +580,7 @@ image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.create
 
                         }
                             
-image= this.openGLUtil!.add(image);
+image= this.openGLUtil!.addImage(image);
     
 
                         }

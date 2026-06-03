@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { ArtificialIntelligence } from '../../../../../org/allbinary/ai/ArtificialIntelligence.js';
+      
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
       
 import { ArtificialIntelligenceTransitionInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceTransitionInterface.js';
@@ -90,11 +92,11 @@ this.index++;
     var artificialIntelligenceInterface: ArtificialIntelligenceInterface = this.getSelectedArtificialIntelligenceInterface()!;;
     
 
-                        if(artificialIntelligenceInterface!.getId() == ArtificialIntelligenceTransitionInterface.ID)
+                        if(artificialIntelligenceInterface!.getId() == ArtificialIntelligence.AI_ID)
                         
                                     {
                                     
-    var artificialIntelligenceTransitionInterface: ArtificialIntelligenceTransitionInterface = (artificialIntelligenceInterface as ArtificialIntelligenceTransitionInterface);;
+    var artificialIntelligenceTransitionInterface: ArtificialIntelligenceTransitionInterface = artificialIntelligenceInterface as unknown as ArtificialIntelligenceTransitionInterface;;
     
 artificialIntelligenceTransitionInterface!.transition();
     

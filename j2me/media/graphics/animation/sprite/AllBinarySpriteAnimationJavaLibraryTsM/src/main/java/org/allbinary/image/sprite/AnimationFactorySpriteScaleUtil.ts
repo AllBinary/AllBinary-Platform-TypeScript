@@ -114,7 +114,7 @@ export class AnimationFactorySpriteScaleUtil
                         if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
                         
                                     {
-                                    scaledImage= this.openGLUtil!.add(image);
+                                    scaledImage= this.openGLUtil!.addImage(image);
     
 sprite= spriteFactory!.createSprite(scaledImage, width, height);
     
@@ -180,7 +180,7 @@ sprite= spriteFactory!.createSprite(scaledImage, Math.round((width *scaleX)), Ma
                                     }
                                 
                         else {
-                            scaledImage= this.openGLUtil!.add(image);
+                            scaledImage= this.openGLUtil!.addImage(image);
     
 sprite= spriteFactory!.createSprite(scaledImage, width, height);
     

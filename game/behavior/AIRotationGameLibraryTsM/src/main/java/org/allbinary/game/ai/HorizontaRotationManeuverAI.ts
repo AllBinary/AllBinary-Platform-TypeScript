@@ -28,6 +28,8 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
       
+import { ArtificialIntelligence } from '../../../../org/allbinary/ai/ArtificialIntelligence.js';
+      
 import { ArtificialIntelligenceTransitionInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceTransitionInterface.js';
       
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
@@ -94,19 +96,19 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as RotationAnimationInterfaceCompositeInterface;;
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as RotationAnimationInterfaceCompositeInterface;;
     
 this.rotationAnimationInterface= rotationAnimationInterfaceCompositeInterface!.getRotationAnimationInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as VelocityInterfaceCompositeInterface;;
     
 this.baseVelocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
-this.velocityInterface= this.baseVelocityInterface as VelocityInterface;
+this.velocityInterface= this.baseVelocityInterface as unknown as VelocityInterface;
     
 
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;;
+    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as unknown as RotationAnimationInterface;;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;;
@@ -118,13 +120,13 @@ rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT
 
     public transition(){
 
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;;
+    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as unknown as RotationAnimationInterface;;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;;
     
 
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as RotationAnimationInterfaceCompositeInterface;;
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as RotationAnimationInterfaceCompositeInterface;;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.intValue());
     
@@ -140,7 +142,7 @@ allbinaryLayer!.setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 
-    var rotationAnimationInterface: RotationAnimationInterface = (this.rotationAnimationInterface as RotationAnimationInterface);;
+    var rotationAnimationInterface: RotationAnimationInterface = (this.rotationAnimationInterface as unknown as RotationAnimationInterface);;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;;
@@ -217,7 +219,7 @@ this.circularIndexUtil!.next();
 
     reverse(){
 
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;;
+    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as unknown as RotationAnimationInterface;;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;;
@@ -230,7 +232,7 @@ this.circularIndexUtil!.next();
                         
                                     {
                                     
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as RotationAnimationInterfaceCompositeInterface;;
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as RotationAnimationInterfaceCompositeInterface;;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.intValue());
     
@@ -244,7 +246,7 @@ this.baseVelocityInterface!.zero();
                         
                                     {
                                     
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as RotationAnimationInterfaceCompositeInterface;;
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as RotationAnimationInterfaceCompositeInterface;;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_FRAME.intValue());
     
@@ -271,10 +273,10 @@ this.baseVelocityInterface!.zero();
 
     drop(){
 
-    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
     
 
     var y: number = ownerLayerInterface!.getYP()!;;
@@ -304,7 +306,7 @@ ownerLayerInterface!.setPosition(ownerLayerInterface!.getXP(), y, ownerLayerInte
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ArtificialIntelligenceTransitionInterface.ID;
+                        return ArtificialIntelligence.AI_ID;
     
 }
 

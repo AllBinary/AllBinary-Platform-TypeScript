@@ -80,13 +80,13 @@ export class BasicAI extends ArtificialIntelligence implements GameKeyEventSourc
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
+    readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
+
     private readonly ownerLayerInterface: AllBinaryLayer;
 
     private readonly gameInput: GameInput;
 
     private lastKey: number =  -1;
-
-    private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
 

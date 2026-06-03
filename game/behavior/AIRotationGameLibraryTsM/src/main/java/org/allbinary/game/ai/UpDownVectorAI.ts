@@ -59,7 +59,7 @@ import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.
 export class UpDownVectorAI extends BasicAI {
         
 
-    private velocityInterface: BasicVelocityProperties;
+    private readonly velocityInterface: BasicVelocityProperties;
 
     private index: number = 0;
 
@@ -70,7 +70,7 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as VelocityInterfaceCompositeInterface;;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     

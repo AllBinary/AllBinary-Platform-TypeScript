@@ -107,6 +107,10 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
 
+    private readonly directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
+
+    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(500);
 
     private readonly list: BasicArrayList = new BasicArrayListD();
@@ -119,7 +123,7 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
 
     private initialDropped: boolean= false;
 
-    private dive: boolean= false;
+    private diveP: boolean= false;
 
     private directionOfTarget: Direction = Direction.getInstance(0)!;
 
@@ -133,10 +137,6 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
 
     private lastDirection: Direction = DirectionFactory.getInstance()!.NO_DIRECTION;
 
-    private readonly directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-
-    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-
 public constructor (ownerLayerInterface: AllBinaryLayer, artificialIntelligenceInterface: ArtificialIntelligenceInterface, gameInput: GameInput, visitor: Visitor){
             super(ownerLayerInterface, gameInput);
                     
@@ -148,12 +148,12 @@ this.aiVistor= visitor;
 this.artificialIntelligenceInterface= artificialIntelligenceInterface;
     
 
-    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface() as DirectionalCompositeInterface;;
+    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface() as unknown as DirectionalCompositeInterface;;
     
 this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as unknown as VelocityInterfaceCompositeInterface;;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
@@ -179,7 +179,7 @@ this.velocityInterface!.zero();
                                     }
                                 
 
-                        if(!this.dive)
+                        if(!this.diveP)
                         
                                     {
                                     this.target(allBinaryLayerManager);
@@ -201,7 +201,7 @@ this.list.clear();
 
 
     init(){
-this.dive= false;
+this.diveP= false;
     
 this.directionOfTarget= DirectionFactory.getInstance()!.NOT_BORDERED_WITH;
     
@@ -428,7 +428,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
 
 
     setDive(){
-this.dive= true;
+this.diveP= true;
     
 this.velocityInterface!.zero();
     

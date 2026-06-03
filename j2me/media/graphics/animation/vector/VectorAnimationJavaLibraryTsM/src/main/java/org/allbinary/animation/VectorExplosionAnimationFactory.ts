@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -47,8 +47,8 @@ import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicCo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
 import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
+import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
 import { VectorAnimationInterface } from './VectorAnimationInterface.js';
 import { VectorRotationAnimation } from './VectorRotationAnimation.js';
 import { Animation } from './Animation.js';
@@ -57,6 +57,8 @@ export class VectorExplosionAnimationFactory
             extends Object
          implements ProceduralAnimationInterfaceFactoryInterface {
         
+
+    private readonly vectorExplosionGenerator: VectorExplosionGenerator = VectorExplosionGenerator.getInstance()!;
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
@@ -72,13 +74,11 @@ this.setBasicColorP(basicColor);
 }
 
 
-    private readonly vectorExplosionGenerator: VectorExplosionGenerator = VectorExplosionGenerator.getInstance()!;
-
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 
-    var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as VectorAnimationInterface;;
+    var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as unknown as VectorAnimationInterface;;
     
 
     var frame: number = vectorRotationAnimationInterface!.getFrame()!;;

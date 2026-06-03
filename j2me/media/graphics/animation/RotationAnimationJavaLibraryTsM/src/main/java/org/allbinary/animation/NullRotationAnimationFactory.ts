@@ -57,6 +57,7 @@ import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimat
 import { RotationAnimation } from './RotationAnimation.js';
 import { NullRotationAnimation } from './NullRotationAnimation.js';
 import { AnimationBehavior } from './AnimationBehavior.js';
+//import { NullRotationAnimation2 } from './NullRotationAnimation2.js';
 import { Animation } from './Animation.js';
 
 export class NullRotationAnimationFactory
@@ -78,14 +79,29 @@ export class NullRotationAnimationFactory
 
     public readonly NULL_ROTATION_ANIMATION_ARRAY: RotationAnimation[] = [];
 
-    private readonly NULL_ANIMATION: Animation = new class extends NullRotationAnimation
-                                {
-                                
+//inner= member=true isStatic=
+NullRotationAnimation2 = class extends NullRotationAnimation {
+        
+/*Static stuff is not allowed for Typescript inner classes*//**/
+
+
+ constructor (){
+            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), AnimationBehavior.getInstance());
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
     public paintXY(graphics: Graphics, x: number, y: number){
 }
 
-                                }
-                            ;
+
+}
+                
+            
+    private readonly NULL_ANIMATION: Animation = new this.NullRotationAnimation2();
 
 private constructor (){
 

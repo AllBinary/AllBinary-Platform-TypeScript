@@ -89,7 +89,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
     var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;;
     
-scaledImage= openGLUtil!.add(scaledImage);
+scaledImage= openGLUtil!.addImage(scaledImage);
     
 
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)

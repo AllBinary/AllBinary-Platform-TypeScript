@@ -48,7 +48,7 @@ export class OpenGLUtil
 }
 
 
-    public add(image: Image): Image{
+    public addImage(image: Image): Image{
 
 
 
@@ -62,7 +62,7 @@ export class OpenGLUtil
 }
 
 
-    public add(runnable: Runnable){
+    public addRunnable(runnable: Runnable){
 }
 
 

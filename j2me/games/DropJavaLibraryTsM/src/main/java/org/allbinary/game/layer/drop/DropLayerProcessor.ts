@@ -83,19 +83,25 @@ private constructor (){
     var size: number = list.size()!;;
     
 
+    var layerInterface: AllBinaryLayer;;
+    
+
+    var dropLayerInterface: DropLayerInterface;;
+    
+
 
 
 
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var layerInterface: AllBinaryLayer = list.objectArray[index]! as AllBinaryLayer;;
+layerInterface= list.objectArray[index]! as AllBinaryLayer;
     
-
-    var dropLayerInterface: DropLayerInterface = layerInterface as DropLayerInterface;;
+dropLayerInterface= layerInterface as unknown as DropLayerInterface;
     
-allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer() as AllBinaryLayer);
+layerInterface= dropLayerInterface!.getDroppedLayer() as unknown as AllBinaryLayer;
+    
+allBinaryLayerManager!.append(layerInterface);
     
 }
 
