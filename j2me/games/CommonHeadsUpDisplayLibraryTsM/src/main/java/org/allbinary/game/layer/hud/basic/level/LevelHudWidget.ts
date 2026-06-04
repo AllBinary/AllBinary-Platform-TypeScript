@@ -100,7 +100,7 @@ this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
 
     var LEVEL: string = "Lv ";;
     
-this.levelString= LEVEL.toCharArray();
+this.levelString= LEVEL.split('');
     
 this.offset= myFont!.charsWidth(this.levelString, 0, this.levelString!.length) +myFont!.getSize();
     

@@ -113,7 +113,7 @@ public constructor (prependString: string, max: number, location: number, direct
 
                             //For kotlin this is before the body of the constructor.
                     
-this.PREPEND_STRING= prependString!.toCharArray();
+this.PREPEND_STRING= prependString!.split('');
     
 
     var myFont: MyFont = MyFont.getInstance()!;;

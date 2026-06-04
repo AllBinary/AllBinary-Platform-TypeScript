@@ -71,7 +71,7 @@ export class BaseImageAnimationFactory
 
                 //@Throws(Exception.constructor)
             
-    public static createFactory(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
+    public static createFactoryBase(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
 
 
 
