@@ -72,6 +72,8 @@ import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
       
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      
 
 
 
@@ -95,7 +97,7 @@ import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js'
 export class CollidableDestroyableDamageableLayer extends CollidableCompositeLayer implements DestroyableInterface, DamageableInterface, PickupCompositeInterface, SpecialGameInputInterface {
         
 
-    public static readonly NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: CollidableDestroyableDamageableLayer = new CollidableDestroyableDamageableLayer(BasicGroupFactory.getInstance()!.NONE_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
+    public static readonly NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: CollidableDestroyableDamageableLayer = new CollidableDestroyableDamageableLayer(BasicGroupFactory.getInstance()!.NONE_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPositionBase.NULL_VIEW_POSITION);
 
     private static readonly READYFOREXPLOSION: string = "ReadyForExplosion: ";
 
@@ -123,7 +125,7 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
 
     public isDragged: boolean = false;
 
-public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
+public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPositionBase){
             super(name, layerInfo, viewPosition, CollidableNeverCollideBehaviorFactory.getInstance());
                     
 

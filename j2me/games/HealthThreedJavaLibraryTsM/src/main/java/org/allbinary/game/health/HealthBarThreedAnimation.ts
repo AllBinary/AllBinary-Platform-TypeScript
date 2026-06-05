@@ -46,7 +46,7 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
       
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
       
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -197,7 +197,7 @@ this.updateSize();
     var gl: GL10 = openGLESGraphics!.getGl10()!;;
     
 
-    var viewPosition: ViewPosition = this.allbinaryLayer!.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.allbinaryLayer!.getViewPosition()!;;
     
 
     var positionNumber3d: Number3d = this.rectangle.getPosition()!;;

@@ -46,7 +46,7 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
       
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       
-import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -170,7 +170,7 @@ this.animationInterface= animationInterface;
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getOwnerLayerInterface()!.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.getOwnerLayerInterface()!.getViewPosition()!;;
     
 
     var viewX: number = viewPosition!.getX()!;;

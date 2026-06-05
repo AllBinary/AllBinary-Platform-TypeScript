@@ -98,7 +98,7 @@ private constructor (){
     var size: number = list.size()!;;
     
 
-    var points: number[][] = new Array(size) [2];;
+    var points: number[][] = new Array(size).fill(null).map(() => new Array(2).fill(0));;
     
 
 

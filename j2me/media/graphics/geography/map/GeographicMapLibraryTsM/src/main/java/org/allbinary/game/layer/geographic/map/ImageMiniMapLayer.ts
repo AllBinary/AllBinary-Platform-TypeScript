@@ -36,7 +36,7 @@ import { PaintableToImageUtil } from '../../../../../../org/allbinary/image/Pain
       
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
       
-import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -63,7 +63,7 @@ export class ImageMiniMapLayer extends MiniMapLayer {
 
     private image: Image = NullImage.NULL_IMAGE;
 
-public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
+public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPositionBase){
             super(geographicMapInterface, viewPosition);
                     
 

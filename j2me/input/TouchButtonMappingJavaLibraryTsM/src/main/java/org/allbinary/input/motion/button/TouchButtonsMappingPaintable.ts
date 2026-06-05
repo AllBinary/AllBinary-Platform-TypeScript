@@ -67,7 +67,7 @@ export class TouchButtonsMappingPaintable extends Paintable {
 
     foregroundColor: number;
 
-    private paintableTable: Paintable[][] = new Array(0) [0]
+    private paintableTable: Paintable[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
                                                             ;
 
     private touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
@@ -111,7 +111,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
     var totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;;
     
 
-    var paintableTable: Paintable[][] = new Array(totalColumns) [totalRows]
+    var paintableTable: Paintable[][] = new Array(totalColumns).fill(null).map(() => new Array(totalRows).fill(0))
                                                             ;;
     
 

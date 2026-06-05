@@ -79,7 +79,7 @@ export class GameKeyEventFactory
 
     private readonly MAX_SOURCES: number = 4;
 
-    private ARRAY: GameKeyEvent[][] = new Array(this.MAX_SOURCES) [InputFactory.getInstance()!.MAX]
+    private ARRAY: GameKeyEvent[][] = new Array(this.MAX_SOURCES).fill(null).map(() => new Array(InputFactory.getInstance()!.MAX).fill(0))
                                                             ;
 
 private constructor (){

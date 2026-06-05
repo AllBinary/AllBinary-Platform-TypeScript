@@ -44,6 +44,8 @@ import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularInd
       
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
       
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      
 
 
 
@@ -78,7 +80,7 @@ export class PtsDamageFloaters extends DamageFloaters {
 
     private lastDamage: number[] = new Array(5);
 
-    private lastDamageString: string[][] = new Array(5) [0];
+    private lastDamageString: string[][] = new Array(5).fill(null).map(() => new Array(0).fill(0));
 
     private lastDamageStringSizeArray: number[] = new Array(5);
 
@@ -129,7 +131,7 @@ this.circularIndexUtil!.next();
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.layerInterface!.getViewPosition()!;;
     
 
     var x: number = viewPosition!.getX()!;;

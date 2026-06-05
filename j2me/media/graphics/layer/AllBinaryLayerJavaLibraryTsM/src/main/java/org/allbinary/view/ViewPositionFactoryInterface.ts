@@ -42,14 +42,14 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ViewPosition } from './ViewPosition.js';
+        import { ViewPositionBase } from './ViewPositionBase.js';
 
 export interface ViewPositionFactoryInterface {
         
 
                 //@Throws(Exception.constructor)
             
-    getInstance(): ViewPosition
+    getInstance(): ViewPositionBase
 
 }
                 

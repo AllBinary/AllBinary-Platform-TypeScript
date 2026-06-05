@@ -112,6 +112,8 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
       
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
       
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      
 
 
 
@@ -367,6 +369,9 @@ rtsLayer= rtsLayerList!.get(index) as RTSLayer;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
+
+    var viewPosition: ViewPositionBase = rtsLayer!.getViewPosition()!;;
+    
 stringBuffer!.append(this.POSSIBLE);
     
 stringBuffer!.append(rtsLayer!.getName());
@@ -375,16 +380,16 @@ stringBuffer!.append(this.SPACE);
     
 stringBuffer!.append(this.AT);
     
-stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth()));
+stringBuffer!.appendint((viewPosition!.getX() +rtsLayer!.getHalfWidth()));
     
 stringBuffer!.append(this.SPACE);
     
-stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()));
+stringBuffer!.appendint((viewPosition!.getY() +rtsLayer!.getHalfHeight()));
     
 this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD);
     
 
-                        if(this.rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth(), rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()))
+                        if(this.rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, viewPosition!.getX() +rtsLayer!.getHalfWidth(), viewPosition!.getY() +rtsLayer!.getHalfHeight()))
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().append(this.ADDING)!.append(rtsLayer!.getName())!.toString(), this, this.METHOD);

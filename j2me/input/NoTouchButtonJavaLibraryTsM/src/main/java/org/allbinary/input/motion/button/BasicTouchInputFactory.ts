@@ -55,7 +55,6 @@ import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayLis
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonInput } from './TouchButtonInput.js';
-import { CancelTouchButtonInputFactory } from './CancelTouchButtonInputFactory.js';
 
 export class BasicTouchInputFactory
             extends Object
@@ -131,8 +130,6 @@ this.list.add(SPECIAL_BUTTON_FIVE);
 this.list.add(SPECIAL_BUTTON_SIX);
     
 this.updateAllList(this.list, inputToGameKeyMapping);
-    
-CancelTouchButtonInputFactory.getInstance();
     
 
                                     }

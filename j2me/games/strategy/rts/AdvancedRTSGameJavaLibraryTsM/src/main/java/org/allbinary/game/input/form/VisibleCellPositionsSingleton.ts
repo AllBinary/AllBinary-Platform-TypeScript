@@ -123,11 +123,11 @@ this.currentIndex= 0;
 
     var columns: number = simpleTiledLayer!.getColumns()!;;
     
-this.stationaryVisibleCellPositions= new Array(rows) [columns];
+this.stationaryVisibleCellPositions= new Array(rows).fill(null).map(() => new Array(columns).fill(0));
     
-this.visibleCellPositions= new Array(rows) [columns];
+this.visibleCellPositions= new Array(rows).fill(null).map(() => new Array(columns).fill(0));
     
-this.currentlyVisibleCellPositions= new Array(rows) [columns];
+this.currentlyVisibleCellPositions= new Array(rows).fill(null).map(() => new Array(columns).fill(0));
     
 this.setSimpleTiledLayer(simpleTiledLayer);
     

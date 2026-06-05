@@ -26,7 +26,7 @@ import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/tim
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
       
-import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -55,7 +55,7 @@ export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, timeDelay: number){
+public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPositionBase, timeDelay: number){
             super(name, RemoteInfo.REMOTE_INFO,  -1, movement, animationInterface, SimpleWeaponLayer.createDestroyed(), rectangle, viewPosition);
                     
 

@@ -79,11 +79,11 @@ import { Vector } from '../../../java/util/Vector.js';
                                                         new Array(0)
                                                     ;
 
-    /*actual*/ public readonly NULL_SHORT_ARRAY_ARRAY: number[][] = new Array(0) [0];
+    /*actual*/ public readonly NULL_SHORT_ARRAY_ARRAY: number[][] = new Array(0).fill(null).map(() => new Array(0).fill(0));
 
     /*actual*/ public readonly NULL_INT_ARRAY: number[] = [];
 
-    /*actual*/ public readonly NULL_INT_ARRAY_ARRAY: number[][] = new Array(0) [0];
+    /*actual*/ public readonly NULL_INT_ARRAY_ARRAY: number[][] = new Array(0).fill(null).map(() => new Array(0).fill(0));
 
     /*actual*/ public readonly NULL_INT_ARRAY_ARRAY_ARRAY: number[][][] = Array.from({ length: 0 }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));
 

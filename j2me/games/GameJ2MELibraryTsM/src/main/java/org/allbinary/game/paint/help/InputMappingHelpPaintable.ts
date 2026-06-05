@@ -101,7 +101,7 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     private actionBasicColor: BasicColor[] = [];
 
-    private inputBasicColorArray: BasicColor[][] = new Array(0) [0]
+    private inputBasicColorArray: BasicColor[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
                                                             ;
 
     private selectedBasicColor: BasicColor;

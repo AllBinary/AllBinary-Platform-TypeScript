@@ -90,7 +90,23 @@ private constructor (){
 
         try {
             
-                        if(this.tsUtil!.compareTo(os.getName(), OperatingSystems.getInstance()!.ANDROID) == 0)
+    var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;;
+    
+
+                        if(this.tsUtil!.compareTo(os.getName(), operatingSystems!.ANDROID) == 0)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AndroidHardware();
+    
+
+                                    }
+                                
+                             else 
+                        if(this.tsUtil!.compareTo(os.getName(), operatingSystems!.HARMONY) == 0)
                         
                                     {
                                     

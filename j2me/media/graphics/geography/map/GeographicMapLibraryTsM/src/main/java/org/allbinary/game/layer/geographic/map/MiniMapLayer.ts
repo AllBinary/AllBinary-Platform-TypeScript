@@ -68,7 +68,7 @@ import { GeographicMapCellPositionEventHandler } from '../../../../../../org/all
       
 import { GeographicMapCellPositionEventListenerInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEventListenerInterface.js';
       
-import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -104,7 +104,7 @@ export class MiniMapLayer extends AllBinaryLayer implements GeographicMapCellPos
 
     private animationInterface: CircleFilledAnimation;
 
-public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
+public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPositionBase){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.createXY(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
                     
 

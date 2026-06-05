@@ -46,7 +46,7 @@ import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js
       
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -71,11 +71,11 @@ import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 export class CollidableCompositeLayer extends AllBinaryGameLayer implements CollidableInterfaceCompositeInterface {
         
 
-    public static readonly NULL_COLLIDABLE_COMPOSITE_LAYER: CollidableCompositeLayer = new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
+    public static readonly NULL_COLLIDABLE_COMPOSITE_LAYER: CollidableCompositeLayer = new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPositionBase.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
 
     private collidableInferface: CollidableBaseBehavior = CollidableNeverCollideBehaviorFactory.getInstance()!.createBehavior()!;
 
-public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableBaseBehaviorFactory: CollidableBaseBehaviorFactory){
+public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositionBase, collidableBaseBehaviorFactory: CollidableBaseBehaviorFactory){
             super(name, layerInfo, viewPosition);
                     
 

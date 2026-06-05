@@ -28,9 +28,7 @@ import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbina
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      
-import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -57,7 +55,7 @@ import { MultiplayerBehavior } from './MultiplayerBehavior.js';
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         
 
-public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
+public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPositionBase){
             super(groupInterface, name, layerInfo, viewPosition);
                     
 

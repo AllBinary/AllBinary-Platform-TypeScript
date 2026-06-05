@@ -2,7 +2,7 @@
         /*
                 *  
                 *  AllBinary Open License Version 1 
-                *  Copyright (c) 2025 AllBinary 
+                *  Copyright (c) 2011 AllBinary 
                 *   
                 *  By agreeing to this license you and any business entity you represent are 
                 *  legally bound to the AllBinary Open License Version 1 legal agreement. 
@@ -22,7 +22,7 @@
 
 
         
-import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
+import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
       
 
 
@@ -42,22 +42,11 @@ import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ViewPositionBase } from './ViewPositionBase.js';
-
-export class ViewPosition extends ViewPositionBase {
+        
+export class ViewPositionBase extends GPoint {
         
 
-    public static getInstanceD(): ViewPosition{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ViewPosition(0, 0, 0);
-    
-}
-
-
-    private allbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
+    public static readonly NULL_VIEW_POSITION: ViewPositionBase = new ViewPositionBase(0, 0, 0);
 
 protected constructor (x: number, y: number, z: number){
             super(x, y, z);
@@ -68,42 +57,12 @@ protected constructor (x: number, y: number, z: number){
 }
 
 
-    public getX(): number{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.allbinaryLayer!.getXP();;
-    
-}
-
-
-    public getY(): number{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.allbinaryLayer!.getYP();;
-    
-}
-
-
-    public getZ(): number{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.allbinaryLayer!.getZP();;
-    
-}
-
-
     public getX2(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getX() +this.allbinaryLayer!.getWidth();
+                        return this.getX();;
     
 }
 
@@ -113,7 +72,7 @@ protected constructor (x: number, y: number, z: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getY() +this.allbinaryLayer!.getHeight();
+                        return this.getY();;
     
 }
 
@@ -123,14 +82,12 @@ protected constructor (x: number, y: number, z: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round((this.getZ() +this.allbinaryLayer!.getDepth()));
+                        return this.getZ();;
     
 }
 
 
     public setAllbinaryLayer(allbinaryLayer: any = {}){
-this.allbinaryLayer= allbinaryLayer as unknown as AllBinaryLayer;
-    
 }
 
 

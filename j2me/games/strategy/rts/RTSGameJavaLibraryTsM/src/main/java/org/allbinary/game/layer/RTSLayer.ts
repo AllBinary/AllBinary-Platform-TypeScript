@@ -96,8 +96,6 @@ import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geo
       
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
       
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-      
 import { ViewPositionEventHandler } from '../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
       
 import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
@@ -113,6 +111,8 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -282,7 +282,7 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
     private selected: boolean = false;
 
-protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
+protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPositionBase){
             super(remoteInfo, groupInterface, name, rectangle, viewPosition);
                     
 
@@ -500,7 +500,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processTick", e);
 super.paintFirst(graphics);
     
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
     var viewX: number = viewPosition!.getX()!;;

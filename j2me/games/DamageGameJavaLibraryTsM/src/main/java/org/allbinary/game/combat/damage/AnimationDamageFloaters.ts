@@ -40,6 +40,8 @@ import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularInd
       
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
       
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      
 
 
 
@@ -117,7 +119,7 @@ this.circularIndexUtil!.next();
 
         try {
             
-    var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.layerInterface!.getViewPosition()!;;
     
 
     var x: number = viewPosition!.getX()!;;

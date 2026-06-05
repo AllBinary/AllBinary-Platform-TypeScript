@@ -57,7 +57,7 @@ export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFacto
 public constructor (max: number){
 
             super();
-        this.pathFindingNodeCostInfoAdjacencyList= new Array(max) [max]
+        this.pathFindingNodeCostInfoAdjacencyList= new Array(max).fill(null).map(() => new Array(max).fill(0))
                                                             ;
     
 }

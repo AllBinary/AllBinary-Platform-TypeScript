@@ -54,6 +54,8 @@ import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
       
 import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
       
+import { ViewPositionBase } from '../../../org/allbinary/view/ViewPositionBase.js';
+      
 import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositionEvent.js';
       
 
@@ -80,7 +82,7 @@ import { LayerInterface } from './LayerInterface.js';
 export class AllBinaryLayer extends Layer implements LayerInterface {
         
 
-    public static readonly NULL_ALLBINARY_LAYER: AllBinaryLayer = new AllBinaryLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
+    public static readonly NULL_ALLBINARY_LAYER: AllBinaryLayer = new AllBinaryLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPositionBase.NULL_VIEW_POSITION);
 
     private static readonly TYPE: string = "Type: ";
 
@@ -92,9 +94,9 @@ export class AllBinaryLayer extends Layer implements LayerInterface {
 
     private readonly name: string;
 
-    private viewPosition: ViewPosition = ViewPosition.NULL_VIEW_POSITION;
+    private viewPosition: ViewPositionBase = ViewPositionBase.NULL_VIEW_POSITION;
 
-public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPosition){
+public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositionBase){
             super(rectangle.getWidth(), rectangle.getHeight());
                     
 
@@ -230,7 +232,7 @@ this.halfHeight= halfHeight;
 }
 
 
-    public getViewPosition(): ViewPosition{
+    public getViewPosition(): ViewPositionBase{
 
 
 
@@ -240,7 +242,7 @@ this.halfHeight= halfHeight;
 }
 
 
-    public setViewPosition(viewPosition: ViewPosition){
+    public setViewPosition(viewPosition: ViewPositionBase){
 this.viewPosition= viewPosition;
     
 }

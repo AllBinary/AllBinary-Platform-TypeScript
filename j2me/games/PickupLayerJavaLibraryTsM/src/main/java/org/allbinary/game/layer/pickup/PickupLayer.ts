@@ -46,7 +46,7 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
       
 import { OpenGLSurfaceChangedInterface } from '../../../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
       
-import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -80,7 +80,7 @@ export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerIn
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
 
-public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPositionBase){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
                     
 
@@ -115,7 +115,7 @@ this.setPosition(x, y, z);
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
     var viewX: number = viewPosition!.getX()!;;
@@ -130,7 +130,7 @@ this.animationInterface!.paintXY(graphics, viewX, viewY);
 
     public paintThreed(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
     var viewX: number = viewPosition!.getX()!;;

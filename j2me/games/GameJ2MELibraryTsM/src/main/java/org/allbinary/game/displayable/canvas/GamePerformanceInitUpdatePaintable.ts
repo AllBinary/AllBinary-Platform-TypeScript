@@ -60,7 +60,7 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
 
     private readonly yArray: number[] = [this.halfHeight +30,this.halfHeight +30,this.halfHeight +30 +15,this.halfHeight +30 +15,this.halfHeight +30 +30,this.halfHeight +30 +30,this.halfHeight +30 +45,this.halfHeight +30 +45];
 
-    private baseRefreshHelperCharArray: string[][] = new Array(0) [0];
+    private baseRefreshHelperCharArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(0));
 
     public init(){
 }

@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -70,9 +70,9 @@ export class Group
 public constructor (teamName: string, teamId: number){
 
             super();
-        this.setName(teamName);
+        this.teamId= teamId;
     
-this.teamId= teamId;
+this.setName(teamName);
     
 }
 

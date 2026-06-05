@@ -26,7 +26,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
       
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
       
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -57,7 +57,7 @@ export class GameLayerUtil
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var viewPosition: ViewPosition = layer.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = layer.getViewPosition()!;;
     
 
 

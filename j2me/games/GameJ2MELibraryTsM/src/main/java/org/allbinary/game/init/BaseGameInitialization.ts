@@ -56,6 +56,8 @@ import { CompleteMotionGestureInputToGameMotionGestureInput } from '../../../../
       
 import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
       
+import { CancelTouchButtonInputFactory } from '../../../../org/allbinary/input/motion/button/CancelTouchButtonInputFactory.js';
+      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
       
 
@@ -170,6 +172,8 @@ GameKeyEventFactory.getInstance()!.init();
 progressCanvas!.addNormalPortion(localPortion, "Game Key Events");
     
 BasicTouchInputFactory.getInstance()!.init(PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
+    
+CancelTouchButtonInputFactory.getInstance();
     
 progressCanvas!.addNormalPortion(localPortion, "Touch Input");
     

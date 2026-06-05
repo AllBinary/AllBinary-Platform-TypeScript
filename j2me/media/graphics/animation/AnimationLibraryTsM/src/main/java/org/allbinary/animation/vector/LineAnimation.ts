@@ -56,11 +56,11 @@ import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 export class LineAnimation extends Animation implements ColorCompositeInterface, PositionInterface {
         
 
-    private newLine: number[][] = new Array(2) [2];
+    private newLine: number[][] = new Array(2).fill(null).map(() => new Array(2).fill(0));
 
     private tempLine: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
 
-    private line: number[][] = new Array(2) [2];
+    private line: number[][] = new Array(2).fill(null).map(() => new Array(2).fill(0));
 
 public constructor (basicColor: BasicColor){
 

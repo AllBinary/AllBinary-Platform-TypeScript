@@ -87,7 +87,7 @@ this.columns= this.tiledLayer!.getColumns();
     
 this.rows= this.tiledLayer!.getRows();
     
-this.geographicMapCellPositionArray= new Array(this.rows) [this.columns]
+this.geographicMapCellPositionArray= new Array(this.rows).fill(null).map(() => new Array(this.columns).fill(0))
                                                             ;
     
 this.init();

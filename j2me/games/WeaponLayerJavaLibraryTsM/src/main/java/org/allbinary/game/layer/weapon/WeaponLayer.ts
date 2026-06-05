@@ -64,6 +64,8 @@ import { Movement } from '../../../../../org/allbinary/physics/movement/Movement
       
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
       
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      
 
 
 
@@ -119,7 +121,7 @@ export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterfa
 
     private readonly multiPlayerType: number;
 
-protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPositionBase){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
                     
 
@@ -454,7 +456,7 @@ this.sourceLayerInterface= sourceLayerInterface;
 
     public paint(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight());
     
@@ -463,7 +465,7 @@ this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWid
 
     public paintThreed(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 this.animationInterface!.paintThreedXYZ(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth());
     

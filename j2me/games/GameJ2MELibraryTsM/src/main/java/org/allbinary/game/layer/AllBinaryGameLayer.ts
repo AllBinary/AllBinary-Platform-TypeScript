@@ -58,7 +58,7 @@ import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js
       
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
       
 import { ViewPositionEvent } from '../../../../org/allbinary/view/event/ViewPositionEvent.js';
       
@@ -115,7 +115,7 @@ AllBinaryGameLayer.prototype.basicSetColorUtil!.setBasicColorP(graphics, this.BL
 
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
 
-public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
+public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositionBase){
             super(name, layerInfo, viewPosition);
                     
 
@@ -214,7 +214,7 @@ this.paintable.paint(graphics);
 
     public paintDebug(graphics: Graphics){
 
-    var viewPosition: ViewPosition = this.getViewPosition()!;;
+    var viewPosition: ViewPositionBase = this.getViewPosition()!;;
     
 
     var viewX: number = viewPosition!.getX()!;;

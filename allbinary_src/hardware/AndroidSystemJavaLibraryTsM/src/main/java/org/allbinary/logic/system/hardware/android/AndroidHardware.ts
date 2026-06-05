@@ -204,7 +204,7 @@ this.componentInterfaceVector!.add(new UnknownHardware(nextLine));
 
     public toString(): string{
 
-    var hardwareBuffer: StringMaker = new StringMaker();;
+    var stringBuilder: StringMaker = new StringMaker();;
     
 
     var size: number = this.componentInterfaceVector!.size()!;;
@@ -219,9 +219,9 @@ this.componentInterfaceVector!.add(new UnknownHardware(nextLine));
 
     var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;;
     
-hardwareBuffer!.append(componentInterface!.toString());
+stringBuilder!.append(componentInterface!.toString());
     
-hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
+stringBuilder!.append(CommonSeps.getInstance()!.NEW_LINE);
     
 }
 
@@ -229,7 +229,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardwareBuffer!.toString();;
+                        return stringBuilder!.toString();;
     
 }
 

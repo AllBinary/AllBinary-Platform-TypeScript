@@ -32,7 +32,7 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
       
 import { Movement } from '../../../../../org/allbinary/physics/movement/Movement.js';
       
-import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
       
 
 
@@ -58,7 +58,7 @@ import { CollidableDamageWeaponBehavior } from './CollidableDamageWeaponBehavior
 export class DamageWeaponLayer extends WeaponLayer {
         
 
-public constructor (name: string, remoteInfo: RemoteInfo, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, username: string, actorSessionId: number, id: number, multiPlayerType: number){
+public constructor (name: string, remoteInfo: RemoteInfo, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPositionBase, username: string, actorSessionId: number, id: number, multiPlayerType: number){
             super(name, remoteInfo, multiPlayerType, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition);
                     
 

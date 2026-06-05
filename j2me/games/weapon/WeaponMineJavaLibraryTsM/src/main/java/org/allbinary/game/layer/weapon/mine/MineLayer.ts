@@ -40,7 +40,7 @@ import { SecondaryPlayerQueueFactory } from '../../../../../../org/allbinary/med
       
 import { NoMovementFactory } from '../../../../../../org/allbinary/physics/movement/NoMovementFactory.js';
       
-import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
+import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
       
 import { ViewPositionEventHandler } from '../../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
       
@@ -71,7 +71,7 @@ export class MineLayer extends SimpleWeaponLayer {
 
     private static readonly NAME: string = "MineLayer";
 
-public constructor (viewPosition: ViewPosition){
+public constructor (viewPosition: ViewPositionBase){
             super(MineLayer.NAME, RemoteInfo.REMOTE_INFO,  -1, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), SimpleWeaponLayer.createDestroyed(), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition);
                     
 

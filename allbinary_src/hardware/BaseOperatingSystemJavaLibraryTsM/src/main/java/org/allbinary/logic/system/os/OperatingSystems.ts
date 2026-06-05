@@ -78,7 +78,7 @@ export class OperatingSystems
 
     public readonly ANDROID: string = this.LINUX;
 
-    public readonly HARMONY: string = "Harmony";
+    public readonly HARMONY: string = "HarmonyOS";
 
 private constructor (){
 
