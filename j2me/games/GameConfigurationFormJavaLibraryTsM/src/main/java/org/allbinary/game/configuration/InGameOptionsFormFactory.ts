@@ -32,6 +32,8 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
       
 import { Init } from '../../../../org/allbinary/init/Init.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
@@ -61,14 +63,23 @@ export class InGameOptionsFormFactory
          {
         
 
-    private static readonly instance: InGameOptionsFormFactory = new InGameOptionsFormFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): InGameOptionsFormFactory{
+
+                        if(InGameOptionsFormFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    InGameOptionsFormFactory.instance= new InGameOptionsFormFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InGameOptionsFormFactory.instance;
+                        return InGameOptionsFormFactory.instance as InGameOptionsFormFactory;
     
 }
 

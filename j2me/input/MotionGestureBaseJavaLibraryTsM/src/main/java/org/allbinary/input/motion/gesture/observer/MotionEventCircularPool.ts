@@ -68,9 +68,9 @@ export class MotionEventCircularPool
 }
 
 
-    private static readonly MIN: number = TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()!;
+    private readonly MIN: number = TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()!;
 
-    private eventPool: AllBinaryEventCircularPool = new AllBinaryEventCircularPool((InputFactory.getInstance()!.MAX -1) -MotionEventCircularPool.MIN);
+    private eventPool: AllBinaryEventCircularPool = new AllBinaryEventCircularPool((InputFactory.getInstance()!.MAX -1) -this.MIN);
 
 private constructor (id: number){
 
@@ -88,7 +88,7 @@ private constructor (id: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.eventPool!.getInstance(motionGestureInput!.getId() -MotionEventCircularPool.MIN) as MotionGestureEvent;
+                        return this.eventPool!.getInstance(motionGestureInput!.getId() -this.MIN) as MotionGestureEvent;
     
 }
 

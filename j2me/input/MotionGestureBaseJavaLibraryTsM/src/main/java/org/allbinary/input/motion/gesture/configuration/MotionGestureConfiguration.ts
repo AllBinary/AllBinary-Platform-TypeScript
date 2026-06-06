@@ -30,8 +30,6 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
       
 import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
       
-import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
