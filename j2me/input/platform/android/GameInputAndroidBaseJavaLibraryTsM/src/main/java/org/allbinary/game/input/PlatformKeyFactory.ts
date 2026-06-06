@@ -8,6 +8,8 @@
 
 
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -36,14 +38,23 @@ export class PlatformKeyFactory
          {
         
 
-    private static readonly SINGLETON: PlatformKeyFactory = new PlatformKeyFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): PlatformKeyFactory{
+
+                        if(PlatformKeyFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    PlatformKeyFactory.instance= new PlatformKeyFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PlatformKeyFactory.SINGLETON;
+                        return PlatformKeyFactory.instance as PlatformKeyFactory;
     
 }
 

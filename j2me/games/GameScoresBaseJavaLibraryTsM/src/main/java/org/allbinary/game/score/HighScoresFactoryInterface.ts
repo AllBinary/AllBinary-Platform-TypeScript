@@ -43,7 +43,7 @@ import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-import { HighScoresHelperBase } from './HighScoresHelperBase.js';
+import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
 
 export interface HighScoresFactoryInterface {
         
@@ -52,7 +52,7 @@ export interface HighScoresFactoryInterface {
 
     fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean)
 
-    createHighScoresHelper(): HighScoresHelperBase
+    createHighScoresHelper(): HighScoresHelperBaseInterface
 
 }
                 

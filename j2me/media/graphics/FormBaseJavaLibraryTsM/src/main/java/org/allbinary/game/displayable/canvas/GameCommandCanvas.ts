@@ -180,7 +180,7 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
 
     private menuPaintable: Paintable = NullPaintable.getInstance()!;
 
-    private menuForm: PaintableForm = PaintableForm.NULL_PAINTABLE_FORM;
+    private menuForm: PaintableForm = PaintableForm.getNullPaintableForm()!;
 
     private isSingleKeyRepeatableProcessing: boolean = Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
 

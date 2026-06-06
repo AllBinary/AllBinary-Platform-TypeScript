@@ -24,6 +24,8 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
       
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       
 
@@ -51,7 +53,26 @@ import { FormType } from './FormType.js';
 export class PaintableForm extends ABCustomForm {
         
 
-    public static readonly NULL_PAINTABLE_FORM: PaintableForm = new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    private static NULL_PAINTABLE_FORM: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullPaintableForm(): PaintableForm{
+
+                        if(PaintableForm.NULL_PAINTABLE_FORM == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    PaintableForm.NULL_PAINTABLE_FORM= new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return PaintableForm.NULL_PAINTABLE_FORM as PaintableForm;
+    
+}
+
 
     readonly canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
 

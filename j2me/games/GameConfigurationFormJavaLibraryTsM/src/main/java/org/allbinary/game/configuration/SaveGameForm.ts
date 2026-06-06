@@ -60,7 +60,7 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
 export class SaveGameForm extends CommandForm {
         
 
-    private static FORM: CommandForm = CommandForm.NULL_COMMAND_FORM;
+    private static FORM: CommandForm = CommandForm.getNullCommandForm()!;
 
                 //@Throws(Exception.constructor)
             

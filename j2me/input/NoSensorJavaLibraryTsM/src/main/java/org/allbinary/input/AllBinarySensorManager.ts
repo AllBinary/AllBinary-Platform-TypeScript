@@ -28,6 +28,8 @@ import { AccelerometerSensorFactory } from '../../../org/allbinary/input/acceler
       
 import { GyroSensorFactory } from '../../../org/allbinary/input/gyro/GyroSensorFactory.js';
       
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
@@ -60,14 +62,23 @@ export class AllBinarySensorManager
          {
         
 
-    private static readonly SINGLETON: AllBinarySensorManager = new AllBinarySensorManager();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): AllBinarySensorManager{
+
+                        if(AllBinarySensorManager.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    AllBinarySensorManager.instance= new AllBinarySensorManager();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AllBinarySensorManager.SINGLETON;
+                        return AllBinarySensorManager.instance as AllBinarySensorManager;
     
 }
 

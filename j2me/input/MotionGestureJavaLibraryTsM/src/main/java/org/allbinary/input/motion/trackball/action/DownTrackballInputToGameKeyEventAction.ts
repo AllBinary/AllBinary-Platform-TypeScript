@@ -28,6 +28,8 @@ import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/al
       
 import { TrackballMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js';
       
+import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -50,14 +52,23 @@ import { TrackballMotionGestureFactory } from '../../../../../../org/allbinary/i
 export class DownTrackballInputToGameKeyEventAction extends GameKeyCompleteMotionGestureInputEvent {
         
 
-    private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEvent = new DownTrackballInputToGameKeyEventAction();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
+
+                        if(DownTrackballInputToGameKeyEventAction.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    DownTrackballInputToGameKeyEventAction.instance= new DownTrackballInputToGameKeyEventAction();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DownTrackballInputToGameKeyEventAction.SINGLETON;
+                        return DownTrackballInputToGameKeyEventAction.instance as GameKeyCompleteMotionGestureInputEvent;
     
 }
 

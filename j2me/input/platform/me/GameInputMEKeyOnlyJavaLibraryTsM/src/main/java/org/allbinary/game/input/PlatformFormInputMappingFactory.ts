@@ -26,6 +26,8 @@
         
 import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
@@ -55,27 +57,36 @@ export class PlatformFormInputMappingFactory
          {
         
 
-    private static readonly instance: PlatformFormInputMappingFactory = new PlatformFormInputMappingFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): PlatformFormInputMappingFactory{
+
+                        if(PlatformFormInputMappingFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    PlatformFormInputMappingFactory.instance= new PlatformFormInputMappingFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PlatformFormInputMappingFactory.instance;
+                        return PlatformFormInputMappingFactory.instance as PlatformFormInputMappingFactory;
     
 }
 
 
-    private static SINGLETON: InputToGameKeyMapping = InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
-
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private inputToGameKeyMapping: InputToGameKeyMapping = InputToGameKeyMapping.getNullInstance()!;
 
     public getOrCreate(): InputToGameKeyMapping{
 
         try {
             
-                        if(PlatformFormInputMappingFactory.SINGLETON == InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING)
+                        if(this.inputToGameKeyMapping == InputToGameKeyMapping.getNullInstance())
                         
                                     {
                                     
@@ -94,7 +105,7 @@ inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, gameKeyFactory!.RIGHT);
     
 inputToGameKeyMapping!.add(gameKeyFactory!.KEY_NUM1, gameKeyFactory!.GAME_A);
     
-PlatformFormInputMappingFactory.SINGLETON= inputToGameKeyMapping;
+this.inputToGameKeyMapping= inputToGameKeyMapping;
     
 
                                     }
@@ -114,7 +125,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PlatformFormInputMappingFactory.SINGLETON;
+                        return this.inputToGameKeyMapping;
     
 }
 

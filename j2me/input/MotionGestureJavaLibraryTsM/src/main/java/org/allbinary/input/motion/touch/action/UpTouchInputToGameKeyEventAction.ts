@@ -28,6 +28,8 @@ import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/al
       
 import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
       
+import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -50,14 +52,23 @@ import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input
 export class UpTouchInputToGameKeyEventAction extends GameKeyCompleteMotionGestureInputEvent {
         
 
-    private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEvent = new UpTouchInputToGameKeyEventAction();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
+
+                        if(UpTouchInputToGameKeyEventAction.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    UpTouchInputToGameKeyEventAction.instance= new UpTouchInputToGameKeyEventAction();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return UpTouchInputToGameKeyEventAction.SINGLETON;
+                        return UpTouchInputToGameKeyEventAction.instance as GameKeyCompleteMotionGestureInputEvent;
     
 }
 

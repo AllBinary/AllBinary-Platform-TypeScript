@@ -28,6 +28,8 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
       
 import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
       
+import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
+      
 import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
       
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
@@ -83,13 +85,16 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
                         
                                     {
                                     
-    var highScores: HighScores = this.gameCanvas!.highScoresHelper!.getSelectedHighScores()!;;
+    var highScoresBase: HighScoresHelperBase = this.gameCanvas!.highScoresHelper as HighScoresHelperBase;;
+    
+
+    var highScores: HighScores = highScoresBase!.getSelectedHighScores()!;;
     
 
                         if(highScores != NullHighScoresSingletonFactory.getInstance())
                         
                                     {
-                                    this.gameCanvas!.highScoresHelper!.selectHighScores();
+                                    highScoresBase!.selectHighScores();
     
 this.gameCanvas!.getRealHighScoresPaintable()!.setHighScores(highScores);
     

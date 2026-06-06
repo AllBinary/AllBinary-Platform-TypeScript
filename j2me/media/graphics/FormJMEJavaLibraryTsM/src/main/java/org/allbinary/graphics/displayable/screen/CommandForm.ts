@@ -44,6 +44,8 @@ import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/B
       
 import { MyCommandInterface } from '../../../../../org/allbinary/graphics/displayable/command/MyCommandInterface.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -73,7 +75,26 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
 export class CommandForm extends Form implements MyCommandInterface, MenuListener {
         
 
-    public static readonly NULL_COMMAND_FORM: CommandForm = new CommandForm(NullCommandListener.NULL_COMMAND_LISTENER, StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    private static NULL_COMMAND_FORM: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullCommandForm(): CommandForm{
+
+                        if(CommandForm.NULL_COMMAND_FORM == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    CommandForm.NULL_COMMAND_FORM= new CommandForm(NullCommandListener.NULL_COMMAND_LISTENER, StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return CommandForm.NULL_COMMAND_FORM as CommandForm;
+    
+}
+
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

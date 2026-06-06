@@ -22,6 +22,8 @@
 
 
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
@@ -55,14 +57,23 @@ export class InputFactory
          {
         
 
-    private static readonly instance: InputFactory = new InputFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): InputFactory{
+
+                        if(InputFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    InputFactory.instance= new InputFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InputFactory.instance;
+                        return InputFactory.instance as InputFactory;
     
 }
 
@@ -75,7 +86,7 @@ export class InputFactory
 
     public readonly DEVICE_ID_LABEL: string = "DeviceId: ";
 
-    public readonly MAX: number = SmallIntegerSingletonFactory.getInstance()!.MIN;
+    public readonly MAX: number = SmallIntegerSingletonFactory.getInstance()!.getMin()!;
 
     readonly inputIntegerArray: Input[] = new Array(this.MAX);
 

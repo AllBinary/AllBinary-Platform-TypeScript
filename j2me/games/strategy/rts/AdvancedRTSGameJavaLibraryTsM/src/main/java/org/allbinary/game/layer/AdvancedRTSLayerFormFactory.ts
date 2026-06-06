@@ -68,7 +68,7 @@ protected constructor (label: string, itemArrayFactoryInterface: ItemArraySingle
 
             super();
         
-    var scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM;;
+    var scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.getNullScrollSelectionForm()!;;
     
 
         try {

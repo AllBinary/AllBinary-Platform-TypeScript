@@ -24,6 +24,8 @@
         
 import { BasicGameResources } from '../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
       
+import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -46,14 +48,23 @@ import { BasicGameResources } from '../../../../../../org/allbinary/game/layer/r
 export class MineWeaponResources extends BasicGameResources {
         
 
-    private static readonly SINGLETON: MineWeaponResources = new MineWeaponResources();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): MineWeaponResources{
+
+                        if(MineWeaponResources.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    MineWeaponResources.instance= new MineWeaponResources();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return MineWeaponResources.SINGLETON;
+                        return MineWeaponResources.instance as MineWeaponResources;
     
 }
 

@@ -26,6 +26,8 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
       
 import { InputToGameKeyMapping } from '../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -61,14 +63,23 @@ export class BasicTouchInputFactory
          {
         
 
-    private static readonly SINGLETON: BasicTouchInputFactory = new BasicTouchInputFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): BasicTouchInputFactory{
+
+                        if(BasicTouchInputFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    BasicTouchInputFactory.instance= new BasicTouchInputFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicTouchInputFactory.SINGLETON;
+                        return BasicTouchInputFactory.instance as BasicTouchInputFactory;
     
 }
 

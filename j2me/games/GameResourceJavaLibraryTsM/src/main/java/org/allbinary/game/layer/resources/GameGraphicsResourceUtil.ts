@@ -34,6 +34,8 @@ import { CanvasStrings } from '../../../../../org/allbinary/graphics/displayable
       
 import { OpenGLFeatureUtil } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -66,14 +68,23 @@ export class GameGraphicsResourceUtil
          {
         
 
-    private static readonly instance: GameGraphicsResourceUtil = new GameGraphicsResourceUtil();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameGraphicsResourceUtil{
+
+                        if(GameGraphicsResourceUtil.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GameGraphicsResourceUtil.instance= new GameGraphicsResourceUtil();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameGraphicsResourceUtil.instance;
+                        return GameGraphicsResourceUtil.instance as GameGraphicsResourceUtil;
     
 }
 

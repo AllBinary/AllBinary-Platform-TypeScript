@@ -312,7 +312,7 @@ export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInte
 
     private menuInputProcessor: BasicMenuInputProcessor = NoMenuInputProcessor.getInstance()!;
 
-    private menuForm: ScrollSelectionForm = ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM;
+    private menuForm: ScrollSelectionForm = ScrollSelectionForm.getNullScrollSelectionForm()!;
 
     private readonly gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory;
 

@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
+        
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -72,11 +74,33 @@ export class SmallIntegerSingletonFactory
 
     private readonly STRING_ARRAY: string[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
 
-    public MIN: number = 0;
+    private MIN: number = 0;
 
-    public lastMin: number = 0;
+    private lastMin: number = 0;
 
-    public lastNegativeMin: number = 0;
+    private lastNegativeMin: number = 0;
+
+    public getMin(): number{
+
+                        if(this.MIN == 0)
+                        
+                                    {
+                                    
+
+
+                            throw new RuntimeException();
+                    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.MIN;
+    
+}
+
 
     public initWithRange(value: number, negativeValue: number){
 

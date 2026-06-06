@@ -69,16 +69,16 @@ export class PlatformInputMappingFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private SINGLETON: PersistentInputMapping = PersistentInputMapping.NULL_PERSISTENT_INPUT_MAPPING;
+    private inputToGameKeyMapping: PersistentInputMapping = PersistentInputMapping.getNullInstance()!;
 
     public getPersistentInputMappingInstance(): PersistentInputMapping{
 
         try {
             
-                        if(this.SINGLETON == PersistentInputMapping.NULL_PERSISTENT_INPUT_MAPPING)
+                        if(this.inputToGameKeyMapping == PersistentInputMapping.getNullInstance())
                         
                                     {
-                                    this.SINGLETON= new LaptopGameInputMapping();
+                                    this.inputToGameKeyMapping= new LaptopGameInputMapping();
     
 
                                     }
@@ -98,7 +98,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.SINGLETON;
+                        return this.inputToGameKeyMapping;
     
 }
 

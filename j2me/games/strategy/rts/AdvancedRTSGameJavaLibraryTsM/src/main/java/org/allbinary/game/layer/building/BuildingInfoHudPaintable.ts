@@ -40,6 +40,8 @@ import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/lay
       
 import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
       
+import { NumberStringHudFactory } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHudFactory.js';
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
@@ -99,16 +101,19 @@ private constructor (){
 
             super();
         
-    var productivityHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
+    var numberStringHudFactory: NumberStringHudFactory = NumberStringHudFactory.getInstance()!;;
     
 
-    var efficiencyHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
+    var productivityHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
     
 
-    var healthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
+    var efficiencyHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
     
 
-    var maxHealthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;;
+    var healthHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
+    
+
+    var maxHealthHud: NumberStringHud = numberStringHudFactory!.NULL_NUMBER_STRING_HUD;;
     
 
         try {

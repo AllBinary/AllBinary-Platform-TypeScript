@@ -24,6 +24,8 @@
         
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -49,14 +51,23 @@ export class TouchMotionGestureFactory
          {
         
 
-    private static readonly instance: TouchMotionGestureFactory = new TouchMotionGestureFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): TouchMotionGestureFactory{
+
+                        if(TouchMotionGestureFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    TouchMotionGestureFactory.instance= new TouchMotionGestureFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TouchMotionGestureFactory.instance;
+                        return TouchMotionGestureFactory.instance as TouchMotionGestureFactory;
     
 }
 

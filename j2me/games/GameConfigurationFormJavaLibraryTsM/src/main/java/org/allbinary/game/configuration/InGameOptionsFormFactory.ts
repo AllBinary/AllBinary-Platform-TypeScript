@@ -75,13 +75,13 @@ export class InGameOptionsFormFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private SINGLETON: CommandForm = CommandForm.NULL_COMMAND_FORM;
+    private SINGLETON: CommandForm = CommandForm.getNullCommandForm()!;
 
     public init(commandListener: CommandListener, initInterface: Init, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
         try {
             
-                        if(this.SINGLETON == CommandForm.NULL_COMMAND_FORM)
+                        if(this.SINGLETON == CommandForm.getNullCommandForm())
                         
                                     {
                                     initInterface!.init();

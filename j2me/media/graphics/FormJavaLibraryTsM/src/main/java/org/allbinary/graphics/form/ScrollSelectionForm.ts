@@ -42,6 +42,8 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
       
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
@@ -118,9 +120,47 @@ export class ScrollSelectionForm extends PaintableForm {
 }
 
 
-    public static readonly NULL_SCROLL_SELECTION_FORM: ScrollSelectionForm = ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
+    private static NULL_SCROLL_SELECTION_FORM: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    public static readonly NULL_SCROLL_SELECTION_HORIZONTAL_FORM: ScrollSelectionForm = ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
+    public static getNullScrollSelectionForm(): ScrollSelectionForm{
+
+                        if(ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM= ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM as ScrollSelectionForm;
+    
+}
+
+
+    private static NULL_SCROLL_SELECTION_HORIZONTAL_FORM: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullScrollSelectionFormHorizontal(): ScrollSelectionForm{
+
+                        if(ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM= ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM as ScrollSelectionForm;
+    
+}
+
 
     private static readonly GET_SELECTED_INDEX: string = "getSelectedIndex";
 

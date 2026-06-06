@@ -59,14 +59,23 @@ export class GameKeyEventFactory
          {
         
 
-    private static readonly instance: GameKeyEventFactory = new GameKeyEventFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameKeyEventFactory{
+
+                        if(GameKeyEventFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GameKeyEventFactory.instance= new GameKeyEventFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameKeyEventFactory.instance;
+                        return GameKeyEventFactory.instance as GameKeyEventFactory;
     
 }
 

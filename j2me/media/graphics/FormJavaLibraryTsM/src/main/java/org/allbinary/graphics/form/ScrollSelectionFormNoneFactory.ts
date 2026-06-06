@@ -22,14 +22,6 @@
 
 
         
-import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
-      
-import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      
-import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-      
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-      
 
 
 
@@ -60,7 +52,7 @@ export class ScrollSelectionFormNoneFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM;
+                        return ScrollSelectionForm.getNullScrollSelectionFormHorizontal();;
     
 }
 

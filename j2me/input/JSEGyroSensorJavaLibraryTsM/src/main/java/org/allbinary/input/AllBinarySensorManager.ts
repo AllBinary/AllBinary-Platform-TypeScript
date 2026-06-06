@@ -22,6 +22,8 @@
 
 
         
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
       
 import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
@@ -50,14 +52,23 @@ export class AllBinarySensorManager
          {
         
 
-    private static readonly SINGLETON: AllBinarySensorManager = new AllBinarySensorManager();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): AllBinarySensorManager{
+
+                        if(AllBinarySensorManager.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    AllBinarySensorManager.instance= new AllBinarySensorManager();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AllBinarySensorManager.SINGLETON;
+                        return AllBinarySensorManager.instance as AllBinarySensorManager;
     
 }
 

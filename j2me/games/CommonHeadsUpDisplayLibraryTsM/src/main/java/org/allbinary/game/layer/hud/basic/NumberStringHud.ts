@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -24,8 +24,6 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
-        
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
@@ -34,8 +32,6 @@ import { BasicHudFactory } from '../../../../../../org/allbinary/game/graphics/h
       
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
       
-import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      
 import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
       
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
@@ -43,8 +39,6 @@ import { PaintableInterface } from '../../../../../../org/allbinary/graphics/pai
 import { PrimitiveLongSingleton } from '../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
       
 import { PrimitiveLongUtil } from '../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
-      
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       
 
 
@@ -67,31 +61,6 @@ import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringU
         
 export class NumberStringHud extends BasicHud implements PaintableInterface {
         
-
-    public static createHud(): NumberStringHud{
-
-        try {
-            
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return new NumberStringHud(StringUtil.getInstance()!.EMPTY_STRING, 9, BasicHudFactory.getInstance()!.ABSOLUTE, 1, 0, 0, 0, BasicColorFactory.getInstance()!.NULL_COLOR);
-    
-
-                //: 
-} catch(e) 
-            {
-
-
-
-                            throw new RuntimeException();
-                    
-}
-
-}
-
-
-    public static readonly NULL_NUMBER_STRING_HUD: NumberStringHud = NumberStringHud.createHud()!;
 
     private readonly PREPEND_STRING: string[];
 

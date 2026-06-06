@@ -48,6 +48,7 @@ import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUt
 import { HighScores } from './HighScores.js';
 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
 import { HighScoresHelperBase } from './HighScoresHelperBase.js';
+import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
 
 export class NoHighScoresFactory extends HighScoresBase {
         
@@ -82,7 +83,7 @@ highScoresResultsListener!.setHighScoresArray(this.NO_HIGH_SCORES);
 }
 
 
-    public createHighScoresHelper(): HighScoresHelperBase{
+    public createHighScoresHelper(): HighScoresHelperBaseInterface{
 
 
 

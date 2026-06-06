@@ -38,7 +38,7 @@ import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.j
       
 import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
       
-import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
+import { HighScoresHelperBaseInterface } from '../../../../../org/allbinary/game/score/HighScoresHelperBaseInterface.js';
       
 import { HighScoresResultsListener } from '../../../../../org/allbinary/game/score/HighScoresResultsListener.js';
       
@@ -94,11 +94,11 @@ export class HighScoreUtil
 
     private readonly gameInfo: GameInfo;
 
-    private readonly highScoresHelper: HighScoresHelperBase;
+    private readonly highScoresHelper: HighScoresHelperBaseInterface;
 
     private firstTime: boolean = true;
 
-public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore){
+public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBaseInterface, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore){
 
             super();
         this.highScoresFactoryInterface= highScoresFactoryInterface;

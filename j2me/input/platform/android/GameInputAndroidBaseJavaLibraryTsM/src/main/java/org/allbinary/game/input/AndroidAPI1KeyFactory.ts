@@ -8,6 +8,8 @@
 
 
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -31,14 +33,23 @@
 export class AndroidAPI1KeyFactory extends AndroidKeyFactory {
         
 
-    private static readonly SINGLETON: AndroidAPI1KeyFactory = new AndroidAPI1KeyFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): AndroidAPI1KeyFactory{
+
+                        if(AndroidAPI1KeyFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    AndroidAPI1KeyFactory.instance= new AndroidAPI1KeyFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AndroidAPI1KeyFactory.SINGLETON;
+                        return AndroidAPI1KeyFactory.instance as AndroidAPI1KeyFactory;
     
 }
 

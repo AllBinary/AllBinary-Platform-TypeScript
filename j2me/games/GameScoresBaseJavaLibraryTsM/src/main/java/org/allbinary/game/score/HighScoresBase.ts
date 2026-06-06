@@ -48,7 +48,7 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresFactoryInterface } from './HighScoresFactoryInterface.js';
 import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-import { HighScoresHelperBase } from './HighScoresHelperBase.js';
+import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
 
 export class HighScoresBase
             extends Object
@@ -81,7 +81,7 @@ protected constructor (){
 }
 
 
-    public createHighScoresHelper(): HighScoresHelperBase{
+    public createHighScoresHelper(): HighScoresHelperBaseInterface{
 
 
 

@@ -24,6 +24,8 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
       
 
@@ -52,14 +54,23 @@ export class GameKeyFactory
          {
         
 
-    private static readonly instance: GameKeyFactory = new GameKeyFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameKeyFactory{
+
+                        if(GameKeyFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GameKeyFactory.instance= new GameKeyFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameKeyFactory.instance;
+                        return GameKeyFactory.instance as GameKeyFactory;
     
 }
 

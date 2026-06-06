@@ -286,7 +286,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
                     
 SmallIntegerSingletonFactory.getInstance()!.initWithRange(0x291, 6);
     
-this.loadGameForm= CommandForm.NULL_COMMAND_FORM;
+this.loadGameForm= CommandForm.getNullCommandForm();
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;;
@@ -1099,7 +1099,7 @@ keyValuePersistance!.clear();
 keyValuePersistance!.loadAll(this.abeClientInformation);
     
 
-                        if(this.getLoadGameForm() == CommandForm.NULL_COMMAND_FORM)
+                        if(this.getLoadGameForm() == CommandForm.getNullCommandForm())
                         
                                     {
                                     

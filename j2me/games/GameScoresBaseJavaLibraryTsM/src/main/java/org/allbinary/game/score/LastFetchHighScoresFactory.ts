@@ -22,6 +22,8 @@
 
 
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -48,14 +50,23 @@ export class LastFetchHighScoresFactory
          {
         
 
-    private static readonly instance: LastFetchHighScoresFactory = new LastFetchHighScoresFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): LastFetchHighScoresFactory{
+
+                        if(LastFetchHighScoresFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    LastFetchHighScoresFactory.instance= new LastFetchHighScoresFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LastFetchHighScoresFactory.instance;
+                        return LastFetchHighScoresFactory.instance as LastFetchHighScoresFactory;
     
 }
 

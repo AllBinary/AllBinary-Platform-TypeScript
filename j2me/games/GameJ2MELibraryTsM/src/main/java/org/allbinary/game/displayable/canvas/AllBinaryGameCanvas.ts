@@ -138,9 +138,9 @@ import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/r
       
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
       
-import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
+import { HighScoresHelperBaseInterface } from '../../../../../org/allbinary/game/score/HighScoresHelperBaseInterface.js';
       
-import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
+import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
       
 import { HighScoresPaintable } from '../../../../../org/allbinary/game/score/HighScoresPaintable.js';
       
@@ -378,7 +378,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private readonly gameStateTimeHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-    readonly highScoresHelper: HighScoresHelperBase;
+    readonly highScoresHelper: HighScoresHelperBaseInterface;
 
     private highScoreSubmitted: boolean= false;
 
@@ -436,7 +436,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private menuInputProcessor: BasicMenuInputProcessor = NoMenuInputProcessor.getInstance()!;
 
-    private menuForm: ScrollSelectionForm = ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM;
+    private menuForm: ScrollSelectionForm = ScrollSelectionForm.getNullScrollSelectionForm()!;
 
     private formPaintable: Paintable = NullPaintable.getInstance()!;
 

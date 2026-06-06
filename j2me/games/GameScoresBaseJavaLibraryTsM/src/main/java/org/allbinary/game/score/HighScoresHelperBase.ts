@@ -48,14 +48,14 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+        import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
 import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
 import { HighScores } from './HighScores.js';
 import { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
 
 export class HighScoresHelperBase
             extends Object
-         implements HighScoresResultsListener {
+         implements HighScoresHelperBaseInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

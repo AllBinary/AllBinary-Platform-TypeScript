@@ -48,7 +48,7 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
 export class InputMappingEvent extends AllBinaryEventObject {
         
 
-    private inputToGameKeyMapping: InputToGameKeyMapping = InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
+    private inputToGameKeyMapping: InputToGameKeyMapping = InputToGameKeyMapping.getNullInstance()!;
 
 public constructor (anyType: any = {}){
             super(anyType);

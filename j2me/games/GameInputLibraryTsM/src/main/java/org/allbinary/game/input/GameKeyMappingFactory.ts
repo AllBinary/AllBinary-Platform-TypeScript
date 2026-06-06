@@ -22,6 +22,8 @@
 
 
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -49,14 +51,23 @@ export class GameKeyMappingFactory
          {
         
 
-    private static readonly SINGLETON: GameKeyMappingFactory = new GameKeyMappingFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameKeyMappingFactory{
+
+                        if(GameKeyMappingFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GameKeyMappingFactory.instance= new GameKeyMappingFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameKeyMappingFactory.SINGLETON;
+                        return GameKeyMappingFactory.instance as GameKeyMappingFactory;
     
 }
 

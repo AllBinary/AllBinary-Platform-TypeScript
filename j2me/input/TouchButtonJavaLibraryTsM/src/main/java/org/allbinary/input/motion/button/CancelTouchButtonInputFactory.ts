@@ -24,6 +24,8 @@
         
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -50,14 +52,23 @@ export class CancelTouchButtonInputFactory
          {
         
 
-    private static readonly instance: CancelTouchButtonInputFactory = new CancelTouchButtonInputFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): CancelTouchButtonInputFactory{
+
+                        if(CancelTouchButtonInputFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    CancelTouchButtonInputFactory.instance= new CancelTouchButtonInputFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CancelTouchButtonInputFactory.instance;
+                        return CancelTouchButtonInputFactory.instance as CancelTouchButtonInputFactory;
     
 }
 

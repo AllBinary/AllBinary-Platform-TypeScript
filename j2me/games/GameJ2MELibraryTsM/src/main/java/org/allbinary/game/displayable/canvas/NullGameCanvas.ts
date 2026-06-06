@@ -38,6 +38,8 @@ import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/lay
       
 import { NoHighScoresFactory } from '../../../../../org/allbinary/game/score/NoHighScoresFactory.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
@@ -90,14 +92,23 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 }
 
 
-    private static readonly SINGLETON: NullGameCanvas = NullGameCanvas.createNull()!;
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): NullGameCanvas{
+
+                        if(NullGameCanvas.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    NullGameCanvas.instance= NullGameCanvas.createNull();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullGameCanvas.SINGLETON;
+                        return NullGameCanvas.instance as NullGameCanvas;
     
 }
 

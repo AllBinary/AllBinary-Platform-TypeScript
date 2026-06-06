@@ -60,9 +60,7 @@ export class CountedLayersHudPaintable
          implements PaintableInterface {
         
 
-    private static readonly XXString: string = "XX";
-
-    private static readonly XXStringWidth: number = MyFont.getInstance()!.stringWidth(CountedLayersHudPaintable.XXString)!;
+    private static XXStringWidth: number = 0;
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
 
@@ -89,6 +87,18 @@ this.countedPartsBorder= countedPartsBorder;
     
 this.dropSize= dropSize;
     
+
+                        if(CountedLayersHudPaintable.XXStringWidth == 0)
+                        
+                                    {
+                                    
+    var XXString: string = "XX";;
+    
+CountedLayersHudPaintable.XXStringWidth= MyFont.getInstance()!.stringWidth(XXString);
+    
+
+                                    }
+                                
 }
 
 

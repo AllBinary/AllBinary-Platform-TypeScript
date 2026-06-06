@@ -10,6 +10,8 @@
         
 import { KeyEvent } from '../../../../android/view/KeyEvent.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -34,14 +36,23 @@ import { AndroidGameKey } from './AndroidGameKey.js';
 export class AndroidAPI9KeyFactory extends AndroidKeyFactory {
         
 
-    private static readonly SINGLETON: AndroidAPI9KeyFactory = new AndroidAPI9KeyFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): AndroidAPI9KeyFactory{
+
+                        if(AndroidAPI9KeyFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    AndroidAPI9KeyFactory.instance= new AndroidAPI9KeyFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AndroidAPI9KeyFactory.SINGLETON;
+                        return AndroidAPI9KeyFactory.instance as AndroidAPI9KeyFactory;
     
 }
 

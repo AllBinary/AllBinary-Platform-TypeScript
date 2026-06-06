@@ -30,6 +30,8 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
       
 import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
       
+import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -80,29 +82,6 @@ public constructor (){
 
             super();
         }
-
-
-    public getMotionGestureAction(index: number): CompleteMotionGestureInputEvent{
-
-                        if(index >= this.activeCommands!.size())
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return CompleteMotionGestureInputEvent.NULL_COMPLETE_MOTION_GESTURE_INPUT_EVENT;
-    
-
-                                    }
-                                
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.activeCommands!.objectArray[index]! as CompleteMotionGestureInputEvent;
-    
-}
 
 
     public addMotionGestureAction(list: BasicArrayList, commandAction: CompleteMotionGestureInputEvent){

@@ -36,6 +36,8 @@ import { Input } from '../../../../../org/allbinary/game/input/Input.js';
       
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -73,7 +75,26 @@ import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayLis
 export class InputToGameKeyMapping extends InputMapping {
         
 
-    public static readonly NULL_INPUT_TO_GAME_KEY_MAPPING: InputToGameKeyMapping = new InputToGameKeyMapping();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullInstance(): InputToGameKeyMapping{
+
+                        if(InputToGameKeyMapping.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    InputToGameKeyMapping.instance= new InputToGameKeyMapping();
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return InputToGameKeyMapping.instance as InputToGameKeyMapping;
+    
+}
+
 
     private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
 
@@ -82,9 +103,9 @@ export class InputToGameKeyMapping extends InputMapping {
                                                             this.gameKeyFactory!.UP,this.gameKeyFactory!.DOWN,this.gameKeyFactory!.LEFT,this.gameKeyFactory!.RIGHT
                                                         ];
 
-    negativePlatformToGameKeyMapping: GameKey[] = [];
-
     private readonly platformToGameKeyMapping: GameKey[] = new Array(InputFactory.getInstance()!.MAX);
+
+    negativePlatformToGameKeyMapping: GameKey[] = [];
 
 public constructor (){
 

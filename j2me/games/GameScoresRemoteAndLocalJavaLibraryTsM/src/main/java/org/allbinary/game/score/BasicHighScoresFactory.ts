@@ -71,7 +71,7 @@ import { RecordStoreHighScores } from './RecordStoreHighScores.js';
 import { ScoreComparator } from './ScoreComparator.js';
 import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
 import { HighScoresHelper2 } from './HighScoresHelper2.js';
-import { HighScoresHelperBase } from './HighScoresHelperBase.js';
+import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
 
 export class BasicHighScoresFactory extends HighScoresBase {
         
@@ -200,7 +200,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, FETCH, e);
 }
 
 
-    public createHighScoresHelper(): HighScoresHelperBase{
+    public createHighScoresHelper(): HighScoresHelperBaseInterface{
 
 
 

@@ -40,6 +40,8 @@ import { InputMappingEventListenerInterface } from '../../../../../org/allbinary
       
 import { NullInputMappingEventListener } from '../../../../../org/allbinary/game/input/mapping/event/NullInputMappingEventListener.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
@@ -79,7 +81,26 @@ export class PersistentInputMapping
          {
         
 
-    public static readonly NULL_PERSISTENT_INPUT_MAPPING: PersistentInputMapping = new PersistentInputMapping(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
+    public static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullInstance(): PersistentInputMapping{
+
+                        if(PersistentInputMapping.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    PersistentInputMapping.instance= new PersistentInputMapping(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return PersistentInputMapping.instance as PersistentInputMapping;
+    
+}
+
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -126,7 +147,7 @@ protected constructor (name: string){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
+                        return InputToGameKeyMapping.getNullInstance();;
     
 }
 
