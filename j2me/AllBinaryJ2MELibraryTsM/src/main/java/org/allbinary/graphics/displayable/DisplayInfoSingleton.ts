@@ -142,6 +142,25 @@ private constructor (){
 
             super();
         
+    var size: number = this.last.length
+                ;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+this.last[index]= 0;
+    
+this.lastHalf[index]= 0;
+    
+this.full[index]= 0;
+    
+}
+
+
                         if(AndroidUtil.isAndroid())
                         
                                     {

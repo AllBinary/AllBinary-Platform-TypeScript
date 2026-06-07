@@ -26,6 +26,8 @@
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
+import { GroupCommonFactory } from '../../../../../org/allbinary/game/identification/GroupCommonFactory.js';
+      
 import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
       
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
@@ -86,6 +88,8 @@ export class RTSFormInput
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    private readonly groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;
+
     private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     readonly newUnconstructedRTSLayerInterfaceArray: CollidableDestroyableDamageableLayer[] = new Array(7);
@@ -128,7 +132,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
                                 )
                         
                                     {
-                                    this.hashtable.put(Group.ID, groupInterfaceArray);
+                                    this.hashtable.put(this.groupCommonFactory!.ID, groupInterfaceArray);
     
 
                                     }

@@ -26,6 +26,8 @@
         
 import { Hashtable } from '../../../../../../../../java/util/Hashtable.js';
       
+import { GroupCommonFactory } from '../../../../../../../../org/allbinary/game/identification/GroupCommonFactory.js';
+      
 import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
       
 import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
@@ -107,6 +109,8 @@ export class RaceTrackAdjacentDropCellPositionGenerator extends RaceTrackDropCel
 
 
     private readonly layerCoveringCellPositionsUtil: LayerCoveringCellPositionsUtil = LayerCoveringCellPositionsUtil.getInstance()!;
+
+    private readonly groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;
 
     private surroundingCellPositions: GeographicMapCellPosition[] = new Array(4);
 
@@ -229,7 +233,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
     var direction: Direction = this.geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(randomGeographicMapCellPosition, geographicMapCellPosition)!;;
     
 
-    var objectCanBeNull: any = this.hashtable.get(Group.ID);;
+    var objectCanBeNull: any = this.hashtable.get(this.groupCommonFactory!.ID);;
     
 
                         if(objectCanBeNull != 
@@ -241,7 +245,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
                                     }
                                 
                         else {
-                            this.hashtable.put(Group.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY);
+                            this.hashtable.put(this.groupCommonFactory!.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY);
     
 
                         }

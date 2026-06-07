@@ -22,10 +22,6 @@
 
 
         
-            import { Integer } from '../../../../java/lang/Integer.js';
-        
-import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
@@ -49,17 +45,12 @@ import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GroupInterface } from './GroupInterface.js';
+import { GroupCommonFactory } from './GroupCommonFactory.js';
 
 export class Group
             extends Object
          implements GroupInterface {
         
-
-    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(10)!;
-
-    private static readonly GROUP_NAME_LABEL: string = "Group Name: ";
-
-    private static readonly ID_LABEL: string = " Id: ";
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
 
@@ -91,13 +82,16 @@ this.setName(teamName);
 this.name= name;
     
 
+    var groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;;
+    
+
     var stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(Group.GROUP_NAME_LABEL);
+stringBuffer!.append(groupCommonFactory!.GROUP_NAME_LABEL);
     
 stringBuffer!.append(this.name);
     
-stringBuffer!.append(Group.ID_LABEL);
+stringBuffer!.append(groupCommonFactory!.ID_LABEL);
     
 stringBuffer!.appendshort(this.teamId);
     

@@ -63,11 +63,13 @@ export class GameConfiguration
          {
         
 
+    private static readonly MIN_VALUE: Integer = new Integer(Integer.MIN_VALUE);
+
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private defaultValue: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private value: Integer;
+    private value: Integer = GameConfiguration.MIN_VALUE;
 
     private minValue: Integer = this.defaultValue;
 

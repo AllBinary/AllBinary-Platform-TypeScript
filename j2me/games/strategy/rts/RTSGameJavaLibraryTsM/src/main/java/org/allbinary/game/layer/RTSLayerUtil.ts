@@ -28,6 +28,8 @@
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
       
+import { GroupCommonFactory } from '../../../../org/allbinary/game/identification/GroupCommonFactory.js';
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -92,6 +94,8 @@ export class RTSLayerUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;
 
     createWeaponProperties(weaponProperties: WeaponProperties, currentLevel: number, lastLevel: number): WeaponProperties{
 
@@ -405,7 +409,7 @@ hashtable.put(AllBinaryGameLayerManager.ID, layerManager);
     
 hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getInstance()!.LEFT);
     
-hashtable.put(Group.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY);
+hashtable.put(this.groupCommonFactory!.ID, BasicGroupFactory.getInstance()!.NONE_ARRAY);
     
 
 

@@ -80,6 +80,8 @@ import { HealthBarTwodAnimation } from '../../../../../org/allbinary/game/health
       
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
       
+import { GroupCommonFactory } from '../../../../../org/allbinary/game/identification/GroupCommonFactory.js';
+      
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
       
 import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
@@ -301,6 +303,8 @@ export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventList
 
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
 
+    private readonly groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;
+
     private readonly layerPartialCellPositionsUtil: LayerPartialCellPositionsUtil = LayerPartialCellPositionsUtil.getInstance()!;
 
     private readonly layerDistanceUtil: LayerDistanceUtil = LayerDistanceUtil.getInstance()!;
@@ -440,7 +444,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 
     var hashtable: Hashtable<any, any> = new Hashtable<any, any>();;
     
-hashtable.put(Group.ID, this.getGroupInterface());
+hashtable.put(this.groupCommonFactory!.ID, this.getGroupInterface());
     
 hashtable.put(Layer.ID, this);
     

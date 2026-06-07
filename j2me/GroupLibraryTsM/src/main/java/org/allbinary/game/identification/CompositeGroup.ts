@@ -53,15 +53,12 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Group } from './Group.js';
+import { GroupCommonFactory } from './GroupCommonFactory.js';
 
 export class CompositeGroup
             extends Object
          {
         
-
-    private static readonly ADDING_LABEL: string = "Adding: ";
-
-    private static readonly TO_LABEL: string = " to: ";
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -88,13 +85,16 @@ this.list.clear();
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
+    var groupCommonFactory: GroupCommonFactory = GroupCommonFactory.getInstance()!;;
+    
+
     var stringBuffer: StringMaker = new StringMaker();;
     
-stringBuffer!.append(CompositeGroup.ADDING_LABEL);
+stringBuffer!.append(groupCommonFactory!.ADDING_LABEL);
     
 stringBuffer!.append(groupInterface!.toString());
     
-stringBuffer!.append(CompositeGroup.TO_LABEL);
+stringBuffer!.append(groupCommonFactory!.TO_LABEL);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(this.groupInterface));
     

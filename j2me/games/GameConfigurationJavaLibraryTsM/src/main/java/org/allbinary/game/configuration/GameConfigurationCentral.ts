@@ -32,6 +32,8 @@ import { GameConfigurationPersistanceSingleton } from '../../../../org/allbinary
       
 import { KeyValuePersistance } from '../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
       
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
@@ -71,14 +73,23 @@ export class GameConfigurationCentral
          {
         
 
-    private static readonly SINGLETON: GameConfigurationCentral = new GameConfigurationCentral();
+    private static SINGLETON: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): GameConfigurationCentral{
+
+                        if(GameConfigurationCentral.SINGLETON == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GameConfigurationCentral.SINGLETON= new GameConfigurationCentral();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameConfigurationCentral.SINGLETON;
+                        return GameConfigurationCentral.SINGLETON as GameConfigurationCentral;
     
 }
 

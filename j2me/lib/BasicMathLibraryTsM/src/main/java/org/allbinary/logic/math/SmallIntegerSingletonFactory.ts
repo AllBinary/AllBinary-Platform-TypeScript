@@ -81,6 +81,18 @@ export class SmallIntegerSingletonFactory
     private lastNegativeMin: number = 0;
 
     public getMin(): number{
+this.checkMe();
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.MIN;
+    
+}
+
+
+    public checkMe(){
 
                         if(this.MIN == 0)
                         
@@ -93,12 +105,6 @@ export class SmallIntegerSingletonFactory
 
                                     }
                                 
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.MIN;
-    
 }
 
 
@@ -192,6 +198,8 @@ private constructor (){
 
 
     public getAt(index: number): Integer{
+this.checkMe();
+    
 
 
 
@@ -202,6 +210,8 @@ private constructor (){
 
 
     public getAtNoThrow(index: number): Integer{
+this.checkMe();
+    
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
                         
