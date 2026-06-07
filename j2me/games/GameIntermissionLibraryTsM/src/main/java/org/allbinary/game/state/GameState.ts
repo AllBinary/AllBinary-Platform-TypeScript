@@ -40,16 +40,11 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameStateFactory } from './GameStateFactory.js';
-
+        
 export class GameState
             extends Object
          {
         
-
-    public static NO_GAME_STATE: GameState = GameStateFactory.getInstance("NO_GAME_STATE")!;
-
-    public static PLAYING_GAME_STATE: GameState = GameStateFactory.getInstance("PLAYING_GAME_STATE")!;
 
     private name: string;
 

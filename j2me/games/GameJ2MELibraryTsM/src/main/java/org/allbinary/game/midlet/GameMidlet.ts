@@ -130,7 +130,7 @@ import { HighScoreUtil } from '../../../../org/allbinary/game/score/displayable/
       
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
       
-import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
+import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
       
 import { ResizableListenerHandler } from '../../../../org/allbinary/graphics/ResizableListenerHandler.js';
       
@@ -239,6 +239,8 @@ export class GameMidlet extends ProgressMidlet implements CommandListener {
     readonly gameStrings: GameStrings = GameStrings.getInstance()!;
 
     readonly gameAdStateFactory: GameAdStateFactory = GameAdStateFactory.getInstance()!;
+
+    readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
 
     readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
@@ -514,7 +516,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, START_APP);
                         if(gameCanvasRunnableInterface == NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    this.gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
+                                    this.gameMidletStateFactory!.setCurrentGameState(this.gameStateFactory!.NO_GAME_STATE);
     
 this.setDemo();
     
@@ -666,7 +668,7 @@ GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, De
                         
                                     {
                                     
-                        if(this.gameMidletStateFactory!.getCurrentGameState() != GameState.PLAYING_GAME_STATE || command == gameCommandsFactory!.RESTART_COMMAND)
+                        if(this.gameMidletStateFactory!.getCurrentGameState() != this.gameStateFactory!.PLAYING_GAME_STATE || command == gameCommandsFactory!.RESTART_COMMAND)
                         
                                     {
                                     
@@ -687,7 +689,7 @@ GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, De
     
 this.createGame();
     
-this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
+this.gameMidletStateFactory!.setCurrentGameState(this.gameStateFactory!.PLAYING_GAME_STATE);
     
 
                         }
@@ -766,7 +768,7 @@ menuListener!.close();
                                 
 this.stopGameCanvasRunnableInterface();
     
-this.gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
+this.gameMidletStateFactory!.setCurrentGameState(this.gameStateFactory!.NO_GAME_STATE);
     
 this.setDemo();
     

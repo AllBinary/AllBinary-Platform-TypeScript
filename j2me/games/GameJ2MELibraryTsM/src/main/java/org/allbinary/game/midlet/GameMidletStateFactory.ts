@@ -10,6 +10,8 @@
         
 import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
       
+import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
@@ -54,7 +56,7 @@ export class GameMidletStateFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private currentGameState: GameState = GameState.NO_GAME_STATE;
+    private currentGameState: GameState = GameStateFactory.getInstance()!.NO_GAME_STATE;
 
 private constructor (){
 

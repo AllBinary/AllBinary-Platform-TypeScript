@@ -328,10 +328,6 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private static readonly id: number = 0;
 
-    public static readonly SHOW_END_RESULT_GAME_STATE: GameState = GameStateFactory.getInstance("SHOW_END_RESULT_GAME_STATE")!;
-
-    public static readonly SHOW_HIGH_SCORE_GAME_STATE: GameState = GameStateFactory.getInstance("SHOW_HIGH_SCORE_GAME_STATE")!;
-
     public static readonly TYPE: number = 2;
 
     readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
@@ -349,6 +345,8 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
     readonly gameStrings: GameStrings = GameStrings.getInstance()!;
 
     readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
+
+    readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 
@@ -370,7 +368,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     gameLayerManager: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
 
-    private gameState: GameState = GameState.NO_GAME_STATE;
+    private gameState: GameState = this.gameStateFactory!.NO_GAME_STATE;
 
     private gameOver: boolean= false;
 
@@ -1472,7 +1470,7 @@ this.setGameOver(true);
     
 this.removePauseCommand();
     
-this.setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE);
+this.setGameState(this.gameStateFactory!.SHOW_END_RESULT_GAME_STATE);
     
 this.setEndGamePaintable(this.getEndGameStatePaintable());
     
@@ -1545,7 +1543,7 @@ this.gameBehavior!.setGameState(this);
 gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()!.getGameType());
     
 
-                        if(this.gameState != GameState.PLAYING_GAME_STATE)
+                        if(this.gameState != this.gameStateFactory!.PLAYING_GAME_STATE)
                         
                                     {
                                     gameAdState!.processPageAdState();
@@ -1558,7 +1556,7 @@ gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()
 
     updateGameKeyEventProcessor(){
 
-                        if(this.getGameState() != GameState.PLAYING_GAME_STATE || this.isCheating)
+                        if(this.getGameState() != this.gameStateFactory!.PLAYING_GAME_STATE || this.isCheating)
                         
                                     {
                                     
@@ -1623,7 +1621,7 @@ this.gameBehavior!.updateEndGameProcessor(this);
             
     updateEndGameProcessor2(){
 
-                        if(this.getGameState() == AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE || this.getGameState() == AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
+                        if(this.getGameState() == this.gameStateFactory!.SHOW_END_RESULT_GAME_STATE || this.getGameState() == this.gameStateFactory!.SHOW_HIGH_SCORE_GAME_STATE)
                         
                                     {
                                     this.setEndGameProcessor(this.realEndGameProcessor);

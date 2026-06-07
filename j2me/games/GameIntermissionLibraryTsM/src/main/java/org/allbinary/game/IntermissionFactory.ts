@@ -62,13 +62,13 @@ export class IntermissionFactory
 }
 
 
-    public readonly START_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance("START_LEVEL_INTERMISSION_GAME_STATE")!;
+    public readonly START_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance()!.createGameState("START_LEVEL_INTERMISSION_GAME_STATE")!;
 
-    public readonly WAIT_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance("WAIT_LEVEL_INTERMISSION_GAME_STATE")!;
+    public readonly WAIT_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance()!.createGameState("WAIT_LEVEL_INTERMISSION_GAME_STATE")!;
 
-    public readonly SHOW_RESULTS_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance("SHOW_RESULTS_LEVEL_INTERMISSION_GAME_STATE")!;
+    public readonly SHOW_RESULTS_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance()!.createGameState("SHOW_RESULTS_LEVEL_INTERMISSION_GAME_STATE")!;
 
-    public readonly SHOW_HIGH_SCORE_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance("SHOW_HIGH_SCORE_LEVEL_INTERMISSION_GAME_STATE")!;
+    public readonly SHOW_HIGH_SCORE_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance()!.createGameState("SHOW_HIGH_SCORE_LEVEL_INTERMISSION_GAME_STATE")!;
 
 }
                 

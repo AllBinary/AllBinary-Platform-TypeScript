@@ -36,6 +36,8 @@ import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
       
 import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
       
+import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+      
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
       
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -66,6 +68,8 @@ export class NullGameCanvasRunnable
         
 
     public static readonly NULL_GAME_CANVAS_RUNNABLE: NullGameCanvasRunnable = new NullGameCanvasRunnable();
+
+    readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
 
     public getTitle(): string{
 
@@ -192,7 +196,7 @@ export class NullGameCanvasRunnable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameState.NO_GAME_STATE;
+                        return this.gameStateFactory!.NO_GAME_STATE;
     
 }
 

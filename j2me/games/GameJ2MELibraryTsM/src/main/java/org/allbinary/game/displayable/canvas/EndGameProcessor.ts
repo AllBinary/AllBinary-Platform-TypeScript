@@ -32,6 +32,8 @@ import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/Hi
       
 import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
       
+import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+      
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
       
 
@@ -57,6 +59,8 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
 export class EndGameProcessor extends Processor {
         
 
+    readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
+
     private gameCanvas: AllBinaryGameCanvas;
 
     private readonly WAIT: number = 5000;
@@ -81,7 +85,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
                         
                                     {
                                     
-                        if(this.gameCanvas!.getGameState() == AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE)
+                        if(this.gameCanvas!.getGameState() == this.gameStateFactory!.SHOW_END_RESULT_GAME_STATE)
                         
                                     {
                                     
@@ -98,7 +102,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
     
 this.gameCanvas!.getRealHighScoresPaintable()!.setHighScores(highScores);
     
-this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE);
+this.gameCanvas!.setGameState(this.gameStateFactory!.SHOW_HIGH_SCORE_GAME_STATE);
     
 this.gameCanvas!.setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPaintable());
     
@@ -109,10 +113,10 @@ this.gameCanvas!.setHighScoresPaintable(this.gameCanvas!.getRealHighScoresPainta
                                     }
                                 
                              else 
-                        if(this.gameCanvas!.getGameState() == AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
+                        if(this.gameCanvas!.getGameState() == this.gameStateFactory!.SHOW_HIGH_SCORE_GAME_STATE)
                         
                                     {
-                                    this.gameCanvas!.setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE);
+                                    this.gameCanvas!.setGameState(this.gameStateFactory!.SHOW_END_RESULT_GAME_STATE);
     
 this.gameCanvas!.setHighScoresPaintable(NullPaintable.getInstance());
     

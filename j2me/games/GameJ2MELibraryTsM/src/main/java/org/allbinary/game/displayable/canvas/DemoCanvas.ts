@@ -120,6 +120,8 @@ import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/gam
       
 import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
       
+import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
       
 import { ResizableListenerHandler } from '../../../../../org/allbinary/graphics/ResizableListenerHandler.js';
@@ -277,6 +279,8 @@ export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInte
     readonly gameAdStateFactory: GameAdStateFactory = GameAdStateFactory.getInstance()!;
 
     readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
+
+    readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
 
     private readonly threadFactoryUtil: ThreadFactoryUtil = ThreadFactoryUtil.getInstance()!;
 
@@ -1546,7 +1550,7 @@ this.stopGameDemo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameState.PLAYING_GAME_STATE;
+                        return this.gameStateFactory!.PLAYING_GAME_STATE;
     
 }
 

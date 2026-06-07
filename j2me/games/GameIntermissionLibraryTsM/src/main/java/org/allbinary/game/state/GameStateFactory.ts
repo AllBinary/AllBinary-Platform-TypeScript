@@ -22,6 +22,8 @@
 
 
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -47,23 +49,51 @@ export class GameStateFactory
          {
         
 
-    private static index: number = 0;
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    public static getInstance(name: string): GameState{
+    public static getInstance(): GameStateFactory{
+
+                        if(GameStateFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GameStateFactory.instance= new GameStateFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new GameState(name, GameStateFactory.index++);
+                        return GameStateFactory.instance as GameStateFactory;
     
 }
 
+
+    private index: number = 0;
+
+    public readonly NO_GAME_STATE: GameState = this.createGameState("NO_GAME_STATE")!;
+
+    public readonly PLAYING_GAME_STATE: GameState = this.createGameState("PLAYING_GAME_STATE")!;
+
+    public readonly SHOW_END_RESULT_GAME_STATE: GameState = this.createGameState("SHOW_END_RESULT_GAME_STATE")!;
+
+    public readonly SHOW_HIGH_SCORE_GAME_STATE: GameState = this.createGameState("SHOW_HIGH_SCORE_GAME_STATE")!;
 
 private constructor (){
 
             super();
         }
+
+
+    public createGameState(name: string): GameState{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new GameState(name, this.index++);
+    
+}
 
 
 }

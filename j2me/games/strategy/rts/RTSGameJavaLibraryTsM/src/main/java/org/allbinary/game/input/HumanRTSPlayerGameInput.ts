@@ -38,6 +38,8 @@ import { RTSLayerInfoPaintable } from '../../../../org/allbinary/game/layer/RTSL
       
 import { RTSPlayerLayerInterface } from '../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
       
+import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
+      
 import { EndLevelNoBuildingSelectedTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/EndLevelNoBuildingSelectedTouchButtonsBuilder.js';
       
 import { EndLevelTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/EndLevelTouchButtonsBuilder.js';
@@ -67,8 +69,6 @@ import { GameNotificationEvent } from '../../../../org/allbinary/game/layer/hud/
 import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
       
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-      
-import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
       
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       
@@ -140,6 +140,8 @@ export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseM
         
 
     private isDragging: boolean = false;
+
+    readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
 
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
 
@@ -612,7 +614,7 @@ rtsLayer!.select();
 this.updateFormForLayer(rtsLayer);
     
 
-                        if(gameCanvas!.getGameState() == GameState.PLAYING_GAME_STATE)
+                        if(gameCanvas!.getGameState() == this.gameStateFactory!.PLAYING_GAME_STATE)
                         
                                     {
                                     
@@ -666,7 +668,7 @@ this.setSelectedRtsFormInput(this.getRtsPlayerLayerInterface()!.getRTSFormInput(
 this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER);
     
 
-                        if(gameCanvas!.getGameState() == GameState.PLAYING_GAME_STATE)
+                        if(gameCanvas!.getGameState() == this.gameStateFactory!.PLAYING_GAME_STATE)
                         
                                     {
                                     gameCanvas!.updateCurrentTouchInputFactory(new NoBuildingSelectedTouchButtonsBuilder());
