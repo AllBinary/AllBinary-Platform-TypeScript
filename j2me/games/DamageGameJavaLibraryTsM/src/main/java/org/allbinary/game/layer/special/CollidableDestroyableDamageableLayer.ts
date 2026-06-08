@@ -62,6 +62,8 @@ import { RectangleFactory } from '../../../../../org/allbinary/graphics/Rectangl
       
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
       
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -69,8 +71,6 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 import { PositionStrings } from '../../../../../org/allbinary/math/PositionStrings.js';
       
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      
-import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
       
 import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
       
@@ -97,7 +97,26 @@ import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPosition
 export class CollidableDestroyableDamageableLayer extends CollidableCompositeLayer implements DestroyableInterface, DamageableInterface, PickupCompositeInterface, SpecialGameInputInterface {
         
 
-    public static readonly NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: CollidableDestroyableDamageableLayer = new CollidableDestroyableDamageableLayer(BasicGroupFactory.getInstance()!.NONE_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPositionBase.NULL_VIEW_POSITION);
+    public static NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullInstance(): CollidableDestroyableDamageableLayer{
+
+                        if(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER= new CollidableDestroyableDamageableLayer(BasicGroupFactory.getInstance()!.NONE_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPositionBase.NULL_VIEW_POSITION);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER as CollidableDestroyableDamageableLayer;
+    
+}
+
 
     private static readonly READYFOREXPLOSION: string = "ReadyForExplosion: ";
 

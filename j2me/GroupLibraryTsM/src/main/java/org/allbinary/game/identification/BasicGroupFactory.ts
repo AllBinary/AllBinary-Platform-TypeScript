@@ -22,6 +22,8 @@
 
 
         
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      
 
 
 
@@ -47,14 +49,23 @@ export class BasicGroupFactory
          {
         
 
-    private static readonly instance: BasicGroupFactory = new BasicGroupFactory();
+    private static instance: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): BasicGroupFactory{
+
+                        if(BasicGroupFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    BasicGroupFactory.instance= new BasicGroupFactory();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicGroupFactory.instance;
+                        return BasicGroupFactory.instance as BasicGroupFactory;
     
 }
 
