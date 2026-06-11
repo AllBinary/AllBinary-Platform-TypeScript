@@ -54,8 +54,6 @@ import { HighScoresCanvasInputProcessor } from '../../../../../org/allbinary/gam
       
 import { HighScoresCanvasInputProcessorFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresCanvasInputProcessorFactoryInterface.js';
       
-import { HighScoresCanvasNoInputProcessorFactory } from '../../../../../org/allbinary/game/score/HighScoresCanvasNoInputProcessorFactory.js';
-      
 import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
       
 import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
@@ -130,6 +128,8 @@ export class HighScoresCanvas extends GameCommandCanvas implements HighScoresRes
 
     private currentCommand: Command = this.highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[0]!;
 
+    private hasPainted: boolean = false;
+
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, gameInfo: GameInfo, paintable: HighScoresPaintable, highScoresFactoryInterface: HighScoresFactoryInterface, highScoresCanvasInputProcessorFactoryInterface: HighScoresCanvasInputProcessorFactoryInterface){
             super(commandListener, HighScoresCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
                     
@@ -171,15 +171,30 @@ this.setPaintable(this.getHighScoresPaintable());
 
                         }
                             
-SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
-                                {
-                                
+
+//inner=true member= isStatic=
+class HighScoreRunnable extends ARunnable {
+        
+
+    readonly highScoresCanvas: HighScoresCanvas;
+
+ constructor (highScoresCanvas: HighScoresCanvas){
+
+            super();
+        this.highScoresCanvas= highScoresCanvas;
+    
+}
+
+
     public run(){
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var highScoresCanvas: HighScoresCanvas = this.highScoresCanvas;;
     
 
         try {
@@ -191,11 +206,11 @@ SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                         
                                     {
                                     
-        while(!HighScoresCanvas.prototype.hasPainted)
+        while(!highScoresCanvas!.hasPainted)
         {
 }
 
-HighScoresCanvas.prototype.hasPainted= false;
+highScoresCanvas!.hasPainted= false;
     
 
                                     }
@@ -205,14 +220,14 @@ HighScoresCanvas.prototype.hasPainted= false;
     
 logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
-HighScoresCanvas.prototype.repaintBehavior!.onChangeRepaint(HighScoresCanvas.prototype);
+highScoresCanvas!.repaintBehavior!.onChangeRepaint(highScoresCanvas);
     
 
                         if(!isHTML)
                         
                                     {
                                     
-        while(!HighScoresCanvas.prototype.hasPainted)
+        while(!highScoresCanvas!.hasPainted)
         {
 }
 
@@ -223,7 +238,7 @@ stringMaker!.delete(0, stringMaker!.length());
     
 logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
-HighScoresCanvas.prototype.executeUpdate();
+highScoresCanvas!.executeUpdate();
     
 
                 //: 
@@ -235,8 +250,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 }
 
-                                }
-                            );
+
+}
+                
+            
+
+                    //Otherwise - statement - EmptyStmt
+
+SecondaryThreadPool.getInstance()!.runTask(new HighScoreRunnable(this));
     
 }
 
@@ -266,8 +287,6 @@ this.highScoresCanvasInputProcessor!.close();
     
 }
 
-
-    hasPainted: boolean = false;
 
     public paint(graphics: Graphics){
 this.colorFillPaintable!.paint(graphics);

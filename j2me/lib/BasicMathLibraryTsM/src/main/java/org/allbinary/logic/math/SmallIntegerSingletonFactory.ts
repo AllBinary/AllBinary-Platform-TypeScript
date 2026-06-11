@@ -194,12 +194,21 @@ this.lastNegativeMin= this.NEGATIVE_MAX;
 private constructor (){
 
             super();
-        }
+        this.initWithRange(23, 0);
+    
+}
 
 
     public getAt(index: number): Integer{
-this.checkMe();
+
+                        if(index >= 0 && index < 24)
+                        
+                                    {
+                                    this.checkMe();
     
+
+                                    }
+                                
 
 
 
@@ -210,8 +219,15 @@ this.checkMe();
 
 
     public getAtNoThrow(index: number): Integer{
-this.checkMe();
+
+                        if(index >= 0 && index < 24)
+                        
+                                    {
+                                    this.checkMe();
     
+
+                                    }
+                                
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
                         

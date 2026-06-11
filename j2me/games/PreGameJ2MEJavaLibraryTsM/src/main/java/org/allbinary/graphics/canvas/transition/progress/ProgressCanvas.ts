@@ -86,7 +86,8 @@ import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //import { ProgressPaintable } from './ProgressPaintable.js';
+
 export class ProgressCanvas extends RunnableCanvas implements PaintableInterface {
         
 
@@ -94,16 +95,30 @@ export class ProgressCanvas extends RunnableCanvas implements PaintableInterface
 
     private readonly backgroundBasicColor: BasicColor;
 
-    public readonly GAUGE_PAINTABLE: Paintable = new class extends Paintable
-                                {
-                                
-    public paint(graphics: Graphics){
-ProgressCanvas.prototype.paint2(graphics);
+//inner= member=true isStatic=
+ProgressPaintable = class extends Paintable {
+        
+
+    readonly progressCanvas: ProgressCanvas;
+
+ constructor (progressCanvas: ProgressCanvas){
+
+            super();
+        this.progressCanvas= progressCanvas;
     
 }
 
-                                }
-                            ;
+
+    public paint(graphics: Graphics){
+this.progressCanvas!.paint2(graphics);
+    
+}
+
+
+}
+                
+            
+    public readonly GAUGE_PAINTABLE: Paintable = new this.ProgressPaintable(this);
 
     allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.NULL_ALLBINARY_MIDLET;
 

@@ -446,7 +446,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
 this.paintSelectedRTSLayersList= BasicArrayListUtil.getInstance()!.getImmutableInstance();
     
 
-                        if(selectedLayer == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
+                        if(selectedLayer == CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     this.deselectAll();
@@ -518,7 +518,7 @@ this.logUtil!.putF(new StringMaker().append("Preselected: ")!.append(this.preSel
                                     }
                                 
 
-                        if(selectedLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
+                        if(selectedLayer != CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     this.selectedRTSLayersList!.add(selectedLayer);
@@ -550,7 +550,7 @@ this.paintSelectedRTSLayersList= this.selectedRTSLayersList;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+                        return CollidableDestroyableDamageableLayer.getNullInstance();;
     
 
                         }

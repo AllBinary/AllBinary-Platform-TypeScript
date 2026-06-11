@@ -276,7 +276,7 @@ this.processCellPosition(rtsPlayerLayerInterface, layerManager, geographicMapCel
     var itemIndex: number = this.getSelectedStickyItemIndex()!;;
     
 
-                        if(this.newUnconstructedRTSLayerInterfaceArray[itemIndex] == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
+                        if(this.newUnconstructedRTSLayerInterfaceArray[itemIndex] == CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= this.getInstance(layerManager, this.getSelectedStickyItem(), geographicMapCellPosition);
@@ -455,7 +455,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "attemptBuild");
                                     {
                                     layerInterface!.construct(rtsPlayerLayerInterface);
     
-this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.getNullInstance();
     
 capital.removeMoney(cost);
     

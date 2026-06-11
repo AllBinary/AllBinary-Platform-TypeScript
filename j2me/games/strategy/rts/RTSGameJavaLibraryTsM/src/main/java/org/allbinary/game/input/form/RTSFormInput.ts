@@ -118,7 +118,7 @@ public constructor (groupInterfaceArray: Group[]){
                         for (
     var index: number = 0;index < size; index++)
         {
-this.newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+this.newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.getNullInstance();
     
 }
 
@@ -329,7 +329,7 @@ this.logUtil!.putF(new StringMaker().append("Point: ")!.append(StringUtil.getIns
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+                        return CollidableDestroyableDamageableLayer.getNullInstance();;
     
 }
 

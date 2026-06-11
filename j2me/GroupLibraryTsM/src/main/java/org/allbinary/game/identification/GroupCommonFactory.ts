@@ -56,6 +56,15 @@ export class GroupCommonFactory
 
     public static getInstance(): GroupCommonFactory{
 
+                        if(GroupCommonFactory.instance == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    GroupCommonFactory.instance= new GroupCommonFactory();
+    
+
+                                    }
+                                
+
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.

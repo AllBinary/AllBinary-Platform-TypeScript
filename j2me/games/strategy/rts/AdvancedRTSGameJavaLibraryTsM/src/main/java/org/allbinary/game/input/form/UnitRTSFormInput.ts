@@ -170,7 +170,7 @@ this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
 this.getHashtable()!.put(UnitRTSFormInput.DECAL_ID, (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).getDecalBasicColor());
     
 
-                        if(this.newUnconstructedRTSLayerInterfaceArray[itemIndex] == CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
+                        if(this.newUnconstructedRTSLayerInterfaceArray[itemIndex] == CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= this.getInstance(layerManager, item, geographicMapCellPosition);
@@ -243,7 +243,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "attemptBuild");
                                     {
                                     layerInterface!.construct(rtsPlayerLayerInterface);
     
-this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.getNullInstance();
     
 rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
     

@@ -70,7 +70,7 @@ export class RTSLayerHudPaintable extends SelectionHudPaintable {
 
     private weaponProperties: string[] = StringUtil.getInstance()!.getArrayInstance()!;
 
-    private rtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+    private rtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.getNullInstance()!;
 
     costY: number= 0;
 

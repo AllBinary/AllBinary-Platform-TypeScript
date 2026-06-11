@@ -262,6 +262,8 @@ import { SelectSound } from '../../../../../org/allbinary/media/audio/SelectSoun
       
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      
 import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/SecondaryThreadPool.js';
       
 import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
@@ -2496,7 +2498,10 @@ class SaveHighScoreRunnable
                 //: 
 } catch(e) 
             {
-logUtil!.put(AllBinaryGameCanvas.prototype.commonStrings!.EXCEPTION, this, "run", e);
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, "run", e);
     
 this.progressCanvas!.end();
     

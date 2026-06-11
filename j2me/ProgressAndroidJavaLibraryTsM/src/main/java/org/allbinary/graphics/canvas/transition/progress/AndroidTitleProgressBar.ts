@@ -32,8 +32,6 @@ import { NullProgressActivity } from '../../../../../../org/allbinary/android/ac
       
 import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
       
-import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
-      
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -67,13 +65,186 @@ import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStri
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
 
-    private showTitleProgressBarRunnable = new this.ShowTitleProgressBarRunnable();
+//inner= member=true isStatic=
+TitleProgressBarSetProgressRunnable = class
+            extends Object
+         implements Runnable {
+        
 
-    private dismissTitleProgressBarRunnable = new this.DismissTitleProgressBarRunnable();
+    private readonly androidTitleProgressBar: AndroidTitleProgressBar;
 
-    private progressDialogPortionSetProgressRunnable = new this.TitleProgressBarPortionSetProgressRunnable();
+ constructor (androidTitleProgressBar: AndroidTitleProgressBar){
 
-    private progressDialogSetProgressRunnable = new this.TitleProgressBarSetProgressRunnable();
+            super();
+        this.androidTitleProgressBar= androidTitleProgressBar;
+    
+}
+
+
+    public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+
+        try {
+            
+    var value: number = Math.round(this.androidTitleProgressBar!.getValue());;
+    
+this.androidTitleProgressBar!.progressActivity!.onTitleProgressBarSetProgress(value);
+    
+
+                //: 
+} catch(e) 
+            {
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+}
+
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+TitleProgressBarPortionSetProgressRunnable = class
+            extends Object
+         implements Runnable {
+        
+
+    private readonly androidTitleProgressBar: AndroidTitleProgressBar;
+
+ constructor (androidTitleProgressBar: AndroidTitleProgressBar){
+
+            super();
+        this.androidTitleProgressBar= androidTitleProgressBar;
+    
+}
+
+
+    public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+
+        try {
+            
+    var value: number = Math.round((this.androidTitleProgressBar!.getValue() +this.androidTitleProgressBar!.getMaxValue() /this.androidTitleProgressBar!.portion));;
+    
+this.androidTitleProgressBar!.progressActivity!.onTitleProgressBarSetProgress(value);
+    
+
+                //: 
+} catch(e) 
+            {
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+}
+
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+ShowTitleProgressBarRunnable = class
+            extends Object
+         implements Runnable {
+        
+
+    private readonly androidTitleProgressBar: AndroidTitleProgressBar;
+
+ constructor (androidTitleProgressBar: AndroidTitleProgressBar){
+
+            super();
+        this.androidTitleProgressBar= androidTitleProgressBar;
+    
+}
+
+
+    public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+
+        try {
+            
+    var maxValue: number = Math.round(this.androidTitleProgressBar!.getMaxValue());;
+    
+this.androidTitleProgressBar!.progressActivity!.onShowTitleProgressBar(maxValue, false);
+    
+
+                //: 
+} catch(e) 
+            {
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+}
+
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+DismissTitleProgressBarRunnable = class
+            extends Object
+         implements Runnable {
+        
+
+    private readonly androidTitleProgressBar: AndroidTitleProgressBar;
+
+ constructor (androidTitleProgressBar: AndroidTitleProgressBar){
+
+            super();
+        this.androidTitleProgressBar= androidTitleProgressBar;
+    
+}
+
+
+    public run(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+
+        try {
+            this.androidTitleProgressBar!.progressActivity!.onDismissTitleProgressBar();
+    
+
+                //: 
+} catch(e) 
+            {
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+}
+
+}
+
+
+}
+                
+            
+    private showTitleProgressBarRunnable = new this.ShowTitleProgressBarRunnable(this);
+
+    private dismissTitleProgressBarRunnable = new this.DismissTitleProgressBarRunnable(this);
+
+    private progressDialogPortionSetProgressRunnable = new this.TitleProgressBarPortionSetProgressRunnable(this);
+
+    private progressDialogSetProgressRunnable = new this.TitleProgressBarSetProgressRunnable(this);
 
     private progressActivity: ProgressActivityInterface = NullProgressActivity.NULL_PROGRESS_ACTIVITY;
 
@@ -227,139 +398,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
 }
 
 
-//inner= member=true isStatic=
-TitleProgressBarSetProgressRunnable = class
-            extends Object
-         implements Runnable {
-        
-
-    public run(){
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
-    
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
-    
-
-        try {
-            
-    var value: number = Math.round(AndroidTitleProgressBar.prototype.getValue());;
-    
-AndroidTitleProgressBar.prototype.progressActivity!.onTitleProgressBarSetProgress(value);
-    
-
-                //: 
-} catch(e) 
-            {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
-    
-}
-
-}
-
-
-}
-                
-            
-//inner= member=true isStatic=
-TitleProgressBarPortionSetProgressRunnable = class
-            extends Object
-         implements Runnable {
-        
-
-    public run(){
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
-    
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
-    
-
-        try {
-            
-    var value: number = Math.round((AndroidTitleProgressBar.prototype.getValue() +AndroidTitleProgressBar.prototype.getMaxValue() /AndroidTitleProgressBar.prototype.portion));;
-    
-AndroidTitleProgressBar.prototype.progressActivity!.onTitleProgressBarSetProgress(value);
-    
-
-                //: 
-} catch(e) 
-            {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
-    
-}
-
-}
-
-
-}
-                
-            
-//inner= member=true isStatic=
-ShowTitleProgressBarRunnable = class
-            extends Object
-         implements Runnable {
-        
-
-    public run(){
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
-    
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
-    
-
-        try {
-            
-    var maxValue: number = Math.round(AndroidTitleProgressBar.prototype.getMaxValue());;
-    
-AndroidTitleProgressBar.prototype.progressActivity!.onShowTitleProgressBar(maxValue, false);
-    
-
-                //: 
-} catch(e) 
-            {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
-    
-}
-
-}
-
-
-}
-                
-            
-//inner= member=true isStatic=
-DismissTitleProgressBarRunnable = class
-            extends Object
-         implements Runnable {
-        
-
-    public run(){
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
-    
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
-    
-
-        try {
-            AndroidTitleProgressBar.prototype.progressActivity!.onDismissTitleProgressBar();
-    
-
-                //: 
-} catch(e) 
-            {
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
-    
-}
-
-}
-
-
-}
-                
-            
 }
                 
             

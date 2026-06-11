@@ -265,9 +265,20 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
 this.logUtil!.putF(this.ALREADY_PLAYING, this, this.commonStateStrings!.ON_START_COMMAND);
     
 
-    var runnable: Runnable = new class extends ARunnable
-                                {
-                                
+//inner=true member= isStatic=
+class MusicRunnable extends ARunnable {
+        
+
+    private readonly baseMusicService: BaseMusicService;
+
+ constructor (baseMusicService: BaseMusicService){
+
+            super();
+        this.baseMusicService= baseMusicService;
+    
+}
+
+
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
@@ -283,13 +294,13 @@ this.logUtil!.putF(this.ALREADY_PLAYING, this, this.commonStateStrings!.ON_START
             
         while(player.isPlaying())
         {
-logUtil!.putF(BaseMusicService.prototype.WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND);
+logUtil!.putF(this.baseMusicService!.WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND);
     
 Thread.sleep(1200);
     
 }
 
-BaseMusicService.prototype.onStartCommandIntent(intent);
+this.baseMusicService!.onStartCommandIntent(intent);
     
 
                 //: 
@@ -301,8 +312,15 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStateStrings!.ON_START_COMMAN
 
 }
 
-                                }
-                            ;;
+
+}
+                
+            
+
+                    //Otherwise - statement - EmptyStmt
+
+
+    var runnable: Runnable = new MusicRunnable(this);;
     
 
     var thread: Thread = new Thread(runnable);;

@@ -46,22 +46,18 @@ import { OnPreparedListener } from './OnPreparedListener.js';
 import { OnErrorListener } from './OnErrorListener.js';
 import { OnCompletionListener } from './OnCompletionListener.js';
 //import { MediaPlayerOnBufferingUpdateListener } from './MediaPlayerOnBufferingUpdateListener.js';
+//import { AndroidMediaPlayerOnBufferingUpdateListener } from './AndroidMediaPlayerOnBufferingUpdateListener.js';
 //import { MediaPlayerOnPreparedListener } from './MediaPlayerOnPreparedListener.js';
+//import { AndroidMediaPlayerOnPreparedListener } from './AndroidMediaPlayerOnPreparedListener.js';
 //import { MediaPlayerOnErrorListener } from './MediaPlayerOnErrorListener.js';
+//import { AndroidMediaPlayerOnErrorListener } from './AndroidMediaPlayerOnErrorListener.js';
 //import { MediaPlayerOnCompletionListener } from './MediaPlayerOnCompletionListener.js';
+//import { AndroidMediaPlayerOnCompletionListener } from './AndroidMediaPlayerOnCompletionListener.js';
 
 export class AndroidMediaPlayerWrapperListener
             extends Object
          {
         
-
-    private static readonly ON_BUFFERING_UPDATE: string = "onBufferingUpdate()";
-
-    private static readonly ON_PREPARE: string = "onPrepare()";
-
-    private static readonly ON_ERROR: string = "onError()";
-
-    private static readonly ON_COMPLETE: string = "onComplete()";
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -105,8 +101,6 @@ MediaPlayerOnBufferingUpdateListener = class
             extends Object
          implements MediaPlayer.OnBufferingUpdateListener {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
-
 
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
 }
@@ -120,8 +114,6 @@ MediaPlayerOnPreparedListener = class
             extends Object
          implements MediaPlayer.OnPreparedListener {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
-
 
     public onPrepared(mp: MediaPlayer){
 }
@@ -135,8 +127,6 @@ MediaPlayerOnErrorListener = class
             extends Object
          implements MediaPlayer.OnErrorListener {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
-
 
     public onError(mp: MediaPlayer, what: number, extra: number): boolean{
 
@@ -156,8 +146,6 @@ MediaPlayerOnCompletionListener = class
             extends Object
          implements MediaPlayer.OnCompletionListener {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
-
 
     public onCompletion(mp: MediaPlayer){
 }
@@ -166,25 +154,54 @@ MediaPlayerOnCompletionListener = class
 }
                 
             
-    private mOnBufferingUpdateListener: MediaPlayer.OnBufferingUpdateListener = new class extends this.MediaPlayerOnBufferingUpdateListener
-                                {
-                                
+//inner= member=true isStatic=
+AndroidMediaPlayerOnBufferingUpdateListener = class extends this.MediaPlayerOnBufferingUpdateListener {
+        
+
+    private readonly ON_BUFFERING_UPDATE: string = "onBufferingUpdate()";
+
+    private readonly androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener;
+
+public constructor (androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener){
+
+            super();
+        this.androidMediaPlayerWrapperListener= androidMediaPlayerWrapperListener;
+    
+}
+
+
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
-logUtil!.putF(new StringMaker().append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, AndroidMediaPlayerWrapperListener.ON_BUFFERING_UPDATE);
+logUtil!.putF(new StringMaker().append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, this.ON_BUFFERING_UPDATE);
     
-AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE);
+this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE);
     
 }
 
-                                }
-                            ;
 
-    private mOnPreparedListener: MediaPlayer.OnPreparedListener = new class extends this.MediaPlayerOnPreparedListener
-                                {
-                                
+}
+                
+            
+    private mOnBufferingUpdateListener: MediaPlayer.OnBufferingUpdateListener = new this.AndroidMediaPlayerOnBufferingUpdateListener(this);
+
+//inner= member=true isStatic=
+AndroidMediaPlayerOnPreparedListener = class extends this.MediaPlayerOnPreparedListener {
+        
+
+    private readonly ON_PREPARE: string = "onPrepare()";
+
+    private readonly androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener;
+
+public constructor (androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener){
+
+            super();
+        this.androidMediaPlayerWrapperListener= androidMediaPlayerWrapperListener;
+    
+}
+
+
     public onPrepared(mp: MediaPlayer){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
@@ -192,25 +209,41 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
-logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE);
+logUtil!.putF(commonStrings!.START, this, this.ON_PREPARE);
     
-AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE);
+this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE);
     
 }
 
-                                }
-                            ;
 
-    private mOnErrorListener: MediaPlayer.OnErrorListener = new class extends this.MediaPlayerOnErrorListener
-                                {
-                                
+}
+                
+            
+    private mOnPreparedListener: MediaPlayer.OnPreparedListener = new this.AndroidMediaPlayerOnPreparedListener(this);
+
+//inner= member=true isStatic=
+AndroidMediaPlayerOnErrorListener = class extends this.MediaPlayerOnErrorListener {
+        
+
+    private readonly ON_ERROR: string = "onError()";
+
+    private readonly androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener;
+
+public constructor (androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener){
+
+            super();
+        this.androidMediaPlayerWrapperListener= androidMediaPlayerWrapperListener;
+    
+}
+
+
     public onError(mp: MediaPlayer, what: number, extra: number): boolean{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
-logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, AndroidMediaPlayerWrapperListener.ON_ERROR);
+logUtil!.putF(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, this.ON_ERROR);
     
-AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.ERROR);
+this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(PlayerListener.ERROR);
     
 
 
@@ -220,12 +253,28 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
     
 }
 
-                                }
-                            ;
 
-    private mOnCompletionListener: MediaPlayer.OnCompletionListener = new class extends this.MediaPlayerOnCompletionListener
-                                {
-                                
+}
+                
+            
+    private mOnErrorListener: MediaPlayer.OnErrorListener = new this.AndroidMediaPlayerOnErrorListener(this);
+
+//inner= member=true isStatic=
+AndroidMediaPlayerOnCompletionListener = class extends this.MediaPlayerOnCompletionListener {
+        
+
+    private readonly ON_COMPLETE: string = "onComplete()";
+
+    private readonly androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener;
+
+public constructor (androidMediaPlayerWrapperListener: AndroidMediaPlayerWrapperListener){
+
+            super();
+        this.androidMediaPlayerWrapperListener= androidMediaPlayerWrapperListener;
+    
+}
+
+
     public onCompletion(mp: MediaPlayer){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
@@ -233,14 +282,17 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
-logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE);
+logUtil!.putF(commonStrings!.START, this, this.ON_COMPLETE);
     
-AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.END_OF_MEDIA);
+this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(PlayerListener.END_OF_MEDIA);
     
 }
 
-                                }
-                            ;
+
+}
+                
+            
+    private mOnCompletionListener: MediaPlayer.OnCompletionListener = new this.AndroidMediaPlayerOnCompletionListener(this);
 
 }
                 

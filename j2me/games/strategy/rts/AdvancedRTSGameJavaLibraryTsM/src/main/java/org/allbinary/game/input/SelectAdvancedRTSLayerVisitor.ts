@@ -78,7 +78,7 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
     var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;;
     
 
-                        if(selectedLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && selectedLayer!.getType() == BuildingLayer.getStaticType())
+                        if(selectedLayer != CollidableDestroyableDamageableLayer.getNullInstance() && selectedLayer!.getType() == BuildingLayer.getStaticType())
                         
                                     {
                                     

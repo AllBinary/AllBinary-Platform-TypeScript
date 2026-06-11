@@ -90,18 +90,19 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    readonly RED: BasicColor = BasicColorFactory.getInstance()!.RED;
-
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
+
+    readonly RED: BasicColor = BasicColorFactory.getInstance()!.RED;
 
     private readonly paintable: Paintable = SWTUtil.isSWT
                         ?       
                                 new class extends Paintable
                                 {
                                 
+    private readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
     private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
     public paint(graphics: Graphics){
-AllBinaryGameLayer.prototype.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
+this.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
     
 }
 

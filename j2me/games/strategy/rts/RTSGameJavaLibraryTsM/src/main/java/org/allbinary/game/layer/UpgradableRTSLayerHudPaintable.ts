@@ -74,7 +74,7 @@ export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
 
     private readonly PERCENT: string = "%";
 
-    private rtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+    private rtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.getNullInstance()!;
 
     costY: number= 0;
 
