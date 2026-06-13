@@ -92,7 +92,7 @@ this.checkMe();
 }
 
 
-    public checkMe(){
+    checkMe(){
 
                         if(this.MIN == 0)
                         
@@ -201,15 +201,6 @@ private constructor (){
 
     public getAt(index: number): Integer{
 
-                        if(index >= 0 && index < 24)
-                        
-                                    {
-                                    this.checkMe();
-    
-
-                                    }
-                                
-
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
@@ -219,15 +210,6 @@ private constructor (){
 
 
     public getAtNoThrow(index: number): Integer{
-
-                        if(index >= 0 && index < 24)
-                        
-                                    {
-                                    this.checkMe();
-    
-
-                                    }
-                                
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
                         
