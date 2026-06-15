@@ -33,10 +33,9 @@
         <!--
         <module>../../../android/AndroidAPI3AndUpJavaLibraryTsM</module>
         -->
-                
-        <!--
-        <module>../AndroidToJ2MELibraryTsM</module>
-        -->
+
+        <module>../../AndroidToJ2MELibraryTsM</module>
+
         <!--
         <module>../../OpenGLAndroidJavaLibraryTsM</module>
         <module>../../AndroidBaseJavaLibraryTsM</module>
@@ -44,17 +43,9 @@
         <module>../../android/AndroidThroughAPI2JavaLibraryTsM</module>
         <module>../../android/AndroidThroughAPI4JavaLibraryTsM</module>
         -->
-
-        <!--
-        <module>../../AndroidToAllBinaryJavaLibraryTsM</module>
-        -->
         
         <!--
         <module>../../input/android/MotionInputAndroidResourcesJavaLibraryTsM</module>
-        -->
-        
-        <!--
-        <module>../../../../working/j2me/AndroidToJ2MELibraryTsM</module>
         -->
 
         <!--

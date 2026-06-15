@@ -1,0 +1,128 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+            import { Object } from '../../../java/lang/Object.js';
+
+
+        
+            import { Exception } from '../../../java/lang/Exception.js';
+        
+            import { Runnable } from '../../../java/lang/Runnable.js';
+        
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+      
+import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      
+import { Globals } from '../../../org/allbinary/globals/Globals.js';
+      
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      
+import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      
+import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
+      
+import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
+      
+import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        import { AllBinaryMidlet } from './AllBinaryMidlet.js';
+import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
+import { ExitRunnable } from './ExitRunnable.js';
+
+export class ProgressMidlet extends AllBinaryMidlet {
+        
+
+    public readonly abeClientInformation: AbeClientInformationInterface;
+
+public constructor (clientInformationFactory: ClientInformationFactory){
+
+            super();
+        Globals.getInstance()!.init(TsUtil.getInstance()!.getClassClassLoader(this), StringUtil.getInstance()!.EMPTY_STRING);
+    
+this.preInit();
+    
+this.abeClientInformation= clientInformationFactory!.getInstance();
+    
+}
+
+
+    public preInit(){
+}
+
+
+    exitProgress(isProgress: boolean){
+
+    var processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;;
+    
+
+        try {
+            
+    var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;;
+    
+
+    var runnable: Runnable = new ExitRunnable(this, processor, isProgress);;
+    
+primaryThreadPool!.runTask(runnable);
+    
+
+                //: 
+} catch(e) 
+            {
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "exit", e);
+    
+
+        try {
+            processor.process();
+    
+
+                //: 
+} catch(e2) 
+            {
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "exit", e);
+    
+}
+
+}
+
+}
+
+
+}
+                
+            
+

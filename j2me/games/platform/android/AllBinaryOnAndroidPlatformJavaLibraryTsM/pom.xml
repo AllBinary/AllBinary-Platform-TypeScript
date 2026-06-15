@@ -230,10 +230,6 @@
             <groupId>org.allbinary</groupId>
             <artifactId>AndroidToJ2MELibraryTs</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.allbinary</groupId>
-            <artifactId>AndroidToAllBinaryJavaLibraryTs</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.allbinary</groupId>
