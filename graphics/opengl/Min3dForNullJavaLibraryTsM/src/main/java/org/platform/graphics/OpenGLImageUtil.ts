@@ -8,15 +8,7 @@
 
 
         
-            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
-        
-import { IOException } from '../../../java/io/IOException.js';
-      
-import { InputStream } from '../../../java/io/InputStream.js';
-      
-import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
-      
-import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
+import { OpenGLImageUtilBase } from '../../../org/allbinary/image/opengles/OpenGLImageUtilBase.js';
       
 
 
@@ -37,9 +29,7 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class OpenGLImageUtil
-            extends Object
-         {
+export class OpenGLImageUtil extends OpenGLImageUtilBase {
         
 
     private static readonly instance: OpenGLImageUtil = new OpenGLImageUtil();
@@ -51,46 +41,6 @@ export class OpenGLImageUtil
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return OpenGLImageUtil.instance;
     
-}
-
-
-                //@Throws(IOException.constructor)
-            
-    public static createImage(inputStream: InputStream): OpenGLBitmap{
-
-
-
-                            throw new RuntimeException();
-                    
-}
-
-
-    public paint(alphaBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, index: number): OpenGLBitmap{
-
-
-
-                            throw new RuntimeException();
-                    
-}
-
-
-    public paint(colorBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, alpha: number, basicColor: BasicColor): OpenGLBitmap{
-
-
-
-                            throw new RuntimeException();
-                    
-}
-
-
-                //@Throws(IOException.constructor)
-            
-    public createImage(name: string): OpenGLBitmap{
-
-
-
-                            throw new RuntimeException();
-                    
 }
 
 

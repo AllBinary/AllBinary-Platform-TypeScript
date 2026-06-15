@@ -62,14 +62,7 @@
         <module>../j2me/media/graphics/geography/map/GraphTsP</module>
         <module>../j2me/games/strategy/rts/RTSGameJavaLibraryTsP</module>
 
-        <module>../j2me/input/android/MotionInputAndroidJavaLibraryTsM</module>
-        <module>../j2me/input/android/MotionInputAPI5AndUpAndroidJavaLibraryTsM</module>
-        <module>../j2me/input/android/MotionInputThroughAPI4AndroidJavaLibraryTsM</module>
-        
-<!--        <module>../j2me/input/android/MotionInputAndroidxAPI21OnUpDynamicJavaLibraryKtM</module>-->
-        <module>../j2me/input/android/MotionInputAndroidDynamicJavaLibraryTsM</module>
-
-        <module>../j2me/AndroidToJ2MELibraryTsM</module>
+        <module>../j2me/android/AllBinaryPlatformAndroidLibraryPOMTs</module>
 
     </modules>
 

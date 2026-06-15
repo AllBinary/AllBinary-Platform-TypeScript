@@ -31,15 +31,8 @@
     <modules>
 
         <!--
-        <module>../../../android/AndroidAPI3AndUpJavaLibraryTsM</module>
-        -->
-
-        <!--
         <module>../../OpenGLAndroidJavaLibraryTsM</module>
-        <module>../../AndroidBaseJavaLibraryTsM</module>
-        <module>../../android/AndroidAPI5AndUpJavaLibraryTsM</module>
         <module>../../android/AndroidThroughAPI2JavaLibraryTsM</module>
-        <module>../../android/AndroidThroughAPI4JavaLibraryTsM</module>
         -->
         
         <!--

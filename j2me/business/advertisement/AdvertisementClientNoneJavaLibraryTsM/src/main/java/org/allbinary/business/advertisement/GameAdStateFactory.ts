@@ -34,6 +34,7 @@ import { SoftwareInformation } from '../../../../org/allbinary/logic/system/Soft
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactoryInterface } from './GameAdStateFactoryInterface.js';
 import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
+import { GameAdStateBase } from './GameAdStateBase.js';
 
 export class GameAdStateFactory
             extends Object
@@ -71,7 +72,7 @@ export class GameAdStateFactory
 
                 //@Throws(Exception.constructor)
             
-    public getInstanceForApp(softwareInformation: SoftwareInformation): GameAdState{
+    public getInstanceForApp(softwareInformation: SoftwareInformation): GameAdStateBase{
 this.gameAdState= this.gameAdStateArray[0]!;
     
 
