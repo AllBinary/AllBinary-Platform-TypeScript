@@ -1,0 +1,106 @@
+
+        /* Generated Code Do Not Modify */
+        
+
+
+
+            import { Object } from '../../../../../java/lang/Object.js';
+
+
+        
+import { ActivityFractureUtil } from '../../../../../org/allbinary/android/ActivityFractureUtil.js';
+      
+import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
+      
+import { ActivityFractureUtilAPI1 } from '../../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
+      
+import { ActivityFractureUtilAPI16 } from '../../../../../org/allbinary/android/api16/ActivityFractureUtilAPI16.js';
+      
+import { ActivityFractureUtilAPI19 } from '../../../../../org/allbinary/android/api19/ActivityFractureUtilAPI19.js';
+      
+import { ActivityFractureUtilAPI5 } from '../../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ActivityFractureInputUtilFactory
+            extends Object
+         {
+        
+
+    public static getInstance(): ActivityFractureUtil{
+
+    var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;;
+    
+
+                        if(SDK_VERSION <= 4)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ActivityFractureUtilAPI1.getInstance();;
+    
+
+                                    }
+                                
+                             else 
+                        if(SDK_VERSION <= 15)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ActivityFractureUtilAPI5.getInstance();;
+    
+
+                                    }
+                                
+                             else 
+                        if(SDK_VERSION <= 16)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ActivityFractureUtilAPI16.getInstance();;
+    
+
+                                    }
+                                
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ActivityFractureUtilAPI19.getInstance();;
+    
+
+                        }
+                            
+}
+
+
+}
+                
+            
+

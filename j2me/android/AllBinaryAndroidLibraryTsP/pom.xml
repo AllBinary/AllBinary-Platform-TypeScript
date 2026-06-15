@@ -34,8 +34,6 @@
         <module>../../../android/AndroidAPI3AndUpJavaLibraryTsM</module>
         -->
 
-        <module>../../AndroidToJ2MELibraryTsM</module>
-
         <!--
         <module>../../OpenGLAndroidJavaLibraryTsM</module>
         <module>../../AndroidBaseJavaLibraryTsM</module>
