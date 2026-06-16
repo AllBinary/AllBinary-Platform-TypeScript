@@ -130,7 +130,7 @@ super.paint(graphics);
                         for (
     var index: number = 0;index < size; index++)
         {
-graphics.drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHeight), 0);
+graphics.drawString(this.weaponProperties[index]!, this.textX, this.y +((index +1) *charHeight), 0);
     
 }
 

@@ -149,6 +149,8 @@ this.endList= this.ownerLayer!.getEndGeographicMapCellPositionList();
 this.paths= new Array(tiledLayer!.getColumns()).fill(null).map(() => new Array(tiledLayer!.getRows()).fill(0))
                                                             ;
     
+this.clearPaths();
+    
 }
 
 
@@ -390,6 +392,12 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
+this.clearPaths();
+    
+}
+
+
+    clearPaths(){
 
 
 

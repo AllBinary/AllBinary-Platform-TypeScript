@@ -126,20 +126,20 @@ private constructor (){
 
     var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
     
-productivityHud= new NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+productivityHud= new NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
 index++;
     
-efficiencyHud= new NumberStringHud("Efficiency:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+efficiencyHud= new NumberStringHud("Efficiency:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
 index++;
     
 
     var totalLength: number = this.HEALTH.length +1;;
     
-healthHud= new NumberStringHud(this.HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+healthHud= new NumberStringHud(this.HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
-maxHealthHud= new NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX +(totalLength *DEFAULT_CHAR_HEIGHT), y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+maxHealthHud= new NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX +(totalLength *DEFAULT_CHAR_HEIGHT), this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
 
                 //: 

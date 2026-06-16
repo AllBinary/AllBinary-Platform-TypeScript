@@ -58,6 +58,8 @@ import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/me
       
 import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
       
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      
 
 
 
@@ -170,6 +172,9 @@ SimpleSteeringVisitor = class extends SteeringVisitor {
                 //: 
 } catch(e) 
             {
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
 logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
     
 

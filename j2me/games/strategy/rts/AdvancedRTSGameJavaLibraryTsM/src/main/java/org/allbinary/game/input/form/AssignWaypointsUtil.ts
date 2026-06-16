@@ -28,8 +28,6 @@ import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/Ad
       
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
       
-import { NullRTSLayer } from '../../../../../org/allbinary/game/layer/NullRTSLayer.js';
-      
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
       
 import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';

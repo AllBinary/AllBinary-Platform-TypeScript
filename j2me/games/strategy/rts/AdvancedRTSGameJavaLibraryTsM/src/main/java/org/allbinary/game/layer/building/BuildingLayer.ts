@@ -394,7 +394,7 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
 
     public getDowngradeCost(): number{
 
-    var downgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() -1) *getBuildingLevelCost()))!;;
+    var downgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() -1) *this.getBuildingLevelCost()))!;;
     
 this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
     
@@ -409,7 +409,7 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
     public getUpgradeCost(): number{
 
-    var upgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() +1) *getBuildingLevelCost()))!;;
+    var upgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() +1) *this.getBuildingLevelCost()))!;;
     
 
 

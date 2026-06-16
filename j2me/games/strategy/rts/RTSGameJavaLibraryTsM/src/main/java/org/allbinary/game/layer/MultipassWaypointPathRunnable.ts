@@ -65,6 +65,9 @@ import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayLis
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
+//import { FirstRunnable } from './FirstRunnable.js';
+//import { SecondRunnable } from './SecondRunnable.js';
+//import { EndRunnable } from './EndRunnable.js';
 import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
 
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
@@ -82,159 +85,80 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
 
     private pathFindingInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    private readonly FIRST_RUNNABLE: Runnable = new class extends ARunnable
-                                {
-                                
-    public run(){
+//inner= member=true isStatic=
+FirstRunnable = class extends ARunnable {
+        
 
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
-    
+    private readonly multipassWaypointPathRunnable: MultipassWaypointPathRunnable;
 
-        try {
-            pathFindingLayer!.getWaypointRunnableLogHelper()!.start(pathFindingLayer);
-    
-reset2();
-    
+ constructor (multipassWaypointPathRunnable: MultipassWaypointPathRunnable){
 
-    var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
-    
-
-                        if(geographicMapCellPosition == 
-                                    null
-                                )
-                        
-                                    {
-                                    
-
-
-                            throw new Exception("Should never be running here");
-                    
-
-                                    }
-                                
-pathFindingInfo= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition);
-    
-
-    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;;
-    
-list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
-    
-
-                        if(list != basicArrayListUtil!.getImmutableInstance())
-                        
-                                    {
-                                    END_RUNNABLE.run();
-    
-
-                                    }
-                                
-                        else {
-                            currentPassRunnable= SECOND_RUNNABLE;
-    
-
-                        }
-                            
-
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
-    
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
-    
-setRunning(false);
-    
-finish();
+            super();
+        this.multipassWaypointPathRunnable= multipassWaypointPathRunnable;
     
 }
 
+
+    public run(){
+this.multipassWaypointPathRunnable!.processFirstRunnable();
+    
 }
 
-                                }
-                            ;
 
-    private readonly SECOND_RUNNABLE: Runnable = new class extends ARunnable
-                                {
-                                
-    public run(){
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
-    
-
-        try {
+}
+                
             
-    var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
-    
+    private readonly FIRST_RUNNABLE: Runnable = new this.FirstRunnable(this);
+//    private boolean first = true;
+//inner= member=true isStatic=
+SecondRunnable = class extends ARunnable {
+        
 
-    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;;
-    
-list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
-    
+    private readonly multipassWaypointPathRunnable: MultipassWaypointPathRunnable;
 
-                        if(list != basicArrayListUtil!.getImmutableInstance())
-                        
-                                    {
-                                    END_RUNNABLE.run();
-    
+ constructor (multipassWaypointPathRunnable: MultipassWaypointPathRunnable){
 
-                                    }
-                                
-
-                //: 
-} catch(e) 
-            {
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
-    
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
-    
-setRunning(false);
-    
-finish();
+            super();
+        this.multipassWaypointPathRunnable= multipassWaypointPathRunnable;
     
 }
 
-}
 
-                                }
-                            ;
-
-    private readonly END_RUNNABLE: Runnable = new class extends ARunnable
-                                {
-                                
     public run(){
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;;
+this.multipassWaypointPathRunnable!.processSecondRunnable();
     
+}
 
-        try {
+
+}
+                
             
-    var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;;
-    
-waypointBehavior!.setWaypointPathsList(list);
-    
-pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer);
-    
+    private readonly SECOND_RUNNABLE: Runnable = new this.SecondRunnable(this);
 
-                //: 
-} catch(e) 
-            {
+//inner= member=true isStatic=
+EndRunnable = class extends ARunnable {
+        
 
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
-    
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
-    
-setRunning(false);
+    private readonly multipassWaypointPathRunnable: MultipassWaypointPathRunnable;
+
+ constructor (multipassWaypointPathRunnable: MultipassWaypointPathRunnable){
+
+            super();
+        this.multipassWaypointPathRunnable= multipassWaypointPathRunnable;
     
 }
 
-finish();
+
+    public run(){
+this.multipassWaypointPathRunnable!.processEndRunnable();
     
 }
 
-                                }
-                            ;
+
+}
+                
+            
+    private readonly END_RUNNABLE: Runnable = new this.EndRunnable(this);
 
     private readonly ALREADY_ENDED_RUNNABLE: Runnable = new class extends ARunnable
                                 {
@@ -250,7 +174,7 @@ finish();
                                 }
                             ;
 
-    private currentPassRunnable: Runnable = FIRST_RUNNABLE;
+    private currentPassRunnable: Runnable = this.FIRST_RUNNABLE;
 
 public constructor (){
 
@@ -314,7 +238,7 @@ this.pathFindingInfo= NullUtil.getInstance()!.NULL_OBJECT;
     finish(){
 this.reset2();
     
-this.currentPassRunnable= ALREADY_ENDED_RUNNABLE;
+this.currentPassRunnable= this.ALREADY_ENDED_RUNNABLE;
     
 this.done= true;
     
@@ -334,9 +258,139 @@ this.done= true;
     public reset(){
 this.reset2();
     
-this.currentPassRunnable= FIRST_RUNNABLE;
+this.currentPassRunnable= this.FIRST_RUNNABLE;
     
 this.done= false;
+    
+}
+
+
+    processFirstRunnable(){
+
+        try {
+            this.pathFindingLayer!.getWaypointRunnableLogHelper()!.start(this.pathFindingLayer);
+    
+this.reset2();
+    
+
+    var geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
+    
+
+                        if(geographicMapCellPosition == 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+                            throw new Exception("Should never be running here");
+                    
+
+                                    }
+                                
+this.pathFindingInfo= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition);
+    
+
+    var localPathFindingInfo: PathFindingInfo = this.pathFindingInfo as PathFindingInfo;;
+    
+this.list= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, this.multipassState);
+    
+
+                        if(this.list != this.basicArrayListUtil!.getImmutableInstance())
+                        
+                                    {
+                                    this.END_RUNNABLE.run();
+    
+
+                                    }
+                                
+                        else {
+                            this.currentPassRunnable= this.SECOND_RUNNABLE;
+    
+
+                        }
+                            
+
+                //: 
+} catch(e) 
+            {
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+this.setRunning(false);
+    
+this.finish();
+    
+}
+
+}
+
+
+    processSecondRunnable(){
+
+        try {
+            
+    var geographicMapCellPosition: GeographicMapCellPosition = this.pathFindingLayer!.getCurrentGeographicMapCellPosition()!;;
+    
+
+    var localPathFindingInfo: PathFindingInfo = this.pathFindingInfo as PathFindingInfo;;
+    
+this.list= this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, this.multipassState);
+    
+
+                        if(this.list != this.basicArrayListUtil!.getImmutableInstance())
+                        
+                                    {
+                                    this.END_RUNNABLE.run();
+    
+
+                                    }
+                                
+
+                //: 
+} catch(e) 
+            {
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+this.setRunning(false);
+    
+this.finish();
+    
+}
+
+}
+
+
+    processEndRunnable(){
+
+        try {
+            
+    var waypointBehavior: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;;
+    
+waypointBehavior!.setWaypointPathsList(this.list);
+    
+this.pathFindingLayer!.getWaypointRunnableLogHelper()!.end(this.pathFindingLayer);
+    
+
+                //: 
+} catch(e) 
+            {
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+    
+this.setRunning(false);
+    
+}
+
+this.finish();
     
 }
 

@@ -1005,7 +1005,7 @@ this.removeWaypoint(waypointLayer, this.unitWaypointStrings!.ALREADY_THERE);
                 //@Throws(Exception.constructor)
             
     runWaypointPathTask(waypointLayer: AdvancedRTSGameLayer){
-setWaypointPathsList(UnitWaypointBehavior2.runningWaypointPathList);
+this.setWaypointPathsList(UnitWaypointBehavior2.runningWaypointPathList);
     
 
                         if(this.waypointPathRunnable!.isRunning())
@@ -1163,7 +1163,7 @@ stringBuffer!.append(UnitWaypointBehavior2.TARGET_DISTANCE);
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
-stringBuffer!.appendint(getCurrentTargetDistance());
+stringBuffer!.appendint(this.getCurrentTargetDistance());
     
 
                                     }

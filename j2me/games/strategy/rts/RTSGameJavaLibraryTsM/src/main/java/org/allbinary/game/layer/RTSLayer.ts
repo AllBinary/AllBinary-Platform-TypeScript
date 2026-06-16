@@ -735,7 +735,7 @@ this.animationInterface= animationInterface;
             
     public setTarget(targetGameLayer: PathFindingLayerInterface){
 
-    var anotherTargetDistance: number = layerDistanceUtil!.getDistance(this as AllBinaryLayer, targetGameLayer as AllBinaryLayer)!;;
+    var anotherTargetDistance: number = this.layerDistanceUtil!.getDistance(this as AllBinaryLayer, targetGameLayer as AllBinaryLayer)!;;
     
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.getWaypointBehavior()!;;

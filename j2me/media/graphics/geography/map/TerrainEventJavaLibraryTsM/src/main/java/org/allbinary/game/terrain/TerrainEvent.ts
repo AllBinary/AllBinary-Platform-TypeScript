@@ -59,7 +59,7 @@ public constructor (basicTerrainInfo: any = {}){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setBasicTerrainInfo(basicTerrainInfo as BasicTerrainInfo);
+this.setBasicTerrainInfo(this.basicTerrainInfo);
     
 }
 

@@ -38,9 +38,17 @@ import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFac
       
 import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
       
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      
 import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
       
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      
 import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+      
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+      
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       
 
 

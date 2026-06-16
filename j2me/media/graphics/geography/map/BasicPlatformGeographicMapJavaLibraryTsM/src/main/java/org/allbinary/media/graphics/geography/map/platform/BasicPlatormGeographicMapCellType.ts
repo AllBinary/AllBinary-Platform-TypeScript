@@ -24,6 +24,8 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
+import { SmallIntegerSingletonFactory } from '../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
       
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -58,12 +60,10 @@ export class BasicPlatormGeographicMapCellType
 
     var types: BasicArrayList = new BasicArrayListS(1);;
     
-types.add(type.toString());
+types.add(SmallIntegerSingletonFactory.getInstance()!.getAt(type));
     
 
     var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);;
-    
-new GeographicMapCellType(type, 0);
     
 
 

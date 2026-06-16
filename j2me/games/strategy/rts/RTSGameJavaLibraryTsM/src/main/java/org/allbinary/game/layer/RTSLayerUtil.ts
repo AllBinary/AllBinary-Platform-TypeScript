@@ -42,8 +42,6 @@ import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/W
       
 import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
       
-import { Group } from '../../../../org/allbinary/game/identification/Group.js';
-      
 import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
       
 import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';

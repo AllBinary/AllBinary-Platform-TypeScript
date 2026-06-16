@@ -203,15 +203,11 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 super.process(layerManager);
     
 
-                        if(this.isStickyItemSelected() || associatedRtsLayer == 
-                                    null
-                                )
+                        if(this.isStickyItemSelected() || associatedRtsLayer == CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     
-                        if(this.isStickyItemSelected() && associatedRtsLayer == 
-                                    null
-                                )
+                        if(this.isStickyItemSelected() && associatedRtsLayer == CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     

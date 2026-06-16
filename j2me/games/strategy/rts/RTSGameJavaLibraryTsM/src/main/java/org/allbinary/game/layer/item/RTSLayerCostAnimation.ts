@@ -150,7 +150,7 @@ super.paintXY(graphics, x, y);
     
 graphics.drawString(this.DOLLAR, xa, y +adjustedCostY, 0);
     
-graphics.drawChars(costString, 0, this.len, x +adjustedCostX, y +adjustedCostY, 0);
+graphics.drawChars(this.costString, 0, this.len, x +this.adjustedCostX, y +adjustedCostY, 0);
     
 }
 

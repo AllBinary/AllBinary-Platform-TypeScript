@@ -450,7 +450,7 @@ hashtable.put(Layer.ID, this);
     
 hashtable.put(AllBinaryGameLayerManager.ID, this.allBinaryGameLayerManagerP);
     
-this.setWaypointBehavior(new UnitWaypointBehavior2(this, this.waypointLayerInterfaceFactoryInterface!.getNextInstance(hashtable, x, y, z) as AdvancedRTSGameLayer));
+this.setWaypointBehavior(new UnitWaypointBehavior2(this, this.waypointLayerInterfaceFactoryInterface!.getNextInstance(hashtable, this.x, this.y, this.z) as AdvancedRTSGameLayer));
     
 
     var features: Features = Features.getInstance()!;;
@@ -1082,7 +1082,7 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.ge
 
     var angle: number = Math.round((angleInfo!.getAngle() +this.slightAngle));;
     
-hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getAt(1), SmallIntegerSingletonFactory.getInstance()!.getAt(Math.round(AngleFactory.getInstance()!.getAt(angle)!.getValue())));
+this.hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getAt(1), SmallIntegerSingletonFactory.getInstance()!.getAt(Math.round(AngleFactory.getInstance()!.getAt(angle)!.getValue())));
     
 
     var salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;;
@@ -1094,7 +1094,7 @@ salvoInterface!.process(layerManager, angle, 90);
 
     public downgrade(){
 
-                        if(getLevel() > 1)
+                        if(this.getLevel() > 1)
                         
                                     {
                                     super.downgrade();
@@ -1189,7 +1189,7 @@ targetAngle += 180;
 
     var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() -270)!;;
     
-this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading, targetAngle);
+this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, this.movementAngle, evading, targetAngle);
     
 
     var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;;
@@ -1571,10 +1571,10 @@ this.getUnitWaypointBehavior()!.move();
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;;
     
-this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, Math.round(velocityXScaled), Math.round(velocityYScaled), getPartialpositionlist());
+this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, Math.round(velocityXScaled), Math.round(velocityYScaled), UnitLayer.getPartialpositionlist());
     
 
-    var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(getPartialpositionlist()) as GeographicMapCellPosition;;
+    var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(UnitLayer.getPartialpositionlist()) as GeographicMapCellPosition;;
     
 
                         if(cellPosition == this.cellPositionFactory!.NONE)
@@ -1643,7 +1643,7 @@ this.getUnitWaypointBehavior()!.addBuildingChase(allbinaryLayer, cellPosition);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "move", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "move", e);
     
 }
 

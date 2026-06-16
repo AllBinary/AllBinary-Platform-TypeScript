@@ -137,9 +137,7 @@ this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerMa
     var index: number = scrollSelectionForm!.getSelectedIndexForPoint(point)!;;
     
 
-                        if(this.isStickyItemSelected() && associatedRtsLayer == 
-                                    null
-                                )
+                        if(this.isStickyItemSelected() && associatedRtsLayer == CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     
@@ -175,9 +173,7 @@ this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerMa
 this.logUtil!.putF(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], this, commonStrings!.PROCESS);
     
 
-                        if(this.isStickyItemSelected() && associatedRtsLayer == 
-                                    null
-                                )
+                        if(this.isStickyItemSelected() && associatedRtsLayer == CollidableDestroyableDamageableLayer.getNullInstance())
                         
                                     {
                                     
