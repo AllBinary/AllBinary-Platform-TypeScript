@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -24,13 +24,15 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../../../javax/microedition/lcdui/Font.js';
+      
+import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+      
 import { NumberStringHud } from '../../../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
       
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      
-import { MyFont } from '../../../../../../../org/allbinary/graphics/font/MyFont.js';
       
 
 
@@ -61,17 +63,30 @@ export class ScoreHudWidget extends NumberStringHud {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ScoreHudWidget(maxscore, location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, BasicColorFactory.getInstance()!.GREY);
+                        return new ScoreHudWidget(maxscore, location, direction, 2, BasicColorFactory.getInstance()!.GREY);
     
 }
 
 
-public constructor (maxscore: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
-            super("Pts ", maxscore, location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+public constructor (maxscore: number, location: number, direction: number, bufferZone: number, basicColor: BasicColor){
+            super("Pts ", maxscore, location, direction, bufferZone, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
+this.updateMaxHeight= 14;
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.updateMaxWidth= font.getSize() *5;
+    
+super.updateMeasurement(graphics);
+    
 }
 
 

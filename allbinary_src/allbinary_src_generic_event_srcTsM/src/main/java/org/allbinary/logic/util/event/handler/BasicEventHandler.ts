@@ -132,7 +132,7 @@ index++;
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
 this.eventListenerInterfaceList= new BasicArrayListD();
@@ -152,7 +152,7 @@ this.eventListenerInterfaceList= new BasicArrayListD();
                                 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public addListenerInterface(eventListenerInterface: EventListenerInterface){
 
@@ -172,7 +172,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
 this.eventListenerInterfaceList!.remove(eventListenerInterface);
@@ -181,7 +181,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public fireEvent(eventObject: AllBinaryEventObject){
 

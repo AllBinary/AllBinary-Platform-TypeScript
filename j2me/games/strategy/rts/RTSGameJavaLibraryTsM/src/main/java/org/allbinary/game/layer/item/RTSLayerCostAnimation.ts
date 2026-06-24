@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
@@ -40,7 +42,11 @@ import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/Lo
       
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
       
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
       
@@ -69,26 +75,28 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class RTSLayerCostAnimation extends Animation implements TechEventListenerInterface {
+export class RTSLayerCostAnimation extends Animation implements TechEventListenerInterface, UpdateMyFontInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly myFont: MyFont = MyFont.getInstance()!;
-
     private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.createPowerOfTen(10000)!;
 
+    private readonly DOLLAR: string = "$";
+
     private readonly image: Image;
+
+    private readonly layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface;
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 
     private costString: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
 
     private len: number= 0;
 
-    private readonly DOLLAR: string = "$";
+    private adjustedCostX: number= 0;
 
-    private readonly adjustedCostX: number = this.myFont!.stringWidth(this.DOLLAR)!;
-
-    private readonly layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface;
+    private fontHeight: number = 0;
 
 public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface){
 
@@ -98,6 +106,19 @@ public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInter
 this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface;
     
 this.update();
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.fontHeight= font.getHeight();
+    
+this.adjustedCostX= font.stringWidth(this.DOLLAR);
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
 
@@ -140,10 +161,12 @@ this.len= this.primitiveLongUtil!.getCurrentTotalDigits();
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
+this.myFontProcessor!.process(graphics);
+    
 super.paintXY(graphics, x, y);
     
 
-    var adjustedCostY: number = this.image.getHeight() -this.myFont!.DEFAULT_CHAR_HEIGHT;;
+    var adjustedCostY: number = this.image.getHeight() -this.fontHeight;;
     
 
     var xa: number = x +2;;

@@ -24,8 +24,6 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Thread } from '../../../../java/lang/Thread.js';
-        
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
@@ -57,6 +55,8 @@ import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.j
 import { MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface.js';
       
 import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
+      
+import { ThreadObjectUtil } from '../../../../org/allbinary/thread/ThreadObjectUtil.js';
       
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
       
@@ -226,10 +226,7 @@ break;
                                     {
                                     abRunnable!.setRunning(true);
     
-
-    var thread: Thread = new Thread(abRunnable);;
-    
-thread.start();
+ThreadObjectUtil.getInstance()!.processThread(abRunnable);
     
 
                                     }

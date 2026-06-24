@@ -179,7 +179,7 @@ this.running= running;
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -203,7 +203,7 @@ this.logUtil!.putF(new StringMaker().append(this.IS_RUNNING)!.appendboolean(this
     private readonly THREAD: string = "Thread: ";
 
     private readonly NOT_EQUAL: string = " != ";
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -332,7 +332,7 @@ this.notified= true;
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -347,7 +347,7 @@ this.repaint();
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public waitOnNotify(wait: number){
 

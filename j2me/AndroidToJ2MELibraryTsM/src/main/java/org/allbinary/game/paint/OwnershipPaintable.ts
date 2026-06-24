@@ -34,7 +34,11 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
       
@@ -58,8 +62,8 @@ import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUt
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-export class OwnershipPaintable extends Paintable {
+        //AndroidToJ2ME
+export class OwnershipPaintable extends Paintable implements UpdateMyFontInterface {
         
 
     public static getInstance(): OwnershipPaintable{
@@ -74,11 +78,21 @@ export class OwnershipPaintable extends Paintable {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    private readonly displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
     private readonly COPYRIGHT: string = "AllBinary Copyright (c) 2011";
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
     private color: number = this.basicColor!.intValue()!;
+
+    private anchor: number = Anchor.TOP_LEFT;
+
+    private COPYRIGHT_Y: number= 0;
+
+    private beginWidth: number= 0;
 
 private constructor (){
 
@@ -86,33 +100,15 @@ private constructor (){
         }
 
 
-    private anchor: number = Anchor.TOP_LEFT;
-
-    public paint(graphics: Graphics){
-graphics.setColor(this.color);
-    
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
-    
-
-    var halfWidth: number = displayInfo!.getLastHalfWidth()!;;
-    
-
-    var height: number = displayInfo!.getLastHeight()!;;
-    
+    public updateMeasurement(graphics: Graphics){
 
     var font: Font = graphics.getFont()!;;
     
-
-    var beginWidth: number = (font.stringWidth(this.COPYRIGHT)>>1);;
+this.COPYRIGHT_Y= 2 *font.getHeight();
     
-
-    var COPYRIGHT_Y: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;;
+this.beginWidth= (font.stringWidth(this.COPYRIGHT)>>1);
     
-graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, this.anchor);
+this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
 
@@ -131,6 +127,22 @@ this.color= basicColor!.intValue();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.basicColor;
+    
+}
+
+
+    public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
+graphics.setColor(this.color);
+    
+
+    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
+    
+
+    var height: number = this.displayInfo!.getLastHeight()!;;
+    
+graphics.drawString(this.COPYRIGHT, halfWidth -this.beginWidth, height -COPYRIGHT_Y, this.anchor);
     
 }
 

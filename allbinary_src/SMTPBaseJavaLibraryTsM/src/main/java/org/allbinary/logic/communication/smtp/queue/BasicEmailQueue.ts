@@ -58,7 +58,7 @@ export class BasicEmailQueue extends BasicQueue implements EmailQueueInterface {
     private static readonly instance: BasicEmailQueue = new BasicEmailQueue();
 
     private static basicEmailQueue: BasicEmailQueue;
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getInstance(): BasicEmailQueue{
 
@@ -90,7 +90,7 @@ private constructor (){
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public offer(emailInterface: EmailInterface): boolean{
 this.offer(emailInterface);
@@ -105,14 +105,14 @@ this.post(emailInterface);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     remove(emailInterface: EmailInterface){
 this.remove(emailInterface);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public remove(): EmailInterface{
 
@@ -125,7 +125,7 @@ this.remove(emailInterface);
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     post(emailInterface: EmailInterface){
 
@@ -143,7 +143,7 @@ this.processAllUnsent();
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     processAllUnsent(){
 
@@ -174,7 +174,7 @@ this.processAllUnsent();
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     send(emailInterface: EmailInterface): boolean{
 

@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { RTSLayer } from '../../../../../../org/allbinary/game/layer/RTSLayer.js';
@@ -31,8 +33,6 @@ import { WaypointInfoHudPaintable } from '../../../../../../org/allbinary/game/l
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       
 import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/draw/KeyValueDrawCharArray.js';
-      
-import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
       
 
 
@@ -61,10 +61,23 @@ export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable
 
     private readonly keyvalueDrawString: KeyValueDrawCharArray;
 
+    private fontHeight: number = 0;
+
 public constructor (){
 
             super();
         this.keyvalueDrawString= new KeyValueDrawCharArray(GeologicalResourceInfoHudPaintable.RESOURCES, this.textX);
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
+    
+
+    var font: Font = graphics.getFont()!;;
+    
+this.fontHeight= (2 *font.getHeight());
     
 }
 
@@ -103,7 +116,7 @@ this.keyvalueDrawString!.update(this.getPrimitiveLongUtil()!.getCharArray(total)
     public paint(graphics: Graphics){
 super.paint(graphics);
     
-this.keyvalueDrawString!.paint(graphics, (this.y +(2 *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT)));
+this.keyvalueDrawString!.paint(graphics, (this.y +this.fontHeight));
     
 }
 

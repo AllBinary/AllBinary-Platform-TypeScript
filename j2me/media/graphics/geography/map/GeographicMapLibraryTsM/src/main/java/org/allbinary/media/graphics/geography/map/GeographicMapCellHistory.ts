@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
@@ -48,7 +50,11 @@ import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
       
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
       
-import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { BasicDecimal } from '../../../../../../org/allbinary/logic/math/BasicDecimal.js';
       
@@ -75,7 +81,7 @@ import { BasicGeographicMap } from './BasicGeographicMap.js';
 
 export class GeographicMapCellHistory
             extends Object
-         {
+         implements UpdateMyFontInterface {
         
 
     public static readonly NULL_GEOGRPAHIC_MAP_HISTORY_ARRAY: GeographicMapCellHistory[] = [];
@@ -92,9 +98,13 @@ export class GeographicMapCellHistory
 
     private readonly animation: Animation = new TextAnimation(this.MISSED_INFO, AnimationBehavior.getInstance());
 
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
     private totalVisited: number= 0;
 
     private halfWidth: number = 0;
+
+    private fontHeight: number = 0;
 
 public constructor (){
 
@@ -104,6 +114,17 @@ public constructor (){
 this.visitedList= new BasicArrayListD();
     
 this.init();
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.fontHeight= font.getHeight();
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
 
@@ -590,10 +611,7 @@ this.totalVisited= 0;
                                     }
                                 
 
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var height: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;;
+    var height: number = 2 *this.fontHeight;;
     
 this.animation.paintXY(graphics, x +halfWidth, y +(height));
     
@@ -605,7 +623,9 @@ this.animation.paintXY(graphics, x +halfWidth, y +(height));
     public paintNotVisited(graphics: Graphics, geographicMapInterface: BasicGeographicMap){
 
         try {
-            graphics.setColor(this.RED);
+            this.myFontProcessor!.process(graphics);
+    
+graphics.setColor(this.RED);
     
 
     var localVisitedList: BasicArrayList = this.visitedList;;

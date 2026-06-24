@@ -76,7 +76,7 @@ export class NullIndexedAnimationFactory
 //inner= member=true isStatic=
 NullIndexedAnimationInner = class extends NullIndexedAnimation {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
  constructor (){

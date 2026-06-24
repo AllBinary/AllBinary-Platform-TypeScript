@@ -82,7 +82,7 @@ export class NullRotationAnimationFactory
 //inner= member=true isStatic=
 NullRotationAnimation2 = class extends NullRotationAnimation {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
  constructor (){

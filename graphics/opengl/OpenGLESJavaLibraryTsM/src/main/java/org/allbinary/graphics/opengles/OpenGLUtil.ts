@@ -199,7 +199,7 @@ this.set(gl);
                                     {
                                     
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.anyType) 
 
         //mutex.withLock
@@ -229,7 +229,7 @@ this.list.add(encapsulateImage);
     public clear(){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.anyType) 
 
         //mutex.withLock
@@ -244,7 +244,7 @@ this.list.clear();
     public addRunnable(runnable: Runnable){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lockObject) 
 
         //mutex.withLock
@@ -268,7 +268,7 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
     processRunnables(){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lockObject) 
 
         //mutex.withLock

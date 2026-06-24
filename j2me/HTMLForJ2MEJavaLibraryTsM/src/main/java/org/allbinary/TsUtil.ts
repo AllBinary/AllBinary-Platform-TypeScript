@@ -22,7 +22,7 @@
 
 
         
-            import { ClassLoader } from '../../java/lang/ClassLoader.js';
+            import { RuntimeException } from '../../java/lang/RuntimeException.js';
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
@@ -90,10 +90,10 @@ export class TsUtil
             
     public waitFor(any: any = {}, timeoutMillis: number){
 
-    var anyType: any = any;;
-    
-anyType!.wait(timeoutMillis);
-    
+
+
+                            throw new RuntimeException();
+                    
 }
 
 
@@ -108,7 +108,7 @@ anyType!.wait(timeoutMillis);
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -161,16 +161,6 @@ recordStore!.getRecord(recordId, data, 0);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return anyType! === object2;;
-    
-}
-
-
-    public getClassClassLoader(anyType: any = {}): ClassLoader{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType!.constructor.namegetClassLoader();;
     
 }
 

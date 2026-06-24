@@ -61,7 +61,7 @@ Config = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
     public readonly bitmapConfig: any;

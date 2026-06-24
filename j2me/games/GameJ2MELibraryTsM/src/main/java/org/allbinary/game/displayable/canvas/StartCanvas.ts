@@ -214,11 +214,11 @@ import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayLis
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
 import { MenuListener } from './MenuListener.js';
+import { FormUtil } from './FormUtil.js';
 import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
 import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
 import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
 import { GameRunnable } from './GameRunnable.js';
-import { FormUtil } from './FormUtil.js';
 import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
 
 export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener {
@@ -241,6 +241,8 @@ export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInt
     readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
 
     readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
+
+    readonly formUtil: FormUtil = FormUtil.getInstance()!;
 
     private basicGameDemoPaintable: StatePaintable = StatePaintableFactory.getInstance()!;
 
@@ -351,7 +353,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = FormUtil.getInstance()!.createFormRectangle()!;;
+    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -676,7 +678,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVE
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.close();
@@ -685,7 +687,7 @@ this.setPaused(true);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.open();
@@ -797,7 +799,7 @@ this.paintedSpecialAnimationInterface!.paintThreedXYZ(graphics, 0, 0, 0);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public processGameOver(){
 this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");

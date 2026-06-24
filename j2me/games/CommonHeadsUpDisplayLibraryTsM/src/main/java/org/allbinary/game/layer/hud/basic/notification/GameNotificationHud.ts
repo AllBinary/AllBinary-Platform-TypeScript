@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -69,10 +69,10 @@ import { EventStrings } from '../../../../../../../org/allbinary/logic/util/even
 export class GameNotificationHud extends BasicHud implements GameNotificationListenerInterface {
         
 
-    public static readonly NULL_GAME_NOTIFICATION: GameNotificationHud = new GameNotificationHud(BasicHudFactory.getInstance()!.TOPCENTER, BasicHudFactory.getInstance()!.HORIZONTAL, 0, 0, 0, BasicColorFactory.getInstance()!.RED);
+    public static readonly NULL_GAME_NOTIFICATION: GameNotificationHud = new GameNotificationHud(BasicHudFactory.getInstance()!.TOPCENTER, BasicHudFactory.getInstance()!.HORIZONTAL, 0, BasicColorFactory.getInstance()!.RED);
 
-public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
-            super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+public constructor (location: number, direction: number, bufferZone: number, basicColor: BasicColor){
+            super(location, direction, bufferZone, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.

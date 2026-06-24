@@ -160,7 +160,7 @@ pooledThread!.start();
     public runTaskWithPriority(task: PriorityRunnable){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -243,7 +243,7 @@ this.notify();
     public runTask(task: Runnable){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -280,7 +280,7 @@ this.notify();
     getTask(): Runnable{
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -322,7 +322,7 @@ this.wait();
     public clear(){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -344,7 +344,7 @@ this.wait();
     public close(){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock
@@ -368,7 +368,7 @@ this.taskQueue!.clear();
     public join(){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock

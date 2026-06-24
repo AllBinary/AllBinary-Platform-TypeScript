@@ -80,7 +80,7 @@ this.playerInputId= playerInputId;
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
 this.add(gameKeyEvent);
@@ -89,14 +89,14 @@ this.addForRemoval(gameKeyEvent);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
 this.add(gameKeyEvent);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onDownKeyEvent(gameKeyEvent: GameKeyEvent){
 this.add(gameKeyEvent);
@@ -105,21 +105,21 @@ this.addForRemoval(gameKeyEvent);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onDownKey(gameKeyEvent: Integer){
 PreLogUtil.put(new StringMaker().append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, this.gameInputStrings!.ON_DOWN_GAME_KEY);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
 this.addForRemoval(gameKeyEvent);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onUpKeyEvent(gameKeyEvent: Integer){
 }

@@ -85,7 +85,7 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
 
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
-    readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+    readonly displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
     private readonly name: string;
 
@@ -102,7 +102,7 @@ public constructor (name: string, childNameList: BasicArrayList){
             super();
         this.logUtil!.putF(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR);
     
-this.displayInfoSingleton!.update(this, this.canvasStrings!.CONSTRUCTOR);
+this.displayInfo!.update(this, this.canvasStrings!.CONSTRUCTOR);
     
 this.name= name;
     
@@ -116,13 +116,13 @@ this.commandStack= new Stack();
     public setFullScreenMode(mode: boolean){
 super.setFullScreenMode(mode);
     
-this.displayInfoSingleton!.update(this, this.canvasStrings!.SET_FULL_SCREEN_MODE);
+this.displayInfo!.update(this, this.canvasStrings!.SET_FULL_SCREEN_MODE);
     
 }
 
 
     sizeChanged(w: number, h: number){
-this.displayInfoSingleton!.update(this, this.canvasStrings!.SIZE_CHANGED);
+this.displayInfo!.update(this, this.canvasStrings!.SIZE_CHANGED);
     
 }
 
@@ -136,7 +136,7 @@ this.displayInfoSingleton!.update(this, this.canvasStrings!.SIZE_CHANGED);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isCommand(command: Command): boolean{
 
@@ -147,7 +147,7 @@ this.displayInfoSingleton!.update(this, this.canvasStrings!.SIZE_CHANGED);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public addCommand(command: Command){
 
@@ -163,7 +163,7 @@ super.addCommand(command);
                                 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public removeCommand(command: Command){
 this.commandStack!.removeElement(command);
@@ -172,7 +172,7 @@ super.removeCommand(command);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public removeAllCommands(){
 
@@ -209,7 +209,7 @@ this.commandListener= l;
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isPaused(): boolean{
 
@@ -226,7 +226,7 @@ this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.PAUSE);
@@ -239,7 +239,7 @@ this.setPaused(true);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.UN_PAUSE);
@@ -256,7 +256,7 @@ this.setPaused(false);
                 //@Throws(Exception.constructor)
             
     process(){
-this.displayInfoSingleton!.process();
+this.displayInfo!.process();
     
 }
 

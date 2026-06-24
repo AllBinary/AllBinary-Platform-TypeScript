@@ -44,7 +44,7 @@ static attr = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
 }
@@ -55,7 +55,7 @@ static drawable = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
 }
@@ -66,7 +66,7 @@ static id = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly custom_web_view: number = 0x7f050000;
 
     public static readonly ad_area_bottom: number = 0x7f060002;
@@ -87,7 +87,7 @@ static layout = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly webview_layout: number = 0x7f020000;
 /**/
 
@@ -100,7 +100,7 @@ static raw = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly about: number = 0x7f030000;
 
     public static readonly privacy_policy: number = 0x7f030001;
@@ -175,7 +175,7 @@ static string = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly progressbar_in_title_string: number = 0x7f050001;
 /**/
 

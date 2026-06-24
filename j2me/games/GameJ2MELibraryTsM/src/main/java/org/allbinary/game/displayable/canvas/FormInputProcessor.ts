@@ -105,7 +105,7 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 }
 
 
-    public keyPressed(keyCode: number, deviceId: number){
+    public keyPressedByDevice(keyCode: number, deviceId: number){
 
         try {
             PreLogUtil.put(new StringMaker().append(this.inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
@@ -116,7 +116,7 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
     var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this.allBinaryGameCanvas, input)!;;
     
-this.downKeyEventHandler!.fireEventForEvent(gameKeyEvent);
+this.downKeyEventHandler!.fireEventForGameKeyEvent(gameKeyEvent);
     
 
                 //: 
@@ -129,7 +129,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.AD
 }
 
 
-    public keyReleased(canvas: Canvas, keyCode: number, deviceId: number){
+    public keyReleasedByDevice(canvas: Canvas, keyCode: number, deviceId: number){
 
         try {
             

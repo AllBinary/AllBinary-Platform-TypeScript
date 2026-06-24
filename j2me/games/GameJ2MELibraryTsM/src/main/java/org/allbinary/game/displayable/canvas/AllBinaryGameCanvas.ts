@@ -40,6 +40,8 @@ import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup
       
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
       
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
@@ -170,6 +172,8 @@ import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/B
       
 import { CanvasStrings } from '../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
       
+import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      
 import { GameTickDisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/GameTickDisplayInfoSingleton.js';
       
 import { MyCommandsFactory } from '../../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
@@ -179,6 +183,12 @@ import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displa
 import { DisplayChangeEventHandler } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
       
 import { DisplayChangeEventListener } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
+      
+import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { CommandCurrentSelectionFormFactory } from '../../../../../org/allbinary/graphics/form/CommandCurrentSelectionFormFactory.js';
       
@@ -302,16 +312,17 @@ import { MenuListener } from './MenuListener.js';
 import { PopupMenuInterface } from './PopupMenuInterface.js';
 import { GameCanvasRunnable } from './GameCanvasRunnable.js';
 import { GameCanvasPauseRunnable } from './GameCanvasPauseRunnable.js';
+import { FormUtil } from './FormUtil.js';
+import { MyFormUtil } from './MyFormUtil.js';
 import { EndGameInfo } from './EndGameInfo.js';
 import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
 import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
 import { DemoGameBehavior } from './DemoGameBehavior.js';
 import { BaseMenuBehavior } from './BaseMenuBehavior.js';
 import { BaseGameBehavior } from './BaseGameBehavior.js';
-import { InGameMenuBehavior } from './InGameMenuBehavior.js';
-import { FormUtil } from './FormUtil.js';
 import { BasicPopupMenuPaintable } from './BasicPopupMenuPaintable.js';
 import { PopupMenuInputProcessor } from './PopupMenuInputProcessor.js';
+import { InGameMenuBehavior } from './InGameMenuBehavior.js';
 import { GameLimitedCommandTextItemArrayFactory } from './GameLimitedCommandTextItemArrayFactory.js';
 import { PopupCommandFormInputProcessor } from './PopupCommandFormInputProcessor.js';
 import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
@@ -325,7 +336,7 @@ import { DemoPaintableInterface } from './DemoPaintableInterface.js';
 import { GameCanvasInputProcessor } from './GameCanvasInputProcessor.js';
 import { FormInputProcessor } from './FormInputProcessor.js';
 
-export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGameCanvasInterface, GameCanvasRunnableInterface, MenuListener, IntermissionCompositeInterface, IntermissionEnableListenerInterface, PopupMenuInterface, DisplayChangeEventListener {
+export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGameCanvasInterface, GameCanvasRunnableInterface, MenuListener, IntermissionCompositeInterface, IntermissionEnableListenerInterface, PopupMenuInterface, DisplayChangeEventListener, UpdateMyFontInterface {
         
 
     private static readonly id: number = 0;
@@ -357,6 +368,14 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
     public readonly gameRunnable: GameCanvasRunnable = new GameCanvasRunnable(this);
 
     public readonly gamePauseRunnable: GameCanvasPauseRunnable = new GameCanvasPauseRunnable(this);
+
+    readonly formUtil: FormUtil = FormUtil.getInstance()!;
+
+    readonly myFormUtil: MyFormUtil = MyFormUtil.getInstance()!;
+
+    private readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
 
     gameSpecificPaintable: Paintable = NullPaintable.getInstance()!;
 
@@ -470,6 +489,8 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private progressPaintable: PaintableInterface = ProgressCanvasFactory.getLazyInstance()!;
 
+    fontHeight: number= 0;
+
 public constructor (commandListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
             super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, true);
                     
@@ -503,14 +524,59 @@ this.menuBehavior= this.getInGameMenuBehavior();
 
                         }
                             
-this.initSpecialPaint();
-    
 this.initPopupMenu();
     
 this.initMenu();
     
+this.initSpecialPaint();
+    
 DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+        try {
+            
+    var font: Font = graphics.getFont()!;;
+    
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+    
+this.fontHeight= font.getHeight();
+    
+this.myFormUtil!.updateMeasurement(graphics);
+    
+
+    var popupMenuRectangle: Rectangle = this.myFormUtil!.getPopupMenuRectangle()!;;
+    
+
+    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);;
+    
+basicPopupMenuPaintable!.init(popupMenuRectangle);
+    
+
+                        if(this.getPopupMenuInputProcessor() != NoMenuInputProcessor.getInstance())
+                        
+                                    {
+                                    
+    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);;
+    
+popupMenuInputProcessor!.init(popupMenuRectangle);
+    
+
+                                    }
+                                
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+
+                //: 
+} catch(e) 
+            {
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
+    
+}
+
 }
 
 
@@ -552,7 +618,9 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
         try {
-            this.menuBehavior!.onDisplayChangeEvent(this, displayChangeEvent);
+            this.myFontProcessor= this.updateMyFontProcessor;
+    
+this.menuBehavior!.onDisplayChangeEvent(this, displayChangeEvent);
     
 
                 //: 
@@ -569,33 +637,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DI
             
     public updateMenuFromEvent(displayChangeEvent: DisplayChangeEvent){
 
-    var formUtil: FormUtil = FormUtil.getInstance()!;;
-    
-
-    var popupMenuRectangle: Rectangle = formUtil!.createPopupMenuRectangle()!;;
-    
-
-    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);;
-    
-basicPopupMenuPaintable!.init(popupMenuRectangle);
-    
-
-                        if(this.getPopupMenuInputProcessor() != NoMenuInputProcessor.getInstance())
-                        
-                                    {
-                                    
-    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);;
-    
-popupMenuInputProcessor!.init(popupMenuRectangle);
-    
-
-                                    }
-                                
-
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = formUtil!.createFormRectangle()!;;
+    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 this.menuForm!.init(rectangle, formType);
     
@@ -608,6 +653,8 @@ this.menuForm!.init(rectangle, formType);
 
                                     }
                                 
+this.myFontProcessor= this.updateMyFontProcessor;
+    
 }
 
 
@@ -648,10 +695,14 @@ super.processSleep();
             
     initPopupMenu(){
 
+                        if(this.popupMenuInputProcessor == NoMenuInputProcessor.getInstance())
+                        
+                                    {
+                                    
     var features: Features = Features.getInstance()!;;
     
 
-    var popupMenuRectangle: Rectangle = FormUtil.getInstance()!.createPopupMenuRectangle()!;;
+    var popupMenuRectangle: Rectangle = this.myFormUtil!.getPopupMenuRectangle()!;;
     
 
                         if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
@@ -664,6 +715,13 @@ this.setPopupMenuInputProcessor(new PopupMenuInputProcessor(new BasicArrayListD(
 
                                     }
                                 
+
+                                    }
+                                
+                        else {
+                            
+                        }
+                            
 }
 
 
@@ -689,9 +747,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
 this.closeMenu();
     
 
-    var formUtil: FormUtil = FormUtil.getInstance()!;;
-    
-
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
@@ -704,7 +759,7 @@ this.closeMenu();
     var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;;
     
 
-    var rectangle: Rectangle = formUtil!.createFormRectangle()!;;
+    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 25, false, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
     
@@ -796,19 +851,16 @@ scrollSelectionForm!.append(items[index]!);
 }
 
 
-    var formUtil: FormUtil = FormUtil.getInstance()!;;
-    
-
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = formUtil!.createFormRectangle()!;;
+    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle, formType);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.gameBehavior!.pause(this);
@@ -823,7 +875,7 @@ System.gc();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.gameStrings!.UNPAUSE);
@@ -1096,7 +1148,7 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     initConfigurable(abeClientInformation: AbeClientInformationInterface){
 
@@ -1288,9 +1340,6 @@ this.addCommand(gameCommandsFactory!.QUIT_COMMAND);
     var isOverScan: boolean = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!.isOverScan()!;;
     
 
-    var features: Features = Features.getInstance()!;;
-    
-
                         if(J2MEUtil.isHTML())
                         
                                     {
@@ -1444,7 +1493,7 @@ this.gameLayerManager= layerManager;
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isGameOver(): boolean{
 
@@ -1455,7 +1504,7 @@ this.gameLayerManager= layerManager;
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setGameOver(gameOver: boolean){
 this.gameOver= gameOver;
@@ -1944,6 +1993,8 @@ this.colorFillPaintable!.paint(graphics);
 
 
     public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
 this.baseGameStatistics!.nextRefresh();
     
 this.draw(graphics);
@@ -2006,7 +2057,7 @@ this.keyRepeatedByDevice(keyCode, 0);
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-this.inputProcessor!.keyPressed(keyCode, deviceId);
+this.inputProcessor!.keyPressedByDevice(keyCode, deviceId);
     
 }
 
@@ -2016,7 +2067,7 @@ this.inputProcessor!.keyPressed(keyCode, deviceId);
                         if(this.isSingleKeyRepeatableProcessing)
                         
                                     {
-                                    this.inputProcessor!.keyPressed(keyCode, deviceId);
+                                    this.inputProcessor!.keyPressedByDevice(keyCode, deviceId);
     
 
                                     }
@@ -2025,7 +2076,7 @@ this.inputProcessor!.keyPressed(keyCode, deviceId);
 
 
     public keyReleasedByDevice(keyCode: number, deviceId: number){
-this.inputProcessor!.keyReleased(this, keyCode, deviceId);
+this.inputProcessor!.keyReleasedByDevice(this, keyCode, deviceId);
     
 }
 
@@ -2125,7 +2176,7 @@ this.baseGameStatistics!.nextFrame();
     public notifyDonePainting(){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this) 
 
         //mutex.withLock

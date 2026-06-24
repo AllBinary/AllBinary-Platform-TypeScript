@@ -181,7 +181,7 @@ super.setLoopCount(count);
                                 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
 super.addPlayerListener(playerListener);
@@ -241,7 +241,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE
 
 
                 //@Throws(MediaException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public start(){
 
@@ -273,7 +273,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START
 
 
                 //@Throws(MediaException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public stop(){
 

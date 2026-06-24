@@ -105,7 +105,7 @@ private constructor (){
 
 
                 //@Throws(SQLException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public get(url: string): Connection{
 
@@ -288,7 +288,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
 
 
                 //@Throws(SQLException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public add(url: string, sqlConnection: Connection){
 

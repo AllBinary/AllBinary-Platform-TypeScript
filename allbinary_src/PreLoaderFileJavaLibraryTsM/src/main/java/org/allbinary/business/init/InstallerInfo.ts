@@ -83,7 +83,7 @@ export class InstallerInfo
     private static password: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private static hasRead: boolean = false;
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
 InstallerInfo.hasRead= value;
@@ -100,7 +100,7 @@ public constructor (){
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public write(){
 
@@ -152,7 +152,7 @@ InstallerInfo.hasRead= false;
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     read(){
 
@@ -230,7 +230,7 @@ InstallerInfo.password= password;
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     updateIfNeeded(){
 

@@ -51,11 +51,11 @@ export class InputProcessor
 
     readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
 
-    public keyPressed(keyCode: number, deviceId: number){
+    public keyPressedByDevice(keyCode: number, deviceId: number){
 }
 
 
-    public keyReleased(canvas: Canvas, keyCode: number, deviceId: number){
+    public keyReleasedByDevice(canvas: Canvas, keyCode: number, deviceId: number){
 }
 
 

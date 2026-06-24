@@ -98,7 +98,7 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
     public setThread(thread: Thread){
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -109,14 +109,14 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 this.running= running;
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     isAnyDataWorkerRunning(): boolean{
 
@@ -144,7 +144,7 @@ this.running= running;
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     startDataWorkers(){
 
@@ -164,7 +164,7 @@ this.captureThread!.start();
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     waitForDataWorkers(){
 

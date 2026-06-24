@@ -95,7 +95,7 @@ export class FileLog
     private static fileOut: BufferedWriter;
 
     private static backupIndex: number= 0;
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static createLogFile(): boolean{
 
@@ -149,7 +149,7 @@ console.log("Error Creating Log: " +e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     static createLogFileBackup(): boolean{
 
@@ -220,7 +220,7 @@ console.log("Error Creating Backup: " +e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, anyType: any = {}, functionName: string): string{
 
@@ -232,7 +232,7 @@ console.log("Error Creating Backup: " +e);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Throwable): string{
 
@@ -329,7 +329,7 @@ FileLog.fileOut!.flush();
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, className: string, functionName: string): string{
 
@@ -341,7 +341,7 @@ FileLog.fileOut!.flush();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
 

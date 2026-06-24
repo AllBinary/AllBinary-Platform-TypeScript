@@ -28,11 +28,15 @@ import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js
       
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
       
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      
 import { DisplayChangeEvent } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
       
 import { DisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
       
 import { LastDisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/LastDisplayChangeEventHandler.js';
+      
+import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
       
 import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
       
@@ -518,6 +522,16 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
                         if(aLastWidth > 0 && aLastHeight > 0)
                         
                                     {
+                                    
+    var features: Features = Features.getInstance()!;;
+    
+
+    var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;;
+    
+
+                        if(!features.isDefault(openGLFeatureFactory!.OPENGL) || this.last[this.WIDTH] != aLastWidth || this.last[this.HEIGHT] != aLastHeight)
+                        
+                                    {
                                     stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, this.commonStrings!.UPDATE);
@@ -642,6 +656,9 @@ SWTJOGLProcessor.getInstance()!.setCustom(aLastWidth, aLastHeight, this.ratio);
     
 this.add(this.commonStrings!.UPDATE);
     
+
+                                    }
+                                
 
                                     }
                                 

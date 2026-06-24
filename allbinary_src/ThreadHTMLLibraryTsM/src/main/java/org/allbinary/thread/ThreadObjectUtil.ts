@@ -10,6 +10,8 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
+            import { Runnable } from '../../../java/lang/Runnable.js';
+        
 
 
 
@@ -63,6 +65,12 @@ export class ThreadObjectUtil
                 //@Throws(Exception.constructor)
             
     public waitObjectFor(anyType: Object, delay: number){
+}
+
+
+    public processThread(runnable: Runnable){
+runnable.run();
+    
 }
 
 

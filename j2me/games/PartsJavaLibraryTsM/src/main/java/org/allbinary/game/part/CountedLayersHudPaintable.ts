@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -22,13 +22,19 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
       
@@ -57,12 +63,12 @@ import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactory
 
 export class CountedLayersHudPaintable
             extends Object
-         implements PaintableInterface {
+         implements PaintableInterface, UpdateMyFontInterface {
         
 
     private static XXStringWidth: number = 0;
 
-    private readonly myFont: MyFont = MyFont.getInstance()!;
+    private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
     private readonly partInterfaceArray: PartInterface[];
 
@@ -73,6 +79,10 @@ export class CountedLayersHudPaintable
     private readonly startIndex: number;
 
     private readonly dropSize: number;
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private height: number= 0;
 
 public constructor (partInterfaceArray: PartInterface[], dropSize: number, startIndex: number, countedTotalStringColor: number, countedPartsBorder: number){
 
@@ -87,6 +97,24 @@ this.countedPartsBorder= countedPartsBorder;
     
 this.dropSize= dropSize;
     
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.height= font.getHeight();
+    
+
+                        if(this.dropSize > font.getHeight())
+                        
+                                    {
+                                    this.height= this.dropSize;
+    
+
+                                    }
+                                
 
                         if(CountedLayersHudPaintable.XXStringWidth == 0)
                         
@@ -94,42 +122,34 @@ this.dropSize= dropSize;
                                     
     var XXString: string = "XX";;
     
-CountedLayersHudPaintable.XXStringWidth= MyFont.getInstance()!.stringWidth(XXString);
+CountedLayersHudPaintable.XXStringWidth= font.stringWidth(XXString);
     
 
                                     }
                                 
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
 }
 
 
     public paint(graphics: Graphics){
-
-    var height: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
+this.myFontProcessor!.process(graphics);
     
 
-                        if(this.dropSize > this.myFont!.DEFAULT_CHAR_HEIGHT)
-                        
-                                    {
-                                    height= this.dropSize;
-    
-
-                                    }
-                                
-
-    var lastWidth: number = DisplayInfoSingleton.getInstance()!.getLastWidth()!;;
-    
-
-    var count: number = 0;;
+    var lastWidth: number = this.displayInfoSingleton!.getLastWidth()!;;
     
 
     var widthEdge: number = lastWidth -this.dropSize;;
     
 
-    var y: number= 0;;
-    
-
     var size: number = this.partInterfaceArray!.length
                 ;;
+    
+
+    var count: number = 0;;
+    
+
+    var y: number= 0;;
     
 
     var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart;;
@@ -160,13 +180,15 @@ countedLayerInterfaceFactory= this.partInterfaceArray[index]! as CountedLayerInt
     
 layerInterface= pickedUpLayerInterfaceFactoryInterface!.getIconLayer();
     
-y= 40 +(count *height);
+y= 40 +(count *this.height);
     
 layerInterface!.setPosition(widthEdge, y, layerInterface!.getZP());
     
 layerInterface!.paint(graphics);
     
 graphics.setColor(this.countedTotalStringColor);
+    
+countedLayerInterfaceFactory!.paint(graphics);
     
 charArray= countedLayerInterfaceFactory!.getTotalString();
     
@@ -185,7 +207,7 @@ count++;
                                     {
                                     graphics.setColor(this.countedPartsBorder);
     
-graphics.drawRect(lastWidth -(CountedLayersHudPaintable.XXStringWidth +this.dropSize), 40, CountedLayersHudPaintable.XXStringWidth +this.dropSize, (count *height) +3);
+graphics.drawRect(lastWidth -(CountedLayersHudPaintable.XXStringWidth +this.dropSize), 40, CountedLayersHudPaintable.XXStringWidth +this.dropSize, (count *this.height) +3);
     
 
                                     }

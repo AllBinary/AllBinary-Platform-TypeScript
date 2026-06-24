@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
@@ -30,7 +32,11 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 
 
@@ -52,12 +58,24 @@ import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
 
-export class SimpleTextPaintable extends Paintable {
+export class SimpleTextPaintable extends Paintable implements UpdateMyFontInterface {
         
+
+    private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
+    private readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
 
     private text: string;
 
     private basicColor: BasicColor;
+
+    private topScoresWidth: number = 0;
+
+    private fontHeight: number = 0;
+
+    private anchor: number = Anchor.TOP_LEFT;
 
 public constructor (text: string, basicColor: BasicColor){
 
@@ -69,23 +87,28 @@ this.basicColor= basicColor;
 }
 
 
-    private anchor: number = Anchor.TOP_LEFT;
+    public updateMeasurement(graphics: Graphics){
 
-    private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+    var font: Font = graphics.getFont()!;;
+    
+this.topScoresWidth= (font.stringWidth(this.text)>>1);
+    
+this.fontHeight= font.getHeight();
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
 
     public paint(graphics: Graphics){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
+this.myFontProcessor!.process(graphics);
     
 
     var width: number = this.displayInfoSingleton!.getLast()[this.displayInfoSingleton!.WIDTH]!;;
     
-
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text)>>1);;
-    
 graphics.setColor(this.getBasicColorP()!.intValue());
     
-graphics.drawString(this.text, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, this.anchor);
+graphics.drawString(this.text, (width>>1) -this.topScoresWidth, this.fontHeight, this.anchor);
     
 }
 
@@ -108,6 +131,8 @@ this.basicColor= basicColor;
 
     public setText(text: string){
 this.text= text;
+    
+this.myFontProcessor= this.updateMyFontProcessor;
     
 }
 

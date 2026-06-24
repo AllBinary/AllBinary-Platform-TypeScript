@@ -154,7 +154,7 @@ export class AbSqlTableUtil
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
     readonly sqlStrings: SqlStrings = SqlStrings.getInstance()!;
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     getOutputStream(backupPath: string, tableName: string): OutputStream{
 
@@ -222,7 +222,7 @@ backupFile!.createNewFile();
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     backupFile(path: AbPath, backupPath: string, tableName: string): boolean{
 
@@ -366,7 +366,7 @@ lastIndex= index +1;
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public backupTable(abSqlTable: AbSqlTable): string{
 
@@ -491,7 +491,7 @@ StreamUtil.getInstance()!.close(outputStream);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public restoreTable(abSqlTable: AbSqlTable, portion: Portion): string{
 

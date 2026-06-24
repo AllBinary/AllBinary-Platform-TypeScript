@@ -144,7 +144,7 @@ export class ImageCache extends ImageCacheBase {
 //inner= member=true isStatic=
 NotHTMLProcessor = class extends Processor {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
     public process(){
@@ -159,7 +159,7 @@ concurrentImageLoadingProcessor!.runTask();
 //inner= member=true isStatic=
 NotHTMLEndProcessor = class extends Processor {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
     public process(){
@@ -177,7 +177,7 @@ progressCanvas!.endIfPaintedSinceStart();
 //inner= member=true isStatic=
 HTMLEndProcessor = class extends Processor {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
     public process(){
@@ -222,7 +222,7 @@ endProcessor= new this.NotHTMLEndProcessor();
 //inner= member=true isStatic=
 FirstProcessor = class extends Processor {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
     public process(){
@@ -329,7 +329,7 @@ this.firstTime= false;
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -429,7 +429,7 @@ lazyImageRotationAnimation= this.loadNowList!.get(0) as LazyImageRotationAnimati
                                     {
                                     
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -447,7 +447,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -551,7 +551,7 @@ this.loadImageForAnimation();
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -617,7 +617,7 @@ this.loadImageForAnimation();
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -967,7 +967,7 @@ this.runTask();
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -1003,7 +1003,7 @@ this.loadList!.add(image);
     
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -1064,7 +1064,7 @@ this.loadAfterList!.remove(list.get(index));
     public add(lazyImageRotationAnimation: LazyImageRotationAnimation){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock
@@ -1089,7 +1089,7 @@ this.loadAfterList!.add(lazyImageRotationAnimation);
                         else {
                             
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.lock) 
 
         //mutex.withLock

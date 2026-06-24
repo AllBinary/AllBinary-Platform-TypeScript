@@ -111,11 +111,15 @@ stringBuffer!.append(position.toString());
     private positionString: string = StringUtil.getInstance()!.EMPTY_STRING;
 
 public constructor (position: number, location: number, direction: number, basicColor: BasicColor){
-            super(location, direction, 10, 40, 2, basicColor);
+            super(location, direction, 2, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
+this.updateMaxHeight= 10;
+    
+this.updateMaxWidth= 40;
+    
 }
 
 

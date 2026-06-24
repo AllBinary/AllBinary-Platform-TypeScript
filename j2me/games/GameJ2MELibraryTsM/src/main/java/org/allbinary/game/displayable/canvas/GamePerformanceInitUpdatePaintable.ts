@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
@@ -30,7 +32,11 @@ import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/B
       
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
       
@@ -53,14 +59,29 @@ import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
+export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable implements UpdateMyFontInterface {
         
 
     private readonly halfHeight: number = DisplayInfoSingleton.getInstance()!.getLastHalfHeight()!;
 
     private readonly yArray: number[] = [this.halfHeight +30,this.halfHeight +30,this.halfHeight +30 +15,this.halfHeight +30 +15,this.halfHeight +30 +30,this.halfHeight +30 +30,this.halfHeight +30 +45,this.halfHeight +30 +45];
 
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
     private baseRefreshHelperCharArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(0));
+
+    private defaultStringWidth: number= 0;
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.defaultStringWidth= MyFontProcessor.defaultStringWidth(font, 2);
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
 
     public init(){
 }
@@ -75,8 +96,7 @@ this.baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.to2DCharAr
     private readonly RED: number = BasicColorFactory.getInstance()!.RED.intValue()!;
 
     public paint(graphics: Graphics){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
+this.myFontProcessor!.process(graphics);
     
 graphics.setColor(this.RED);
     
@@ -112,7 +132,7 @@ size3= charArray2!.length;
     
 graphics.drawChars(charArray, 0, size2, 0, this.yArray[index]!, 0);
     
-graphics.drawChars(charArray2, 0, size3, size2 *myFont!.defaultStringWidth(2), this.yArray[index +1]!, 0);
+graphics.drawChars(charArray2, 0, size3, size2 *this.defaultStringWidth, this.yArray[index +1]!, 0);
     
 }
 

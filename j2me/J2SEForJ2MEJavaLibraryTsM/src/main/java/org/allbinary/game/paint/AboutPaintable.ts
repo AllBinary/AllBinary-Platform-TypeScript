@@ -32,7 +32,11 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
       
@@ -55,7 +59,7 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //J2SEForJ2ME
-export class AboutPaintable extends Paintable {
+export class AboutPaintable extends Paintable implements UpdateMyFontInterface {
         
 
     public static getInstance(info: string[], developers: string[]): AboutPaintable{
@@ -68,6 +72,8 @@ export class AboutPaintable extends Paintable {
 }
 
 
+    private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
     private readonly ABOUT: string = CanvasStrings.getInstance()!.ABOUT;
 
     private readonly info: string[];
@@ -79,45 +85,39 @@ export class AboutPaintable extends Paintable {
                                                             this
                                                         ];
 
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private charHeight: number= 0;
+
+    private aboutBeginWidth: number= 0;
+
+    private infoBeginWidth: number[];
+
+    private developersBeginWidth: number[];
+
+    private anchor: number = Anchor.TOP_LEFT;
+
 private constructor (info: string[], developers: string[]){
 
             super();
         this.info= info;
     
+this.infoBeginWidth= new Array(this.info.length);
+    
 this.developers= developers;
     
-}
-
-
-    public getPaintableArrayInstance(): Paintable[]{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paintableArray;
+this.developersBeginWidth= new Array(this.developers.length);
     
 }
 
 
-    private anchor: number = Anchor.TOP_LEFT;
-
-    public paint(graphics: Graphics){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;;
-    
-
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
-    
+    public updateMeasurement(graphics: Graphics){
 
     var font: Font = graphics.getFont()!;;
     
-
-    var beginWidth: number = (font.stringWidth(this.ABOUT)>>1);;
+this.charHeight= font.getHeight();
     
-graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, this.anchor);
+this.aboutBeginWidth= (font.stringWidth(this.ABOUT)>>1);
     
 
     var infoSize: number = this.info.length
@@ -130,9 +130,7 @@ graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, this.ancho
                         for (
     var index: number = 0;index < infoSize; index++)
         {
-beginWidth= (font.stringWidth(this.info[index]!)>>1);
-    
-graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, this.anchor);
+this.infoBeginWidth[index]= (font.stringWidth(this.info[index]!)>>1);
     
 }
 
@@ -147,9 +145,60 @@ graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHe
                         for (
     var index: number = 0;index < size; index++)
         {
-beginWidth= (font.stringWidth(this.developers[index]!)>>1);
+this.developersBeginWidth[index]= (font.stringWidth(this.developers[index]!)>>1);
     
-graphics.drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, this.anchor);
+}
+
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
+    public getPaintableArrayInstance(): Paintable[]{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.paintableArray;
+    
+}
+
+
+    public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
+
+    var halfWidth: number = this.displayInfoSingleton!.getLastHalfWidth()!;;
+    
+graphics.drawString(this.ABOUT, halfWidth -this.aboutBeginWidth, 2 *this.charHeight, this.anchor);
+    
+
+    var infoSize: number = this.info.length
+                ;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < infoSize; index++)
+        {
+graphics.drawString(this.info[index]!, halfWidth -this.infoBeginWidth[index], (4 +index) *this.charHeight, this.anchor);
+    
+}
+
+
+    var size: number = this.developers.length
+                ;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+graphics.drawString(this.developers[index]!, halfWidth -this.developersBeginWidth[index], (5 +infoSize +index) *this.charHeight, this.anchor);
     
 }
 

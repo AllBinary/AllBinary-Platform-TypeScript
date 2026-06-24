@@ -1206,7 +1206,7 @@ this.clearTarget();
 //inner= member=true isStatic=
 BuildingSteeringVisitor = class extends SteeringVisitor {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
     private readonly positionList: BasicArrayList = new BasicArrayListD();

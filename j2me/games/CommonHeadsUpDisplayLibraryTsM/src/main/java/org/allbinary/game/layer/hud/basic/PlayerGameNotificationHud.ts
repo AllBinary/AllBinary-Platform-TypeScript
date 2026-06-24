@@ -26,9 +26,13 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
+import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { GameAdStateFactory } from '../../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
+      
+import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
       
 import { GameAdState } from '../../../../../../org/allbinary/game/GameAdState.js';
       
@@ -46,7 +50,9 @@ import { BasicColor } from '../../../../../../org/allbinary/graphics/color/Basic
       
 import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
+import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       
@@ -80,15 +86,15 @@ import { CircularIndexUtil } from '../../../../../../org/allbinary/util/Circular
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
+        //import { SetAndRemoveProcessor } from './SetAndRemoveProcessor.js';
+//import { NextUnremoveableProcessor } from './NextUnremoveableProcessor.js';
+
+export class PlayerGameNotificationHud extends GameNotificationHud implements UpdateMyFontInterface {
         
-export class PlayerGameNotificationHud extends GameNotificationHud {
-        
+
+    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-
-    private string: string = this.EMPTY_STRING;
-
-    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
@@ -100,12 +106,74 @@ export class PlayerGameNotificationHud extends GameNotificationHud {
 
     private readonly permanentGameNotification: GameNotification = new GameNotification();
 
+//inner= member=true isStatic=
+SetAndRemoveProcessor = class extends Processor {
+        
+
+    private readonly updateMeasurementProcessor: PlayerGameNotificationHud;
+
+public constructor (updateMeasurementProcessor: PlayerGameNotificationHud){
+
+            super();
+        this.updateMeasurementProcessor= updateMeasurementProcessor;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public process(){
+this.updateMeasurementProcessor!.setAndRemoveProcess();
+    
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+NextUnremoveableProcessor = class extends Processor {
+        
+
+    private readonly updateMeasurementProcessor: PlayerGameNotificationHud;
+
+public constructor (updateMeasurementProcessor: PlayerGameNotificationHud){
+
+            super();
+        this.updateMeasurementProcessor= updateMeasurementProcessor;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public process(){
+this.updateMeasurementProcessor!.setNextUnremoveableProcess();
+    
+}
+
+
+}
+                
+            
+    private readonly setAndRemoveProcessor: Processor = new this.SetAndRemoveProcessor(this);
+
+    private readonly nextUnremoveableProcessor: Processor = new this.NextUnremoveableProcessor(this);
+
+    private processor: Processor = Processor.getInstance()!;
+
+    private readonly PERMANENT_GAME_NOTIFICATION: string = "Permanent Game Notification: ";
+
+    private lastString: string = StringUtil.getInstance()!.EMPTY_STRING;
+
+    private string: string = this.EMPTY_STRING;
+
     private point: CustomGPoint = CustomGPoint.NULL_CUSTOM_POINT;
 
-    private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
+    private width: number= 0;
 
-public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
-            super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+public constructor (location: number, direction: number, bufferZone: number, basicColor: BasicColor){
+            super(location, direction, bufferZone, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
@@ -119,6 +187,37 @@ gameNotificationEventHandler!.removeAllListeners();
     
 gameNotificationEventHandler!.addListenerInterface(this);
     
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+        try {
+            super.updateMeasurement(graphics);
+    
+
+    var font: Font = graphics.getFont()!;;
+    
+this.width= font.stringWidth(this.string);
+    
+this.processor.process();
+    
+this.processor= Processor.getInstance();
+    
+
+                //: 
+} catch(e) 
+            {
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+    
+}
+
 }
 
 
@@ -137,10 +236,6 @@ this.point.setY(y);
     
 }
 
-
-    private readonly PERMANENT_GAME_NOTIFICATION: string = "Permanent Game Notification: ";
-
-    private lastString: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     add(string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
 
@@ -234,10 +329,15 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
     setAndRemove(){
 this.string= this.gameNotification!.stringList!.removeAt(0) as string;
     
-
-    var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;;
+this.processor= this.setAndRemoveProcessor;
     
-this.setX((this.displayInfo!.getLastWidth() -width)>>1);
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    setAndRemoveProcess(){
+this.setX((this.displayInfo!.getLastWidth() -this.width)>>1);
     
 this.point.setX(this.getX());
     
@@ -273,10 +373,18 @@ this.setBasicColorP(this.gameNotification!.colorList!.removeAt(0) as BasicColor)
     
 this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as string;
     
-
-    var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;;
+this.processor= this.nextUnremoveableProcessor;
     
-this.setX((this.displayInfo!.getLastWidth() -width)>>1);
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    setNextUnremoveableProcess(){
+
+    var index: number = this.circularIndexUtil!.getIndex()!;;
+    
+this.setX((this.displayInfo!.getLastWidth() -this.width)>>1);
     
 this.point.setX(this.getX());
     
@@ -303,6 +411,8 @@ this.permanentGameNotification!.clear();
 
 
     public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
 super.paint(graphics, this.string);
     
 }

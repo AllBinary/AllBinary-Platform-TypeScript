@@ -174,7 +174,7 @@ this.taskQueue= new BasicArrayListD();
                                 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public runTaskWithPriority(task: PriorityRunnable){
 
@@ -247,7 +247,7 @@ this.taskQueue!.addAt(index, task);
                                 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public runTask(task: Runnable){
 
@@ -274,7 +274,7 @@ this.taskQueue!.addAt(index, task);
 
 
                 //@Throws(InterruptedException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     getTask(): Runnable{
 
@@ -298,14 +298,14 @@ this.taskQueue!.addAt(index, task);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public clear(){
 this.taskQueue!.clear();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public close(){
 

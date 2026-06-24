@@ -26,11 +26,7 @@ import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
       
-import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
-      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
       
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
@@ -70,8 +66,6 @@ export class FormUtil
 }
 
 
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
     public createFormRectangle(): Rectangle{
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
@@ -87,43 +81,6 @@ export class FormUtil
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return rectangle;
-    
-}
-
-
-    public createPopupMenuRectangle(): Rectangle{
-
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
-    
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var popupMenuRectangle: Rectangle = RectangleFactory.SINGLETON;;
-    
-
-    var pointFactory: PointFactory = PointFactory.getInstance()!;;
-    
-
-                        if(displayInfo!.getLastHeight() < 320)
-                        
-                                    {
-                                    popupMenuRectangle= new Rectangle(pointFactory!.createXY(0, 25), myFont!.defaultStringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *4) +2);
-    
-
-                                    }
-                                
-                        else {
-                            popupMenuRectangle= new Rectangle(pointFactory!.createXY(0, displayInfo!.getLastHalfHeight() -70), myFont!.defaultStringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *5));
-    
-
-                        }
-                            
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return popupMenuRectangle;
     
 }
 

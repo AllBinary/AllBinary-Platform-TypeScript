@@ -30,6 +30,8 @@ import { Vector } from '../../../../../java/util/Vector.js';
       
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
       
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';
@@ -84,7 +86,11 @@ import { DisplayChangeEventListener } from '../../../../../org/allbinary/graphic
       
 import { ScreenRepaintProcessorFactory } from '../../../../../org/allbinary/graphics/displayable/screen/ScreenRepaintProcessorFactory.js';
       
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { CommandCurrentSelectionFormFactory } from '../../../../../org/allbinary/graphics/form/CommandCurrentSelectionFormFactory.js';
       
@@ -147,7 +153,7 @@ import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
 import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
 import { ImmediateCommandFormInputProcessor } from './ImmediateCommandFormInputProcessor.js';
 
-export class GameCommandCanvas extends MyCanvas implements MenuListener, DisplayChangeEventListener {
+export class GameCommandCanvas extends MyCanvas implements MenuListener, DisplayChangeEventListener, UpdateMyFontInterface {
         
 
     private static readonly id: number = 0;
@@ -172,6 +178,10 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
 
     public readonly repaintBehavior: RepaintBehavior;
 
+    readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
+
     foregroundColor: number;
 
     backgroundColor: number;
@@ -183,6 +193,8 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
     private menuForm: PaintableForm = PaintableForm.getNullPaintableForm()!;
 
     private isSingleKeyRepeatableProcessing: boolean = Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
+
+    fontHeight: number = 0;
 
 public constructor (cmdListener: CommandListener, name: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(name, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST);
@@ -229,16 +241,15 @@ this.repaintProcessor!.process();
 }
 
 
-    public onEvent(eventObject: AllBinaryEventObject){
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
-    
-}
-
-
-    public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
+    public updateMeasurement(graphics: Graphics){
 
         try {
-            this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+            
+    var font: Font = graphics.getFont()!;;
+    
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+    
+this.fontHeight= font.getHeight();
     
 
     var rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;;
@@ -251,10 +262,26 @@ this.update();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
 }
 
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
+    public onEvent(eventObject: AllBinaryEventObject){
+ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
+    
+}
+
+
+    public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
+this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+    
+this.myFontProcessor= this.updateMyFontProcessor;
+    
 }
 
 
@@ -312,19 +339,16 @@ this.repaintBehavior!.onChangeRepaint(this);
 
     public createRectangle(size: number): Rectangle{
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    var height: number = size *this.fontHeight;;
     
 
-    var height: number = size *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;;
-    
-
-    var startY: number = (displayInfo!.getLastHeight() *2 /3) -height;;
+    var startY: number = (this.displayInfo!.getLastHeight() *2 /3) -height;;
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;;
     
 
-    var rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, startY), displayInfo!.getLastWidth() -30, startY);;
+    var rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, startY), this.displayInfo!.getLastWidth() -30, startY);;
     
 
 
@@ -497,6 +521,8 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVE
 
 
     public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
 this.menuPaintable!.paint(graphics);
     
 this.repaintBehavior!.repaint(this);

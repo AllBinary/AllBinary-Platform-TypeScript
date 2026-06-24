@@ -144,8 +144,6 @@ import { DisplayChangeEventListener } from '../../../../../org/allbinary/graphic
       
 import { FullScreenPaintableFactory } from '../../../../../org/allbinary/graphics/displayable/screen/FullScreenPaintableFactory.js';
       
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
-      
 import { CommandCurrentSelectionFormFactory } from '../../../../../org/allbinary/graphics/form/CommandCurrentSelectionFormFactory.js';
       
 import { FormType } from '../../../../../org/allbinary/graphics/form/FormType.js';
@@ -249,6 +247,7 @@ import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayLis
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
 import { MenuListener } from './MenuListener.js';
 import { DemoPaintableInterface } from './DemoPaintableInterface.js';
+import { FormUtil } from './FormUtil.js';
 import { NullGameCanvas } from './NullGameCanvas.js';
 import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
@@ -256,7 +255,6 @@ import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
 import { DemoGameStartupRunnable } from './DemoGameStartupRunnable.js';
 import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
 import { GameRunnable } from './GameRunnable.js';
-import { FormUtil } from './FormUtil.js';
 import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
 import { DemoLimitedCommandTextItemArrayFactory } from './DemoLimitedCommandTextItemArrayFactory.js';
 import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
@@ -283,6 +281,8 @@ export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInte
     readonly gameStateFactory: GameStateFactory = GameStateFactory.getInstance()!;
 
     private readonly threadFactoryUtil: ThreadFactoryUtil = ThreadFactoryUtil.getInstance()!;
+
+    readonly formUtil: FormUtil = FormUtil.getInstance()!;
 
     fullscreenPaintable: Paintable = FullScreenPaintableFactory.getInstance()!.paintable;
 
@@ -396,7 +396,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
         try {
-            this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfoSingleton!.toString())!.append(MyFont.getInstance()!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+            this.logUtil!.putF(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfo!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 
     var scrollSelectionForm: ScrollSelectionForm = this.getMenuForm()!;;
@@ -411,7 +411,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = FormUtil.getInstance()!.createFormRectangle()!;;
+    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle, formType);
     
@@ -597,9 +597,9 @@ this.close();
     var formType: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle: Rectangle = FormUtil.getInstance()!.createFormRectangle()!;;
+    var rectangle: Rectangle = this.formUtil!.createFormRectangle()!;;
     
-PreLogUtil.put(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfoSingleton!.toString())!.toString(), this, "initMenu");
+PreLogUtil.put(new StringMaker().append(this.commonLabels!.START_LABEL)!.append(this.displayInfo!.toString())!.toString(), this, "initMenu");
     
 
     var scrollSelectionForm: ScrollSelectionForm = CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 15, true, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;;
@@ -610,7 +610,7 @@ this.setMenuForm(scrollSelectionForm);
     var formType2: FormType = FormTypeFactory.getInstance()!.getFormType()!;;
     
 
-    var rectangle2: Rectangle = FormUtil.getInstance()!.createFormRectangle()!;;
+    var rectangle2: Rectangle = this.formUtil!.createFormRectangle()!;;
     
 scrollSelectionForm!.init(rectangle2, formType2);
     
@@ -783,7 +783,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVE
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.close();
@@ -796,7 +796,7 @@ this.gameCanvas!.pause();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.open();
@@ -914,7 +914,7 @@ this.paintedSpecialAnimationInterface!.paintThreedXYZ(graphics, 0, 0, 0);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public processGameOver(){
 this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");

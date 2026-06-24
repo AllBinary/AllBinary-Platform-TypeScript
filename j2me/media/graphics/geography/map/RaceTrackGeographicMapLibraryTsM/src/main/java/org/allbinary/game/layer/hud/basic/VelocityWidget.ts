@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { OpenGLFeatureUtil } from '../../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
@@ -32,7 +34,7 @@ import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/Basi
       
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
       
-import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
       
 import { MathUtil } from '../../../../../../org/allbinary/logic/math/MathUtil.js';
       
@@ -75,28 +77,44 @@ export class VelocityWidget extends BasicHud {
 
     private totalDigits: number = 1;
 
+    private readonly powerOfTenVelocity: number;
+
     private readonly primitiveLongUtil: PrimitiveLongUtil;
 
-    private readonly offset: number;
+    private offset: number = 0;
 
-    private offset2: number= 0;
+    private offset2: number = 0;
 
 public constructor (powerOfTenVelocity: number, location: number, direction: number, basicColor: BasicColor){
-            super(location, direction, 14, MyFont.getInstance()!.getSize() *(5 +MathUtil.getInstance()!.getTotalDigits(powerOfTenVelocity) +1), 2, basicColor);
+            super(location, direction, 2, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
+this.powerOfTenVelocity= powerOfTenVelocity;
+    
 this.maxVelocity= powerOfTenVelocity;
     
 this.velocity= 0;
     
 this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(powerOfTenVelocity);
     
-
-    var myFont: MyFont = MyFont.getInstance()!;;
+this.updateMaxHeight= 14;
     
-this.offset= myFont!.defaultStringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont!.defaultStringWidth(2);
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.updateMaxWidth= font.getSize() *(5 +MathUtil.getInstance()!.getTotalDigits(this.powerOfTenVelocity) +1);
+    
+super.updateMeasurement(graphics);
+    
+this.offset= MyFontProcessor.defaultStringWidth(font, this.primitiveLongUtil!.getMaxDigits()) +MyFontProcessor.defaultStringWidth(font, 2);
+    
+this.offset2= this.offset -MyFontProcessor.defaultStringWidth(font, this.totalDigits) -MyFontProcessor.defaultStringWidth(font, 2);
     
 }
 
@@ -153,10 +171,7 @@ this.velocity= value;
 
                         }
                             
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-this.offset2= this.offset -myFont!.defaultStringWidth(this.totalDigits) -myFont!.defaultStringWidth(2);
+this.myFontProcessor= this.updateMyFontProcessor;
     
 
                                     }

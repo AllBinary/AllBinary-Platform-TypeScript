@@ -24,15 +24,15 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
       
-import { BasicHudFactory } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
-      
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
       
-import { MyFont } from '../../../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
       
 import { PrimitiveLongSingleton } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
       
@@ -66,7 +66,7 @@ export class TimeHudWidget extends BasicHud {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TimeHudWidget(location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, basicColor, timer);
+                        return new TimeHudWidget(location, direction, 2, basicColor, timer);
     
 }
 
@@ -75,7 +75,7 @@ export class TimeHudWidget extends BasicHud {
 
     private readonly TIME_CHAR_ARRAY: string[] = ['T','i','m','e',' '];
 
-    private offset: number;
+    private offset: number= 0;
 
     private string: string[] = PrimitiveLongSingleton.getInstance()!.ZERO;
 
@@ -83,8 +83,8 @@ export class TimeHudWidget extends BasicHud {
 
     private readonly timer: Timer;
 
-public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor, timer: Timer){
-            super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+public constructor (location: number, direction: number, bufferZone: number, basicColor: BasicColor, timer: Timer){
+            super(location, direction, bufferZone, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
@@ -93,23 +93,21 @@ this.timer= timer;
     
 this.set();
     
-
-    var myFont: MyFont = MyFont.getInstance()!;;
+this.updateMaxHeight= 14;
     
-this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.defaultStringWidth(3);
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
     
-
-                        if(direction == 0)
-                        
-                                    {
-                                    
-
-
-                            throw new Exception(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
-                    
-
-                                    }
-                                
+this.updateMaxWidth= font.getSize() *5;
+    
+this.offset= font.stringWidth(this.TIME_STRING) +MyFontProcessor.defaultStringWidth(font, 3);
+    
+super.updateMeasurement(graphics);
+    
 }
 
 
@@ -129,18 +127,18 @@ this.totalDigits= this.timer.getCurrentTotalDigits();
 }
 
 
-    public paint(graphics: Graphics){
-super.paintDX(graphics, this.TIME_CHAR_ARRAY, 0, this.TIME_CHAR_ARRAY.length, this.string, 0, this.totalDigits, this.offset);
-    
-}
-
-
     public getTimer(): Timer{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.timer;
+    
+}
+
+
+    public paint(graphics: Graphics){
+super.paintDX(graphics, this.TIME_CHAR_ARRAY, 0, this.TIME_CHAR_ARRAY.length, this.string, 0, this.totalDigits, this.offset);
     
 }
 

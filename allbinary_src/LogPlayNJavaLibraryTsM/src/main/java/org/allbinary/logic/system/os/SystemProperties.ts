@@ -22,8 +22,6 @@
 
 
         
-            import { System } from '../../../../../java/lang/System.js';
-        
 
 
 
@@ -77,7 +75,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty(this.OS_NAME);;
+                        return this.OS_NAME;
     
 }
 
@@ -87,7 +85,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty(this.OS_ARCH);;
+                        return this.OS_ARCH;
     
 }
 
@@ -97,7 +95,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty(this.OS_VERSION);;
+                        return this.OS_VERSION;
     
 }
 

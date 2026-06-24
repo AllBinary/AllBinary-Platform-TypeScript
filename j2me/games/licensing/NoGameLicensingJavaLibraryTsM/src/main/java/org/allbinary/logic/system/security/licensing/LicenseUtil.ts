@@ -63,7 +63,7 @@ export class LicenseUtil
     public init(){
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -74,7 +74,7 @@ export class LicenseUtil
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 }

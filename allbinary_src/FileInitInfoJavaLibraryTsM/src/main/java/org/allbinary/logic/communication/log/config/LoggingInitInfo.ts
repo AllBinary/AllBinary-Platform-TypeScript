@@ -88,7 +88,7 @@ export class LoggingInitInfo
     private static hasRead: boolean = false;
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static getDoc(): Document{
 
@@ -113,7 +113,7 @@ export class LoggingInitInfo
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static write(){
 
@@ -135,7 +135,7 @@ export class LoggingInitInfo
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     static read(){
 
@@ -187,7 +187,7 @@ LoggingInitInfo.logConfigInfoList!.add(logConfigInfo);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
 LoggingInitInfo.hasRead= value;
@@ -196,7 +196,7 @@ LoggingInitInfo.hasRead= value;
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     static updateIfNeeded(){
 
@@ -226,7 +226,7 @@ LoggingInitInfo.hasRead= true;
                                 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static set(logConfigInfoVector: BasicArrayList){
 LoggingInitInfo.logConfigInfoList= logConfigInfoVector;

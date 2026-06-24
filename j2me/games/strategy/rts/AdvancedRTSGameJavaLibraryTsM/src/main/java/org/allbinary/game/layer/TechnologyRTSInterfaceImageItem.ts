@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
@@ -36,7 +38,11 @@ import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
       
@@ -60,30 +66,10 @@ import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/Primitiv
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSInterface } from './RTSInterface.js';
 
-export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem {
+export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem implements UpdateMyFontInterface {
         
 
-    private readonly myFont: MyFont = MyFont.getInstance()!;
-
     private readonly rtsInterface: RTSInterface;
-
-    private readonly adjustedCostLabelY: number;
-
-    private readonly adjustedCostX: number;
-
-    private readonly adjustedCostY: number;
-
-    private costString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-
-    private costLength: number= 0;
-
-    private readonly adjustedLevelX: number;
-
-    private readonly adjustedLevelY: number;
-
-    private levelString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-
-    private levelLength: number= 0;
 
     private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.createPowerOfTen(10000)!;
 
@@ -93,6 +79,26 @@ export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem {
 
     private readonly DOLLAR: string = "$";
 
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private costString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
+
+    private costLength: number= 0;
+
+    private levelString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
+
+    private levelLength: number= 0;
+
+    private adjustedCostLabelY: number= 0;
+
+    private adjustedCostX: number= 0;
+
+    private adjustedCostY: number= 0;
+
+    private adjustedLevelX: number= 0;
+
+    private adjustedLevelY: number= 0;
+
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, rtsInterface: RTSInterface){
             super(label, img, layout, altText, basicColor, 0);
                     
@@ -101,8 +107,17 @@ public constructor (label: string, img: Image, layout: number, altText: string, 
                     
 this.rtsInterface= rtsInterface;
     
+this.update();
+    
+}
 
-    var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+
+    var fontHeight: number = font.getHeight()!;;
     
 
     var imageHeight: number = 0;;
@@ -119,17 +134,17 @@ this.rtsInterface= rtsInterface;
 
                                     }
                                 
-this.adjustedCostLabelY=  -this.yOffset +imageHeight -(3 *DEFAULT_CHAR_HEIGHT);
+this.adjustedCostLabelY=  -this.yOffset +imageHeight -(3 *fontHeight);
     
-this.adjustedCostY=  -this.yOffset +imageHeight -(2 *DEFAULT_CHAR_HEIGHT);
+this.adjustedCostY=  -this.yOffset +imageHeight -(2 *fontHeight);
     
-this.adjustedCostX= 2 +(this.DOLLAR.length *(DEFAULT_CHAR_HEIGHT -1));
+this.adjustedCostX= 2 +(this.DOLLAR.length *(fontHeight -1));
     
-this.adjustedLevelY=  -this.yOffset +imageHeight -DEFAULT_CHAR_HEIGHT;
+this.adjustedLevelY=  -this.yOffset +imageHeight -fontHeight;
     
-this.adjustedLevelX= 2 +(this.LEVEL.length *(DEFAULT_CHAR_HEIGHT -1));
+this.adjustedLevelX= 2 +(this.LEVEL.length *(fontHeight -1));
     
-this.update();
+this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
 
@@ -153,6 +168,8 @@ this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.g
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
+this.myFontProcessor!.process(graphics);
+    
 super.paintXY(graphics, x, y);
     
 

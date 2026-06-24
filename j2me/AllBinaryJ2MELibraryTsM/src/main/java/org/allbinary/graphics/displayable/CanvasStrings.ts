@@ -78,6 +78,10 @@ export class CanvasStrings
 
     public readonly ON_DISPLAY_CHANGE_EVENT: string = "onDisplayChangeEvent";
 
+    public readonly FD_WIDTH: string = " font/display width: ";
+
+    public readonly FD_HEIGHT: string = " font/display height: ";
+
     public readonly EMPTY_CHILD_NAME_LIST: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
     public readonly ABOUT: string = "About";

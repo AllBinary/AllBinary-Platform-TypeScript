@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
@@ -32,7 +34,11 @@ import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAni
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
@@ -60,15 +66,24 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-export class TextAnimation extends IndexedAnimation {
+        import { TextChangeListener } from './TextChangeListener.js';
+
+export class TextAnimation extends IndexedAnimation implements UpdateMyFontInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    private readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
+
     textArrayP: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
 
     private anchor: number = Anchor.TOP_LEFT;
+
+    private fontHeight: number = 0;
+
+    private textChangeListener: TextChangeListener = TextChangeListener.getInstance()!;
 
 public constructor (text: string, animationBehavior: AnimationBehavior){
             super(animationBehavior);
@@ -81,6 +96,21 @@ this.setText(text);
 }
 
 
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.fontHeight= font.getHeight();
+    
+this.textChangeListener!.onMeasure();
+    
+this.textChangeListener= TextChangeListener.getInstance();
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
                 //@Throws(Exception.constructor)
             
     public nextFrame(){
@@ -88,10 +118,15 @@ this.setText(text);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
+this.myFontProcessor!.process(graphics);
     
+this.paintXYNoUpdate(graphics, x, y);
+    
+}
 
-    var height: number = this.getHeight()!;;
+
+    public paintXYNoUpdate(graphics: Graphics, x: number, y: number){
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 
     var size: number = this.textArrayP!.length
@@ -104,10 +139,18 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
                         for (
     var index: number = 0;index < size; index++)
         {
-graphics.drawString(this.textArrayP[index]!, x, y +(index *height), this.anchor);
+graphics.drawString(this.textArrayP[index]!, x, y +(index *this.fontHeight), this.anchor);
     
 }
 
+}
+
+
+    public setTextWithOnMeasure(text: string, textChangeListener: TextChangeListener){
+this.setText(text);
+    
+this.textChangeListener= textChangeListener;
+    
 }
 
 
@@ -199,6 +242,8 @@ this.textArrayP= textArray;
 
                         }
                             
+this.myFontProcessor= this.updateMyFontProcessor;
+    
 }
 
 
@@ -212,15 +257,12 @@ this.textArrayP= textArray;
 }
 
 
-    public getHeight(): number{
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
+    public getFontHeight(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myFont!.DEFAULT_CHAR_HEIGHT;
+                        return this.fontHeight;
     
 }
 

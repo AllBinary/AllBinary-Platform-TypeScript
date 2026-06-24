@@ -36,7 +36,7 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
       
 import { FormTypeFactory } from '../../../../org/allbinary/graphics/form/FormTypeFactory.js';
       
-import { MultipleScrollSelectionHorizontalForm } from '../../../../org/allbinary/graphics/form/MultipleScrollSelectionHorizontalForm.js';
+import { MultipleScrollSelectionForm } from '../../../../org/allbinary/graphics/form/MultipleScrollSelectionForm.js';
       
 import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
       
@@ -68,7 +68,7 @@ export class RTSScrollSelectionFormFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(formLabel: string, items: ABCustomItem[]): MultipleScrollSelectionHorizontalForm{
+    public static getInstance(formLabel: string, items: ABCustomItem[]): MultipleScrollSelectionForm{
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
@@ -91,7 +91,7 @@ export class RTSScrollSelectionFormFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return MultipleScrollSelectionHorizontalForm.createForm(formLabel, items, menuRectangle, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, basicColorFactory!.BLACK, basicColorFactory!.WHITE);;
+                        return MultipleScrollSelectionForm.createForm(formLabel, items, menuRectangle, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, basicColorFactory!.BLACK, basicColorFactory!.WHITE);;
     
 }
 

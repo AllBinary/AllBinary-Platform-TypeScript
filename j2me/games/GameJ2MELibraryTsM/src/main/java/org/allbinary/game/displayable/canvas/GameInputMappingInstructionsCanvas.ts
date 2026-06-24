@@ -38,11 +38,7 @@ import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/pai
       
 import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
       
-import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      
 import { DrawStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawStringUtil.js';
-      
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
       
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       
@@ -75,7 +71,9 @@ export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
 
     public static readonly NAME: string = "GameInputMappingInstructionsCanvas";
 
-    TITLE: string = "Input Instructions";
+    private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
+
+    readonly TITLE: string = "Input Instructions";
 
     private readonly instructions: string[] = 
                                                         [
@@ -83,6 +81,8 @@ export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
                                                         ];
 
     private colorFillPaintable: ColorFillBasePaintable;
+
+    private anchor: number = Anchor.TOP_LEFT;
 
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager){
             super(commandListener, GameInputMappingInstructionsCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
@@ -107,33 +107,22 @@ this.setCommandListener(cmdListener);
 }
 
 
-    private anchor: number = Anchor.TOP_LEFT;
-
-    private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
-
     public paint(graphics: Graphics){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
+this.myFontProcessor!.process(graphics);
     
 this.colorFillPaintable!.paint(graphics);
     
 
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
-    
-
-    var halfWidth: number = displayInfo!.getLastHalfWidth()!;;
+    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 
     var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE)>>1);;
     
 graphics.setColor(this.foregroundColor);
     
-graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, this.anchor);
+graphics.drawString(this.TITLE, halfWidth -beginWidth, this.fontHeight, this.anchor);
     
-this.drawStringUtil!.drawCenterStrings(graphics, this.instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight);
+this.drawStringUtil!.drawCenterStrings(graphics, this.instructions, this.displayInfo!.getLastWidth(), this.fontHeight, halfWidth, 3 *this.fontHeight);
     
 super.paint(graphics);
     

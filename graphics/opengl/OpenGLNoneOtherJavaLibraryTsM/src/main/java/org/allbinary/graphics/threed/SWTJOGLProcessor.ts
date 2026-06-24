@@ -22,8 +22,12 @@
 
 
         
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
+        
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
       
 
@@ -133,6 +137,42 @@ export class SWTJOGLProcessor
 
 
     public setRatioProcessor(){
+}
+
+
+    public charWidth(font: Font, ch: string): number{
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+
+    public charsWidth(font: Font, ch: string[], offset: number, length: number): number{
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+
+    public stringWidth(font: Font, str: string): number{
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+
+    public substringWidth(font: Font, str: string, offset: number, len: number): number{
+
+
+
+                            throw new RuntimeException();
+                    
 }
 
 

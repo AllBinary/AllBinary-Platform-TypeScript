@@ -70,6 +70,8 @@ public constructor (label: string, layout: number, altText: string, backgroundBa
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
+this.myFontProcessor!.process(graphics);
+    
 
     var stringComponent: ABStringComponent = this.getLabelStringComponent()!;;
     

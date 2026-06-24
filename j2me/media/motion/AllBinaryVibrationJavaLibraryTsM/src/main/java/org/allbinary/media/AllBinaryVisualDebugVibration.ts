@@ -24,13 +24,19 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
+import { Font } from '../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
       
 import { Anchor } from '../../../org/allbinary/graphics/Anchor.js';
       
 import { DisplayInfoSingleton } from '../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
       
@@ -54,20 +60,37 @@ import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js'
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryVibrationME } from './AllBinaryVibrationME.js';
 
-export class AllBinaryVisualDebugVibration extends AllBinaryVibrationME {
+export class AllBinaryVisualDebugVibration extends AllBinaryVibrationME implements UpdateMyFontInterface {
         
 
+    private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(Integer.MAX_VALUE);
+
+    private readonly VIBRATING: string = "Vibrating";
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private anchor: number = Anchor.TOP_LEFT;
+
+    private width: number= 0;
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.width= font.stringWidth(this.VIBRATING);
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
 
     public vibrate(duration: number, type: number, volume: number){
 this.timeDelayHelper!.delay= duration;
     
 }
 
-
-    private readonly VIBRATING: string = "Vibrating";
-
-    private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
 
@@ -76,16 +99,9 @@ this.timeDelayHelper!.delay= duration;
                                     {
                                     this.timeDelayHelper!.delay= Integer.MAX_VALUE;
     
-
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+this.myFontProcessor!.process(graphics);
     
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var width: number = myFont!.stringWidth(this.VIBRATING)!;;
-    
-graphics.drawString(this.VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width>>1), 0, this.anchor);
+graphics.drawString(this.VIBRATING, this.displayInfoSingleton!.getLastHalfWidth() -(width>>1), 0, this.anchor);
     
 
                                     }

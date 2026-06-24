@@ -1,0 +1,70 @@
+
+        /*
+                *  
+                *  AllBinary Open License Version 1 
+                *  Copyright (c) 2025 AllBinary 
+                *   
+                *  By agreeing to this license you and any business entity you represent are 
+                *  legally bound to the AllBinary Open License Version 1 legal agreement. 
+                *   
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from 
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+                *   
+                *  Created By: Travis Berthelot    
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+            import { Object } from '../../../../java/lang/Object.js';
+
+
+        
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        import { MyFontProcessor } from './MyFontProcessor.js';
+import { UpdateMyFontInterface } from './UpdateMyFontInterface.js';
+
+export class UpdateMyFontProcessor extends MyFontProcessor {
+        
+
+    private readonly updateMeasurementProcessor: UpdateMyFontInterface;
+
+public constructor (keyValueDrawCharArray: UpdateMyFontInterface){
+
+            super();
+        this.updateMeasurementProcessor= keyValueDrawCharArray;
+    
+}
+
+
+    public process(graphics: Graphics){
+this.updateMeasurementProcessor!.updateMeasurement(graphics);
+    
+}
+
+
+}
+                
+            
+

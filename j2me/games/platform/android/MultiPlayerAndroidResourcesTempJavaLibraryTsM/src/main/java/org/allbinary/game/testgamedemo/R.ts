@@ -44,7 +44,7 @@ static attr = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*//**/
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
 
 }
@@ -55,7 +55,7 @@ static drawable = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly testgamedemo_icon: number = 0x7f020000;
 
     public static readonly testgamedemo_wait_256_by_256: number = 0x7f020001;
@@ -70,7 +70,7 @@ static id = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly ad_area_bottom: number = 0x7f060002;
 
     public static readonly ad_area_left: number = 0x7f060003;
@@ -93,7 +93,7 @@ static layout = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly testgamedemo_ad_overlay_layout: number = 0x7f030000;
 
     public static readonly testgamedemo_gl_layout: number = 0x7f030001;
@@ -110,7 +110,7 @@ static raw = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly error: number = 0x7f040000;
 
     public static readonly licenseinitdata: number = 0x7f040001;
@@ -209,7 +209,7 @@ static string = class
             extends Object
          {
         
-/*Static stuff is not allowed for Typescript inner classes*/
+/*Static stuff is not allowed for TypeScript inner classes*/
     public static readonly progressbar_in_title_string: number = 0x7f050001;
 
     public static readonly testgamedemo_app_name: number = 0x7f050000;

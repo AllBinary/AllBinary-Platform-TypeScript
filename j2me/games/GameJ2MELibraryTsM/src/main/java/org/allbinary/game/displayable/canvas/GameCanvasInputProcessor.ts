@@ -107,7 +107,7 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
-    public keyPressed(keyCode: number, deviceId: number){
+    public keyPressedByDevice(keyCode: number, deviceId: number){
 
         try {
             
@@ -151,7 +151,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 }
 
 
-    public keyReleased(canvas: Canvas, keyCode: number, deviceId: number){
+    public keyReleasedByDevice(canvas: Canvas, keyCode: number, deviceId: number){
 this.removeGameKeyEvent(canvas, keyCode, deviceId, false);
     
 }

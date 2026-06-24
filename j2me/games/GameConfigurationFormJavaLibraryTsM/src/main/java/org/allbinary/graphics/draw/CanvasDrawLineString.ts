@@ -22,9 +22,15 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 
 
@@ -48,14 +54,20 @@ import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
 export class CanvasDrawLineString
             extends Object
-         {
+         implements UpdateMyFontInterface {
         
 
     public static readonly NULL_CANVAS_DRAW_LINE_STRING: CanvasDrawLineString = new CanvasDrawLineString(0, 0);
 
+    private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
     private x: number;
 
     private y: number;
+
+    private fontHeight: number = 0;
 
 public constructor (x: number, y: number){
 
@@ -67,13 +79,21 @@ this.y= y;
 }
 
 
-    private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.fontHeight= font.getHeight();
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
 
     public paint(graphics: Graphics, string: string, line: number){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
+this.myFontProcessor!.process(graphics);
     
-this.drawStringUtil!.drawCenterString(graphics, string, 0, string.length, this.x, this.y +(line *myFont!.DEFAULT_CHAR_HEIGHT));
+this.drawStringUtil!.drawCenterString(graphics, string, 0, string.length, this.x, this.y +(line *this.fontHeight));
     
 }
 

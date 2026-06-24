@@ -77,7 +77,7 @@ private constructor (){
 
 
                 //@Throws(LicensingException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public getKey(abeClientInformation: AbeClientInformationInterface, keyName: string): string{
 

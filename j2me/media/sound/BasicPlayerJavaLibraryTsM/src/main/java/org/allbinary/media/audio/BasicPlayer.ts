@@ -117,7 +117,7 @@ this.setState(PlayerI.UNREALIZED);
     public close(){
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
 
@@ -147,7 +147,7 @@ this.listenersList!.remove(playerListener);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setState(state: number){
 this.stateP= state;
@@ -190,7 +190,7 @@ this.stateP= state;
     public realize(){
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setLoopCount(count: number){
 this.loopCountP= count;
@@ -209,7 +209,7 @@ this.loopCountP= count;
 
 
                 //@Throws(MediaException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setMediaTime(now: number): number{
 
@@ -222,7 +222,7 @@ this.loopCountP= count;
 
 
                 //@Throws(MediaException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public start(){
 this.setState(PlayerI.STARTED);
@@ -231,7 +231,7 @@ this.setState(PlayerI.STARTED);
 
 
                 //@Throws(MediaException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public stop(){
 this.setState(PlayerI.PREFETCHED);

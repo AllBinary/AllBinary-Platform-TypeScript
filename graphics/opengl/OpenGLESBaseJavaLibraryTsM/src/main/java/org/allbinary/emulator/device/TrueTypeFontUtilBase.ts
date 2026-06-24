@@ -24,11 +24,7 @@
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
       
-import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-      
 import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
-      
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
       
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       
@@ -122,9 +118,6 @@ this.shortPattern= shortPattern;
     
 this.scale= scale;
     
-
-                        if(!AndroidUtil.isAndroid())
-                        MyFont.getInstance()
 this.CELLS_PER_ROW= 16;
     
 this.fontSize= (20 +6) *this.scale;

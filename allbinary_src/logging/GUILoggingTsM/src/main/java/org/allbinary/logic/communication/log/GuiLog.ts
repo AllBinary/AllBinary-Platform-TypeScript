@@ -84,7 +84,7 @@ private constructor (){
             super();
         }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public showDialog(msg: string){
 
@@ -133,7 +133,7 @@ error.show();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, anyType: any = {}, functionName: string): string{
 
@@ -145,7 +145,7 @@ error.show();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, anyType: any = {}, functionName: string, exception: Exception): string{
 
@@ -179,7 +179,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, className: string, functionName: string): string{
 
@@ -191,7 +191,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
 

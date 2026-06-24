@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
@@ -44,7 +46,7 @@ import { NumberStringHudFactory } from '../../../../../org/allbinary/game/layer/
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
       
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
       
 import { MathUtil } from '../../../../../org/allbinary/logic/math/MathUtil.js';
       
@@ -97,6 +99,8 @@ export class BuildingInfoHudPaintable extends SelectionHudPaintable {
 
     private rtsLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
 
+    private currentHealth: number = 0;
+
 private constructor (){
 
             super();
@@ -124,22 +128,175 @@ private constructor (){
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;;
     
 
-    var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
+    var basicColor: BasicColor = this.getBasicColorP()!;;
     
-productivityHud= new NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+
+    var textX: number = this.textX;;
     
-index++;
+
+    var y: number = this.y;;
     
-efficiencyHud= new NumberStringHud("Efficiency:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+
+    var firstIndex: number = index;;
+    
+
+//inner=true member= isStatic=
+class ProductivityNumberStringHud extends NumberStringHud {
+        
+
+ constructor (){
+            super("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, 0, basicColor);
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.updateMaxWidth= textX;
+    
+this.updateMaxHeight= y +((firstIndex +1) *font.getHeight());
+    
+super.updateMeasurement(graphics);
+    
+}
+
+
+}
+                
+            
+
+                    //Otherwise - statement - EmptyStmt
+
+productivityHud= new ProductivityNumberStringHud();
     
 index++;
     
 
-    var totalLength: number = this.HEALTH.length +1;;
+    var secondIndex: number = index;;
     
-healthHud= new NumberStringHud(this.HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+
+//inner=true member= isStatic=
+class EfficiencyNumberStringHud extends NumberStringHud {
+        
+
+ constructor (){
+            super("Efficiency:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, 0, basicColor);
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
     
-maxHealthHud= new NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX +(totalLength *DEFAULT_CHAR_HEIGHT), this.y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+
+    var font: Font = graphics.getFont()!;;
+    
+this.updateMaxWidth= textX;
+    
+this.updateMaxHeight= y +((secondIndex +1) *font.getHeight());
+    
+}
+
+
+}
+                
+            
+
+                    //Otherwise - statement - EmptyStmt
+
+efficiencyHud= new EfficiencyNumberStringHud();
+    
+index++;
+    
+
+    var HEALTH: string = this.HEALTH;;
+    
+
+    var thirdIndex: number = index;;
+    
+
+//inner=true member= isStatic=
+class HealthNumberStringHud extends NumberStringHud {
+        
+
+ constructor (){
+            super(HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, 0, basicColor);
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.updateMaxWidth= textX;
+    
+this.updateMaxHeight= y +((thirdIndex +1) *font.getHeight());
+    
+super.updateMeasurement(graphics);
+    
+}
+
+
+}
+                
+            
+
+                    //Otherwise - statement - EmptyStmt
+
+
+    var totalLength: number = HEALTH.length +1;;
+    
+healthHud= new HealthNumberStringHud();
+    
+
+    var fourthIndex: number = index;;
+    
+
+//inner=true member= isStatic=
+class MaxHealthNumberStringHud extends NumberStringHud {
+        
+
+ constructor (){
+            super("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, 0, basicColor);
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
+    
+
+    var font: Font = graphics.getFont()!;;
+    
+this.updateMaxWidth= textX +(totalLength *font.getHeight());
+    
+this.updateMaxHeight= y +((fourthIndex +1) *font.getHeight());
+    
+}
+
+
+}
+                
+            
+
+                    //Otherwise - statement - EmptyStmt
+
+maxHealthHud= new MaxHealthNumberStringHud();
     
 
                 //: 
@@ -163,6 +320,20 @@ this.maxHealthHud= maxHealthHud;
 }
 
 
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+
+    var totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(this.currentHealth);;
+    
+this.maxHealthHud!.setX(this.textX +MyFontProcessor.defaultStringWidth(font, totalLength));
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
     public setBasicColorP(basicColor: BasicColor){
 super.setBasicColorP(basicColor);
     
@@ -179,6 +350,8 @@ this.maxHealthHud!.setBasicColorP(basicColor);
 
     public paint(graphics: Graphics){
 super.paint(graphics);
+    
+this.myFontProcessor!.process(graphics);
     
 this.productivityHud!.paint(graphics);
     
@@ -205,15 +378,11 @@ this.productivityHud!.set(buildingLayer!.getProductivity());
     
 this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100);
     
-
-    var health: number = buildingLayer!.getHealthInterface()!.getHealth()!;;
+this.currentHealth= buildingLayer!.getHealthInterface()!.getHealth();
     
-this.healthHud!.set(health);
+this.healthHud!.set(this.currentHealth);
     
-
-    var totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);;
-    
-this.maxHealthHud!.setX(this.textX +MyFont.getInstance()!.defaultStringWidth(totalLength));
+this.myFontProcessor= this.updateMyFontProcessor;
     
 this.maxHealthHud!.set(buildingLayer!.getHealthInterface()!.getMaxHealth());
     

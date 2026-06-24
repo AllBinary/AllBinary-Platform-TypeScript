@@ -26,6 +26,8 @@
         
 import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
       
+import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
@@ -42,9 +44,11 @@ import { BasicColor } from '../../../../../../org/allbinary/graphics/color/Basic
       
 import { CanvasStrings } from '../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
       
-import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
       
-import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
+import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { ABCustomGaugeItem } from '../../../../../../org/allbinary/graphics/form/item/ABCustomGaugeItem.js';
       
@@ -88,7 +92,7 @@ import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { ProgressPaintable } from './ProgressPaintable.js';
 
-export class ProgressCanvas extends RunnableCanvas implements PaintableInterface {
+export class ProgressCanvas extends RunnableCanvas implements PaintableInterface, UpdateMyFontInterface {
         
 
     hasPainted: boolean= false;
@@ -120,15 +124,19 @@ this.progressCanvas!.paint2(graphics);
             
     public readonly GAUGE_PAINTABLE: Paintable = new this.ProgressPaintable(this);
 
-    allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.NULL_ALLBINARY_MIDLET;
-
-    private value: number= 0.0;
-
     private readonly maxValue: number = 100.0;
 
     readonly gauge: ABCustomGaugeItem;
 
     private readonly TEXT: string = this.commonStrings!.LOADING;
+
+    private readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
+
+    allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.NULL_ALLBINARY_MIDLET;
+
+    private value: number= 0.0;
 
     private text: string = this.TEXT;
 
@@ -163,6 +171,17 @@ this.pathFindingThreadPool!.runAPriorityTask();
 this.backgroundBasicColor= backgroundBasicColor;
     
 this.gauge= new ABCustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.round(this.maxValue), 0, backgroundBasicColor, foregroundBasicColor);
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.gauge.setHeight(font.getHeight() +2);
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
 
@@ -222,12 +241,9 @@ this.inProgress= true;
     public startBackground(background: boolean){
 this.logUtil!.putF(this.commonStrings!.START, this, this.START_BACKGROUND);
     
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
 this.setBackground(background);
     
-this.gauge.setHeight(myFont!.DEFAULT_CHAR_HEIGHT +2);
+this.myFontProcessor= this.updateMyFontProcessor;
     
 this.gauge.setLabel(this.backgroundLabel);
     
@@ -336,12 +352,11 @@ this.paintable.paint(graphics);
 
 
     public paint2(graphics: Graphics){
-
-    var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+this.myFontProcessor!.process(graphics);
     
 graphics.setColor(this.backgroundBasicColor!.intValue());
     
-graphics.fillRect(0, 0, displayInfoSingleton!.getLastWidth(), displayInfoSingleton!.getLastHeight());
+graphics.fillRect(0, 0, this.displayInfo!.getLastWidth(), this.displayInfo!.getLastHeight());
     
 this.gauge.paintXY(graphics, 0, 0);
     

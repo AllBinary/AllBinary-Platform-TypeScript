@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
@@ -36,7 +38,11 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { InitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
       
@@ -65,14 +71,16 @@ import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/Primitiv
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class SelectionHudPaintable extends InitUpdatePaintable {
+export class SelectionHudPaintable extends InitUpdatePaintable implements UpdateMyFontInterface {
         
-
-    readonly myFont: MyFont = MyFont.getInstance()!;
 
     readonly y: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +17;
 
     private readonly primitiveLongUtil: PrimitiveLongUtil;
+
+    readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    myFontProcessor: MyFontProcessor = updateMyFontProcessor;
 
     private x: number= 0;
 
@@ -92,6 +100,8 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
 
+    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
+
 protected constructor (){
 
             super();
@@ -102,14 +112,31 @@ this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(10000);
 }
 
 
+    public updateMeasurement(graphics: Graphics){
+
+    var commonButtons: CommonButtons = CommonButtons.getInstance()!;;
+    
+
+    var font: Font = graphics.getFont()!;;
+    
+this.setHeight(commonButtons!.STANDARD_BUTTON_SIZE +font.getHeight());
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
     public update(){
+
+    var commonButtons: CommonButtons = CommonButtons.getInstance()!;;
+    
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();;
     
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
-this.x= CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
+this.x= commonButtons!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
     
 this.textX= this.getX() +4;
     
@@ -117,7 +144,7 @@ this.width= displayInfoSingleton!.getLastWidth() -this.getX() *2;
     
 this.imageX= this.getWidth() +touchButtonLocationHelper!.getColumnsRemainderHalf() -10;
     
-this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +this.myFont!.DEFAULT_CHAR_HEIGHT);
+this.myFontProcessor= this.updateMyFontProcessor;
     
 }
 
@@ -127,20 +154,6 @@ this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +this.myFont!.D
 
 
     public updateInfo(){
-}
-
-
-    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
-
-    public paint(graphics: Graphics){
-graphics.setColor(this.backgroundColor);
-    
-graphics.drawRect(this.getX(), this.y, this.getWidth(), this.getHeight());
-    
-graphics.setColor(this.getColor());
-    
-graphics.drawString(this.getName(), this.textX, this.y, 0);
-    
 }
 
 
@@ -252,6 +265,20 @@ this.height= height;
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.x;
+    
+}
+
+
+    public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
+graphics.setColor(this.backgroundColor);
+    
+graphics.drawRect(this.getX(), this.y, this.getWidth(), this.getHeight());
+    
+graphics.setColor(this.getColor());
+    
+graphics.drawString(this.getName(), this.textX, this.y, 0);
     
 }
 

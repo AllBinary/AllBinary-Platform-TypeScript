@@ -24,6 +24,8 @@
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
       
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
@@ -36,7 +38,11 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       
@@ -60,14 +66,18 @@ import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
 
-export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasInputProcessor {
+export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasInputProcessor implements UpdateMyFontInterface {
         
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
     private readonly INSTRUCTIONS: string = "(Right = Next Track, Left = Previous Track)";
 
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
     private anchor: number = Anchor.TOP_LEFT;
+
+    private fontHeight: number = 0;
 
 public constructor (highScoresCanvas: HighScoresCanvas){
             super(highScoresCanvas);
@@ -75,6 +85,17 @@ public constructor (highScoresCanvas: HighScoresCanvas){
 
                             //For kotlin this is before the body of the constructor.
                     
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.fontHeight= font.getHeight();
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
 }
 
 
@@ -89,7 +110,7 @@ GameKeyEventHandler.getInstance()!.removeListener(this);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public update(){
 
@@ -139,8 +160,7 @@ list.clear();
 
 
     public paint(graphics: Graphics){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
+this.myFontProcessor!.process(graphics);
     
 
     var width: number = this.displayInfoSingleton!.getLastWidth()!;;
@@ -148,7 +168,7 @@ list.clear();
 
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.INSTRUCTIONS)>>1);;
     
-graphics.drawString(this.INSTRUCTIONS, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, this.anchor);
+graphics.drawString(this.INSTRUCTIONS, (width>>1) -topScoresWidth, this.fontHeight *2, this.anchor);
     
 }
 

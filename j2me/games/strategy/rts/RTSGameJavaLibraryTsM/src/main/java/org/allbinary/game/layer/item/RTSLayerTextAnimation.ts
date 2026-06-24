@@ -22,13 +22,19 @@
 
 
         
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
       
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
       
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 
 
@@ -49,14 +55,16 @@ import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class RTSLayerTextAnimation extends Animation {
+export class RTSLayerTextAnimation extends Animation implements UpdateMyFontInterface {
         
-
-    private readonly myFont: MyFont = MyFont.getInstance()!;
 
     private readonly image: Image;
 
     private readonly text: string;
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private fontHeight: number = 0;
 
 public constructor (text: string, image: Image){
 
@@ -68,11 +76,24 @@ this.image= image;
 }
 
 
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.fontHeight= font.getHeight();
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
     public paintXY(graphics: Graphics, x: number, y: number){
+this.myFontProcessor!.process(graphics);
+    
 super.paintXY(graphics, x, y);
     
 
-    var adjustedCostY: number = this.image.getHeight() -this.myFont!.DEFAULT_CHAR_HEIGHT;;
+    var adjustedCostY: number = this.image.getHeight() -this.fontHeight;;
     
 graphics.drawString(this.text, x, y +adjustedCostY, 0);
     

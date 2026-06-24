@@ -10,6 +10,10 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
+            import { Thread } from '../../../java/lang/Thread.js';
+        
+            import { Runnable } from '../../../java/lang/Runnable.js';
+        
 import { TsUtil } from '../../../org/allbinary/TsUtil.js';
       
 
@@ -70,6 +74,15 @@ anyType!.wait();
             
     public waitObjectFor(anyType: Object, delay: number){
 TsUtil.getInstance()!.waitFor(anyType, delay);
+    
+}
+
+
+    public processThread(runnable: Runnable){
+
+    var thread: Thread = new Thread(runnable);;
+    
+thread.start();
     
 }
 

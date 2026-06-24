@@ -82,12 +82,14 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
+this.myFontProcessor!.process(graphics);
+    
 
     var existingFont: Font = graphics.getFont()!;;
     
 this.fontDebugFactory!.setFont(this.font, graphics);
     
-super.paintXY(graphics, x, y);
+super.paintXYNoUpdate(graphics, x, y);
     
 this.fontDebugFactory!.setFont(existingFont, graphics);
     
@@ -164,7 +166,7 @@ this.hasChanged= false;
 }
 
 
-    public getHeight(): number{
+    public getFontHeight(): number{
 
 
 

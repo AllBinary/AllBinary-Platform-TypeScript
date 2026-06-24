@@ -76,7 +76,7 @@ this.highScoresCanvas= highScoresCanvas;
     public close(){
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
 super.onPressGameKeyEvent(gameKeyEvent);
@@ -85,7 +85,7 @@ this.update();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
 super.onDownGameKeyEvent(gameKeyEvent);
@@ -94,7 +94,7 @@ this.update();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
 super.onUpGameKeyEvent(gameKeyEvent);

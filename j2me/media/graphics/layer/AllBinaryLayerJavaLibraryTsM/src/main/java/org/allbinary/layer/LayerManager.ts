@@ -146,7 +146,7 @@ this.list.addAt(index, layerInterface);
     public remove(layerInterface: AllBinaryLayer){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.anyType) 
 
         //mutex.withLock
@@ -188,7 +188,7 @@ this.layerManagerLogging!.removeResult(this, layerInterface, result);
     public cleanup(){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.anyType) 
 
         //mutex.withLock
@@ -209,7 +209,7 @@ System.gc();
     public paint(g: Graphics, x: number, y: number){
 
         
-        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
         //synchronized(this.anyType) 
 
         //mutex.withLock

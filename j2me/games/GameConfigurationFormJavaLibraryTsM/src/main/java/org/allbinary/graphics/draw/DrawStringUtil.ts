@@ -24,19 +24,19 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
       
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
       
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
-      
 import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+      
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       
@@ -80,83 +80,7 @@ export class DrawStringUtil
 }
 
 
-    public paintVerticle(graphics: Graphics, string: string, x: number, y: number, anchor: number){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var openGLFeatureUtil: OpenGLFeatureUtil = OpenGLFeatureUtil.getInstance()!;;
-    
-
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
-    
-
-    var offsetY: number = 0;;
-    
-
-                        if(J2MEUtil.isHTML())
-                        
-                                    {
-                                    charHeight += 1;
-    
-
-                                    }
-                                
-                             else 
-                        if(openGLFeatureUtil!.isAnyThreed())
-                        
-                                    {
-                                    charHeight += 2;
-    
-
-                        if(AndroidUtil.isAndroid())
-                        
-                                    {
-                                    
-                                    }
-                                
-                        else {
-                            offsetY= 2 +(charHeight *2 /3);
-    
-
-                        }
-                            
-
-                                    }
-                                
-
-    var size: number = string.length!;;
-    
-
-    var offsetX: number = 0;;
-    
-
-    var aChar: string;;
-    
-
-
-
-
-                        for (
-    var index: number = size -1;index >= 0; index--)
-        {
-aChar= string[index];
-    
-
-                        if(openGLFeatureUtil!.isAnyThreed())
-                        
-                                    {
-                                    offsetX= myFont!.charWidth(aChar) /2;
-    
-
-                                    }
-                                
-graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor);
-    
-}
-
-}
-
+    private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private anchor: number = Anchor.TOP_LEFT;
 
@@ -179,15 +103,7 @@ PreLogUtil.put(new StringMaker().append("Exception: stringLength: ")!.appendint(
 }
 
 
-    private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-
-    public drawCenterStrings(graphics: Graphics, stringArray: string[], maxWidth: number, x: number, y: number){
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
-    
+    public drawCenterStrings(graphics: Graphics, stringArray: string[], maxWidth: number, charHeight: number, x: number, y: number){
 
     var extraLines: number = 0;;
     

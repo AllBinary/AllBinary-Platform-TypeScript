@@ -22,8 +22,10 @@
 
 
         
-            import { Exception } from '../../../../../../java/lang/Exception.js';
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
+import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
@@ -32,7 +34,7 @@ import { BasicHudFactory } from '../../../../../../org/allbinary/game/graphics/h
       
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
       
-import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
       
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
       
@@ -62,32 +64,31 @@ import { PrimitiveLongUtil } from '../../../../../../org/allbinary/logic/math/Pr
 export class NumberStringHud extends BasicHud implements PaintableInterface {
         
 
+    private readonly primitiveLongUtil: PrimitiveLongUtil;
+
+    private readonly prependString: string;
+
     private readonly PREPEND_STRING: string[];
 
     private value: number;
 
     private max: number;
 
-    private offset: number;
+    private offset: number= 0;
 
     private valueString: string[];
 
     private valueTotalDigits: number= 0;
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil;
-
-public constructor (prependString: string, max: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
-            super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+public constructor (prependString: string, max: number, location: number, direction: number, bufferZone: number, basicColor: BasicColor){
+            super(location, direction, bufferZone, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
+this.prependString= prependString;
+    
 this.PREPEND_STRING= prependString!.split('');
-    
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-this.offset= myFont!.stringWidth(prependString) +myFont!.defaultCharWidth();
     
 this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
     
@@ -104,11 +105,22 @@ this.value= 0;
                                     
 
 
-                            throw new Exception(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
+                            throw new RuntimeException(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
                     
 
                                     }
                                 
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.offset= font.stringWidth(this.prependString) +MyFontProcessor.defaultCharWidth(font);
+    
+super.updateMeasurement(graphics);
+    
 }
 
 
@@ -160,6 +172,8 @@ super.paintDX(graphics, this.PREPEND_STRING, 0, this.PREPEND_STRING.length, this
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
+this.myFontProcessor!.process(graphics);
+    
 
     var charArray: string[] = this.PREPEND_STRING;;
     

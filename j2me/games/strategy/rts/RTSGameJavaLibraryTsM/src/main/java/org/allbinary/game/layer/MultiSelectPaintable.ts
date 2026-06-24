@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
@@ -35,8 +37,6 @@ import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
       
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       
@@ -70,10 +70,31 @@ export class MultiSelectPaintable extends SelectionHudPaintable {
 
     private rootNamesString: string = StringUtil.getInstance()!.EMPTY_STRING;
 
+    private readonly TOTAL: string = "Total Selected: ";
+
+    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
+
+    private totalWidth: number= 0;
+
+    private textLine2Y: number= 0;
+
 public constructor (){
 
             super();
         }
+
+
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
+    
+
+    var font: Font = graphics.getFont()!;;
+    
+this.totalWidth= font.stringWidth(this.TOTAL);
+    
+this.textLine2Y= (this.y +font.getHeight());
+    
+}
 
 
     public update(list: BasicArrayList){
@@ -145,12 +166,6 @@ this.rootNameList!.clear();
 }
 
 
-    private readonly TOTAL: string = "Total Selected: ";
-
-    private readonly totalWidth: number = MyFont.getInstance()!.stringWidth(this.TOTAL)!;
-
-    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
-
     public paint(graphics: Graphics){
 graphics.setColor(this.backgroundColor);
     
@@ -162,10 +177,7 @@ graphics.drawString(this.TOTAL, this.textX, this.y, 0);
     
 graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, this.y, 0);
     
-
-    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);;
-    
-graphics.drawString(this.rootNamesString, this.textX, textLine2Y, 0);
+graphics.drawString(this.rootNamesString, this.textX, this.textLine2Y, 0);
     
 }
 

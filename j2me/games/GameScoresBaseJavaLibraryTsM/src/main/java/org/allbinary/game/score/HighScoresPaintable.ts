@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
@@ -36,7 +38,11 @@ import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/Co
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
       
@@ -66,19 +72,36 @@ import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js
 import { HighScores } from './HighScores.js';
 import { HighScore } from './HighScore.js';
 
-export class HighScoresPaintable extends Paintable implements ColorChangeListener {
+export class HighScoresPaintable extends Paintable implements ColorChangeListener, UpdateMyFontInterface {
         
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
     private highScores: HighScores = NullHighScoresSingletonFactory.getInstance()!;
 
+    private anchor: number = Anchor.TOP_LEFT;
+
+    private charHeight: number= 0;
+
 public constructor (){
 
             super();
         }
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.charHeight= font.getHeight();
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
 
 
     public onEvent(eventObject: AllBinaryEventObject){
@@ -90,11 +113,8 @@ this.basicColor= colorChangeEvent!.getBasicColorP();
 }
 
 
-    private anchor: number = Anchor.TOP_LEFT;
-
     public paint(graphics: Graphics){
-
-    var charHeight: number = MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;;
+this.myFontProcessor!.process(graphics);
     
 
     var width: number = this.displayInfoSingleton!.getLastWidth()!;;
@@ -109,6 +129,9 @@ graphics.setColor(this.getBasicColorP()!.intValue());
     
 
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading)>>1);;
+    
+
+    var charHeight: number = this.charHeight;;
     
 graphics.drawString(heading, (width>>1) -topScoresWidth, charHeight, this.anchor);
     
@@ -138,10 +161,12 @@ graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeig
     var vectorIndex: number = 0;;
     
 
+    var highScore: HighScore;;
+    
+
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
-
-    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;;
+highScore= list.objectArray[vectorIndex]! as HighScore;
     
 
     var nextScoreWidth: number = graphics.getFont()!.stringWidth(highScore!.getScoreString())!;;
@@ -164,8 +189,7 @@ vectorIndex= 0;
 
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
-
-    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;;
+highScore= list.objectArray[vectorIndex]! as HighScore;
     
 graphics.drawString(highScore!.getName(), 10, charHeight *index, this.anchor);
     

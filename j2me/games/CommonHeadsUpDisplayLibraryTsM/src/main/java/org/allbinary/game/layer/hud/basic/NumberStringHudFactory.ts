@@ -91,7 +91,7 @@ export class NumberStringHudFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new NumberStringHud(StringUtil.getInstance()!.EMPTY_STRING, 9, BasicHudFactory.getInstance()!.ABSOLUTE, 1, 0, 0, 0, BasicColorFactory.getInstance()!.NULL_COLOR);
+                        return new NumberStringHud(StringUtil.getInstance()!.EMPTY_STRING, 9, BasicHudFactory.getInstance()!.ABSOLUTE, 1, 0, BasicColorFactory.getInstance()!.NULL_COLOR);
     
 
                 //: 
@@ -103,7 +103,7 @@ export class NumberStringHudFactory
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
     
-logUtil!.put(commonStrings!.EXCEPTION, "NumberStringHud", commonStrings!.CONSTRUCTOR, e);
+logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 
 

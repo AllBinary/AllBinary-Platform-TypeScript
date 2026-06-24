@@ -65,11 +65,15 @@ export class LapWidget extends BasicHud {
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
 
 public constructor (location: number, direction: number, basicColor: BasicColor){
-            super(location, direction, 15, 40, 2, basicColor);
+            super(location, direction, 2, basicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
+this.updateMaxHeight= 15;
+    
+this.updateMaxWidth= 40;
+    
 }
 
 

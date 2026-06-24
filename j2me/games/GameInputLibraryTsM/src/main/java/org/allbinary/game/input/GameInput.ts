@@ -79,7 +79,7 @@ this.isRemoveDuplicateKeyPresses= Features.getInstance()!.isFeature(InputFeature
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public add(gameKeyEvent: GameKeyEvent){
 
@@ -114,14 +114,14 @@ this.isRemoveDuplicateKeyPresses= Features.getInstance()!.isFeature(InputFeature
                             
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public addForRemoval(gameKeyEvent: GameKeyEvent){
 this.removalGameKeyEventList!.add(gameKeyEvent);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isForRemoval(gameKeyEvent: GameKeyEvent): boolean{
 
@@ -132,14 +132,14 @@ this.removalGameKeyEventList!.add(gameKeyEvent);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public clear(){
 this.gameKeyEventList!.clear();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public removeNonAIInputGameKeyEvents(){
 
@@ -170,7 +170,7 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public update(){
 

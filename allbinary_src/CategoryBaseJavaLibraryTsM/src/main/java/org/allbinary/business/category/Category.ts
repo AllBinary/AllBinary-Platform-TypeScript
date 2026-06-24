@@ -222,7 +222,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean{
 this.typeVector!.add(this.PROPERTIES);
@@ -235,7 +235,7 @@ this.typeVector!.add(this.PROPERTIES);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public addChild(categoryInterface: CategoryInterface): boolean{
 this.removeDuplicateChild(categoryInterface);
@@ -278,7 +278,7 @@ this.typeVector!.add(this.CATEGORY);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public removeChild(categoryInterface: CategoryInterface): boolean{
 
@@ -359,7 +359,7 @@ this.childCategoryVector!.remove(objectIndex);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     removeDuplicateChild(categoryInterface: CategoryInterface): boolean{
 
@@ -521,7 +521,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public isValid(): Boolean{
 

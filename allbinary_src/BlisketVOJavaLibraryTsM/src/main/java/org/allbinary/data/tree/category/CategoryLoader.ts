@@ -95,7 +95,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                                 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public getDoc(categoryInterface: CategoryInterface): Document{
 
@@ -201,7 +201,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public get(categoryInterface: CategoryInterface): CategoryInterface{
 
@@ -241,7 +241,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public get(document: Document): CategoryInterface{
 
@@ -281,7 +281,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public getAll(categoryInterface: CategoryInterface): CategoryInterface{
 
@@ -318,7 +318,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     getAll(document: Document): CategoryInterface{
 
@@ -358,7 +358,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     getAll(parentCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
 
@@ -427,7 +427,7 @@ parentCategoryInterface!.addChild(categoryInterface);
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     addProperties(loadedCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
 

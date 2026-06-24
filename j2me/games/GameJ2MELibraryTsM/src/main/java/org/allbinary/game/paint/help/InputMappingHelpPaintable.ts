@@ -42,9 +42,7 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
       
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
       
-import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
       
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
@@ -79,6 +77,7 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelpPaintable } from './HelpPaintable.js';
+//import { UpdateMyFontProperties } from './UpdateMyFontProperties.js';
 
 export class InputMappingHelpPaintable extends HelpPaintable {
         
@@ -93,7 +92,15 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
+    readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
+
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
+
+    private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
+
+    private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
+
+    private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     private gameInputMappingArray: GameInputMapping[];
 
@@ -106,9 +113,33 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     private selectedBasicColor: BasicColor;
 
-    private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
+//inner= member=true isStatic=
+UpdateMyFontProperties = class
+            extends Object
+         {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
 
-    private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
+
+    actionStringArray: string[] = StringUtil.getInstance()!.getArrayInstance()!;
+
+    keymappingBeginWidthArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
+
+    actionStringDeltaXArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
+
+    inputDeltaXArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
+
+    sepArray: string[][] = new Array(0).fill(null).map(() => new Array(0).fill(0))
+                                                            ;
+
+    sepWidthArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
+
+    charHeight: number= 0;
+
+}
+                
+            
+    private updateMyFontProperties = new this.UpdateMyFontProperties();
 
 protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasicColor: BasicColor, basicColor: BasicColor){
             super("Input Mapping", backgroundBasicColor, basicColor);
@@ -135,6 +166,152 @@ this.update(this.NONE, this.NONE);
 
                         }
                             
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+
+    var updateMyFontProperties = new this.UpdateMyFontProperties();;
+    
+updateMyFontProperties!.charHeight= font.getHeight();
+    
+
+    var stringMaker: StringMaker = new StringMaker();;
+    
+
+    var inputInfo: string[] = this.inputInfo;;
+    
+
+    var size: number = inputInfo!.length
+                ;;
+    
+updateMyFontProperties!.actionStringArray= new Array(size);
+    
+updateMyFontProperties!.keymappingBeginWidthArray= new Array(size);
+    
+updateMyFontProperties!.actionStringDeltaXArray= new Array(size);
+    
+updateMyFontProperties!.inputDeltaXArray= new Array(size).fill(null).map(() => new Array(0).fill(0));
+    
+updateMyFontProperties!.sepArray= new Array(size).fill(null).map(() => new Array(0).fill(0))
+                                                            ;
+    
+updateMyFontProperties!.sepWidthArray= new Array(size).fill(null).map(() => new Array(0).fill(0));
+    
+
+    var list: BasicArrayList;;
+    
+
+    var keyMappings: string;;
+    
+
+    var actionString: string;;
+    
+
+    var input: Input;;
+    
+
+    var size2: number = 0;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+list= this.keyMappingArray[index]!;
+    
+keyMappings= this.get(list);
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+actionString= stringMaker!.append(inputInfo[index]!)!.append(commonSeps!.COLON)!.append(commonSeps!.SPACE)!.append(commonSeps!.SPACE)!.toString();
+    
+updateMyFontProperties!.actionStringArray[index]= actionString;
+    
+stringMaker!.delete(0, stringMaker!.length());
+    
+updateMyFontProperties!.keymappingBeginWidthArray[index]= (font.stringWidth(stringMaker!.append(updateMyFontProperties!.actionStringArray[index]!)!.append(keyMappings)!.toString())>>1);
+    
+updateMyFontProperties!.actionStringDeltaXArray[index]= font.stringWidth(actionString);
+    
+size2= list.size();
+    
+updateMyFontProperties!.inputDeltaXArray[index]= new Array(size2);
+    
+updateMyFontProperties!.sepArray[index]= new Array(size2);
+    
+updateMyFontProperties!.sepWidthArray[index]= new Array(size2);
+    
+
+
+
+
+                        for (
+    var index2: number = 0;index2 < size2; index2++)
+        {
+input= list.objectArray[index2]! as Input;
+    
+updateMyFontProperties!.inputDeltaXArray[index]![index2]= font.stringWidth(input.getName());
+    
+updateMyFontProperties!.sepArray[index]![index2]= EMPTY_STRING;
+    
+
+                        if(index2 +1 < list.size())
+                        
+                                    {
+                                    
+                        if(list.size() == 2)
+                        
+                                    {
+                                    updateMyFontProperties!.sepArray[index]![index2]= InputMappingHelpPaintable.AND;
+    
+
+                                    }
+                                
+                        else {
+                            
+                        if(index2 +2 == list.size())
+                        
+                                    {
+                                    updateMyFontProperties!.sepArray[index]![index2]= InputMappingHelpPaintable.MORE_THAN_TWO_IN_LIST_AND;
+    
+
+                                    }
+                                
+                        else {
+                            updateMyFontProperties!.sepArray[index]![index2]= InputMappingHelpPaintable.SEP;
+    
+
+                        }
+                            
+
+                        }
+                            
+
+                                    }
+                                
+
+                        if(updateMyFontProperties!.sepArray[index]![index2] != EMPTY_STRING)
+                        
+                                    {
+                                    updateMyFontProperties!.sepWidthArray[index]![index2]= font.stringWidth(updateMyFontProperties!.sepArray[index]![index2]!);
+    
+
+                                    }
+                                
+}
+
+}
+
+this.updateMyFontProperties= updateMyFontProperties;
+    
+super.updateMeasurement(graphics);
+    
 }
 
 
@@ -251,6 +428,8 @@ this.inputBasicColorArray= inputBasicColorArray;
     
 super.setInputInfoP(keyInfo);
     
+this.myFontProcessor= this.updateMyFontProcessor;
+    
 }
 
 
@@ -321,53 +500,15 @@ stringBuffer!.append(key.getName());
 }
 
 
-    public getHeight(): number{
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var inputInfo: string[] = this.inputInfo;;
-    
-
-    var size: number = (inputInfo!.length +4);;
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return myFont!.DEFAULT_CHAR_HEIGHT *size;
-    
-}
-
-
     public paint(graphics: Graphics){
-
-    var font: Font = graphics.getFont()!;;
+this.myFontProcessor!.process(graphics);
     
 
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
-    
-
-    var stringMaker: StringMaker = new StringMaker();;
-    
-
-    var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;;
-    
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
-    
-
-    var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;;
-    
-
-    var beginWidth: number = (font.stringWidth(this.title)>>1);;
+    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 graphics.setColor(this.basicColor!.intValue());
     
-graphics.drawString(this.title, halfWidth -beginWidth, charHeight, this.anchor);
+graphics.drawString(this.title, halfWidth -this.titleBeginWidth, this.updateMyFontProperties!.charHeight, this.anchor);
     
 
     var inputInfo: string[] = this.inputInfo;;
@@ -386,19 +527,19 @@ graphics.drawString(this.title, halfWidth -beginWidth, charHeight, this.anchor);
     var size2: number = 0;;
     
 
-    var input: Input;;
+    var actionString: string;;
     
 
-    var actionString: string;;
+    var input: Input;;
     
 
     var list: BasicArrayList;;
     
 
-    var keyMappings: string;;
+    var sep: string;;
     
 
-    var sep: string;;
+    var beginWidth: number= 0;;
     
 
 
@@ -407,7 +548,7 @@ graphics.drawString(this.title, halfWidth -beginWidth, charHeight, this.anchor);
                         for (
     var index: number = 0;index < size; index++)
         {
-y= (index +3) *charHeight;
+y= (index +3) *this.updateMyFontProperties!.charHeight;
     
 deltaX= 0;
     
@@ -415,21 +556,15 @@ list= this.keyMappingArray[index]!;
     
 size2= list.size();
     
-keyMappings= this.get(list);
-    
-stringMaker!.delete(0, stringMaker!.length());
-    
-actionString= stringMaker!.append(inputInfo[index]!)!.append(commonSeps!.COLON)!.append(commonSeps!.SPACE)!.append(commonSeps!.SPACE)!.toString();
-    
-stringMaker!.delete(0, stringMaker!.length());
-    
-beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappings)!.toString())>>1);
+beginWidth= this.updateMyFontProperties!.keymappingBeginWidthArray[index]!;
     
 graphics.setColor(this.actionBasicColor[index]!.intValue());
     
+actionString= this.updateMyFontProperties!.actionStringArray[index]!;
+    
 graphics.drawString(actionString, halfWidth -beginWidth +deltaX, y, this.anchor);
     
-deltaX += font.stringWidth(actionString);
+deltaX += this.updateMyFontProperties!.actionStringDeltaXArray[index]!;
     
 
 
@@ -444,58 +579,16 @@ graphics.setColor(this.inputBasicColorArray[index]![index2]!.intValue());
     
 graphics.drawString(input.getName(), halfWidth -beginWidth +deltaX, y, this.anchor);
     
-deltaX += font.stringWidth(input.getName());
+deltaX += this.updateMyFontProperties!.inputDeltaXArray[index]![index2]!;
     
-sep= EMPTY_STRING;
+sep= this.updateMyFontProperties!.sepArray[index]![index2]!;
     
-
-                        if(index2 +1 < list.size())
-                        
-                                    {
-                                    
-                        if(list.size() == 2)
-                        
-                                    {
-                                    sep= InputMappingHelpPaintable.AND;
-    
-
-                                    }
-                                
-                        else {
-                            
-                        if(index2 +2 == list.size())
-                        
-                                    {
-                                    sep= InputMappingHelpPaintable.MORE_THAN_TWO_IN_LIST_AND;
-    
-
-                                    }
-                                
-                        else {
-                            sep= InputMappingHelpPaintable.SEP;
-    
-
-                        }
-                            
-
-                        }
-                            
-
-                                    }
-                                
-
-                        if(sep != EMPTY_STRING)
-                        
-                                    {
-                                    graphics.setColor(this.basicColor!.intValue());
+graphics.setColor(this.basicColor!.intValue());
     
 graphics.drawString(sep, halfWidth -beginWidth +deltaX, y, this.anchor);
     
-deltaX += font.stringWidth(sep);
+deltaX += this.updateMyFontProperties!.sepWidthArray[index]![index2]!;
     
-
-                                    }
-                                
 }
 
 }

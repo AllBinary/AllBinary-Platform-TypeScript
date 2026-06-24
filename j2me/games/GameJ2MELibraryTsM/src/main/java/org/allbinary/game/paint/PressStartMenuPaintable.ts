@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { AppletUtil } from '../../../../org/allbinary/AppletUtil.js';
@@ -30,7 +32,11 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
       
@@ -59,20 +65,24 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class PressStartMenuPaintable extends Paintable {
+export class PressStartMenuPaintable extends Paintable implements UpdateMyFontInterface {
         
 
-    private startString: string = StringUtil.getInstance()!.EMPTY_STRING;
-
-    private timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(1100);
-
-    private flash: boolean= false;
+    private readonly displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
     private readonly PRESS_START: string = "Press Screen To Start";
 
     private readonly KEY_START: string = "Press or Click F2 To Begin";
 
     private readonly MENU_START: string = "Press Start From The Menu To Begin";
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    private startString: string = StringUtil.getInstance()!.EMPTY_STRING;
+
+    private timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(1100);
+
+    private flash: boolean= false;
 
 public constructor (){
 
@@ -106,6 +116,23 @@ public constructor (){
 
     private anchor: number = Anchor.TOP_LEFT;
 
+    private beginWidth: number= 0;
+
+    private line: number= 0;
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.beginWidth= (graphics.getFont()!.stringWidth(this.startString)>>1);
+    
+this.line= (4 *MyFontProcessor.defaultCharWidth(font)) +(font.getHeight()>>1);
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
     public paint(graphics: Graphics){
 
                         if(this.timeDelayHelper!.isTimeTNT())
@@ -133,17 +160,7 @@ public constructor (){
                         if(this.isFlash())
                         
                                     {
-                                    
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
-    
-
-    var beginWidth: number = (graphics.getFont()!.stringWidth(this.startString)>>1);;
-    
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
-
-    var line: number = (4 *myFont!.DEFAULT_CHAR_HEIGHT) +(myFont!.DEFAULT_CHAR_HEIGHT>>1);;
+                                    this.myFontProcessor!.process(graphics);
     
 graphics.drawString(this.startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, this.anchor);
     

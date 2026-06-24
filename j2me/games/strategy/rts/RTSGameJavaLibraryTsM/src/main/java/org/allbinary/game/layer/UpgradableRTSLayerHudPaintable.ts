@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
@@ -30,7 +32,7 @@ import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
       
 import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
       
@@ -84,26 +86,40 @@ export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
 
     private lateinit rtsLayerCompositePaintableLateInit: RTSLayerCompositePaintable;
 
+    private charHeight: number= 0;
+
+    private charWidth: number= 0;
+
 private constructor (){
 
             super();
         }
 
 
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
+    
+
+    var font: Font = graphics.getFont()!;;
+    
+this.charHeight= font.getHeight();
+    
+this.charWidth= MyFontProcessor.defaultCharWidth(font);
+    
+}
+
+
     public update(){
 super.update();
     
 
-    var myFont: MyFont = MyFont.getInstance()!;;
+    var commonButtons: CommonButtons = CommonButtons.getInstance()!;;
     
-
-    var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;;
+this.costY= (this.y +commonButtons!.STANDARD_BUTTON_SIZE);
     
-this.costY= (this.y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
+this.costY1= (this.y +commonButtons!.STANDARD_BUTTON_SIZE -this.charHeight);
     
-this.costY1= (this.y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -(charHeight));
-    
-this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -myFont!.defaultCharWidth();
+this.percentCompleteX2= this.imageX +commonButtons!.STANDARD_BUTTON_SIZE -this.charWidth;
     
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;

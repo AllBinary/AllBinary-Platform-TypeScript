@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
@@ -50,9 +52,13 @@ import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/B
       
 import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
       
-import { DrawStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawStringUtil.js';
+import { DrawVerticalStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawVerticalStringUtil.js';
       
-import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
       
@@ -79,20 +85,26 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class BasicPopupMenuPaintable extends Paintable {
+export class BasicPopupMenuPaintable extends Paintable implements UpdateMyFontInterface {
         
 
     private static readonly NAME: string = "MENU";
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
 
-    private readonly label: string;
+    private readonly drawStringUtil: DrawVerticalStringUtil = DrawVerticalStringUtil.getInstance()!;
 
-    private readonly BORDER: number;
+    private readonly label: string;
 
     private readonly foregroundBasicColor: BasicColor;
 
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
     private rectangle: Rectangle;
+
+    private BORDER: number= 0;
+
+    private heightOffset: number= 0;
 
     private offset: number= 0;
 
@@ -106,41 +118,6 @@ public constructor (rectangle: Rectangle, backgroundBasicColor: BasicColor, fore
 this.label= BasicPopupMenuPaintable.NAME;
     
 this.rectangle= rectangle;
-    
-
-    var features: Features = Features.getInstance()!;;
-    
-
-    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
-    
-
-    var BORDER: number = 0;;
-    
-
-                        if(J2MEUtil.isHTML() || (AndroidUtil.isAndroid() && isOpenGL))
-                        
-                                    {
-                                    BORDER= MyFont.getInstance()!.defaultCharWidth() /2;
-    
-
-                                    }
-                                
-                             else 
-                        if(AndroidUtil.isAndroid() || J2MEUtil.isJ2SE() || SWTUtil.isSWT)
-                        
-                                    {
-                                    BORDER= MyFont.getInstance()!.defaultCharWidth();
-    
-
-                                    }
-                                
-                        else {
-                            BORDER= MyFont.getInstance()!.defaultCharWidth() *2;
-    
-
-                        }
-                            
-this.BORDER= BORDER;
     
 
                         if(J2MEUtil.isJ2ME())
@@ -162,34 +139,66 @@ this.init(rectangle);
 }
 
 
-                //@Throws(Exception.constructor)
-            
-    public init(rectangle: Rectangle){
-this.rectangle= rectangle;
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
     
 
-    var myFont: MyFont = MyFont.getInstance()!;;
+    var features: Features = Features.getInstance()!;;
     
 
-    var heightOffset: number = rectangle.getHeight() -(myFont!.DEFAULT_CHAR_HEIGHT *BasicPopupMenuPaintable.NAME.length);;
+    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
+    
+this.drawStringUtil!.updateMeasurement(graphics, this.label);
     
 
-                        if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
+    var BORDER: number = 0;;
+    
+
+                        if(J2MEUtil.isHTML() || (AndroidUtil.isAndroid() && isOpenGL))
                         
                                     {
-                                    heightOffset -= myFont!.DEFAULT_CHAR_HEIGHT +2;
+                                    BORDER= MyFontProcessor.defaultCharWidth(font) /2;
     
 
-                        if(AndroidUtil.isAndroid())
+                                    }
+                                
+                             else 
+                        if(AndroidUtil.isAndroid() || J2MEUtil.isJ2SE() || SWTUtil.isSWT)
                         
                                     {
-                                    heightOffset= myFont!.DEFAULT_CHAR_HEIGHT;
+                                    BORDER= MyFontProcessor.defaultCharWidth(font);
     
 
                                     }
                                 
                         else {
-                            heightOffset -= myFont!.DEFAULT_CHAR_HEIGHT +2;
+                            BORDER= MyFontProcessor.defaultCharWidth(font) *2;
+    
+
+                        }
+                            
+this.BORDER= BORDER;
+    
+this.heightOffset= this.rectangle.getHeight() -(font.getHeight() *BasicPopupMenuPaintable.NAME.length);
+    
+
+                        if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
+                        
+                                    {
+                                    this.heightOffset -= font.getHeight() +2;
+    
+
+                        if(AndroidUtil.isAndroid())
+                        
+                                    {
+                                    this.heightOffset= font.getHeight();
+    
+
+                                    }
+                                
+                        else {
+                            this.heightOffset -= font.getHeight() +2;
     
 
                         }
@@ -197,7 +206,17 @@ this.rectangle= rectangle;
 
                                     }
                                 
-this.offset= (heightOffset>>1);
+this.offset= (this.heightOffset>>1);
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public init(rectangle: Rectangle){
+this.rectangle= rectangle;
     
 
     var width: number = this.rectangle.getWidth()!;;
@@ -226,9 +245,9 @@ rectangleFilledAnimation!.setHeight(height);
 }
 
 
-    private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
-
     public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
 
     var point: GPoint = this.rectangle.getPoint()!;;
     

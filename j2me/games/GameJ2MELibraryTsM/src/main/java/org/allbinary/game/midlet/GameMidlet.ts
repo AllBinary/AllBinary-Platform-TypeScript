@@ -558,7 +558,7 @@ this.notifyDestroyed();
 
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public commandAction(command: Command, displayable: Displayable){
 
@@ -1128,7 +1128,10 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameFo
                         
                                     {
                                     
-    var index: number = this.getLoadGameForm()!.getSelectedId()!;;
+    var loadGameForm: LoadGameForm = this.getLoadGameForm() as LoadGameForm;;
+    
+
+    var index: number = loadGameForm!.getSelectedId()!;;
     
 
                         if(index !=  -1)
@@ -1161,7 +1164,10 @@ PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, this.
                         
                                     {
                                     
-    var index: number = this.getLoadGameForm()!.getSelectedText()!;;
+    var loadGameForm: LoadGameForm = this.getLoadGameForm() as LoadGameForm;;
+    
+
+    var index: number = loadGameForm!.getSelectedText()!;;
     
 
                         if(index !=  -1)
@@ -1570,12 +1576,12 @@ this.loadGameForm= loadGameForm;
 }
 
 
-    public getLoadGameForm(): LoadGameForm{
+    public getLoadGameForm(): CommandForm{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.loadGameForm as LoadGameForm;
+                        return this.loadGameForm;
     
 }
 

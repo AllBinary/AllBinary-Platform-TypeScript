@@ -30,7 +30,11 @@ import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
-import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
       
@@ -52,8 +56,8 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-export class FullScreenPaintable extends Paintable {
+        //SwtToJ2ME
+export class FullScreenPaintable extends Paintable implements UpdateMyFontInterface {
         
 
     public static getInstance(): FullScreenPaintable{
@@ -66,7 +70,17 @@ export class FullScreenPaintable extends Paintable {
 }
 
 
+    private readonly displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
+
+    private myFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
     private readonly FULLSCREEN_TEXT: string = "F11 - Toggle Fullscreen";
+
+    private anchor: number = Anchor.TOP_LEFT;
+
+    private Y: number= 0;
+
+    private beginWidth: number= 0;
 
 private constructor (){
 
@@ -74,31 +88,29 @@ private constructor (){
         }
 
 
-    private anchor: number = Anchor.TOP_LEFT;
-
-    public paint(graphics: Graphics){
-
-    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
-    
-
-    var halfWidth: number = displayInfo!.getLastHalfWidth()!;;
-    
-
-    var height: number = displayInfo!.getLastHeight()!;;
-    
+    public updateMeasurement(graphics: Graphics){
 
     var font: Font = graphics.getFont()!;;
     
+this.Y= 4 *font.getHeight();
+    
+this.beginWidth= (font.stringWidth(this.FULLSCREEN_TEXT)>>1);
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
+}
 
-    var beginWidth: number = (font.stringWidth(this.FULLSCREEN_TEXT)>>1);;
+
+    public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
     
 
-    var myFont: MyFont = MyFont.getInstance()!;;
+    var halfWidth: number = this.displayInfo!.getLastHalfWidth()!;;
     
 
-    var Y: number = 4 *myFont!.DEFAULT_CHAR_HEIGHT;;
+    var height: number = this.displayInfo!.getLastHeight()!;;
     
-graphics.drawString(this.FULLSCREEN_TEXT, halfWidth -beginWidth, height -Y, this.anchor);
+graphics.drawString(this.FULLSCREEN_TEXT, halfWidth -this.beginWidth, height -this.Y, this.anchor);
     
 }
 

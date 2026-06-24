@@ -194,7 +194,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public processInputList(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
 
@@ -225,7 +225,7 @@ this.inputProcessorArray[key]!.processEvent(allbinaryLayerManager, GameKeyEvent.
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){
 this.processInputList(allbinaryLayerManager, this.getGameKeyEventList());

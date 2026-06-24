@@ -42,7 +42,13 @@ import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/mo
       
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
       
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
+      
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
       

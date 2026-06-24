@@ -28,6 +28,8 @@
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
       
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 
@@ -113,6 +115,42 @@ export class OpenGLESStrings
 
 
     public drawSubstring(gl: GL10, graphics: Graphics, string: string, offset: number, len: number, x: number, y: number, anchor: number){
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+
+    public charWidth(ch: string): number{
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+
+    public charsWidth(ch: string[], offset: number, length: number): number{
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+
+    public stringWidth(string: string): number{
+
+
+
+                            throw new RuntimeException();
+                    
+}
+
+
+    public stringWidth(string: string, offset: number, len: number): number{
 
 
 

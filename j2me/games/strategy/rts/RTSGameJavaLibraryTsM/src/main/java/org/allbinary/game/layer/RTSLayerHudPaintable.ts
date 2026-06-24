@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
@@ -31,6 +33,8 @@ import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
       
 import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
       
 
 
@@ -53,7 +57,7 @@ import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/Basi
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
 import { RTSLayer } from './RTSLayer.js';
 
-export class RTSLayerHudPaintable extends SelectionHudPaintable {
+export class RTSLayerHudPaintable extends SelectionHudPaintable implements UpdateMyFontInterface {
         
 
     private static readonly instance: RTSLayerHudPaintable = new RTSLayerHudPaintable();
@@ -76,24 +80,23 @@ export class RTSLayerHudPaintable extends SelectionHudPaintable {
 
     costY1: number= 0;
 
+    private fontHeight: number= 0;
+
 private constructor (){
 
             super();
         }
 
 
-    public updateSelectionInfo(){
-
-    var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
-    
-this.setName(this.getRtsLayer()!.getName());
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
     
 
-    var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;;
+    var font: Font = graphics.getFont()!;;
     
-this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
+this.fontHeight= font.getHeight();
     
-this.costY1= (this.y +((this.weaponProperties!.length +1) *charHeight));
+this.costY1= (this.y +((this.weaponProperties!.length +1) *this.fontHeight));
     
 
                         if(!AndroidUtil.isAndroid())
@@ -105,7 +108,7 @@ this.costY1= (this.y +((this.weaponProperties!.length +1) *charHeight));
                                     }
                                 
                         else {
-                            this.costY= (this.y +((this.weaponProperties!.length +2) *charHeight));
+                            this.costY= (this.y +((this.weaponProperties!.length +2) *this.fontHeight));
     
 
                         }
@@ -113,11 +116,21 @@ this.costY1= (this.y +((this.weaponProperties!.length +1) *charHeight));
 }
 
 
-    public paint(graphics: Graphics){
-super.paint(graphics);
+    public updateSelectionInfo(){
+this.setName(this.getRtsLayer()!.getName());
     
 
-    var charHeight: number = this.myFont!.DEFAULT_CHAR_HEIGHT;;
+    var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;;
+    
+this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
+    
+this.myFontProcessor= this.updateMyFontProcessor;
+    
+}
+
+
+    public paint(graphics: Graphics){
+super.paint(graphics);
     
 
     var size: number = this.weaponProperties!.length
@@ -130,7 +143,7 @@ super.paint(graphics);
                         for (
     var index: number = 0;index < size; index++)
         {
-graphics.drawString(this.weaponProperties[index]!, this.textX, this.y +((index +1) *charHeight), 0);
+graphics.drawString(this.weaponProperties[index]!, this.textX, this.y +((index +1) *this.fontHeight), 0);
     
 }
 

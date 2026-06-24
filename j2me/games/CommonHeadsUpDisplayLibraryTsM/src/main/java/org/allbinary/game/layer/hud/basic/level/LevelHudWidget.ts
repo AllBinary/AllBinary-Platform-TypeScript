@@ -24,13 +24,13 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
+import { Font } from '../../../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
       
 import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      
-import { MyFont } from '../../../../../../../org/allbinary/graphics/font/MyFont.js';
       
 import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
       
@@ -67,7 +67,7 @@ export class LevelHudWidget extends BasicHud implements PaintableInterface {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new LevelHudWidget(maxlevel, location, direction, MyFont.getInstance()!.getSize() *4);
+                        return new LevelHudWidget(maxlevel, location, direction);
     
 }
 
@@ -82,19 +82,16 @@ export class LevelHudWidget extends BasicHud implements PaintableInterface {
 
     private levelNumberTotalDigits: number= 0;
 
-    private readonly offset: number;
+    private offset: number= 0;
 
     private readonly primitiveLongUtil: PrimitiveLongUtil;
 
-public constructor (maxlevel: number, location: number, direction: number, maxWidth: number){
-            super(location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY);
+public constructor (maxlevel: number, location: number, direction: number){
+            super(location, direction, 2, BasicColorFactory.getInstance()!.GREY);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
-
-    var myFont: MyFont = MyFont.getInstance()!;;
-    
 this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
     
 
@@ -102,13 +99,26 @@ this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
     
 this.levelString= LEVEL.split('');
     
-this.offset= myFont!.charsWidth(this.levelString, 0, this.levelString!.length) +myFont!.getSize();
-    
 this.maxlevel= maxlevel;
     
 this.level= maxlevel;
     
 this.update();
+    
+this.updateMaxHeight= 14;
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+
+    var font: Font = graphics.getFont()!;;
+    
+this.updateMaxWidth= font.getSize() *4;
+    
+this.offset= font.charsWidth(this.levelString, 0, this.levelString!.length) +font.getSize();
+    
+super.updateMeasurement(graphics);
     
 }
 

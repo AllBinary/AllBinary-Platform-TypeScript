@@ -76,7 +76,15 @@ import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
 import { FormType } from './FormType.js';
 import { FormTypeFactory } from './FormTypeFactory.js';
+import { ItemIndexPaintable } from './ItemIndexPaintable.js';
+import { ItemIndexDx } from './ItemIndexDx.js';
 import { ItemPaintable } from './ItemPaintable.js';
+//import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
+//import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
+//import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
+//import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
+//import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
+//import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
 
 export class ScrollSelectionForm extends PaintableForm {
         
@@ -162,12 +170,198 @@ export class ScrollSelectionForm extends PaintableForm {
 }
 
 
-    private static readonly GET_SELECTED_INDEX: string = "getSelectedIndex";
-
     private static readonly INSIDE_FORM: string = " inside form";
 
     private static readonly IS_IN_FORM: string = "isInForm";
 
+    private static readonly GET_SELECTED_INDEX: string = "getSelectedIndex";
+
+//inner= member=true isStatic=
+ScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintable {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    private readonly scrollSelectionForm: ScrollSelectionForm;
+
+ constructor (scrollSelectionForm: ScrollSelectionForm){
+
+            super();
+        this.scrollSelectionForm= scrollSelectionForm;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public paint(graphics: Graphics, index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.scrollSelectionForm!.paintItemHorizontal(graphics, index, item, dx, dy);;
+    
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+ScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    private readonly scrollSelectionForm: ScrollSelectionForm;
+
+ constructor (scrollSelectionForm: ScrollSelectionForm){
+
+            super();
+        this.scrollSelectionForm= scrollSelectionForm;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public paint(graphics: Graphics, index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.scrollSelectionForm!.paintItemVertical(graphics, index, item, dx, dy);;
+    
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+ScrollSelectionFormTempHorizontalPaintable = class extends ItemIndexPaintable {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    private readonly scrollSelectionForm: ScrollSelectionForm;
+
+ constructor (scrollSelectionForm: ScrollSelectionForm){
+
+            super();
+        this.scrollSelectionForm= scrollSelectionForm;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public paint(graphics: Graphics, index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.scrollSelectionForm!.paintItemTempHorizontal(graphics, index, item, dx, dy);;
+    
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+ScrollSelectionFormHorizontalDx = class extends ItemIndexDx {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    private readonly scrollSelectionForm: ScrollSelectionForm;
+
+ constructor (multipleScrollSelectionForm: ScrollSelectionForm){
+
+            super();
+        this.scrollSelectionForm= multipleScrollSelectionForm;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public getDx(index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.scrollSelectionForm!.getSelectedIndexForPointHorizontalDx(index, item, dx, dy);;
+    
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+ScrollSelectionFormVericalDx = class extends ItemIndexDx {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    private readonly scrollSelectionForm: ScrollSelectionForm;
+
+ constructor (multipleScrollSelectionForm: ScrollSelectionForm){
+
+            super();
+        this.scrollSelectionForm= multipleScrollSelectionForm;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public getDx(index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.scrollSelectionForm!.getSelectedIndexForPointVerticalDx(index, item, dx, dy);;
+    
+}
+
+
+}
+                
+            
+//inner= member=true isStatic=
+ScrollSelectionFormTempHorizontalDx = class extends ItemIndexDx {
+        
+/*Static stuff is not allowed for TypeScript inner classes*//**/
+
+
+    private readonly scrollSelectionForm: ScrollSelectionForm;
+
+ constructor (multipleScrollSelectionForm: ScrollSelectionForm){
+
+            super();
+        this.scrollSelectionForm= multipleScrollSelectionForm;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public getDx(index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.scrollSelectionForm!.getSelectedIndexForPointTempHorizontalDx(index, item, dx, dy);;
+    
+}
+
+
+}
+                
+            
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
 
     readonly border: number;
@@ -175,6 +369,10 @@ export class ScrollSelectionForm extends PaintableForm {
     readonly halfBorder: number;
 
     private buttonBasicColor: BasicColor;
+
+    private formTypeItemIndexPaintable: ItemIndexPaintable = ItemIndexPaintable.getInstance()!;
+
+    private formTypeItemIndexDx: ItemIndexDx = ItemIndexDx.getInstance()!;
 
     paintable: ItemPaintable = ItemPaintableFactory.getInstance()!;
 
@@ -191,6 +389,124 @@ this.border= border;
 this.halfBorder= (border>>1);
     
 this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
+    
+
+    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
+    
+
+                        if(formType == formTypeFactory!.HORIZONTAL_FORM)
+                        
+                                    {
+                                    this.formTypeItemIndexPaintable= new this.ScrollSelectionFormHorizontalPaintable(this);
+    
+this.formTypeItemIndexDx= new this.ScrollSelectionFormHorizontalDx(this);
+    
+
+                                    }
+                                
+                             else 
+                        if(formType == formTypeFactory!.VERTICAL_CENTER_FORM)
+                        
+                                    {
+                                    this.formTypeItemIndexPaintable= new this.ScrollSelectionFormVerticalPaintable(this);
+    
+this.formTypeItemIndexDx= new this.ScrollSelectionFormVericalDx(this);
+    
+
+                                    }
+                                
+                             else 
+                        if(formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
+                        
+                                    {
+                                    this.formTypeItemIndexPaintable= new this.ScrollSelectionFormTempHorizontalPaintable(this);
+    
+this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
+    
+
+                                    }
+                                
+                             else 
+                        if(formType == formTypeFactory!.NULL_FORM_TYPE)
+                        
+                                    {
+                                    
+                                    }
+                                
+                        else {
+                            
+
+
+                            throw new Exception(formTypeFactory!.UNK);
+                    
+
+                        }
+                            
+}
+
+
+    public paintItemHorizontal(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
+
+    var width: number = item.getMinimumWidth()!;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return x +width +this.border;
+    
+}
+
+
+    public paintItemVertical(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
+
+    var height: number = item.getMinimumHeight()!;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return y +height +this.border;
+    
+}
+
+
+    public paintItemTempHorizontal(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return 0;
+    
+}
+
+
+    public getSelectedIndexForPointHorizontalDx(index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return dx -this.halfBorder;
+    
+}
+
+
+    public getSelectedIndexForPointVerticalDx(index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return dx +this.getDiffX(item);
+    
+}
+
+
+    public getSelectedIndexForPointTempHorizontalDx(index: number, item: ABCustomItem, dx: number, dy: number): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return dx +this.getDiffX(item);
     
 }
 
@@ -333,6 +649,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
     var height: number= 0;;
     
 
+    var diffX: number= 0;;
+    
+
 
 
 
@@ -345,36 +664,8 @@ width= item.getMinimumWidth();
     
 height= item.getMinimumHeight();
     
-
-    var diffX: number = 0;;
+diffX= this.formTypeItemIndexDx!.getDx(index, item, dx, dy);
     
-
-                        if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
-                        
-                                    {
-                                    diffX= dx -this.halfBorder;
-    
-
-                                    }
-                                
-                             else 
-                        if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM || this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
-                        
-                                    {
-                                    diffX= dx +this.getDiffX(item);
-    
-
-                                    }
-                                
-                        else {
-                            
-
-
-                            throw new Exception(formTypeFactory!.UNK);
-                    
-
-                        }
-                            
 
                         if(this.rectangleCollisionUtil!.isInside(diffX, dy -this.halfBorder, diffX +width +this.border, dy +height +this.halfBorder +1, point.getX(), point.getY()))
                         
@@ -438,6 +729,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                                     }
                                 
 
+                                    }
+                                
+                             else 
+                        if(this.formType == formTypeFactory!.NULL_FORM_TYPE)
+                        
+                                    {
+                                    
                                     }
                                 
                         else {
@@ -532,6 +830,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
 
                                     }
                                 
+                             else 
+                        if(this.formType == formTypeFactory!.NULL_FORM_TYPE)
+                        
+                                    {
+                                    
+                                    }
+                                
                         else {
                             
 
@@ -605,16 +910,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                 //@Throws(Exception.constructor)
             
     public paintItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
+item.paintXY(graphics, x, y);
+    
 
     var width: number = item.getMinimumWidth()!;;
     
 
     var height: number = item.getMinimumHeight()!;;
-    
-
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
-    
-item.paintXY(graphics, x, y);
     
 graphics.setColor(this.getButtonBasicColor()!.intValue());
     
@@ -624,120 +926,27 @@ graphics.setColor(this.getButtonBasicColor()!.intValue());
 graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjustedBorder, width +this.border -adjustedBorder, height +this.border -adjustedBorder);
     
 
-                        if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
-                        
-                                    {
-                                    
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x +width +this.border;
+                        return this.formTypeItemIndexPaintable!.paint(graphics, index, item, x, y);;
     
-
-                                    }
-                                
-                             else 
-                        if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return y +height +this.border;
-    
-
-                                    }
-                                
-                             else 
-                        if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return 0;
-    
-
-                                    }
-                                
-                        else {
-                            
-
-
-                            throw new Exception(formTypeFactory!.UNK);
-                    
-
-                        }
-                            
 }
 
 
                 //@Throws(Exception.constructor)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
-
-    var width: number = item.getMinimumWidth()!;;
-    
-
-    var height: number = item.getMinimumHeight()!;;
-    
 graphics.setColor(this.getButtonBasicColor()!.intValue());
     
 item.paintUnselected(graphics, x, y);
     
 
-    var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
-    
-
-                        if(this.formType == formTypeFactory!.HORIZONTAL_FORM)
-                        
-                                    {
-                                    
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x +width +this.border;
+                        return this.formTypeItemIndexPaintable!.paint(graphics, index, item, x, y);;
     
-
-                                    }
-                                
-                             else 
-                        if(this.formType == formTypeFactory!.VERTICAL_CENTER_FORM)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return y +height +this.border;
-    
-
-                                    }
-                                
-                             else 
-                        if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return 0;
-    
-
-                                    }
-                                
-                        else {
-                            
-
-
-                            throw new Exception(formTypeFactory!.UNK);
-                    
-
-                        }
-                            
 }
 
 

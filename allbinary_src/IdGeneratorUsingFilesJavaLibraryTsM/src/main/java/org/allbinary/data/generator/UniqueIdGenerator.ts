@@ -117,7 +117,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public setFile(filePathName: string, name: string){
 this.newFile= AbFile.createAbFile(filePathName);
@@ -126,7 +126,7 @@ this.newFile= AbFile.createAbFile(filePathName);
 
 
                 //@Throws(IOException.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public getNext(): string{
 

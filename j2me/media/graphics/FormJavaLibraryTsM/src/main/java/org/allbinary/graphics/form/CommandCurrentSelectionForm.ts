@@ -44,6 +44,12 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
       
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      
 import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
       
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
@@ -70,12 +76,16 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
 import { FormType } from './FormType.js';
 
-export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
+export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm implements UpdateMyFontInterface {
         
 
     readonly selectedAnimationArray: Animation[] = new Array(16);
 
     readonly unSelectedAnimationArray: Animation[] = new Array(16);
+
+    private readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
 
 public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
@@ -85,7 +95,15 @@ public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, 
                     
 this.initAnimations();
     
-this.update(items);
+this.addAll(items);
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+this.updateAll(graphics, getAllitems());
+    
+this.myFontProcessor= MyFontProcessor.getInstance();
     
 }
 
@@ -121,7 +139,7 @@ this.unSelectedAnimationArray[index]= nullAnimation;
 }
 
 
-    update(items: ABCustomItem[]){
+    addAll(items: ABCustomItem[]){
 
 
 
@@ -130,14 +148,14 @@ this.unSelectedAnimationArray[index]= nullAnimation;
     var index: number = items.length
                 ;--index >= 0; )
         {
-this.updateAt(index, items[index]!);
+this.addAt(index, items[index]!);
     
 }
 
 }
 
 
-    updateAt(index: number, item: ABCustomItem){
+    addAt(index: number, item: ABCustomItem){
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
     
@@ -194,6 +212,125 @@ adjustedBorder= 4;
 }
 
 
+    updateAll(graphics: Graphics, items: ABCustomItem[]){
+
+
+
+
+                        for (
+    var index: number = items.length
+                ;--index >= 0; )
+        {
+items[index]!.preMeasurement(graphics);
+    
+this.updateAt(index, items[index]!);
+    
+}
+
+}
+
+
+    updateAt(index: number, item: ABCustomItem){
+
+    var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;;
+    
+
+    var buttonColor: BasicColor = basicColorFactory!.TRANSPARENT_GREY;;
+    
+
+    var selectedButtonColor: BasicColor = basicColorFactory!.TRANSPARENT_RED;;
+    
+
+    var width: number = item.getMinimumWidth()!;;
+    
+
+    var height: number = item.getMinimumHeight()!;;
+    
+
+    var adjustedBorder: number = 3;;
+    
+
+    var offset: number =  -(this.halfBorder +adjustedBorder);;
+    
+
+                        if(J2MEUtil.isJ2ME())
+                        
+                                    {
+                                    
+    var rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleAdjustedAnimation;;
+    
+rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setOffsetX(offset);
+    
+rectangleAdjustedAnimation!.setOffsetY(offset);
+    
+rectangleAdjustedAnimation!.setBasicColorP(selectedButtonColor);
+    
+
+                                    }
+                                
+                        else {
+                            
+    var rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
+    
+rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setOffsetX(offset);
+    
+rectangleAdjustedAnimation!.setOffsetY(offset);
+    
+rectangleAdjustedAnimation!.setBasicColorP(selectedButtonColor);
+    
+
+                        }
+                            
+adjustedBorder= 4;
+    
+
+                        if(J2MEUtil.isJ2ME())
+                        
+                                    {
+                                    
+    var rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleAdjustedAnimation;;
+    
+rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setOffsetX(offset);
+    
+rectangleAdjustedAnimation!.setOffsetY(offset);
+    
+rectangleAdjustedAnimation!.setBasicColorP(buttonColor);
+    
+
+                                    }
+                                
+                        else {
+                            
+    var rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
+    
+rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+    
+rectangleAdjustedAnimation!.setOffsetX(offset);
+    
+rectangleAdjustedAnimation!.setOffsetY(offset);
+    
+rectangleAdjustedAnimation!.setBasicColorP(buttonColor);
+    
+
+                        }
+                            
+}
+
+
     public getSelectedCommand(): Command{
 
     var index: number = super.getSelectedIndex()!;;
@@ -214,7 +351,7 @@ adjustedBorder= 4;
 
     var result: number = super.append(item)!;;
     
-this.updateAt(result, item);
+this.addAt(result, item);
     
 
 
@@ -247,6 +384,14 @@ super.insert(itemNum, item);
 
     public set(itemNum: number, item: ABCustomItem){
 super.set(itemNum, item);
+    
+}
+
+
+    public paint(graphics: Graphics){
+this.myFontProcessor!.process(graphics);
+    
+super.paint(graphics);
     
 }
 

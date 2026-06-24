@@ -22,6 +22,8 @@
 
 
         
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
@@ -60,10 +62,23 @@ export class WaypointInfoHudPaintable extends SelectionHudPaintable {
 
     rtsLayerP: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
 
+    private textLine2Y: number= 0;
+
 public constructor (){
 
             super();
         this.keyvalueDrawString= new KeyValueDrawString("Owner: ", this.textX);
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
+    
+
+    var font: Font = graphics.getFont()!;;
+    
+this.textLine2Y= (this.y +font.getHeight());
     
 }
 
@@ -81,19 +96,6 @@ this.keyvalueDrawString!.update(rtsLayer!.getParentLayer()!.getName());
 }
 
 
-    public paint(graphics: Graphics){
-super.paint(graphics);
-    
-
-    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);;
-    
-this.keyvalueDrawString!.paint(graphics, textLine2Y);
-    
-this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
-    
-}
-
-
     public setRtsLayer(rtsLayer: RTSLayer){
 this.rtsLayerP= rtsLayer;
     
@@ -106,6 +108,16 @@ this.rtsLayerP= rtsLayer;
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.rtsLayerP;
+    
+}
+
+
+    public paint(graphics: Graphics){
+super.paint(graphics);
+    
+this.keyvalueDrawString!.paint(graphics, this.textLine2Y);
+    
+this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
     
 }
 

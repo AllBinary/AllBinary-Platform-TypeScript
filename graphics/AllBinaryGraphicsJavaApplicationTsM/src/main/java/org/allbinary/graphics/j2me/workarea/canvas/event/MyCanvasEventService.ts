@@ -69,14 +69,14 @@ export class MyCanvasEventService
     public static AUTOEXPLODE: string = "autoExplode";
 
     public static CENTER: string = "center";
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyCanvasEventListener){
 MyCanvasEventService.listenerList!.add(listener.constructor as Class<any>, listener as java.util.EventListener);
     
 }
 
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyCanvasEventListener){
 MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, listener as java.util.EventListener);
@@ -85,7 +85,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<any>, li
 
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
 
     public static fire(evt: MyCanvasEvent){
 
