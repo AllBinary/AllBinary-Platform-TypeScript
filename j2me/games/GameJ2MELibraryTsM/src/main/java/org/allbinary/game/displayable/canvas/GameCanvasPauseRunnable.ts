@@ -78,10 +78,6 @@ public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
             
     public processLoopSleep(){
 
-                        if(AndroidUtil.isAndroid())
-                        
-                                    {
-                                    
         try {
             
     var features: Features = Features.getInstance()!;;
@@ -109,9 +105,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 }
 
-
-                                    }
-                                
 }
 
 

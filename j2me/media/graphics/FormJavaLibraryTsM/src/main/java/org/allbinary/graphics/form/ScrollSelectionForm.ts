@@ -390,6 +390,14 @@ this.halfBorder= (border>>1);
     
 this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
     
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public init(rectangle: Rectangle, formType: FormType){
+super.init(rectangle, formType);
+    
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
     
@@ -557,6 +565,9 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
             
     public getItemIndex(item: ABCustomItem): number{
 
+    var nextItem: ABCustomItem;;
+    
+
     var size: number = this.size()!;;
     
 
@@ -566,8 +577,7 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var nextItem: ABCustomItem = this.get(index) as ABCustomItem;;
+nextItem= this.get(index) as ABCustomItem;
     
 
                         if(nextItem == item)

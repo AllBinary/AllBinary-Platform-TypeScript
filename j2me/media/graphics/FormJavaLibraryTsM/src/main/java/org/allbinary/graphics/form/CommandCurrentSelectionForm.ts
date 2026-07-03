@@ -44,11 +44,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
       
-import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-      
 import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-      
-import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
 import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
       
@@ -83,10 +79,6 @@ export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm impl
 
     readonly unSelectedAnimationArray: Animation[] = new Array(16);
 
-    private readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
-
-    myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
-
 public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
                     
@@ -103,7 +95,7 @@ this.addAll(items);
     public updateMeasurement(graphics: Graphics){
 this.updateAll(graphics, getAllitems());
     
-this.myFontProcessor= MyFontProcessor.getInstance();
+super.updateMeasurement(graphics);
     
 }
 
@@ -178,16 +170,22 @@ this.addAt(index, items[index]!);
     var offset: number =  -(this.halfBorder +adjustedBorder);;
     
 
+    var rectWidth: number = width +this.border -adjustedBorder;;
+    
+
+    var rectHeight: number = height +this.border -adjustedBorder;;
+    
+
                         if(J2MEUtil.isJ2ME())
                         
                                     {
-                                    this.selectedAnimationArray[index]= new RectangleAdjustedAnimation(width +this.border -adjustedBorder, height +this.border -adjustedBorder, offset, offset, selectedButtonColor);
+                                    this.selectedAnimationArray[index]= new RectangleAdjustedAnimation(rectWidth, rectHeight, offset, offset, selectedButtonColor);
     
 
                                     }
                                 
                         else {
-                            this.selectedAnimationArray[index]= new RectangleFilledAdjustedAnimation(width +this.border -adjustedBorder, height +this.border -adjustedBorder, offset, offset, selectedButtonColor);
+                            this.selectedAnimationArray[index]= new RectangleFilledAdjustedAnimation(rectWidth, rectHeight, offset, offset, selectedButtonColor);
     
 
                         }
@@ -198,13 +196,13 @@ adjustedBorder= 4;
                         if(J2MEUtil.isJ2ME())
                         
                                     {
-                                    this.unSelectedAnimationArray[index]= new RectangleAdjustedAnimation(width +this.border -adjustedBorder, height +this.border -adjustedBorder, offset, offset, buttonColor);
+                                    this.unSelectedAnimationArray[index]= new RectangleAdjustedAnimation(rectWidth, rectHeight, offset, offset, buttonColor);
     
 
                                     }
                                 
                         else {
-                            this.unSelectedAnimationArray[index]= new RectangleFilledAdjustedAnimation(width +this.border -adjustedBorder, height +this.border -adjustedBorder, offset, offset, buttonColor);
+                            this.unSelectedAnimationArray[index]= new RectangleFilledAdjustedAnimation(rectWidth, rectHeight, offset, offset, buttonColor);
     
 
                         }
@@ -253,15 +251,21 @@ this.updateAt(index, items[index]!);
     var offset: number =  -(this.halfBorder +adjustedBorder);;
     
 
+    var rectWidth: number = width +this.border -adjustedBorder;;
+    
+
+    var rectHeight: number = height +this.border -adjustedBorder;;
+    
+
                         if(J2MEUtil.isJ2ME())
                         
                                     {
                                     
     var rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleAdjustedAnimation;;
     
-rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setWidth(rectWidth);
     
-rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setHeight(rectHeight);
     
 rectangleAdjustedAnimation!.setOffsetX(offset);
     
@@ -276,9 +280,9 @@ rectangleAdjustedAnimation!.setBasicColorP(selectedButtonColor);
                             
     var rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.selectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
     
-rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setWidth(rectWidth);
     
-rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setHeight(rectHeight);
     
 rectangleAdjustedAnimation!.setOffsetX(offset);
     
@@ -298,9 +302,9 @@ adjustedBorder= 4;
                                     
     var rectangleAdjustedAnimation: RectangleAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleAdjustedAnimation;;
     
-rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setWidth(rectWidth);
     
-rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setHeight(rectHeight);
     
 rectangleAdjustedAnimation!.setOffsetX(offset);
     
@@ -315,9 +319,9 @@ rectangleAdjustedAnimation!.setBasicColorP(buttonColor);
                             
     var rectangleAdjustedAnimation: RectangleFilledAdjustedAnimation = this.unSelectedAnimationArray[index]! as RectangleFilledAdjustedAnimation;;
     
-rectangleAdjustedAnimation!.setWidth(width +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setWidth(rectWidth);
     
-rectangleAdjustedAnimation!.setHeight(height +this.border -adjustedBorder);
+rectangleAdjustedAnimation!.setHeight(rectHeight);
     
 rectangleAdjustedAnimation!.setOffsetX(offset);
     

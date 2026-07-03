@@ -62,7 +62,7 @@ export class LivesHudWidget extends BasicHud implements PaintableInterface {
 
     private readonly lifeInterface: Life;
 
-    private xArray: number[];
+    private readonly xArray: number[];
 
     private readonly animationInterface: Animation;
 
@@ -79,8 +79,6 @@ this.lifeInterface= lifeInterface;
     
 this.xArray= new Array(size);
     
-this.update();
-    
 this.animationInterface= animationInterface;
     
 this.updateMaxWidth= this.lifeInterface!.getMaxlives() *16;
@@ -90,22 +88,10 @@ this.updateMaxHeight= 16;
 }
 
 
-    public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-super.onDisplayChangeEvent(displayChangeEvent);
+    public updateMeasurement(graphics: Graphics){
+super.updateMeasurement(graphics);
     
-this.update();
-    
-}
 
-
-    update(){
-
-                        if(this.xArray != 
-                                    null
-                                )
-                        
-                                    {
-                                    
     var maxLives: number = Math.round(this.getLifeInterface()!.getMaxlives());;
     
 
@@ -119,16 +105,21 @@ this.xArray[index]= this.getX() +(index *16);
     
 }
 
+}
 
-                                    }
-                                
+
+    public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
+super.onDisplayChangeEvent(displayChangeEvent);
+    
+this.myFontProcessor= this.updateMyFontProcessor;
+    
 }
 
 
     public setX(x: number){
 super.setX(x);
     
-this.update();
+this.myFontProcessor= this.updateMyFontProcessor;
     
 }
 

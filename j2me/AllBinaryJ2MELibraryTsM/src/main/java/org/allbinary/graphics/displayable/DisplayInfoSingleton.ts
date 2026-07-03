@@ -238,6 +238,10 @@ this.scaleLargestTo= scaleLargestTo;
 
     private readonly LAST_HEIGHT: string = " LastHeight: ";
 
+    private readonly PORTRAIT: string = "Portrait";
+
+    private readonly LANDSCAPE: string = "Landscape";
+
     public setLastSize(aLastWidth: number, aLastHeight: number, reason: string){
 
                         if(this.full[this.WIDTH] != aLastWidth || this.full[this.HEIGHT] != aLastHeight)
@@ -591,9 +595,7 @@ this.scalableListener!.scale(this.ratio);
                                     }
                                 
                         else {
-                            this.logUtil!.putF("Found Landscape Orientation", this, this.commonStrings!.UPDATE);
-    
-
+                            
                         if(aLastWidth > this.scaleLargestTo)
                         
                                     {
@@ -734,6 +736,17 @@ stringBuffer!.append(this.LAST_HALF);
 stringBuffer!.append(this.commonLabels!.HEIGHT_LABEL);
     
 stringBuffer!.appendint(this.lastHalf[this.HEIGHT]!);
+    
+stringBuffer!.append(this.commonSeps!.SPACE);
+    
+stringBuffer!.append(this.isPortrait()
+                        ?       
+                                this.PORTRAIT
+                                :
+
+                            this.LANDSCAPE;
+
+    );
     
 
 

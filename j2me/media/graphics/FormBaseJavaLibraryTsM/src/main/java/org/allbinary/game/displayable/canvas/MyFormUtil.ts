@@ -26,6 +26,8 @@ import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
       
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
       
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
@@ -35,6 +37,10 @@ import { RectangleFactory } from '../../../../../org/allbinary/graphics/Rectangl
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
 import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      
+import { SWTJOGLProcessor } from '../../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
       
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
@@ -90,7 +96,23 @@ export class MyFormUtil
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
     
 
-    var width: number = MyFontProcessor.defaultStringWidth(font, 3)!;;
+    var features: Features = Features.getInstance()!;;
+    
+
+    var isOpenGL: boolean = features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL)!;;
+    
+
+    var TOTAL_CHAR_WIDTH: number = SWTJOGLProcessor.getInstance()!.isJOGL() && isOpenGL
+                        ?       
+                                2
+                                :
+
+                            3;
+
+    ;;
+    
+
+    var width: number = MyFontProcessor.defaultStringWidth(font, TOTAL_CHAR_WIDTH)!;;
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;;

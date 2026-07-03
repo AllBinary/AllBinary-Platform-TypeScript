@@ -32,6 +32,12 @@ import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
       
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
       
 
@@ -54,6 +60,8 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
 import { ItemIndexDx } from './ItemIndexDx.js';
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+import { FormType } from './FormType.js';
 import { FormTypeFactory } from './FormTypeFactory.js';
 //import { VerticalFormProcessor } from './VerticalFormProcessor.js';
 //import { VerticalItemIndexDx } from './VerticalItemIndexDx.js';
@@ -61,10 +69,8 @@ import { FormTypeFactory } from './FormTypeFactory.js';
 //import { HorizontalItemIndexDx } from './HorizontalItemIndexDx.js';
 //import { TempHorizontalFormProcessor } from './TempHorizontalFormProcessor.js';
 //import { TempHorizontalItemIndexDx } from './TempHorizontalItemIndexDx.js';
-import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { FormType } from './FormType.js';
 
-export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
+export class ScrollCurrentSelectionForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
 
     private readonly moveForSmallScreen: boolean;
@@ -237,6 +243,10 @@ VerticalItemIndexDx = class extends ItemIndexDx {
 }
                 
             
+    readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
+
+    myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
+
     private processor: Processor = Processor.getInstance()!;
 
     private preItemIndexDx: ItemIndexDx = ItemIndexDx.getInstance()!;
@@ -254,6 +264,16 @@ public constructor (title: string, items: ABCustomItem[], formPaintableFactory: 
                             //For kotlin this is before the body of the constructor.
                     
 this.moveForSmallScreen= moveForSmallScreen;
+    
+this.init(rectangle, formType);
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public init(rectangle: Rectangle, formType: FormType){
+super.init(rectangle, formType);
     
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;;
@@ -304,6 +324,14 @@ this.preItemIndexDx= new this.VerticalItemIndexDx(this);
 
                         }
                             
+this.myFontProcessor= this.updateMyFontProcessor;
+    
+}
+
+
+    public updateMeasurement(graphics: Graphics){
+this.myFontProcessor= MyFontProcessor.getInstance();
+    
 }
 
 

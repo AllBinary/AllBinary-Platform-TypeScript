@@ -66,6 +66,8 @@ import { OpenGLFeatureUtil } from '../../../../../org/allbinary/graphics/opengle
       
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
       
+import { SWTJOGLProcessor } from '../../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
+      
 
 
 
@@ -155,7 +157,7 @@ this.drawStringUtil!.updateMeasurement(graphics, this.label);
     var BORDER: number = 0;;
     
 
-                        if(J2MEUtil.isHTML() || (AndroidUtil.isAndroid() && isOpenGL))
+                        if(J2MEUtil.isHTML() || isOpenGL)
                         
                                     {
                                     BORDER= MyFontProcessor.defaultCharWidth(font) /2;
@@ -206,7 +208,14 @@ this.heightOffset= this.rectangle.getHeight() -(font.getHeight() *BasicPopupMenu
 
                                     }
                                 
-this.offset= (this.heightOffset>>1);
+this.offset= (this.heightOffset>>1) +(SWTJOGLProcessor.getInstance()!.isJOGL()
+                        ?       
+                                4
+                                :
+
+                            0;
+
+    );
     
 this.myFontProcessor= MyFontProcessor.getInstance();
     
