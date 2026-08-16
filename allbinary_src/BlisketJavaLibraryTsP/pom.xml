@@ -40,13 +40,13 @@
         <!--
         <module>../data/DataJavaLibraryTsM</module>
         -->
-
+<!--
         <module>../licensing/TestServiceClientInfoJavaLibraryTsM</module>
-
+-->
         <module>../data/DataTableInterfacesTsM</module>
-        
+<!--        
         <module>../QueueJavaLibraryTsM</module>
-        
+        -->
         <!--
         <module>../TokenizerJavaLibraryTsM</module>
         -->
@@ -54,25 +54,29 @@
         <module>../logging/LogConfigTypeFreeblisketJavaLibraryTsM</module>
 
         <module>../JavaUtilLibraryTsM</module>
-        <module>../NullInitInfoJavaLibraryTsM</module>        
+
+        <module>../NullInitInfoJavaLibraryTsM</module>
+        
         <module>../InitInfoJavaLibraryTsM</module>
+<!--
         <module>../PreLoaderHttpJavaLibraryTsM</module>
         
         <module>../TagsBaseJavaLibraryTsM</module>
-        <module>../CustomLoaderJavaLibraryTsM</module>
+        <module>../CustomLoaderJavaLibraryTsM</module>-->
         
         <!--
         <module>../logic/data/file/FileJ2SEJavaLibraryTsM</module>
         <module>../logic/data/file/FileJavaLibraryTsM</module>
         -->
-
-        <module>../data/SQLAllBinaryJavaLibraryTsM</module>
+<!--
+        <module>../data/SQLAllBinaryJavaLibraryTsM</module>-->
 
         <!--
         <module>../licensing/FileLicenseInitInfoJavaLibraryTsM</module>
         -->
-
+        
         <module>../DocumentObjectModelJavaLibraryTsM</module>
+<!--
 
         <module>../VisualStyleJavaLibraryTsM</module>
 
@@ -115,18 +119,18 @@
         <module>../WorkflowJavaLibraryTsM</module>
 
         <module>../IdGeneratorUsingFilesJavaLibraryTsM</module>
-        <module>../BlisketPreVOJavaLibraryTsM</module>
+        <module>../BlisketPreVOJavaLibraryTsM</module>-->
 
         <!-- 
         EntitiesOrderHistoryVOJavaLibrary
         UserJavaLibrary
         -->
         
-        <module>../BlisketVOJavaLibraryTsM</module>
+<!--        <module>../BlisketVOJavaLibraryTsM</module>
 
         <module>../UserCommerceJavaLibraryTsM</module>
 
-        <module>../CustomizerValidatorsJavaLibraryTsM</module>
+        <module>../CustomizerValidatorsJavaLibraryTsM</module>-->
 
         <!-- 
         AllBinaryCacheForShiftOneJavaLibrary
@@ -135,12 +139,12 @@
         ImageJavaLibrary
         -->
         
-        <module>../logic/data/file/FileMediaJ2SEJavaLibraryTsM</module>
+<!--        <module>../logic/data/file/FileMediaJ2SEJavaLibraryTsM</module>
         <module>../BlisketBaseJavaLibraryTsM</module>
 
         <module>../logging/LoggingGAEAllTsM</module>
         <module>../BlisketJavaLibraryTsM</module>
-        
+        -->
     </modules>
 
 </project>

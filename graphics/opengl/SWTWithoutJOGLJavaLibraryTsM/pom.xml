@@ -51,7 +51,7 @@
 
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midp-for-ts</artifactId>
+            <artifactId>microemu-midpTs</artifactId>
             <version>2.0.4</version>
             <optional>true</optional>
         </dependency>
@@ -155,7 +155,7 @@
 
                     <exclusions>
                         <exclusion>
-                            <groupId>org.microemu</groupId><artifactId>microemu-midp-for-ts</artifactId>
+                            <groupId>org.microemu</groupId><artifactId>microemu-midpTs</artifactId>
                         </exclusion>
                         <exclusion>
                             <groupId>org.microemu</groupId><artifactId>microemu-jsr-135Ts</artifactId>

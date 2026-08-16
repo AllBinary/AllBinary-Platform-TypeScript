@@ -48,11 +48,11 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>org.jogamp.jogl</groupId>
             <artifactId>jogl-all-noawtTs</artifactId>
             <version>2.3.2</version>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 

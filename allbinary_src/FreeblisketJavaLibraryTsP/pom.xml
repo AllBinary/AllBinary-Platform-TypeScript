@@ -43,7 +43,7 @@
         <!--
         <module>../TagsBaseJavaLibraryTsM</module>
         -->
-        <module>../CustomLoaderFakeJavaLibraryTsM</module>
+<!--        <module>../CustomLoaderFakeJavaLibraryTsM</module>
 
         <module>../ViewsJavaLibraryTsM</module>
 
@@ -51,12 +51,13 @@
         <module>../BlisketTagHelpersJavaLibraryTsM</module>
         <module>../BlisketTagHelperFactoriesJavaLibraryTsM</module>
         <module>../BlisketTagsJavaLibraryTsM</module>
+-->
         
         <!--
         <module>../WorkflowJavaLibraryTsM</module>
         -->
 
-        <module>../FreeblisketJavaLibraryTsM</module>
+<!--        <module>../FreeblisketJavaLibraryTsM</module>-->
 
     </modules>
 

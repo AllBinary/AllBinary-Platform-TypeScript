@@ -33,14 +33,14 @@
         -->
         
         
-        <module>../AllBinaryGraphicsUserInterfaceJavaLibraryTsM</module>
+<!--        <module>../AllBinaryGraphicsUserInterfaceJavaLibraryTsM</module>-->
         
         <module>../../allbinary_src/logging/LogConfigTypeThickClientJavaLibraryTsM</module>
-        <module>../../allbinary_src/logging/GUILoggingTsM</module>
+<!--        <module>../../allbinary_src/logging/GUILoggingTsM</module>
                 
         <module>../AllBinaryGraphicsJavaApplicationTsM</module>
         
-        <module>../ImageToolJavaApplicationTsM</module>
+        <module>../ImageToolJavaApplicationTsM</module>-->
     </modules>
 
 </project>

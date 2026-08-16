@@ -30,6 +30,7 @@
 
     <modules>
         <module>../CommonJavaLibraryTsM</module>
+        <module>../TempBaseJavaLibraryTsM</module>
         
         <module>../../allbinary_src/LogTsM</module>
         <module>../../allbinary_src/allbinary_src_designpatterns_srcTsM</module>
@@ -46,7 +47,7 @@
         <module>../J2MEColorJavaLibraryTsM</module>
         <module>../EventJ2MELibraryTsM</module>
 
-<!--        <module>../../allbinary_src/LogNoPlatformJavaLibraryM</module>-->
+        <module>../../allbinary_src/LogNoPlatformJavaLibraryTsM</module>
         <module>../../allbinary_src/LogJ2MEJavaLibraryTsM</module>
         <module>../../allbinary_src/LogAndroidJavaLibraryTsM</module>
         <module>../logging/LoggingNoneTsM</module>

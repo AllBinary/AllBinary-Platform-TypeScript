@@ -30,6 +30,10 @@
 
     <modules>
 
+        <module>../working_thirdpartyts/embedded/j2me/microemulator/2_0_4/microemu-cldcTs</module>
+        <module>../working_thirdpartyts/embedded/j2me/microemulator/2_0_4/microemu-midpTs</module>
+        <module>../working_thirdpartyts/embedded/j2me/microemulator/2_0_4/microemu-extensions/microemu-jsr-135Ts</module>
+
         <!--
         -->
         <module>./j2me/AllBinaryBaseLibraryPOMTs</module>
@@ -38,20 +42,20 @@
 
 <!--
         <module>./automation/InputAutomationToolsTsP</module>
+-->
         <module>./graphics/GraphicsToolsTsP</module>
         <module>./allbinary_src/FreeblisketJavaLibraryTsP</module>
--->
+
 
         <module>./j2me/games/platform/AllBinaryOnAllPlatformsJavaLibraryTsP</module>
         
         <!--
         <module>./j2me/media/graphics/animation/image/AllBinaryHTMLImageAnimationRotationJavaLibraryTsM</module>
+        <module>./j2me/media/graphics/animation/image/AllBinaryHTML2ImageAnimationRotationJavaLibraryTsM</module>
         -->
         <module>./j2me/media/graphics/animation/image/AllBinaryJ2SEImageAnimationRotationJavaLibraryTsM</module>
-<!--
         <module>./j2me/games/Resources/sounds/release/GameSoundsJ2SEOggResourcesJavaLibraryTsM</module>
         <module>./graphics/opengl/AllBinaryJOGLResourcesJavaLibraryTsM</module>
--->
 
     </modules>
 
