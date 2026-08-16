@@ -811,6 +811,10 @@ this.getMotionGestureInputList()!.add(motionGestureEvent);
 }
 
 
+    public onScrolledMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
+}
+
+
     getSelectedRtsLayer(): CollidableDestroyableDamageableLayer{
 
 

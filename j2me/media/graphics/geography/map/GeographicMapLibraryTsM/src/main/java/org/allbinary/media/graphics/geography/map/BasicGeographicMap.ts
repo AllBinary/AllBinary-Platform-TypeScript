@@ -438,7 +438,7 @@ geographicMapCellPositionList!.clear();
                         if(allBinaryTiledLayer!.getColumns() > columnIndex && allBinaryTiledLayer!.getRows() > rowIndex)
                         
                                     {
-                                    geographicMapCellPositionList!.add(geographicMapCellPositionFactory!.getAt(columnIndex, rowIndex));
+                                    geographicMapCellPositionList!.add(this.geographicMapCellPositionFactory!.getAt(columnIndex, rowIndex));
     
 
                                     }

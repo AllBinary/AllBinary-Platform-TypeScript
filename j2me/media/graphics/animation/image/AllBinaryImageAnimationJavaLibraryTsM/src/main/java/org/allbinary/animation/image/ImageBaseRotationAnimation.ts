@@ -133,6 +133,16 @@ graphics.drawImage(this.image, x, y, this.anchor);
 }
 
 
+    public getHeight(): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.image.getHeight();;
+    
+}
+
+
     public close(){
 DisposalUtil.getInstance()!.disposeImage(this.image);
     

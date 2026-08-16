@@ -26,6 +26,8 @@
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
       
+import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
+      
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
@@ -107,6 +109,103 @@ this.setPoints(currentPoints);
     
 this.setBasicColorP(basicColor);
     
+}
+
+
+    public setBasicColorP(basicColor: BasicColor){
+
+    var changed: boolean = false;;
+    
+
+                        if(this.getBasicColorP() == 
+                                    null
+                                 || this.getBasicColorP()!.intValue() != basicColor!.intValue())
+                        
+                                    {
+                                    changed= true;
+    
+
+                                    }
+                                
+super.setBasicColorP(basicColor);
+    
+
+                        if(changed)
+                        
+                                    {
+                                    this.updateModifiers();
+    
+
+                                    }
+                                
+}
+
+
+    public changeBasicColor(basicColor: BasicColor){
+
+    var changed: boolean = false;;
+    
+
+                        if(this.getChangeBasicColor() == 
+                                    null
+                                 || this.getChangeBasicColor()!.intValue() != basicColor!.intValue())
+                        
+                                    {
+                                    changed= true;
+    
+
+                                    }
+                                
+super.changeBasicColor(basicColor);
+    
+
+                        if(changed)
+                        
+                                    {
+                                    this.updateModifiers();
+    
+
+                                    }
+                                
+}
+
+
+    public setAlpha(alpha: number){
+
+    var changed: boolean = false;;
+    
+
+                        if(this.alphaP != alpha)
+                        
+                                    {
+                                    changed= true;
+    
+
+                                    }
+                                
+super.setAlpha(alpha);
+    
+
+                        if(changed)
+                        
+                                    {
+                                    this.updateModifiers();
+    
+
+                                    }
+                                
+}
+
+
+    public setScale(scaleX: number, scaleY: number){
+}
+
+
+    public setMaxScale(maxScaleX: number, maxScaleY: number){
+}
+
+
+    updateModifiers(){
 }
 
 

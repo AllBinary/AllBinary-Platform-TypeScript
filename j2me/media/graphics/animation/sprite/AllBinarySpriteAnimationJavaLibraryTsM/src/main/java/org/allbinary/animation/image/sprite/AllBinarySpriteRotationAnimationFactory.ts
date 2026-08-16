@@ -38,6 +38,8 @@ import { BaseImageAnimationFactory } from '../../../../../org/allbinary/animatio
       
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
       
+import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
       
 
@@ -159,6 +161,15 @@ public constructor (image: Image, sequenceArray: number[], width: number, height
 
                             //For kotlin this is before the body of the constructor.
                     
+
+                        if(animationBehaviorFactory == AnimationBehaviorFactory.getInstance())
+                        
+                                    {
+                                    ForcedLogUtil.log("Using default AnimationBehaviorFactory with IndexedAnimationFactory", this);
+    
+
+                                    }
+                                
 }
 
 

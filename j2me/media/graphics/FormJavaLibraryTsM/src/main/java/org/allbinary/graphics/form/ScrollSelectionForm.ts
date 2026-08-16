@@ -34,8 +34,6 @@ import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
       
-import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
-      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
@@ -74,22 +72,22 @@ import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableForm } from './PaintableForm.js';
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { FormType } from './FormType.js';
-import { FormTypeFactory } from './FormTypeFactory.js';
 import { ItemIndexPaintable } from './ItemIndexPaintable.js';
 import { ItemIndexDx } from './ItemIndexDx.js';
 import { ItemPaintable } from './ItemPaintable.js';
+import { FormTypeFactory } from './FormTypeFactory.js';
 //import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
 //import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
 //import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
 //import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
 //import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
 //import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
+import { FormType } from './FormType.js';
 
 export class ScrollSelectionForm extends PaintableForm {
         
 
-    static createForm(title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
+    static createForm(title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
 
         try {
             
@@ -100,7 +98,7 @@ export class ScrollSelectionForm extends PaintableForm {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ScrollSelectionForm(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+                        return new ScrollSelectionForm(title, items, formPaintableFactory, border,  -3, backgroundBasicColor, foregroundBasicColor);
     
 
                                     }
@@ -135,7 +133,7 @@ export class ScrollSelectionForm extends PaintableForm {
                         if(ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM == NullUtil.getInstance()!.NULL_OBJECT)
                         
                                     {
-                                    ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM= ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+                                    ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM= ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
     
 
                                     }
@@ -156,7 +154,7 @@ export class ScrollSelectionForm extends PaintableForm {
                         if(ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM == NullUtil.getInstance()!.NULL_OBJECT)
                         
                                     {
-                                    ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM= ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+                                    ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM= ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
     
 
                                     }
@@ -174,7 +172,7 @@ export class ScrollSelectionForm extends PaintableForm {
 
     private static readonly IS_IN_FORM: string = "isInForm";
 
-    private static readonly GET_SELECTED_INDEX: string = "getSelectedIndex";
+    private static readonly GET_SELECTED_INDEX: string = "getSelectedIndexForPoint";
 
 //inner= member=true isStatic=
 ScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintable {
@@ -370,18 +368,22 @@ ScrollSelectionFormTempHorizontalDx = class extends ItemIndexDx {
 
     private buttonBasicColor: BasicColor;
 
-    private formTypeItemIndexPaintable: ItemIndexPaintable = ItemIndexPaintable.getInstance()!;
+    scrollSelectionFormFormTypeItemIndexPaintable: ItemIndexPaintable = ItemIndexPaintable.getInstance()!;
 
     private formTypeItemIndexDx: ItemIndexDx = ItemIndexDx.getInstance()!;
 
     paintable: ItemPaintable = ItemPaintableFactory.getInstance()!;
 
-public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            super(title, items, rectangle, formType, backgroundBasicColor, foregroundBasicColor);
+    private readonly adjustedExtraBorder: number;
+
+public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, border: number, adjustedExtraBorder: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, backgroundBasicColor, foregroundBasicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
+this.adjustedExtraBorder= adjustedExtraBorder;
+    
 this.buttonBasicColor= foregroundBasicColor;
     
 this.border= border;
@@ -405,7 +407,7 @@ super.init(rectangle, formType);
                         if(formType == formTypeFactory!.HORIZONTAL_FORM)
                         
                                     {
-                                    this.formTypeItemIndexPaintable= new this.ScrollSelectionFormHorizontalPaintable(this);
+                                    this.scrollSelectionFormFormTypeItemIndexPaintable= new this.ScrollSelectionFormHorizontalPaintable(this);
     
 this.formTypeItemIndexDx= new this.ScrollSelectionFormHorizontalDx(this);
     
@@ -416,7 +418,7 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormHorizontalDx(this);
                         if(formType == formTypeFactory!.VERTICAL_CENTER_FORM)
                         
                                     {
-                                    this.formTypeItemIndexPaintable= new this.ScrollSelectionFormVerticalPaintable(this);
+                                    this.scrollSelectionFormFormTypeItemIndexPaintable= new this.ScrollSelectionFormVerticalPaintable(this);
     
 this.formTypeItemIndexDx= new this.ScrollSelectionFormVericalDx(this);
     
@@ -427,7 +429,7 @@ this.formTypeItemIndexDx= new this.ScrollSelectionFormVericalDx(this);
                         if(formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
-                                    this.formTypeItemIndexPaintable= new this.ScrollSelectionFormTempHorizontalPaintable(this);
+                                    this.scrollSelectionFormFormTypeItemIndexPaintable= new this.ScrollSelectionFormTempHorizontalPaintable(this);
     
 this.formTypeItemIndexDx= new this.ScrollSelectionFormTempHorizontalDx(this);
     
@@ -933,13 +935,13 @@ graphics.setColor(this.getButtonBasicColor()!.intValue());
 
     var adjustedBorder: number = 3;;
     
-graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjustedBorder, width +this.border -adjustedBorder, height +this.border -adjustedBorder);
+graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjustedBorder, width +this.border +this.adjustedExtraBorder, height +this.border +this.adjustedExtraBorder);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.formTypeItemIndexPaintable!.paint(graphics, index, item, x, y);;
+                        return this.scrollSelectionFormFormTypeItemIndexPaintable!.paint(graphics, index, item, x, y);;
     
 }
 
@@ -955,7 +957,7 @@ item.paintUnselected(graphics, x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.formTypeItemIndexPaintable!.paint(graphics, index, item, x, y);;
+                        return this.scrollSelectionFormFormTypeItemIndexPaintable!.paint(graphics, index, item, x, y);;
     
 }
 

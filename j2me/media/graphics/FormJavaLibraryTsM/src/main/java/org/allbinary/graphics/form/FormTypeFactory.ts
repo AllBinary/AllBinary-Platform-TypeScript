@@ -24,6 +24,8 @@
         
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
       
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      
 
 
 
@@ -63,13 +65,13 @@ export class FormTypeFactory
 
     public readonly UNK: string = "Unknown FormType";
 
-    public readonly NULL_FORM_TYPE: FormType = new FormType();
+    public readonly NULL_FORM_TYPE: FormType = new FormType(StringUtil.getInstance()!.NULL_STRING);
 
-    public readonly TEMP_HORIZONTAL_FORM: FormType = new FormType();
+    public readonly TEMP_HORIZONTAL_FORM: FormType = new FormType("TempHorizontal");
 
-    public readonly HORIZONTAL_FORM: FormType = new FormType();
+    public readonly HORIZONTAL_FORM: FormType = new FormType("Horizontal");
 
-    public readonly VERTICAL_CENTER_FORM: FormType = new FormType();
+    public readonly VERTICAL_CENTER_FORM: FormType = new FormType("Vertical");
 
     public getFormType(): FormType{
 

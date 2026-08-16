@@ -22,13 +22,13 @@
 
 
         
+import { Activity } from '../../../../android/app/Activity.js';
+      
 import { TouchScreenTypeFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenTypeFactory.js';
       
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      
-import { Activity } from '../../../../android/app/Activity.js';
       
 import { ActivityFractureUtilAPI1 } from '../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
       

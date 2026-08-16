@@ -83,6 +83,56 @@ this.layerManagerLogging= layerManagerLogging;
 
                 //@Throws(Exception.constructor)
             
+    public update(layerInterface: AllBinaryLayer){
+
+    var had: boolean = this.list.remove(layerInterface)!;;
+    
+
+                        if(had)
+                        
+                                    {
+                                    
+    var nextLayerInterface: AllBinaryLayer;;
+    
+
+    var size: number = this.list.size()!;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+nextLayerInterface= this.list.get(index) as AllBinaryLayer;
+    
+
+                        if(layerInterface!.getZP() > nextLayerInterface!.getZP())
+                        
+                                    {
+                                    this.list.addAt(index, layerInterface);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ;
+    
+
+                                    }
+                                
+}
+
+this.list.add(layerInterface);
+    
+
+                                    }
+                                
+}
+
+
+                //@Throws(Exception.constructor)
+            
     public insert(layerInterface: AllBinaryLayer){
 
     var nextLayerInterface: AllBinaryLayer;;

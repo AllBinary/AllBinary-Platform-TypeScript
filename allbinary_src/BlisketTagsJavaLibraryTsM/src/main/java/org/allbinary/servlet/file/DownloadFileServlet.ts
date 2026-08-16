@@ -60,6 +60,8 @@ import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js
       
 import { BlisketServletUtil } from '../../../../org/allbinary/servlet/BlisketServletUtil.js';
       
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       
 
@@ -208,7 +210,7 @@ stringBuffer!.append("attachment; filename=\"");
     
 stringBuffer!.append(file.getName());
     
-stringBuffer!.append("\"");
+stringBuffer!.append(CommonSeps.getInstance()!.QUOTE);
     
 response.setHeader("Content-Disposition", stringBuffer!.toString());
     

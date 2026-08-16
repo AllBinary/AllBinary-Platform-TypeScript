@@ -153,7 +153,7 @@ this.types= typeArray;
 
     public hasType(type: number): boolean{
 
-    var size: number = types.length
+    var size: number = this.types.length
                 ;;
     
 

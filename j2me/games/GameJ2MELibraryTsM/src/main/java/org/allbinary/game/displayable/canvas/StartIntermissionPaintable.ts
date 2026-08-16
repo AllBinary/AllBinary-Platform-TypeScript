@@ -103,7 +103,7 @@ export class StartIntermissionPaintable extends InitUpdatePaintable implements U
 
     private anchor: number = Anchor.TOP_LEFT;
 
-    fontHeight: number= 0;
+    fontHeightP: number= 0;
 
 public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], basicColor: BasicColor, font: Font){
 
@@ -129,7 +129,7 @@ this.font= font;
 
     var font: Font = graphics.getFont()!;;
     
-this.fontHeight= font.getHeight();
+this.fontHeightP= font.getHeight();
     
 this.myFontProcessor= MyFontProcessor.getInstance();
     

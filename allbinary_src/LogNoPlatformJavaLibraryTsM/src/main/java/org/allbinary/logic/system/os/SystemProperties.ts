@@ -60,6 +60,8 @@ expect export class SystemProperties
 
     public getVersion(): string
 
+    public getUserHomePath(): string
+
 }
                 
             

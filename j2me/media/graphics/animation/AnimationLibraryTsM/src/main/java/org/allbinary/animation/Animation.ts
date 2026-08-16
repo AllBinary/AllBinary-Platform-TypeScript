@@ -129,6 +129,10 @@ this.colorP= this.basicColor!.intValue();
 }
 
 
+    public setBackgroundBasicColorP(basicColor: BasicColor){
+}
+
+
     public getChangeBasicColor(): BasicColor{
 
 

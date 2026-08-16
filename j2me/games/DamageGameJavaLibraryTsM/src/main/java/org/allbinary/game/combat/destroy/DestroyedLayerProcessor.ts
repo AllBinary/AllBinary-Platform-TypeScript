@@ -36,6 +36,12 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
       
 import { BasicLayerProcessor } from '../../../../../org/allbinary/layer/BasicLayerProcessor.js';
       
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       
 
@@ -134,6 +140,9 @@ destroyedEventHandler!.fireEvent(destroyedEvent);
                                 
                         else {
                             
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+
                         }
                             
 }

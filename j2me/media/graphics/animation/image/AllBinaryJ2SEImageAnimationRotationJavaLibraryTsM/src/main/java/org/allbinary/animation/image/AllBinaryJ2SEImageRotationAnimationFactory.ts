@@ -69,6 +69,29 @@ import { AllBinaryAdjustedJ2SEImageRotationAnimation } from './AllBinaryAdjusted
 export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
+                //@Throws(Exception.constructor)
+            
+    public static createDXY(image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean): AllBinaryJ2SEImageRotationAnimationFactory{
+
+    var imageRotationAnimationFactory: AllBinaryJ2SEImageRotationAnimationFactory = new AllBinaryJ2SEImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);;
+    
+imageRotationAnimationFactory!.animationFactoryInitializationVisitor!.dx= dx;
+    
+imageRotationAnimationFactory!.animationFactoryInitializationVisitor!.dy= dy;
+    
+imageRotationAnimationFactory!.animationFactoryInitializationVisitor!.originalDx= dx;
+    
+imageRotationAnimationFactory!.animationFactoryInitializationVisitor!.originalDy= dy;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return imageRotationAnimationFactory;
+    
+}
+
+
     readonly angleIncrementP: number;
 
     private readonly resizeCanvasForRotation: boolean;

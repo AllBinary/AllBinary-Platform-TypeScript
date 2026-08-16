@@ -36,6 +36,8 @@ import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAn
       
 import { AnimationFactoryImageScaleUtil } from '../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
       
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
@@ -147,35 +149,6 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 }
 
 
-    public toString(): string{
-
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
-    
-
-    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
-    
-
-    var stringBuffer: StringMaker = new StringMaker();;
-    
-stringBuffer!.append(super.toString());
-    
-stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
-    
-stringBuffer!.appendint(this.image.getHeight());
-    
-stringBuffer!.append(commonSeps!.SPACE);
-    
-stringBuffer!.append(this.animationFactoryInitializationVisitor!.toString());
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();;
-    
-}
-
-
     public setInitialScale(scaleProperties: ScaleProperties){
 this.scaleProperties= scaleProperties;
     
@@ -213,6 +186,35 @@ this.scaleProperties!.scaleHeight= Math.round((this.animationFactoryInitializati
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.scaleProperties;
+    
+}
+
+
+    public toString(): string{
+
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
+    
+
+    var commonLabels: CommonLabels = CommonLabels.getInstance()!;;
+    
+
+    var stringBuffer: StringMaker = new StringMaker();;
+    
+stringBuffer!.append(super.toString());
+    
+stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
+    
+stringBuffer!.appendint(this.image.getHeight());
+    
+stringBuffer!.append(commonSeps!.SPACE);
+    
+stringBuffer!.append(this.animationFactoryInitializationVisitor!.toString());
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringBuffer!.toString();;
     
 }
 

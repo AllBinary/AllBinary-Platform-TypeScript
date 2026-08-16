@@ -32,7 +32,7 @@ import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
       
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
-import { FileUtil } from '../../../../org/allbinary/logic/io/file/FileUtil.js';
+import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
       
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       
@@ -73,7 +73,7 @@ public constructor (fileName: string){
             super();
         this.fileName= fileName;
     
-this.string= FileUtil.getInstance()!.readAsString(fileName);
+this.string= AbFileSystem.getInstance()!.readAsString(fileName);
     
 }
 

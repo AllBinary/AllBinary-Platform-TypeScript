@@ -118,6 +118,8 @@ private constructor (){
 
     private readonly NO_COPY: string = "SWT should not copy images after initial loading as the alpha is not honored";
 
+    private readonly UNABLE: string = "Unable to scale image without dimensions";
+
                 //@Throws(Exception.constructor)
             
     public createImageForRotation(originalImage: Image): Image{
@@ -334,10 +336,25 @@ image= new SwtMutableImage(SwtDeviceComponent.createImage(imageData));
     var imageData2: ImageData = originalImmutableImage!.image.getImageData()!;;
     
 
+                        if(width > 0 && height > 0)
+                        
+                                    {
+                                    
     var imageData: ImageData = imageData2!.scaledTo(width, height)!;;
     
 image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.createImage(imageData));
     
+
+                                    }
+                                
+                        else {
+                            this.logUtil!.putF(UNABLE, this, this.commonStrings!.CONSTRUCTOR);
+    
+image= new SwtImmutableImage(originalImmutableImage!.getName(), new PostLoadSwtImmutableImageProcessor(originalImmutableImage));
+    
+
+                        }
+                            
 
                                     }
                                 

@@ -28,7 +28,7 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
       
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
       
-import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       
 
 

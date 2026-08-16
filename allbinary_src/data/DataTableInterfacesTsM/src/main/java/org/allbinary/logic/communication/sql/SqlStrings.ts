@@ -8,6 +8,8 @@
 
 
         
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      
 
 
 
@@ -90,7 +92,7 @@ export class SqlStrings
 
     public readonly EQUAL_QUOTE: string = " = \"";
 
-    public readonly CLOSE_QUOTE: string = "\"";
+    public readonly CLOSE_QUOTE: string = CommonSeps.getInstance()!.QUOTE;
 
     public readonly EQUAL_QUOTE_NO_SPACE: string = "=\"";
 

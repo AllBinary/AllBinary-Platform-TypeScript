@@ -72,12 +72,12 @@ import { Vector } from '../../../java/util/Vector.js';
 
     /*actual*/ public readonly NULL_OBJECT_ARRAY: any[] = [];
 
-    /*actual*/ public readonly NULL_BYTE_ARRAY: number[] = [];
-
     /*actual*/ public readonly NULL_CHAR_ARRAY: string[] = 
                                                         
                                                         new Array(0)
                                                     ;
+
+    /*actual*/ public readonly NULL_BYTE_ARRAY: number[] = [];
 
     /*actual*/ public readonly NULL_SHORT_ARRAY_ARRAY: number[][] = new Array(0).fill(null).map(() => new Array(0).fill(0));
 

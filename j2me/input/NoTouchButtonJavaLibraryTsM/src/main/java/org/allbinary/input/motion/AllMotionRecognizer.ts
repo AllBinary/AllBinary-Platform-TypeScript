@@ -84,6 +84,12 @@ public constructor (){
 }
 
 
+                //@Throws(Exception.constructor)
+            
+    public processScrolledMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
+}
+
+
     public getId(): number{
 
 

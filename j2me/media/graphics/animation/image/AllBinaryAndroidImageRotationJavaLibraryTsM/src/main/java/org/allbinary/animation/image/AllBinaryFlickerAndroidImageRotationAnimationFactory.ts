@@ -34,6 +34,8 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
       
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
       
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      
 import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
       
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';

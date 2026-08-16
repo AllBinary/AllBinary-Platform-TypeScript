@@ -44,11 +44,17 @@ import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/ge
       
 import { MovedMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/MovedMotionGesturesHandler.js';
       
+import { ScrolledMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/ScrolledMotionGesturesHandler.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { J2SEMath } from '../../../../../org/allbinary/logic/math/J2SEMath.js';
       
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
+      
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       
@@ -94,6 +100,8 @@ export class MotionGestureRecognizer
 
     private readonly movedMotionGesturesHandler: BasicEventHandler;
 
+    private readonly scrolledMotionGesturesHandler: BasicEventHandler;
+
     private readonly motionEventCircularPool: MotionEventCircularPool;
 
 public constructor (id: number){
@@ -108,10 +116,15 @@ public constructor (id: number){
     var movedMotionGesturesHandler: BasicEventHandler = motionGesturesHandler;;
     
 
+    var scrolledMotionGesturesHandler: BasicEventHandler = motionGesturesHandler;;
+    
+
         try {
             motionGesturesHandler= BasicMotionGesturesHandler.getInstance();
     
 movedMotionGesturesHandler= MovedMotionGesturesHandler.getInstance();
+    
+scrolledMotionGesturesHandler= ScrolledMotionGesturesHandler.getInstance();
     
 
                 //: 
@@ -127,6 +140,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 this.motionGesturesHandler= motionGesturesHandler as BasicMotionGesturesHandler;
     
 this.movedMotionGesturesHandler= movedMotionGesturesHandler;
+    
+this.scrolledMotionGesturesHandler= scrolledMotionGesturesHandler;
     
 }
 
@@ -377,6 +392,51 @@ event.setPreviousPoint(this.previous);
 event.setCurrentPoint(current);
     
 this.movedMotionGesturesHandler!.fireEvent(event);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return true;
+    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public processScrolledMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
+
+    var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;;
+    
+
+    var newMotionGesture: MotionGestureInput = touchMotionGestureFactory!.NO_MOTION;;
+    
+
+                        if(button > 0)
+                        
+                                    {
+                                    newMotionGesture= touchMotionGestureFactory!.SCROLL_UP;
+    
+
+                                    }
+                                
+                             else 
+                        if(button < 0)
+                        
+                                    {
+                                    newMotionGesture= touchMotionGestureFactory!.SCROLL_DOWN;
+    
+
+                                    }
+                                
+
+    var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(newMotionGesture)!;;
+    
+event.setPreviousPoint(this.previous);
+    
+event.setCurrentPoint(current);
+    
+this.scrolledMotionGesturesHandler!.fireEvent(event);
     
 
 

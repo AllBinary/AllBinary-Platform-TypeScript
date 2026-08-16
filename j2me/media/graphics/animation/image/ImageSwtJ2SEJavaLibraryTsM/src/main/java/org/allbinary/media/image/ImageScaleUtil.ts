@@ -163,7 +163,7 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
     var height: number = originalImage!.getHeight()!;;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round(scaleX), Math.round(scaleY), mutable)!;;
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round((scaleX *width)), Math.round((scaleY *height)), mutable)!;;
     
 originalImageArray[0]= scaledImage;
     

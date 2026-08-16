@@ -30,7 +30,7 @@ import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //Temp should not be in any build
 export class NullDisplayable extends Canvas {
         
 

@@ -134,11 +134,14 @@ public constructor (transformInfoInterface: TransformInfoInterface, cssStyleVali
         this.transformInfoInterface= transformInfoInterface;
     
 
+    var pathData: AbPathData = AbPathData.getInstance()!;;
+    
+
     var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemePath);
     
-this.themeName= pathUtil!.getNameFromPath(categoryThemePath);
+this.themeName= pathData!.getNameFromPath(categoryThemePath);
     
 this.styleValidationInterface= cssStyleValidation;
     
@@ -156,11 +159,14 @@ public constructor (transformInfoInterface: TransformInfoInterface, hashMap: Has
     var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as string, StringUtil.getInstance()!.EMPTY_STRING);;
     
 
+    var pathData: AbPathData = AbPathData.getInstance()!;;
+    
+
     var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemeAbPath!.toString());
     
-this.themeName= pathUtil!.getNameFromPath(categoryThemeAbPath!.toString());
+this.themeName= pathData!.getNameFromPath(categoryThemeAbPath!.toString());
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))

@@ -28,19 +28,23 @@
         
 import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
       
-import { awt } from '../../../../java/awt.js';
-      
 import { URI } from '../../../../java/net/URI.js';
       
 import { URL } from '../../../../java/net/URL.js';
+      
+import { Desktop } from '../../../../java/awt/Desktop.js';
+      
+import { List } from '../../../../java/util/List.js';
+      
+import { ImageIcon } from '../../../../javax/swing/ImageIcon.js';
+      
+import { JDialog } from '../../../../javax/swing/JDialog.js';
       
 import { HelpSet } from '../../../../javax/help/HelpSet.js';
       
 import { HelpSetEvent } from '../../../../javax/help/event/HelpSetEvent.js';
       
 import { HelpSetListener } from '../../../../javax/help/event/HelpSetListener.js';
-      
-import { swing } from '../../../../javax/swing.js';
       
 import { InputAutomationBundleActivatorListenerInterface } from '../../../../bundle/input/automation/InputAutomationBundleActivatorListenerInterface.js';
       
@@ -66,9 +70,9 @@ import { InputAutomationModuleFactoryFactory } from '../../../../org/allbinary/i
       
 import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
       
-import { InputAutomationModuleConfigurations } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
+import { InputAutomationModuleConfiguration } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
       
-import { InputAutomationModuleConfigurationsSingletonFactory } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurationsSingletonFactory.js';
+import { InputAutomationModuleConfigurations } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
       
 import { DesktopBundle } from '../../../../org/allbinary/input/automation/osgi/DesktopBundle.js';
       
@@ -109,8 +113,6 @@ import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-import { ImageIcon } from './ImageIcon.js';
-import { JDialog } from './JDialog.js';
 import { JLabel } from './JLabel.js';
 import { JTabbedPane } from './JTabbedPane.js';
 import { JPanel } from './JPanel.js';
@@ -131,7 +133,6 @@ import { ListSelectionListener } from './ListSelectionListener.js';
 import { ListSelectionEvent } from './ListSelectionEvent.js';
 import { ActionListener } from './ActionListener.js';
 import { ActionEvent } from './ActionEvent.js';
-import { Desktop } from './Desktop.js';
 import { EventQueue } from './EventQueue.js';
 
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
@@ -229,6 +230,8 @@ InputAutomationJFrame.create(
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
+    private inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations();
+
     private inputAutomationModuleFactory: InputAutomationModuleFactoryFactory;
 
     private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface;
@@ -280,9 +283,30 @@ this.helpSet!.remove(helpSetEvent!.getHelpSet());
                 //@Throws(Exception.constructor)
             
     init(){
-InputAutomationConfigurationFactory.init(InputAutomationClientInformationFactory.getInstance());
+
+    var inputAutomationConfigurationFactory: InputAutomationConfigurationFactory = InputAutomationConfigurationFactory.getInstance()!;;
     
-this.inputAutomationModuleFactory= new InputAutomationModuleFactoryFactory(this);
+inputAutomationConfigurationFactory!.init(InputAutomationClientInformationFactory.getInstance());
+    
+
+    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = inputAutomationConfigurationFactory!.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
+    
+
+                        if(inputAutomationModuleConfigurationList == 
+                                    null
+                                )
+                        
+                                    {
+                                    
+                                    }
+                                
+                        else {
+                            this.inputAutomationModuleConfigurations= new InputAutomationModuleConfigurations(inputAutomationModuleConfigurationList);
+    
+
+                        }
+                            
+this.inputAutomationModuleFactory= new InputAutomationModuleFactoryFactory(inputAutomationModuleConfigurations, this);
     
  = 
 .
@@ -891,10 +915,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
     
-
-    var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;;
-    
-inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
+this.inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
     
 this.init();
     
@@ -915,8 +936,33 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
             this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");
     
 
-    var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!;;
+    var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!.inputAutomationConfiguration;;
     
+
+    var inputAutomationModuleConfigurationList: java.util.List<InputAutomationModuleConfiguration> = inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
+    
+
+                        if(inputAutomationModuleConfigurationList == 
+                                    null
+                                )
+                        
+                                    {
+                                    
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+logUtil!.putF("inputAutomationModuleConfigurationList: " +inputAutomationModuleConfigurationList, this, commonStrings!.INIT);
+    
+
+
+
+                            throw new Exception();
+                    
+
+                                    }
+                                
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(inputAutomationConfiguration!.getInputAutomationModuleConfigurationList());;
     

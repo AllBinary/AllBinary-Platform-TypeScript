@@ -41,6 +41,7 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigType } from './LogConfigType.js';
+import { LogConfigTypes } from './LogConfigTypes.js';
 
 export class LogConfigTypeFactory
             extends Object
@@ -61,6 +62,10 @@ export class LogConfigTypeFactory
 
     private readonly NO_DESCRIPTION: string = "No Description";
 
+    public readonly OS: LogConfigType = new LogConfigType("Operating System", this.NO_DESCRIPTION);
+
+    public readonly FACTORYERROR: LogConfigType = new LogConfigType("Factory Error", this.NO_DESCRIPTION);
+
     public readonly FILE: LogConfigType = new LogConfigType("File", this.NO_DESCRIPTION);
 
     public readonly FILEERROR: LogConfigType = new LogConfigType("File Error", this.NO_DESCRIPTION);
@@ -72,6 +77,16 @@ export class LogConfigTypeFactory
     public readonly REPLACE_INFO: LogConfigType = new LogConfigType("Replace Info", this.NO_DESCRIPTION);
 
     public readonly REPLACEERROR: LogConfigType = new LogConfigType("Replace Error", this.NO_DESCRIPTION);
+
+private constructor (){
+
+            super();
+        LogConfigTypes.LOGGING.add(OS);
+    
+LogConfigTypes.LOGGING.add(this.FACTORYERROR);
+    
+}
+
 
 }
                 

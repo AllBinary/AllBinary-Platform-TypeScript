@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { Closeable } from '../../../../../java/io/Closeable.js';
+      
 import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
       
 import { InputStream } from '../../../../../java/io/InputStream.js';
@@ -44,11 +46,13 @@ import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileI
       
 import { AbFileLocalInputStream } from '../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
       
-import { AbFileSystem } from '../../../../../org/allbinary/logic/io/AbFileSystem.js';
+import { AbIOSystem } from '../../../../../org/allbinary/logic/io/AbIOSystem.js';
       
 import { DataOutputStreamFactory } from '../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
       
 import { FileStreamFactory } from '../../../../../org/allbinary/logic/io/FileStreamFactory.js';
+      
+import { NullCloseable } from '../../../../../org/allbinary/logic/io/NullCloseable.js';
       
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
       
@@ -87,6 +91,7 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
+import { FilePathData } from './FilePathData.js';
 import { FileWrapperUtil } from './FileWrapperUtil.js';
 import { FileUtil2 } from './FileUtil2.js';
 //data/init/views/TestStore/template/type/genericTemplateObjectConfig.xml
@@ -112,10 +117,10 @@ export class FileUtil
     var newDirectory: string = fromFile!.getPath()!;;
     
 
-    var separatorChar: string = java.io.File.separator;;
+    var separatorChar: string = FilePathData.getInstance()!.PATH_START;;
     
 
-                        if(AbFileSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
+                        if(AbIOSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
                         
                                     {
                                     separatorChar= AbPathData.getInstance()!.SEPARATOR;
@@ -756,14 +761,16 @@ stringBuffer!.appendint(end);
                                     }
                                 
 
+    var nextFile: AbFile;;
+    
+
 
 
 
                         for (
     var index: number = start;index < end; index++)
         {
-
-    var nextFile: AbFile = fileList!.get(index) as AbFile;;
+nextFile= fileList!.get(index) as AbFile;
     
 
                         if(nextFile!.isDirectory())
@@ -879,14 +886,16 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     }
                                 
 
+    var file: AbFile;;
+    
+
 
 
 
                         for (
     var index: number = 0;index < size; index++)
         {
-
-    var file: AbFile = fileArray[index]!;;
+file= fileArray[index]!;
     
 
                         if(file.isFile())
@@ -1223,75 +1232,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
                     
 }
 
-}
-
-
-    public readAsString(fileName: string): string{
-
-    var bytes: number[] = new Array(1000000);;
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.readAsString(fileName, bytes);;
-    
-}
-
-
-    public readAsString(fileName: string, bytes: number[]): string{
-
-    var idFile: FileInputStream = 
-                null
-            ;;
-    
-
-        try {
-            idFile= new FileInputStream(fileName);
-    
-
-    var size: number = idFile!.read(bytes)!;;
-    
-
-                        if(size > 0)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return String.fromCharCode(...bytes);
-    
-
-                                    }
-                                
-
-                //: 
-} catch(e) 
-            {
-
-                        if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.IDLOGGING))
-                        
-                                    {
-                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "SmallInsert", e);
-    
-
-                                    }
-                                
-}
-
-         finally {
-            this.streamUtil!.close(idFile);
-    
-
-         }
-        
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringUtil.getInstance()!.EMPTY_STRING;
-    
 }
 
 

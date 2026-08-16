@@ -48,7 +48,7 @@ import { Canvas } from '../../../../playn/core/Canvas.js';
       
 import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
       
-import { ResourceCallback } from '../../../../playn/core/ResourceCallback.js';
+import { Callback } from '../../../../playn/core/util/Callback.js';
       
 
 
@@ -223,10 +223,10 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                                 
                         else {
                             
-    var callback: ResourceCallback = new class extends ResourceCallback
+    var callback: Callback = new class extends Callback
                                 {
                                 
-    public done(resource: any = {}){
+    public onSuccess(resource: any = {}){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
@@ -236,7 +236,7 @@ copy(imageArray, index, image, image3);
     
 }
 
-    public error(e: Throwable){
+    public onFailure(e: Throwable){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     

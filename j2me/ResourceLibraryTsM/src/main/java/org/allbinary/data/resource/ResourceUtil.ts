@@ -58,7 +58,7 @@ import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //J2SE - J2ME
 export class ResourceUtil
             extends Object
          {
@@ -84,6 +84,12 @@ private constructor (){
 
             super();
         }
+
+
+    public setLoadingPaths(path: string, ext: string){
+this.logUtil!.putF("Not Implemented", this, "setLoadingPaths");
+    
+}
 
 
     public setClassLoader(classLoader: ClassLoader){

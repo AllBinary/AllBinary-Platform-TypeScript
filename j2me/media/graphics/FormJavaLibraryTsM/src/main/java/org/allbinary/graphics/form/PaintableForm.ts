@@ -60,7 +60,7 @@ export class PaintableForm extends ABCustomForm {
                         if(PaintableForm.NULL_PAINTABLE_FORM == NullUtil.getInstance()!.NULL_OBJECT)
                         
                                     {
-                                    PaintableForm.NULL_PAINTABLE_FORM= new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+                                    PaintableForm.NULL_PAINTABLE_FORM= new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, [], BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
     
 
                                     }
@@ -84,7 +84,7 @@ export class PaintableForm extends ABCustomForm {
 
     formType: FormType = FormTypeFactory.getInstance()!.NULL_FORM_TYPE;
 
-public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, items: ABCustomItem[], backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, backgroundBasicColor, foregroundBasicColor);
                     
 
@@ -92,18 +92,6 @@ public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, 
                     
 this.setSelectedIndex(0);
     
-
-        try {
-            this.init(rectangle, formType);
-    
-
-                //: 
-} catch(e) 
-            {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
-    
-}
-
 }
 
 

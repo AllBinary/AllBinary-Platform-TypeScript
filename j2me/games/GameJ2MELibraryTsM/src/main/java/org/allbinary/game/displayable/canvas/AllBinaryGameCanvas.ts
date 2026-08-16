@@ -489,7 +489,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private progressPaintable: PaintableInterface = ProgressCanvasFactory.getLazyInstance()!;
 
-    fontHeight: number= 0;
+    fontHeightP: number= 0;
 
 public constructor (commandListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
             super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, true);
@@ -541,9 +541,9 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
             
     var font: Font = graphics.getFont()!;;
     
-this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.UPDATE_MEASUREMENT);
     
-this.fontHeight= font.getHeight();
+this.fontHeightP= font.getHeight();
     
 this.myFormUtil!.updateMeasurement(graphics);
     
@@ -618,7 +618,9 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
 
         try {
-            this.myFontProcessor= this.updateMyFontProcessor;
+            this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.toString(), this, this.canvasStrings!.UPDATE_MEASUREMENT);
+    
+this.myFontProcessor= this.updateMyFontProcessor;
     
 this.menuBehavior!.onDisplayChangeEvent(this, displayChangeEvent);
     

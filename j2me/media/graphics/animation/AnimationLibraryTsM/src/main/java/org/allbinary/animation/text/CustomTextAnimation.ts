@@ -53,9 +53,9 @@ import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextAnimation } from './TextAnimation.js';
-import { GetTextInterface } from './GetTextInterface.js';
+import { TextInterface } from './TextInterface.js';
 
-export class CustomTextAnimation extends TextAnimation implements GetTextInterface {
+export class CustomTextAnimation extends TextAnimation implements TextInterface {
         
 
     readonly fontDebugFactory: FontDebugFactory = FontDebugFactory.getInstance()!;
@@ -64,7 +64,7 @@ export class CustomTextAnimation extends TextAnimation implements GetTextInterfa
 
     font: Font;
 
-    private lastText: string = StringUtil.getInstance()!.EMPTY_STRING;
+    private lastText: string = StringUtil.getInstance()!.INIT_STRING;
 
     hasChanged: boolean = true;
 

@@ -58,6 +58,8 @@ import { RequestMapInterface } from '../../../org/allbinary/logic/communication/
       
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       
+import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
+      
 import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
       
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
@@ -167,9 +169,12 @@ this.setRequestHashMap(new MultipartRequestParams(this.request).toHashMap());
                                     this.imageFileName= HttpRequestUtil.getInstance()!.generateFileName(fileItem!.getName());
     
 
+    var pathData: AbPathData = AbPathData.getInstance()!;;
+    
+
     var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
-this.mediaData= MediaData.get(pathUtil!.getExtension(this.imageFileName));
+this.mediaData= MediaData.get(pathData!.getExtension(this.imageFileName));
     
 this.imageFileName= pathUtil!.getWithoutExtension(this.imageFileName);
     

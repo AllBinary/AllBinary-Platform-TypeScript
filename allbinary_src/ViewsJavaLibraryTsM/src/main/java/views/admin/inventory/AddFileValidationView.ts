@@ -52,6 +52,8 @@ import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
       
 import { FileData } from '../../../org/allbinary/logic/io/file/FileData.js';
       
+import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
+      
 import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
       
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
@@ -493,10 +495,10 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                                 
                         else {
                             
-    var pathUtil: PathUtil = PathUtil.getInstance()!;;
+    var pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var extension: string = pathUtil!.getExtension(fileName)!;;
+    var extension: string = pathData!.getExtension(fileName)!;;
     
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;
@@ -629,10 +631,10 @@ stringBuffer!.append("<br/>");
                                 
                         else {
                             
-    var pathUtil: PathUtil = PathUtil.getInstance()!;;
+    var pathData: AbPathData = AbPathData.getInstance()!;;
     
 
-    var extension: string = pathUtil!.getExtension(fileName)!;;
+    var extension: string = pathData!.getExtension(fileName)!;;
     
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;;

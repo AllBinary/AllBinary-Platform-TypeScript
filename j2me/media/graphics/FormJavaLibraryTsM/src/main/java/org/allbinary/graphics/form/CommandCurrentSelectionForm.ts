@@ -38,8 +38,6 @@ import { RectangleAdjustedAnimation } from '../../../../org/allbinary/animation/
       
 import { RectangleFilledAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js';
       
-import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
@@ -70,7 +68,6 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollCurrentSelectionForm } from './ScrollCurrentSelectionForm.js';
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { FormType } from './FormType.js';
 
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm implements UpdateMyFontInterface {
         
@@ -79,8 +76,8 @@ export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm impl
 
     readonly unSelectedAnimationArray: Animation[] = new Array(16);
 
-public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            super(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
+public constructor (title: string, items: ABCustomItem[], border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, ItemPaintableFactory.getInstance(), border,  -3, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
                     
 
                             //For kotlin this is before the body of the constructor.

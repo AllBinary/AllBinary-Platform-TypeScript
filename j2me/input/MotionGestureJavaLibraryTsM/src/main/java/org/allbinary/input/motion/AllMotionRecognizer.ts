@@ -213,6 +213,21 @@ this.motionGestureRecognizer!.processMovedMotionEvent(point, deviceId, modifiers
 }
 
 
+                //@Throws(Exception.constructor)
+            
+    public processScrolledMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
+
+    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;;
+    
+point.setX(x);
+    
+point.setY(y);
+    
+this.motionGestureRecognizer!.processScrolledMotionEvent(point, deviceId, modifiers);
+    
+}
+
+
     public getMotionGestureRecognizer(): MotionGestureRecognizer{
 
 

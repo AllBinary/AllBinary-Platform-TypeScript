@@ -45,6 +45,7 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbPath } from './AbPath.js';
+import { AbPathData } from './AbPathData.js';
 import { PathUtil } from './PathUtil.js';
 
 export class AbFilePath extends AbPath {
@@ -57,11 +58,14 @@ public constructor (aPath: string){
                             //For kotlin this is before the body of the constructor.
                     
 
+    var pathData: AbPathData = AbPathData.getInstance()!;;
+    
+
     var abPathUtil: PathUtil = PathUtil.getInstance()!;;
     
 this.schema= this.getSchema(aPath);
     
-this.setName(abPathUtil!.getNameFromPath(aPath));
+this.setName(pathData!.getNameFromPath(aPath));
     
 this.setPath(abPathUtil!.adjust(this.getPathFromPath(abPathUtil!.removeNameFromPath(aPath)!.toString())));
     

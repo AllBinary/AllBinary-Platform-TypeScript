@@ -32,8 +32,6 @@ import { ByteOrder } from '../../../java/nio/ByteOrder.js';
       
 import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
       
-import { OpenGLCapabilities } from '../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
-      
 
 
 

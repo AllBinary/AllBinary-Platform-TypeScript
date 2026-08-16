@@ -36,13 +36,11 @@ import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
       
 import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
       
-import { swing } from '../../../../../javax/swing.js';
+import { ListModel } from '../../../../../javax/swing/ListModel.js';
       
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
       
 import { InputAutomationModuleConfigurations } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
-      
-import { InputAutomationModuleConfigurationsSingletonFactory } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurationsSingletonFactory.js';
       
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
@@ -70,7 +68,6 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultListModelHelper } from './DefaultListModelHelper.js';
 import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
-import { ListModel } from './ListModel.js';
 
 export class InputAutomationModuleFactoryFactory
             extends Object
@@ -85,7 +82,7 @@ export class InputAutomationModuleFactoryFactory
 
     private helpSetListenerInterface: HelpSetListener;
 
-public constructor (helpSetListenerInterface: HelpSetListener){
+public constructor (inputAutomationModuleConfigurations: InputAutomationModuleConfigurations, helpSetListenerInterface: HelpSetListener){
 
             super();
         this.helpSetListenerInterface= helpSetListenerInterface;
@@ -93,9 +90,6 @@ public constructor (helpSetListenerInterface: HelpSetListener){
 this.defaultListModelHelper= new DefaultListModelHelper();
     
 this.hashMap= new HashMap<any, any>();
-    
-
-    var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;;
     
 
     var collection: Collection = inputAutomationModuleConfigurations!.getHashMap()!.values()!;;

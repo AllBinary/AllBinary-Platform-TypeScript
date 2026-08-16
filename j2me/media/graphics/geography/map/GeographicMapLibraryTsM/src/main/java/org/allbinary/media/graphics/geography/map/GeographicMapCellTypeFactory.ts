@@ -72,7 +72,7 @@ export class GeographicMapCellTypeFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellTypeArray[type]!;
+                        return this.geographicMapCellTypeArray[type]!;
     
 }
 

@@ -1,0 +1,325 @@
+
+        /*
+                *  
+                *  AllBinary Open License Version 1 
+                *  Copyright (c) 2022 AllBinary 
+                *   
+                *  By agreeing to this license you and any business entity you represent are 
+                *  legally bound to the AllBinary Open License Version 1 legal agreement. 
+                *   
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from 
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+                *   
+                *  Created By: Travis Berthelot    
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+            import { Object } from '../../../../java/lang/Object.js';
+
+
+        
+            import { Throwable } from '../../../../java/lang/Throwable.js';
+        
+            import { Exception } from '../../../../java/lang/Exception.js';
+        
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      
+import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
+      
+import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
+      
+import { Callback } from '../../../../playn/core/Callback.js';
+      
+import { Canvas } from '../../../../playn/core/Canvas.js';
+      
+import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+      
+import { PlayN } from '../../../../playn/core/PlayN.js';
+      
+import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+      
+import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ImageModifierUtil
+            extends Object
+         {
+        
+
+    public static getInstanceOrCreate(): ImageModifierUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new ImageModifierUtil();
+    
+}
+
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private readonly resourceCallbackStrings: ResourceCallbackStrings = ResourceCallbackStrings.getInstance()!;
+
+    private alphaArray: boolean[];
+
+    public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
+}
+
+
+    public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
+}
+
+
+    public setAlpha(originalImage: Image, image: Image, imageIndex: number, alpha: number){
+
+    var alphaF: number = alpha;;
+    
+
+    var alphaFloat: number = alphaF /255;;
+    
+this.setAlphaF(originalImage, image, imageIndex, alphaFloat);
+    
+}
+
+
+    public setAlphaF(originalImage: Image, image: Image, imageIndex: number, alpha: number){
+
+                        if(this.alphaArray[imageIndex])
+                        
+                                    {
+                                    this.alphaArray[imageIndex]= false;
+    
+this.setAlpha2(originalImage, image, imageIndex, alpha);
+    
+
+                                    }
+                                
+}
+
+
+    public setAlpha2(originalImage: Image, image: Image, imageIndex: number, alpha: number){
+
+    var htmlImage: PlaynImage = image as PlaynImage;;
+    
+
+    var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
+    
+
+    var originalPlaynImage: playn.core.Image = (originalImage as PlaynImage).getImage() as playn.core.Image;;
+    
+
+    var playN: PlayN = PlayN.getInstance()!;;
+    
+
+    var canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    
+canvas.clear();
+    
+canvas.setAlpha(alpha);
+    
+canvas.draw(originalPlaynImage, 0, 0);
+    
+}
+
+
+    public setAlpha3(image: Image, alpha: number){
+
+    var alphaF: number = alpha;;
+    
+
+    var alphaFloat: number = alphaF /255;;
+    
+
+    var htmlImage: PlaynImage = image as PlaynImage;;
+    
+
+    var canvasImage: ImageImpl = htmlImage!.getImage() as ImageImpl;;
+    
+
+    var playN: PlayN = PlayN.getInstance()!;;
+    
+
+    var canvas: Canvas = (graphics as HtmlGraphics).get(canvasImage as HtmlImage)!;;
+    
+canvas.setAlpha(alphaFloat);
+    
+}
+
+
+    public getImageArray(originalImageArray: Image[]): Image[]{
+
+    var size: number = originalImageArray!.length
+                ;;
+    
+this.alphaArray= new Array(size);
+    
+
+    var imageArray: Image[] = new Array(size);;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+imageArray[index]= originalImageArray[index]!;
+    
+this.handleImage(imageArray, index, originalImageArray[index]!);
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return imageArray;
+    
+}
+
+
+    public handleImage(imageArray: Image[], index: number, image: Image){
+
+    var image3: playn.core.Image = (image as PlaynImage).getImage() as playn.core.Image;;
+    
+
+                        if(image3 != 
+                                    null
+                                )
+                        
+                                    {
+                                    
+                        if(image3.isReady() || image3.width() +image3.height() <= 0 || image.getName() == this.resourceCallbackStrings!.FROM_DATA)
+                        
+                                    {
+                                    this.copy(imageArray, index, image, image3);
+    
+
+                                    }
+                                
+                        else {
+                            
+    var callback: Callback = new class extends Callback
+                                {
+                                
+    public onSuccess(resource: any = {}){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+logUtil!.putF(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+    
+copy(imageArray, index, image, image3);
+    
+}
+
+    public onFailure(e: Throwable){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+logUtil!.put(new StringMaker().append(commonStrings!.EXCEPTION_LABEL)!.append(resourceCallbackStrings!.ERROR)!.append(image.getName())!.toString(), this, resourceCallbackStrings!.HANDLE_IMAGE, e);
+    
+}
+
+                                }
+                            ;;
+    
+image3.addCallback(callback);
+    
+
+                        }
+                            
+
+                                    }
+                                
+                        else {
+                            this.logUtil!.putF(this.resourceCallbackStrings!.NULL +image.isMutable(), this, this.resourceCallbackStrings!.HANDLE_IMAGE);
+    
+
+                        }
+                            
+}
+
+
+    public copy(imageArray: Image[], index: number, image: Image, image3: playn.core.Image){
+
+        try {
+            
+    var image2: Image = Image.createImage(Math.round(image3.width()), Math.round(image3.height()))!;;
+    
+
+    var graphics: Graphics = image2.getGraphics()!;;
+    
+graphics.drawImage(image, 0, 0, Anchor.TOP_LEFT);
+    
+imageArray[index]= image2;
+    
+
+                //: 
+} catch(e) 
+            {
+this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE);
+    
+}
+
+}
+
+
+    public reset(){
+
+    var size: number = this.alphaArray!.length
+                ;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+this.alphaArray[index]= true;
+    
+}
+
+}
+
+
+}
+                
+            
+

@@ -30,7 +30,7 @@ import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
       
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
-import { AbFileSystem } from '../../../../org/allbinary/logic/io/AbFileSystem.js';
+import { AbIOSystem } from '../../../../org/allbinary/logic/io/AbIOSystem.js';
       
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
       
@@ -86,7 +86,7 @@ public constructor (){
 
         try {
             
-                        if(AbFileSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
+                        if(AbIOSystem.getInstance()!.isType("com.vobject.appengine.java.io"))
                         
                                     {
                                     
@@ -156,14 +156,16 @@ stringBuffer!.appendint(end);
 this.logUtil!.putF(stringBuffer!.toString(), this, "initialize()");
     
 
+    var nextFile: AbFile;;
+    
+
 
 
 
                         for (
     var index: number = start;index < end; index++)
         {
-
-    var nextFile: AbFile = fileBasicArrayList!.get(index) as AbFile;;
+nextFile= fileBasicArrayList!.get(index) as AbFile;
     
 
                         if(nextFile!.isDirectory())

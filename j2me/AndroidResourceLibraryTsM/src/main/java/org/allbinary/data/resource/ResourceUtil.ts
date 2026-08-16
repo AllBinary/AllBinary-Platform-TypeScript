@@ -72,7 +72,7 @@ import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //Android
 export class ResourceUtil
             extends Object
          {

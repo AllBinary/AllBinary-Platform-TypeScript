@@ -48,6 +48,8 @@ import { AnimationFactoryImageScaleUtil } from '../../../../../org/allbinary/ima
       
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
       
+import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      
 import { ScaleProperties } from '../../../../../org/allbinary/media/ScaleProperties.js';
       
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
@@ -108,7 +110,16 @@ export class ImageCaptionIndexedAnimationFactory
 public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-        this.captionImage= captionImage;
+        
+                        if(animationBehaviorFactory == AnimationBehaviorFactory.getInstance())
+                        
+                                    {
+                                    ForcedLogUtil.log("Using default AnimationBehaviorFactory with IndexedAnimationFactory", this);
+    
+
+                                    }
+                                
+this.captionImage= captionImage;
     
 this.spriteMovieImage= spriteMovieImage;
     

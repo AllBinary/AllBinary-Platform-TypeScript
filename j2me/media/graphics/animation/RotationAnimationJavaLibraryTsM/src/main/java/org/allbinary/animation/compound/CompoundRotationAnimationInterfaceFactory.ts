@@ -30,6 +30,8 @@ import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/an
       
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
       
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      
 
 
 
@@ -60,6 +62,15 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
                             //For kotlin this is before the body of the constructor.
                     
+
+                        if(animationBehaviorFactory == AnimationBehaviorFactory.getInstance())
+                        
+                                    {
+                                    ForcedLogUtil.log("Using default AnimationBehaviorFactory with IndexedAnimationFactory", this);
+    
+
+                                    }
+                                
 }
 
 

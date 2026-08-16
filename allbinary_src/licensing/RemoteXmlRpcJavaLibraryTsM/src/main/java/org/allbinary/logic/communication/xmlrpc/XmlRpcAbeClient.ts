@@ -38,6 +38,8 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
       
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
       
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       
 import { NullXmlRpcHandler } from '../../../../../org/apache/xmlrpc/NullXmlRpcHandler.js';
@@ -98,7 +100,7 @@ export class XmlRpcAbeClient
 
     readonly CLIENT_INFO: string = "Client Info: \n";
 
-    readonly RESULT: string = "Result: \n";
+    readonly RESULT: string = CommonLabels.getInstance()!.RESULT_ +CommonSeps.getInstance()!.NEW_LINE;
 
     readonly INVALID: string = "License data is Invalid Trying Other Servers";
 

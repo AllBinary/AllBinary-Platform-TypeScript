@@ -144,6 +144,8 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
 
     public isDragged: boolean = false;
 
+    public isDropped: boolean = false;
+
 public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPositionBase){
             super(name, layerInfo, viewPosition, CollidableNeverCollideBehaviorFactory.getInstance());
                     

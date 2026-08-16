@@ -24,7 +24,9 @@
         
             import { System } from '../../../../java/lang/System.js';
         
-import { File } from '../../../../java/io/File.js';
+import { FilePathData } from '../../../../org/allbinary/logic/io/file/FilePathData.js';
+      
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
 
 
@@ -50,7 +52,7 @@ export class ImageOutputData
          {
         
 
-    public static readonly SAVE_PATH: string = System.getProperty("user.dir") +File.separator +"saves" +File.separator;
+    public static readonly SAVE_PATH: string = new StringMaker().append(System.getProperty("user.dir"))!.appendchar(FilePathData.getInstance()!.SEPARATORCHAR)!.append("saves")!.appendchar(FilePathData.getInstance()!.SEPARATORCHAR)!.toString()!;
 
 private constructor (){
 

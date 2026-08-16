@@ -83,6 +83,10 @@ this.motionGestureEventList!.add(motionGestureEvent);
 }
 
 
+    public onScrolledMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
+}
+
+
     setCanvas(canvas: MyCanvas){
 this.canvas= canvas;
     

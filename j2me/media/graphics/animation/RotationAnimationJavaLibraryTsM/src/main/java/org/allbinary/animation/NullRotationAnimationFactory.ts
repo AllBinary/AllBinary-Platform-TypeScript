@@ -56,7 +56,7 @@ import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil
 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
 import { RotationAnimation } from './RotationAnimation.js';
 import { NullRotationAnimation } from './NullRotationAnimation.js';
-import { AnimationBehavior } from './AnimationBehavior.js';
+import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
 //import { NullRotationAnimation2 } from './NullRotationAnimation2.js';
 import { Animation } from './Animation.js';
 
@@ -86,7 +86,7 @@ NullRotationAnimation2 = class extends NullRotationAnimation {
 
 
  constructor (){
-            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), AnimationBehavior.getInstance());
+            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), new IndexedAnimationBehavior(1, 250));
                     
 
                             //For kotlin this is before the body of the constructor.

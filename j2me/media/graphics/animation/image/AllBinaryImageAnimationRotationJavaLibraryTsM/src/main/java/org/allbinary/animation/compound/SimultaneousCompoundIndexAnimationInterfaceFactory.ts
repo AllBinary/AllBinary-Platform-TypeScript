@@ -32,6 +32,8 @@ import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/an
       
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
       
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
       
 

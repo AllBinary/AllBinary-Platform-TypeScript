@@ -24,8 +24,6 @@
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
@@ -48,25 +46,21 @@ import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/colo
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-export class RectangleFilledAdjustedAnimation extends Animation implements ColorCompositeInterface {
-        
+        import { RectangleFilledAnimation } from './RectangleFilledAnimation.js';
 
-    private width: number;
-
-    private height: number;
+export class RectangleFilledAdjustedAnimation extends RectangleFilledAnimation implements ColorCompositeInterface {
+        
 
     private offsetX: number;
 
     private offsetY: number;
 
 public constructor (width: number, height: number, offsetX: number, offsetY: number, basicColor: BasicColor){
+            super(width, height, basicColor);
+                    
 
-            super();
-        this.width= width;
-    
-this.height= height;
-    
+                            //For kotlin this is before the body of the constructor.
+                    
 this.offsetX= offsetX;
     
 this.offsetY= offsetY;
@@ -83,19 +77,7 @@ this.setBasicColorP(basicColor);
     public paintXY(graphics: Graphics, x: number, y: number){
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
-graphics.fillRect(x +this.offsetX, y +this.offsetY, this.width, this.height);
-    
-}
-
-
-    public setWidth(width: number){
-this.width= width;
-    
-}
-
-
-    public setHeight(height: number){
-this.height= height;
+super.paintXY(graphics, x +this.offsetX, y +this.offsetY);
     
 }
 

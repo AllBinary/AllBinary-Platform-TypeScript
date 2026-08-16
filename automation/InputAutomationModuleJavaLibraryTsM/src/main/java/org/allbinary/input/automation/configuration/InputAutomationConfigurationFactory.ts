@@ -71,13 +71,33 @@ export class InputAutomationConfigurationFactory
          {
         
 
-    private static inputAutomationConfiguration: InputAutomationConfiguration = 
+    private static readonly instance: InputAutomationConfigurationFactory = new InputAutomationConfigurationFactory();
+
+    public static getInstance(): InputAutomationConfigurationFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return InputAutomationConfigurationFactory.instance;
+    
+}
+
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    public inputAutomationConfiguration: InputAutomationConfiguration = 
                 null
             ;
 
+private constructor (){
+
+            super();
+        }
+
+
                 //@Throws(Exception.constructor)
             
-    public static init(abeClientInformation: AbeClientInformationInterface){
+    public init(abeClientInformation: AbeClientInformationInterface){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;;
     
@@ -105,14 +125,20 @@ export class InputAutomationConfigurationFactory
 
     var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration.constructor)!;;
     
-InputAutomationConfigurationFactory.inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration;
+this.inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration;
     
 
-    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = InputAutomationConfigurationFactory.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
+    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = this.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;;
     
-logUtil!.putF("isInstalled: " +InputAutomationConfigurationFactory.inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
+logUtil!.putF("isInstalled: " +this.inputAutomationConfiguration!.isInstalled() +" inputAutomationModuleConfigurationList: " +inputAutomationModuleConfigurationList, INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
+                        if(inputAutomationModuleConfigurationList != 
+                                    null
+                                )
+                        
+                                    {
+                                    
     var size: number = inputAutomationModuleConfigurationList!.length!;;
     
 
@@ -131,6 +157,9 @@ inputAutomationModuleConfiguration!.init(abeClientInformation);
     
 }
 
+
+                                    }
+                                
 logUtil!.putF("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
@@ -139,30 +168,12 @@ logUtil!.putF("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrin
                         else {
                             logUtil!.putF("New Configuration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
-InputAutomationConfigurationFactory.inputAutomationConfiguration= new InputAutomationConfiguration();
+this.inputAutomationConfiguration= new InputAutomationConfiguration();
     
 
                         }
                             
 }
-
-
-    public static getInstance(): InputAutomationConfiguration{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return InputAutomationConfigurationFactory.inputAutomationConfiguration;
-    
-}
-
-
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
-
-private constructor (){
-
-            super();
-        }
 
 
 }

@@ -28,9 +28,19 @@ import { BufferedWriter } from '../../../../java/io/BufferedWriter.js';
       
 import { FileWriter } from '../../../../java/io/FileWriter.js';
       
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
       
 import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+      
+import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+      
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+      
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       
 
 
@@ -68,6 +78,14 @@ export class BufferedWriterUtil
 }
 
 
+    private readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private readonly commonLabels: CommonLabels = CommonLabels.getInstance()!;
+
+    private readonly REMOVING_OLD: string = "Remove old for overwritting: ";
+
                 //@Throws(Exception.constructor)
             
     public overwrite(path: string, data: string){
@@ -78,11 +96,46 @@ export class BufferedWriterUtil
                         if(abFile!.exists())
                         
                                     {
-                                    abFile!.delete();
+                                    this.logUtil!.putF(this.REMOVING_OLD +path, this, this.commonStrings!.CREATE);
+    
+abFile!.delete();
     
 
                                     }
                                 
+                        else {
+                            
+    var name: string = AbPathData.getInstance()!.removeNameFromPath(path)!;;
+    
+
+    var abFileDirectory: AbFile = AbFile.createAbFile(name)!;;
+    
+
+                        if(abFileDirectory!.exists())
+                        
+                                    {
+                                    
+                                    }
+                                
+                        else {
+                            
+    var stringBuilder: StringMaker = new StringMaker();;
+    
+this.logUtil!.putF(stringBuilder!.append(this.commonStrings!.CREATE)!.append(this.commonLabels!.COLON_SEP)!.append(name)!.toString(), this, this.commonStrings!.CREATE);
+    
+
+    var result: boolean = abFileDirectory!.mkdirs()!;;
+    
+stringBuilder!.delete(0, stringBuilder!.length());
+    
+this.logUtil!.putF(stringBuilder!.append(this.commonLabels!.RESULT_)!.appendboolean(result)!.toString(), this, this.commonStrings!.CREATE);
+    
+
+                        }
+                            
+
+                        }
+                            
 this.write(abFile, data);
     
 }
@@ -95,11 +148,46 @@ this.write(abFile, data);
                         if(abFile!.exists())
                         
                                     {
-                                    abFile!.delete();
+                                    this.logUtil!.putF(this.REMOVING_OLD +abFile!.getPath(), this, this.commonStrings!.CREATE);
+    
+abFile!.delete();
     
 
                                     }
                                 
+                        else {
+                            
+    var name: string = AbPathData.getInstance()!.removeNameFromPath(abFile!.getAbsolutePath())!;;
+    
+
+    var abFileDirectory: AbFile = AbFile.createAbFile(name)!;;
+    
+
+                        if(abFileDirectory!.exists())
+                        
+                                    {
+                                    
+                                    }
+                                
+                        else {
+                            
+    var stringBuilder: StringMaker = new StringMaker();;
+    
+this.logUtil!.putF(stringBuilder!.append(this.commonStrings!.CREATE)!.append(this.commonLabels!.COLON_SEP)!.append(name)!.toString(), this, this.commonStrings!.CREATE);
+    
+
+    var result: boolean = abFileDirectory!.mkdirs()!;;
+    
+stringBuilder!.delete(0, stringBuilder!.length());
+    
+this.logUtil!.putF(stringBuilder!.append(this.commonLabels!.RESULT_)!.appendboolean(result)!.toString(), this, this.commonStrings!.CREATE);
+    
+
+                        }
+                            
+
+                        }
+                            
 this.write(abFile, data);
     
 }

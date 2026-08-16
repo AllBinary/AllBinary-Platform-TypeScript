@@ -52,16 +52,16 @@ import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/colo
 export class RectangleFilledAnimation extends Animation implements ColorCompositeInterface {
         
 
-    private width: number;
+    widthP: number;
 
-    private height: number;
+    heightP: number;
 
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();
-        this.width= width;
+        this.widthP= width;
     
-this.height= height;
+this.heightP= height;
     
 this.setBasicColorP(basicColor);
     
@@ -75,19 +75,19 @@ this.setBasicColorP(basicColor);
     public paintXY(graphics: Graphics, x: number, y: number){
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
-graphics.fillRect(x, y, this.width, this.height);
+graphics.fillRect(x, y, this.widthP, this.heightP);
     
 }
 
 
     public setWidth(width: number){
-this.width= width;
+this.widthP= width;
     
 }
 
 
     public setHeight(height: number){
-this.height= height;
+this.heightP= height;
     
 }
 

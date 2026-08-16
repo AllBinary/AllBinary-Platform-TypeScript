@@ -41,10 +41,14 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export interface GetTextInterface {
+export class RatioProcessor
+            extends Object
+         {
         
 
-    getText(): string
+    public setCustom(width: number, height: number, ratio: number){
+}
+
 
 }
                 

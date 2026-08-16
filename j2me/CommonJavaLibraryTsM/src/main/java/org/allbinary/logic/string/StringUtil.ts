@@ -58,6 +58,8 @@ export class StringUtil
 }
 
 
+    public readonly INIT_STRING: string = .toCharArray();
+
     public readonly NULL_STRING: string = "null";
 
     public readonly EMPTY_STRING: string = "";

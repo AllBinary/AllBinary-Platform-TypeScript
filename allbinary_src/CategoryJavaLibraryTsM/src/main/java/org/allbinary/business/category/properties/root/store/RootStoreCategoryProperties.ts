@@ -94,6 +94,8 @@ export class RootStoreCategoryProperties
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    private readonly pathData: AbPathData = AbPathData.getInstance()!;
+
     private fileAbPath: AbPath;
 
     private abPath: AbPath;
@@ -131,7 +133,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPa
     
 this.abPath= categoryAbPath;
     
-this.category= PathUtil.getInstance()!.getNameFromPath(categoryAbPath!.toString());
+this.category= this.pathData!.getNameFromPath(categoryAbPath!.toString());
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
@@ -161,7 +163,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
     
 this.abPath= new AbPath(categoryPath, StringUtil.getInstance()!.EMPTY_STRING);
     
-this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
+this.category= this.pathData!.getNameFromPath(categoryPath);
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))
@@ -191,7 +193,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
     
 this.abPath= new AbPath(categoryPath, StringUtil.getInstance()!.EMPTY_STRING);
     
-this.category= PathUtil.getInstance()!.getNameFromPath(categoryPath);
+this.category= this.pathData!.getNameFromPath(categoryPath);
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.category))

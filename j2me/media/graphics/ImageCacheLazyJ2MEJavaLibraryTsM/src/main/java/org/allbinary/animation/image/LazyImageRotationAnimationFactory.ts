@@ -26,9 +26,13 @@
         
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
       
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+      
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
       
 import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+      
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
       
@@ -73,6 +77,15 @@ this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface;
     
 ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true;
     
+
+                        if(this.animationInterfaceFactoryInterface!.animationBehaviorFactory == AnimationBehaviorFactory.getInstance())
+                        
+                                    {
+                                    ForcedLogUtil.log("Using default AnimationBehaviorFactory with IndexedAnimationFactory", this);
+    
+
+                                    }
+                                
 }
 
 

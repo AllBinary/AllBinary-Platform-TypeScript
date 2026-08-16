@@ -40,7 +40,11 @@ import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/U
       
 import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
       
+import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       
@@ -83,6 +87,8 @@ export class TextAnimation extends IndexedAnimation implements UpdateMyFontInter
 
     private fontHeight: number = 0;
 
+    private offsetY: number = 0;
+
     private textChangeListener: TextChangeListener = TextChangeListener.getInstance()!;
 
 public constructor (text: string, animationBehavior: AnimationBehavior){
@@ -101,6 +107,18 @@ this.setText(text);
     var font: Font = graphics.getFont()!;;
     
 this.fontHeight= font.getHeight();
+    
+
+    var adjustedFontHeight: number = Math.round( -(this.fontHeight *2.00));;
+    
+this.offsetY= SWTJOGLProcessor.getInstance()!.isJOGL()
+                        ?       
+                                adjustedFontHeight
+                                :
+
+                            0;
+
+    ;
     
 this.textChangeListener!.onMeasure();
     
@@ -139,7 +157,7 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
                         for (
     var index: number = 0;index < size; index++)
         {
-graphics.drawString(this.textArrayP[index]!, x, y +(index *this.fontHeight), this.anchor);
+graphics.drawString(this.textArrayP[index]!, x, y +this.offsetY +(index *this.fontHeight), this.anchor);
     
 }
 

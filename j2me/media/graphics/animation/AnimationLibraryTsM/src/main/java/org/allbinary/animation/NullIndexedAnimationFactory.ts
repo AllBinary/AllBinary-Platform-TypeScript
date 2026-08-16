@@ -50,7 +50,7 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
 import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
 import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
 import { NullIndexedAnimation } from './NullIndexedAnimation.js';
-import { AnimationBehavior } from './AnimationBehavior.js';
+import { IndexedAnimationBehavior } from './IndexedAnimationBehavior.js';
 //import { NullIndexedAnimationInner } from './NullIndexedAnimationInner.js';
 import { Animation } from './Animation.js';
 
@@ -80,7 +80,7 @@ NullIndexedAnimationInner = class extends NullIndexedAnimation {
 
 
  constructor (){
-            super(AnimationBehavior.getInstance());
+            super(new IndexedAnimationBehavior(1, 250));
                     
 
                             //For kotlin this is before the body of the constructor.

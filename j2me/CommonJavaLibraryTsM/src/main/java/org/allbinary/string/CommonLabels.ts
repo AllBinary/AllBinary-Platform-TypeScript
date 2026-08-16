@@ -82,6 +82,8 @@ export class CommonLabels
 
     public readonly ITEM_LABEL: string = "Item: ";
 
+    public readonly RESULT_: string = "Result: ";
+
     public readonly COLON_SEP: string = ": ";
 
 }

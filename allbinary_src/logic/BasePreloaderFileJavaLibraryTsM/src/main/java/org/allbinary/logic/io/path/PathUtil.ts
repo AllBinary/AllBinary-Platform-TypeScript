@@ -79,54 +79,12 @@ private constructor (){
         }
 
 
-    getExtensionIndex(filePath: string): number{
-
-    var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.abPathData!.EXTENSION_SEP)!;;
-    
-
-    var indexOfLatDelimiter: number = filePath!.lastIndexOf(this.abPathData!.SEPARATORCHAR)!;;
-    
-
-                        if(indexOfFileExtensionDelmiter < 0)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return  -1;
-    
-
-                                    }
-                                
-
-                        if(indexOfFileExtensionDelmiter < indexOfLatDelimiter)
-                        
-                                    {
-                                    
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return  -1;
-    
-
-                                    }
-                                
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return indexOfFileExtensionDelmiter;
-    
-}
-
-
     public getExtensionWithAbFilePath(abFilePath: AbFilePath): string{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getExtension(abFilePath!.toString());;
+                        return this.abPathData!.getExtension(abFilePath!.toString());;
     
 }
 
@@ -136,32 +94,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getExtension(abPath!.toString());;
-    
-}
-
-
-    public getExtension(filePath: string): string{
-
-    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
-    
-
-    var extension: string = StringUtil.getInstance()!.EMPTY_STRING;;
-    
-
-                        if(indexOfFileExtensionDelmiter >= 0)
-                        
-                                    {
-                                    extension= filePath!.substring(indexOfFileExtensionDelmiter +1);
-    
-
-                                    }
-                                
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return extension;
+                        return this.abPathData!.getExtension(abPath!.toString());;
     
 }
 
@@ -194,7 +127,7 @@ private constructor (){
             
     public getWithoutExtension(filePath: string): string{
 
-    var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;;
+    var indexOfFileExtensionDelmiter: number = this.abPathData!.getExtensionIndex(filePath)!;;
     
 
     var pathWithoutExtension: string = filePath;;
@@ -389,64 +322,9 @@ private constructor (){
     
 }
 
-//@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
-
-    public getNameFromPath(categoryPath: string): string{
-
-    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;;
-    
-
-                        if(endIndex < 0)
-                        
-                                    {
-                                    endIndex= categoryPath!.lastIndexOf(this.filePathData!.SEPARATORCHAR);
-    
-
-                                    }
-                                
-
-                        if(endIndex < 0)
-                        
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return categoryPath;
-    
-
-                        if(categoryPath!.length == endIndex +1)
-                        
-                                    {
-                                    
-    var categoryName: string = categoryPath!.substring(0, endIndex)!;;
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getNameFromPath(categoryName);;
-    
-
-                                    }
-                                
-                        else {
-                            
-    var categoryName: string = categoryPath!.substring(endIndex +1)!;;
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return categoryName;
-    
-
-                        }
-                            
-}
-
 
                 //@Throws(Exception.constructor)
-            //@Synchronized //TWB - This is not allowed for TypeScript native. Instead use Coroutine logic instead.
-
+            
     public removeNameFromPath(path: string): AbPath{
 
     var endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;;
@@ -488,13 +366,13 @@ private constructor (){
                                 
                         else {
                             
-    var categoryName: string = path.substring(0, endIndex)!;;
+    var pathWithoutName: string = path.substring(0, endIndex)!;;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AbPath(categoryName, StringUtil.getInstance()!.EMPTY_STRING);
+                        return new AbPath(pathWithoutName, StringUtil.getInstance()!.EMPTY_STRING);
     
 
                         }

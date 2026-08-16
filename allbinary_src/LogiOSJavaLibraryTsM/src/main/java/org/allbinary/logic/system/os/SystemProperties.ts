@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -21,6 +21,8 @@
             import { Object } from '../../../../../java/lang/Object.js';
 
 
+        
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
             import { System } from '../../../../../java/lang/System.js';
         
@@ -99,6 +101,15 @@ private constructor (){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return System.getProperty(this.OS_VERSION);;
     
+}
+
+
+    public getUserHomePath(): string{
+
+
+
+                            throw new RuntimeException();
+                    
 }
 
 

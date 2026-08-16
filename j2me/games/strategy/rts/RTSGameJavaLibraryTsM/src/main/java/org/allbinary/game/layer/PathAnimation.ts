@@ -34,6 +34,8 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
       
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
@@ -218,7 +220,7 @@ this.linePathAnimation!.paint(graphics, point, nextPoint, tiledLayer);
                 //: 
 } catch(e) 
             {
-this.logUtil!.putF("Cleared Target", this, "paint");
+this.logUtil!.putF("Cleared Target", this, CanvasStrings.getInstance()!.PAINT);
     
 }
 

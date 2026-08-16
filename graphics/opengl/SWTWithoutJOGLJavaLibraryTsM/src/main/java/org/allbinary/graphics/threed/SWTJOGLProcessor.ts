@@ -49,6 +49,7 @@ import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GLHolder } from './GLHolder.js';
+import { RatioProcessor } from './RatioProcessor.js';
 //SWTWithoutJOGL
 export class SWTJOGLProcessor
             extends Object
@@ -144,7 +145,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public setRatioProcessor(){
+    public setRatioProcessor(ratioProcessor: RatioProcessor){
 }
 
 

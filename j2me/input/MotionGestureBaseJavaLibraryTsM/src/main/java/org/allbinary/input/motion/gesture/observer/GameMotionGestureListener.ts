@@ -79,6 +79,8 @@ export class GameMotionGestureListener
 
     private touchGestureCollection: BasicArrayList = new BasicArrayListD();
 
+    private scrolledGestureCollection: BasicArrayList = new BasicArrayListD();
+
     private signed: CompleteMotionGestureListenerInterface;
 
 public constructor (signed: CompleteMotionGestureListenerInterface){
@@ -175,6 +177,10 @@ this.logUtil!.put(stringBuffer!.toString(), this, "release", e);
     
 }
 
+}
+
+
+    public onScrolledMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
 }
 
 

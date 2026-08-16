@@ -78,6 +78,8 @@ export class CanvasStrings
 
     public readonly ON_DISPLAY_CHANGE_EVENT: string = "onDisplayChangeEvent";
 
+    public readonly UPDATE_MEASUREMENT: string = "updateMeasurement";
+
     public readonly FD_WIDTH: string = " font/display width: ";
 
     public readonly FD_HEIGHT: string = " font/display height: ";

@@ -22,13 +22,13 @@
 
 
         
-            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
+            import { Exception } from '../../../../java/lang/Exception.js';
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 
 
@@ -81,30 +81,34 @@ export class SmallIntegerSingletonFactory
     private lastNegativeMin: number = 0;
 
     public getMin(): number{
-this.checkMe();
+
+    var minAllowed: number = (J2MEUtil.isJ2ME()
+                        ?       
+                                0
+                                :
+
+                            23;
+
+    );;
     
+
+                        if(this.MIN <= minAllowed)
+                        
+                                    {
+                                    
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+logUtil!.put("This means you loaded the InputFactory before determining the platform input size requirements.", this, "getMin", new Exception());
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.MIN;
     
-}
-
-
-    checkMe(){
-
-                        if(this.MIN == 0)
-                        
-                                    {
-                                    
-
-
-                            throw new RuntimeException();
-                    
-
-                                    }
-                                
 }
 
 
@@ -182,6 +186,8 @@ this.INTEGER_ARRAY[index]= new Integer( -index);
 }
 
 this.lastMin= this.POSITIVE_MAX;
+    
+this.MIN= this.lastMin;
     
 this.lastNegativeMin= this.NEGATIVE_MAX;
     

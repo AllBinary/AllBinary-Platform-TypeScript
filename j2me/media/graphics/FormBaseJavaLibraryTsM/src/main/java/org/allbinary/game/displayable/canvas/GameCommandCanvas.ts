@@ -247,7 +247,7 @@ this.repaintProcessor!.process();
             
     var font: Font = graphics.getFont()!;;
     
-this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(this.canvasStrings!.FD_WIDTH)!.appendint(MyFontProcessor.defaultCharWidth(font))!.append(this.canvasStrings!.FD_HEIGHT)!.appendint(font.getHeight())!.toString(), this, this.canvasStrings!.UPDATE_MEASUREMENT);
     
 this.fontHeight= font.getHeight();
     
@@ -278,7 +278,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+this.logUtil!.putF(new StringMaker().append(this.commonStrings!.START)!.append(DisplayInfoSingleton.getInstance()!.toString())!.toString(), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 this.myFontProcessor= this.updateMyFontProcessor;
     

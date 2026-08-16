@@ -157,6 +157,10 @@ this.onMotionGestureEvent(ev);
 }
 
 
+    public onScrolledMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
+}
+
+
     public released(ev: MotionGestureEvent){
 
         try {

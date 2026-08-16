@@ -64,7 +64,7 @@ import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //J2SE - PC
 export class ResourceUtil
             extends Object
          {
@@ -149,12 +149,6 @@ this.ext= ext;
                 //@Throws(Exception.constructor)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
-
-    var stringMaker: StringMaker = new StringMaker();;
-    
-
-    var commonSeps: CommonSeps = CommonSeps.getInstance()!;;
-    
 
     var inputStream: InputStream = new FileInputStream(new StringMaker().append(this.path)!.append(resource)!.append(this.ext)!.toString());;
     

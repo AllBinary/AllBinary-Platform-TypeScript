@@ -57,6 +57,18 @@ export class HardwareFactory
          {
         
 
+    private static readonly instance: HardwareFactory = new HardwareFactory();
+
+    public static getInstance(): HardwareFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return HardwareFactory.instance;
+    
+}
+
+
                 //@Throws(Exception.constructor)
             
     public static getInstance(os: GenericOperatingSystem): HardwareInterface{

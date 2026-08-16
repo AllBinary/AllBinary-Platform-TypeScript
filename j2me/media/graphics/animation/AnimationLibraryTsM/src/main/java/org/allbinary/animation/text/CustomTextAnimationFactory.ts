@@ -59,11 +59,29 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextAnimation } from './CustomTextAnimation.js';
+import { AdjustCustomTextAnimation } from './AdjustCustomTextAnimation.js';
 
 export class CustomTextAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {
         
+
+    public static createDXY(text: string, fontSize: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): CustomTextAnimationFactory{
+
+    var customTextAnimationFactory: CustomTextAnimationFactory = new CustomTextAnimationFactory(text, fontSize, animationBehaviorFactory);;
+    
+customTextAnimationFactory!.dx= dx;
+    
+customTextAnimationFactory!.dy= dy;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return customTextAnimationFactory;
+    
+}
+
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -74,6 +92,10 @@ export class CustomTextAnimationFactory
     private text: string;
 
     private initScaleHeight: number;
+
+    dx: number = 0;
+
+    dy: number = 0;
 
     font: Font;
 
@@ -103,8 +125,21 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
 
     var customTextAnimation: CustomTextAnimation;;
     
-customTextAnimation= new CustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
+
+                        if(this.dx != 0 || this.dy != 0)
+                        
+                                    {
+                                    customTextAnimation= new AdjustCustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.dx, this.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
+
+                                    }
+                                
+                        else {
+                            customTextAnimation= new CustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
+    
+
+                        }
+                            
 customTextAnimation!.setBasicColorP(this.basicColor);
     
 

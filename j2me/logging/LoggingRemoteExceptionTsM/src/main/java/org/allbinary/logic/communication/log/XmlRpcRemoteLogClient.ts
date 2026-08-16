@@ -42,6 +42,10 @@ import { NoCrypt } from '../../../../../org/allbinary/logic/system/security/cryp
       
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
       
+import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+      
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      
 
 
 
@@ -108,7 +112,7 @@ param.add(hashtable);
 
     var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, this.noCrypt)!;;
     
-console.log("Result: \n" +result.toString());
+console.log(CommonLabels.getInstance()!.RESULT_ +CommonSeps.getInstance()!.NEW_LINE +result.toString());
     
 
 

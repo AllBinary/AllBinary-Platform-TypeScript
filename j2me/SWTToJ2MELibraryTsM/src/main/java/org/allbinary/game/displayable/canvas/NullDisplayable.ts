@@ -34,7 +34,7 @@ import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameS
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //SWTToJ2ME
 export class NullDisplayable extends Canvas {
         
 

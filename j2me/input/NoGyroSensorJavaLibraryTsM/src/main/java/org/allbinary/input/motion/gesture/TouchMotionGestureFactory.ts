@@ -92,6 +92,10 @@ export class TouchMotionGestureFactory
 
     public readonly DIAGONAL_UP_LEFT: MotionGestureInput;
 
+    public readonly SCROLL_UP: MotionGestureInput;
+
+    public readonly SCROLL_DOWN: MotionGestureInput;
+
     public readonly NO_MOTION: MotionGestureInput;
 
     public readonly LAST_MOTION: MotionGestureInput;
@@ -121,6 +125,10 @@ this.DIAGONAL_DOWN_LEFT= new MotionGestureInput(MAX -10, "Diagonal Dn L");
 this.DIAGONAL_UP_RIGHT= new MotionGestureInput(MAX -11, "Diagonal Up R");
     
 this.DIAGONAL_UP_LEFT= new MotionGestureInput(MAX -12, "Diagonal Up L");
+    
+this.SCROLL_UP= new MotionGestureInput(MAX -13, "Scroll Up");
+    
+this.SCROLL_DOWN= new MotionGestureInput(MAX -14, "Scroll Down");
     
 this.NO_MOTION= new MotionGestureInput(MAX -2, "No Motion");
     

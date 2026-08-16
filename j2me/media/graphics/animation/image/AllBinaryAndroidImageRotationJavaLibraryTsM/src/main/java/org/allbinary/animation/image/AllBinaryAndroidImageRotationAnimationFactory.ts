@@ -127,6 +127,23 @@ androidImageRotationAnimationFactory!.init(dx, dy);
 }
 
 
+                //@Throws(Exception.constructor)
+            
+    public static createFactoryADXY(image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean): AllBinaryAndroidImageRotationAnimationFactory{
+
+    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);;
+    
+androidImageRotationAnimationFactory!.init(dx, dy);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return androidImageRotationAnimationFactory;
+    
+}
+
+
     public init(dx: number, dy: number){
 this.animationFactoryInitializationVisitor!.dx= dx;
     

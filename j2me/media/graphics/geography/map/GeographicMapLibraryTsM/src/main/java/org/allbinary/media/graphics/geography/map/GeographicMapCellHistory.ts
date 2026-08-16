@@ -613,7 +613,7 @@ this.totalVisited= 0;
 
     var height: number = 2 *this.fontHeight;;
     
-this.animation.paintXY(graphics, x +halfWidth, y +(height));
+this.animation.paintXY(graphics, x +this.halfWidth, y +(height));
     
 }
 

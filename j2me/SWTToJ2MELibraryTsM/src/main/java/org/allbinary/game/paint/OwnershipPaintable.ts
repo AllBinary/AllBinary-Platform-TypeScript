@@ -142,7 +142,7 @@ graphics.setColor(this.color);
 
     var height: number = this.displayInfo!.getLastHeight()!;;
     
-graphics.drawString(this.COPYRIGHT, halfWidth -this.beginWidth, height -COPYRIGHT_Y, this.anchor);
+graphics.drawString(this.COPYRIGHT, halfWidth -this.beginWidth, height -this.COPYRIGHT_Y, this.anchor);
     
 }
 

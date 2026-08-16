@@ -62,6 +62,8 @@ import { SuperCrypt } from '../../../../../org/allbinary/logic/control/crypt/Sup
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      
 
 
 
@@ -101,7 +103,7 @@ export class UserEntity extends AbSqlBean implements UserEntityInterface {
 
     private readonly NOT_EQUAL: string = "\"!=\"";
 
-    private readonly END_QUOTES: string = "\"";
+    private readonly END_QUOTES: string = CommonSeps.getInstance()!.QUOTE;
 
 public constructor (){
             super(new UserDbInitInfo());

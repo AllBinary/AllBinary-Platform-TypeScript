@@ -26,6 +26,8 @@
         
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
       
 
@@ -163,6 +165,34 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return false;
+    
+}
+
+
+    public toStringFromBooleanArray(booleanArray: boolean[]): string{
+
+    var stringMaker: StringMaker = new StringMaker();;
+    
+
+    var size: number = booleanArray!.length
+                ;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+stringMaker!.appendboolean(booleanArray[index]!);
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return stringMaker!.toString();;
     
 }
 

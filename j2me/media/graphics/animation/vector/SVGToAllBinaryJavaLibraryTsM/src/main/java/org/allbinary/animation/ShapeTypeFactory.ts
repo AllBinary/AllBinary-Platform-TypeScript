@@ -1,0 +1,79 @@
+
+        /*
+                *  
+                *  AllBinary Open License Version 1 
+                *  Copyright (c) 2026 AllBinary 
+                *   
+                *  By agreeing to this license you and any business entity you represent are 
+                *  legally bound to the AllBinary Open License Version 1 legal agreement. 
+                *   
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from 
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+                *   
+                *  Created By: Travis Berthelot    
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+            import { Object } from '../../../java/lang/Object.js';
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        import { ShapeType } from './ShapeType.js';
+
+export class ShapeTypeFactory
+            extends Object
+         {
+        
+
+    private static readonly instance: ShapeTypeFactory = new ShapeTypeFactory();
+
+    public static getInstance(): ShapeTypeFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+
+    public readonly KEY_LINE: string = "line";
+
+    public readonly KEY_CIRCLE: string = "circle";
+
+    public readonly KEY_RECTANGLE: string = "rectangle";
+
+    public readonly KEY_RECT: string = "rect";
+
+    public readonly LINE: ShapeType = new ShapeType(KEY_LINE);
+
+    public readonly CIRCLE: ShapeType = new ShapeType(KEY_CIRCLE);
+
+    public readonly RECTANGLE: ShapeType = new ShapeType(KEY_RECTANGLE);
+
+}
+                
+            
+

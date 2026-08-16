@@ -159,7 +159,7 @@ this.cpuHashMap= new HashMap<any, any>();
                         
                                     {
                                     
-    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile.createAbFile(FilePathData.getInstance()!.SEPARATOR))!;;
+    var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, AbFile.createAbFile(FilePathData.getInstance()!.PATH_START))!;;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.OS))

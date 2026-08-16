@@ -89,7 +89,7 @@ this.image= PaintableToImageUtil.getImage(this.allBinaryTiledLayer, aWidth, aHei
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-graphics.drawImage(this.image, x, y, this.anchor);
+graphics.drawImage(this.image, this.x, this.y, this.anchor);
     
 this.paintDots(graphics);
     

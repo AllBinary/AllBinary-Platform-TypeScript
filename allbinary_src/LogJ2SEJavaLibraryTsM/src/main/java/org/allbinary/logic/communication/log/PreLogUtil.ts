@@ -79,7 +79,7 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
-console.log(LOG_SUCCESS + message);
+console.log(PreLogUtil.LOG_SUCCESS + message);
     
 }
 
@@ -94,7 +94,7 @@ PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
-console.log(LOG_SUCCESS + message);
+console.log(PreLogUtil.LOG_SUCCESS + message);
     
 }
 

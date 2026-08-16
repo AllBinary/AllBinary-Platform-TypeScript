@@ -28,8 +28,6 @@ import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
       
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       
-import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
-      
 
 
 
@@ -48,7 +46,8 @@ import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //ActualPlatform
+        import { LogFormatUtil } from './LogFormatUtil.js';
+//ActualPlatform
 /*actual*/ export class PreLogUtil
             extends Object
          {
@@ -81,6 +80,12 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;;
     
 console.log(PreLogUtil.LOG_SUCCESS + message);
+    
+}
+
+
+    /*actual*/ public static putS(specialMessage: string, className: string, functionName: string){
+PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 

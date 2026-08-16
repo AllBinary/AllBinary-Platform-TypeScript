@@ -34,6 +34,8 @@ import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
       
 import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js';
       
+import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+      
 import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
       
 
@@ -114,10 +116,13 @@ filePropertyVector!.add(this.file.getPath());
     var filePropertyHashMap: HashMap<any, any> = new HashMap<any, any>();;
     
 
+    var pathData: AbPathData = AbPathData.getInstance()!;;
+    
+
     var pathUtil: PathUtil = PathUtil.getInstance()!;;
     
 
-    var rootFileName: string = pathUtil!.getNameFromPath(pathUtil!.getWithoutExtension(this.file.getPath()))!;;
+    var rootFileName: string = pathData!.getNameFromPath(pathUtil!.getWithoutExtension(this.file.getPath()))!;;
     
 
     var fileData: FileData = FileData.getInstance()!;;

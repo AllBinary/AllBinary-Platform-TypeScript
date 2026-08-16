@@ -61,7 +61,6 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
 import { ItemIndexDx } from './ItemIndexDx.js';
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { FormType } from './FormType.js';
 import { FormTypeFactory } from './FormTypeFactory.js';
 //import { VerticalFormProcessor } from './VerticalFormProcessor.js';
 //import { VerticalItemIndexDx } from './VerticalItemIndexDx.js';
@@ -69,6 +68,7 @@ import { FormTypeFactory } from './FormTypeFactory.js';
 //import { HorizontalItemIndexDx } from './HorizontalItemIndexDx.js';
 //import { TempHorizontalFormProcessor } from './TempHorizontalFormProcessor.js';
 //import { TempHorizontalItemIndexDx } from './TempHorizontalItemIndexDx.js';
+import { FormType } from './FormType.js';
 
 export class ScrollCurrentSelectionForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
@@ -257,15 +257,13 @@ VerticalItemIndexDx = class extends ItemIndexDx {
 
     private maxWidth: number = 0;
 
-public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, border: number, adjustedExtraBorder: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, formPaintableFactory, border, adjustedExtraBorder, backgroundBasicColor, foregroundBasicColor);
                     
 
                             //For kotlin this is before the body of the constructor.
                     
 this.moveForSmallScreen= moveForSmallScreen;
-    
-this.init(rectangle, formType);
     
 }
 

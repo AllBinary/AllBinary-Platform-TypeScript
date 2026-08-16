@@ -24,6 +24,8 @@
         
 import { KeyEvent } from '../../../../java/awt/event/KeyEvent.js';
       
+import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
       
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
@@ -168,9 +170,9 @@ export class PCKeyFactory
 
     public readonly w: PCGameKey = new PCGameKey(119, "w");
 
-    public readonly x: PCGameKey = new PCGameKey(120, "x");
+    public readonly x: PCGameKey = new PCGameKey(120, PositionStrings.getInstance()!.X);
 
-    public readonly y: PCGameKey = new PCGameKey(121, "y");
+    public readonly y: PCGameKey = new PCGameKey(121, PositionStrings.getInstance()!.Y);
 
     public readonly z: PCGameKey = new PCGameKey(122, "z");
 
