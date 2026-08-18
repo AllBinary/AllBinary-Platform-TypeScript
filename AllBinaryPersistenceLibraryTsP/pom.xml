@@ -33,6 +33,7 @@
         <!--
         -->
         <module>../allbinary_src/cache/AllBinaryCacheLibraryTsM</module>
+        <module>../allbinary_src/PermutationsJavaLibraryTsM</module>
         <module>../allbinary_src/logic/BasePreloaderFileJavaLibraryTsM</module>
         <module>../allbinary_src/logic/data/file/FileJavaLibraryTsM</module>
         <module>../allbinary_src/logic/data/file/FileJ2SEJavaLibraryTsM</module>

@@ -63,6 +63,7 @@
         <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLNoneJavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryTsM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryTsM</module>
 
         <module>../../media/graphics/animation/AnimationLibraryTsM</module>
