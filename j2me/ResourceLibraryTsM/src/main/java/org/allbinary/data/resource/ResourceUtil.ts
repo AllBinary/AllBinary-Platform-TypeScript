@@ -40,6 +40,8 @@ import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.
       
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      
 
 
 
@@ -87,7 +89,7 @@ private constructor (){
 
 
     public setLoadingPaths(path: string, ext: string){
-this.logUtil!.putF("Not Implemented", this, "setLoadingPaths");
+this.logUtil!.putF(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this, "setLoadingPaths");
     
 }
 

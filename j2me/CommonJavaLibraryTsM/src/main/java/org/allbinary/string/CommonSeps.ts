@@ -110,6 +110,8 @@ export class CommonSeps
 
     public readonly COMMENT: string = "//";
 
+    public readonly INDENT: string = "    ";
+
 }
                 
             

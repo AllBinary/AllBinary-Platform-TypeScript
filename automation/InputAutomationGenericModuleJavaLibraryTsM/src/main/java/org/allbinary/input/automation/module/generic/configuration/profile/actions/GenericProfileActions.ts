@@ -48,6 +48,8 @@ import { GenericProfiles } from '../../../../../../../../../org/allbinary/input/
       
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
+import { CommonDataFileStrings } from '../../../../../../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
+      
 import { AbPath } from '../../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
       
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
@@ -86,20 +88,9 @@ export class GenericProfileActions
 
     public static readonly DEFAULT_PROFILE_ACTIONS_PATH: string = GenericProfiles.DEFAULT_PROFILES_PATH +"actions/";
 
-    public static getFile(name: string): File{
-
-    var fileName: string = DEFAULT_PROFILE_ACTIONS_PATH +name +".xml";;
-    
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return new File(fileName);
-    
-}
-
-
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly commonFileStrings: CommonDataFileStrings = CommonDataFileStrings.getInstance()!;
 
     private name: string;
 
@@ -161,7 +152,7 @@ this.setHashMap(new HashMap<any, any>());
             
     public save(){
 
-    var idFile: FileOutputStream = new FileOutputStream(GenericProfileActions.DEFAULT_PROFILE_ACTIONS_PATH +getName() +".xml");;
+    var idFile: FileOutputStream = new FileOutputStream(GenericProfileActions.DEFAULT_PROFILE_ACTIONS_PATH +getName() +this.commonFileStrings!._XML);;
     
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);;
@@ -171,11 +162,24 @@ idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()));
 }
 
 
+    public getFile(name: string): File{
+
+    var fileName: string = DEFAULT_PROFILE_ACTIONS_PATH +name +this.commonFileStrings!._XML;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new File(fileName);
+    
+}
+
+
                 //@Throws(Exception.constructor)
             
     load(){
 
-    var file: File = GenericProfileActions.getFile(getName())!;;
+    var file: File = this.getFile(getName())!;;
     
 
                         if(file.isFile())

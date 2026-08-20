@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -22,7 +22,7 @@
 
 
         
-import { DataFileData } from '../../../../../../../org/allbinary/data/file/DataFileData.js';
+import { CommonDataFileStrings } from '../../../../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
       
 
 
@@ -66,9 +66,9 @@ private constructor (){
         }
 
 
-    public readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
+    public readonly UNCRYPTED_EXTENSION: string = CommonDataFileStrings.getInstance()!.UNCRYPTED_EXTENSION;
 
-    public readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
+    public readonly ENCRYPTED_EXTENSION: string = CommonDataFileStrings.getInstance()!.ENCRYPTED_EXTENSION;
 
 }
                 

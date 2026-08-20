@@ -22,7 +22,7 @@
 
 
         
-import { DataFileData } from '../../../../../../org/allbinary/data/file/DataFileData.js';
+import { CommonDataFileStrings } from '../../../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
       
 
 
@@ -50,9 +50,9 @@ export class UserConfigurationData
 
     public static readonly NAME: string = "USER_CONFIGURATION_NAME";
 
-    public static readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
+    public static readonly UNCRYPTED_EXTENSION: string = CommonDataFileStrings.getInstance()!.UNCRYPTED_EXTENSION;
 
-    public static readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
+    public static readonly ENCRYPTED_EXTENSION: string = CommonDataFileStrings.getInstance()!.ENCRYPTED_EXTENSION;
 
 private constructor (){
 
