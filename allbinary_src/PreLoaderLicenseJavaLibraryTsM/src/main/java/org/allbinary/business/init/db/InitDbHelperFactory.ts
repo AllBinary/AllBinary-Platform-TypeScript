@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
             import { Class } from '../../../../../java/lang/Class.js';
         
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';

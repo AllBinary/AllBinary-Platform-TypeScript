@@ -4,6 +4,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { Class } from '../../../java/lang/Class.js';
         
             import { System } from '../../../java/lang/System.js';

@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HealthInterfaceCompositeInterface } from '../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js';

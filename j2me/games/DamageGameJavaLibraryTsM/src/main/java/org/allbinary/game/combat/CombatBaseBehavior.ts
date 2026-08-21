@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { DamageableBaseBehavior } from '../../../../org/allbinary/game/combat/damage/DamageableBaseBehavior.js';
       
 import { DestroyableBaseBehavior } from '../../../../org/allbinary/game/combat/destroy/DestroyableBaseBehavior.js';

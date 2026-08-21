@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
       
 import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';

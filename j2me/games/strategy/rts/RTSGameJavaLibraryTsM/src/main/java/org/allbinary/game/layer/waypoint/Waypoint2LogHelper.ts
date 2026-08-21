@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
       
 import { WaypointBehaviorBase } from '../../../../../org/allbinary/game/layer/WaypointBehaviorBase.js';

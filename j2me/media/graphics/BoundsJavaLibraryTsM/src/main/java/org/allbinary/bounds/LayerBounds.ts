@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { BoundsChangeEvent } from '../../../org/allbinary/bounds/event/BoundsChangeEvent.js';
       
 import { BoundsChangeEventListener } from '../../../org/allbinary/bounds/event/BoundsChangeEventListener.js';

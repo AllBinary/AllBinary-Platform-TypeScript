@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { TransformInfoHttpStoreFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreFactory.js';
       
 import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';

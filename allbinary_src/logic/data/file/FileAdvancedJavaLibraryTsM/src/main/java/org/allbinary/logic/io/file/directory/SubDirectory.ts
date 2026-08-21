@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { FileFilter } from '../../../../../../java/io/FileFilter.js';
       
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';

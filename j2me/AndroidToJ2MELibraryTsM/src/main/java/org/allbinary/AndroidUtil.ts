@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../java/lang/Object.js';
+        
             import { Integer } from '../../java/lang/Integer.js';
         
 import { Activity } from '../../android/app/Activity.js';

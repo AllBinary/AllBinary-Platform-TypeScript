@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
       
 import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';

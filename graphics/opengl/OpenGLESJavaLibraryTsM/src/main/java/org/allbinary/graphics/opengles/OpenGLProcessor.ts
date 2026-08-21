@@ -4,6 +4,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
       
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';

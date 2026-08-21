@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
 import { FileLog } from '../../../../../org/allbinary/log/FileLog.js';

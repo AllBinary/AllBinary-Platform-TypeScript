@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';

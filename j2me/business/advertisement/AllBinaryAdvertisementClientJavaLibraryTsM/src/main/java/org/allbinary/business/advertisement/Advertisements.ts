@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { MyRandomFactory } from '../../../../org/allbinary/game/rand/MyRandomFactory.js';
       
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';

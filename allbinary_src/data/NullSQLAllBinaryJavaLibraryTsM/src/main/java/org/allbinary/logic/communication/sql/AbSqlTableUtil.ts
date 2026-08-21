@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { Portion } from '../../../../../org/allbinary/business/installer/Portion.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';

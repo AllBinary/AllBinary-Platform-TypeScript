@@ -11,6 +11,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 
 
 

@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
             import { Cloneable } from '../../../../../../java/lang/Cloneable.js';
         
 import { awt } from '../../../../../../java/awt.js';

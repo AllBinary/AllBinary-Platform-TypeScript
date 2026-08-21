@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';

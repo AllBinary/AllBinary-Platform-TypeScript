@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
       
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';

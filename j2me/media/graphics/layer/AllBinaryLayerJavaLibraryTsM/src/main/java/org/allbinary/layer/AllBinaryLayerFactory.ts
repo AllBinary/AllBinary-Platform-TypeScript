@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
       
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';

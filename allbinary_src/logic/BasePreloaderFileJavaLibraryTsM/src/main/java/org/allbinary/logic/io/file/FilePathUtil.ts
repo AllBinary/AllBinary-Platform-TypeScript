@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
       
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';

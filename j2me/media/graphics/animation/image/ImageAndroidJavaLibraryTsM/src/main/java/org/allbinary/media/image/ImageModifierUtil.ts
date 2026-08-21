@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Paint } from '../../../../android/graphics/Paint.js';
       
 import { PorterDuff } from '../../../../android/graphics/PorterDuff.js';

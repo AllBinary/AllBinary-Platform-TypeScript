@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { SpecialAnimation } from '../../../org/allbinary/animation/special/SpecialAnimation.js';

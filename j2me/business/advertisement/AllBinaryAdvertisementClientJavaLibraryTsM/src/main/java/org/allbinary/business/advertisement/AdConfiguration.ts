@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Direction } from '../../../../org/allbinary/direction/Direction.js';
       
 import { GameState } from '../../../../org/allbinary/game/state/GameState.js';

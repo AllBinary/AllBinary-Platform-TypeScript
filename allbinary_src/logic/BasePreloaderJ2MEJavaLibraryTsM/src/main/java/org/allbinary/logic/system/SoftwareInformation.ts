@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { KotlinUtil } from '../../../../org/allbinary/KotlinUtil.js';
       
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';

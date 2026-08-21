@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
       
 

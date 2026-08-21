@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
       
 

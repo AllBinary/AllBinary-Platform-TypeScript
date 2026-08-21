@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
       
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';

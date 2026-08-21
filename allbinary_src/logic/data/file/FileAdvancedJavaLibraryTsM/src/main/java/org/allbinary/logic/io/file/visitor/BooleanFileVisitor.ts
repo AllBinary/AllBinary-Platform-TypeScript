@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';

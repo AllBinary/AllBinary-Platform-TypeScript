@@ -4,6 +4,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { awt } from '../../../../java/awt.js';
       
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';

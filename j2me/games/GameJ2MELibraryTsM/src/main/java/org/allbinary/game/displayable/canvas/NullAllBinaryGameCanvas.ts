@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';

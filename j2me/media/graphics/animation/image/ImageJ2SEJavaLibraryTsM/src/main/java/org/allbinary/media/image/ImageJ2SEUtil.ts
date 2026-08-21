@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Color } from '../../../../java/awt/Color.js';
       
 

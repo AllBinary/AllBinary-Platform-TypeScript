@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { DomNodeHelper } from '../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
       
 import { DomSearchHelper } from '../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';

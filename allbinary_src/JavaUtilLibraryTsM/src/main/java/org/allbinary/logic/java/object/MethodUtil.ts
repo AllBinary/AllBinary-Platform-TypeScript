@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
             import { Class } from '../../../../../java/lang/Class.js';
         
 import { Method } from '../../../../../java/lang/reflect/Method.js';

@@ -4,6 +4,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
       
 import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';

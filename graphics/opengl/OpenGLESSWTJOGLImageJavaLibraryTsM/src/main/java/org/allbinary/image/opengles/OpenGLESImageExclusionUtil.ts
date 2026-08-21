@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';

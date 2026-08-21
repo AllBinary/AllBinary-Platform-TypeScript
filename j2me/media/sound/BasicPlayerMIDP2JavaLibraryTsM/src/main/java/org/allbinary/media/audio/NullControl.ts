@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Control } from '../../../../javax/microedition/media/Control.js';
       
 

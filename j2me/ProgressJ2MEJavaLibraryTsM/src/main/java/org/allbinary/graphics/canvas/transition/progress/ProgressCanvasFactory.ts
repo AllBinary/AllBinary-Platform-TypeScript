@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
       
 import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';

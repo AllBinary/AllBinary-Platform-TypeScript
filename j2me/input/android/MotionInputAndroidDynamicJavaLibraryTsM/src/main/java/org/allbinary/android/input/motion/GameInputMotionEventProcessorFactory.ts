@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
       
 import { GameInputMotionEventProcessorAPI1 } from '../../../../../org/allbinary/android/input/motion/api1/GameInputMotionEventProcessorAPI1.js';

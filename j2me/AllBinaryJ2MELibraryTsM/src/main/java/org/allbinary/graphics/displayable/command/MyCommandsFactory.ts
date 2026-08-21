@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
       
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';

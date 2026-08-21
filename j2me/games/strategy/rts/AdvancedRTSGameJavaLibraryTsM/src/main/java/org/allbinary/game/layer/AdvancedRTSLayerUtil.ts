@@ -17,6 +17,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Hashtable } from '../../../../java/util/Hashtable.js';
       
 import { WorkWaypoint } from '../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js';

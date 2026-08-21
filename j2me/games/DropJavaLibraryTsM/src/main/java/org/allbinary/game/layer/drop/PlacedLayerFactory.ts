@@ -4,6 +4,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
       
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';

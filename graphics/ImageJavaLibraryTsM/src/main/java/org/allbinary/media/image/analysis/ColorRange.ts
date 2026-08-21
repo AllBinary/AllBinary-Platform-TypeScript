@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { awt } from '../../../../../java/awt.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';

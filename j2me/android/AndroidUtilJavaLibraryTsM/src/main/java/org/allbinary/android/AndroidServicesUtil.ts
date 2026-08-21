@@ -20,6 +20,8 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { List } from '../../../java/util/List.js';
       
 import { ActivityManager } from '../../../android/app/ActivityManager.js';

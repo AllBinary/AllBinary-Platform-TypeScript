@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
             import { System } from '../../../../java/lang/System.js';
         
 import { FilePathData } from '../../../../org/allbinary/logic/io/file/FilePathData.js';

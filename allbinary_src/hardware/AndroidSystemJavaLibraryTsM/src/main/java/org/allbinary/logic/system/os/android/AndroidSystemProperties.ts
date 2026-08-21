@@ -20,6 +20,8 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { Context } from '../../../../../../android/content/Context.js';
       
 import { Build } from '../../../../../../android/os/Build.js';

@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { ClassLoader } from '../../../java/lang/ClassLoader.js';
         
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';

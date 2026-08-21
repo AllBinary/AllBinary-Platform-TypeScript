@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { Math } from '../../../java/lang/Math.js';
         
 import { Buffer } from '../../../java/nio/Buffer.js';

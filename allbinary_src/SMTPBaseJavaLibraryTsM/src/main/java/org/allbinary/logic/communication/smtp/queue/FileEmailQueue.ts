@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { DomDocumentQueueInterface } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentQueueInterface.js';
       
 

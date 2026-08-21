@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { Runtime } from '../../../java/lang/Runtime.js';
         
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';

@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
       
 

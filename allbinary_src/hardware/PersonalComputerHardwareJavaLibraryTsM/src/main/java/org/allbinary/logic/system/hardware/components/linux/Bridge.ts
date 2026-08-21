@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../../java/lang/Object.js';
+        
 import { BridgeInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/BridgeInterface.js';
       
 import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';

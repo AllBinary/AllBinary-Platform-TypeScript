@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { Integer } from '../../../java/lang/Integer.js';
         
             import { Long } from '../../../java/lang/Long.js';

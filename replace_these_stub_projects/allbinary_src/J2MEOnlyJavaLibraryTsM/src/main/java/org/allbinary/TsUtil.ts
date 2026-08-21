@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../java/lang/Object.js';
+        
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
 import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';

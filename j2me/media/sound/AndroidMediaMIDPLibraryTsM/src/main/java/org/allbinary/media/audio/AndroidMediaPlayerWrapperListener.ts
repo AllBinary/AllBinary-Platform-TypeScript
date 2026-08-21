@@ -4,6 +4,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';

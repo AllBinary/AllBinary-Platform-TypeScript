@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
             import { System } from '../../../../../java/lang/System.js';
         
 import { Arrays } from '../../../../../java/util/Arrays.js';

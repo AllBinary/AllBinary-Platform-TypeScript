@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
       
 

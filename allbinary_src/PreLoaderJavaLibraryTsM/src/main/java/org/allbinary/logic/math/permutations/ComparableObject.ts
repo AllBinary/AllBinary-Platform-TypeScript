@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
       
 

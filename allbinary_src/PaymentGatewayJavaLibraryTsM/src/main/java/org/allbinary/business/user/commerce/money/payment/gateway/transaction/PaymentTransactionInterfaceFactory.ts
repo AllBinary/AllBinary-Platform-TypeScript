@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
+        
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';

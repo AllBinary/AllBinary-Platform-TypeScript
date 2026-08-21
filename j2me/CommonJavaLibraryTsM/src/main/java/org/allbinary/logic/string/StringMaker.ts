@@ -4,6 +4,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
             import { System } from '../../../../java/lang/System.js';
         
             import { Integer } from '../../../../java/lang/Integer.js';

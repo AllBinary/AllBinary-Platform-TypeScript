@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
       
 

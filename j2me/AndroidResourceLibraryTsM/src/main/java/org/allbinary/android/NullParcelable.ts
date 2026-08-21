@@ -20,6 +20,8 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { Parcelable } from '../../../android/os/Parcelable.js';

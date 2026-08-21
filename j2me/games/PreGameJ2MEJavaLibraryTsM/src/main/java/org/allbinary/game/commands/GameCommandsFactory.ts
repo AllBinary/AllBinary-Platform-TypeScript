@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
       
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';

@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
 import { ShaderComposite } from '../../../../org/allbinary/graphics/opengles/shader/ShaderComposite.js';
       
 

@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
       
 import { AppUrlGlobals } from '../../../org/allbinary/globals/AppUrlGlobals.js';

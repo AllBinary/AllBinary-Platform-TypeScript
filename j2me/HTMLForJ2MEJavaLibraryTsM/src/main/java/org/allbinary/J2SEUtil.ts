@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../java/lang/Object.js';
+        
 import { HashMap } from '../../java/util/HashMap.js';
       
 import { Map } from '../../java/util/Map.js';

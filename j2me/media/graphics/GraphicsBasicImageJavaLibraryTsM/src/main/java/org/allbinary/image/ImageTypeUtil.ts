@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
       
 import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';

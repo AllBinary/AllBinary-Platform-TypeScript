@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../java/lang/Object.js';
+        
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';

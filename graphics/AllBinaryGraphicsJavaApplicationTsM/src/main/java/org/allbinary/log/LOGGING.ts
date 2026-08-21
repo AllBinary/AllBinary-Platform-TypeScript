@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { Vector } from '../../../java/util/Vector.js';
       
 

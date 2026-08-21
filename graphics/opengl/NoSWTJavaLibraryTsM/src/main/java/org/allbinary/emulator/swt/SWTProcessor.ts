@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../java/lang/Object.js';
+        
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';

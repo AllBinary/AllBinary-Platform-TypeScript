@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
+        
             import { Character } from '../../../../../../../../../java/lang/Character.js';
         
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';

@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
 import { Dimension } from '../../../java/awt/Dimension.js';
       
 import { DisplayMode } from '../../../java/awt/DisplayMode.js';

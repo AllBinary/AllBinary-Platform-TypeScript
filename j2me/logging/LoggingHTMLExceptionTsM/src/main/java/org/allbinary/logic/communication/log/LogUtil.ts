@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';

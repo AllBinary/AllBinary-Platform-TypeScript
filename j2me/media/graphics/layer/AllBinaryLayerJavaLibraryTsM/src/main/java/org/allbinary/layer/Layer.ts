@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../java/lang/Object.js';
+        
             import { IllegalArgumentException } from '../../../java/lang/IllegalArgumentException.js';
         
             import { Integer } from '../../../java/lang/Integer.js';

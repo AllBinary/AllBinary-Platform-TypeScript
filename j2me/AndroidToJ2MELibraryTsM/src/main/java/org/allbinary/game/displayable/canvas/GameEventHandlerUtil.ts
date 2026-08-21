@@ -18,6 +18,8 @@
 
 
 
+            import { Object } from '../../../../../java/lang/Object.js';
+        
 import { GameInputMotionEventProcessorFactory } from '../../../../../org/allbinary/android/input/motion/GameInputMotionEventProcessorFactory.js';
       
 import { GameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
