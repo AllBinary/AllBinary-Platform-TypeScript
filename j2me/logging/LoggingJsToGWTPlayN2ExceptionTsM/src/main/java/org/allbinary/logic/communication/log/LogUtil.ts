@@ -1,0 +1,192 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot   
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+            import { Object } from '../../../../../java/lang/Object.js';
+
+
+        
+            import { Throwable } from '../../../../../java/lang/Throwable.js';
+        
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      
+import { PlayN } from '../../../../../playn/core/PlayN.js';
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        import { LogFormatUtil } from './LogFormatUtil.js';
+import { Log } from './Log.js';
+import { PreLogUtil } from './PreLogUtil.js';
+//ActualPlatform - jsinterop
+/*actual*/ export class LogUtil
+            extends Object
+         {
+        
+
+    private static readonly instance: LogUtil = new LogUtil();
+
+    /*actual*/ public static getInstance(): LogUtil{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return LogUtil.instance;
+    
+}
+
+
+    private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
+
+    private readonly playN: PlayN = PlayN.getInstance()!;
+
+    private readonly LOG_SUCCESS: string = "org.allbinary: ";
+
+private constructor (){
+
+            super();
+        }
+
+
+    /*actual*/ public putL(log: Log){
+
+                        if(log == 
+                                    null
+                                )
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ;
+    
+
+                                    }
+                                
+
+    var specialMessage: string = log.getSpecialMessage()!;;
+    
+
+    var anyType: any = log.getObject()!;;
+    
+
+    var functionName: string = log.getFunctionName()!;;
+    
+
+    var exception: any = log.getThrowable()!;;
+    
+this.put(specialMessage, anyType, functionName, exception);
+    
+}
+
+
+    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
+
+    var className: string = PreLogUtil.getClassName(anyType)!;;
+    
+
+                        if(className == 
+                                    null
+                                )
+                        
+                                    {
+                                    className= CommonStrings.getInstance()!.EMPTY;
+    
+
+                                    }
+                                
+
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    
+this.playN!.log()!.debug(this.LOG_SUCCESS +message);
+    
+}
+
+
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
+
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
+    
+this.playN!.log()!.debug(this.LOG_SUCCESS +message);
+    
+}
+
+
+    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+
+    var className: string = PreLogUtil.getClassName(anyType)!;;
+    
+
+                        if(className == 
+                                    null
+                                )
+                        
+                                    {
+                                    className= CommonStrings.getInstance()!.EMPTY;
+    
+
+                                    }
+                                
+
+    var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
+    
+
+                        if(exception != 
+                                    null
+                                )
+                        
+                                    {
+                                    this.playN!.log()!.error(this.LOG_SUCCESS +message, exception as Throwable);
+    
+
+                                    }
+                                
+                        else {
+                            this.playN!.log()!.debug(this.LOG_SUCCESS +message);
+    
+
+                        }
+                            
+}
+
+
+}
+                
+            
+

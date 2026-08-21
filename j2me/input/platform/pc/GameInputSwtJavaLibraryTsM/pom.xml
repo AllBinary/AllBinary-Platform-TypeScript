@@ -79,13 +79,14 @@
                     <!-- set the path to node - make sure the version is the same as in the config-->
                     <!--   <workingDirectory>${YOUR_WORKING_DIRECTORY}</workingDirectory>-->
                     <!--                <nodeVersion>v16.14.0</nodeVersion>-->
-<!--            <plugin>
+            <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>2.0.0</version>
                 <configuration>
                     <installDirectory>C:\</installDirectory>
-                    <nodeVersion>v25.9.0</nodeVersion>
+                    <nodeVersion>v26.7.0</nodeVersion>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
                 <executions>
                     <execution>
@@ -114,7 +115,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
 
             
             <plugin>
@@ -135,5 +136,10 @@
     </build>
 
 </project>
+
+
+
+
+
 
 

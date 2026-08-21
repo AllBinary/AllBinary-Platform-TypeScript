@@ -58,7 +58,7 @@ export class StringUtil
 }
 
 
-    public readonly INIT_STRING: string = .toCharArray();
+    public readonly INIT_STRING: string = "";
 
     public readonly NULL_STRING: string = "null";
 

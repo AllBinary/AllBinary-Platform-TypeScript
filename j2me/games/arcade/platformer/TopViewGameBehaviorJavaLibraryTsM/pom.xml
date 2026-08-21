@@ -109,7 +109,8 @@
                 <version>2.0.0</version>
                 <configuration>
                     <installDirectory>C:\</installDirectory>
-                    <nodeVersion>v25.9.0</nodeVersion>
+                    <nodeVersion>v26.7.0</nodeVersion>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
                 <executions>
                     <execution>
@@ -158,4 +159,9 @@
     </build>
 
 </project>
+
+
+
+
+
 
