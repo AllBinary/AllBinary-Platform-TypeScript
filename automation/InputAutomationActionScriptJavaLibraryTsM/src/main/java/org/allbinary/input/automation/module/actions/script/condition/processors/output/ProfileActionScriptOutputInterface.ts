@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../../../java/lang/Object.js';
-
-
-        
 import { ProfileActionScriptProcessorInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
       
 

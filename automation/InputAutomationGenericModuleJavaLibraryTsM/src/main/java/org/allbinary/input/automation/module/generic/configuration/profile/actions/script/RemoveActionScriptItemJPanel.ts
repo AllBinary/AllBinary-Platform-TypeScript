@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../../../java/lang/Object.js';
-
-
-        
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
       
 import { GenericProfileAction } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';

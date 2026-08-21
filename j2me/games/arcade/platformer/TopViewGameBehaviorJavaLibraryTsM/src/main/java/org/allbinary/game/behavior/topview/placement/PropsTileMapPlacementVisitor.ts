@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
       
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';

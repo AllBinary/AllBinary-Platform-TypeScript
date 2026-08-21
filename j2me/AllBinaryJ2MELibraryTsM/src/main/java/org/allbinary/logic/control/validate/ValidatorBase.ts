@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';

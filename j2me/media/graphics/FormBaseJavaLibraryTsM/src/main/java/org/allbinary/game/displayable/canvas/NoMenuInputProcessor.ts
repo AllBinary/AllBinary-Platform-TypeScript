@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
       
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';

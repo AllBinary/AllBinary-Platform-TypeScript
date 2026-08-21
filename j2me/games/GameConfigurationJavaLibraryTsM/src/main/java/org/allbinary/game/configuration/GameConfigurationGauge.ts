@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { Gauge } from '../../../../javax/microedition/lcdui/Gauge.js';
       
 

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { StateControlledInterface } from '../../../../org/allbinary/graphics/displayable/StateControlledInterface.js';
       
 

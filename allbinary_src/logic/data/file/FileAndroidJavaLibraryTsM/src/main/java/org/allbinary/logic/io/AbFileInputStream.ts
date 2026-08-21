@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { FileInputStream } from '../../../../java/io/FileInputStream.js';
       
 import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';

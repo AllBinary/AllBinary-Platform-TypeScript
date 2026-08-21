@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { CssPropertyView } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js';

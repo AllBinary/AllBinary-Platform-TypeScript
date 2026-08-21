@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { Hashtable } from '../../../../java/util/Hashtable.js';
       
 import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';

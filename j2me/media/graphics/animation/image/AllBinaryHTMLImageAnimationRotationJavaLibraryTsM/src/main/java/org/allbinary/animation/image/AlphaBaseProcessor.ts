@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';

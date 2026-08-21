@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphics/opengles/NullOpenGLProcessorFactory.js';
       
 import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';

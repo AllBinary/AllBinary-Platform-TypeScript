@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { Calendar } from '../../../java/util/Calendar.js';
       
 import { Assertions } from '../../../org/junit/jupiter/api/Assertions.js';

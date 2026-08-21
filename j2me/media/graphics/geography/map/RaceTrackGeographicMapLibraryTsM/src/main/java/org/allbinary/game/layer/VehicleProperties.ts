@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
       
 

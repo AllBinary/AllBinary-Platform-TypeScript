@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';

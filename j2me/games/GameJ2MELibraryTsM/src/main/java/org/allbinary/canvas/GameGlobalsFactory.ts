@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';

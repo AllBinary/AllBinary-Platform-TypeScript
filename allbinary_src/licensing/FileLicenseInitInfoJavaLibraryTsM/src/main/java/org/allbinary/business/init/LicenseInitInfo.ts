@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
       
 import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';

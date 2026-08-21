@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { KeyEvent } from '../../../../java/awt/event/KeyEvent.js';
       
 import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';

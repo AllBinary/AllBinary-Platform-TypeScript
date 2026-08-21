@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { GroupInterfaceCompositeInterface } from '../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
       
 import { PaintableInterface } from '../../../org/allbinary/graphics/paint/PaintableInterface.js';

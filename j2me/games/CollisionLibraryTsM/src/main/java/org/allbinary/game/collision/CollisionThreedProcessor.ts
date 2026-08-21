@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
       
 

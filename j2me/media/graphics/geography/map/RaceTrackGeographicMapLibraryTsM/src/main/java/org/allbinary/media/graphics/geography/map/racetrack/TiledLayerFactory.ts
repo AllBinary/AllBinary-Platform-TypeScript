@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/TiledLayer.js';
       
 

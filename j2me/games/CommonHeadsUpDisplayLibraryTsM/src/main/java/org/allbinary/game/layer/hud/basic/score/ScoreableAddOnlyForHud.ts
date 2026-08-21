@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { Scoreable } from '../../../../../../../org/allbinary/game/score/Scoreable.js';
       
 

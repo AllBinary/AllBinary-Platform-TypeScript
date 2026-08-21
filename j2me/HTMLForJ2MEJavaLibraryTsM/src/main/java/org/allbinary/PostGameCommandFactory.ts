@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../java/lang/Object.js';
-
-
-        
 import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
       
 import { MyCanvas } from '../../org/allbinary/graphics/displayable/MyCanvas.js';

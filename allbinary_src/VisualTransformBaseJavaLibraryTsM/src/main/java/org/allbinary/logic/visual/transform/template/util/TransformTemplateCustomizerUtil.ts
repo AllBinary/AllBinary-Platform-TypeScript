@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
       
 import { GLOBALS2 } from '../../../../../../../org/allbinary/globals/GLOBALS2.js';

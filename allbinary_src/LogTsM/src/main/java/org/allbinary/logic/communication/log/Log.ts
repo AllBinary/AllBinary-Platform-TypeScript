@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { Class } from '../../../../../java/lang/Class.js';
         
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';

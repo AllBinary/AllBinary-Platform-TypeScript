@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { GeographicMapInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapInterface.js';
       
 

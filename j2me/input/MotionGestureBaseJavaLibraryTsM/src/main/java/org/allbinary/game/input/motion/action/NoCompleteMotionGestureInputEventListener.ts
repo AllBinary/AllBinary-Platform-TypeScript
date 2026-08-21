@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
       
 import { CompleteMotionGestureInputEventListener } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListener.js';

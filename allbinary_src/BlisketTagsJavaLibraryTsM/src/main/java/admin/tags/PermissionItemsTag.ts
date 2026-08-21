@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../java/lang/Object.js';
-
-
-        
 import { PermissionItemsHelperFactory } from '../../admin/taghelpers/PermissionItemsHelperFactory.js';
       
 import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/PermissionItemsRequestHelperFactory.js';

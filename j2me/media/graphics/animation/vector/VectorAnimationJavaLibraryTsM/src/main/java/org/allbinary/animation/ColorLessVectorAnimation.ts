@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
       
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';

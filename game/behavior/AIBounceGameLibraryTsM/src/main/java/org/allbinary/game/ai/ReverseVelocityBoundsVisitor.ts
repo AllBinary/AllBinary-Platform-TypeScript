@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { BoundsVisitorInterface } from '../../../../org/allbinary/bounds/BoundsVisitorInterface.js';
       
 import { VelocityInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';

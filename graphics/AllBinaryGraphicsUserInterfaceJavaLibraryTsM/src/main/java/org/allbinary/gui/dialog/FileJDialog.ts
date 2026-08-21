@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
       
 import { File } from '../../../../java/io/File.js';

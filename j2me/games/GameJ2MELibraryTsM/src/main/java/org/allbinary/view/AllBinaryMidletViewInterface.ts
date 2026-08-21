@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { GameInitializedListenerInterface } from '../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
       
 import { DemoGameMidletEventListener } from '../../../org/allbinary/game/midlet/DemoGameMidletEventListener.js';

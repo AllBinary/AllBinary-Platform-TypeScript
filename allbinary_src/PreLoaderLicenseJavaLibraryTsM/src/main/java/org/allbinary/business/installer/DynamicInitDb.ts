@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
       
 import { InitDbHelperFactory } from '../../../../org/allbinary/business/init/db/InitDbHelperFactory.js';

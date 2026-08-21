@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
       
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';

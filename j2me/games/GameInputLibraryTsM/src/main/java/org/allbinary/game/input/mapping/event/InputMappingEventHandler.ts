@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';

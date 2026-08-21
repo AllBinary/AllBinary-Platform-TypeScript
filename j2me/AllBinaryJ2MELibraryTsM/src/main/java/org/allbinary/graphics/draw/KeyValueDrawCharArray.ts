@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';

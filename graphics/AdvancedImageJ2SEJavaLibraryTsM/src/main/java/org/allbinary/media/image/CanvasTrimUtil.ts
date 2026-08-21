@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
       
 import { IOException } from '../../../../java/io/IOException.js';

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { HashMap } from '../../../../../java/util/HashMap.js';
       
 import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';

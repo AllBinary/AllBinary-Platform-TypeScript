@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';

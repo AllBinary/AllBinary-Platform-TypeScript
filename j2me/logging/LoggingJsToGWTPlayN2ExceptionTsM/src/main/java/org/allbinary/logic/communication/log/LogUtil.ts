@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
 import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';

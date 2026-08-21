@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { Connection } from '../../../../../../../java/sql/Connection.js';
       
 import { DriverManager } from '../../../../../../../java/sql/DriverManager.js';

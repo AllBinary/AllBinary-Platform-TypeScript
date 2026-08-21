@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
       
 

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
       
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';

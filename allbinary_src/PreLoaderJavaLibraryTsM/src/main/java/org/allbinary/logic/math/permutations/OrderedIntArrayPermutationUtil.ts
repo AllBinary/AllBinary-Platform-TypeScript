@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { System } from '../../../../../java/lang/System.js';
         
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';

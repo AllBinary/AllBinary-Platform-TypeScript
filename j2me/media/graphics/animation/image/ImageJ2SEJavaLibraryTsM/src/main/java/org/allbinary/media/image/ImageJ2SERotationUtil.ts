@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
             import { Math } from '../../../../java/lang/Math.js';
         
 import { Graphics2D } from '../../../../java/awt/Graphics2D.js';

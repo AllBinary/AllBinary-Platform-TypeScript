@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
       
 

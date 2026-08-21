@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { ResourceLoadingLevel } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevel.js';
       
 import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';

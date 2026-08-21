@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { URL } from '../../../../../java/net/URL.js';
       
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';

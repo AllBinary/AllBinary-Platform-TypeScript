@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { HashMap } from '../../../../java/util/HashMap.js';
       
 import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';

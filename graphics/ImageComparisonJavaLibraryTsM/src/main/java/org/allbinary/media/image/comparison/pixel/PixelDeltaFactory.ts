@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';

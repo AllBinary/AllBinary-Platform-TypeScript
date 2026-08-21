@@ -6,10 +6,6 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { Activity } from '../../../android/app/Activity.js';
       
 import { View } from '../../../android/view/View.js';

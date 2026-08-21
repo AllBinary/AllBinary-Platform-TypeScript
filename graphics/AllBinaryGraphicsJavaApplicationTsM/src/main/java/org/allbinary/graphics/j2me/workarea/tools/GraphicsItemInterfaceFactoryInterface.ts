@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
       
 

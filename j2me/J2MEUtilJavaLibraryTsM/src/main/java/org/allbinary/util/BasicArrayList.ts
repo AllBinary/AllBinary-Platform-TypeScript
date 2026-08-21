@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
             import { IndexOutOfBoundsException } from '../../../java/lang/IndexOutOfBoundsException.js';
         
             import { System } from '../../../java/lang/System.js';

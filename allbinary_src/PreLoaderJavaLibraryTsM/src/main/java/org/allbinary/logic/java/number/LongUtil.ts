@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { CommonPhoneStrings } from '../../../../../org/allbinary/string/CommonPhoneStrings.js';

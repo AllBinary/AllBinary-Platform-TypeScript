@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
             import { Class } from '../../../java/lang/Class.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';

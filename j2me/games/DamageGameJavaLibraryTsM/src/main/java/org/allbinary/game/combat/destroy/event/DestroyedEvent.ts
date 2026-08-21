@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
       
 import { NullGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/NullGameCanvas.js';

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';

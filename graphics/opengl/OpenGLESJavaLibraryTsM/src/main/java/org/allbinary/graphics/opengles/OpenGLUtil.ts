@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../java/lang/Exception.js';
         
             import { Runnable } from '../../../../java/lang/Runnable.js';

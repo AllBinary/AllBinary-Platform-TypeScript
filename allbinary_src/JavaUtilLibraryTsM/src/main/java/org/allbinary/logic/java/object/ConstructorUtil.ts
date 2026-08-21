@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { Class } from '../../../../../java/lang/Class.js';
         
 import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';

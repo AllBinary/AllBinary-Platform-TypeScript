@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { InitInterface } from '../../../../org/allbinary/init/InitInterface.js';
       
 import { UpdateInterface } from '../../../../org/allbinary/init/UpdateInterface.js';

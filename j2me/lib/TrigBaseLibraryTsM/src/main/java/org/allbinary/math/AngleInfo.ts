@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { VirtualKeyboardEvent } from '../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
       
 import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';

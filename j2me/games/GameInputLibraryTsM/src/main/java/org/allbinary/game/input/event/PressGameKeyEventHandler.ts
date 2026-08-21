@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';

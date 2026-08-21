@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
       
 import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
       
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';

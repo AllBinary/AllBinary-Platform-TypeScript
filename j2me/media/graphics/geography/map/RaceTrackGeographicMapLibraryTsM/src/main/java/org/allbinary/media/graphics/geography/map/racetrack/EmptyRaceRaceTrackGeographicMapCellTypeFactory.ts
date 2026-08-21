@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       
 import { PathFindingNodeCostInfoData } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoData.js';

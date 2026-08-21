@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
       
 import { NamedAngle } from '../../../../org/allbinary/math/NamedAngle.js';

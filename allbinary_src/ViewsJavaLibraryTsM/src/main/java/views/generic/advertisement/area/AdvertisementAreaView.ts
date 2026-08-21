@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AdvertisementAreaData } from '../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js';

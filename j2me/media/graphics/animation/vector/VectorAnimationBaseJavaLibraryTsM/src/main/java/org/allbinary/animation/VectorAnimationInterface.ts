@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { ColorCompositeInterface } from '../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
       
 

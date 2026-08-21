@@ -20,10 +20,6 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/AndroidInfoFactory.js';

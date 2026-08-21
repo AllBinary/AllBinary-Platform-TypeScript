@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { Map } from '../../../../java/util/Map.js';
       
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';

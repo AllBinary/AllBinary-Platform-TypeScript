@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
       
 import { LogDbInitInfo } from '../../../../../org/allbinary/business/init/db/LogDbInitInfo.js';

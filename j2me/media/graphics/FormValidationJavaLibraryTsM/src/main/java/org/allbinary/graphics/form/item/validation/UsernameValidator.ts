@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
       
 

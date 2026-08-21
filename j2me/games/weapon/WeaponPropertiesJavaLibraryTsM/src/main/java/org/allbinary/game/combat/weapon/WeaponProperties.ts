@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';

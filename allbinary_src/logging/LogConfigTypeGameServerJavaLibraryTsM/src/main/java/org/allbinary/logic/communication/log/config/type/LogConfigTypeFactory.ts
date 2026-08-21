@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { LogConfigTypes } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
       
 import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';

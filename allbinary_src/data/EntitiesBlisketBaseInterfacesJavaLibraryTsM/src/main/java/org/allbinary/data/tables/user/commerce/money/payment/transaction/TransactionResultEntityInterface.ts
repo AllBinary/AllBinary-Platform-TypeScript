@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../../java/lang/Object.js';
-
-
-        
 import { TransactionResultInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/TransactionResultInterface.js';
       
 import { BasicDataTableInterface } from '../../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';

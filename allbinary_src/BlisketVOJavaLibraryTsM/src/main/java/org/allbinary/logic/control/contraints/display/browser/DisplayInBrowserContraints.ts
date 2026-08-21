@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
       
 

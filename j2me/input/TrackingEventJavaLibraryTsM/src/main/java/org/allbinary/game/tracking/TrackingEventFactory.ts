@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
       
 import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';

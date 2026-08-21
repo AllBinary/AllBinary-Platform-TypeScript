@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
       
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';

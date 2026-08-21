@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../java/lang/Object.js';
-
-
-        
 import { StoreFront } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFront.js';
       
 import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';

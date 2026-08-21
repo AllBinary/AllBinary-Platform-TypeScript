@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../java/lang/Object.js';
-
-
-        
 import { InputImageType } from '../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
       
 

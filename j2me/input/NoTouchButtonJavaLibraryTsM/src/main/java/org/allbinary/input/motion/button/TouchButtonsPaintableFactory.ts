@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
       
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';

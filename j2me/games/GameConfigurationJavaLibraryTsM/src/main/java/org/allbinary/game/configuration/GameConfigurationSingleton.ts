@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { Hashtable } from '../../../../java/util/Hashtable.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';

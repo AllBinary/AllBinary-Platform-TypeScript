@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
       
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { Activity } from '../../../../../../android/app/Activity.js';
       
 import { MidletActivityBase } from '../../../../../../org/allbinary/android/activity/MidletActivityBase.js';

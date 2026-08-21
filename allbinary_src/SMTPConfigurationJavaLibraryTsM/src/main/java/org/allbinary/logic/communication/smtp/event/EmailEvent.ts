@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { EventObject } from '../../../../../../java/util/EventObject.js';
       
 import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';

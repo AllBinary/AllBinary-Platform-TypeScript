@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { GameConfiguration } from '../../../../../org/allbinary/game/configuration/GameConfiguration.js';
       
 

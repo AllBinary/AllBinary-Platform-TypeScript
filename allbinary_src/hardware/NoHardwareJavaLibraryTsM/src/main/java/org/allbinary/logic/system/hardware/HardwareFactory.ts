@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/system/os/OperatingSystemInterface.js';

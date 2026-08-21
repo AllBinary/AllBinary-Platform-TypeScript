@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
       
 import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';

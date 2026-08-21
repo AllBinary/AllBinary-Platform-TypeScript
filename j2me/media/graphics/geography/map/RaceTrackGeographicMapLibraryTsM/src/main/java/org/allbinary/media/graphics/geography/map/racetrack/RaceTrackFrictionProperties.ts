@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { FrictionData } from '../../../../../../../org/allbinary/game/physics/friction/FrictionData.js';
       
 

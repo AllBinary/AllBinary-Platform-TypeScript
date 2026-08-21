@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../../java/lang/Object.js';
-
-
-        
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
       
 import { TableMappingInterface } from '../../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';

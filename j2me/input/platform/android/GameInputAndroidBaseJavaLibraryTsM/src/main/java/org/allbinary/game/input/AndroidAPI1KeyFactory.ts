@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       
 

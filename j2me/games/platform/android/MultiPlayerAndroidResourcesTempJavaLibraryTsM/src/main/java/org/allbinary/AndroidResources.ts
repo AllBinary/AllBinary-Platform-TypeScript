@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../java/lang/Object.js';
-
-
-        
 import { R } from '../../org/allbinary/game/testgamedemo/R.js';
       
 

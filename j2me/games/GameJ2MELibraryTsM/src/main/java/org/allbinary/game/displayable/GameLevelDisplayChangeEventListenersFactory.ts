@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { DisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
       
 import { DisplayChangeEventListener } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';

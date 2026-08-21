@@ -17,10 +17,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';

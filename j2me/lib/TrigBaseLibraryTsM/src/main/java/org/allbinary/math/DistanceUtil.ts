@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
       
 

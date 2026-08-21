@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { GeographicMapCellHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
       
 

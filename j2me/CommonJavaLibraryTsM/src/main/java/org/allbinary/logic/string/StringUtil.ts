@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 
 
 
@@ -58,7 +54,7 @@ export class StringUtil
 }
 
 
-    public readonly INIT_STRING: string = "";
+    public readonly INIT_STRING: string = .toCharArray();
 
     public readonly NULL_STRING: string = "null";
 

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
       
 

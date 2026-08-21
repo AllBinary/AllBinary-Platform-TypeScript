@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
       
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';

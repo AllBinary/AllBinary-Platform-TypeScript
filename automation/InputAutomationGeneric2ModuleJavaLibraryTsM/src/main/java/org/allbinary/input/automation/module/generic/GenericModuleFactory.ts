@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AbstractInputAutomationFactory } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';

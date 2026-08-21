@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
       
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';

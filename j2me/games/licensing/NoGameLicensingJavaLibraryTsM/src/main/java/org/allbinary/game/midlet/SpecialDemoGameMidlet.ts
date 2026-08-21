@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
       
 import { LicenseServerInitFileUtil } from '../../../../org/allbinary/logic/system/security/licensing/LicenseServerInitFileUtil.js';

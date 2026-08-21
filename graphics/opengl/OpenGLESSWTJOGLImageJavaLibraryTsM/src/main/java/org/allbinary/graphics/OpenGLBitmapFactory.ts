@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { IOException } from '../../../java/io/IOException.js';
       
 import { InputStream } from '../../../java/io/InputStream.js';

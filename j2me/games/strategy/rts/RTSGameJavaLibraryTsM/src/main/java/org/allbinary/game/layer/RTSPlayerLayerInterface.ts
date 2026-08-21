@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { BuildMenuCompositeInterface } from '../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js';
       
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';

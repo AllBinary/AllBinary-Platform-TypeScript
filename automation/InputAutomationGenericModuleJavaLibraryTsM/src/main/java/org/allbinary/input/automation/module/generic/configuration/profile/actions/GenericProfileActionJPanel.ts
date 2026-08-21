@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../../java/lang/Object.js';
-
-
-        
 import { JTreeInterfaceFactory } from '../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
       
 import { AlwaysActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/AlwaysActionScriptCondition.js';

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
       
 

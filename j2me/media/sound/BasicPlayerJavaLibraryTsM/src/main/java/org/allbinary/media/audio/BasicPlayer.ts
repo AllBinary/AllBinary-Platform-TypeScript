@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { Control } from '../../../../javax/microedition/media/Control.js';
       
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';

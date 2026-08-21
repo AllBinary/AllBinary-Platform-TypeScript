@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../../../../java/lang/Object.js';
-
-
-        
 import { MouseEvent } from '../../../../../../../../../../java/awt/event/MouseEvent.js';
       
 import { swing } from '../../../../../../../../../../javax/swing.js';

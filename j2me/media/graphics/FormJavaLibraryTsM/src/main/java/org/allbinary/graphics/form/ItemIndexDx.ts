@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';

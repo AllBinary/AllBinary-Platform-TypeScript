@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { AssignWaypointsUtil } from '../../../../org/allbinary/game/input/form/AssignWaypointsUtil.js';
       
 import { AdvancedRTSGameLayer } from '../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';

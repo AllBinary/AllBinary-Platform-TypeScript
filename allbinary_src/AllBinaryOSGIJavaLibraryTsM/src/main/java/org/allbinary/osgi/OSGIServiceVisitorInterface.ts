@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { VisitorInterface } from '../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
       
 

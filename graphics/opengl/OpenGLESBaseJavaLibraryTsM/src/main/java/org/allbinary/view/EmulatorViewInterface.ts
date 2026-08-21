@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
       
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';

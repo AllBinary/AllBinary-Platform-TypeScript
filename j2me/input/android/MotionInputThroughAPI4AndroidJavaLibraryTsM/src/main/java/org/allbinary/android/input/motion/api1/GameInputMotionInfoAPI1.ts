@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { GameInputMotionInfo } from '../../../../../../org/allbinary/android/input/motion/GameInputMotionInfo.js';
       
 

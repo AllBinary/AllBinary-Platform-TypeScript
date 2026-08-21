@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
       
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';

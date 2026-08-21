@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
             import { Thread } from '../../../java/lang/Thread.js';
         
             import { Runnable } from '../../../java/lang/Runnable.js';

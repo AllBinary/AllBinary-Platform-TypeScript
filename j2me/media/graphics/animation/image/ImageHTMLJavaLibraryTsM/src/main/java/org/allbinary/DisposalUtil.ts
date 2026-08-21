@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../java/lang/Object.js';
-
-
-        
 import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
       
 

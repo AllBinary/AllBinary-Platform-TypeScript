@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { InputStream } from '../../../java/io/InputStream.js';
       
 import { Image } from '../../../javax/microedition/lcdui/Image.js';

@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
       
 import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';

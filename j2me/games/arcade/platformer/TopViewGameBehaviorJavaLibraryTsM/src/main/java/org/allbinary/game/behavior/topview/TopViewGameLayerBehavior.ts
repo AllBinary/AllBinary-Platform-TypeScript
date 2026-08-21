@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../java/lang/Object.js';
-
-
-        
 import { GameLayerBehavior } from '../../../../../org/allbinary/game/layer/behavior/GameLayerBehavior.js';
       
 import { BasicAccelerationProperties } from '../../../../../org/allbinary/game/physics/acceleration/BasicAccelerationProperties.js';

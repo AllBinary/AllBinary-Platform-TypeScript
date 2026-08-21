@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
       
 

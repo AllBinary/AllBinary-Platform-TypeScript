@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../../java/lang/Object.js';
-
-
-        
 import { awt } from '../../../../../../../java/awt.js';
       
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';

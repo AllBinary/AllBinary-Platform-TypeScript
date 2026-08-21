@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { awt } from '../../../../java/awt.js';
       
 import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';

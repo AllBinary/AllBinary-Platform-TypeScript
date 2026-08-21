@@ -4,10 +4,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { OpenGLImageUtilBase } from '../../../org/allbinary/image/opengles/OpenGLImageUtilBase.js';
       
 

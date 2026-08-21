@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { Font } from '../../../javax/microedition/lcdui/Font.js';
       
 import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';

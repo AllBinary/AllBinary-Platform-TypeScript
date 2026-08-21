@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../java/lang/Object.js';
-
-
-        
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
       
 import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';

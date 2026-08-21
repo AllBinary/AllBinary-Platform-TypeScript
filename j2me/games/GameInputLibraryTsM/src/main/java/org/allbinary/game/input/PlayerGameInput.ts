@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';

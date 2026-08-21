@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';

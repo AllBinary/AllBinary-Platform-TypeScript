@@ -17,10 +17,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { CompositeSound } from '../../../../org/allbinary/media/audio/CompositeSound.js';
       
 import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';

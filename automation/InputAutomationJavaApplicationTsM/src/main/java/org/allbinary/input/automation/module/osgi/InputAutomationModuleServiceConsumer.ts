@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../../../java/lang/Object.js';
-
-
-        
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
       
 import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';

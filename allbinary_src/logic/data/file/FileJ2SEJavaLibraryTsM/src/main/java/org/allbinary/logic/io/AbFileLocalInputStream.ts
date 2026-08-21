@@ -18,10 +18,6 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
-
-
-        
 import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
       
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
