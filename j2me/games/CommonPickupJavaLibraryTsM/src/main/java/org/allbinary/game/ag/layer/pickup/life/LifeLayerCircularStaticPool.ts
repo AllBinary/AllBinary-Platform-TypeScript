@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Life } from '../../../../../../../org/allbinary/game/life/Life.js';
-      const Life = globalThis.org.allbinary.game.life.Life;
+import { Life } from '../../../../../../../org/allbinary/game/ag/life/Life.js';
+      //not GWT import and is game specific code const Life = globalThis.org.allbinary.game.ag.life.Life;
 
       
-//not game specific package import { LifeInterfaceCompositeInterface } from '../../../../../../../org/allbinary/game/life/LifeInterfaceCompositeInterface.js';
-      const LifeInterfaceCompositeInterface = globalThis.org.allbinary.game.life.LifeInterfaceCompositeInterface;
+import { LifeInterfaceCompositeInterface } from '../../../../../../../org/allbinary/game/ag/life/LifeInterfaceCompositeInterface.js';
+      //not GWT import and is game specific code const LifeInterfaceCompositeInterface = globalThis.org.allbinary.game.ag.life.LifeInterfaceCompositeInterface;
 
       
 //not game specific package import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';

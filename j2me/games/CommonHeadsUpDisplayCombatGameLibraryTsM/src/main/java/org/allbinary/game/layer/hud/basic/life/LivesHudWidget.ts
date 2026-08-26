@@ -28,12 +28,12 @@
       const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
-      const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
+import { Life } from '../../../../../../../org/allbinary/game/ag/life/Life.js';
+      //not GWT import and is game specific code const Life = globalThis.org.allbinary.game.ag.life.Life;
 
       
-//not game specific package import { Life } from '../../../../../../../org/allbinary/game/life/Life.js';
-      const Life = globalThis.org.allbinary.game.life.Life;
+//not game specific package import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+      const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
 
       
 //not game specific package import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';

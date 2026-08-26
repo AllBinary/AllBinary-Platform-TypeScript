@@ -24,12 +24,12 @@
       const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Life } from '../../../../../../../org/allbinary/game/life/Life.js';
-      const Life = globalThis.org.allbinary.game.life.Life;
+import { Life } from '../../../../../../../org/allbinary/game/ag/life/Life.js';
+      //not GWT import and is game specific code const Life = globalThis.org.allbinary.game.ag.life.Life;
 
       
-//not game specific package import { LifeVisitorInterface } from '../../../../../../../org/allbinary/game/life/LifeVisitorInterface.js';
-      const LifeVisitorInterface = globalThis.org.allbinary.game.life.LifeVisitorInterface;
+import { LifeVisitorInterface } from '../../../../../../../org/allbinary/game/ag/life/LifeVisitorInterface.js';
+      //not GWT import and is game specific code const LifeVisitorInterface = globalThis.org.allbinary.game.ag.life.LifeVisitorInterface;
 
       
 //not game specific package import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
