@@ -22,15 +22,25 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+//not game specific package import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+      const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
+
       
-import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
 
 
@@ -138,7 +148,7 @@ this.positionString= PositionWidget.toString(this.get());
 
 
     public paint(graphics: Graphics){
-super.paint(graphics, this.positionString);
+super.paintString(graphics, this.positionString);
     
 }
 

@@ -20,15 +20,25 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { TransformInfoHttpFactory } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpFactory.js';
+//not game specific package import { TransformInfoHttpFactory } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpFactory.js';
+      const TransformInfoHttpFactory = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpFactory;
+
       
-import { TransformInfoHttpInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+//not game specific package import { TransformInfoHttpInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+      const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
+
       
-import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProcessorComponent.js';
+//not game specific package import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProcessorComponent.js';
+      const PaymentProcessorComponent = globalThis.views.admin.payment.PaymentProcessorComponent;
+
       
 
 

@@ -22,44 +22,81 @@
         
             import { Long } from '../../../../../../../java/lang/Long.js';
         
+////not game specific package import { Date } from '../../../../../../../java/util/Date.js';
+      const Date = globalThis.java.util.Date;
 
-//import { Date } from '../../../../../../../java/util/Date.js';
       
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Set } from '../../../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
+//not game specific package import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
+      const UserData = globalThis.org.allbinary.business.user.UserData;
+
       
-import { BillingAddressData } from '../../../../../../../org/allbinary/business/user/address/BillingAddressData.js';
+//not game specific package import { BillingAddressData } from '../../../../../../../org/allbinary/business/user/address/BillingAddressData.js';
+      const BillingAddressData = globalThis.org.allbinary.business.user.address.BillingAddressData;
+
       
-import { ShippingAddressData } from '../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
+//not game specific package import { ShippingAddressData } from '../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
+      const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
+
       
-import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+//not game specific package import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+
       
-import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
+//not game specific package import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
+      const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
+
       
-import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+//not game specific package import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+
       
-import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+//not game specific package import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+
       
-import { Payment } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
+//not game specific package import { Payment } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
+      const Payment = globalThis.org.allbinary.business.user.commerce.money.payment.Payment;
+
       
-import { PaymentData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+//not game specific package import { PaymentData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+      const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+
       
-import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+//not game specific package import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+      const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+
       
-import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+//not game specific package import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
       
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

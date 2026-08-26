@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+
       
 
 

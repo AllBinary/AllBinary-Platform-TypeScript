@@ -20,7 +20,9 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
+//not game specific package import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
+      const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
+
       
 
 

@@ -24,23 +24,41 @@
         
             import { System } from '../../../../java/lang/System.js';
         
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+//not game specific package import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+
       
-import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+//not game specific package import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { SubDirectory } from '../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+//not game specific package import { SubDirectory } from '../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+      const SubDirectory = globalThis.org.allbinary.logic.io.file.directory.SubDirectory;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

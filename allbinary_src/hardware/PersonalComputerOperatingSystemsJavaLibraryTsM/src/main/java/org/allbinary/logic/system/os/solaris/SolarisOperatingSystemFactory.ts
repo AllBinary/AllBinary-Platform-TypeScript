@@ -22,21 +22,37 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+//not game specific package import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+
       
-import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+//not game specific package import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+
       
-import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+//not game specific package import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
       
-import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/NoOperatingSystem.js';
+//not game specific package import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/NoOperatingSystem.js';
+      const NoOperatingSystem = globalThis.org.allbinary.logic.system.os.NoOperatingSystem;
+
       
-import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+//not game specific package import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+      const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
+
       
-import { SystemProperties } from '../../../../../../org/allbinary/logic/system/os/SystemProperties.js';
+//not game specific package import { SystemProperties } from '../../../../../../org/allbinary/logic/system/os/SystemProperties.js';
+      const SystemProperties = globalThis.org.allbinary.logic.system.os.SystemProperties;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

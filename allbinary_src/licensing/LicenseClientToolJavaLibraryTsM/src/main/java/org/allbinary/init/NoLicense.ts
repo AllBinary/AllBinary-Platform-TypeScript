@@ -24,7 +24,9 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Globals } from '../../../org/allbinary/globals/Globals.js';
+//not game specific package import { Globals } from '../../../org/allbinary/globals/Globals.js';
+      const Globals = globalThis.org.allbinary.globals.Globals;
+
       
 
 

@@ -20,47 +20,89 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from '../../../../../../../../java/io/ByteArrayInputStream.js';
+//not game specific package import { ByteArrayInputStream } from '../../../../../../../../java/io/ByteArrayInputStream.js';
+      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+
       
-import { InputStream } from '../../../../../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { WeblisketSession } from '../../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+//not game specific package import { WeblisketSession } from '../../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+
       
-import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
+//not game specific package import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
+      const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
+
       
-import { AbFile } from '../../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FileUtil } from '../../../../../../../../org/allbinary/logic/io/file/FileUtil.js';
+//not game specific package import { FileUtil } from '../../../../../../../../org/allbinary/logic/io/file/FileUtil.js';
+      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+
       
-import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { AbPathData } from '../../../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { Replace } from '../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+//not game specific package import { Replace } from '../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+      const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
+
       
-import { TransformInfoHttpInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+//not game specific package import { TransformInfoHttpInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+      const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
+
       
-import { TransformInfoHttpStoreInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreInterface.js';
+//not game specific package import { TransformInfoHttpStoreInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreInterface.js';
+      const TransformInfoHttpStoreInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStoreInterface;
+
       
-import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+//not game specific package import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+      const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
+
       
-import { CommonSeps } from '../../../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

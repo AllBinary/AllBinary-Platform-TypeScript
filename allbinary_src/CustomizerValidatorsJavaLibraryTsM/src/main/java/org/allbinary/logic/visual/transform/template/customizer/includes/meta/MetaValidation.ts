@@ -20,29 +20,53 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+//not game specific package import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
+//not game specific package import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
+      const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
+
       
-import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { HtmlMetaAttributeData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeData.js';
+//not game specific package import { HtmlMetaAttributeData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeData.js';
+      const HtmlMetaAttributeData = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetaAttributeData;
+
       
-import { HtmlMetaAttributeDataFactory } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeDataFactory.js';
+//not game specific package import { HtmlMetaAttributeDataFactory } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeDataFactory.js';
+      const HtmlMetaAttributeDataFactory = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetaAttributeDataFactory;
+
       
-import { HtmlMetaData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaData.js';
+//not game specific package import { HtmlMetaData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaData.js';
+      const HtmlMetaData = globalThis.org.allbinary.logic.visual.dhtml.html.head.meta.HtmlMetaData;
+
       
-import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

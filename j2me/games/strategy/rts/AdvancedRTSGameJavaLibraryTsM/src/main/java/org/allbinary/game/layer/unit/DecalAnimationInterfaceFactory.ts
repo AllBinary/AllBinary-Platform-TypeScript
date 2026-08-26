@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
+//not game specific package import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
+      const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
+
       
-import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+//not game specific package import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+      const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+
       
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
+//not game specific package import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
+      const FeaturedAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.FeaturedAnimationInterfaceFactoryInterfaceFactory;
+
       
-import { NullRotationAnimationFactory } from '../../../../../org/allbinary/animation/NullRotationAnimationFactory.js';
+//not game specific package import { NullRotationAnimationFactory } from '../../../../../org/allbinary/animation/NullRotationAnimationFactory.js';
+      const NullRotationAnimationFactory = globalThis.org.allbinary.animation.NullRotationAnimationFactory;
+
       
-import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
 
 

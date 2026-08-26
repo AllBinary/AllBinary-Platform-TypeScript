@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BufferedReader } from '../../../../java/io/BufferedReader.js';
+//not game specific package import { BufferedReader } from '../../../../java/io/BufferedReader.js';
+      const BufferedReader = globalThis.java.io.BufferedReader;
+
       
-import { FileReader } from '../../../../java/io/FileReader.js';
+//not game specific package import { FileReader } from '../../../../java/io/FileReader.js';
+      const FileReader = globalThis.java.io.FileReader;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+//not game specific package import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+      const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+
       
 
 

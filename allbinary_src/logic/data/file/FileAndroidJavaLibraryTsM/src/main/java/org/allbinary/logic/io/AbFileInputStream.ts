@@ -18,15 +18,25 @@
 
 
 
-import { FileInputStream } from '../../../../java/io/FileInputStream.js';
+//not game specific package import { FileInputStream } from '../../../../java/io/FileInputStream.js';
+      const FileInputStream = globalThis.java.io.FileInputStream;
+
       
-import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
+//not game specific package import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
+      const FileNotFoundException = globalThis.java.io.FileNotFoundException;
+
       
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { InputStream } from '../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
+//not game specific package import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
+      const FileChannel = globalThis.java.nio.channels.FileChannel;
+
       
 
 

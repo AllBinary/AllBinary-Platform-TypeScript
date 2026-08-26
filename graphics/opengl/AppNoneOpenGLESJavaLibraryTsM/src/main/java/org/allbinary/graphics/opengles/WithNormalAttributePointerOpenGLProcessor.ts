@@ -20,9 +20,13 @@
 
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { ObjectThreedOpenGLProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/processor/ObjectThreedOpenGLProcessor.js';
+//not game specific package import { ObjectThreedOpenGLProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/processor/ObjectThreedOpenGLProcessor.js';
+      const ObjectThreedOpenGLProcessor = globalThis.org.allbinary.graphics.threed.min3d.renderer.processor.ObjectThreedOpenGLProcessor;
+
       
 
 

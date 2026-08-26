@@ -20,25 +20,45 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+//not game specific package import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
+//not game specific package import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
+      const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
+
       
-import { Direction } from '../../../../org/allbinary/direction/Direction.js';
+//not game specific package import { Direction } from '../../../../org/allbinary/direction/Direction.js';
+      const Direction = globalThis.org.allbinary.direction.Direction;
+
       
-import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not game specific package import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+      const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+
       
-import { Angle } from '../../../../org/allbinary/math/Angle.js';
+//not game specific package import { Angle } from '../../../../org/allbinary/math/Angle.js';
+      const Angle = globalThis.org.allbinary.math.Angle;
+
       
-import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
-import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
       
-import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+//not game specific package import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
       
 
 

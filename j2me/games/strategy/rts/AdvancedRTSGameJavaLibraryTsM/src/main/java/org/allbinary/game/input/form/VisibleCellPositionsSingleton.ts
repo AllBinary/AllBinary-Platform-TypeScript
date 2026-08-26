@@ -22,33 +22,61 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { SimpleTiledLayer } from '../../../../../javax/microedition/lcdui/game/SimpleTiledLayer.js';
+//not game specific package import { SimpleTiledLayer } from '../../../../../javax/microedition/lcdui/game/SimpleTiledLayer.js';
+      const SimpleTiledLayer = globalThis.javax.microedition.lcdui.game.SimpleTiledLayer;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
+//not game specific package import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
+      const RTSLayerEvent = globalThis.org.allbinary.game.layer.RTSLayerEvent;
+
       
-import { BuildingEventListenerInterface } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventListenerInterface.js';
+//not game specific package import { BuildingEventListenerInterface } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventListenerInterface.js';
+      const BuildingEventListenerInterface = globalThis.org.allbinary.game.layer.building.event.BuildingEventListenerInterface;
+
       
-import { LocalPlayerBuildingEventHandler } from '../../../../../org/allbinary/game/layer/building/event/LocalPlayerBuildingEventHandler.js';
+//not game specific package import { LocalPlayerBuildingEventHandler } from '../../../../../org/allbinary/game/layer/building/event/LocalPlayerBuildingEventHandler.js';
+      const LocalPlayerBuildingEventHandler = globalThis.org.allbinary.game.layer.building.event.LocalPlayerBuildingEventHandler;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
+//not game specific package import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
+      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+
       
-import { ScrollMapEvent } from '../../../../../org/allbinary/layer/event/ScrollMapEvent.js';
+//not game specific package import { ScrollMapEvent } from '../../../../../org/allbinary/layer/event/ScrollMapEvent.js';
+      const ScrollMapEvent = globalThis.org.allbinary.layer.event.ScrollMapEvent;
+
       
-import { ScrollMapEventHandler } from '../../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
+//not game specific package import { ScrollMapEventHandler } from '../../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
+      const ScrollMapEventHandler = globalThis.org.allbinary.layer.event.ScrollMapEventHandler;
+
       
-import { ScrollMapEventListenerInterface } from '../../../../../org/allbinary/layer/event/ScrollMapEventListenerInterface.js';
+//not game specific package import { ScrollMapEventListenerInterface } from '../../../../../org/allbinary/layer/event/ScrollMapEventListenerInterface.js';
+      const ScrollMapEventListenerInterface = globalThis.org.allbinary.layer.event.ScrollMapEventListenerInterface;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
 
 

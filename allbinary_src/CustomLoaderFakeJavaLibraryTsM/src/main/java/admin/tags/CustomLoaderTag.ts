@@ -20,21 +20,37 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { AppUrlGlobals } from '../../org/allbinary/globals/AppUrlGlobals.js';
+//not game specific package import { AppUrlGlobals } from '../../org/allbinary/globals/AppUrlGlobals.js';
+      const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
+
       
-import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
+//not game specific package import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
+      const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+
       
-import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+//not game specific package import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+      const CustomTagSupport = globalThis.tags.CustomTagSupport;
+
       
 
 

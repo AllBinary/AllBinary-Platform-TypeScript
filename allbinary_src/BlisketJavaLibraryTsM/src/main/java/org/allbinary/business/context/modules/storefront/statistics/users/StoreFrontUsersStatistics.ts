@@ -24,21 +24,37 @@
         
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
-import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Set } from '../../../../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { Vector } from '../../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
+//not game specific package import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
+      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
       
-import { UserRole } from '../../../../../../../../org/allbinary/business/user/role/UserRole.js';
+//not game specific package import { UserRole } from '../../../../../../../../org/allbinary/business/user/role/UserRole.js';
+      const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+
       
-import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
+//not game specific package import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
+      const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
+
       
-import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js';
+//not game specific package import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js';
+      const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
+
       
 
 

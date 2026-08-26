@@ -18,17 +18,29 @@
 
 
 
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
+//not game specific package import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
+      const ColorCompositeInterface = globalThis.org.allbinary.graphics.color.ColorCompositeInterface;
+
       
-import { PositionInterface } from '../../../../org/allbinary/layer/PositionInterface.js';
+//not game specific package import { PositionInterface } from '../../../../org/allbinary/layer/PositionInterface.js';
+      const PositionInterface = globalThis.org.allbinary.layer.PositionInterface;
+
       
-import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

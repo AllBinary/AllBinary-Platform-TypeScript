@@ -18,9 +18,13 @@
 
 
 
-import { Control } from '../../../../javax/microedition/media/Control.js';
+//not game specific package import { Control } from '../../../../javax/microedition/media/Control.js';
+      const Control = globalThis.javax.microedition.media.Control;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

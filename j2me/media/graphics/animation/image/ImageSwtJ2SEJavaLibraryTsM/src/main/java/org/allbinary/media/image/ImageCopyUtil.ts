@@ -22,41 +22,77 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+//not game specific package import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+      const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+
       
-import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
       
-import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+//not game specific package import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+
       
-import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
+//not game specific package import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
+      const OpenGLUtil = globalThis.org.allbinary.graphics.opengles.OpenGLUtil;
+
       
-import { OpenGLESDeviceImageTranslate } from '../../../../org/allbinary/image/opengles/OpenGLESDeviceImageTranslate.js';
+//not game specific package import { OpenGLESDeviceImageTranslate } from '../../../../org/allbinary/image/opengles/OpenGLESDeviceImageTranslate.js';
+      const OpenGLESDeviceImageTranslate = globalThis.org.allbinary.image.opengles.OpenGLESDeviceImageTranslate;
+
       
-import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not game specific package import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
       
-import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
+//not game specific package import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
+      const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
+
       
-import { OpenGLESImageProperties } from '../../../../org/allbinary/image/opengles/OpenGLESImageProperties.js';
+//not game specific package import { OpenGLESImageProperties } from '../../../../org/allbinary/image/opengles/OpenGLESImageProperties.js';
+      const OpenGLESImageProperties = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+//not game specific package import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+      const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+
       
-import { SwtDeviceComponent } from '../../../../org/microemu/app/ui/swt/SwtDeviceComponent.js';
+//not game specific package import { SwtDeviceComponent } from '../../../../org/microemu/app/ui/swt/SwtDeviceComponent.js';
+      const SwtDeviceComponent = globalThis.org.microemu.app.ui.swt.SwtDeviceComponent;
+
       
-import { PostLoadSwtImmutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtImmutableImageProcessor.js';
+//not game specific package import { PostLoadSwtImmutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtImmutableImageProcessor.js';
+      const PostLoadSwtImmutableImageProcessor = globalThis.org.microemu.device.swt.PostLoadSwtImmutableImageProcessor;
+
       
-import { PostLoadSwtMutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtMutableImageProcessor.js';
+//not game specific package import { PostLoadSwtMutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtMutableImageProcessor.js';
+      const PostLoadSwtMutableImageProcessor = globalThis.org.microemu.device.swt.PostLoadSwtMutableImageProcessor;
+
       
-import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
+//not game specific package import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
+      const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
+
       
-import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
+//not game specific package import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
+      const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+
       
 
 

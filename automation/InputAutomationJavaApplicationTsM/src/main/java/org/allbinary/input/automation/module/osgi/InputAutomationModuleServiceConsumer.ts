@@ -18,11 +18,17 @@
 
 
 
-import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
-import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';
+//not game specific package import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';
+      const InputAutomationModuleServiceInterface = globalThis.bundle.input.automation.module.InputAutomationModuleServiceInterface;
+
       
-import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
+//not game specific package import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
+      const InputAutomationServiceConsumer = globalThis.org.allbinary.osgi.service.InputAutomationServiceConsumer;
+
       
 
 

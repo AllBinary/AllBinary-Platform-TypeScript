@@ -12,21 +12,37 @@
         
             import { System } from '../../../../../../java/lang/System.js';
         
-import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
+//not game specific package import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
+      const BufferedReader = globalThis.java.io.BufferedReader;
+
       
-import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
+//not game specific package import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
+      const InputStreamReader = globalThis.java.io.InputStreamReader;
+
       
-import { Properties } from '../../../../../../java/util/Properties.js';
+//not game specific package import { Properties } from '../../../../../../java/util/Properties.js';
+      const Properties = globalThis.java.util.Properties;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+//not game specific package import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
       
-import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+//not game specific package import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+
       
-import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+//not game specific package import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+      const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

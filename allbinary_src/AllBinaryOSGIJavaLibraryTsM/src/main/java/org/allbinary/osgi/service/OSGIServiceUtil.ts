@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
-import { ServiceReference } from '../../../../org/osgi/framework/ServiceReference.js';
+//not game specific package import { ServiceReference } from '../../../../org/osgi/framework/ServiceReference.js';
+      const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
+//not game specific package import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
+      const OSGIServiceInterface = globalThis.org.allbinary.osgi.OSGIServiceInterface;
+
       
 
 

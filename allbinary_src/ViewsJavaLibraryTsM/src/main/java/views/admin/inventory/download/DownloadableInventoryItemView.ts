@@ -20,51 +20,97 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+//not game specific package import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+
       
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+//not game specific package import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+
       
-import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+//not game specific package import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+
       
-import { BasicItemView } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
+//not game specific package import { BasicItemView } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
+      const BasicItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemView;
+
       
-import { ItemInterface } from '../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+//not game specific package import { ItemInterface } from '../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+      const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+
       
-import { DownloadableItem } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
+//not game specific package import { DownloadableItem } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
+      const DownloadableItem = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
+
       
-import { DownloadableItemView } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemView.js';
+//not game specific package import { DownloadableItemView } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemView.js';
+      const DownloadableItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItemView;
+
       
-import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { MultipartRequestParams } from '../../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js';
+//not game specific package import { MultipartRequestParams } from '../../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js';
+      const MultipartRequestParams = globalThis.org.allbinary.logic.communication.http.request.MultipartRequestParams;
+
       
-import { RequestMapInterface } from '../../../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
+//not game specific package import { RequestMapInterface } from '../../../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
+      const RequestMapInterface = globalThis.org.allbinary.logic.communication.http.request.RequestMapInterface;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FilePathData } from '../../../../org/allbinary/logic/io/file/FilePathData.js';
+//not game specific package import { FilePathData } from '../../../../org/allbinary/logic/io/file/FilePathData.js';
+      const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+
       
-import { FileUtil } from '../../../../org/allbinary/logic/io/file/FileUtil.js';
+//not game specific package import { FileUtil } from '../../../../org/allbinary/logic/io/file/FileUtil.js';
+      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+
       
-import { ZipFileUtil } from '../../../../org/allbinary/logic/io/file/zip/ZipFileUtil.js';
+//not game specific package import { ZipFileUtil } from '../../../../org/allbinary/logic/io/file/zip/ZipFileUtil.js';
+      const ZipFileUtil = globalThis.org.allbinary.logic.io.file.zip.ZipFileUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { FileItem } from '../../../../org/apache/commons/fileupload/FileItem.js';
+//not game specific package import { FileItem } from '../../../../org/apache/commons/fileupload/FileItem.js';
+      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+
       
-import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+//not game specific package import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+
       
 
 

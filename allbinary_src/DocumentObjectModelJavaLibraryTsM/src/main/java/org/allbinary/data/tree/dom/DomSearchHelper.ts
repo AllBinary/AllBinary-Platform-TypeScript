@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

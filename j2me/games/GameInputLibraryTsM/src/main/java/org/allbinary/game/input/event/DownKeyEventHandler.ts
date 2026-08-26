@@ -18,9 +18,13 @@
 
 
 
-import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
+//not game specific package import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
+      const LocalPlayerInputIdFactory = globalThis.org.allbinary.game.input.LocalPlayerInputIdFactory;
+
       
-import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+//not game specific package import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+      const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+
       
 
 

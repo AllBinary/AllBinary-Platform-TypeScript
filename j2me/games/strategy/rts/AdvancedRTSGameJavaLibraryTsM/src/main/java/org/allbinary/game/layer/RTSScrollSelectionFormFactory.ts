@@ -22,25 +22,45 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+//not game specific package import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
       
-import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
       
-import { FormTypeFactory } from '../../../../org/allbinary/graphics/form/FormTypeFactory.js';
+//not game specific package import { FormTypeFactory } from '../../../../org/allbinary/graphics/form/FormTypeFactory.js';
+      const FormTypeFactory = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+
       
-import { MultipleScrollSelectionHorizontalForm } from '../../../../org/allbinary/graphics/form/MultipleScrollSelectionHorizontalForm.js';
+//not game specific package import { MultipleScrollSelectionHorizontalForm } from '../../../../org/allbinary/graphics/form/MultipleScrollSelectionHorizontalForm.js';
+      const MultipleScrollSelectionHorizontalForm = globalThis.org.allbinary.graphics.form.MultipleScrollSelectionHorizontalForm;
+
       
-import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+//not game specific package import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+      const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+
       
-import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
+//not game specific package import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
+      const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
+
       
-import { TouchButtonLocationHelper } from '../../../../org/allbinary/input/motion/button/TouchButtonLocationHelper.js';
+//not game specific package import { TouchButtonLocationHelper } from '../../../../org/allbinary/input/motion/button/TouchButtonLocationHelper.js';
+      const TouchButtonLocationHelper = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
+
       
 
 

@@ -24,25 +24,45 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
+//not game specific package import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
+      const AbDataInputStream = globalThis.org.allbinary.logic.io.AbDataInputStream;
+
       
-import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+//not game specific package import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+      const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+
       
-import { AbFileInputStream } from '../../../../org/allbinary/logic/io/AbFileInputStream.js';
+//not game specific package import { AbFileInputStream } from '../../../../org/allbinary/logic/io/AbFileInputStream.js';
+      const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+
       
-import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+//not game specific package import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+      const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
+
       
-import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
+//not game specific package import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
+      const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
+
       
-import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+//not game specific package import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

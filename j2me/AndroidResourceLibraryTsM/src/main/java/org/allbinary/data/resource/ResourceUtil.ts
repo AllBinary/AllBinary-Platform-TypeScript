@@ -24,35 +24,65 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { InputStream } from '../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Activity } from '../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { Context } from '../../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { Resources } from '../../../../android/content/res/Resources.js';
+//not game specific package import { Resources } from '../../../../android/content/res/Resources.js';
+      const Resources = globalThis.android.content.res.Resources;
+
       
-import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
+//not game specific package import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
+      const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
+
       
-import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
+//not game specific package import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
+      const NoDebug = globalThis.org.allbinary.debug.NoDebug;
+
       
-import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
+//not game specific package import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
+      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
       
 
 

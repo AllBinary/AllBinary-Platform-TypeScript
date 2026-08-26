@@ -26,19 +26,33 @@
         
             import { Float } from '../../../../../../../java/lang/Float.js';
         
-import { HashSet } from '../../../../../../../java/util/HashSet.js';
+//not game specific package import { HashSet } from '../../../../../../../java/util/HashSet.js';
+      const HashSet = globalThis.java.util.HashSet;
+
       
-import { Set } from '../../../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { Item } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js';
+//not game specific package import { Item } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/Item.js';
+      const Item = globalThis.org.allbinary.business.user.commerce.inventory.item.Item;
+
       
-import { ItemView } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemView.js';
+//not game specific package import { ItemView } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemView.js';
+      const ItemView = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemView;
+
       
-import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

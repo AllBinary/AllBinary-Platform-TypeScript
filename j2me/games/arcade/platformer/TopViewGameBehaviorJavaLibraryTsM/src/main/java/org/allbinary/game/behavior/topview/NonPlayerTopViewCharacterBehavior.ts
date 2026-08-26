@@ -20,31 +20,57 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MultiGeographicMapBehavior } from '../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js';
+//not game specific package import { MultiGeographicMapBehavior } from '../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js';
+      const MultiGeographicMapBehavior = globalThis.org.allbinary.media.graphics.geography.map.MultiGeographicMapBehavior;
+
       
-import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
+//not game specific package import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
+      const Direction = globalThis.org.allbinary.direction.Direction;
+
       
-import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
+//not game specific package import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
+      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+
       
-import { BasicTerrainInfo } from '../../../../../org/allbinary/game/terrain/BasicTerrainInfo.js';
+//not game specific package import { BasicTerrainInfo } from '../../../../../org/allbinary/game/terrain/BasicTerrainInfo.js';
+      const BasicTerrainInfo = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
+
       
-import { TerrainEvent } from '../../../../../org/allbinary/game/terrain/TerrainEvent.js';
+//not game specific package import { TerrainEvent } from '../../../../../org/allbinary/game/terrain/TerrainEvent.js';
+      const TerrainEvent = globalThis.org.allbinary.game.terrain.TerrainEvent;
+
       
-import { TerrainEventCircularStaticPool } from '../../../../../org/allbinary/game/terrain/TerrainEventCircularStaticPool.js';
+//not game specific package import { TerrainEventCircularStaticPool } from '../../../../../org/allbinary/game/terrain/TerrainEventCircularStaticPool.js';
+      const TerrainEventCircularStaticPool = globalThis.org.allbinary.game.terrain.TerrainEventCircularStaticPool;
+
       
-import { TerrainEventHandler } from '../../../../../org/allbinary/game/terrain/TerrainEventHandler.js';
+//not game specific package import { TerrainEventHandler } from '../../../../../org/allbinary/game/terrain/TerrainEventHandler.js';
+      const TerrainEventHandler = globalThis.org.allbinary.game.terrain.TerrainEventHandler;
+
       
-import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
-import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { BasicGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
+//not game specific package import { BasicGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
+      const BasicGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
+
       
-import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
+//not game specific package import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
+      const GeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+
       
 
 

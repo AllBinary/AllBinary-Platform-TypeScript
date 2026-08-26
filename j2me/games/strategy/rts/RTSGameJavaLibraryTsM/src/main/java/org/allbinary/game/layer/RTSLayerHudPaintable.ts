@@ -18,19 +18,33 @@
 
 
 
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
+//not game specific package import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
+      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+
       
-import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+//not game specific package import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+      const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+
       
-import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
+//not game specific package import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
+      const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
+
       
-import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+//not game specific package import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
       
 
 

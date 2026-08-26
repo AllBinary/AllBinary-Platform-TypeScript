@@ -18,9 +18,13 @@
 
 
 
-import { PaymentGatewayInterface } from '../../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
+//not game specific package import { PaymentGatewayInterface } from '../../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
+      const PaymentGatewayInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
+
       
-import { DomNodeInterface } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
 
 

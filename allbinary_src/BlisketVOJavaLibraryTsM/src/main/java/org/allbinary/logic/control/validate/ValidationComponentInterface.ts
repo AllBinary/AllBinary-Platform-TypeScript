@@ -18,7 +18,9 @@
 
 
 
-import { TransformInterface } from '../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
+//not game specific package import { TransformInterface } from '../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
+      const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
+
       
 
 

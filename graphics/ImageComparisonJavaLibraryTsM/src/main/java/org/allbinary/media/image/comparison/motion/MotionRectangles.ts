@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
+//not game specific package import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
+      const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+
       
 
 

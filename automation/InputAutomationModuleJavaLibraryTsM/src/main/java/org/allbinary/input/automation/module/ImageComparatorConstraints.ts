@@ -24,19 +24,33 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { RectangleCollisionUtil } from '../../../../../org/allbinary/collision/RectangleCollisionUtil.js';
+//not game specific package import { RectangleCollisionUtil } from '../../../../../org/allbinary/collision/RectangleCollisionUtil.js';
+      const RectangleCollisionUtil = globalThis.org.allbinary.collision.RectangleCollisionUtil;
+
       
-import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
+//not game specific package import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
+      const ImageComparatorConstraintsInterface = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
+
       
 
 

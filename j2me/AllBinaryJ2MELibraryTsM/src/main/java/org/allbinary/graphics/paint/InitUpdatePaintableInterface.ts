@@ -18,9 +18,17 @@
 
 
 
-import { InitInterface } from '../../../../org/allbinary/init/InitInterface.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { UpdateInterface } from '../../../../org/allbinary/init/UpdateInterface.js';
+//not game specific package import { InitInterface } from '../../../../org/allbinary/init/InitInterface.js';
+      const InitInterface = globalThis.org.allbinary.init.InitInterface;
+
+      
+//not game specific package import { UpdateInterface } from '../../../../org/allbinary/init/UpdateInterface.js';
+      const UpdateInterface = globalThis.org.allbinary.init.UpdateInterface;
+
       
 
 

@@ -24,29 +24,53 @@
         
             import { Float } from '../../../../java/lang/Float.js';
         
-import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+//not game specific package import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+      const Bitmap = globalThis.android.graphics.Bitmap;
+
       
-import { Canvas } from '../../../../android/graphics/Canvas.js';
+//not game specific package import { Canvas } from '../../../../android/graphics/Canvas.js';
+      const Canvas = globalThis.android.graphics.Canvas;
+
       
-import { Matrix } from '../../../../android/graphics/Matrix.js';
+//not game specific package import { Matrix } from '../../../../android/graphics/Matrix.js';
+      const Matrix = globalThis.android.graphics.Matrix;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
-import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+//not game specific package import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+
       
 
 

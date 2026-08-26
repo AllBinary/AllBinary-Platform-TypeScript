@@ -18,7 +18,9 @@
 
 
 
-import { GeographicMapInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapInterface.js';
+//not game specific package import { GeographicMapInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapInterface.js';
+      const GeographicMapInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapInterface;
+
       
 
 

@@ -20,9 +20,21 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { NullABRunnable } from '../../../../org/allbinary/thread/NullABRunnable.js';
+//not game specific package import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
+      const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
+
+      
+//not game specific package import { NullABRunnable } from '../../../../org/allbinary/thread/NullABRunnable.js';
+      const NullABRunnable = globalThis.org.allbinary.thread.NullABRunnable;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

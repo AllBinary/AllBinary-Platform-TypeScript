@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+//not game specific package import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+
       
-import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
+//not game specific package import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
+      const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
+
       
-import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
+//not game specific package import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
+      const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
+
       
-import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+//not game specific package import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+      const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+
       
-import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
+//not game specific package import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
+      const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+
       
-import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
 
 

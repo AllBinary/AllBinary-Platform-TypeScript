@@ -1,0 +1,137 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+            import { Exception } from '../../../../../java/lang/Exception.js';
+        
+//not game specific package import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
+      const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+
+      
+//not game specific package import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
+      const GameInput = globalThis.org.allbinary.game.input.GameInput;
+
+      
+//not game specific package import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
+      
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
+      
+//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class ScrollOverAtHalfAI extends BasicAI {
+        
+
+public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+                //@Throws(Exception.constructor)
+            
+    public processAI(allBinaryLayerManager: AllBinaryLayerManager){
+
+    var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;;
+    
+
+    var x: number = ownerLayerInterface!.getXP()!;;
+    
+
+    var y: number = ownerLayerInterface!.getYP()!;;
+    
+
+    var halfWidth: number = ownerLayerInterface!.getHalfWidth()!;;
+    
+
+    var halfHeight: number = ownerLayerInterface!.getHalfHeight()!;;
+    
+
+    var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;;
+    
+
+                        if(x > displayInfo!.getLastWidth() -halfWidth)
+                        
+                                    {
+                                    ownerLayerInterface!.setPosition(halfWidth +1, y, ownerLayerInterface!.getZP());
+    
+
+                                    }
+                                
+
+                        if(y > displayInfo!.getLastHeight() -halfHeight)
+                        
+                                    {
+                                    ownerLayerInterface!.setPosition(x, halfHeight +1, ownerLayerInterface!.getZP());
+    
+
+                                    }
+                                
+
+                        if(x <  -halfWidth)
+                        
+                                    {
+                                    ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -halfWidth, y, ownerLayerInterface!.getZP());
+    
+
+                                    }
+                                
+
+                        if(y <  -halfHeight)
+                        
+                                    {
+                                    ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -halfHeight, ownerLayerInterface!.getZP());
+    
+
+                                    }
+                                
+}
+
+
+}
+                
+            
+

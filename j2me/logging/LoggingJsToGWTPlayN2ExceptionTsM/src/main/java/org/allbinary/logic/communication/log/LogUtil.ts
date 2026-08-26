@@ -22,13 +22,21 @@
         
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
-import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { PlayN } from '../../../../../playn/core/PlayN.js';
+//not game specific package import { PlayN } from '../../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
+
       
 
 

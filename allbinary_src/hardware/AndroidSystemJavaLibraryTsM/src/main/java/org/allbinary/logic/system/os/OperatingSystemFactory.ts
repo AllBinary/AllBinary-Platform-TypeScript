@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AndroidOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/android/AndroidOperatingSystemFactory.js';
+//not game specific package import { AndroidOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/android/AndroidOperatingSystemFactory.js';
+      const AndroidOperatingSystemFactory = globalThis.org.allbinary.logic.system.os.android.AndroidOperatingSystemFactory;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

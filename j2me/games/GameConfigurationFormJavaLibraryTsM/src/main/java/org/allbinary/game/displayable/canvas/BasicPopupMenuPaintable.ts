@@ -20,49 +20,109 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
+      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+
       
-import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { RectangleFilledAnimation } from '../../../../../org/allbinary/animation/vector/RectangleFilledAnimation.js';
+//not game specific package import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+
       
-import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { RectangleFilledAnimation } from '../../../../../org/allbinary/animation/vector/RectangleFilledAnimation.js';
+      const RectangleFilledAnimation = globalThis.org.allbinary.animation.vector.RectangleFilledAnimation;
+
       
-import { SWTUtil } from '../../../../../org/allbinary/game/layer/SWTUtil.js';
+//not game specific package import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { SWTUtil } from '../../../../../org/allbinary/game/layer/SWTUtil.js';
+      const SWTUtil = globalThis.org.allbinary.game.layer.SWTUtil;
+
       
-import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
+//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { DrawVerticalStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawVerticalStringUtil.js';
+//not game specific package import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
+      const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
+
       
-import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { DrawVerticalStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawVerticalStringUtil.js';
+      const DrawVerticalStringUtil = globalThis.org.allbinary.graphics.draw.DrawVerticalStringUtil;
+
       
-import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+//not game specific package import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
       
-import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+//not game specific package import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
       
-import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+//not game specific package import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+
       
-import { OpenGLFeatureUtil } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+//not game specific package import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+
       
-import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { OpenGLFeatureUtil } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+      const OpenGLFeatureUtil = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureUtil;
+
       
-import { SWTJOGLProcessor } from '../../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
+//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
+      
+//not game specific package import { SWTJOGLProcessor } from '../../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
+      const SWTJOGLProcessor = globalThis.org.allbinary.graphics.threed.SWTJOGLProcessor;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -118,7 +178,7 @@ this.label= BasicPopupMenuPaintable.NAME;
 this.rectangle= rectangle;
     
 
-                        if(J2MEUtil.isJ2ME())
+                        if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
                         
                                     {
                                     this.animationInterface= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
@@ -230,7 +290,7 @@ this.rectangle= rectangle;
     var height: number = this.rectangle.getHeight()!;;
     
 
-                        if(J2MEUtil.isJ2ME())
+                        if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
                         
                                     {
                                     

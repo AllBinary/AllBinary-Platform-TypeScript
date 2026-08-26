@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { WorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+//not game specific package import { WorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+      const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+
       
-import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { Document } from '../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+//not game specific package import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+
       
 
 

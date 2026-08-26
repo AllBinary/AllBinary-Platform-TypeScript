@@ -20,17 +20,41 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
-import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
+//not game specific package import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
+      const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
+
       
-import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
+      const ColorFillPaintableFactory = globalThis.org.allbinary.game.paint.ColorFillPaintableFactory;
+
+      
+//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

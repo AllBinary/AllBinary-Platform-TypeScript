@@ -20,17 +20,29 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
+//not game specific package import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
+      const TimeCreated = globalThis.org.allbinary.business.time.created.TimeCreated;
+
       
-import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
+//not game specific package import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
+      const TimeLastModified = globalThis.org.allbinary.business.time.modified.TimeLastModified;
+
       
-import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
+//not game specific package import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
+      const UserEmailConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
+
       
-import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
+//not game specific package import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
+      const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
+
       
 
 

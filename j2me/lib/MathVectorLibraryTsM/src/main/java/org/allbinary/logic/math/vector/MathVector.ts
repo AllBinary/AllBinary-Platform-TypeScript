@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not game specific package import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
+      const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+
       
 
 

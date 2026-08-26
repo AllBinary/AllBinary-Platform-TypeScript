@@ -18,17 +18,29 @@
 
 
 
-import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
+//not game specific package import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
+      const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
+
       
-import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
+//not game specific package import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
+      const GameKey = globalThis.org.allbinary.game.input.GameKey;
+
       
-import { GameKeyEventSourceInterface } from '../../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+//not game specific package import { GameKeyEventSourceInterface } from '../../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+      const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
+
       
-import { GameKeyEvent } from '../../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+//not game specific package import { GameKeyEvent } from '../../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+
       
-import { InputToGameKeyMapping } from '../../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
+//not game specific package import { InputToGameKeyMapping } from '../../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
+      const InputToGameKeyMapping = globalThis.org.allbinary.game.input.mapping.InputToGameKeyMapping;
+
       
-import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+//not game specific package import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+      const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
+
       
 
 

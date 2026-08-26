@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { DestroyableInterface } from '../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
+//not game specific package import { DestroyableInterface } from '../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
+      const DestroyableInterface = globalThis.org.allbinary.game.combat.destroy.DestroyableInterface;
+
       
-import { GroupInterfaceCompositeInterface } from '../../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
+//not game specific package import { GroupInterfaceCompositeInterface } from '../../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
+      const GroupInterfaceCompositeInterface = globalThis.org.allbinary.game.identification.GroupInterfaceCompositeInterface;
+
       
-import { GameKeyEventSourceInterface } from '../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+//not game specific package import { GameKeyEventSourceInterface } from '../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+      const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
+
       
-import { WaypointLayerInterface } from '../../../../org/allbinary/game/layer/waypoint/WaypointLayerInterface.js';
+//not game specific package import { WaypointLayerInterface } from '../../../../org/allbinary/game/layer/waypoint/WaypointLayerInterface.js';
+      const WaypointLayerInterface = globalThis.org.allbinary.game.layer.waypoint.WaypointLayerInterface;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

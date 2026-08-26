@@ -20,21 +20,53 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+//not game specific package import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
       
-import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+//not game specific package import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
       
-import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+//not game specific package import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+
+      
+//not game specific package import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

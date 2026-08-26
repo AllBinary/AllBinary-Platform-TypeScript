@@ -22,37 +22,85 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { BasicGroupFactory } from '../../../org/allbinary/game/identification/BasicGroupFactory.js';
+//not game specific package import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Group } from '../../../org/allbinary/game/identification/Group.js';
+//not game specific package import { BasicGroupFactory } from '../../../org/allbinary/game/identification/BasicGroupFactory.js';
+      const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
+
       
-import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { Group } from '../../../org/allbinary/game/identification/Group.js';
+      const Group = globalThis.org.allbinary.game.identification.Group;
+
       
-import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFactory.js';
+//not game specific package import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { OpenGLFeatureUtil } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+//not game specific package import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFactory.js';
+      const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
+
       
-import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+//not game specific package import { OpenGLFeatureUtil } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+      const OpenGLFeatureUtil = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureUtil;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { PositionStrings } from '../../../org/allbinary/math/PositionStrings.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { PositionStrings } from '../../../org/allbinary/math/PositionStrings.js';
+      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
       
-import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
+//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { ViewPositionBase } from '../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
+      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+
       
-import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositionEvent.js';
+//not game specific package import { ViewPositionBase } from '../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
+      
+//not game specific package import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositionEvent.js';
+      const ViewPositionEvent = globalThis.org.allbinary.view.event.ViewPositionEvent;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

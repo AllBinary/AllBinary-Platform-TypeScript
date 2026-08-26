@@ -18,9 +18,13 @@
 
 
 
-import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
+//not game specific package import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
+      const HighScore = globalThis.org.allbinary.game.score.HighScore;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
 
 

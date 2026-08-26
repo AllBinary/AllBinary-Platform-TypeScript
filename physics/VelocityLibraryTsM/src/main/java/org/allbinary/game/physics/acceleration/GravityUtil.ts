@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { BasicVelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
+//not game specific package import { BasicVelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
+      const BasicVelocityProperties = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
+
       
 
 

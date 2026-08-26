@@ -20,11 +20,17 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+//not game specific package import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+
       
-import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
 
 
@@ -64,7 +70,7 @@ export class ABToGBUtil
 
     public abCanvas: Canvas = NullCanvas.NULL_CANVAS;
 
-    public allBinaryGameLayerManager: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
+    public allBinaryGameLayerManager: AllBinaryGameLayerManager = AllBinaryGameLayerManager.getNullInstance()!;
 
 }
                 

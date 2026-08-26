@@ -18,9 +18,13 @@
 
 
 
-import { LayerManager } from '../../../../../org/allbinary/layer/LayerManager.js';
+//not game specific package import { LayerManager } from '../../../../../org/allbinary/layer/LayerManager.js';
+      const LayerManager = globalThis.org.allbinary.layer.LayerManager;
+
       
-import { LayerManagerNoDebug } from '../../../../../org/allbinary/layer/LayerManagerNoDebug.js';
+//not game specific package import { LayerManagerNoDebug } from '../../../../../org/allbinary/layer/LayerManagerNoDebug.js';
+      const LayerManagerNoDebug = globalThis.org.allbinary.layer.LayerManagerNoDebug;
+
       
 
 

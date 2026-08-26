@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { awt } from '../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
+//not game specific package import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
+      const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+
       
-import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+//not game specific package import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+      const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+
       
 
 

@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
+//not game specific package import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
+      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
 
 

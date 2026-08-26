@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+//not game specific package import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+      const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+
       
-import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+//not game specific package import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+      const OpenGLFeatureUtil = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureUtil;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
 
 

@@ -12,15 +12,25 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { Context } from '../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { View } from '../../../android/view/View.js';
+//not game specific package import { View } from '../../../android/view/View.js';
+      const View = globalThis.android.view.View;
+
       
-import { Toast } from '../../../android/widget/Toast.js';
+//not game specific package import { Toast } from '../../../android/widget/Toast.js';
+      const Toast = globalThis.android.widget.Toast;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

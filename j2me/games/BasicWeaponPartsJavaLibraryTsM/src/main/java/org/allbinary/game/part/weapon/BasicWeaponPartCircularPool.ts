@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+//not game specific package import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+
       
-import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+//not game specific package import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+      const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+
       
-import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
+//not game specific package import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
+      const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+
       
-import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
 
 

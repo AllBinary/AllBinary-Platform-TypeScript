@@ -20,17 +20,45 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

@@ -18,17 +18,29 @@
 
 
 
-import { Activity } from '../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { Window } from '../../../../android/view/Window.js';
+//not game specific package import { Window } from '../../../../android/view/Window.js';
+      const Window = globalThis.android.view.Window;
+
       
-import { WindowCompat } from '../../../../androidx/core/view/WindowCompat.js';
+//not game specific package import { WindowCompat } from '../../../../androidx/core/view/WindowCompat.js';
+      const WindowCompat = globalThis.androidx.core.view.WindowCompat;
+
       
-import { WindowInsetsCompat } from '../../../../androidx/core/view/WindowInsetsCompat.js';
+//not game specific package import { WindowInsetsCompat } from '../../../../androidx/core/view/WindowInsetsCompat.js';
+      const WindowInsetsCompat = globalThis.androidx.core.view.WindowInsetsCompat;
+
       
-import { WindowInsetsControllerCompat } from '../../../../androidx/core/view/WindowInsetsControllerCompat.js';
+//not game specific package import { WindowInsetsControllerCompat } from '../../../../androidx/core/view/WindowInsetsControllerCompat.js';
+      const WindowInsetsControllerCompat = globalThis.androidx.core.view.WindowInsetsControllerCompat;
+
       
-import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
+//not game specific package import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
+      const ActivityFractureUtilAPI5 = globalThis.org.allbinary.android.api5.ActivityFractureUtilAPI5;
+
       
 
 

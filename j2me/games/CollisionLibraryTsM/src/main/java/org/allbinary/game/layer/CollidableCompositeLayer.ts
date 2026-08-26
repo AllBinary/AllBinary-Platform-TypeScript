@@ -18,31 +18,73 @@
 
 
 
-import { ArtificialIntelligence } from '../../../../org/allbinary/ai/ArtificialIntelligence.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
+//not game specific package import { ArtificialIntelligence } from '../../../../org/allbinary/ai/ArtificialIntelligence.js';
+      const ArtificialIntelligence = globalThis.org.allbinary.ai.ArtificialIntelligence;
+
       
-import { CollidableBaseBehavior } from '../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
+//not game specific package import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
+      const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
+
       
-import { CollidableBaseBehaviorFactory } from '../../../../org/allbinary/game/collision/CollidableBaseBehaviorFactory.js';
+//not game specific package import { CollidableBaseBehavior } from '../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
+      const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+
       
-import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
+//not game specific package import { CollidableBaseBehaviorFactory } from '../../../../org/allbinary/game/collision/CollidableBaseBehaviorFactory.js';
+      const CollidableBaseBehaviorFactory = globalThis.org.allbinary.game.collision.CollidableBaseBehaviorFactory;
+
       
-import { CollidableNeverCollideBehaviorFactory } from '../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js';
+//not game specific package import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
+      const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
+
       
-import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { CollidableNeverCollideBehaviorFactory } from '../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js';
+      const CollidableNeverCollideBehaviorFactory = globalThis.org.allbinary.game.collision.CollidableNeverCollideBehaviorFactory;
+
       
-import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
+//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
+      const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not game specific package import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 
@@ -67,7 +109,26 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
 export class CollidableCompositeLayer extends AllBinaryGameLayer implements CollidableInterfaceCompositeInterface {
         
 
-    public static readonly NULL_COLLIDABLE_COMPOSITE_LAYER: CollidableCompositeLayer = new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPositionBase.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
+    private static NULL_COLLIDABLE_COMPOSITE_LAYER: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullInstance(): CollidableCompositeLayer{
+
+                        if(CollidableCompositeLayer.NULL_COLLIDABLE_COMPOSITE_LAYER == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    CollidableCompositeLayer.NULL_COLLIDABLE_COMPOSITE_LAYER= new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPositionBase.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return CollidableCompositeLayer.NULL_COLLIDABLE_COMPOSITE_LAYER as CollidableCompositeLayer;
+    
+}
+
 
     private collidableInferface: CollidableBaseBehavior = CollidableNeverCollideBehaviorFactory.getInstance()!.createBehavior()!;
 

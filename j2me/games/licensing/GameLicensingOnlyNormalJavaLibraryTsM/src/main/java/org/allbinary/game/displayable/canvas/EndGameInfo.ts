@@ -20,11 +20,33 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+//not game specific package import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
+      
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

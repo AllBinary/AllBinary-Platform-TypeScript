@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
-import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

@@ -18,11 +18,17 @@
 
 
 
-import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { GameTickTimeDelayHelperFactory } from '../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+
       
-import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
 
 

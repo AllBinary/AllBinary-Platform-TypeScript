@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+//not game specific package import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+      const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+
       
-import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+//not game specific package import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+      const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
+//not game specific package import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
+      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+
       
 
 

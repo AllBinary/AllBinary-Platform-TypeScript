@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
+//not game specific package import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
+      const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
+
       
 
 

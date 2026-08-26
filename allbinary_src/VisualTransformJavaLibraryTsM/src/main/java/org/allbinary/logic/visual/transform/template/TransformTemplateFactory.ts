@@ -22,21 +22,37 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { TransformInfoEntity } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
+//not game specific package import { TransformInfoEntity } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
+      const TransformInfoEntity = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntity;
+
       
-import { TransformInfoEntityBuilder } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+//not game specific package import { TransformInfoEntityBuilder } from '../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+      const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformInfoObjectFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoObjectFactory.js';
+//not game specific package import { TransformInfoObjectFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoObjectFactory.js';
+      const TransformInfoObjectFactory = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoObjectFactory;
+
       
 
 

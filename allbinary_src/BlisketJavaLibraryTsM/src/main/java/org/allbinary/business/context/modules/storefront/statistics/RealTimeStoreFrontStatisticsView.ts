@@ -22,31 +22,57 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { StoreFrontAdvertisementsStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js';
+//not game specific package import { StoreFrontAdvertisementsStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js';
+      const StoreFrontAdvertisementsStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.advertisements.StoreFrontAdvertisementsStatisticsInterface;
+
       
-import { StoreFrontAdvertisementsStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsView.js';
+//not game specific package import { StoreFrontAdvertisementsStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsView.js';
+      const StoreFrontAdvertisementsStatisticsView = globalThis.org.allbinary.business.context.modules.storefront.statistics.advertisements.StoreFrontAdvertisementsStatisticsView;
+
       
-import { StoreFrontInventoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js';
+//not game specific package import { StoreFrontInventoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js';
+      const StoreFrontInventoryStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsInterface;
+
       
-import { StoreFrontInventoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsView.js';
+//not game specific package import { StoreFrontInventoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsView.js';
+      const StoreFrontInventoryStatisticsView = globalThis.org.allbinary.business.context.modules.storefront.statistics.inventory.StoreFrontInventoryStatisticsView;
+
       
-import { StoreFrontOrdersHistoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js';
+//not game specific package import { StoreFrontOrdersHistoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js';
+      const StoreFrontOrdersHistoryStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsInterface;
+
       
-import { StoreFrontOrdersHistoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsView.js';
+//not game specific package import { StoreFrontOrdersHistoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsView.js';
+      const StoreFrontOrdersHistoryStatisticsView = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsView;
+
       
-import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js';
+//not game specific package import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js';
+      const StoreFrontUsersStatisticsInterface = globalThis.org.allbinary.business.context.modules.storefront.statistics.users.StoreFrontUsersStatisticsInterface;
+
       
-import { StoreFrontUsersStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsView.js';
+//not game specific package import { StoreFrontUsersStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsView.js';
+      const StoreFrontUsersStatisticsView = globalThis.org.allbinary.business.context.modules.storefront.statistics.users.StoreFrontUsersStatisticsView;
+
       
-import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
+//not game specific package import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
+      const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+
       
-import { UserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/UserRoleFactory.js';
+//not game specific package import { UserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/UserRoleFactory.js';
+      const UserRoleFactory = globalThis.org.allbinary.business.user.role.UserRoleFactory;
+
       
-import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { List } from '../../../../../../java/util/List.js';
+//not game specific package import { List } from '../../../../../../java/util/List.js';
+      const List = globalThis.java.util.List;
+
       
-import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
+//not game specific package import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
+      const AbFileUploadFactory = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUploadFactory;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { FileItem } from '../../../../../../org/apache/commons/fileupload/FileItem.js';
+//not game specific package import { FileItem } from '../../../../../../org/apache/commons/fileupload/FileItem.js';
+      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+
       
-import { InvalidContentTypeException } from '../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js';
+//not game specific package import { InvalidContentTypeException } from '../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js';
+      const InvalidContentTypeException = globalThis.org.apache.commons.fileupload.FileUploadBase.InvalidContentTypeException;
+
       
 
 

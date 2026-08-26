@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { swing } from '../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
+//not game specific package import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
+      const Bundle = globalThis.org.osgi.framework.Bundle;
+
       
-import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
-import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
+//not game specific package import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
+      const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
+
       
-import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
+//not game specific package import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
+      const BasicTextJDialog = globalThis.org.allbinary.gui.dialog.BasicTextJDialog;
+
       
 
 

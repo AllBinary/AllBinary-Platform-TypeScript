@@ -18,13 +18,33 @@
 
 
 
-import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+//not game specific package import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
+      const Group = globalThis.org.allbinary.game.identification.Group;
+
       
-import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+      const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+
       
-import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
+      
+//not game specific package import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

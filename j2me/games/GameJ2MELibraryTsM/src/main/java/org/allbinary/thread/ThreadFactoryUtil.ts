@@ -24,27 +24,61 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { RunnableCanvas } from '../../../org/allbinary/canvas/RunnableCanvas.js';
+//not game specific package import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { AllBinaryGameCanvas } from '../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+//not game specific package import { RunnableCanvas } from '../../../org/allbinary/canvas/RunnableCanvas.js';
+      const RunnableCanvas = globalThis.org.allbinary.canvas.RunnableCanvas;
+
       
-import { DemoCanvas } from '../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
+//not game specific package import { AllBinaryGameCanvas } from '../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+      const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+
       
-import { GameCanvasRunnableInterface } from '../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
+//not game specific package import { DemoCanvas } from '../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
+      const DemoCanvas = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
+
       
-import { RunnableCanvasSingleThreadStartRunnable } from '../../../org/allbinary/game/displayable/canvas/RunnableCanvasSingleThreadStartRunnable.js';
+//not game specific package import { GameCanvasRunnableInterface } from '../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
+      const GameCanvasRunnableInterface = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { RunnableCanvasSingleThreadStartRunnable } from '../../../org/allbinary/game/displayable/canvas/RunnableCanvasSingleThreadStartRunnable.js';
+      const RunnableCanvasSingleThreadStartRunnable = globalThis.org.allbinary.game.displayable.canvas.RunnableCanvasSingleThreadStartRunnable;
+
       
-import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

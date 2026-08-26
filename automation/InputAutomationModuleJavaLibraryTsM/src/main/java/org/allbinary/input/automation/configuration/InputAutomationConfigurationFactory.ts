@@ -22,27 +22,49 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { File } from '../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
+//not game specific package import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
+      const FileInputStream = globalThis.java.io.FileInputStream;
+
       
-import { List } from '../../../../../java/util/List.js';
+//not game specific package import { List } from '../../../../../java/util/List.js';
+      const List = globalThis.java.util.List;
+
       
-import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
+//not game specific package import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
+      const JAXBContext = globalThis.javax.xml.bind.JAXBContext;
+
       
-import { JAXBElement } from '../../../../../javax/xml/bind/JAXBElement.js';
+//not game specific package import { JAXBElement } from '../../../../../javax/xml/bind/JAXBElement.js';
+      const JAXBElement = globalThis.javax.xml.bind.JAXBElement;
+
       
-import { Unmarshaller } from '../../../../../javax/xml/bind/Unmarshaller.js';
+//not game specific package import { Unmarshaller } from '../../../../../javax/xml/bind/Unmarshaller.js';
+      const Unmarshaller = globalThis.javax.xml.bind.Unmarshaller;
+
       
-import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+
       
-import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+//not game specific package import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+      const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

@@ -22,27 +22,49 @@
         
             import { Exception } from '../java/lang/Exception.js';
         
-import { HashMap } from '../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+//not game specific package import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+
       
-import { TransformFactory } from '../org/allbinary/logic/visual/transform/TransformFactory.js';
+//not game specific package import { TransformFactory } from '../org/allbinary/logic/visual/transform/TransformFactory.js';
+      const TransformFactory = globalThis.org.allbinary.logic.visual.transform.TransformFactory;
+
       
-import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
+//not game specific package import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
+      const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
+
       
-import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
+//not game specific package import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
+      const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+
       
-import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

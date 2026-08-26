@@ -14,25 +14,45 @@
         
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
-import { Service } from '../../../../../android/app/Service.js';
+//not game specific package import { Service } from '../../../../../android/app/Service.js';
+      const Service = globalThis.android.app.Service;
+
       
-import { Intent } from '../../../../../android/content/Intent.js';
+//not game specific package import { Intent } from '../../../../../android/content/Intent.js';
+      const Intent = globalThis.android.content.Intent;
+
       
-import { MediaPlayer } from '../../../../../android/media/MediaPlayer.js';
+//not game specific package import { MediaPlayer } from '../../../../../android/media/MediaPlayer.js';
+      const MediaPlayer = globalThis.android.media.MediaPlayer;
+
       
-import { IBinder } from '../../../../../android/os/IBinder.js';
+//not game specific package import { IBinder } from '../../../../../android/os/IBinder.js';
+      const IBinder = globalThis.android.os.IBinder;
+
       
-import { NullAndroidCanvas } from '../../../../../org/allbinary/android/NullAndroidCanvas.js';
+//not game specific package import { NullAndroidCanvas } from '../../../../../org/allbinary/android/NullAndroidCanvas.js';
+      const NullAndroidCanvas = globalThis.org.allbinary.android.NullAndroidCanvas;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonStateStrings } from '../../../../../org/allbinary/string/CommonStateStrings.js';
+//not game specific package import { CommonStateStrings } from '../../../../../org/allbinary/string/CommonStateStrings.js';
+      const CommonStateStrings = globalThis.org.allbinary.string.CommonStateStrings;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
       
 
 

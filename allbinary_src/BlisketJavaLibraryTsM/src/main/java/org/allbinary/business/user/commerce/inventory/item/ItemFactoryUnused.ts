@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+//not game specific package import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+
       
-import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
-import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+//not game specific package import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+      const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+
       
 
 

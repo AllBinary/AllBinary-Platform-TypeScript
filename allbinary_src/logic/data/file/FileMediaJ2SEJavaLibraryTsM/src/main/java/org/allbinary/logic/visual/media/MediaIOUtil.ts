@@ -6,7 +6,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
+//not game specific package import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
+      const ImageIO = globalThis.javax.imageio.ImageIO;
+
       
 
 

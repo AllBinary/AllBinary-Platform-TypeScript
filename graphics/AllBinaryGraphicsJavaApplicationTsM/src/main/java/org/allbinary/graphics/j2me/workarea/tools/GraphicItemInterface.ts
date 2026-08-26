@@ -22,17 +22,29 @@
         
             import { Double } from '../../../../../../java/lang/Double.js';
         
-import { awt } from '../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+//not game specific package import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+
       
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
+//not game specific package import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
+      const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
+
       
-import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
+//not game specific package import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
+      const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

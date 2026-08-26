@@ -20,43 +20,81 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { UserData } from '../../org/allbinary/business/user/UserData.js';
+//not game specific package import { UserData } from '../../org/allbinary/business/user/UserData.js';
+      const UserData = globalThis.org.allbinary.business.user.UserData;
+
       
-import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
+//not game specific package import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
+      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
       
-import { Password } from '../../org/allbinary/business/user/password/Password.js';
+//not game specific package import { Password } from '../../org/allbinary/business/user/password/Password.js';
+      const Password = globalThis.org.allbinary.business.user.password.Password;
+
       
-import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
+//not game specific package import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
+      const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
+
       
-import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
+//not game specific package import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
+      const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
+
       
-import { UserEntityInterface } from '../../org/allbinary/data/tables/user/UserEntityInterface.js';
+//not game specific package import { UserEntityInterface } from '../../org/allbinary/data/tables/user/UserEntityInterface.js';
+      const UserEntityInterface = globalThis.org.allbinary.data.tables.user.UserEntityInterface;
+
       
-import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
+//not game specific package import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
+      const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+
       
-import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+//not game specific package import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+
       
-import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
+//not game specific package import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
+      const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+
       
-import { WeblisketSessionInterface } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+//not game specific package import { WeblisketSessionInterface } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+      const WeblisketSessionInterface = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { NewPasswordEmail } from '../../org/allbinary/logic/communication/smtp/email/NewPasswordEmail.js';
+//not game specific package import { NewPasswordEmail } from '../../org/allbinary/logic/communication/smtp/email/NewPasswordEmail.js';
+      const NewPasswordEmail = globalThis.org.allbinary.logic.communication.smtp.email.NewPasswordEmail;
+
       
-import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+
       
 
 

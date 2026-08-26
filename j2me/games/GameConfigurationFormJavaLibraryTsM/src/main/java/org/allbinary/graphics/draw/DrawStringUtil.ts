@@ -22,25 +22,45 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
+//not game specific package import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
+      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+
       
-import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+//not game specific package import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+      const OpenGLFeatureUtil = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureUtil;
+
       
-import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

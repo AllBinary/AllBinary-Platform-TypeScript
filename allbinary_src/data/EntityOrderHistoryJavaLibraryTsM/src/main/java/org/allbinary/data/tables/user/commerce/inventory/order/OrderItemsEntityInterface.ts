@@ -18,13 +18,21 @@
 
 
 
-import { Vector } from '../../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { BasketReview } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketReview.js';
+//not game specific package import { BasketReview } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketReview.js';
+      const BasketReview = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketReview;
+
       
-import { OrderInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
+//not game specific package import { OrderInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
+      const OrderInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderInterface;
+
       
-import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
+//not game specific package import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
+      const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
+
       
 
 

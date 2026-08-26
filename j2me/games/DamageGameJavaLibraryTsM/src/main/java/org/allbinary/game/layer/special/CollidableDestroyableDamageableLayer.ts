@@ -22,53 +22,117 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CollidableNeverCollideBehaviorFactory } from '../../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
+//not game specific package import { CollidableNeverCollideBehaviorFactory } from '../../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js';
+      const CollidableNeverCollideBehaviorFactory = globalThis.org.allbinary.game.collision.CollidableNeverCollideBehaviorFactory;
+
       
-import { DestroyableInterface } from '../../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
+//not game specific package import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
+      const DamageableInterface = globalThis.org.allbinary.game.combat.damage.DamageableInterface;
+
       
-import { DestroyedEvent } from '../../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
+//not game specific package import { DestroyableInterface } from '../../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
+      const DestroyableInterface = globalThis.org.allbinary.game.combat.destroy.DestroyableInterface;
+
       
-import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+//not game specific package import { DestroyedEvent } from '../../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
+      const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
+
       
-import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
+//not game specific package import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+      const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
+
       
-import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+//not game specific package import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
+      const Group = globalThis.org.allbinary.game.identification.Group;
+
       
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+
       
-import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
-import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
+//not game specific package import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+      const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
+
       
-import { PickupBehavior } from '../../../../../org/allbinary/game/layer/pickup/PickupBehavior.js';
+//not game specific package import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
+      const PickedUpLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
+
       
-import { PickupCompositeInterface } from '../../../../../org/allbinary/game/layer/pickup/PickupCompositeInterface.js';
+//not game specific package import { PickupBehavior } from '../../../../../org/allbinary/game/layer/pickup/PickupBehavior.js';
+      const PickupBehavior = globalThis.org.allbinary.game.layer.pickup.PickupBehavior;
+
       
-import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
+//not game specific package import { PickupCompositeInterface } from '../../../../../org/allbinary/game/layer/pickup/PickupCompositeInterface.js';
+      const PickupCompositeInterface = globalThis.org.allbinary.game.layer.pickup.PickupCompositeInterface;
+
       
-import { PartInterfaceUtil } from '../../../../../org/allbinary/game/part/PartInterfaceUtil.js';
+//not game specific package import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
+      const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
+
       
-import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { PartInterfaceUtil } from '../../../../../org/allbinary/game/part/PartInterfaceUtil.js';
+      const PartInterfaceUtil = globalThis.org.allbinary.game.part.PartInterfaceUtil;
+
       
-import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
+//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
+      const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { PositionStrings } from '../../../../../org/allbinary/math/PositionStrings.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { PositionStrings } from '../../../../../org/allbinary/math/PositionStrings.js';
+      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
       
-import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not game specific package import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -134,7 +198,7 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
 
     private pickupBehavior: PickupBehavior;
 
-    public allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
+    public allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.getNullInstance()!;
 
     public isDraggable: boolean = false;
 
@@ -154,7 +218,7 @@ this.initHeight= layerInfo!.getHeight();
     
 this.groupInterface= groupInterface;
     
-this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR;
+this.pickupBehavior= PickupBehavior.getNullInstance();
     
 }
 

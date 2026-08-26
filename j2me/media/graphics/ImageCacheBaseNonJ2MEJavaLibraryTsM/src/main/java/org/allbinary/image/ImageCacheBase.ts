@@ -24,25 +24,61 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { InputStream } from '../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

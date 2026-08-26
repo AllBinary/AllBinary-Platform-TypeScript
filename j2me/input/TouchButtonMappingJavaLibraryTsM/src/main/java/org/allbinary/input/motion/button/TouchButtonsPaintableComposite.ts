@@ -20,41 +20,77 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
+//not game specific package import { CompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
+      const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
+
       
-import { CompleteMotionGestureInputEventHandler } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js';
+//not game specific package import { CompleteMotionGestureInputEventHandler } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js';
+      const CompleteMotionGestureInputEventHandler = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventHandler;
+
       
-import { CompleteMotionGestureInputEventListenerInterface } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
+//not game specific package import { CompleteMotionGestureInputEventListenerInterface } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
+      const CompleteMotionGestureInputEventListenerInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
+
       
-import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
+//not game specific package import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
+      const GameKey = globalThis.org.allbinary.game.input.GameKey;
+
       
-import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
+//not game specific package import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
+      const InputMappingInterface = globalThis.org.allbinary.game.input.mapping.InputMappingInterface;
+
       
-import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
+//not game specific package import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
+      const GameKeyCompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.motion.action.GameKeyCompleteMotionGestureInputEvent;
+
       
-import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+//not game specific package import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+      const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+
       
-import { MotionGestureInput } from '../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+//not game specific package import { MotionGestureInput } from '../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+      const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
+
       
-import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+//not game specific package import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
 
 

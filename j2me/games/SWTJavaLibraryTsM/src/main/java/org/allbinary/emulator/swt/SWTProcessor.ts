@@ -22,9 +22,13 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
+//not game specific package import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
+      const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+
       
-import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
+//not game specific package import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
+      const Display = globalThis.org.eclipse.swt.widgets.Display;
+
       
 
 

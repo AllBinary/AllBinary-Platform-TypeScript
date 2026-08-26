@@ -24,11 +24,17 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
 
 

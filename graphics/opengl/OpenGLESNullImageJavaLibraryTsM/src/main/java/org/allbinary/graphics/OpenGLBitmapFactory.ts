@@ -4,17 +4,29 @@
 
 
 
-import { IOException } from '../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { InputStream } from '../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+//not game specific package import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+
       
-import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+//not game specific package import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+      const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+
       
 
 

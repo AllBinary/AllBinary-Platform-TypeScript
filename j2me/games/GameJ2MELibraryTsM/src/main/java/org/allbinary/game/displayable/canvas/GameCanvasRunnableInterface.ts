@@ -20,17 +20,37 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { GameStateCompositeInterface } from '../../../../../org/allbinary/game/state/GameStateCompositeInterface.js';
+//not game specific package import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
+      const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
+
       
-import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { GameStateCompositeInterface } from '../../../../../org/allbinary/game/state/GameStateCompositeInterface.js';
+      const GameStateCompositeInterface = globalThis.org.allbinary.game.state.GameStateCompositeInterface;
+
       
-import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
+      
+//not game specific package import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { LogConfigTypes } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+//not game specific package import { LogConfigTypes } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+
       
-import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+//not game specific package import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+
       
 
 

@@ -6,11 +6,17 @@
 
             import { System } from '../../../../../java/lang/System.js';
         
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+//not game specific package import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { IOException } from '../../../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { Calendar } from '../../../../../../java/util/Calendar.js';
+//not game specific package import { Calendar } from '../../../../../../java/util/Calendar.js';
+      const Calendar = globalThis.java.util.Calendar;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbeLicenseClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/AbeLicenseClient.js';
+//not game specific package import { AbeLicenseClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/AbeLicenseClient.js';
+      const AbeLicenseClient = globalThis.org.allbinary.logic.system.security.licensing.client.AbeLicenseClient;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

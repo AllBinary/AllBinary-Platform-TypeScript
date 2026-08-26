@@ -18,21 +18,37 @@
 
 
 
-import { BuildMenuCompositeInterface } from '../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js';
+//not game specific package import { BuildMenuCompositeInterface } from '../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js';
+      const BuildMenuCompositeInterface = globalThis.org.allbinary.game.input.BuildMenuCompositeInterface;
+
       
-import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
+//not game specific package import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
+      const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
+
       
-import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
+//not game specific package import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
+      const Capital = globalThis.org.allbinary.game.layer.capital.Capital;
+
       
-import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
+//not game specific package import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
+      const DestroyedEventListenerInterface = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventListenerInterface;
+
       
-import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
+//not game specific package import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
+      const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
+
       
-import { GameNotificationHudCompositeInterface } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js';
+//not game specific package import { GameNotificationHudCompositeInterface } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js';
+      const GameNotificationHudCompositeInterface = globalThis.org.allbinary.game.layer.hud.basic.notification.GameNotificationHudCompositeInterface;
+
       
-import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
+//not game specific package import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
+      const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
+
       
-import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
+//not game specific package import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
+      const Sound = globalThis.org.allbinary.media.audio.Sound;
+
       
 
 

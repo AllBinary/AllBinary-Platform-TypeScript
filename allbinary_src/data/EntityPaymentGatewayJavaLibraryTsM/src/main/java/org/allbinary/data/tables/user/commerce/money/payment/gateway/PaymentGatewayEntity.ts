@@ -22,43 +22,81 @@
         
             import { Long } from '../../../../../../../../../java/lang/Long.js';
         
-import { Calendar } from '../../../../../../../../../java/util/Calendar.js';
+//not game specific package import { Calendar } from '../../../../../../../../../java/util/Calendar.js';
+      const Calendar = globalThis.java.util.Calendar;
+
       
-import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { StoreFrontData } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { UserDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+//not game specific package import { UserDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+      const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
       
-import { UserData } from '../../../../../../../../../org/allbinary/business/user/UserData.js';
+//not game specific package import { UserData } from '../../../../../../../../../org/allbinary/business/user/UserData.js';
+      const UserData = globalThis.org.allbinary.business.user.UserData;
+
       
-import { PaymentData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+//not game specific package import { PaymentData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+      const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+
       
-import { PaymentGatewayData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
+//not game specific package import { PaymentGatewayData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
+      const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+
       
-import { PaymentGatewayEncryptedMapping } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayEncryptedMapping.js';
+//not game specific package import { PaymentGatewayEncryptedMapping } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayEncryptedMapping.js';
+      const PaymentGatewayEncryptedMapping = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayEncryptedMapping;
+
       
-import { PaymentGatewayInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
+//not game specific package import { PaymentGatewayInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
+      const PaymentGatewayInterface = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
+
       
-import { PaymentGatewayInterfaceFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactory.js';
+//not game specific package import { PaymentGatewayInterfaceFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactory.js';
+      const PaymentGatewayInterfaceFactory = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterfaceFactory;
+
       
-import { BasicPaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
+//not game specific package import { BasicPaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
+      const BasicPaymentType = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentType;
+
       
-import { BasicPaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
+//not game specific package import { BasicPaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
+      const BasicPaymentTypeUtil = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentTypeUtil;
+
       
-import { PaymentGatewayIdGenerator } from '../../../../../../../../../org/allbinary/data/generator/PaymentGatewayIdGenerator.js';
+//not game specific package import { PaymentGatewayIdGenerator } from '../../../../../../../../../org/allbinary/data/generator/PaymentGatewayIdGenerator.js';
+      const PaymentGatewayIdGenerator = globalThis.org.allbinary.data.generator.PaymentGatewayIdGenerator;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+//not game specific package import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+      const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+
       
-import { SuperCrypt } from '../../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
+//not game specific package import { SuperCrypt } from '../../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
+      const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
+
       
-import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

@@ -26,15 +26,25 @@
         
             import { Thread } from '../../../../../../../../../java/lang/Thread.js';
         
-import { InputRobotInterface } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+//not game specific package import { InputRobotInterface } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+      const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonLabels } from '../../../../../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { TimeDelayHelper } from '../../../../../../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
 
 

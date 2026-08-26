@@ -20,13 +20,21 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

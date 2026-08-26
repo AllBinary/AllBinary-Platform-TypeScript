@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

@@ -20,7 +20,9 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
 
 

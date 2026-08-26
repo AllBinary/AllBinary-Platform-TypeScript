@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+//not game specific package import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+      const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+
       
-import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
+//not game specific package import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
+      const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
+
       
-import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not game specific package import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+      const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+
       
 
 

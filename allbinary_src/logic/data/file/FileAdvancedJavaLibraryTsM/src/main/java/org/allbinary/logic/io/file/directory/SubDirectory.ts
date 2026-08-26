@@ -20,15 +20,25 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { FileFilter } from '../../../../../../java/io/FileFilter.js';
+//not game specific package import { FileFilter } from '../../../../../../java/io/FileFilter.js';
+      const FileFilter = globalThis.java.io.FileFilter;
+
       
-import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

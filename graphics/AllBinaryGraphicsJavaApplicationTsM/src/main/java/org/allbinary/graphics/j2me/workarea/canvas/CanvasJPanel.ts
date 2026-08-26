@@ -24,73 +24,141 @@
         
             import { Double } from '../../../../../../java/lang/Double.js';
         
-import { awt } from '../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+//not game specific package import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+      const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
+
       
-import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+//not game specific package import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+
       
-import { VectorExplosionGenerator } from '../../../../../../org/allbinary/animation/VectorExplosionGenerator.js';
+//not game specific package import { VectorExplosionGenerator } from '../../../../../../org/allbinary/animation/VectorExplosionGenerator.js';
+      const VectorExplosionGenerator = globalThis.org.allbinary.animation.VectorExplosionGenerator;
+
       
-import { VectorMirrorGenerator } from '../../../../../../org/allbinary/animation/VectorMirrorGenerator.js';
+//not game specific package import { VectorMirrorGenerator } from '../../../../../../org/allbinary/animation/VectorMirrorGenerator.js';
+      const VectorMirrorGenerator = globalThis.org.allbinary.animation.VectorMirrorGenerator;
+
       
-import { VectorCenterGenerator } from '../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js';
+//not game specific package import { VectorCenterGenerator } from '../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js';
+      const VectorCenterGenerator = globalThis.org.allbinary.animation.vector.VectorCenterGenerator;
+
       
-import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
+//not game specific package import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
+      const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
+
       
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { GraphicsException } from '../../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
+//not game specific package import { GraphicsException } from '../../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
+      const GraphicsException = globalThis.org.allbinary.graphics.j2me.GraphicsException;
+
       
-import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
+//not game specific package import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
+      const StatusFactory = globalThis.org.allbinary.graphics.j2me.StatusFactory;
+
       
-import { WorkAreaJTreeJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJTreeJPanel.js';
+//not game specific package import { WorkAreaJTreeJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJTreeJPanel.js';
+      const WorkAreaJTreeJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJTreeJPanel;
+
       
-import { GraphicItemFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemFactory.js';
+//not game specific package import { GraphicItemFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemFactory.js';
+      const GraphicItemFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemFactory;
+
       
-import { GraphicItemInterface } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
+//not game specific package import { GraphicItemInterface } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
+      const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+
       
-import { LinesGraphicItem } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
+//not game specific package import { LinesGraphicItem } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
+      const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+
       
-import { MouseStrings } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/MouseStrings.js';
+//not game specific package import { MouseStrings } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/MouseStrings.js';
+      const MouseStrings = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseStrings;
+
       
-import { Points } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js';
+//not game specific package import { Points } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js';
+      const Points = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
+
       
-import { ToolFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/ToolFactory.js';
+//not game specific package import { ToolFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/ToolFactory.js';
+      const ToolFactory = globalThis.org.allbinary.graphics.j2me.workarea.tools.ToolFactory;
+
       
-import { MyGraphicItemEvent } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
+//not game specific package import { MyGraphicItemEvent } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
+      const MyGraphicItemEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
+
       
-import { MyGraphicItemEventListener } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventListener.js';
+//not game specific package import { MyGraphicItemEventListener } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventListener.js';
+      const MyGraphicItemEventListener = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventListener;
+
       
-import { MyGraphicItemEventService } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
+//not game specific package import { MyGraphicItemEventService } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
+      const MyGraphicItemEventService = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventService;
+
       
-import { RandomRotationFactory } from '../../../../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
+//not game specific package import { RandomRotationFactory } from '../../../../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
+      const RandomRotationFactory = globalThis.org.allbinary.graphics.pipeline.RandomRotationFactory;
+
       
-import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
+//not game specific package import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
+      const LOGGING = globalThis.org.allbinary.log.LOGGING;
+
       
-import { GuiLog } from '../../../../../../org/allbinary/logic/communication/log/GuiLog.js';
+//not game specific package import { GuiLog } from '../../../../../../org/allbinary/logic/communication/log/GuiLog.js';
+      const GuiLog = globalThis.org.allbinary.logic.communication.log.GuiLog;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
+//not game specific package import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
+      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
       
-import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

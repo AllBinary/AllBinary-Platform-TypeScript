@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { GeographicMapCellType } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
+//not game specific package import { GeographicMapCellType } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
+      const GeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+
       
-import { RaceTrackGeographicMapCellType } from '../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
+//not game specific package import { RaceTrackGeographicMapCellType } from '../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
+      const RaceTrackGeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellType;
+
       
 
 

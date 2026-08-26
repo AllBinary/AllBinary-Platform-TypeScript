@@ -22,19 +22,33 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
+//not game specific package import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
+      const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+
       
-import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+//not game specific package import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+      const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

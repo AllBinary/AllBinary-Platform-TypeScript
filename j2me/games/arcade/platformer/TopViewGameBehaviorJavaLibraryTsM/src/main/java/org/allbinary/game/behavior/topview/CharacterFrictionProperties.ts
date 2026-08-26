@@ -18,9 +18,13 @@
 
 
 
-import { FrictionProperties } from '../../../../../org/allbinary/game/physics/FrictionProperties.js';
+//not game specific package import { FrictionProperties } from '../../../../../org/allbinary/game/physics/FrictionProperties.js';
+      const FrictionProperties = globalThis.org.allbinary.game.physics.FrictionProperties;
+
       
-import { FrictionData } from '../../../../../org/allbinary/game/physics/friction/FrictionData.js';
+//not game specific package import { FrictionData } from '../../../../../org/allbinary/game/physics/friction/FrictionData.js';
+      const FrictionData = globalThis.org.allbinary.game.physics.friction.FrictionData;
+
       
 
 

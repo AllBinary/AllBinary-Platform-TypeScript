@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AutomaticCacheInterface } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+//not game specific package import { AutomaticCacheInterface } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+
       
-import { AutomaticCacheInterfaceFactory } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterfaceFactory.js';
+//not game specific package import { AutomaticCacheInterfaceFactory } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterfaceFactory.js';
+      const AutomaticCacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterfaceFactory;
+
       
-import { CachePolicyFactory } from '../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+//not game specific package import { CachePolicyFactory } from '../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+      const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
+
       
-import { CacheTypeFactory } from '../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+//not game specific package import { CacheTypeFactory } from '../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+      const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

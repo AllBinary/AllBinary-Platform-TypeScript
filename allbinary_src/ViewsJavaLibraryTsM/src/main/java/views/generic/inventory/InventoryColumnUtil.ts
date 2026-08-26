@@ -20,17 +20,29 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+//not game specific package import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+
       
-import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
+//not game specific package import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
+      const InventoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntity;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
 
 

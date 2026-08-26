@@ -8,9 +8,13 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { InputStream } from '../../../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
 
 

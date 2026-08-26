@@ -18,9 +18,13 @@
 
 
 
-import { Font } from '../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
+//not game specific package import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
+      const FontDebugBase = globalThis.org.allbinary.graphics.font.FontDebugBase;
+
       
 
 

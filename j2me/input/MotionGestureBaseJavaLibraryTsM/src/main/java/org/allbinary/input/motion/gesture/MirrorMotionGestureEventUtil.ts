@@ -24,13 +24,21 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { MotionEventCircularPool } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionEventCircularPool.js';
+//not game specific package import { MotionEventCircularPool } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionEventCircularPool.js';
+      const MotionEventCircularPool = globalThis.org.allbinary.input.motion.gesture.observer.MotionEventCircularPool;
+
       
-import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
+//not game specific package import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
+      const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+
       
 
 

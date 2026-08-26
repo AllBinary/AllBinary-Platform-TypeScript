@@ -22,33 +22,61 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
+//not game specific package import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
+      const Graphics2D = globalThis.java.awt.Graphics2D;
+
       
-import { GraphicsConfiguration } from '../../../../java/awt/GraphicsConfiguration.js';
+//not game specific package import { GraphicsConfiguration } from '../../../../java/awt/GraphicsConfiguration.js';
+      const GraphicsConfiguration = globalThis.java.awt.GraphicsConfiguration;
+
       
-import { GraphicsDevice } from '../../../../java/awt/GraphicsDevice.js';
+//not game specific package import { GraphicsDevice } from '../../../../java/awt/GraphicsDevice.js';
+      const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
+
       
-import { GraphicsEnvironment } from '../../../../java/awt/GraphicsEnvironment.js';
+//not game specific package import { GraphicsEnvironment } from '../../../../java/awt/GraphicsEnvironment.js';
+      const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
+
       
-import { Transparency } from '../../../../java/awt/Transparency.js';
+//not game specific package import { Transparency } from '../../../../java/awt/Transparency.js';
+      const Transparency = globalThis.java.awt.Transparency;
+
       
-import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
+//not game specific package import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
+      const AffineTransform = globalThis.java.awt.geom.AffineTransform;
+
       
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
+//not game specific package import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
+      const J2SEImmutableImage = globalThis.org.microemu.device.j2se.J2SEImmutableImage;
+
       
-import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
+//not game specific package import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
+      const J2SEMutableImage = globalThis.org.microemu.device.j2se.J2SEMutableImage;
+
       
 
 

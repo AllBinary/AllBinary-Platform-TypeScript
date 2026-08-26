@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
+//not game specific package import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
+      const DamageFloaters = globalThis.org.allbinary.game.combat.damage.DamageFloaters;
+
       
-import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
+//not game specific package import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
+      const TrackingEvent = globalThis.org.allbinary.game.tracking.TrackingEvent;
+
       
-import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
+//not game specific package import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
+      const TrackingEventHandler = globalThis.org.allbinary.game.tracking.TrackingEventHandler;
+
       
-import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+//not game specific package import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+
       
-import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

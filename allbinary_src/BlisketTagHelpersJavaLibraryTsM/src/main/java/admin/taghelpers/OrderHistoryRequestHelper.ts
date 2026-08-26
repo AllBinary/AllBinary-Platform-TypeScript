@@ -20,33 +20,61 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { OrderData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
+//not game specific package import { OrderData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
+      const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+
       
-import { OrderHistory } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
+//not game specific package import { OrderHistory } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
+      const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
+
       
-import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+//not game specific package import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+      const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+
       
-import { OrderStatusEmail } from '../../org/allbinary/business/user/commerce/inventory/order/status/OrderStatusEmail.js';
+//not game specific package import { OrderStatusEmail } from '../../org/allbinary/business/user/commerce/inventory/order/status/OrderStatusEmail.js';
+      const OrderStatusEmail = globalThis.org.allbinary.business.user.commerce.inventory.order.status.OrderStatusEmail;
+
       
-import { ShippingMethodData } from '../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+//not game specific package import { ShippingMethodData } from '../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+      const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+
       
-import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+//not game specific package import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+      const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
+
       
-import { OrderItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntityFactory.js';
+//not game specific package import { OrderItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntityFactory.js';
+      const OrderItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+
       
-import { CommonPhoneStrings } from '../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
 
 

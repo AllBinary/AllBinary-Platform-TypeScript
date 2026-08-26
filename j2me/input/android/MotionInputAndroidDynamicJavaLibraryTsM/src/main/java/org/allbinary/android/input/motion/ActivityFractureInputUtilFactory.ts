@@ -20,17 +20,29 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { ActivityFractureUtil } from '../../../../../org/allbinary/android/ActivityFractureUtil.js';
+//not game specific package import { ActivityFractureUtil } from '../../../../../org/allbinary/android/ActivityFractureUtil.js';
+      const ActivityFractureUtil = globalThis.org.allbinary.android.ActivityFractureUtil;
+
       
-import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
+//not game specific package import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
+      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+
       
-import { ActivityFractureUtilAPI1 } from '../../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
+//not game specific package import { ActivityFractureUtilAPI1 } from '../../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
+      const ActivityFractureUtilAPI1 = globalThis.org.allbinary.android.api1.ActivityFractureUtilAPI1;
+
       
-import { ActivityFractureUtilAPI16 } from '../../../../../org/allbinary/android/api16/ActivityFractureUtilAPI16.js';
+//not game specific package import { ActivityFractureUtilAPI16 } from '../../../../../org/allbinary/android/api16/ActivityFractureUtilAPI16.js';
+      const ActivityFractureUtilAPI16 = globalThis.org.allbinary.android.api16.ActivityFractureUtilAPI16;
+
       
-import { ActivityFractureUtilAPI19 } from '../../../../../org/allbinary/android/api19/ActivityFractureUtilAPI19.js';
+//not game specific package import { ActivityFractureUtilAPI19 } from '../../../../../org/allbinary/android/api19/ActivityFractureUtilAPI19.js';
+      const ActivityFractureUtilAPI19 = globalThis.org.allbinary.android.api19.ActivityFractureUtilAPI19;
+
       
-import { ActivityFractureUtilAPI5 } from '../../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
+//not game specific package import { ActivityFractureUtilAPI5 } from '../../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
+      const ActivityFractureUtilAPI5 = globalThis.org.allbinary.android.api5.ActivityFractureUtilAPI5;
+
       
 
 

@@ -4,21 +4,37 @@
 
 
 
-import { InputStream } from '../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Bitmap } from '../../../android/graphics/Bitmap.js';
+//not game specific package import { Bitmap } from '../../../android/graphics/Bitmap.js';
+      const Bitmap = globalThis.android.graphics.Bitmap;
+
       
-import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
+//not game specific package import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
+      const BitmapFactory = globalThis.android.graphics.BitmapFactory;
+
       
-import { IOException } from '../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+//not game specific package import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+      const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+
       
-import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+//not game specific package import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+
       
-import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
+//not game specific package import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
+      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+
       
 
 

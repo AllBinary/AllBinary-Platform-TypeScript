@@ -18,7 +18,9 @@
 
 
 
-import { Time } from '../../../../../org/allbinary/business/time/Time.js';
+//not game specific package import { Time } from '../../../../../org/allbinary/business/time/Time.js';
+      const Time = globalThis.org.allbinary.business.time.Time;
+
       
 
 

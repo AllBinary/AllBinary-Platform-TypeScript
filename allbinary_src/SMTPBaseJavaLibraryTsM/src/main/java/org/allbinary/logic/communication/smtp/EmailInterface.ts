@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
+//not game specific package import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
+      const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
+
       
-import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+//not game specific package import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+      const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+
       
 
 

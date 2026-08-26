@@ -24,29 +24,53 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
+//not game specific package import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
+      const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
+
       
-import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
+//not game specific package import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
+      const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
+
       
-import { Canvas } from '../../../../playn/core/Canvas.js';
+//not game specific package import { Canvas } from '../../../../playn/core/Canvas.js';
+      const Canvas = globalThis.playn.core.Canvas;
+
       
-import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+//not game specific package import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+      const CanvasImage = globalThis.playn.core.CanvasImage;
+
       
-import { Callback } from '../../../../playn/core/util/Callback.js';
+//not game specific package import { Callback } from '../../../../playn/core/util/Callback.js';
+      const Callback = globalThis.playn.core.util.Callback;
+
       
 
 

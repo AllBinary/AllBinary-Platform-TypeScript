@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+//not game specific package import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+      const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+
       
-import { AdminConfiguration } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
+//not game specific package import { AdminConfiguration } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
+      const AdminConfiguration = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfiguration;
+
       
-import { AdminConfigurationInterface } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
+//not game specific package import { AdminConfigurationInterface } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
+      const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
+//not game specific package import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
+      const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

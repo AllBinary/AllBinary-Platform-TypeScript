@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { EmailEvent } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
+//not game specific package import { EmailEvent } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
+      const EmailEvent = globalThis.org.allbinary.logic.communication.smtp.event.EmailEvent;
+
       
-import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+//not game specific package import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+      const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
+
       
 
 

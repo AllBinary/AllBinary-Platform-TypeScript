@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
+//not game specific package import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
+      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+
       
-import { ShippingAddressesEntity } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
+//not game specific package import { ShippingAddressesEntity } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
+      const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
+
       
-import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+//not game specific package import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+
       
-import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { Document } from '../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

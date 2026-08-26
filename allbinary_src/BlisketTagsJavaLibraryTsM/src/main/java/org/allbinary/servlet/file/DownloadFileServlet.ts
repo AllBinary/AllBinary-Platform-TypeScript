@@ -20,45 +20,85 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { InputStream } from '../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { ServletException } from '../../../../javax/servlet/ServletException.js';
+//not game specific package import { ServletException } from '../../../../javax/servlet/ServletException.js';
+      const ServletException = globalThis.javax.servlet.ServletException;
+
       
-import { HttpServlet } from '../../../../javax/servlet/http/HttpServlet.js';
+//not game specific package import { HttpServlet } from '../../../../javax/servlet/http/HttpServlet.js';
+      const HttpServlet = globalThis.javax.servlet.http.HttpServlet;
+
       
-import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { HttpServletResponse } from '../../../../javax/servlet/http/HttpServletResponse.js';
+//not game specific package import { HttpServletResponse } from '../../../../javax/servlet/http/HttpServletResponse.js';
+      const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
+
       
-import { AuthenticationHelper } from '../../../../admin/taghelpers/AuthenticationHelper.js';
+//not game specific package import { AuthenticationHelper } from '../../../../admin/taghelpers/AuthenticationHelper.js';
+      const AuthenticationHelper = globalThis.admin.taghelpers.AuthenticationHelper;
+
       
-import { AuthenticationHelperFactory } from '../../../../admin/taghelpers/AuthenticationHelperFactory.js';
+//not game specific package import { AuthenticationHelperFactory } from '../../../../admin/taghelpers/AuthenticationHelperFactory.js';
+      const AuthenticationHelperFactory = globalThis.admin.taghelpers.AuthenticationHelperFactory;
+
       
-import { AuthenticationHelperUtil } from '../../../../admin/taghelpers/AuthenticationHelperUtil.js';
+//not game specific package import { AuthenticationHelperUtil } from '../../../../admin/taghelpers/AuthenticationHelperUtil.js';
+      const AuthenticationHelperUtil = globalThis.admin.taghelpers.AuthenticationHelperUtil;
+
       
-import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CloudStreamUtil } from '../../../../org/allbinary/logic/io/CloudStreamUtil.js';
+//not game specific package import { CloudStreamUtil } from '../../../../org/allbinary/logic/io/CloudStreamUtil.js';
+      const CloudStreamUtil = globalThis.org.allbinary.logic.io.CloudStreamUtil;
+
       
-import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+//not game specific package import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BlisketServletUtil } from '../../../../org/allbinary/servlet/BlisketServletUtil.js';
+//not game specific package import { BlisketServletUtil } from '../../../../org/allbinary/servlet/BlisketServletUtil.js';
+      const BlisketServletUtil = globalThis.org.allbinary.servlet.BlisketServletUtil;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

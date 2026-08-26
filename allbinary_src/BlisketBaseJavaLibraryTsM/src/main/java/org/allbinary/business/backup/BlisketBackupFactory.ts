@@ -22,39 +22,73 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { StoreFrontsEntity } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
+//not game specific package import { StoreFrontsEntity } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
+      const StoreFrontsEntity = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntity;
+
       
-import { StoreFrontsEntityFactory } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
+//not game specific package import { StoreFrontsEntityFactory } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
+      const StoreFrontsEntityFactory = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntityFactory;
+
       
-import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
+//not game specific package import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
+      const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+
       
-import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
+//not game specific package import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
+      const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+
       
-import { ZipFileUtil } from '../../../../org/allbinary/logic/io/file/zip/ZipFileUtil.js';
+//not game specific package import { ZipFileUtil } from '../../../../org/allbinary/logic/io/file/zip/ZipFileUtil.js';
+      const ZipFileUtil = globalThis.org.allbinary.logic.io.file.zip.ZipFileUtil;
+
       
-import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

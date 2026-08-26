@@ -22,27 +22,69 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameFeatureEvent } from '../../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
-import { GameFeatureEventHandler } from '../../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { GameFeatureEvent } from '../../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
+      const GameFeatureEvent = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
+
       
-import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+//not game specific package import { GameFeatureEventHandler } from '../../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
+      const GameFeatureEventHandler = globalThis.org.allbinary.game.configuration.event.GameFeatureEventHandler;
+
       
-import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
+      
+//not game specific package import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+
+      
+//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
+      
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 
@@ -74,14 +116,23 @@ export class Features
          {
         
 
-    private static readonly SINGLETON: Features = new Features();
+    private static SINGLETON: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public static getInstance(): Features{
+
+                        if(Features.SINGLETON == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    Features.SINGLETON= new Features();
+    
+
+                                    }
+                                
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Features.SINGLETON;
+                        return Features.SINGLETON as Features;
     
 }
 

@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
+//not game specific package import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
+      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+
       
 
 

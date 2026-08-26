@@ -22,47 +22,105 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
+//not game specific package import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
+//not game specific package import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
+      const GameKey = globalThis.org.allbinary.game.input.GameKey;
+
       
-import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+//not game specific package import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
+      const GameKeyFactory = globalThis.org.allbinary.game.input.GameKeyFactory;
+
       
-import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+//not game specific package import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+      const Input = globalThis.org.allbinary.game.input.Input;
+
       
-import { PlatformInputMappingFactory } from '../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
+//not game specific package import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+
       
-import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
+//not game specific package import { PlatformInputMappingFactory } from '../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
+      const PlatformInputMappingFactory = globalThis.org.allbinary.game.input.PlatformInputMappingFactory;
+
       
-import { PersistentInputMapping } from '../../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
+//not game specific package import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
+      const InputMappingInterface = globalThis.org.allbinary.game.input.mapping.InputMappingInterface;
+
       
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { PersistentInputMapping } from '../../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
+      const PersistentInputMapping = globalThis.org.allbinary.game.input.mapping.PersistentInputMapping;
+
       
-import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
-import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
+//not game specific package import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
+      const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
+
       
-import { HelpPaintable } from '../../../../../org/allbinary/game/paint/help/HelpPaintable.js';
+//not game specific package import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
+      const ColorFillPaintableFactory = globalThis.org.allbinary.game.paint.ColorFillPaintableFactory;
+
       
-import { InputMappingHelpPaintable } from '../../../../../org/allbinary/game/paint/help/InputMappingHelpPaintable.js';
+//not game specific package import { HelpPaintable } from '../../../../../org/allbinary/game/paint/help/HelpPaintable.js';
+      const HelpPaintable = globalThis.org.allbinary.game.paint.help.HelpPaintable;
+
       
-import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+//not game specific package import { InputMappingHelpPaintable } from '../../../../../org/allbinary/game/paint/help/InputMappingHelpPaintable.js';
+      const InputMappingHelpPaintable = globalThis.org.allbinary.game.paint.help.InputMappingHelpPaintable;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+      const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
+      
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

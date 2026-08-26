@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Matrix } from '../../../../android/graphics/Matrix.js';
+//not game specific package import { Matrix } from '../../../../android/graphics/Matrix.js';
+      const Matrix = globalThis.android.graphics.Matrix;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidImageUtil.js';
+//not game specific package import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidImageUtil.js';
+      const AndroidImageUtil = globalThis.org.allbinary.media.image.AndroidImageUtil;
+
       
-import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+//not game specific package import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+      const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+
       
-import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+//not game specific package import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+      const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+
       
 
 

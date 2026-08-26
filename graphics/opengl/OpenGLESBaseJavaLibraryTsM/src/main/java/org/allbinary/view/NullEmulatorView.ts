@@ -20,9 +20,13 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
+//not game specific package import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+
       
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+//not game specific package import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+
       
 
 

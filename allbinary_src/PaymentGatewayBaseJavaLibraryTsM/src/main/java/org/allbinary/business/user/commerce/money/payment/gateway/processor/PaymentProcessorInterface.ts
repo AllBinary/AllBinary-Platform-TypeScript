@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { PaymentException } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentException.js';
+//not game specific package import { PaymentException } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentException.js';
+      const PaymentException = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentException;
+
       
-import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
 
 

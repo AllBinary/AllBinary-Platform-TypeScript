@@ -20,9 +20,29 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Direction } from '../../../../org/allbinary/direction/Direction.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
+//not game specific package import { Direction } from '../../../../org/allbinary/direction/Direction.js';
+      const Direction = globalThis.org.allbinary.direction.Direction;
+
+      
+//not game specific package import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
+      const GameState = globalThis.org.allbinary.game.state.GameState;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

@@ -20,27 +20,49 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+//not game specific package import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+
       
-import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { QuoteRequest } from '../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
+//not game specific package import { QuoteRequest } from '../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
+      const QuoteRequest = globalThis.org.allbinary.business.user.quoterequest.QuoteRequest;
+
       
-import { QuoteRequestEntityFactory } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
+//not game specific package import { QuoteRequestEntityFactory } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
+      const QuoteRequestEntityFactory = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntityFactory;
+
       
-import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+//not game specific package import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

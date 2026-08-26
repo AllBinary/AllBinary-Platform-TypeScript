@@ -22,21 +22,37 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { GameNotificationEvent } from '../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
+//not game specific package import { GameNotificationEvent } from '../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
+      const GameNotificationEvent = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEvent;
+
       
-import { GameNotificationEventHandler } from '../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
+//not game specific package import { GameNotificationEventHandler } from '../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
+      const GameNotificationEventHandler = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEventHandler;
+
       
-import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
-import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
       
-import { ErrorSound } from '../../../../../../org/allbinary/media/audio/ErrorSound.js';
+//not game specific package import { ErrorSound } from '../../../../../../org/allbinary/media/audio/ErrorSound.js';
+      const ErrorSound = globalThis.org.allbinary.media.audio.ErrorSound;
+
       
-import { PrimaryPlayerQueueFactory } from '../../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
+//not game specific package import { PrimaryPlayerQueueFactory } from '../../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
+      const PrimaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.PrimaryPlayerQueueFactory;
+
       
 
 

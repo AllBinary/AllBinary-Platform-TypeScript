@@ -20,41 +20,77 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
+//not game specific package import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
+      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+
       
-import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+
       
-import { InputStream } from '../../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+
       
-import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+//not game specific package import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+      const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbCrypt } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js';
+//not game specific package import { AbCrypt } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js';
+      const AbCrypt = globalThis.org.allbinary.logic.control.crypt.jcehelper.AbCrypt;
+
       
-import { KeySpecFactory } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js';
+//not game specific package import { KeySpecFactory } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js';
+      const KeySpecFactory = globalThis.org.allbinary.logic.control.crypt.jcehelper.KeySpecFactory;
+
       
-import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
+//not game specific package import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
+      const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+
       
-import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+//not game specific package import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+
       
-import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
+//not game specific package import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
+      const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
+//not game specific package import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
+      const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
+//not game specific package import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
+      const TransformInfoTemplateData = globalThis.org.allbinary.logic.visual.transform.info.template.TransformInfoTemplateData;
+
       
 
 

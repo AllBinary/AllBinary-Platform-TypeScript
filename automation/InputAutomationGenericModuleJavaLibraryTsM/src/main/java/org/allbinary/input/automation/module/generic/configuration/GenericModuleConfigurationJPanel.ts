@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+//not game specific package import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+      const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
+
       
-import { GenericProfileDataWorkerType } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
+//not game specific package import { GenericProfileDataWorkerType } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
+      const GenericProfileDataWorkerType = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileDataWorkerType;
+
       
-import { GenericProfiles } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js';
+//not game specific package import { GenericProfiles } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js';
+      const GenericProfiles = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfiles;
+
       
-import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
+//not game specific package import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
+      const GenericProfileActions = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActions;
+
       
-import { GenericProfileActionsJPanel } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionsJPanel.js';
+//not game specific package import { GenericProfileActionsJPanel } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionsJPanel.js';
+      const GenericProfileActionsJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsJPanel;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

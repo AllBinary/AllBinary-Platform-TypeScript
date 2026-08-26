@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { InitInfo } from '../../../org/allbinary/business/init/InitInfo.js';
+//not game specific package import { InitInfo } from '../../../org/allbinary/business/init/InitInfo.js';
+      const InitInfo = globalThis.org.allbinary.business.init.InitInfo;
+
       
-import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
 
 

@@ -20,41 +20,77 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { DomData } from '../../../../../../../../../org/allbinary/data/tree/dom/DomData.js';
+//not game specific package import { DomData } from '../../../../../../../../../org/allbinary/data/tree/dom/DomData.js';
+      const DomData = globalThis.org.allbinary.data.tree.dom.DomData;
+
       
-import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+//not game specific package import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+
       
-import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+//not game specific package import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlData } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
+//not game specific package import { AbSqlData } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
+      const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
+
       
-import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
+//not game specific package import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
+      const Validation = globalThis.org.allbinary.logic.control.validate.Validation;
+
       
-import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { BodyData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
+//not game specific package import { BodyData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
+      const BodyData = globalThis.org.allbinary.logic.visual.transform.template.customizer.bodies.BodyData;
+
       
-import { TitleData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
+//not game specific package import { TitleData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
+      const TitleData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
+
       
-import { TitleNotRequiredValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleNotRequiredValidation.js';
+//not game specific package import { TitleNotRequiredValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleNotRequiredValidation.js';
+      const TitleNotRequiredValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleNotRequiredValidation;
+
       
-import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

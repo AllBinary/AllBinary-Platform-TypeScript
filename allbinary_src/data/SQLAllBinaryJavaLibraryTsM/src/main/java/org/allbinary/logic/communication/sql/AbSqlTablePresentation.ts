@@ -18,7 +18,9 @@
 
 
 
-import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+//not game specific package import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+      const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+
       
 
 

@@ -20,11 +20,17 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
+//not game specific package import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
+      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+
       
 
 

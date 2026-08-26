@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+//not game specific package import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+
       
-import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
+//not game specific package import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
+      const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+
       
 
 

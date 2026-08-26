@@ -18,11 +18,25 @@
 
 
 
-import { Hashtable } from '../../../../java/util/Hashtable.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
+//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { RectangleResourceFactoryInterface } from '../../../../org/allbinary/game/resource/RectangleResourceFactoryInterface.js';
+//not game specific package import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
+      const GameFeatureControlledInterface = globalThis.org.allbinary.game.configuration.feature.GameFeatureControlledInterface;
+
+      
+//not game specific package import { RectangleResourceFactoryInterface } from '../../../../org/allbinary/game/resource/RectangleResourceFactoryInterface.js';
+      const RectangleResourceFactoryInterface = globalThis.org.allbinary.game.resource.RectangleResourceFactoryInterface;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

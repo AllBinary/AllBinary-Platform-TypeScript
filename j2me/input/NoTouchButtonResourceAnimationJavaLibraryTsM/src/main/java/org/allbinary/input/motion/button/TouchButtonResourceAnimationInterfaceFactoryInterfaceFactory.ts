@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
+//not game specific package import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
+      const BaseResourceAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.resource.BaseResourceAnimationInterfaceFactoryInterfaceFactory;
+
       
-import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+//not game specific package import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+      const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
+
       
-import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+//not game specific package import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+
       
-import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
+//not game specific package import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
+      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+
       
-import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
+//not game specific package import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
+      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+
       
 
 

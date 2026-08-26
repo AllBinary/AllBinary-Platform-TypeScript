@@ -22,25 +22,45 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { UserRole } from '../../../../../../org/allbinary/business/user/role/UserRole.js';
+//not game specific package import { UserRole } from '../../../../../../org/allbinary/business/user/role/UserRole.js';
+      const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+
       
-import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+//not game specific package import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+      const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+
       
-import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { CryptFileReader } from '../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
+//not game specific package import { CryptFileReader } from '../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
+      const CryptFileReader = globalThis.org.allbinary.logic.control.crypt.file.CryptFileReader;
+
       
-import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { Document } from '../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

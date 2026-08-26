@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
+//not game specific package import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
+      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
       
-import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+//not game specific package import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+      const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
+
       
-import { UserEmailEventNameData } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+//not game specific package import { UserEmailEventNameData } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+      const UserEmailEventNameData = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventNameData;
+
       
-import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
 
 

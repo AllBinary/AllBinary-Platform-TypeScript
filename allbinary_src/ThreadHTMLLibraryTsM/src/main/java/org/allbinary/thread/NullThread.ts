@@ -22,6 +22,10 @@
         
             import { Thread } from '../../../java/lang/Thread.js';
         
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
 
 
 
@@ -40,13 +44,14 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { NullRunnable } from './NullRunnable.js';
+
 export class NullThread
             extends Object
          {
         
 
-    public static readonly NULL_THREAD: Thread = new Thread();
+    public static readonly NULL_THREAD: Thread = new Thread(NullRunnable.getInstance(), StringUtil.getInstance()!.EMPTY_STRING);
 
 }
                 

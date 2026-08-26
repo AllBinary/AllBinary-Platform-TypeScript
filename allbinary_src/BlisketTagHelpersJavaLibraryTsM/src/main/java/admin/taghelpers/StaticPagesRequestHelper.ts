@@ -20,61 +20,117 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { AbContext } from '../../org/allbinary/business/context/AbContext.js';
+//not game specific package import { AbContext } from '../../org/allbinary/business/context/AbContext.js';
+      const AbContext = globalThis.org.allbinary.business.context.AbContext;
+
       
-import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+//not game specific package import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+
       
-import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { AcceptableResponseGenerator } from '../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
+//not game specific package import { AcceptableResponseGenerator } from '../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
+      const AcceptableResponseGenerator = globalThis.org.allbinary.logic.communication.http.AcceptableResponseGenerator;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+//not game specific package import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+      const UserEmailEventNameData = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventNameData;
+
       
-import { UserEmailEventHandler } from '../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
+//not game specific package import { UserEmailEventHandler } from '../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
+      const UserEmailEventHandler = globalThis.org.allbinary.logic.communication.smtp.event.handler.UserEmailEventHandler;
+
       
-import { AdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
+//not game specific package import { AdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
+      const AdminUserEmailEventHandlerSingletons = globalThis.org.allbinary.logic.communication.smtp.event.handler.factory.AdminUserEmailEventHandlerSingletons;
+
       
-import { StoreAdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js';
+//not game specific package import { StoreAdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js';
+      const StoreAdminUserEmailEventHandlerSingletons = globalThis.org.allbinary.logic.communication.smtp.event.handler.factory.StoreAdminUserEmailEventHandlerSingletons;
+
       
-import { AdminEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
+//not game specific package import { AdminEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
+      const AdminEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.AdminEmailInfo;
+
       
-import { BasicEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
+//not game specific package import { BasicEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
+      const BasicEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
+
       
-import { EmailInfo } from '../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+//not game specific package import { EmailInfo } from '../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+      const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
+
       
-import { StoreEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js';
+//not game specific package import { StoreEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js';
+      const StoreEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.StoreEmailInfo;
+
       
-import { SearchParams } from '../../org/allbinary/logic/control/search/SearchParams.js';
+//not game specific package import { SearchParams } from '../../org/allbinary/logic/control/search/SearchParams.js';
+      const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
+
       
-import { SearchRequest } from '../../org/allbinary/logic/control/search/SearchRequest.js';
+//not game specific package import { SearchRequest } from '../../org/allbinary/logic/control/search/SearchRequest.js';
+      const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+
       
-import { FileUtil } from '../../org/allbinary/logic/io/file/FileUtil.js';
+//not game specific package import { FileUtil } from '../../org/allbinary/logic/io/file/FileUtil.js';
+      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+
       
-import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { AbPathData } from '../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+
       
-import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+//not game specific package import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+      const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
       
-import { ProductListingFactory } from '../../views/admin/inventory/listings/ProductListingFactory.js';
+//not game specific package import { ProductListingFactory } from '../../views/admin/inventory/listings/ProductListingFactory.js';
+      const ProductListingFactory = globalThis.views.admin.inventory.listings.ProductListingFactory;
+
       
 
 

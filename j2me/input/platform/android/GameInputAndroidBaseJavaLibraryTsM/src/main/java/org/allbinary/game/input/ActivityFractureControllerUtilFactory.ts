@@ -6,7 +6,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
+//not game specific package import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
+      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+
       
 
 

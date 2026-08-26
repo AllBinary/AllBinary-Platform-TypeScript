@@ -22,23 +22,57 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
+      const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
+
       
-import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
+      const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
+
       
-import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+      const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+
       
-import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+//not game specific package import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
+      
+//not game specific package import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

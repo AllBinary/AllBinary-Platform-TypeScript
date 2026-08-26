@@ -6,17 +6,29 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { OpenGLStrings } from '../../../../org/allbinary/image/opengles/OpenGLStrings.js';
+//not game specific package import { OpenGLStrings } from '../../../../org/allbinary/image/opengles/OpenGLStrings.js';
+      const OpenGLStrings = globalThis.org.allbinary.image.opengles.OpenGLStrings;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
 
 

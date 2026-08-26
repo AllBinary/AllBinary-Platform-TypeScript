@@ -20,11 +20,17 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
+//not game specific package import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
+      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+
       
-import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
 
 

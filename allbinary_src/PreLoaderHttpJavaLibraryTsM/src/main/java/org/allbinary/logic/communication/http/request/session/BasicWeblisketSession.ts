@@ -22,23 +22,41 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { HttpSession } from '../../../../../../../javax/servlet/http/HttpSession.js';
+//not game specific package import { HttpSession } from '../../../../../../../javax/servlet/http/HttpSession.js';
+      const HttpSession = globalThis.javax.servlet.http.HttpSession;
+
       
-import { PageContext } from '../../../../../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../../../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
+//not game specific package import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
+      const UserData = globalThis.org.allbinary.business.user.UserData;
+
       
-import { PaymentGatewayData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
+//not game specific package import { PaymentGatewayData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
+      const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+
       
-import { BasicUserRole } from '../../../../../../../org/allbinary/business/user/role/BasicUserRole.js';
+//not game specific package import { BasicUserRole } from '../../../../../../../org/allbinary/business/user/role/BasicUserRole.js';
+      const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
+
       
-import { BasicUserRoleData } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleData.js';
+//not game specific package import { BasicUserRoleData } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleData.js';
+      const BasicUserRoleData = globalThis.org.allbinary.business.user.role.BasicUserRoleData;
+
       
-import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
 
 

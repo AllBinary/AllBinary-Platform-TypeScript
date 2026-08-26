@@ -20,7 +20,9 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-import { Hashtable } from '../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
 
 

@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
+//not game specific package import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
+      const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+
       
-import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+//not game specific package import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
+//not game specific package import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
+      const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+
       
-import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
+//not game specific package import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
+      const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
+
       
-import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
+//not game specific package import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
+      const GameInput = globalThis.org.allbinary.game.input.GameInput;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
 
 

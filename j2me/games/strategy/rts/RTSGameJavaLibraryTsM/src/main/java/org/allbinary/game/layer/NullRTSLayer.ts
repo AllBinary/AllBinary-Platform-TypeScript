@@ -22,25 +22,45 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
+//not game specific package import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
+      const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
+
       
-import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
+//not game specific package import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
+      const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
+
       
-import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
+//not game specific package import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
+      const NullRTSFormInputFactory = globalThis.org.allbinary.game.input.form.NullRTSFormInputFactory;
+
       
-import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
+//not game specific package import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
+      const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
+
       
-import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
+//not game specific package import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
+      const Capital = globalThis.org.allbinary.game.layer.capital.Capital;
+
       
-import { GameNotificationHud } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
+//not game specific package import { GameNotificationHud } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
+      const GameNotificationHud = globalThis.org.allbinary.game.layer.hud.basic.notification.GameNotificationHud;
+
       
-import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+//not game specific package import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+      const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+
       
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
+//not game specific package import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
+      const Sound = globalThis.org.allbinary.media.audio.Sound;
+
       
 
 

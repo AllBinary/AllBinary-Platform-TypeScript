@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

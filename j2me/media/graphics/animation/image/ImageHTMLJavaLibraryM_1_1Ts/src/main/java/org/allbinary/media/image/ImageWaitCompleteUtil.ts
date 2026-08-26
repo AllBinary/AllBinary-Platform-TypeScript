@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+//not game specific package import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+      const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
-import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
+//not game specific package import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
+      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
       
-import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
+//not game specific package import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
+      const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
+
       
 
 

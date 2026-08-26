@@ -18,7 +18,9 @@
 
 
 
-import { ProfileActionScriptProcessorInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
+//not game specific package import { ProfileActionScriptProcessorInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
+      const ProfileActionScriptProcessorInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.ProfileActionScriptProcessorInterface;
+
       
 
 

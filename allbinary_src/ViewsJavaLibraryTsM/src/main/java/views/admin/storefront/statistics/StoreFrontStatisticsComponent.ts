@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+//not game specific package import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+
       
-import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { RealTimeStoreFrontStatistics } from '../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatistics.js';
+//not game specific package import { RealTimeStoreFrontStatistics } from '../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatistics.js';
+      const RealTimeStoreFrontStatistics = globalThis.org.allbinary.business.context.modules.storefront.statistics.RealTimeStoreFrontStatistics;
+
       
-import { RealTimeStoreFrontStatisticsView } from '../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatisticsView.js';
+//not game specific package import { RealTimeStoreFrontStatisticsView } from '../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatisticsView.js';
+      const RealTimeStoreFrontStatisticsView = globalThis.org.allbinary.business.context.modules.storefront.statistics.RealTimeStoreFrontStatisticsView;
+
       
-import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+//not game specific package import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+
       
 
 

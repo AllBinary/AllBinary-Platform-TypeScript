@@ -26,31 +26,57 @@
         
             import { Double } from '../../../../../../java/lang/Double.js';
         
-import { awt } from '../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+//not game specific package import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+
       
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
+//not game specific package import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
+      const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
+
       
-import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
+//not game specific package import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
+      const CanvasJPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
+
       
-import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
+//not game specific package import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
+      const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { RectangleCollisionPointUtil } from '../../../../../../org/allbinary/math/RectangleCollisionPointUtil.js';
+//not game specific package import { RectangleCollisionPointUtil } from '../../../../../../org/allbinary/math/RectangleCollisionPointUtil.js';
+      const RectangleCollisionPointUtil = globalThis.org.allbinary.math.RectangleCollisionPointUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

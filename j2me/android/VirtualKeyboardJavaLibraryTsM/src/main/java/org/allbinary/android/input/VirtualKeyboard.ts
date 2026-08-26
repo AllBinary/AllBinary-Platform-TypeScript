@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { VirtualKeyboardEvent } from '../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+//not game specific package import { VirtualKeyboardEvent } from '../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+      const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
 
 

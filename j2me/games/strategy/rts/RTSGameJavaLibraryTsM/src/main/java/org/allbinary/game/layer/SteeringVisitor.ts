@@ -18,11 +18,17 @@
 
 
 
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
+//not game specific package import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+
       
 
 

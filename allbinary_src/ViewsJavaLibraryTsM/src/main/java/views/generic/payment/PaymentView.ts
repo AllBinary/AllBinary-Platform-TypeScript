@@ -20,25 +20,45 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from '../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { Payment } from '../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
+//not game specific package import { Payment } from '../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
+      const Payment = globalThis.org.allbinary.business.user.commerce.money.payment.Payment;
+
       
-import { PaymentData } from '../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+//not game specific package import { PaymentData } from '../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+      const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+
       
-import { PaymentEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
+//not game specific package import { PaymentEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
+      const PaymentEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityFactory;
+
       
-import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { Document } from '../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+//not game specific package import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+
       
 
 

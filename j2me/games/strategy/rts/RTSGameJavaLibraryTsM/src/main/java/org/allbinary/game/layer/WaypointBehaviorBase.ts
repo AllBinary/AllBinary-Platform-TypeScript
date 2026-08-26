@@ -24,23 +24,41 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+//not game specific package import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+      const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+
       
-import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
+//not game specific package import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
+      const WaypointBase = globalThis.org.allbinary.game.layer.waypoint.WaypointBase;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
+//not game specific package import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
+      const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
+
       
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
+//not game specific package import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
+      const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
+
       
-import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { BasicArrayListS } from '../../../../org/allbinary/util/BasicArrayListS.js';
+//not game specific package import { BasicArrayListS } from '../../../../org/allbinary/util/BasicArrayListS.js';
+      const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
       
 
 

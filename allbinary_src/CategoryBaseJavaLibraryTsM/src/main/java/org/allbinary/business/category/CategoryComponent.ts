@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from '../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { TransformInterface } from '../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
+//not game specific package import { TransformInterface } from '../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
+      const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
+
       
-import { TransformDocumentInterface } from '../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
+//not game specific package import { TransformDocumentInterface } from '../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
+      const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+
       
-import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { Document } from '../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

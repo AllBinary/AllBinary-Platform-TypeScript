@@ -22,63 +22,121 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { FileReader } from '../../../../../../java/io/FileReader.js';
+//not game specific package import { FileReader } from '../../../../../../java/io/FileReader.js';
+      const FileReader = globalThis.java.io.FileReader;
+
       
-import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
+//not game specific package import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
+      const LineNumberReader = globalThis.java.io.LineNumberReader;
+
       
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+//not game specific package import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+
       
-import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+//not game specific package import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+
       
-import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FilePathData } from '../../../../../../org/allbinary/logic/io/file/FilePathData.js';
+//not game specific package import { FilePathData } from '../../../../../../org/allbinary/logic/io/file/FilePathData.js';
+      const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+
       
-import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+//not game specific package import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+      const SubDirectory = globalThis.org.allbinary.logic.io.file.directory.SubDirectory;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
+//not game specific package import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
+      const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
+
       
-import { BridgeInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/BridgeInterface.js';
+//not game specific package import { BridgeInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/BridgeInterface.js';
+      const BridgeInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.BridgeInterface;
+
       
-import { CpuInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/CpuInterface.js';
+//not game specific package import { CpuInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/CpuInterface.js';
+      const CpuInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.CpuInterface;
+
       
-import { EthernetInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/EthernetInterface.js';
+//not game specific package import { EthernetInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/EthernetInterface.js';
+      const EthernetInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.EthernetInterface;
+
       
-import { FireWireInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/FireWireInterface.js';
+//not game specific package import { FireWireInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/FireWireInterface.js';
+      const FireWireInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.FireWireInterface;
+
       
-import { HardDriveControllerInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardDriveControllerInterface.js';
+//not game specific package import { HardDriveControllerInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardDriveControllerInterface.js';
+      const HardDriveControllerInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardDriveControllerInterface;
+
       
-import { HardDriveInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardDriveInterface.js';
+//not game specific package import { HardDriveInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardDriveInterface.js';
+      const HardDriveInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardDriveInterface;
+
       
-import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+//not game specific package import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+      const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+
       
-import { MachineAccessControlAddressInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MachineAccessControlAddressInterface.js';
+//not game specific package import { MachineAccessControlAddressInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MachineAccessControlAddressInterface.js';
+      const MachineAccessControlAddressInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.MachineAccessControlAddressInterface;
+
       
-import { MediaInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MediaInterface.js';
+//not game specific package import { MediaInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MediaInterface.js';
+      const MediaInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.MediaInterface;
+
       
-import { MonitorInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MonitorInterface.js';
+//not game specific package import { MonitorInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MonitorInterface.js';
+      const MonitorInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.MonitorInterface;
+
       
-import { UsbInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/UsbInterface.js';
+//not game specific package import { UsbInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/UsbInterface.js';
+      const UsbInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.UsbInterface;
+
       
-import { VideoInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/VideoInterface.js';
+//not game specific package import { VideoInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/VideoInterface.js';
+      const VideoInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.VideoInterface;
+
       
-import { Cpu } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Cpu.js';
+//not game specific package import { Cpu } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Cpu.js';
+      const Cpu = globalThis.org.allbinary.logic.system.hardware.components.linux.Cpu;
+
       
-import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

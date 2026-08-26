@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
+//not game specific package import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
+      const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
+
       
-import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+//not game specific package import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+      const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+
       
 
 

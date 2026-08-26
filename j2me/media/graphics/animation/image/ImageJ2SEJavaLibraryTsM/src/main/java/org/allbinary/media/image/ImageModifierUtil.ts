@@ -22,21 +22,37 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { ColorModel } from '../../../../java/awt/image/ColorModel.js';
+//not game specific package import { ColorModel } from '../../../../java/awt/image/ColorModel.js';
+      const ColorModel = globalThis.java.awt.image.ColorModel;
+
       
-import { WritableRaster } from '../../../../java/awt/image/WritableRaster.js';
+//not game specific package import { WritableRaster } from '../../../../java/awt/image/WritableRaster.js';
+      const WritableRaster = globalThis.java.awt.image.WritableRaster;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

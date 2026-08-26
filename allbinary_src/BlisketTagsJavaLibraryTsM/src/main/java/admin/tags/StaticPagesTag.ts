@@ -22,23 +22,41 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from '../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { StaticPagesHelperFactory } from '../../admin/taghelpers/StaticPagesHelperFactory.js';
+//not game specific package import { StaticPagesHelperFactory } from '../../admin/taghelpers/StaticPagesHelperFactory.js';
+      const StaticPagesHelperFactory = globalThis.admin.taghelpers.StaticPagesHelperFactory;
+
       
-import { StaticPagesRequestHelperFactory } from '../../admin/taghelpers/StaticPagesRequestHelperFactory.js';
+//not game specific package import { StaticPagesRequestHelperFactory } from '../../admin/taghelpers/StaticPagesRequestHelperFactory.js';
+      const StaticPagesRequestHelperFactory = globalThis.admin.taghelpers.StaticPagesRequestHelperFactory;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { SearchData } from '../../org/allbinary/logic/control/search/SearchData.js';
+//not game specific package import { SearchData } from '../../org/allbinary/logic/control/search/SearchData.js';
+      const SearchData = globalThis.org.allbinary.logic.control.search.SearchData;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+//not game specific package import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+      const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
       
 
 

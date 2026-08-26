@@ -6,11 +6,29 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
-import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
+//not game specific package import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
+      
+//not game specific package import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
+      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

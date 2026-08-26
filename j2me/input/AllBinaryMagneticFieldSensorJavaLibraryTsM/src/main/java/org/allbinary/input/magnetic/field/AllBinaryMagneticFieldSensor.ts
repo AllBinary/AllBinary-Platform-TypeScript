@@ -18,7 +18,9 @@
 
 
 
-import { AllBinarySensor } from '../../../../../org/allbinary/input/AllBinarySensor.js';
+//not game specific package import { AllBinarySensor } from '../../../../../org/allbinary/input/AllBinarySensor.js';
+      const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+
       
 
 

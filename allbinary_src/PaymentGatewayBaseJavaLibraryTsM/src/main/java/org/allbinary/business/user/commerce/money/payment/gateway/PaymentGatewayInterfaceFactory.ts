@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { BasicPaymentType } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
+//not game specific package import { BasicPaymentType } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
+      const BasicPaymentType = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentType;
+
       
-import { BasicPaymentTypeUtil } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
+//not game specific package import { BasicPaymentTypeUtil } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
+      const BasicPaymentTypeUtil = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentTypeUtil;
+
       
-import { RequestParams } from '../../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+//not game specific package import { RequestParams } from '../../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+      const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+
       
-import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

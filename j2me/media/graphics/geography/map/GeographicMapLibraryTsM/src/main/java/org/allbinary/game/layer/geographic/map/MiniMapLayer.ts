@@ -20,51 +20,97 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { ForcedLogUtil } from '../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { CircleFilledAnimation } from '../../../../../../org/allbinary/animation/vector/CircleFilledAnimation.js';
+//not game specific package import { CircleFilledAnimation } from '../../../../../../org/allbinary/animation/vector/CircleFilledAnimation.js';
+      const CircleFilledAnimation = globalThis.org.allbinary.animation.vector.CircleFilledAnimation;
+
       
-import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+//not game specific package import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+
       
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { ColorCompositeInterface } from '../../../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
+//not game specific package import { ColorCompositeInterface } from '../../../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
+      const ColorCompositeInterface = globalThis.org.allbinary.graphics.color.ColorCompositeInterface;
+
       
-import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
-import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { BasicGeographicMapCellPositionFactory } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
+//not game specific package import { BasicGeographicMapCellPositionFactory } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
+      const BasicGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
+
       
-import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { GeographicMapCellPositionEvent } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEvent.js';
+//not game specific package import { GeographicMapCellPositionEvent } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEvent.js';
+      const GeographicMapCellPositionEvent = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEvent;
+
       
-import { GeographicMapCellPositionEventHandler } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEventHandler.js';
+//not game specific package import { GeographicMapCellPositionEventHandler } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEventHandler.js';
+      const GeographicMapCellPositionEventHandler = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEventHandler;
+
       
-import { GeographicMapCellPositionEventListenerInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEventListenerInterface.js';
+//not game specific package import { GeographicMapCellPositionEventListenerInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEventListenerInterface.js';
+      const GeographicMapCellPositionEventListenerInterface = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEventListenerInterface;
+
       
-import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
       
 
 

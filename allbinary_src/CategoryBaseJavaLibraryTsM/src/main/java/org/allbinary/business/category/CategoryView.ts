@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
+//not game specific package import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
+      const CategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
+
       
-import { CategoryPropertiesView } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesView.js';
+//not game specific package import { CategoryPropertiesView } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesView.js';
+      const CategoryPropertiesView = globalThis.org.allbinary.business.category.properties.CategoryPropertiesView;
+
       
-import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { InterfaceUtil } from '../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
+//not game specific package import { InterfaceUtil } from '../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
+      const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { Document } from '../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

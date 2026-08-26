@@ -20,9 +20,21 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+      
+//not game specific package import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
+      const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
+
       
 
 

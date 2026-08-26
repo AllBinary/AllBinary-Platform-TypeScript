@@ -18,7 +18,13 @@
 
 
 
-import { Init } from '../../../../org/allbinary/init/Init.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+//not game specific package import { Init } from '../../../../org/allbinary/init/Init.js';
+      const Init = globalThis.org.allbinary.init.Init;
+
       
 
 

@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CompleteMotionGestureInputEventHandler } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js';
+//not game specific package import { CompleteMotionGestureInputEventHandler } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js';
+      const CompleteMotionGestureInputEventHandler = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventHandler;
+
       
-import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
+//not game specific package import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
+      const GameKeyCompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.motion.action.GameKeyCompleteMotionGestureInputEvent;
+
       
-import { GameKeyFromMotionGestureEventListener } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyFromMotionGestureEventListener.js';
+//not game specific package import { GameKeyFromMotionGestureEventListener } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyFromMotionGestureEventListener.js';
+      const GameKeyFromMotionGestureEventListener = globalThis.org.allbinary.game.input.motion.action.GameKeyFromMotionGestureEventListener;
+
       
-import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
+//not game specific package import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
+      const MotionGestureToMotionGestureActionAssociation = globalThis.org.allbinary.input.motion.gesture.MotionGestureToMotionGestureActionAssociation;
+
       
-import { MotionGestureConfiguration } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
+//not game specific package import { MotionGestureConfiguration } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
+      const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
+
       
-import { MotionGestureConfigurationFactory } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
+//not game specific package import { MotionGestureConfigurationFactory } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
+      const MotionGestureConfigurationFactory = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfigurationFactory;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

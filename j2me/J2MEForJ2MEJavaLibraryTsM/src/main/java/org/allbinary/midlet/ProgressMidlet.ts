@@ -22,15 +22,25 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
+//not game specific package import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
+      const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
+
       
-import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
+//not game specific package import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
+      const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
+
       
-import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
+//not game specific package import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
+      const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
+
       
 
 
@@ -53,7 +63,7 @@ import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
 import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
 import { ExitRunnable } from './ExitRunnable.js';
-
+//J2MEForJ2ME
 export class ProgressMidlet extends AllBinaryMidlet {
         
 

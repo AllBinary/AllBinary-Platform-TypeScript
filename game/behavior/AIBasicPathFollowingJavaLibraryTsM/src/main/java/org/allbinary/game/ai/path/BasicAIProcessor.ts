@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
+//not game specific package import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
+      const Direction = globalThis.org.allbinary.direction.Direction;
+
       
-import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
+//not game specific package import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
+      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+
       
-import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
       
-import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
+//not game specific package import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
+      const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
+
       
-import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
+//not game specific package import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
+      const GeographicMapDirectionUtil = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapDirectionUtil;
+
       
-import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js';
+//not game specific package import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js';
+      const GeographicMapCellPathHistoryInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicMapCellPathHistoryInfo;
+
       
 
 

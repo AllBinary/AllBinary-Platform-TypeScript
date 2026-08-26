@@ -20,11 +20,17 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+//not game specific package import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+      const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+
       
-import { MachineAccessControlAddressInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MachineAccessControlAddressInterface.js';
+//not game specific package import { MachineAccessControlAddressInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MachineAccessControlAddressInterface.js';
+      const MachineAccessControlAddressInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.MachineAccessControlAddressInterface;
+
       
 
 

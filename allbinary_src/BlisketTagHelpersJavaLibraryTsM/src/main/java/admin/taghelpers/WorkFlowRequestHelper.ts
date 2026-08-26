@@ -20,25 +20,45 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { WorkFlowEntityFactory } from '../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
+//not game specific package import { WorkFlowEntityFactory } from '../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
+      const WorkFlowEntityFactory = globalThis.org.allbinary.data.tables.workflow.WorkFlowEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { NewWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/NewWorkFlowFactory.js';
+//not game specific package import { NewWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/NewWorkFlowFactory.js';
+      const NewWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.NewWorkFlowFactory;
+
       
-import { WorkFlowData } from '../../org/allbinary/logic/control/workflow/WorkFlowData.js';
+//not game specific package import { WorkFlowData } from '../../org/allbinary/logic/control/workflow/WorkFlowData.js';
+      const WorkFlowData = globalThis.org.allbinary.logic.control.workflow.WorkFlowData;
+
       
-import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+//not game specific package import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+      const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+
       
-import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+
       
 
 

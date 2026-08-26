@@ -22,13 +22,21 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullImage } from '../../../../../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { NullImage } from '../../../../../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
-import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
+//not game specific package import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
+      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+
       
-import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

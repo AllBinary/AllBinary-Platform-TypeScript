@@ -20,45 +20,101 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+
       
-import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { BasicColorSetUtil } from '../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
+//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
+//not game specific package import { BasicColorSetUtil } from '../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
+      const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
+
       
-import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+
       
-import { OpenGLSurfaceChangedInterface } from '../../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
+//not game specific package import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { OpenGLSurfaceChangedInterface } from '../../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
+      const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
+
       
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { ViewPositionEvent } from '../../../../org/allbinary/view/event/ViewPositionEvent.js';
+//not game specific package import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
       
-import { ViewPositionEventListenerInterface } from '../../../../org/allbinary/view/event/ViewPositionEventListenerInterface.js';
+//not game specific package import { ViewPositionEvent } from '../../../../org/allbinary/view/event/ViewPositionEvent.js';
+      const ViewPositionEvent = globalThis.org.allbinary.view.event.ViewPositionEvent;
+
+      
+//not game specific package import { ViewPositionEventListenerInterface } from '../../../../org/allbinary/view/event/ViewPositionEventListenerInterface.js';
+      const ViewPositionEventListenerInterface = globalThis.org.allbinary.view.event.ViewPositionEventListenerInterface;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

@@ -22,15 +22,41 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+//not game specific package import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+      const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
+
       
-import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+//not game specific package import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+      const Input = globalThis.org.allbinary.game.input.Input;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
+      
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

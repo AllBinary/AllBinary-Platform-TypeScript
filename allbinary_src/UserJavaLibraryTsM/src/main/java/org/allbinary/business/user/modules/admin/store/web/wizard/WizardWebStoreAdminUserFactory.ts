@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { UserFactoryInterface } from '../../../../../../../../../org/allbinary/business/user/UserFactoryInterface.js';
+//not game specific package import { UserFactoryInterface } from '../../../../../../../../../org/allbinary/business/user/UserFactoryInterface.js';
+      const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
+
       
-import { UserInterface } from '../../../../../../../../../org/allbinary/business/user/UserInterface.js';
+//not game specific package import { UserInterface } from '../../../../../../../../../org/allbinary/business/user/UserInterface.js';
+      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
       
 
 

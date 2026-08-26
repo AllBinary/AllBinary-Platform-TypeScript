@@ -20,33 +20,61 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
+//not game specific package import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
+      const InputFeatureFactory = globalThis.org.allbinary.game.configuration.feature.InputFeatureFactory;
+
       
-import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+//not game specific package import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+
       
-import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
-import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+//not game specific package import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+
       
-import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
       
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { ScrollMapEvent } from '../../../../org/allbinary/layer/event/ScrollMapEvent.js';
+//not game specific package import { ScrollMapEvent } from '../../../../org/allbinary/layer/event/ScrollMapEvent.js';
+      const ScrollMapEvent = globalThis.org.allbinary.layer.event.ScrollMapEvent;
+
       
-import { ScrollMapEventHandler } from '../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
+//not game specific package import { ScrollMapEventHandler } from '../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
+      const ScrollMapEventHandler = globalThis.org.allbinary.layer.event.ScrollMapEventHandler;
+
       
-import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 
@@ -316,7 +344,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
                 //@Throws(Exception.constructor)
             
     public processInputKey(key: number){
-this.inputProcessorArray[key]!.processEvent(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE);
+this.inputProcessorArray[key]!.processEvent(AllBinaryGameLayerManager.getNullInstance(), GameKeyEvent.NONE);
     
 }
 

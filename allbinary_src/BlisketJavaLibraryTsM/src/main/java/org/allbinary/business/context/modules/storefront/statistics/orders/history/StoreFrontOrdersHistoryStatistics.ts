@@ -24,19 +24,33 @@
         
             import { Long } from '../../../../../../../../../java/lang/Long.js';
         
-import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { OrderHistoryInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryInterface.js';
+//not game specific package import { OrderHistoryInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryInterface.js';
+      const OrderHistoryInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryInterface;
+
       
-import { Money } from '../../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+//not game specific package import { Money } from '../../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+
       
-import { OrderHistoryEntityFactory } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+//not game specific package import { OrderHistoryEntityFactory } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+      const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
+
       
-import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
+//not game specific package import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
+      const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
+
       
 
 

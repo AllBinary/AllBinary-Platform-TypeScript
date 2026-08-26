@@ -18,9 +18,13 @@
 
 
 
-import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
+//not game specific package import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
+      const AdvertisementsInterface = globalThis.org.allbinary.business.advertisement.AdvertisementsInterface;
+
       
-import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
+//not game specific package import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
+      const AdvertisementSearchInterface = globalThis.org.allbinary.business.advertisement.search.AdvertisementSearchInterface;
+
       
 
 

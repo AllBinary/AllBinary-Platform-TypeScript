@@ -20,13 +20,21 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+//not game specific package import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+
       
-import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
+//not game specific package import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
+      const AppletUtil = globalThis.org.allbinary.AppletUtil;
+
       
-import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
 
 

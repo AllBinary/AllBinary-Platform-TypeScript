@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+//not game specific package import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+
       
-import { RaceTrackData } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
+//not game specific package import { RaceTrackData } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
+      const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+
       
-import { RaceTrackInfo } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
+//not game specific package import { RaceTrackInfo } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
+      const RaceTrackInfo = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
+
       
 
 

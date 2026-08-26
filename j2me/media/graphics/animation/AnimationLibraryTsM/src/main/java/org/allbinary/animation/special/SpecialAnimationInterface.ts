@@ -18,7 +18,17 @@
 
 
 
-import { IndexedAnimationInterface } from '../../../../org/allbinary/animation/IndexedAnimationInterface.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+//not game specific package import { IndexedAnimationInterface } from '../../../../org/allbinary/animation/IndexedAnimationInterface.js';
+      const IndexedAnimationInterface = globalThis.org.allbinary.animation.IndexedAnimationInterface;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

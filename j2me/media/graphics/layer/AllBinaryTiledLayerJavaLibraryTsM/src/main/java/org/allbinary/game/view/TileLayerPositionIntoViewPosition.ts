@@ -18,13 +18,21 @@
 
 
 
-import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+//not game specific package import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+
       
-import { Layer } from '../../../../org/allbinary/layer/Layer.js';
+//not game specific package import { Layer } from '../../../../org/allbinary/layer/Layer.js';
+      const Layer = globalThis.org.allbinary.layer.Layer;
+
       
-import { NullLayer } from '../../../../org/allbinary/layer/NullLayer.js';
+//not game specific package import { NullLayer } from '../../../../org/allbinary/layer/NullLayer.js';
+      const NullLayer = globalThis.org.allbinary.layer.NullLayer;
+
       
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+//not game specific package import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+
       
 
 

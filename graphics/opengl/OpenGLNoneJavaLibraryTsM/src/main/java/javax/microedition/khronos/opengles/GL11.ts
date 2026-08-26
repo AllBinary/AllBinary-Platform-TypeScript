@@ -4,11 +4,17 @@
 
 
 
-import { Buffer } from '../../../../java/nio/Buffer.js';
+//not game specific package import { Buffer } from '../../../../java/nio/Buffer.js';
+      const Buffer = globalThis.java.nio.Buffer;
+
       
-import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
+//not game specific package import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
+      const FloatBuffer = globalThis.java.nio.FloatBuffer;
+
       
-import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
+//not game specific package import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
+      const IntBuffer = globalThis.java.nio.IntBuffer;
+
       
 
 

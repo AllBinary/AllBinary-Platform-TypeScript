@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+//not game specific package import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+      const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+
       
-import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

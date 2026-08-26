@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { MESSAGES } from '../../../org/allbinary/globals/MESSAGES.js';
+//not game specific package import { MESSAGES } from '../../../org/allbinary/globals/MESSAGES.js';
+      const MESSAGES = globalThis.org.allbinary.globals.MESSAGES;
+
       
-import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+//not game specific package import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+
       
-import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { Document } from '../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

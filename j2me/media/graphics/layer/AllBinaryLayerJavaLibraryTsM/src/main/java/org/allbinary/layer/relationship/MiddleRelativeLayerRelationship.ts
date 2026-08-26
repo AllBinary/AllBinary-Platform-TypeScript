@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not game specific package import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
+      const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
       
 
 

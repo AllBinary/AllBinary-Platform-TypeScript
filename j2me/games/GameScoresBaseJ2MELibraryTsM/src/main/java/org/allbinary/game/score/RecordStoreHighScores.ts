@@ -20,53 +20,101 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+//not game specific package import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+
       
-import { DataInputStream } from '../../../../java/io/DataInputStream.js';
+//not game specific package import { DataInputStream } from '../../../../java/io/DataInputStream.js';
+      const DataInputStream = globalThis.java.io.DataInputStream;
+
       
-import { EOFException } from '../../../../java/io/EOFException.js';
+//not game specific package import { EOFException } from '../../../../java/io/EOFException.js';
+      const EOFException = globalThis.java.io.EOFException;
+
       
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
+//not game specific package import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
+      const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
+
       
-import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+//not game specific package import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+
       
-import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+//not game specific package import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+
       
-import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
+//not game specific package import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
+      const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+
       
-import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
+//not game specific package import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
+      const RecordStoreNotFoundException = globalThis.javax.microedition.rms.RecordStoreNotFoundException;
+
       
-import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
+//not game specific package import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
+      const NullRecordComparator = globalThis.org.allbinary.game.configuration.persistance.NullRecordComparator;
+
       
-import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
+//not game specific package import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
+      const NullRecordFilter = globalThis.org.allbinary.game.configuration.persistance.NullRecordFilter;
+
       
-import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
+//not game specific package import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
+      const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
+//not game specific package import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
+      const PlatformRecordIdUtil = globalThis.org.allbinary.persistance.PlatformRecordIdUtil;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

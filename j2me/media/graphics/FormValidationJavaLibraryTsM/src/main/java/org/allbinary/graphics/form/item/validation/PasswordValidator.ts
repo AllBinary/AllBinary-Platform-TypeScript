@@ -18,7 +18,9 @@
 
 
 
-import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
+//not game specific package import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
+      const ABTextFieldItem = globalThis.org.allbinary.graphics.form.item.ABTextFieldItem;
+
       
 
 

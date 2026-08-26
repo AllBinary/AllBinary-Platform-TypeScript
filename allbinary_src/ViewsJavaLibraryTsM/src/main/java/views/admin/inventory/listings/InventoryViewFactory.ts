@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
+//not game specific package import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
+      const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+
       
-import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { InventorySearch } from '../../../../views/generic/inventory/InventorySearch.js';
+//not game specific package import { InventorySearch } from '../../../../views/generic/inventory/InventorySearch.js';
+      const InventorySearch = globalThis.views.generic.inventory.InventorySearch;
+
       
 
 

@@ -22,19 +22,33 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
+//not game specific package import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
+      const RequestMapInterface = globalThis.org.allbinary.logic.communication.http.request.RequestMapInterface;
+
       
-import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { TransformInterface } from '../../org/allbinary/logic/visual/transform/TransformInterface.js';
+//not game specific package import { TransformInterface } from '../../org/allbinary/logic/visual/transform/TransformInterface.js';
+      const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
+
       
-import { ValidationViewHelper } from '../../taghelpers/ValidationViewHelper.js';
+//not game specific package import { ValidationViewHelper } from '../../taghelpers/ValidationViewHelper.js';
+      const ValidationViewHelper = globalThis.taghelpers.ValidationViewHelper;
+
       
-import { HelperTag } from '../../tags/HelperTag.js';
+//not game specific package import { HelperTag } from '../../tags/HelperTag.js';
+      const HelperTag = globalThis.tags.HelperTag;
+
       
-import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
+//not game specific package import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
+      const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
+
       
-import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
+//not game specific package import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
+      const DownloadableInventoryItemView = globalThis.views.admin.inventory.download.DownloadableInventoryItemView;
+
       
 
 

@@ -22,21 +22,37 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from '../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { QuoteHelperFactory } from '../../admin/taghelpers/QuoteHelperFactory.js';
+//not game specific package import { QuoteHelperFactory } from '../../admin/taghelpers/QuoteHelperFactory.js';
+      const QuoteHelperFactory = globalThis.admin.taghelpers.QuoteHelperFactory;
+
       
-import { QuoteRequestHelperFactory } from '../../admin/taghelpers/QuoteRequestHelperFactory.js';
+//not game specific package import { QuoteRequestHelperFactory } from '../../admin/taghelpers/QuoteRequestHelperFactory.js';
+      const QuoteRequestHelperFactory = globalThis.admin.taghelpers.QuoteRequestHelperFactory;
+
       
-import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

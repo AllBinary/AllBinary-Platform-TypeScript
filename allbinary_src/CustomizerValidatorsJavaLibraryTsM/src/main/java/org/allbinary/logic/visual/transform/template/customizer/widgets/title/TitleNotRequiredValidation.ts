@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ValidationInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+//not game specific package import { ValidationInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+
       
-import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

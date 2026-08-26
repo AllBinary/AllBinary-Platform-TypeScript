@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
+//not game specific package import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
+      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+
       
-import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { Document } from '../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

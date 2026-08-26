@@ -18,7 +18,9 @@
 
 
 
-import { GameInputMotionInfo } from '../../../../../../org/allbinary/android/input/motion/GameInputMotionInfo.js';
+//not game specific package import { GameInputMotionInfo } from '../../../../../../org/allbinary/android/input/motion/GameInputMotionInfo.js';
+      const GameInputMotionInfo = globalThis.org.allbinary.android.input.motion.GameInputMotionInfo;
+
       
 
 

@@ -4,11 +4,17 @@
 
 
 
-import { BaseBasicArrayListCache } from '../../../../../../org/allbinary/logic/util/cache/BaseBasicArrayListCache.js';
+//not game specific package import { BaseBasicArrayListCache } from '../../../../../../org/allbinary/logic/util/cache/BaseBasicArrayListCache.js';
+      const BaseBasicArrayListCache = globalThis.org.allbinary.logic.util.cache.BaseBasicArrayListCache;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListS } from '../../../../../../org/allbinary/util/BasicArrayListS.js';
+//not game specific package import { BasicArrayListS } from '../../../../../../org/allbinary/util/BasicArrayListS.js';
+      const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
       
 
 

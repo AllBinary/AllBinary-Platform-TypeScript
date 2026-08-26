@@ -18,9 +18,13 @@
 
 
 
-import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
+//not game specific package import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
+      const DataOutputStream = globalThis.java.io.DataOutputStream;
+
       
-import { OutputStream } from '../../../../java/io/OutputStream.js';
+//not game specific package import { OutputStream } from '../../../../java/io/OutputStream.js';
+      const OutputStream = globalThis.java.io.OutputStream;
+
       
 
 

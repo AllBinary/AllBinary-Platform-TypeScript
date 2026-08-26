@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
+//not game specific package import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
+      const CanvasJPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
+
       
 
 

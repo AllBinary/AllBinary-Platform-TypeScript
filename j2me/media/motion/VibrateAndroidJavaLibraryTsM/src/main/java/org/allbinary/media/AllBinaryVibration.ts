@@ -18,13 +18,21 @@
 
 
 
-import { Context } from '../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { Vibrator } from '../../../android/os/Vibrator.js';
+//not game specific package import { Vibrator } from '../../../android/os/Vibrator.js';
+      const Vibrator = globalThis.android.os.Vibrator;
+
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+//not game specific package import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+
       
 
 

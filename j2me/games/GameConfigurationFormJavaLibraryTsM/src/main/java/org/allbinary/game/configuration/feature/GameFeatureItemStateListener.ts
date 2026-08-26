@@ -22,29 +22,53 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+//not game specific package import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+
       
-import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+//not game specific package import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
+
       
-import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
+//not game specific package import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
+      const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
+
       
-import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
+//not game specific package import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
+      const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
+
       
-import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
+//not game specific package import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
+      const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
+
       
-import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
+//not game specific package import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
+      const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

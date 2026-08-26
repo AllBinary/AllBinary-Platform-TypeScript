@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { AbCrypt } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
+//not game specific package import { AbCrypt } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
+      const AbCrypt = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.AbCrypt;
+
       
-import { KeySpecFactory } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js';
+//not game specific package import { KeySpecFactory } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js';
+      const KeySpecFactory = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

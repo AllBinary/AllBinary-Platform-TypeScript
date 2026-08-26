@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Serializable } from '../../../../java/io/Serializable.js';
+//not game specific package import { Serializable } from '../../../../java/io/Serializable.js';
+      const Serializable = globalThis.java.io.Serializable;
+
       
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
 
 

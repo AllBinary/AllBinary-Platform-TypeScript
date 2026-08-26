@@ -8,19 +8,33 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
+//not game specific package import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
+      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+
       
-import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { Font } from '../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
+//not game specific package import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
+      const FontDebugBase = globalThis.org.allbinary.graphics.font.FontDebugBase;
+
       
-import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
+//not game specific package import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
+      const OpenGLSurfaceChangedInterface = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

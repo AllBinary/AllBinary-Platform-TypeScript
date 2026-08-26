@@ -4,7 +4,9 @@
 
 
 
-import { Dictionary } from '../../../java/util/Dictionary.js';
+//not game specific package import { Dictionary } from '../../../java/util/Dictionary.js';
+      const Dictionary = globalThis.java.util.Dictionary;
+
       
 
 

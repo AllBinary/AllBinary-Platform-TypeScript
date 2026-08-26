@@ -24,29 +24,53 @@
         
             import { Long } from '../../../../../../../../../java/lang/Long.js';
         
-import { awt } from '../../../../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { InputEvent } from '../../../../../../../../../java/awt/event/InputEvent.js';
+//not game specific package import { InputEvent } from '../../../../../../../../../java/awt/event/InputEvent.js';
+      const InputEvent = globalThis.java.awt.event.InputEvent;
+
       
-import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+//not game specific package import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+
       
-import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+//not game specific package import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { BooleanFactory } from '../../../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { BooleanFactory } from '../../../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
-import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

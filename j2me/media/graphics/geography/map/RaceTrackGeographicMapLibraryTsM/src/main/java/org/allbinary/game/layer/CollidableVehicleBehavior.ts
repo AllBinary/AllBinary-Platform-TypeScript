@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PickedUpLayerInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
+//not game specific package import { PickedUpLayerInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
+      const PickedUpLayerInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
+//not game specific package import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
+      const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
+
       
-import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
+//not game specific package import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
+      const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
+
       
-import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
+//not game specific package import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
+      const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
+
       
-import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
+//not game specific package import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
+      const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
+
       
-import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+//not game specific package import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+      const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+
       
 
 

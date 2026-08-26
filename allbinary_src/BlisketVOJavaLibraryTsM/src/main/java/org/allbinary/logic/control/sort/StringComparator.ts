@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Comparator } from '../../../../../java/util/Comparator.js';
+//not game specific package import { Comparator } from '../../../../../java/util/Comparator.js';
+      const Comparator = globalThis.java.util.Comparator;
+
       
 
 

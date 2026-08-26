@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
 
 

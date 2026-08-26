@@ -22,31 +22,57 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
+//not game specific package import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
+      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+
       
-import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
+//not game specific package import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
+      const SpriteFactory = globalThis.org.allbinary.game.layer.SpriteFactory;
+
       
-import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
+//not game specific package import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
+      const OpenGLUtil = globalThis.org.allbinary.graphics.opengles.OpenGLUtil;
+
       
-import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+
       
-import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+//not game specific package import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+
       
-import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
+//not game specific package import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
+      const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
+//not game specific package import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
+      const J2SEMath = globalThis.org.allbinary.logic.math.J2SEMath;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+//not game specific package import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+      const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+
       
-import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

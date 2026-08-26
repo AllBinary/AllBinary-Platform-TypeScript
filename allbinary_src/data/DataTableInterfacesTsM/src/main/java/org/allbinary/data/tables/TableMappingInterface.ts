@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
 
 

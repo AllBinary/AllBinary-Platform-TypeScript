@@ -24,19 +24,33 @@
         
             import { Integer } from '../java/lang/Integer.js';
         
-import { Method } from '../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+//not game specific package import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+      const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
       
-import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHelperFactory.js';
+//not game specific package import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHelperFactory.js';
+      const StoreTagWorkFlowHelperFactory = globalThis.taghelpers.StoreTagWorkFlowHelperFactory;
+
       
 
 

@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { AdvancedRTSGameLayer } from '../../../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
+//not game specific package import { AdvancedRTSGameLayer } from '../../../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
+      const AdvancedRTSGameLayer = globalThis.org.allbinary.game.layer.AdvancedRTSGameLayer;
+
       
-import { WaypointLayer } from '../../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
+//not game specific package import { WaypointLayer } from '../../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
+      const WaypointLayer = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
+
       
-import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
+//not game specific package import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
+      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+
       
-import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
+//not game specific package import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
+      const BasicGeographicMapCellPositionFactory = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
+
       
-import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
+//not game specific package import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
+      const GeographicMapCellTypeFactory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellTypeFactory;
+
       
-import { DropCellPositionHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
+//not game specific package import { DropCellPositionHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
+      const DropCellPositionHistory = globalThis.org.allbinary.media.graphics.geography.map.drop.DropCellPositionHistory;
+
       
 
 

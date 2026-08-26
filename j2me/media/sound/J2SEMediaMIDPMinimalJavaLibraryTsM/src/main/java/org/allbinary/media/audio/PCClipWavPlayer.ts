@@ -26,39 +26,73 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
       
-import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+//not game specific package import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+
       
-import { InputStream } from '../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { Control } from '../../../../javax/microedition/media/Control.js';
+//not game specific package import { Control } from '../../../../javax/microedition/media/Control.js';
+      const Control = globalThis.javax.microedition.media.Control;
+
       
-import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+//not game specific package import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      const MediaException = globalThis.javax.microedition.media.MediaException;
+
       
-import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+//not game specific package import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+
       
-import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
+//not game specific package import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
+      const AudioInputStream = globalThis.javax.sound.sampled.AudioInputStream;
+
       
-import { AudioSystem } from '../../../../javax/sound/sampled/AudioSystem.js';
+//not game specific package import { AudioSystem } from '../../../../javax/sound/sampled/AudioSystem.js';
+      const AudioSystem = globalThis.javax.sound.sampled.AudioSystem;
+
       
-import { Clip } from '../../../../javax/sound/sampled/Clip.js';
+//not game specific package import { Clip } from '../../../../javax/sound/sampled/Clip.js';
+      const Clip = globalThis.javax.sound.sampled.Clip;
+
       
-import { FloatControl } from '../../../../javax/sound/sampled/FloatControl.js';
+//not game specific package import { FloatControl } from '../../../../javax/sound/sampled/FloatControl.js';
+      const FloatControl = globalThis.javax.sound.sampled.FloatControl;
+
       
-import { LineEvent } from '../../../../javax/sound/sampled/LineEvent.js';
+//not game specific package import { LineEvent } from '../../../../javax/sound/sampled/LineEvent.js';
+      const LineEvent = globalThis.javax.sound.sampled.LineEvent;
+
       
-import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
+//not game specific package import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
+      const LineListener = globalThis.javax.sound.sampled.LineListener;
+
       
-import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPool.js';
+//not game specific package import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPool.js';
+      const MusicThreadPool = globalThis.org.allbinary.thread.MusicThreadPool;
+
       
 
 

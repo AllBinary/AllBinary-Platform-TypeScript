@@ -20,39 +20,89 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
+//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+//not game specific package import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
+      const GameKey = globalThis.org.allbinary.game.input.GameKey;
+
       
-import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
+//not game specific package import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+      const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
+
       
-import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+//not game specific package import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
+      const GameKeyFactory = globalThis.org.allbinary.game.input.GameKeyFactory;
+
       
-import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+//not game specific package import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+      const Input = globalThis.org.allbinary.game.input.Input;
+
       
-import { InputProcessor } from '../../../../../org/allbinary/game/input/InputProcessor.js';
+//not game specific package import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+
       
-import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
+//not game specific package import { InputProcessor } from '../../../../../org/allbinary/game/input/InputProcessor.js';
+      const InputProcessor = globalThis.org.allbinary.game.input.InputProcessor;
+
       
-import { DownKeyEventHandler } from '../../../../../org/allbinary/game/input/event/DownKeyEventHandler.js';
+//not game specific package import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
+      const PlatformKeyFactory = globalThis.org.allbinary.game.input.PlatformKeyFactory;
+
       
-import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+//not game specific package import { DownKeyEventHandler } from '../../../../../org/allbinary/game/input/event/DownKeyEventHandler.js';
+      const DownKeyEventHandler = globalThis.org.allbinary.game.input.event.DownKeyEventHandler;
+
       
-import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+//not game specific package import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+
       
-import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js';
+//not game specific package import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+      const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js';
+      const UpGameKeyEventHandler = globalThis.org.allbinary.game.input.event.UpGameKeyEventHandler;
+
       
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

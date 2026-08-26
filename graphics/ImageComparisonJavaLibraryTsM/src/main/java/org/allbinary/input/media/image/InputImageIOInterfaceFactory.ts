@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CapturedImageInputOutput } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js';
+//not game specific package import { CapturedImageInputOutput } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js';
+      const CapturedImageInputOutput = globalThis.org.allbinary.input.media.image.capture.CapturedImageInputOutput;
+
       
-import { ComparisonImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js';
+//not game specific package import { ComparisonImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js';
+      const ComparisonImageInputOutput = globalThis.org.allbinary.media.image.comparison.ComparisonImageInputOutput;
+
       
-import { MotionRectanglesImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js';
+//not game specific package import { MotionRectanglesImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js';
+      const MotionRectanglesImageInputOutput = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesImageInputOutput;
+
       
-import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
+//not game specific package import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
+      const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
+
       
 
 

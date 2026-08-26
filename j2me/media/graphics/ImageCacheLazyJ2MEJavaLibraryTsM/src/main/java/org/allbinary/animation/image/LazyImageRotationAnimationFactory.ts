@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+//not game specific package import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+      const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+
       
-import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+//not game specific package import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+      const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+
       
-import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+//not game specific package import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+
       
-import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
+//not game specific package import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
+      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+
       
 
 

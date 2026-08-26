@@ -24,9 +24,13 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
+//not game specific package import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
+      const MediaPlayer = globalThis.android.media.MediaPlayer;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

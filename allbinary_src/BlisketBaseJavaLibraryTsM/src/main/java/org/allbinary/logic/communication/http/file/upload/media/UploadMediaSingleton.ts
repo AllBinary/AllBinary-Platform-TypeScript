@@ -20,21 +20,37 @@
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
         
-import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Set } from '../../../../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { MediaData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaData.js';
+//not game specific package import { MediaData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaData.js';
+      const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
+
       
-import { MediaIOUtil } from '../../../../../../../../org/allbinary/logic/visual/media/MediaIOUtil.js';
+//not game specific package import { MediaIOUtil } from '../../../../../../../../org/allbinary/logic/visual/media/MediaIOUtil.js';
+      const MediaIOUtil = globalThis.org.allbinary.logic.visual.media.MediaIOUtil;
+
       
-import { MediaTypeData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaTypeData.js';
+//not game specific package import { MediaTypeData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaTypeData.js';
+      const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
+
       
-import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

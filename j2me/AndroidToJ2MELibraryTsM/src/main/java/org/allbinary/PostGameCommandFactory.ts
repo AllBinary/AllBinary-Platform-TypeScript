@@ -20,15 +20,25 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-import { GameCommandsFactory } from '../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { GameCommandsFactory } from '../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
+//not game specific package import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
+      const MultiPlayerGameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MultiPlayerGameFeatureFactory;
+
       
-import { MyCanvas } from '../../org/allbinary/graphics/displayable/MyCanvas.js';
+//not game specific package import { MyCanvas } from '../../org/allbinary/graphics/displayable/MyCanvas.js';
+      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
       
-import { GenericOperatingSystem } from '../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+//not game specific package import { GenericOperatingSystem } from '../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
       
-import { OperatingSystemFactory } from '../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+//not game specific package import { OperatingSystemFactory } from '../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+
       
 
 

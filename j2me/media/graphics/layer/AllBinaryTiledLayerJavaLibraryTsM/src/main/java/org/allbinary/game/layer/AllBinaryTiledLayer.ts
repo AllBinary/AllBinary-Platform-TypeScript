@@ -20,19 +20,33 @@
 
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
-import { Layer } from '../../../../org/allbinary/layer/Layer.js';
+//not game specific package import { Layer } from '../../../../org/allbinary/layer/Layer.js';
+      const Layer = globalThis.org.allbinary.layer.Layer;
+
       
-import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
+//not game specific package import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
+      const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

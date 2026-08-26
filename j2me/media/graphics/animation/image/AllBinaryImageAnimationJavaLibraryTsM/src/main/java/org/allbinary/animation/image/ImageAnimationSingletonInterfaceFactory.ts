@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
+//not game specific package import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
+      const SingletonAnimationInterfaceFactory = globalThis.org.allbinary.animation.SingletonAnimationInterfaceFactory;
+
       
-import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
+//not game specific package import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
+      const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
+
       
 
 

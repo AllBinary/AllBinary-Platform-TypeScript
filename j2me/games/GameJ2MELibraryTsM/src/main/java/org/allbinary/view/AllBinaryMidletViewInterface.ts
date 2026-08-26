@@ -4,11 +4,17 @@
 
 
 
-import { GameInitializedListenerInterface } from '../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
+//not game specific package import { GameInitializedListenerInterface } from '../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
+      const GameInitializedListenerInterface = globalThis.org.allbinary.game.configuration.event.GameInitializedListenerInterface;
+
       
-import { DemoGameMidletEventListener } from '../../../org/allbinary/game/midlet/DemoGameMidletEventListener.js';
+//not game specific package import { DemoGameMidletEventListener } from '../../../org/allbinary/game/midlet/DemoGameMidletEventListener.js';
+      const DemoGameMidletEventListener = globalThis.org.allbinary.game.midlet.DemoGameMidletEventListener;
+
       
-import { MidletCompositeInterface } from '../../../org/allbinary/midlet/MidletCompositeInterface.js';
+//not game specific package import { MidletCompositeInterface } from '../../../org/allbinary/midlet/MidletCompositeInterface.js';
+      const MidletCompositeInterface = globalThis.org.allbinary.midlet.MidletCompositeInterface;
+
       
 
 

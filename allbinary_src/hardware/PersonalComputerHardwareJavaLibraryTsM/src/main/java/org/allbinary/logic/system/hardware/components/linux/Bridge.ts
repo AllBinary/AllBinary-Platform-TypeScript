@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { BridgeInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/BridgeInterface.js';
+//not game specific package import { BridgeInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/BridgeInterface.js';
+      const BridgeInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.BridgeInterface;
+
       
-import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+//not game specific package import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+      const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+
       
 
 

@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
 
 

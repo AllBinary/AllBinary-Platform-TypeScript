@@ -20,93 +20,181 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+//not game specific package import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+      const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+
       
-import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
+//not game specific package import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
+      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+
       
-import { NullIndexedAnimationFactory } from '../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
+//not game specific package import { NullIndexedAnimationFactory } from '../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
+      const NullIndexedAnimationFactory = globalThis.org.allbinary.animation.NullIndexedAnimationFactory;
+
       
-import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
+//not game specific package import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
+      const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+
       
-import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
+//not game specific package import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
+      const ShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListener;
+
       
-import { Direction } from '../../../../org/allbinary/direction/Direction.js';
+//not game specific package import { Direction } from '../../../../org/allbinary/direction/Direction.js';
+      const Direction = globalThis.org.allbinary.direction.Direction;
+
       
-import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+//not game specific package import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+
       
-import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
+//not game specific package import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
+      const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
+
       
-import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
+//not game specific package import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
+      const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
+
       
-import { DestroyedEventHandler } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js';
+//not game specific package import { DestroyedEventHandler } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js';
+      const DestroyedEventHandler = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventHandler;
+
       
-import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
+//not game specific package import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
+      const DestroyedEventListenerInterface = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEventListenerInterface;
+
       
-import { Health } from '../../../../org/allbinary/game/health/Health.js';
+//not game specific package import { Health } from '../../../../org/allbinary/game/health/Health.js';
+      const Health = globalThis.org.allbinary.game.health.Health;
+
       
-import { Group } from '../../../../org/allbinary/game/identification/Group.js';
+//not game specific package import { Group } from '../../../../org/allbinary/game/identification/Group.js';
+      const Group = globalThis.org.allbinary.game.identification.Group;
+
       
-import { GroupFactory } from '../../../../org/allbinary/game/identification/GroupFactory.js';
+//not game specific package import { GroupFactory } from '../../../../org/allbinary/game/identification/GroupFactory.js';
+      const GroupFactory = globalThis.org.allbinary.game.identification.GroupFactory;
+
       
-import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+//not game specific package import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+      const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
+
       
-import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
+//not game specific package import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
+      const NullRTSFormInputFactory = globalThis.org.allbinary.game.input.form.NullRTSFormInputFactory;
+
       
-import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
+//not game specific package import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
+      const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
+
       
-import { BuildingEventHandler } from '../../../../org/allbinary/game/layer/building/event/BuildingEventHandler.js';
+//not game specific package import { BuildingEventHandler } from '../../../../org/allbinary/game/layer/building/event/BuildingEventHandler.js';
+      const BuildingEventHandler = globalThis.org.allbinary.game.layer.building.event.BuildingEventHandler;
+
       
-import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
+//not game specific package import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
+      const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
+
       
-import { Waypoint2LogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2LogHelper.js';
+//not game specific package import { Waypoint2LogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2LogHelper.js';
+      const Waypoint2LogHelper = globalThis.org.allbinary.game.layer.waypoint.Waypoint2LogHelper;
+
       
-import { Waypoint2SelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2SelectedLogHelper.js';
+//not game specific package import { Waypoint2SelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2SelectedLogHelper.js';
+      const Waypoint2SelectedLogHelper = globalThis.org.allbinary.game.layer.waypoint.Waypoint2SelectedLogHelper;
+
       
-import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
+//not game specific package import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
+      const WaypointBase = globalThis.org.allbinary.game.layer.waypoint.WaypointBase;
+
       
-import { WaypointLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointLogHelper.js';
+//not game specific package import { WaypointLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointLogHelper.js';
+      const WaypointLogHelper = globalThis.org.allbinary.game.layer.waypoint.WaypointLogHelper;
+
       
-import { WaypointRunnableLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableLogHelper.js';
+//not game specific package import { WaypointRunnableLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableLogHelper.js';
+      const WaypointRunnableLogHelper = globalThis.org.allbinary.game.layer.waypoint.WaypointRunnableLogHelper;
+
       
-import { WaypointRunnableSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableSelectedLogHelper.js';
+//not game specific package import { WaypointRunnableSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableSelectedLogHelper.js';
+      const WaypointRunnableSelectedLogHelper = globalThis.org.allbinary.game.layer.waypoint.WaypointRunnableSelectedLogHelper;
+
       
-import { WaypointSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointSelectedLogHelper.js';
+//not game specific package import { WaypointSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointSelectedLogHelper.js';
+      const WaypointSelectedLogHelper = globalThis.org.allbinary.game.layer.waypoint.WaypointSelectedLogHelper;
+
       
-import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
+//not game specific package import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
+      const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
+
       
-import { NullTickable } from '../../../../org/allbinary/game/tick/NullTickable.js';
+//not game specific package import { NullTickable } from '../../../../org/allbinary/game/tick/NullTickable.js';
+      const NullTickable = globalThis.org.allbinary.game.tick.NullTickable;
+
       
-import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
+//not game specific package import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
+      const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
+
       
-import { TileLayerPositionIntoViewPosition } from '../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
+//not game specific package import { TileLayerPositionIntoViewPosition } from '../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
+      const TileLayerPositionIntoViewPosition = globalThis.org.allbinary.game.view.TileLayerPositionIntoViewPosition;
+
       
-import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
+//not game specific package import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
+      const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
       
-import { FrameUtil } from '../../../../org/allbinary/math/FrameUtil.js';
+//not game specific package import { FrameUtil } from '../../../../org/allbinary/math/FrameUtil.js';
+      const FrameUtil = globalThis.org.allbinary.math.FrameUtil;
+
       
-import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
+//not game specific package import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
+      const AllBinaryVibrationME = globalThis.org.allbinary.media.AllBinaryVibrationME;
+
       
-import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
+//not game specific package import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
+      const GeographicMapCompositeInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
+
       
-import { GeographicMapDirectionUtil } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
+//not game specific package import { GeographicMapDirectionUtil } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
+      const GeographicMapDirectionUtil = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapDirectionUtil;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
       
 
 

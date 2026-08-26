@@ -24,21 +24,37 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
+//not game specific package import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
+      const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
+
       
-import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
+//not game specific package import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
+      const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
+
       
-import { BufferedImageInfo } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
+//not game specific package import { BufferedImageInfo } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
+      const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
+
       
-import { BufferedImageInfoFactory } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
+//not game specific package import { BufferedImageInfoFactory } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
+      const BufferedImageInfoFactory = globalThis.org.allbinary.media.image.cache.BufferedImageInfoFactory;
+
       
-import { BufferedImagePoolSingleton } from '../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
+//not game specific package import { BufferedImagePoolSingleton } from '../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
+      const BufferedImagePoolSingleton = globalThis.org.allbinary.media.image.cache.BufferedImagePoolSingleton;
+
       
-import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+//not game specific package import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+      const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+
       
 
 

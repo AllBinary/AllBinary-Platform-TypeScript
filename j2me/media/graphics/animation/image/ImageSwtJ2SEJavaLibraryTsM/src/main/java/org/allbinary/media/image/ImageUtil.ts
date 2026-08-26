@@ -22,35 +22,65 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { SWT } from '../../../../org/eclipse/swt/SWT.js';
+//not game specific package import { SWT } from '../../../../org/eclipse/swt/SWT.js';
+      const SWT = globalThis.org.eclipse.swt.SWT;
+
       
-import { Canvas } from '../../../../org/eclipse/swt/widgets/Canvas.js';
+//not game specific package import { Canvas } from '../../../../org/eclipse/swt/widgets/Canvas.js';
+      const Canvas = globalThis.org.eclipse.swt.widgets.Canvas;
+
       
-import { Composite } from '../../../../org/eclipse/swt/widgets/Composite.js';
+//not game specific package import { Composite } from '../../../../org/eclipse/swt/widgets/Composite.js';
+      const Composite = globalThis.org.eclipse.swt.widgets.Composite;
+
       
-import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
+//not game specific package import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
+      const GC = globalThis.org.eclipse.swt.graphics.GC;
+
       
-import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+//not game specific package import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+      const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { PaintEvent } from '../../../../org/eclipse/swt/events/PaintEvent.js';
+//not game specific package import { PaintEvent } from '../../../../org/eclipse/swt/events/PaintEvent.js';
+      const PaintEvent = globalThis.org.eclipse.swt.events.PaintEvent;
+
       
-import { PaintListener } from '../../../../org/eclipse/swt/events/PaintListener.js';
+//not game specific package import { PaintListener } from '../../../../org/eclipse/swt/events/PaintListener.js';
+      const PaintListener = globalThis.org.eclipse.swt.events.PaintListener;
+
       
-import { Transform } from '../../../../org/eclipse/swt/graphics/Transform.js';
+//not game specific package import { Transform } from '../../../../org/eclipse/swt/graphics/Transform.js';
+      const Transform = globalThis.org.eclipse.swt.graphics.Transform;
+
       
-import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
+//not game specific package import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
+      const Display = globalThis.org.eclipse.swt.widgets.Display;
+
       
-import { BareMain } from '../../../../org/microemu/app/BareMain.js';
+//not game specific package import { BareMain } from '../../../../org/microemu/app/BareMain.js';
+      const BareMain = globalThis.org.microemu.app.BareMain;
+
       
 
 

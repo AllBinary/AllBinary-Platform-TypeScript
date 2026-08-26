@@ -20,27 +20,49 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+//not game specific package import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+
       
-import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+//not game specific package import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+      const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+
       
-import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
+//not game specific package import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
+      const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
+
       
-import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
+//not game specific package import { NullPaintable } from '../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+
       
-import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+//not game specific package import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
+      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+
       
 
 

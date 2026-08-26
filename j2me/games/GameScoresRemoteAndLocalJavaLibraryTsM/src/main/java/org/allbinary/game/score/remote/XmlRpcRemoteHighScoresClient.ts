@@ -20,27 +20,49 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { IOException } from '../../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { CryptInterface } from '../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+//not game specific package import { CryptInterface } from '../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+      const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
+//not game specific package import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
+      const XmlRpcAbeClient = globalThis.org.allbinary.logic.communication.xmlrpc.XmlRpcAbeClient;
+
       
-import { ExceptionUtil } from '../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
+//not game specific package import { ExceptionUtil } from '../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
+      const ExceptionUtil = globalThis.org.allbinary.logic.java.exception.ExceptionUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
+//not game specific package import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
+      const XmlRpcClient = globalThis.org.apache.xmlrpc.XmlRpcClient;
+
       
-import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
+//not game specific package import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
+      const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
+
       
 
 

@@ -20,27 +20,49 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
-import { ABCustomImageItem } from '../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
+//not game specific package import { ABCustomImageItem } from '../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
+      const ABCustomImageItem = globalThis.org.allbinary.graphics.form.item.ABCustomImageItem;
+
       
-import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
+//not game specific package import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
+      const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
       
-import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+//not game specific package import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
       
-import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+//not game specific package import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+
       
-import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not game specific package import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+      const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+
       
 
 

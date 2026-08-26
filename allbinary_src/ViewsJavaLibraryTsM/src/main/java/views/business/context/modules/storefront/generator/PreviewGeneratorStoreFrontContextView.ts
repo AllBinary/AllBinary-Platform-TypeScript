@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { TransformInfoData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+//not game specific package import { TransformInfoData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+      const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
       
-import { TransformInfoHttpInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+//not game specific package import { TransformInfoHttpInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+      const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
+
       
-import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformInfosData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+//not game specific package import { TransformInfosData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+      const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
+
       
-import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

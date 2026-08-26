@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
         
-import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { BasicArrayListUtil } from '../../../../../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not game specific package import { BasicArrayListUtil } from '../../../../../../../../org/allbinary/util/BasicArrayListUtil.js';
+      const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
       
-import { LayerInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
+//not game specific package import { LayerInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
+      const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
+
       
 
 

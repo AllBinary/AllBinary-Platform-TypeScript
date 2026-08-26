@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
+//not game specific package import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
+      const PickedUpLayerInterface = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
+
       
-import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
+//not game specific package import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
+      const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
+
       
 
 

@@ -20,19 +20,33 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+//not game specific package import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+      const Portion = globalThis.org.allbinary.business.installer.Portion;
+
       
-import { BasicOptionItemsEntity } from '../../org/allbinary/data/tables/user/commerce/inventory/item/options/BasicOptionItemsEntity.js';
+//not game specific package import { BasicOptionItemsEntity } from '../../org/allbinary/data/tables/user/commerce/inventory/item/options/BasicOptionItemsEntity.js';
+      const BasicOptionItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.options.BasicOptionItemsEntity;
+
       
-import { BasicOptionItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/options/BasicOptionItemsEntityFactory.js';
+//not game specific package import { BasicOptionItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/options/BasicOptionItemsEntityFactory.js';
+      const BasicOptionItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.options.BasicOptionItemsEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+//not game specific package import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+      const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+
       
 
 

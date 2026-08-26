@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { BasicTable } from '../../../admin/taghelpers/BasicTable.js';
+//not game specific package import { BasicTable } from '../../../admin/taghelpers/BasicTable.js';
+      const BasicTable = globalThis.admin.taghelpers.BasicTable;
+
       
-import { Portion } from '../../../org/allbinary/business/installer/Portion.js';
+//not game specific package import { Portion } from '../../../org/allbinary/business/installer/Portion.js';
+      const Portion = globalThis.org.allbinary.business.installer.Portion;
+
       
-import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+//not game specific package import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+      const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlTableUtil } from '../../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+//not game specific package import { AbSqlTableUtil } from '../../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+      const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+
       
 
 

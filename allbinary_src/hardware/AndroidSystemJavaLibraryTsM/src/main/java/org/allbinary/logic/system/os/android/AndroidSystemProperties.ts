@@ -22,15 +22,25 @@
         
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { Context } from '../../../../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { Build } from '../../../../../../android/os/Build.js';
+//not game specific package import { Build } from '../../../../../../android/os/Build.js';
+      const Build = globalThis.android.os.Build;
+
       
-import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

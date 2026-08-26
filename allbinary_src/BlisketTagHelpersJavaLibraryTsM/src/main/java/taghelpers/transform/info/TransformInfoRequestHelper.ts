@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { ModifyTable } from '../../../admin/taghelpers/ModifyTable.js';
+//not game specific package import { ModifyTable } from '../../../admin/taghelpers/ModifyTable.js';
+      const ModifyTable = globalThis.admin.taghelpers.ModifyTable;
+
       
-import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+//not game specific package import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+      const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+//not game specific package import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+      const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
+
       
-import { TransformInfoHttpStoreNoManipulation } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreNoManipulation.js';
+//not game specific package import { TransformInfoHttpStoreNoManipulation } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreNoManipulation.js';
+      const TransformInfoHttpStoreNoManipulation = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStoreNoManipulation;
+
       
 
 

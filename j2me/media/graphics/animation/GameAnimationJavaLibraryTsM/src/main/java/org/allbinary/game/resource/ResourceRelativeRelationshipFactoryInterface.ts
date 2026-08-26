@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
+//not game specific package import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
+      const GameFeatureControlledInterface = globalThis.org.allbinary.game.configuration.feature.GameFeatureControlledInterface;
+
       
-import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
+//not game specific package import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
+      const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

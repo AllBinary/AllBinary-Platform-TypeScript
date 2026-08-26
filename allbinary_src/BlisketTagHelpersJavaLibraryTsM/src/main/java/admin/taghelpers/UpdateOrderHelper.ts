@@ -20,33 +20,61 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { UserData } from '../../org/allbinary/business/user/UserData.js';
+//not game specific package import { UserData } from '../../org/allbinary/business/user/UserData.js';
+      const UserData = globalThis.org.allbinary.business.user.UserData;
+
       
-import { BillingAddressData } from '../../org/allbinary/business/user/address/BillingAddressData.js';
+//not game specific package import { BillingAddressData } from '../../org/allbinary/business/user/address/BillingAddressData.js';
+      const BillingAddressData = globalThis.org.allbinary.business.user.address.BillingAddressData;
+
       
-import { ShippingAddressData } from '../../org/allbinary/business/user/address/ShippingAddressData.js';
+//not game specific package import { ShippingAddressData } from '../../org/allbinary/business/user/address/ShippingAddressData.js';
+      const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
+
       
-import { OrderData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
+//not game specific package import { OrderData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
+      const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+
       
-import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+//not game specific package import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+      const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+
       
-import { PaymentData } from '../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+//not game specific package import { PaymentData } from '../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+      const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+
       
-import { ShippingMethodData } from '../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+//not game specific package import { ShippingMethodData } from '../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+      const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+
       
-import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+//not game specific package import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+      const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

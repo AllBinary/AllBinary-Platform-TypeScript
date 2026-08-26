@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
+//not game specific package import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+
       
-import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
 
 

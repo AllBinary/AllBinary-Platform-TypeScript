@@ -20,47 +20,105 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GL } from '../../../../../javax/microedition/khronos/opengles/GL.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { GL } from '../../../../../javax/microedition/khronos/opengles/GL.js';
+      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+
       
-import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
+//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+//not game specific package import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
+      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+
       
-import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
+//not game specific package import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+
       
-import { DestroyedLayerProcessor } from '../../../../../org/allbinary/game/combat/destroy/DestroyedLayerProcessor.js';
+//not game specific package import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
+      const CollidableBaseBehavior = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+
       
-import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+//not game specific package import { DestroyedLayerProcessor } from '../../../../../org/allbinary/game/combat/destroy/DestroyedLayerProcessor.js';
+      const DestroyedLayerProcessor = globalThis.org.allbinary.game.combat.destroy.DestroyedLayerProcessor;
+
       
-import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
+//not game specific package import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+
       
-import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+//not game specific package import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
+      const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
+
       
-import { MultiPlayerGameLayer } from '../../../../../org/allbinary/game/multiplayer/layer/MultiPlayerGameLayer.js';
+//not game specific package import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+      const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
+
       
-import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
+//not game specific package import { MultiPlayerGameLayer } from '../../../../../org/allbinary/game/multiplayer/layer/MultiPlayerGameLayer.js';
+      const MultiPlayerGameLayer = globalThis.org.allbinary.game.multiplayer.layer.MultiPlayerGameLayer;
+
       
-import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
+//not game specific package import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
+      const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
+
       
-import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+//not game specific package import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
+      const NoScoreable = globalThis.org.allbinary.game.score.NoScoreable;
+
       
-import { TickableInterface } from '../../../../../org/allbinary/game/tick/TickableInterface.js';
+//not game specific package import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+      const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+
       
-import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { TickableInterface } from '../../../../../org/allbinary/game/tick/TickableInterface.js';
+      const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
+
       
-import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { Movement } from '../../../../../org/allbinary/physics/movement/Movement.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+//not game specific package import { Movement } from '../../../../../org/allbinary/physics/movement/Movement.js';
+      const Movement = globalThis.org.allbinary.physics.movement.Movement;
+
       
-import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+
+      
+//not game specific package import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -136,7 +194,7 @@ this.multiPlayerType= multiPlayerType;
 }
 
 
-    private collidableWeaponBehavior: CollidableWeaponBehavior = CollidableWeaponBehavior.NULL_COLLIDABLE_WEAPON_BEHAVIOR;
+    private collidableWeaponBehavior: CollidableWeaponBehavior = CollidableWeaponBehavior.getNullInstance()!;
 
     public setCollidableInferface(collidableInferface: CollidableBaseBehavior){
 super.setCollidableInferface(collidableInferface);

@@ -22,27 +22,49 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+
       
-import { File } from '../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { OutputStream } from '../../../../../java/io/OutputStream.js';
+//not game specific package import { OutputStream } from '../../../../../java/io/OutputStream.js';
+      const OutputStream = globalThis.java.io.OutputStream;
+
       
-import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
+//not game specific package import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
+      const StringBufferInputStream = globalThis.java.io.StringBufferInputStream;
+
       
-import { Transformer } from '../../../../../javax/xml/transform/Transformer.js';
+//not game specific package import { Transformer } from '../../../../../javax/xml/transform/Transformer.js';
+      const Transformer = globalThis.javax.xml.transform.Transformer;
+
       
-import { TransformerFactory } from '../../../../../javax/xml/transform/TransformerFactory.js';
+//not game specific package import { TransformerFactory } from '../../../../../javax/xml/transform/TransformerFactory.js';
+      const TransformerFactory = globalThis.javax.xml.transform.TransformerFactory;
+
       
-import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+
       
-import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
+//not game specific package import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
+      const StreamResult = globalThis.javax.xml.transform.stream.StreamResult;
+
       
-import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+
       
-import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

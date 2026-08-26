@@ -22,29 +22,53 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { File } from '../../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
+//not game specific package import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
+      const FileInputStream = globalThis.java.io.FileInputStream;
+
       
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { List } from '../../../../../../java/util/List.js';
+//not game specific package import { List } from '../../../../../../java/util/List.js';
+      const List = globalThis.java.util.List;
+
       
-import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+//not game specific package import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+      const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
+
       
-import { NewInputAutomationModulesData } from '../../../../../../org/allbinary/input/automation/module/NewInputAutomationModulesData.js';
+//not game specific package import { NewInputAutomationModulesData } from '../../../../../../org/allbinary/input/automation/module/NewInputAutomationModulesData.js';
+      const NewInputAutomationModulesData = globalThis.org.allbinary.input.automation.module.NewInputAutomationModulesData;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { Document } from '../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

@@ -24,13 +24,37 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
+      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
+      
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

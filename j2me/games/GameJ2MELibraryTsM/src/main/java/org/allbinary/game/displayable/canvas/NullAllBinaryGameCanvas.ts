@@ -22,11 +22,17 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
 
 

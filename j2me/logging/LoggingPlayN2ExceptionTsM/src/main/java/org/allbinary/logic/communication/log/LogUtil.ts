@@ -22,9 +22,25 @@
         
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { PlayN } from '../../../../../playn/core/PlayN.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { PlayN } from '../../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 
@@ -66,8 +82,6 @@ import { PreLogUtil } from './PreLogUtil.js';
 
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
-
-    private readonly playN: PlayN = PlayN.getInstance()!;
 
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
 
@@ -128,7 +142,10 @@ this.put(specialMessage, anyType, functionName, exception);
 
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
-this.playN!.log()!.debug(this.LOG_SUCCESS +message);
+
+    var playN: PlayN = PlayN.getInstance()!;;
+    
+playN!.log()!.debug(this.LOG_SUCCESS +message);
     
 }
 
@@ -137,7 +154,10 @@ this.playN!.log()!.debug(this.LOG_SUCCESS +message);
 
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;;
     
-this.playN!.log()!.debug(this.LOG_SUCCESS +message);
+
+    var playN: PlayN = PlayN.getInstance()!;;
+    
+playN!.log()!.debug(this.LOG_SUCCESS +message);
     
 }
 
@@ -161,18 +181,21 @@ this.playN!.log()!.debug(this.LOG_SUCCESS +message);
     var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;;
     
 
+    var playN: PlayN = PlayN.getInstance()!;;
+    
+
                         if(exception != 
                                     null
                                 )
                         
                                     {
-                                    this.playN!.log()!.error(this.LOG_SUCCESS +message, exception as Throwable);
+                                    playN!.log()!.error(this.LOG_SUCCESS +message, exception as Throwable);
     
 
                                     }
                                 
                         else {
-                            this.playN!.log()!.debug(this.LOG_SUCCESS +message);
+                            playN!.log()!.debug(this.LOG_SUCCESS +message);
     
 
                         }

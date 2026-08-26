@@ -20,51 +20,97 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
+//not game specific package import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
+      const RTSGameStrings = globalThis.org.allbinary.game.layer.RTSGameStrings;
+
       
-import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
+//not game specific package import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
+      const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
+
       
-import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
+//not game specific package import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
+      const RTSPlayerLayerInterface = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
+
       
-import { TechnologyRTSInterfaceImageItem } from '../../../../../org/allbinary/game/layer/TechnologyRTSInterfaceImageItem.js';
+//not game specific package import { TechnologyRTSInterfaceImageItem } from '../../../../../org/allbinary/game/layer/TechnologyRTSInterfaceImageItem.js';
+      const TechnologyRTSInterfaceImageItem = globalThis.org.allbinary.game.layer.TechnologyRTSInterfaceImageItem;
+
       
-import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital.js';
+//not game specific package import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital.js';
+      const Capital = globalThis.org.allbinary.game.layer.capital.Capital;
+
       
-import { TechEventHandler } from '../../../../../org/allbinary/game/rts/technology/event/TechEventHandler.js';
+//not game specific package import { TechEventHandler } from '../../../../../org/allbinary/game/rts/technology/event/TechEventHandler.js';
+      const TechEventHandler = globalThis.org.allbinary.game.rts.technology.event.TechEventHandler;
+
       
-import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+//not game specific package import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
       
-import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
+//not game specific package import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
+      const BuildingSound = globalThis.org.allbinary.media.audio.BuildingSound;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
-import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
+//not game specific package import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
+      const Group = globalThis.org.allbinary.game.identification.Group;
+
       
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
-import { GameNotificationEvent } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
+//not game specific package import { GameNotificationEvent } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
+      const GameNotificationEvent = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEvent;
+
       
-import { GameNotificationEventHandler } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
+//not game specific package import { GameNotificationEventHandler } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
+      const GameNotificationEventHandler = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEventHandler;
+
       
-import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+//not game specific package import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+      const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+
       
-import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
+//not game specific package import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
+      const ErrorSound = globalThis.org.allbinary.media.audio.ErrorSound;
+
       
-import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
+//not game specific package import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
+      const GeographicMapCompositeInterface = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
+
       
 
 

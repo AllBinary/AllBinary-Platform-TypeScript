@@ -22,17 +22,41 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
+//not game specific package import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
+      const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
+
       
-import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
+//not game specific package import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
+      const PrimaryThreadPool = globalThis.org.allbinary.thread.PrimaryThreadPool;
+
       
-import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
+//not game specific package import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
+      const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -58,8 +82,6 @@ import { ExitRunnable } from './ExitRunnable.js';
 
 export class ProgressMidlet extends AllBinaryMidlet {
         
-
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public readonly abeClientInformation: AbeClientInformationInterface;
 

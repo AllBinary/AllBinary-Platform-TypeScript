@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
+//not game specific package import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
+      const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { RelativeLayerRelationship } from '../../../../org/allbinary/layer/relationship/RelativeLayerRelationship.js';
+//not game specific package import { RelativeLayerRelationship } from '../../../../org/allbinary/layer/relationship/RelativeLayerRelationship.js';
+      const RelativeLayerRelationship = globalThis.org.allbinary.layer.relationship.RelativeLayerRelationship;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not game specific package import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
+      const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
       
 
 

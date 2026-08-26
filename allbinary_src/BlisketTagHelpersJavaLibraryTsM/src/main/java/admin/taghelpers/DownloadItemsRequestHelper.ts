@@ -20,25 +20,45 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { AbTagData } from '../../admin/tags/AbTagData.js';
+//not game specific package import { AbTagData } from '../../admin/tags/AbTagData.js';
+      const AbTagData = globalThis.admin.tags.AbTagData;
+
       
-import { DownloadableItem } from '../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
+//not game specific package import { DownloadableItem } from '../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
+      const DownloadableItem = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
+
       
-import { DownloadItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/downloads/DownloadItemsEntityFactory.js';
+//not game specific package import { DownloadItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/downloads/DownloadItemsEntityFactory.js';
+      const DownloadItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.downloads.DownloadItemsEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { HelperTag } from '../../tags/HelperTag.js';
+//not game specific package import { HelperTag } from '../../tags/HelperTag.js';
+      const HelperTag = globalThis.tags.HelperTag;
+
       
-import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
+//not game specific package import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
+      const DownloadableInventoryItemView = globalThis.views.admin.inventory.download.DownloadableInventoryItemView;
+
       
 
 

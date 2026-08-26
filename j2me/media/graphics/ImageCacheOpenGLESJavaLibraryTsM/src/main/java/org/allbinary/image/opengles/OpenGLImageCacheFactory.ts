@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+
       
 
 

@@ -24,45 +24,85 @@
         
             import { Float } from '../../../../../../../../java/lang/Float.js';
         
-import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+//not game specific package import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+
       
-import { StreetAddressData } from '../../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
+//not game specific package import { StreetAddressData } from '../../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
+      const StreetAddressData = globalThis.org.allbinary.business.user.address.StreetAddressData;
+
       
-import { TaxData } from '../../../../../../../../org/allbinary/business/user/commerce/money/tax/components/TaxData.js';
+//not game specific package import { TaxData } from '../../../../../../../../org/allbinary/business/user/commerce/money/tax/components/TaxData.js';
+      const TaxData = globalThis.org.allbinary.business.user.commerce.money.tax.components.TaxData;
+
       
-import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+//not game specific package import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+
       
-import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+//not game specific package import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+      const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+
       
-import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CryptFileReader } from '../../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
+//not game specific package import { CryptFileReader } from '../../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
+      const CryptFileReader = globalThis.org.allbinary.logic.control.crypt.file.CryptFileReader;
+
       
-import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
+//not game specific package import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
+      const TransformInfoObjectConfigData = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
+
       
-import { CommonPhoneStrings } from '../../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
-import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

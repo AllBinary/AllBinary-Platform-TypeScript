@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+//not game specific package import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+
       
-import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
-import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+//not game specific package import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
       
-import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+//not game specific package import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+      const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+
       
-import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
+//not game specific package import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
+      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
       
 
 

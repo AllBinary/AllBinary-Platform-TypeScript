@@ -22,33 +22,61 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { ZipEntry } from '../../../../../../java/util/zip/ZipEntry.js';
+//not game specific package import { ZipEntry } from '../../../../../../java/util/zip/ZipEntry.js';
+      const ZipEntry = globalThis.java.util.zip.ZipEntry;
+
       
-import { ZipInputStream } from '../../../../../../java/util/zip/ZipInputStream.js';
+//not game specific package import { ZipInputStream } from '../../../../../../java/util/zip/ZipInputStream.js';
+      const ZipInputStream = globalThis.java.util.zip.ZipInputStream;
+
       
-import { ZipOutputStream } from '../../../../../../java/util/zip/ZipOutputStream.js';
+//not game specific package import { ZipOutputStream } from '../../../../../../java/util/zip/ZipOutputStream.js';
+      const ZipOutputStream = globalThis.java.util.zip.ZipOutputStream;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbDataOutputStream } from '../../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+//not game specific package import { AbDataOutputStream } from '../../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+      const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+
       
-import { AbFileInputStream } from '../../../../../../org/allbinary/logic/io/AbFileInputStream.js';
+//not game specific package import { AbFileInputStream } from '../../../../../../org/allbinary/logic/io/AbFileInputStream.js';
+      const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+
       
-import { AbFileOutputStream } from '../../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+//not game specific package import { AbFileOutputStream } from '../../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+      const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
+
       
-import { DataOutputStreamFactory } from '../../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
+//not game specific package import { DataOutputStreamFactory } from '../../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
+      const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
+
       
-import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
+//not game specific package import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
+      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+
       
-import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FileUtil } from '../../../../../../org/allbinary/logic/io/file/FileUtil.js';
+//not game specific package import { FileUtil } from '../../../../../../org/allbinary/logic/io/file/FileUtil.js';
+      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

@@ -22,29 +22,53 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { ContextConfiguration } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js';
+//not game specific package import { ContextConfiguration } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js';
+      const ContextConfiguration = globalThis.org.allbinary.business.context.configuration.ContextConfiguration;
+
       
-import { ContextConfigurationData } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationData.js';
+//not game specific package import { ContextConfigurationData } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationData.js';
+      const ContextConfigurationData = globalThis.org.allbinary.business.context.configuration.ContextConfigurationData;
+
       
-import { ContextConfigurationDomDocumentMapping } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js';
+//not game specific package import { ContextConfigurationDomDocumentMapping } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js';
+      const ContextConfigurationDomDocumentMapping = globalThis.org.allbinary.business.context.configuration.ContextConfigurationDomDocumentMapping;
+
       
-import { ContextConfigurationInterface } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+//not game specific package import { ContextConfigurationInterface } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+      const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+
       
-import { ContextConfigurationInterfaceFactory } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js';
+//not game specific package import { ContextConfigurationInterfaceFactory } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js';
+      const ContextConfigurationInterfaceFactory = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterfaceFactory;
+
       
-import { ContextConfigurationPathUtil } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationPathUtil.js';
+//not game specific package import { ContextConfigurationPathUtil } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationPathUtil.js';
+      const ContextConfigurationPathUtil = globalThis.org.allbinary.business.context.configuration.ContextConfigurationPathUtil;
+
       
-import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+//not game specific package import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+      const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CryptFileWriter } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
+//not game specific package import { CryptFileWriter } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
+      const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

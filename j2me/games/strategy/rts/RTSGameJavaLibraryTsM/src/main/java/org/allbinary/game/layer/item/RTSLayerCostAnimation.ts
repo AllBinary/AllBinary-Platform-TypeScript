@@ -20,37 +20,69 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { CostLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/CostLayerInterfaceFactoryInterface.js';
+//not game specific package import { CostLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/CostLayerInterfaceFactoryInterface.js';
+      const CostLayerInterfaceFactoryInterface = globalThis.org.allbinary.game.layer.CostLayerInterfaceFactoryInterface;
+
       
-import { TechEventListenerInterface } from '../../../../../org/allbinary/game/rts/technology/event/TechEventListenerInterface.js';
+//not game specific package import { TechEventListenerInterface } from '../../../../../org/allbinary/game/rts/technology/event/TechEventListenerInterface.js';
+      const TechEventListenerInterface = globalThis.org.allbinary.game.rts.technology.event.TechEventListenerInterface;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
       
-import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+//not game specific package import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
       
-import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+//not game specific package import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not game specific package import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+      const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+
       
-import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
 
 

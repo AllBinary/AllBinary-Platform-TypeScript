@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { UserInterface } from '../../../../../../../../../org/allbinary/business/user/UserInterface.js';
+//not game specific package import { UserInterface } from '../../../../../../../../../org/allbinary/business/user/UserInterface.js';
+      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { BasicEmail } from '../../../../../../../../../org/allbinary/logic/communication/smtp/BasicEmail.js';
+//not game specific package import { BasicEmail } from '../../../../../../../../../org/allbinary/logic/communication/smtp/BasicEmail.js';
+      const BasicEmail = globalThis.org.allbinary.logic.communication.smtp.BasicEmail;
+
       
-import { EmailInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
+//not game specific package import { EmailInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
+      const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
+
       
-import { EmailEvent } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
+//not game specific package import { EmailEvent } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
+      const EmailEvent = globalThis.org.allbinary.logic.communication.smtp.event.EmailEvent;
+
       
-import { UserEmailEventListenerInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+//not game specific package import { UserEmailEventListenerInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+      const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
+
       
-import { EmailQueueFactory } from '../../../../../../../../../org/allbinary/logic/communication/smtp/queue/EmailQueueFactory.js';
+//not game specific package import { EmailQueueFactory } from '../../../../../../../../../org/allbinary/logic/communication/smtp/queue/EmailQueueFactory.js';
+      const EmailQueueFactory = globalThis.org.allbinary.logic.communication.smtp.queue.EmailQueueFactory;
+
       
 
 

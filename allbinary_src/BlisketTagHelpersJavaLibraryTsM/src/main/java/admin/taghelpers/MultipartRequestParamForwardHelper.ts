@@ -22,27 +22,49 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
+//not game specific package import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
+      const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+
       
-import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
+//not game specific package import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
+      const RequestMapInterface = globalThis.org.allbinary.logic.communication.http.request.RequestMapInterface;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { HelperTag } from '../../tags/HelperTag.js';
+//not game specific package import { HelperTag } from '../../tags/HelperTag.js';
+      const HelperTag = globalThis.tags.HelperTag;
+
       
 
 

@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
+//not game specific package import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
+      const DataOutputStream = globalThis.java.io.DataOutputStream;
+
       
-import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+//not game specific package import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+      const FileOutputStream = globalThis.java.io.FileOutputStream;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
+//not game specific package import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
+      const AbFileSystem = globalThis.org.allbinary.logic.io.file.AbFileSystem;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

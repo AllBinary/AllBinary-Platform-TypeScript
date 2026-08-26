@@ -20,7 +20,9 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { ContextConfigurationInterface } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+//not game specific package import { ContextConfigurationInterface } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+      const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+
       
 
 

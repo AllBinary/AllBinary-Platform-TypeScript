@@ -18,9 +18,13 @@
 
 
 
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
 
 

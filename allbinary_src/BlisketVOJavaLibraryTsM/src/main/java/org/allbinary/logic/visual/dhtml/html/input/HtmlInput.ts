@@ -18,9 +18,13 @@
 
 
 
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
+//not game specific package import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
+      const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
+
       
 
 

@@ -18,7 +18,9 @@
 
 
 
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
 
 

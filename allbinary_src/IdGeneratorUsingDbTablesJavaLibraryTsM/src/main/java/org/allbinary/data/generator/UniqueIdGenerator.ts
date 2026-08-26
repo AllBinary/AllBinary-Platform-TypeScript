@@ -24,17 +24,29 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { IdGeneratorEntity } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntity.js';
+//not game specific package import { IdGeneratorEntity } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntity.js';
+      const IdGeneratorEntity = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntity;
+
       
-import { IdGeneratorEntityFactory } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntityFactory.js';
+//not game specific package import { IdGeneratorEntityFactory } from '../../../../org/allbinary/data/tables/generator/IdGeneratorEntityFactory.js';
+      const IdGeneratorEntityFactory = globalThis.org.allbinary.data.tables.generator.IdGeneratorEntityFactory;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

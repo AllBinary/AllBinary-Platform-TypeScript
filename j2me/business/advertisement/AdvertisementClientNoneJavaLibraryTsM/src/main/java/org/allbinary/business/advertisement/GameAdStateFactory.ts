@@ -8,9 +8,21 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+//not game specific package import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
+      const GameAdState = globalThis.org.allbinary.game.GameAdState;
+
+      
+//not game specific package import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+      const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

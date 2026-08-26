@@ -20,13 +20,21 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
+//not game specific package import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
+      const AppletUtil = globalThis.org.allbinary.AppletUtil;
+
       
-import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { GameCommandsFactory } from '../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { GameCommandsFactory } from '../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
+//not game specific package import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
       
 
 

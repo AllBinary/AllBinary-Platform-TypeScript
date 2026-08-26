@@ -24,33 +24,61 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-import { awt } from '../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
+//not game specific package import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
+      const RenderedImage = globalThis.java.awt.image.RenderedImage;
+
       
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+//not game specific package import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+      const ImageIO = globalThis.javax.imageio.ImageIO;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { ImageJ2SERotationUtil } from '../../../../org/allbinary/media/image/ImageJ2SERotationUtil.js';
+//not game specific package import { ImageJ2SERotationUtil } from '../../../../org/allbinary/media/image/ImageJ2SERotationUtil.js';
+      const ImageJ2SERotationUtil = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
+
       
-import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+//not game specific package import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+      const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+
       
-import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+//not game specific package import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+      const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+
       
-import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
+//not game specific package import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
+      const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
+
       
-import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

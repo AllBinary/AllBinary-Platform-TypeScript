@@ -24,31 +24,57 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-import { Calendar } from '../../../../../java/util/Calendar.js';
+//not game specific package import { Calendar } from '../../../../../java/util/Calendar.js';
+      const Calendar = globalThis.java.util.Calendar;
+
       
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { QuoteRequestData } from '../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js';
+//not game specific package import { QuoteRequestData } from '../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js';
+      const QuoteRequestData = globalThis.org.allbinary.business.quoterequest.QuoteRequestData;
+
       
-import { UserData } from '../../../../../org/allbinary/business/user/UserData.js';
+//not game specific package import { UserData } from '../../../../../org/allbinary/business/user/UserData.js';
+      const UserData = globalThis.org.allbinary.business.user.UserData;
+
       
-import { QuoteRequestIdGenerator } from '../../../../../org/allbinary/data/generator/QuoteRequestIdGenerator.js';
+//not game specific package import { QuoteRequestIdGenerator } from '../../../../../org/allbinary/data/generator/QuoteRequestIdGenerator.js';
+      const QuoteRequestIdGenerator = globalThis.org.allbinary.data.generator.QuoteRequestIdGenerator;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
+//not game specific package import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
+      const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

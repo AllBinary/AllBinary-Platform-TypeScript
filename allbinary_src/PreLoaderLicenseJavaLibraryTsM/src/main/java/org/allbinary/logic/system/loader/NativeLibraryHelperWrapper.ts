@@ -28,11 +28,17 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+//not game specific package import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+      const Constructor = globalThis.java.lang.reflect.Constructor;
+
       
-import { Method } from '../../../../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../../../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

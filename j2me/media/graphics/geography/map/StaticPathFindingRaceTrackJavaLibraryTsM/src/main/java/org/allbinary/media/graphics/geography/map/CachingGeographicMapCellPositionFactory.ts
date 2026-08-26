@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
+//not game specific package import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
+      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+
       
 
 

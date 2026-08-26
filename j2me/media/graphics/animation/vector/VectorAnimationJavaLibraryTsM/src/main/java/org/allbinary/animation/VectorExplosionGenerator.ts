@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { RandomRotationFactory } from '../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
+//not game specific package import { RandomRotationFactory } from '../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
+      const RandomRotationFactory = globalThis.org.allbinary.graphics.pipeline.RandomRotationFactory;
+
       
-import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/RandomTranslation.js';
+//not game specific package import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/RandomTranslation.js';
+      const RandomTranslation = globalThis.org.allbinary.graphics.pipeline.RandomTranslation;
+
       
-import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
+//not game specific package import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
+      const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
       
 
 

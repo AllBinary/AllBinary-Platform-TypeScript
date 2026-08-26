@@ -24,19 +24,33 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Set } from '../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+//not game specific package import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
       
-import { ToDomHelper } from '../../../../../org/allbinary/data/tree/dom/ToDomHelper.js';
+//not game specific package import { ToDomHelper } from '../../../../../org/allbinary/data/tree/dom/ToDomHelper.js';
+      const ToDomHelper = globalThis.org.allbinary.data.tree.dom.ToDomHelper;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

@@ -18,17 +18,29 @@
 
 
 
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { UserConfigurationInterface } from '../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js';
+//not game specific package import { UserConfigurationInterface } from '../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js';
+      const UserConfigurationInterface = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+
       
-import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
+//not game specific package import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
+      const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+
       
-import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
-import { WeblisketSessionInterface } from '../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+//not game specific package import { WeblisketSessionInterface } from '../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+      const WeblisketSessionInterface = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
+
       
-import { ValidationInterface } from '../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+//not game specific package import { ValidationInterface } from '../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+
       
 
 

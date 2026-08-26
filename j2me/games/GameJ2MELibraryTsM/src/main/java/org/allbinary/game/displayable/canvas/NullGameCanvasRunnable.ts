@@ -24,21 +24,37 @@
         
             import { Thread } from '../../../../../java/lang/Thread.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+//not game specific package import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
+
       
-import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
+//not game specific package import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
+      const GameState = globalThis.org.allbinary.game.state.GameState;
+
       
-import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+//not game specific package import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+      const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

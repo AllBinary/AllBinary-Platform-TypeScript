@@ -18,9 +18,13 @@
 
 
 
-import { EGLConfig } from '../../javax/microedition/khronos/egl/EGLConfig.js';
+//not game specific package import { EGLConfig } from '../../javax/microedition/khronos/egl/EGLConfig.js';
+      const EGLConfig = globalThis.javax.microedition.khronos.egl.EGLConfig;
+
       
-import { GL10 } from '../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
 
 

@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CategoryComponent } from '../../../../../org/allbinary/business/category/CategoryComponent.js';
+//not game specific package import { CategoryComponent } from '../../../../../org/allbinary/business/category/CategoryComponent.js';
+      const CategoryComponent = globalThis.org.allbinary.business.category.CategoryComponent;
+
       
-import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+//not game specific package import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+      const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+
       
-import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
+//not game specific package import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
+      const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+
       
-import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+//not game specific package import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
+//not game specific package import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
+      const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
+
       
-import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

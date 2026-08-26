@@ -20,15 +20,25 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { LicensingException } from '../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { TagHelperFactoryInterface } from '../../../admin/taghelpers/TagHelperFactoryInterface.js';
+//not game specific package import { TagHelperFactoryInterface } from '../../../admin/taghelpers/TagHelperFactoryInterface.js';
+      const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+
       
-import { HelperFactory } from '../../../admin/taghelpers/HelperFactory.js';
+//not game specific package import { HelperFactory } from '../../../admin/taghelpers/HelperFactory.js';
+      const HelperFactory = globalThis.admin.taghelpers.HelperFactory;
+
       
 
 

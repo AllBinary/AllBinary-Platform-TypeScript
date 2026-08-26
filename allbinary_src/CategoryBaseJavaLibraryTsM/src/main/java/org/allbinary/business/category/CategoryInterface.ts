@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { CategoryHierarchyInterface } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
+//not game specific package import { CategoryHierarchyInterface } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
+      const CategoryHierarchyInterface = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
+
       
-import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
+//not game specific package import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
+      const CategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
+
       
-import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
-import { ValidationInterface } from '../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+//not game specific package import { ValidationInterface } from '../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+
       
-import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
 
 

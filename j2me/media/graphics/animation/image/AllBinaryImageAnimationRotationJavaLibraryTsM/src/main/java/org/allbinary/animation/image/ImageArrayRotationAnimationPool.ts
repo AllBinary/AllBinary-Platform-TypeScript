@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BasicArrayListResetablePool } from '../../../../org/allbinary/logic/util/cache/BasicArrayListResetablePool.js';
+//not game specific package import { BasicArrayListResetablePool } from '../../../../org/allbinary/logic/util/cache/BasicArrayListResetablePool.js';
+      const BasicArrayListResetablePool = globalThis.org.allbinary.logic.util.cache.BasicArrayListResetablePool;
+
       
-import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+//not game specific package import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+
       
-import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
+//not game specific package import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
+      const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+
       
-import { PoolInterface } from '../../../../org/allbinary/logic/util/cache/PoolInterface.js';
+//not game specific package import { PoolInterface } from '../../../../org/allbinary/logic/util/cache/PoolInterface.js';
+      const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
+
       
 
 

@@ -24,15 +24,25 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+//not game specific package import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+      const TextField = globalThis.javax.microedition.lcdui.TextField;
+
       
-import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+//not game specific package import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+      const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
+
       
 
 

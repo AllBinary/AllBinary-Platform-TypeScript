@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
+//not game specific package import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
+      const AllBinaryEventCircularPool = globalThis.org.allbinary.logic.util.event.AllBinaryEventCircularPool;
+
       
 
 

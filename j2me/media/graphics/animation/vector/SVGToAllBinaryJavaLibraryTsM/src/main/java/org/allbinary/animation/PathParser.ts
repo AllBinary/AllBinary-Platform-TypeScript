@@ -8,7 +8,9 @@
         
             import { Double } from '../../../java/lang/Double.js';
         
-import { Vector } from '../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
 
 

@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+//not game specific package import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+      const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

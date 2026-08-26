@@ -4,9 +4,13 @@
 
 
 
-import { Bitmap } from '../../../android/graphics/Bitmap.js';
+//not game specific package import { Bitmap } from '../../../android/graphics/Bitmap.js';
+      const Bitmap = globalThis.android.graphics.Bitmap;
+
       
-import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+//not game specific package import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+
       
 
 

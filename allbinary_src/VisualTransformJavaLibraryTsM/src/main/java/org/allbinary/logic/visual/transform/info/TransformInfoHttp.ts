@@ -20,33 +20,61 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { AbContext } from '../../../../../../org/allbinary/business/context/AbContext.js';
+//not game specific package import { AbContext } from '../../../../../../org/allbinary/business/context/AbContext.js';
+      const AbContext = globalThis.org.allbinary.business.context.AbContext;
+
       
-import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+//not game specific package import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+      const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+
       
-import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+//not game specific package import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+      const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+
       
-import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+//not game specific package import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+      const WeblisketSessionInterface = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlData } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
+//not game specific package import { AbSqlData } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
+      const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
+
       
-import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfig.js';
+//not game specific package import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfig.js';
+      const TransformInfoObjectConfig = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfig;
+
       
 
 

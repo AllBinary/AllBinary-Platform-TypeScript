@@ -18,7 +18,9 @@
 
 
 
-import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
+//not game specific package import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+
       
 
 

@@ -22,35 +22,65 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
+//not game specific package import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
+      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+
       
-import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
+//not game specific package import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
+
       
-import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+//not game specific package import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+      const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+
       
-import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+//not game specific package import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+      const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+
       
-import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
+//not game specific package import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
+      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+
       
-import { CaptionIndexedAnimation } from '../../../../../org/allbinary/animation/caption/CaptionIndexedAnimation.js';
+//not game specific package import { CaptionIndexedAnimation } from '../../../../../org/allbinary/animation/caption/CaptionIndexedAnimation.js';
+      const CaptionIndexedAnimation = globalThis.org.allbinary.animation.caption.CaptionIndexedAnimation;
+
       
-import { ImageAnimation } from '../../../../../org/allbinary/animation/image/ImageAnimation.js';
+//not game specific package import { ImageAnimation } from '../../../../../org/allbinary/animation/image/ImageAnimation.js';
+      const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
+
       
-import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
+//not game specific package import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
+      const BasicColorUtil = globalThis.org.allbinary.graphics.color.BasicColorUtil;
+
       
-import { AnimationFactoryImageScaleUtil } from '../../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
+//not game specific package import { AnimationFactoryImageScaleUtil } from '../../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
+      const AnimationFactoryImageScaleUtil = globalThis.org.allbinary.image.AnimationFactoryImageScaleUtil;
+
       
-import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
+//not game specific package import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
+      const AnimationFactorySpriteScaleUtil = globalThis.org.allbinary.image.sprite.AnimationFactorySpriteScaleUtil;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { ScaleProperties } from '../../../../../org/allbinary/media/ScaleProperties.js';
+//not game specific package import { ScaleProperties } from '../../../../../org/allbinary/media/ScaleProperties.js';
+      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+
       
-import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
+//not game specific package import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
+      const Sound = globalThis.org.allbinary.media.audio.Sound;
+
       
 
 

@@ -8,21 +8,37 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { Visitor } from '../../../org/allbinary/logic/util/visitor/Visitor.js';
+//not game specific package import { Visitor } from '../../../org/allbinary/logic/util/visitor/Visitor.js';
+      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
+//not game specific package import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
+      const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
+
       
 
 

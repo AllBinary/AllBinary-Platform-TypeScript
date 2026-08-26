@@ -4,15 +4,25 @@
 
 
 
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { DisposalUtil } from '../../../org/allbinary/DisposalUtil.js';
+//not game specific package import { DisposalUtil } from '../../../org/allbinary/DisposalUtil.js';
+      const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
+
       
-import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+//not game specific package import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+
       
-import { SwtImmutableImage } from '../../../org/microemu/device/swt/SwtImmutableImage.js';
+//not game specific package import { SwtImmutableImage } from '../../../org/microemu/device/swt/SwtImmutableImage.js';
+      const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
+
       
-import { SwtMutableImage } from '../../../org/microemu/device/swt/SwtMutableImage.js';
+//not game specific package import { SwtMutableImage } from '../../../org/microemu/device/swt/SwtMutableImage.js';
+      const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+
       
 
 

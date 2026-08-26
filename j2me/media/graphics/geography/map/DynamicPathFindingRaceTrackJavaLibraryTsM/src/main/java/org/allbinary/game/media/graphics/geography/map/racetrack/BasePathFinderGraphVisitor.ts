@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { GraphPath } from '../../../../../../../../org/jgrapht/GraphPath.js';
+//not game specific package import { GraphPath } from '../../../../../../../../org/jgrapht/GraphPath.js';
+      const GraphPath = globalThis.org.jgrapht.GraphPath;
+
       
-import { SimpleWeightedGraph } from '../../../../../../../../org/jgrapht/graph/SimpleWeightedGraph.js';
+//not game specific package import { SimpleWeightedGraph } from '../../../../../../../../org/jgrapht/graph/SimpleWeightedGraph.js';
+      const SimpleWeightedGraph = globalThis.org.jgrapht.graph.SimpleWeightedGraph;
+
       
-import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinderGraphVisitorBase.js';
+//not game specific package import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinderGraphVisitorBase.js';
+      const PathFinderGraphVisitorBase = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorBase;
+
       
-import { PathFindingNode } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
+//not game specific package import { PathFindingNode } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
+      const PathFindingNode = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
+
       
-import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

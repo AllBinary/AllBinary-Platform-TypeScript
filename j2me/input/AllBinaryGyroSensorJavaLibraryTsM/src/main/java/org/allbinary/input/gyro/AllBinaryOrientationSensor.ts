@@ -20,15 +20,41 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CompleteMotionGestureInputEventListenerInterface } from '../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
+//not game specific package import { CompleteMotionGestureInputEventListenerInterface } from '../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
+      const CompleteMotionGestureInputEventListenerInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
+
       
-import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+//not game specific package import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
+      const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
+
       
-import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+//not game specific package import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+      const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+
       
-import { PrimitiveFloatUtil } from '../../../../org/allbinary/logic/math/PrimitiveFloatUtil.js';
+//not game specific package import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+      const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+
+      
+//not game specific package import { PrimitiveFloatUtil } from '../../../../org/allbinary/logic/math/PrimitiveFloatUtil.js';
+      const PrimitiveFloatUtil = globalThis.org.allbinary.logic.math.PrimitiveFloatUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

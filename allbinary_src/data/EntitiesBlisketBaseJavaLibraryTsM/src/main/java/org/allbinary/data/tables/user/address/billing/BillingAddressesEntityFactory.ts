@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
+//not game specific package import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
+      const StreetAddressesEntity = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntity;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

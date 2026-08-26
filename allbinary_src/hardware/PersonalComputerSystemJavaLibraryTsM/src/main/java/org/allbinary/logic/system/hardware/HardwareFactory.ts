@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+//not game specific package import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
       
-import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+//not game specific package import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+      const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
+
       
-import { LinuxHardware } from '../../../../../org/allbinary/logic/system/hardware/linux/LinuxHardware.js';
+//not game specific package import { LinuxHardware } from '../../../../../org/allbinary/logic/system/hardware/linux/LinuxHardware.js';
+      const LinuxHardware = globalThis.org.allbinary.logic.system.hardware.linux.LinuxHardware;
+
       
-import { WindowsHardware } from '../../../../../org/allbinary/logic/system/hardware/windows/WindowsHardware.js';
+//not game specific package import { WindowsHardware } from '../../../../../org/allbinary/logic/system/hardware/windows/WindowsHardware.js';
+      const WindowsHardware = globalThis.org.allbinary.logic.system.hardware.windows.WindowsHardware;
+
       
 
 

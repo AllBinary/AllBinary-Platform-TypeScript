@@ -22,21 +22,37 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { File } from '../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileFilter } from '../../../../../java/io/FileFilter.js';
+//not game specific package import { FileFilter } from '../../../../../java/io/FileFilter.js';
+      const FileFilter = globalThis.java.io.FileFilter;
+
       
-import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
+//not game specific package import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
+      const FilenameFilter = globalThis.java.io.FilenameFilter;
+
       
-import { IOException } from '../../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { URI } from '../../../../../java/net/URI.js';
+//not game specific package import { URI } from '../../../../../java/net/URI.js';
+      const URI = globalThis.java.net.URI;
+
       
-import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

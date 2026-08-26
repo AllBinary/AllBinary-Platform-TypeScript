@@ -18,19 +18,33 @@
 
 
 
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+//not game specific package import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+      const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+
       
-import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
+//not game specific package import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
+      const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
+
       
-import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
       
-import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
       
-import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
+//not game specific package import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
+      const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
+
       
 
 

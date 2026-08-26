@@ -20,41 +20,77 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+//not game specific package import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+      const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+
       
-import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { HttpData } from '../../../../../org/allbinary/logic/communication/http/HttpData.js';
+//not game specific package import { HttpData } from '../../../../../org/allbinary/logic/communication/http/HttpData.js';
+      const HttpData = globalThis.org.allbinary.logic.communication.http.HttpData;
+
       
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+//not game specific package import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+
       
-import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+//not game specific package import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+
       
-import { AbDataInputStream } from '../../../../../org/allbinary/logic/io/AbDataInputStream.js';
+//not game specific package import { AbDataInputStream } from '../../../../../org/allbinary/logic/io/AbDataInputStream.js';
+      const AbDataInputStream = globalThis.org.allbinary.logic.io.AbDataInputStream;
+
       
-import { AbDataOutputStream } from '../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+//not game specific package import { AbDataOutputStream } from '../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+      const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+
       
-import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
+//not game specific package import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
+      const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+
       
-import { DataOutputStreamFactory } from '../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
+//not game specific package import { DataOutputStreamFactory } from '../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
+      const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
+
       
-import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+//not game specific package import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+
       
-import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
+//not game specific package import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
+      const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+
       
-import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { DatabaseEncoder } from '../../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
+//not game specific package import { DatabaseEncoder } from '../../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
+      const DatabaseEncoder = globalThis.org.allbinary.logic.system.security.crypt.DatabaseEncoder;
+
       
-import { WeakCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js';
+//not game specific package import { WeakCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js';
+      const WeakCrypt = globalThis.org.allbinary.logic.system.security.crypt.WeakCrypt;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

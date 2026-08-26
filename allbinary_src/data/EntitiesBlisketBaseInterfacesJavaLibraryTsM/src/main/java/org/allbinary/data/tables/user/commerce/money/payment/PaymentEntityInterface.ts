@@ -20,11 +20,17 @@
 
             import { Integer } from '../../../../../../../../java/lang/Integer.js';
         
-import { Vector } from '../../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
+//not game specific package import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
+      const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
+
       
-import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
+//not game specific package import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
+      const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
+
       
 
 

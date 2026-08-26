@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { ArrayList } from '../../../../../../../java/util/ArrayList.js';
+//not game specific package import { ArrayList } from '../../../../../../../java/util/ArrayList.js';
+      const ArrayList = globalThis.java.util.ArrayList;
+
       
-import { List } from '../../../../../../../java/util/List.js';
+//not game specific package import { List } from '../../../../../../../java/util/List.js';
+      const List = globalThis.java.util.List;
+
       
-import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { AbFileItemFactory } from '../../../../../../../org/allbinary/logic/communication/http/AbFileItemFactory.js';
+//not game specific package import { AbFileItemFactory } from '../../../../../../../org/allbinary/logic/communication/http/AbFileItemFactory.js';
+      const AbFileItemFactory = globalThis.org.allbinary.logic.communication.http.AbFileItemFactory;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
+//not game specific package import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
+      const FileItemIterator = globalThis.org.apache.commons.fileupload.FileItemIterator;
+
       
-import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
+//not game specific package import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
+      const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
+
       
-import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
+//not game specific package import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
+      const FileItemUtil = globalThis.org.apache.commons.fileupload.FileItemUtil;
+
       
 
 

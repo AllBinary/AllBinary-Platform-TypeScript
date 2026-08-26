@@ -20,19 +20,33 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
+//not game specific package import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
+      const Bundle = globalThis.org.osgi.framework.Bundle;
+
       
-import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
+//not game specific package import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
+      const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
+
       
-import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
+//not game specific package import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
+      const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
+
       
-import { InputAutomationModuleService } from '../../../../../../bundle/input/automation/module/InputAutomationModuleService.js';
+//not game specific package import { InputAutomationModuleService } from '../../../../../../bundle/input/automation/module/InputAutomationModuleService.js';
+      const InputAutomationModuleService = globalThis.bundle.input.automation.module.InputAutomationModuleService;
+
       
-import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

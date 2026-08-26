@@ -20,29 +20,53 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { AbTagData } from '../../admin/tags/AbTagData.js';
+//not game specific package import { AbTagData } from '../../admin/tags/AbTagData.js';
+      const AbTagData = globalThis.admin.tags.AbTagData;
+
       
-import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+//not game specific package import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+
       
-import { ItemInterface } from '../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+//not game specific package import { ItemInterface } from '../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+      const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+
       
-import { TableMappingInterface } from '../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
-import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+//not game specific package import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+      const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { HelperTag } from '../../tags/HelperTag.js';
+//not game specific package import { HelperTag } from '../../tags/HelperTag.js';
+      const HelperTag = globalThis.tags.HelperTag;
+
       
-import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
+//not game specific package import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
+      const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
+
       
 
 

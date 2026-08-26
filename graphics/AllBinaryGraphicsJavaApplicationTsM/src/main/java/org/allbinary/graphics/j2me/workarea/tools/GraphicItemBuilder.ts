@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

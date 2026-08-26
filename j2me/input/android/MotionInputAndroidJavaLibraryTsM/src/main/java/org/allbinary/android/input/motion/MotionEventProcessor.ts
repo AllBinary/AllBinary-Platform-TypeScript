@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MotionEvent } from '../../../../../android/view/MotionEvent.js';
+//not game specific package import { MotionEvent } from '../../../../../android/view/MotionEvent.js';
+      const MotionEvent = globalThis.android.view.MotionEvent;
+
       
 
 

@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+//not game specific package import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
       
-import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { FormTypeFactory } from '../../../../../org/allbinary/graphics/form/FormTypeFactory.js';
+//not game specific package import { FormTypeFactory } from '../../../../../org/allbinary/graphics/form/FormTypeFactory.js';
+      const FormTypeFactory = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+
       
-import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
+//not game specific package import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
+      const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+
       
-import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
+//not game specific package import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
+      const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
+
       
 
 

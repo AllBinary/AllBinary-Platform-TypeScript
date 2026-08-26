@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { InputAutomationConfigurationFactory } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
+//not game specific package import { InputAutomationConfigurationFactory } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
+      const InputAutomationConfigurationFactory = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationFactory;
+
       
 
 

@@ -22,9 +22,13 @@
         
             import { Class } from '../../../../../java/lang/Class.js';
         
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
+//not game specific package import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
+      const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+
       
 
 

@@ -20,7 +20,9 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { DomDocumentMappingInterface } from '../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+//not game specific package import { DomDocumentMappingInterface } from '../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+      const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+
       
 
 

@@ -18,19 +18,33 @@
 
 
 
-import { Enumeration } from '../../../../../../../java/util/Enumeration.js';
+//not game specific package import { Enumeration } from '../../../../../../../java/util/Enumeration.js';
+      const Enumeration = globalThis.java.util.Enumeration;
+
       
-import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
+//not game specific package import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
+      const GeographicMapCellType = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+
       
-import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
+//not game specific package import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
+      const GeographicMapCellTypeFactory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellTypeFactory;
+
       
-import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { EnumerationUtil } from '../../../../../../../org/allbinary/util/EnumerationUtil.js';
+//not game specific package import { EnumerationUtil } from '../../../../../../../org/allbinary/util/EnumerationUtil.js';
+      const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
       
 
 

@@ -24,31 +24,73 @@
         
             import { Thread } from '../../../java/lang/Thread.js';
         
-import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { NullWaitGameRunnable } from '../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
+//not game specific package import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
+//not game specific package import { NullWaitGameRunnable } from '../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
+      const NullWaitGameRunnable = globalThis.org.allbinary.game.displayable.canvas.NullWaitGameRunnable;
+
       
-import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { NullThread } from '../../../org/allbinary/thread/NullThread.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { RunnableInterface } from '../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { NullThread } from '../../../org/allbinary/thread/NullThread.js';
+      const NullThread = globalThis.org.allbinary.thread.NullThread;
+
       
-import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
+//not game specific package import { RunnableInterface } from '../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
-import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
+      const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
+
       
-import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

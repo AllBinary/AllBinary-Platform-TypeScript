@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { CommonDataFileStrings } from '../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
+//not game specific package import { CommonDataFileStrings } from '../../../../org/allbinary/logic/io/file/CommonDataFileStrings.js';
+      const CommonDataFileStrings = globalThis.org.allbinary.logic.io.file.CommonDataFileStrings;
+
       
 
 

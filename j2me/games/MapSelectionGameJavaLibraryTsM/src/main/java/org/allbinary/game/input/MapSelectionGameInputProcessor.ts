@@ -20,41 +20,77 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
+//not game specific package import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
+      const LockedFeatureNotificationUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedFeatureNotificationUtil;
+
       
-import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
+//not game specific package import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
+      const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
+
       
-import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+//not game specific package import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+      const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+
       
-import { PreGameSelectorPaintable } from '../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js';
+//not game specific package import { PreGameSelectorPaintable } from '../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js';
+      const PreGameSelectorPaintable = globalThis.org.allbinary.game.displayable.canvas.PreGameSelectorPaintable;
+
       
-import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
+//not game specific package import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
+      const GameKeyEventHandler = globalThis.org.allbinary.game.input.event.GameKeyEventHandler;
+
       
-import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
+//not game specific package import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
+      const GameKeyEventUtil = globalThis.org.allbinary.game.input.event.GameKeyEventUtil;
+
       
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
+//not game specific package import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
+      const SecondaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.SecondaryPlayerQueueFactory;
+
       
-import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
+//not game specific package import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
+      const SelectSound = globalThis.org.allbinary.media.audio.SelectSound;
+
       
-import { MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface.js';
+//not game specific package import { MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface.js';
+      const MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface = globalThis.org.allbinary.media.graphics.geography.map.racetrack.MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface;
+
       
-import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
+//not game specific package import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
+      const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
+
       
-import { ThreadObjectUtil } from '../../../../org/allbinary/thread/ThreadObjectUtil.js';
+//not game specific package import { ThreadObjectUtil } from '../../../../org/allbinary/thread/ThreadObjectUtil.js';
+      const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
+
       
-import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
 
 

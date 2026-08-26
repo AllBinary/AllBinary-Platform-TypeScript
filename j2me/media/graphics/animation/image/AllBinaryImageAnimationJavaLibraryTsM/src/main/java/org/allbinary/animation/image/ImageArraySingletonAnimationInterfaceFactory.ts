@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
+//not game specific package import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
+      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+
       
-import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
+//not game specific package import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
+      const SingletonAnimationInterfaceFactory = globalThis.org.allbinary.animation.SingletonAnimationInterfaceFactory;
+
       
-import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/image/IndexedAnimationToImageArrayUtil.js';
+//not game specific package import { IndexedAnimationToImageArrayUtil } from '../../../../org/allbinary/image/IndexedAnimationToImageArrayUtil.js';
+      const IndexedAnimationToImageArrayUtil = globalThis.org.allbinary.image.IndexedAnimationToImageArrayUtil;
+
       
 
 

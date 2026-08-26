@@ -20,15 +20,25 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
+//not game specific package import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
+      const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
+
       
-import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
+//not game specific package import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
+      const NoDebug = globalThis.org.allbinary.debug.NoDebug;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

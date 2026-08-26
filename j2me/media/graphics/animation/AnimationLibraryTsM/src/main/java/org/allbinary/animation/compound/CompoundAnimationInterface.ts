@@ -18,9 +18,13 @@
 
 
 
-import { AnimationInterface } from '../../../../org/allbinary/animation/AnimationInterface.js';
+//not game specific package import { AnimationInterface } from '../../../../org/allbinary/animation/AnimationInterface.js';
+      const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
+
       
-import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
+//not game specific package import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
+      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+
       
 
 

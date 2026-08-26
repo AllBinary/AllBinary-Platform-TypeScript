@@ -20,15 +20,25 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Collection } from '../../../java/util/Collection.js';
+//not game specific package import { Collection } from '../../../java/util/Collection.js';
+      const Collection = globalThis.java.util.Collection;
+
       
-import { Map } from '../../../java/util/Map.js';
+//not game specific package import { Map } from '../../../java/util/Map.js';
+      const Map = globalThis.java.util.Map;
+
       
-import { Set } from '../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
+//not game specific package import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
+      const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

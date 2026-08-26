@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+//not game specific package import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+
       
-import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
 
 

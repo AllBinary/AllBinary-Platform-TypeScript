@@ -24,19 +24,33 @@
         
             import { Long } from '../../../../../../java/lang/Long.js';
         
-import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
+//not game specific package import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
+      const ActionEvent = globalThis.java.awt.event.ActionEvent;
+
       
-import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
+//not game specific package import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
+      const ActionListener = globalThis.java.awt.event.ActionListener;
+
       
-import { swing } from '../../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+//not game specific package import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+      const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

@@ -22,11 +22,17 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      const HelpSet = globalThis.javax.help.HelpSet;
+
       
 
 

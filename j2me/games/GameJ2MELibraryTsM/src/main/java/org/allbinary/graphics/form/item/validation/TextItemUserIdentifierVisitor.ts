@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { TextNotificationUtil } from '../../../../../../org/allbinary/game/input/TextNotificationUtil.js';
+//not game specific package import { TextNotificationUtil } from '../../../../../../org/allbinary/game/input/TextNotificationUtil.js';
+      const TextNotificationUtil = globalThis.org.allbinary.game.input.TextNotificationUtil;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
-import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+//not game specific package import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

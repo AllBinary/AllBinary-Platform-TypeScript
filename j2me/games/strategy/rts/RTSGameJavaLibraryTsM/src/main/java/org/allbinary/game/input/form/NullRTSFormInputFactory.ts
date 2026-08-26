@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+//not game specific package import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+      const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
+
       
 
 

@@ -18,11 +18,17 @@
 
 
 
-import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+//not game specific package import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+
       
-import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+//not game specific package import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+
       
-import { Payment } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
+//not game specific package import { Payment } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
+      const Payment = globalThis.org.allbinary.business.user.commerce.money.payment.Payment;
+
       
 
 

@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { AdvertisementCampaignData } from '../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
+//not game specific package import { AdvertisementCampaignData } from '../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
+      const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
+
       
-import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

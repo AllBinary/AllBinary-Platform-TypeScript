@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomHelper } from '../../../../../org/allbinary/dom/DomHelper.js';
+//not game specific package import { DomHelper } from '../../../../../org/allbinary/dom/DomHelper.js';
+      const DomHelper = globalThis.org.allbinary.dom.DomHelper;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

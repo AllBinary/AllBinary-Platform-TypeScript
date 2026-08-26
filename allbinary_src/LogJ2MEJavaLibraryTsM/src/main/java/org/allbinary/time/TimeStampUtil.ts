@@ -20,10 +20,13 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Calendar } from '../../../java/util/Calendar.js';
-      
+//not game specific package import { Calendar } from '../../../java/util/Calendar.js';
+      const Calendar = globalThis.java.util.Calendar;
 
-//import { Date } from '../../../java/util/Date.js';
+      
+////not game specific package import { Date } from '../../../java/util/Date.js';
+      const Date = globalThis.java.util.Date;
+
       
 
 

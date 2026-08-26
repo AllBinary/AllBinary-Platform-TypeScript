@@ -18,9 +18,13 @@
 
 
 
-import { GL } from '../../../com/jogamp/opengl/GL.js';
+//not game specific package import { GL } from '../../../com/jogamp/opengl/GL.js';
+      const GL = globalThis.com.jogamp.opengl.GL;
+
       
-import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
+//not game specific package import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
+      const GL2 = globalThis.com.jogamp.opengl.GL2;
+
       
 
 

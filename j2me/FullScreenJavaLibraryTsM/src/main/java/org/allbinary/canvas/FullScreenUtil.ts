@@ -22,13 +22,29 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+//not game specific package import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+
+      
+//not game specific package import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

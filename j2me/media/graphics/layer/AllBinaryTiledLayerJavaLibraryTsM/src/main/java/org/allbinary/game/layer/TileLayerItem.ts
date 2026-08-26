@@ -18,15 +18,25 @@
 
 
 
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Screen } from '../../../../javax/microedition/lcdui/Screen.js';
+//not game specific package import { Screen } from '../../../../javax/microedition/lcdui/Screen.js';
+      const Screen = globalThis.javax.microedition.lcdui.Screen;
+
       
-import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+//not game specific package import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
       
-import { ABCustomItemInterface } from '../../../../org/allbinary/graphics/form/item/ABCustomItemInterface.js';
+//not game specific package import { ABCustomItemInterface } from '../../../../org/allbinary/graphics/form/item/ABCustomItemInterface.js';
+      const ABCustomItemInterface = globalThis.org.allbinary.graphics.form.item.ABCustomItemInterface;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
 
 

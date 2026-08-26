@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { Direction } from '../../../../../../org/allbinary/direction/Direction.js';
+//not game specific package import { Direction } from '../../../../../../org/allbinary/direction/Direction.js';
+      const Direction = globalThis.org.allbinary.direction.Direction;
+
       
-import { DirectionFactory } from '../../../../../../org/allbinary/direction/DirectionFactory.js';
+//not game specific package import { DirectionFactory } from '../../../../../../org/allbinary/direction/DirectionFactory.js';
+      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+
       
-import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
+//not game specific package import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
+      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+
       
 
 

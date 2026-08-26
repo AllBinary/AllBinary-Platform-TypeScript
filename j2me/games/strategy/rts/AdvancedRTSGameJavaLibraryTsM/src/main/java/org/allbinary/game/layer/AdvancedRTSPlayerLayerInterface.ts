@@ -18,9 +18,13 @@
 
 
 
-import { GameType } from '../../../../org/allbinary/game/GameType.js';
+//not game specific package import { GameType } from '../../../../org/allbinary/game/GameType.js';
+      const GameType = globalThis.org.allbinary.game.GameType;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
 
 

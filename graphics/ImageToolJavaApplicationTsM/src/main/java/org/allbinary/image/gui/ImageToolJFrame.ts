@@ -22,37 +22,69 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { Arrays } from '../../../../java/util/Arrays.js';
+//not game specific package import { Arrays } from '../../../../java/util/Arrays.js';
+      const Arrays = globalThis.java.util.Arrays;
+
       
-import { Comparator } from '../../../../java/util/Comparator.js';
+//not game specific package import { Comparator } from '../../../../java/util/Comparator.js';
+      const Comparator = globalThis.java.util.Comparator;
+
       
-import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+//not game specific package import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+      const ImageIO = globalThis.javax.imageio.ImageIO;
+
       
-import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
+//not game specific package import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
+      const FileJDialog = globalThis.org.allbinary.gui.dialog.FileJDialog;
+
       
-import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
+//not game specific package import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
+      const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+//not game specific package import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+      const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+
       
-import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+//not game specific package import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+      const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+
       
-import { ColorRange } from '../../../../org/allbinary/media/image/analysis/ColorRange.js';
+//not game specific package import { ColorRange } from '../../../../org/allbinary/media/image/analysis/ColorRange.js';
+      const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
+
       
-import { ColorRangeInterface } from '../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+//not game specific package import { ColorRangeInterface } from '../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+      const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+
       
-import { ImageAnalysis } from '../../../../org/allbinary/media/image/analysis/ImageAnalysis.js';
+//not game specific package import { ImageAnalysis } from '../../../../org/allbinary/media/image/analysis/ImageAnalysis.js';
+      const ImageAnalysis = globalThis.org.allbinary.media.image.analysis.ImageAnalysis;
+
       
-import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
+//not game specific package import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
+      const ImageAnalysisResults = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
+
       
-import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

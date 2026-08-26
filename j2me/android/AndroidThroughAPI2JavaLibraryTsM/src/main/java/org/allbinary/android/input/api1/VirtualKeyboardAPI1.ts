@@ -18,11 +18,17 @@
 
 
 
-import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
+//not game specific package import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
+      const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
+
       
-import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+//not game specific package import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+      const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
+
       
-import { Activity } from '../../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
 
 

@@ -24,31 +24,57 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
-import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
+//not game specific package import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
+      const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+//not game specific package import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+      const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+
       
-import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
-import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
+//not game specific package import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
+      const NoSound = globalThis.org.allbinary.media.audio.NoSound;
+
       
-import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
+//not game specific package import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
+      const Sound = globalThis.org.allbinary.media.audio.Sound;
+
       
-import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { MultipassState } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/MultipassState.js';
+//not game specific package import { MultipassState } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/MultipassState.js';
+      const MultipassState = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
+
       
-import { PathFindingInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
+//not game specific package import { PathFindingInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
+      const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 
@@ -80,7 +106,7 @@ export class WaypointBase
 
     private readonly sound: Sound;
 
-    allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
+    allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.getNullInstance()!;
 
 public constructor (sound: Sound){
 

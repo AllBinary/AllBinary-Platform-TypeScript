@@ -20,31 +20,57 @@
 
             import { Exception } from '../../../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { DomNodeInterface } from '../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { NameSpaceRequestParams } from '../../../../../../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParams.js';
+//not game specific package import { NameSpaceRequestParams } from '../../../../../../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParams.js';
+      const NameSpaceRequestParams = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParams;
+
       
-import { LogUtil } from '../../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ValidationComponentInterface } from '../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+//not game specific package import { ValidationComponentInterface } from '../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+
       
-import { StringMaker } from '../../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { TransformInfoInterface } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { CssStyleValidation } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/template/retail/CssStyleValidation.js';
+//not game specific package import { CssStyleValidation } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/template/retail/CssStyleValidation.js';
+      const CssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.template.retail.CssStyleValidation;
+
       
-import { Document } from '../../../../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { CustomizerUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
+//not game specific package import { CustomizerUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
+      const CustomizerUtil = globalThis.views.business.context.modules.storefront.customizer.CustomizerUtil;
+
       
-import { StoreCustomizerComponentUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/StoreCustomizerComponentUtil.js';
+//not game specific package import { StoreCustomizerComponentUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/StoreCustomizerComponentUtil.js';
+      const StoreCustomizerComponentUtil = globalThis.views.business.context.modules.storefront.customizer.StoreCustomizerComponentUtil;
+
       
-import { CssCustomizerView } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/includes/style/css/CssCustomizerView.js';
+//not game specific package import { CssCustomizerView } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/includes/style/css/CssCustomizerView.js';
+      const CssCustomizerView = globalThis.views.business.context.modules.storefront.customizer.includes.style.css.CssCustomizerView;
+
       
 
 

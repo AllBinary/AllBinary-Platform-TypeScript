@@ -20,9 +20,13 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { awt } from '../../../java/awt.js';
+//not game specific package import { awt } from '../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
 
 

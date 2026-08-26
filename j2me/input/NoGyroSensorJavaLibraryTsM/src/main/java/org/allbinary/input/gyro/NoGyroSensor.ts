@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinarySensorListener } from '../../../../org/allbinary/input/AllBinarySensorListener.js';
+//not game specific package import { AllBinarySensorListener } from '../../../../org/allbinary/input/AllBinarySensorListener.js';
+      const AllBinarySensorListener = globalThis.org.allbinary.input.AllBinarySensorListener;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+//not game specific package import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+      const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+
       
 
 

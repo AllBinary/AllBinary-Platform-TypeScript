@@ -24,11 +24,17 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { swing } from '../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

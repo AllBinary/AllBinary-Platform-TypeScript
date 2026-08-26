@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { TagHelperFactoryInterface } from '../../../admin/taghelpers/TagHelperFactoryInterface.js';
+//not game specific package import { TagHelperFactoryInterface } from '../../../admin/taghelpers/TagHelperFactoryInterface.js';
+      const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+
       
-import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { OutputTypeData } from '../../../org/allbinary/logic/io/OutputTypeData.js';
+//not game specific package import { OutputTypeData } from '../../../org/allbinary/logic/io/OutputTypeData.js';
+      const OutputTypeData = globalThis.org.allbinary.logic.io.OutputTypeData;
+
       
-import { TransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+//not game specific package import { TransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+      const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
       
-import { TransformInfoRequestHelperFactory } from '../../../taghelpers/transform/info/TransformInfoRequestHelperFactory.js';
+//not game specific package import { TransformInfoRequestHelperFactory } from '../../../taghelpers/transform/info/TransformInfoRequestHelperFactory.js';
+      const TransformInfoRequestHelperFactory = globalThis.taghelpers.transform.info.TransformInfoRequestHelperFactory;
+
       
-import { ModifyTag } from '../../../tags/ModifyTag.js';
+//not game specific package import { ModifyTag } from '../../../tags/ModifyTag.js';
+      const ModifyTag = globalThis.tags.ModifyTag;
+
       
 
 

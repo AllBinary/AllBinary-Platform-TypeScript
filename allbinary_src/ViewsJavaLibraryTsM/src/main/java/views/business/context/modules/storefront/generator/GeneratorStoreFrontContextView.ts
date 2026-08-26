@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { TransformsGeneratorUtil } from '../../../../../../org/allbinary/logic/visual/transform/generator/TransformsGeneratorUtil.js';
+//not game specific package import { TransformsGeneratorUtil } from '../../../../../../org/allbinary/logic/visual/transform/generator/TransformsGeneratorUtil.js';
+      const TransformsGeneratorUtil = globalThis.org.allbinary.logic.visual.transform.generator.TransformsGeneratorUtil;
+
       
-import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformInfosData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+//not game specific package import { TransformInfosData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+      const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
+
       
-import { HttpStoreComponentView } from '../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+//not game specific package import { HttpStoreComponentView } from '../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+
       
 
 

@@ -18,9 +18,13 @@
 
 
 
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { PathFindingNodeCostInfoData } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoData.js';
+//not game specific package import { PathFindingNodeCostInfoData } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoData.js';
+      const PathFindingNodeCostInfoData = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoData;
+
       
 
 

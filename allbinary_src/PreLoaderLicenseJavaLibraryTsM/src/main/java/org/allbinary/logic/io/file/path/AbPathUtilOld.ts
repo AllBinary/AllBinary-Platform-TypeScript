@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { FilePathData } from '../../../../../../org/allbinary/logic/io/file/FilePathData.js';
+//not game specific package import { FilePathData } from '../../../../../../org/allbinary/logic/io/file/FilePathData.js';
+      const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+
       
-import { AbFilePath } from '../../../../../../org/allbinary/logic/io/path/AbFilePath.js';
+//not game specific package import { AbFilePath } from '../../../../../../org/allbinary/logic/io/path/AbFilePath.js';
+      const AbFilePath = globalThis.org.allbinary.logic.io.path.AbFilePath;
+
       
-import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
 
 

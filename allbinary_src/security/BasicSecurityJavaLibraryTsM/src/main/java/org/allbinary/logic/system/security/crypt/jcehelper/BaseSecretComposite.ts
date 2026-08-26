@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

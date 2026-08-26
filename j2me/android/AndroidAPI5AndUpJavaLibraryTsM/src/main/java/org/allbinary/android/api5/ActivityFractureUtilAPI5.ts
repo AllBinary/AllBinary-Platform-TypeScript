@@ -18,17 +18,29 @@
 
 
 
-import { Activity } from '../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { TouchScreenTypeFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenTypeFactory.js';
+//not game specific package import { TouchScreenTypeFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenTypeFactory.js';
+      const TouchScreenTypeFactory = globalThis.org.allbinary.input.motion.button.TouchScreenTypeFactory;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { ActivityFractureUtilAPI1 } from '../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
+//not game specific package import { ActivityFractureUtilAPI1 } from '../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
+      const ActivityFractureUtilAPI1 = globalThis.org.allbinary.android.api1.ActivityFractureUtilAPI1;
+
       
-import { TouchScreenFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenFactory.js';
+//not game specific package import { TouchScreenFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenFactory.js';
+      const TouchScreenFactory = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
+
       
 
 

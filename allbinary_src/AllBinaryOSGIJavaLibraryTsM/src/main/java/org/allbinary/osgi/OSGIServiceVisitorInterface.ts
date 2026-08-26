@@ -18,7 +18,9 @@
 
 
 
-import { VisitorInterface } from '../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
+//not game specific package import { VisitorInterface } from '../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
+      const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
+
       
 
 

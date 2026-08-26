@@ -22,29 +22,53 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { NameSpaceRequestParamData } from '../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParamData.js';
+//not game specific package import { NameSpaceRequestParamData } from '../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParamData.js';
+      const NameSpaceRequestParamData = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParamData;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CssElementData } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementData.js';
+//not game specific package import { CssElementData } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementData.js';
+      const CssElementData = globalThis.org.allbinary.logic.visual.dhtml.style.css.CssElementData;
+
       
-import { CssElementsValidationFactory } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementsValidationFactory.js';
+//not game specific package import { CssElementsValidationFactory } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementsValidationFactory.js';
+      const CssElementsValidationFactory = globalThis.org.allbinary.logic.visual.dhtml.style.css.CssElementsValidationFactory;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

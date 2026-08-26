@@ -18,7 +18,9 @@
 
 
 
-import { Set } from '../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
 
 

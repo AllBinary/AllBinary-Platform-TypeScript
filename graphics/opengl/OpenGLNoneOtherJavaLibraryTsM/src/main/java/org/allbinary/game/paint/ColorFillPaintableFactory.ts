@@ -20,11 +20,17 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { GenericOperatingSystem } from '../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+//not game specific package import { GenericOperatingSystem } from '../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
       
-import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+//not game specific package import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+
       
 
 

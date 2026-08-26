@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { BasicUserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleFactory.js';
+//not game specific package import { BasicUserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleFactory.js';
+      const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

@@ -18,19 +18,33 @@
 
 
 
-import { JTreeInterfaceFactory } from '../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
+//not game specific package import { JTreeInterfaceFactory } from '../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
+      const JTreeInterfaceFactory = globalThis.org.allbinary.input.automation.actions.script.JTreeInterfaceFactory;
+
       
-import { AlwaysActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/AlwaysActionScriptCondition.js';
+//not game specific package import { AlwaysActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/AlwaysActionScriptCondition.js';
+      const AlwaysActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptCondition;
+
       
-import { ColorAtActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ColorAtActionScriptCondition.js';
+//not game specific package import { ColorAtActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ColorAtActionScriptCondition.js';
+      const ColorAtActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptCondition;
+
       
-import { ProfileActionScriptConditionInterface } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
+//not game specific package import { ProfileActionScriptConditionInterface } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
+      const ProfileActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
+
       
-import { TimeIntervalActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/TimeIntervalActionScriptCondition.js';
+//not game specific package import { TimeIntervalActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/TimeIntervalActionScriptCondition.js';
+      const TimeIntervalActionScriptCondition = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptCondition;
+
       
-import { GenericProfileActionScriptJPanel } from '../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScriptJPanel.js';
+//not game specific package import { GenericProfileActionScriptJPanel } from '../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScriptJPanel.js';
+      const GenericProfileActionScriptJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GenericProfileActionScriptJPanel;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

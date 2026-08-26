@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+//not game specific package import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+
       
-import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
+//not game specific package import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
+      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

@@ -24,25 +24,45 @@
         
             import { System } from '../../../../../../java/lang/System.js';
         
-import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
+//not game specific package import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
+      const BufferedReader = globalThis.java.io.BufferedReader;
+
       
-import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
+//not game specific package import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
+      const InputStreamReader = globalThis.java.io.InputStreamReader;
+
       
-import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+//not game specific package import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+      const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
+
       
-import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+//not game specific package import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+
       
-import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
+//not game specific package import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
+      const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
+
       
-import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+//not game specific package import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+      const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+
       
-import { File } from '../../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileReader } from '../../../../../../java/io/FileReader.js';
+//not game specific package import { FileReader } from '../../../../../../java/io/FileReader.js';
+      const FileReader = globalThis.java.io.FileReader;
+
       
-import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
+//not game specific package import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
+      const LineNumberReader = globalThis.java.io.LineNumberReader;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

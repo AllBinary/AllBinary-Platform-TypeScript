@@ -18,23 +18,31 @@
 
 
 
-            import { Object } from '../../java/lang/Object.js';
-
-
-        
             import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+//not game specific package import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+      const Portion = globalThis.org.allbinary.business.installer.Portion;
+
       
-import { WorkFlowEntityFactory } from '../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
+//not game specific package import { WorkFlowEntityFactory } from '../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
+      const WorkFlowEntityFactory = globalThis.org.allbinary.data.tables.workflow.WorkFlowEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+//not game specific package import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+      const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+
       
 
 

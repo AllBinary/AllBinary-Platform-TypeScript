@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CacheInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheInterface.js';
+//not game specific package import { CacheInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheInterface.js';
+      const CacheInterface = globalThis.org.allbinary.logic.util.cache.CacheInterface;
+
       
-import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
+//not game specific package import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
+      const CacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.CacheInterfaceFactory;
+
       
-import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+//not game specific package import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+      const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
+
       
-import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+//not game specific package import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+      const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

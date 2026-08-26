@@ -20,9 +20,13 @@
 
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
-import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+//not game specific package import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+
       
-import { TableMappingInterface } from '../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
 
 

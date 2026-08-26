@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+//not game specific package import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+
       
-import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
-import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
       
-import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
+//not game specific package import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
+      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+
       
 
 

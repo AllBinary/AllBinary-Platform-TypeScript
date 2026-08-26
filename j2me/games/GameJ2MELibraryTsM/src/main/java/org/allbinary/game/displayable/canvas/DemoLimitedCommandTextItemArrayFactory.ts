@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
+//not game specific package import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
+      const CommandTextItemArrayFactory = globalThis.org.allbinary.graphics.form.item.CommandTextItemArrayFactory;
+
       
-import { LimitCommandsVisitor } from '../../../../../org/allbinary/graphics/form/item/LimitCommandsVisitor.js';
+//not game specific package import { LimitCommandsVisitor } from '../../../../../org/allbinary/graphics/form/item/LimitCommandsVisitor.js';
+      const LimitCommandsVisitor = globalThis.org.allbinary.graphics.form.item.LimitCommandsVisitor;
+
       
 
 

@@ -18,9 +18,13 @@
 
 
 
-import { Map } from '../../../../java/util/Map.js';
+//not game specific package import { Map } from '../../../../java/util/Map.js';
+      const Map = globalThis.java.util.Map;
+
       
-import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
 
 

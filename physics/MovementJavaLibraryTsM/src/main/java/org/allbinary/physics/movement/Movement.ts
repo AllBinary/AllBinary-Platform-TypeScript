@@ -22,9 +22,25 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not game specific package import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+      const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+
+      
+//not game specific package import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+      const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

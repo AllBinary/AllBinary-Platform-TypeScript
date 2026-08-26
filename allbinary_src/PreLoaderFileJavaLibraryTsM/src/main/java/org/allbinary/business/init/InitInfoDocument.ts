@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Document } from '../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

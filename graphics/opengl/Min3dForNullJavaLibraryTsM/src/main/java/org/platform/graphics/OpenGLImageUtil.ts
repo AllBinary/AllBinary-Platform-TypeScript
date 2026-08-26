@@ -4,7 +4,9 @@
 
 
 
-import { OpenGLImageUtilBase } from '../../../org/allbinary/image/opengles/OpenGLImageUtilBase.js';
+//not game specific package import { OpenGLImageUtilBase } from '../../../org/allbinary/image/opengles/OpenGLImageUtilBase.js';
+      const OpenGLImageUtilBase = globalThis.org.allbinary.image.opengles.OpenGLImageUtilBase;
+
       
 
 

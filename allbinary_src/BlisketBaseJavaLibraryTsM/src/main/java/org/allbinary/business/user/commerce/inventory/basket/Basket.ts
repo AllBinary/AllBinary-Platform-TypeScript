@@ -24,21 +24,37 @@
         
             import { Float } from '../../../../../../../java/lang/Float.js';
         
-import { Serializable } from '../../../../../../../java/io/Serializable.js';
+//not game specific package import { Serializable } from '../../../../../../../java/io/Serializable.js';
+      const Serializable = globalThis.java.io.Serializable;
+
       
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Set } from '../../../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { ItemInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+//not game specific package import { ItemInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+      const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+
       
-import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+//not game specific package import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+
       
-import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+//not game specific package import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+
       
-import { InventoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
+//not game specific package import { InventoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
+      const InventoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntity;
+
       
-import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+//not game specific package import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+      const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
+
       
 
 

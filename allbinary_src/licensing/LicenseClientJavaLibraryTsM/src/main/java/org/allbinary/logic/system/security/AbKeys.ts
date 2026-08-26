@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { AbeLicenseInterfaceFactory } from '../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterfaceFactory.js';
+//not game specific package import { AbeLicenseInterfaceFactory } from '../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterfaceFactory.js';
+      const AbeLicenseInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterfaceFactory;
+
       
-import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

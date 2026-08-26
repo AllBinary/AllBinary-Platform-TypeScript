@@ -18,7 +18,9 @@
 
 
 
-import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+//not game specific package import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+
       
 
 

@@ -22,9 +22,13 @@
         
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-import { Method } from '../../../../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../../../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
+//not game specific package import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
+      const Proxy = globalThis.java.lang.reflect.Proxy;
+
       
 
 

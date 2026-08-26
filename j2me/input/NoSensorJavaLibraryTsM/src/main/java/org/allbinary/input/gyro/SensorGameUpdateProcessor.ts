@@ -22,9 +22,21 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
+//not game specific package import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+      const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+
+      
+//not game specific package import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
+      const NoAllBinarySensor = globalThis.org.allbinary.input.NoAllBinarySensor;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { LicenseInitInfo } from '../../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+//not game specific package import { LicenseInitInfo } from '../../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+      const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
+
       
-import { LicenseInitInfoUtil } from '../../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+//not game specific package import { LicenseInitInfoUtil } from '../../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { XmlRpcAbeClient } from '../../../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
+//not game specific package import { XmlRpcAbeClient } from '../../../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
+      const XmlRpcAbeClient = globalThis.org.allbinary.logic.communication.xmlrpc.XmlRpcAbeClient;
+
       
-import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { AbeLicenseInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterface.js';
+//not game specific package import { AbeLicenseInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterface.js';
+      const AbeLicenseInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

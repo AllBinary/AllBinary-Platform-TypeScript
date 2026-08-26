@@ -18,11 +18,17 @@
 
 
 
-import { Activity } from '../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { View } from '../../../../android/view/View.js';
+//not game specific package import { View } from '../../../../android/view/View.js';
+      const View = globalThis.android.view.View;
+
       
-import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
+//not game specific package import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
+      const ActivityFractureUtilAPI5 = globalThis.org.allbinary.android.api5.ActivityFractureUtilAPI5;
+
       
 
 

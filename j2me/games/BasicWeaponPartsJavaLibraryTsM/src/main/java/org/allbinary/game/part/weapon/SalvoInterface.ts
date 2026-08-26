@@ -20,11 +20,25 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+//not game specific package import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+
       
-import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+      const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+
+      
+//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

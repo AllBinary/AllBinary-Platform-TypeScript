@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+//not game specific package import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+
       
-import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanvas.js';
+//not game specific package import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanvas.js';
+      const RunnableCanvas = globalThis.org.allbinary.canvas.RunnableCanvas;
+
       
-import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
+//not game specific package import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
+      const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
+
       
-import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+//not game specific package import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

@@ -26,49 +26,93 @@
         
             import { Thread } from '../../../../../../java/lang/Thread.js';
         
-import { File } from '../../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileFilter } from '../../../../../../java/io/FileFilter.js';
+//not game specific package import { FileFilter } from '../../../../../../java/io/FileFilter.js';
+      const FileFilter = globalThis.java.io.FileFilter;
+
       
-import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
+//not game specific package import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
+      const FileInputStream = globalThis.java.io.FileInputStream;
+
       
-import { URL } from '../../../../../../java/net/URL.js';
+//not game specific package import { URL } from '../../../../../../java/net/URL.js';
+      const URL = globalThis.java.net.URL;
+
       
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Set } from '../../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { JarInputStream } from '../../../../../../java/util/jar/JarInputStream.js';
+//not game specific package import { JarInputStream } from '../../../../../../java/util/jar/JarInputStream.js';
+      const JarInputStream = globalThis.java.util.jar.JarInputStream;
+
       
-import { Manifest } from '../../../../../../java/util/jar/Manifest.js';
+//not game specific package import { Manifest } from '../../../../../../java/util/jar/Manifest.js';
+      const Manifest = globalThis.java.util.jar.Manifest;
+
       
-import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
+//not game specific package import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
+      const Bundle = globalThis.org.osgi.framework.Bundle;
+
       
-import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
-import { Constants } from '../../../../../../org/osgi/framework/Constants.js';
+//not game specific package import { Constants } from '../../../../../../org/osgi/framework/Constants.js';
+      const Constants = globalThis.org.osgi.framework.Constants;
+
       
-import { InputAutomationBundleActivator } from '../../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
+//not game specific package import { InputAutomationBundleActivator } from '../../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
+      const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+//not game specific package import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+      const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+
       
-import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+//not game specific package import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+      const SubDirectory = globalThis.org.allbinary.logic.io.file.directory.SubDirectory;
+
       
-import { BasicFileFilterUtil } from '../../../../../../org/allbinary/logic/io/file/filter/BasicFileFilterUtil.js';
+//not game specific package import { BasicFileFilterUtil } from '../../../../../../org/allbinary/logic/io/file/filter/BasicFileFilterUtil.js';
+      const BasicFileFilterUtil = globalThis.org.allbinary.logic.io.file.filter.BasicFileFilterUtil;
+
       
-import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
-import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

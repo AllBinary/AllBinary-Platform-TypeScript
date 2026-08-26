@@ -26,13 +26,21 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
+//not game specific package import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
+      const LayerDistanceUtil = globalThis.org.allbinary.math.LayerDistanceUtil;
+
       
-import { PriorityRunnable } from '../../../../org/allbinary/thread/PriorityRunnable.js';
+//not game specific package import { PriorityRunnable } from '../../../../org/allbinary/thread/PriorityRunnable.js';
+      const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
+
       
-import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
 
 

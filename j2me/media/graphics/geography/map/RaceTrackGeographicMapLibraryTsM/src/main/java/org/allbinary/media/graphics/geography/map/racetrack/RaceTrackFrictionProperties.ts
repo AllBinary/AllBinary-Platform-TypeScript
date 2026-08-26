@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { FrictionData } from '../../../../../../../org/allbinary/game/physics/friction/FrictionData.js';
+//not game specific package import { FrictionData } from '../../../../../../../org/allbinary/game/physics/friction/FrictionData.js';
+      const FrictionData = globalThis.org.allbinary.game.physics.friction.FrictionData;
+
       
 
 

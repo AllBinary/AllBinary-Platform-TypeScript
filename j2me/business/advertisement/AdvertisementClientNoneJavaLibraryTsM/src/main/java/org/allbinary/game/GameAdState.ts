@@ -20,15 +20,37 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { GameAdStateBase } from '../../../org/allbinary/business/advertisement/GameAdStateBase.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { AdConfiguration } from '../../../org/allbinary/business/advertisement/AdConfiguration.js';
+//not game specific package import { GameAdStateBase } from '../../../org/allbinary/business/advertisement/GameAdStateBase.js';
+      const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
+
       
-import { VirtualKeyboardEvent } from '../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+//not game specific package import { AdConfiguration } from '../../../org/allbinary/business/advertisement/AdConfiguration.js';
+      const AdConfiguration = globalThis.org.allbinary.business.advertisement.AdConfiguration;
+
       
-import { VirtualKeyboardEventHandler } from '../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+//not game specific package import { VirtualKeyboardEvent } from '../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+      const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
+
       
-import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+//not game specific package import { VirtualKeyboardEventHandler } from '../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+      const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
+
+      
+//not game specific package import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+      const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

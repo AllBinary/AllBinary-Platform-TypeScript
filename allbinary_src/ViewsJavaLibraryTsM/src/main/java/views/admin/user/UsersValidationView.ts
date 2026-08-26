@@ -20,25 +20,45 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { UserRole } from '../../../org/allbinary/business/user/role/UserRole.js';
+//not game specific package import { UserRole } from '../../../org/allbinary/business/user/role/UserRole.js';
+      const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+
       
-import { UserRoleB } from '../../../org/allbinary/business/user/role/UserRoleB.js';
+//not game specific package import { UserRoleB } from '../../../org/allbinary/business/user/role/UserRoleB.js';
+      const UserRoleB = globalThis.org.allbinary.business.user.role.UserRoleB;
+
       
-import { UserRoleData } from '../../../org/allbinary/business/user/role/UserRoleData.js';
+//not game specific package import { UserRoleData } from '../../../org/allbinary/business/user/role/UserRoleData.js';
+      const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
+
       
-import { UserEntityFactory } from '../../../org/allbinary/data/tables/user/UserEntityFactory.js';
+//not game specific package import { UserEntityFactory } from '../../../org/allbinary/data/tables/user/UserEntityFactory.js';
+      const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+//not game specific package import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+
       
-import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+//not game specific package import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
+      const TransformInfoHttpInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
+
       
-import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { Document } from '../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

@@ -24,13 +24,21 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
+//not game specific package import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
+      const KeyEvent = globalThis.java.awt.event.KeyEvent;
+
       
-import { Hashtable } from '../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

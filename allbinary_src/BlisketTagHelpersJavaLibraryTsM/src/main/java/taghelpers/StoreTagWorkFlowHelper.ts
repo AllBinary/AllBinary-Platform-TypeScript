@@ -22,21 +22,37 @@
         
             import { Integer } from '../java/lang/Integer.js';
         
-import { HashMap } from '../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { TagHelper } from '../admin/taghelpers/TagHelper.js';
+//not game specific package import { TagHelper } from '../admin/taghelpers/TagHelper.js';
+      const TagHelper = globalThis.admin.taghelpers.TagHelper;
+
       
-import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StoreTagWorkFlowFactory } from '../org/allbinary/logic/control/workflow/StoreTagWorkFlowFactory.js';
+//not game specific package import { StoreTagWorkFlowFactory } from '../org/allbinary/logic/control/workflow/StoreTagWorkFlowFactory.js';
+      const StoreTagWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.StoreTagWorkFlowFactory;
+
       
-import { StoreWorkFlowInterface } from '../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
+//not game specific package import { StoreWorkFlowInterface } from '../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
+      const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
+
       
-import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+//not game specific package import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+
       
 
 

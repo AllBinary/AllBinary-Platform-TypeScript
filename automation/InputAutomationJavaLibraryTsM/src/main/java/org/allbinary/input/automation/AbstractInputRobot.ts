@@ -26,11 +26,17 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { awt } from '../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { HelpSet } from '../../../../javax/help/HelpSet.js';
+//not game specific package import { HelpSet } from '../../../../javax/help/HelpSet.js';
+      const HelpSet = globalThis.javax.help.HelpSet;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

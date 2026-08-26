@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
+//not game specific package import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
+      const GamePersistanceStrings = globalThis.org.allbinary.game.configuration.persistance.GamePersistanceStrings;
+
       
-import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
+//not game specific package import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
+      const PersistentInputMapping = globalThis.org.allbinary.game.input.mapping.PersistentInputMapping;
+
       
-import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
+//not game specific package import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
+      const BasicTouchInputFactory = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+
       
-import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+//not game specific package import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
+
       
-import { TrackballMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js';
+//not game specific package import { TrackballMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js';
+      const TrackballMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TrackballMotionGestureFactory;
+
       
-import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
 
 

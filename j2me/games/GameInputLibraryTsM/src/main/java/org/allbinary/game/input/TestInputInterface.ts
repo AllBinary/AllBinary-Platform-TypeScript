@@ -18,7 +18,9 @@
 
 
 
-import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
 
 

@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { ARunnable } from '../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { ARunnable } from '../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
       
-import { ImageToolJFrame } from '../../../org/allbinary/image/gui/ImageToolJFrame.js';
+//not game specific package import { ImageToolJFrame } from '../../../org/allbinary/image/gui/ImageToolJFrame.js';
+      const ImageToolJFrame = globalThis.org.allbinary.image.gui.ImageToolJFrame;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

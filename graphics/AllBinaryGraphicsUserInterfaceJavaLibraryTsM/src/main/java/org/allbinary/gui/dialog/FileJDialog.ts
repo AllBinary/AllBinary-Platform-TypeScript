@@ -18,11 +18,17 @@
 
 
 
-import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
       
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

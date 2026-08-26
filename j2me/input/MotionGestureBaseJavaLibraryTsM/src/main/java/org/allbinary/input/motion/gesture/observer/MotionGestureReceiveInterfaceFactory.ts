@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { MotionGestureConfiguration } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
+//not game specific package import { MotionGestureConfiguration } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
+      const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
+
       
-import { MotionGestureConfigurationFactory } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
+//not game specific package import { MotionGestureConfigurationFactory } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
+      const MotionGestureConfigurationFactory = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfigurationFactory;
+
       
 
 

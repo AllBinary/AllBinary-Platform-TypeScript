@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from '../../../../../../../../../java/io/ByteArrayInputStream.js';
+//not game specific package import { ByteArrayInputStream } from '../../../../../../../../../java/io/ByteArrayInputStream.js';
+      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+
       
-import { AbFile } from '../../../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FileUtil } from '../../../../../../../../../org/allbinary/logic/io/file/FileUtil.js';
+//not game specific package import { FileUtil } from '../../../../../../../../../org/allbinary/logic/io/file/FileUtil.js';
+      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+
       
-import { Directory } from '../../../../../../../../../org/allbinary/logic/io/file/directory/Directory.js';
+//not game specific package import { Directory } from '../../../../../../../../../org/allbinary/logic/io/file/directory/Directory.js';
+      const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+
       
-import { AbPath } from '../../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { FileItem } from '../../../../../../../../../org/apache/commons/fileupload/FileItem.js';
+//not game specific package import { FileItem } from '../../../../../../../../../org/apache/commons/fileupload/FileItem.js';
+      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+
       
 
 

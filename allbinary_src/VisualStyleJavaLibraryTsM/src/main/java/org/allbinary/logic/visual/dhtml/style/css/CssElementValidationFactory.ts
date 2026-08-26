@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { ValidationInterface } from '../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+//not game specific package import { ValidationInterface } from '../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+
       
-import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

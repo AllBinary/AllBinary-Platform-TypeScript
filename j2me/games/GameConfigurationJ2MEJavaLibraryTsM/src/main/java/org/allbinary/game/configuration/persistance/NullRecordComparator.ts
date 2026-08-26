@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { RecordComparator, RecordComparatorI } from '../../../../../javax/microedition/rms/RecordComparator.js';
+//not game specific package import { RecordComparator, RecordComparatorI } from '../../../../../javax/microedition/rms/RecordComparator.js';
+      const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
+
       
 
 

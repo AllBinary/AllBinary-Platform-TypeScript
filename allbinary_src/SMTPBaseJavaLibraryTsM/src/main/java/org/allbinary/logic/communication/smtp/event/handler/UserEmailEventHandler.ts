@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { EmailEvent } from '../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
+//not game specific package import { EmailEvent } from '../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
+      const EmailEvent = globalThis.org.allbinary.logic.communication.smtp.event.EmailEvent;
+
       
-import { UserEmailEventListenerInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+//not game specific package import { UserEmailEventListenerInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+      const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
+
       
-import { UserEmailEventNameData } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+//not game specific package import { UserEmailEventNameData } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+      const UserEmailEventNameData = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventNameData;
+
       
-import { EmailInfo } from '../../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+//not game specific package import { EmailInfo } from '../../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+      const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
+
       
 
 

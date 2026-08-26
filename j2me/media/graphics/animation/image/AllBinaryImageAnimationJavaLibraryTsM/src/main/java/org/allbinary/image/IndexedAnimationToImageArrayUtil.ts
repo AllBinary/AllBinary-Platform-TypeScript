@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { IndexedAnimation } from '../../../org/allbinary/animation/IndexedAnimation.js';
+//not game specific package import { IndexedAnimation } from '../../../org/allbinary/animation/IndexedAnimation.js';
+      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+
       
 
 

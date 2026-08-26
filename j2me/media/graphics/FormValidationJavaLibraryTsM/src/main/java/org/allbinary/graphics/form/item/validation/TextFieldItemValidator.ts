@@ -18,17 +18,41 @@
 
 
 
-import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
+//not game specific package import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { ValidatorBase } from '../../../../../../org/allbinary/logic/control/validate/ValidatorBase.js';
+//not game specific package import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
+      const ABTextFieldItem = globalThis.org.allbinary.graphics.form.item.ABTextFieldItem;
+
       
-import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { ValidatorBase } from '../../../../../../org/allbinary/logic/control/validate/ValidatorBase.js';
+      const ValidatorBase = globalThis.org.allbinary.logic.control.validate.ValidatorBase;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+//not game specific package import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
+//not game specific package import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
+      const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
+
       
-import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not game specific package import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
       
-import { AllBinaryTiledLayerFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/AllBinaryTiledLayerFactoryInterface.js';
+//not game specific package import { AllBinaryTiledLayerFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/AllBinaryTiledLayerFactoryInterface.js';
+      const AllBinaryTiledLayerFactoryInterface = globalThis.org.allbinary.media.graphics.geography.map.racetrack.AllBinaryTiledLayerFactoryInterface;
+
       
-import { RaceTrackData } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
+//not game specific package import { RaceTrackData } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
+      const RaceTrackData = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+
       
-import { RaceTrackInfo } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
+//not game specific package import { RaceTrackInfo } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
+      const RaceTrackInfo = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
+
       
-import { TiledLayerFactory } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/TiledLayerFactory.js';
+//not game specific package import { TiledLayerFactory } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/TiledLayerFactory.js';
+      const TiledLayerFactory = globalThis.org.allbinary.media.graphics.geography.map.racetrack.TiledLayerFactory;
+
       
 
 

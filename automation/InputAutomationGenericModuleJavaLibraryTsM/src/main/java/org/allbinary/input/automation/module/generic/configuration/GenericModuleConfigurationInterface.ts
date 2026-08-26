@@ -18,7 +18,9 @@
 
 
 
-import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+//not game specific package import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+      const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
+
       
 
 

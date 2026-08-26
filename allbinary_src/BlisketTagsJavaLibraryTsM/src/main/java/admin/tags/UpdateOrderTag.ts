@@ -18,7 +18,9 @@
 
 
 
-import { UpdateOrderHelperFactory } from '../../admin/taghelpers/UpdateOrderHelperFactory.js';
+//not game specific package import { UpdateOrderHelperFactory } from '../../admin/taghelpers/UpdateOrderHelperFactory.js';
+      const UpdateOrderHelperFactory = globalThis.admin.taghelpers.UpdateOrderHelperFactory;
+
       
 
 

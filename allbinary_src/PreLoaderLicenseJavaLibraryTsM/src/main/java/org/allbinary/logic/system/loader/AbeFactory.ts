@@ -26,21 +26,37 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+//not game specific package import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+      const Constructor = globalThis.java.lang.reflect.Constructor;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ConstructorUtil } from '../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
+//not game specific package import { ConstructorUtil } from '../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
+      const ConstructorUtil = globalThis.org.allbinary.logic.java.anyType.ConstructorUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
+//not game specific package import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
+      const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

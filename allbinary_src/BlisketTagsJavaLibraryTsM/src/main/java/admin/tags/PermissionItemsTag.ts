@@ -18,9 +18,13 @@
 
 
 
-import { PermissionItemsHelperFactory } from '../../admin/taghelpers/PermissionItemsHelperFactory.js';
+//not game specific package import { PermissionItemsHelperFactory } from '../../admin/taghelpers/PermissionItemsHelperFactory.js';
+      const PermissionItemsHelperFactory = globalThis.admin.taghelpers.PermissionItemsHelperFactory;
+
       
-import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/PermissionItemsRequestHelperFactory.js';
+//not game specific package import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/PermissionItemsRequestHelperFactory.js';
+      const PermissionItemsRequestHelperFactory = globalThis.admin.taghelpers.PermissionItemsRequestHelperFactory;
+
       
 
 

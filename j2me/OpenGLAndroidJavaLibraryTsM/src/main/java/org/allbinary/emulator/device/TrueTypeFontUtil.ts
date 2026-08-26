@@ -20,43 +20,81 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+//not game specific package import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+      const FileOutputStream = globalThis.java.io.FileOutputStream;
+
       
-import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+//not game specific package import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+      const Bitmap = globalThis.android.graphics.Bitmap;
+
       
-import { Canvas } from '../../../../android/graphics/Canvas.js';
+//not game specific package import { Canvas } from '../../../../android/graphics/Canvas.js';
+      const Canvas = globalThis.android.graphics.Canvas;
+
       
-import { Paint } from '../../../../android/graphics/Paint.js';
+//not game specific package import { Paint } from '../../../../android/graphics/Paint.js';
+      const Paint = globalThis.android.graphics.Paint;
+
       
-import { Rect } from '../../../../android/graphics/Rect.js';
+//not game specific package import { Rect } from '../../../../android/graphics/Rect.js';
+      const Rect = globalThis.android.graphics.Rect;
+
       
-import { Typeface } from '../../../../android/graphics/Typeface.js';
+//not game specific package import { Typeface } from '../../../../android/graphics/Typeface.js';
+      const Typeface = globalThis.android.graphics.Typeface;
+
       
-import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+//not game specific package import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+
       
-import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
+//not game specific package import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
+      const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+
       
-import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+//not game specific package import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+//not game specific package import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+
       
-import { AndroidImmutableImage } from '../../../../org/microemu/android/device/AndroidImmutableImage.js';
+//not game specific package import { AndroidImmutableImage } from '../../../../org/microemu/android/device/AndroidImmutableImage.js';
+      const AndroidImmutableImage = globalThis.org.microemu.android.device.AndroidImmutableImage;
+
       
 
 

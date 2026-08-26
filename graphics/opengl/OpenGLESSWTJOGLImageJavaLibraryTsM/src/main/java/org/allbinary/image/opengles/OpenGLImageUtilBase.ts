@@ -22,13 +22,21 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { InputStream } from '../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { OpenGLBitmap } from '../../../../org/allbinary/graphics/OpenGLBitmap.js';
+//not game specific package import { OpenGLBitmap } from '../../../../org/allbinary/graphics/OpenGLBitmap.js';
+      const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
 
 

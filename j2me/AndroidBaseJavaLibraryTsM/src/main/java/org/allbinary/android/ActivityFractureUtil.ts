@@ -24,7 +24,9 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Activity } from '../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
 
 

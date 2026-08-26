@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { InputStream } from '../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
 
 

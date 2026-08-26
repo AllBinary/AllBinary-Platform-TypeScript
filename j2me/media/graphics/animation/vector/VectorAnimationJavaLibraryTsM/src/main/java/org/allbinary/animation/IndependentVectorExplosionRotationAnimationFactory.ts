@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
+//not game specific package import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
+      const VectorInfo = globalThis.org.allbinary.vector.VectorInfo;
+
       
 
 

@@ -22,25 +22,45 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { Notification } from '../../../android/app/Notification.js';
+//not game specific package import { Notification } from '../../../android/app/Notification.js';
+      const Notification = globalThis.android.app.Notification;
+
       
-import { NotificationManager } from '../../../android/app/NotificationManager.js';
+//not game specific package import { NotificationManager } from '../../../android/app/NotificationManager.js';
+      const NotificationManager = globalThis.android.app.NotificationManager;
+
       
-import { PendingIntent } from '../../../android/app/PendingIntent.js';
+//not game specific package import { PendingIntent } from '../../../android/app/PendingIntent.js';
+      const PendingIntent = globalThis.android.app.PendingIntent;
+
       
-import { Context } from '../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { Intent } from '../../../android/content/Intent.js';
+//not game specific package import { Intent } from '../../../android/content/Intent.js';
+      const Intent = globalThis.android.content.Intent;
+
       
-import { AndroidInfoFactory } from '../../../org/allbinary/android/AndroidInfoFactory.js';
+//not game specific package import { AndroidInfoFactory } from '../../../org/allbinary/android/AndroidInfoFactory.js';
+      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

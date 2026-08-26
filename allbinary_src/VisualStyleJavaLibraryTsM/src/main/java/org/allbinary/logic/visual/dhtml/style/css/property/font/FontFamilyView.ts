@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { CssPropertyView } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js';
+//not game specific package import { CssPropertyView } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js';
+      const CssPropertyView = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyView;
+
       
-import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

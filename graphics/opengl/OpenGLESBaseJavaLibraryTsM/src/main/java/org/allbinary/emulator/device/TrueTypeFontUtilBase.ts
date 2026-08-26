@@ -20,11 +20,17 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
+//not game specific package import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
+      const AvianUtil = globalThis.org.allbinary.AvianUtil;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

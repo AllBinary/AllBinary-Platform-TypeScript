@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
+//not game specific package import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
+      const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
+
       
-import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
+//not game specific package import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
+      const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
+
       
-import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
+//not game specific package import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
+      const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
+
       
 
 

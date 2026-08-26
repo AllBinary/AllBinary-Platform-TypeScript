@@ -18,15 +18,25 @@
 
 
 
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';
+//not game specific package import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';
+      const AdvertisementCategoryInterface = globalThis.org.allbinary.business.advertisement.search.category.AdvertisementCategoryInterface;
+
       
-import { AdvertisementWebsiteInterface } from '../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js';
+//not game specific package import { AdvertisementWebsiteInterface } from '../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js';
+      const AdvertisementWebsiteInterface = globalThis.org.allbinary.business.advertisement.search.website.AdvertisementWebsiteInterface;
+
       
-import { PriceConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js';
+//not game specific package import { PriceConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js';
+      const PriceConstraintInterface = globalThis.org.allbinary.logic.control.contraints.price.PriceConstraintInterface;
+
       
-import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
+//not game specific package import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
+      const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
+
       
 
 

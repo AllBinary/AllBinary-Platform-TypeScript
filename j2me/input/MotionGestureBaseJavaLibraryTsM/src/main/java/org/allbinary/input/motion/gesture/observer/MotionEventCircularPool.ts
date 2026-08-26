@@ -22,13 +22,21 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
+//not game specific package import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
+      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+
       
-import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+//not game specific package import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+      const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
+
       
-import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+//not game specific package import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
+
       
-import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
+//not game specific package import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
+      const AllBinaryEventCircularPool = globalThis.org.allbinary.logic.util.event.AllBinaryEventCircularPool;
+
       
 
 

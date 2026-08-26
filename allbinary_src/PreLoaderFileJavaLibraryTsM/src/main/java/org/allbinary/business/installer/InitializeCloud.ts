@@ -22,27 +22,49 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
+//not game specific package import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
+      const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+
       
-import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbIOSystem } from '../../../../org/allbinary/logic/io/AbIOSystem.js';
+//not game specific package import { AbIOSystem } from '../../../../org/allbinary/logic/io/AbIOSystem.js';
+      const AbIOSystem = globalThis.org.allbinary.logic.io.AbIOSystem;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FileUtil } from '../../../../org/allbinary/logic/io/file/FileUtil.js';
+//not game specific package import { FileUtil } from '../../../../org/allbinary/logic/io/file/FileUtil.js';
+      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+
       
-import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
+//not game specific package import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
+      const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+
       
-import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

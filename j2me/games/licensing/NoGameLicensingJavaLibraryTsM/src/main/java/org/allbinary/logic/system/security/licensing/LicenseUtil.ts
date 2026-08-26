@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
 
 

@@ -18,11 +18,17 @@
 
 
 
-import { GameLayerBehavior } from '../../../../../org/allbinary/game/layer/behavior/GameLayerBehavior.js';
+//not game specific package import { GameLayerBehavior } from '../../../../../org/allbinary/game/layer/behavior/GameLayerBehavior.js';
+      const GameLayerBehavior = globalThis.org.allbinary.game.layer.behavior.GameLayerBehavior;
+
       
-import { BasicAccelerationProperties } from '../../../../../org/allbinary/game/physics/acceleration/BasicAccelerationProperties.js';
+//not game specific package import { BasicAccelerationProperties } from '../../../../../org/allbinary/game/physics/acceleration/BasicAccelerationProperties.js';
+      const BasicAccelerationProperties = globalThis.org.allbinary.game.physics.acceleration.BasicAccelerationProperties;
+
       
-import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
+//not game specific package import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
+      const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
+
       
 
 

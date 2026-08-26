@@ -20,19 +20,33 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Dimension } from '../../../java/awt/Dimension.js';
+//not game specific package import { Dimension } from '../../../java/awt/Dimension.js';
+      const Dimension = globalThis.java.awt.Dimension;
+
       
-import { DisplayMode } from '../../../java/awt/DisplayMode.js';
+//not game specific package import { DisplayMode } from '../../../java/awt/DisplayMode.js';
+      const DisplayMode = globalThis.java.awt.DisplayMode;
+
       
-import { GraphicsDevice } from '../../../java/awt/GraphicsDevice.js';
+//not game specific package import { GraphicsDevice } from '../../../java/awt/GraphicsDevice.js';
+      const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
+
       
-import { GraphicsEnvironment } from '../../../java/awt/GraphicsEnvironment.js';
+//not game specific package import { GraphicsEnvironment } from '../../../java/awt/GraphicsEnvironment.js';
+      const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
+
       
-import { Toolkit } from '../../../java/awt/Toolkit.js';
+//not game specific package import { Toolkit } from '../../../java/awt/Toolkit.js';
+      const Toolkit = globalThis.java.awt.Toolkit;
+
       
-import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
 
 

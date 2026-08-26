@@ -26,19 +26,33 @@
         
             import { Double } from '../../../../../../java/lang/Double.js';
         
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { WorkAreaJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
+//not game specific package import { WorkAreaJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
+      const WorkAreaJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanel;
+
       
-import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
+//not game specific package import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
+      const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
+
       
-import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
+//not game specific package import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
+      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

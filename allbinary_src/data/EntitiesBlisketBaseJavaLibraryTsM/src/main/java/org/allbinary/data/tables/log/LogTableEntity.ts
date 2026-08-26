@@ -18,15 +18,25 @@
 
 
 
-import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { LogDbInitInfo } from '../../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
+//not game specific package import { LogDbInitInfo } from '../../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
+      const LogDbInitInfo = globalThis.org.allbinary.business.init.db.LogDbInitInfo;
+
       
-import { AbeHttpRequestInfoData } from '../../../../../org/allbinary/logic/communication/http/request/AbeHttpRequestInfoData.js';
+//not game specific package import { AbeHttpRequestInfoData } from '../../../../../org/allbinary/logic/communication/http/request/AbeHttpRequestInfoData.js';
+      const AbeHttpRequestInfoData = globalThis.org.allbinary.logic.communication.http.request.AbeHttpRequestInfoData;
+
       
-import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+//not game specific package import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+      const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
-import { NullServiceReferenceFactory } from '../../../org/osgi/framework/NullServiceReferenceFactory.js';
+//not game specific package import { NullServiceReferenceFactory } from '../../../org/osgi/framework/NullServiceReferenceFactory.js';
+      const NullServiceReferenceFactory = globalThis.org.osgi.framework.NullServiceReferenceFactory;
+
       
-import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
+//not game specific package import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
+      const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+
       
-import { ServiceRegistration } from '../../../org/osgi/framework/ServiceRegistration.js';
+//not game specific package import { ServiceRegistration } from '../../../org/osgi/framework/ServiceRegistration.js';
+      const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
+
       
 
 

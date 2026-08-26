@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { KeyEvent } from '../../../../java/awt/event/KeyEvent.js';
+//not game specific package import { KeyEvent } from '../../../../java/awt/event/KeyEvent.js';
+      const KeyEvent = globalThis.java.awt.event.KeyEvent;
+
       
-import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
+//not game specific package import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
+      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
       
-import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

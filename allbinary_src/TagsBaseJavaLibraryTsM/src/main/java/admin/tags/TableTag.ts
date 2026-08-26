@@ -24,29 +24,53 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-import { Method } from '../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { TagHelperFactoryInterface } from '../../admin/taghelpers/TagHelperFactoryInterface.js';
+//not game specific package import { TagHelperFactoryInterface } from '../../admin/taghelpers/TagHelperFactoryInterface.js';
+      const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
+//not game specific package import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
+      const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+
       
-import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
+//not game specific package import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
+      const BooleanUtil = globalThis.org.allbinary.logic.java.bool.BooleanUtil;
+
       
-import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { PropertiesTag } from '../../tags/PropertiesTag.js';
+//not game specific package import { PropertiesTag } from '../../tags/PropertiesTag.js';
+      const PropertiesTag = globalThis.tags.PropertiesTag;
+
       
 
 

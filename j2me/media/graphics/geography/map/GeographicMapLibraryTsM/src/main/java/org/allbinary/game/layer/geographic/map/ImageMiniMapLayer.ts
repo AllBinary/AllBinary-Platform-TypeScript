@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
-import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { PaintableToImageUtil } from '../../../../../../org/allbinary/image/PaintableToImageUtil.js';
+//not game specific package import { PaintableToImageUtil } from '../../../../../../org/allbinary/image/PaintableToImageUtil.js';
+      const PaintableToImageUtil = globalThis.org.allbinary.image.PaintableToImageUtil;
+
       
-import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
       
 
 

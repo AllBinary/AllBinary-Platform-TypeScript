@@ -18,7 +18,9 @@
 
 
 
-import { MinMaxDoubleConstraintInterface } from '../../../../../../org/allbinary/logic/control/contraints/MinMaxDoubleConstraintInterface.js';
+//not game specific package import { MinMaxDoubleConstraintInterface } from '../../../../../../org/allbinary/logic/control/contraints/MinMaxDoubleConstraintInterface.js';
+      const MinMaxDoubleConstraintInterface = globalThis.org.allbinary.logic.control.contraints.MinMaxDoubleConstraintInterface;
+
       
 
 

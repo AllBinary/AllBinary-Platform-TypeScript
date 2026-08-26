@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
+//not game specific package import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
+      const AndroidHardware = globalThis.org.allbinary.logic.system.hardware.android.AndroidHardware;
+
       
-import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+//not game specific package import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
       
-import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+//not game specific package import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+      const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

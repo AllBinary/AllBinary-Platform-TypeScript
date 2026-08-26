@@ -18,9 +18,13 @@
 
 
 
-import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
+//not game specific package import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
+      const OrderInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderInterface;
+
       
-import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+//not game specific package import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+
       
 
 

@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
+//not game specific package import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
+      const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
+
       
 
 

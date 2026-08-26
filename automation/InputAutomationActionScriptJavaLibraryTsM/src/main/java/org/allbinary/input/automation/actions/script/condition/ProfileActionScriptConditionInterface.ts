@@ -22,11 +22,17 @@
         
             import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { ProfileActionScriptItemInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
+//not game specific package import { ProfileActionScriptItemInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
+      const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
+
       
-import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
+//not game specific package import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
+      const ProfileActionScriptNodeInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptNodeInterface;
+
       
-import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
+//not game specific package import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
+      const ProfileActionScriptProcessorInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.ProfileActionScriptProcessorInterface;
+
       
 
 

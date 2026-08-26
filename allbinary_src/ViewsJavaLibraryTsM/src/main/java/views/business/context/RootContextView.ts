@@ -20,25 +20,45 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from '../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
+//not game specific package import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
+      const TransformFactory = globalThis.org.allbinary.logic.visual.transform.TransformFactory;
+
       
-import { TransformInterface } from '../../../org/allbinary/logic/visual/transform/TransformInterface.js';
+//not game specific package import { TransformInterface } from '../../../org/allbinary/logic/visual/transform/TransformInterface.js';
+      const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
+
       
-import { TransformInfo } from '../../../org/allbinary/logic/visual/transform/info/TransformInfo.js';
+//not game specific package import { TransformInfo } from '../../../org/allbinary/logic/visual/transform/info/TransformInfo.js';
+      const TransformInfo = globalThis.org.allbinary.logic.visual.transform.info.TransformInfo;
+
       
-import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformTemplateInterface } from '../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
+//not game specific package import { TransformTemplateInterface } from '../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
+      const TransformTemplateInterface = globalThis.org.allbinary.logic.visual.transform.template.TransformTemplateInterface;
+
       
-import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+//not game specific package import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+
       
-import { NoTemplateTransformInfoObjectConfig } from '../../../views/business/context/modules/storefront/customizer/template/objectConfig/NoTemplateTransformInfoObjectConfig.js';
+//not game specific package import { NoTemplateTransformInfoObjectConfig } from '../../../views/business/context/modules/storefront/customizer/template/objectConfig/NoTemplateTransformInfoObjectConfig.js';
+      const NoTemplateTransformInfoObjectConfig = globalThis.views.business.context.modules.storefront.customizer.template.objectConfig.NoTemplateTransformInfoObjectConfig;
+
       
 
 

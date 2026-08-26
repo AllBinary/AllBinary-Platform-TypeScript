@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
+//not game specific package import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
+      const InputAutomationGenericModuleServiceFactory = globalThis.org.allbinary.input.automation.module.generic.InputAutomationGenericModuleServiceFactory;
+
       
-import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
+//not game specific package import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
+      const InputAutomationModuleBundleActivator = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleBundleActivator;
+
       
 
 

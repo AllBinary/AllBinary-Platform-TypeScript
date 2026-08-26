@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
+//not game specific package import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
+      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+
       
-import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
+//not game specific package import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
+      const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

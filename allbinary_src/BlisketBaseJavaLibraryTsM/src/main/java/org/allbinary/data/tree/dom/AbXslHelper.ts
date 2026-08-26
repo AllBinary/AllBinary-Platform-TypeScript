@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+
       
-import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
+//not game specific package import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
+      const StreamResult = globalThis.javax.xml.transform.stream.StreamResult;
+
       
-import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+
       
-import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
 
 

@@ -20,11 +20,17 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+//not game specific package import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+      const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+
       
-import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
+//not game specific package import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
+      const AllBinaryEventObjectFactoryInterface = globalThis.org.allbinary.logic.util.event.AllBinaryEventObjectFactoryInterface;
+
       
 
 

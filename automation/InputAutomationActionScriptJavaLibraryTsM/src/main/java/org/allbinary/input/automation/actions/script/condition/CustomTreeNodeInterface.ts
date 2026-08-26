@@ -18,9 +18,13 @@
 
 
 
-import { swing } from '../../../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
+//not game specific package import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
+      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+
       
 
 

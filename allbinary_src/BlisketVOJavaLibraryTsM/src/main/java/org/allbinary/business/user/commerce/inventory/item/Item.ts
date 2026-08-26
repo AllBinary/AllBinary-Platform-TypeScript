@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { ShippingAddressData } from '../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
+//not game specific package import { ShippingAddressData } from '../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
+      const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
+
       
-import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+//not game specific package import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+
       
-import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
+//not game specific package import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
+      const StreetAddressData = globalThis.org.allbinary.business.user.address.StreetAddressData;
+
       
-import { OrderHistoryData } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+//not game specific package import { OrderHistoryData } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+      const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+
       
-import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+//not game specific package import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+
       
-import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+//not game specific package import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+      const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+
       
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

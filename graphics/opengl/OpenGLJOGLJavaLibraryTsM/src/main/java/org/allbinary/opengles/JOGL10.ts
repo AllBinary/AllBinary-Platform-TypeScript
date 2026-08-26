@@ -20,7 +20,9 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { GLU } from '../../../com/jogamp/opengl/glu/GLU.js';
+//not game specific package import { GLU } from '../../../com/jogamp/opengl/glu/GLU.js';
+      const GLU = globalThis.com.jogamp.opengl.glu.GLU;
+
       
 
 

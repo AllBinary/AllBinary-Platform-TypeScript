@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+//not game specific package import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+      const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+
       
-import { UsbInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/UsbInterface.js';
+//not game specific package import { UsbInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/UsbInterface.js';
+      const UsbInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.UsbInterface;
+
       
 
 

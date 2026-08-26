@@ -20,39 +20,73 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+//not game specific package import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+      const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
+
       
-import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { RootTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/RootTransformInfoData.js';
+//not game specific package import { RootTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/RootTransformInfoData.js';
+      const RootTransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.RootTransformInfoData;
+
       
-import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+//not game specific package import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+      const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
       
-import { TransformInfoHttp } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttp.js';
+//not game specific package import { TransformInfoHttp } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttp.js';
+      const TransformInfoHttp = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttp;
+
       
-import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformTemplateFactory } from '../../../../../../../org/allbinary/logic/visual/transform/template/TransformTemplateFactory.js';
+//not game specific package import { TransformTemplateFactory } from '../../../../../../../org/allbinary/logic/visual/transform/template/TransformTemplateFactory.js';
+      const TransformTemplateFactory = globalThis.org.allbinary.logic.visual.transform.template.TransformTemplateFactory;
+
       
-import { TransformTemplateInterface } from '../../../../../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
+//not game specific package import { TransformTemplateInterface } from '../../../../../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
+      const TransformTemplateInterface = globalThis.org.allbinary.logic.visual.transform.template.TransformTemplateInterface;
+
       
-import { TransformTemplateCustomizerUtil } from '../../../../../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
+//not game specific package import { TransformTemplateCustomizerUtil } from '../../../../../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
+      const TransformTemplateCustomizerUtil = globalThis.org.allbinary.logic.visual.transform.template.util.TransformTemplateCustomizerUtil;
+
       
-import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

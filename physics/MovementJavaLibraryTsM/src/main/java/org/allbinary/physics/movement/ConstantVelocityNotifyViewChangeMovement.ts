@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+//not game specific package import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+      const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+
       
-import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
+//not game specific package import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
+      const BasicVelocityProperties = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not game specific package import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+      const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
+
       
-import { AxisMathVectorUtil } from '../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';
+//not game specific package import { AxisMathVectorUtil } from '../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';
+      const AxisMathVectorUtil = globalThis.org.allbinary.logic.math.vector.AxisMathVectorUtil;
+
       
-import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
 
 

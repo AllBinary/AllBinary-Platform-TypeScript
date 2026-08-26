@@ -22,11 +22,33 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
+      
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -46,8 +68,7 @@ import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUt
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScoreCommands } from './HighScoreCommands.js';
-
+        
 export class HighScoreCommandsBaseFactory
             extends Object
          {
@@ -60,24 +81,8 @@ export class HighScoreCommandsBaseFactory
 protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
             super();
-        
-                        if(J2MEUtil.isJ2ME())
-                        
-                                    {
-                                    this.HIGH_SCORE_COMMANDS= 
-                                                [
-                                                    HighScoreCommands.getInstance()!.PERSONAL
-                                                ];
+        this.HIGH_SCORE_COMMANDS= HIGH_SCORE_COMMANDS;
     
-
-                                    }
-                                
-                        else {
-                            this.HIGH_SCORE_COMMANDS= HIGH_SCORE_COMMANDS;
-    
-
-                        }
-                            
 }
 
 

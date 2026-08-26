@@ -24,13 +24,21 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
+//not game specific package import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
+      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
       
-import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+//not game specific package import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+      const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
+
       
-import { AbeFactory } from '../../../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
+//not game specific package import { AbeFactory } from '../../../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
+      const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
+
       
-import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
 
 

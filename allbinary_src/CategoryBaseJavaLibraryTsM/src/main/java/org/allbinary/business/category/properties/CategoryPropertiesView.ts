@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+//not game specific package import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+      const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+
       
-import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Element } from '../../../../../org/w3c/dom/Element.js';
+//not game specific package import { Element } from '../../../../../org/w3c/dom/Element.js';
+      const Element = globalThis.org.w3c.dom.Element;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

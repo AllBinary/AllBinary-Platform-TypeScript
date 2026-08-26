@@ -18,7 +18,9 @@
 
 
 
-import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
+//not game specific package import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
+      const NumberStringHud = globalThis.org.allbinary.game.layer.hud.basic.NumberStringHud;
+
       
 
 

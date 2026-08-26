@@ -22,9 +22,13 @@
         
             import { Class } from '../../../../../java/lang/Class.js';
         
-import { Method } from '../../../../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../../../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

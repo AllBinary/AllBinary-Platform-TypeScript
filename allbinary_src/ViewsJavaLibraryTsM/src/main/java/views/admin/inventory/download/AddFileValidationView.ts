@@ -22,55 +22,105 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+//not game specific package import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+
       
-import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+//not game specific package import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+
       
-import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+//not game specific package import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+
       
-import { BasicItemValidation } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemValidation.js';
+//not game specific package import { BasicItemValidation } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemValidation.js';
+      const BasicItemValidation = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemValidation;
+
       
-import { DownloadItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadItemData.js';
+//not game specific package import { DownloadItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadItemData.js';
+      const DownloadItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadItemData;
+
       
-import { DownloadableItem } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
+//not game specific package import { DownloadableItem } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
+      const DownloadableItem = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItem;
+
       
-import { DownloadableItemValidation } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemValidation.js';
+//not game specific package import { DownloadableItemValidation } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemValidation.js';
+      const DownloadableItemValidation = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadableItemValidation;
+
       
-import { MoneyException } from '../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+//not game specific package import { MoneyException } from '../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+
       
-import { InventoryEntity } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
+//not game specific package import { InventoryEntity } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
+      const InventoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntity;
+
       
-import { InventoryEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+//not game specific package import { InventoryEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+      const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
+
       
-import { GLOBALS2 } from '../../../../org/allbinary/globals/GLOBALS2.js';
+//not game specific package import { GLOBALS2 } from '../../../../org/allbinary/globals/GLOBALS2.js';
+      const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+
       
-import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { HttpFileUploadUtil } from '../../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
+//not game specific package import { HttpFileUploadUtil } from '../../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
+      const HttpFileUploadUtil = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFileUploadUtil;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+//not game specific package import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FileData } from '../../../../org/allbinary/logic/io/file/FileData.js';
+//not game specific package import { FileData } from '../../../../org/allbinary/logic/io/file/FileData.js';
+      const FileData = globalThis.org.allbinary.logic.io.file.FileData;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { FileItem } from '../../../../org/apache/commons/fileupload/FileItem.js';
+//not game specific package import { FileItem } from '../../../../org/apache/commons/fileupload/FileItem.js';
+      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+
       
-import { Document } from '../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

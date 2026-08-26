@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
+//not game specific package import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
+      const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
+
       
-import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
 
 

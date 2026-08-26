@@ -20,23 +20,41 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+//not game specific package import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
       
-import { LayerCoveringCellPositionsUtil } from '../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js';
+//not game specific package import { LayerCoveringCellPositionsUtil } from '../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js';
+      const LayerCoveringCellPositionsUtil = globalThis.org.allbinary.game.layer.geographic.map.LayerCoveringCellPositionsUtil;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { CellPositionsUtil } from '../../../../org/allbinary/media/graphics/geography/map/CellPositionsUtil.js';
+//not game specific package import { CellPositionsUtil } from '../../../../org/allbinary/media/graphics/geography/map/CellPositionsUtil.js';
+      const CellPositionsUtil = globalThis.org.allbinary.media.graphics.geography.map.CellPositionsUtil;
+
       
-import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+//not game specific package import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
       
-import { BasicArrayListS } from '../../../../org/allbinary/util/BasicArrayListS.js';
+//not game specific package import { BasicArrayListS } from '../../../../org/allbinary/util/BasicArrayListS.js';
+      const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
+
       
-import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not game specific package import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
+      const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
       
 
 

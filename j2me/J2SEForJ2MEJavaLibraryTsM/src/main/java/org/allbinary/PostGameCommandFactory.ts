@@ -20,9 +20,13 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-import { Canvas } from '../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
+//not game specific package import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
+      const MultiPlayerGameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MultiPlayerGameFeatureFactory;
+
       
 
 

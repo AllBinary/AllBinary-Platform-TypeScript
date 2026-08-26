@@ -22,21 +22,37 @@
         
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
-import { Activity } from '../../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
+//not game specific package import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
+      const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
+
       
-import { VirtualKeyboardEvent } from '../../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+//not game specific package import { VirtualKeyboardEvent } from '../../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+      const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
+
       
-import { VirtualKeyboardEventHandler } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+//not game specific package import { VirtualKeyboardEventHandler } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+      const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
+
       
-import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+//not game specific package import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+      const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
 
 

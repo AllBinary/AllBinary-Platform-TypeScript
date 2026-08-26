@@ -20,23 +20,41 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { DomNodeHelper } from '../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+//not game specific package import { DomNodeHelper } from '../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+
       
-import { DomSearchHelper } from '../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { StringUtils } from '../../../../org/apache/commons/lang3/StringUtils.js';
+//not game specific package import { StringUtils } from '../../../../org/apache/commons/lang3/StringUtils.js';
+      const StringUtils = globalThis.org.apache.commons.lang3.StringUtils;
+
       
-import { Attr } from '../../../../org/w3c/dom/Attr.js';
+//not game specific package import { Attr } from '../../../../org/w3c/dom/Attr.js';
+      const Attr = globalThis.org.w3c.dom.Attr;
+
       
-import { NamedNodeMap } from '../../../../org/w3c/dom/NamedNodeMap.js';
+//not game specific package import { NamedNodeMap } from '../../../../org/w3c/dom/NamedNodeMap.js';
+      const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
+
       
-import { Node } from '../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

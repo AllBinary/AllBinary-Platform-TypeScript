@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Control } from '../../../../javax/microedition/media/Control.js';
+//not game specific package import { Control } from '../../../../javax/microedition/media/Control.js';
+      const Control = globalThis.javax.microedition.media.Control;
+
       
 
 

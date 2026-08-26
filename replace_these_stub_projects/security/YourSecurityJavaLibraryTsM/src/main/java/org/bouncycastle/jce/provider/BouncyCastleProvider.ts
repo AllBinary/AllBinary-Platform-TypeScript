@@ -4,7 +4,9 @@
 
 
 
-import { Provider } from '../../../../java/security/Provider.js';
+//not game specific package import { Provider } from '../../../../java/security/Provider.js';
+      const Provider = globalThis.java.security.Provider;
+
       
 
 

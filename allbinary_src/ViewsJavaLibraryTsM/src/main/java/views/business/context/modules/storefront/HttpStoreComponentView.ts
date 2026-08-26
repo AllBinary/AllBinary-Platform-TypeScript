@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StoreTransformer } from '../../../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
+//not game specific package import { StoreTransformer } from '../../../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
+      const StoreTransformer = globalThis.org.allbinary.logic.visual.transform.StoreTransformer;
+
       
-import { TransformStoreDocumentFactory } from '../../../../../org/allbinary/logic/visual/transform/data/TransformStoreDocumentFactory.js';
+//not game specific package import { TransformStoreDocumentFactory } from '../../../../../org/allbinary/logic/visual/transform/data/TransformStoreDocumentFactory.js';
+      const TransformStoreDocumentFactory = globalThis.org.allbinary.logic.visual.transform.data.TransformStoreDocumentFactory;
+
       
-import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { HttpComponentView } from '../../../../../views/HttpComponentView.js';
+//not game specific package import { HttpComponentView } from '../../../../../views/HttpComponentView.js';
+      const HttpComponentView = globalThis.views.HttpComponentView;
+
       
 
 

@@ -18,17 +18,29 @@
 
 
 
-import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { RTSLayer } from '../../../../../../org/allbinary/game/layer/RTSLayer.js';
+//not game specific package import { RTSLayer } from '../../../../../../org/allbinary/game/layer/RTSLayer.js';
+      const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
+
       
-import { WaypointInfoHudPaintable } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointInfoHudPaintable.js';
+//not game specific package import { WaypointInfoHudPaintable } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointInfoHudPaintable.js';
+      const WaypointInfoHudPaintable = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintable;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/draw/KeyValueDrawCharArray.js';
+//not game specific package import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/draw/KeyValueDrawCharArray.js';
+      const KeyValueDrawCharArray = globalThis.org.allbinary.graphics.draw.KeyValueDrawCharArray;
+
       
 
 

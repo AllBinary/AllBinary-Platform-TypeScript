@@ -30,25 +30,45 @@
         
             import { Double } from '../../../java/lang/Double.js';
         
-import { Enumeration } from '../../../java/util/Enumeration.js';
+//not game specific package import { Enumeration } from '../../../java/util/Enumeration.js';
+      const Enumeration = globalThis.java.util.Enumeration;
+
       
-import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not game specific package import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+      const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { PositionStrings } from '../../../org/allbinary/math/PositionStrings.js';
+//not game specific package import { PositionStrings } from '../../../org/allbinary/math/PositionStrings.js';
+      const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
+
       
-import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { JSONArray } from '../../../org/json/me/JSONArray.js';
+//not game specific package import { JSONArray } from '../../../org/json/me/JSONArray.js';
+      const JSONArray = globalThis.org.json.me.JSONArray;
+
       
-import { JSONException } from '../../../org/json/me/JSONException.js';
+//not game specific package import { JSONException } from '../../../org/json/me/JSONException.js';
+      const JSONException = globalThis.org.json.me.JSONException;
+
       
-import { JSONObject } from '../../../org/json/me/JSONObject.js';
+//not game specific package import { JSONObject } from '../../../org/json/me/JSONObject.js';
+      const JSONObject = globalThis.org.json.me.JSONObject;
+
       
 
 

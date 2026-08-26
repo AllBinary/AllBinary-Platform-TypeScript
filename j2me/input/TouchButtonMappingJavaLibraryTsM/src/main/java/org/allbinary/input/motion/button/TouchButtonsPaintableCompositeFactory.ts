@@ -20,11 +20,17 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
+//not game specific package import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
+      const InputMappingInterface = globalThis.org.allbinary.game.input.mapping.InputMappingInterface;
+
       
-import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+//not game specific package import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+      const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+
       
 
 

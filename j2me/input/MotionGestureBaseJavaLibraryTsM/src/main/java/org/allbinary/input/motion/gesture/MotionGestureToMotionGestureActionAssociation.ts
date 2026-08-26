@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { CompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
+//not game specific package import { CompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
+      const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

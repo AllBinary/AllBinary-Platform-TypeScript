@@ -20,29 +20,69 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
+//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { RectangleAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleAdjustedAnimation.js';
+//not game specific package import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
+      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+
       
-import { RectangleFilledAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js';
+//not game specific package import { RectangleAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleAdjustedAnimation.js';
+      const RectangleAdjustedAnimation = globalThis.org.allbinary.animation.vector.RectangleAdjustedAnimation;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { RectangleFilledAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js';
+      const RectangleFilledAdjustedAnimation = globalThis.org.allbinary.animation.vector.RectangleFilledAdjustedAnimation;
+
       
-import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
+//not game specific package import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
       
-import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+//not game specific package import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
+      const CommandTextItem = globalThis.org.allbinary.graphics.form.item.CommandTextItem;
+
+      
+//not game specific package import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -169,7 +209,7 @@ this.addAt(index, items[index]!);
     var rectHeight: number = height +this.border -adjustedBorder;;
     
 
-                        if(J2MEUtil.isJ2ME())
+                        if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
                         
                                     {
                                     this.selectedAnimationArray[index]= new RectangleAdjustedAnimation(rectWidth, rectHeight, offset, offset, selectedButtonColor);
@@ -186,7 +226,7 @@ this.addAt(index, items[index]!);
 adjustedBorder= 4;
     
 
-                        if(J2MEUtil.isJ2ME())
+                        if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
                         
                                     {
                                     this.unSelectedAnimationArray[index]= new RectangleAdjustedAnimation(rectWidth, rectHeight, offset, offset, buttonColor);
@@ -250,7 +290,7 @@ this.updateAt(index, items[index]!);
     var rectHeight: number = height +this.border -adjustedBorder;;
     
 
-                        if(J2MEUtil.isJ2ME())
+                        if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
                         
                                     {
                                     
@@ -289,7 +329,7 @@ rectangleAdjustedAnimation!.setBasicColorP(selectedButtonColor);
 adjustedBorder= 4;
     
 
-                        if(J2MEUtil.isJ2ME())
+                        if(J2MEUtil.isJ2ME() || J2MEUtil.isHTML())
                         
                                     {
                                     

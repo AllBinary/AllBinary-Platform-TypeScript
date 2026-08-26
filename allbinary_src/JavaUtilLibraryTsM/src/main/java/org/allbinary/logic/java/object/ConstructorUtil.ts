@@ -22,11 +22,17 @@
         
             import { Class } from '../../../../../java/lang/Class.js';
         
-import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+//not game specific package import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+      const Constructor = globalThis.java.lang.reflect.Constructor;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

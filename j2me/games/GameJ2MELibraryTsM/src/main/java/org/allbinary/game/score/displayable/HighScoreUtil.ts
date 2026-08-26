@@ -22,35 +22,65 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
+//not game specific package import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
+      const HighScore = globalThis.org.allbinary.game.score.HighScore;
+
       
-import { HighScoreNamePersistanceSingleton } from '../../../../../org/allbinary/game/score/HighScoreNamePersistanceSingleton.js';
+//not game specific package import { HighScoreNamePersistanceSingleton } from '../../../../../org/allbinary/game/score/HighScoreNamePersistanceSingleton.js';
+      const HighScoreNamePersistanceSingleton = globalThis.org.allbinary.game.score.HighScoreNamePersistanceSingleton;
+
       
-import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
+//not game specific package import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
+      const HighScores = globalThis.org.allbinary.game.score.HighScores;
+
       
-import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
+//not game specific package import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
+      const HighScoresFactoryInterface = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
+
       
-import { HighScoresHelperBaseInterface } from '../../../../../org/allbinary/game/score/HighScoresHelperBaseInterface.js';
+//not game specific package import { HighScoresHelperBaseInterface } from '../../../../../org/allbinary/game/score/HighScoresHelperBaseInterface.js';
+      const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+
       
-import { HighScoresResultsListener } from '../../../../../org/allbinary/game/score/HighScoresResultsListener.js';
+//not game specific package import { HighScoresResultsListener } from '../../../../../org/allbinary/game/score/HighScoresResultsListener.js';
+      const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+
       
-import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+//not game specific package import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

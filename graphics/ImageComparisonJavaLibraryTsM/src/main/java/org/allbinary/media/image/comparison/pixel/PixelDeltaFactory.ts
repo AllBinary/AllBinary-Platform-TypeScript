@@ -22,25 +22,45 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+//not game specific package import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+
       
-import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
+//not game specific package import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
+      const CacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.CacheInterfaceFactory;
+
       
-import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+//not game specific package import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+      const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
+
       
-import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+//not game specific package import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+      const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
+
       
-import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
+//not game specific package import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
+      const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
+
       
-import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDeltaFactory.js';
+//not game specific package import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDeltaFactory.js';
+      const ColorDeltaFactory = globalThis.org.allbinary.media.image.comparison.color.ColorDeltaFactory;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

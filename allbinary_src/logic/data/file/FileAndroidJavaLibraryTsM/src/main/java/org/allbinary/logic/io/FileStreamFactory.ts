@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Context } from '../../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

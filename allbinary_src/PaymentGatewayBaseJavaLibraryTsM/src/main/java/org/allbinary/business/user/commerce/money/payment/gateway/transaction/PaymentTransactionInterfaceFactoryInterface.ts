@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
+//not game specific package import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
+      const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
+
       
-import { TenderType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js';
+//not game specific package import { TenderType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js';
+      const TenderType = globalThis.org.allbinary.business.user.commerce.money.payment.types.TenderType;
+
       
 
 

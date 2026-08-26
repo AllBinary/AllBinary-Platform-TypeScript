@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

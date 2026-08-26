@@ -18,15 +18,25 @@
 
 
 
-import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PaymentGatewayData } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
+//not game specific package import { PaymentGatewayData } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
+      const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+
       
-import { PaymentGatewayPrimaryKey } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayPrimaryKey.js';
+//not game specific package import { PaymentGatewayPrimaryKey } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayPrimaryKey.js';
+      const PaymentGatewayPrimaryKey = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayPrimaryKey;
+
       
-import { TransformInfoHttpComposite } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js';
+//not game specific package import { TransformInfoHttpComposite } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js';
+      const TransformInfoHttpComposite = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpComposite;
+
       
-import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
 
 

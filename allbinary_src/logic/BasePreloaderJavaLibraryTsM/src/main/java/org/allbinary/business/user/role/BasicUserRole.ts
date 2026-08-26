@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Serializable } from '../../../../../java/io/Serializable.js';
+//not game specific package import { Serializable } from '../../../../../java/io/Serializable.js';
+      const Serializable = globalThis.java.io.Serializable;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
 
 

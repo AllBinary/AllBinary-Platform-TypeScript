@@ -24,11 +24,17 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Method } from '../../../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+//not game specific package import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+      const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+
       
-import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

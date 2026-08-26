@@ -22,23 +22,41 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from '../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { OrderHistoryHelperFactory } from '../../admin/taghelpers/OrderHistoryHelperFactory.js';
+//not game specific package import { OrderHistoryHelperFactory } from '../../admin/taghelpers/OrderHistoryHelperFactory.js';
+      const OrderHistoryHelperFactory = globalThis.admin.taghelpers.OrderHistoryHelperFactory;
+
       
-import { OrderHistoryRequestHelperFactory } from '../../admin/taghelpers/OrderHistoryRequestHelperFactory.js';
+//not game specific package import { OrderHistoryRequestHelperFactory } from '../../admin/taghelpers/OrderHistoryRequestHelperFactory.js';
+      const OrderHistoryRequestHelperFactory = globalThis.admin.taghelpers.OrderHistoryRequestHelperFactory;
+
       
-import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+//not game specific package import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+      const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

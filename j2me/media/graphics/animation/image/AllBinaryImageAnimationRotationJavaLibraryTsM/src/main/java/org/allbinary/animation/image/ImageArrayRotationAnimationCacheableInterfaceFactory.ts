@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+//not game specific package import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+
       
-import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
+//not game specific package import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
+      const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+
       
 
 

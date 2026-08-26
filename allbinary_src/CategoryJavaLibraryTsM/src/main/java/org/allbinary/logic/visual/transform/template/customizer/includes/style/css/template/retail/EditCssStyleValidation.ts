@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { ValidationInterface } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+//not game specific package import { ValidationInterface } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+
       
-import { StyleData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js';
+//not game specific package import { StyleData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js';
+      const StyleData = globalThis.org.allbinary.logic.visual.dhtml.style.StyleData;
+
       
-import { StylesData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
+//not game specific package import { StylesData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
+      const StylesData = globalThis.org.allbinary.logic.visual.dhtml.style.StylesData;
+
       
-import { ColorsView } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/color/ColorsView.js';
+//not game specific package import { ColorsView } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/color/ColorsView.js';
+      const ColorsView = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorsView;
+
       
-import { Document } from '../../../../../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

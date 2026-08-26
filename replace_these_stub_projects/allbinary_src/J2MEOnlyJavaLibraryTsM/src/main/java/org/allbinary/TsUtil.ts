@@ -22,19 +22,33 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
-import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
+//not game specific package import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+
       
-import { Form } from '../../javax/microedition/lcdui/Form.js';
+//not game specific package import { Form } from '../../javax/microedition/lcdui/Form.js';
+      const Form = globalThis.javax.microedition.lcdui.Form;
+
       
-import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
+//not game specific package import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
+      const InvalidRecordIDException = globalThis.javax.microedition.rms.InvalidRecordIDException;
+
       
-import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
+//not game specific package import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+
       
-import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
+//not game specific package import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
+      const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+
       
-import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
+//not game specific package import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
+      const RecordStoreNotOpenException = globalThis.javax.microedition.rms.RecordStoreNotOpenException;
+
       
-import { NullUtil } from '../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 
@@ -161,7 +175,7 @@ recordStore!.getRecord(recordId, data, 0);
 }
 
 
-    public toNumber(value: string): number{
+    public toNumberFromChar(value: string): number{
 
 
 

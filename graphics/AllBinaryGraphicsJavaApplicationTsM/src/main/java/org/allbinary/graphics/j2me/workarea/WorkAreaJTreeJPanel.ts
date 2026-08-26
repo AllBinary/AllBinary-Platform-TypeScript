@@ -20,35 +20,65 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { swing } from '../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { DefaultMutableTreeNode } from '../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+//not game specific package import { DefaultMutableTreeNode } from '../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+      const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
+
       
-import { MutableTreeNode } from '../../../../../javax/swing/tree/MutableTreeNode.js';
+//not game specific package import { MutableTreeNode } from '../../../../../javax/swing/tree/MutableTreeNode.js';
+      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+
       
-import { TreePath } from '../../../../../javax/swing/tree/TreePath.js';
+//not game specific package import { TreePath } from '../../../../../javax/swing/tree/TreePath.js';
+      const TreePath = globalThis.javax.swing.tree.TreePath;
+
       
-import { CanvasTreeLabel } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasTreeLabel.js';
+//not game specific package import { CanvasTreeLabel } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasTreeLabel.js';
+      const CanvasTreeLabel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasTreeLabel;
+
       
-import { MyCanvasEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
+//not game specific package import { MyCanvasEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
+      const MyCanvasEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEvent;
+
       
-import { MyCanvasEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
+//not game specific package import { MyCanvasEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
+      const MyCanvasEventService = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventService;
+
       
-import { MyCanvasEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
+//not game specific package import { MyCanvasEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
+      const MyCanvasEventSource = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventSource;
+
       
-import { MyGraphicItemEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
+//not game specific package import { MyGraphicItemEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
+      const MyGraphicItemEvent = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
+
       
-import { MyGraphicItemEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
+//not game specific package import { MyGraphicItemEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
+      const MyGraphicItemEventService = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventService;
+
       
-import { MyGraphicItemEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventSource.js';
+//not game specific package import { MyGraphicItemEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventSource.js';
+      const MyGraphicItemEventSource = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventSource;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InputAutomationModuleFactoryInterface } from '../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+
       
-import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+//not game specific package import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+      const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+
       
 
 

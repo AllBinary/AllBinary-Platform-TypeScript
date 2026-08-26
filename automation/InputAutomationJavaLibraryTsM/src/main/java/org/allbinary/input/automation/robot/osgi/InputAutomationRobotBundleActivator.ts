@@ -24,25 +24,45 @@
         
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { BundleActivator } from '../../../../../../org/osgi/framework/BundleActivator.js';
+//not game specific package import { BundleActivator } from '../../../../../../org/osgi/framework/BundleActivator.js';
+      const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
+
       
-import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
-import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
+//not game specific package import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
+      const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
+
       
-import { ServiceReference } from '../../../../../../org/osgi/framework/ServiceReference.js';
+//not game specific package import { ServiceReference } from '../../../../../../org/osgi/framework/ServiceReference.js';
+      const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+
       
-import { InputAutomationRobotChangeListener } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
+//not game specific package import { InputAutomationRobotChangeListener } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
+      const InputAutomationRobotChangeListener = globalThis.bundle.input.automation.robot.InputAutomationRobotChangeListener;
+
       
-import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
+//not game specific package import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
+      const InputAutomationRobotServiceInterface = globalThis.bundle.input.automation.robot.InputAutomationRobotServiceInterface;
+
       
-import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+//not game specific package import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+      const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
+//not game specific package import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
+      const OSGIActivatorUtil = globalThis.org.allbinary.osgi.OSGIActivatorUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

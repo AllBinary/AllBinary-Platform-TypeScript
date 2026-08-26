@@ -24,21 +24,37 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
+//not game specific package import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
+      const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
+
       
-import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+//not game specific package import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+      const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+
       
-import { Canvas } from '../../../../playn/core/Canvas.js';
+//not game specific package import { Canvas } from '../../../../playn/core/Canvas.js';
+      const Canvas = globalThis.playn.core.Canvas;
+
       
-import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+//not game specific package import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+      const ImageImpl = globalThis.playn.core.ImageImpl;
+
       
-import { PlayN } from '../../../../playn/core/PlayN.js';
+//not game specific package import { PlayN } from '../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
+
       
-import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+//not game specific package import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+      const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+
       
-import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+//not game specific package import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+      const HtmlImage = globalThis.playn.html.HtmlImage;
+
       
 
 

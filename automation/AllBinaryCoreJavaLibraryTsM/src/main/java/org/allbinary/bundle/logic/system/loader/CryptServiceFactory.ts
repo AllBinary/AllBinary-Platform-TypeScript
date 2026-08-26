@@ -20,15 +20,25 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
+//not game specific package import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
+      const Bundle = globalThis.org.osgi.framework.Bundle;
+
       
-import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
+//not game specific package import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
+      const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
+
       
-import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
+//not game specific package import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
+      const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

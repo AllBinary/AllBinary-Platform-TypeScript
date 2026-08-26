@@ -22,25 +22,57 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Enumeration } from '../../../../../java/util/Enumeration.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Enumeration } from '../../../../../java/util/Enumeration.js';
+      const Enumeration = globalThis.java.util.Enumeration;
+
       
-import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+//not game specific package import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
+//not game specific package import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
+      const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
+      
+//not game specific package import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
+      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

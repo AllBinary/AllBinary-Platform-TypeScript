@@ -1,0 +1,75 @@
+
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
+        /* Generated Code Do Not Modify */
+        
+
+
+
+//not game specific package import { CompositeSound } from '../../../../../../org/allbinary/media/audio/CompositeSound.js';
+      const CompositeSound = globalThis.org.allbinary.media.audio.CompositeSound;
+
+      
+//not game specific package import { Sound } from '../../../../../../org/allbinary/media/audio/Sound.js';
+      const Sound = globalThis.org.allbinary.media.audio.Sound;
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+        //Current folder imports from return types, extended types, and scope (deduplicated)
+        
+export class DropWeaponSound extends CompositeSound {
+        
+
+    private static soundInterface: Sound = new DropWeaponSound();
+
+    public static getInstance(): Sound{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return DropWeaponSound.soundInterface;
+    
+}
+
+
+private constructor (){
+            super("resource:/wav/mine.wav");
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
+
+}
+                
+            
+

@@ -18,7 +18,9 @@
 
 
 
-import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
+//not game specific package import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
+      const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
+
       
 
 

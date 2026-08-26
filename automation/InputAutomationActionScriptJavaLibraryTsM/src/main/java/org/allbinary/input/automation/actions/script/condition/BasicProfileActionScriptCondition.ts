@@ -22,45 +22,85 @@
         
             import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { ActionEvent } from '../../../../../../../java/awt/event/ActionEvent.js';
+//not game specific package import { ActionEvent } from '../../../../../../../java/awt/event/ActionEvent.js';
+      const ActionEvent = globalThis.java.awt.event.ActionEvent;
+
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { swing } from '../../../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { TreePath } from '../../../../../../../javax/swing/tree/TreePath.js';
+//not game specific package import { TreePath } from '../../../../../../../javax/swing/tree/TreePath.js';
+      const TreePath = globalThis.javax.swing.tree.TreePath;
+
       
-import { JTreeInterfaceFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
+//not game specific package import { JTreeInterfaceFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
+      const JTreeInterfaceFactory = globalThis.org.allbinary.input.automation.actions.script.JTreeInterfaceFactory;
+
       
-import { ProfileActionScriptItem } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js';
+//not game specific package import { ProfileActionScriptItem } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js';
+      const ProfileActionScriptItem = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItem;
+
       
-import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
+//not game specific package import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
+      const ProfileActionScriptNodeInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptNodeInterface;
+
       
-import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
+//not game specific package import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
+      const ProfileActionScriptProcessorInterface = globalThis.org.allbinary.input.automation.actions.script.condition.processors.ProfileActionScriptProcessorInterface;
+
       
-import { GenericProfileActionScriptInputData } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/GenericProfileActionScriptInputData.js';
+//not game specific package import { GenericProfileActionScriptInputData } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/GenericProfileActionScriptInputData.js';
+      const GenericProfileActionScriptInputData = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.GenericProfileActionScriptInputData;
+
       
-import { KeyboardActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/KeyboardActionScriptInput.js';
+//not game specific package import { KeyboardActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/KeyboardActionScriptInput.js';
+      const KeyboardActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInput;
+
       
-import { MouseActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/MouseActionScriptInput.js';
+//not game specific package import { MouseActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/MouseActionScriptInput.js';
+      const MouseActionScriptInput = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInput;
+
       
-import { ProfileActionScriptInputFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/ProfileActionScriptInputFactory.js';
+//not game specific package import { ProfileActionScriptInputFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/ProfileActionScriptInputFactory.js';
+      const ProfileActionScriptInputFactory = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputFactory;
+
       
-import { GenericProfileActionScriptOutputData } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/GenericProfileActionScriptOutputData.js';
+//not game specific package import { GenericProfileActionScriptOutputData } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/GenericProfileActionScriptOutputData.js';
+      const GenericProfileActionScriptOutputData = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.GenericProfileActionScriptOutputData;
+
       
-import { ImageActionScriptOutput } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ImageActionScriptOutput.js';
+//not game specific package import { ImageActionScriptOutput } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ImageActionScriptOutput.js';
+      const ImageActionScriptOutput = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutput;
+
       
-import { ProfileActionScriptOutputFactory } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ProfileActionScriptOutputFactory.js';
+//not game specific package import { ProfileActionScriptOutputFactory } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ProfileActionScriptOutputFactory.js';
+      const ProfileActionScriptOutputFactory = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ProfileActionScriptOutputFactory;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

@@ -22,13 +22,21 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+//not game specific package import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+      const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+
       
-import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+//not game specific package import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

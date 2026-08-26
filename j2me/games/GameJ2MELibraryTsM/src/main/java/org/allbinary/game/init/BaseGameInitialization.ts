@@ -22,41 +22,93 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
+//not game specific package import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+//not game specific package import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
+      const FeaturedAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.FeaturedAnimationInterfaceFactoryInterfaceFactory;
+
       
-import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+//not game specific package import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+
       
-import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
+//not game specific package import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+      const ChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.ChangedGameFeatureListener;
+
       
-import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+//not game specific package import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
+      const InputFeatureFactory = globalThis.org.allbinary.game.configuration.feature.InputFeatureFactory;
+
       
-import { PlatformInputMappingFactory } from '../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
+//not game specific package import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+
       
-import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+//not game specific package import { PlatformInputMappingFactory } from '../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
+      const PlatformInputMappingFactory = globalThis.org.allbinary.game.input.PlatformInputMappingFactory;
+
       
-import { FeaturedResourceRelativeRelationshipFactory } from '../../../../org/allbinary/game/resource/FeaturedResourceRelativeRelationshipFactory.js';
+//not game specific package import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+      const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
+
       
-import { ResourceInitialization } from '../../../../org/allbinary/game/resource/ResourceInitialization.js';
+//not game specific package import { FeaturedResourceRelativeRelationshipFactory } from '../../../../org/allbinary/game/resource/FeaturedResourceRelativeRelationshipFactory.js';
+      const FeaturedResourceRelativeRelationshipFactory = globalThis.org.allbinary.game.resource.FeaturedResourceRelativeRelationshipFactory;
+
       
-import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+//not game specific package import { ResourceInitialization } from '../../../../org/allbinary/game/resource/ResourceInitialization.js';
+      const ResourceInitialization = globalThis.org.allbinary.game.resource.ResourceInitialization;
+
       
-import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+//not game specific package import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+      const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
+
       
-import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+//not game specific package import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+      const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+
       
-import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+//not game specific package import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+      const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+
       
-import { CompleteMotionGestureInputToGameMotionGestureInput } from '../../../../org/allbinary/input/motion/CompleteMotionGestureInputToGameMotionGestureInput.js';
+//not game specific package import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+      const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
+
       
-import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
+//not game specific package import { CompleteMotionGestureInputToGameMotionGestureInput } from '../../../../org/allbinary/input/motion/CompleteMotionGestureInputToGameMotionGestureInput.js';
+      const CompleteMotionGestureInputToGameMotionGestureInput = globalThis.org.allbinary.input.motion.CompleteMotionGestureInputToGameMotionGestureInput;
+
       
-import { CancelTouchButtonInputFactory } from '../../../../org/allbinary/input/motion/button/CancelTouchButtonInputFactory.js';
+//not game specific package import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
+      const BasicTouchInputFactory = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+
       
-import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { CancelTouchButtonInputFactory } from '../../../../org/allbinary/input/motion/button/CancelTouchButtonInputFactory.js';
+      const CancelTouchButtonInputFactory = globalThis.org.allbinary.input.motion.button.CancelTouchButtonInputFactory;
+
+      
+//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

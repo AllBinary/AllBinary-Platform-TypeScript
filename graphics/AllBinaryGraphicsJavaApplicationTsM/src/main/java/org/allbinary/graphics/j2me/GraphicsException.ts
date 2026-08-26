@@ -20,9 +20,13 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
+//not game specific package import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
+      const GuiLog = globalThis.org.allbinary.logic.communication.log.GuiLog;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

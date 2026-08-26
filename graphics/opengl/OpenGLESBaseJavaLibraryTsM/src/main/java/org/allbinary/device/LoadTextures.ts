@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
 
 

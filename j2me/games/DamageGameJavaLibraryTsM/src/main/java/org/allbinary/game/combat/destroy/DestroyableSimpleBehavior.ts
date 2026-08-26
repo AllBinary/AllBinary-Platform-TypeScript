@@ -18,7 +18,9 @@
 
 
 
-import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+//not game specific package import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+      const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
+
       
 
 

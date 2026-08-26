@@ -24,29 +24,53 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { GraphicItemInterface } from '../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
+//not game specific package import { GraphicItemInterface } from '../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
+      const GraphicItemInterface = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+
       
-import { LinesGraphicItem } from '../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
+//not game specific package import { LinesGraphicItem } from '../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
+      const LinesGraphicItem = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+
       
-import { Points } from '../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js';
+//not game specific package import { Points } from '../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js';
+      const Points = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
+
       
-import { BasicGraphicsPipeline } from '../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
+//not game specific package import { BasicGraphicsPipeline } from '../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
+      const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

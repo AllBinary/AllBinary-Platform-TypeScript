@@ -22,25 +22,45 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { RequestDispatcher } from '../../../../../../javax/servlet/RequestDispatcher.js';
+//not game specific package import { RequestDispatcher } from '../../../../../../javax/servlet/RequestDispatcher.js';
+      const RequestDispatcher = globalThis.javax.servlet.RequestDispatcher;
+
       
-import { ServletException } from '../../../../../../javax/servlet/ServletException.js';
+//not game specific package import { ServletException } from '../../../../../../javax/servlet/ServletException.js';
+      const ServletException = globalThis.javax.servlet.ServletException;
+
       
-import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { HttpServletResponse } from '../../../../../../javax/servlet/http/HttpServletResponse.js';
+//not game specific package import { HttpServletResponse } from '../../../../../../javax/servlet/http/HttpServletResponse.js';
+      const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
+
       
-import { JspTagException } from '../../../../../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../../../../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+//not game specific package import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+      const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+//not game specific package import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+
       
-import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+//not game specific package import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+
       
 
 

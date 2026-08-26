@@ -20,35 +20,77 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+//not game specific package import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
+      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+
       
-import { DataInputStream } from '../../../../../java/io/DataInputStream.js';
+//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+
       
-import { DataOutputStream } from '../../../../../java/io/DataOutputStream.js';
+//not game specific package import { DataInputStream } from '../../../../../java/io/DataInputStream.js';
+      const DataInputStream = globalThis.java.io.DataInputStream;
+
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { DataOutputStream } from '../../../../../java/io/DataOutputStream.js';
+      const DataOutputStream = globalThis.java.io.DataOutputStream;
+
       
-import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordEnumeration.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
+//not game specific package import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordEnumeration.js';
+      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+
       
-import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+//not game specific package import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+
       
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not game specific package import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
+      const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

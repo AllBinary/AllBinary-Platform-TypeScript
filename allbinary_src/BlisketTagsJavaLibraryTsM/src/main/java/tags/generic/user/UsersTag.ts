@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { UserRoleData } from '../../../org/allbinary/business/user/role/UserRoleData.js';
+//not game specific package import { UserRoleData } from '../../../org/allbinary/business/user/role/UserRoleData.js';
+      const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
+
       
-import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { StoreValidationTransformTag } from '../../../tags/StoreValidationTransformTag.js';
+//not game specific package import { StoreValidationTransformTag } from '../../../tags/StoreValidationTransformTag.js';
+      const StoreValidationTransformTag = globalThis.tags.StoreValidationTransformTag;
+
       
 
 

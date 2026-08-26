@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+//not game specific package import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+
       
 
 

@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
+//not game specific package import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
+      const Attr = globalThis.org.w3c.dom.Attr;
+
       
-import { Document } from '../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { NamedNodeMap } from '../../../../../../org/w3c/dom/NamedNodeMap.js';
+//not game specific package import { NamedNodeMap } from '../../../../../../org/w3c/dom/NamedNodeMap.js';
+      const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

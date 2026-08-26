@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { ActionEvent } from '../../../../../../../../java/awt/event/ActionEvent.js';
+//not game specific package import { ActionEvent } from '../../../../../../../../java/awt/event/ActionEvent.js';
+      const ActionEvent = globalThis.java.awt.event.ActionEvent;
+
       
-import { JTreeInterfaceFactory } from '../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
+//not game specific package import { JTreeInterfaceFactory } from '../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
+      const JTreeInterfaceFactory = globalThis.org.allbinary.input.automation.actions.script.JTreeInterfaceFactory;
+
       
-import { ProfileActionScriptItem } from '../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js';
+//not game specific package import { ProfileActionScriptItem } from '../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js';
+      const ProfileActionScriptItem = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItem;
+
       
-import { ProfileActionScriptConditionInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
+//not game specific package import { ProfileActionScriptConditionInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
+      const ProfileActionScriptConditionInterface = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
+
       
-import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

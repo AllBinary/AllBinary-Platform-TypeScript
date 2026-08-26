@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/system/os/OperatingSystemInterface.js';
+//not game specific package import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/system/os/OperatingSystemInterface.js';
+      const OperatingSystemInterface = globalThis.org.allbinary.logic.system.os.OperatingSystemInterface;
+
       
 
 

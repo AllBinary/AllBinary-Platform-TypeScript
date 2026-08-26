@@ -18,7 +18,9 @@
 
 
 
-import { EventObject } from '../../../../../java/util/EventObject.js';
+//not game specific package import { EventObject } from '../../../../../java/util/EventObject.js';
+      const EventObject = globalThis.java.util.EventObject;
+
       
 
 

@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+//not game specific package import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+      const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+
       
 
 

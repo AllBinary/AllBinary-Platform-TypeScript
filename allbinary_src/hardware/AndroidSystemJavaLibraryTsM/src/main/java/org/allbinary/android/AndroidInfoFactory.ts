@@ -24,7 +24,9 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { Build } from '../../../android/os/Build.js';
+//not game specific package import { Build } from '../../../android/os/Build.js';
+      const Build = globalThis.android.os.Build;
+
       
 
 

@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { BasicGameResources } from '../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
+//not game specific package import { BasicGameResources } from '../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
+      const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
+
       
-import { GameGraphicsResourceUtil } from '../../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js';
+//not game specific package import { GameGraphicsResourceUtil } from '../../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js';
+      const GameGraphicsResourceUtil = globalThis.org.allbinary.game.layer.resources.GameGraphicsResourceUtil;
+
       
-import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
+//not game specific package import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
+      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+
       
-import { GraphicsFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
+//not game specific package import { GraphicsFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
+      const GraphicsFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GraphicsFeatureFactory;
+
       
 
 

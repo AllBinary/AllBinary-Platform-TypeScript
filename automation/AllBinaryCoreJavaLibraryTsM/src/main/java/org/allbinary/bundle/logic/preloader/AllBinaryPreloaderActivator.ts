@@ -22,21 +22,37 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { BundleActivator } from '../../../../../org/osgi/framework/BundleActivator.js';
+//not game specific package import { BundleActivator } from '../../../../../org/osgi/framework/BundleActivator.js';
+      const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
+
       
-import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
+//not game specific package import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
+      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+
       
-import { ServiceReference } from '../../../../../org/osgi/framework/ServiceReference.js';
+//not game specific package import { ServiceReference } from '../../../../../org/osgi/framework/ServiceReference.js';
+      const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+
       
-import { ServiceRegistration } from '../../../../../org/osgi/framework/ServiceRegistration.js';
+//not game specific package import { ServiceRegistration } from '../../../../../org/osgi/framework/ServiceRegistration.js';
+      const ServiceRegistration = globalThis.org.osgi.framework.ServiceRegistration;
+
       
-import { CryptServiceFactory } from '../../../../../org/allbinary/bundle/logic/system/loader/CryptServiceFactory.js';
+//not game specific package import { CryptServiceFactory } from '../../../../../org/allbinary/bundle/logic/system/loader/CryptServiceFactory.js';
+      const CryptServiceFactory = globalThis.org.allbinary.bundle.logic.system.loader.CryptServiceFactory;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

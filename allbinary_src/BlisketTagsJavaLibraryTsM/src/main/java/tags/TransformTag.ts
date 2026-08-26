@@ -20,21 +20,37 @@
 
             import { Exception } from '../java/lang/Exception.js';
         
-import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
+//not game specific package import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
+      const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+
       
-import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { ViewHelperFactory } from '../taghelpers/ViewHelperFactory.js';
+//not game specific package import { ViewHelperFactory } from '../taghelpers/ViewHelperFactory.js';
+      const ViewHelperFactory = globalThis.taghelpers.ViewHelperFactory;
+
       
-import { TransformInfoTag } from '../tags/transform/info/TransformInfoTag.js';
+//not game specific package import { TransformInfoTag } from '../tags/transform/info/TransformInfoTag.js';
+      const TransformInfoTag = globalThis.tags.transform.info.TransformInfoTag;
+
       
 
 

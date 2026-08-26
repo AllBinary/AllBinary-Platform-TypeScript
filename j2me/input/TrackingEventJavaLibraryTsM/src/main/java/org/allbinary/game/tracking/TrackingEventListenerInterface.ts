@@ -20,7 +20,17 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+//not game specific package import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+      const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+
       
 
 

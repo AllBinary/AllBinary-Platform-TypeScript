@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { TransformInfoFactoryInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoFactoryInterface.js';
+//not game specific package import { TransformInfoFactoryInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoFactoryInterface.js';
+      const TransformInfoFactoryInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoFactoryInterface;
+
       
-import { TransformInfoObjectConfigAndManipulatorFactoryBase } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactoryBase.js';
+//not game specific package import { TransformInfoObjectConfigAndManipulatorFactoryBase } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactoryBase.js';
+      const TransformInfoObjectConfigAndManipulatorFactoryBase = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactoryBase;
+
       
-import { TransformInfoObjectConfigGeneratorFactoryInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactoryInterface.js';
+//not game specific package import { TransformInfoObjectConfigGeneratorFactoryInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactoryInterface.js';
+      const TransformInfoObjectConfigGeneratorFactoryInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactoryInterface;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

@@ -20,27 +20,61 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { FeatureResourceAnimationInterfaceFactoryInterface } from '../../../org/allbinary/animation/resource/FeatureResourceAnimationInterfaceFactoryInterface.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+//not game specific package import { FeatureResourceAnimationInterfaceFactoryInterface } from '../../../org/allbinary/animation/resource/FeatureResourceAnimationInterfaceFactoryInterface.js';
+      const FeatureResourceAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.resource.FeatureResourceAnimationInterfaceFactoryInterface;
+
       
-import { FeaturedResourceFactory } from '../../../org/allbinary/game/resource/FeaturedResourceFactory.js';
+//not game specific package import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+
       
-import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { FeaturedResourceFactory } from '../../../org/allbinary/game/resource/FeaturedResourceFactory.js';
+      const FeaturedResourceFactory = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
+
       
-import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFactory.js';
+//not game specific package import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFactory.js';
+      const RectangleFactory = globalThis.org.allbinary.graphics.RectangleFactory;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

@@ -22,9 +22,13 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
+//not game specific package import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
+      const OrderInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderInterface;
+
       
-import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
+//not game specific package import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
+      const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+
       
 
 

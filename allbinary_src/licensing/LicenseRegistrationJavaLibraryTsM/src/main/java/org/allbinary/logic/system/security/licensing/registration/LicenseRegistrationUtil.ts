@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
+//not game specific package import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
+      const SpecialMessageUtil = globalThis.org.allbinary.canvas.SpecialMessageUtil;
+
       
-import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
 
 

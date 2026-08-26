@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { Activity } from '../../../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
 
 

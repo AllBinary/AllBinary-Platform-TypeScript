@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
 
 

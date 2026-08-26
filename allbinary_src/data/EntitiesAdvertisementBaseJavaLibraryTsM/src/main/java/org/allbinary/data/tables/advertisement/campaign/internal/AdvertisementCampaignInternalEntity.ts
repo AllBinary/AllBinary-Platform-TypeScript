@@ -20,33 +20,61 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { AdvertisementCampaign } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaign.js';
+//not game specific package import { AdvertisementCampaign } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaign.js';
+      const AdvertisementCampaign = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaign;
+
       
-import { AdvertisementCampaignData } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
+//not game specific package import { AdvertisementCampaignData } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
+      const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
+
       
-import { AdvertisementCampaignInterface } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignInterface.js';
+//not game specific package import { AdvertisementCampaignInterface } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignInterface.js';
+      const AdvertisementCampaignInterface = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignInterface;
+
       
-import { AdvertisementCampaigns } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaigns.js';
+//not game specific package import { AdvertisementCampaigns } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaigns.js';
+      const AdvertisementCampaigns = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaigns;
+
       
-import { AdvertisementCampaignsInterface } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignsInterface.js';
+//not game specific package import { AdvertisementCampaignsInterface } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignsInterface.js';
+      const AdvertisementCampaignsInterface = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignsInterface;
+
       
-import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { UserDbInitInfo } from '../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+//not game specific package import { UserDbInitInfo } from '../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+      const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
       
-import { TimeData } from '../../../../../../../org/allbinary/business/time/TimeData.js';
+//not game specific package import { TimeData } from '../../../../../../../org/allbinary/business/time/TimeData.js';
+      const TimeData = globalThis.org.allbinary.business.time.TimeData;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlBean } from '../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+//not game specific package import { AbSqlBean } from '../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+      const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+
       
-import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

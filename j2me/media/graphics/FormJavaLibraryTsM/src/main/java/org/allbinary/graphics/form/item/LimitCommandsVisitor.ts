@@ -18,17 +18,29 @@
 
 
 
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+//not game specific package import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
       
-import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInfo.js';
+//not game specific package import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInfo.js';
+      const ScreenInfo = globalThis.org.allbinary.graphics.form.ScreenInfo;
+
       
-import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
-import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+//not game specific package import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+
       
 
 

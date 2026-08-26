@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { AnimationInterface } from '../../../../../../org/allbinary/animation/AnimationInterface.js';
+//not game specific package import { AnimationInterface } from '../../../../../../org/allbinary/animation/AnimationInterface.js';
+      const AnimationInterface = globalThis.org.allbinary.animation.AnimationInterface;
+
       
-import { HealthInterface } from '../../../../../../org/allbinary/game/health/HealthInterface.js';
+//not game specific package import { HealthInterface } from '../../../../../../org/allbinary/game/health/HealthInterface.js';
+      const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
+
       
-import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
+//not game specific package import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
+      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+
       
-import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
+//not game specific package import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
+      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+
       
 
 

@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
+//not game specific package import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
+      const FeaturedAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.FeaturedAnimationInterfaceFactoryInterfaceFactory;
+
       
-import { LockedResources } from '../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
+//not game specific package import { LockedResources } from '../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
+      const LockedResources = globalThis.org.allbinary.logic.system.security.licensing.LockedResources;
+
       
-import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
+//not game specific package import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
+      const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
+
       
 
 

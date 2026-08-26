@@ -24,19 +24,33 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-import { File } from '../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
+//not game specific package import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
+      const FileOutputStream = globalThis.java.io.FileOutputStream;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
+//not game specific package import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
+      const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
+
       
-import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
+//not game specific package import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
+      const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

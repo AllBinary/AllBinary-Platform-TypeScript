@@ -4,7 +4,9 @@
 
 
 
-import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+//not game specific package import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+
       
 
 

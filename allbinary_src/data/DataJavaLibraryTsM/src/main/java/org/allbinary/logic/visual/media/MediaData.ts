@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
 
 

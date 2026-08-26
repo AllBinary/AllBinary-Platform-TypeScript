@@ -24,31 +24,57 @@
         
             import { Thread } from '../../../../../../java/lang/Thread.js';
         
-import { awt } from '../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { InputEvent } from '../../../../../../java/awt/event/InputEvent.js';
+//not game specific package import { InputEvent } from '../../../../../../java/awt/event/InputEvent.js';
+      const InputEvent = globalThis.java.awt.event.InputEvent;
+
       
-import { KeyEvent } from '../../../../../../java/awt/event/KeyEvent.js';
+//not game specific package import { KeyEvent } from '../../../../../../java/awt/event/KeyEvent.js';
+      const KeyEvent = globalThis.java.awt.event.KeyEvent;
+
       
-import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
+//not game specific package import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
+      const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
+
       
-import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+//not game specific package import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+      const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+
       
-import { TempInputRobotNames } from '../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
+//not game specific package import { TempInputRobotNames } from '../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
+      const TempInputRobotNames = globalThis.org.allbinary.input.automation.robot.TempInputRobotNames;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
 
 

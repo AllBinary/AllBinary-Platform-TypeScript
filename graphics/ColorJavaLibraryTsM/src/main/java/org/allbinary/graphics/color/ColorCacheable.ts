@@ -22,9 +22,13 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { awt } from '../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+//not game specific package import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+
       
 
 

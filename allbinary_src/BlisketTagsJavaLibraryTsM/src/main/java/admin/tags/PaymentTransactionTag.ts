@@ -18,7 +18,9 @@
 
 
 
-import { PaymentTransactionHelperFactory } from '../../admin/taghelpers/PaymentTransactionHelperFactory.js';
+//not game specific package import { PaymentTransactionHelperFactory } from '../../admin/taghelpers/PaymentTransactionHelperFactory.js';
+      const PaymentTransactionHelperFactory = globalThis.admin.taghelpers.PaymentTransactionHelperFactory;
+
       
 
 

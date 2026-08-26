@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
+//not game specific package import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
+      const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
+
       
 
 

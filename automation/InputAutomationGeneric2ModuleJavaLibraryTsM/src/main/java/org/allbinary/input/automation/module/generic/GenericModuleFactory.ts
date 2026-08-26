@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AbstractInputAutomationFactory } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
+//not game specific package import { AbstractInputAutomationFactory } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
+      const AbstractInputAutomationFactory = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationFactory;
+
       
-import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
+//not game specific package import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
+      const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
+
       
-import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+//not game specific package import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+      const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
+
       
-import { GenericModuleConfigurationJPanel } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/GenericModuleConfigurationJPanel.js';
+//not game specific package import { GenericModuleConfigurationJPanel } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/GenericModuleConfigurationJPanel.js';
+      const GenericModuleConfigurationJPanel = globalThis.org.allbinary.input.automation.module.generic.configuration.GenericModuleConfigurationJPanel;
+
       
-import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+//not game specific package import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+      const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
+
       
-import { NoImageComparatorConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoImageComparatorConstraints.js';
+//not game specific package import { NoImageComparatorConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoImageComparatorConstraints.js';
+      const NoImageComparatorConstraints = globalThis.org.allbinary.input.automation.module.generic.constraints.NoImageComparatorConstraints;
+
       
-import { NoMotionRectangleConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoMotionRectangleConstraints.js';
+//not game specific package import { NoMotionRectangleConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoMotionRectangleConstraints.js';
+      const NoMotionRectangleConstraints = globalThis.org.allbinary.input.automation.module.generic.constraints.NoMotionRectangleConstraints;
+
       
-import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
 
 

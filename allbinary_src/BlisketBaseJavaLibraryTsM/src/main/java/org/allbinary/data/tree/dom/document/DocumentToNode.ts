@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+//not game specific package import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+      const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
+
       
 
 

@@ -18,9 +18,13 @@
 
 
 
-import { TouchButtonBlankResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js';
+//not game specific package import { TouchButtonBlankResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js';
+      const TouchButtonBlankResource = globalThis.org.allbinary.input.motion.button.TouchButtonBlankResource;
+
       
-import { TouchButtonResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
+//not game specific package import { TouchButtonResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
+      const TouchButtonResource = globalThis.org.allbinary.input.motion.button.TouchButtonResource;
+
       
 
 

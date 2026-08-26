@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Arrays } from '../../../../../../java/util/Arrays.js';
+//not game specific package import { Arrays } from '../../../../../../java/util/Arrays.js';
+      const Arrays = globalThis.java.util.Arrays;
+
       
-import { CategoryView } from '../../../../../../org/allbinary/business/category/CategoryView.js';
+//not game specific package import { CategoryView } from '../../../../../../org/allbinary/business/category/CategoryView.js';
+      const CategoryView = globalThis.org.allbinary.business.category.CategoryView;
+
       
-import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
+//not game specific package import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
+      const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
+
       
-import { Document } from '../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

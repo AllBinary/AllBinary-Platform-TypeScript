@@ -22,7 +22,9 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
+//not game specific package import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
+      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
       
 
 

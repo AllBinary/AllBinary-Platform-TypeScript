@@ -22,27 +22,49 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { ServletConfig } from '../../../../../javax/servlet/ServletConfig.js';
+//not game specific package import { ServletConfig } from '../../../../../javax/servlet/ServletConfig.js';
+      const ServletConfig = globalThis.javax.servlet.ServletConfig;
+
       
-import { ServletContext } from '../../../../../javax/servlet/ServletContext.js';
+//not game specific package import { ServletContext } from '../../../../../javax/servlet/ServletContext.js';
+      const ServletContext = globalThis.javax.servlet.ServletContext;
+
       
-import { ServletRequest } from '../../../../../javax/servlet/ServletRequest.js';
+//not game specific package import { ServletRequest } from '../../../../../javax/servlet/ServletRequest.js';
+      const ServletRequest = globalThis.javax.servlet.ServletRequest;
+
       
-import { ServletResponse } from '../../../../../javax/servlet/ServletResponse.js';
+//not game specific package import { ServletResponse } from '../../../../../javax/servlet/ServletResponse.js';
+      const ServletResponse = globalThis.javax.servlet.ServletResponse;
+
       
-import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { WorkFlowEntityFactory } from '../../../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
+//not game specific package import { WorkFlowEntityFactory } from '../../../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
+      const WorkFlowEntityFactory = globalThis.org.allbinary.data.tables.workflow.WorkFlowEntityFactory;
+
       
-import { WeblisketSession } from '../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+//not game specific package import { WeblisketSession } from '../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+
       
-import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

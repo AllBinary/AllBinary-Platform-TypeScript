@@ -6,13 +6,21 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Calendar } from '../../../java/util/Calendar.js';
+//not game specific package import { Calendar } from '../../../java/util/Calendar.js';
+      const Calendar = globalThis.java.util.Calendar;
+
       
-import { Assertions } from '../../../org/junit/jupiter/api/Assertions.js';
+//not game specific package import { Assertions } from '../../../org/junit/jupiter/api/Assertions.js';
+      const Assertions = globalThis.org.junit.jupiter.api.Assertions;
+
       
-import { DisplayName } from '../../../org/junit/jupiter/api/DisplayName.js';
+//not game specific package import { DisplayName } from '../../../org/junit/jupiter/api/DisplayName.js';
+      const DisplayName = globalThis.org.junit.jupiter.api.DisplayName;
+
       
-import { Test } from '../../../org/junit/jupiter/api/Test.js';
+//not game specific package import { Test } from '../../../org/junit/jupiter/api/Test.js';
+      const Test = globalThis.org.junit.jupiter.api.Test;
+
       
 
 

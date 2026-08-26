@@ -20,17 +20,29 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { Input } from '../../../../../../org/allbinary/game/input/Input.js';
+//not game specific package import { Input } from '../../../../../../org/allbinary/game/input/Input.js';
+      const Input = globalThis.org.allbinary.game.input.Input;
+
       
-import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
+//not game specific package import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
+      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+
       
-import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+//not game specific package import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+      const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
+
       
-import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+//not game specific package import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
+
       
-import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
-import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
+//not game specific package import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
+      const AllBinaryEventObjectFactoryInterface = globalThis.org.allbinary.logic.util.event.AllBinaryEventObjectFactoryInterface;
+
       
 
 

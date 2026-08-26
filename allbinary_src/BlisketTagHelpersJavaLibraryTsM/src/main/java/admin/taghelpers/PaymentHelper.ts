@@ -22,29 +22,53 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+//not game specific package import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+      const Portion = globalThis.org.allbinary.business.installer.Portion;
+
       
-import { PaymentFactory } from '../../org/allbinary/business/user/commerce/money/payment/PaymentFactory.js';
+//not game specific package import { PaymentFactory } from '../../org/allbinary/business/user/commerce/money/payment/PaymentFactory.js';
+      const PaymentFactory = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentFactory;
+
       
-import { PaymentInterface } from '../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
+//not game specific package import { PaymentInterface } from '../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
+      const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
+
       
-import { PaymentEntity } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
+//not game specific package import { PaymentEntity } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
+      const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
+
       
-import { PaymentEntityFactory } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
+//not game specific package import { PaymentEntityFactory } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
+      const PaymentEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityFactory;
+
       
-import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+//not game specific package import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+//not game specific package import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+      const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

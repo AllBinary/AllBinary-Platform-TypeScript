@@ -4,13 +4,21 @@
 
 
 
-import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { BaseGameStatistics } from '../../../../../org/allbinary/canvas/BaseGameStatistics.js';
+//not game specific package import { BaseGameStatistics } from '../../../../../org/allbinary/canvas/BaseGameStatistics.js';
+      const BaseGameStatistics = globalThis.org.allbinary.canvas.BaseGameStatistics;
+
       
-import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
+//not game specific package import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
+      const GameStatisticsFactory = globalThis.org.allbinary.canvas.GameStatisticsFactory;
+
       
 
 

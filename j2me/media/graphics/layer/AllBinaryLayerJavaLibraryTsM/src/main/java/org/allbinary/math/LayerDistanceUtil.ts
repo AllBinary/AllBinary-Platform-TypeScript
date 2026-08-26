@@ -20,11 +20,17 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
+//not game specific package import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
+      const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
+
       
 
 

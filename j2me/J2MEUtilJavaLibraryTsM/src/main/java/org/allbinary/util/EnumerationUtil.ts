@@ -20,7 +20,17 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Enumeration } from '../../../java/util/Enumeration.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+//not game specific package import { Enumeration } from '../../../java/util/Enumeration.js';
+      const Enumeration = globalThis.java.util.Enumeration;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

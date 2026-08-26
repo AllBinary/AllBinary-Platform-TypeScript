@@ -20,15 +20,25 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { AppUrlGlobals } from '../../../org/allbinary/globals/AppUrlGlobals.js';
+//not game specific package import { AppUrlGlobals } from '../../../org/allbinary/globals/AppUrlGlobals.js';
+      const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
+
       
-import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
+//not game specific package import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
+      const WebappClassLoaderInfo = globalThis.org.allbinary.logic.system.loader.WebappClassLoaderInfo;
+
       
 
 

@@ -20,33 +20,61 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+
       
-import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not game specific package import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+      const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+//not game specific package import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+      const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+
       
-import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+//not game specific package import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+      const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+
       
-import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
+//not game specific package import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
+      const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
+
       
-import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+//not game specific package import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+      const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+
       
-import { Canvas } from '../../../../playn/core/Canvas.js';
+//not game specific package import { Canvas } from '../../../../playn/core/Canvas.js';
+      const Canvas = globalThis.playn.core.Canvas;
+
       
-import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+//not game specific package import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+      const ImageImpl = globalThis.playn.core.ImageImpl;
+
       
-import { PlayN } from '../../../../playn/core/PlayN.js';
+//not game specific package import { PlayN } from '../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
+
       
-import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+//not game specific package import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+      const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+
       
-import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+//not game specific package import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+      const HtmlImage = globalThis.playn.html.HtmlImage;
+
       
 
 

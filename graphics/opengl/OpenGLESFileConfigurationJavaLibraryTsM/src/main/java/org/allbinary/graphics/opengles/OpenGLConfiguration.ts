@@ -22,45 +22,85 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Closeable } from '../../../../java/io/Closeable.js';
+//not game specific package import { Closeable } from '../../../../java/io/Closeable.js';
+      const Closeable = globalThis.java.io.Closeable;
+
       
-import { DataInputStream } from '../../../../java/io/DataInputStream.js';
+//not game specific package import { DataInputStream } from '../../../../java/io/DataInputStream.js';
+      const DataInputStream = globalThis.java.io.DataInputStream;
+
       
-import { InputStream } from '../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { OutputStream } from '../../../../java/io/OutputStream.js';
+//not game specific package import { OutputStream } from '../../../../java/io/OutputStream.js';
+      const OutputStream = globalThis.java.io.OutputStream;
+
       
-import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+//not game specific package import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+      const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+
       
-import { FileStreamFactory } from '../../../../org/allbinary/logic/io/FileStreamFactory.js';
+//not game specific package import { FileStreamFactory } from '../../../../org/allbinary/logic/io/FileStreamFactory.js';
+      const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
+
       
-import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+//not game specific package import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+
       
-import { FileFactory } from '../../../../org/allbinary/logic/io/file/FileFactory.js';
+//not game specific package import { FileFactory } from '../../../../org/allbinary/logic/io/file/FileFactory.js';
+      const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+//not game specific package import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+      const ChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.ChangedGameFeatureListener;
+
       
-import { Feature } from '../../../../org/allbinary/game/configuration/feature/Feature.js';
+//not game specific package import { Feature } from '../../../../org/allbinary/game/configuration/feature/Feature.js';
+      const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
+
       
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+//not game specific package import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+
       
-import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { NullCloseable } from '../../../../org/allbinary/logic/io/NullCloseable.js';
+//not game specific package import { NullCloseable } from '../../../../org/allbinary/logic/io/NullCloseable.js';
+      const NullCloseable = globalThis.org.allbinary.logic.io.NullCloseable;
+
       
 
 

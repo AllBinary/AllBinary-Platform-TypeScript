@@ -22,31 +22,57 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { Collection } from '../../../../../java/util/Collection.js';
+//not game specific package import { Collection } from '../../../../../java/util/Collection.js';
+      const Collection = globalThis.java.util.Collection;
+
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Iterator } from '../../../../../java/util/Iterator.js';
+//not game specific package import { Iterator } from '../../../../../java/util/Iterator.js';
+      const Iterator = globalThis.java.util.Iterator;
+
       
-import { Set } from '../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      const HelpSet = globalThis.javax.help.HelpSet;
+
       
-import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
+//not game specific package import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
+      const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
+
       
-import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
+//not game specific package import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
+      const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
+//not game specific package import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
+      const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
+
       
-import { InterfaceUtil } from '../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
+//not game specific package import { InterfaceUtil } from '../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
+      const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
+
       
-import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js';
+//not game specific package import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js';
+      const SecuredNativeLibraryInterface = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

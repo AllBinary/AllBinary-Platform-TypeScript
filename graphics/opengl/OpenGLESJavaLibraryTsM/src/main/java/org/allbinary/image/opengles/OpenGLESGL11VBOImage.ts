@@ -18,27 +18,49 @@
 
 
 
-import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
+//not game specific package import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
+      const ByteBuffer = globalThis.java.nio.ByteBuffer;
+
       
-import { ByteOrder } from '../../../../java/nio/ByteOrder.js';
+//not game specific package import { ByteOrder } from '../../../../java/nio/ByteOrder.js';
+      const ByteOrder = globalThis.java.nio.ByteOrder;
+
       
-import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
+//not game specific package import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
+      const FloatBuffer = globalThis.java.nio.FloatBuffer;
+
       
-import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+//not game specific package import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+
       
-import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js';
+//not game specific package import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js';
+      const OpenGLLogUtil = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
+
       
-import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
       
-import { GLUtil } from '../../../../org/allbinary/opengles/GLUtil.js';
+//not game specific package import { GLUtil } from '../../../../org/allbinary/opengles/GLUtil.js';
+      const GLUtil = globalThis.org.allbinary.opengles.GLUtil;
+
       
-import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+//not game specific package import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+      const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+
       
-import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
+//not game specific package import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
+      const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
+
       
 
 

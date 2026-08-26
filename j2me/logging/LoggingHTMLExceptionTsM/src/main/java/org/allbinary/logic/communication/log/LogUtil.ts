@@ -22,9 +22,13 @@
         
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { PlayN } from '../../../../../playn/core/PlayN.js';
+//not game specific package import { PlayN } from '../../../../../playn/core/PlayN.js';
+      const PlayN = globalThis.playn.core.PlayN;
+
       
 
 

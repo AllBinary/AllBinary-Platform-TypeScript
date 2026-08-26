@@ -20,25 +20,45 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { HashMap } from '../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { GLOBALS2 } from '../../../../../../../org/allbinary/globals/GLOBALS2.js';
+//not game specific package import { GLOBALS2 } from '../../../../../../../org/allbinary/globals/GLOBALS2.js';
+      const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+//not game specific package import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
+      const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
+
       
-import { CustomizerTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/CustomizerTransformInfoData.js';
+//not game specific package import { CustomizerTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/CustomizerTransformInfoData.js';
+      const CustomizerTransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.CustomizerTransformInfoData;
+
       
-import { BodyData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
+//not game specific package import { BodyData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
+      const BodyData = globalThis.org.allbinary.logic.visual.transform.template.customizer.bodies.BodyData;
+
       
-import { TitleData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
+//not game specific package import { TitleData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
+      const TitleData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
+
       
-import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

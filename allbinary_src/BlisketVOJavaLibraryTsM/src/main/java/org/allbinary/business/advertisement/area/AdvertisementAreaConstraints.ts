@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { DisplayInBrowserContraints } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraints.js';
+//not game specific package import { DisplayInBrowserContraints } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraints.js';
+      const DisplayInBrowserContraints = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraints;
+
       
-import { DisplayInBrowserContraintsInterface } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
+//not game specific package import { DisplayInBrowserContraintsInterface } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
+      const DisplayInBrowserContraintsInterface = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraintsInterface;
+
       
-import { TwoDimensionalConstraint } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraint.js';
+//not game specific package import { TwoDimensionalConstraint } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraint.js';
+      const TwoDimensionalConstraint = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraint;
+
       
-import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
+//not game specific package import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
+      const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

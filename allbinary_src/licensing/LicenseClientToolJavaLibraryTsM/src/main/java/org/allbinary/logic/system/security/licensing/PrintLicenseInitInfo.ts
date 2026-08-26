@@ -24,15 +24,25 @@
         
             import { System } from '../../../../../../java/lang/System.js';
         
-import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+//not game specific package import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+      const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
+
       
-import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+//not game specific package import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+
       
-import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
+//not game specific package import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
+      const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
+
       
-import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+//not game specific package import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+      const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

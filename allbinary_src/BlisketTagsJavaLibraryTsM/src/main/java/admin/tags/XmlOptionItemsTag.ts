@@ -18,9 +18,13 @@
 
 
 
-import { XmlOptionItemsHelperFactory } from '../../admin/taghelpers/XmlOptionItemsHelperFactory.js';
+//not game specific package import { XmlOptionItemsHelperFactory } from '../../admin/taghelpers/XmlOptionItemsHelperFactory.js';
+      const XmlOptionItemsHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsHelperFactory;
+
       
-import { XmlOptionItemsRequestHelperFactory } from '../../admin/taghelpers/XmlOptionItemsRequestHelperFactory.js';
+//not game specific package import { XmlOptionItemsRequestHelperFactory } from '../../admin/taghelpers/XmlOptionItemsRequestHelperFactory.js';
+      const XmlOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsRequestHelperFactory;
+
       
 
 

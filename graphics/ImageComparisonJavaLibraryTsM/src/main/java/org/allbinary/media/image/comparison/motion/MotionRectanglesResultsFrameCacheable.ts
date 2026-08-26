@@ -22,9 +22,13 @@
         
             import { Long } from '../../../../../../java/lang/Long.js';
         
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+//not game specific package import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+
       
 
 

@@ -20,7 +20,9 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
       
 
 

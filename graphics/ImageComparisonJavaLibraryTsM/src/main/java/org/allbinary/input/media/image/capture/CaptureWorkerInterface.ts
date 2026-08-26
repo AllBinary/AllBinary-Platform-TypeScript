@@ -18,9 +18,13 @@
 
 
 
-import { BasicEventHandlerInterface } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandlerInterface.js';
+//not game specific package import { BasicEventHandlerInterface } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandlerInterface.js';
+      const BasicEventHandlerInterface = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandlerInterface;
+
       
-import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
 
 

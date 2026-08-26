@@ -22,19 +22,33 @@
         
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+//not game specific package import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+      const Bitmap = globalThis.android.graphics.Bitmap;
+
       
-import { Canvas } from '../../../../android/graphics/Canvas.js';
+//not game specific package import { Canvas } from '../../../../android/graphics/Canvas.js';
+      const Canvas = globalThis.android.graphics.Canvas;
+
       
-import { Color } from '../../../../android/graphics/Color.js';
+//not game specific package import { Color } from '../../../../android/graphics/Color.js';
+      const Color = globalThis.android.graphics.Color;
+
       
-import { Matrix } from '../../../../android/graphics/Matrix.js';
+//not game specific package import { Matrix } from '../../../../android/graphics/Matrix.js';
+      const Matrix = globalThis.android.graphics.Matrix;
+
       
-import { Paint } from '../../../../android/graphics/Paint.js';
+//not game specific package import { Paint } from '../../../../android/graphics/Paint.js';
+      const Paint = globalThis.android.graphics.Paint;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+//not game specific package import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+
       
 
 

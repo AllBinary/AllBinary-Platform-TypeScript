@@ -18,7 +18,17 @@
 
 
 
-import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+//not game specific package import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
+      const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

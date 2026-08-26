@@ -24,17 +24,29 @@
         
             import { Thread } from '../../../../../java/lang/Thread.js';
         
-import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
+//not game specific package import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
+      const EGLConfig = globalThis.javax.microedition.khronos.egl.EGLConfig;
+
       
-import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { InitEmulatorFactory } from '../../../../../org/allbinary/emulator/InitEmulatorFactory.js';
+//not game specific package import { InitEmulatorFactory } from '../../../../../org/allbinary/emulator/InitEmulatorFactory.js';
+      const InitEmulatorFactory = globalThis.org.allbinary.emulator.InitEmulatorFactory;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
 
 

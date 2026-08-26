@@ -20,9 +20,25 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { LayerManagerEvent } from '../../../org/allbinary/layer/event/LayerManagerEvent.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/LayerManagerEventHandler.js';
+//not game specific package import { LayerManagerEvent } from '../../../org/allbinary/layer/event/LayerManagerEvent.js';
+      const LayerManagerEvent = globalThis.org.allbinary.layer.event.LayerManagerEvent;
+
+      
+//not game specific package import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/LayerManagerEventHandler.js';
+      const LayerManagerEventHandler = globalThis.org.allbinary.layer.event.LayerManagerEventHandler;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

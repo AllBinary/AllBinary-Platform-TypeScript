@@ -18,7 +18,9 @@
 
 
 
-import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
       
 
 

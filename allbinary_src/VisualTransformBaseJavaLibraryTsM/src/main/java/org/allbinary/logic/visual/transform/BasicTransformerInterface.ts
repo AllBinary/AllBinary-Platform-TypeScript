@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InputStream } from '../../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+
       
-import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+
       
-import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
+//not game specific package import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
+      const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
+
       
 
 

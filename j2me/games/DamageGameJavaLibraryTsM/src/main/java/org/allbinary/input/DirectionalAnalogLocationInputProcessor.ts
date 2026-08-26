@@ -20,27 +20,49 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { AnalogLocationInputProcessor } from '../../../org/allbinary/android/input/motion/AnalogLocationInputProcessor.js';
+//not game specific package import { AnalogLocationInputProcessor } from '../../../org/allbinary/android/input/motion/AnalogLocationInputProcessor.js';
+      const AnalogLocationInputProcessor = globalThis.org.allbinary.android.input.motion.AnalogLocationInputProcessor;
+
       
-import { GameInputProcessor } from '../../../org/allbinary/game/input/GameInputProcessor.js';
+//not game specific package import { GameInputProcessor } from '../../../org/allbinary/game/input/GameInputProcessor.js';
+      const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
+
       
-import { GameKeyEventSourceInterface } from '../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+//not game specific package import { GameKeyEventSourceInterface } from '../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
+      const GameKeyEventSourceInterface = globalThis.org.allbinary.game.input.GameKeyEventSourceInterface;
+
       
-import { GameKeyFactory } from '../../../org/allbinary/game/input/GameKeyFactory.js';
+//not game specific package import { GameKeyFactory } from '../../../org/allbinary/game/input/GameKeyFactory.js';
+      const GameKeyFactory = globalThis.org.allbinary.game.input.GameKeyFactory;
+
       
-import { AnalogLocationInput } from '../../../org/allbinary/game/input/analog/AnalogLocationInput.js';
+//not game specific package import { AnalogLocationInput } from '../../../org/allbinary/game/input/analog/AnalogLocationInput.js';
+      const AnalogLocationInput = globalThis.org.allbinary.game.input.analog.AnalogLocationInput;
+
       
-import { GameKeyEvent } from '../../../org/allbinary/game/input/event/GameKeyEvent.js';
+//not game specific package import { GameKeyEvent } from '../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+
       
-import { GameKeyEventFactory } from '../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+//not game specific package import { GameKeyEventFactory } from '../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+      const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
+
       
-import { CustomGPoint } from '../../../org/allbinary/graphics/CustomGPoint.js';
+//not game specific package import { CustomGPoint } from '../../../org/allbinary/graphics/CustomGPoint.js';
+      const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
+
       
-import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

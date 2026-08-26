@@ -6,17 +6,29 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { IOException } from '../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { MalformedURLException } from '../../../java/net/MalformedURLException.js';
+//not game specific package import { MalformedURLException } from '../../../java/net/MalformedURLException.js';
+      const MalformedURLException = globalThis.java.net.MalformedURLException;
+
       
-import { URL } from '../../../java/net/URL.js';
+//not game specific package import { URL } from '../../../java/net/URL.js';
+      const URL = globalThis.java.net.URL;
+
       
-import { Vector } from '../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+//not game specific package import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+      const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+
       
-import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

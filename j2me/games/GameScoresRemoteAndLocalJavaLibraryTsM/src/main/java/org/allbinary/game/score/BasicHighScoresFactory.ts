@@ -20,27 +20,49 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
       
-import { BasicHighScoresGameInfoFactory } from '../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js';
+//not game specific package import { BasicHighScoresGameInfoFactory } from '../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js';
+      const BasicHighScoresGameInfoFactory = globalThis.org.allbinary.game.BasicHighScoresGameInfoFactory;
+
       
-import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { GameType } from '../../../../org/allbinary/game/GameType.js';
+//not game specific package import { GameType } from '../../../../org/allbinary/game/GameType.js';
+      const GameType = globalThis.org.allbinary.game.GameType;
+
       
-import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
+//not game specific package import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
+      const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
+
       
-import { RemoteHighScores } from '../../../../org/allbinary/game/score/remote/RemoteHighScores.js';
+//not game specific package import { RemoteHighScores } from '../../../../org/allbinary/game/score/remote/RemoteHighScores.js';
+      const RemoteHighScores = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
       
-import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+//not game specific package import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+      const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+
       
-import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryThreadPool.js';
+//not game specific package import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryThreadPool.js';
+      const SecondaryThreadPool = globalThis.org.allbinary.thread.SecondaryThreadPool;
+
       
 
 

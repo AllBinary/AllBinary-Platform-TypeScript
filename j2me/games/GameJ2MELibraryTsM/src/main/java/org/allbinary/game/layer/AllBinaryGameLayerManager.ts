@@ -20,25 +20,65 @@
 
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
-import { NullPlayerGameInputComposite } from '../../../../org/allbinary/game/input/NullPlayerGameInputComposite.js';
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
-import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
-import { ItemColorFactory } from '../../../../org/allbinary/graphics/ItemColorFactory.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { NullPlayerGameInputComposite } from '../../../../org/allbinary/game/input/NullPlayerGameInputComposite.js';
+      const NullPlayerGameInputComposite = globalThis.org.allbinary.game.input.NullPlayerGameInputComposite;
+
       
-import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+//not game specific package import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
+      const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
+
       
-import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
+//not game specific package import { ItemColorFactory } from '../../../../org/allbinary/graphics/ItemColorFactory.js';
+      const ItemColorFactory = globalThis.org.allbinary.graphics.ItemColorFactory;
+
       
-import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
+      
+//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+      
+//not game specific package import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
+      const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
+
+      
+//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
+      
+//not game specific package import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
+      
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 
@@ -62,7 +102,26 @@ import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js
 export class AllBinaryGameLayerManager extends AllBinaryLayerManager {
         
 
-    public static readonly NULL_ALLBINARY_LAYER_MANAGER: AllBinaryGameLayerManager = new AllBinaryGameLayerManager(BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE, GameInfo.NONE);
+    private static NULL_ALLBINARY_LAYER_MANAGER: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullInstance(): AllBinaryGameLayerManager{
+
+                        if(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER= new AllBinaryGameLayerManager(BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE, GameInfo.NONE);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER as AllBinaryGameLayerManager;
+    
+}
+
 
     public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(22)!;
 

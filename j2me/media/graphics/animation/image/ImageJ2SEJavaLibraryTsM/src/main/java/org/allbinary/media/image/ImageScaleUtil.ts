@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
+//not game specific package import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
+      const Graphics2D = globalThis.java.awt.Graphics2D;
+
       
-import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
+//not game specific package import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
+      const AffineTransform = globalThis.java.awt.geom.AffineTransform;
+
       
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+
       
 
 

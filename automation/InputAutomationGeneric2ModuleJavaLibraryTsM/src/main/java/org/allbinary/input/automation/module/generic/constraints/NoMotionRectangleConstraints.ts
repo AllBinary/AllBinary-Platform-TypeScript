@@ -22,11 +22,17 @@
         
             import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { awt } from '../../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { MotionRectangleConstraints } from '../../../../../../../org/allbinary/input/automation/module/MotionRectangleConstraints.js';
+//not game specific package import { MotionRectangleConstraints } from '../../../../../../../org/allbinary/input/automation/module/MotionRectangleConstraints.js';
+      const MotionRectangleConstraints = globalThis.org.allbinary.input.automation.module.MotionRectangleConstraints;
+
       
 
 

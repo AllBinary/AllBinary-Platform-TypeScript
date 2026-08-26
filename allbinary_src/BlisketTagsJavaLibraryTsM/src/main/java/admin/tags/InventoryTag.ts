@@ -20,17 +20,29 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
+//not game specific package import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
+      const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
+
       
-import { InventoryHelperFactory } from '../../admin/taghelpers/InventoryHelperFactory.js';
+//not game specific package import { InventoryHelperFactory } from '../../admin/taghelpers/InventoryHelperFactory.js';
+      const InventoryHelperFactory = globalThis.admin.taghelpers.InventoryHelperFactory;
+
       
-import { InventoryRequestHelperFactory } from '../../admin/taghelpers/InventoryRequestHelperFactory.js';
+//not game specific package import { InventoryRequestHelperFactory } from '../../admin/taghelpers/InventoryRequestHelperFactory.js';
+      const InventoryRequestHelperFactory = globalThis.admin.taghelpers.InventoryRequestHelperFactory;
+
       
-import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
 
 

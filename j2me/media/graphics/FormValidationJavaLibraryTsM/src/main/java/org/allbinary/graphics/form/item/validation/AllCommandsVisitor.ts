@@ -18,9 +18,25 @@
 
 
 
-import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+//not game specific package import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+//not game specific package import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+
+      
+//not game specific package import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+
+      
+//not game specific package import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

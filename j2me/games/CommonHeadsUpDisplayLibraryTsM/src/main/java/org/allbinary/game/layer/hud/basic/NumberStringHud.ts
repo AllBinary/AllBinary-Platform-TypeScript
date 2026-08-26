@@ -20,23 +20,53 @@
 
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { BasicHudFactory } from '../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
+//not game specific package import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+      const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
+
       
-import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicHudFactory } from '../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
+      const BasicHudFactory = globalThis.org.allbinary.game.graphics.hud.BasicHudFactory;
+
       
-import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
       
-import { PrimitiveLongSingleton } from '../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
+//not game specific package import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
-import { PrimitiveLongUtil } from '../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not game specific package import { PrimitiveLongSingleton } from '../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
+      const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
+
+      
+//not game specific package import { PrimitiveLongUtil } from '../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+      const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

@@ -20,9 +20,17 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { NullMIDlet } from '../../../javax/microedition/midlet/NullMIDlet.js';
+//not game specific package import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 
@@ -42,7 +50,8 @@ import { NullMIDlet } from '../../../javax/microedition/midlet/NullMIDlet.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { AllBinaryMidlet } from './AllBinaryMidlet.js';
+
 export class MidletFactoryInterface
             extends Object
          {
@@ -53,7 +62,7 @@ export class MidletFactoryInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullMIDlet.NULL_MIDLET;
+                        return AllBinaryMidlet.getNullInstance();;
     
 }
 

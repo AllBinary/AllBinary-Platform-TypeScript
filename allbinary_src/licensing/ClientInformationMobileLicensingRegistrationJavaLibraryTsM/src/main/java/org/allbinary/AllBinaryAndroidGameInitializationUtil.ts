@@ -22,11 +22,17 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+//not game specific package import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+
       
-import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
+//not game specific package import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
+      const PartnerIdentifierFileUtil = globalThis.org.allbinary.logic.system.security.licensing.PartnerIdentifierFileUtil;
+
       
 
 

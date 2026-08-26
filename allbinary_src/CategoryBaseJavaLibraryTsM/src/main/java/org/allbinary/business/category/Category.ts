@@ -24,33 +24,61 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { CategoryHierarchy } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchy.js';
+//not game specific package import { CategoryHierarchy } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchy.js';
+      const CategoryHierarchy = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchy;
+
       
-import { CategoryHierarchyInterface } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
+//not game specific package import { CategoryHierarchyInterface } from '../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
+      const CategoryHierarchyInterface = globalThis.org.allbinary.business.category.hierarchy.CategoryHierarchyInterface;
+
       
-import { CategoryPropertiesFactoryInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
+//not game specific package import { CategoryPropertiesFactoryInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
+      const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
+
       
-import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
+//not game specific package import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
+      const CategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesInterface;
+
       
-import { RootCategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/root/RootCategoryPropertiesInterface.js';
+//not game specific package import { RootCategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/root/RootCategoryPropertiesInterface.js';
+      const RootCategoryPropertiesInterface = globalThis.org.allbinary.business.category.properties.root.RootCategoryPropertiesInterface;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

@@ -20,7 +20,9 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
+//not game specific package import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
+      const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
+
       
 
 

@@ -8,7 +8,9 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { Stack } from '../../../java/util/Stack.js';
+//not game specific package import { Stack } from '../../../java/util/Stack.js';
+      const Stack = globalThis.java.util.Stack;
+
       
 
 

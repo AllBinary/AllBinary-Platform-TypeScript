@@ -20,27 +20,49 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from '../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { BasketHelperFactory } from '../../admin/taghelpers/BasketHelperFactory.js';
+//not game specific package import { BasketHelperFactory } from '../../admin/taghelpers/BasketHelperFactory.js';
+      const BasketHelperFactory = globalThis.admin.taghelpers.BasketHelperFactory;
+
       
-import { BasketRequestHelperFactory } from '../../admin/taghelpers/BasketRequestHelperFactory.js';
+//not game specific package import { BasketRequestHelperFactory } from '../../admin/taghelpers/BasketRequestHelperFactory.js';
+      const BasketRequestHelperFactory = globalThis.admin.taghelpers.BasketRequestHelperFactory;
+
       
-import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { BasketData } from '../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js';
+//not game specific package import { BasketData } from '../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js';
+      const BasketData = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketData;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+//not game specific package import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+      const CustomTagSupport = globalThis.tags.CustomTagSupport;
+
       
 
 

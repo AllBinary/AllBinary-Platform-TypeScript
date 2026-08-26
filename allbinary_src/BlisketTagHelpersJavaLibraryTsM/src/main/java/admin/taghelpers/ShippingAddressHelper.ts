@@ -22,33 +22,61 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+//not game specific package import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+      const Portion = globalThis.org.allbinary.business.installer.Portion;
+
       
-import { UserData } from '../../org/allbinary/business/user/UserData.js';
+//not game specific package import { UserData } from '../../org/allbinary/business/user/UserData.js';
+      const UserData = globalThis.org.allbinary.business.user.UserData;
+
       
-import { StreetAddress } from '../../org/allbinary/business/user/address/StreetAddress.js';
+//not game specific package import { StreetAddress } from '../../org/allbinary/business/user/address/StreetAddress.js';
+      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+
       
-import { BillingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntityFactory.js';
+//not game specific package import { BillingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntityFactory.js';
+      const BillingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntityFactory;
+
       
-import { ShippingAddressesEntity } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
+//not game specific package import { ShippingAddressesEntity } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
+      const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
+
       
-import { ShippingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntityFactory.js';
+//not game specific package import { ShippingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntityFactory.js';
+      const ShippingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntityFactory;
+
       
-import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+//not game specific package import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+
       
-import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
+//not game specific package import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
+      const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+//not game specific package import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+      const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+
       
-import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

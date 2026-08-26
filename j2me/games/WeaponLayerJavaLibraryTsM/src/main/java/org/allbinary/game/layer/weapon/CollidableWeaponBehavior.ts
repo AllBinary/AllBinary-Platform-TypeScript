@@ -20,23 +20,61 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CollidableHelperFactory } from '../../../../../org/allbinary/game/collision/CollidableHelperFactory.js';
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
-import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
-import { CollisionHelper } from '../../../../../org/allbinary/game/collision/CollisionHelper.js';
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
-import { CollisionType } from '../../../../../org/allbinary/game/collision/CollisionType.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CollisionTypeFactory } from '../../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
+//not game specific package import { CollidableHelperFactory } from '../../../../../org/allbinary/game/collision/CollidableHelperFactory.js';
+      const CollidableHelperFactory = globalThis.org.allbinary.game.collision.CollidableHelperFactory;
+
       
-import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
+//not game specific package import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
+      const CollidableInterfaceCompositeInterface = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
+
       
-import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+//not game specific package import { CollisionHelper } from '../../../../../org/allbinary/game/collision/CollisionHelper.js';
+      const CollisionHelper = globalThis.org.allbinary.game.collision.CollisionHelper;
+
       
-import { CollidableDestroyableDamageableBehavior } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
+//not game specific package import { CollisionType } from '../../../../../org/allbinary/game/collision/CollisionType.js';
+      const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
+
       
-import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { CollisionTypeFactory } from '../../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
+      const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
+
+      
+//not game specific package import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
+      const DamageableInterface = globalThis.org.allbinary.game.combat.damage.DamageableInterface;
+
+      
+//not game specific package import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+      const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
+
+      
+//not game specific package import { CollidableDestroyableDamageableBehavior } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
+      const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
+
+      
+//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
+      
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 
@@ -60,7 +98,26 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
 export class CollidableWeaponBehavior extends CollidableDestroyableDamageableBehavior {
         
 
-    public static readonly NULL_COLLIDABLE_WEAPON_BEHAVIOR: CollidableWeaponBehavior = new CollidableWeaponBehavior(false);
+    private static NULL_COLLIDABLE_WEAPON_BEHAVIOR: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullInstance(): CollidableWeaponBehavior{
+
+                        if(CollidableWeaponBehavior.NULL_COLLIDABLE_WEAPON_BEHAVIOR == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    CollidableWeaponBehavior.NULL_COLLIDABLE_WEAPON_BEHAVIOR= new CollidableWeaponBehavior(false);
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return CollidableWeaponBehavior.NULL_COLLIDABLE_WEAPON_BEHAVIOR as CollidableWeaponBehavior;
+    
+}
+
 
     private collided: boolean= false;
 

@@ -18,7 +18,9 @@
 
 
 
-import { GameFeature } from '../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js';
+//not game specific package import { GameFeature } from '../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js';
+      const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
+
       
 
 

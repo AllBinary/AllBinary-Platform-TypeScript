@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { MyRandomFactory } from '../../../../org/allbinary/game/rand/MyRandomFactory.js';
+//not game specific package import { MyRandomFactory } from '../../../../org/allbinary/game/rand/MyRandomFactory.js';
+      const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

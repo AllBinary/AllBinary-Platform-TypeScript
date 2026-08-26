@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+//not game specific package import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

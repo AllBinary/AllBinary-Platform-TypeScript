@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+
       
-import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+//not game specific package import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+      const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+
       
-import { CustomUriResolver } from '../../../../../org/allbinary/data/tree/dom/CustomUriResolver.js';
+//not game specific package import { CustomUriResolver } from '../../../../../org/allbinary/data/tree/dom/CustomUriResolver.js';
+      const CustomUriResolver = globalThis.org.allbinary.data.tree.dom.CustomUriResolver;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
+//not game specific package import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
+      const TransformInfoObjectConfigAndManipulatorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactory;
+
       
-import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
+//not game specific package import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
+      const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
+
       
 
 

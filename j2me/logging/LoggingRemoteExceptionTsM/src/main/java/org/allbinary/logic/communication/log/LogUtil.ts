@@ -26,23 +26,41 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-import { IOException } from '../../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
+//not game specific package import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
+      const XmlRpcException = globalThis.org.apache.xmlrpc.XmlRpcException;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { SpecialMessageUtil } from '../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
+//not game specific package import { SpecialMessageUtil } from '../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
+      const SpecialMessageUtil = globalThis.org.allbinary.canvas.SpecialMessageUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
 
 

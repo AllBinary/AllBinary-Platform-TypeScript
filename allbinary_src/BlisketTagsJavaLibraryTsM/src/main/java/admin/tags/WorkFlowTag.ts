@@ -18,7 +18,9 @@
 
 
 
-import { WorkFlowHelperFactory } from '../../admin/taghelpers/WorkFlowHelperFactory.js';
+//not game specific package import { WorkFlowHelperFactory } from '../../admin/taghelpers/WorkFlowHelperFactory.js';
+      const WorkFlowHelperFactory = globalThis.admin.taghelpers.WorkFlowHelperFactory;
+
       
 
 

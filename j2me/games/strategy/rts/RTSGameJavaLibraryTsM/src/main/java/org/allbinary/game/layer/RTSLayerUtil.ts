@@ -24,31 +24,57 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from '../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { GroupCommonFactory } from '../../../../org/allbinary/game/identification/GroupCommonFactory.js';
+//not game specific package import { GroupCommonFactory } from '../../../../org/allbinary/game/identification/GroupCommonFactory.js';
+      const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+//not game specific package import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+
       
-import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+//not game specific package import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+
       
-import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+//not game specific package import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+      const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
+
       
-import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
+//not game specific package import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
+      const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
+
       
-import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
+//not game specific package import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
+      const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+//not game specific package import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
       
-import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
+//not game specific package import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
+      const BaseRaceTrackGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.racetrack.BaseRaceTrackGeographicMap;
+
       
 
 

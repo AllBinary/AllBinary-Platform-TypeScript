@@ -22,19 +22,33 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from '../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { PaymentProcessHelperFactory } from '../../admin/taghelpers/PaymentProcessHelperFactory.js';
+//not game specific package import { PaymentProcessHelperFactory } from '../../admin/taghelpers/PaymentProcessHelperFactory.js';
+      const PaymentProcessHelperFactory = globalThis.admin.taghelpers.PaymentProcessHelperFactory;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { StoreValidationTransformTag } from '../../tags/StoreValidationTransformTag.js';
+//not game specific package import { StoreValidationTransformTag } from '../../tags/StoreValidationTransformTag.js';
+      const StoreValidationTransformTag = globalThis.tags.StoreValidationTransformTag;
+
       
 
 

@@ -22,13 +22,21 @@
         
             import { Float } from '../../../../java/lang/Float.js';
         
-import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
+//not game specific package import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
+      const ImageAnalysisResults = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
+
       
-import { ImageColorRangeResults } from '../../../../org/allbinary/media/image/analysis/ImageColorRangeResults.js';
+//not game specific package import { ImageColorRangeResults } from '../../../../org/allbinary/media/image/analysis/ImageColorRangeResults.js';
+      const ImageColorRangeResults = globalThis.org.allbinary.media.image.analysis.ImageColorRangeResults;
+
       
-import { ImageColorResults } from '../../../../org/allbinary/media/image/analysis/ImageColorResults.js';
+//not game specific package import { ImageColorResults } from '../../../../org/allbinary/media/image/analysis/ImageColorResults.js';
+      const ImageColorResults = globalThis.org.allbinary.media.image.analysis.ImageColorResults;
+
       
-import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
 
 

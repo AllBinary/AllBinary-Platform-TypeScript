@@ -18,7 +18,9 @@
 
 
 
-import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+//not game specific package import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+
       
 
 

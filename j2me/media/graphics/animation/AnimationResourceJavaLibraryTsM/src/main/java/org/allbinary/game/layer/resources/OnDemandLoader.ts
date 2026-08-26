@@ -22,25 +22,45 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
+//not game specific package import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
+      const BaseResourceAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.resource.BaseResourceAnimationInterfaceFactoryInterfaceFactory;
+
       
-import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { MainFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+//not game specific package import { MainFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+
       
-import { GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory } from '../../../../../org/allbinary/game/layer/GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory.js';
+//not game specific package import { GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory } from '../../../../../org/allbinary/game/layer/GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory.js';
+      const GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory = globalThis.org.allbinary.game.layer.GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory;
+
       
-import { LayerPlacementInterfaceBasicArrayListFactoryInterface } from '../../../../../org/allbinary/game/layer/LayerPlacementInterfaceBasicArrayListFactoryInterface.js';
+//not game specific package import { LayerPlacementInterfaceBasicArrayListFactoryInterface } from '../../../../../org/allbinary/game/layer/LayerPlacementInterfaceBasicArrayListFactoryInterface.js';
+      const LayerPlacementInterfaceBasicArrayListFactoryInterface = globalThis.org.allbinary.game.layer.LayerPlacementInterfaceBasicArrayListFactoryInterface;
+
       
-import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+//not game specific package import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+      const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
+
       
-import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
+//not game specific package import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
+      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+
       
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

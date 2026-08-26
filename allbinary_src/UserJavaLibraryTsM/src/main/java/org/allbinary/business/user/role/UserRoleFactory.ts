@@ -20,37 +20,69 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { UserFactory } from '../../../../../org/allbinary/business/user/modules/UserFactory.js';
+//not game specific package import { UserFactory } from '../../../../../org/allbinary/business/user/modules/UserFactory.js';
+      const UserFactory = globalThis.org.allbinary.business.user.modules.UserFactory;
+
       
-import { AdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/AdminUserFactory.js';
+//not game specific package import { AdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/AdminUserFactory.js';
+      const AdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.AdminUserFactory;
+
       
-import { StoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/StoreAdminUserFactory.js';
+//not game specific package import { StoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/StoreAdminUserFactory.js';
+      const StoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.StoreAdminUserFactory;
+
       
-import { CustomerStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/customer/CustomerStoreAdminUserFactory.js';
+//not game specific package import { CustomerStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/customer/CustomerStoreAdminUserFactory.js';
+      const CustomerStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.customer.CustomerStoreAdminUserFactory;
+
       
-import { OrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/OrderStoreAdminUserFactory.js';
+//not game specific package import { OrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/OrderStoreAdminUserFactory.js';
+      const OrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.OrderStoreAdminUserFactory;
+
       
-import { AdjustOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/adjust/AdjustOrderStoreAdminUserFactory.js';
+//not game specific package import { AdjustOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/adjust/AdjustOrderStoreAdminUserFactory.js';
+      const AdjustOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.adjust.AdjustOrderStoreAdminUserFactory;
+
       
-import { ReviewOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/review/ReviewOrderStoreAdminUserFactory.js';
+//not game specific package import { ReviewOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/review/ReviewOrderStoreAdminUserFactory.js';
+      const ReviewOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.review.ReviewOrderStoreAdminUserFactory;
+
       
-import { ShipOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/ship/ShipOrderStoreAdminUserFactory.js';
+//not game specific package import { ShipOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/ship/ShipOrderStoreAdminUserFactory.js';
+      const ShipOrderStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.order.ship.ShipOrderStoreAdminUserFactory;
+
       
-import { PaymentStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/payment/PaymentStoreAdminUserFactory.js';
+//not game specific package import { PaymentStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/payment/PaymentStoreAdminUserFactory.js';
+      const PaymentStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.payment.PaymentStoreAdminUserFactory;
+
       
-import { ProductStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/product/ProductStoreAdminUserFactory.js';
+//not game specific package import { ProductStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/product/ProductStoreAdminUserFactory.js';
+      const ProductStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.product.ProductStoreAdminUserFactory;
+
       
-import { WebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/WebStoreAdminUserFactory.js';
+//not game specific package import { WebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/WebStoreAdminUserFactory.js';
+      const WebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.WebStoreAdminUserFactory;
+
       
-import { ViewEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/view/editor/ViewEditorWebStoreAdminUserFactory.js';
+//not game specific package import { ViewEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/view/editor/ViewEditorWebStoreAdminUserFactory.js';
+      const ViewEditorWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.view.editor.ViewEditorWebStoreAdminUserFactory;
+
       
-import { WizardWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/wizard/WizardWebStoreAdminUserFactory.js';
+//not game specific package import { WizardWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/wizard/WizardWebStoreAdminUserFactory.js';
+      const WizardWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.wizard.WizardWebStoreAdminUserFactory;
+
       
-import { WorkflowEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/workflow/editor/WorkflowEditorWebStoreAdminUserFactory.js';
+//not game specific package import { WorkflowEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/workflow/editor/WorkflowEditorWebStoreAdminUserFactory.js';
+      const WorkflowEditorWebStoreAdminUserFactory = globalThis.org.allbinary.business.user.modules.admin.store.web.workflow.editor.WorkflowEditorWebStoreAdminUserFactory;
+
       
-import { SubscriberUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/subscriber/SubscriberUserFactory.js';
+//not game specific package import { SubscriberUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/subscriber/SubscriberUserFactory.js';
+      const SubscriberUserFactory = globalThis.org.allbinary.business.user.modules.customer.subscriber.SubscriberUserFactory;
+
       
-import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/wholesale/WholesaleUserFactory.js';
+//not game specific package import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/wholesale/WholesaleUserFactory.js';
+      const WholesaleUserFactory = globalThis.org.allbinary.business.user.modules.customer.wholesale.WholesaleUserFactory;
+
       
 
 

@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { MotionEvent } from '../../../../../../android/view/MotionEvent.js';
+//not game specific package import { MotionEvent } from '../../../../../../android/view/MotionEvent.js';
+      const MotionEvent = globalThis.android.view.MotionEvent;
+
       
-import { BaseGameInputMotionEventProcessor } from '../../../../../../org/allbinary/android/input/motion/BaseGameInputMotionEventProcessor.js';
+//not game specific package import { BaseGameInputMotionEventProcessor } from '../../../../../../org/allbinary/android/input/motion/BaseGameInputMotionEventProcessor.js';
+      const BaseGameInputMotionEventProcessor = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
+
       
-import { AllMotionRecognizer } from '../../../../../../org/allbinary/input/motion/AllMotionRecognizer.js';
+//not game specific package import { AllMotionRecognizer } from '../../../../../../org/allbinary/input/motion/AllMotionRecognizer.js';
+      const AllMotionRecognizer = globalThis.org.allbinary.input.motion.AllMotionRecognizer;
+
       
-import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/MotionRecognizer.js';
+//not game specific package import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/MotionRecognizer.js';
+      const MotionRecognizer = globalThis.org.allbinary.input.motion.MotionRecognizer;
+
       
-import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

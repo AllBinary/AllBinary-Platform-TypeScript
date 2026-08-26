@@ -18,7 +18,17 @@
 
 
 
-import { GameConfiguration } from '../../../../../org/allbinary/game/configuration/GameConfiguration.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+//not game specific package import { GameConfiguration } from '../../../../../org/allbinary/game/configuration/GameConfiguration.js';
+      const GameConfiguration = globalThis.org.allbinary.game.configuration.GameConfiguration;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

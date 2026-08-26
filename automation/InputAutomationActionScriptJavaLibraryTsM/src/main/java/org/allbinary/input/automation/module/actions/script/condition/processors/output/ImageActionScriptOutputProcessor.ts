@@ -24,17 +24,29 @@
         
             import { Long } from '../../../../../../../../../../java/lang/Long.js';
         
-import { Vector } from '../../../../../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { InputImageIOInterfaceFactory } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js';
+//not game specific package import { InputImageIOInterfaceFactory } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js';
+      const InputImageIOInterfaceFactory = globalThis.org.allbinary.input.media.image.InputImageIOInterfaceFactory;
+
       
-import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
+//not game specific package import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
+      const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
+
       
-import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
+//not game specific package import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
+      const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
+
       
-import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

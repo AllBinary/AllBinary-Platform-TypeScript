@@ -24,15 +24,25 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { awt } from '../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { ColorCacheFactory } from '../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
+//not game specific package import { ColorCacheFactory } from '../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
+      const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
+
       
-import { ColorCacheable } from '../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
+//not game specific package import { ColorCacheable } from '../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
+      const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
+
       
-import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+//not game specific package import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+
       
 
 

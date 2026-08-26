@@ -22,15 +22,25 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { NullParcelable } from '../../../org/allbinary/android/NullParcelable.js';
+//not game specific package import { NullParcelable } from '../../../org/allbinary/android/NullParcelable.js';
+      const NullParcelable = globalThis.org.allbinary.android.NullParcelable;
+
       
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { PendingIntent } from '../../../android/app/PendingIntent.js';
+//not game specific package import { PendingIntent } from '../../../android/app/PendingIntent.js';
+      const PendingIntent = globalThis.android.app.PendingIntent;
+
       
-import { Context } from '../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { Parcelable } from '../../../android/os/Parcelable.js';
+//not game specific package import { Parcelable } from '../../../android/os/Parcelable.js';
+      const Parcelable = globalThis.android.os.Parcelable;
+
       
 
 

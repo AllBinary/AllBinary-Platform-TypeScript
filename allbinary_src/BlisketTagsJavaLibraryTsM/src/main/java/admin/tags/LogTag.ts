@@ -18,7 +18,9 @@
 
 
 
-import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
+//not game specific package import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
+      const LogHelperFactory = globalThis.admin.taghelpers.LogHelperFactory;
+
       
 
 

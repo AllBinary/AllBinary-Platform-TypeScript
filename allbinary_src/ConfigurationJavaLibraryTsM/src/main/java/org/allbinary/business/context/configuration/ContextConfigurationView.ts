@@ -22,21 +22,37 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+//not game specific package import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+
       
-import { EmailServerConfigurationData } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationData.js';
+//not game specific package import { EmailServerConfigurationData } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationData.js';
+      const EmailServerConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationData;
+
       
-import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
+//not game specific package import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
+      const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
+
       
-import { EmailServerConfigurationView } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationView.js';
+//not game specific package import { EmailServerConfigurationView } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationView.js';
+      const EmailServerConfigurationView = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationView;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

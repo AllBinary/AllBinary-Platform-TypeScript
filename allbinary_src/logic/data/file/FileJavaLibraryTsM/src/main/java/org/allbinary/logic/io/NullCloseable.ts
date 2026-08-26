@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Closeable } from '../../../../java/io/Closeable.js';
+//not game specific package import { Closeable } from '../../../../java/io/Closeable.js';
+      const Closeable = globalThis.java.io.Closeable;
+
       
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
 
 

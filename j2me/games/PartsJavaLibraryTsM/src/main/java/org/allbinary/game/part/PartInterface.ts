@@ -18,9 +18,17 @@
 
 
 
-import { AnimationInterfaceCompositeInterface } from '../../../../org/allbinary/animation/AnimationInterfaceCompositeInterface.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { AnimationInterfaceCompositeInterface } from '../../../../org/allbinary/animation/AnimationInterfaceCompositeInterface.js';
+      const AnimationInterfaceCompositeInterface = globalThis.org.allbinary.animation.AnimationInterfaceCompositeInterface;
+
+      
+//not game specific package import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
 
 

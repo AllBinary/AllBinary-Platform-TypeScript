@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { swing } from '../../../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { AbstractInputAutomationFactory } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
+//not game specific package import { AbstractInputAutomationFactory } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
+      const AbstractInputAutomationFactory = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationFactory;
+
       
-import { InputAutomationModuleData } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+//not game specific package import { InputAutomationModuleData } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+      const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
+
       
-import { BlankModuleConfigurationJPanel } from '../../../../../../../org/allbinary/input/automation/module/configuration/BlankModuleConfigurationJPanel.js';
+//not game specific package import { BlankModuleConfigurationJPanel } from '../../../../../../../org/allbinary/input/automation/module/configuration/BlankModuleConfigurationJPanel.js';
+      const BlankModuleConfigurationJPanel = globalThis.org.allbinary.input.automation.module.configuration.BlankModuleConfigurationJPanel;
+
       
-import { RunnableInterface } from '../../../../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { RunnableInterface } from '../../../../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
 
 

@@ -22,9 +22,13 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-import { Activity } from '../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { Build } from '../../android/os/Build.js';
+//not game specific package import { Build } from '../../android/os/Build.js';
+      const Build = globalThis.android.os.Build;
+
       
 
 

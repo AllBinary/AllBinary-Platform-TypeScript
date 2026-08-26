@@ -18,7 +18,9 @@
 
 
 
-import { AdvertisementImageInterface } from '../../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
+//not game specific package import { AdvertisementImageInterface } from '../../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
+      const AdvertisementImageInterface = globalThis.org.allbinary.business.advertisement.image.AdvertisementImageInterface;
+
       
 
 

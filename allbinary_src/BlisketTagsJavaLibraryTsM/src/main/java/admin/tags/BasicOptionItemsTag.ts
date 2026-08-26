@@ -18,11 +18,17 @@
 
 
 
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { BasicOptionItemsHelperFactory } from '../../admin/taghelpers/BasicOptionItemsHelperFactory.js';
+//not game specific package import { BasicOptionItemsHelperFactory } from '../../admin/taghelpers/BasicOptionItemsHelperFactory.js';
+      const BasicOptionItemsHelperFactory = globalThis.admin.taghelpers.BasicOptionItemsHelperFactory;
+
       
-import { BasicOptionItemsRequestHelperFactory } from '../../admin/taghelpers/BasicOptionItemsRequestHelperFactory.js';
+//not game specific package import { BasicOptionItemsRequestHelperFactory } from '../../admin/taghelpers/BasicOptionItemsRequestHelperFactory.js';
+      const BasicOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.BasicOptionItemsRequestHelperFactory;
+
       
 
 

@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/TiledLayer.js';
+//not game specific package import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/TiledLayer.js';
+      const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
+
       
 
 

@@ -22,25 +22,45 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { File } from '../../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileReader } from '../../../../../../java/io/FileReader.js';
+//not game specific package import { FileReader } from '../../../../../../java/io/FileReader.js';
+      const FileReader = globalThis.java.io.FileReader;
+
       
-import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
+//not game specific package import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
+      const LineNumberReader = globalThis.java.io.LineNumberReader;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+//not game specific package import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+      const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
+
       
-import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+//not game specific package import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { XmlRpcAbeLicenseRetrievalClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/XmlRpcAbeLicenseRetrievalClient.js';
+//not game specific package import { XmlRpcAbeLicenseRetrievalClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/XmlRpcAbeLicenseRetrievalClient.js';
+      const XmlRpcAbeLicenseRetrievalClient = globalThis.org.allbinary.logic.system.security.licensing.client.XmlRpcAbeLicenseRetrievalClient;
+
       
-import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+//not game specific package import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+      const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

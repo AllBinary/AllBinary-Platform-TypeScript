@@ -18,15 +18,25 @@
 
 
 
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+//not game specific package import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
       
-import { CanvasDrawLineString } from '../../../../../org/allbinary/graphics/draw/CanvasDrawLineString.js';
+//not game specific package import { CanvasDrawLineString } from '../../../../../org/allbinary/graphics/draw/CanvasDrawLineString.js';
+      const CanvasDrawLineString = globalThis.org.allbinary.graphics.draw.CanvasDrawLineString;
+
       
-import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
+//not game specific package import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
+      const InitUpdatePaintable = globalThis.org.allbinary.graphics.paint.InitUpdatePaintable;
+
       
 
 

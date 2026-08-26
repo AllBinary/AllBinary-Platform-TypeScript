@@ -22,11 +22,17 @@
         
             import { Class } from '../../../../../java/lang/Class.js';
         
-import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
+//not game specific package import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
+      const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
 
 

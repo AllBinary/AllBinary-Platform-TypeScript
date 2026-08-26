@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { DamageableBaseBehavior } from '../../../../org/allbinary/game/combat/damage/DamageableBaseBehavior.js';
+//not game specific package import { DamageableBaseBehavior } from '../../../../org/allbinary/game/combat/damage/DamageableBaseBehavior.js';
+      const DamageableBaseBehavior = globalThis.org.allbinary.game.combat.damage.DamageableBaseBehavior;
+
       
-import { DestroyableBaseBehavior } from '../../../../org/allbinary/game/combat/destroy/DestroyableBaseBehavior.js';
+//not game specific package import { DestroyableBaseBehavior } from '../../../../org/allbinary/game/combat/destroy/DestroyableBaseBehavior.js';
+      const DestroyableBaseBehavior = globalThis.org.allbinary.game.combat.destroy.DestroyableBaseBehavior;
+
       
 
 

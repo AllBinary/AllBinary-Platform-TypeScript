@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { ShaderComposite } from '../../../../org/allbinary/graphics/opengles/shader/ShaderComposite.js';
+//not game specific package import { ShaderComposite } from '../../../../org/allbinary/graphics/opengles/shader/ShaderComposite.js';
+      const ShaderComposite = globalThis.org.allbinary.graphics.opengles.shader.ShaderComposite;
+
       
 
 

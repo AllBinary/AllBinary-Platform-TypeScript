@@ -20,51 +20,113 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+
       
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { DemoCanvas } from '../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
+//not game specific package import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+      const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+
       
-import { GameInputMappingCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
+//not game specific package import { DemoCanvas } from '../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
+      const DemoCanvas = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
+
       
-import { GameInputMappingInstructionsCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
+//not game specific package import { GameInputMappingCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
+      const GameInputMappingCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingCanvas;
+
       
-import { GameRunnable } from '../../../../org/allbinary/game/displayable/canvas/GameRunnable.js';
+//not game specific package import { GameInputMappingInstructionsCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
+      const GameInputMappingInstructionsCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingInstructionsCanvas;
+
       
-import { NullDisplayable } from '../../../../org/allbinary/game/displayable/canvas/NullDisplayable.js';
+//not game specific package import { GameRunnable } from '../../../../org/allbinary/game/displayable/canvas/GameRunnable.js';
+      const GameRunnable = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
+
       
-import { NullWaitGameRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
+//not game specific package import { NullDisplayable } from '../../../../org/allbinary/game/displayable/canvas/NullDisplayable.js';
+      const NullDisplayable = globalThis.org.allbinary.game.displayable.canvas.NullDisplayable;
+
       
-import { SWTUtil } from '../../../../org/allbinary/game/layer/SWTUtil.js';
+//not game specific package import { NullWaitGameRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
+      const NullWaitGameRunnable = globalThis.org.allbinary.game.displayable.canvas.NullWaitGameRunnable;
+
       
-import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
+//not game specific package import { SWTUtil } from '../../../../org/allbinary/game/layer/SWTUtil.js';
+      const SWTUtil = globalThis.org.allbinary.game.layer.SWTUtil;
+
       
-import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStrings.js';
+//not game specific package import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
+      const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
+
       
-import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+//not game specific package import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStrings.js';
+      const GraphicsStrings = globalThis.org.allbinary.graphics.GraphicsStrings;
+
       
-import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+//not game specific package import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
+      const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

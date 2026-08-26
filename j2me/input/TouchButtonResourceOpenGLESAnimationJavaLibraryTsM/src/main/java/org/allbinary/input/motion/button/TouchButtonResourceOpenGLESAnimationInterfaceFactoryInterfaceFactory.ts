@@ -20,11 +20,17 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+//not game specific package import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+
       
-import { OpenGLImageCacheFactory } from '../../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
+//not game specific package import { OpenGLImageCacheFactory } from '../../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
+      const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
+
       
 
 

@@ -20,19 +20,33 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from '../../java/lang/reflect/Method.js';
+//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
+      const Method = globalThis.java.lang.reflect.Method;
+
       
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { BasicTextEmailHelperFactory } from '../../admin/taghelpers/BasicTextEmailHelperFactory.js';
+//not game specific package import { BasicTextEmailHelperFactory } from '../../admin/taghelpers/BasicTextEmailHelperFactory.js';
+      const BasicTextEmailHelperFactory = globalThis.admin.taghelpers.BasicTextEmailHelperFactory;
+
       
-import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+//not game specific package import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+      const CustomTagSupport = globalThis.tags.CustomTagSupport;
+
       
 
 

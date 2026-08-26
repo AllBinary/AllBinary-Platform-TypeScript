@@ -22,73 +22,141 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
       
-import { URI } from '../../../../java/net/URI.js';
+//not game specific package import { URI } from '../../../../java/net/URI.js';
+      const URI = globalThis.java.net.URI;
+
       
-import { URL } from '../../../../java/net/URL.js';
+//not game specific package import { URL } from '../../../../java/net/URL.js';
+      const URL = globalThis.java.net.URL;
+
       
-import { Desktop } from '../../../../java/awt/Desktop.js';
+//not game specific package import { Desktop } from '../../../../java/awt/Desktop.js';
+      const Desktop = globalThis.java.awt.Desktop;
+
       
-import { List } from '../../../../java/util/List.js';
+//not game specific package import { List } from '../../../../java/util/List.js';
+      const List = globalThis.java.util.List;
+
       
-import { ImageIcon } from '../../../../javax/swing/ImageIcon.js';
+//not game specific package import { ImageIcon } from '../../../../javax/swing/ImageIcon.js';
+      const ImageIcon = globalThis.javax.swing.ImageIcon;
+
       
-import { JDialog } from '../../../../javax/swing/JDialog.js';
+//not game specific package import { JDialog } from '../../../../javax/swing/JDialog.js';
+      const JDialog = globalThis.javax.swing.JDialog;
+
       
-import { HelpSet } from '../../../../javax/help/HelpSet.js';
+//not game specific package import { HelpSet } from '../../../../javax/help/HelpSet.js';
+      const HelpSet = globalThis.javax.help.HelpSet;
+
       
-import { HelpSetEvent } from '../../../../javax/help/event/HelpSetEvent.js';
+//not game specific package import { HelpSetEvent } from '../../../../javax/help/event/HelpSetEvent.js';
+      const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
+
       
-import { HelpSetListener } from '../../../../javax/help/event/HelpSetListener.js';
+//not game specific package import { HelpSetListener } from '../../../../javax/help/event/HelpSetListener.js';
+      const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
+
       
-import { InputAutomationBundleActivatorListenerInterface } from '../../../../bundle/input/automation/InputAutomationBundleActivatorListenerInterface.js';
+//not game specific package import { InputAutomationBundleActivatorListenerInterface } from '../../../../bundle/input/automation/InputAutomationBundleActivatorListenerInterface.js';
+      const InputAutomationBundleActivatorListenerInterface = globalThis.bundle.input.automation.InputAutomationBundleActivatorListenerInterface;
+
       
-import { InputAutomationConfigurationModuleChangeListener } from '../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
+//not game specific package import { InputAutomationConfigurationModuleChangeListener } from '../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
+      const InputAutomationConfigurationModuleChangeListener = globalThis.bundle.input.automation.module.configuration.InputAutomationConfigurationModuleChangeListener;
+
       
-import { InputAutomationRobotChangeListener } from '../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
+//not game specific package import { InputAutomationRobotChangeListener } from '../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
+      const InputAutomationRobotChangeListener = globalThis.bundle.input.automation.robot.InputAutomationRobotChangeListener;
+
       
-import { AppUrlGlobals } from '../../../../org/allbinary/globals/AppUrlGlobals.js';
+//not game specific package import { AppUrlGlobals } from '../../../../org/allbinary/globals/AppUrlGlobals.js';
+      const AppUrlGlobals = globalThis.org.allbinary.globals.AppUrlGlobals;
+
       
-import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+//not game specific package import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
+      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+
       
-import { BasicTextJDialog } from '../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
+//not game specific package import { BasicTextJDialog } from '../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
+      const BasicTextJDialog = globalThis.org.allbinary.gui.dialog.BasicTextJDialog;
+
       
-import { JListSwingWorker } from '../../../../org/allbinary/gui/swing/workers/JListSwingWorker.js';
+//not game specific package import { JListSwingWorker } from '../../../../org/allbinary/gui/swing/workers/JListSwingWorker.js';
+      const JListSwingWorker = globalThis.org.allbinary.gui.swing.workers.JListSwingWorker;
+
       
-import { InputAutomationConfiguration } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfiguration.js';
+//not game specific package import { InputAutomationConfiguration } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfiguration.js';
+      const InputAutomationConfiguration = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfiguration;
+
       
-import { InputAutomationConfigurationFactory } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
+//not game specific package import { InputAutomationConfigurationFactory } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
+      const InputAutomationConfigurationFactory = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationFactory;
+
       
-import { InputAutomationConfigurationModuleChangeEvent } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
+//not game specific package import { InputAutomationConfigurationModuleChangeEvent } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
+      const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
+
       
-import { InputAutomationModuleFactoryFactory } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryFactory.js';
+//not game specific package import { InputAutomationModuleFactoryFactory } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryFactory.js';
+      const InputAutomationModuleFactoryFactory = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryFactory;
+
       
-import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+
       
-import { InputAutomationModuleConfiguration } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+//not game specific package import { InputAutomationModuleConfiguration } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+      const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+
       
-import { InputAutomationModuleConfigurations } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
+//not game specific package import { InputAutomationModuleConfigurations } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
+      const InputAutomationModuleConfigurations = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
+
       
-import { DesktopBundle } from '../../../../org/allbinary/input/automation/osgi/DesktopBundle.js';
+//not game specific package import { DesktopBundle } from '../../../../org/allbinary/input/automation/osgi/DesktopBundle.js';
+      const DesktopBundle = globalThis.org.allbinary.input.automation.osgi.DesktopBundle;
+
       
-import { InputRobotFactory } from '../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
+//not game specific package import { InputRobotFactory } from '../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
+      const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
+
       
-import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
+//not game specific package import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
+      const InputAutomationRobotChangeEvent = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotChangeEvent;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+//not game specific package import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+
       
-import { JavaHelpUtil } from '../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
+//not game specific package import { JavaHelpUtil } from '../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
+      const JavaHelpUtil = globalThis.org.allbinary.logic.java.help.JavaHelpUtil;
+
       
-import { WebappClassLoaderInfo } from '../../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
+//not game specific package import { WebappClassLoaderInfo } from '../../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
+      const WebappClassLoaderInfo = globalThis.org.allbinary.logic.system.loader.WebappClassLoaderInfo;
+
       
-import { InputAutomationClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/InputAutomationClientInformationFactory.js';
+//not game specific package import { InputAutomationClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/InputAutomationClientInformationFactory.js';
+      const InputAutomationClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.InputAutomationClientInformationFactory;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
 
 

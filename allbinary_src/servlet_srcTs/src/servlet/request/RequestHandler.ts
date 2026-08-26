@@ -20,21 +20,37 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-import { io } from '../../java/io.js';
+//not game specific package import { io } from '../../java/io.js';
+      const io = globalThis.java.io;
+
       
-import { net } from '../../java/net.js';
+//not game specific package import { net } from '../../java/net.js';
+      const net = globalThis.java.net;
+
       
-import { servlet } from '../../javax/servlet.js';
+//not game specific package import { servlet } from '../../javax/servlet.js';
+      const servlet = globalThis.javax.servlet;
+
       
-import { http } from '../../javax/servlet/http.js';
+//not game specific package import { http } from '../../javax/servlet/http.js';
+      const http = globalThis.javax.servlet.http;
+
       
-import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+//not game specific package import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+      const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+
       
-import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js';
+//not game specific package import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js';
+      const RequestWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.RequestWorkFlowFactory;
+
       
 
 

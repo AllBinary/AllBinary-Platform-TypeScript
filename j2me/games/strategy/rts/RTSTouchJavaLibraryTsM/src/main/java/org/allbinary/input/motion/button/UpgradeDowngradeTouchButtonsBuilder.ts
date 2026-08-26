@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { TouchButtonDowngradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonDowngradeResource.js';
+//not game specific package import { TouchButtonDowngradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonDowngradeResource.js';
+      const TouchButtonDowngradeResource = globalThis.org.allbinary.game.input.resource.TouchButtonDowngradeResource;
+
       
-import { TouchButtonUpgradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonUpgradeResource.js';
+//not game specific package import { TouchButtonUpgradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonUpgradeResource.js';
+      const TouchButtonUpgradeResource = globalThis.org.allbinary.game.input.resource.TouchButtonUpgradeResource;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not game specific package import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
+      const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
+//not game specific package import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
+      const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
+
       
 
 

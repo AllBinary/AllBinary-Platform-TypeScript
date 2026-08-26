@@ -22,17 +22,45 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { AllMotionRecognizer } from '../../../org/allbinary/input/motion/AllMotionRecognizer.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { BasicMotionGesturesHandler } from '../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
+//not game specific package import { AllMotionRecognizer } from '../../../org/allbinary/input/motion/AllMotionRecognizer.js';
+      const AllMotionRecognizer = globalThis.org.allbinary.input.motion.AllMotionRecognizer;
+
       
-import { GameMotionGestureListener } from '../../../org/allbinary/input/motion/gesture/observer/GameMotionGestureListener.js';
+//not game specific package import { BasicMotionGesturesHandler } from '../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
+      const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
+
       
-import { MotionGestureReceiveInterfaceFactory } from '../../../org/allbinary/input/motion/gesture/observer/MotionGestureReceiveInterfaceFactory.js';
+//not game specific package import { GameMotionGestureListener } from '../../../org/allbinary/input/motion/gesture/observer/GameMotionGestureListener.js';
+      const GameMotionGestureListener = globalThis.org.allbinary.input.motion.gesture.observer.GameMotionGestureListener;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { MotionGestureReceiveInterfaceFactory } from '../../../org/allbinary/input/motion/gesture/observer/MotionGestureReceiveInterfaceFactory.js';
+      const MotionGestureReceiveInterfaceFactory = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureReceiveInterfaceFactory;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
+      
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -52,7 +80,7 @@ import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //TouchJ2ME
 export class TouchJ2ME
             extends Object
          {

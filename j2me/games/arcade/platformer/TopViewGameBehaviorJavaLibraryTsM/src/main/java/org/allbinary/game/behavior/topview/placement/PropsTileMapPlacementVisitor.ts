@@ -18,15 +18,25 @@
 
 
 
-import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
+//not game specific package import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
+      const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { TileLayer } from '../../../../../../org/mapeditor/core/TileLayer.js';
+//not game specific package import { TileLayer } from '../../../../../../org/mapeditor/core/TileLayer.js';
+      const TileLayer = globalThis.org.mapeditor.core.TileLayer;
+
       
-import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
+//not game specific package import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
+      const TiledMap = globalThis.org.mapeditor.core.TiledMap;
+
       
 
 

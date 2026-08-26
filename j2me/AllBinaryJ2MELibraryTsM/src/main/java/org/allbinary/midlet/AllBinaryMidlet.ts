@@ -20,41 +20,93 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Hashtable } from '../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { Display } from '../../../javax/microedition/lcdui/Display.js';
+//not game specific package import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
+//not game specific package import { Display } from '../../../javax/microedition/lcdui/Display.js';
+      const Display = globalThis.javax.microedition.lcdui.Display;
+
       
-import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
+//not game specific package import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+
       
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+//not game specific package import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
+      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+
       
-import { MIDletStateChangeException } from '../../../javax/microedition/midlet/MIDletStateChangeException.js';
+//not game specific package import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+
       
-import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { MIDletStateChangeException } from '../../../javax/microedition/midlet/MIDletStateChangeException.js';
+      const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
+
       
-import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { Memory } from '../../../org/allbinary/system/Memory.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { Memory } from '../../../org/allbinary/system/Memory.js';
+      const Memory = globalThis.org.allbinary.system.Memory;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -78,7 +130,26 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
 export class AllBinaryMidlet extends MIDlet implements CommandListener {
         
 
-    public static readonly NULL_ALLBINARY_MIDLET: AllBinaryMidlet = new AllBinaryMidlet();
+    private static NULL_ALLBINARY_MIDLET: any = NullUtil.getInstance()!.NULL_OBJECT;
+
+    public static getNullInstance(): AllBinaryMidlet{
+
+                        if(AllBinaryMidlet.NULL_ALLBINARY_MIDLET == NullUtil.getInstance()!.NULL_OBJECT)
+                        
+                                    {
+                                    AllBinaryMidlet.NULL_ALLBINARY_MIDLET= new AllBinaryMidlet();
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return AllBinaryMidlet.NULL_ALLBINARY_MIDLET as AllBinaryMidlet;
+    
+}
+
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

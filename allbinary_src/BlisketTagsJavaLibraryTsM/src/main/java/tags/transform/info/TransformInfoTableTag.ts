@@ -18,9 +18,13 @@
 
 
 
-import { TableTag } from '../../../admin/tags/TableTag.js';
+//not game specific package import { TableTag } from '../../../admin/tags/TableTag.js';
+      const TableTag = globalThis.admin.tags.TableTag;
+
       
-import { TransformInfoHelperFactory } from '../../../taghelpers/transform/info/TransformInfoHelperFactory.js';
+//not game specific package import { TransformInfoHelperFactory } from '../../../taghelpers/transform/info/TransformInfoHelperFactory.js';
+      const TransformInfoHelperFactory = globalThis.taghelpers.transform.info.TransformInfoHelperFactory;
+
       
 
 

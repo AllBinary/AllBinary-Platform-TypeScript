@@ -18,7 +18,9 @@
 
 
 
-import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
 
 

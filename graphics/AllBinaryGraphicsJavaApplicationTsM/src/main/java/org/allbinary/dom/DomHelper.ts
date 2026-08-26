@@ -22,33 +22,61 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.js';
+//not game specific package import { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.js';
+      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+
       
-import { File } from '../../../java/io/File.js';
+//not game specific package import { File } from '../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { DocumentBuilder } from '../../../javax/xml/parsers/DocumentBuilder.js';
+//not game specific package import { DocumentBuilder } from '../../../javax/xml/parsers/DocumentBuilder.js';
+      const DocumentBuilder = globalThis.javax.xml.parsers.DocumentBuilder;
+
       
-import { DocumentBuilderFactory } from '../../../javax/xml/parsers/DocumentBuilderFactory.js';
+//not game specific package import { DocumentBuilderFactory } from '../../../javax/xml/parsers/DocumentBuilderFactory.js';
+      const DocumentBuilderFactory = globalThis.javax.xml.parsers.DocumentBuilderFactory;
+
       
-import { Transformer } from '../../../javax/xml/transform/Transformer.js';
+//not game specific package import { Transformer } from '../../../javax/xml/transform/Transformer.js';
+      const Transformer = globalThis.javax.xml.transform.Transformer;
+
       
-import { TransformerFactory } from '../../../javax/xml/transform/TransformerFactory.js';
+//not game specific package import { TransformerFactory } from '../../../javax/xml/transform/TransformerFactory.js';
+      const TransformerFactory = globalThis.javax.xml.transform.TransformerFactory;
+
       
-import { DOMSource } from '../../../javax/xml/transform/dom/DOMSource.js';
+//not game specific package import { DOMSource } from '../../../javax/xml/transform/dom/DOMSource.js';
+      const DOMSource = globalThis.javax.xml.transform.dom.DOMSource;
+
       
-import { StreamResult } from '../../../javax/xml/transform/stream/StreamResult.js';
+//not game specific package import { StreamResult } from '../../../javax/xml/transform/stream/StreamResult.js';
+      const StreamResult = globalThis.javax.xml.transform.stream.StreamResult;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
-import { Document } from '../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

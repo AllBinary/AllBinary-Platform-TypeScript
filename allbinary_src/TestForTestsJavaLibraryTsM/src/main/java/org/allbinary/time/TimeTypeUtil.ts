@@ -6,9 +6,13 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { Calendar } from '../../../java/util/Calendar.js';
+//not game specific package import { Calendar } from '../../../java/util/Calendar.js';
+      const Calendar = globalThis.java.util.Calendar;
+
       
-import { TimeZone } from '../../../java/util/TimeZone.js';
+//not game specific package import { TimeZone } from '../../../java/util/TimeZone.js';
+      const TimeZone = globalThis.java.util.TimeZone;
+
       
 
 

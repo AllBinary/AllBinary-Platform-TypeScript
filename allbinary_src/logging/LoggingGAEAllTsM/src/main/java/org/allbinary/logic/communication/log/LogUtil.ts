@@ -24,13 +24,21 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Level } from '../../../../../java/util/logging/Level.js';
+//not game specific package import { Level } from '../../../../../java/util/logging/Level.js';
+      const Level = globalThis.java.util.logging.Level;
+
       
-import { Logger } from '../../../../../java/util/logging/Logger.js';
+//not game specific package import { Logger } from '../../../../../java/util/logging/Logger.js';
+      const Logger = globalThis.java.util.logging.Logger;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

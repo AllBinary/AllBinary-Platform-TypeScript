@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+//not game specific package import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+
       
-import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js';
+//not game specific package import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js';
+      const FileData = globalThis.org.allbinary.logic.io.file.FileData;
+
       
-import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not game specific package import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+      const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
+
       
-import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
+//not game specific package import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
+      const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
+
       
 
 

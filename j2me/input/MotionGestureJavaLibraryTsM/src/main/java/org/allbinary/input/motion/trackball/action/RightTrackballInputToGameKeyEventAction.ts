@@ -18,13 +18,21 @@
 
 
 
-import { PlatformInputMappingFactory } from '../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
+//not game specific package import { PlatformInputMappingFactory } from '../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
+      const PlatformInputMappingFactory = globalThis.org.allbinary.game.input.PlatformInputMappingFactory;
+
       
-import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
+//not game specific package import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
+      const GameKeyCompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.motion.action.GameKeyCompleteMotionGestureInputEvent;
+
       
-import { TrackballMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js';
+//not game specific package import { TrackballMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js';
+      const TrackballMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TrackballMotionGestureFactory;
+
       
-import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
 
 

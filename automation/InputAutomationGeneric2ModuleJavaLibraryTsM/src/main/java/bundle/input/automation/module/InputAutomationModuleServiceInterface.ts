@@ -18,9 +18,13 @@
 
 
 
-import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+
       
-import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
+//not game specific package import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
+      const OSGIServiceInterface = globalThis.org.allbinary.osgi.OSGIServiceInterface;
+
       
 
 

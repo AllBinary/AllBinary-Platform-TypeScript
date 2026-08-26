@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
+//not game specific package import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
+      const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
+
       
 
 

@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      const HelpSet = globalThis.javax.help.HelpSet;
+
       
-import { swing } from '../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
+//not game specific package import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
+      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+
       
 
 

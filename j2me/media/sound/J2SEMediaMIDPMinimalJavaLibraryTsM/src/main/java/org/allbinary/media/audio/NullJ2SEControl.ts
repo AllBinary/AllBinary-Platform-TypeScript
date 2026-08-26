@@ -18,7 +18,9 @@
 
 
 
-import { Control } from '../../../../javax/sound/sampled/Control.js';
+//not game specific package import { Control } from '../../../../javax/sound/sampled/Control.js';
+      const Control = globalThis.javax.sound.sampled.Control;
+
       
 
 

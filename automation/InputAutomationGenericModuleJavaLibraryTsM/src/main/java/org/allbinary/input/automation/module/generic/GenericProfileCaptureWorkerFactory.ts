@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+//not game specific package import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
+      const GenericProfile = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
+
       
-import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
+//not game specific package import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
+      const GenericProfileDataWorkerType = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileDataWorkerType;
+
       
-import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
+//not game specific package import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
+      const SavedCaptureGenericProfileDataWorkerType = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.SavedCaptureGenericProfileDataWorkerType;
+
       
-import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
+//not game specific package import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
+      const CaptureWorkerInterface = globalThis.org.allbinary.input.media.image.capture.CaptureWorkerInterface;
+
       
-import { ScreenCaptureImagesWorker } from '../../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
+//not game specific package import { ScreenCaptureImagesWorker } from '../../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
+      const ScreenCaptureImagesWorker = globalThis.org.allbinary.input.media.image.capture.ScreenCaptureImagesWorker;
+
       
 
 

@@ -20,15 +20,25 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+//not game specific package import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+      const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
+
       
-import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+//not game specific package import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+      const CanvasImage = globalThis.playn.core.CanvasImage;
+
       
-import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
+//not game specific package import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
+      const CanvasSurface = globalThis.playn.core.CanvasSurface;
+
       
 
 

@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Activity } from '../../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { Configuration } from '../../../../../android/content/res/Configuration.js';
+//not game specific package import { Configuration } from '../../../../../android/content/res/Configuration.js';
+      const Configuration = globalThis.android.content.res.Configuration;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
 
 

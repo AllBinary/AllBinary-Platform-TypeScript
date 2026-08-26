@@ -22,29 +22,53 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
+//not game specific package import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
+      const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
+
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+      const NullUtil = globalThis.org.allbinary.logic.NullUtil;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+      const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { NullXmlRpcHandler } from '../../../../../org/apache/xmlrpc/NullXmlRpcHandler.js';
+//not game specific package import { NullXmlRpcHandler } from '../../../../../org/apache/xmlrpc/NullXmlRpcHandler.js';
+      const NullXmlRpcHandler = globalThis.org.apache.xmlrpc.NullXmlRpcHandler;
+
       
-import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
+//not game specific package import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
+      const XmlRpcClient = globalThis.org.apache.xmlrpc.XmlRpcClient;
+
       
-import { XmlRpcHandler } from '../../../../../org/apache/xmlrpc/XmlRpcHandler.js';
+//not game specific package import { XmlRpcHandler } from '../../../../../org/apache/xmlrpc/XmlRpcHandler.js';
+      const XmlRpcHandler = globalThis.org.apache.xmlrpc.XmlRpcHandler;
+
       
 
 

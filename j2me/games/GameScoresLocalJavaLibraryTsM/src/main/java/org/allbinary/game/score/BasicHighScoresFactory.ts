@@ -6,13 +6,21 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+//not game specific package import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+      const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+
       
-import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
 
 

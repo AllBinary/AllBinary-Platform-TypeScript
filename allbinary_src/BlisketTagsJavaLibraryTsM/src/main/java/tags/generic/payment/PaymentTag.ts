@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
+//not game specific package import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
+      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+
       
-import { PaymentData } from '../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+//not game specific package import { PaymentData } from '../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+      const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+
       
-import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+//not game specific package import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+
       
-import { LicensingException } from '../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+//not game specific package import { LicensingException } from '../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
       
-import { StoreValidationTransformTag } from '../../../tags/StoreValidationTransformTag.js';
+//not game specific package import { StoreValidationTransformTag } from '../../../tags/StoreValidationTransformTag.js';
+      const StoreValidationTransformTag = globalThis.tags.StoreValidationTransformTag;
+
       
 
 

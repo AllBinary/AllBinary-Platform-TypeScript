@@ -12,7 +12,9 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
 
 

@@ -22,37 +22,69 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { DataOutputStream } from '../../../../../../../../java/io/DataOutputStream.js';
+//not game specific package import { DataOutputStream } from '../../../../../../../../java/io/DataOutputStream.js';
+      const DataOutputStream = globalThis.java.io.DataOutputStream;
+
       
-import { File } from '../../../../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileInputStream } from '../../../../../../../../java/io/FileInputStream.js';
+//not game specific package import { FileInputStream } from '../../../../../../../../java/io/FileInputStream.js';
+      const FileInputStream = globalThis.java.io.FileInputStream;
+
       
-import { FileOutputStream } from '../../../../../../../../java/io/FileOutputStream.js';
+//not game specific package import { FileOutputStream } from '../../../../../../../../java/io/FileOutputStream.js';
+      const FileOutputStream = globalThis.java.io.FileOutputStream;
+
       
-import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Set } from '../../../../../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { DomDocumentMappingInterface } from '../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+//not game specific package import { DomDocumentMappingInterface } from '../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+      const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+
       
-import { DefaultListModelHelper } from '../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
+//not game specific package import { DefaultListModelHelper } from '../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
+      const DefaultListModelHelper = globalThis.org.allbinary.input.automation.module.DefaultListModelHelper;
+
       
-import { GenericProfileActionData } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionData.js';
+//not game specific package import { GenericProfileActionData } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionData.js';
+      const GenericProfileActionData = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
+
       
-import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
+//not game specific package import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
+      const NodeList = globalThis.org.w3c.dom.NodeList;
+
       
 
 

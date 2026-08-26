@@ -22,19 +22,33 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from '../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { Intent } from '../../../android/content/Intent.js';
+//not game specific package import { Intent } from '../../../android/content/Intent.js';
+      const Intent = globalThis.android.content.Intent;
+
       
-import { Uri } from '../../../android/net/Uri.js';
+//not game specific package import { Uri } from '../../../android/net/Uri.js';
+      const Uri = globalThis.android.net.Uri;
+
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

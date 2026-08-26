@@ -20,33 +20,61 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { PageData } from '../../../../../../../../../org/allbinary/business/page/PageData.js';
+//not game specific package import { PageData } from '../../../../../../../../../org/allbinary/business/page/PageData.js';
+      const PageData = globalThis.org.allbinary.business.page.PageData;
+
       
-import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+//not game specific package import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+
       
-import { DomDocumentHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+//not game specific package import { DomDocumentHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+
       
-import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { StoreTransformer } from '../../../../../../../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
+//not game specific package import { StoreTransformer } from '../../../../../../../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
+      const StoreTransformer = globalThis.org.allbinary.logic.visual.transform.StoreTransformer;
+
       
-import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
-import { TitleBodyValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/title/TitleBodyValidation.js';
+//not game specific package import { TitleBodyValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/title/TitleBodyValidation.js';
+      const TitleBodyValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.bodies.title.TitleBodyValidation;
+
       
-import { TransformTemplateCustomizerUtil } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
+//not game specific package import { TransformTemplateCustomizerUtil } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
+      const TransformTemplateCustomizerUtil = globalThis.org.allbinary.logic.visual.transform.template.util.TransformTemplateCustomizerUtil;
+
       
-import { StringEscapeUtils } from '../../../../../../../../../org/apache/commons/lang3/StringEscapeUtils.js';
+//not game specific package import { StringEscapeUtils } from '../../../../../../../../../org/apache/commons/lang3/StringEscapeUtils.js';
+      const StringEscapeUtils = globalThis.org.apache.commons.lang3.StringEscapeUtils;
+
       
-import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
-import { HttpStoreComponentView } from '../../../../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+//not game specific package import { HttpStoreComponentView } from '../../../../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+
       
 
 

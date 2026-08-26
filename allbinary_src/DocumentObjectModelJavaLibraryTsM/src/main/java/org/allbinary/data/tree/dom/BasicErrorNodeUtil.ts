@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ErrorData } from '../../../../../org/allbinary/business/error/ErrorData.js';
+//not game specific package import { ErrorData } from '../../../../../org/allbinary/business/error/ErrorData.js';
+      const ErrorData = globalThis.org.allbinary.business.error.ErrorData;
+
       
-import { Document } from '../../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
-import { Node } from '../../../../../org/w3c/dom/Node.js';
+//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
+      const Node = globalThis.org.w3c.dom.Node;
+
       
 
 

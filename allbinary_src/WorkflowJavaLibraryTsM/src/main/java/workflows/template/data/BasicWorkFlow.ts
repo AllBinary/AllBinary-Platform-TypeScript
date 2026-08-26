@@ -24,27 +24,49 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { TagSupport } from '../../../javax/servlet/jsp/tagext/TagSupport.js';
+//not game specific package import { TagSupport } from '../../../javax/servlet/jsp/tagext/TagSupport.js';
+      const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+//not game specific package import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+
       
-import { WorkFlowData } from '../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
+//not game specific package import { WorkFlowData } from '../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
+      const WorkFlowData = globalThis.org.allbinary.logic.control.workflow.WorkFlowData;
+
       
-import { WorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+//not game specific package import { WorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+      const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+
       
-import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+
       
-import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
+//not game specific package import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
+      const TransformFactory = globalThis.org.allbinary.logic.visual.transform.TransformFactory;
+
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

@@ -18,9 +18,13 @@
 
 
 
-import { awt } from '../../../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+//not game specific package import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+      const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+
       
 
 

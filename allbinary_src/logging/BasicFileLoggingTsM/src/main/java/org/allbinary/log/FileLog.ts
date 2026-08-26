@@ -26,25 +26,45 @@
         
             import { System } from '../../../java/lang/System.js';
         
-import { BufferedReader } from '../../../java/io/BufferedReader.js';
+//not game specific package import { BufferedReader } from '../../../java/io/BufferedReader.js';
+      const BufferedReader = globalThis.java.io.BufferedReader;
+
       
-import { BufferedWriter } from '../../../java/io/BufferedWriter.js';
+//not game specific package import { BufferedWriter } from '../../../java/io/BufferedWriter.js';
+      const BufferedWriter = globalThis.java.io.BufferedWriter;
+
       
-import { File } from '../../../java/io/File.js';
+//not game specific package import { File } from '../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { FileReader } from '../../../java/io/FileReader.js';
+//not game specific package import { FileReader } from '../../../java/io/FileReader.js';
+      const FileReader = globalThis.java.io.FileReader;
+
       
-import { FileWriter } from '../../../java/io/FileWriter.js';
+//not game specific package import { FileWriter } from '../../../java/io/FileWriter.js';
+      const FileWriter = globalThis.java.io.FileWriter;
+
       
-import { RandomAccessFile } from '../../../java/io/RandomAccessFile.js';
+//not game specific package import { RandomAccessFile } from '../../../java/io/RandomAccessFile.js';
+      const RandomAccessFile = globalThis.java.io.RandomAccessFile;
+
       
-import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { LogFormatUtil } from '../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
+//not game specific package import { LogFormatUtil } from '../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
+      const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+
       
-import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

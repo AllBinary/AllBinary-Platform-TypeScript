@@ -22,7 +22,9 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+//not game specific package import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+
       
 
 

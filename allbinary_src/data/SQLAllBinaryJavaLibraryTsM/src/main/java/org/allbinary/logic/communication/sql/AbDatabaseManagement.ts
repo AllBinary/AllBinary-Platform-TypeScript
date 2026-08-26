@@ -12,17 +12,29 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InetAddress } from '../../../../../java/net/InetAddress.js';
+//not game specific package import { InetAddress } from '../../../../../java/net/InetAddress.js';
+      const InetAddress = globalThis.java.net.InetAddress;
+
       
-import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
+//not game specific package import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
+      const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
+
       
-import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+//not game specific package import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+      const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

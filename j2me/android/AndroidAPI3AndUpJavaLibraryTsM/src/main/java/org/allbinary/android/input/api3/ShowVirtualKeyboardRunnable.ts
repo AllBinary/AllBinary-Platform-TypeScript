@@ -24,21 +24,37 @@
         
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
-import { Activity } from '../../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { Context } from '../../../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { View } from '../../../../../android/view/View.js';
+//not game specific package import { View } from '../../../../../android/view/View.js';
+      const View = globalThis.android.view.View;
+
       
-import { InputMethodManager } from '../../../../../android/view/inputmethod/InputMethodManager.js';
+//not game specific package import { InputMethodManager } from '../../../../../android/view/inputmethod/InputMethodManager.js';
+      const InputMethodManager = globalThis.android.view.inputmethod.InputMethodManager;
+
       
-import { ViewCompositeInterface } from '../../../../../org/allbinary/android/activity/ViewCompositeInterface.js';
+//not game specific package import { ViewCompositeInterface } from '../../../../../org/allbinary/android/activity/ViewCompositeInterface.js';
+      const ViewCompositeInterface = globalThis.org.allbinary.android.activity.ViewCompositeInterface;
+
       
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

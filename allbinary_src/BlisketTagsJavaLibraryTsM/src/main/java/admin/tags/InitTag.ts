@@ -18,7 +18,9 @@
 
 
 
-import { InitHelperFactory } from '../../admin/taghelpers/InitHelperFactory.js';
+//not game specific package import { InitHelperFactory } from '../../admin/taghelpers/InitHelperFactory.js';
+      const InitHelperFactory = globalThis.admin.taghelpers.InitHelperFactory;
+
       
 
 

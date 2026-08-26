@@ -18,11 +18,17 @@
 
 
 
-import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
+//not game specific package import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
+      const FilenameFilter = globalThis.java.io.FilenameFilter;
+
       
-import { IOException } from '../../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { URI } from '../../../../../java/net/URI.js';
+//not game specific package import { URI } from '../../../../../java/net/URI.js';
+      const URI = globalThis.java.net.URI;
+
       
 
 

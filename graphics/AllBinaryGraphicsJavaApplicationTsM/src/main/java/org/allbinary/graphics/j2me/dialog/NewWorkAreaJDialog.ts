@@ -22,21 +22,37 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
+//not game specific package import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
+      const ActionEvent = globalThis.java.awt.event.ActionEvent;
+
       
-import { ActionListener } from '../../../../../java/awt/event/ActionListener.js';
+//not game specific package import { ActionListener } from '../../../../../java/awt/event/ActionListener.js';
+      const ActionListener = globalThis.java.awt.event.ActionListener;
+
       
-import { swing } from '../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { GraphicsException } from '../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
+//not game specific package import { GraphicsException } from '../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
+      const GraphicsException = globalThis.org.allbinary.graphics.j2me.GraphicsException;
+
       
-import { MyFrame } from '../../../../../org/allbinary/graphics/j2me/MyFrame.js';
+//not game specific package import { MyFrame } from '../../../../../org/allbinary/graphics/j2me/MyFrame.js';
+      const MyFrame = globalThis.org.allbinary.graphics.j2me.MyFrame;
+
       
-import { WorkAreaJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
+//not game specific package import { WorkAreaJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
+      const WorkAreaJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanel;
+
       
-import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
+//not game specific package import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
+      const WorkAreaJPanelInterface = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanelInterface;
+
       
 
 

@@ -22,17 +22,29 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { Notification } from '../../../android/app/Notification.js';
+//not game specific package import { Notification } from '../../../android/app/Notification.js';
+      const Notification = globalThis.android.app.Notification;
+
       
-import { Builder } from '../../../android/app/Notification/Builder.js';
+//not game specific package import { Builder } from '../../../android/app/Notification/Builder.js';
+      const Builder = globalThis.android.app.Notification.Builder;
+
       
-import { PendingIntent } from '../../../android/app/PendingIntent.js';
+//not game specific package import { PendingIntent } from '../../../android/app/PendingIntent.js';
+      const PendingIntent = globalThis.android.app.PendingIntent;
+
       
-import { Context } from '../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { Parcelable } from '../../../android/os/Parcelable.js';
+//not game specific package import { Parcelable } from '../../../android/os/Parcelable.js';
+      const Parcelable = globalThis.android.os.Parcelable;
+
       
 
 

@@ -20,53 +20,117 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { NullCommandListener } from '../../../../../../javax/microedition/lcdui/NullCommandListener.js';
+//not game specific package import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
+      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+
       
-import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
+//not game specific package import { NullCommandListener } from '../../../../../../javax/microedition/lcdui/NullCommandListener.js';
+      const NullCommandListener = globalThis.javax.microedition.lcdui.NullCommandListener;
+
       
-import { RunnableCanvas } from '../../../../../../org/allbinary/canvas/RunnableCanvas.js';
+//not game specific package import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
       
-import { GameCommandsFactory } from '../../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { RunnableCanvas } from '../../../../../../org/allbinary/canvas/RunnableCanvas.js';
+      const RunnableCanvas = globalThis.org.allbinary.canvas.RunnableCanvas;
+
       
-import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { GameCommandsFactory } from '../../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { CanvasStrings } from '../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { CanvasStrings } from '../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+
       
-import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+//not game specific package import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
       
-import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+//not game specific package import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
       
-import { ABCustomGaugeItem } from '../../../../../../org/allbinary/graphics/form/item/ABCustomGaugeItem.js';
+//not game specific package import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+
       
-import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+//not game specific package import { ABCustomGaugeItem } from '../../../../../../org/allbinary/graphics/form/item/ABCustomGaugeItem.js';
+      const ABCustomGaugeItem = globalThis.org.allbinary.graphics.form.item.ABCustomGaugeItem;
+
       
-import { Paintable } from '../../../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+
       
-import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { Paintable } from '../../../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
       
-import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
-import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not game specific package import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
       
-import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { AllBinaryMidlet } from '../../../../../../org/allbinary/midlet/AllBinaryMidlet.js';
+//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { PathFindingThreadPool } from '../../../../../../org/allbinary/thread/PathFindingThreadPool.js';
+//not game specific package import { AllBinaryMidlet } from '../../../../../../org/allbinary/midlet/AllBinaryMidlet.js';
+      const AllBinaryMidlet = globalThis.org.allbinary.midlet.AllBinaryMidlet;
+
       
-import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js';
+//not game specific package import { PathFindingThreadPool } from '../../../../../../org/allbinary/thread/PathFindingThreadPool.js';
+      const PathFindingThreadPool = globalThis.org.allbinary.thread.PathFindingThreadPool;
+
+      
+//not game specific package import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js';
+      const ThreadPool = globalThis.org.allbinary.thread.ThreadPool;
+
+      
+//not game specific package import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -130,7 +194,7 @@ this.progressCanvas!.paint2(graphics);
 
     private myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
 
-    allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.NULL_ALLBINARY_MIDLET;
+    allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.getNullInstance()!;
 
     private value: number= 0.0;
 

@@ -6,7 +6,9 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-import { R } from '../../org/allbinary/game/testgamedemo/R.js';
+//not game specific package import { R } from '../../org/allbinary/game/testgamedemo/R.js';
+      const R = globalThis.org.allbinary.game.testgamedemo.R;
+
       
 
 

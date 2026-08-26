@@ -22,17 +22,29 @@
         
             import { Runnable } from '../../../../../../java/lang/Runnable.js';
         
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';
+//not game specific package import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';
+      const NullProgressActivity = globalThis.org.allbinary.android.activity.NullProgressActivity;
+
       
-import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
+//not game specific package import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
+      const ProgressActivityInterface = globalThis.org.allbinary.android.activity.ProgressActivityInterface;
+
       
-import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

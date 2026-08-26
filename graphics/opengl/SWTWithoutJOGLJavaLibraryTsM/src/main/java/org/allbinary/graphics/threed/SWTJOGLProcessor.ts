@@ -24,9 +24,13 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
       
-import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
+//not game specific package import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+
       
 
 

@@ -22,23 +22,41 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { Activity } from '../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
-import { MotionEvent } from '../../../../android/view/MotionEvent.js';
+//not game specific package import { MotionEvent } from '../../../../android/view/MotionEvent.js';
+      const MotionEvent = globalThis.android.view.MotionEvent;
+
       
-import { View } from '../../../../android/view/View.js';
+//not game specific package import { View } from '../../../../android/view/View.js';
+      const View = globalThis.android.view.View;
+
       
-import { GenericMotionEventVerifyInterface } from '../../../../org/allbinary/android/GenericMotionEventVerifyInterface.js';
+//not game specific package import { GenericMotionEventVerifyInterface } from '../../../../org/allbinary/android/GenericMotionEventVerifyInterface.js';
+      const GenericMotionEventVerifyInterface = globalThis.org.allbinary.android.GenericMotionEventVerifyInterface;
+
       
-import { GameFeatureEvent } from '../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
+//not game specific package import { GameFeatureEvent } from '../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
+      const GameFeatureEvent = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
+
       
-import { GameFeatureListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameFeatureListenerInterface.js';
+//not game specific package import { GameFeatureListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameFeatureListenerInterface.js';
+      const GameFeatureListenerInterface = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
+
       
-import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
+//not game specific package import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
+      const GameInitializedEvent = globalThis.org.allbinary.game.configuration.event.GameInitializedEvent;
+
       
-import { GameInitializedListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
+//not game specific package import { GameInitializedListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
+      const GameInitializedListenerInterface = globalThis.org.allbinary.game.configuration.event.GameInitializedListenerInterface;
+
       
-import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
       
 
 

@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Provider } from '../../../../../../../java/security/Provider.js';
+//not game specific package import { Provider } from '../../../../../../../java/security/Provider.js';
+      const Provider = globalThis.java.security.Provider;
+
       
-import { Security } from '../../../../../../../java/security/Security.js';
+//not game specific package import { Security } from '../../../../../../../java/security/Security.js';
+      const Security = globalThis.java.security.Security;
+
       
-import { KeySpec } from '../../../../../../../java/security/spec/KeySpec.js';
+//not game specific package import { KeySpec } from '../../../../../../../java/security/spec/KeySpec.js';
+      const KeySpec = globalThis.java.security.spec.KeySpec;
+
       
-import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
+//not game specific package import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
+      const Cipher = globalThis.javax.crypto.Cipher;
+
       
-import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
+//not game specific package import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
+      const SecretKey = globalThis.javax.crypto.SecretKey;
+
       
-import { SecretKeyFactory } from '../../../../../../../javax/crypto/SecretKeyFactory.js';
+//not game specific package import { SecretKeyFactory } from '../../../../../../../javax/crypto/SecretKeyFactory.js';
+      const SecretKeyFactory = globalThis.javax.crypto.SecretKeyFactory;
+
       
-import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+//not game specific package import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+      const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+
       
-import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not game specific package import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

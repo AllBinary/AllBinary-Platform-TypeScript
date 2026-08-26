@@ -20,9 +20,13 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { FullScreenPaintable } from '../../../../../org/allbinary/game/paint/FullScreenPaintable.js';
+//not game specific package import { FullScreenPaintable } from '../../../../../org/allbinary/game/paint/FullScreenPaintable.js';
+      const FullScreenPaintable = globalThis.org.allbinary.game.paint.FullScreenPaintable;
+
       
-import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
       
 
 

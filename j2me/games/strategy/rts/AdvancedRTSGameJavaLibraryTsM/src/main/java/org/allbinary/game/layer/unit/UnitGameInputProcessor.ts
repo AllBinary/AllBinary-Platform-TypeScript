@@ -18,7 +18,9 @@
 
 
 
-import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
+//not game specific package import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
+      const GameInputProcessor = globalThis.org.allbinary.game.input.GameInputProcessor;
+
       
 
 

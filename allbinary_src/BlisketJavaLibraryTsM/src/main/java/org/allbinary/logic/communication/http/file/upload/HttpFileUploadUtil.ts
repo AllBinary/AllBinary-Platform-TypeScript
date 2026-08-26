@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ClassUtil } from '../../../../../../../org/allbinary/logic/java/anyType/clazz/ClassUtil.js';
+//not game specific package import { ClassUtil } from '../../../../../../../org/allbinary/logic/java/anyType/clazz/ClassUtil.js';
+      const ClassUtil = globalThis.org.allbinary.logic.java.anyType.clazz.ClassUtil;
+
       
-import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
+//not game specific package import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
+      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+
       
-import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
+//not game specific package import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
+      const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
+
       
 
 

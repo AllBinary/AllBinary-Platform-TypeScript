@@ -22,13 +22,21 @@
         
             import { Math } from '../../../java/lang/Math.js';
         
-import { Buffer } from '../../../java/nio/Buffer.js';
+//not game specific package import { Buffer } from '../../../java/nio/Buffer.js';
+      const Buffer = globalThis.java.nio.Buffer;
+
       
-import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
+//not game specific package import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
+      const ByteBuffer = globalThis.java.nio.ByteBuffer;
+
       
-import { ByteOrder } from '../../../java/nio/ByteOrder.js';
+//not game specific package import { ByteOrder } from '../../../java/nio/ByteOrder.js';
+      const ByteOrder = globalThis.java.nio.ByteOrder;
+
       
-import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
+//not game specific package import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
+      const FloatBuffer = globalThis.java.nio.FloatBuffer;
+
       
 
 

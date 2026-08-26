@@ -22,13 +22,29 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+//not game specific package import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
+      const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
+
       
-import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
+//not game specific package import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+      const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+
       
-import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
+//not game specific package import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
+      const NoAllBinarySensor = globalThis.org.allbinary.input.NoAllBinarySensor;
+
+      
+//not game specific package import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
+      const AccelerometerSensorFactory = globalThis.org.allbinary.input.accelerometer.AccelerometerSensorFactory;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
       
 
 

@@ -24,17 +24,29 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-import { DirectoryBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js';
+//not game specific package import { DirectoryBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js';
+      const DirectoryBooleanFileVisitor = globalThis.org.allbinary.logic.io.file.directory.DirectoryBooleanFileVisitor;
+
       
-import { DirectoryOrIncludeFileExtensionBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionBooleanFileVisitor.js';
+//not game specific package import { DirectoryOrIncludeFileExtensionBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionBooleanFileVisitor.js';
+      const DirectoryOrIncludeFileExtensionBooleanFileVisitor = globalThis.org.allbinary.logic.io.file.directory.DirectoryOrIncludeFileExtensionBooleanFileVisitor;
+
       
-import { SubDirectory } from '../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+//not game specific package import { SubDirectory } from '../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+      const SubDirectory = globalThis.org.allbinary.logic.io.file.directory.SubDirectory;
+
       
-import { VisitorFileFilter } from '../../../../../org/allbinary/logic/io/file/filter/VisitorFileFilter.js';
+//not game specific package import { VisitorFileFilter } from '../../../../../org/allbinary/logic/io/file/filter/VisitorFileFilter.js';
+      const VisitorFileFilter = globalThis.org.allbinary.logic.io.file.filter.VisitorFileFilter;
+
       
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

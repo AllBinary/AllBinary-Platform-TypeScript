@@ -22,19 +22,33 @@
         
             import { Object } from '../../../java/lang/Object.js';
         
-import { List } from '../../../java/util/List.js';
+//not game specific package import { List } from '../../../java/util/List.js';
+      const List = globalThis.java.util.List;
+
       
-import { ActivityManager } from '../../../android/app/ActivityManager.js';
+//not game specific package import { ActivityManager } from '../../../android/app/ActivityManager.js';
+      const ActivityManager = globalThis.android.app.ActivityManager;
+
       
-import { RunningServiceInfo } from '../../../android/app/ActivityManager/RunningServiceInfo.js';
+//not game specific package import { RunningServiceInfo } from '../../../android/app/ActivityManager/RunningServiceInfo.js';
+      const RunningServiceInfo = globalThis.android.app.ActivityManager.RunningServiceInfo;
+
       
-import { ComponentName } from '../../../android/content/ComponentName.js';
+//not game specific package import { ComponentName } from '../../../android/content/ComponentName.js';
+      const ComponentName = globalThis.android.content.ComponentName;
+
       
-import { Context } from '../../../android/content/Context.js';
+//not game specific package import { Context } from '../../../android/content/Context.js';
+      const Context = globalThis.android.content.Context;
+
       
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+
       
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

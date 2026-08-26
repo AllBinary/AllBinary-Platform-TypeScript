@@ -14,35 +14,65 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { IOException } from '../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { Iterator } from '../../../../java/util/Iterator.js';
+//not game specific package import { Iterator } from '../../../../java/util/Iterator.js';
+      const Iterator = globalThis.java.util.Iterator;
+
       
-import { IIOImage } from '../../../../javax/imageio/IIOImage.js';
+//not game specific package import { IIOImage } from '../../../../javax/imageio/IIOImage.js';
+      const IIOImage = globalThis.javax.imageio.IIOImage;
+
       
-import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+//not game specific package import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+      const ImageIO = globalThis.javax.imageio.ImageIO;
+
       
-import { ImageWriteParam } from '../../../../javax/imageio/ImageWriteParam.js';
+//not game specific package import { ImageWriteParam } from '../../../../javax/imageio/ImageWriteParam.js';
+      const ImageWriteParam = globalThis.javax.imageio.ImageWriteParam;
+
       
-import { ImageWriter } from '../../../../javax/imageio/ImageWriter.js';
+//not game specific package import { ImageWriter } from '../../../../javax/imageio/ImageWriter.js';
+      const ImageWriter = globalThis.javax.imageio.ImageWriter;
+
       
-import { ImageOutputStream } from '../../../../javax/imageio/stream/ImageOutputStream.js';
+//not game specific package import { ImageOutputStream } from '../../../../javax/imageio/stream/ImageOutputStream.js';
+      const ImageOutputStream = globalThis.javax.imageio.stream.ImageOutputStream;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+//not game specific package import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+      const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
+
       
-import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+//not game specific package import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
+      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { PNGImageWriter } from '../../../../org/apache/batik/ext/awt/image/codec/png/PNGImageWriter.js';
+//not game specific package import { PNGImageWriter } from '../../../../org/apache/batik/ext/awt/image/codec/png/PNGImageWriter.js';
+      const PNGImageWriter = globalThis.org.apache.batik.ext.awt.image.codec.png.PNGImageWriter;
+
       
 
 

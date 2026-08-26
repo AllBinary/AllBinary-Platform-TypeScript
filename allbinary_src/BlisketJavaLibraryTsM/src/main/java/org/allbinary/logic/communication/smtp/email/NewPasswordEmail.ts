@@ -22,27 +22,49 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { UserInterface } from '../../../../../../org/allbinary/business/user/UserInterface.js';
+//not game specific package import { UserInterface } from '../../../../../../org/allbinary/business/user/UserInterface.js';
+      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { UserEmailEventNameData } from '../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+//not game specific package import { UserEmailEventNameData } from '../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
+      const UserEmailEventNameData = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventNameData;
+
       
-import { UserEmailEventHandler } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
+//not game specific package import { UserEmailEventHandler } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
+      const UserEmailEventHandler = globalThis.org.allbinary.logic.communication.smtp.event.handler.UserEmailEventHandler;
+
       
-import { AdminUserEmailEventHandlerSingletons } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
+//not game specific package import { AdminUserEmailEventHandlerSingletons } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
+      const AdminUserEmailEventHandlerSingletons = globalThis.org.allbinary.logic.communication.smtp.event.handler.factory.AdminUserEmailEventHandlerSingletons;
+
       
-import { UserEmailEventHandlerSingletons } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js';
+//not game specific package import { UserEmailEventHandlerSingletons } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js';
+      const UserEmailEventHandlerSingletons = globalThis.org.allbinary.logic.communication.smtp.event.handler.factory.UserEmailEventHandlerSingletons;
+
       
-import { AdminEmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
+//not game specific package import { AdminEmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
+      const AdminEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.AdminEmailInfo;
+
       
-import { BasicEmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
+//not game specific package import { BasicEmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
+      const BasicEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
+
       
-import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+//not game specific package import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+      const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
+
       
-import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

@@ -6,7 +6,9 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+//not game specific package import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+
       
 
 

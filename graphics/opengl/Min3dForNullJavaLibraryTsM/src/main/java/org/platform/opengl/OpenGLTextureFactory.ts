@@ -6,11 +6,17 @@
 
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
+//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
+
       
-import { PlatformTextureBaseFactory } from '../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
+//not game specific package import { PlatformTextureBaseFactory } from '../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
+      const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
+
       
 
 

@@ -22,13 +22,21 @@
         
             import { Class } from '../../../../../../java/lang/Class.js';
         
-import { ConstructorUtil } from '../../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
+//not game specific package import { ConstructorUtil } from '../../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
+      const ConstructorUtil = globalThis.org.allbinary.logic.java.anyType.ConstructorUtil;
+
       
-import { InterfaceUtil } from '../../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
+//not game specific package import { InterfaceUtil } from '../../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
+      const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
+
       
-import { MethodUtil } from '../../../../../../org/allbinary/logic/java/anyType/MethodUtil.js';
+//not game specific package import { MethodUtil } from '../../../../../../org/allbinary/logic/java/anyType/MethodUtil.js';
+      const MethodUtil = globalThis.org.allbinary.logic.java.anyType.MethodUtil;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

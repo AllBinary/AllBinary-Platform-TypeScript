@@ -18,7 +18,9 @@
 
 
 
-import { BasicEventHandler } from '../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
+//not game specific package import { BasicEventHandler } from '../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
+      const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
+
       
 
 

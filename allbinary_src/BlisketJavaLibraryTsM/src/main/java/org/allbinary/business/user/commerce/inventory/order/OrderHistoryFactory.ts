@@ -22,11 +22,17 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
+//not game specific package import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
+      const OrderHistoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

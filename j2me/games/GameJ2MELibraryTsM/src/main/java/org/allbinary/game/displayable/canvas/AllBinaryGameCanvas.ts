@@ -28,261 +28,533 @@
         
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
-import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      
-import { Vector } from '../../../../../java/util/Vector.js';
-      
-import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
-      
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-      
-import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-      
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      
-import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-      
-import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';
-      
-import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
-      
-import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
-      
-import { GameAdStateFactory } from '../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
-      
-import { BaseGameStatistics } from '../../../../../org/allbinary/canvas/BaseGameStatistics.js';
-      
-import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
-      
-import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-      
-import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanvas.js';
-      
-import { DebugFactory } from '../../../../../org/allbinary/debug/DebugFactory.js';
-      
-import { NoDebug } from '../../../../../org/allbinary/debug/NoDebug.js';
-      
-import { GameAdState } from '../../../../../org/allbinary/game/GameAdState.js';
-      
-import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
-      
-import { GameStrings } from '../../../../../org/allbinary/game/GameStrings.js';
-      
-import { GameTypeFactory } from '../../../../../org/allbinary/game/GameTypeFactory.js';
-      
-import { Intermission } from '../../../../../org/allbinary/game/Intermission.js';
-      
-import { IntermissionCompositeInterface } from '../../../../../org/allbinary/game/IntermissionCompositeInterface.js';
-      
-import { IntermissionEnableListenerInterface } from '../../../../../org/allbinary/game/IntermissionEnableListenerInterface.js';
-      
-import { IntermissionInterface } from '../../../../../org/allbinary/game/IntermissionInterface.js';
-      
-import { PlayerTypesFactory } from '../../../../../org/allbinary/game/PlayerTypesFactory.js';
-      
-import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-      
-import { InGameFeatures } from '../../../../../org/allbinary/game/configuration/InGameFeatures.js';
-      
-import { InGameOptionsForm } from '../../../../../org/allbinary/game/configuration/InGameOptionsForm.js';
-      
-import { ChangedGameFeatureListener } from '../../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
-      
-import { GameInitializedEvent } from '../../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
-      
-import { GameInitializedEventHandler } from '../../../../../org/allbinary/game/configuration/event/GameInitializedEventHandler.js';
-      
-import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-      
-import { GameFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-      
-import { GameFeatureUtil } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureUtil.js';
-      
-import { InputFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
-      
-import { MainFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-      
-import { SensorFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
-      
-import { TouchFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
-      
-import { GameLevelDisplayChangeEventListenersFactory } from '../../../../../org/allbinary/game/displayable/GameLevelDisplayChangeEventListenersFactory.js';
-      
-import { BasicBuildGameInitializerFactory } from '../../../../../org/allbinary/game/init/BasicBuildGameInitializerFactory.js';
-      
-import { GameInitializationUtil } from '../../../../../org/allbinary/game/init/GameInitializationUtil.js';
-      
-import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
-      
-import { InputProcessor } from '../../../../../org/allbinary/game/input/InputProcessor.js';
-      
-import { NoPlayerGameInput } from '../../../../../org/allbinary/game/input/NoPlayerGameInput.js';
-      
-import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
-      
-import { GameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
-      
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-      
-import { SWTUtil } from '../../../../../org/allbinary/game/layer/SWTUtil.js';
-      
-import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
-      
-import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
-      
-import { ResourceLoadingLevel } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevel.js';
-      
-import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
-      
-import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-      
-import { HighScoresHelperBaseInterface } from '../../../../../org/allbinary/game/score/HighScoresHelperBaseInterface.js';
-      
-import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
-      
-import { HighScoresPaintable } from '../../../../../org/allbinary/game/score/HighScoresPaintable.js';
-      
-import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
-      
-import { HighScoreTextBox } from '../../../../../org/allbinary/game/score/displayable/HighScoreTextBox.js';
-      
-import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
-      
-import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
-      
-import { GraphicsStrings } from '../../../../../org/allbinary/graphics/GraphicsStrings.js';
-      
-import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-      
-import { ScreenCapture } from '../../../../../org/allbinary/graphics/ScreenCapture.js';
-      
-import { ScreenCaptureFactory } from '../../../../../org/allbinary/graphics/ScreenCaptureFactory.js';
-      
-import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-      
-import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      
-import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      
-import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
-      
-import { CanvasStrings } from '../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-      
-import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      
-import { GameTickDisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/GameTickDisplayInfoSingleton.js';
-      
-import { MyCommandsFactory } from '../../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
-      
-import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-      
-import { DisplayChangeEventHandler } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
-      
-import { DisplayChangeEventListener } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
-      
-import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-      
-import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-      
-import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
-      
-import { CommandCurrentSelectionFormFactory } from '../../../../../org/allbinary/graphics/form/CommandCurrentSelectionFormFactory.js';
-      
-import { FormPaintable } from '../../../../../org/allbinary/graphics/form/FormPaintable.js';
-      
-import { FormType } from '../../../../../org/allbinary/graphics/form/FormType.js';
-      
-import { FormTypeFactory } from '../../../../../org/allbinary/graphics/form/FormTypeFactory.js';
-      
-import { ScrollSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-      
-import { ScrollSelectionFormNoneFactory } from '../../../../../org/allbinary/graphics/form/ScrollSelectionFormNoneFactory.js';
-      
-import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
-      
-import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-      
-import { CurrentDisplayableFactory } from '../../../../../org/allbinary/graphics/opengles/CurrentDisplayableFactory.js';
-      
-import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-      
-import { OpenGLFeatureUtil } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
-      
-import { OpenGLThreadUtil } from '../../../../../org/allbinary/graphics/opengles/OpenGLThreadUtil.js';
-      
-import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
-      
-import { NullInitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js';
-      
-import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-      
-import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-      
-import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      
-import { OpenGLImageSpecificFactory } from '../../../../../org/allbinary/image/opengles/OpenGLImageSpecificFactory.js';
-      
-import { SensorGameUpdateProcessor } from '../../../../../org/allbinary/input/gyro/SensorGameUpdateProcessor.js';
-      
-import { SingleSensorGameUpdateProcessor } from '../../../../../org/allbinary/input/gyro/SingleSensorGameUpdateProcessor.js';
-      
-import { BaseTouchInput } from '../../../../../org/allbinary/input/motion/button/BaseTouchInput.js';
-      
-import { NoButtonsTouchInputFactory } from '../../../../../org/allbinary/input/motion/button/NoButtonsTouchInputFactory.js';
-      
-import { TouchButtonFactory } from '../../../../../org/allbinary/input/motion/button/TouchButtonFactory.js';
-      
-import { TouchButtonsPaintableFactory } from '../../../../../org/allbinary/input/motion/button/TouchButtonsPaintableFactory.js';
-      
-import { TouchScreenFactory } from '../../../../../org/allbinary/input/motion/button/TouchScreenFactory.js';
-      
-import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
-      
-import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-      
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
-import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-      
-import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-      
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      
-import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      
-import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
-      
-import { AllBinaryMediaManager } from '../../../../../org/allbinary/media/audio/AllBinaryMediaManager.js';
-      
-import { PlayerQueue } from '../../../../../org/allbinary/media/audio/PlayerQueue.js';
-      
-import { PrimaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
-      
-import { SecondaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
-      
-import { SelectSound } from '../../../../../org/allbinary/media/audio/SelectSound.js';
-      
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-      
-import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/SecondaryThreadPool.js';
-      
-import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      
-import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      
-import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-      
-import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-      
-import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-      
-import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
+//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
+      
+//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
+      
+//not game specific package import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+
+      
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
+      
+//not game specific package import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
+
+      
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
+      
+//not game specific package import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
+
+      
+//not game specific package import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';
+      const NullCommandListener = globalThis.javax.microedition.lcdui.NullCommandListener;
+
+      
+//not game specific package import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
+      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+
+      
+//not game specific package import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
+      
+//not game specific package import { GameAdStateFactory } from '../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
+      const GameAdStateFactory = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
+
+      
+//not game specific package import { BaseGameStatistics } from '../../../../../org/allbinary/canvas/BaseGameStatistics.js';
+      const BaseGameStatistics = globalThis.org.allbinary.canvas.BaseGameStatistics;
+
+      
+//not game specific package import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
+      const GameStatisticsFactory = globalThis.org.allbinary.canvas.GameStatisticsFactory;
+
+      
+//not game specific package import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
+      const Processor = globalThis.org.allbinary.canvas.Processor;
+
+      
+//not game specific package import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanvas.js';
+      const RunnableCanvas = globalThis.org.allbinary.canvas.RunnableCanvas;
+
+      
+//not game specific package import { DebugFactory } from '../../../../../org/allbinary/debug/DebugFactory.js';
+      const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
+
+      
+//not game specific package import { NoDebug } from '../../../../../org/allbinary/debug/NoDebug.js';
+      const NoDebug = globalThis.org.allbinary.debug.NoDebug;
+
+      
+//not game specific package import { GameAdState } from '../../../../../org/allbinary/game/GameAdState.js';
+      const GameAdState = globalThis.org.allbinary.game.GameAdState;
+
+      
+//not game specific package import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
+      
+//not game specific package import { GameStrings } from '../../../../../org/allbinary/game/GameStrings.js';
+      const GameStrings = globalThis.org.allbinary.game.GameStrings;
+
+      
+//not game specific package import { GameTypeFactory } from '../../../../../org/allbinary/game/GameTypeFactory.js';
+      const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
+
+      
+//not game specific package import { Intermission } from '../../../../../org/allbinary/game/Intermission.js';
+      const Intermission = globalThis.org.allbinary.game.Intermission;
+
+      
+//not game specific package import { IntermissionCompositeInterface } from '../../../../../org/allbinary/game/IntermissionCompositeInterface.js';
+      const IntermissionCompositeInterface = globalThis.org.allbinary.game.IntermissionCompositeInterface;
+
+      
+//not game specific package import { IntermissionEnableListenerInterface } from '../../../../../org/allbinary/game/IntermissionEnableListenerInterface.js';
+      const IntermissionEnableListenerInterface = globalThis.org.allbinary.game.IntermissionEnableListenerInterface;
+
+      
+//not game specific package import { IntermissionInterface } from '../../../../../org/allbinary/game/IntermissionInterface.js';
+      const IntermissionInterface = globalThis.org.allbinary.game.IntermissionInterface;
+
+      
+//not game specific package import { PlayerTypesFactory } from '../../../../../org/allbinary/game/PlayerTypesFactory.js';
+      const PlayerTypesFactory = globalThis.org.allbinary.game.PlayerTypesFactory;
+
+      
+//not game specific package import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
+      
+//not game specific package import { InGameFeatures } from '../../../../../org/allbinary/game/configuration/InGameFeatures.js';
+      const InGameFeatures = globalThis.org.allbinary.game.configuration.InGameFeatures;
+
+      
+//not game specific package import { InGameOptionsForm } from '../../../../../org/allbinary/game/configuration/InGameOptionsForm.js';
+      const InGameOptionsForm = globalThis.org.allbinary.game.configuration.InGameOptionsForm;
+
+      
+//not game specific package import { ChangedGameFeatureListener } from '../../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+      const ChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.ChangedGameFeatureListener;
+
+      
+//not game specific package import { GameInitializedEvent } from '../../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
+      const GameInitializedEvent = globalThis.org.allbinary.game.configuration.event.GameInitializedEvent;
+
+      
+//not game specific package import { GameInitializedEventHandler } from '../../../../../org/allbinary/game/configuration/event/GameInitializedEventHandler.js';
+      const GameInitializedEventHandler = globalThis.org.allbinary.game.configuration.event.GameInitializedEventHandler;
+
+      
+//not game specific package import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
+      
+//not game specific package import { GameFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+      const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+
+      
+//not game specific package import { GameFeatureUtil } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureUtil.js';
+      const GameFeatureUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
+
+      
+//not game specific package import { InputFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
+      const InputFeatureFactory = globalThis.org.allbinary.game.configuration.feature.InputFeatureFactory;
+
+      
+//not game specific package import { MainFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+
+      
+//not game specific package import { SensorFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
+      const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
+
+      
+//not game specific package import { TouchFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
+      const TouchFeatureFactory = globalThis.org.allbinary.game.configuration.feature.TouchFeatureFactory;
+
+      
+//not game specific package import { GameLevelDisplayChangeEventListenersFactory } from '../../../../../org/allbinary/game/displayable/GameLevelDisplayChangeEventListenersFactory.js';
+      const GameLevelDisplayChangeEventListenersFactory = globalThis.org.allbinary.game.displayable.GameLevelDisplayChangeEventListenersFactory;
+
+      
+//not game specific package import { BasicBuildGameInitializerFactory } from '../../../../../org/allbinary/game/init/BasicBuildGameInitializerFactory.js';
+      const BasicBuildGameInitializerFactory = globalThis.org.allbinary.game.init.BasicBuildGameInitializerFactory;
+
+      
+//not game specific package import { GameInitializationUtil } from '../../../../../org/allbinary/game/init/GameInitializationUtil.js';
+      const GameInitializationUtil = globalThis.org.allbinary.game.init.GameInitializationUtil;
+
+      
+//not game specific package import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
+      const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
+
+      
+//not game specific package import { InputProcessor } from '../../../../../org/allbinary/game/input/InputProcessor.js';
+      const InputProcessor = globalThis.org.allbinary.game.input.InputProcessor;
+
+      
+//not game specific package import { NoPlayerGameInput } from '../../../../../org/allbinary/game/input/NoPlayerGameInput.js';
+      const NoPlayerGameInput = globalThis.org.allbinary.game.input.NoPlayerGameInput;
+
+      
+//not game specific package import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
+      const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
+
+      
+//not game specific package import { GameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
+      const GameKeyEventHandler = globalThis.org.allbinary.game.input.event.GameKeyEventHandler;
+
+      
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
+      
+//not game specific package import { SWTUtil } from '../../../../../org/allbinary/game/layer/SWTUtil.js';
+      const SWTUtil = globalThis.org.allbinary.game.layer.SWTUtil;
+
+      
+//not game specific package import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
+      const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
+
+      
+//not game specific package import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
+      const ColorFillPaintableFactory = globalThis.org.allbinary.game.paint.ColorFillPaintableFactory;
+
+      
+//not game specific package import { ResourceLoadingLevel } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevel.js';
+      const ResourceLoadingLevel = globalThis.org.allbinary.game.resource.ResourceLoadingLevel;
+
+      
+//not game specific package import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+      const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
+
+      
+//not game specific package import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
+      const HighScore = globalThis.org.allbinary.game.score.HighScore;
+
+      
+//not game specific package import { HighScoresHelperBaseInterface } from '../../../../../org/allbinary/game/score/HighScoresHelperBaseInterface.js';
+      const HighScoresHelperBaseInterface = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+
+      
+//not game specific package import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
+      const HighScoresFactoryInterface = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
+
+      
+//not game specific package import { HighScoresPaintable } from '../../../../../org/allbinary/game/score/HighScoresPaintable.js';
+      const HighScoresPaintable = globalThis.org.allbinary.game.score.HighScoresPaintable;
+
+      
+//not game specific package import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
+      const NullHighScoresSingletonFactory = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
+
+      
+//not game specific package import { HighScoreTextBox } from '../../../../../org/allbinary/game/score/displayable/HighScoreTextBox.js';
+      const HighScoreTextBox = globalThis.org.allbinary.game.score.displayable.HighScoreTextBox;
+
+      
+//not game specific package import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
+      const GameState = globalThis.org.allbinary.game.state.GameState;
+
+      
+//not game specific package import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+      const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+
+      
+//not game specific package import { GraphicsStrings } from '../../../../../org/allbinary/graphics/GraphicsStrings.js';
+      const GraphicsStrings = globalThis.org.allbinary.graphics.GraphicsStrings;
+
+      
+//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+
+      
+//not game specific package import { ScreenCapture } from '../../../../../org/allbinary/graphics/ScreenCapture.js';
+      const ScreenCapture = globalThis.org.allbinary.graphics.ScreenCapture;
+
+      
+//not game specific package import { ScreenCaptureFactory } from '../../../../../org/allbinary/graphics/ScreenCaptureFactory.js';
+      const ScreenCaptureFactory = globalThis.org.allbinary.graphics.ScreenCaptureFactory;
+
+      
+//not game specific package import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+      const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+
+      
+//not game specific package import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+      const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+
+      
+//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
+      
+//not game specific package import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
+      const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
+
+      
+//not game specific package import { CanvasStrings } from '../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+
+      
+//not game specific package import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+
+      
+//not game specific package import { GameTickDisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/GameTickDisplayInfoSingleton.js';
+      const GameTickDisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.GameTickDisplayInfoSingleton;
+
+      
+//not game specific package import { MyCommandsFactory } from '../../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
+      const MyCommandsFactory = globalThis.org.allbinary.graphics.displayable.command.MyCommandsFactory;
+
+      
+//not game specific package import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
+      const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
+
+      
+//not game specific package import { DisplayChangeEventHandler } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
+      const DisplayChangeEventHandler = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventHandler;
+
+      
+//not game specific package import { DisplayChangeEventListener } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
+      const DisplayChangeEventListener = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventListener;
+
+      
+//not game specific package import { MyFontProcessor } from '../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+
+      
+//not game specific package import { UpdateMyFontInterface } from '../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+
+      
+//not game specific package import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+
+      
+//not game specific package import { CommandCurrentSelectionFormFactory } from '../../../../../org/allbinary/graphics/form/CommandCurrentSelectionFormFactory.js';
+      const CommandCurrentSelectionFormFactory = globalThis.org.allbinary.graphics.form.CommandCurrentSelectionFormFactory;
+
+      
+//not game specific package import { FormPaintable } from '../../../../../org/allbinary/graphics/form/FormPaintable.js';
+      const FormPaintable = globalThis.org.allbinary.graphics.form.FormPaintable;
+
+      
+//not game specific package import { FormType } from '../../../../../org/allbinary/graphics/form/FormType.js';
+      const FormType = globalThis.org.allbinary.graphics.form.FormType;
+
+      
+//not game specific package import { FormTypeFactory } from '../../../../../org/allbinary/graphics/form/FormTypeFactory.js';
+      const FormTypeFactory = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+
+      
+//not game specific package import { ScrollSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+      const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+
+      
+//not game specific package import { ScrollSelectionFormNoneFactory } from '../../../../../org/allbinary/graphics/form/ScrollSelectionFormNoneFactory.js';
+      const ScrollSelectionFormNoneFactory = globalThis.org.allbinary.graphics.form.ScrollSelectionFormNoneFactory;
+
+      
+//not game specific package import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
+      const CommandTextItemArrayFactory = globalThis.org.allbinary.graphics.form.item.CommandTextItemArrayFactory;
+
+      
+//not game specific package import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
+      
+//not game specific package import { CurrentDisplayableFactory } from '../../../../../org/allbinary/graphics/opengles/CurrentDisplayableFactory.js';
+      const CurrentDisplayableFactory = globalThis.org.allbinary.graphics.opengles.CurrentDisplayableFactory;
+
+      
+//not game specific package import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+
+      
+//not game specific package import { OpenGLFeatureUtil } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
+      const OpenGLFeatureUtil = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureUtil;
+
+      
+//not game specific package import { OpenGLThreadUtil } from '../../../../../org/allbinary/graphics/opengles/OpenGLThreadUtil.js';
+      const OpenGLThreadUtil = globalThis.org.allbinary.graphics.opengles.OpenGLThreadUtil;
+
+      
+//not game specific package import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
+      const InitUpdatePaintable = globalThis.org.allbinary.graphics.paint.InitUpdatePaintable;
+
+      
+//not game specific package import { NullInitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js';
+      const NullInitUpdatePaintable = globalThis.org.allbinary.graphics.paint.NullInitUpdatePaintable;
+
+      
+//not game specific package import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+
+      
+//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
+      
+//not game specific package import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
+      
+//not game specific package import { OpenGLImageSpecificFactory } from '../../../../../org/allbinary/image/opengles/OpenGLImageSpecificFactory.js';
+      const OpenGLImageSpecificFactory = globalThis.org.allbinary.image.opengles.OpenGLImageSpecificFactory;
+
+      
+//not game specific package import { SensorGameUpdateProcessor } from '../../../../../org/allbinary/input/gyro/SensorGameUpdateProcessor.js';
+      const SensorGameUpdateProcessor = globalThis.org.allbinary.input.gyro.SensorGameUpdateProcessor;
+
+      
+//not game specific package import { SingleSensorGameUpdateProcessor } from '../../../../../org/allbinary/input/gyro/SingleSensorGameUpdateProcessor.js';
+      const SingleSensorGameUpdateProcessor = globalThis.org.allbinary.input.gyro.SingleSensorGameUpdateProcessor;
+
+      
+//not game specific package import { BaseTouchInput } from '../../../../../org/allbinary/input/motion/button/BaseTouchInput.js';
+      const BaseTouchInput = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
+
+      
+//not game specific package import { NoButtonsTouchInputFactory } from '../../../../../org/allbinary/input/motion/button/NoButtonsTouchInputFactory.js';
+      const NoButtonsTouchInputFactory = globalThis.org.allbinary.input.motion.button.NoButtonsTouchInputFactory;
+
+      
+//not game specific package import { TouchButtonFactory } from '../../../../../org/allbinary/input/motion/button/TouchButtonFactory.js';
+      const TouchButtonFactory = globalThis.org.allbinary.input.motion.button.TouchButtonFactory;
+
+      
+//not game specific package import { TouchButtonsPaintableFactory } from '../../../../../org/allbinary/input/motion/button/TouchButtonsPaintableFactory.js';
+      const TouchButtonsPaintableFactory = globalThis.org.allbinary.input.motion.button.TouchButtonsPaintableFactory;
+
+      
+//not game specific package import { TouchScreenFactory } from '../../../../../org/allbinary/input/motion/button/TouchScreenFactory.js';
+      const TouchScreenFactory = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
+
+      
+//not game specific package import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
+      const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
+
+      
+//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
+      
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
+      
+//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+      const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
+      
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
+      
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not game specific package import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+
+      
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
+      
+//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
+      
+//not game specific package import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+
+      
+//not game specific package import { AllBinaryMediaManager } from '../../../../../org/allbinary/media/audio/AllBinaryMediaManager.js';
+      const AllBinaryMediaManager = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
+
+      
+//not game specific package import { PlayerQueue } from '../../../../../org/allbinary/media/audio/PlayerQueue.js';
+      const PlayerQueue = globalThis.org.allbinary.media.audio.PlayerQueue;
+
+      
+//not game specific package import { PrimaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
+      const PrimaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.PrimaryPlayerQueueFactory;
+
+      
+//not game specific package import { SecondaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
+      const SecondaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.SecondaryPlayerQueueFactory;
+
+      
+//not game specific package import { SelectSound } from '../../../../../org/allbinary/media/audio/SelectSound.js';
+      const SelectSound = globalThis.org.allbinary.media.audio.SelectSound;
+
+      
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
+      
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
+      
+//not game specific package import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/SecondaryThreadPool.js';
+      const SecondaryThreadPool = globalThis.org.allbinary.thread.SecondaryThreadPool;
+
+      
+//not game specific package import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+
+      
+//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+
+      
+//not game specific package import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
+      
+//not game specific package import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
+      const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -383,7 +655,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private readonly endLevelIntermissionInterface: IntermissionInterface = new Intermission();
 
-    gameLayerManager: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
+    gameLayerManager: AllBinaryGameLayerManager = AllBinaryGameLayerManager.getNullInstance()!;
 
     private gameState: GameState = this.gameStateFactory!.NO_GAME_STATE;
 

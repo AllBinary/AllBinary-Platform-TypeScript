@@ -10,7 +10,9 @@
         
             import { RuntimeException } from '../../java/lang/RuntimeException.js';
         
-import { InputStream } from '../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
 
 

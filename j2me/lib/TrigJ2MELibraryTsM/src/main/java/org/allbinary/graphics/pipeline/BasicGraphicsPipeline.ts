@@ -22,17 +22,29 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { Angle } from '../../../../org/allbinary/math/Angle.js';
+//not game specific package import { Angle } from '../../../../org/allbinary/math/Angle.js';
+      const Angle = globalThis.org.allbinary.math.Angle;
+
       
-import { NoDecimalTrigTable } from '../../../../org/allbinary/math/NoDecimalTrigTable.js';
+//not game specific package import { NoDecimalTrigTable } from '../../../../org/allbinary/math/NoDecimalTrigTable.js';
+      const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+      const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
+
       
 
 

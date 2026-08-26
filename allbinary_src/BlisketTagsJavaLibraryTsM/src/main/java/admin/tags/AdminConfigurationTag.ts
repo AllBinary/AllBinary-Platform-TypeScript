@@ -18,9 +18,13 @@
 
 
 
-import { AdminConfigurationHelperFactory } from '../../admin/taghelpers/AdminConfigurationHelperFactory.js';
+//not game specific package import { AdminConfigurationHelperFactory } from '../../admin/taghelpers/AdminConfigurationHelperFactory.js';
+      const AdminConfigurationHelperFactory = globalThis.admin.taghelpers.AdminConfigurationHelperFactory;
+
       
-import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js';
+//not game specific package import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js';
+      const AdminConfigurationRequestHelperFactory = globalThis.admin.taghelpers.AdminConfigurationRequestHelperFactory;
+
       
 
 

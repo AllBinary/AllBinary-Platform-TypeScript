@@ -24,27 +24,65 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { Control } from '../../../../javax/microedition/media/Control.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
+//not game specific package import { Control } from '../../../../javax/microedition/media/Control.js';
+      const Control = globalThis.javax.microedition.media.Control;
+
       
-import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+//not game specific package import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
+      const Controllable = globalThis.javax.microedition.media.Controllable;
+
       
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+//not game specific package import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      const MediaException = globalThis.javax.microedition.media.MediaException;
+
       
-import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+//not game specific package import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
+
       
-import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
+//not game specific package import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
+      const TimeBase = globalThis.javax.microedition.media.TimeBase;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+//not game specific package import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+
       
-import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+
+      
+//not game specific package import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
@@ -66,7 +104,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
 import { Controllable2 } from './Controllable2.js';
-
+//BasicPlayerMIDP2
 export class PlayerComposite
             extends Object
          implements Controllable, Player {

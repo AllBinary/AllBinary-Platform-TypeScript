@@ -20,17 +20,29 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
+//not game specific package import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
+      const TsUtil = globalThis.org.allbinary.TsUtil;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+//not game specific package import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+
       
-import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
+//not game specific package import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
+      const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
+
       
-import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

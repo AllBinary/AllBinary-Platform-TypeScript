@@ -22,17 +22,29 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      const HelpSet = globalThis.javax.help.HelpSet;
+
       
-import { AbstractInputRobot } from '../../../../../org/allbinary/input/automation/AbstractInputRobot.js';
+//not game specific package import { AbstractInputRobot } from '../../../../../org/allbinary/input/automation/AbstractInputRobot.js';
+      const AbstractInputRobot = globalThis.org.allbinary.input.automation.AbstractInputRobot;
+
       
-import { PointFactory } from '../../../../../org/allbinary/input/automation/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../../org/allbinary/input/automation/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.input.automation.PointFactory;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

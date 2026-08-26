@@ -22,31 +22,69 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
+//not game specific package import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
+      const Choice = globalThis.javax.microedition.lcdui.Choice;
+
       
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+
       
-import { Item } from '../../../../javax/microedition/lcdui/Item.js';
+//not game specific package import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+//not game specific package import { Item } from '../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
+
       
-import { StringItem } from '../../../../javax/microedition/lcdui/StringItem.js';
+//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+
       
-import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { StringItem } from '../../../../javax/microedition/lcdui/StringItem.js';
+      const StringItem = globalThis.javax.microedition.lcdui.StringItem;
+
       
-import { GamePersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
+//not game specific package import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { GamePersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
+      const GamePersistanceSingleton = globalThis.org.allbinary.game.configuration.persistance.GamePersistanceSingleton;
+
       
-import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+      const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

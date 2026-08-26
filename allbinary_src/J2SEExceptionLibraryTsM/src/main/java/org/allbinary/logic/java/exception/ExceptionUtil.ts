@@ -24,9 +24,13 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+
       
-import { PrintStream } from '../../../../../java/io/PrintStream.js';
+//not game specific package import { PrintStream } from '../../../../../java/io/PrintStream.js';
+      const PrintStream = globalThis.java.io.PrintStream;
+
       
 
 

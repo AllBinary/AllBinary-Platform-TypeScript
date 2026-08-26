@@ -18,23 +18,53 @@
 
 
 
-import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
+//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+
       
-import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/ColorChangeListener.js';
+//not game specific package import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
+      const ColorChangeEventHandler = globalThis.org.allbinary.graphics.color.ColorChangeEventHandler;
+
       
-import { FormPaintable } from '../../../../org/allbinary/graphics/form/FormPaintable.js';
+//not game specific package import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/ColorChangeListener.js';
+      const ColorChangeListener = globalThis.org.allbinary.graphics.color.ColorChangeListener;
+
       
-import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+//not game specific package import { FormPaintable } from '../../../../org/allbinary/graphics/form/FormPaintable.js';
+      const FormPaintable = globalThis.org.allbinary.graphics.form.FormPaintable;
+
       
-import { ABStringComponent } from '../../../../org/allbinary/graphics/form/item/ABStringComponent.js';
+//not game specific package import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+      const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+
       
-import { ABTextItem } from '../../../../org/allbinary/graphics/form/item/ABTextItem.js';
+//not game specific package import { ABStringComponent } from '../../../../org/allbinary/graphics/form/item/ABStringComponent.js';
+      const ABStringComponent = globalThis.org.allbinary.graphics.form.item.ABStringComponent;
+
       
-import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { ABTextItem } from '../../../../org/allbinary/graphics/form/item/ABTextItem.js';
+      const ABTextItem = globalThis.org.allbinary.graphics.form.item.ABTextItem;
+
       
-import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+//not game specific package import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
+      
+//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 
@@ -98,17 +128,21 @@ mainGameDemoStatePaintable!.getOwnershipPaintableInterface()!.setBasicColorP(bas
 scrollSelectionForm!.setButtonBasicColor(basicColor);
     
 
+    var item: ABTextItem;;
+    
+
+    var stringComponent: ABStringComponent;;
+    
+
 
 
 
                         for (
     var index: number = scrollSelectionForm!.size() -1;index >= 0; index--)
         {
-
-    var item: ABTextItem = scrollSelectionForm!.get(index) as ABTextItem;;
+item= scrollSelectionForm!.get(index) as ABTextItem;
     
-
-    var stringComponent: ABStringComponent = item.getLabelStringComponent()!;;
+stringComponent= item.getLabelStringComponent();
     
 
                         if(stringComponent != 

@@ -22,9 +22,13 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+//not game specific package import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+
       
-import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
+//not game specific package import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
+      const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
+
       
 
 

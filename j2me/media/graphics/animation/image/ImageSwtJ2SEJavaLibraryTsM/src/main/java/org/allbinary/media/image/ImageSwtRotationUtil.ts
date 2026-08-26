@@ -20,19 +20,33 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+
       
-import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+//not game specific package import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+      const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { SWT } from '../../../../org/eclipse/swt/SWT.js';
+//not game specific package import { SWT } from '../../../../org/eclipse/swt/SWT.js';
+      const SWT = globalThis.org.eclipse.swt.SWT;
+
       
-import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
+//not game specific package import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
+      const GC = globalThis.org.eclipse.swt.graphics.GC;
+
       
-import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+//not game specific package import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+      const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+
       
 
 

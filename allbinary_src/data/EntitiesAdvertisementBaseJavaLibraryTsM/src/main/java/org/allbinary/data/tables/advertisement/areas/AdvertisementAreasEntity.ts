@@ -20,29 +20,53 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../../../../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { AdvertisementArea } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementArea.js';
+//not game specific package import { AdvertisementArea } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementArea.js';
+      const AdvertisementArea = globalThis.org.allbinary.business.advertisement.area.AdvertisementArea;
+
       
-import { AdvertisementAreaData } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js';
+//not game specific package import { AdvertisementAreaData } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js';
+      const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
+
       
-import { AdvertisementAreaInterface } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementAreaInterface.js';
+//not game specific package import { AdvertisementAreaInterface } from '../../../../../../org/allbinary/business/advertisement/area/AdvertisementAreaInterface.js';
+      const AdvertisementAreaInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaInterface;
+
       
-import { AdvertisementCampaignData } from '../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
+//not game specific package import { AdvertisementCampaignData } from '../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
+      const AdvertisementCampaignData = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignData;
+
       
-import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+//not game specific package import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+      const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+//not game specific package import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+      const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+
       
-import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
 
 

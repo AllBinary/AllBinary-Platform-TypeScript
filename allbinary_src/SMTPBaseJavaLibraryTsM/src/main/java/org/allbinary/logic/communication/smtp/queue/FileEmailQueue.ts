@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { DomDocumentQueueInterface } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentQueueInterface.js';
+//not game specific package import { DomDocumentQueueInterface } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentQueueInterface.js';
+      const DomDocumentQueueInterface = globalThis.org.allbinary.data.tree.dom.document.DomDocumentQueueInterface;
+
       
 
 

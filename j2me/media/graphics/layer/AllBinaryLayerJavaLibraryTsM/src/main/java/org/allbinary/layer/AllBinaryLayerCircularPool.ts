@@ -20,9 +20,25 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { BaseCircularPool } from '../../../org/allbinary/logic/util/cache/BaseCircularPool.js';
+//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
+//not game specific package import { BaseCircularPool } from '../../../org/allbinary/logic/util/cache/BaseCircularPool.js';
+      const BaseCircularPool = globalThis.org.allbinary.logic.util.cache.BaseCircularPool;
+
+      
+//not game specific package import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
+      const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
+
+      
+//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
       
 
 

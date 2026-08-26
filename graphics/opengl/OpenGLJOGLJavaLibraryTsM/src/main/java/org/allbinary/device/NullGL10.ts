@@ -20,15 +20,25 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+//not game specific package import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+
       
-import { Buffer } from '../../../java/nio/Buffer.js';
+//not game specific package import { Buffer } from '../../../java/nio/Buffer.js';
+      const Buffer = globalThis.java.nio.Buffer;
+
       
-import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
+//not game specific package import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
+      const FloatBuffer = globalThis.java.nio.FloatBuffer;
+
       
-import { IntBuffer } from '../../../java/nio/IntBuffer.js';
+//not game specific package import { IntBuffer } from '../../../java/nio/IntBuffer.js';
+      const IntBuffer = globalThis.java.nio.IntBuffer;
+
       
-import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
 
 

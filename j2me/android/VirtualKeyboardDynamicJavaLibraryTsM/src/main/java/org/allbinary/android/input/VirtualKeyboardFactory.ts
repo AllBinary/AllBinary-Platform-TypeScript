@@ -20,13 +20,21 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
+//not game specific package import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
+      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+
       
-import { VirtualKeyboardAPI1 } from '../../../../org/allbinary/android/input/api1/VirtualKeyboardAPI1.js';
+//not game specific package import { VirtualKeyboardAPI1 } from '../../../../org/allbinary/android/input/api1/VirtualKeyboardAPI1.js';
+      const VirtualKeyboardAPI1 = globalThis.org.allbinary.android.input.api1.VirtualKeyboardAPI1;
+
       
-import { VirtualKeyboardAPI3 } from '../../../../org/allbinary/android/input/api3/VirtualKeyboardAPI3.js';
+//not game specific package import { VirtualKeyboardAPI3 } from '../../../../org/allbinary/android/input/api3/VirtualKeyboardAPI3.js';
+      const VirtualKeyboardAPI3 = globalThis.org.allbinary.android.input.api3.VirtualKeyboardAPI3;
+
       
-import { Activity } from '../../../../android/app/Activity.js';
+//not game specific package import { Activity } from '../../../../android/app/Activity.js';
+      const Activity = globalThis.android.app.Activity;
+
       
 
 

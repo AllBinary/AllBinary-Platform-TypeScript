@@ -20,13 +20,21 @@
 
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+//not game specific package import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+      const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

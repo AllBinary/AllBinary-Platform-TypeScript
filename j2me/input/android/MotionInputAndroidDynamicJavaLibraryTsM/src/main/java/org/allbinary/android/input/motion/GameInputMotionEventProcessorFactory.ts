@@ -20,11 +20,17 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
+//not game specific package import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
+      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+
       
-import { GameInputMotionEventProcessorAPI1 } from '../../../../../org/allbinary/android/input/motion/api1/GameInputMotionEventProcessorAPI1.js';
+//not game specific package import { GameInputMotionEventProcessorAPI1 } from '../../../../../org/allbinary/android/input/motion/api1/GameInputMotionEventProcessorAPI1.js';
+      const GameInputMotionEventProcessorAPI1 = globalThis.org.allbinary.android.input.motion.api1.GameInputMotionEventProcessorAPI1;
+
       
-import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/android/input/motion/api5/GameInputMotionEventProcessorAPI5.js';
+//not game specific package import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/android/input/motion/api5/GameInputMotionEventProcessorAPI5.js';
+      const GameInputMotionEventProcessorAPI5 = globalThis.org.allbinary.android.input.motion.api5.GameInputMotionEventProcessorAPI5;
+
       
 
 

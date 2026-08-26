@@ -18,7 +18,9 @@
 
 
 
-import { TouchButtonResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
+//not game specific package import { TouchButtonResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
+      const TouchButtonResource = globalThis.org.allbinary.input.motion.button.TouchButtonResource;
+
       
 
 

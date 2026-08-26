@@ -24,29 +24,53 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Map } from '../../../../java/util/Map.js';
+//not game specific package import { Map } from '../../../../java/util/Map.js';
+      const Map = globalThis.java.util.Map;
+
       
-import { Set } from '../../../../java/util/Set.js';
+//not game specific package import { Set } from '../../../../java/util/Set.js';
+      const Set = globalThis.java.util.Set;
+
       
-import { HistoryDbInitInfo } from '../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
+//not game specific package import { HistoryDbInitInfo } from '../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
+      const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
+
       
-import { InventoryDbInitInfo } from '../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
+//not game specific package import { InventoryDbInitInfo } from '../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
+      const InventoryDbInitInfo = globalThis.org.allbinary.business.init.db.InventoryDbInitInfo;
+
       
-import { LogDbInitInfo } from '../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
+//not game specific package import { LogDbInitInfo } from '../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
+      const LogDbInitInfo = globalThis.org.allbinary.business.init.db.LogDbInitInfo;
+
       
-import { StaticPagesDbInitInfo } from '../../../../org/allbinary/business/init/db/StaticPagesDbInitInfo.js';
+//not game specific package import { StaticPagesDbInitInfo } from '../../../../org/allbinary/business/init/db/StaticPagesDbInitInfo.js';
+      const StaticPagesDbInitInfo = globalThis.org.allbinary.business.init.db.StaticPagesDbInitInfo;
+
       
-import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+//not game specific package import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+      const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

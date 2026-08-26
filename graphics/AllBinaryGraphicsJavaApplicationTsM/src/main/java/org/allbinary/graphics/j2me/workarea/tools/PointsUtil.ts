@@ -24,13 +24,21 @@
         
             import { Double } from '../../../../../../java/lang/Double.js';
         
-import { VectorRotationGenerator } from '../../../../../../org/allbinary/animation/VectorRotationGenerator.js';
+//not game specific package import { VectorRotationGenerator } from '../../../../../../org/allbinary/animation/VectorRotationGenerator.js';
+      const VectorRotationGenerator = globalThis.org.allbinary.animation.VectorRotationGenerator;
+
       
-import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { AngleFactory } from '../../../../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { AngleFactory } from '../../../../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
-import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
 
 

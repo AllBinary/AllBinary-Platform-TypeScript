@@ -24,33 +24,61 @@
         
             import { RuntimeException } from '../../../../../../../java/lang/RuntimeException.js';
         
-import { File } from '../../../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { IOException } from '../../../../../../../java/io/IOException.js';
+//not game specific package import { IOException } from '../../../../../../../java/io/IOException.js';
+      const IOException = globalThis.java.io.IOException;
+
       
-import { InputStream } from '../../../../../../../java/io/InputStream.js';
+//not game specific package import { InputStream } from '../../../../../../../java/io/InputStream.js';
+      const InputStream = globalThis.java.io.InputStream;
+
       
-import { OutputStream } from '../../../../../../../java/io/OutputStream.js';
+//not game specific package import { OutputStream } from '../../../../../../../java/io/OutputStream.js';
+      const OutputStream = globalThis.java.io.OutputStream;
+
       
-import { UnsupportedEncodingException } from '../../../../../../../java/io/UnsupportedEncodingException.js';
+//not game specific package import { UnsupportedEncodingException } from '../../../../../../../java/io/UnsupportedEncodingException.js';
+      const UnsupportedEncodingException = globalThis.java.io.UnsupportedEncodingException;
+
       
-import { ForcedLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not game specific package import { ForcedLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+      const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
+
       
-import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
+//not game specific package import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
+      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+
       
-import { FileItemHeaders } from '../../../../../../../org/apache/commons/fileupload/FileItemHeaders.js';
+//not game specific package import { FileItemHeaders } from '../../../../../../../org/apache/commons/fileupload/FileItemHeaders.js';
+      const FileItemHeaders = globalThis.org.apache.commons.fileupload.FileItemHeaders;
+
       
-import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
+//not game specific package import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
+      const FileItemUtil = globalThis.org.apache.commons.fileupload.FileItemUtil;
+
       
 
 

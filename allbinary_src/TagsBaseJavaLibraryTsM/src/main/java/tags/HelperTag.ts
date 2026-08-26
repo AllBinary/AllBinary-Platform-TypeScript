@@ -20,9 +20,13 @@
 
             import { Exception } from '../java/lang/Exception.js';
         
-import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
+//not game specific package import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
+      const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+
       
-import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
 
 

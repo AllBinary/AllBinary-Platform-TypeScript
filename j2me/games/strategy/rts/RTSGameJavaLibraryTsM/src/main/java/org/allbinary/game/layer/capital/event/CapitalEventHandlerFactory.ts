@@ -20,7 +20,9 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-import { Group } from '../../../../../../org/allbinary/game/identification/Group.js';
+//not game specific package import { Group } from '../../../../../../org/allbinary/game/identification/Group.js';
+      const Group = globalThis.org.allbinary.game.identification.Group;
+
       
 
 

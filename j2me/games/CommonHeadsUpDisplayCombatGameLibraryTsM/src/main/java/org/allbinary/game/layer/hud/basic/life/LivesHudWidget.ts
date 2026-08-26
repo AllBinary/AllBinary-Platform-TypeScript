@@ -20,19 +20,33 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Animation } from '../../../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+//not game specific package import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+      const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
+
       
-import { Life } from '../../../../../../../org/allbinary/game/life/Life.js';
+//not game specific package import { Life } from '../../../../../../../org/allbinary/game/life/Life.js';
+      const Life = globalThis.org.allbinary.game.life.Life;
+
       
-import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { DisplayChangeEvent } from '../../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
+//not game specific package import { DisplayChangeEvent } from '../../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
+      const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
+
       
-import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
 
 

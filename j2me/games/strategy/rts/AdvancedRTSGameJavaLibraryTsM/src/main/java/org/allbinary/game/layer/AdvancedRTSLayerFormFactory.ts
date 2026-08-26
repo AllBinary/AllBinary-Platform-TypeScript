@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { RTSLayerFormFactory } from '../../../../org/allbinary/game/input/RTSLayerFormFactory.js';
+//not game specific package import { RTSLayerFormFactory } from '../../../../org/allbinary/game/input/RTSLayerFormFactory.js';
+      const RTSLayerFormFactory = globalThis.org.allbinary.game.input.RTSLayerFormFactory;
+
       
-import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+//not game specific package import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+//not game specific package import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+      const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+
       
-import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js';
+//not game specific package import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js';
+      const ItemArraySingletonFactoryInterface = globalThis.org.allbinary.graphics.form.item.ItemArraySingletonFactoryInterface;
+
       
 
 

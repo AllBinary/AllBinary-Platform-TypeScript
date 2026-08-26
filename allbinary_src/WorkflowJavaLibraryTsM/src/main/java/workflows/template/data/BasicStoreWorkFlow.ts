@@ -20,13 +20,21 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-import { HashMap } from '../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+//not game specific package import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+
       
-import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
+//not game specific package import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
+      const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
+
       
 
 

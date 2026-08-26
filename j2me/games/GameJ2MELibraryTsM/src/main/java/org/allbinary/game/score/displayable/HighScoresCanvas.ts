@@ -22,63 +22,137 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+//not game specific package import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
+
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+
       
-import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+//not game specific package import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
+      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+
       
-import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+//not game specific package import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+
       
-import { GameCommandCanvas } from '../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js';
+//not game specific package import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+
       
-import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+//not game specific package import { GameCommandCanvas } from '../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js';
+      const GameCommandCanvas = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
+
       
-import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
+//not game specific package import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
       
-import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
+//not game specific package import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
+      const ColorFillBasePaintable = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
+
       
-import { HighScoreCommandsFactory } from '../../../../../org/allbinary/game/score/HighScoreCommandsFactory.js';
+//not game specific package import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
+      const ColorFillPaintableFactory = globalThis.org.allbinary.game.paint.ColorFillPaintableFactory;
+
       
-import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
+//not game specific package import { HighScoreCommandsFactory } from '../../../../../org/allbinary/game/score/HighScoreCommandsFactory.js';
+      const HighScoreCommandsFactory = globalThis.org.allbinary.game.score.HighScoreCommandsFactory;
+
       
-import { HighScoresCanvasInputProcessor } from '../../../../../org/allbinary/game/score/HighScoresCanvasInputProcessor.js';
+//not game specific package import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
+      const HighScores = globalThis.org.allbinary.game.score.HighScores;
+
       
-import { HighScoresCanvasInputProcessorFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresCanvasInputProcessorFactoryInterface.js';
+//not game specific package import { HighScoresCanvasInputProcessor } from '../../../../../org/allbinary/game/score/HighScoresCanvasInputProcessor.js';
+      const HighScoresCanvasInputProcessor = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessor;
+
       
-import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
+//not game specific package import { HighScoresCanvasInputProcessorFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresCanvasInputProcessorFactoryInterface.js';
+      const HighScoresCanvasInputProcessorFactoryInterface = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessorFactoryInterface;
+
       
-import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
+//not game specific package import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
+      const HighScoresFactoryInterface = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
+
       
-import { HighScoresPaintable } from '../../../../../org/allbinary/game/score/HighScoresPaintable.js';
+//not game specific package import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
+      const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
+
       
-import { HighScoresResultsListener } from '../../../../../org/allbinary/game/score/HighScoresResultsListener.js';
+//not game specific package import { HighScoresPaintable } from '../../../../../org/allbinary/game/score/HighScoresPaintable.js';
+      const HighScoresPaintable = globalThis.org.allbinary.game.score.HighScoresPaintable;
+
       
-import { NoHighScoresFactory } from '../../../../../org/allbinary/game/score/NoHighScoresFactory.js';
+//not game specific package import { HighScoresResultsListener } from '../../../../../org/allbinary/game/score/HighScoresResultsListener.js';
+      const HighScoresResultsListener = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+
       
-import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
+//not game specific package import { NoHighScoresFactory } from '../../../../../org/allbinary/game/score/NoHighScoresFactory.js';
+      const NoHighScoresFactory = globalThis.org.allbinary.game.score.NoHighScoresFactory;
+
       
-import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
+      const NullHighScoresSingletonFactory = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
+
       
-import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+//not game specific package import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+
       
-import { SimpleTextPaintable } from '../../../../../org/allbinary/graphics/paint/SimpleTextPaintable.js';
+//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { SimpleTextPaintable } from '../../../../../org/allbinary/graphics/paint/SimpleTextPaintable.js';
+      const SimpleTextPaintable = globalThis.org.allbinary.graphics.paint.SimpleTextPaintable;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/SecondaryThreadPool.js';
+//not game specific package import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
+      const ARunnable = globalThis.org.allbinary.thread.ARunnable;
+
+      
+//not game specific package import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/SecondaryThreadPool.js';
+      const SecondaryThreadPool = globalThis.org.allbinary.thread.SecondaryThreadPool;
+
+      
+//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+
+      
+//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 

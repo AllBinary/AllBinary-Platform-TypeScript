@@ -18,7 +18,9 @@
 
 
 
-import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
+//not game specific package import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
+      const InputAutomationRobotChangeEvent = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotChangeEvent;
+
       
 
 

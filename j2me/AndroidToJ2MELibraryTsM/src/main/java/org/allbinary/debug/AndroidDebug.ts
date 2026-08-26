@@ -24,7 +24,9 @@
         
             import { Long } from '../../../java/lang/Long.js';
         
-import { Debug } from '../../../android/os/Debug.js';
+//not game specific package import { Debug } from '../../../android/os/Debug.js';
+      const Debug = globalThis.android.os.Debug;
+
       
 
 

@@ -20,27 +20,49 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { Animation } from '../../../../../../../org/allbinary/animation/Animation.js';
+//not game specific package import { Animation } from '../../../../../../../org/allbinary/animation/Animation.js';
+      const Animation = globalThis.org.allbinary.animation.Animation;
+
       
-import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+//not game specific package import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+      const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
+
       
-import { Health } from '../../../../../../../org/allbinary/game/health/Health.js';
+//not game specific package import { Health } from '../../../../../../../org/allbinary/game/health/Health.js';
+      const Health = globalThis.org.allbinary.game.health.Health;
+
       
-import { HealthListenerInterface } from '../../../../../../../org/allbinary/game/health/HealthListenerInterface.js';
+//not game specific package import { HealthListenerInterface } from '../../../../../../../org/allbinary/game/health/HealthListenerInterface.js';
+      const HealthListenerInterface = globalThis.org.allbinary.game.health.HealthListenerInterface;
+
       
-import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
       
-import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+//not game specific package import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+
       
-import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+//not game specific package import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+
       
-import { GameTickTimeDelayHelperFactory } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+
       
-import { NoTimeDelayHelper } from '../../../../../../../org/allbinary/time/NoTimeDelayHelper.js';
+//not game specific package import { NoTimeDelayHelper } from '../../../../../../../org/allbinary/time/NoTimeDelayHelper.js';
+      const NoTimeDelayHelper = globalThis.org.allbinary.time.NoTimeDelayHelper;
+
       
-import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDelayHelper.js';
+//not game specific package import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+
       
 
 

@@ -18,13 +18,21 @@
 
 
 
-import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
+//not game specific package import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
+      const FileNotFoundException = globalThis.java.io.FileNotFoundException;
+
       
-import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+//not game specific package import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+      const FileOutputStream = globalThis.java.io.FileOutputStream;
+
       
-import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+
       
-import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+//not game specific package import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+      const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+
       
 
 

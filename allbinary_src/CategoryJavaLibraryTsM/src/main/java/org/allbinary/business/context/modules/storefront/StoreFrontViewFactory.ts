@@ -22,15 +22,25 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { StoreFrontsEntity } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
+//not game specific package import { StoreFrontsEntity } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
+      const StoreFrontsEntity = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntity;
+
       
-import { StoreFrontsEntityFactory } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
+//not game specific package import { StoreFrontsEntityFactory } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
+      const StoreFrontsEntityFactory = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntityFactory;
+
       
-import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+//not game specific package import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+
       
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

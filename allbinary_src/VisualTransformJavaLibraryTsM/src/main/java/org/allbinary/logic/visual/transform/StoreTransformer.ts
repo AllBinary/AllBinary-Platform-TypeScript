@@ -20,15 +20,25 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+
       
-import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+//not game specific package import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+      const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+
       
-import { StoreUriResolver } from '../../../../../org/allbinary/data/tree/dom/StoreUriResolver.js';
+//not game specific package import { StoreUriResolver } from '../../../../../org/allbinary/data/tree/dom/StoreUriResolver.js';
+      const StoreUriResolver = globalThis.org.allbinary.data.tree.dom.StoreUriResolver;
+
       
-import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
       
-import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
       
 
 

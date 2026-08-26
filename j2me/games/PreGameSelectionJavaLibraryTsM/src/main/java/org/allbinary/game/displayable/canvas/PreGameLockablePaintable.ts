@@ -20,17 +20,29 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+
       
-import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+//not game specific package import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+      const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
+
       
-import { LockedResources } from '../../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
+//not game specific package import { LockedResources } from '../../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
+      const LockedResources = globalThis.org.allbinary.logic.system.security.licensing.LockedResources;
+
       
-import { LockedUtil } from '../../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
+//not game specific package import { LockedUtil } from '../../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
+      const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
+
       
-import { LockablePaintable } from '../../../../../org/allbinary/graphics/form/LockablePaintable.js';
+//not game specific package import { LockablePaintable } from '../../../../../org/allbinary/graphics/form/LockablePaintable.js';
+      const LockablePaintable = globalThis.org.allbinary.graphics.form.LockablePaintable;
+
       
-import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
+//not game specific package import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
+      const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
+
       
 
 

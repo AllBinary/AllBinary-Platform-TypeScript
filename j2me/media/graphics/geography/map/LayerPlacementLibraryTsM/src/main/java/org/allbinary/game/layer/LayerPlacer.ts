@@ -22,23 +22,41 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Enumeration } from '../../../../java/util/Enumeration.js';
+//not game specific package import { Enumeration } from '../../../../java/util/Enumeration.js';
+      const Enumeration = globalThis.java.util.Enumeration;
+
       
-import { Hashtable } from '../../../../java/util/Hashtable.js';
+//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
+      const Hashtable = globalThis.java.util.Hashtable;
+
       
-import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not game specific package import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+      const GPoint = globalThis.org.allbinary.graphics.GPoint;
+
       
-import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+      const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
+
       
-import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+
       
-import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInterfaceFactory.js';
+//not game specific package import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInterfaceFactory.js';
+      const LayerInterfaceFactory = globalThis.org.allbinary.layer.LayerInterfaceFactory;
+
       
-import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
+//not game specific package import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
+      const LayerInterfaceVisitor = globalThis.org.allbinary.layer.LayerInterfaceVisitor;
+
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+      const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
+
       
-import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
+//not game specific package import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
+      const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
+
       
 
 

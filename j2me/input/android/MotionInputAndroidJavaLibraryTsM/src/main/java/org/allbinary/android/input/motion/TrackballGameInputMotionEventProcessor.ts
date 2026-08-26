@@ -20,21 +20,37 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MotionEvent } from '../../../../../android/view/MotionEvent.js';
+//not game specific package import { MotionEvent } from '../../../../../android/view/MotionEvent.js';
+      const MotionEvent = globalThis.android.view.MotionEvent;
+
       
-import { SingleKeyPressGameKeyFromMotionGestureEventListener } from '../../../../../org/allbinary/game/input/motion/action/SingleKeyPressGameKeyFromMotionGestureEventListener.js';
+//not game specific package import { SingleKeyPressGameKeyFromMotionGestureEventListener } from '../../../../../org/allbinary/game/input/motion/action/SingleKeyPressGameKeyFromMotionGestureEventListener.js';
+      const SingleKeyPressGameKeyFromMotionGestureEventListener = globalThis.org.allbinary.game.input.motion.action.SingleKeyPressGameKeyFromMotionGestureEventListener;
+
       
-import { DownTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/DownTrackballInputToGameKeyEventAction.js';
+//not game specific package import { DownTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/DownTrackballInputToGameKeyEventAction.js';
+      const DownTrackballInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.trackball.action.DownTrackballInputToGameKeyEventAction;
+
       
-import { LeftTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/LeftTrackballInputToGameKeyEventAction.js';
+//not game specific package import { LeftTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/LeftTrackballInputToGameKeyEventAction.js';
+      const LeftTrackballInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.trackball.action.LeftTrackballInputToGameKeyEventAction;
+
       
-import { RightTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/RightTrackballInputToGameKeyEventAction.js';
+//not game specific package import { RightTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/RightTrackballInputToGameKeyEventAction.js';
+      const RightTrackballInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.trackball.action.RightTrackballInputToGameKeyEventAction;
+
       
-import { UpTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/UpTrackballInputToGameKeyEventAction.js';
+//not game specific package import { UpTrackballInputToGameKeyEventAction } from '../../../../../org/allbinary/input/motion/trackball/action/UpTrackballInputToGameKeyEventAction.js';
+      const UpTrackballInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.trackball.action.UpTrackballInputToGameKeyEventAction;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

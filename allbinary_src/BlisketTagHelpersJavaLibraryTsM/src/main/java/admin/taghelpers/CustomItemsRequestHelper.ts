@@ -22,31 +22,57 @@
         
             import { Long } from '../../java/lang/Long.js';
         
-import { Calendar } from '../../java/util/Calendar.js';
+//not game specific package import { Calendar } from '../../java/util/Calendar.js';
+      const Calendar = globalThis.java.util.Calendar;
+
       
-import { HashMap } from '../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { Vector } from '../../java/util/Vector.js';
+//not game specific package import { Vector } from '../../java/util/Vector.js';
+      const Vector = globalThis.java.util.Vector;
+
       
-import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+
       
-import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+
       
-import { DynamicObjectData } from '../../org/allbinary/business/DynamicObjectData.js';
+//not game specific package import { DynamicObjectData } from '../../org/allbinary/business/DynamicObjectData.js';
+      const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
+
       
-import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
+//not game specific package import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
+      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+
       
-import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+//not game specific package import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+
       
-import { CustomItemData } from '../../org/allbinary/business/user/commerce/inventory/item/custom/CustomItemData.js';
+//not game specific package import { CustomItemData } from '../../org/allbinary/business/user/commerce/inventory/item/custom/CustomItemData.js';
+      const CustomItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.custom.CustomItemData;
+
       
-import { CustomItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/customs/CustomItemsEntityFactory.js';
+//not game specific package import { CustomItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/customs/CustomItemsEntityFactory.js';
+      const CustomItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.customs.CustomItemsEntityFactory;
+
       
-import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

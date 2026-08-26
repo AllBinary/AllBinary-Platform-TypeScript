@@ -24,17 +24,29 @@
         
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { FilePathData } from '../../../../../org/allbinary/logic/io/file/FilePathData.js';
+//not game specific package import { FilePathData } from '../../../../../org/allbinary/logic/io/file/FilePathData.js';
+      const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
+
       
-import { FilePathUtil } from '../../../../../org/allbinary/logic/io/file/FilePathUtil.js';
+//not game specific package import { FilePathUtil } from '../../../../../org/allbinary/logic/io/file/FilePathUtil.js';
+      const FilePathUtil = globalThis.org.allbinary.logic.io.file.FilePathUtil;
+
       
-import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+//not game specific package import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+
       
-import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
 
 

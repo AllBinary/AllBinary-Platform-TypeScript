@@ -18,7 +18,9 @@
 
 
 
-import { DefaultFileItemFactory } from '../../../../../org/apache/commons/fileupload/DefaultFileItemFactory.js';
+//not game specific package import { DefaultFileItemFactory } from '../../../../../org/apache/commons/fileupload/DefaultFileItemFactory.js';
+      const DefaultFileItemFactory = globalThis.org.apache.commons.fileupload.DefaultFileItemFactory;
+
       
 
 

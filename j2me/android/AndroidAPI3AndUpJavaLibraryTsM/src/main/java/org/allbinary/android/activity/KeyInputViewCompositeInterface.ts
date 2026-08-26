@@ -18,7 +18,9 @@
 
 
 
-import { View } from '../../../../android/view/View.js';
+//not game specific package import { View } from '../../../../android/view/View.js';
+      const View = globalThis.android.view.View;
+
       
 
 

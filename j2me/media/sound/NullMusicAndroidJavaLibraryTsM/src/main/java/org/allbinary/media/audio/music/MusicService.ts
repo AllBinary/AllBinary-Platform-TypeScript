@@ -18,7 +18,9 @@
 
 
 
-import { BaseMusicService } from '../../../../../org/allbinary/media/audio/music/BaseMusicService.js';
+//not game specific package import { BaseMusicService } from '../../../../../org/allbinary/media/audio/music/BaseMusicService.js';
+      const BaseMusicService = globalThis.org.allbinary.media.audio.music.BaseMusicService;
+
       
 
 

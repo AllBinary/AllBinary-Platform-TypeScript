@@ -24,43 +24,81 @@
         
             import { Double } from '../../../../java/lang/Double.js';
         
-import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+
       
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { swing } from '../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+//not game specific package import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+      const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+
       
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
+
       
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
       
-import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
+//not game specific package import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
+      const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
+
       
-import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+//not game specific package import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+      const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+
       
-import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+//not game specific package import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+      const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+
       
-import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
+//not game specific package import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
+      const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
+
       
-import { ImageUnifierCell } from '../../../../org/allbinary/media/image/ImageUnifierCell.js';
+//not game specific package import { ImageUnifierCell } from '../../../../org/allbinary/media/image/ImageUnifierCell.js';
+      const ImageUnifierCell = globalThis.org.allbinary.media.image.ImageUnifierCell;
+
       
-import { ImageUnifierProperties } from '../../../../org/allbinary/media/image/ImageUnifierProperties.js';
+//not game specific package import { ImageUnifierProperties } from '../../../../org/allbinary/media/image/ImageUnifierProperties.js';
+      const ImageUnifierProperties = globalThis.org.allbinary.media.image.ImageUnifierProperties;
+
       
-import { ImageUnifierUtil } from '../../../../org/allbinary/media/image/ImageUnifierUtil.js';
+//not game specific package import { ImageUnifierUtil } from '../../../../org/allbinary/media/image/ImageUnifierUtil.js';
+      const ImageUnifierUtil = globalThis.org.allbinary.media.image.ImageUnifierUtil;
+
       
-import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
+//not game specific package import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
+      const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+
       
-import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRatioUtil.js';
+//not game specific package import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRatioUtil.js';
+      const ImagesRatioUtil = globalThis.org.allbinary.media.image.ImagesRatioUtil;
+
       
-import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+      const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
+
       
-import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

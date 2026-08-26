@@ -22,27 +22,49 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { awt } from '../../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
+//not game specific package import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
+      const ActionEvent = globalThis.java.awt.event.ActionEvent;
+
       
-import { File } from '../../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { URI } from '../../../../../java/net/URI.js';
+//not game specific package import { URI } from '../../../../../java/net/URI.js';
+      const URI = globalThis.java.net.URI;
+
       
-import { URL } from '../../../../../java/net/URL.js';
+//not game specific package import { URL } from '../../../../../java/net/URL.js';
+      const URL = globalThis.java.net.URL;
+
       
-import { CSH } from '../../../../../javax/help/CSH.js';
+//not game specific package import { CSH } from '../../../../../javax/help/CSH.js';
+      const CSH = globalThis.javax.help.CSH;
+
       
-import { HelpBroker } from '../../../../../javax/help/HelpBroker.js';
+//not game specific package import { HelpBroker } from '../../../../../javax/help/HelpBroker.js';
+      const HelpBroker = globalThis.javax.help.HelpBroker;
+
       
-import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      const HelpSet = globalThis.javax.help.HelpSet;
+
       
-import { swing } from '../../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
 
 

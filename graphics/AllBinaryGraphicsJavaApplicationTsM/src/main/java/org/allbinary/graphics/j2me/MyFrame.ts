@@ -28,53 +28,101 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { awt } from '../../../../java/awt.js';
+//not game specific package import { awt } from '../../../../java/awt.js';
+      const awt = globalThis.java.awt;
+
       
-import { File } from '../../../../java/io/File.js';
+//not game specific package import { File } from '../../../../java/io/File.js';
+      const File = globalThis.java.io.File;
+
       
-import { HashMap } from '../../../../java/util/HashMap.js';
+//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
+      const HashMap = globalThis.java.util.HashMap;
+
       
-import { swing } from '../../../../javax/swing.js';
+//not game specific package import { swing } from '../../../../javax/swing.js';
+      const swing = globalThis.javax.swing;
+
       
-import { XslHelper } from '../../../../org/allbinary/data/tree/dom/XslHelper.js';
+//not game specific package import { XslHelper } from '../../../../org/allbinary/data/tree/dom/XslHelper.js';
+      const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
+
       
-import { DomHelper } from '../../../../org/allbinary/dom/DomHelper.js';
+//not game specific package import { DomHelper } from '../../../../org/allbinary/dom/DomHelper.js';
+      const DomHelper = globalThis.org.allbinary.dom.DomHelper;
+
       
-import { NewWorkAreaJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js';
+//not game specific package import { NewWorkAreaJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js';
+      const NewWorkAreaJDialog = globalThis.org.allbinary.graphics.j2me.dialog.NewWorkAreaJDialog;
+
       
-import { RotateJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js';
+//not game specific package import { RotateJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js';
+      const RotateJDialog = globalThis.org.allbinary.graphics.j2me.dialog.RotateJDialog;
+
       
-import { WorkAreaDom } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js';
+//not game specific package import { WorkAreaDom } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js';
+      const WorkAreaDom = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaDom;
+
       
-import { WorkAreaJPanel } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
+//not game specific package import { WorkAreaJPanel } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
+      const WorkAreaJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanel;
+
       
-import { WorkAreaJPanelInterface } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
+//not game specific package import { WorkAreaJPanelInterface } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
+      const WorkAreaJPanelInterface = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanelInterface;
+
       
-import { MyCanvasEvent } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
+//not game specific package import { MyCanvasEvent } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
+      const MyCanvasEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEvent;
+
       
-import { MyCanvasEventService } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
+//not game specific package import { MyCanvasEventService } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
+      const MyCanvasEventService = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventService;
+
       
-import { MyCanvasEventSource } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
+//not game specific package import { MyCanvasEventSource } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
+      const MyCanvasEventSource = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventSource;
+
       
-import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
+//not game specific package import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
+      const FileJDialog = globalThis.org.allbinary.gui.dialog.FileJDialog;
+
       
-import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
+//not game specific package import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
+      const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
+
       
-import { HashMapJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
+//not game specific package import { HashMapJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
+      const HashMapJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.HashMapJDialogListenerInterface;
+
       
-import { LOGGING } from '../../../../org/allbinary/log/LOGGING.js';
+//not game specific package import { LOGGING } from '../../../../org/allbinary/log/LOGGING.js';
+      const LOGGING = globalThis.org.allbinary.log.LOGGING;
+
       
-import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
+//not game specific package import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
+      const GuiLog = globalThis.org.allbinary.logic.communication.log.GuiLog;
+
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
       
-import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not game specific package import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+      const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
+
       
-import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not game specific package import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+      const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
+
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
+
       
-import { Document } from '../../../../org/w3c/dom/Document.js';
+//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
+      const Document = globalThis.org.w3c.dom.Document;
+
       
 
 

@@ -22,9 +22,25 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
       
-import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
+//not game specific package import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
+      const Display = globalThis.org.eclipse.swt.widgets.Display;
+
+      
+//not game specific package import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
+      const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
+
+      
+//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+
+      
+//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+
       
 
 
