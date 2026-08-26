@@ -37,7 +37,7 @@
 
       
 //not game specific package import { TickableInterface } from '../../../../../../org/allbinary/game/tick/TickableInterface.js';
-      const TickableInterface = globalThis.org.allbinary.game.tick.TickableInterface;
+      const TickableInterface = globalThis.org?.allbinary?.game?.tick?.TickableInterface;
 
       
 //not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
