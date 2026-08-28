@@ -18,25 +18,25 @@
 
 
 
-            import { Exception } from '../../../../../../../java/lang/Exception.js';
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Font } from '../../../../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../../../../../javax/microedition/lcdui/Font.js';
       const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../../../javax/microedition/lcdui/Graphics.js';
       const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { NumberStringHud } from '../../../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
-      const NumberStringHud = globalThis.org.allbinary.game.layer.hud.basic.NumberStringHud;
+import { NumberStringHud } from '../../../../../../../../org/allbinary/game/ag/layer/hud/basic/NumberStringHud.js';
+      //not GWT import and is game specific code const NumberStringHud = globalThis.org.allbinary.game.ag.layer.hud.basic.NumberStringHud;
 
       
-//not game specific package import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../../../../org/allbinary/graphics/color/BasicColor.js';
       const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+//not game specific package import { BasicColorFactory } from '../../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
       const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       

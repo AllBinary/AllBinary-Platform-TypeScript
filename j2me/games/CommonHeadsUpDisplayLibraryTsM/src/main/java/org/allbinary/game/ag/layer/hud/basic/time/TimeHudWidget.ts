@@ -18,29 +18,29 @@
 
 
 
-            import { Exception } from '../../../../../../../java/lang/Exception.js';
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Font } from '../../../../../../../javax/microedition/lcdui/Font.js';
+//not game specific package import { Font } from '../../../../../../../../javax/microedition/lcdui/Font.js';
       const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+//not game specific package import { Graphics } from '../../../../../../../../javax/microedition/lcdui/Graphics.js';
       const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+//not game specific package import { BasicHud } from '../../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
       const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
 
       
-//not game specific package import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
+//not game specific package import { BasicColor } from '../../../../../../../../org/allbinary/graphics/color/BasicColor.js';
       const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { MyFontProcessor } from '../../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+//not game specific package import { MyFontProcessor } from '../../../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
       const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
 
       
-//not game specific package import { PrimitiveLongSingleton } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
+//not game specific package import { PrimitiveLongSingleton } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
       const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
       
