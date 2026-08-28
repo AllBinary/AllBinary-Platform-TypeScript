@@ -44,6 +44,6 @@ export interface LifeInterfaceCompositeInterface {
     getLifeInterface(): Life
 
 }
-                
-            
+
+
 

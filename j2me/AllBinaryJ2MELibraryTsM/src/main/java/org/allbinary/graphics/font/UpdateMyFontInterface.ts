@@ -55,6 +55,6 @@ export interface UpdateMyFontInterface {
     public updateMeasurement(graphics: Graphics)
 
 }
-                
-            
+
+
 

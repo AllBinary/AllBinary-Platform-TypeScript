@@ -65,6 +65,6 @@ export interface HardwareInterface {
     difference(hardwareInterface: HardwareInterface): Hashtable<any, any>
 
 }
-                
-            
+
+
 

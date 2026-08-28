@@ -52,6 +52,6 @@ export interface AnalogControllerConfigurationEventListenerInterface extends Eve
     onAnalogControllerConfigurationEvent(analogControllerConfigurationEvent: AnalogControllerConfigurationEvent)
 
 }
-                
-            
+
+
 

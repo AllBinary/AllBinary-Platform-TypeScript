@@ -578,6 +578,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRoleValid()");
 
 
 }
-                
-            
+
+
 

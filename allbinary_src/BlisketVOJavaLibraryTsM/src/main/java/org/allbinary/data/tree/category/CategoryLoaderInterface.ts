@@ -56,6 +56,6 @@ export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
     getAll(categoryInterface: CategoryInterface): CategoryInterface
 
 }
-                
-            
+
+
 

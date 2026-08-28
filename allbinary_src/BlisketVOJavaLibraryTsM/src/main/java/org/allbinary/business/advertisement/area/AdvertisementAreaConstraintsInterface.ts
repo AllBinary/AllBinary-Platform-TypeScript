@@ -53,6 +53,6 @@ export interface AdvertisementAreaConstraintsInterface {
     getTwoDimensionContraints(): TwoDimensionalConstraintInterface
 
 }
-                
-            
+
+
 

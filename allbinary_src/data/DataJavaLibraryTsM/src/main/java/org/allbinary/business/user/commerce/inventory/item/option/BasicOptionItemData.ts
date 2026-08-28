@@ -87,6 +87,6 @@ export class BasicOptionItemData
     public static readonly OPTION_ONE_NINE_VALUE: string = "BASICOPTIONITEM_OPTION_ONE_NINE_VALUE";
 
 }
-                
-            
+
+
 

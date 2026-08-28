@@ -471,6 +471,6 @@ _characterWidth[index] *= this.widthScale;
 
 
 }
-                
-            
+
+
 

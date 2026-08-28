@@ -488,6 +488,6 @@ this.scrolledMotionGesturesHandler!.fireEvent(event);
 
 
 }
-                
-            
+
+
 

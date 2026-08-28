@@ -56,6 +56,6 @@ export interface AllBinaryLayerFactoryInterface {
     getInstance(): AllBinaryLayer
 
 }
-                
-            
+
+
 

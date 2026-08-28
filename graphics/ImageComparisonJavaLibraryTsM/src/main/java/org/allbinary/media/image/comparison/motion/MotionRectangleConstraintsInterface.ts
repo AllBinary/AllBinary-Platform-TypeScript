@@ -73,6 +73,6 @@ export interface MotionRectangleConstraintsInterface {
     isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean
 
 }
-                
-            
+
+
 

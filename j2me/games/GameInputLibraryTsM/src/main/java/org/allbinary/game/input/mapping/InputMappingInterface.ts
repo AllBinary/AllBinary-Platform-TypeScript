@@ -55,6 +55,6 @@ export interface InputMappingInterface {
     processInputMapping(gameKey: GameKey, input: Input)
 
 }
-                
-            
+
+
 

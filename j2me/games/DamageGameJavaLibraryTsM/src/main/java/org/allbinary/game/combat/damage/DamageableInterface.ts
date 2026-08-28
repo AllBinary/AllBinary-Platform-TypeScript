@@ -63,6 +63,6 @@ export interface DamageableInterface extends NamedInterface {
     getDamage(damageType: number): number
 
 }
-                
-            
+
+
 

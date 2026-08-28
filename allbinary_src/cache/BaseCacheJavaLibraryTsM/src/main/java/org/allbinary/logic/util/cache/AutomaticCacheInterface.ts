@@ -49,6 +49,6 @@ export interface AutomaticCacheInterface extends CacheInterface {
     get(key: any): CacheableInterface
 
 }
-                
-            
+
+
 

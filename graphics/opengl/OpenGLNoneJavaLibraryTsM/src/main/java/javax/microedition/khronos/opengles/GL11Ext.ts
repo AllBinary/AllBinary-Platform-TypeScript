@@ -160,6 +160,6 @@ export interface GL11Ext extends GL {
     glWeightPointerOES(size: number, type: number, stride: number, offset: number)
 
 }
-                
-            
+
+
 

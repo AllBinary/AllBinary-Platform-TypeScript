@@ -51,6 +51,6 @@ export class MultipassState
     public iteration2: number= 0;
 
 }
-                
-            
+
+
 

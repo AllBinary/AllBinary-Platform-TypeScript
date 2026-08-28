@@ -116,6 +116,6 @@ this.cancelInputArray[basicTouchInputFactory!.RIGHT.getId()]= basicTouchInputFac
 
 
 }
-                
-            
+
+
 

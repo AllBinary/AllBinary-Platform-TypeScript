@@ -230,6 +230,6 @@ this.getTimeIntervalActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

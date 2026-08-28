@@ -60,6 +60,6 @@ export interface PathGeneratorInterface {
     createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList
 
 }
-                
-            
+
+
 

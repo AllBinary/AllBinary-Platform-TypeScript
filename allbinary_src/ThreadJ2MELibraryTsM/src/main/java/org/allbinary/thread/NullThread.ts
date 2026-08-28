@@ -49,6 +49,6 @@ export class NullThread
     public static readonly NULL_THREAD: Thread = new Thread();
 
 }
-                
-            
+
+
 

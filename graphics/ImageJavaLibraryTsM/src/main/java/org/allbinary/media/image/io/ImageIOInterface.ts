@@ -49,6 +49,6 @@ export interface ImageIOInterface {
     save(frame: Long)
 
 }
-                
-            
+
+
 

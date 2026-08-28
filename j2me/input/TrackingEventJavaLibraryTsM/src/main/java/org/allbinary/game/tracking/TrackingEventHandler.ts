@@ -98,6 +98,6 @@ trackingEventListenerInterface!.onMovement(eventObject as TrackingEvent);
 
 
 }
-                
-            
+
+
 

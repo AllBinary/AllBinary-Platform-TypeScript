@@ -55,6 +55,6 @@ export interface TransactionResultEntityInterface extends BasicDataTableInterfac
     add(userName: string, orderNumber: string, resultInterface: TransactionResultInterface)
 
 }
-                
-            
+
+
 

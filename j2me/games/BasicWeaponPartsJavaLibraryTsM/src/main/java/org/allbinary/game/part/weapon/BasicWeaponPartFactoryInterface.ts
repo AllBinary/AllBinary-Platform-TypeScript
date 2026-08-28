@@ -48,6 +48,6 @@ export interface BasicWeaponPartFactoryInterface {
     getInstance(): BasicWeaponPart
 
 }
-                
-            
+
+
 

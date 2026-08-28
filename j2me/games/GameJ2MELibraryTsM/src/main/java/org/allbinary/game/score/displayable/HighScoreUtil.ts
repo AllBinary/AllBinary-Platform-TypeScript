@@ -224,6 +224,6 @@ commandListener!.commandAction(HighScoreUtil.SUBMIT_TEXTBOX_COMMAND, myCanvas);
 
 
 }
-                
-            
+
+
 

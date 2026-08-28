@@ -55,6 +55,6 @@ export interface PaymentTransactionInterface extends TableMappingInterface, DomN
     getOrderHistory(): OrderHistory
 
 }
-                
-            
+
+
 

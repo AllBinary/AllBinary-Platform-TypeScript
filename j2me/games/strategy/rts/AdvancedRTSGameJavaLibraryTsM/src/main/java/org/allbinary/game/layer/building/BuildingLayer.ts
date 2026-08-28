@@ -876,6 +876,6 @@ buildingInfoHudPaintable!.setRtsLayer(this);
 
 
 }
-                
-            
+
+
 

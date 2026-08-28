@@ -106,8 +106,8 @@ this.updateMaxHeight= 14;
 
 
 }
-                
-            
+
+
 
                     //Otherwise - statement - EmptyStmt
 
@@ -138,6 +138,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
 }
-                
-            
+
+
 

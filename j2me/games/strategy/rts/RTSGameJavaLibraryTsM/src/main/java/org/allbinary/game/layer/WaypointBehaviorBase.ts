@@ -321,6 +321,6 @@ this.waypoint= waypoint;
     private readonly steeringVisitorList: BasicArrayList = new BasicArrayListD();
 
 }
-                
-            
+
+
 

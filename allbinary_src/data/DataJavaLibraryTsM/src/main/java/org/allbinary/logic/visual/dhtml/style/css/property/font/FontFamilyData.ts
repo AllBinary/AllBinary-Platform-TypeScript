@@ -67,6 +67,6 @@ private constructor (){
     public readonly VALUE: string = "font-family";
 
 }
-                
-            
+
+
 

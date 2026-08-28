@@ -141,6 +141,6 @@ document.appendChild(new CategoryView(this.getCategoryInterface()).toXmlNode(doc
 
 
 }
-                
-            
+
+
 

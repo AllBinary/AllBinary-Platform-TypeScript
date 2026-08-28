@@ -69,6 +69,6 @@ private constructor (){
     public readonly FILE: string = "LOG_CONFIG_FILE";
 
 }
-                
-            
+
+
 

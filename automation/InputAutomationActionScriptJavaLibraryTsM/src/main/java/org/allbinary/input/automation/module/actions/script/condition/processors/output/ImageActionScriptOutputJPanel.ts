@@ -406,6 +406,6 @@ this.getCapturedImageActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

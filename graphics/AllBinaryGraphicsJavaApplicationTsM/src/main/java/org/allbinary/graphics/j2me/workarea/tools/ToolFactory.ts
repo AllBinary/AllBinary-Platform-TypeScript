@@ -140,6 +140,6 @@ this.logUtil!.putF("New Tool: " +this.selectedTool, this, "getSelectedToolFactor
 
 
 }
-                
-            
+
+
 

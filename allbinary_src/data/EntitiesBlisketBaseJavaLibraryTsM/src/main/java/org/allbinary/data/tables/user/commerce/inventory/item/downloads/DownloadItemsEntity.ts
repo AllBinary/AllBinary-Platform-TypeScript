@@ -302,6 +302,6 @@ stringBuffer!.append(DownloadItemData.FILE)!.append(this.sqlTypeStrings!.MAX_CHA
 
 
 }
-                
-            
+
+
 

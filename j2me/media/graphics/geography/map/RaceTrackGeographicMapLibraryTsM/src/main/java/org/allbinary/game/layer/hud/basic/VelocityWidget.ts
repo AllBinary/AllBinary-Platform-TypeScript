@@ -206,6 +206,6 @@ super.paintDXY(graphics, this.string, 0, this.totalDigits, this.KILOMETERS_PER_H
 
 
 }
-                
-            
+
+
 

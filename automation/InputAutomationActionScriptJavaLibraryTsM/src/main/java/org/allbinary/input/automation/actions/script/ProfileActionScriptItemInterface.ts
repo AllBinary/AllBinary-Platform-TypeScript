@@ -49,6 +49,6 @@ export interface ProfileActionScriptItemInterface {
     process(frame: Long)
 
 }
-                
-            
+
+
 

@@ -73,6 +73,6 @@ private constructor (){
     public readonly SMALL_PREVIEW: string = "TRANSFORM_INFOS_SMALL_PREVIEW";
 
 }
-                
-            
+
+
 

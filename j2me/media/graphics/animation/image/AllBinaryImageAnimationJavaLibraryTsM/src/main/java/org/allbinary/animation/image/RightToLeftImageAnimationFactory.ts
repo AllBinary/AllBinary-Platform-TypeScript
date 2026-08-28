@@ -105,6 +105,6 @@ public constructor (image: Image, dx: number, dy: number, animationBehaviorFacto
 
 
 }
-                
-            
+
+
 

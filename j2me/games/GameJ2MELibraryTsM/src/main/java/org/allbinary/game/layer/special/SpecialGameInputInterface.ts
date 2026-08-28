@@ -111,6 +111,6 @@ export interface SpecialGameInputInterface extends PaintableInterface {
     special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
 }
-                
-            
+
+
 

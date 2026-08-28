@@ -52,6 +52,6 @@ export interface DemoGameMidletEventListener extends EventListenerInterface {
     onDemoGameMidletEvent(demoGameMidletEvent: DemoGameMidletEvent)
 
 }
-                
-            
+
+
 

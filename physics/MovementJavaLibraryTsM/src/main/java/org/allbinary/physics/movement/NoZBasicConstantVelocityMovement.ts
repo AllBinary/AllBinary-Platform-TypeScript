@@ -170,6 +170,6 @@ this.speedBasicDecimal= speedBasicDecimal;
 
 
 }
-                
-            
+
+
 

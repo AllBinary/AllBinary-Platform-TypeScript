@@ -73,6 +73,6 @@ private constructor (){
     public MULTIPLY: string = "_MULTIPLY_";
 
 }
-                
-            
+
+
 

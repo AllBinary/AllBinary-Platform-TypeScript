@@ -59,6 +59,6 @@ export class OrderData
     public static readonly STORECANCELCOMMENT: string = "ORDER_STORE_CANCEL_COMMENT";
 
 }
-                
-            
+
+
 

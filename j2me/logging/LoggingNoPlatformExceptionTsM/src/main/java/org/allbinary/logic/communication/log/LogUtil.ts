@@ -62,6 +62,6 @@ expect export class LogUtil
     public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {})
 
 }
-                
-            
+
+
 

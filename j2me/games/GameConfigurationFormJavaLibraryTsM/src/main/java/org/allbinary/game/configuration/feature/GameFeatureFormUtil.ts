@@ -246,6 +246,6 @@ form.append(this.getChoiceGroup(hashtable, name, option));
 
 
 }
-                
-            
+
+
 

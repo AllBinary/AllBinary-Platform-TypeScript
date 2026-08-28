@@ -80,6 +80,6 @@ export class ShakeAnimationListener
 
 
 }
-                
-            
+
+
 

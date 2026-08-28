@@ -56,6 +56,6 @@ export interface BasicLayerProcessorInterface {
     process(allBinaryLayerManager: AllBinaryLayerManager)
 
 }
-                
-            
+
+
 

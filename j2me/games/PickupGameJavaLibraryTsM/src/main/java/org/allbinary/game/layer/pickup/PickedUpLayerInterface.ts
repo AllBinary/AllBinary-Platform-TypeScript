@@ -58,6 +58,6 @@ export interface PickedUpLayerInterface extends LayerInterface {
     setPickedUp()
 
 }
-                
-            
+
+
 

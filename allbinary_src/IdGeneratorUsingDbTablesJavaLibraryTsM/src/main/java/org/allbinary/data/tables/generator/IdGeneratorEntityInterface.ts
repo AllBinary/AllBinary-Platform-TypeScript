@@ -67,6 +67,6 @@ export interface IdGeneratorEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

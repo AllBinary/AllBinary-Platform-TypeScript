@@ -152,6 +152,6 @@ super.paintDX(graphics, this.TIME_CHAR_ARRAY, 0, this.TIME_CHAR_ARRAY.length, th
 
 
 }
-                
-            
+
+
 

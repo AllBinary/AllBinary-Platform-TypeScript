@@ -45,6 +45,6 @@ export interface VectorInterface {
     setPoints(currentPoints: number[][][])
 
 }
-                
-            
+
+
 

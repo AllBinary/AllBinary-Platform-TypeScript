@@ -197,6 +197,6 @@ export interface PaymentGatewayInterface extends TableMappingInterface {
     toVector(isEncrypted: boolean): Vector
 
 }
-                
-            
+
+
 

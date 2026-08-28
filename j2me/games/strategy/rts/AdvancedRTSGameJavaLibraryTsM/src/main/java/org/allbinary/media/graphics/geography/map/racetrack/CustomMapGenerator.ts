@@ -214,6 +214,6 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
 
 
 }
-                
-            
+
+
 

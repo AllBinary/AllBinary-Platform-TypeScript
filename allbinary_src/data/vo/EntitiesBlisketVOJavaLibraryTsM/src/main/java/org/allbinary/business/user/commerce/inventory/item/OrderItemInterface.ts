@@ -70,6 +70,6 @@ export interface OrderItemInterface extends ItemInterface {
     getSpecial(): string
 
 }
-                
-            
+
+
 

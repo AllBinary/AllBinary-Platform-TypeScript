@@ -246,6 +246,6 @@ this.process(imageComparisonInfo, PointFactory.getInstance()!.createXY(indexX, i
 
 
 }
-                
-            
+
+
 

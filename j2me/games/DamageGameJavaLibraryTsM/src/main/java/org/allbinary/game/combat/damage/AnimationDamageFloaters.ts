@@ -185,6 +185,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
 
 
 }
-                
-            
+
+
 

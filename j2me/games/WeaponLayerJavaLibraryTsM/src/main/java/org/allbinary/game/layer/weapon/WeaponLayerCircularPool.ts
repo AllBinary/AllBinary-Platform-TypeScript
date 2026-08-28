@@ -97,6 +97,6 @@ weaponLayer!.init(sourceLayerInterface, angle, otherAngle, weaponProperties, sco
 
 
 }
-                
-            
+
+
 

@@ -88,6 +88,6 @@ private constructor (){
     public readonly HIDE_SCREEN_BUTTONS: TouchFeature = new TouchFeature("Hide");
 
 }
-                
-            
+
+
 

@@ -62,6 +62,6 @@ expect export class LogFactory
     public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log
 
 }
-                
-            
+
+
 

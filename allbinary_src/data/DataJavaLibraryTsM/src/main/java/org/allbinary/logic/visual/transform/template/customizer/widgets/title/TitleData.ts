@@ -71,6 +71,6 @@ private constructor (){
     public readonly MAXLEN: number = 255;
 
 }
-                
-            
+
+
 

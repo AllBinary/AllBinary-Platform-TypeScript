@@ -59,6 +59,6 @@ export interface AdvertisementCampaignInterface {
     search(advertisementSearchInterface: AdvertisementSearchInterface): AdvertisementsInterface
 
 }
-                
-            
+
+
 

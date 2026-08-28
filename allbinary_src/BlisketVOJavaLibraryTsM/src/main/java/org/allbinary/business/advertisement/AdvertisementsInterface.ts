@@ -76,6 +76,6 @@ export interface AdvertisementsInterface {
     toString(): string
 
 }
-                
-            
+
+
 

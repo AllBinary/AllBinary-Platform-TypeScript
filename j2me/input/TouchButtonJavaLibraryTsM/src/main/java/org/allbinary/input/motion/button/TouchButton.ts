@@ -267,6 +267,6 @@ stringBuffer!.appendint(this.yBorder);
 
 
 }
-                
-            
+
+
 

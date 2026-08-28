@@ -122,6 +122,6 @@ graphics.drawString(this.VIBRATING, this.displayInfoSingleton!.getLastHalfWidth(
 
 
 }
-                
-            
+
+
 

@@ -143,6 +143,6 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
 
 
 }
-                
-            
+
+
 

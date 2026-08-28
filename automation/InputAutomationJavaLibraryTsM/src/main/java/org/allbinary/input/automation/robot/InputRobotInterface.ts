@@ -106,6 +106,6 @@ export interface InputRobotInterface {
     mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer)
 
 }
-                
-            
+
+
 

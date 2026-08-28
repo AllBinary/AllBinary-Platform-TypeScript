@@ -126,6 +126,6 @@ export class AccelerometerSensorFactory
 
 
 }
-                
-            
+
+
 

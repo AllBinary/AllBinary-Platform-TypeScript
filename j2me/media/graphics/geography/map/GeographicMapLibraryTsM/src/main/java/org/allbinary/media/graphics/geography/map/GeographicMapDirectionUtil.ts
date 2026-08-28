@@ -630,6 +630,6 @@ stringBuffer!.append(CellPosition.toStringCellPosition(toGeographicMapCellPositi
 
 
 }
-                
-            
+
+
 

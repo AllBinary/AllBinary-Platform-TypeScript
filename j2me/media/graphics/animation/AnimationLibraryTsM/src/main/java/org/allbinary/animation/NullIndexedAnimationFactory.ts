@@ -95,8 +95,8 @@ NullIndexedAnimationInner = class extends NullIndexedAnimation {
 
 
 }
-                
-            
+
+
     private readonly NULL_ANIMATION: Animation = new this.NullIndexedAnimationInner();
 
 private constructor (){
@@ -134,6 +134,6 @@ private constructor (){
 
 
 }
-                
-            
+
+
 

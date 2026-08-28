@@ -106,6 +106,6 @@ export class ImageFileFilter extends FileFilter {
 
 
 }
-                
-            
+
+
 

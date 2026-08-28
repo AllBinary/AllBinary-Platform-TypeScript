@@ -71,6 +71,6 @@ this.OBJECT_ARRAY[index]= CustomGPoint.getInstance3(0, 0);
 
 
 }
-                
-            
+
+
 

@@ -44,6 +44,6 @@ export interface MovementCompositeInterface {
     getMovement(): Movement
 
 }
-                
-            
+
+
 

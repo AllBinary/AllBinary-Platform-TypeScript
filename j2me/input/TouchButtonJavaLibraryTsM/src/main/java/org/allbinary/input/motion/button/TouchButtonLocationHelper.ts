@@ -187,6 +187,6 @@ stringBuffer!.appendint(this.rowsRemainderHalf);
 
 
 }
-                
-            
+
+
 

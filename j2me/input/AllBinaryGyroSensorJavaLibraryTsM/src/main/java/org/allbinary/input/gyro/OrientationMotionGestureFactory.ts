@@ -111,6 +111,6 @@ this.ROLL_RIGHT= new MotionGestureInput(MAX -25, "Roll Right");
 
 
 }
-                
-            
+
+
 

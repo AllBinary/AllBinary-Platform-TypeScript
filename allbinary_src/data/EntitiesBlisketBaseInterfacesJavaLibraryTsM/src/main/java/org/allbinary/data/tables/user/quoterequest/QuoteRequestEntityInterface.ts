@@ -71,6 +71,6 @@ export interface QuoteRequestEntityInterface extends BasicDataTableInterface {
     update(userName: string, updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

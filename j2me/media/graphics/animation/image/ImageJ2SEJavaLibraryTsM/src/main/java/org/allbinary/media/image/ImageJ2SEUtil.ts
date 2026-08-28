@@ -63,6 +63,6 @@ export class ImageJ2SEUtil
     public readonly TRANSPARENT_COLOR: Color = new Color(0, 0, 0, 0);
 
 }
-                
-            
+
+
 

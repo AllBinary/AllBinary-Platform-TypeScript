@@ -346,6 +346,6 @@ this.openGLESImageDraw!.draw(gl, x, y, z);
 
 
 }
-                
-            
+
+
 

@@ -64,6 +64,6 @@ export class TenderTypeFactory
     public readonly ACH: TenderType = new TenderType("Ach");
 
 }
-                
-            
+
+
 

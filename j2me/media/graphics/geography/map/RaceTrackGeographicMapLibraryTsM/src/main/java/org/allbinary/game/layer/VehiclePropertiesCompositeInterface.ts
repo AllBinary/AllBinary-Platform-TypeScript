@@ -44,6 +44,6 @@ export interface VehiclePropertiesCompositeInterface {
     getVehicleProperties(): VehicleProperties
 
 }
-                
-            
+
+
 

@@ -69,6 +69,6 @@ export interface PaymentEntityInterface extends BasicDataTableInterface {
     insert(values: Vector)
 
 }
-                
-            
+
+
 

@@ -120,6 +120,6 @@ this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
 
 
 }
-                
-            
+
+
 

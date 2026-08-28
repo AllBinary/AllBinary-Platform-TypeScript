@@ -100,6 +100,6 @@ export class BasicUserRoleFactory
     public readonly VIEWEDITOR: BasicUserRole = new BasicUserRole("ViewEditor", "View Editor", 15, this.MAXSESSIONTIME, this.INACTIVITYTIMEOUT);
 
 }
-                
-            
+
+
 

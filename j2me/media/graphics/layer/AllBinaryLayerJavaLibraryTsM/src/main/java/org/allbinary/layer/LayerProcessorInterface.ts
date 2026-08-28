@@ -65,6 +65,6 @@ export interface LayerProcessorInterface extends BasicLayerProcessorInterface {
     isProcessorLayer(layerInterface: AllBinaryLayer): boolean
 
 }
-                
-            
+
+
 

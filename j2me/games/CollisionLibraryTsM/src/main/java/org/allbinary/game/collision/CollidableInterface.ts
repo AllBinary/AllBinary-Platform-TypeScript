@@ -78,6 +78,6 @@ export interface CollidableInterface extends NamedInterface {
     getCollisionTypeWith(layerInterface: AllBinaryLayer): CollisionType
 
 }
-                
-            
+
+
 

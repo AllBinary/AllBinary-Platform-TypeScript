@@ -1084,6 +1084,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
     private updatesJMenuItem: javax.swing.JMenuItem;
 
 }
-                
-            
+
+
 

@@ -78,6 +78,6 @@ export class RaceGameStateFactory
     public readonly RED_LIGHT_GAME_STATE: GameState = GameStateFactory.getInstance()!.createGameState("RED_LIGHT_GAME_STATE")!;
 
 }
-                
-            
+
+
 

@@ -185,6 +185,6 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
 }
-                
-            
+
+
 

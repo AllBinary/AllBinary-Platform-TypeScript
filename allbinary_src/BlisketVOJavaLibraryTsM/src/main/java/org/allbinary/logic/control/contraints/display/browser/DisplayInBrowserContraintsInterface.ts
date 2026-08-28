@@ -57,6 +57,6 @@ export interface DisplayInBrowserContraintsInterface {
     getMountedLink(): string
 
 }
-                
-            
+
+
 

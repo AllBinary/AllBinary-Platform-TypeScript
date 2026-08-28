@@ -209,8 +209,8 @@ logUtil!.put(new StringMaker().append(commonSeps!.BRACKET_OPEN)!.appendint(row)!
 
 
 }
-                
-            
+
+
 geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(new RaceTrackGeographicMapCellPositionFactoryInitVisitor());
     
 }
@@ -244,6 +244,6 @@ pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance(
 
 
 }
-                
-            
+
+
 

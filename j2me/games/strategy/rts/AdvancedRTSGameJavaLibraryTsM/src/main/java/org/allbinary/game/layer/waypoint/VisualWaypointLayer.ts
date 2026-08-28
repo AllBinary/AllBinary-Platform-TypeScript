@@ -112,6 +112,6 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
 
 }
-                
-            
+
+
 

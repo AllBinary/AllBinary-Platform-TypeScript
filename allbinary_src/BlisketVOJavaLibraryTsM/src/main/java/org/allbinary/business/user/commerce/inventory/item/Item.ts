@@ -274,6 +274,6 @@ hashMap!.put(EntryData.getInstance()!.SPECIAL, this.special);
 
 
 }
-                
-            
+
+
 

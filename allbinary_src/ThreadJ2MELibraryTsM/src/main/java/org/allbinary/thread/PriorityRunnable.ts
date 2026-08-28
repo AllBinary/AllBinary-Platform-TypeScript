@@ -49,6 +49,6 @@ export interface PriorityRunnable extends Runnable {
     reset()
 
 }
-                
-            
+
+
 

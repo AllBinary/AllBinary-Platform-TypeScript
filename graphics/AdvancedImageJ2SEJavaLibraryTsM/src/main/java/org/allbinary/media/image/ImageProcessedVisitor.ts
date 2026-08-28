@@ -54,6 +54,6 @@ export interface ImageProcessedVisitor extends ImageProcessorInputCompositeInter
     visit(generatedBufferedImage: BufferedImage, nameEnding: string, index: number)
 
 }
-                
-            
+
+
 

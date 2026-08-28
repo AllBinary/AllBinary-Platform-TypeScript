@@ -55,6 +55,6 @@ export interface LocationPaintableInterface {
     paintXY(graphics: Graphics, x: number, y: number)
 
 }
-                
-            
+
+
 

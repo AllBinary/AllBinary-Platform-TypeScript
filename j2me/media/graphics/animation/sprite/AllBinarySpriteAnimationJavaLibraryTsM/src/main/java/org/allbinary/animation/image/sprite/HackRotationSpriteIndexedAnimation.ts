@@ -194,6 +194,6 @@ this.sprite.setFrame(frame);
 
 
 }
-                
-            
+
+
 

@@ -44,6 +44,6 @@ export interface LifeVisitorInterface {
     visit(lifeInterface: Life)
 
 }
-                
-            
+
+
 

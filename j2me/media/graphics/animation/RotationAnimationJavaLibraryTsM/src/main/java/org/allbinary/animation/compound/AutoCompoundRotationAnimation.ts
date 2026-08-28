@@ -308,6 +308,6 @@ this.animationInterfaceArray[index]!.set(gl);
 
 
 }
-                
-            
+
+
 

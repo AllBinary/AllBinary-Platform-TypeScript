@@ -72,6 +72,6 @@ export interface UserEmailEventsConfigurationInterface {
     getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface
 
 }
-                
-            
+
+
 

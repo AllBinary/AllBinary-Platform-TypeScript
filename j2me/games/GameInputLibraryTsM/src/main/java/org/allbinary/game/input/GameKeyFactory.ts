@@ -140,6 +140,6 @@ export class GameKeyFactory
     public LEVEL_UP: GameKey = new GameKey(Canvas.KEY_NUM9 +2, "Cheat Level Down");
 
 }
-                
-            
+
+
 

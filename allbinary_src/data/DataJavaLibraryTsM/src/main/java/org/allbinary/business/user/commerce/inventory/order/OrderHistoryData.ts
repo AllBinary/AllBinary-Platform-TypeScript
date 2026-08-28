@@ -127,6 +127,6 @@ export class OrderHistoryData
     public static readonly SETSTATUS: string = "Set Status";
 
 }
-                
-            
+
+
 

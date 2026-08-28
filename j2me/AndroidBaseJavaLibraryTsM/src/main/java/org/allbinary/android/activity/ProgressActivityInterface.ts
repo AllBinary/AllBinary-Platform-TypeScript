@@ -51,6 +51,6 @@ export interface ProgressActivityInterface {
     onTitleProgressBarSetProgress(value: number)
 
 }
-                
-            
+
+
 

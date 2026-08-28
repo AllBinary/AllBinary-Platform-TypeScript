@@ -75,6 +75,6 @@ private constructor (){
     public readonly TOTAL: string = "STOREFRONT_ORDERS_HISTORY_STATISTICS_TOTAL";
 
 }
-                
-            
+
+
 

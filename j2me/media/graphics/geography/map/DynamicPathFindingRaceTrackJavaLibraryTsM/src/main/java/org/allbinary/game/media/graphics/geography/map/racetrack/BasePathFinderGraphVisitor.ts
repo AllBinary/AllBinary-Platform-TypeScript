@@ -188,6 +188,6 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
 
 }
-                
-            
+
+
 

@@ -54,6 +54,6 @@ export interface IntermissionCompositeInterface {
     getEndLevelIntermissionInterface(): IntermissionInterface
 
 }
-                
-            
+
+
 

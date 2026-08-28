@@ -70,6 +70,6 @@ this.rtsPlayerGameInput!.addForRemoval(gameKeyEvent);
 
 
 }
-                
-            
+
+
 

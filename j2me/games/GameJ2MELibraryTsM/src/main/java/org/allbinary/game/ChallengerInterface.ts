@@ -35,6 +35,6 @@ export interface ChallengerInterface {
     setWinner(isWinner: boolean)
 
 }
-                
-            
+
+
 

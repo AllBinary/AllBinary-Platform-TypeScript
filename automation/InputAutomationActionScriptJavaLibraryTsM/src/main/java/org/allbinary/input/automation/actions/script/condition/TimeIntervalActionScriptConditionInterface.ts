@@ -49,6 +49,6 @@ export interface TimeIntervalActionScriptConditionInterface {
     log()
 
 }
-                
-            
+
+
 

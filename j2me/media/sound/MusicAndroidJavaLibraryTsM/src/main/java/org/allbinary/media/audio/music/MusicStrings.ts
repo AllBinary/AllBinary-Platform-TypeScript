@@ -63,6 +63,6 @@ export class MusicStrings
     public readonly RIGHT_VOLUME: string = "RIGHT_VOLUME";
 
 }
-                
-            
+
+
 

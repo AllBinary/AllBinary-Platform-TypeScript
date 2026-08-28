@@ -156,6 +156,6 @@ list.add(this.enumerationUtil!.nextElement(enumeration)!);
 
 
 }
-                
-            
+
+
 

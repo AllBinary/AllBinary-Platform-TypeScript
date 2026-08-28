@@ -51,6 +51,6 @@ export interface UserEmailEventConfigurationInterface {
     log(): string
 
 }
-                
-            
+
+
 

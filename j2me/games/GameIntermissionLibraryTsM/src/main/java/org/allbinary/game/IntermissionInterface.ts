@@ -62,6 +62,6 @@ export interface IntermissionInterface {
     setListener(enableListener: IntermissionEnableListenerInterface)
 
 }
-                
-            
+
+
 

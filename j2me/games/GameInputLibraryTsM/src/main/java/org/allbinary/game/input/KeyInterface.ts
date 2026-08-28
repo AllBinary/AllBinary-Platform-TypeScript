@@ -49,6 +49,6 @@ export interface KeyInterface {
     keyReleasedByDevice(keyCode: number, deviceId: number)
 
 }
-                
-            
+
+
 

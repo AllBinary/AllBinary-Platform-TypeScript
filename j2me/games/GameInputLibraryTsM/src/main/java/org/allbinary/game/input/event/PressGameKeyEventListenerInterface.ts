@@ -52,6 +52,6 @@ export interface PressGameKeyEventListenerInterface extends EventListenerInterfa
     onPressGameKeyEvent(gameKeyEvent: GameKeyEvent)
 
 }
-                
-            
+
+
 

@@ -117,6 +117,6 @@ this.wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER);
 
 
 }
-                
-            
+
+
 

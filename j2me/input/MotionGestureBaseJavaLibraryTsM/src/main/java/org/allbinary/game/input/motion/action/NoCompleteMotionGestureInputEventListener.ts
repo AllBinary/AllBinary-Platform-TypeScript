@@ -89,6 +89,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 }
-                
-            
+
+
 

@@ -111,6 +111,6 @@ private constructor (){
     public readonly SPECIAL: string = "SPECIAL";
 
 }
-                
-            
+
+
 

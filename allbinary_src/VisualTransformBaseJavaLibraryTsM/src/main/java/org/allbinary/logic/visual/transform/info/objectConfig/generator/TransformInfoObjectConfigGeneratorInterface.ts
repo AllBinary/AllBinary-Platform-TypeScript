@@ -47,6 +47,6 @@ export interface TransformInfoObjectConfigGeneratorInterface {
     process(input: string): string
 
 }
-                
-            
+
+
 

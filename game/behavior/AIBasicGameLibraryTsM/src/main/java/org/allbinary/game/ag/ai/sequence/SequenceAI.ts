@@ -176,6 +176,6 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(this.getSelectedArtifici
 
 
 }
-                
-            
+
+
 

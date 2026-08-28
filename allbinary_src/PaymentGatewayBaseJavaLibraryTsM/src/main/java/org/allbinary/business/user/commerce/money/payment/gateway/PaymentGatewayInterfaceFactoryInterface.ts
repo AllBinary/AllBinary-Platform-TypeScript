@@ -52,6 +52,6 @@ export interface PaymentGatewayInterfaceFactoryInterface {
     getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface
 
 }
-                
-            
+
+
 

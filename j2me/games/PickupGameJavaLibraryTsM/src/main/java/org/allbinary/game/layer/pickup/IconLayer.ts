@@ -126,6 +126,6 @@ this.animationInterface!.paintThreedXYZ(graphics, this.x, this.y, this.z);
 
 
 }
-                
-            
+
+
 

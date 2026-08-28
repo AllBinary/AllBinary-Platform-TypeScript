@@ -63,6 +63,6 @@ export interface AnimationInterfaceFactoryInterface extends BasicAnimationInterf
     setInitialScale(scaleProperties: ScaleProperties)
 
 }
-                
-            
+
+
 

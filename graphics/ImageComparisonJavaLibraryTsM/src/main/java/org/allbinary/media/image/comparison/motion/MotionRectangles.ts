@@ -117,6 +117,6 @@ this.imageComparisonResult= imageComparisonResult;
 
 
 }
-                
-            
+
+
 

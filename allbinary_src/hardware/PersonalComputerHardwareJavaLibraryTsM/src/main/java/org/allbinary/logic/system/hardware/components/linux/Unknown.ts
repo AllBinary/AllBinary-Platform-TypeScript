@@ -79,6 +79,6 @@ public constructor (data: string){
 
 
 }
-                
-            
+
+
 

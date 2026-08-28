@@ -113,6 +113,6 @@ export interface BasicStoreFrontInterface {
     getLastModified(): string
 
 }
-                
-            
+
+
 

@@ -252,6 +252,6 @@ export class NullGameCanvasRunnable
 
 
 }
-                
-            
+
+
 

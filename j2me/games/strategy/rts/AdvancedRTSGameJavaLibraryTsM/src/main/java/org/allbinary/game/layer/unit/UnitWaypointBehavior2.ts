@@ -1347,8 +1347,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 
 
 }
-                
-            
+
+
     private readonly buildingSteeringVisitor = new this.BuildingSteeringVisitor();
 
                 //@Throws(Exception.constructor)
@@ -1390,6 +1390,6 @@ this.buildingSteeringVisitor!.getPositionList()!.add(cellPosition);
 
 
 }
-                
-            
+
+
 

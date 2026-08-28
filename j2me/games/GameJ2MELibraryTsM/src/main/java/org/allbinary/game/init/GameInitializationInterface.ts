@@ -63,6 +63,6 @@ export interface GameInitializationInterface {
     init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number)
 
 }
-                
-            
+
+
 

@@ -242,6 +242,6 @@ this.currentTotalDigits= currentTotalDigits;
 
 
 }
-                
-            
+
+
 

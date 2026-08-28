@@ -124,6 +124,6 @@ export class GeographicMapCellTypeFactory
 
 
 }
-                
-            
+
+
 

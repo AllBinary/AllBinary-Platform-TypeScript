@@ -90,6 +90,6 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
 
 }
-                
-            
+
+
 

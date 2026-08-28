@@ -122,6 +122,6 @@ this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
 
 
 }
-                
-            
+
+
 

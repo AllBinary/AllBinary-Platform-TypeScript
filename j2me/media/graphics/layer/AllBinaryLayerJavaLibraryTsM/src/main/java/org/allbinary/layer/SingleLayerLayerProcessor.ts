@@ -68,6 +68,6 @@ this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLa
 
 
 }
-                
-            
+
+
 

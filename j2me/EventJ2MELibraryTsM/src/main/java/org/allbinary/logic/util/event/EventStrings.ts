@@ -65,6 +65,6 @@ export class EventStrings
     public readonly FIRE_EVENT: string = "fireEvent";
 
 }
-                
-            
+
+
 

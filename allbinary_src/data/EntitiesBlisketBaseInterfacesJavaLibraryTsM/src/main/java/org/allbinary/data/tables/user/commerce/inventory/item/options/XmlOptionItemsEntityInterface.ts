@@ -59,6 +59,6 @@ export interface XmlOptionItemsEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

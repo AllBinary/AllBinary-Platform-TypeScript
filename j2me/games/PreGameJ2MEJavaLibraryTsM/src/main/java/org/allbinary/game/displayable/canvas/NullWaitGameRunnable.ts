@@ -54,6 +54,6 @@ export class NullWaitGameRunnable extends GameRunnable {
 
 
 }
-                
-            
+
+
 

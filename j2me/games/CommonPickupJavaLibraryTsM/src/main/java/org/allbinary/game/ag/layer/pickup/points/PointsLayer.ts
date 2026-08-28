@@ -94,6 +94,6 @@ scoreableInterface!.addPoints(this.points);
 
 
 }
-                
-            
+
+
 

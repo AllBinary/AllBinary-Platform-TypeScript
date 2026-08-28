@@ -176,6 +176,6 @@ export class BasicColorFactory
     public readonly BORDER_COLOR: BasicColor = this.WHITE;
 
 }
-                
-            
+
+
 

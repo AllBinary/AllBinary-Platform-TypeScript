@@ -65,6 +65,6 @@ private constructor (){
     public NAME: string = "HTMLMETAS_NAME";
 
 }
-                
-            
+
+
 

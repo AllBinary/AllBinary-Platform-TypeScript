@@ -65,6 +65,6 @@ export interface TransformInterface extends DomDocumentMappingInterface, Composi
     view(): string
 
 }
-                
-            
+
+
 

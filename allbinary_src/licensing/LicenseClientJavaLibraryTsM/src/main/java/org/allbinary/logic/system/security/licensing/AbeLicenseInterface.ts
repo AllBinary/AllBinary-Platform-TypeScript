@@ -62,6 +62,6 @@ export interface AbeLicenseInterface {
     toString(): string
 
 }
-                
-            
+
+
 

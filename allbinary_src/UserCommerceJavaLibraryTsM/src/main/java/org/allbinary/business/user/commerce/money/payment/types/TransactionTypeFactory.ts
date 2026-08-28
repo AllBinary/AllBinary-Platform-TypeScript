@@ -70,6 +70,6 @@ export class TransactionTypeFactory
     public readonly INQUIRY: TransactionType = new TransactionType("Inquiry");
 
 }
-                
-            
+
+
 

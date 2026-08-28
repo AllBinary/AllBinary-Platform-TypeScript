@@ -441,6 +441,6 @@ this.colorRangeInterface= colorRangeInterface;
 
 
 }
-                
-            
+
+
 

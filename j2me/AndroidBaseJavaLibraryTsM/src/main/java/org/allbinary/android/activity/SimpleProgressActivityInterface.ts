@@ -59,6 +59,6 @@ export interface SimpleProgressActivityInterface {
     onShowProgress(indeterminate: boolean, animationSequence: number[])
 
 }
-                
-            
+
+
 

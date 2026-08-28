@@ -185,6 +185,6 @@ order.setShippingMethod(this.shippingType);
 
 
 }
-                
-            
+
+
 

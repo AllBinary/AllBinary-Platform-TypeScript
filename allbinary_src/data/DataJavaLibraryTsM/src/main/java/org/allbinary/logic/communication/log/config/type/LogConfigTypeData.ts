@@ -67,6 +67,6 @@ private constructor (){
     public readonly DESCRIPTION: string = "LOG_CONFIG_TYPE_DESCRIPTION";
 
 }
-                
-            
+
+
 

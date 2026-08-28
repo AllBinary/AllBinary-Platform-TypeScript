@@ -55,6 +55,6 @@ export interface Renderer {
     onDrawFrame(gl: GL10)
 
 }
-                
-            
+
+
 

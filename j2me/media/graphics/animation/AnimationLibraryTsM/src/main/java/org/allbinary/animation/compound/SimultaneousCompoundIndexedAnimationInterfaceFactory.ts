@@ -88,6 +88,6 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
 
 }
-                
-            
+
+
 

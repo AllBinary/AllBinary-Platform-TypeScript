@@ -138,6 +138,6 @@ this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBina
 
 
 }
-                
-            
+
+
 

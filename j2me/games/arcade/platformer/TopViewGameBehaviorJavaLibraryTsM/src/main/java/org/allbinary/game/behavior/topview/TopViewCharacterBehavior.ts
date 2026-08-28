@@ -122,6 +122,6 @@ basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.ge
 
 
 }
-                
-            
+
+
 

@@ -250,6 +250,6 @@ this.movieIndexedAnimationInterface!.paintThreedXYZ(graphics, x +this.captionDx 
 
 
 }
-                
-            
+
+
 

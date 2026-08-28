@@ -57,6 +57,6 @@ public constructor (shaderComposite: ShaderComposite, handleIndex: number){
 
 
 }
-                
-            
+
+
 

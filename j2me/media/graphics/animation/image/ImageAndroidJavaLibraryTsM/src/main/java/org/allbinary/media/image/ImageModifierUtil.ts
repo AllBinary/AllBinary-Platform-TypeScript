@@ -120,6 +120,6 @@ this.paint.setColorFilter(new PorterDuffColorFilter(basicColor!.intValue(), Port
 
 
 }
-                
-            
+
+
 

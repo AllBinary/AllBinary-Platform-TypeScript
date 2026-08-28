@@ -61,6 +61,6 @@ expect export class SystemProperties
     public getUserHomePath(): string
 
 }
-                
-            
+
+
 

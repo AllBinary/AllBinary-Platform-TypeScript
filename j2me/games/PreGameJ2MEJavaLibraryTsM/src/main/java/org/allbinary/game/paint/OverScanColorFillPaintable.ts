@@ -67,6 +67,6 @@ graphics.fillRect( -graphics.getClipX(),  -graphics.getClipY(), this.displayInfo
 
 
 }
-                
-            
+
+
 

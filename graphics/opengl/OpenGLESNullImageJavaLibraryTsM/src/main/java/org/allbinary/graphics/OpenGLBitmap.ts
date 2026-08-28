@@ -53,6 +53,6 @@ public constructor (bitmap: any = {}){
 
 
 }
-                
-            
+
+
 

@@ -79,6 +79,6 @@ export interface BasketInterface {
     getSubTotal(): Money
 
 }
-                
-            
+
+
 

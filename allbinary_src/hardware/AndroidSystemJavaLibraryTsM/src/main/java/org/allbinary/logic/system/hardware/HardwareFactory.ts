@@ -154,6 +154,6 @@ this.logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings
 
 
 }
-                
-            
+
+
 

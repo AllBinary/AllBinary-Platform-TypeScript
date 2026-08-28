@@ -47,6 +47,6 @@ export interface ImageComparisonSearchConstraintsInterface {
     getStatisticalMatchConstraintsVector(): Vector
 
 }
-                
-            
+
+
 

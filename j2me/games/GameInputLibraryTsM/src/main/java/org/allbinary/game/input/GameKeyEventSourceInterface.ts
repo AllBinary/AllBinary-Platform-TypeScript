@@ -51,6 +51,6 @@ export interface GameKeyEventSourceInterface {
     getSourceId(): number
 
 }
-                
-            
+
+
 

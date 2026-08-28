@@ -48,6 +48,6 @@ export interface CacheableInterfaceFactoryInterface {
     getInstance(key: any): CacheableInterface
 
 }
-                
-            
+
+
 

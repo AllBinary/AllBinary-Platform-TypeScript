@@ -85,6 +85,6 @@ export interface BasicVelocityInterface {
     addVelocityi(magnitude: number, angle: number, otherAngle: number)
 
 }
-                
-            
+
+
 

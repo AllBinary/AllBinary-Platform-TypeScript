@@ -75,6 +75,6 @@ this.setPlayerP(new PlayerComposite(AllBinaryMediaManager.createPlayer(this.getR
 
 
 }
-                
-            
+
+
 

@@ -136,6 +136,6 @@ canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0, 0.0, paint);
 
 
 }
-                
-            
+
+
 

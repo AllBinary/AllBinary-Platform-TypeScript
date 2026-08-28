@@ -121,6 +121,6 @@ MotionEventFactory.index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.g
 
 
 }
-                
-            
+
+
 

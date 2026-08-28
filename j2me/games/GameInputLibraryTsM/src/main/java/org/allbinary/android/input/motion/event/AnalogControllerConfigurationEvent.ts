@@ -54,6 +54,6 @@ public constructor (anyType: any = {}){
 
 
 }
-                
-            
+
+
 

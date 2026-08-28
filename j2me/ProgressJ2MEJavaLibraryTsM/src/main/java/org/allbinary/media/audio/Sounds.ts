@@ -276,6 +276,6 @@ progressCanvas!.addPortion(100, this.soundStrings!.CLOSING_SOUND, index);
 
 
 }
-                
-            
+
+
 

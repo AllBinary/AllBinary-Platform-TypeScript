@@ -56,6 +56,6 @@ export interface HighScoresCanvasInputProcessorFactoryInterface {
     getInstance(highScoresCanvas: HighScoresCanvas): HighScoresCanvasInputProcessor
 
 }
-                
-            
+
+
 

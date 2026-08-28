@@ -223,6 +223,6 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");
     private totalRotationJTextField: javax.swing.JTextField;
 
 }
-                
-            
+
+
 

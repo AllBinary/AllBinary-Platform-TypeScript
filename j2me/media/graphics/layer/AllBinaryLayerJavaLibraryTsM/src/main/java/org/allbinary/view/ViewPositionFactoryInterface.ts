@@ -48,6 +48,6 @@ export interface ViewPositionFactoryInterface {
     getInstance(): ViewPositionBase
 
 }
-                
-            
+
+
 

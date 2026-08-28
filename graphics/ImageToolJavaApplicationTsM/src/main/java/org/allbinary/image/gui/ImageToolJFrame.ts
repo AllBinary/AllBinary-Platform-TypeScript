@@ -1092,6 +1092,6 @@ this.minRedJTextField= this.minRedJTextField;
     private titleJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

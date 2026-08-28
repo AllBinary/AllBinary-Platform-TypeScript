@@ -233,6 +233,6 @@ jPopupMenu!.show(evt.getSource() as JComponent, evt.getX(), evt.getY());
     private jScrollPane1: javax.swing.JScrollPane;
 
 }
-                
-            
+
+
 

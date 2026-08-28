@@ -65,6 +65,6 @@ private constructor (){
     public readonly NAME: string = "COLOR_NAME";
 
 }
-                
-            
+
+
 

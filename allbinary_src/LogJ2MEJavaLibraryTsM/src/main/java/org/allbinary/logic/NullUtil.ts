@@ -94,6 +94,6 @@
     /*actual*/ public readonly NULL_TABLE: Hashtable<any, any> = new Hashtable<any, any>();
 
 }
-                
-            
+
+
 

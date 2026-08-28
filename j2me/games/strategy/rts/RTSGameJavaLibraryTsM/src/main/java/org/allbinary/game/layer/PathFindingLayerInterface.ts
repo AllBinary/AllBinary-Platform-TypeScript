@@ -88,6 +88,6 @@ export interface PathFindingLayerInterface extends WaypointLayerInterface, GameK
     setTarget(targetGameLayer: PathFindingLayerInterface)
 
 }
-                
-            
+
+
 

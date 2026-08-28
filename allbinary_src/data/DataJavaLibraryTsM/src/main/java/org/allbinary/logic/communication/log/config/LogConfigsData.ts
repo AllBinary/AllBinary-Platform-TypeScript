@@ -59,6 +59,6 @@ export class LogConfigsData
     public readonly NAME: string = "LOG_CONFIGS_NAME";
 
 }
-                
-            
+
+
 

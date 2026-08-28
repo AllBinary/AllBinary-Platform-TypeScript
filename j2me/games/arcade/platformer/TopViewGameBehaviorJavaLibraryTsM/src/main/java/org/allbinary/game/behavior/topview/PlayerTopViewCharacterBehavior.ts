@@ -117,6 +117,6 @@ basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y);
 
 
 }
-                
-            
+
+
 

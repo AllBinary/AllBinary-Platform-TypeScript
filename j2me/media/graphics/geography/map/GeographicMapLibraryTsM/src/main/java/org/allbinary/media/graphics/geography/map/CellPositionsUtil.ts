@@ -249,6 +249,6 @@ reusableSurroundingList!.add(geographicMapCellPosition);
 
 
 }
-                
-            
+
+
 

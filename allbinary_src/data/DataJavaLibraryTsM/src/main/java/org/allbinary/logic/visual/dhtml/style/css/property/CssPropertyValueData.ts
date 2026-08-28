@@ -65,6 +65,6 @@ private constructor (){
     public readonly NAME: string = "CSS_PROPERTY_VALUE";
 
 }
-                
-            
+
+
 

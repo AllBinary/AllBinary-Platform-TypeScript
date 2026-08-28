@@ -105,6 +105,6 @@ this.midPoint= midPoint;
 
 
 }
-                
-            
+
+
 

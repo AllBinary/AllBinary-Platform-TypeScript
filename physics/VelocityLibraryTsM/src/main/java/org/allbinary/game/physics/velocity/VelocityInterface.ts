@@ -58,6 +58,6 @@ export interface VelocityInterface extends BasicVelocityInterface {
     setMaxReverseVelocity(maxReverseVelocity: number)
 
 }
-                
-            
+
+
 

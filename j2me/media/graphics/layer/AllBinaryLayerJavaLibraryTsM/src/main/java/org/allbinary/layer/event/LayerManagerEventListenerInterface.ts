@@ -64,6 +64,6 @@ export interface LayerManagerEventListenerInterface extends EventListenerInterfa
     onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent)
 
 }
-                
-            
+
+
 

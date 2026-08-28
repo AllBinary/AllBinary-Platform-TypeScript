@@ -73,6 +73,6 @@ export interface DropCellPositionGeneratorInterface {
     isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean
 
 }
-                
-            
+
+
 

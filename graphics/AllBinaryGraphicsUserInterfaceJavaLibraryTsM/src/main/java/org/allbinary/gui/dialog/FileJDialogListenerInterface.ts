@@ -47,6 +47,6 @@ export interface FileJDialogListenerInterface {
     onFiles(files: File[])
 
 }
-                
-            
+
+
 

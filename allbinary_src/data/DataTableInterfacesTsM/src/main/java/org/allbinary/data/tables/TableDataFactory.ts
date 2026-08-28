@@ -67,6 +67,6 @@ export class TableDataFactory
     public readonly ZERO_STRING: string = CommonPhoneStrings.getInstance()!.ZERO;
 
 }
-                
-            
+
+
 

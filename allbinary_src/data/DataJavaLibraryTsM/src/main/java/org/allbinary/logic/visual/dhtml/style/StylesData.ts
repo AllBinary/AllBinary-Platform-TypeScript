@@ -65,6 +65,6 @@ private constructor (){
     public readonly NAME: string = "STYLES_NAME";
 
 }
-                
-            
+
+
 

@@ -89,6 +89,6 @@ export class GameStrings
     public readonly STOP_GAME_CANVAS_RUNNABLE_INTERFACE: string = "stopGameCanvasRunnableInterface";
 
 }
-                
-            
+
+
 

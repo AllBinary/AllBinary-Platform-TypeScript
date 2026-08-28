@@ -128,8 +128,8 @@ this.scrollCurrentSelectionForm!.processor= Processor.getInstance();
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 HorizontalFormProcessor = class extends Processor {
         
@@ -155,8 +155,8 @@ this.scrollCurrentSelectionForm!.processor= Processor.getInstance();
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 VerticalFormProcessor = class extends Processor {
         
@@ -182,8 +182,8 @@ this.scrollCurrentSelectionForm!.processor= Processor.getInstance();
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 TempHorizontalItemIndexDx = class extends ItemIndexDx {
         
@@ -211,8 +211,8 @@ TempHorizontalItemIndexDx = class extends ItemIndexDx {
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 HorizontalItemIndexDx = class extends ItemIndexDx {
         
@@ -240,8 +240,8 @@ HorizontalItemIndexDx = class extends ItemIndexDx {
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 VerticalItemIndexDx = class extends ItemIndexDx {
         
@@ -269,8 +269,8 @@ VerticalItemIndexDx = class extends ItemIndexDx {
 
 
 }
-                
-            
+
+
     readonly updateMyFontProcessor: MyFontProcessor = new UpdateMyFontProcessor(this);
 
     myFontProcessor: MyFontProcessor = this.updateMyFontProcessor;
@@ -651,6 +651,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT
 
 
 }
-                
-            
+
+
 

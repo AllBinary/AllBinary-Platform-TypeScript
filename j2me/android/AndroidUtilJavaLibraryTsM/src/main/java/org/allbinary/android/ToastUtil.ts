@@ -111,14 +111,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
 }
-                
-            
+
+
 view.post(new MakeToast(message));
     
 }
 
 
 }
-                
-            
+
+
 

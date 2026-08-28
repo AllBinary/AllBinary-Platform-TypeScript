@@ -147,6 +147,6 @@ hashtable.put(registrationConfiguration!.NAME, registrationConfiguration!.getReg
 
 
 }
-                
-            
+
+
 

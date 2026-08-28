@@ -59,6 +59,6 @@ export interface PickupProcessorInterface {
     process(sourceLayerInterface: AllBinaryLayer)
 
 }
-                
-            
+
+
 

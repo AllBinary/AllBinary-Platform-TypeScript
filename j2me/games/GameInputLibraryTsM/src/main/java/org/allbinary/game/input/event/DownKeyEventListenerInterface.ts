@@ -66,6 +66,6 @@ export interface DownKeyEventListenerInterface extends EventListenerInterface {
     onDownKey(keyInteger: Integer)
 
 }
-                
-            
+
+
 

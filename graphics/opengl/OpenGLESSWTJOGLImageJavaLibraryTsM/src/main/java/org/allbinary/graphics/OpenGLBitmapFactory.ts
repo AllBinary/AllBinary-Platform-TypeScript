@@ -79,8 +79,8 @@ private constructor (bitmapConfig: any = {}){
 
 
 }
-                
-            
+
+
     public readonly ARGB_8888 = new this.Config(
                             null);
 
@@ -117,6 +117,6 @@ private constructor (bitmapConfig: any = {}){
 
 
 }
-                
-            
+
+
 

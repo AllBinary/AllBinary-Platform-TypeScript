@@ -128,6 +128,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     public readonly NULL_NUMBER_STRING_HUD: NumberStringHud = this.createHud()!;
 
 }
-                
-            
+
+
 

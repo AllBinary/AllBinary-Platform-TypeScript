@@ -48,6 +48,6 @@ export interface VectorAnimationFactoryInterface {
     getInstance(points: number[][][], basicColor: BasicColor): VectorAnimation
 
 }
-                
-            
+
+
 

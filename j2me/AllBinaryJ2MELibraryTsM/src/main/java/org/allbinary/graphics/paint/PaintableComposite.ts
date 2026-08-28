@@ -87,6 +87,6 @@ this.paintableArray[index]!.paintThreed(graphics);
 
 
 }
-                
-            
+
+
 

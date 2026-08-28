@@ -135,6 +135,6 @@ rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_
 
 
 }
-                
-            
+
+
 

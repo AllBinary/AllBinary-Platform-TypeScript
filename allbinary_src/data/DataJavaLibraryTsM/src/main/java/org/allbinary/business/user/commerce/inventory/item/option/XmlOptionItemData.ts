@@ -49,6 +49,6 @@ export class XmlOptionItemData
     public static readonly OPTION_XML_FILE: string = "XMLOPTIONITEM_OPTION_XML_FILE";
 
 }
-                
-            
+
+
 

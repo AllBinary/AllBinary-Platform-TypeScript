@@ -71,6 +71,6 @@ private constructor (){
     public readonly IMAGE: string = "LOGO_IMAGE";
 
 }
-                
-            
+
+
 

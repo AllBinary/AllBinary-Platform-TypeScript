@@ -48,6 +48,6 @@ export interface HitPointGameObjectInterface extends MeteredGameObjectInterface 
     isDamaged(): boolean
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ export interface GraphicsInterface {
     setFontDebug(font: Font, fontDebug: FontDebugBase)
 
 }
-                
-            
+
+
 

@@ -513,6 +513,6 @@ this.getMouseActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

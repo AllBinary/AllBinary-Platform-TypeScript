@@ -65,6 +65,6 @@ export interface StoreFrontStatisticsInterface {
     getOrders(): StoreFrontOrdersHistoryStatisticsInterface
 
 }
-                
-            
+
+
 

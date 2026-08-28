@@ -65,6 +65,6 @@ export class GamePersistanceStrings
     public readonly SAVED_INPUT_CONFIGURATION_RECORD_ID: string = "_SIC";
 
 }
-                
-            
+
+
 

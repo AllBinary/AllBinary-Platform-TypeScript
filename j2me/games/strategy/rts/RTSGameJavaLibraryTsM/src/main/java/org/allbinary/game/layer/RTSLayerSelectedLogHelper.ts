@@ -293,6 +293,6 @@ this.logUtil!.putF(new StringMaker().append(associatedAdvancedRTSGameLayer!.getN
 
 
 }
-                
-            
+
+
 

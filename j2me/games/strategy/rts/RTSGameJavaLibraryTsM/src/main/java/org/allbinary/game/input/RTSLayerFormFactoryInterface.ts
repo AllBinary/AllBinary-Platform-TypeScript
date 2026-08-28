@@ -51,6 +51,6 @@ export interface RTSLayerFormFactoryInterface {
     getInstance(rtsLayer: RTSLayer): ScrollSelectionForm
 
 }
-                
-            
+
+
 

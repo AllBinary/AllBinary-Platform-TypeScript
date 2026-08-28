@@ -59,6 +59,6 @@ export interface CategoryEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

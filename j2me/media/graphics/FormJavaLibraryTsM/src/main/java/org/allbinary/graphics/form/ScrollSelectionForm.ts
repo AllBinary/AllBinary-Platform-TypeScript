@@ -241,8 +241,8 @@ ScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintable {
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 ScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable {
         
@@ -272,8 +272,8 @@ ScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable {
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 ScrollSelectionFormTempHorizontalPaintable = class extends ItemIndexPaintable {
         
@@ -303,8 +303,8 @@ ScrollSelectionFormTempHorizontalPaintable = class extends ItemIndexPaintable {
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 ScrollSelectionFormHorizontalDx = class extends ItemIndexDx {
         
@@ -334,8 +334,8 @@ ScrollSelectionFormHorizontalDx = class extends ItemIndexDx {
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 ScrollSelectionFormVericalDx = class extends ItemIndexDx {
         
@@ -365,8 +365,8 @@ ScrollSelectionFormVericalDx = class extends ItemIndexDx {
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 ScrollSelectionFormTempHorizontalDx = class extends ItemIndexDx {
         
@@ -396,8 +396,8 @@ ScrollSelectionFormTempHorizontalDx = class extends ItemIndexDx {
 
 
 }
-                
-            
+
+
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
 
     readonly border: number;
@@ -1047,6 +1047,6 @@ this.buttonBasicColor= buttonBasicColor;
 
 
 }
-                
-            
+
+
 

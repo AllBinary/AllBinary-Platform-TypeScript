@@ -51,6 +51,6 @@ export class NullAudioFormat
     public static readonly NULL_AUDIO_FORMAT: AudioFormat = new AudioFormat(AudioFormat.Encoding.PCM_UNSIGNED, 0.0, 0, 0, 0, 0.0, false);
 
 }
-                
-            
+
+
 

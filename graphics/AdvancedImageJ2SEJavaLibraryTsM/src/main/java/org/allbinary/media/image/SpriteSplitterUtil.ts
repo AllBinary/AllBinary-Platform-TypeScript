@@ -390,6 +390,6 @@ visitor.visit(generatedBufferedImage, nameEnding, index);
 
 
 }
-                
-            
+
+
 

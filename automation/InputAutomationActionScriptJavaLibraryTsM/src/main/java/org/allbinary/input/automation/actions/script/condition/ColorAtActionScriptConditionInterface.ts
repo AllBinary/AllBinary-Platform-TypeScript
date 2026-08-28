@@ -60,6 +60,6 @@ export interface ColorAtActionScriptConditionInterface {
     log()
 
 }
-                
-            
+
+
 

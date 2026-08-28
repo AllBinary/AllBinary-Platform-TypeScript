@@ -244,6 +244,6 @@ componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transf
 
 
 }
-                
-            
+
+
 

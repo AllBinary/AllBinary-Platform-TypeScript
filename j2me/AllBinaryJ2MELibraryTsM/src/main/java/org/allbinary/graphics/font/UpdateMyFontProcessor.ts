@@ -75,6 +75,6 @@ this.updateMeasurementProcessor!.updateMeasurement(graphics);
 
 
 }
-                
-            
+
+
 

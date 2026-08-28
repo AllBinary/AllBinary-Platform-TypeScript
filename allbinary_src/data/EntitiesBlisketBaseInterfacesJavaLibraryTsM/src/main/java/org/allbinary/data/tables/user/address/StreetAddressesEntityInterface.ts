@@ -63,6 +63,6 @@ export interface StreetAddressesEntityInterface extends BasicDataTableInterface 
     setDefault(value: string)
 
 }
-                
-            
+
+
 

@@ -54,6 +54,6 @@ export interface BuildingEventListenerInterface extends EventListenerInterface {
     onBuildingEvent(event: RTSLayerEvent)
 
 }
-                
-            
+
+
 

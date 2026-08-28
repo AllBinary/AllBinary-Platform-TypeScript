@@ -268,6 +268,6 @@ PolygonRasterizer.getInstance()!.getPixelBuffer(svgPath, pathX, pathY, pixelBuff
 
 
 }
-                
-            
+
+
 

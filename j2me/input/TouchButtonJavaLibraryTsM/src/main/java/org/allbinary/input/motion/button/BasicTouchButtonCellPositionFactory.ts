@@ -221,6 +221,6 @@ this.TOP_SECOND_FROM_RIGHT= cellPositionFactory!.NONE;
 
 
 }
-                
-            
+
+
 

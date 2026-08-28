@@ -283,6 +283,6 @@ imageAnalysisResultsArray[index]= ImageAnalysis.process(bufferedImageArray[index
 
 
 }
-                
-            
+
+
 

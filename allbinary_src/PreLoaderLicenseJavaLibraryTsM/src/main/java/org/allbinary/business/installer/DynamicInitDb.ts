@@ -74,6 +74,6 @@ public constructor (abeClientInformation: AbeClientInformationInterface, databas
 
 
 }
-                
-            
+
+
 

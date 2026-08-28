@@ -248,6 +248,6 @@ layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as Lay
 
 
 }
-                
-            
+
+
 

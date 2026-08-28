@@ -243,6 +243,6 @@ this.okayToShowAdsP= okayToShowAds;
 
 
 }
-                
-            
+
+
 

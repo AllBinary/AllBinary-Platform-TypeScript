@@ -123,6 +123,6 @@ this.LEADBOLT= advertIdArray[2]! as string;
 
 
 }
-                
-            
+
+
 

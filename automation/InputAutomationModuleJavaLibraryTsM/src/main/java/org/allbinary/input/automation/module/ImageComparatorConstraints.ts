@@ -288,6 +288,6 @@ this.logUtil!.putF("Avoid Rectangle: " +avoidRectangle, this, "log");
 
 
 }
-                
-            
+
+
 

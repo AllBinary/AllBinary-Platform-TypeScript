@@ -202,6 +202,6 @@ stringMaker!.appendboolean(booleanArray[index]!);
 
 
 }
-                
-            
+
+
 

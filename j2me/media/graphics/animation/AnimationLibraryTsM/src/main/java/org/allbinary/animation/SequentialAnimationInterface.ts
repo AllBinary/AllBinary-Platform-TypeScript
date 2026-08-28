@@ -55,6 +55,6 @@ export interface SequentialAnimationInterface extends AnimationInterface, Sequen
     previousFrame()
 
 }
-                
-            
+
+
 

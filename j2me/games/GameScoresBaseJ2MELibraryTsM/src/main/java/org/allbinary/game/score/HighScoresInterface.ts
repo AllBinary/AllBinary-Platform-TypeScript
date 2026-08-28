@@ -66,6 +66,6 @@ export interface HighScoresInterface {
     isBestScore(newHighScore: HighScore): boolean
 
 }
-                
-            
+
+
 

@@ -48,6 +48,6 @@ export interface BoundsChangeEventListener extends EventListenerInterface {
     onBoundsChangeEvent(boundsChangeEvent: BoundsChangeEvent)
 
 }
-                
-            
+
+
 

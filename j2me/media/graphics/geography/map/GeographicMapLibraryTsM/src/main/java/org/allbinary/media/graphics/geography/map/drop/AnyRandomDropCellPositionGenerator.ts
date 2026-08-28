@@ -147,6 +147,6 @@ geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getAt(randomCo
 
 
 }
-                
-            
+
+
 

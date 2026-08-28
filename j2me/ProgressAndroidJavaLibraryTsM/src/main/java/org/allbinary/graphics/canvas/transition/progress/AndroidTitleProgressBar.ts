@@ -115,8 +115,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 TitleProgressBarPortionSetProgressRunnable = class
             extends Object
@@ -159,8 +159,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 ShowTitleProgressBarRunnable = class
             extends Object
@@ -203,8 +203,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 DismissTitleProgressBarRunnable = class
             extends Object
@@ -244,8 +244,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
 }
-                
-            
+
+
     private showTitleProgressBarRunnable = new this.ShowTitleProgressBarRunnable(this);
 
     private dismissTitleProgressBarRunnable = new this.DismissTitleProgressBarRunnable(this);
@@ -407,6 +407,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
 
 
 }
-                
-            
+
+
 

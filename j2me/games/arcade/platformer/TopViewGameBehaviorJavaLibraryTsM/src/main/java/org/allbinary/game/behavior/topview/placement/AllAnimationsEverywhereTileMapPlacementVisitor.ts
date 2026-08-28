@@ -89,6 +89,6 @@ mapData[index]![index2 +6]= 97;
 
 
 }
-                
-            
+
+
 

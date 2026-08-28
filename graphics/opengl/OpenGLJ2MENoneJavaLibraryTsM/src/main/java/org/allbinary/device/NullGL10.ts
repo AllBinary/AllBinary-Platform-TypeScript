@@ -51,6 +51,6 @@ export class NullGL10
     public static readonly NULL_GL10: NullGL10 = new NullGL10();
 
 }
-                
-            
+
+
 

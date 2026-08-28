@@ -48,6 +48,6 @@ export interface ItemArraySingletonFactoryInterface {
     getItems(): ABCustomItem[]
 
 }
-                
-            
+
+
 

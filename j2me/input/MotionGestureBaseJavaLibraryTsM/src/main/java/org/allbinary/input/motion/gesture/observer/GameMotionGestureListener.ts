@@ -257,6 +257,6 @@ this.logUtil!.put(stringBuffer!.toString(), this, "onMotionGestureEvent", e);
 
 
 }
-                
-            
+
+
 

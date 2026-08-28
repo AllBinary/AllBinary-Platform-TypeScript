@@ -66,6 +66,6 @@ export class CollisionTypeFactory
     public COLLISION: CollisionType = new CollisionType("Collision");
 
 }
-                
-            
+
+
 

@@ -54,6 +54,6 @@ export class ProcessPaintable extends Paintable {
 
 
 }
-                
-            
+
+
 

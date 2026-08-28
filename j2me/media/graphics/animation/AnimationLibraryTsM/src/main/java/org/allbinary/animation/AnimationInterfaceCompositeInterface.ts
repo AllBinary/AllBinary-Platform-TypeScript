@@ -44,6 +44,6 @@ export interface AnimationInterfaceCompositeInterface {
     getAnimationInterface(): Animation
 
 }
-                
-            
+
+
 

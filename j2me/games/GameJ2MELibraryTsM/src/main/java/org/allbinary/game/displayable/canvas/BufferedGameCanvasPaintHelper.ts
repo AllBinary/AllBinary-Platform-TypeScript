@@ -126,6 +126,6 @@ graphics.drawImage(this.previousImage, 0, 0, this.anchor);
 
 
 }
-                
-            
+
+
 

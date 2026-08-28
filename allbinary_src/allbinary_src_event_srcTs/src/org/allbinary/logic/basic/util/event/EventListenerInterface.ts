@@ -52,6 +52,6 @@ export interface EventListenerInterface extends EventListener {
     onEvent(eventObject: AllBinaryEventObject)
 
 }
-                
-            
+
+
 

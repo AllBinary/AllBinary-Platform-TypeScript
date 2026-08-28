@@ -48,6 +48,6 @@ export interface ArtificialIntelligenceCompositeInterface {
     getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface
 
 }
-                
-            
+
+
 

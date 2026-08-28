@@ -237,6 +237,6 @@ hashMap!.put(storeFrontOrdersHistoryStatisticsData!.TOTAL, this.getTotal()!.toSt
 
 
 }
-                
-            
+
+
 

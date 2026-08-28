@@ -111,6 +111,6 @@ basicArrayList!.add(this.nextElement(enumeration)!);
 
 
 }
-                
-            
+
+
 

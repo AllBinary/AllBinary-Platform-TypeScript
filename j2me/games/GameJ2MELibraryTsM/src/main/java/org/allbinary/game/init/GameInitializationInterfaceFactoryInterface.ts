@@ -52,6 +52,6 @@ export interface GameInitializationInterfaceFactoryInterface {
     getInstance(): GameInitializationInterface
 
 }
-                
-            
+
+
 

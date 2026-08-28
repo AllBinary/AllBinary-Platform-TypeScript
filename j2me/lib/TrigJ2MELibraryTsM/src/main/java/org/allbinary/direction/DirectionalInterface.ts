@@ -54,6 +54,6 @@ export interface DirectionalInterface {
     adjustFrame(angle: number)
 
 }
-                
-            
+
+
 

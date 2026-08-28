@@ -73,6 +73,6 @@ export interface TopViewCharacterInterface {
     reset()
 
 }
-                
-            
+
+
 

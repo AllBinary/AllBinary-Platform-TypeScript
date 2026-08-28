@@ -120,6 +120,6 @@ this.list.add(gameConfiguration);
 
 
 }
-                
-            
+
+
 

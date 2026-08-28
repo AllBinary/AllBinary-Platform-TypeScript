@@ -55,6 +55,6 @@ export interface DomDocumentQueueInterface {
     remove(): DomDocumentMappingInterface
 
 }
-                
-            
+
+
 

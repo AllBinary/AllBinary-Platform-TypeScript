@@ -66,6 +66,6 @@ export class LicenseLoadingTypeFactory
     public readonly OTHER: LicenseLoadingType = new LicenseLoadingType("Other/Usually The First Non Demo Level");
 
 }
-                
-            
+
+
 

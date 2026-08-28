@@ -156,6 +156,6 @@ this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(WorkAr
 
 
 }
-                
-            
+
+
 

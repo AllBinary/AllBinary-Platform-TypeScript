@@ -103,6 +103,6 @@ this.overlayAnimationInterface!.paintThreedXYZ(graphics, x +this.captionDx +this
 
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ export interface SpriteFactoryInterface {
     createSprite(image: Image, frameWidth: number, frameHeight: number): Sprite
 
 }
-                
-            
+
+
 

@@ -59,6 +59,6 @@ export interface PermissionItemsEntityInterface extends BasicDataTableInterface 
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

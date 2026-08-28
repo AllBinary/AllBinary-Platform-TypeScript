@@ -67,6 +67,6 @@ export class CollidableAlwaysPickupNeverCollideBehavior extends CollidableNeverC
 
 
 }
-                
-            
+
+
 

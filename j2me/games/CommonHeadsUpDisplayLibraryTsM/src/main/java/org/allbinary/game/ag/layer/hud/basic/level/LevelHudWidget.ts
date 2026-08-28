@@ -212,6 +212,6 @@ super.paintDX(graphics, this.levelString, 0, this.levelString!.length, this.leve
 
 
 }
-                
-            
+
+
 

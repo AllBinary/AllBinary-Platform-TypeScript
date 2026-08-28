@@ -918,6 +918,6 @@ this.selectedRtsLayer= selectedRtsLayer;
 
 
 }
-                
-            
+
+
 

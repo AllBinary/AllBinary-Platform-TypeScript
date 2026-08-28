@@ -62,6 +62,6 @@ public constructor (anyType: any = {}){
 
 
 }
-                
-            
+
+
 

@@ -99,6 +99,6 @@ export interface UserEntityInterface extends BasicDataTableInterface {
     update(userName: string, updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

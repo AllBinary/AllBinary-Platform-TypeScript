@@ -128,6 +128,6 @@ GeographicMapCellPositionFactory.hashtable.put(allBinaryTiledLayer!.getDataId(),
 
 
 }
-                
-            
+
+
 

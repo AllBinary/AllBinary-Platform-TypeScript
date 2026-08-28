@@ -128,6 +128,6 @@ graphics.drawString(this.FULLSCREEN_TEXT, halfWidth -this.beginWidth, height -th
 
 
 }
-                
-            
+
+
 

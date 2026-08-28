@@ -71,6 +71,6 @@ export class StoreFrontsData
     public readonly FORUM: string = "STOREFRONTS_FORUM";
 
 }
-                
-            
+
+
 

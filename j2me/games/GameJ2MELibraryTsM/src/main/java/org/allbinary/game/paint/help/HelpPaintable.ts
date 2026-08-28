@@ -197,6 +197,6 @@ graphics.drawString(this.inputInfo[index]!, halfWidth -this.beginWidthArray[inde
 
 
 }
-                
-            
+
+
 

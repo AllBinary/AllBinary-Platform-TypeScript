@@ -180,6 +180,6 @@ super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getI
 
 
 }
-                
-            
+
+
 

@@ -65,6 +65,6 @@ private constructor (){
     public readonly NAME: string = "PAGE_NAME";
 
 }
-                
-            
+
+
 

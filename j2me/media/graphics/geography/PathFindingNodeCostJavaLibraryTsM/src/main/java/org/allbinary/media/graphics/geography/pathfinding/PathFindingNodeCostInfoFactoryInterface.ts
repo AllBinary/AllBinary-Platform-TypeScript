@@ -57,6 +57,6 @@ export interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNode
     getTotalCost(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number
 
 }
-                
-            
+
+
 

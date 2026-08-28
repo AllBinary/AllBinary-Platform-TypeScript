@@ -51,6 +51,6 @@ export class InputFeature extends Feature {
 
 
 }
-                
-            
+
+
 

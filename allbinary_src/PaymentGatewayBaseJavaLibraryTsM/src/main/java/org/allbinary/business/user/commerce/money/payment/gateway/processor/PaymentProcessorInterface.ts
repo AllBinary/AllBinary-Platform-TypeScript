@@ -55,6 +55,6 @@ export interface PaymentProcessorInterface extends DomNodeInterface {
     process()
 
 }
-                
-            
+
+
 

@@ -52,6 +52,6 @@ export interface LayerInterfaceFactoryInterface {
     getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer
 
 }
-                
-            
+
+
 

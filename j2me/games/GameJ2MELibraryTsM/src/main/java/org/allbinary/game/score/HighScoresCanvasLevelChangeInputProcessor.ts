@@ -194,6 +194,6 @@ graphics.drawString(this.INSTRUCTIONS, (width>>1) -topScoresWidth, this.fontHeig
 
 
 }
-                
-            
+
+
 

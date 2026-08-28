@@ -81,6 +81,6 @@ export class CommonStateStrings
     public readonly ON_START_COMMAND: string = "onStartCommand";
 
 }
-                
-            
+
+
 

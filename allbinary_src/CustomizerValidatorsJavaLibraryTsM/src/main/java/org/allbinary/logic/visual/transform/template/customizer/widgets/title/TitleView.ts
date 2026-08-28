@@ -221,6 +221,6 @@ hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
 
 
 }
-                
-            
+
+
 

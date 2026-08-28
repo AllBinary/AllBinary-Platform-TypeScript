@@ -53,6 +53,6 @@ export interface AdvertisementCampaignsInterface {
     isEnabled(): boolean
 
 }
-                
-            
+
+
 

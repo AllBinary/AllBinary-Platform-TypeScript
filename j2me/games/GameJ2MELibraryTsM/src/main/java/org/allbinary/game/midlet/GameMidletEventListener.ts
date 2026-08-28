@@ -51,6 +51,6 @@ export interface GameMidletEventListener extends EventListenerInterface {
     onGameEnd(eventObject: AllBinaryEventObject)
 
 }
-                
-            
+
+
 

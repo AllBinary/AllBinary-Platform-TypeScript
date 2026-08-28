@@ -67,6 +67,6 @@ private constructor (){
     public readonly NAMEMAXLEN: number = 255;
 
 }
-                
-            
+
+
 

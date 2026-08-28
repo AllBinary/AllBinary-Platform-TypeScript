@@ -95,6 +95,6 @@ private constructor (){
     public readonly MINDOWNLOADABLEFILESIZE: number = 1;
 
 }
-                
-            
+
+
 

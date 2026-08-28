@@ -31,6 +31,6 @@ export interface Annotation {
     annotationType(): Function
 
 }
-                
-            
+
+
 

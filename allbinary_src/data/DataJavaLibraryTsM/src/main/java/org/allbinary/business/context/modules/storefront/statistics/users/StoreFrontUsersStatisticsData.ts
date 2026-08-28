@@ -67,6 +67,6 @@ private constructor (){
     public readonly NUMBEROFUSERS: string = "STOREFRONT_USERS_STATISTICS_NUMBER_OF_USERS";
 
 }
-                
-            
+
+
 

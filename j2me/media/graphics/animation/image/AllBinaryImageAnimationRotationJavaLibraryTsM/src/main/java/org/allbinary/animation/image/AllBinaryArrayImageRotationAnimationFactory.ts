@@ -221,6 +221,6 @@ this.imageArray= imageArray;
 
 
 }
-                
-            
+
+
 

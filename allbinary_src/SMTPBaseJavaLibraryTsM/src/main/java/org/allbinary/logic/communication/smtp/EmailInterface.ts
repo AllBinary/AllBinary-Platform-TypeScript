@@ -63,6 +63,6 @@ export interface EmailInterface extends DomNodeInterface, DomDocumentMappingInte
     log(): string
 
 }
-                
-            
+
+
 

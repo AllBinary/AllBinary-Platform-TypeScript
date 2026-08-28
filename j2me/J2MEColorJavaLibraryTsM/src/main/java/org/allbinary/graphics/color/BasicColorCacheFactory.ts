@@ -106,6 +106,6 @@ this.hashtable.put(integer, basicColor);
 
 
 }
-                
-            
+
+
 

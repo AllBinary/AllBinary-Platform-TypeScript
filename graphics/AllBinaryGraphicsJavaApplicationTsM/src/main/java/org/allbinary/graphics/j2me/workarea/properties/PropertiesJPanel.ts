@@ -190,6 +190,6 @@ add(this.modifierJPanel);
     private copyHorizontalJButton: javax.swing.JButton;
 
 }
-                
-            
+
+
 

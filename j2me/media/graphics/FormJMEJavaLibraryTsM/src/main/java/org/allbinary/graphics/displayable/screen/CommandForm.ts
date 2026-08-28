@@ -228,6 +228,6 @@ super.removeCommand(this.commandStack!.pop() as Command);
 
 
 }
-                
-            
+
+
 

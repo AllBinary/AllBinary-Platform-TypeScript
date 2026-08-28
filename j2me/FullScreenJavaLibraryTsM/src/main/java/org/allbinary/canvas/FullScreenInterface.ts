@@ -55,6 +55,6 @@ export interface FullScreenInterface {
     waitOnNotify(wait: number)
 
 }
-                
-            
+
+
 

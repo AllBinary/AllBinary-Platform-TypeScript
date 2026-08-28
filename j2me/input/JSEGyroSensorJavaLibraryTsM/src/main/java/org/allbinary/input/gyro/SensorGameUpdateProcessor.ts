@@ -139,6 +139,6 @@ this.setInputSensor(NoAllBinarySensor.getInstance());
 
 
 }
-                
-            
+
+
 

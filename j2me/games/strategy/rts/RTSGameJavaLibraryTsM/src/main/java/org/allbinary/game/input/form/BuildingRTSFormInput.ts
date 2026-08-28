@@ -820,6 +820,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSurroundingCellsOffMap");
 
 
 }
-                
-            
+
+
 

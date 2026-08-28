@@ -48,6 +48,6 @@ export interface GraphicsItemInterfaceFactoryInterface {
     getInstance(canvasJPanel: CanvasJPanel): GraphicItemInterface
 
 }
-                
-            
+
+
 

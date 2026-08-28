@@ -59,6 +59,6 @@ export interface ResourceAnimationInterfaceFactoryInterface {
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface
 
 }
-                
-            
+
+
 

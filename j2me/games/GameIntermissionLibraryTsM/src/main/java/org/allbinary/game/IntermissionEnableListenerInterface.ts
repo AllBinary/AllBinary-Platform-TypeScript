@@ -51,6 +51,6 @@ export interface IntermissionEnableListenerInterface {
     notifyIntermission(enable: boolean)
 
 }
-                
-            
+
+
 

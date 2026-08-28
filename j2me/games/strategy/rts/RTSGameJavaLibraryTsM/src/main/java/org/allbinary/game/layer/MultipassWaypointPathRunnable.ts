@@ -120,8 +120,8 @@ this.multipassWaypointPathRunnable!.processFirstRunnable();
 
 
 }
-                
-            
+
+
     private readonly FIRST_RUNNABLE: Runnable = new this.FirstRunnable(this);
 //    private boolean first = true;
 //inner= member=true isStatic=
@@ -145,8 +145,8 @@ this.multipassWaypointPathRunnable!.processSecondRunnable();
 
 
 }
-                
-            
+
+
     private readonly SECOND_RUNNABLE: Runnable = new this.SecondRunnable(this);
 
 //inner= member=true isStatic=
@@ -170,8 +170,8 @@ this.multipassWaypointPathRunnable!.processEndRunnable();
 
 
 }
-                
-            
+
+
     private readonly END_RUNNABLE: Runnable = new this.EndRunnable(this);
 
     private readonly ALREADY_ENDED_RUNNABLE: Runnable = new class extends ARunnable
@@ -410,6 +410,6 @@ this.finish();
 
 
 }
-                
-            
+
+
 

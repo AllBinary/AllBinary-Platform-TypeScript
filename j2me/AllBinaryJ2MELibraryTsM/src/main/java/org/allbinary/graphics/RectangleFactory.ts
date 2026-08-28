@@ -49,6 +49,6 @@ export class RectangleFactory
     public static readonly SINGLETON: Rectangle = new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0);
 
 }
-                
-            
+
+
 

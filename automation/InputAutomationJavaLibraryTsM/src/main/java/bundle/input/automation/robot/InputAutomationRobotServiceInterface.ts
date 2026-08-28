@@ -51,6 +51,6 @@ export interface InputAutomationRobotServiceInterface extends OSGIServiceInterfa
     getInputRobotInterfaceArray(): InputRobotInterface[]
 
 }
-                
-            
+
+
 

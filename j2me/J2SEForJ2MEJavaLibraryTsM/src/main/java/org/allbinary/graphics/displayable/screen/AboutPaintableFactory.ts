@@ -98,6 +98,6 @@ this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableA
                                                 ];
 
 }
-                
-            
+
+
 

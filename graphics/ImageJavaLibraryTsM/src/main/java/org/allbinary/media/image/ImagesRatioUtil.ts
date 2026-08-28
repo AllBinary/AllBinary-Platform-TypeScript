@@ -308,6 +308,6 @@ fudgedBufferedImageArray[index]= fudge(bufferedImageArray[index]!, ratio);
 
 
 }
-                
-            
+
+
 

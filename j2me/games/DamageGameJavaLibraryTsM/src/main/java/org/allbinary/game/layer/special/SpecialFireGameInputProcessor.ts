@@ -70,6 +70,6 @@ this.collidableDestroyableDamageableLayer!.fire(allbinaryLayerManager, gameKeyEv
 
 
 }
-                
-            
+
+
 

@@ -278,6 +278,6 @@ this.updateProfileActionUI();
     private newTimeIntervalJButton: javax.swing.JButton;
 
 }
-                
-            
+
+
 

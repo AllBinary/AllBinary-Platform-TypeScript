@@ -73,6 +73,6 @@ export interface OperatingSystemInterface {
     toString(): string
 
 }
-                
-            
+
+
 

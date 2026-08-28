@@ -96,8 +96,8 @@ static TestableTimeTypeUtil = class extends TimeTypeUtil {
 
 
 }
-                
-            
+
+
     isNight_returnsTrue_for_hours_less_than_6(){
 
                     //Otherwise - statement - ForEachStmt
@@ -207,6 +207,6 @@ Assertions.assertSame(a, b);
 
 
 }
-                
-            
+
+
 

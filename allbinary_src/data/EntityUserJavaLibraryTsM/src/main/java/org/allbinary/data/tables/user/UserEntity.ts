@@ -586,6 +586,6 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
 }
-                
-            
+
+
 

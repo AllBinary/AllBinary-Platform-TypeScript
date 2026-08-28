@@ -86,6 +86,6 @@ gameInitializedListenerInterface!.onGameInitialized(eventObject as GameInitializ
 
 
 }
-                
-            
+
+
 

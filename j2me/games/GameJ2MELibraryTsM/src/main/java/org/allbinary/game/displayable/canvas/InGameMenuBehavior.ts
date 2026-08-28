@@ -106,6 +106,6 @@ allBinaryGameCanvas!.closeMenu2();
 
 
 }
-                
-            
+
+
 

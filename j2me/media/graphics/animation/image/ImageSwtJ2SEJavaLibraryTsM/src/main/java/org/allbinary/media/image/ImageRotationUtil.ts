@@ -187,6 +187,6 @@ this.imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, total
 
 
 }
-                
-            
+
+
 

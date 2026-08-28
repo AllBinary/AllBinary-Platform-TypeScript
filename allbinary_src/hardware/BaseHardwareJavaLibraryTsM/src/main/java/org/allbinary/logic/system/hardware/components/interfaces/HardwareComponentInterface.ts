@@ -53,6 +53,6 @@ export interface HardwareComponentInterface {
     toString(): string
 
 }
-                
-            
+
+
 

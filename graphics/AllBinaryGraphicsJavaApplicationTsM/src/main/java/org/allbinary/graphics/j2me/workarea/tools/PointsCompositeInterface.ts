@@ -44,6 +44,6 @@ export interface PointsCompositeInterface {
     getPointsInterface(): PointsInterface
 
 }
-                
-            
+
+
 

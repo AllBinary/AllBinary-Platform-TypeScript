@@ -63,6 +63,6 @@ SmallIntegerSingletonFactory.getInstance()!.initWithRange(0x2D0, 6);
 
 
 }
-                
-            
+
+
 

@@ -57,6 +57,6 @@ export interface SpecialAnimationInterface extends IndexedAnimationInterface {
     isComplete(): boolean
 
 }
-                
-            
+
+
 

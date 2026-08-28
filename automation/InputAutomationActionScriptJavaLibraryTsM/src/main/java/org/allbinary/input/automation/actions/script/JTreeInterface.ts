@@ -32,6 +32,6 @@ export interface JTreeInterface {
     getActionScriptJTree(): javax.swing.JTree
 
 }
-                
-            
+
+
 

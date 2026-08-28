@@ -91,6 +91,6 @@ export interface TransactionResultInterface {
     getException7(): string
 
 }
-                
-            
+
+
 

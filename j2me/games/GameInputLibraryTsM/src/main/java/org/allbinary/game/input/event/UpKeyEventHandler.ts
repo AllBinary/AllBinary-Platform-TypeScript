@@ -149,6 +149,6 @@ UpKeyEventHandler.instanceArray[index]!.removeListener(eventListenerInterface);
 
 
 }
-                
-            
+
+
 

@@ -48,6 +48,6 @@ export interface LayerInterfaceVisitor {
     visit(layerInterface: AllBinaryLayer)
 
 }
-                
-            
+
+
 

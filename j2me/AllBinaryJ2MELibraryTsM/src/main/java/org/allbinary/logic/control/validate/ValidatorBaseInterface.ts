@@ -65,6 +65,6 @@ export interface ValidatorBaseInterface {
     toList(): BasicArrayList
 
 }
-                
-            
+
+
 

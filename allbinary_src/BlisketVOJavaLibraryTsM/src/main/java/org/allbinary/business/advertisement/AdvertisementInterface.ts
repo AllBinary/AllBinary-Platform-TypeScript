@@ -107,6 +107,6 @@ export interface AdvertisementInterface {
     setThumbnail(AdvertisementThumbnailInterface: AdvertisementThumbnailInterface)
 
 }
-                
-            
+
+
 

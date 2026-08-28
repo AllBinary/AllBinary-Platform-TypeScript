@@ -64,6 +64,6 @@ export class GDResources
     public currentLayoutRequiredTotal: number= 0;
 
 }
-                
-            
+
+
 

@@ -48,6 +48,6 @@ export interface J2SECacheInterface extends AutomaticCacheInterface {
     keySet(): Set<any>
 
 }
-                
-            
+
+
 

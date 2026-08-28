@@ -69,6 +69,6 @@ export interface StoreThemeCategoryInterface extends CategoryInterface, TableMap
     getThemes(): Vector
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ export interface BuildMenuCompositeInterface {
     getBuildingScrollSelectionForm(): ScrollSelectionForm
 
 }
-                
-            
+
+
 

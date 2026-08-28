@@ -43,6 +43,6 @@ export interface TableInterface extends BasicTableInterface, ModifyTableInterfac
         
 
 }
-                
-            
+
+
 

@@ -59,6 +59,6 @@ export interface AllBinaryGameCanvasInterface extends DisplayableInterface {
     getLayerManager(): AllBinaryGameLayerManager
 
 }
-                
-            
+
+
 

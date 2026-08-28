@@ -74,6 +74,6 @@ export class LastFetchHighScoresFactory
     public highScoresArray: HighScores[] = NoHighScoresFactory.getInstance()!.NO_HIGH_SCORES;
 
 }
-                
-            
+
+
 

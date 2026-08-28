@@ -55,6 +55,6 @@ export interface RectangleResourceFactoryInterface {
     getRectangleArrayOfArrays(resource: string): Rectangle[][]
 
 }
-                
-            
+
+
 

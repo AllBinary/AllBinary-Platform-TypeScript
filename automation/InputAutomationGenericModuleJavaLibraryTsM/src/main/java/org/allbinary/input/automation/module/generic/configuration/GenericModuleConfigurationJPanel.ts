@@ -827,6 +827,6 @@ this.newProfileJDialog!.setVisible(true);
     private screenCaptureJRadioButton: javax.swing.JRadioButton;
 
 }
-                
-            
+
+
 

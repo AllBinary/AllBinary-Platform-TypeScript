@@ -299,6 +299,6 @@ this.COMPETITION_VALUE= (this.COMPETITION_VALUE>>2);
 
 
 }
-                
-            
+
+
 

@@ -41,6 +41,6 @@ export interface EmulatorViewInterface {
     onSetDisplayable(displayable: Displayable)
 
 }
-                
-            
+
+
 

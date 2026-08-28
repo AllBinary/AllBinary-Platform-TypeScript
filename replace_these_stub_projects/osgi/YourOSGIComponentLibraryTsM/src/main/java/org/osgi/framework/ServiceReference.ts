@@ -32,6 +32,6 @@ export interface ServiceReference extends Comparable {
     getPropertyKeys(): string[]
 
 }
-                
-            
+
+
 

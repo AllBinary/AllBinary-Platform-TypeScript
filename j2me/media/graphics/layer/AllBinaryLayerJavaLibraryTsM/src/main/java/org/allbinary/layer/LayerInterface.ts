@@ -95,6 +95,6 @@ export interface LayerInterface extends NamedInterface, PaintableInterface, Grou
     getType(): number
 
 }
-                
-            
+
+
 

@@ -59,6 +59,6 @@ export interface CategoryHierarchyInterface {
     setParent(categoryInterface: CategoryInterface)
 
 }
-                
-            
+
+
 

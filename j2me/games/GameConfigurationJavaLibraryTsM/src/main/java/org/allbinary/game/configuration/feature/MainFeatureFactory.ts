@@ -80,6 +80,6 @@ export class MainFeatureFactory
     public readonly LOAD_ALL: Feature = new Feature("Load All");
 
 }
-                
-            
+
+
 

@@ -67,6 +67,6 @@ private constructor (){
     public readonly ENCRYPTED_EXTENSION: string = "abw";
 
 }
-                
-            
+
+
 

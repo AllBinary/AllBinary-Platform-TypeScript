@@ -99,6 +99,6 @@ private constructor (){
     public readonly ABSOLUTE: number = 6;
 
 }
-                
-            
+
+
 

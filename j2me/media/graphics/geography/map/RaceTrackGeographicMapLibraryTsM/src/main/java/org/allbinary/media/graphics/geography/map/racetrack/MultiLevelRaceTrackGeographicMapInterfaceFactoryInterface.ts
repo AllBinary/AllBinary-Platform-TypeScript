@@ -52,6 +52,6 @@ export interface MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface exten
     getTotalLevels(): number
 
 }
-                
-            
+
+
 

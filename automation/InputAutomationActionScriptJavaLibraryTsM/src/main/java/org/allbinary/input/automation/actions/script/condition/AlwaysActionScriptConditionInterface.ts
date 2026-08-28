@@ -47,6 +47,6 @@ export interface AlwaysActionScriptConditionInterface {
     log()
 
 }
-                
-            
+
+
 

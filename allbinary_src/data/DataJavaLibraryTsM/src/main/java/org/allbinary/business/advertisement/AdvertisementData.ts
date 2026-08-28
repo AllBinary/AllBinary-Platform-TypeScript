@@ -67,6 +67,6 @@ private constructor (){
     public readonly DESCRIPTION: string = "ADVERTISEMENT_DESCRIPTION";
 
 }
-                
-            
+
+
 

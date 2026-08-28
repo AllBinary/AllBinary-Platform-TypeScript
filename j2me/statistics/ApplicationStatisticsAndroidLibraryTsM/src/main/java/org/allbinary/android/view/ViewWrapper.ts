@@ -68,6 +68,6 @@ this.view.postInvalidate();
 
 
 }
-                
-            
+
+
 

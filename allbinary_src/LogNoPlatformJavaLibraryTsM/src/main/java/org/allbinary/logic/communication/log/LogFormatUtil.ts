@@ -87,6 +87,6 @@ expect export class LogFormatUtil
     public getO(exception: any = {}): string
 
 }
-                
-            
+
+
 

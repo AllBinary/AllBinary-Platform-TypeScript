@@ -57,7 +57,7 @@
 
       
 //not game specific package import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
-      const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
+      const PartInterface = globalThis.org?.allbinary?.game?.part?.PartInterface;
 
       
 //not game specific package import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
@@ -443,6 +443,6 @@ hashtable.put(this.groupCommonFactory!.ID, BasicGroupFactory.getInstance()!.NONE
 
 
 }
-                
-            
+
+
 

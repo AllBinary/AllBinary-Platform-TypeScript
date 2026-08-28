@@ -50,6 +50,6 @@ export interface BundleContext {
     getServiceReference(clazz: string): ServiceReference
 
 }
-                
-            
+
+
 

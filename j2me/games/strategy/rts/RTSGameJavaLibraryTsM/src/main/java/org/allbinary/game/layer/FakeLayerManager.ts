@@ -102,6 +102,6 @@ this.geographicMapCellTypeArray= new Array(this.geographicMapInterfaceArray!.len
 
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ export interface GameInputProcessorInterface {
     onInput(list: BasicArrayList)
 
 }
-                
-            
+
+
 

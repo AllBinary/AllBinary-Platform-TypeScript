@@ -44,6 +44,6 @@ export interface CategoryPropertiesFactoryInterface {
     getInstance(): CategoryPropertiesInterface
 
 }
-                
-            
+
+
 

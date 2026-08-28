@@ -66,6 +66,6 @@ export interface CategoryFactoryInterface {
     getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface
 
 }
-                
-            
+
+
 

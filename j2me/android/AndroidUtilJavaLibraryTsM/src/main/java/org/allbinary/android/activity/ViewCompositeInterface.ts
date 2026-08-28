@@ -53,6 +53,6 @@ export interface ViewCompositeInterface {
     runOnUiThread(action: Runnable)
 
 }
-                
-            
+
+
 

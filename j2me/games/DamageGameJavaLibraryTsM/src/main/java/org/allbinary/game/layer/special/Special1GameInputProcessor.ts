@@ -70,6 +70,6 @@ this.collidableDestroyableDamageableLayer!.special1(allbinaryLayerManager, gameK
 
 
 }
-                
-            
+
+
 

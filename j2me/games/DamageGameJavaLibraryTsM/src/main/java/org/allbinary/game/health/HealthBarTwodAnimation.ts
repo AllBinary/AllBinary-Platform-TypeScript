@@ -72,6 +72,6 @@ graphics.fillRect(ax, this.getY() -1, this.x2, this.thickness);
 
 
 }
-                
-            
+
+
 

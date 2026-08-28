@@ -91,8 +91,8 @@ Config = class
 
 
 }
-                
-            
+
+
     public readonly ARGB_8888 = new this.Config(Bitmap.Config.ARGB_8888);
 
     public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
@@ -128,6 +128,6 @@ Config = class
 
 
 }
-                
-            
+
+
 

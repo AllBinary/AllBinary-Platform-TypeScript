@@ -220,6 +220,6 @@ this.scaleProperties= scaleProperties;
 
 
 }
-                
-            
+
+
 

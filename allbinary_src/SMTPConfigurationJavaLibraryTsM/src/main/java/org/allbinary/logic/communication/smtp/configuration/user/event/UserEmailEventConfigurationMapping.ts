@@ -119,6 +119,6 @@ vector.add(this.userEmailEventConfigurationInterface!.getEventListenerClassPath(
 
 
 }
-                
-            
+
+
 

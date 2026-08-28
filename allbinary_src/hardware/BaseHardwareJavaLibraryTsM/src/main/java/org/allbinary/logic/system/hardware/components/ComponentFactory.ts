@@ -90,6 +90,6 @@ export class ComponentFactory
     public readonly UNKNOWN: Component = new Component(CommonStrings.getInstance()!.UNKNOWN);
 
 }
-                
-            
+
+
 

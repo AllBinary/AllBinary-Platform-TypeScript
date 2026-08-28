@@ -61,6 +61,6 @@ export class ScaleFactorFactory
     public DEFAULT_SCALE_VALUE: number = 1024;
 
 }
-                
-            
+
+
 

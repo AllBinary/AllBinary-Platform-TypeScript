@@ -50,6 +50,6 @@ export interface TechEventListenerInterface extends EventListenerInterface {
     onTechEvent(event: AllBinaryEventObject)
 
 }
-                
-            
+
+
 

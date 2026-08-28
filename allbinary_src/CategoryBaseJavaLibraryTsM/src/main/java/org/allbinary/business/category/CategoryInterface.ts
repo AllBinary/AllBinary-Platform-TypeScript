@@ -107,6 +107,6 @@ export interface CategoryInterface extends TableMappingInterface, ValidationInte
     log()
 
 }
-                
-            
+
+
 

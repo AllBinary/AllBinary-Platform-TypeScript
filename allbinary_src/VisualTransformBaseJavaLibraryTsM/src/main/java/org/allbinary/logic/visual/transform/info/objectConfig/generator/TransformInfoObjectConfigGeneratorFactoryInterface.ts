@@ -52,6 +52,6 @@ export interface TransformInfoObjectConfigGeneratorFactoryInterface {
     getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator
 
 }
-                
-            
+
+
 

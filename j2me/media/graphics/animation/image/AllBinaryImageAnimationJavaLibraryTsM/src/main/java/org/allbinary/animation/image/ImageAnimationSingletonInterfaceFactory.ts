@@ -69,6 +69,6 @@ public constructor (animationInterface: Animation, width: number, height: number
 
 
 }
-                
-            
+
+
 

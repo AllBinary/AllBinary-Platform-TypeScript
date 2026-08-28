@@ -147,8 +147,8 @@ this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 MultitouchReleaseHelper = class extends this.ReleaseHelper {
         
@@ -204,8 +204,8 @@ this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index
 
 
 }
-                
-            
+
+
     private readonly releaseHelper;
 
 public constructor (){
@@ -408,6 +408,6 @@ this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyE
 
 
 }
-                
-            
+
+
 

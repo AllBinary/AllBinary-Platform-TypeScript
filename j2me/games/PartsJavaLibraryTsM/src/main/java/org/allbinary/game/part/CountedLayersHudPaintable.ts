@@ -236,6 +236,6 @@ graphics.drawRect(lastWidth -(CountedLayersHudPaintable.XXStringWidth +this.drop
 
 
 }
-                
-            
+
+
 

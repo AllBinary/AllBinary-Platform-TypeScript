@@ -52,6 +52,6 @@ export interface GeographicMapCellPositionFactoryInitVisitorInterface {
     visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition)
 
 }
-                
-            
+
+
 

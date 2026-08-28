@@ -128,6 +128,6 @@ this.lastHalfHeight= this.displayInfoSingleton!.getLastHalfHeight();
 
 
 }
-                
-            
+
+
 

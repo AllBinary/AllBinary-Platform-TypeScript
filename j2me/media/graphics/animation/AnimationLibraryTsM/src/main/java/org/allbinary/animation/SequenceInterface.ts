@@ -53,6 +53,6 @@ export interface SequenceInterface {
     getSequence(): number[]
 
 }
-                
-            
+
+
 

@@ -56,6 +56,6 @@ export class CacheTypeFactory
     public CACHE_VECTOR: CacheType = new CacheType(StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING);
 
 }
-                
-            
+
+
 

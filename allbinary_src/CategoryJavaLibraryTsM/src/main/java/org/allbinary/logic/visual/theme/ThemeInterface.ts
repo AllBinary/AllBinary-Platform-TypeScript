@@ -53,6 +53,6 @@ export interface ThemeInterface extends TableMappingInterface {
     getPreviewImagePath(): string
 
 }
-                
-            
+
+
 

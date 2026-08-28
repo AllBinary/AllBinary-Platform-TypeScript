@@ -63,6 +63,6 @@ export interface RunnableInterface extends Runnable {
     setThread(thread: Thread)
 
 }
-                
-            
+
+
 

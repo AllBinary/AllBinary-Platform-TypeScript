@@ -49,6 +49,6 @@ export interface InputAutomationConfigurationModuleChangeListener {
     onRemove(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent)
 
 }
-                
-            
+
+
 

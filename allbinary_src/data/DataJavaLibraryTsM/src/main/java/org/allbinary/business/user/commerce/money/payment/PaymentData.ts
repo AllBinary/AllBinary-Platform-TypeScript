@@ -91,6 +91,6 @@ export class PaymentData
     public static readonly MAGNETICINKCHECKREADER: string = "PAYMENT_MAGNETICINKCHECKREADER";
 
 }
-                
-            
+
+
 

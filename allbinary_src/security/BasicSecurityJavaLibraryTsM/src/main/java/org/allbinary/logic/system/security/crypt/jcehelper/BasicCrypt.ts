@@ -179,6 +179,6 @@ array= this.byteUtil!.xor(array, value);
 
 
 }
-                
-            
+
+
 

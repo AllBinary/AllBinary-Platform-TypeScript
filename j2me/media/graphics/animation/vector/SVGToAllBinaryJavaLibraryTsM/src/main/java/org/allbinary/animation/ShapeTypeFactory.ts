@@ -72,6 +72,6 @@ export class ShapeTypeFactory
     public readonly RECTANGLE: ShapeType = new ShapeType(KEY_RECTANGLE);
 
 }
-                
-            
+
+
 

@@ -132,6 +132,6 @@ public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
 
 
 }
-                
-            
+
+
 

@@ -49,6 +49,6 @@ export interface GeographicMapCompositeInterface {
     setGeographicMapInterface(geographicMapInterface: BasicGeographicMap[])
 
 }
-                
-            
+
+
 

@@ -44,6 +44,6 @@ export interface DirectionalCompositeInterface {
     getDirectionalInterface(): DirectionalInterface
 
 }
-                
-            
+
+
 

@@ -146,6 +146,6 @@ this.storeFrontOrderHistoryStatisticsInterface= new StoreFrontOrdersHistoryStati
 
 
 }
-                
-            
+
+
 

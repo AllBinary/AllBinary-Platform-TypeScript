@@ -255,6 +255,6 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
 
 
 }
-                
-            
+
+
 

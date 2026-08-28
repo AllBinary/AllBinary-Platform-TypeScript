@@ -233,6 +233,6 @@ result= (result +(x /result)) /2;
 
 
 }
-                
-            
+
+
 

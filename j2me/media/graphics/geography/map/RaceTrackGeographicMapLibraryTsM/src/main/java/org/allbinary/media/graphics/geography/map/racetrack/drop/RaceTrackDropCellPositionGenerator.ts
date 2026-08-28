@@ -298,6 +298,6 @@ this.drop(allBinaryLayerManager, index);
 
 
 }
-                
-            
+
+
 

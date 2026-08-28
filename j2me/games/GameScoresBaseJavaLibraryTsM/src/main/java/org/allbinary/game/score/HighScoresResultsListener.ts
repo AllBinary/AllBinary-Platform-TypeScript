@@ -52,6 +52,6 @@ export interface HighScoresResultsListener {
     setHighScoresArray(highScoresArrayP: HighScores[])
 
 }
-                
-            
+
+
 

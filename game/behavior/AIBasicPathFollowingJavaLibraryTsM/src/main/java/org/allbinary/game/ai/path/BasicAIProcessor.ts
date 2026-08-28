@@ -260,6 +260,6 @@ this.geographicMapCellHistory= geographicMapCellHistory;
 
 
 }
-                
-            
+
+
 

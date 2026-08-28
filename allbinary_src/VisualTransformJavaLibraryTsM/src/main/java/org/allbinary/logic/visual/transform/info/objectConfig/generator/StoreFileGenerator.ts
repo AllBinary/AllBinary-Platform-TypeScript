@@ -315,6 +315,6 @@ FileUtil.getInstance()!.write(inputStream, this.file);
 
 
 }
-                
-            
+
+
 

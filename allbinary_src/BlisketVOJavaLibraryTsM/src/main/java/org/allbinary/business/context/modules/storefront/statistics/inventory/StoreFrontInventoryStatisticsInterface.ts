@@ -55,6 +55,6 @@ export interface StoreFrontInventoryStatisticsInterface extends TableMappingInte
     getTotal(): Money
 
 }
-                
-            
+
+
 

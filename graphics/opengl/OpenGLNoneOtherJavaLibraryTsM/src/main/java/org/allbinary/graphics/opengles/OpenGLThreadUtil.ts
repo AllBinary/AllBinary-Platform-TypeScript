@@ -55,6 +55,6 @@ export class OpenGLThreadUtil
 
 
 }
-                
-            
+
+
 

@@ -83,6 +83,6 @@ export interface InventoryEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

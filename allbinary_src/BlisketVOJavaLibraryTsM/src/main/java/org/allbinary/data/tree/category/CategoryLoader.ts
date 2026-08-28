@@ -522,6 +522,6 @@ loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);
 
 
 }
-                
-            
+
+
 

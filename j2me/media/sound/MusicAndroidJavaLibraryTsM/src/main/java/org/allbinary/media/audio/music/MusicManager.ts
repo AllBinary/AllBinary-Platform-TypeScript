@@ -361,6 +361,6 @@ this.resourceUtil!.getContext()!.stopService(this.currentIntent);
 
 
 }
-                
-            
+
+
 

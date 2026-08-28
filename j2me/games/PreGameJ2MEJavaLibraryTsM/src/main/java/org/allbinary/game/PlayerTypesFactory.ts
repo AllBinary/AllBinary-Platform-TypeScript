@@ -64,6 +64,6 @@ export class PlayerTypesFactory
     public readonly PLAYER_TYPE_THREE: PlayerType = new PlayerType("Player Type Three", 2);
 
 }
-                
-            
+
+
 

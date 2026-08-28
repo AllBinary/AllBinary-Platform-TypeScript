@@ -204,6 +204,6 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 
 
 }
-                
-            
+
+
 

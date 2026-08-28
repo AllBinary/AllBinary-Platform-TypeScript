@@ -64,6 +64,6 @@ export interface RotationAnimationInterface extends IndexedAnimationInterface, D
     previousRotation()
 
 }
-                
-            
+
+
 

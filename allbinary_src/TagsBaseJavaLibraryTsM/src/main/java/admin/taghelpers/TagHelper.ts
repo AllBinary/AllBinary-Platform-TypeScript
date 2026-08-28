@@ -52,6 +52,6 @@ export class TagHelper
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
 }
-                
-            
+
+
 

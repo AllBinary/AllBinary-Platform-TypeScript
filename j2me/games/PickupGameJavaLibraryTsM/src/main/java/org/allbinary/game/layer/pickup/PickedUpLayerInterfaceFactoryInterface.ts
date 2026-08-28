@@ -64,6 +64,6 @@ export interface PickedUpLayerInterfaceFactoryInterface {
     getAnimationInterface(): Animation
 
 }
-                
-            
+
+
 

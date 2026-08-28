@@ -60,6 +60,6 @@ export class SWTProcessorUtil
     public swtProcessor: SWTProcessor = SWTProcessor.getInstance()!;
 
 }
-                
-            
+
+
 

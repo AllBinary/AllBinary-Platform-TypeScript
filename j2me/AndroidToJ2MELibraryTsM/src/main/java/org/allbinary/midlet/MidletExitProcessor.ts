@@ -69,6 +69,6 @@ this.midlet.exit();
 
 
 }
-                
-            
+
+
 

@@ -47,6 +47,6 @@ export interface AnimationListenerInterface {
     onPlatformAnimationRepeat()
 
 }
-                
-            
+
+
 

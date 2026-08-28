@@ -80,6 +80,6 @@ viewPosition!.setTiledLayer(tiledLayer);
 
 
 }
-                
-            
+
+
 

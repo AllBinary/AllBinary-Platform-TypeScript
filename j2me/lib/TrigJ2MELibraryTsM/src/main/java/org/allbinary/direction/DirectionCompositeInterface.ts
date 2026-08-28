@@ -44,6 +44,6 @@ export interface DirectionCompositeInterface {
     getDirection(): Direction
 
 }
-                
-            
+
+
 

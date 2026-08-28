@@ -56,6 +56,6 @@ export interface IndexedAnimationInterface extends SequentialAnimationInterface 
     getFrame(): number
 
 }
-                
-            
+
+
 

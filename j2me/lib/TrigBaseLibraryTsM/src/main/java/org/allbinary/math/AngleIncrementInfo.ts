@@ -188,6 +188,6 @@ this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getVal
 
 
 }
-                
-            
+
+
 

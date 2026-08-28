@@ -69,6 +69,6 @@ private constructor (){
     public readonly CONFIG: string = "ADVERTISEMENTCAMPAIGN_CONFIG";
 
 }
-                
-            
+
+
 

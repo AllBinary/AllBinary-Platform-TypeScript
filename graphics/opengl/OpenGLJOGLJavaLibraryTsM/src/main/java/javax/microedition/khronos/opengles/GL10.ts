@@ -1029,6 +1029,6 @@ export interface GL10 extends javax.microedition.khronos.opengles.GL {
     glPolygonMode(i: number, i1: number)
 
 }
-                
-            
+
+
 

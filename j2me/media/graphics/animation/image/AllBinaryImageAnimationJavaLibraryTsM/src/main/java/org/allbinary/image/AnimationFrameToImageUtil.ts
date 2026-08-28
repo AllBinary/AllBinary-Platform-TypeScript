@@ -122,6 +122,6 @@ animationInterface!.paintXY(graphics, 0, 0);
 
 
 }
-                
-            
+
+
 

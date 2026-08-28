@@ -69,6 +69,6 @@ ImageCacheFactory.getInstance()!.releaseAll();
 
 
 }
-                
-            
+
+
 

@@ -97,6 +97,6 @@ export class CommonLabels
     public readonly COLON_SEP: string = ": ";
 
 }
-                
-            
+
+
 

@@ -43,6 +43,6 @@ export interface Controllable2 {
     setVolume(leftVolume: number, rightVolume: number)
 
 }
-                
-            
+
+
 

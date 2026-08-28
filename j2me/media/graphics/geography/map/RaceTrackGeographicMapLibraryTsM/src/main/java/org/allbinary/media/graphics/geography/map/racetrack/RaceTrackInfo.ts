@@ -218,6 +218,6 @@ this.raceTrackFrictionProperties= raceTrackFrictionProperties;
 
 
 }
-                
-            
+
+
 

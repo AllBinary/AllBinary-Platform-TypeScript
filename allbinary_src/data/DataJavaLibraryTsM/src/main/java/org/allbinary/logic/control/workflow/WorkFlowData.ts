@@ -71,6 +71,6 @@ private constructor (){
     public DATA: string = "WORKFLOW_DATA";
 
 }
-                
-            
+
+
 

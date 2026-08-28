@@ -626,6 +626,6 @@ WaypointEventHandlerFactory.getInstance(layerInterface!.getGroupInterface()[0]!)
 
 
 }
-                
-            
+
+
 

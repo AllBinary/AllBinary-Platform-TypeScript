@@ -83,6 +83,6 @@ export class DownloadItemData
     public static readonly RETRIES: string = "DOWNLOADITEM_RETRIES";
 
 }
-                
-            
+
+
 

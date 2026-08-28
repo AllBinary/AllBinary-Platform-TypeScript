@@ -207,6 +207,6 @@ graphics.drawChars(this.costString, 0, this.len, x +this.adjustedCostX, y +adjus
 
 
 }
-                
-            
+
+
 

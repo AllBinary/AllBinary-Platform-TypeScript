@@ -131,6 +131,6 @@ this.totalPixelsChecked= totalPixelsChecked;
 
 
 }
-                
-            
+
+
 

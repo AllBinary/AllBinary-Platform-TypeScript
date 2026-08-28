@@ -53,6 +53,6 @@ export interface ProfileActionScriptNodeInterface extends DomNodeInterface, Muta
     removeCondition(profileActionConditionInterface: ProfileActionScriptNodeInterface)
 
 }
-                
-            
+
+
 

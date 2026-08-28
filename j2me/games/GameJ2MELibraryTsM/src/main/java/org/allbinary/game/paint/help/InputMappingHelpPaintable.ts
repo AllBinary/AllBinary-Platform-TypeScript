@@ -185,8 +185,8 @@ UpdateMyFontProperties = class
     charHeight: number= 0;
 
 }
-                
-            
+
+
     private updateMyFontProperties = new this.UpdateMyFontProperties();
 
 protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasicColor: BasicColor, basicColor: BasicColor){
@@ -645,6 +645,6 @@ deltaX += this.updateMyFontProperties!.sepWidthArray[index]![index2]!;
 
 
 }
-                
-            
+
+
 

@@ -331,6 +331,6 @@ this.firingDistance= firingDistance;
 
 
 }
-                
-            
+
+
 

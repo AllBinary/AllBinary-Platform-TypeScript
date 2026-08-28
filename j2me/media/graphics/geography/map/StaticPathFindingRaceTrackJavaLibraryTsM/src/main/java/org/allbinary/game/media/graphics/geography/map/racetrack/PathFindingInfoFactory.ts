@@ -117,6 +117,6 @@ this.init(geographicMapInterface, pathFindingInfo, graphArray);
 
 
 }
-                
-            
+
+
 

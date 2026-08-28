@@ -67,6 +67,6 @@ export interface DisplayableInterface {
     setCommandListener(l: CommandListener)
 
 }
-                
-            
+
+
 

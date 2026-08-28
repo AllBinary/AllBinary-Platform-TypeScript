@@ -72,6 +72,6 @@ export interface ColorRangeInterface {
     isInRange(color: Color): boolean
 
 }
-                
-            
+
+
 

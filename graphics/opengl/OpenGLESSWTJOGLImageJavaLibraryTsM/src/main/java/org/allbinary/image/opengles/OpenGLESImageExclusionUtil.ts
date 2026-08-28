@@ -155,6 +155,6 @@ name= this.list.get(index) as string;
 
 
 }
-                
-            
+
+
 

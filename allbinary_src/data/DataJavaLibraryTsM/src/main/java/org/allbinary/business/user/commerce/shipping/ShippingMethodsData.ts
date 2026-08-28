@@ -63,6 +63,6 @@ export class ShippingMethodsData
     public static readonly TOTAL: string = "SHIPPINGMETHOD_TOTAL";
 
 }
-                
-            
+
+
 

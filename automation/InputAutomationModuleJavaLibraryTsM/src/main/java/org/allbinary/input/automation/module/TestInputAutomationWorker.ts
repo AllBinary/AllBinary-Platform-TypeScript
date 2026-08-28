@@ -107,6 +107,6 @@ this.captureWorker!.addListenerInterface(this.imageComparisonWorker);
 
 
 }
-                
-            
+
+
 

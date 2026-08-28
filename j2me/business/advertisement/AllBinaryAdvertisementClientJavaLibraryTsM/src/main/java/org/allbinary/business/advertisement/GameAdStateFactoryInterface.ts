@@ -52,6 +52,6 @@ export interface GameAdStateFactoryInterface {
     getInstanceForApp(softwareInformation: SoftwareInformation): GameAdStateBase
 
 }
-                
-            
+
+
 

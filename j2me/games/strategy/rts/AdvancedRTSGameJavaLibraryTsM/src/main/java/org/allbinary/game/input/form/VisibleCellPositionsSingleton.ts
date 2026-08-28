@@ -368,6 +368,6 @@ this.simpleTiledLayer= simpleTiledLayer;
 
 
 }
-                
-            
+
+
 

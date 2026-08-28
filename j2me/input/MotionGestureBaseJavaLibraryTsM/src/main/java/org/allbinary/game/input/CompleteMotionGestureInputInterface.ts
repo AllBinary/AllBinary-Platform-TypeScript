@@ -49,6 +49,6 @@ export interface CompleteMotionGestureInputInterface extends NamedInterface {
         
 
 }
-                
-            
+
+
 

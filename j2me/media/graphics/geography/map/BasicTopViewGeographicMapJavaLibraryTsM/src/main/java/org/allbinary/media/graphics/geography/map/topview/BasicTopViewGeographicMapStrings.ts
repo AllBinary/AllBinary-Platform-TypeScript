@@ -73,6 +73,6 @@ export class BasicTopViewGeographicMapStrings
     public readonly STAIRS_DOWN: string = "StairsDown";
 
 }
-                
-            
+
+
 

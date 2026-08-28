@@ -133,6 +133,6 @@ this.genericProfileActionJPanel!.updateProfileActionUI();
     private removeJButton: javax.swing.JButton;
 
 }
-                
-            
+
+
 

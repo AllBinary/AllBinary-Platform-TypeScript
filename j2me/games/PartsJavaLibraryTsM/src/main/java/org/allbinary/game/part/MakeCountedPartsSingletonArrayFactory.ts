@@ -178,6 +178,6 @@ newPartInterfaceArray[index]= this.list.get(index) as PartInterface;
 
 
 }
-                
-            
+
+
 

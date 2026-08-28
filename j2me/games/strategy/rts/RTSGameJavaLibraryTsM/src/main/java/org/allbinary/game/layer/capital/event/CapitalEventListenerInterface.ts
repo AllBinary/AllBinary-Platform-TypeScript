@@ -51,6 +51,6 @@ export interface CapitalEventListenerInterface extends EventListenerInterface {
     onCapitalChangeEvent(event: CapitalEvent)
 
 }
-                
-            
+
+
 

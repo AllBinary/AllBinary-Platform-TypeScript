@@ -64,6 +64,6 @@ export interface MyCanvasEventListener {
     center(evt: MyCanvasEvent)
 
 }
-                
-            
+
+
 

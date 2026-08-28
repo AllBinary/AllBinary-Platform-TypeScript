@@ -182,6 +182,6 @@ this.RESOURCE_DESTROY= BasicGameResources.stringBuffer!.toString();
 
 
 }
-                
-            
+
+
 

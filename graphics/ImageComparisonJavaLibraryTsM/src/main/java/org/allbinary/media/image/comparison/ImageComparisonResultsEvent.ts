@@ -75,6 +75,6 @@ this.imageComparisonResult= imageComparisonResult;
 
 
 }
-                
-            
+
+
 

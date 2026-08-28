@@ -241,6 +241,6 @@ CompleteMotionGestureInputEventHandler.getInstance()!.removeListener(this);
 
 
 }
-                
-            
+
+
 

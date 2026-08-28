@@ -48,6 +48,6 @@ export interface KeyInputViewCompositeInterface extends ViewCompositeInterface {
     setKeyInputView(keyInputView: View)
 
 }
-                
-            
+
+
 

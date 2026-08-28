@@ -122,6 +122,6 @@ allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray());
 
 
 }
-                
-            
+
+
 

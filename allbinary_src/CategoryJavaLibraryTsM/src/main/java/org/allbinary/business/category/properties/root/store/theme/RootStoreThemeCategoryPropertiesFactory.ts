@@ -152,6 +152,6 @@ public constructor (transformInfoInterface: TransformInfoInterface, categoryProp
 
 
 }
-                
-            
+
+
 

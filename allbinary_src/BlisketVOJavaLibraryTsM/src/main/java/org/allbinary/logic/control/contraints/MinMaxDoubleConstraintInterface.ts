@@ -49,6 +49,6 @@ export interface MinMaxDoubleConstraintInterface {
     setMin(min: number)
 
 }
-                
-            
+
+
 

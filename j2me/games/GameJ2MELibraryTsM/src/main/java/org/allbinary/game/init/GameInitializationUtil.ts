@@ -178,6 +178,6 @@ ChangedGameFeatureListener.getInstance()!.remove(MainFeatureFactory.getInstance(
 
 
 }
-                
-            
+
+
 

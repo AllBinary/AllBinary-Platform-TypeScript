@@ -59,6 +59,6 @@ export interface CustomItemsEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

@@ -47,6 +47,6 @@ export class OpenGLStrings
     public readonly SET: string = "set(GL10)";
 
 }
-                
-            
+
+
 

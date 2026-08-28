@@ -63,6 +63,6 @@ expect export class TimeStampUtil
     public getAsString(): string
 
 }
-                
-            
+
+
 

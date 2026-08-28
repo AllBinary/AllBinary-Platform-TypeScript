@@ -56,6 +56,6 @@ export interface TransformInfoFactoryInterface {
     getInstance(databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
 
 }
-                
-            
+
+
 

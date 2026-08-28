@@ -54,6 +54,6 @@ export class NoMotionEventProcessor extends MotionEventProcessor {
 
 
 }
-                
-            
+
+
 

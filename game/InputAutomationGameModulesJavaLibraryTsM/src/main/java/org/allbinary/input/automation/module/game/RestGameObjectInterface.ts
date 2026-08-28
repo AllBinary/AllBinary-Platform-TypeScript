@@ -45,6 +45,6 @@ export interface RestGameObjectInterface {
     isAGoodTimeToRest(): boolean
 
 }
-                
-            
+
+
 

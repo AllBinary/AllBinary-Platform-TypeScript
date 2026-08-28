@@ -60,6 +60,6 @@ export class AbPathUtil
     public readonly NO_ABPATH: AbPath = AbPath.createAbPath()!;
 
 }
-                
-            
+
+
 

@@ -125,6 +125,6 @@ export class StoreFrontData
     public readonly SELECTSTORENAME: string = "STOREFRONT_SELECTSTORENAME";
 
 }
-                
-            
+
+
 

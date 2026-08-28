@@ -121,6 +121,6 @@ this.lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheF
 
 
 }
-                
-            
+
+
 

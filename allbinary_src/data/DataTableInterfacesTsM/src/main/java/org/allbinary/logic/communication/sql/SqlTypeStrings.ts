@@ -113,6 +113,6 @@ export class SqlTypeStrings
     public readonly BLOB_NOT_NULL: string = " BLOB NOT NULL, ";
 
 }
-                
-            
+
+
 

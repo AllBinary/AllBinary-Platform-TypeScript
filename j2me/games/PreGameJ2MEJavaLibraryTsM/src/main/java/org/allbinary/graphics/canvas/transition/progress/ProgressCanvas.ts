@@ -180,8 +180,8 @@ this.progressCanvas!.paint2(graphics);
 
 
 }
-                
-            
+
+
     public readonly GAUGE_PAINTABLE: Paintable = new this.ProgressPaintable(this);
 
     private readonly maxValue: number = 100.0;
@@ -472,6 +472,6 @@ this.background= background;
 
 
 }
-                
-            
+
+
 

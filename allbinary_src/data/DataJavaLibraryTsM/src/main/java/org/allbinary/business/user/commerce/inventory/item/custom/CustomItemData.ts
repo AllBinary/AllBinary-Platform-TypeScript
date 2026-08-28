@@ -47,6 +47,6 @@ export class CustomItemData
     public static readonly PACKAGE: string = "CUSTOMITEM_PACKAGE";
 
 }
-                
-            
+
+
 

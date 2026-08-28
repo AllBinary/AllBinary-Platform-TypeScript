@@ -216,6 +216,6 @@ node.appendChild(new StoreFrontView(this.storeFrontInterface).toXmlNode(document
 
 
 }
-                
-            
+
+
 

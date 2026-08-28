@@ -80,6 +80,6 @@ WaypointEventHandlerFactory.eventHandlerArray[index]!.removeAllListeners();
 
 
 }
-                
-            
+
+
 

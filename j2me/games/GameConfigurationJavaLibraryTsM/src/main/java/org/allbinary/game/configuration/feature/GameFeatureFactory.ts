@@ -113,6 +113,6 @@ private constructor (){
     public readonly COLLISIONS_FORCED_TWO_DIMENSIONAL: GameFeature = new GameFeature("Collisions Forced Two Dimensional");
 
 }
-                
-            
+
+
 

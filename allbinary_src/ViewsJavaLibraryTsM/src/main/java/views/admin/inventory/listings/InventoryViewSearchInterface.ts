@@ -59,6 +59,6 @@ export interface InventoryViewSearchInterface {
     getProduct(product: string): string
 
 }
-                
-            
+
+
 

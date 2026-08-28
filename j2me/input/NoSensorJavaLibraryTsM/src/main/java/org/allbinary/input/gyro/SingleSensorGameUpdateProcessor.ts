@@ -64,6 +64,6 @@ export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
 
 
 }
-                
-            
+
+
 

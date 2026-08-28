@@ -52,6 +52,6 @@ export interface RemoteHighScoresSubmissionProcessorInterface {
     process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, highScore: HighScore)
 
 }
-                
-            
+
+
 

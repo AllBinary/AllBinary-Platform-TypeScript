@@ -274,6 +274,6 @@ userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo);
 
 
 }
-                
-            
+
+
 

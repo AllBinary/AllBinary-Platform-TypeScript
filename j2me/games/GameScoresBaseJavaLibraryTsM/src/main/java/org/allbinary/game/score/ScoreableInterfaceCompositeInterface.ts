@@ -44,6 +44,6 @@ export interface ScoreableInterfaceCompositeInterface {
     getScoreableInterface(): Scoreable
 
 }
-                
-            
+
+
 

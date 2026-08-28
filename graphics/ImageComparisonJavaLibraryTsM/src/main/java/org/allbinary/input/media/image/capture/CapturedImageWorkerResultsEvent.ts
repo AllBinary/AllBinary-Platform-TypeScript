@@ -94,6 +94,6 @@ this.bufferedImage= bufferedImage;
 
 
 }
-                
-            
+
+
 

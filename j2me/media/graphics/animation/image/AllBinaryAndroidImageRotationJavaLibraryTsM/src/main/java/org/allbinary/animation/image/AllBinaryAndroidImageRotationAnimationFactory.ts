@@ -262,6 +262,6 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
 }
-                
-            
+
+
 

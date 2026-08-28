@@ -67,6 +67,6 @@ export interface OrderItemsEntityInterface extends BasicDataTableInterface {
     insert(values: Vector)
 
 }
-                
-            
+
+
 

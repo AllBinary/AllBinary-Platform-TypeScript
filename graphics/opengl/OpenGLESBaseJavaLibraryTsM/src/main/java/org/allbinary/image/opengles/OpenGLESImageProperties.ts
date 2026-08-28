@@ -65,6 +65,6 @@ export class OpenGLESImageProperties
     public alphaf: number = 1.0;
 
 }
-                
-            
+
+
 

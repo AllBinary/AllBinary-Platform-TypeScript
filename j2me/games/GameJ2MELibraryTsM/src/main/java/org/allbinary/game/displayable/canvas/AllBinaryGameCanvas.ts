@@ -2832,8 +2832,8 @@ this.progressCanvas!.end();
 
 
 }
-                
-            
+
+
 SecondaryThreadPool.getInstance()!.runTask(new SaveHighScoreRunnable());
     
 
@@ -3372,6 +3372,6 @@ this.gameSpecificPaintable= gameSpecificPaintable;
 
 
 }
-                
-            
+
+
 

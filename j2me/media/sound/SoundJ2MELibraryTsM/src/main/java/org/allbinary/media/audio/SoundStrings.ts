@@ -69,6 +69,6 @@ export class SoundStrings
     public readonly CLOSING_SOUND: string = "Closing Sound: ";
 
 }
-                
-            
+
+
 

@@ -55,6 +55,6 @@ export class NullJ2SEControl extends Control {
 
 
 }
-                
-            
+
+
 

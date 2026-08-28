@@ -572,6 +572,6 @@ cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
 
 
 }
-                
-            
+
+
 

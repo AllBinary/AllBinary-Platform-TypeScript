@@ -51,6 +51,6 @@ export interface ProductListingInterface {
     generateAll(storeName: string): string
 
 }
-                
-            
+
+
 

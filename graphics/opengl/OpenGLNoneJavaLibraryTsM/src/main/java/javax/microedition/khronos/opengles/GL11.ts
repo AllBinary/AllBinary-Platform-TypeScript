@@ -543,6 +543,6 @@ export interface GL11 extends GL10 {
     glVertexPointer(size: number, type: number, stride: number, offset: number)
 
 }
-                
-            
+
+
 

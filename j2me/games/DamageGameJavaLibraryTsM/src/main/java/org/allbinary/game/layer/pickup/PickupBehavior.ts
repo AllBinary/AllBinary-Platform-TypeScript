@@ -55,7 +55,7 @@
 
       
 //not game specific package import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
-      const PartInterface = globalThis.org.allbinary.game.part.PartInterface;
+      const PartInterface = globalThis.org?.allbinary?.game?.part?.PartInterface;
 
       
 //not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
@@ -403,6 +403,6 @@ nextCountedLayerInterfaceFactory= collidableDestroyableDamageableLayer!.getPartI
 
 
 }
-                
-            
+
+
 

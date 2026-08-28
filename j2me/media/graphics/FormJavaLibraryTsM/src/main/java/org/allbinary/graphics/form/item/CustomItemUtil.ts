@@ -60,6 +60,6 @@ export class CustomItemUtil
     public readonly CUSTOM_ITEM_ARRAY: ABCustomItem[] = [];
 
 }
-                
-            
+
+
 

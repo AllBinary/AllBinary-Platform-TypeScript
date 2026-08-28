@@ -52,6 +52,6 @@ export interface PathFindingInfoInterface {
     getPathFinder(): GeographicPathFinderBase
 
 }
-                
-            
+
+
 

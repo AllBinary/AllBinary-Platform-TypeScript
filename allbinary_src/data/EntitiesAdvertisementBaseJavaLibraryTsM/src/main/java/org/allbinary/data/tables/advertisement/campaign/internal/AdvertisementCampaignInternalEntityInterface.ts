@@ -59,6 +59,6 @@ export interface AdvertisementCampaignInternalEntityInterface extends BasicDataT
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

@@ -77,6 +77,6 @@ decorView!.setSystemUiVisibility(visibility);
 
 
 }
-                
-            
+
+
 

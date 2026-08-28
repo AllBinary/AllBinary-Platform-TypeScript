@@ -97,6 +97,6 @@ export interface TransformInfoObjectConfigInterface extends DomDocumentMappingIn
     toString(): string
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ public constructor (outputTypeName: string, inputOutputTypeName: string, inputOu
 
 
 }
-                
-            
+
+
 

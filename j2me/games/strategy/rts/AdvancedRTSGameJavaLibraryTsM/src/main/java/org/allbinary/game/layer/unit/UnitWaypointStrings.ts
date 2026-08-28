@@ -83,6 +83,6 @@ export class UnitWaypointStrings
     public readonly NEXT_PATH_NODE: string = "Next Path Node";
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ export interface CostLayerInterfaceFactoryInterface extends LayerInterfaceFactor
     getCost(): number
 
 }
-                
-            
+
+
 

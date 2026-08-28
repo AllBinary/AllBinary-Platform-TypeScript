@@ -62,6 +62,6 @@ export interface AdvertisementAreaInterface {
     setCampaign(campaign: string)
 
 }
-                
-            
+
+
 

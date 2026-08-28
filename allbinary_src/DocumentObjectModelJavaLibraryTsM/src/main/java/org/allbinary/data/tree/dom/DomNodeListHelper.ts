@@ -81,6 +81,6 @@ vector.add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)));
 
 
 }
-                
-            
+
+
 

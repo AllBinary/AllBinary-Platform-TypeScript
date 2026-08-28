@@ -148,6 +148,6 @@ export interface GL11Ext extends javax.microedition.khronos.opengles.GL {
     glWeightPointerOES(size: number, type: number, stride: number, offset: number)
 
 }
-                
-            
+
+
 

@@ -81,6 +81,6 @@ export class MouseStrings
     public readonly MOUSE_MOVED_LABEL: string = "MouseMoved" +CommonSeps.getInstance()!.COLON_SEP;
 
 }
-                
-            
+
+
 

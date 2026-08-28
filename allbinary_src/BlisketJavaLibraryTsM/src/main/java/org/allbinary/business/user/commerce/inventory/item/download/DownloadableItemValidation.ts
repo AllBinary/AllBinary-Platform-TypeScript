@@ -577,6 +577,6 @@ stringBuffer!.append(" and > 0 digits.<br/>");
 
 
 }
-                
-            
+
+
 

@@ -71,6 +71,6 @@ export class OpenGLImageSpecificFactory
     public updating: boolean = false;
 
 }
-                
-            
+
+
 

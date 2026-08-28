@@ -113,6 +113,6 @@ export class CanvasStrings
     public readonly _PNG: string = ".png";
 
 }
-                
-            
+
+
 

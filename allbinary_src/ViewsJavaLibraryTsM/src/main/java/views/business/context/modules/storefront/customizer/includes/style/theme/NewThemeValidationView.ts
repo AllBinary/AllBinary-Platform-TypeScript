@@ -213,6 +213,6 @@ stringBuffer!.append(this.styleValidationInterface!.validationInfo());
 
 
 }
-                
-            
+
+
 

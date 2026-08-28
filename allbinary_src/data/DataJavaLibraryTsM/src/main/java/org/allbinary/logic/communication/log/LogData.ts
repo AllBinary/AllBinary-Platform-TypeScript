@@ -61,6 +61,6 @@ export class LogData
     public readonly DESCRIPTION: string = "LOG_DESCRIPTION";
 
 }
-                
-            
+
+
 

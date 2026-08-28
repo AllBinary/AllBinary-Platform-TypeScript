@@ -45,6 +45,6 @@ export interface ScreenListenerInterface {
     onFullScreenDisplay()
 
 }
-                
-            
+
+
 

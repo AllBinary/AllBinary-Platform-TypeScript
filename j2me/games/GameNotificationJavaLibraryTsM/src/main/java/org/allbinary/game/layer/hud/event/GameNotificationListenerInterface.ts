@@ -60,6 +60,6 @@ export interface GameNotificationListenerInterface extends EventListenerInterfac
     onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent)
 
 }
-                
-            
+
+
 

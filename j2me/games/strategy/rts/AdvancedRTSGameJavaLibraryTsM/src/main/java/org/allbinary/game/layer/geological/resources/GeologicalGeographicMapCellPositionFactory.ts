@@ -97,6 +97,6 @@ public constructor (resourcePerMapCellType: number[]){
 
 
 }
-                
-            
+
+
 

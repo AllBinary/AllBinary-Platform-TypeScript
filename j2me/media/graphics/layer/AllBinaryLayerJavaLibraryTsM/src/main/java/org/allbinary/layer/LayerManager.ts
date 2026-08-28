@@ -321,6 +321,6 @@ comp= this.list.objectArray[index]! as Layer;
 
 
 }
-                
-            
+
+
 

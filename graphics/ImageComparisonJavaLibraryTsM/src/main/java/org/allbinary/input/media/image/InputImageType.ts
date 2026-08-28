@@ -131,6 +131,6 @@ InputImageType.hashMap!.put(this.getName(), this);
 
 
 }
-                
-            
+
+
 

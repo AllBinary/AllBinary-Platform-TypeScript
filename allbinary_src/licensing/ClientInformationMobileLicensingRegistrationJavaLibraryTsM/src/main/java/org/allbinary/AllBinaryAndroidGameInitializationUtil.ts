@@ -77,6 +77,6 @@ resourceUtil!.addResource(PartnerIdentifierFileUtil.getInstance()!.FILE_NAME, In
 
 
 }
-                
-            
+
+
 

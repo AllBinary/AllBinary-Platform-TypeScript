@@ -87,6 +87,6 @@ export class OpenGLVersionValidator
     public EGL_CONTEXT_CLIENT_VERSION_VALUE: number =  -1;
 
 }
-                
-            
+
+
 

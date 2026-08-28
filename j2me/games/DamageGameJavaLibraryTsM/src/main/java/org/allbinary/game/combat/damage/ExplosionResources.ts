@@ -71,6 +71,6 @@ private constructor (){
     public readonly THIRD_EXPLOSION_RESOURCE: string = "/explosion_sprite_15_by_15.png";
 
 }
-                
-            
+
+
 

@@ -54,6 +54,6 @@ export interface WaypointEventListenerInterface extends EventListenerInterface {
     onWaypointEvent(event: RTSLayerEvent)
 
 }
-                
-            
+
+
 

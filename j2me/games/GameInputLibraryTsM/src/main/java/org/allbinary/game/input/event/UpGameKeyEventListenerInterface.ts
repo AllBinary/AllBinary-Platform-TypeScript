@@ -60,6 +60,6 @@ export interface UpGameKeyEventListenerInterface extends EventListenerInterface 
     onUpGameKeyEvent(gameKeyEvent: GameKeyEvent)
 
 }
-                
-            
+
+
 

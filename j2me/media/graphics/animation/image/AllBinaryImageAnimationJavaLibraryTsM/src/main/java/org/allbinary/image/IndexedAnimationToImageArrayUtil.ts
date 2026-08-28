@@ -87,6 +87,6 @@ imageArray[index]= AnimationFrameToImageUtil.getInstance()!.getInstanceWH(width,
 
 
 }
-                
-            
+
+
 

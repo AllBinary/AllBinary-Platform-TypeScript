@@ -67,6 +67,6 @@ export interface MotionGestureEventListener extends BaseMotionGestureEventListen
     released(ev: MotionGestureEvent)
 
 }
-                
-            
+
+
 

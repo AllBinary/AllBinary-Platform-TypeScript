@@ -157,6 +157,6 @@ vector.add(osgiServiceInterface);
 
 
 }
-                
-            
+
+
 

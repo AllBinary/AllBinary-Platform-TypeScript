@@ -37,6 +37,6 @@ export interface XmlRpcHandler {
     execute(method: string, params: Vector<any>): any
 
 }
-                
-            
+
+
 

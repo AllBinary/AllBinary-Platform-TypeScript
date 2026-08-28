@@ -74,6 +74,6 @@ export class CachePolicyFactory
     public ONE_MINUTE_ONE_HUNDRED_MAX: CachePolicy = new CachePolicy(this.NAME, 1000 *60 *1, 100);
 
 }
-                
-            
+
+
 

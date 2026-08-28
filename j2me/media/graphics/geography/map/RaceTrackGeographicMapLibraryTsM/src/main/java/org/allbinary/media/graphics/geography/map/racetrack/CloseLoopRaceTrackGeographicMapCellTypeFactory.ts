@@ -67,6 +67,6 @@ this.FINISH_LINE_ROAD_CELL_TYPE= this.START_LINE_ROAD_CELL_TYPE;
 
 
 }
-                
-            
+
+
 

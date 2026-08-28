@@ -226,6 +226,6 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emai
 
 
 }
-                
-            
+
+
 

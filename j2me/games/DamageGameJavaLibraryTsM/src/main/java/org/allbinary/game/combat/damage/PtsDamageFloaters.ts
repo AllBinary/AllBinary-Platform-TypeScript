@@ -190,6 +190,6 @@ this.lastDamage[index]= 0;
 
 
 }
-                
-            
+
+
 

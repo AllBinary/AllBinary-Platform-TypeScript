@@ -537,6 +537,6 @@ graphics.drawString(string, this.x, y, this.hudGraphicsPosition!.getAnchor());
 
 
 }
-                
-            
+
+
 

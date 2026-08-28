@@ -49,6 +49,6 @@ export class SWTUtil
     public static SWT: string = "SWT";
 
 }
-                
-            
+
+
 

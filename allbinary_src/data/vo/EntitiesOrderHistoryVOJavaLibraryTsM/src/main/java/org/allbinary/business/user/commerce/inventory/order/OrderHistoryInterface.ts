@@ -107,6 +107,6 @@ export interface OrderHistoryInterface {
     getPaymentMethod(): string
 
 }
-                
-            
+
+
 

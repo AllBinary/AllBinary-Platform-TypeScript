@@ -189,8 +189,8 @@ super.updateMeasurement(graphics);
 
 
 }
-                
-            
+
+
 
                     //Otherwise - statement - EmptyStmt
 
@@ -229,8 +229,8 @@ this.updateMaxHeight= y +((secondIndex +1) *font.getHeight());
 
 
 }
-                
-            
+
+
 
                     //Otherwise - statement - EmptyStmt
 
@@ -272,8 +272,8 @@ super.updateMeasurement(graphics);
 
 
 }
-                
-            
+
+
 
                     //Otherwise - statement - EmptyStmt
 
@@ -313,8 +313,8 @@ this.updateMaxHeight= y +((fourthIndex +1) *font.getHeight());
 
 
 }
-                
-            
+
+
 
                     //Otherwise - statement - EmptyStmt
 
@@ -418,6 +418,6 @@ this.rtsLayer= rtsLayer;
 
 
 }
-                
-            
+
+
 

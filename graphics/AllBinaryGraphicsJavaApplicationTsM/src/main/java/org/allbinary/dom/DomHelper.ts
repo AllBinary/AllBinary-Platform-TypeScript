@@ -469,6 +469,6 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 }
-                
-            
+
+
 

@@ -73,6 +73,6 @@ export class GameGlobalsFactory
     public point: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
 
 }
-                
-            
+
+
 

@@ -114,6 +114,6 @@ allbinaryLayerManager!.append(weaponLayer);
 
 
 }
-                
-            
+
+
 

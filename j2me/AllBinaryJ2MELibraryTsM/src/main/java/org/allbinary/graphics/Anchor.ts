@@ -51,6 +51,6 @@ export class Anchor
     public static TOP_LEFT: number = Graphics.TOP&Graphics.LEFT;
 
 }
-                
-            
+
+
 

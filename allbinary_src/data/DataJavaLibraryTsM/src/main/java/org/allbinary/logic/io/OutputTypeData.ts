@@ -65,6 +65,6 @@ private constructor (){
     public readonly NAME: string = "OUTPUT_TYPE_NAME";
 
 }
-                
-            
+
+
 

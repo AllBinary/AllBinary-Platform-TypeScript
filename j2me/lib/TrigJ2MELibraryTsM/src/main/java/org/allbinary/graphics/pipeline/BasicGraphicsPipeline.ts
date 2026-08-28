@@ -307,6 +307,6 @@ this.pointBasicArrayList= newBasicArrayList;
 
 
 }
-                
-            
+
+
 

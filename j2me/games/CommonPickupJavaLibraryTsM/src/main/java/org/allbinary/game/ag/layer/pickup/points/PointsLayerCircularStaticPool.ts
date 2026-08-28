@@ -82,6 +82,6 @@ pointsLayer!.visit(scoreableInterface);
 
 
 }
-                
-            
+
+
 

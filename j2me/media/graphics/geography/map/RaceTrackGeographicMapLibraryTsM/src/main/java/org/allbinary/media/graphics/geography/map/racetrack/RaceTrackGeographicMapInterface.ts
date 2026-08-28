@@ -55,6 +55,6 @@ export interface RaceTrackGeographicMapInterface extends GeographicMapInterface 
     setRaceTrackData(raceTrackData: RaceTrackData)
 
 }
-                
-            
+
+
 

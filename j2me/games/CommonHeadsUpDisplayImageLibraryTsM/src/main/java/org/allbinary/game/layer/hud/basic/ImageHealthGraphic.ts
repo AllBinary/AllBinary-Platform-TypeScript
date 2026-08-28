@@ -121,6 +121,6 @@ graphics.drawImage(this.image[max]!, x, y, Anchor.TOP_LEFT);
 
 
 }
-                
-            
+
+
 

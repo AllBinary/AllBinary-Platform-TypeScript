@@ -60,6 +60,6 @@ export interface BasicGameInputAutomationActionInterface extends InputAutomation
     target(rectangle: Rectangle)
 
 }
-                
-            
+
+
 

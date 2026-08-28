@@ -51,6 +51,6 @@ export interface LayerPositionFinderInterface {
     getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer
 
 }
-                
-            
+
+
 

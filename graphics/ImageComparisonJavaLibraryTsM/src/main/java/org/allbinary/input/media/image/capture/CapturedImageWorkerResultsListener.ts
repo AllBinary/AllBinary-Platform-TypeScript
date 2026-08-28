@@ -48,6 +48,6 @@ export interface CapturedImageWorkerResultsListener extends BasicEventListenerIn
     onCaptureEvent(capturedimageworkerresultsevent: CapturedImageWorkerResultsEvent)
 
 }
-                
-            
+
+
 

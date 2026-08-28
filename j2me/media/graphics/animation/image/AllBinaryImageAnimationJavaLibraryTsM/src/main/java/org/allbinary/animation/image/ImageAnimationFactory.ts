@@ -126,6 +126,6 @@ scaledImage= openGLUtil!.addImage(scaledImage);
 
 
 }
-                
-            
+
+
 

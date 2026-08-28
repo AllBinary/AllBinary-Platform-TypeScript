@@ -56,6 +56,6 @@ export interface GameFeatureListenerInterface extends EventListenerInterface {
     onGameFeatureChange(gameFeatureEvent: GameFeatureEvent)
 
 }
-                
-            
+
+
 

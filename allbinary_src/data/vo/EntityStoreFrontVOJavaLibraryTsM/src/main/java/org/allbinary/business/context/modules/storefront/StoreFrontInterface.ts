@@ -203,6 +203,6 @@ export interface StoreFrontInterface extends TableMappingInterface {
     install(current: number, total: number)
 
 }
-                
-            
+
+
 

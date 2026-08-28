@@ -84,6 +84,6 @@ export class GameTypeFactory
     public BOT: GameType = new GameType("Artificial Player");
 
 }
-                
-            
+
+
 

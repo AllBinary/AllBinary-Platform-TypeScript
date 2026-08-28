@@ -49,6 +49,6 @@ export class SpecialItemData
     public static readonly END_TIME: string = "SPECIALITEM_END_TIME";
 
 }
-                
-            
+
+
 

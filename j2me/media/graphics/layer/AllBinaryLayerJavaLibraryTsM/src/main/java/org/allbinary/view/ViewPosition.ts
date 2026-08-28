@@ -145,6 +145,6 @@ this.allbinaryLayer= allbinaryLayer as unknown as AllBinaryLayer;
 
 
 }
-                
-            
+
+
 

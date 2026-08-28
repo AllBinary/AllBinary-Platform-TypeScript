@@ -55,6 +55,6 @@ export interface RootCategoryPropertiesInterface {
     getRootFilePath(): AbPath
 
 }
-                
-            
+
+
 

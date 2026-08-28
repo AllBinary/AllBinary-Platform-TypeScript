@@ -56,6 +56,6 @@ export interface GeographicMapCellPositionEventListenerInterface extends EventLi
     onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent)
 
 }
-                
-            
+
+
 

@@ -67,6 +67,6 @@ private constructor (){
     public readonly NOT_RESIZABLE_MEDIA: string = "NOT_RESIZABLE_MEDIA";
 
 }
-                
-            
+
+
 

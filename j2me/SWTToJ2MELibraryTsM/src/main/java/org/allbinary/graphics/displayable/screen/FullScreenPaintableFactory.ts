@@ -67,6 +67,6 @@ export class FullScreenPaintableFactory
     public paintable: Paintable = FullScreenPaintable.getInstance()!;
 
 }
-                
-            
+
+
 

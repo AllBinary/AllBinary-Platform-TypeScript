@@ -175,6 +175,6 @@ export class GLOBALS2
     public static readonly SEARCH: string = "Search";
 
 }
-                
-            
+
+
 

@@ -539,6 +539,6 @@ resolveClass(myClass.prototype.constructor);
 
 
 }
-                
-            
+
+
 

@@ -63,6 +63,6 @@ export class ThirdPartyMessageFactory
     public readonly LINKAGE_ERROR: string = "Linkage Error";
 
 }
-                
-            
+
+
 

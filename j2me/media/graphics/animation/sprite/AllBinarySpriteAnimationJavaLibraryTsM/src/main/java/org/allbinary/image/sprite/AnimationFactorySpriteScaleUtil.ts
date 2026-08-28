@@ -229,6 +229,6 @@ sprite= spriteFactory!.createSprite(scaledImage, width, height);
 
 
 }
-                
-            
+
+
 

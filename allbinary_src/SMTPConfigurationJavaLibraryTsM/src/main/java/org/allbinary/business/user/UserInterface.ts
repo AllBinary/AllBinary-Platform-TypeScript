@@ -165,6 +165,6 @@ export interface UserInterface extends TableMappingInterface, ValidationInterfac
     isSessionValid(): Boolean
 
 }
-                
-            
+
+
 

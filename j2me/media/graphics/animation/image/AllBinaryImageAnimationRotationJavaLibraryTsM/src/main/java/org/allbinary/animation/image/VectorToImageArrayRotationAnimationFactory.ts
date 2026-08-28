@@ -172,6 +172,6 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 
 
 }
-                
-            
+
+
 

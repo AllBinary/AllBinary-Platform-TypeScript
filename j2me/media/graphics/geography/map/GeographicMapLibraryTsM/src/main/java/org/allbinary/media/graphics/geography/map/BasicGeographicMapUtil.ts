@@ -308,6 +308,6 @@ geographicMapInterface!.getAllBinaryTiledLayer()!.setPosition(x, y, geographicMa
 
 
 }
-                
-            
+
+
 

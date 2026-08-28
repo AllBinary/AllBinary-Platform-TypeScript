@@ -85,6 +85,6 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
 
 
 }
-                
-            
+
+
 

@@ -847,6 +847,6 @@ stringBuffer!.append(stringUtil!.toString(this.getColor()));
 
 
 }
-                
-            
+
+
 

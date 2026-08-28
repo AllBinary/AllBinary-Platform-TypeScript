@@ -44,6 +44,6 @@ export interface GameNotificationHudCompositeInterface {
     getGameNotificationHud(): GameNotificationHud
 
 }
-                
-            
+
+
 

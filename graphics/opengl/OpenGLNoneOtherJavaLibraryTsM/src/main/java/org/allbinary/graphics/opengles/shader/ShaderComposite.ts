@@ -141,6 +141,6 @@ this.programHandle= this.shaderInitializer!.init(gl, this.shaderArray, StringUti
 
 
 }
-                
-            
+
+
 

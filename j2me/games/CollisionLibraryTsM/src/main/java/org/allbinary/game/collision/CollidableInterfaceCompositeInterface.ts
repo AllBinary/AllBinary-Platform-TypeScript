@@ -52,6 +52,6 @@ export interface CollidableInterfaceCompositeInterface {
     getCollidableInferface(): CollidableBaseBehavior
 
 }
-                
-            
+
+
 

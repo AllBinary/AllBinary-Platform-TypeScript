@@ -102,6 +102,6 @@ private constructor (){
     public readonly VECTOR_TO_IMAGE_GRAPHICS: GraphicsFeature = new GraphicsFeature("Vector To Image Graphics");
 
 }
-                
-            
+
+
 

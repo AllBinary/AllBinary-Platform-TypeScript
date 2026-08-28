@@ -189,6 +189,6 @@ numberOnSameTeam[index]= list.objectArray[index]! as Integer;
 
 
 }
-                
-            
+
+
 

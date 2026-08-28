@@ -215,6 +215,6 @@ graphics.drawChars(charArray2, 0, len2, x -this.offset, y, 0);
 
 
 }
-                
-            
+
+
 

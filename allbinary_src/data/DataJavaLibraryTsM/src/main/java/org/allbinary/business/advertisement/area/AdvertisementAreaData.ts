@@ -69,6 +69,6 @@ private constructor (){
     public readonly CONSTRAINTS: string = "ADVERTISEMENT_CONSTRAINTS";
 
 }
-                
-            
+
+
 

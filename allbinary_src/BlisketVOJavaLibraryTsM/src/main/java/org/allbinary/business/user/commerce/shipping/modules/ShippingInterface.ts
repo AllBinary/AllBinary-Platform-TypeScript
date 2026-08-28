@@ -55,6 +55,6 @@ export interface ShippingInterface {
     getDescription(): string
 
 }
-                
-            
+
+
 

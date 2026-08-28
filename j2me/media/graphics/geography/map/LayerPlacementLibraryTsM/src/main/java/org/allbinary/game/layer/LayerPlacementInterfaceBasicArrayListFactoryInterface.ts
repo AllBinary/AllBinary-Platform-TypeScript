@@ -49,6 +49,6 @@ export interface LayerPlacementInterfaceBasicArrayListFactoryInterface {
     getOnDemandResources(): number[]
 
 }
-                
-            
+
+
 

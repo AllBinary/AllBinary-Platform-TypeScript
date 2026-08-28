@@ -89,6 +89,6 @@ this.geographicMapCellPositionEventHandler!.fireRemoveEvent(this.geographicMapCe
 
 
 }
-                
-            
+
+
 

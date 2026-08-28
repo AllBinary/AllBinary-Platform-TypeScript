@@ -331,6 +331,6 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
 }
-                
-            
+
+
 

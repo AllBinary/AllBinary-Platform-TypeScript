@@ -47,6 +47,6 @@ export class PoolTypeFactory
     public VECTOR_POOL: PoolType = new PoolType(CacheTypeFactory.getInstance()!.NO_CACHE);
 
 }
-                
-            
+
+
 

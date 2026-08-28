@@ -65,6 +65,6 @@ export interface PaymentInterface {
     isDefault(): boolean
 
 }
-                
-            
+
+
 

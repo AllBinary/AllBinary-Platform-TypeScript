@@ -61,6 +61,6 @@ export class ImageStrings
     public readonly PNG_EXTENSION: string = ".png";
 
 }
-                
-            
+
+
 

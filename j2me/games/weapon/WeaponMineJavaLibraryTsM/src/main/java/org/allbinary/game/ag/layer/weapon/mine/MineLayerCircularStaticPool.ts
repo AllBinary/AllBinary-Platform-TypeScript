@@ -79,6 +79,6 @@ MineLayerCircularStaticPool.WEAPON_LAYER_CIRCULAR_STATIC_POOL.initAllBinaryLayer
 
 
 }
-                
-            
+
+
 

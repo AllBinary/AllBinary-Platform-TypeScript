@@ -71,6 +71,6 @@ export class HighScoreCommands
     public readonly WORLD: Command = new Command("World", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
 }
-                
-            
+
+
 

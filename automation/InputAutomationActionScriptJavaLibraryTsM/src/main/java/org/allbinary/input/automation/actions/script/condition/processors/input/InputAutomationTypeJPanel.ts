@@ -99,6 +99,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     private jLabel1: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

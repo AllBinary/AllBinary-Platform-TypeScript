@@ -52,6 +52,6 @@ export interface CollidableBaseBehaviorFactoryInterface {
     createBehavior(): CollidableBaseBehavior
 
 }
-                
-            
+
+
 

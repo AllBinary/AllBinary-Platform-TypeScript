@@ -56,6 +56,6 @@ export interface VectorAnimationInterface extends IndexedAnimationInterface, Col
     getPoints(frame: number): number[][]
 
 }
-                
-            
+
+
 

@@ -108,6 +108,6 @@ scaledImages[index]= this.scale(images[index]!, width, height);
 
 
 }
-                
-            
+
+
 

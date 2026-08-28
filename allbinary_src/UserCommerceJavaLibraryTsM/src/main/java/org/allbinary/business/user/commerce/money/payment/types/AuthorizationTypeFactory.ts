@@ -72,6 +72,6 @@ export class AuthorizationTypeFactory
     public readonly CHIP: AuthorizationType = new AuthorizationType("Chip");
 
 }
-                
-            
+
+
 

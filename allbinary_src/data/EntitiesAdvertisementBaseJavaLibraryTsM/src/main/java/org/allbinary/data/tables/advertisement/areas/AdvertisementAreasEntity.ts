@@ -282,6 +282,6 @@ super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(
 
 
 }
-                
-            
+
+
 

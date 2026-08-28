@@ -179,6 +179,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);
 
 
 }
-                
-            
+
+
 

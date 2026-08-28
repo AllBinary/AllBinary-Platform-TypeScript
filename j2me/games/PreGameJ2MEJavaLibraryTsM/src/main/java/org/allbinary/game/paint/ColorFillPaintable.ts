@@ -89,6 +89,6 @@ graphics.fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayI
 
 
 }
-                
-            
+
+
 

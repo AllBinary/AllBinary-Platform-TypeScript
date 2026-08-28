@@ -44,6 +44,6 @@ export interface AllBinaryEventObjectFactoryInterface {
     getInstance(): AllBinaryEventObject
 
 }
-                
-            
+
+
 

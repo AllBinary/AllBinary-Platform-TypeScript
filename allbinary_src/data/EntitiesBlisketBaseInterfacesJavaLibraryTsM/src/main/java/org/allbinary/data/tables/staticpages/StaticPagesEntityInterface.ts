@@ -61,6 +61,6 @@ export interface StaticPagesEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

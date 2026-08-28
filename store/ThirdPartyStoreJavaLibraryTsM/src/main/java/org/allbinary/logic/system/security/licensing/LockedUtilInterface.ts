@@ -46,6 +46,6 @@ export interface LockedUtilInterface {
     isLockedFeature(lockableFeatrue: LockableFeature): boolean
 
 }
-                
-            
+
+
 

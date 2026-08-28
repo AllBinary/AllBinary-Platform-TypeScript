@@ -334,6 +334,6 @@ node.appendChild(new ItemView(item, new Vector()).toXmlNode(document));
 
 
 }
-                
-            
+
+
 

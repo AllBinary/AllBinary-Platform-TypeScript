@@ -59,6 +59,6 @@ export interface DebugInterface {
     isRunning(): boolean
 
 }
-                
-            
+
+
 

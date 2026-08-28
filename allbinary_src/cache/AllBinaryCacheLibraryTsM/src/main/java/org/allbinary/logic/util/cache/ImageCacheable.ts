@@ -77,6 +77,6 @@ public constructor (name: string, anyType: any = {}){
 
 
 }
-                
-            
+
+
 

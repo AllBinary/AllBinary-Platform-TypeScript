@@ -76,6 +76,6 @@ waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent);
 
 
 }
-                
-            
+
+
 

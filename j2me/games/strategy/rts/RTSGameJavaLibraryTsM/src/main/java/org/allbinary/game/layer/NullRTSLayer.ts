@@ -241,6 +241,6 @@ export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayer
 
 
 }
-                
-            
+
+
 

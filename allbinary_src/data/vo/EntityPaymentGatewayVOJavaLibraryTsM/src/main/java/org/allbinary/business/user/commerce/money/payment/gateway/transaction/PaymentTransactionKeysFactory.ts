@@ -220,6 +220,6 @@ export class PaymentTransactionKeysFactory
     public readonly EXCEPTION7: PaymentTransactionKeys = new PaymentTransactionKeys("EXCEPTION7");
 
 }
-                
-            
+
+
 

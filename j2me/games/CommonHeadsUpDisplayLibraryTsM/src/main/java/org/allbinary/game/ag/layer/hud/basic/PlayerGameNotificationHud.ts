@@ -167,8 +167,8 @@ this.updateMeasurementProcessor!.setAndRemoveProcess();
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 NextUnremoveableProcessor = class extends Processor {
         
@@ -192,8 +192,8 @@ this.updateMeasurementProcessor!.setNextUnremoveableProcess();
 
 
 }
-                
-            
+
+
     private readonly setAndRemoveProcessor: Processor = new this.SetAndRemoveProcessor(this);
 
     private readonly nextUnremoveableProcessor: Processor = new this.NextUnremoveableProcessor(this);
@@ -457,6 +457,6 @@ super.paintString(graphics, this.string);
 
 
 }
-                
-            
+
+
 

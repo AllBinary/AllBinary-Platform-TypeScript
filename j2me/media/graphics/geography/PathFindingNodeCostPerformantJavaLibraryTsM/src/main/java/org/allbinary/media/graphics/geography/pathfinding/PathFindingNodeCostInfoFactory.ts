@@ -96,6 +96,6 @@ public constructor (max: number){
 
 
 }
-                
-            
+
+
 

@@ -44,6 +44,6 @@ export interface HealthVisitorInterface {
     visit(healthInterface: HealthInterface)
 
 }
-                
-            
+
+
 

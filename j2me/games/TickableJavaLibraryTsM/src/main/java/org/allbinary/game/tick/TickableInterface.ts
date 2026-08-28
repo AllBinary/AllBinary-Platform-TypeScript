@@ -63,6 +63,6 @@ export interface TickableInterface extends NamedInterface {
     processTick(allBinaryLayerManager: AllBinaryLayerManager)
 
 }
-                
-            
+
+
 

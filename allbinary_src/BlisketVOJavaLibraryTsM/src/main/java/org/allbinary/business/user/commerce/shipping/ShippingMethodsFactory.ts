@@ -279,6 +279,6 @@ this.shippingVector!.add(new NoShippingModuleView());
 
 
 }
-                
-            
+
+
 

@@ -71,6 +71,6 @@ geologicalGeographicMapCellPosition!.getGeologicalResource()!.init();
 
 
 }
-                
-            
+
+
 

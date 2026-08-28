@@ -169,6 +169,6 @@ node.appendChild(storeFrontUsersStatisticsDomNodeInterface!.toXmlNode(document))
 
 
 }
-                
-            
+
+
 

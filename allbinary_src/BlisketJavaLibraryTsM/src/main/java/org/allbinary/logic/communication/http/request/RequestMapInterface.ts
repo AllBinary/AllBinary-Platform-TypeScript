@@ -47,6 +47,6 @@ export interface RequestMapInterface {
     getRequestHashMap(): HashMap<any, any>
 
 }
-                
-            
+
+
 

@@ -63,6 +63,6 @@ export class OrthogonalLightingOpenGLProcessorFactory
     public sceneLightsOrthogonalModeOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
 
 }
-                
-            
+
+
 

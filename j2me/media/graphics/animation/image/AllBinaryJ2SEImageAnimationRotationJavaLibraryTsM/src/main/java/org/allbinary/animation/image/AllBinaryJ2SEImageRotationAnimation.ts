@@ -424,6 +424,6 @@ disposalUtil!.disposeImage(this.imageToShow);
 
 
 }
-                
-            
+
+
 

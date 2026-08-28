@@ -124,6 +124,6 @@ EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
 
 
 }
-                
-            
+
+
 

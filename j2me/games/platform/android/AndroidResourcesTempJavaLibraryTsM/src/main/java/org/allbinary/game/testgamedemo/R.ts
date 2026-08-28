@@ -46,8 +46,8 @@ static attr = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=static
 static drawable = class
             extends Object
@@ -57,8 +57,8 @@ static drawable = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=static
 static id = class
             extends Object
@@ -78,8 +78,8 @@ static id = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=static
 static layout = class
             extends Object
@@ -91,8 +91,8 @@ static layout = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=static
 static raw = class
             extends Object
@@ -166,8 +166,8 @@ static raw = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=static
 static string = class
             extends Object
@@ -179,9 +179,9 @@ static string = class
 
 
 }
-                
-            
+
+
 }
-                
-            
+
+
 

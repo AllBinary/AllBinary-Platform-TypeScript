@@ -103,6 +103,6 @@ this.ownershipPaintableInterface!.paint(graphics);
 
 
 }
-                
-            
+
+
 

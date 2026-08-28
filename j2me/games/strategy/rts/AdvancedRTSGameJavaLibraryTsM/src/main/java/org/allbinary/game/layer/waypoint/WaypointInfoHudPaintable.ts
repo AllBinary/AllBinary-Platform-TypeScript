@@ -133,6 +133,6 @@ this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
 
 
 }
-                
-            
+
+
 

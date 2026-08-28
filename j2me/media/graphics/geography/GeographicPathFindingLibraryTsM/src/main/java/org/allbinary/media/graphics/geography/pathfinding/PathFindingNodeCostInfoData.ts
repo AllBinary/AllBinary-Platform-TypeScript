@@ -69,6 +69,6 @@ private constructor (){
     public MAX_NODE_COST: number = Integer.MAX_VALUE /10000;
 
 }
-                
-            
+
+
 

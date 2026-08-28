@@ -48,6 +48,6 @@ export interface ImageComparisonSearchResultsListener extends BasicEventListener
     onImageComparisonResultsEvent(imageComparisonSearchResultsEvent: ImageComparisonSearchResultsEvent)
 
 }
-                
-            
+
+
 

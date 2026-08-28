@@ -75,6 +75,6 @@ export class ItemColorFactory
     public TEXT_FIELD_NO_FOCUS: number = 0x7F7F7F;
 
 }
-                
-            
+
+
 

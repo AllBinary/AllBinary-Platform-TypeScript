@@ -73,6 +73,6 @@ export interface AdvertisementAreasEntityInterface extends BasicDataTableInterfa
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

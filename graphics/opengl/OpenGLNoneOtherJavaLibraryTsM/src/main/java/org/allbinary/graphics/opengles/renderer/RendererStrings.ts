@@ -67,6 +67,6 @@ export class RendererStrings
     public readonly ON_DRAW_FRAME_2D: string = "onDrawFrame2d";
 
 }
-                
-            
+
+
 

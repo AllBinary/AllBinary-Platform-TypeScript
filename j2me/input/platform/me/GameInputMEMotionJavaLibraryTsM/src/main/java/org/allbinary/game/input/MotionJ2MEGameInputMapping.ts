@@ -57,6 +57,6 @@ export class MotionJ2MEGameInputMapping extends J2MEGameInputMapping {
 
 
 }
-                
-            
+
+
 

@@ -190,6 +190,6 @@ customTextAnimation!.setBasicColorP(this.basicColor);
 
 
 }
-                
-            
+
+
 

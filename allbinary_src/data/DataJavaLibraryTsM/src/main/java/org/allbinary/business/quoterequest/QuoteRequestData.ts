@@ -75,6 +75,6 @@ private constructor (){
     public readonly COMMENTS: string = "QUOTEREQUEST_COMMENTS";
 
 }
-                
-            
+
+
 

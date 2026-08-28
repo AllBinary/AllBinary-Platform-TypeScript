@@ -255,6 +255,6 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.currentPoints!.len
 
 
 }
-                
-            
+
+
 

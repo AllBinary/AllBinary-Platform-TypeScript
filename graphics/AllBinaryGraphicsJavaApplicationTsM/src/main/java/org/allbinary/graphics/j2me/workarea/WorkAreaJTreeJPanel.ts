@@ -735,6 +735,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePres
     private workAreaPropertiesJPanel: javax.swing.JPanel;
 
 }
-                
-            
+
+
 

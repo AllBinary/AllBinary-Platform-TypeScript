@@ -181,6 +181,6 @@ result += this.after;
 
 
 }
-                
-            
+
+
 

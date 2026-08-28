@@ -264,6 +264,6 @@ this.basicColor= basicColor;
 
 
 }
-                
-            
+
+
 

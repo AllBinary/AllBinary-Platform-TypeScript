@@ -59,6 +59,6 @@ export class LockedResources
     public readonly LOCKED_DEMO_GAME_FEATURE_RESOURCE: string = "/locked_demo_game_feature_64_by_64.png";
 
 }
-                
-            
+
+
 

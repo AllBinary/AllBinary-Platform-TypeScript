@@ -72,6 +72,6 @@ openGLESImage!.imageProcessor!.translate(gl, x, y);
 
 
 }
-                
-            
+
+
 

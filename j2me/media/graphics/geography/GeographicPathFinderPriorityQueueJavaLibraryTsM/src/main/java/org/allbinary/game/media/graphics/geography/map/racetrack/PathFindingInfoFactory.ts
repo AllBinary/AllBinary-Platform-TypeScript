@@ -194,6 +194,6 @@ this.buildPathFindingNodesForCellPosition(geographicMapInterface, pathFindingInf
 
 
 }
-                
-            
+
+
 

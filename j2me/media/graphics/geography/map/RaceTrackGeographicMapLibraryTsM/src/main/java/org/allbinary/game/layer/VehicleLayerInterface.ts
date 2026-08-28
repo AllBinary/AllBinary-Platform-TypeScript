@@ -94,6 +94,6 @@ export interface VehicleLayerInterface extends LayerInterface, VehicleProperties
     setGeographicMapCellHistoryArray(geographicMapCellHistory: GeographicMapCellHistory[])
 
 }
-                
-            
+
+
 

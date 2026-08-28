@@ -98,6 +98,6 @@ baseMotionGestureEventListener!.onMotionGestureEvent(eventObject as MotionGestur
 
 
 }
-                
-            
+
+
 

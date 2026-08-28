@@ -129,6 +129,6 @@ repeatLikelyhoodIntegerArray[Canvas.KEY_NUM1]= smallIntegerSingletonFactory!.get
 
 
 }
-                
-            
+
+
 

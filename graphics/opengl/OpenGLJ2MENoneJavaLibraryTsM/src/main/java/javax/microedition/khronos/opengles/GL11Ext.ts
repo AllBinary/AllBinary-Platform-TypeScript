@@ -28,6 +28,6 @@ export interface GL11Ext extends GL {
         
 
 }
-                
-            
+
+
 

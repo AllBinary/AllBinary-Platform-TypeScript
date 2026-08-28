@@ -56,6 +56,6 @@ export interface PaymentProcessorInterfaceFactoryInterface {
     getInstance(transformInfoInterface: TransformInfoInterface, paymentTransactionInterface: PaymentTransactionInterface): PaymentProcessorInterface
 
 }
-                
-            
+
+
 

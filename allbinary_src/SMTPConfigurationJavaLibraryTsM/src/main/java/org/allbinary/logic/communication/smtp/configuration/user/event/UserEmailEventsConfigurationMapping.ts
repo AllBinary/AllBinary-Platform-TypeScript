@@ -111,6 +111,6 @@ public constructor (userEmailEventsConfigurationInterface: UserEmailEventsConfig
 
 
 }
-                
-            
+
+
 

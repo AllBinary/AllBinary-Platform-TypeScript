@@ -198,6 +198,6 @@ this.jFileChooser1= jFileChooser1;
     private jFileChooser1: javax.swing.JFileChooser;
 
 }
-                
-            
+
+
 

@@ -71,6 +71,6 @@ export class MidletStrings
     public readonly COMMAND_ACTION: string = "commandAction";
 
 }
-                
-            
+
+
 

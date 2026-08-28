@@ -207,6 +207,6 @@ graphics.drawChars(this.levelString, 0, this.levelLength, x +this.adjustedLevelX
 
 
 }
-                
-            
+
+
 

@@ -259,6 +259,6 @@ stringBuffer!.append(WeaponProperties.RELOAD)!.appendlong(this.getReloadTime());
 
 
 }
-                
-            
+
+
 

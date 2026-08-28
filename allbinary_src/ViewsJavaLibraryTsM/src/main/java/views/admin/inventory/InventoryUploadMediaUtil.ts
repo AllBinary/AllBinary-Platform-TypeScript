@@ -459,6 +459,6 @@ this.itemInterface!.setLargeImage(newImageFileName);
 
 
 }
-                
-            
+
+
 

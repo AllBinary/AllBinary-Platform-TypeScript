@@ -220,6 +220,6 @@ graphics.drawString(this.developers[index]!, halfWidth -this.developersBeginWidt
 
 
 }
-                
-            
+
+
 

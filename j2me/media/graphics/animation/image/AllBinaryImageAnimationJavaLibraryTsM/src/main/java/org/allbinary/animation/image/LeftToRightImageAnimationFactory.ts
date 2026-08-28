@@ -101,6 +101,6 @@ public constructor (image: Image, sequenceArray: number[], dx: number, dy: numbe
 
 
 }
-                
-            
+
+
 

@@ -56,6 +56,6 @@ export interface UserFactoryInterface extends Serializable {
     getInstance(hashMap: HashMap<any, any>): UserInterface
 
 }
-                
-            
+
+
 

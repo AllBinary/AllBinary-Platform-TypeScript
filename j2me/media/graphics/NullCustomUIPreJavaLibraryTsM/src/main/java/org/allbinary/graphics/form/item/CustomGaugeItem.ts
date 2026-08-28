@@ -51,6 +51,6 @@ public constructor (label: string, maxValue: number, initialValue: number, backg
 
 
 }
-                
-            
+
+
 

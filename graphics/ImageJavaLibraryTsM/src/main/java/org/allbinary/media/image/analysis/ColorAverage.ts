@@ -150,6 +150,6 @@ this.avgBlue= avgBlue;
 
 
 }
-                
-            
+
+
 

@@ -59,6 +59,6 @@ export interface SpecialItemsEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

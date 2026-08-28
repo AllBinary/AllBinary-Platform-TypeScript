@@ -613,6 +613,6 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())
 
 
 }
-                
-            
+
+
 

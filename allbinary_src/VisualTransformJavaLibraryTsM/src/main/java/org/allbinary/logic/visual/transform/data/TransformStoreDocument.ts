@@ -156,6 +156,6 @@ this.getBaseNode()!.appendChild(searchRequest!.getParams()!.getParamsNode(this.g
 
 
 }
-                
-            
+
+
 

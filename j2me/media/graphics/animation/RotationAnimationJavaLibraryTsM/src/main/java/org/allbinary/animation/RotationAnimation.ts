@@ -215,6 +215,6 @@ this.setFrame(this.frameUtil!.getFrameForAngle(angle, Math.round(this.angleInfo!
 
 
 }
-                
-            
+
+
 

@@ -55,6 +55,6 @@ export interface LifeInterface {
     isAlive(): boolean
 
 }
-                
-            
+
+
 

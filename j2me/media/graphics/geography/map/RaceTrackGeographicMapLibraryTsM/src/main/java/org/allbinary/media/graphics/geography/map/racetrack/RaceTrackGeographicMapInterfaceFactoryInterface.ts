@@ -54,6 +54,6 @@ export interface RaceTrackGeographicMapInterfaceFactoryInterface {
     getTrackInstance(id: Integer): RaceTrackGeographicMap
 
 }
-                
-            
+
+
 

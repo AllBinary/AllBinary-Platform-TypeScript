@@ -153,6 +153,6 @@ this.surroundingCircularIndexUtil!.next();
 
 
 }
-                
-            
+
+
 

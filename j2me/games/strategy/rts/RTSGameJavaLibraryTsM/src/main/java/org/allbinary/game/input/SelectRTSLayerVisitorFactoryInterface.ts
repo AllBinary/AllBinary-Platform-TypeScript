@@ -48,6 +48,6 @@ export interface SelectRTSLayerVisitorFactoryInterface {
     create(selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput): Visitor
 
 }
-                
-            
+
+
 

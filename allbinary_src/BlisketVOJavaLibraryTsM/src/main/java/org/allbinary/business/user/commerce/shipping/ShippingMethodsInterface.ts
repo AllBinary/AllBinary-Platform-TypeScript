@@ -61,6 +61,6 @@ export interface ShippingMethodsInterface {
     getDefault(): ShippingInterface
 
 }
-                
-            
+
+
 

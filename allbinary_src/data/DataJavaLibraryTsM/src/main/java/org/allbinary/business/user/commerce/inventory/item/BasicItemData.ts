@@ -103,6 +103,6 @@ export class BasicItemData
     public static readonly SPECIALS: string = "BASICITEM_SPECIALS";
 
 }
-                
-            
+
+
 

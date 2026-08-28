@@ -67,6 +67,6 @@ private constructor (){
     public readonly ORIENTATION_TYPE: string = "Orientation Type";
 
 }
-                
-            
+
+
 

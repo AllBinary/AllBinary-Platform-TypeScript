@@ -54,6 +54,6 @@ export class ModifierOpenGLESImageProcessor extends OpenGLESImageProcessor {
 
 
 }
-                
-            
+
+
 

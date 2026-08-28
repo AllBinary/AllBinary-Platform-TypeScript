@@ -66,6 +66,6 @@ this.gameCanvas!.nonBotPaint(graphics);
 
 
 }
-                
-            
+
+
 

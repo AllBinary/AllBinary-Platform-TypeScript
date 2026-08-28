@@ -165,6 +165,6 @@ this.setVisible(false);
     private textJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

@@ -70,6 +70,6 @@ this.specialGameInputInterface!.strafeLeft();
 
 
 }
-                
-            
+
+
 

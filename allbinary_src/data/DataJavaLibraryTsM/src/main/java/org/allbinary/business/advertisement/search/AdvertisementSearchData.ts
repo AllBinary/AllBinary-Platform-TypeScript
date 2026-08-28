@@ -71,6 +71,6 @@ private constructor (){
     public readonly POPULARITY: string = "AFFILIATE_POPULARITY";
 
 }
-                
-            
+
+
 

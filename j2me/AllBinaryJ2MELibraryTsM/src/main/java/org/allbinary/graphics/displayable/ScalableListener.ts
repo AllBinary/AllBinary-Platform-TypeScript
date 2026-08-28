@@ -57,6 +57,6 @@ export interface ScalableListener {
     scale(ratio: number)
 
 }
-                
-            
+
+
 

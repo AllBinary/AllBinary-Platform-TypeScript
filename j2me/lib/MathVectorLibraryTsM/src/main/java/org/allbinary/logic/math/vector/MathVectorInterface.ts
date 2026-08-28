@@ -51,6 +51,6 @@ export interface MathVectorInterface {
     getResult(): BasicDecimal
 
 }
-                
-            
+
+
 

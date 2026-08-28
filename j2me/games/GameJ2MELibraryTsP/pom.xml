@@ -160,8 +160,6 @@
         <module>../../FullScreenJavaLibraryTsM</module>
         -->
 
-        <module>../../lib/Basic2DVectorLibraryTsM</module>
-
         <module>../../../physics/VelocityLibraryTsM</module>
 
         <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryTsM</module>

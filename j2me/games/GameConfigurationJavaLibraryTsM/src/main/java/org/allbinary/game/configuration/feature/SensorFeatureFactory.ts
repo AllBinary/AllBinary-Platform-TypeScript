@@ -96,6 +96,6 @@ private constructor (){
     public readonly ROLL: SensorFeature = new SensorFeature("Roll");
 
 }
-                
-            
+
+
 

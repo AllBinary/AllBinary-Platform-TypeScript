@@ -66,6 +66,6 @@ export class CreditCardTypeFactory
     public readonly AMERICANEXPRESS: CreditCardType = new CreditCardType("AMX");
 
 }
-                
-            
+
+
 

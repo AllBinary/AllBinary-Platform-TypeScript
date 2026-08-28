@@ -59,6 +59,6 @@ expect export class PreLogUtil
 public constructor ()
 
 }
-                
-            
+
+
 

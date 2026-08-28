@@ -87,6 +87,6 @@ export interface AdvertisementSearchInterface {
     setSearchParams(columnAndKeywordHashMap: HashMap<any, any>)
 
 }
-                
-            
+
+
 

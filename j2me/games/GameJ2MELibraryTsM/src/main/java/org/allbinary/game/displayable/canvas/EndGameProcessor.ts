@@ -157,6 +157,6 @@ this.gameCanvas!.setHighScoresPaintable(NullPaintable.getInstance());
 
 
 }
-                
-            
+
+
 

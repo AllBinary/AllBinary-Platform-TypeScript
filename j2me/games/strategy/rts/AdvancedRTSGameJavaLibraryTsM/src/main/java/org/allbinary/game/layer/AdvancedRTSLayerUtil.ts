@@ -88,6 +88,6 @@ hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getAt
 
 
 }
-                
-            
+
+
 

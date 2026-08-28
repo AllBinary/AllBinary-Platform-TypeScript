@@ -51,6 +51,6 @@ export interface CompleteMotionGestureListenerInterface {
     onMotionGestureCompleted(list: BasicArrayList)
 
 }
-                
-            
+
+
 

@@ -83,8 +83,8 @@ public constructor (bitmapConfig: any = {}){
 
 
 }
-                
-            
+
+
     public readonly ARGB_8888 = new this.Config(NullUtil.getInstance()!.NULL_OBJECT);
 
     public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
@@ -120,6 +120,6 @@ public constructor (bitmapConfig: any = {}){
 
 
 }
-                
-            
+
+
 

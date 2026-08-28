@@ -200,6 +200,6 @@ textItemArray[index]= this.list.objectArray[index]! as ABCustomItem;
 
 
 }
-                
-            
+
+
 

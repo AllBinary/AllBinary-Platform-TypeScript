@@ -121,6 +121,6 @@ this.getCanvas()!.getCustomCommandListener()!.commandAction(GameCommandsFactory.
 
 
 }
-                
-            
+
+
 

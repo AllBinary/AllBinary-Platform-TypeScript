@@ -37,6 +37,6 @@ export interface OpenGLSurfaceChangedInterface {
     set(gl: GL)
 
 }
-                
-            
+
+
 

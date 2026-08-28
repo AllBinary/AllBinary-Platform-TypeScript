@@ -90,6 +90,6 @@ this.initUpdatePaintable= hudPaintable;
 
 
 }
-                
-            
+
+
 

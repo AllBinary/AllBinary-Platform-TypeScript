@@ -161,6 +161,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e);
 
 
 }
-                
-            
+
+
 

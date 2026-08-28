@@ -47,6 +47,6 @@ export class NullRecordStore extends RecordStore {
     public static NULL_RECORD_STORE: NullRecordStore = new NullRecordStore();
 
 }
-                
-            
+
+
 

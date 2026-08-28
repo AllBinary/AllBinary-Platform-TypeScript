@@ -93,6 +93,6 @@ export interface OrderHistoryEntityInterface extends BasicDataTableInterface {
     update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
 
 }
-                
-            
+
+
 

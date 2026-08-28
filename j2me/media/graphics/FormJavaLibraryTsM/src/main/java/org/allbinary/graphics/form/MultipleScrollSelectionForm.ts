@@ -124,8 +124,8 @@ MultipleScrollSelectionFormHorizontalPaintable = class extends ItemIndexPaintabl
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 MultipleScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable {
         
@@ -155,8 +155,8 @@ MultipleScrollSelectionFormVerticalPaintable = class extends ItemIndexPaintable 
 
 
 }
-                
-            
+
+
     private readonly formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
 
     private formTypeItemIndexPaintable: ItemIndexPaintable = ItemIndexPaintable.getInstance()!;
@@ -352,6 +352,6 @@ PreLogUtil.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT);
 
 
 }
-                
-            
+
+
 

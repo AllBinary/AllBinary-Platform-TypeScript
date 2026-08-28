@@ -63,6 +63,6 @@ export interface ArtificialIntelligenceInterface extends IdentifierInterface {
     processAI(layerManager: AllBinaryLayerManager)
 
 }
-                
-            
+
+
 

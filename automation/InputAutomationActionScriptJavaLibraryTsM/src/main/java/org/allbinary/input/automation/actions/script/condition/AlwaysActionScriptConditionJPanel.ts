@@ -244,6 +244,6 @@ this.getAlwaysActionJDialog()!.setVisible(true);
     private titleJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

@@ -95,6 +95,6 @@ private constructor (){
     public readonly PARTIAL: string = "PARTIAL_" +this.NAME;
 
 }
-                
-            
+
+
 

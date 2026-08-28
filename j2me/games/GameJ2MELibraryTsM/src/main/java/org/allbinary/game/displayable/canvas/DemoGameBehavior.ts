@@ -161,6 +161,6 @@ this.logUtil!.putF(GameTypeFactory.getInstance()!.BOT.toString(), this, commonSt
 
 
 }
-                
-            
+
+
 

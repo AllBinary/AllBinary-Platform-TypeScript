@@ -49,6 +49,6 @@ export interface CategoryModifierTreeInterface {
     delete(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface)
 
 }
-                
-            
+
+
 

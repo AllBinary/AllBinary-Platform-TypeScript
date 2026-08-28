@@ -69,6 +69,6 @@ private constructor (){
     public readonly END: string = "TIME_END";
 
 }
-                
-            
+
+
 

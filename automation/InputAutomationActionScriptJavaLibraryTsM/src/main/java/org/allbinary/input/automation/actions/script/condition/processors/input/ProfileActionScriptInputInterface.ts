@@ -57,6 +57,6 @@ export interface ProfileActionScriptInputInterface extends ProfileActionScriptPr
     setTime(time: number)
 
 }
-                
-            
+
+
 

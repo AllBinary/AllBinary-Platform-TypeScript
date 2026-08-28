@@ -85,6 +85,6 @@ export interface RTSPlayerLayerInterface extends GameNotificationHudCompositeInt
     implmentsArtificialIntelligenceCompositeInterface(): boolean
 
 }
-                
-            
+
+
 

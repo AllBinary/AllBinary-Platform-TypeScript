@@ -210,6 +210,6 @@ graphics.drawImage(this.imageArray[this.circularIndexUtil!.getIndex()]!, x, y, t
 
 
 }
-                
-            
+
+
 

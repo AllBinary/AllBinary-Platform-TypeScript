@@ -65,6 +65,6 @@ public constructor (layer: AllBinaryLayer){
 
 
 }
-                
-            
+
+
 

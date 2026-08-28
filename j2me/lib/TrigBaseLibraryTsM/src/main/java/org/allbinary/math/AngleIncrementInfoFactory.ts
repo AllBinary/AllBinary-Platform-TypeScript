@@ -90,6 +90,6 @@ this.angleIncrementInfo[halfAngleIncrement]= angleIncrementInfoCanBeNull;
 
 
 }
-                
-            
+
+
 

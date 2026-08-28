@@ -111,6 +111,6 @@ this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight
 
 
 }
-                
-            
+
+
 

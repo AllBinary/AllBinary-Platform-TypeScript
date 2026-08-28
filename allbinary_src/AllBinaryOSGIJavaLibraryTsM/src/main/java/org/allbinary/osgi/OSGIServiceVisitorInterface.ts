@@ -48,6 +48,6 @@ export interface OSGIServiceVisitorInterface extends VisitorInterface {
     visit(osgiServiceInterface: OSGIServiceInterface): Boolean
 
 }
-                
-            
+
+
 

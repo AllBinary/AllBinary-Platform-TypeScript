@@ -266,6 +266,6 @@ graphics.drawImage(this.imageToShow, x, y, this.anchor);
 
 
 }
-                
-            
+
+
 

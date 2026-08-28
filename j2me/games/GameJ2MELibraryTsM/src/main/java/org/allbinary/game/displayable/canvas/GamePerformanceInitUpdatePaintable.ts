@@ -154,6 +154,6 @@ graphics.drawChars(charArray2, 0, size3, size2 *this.defaultStringWidth, this.yA
 
 
 }
-                
-            
+
+
 

@@ -64,6 +64,6 @@ add(this.jColorChooser1, java.awt.BorderLayout.CENTER);
     private jColorChooser1: javax.swing.JColorChooser;
 
 }
-                
-            
+
+
 

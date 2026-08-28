@@ -77,6 +77,6 @@ public constructor (imageArray: Image[]){
 
 
 }
-                
-            
+
+
 

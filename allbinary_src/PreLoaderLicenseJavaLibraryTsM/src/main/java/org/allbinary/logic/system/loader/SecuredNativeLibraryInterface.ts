@@ -57,6 +57,6 @@ export interface SecuredNativeLibraryInterface {
     getName(): string
 
 }
-                
-            
+
+
 

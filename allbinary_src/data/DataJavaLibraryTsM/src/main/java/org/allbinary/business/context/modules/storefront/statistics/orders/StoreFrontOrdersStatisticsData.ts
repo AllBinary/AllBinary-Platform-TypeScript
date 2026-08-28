@@ -65,6 +65,6 @@ private constructor (){
     public readonly NAME: string = "STOREFRONT_ORDERS_STATISTICS_NAME";
 
 }
-                
-            
+
+
 

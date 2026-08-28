@@ -60,6 +60,6 @@ export interface DisplayChangeEventListener extends EventListenerInterface {
     onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent)
 
 }
-                
-            
+
+
 

@@ -46,6 +46,6 @@ export interface ImageProcessorInputCompositeInterface {
     setImageProcessorInput(imageProcessorInput: ImageProcessorInput)
 
 }
-                
-            
+
+
 

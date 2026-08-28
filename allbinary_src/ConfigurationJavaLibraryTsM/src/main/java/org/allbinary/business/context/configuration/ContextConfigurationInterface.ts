@@ -49,6 +49,6 @@ export interface ContextConfigurationInterface {
     setEmailServerConfigurationInterface(emailServerConfigurationInterface: EmailServerConfigurationInterface)
 
 }
-                
-            
+
+
 

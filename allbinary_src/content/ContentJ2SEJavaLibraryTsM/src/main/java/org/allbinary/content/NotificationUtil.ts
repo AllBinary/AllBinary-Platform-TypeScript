@@ -104,6 +104,6 @@ this.notificationManager!.notify(TsUtil.getInstance()!.hashCode(command), notifi
 
 
 }
-                
-            
+
+
 

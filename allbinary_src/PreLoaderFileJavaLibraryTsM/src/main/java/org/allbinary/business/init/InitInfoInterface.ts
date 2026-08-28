@@ -69,6 +69,6 @@ export interface InitInfoInterface {
     isMainPathValid(value: AbPath): boolean
 
 }
-                
-            
+
+
 

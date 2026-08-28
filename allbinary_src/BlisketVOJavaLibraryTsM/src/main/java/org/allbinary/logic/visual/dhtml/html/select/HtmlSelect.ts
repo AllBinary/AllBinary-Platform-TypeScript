@@ -296,6 +296,6 @@ result += this.after;
 
 
 }
-                
-            
+
+
 

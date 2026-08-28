@@ -66,6 +66,6 @@ export interface KeyboardActionScriptInputInterface extends ProfileActionScriptI
     log()
 
 }
-                
-            
+
+
 

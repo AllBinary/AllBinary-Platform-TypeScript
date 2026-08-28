@@ -74,6 +74,6 @@ this.basicColor= basicColor;
 
 
 }
-                
-            
+
+
 

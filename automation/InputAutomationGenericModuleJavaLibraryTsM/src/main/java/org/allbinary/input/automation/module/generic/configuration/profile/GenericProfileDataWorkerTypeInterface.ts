@@ -61,6 +61,6 @@ export interface GenericProfileDataWorkerTypeInterface {
     toXmlNode(document: Document): Node
 
 }
-                
-            
+
+
 

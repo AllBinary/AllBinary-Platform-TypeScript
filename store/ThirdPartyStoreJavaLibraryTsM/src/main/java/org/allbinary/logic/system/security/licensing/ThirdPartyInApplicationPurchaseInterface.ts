@@ -66,6 +66,6 @@ export interface ThirdPartyInApplicationPurchaseInterface {
     isEnabled(): boolean
 
 }
-                
-            
+
+
 

@@ -65,6 +65,6 @@ export class BasicGroupItemData
     public static readonly ITEM_TEN: string = "BASICGROUPITEM_TEN";
 
 }
-                
-            
+
+
 

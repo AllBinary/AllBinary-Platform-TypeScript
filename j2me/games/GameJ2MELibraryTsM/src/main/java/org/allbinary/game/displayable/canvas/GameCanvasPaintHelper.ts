@@ -70,6 +70,6 @@ this.gameCanvas!.draw(graphics);
 
 
 }
-                
-            
+
+
 

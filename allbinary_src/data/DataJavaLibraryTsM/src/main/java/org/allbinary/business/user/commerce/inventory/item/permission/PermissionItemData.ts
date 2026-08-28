@@ -57,6 +57,6 @@ export class PermissionItemData
     public static readonly REMOTE_ADDR: string = "PERMISSIONSITEM_REMOTE_ADDR";
 
 }
-                
-            
+
+
 

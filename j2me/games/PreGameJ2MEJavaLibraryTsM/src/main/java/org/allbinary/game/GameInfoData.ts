@@ -75,6 +75,6 @@ private constructor (){
     public readonly SOFTWARE_INFORMATION: string = "SOFTWARE_INFORMATION";
 
 }
-                
-            
+
+
 

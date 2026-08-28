@@ -69,6 +69,6 @@ private constructor (){
     public readonly TOTALVALUE: string = "STOREFRONT_INVENTORY_STATISTICS_TOTAL_VALUE";
 
 }
-                
-            
+
+
 

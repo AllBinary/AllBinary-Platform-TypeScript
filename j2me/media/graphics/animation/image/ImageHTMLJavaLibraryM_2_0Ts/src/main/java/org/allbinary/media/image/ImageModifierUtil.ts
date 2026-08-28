@@ -348,6 +348,6 @@ this.alphaArray[index]= true;
 
 
 }
-                
-            
+
+
 

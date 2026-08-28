@@ -61,6 +61,6 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
 
 
 }
-                
-            
+
+
 

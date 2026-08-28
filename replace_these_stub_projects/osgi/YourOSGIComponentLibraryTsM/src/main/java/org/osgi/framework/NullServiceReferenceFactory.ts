@@ -60,6 +60,6 @@ export class NullServiceReferenceFactory
     public NULL_SERVICE_REFERENCE: NullServiceReference = new NullServiceReference();
 
 }
-                
-            
+
+
 

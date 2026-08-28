@@ -257,6 +257,6 @@ canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -o
 
 
 }
-                
-            
+
+
 

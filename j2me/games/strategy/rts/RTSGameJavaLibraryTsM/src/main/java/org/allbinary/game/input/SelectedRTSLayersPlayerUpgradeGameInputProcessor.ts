@@ -70,6 +70,6 @@ this.selectedRTSLayersPlayerGameInput!.upgrade();
 
 
 }
-                
-            
+
+
 

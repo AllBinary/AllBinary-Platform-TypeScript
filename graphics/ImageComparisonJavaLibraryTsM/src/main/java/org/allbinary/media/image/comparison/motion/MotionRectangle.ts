@@ -117,6 +117,6 @@ motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vect
 
 
 }
-                
-            
+
+
 

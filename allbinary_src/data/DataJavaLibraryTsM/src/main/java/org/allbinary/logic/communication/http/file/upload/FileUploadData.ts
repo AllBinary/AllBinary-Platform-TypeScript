@@ -63,6 +63,6 @@ export class FileUploadData
     public readonly FILE_DATA: string = "FILE_UPLOAD_FILE_DATA";
 
 }
-                
-            
+
+
 

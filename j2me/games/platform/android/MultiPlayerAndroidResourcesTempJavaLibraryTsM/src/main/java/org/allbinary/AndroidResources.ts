@@ -57,6 +57,6 @@ export class AndroidResources
     public string: R.Companion.string = new R.Companion.string();
 
 }
-                
-            
+
+
 

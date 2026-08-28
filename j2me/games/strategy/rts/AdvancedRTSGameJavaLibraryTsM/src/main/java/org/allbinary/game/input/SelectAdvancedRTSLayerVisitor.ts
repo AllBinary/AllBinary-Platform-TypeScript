@@ -147,6 +147,6 @@ assignWaypointsUtil!.set(unitLayer, rtsGameLayer);
 
 
 }
-                
-            
+
+
 

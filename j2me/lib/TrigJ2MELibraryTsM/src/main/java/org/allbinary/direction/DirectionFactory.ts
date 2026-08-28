@@ -124,6 +124,6 @@ this.DOWN_RIGHT= new Direction("DOWN RIGHT", stringBuffer!.append(this.DOWN.getO
 
 
 }
-                
-            
+
+
 

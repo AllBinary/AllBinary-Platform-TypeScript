@@ -83,6 +83,6 @@ export interface CategoryPropertiesInterface extends TableMappingInterface, Vali
     isRealRoot(): boolean
 
 }
-                
-            
+
+
 

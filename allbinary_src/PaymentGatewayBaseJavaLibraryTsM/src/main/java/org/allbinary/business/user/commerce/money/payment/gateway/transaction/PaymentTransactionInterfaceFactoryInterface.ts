@@ -80,6 +80,6 @@ export interface PaymentTransactionInterfaceFactoryInterface {
     getInquiryTransaction(tenderType: TenderType): PaymentTransactionInterface
 
 }
-                
-            
+
+
 

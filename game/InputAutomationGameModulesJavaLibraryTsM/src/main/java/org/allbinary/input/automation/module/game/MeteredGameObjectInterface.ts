@@ -49,6 +49,6 @@ export interface MeteredGameObjectInterface {
     isDropping(): boolean
 
 }
-                
-            
+
+
 

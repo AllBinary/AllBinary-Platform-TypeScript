@@ -124,6 +124,6 @@ this.logUtil!.putF("Finish", this, "getScreenAsBufferedImages");
 
 
 }
-                
-            
+
+
 

@@ -82,6 +82,6 @@ export class PickedUpLayerTypeFactory
     public POINTS: PickedUpLayerType = new PickedUpLayerType("Points");
 
 }
-                
-            
+
+
 

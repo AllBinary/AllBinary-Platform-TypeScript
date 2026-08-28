@@ -61,6 +61,6 @@ export interface UpKeyEventListenerInterface extends EventListenerInterface {
     onUpKeyEvent(keyAsInteger: Integer)
 
 }
-                
-            
+
+
 

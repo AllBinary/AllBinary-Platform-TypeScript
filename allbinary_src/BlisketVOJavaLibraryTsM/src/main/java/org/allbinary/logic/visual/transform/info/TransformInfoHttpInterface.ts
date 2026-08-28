@@ -60,6 +60,6 @@ export interface TransformInfoHttpInterface extends TransformInfoInterface {
     getPropertiesHashMap(): HashMap<any, any>
 
 }
-                
-            
+
+
 

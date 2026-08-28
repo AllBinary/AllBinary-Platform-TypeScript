@@ -39,6 +39,6 @@ export interface Constants {
     //Interfaces do not have static fields - public static readonly BUNDLE_SYMBOLICNAME: string = StringUtil.getInstance()!.EMPTY_STRING;
 
 }
-                
-            
+
+
 

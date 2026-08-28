@@ -161,6 +161,6 @@ export class UserRoleFactory
     public readonly VIEWEDITOR: UserRole = new UserRoleB(this.basicUserRoleFactory!.VIEWEDITOR, new ViewEditorWebStoreAdminUserFactory());
 
 }
-                
-            
+
+
 

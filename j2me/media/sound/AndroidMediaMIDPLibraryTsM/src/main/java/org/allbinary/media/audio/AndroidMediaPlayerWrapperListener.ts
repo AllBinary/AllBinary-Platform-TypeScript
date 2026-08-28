@@ -117,8 +117,8 @@ MediaPlayerOnBufferingUpdateListener = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 MediaPlayerOnPreparedListener = class
             extends Object
@@ -130,8 +130,8 @@ MediaPlayerOnPreparedListener = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 MediaPlayerOnErrorListener = class
             extends Object
@@ -149,8 +149,8 @@ MediaPlayerOnErrorListener = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 MediaPlayerOnCompletionListener = class
             extends Object
@@ -162,8 +162,8 @@ MediaPlayerOnCompletionListener = class
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 AndroidMediaPlayerOnBufferingUpdateListener = class extends this.MediaPlayerOnBufferingUpdateListener {
         
@@ -192,8 +192,8 @@ this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(Player
 
 
 }
-                
-            
+
+
     private mOnBufferingUpdateListener: MediaPlayer.OnBufferingUpdateListener = new this.AndroidMediaPlayerOnBufferingUpdateListener(this);
 
 //inner= member=true isStatic=
@@ -227,8 +227,8 @@ this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(Player
 
 
 }
-                
-            
+
+
     private mOnPreparedListener: MediaPlayer.OnPreparedListener = new this.AndroidMediaPlayerOnPreparedListener(this);
 
 //inner= member=true isStatic=
@@ -265,8 +265,8 @@ this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(Player
 
 
 }
-                
-            
+
+
     private mOnErrorListener: MediaPlayer.OnErrorListener = new this.AndroidMediaPlayerOnErrorListener(this);
 
 //inner= member=true isStatic=
@@ -300,11 +300,11 @@ this.androidMediaPlayerWrapperListener!.androidMediaPlayerWrapper!.update(Player
 
 
 }
-                
-            
+
+
     private mOnCompletionListener: MediaPlayer.OnCompletionListener = new this.AndroidMediaPlayerOnCompletionListener(this);
 
 }
-                
-            
+
+
 

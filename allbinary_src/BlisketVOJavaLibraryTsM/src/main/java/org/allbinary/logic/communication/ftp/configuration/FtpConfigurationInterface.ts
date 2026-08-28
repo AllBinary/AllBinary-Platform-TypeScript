@@ -57,6 +57,6 @@ export interface FtpConfigurationInterface {
     setPassword(value: string)
 
 }
-                
-            
+
+
 

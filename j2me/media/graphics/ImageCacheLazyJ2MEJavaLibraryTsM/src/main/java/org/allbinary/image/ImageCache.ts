@@ -216,8 +216,8 @@ concurrentImageLoadingProcessor!.runTask();
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 NotHTMLEndProcessor = class extends Processor {
         
@@ -234,8 +234,8 @@ progressCanvas!.endIfPaintedSinceStart();
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 HTMLEndProcessor = class extends Processor {
         
@@ -279,8 +279,8 @@ endProcessor= new this.NotHTMLEndProcessor();
 
 
 }
-                
-            
+
+
 //inner= member=true isStatic=
 FirstProcessor = class extends Processor {
         
@@ -294,8 +294,8 @@ ImageCache.prototype.firstProcess();
 
 
 }
-                
-            
+
+
     private processor: Processor = new this.FirstProcessor();
 
     private endProcessor: Processor = Processor.getInstance()!;
@@ -1208,6 +1208,6 @@ this.processor.process();
 
 
 }
-                
-            
+
+
 

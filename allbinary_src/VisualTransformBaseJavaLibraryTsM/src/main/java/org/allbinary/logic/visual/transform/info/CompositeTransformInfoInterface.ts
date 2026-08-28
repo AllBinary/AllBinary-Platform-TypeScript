@@ -48,6 +48,6 @@ export interface CompositeTransformInfoInterface {
     getTransformInfoInterface(): TransformInfoInterface
 
 }
-                
-            
+
+
 

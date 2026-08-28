@@ -51,6 +51,6 @@ export interface StateControlledInterface {
     setState(state: number)
 
 }
-                
-            
+
+
 

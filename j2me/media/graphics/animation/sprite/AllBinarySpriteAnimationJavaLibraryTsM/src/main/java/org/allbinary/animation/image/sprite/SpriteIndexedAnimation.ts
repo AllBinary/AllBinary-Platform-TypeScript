@@ -325,6 +325,6 @@ this.sprite.setFrame(frame);
 
 
 }
-                
-            
+
+
 

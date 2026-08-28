@@ -186,6 +186,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     private scriptItemJPanel: javax.swing.JPanel;
 
 }
-                
-            
+
+
 

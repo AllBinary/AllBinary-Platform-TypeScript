@@ -59,6 +59,6 @@ export interface AffiliateSalesEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

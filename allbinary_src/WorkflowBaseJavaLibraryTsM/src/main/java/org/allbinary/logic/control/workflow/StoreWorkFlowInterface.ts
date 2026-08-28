@@ -48,6 +48,6 @@ export interface StoreWorkFlowInterface extends WorkFlowInterface {
     getStoreName(): string
 
 }
-                
-            
+
+
 

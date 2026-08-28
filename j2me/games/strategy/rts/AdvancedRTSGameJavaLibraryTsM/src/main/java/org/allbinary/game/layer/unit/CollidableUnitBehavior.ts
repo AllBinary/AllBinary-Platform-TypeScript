@@ -221,8 +221,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 
 
 }
-                
-            
+
+
     private readonly simpleSteeringVisitor = new this.SimpleSteeringVisitor();
 
                 //@Throws(Exception.constructor)
@@ -454,6 +454,6 @@ unitLayer!.setPosition(x, y, unitLayer!.getZP());
 
 
 }
-                
-            
+
+
 

@@ -127,6 +127,6 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
 
 
 }
-                
-            
+
+
 

@@ -89,6 +89,6 @@ export class RTSGameStrings
     public readonly DRAGGABLE: string = "Draggable";
 
 }
-                
-            
+
+
 

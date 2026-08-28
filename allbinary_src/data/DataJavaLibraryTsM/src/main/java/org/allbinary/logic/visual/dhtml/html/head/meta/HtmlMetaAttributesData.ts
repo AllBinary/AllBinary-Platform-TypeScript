@@ -67,6 +67,6 @@ private constructor (){
     public HTTP_EQUIV_VALUE: string = "http-equiv";
 
 }
-                
-            
+
+
 

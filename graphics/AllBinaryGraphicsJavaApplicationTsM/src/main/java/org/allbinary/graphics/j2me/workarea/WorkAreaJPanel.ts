@@ -952,6 +952,6 @@ Thread.sleep(250);
     private innerJPanel: javax.swing.JPanel;
 
 }
-                
-            
+
+
 

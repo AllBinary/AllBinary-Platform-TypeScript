@@ -306,6 +306,6 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
 
 
 }
-                
-            
+
+
 

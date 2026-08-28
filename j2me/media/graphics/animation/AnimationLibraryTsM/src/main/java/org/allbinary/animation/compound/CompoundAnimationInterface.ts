@@ -57,6 +57,6 @@ export interface CompoundAnimationInterface extends AnimationInterface {
     getCurrentAnimation(): IndexedAnimation
 
 }
-                
-            
+
+
 

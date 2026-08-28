@@ -71,6 +71,6 @@ export interface StoreFrontsEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

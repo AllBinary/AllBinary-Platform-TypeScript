@@ -496,6 +496,6 @@ this.getColorAtActionJDialog()!.setVisible(true);
     private yJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

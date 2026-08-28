@@ -57,6 +57,6 @@ export interface ImageActionScriptOutputInterface extends ProfileActionScriptOut
     log()
 
 }
-                
-            
+
+
 

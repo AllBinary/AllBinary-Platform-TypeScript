@@ -47,6 +47,6 @@ export class PlayersSingletonFactory
     public static total: number= 0;
 
 }
-                
-            
+
+
 

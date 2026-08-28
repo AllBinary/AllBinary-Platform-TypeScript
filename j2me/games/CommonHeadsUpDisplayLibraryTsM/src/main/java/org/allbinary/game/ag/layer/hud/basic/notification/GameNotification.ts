@@ -124,6 +124,6 @@ this.colorList!.clear();
 
 
 }
-                
-            
+
+
 

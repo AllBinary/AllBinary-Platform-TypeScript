@@ -79,6 +79,6 @@ activity.getWindow()!.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, Windo
 
 
 }
-                
-            
+
+
 

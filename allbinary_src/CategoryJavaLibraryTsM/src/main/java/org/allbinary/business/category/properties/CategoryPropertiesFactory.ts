@@ -130,6 +130,6 @@ public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
 
 }
-                
-            
+
+
 

@@ -65,6 +65,6 @@ private constructor (){
     public readonly VALUE: string = "background-color";
 
 }
-                
-            
+
+
 

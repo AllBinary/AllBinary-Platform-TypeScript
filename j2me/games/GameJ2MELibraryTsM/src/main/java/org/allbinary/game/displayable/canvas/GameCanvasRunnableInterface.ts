@@ -113,6 +113,6 @@ export interface GameCanvasRunnableInterface extends RunnableInterface, Paintabl
     getType(): number
 
 }
-                
-            
+
+
 

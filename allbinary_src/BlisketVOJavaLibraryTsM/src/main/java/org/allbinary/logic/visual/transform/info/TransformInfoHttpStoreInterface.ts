@@ -46,6 +46,6 @@ export interface TransformInfoHttpStoreInterface extends TransformInfoHttpInterf
     getStoreName(): string
 
 }
-                
-            
+
+
 

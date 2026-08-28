@@ -154,6 +154,6 @@ super.paintString(graphics, this.positionString);
 
 
 }
-                
-            
+
+
 

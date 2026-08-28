@@ -47,6 +47,6 @@ export interface AnimationListener extends EventListenerInterface {
     onEnd()
 
 }
-                
-            
+
+
 

@@ -206,6 +206,6 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
 
 
 }
-                
-            
+
+
 

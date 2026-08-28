@@ -73,6 +73,6 @@ export class ABToGBUtil
     public allBinaryGameLayerManager: AllBinaryGameLayerManager = AllBinaryGameLayerManager.getNullInstance()!;
 
 }
-                
-            
+
+
 

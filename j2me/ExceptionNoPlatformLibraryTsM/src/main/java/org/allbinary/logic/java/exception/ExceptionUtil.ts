@@ -61,6 +61,6 @@ expect export class ExceptionUtil
     public getStackTrace(e: Throwable): string
 
 }
-                
-            
+
+
 

@@ -82,6 +82,6 @@ geographicMapCellTypeArray[index]= cellType;
 
 
 }
-                
-            
+
+
 

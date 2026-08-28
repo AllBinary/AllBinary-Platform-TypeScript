@@ -107,6 +107,6 @@ this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManage
 
 
 }
-                
-            
+
+
 

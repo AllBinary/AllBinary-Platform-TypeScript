@@ -74,6 +74,6 @@ export class LayerPlacementTypeFactory
     public readonly RIGHT: LayerPlacementType = new LayerPlacementType(DirectionFactory.getInstance()!.RIGHT.getValue());
 
 }
-                
-            
+
+
 

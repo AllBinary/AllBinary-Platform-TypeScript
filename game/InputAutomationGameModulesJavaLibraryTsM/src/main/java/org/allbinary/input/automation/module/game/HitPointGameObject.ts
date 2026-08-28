@@ -199,6 +199,6 @@ stringBuffer!.appendboolean(this.isCloseDeath());
 
 
 }
-                
-            
+
+
 

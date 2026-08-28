@@ -78,6 +78,6 @@ export class ShaderInitializer
 
 
 }
-                
-            
+
+
 

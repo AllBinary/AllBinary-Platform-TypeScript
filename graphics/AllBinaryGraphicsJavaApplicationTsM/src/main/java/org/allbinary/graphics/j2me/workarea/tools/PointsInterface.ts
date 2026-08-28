@@ -49,6 +49,6 @@ export interface PointsInterface {
     addPoints(vector: BasicArrayList)
 
 }
-                
-            
+
+
 

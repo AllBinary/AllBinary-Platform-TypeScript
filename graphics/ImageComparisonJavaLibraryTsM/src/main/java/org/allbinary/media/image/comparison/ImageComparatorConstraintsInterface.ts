@@ -71,6 +71,6 @@ export interface ImageComparatorConstraintsInterface {
     isFrameAllowed(frame: number): boolean
 
 }
-                
-            
+
+
 

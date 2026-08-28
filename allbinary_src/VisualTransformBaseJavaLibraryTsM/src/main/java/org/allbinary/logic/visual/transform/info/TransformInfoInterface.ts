@@ -123,6 +123,6 @@ export interface TransformInfoInterface extends TableMappingInterface {
     isChild(): boolean
 
 }
-                
-            
+
+
 

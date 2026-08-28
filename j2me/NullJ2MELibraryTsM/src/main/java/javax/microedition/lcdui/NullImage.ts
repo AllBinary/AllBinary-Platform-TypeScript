@@ -50,6 +50,6 @@ export class NullImage
     public static readonly NULL_IMAGE: Image = new Image();
 
 }
-                
-            
+
+
 

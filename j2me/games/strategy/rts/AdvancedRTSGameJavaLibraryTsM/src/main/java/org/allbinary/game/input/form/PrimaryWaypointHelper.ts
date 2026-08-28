@@ -93,6 +93,6 @@ this.waypointLayer= waypointLayer;
 
 
 }
-                
-            
+
+
 

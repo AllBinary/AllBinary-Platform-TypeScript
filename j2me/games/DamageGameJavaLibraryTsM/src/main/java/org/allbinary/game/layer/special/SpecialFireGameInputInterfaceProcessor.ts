@@ -70,6 +70,6 @@ this.specialGameInputInterface!.fire(allbinaryLayerManager, gameKeyEvent);
 
 
 }
-                
-            
+
+
 

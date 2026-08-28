@@ -60,6 +60,6 @@ export interface ViewPositionEventListenerInterface extends EventListenerInterfa
     onChangeEvent(layerManagerEvent: ViewPositionEvent)
 
 }
-                
-            
+
+
 

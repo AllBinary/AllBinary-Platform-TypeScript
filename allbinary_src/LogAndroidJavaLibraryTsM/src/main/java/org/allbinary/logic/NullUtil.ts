@@ -100,6 +100,6 @@
     /*actual*/ public readonly NULL_MAP: HashMap<any, any> = new HashMap<any, any>();
 
 }
-                
-            
+
+
 

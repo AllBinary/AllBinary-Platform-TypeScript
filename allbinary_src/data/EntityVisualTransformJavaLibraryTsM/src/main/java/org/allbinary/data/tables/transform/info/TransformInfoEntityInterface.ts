@@ -81,6 +81,6 @@ export interface TransformInfoEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

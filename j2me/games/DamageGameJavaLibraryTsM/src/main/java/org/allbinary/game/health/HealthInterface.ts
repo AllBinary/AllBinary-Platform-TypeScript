@@ -58,6 +58,6 @@ export interface HealthInterface {
     addListener(healthListenerInterface: HealthListenerInterface)
 
 }
-                
-            
+
+
 

@@ -43,6 +43,6 @@ export interface AdvertisementCategoryInterface {
     toString(): string
 
 }
-                
-            
+
+
 

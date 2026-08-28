@@ -112,6 +112,6 @@ images[index]= ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheF
 
 
 }
-                
-            
+
+
 

@@ -57,6 +57,6 @@ export interface TestInputInterface extends PaintableInterface {
     strafeRight()
 
 }
-                
-            
+
+
 

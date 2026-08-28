@@ -55,6 +55,6 @@ export interface AdminConfigurationInterface {
     setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface)
 
 }
-                
-            
+
+
 

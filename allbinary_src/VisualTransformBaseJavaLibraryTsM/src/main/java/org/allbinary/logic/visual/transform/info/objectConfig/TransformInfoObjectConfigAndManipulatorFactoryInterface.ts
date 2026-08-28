@@ -72,6 +72,6 @@ export interface TransformInfoObjectConfigAndManipulatorFactoryInterface {
     getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface
 
 }
-                
-            
+
+
 

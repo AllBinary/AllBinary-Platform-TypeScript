@@ -61,6 +61,6 @@ export interface StoreFrontOrdersHistoryStatisticsInterface extends TableMapping
     getTotal(): Money
 
 }
-                
-            
+
+
 

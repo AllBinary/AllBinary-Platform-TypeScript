@@ -224,6 +224,6 @@ result += this.after;
 
 
 }
-                
-            
+
+
 

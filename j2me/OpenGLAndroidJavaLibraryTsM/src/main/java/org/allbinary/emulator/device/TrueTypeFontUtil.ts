@@ -562,6 +562,6 @@ this._characterWidth[0]= (fontSize>>1) -2;
 
 
 }
-                
-            
+
+
 

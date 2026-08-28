@@ -51,6 +51,6 @@ export interface PaymentGatewayDomNodeFactoryInterface {
     getInstance(paymentGatewayInterface: PaymentGatewayInterface): DomNodeInterface
 
 }
-                
-            
+
+
 

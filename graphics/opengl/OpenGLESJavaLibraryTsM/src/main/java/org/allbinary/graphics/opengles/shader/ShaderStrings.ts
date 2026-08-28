@@ -65,6 +65,6 @@ export class ShaderStrings
     public readonly UNIFORM_ATTRIBUTE_HANDLE: string = "Uniform Attribute Handle: ";
 
 }
-                
-            
+
+
 

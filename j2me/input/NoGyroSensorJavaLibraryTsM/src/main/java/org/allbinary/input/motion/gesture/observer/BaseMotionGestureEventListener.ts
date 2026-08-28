@@ -58,6 +58,6 @@ export interface BaseMotionGestureEventListener extends EventListenerInterface {
     onScrolledMotionGestureEvent(motionGestureEvent: MotionGestureEvent)
 
 }
-                
-            
+
+
 

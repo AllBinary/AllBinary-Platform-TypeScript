@@ -98,6 +98,6 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]!.removeAllListeners()
 
 
 }
-                
-            
+
+
 

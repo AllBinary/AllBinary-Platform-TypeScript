@@ -69,6 +69,6 @@ export class RemoteHighScoresData
     public GAME_CONFIGURATION: string = "GAME_CONFIGURATION";
 
 }
-                
-            
+
+
 

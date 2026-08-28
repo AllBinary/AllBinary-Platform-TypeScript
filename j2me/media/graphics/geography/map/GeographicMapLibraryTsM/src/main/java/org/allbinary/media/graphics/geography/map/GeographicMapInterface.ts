@@ -99,6 +99,6 @@ export interface GeographicMapInterface {
     getBackgroundBasicColor(): BasicColor
 
 }
-                
-            
+
+
 

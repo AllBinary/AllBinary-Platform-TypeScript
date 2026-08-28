@@ -98,6 +98,6 @@ export class MediaDataFactory
     public readonly WMF: MediaData = new MediaData("wmf");
 
 }
-                
-            
+
+
 

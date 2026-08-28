@@ -89,6 +89,6 @@ buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent);
 
 
 }
-                
-            
+
+
 

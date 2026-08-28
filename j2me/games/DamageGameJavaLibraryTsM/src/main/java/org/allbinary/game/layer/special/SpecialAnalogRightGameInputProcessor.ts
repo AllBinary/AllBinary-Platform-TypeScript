@@ -70,6 +70,6 @@ this.collidableDestroyableDamageableLayer!.rightAnalog(xAnalogValue);
 
 
 }
-                
-            
+
+
 

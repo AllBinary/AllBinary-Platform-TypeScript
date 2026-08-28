@@ -362,6 +362,6 @@ node.appendChild(this.title.toXmlNode(document));
 
 
 }
-                
-            
+
+
 

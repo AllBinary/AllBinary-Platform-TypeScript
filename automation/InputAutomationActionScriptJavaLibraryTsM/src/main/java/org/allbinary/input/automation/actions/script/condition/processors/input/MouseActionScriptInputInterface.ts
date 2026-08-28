@@ -57,6 +57,6 @@ export interface MouseActionScriptInputInterface extends ProfileActionScriptInpu
     log()
 
 }
-                
-            
+
+
 

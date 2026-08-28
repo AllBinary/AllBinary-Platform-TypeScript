@@ -46,6 +46,6 @@ export interface BasicCompositeEventHandlerInterface {
     setEventHandler(basicEventHandlerInterface: BasicEventHandlerInterface)
 
 }
-                
-            
+
+
 

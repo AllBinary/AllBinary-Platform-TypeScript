@@ -59,6 +59,6 @@ export class PathData
     public readonly OFFSET: number = 400;
 
 }
-                
-            
+
+
 

@@ -166,6 +166,6 @@ this.animationInterface!.paintXY(graphics, this.xArray[index]!, this.getY());
 
 
 }
-                
-            
+
+
 

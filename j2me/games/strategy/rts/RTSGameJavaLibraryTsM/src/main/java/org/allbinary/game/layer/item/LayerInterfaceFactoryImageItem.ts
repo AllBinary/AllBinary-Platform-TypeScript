@@ -112,6 +112,6 @@ this.animationArray[index]!.paintXY(graphics, x, y);
 
 
 }
-                
-            
+
+
 

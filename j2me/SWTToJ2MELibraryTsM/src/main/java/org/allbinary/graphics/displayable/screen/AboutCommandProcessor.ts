@@ -75,6 +75,6 @@ midletCommandListener!.commandAction(command, canvas);
 
 
 }
-                
-            
+
+
 

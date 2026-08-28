@@ -310,6 +310,6 @@ graphics.drawString(this.getName(), this.textX, this.y, 0);
 
 
 }
-                
-            
+
+
 

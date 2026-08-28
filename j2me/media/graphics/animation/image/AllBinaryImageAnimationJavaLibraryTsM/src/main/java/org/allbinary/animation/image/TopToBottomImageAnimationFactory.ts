@@ -81,6 +81,6 @@ public constructor (image: Image, sequenceArray: number[], animationBehaviorFact
 
 
 }
-                
-            
+
+
 

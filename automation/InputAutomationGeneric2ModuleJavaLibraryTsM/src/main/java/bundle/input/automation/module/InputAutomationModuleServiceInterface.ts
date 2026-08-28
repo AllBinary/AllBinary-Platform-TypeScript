@@ -51,6 +51,6 @@ export interface InputAutomationModuleServiceInterface extends OSGIServiceInterf
     getInputAutomationModuleInterfaceArray(): InputAutomationModuleFactoryInterface[]
 
 }
-                
-            
+
+
 

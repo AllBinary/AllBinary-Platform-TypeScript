@@ -57,6 +57,6 @@ export interface PaintableInterface {
     paintThreed(graphics: Graphics)
 
 }
-                
-            
+
+
 

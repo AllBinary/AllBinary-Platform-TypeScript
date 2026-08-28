@@ -273,6 +273,6 @@ this.geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as 
 
 
 }
-                
-            
+
+
 

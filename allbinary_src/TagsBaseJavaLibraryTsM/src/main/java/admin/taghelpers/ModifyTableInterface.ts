@@ -55,6 +55,6 @@ export interface ModifyTableInterface {
     update(): string
 
 }
-                
-            
+
+
 

@@ -1038,6 +1038,6 @@ export interface GL10 extends GL {
     glPolygonMode(i: number, i1: number)
 
 }
-                
-            
+
+
 

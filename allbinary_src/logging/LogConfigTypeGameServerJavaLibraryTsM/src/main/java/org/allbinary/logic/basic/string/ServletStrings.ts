@@ -63,6 +63,6 @@ export class ServletStrings
     public readonly REQUEST_EXCEPTION: string = "Request Failed";
 
 }
-                
-            
+
+
 

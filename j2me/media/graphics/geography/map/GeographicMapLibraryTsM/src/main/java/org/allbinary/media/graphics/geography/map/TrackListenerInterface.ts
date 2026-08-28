@@ -47,6 +47,6 @@ export interface TrackListenerInterface {
     finished(layerInterface: AllBinaryLayer)
 
 }
-                
-            
+
+
 

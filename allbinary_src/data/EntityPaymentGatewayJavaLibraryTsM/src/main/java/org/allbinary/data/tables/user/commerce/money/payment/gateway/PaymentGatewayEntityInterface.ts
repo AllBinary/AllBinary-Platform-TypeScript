@@ -67,6 +67,6 @@ export interface PaymentGatewayEntityInterface extends BasicDataTableInterface {
     update(paymentGatewayInterface: PaymentGatewayInterface)
 
 }
-                
-            
+
+
 

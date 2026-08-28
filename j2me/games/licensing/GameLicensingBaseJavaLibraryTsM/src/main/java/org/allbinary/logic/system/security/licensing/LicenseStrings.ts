@@ -59,6 +59,6 @@ export class LicenseStrings
     public readonly LOCKED: string = "Demo Locked Feature";
 
 }
-                
-            
+
+
 

@@ -71,6 +71,6 @@ export interface SalvoInterface {
     processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface)
 
 }
-                
-            
+
+
 

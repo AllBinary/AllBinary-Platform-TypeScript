@@ -51,6 +51,6 @@ export class ScreenInfo
     public readonly MEDIUM_HEIGHT: number = 600;
 
 }
-                
-            
+
+
 

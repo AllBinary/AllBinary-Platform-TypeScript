@@ -69,6 +69,6 @@ export class GraphicsStrings
     public readonly HTML: string = "HTML";
 
 }
-                
-            
+
+
 

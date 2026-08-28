@@ -54,6 +54,6 @@ export interface PickupCompositeInterface {
     setPickupBehavior(pickupBehavior: PickupBehavior)
 
 }
-                
-            
+
+
 

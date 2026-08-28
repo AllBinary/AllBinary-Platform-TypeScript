@@ -185,6 +185,6 @@ this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAtXY(l
 
 
 }
-                
-            
+
+
 

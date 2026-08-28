@@ -59,6 +59,6 @@ export interface TagHelperFactoryInterface {
     getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any
 
 }
-                
-            
+
+
 

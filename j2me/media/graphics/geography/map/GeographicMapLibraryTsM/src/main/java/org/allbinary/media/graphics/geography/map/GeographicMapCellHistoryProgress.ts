@@ -114,6 +114,6 @@ this.totalVisitedArray[index]= totalVisited;
 
 
 }
-                
-            
+
+
 

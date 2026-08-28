@@ -59,6 +59,6 @@ export interface BasicTableInterface {
     backup(): string
 
 }
-                
-            
+
+
 

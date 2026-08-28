@@ -187,6 +187,6 @@ this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index
 
 
 }
-                
-            
+
+
 

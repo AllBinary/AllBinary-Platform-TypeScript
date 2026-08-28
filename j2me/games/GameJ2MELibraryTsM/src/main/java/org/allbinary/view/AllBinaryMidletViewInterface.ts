@@ -46,6 +46,6 @@ export interface AllBinaryMidletViewInterface extends MidletCompositeInterface, 
     onDestroy()
 
 }
-                
-            
+
+
 

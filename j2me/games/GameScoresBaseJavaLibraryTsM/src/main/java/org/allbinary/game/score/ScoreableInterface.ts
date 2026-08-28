@@ -55,6 +55,6 @@ export interface ScoreableInterface {
     removePoints(points: number)
 
 }
-                
-            
+
+
 

@@ -67,6 +67,6 @@ private constructor (){
     public readonly RESOURCE_HEALTH: string = "/hud_health_10_by_10.png";
 
 }
-                
-            
+
+
 

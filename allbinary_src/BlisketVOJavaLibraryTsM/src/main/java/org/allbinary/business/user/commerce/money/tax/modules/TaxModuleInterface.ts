@@ -61,6 +61,6 @@ export interface TaxModuleInterface {
     isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean
 
 }
-                
-            
+
+
 

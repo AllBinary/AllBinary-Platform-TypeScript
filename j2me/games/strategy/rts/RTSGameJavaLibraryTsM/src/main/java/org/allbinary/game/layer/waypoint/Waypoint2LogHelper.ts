@@ -157,6 +157,6 @@ export class Waypoint2LogHelper
 
 
 }
-                
-            
+
+
 

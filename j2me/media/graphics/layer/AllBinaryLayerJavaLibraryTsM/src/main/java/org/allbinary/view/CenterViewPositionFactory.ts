@@ -42,6 +42,6 @@ export class CenterViewPositionFactory extends CenterStaticViewPositionFactory {
         
 
 }
-                
-            
+
+
 

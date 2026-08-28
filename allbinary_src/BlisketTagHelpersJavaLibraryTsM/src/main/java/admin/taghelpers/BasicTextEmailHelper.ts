@@ -123,6 +123,6 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.INSTALLER, a
 
 
 }
-                
-            
+
+
 

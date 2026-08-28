@@ -111,6 +111,6 @@ graphics.drawString(this.text, x, y +adjustedCostY, 0);
 
 
 }
-                
-            
+
+
 

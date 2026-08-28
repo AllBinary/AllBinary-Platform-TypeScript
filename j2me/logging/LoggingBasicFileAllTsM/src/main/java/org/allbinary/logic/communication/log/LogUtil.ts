@@ -118,6 +118,6 @@ FileLog.put(specialMessage, anyType, functionName, exception as Throwable);
 
 
 }
-                
-            
+
+
 

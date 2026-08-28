@@ -55,6 +55,6 @@ export interface DomNodeInterface {
     toXmlNode(document: Document): Node
 
 }
-                
-            
+
+
 

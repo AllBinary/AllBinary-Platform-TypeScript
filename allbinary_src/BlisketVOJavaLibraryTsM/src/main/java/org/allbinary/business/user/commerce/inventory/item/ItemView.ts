@@ -156,6 +156,6 @@ shippingAddressNode!.appendChild(this.itemInterface!.getShippingAddress()!.toXml
 
 
 }
-                
-            
+
+
 

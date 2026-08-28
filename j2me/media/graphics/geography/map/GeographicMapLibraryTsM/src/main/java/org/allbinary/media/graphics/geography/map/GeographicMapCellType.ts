@@ -134,6 +134,6 @@ public constructor (type: number, reset: number){
 
 
 }
-                
-            
+
+
 

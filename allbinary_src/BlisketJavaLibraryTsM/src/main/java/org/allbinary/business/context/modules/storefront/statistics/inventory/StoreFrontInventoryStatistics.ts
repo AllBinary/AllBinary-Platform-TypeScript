@@ -183,6 +183,6 @@ hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.TOTALVALUE, this.g
 
 
 }
-                
-            
+
+
 

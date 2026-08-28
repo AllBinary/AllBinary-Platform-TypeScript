@@ -48,6 +48,6 @@ export class SpecialGameInputFactory
     public static readonly NO_SPECIAL_GAME_INPUT: SpecialGameInput = new SpecialGameInput();
 
 }
-                
-            
+
+
 

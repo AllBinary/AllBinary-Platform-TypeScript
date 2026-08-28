@@ -49,6 +49,6 @@ export interface UserEmailConfigurationInterface {
     setUserEmailEventsConfigurationInterface(emailEventsConfigurationInterface: UserEmailEventsConfigurationInterface)
 
 }
-                
-            
+
+
 

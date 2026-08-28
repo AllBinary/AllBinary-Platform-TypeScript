@@ -110,6 +110,6 @@ allBinaryGameCanvas!.setNonBotPaintableP(NullPaintable.getInstance());
 
 
 }
-                
-            
+
+
 

@@ -167,6 +167,6 @@ export interface ItemInterface extends TableMappingInterface {
     getTotal(): Money
 
 }
-                
-            
+
+
 

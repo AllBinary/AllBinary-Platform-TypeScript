@@ -152,6 +152,6 @@ stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());
 
 
 }
-                
-            
+
+
 

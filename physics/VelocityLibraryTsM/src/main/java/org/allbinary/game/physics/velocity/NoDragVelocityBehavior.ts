@@ -44,6 +44,6 @@ export class NoDragVelocityBehavior extends VelocityBehaviorBase {
     public static readonly instance: NoDragVelocityBehavior = new NoDragVelocityBehavior();
 
 }
-                
-            
+
+
 

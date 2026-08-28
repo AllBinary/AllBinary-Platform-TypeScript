@@ -55,6 +55,6 @@ export interface EmailQueueInterface {
     remove(): EmailInterface
 
 }
-                
-            
+
+
 

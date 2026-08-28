@@ -48,6 +48,6 @@ export interface ArtificialIntelligenceFactoryInterface {
     getInstance(anyType: any): ArtificialIntelligence
 
 }
-                
-            
+
+
 

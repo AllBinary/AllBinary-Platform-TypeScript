@@ -44,6 +44,6 @@ export interface HealthInterfaceCompositeInterface {
     getHealthInterface(): Health
 
 }
-                
-            
+
+
 

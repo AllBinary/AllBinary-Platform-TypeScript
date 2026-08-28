@@ -51,6 +51,6 @@ export interface PickupBehaviorInterface {
     doPickupLayer(pickupLayerInterface: PickedUpLayerInterface)
 
 }
-                
-            
+
+
 

@@ -96,6 +96,6 @@ protected constructor (angleInfo: AngleInfo, circularIndexUtil: CircularIndexUti
 
 
 }
-                
-            
+
+
 

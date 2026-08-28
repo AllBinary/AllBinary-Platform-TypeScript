@@ -52,6 +52,6 @@ export interface UserEmailEventListenerInterface extends EventListener {
     onEmailSendRequest(userEmailInfoEvent: EmailEvent)
 
 }
-                
-            
+
+
 

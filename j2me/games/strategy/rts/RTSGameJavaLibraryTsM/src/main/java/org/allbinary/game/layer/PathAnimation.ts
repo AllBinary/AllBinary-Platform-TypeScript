@@ -250,6 +250,6 @@ this.logUtil!.putF("Cleared Target", this, CanvasStrings.getInstance()!.PAINT);
 
 
 }
-                
-            
+
+
 

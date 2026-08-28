@@ -48,6 +48,6 @@ export interface GameInitializedListenerInterface extends EventListenerInterface
     onGameInitialized(gameInitializedEvent: GameInitializedEvent)
 
 }
-                
-            
+
+
 

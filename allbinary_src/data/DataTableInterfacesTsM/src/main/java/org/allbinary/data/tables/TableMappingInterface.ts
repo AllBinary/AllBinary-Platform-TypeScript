@@ -63,6 +63,6 @@ export interface TableMappingInterface {
     toHashMap(): HashMap<any, any>
 
 }
-                
-            
+
+
 

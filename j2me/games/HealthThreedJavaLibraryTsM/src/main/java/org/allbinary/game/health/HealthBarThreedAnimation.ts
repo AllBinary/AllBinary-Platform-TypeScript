@@ -234,6 +234,6 @@ this.object3dProcessor!.drawObject(gl, this.rectangle);
 
 
 }
-                
-            
+
+
 

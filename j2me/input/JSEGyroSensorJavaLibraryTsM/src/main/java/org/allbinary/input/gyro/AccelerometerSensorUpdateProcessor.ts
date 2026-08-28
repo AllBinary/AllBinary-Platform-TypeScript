@@ -112,6 +112,6 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
 
 
 }
-                
-            
+
+
 

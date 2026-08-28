@@ -221,6 +221,6 @@ bufferedImageArray[index +numberOfFramesPerOrientation]= this.getImage(bufferedI
 
 
 }
-                
-            
+
+
 

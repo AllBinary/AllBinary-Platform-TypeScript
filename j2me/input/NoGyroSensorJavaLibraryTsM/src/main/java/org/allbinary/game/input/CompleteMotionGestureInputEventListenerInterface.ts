@@ -56,6 +56,6 @@ export interface CompleteMotionGestureInputEventListenerInterface extends EventL
     onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent)
 
 }
-                
-            
+
+
 

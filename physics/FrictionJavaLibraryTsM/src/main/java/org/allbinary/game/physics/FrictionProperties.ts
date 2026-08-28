@@ -69,6 +69,6 @@ DragVelocityBehavior.instance.reduce(velocityProperties, nominator, FrictionData
 
 
 }
-                
-            
+
+
 

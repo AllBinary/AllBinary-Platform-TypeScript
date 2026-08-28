@@ -157,6 +157,6 @@ PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
 
 
 }
-                
-            
+
+
 

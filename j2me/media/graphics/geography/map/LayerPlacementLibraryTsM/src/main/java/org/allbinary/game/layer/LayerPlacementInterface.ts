@@ -58,6 +58,6 @@ export interface LayerPlacementInterface {
     getInstance(): Hashtable<any, any>
 
 }
-                
-            
+
+
 

@@ -228,6 +228,6 @@ new GeographicMapCellType(this.maxTileId -2, 0);
 
 
 }
-                
-            
+
+
 

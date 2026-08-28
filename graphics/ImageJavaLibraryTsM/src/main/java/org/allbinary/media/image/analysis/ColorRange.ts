@@ -259,6 +259,6 @@ stringBuffer!.appendint(this.getMaxBlue());
 
 
 }
-                
-            
+
+
 

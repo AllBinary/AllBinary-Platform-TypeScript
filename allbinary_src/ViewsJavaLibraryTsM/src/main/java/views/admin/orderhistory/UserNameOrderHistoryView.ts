@@ -365,6 +365,6 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
 
 }
-                
-            
+
+
 

@@ -510,6 +510,6 @@ ToolFactory.getInstance()!.setSelectedTool(this.lineJButton!.getText());
     private stringJButton: javax.swing.JButton;
 
 }
-                
-            
+
+
 

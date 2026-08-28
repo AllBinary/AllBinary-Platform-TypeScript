@@ -43,6 +43,6 @@ export interface AllBinaryTiledLayerFactoryInterface {
     getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer
 
 }
-                
-            
+
+
 

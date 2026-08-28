@@ -59,6 +59,6 @@ export interface AdvancedRTSPlayerLayerInterface extends RTSPlayerLayerInterface
     getDecalBasicColor(): BasicColor
 
 }
-                
-            
+
+
 

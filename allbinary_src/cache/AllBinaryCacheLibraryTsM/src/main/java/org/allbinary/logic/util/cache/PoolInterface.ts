@@ -49,6 +49,6 @@ export interface PoolInterface extends CacheInterface {
     remove(key: any): CacheableInterface
 
 }
-                
-            
+
+
 

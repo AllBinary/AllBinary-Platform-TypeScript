@@ -483,6 +483,6 @@ stringBuffer!.appendboolean(this.isShowTitleBar());
 
 
 }
-                
-            
+
+
 

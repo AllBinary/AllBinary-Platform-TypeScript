@@ -134,6 +134,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.C
 
 
 }
-                
-            
+
+
 

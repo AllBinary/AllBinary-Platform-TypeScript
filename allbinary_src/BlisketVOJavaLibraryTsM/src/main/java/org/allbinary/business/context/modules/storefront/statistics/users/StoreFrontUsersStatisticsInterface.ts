@@ -51,6 +51,6 @@ export interface StoreFrontUsersStatisticsInterface extends TableMappingInterfac
     getNumberOfUsersByRole(role: string): Long
 
 }
-                
-            
+
+
 

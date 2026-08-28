@@ -66,6 +66,6 @@ export class TouchScreenTypesFactory
     public readonly UNDEFINED: TouchScreenType = new TouchScreenType("Undefined");
 
 }
-                
-            
+
+
 

@@ -55,6 +55,6 @@ export interface RemoteFramework {
     getSystemProperties(bc: BundleContext): Map
 
 }
-                
-            
+
+
 

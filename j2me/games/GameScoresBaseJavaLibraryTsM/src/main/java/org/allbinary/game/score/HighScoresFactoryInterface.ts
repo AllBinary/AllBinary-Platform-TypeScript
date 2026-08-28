@@ -61,6 +61,6 @@ export interface HighScoresFactoryInterface {
     createHighScoresHelper(): HighScoresHelperBaseInterface
 
 }
-                
-            
+
+
 

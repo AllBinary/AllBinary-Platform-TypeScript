@@ -53,6 +53,6 @@ export interface TransactionEntityInterface extends BasicDataTableInterface {
     add(userName: string, orderNumber: string, paymentTransactionInterface: PaymentTransactionInterface)
 
 }
-                
-            
+
+
 

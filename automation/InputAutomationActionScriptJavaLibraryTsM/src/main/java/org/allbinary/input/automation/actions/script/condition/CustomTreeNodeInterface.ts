@@ -52,6 +52,6 @@ export interface CustomTreeNodeInterface extends MutableTreeNode {
     getJPopupMenu(): JPopupMenu
 
 }
-                
-            
+
+
 

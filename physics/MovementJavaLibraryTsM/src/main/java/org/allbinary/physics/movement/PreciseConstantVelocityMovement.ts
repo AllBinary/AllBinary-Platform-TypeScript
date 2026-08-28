@@ -118,6 +118,6 @@ layer.moveDXYZ(this.accumulatedX /this.factorValue, this.accumulatedY /this.fact
 
 
 }
-                
-            
+
+
 

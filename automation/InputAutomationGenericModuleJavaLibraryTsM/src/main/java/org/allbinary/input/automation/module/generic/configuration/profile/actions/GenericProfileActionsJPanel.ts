@@ -456,6 +456,6 @@ this.newProfileActionJDialog!.setVisible(true);
     private saveJButton: javax.swing.JButton;
 
 }
-                
-            
+
+
 

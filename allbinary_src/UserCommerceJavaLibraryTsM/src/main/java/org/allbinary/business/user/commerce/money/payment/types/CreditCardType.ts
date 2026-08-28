@@ -67,6 +67,6 @@ public constructor (cardType: string){
 
 
 }
-                
-            
+
+
 

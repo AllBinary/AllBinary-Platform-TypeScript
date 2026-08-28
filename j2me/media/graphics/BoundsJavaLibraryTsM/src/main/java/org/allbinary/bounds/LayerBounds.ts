@@ -112,6 +112,6 @@ this.rectangle= boundsChangeEvent!.getRectangle();
 
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ export interface AllBinaryObjectFactoryInterface {
     getInstance(): any
 
 }
-                
-            
+
+
 

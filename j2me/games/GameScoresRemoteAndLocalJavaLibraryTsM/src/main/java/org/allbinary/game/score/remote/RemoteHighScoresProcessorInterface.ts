@@ -56,6 +56,6 @@ export interface RemoteHighScoresProcessorInterface {
     process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo)
 
 }
-                
-            
+
+
 

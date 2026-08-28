@@ -67,6 +67,6 @@ export interface ValidationInterface {
     validationInfo(): string
 
 }
-                
-            
+
+
 

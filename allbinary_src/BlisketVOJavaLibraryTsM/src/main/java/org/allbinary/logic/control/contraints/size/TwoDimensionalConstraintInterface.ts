@@ -50,6 +50,6 @@ export interface TwoDimensionalConstraintInterface {
     setWidth(widthSizeConstraintInterface: SizeConstraintInterface)
 
 }
-                
-            
+
+
 

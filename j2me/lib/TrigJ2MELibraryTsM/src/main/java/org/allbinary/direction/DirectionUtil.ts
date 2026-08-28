@@ -131,6 +131,6 @@ this.directionArray2[directionFactory!.DOWN.getValue()]= angleFactory!.DOWN;
 
 
 }
-                
-            
+
+
 

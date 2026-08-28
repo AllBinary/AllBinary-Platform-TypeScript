@@ -107,6 +107,6 @@ this.drawStringUtil!.drawCenterString(graphics, string, 0, string.length, this.x
 
 
 }
-                
-            
+
+
 

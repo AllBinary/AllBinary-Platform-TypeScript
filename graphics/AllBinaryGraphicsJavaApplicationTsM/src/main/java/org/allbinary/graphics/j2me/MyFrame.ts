@@ -1304,6 +1304,6 @@ this.getSelectedWorkArea()!.keyPressed(keyEvent);
     private zoomOutJMenuItem: javax.swing.JMenuItem;
 
 }
-                
-            
+
+
 

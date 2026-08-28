@@ -100,6 +100,6 @@ this.DOWN= new MotionGestureInput(MAX -29, "D Trackball");
 
 
 }
-                
-            
+
+
 

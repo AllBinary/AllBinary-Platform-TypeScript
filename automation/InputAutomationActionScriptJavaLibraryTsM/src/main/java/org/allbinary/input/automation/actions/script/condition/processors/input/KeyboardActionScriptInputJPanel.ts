@@ -700,6 +700,6 @@ this.normalJRadioButton!.setSelected(false);
     private titleJLabel: javax.swing.JLabel;
 
 }
-                
-            
+
+
 

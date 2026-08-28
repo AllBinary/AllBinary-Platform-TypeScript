@@ -53,6 +53,6 @@ export interface ColorCompositeInterface extends BasicColorCompositeSetterInterf
     getBasicColorP(): BasicColor
 
 }
-                
-            
+
+
 

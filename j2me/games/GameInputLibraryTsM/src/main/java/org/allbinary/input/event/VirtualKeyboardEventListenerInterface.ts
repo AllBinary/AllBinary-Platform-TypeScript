@@ -52,6 +52,6 @@ export interface VirtualKeyboardEventListenerInterface extends EventListenerInte
     onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent)
 
 }
-                
-            
+
+
 

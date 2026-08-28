@@ -223,6 +223,6 @@ this.colorP= this.basicColor!.intValue();
 
 
 }
-                
-            
+
+
 

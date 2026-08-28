@@ -59,6 +59,6 @@ export interface PathFindingNodeCostInfoFactoryBaseInterface {
     getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number
 
 }
-                
-            
+
+
 

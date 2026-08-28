@@ -80,6 +80,6 @@ export interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
     toDocument(): Document
 
 }
-                
-            
+
+
 

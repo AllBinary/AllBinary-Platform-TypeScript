@@ -86,6 +86,6 @@ demoGameMidletEventListener!.onDemoGameMidletEvent(eventObject as DemoGameMidlet
 
 
 }
-                
-            
+
+
 

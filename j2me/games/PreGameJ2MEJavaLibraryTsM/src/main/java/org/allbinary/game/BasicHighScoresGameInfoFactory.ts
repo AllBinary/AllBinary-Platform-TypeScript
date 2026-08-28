@@ -65,6 +65,6 @@ export class BasicHighScoresGameInfoFactory
     public readonly SINGLE_PLAYER_SERVER: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 0, 0);
 
 }
-                
-            
+
+
 

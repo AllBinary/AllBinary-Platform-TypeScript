@@ -75,6 +75,6 @@ private constructor (){
     public readonly UTF_16LE: string = "UTF-16LE";
 
 }
-                
-            
+
+
 

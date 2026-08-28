@@ -390,6 +390,6 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(currentPoints!.length);
 
 
 }
-                
-            
+
+
 

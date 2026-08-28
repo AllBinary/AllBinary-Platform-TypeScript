@@ -142,6 +142,6 @@ export interface GraphicItemInterface {
     duplicate(): GraphicItemInterface
 
 }
-                
-            
+
+
 

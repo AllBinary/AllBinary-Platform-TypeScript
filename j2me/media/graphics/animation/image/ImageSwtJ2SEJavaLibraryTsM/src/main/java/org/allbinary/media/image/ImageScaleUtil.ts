@@ -181,6 +181,6 @@ originalImageArray[0]= scaledImage;
 
 
 }
-                
-            
+
+
 

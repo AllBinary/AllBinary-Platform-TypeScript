@@ -63,6 +63,6 @@ export interface ResourceRelativeRelationshipFactoryInterface extends GameFeatur
     addResourceRelativeRelationship(resource: string, relativeRelationship: RelativeRelationship)
 
 }
-                
-            
+
+
 

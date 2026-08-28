@@ -333,6 +333,6 @@ stringBuffer!.append(this.sqlTypeStrings!.FOUR_INT_NOT_NULL)!.append(paymentTran
 
 
 }
-                
-            
+
+
 

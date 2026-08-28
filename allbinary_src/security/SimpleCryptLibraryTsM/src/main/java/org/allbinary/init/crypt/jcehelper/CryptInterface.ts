@@ -45,6 +45,6 @@ export interface CryptInterface {
     decrypt(array: number[]): number[]
 
 }
-                
-            
+
+
 

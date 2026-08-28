@@ -182,6 +182,6 @@ this.customTextBox!.paintXY(graphics, x, y);
 
 
 }
-                
-            
+
+
 

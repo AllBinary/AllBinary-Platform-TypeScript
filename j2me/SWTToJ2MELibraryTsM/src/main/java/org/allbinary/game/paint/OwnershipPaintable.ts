@@ -166,6 +166,6 @@ graphics.drawString(this.COPYRIGHT, halfWidth -this.beginWidth, height -this.COP
 
 
 }
-                
-            
+
+
 

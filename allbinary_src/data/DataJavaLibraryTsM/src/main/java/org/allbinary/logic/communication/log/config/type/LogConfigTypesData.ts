@@ -61,6 +61,6 @@ export class LogConfigTypesData
     public readonly DESCRIPTION: string = "LOG_CONFIG_TYPES_DESCRIPTION";
 
 }
-                
-            
+
+
 

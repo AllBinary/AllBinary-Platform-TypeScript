@@ -60,6 +60,6 @@ export interface TrackingEventListenerInterface extends EventListenerInterface {
     onMovement(trackingEvent: TrackingEvent)
 
 }
-                
-            
+
+
 

@@ -212,6 +212,6 @@ this.string= new StringMaker().append(this.listString)!.append(this.append)!.toS
 
 
 }
-                
-            
+
+
 

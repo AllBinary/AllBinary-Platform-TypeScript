@@ -62,6 +62,6 @@ export interface SoundsFactoryInterface {
     isInitialized(): boolean
 
 }
-                
-            
+
+
 

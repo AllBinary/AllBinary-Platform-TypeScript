@@ -95,6 +95,6 @@ export class NoHardwareComponent
 
 
 }
-                
-            
+
+
 

@@ -53,6 +53,6 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
 
 
 }
-                
-            
+
+
 

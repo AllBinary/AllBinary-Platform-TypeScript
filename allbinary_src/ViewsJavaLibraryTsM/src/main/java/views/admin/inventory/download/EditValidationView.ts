@@ -323,6 +323,6 @@ this.downloadableItem= vector.get(0) as DownloadableItem;
 
 
 }
-                
-            
+
+
 

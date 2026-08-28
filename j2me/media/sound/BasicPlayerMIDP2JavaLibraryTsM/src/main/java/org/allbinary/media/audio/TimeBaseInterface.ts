@@ -55,6 +55,6 @@ export interface TimeBaseInterface {
     setTimeBase(timeBase: TimeBase)
 
 }
-                
-            
+
+
 

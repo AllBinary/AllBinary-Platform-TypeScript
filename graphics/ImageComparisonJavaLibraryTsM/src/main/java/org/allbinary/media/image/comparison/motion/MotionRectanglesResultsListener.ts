@@ -48,6 +48,6 @@ export interface MotionRectanglesResultsListener extends BasicEventListenerInter
     onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent)
 
 }
-                
-            
+
+
 

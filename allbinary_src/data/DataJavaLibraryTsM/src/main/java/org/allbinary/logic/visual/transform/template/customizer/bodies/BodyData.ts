@@ -69,6 +69,6 @@ private constructor (){
     public readonly MIN: number = 0;
 
 }
-                
-            
+
+
 

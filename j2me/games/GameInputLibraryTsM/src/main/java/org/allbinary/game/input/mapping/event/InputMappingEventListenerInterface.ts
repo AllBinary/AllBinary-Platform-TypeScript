@@ -60,6 +60,6 @@ export interface InputMappingEventListenerInterface extends EventListenerInterfa
     onInputMappingEvent(inputMappingEvent: InputMappingEvent)
 
 }
-                
-            
+
+
 

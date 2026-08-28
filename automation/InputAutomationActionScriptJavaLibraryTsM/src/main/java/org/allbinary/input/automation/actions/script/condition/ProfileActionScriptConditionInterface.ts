@@ -66,6 +66,6 @@ export interface ProfileActionScriptConditionInterface extends ProfileActionScri
     shouldProcess(frame: Long): boolean
 
 }
-                
-            
+
+
 

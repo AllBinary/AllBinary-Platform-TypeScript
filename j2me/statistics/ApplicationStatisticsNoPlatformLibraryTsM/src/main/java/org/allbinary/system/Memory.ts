@@ -53,6 +53,6 @@ expect export class Memory
     public static getInfo(): string
 
 }
-                
-            
+
+
 

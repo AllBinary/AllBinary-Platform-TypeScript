@@ -59,6 +59,6 @@ export interface DestroyableInterface extends NamedInterface {
     isDestroyed(): boolean
 
 }
-                
-            
+
+
 

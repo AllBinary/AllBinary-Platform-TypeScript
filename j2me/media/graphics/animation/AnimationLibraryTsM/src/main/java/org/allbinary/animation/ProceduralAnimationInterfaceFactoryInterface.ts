@@ -57,6 +57,6 @@ export interface ProceduralAnimationInterfaceFactoryInterface extends BasicAnima
     getInstanceAnimation(animationInterface: Animation): Animation
 
 }
-                
-            
+
+
 

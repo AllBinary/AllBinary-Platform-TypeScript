@@ -52,6 +52,6 @@ export interface GroupInterfaceCompositeInterface {
     getGroupInterface(): Group[]
 
 }
-                
-            
+
+
 

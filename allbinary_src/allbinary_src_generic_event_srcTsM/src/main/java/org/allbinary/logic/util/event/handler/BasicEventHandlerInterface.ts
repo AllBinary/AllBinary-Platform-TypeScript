@@ -69,6 +69,6 @@ export interface BasicEventHandlerInterface {
     removeListener(eventListenerInterface: EventListenerInterface)
 
 }
-                
-            
+
+
 

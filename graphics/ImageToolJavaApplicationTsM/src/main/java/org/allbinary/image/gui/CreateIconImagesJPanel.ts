@@ -337,6 +337,6 @@ this.process();
     private aboveJButton: javax.swing.JButton;
 
 }
-                
-            
+
+
 

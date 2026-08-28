@@ -83,6 +83,6 @@ expect export class NullUtil
     public readonly NULL_TABLE: Hashtable<any, any>
 
 }
-                
-            
+
+
 

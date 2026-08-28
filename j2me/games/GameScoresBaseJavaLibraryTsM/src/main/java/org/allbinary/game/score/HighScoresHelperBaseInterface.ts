@@ -57,6 +57,6 @@ export interface HighScoresHelperBaseInterface extends HighScoresResultsListener
     getSelectedHighScores(): HighScores
 
 }
-                
-            
+
+
 

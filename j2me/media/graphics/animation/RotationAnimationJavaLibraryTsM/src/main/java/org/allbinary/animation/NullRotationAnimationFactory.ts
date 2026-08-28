@@ -107,8 +107,8 @@ NullRotationAnimation2 = class extends NullRotationAnimation {
 
 
 }
-                
-            
+
+
     private readonly NULL_ANIMATION: Animation = new this.NullRotationAnimation2();
 
 private constructor (){
@@ -144,6 +144,6 @@ private constructor (){
 
 
 }
-                
-            
+
+
 

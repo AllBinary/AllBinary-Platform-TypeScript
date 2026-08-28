@@ -87,6 +87,6 @@ hashtable.put(BasePatrolAI.MAX_DISTANCE, SmallIntegerSingletonFactory.getInstanc
 
 
 }
-                
-            
+
+
 

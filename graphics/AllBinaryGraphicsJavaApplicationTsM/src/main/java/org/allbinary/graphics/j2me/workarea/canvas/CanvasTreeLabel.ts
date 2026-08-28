@@ -65,6 +65,6 @@ public constructor (str: string){
 
 
 }
-                
-            
+
+
 

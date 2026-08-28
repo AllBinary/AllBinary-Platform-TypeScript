@@ -79,6 +79,6 @@ this.logUtil!.putF("Null Gesture Reciever", this, commonStrings!.CONSTRUCTOR);
 
 
 }
-                
-            
+
+
 

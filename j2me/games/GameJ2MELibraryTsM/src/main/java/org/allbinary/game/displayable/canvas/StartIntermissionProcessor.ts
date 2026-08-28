@@ -105,6 +105,6 @@ this.gameCanvas!.getStartIntermissionInterface()!.setEnabled(false);
 
 
 }
-                
-            
+
+
 

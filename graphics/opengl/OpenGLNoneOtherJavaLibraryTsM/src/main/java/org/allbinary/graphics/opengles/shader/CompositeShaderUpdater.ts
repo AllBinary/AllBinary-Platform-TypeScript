@@ -90,6 +90,6 @@ public constructor (uniformBlockArray: string[], uniformArray: string[], attribu
 
 
 }
-                
-            
+
+
 

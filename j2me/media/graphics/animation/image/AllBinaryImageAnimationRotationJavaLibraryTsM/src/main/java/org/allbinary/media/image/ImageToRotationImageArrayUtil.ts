@@ -104,6 +104,6 @@ imageArray[index]= imageRotationUtil!.createRotatedImage(image, index *angleIncr
 
 
 }
-                
-            
+
+
 

@@ -71,6 +71,6 @@ export class DisplayPointScalar
 
 
 }
-                
-            
+
+
 

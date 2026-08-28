@@ -69,6 +69,6 @@ canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND);
 
 
 }
-                
-            
+
+
 

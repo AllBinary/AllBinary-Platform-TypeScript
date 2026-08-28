@@ -71,6 +71,6 @@ private constructor (){
     public readonly PREVIEW_IMAGE_PATH: string = "THEME_PREVIEW_IMAGE_PATH";
 
 }
-                
-            
+
+
 

@@ -75,6 +75,6 @@ this.initEmulator= initEmulator;
     private initEmulator: boolean = false;
 
 }
-                
-            
+
+
 

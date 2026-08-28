@@ -67,6 +67,6 @@ private constructor (){
     public readonly TEXT: string = "ERROR_TEXT";
 
 }
-                
-            
+
+
 

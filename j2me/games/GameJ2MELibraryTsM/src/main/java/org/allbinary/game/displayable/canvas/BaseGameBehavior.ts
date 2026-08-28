@@ -191,6 +191,6 @@ allBinaryGameCanvas!.setHighScore2(abeClientInformation, name, score, autoSubmit
 
 
 }
-                
-            
+
+
 

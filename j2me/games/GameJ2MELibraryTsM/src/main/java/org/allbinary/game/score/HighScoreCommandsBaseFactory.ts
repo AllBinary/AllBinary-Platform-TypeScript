@@ -152,6 +152,6 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
 
 }
-                
-            
+
+
 

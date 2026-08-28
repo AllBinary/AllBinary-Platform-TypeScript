@@ -43,6 +43,6 @@ export interface ResizableListenerInterface {
     onResizable(isResizable: boolean)
 
 }
-                
-            
+
+
 

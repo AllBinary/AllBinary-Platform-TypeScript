@@ -42,6 +42,6 @@ export interface SequentialAnimationInterfaceCompositeInterface extends IndexedA
         
 
 }
-                
-            
+
+
 

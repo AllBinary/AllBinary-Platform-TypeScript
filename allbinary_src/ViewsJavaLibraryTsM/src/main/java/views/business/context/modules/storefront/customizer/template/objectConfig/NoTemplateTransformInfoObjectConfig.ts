@@ -180,6 +180,6 @@ hashMap!.put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
 
 
 }
-                
-            
+
+
 

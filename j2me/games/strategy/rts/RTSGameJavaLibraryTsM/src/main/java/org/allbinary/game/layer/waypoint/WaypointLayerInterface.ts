@@ -136,6 +136,6 @@ export interface WaypointLayerInterface {
     getWaypointRunnableLogHelper(): WaypointRunnableLogHelper
 
 }
-                
-            
+
+
 

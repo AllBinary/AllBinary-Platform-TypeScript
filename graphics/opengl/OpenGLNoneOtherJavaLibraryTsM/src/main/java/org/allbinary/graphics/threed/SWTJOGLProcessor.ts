@@ -179,6 +179,6 @@ export class SWTJOGLProcessor
 
 
 }
-                
-            
+
+
 

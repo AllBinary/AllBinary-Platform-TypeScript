@@ -53,6 +53,6 @@ export interface LogTableEntityInterface extends BasicDataTableInterface {
     insert(values: Vector)
 
 }
-                
-            
+
+
 

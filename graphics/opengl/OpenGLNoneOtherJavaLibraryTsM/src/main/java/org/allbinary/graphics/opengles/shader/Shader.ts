@@ -65,6 +65,6 @@ export class Shader
     public shaderHandle: number= 0;
 
 }
-                
-            
+
+
 

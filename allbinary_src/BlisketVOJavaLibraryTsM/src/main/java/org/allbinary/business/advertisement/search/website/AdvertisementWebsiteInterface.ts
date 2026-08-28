@@ -43,6 +43,6 @@ export interface AdvertisementWebsiteInterface {
     toString(): string
 
 }
-                
-            
+
+
 

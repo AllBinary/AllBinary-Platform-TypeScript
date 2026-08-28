@@ -345,6 +345,6 @@ this.animationInterfaceArray[index]!.paintXY(graphics, deltaX, deltaY);
 
 
 }
-                
-            
+
+
 

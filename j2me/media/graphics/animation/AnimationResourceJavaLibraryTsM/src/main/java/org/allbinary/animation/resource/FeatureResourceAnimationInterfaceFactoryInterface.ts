@@ -64,6 +64,6 @@ export interface FeatureResourceAnimationInterfaceFactoryInterface extends Resou
     getHashtable(): Hashtable<any, any>
 
 }
-                
-            
+
+
 

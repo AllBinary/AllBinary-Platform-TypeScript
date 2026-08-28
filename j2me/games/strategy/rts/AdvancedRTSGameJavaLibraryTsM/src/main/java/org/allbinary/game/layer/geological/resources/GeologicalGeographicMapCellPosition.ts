@@ -71,6 +71,6 @@ this.geologicalResource= geologicalResource;
 
 
 }
-                
-            
+
+
 

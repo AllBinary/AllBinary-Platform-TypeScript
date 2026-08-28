@@ -73,6 +73,6 @@ export interface BasicTransformerInterface extends CompositeTransformInfoInterfa
     translate(xmlDocumentStr: string): string
 
 }
-                
-            
+
+
 

@@ -289,6 +289,6 @@ this.maxBlueJTextField!.setText(new Long(imageColorResults!.getColorRange()!.get
     private totalPixelsJTextField: javax.swing.JTextField;
 
 }
-                
-            
+
+
 

@@ -52,6 +52,6 @@ expect export class GameStatisticsFactory extends BaseGameStatistics {
     public toString(): string
 
 }
-                
-            
+
+
 

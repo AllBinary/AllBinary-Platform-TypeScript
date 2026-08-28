@@ -55,6 +55,6 @@ export interface DropLayerInterface extends LayerInterface {
     getDroppedLayer(): PickedUpLayerInterface
 
 }
-                
-            
+
+
 

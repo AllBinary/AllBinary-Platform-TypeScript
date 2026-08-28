@@ -64,6 +64,6 @@ export interface MidletCompositeInterface {
     getDisplayable(): Displayable
 
 }
-                
-            
+
+
 

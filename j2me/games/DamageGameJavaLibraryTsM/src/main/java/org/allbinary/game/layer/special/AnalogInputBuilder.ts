@@ -110,6 +110,6 @@ inputProcessorArray[Canvas.KEY_NUM5]= new SpecialAnalogRightTriggerGameInputProc
 
 
 }
-                
-            
+
+
 

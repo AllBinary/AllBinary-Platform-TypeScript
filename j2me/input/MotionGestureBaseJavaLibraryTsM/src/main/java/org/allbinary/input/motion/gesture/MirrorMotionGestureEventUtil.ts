@@ -149,6 +149,6 @@ event.setCurrentPoint(mirroredCurrentPoint);
 
 
 }
-                
-            
+
+
 

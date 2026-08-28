@@ -65,6 +65,6 @@ private constructor (){
     public readonly RESOURCE: string = "/unit_message_bubbled_box.png";
 
 }
-                
-            
+
+
 

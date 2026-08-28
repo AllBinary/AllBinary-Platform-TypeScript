@@ -171,6 +171,6 @@ this.RESOURCE_ICON_BUILD= BasicGameResources.stringBuffer!.toString();
 
 
 }
-                
-            
+
+
 

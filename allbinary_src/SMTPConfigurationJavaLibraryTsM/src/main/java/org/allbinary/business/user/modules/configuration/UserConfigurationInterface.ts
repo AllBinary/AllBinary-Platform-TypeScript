@@ -65,6 +65,6 @@ export interface UserConfigurationInterface {
     setTimeLastModified(timeLastModified: TimeLastModified)
 
 }
-                
-            
+
+
 

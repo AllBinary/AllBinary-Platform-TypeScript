@@ -83,6 +83,6 @@ midletCommandListener!.commandAction(command, canvas);
 
 
 }
-                
-            
+
+
 

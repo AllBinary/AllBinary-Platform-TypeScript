@@ -59,6 +59,6 @@ export interface MenuListener extends GameKeyEventSourceInterface {
     close()
 
 }
-                
-            
+
+
 

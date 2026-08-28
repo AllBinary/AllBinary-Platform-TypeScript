@@ -65,6 +65,6 @@ export interface GeographicMapCellPositionAreaInterface {
     update(geographicMapInterface: BasicGeographicMap)
 
 }
-                
-            
+
+
 

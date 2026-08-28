@@ -47,6 +47,6 @@ export interface RotationAnimationInterfaceCompositeInterface extends IndexedAni
     setFrame(index: number)
 
 }
-                
-            
+
+
 

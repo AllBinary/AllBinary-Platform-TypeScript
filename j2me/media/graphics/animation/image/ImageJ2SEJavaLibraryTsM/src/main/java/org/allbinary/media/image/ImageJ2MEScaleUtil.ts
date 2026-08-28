@@ -164,6 +164,6 @@ scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!;
 
 
 }
-                
-            
+
+
 

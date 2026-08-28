@@ -54,6 +54,6 @@ export class NullDropCellPositionGenerator extends BaseDropCellPositionGenerator
 
 
 }
-                
-            
+
+
 

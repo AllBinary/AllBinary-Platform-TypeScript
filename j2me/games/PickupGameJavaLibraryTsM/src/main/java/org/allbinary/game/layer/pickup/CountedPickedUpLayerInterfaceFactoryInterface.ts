@@ -58,6 +58,6 @@ export interface CountedPickedUpLayerInterfaceFactoryInterface extends PickedUpL
     getTotal(): number
 
 }
-                
-            
+
+
 

@@ -51,6 +51,6 @@ export interface HashMapJDialogListenerInterface {
     onHashMap(hashMap: HashMap<any, any>)
 
 }
-                
-            
+
+
 

@@ -122,6 +122,6 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
 
 
 }
-                
-            
+
+
 

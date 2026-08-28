@@ -59,6 +59,6 @@ export interface CpuInterface {
     compareTo(cpuInterface: CpuInterface): boolean
 
 }
-                
-            
+
+
 

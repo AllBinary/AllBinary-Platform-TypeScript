@@ -173,6 +173,6 @@ pathFindingNode= pathFindingNode!.parent as PathFindingNode;
 
 
 }
-                
-            
+
+
 

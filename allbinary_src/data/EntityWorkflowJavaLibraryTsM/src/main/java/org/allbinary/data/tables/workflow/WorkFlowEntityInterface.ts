@@ -75,6 +75,6 @@ export interface WorkFlowEntityInterface extends BasicDataTableInterface {
     update(updatedValues: HashMap<any, any>)
 
 }
-                
-            
+
+
 

@@ -706,6 +706,6 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
 
 
 }
-                
-            
+
+
 

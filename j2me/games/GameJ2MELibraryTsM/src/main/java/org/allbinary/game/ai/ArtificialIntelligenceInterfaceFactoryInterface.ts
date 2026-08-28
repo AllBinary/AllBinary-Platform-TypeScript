@@ -63,6 +63,6 @@ export interface ArtificialIntelligenceInterfaceFactoryInterface {
     getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
 
 }
-                
-            
+
+
 

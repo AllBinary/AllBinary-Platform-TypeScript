@@ -65,6 +65,6 @@ export interface GameInputInterface extends NamedInterface {
     initInputProcessors()
 
 }
-                
-            
+
+
 

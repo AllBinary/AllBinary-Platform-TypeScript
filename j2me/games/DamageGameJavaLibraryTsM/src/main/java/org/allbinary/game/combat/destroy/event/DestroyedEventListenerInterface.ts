@@ -52,6 +52,6 @@ export interface DestroyedEventListenerInterface extends EventListenerInterface 
     onDestroyed(destroyedEvent: DestroyedEvent)
 
 }
-                
-            
+
+
 

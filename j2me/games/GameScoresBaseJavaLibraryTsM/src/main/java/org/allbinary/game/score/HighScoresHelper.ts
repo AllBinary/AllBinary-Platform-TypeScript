@@ -145,6 +145,6 @@ highScores= this.highScoresArrayP[index]!;
 
 
 }
-                
-            
+
+
 

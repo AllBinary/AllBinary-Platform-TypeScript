@@ -73,6 +73,6 @@ export class IntermissionFactory
     public readonly SHOW_HIGH_SCORE_LEVEL_INTERMISSION_GAME_STATE: GameState = GameStateFactory.getInstance()!.createGameState("SHOW_HIGH_SCORE_LEVEL_INTERMISSION_GAME_STATE")!;
 
 }
-                
-            
+
+
 

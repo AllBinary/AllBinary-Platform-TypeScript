@@ -43,6 +43,6 @@ export interface TimeFiredInterface {
     getLastFireTime(): number
 
 }
-                
-            
+
+
 

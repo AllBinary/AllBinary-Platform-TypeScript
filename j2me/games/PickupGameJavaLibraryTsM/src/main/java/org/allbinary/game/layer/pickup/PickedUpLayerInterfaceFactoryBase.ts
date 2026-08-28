@@ -98,6 +98,6 @@ export class PickedUpLayerInterfaceFactoryBase
 
 
 }
-                
-            
+
+
 

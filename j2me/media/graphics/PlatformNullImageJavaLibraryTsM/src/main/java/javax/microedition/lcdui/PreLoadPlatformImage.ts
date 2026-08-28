@@ -54,6 +54,6 @@ export class PreLoadPlatformImage extends PlatformImage {
 
 
 }
-                
-            
+
+
 

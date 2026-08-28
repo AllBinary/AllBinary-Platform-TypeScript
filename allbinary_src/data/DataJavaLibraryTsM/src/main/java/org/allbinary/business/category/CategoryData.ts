@@ -87,6 +87,6 @@ private constructor (){
     public readonly ENCRYPTED_EXTENSION: string = CommonDataFileStrings.getInstance()!.ENCRYPTED_EXTENSION;
 
 }
-                
-            
+
+
 

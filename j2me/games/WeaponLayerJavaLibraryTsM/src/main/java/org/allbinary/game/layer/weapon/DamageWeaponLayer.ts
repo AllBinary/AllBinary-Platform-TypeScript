@@ -76,6 +76,6 @@ this.setCollidableInferface(new CollidableDamageWeaponBehavior(true));
 
 
 }
-                
-            
+
+
 

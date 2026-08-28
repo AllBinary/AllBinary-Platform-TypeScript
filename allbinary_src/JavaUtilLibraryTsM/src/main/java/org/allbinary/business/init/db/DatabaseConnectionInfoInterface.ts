@@ -77,6 +77,6 @@ export interface DatabaseConnectionInfoInterface {
     getPasswordKey(): string
 
 }
-                
-            
+
+
 

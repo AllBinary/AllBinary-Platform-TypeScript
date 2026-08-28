@@ -73,6 +73,6 @@ export class URIResolverStrings
     public readonly RESOLVE: string = "resolve";
 
 }
-                
-            
+
+
 

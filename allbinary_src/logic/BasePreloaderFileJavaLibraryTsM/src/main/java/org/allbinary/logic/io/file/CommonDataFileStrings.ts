@@ -101,6 +101,6 @@ export class CommonDataFileStrings
     public readonly ENCRYPTED_EXTENSION: string = "abd";
 
 }
-                
-            
+
+
 

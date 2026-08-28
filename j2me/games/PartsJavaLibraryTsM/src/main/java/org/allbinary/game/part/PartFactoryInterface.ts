@@ -56,6 +56,6 @@ export interface PartFactoryInterface {
     getInstance(sourceLayerInterface: AllBinaryLayer, relativeRelationship: RelativeRelationship): PartInterface
 
 }
-                
-            
+
+
 
