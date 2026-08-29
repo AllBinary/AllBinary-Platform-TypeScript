@@ -20,6 +20,10 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 //not game specific package import { CustomGPoint } from '../../../../org/allbinary/graphics/CustomGPoint.js';
       const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
 

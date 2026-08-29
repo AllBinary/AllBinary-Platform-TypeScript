@@ -22,6 +22,10 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 
 
 

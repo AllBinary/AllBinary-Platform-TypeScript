@@ -313,7 +313,7 @@ import { ExplosionBasicSound } from '../../../../../org/allbinary/ag/weapon/medi
 
       
 //not game specific package import { SalvoInterface } from '../../../../../org/allbinary/game/part/weapon/SalvoInterface.js';
-      const SalvoInterface = globalThis.org.allbinary.game.part.weapon.SalvoInterface;
+      const SalvoInterface = globalThis.org?.allbinary?.game?.part?.weapon?.SalvoInterface;
 
       
 //not game specific package import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';

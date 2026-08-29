@@ -6,6 +6,10 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
+//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 //not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
       const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
