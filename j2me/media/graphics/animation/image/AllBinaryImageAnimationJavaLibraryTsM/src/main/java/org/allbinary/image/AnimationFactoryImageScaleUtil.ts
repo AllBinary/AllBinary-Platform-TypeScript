@@ -42,8 +42,8 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
       //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
-import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
-      //not GWT import const ImageJ2MEScaleUtil = globalThis.org.allbinary.media.image.ImageJ2MEScaleUtil;
+//not plain js import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
+      const ImageJ2MEScaleUtil = globalThis.org.allbinary.media.image.ImageJ2MEScaleUtil;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';

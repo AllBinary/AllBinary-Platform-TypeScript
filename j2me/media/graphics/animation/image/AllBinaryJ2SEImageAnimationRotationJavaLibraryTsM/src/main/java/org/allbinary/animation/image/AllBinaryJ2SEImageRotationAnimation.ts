@@ -34,8 +34,8 @@ import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
-      //not GWT import const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
+//not plain js import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
+      const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
@@ -50,16 +50,16 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-      //not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+//not plain js import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+      const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
-import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-      //not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+//not plain js import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+      const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
-import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
-      //not GWT import const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
+//not plain js import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
+      const ImageRotationUtil = globalThis.org.allbinary.media.image.ImageRotationUtil;
 
       
 

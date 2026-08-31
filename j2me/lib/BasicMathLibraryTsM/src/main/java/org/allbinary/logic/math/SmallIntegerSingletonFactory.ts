@@ -28,6 +28,10 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
+import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
+      //not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+
+      
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
       //not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
 
@@ -105,10 +109,51 @@ export class SmallIntegerSingletonFactory
                                 0
                                 :
 
-                            23;
+                            
+                                        //Otherwise - expression - elseExpr - ConditionalExpr
+;
 
     );;
     
+
+                        if(this.MIN <= minAllowed)
+                        
+                                    {
+                                    
+                        if(J2MEUtil.isJ2ME())
+                        
+                                    {
+                                    
+                                    }
+                                
+                             else 
+                        if(AndroidUtil.isAndroid())
+                        
+                                    {
+                                    
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+logUtil!.putF("Android InputFactory was initialized before GameMidlet: " +this.MIN, this, "getMin");
+    
+this.initWithRange(0x291, 6);
+    
+
+                                    }
+                                
+                        else {
+                            
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+logUtil!.putF("InputFactory was initialized before GameMidlet or KeyFactoryInitializer - Currently this is occurs on JS build by TouchMotionGestureFactory constructor: " +this.MIN, this, "getMin");
+    
+this.initWithRange(0x2D0, 6);
+    
+
+                        }
+                            
+
+                                    }
+                                
 
                         if(this.MIN <= minAllowed)
                         

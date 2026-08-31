@@ -42,7 +42,7 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //OpenGLESNullImageJavaLibrary
 export class OpenGLImageCacheFactory
             extends Object
          {

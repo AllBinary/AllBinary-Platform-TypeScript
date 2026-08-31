@@ -22,51 +22,51 @@
         
             import { Long } from '../../java/lang/Long.js';
         
-//not game specific package import { Calendar } from '../../java/util/Calendar.js';
-      const Calendar = globalThis.java.util.Calendar;
+import { Calendar } from '../../java/util/Calendar.js';
+      //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
-      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
+      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
-//not game specific package import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
       
-//not game specific package import { SpecialItemData } from '../../org/allbinary/business/user/commerce/inventory/item/special/SpecialItemData.js';
-      const SpecialItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.special.SpecialItemData;
+import { SpecialItemData } from '../../org/allbinary/business/user/commerce/inventory/item/special/SpecialItemData.js';
+      //not GWT import const SpecialItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.special.SpecialItemData;
 
       
-//not game specific package import { SpecialItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/special/SpecialItemsEntityFactory.js';
-      const SpecialItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.special.SpecialItemsEntityFactory;
+import { SpecialItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/special/SpecialItemsEntityFactory.js';
+      //not GWT import const SpecialItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.special.SpecialItemsEntityFactory;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
@@ -355,6 +355,6 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update
 
 
 }
-                
-            
+
+
 

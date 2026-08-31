@@ -20,6 +20,10 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
       //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
@@ -42,7 +46,7 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //OpenGLNoneOtherJavaLibrary
 export class OpenGLImageCacheFactory
             extends Object
          {

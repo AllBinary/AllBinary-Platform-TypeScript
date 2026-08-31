@@ -100,7 +100,7 @@ export class BufferedWriterUtil
 
     private readonly commonLabels: CommonLabels = CommonLabels.getInstance()!;
 
-    private readonly REMOVING_OLD: string = "Remove old for overwritting: ";
+    private readonly REMOVING_OLD: string = "Remove old for overwriting: ";
 
                 //@Throws(Exception.constructor)
             

@@ -64,6 +64,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
       //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
+import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullGameCanvasRunnable.js';
+      //not GWT import const NullGameCanvasRunnable = globalThis.org.allbinary.game.displayable.canvas.NullGameCanvasRunnable;
+
+      
 
 
 
@@ -145,11 +149,14 @@ public constructor (clientInformationFactory: ClientInformationFactory){
                 //@Throws(Exception.constructor)
             
     public createDemoGameCanvasRunnableInterface(): GameCanvasRunnableInterface{
+this.logUtil!.putF(this.commonStrings!.NOT_IMPLEMENTED, this, this.commonStrings!.CREATE);
+    
 
 
 
-                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
-                    
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE;
+    
 }
 
 

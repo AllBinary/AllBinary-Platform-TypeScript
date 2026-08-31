@@ -20,14 +20,20 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
-        
 import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
-      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+      const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
+
+      
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+      const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
+
+      
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
 
@@ -57,10 +63,22 @@ export class ClientInformationFactory
 
     public getInstance(): ClientInformation{
 
+    var logUtil: LogUtil = LogUtil.getInstance()!;;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;;
+    
+logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, commonStrings!.GET_INSTANCE);
+    
+
+    var stringUtil: StringUtil = StringUtil.getInstance()!;;
+    
 
 
-                            throw new RuntimeException();
-                    
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new ClientInformation(stringUtil!.NULL_STRING, stringUtil!.NULL_STRING, stringUtil!.NULL_STRING, stringUtil!.NULL_STRING);
+    
 }
 
 

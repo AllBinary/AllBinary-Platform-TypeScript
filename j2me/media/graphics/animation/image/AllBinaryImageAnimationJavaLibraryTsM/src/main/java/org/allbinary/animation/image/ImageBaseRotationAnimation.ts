@@ -34,8 +34,8 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
-      //not GWT import const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
+//not plain js import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
+      const DisposalUtil = globalThis.org.allbinary.DisposalUtil;
 
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';

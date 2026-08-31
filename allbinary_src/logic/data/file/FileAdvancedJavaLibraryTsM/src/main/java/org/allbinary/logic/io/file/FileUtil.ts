@@ -22,14 +22,6 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Closeable } from '../../../../../java/io/Closeable.js';
-      //not GWT import const Closeable = globalThis.java.io.Closeable;
-
-      
-import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
-      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
-
-      
 import { InputStream } from '../../../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
@@ -76,10 +68,6 @@ import { DataOutputStreamFactory } from '../../../../../org/allbinary/logic/io/D
       
 import { FileStreamFactory } from '../../../../../org/allbinary/logic/io/FileStreamFactory.js';
       //not GWT import const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
-
-      
-import { NullCloseable } from '../../../../../org/allbinary/logic/io/NullCloseable.js';
-      //not GWT import const NullCloseable = globalThis.org.allbinary.logic.io.NullCloseable;
 
       
 import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';

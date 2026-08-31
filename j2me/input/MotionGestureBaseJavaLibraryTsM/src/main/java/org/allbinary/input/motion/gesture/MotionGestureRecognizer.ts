@@ -24,6 +24,10 @@
         
             import { Math } from '../../../../../java/lang/Math.js';
         
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 //not plain js import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
@@ -72,16 +76,8 @@ import { J2SEMath } from '../../../../../org/allbinary/logic/math/J2SEMath.js';
       //not GWT import const J2SEMath = globalThis.org.allbinary.logic.math.J2SEMath;
 
       
-//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-      const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
-
-      
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
       //not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
-
-      
-//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-      const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
 //not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';

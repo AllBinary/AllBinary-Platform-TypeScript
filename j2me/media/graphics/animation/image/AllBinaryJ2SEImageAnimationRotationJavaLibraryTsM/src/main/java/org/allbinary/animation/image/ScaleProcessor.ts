@@ -28,8 +28,8 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-      //not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+//not plain js import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+      const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
       
 //not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';

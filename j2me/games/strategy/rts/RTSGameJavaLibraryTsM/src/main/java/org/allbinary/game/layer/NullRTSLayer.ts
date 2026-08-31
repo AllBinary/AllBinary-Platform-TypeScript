@@ -22,6 +22,10 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
+import { GameNotificationHud } from '../../../../org/allbinary/game/ag/layer/hud/basic/notification/GameNotificationHud.js';
+      //not GWT import const GameNotificationHud = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotificationHud;
+
+      
 import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
       //not GWT import const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
 
@@ -40,10 +44,6 @@ import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormI
       
 import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
       //not GWT import const Capital = globalThis.org.allbinary.game.layer.capital.Capital;
-
-      
-import { GameNotificationHud } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
-      //not GWT import const GameNotificationHud = globalThis.org.allbinary.game.layer.hud.basic.notification.GameNotificationHud;
 
       
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';

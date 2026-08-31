@@ -18,6 +18,10 @@
 
 
 
+import { GameNotificationHudCompositeInterface } from '../../../../org/allbinary/game/ag/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js';
+      //not GWT import const GameNotificationHudCompositeInterface = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotificationHudCompositeInterface;
+
+      
 import { BuildMenuCompositeInterface } from '../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js';
       //not GWT import const BuildMenuCompositeInterface = globalThis.org.allbinary.game.input.BuildMenuCompositeInterface;
 
@@ -36,10 +40,6 @@ import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/
       
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
       //not GWT import const PlayerGameInputCompositeInterface = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
-
-      
-import { GameNotificationHudCompositeInterface } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js';
-      //not GWT import const GameNotificationHudCompositeInterface = globalThis.org.allbinary.game.layer.hud.basic.notification.GameNotificationHudCompositeInterface;
 
       
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';

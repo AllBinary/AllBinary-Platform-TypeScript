@@ -28,6 +28,14 @@ import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
       //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
+import { NumberStringHud } from '../../../../../org/allbinary/game/ag/layer/hud/basic/NumberStringHud.js';
+      //not GWT import const NumberStringHud = globalThis.org.allbinary.game.ag.layer.hud.basic.NumberStringHud;
+
+      
+import { NumberStringHudFactory } from '../../../../../org/allbinary/game/ag/layer/hud/basic/NumberStringHudFactory.js';
+      //not GWT import const NumberStringHudFactory = globalThis.org.allbinary.game.ag.layer.hud.basic.NumberStringHudFactory;
+
+      
 import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
       //not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
@@ -50,14 +58,6 @@ import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/Nu
       
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
       //not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
-
-      
-import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
-      //not GWT import const NumberStringHud = globalThis.org.allbinary.game.layer.hud.basic.NumberStringHud;
-
-      
-import { NumberStringHudFactory } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHudFactory.js';
-      //not GWT import const NumberStringHudFactory = globalThis.org.allbinary.game.layer.hud.basic.NumberStringHudFactory;
 
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';

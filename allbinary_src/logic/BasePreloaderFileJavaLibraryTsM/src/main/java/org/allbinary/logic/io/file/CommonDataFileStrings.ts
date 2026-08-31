@@ -96,6 +96,10 @@ export class CommonDataFileStrings
 
     public readonly _JS: string = ".js";
 
+    public readonly CPP: string = "cpp";
+
+    public readonly _CPP: string = ".cpp";
+
     public readonly UNCRYPTED_EXTENSION: string = this.XML;
 
     public readonly ENCRYPTED_EXTENSION: string = "abd";

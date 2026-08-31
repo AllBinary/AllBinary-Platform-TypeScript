@@ -30,8 +30,8 @@ import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
       //not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
 
       
-import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
-      //not GWT import const SpriteFactory = globalThis.org.allbinary.game.layer.SpriteFactory;
+//not plain js import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
+      const SpriteFactory = globalThis.org.allbinary.game.layer.SpriteFactory;
 
       
 import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
@@ -62,8 +62,8 @@ import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-      //not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+//not plain js import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+      const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
       
 //not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';

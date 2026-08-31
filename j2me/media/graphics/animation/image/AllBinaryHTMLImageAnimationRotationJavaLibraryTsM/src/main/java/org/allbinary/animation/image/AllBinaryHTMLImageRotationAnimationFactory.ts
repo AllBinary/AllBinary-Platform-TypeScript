@@ -40,8 +40,8 @@ import { GameConfigurationCentral } from '../../../../org/allbinary/game/configu
       const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
-import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-      //not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+//not plain js import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+      const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
 //not plain js import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';

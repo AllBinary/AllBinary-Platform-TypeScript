@@ -2,7 +2,7 @@
         /*
                 *  
                 *  AllBinary Open License Version 1 
-                *  Copyright (c) 2022 AllBinary 
+                *  Copyright (c) 2026 AllBinary 
                 *   
                 *  By agreeing to this license you and any business entity you represent are 
                 *  legally bound to the AllBinary Open License Version 1 legal agreement. 
@@ -18,12 +18,8 @@
 
 
 
-            import { Object } from '../../java/lang/Object.js';
+            import { Object } from '../../../../../../java/lang/Object.js';
         
-//not plain js import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-      const Resource = globalThis.org.eclipse.swt.graphics.Resource;
-
-      
 
 
 
@@ -43,35 +39,42 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class DisposalUtil
+export class TrackedStrings
             extends Object
          {
         
 
-    private static readonly instance: DisposalUtil = new DisposalUtil();
+    private static readonly instance: TrackedStrings = new TrackedStrings();
 
-    public static getInstance(): DisposalUtil{
+    public static getInstance(): TrackedStrings{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DisposalUtil.instance;
+                        return instance;
     
 }
 
 
-    public dispose(resource: Resource){
+    public readonly TARGET_PATH_WINDOWS: string = "\\target\\";
 
-                        if(!resource.isDisposed())
-                        
-                                    {
-                                    resource.dispose();
-    
+    public readonly TARGET_PATH_UNIX: string = "/target/";
 
-                                    }
-                                
-}
+    public readonly HTML_TEMP: string = "HTMLTemp";
 
+    public readonly APPLICATION: string = "Application";
+
+    public readonly APP: string = "\\app";
+
+    public readonly GIT_COMMAND: string = "git";
+
+    public readonly CHANGE_DIRECTORY_OPTION: string = "-C";
+
+    public readonly LIST_FILES_COMMAND: string = "ls-files";
+
+    public readonly ERROR_UNMATCH_OPTION: string = "--error-unmatch";
+
+    public readonly PATHSPEC_SEPARATOR: string = "--";
 
 }
 

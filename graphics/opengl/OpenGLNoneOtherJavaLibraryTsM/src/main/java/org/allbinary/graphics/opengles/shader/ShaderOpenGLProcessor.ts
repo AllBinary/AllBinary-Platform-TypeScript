@@ -4,12 +4,12 @@
 
 
 
-//not game specific package import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
-      const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
+import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
+      //not GWT import const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
 
       
 
@@ -61,6 +61,6 @@ public constructor (){
 
 
 }
-                
-            
+
+
 

@@ -1627,7 +1627,7 @@ GameEventHandlerUtil.removeAllListeners();
                         if(gameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    this.logUtil!.putF("Set Running False", this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+                                    this.logUtil!.putF("Set Running False: " +gameCanvasRunnableInterface, this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
     
 gameCanvasRunnableInterface!.setRunning(false);
     

@@ -18,8 +18,8 @@
 
 
 
-import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
-      //not GWT import const NumberStringHud = globalThis.org.allbinary.game.layer.hud.basic.NumberStringHud;
+import { NumberStringHud } from '../../../../../org/allbinary/game/ag/layer/hud/basic/NumberStringHud.js';
+      //not GWT import const NumberStringHud = globalThis.org.allbinary.game.ag.layer.hud.basic.NumberStringHud;
 
       
 

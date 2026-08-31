@@ -56,8 +56,8 @@ import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUt
       const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-      //not GWT import const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
+//not plain js import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
+      const ImageCopyUtil = globalThis.org.allbinary.media.image.ImageCopyUtil;
 
       
 

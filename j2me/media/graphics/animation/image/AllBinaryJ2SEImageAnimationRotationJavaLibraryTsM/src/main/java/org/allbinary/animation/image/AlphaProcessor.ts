@@ -22,8 +22,8 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-      //not GWT import const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
+//not plain js import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
+      const ImageModifierUtil = globalThis.org.allbinary.media.image.ImageModifierUtil;
 
       
 

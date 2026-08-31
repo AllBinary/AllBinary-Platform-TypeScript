@@ -22,6 +22,10 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
+import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
+
+      
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
       //not GWT import const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
 
@@ -96,8 +100,6 @@ export class GameMotionGestureListener
     private motionGestureCollection: BasicArrayList = new BasicArrayListD();
 
     private touchGestureCollection: BasicArrayList = new BasicArrayListD();
-
-    private scrolledGestureCollection: BasicArrayList = new BasicArrayListD();
 
     private signed: CompleteMotionGestureListenerInterface;
 

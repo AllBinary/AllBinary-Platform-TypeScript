@@ -28,6 +28,10 @@ import { DirectoryBooleanFileVisitor } from '../../../../../org/allbinary/logic/
       //not GWT import const DirectoryBooleanFileVisitor = globalThis.org.allbinary.logic.io.file.directory.DirectoryBooleanFileVisitor;
 
       
+import { DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor.js';
+      //not GWT import const DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor = globalThis.org.allbinary.logic.io.file.directory.DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor;
+
+      
 import { DirectoryOrIncludeFileExtensionBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionBooleanFileVisitor.js';
       //not GWT import const DirectoryOrIncludeFileExtensionBooleanFileVisitor = globalThis.org.allbinary.logic.io.file.directory.DirectoryOrIncludeFileExtensionBooleanFileVisitor;
 
@@ -219,6 +223,97 @@ includeExtensionBasicArrayList!.add(includeExtension);
     
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));;
+    
+
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return files;
+    
+
+                //: 
+} catch(e) 
+            {
+e.printStackTrace();
+    
+console.log("Error: " +e +"\nMsg: " +e.message);
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+    public getTrackedFiles(path: string, includeExtensions: string[]): BasicArrayList{
+
+        try {
+            
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    
+
+    var size: number = includeExtensions!.length
+                ;;
+    
+
+
+
+
+                        for (
+    var index: number = 0;index < size; index++)
+        {
+includeExtensionBasicArrayList!.add(includeExtensions[index]!);
+    
+}
+
+
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(includeExtensionBasicArrayList));;
+    
+
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return files;
+    
+
+                //: 
+} catch(e) 
+            {
+e.printStackTrace();
+    
+console.log("Error: " +e +"\nMsg: " +e.message);
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return null;
+    
+}
+
+
+    public getTrackedFiles(path: string, includeExtension: string): BasicArrayList{
+
+        try {
+            
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();;
+    
+includeExtensionBasicArrayList!.add(includeExtension);
+    
+
+    var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor(includeExtensionBasicArrayList));;
     
 
     var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, AbFile.createAbFile(path))!;;
