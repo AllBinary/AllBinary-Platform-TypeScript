@@ -20,52 +20,52 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
-      const Processor = globalThis.org.allbinary.canvas.Processor;
+import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
-//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      //not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
 
       
-//not game specific package import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      //not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
 
       
-//not game specific package import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
-      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      //not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
 
       
-//not game specific package import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      //not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

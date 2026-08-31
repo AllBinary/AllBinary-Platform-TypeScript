@@ -8,16 +8,16 @@
         
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { Activity } from '../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { View } from '../../../android/view/View.js';
-      const View = globalThis.android.view.View;
+import { View } from '../../../android/view/View.js';
+      //not GWT import const View = globalThis.android.view.View;
 
       
-//not game specific package import { ViewGroup } from '../../../android/view/ViewGroup.js';
-      const ViewGroup = globalThis.android.view.ViewGroup;
+import { ViewGroup } from '../../../android/view/ViewGroup.js';
+      //not GWT import const ViewGroup = globalThis.android.view.ViewGroup;
 
       
 

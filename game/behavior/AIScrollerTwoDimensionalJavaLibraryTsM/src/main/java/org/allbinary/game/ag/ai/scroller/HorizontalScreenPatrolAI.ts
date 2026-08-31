@@ -22,60 +22,60 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
-      const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+import { BasicAI } from '../../../../../../org/allbinary/game/ai/BasicAI.js';
+      //not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
 
       
-//not game specific package import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
-      const GameInput = globalThis.org.allbinary.game.input.GameInput;
+import { GameInput } from '../../../../../../org/allbinary/game/input/GameInput.js';
+      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
-//not game specific package import { AllBinaryGameLayerManager } from '../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+import { AllBinaryGameLayerManager } from '../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      //not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
 
       
-//not game specific package import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
+//not plain js import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
       const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
 
       
-//not game specific package import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not game specific package import { PlayerQueue } from '../../../../../../org/allbinary/media/audio/PlayerQueue.js';
-      const PlayerQueue = globalThis.org.allbinary.media.audio.PlayerQueue;
+import { PlayerQueue } from '../../../../../../org/allbinary/media/audio/PlayerQueue.js';
+      //not GWT import const PlayerQueue = globalThis.org.allbinary.media.audio.PlayerQueue;
 
       
-//not game specific package import { SecondaryPlayerQueueFactory } from '../../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
-      const SecondaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.SecondaryPlayerQueueFactory;
+import { SecondaryPlayerQueueFactory } from '../../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
+      //not GWT import const SecondaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.SecondaryPlayerQueueFactory;
 
       
-//not game specific package import { Sound } from '../../../../../../org/allbinary/media/audio/Sound.js';
-      const Sound = globalThis.org.allbinary.media.audio.Sound;
+import { Sound } from '../../../../../../org/allbinary/media/audio/Sound.js';
+      //not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 

@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
-      const InputAutomationGenericModuleServiceFactory = globalThis.org.allbinary.input.automation.module.generic.InputAutomationGenericModuleServiceFactory;
+import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
+      //not GWT import const InputAutomationGenericModuleServiceFactory = globalThis.org.allbinary.input.automation.module.generic.InputAutomationGenericModuleServiceFactory;
 
       
-//not game specific package import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
-      const InputAutomationModuleBundleActivator = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleBundleActivator;
+import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
+      //not GWT import const InputAutomationModuleBundleActivator = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleBundleActivator;
 
       
 

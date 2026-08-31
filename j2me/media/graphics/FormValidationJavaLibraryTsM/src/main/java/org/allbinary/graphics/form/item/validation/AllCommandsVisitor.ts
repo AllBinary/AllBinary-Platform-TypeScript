@@ -18,24 +18,24 @@
 
 
 
-//not game specific package import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
-//not game specific package import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      //not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
 
       
-//not game specific package import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

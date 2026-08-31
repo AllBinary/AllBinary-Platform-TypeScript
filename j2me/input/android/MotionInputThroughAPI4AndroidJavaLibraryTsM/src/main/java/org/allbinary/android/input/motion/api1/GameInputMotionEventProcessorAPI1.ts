@@ -20,27 +20,27 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { MotionEvent } from '../../../../../../android/view/MotionEvent.js';
-      const MotionEvent = globalThis.android.view.MotionEvent;
+import { MotionEvent } from '../../../../../../android/view/MotionEvent.js';
+      //not GWT import const MotionEvent = globalThis.android.view.MotionEvent;
 
       
-//not game specific package import { BaseGameInputMotionEventProcessor } from '../../../../../../org/allbinary/android/input/motion/BaseGameInputMotionEventProcessor.js';
-      const BaseGameInputMotionEventProcessor = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
+import { BaseGameInputMotionEventProcessor } from '../../../../../../org/allbinary/android/input/motion/BaseGameInputMotionEventProcessor.js';
+      //not GWT import const BaseGameInputMotionEventProcessor = globalThis.org.allbinary.android.input.motion.BaseGameInputMotionEventProcessor;
 
       
-//not game specific package import { AllMotionRecognizer } from '../../../../../../org/allbinary/input/motion/AllMotionRecognizer.js';
-      const AllMotionRecognizer = globalThis.org.allbinary.input.motion.AllMotionRecognizer;
+import { AllMotionRecognizer } from '../../../../../../org/allbinary/input/motion/AllMotionRecognizer.js';
+      //not GWT import const AllMotionRecognizer = globalThis.org.allbinary.input.motion.AllMotionRecognizer;
 
       
-//not game specific package import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/MotionRecognizer.js';
-      const MotionRecognizer = globalThis.org.allbinary.input.motion.MotionRecognizer;
+import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/MotionRecognizer.js';
+      //not GWT import const MotionRecognizer = globalThis.org.allbinary.input.motion.MotionRecognizer;
 
       
-//not game specific package import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { ClassUtil } from '../../../../../../../org/allbinary/logic/java/anyType/clazz/ClassUtil.js';
-      const ClassUtil = globalThis.org.allbinary.logic.java.anyType.clazz.ClassUtil;
+import { ClassUtil } from '../../../../../../../org/allbinary/logic/java/anyType/clazz/ClassUtil.js';
+      //not GWT import const ClassUtil = globalThis.org.allbinary.logic.java.anyType.clazz.ClassUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
-      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+import { FileItem } from '../../../../../../../org/apache/commons/fileupload/FileItem.js';
+      //not GWT import const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
 
       
-//not game specific package import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
-      const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
+import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
+      //not GWT import const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
 
       
 

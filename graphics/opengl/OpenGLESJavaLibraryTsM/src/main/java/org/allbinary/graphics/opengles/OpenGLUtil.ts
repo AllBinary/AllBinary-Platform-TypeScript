@@ -10,83 +10,83 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { LoadTextures } from '../../../../org/allbinary/device/LoadTextures.js';
-      const LoadTextures = globalThis.org.allbinary.device.LoadTextures;
+import { LoadTextures } from '../../../../org/allbinary/device/LoadTextures.js';
+      //not GWT import const LoadTextures = globalThis.org.allbinary.device.LoadTextures;
 
       
-//not game specific package import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
-      const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
+import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
+      //not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
 
       
-//not game specific package import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-      const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+      //not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
       
-//not game specific package import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+      //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
-//not game specific package import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-      const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      //not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
       
-//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
-//not game specific package import { RendererStrings } from '../../../../org/allbinary/graphics/opengles/renderer/RendererStrings.js';
-      const RendererStrings = globalThis.org.allbinary.graphics.opengles.renderer.RendererStrings;
+import { RendererStrings } from '../../../../org/allbinary/graphics/opengles/renderer/RendererStrings.js';
+      //not GWT import const RendererStrings = globalThis.org.allbinary.graphics.opengles.renderer.RendererStrings;
 
       
-//not game specific package import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-      const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
+      //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-//not game specific package import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
-//not game specific package import { OpenGLImageCache } from '../../../../org/allbinary/image/opengles/OpenGLImageCache.js';
-      const OpenGLImageCache = globalThis.org.allbinary.image.opengles.OpenGLImageCache;
+import { OpenGLImageCache } from '../../../../org/allbinary/image/opengles/OpenGLImageCache.js';
+      //not GWT import const OpenGLImageCache = globalThis.org.allbinary.image.opengles.OpenGLImageCache;
 
       
-//not game specific package import { OpenGLImageCacheFactory } from '../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
-      const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
+import { OpenGLImageCacheFactory } from '../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
+      //not GWT import const OpenGLImageCacheFactory = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
-      const SynchObject = globalThis.org.allbinary.thread.SynchObject;
+import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
+      //not GWT import const SynchObject = globalThis.org.allbinary.thread.SynchObject;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

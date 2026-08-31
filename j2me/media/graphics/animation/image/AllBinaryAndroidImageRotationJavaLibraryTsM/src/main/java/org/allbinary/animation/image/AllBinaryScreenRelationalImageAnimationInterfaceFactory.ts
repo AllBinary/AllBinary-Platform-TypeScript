@@ -20,40 +20,40 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not game specific package import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-      const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
+import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+      //not GWT import const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
 
       
-//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-      const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+      //not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
       
-//not game specific package import { ScreenRelationalUtil } from '../../../../org/allbinary/graphics/displayable/ScreenRelationalUtil.js';
-      const ScreenRelationalUtil = globalThis.org.allbinary.graphics.displayable.ScreenRelationalUtil;
+import { ScreenRelationalUtil } from '../../../../org/allbinary/graphics/displayable/ScreenRelationalUtil.js';
+      //not GWT import const ScreenRelationalUtil = globalThis.org.allbinary.graphics.displayable.ScreenRelationalUtil;
 
       
-//not game specific package import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
+//not plain js import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
       const PrimitiveIntUtil = globalThis.org.allbinary.logic.math.PrimitiveIntUtil;
 
       
-//not game specific package import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-      const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+      //not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
       
-//not game specific package import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 

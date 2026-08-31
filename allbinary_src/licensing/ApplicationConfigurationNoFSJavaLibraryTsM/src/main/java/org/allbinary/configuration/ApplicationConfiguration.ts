@@ -8,31 +8,31 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { Feature } from '../../../org/allbinary/game/configuration/feature/Feature.js';
-      const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
+import { Feature } from '../../../org/allbinary/game/configuration/feature/Feature.js';
+      //not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
 
       
-//not game specific package import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      //not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
 
       
-//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

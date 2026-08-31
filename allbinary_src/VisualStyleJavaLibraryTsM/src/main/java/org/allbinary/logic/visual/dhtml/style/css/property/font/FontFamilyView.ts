@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { CssPropertyView } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js';
-      const CssPropertyView = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyView;
+import { CssPropertyView } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js';
+      //not GWT import const CssPropertyView = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyView;
 
       
-//not game specific package import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

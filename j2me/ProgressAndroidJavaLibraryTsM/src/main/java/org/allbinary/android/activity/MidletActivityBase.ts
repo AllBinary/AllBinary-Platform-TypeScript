@@ -22,40 +22,40 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { Activity } from '../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { MotionEvent } from '../../../../android/view/MotionEvent.js';
-      const MotionEvent = globalThis.android.view.MotionEvent;
+import { MotionEvent } from '../../../../android/view/MotionEvent.js';
+      //not GWT import const MotionEvent = globalThis.android.view.MotionEvent;
 
       
-//not game specific package import { View } from '../../../../android/view/View.js';
-      const View = globalThis.android.view.View;
+import { View } from '../../../../android/view/View.js';
+      //not GWT import const View = globalThis.android.view.View;
 
       
-//not game specific package import { GenericMotionEventVerifyInterface } from '../../../../org/allbinary/android/GenericMotionEventVerifyInterface.js';
-      const GenericMotionEventVerifyInterface = globalThis.org.allbinary.android.GenericMotionEventVerifyInterface;
+import { GenericMotionEventVerifyInterface } from '../../../../org/allbinary/android/GenericMotionEventVerifyInterface.js';
+      //not GWT import const GenericMotionEventVerifyInterface = globalThis.org.allbinary.android.GenericMotionEventVerifyInterface;
 
       
-//not game specific package import { GameFeatureEvent } from '../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
-      const GameFeatureEvent = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
+import { GameFeatureEvent } from '../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
+      //not GWT import const GameFeatureEvent = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
 
       
-//not game specific package import { GameFeatureListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameFeatureListenerInterface.js';
-      const GameFeatureListenerInterface = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
+import { GameFeatureListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameFeatureListenerInterface.js';
+      //not GWT import const GameFeatureListenerInterface = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
 
       
-//not game specific package import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
-      const GameInitializedEvent = globalThis.org.allbinary.game.configuration.event.GameInitializedEvent;
+import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
+      //not GWT import const GameInitializedEvent = globalThis.org.allbinary.game.configuration.event.GameInitializedEvent;
 
       
-//not game specific package import { GameInitializedListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
-      const GameInitializedListenerInterface = globalThis.org.allbinary.game.configuration.event.GameInitializedListenerInterface;
+import { GameInitializedListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
+      //not GWT import const GameInitializedListenerInterface = globalThis.org.allbinary.game.configuration.event.GameInitializedListenerInterface;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
 

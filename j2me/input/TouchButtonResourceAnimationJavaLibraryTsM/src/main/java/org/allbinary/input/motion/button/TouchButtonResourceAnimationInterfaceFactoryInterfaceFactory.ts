@@ -20,68 +20,68 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-      const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
+      //not GWT import const AnimationBehaviorFactory = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
 
       
-//not game specific package import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+      //not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
 
       
-//not game specific package import { OneRowSpriteIndexedAnimationFactory } from '../../../../../org/allbinary/animation/image/sprite/OneRowSpriteIndexedAnimationFactory.js';
-      const OneRowSpriteIndexedAnimationFactory = globalThis.org.allbinary.animation.image.sprite.OneRowSpriteIndexedAnimationFactory;
+import { OneRowSpriteIndexedAnimationFactory } from '../../../../../org/allbinary/animation/image/sprite/OneRowSpriteIndexedAnimationFactory.js';
+      //not GWT import const OneRowSpriteIndexedAnimationFactory = globalThis.org.allbinary.animation.image.sprite.OneRowSpriteIndexedAnimationFactory;
 
       
-//not game specific package import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
-      const BaseResourceAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.resource.BaseResourceAnimationInterfaceFactoryInterfaceFactory;
+import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
+      //not GWT import const BaseResourceAnimationInterfaceFactoryInterfaceFactory = globalThis.org.allbinary.animation.resource.BaseResourceAnimationInterfaceFactoryInterfaceFactory;
 
       
-//not game specific package import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
-      const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
+import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
+      //not GWT import const ResourceLoadingLevelFactory = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
 
       
-//not game specific package import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-      const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+      //not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
       
-//not game specific package import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+      //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
-//not game specific package import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-      const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      //not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 
       
-//not game specific package import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
-      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
+      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not game specific package import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
-      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
+      //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      //not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
 
       
-//not game specific package import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/ImageCompleteUtil.js';
-      const ImageCompleteUtil = globalThis.org.allbinary.media.image.ImageCompleteUtil;
+import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/ImageCompleteUtil.js';
+      //not GWT import const ImageCompleteUtil = globalThis.org.allbinary.media.image.ImageCompleteUtil;
 
       
 

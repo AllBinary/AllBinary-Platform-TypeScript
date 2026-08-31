@@ -20,24 +20,24 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
-//not game specific package import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
-      const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
+import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
+      //not GWT import const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
 
       
-//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

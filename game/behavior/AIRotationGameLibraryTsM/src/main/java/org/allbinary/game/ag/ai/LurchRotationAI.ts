@@ -18,31 +18,31 @@
 
 
 
-//not game specific package import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
-      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
+      //not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
       
-//not game specific package import { RotationAnimationInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterface.js';
-      const RotationAnimationInterface = globalThis.org.allbinary.animation.RotationAnimationInterface;
+import { RotationAnimationInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterface.js';
+      //not GWT import const RotationAnimationInterface = globalThis.org.allbinary.animation.RotationAnimationInterface;
 
       
-//not game specific package import { RotationAnimationInterfaceCompositeInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterfaceCompositeInterface.js';
-      const RotationAnimationInterfaceCompositeInterface = globalThis.org.allbinary.animation.RotationAnimationInterfaceCompositeInterface;
+import { RotationAnimationInterfaceCompositeInterface } from '../../../../../org/allbinary/animation/RotationAnimationInterfaceCompositeInterface.js';
+      //not GWT import const RotationAnimationInterfaceCompositeInterface = globalThis.org.allbinary.animation.RotationAnimationInterfaceCompositeInterface;
 
       
 import { LurchAI } from '../../../../../org/allbinary/game/ag/ai/tactical/LurchAI.js';
-      //not GWT import and is game specific code const LurchAI = globalThis.org.allbinary.game.ag.ai.tactical.LurchAI;
+      //not GWT import const LurchAI = globalThis.org.allbinary.game.ag.ai.tactical.LurchAI;
 
       
-//not game specific package import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-      const GameInput = globalThis.org.allbinary.game.input.GameInput;
+import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
+      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
+//not plain js import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
       const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
       

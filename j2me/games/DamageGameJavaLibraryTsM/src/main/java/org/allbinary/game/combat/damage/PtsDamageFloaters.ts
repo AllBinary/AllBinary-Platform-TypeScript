@@ -18,52 +18,52 @@
 
 
 
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
+//not plain js import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
       const MyRandomFactory = globalThis.org.allbinary.game.rand.MyRandomFactory;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorArrayIndexer } from '../../../../../org/allbinary/graphics/color/BasicColorArrayIndexer.js';
-      const BasicColorArrayIndexer = globalThis.org.allbinary.graphics.color.BasicColorArrayIndexer;
+import { BasicColorArrayIndexer } from '../../../../../org/allbinary/graphics/color/BasicColorArrayIndexer.js';
+      //not GWT import const BasicColorArrayIndexer = globalThis.org.allbinary.graphics.color.BasicColorArrayIndexer;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
-      const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
+import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
+      //not GWT import const BasicColorSetUtil = globalThis.org.allbinary.graphics.color.BasicColorSetUtil;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { CharArrayFactory } from '../../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
-      const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
+import { CharArrayFactory } from '../../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
+      //not GWT import const CharArrayFactory = globalThis.org.allbinary.logic.java.character.CharArrayFactory;
 
       
-//not game specific package import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not plain js import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
       const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
 
       
-//not game specific package import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
+//not plain js import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
       const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       
-//not game specific package import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+      //not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
 
       
-//not game specific package import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
-      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
 

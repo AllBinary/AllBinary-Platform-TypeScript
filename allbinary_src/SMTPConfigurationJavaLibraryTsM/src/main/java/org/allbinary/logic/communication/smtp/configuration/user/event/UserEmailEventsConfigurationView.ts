@@ -22,44 +22,44 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { Vector } from '../../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
-      const NodeList = globalThis.org.w3c.dom.NodeList;
+import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
+      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 

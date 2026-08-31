@@ -20,19 +20,19 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
-//not game specific package import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       

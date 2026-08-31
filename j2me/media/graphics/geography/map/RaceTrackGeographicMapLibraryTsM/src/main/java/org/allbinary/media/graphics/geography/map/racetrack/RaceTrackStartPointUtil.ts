@@ -22,32 +22,32 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      //not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
       
-//not game specific package import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      //not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
       
-//not game specific package import { PathFindingInfo } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
-      const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
+import { PathFindingInfo } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
+      //not GWT import const PathFindingInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
 
       
-//not game specific package import { PathFindingNode } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
-      const PathFindingNode = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
+import { PathFindingNode } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
+      //not GWT import const PathFindingNode = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
 
       
 

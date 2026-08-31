@@ -20,11 +20,11 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Angle } from '../../../../org/allbinary/math/Angle.js';
+//not plain js import { Angle } from '../../../../org/allbinary/math/Angle.js';
       const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not game specific package import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not plain js import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
       const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       

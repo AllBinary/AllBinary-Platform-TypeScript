@@ -20,31 +20,31 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
-      const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
+import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
+      //not GWT import const CompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEvent;
 
       
-//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
-      const MotionGestureToMotionGestureActionAssociation = globalThis.org.allbinary.input.motion.gesture.MotionGestureToMotionGestureActionAssociation;
+import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
+      //not GWT import const MotionGestureToMotionGestureActionAssociation = globalThis.org.allbinary.input.motion.gesture.MotionGestureToMotionGestureActionAssociation;
 
       
-//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

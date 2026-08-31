@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
-      const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
+import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
+      //not GWT import const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
 
       
-//not game specific package import { GeographicMapCellPositionTracking } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
-      const GeographicMapCellPositionTracking = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionTracking;
+import { GeographicMapCellPositionTracking } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
+      //not GWT import const GeographicMapCellPositionTracking = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionTracking;
 
       
 

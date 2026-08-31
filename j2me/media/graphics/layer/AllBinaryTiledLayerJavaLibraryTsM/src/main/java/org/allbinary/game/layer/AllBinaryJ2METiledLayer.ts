@@ -20,23 +20,23 @@
 
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
-      const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
+import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
+      //not GWT import const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

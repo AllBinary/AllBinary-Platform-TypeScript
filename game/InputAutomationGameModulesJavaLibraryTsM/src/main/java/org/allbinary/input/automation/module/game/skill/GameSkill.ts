@@ -20,19 +20,19 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

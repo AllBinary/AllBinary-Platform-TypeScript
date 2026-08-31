@@ -20,20 +20,20 @@
 
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      //not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
 
       
-//not game specific package import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      //not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
 
       
 

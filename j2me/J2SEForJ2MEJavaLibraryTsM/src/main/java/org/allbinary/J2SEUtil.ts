@@ -20,16 +20,16 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Map } from '../../java/util/Map.js';
-      const Map = globalThis.java.util.Map;
+import { Map } from '../../java/util/Map.js';
+      //not GWT import const Map = globalThis.java.util.Map;
 
       
-//not game specific package import { Set } from '../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
 

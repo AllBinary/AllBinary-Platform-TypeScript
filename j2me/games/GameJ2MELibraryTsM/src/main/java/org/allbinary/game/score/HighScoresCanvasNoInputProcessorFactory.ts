@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-      const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
+import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
+      //not GWT import const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
 
       
 

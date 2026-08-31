@@ -22,48 +22,48 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
+      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
-//not game specific package import { TimeCreatedView } from '../../../../../../org/allbinary/business/time/created/TimeCreatedView.js';
-      const TimeCreatedView = globalThis.org.allbinary.business.time.created.TimeCreatedView;
+import { TimeCreatedView } from '../../../../../../org/allbinary/business/time/created/TimeCreatedView.js';
+      //not GWT import const TimeCreatedView = globalThis.org.allbinary.business.time.created.TimeCreatedView;
 
       
-//not game specific package import { TimeLastModifiedView } from '../../../../../../org/allbinary/business/time/modified/TimeLastModifiedView.js';
-      const TimeLastModifiedView = globalThis.org.allbinary.business.time.modified.TimeLastModifiedView;
+import { TimeLastModifiedView } from '../../../../../../org/allbinary/business/time/modified/TimeLastModifiedView.js';
+      //not GWT import const TimeLastModifiedView = globalThis.org.allbinary.business.time.modified.TimeLastModifiedView;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
-//not game specific package import { UserEmailConfigurationData } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationData.js';
-      const UserEmailConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
+import { UserEmailConfigurationData } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationData.js';
+      //not GWT import const UserEmailConfigurationData = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
 
       
-//not game specific package import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
-      const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
+import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
+      //not GWT import const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
 
       
-//not game specific package import { UserEmailConfigurationView } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationView.js';
-      const UserEmailConfigurationView = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationView;
+import { UserEmailConfigurationView } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationView.js';
+      //not GWT import const UserEmailConfigurationView = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationView;
 
       
-//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-      const NodeList = globalThis.org.w3c.dom.NodeList;
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 

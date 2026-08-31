@@ -18,20 +18,20 @@
 
 
 
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
+      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-//not game specific package import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
-//not game specific package import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-      const Layer = globalThis.org.allbinary.layer.Layer;
+import { Layer } from '../../../../org/allbinary/layer/Layer.js';
+      //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
 

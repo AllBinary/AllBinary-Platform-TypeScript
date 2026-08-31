@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { ValidationInterface } from '../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+import { ValidationInterface } from '../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      //not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
       
-//not game specific package import { FontFamilyValidation } from '../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/font/FontFamilyValidation.js';
-      const FontFamilyValidation = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyValidation;
+import { FontFamilyValidation } from '../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/font/FontFamilyValidation.js';
+      //not GWT import const FontFamilyValidation = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.font.FontFamilyValidation;
 
       
-//not game specific package import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

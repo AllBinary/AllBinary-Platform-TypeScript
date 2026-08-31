@@ -18,24 +18,24 @@
 
 
 
-//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-      const Direction = globalThis.org.allbinary.direction.Direction;
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
+      //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
-//not game specific package import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not plain js import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
       const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
-//not game specific package import { Angle } from '../../../../../org/allbinary/math/Angle.js';
+//not plain js import { Angle } from '../../../../../org/allbinary/math/Angle.js';
       const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

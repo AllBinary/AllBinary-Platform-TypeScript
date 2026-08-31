@@ -20,76 +20,76 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
-      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
+      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
-//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { InputStream } from '../../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      //not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
 
       
-//not game specific package import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
-      const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+      //not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbCrypt } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js';
-      const AbCrypt = globalThis.org.allbinary.logic.control.crypt.jcehelper.AbCrypt;
+import { AbCrypt } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js';
+      //not GWT import const AbCrypt = globalThis.org.allbinary.logic.control.crypt.jcehelper.AbCrypt;
 
       
-//not game specific package import { KeySpecFactory } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js';
-      const KeySpecFactory = globalThis.org.allbinary.logic.control.crypt.jcehelper.KeySpecFactory;
+import { KeySpecFactory } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js';
+      //not GWT import const KeySpecFactory = globalThis.org.allbinary.logic.control.crypt.jcehelper.KeySpecFactory;
 
       
-//not game specific package import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
-      const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
+import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
+      //not GWT import const AbFileInputStream = globalThis.org.allbinary.logic.io.AbFileInputStream;
 
       
-//not game specific package import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
-//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
-      const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
+import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
+      //not GWT import const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
-      const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
+import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
+      //not GWT import const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
-      const TransformInfoTemplateData = globalThis.org.allbinary.logic.visual.transform.info.template.TransformInfoTemplateData;
+import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
+      //not GWT import const TransformInfoTemplateData = globalThis.org.allbinary.logic.visual.transform.info.template.TransformInfoTemplateData;
 
       
 

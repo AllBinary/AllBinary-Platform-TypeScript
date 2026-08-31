@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
-      const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
+import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
+      //not GWT import const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
 
       
 

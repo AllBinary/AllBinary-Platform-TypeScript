@@ -20,15 +20,15 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonPhoneStrings } from '../../../org/allbinary/string/CommonPhoneStrings.js';
+//not plain js import { CommonPhoneStrings } from '../../../org/allbinary/string/CommonPhoneStrings.js';
       const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

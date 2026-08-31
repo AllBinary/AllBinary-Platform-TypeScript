@@ -22,60 +22,60 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Serializable } from '../../../../../../../java/io/Serializable.js';
-      const Serializable = globalThis.java.io.Serializable;
+import { Serializable } from '../../../../../../../java/io/Serializable.js';
+      //not GWT import const Serializable = globalThis.java.io.Serializable;
 
       
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { StoreFrontInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+import { StoreFrontInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
-//not game specific package import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
-      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
+      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
-//not game specific package import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
-      const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
+import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
+      //not GWT import const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
 
       
-//not game specific package import { PaymentData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
-      const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+import { PaymentData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+      //not GWT import const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
 
       
-//not game specific package import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
-      const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+      //not GWT import const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
 
       
-//not game specific package import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
-      const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
+import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
+      //not GWT import const RTSInterface = globalThis.org.allbinary.game.layer.RTSInterface;
 
       
 

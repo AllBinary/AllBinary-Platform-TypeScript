@@ -24,35 +24,35 @@
         
             import { Thread } from '../../../../../java/lang/Thread.js';
         
-//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-      const Item = globalThis.javax.microedition.lcdui.Item;
+import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+      //not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
 
       
-//not game specific package import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
-      const GameState = globalThis.org.allbinary.game.state.GameState;
+import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
+      //not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
 
       
-//not game specific package import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
-      const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+      //not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
       
-//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

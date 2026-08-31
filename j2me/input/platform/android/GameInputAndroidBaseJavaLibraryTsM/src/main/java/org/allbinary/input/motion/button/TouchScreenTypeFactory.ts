@@ -20,19 +20,19 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { Activity } from '../../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { Configuration } from '../../../../../android/content/res/Configuration.js';
-      const Configuration = globalThis.android.content.res.Configuration;
+import { Configuration } from '../../../../../android/content/res/Configuration.js';
+      //not GWT import const Configuration = globalThis.android.content.res.Configuration;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       

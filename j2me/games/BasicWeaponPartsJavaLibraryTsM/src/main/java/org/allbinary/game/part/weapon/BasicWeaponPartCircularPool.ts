@@ -22,20 +22,20 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      //not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
 
       
-//not game specific package import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-      const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+      //not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
 
       
-//not game specific package import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
-      const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
+      //not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 

@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
-      const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
+import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
+      //not GWT import const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
 
       
-//not game specific package import { BasicEmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
-      const BasicEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
+import { BasicEmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
+      //not GWT import const BasicEmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
 
       
-//not game specific package import { EmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-      const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
+import { EmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+      //not GWT import const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

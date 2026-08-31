@@ -22,31 +22,31 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { Enumeration } from '../../../../../../java/util/Enumeration.js';
-      const Enumeration = globalThis.java.util.Enumeration;
+import { Enumeration } from '../../../../../../java/util/Enumeration.js';
+      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

@@ -26,91 +26,91 @@
         
             import { Thread } from '../../../../../../java/lang/Thread.js';
         
-//not game specific package import { File } from '../../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { FileFilter } from '../../../../../../java/io/FileFilter.js';
-      const FileFilter = globalThis.java.io.FileFilter;
+import { FileFilter } from '../../../../../../java/io/FileFilter.js';
+      //not GWT import const FileFilter = globalThis.java.io.FileFilter;
 
       
-//not game specific package import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
-      const FileInputStream = globalThis.java.io.FileInputStream;
+import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
+      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
 
       
-//not game specific package import { URL } from '../../../../../../java/net/URL.js';
-      const URL = globalThis.java.net.URL;
+import { URL } from '../../../../../../java/net/URL.js';
+      //not GWT import const URL = globalThis.java.net.URL;
 
       
-//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { JarInputStream } from '../../../../../../java/util/jar/JarInputStream.js';
-      const JarInputStream = globalThis.java.util.jar.JarInputStream;
+import { JarInputStream } from '../../../../../../java/util/jar/JarInputStream.js';
+      //not GWT import const JarInputStream = globalThis.java.util.jar.JarInputStream;
 
       
-//not game specific package import { Manifest } from '../../../../../../java/util/jar/Manifest.js';
-      const Manifest = globalThis.java.util.jar.Manifest;
+import { Manifest } from '../../../../../../java/util/jar/Manifest.js';
+      //not GWT import const Manifest = globalThis.java.util.jar.Manifest;
 
       
-//not game specific package import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
-      const Bundle = globalThis.org.osgi.framework.Bundle;
+import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
+      //not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
 
       
-//not game specific package import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
-      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
-//not game specific package import { Constants } from '../../../../../../org/osgi/framework/Constants.js';
-      const Constants = globalThis.org.osgi.framework.Constants;
+import { Constants } from '../../../../../../org/osgi/framework/Constants.js';
+      //not GWT import const Constants = globalThis.org.osgi.framework.Constants;
 
       
-//not game specific package import { InputAutomationBundleActivator } from '../../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
-      const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
+import { InputAutomationBundleActivator } from '../../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
+      //not GWT import const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-      const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+      //not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
 
       
-//not game specific package import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
-      const SubDirectory = globalThis.org.allbinary.logic.io.file.directory.SubDirectory;
+import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
+      //not GWT import const SubDirectory = globalThis.org.allbinary.logic.io.file.directory.SubDirectory;
 
       
-//not game specific package import { BasicFileFilterUtil } from '../../../../../../org/allbinary/logic/io/file/filter/BasicFileFilterUtil.js';
-      const BasicFileFilterUtil = globalThis.org.allbinary.logic.io.file.filter.BasicFileFilterUtil;
+import { BasicFileFilterUtil } from '../../../../../../org/allbinary/logic/io/file/filter/BasicFileFilterUtil.js';
+      //not GWT import const BasicFileFilterUtil = globalThis.org.allbinary.logic.io.file.filter.BasicFileFilterUtil;
 
       
-//not game specific package import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
-      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+      //not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

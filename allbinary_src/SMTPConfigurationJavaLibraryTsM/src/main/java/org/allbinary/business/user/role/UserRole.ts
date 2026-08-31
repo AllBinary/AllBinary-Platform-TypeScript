@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Serializable } from '../../../../../java/io/Serializable.js';
-      const Serializable = globalThis.java.io.Serializable;
+import { Serializable } from '../../../../../java/io/Serializable.js';
+      //not GWT import const Serializable = globalThis.java.io.Serializable;
 
       
-//not game specific package import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
-      const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
+import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
+      //not GWT import const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
 
       
 

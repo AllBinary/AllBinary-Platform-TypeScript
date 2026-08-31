@@ -24,40 +24,40 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { Control } from '../../../../javax/microedition/media/Control.js';
-      const Control = globalThis.javax.microedition.media.Control;
+import { Control } from '../../../../javax/microedition/media/Control.js';
+      //not GWT import const Control = globalThis.javax.microedition.media.Control;
 
       
-//not game specific package import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
-      const Controllable = globalThis.javax.microedition.media.Controllable;
+import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
+      //not GWT import const Controllable = globalThis.javax.microedition.media.Controllable;
 
       
-//not game specific package import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      //not GWT import const Player = globalThis.javax.microedition.media.Player;
 
       
-//not game specific package import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      //not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      //not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
 
       
-//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      //not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 

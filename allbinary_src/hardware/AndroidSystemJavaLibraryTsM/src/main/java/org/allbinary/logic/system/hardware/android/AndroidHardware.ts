@@ -24,63 +24,63 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Closeable } from '../../../../../../java/io/Closeable.js';
-      const Closeable = globalThis.java.io.Closeable;
+import { Closeable } from '../../../../../../java/io/Closeable.js';
+      //not GWT import const Closeable = globalThis.java.io.Closeable;
 
       
-//not game specific package import { FileReader } from '../../../../../../java/io/FileReader.js';
-      const FileReader = globalThis.java.io.FileReader;
+import { FileReader } from '../../../../../../java/io/FileReader.js';
+      //not GWT import const FileReader = globalThis.java.io.FileReader;
 
       
-//not game specific package import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
-      const LineNumberReader = globalThis.java.io.LineNumberReader;
+import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
+      //not GWT import const LineNumberReader = globalThis.java.io.LineNumberReader;
 
       
-//not game specific package import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { NullCloseable } from '../../../../../../org/allbinary/logic/io/NullCloseable.js';
-      const NullCloseable = globalThis.org.allbinary.logic.io.NullCloseable;
+import { NullCloseable } from '../../../../../../org/allbinary/logic/io/NullCloseable.js';
+      //not GWT import const NullCloseable = globalThis.org.allbinary.logic.io.NullCloseable;
 
       
-//not game specific package import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
-      const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
+import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
+      //not GWT import const HardwareInterface = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
 
       
-//not game specific package import { UnknownHardware } from '../../../../../../org/allbinary/logic/system/hardware/components/android/UnknownHardware.js';
-      const UnknownHardware = globalThis.org.allbinary.logic.system.hardware.components.android.UnknownHardware;
+import { UnknownHardware } from '../../../../../../org/allbinary/logic/system/hardware/components/android/UnknownHardware.js';
+      //not GWT import const UnknownHardware = globalThis.org.allbinary.logic.system.hardware.components.android.UnknownHardware;
 
       
-//not game specific package import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-      const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+      //not GWT import const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
 
       
-//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

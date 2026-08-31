@@ -22,11 +22,11 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { File } from '../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       

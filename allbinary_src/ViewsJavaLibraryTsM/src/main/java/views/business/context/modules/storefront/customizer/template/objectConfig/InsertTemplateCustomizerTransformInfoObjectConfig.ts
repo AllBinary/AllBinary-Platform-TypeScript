@@ -20,36 +20,36 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { TransformInfoDomNodeView } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNodeView.js';
-      const TransformInfoDomNodeView = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoDomNodeView;
+import { TransformInfoDomNodeView } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNodeView.js';
+      //not GWT import const TransformInfoDomNodeView = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoDomNodeView;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
-      const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
+import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+      //not GWT import const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
 
       
-//not game specific package import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
-      const TransformInfoObjectConfigData = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
+import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
+      //not GWT import const TransformInfoObjectConfigData = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
 
       
-//not game specific package import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
-      const NodeList = globalThis.org.w3c.dom.NodeList;
+import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
+      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 

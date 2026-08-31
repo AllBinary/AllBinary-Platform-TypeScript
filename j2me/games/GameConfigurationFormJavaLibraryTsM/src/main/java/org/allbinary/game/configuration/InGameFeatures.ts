@@ -18,48 +18,48 @@
 
 
 
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';
-      const GameFeatureChoiceGroups = globalThis.org.allbinary.game.configuration.feature.GameFeatureChoiceGroups;
+import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';
+      //not GWT import const GameFeatureChoiceGroups = globalThis.org.allbinary.game.configuration.feature.GameFeatureChoiceGroups;
 
       
-//not game specific package import { InGameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js';
-      const InGameFeatureChoiceGroups = globalThis.org.allbinary.game.configuration.feature.InGameFeatureChoiceGroups;
+import { InGameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js';
+      //not GWT import const InGameFeatureChoiceGroups = globalThis.org.allbinary.game.configuration.feature.InGameFeatureChoiceGroups;
 
       
-//not game specific package import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
-      const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
+import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
+      //not GWT import const SensorFeatureFactory = globalThis.org.allbinary.game.configuration.feature.SensorFeatureFactory;
 
       
-//not game specific package import { TouchFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
-      const TouchFeatureFactory = globalThis.org.allbinary.game.configuration.feature.TouchFeatureFactory;
+import { TouchFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
+      //not GWT import const TouchFeatureFactory = globalThis.org.allbinary.game.configuration.feature.TouchFeatureFactory;
 
       
-//not game specific package import { Init } from '../../../../org/allbinary/init/Init.js';
-      const Init = globalThis.org.allbinary.init.Init;
+import { Init } from '../../../../org/allbinary/init/Init.js';
+      //not GWT import const Init = globalThis.org.allbinary.init.Init;
 
       
-//not game specific package import { OrientationData } from '../../../../org/allbinary/input/gyro/OrientationData.js';
-      const OrientationData = globalThis.org.allbinary.input.gyro.OrientationData;
+import { OrientationData } from '../../../../org/allbinary/input/gyro/OrientationData.js';
+      //not GWT import const OrientationData = globalThis.org.allbinary.input.gyro.OrientationData;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

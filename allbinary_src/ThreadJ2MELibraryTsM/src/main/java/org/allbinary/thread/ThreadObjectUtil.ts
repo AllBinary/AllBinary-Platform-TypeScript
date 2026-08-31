@@ -12,8 +12,8 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-//not game specific package import { TsUtil } from '../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
 

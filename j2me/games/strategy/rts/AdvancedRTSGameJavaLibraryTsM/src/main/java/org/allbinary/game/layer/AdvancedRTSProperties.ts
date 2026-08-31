@@ -20,36 +20,36 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { NoShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/NoShakeAnimationListener.js';
-      const NoShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.NoShakeAnimationListener;
+import { NoShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/NoShakeAnimationListener.js';
+      //not GWT import const NoShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.NoShakeAnimationListener;
 
       
-//not game specific package import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
-      const ShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListener;
+import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
+      //not GWT import const ShakeAnimationListener = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListener;
 
       
-//not game specific package import { ShakeAnimationListenerFactory } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListenerFactory.js';
-      const ShakeAnimationListenerFactory = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListenerFactory;
+import { ShakeAnimationListenerFactory } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListenerFactory.js';
+      //not GWT import const ShakeAnimationListenerFactory = globalThis.org.allbinary.animation.transition.shake.ShakeAnimationListenerFactory;
 
       
-//not game specific package import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      //not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
       
-//not game specific package import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
-      const TickableInterface = globalThis.org?.allbinary?.game?.tick?.TickableInterface;
+import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
+      //not GWT import const TickableInterface = globalThis.org?.allbinary?.game?.tick?.TickableInterface;
 
       
-//not game specific package import { AllBinaryNoVibration } from '../../../../org/allbinary/media/AllBinaryNoVibration.js';
-      const AllBinaryNoVibration = globalThis.org.allbinary.media.AllBinaryNoVibration;
+import { AllBinaryNoVibration } from '../../../../org/allbinary/media/AllBinaryNoVibration.js';
+      //not GWT import const AllBinaryNoVibration = globalThis.org.allbinary.media.AllBinaryNoVibration;
 
       
-//not game specific package import { AllBinaryVibration } from '../../../../org/allbinary/media/AllBinaryVibration.js';
-      const AllBinaryVibration = globalThis.org.allbinary.media.AllBinaryVibration;
+import { AllBinaryVibration } from '../../../../org/allbinary/media/AllBinaryVibration.js';
+      //not GWT import const AllBinaryVibration = globalThis.org.allbinary.media.AllBinaryVibration;
 
       
-//not game specific package import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
-      const AllBinaryVibrationME = globalThis.org.allbinary.media.AllBinaryVibrationME;
+import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
+      //not GWT import const AllBinaryVibrationME = globalThis.org.allbinary.media.AllBinaryVibrationME;
 
       
 

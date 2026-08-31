@@ -20,72 +20,72 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not game specific package import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
-      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
+      //not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
 
       
-//not game specific package import { GameCommandCanvas } from '../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js';
-      const GameCommandCanvas = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
+import { GameCommandCanvas } from '../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js';
+      //not GWT import const GameCommandCanvas = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
 
       
-//not game specific package import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-      const Input = globalThis.org.allbinary.game.input.Input;
+import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+      //not GWT import const Input = globalThis.org.allbinary.game.input.Input;
 
       
-//not game specific package import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
-      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
+      //not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
       
-//not game specific package import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
-      const PlatformKeyFactory = globalThis.org.allbinary.game.input.PlatformKeyFactory;
+import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
+      //not GWT import const PlatformKeyFactory = globalThis.org.allbinary.game.input.PlatformKeyFactory;
 
       
-//not game specific package import { RawKeyEventListener } from '../../../../../org/allbinary/game/input/event/RawKeyEventListener.js';
-      const RawKeyEventListener = globalThis.org.allbinary.game.input.event.RawKeyEventListener;
+import { RawKeyEventListener } from '../../../../../org/allbinary/game/input/event/RawKeyEventListener.js';
+      //not GWT import const RawKeyEventListener = globalThis.org.allbinary.game.input.event.RawKeyEventListener;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { TextItemVisitor } from '../../../../../org/allbinary/graphics/form/item/validation/TextItemVisitor.js';
-      const TextItemVisitor = globalThis.org.allbinary.graphics.form.item.validation.TextItemVisitor;
+import { TextItemVisitor } from '../../../../../org/allbinary/graphics/form/item/validation/TextItemVisitor.js';
+      //not GWT import const TextItemVisitor = globalThis.org.allbinary.graphics.form.item.validation.TextItemVisitor;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

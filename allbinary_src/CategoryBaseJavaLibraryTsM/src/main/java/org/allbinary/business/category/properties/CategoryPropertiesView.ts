@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
-      const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+      //not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Element } from '../../../../../org/w3c/dom/Element.js';
-      const Element = globalThis.org.w3c.dom.Element;
+import { Element } from '../../../../../org/w3c/dom/Element.js';
+      //not GWT import const Element = globalThis.org.w3c.dom.Element;
 
       
-//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { InputOutputTypeData } from '../../org/allbinary/logic/io/InputOutputTypeData.js';
-      const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
+import { InputOutputTypeData } from '../../org/allbinary/logic/io/InputOutputTypeData.js';
+      //not GWT import const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
 
       
-//not game specific package import { TransformTag } from '../../tags/TransformTag.js';
-      const TransformTag = globalThis.tags.TransformTag;
+import { TransformTag } from '../../tags/TransformTag.js';
+      //not GWT import const TransformTag = globalThis.tags.TransformTag;
 
       
 

@@ -20,20 +20,20 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
 

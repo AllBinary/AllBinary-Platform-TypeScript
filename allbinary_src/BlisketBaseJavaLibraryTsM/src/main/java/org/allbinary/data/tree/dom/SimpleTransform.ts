@@ -22,32 +22,32 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
-      const StringBufferInputStream = globalThis.java.io.StringBufferInputStream;
+import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
+      //not GWT import const StringBufferInputStream = globalThis.java.io.StringBufferInputStream;
 
       
-//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
-//not game specific package import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
-//not game specific package import { AbFileLocalInputStream } from '../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
-      const AbFileLocalInputStream = globalThis.org.allbinary.logic.io.AbFileLocalInputStream;
+import { AbFileLocalInputStream } from '../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
+      //not GWT import const AbFileLocalInputStream = globalThis.org.allbinary.logic.io.AbFileLocalInputStream;
 
       
-//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

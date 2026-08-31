@@ -22,7 +22,7 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       

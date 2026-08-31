@@ -22,36 +22,36 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-      const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
+import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
+      //not GWT import const OpenGLFeatureFactory = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 
       
-//not game specific package import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-      const GC = globalThis.org.eclipse.swt.graphics.GC;
+import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
+      //not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
 
       
-//not game specific package import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
-      const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
+import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
+      //not GWT import const SwtImmutableImage = globalThis.org.microemu.device.swt.SwtImmutableImage;
 
       
-//not game specific package import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-      const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
+      //not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
 
       
 

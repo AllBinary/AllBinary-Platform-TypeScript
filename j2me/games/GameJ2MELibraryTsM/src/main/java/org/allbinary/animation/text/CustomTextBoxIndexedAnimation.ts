@@ -18,39 +18,39 @@
 
 
 
-//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not game specific package import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
+      //not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
       
-//not game specific package import { RawKeyEventListener } from '../../../../org/allbinary/game/input/event/RawKeyEventListener.js';
-      const RawKeyEventListener = globalThis.org.allbinary.game.input.event.RawKeyEventListener;
+import { RawKeyEventListener } from '../../../../org/allbinary/game/input/event/RawKeyEventListener.js';
+      //not GWT import const RawKeyEventListener = globalThis.org.allbinary.game.input.event.RawKeyEventListener;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      //not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
 
       
-//not game specific package import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
-      const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
+import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
+      //not GWT import const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

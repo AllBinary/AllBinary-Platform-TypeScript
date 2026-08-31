@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
-      const DataOutputStream = globalThis.java.io.DataOutputStream;
+import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
+      //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
-//not game specific package import { OutputStream } from '../../../../java/io/OutputStream.js';
-      const OutputStream = globalThis.java.io.OutputStream;
+import { OutputStream } from '../../../../java/io/OutputStream.js';
+      //not GWT import const OutputStream = globalThis.java.io.OutputStream;
 
       
 

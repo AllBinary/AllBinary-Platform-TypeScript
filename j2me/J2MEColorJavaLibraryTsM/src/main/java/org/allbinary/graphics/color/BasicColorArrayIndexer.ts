@@ -20,7 +20,7 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+//not plain js import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
       const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       

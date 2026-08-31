@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { ABCustomImageItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
-      const ABCustomImageItem = globalThis.org.allbinary.graphics.form.item.ABCustomImageItem;
+import { ABCustomImageItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
+      //not GWT import const ABCustomImageItem = globalThis.org.allbinary.graphics.form.item.ABCustomImageItem;
 
       
-//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
-      const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
+import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
+      //not GWT import const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
 
       
 

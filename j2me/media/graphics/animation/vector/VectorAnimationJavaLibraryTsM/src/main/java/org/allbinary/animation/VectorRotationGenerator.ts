@@ -22,44 +22,44 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
-      const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
+import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
+      //not GWT import const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
 
       
-//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { Angle } from '../../../org/allbinary/math/Angle.js';
+//not plain js import { Angle } from '../../../org/allbinary/math/Angle.js';
       const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not game specific package import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
+//not plain js import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
       const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
+//not plain js import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
       const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
       
-//not game specific package import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
-      const VectorInfo = globalThis.org.allbinary.vector.VectorInfo;
+import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
+      //not GWT import const VectorInfo = globalThis.org.allbinary.vector.VectorInfo;
 
       
 

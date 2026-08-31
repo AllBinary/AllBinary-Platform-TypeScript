@@ -22,27 +22,27 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { BasicUserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleFactory.js';
-      const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
+import { BasicUserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleFactory.js';
+      //not GWT import const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

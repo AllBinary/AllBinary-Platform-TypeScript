@@ -20,23 +20,23 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { EmailServerConfiguration } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfiguration.js';
-      const EmailServerConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfiguration;
+import { EmailServerConfiguration } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfiguration.js';
+      //not GWT import const EmailServerConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfiguration;
 
       
-//not game specific package import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
-      const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
+import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
+      //not GWT import const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

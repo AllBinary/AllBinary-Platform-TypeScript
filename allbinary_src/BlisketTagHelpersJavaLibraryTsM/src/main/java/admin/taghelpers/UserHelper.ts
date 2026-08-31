@@ -20,76 +20,76 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
-      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
+      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
-//not game specific package import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-      const Portion = globalThis.org.allbinary.business.installer.Portion;
+import { Portion } from '../../org/allbinary/business/installer/Portion.js';
+      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
-//not game specific package import { NewUserFactory } from '../../org/allbinary/business/user/NewUserFactory.js';
-      const NewUserFactory = globalThis.org.allbinary.business.user.NewUserFactory;
+import { NewUserFactory } from '../../org/allbinary/business/user/NewUserFactory.js';
+      //not GWT import const NewUserFactory = globalThis.org.allbinary.business.user.NewUserFactory;
 
       
-//not game specific package import { UserData } from '../../org/allbinary/business/user/UserData.js';
-      const UserData = globalThis.org.allbinary.business.user.UserData;
+import { UserData } from '../../org/allbinary/business/user/UserData.js';
+      //not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
       
-//not game specific package import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
-      const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
+import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
+      //not GWT import const UserInterface = globalThis.org.allbinary.business.user.UserInterface;
 
       
-//not game specific package import { UserName } from '../../org/allbinary/business/user/username/UserName.js';
-      const UserName = globalThis.org.allbinary.business.user.username.UserName;
+import { UserName } from '../../org/allbinary/business/user/username/UserName.js';
+      //not GWT import const UserName = globalThis.org.allbinary.business.user.username.UserName;
 
       
-//not game specific package import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
-      const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
+import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
+      //not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
 
       
-//not game specific package import { FREEBLISKET_PATH_GLOBALS } from '../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-      const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
+import { FREEBLISKET_PATH_GLOBALS } from '../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
+      //not GWT import const FREEBLISKET_PATH_GLOBALS = globalThis.org.allbinary.globals.FREEBLISKET_PATH_GLOBALS;
 
       
-//not game specific package import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
-      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
+      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not game specific package import { RequestParams } from '../../org/allbinary/logic/communication/http/request/RequestParams.js';
-      const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+import { RequestParams } from '../../org/allbinary/logic/communication/http/request/RequestParams.js';
+      //not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-      const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+      //not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
 
       
-//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 

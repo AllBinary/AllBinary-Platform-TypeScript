@@ -20,24 +20,24 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { UserRoleData } from '../../org/allbinary/business/user/role/UserRoleData.js';
-      const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
+import { UserRoleData } from '../../org/allbinary/business/user/role/UserRoleData.js';
+      //not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
 
       
-//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not game specific package import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
-      const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
+      //not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
       
-//not game specific package import { StoreValidationTransformTag } from '../../tags/StoreValidationTransformTag.js';
-      const StoreValidationTransformTag = globalThis.tags.StoreValidationTransformTag;
+import { StoreValidationTransformTag } from '../../tags/StoreValidationTransformTag.js';
+      //not GWT import const StoreValidationTransformTag = globalThis.tags.StoreValidationTransformTag;
 
       
 

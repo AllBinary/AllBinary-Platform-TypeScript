@@ -18,7 +18,7 @@
 
 
 
-//not game specific package import { Angle } from '../../../org/allbinary/math/Angle.js';
+//not plain js import { Angle } from '../../../org/allbinary/math/Angle.js';
       const Angle = globalThis.org.allbinary.math.Angle;
 
       

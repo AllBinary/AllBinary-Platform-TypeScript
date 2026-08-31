@@ -24,40 +24,40 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
-//not game specific package import { JsType } from '../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
-      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
+      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
-//not game specific package import { Form } from '../../javax/microedition/lcdui/Form.js';
-      const Form = globalThis.javax.microedition.lcdui.Form;
+import { Form } from '../../javax/microedition/lcdui/Form.js';
+      //not GWT import const Form = globalThis.javax.microedition.lcdui.Form;
 
       
-//not game specific package import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
-      const InvalidRecordIDException = globalThis.javax.microedition.rms.InvalidRecordIDException;
+import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
+      //not GWT import const InvalidRecordIDException = globalThis.javax.microedition.rms.InvalidRecordIDException;
 
       
-//not game specific package import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
-      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
+      //not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
-//not game specific package import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
-      const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
+      //not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
 
       
-//not game specific package import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
-      const RecordStoreNotOpenException = globalThis.javax.microedition.rms.RecordStoreNotOpenException;
+import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
+      //not GWT import const RecordStoreNotOpenException = globalThis.javax.microedition.rms.RecordStoreNotOpenException;
 
       
-//not game specific package import { NullUtil } from '../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { JsMethod } from '../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

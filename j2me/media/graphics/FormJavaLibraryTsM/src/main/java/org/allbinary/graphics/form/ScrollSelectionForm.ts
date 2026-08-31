@@ -22,72 +22,72 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      //not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
 
       
-//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
+//not plain js import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
       const RectangleCollisionUtil = globalThis.org.allbinary.math.RectangleCollisionUtil;
 
       
-//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

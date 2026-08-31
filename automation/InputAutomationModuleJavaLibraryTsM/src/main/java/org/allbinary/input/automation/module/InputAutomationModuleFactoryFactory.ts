@@ -22,51 +22,51 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Collection } from '../../../../../java/util/Collection.js';
-      const Collection = globalThis.java.util.Collection;
+import { Collection } from '../../../../../java/util/Collection.js';
+      //not GWT import const Collection = globalThis.java.util.Collection;
 
       
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Iterator } from '../../../../../java/util/Iterator.js';
-      const Iterator = globalThis.java.util.Iterator;
+import { Iterator } from '../../../../../java/util/Iterator.js';
+      //not GWT import const Iterator = globalThis.java.util.Iterator;
 
       
-//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      const HelpSet = globalThis.javax.help.HelpSet;
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
-//not game specific package import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
-      const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
+import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
+      //not GWT import const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
 
       
-//not game specific package import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
-      const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
+import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
+      //not GWT import const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
 
       
-//not game specific package import { ListModel } from '../../../../../javax/swing/ListModel.js';
-      const ListModel = globalThis.javax.swing.ListModel;
+import { ListModel } from '../../../../../javax/swing/ListModel.js';
+      //not GWT import const ListModel = globalThis.javax.swing.ListModel;
 
       
-//not game specific package import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-      const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+      //not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
 
       
-//not game specific package import { InputAutomationModuleConfigurations } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
-      const InputAutomationModuleConfigurations = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
+import { InputAutomationModuleConfigurations } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
+      //not GWT import const InputAutomationModuleConfigurations = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfigurations;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
-      const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
+import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
+      //not GWT import const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

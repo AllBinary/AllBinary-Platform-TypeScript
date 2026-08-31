@@ -22,19 +22,19 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-//not game specific package import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

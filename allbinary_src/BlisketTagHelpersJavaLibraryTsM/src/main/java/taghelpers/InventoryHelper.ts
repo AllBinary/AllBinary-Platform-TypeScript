@@ -20,80 +20,80 @@
 
             import { Exception } from '../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { HttpServletResponse } from '../javax/servlet/http/HttpServletResponse.js';
-      const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
+import { HttpServletResponse } from '../javax/servlet/http/HttpServletResponse.js';
+      //not GWT import const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
 
       
-//not game specific package import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { TagHelper } from '../admin/taghelpers/TagHelper.js';
-      const TagHelper = globalThis.admin.taghelpers.TagHelper;
+import { TagHelper } from '../admin/taghelpers/TagHelper.js';
+      //not GWT import const TagHelper = globalThis.admin.taghelpers.TagHelper;
 
       
-//not game specific package import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { StoreFrontFactory } from '../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+import { StoreFrontFactory } from '../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      //not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
 
       
-//not game specific package import { StoreFrontInterface } from '../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+import { StoreFrontInterface } from '../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
-//not game specific package import { StreetAddress } from '../org/allbinary/business/user/address/StreetAddress.js';
-      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+import { StreetAddress } from '../org/allbinary/business/user/address/StreetAddress.js';
+      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
-//not game specific package import { BasicItemData } from '../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+import { BasicItemData } from '../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
       
-//not game specific package import { AcceptableResponseGenerator } from '../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
-      const AcceptableResponseGenerator = globalThis.org.allbinary.logic.communication.http.AcceptableResponseGenerator;
+import { AcceptableResponseGenerator } from '../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
+      //not GWT import const AcceptableResponseGenerator = globalThis.org.allbinary.logic.communication.http.AcceptableResponseGenerator;
 
       
-//not game specific package import { WeblisketSession } from '../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+import { WeblisketSession } from '../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      //not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
 
       
-//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SearchParams } from '../org/allbinary/logic/control/search/SearchParams.js';
-      const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
+import { SearchParams } from '../org/allbinary/logic/control/search/SearchParams.js';
+      //not GWT import const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
 
       
-//not game specific package import { SearchRequest } from '../org/allbinary/logic/control/search/SearchRequest.js';
-      const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+import { SearchRequest } from '../org/allbinary/logic/control/search/SearchRequest.js';
+      //not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
 
       
-//not game specific package import { StringUtil } from '../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-      const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
+      //not GWT import const TransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
 
       
-//not game specific package import { InventoryViewFactory } from '../views/admin/inventory/listings/InventoryViewFactory.js';
-      const InventoryViewFactory = globalThis.views.admin.inventory.listings.InventoryViewFactory;
+import { InventoryViewFactory } from '../views/admin/inventory/listings/InventoryViewFactory.js';
+      //not GWT import const InventoryViewFactory = globalThis.views.admin.inventory.listings.InventoryViewFactory;
 
       
-//not game specific package import { InventoryViewSearchInterface } from '../views/admin/inventory/listings/InventoryViewSearchInterface.js';
-      const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
+import { InventoryViewSearchInterface } from '../views/admin/inventory/listings/InventoryViewSearchInterface.js';
+      //not GWT import const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
 
       
 

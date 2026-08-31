@@ -20,80 +20,80 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { Arrays } from '../../../java/util/Arrays.js';
-      const Arrays = globalThis.java.util.Arrays;
+import { Arrays } from '../../../java/util/Arrays.js';
+      //not GWT import const Arrays = globalThis.java.util.Arrays;
 
       
-//not game specific package import { Vector } from '../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
-      const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
+import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+      //not GWT import const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
 
       
-//not game specific package import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not game specific package import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
-      const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
+import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
+      //not GWT import const GLOBALS2 = globalThis.org.allbinary.globals.GLOBALS2;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringComparator } from '../../../org/allbinary/logic/control/sort/StringComparator.js';
-      const StringComparator = globalThis.org.allbinary.logic.control.sort.StringComparator;
+import { StringComparator } from '../../../org/allbinary/logic/control/sort/StringComparator.js';
+      //not GWT import const StringComparator = globalThis.org.allbinary.logic.control.sort.StringComparator;
 
       
-//not game specific package import { CustomizerTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/CustomizerTransformInfoData.js';
-      const CustomizerTransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.CustomizerTransformInfoData;
+import { CustomizerTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/CustomizerTransformInfoData.js';
+      //not GWT import const CustomizerTransformInfoData = globalThis.org.allbinary.logic.visual.transform.info.CustomizerTransformInfoData;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { TransformTemplateCustomizerData } from '../../../org/allbinary/logic/visual/transform/template/customizer/TransformTemplateCustomizerData.js';
-      const TransformTemplateCustomizerData = globalThis.org.allbinary.logic.visual.transform.template.customizer.TransformTemplateCustomizerData;
+import { TransformTemplateCustomizerData } from '../../../org/allbinary/logic/visual/transform/template/customizer/TransformTemplateCustomizerData.js';
+      //not GWT import const TransformTemplateCustomizerData = globalThis.org.allbinary.logic.visual.transform.template.customizer.TransformTemplateCustomizerData;
 
       
-//not game specific package import { TransformTemplateCustomizersData } from '../../../org/allbinary/logic/visual/transform/template/customizer/TransformTemplateCustomizersData.js';
-      const TransformTemplateCustomizersData = globalThis.org.allbinary.logic.visual.transform.template.customizer.TransformTemplateCustomizersData;
+import { TransformTemplateCustomizersData } from '../../../org/allbinary/logic/visual/transform/template/customizer/TransformTemplateCustomizersData.js';
+      //not GWT import const TransformTemplateCustomizersData = globalThis.org.allbinary.logic.visual.transform.template.customizer.TransformTemplateCustomizersData;
 
       
-//not game specific package import { BodyData } from '../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
-      const BodyData = globalThis.org.allbinary.logic.visual.transform.template.customizer.bodies.BodyData;
+import { BodyData } from '../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
+      //not GWT import const BodyData = globalThis.org.allbinary.logic.visual.transform.template.customizer.bodies.BodyData;
 
       
-//not game specific package import { TitleData } from '../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
-      const TitleData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
+import { TitleData } from '../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
+      //not GWT import const TitleData = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
 
       
-//not game specific package import { TransformTemplateCustomizerUtil } from '../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
-      const TransformTemplateCustomizerUtil = globalThis.org.allbinary.logic.visual.transform.template.util.TransformTemplateCustomizerUtil;
+import { TransformTemplateCustomizerUtil } from '../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
+      //not GWT import const TransformTemplateCustomizerUtil = globalThis.org.allbinary.logic.visual.transform.template.util.TransformTemplateCustomizerUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      //not GWT import const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
 
       
 

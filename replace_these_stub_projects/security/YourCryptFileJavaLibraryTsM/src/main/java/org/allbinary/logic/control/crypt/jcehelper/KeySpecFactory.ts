@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { KeySpec } from '../../../../../../java/security/spec/KeySpec.js';
-      const KeySpec = globalThis.java.security.spec.KeySpec;
+import { KeySpec } from '../../../../../../java/security/spec/KeySpec.js';
+      //not GWT import const KeySpec = globalThis.java.security.spec.KeySpec;
 
       
 

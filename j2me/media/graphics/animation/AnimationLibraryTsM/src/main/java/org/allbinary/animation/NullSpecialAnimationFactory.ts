@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { SpecialAnimation } from '../../../org/allbinary/animation/special/SpecialAnimation.js';
-      const SpecialAnimation = globalThis.org.allbinary.animation.special.SpecialAnimation;
+import { SpecialAnimation } from '../../../org/allbinary/animation/special/SpecialAnimation.js';
+      //not GWT import const SpecialAnimation = globalThis.org.allbinary.animation.special.SpecialAnimation;
 
       
-//not game specific package import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
+      //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
 

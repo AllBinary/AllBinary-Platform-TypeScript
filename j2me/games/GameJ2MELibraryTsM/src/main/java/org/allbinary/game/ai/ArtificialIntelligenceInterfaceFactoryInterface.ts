@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-      const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
+import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
+      //not GWT import const ArtificialIntelligenceInterface = globalThis.org.allbinary.ai.ArtificialIntelligenceInterface;
 
       
-//not game specific package import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-      const GameInput = globalThis.org.allbinary.game.input.GameInput;
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
+      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 

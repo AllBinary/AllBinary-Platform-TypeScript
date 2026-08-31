@@ -24,24 +24,24 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      //not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

@@ -22,52 +22,52 @@
         
             import { Exception } from '../java/lang/Exception.js';
         
-//not game specific package import { DomDocumentHelper } from '../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+import { DomDocumentHelper } from '../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
-//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
-//not game specific package import { BasicTransformer } from '../org/allbinary/logic/visual/transform/BasicTransformer.js';
-      const BasicTransformer = globalThis.org.allbinary.logic.visual.transform.BasicTransformer;
+import { BasicTransformer } from '../org/allbinary/logic/visual/transform/BasicTransformer.js';
+      //not GWT import const BasicTransformer = globalThis.org.allbinary.logic.visual.transform.BasicTransformer;
 
       
-//not game specific package import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
-      const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
+import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
+      //not GWT import const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
 
       
-//not game specific package import { TransformDocumentFactory } from '../org/allbinary/logic/visual/transform/data/TransformDocumentFactory.js';
-      const TransformDocumentFactory = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentFactory;
+import { TransformDocumentFactory } from '../org/allbinary/logic/visual/transform/data/TransformDocumentFactory.js';
+      //not GWT import const TransformDocumentFactory = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentFactory;
 
       
-//not game specific package import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
-      const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
+      //not GWT import const TransformDocumentInterface = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
 
       
-//not game specific package import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

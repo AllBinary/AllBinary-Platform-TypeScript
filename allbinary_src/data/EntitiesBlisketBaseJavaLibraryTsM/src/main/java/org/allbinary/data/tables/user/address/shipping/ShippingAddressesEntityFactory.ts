@@ -22,15 +22,15 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
-      const StreetAddressesEntity = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntity;
+import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
+      //not GWT import const StreetAddressesEntity = globalThis.org.allbinary.data.tables.user.address.StreetAddressesEntity;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

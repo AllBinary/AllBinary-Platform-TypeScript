@@ -22,8 +22,8 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-//not game specific package import { Calendar } from '../../../java/util/Calendar.js';
-      const Calendar = globalThis.java.util.Calendar;
+import { Calendar } from '../../../java/util/Calendar.js';
+      //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
 

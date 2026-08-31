@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Color } from '../../../../org/eclipse/swt/graphics/Color.js';
-      const Color = globalThis.org.eclipse.swt.graphics.Color;
+import { Color } from '../../../../org/eclipse/swt/graphics/Color.js';
+      //not GWT import const Color = globalThis.org.eclipse.swt.graphics.Color;
 
       
-//not game specific package import { RGB } from '../../../../org/eclipse/swt/graphics/RGB.js';
-      const RGB = globalThis.org.eclipse.swt.graphics.RGB;
+import { RGB } from '../../../../org/eclipse/swt/graphics/RGB.js';
+      //not GWT import const RGB = globalThis.org.eclipse.swt.graphics.RGB;
 
       
-//not game specific package import { BareMain } from '../../../../org/microemu/app/BareMain.js';
-      const BareMain = globalThis.org.microemu.app.BareMain;
+import { BareMain } from '../../../../org/microemu/app/BareMain.js';
+      //not GWT import const BareMain = globalThis.org.microemu.app.BareMain;
 
       
 

@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { WorkFlowHelperFactory } from '../../admin/taghelpers/WorkFlowHelperFactory.js';
-      const WorkFlowHelperFactory = globalThis.admin.taghelpers.WorkFlowHelperFactory;
+import { WorkFlowHelperFactory } from '../../admin/taghelpers/WorkFlowHelperFactory.js';
+      //not GWT import const WorkFlowHelperFactory = globalThis.admin.taghelpers.WorkFlowHelperFactory;
 
       
 

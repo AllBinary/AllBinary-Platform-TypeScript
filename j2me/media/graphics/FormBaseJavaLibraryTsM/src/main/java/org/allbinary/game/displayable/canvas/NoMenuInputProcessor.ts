@@ -18,19 +18,19 @@
 
 
 
-//not game specific package import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
-      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+      //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
-//not game specific package import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-      const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
+import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
+      //not GWT import const GameKeyEvent = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
       
-//not game specific package import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-      const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
+      //not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
 
       
-//not game specific package import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not plain js import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
       const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
 
       

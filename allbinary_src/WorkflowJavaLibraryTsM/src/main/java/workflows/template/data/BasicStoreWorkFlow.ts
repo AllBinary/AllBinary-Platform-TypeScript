@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
-      const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
+import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
+      //not GWT import const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
 
       
 

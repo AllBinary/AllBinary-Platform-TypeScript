@@ -24,67 +24,67 @@
         
             import { Math } from '../../../../../java/lang/Math.js';
         
-//not game specific package import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { Line } from '../../../../../org/allbinary/graphics/Line.js';
-      const Line = globalThis.org.allbinary.graphics.Line;
+import { Line } from '../../../../../org/allbinary/graphics/Line.js';
+      //not GWT import const Line = globalThis.org.allbinary.graphics.Line;
 
       
-//not game specific package import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { MotionGestureConfiguration } from '../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
-      const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
+import { MotionGestureConfiguration } from '../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
+      //not GWT import const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
 
       
-//not game specific package import { MotionGestureConfigurationFactory } from '../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
-      const MotionGestureConfigurationFactory = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfigurationFactory;
+import { MotionGestureConfigurationFactory } from '../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
+      //not GWT import const MotionGestureConfigurationFactory = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfigurationFactory;
 
       
-//not game specific package import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
-      const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
+import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
+      //not GWT import const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
 
       
-//not game specific package import { MotionEventCircularPool } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionEventCircularPool.js';
-      const MotionEventCircularPool = globalThis.org.allbinary.input.motion.gesture.observer.MotionEventCircularPool;
+import { MotionEventCircularPool } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionEventCircularPool.js';
+      //not GWT import const MotionEventCircularPool = globalThis.org.allbinary.input.motion.gesture.observer.MotionEventCircularPool;
 
       
-//not game specific package import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-      const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
+      //not GWT import const MotionGestureEvent = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
 
       
-//not game specific package import { MovedMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/MovedMotionGesturesHandler.js';
-      const MovedMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.MovedMotionGesturesHandler;
+import { MovedMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/MovedMotionGesturesHandler.js';
+      //not GWT import const MovedMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.MovedMotionGesturesHandler;
 
       
-//not game specific package import { ScrolledMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/ScrolledMotionGesturesHandler.js';
-      const ScrolledMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.ScrolledMotionGesturesHandler;
+import { ScrolledMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/ScrolledMotionGesturesHandler.js';
+      //not GWT import const ScrolledMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.ScrolledMotionGesturesHandler;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { J2SEMath } from '../../../../../org/allbinary/logic/math/J2SEMath.js';
-      const J2SEMath = globalThis.org.allbinary.logic.math.J2SEMath;
+import { J2SEMath } from '../../../../../org/allbinary/logic/math/J2SEMath.js';
+      //not GWT import const J2SEMath = globalThis.org.allbinary.logic.math.J2SEMath;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-      const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
+import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
+      //not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

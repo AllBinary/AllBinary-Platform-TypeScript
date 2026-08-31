@@ -20,27 +20,27 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { AdminConfiguration } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
-      const AdminConfiguration = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfiguration;
+import { AdminConfiguration } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
+      //not GWT import const AdminConfiguration = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfiguration;
 
       
-//not game specific package import { AdminConfigurationInterface } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
-      const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
+import { AdminConfigurationInterface } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
+      //not GWT import const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

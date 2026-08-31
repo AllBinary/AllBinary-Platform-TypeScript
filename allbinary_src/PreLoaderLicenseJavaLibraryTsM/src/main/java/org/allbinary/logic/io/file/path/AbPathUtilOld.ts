@@ -22,32 +22,32 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { FilePathData } from '../../../../../../org/allbinary/logic/io/file/FilePathData.js';
+//not plain js import { FilePathData } from '../../../../../../org/allbinary/logic/io/file/FilePathData.js';
       const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
 
       
-//not game specific package import { AbFilePath } from '../../../../../../org/allbinary/logic/io/path/AbFilePath.js';
-      const AbFilePath = globalThis.org.allbinary.logic.io.path.AbFilePath;
+import { AbFilePath } from '../../../../../../org/allbinary/logic/io/path/AbFilePath.js';
+      //not GWT import const AbFilePath = globalThis.org.allbinary.logic.io.path.AbFilePath;
 
       
-//not game specific package import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 

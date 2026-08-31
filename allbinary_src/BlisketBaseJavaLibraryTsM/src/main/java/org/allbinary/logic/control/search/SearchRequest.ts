@@ -20,32 +20,32 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { AbContext } from '../../../../../org/allbinary/business/context/AbContext.js';
-      const AbContext = globalThis.org.allbinary.business.context.AbContext;
+import { AbContext } from '../../../../../org/allbinary/business/context/AbContext.js';
+      //not GWT import const AbContext = globalThis.org.allbinary.business.context.AbContext;
 
       
-//not game specific package import { StoreFrontInterface } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+import { StoreFrontInterface } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
-//not game specific package import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

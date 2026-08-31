@@ -22,51 +22,51 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-//not game specific package import { Enumeration } from '../../../../../java/util/Enumeration.js';
-      const Enumeration = globalThis.java.util.Enumeration;
+import { Enumeration } from '../../../../../java/util/Enumeration.js';
+      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
-      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
+      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not game specific package import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-      const HighScore = globalThis.org.allbinary.game.score.HighScore;
+import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
+      //not GWT import const HighScore = globalThis.org.allbinary.game.score.HighScore;
 
       
-//not game specific package import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
-      const HighScores = globalThis.org.allbinary.game.score.HighScores;
+import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
+      //not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
       
-//not game specific package import { RemoteErrorHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/RemoteErrorHighScoresSingletonFactory.js';
-      const RemoteErrorHighScoresSingletonFactory = globalThis.org.allbinary.game.score.RemoteErrorHighScoresSingletonFactory;
+import { RemoteErrorHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/RemoteErrorHighScoresSingletonFactory.js';
+      //not GWT import const RemoteErrorHighScoresSingletonFactory = globalThis.org.allbinary.game.score.RemoteErrorHighScoresSingletonFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SoftwareInformation } from '../../../../../org/allbinary/logic/system/SoftwareInformation.js';
-      const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+import { SoftwareInformation } from '../../../../../org/allbinary/logic/system/SoftwareInformation.js';
+      //not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
+//not plain js import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
       const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
       

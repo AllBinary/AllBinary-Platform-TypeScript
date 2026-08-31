@@ -20,44 +20,44 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+      //not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
 
       
-//not game specific package import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-      const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
+import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+      //not GWT import const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
 
       
-//not game specific package import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
-//not game specific package import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-      const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
+import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
+      //not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
       
-//not game specific package import { TileLayerPositionIntoViewPosition } from '../../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
-      const TileLayerPositionIntoViewPosition = globalThis.org.allbinary.game.view.TileLayerPositionIntoViewPosition;
+import { TileLayerPositionIntoViewPosition } from '../../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
+      //not GWT import const TileLayerPositionIntoViewPosition = globalThis.org.allbinary.game.view.TileLayerPositionIntoViewPosition;
 
       
-//not game specific package import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
+      //not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
 
       
-//not game specific package import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
-      const ViewPositionEventHandler = globalThis.org.allbinary.view.event.ViewPositionEventHandler;
+import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
+      //not GWT import const ViewPositionEventHandler = globalThis.org.allbinary.view.event.ViewPositionEventHandler;
 
       
 

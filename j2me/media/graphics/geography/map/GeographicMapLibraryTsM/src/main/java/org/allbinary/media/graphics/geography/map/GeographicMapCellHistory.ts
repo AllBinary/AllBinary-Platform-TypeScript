@@ -22,71 +22,71 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
+      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
-//not game specific package import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { AnimationBehavior } from '../../../../../../org/allbinary/animation/AnimationBehavior.js';
-      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+import { AnimationBehavior } from '../../../../../../org/allbinary/animation/AnimationBehavior.js';
+      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not game specific package import { TextAnimation } from '../../../../../../org/allbinary/animation/text/TextAnimation.js';
-      const TextAnimation = globalThis.org.allbinary.animation.text.TextAnimation;
+import { TextAnimation } from '../../../../../../org/allbinary/animation/text/TextAnimation.js';
+      //not GWT import const TextAnimation = globalThis.org.allbinary.animation.text.TextAnimation;
 
       
-//not game specific package import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
-//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
-      const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
+import { MyFontProcessor } from '../../../../../../org/allbinary/graphics/font/MyFontProcessor.js';
+      //not GWT import const MyFontProcessor = globalThis.org.allbinary.graphics.font.MyFontProcessor;
 
       
-//not game specific package import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+import { UpdateMyFontInterface } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      //not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
 
       
-//not game specific package import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
-      const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
+import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/font/UpdateMyFontProcessor.js';
+      //not GWT import const UpdateMyFontProcessor = globalThis.org.allbinary.graphics.font.UpdateMyFontProcessor;
 
       
-//not game specific package import { BasicDecimal } from '../../../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not plain js import { BasicDecimal } from '../../../../../../org/allbinary/logic/math/BasicDecimal.js';
       const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       

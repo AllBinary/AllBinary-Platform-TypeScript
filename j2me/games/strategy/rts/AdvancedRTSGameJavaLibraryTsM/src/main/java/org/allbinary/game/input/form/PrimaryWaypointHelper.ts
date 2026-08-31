@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
-      const NullPathFindingLayer = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
+import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
+      //not GWT import const NullPathFindingLayer = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
 
       
-//not game specific package import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-      const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
+      //not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
       
-//not game specific package import { WaypointLayer } from '../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
-      const WaypointLayer = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
+import { WaypointLayer } from '../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
+      //not GWT import const WaypointLayer = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
 
       
 

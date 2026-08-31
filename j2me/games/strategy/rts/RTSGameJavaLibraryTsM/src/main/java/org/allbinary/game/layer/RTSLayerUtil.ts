@@ -24,56 +24,56 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { GroupCommonFactory } from '../../../../org/allbinary/game/identification/GroupCommonFactory.js';
-      const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
+import { GroupCommonFactory } from '../../../../org/allbinary/game/identification/GroupCommonFactory.js';
+      //not GWT import const GroupCommonFactory = globalThis.org.allbinary.game.identification.GroupCommonFactory;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
-      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+      //not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
       
-//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not game specific package import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      //not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
 
       
-//not game specific package import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-      const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
+import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
+      //not GWT import const BasicGroupFactory = globalThis.org.allbinary.game.identification.BasicGroupFactory;
 
       
-//not game specific package import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
-      const PartInterface = globalThis.org?.allbinary?.game?.part?.PartInterface;
+import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
+      //not GWT import const PartInterface = globalThis.org?.allbinary?.game?.part?.PartInterface;
 
       
-//not game specific package import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
-      const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
+import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
+      //not GWT import const BasicWeaponPart = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-      const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
+      //not GWT import const BasicGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
 
       
-//not game specific package import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
-      const BaseRaceTrackGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.racetrack.BaseRaceTrackGeographicMap;
+import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
+      //not GWT import const BaseRaceTrackGeographicMap = globalThis.org.allbinary.media.graphics.geography.map.racetrack.BaseRaceTrackGeographicMap;
 
       
 

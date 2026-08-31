@@ -22,31 +22,31 @@
         
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { TimeStampUtil } from '../../../../../org/allbinary/time/TimeStampUtil.js';
+//not plain js import { TimeStampUtil } from '../../../../../org/allbinary/time/TimeStampUtil.js';
       const TimeStampUtil = globalThis.org.allbinary.time.TimeStampUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { ExceptionUtil } from '../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
+//not plain js import { ExceptionUtil } from '../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
       const ExceptionUtil = globalThis.org.allbinary.logic.java.exception.ExceptionUtil;
 
       
-//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       

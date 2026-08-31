@@ -22,20 +22,20 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
-      const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
+import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
+      //not GWT import const InputFactory = globalThis.org.allbinary.game.input.InputFactory;
 
       
-//not game specific package import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
-      const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
+import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
+      //not GWT import const MotionGestureInput = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
 
       
-//not game specific package import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-      const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
+import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      //not GWT import const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
 
       
-//not game specific package import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
-      const AllBinaryEventCircularPool = globalThis.org.allbinary.logic.util.event.AllBinaryEventCircularPool;
+import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
+      //not GWT import const AllBinaryEventCircularPool = globalThis.org.allbinary.logic.util.event.AllBinaryEventCircularPool;
 
       
 

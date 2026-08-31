@@ -18,32 +18,32 @@
 
 
 
-//not game specific package import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
-      const NullPathFindingLayer = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
+import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
+      //not GWT import const NullPathFindingLayer = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
 
       
-//not game specific package import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-      const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
+      //not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
       
-//not game specific package import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
-      const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
+import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
+      //not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
       
-//not game specific package import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
-      const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
+      //not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
       
-//not game specific package import { KeyValueDrawString } from '../../../../../org/allbinary/graphics/draw/KeyValueDrawString.js';
-      const KeyValueDrawString = globalThis.org.allbinary.graphics.draw.KeyValueDrawString;
+import { KeyValueDrawString } from '../../../../../org/allbinary/graphics/draw/KeyValueDrawString.js';
+      //not GWT import const KeyValueDrawString = globalThis.org.allbinary.graphics.draw.KeyValueDrawString;
 
       
 

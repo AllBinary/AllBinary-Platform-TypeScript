@@ -22,372 +22,372 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Enumeration } from '../../../../java/util/Enumeration.js';
-      const Enumeration = globalThis.java.util.Enumeration;
+import { Enumeration } from '../../../../java/util/Enumeration.js';
+      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not game specific package import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not game specific package import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
-      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
+      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
-//not game specific package import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+      //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
-//not game specific package import { MIDletStateChangeException } from '../../../../javax/microedition/midlet/MIDletStateChangeException.js';
-      const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
+import { MIDletStateChangeException } from '../../../../javax/microedition/midlet/MIDletStateChangeException.js';
+      //not GWT import const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
 
       
-//not game specific package import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
+      //not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
 
       
-//not game specific package import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not game specific package import { GameAdStateFactory } from '../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
-      const GameAdStateFactory = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
+import { GameAdStateFactory } from '../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
+      //not GWT import const GameAdStateFactory = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
 
       
-//not game specific package import { FullScreenUtil } from '../../../../org/allbinary/canvas/FullScreenUtil.js';
-      const FullScreenUtil = globalThis.org.allbinary.canvas.FullScreenUtil;
+import { FullScreenUtil } from '../../../../org/allbinary/canvas/FullScreenUtil.js';
+      //not GWT import const FullScreenUtil = globalThis.org.allbinary.canvas.FullScreenUtil;
 
       
-//not game specific package import { GameStatisticsFactory } from '../../../../org/allbinary/canvas/GameStatisticsFactory.js';
-      const GameStatisticsFactory = globalThis.org.allbinary.canvas.GameStatisticsFactory;
+import { GameStatisticsFactory } from '../../../../org/allbinary/canvas/GameStatisticsFactory.js';
+      //not GWT import const GameStatisticsFactory = globalThis.org.allbinary.canvas.GameStatisticsFactory;
 
       
-//not game specific package import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
-      const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
+import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
+      //not GWT import const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
 
       
-//not game specific package import { DebugInterface } from '../../../../org/allbinary/debug/DebugInterface.js';
-      const DebugInterface = globalThis.org.allbinary.debug.DebugInterface;
+import { DebugInterface } from '../../../../org/allbinary/debug/DebugInterface.js';
+      //not GWT import const DebugInterface = globalThis.org.allbinary.debug.DebugInterface;
 
       
-//not game specific package import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
-      const GameAdState = globalThis.org.allbinary.game.GameAdState;
+import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
+      //not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
 
       
-//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not game specific package import { GameMode } from '../../../../org/allbinary/game/GameMode.js';
-      const GameMode = globalThis.org.allbinary.game.GameMode;
+import { GameMode } from '../../../../org/allbinary/game/GameMode.js';
+      //not GWT import const GameMode = globalThis.org.allbinary.game.GameMode;
 
       
-//not game specific package import { GameStrings } from '../../../../org/allbinary/game/GameStrings.js';
-      const GameStrings = globalThis.org.allbinary.game.GameStrings;
+import { GameStrings } from '../../../../org/allbinary/game/GameStrings.js';
+      //not GWT import const GameStrings = globalThis.org.allbinary.game.GameStrings;
 
       
-//not game specific package import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
-      const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
+import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
+      //not GWT import const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
 
       
-//not game specific package import { PlayerTypesFactory } from '../../../../org/allbinary/game/PlayerTypesFactory.js';
-      const PlayerTypesFactory = globalThis.org.allbinary.game.PlayerTypesFactory;
+import { PlayerTypesFactory } from '../../../../org/allbinary/game/PlayerTypesFactory.js';
+      //not GWT import const PlayerTypesFactory = globalThis.org.allbinary.game.PlayerTypesFactory;
 
       
-//not game specific package import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      //not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
 
       
-//not game specific package import { GameOptionsForm } from '../../../../org/allbinary/game/configuration/GameOptionsForm.js';
-      const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
+import { GameOptionsForm } from '../../../../org/allbinary/game/configuration/GameOptionsForm.js';
+      //not GWT import const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
 
       
-//not game specific package import { GameOptionsFormFactory } from '../../../../org/allbinary/game/configuration/GameOptionsFormFactory.js';
-      const GameOptionsFormFactory = globalThis.org.allbinary.game.configuration.GameOptionsFormFactory;
+import { GameOptionsFormFactory } from '../../../../org/allbinary/game/configuration/GameOptionsFormFactory.js';
+      //not GWT import const GameOptionsFormFactory = globalThis.org.allbinary.game.configuration.GameOptionsFormFactory;
 
       
-//not game specific package import { InGameFeatures } from '../../../../org/allbinary/game/configuration/InGameFeatures.js';
-      const InGameFeatures = globalThis.org.allbinary.game.configuration.InGameFeatures;
+import { InGameFeatures } from '../../../../org/allbinary/game/configuration/InGameFeatures.js';
+      //not GWT import const InGameFeatures = globalThis.org.allbinary.game.configuration.InGameFeatures;
 
       
-//not game specific package import { InGameOptionsForm } from '../../../../org/allbinary/game/configuration/InGameOptionsForm.js';
-      const InGameOptionsForm = globalThis.org.allbinary.game.configuration.InGameOptionsForm;
+import { InGameOptionsForm } from '../../../../org/allbinary/game/configuration/InGameOptionsForm.js';
+      //not GWT import const InGameOptionsForm = globalThis.org.allbinary.game.configuration.InGameOptionsForm;
 
       
-//not game specific package import { InGameOptionsFormFactory } from '../../../../org/allbinary/game/configuration/InGameOptionsFormFactory.js';
-      const InGameOptionsFormFactory = globalThis.org.allbinary.game.configuration.InGameOptionsFormFactory;
+import { InGameOptionsFormFactory } from '../../../../org/allbinary/game/configuration/InGameOptionsFormFactory.js';
+      //not GWT import const InGameOptionsFormFactory = globalThis.org.allbinary.game.configuration.InGameOptionsFormFactory;
 
       
-//not game specific package import { LoadGameForm } from '../../../../org/allbinary/game/configuration/LoadGameForm.js';
-      const LoadGameForm = globalThis.org.allbinary.game.configuration.LoadGameForm;
+import { LoadGameForm } from '../../../../org/allbinary/game/configuration/LoadGameForm.js';
+      //not GWT import const LoadGameForm = globalThis.org.allbinary.game.configuration.LoadGameForm;
 
       
-//not game specific package import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
-      const ChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.ChangedGameFeatureListener;
+import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+      //not GWT import const ChangedGameFeatureListener = globalThis.org.allbinary.game.configuration.event.ChangedGameFeatureListener;
 
       
-//not game specific package import { GameFeatureEventHandler } from '../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
-      const GameFeatureEventHandler = globalThis.org.allbinary.game.configuration.event.GameFeatureEventHandler;
+import { GameFeatureEventHandler } from '../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
+      //not GWT import const GameFeatureEventHandler = globalThis.org.allbinary.game.configuration.event.GameFeatureEventHandler;
 
       
-//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
-      const GameFeatureFormUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureFormUtil;
+import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
+      //not GWT import const GameFeatureFormUtil = globalThis.org.allbinary.game.configuration.feature.GameFeatureFormUtil;
 
       
-//not game specific package import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      //not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
 
       
-//not game specific package import { GamePersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
-      const GamePersistanceSingleton = globalThis.org.allbinary.game.configuration.persistance.GamePersistanceSingleton;
+import { GamePersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
+      //not GWT import const GamePersistanceSingleton = globalThis.org.allbinary.game.configuration.persistance.GamePersistanceSingleton;
 
       
-//not game specific package import { KeyValuePersistance } from '../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
-      const KeyValuePersistance = globalThis.org.allbinary.game.configuration.persistance.KeyValuePersistance;
+import { KeyValuePersistance } from '../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
+      //not GWT import const KeyValuePersistance = globalThis.org.allbinary.game.configuration.persistance.KeyValuePersistance;
 
       
-//not game specific package import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-      const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+      //not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
       
-//not game specific package import { BasicPaintablesCanvas } from '../../../../org/allbinary/game/displayable/canvas/BasicPaintablesCanvas.js';
-      const BasicPaintablesCanvas = globalThis.org.allbinary.game.displayable.canvas.BasicPaintablesCanvas;
+import { BasicPaintablesCanvas } from '../../../../org/allbinary/game/displayable/canvas/BasicPaintablesCanvas.js';
+      //not GWT import const BasicPaintablesCanvas = globalThis.org.allbinary.game.displayable.canvas.BasicPaintablesCanvas;
 
       
-//not game specific package import { DemoCanvas } from '../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
-      const DemoCanvas = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
+import { DemoCanvas } from '../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
+      //not GWT import const DemoCanvas = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
 
       
-//not game specific package import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
-      const GameCanvasRunnableInterface = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
+import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
+      //not GWT import const GameCanvasRunnableInterface = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
 
       
-//not game specific package import { GameEventHandlerUtil } from '../../../../org/allbinary/game/displayable/canvas/GameEventHandlerUtil.js';
-      const GameEventHandlerUtil = globalThis.org.allbinary.game.displayable.canvas.GameEventHandlerUtil;
+import { GameEventHandlerUtil } from '../../../../org/allbinary/game/displayable/canvas/GameEventHandlerUtil.js';
+      //not GWT import const GameEventHandlerUtil = globalThis.org.allbinary.game.displayable.canvas.GameEventHandlerUtil;
 
       
-//not game specific package import { GameInputMappingCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
-      const GameInputMappingCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingCanvas;
+import { GameInputMappingCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
+      //not GWT import const GameInputMappingCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingCanvas;
 
       
-//not game specific package import { GameInputMappingInstructionsCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
-      const GameInputMappingInstructionsCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingInstructionsCanvas;
+import { GameInputMappingInstructionsCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
+      //not GWT import const GameInputMappingInstructionsCanvas = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingInstructionsCanvas;
 
       
-//not game specific package import { MenuListener } from '../../../../org/allbinary/game/displayable/canvas/MenuListener.js';
-      const MenuListener = globalThis.org.allbinary.game.displayable.canvas.MenuListener;
+import { MenuListener } from '../../../../org/allbinary/game/displayable/canvas/MenuListener.js';
+      //not GWT import const MenuListener = globalThis.org.allbinary.game.displayable.canvas.MenuListener;
 
       
-//not game specific package import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullGameCanvasRunnable.js';
-      const NullGameCanvasRunnable = globalThis.org.allbinary.game.displayable.canvas.NullGameCanvasRunnable;
+import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullGameCanvasRunnable.js';
+      //not GWT import const NullGameCanvasRunnable = globalThis.org.allbinary.game.displayable.canvas.NullGameCanvasRunnable;
 
       
-//not game specific package import { TextNotificationUtil } from '../../../../org/allbinary/game/input/TextNotificationUtil.js';
-      const TextNotificationUtil = globalThis.org.allbinary.game.input.TextNotificationUtil;
+import { TextNotificationUtil } from '../../../../org/allbinary/game/input/TextNotificationUtil.js';
+      //not GWT import const TextNotificationUtil = globalThis.org.allbinary.game.input.TextNotificationUtil;
 
       
-//not game specific package import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      //not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
 
       
-//not game specific package import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
-      const GameNotificationEventHandler = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEventHandler;
+import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
+      //not GWT import const GameNotificationEventHandler = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEventHandler;
 
       
-//not game specific package import { HelpPaintable } from '../../../../org/allbinary/game/paint/help/HelpPaintable.js';
-      const HelpPaintable = globalThis.org.allbinary.game.paint.help.HelpPaintable;
+import { HelpPaintable } from '../../../../org/allbinary/game/paint/help/HelpPaintable.js';
+      //not GWT import const HelpPaintable = globalThis.org.allbinary.game.paint.help.HelpPaintable;
 
       
-//not game specific package import { HighScoreCommands } from '../../../../org/allbinary/game/score/HighScoreCommands.js';
-      const HighScoreCommands = globalThis.org.allbinary.game.score.HighScoreCommands;
+import { HighScoreCommands } from '../../../../org/allbinary/game/score/HighScoreCommands.js';
+      //not GWT import const HighScoreCommands = globalThis.org.allbinary.game.score.HighScoreCommands;
 
       
-//not game specific package import { HighScoreCommandsFactory } from '../../../../org/allbinary/game/score/HighScoreCommandsFactory.js';
-      const HighScoreCommandsFactory = globalThis.org.allbinary.game.score.HighScoreCommandsFactory;
+import { HighScoreCommandsFactory } from '../../../../org/allbinary/game/score/HighScoreCommandsFactory.js';
+      //not GWT import const HighScoreCommandsFactory = globalThis.org.allbinary.game.score.HighScoreCommandsFactory;
 
       
-//not game specific package import { HighScoreTextBox } from '../../../../org/allbinary/game/score/displayable/HighScoreTextBox.js';
-      const HighScoreTextBox = globalThis.org.allbinary.game.score.displayable.HighScoreTextBox;
+import { HighScoreTextBox } from '../../../../org/allbinary/game/score/displayable/HighScoreTextBox.js';
+      //not GWT import const HighScoreTextBox = globalThis.org.allbinary.game.score.displayable.HighScoreTextBox;
 
       
-//not game specific package import { HighScoreUtil } from '../../../../org/allbinary/game/score/displayable/HighScoreUtil.js';
-      const HighScoreUtil = globalThis.org.allbinary.game.score.displayable.HighScoreUtil;
+import { HighScoreUtil } from '../../../../org/allbinary/game/score/displayable/HighScoreUtil.js';
+      //not GWT import const HighScoreUtil = globalThis.org.allbinary.game.score.displayable.HighScoreUtil;
 
       
-//not game specific package import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-      const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
+import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
+      //not GWT import const HighScoresCanvas = globalThis.org.allbinary.game.score.displayable.HighScoresCanvas;
 
       
-//not game specific package import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
-      const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+import { GameStateFactory } from '../../../../org/allbinary/game/state/GameStateFactory.js';
+      //not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
       
-//not game specific package import { ResizableListenerHandler } from '../../../../org/allbinary/graphics/ResizableListenerHandler.js';
-      const ResizableListenerHandler = globalThis.org.allbinary.graphics.ResizableListenerHandler;
+import { ResizableListenerHandler } from '../../../../org/allbinary/graphics/ResizableListenerHandler.js';
+      //not GWT import const ResizableListenerHandler = globalThis.org.allbinary.graphics.ResizableListenerHandler;
 
       
-//not game specific package import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-      const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+      //not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
       
-//not game specific package import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+      //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
-      const ColorChangeEventHandler = globalThis.org.allbinary.graphics.color.ColorChangeEventHandler;
+import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
+      //not GWT import const ColorChangeEventHandler = globalThis.org.allbinary.graphics.color.ColorChangeEventHandler;
 
       
-//not game specific package import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-      const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      //not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
       
-//not game specific package import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      //not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
 
       
-//not game specific package import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
-      const MyCommandsFactory = globalThis.org.allbinary.graphics.displayable.command.MyCommandsFactory;
+import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
+      //not GWT import const MyCommandsFactory = globalThis.org.allbinary.graphics.displayable.command.MyCommandsFactory;
 
       
-//not game specific package import { AboutCommandProcessor } from '../../../../org/allbinary/graphics/displayable/screen/AboutCommandProcessor.js';
-      const AboutCommandProcessor = globalThis.org.allbinary.graphics.displayable.screen.AboutCommandProcessor;
+import { AboutCommandProcessor } from '../../../../org/allbinary/graphics/displayable/screen/AboutCommandProcessor.js';
+      //not GWT import const AboutCommandProcessor = globalThis.org.allbinary.graphics.displayable.screen.AboutCommandProcessor;
 
       
-//not game specific package import { AboutPaintableFactory } from '../../../../org/allbinary/graphics/displayable/screen/AboutPaintableFactory.js';
-      const AboutPaintableFactory = globalThis.org.allbinary.graphics.displayable.screen.AboutPaintableFactory;
+import { AboutPaintableFactory } from '../../../../org/allbinary/graphics/displayable/screen/AboutPaintableFactory.js';
+      //not GWT import const AboutPaintableFactory = globalThis.org.allbinary.graphics.displayable.screen.AboutPaintableFactory;
 
       
-//not game specific package import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-      const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
+import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+      //not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
 
       
-//not game specific package import { WebCommandProcessor } from '../../../../org/allbinary/graphics/displayable/screen/WebCommandProcessor.js';
-      const WebCommandProcessor = globalThis.org.allbinary.graphics.displayable.screen.WebCommandProcessor;
+import { WebCommandProcessor } from '../../../../org/allbinary/graphics/displayable/screen/WebCommandProcessor.js';
+      //not GWT import const WebCommandProcessor = globalThis.org.allbinary.graphics.displayable.screen.WebCommandProcessor;
 
       
-//not game specific package import { AllBinarySensorManager } from '../../../../org/allbinary/input/AllBinarySensorManager.js';
-      const AllBinarySensorManager = globalThis.org.allbinary.input.AllBinarySensorManager;
+import { AllBinarySensorManager } from '../../../../org/allbinary/input/AllBinarySensorManager.js';
+      //not GWT import const AllBinarySensorManager = globalThis.org.allbinary.input.AllBinarySensorManager;
 
       
-//not game specific package import { VirtualKeyboardEventHandler } from '../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
-      const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
+import { VirtualKeyboardEventHandler } from '../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+      //not GWT import const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
 
       
-//not game specific package import { BasicMotionGesturesHandler } from '../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
-      const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
+import { BasicMotionGesturesHandler } from '../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
+      //not GWT import const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
 
       
-//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not plain js import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-      const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
+import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
+      //not GWT import const ClientInformationFactory = globalThis.org.allbinary.logic.system.security.licensing.ClientInformationFactory;
 
       
-//not game specific package import { InApplicationPurchaseFactory } from '../../../../org/allbinary/logic/system/security/licensing/InApplicationPurchaseFactory.js';
-      const InApplicationPurchaseFactory = globalThis.org.allbinary.logic.system.security.licensing.InApplicationPurchaseFactory;
+import { InApplicationPurchaseFactory } from '../../../../org/allbinary/logic/system/security/licensing/InApplicationPurchaseFactory.js';
+      //not GWT import const InApplicationPurchaseFactory = globalThis.org.allbinary.logic.system.security.licensing.InApplicationPurchaseFactory;
 
       
-//not game specific package import { LockableFeature } from '../../../../org/allbinary/logic/system/security/licensing/LockableFeature.js';
-      const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+import { LockableFeature } from '../../../../org/allbinary/logic/system/security/licensing/LockableFeature.js';
+      //not GWT import const LockableFeature = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
 
       
-//not game specific package import { LockableFeatureFactory } from '../../../../org/allbinary/logic/system/security/licensing/LockableFeatureFactory.js';
-      const LockableFeatureFactory = globalThis.org.allbinary.logic.system.security.licensing.LockableFeatureFactory;
+import { LockableFeatureFactory } from '../../../../org/allbinary/logic/system/security/licensing/LockableFeatureFactory.js';
+      //not GWT import const LockableFeatureFactory = globalThis.org.allbinary.logic.system.security.licensing.LockableFeatureFactory;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
-//not game specific package import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
-      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
+      //not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
 
       
-//not game specific package import { AllBinaryMediaManager } from '../../../../org/allbinary/media/audio/AllBinaryMediaManager.js';
-      const AllBinaryMediaManager = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
+import { AllBinaryMediaManager } from '../../../../org/allbinary/media/audio/AllBinaryMediaManager.js';
+      //not GWT import const AllBinaryMediaManager = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
 
       
-//not game specific package import { MidletStrings } from '../../../../org/allbinary/midlet/MidletStrings.js';
-      const MidletStrings = globalThis.org.allbinary.midlet.MidletStrings;
+import { MidletStrings } from '../../../../org/allbinary/midlet/MidletStrings.js';
+      //not GWT import const MidletStrings = globalThis.org.allbinary.midlet.MidletStrings;
 
       
-//not game specific package import { ProgressMidlet } from '../../../../org/allbinary/midlet/ProgressMidlet.js';
-      const ProgressMidlet = globalThis.org.allbinary.midlet.ProgressMidlet;
+import { ProgressMidlet } from '../../../../org/allbinary/midlet/ProgressMidlet.js';
+      //not GWT import const ProgressMidlet = globalThis.org.allbinary.midlet.ProgressMidlet;
 
       
-//not game specific package import { NullThread } from '../../../../org/allbinary/thread/NullThread.js';
-      const NullThread = globalThis.org.allbinary.thread.NullThread;
+import { NullThread } from '../../../../org/allbinary/thread/NullThread.js';
+      //not GWT import const NullThread = globalThis.org.allbinary.thread.NullThread;
 
       
-//not game specific package import { ThreadFactoryUtil } from '../../../../org/allbinary/thread/ThreadFactoryUtil.js';
-      const ThreadFactoryUtil = globalThis.org.allbinary.thread.ThreadFactoryUtil;
+import { ThreadFactoryUtil } from '../../../../org/allbinary/thread/ThreadFactoryUtil.js';
+      //not GWT import const ThreadFactoryUtil = globalThis.org.allbinary.thread.ThreadFactoryUtil;
 
       
-//not game specific package import { ThreadUtil } from '../../../../org/allbinary/thread/ThreadUtil.js';
-      const ThreadUtil = globalThis.org.allbinary.thread.ThreadUtil;
+import { ThreadUtil } from '../../../../org/allbinary/thread/ThreadUtil.js';
+      //not GWT import const ThreadUtil = globalThis.org.allbinary.thread.ThreadUtil;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
+//not plain js import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
       const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

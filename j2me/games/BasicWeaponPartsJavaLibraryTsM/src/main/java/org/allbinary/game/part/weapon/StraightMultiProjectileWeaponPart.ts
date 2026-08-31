@@ -20,56 +20,56 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      //not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
 
       
-//not game specific package import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
-      const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
+import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
+      //not GWT import const WeaponLayer = globalThis.org.allbinary.game.layer.weapon.WeaponLayer;
 
       
-//not game specific package import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
-      const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
+import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
+      //not GWT import const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
 
       
-//not game specific package import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
-      const NoScoreable = globalThis.org.allbinary.game.score.NoScoreable;
+import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
+      //not GWT import const NoScoreable = globalThis.org.allbinary.game.score.NoScoreable;
 
       
-//not game specific package import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-      const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+      //not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
 
       
-//not game specific package import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
-      const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
+      //not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalTrigTable.js';
+//not plain js import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalTrigTable.js';
       const NoDecimalTrigTable = globalThis.org.allbinary.math.NoDecimalTrigTable;
 
       
-//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

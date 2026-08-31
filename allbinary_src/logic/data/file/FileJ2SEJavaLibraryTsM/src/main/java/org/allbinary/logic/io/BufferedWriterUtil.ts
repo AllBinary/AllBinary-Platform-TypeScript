@@ -22,39 +22,39 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { BufferedWriter } from '../../../../java/io/BufferedWriter.js';
-      const BufferedWriter = globalThis.java.io.BufferedWriter;
+import { BufferedWriter } from '../../../../java/io/BufferedWriter.js';
+      //not GWT import const BufferedWriter = globalThis.java.io.BufferedWriter;
 
       
-//not game specific package import { FileWriter } from '../../../../java/io/FileWriter.js';
-      const FileWriter = globalThis.java.io.FileWriter;
+import { FileWriter } from '../../../../java/io/FileWriter.js';
+      //not GWT import const FileWriter = globalThis.java.io.FileWriter;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-      const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+      //not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
 
       
-//not game specific package import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

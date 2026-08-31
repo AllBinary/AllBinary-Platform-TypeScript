@@ -12,23 +12,23 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-//not game specific package import { Context } from '../../../android/content/Context.js';
-      const Context = globalThis.android.content.Context;
+import { Context } from '../../../android/content/Context.js';
+      //not GWT import const Context = globalThis.android.content.Context;
 
       
-//not game specific package import { View } from '../../../android/view/View.js';
-      const View = globalThis.android.view.View;
+import { View } from '../../../android/view/View.js';
+      //not GWT import const View = globalThis.android.view.View;
 
       
-//not game specific package import { Toast } from '../../../android/widget/Toast.js';
-      const Toast = globalThis.android.widget.Toast;
+import { Toast } from '../../../android/widget/Toast.js';
+      //not GWT import const Toast = globalThis.android.widget.Toast;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

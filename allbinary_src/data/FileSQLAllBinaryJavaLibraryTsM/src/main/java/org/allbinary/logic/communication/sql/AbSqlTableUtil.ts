@@ -24,79 +24,79 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { ResultSet } from '../../../../../java/sql/ResultSet.js';
-      const ResultSet = globalThis.java.sql.ResultSet;
+import { ResultSet } from '../../../../../java/sql/ResultSet.js';
+      //not GWT import const ResultSet = globalThis.java.sql.ResultSet;
 
       
-//not game specific package import { ResultSetMetaData } from '../../../../../java/sql/ResultSetMetaData.js';
-      const ResultSetMetaData = globalThis.java.sql.ResultSetMetaData;
+import { ResultSetMetaData } from '../../../../../java/sql/ResultSetMetaData.js';
+      //not GWT import const ResultSetMetaData = globalThis.java.sql.ResultSetMetaData;
 
       
-//not game specific package import { Calendar } from '../../../../../java/util/Calendar.js';
-      const Calendar = globalThis.java.util.Calendar;
+import { Calendar } from '../../../../../java/util/Calendar.js';
+      //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-//not game specific package import { Portion } from '../../../../../org/allbinary/business/installer/Portion.js';
-      const Portion = globalThis.org.allbinary.business.installer.Portion;
+import { Portion } from '../../../../../org/allbinary/business/installer/Portion.js';
+      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
-//not game specific package import { AbFileOutputStream } from '../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
-      const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
+import { AbFileOutputStream } from '../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+      //not GWT import const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
 
       
-//not game specific package import { BufferedLineReader } from '../../../../../org/allbinary/logic/io/BufferedLineReader.js';
-      const BufferedLineReader = globalThis.org.allbinary.logic.io.BufferedLineReader;
+import { BufferedLineReader } from '../../../../../org/allbinary/logic/io/BufferedLineReader.js';
+      //not GWT import const BufferedLineReader = globalThis.org.allbinary.logic.io.BufferedLineReader;
 
       
-//not game specific package import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
-//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
-      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
+      //not GWT import const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
 
       
-//not game specific package import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
-      const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
+import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
+      //not GWT import const Directory = globalThis.org.allbinary.logic.io.file.directory.Directory;
 
       
-//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { PATH_GLOBALS } from '../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-      const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+import { PATH_GLOBALS } from '../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+      //not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
 
       
-//not game specific package import { OutputStream } from '../../../../../java/io/OutputStream.js';
-      const OutputStream = globalThis.java.io.OutputStream;
+import { OutputStream } from '../../../../../java/io/OutputStream.js';
+      //not GWT import const OutputStream = globalThis.java.io.OutputStream;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

@@ -22,32 +22,32 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { AnimationFactoryInitializationVisitor } from '../../../org/allbinary/animation/image/AnimationFactoryInitializationVisitor.js';
-      const AnimationFactoryInitializationVisitor = globalThis.org.allbinary.animation.image.AnimationFactoryInitializationVisitor;
+import { AnimationFactoryInitializationVisitor } from '../../../org/allbinary/animation/image/AnimationFactoryInitializationVisitor.js';
+      //not GWT import const AnimationFactoryInitializationVisitor = globalThis.org.allbinary.animation.image.AnimationFactoryInitializationVisitor;
 
       
-//not game specific package import { BaseImageAnimationFactory } from '../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
-      const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
+import { BaseImageAnimationFactory } from '../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
+      //not GWT import const BaseImageAnimationFactory = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
       
-//not game specific package import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
+      //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
-//not game specific package import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
-      const ImageJ2MEScaleUtil = globalThis.org.allbinary.media.image.ImageJ2MEScaleUtil;
+import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
+      //not GWT import const ImageJ2MEScaleUtil = globalThis.org.allbinary.media.image.ImageJ2MEScaleUtil;
 
       
-//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

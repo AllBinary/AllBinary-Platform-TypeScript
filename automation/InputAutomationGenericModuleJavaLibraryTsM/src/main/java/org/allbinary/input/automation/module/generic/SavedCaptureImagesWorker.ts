@@ -24,76 +24,76 @@
         
             import { Thread } from '../../../../../../java/lang/Thread.js';
         
-//not game specific package import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { File } from '../../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { ImageIO } from '../../../../../../javax/imageio/ImageIO.js';
-      const ImageIO = globalThis.javax.imageio.ImageIO;
+import { ImageIO } from '../../../../../../javax/imageio/ImageIO.js';
+      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
-//not game specific package import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
-      const SavedCaptureGenericProfileDataWorkerType = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.SavedCaptureGenericProfileDataWorkerType;
+import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
+      //not GWT import const SavedCaptureGenericProfileDataWorkerType = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.SavedCaptureGenericProfileDataWorkerType;
 
       
-//not game specific package import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
-      const CaptureWorkerInterface = globalThis.org.allbinary.input.media.image.capture.CaptureWorkerInterface;
+import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
+      //not GWT import const CaptureWorkerInterface = globalThis.org.allbinary.input.media.image.capture.CaptureWorkerInterface;
 
       
-//not game specific package import { CapturedBufferedImagesCacheSingleton } from '../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
-      const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+import { CapturedBufferedImagesCacheSingleton } from '../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
+      //not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
 
       
-//not game specific package import { CapturedImageWorkerResultsEvent } from '../../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js';
-      const CapturedImageWorkerResultsEvent = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
+import { CapturedImageWorkerResultsEvent } from '../../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js';
+      //not GWT import const CapturedImageWorkerResultsEvent = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
 
       
-//not game specific package import { ProcessingFrameIndexFactory } from '../../../../../../org/allbinary/input/media/image/capture/ProcessingFrameIndexFactory.js';
-      const ProcessingFrameIndexFactory = globalThis.org.allbinary.input.media.image.capture.ProcessingFrameIndexFactory;
+import { ProcessingFrameIndexFactory } from '../../../../../../org/allbinary/input/media/image/capture/ProcessingFrameIndexFactory.js';
+      //not GWT import const ProcessingFrameIndexFactory = globalThis.org.allbinary.input.media.image.capture.ProcessingFrameIndexFactory;
 
       
-//not game specific package import { ScreenScavangerRobot } from '../../../../../../org/allbinary/input/media/image/capture/ScreenScavangerRobot.js';
-      const ScreenScavangerRobot = globalThis.org.allbinary.input.media.image.capture.ScreenScavangerRobot;
+import { ScreenScavangerRobot } from '../../../../../../org/allbinary/input/media/image/capture/ScreenScavangerRobot.js';
+      //not GWT import const ScreenScavangerRobot = globalThis.org.allbinary.input.media.image.capture.ScreenScavangerRobot;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
-      const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
+import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
+      //not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-      const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
+import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
+      //not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
 
       
-//not game specific package import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
-      const MediaDataFactory = globalThis.org.allbinary.logic.visual.media.MediaDataFactory;
+import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
+      //not GWT import const MediaDataFactory = globalThis.org.allbinary.logic.visual.media.MediaDataFactory;
 
       
-//not game specific package import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
-      const BufferedImageFrameCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageFrameCacheable;
+import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
+      //not GWT import const BufferedImageFrameCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageFrameCacheable;
 
       
-//not game specific package import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 

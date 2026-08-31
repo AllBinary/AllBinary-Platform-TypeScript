@@ -20,44 +20,44 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-      const Processor = globalThis.org.allbinary.canvas.Processor;
+import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
+      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
-//not game specific package import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
-      const HighScores = globalThis.org.allbinary.game.score.HighScores;
+import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
+      //not GWT import const HighScores = globalThis.org.allbinary.game.score.HighScores;
 
       
-//not game specific package import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
-      const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
+import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
+      //not GWT import const HighScoresHelperBase = globalThis.org.allbinary.game.score.HighScoresHelperBase;
 
       
-//not game specific package import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
-      const NullHighScoresSingletonFactory = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
+import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
+      //not GWT import const NullHighScoresSingletonFactory = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
 
       
-//not game specific package import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
-      const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameStateFactory.js';
+      //not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
       
-//not game specific package import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      //not GWT import const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
 
       
-//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

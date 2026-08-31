@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
-      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
 

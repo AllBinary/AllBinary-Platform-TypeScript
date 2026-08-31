@@ -20,36 +20,36 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { GameAdStateBase } from '../../../org/allbinary/business/advertisement/GameAdStateBase.js';
-      const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
+import { GameAdStateBase } from '../../../org/allbinary/business/advertisement/GameAdStateBase.js';
+      //not GWT import const GameAdStateBase = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
 
       
-//not game specific package import { AdConfiguration } from '../../../org/allbinary/business/advertisement/AdConfiguration.js';
-      const AdConfiguration = globalThis.org.allbinary.business.advertisement.AdConfiguration;
+import { AdConfiguration } from '../../../org/allbinary/business/advertisement/AdConfiguration.js';
+      //not GWT import const AdConfiguration = globalThis.org.allbinary.business.advertisement.AdConfiguration;
 
       
-//not game specific package import { VirtualKeyboardEvent } from '../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
-      const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
+import { VirtualKeyboardEvent } from '../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+      //not GWT import const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
 
       
-//not game specific package import { VirtualKeyboardEventHandler } from '../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
-      const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
+import { VirtualKeyboardEventHandler } from '../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+      //not GWT import const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
 
       
-//not game specific package import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
-      const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
+import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+      //not GWT import const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
 
       
-//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
-      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
-//not game specific package import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
-      const InputAutomationRobotServiceInterface = globalThis.bundle.input.automation.robot.InputAutomationRobotServiceInterface;
+import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
+      //not GWT import const InputAutomationRobotServiceInterface = globalThis.bundle.input.automation.robot.InputAutomationRobotServiceInterface;
 
       
-//not game specific package import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
-      const InputAutomationServiceConsumer = globalThis.org.allbinary.osgi.service.InputAutomationServiceConsumer;
+import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
+      //not GWT import const InputAutomationServiceConsumer = globalThis.org.allbinary.osgi.service.InputAutomationServiceConsumer;
 
       
 

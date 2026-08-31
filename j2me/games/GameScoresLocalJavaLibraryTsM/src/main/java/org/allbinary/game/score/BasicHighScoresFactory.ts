@@ -6,24 +6,24 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-      const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+      //not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
 

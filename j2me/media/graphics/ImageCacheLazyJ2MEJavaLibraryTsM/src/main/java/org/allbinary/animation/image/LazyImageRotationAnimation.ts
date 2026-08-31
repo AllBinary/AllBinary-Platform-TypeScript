@@ -20,75 +20,75 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+      //not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
 
       
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not game specific package import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-      const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
+import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
+      //not GWT import const IndexedAnimation = globalThis.org.allbinary.animation.IndexedAnimation;
 
       
-//not game specific package import { NullRotationAnimationFactory } from '../../../../org/allbinary/animation/NullRotationAnimationFactory.js';
-      const NullRotationAnimationFactory = globalThis.org.allbinary.animation.NullRotationAnimationFactory;
+import { NullRotationAnimationFactory } from '../../../../org/allbinary/animation/NullRotationAnimationFactory.js';
+      //not GWT import const NullRotationAnimationFactory = globalThis.org.allbinary.animation.NullRotationAnimationFactory;
 
       
-//not game specific package import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-      const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
+import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
+      //not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not game specific package import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
-      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+      //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not plain js import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
       const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
-//not game specific package import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
+//not plain js import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
       const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
+      //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
-//not game specific package import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
+//not plain js import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
       const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       

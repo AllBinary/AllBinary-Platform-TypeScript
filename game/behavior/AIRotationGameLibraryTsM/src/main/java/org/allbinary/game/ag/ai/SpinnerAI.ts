@@ -20,24 +20,24 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
-      const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
+      //not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
 
       
-//not game specific package import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-      const GameInput = globalThis.org.allbinary.game.input.GameInput;
+import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
+      //not GWT import const GameInput = globalThis.org.allbinary.game.input.GameInput;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 

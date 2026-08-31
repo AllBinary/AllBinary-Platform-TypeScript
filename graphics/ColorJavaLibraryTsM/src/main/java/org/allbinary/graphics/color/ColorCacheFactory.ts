@@ -22,27 +22,27 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AutomaticCacheInterface } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+import { AutomaticCacheInterface } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
-//not game specific package import { AutomaticCacheInterfaceFactory } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterfaceFactory.js';
-      const AutomaticCacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterfaceFactory;
+import { AutomaticCacheInterfaceFactory } from '../../../../org/allbinary/logic/util/cache/AutomaticCacheInterfaceFactory.js';
+      //not GWT import const AutomaticCacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterfaceFactory;
 
       
-//not game specific package import { CachePolicyFactory } from '../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
-      const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
+import { CachePolicyFactory } from '../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+      //not GWT import const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
 
       
-//not game specific package import { CacheTypeFactory } from '../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
-      const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
+import { CacheTypeFactory } from '../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+      //not GWT import const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

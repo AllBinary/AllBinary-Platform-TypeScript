@@ -22,32 +22,32 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
-//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js';
-      const FileData = globalThis.org.allbinary.logic.io.file.FileData;
+import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js';
+      //not GWT import const FileData = globalThis.org.allbinary.logic.io.file.FileData;
 
       
-//not game specific package import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
-      const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
+import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
+      //not GWT import const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
 
       
 

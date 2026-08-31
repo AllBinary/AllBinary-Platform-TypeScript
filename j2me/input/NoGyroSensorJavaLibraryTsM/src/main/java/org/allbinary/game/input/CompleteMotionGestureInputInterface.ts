@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
-      const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
+import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
+      //not GWT import const NamedInterface = globalThis.org.allbinary.layer.NamedInterface;
 
       
 

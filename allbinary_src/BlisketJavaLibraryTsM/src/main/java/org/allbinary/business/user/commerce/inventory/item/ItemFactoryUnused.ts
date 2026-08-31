@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      //not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
 
       
-//not game specific package import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
-//not game specific package import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-      const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
+      //not GWT import const RequestParams = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
 
       
 

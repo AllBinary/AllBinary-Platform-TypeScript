@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { GameLayerBehavior } from '../../../../../org/allbinary/game/layer/behavior/GameLayerBehavior.js';
-      const GameLayerBehavior = globalThis.org.allbinary.game.layer.behavior.GameLayerBehavior;
+import { GameLayerBehavior } from '../../../../../org/allbinary/game/layer/behavior/GameLayerBehavior.js';
+      //not GWT import const GameLayerBehavior = globalThis.org.allbinary.game.layer.behavior.GameLayerBehavior;
 
       
-//not game specific package import { BasicAccelerationProperties } from '../../../../../org/allbinary/game/physics/acceleration/BasicAccelerationProperties.js';
-      const BasicAccelerationProperties = globalThis.org.allbinary.game.physics.acceleration.BasicAccelerationProperties;
+import { BasicAccelerationProperties } from '../../../../../org/allbinary/game/physics/acceleration/BasicAccelerationProperties.js';
+      //not GWT import const BasicAccelerationProperties = globalThis.org.allbinary.game.physics.acceleration.BasicAccelerationProperties;
 
       
-//not game specific package import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
-      const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
+import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
+      //not GWT import const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
 
       
 

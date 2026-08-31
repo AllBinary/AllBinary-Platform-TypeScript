@@ -20,24 +20,24 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { AdvertisementImageInterface } from '../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
-      const AdvertisementImageInterface = globalThis.org.allbinary.business.advertisement.image.AdvertisementImageInterface;
+import { AdvertisementImageInterface } from '../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
+      //not GWT import const AdvertisementImageInterface = globalThis.org.allbinary.business.advertisement.image.AdvertisementImageInterface;
 
       
-//not game specific package import { AdvertisementProductInterface } from '../../../../org/allbinary/business/advertisement/product/AdvertisementProductInterface.js';
-      const AdvertisementProductInterface = globalThis.org.allbinary.business.advertisement.product.AdvertisementProductInterface;
+import { AdvertisementProductInterface } from '../../../../org/allbinary/business/advertisement/product/AdvertisementProductInterface.js';
+      //not GWT import const AdvertisementProductInterface = globalThis.org.allbinary.business.advertisement.product.AdvertisementProductInterface;
 
       
-//not game specific package import { AdvertisementThumbnailInterface } from '../../../../org/allbinary/business/advertisement/thumbnail/AdvertisementThumbnailInterface.js';
-      const AdvertisementThumbnailInterface = globalThis.org.allbinary.business.advertisement.thumbnail.AdvertisementThumbnailInterface;
+import { AdvertisementThumbnailInterface } from '../../../../org/allbinary/business/advertisement/thumbnail/AdvertisementThumbnailInterface.js';
+      //not GWT import const AdvertisementThumbnailInterface = globalThis.org.allbinary.business.advertisement.thumbnail.AdvertisementThumbnailInterface;
 
       
-//not game specific package import { Money } from '../../../../org/allbinary/business/user/commerce/money/Money.js';
-      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+import { Money } from '../../../../org/allbinary/business/user/commerce/money/Money.js';
+      //not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
 
       
-//not game specific package import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
-      const DisplayInBrowserContraintsInterface = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraintsInterface;
+import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
+      //not GWT import const DisplayInBrowserContraintsInterface = globalThis.org.allbinary.logic.control.contraints.display.browser.DisplayInBrowserContraintsInterface;
 
       
 

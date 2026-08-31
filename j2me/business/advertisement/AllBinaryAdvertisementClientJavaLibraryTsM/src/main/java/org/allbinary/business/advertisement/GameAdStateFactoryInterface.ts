@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-      const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+      //not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
 
       
 

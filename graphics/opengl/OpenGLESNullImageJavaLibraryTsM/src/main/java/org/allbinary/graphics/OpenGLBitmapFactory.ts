@@ -4,28 +4,28 @@
 
 
 
-//not game specific package import { IOException } from '../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      //not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
 
       
-//not game specific package import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-      const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+      //not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
 
       
 

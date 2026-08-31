@@ -22,15 +22,15 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
-//not game specific package import { BasicArrayListS } from '../../../../../../org/allbinary/util/BasicArrayListS.js';
+//not plain js import { BasicArrayListS } from '../../../../../../org/allbinary/util/BasicArrayListS.js';
       const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
       

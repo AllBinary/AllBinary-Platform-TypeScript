@@ -22,40 +22,40 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-      const Direction = globalThis.org.allbinary.direction.Direction;
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
+      //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
-//not game specific package import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
-      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
+      //not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
+//not plain js import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
       const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       
-//not game specific package import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-      const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
+import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
+      //not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
 
       
-//not game specific package import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-      const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
+      //not GWT import const GeographicMapCellPosition = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
       
-//not game specific package import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
-      const GeographicMapDirectionUtil = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapDirectionUtil;
+import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
+      //not GWT import const GeographicMapDirectionUtil = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapDirectionUtil;
 
       
-//not game specific package import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js';
-      const GeographicMapCellPathHistoryInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicMapCellPathHistoryInfo;
+import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js';
+      //not GWT import const GeographicMapCellPathHistoryInfo = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicMapCellPathHistoryInfo;
 
       
 

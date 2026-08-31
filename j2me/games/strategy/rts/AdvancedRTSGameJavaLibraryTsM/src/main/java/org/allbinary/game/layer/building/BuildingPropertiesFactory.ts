@@ -22,52 +22,52 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
-      const DamageFloaters = globalThis.org.allbinary.game.combat.damage.DamageFloaters;
+import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
+      //not GWT import const DamageFloaters = globalThis.org.allbinary.game.combat.damage.DamageFloaters;
 
       
-//not game specific package import { PtsDamageFloaters } from '../../../../../org/allbinary/game/combat/damage/PtsDamageFloaters.js';
-      const PtsDamageFloaters = globalThis.org.allbinary.game.combat.damage.PtsDamageFloaters;
+import { PtsDamageFloaters } from '../../../../../org/allbinary/game/combat/damage/PtsDamageFloaters.js';
+      //not GWT import const PtsDamageFloaters = globalThis.org.allbinary.game.combat.damage.PtsDamageFloaters;
 
       
-//not game specific package import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { GameFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-      const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+import { GameFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+      //not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
       
-//not game specific package import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
-      const BasicHudFactory = globalThis.org.allbinary.game.graphics.hud.BasicHudFactory;
+import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
+      //not GWT import const BasicHudFactory = globalThis.org.allbinary.game.graphics.hud.BasicHudFactory;
 
       
-//not game specific package import { HealthBar } from '../../../../../org/allbinary/game/health/HealthBar.js';
-      const HealthBar = globalThis.org.allbinary.game.health.HealthBar;
+import { HealthBar } from '../../../../../org/allbinary/game/health/HealthBar.js';
+      //not GWT import const HealthBar = globalThis.org.allbinary.game.health.HealthBar;
 
       
-//not game specific package import { HealthBarTwodAnimation } from '../../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
-      const HealthBarTwodAnimation = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
+import { HealthBarTwodAnimation } from '../../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
+      //not GWT import const HealthBarTwodAnimation = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
 
       
-//not game specific package import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
-      const TrackingEvent = globalThis.org.allbinary.game.tracking.TrackingEvent;
+import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
+      //not GWT import const TrackingEvent = globalThis.org.allbinary.game.tracking.TrackingEvent;
 
       
-//not game specific package import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      //not GWT import const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
 
       
-//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 

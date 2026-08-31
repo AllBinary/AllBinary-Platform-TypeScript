@@ -20,15 +20,15 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
+//not plain js import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
       const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
       

@@ -20,48 +20,48 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
-//not game specific package import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-      const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
+import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
+      //not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
 
       
-//not game specific package import { ImageComparisonResult } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
-      const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+import { ImageComparisonResult } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
+      //not GWT import const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
 
       
-//not game specific package import { ImageComparisonResultsEvent } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsEvent.js';
-      const ImageComparisonResultsEvent = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
+import { ImageComparisonResultsEvent } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsEvent.js';
+      //not GWT import const ImageComparisonResultsEvent = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
 
       
-//not game specific package import { ImageComparisonResultsListener } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsListener.js';
-      const ImageComparisonResultsListener = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsListener;
+import { ImageComparisonResultsListener } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsListener.js';
+      //not GWT import const ImageComparisonResultsListener = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsListener;
 
       
-//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 

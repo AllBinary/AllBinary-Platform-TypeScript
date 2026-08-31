@@ -22,76 +22,76 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { File } from '../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { List } from '../../../../../java/util/List.js';
-      const List = globalThis.java.util.List;
+import { List } from '../../../../../java/util/List.js';
+      //not GWT import const List = globalThis.java.util.List;
 
       
-//not game specific package import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
-      const JAXBContext = globalThis.javax.xml.bind.JAXBContext;
+import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
+      //not GWT import const JAXBContext = globalThis.javax.xml.bind.JAXBContext;
 
       
-//not game specific package import { Marshaller } from '../../../../../javax/xml/bind/Marshaller.js';
-      const Marshaller = globalThis.javax.xml.bind.Marshaller;
+import { Marshaller } from '../../../../../javax/xml/bind/Marshaller.js';
+      //not GWT import const Marshaller = globalThis.javax.xml.bind.Marshaller;
 
       
-//not game specific package import { XmlAccessType } from '../../../../../javax/xml/bind/annotation/XmlAccessType.js';
-      const XmlAccessType = globalThis.javax.xml.bind.annotation.XmlAccessType;
+import { XmlAccessType } from '../../../../../javax/xml/bind/annotation/XmlAccessType.js';
+      //not GWT import const XmlAccessType = globalThis.javax.xml.bind.annotation.XmlAccessType;
 
       
-//not game specific package import { XmlAccessorType } from '../../../../../javax/xml/bind/annotation/XmlAccessorType.js';
-      const XmlAccessorType = globalThis.javax.xml.bind.annotation.XmlAccessorType;
+import { XmlAccessorType } from '../../../../../javax/xml/bind/annotation/XmlAccessorType.js';
+      //not GWT import const XmlAccessorType = globalThis.javax.xml.bind.annotation.XmlAccessorType;
 
       
-//not game specific package import { XmlElement } from '../../../../../javax/xml/bind/annotation/XmlElement.js';
-      const XmlElement = globalThis.javax.xml.bind.annotation.XmlElement;
+import { XmlElement } from '../../../../../javax/xml/bind/annotation/XmlElement.js';
+      //not GWT import const XmlElement = globalThis.javax.xml.bind.annotation.XmlElement;
 
       
-//not game specific package import { XmlRootElement } from '../../../../../javax/xml/bind/annotation/XmlRootElement.js';
-      const XmlRootElement = globalThis.javax.xml.bind.annotation.XmlRootElement;
+import { XmlRootElement } from '../../../../../javax/xml/bind/annotation/XmlRootElement.js';
+      //not GWT import const XmlRootElement = globalThis.javax.xml.bind.annotation.XmlRootElement;
 
       
-//not game specific package import { XmlType } from '../../../../../javax/xml/bind/annotation/XmlType.js';
-      const XmlType = globalThis.javax.xml.bind.annotation.XmlType;
+import { XmlType } from '../../../../../javax/xml/bind/annotation/XmlType.js';
+      //not GWT import const XmlType = globalThis.javax.xml.bind.annotation.XmlType;
 
       
-//not game specific package import { DomDocumentFileHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentFileHelper.js';
-      const DomDocumentFileHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentFileHelper;
+import { DomDocumentFileHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentFileHelper.js';
+      //not GWT import const DomDocumentFileHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentFileHelper;
 
       
-//not game specific package import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
-//not game specific package import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-      const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+      //not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
-      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
+      //not GWT import const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
 
       
-//not game specific package import { FileWrapperUtil } from '../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-      const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+import { FileWrapperUtil } from '../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+      //not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
 
       
-//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

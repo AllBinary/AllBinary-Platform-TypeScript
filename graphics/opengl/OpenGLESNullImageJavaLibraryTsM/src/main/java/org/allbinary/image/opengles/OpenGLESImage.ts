@@ -20,43 +20,43 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-      const GL = globalThis.javax.microedition.khronos.opengles.GL;
+import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
+      //not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
 
       
-//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not game specific package import { PlatformBitmapBase } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+import { PlatformBitmapBase } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      //not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
 
       
-//not game specific package import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-      const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+      //not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
 
       
-//not game specific package import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
-      const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
+import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
+      //not GWT import const PlatformTextureBaseFactory = globalThis.org.allbinary.platform.opengles.PlatformTextureBaseFactory;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

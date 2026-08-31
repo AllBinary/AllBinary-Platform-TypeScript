@@ -24,35 +24,35 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbeFactory } from '../../org/allbinary/logic/system/loader/AbeFactory.js';
-      const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
+import { AbeFactory } from '../../org/allbinary/logic/system/loader/AbeFactory.js';
+      //not GWT import const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not game specific package import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

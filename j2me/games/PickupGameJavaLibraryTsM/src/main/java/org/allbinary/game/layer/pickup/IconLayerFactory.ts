@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 

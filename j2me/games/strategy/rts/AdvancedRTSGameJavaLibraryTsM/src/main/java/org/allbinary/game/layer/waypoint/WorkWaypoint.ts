@@ -22,39 +22,39 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not game specific package import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-      const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
+      //not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
       
-//not game specific package import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
-      const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
+import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
+      //not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
       
-//not game specific package import { GeologicalGeographicMapCellPosition } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalGeographicMapCellPosition.js';
-      const GeologicalGeographicMapCellPosition = globalThis.org.allbinary.game.layer.geological.resources.GeologicalGeographicMapCellPosition;
+import { GeologicalGeographicMapCellPosition } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalGeographicMapCellPosition.js';
+      //not GWT import const GeologicalGeographicMapCellPosition = globalThis.org.allbinary.game.layer.geological.resources.GeologicalGeographicMapCellPosition;
 
       
-//not game specific package import { GeologicalResource } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalResource.js';
-      const GeologicalResource = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResource;
+import { GeologicalResource } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalResource.js';
+      //not GWT import const GeologicalResource = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResource;
 
       
-//not game specific package import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
-      const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
+import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
+      //not GWT import const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
 
       
-//not game specific package import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js';
-      const UnitWaypointBehavior = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior;
+import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js';
+      //not GWT import const UnitWaypointBehavior = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior;
 
       
-//not game specific package import { WorkSound } from '../../../../../org/allbinary/media/audio/WorkSound.js';
-      const WorkSound = globalThis.org.allbinary.media.audio.WorkSound;
+import { WorkSound } from '../../../../../org/allbinary/media/audio/WorkSound.js';
+      //not GWT import const WorkSound = globalThis.org.allbinary.media.audio.WorkSound;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       

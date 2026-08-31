@@ -20,27 +20,27 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { AllBinaryGameLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
-      const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+import { AllBinaryGameLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+      //not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
 
       
-//not game specific package import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
-//not game specific package import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-      const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
+import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
+      //not GWT import const BasicEventHandler = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandler;
 
       
-//not game specific package import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
-      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      //not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

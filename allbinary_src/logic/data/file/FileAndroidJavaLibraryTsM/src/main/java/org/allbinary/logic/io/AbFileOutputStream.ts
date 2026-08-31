@@ -18,32 +18,32 @@
 
 
 
-//not game specific package import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
-      const FileNotFoundException = globalThis.java.io.FileNotFoundException;
+import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
+      //not GWT import const FileNotFoundException = globalThis.java.io.FileNotFoundException;
 
       
-//not game specific package import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
-      const FileOutputStream = globalThis.java.io.FileOutputStream;
+import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+      //not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
 
       
-//not game specific package import { IOException } from '../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { OutputStream } from '../../../../java/io/OutputStream.js';
-      const OutputStream = globalThis.java.io.OutputStream;
+import { OutputStream } from '../../../../java/io/OutputStream.js';
+      //not GWT import const OutputStream = globalThis.java.io.OutputStream;
 
       
-//not game specific package import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
-      const FileChannel = globalThis.java.nio.channels.FileChannel;
+import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
+      //not GWT import const FileChannel = globalThis.java.nio.channels.FileChannel;
 
       
-//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-      const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+      //not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
 
       
 

@@ -22,36 +22,36 @@
         
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
-//not game specific package import { Activity } from '../../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
-      const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
+import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
+      //not GWT import const VirtualKeyboard = globalThis.org.allbinary.android.input.VirtualKeyboard;
 
       
-//not game specific package import { VirtualKeyboardEvent } from '../../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
-      const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
+import { VirtualKeyboardEvent } from '../../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
+      //not GWT import const VirtualKeyboardEvent = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
 
       
-//not game specific package import { VirtualKeyboardEventHandler } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
-      const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
+import { VirtualKeyboardEventHandler } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+      //not GWT import const VirtualKeyboardEventHandler = globalThis.org.allbinary.input.event.VirtualKeyboardEventHandler;
 
       
-//not game specific package import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
-      const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
+import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
+      //not GWT import const VirtualKeyboardEventListenerInterface = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
 
       
-//not game specific package import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not plain js import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
-//not game specific package import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
-      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      //not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
 
       
 

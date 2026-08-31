@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Serializable } from '../../../../java/io/Serializable.js';
-      const Serializable = globalThis.java.io.Serializable;
+import { Serializable } from '../../../../java/io/Serializable.js';
+      //not GWT import const Serializable = globalThis.java.io.Serializable;
 
       
-//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
 

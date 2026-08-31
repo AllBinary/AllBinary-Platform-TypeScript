@@ -18,24 +18,24 @@
 
 
 
-//not game specific package import { FileInputStream } from '../../../../java/io/FileInputStream.js';
-      const FileInputStream = globalThis.java.io.FileInputStream;
+import { FileInputStream } from '../../../../java/io/FileInputStream.js';
+      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
 
       
-//not game specific package import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
-      const FileNotFoundException = globalThis.java.io.FileNotFoundException;
+import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
+      //not GWT import const FileNotFoundException = globalThis.java.io.FileNotFoundException;
 
       
-//not game specific package import { IOException } from '../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
-      const FileChannel = globalThis.java.nio.channels.FileChannel;
+import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
+      //not GWT import const FileChannel = globalThis.java.nio.channels.FileChannel;
 
       
 

@@ -20,23 +20,23 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
-      const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
+import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
+      //not GWT import const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
 
       
-//not game specific package import { GameGraphicsResourceUtil } from '../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js';
-      const GameGraphicsResourceUtil = globalThis.org.allbinary.game.layer.resources.GameGraphicsResourceUtil;
+import { GameGraphicsResourceUtil } from '../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js';
+      //not GWT import const GameGraphicsResourceUtil = globalThis.org.allbinary.game.layer.resources.GameGraphicsResourceUtil;
 
       
-//not game specific package import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
-      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
+      //not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
 
       
-//not game specific package import { GraphicsFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
-      const GraphicsFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GraphicsFeatureFactory;
+import { GraphicsFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
+      //not GWT import const GraphicsFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GraphicsFeatureFactory;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

@@ -20,24 +20,24 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-//not game specific package import { GameCommandsFactory } from '../../org/allbinary/game/commands/GameCommandsFactory.js';
-      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+import { GameCommandsFactory } from '../../org/allbinary/game/commands/GameCommandsFactory.js';
+      //not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
 
       
-//not game specific package import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
-      const MultiPlayerGameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MultiPlayerGameFeatureFactory;
+import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
+      //not GWT import const MultiPlayerGameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MultiPlayerGameFeatureFactory;
 
       
-//not game specific package import { MyCanvas } from '../../org/allbinary/graphics/displayable/MyCanvas.js';
-      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+import { MyCanvas } from '../../org/allbinary/graphics/displayable/MyCanvas.js';
+      //not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
 
       
-//not game specific package import { GenericOperatingSystem } from '../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+import { GenericOperatingSystem } from '../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      //not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
 
       
-//not game specific package import { OperatingSystemFactory } from '../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+import { OperatingSystemFactory } from '../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      //not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
 
       
 

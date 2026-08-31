@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not game specific package import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
-      const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
+import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
+      //not GWT import const CustomTextBox = globalThis.org.allbinary.graphics.form.item.CustomTextBox;
 
       
 

@@ -22,44 +22,44 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
-      const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
+import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
+      //not GWT import const DestroyedEvent = globalThis.org.allbinary.game.combat.destroy.event.DestroyedEvent;
 
       
-//not game specific package import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
-      const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
+import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
+      //not GWT import const PlayerGameInput = globalThis.org.allbinary.game.input.PlayerGameInput;
 
       
-//not game specific package import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
-      const NullRTSFormInputFactory = globalThis.org.allbinary.game.input.form.NullRTSFormInputFactory;
+import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
+      //not GWT import const NullRTSFormInputFactory = globalThis.org.allbinary.game.input.form.NullRTSFormInputFactory;
 
       
-//not game specific package import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
-      const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
+import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
+      //not GWT import const RTSFormInput = globalThis.org.allbinary.game.input.form.RTSFormInput;
 
       
-//not game specific package import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
-      const Capital = globalThis.org.allbinary.game.layer.capital.Capital;
+import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
+      //not GWT import const Capital = globalThis.org.allbinary.game.layer.capital.Capital;
 
       
-//not game specific package import { GameNotificationHud } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
-      const GameNotificationHud = globalThis.org.allbinary.game.layer.hud.basic.notification.GameNotificationHud;
+import { GameNotificationHud } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
+      //not GWT import const GameNotificationHud = globalThis.org.allbinary.game.layer.hud.basic.notification.GameNotificationHud;
 
       
-//not game specific package import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-      const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+      //not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
-//not game specific package import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
-      const Sound = globalThis.org.allbinary.media.audio.Sound;
+import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
+      //not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
       
 

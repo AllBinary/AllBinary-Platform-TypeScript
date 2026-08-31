@@ -24,52 +24,52 @@
         
             import { Float } from '../../../../java/lang/Float.js';
         
-//not game specific package import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-      const Bitmap = globalThis.android.graphics.Bitmap;
+import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+      //not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
 
       
-//not game specific package import { Canvas } from '../../../../android/graphics/Canvas.js';
-      const Canvas = globalThis.android.graphics.Canvas;
+import { Canvas } from '../../../../android/graphics/Canvas.js';
+      //not GWT import const Canvas = globalThis.android.graphics.Canvas;
 
       
-//not game specific package import { Matrix } from '../../../../android/graphics/Matrix.js';
-      const Matrix = globalThis.android.graphics.Matrix;
+import { Matrix } from '../../../../android/graphics/Matrix.js';
+      //not GWT import const Matrix = globalThis.android.graphics.Matrix;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
-//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 

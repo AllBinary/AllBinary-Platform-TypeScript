@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
 

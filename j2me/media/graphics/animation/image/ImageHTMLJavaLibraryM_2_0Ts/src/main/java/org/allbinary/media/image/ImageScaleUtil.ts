@@ -22,39 +22,39 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not game specific package import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
+//not plain js import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
       const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
 
       
-//not game specific package import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+//not plain js import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
       const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-//not game specific package import { Canvas } from '../../../../playn/core/Canvas.js';
+//not plain js import { Canvas } from '../../../../playn/core/Canvas.js';
       const Canvas = globalThis.playn.core.Canvas;
 
       
-//not game specific package import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
       const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-//not game specific package import { PlayN } from '../../../../playn/core/PlayN.js';
+//not plain js import { PlayN } from '../../../../playn/core/PlayN.js';
       const PlayN = globalThis.playn.core.PlayN;
 
       
-//not game specific package import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+//not plain js import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
       const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
 
       
-//not game specific package import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+//not plain js import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
       const HtmlImage = globalThis.playn.html.HtmlImage;
 
       

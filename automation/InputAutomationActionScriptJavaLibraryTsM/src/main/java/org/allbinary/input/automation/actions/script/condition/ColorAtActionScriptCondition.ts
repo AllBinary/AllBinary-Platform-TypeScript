@@ -24,80 +24,80 @@
         
             import { Long } from '../../../../../../../java/lang/Long.js';
         
-//not game specific package import { awt } from '../../../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
-//not game specific package import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
-//not game specific package import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not game specific package import { ColorCacheFactory } from '../../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-      const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
+import { ColorCacheFactory } from '../../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
+      //not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
 
       
-//not game specific package import { ColorCacheable } from '../../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-      const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
+import { ColorCacheable } from '../../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
+      //not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
 
       
-//not game specific package import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
-      const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
+      //not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { AutomaticCacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+import { AutomaticCacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
-//not game specific package import { ColorRange } from '../../../../../../../org/allbinary/media/image/analysis/ColorRange.js';
-      const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
+import { ColorRange } from '../../../../../../../org/allbinary/media/image/analysis/ColorRange.js';
+      //not GWT import const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
 
       
-//not game specific package import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-      const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+      //not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
 
       
-//not game specific package import { BufferedImageFrameCacheable } from '../../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
-      const BufferedImageFrameCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageFrameCacheable;
+import { BufferedImageFrameCacheable } from '../../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
+      //not GWT import const BufferedImageFrameCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageFrameCacheable;
 
       
-//not game specific package import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-      const NodeList = globalThis.org.w3c.dom.NodeList;
+import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
+      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 

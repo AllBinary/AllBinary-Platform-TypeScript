@@ -24,59 +24,59 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-//not game specific package import { awt } from '../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
-      const RenderedImage = globalThis.java.awt.image.RenderedImage;
+import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
+      //not GWT import const RenderedImage = globalThis.java.awt.image.RenderedImage;
 
       
-//not game specific package import { File } from '../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-      const ImageIO = globalThis.javax.imageio.ImageIO;
+import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { ImageJ2SERotationUtil } from '../../../../org/allbinary/media/image/ImageJ2SERotationUtil.js';
-      const ImageJ2SERotationUtil = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
+import { ImageJ2SERotationUtil } from '../../../../org/allbinary/media/image/ImageJ2SERotationUtil.js';
+      //not GWT import const ImageJ2SERotationUtil = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
 
       
-//not game specific package import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-      const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+      //not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
       
-//not game specific package import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-      const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+      //not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
 
       
-//not game specific package import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
-      const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
+import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
+      //not GWT import const ImageStrings = globalThis.org.allbinary.media.image.ImageStrings;
 
       
-//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
       const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

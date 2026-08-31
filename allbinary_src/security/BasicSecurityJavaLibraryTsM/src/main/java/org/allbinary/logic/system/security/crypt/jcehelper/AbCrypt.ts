@@ -22,48 +22,48 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Security } from '../../../../../../../java/security/Security.js';
-      const Security = globalThis.java.security.Security;
+import { Security } from '../../../../../../../java/security/Security.js';
+      //not GWT import const Security = globalThis.java.security.Security;
 
       
-//not game specific package import { KeySpec } from '../../../../../../../java/security/spec/KeySpec.js';
-      const KeySpec = globalThis.java.security.spec.KeySpec;
+import { KeySpec } from '../../../../../../../java/security/spec/KeySpec.js';
+      //not GWT import const KeySpec = globalThis.java.security.spec.KeySpec;
 
       
-//not game specific package import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
-      const Cipher = globalThis.javax.crypto.Cipher;
+import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
+      //not GWT import const Cipher = globalThis.javax.crypto.Cipher;
 
       
-//not game specific package import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
-      const SecretKey = globalThis.javax.crypto.SecretKey;
+import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
+      //not GWT import const SecretKey = globalThis.javax.crypto.SecretKey;
 
       
-//not game specific package import { SecretKeyFactory } from '../../../../../../../javax/crypto/SecretKeyFactory.js';
-      const SecretKeyFactory = globalThis.javax.crypto.SecretKeyFactory;
+import { SecretKeyFactory } from '../../../../../../../javax/crypto/SecretKeyFactory.js';
+      //not GWT import const SecretKeyFactory = globalThis.javax.crypto.SecretKeyFactory;
 
       
-//not game specific package import { TsUtil } from '../../../../../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../../../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not game specific package import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
-      const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+      //not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
 
       
-//not game specific package import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BouncyCastleProvider } from '../../../../../../../org/bouncycastle/jce/provider/BouncyCastleProvider.js';
-      const BouncyCastleProvider = globalThis.org.bouncycastle.jce.provider.BouncyCastleProvider;
+import { BouncyCastleProvider } from '../../../../../../../org/bouncycastle/jce/provider/BouncyCastleProvider.js';
+      //not GWT import const BouncyCastleProvider = globalThis.org.bouncycastle.jce.provider.BouncyCastleProvider;
 
       
 

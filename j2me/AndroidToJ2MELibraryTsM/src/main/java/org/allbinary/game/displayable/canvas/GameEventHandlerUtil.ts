@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { GameInputMotionEventProcessorFactory } from '../../../../../org/allbinary/android/input/motion/GameInputMotionEventProcessorFactory.js';
-      const GameInputMotionEventProcessorFactory = globalThis.org.allbinary.android.input.motion.GameInputMotionEventProcessorFactory;
+import { GameInputMotionEventProcessorFactory } from '../../../../../org/allbinary/android/input/motion/GameInputMotionEventProcessorFactory.js';
+      //not GWT import const GameInputMotionEventProcessorFactory = globalThis.org.allbinary.android.input.motion.GameInputMotionEventProcessorFactory;
 
       
-//not game specific package import { GameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
-      const GameKeyEventHandler = globalThis.org.allbinary.game.input.event.GameKeyEventHandler;
+import { GameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
+      //not GWT import const GameKeyEventHandler = globalThis.org.allbinary.game.input.event.GameKeyEventHandler;
 
       
-//not game specific package import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
-      const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
+import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
+      //not GWT import const BasicMotionGesturesHandler = globalThis.org.allbinary.input.motion.gesture.observer.BasicMotionGesturesHandler;
 
       
 

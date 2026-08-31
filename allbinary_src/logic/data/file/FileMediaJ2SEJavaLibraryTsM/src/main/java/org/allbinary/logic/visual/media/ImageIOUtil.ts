@@ -8,24 +8,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { RenderedImage } from '../../../../../java/awt/image/RenderedImage.js';
-      const RenderedImage = globalThis.java.awt.image.RenderedImage;
+import { RenderedImage } from '../../../../../java/awt/image/RenderedImage.js';
+      //not GWT import const RenderedImage = globalThis.java.awt.image.RenderedImage;
 
       
-//not game specific package import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
-      const ImageIO = globalThis.javax.imageio.ImageIO;
+import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
+      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
-//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbFileNativeUtil } from '../../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-      const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+import { AbFileNativeUtil } from '../../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+      //not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
 
       
 

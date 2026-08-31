@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not game specific package import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      //not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
       
-//not game specific package import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
-      const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
+      //not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
 
       
 

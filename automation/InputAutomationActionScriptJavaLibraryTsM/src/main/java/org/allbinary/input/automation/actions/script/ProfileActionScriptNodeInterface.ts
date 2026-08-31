@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
 

@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js';
-      const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
+import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js';
+      //not GWT import const AllBinaryOrientationSensor = globalThis.org.allbinary.input.gyro.AllBinaryOrientationSensor;
 
       
-//not game specific package import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-      const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+      //not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
 
       
 

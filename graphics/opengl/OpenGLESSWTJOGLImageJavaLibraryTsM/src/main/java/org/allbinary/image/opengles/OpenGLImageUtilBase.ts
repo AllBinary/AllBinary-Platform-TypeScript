@@ -22,20 +22,20 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { IOException } from '../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { OpenGLBitmap } from '../../../../org/allbinary/graphics/OpenGLBitmap.js';
-      const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
+import { OpenGLBitmap } from '../../../../org/allbinary/graphics/OpenGLBitmap.js';
+      //not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 

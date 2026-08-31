@@ -24,8 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
 

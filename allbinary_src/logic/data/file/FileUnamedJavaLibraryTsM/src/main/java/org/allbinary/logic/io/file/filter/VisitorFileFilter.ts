@@ -20,24 +20,24 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { File } from '../../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { FileFilter } from '../../../../../../java/io/FileFilter.js';
-      const FileFilter = globalThis.java.io.FileFilter;
+import { FileFilter } from '../../../../../../java/io/FileFilter.js';
+      //not GWT import const FileFilter = globalThis.java.io.FileFilter;
 
       
-//not game specific package import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-      const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+      //not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
 
       
-//not game specific package import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
-      const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
+import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
+      //not GWT import const VisitorInterface = globalThis.org.allbinary.logic.util.visitor.VisitorInterface;
 
       
 

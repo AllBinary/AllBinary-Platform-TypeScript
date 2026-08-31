@@ -22,16 +22,16 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-//not game specific package import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      //not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
 
       
-//not game specific package import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
-      const PartnerIdentifierFileUtil = globalThis.org.allbinary.logic.system.security.licensing.PartnerIdentifierFileUtil;
+import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
+      //not GWT import const PartnerIdentifierFileUtil = globalThis.org.allbinary.logic.system.security.licensing.PartnerIdentifierFileUtil;
 
       
 

@@ -20,19 +20,19 @@
 
             import { Exception } from '../java/lang/Exception.js';
         
-//not game specific package import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

@@ -20,27 +20,27 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
-      const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
+import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
+      //not GWT import const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

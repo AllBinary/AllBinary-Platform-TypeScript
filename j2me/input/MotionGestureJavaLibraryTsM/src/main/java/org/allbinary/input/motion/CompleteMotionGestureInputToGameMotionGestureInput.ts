@@ -22,71 +22,71 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-      const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
+import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      //not GWT import const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
 
       
-//not game specific package import { MotionGestureConfiguration } from '../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
-      const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
+import { MotionGestureConfiguration } from '../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
+      //not GWT import const MotionGestureConfiguration = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfiguration;
 
       
-//not game specific package import { MotionGestureConfigurationFactory } from '../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
-      const MotionGestureConfigurationFactory = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfigurationFactory;
+import { MotionGestureConfigurationFactory } from '../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
+      //not GWT import const MotionGestureConfigurationFactory = globalThis.org.allbinary.input.motion.gesture.configuration.MotionGestureConfigurationFactory;
 
       
-//not game specific package import { DiagonalDownLeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalDownLeftTouchInputToGameKeyEventAction.js';
-      const DiagonalDownLeftTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalDownLeftTouchInputToGameKeyEventAction;
+import { DiagonalDownLeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalDownLeftTouchInputToGameKeyEventAction.js';
+      //not GWT import const DiagonalDownLeftTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalDownLeftTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { DiagonalDownRightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalDownRightTouchInputToGameKeyEventAction.js';
-      const DiagonalDownRightTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalDownRightTouchInputToGameKeyEventAction;
+import { DiagonalDownRightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalDownRightTouchInputToGameKeyEventAction.js';
+      //not GWT import const DiagonalDownRightTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalDownRightTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { DiagonalUpLeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalUpLeftTouchInputToGameKeyEventAction.js';
-      const DiagonalUpLeftTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalUpLeftTouchInputToGameKeyEventAction;
+import { DiagonalUpLeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalUpLeftTouchInputToGameKeyEventAction.js';
+      //not GWT import const DiagonalUpLeftTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalUpLeftTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { DiagonalUpRightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalUpRightTouchInputToGameKeyEventAction.js';
-      const DiagonalUpRightTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalUpRightTouchInputToGameKeyEventAction;
+import { DiagonalUpRightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalUpRightTouchInputToGameKeyEventAction.js';
+      //not GWT import const DiagonalUpRightTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DiagonalUpRightTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { DownTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DownTouchInputToGameKeyEventAction.js';
-      const DownTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DownTouchInputToGameKeyEventAction;
+import { DownTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DownTouchInputToGameKeyEventAction.js';
+      //not GWT import const DownTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.DownTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { LeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/LeftTouchInputToGameKeyEventAction.js';
-      const LeftTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.LeftTouchInputToGameKeyEventAction;
+import { LeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/LeftTouchInputToGameKeyEventAction.js';
+      //not GWT import const LeftTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.LeftTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { ReleaseTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/ReleaseTouchInputToGameKeyEventAction.js';
-      const ReleaseTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.ReleaseTouchInputToGameKeyEventAction;
+import { ReleaseTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/ReleaseTouchInputToGameKeyEventAction.js';
+      //not GWT import const ReleaseTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.ReleaseTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { RightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/RightTouchInputToGameKeyEventAction.js';
-      const RightTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.RightTouchInputToGameKeyEventAction;
+import { RightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/RightTouchInputToGameKeyEventAction.js';
+      //not GWT import const RightTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.RightTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { UpTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/UpTouchInputToGameKeyEventAction.js';
-      const UpTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.UpTouchInputToGameKeyEventAction;
+import { UpTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/UpTouchInputToGameKeyEventAction.js';
+      //not GWT import const UpTouchInputToGameKeyEventAction = globalThis.org.allbinary.input.motion.touch.action.UpTouchInputToGameKeyEventAction;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

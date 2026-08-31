@@ -22,68 +22,68 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
+      //not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
 
       
-//not game specific package import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-      const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
+import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
+      //not GWT import const WeaponProperties = globalThis.org.allbinary.game.combat.weapon.WeaponProperties;
 
       
-//not game specific package import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
-      const PartInterface = globalThis.org?.allbinary?.game?.part?.PartInterface;
+import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
+      //not GWT import const PartInterface = globalThis.org?.allbinary?.game?.part?.PartInterface;
 
       
-//not game specific package import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
-      const NoScoreable = globalThis.org.allbinary.game.score.NoScoreable;
+import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
+      //not GWT import const NoScoreable = globalThis.org.allbinary.game.score.NoScoreable;
 
       
-//not game specific package import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-      const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
+import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
+      //not GWT import const ScoreableInterface = globalThis.org.allbinary.game.score.ScoreableInterface;
 
       
-//not game specific package import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
-      const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
+import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
+      //not GWT import const RelativeRelationship = globalThis.org.allbinary.graphics.RelativeRelationship;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
-      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+import { ViewPositionBase } from '../../../../../org/allbinary/view/ViewPositionBase.js';
+      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
-//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not game specific package import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
-      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

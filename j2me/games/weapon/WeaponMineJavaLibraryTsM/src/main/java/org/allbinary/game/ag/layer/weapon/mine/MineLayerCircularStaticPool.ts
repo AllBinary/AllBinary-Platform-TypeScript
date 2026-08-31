@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { WeaponLayerCircularPool } from '../../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
-      const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
+import { WeaponLayerCircularPool } from '../../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
+      //not GWT import const WeaponLayerCircularPool = globalThis.org.allbinary.game.layer.weapon.WeaponLayerCircularPool;
 
       
-//not game specific package import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
-      const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
+import { ViewPositionFactoryInterface } from '../../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
+      //not GWT import const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
 
       
 

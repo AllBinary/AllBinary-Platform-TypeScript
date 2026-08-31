@@ -20,32 +20,32 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { BasicTable } from '../../../admin/taghelpers/BasicTable.js';
-      const BasicTable = globalThis.admin.taghelpers.BasicTable;
+import { BasicTable } from '../../../admin/taghelpers/BasicTable.js';
+      //not GWT import const BasicTable = globalThis.admin.taghelpers.BasicTable;
 
       
-//not game specific package import { Portion } from '../../../org/allbinary/business/installer/Portion.js';
-      const Portion = globalThis.org.allbinary.business.installer.Portion;
+import { Portion } from '../../../org/allbinary/business/installer/Portion.js';
+      //not GWT import const Portion = globalThis.org.allbinary.business.installer.Portion;
 
       
-//not game specific package import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
-      const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
+import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+      //not GWT import const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbSqlTableUtil } from '../../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-      const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
+import { AbSqlTableUtil } from '../../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
+      //not GWT import const AbSqlTableUtil = globalThis.org.allbinary.logic.communication.sql.AbSqlTableUtil;
 
       
 

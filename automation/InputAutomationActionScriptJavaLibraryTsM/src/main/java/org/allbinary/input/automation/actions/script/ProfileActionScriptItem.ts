@@ -24,32 +24,32 @@
         
             import { Long } from '../../../../../../java/lang/Long.js';
         
-//not game specific package import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
-      const ActionEvent = globalThis.java.awt.event.ActionEvent;
+import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
+      //not GWT import const ActionEvent = globalThis.java.awt.event.ActionEvent;
 
       
-//not game specific package import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
-      const ActionListener = globalThis.java.awt.event.ActionListener;
+import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
+      //not GWT import const ActionListener = globalThis.java.awt.event.ActionListener;
 
       
-//not game specific package import { swing } from '../../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-      const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
+import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+      //not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

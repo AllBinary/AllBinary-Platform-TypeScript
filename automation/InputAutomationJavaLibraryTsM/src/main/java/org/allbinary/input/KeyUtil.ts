@@ -20,8 +20,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
-      const KeyEvent = globalThis.java.awt.event.KeyEvent;
+import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
+      //not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
 
       
 

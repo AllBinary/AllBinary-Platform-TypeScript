@@ -4,8 +4,8 @@
 
 
 
-//not game specific package import { OpenGLImageUtilBase } from '../../../org/allbinary/image/opengles/OpenGLImageUtilBase.js';
-      const OpenGLImageUtilBase = globalThis.org.allbinary.image.opengles.OpenGLImageUtilBase;
+import { OpenGLImageUtilBase } from '../../../org/allbinary/image/opengles/OpenGLImageUtilBase.js';
+      //not GWT import const OpenGLImageUtilBase = globalThis.org.allbinary.image.opengles.OpenGLImageUtilBase;
 
       
 

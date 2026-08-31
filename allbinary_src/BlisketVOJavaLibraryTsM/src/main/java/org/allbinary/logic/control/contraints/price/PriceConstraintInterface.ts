@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { MinMaxDoubleConstraintInterface } from '../../../../../../org/allbinary/logic/control/contraints/MinMaxDoubleConstraintInterface.js';
-      const MinMaxDoubleConstraintInterface = globalThis.org.allbinary.logic.control.contraints.MinMaxDoubleConstraintInterface;
+import { MinMaxDoubleConstraintInterface } from '../../../../../../org/allbinary/logic/control/contraints/MinMaxDoubleConstraintInterface.js';
+      //not GWT import const MinMaxDoubleConstraintInterface = globalThis.org.allbinary.logic.control.contraints.MinMaxDoubleConstraintInterface;
 
       
 

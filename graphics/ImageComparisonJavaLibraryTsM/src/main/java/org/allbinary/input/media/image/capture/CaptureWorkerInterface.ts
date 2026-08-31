@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { BasicEventHandlerInterface } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandlerInterface.js';
-      const BasicEventHandlerInterface = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandlerInterface;
+import { BasicEventHandlerInterface } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandlerInterface.js';
+      //not GWT import const BasicEventHandlerInterface = globalThis.org.allbinary.logic.util.event.handler.BasicEventHandlerInterface;
 
       
-//not game specific package import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
-      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
+      //not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
       
 

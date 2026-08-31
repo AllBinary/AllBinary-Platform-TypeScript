@@ -20,31 +20,31 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-//not game specific package import { Connection } from '../../../../../../../java/sql/Connection.js';
-      const Connection = globalThis.java.sql.Connection;
+import { Connection } from '../../../../../../../java/sql/Connection.js';
+      //not GWT import const Connection = globalThis.java.sql.Connection;
 
       
-//not game specific package import { DriverManager } from '../../../../../../../java/sql/DriverManager.js';
-      const DriverManager = globalThis.java.sql.DriverManager;
+import { DriverManager } from '../../../../../../../java/sql/DriverManager.js';
+      //not GWT import const DriverManager = globalThis.java.sql.DriverManager;
 
       
-//not game specific package import { SQLException } from '../../../../../../../java/sql/SQLException.js';
-      const SQLException = globalThis.java.sql.SQLException;
+import { SQLException } from '../../../../../../../java/sql/SQLException.js';
+      //not GWT import const SQLException = globalThis.java.sql.SQLException;
 
       
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

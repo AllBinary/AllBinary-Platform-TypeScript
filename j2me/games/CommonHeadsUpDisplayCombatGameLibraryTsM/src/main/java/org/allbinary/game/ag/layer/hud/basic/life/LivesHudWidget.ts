@@ -20,32 +20,32 @@
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Graphics } from '../../../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Animation } from '../../../../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
 import { Life } from '../../../../../../../../org/allbinary/game/ag/life/Life.js';
-      //not GWT import and is game specific code const Life = globalThis.org.allbinary.game.ag.life.Life;
+      //not GWT import const Life = globalThis.org.allbinary.game.ag.life.Life;
 
       
-//not game specific package import { BasicHud } from '../../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
-      const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
+import { BasicHud } from '../../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
+      //not GWT import const BasicHud = globalThis.org.allbinary.game.graphics.hud.BasicHud;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { DisplayChangeEvent } from '../../../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-      const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
+import { DisplayChangeEvent } from '../../../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
+      //not GWT import const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
 
       
-//not game specific package import { PaintableInterface } from '../../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-      const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
+import { PaintableInterface } from '../../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
+      //not GWT import const PaintableInterface = globalThis.org.allbinary.graphics.paint.PaintableInterface;
 
       
 

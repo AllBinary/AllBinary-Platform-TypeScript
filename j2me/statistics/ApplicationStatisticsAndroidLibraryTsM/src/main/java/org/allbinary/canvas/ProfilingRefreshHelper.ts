@@ -22,11 +22,11 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-//not game specific package import { View } from '../../../android/view/View.js';
-      const View = globalThis.android.view.View;
+import { View } from '../../../android/view/View.js';
+      //not GWT import const View = globalThis.android.view.View;
 
       
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

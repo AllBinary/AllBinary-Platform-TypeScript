@@ -22,20 +22,20 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-      const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
+import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
+      //not GWT import const ScaleProperties = globalThis.org.allbinary.media.ScaleProperties;
 
       
 

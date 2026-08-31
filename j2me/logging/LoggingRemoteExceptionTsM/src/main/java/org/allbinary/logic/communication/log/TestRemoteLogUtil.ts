@@ -22,11 +22,11 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
-      const Globals = globalThis.org.allbinary.globals.Globals;
+import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
+      //not GWT import const Globals = globalThis.org.allbinary.globals.Globals;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

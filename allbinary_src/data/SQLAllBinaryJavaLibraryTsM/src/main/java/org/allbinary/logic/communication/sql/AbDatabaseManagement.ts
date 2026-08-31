@@ -12,27 +12,27 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { InetAddress } from '../../../../../java/net/InetAddress.js';
-      const InetAddress = globalThis.java.net.InetAddress;
+import { InetAddress } from '../../../../../java/net/InetAddress.js';
+      //not GWT import const InetAddress = globalThis.java.net.InetAddress;
 
       
-//not game specific package import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-      const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
+import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
+      //not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
 
       
-//not game specific package import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-      const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+      //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

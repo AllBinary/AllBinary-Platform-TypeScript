@@ -20,12 +20,12 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { Calendar } from '../../../java/util/Calendar.js';
-      const Calendar = globalThis.java.util.Calendar;
+import { Calendar } from '../../../java/util/Calendar.js';
+      //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-////not game specific package import { Date } from '../../../java/util/Date.js';
-      const Date = globalThis.java.util.Date;
+//import { Date } from '../../../java/util/Date.js';
+      //not GWT import const Date = globalThis.java.util.Date;
 
       
 

@@ -20,40 +20,40 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { DomNodeHelper } from '../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+import { DomNodeHelper } from '../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
-//not game specific package import { DomSearchHelper } from '../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+import { DomSearchHelper } from '../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
-//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { StringUtils } from '../../../../org/apache/commons/lang3/StringUtils.js';
-      const StringUtils = globalThis.org.apache.commons.lang3.StringUtils;
+import { StringUtils } from '../../../../org/apache/commons/lang3/StringUtils.js';
+      //not GWT import const StringUtils = globalThis.org.apache.commons.lang3.StringUtils;
 
       
-//not game specific package import { Attr } from '../../../../org/w3c/dom/Attr.js';
-      const Attr = globalThis.org.w3c.dom.Attr;
+import { Attr } from '../../../../org/w3c/dom/Attr.js';
+      //not GWT import const Attr = globalThis.org.w3c.dom.Attr;
 
       
-//not game specific package import { NamedNodeMap } from '../../../../org/w3c/dom/NamedNodeMap.js';
-      const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
+import { NamedNodeMap } from '../../../../org/w3c/dom/NamedNodeMap.js';
+      //not GWT import const NamedNodeMap = globalThis.org.w3c.dom.NamedNodeMap;
 
       
-//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

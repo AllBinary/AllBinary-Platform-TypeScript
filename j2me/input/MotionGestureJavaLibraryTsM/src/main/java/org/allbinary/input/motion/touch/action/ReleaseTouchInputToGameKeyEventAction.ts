@@ -20,35 +20,35 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
-      const GameKey = globalThis.org.allbinary.game.input.GameKey;
+import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
+      //not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
 
       
-//not game specific package import { GameKeyFactory } from '../../../../../../org/allbinary/game/input/GameKeyFactory.js';
-      const GameKeyFactory = globalThis.org.allbinary.game.input.GameKeyFactory;
+import { GameKeyFactory } from '../../../../../../org/allbinary/game/input/GameKeyFactory.js';
+      //not GWT import const GameKeyFactory = globalThis.org.allbinary.game.input.GameKeyFactory;
 
       
-//not game specific package import { PlatformInputMappingFactory } from '../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
-      const PlatformInputMappingFactory = globalThis.org.allbinary.game.input.PlatformInputMappingFactory;
+import { PlatformInputMappingFactory } from '../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
+      //not GWT import const PlatformInputMappingFactory = globalThis.org.allbinary.game.input.PlatformInputMappingFactory;
 
       
-//not game specific package import { GameKeyEventFactory } from '../../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
-      const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
+import { GameKeyEventFactory } from '../../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
+      //not GWT import const GameKeyEventFactory = globalThis.org.allbinary.game.input.event.GameKeyEventFactory;
 
       
-//not game specific package import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
-      const GameKeyCompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.motion.action.GameKeyCompleteMotionGestureInputEvent;
+import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
+      //not GWT import const GameKeyCompleteMotionGestureInputEvent = globalThis.org.allbinary.game.input.motion.action.GameKeyCompleteMotionGestureInputEvent;
 
       
-//not game specific package import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-      const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
+import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
+      //not GWT import const TouchMotionGestureFactory = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
 
       
-//not game specific package import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

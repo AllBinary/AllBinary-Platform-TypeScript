@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Set } from '../../../../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { swing } from '../../../../../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-      const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
+import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
+      //not GWT import const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
 
       
 

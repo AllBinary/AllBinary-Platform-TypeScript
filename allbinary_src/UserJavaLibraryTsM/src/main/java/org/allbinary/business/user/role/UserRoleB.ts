@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
-      const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
+import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
+      //not GWT import const UserFactoryInterface = globalThis.org.allbinary.business.user.UserFactoryInterface;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 

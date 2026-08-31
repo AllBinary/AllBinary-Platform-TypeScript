@@ -22,76 +22,76 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
-//not game specific package import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
       
-//not game specific package import { StaticPagesEntity } from '../../../org/allbinary/data/tables/staticpages/StaticPagesEntity.js';
-      const StaticPagesEntity = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntity;
+import { StaticPagesEntity } from '../../../org/allbinary/data/tables/staticpages/StaticPagesEntity.js';
+      //not GWT import const StaticPagesEntity = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntity;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SearchParams } from '../../../org/allbinary/logic/control/search/SearchParams.js';
-      const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
+import { SearchParams } from '../../../org/allbinary/logic/control/search/SearchParams.js';
+      //not GWT import const SearchParams = globalThis.org.allbinary.logic.control.search.SearchParams;
 
       
-//not game specific package import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
-      const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
+import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
+      //not GWT import const SearchRequest = globalThis.org.allbinary.logic.control.search.SearchRequest;
 
       
-//not game specific package import { InputOutputTypeData } from '../../../org/allbinary/logic/io/InputOutputTypeData.js';
-      const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
+import { InputOutputTypeData } from '../../../org/allbinary/logic/io/InputOutputTypeData.js';
+      //not GWT import const InputOutputTypeData = globalThis.org.allbinary.logic.io.InputOutputTypeData;
 
       
-//not game specific package import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { Replace } from '../../../org/allbinary/logic/string/regex/replace/Replace.js';
-      const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
+import { Replace } from '../../../org/allbinary/logic/string/regex/replace/Replace.js';
+      //not GWT import const Replace = globalThis.org.allbinary.logic.string.regex.replace.Replace;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
-//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { InventoryViewSearchInterface } from '../../../views/admin/inventory/listings/InventoryViewSearchInterface.js';
-      const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
+import { InventoryViewSearchInterface } from '../../../views/admin/inventory/listings/InventoryViewSearchInterface.js';
+      //not GWT import const InventoryViewSearchInterface = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
 
       
 

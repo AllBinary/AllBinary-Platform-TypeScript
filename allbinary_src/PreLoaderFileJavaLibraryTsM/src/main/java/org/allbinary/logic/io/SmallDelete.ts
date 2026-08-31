@@ -22,23 +22,23 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
-      const DataOutputStream = globalThis.java.io.DataOutputStream;
+import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
+      //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
-//not game specific package import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
-      const FileOutputStream = globalThis.java.io.FileOutputStream;
+import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
+      //not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
-      const AbFileSystem = globalThis.org.allbinary.logic.io.file.AbFileSystem;
+import { AbFileSystem } from '../../../../org/allbinary/logic/io/file/AbFileSystem.js';
+      //not GWT import const AbFileSystem = globalThis.org.allbinary.logic.io.file.AbFileSystem;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

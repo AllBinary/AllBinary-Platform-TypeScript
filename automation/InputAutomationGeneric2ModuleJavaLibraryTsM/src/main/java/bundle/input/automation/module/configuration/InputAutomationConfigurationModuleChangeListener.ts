@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
-      const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
+import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
+      //not GWT import const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
 
       
 

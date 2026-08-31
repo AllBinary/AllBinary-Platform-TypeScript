@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
-      const FilenameFilter = globalThis.java.io.FilenameFilter;
+import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
+      //not GWT import const FilenameFilter = globalThis.java.io.FilenameFilter;
 
       
-//not game specific package import { IOException } from '../../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { URI } from '../../../../../java/net/URI.js';
-      const URI = globalThis.java.net.URI;
+import { URI } from '../../../../../java/net/URI.js';
+      //not GWT import const URI = globalThis.java.net.URI;
 
       
 

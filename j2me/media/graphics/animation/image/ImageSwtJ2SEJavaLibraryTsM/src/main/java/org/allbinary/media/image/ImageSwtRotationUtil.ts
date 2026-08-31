@@ -20,32 +20,32 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-      const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+      //not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-      const SWT = globalThis.org.eclipse.swt.SWT;
+import { SWT } from '../../../../org/eclipse/swt/SWT.js';
+      //not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
 
       
-//not game specific package import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-      const GC = globalThis.org.eclipse.swt.graphics.GC;
+import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
+      //not GWT import const GC = globalThis.org.eclipse.swt.graphics.GC;
 
       
-//not game specific package import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-      const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+      //not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
 
       
 

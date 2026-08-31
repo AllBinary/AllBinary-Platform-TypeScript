@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { InputImageType } from '../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-      const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
+import { InputImageType } from '../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
+      //not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
 
       
 

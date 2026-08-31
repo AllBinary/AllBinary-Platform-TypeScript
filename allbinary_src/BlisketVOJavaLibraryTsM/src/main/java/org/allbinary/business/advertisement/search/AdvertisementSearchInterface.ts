@@ -18,24 +18,24 @@
 
 
 
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';
-      const AdvertisementCategoryInterface = globalThis.org.allbinary.business.advertisement.search.category.AdvertisementCategoryInterface;
+import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';
+      //not GWT import const AdvertisementCategoryInterface = globalThis.org.allbinary.business.advertisement.search.category.AdvertisementCategoryInterface;
 
       
-//not game specific package import { AdvertisementWebsiteInterface } from '../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js';
-      const AdvertisementWebsiteInterface = globalThis.org.allbinary.business.advertisement.search.website.AdvertisementWebsiteInterface;
+import { AdvertisementWebsiteInterface } from '../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js';
+      //not GWT import const AdvertisementWebsiteInterface = globalThis.org.allbinary.business.advertisement.search.website.AdvertisementWebsiteInterface;
 
       
-//not game specific package import { PriceConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js';
-      const PriceConstraintInterface = globalThis.org.allbinary.logic.control.contraints.price.PriceConstraintInterface;
+import { PriceConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js';
+      //not GWT import const PriceConstraintInterface = globalThis.org.allbinary.logic.control.contraints.price.PriceConstraintInterface;
 
       
-//not game specific package import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
-      const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
+import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
+      //not GWT import const TwoDimensionalConstraintInterface = globalThis.org.allbinary.logic.control.contraints.size.TwoDimensionalConstraintInterface;
 
       
 

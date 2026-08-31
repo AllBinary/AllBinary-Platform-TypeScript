@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
-      const ABTextFieldItem = globalThis.org.allbinary.graphics.form.item.ABTextFieldItem;
+import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
+      //not GWT import const ABTextFieldItem = globalThis.org.allbinary.graphics.form.item.ABTextFieldItem;
 
       
 

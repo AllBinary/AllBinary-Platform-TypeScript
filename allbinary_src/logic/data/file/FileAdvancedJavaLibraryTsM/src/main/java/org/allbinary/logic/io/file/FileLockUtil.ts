@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { FileChannel } from '../../../../../java/nio/channels/FileChannel.js';
-      const FileChannel = globalThis.java.nio.channels.FileChannel;
+import { FileChannel } from '../../../../../java/nio/channels/FileChannel.js';
+      //not GWT import const FileChannel = globalThis.java.nio.channels.FileChannel;
 
       
-//not game specific package import { FileLock } from '../../../../../java/nio/channels/FileLock.js';
-      const FileLock = globalThis.java.nio.channels.FileLock;
+import { FileLock } from '../../../../../java/nio/channels/FileLock.js';
+      //not GWT import const FileLock = globalThis.java.nio.channels.FileLock;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbFileOutputStream } from '../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
-      const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
+import { AbFileOutputStream } from '../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
+      //not GWT import const AbFileOutputStream = globalThis.org.allbinary.logic.io.AbFileOutputStream;
 
       
-//not game specific package import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
 

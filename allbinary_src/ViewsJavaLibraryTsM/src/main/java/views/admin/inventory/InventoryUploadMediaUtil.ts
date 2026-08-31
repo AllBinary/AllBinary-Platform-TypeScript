@@ -22,63 +22,63 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayInputStream } from '../../../java/io/ByteArrayInputStream.js';
-      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+import { ByteArrayInputStream } from '../../../java/io/ByteArrayInputStream.js';
+      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
-//not game specific package import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
-//not game specific package import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-      const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+      //not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
       
-//not game specific package import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
+      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not game specific package import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js';
-      const UploadMediaSingleton = globalThis.org.allbinary.logic.communication.http.file.upload.media.UploadMediaSingleton;
+import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js';
+      //not GWT import const UploadMediaSingleton = globalThis.org.allbinary.logic.communication.http.file.upload.media.UploadMediaSingleton;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { FileUtil } from '../../../org/allbinary/logic/io/file/FileUtil.js';
-      const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
+import { FileUtil } from '../../../org/allbinary/logic/io/file/FileUtil.js';
+      //not GWT import const FileUtil = globalThis.org.allbinary.logic.io.file.FileUtil;
 
       
-//not game specific package import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { MediaData } from '../../../org/allbinary/logic/visual/media/MediaData.js';
-      const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
+import { MediaData } from '../../../org/allbinary/logic/visual/media/MediaData.js';
+      //not GWT import const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
 
       
-//not game specific package import { MediaTypeData } from '../../../org/allbinary/logic/visual/media/MediaTypeData.js';
-      const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
+import { MediaTypeData } from '../../../org/allbinary/logic/visual/media/MediaTypeData.js';
+      //not GWT import const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
 
       
-//not game specific package import { MediaUtil } from '../../../org/allbinary/logic/visual/media/MediaUtil.js';
-      const MediaUtil = globalThis.org.allbinary.logic.visual.media.MediaUtil;
+import { MediaUtil } from '../../../org/allbinary/logic/visual/media/MediaUtil.js';
+      //not GWT import const MediaUtil = globalThis.org.allbinary.logic.visual.media.MediaUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

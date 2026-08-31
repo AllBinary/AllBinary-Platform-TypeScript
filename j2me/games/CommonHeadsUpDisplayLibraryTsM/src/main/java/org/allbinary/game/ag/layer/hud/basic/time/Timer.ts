@@ -20,20 +20,20 @@
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
         
-//not game specific package import { PrimitiveLongSingleton } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
+//not plain js import { PrimitiveLongSingleton } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
       const PrimitiveLongSingleton = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
       
-//not game specific package import { PrimitiveLongUtil } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
+//not plain js import { PrimitiveLongUtil } from '../../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
       const PrimitiveLongUtil = globalThis.org.allbinary.logic.math.PrimitiveLongUtil;
 
       
-//not game specific package import { GameTickTimeDelayHelper } from '../../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+import { GameTickTimeDelayHelper } from '../../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      //not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
 
       
-//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+import { GameTickTimeDelayHelperFactory } from '../../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      //not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
 
       
 

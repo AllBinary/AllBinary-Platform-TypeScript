@@ -20,52 +20,52 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { AbTagData } from '../../admin/tags/AbTagData.js';
-      const AbTagData = globalThis.admin.tags.AbTagData;
+import { AbTagData } from '../../admin/tags/AbTagData.js';
+      //not GWT import const AbTagData = globalThis.admin.tags.AbTagData;
 
       
-//not game specific package import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-      const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
+      //not GWT import const BasicItemData = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
 
       
-//not game specific package import { ItemInterface } from '../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-      const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+import { ItemInterface } from '../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+      //not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
       
-//not game specific package import { TableMappingInterface } from '../../org/allbinary/data/tables/TableMappingInterface.js';
-      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+import { TableMappingInterface } from '../../org/allbinary/data/tables/TableMappingInterface.js';
+      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
-//not game specific package import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-      const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
+import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+      //not GWT import const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { HelperTag } from '../../tags/HelperTag.js';
-      const HelperTag = globalThis.tags.HelperTag;
+import { HelperTag } from '../../tags/HelperTag.js';
+      //not GWT import const HelperTag = globalThis.tags.HelperTag;
 
       
-//not game specific package import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
-      const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
+import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
+      //not GWT import const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
 
       
 

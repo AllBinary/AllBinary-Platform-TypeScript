@@ -18,39 +18,39 @@
 
 
 
-//not game specific package import { MouseEvent } from '../../../../../../../../../../java/awt/event/MouseEvent.js';
-      const MouseEvent = globalThis.java.awt.event.MouseEvent;
+import { MouseEvent } from '../../../../../../../../../../java/awt/event/MouseEvent.js';
+      //not GWT import const MouseEvent = globalThis.java.awt.event.MouseEvent;
 
       
-//not game specific package import { swing } from '../../../../../../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-      const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
+import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+      //not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
 
       
-//not game specific package import { DefaultTreeModel } from '../../../../../../../../../../javax/swing/tree/DefaultTreeModel.js';
-      const DefaultTreeModel = globalThis.javax.swing.tree.DefaultTreeModel;
+import { DefaultTreeModel } from '../../../../../../../../../../javax/swing/tree/DefaultTreeModel.js';
+      //not GWT import const DefaultTreeModel = globalThis.javax.swing.tree.DefaultTreeModel;
 
       
-//not game specific package import { TreePath } from '../../../../../../../../../../javax/swing/tree/TreePath.js';
-      const TreePath = globalThis.javax.swing.tree.TreePath;
+import { TreePath } from '../../../../../../../../../../javax/swing/tree/TreePath.js';
+      //not GWT import const TreePath = globalThis.javax.swing.tree.TreePath;
 
       
-//not game specific package import { JTreeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterface.js';
-      const JTreeInterface = globalThis.org.allbinary.input.automation.actions.script.JTreeInterface;
+import { JTreeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterface.js';
+      //not GWT import const JTreeInterface = globalThis.org.allbinary.input.automation.actions.script.JTreeInterface;
 
       
-//not game specific package import { CustomTreeNodeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
-      const CustomTreeNodeInterface = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
+import { CustomTreeNodeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
+      //not GWT import const CustomTreeNodeInterface = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

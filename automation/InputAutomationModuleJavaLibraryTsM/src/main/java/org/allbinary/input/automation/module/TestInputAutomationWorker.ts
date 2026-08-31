@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ScreenCaptureImagesWorker } from '../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
-      const ScreenCaptureImagesWorker = globalThis.org.allbinary.input.media.image.capture.ScreenCaptureImagesWorker;
+import { ScreenCaptureImagesWorker } from '../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
+      //not GWT import const ScreenCaptureImagesWorker = globalThis.org.allbinary.input.media.image.capture.ScreenCaptureImagesWorker;
 
       
-//not game specific package import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
-      const ImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.ImageComparisonWorker;
+import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
+      //not GWT import const ImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.ImageComparisonWorker;
 
       
-//not game specific package import { SaveImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/SaveImageComparisonWorker.js';
-      const SaveImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.SaveImageComparisonWorker;
+import { SaveImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/SaveImageComparisonWorker.js';
+      //not GWT import const SaveImageComparisonWorker = globalThis.org.allbinary.media.image.comparison.SaveImageComparisonWorker;
 
       
-//not game specific package import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
-      const MotionRectanglesWorker = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesWorker;
+import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
+      //not GWT import const MotionRectanglesWorker = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesWorker;
 
       
-//not game specific package import { SaveMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/SaveMotionRectanglesResultsWorker.js';
-      const SaveMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.SaveMotionRectanglesResultsWorker;
+import { SaveMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/SaveMotionRectanglesResultsWorker.js';
+      //not GWT import const SaveMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.SaveMotionRectanglesResultsWorker;
 
       
-//not game specific package import { TestInputForMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/TestInputForMotionRectanglesResultsWorker.js';
-      const TestInputForMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.TestInputForMotionRectanglesResultsWorker;
+import { TestInputForMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/TestInputForMotionRectanglesResultsWorker.js';
+      //not GWT import const TestInputForMotionRectanglesResultsWorker = globalThis.org.allbinary.media.image.comparison.motion.TestInputForMotionRectanglesResultsWorker;
 
       
 

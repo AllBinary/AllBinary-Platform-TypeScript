@@ -20,36 +20,36 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { io } from '../../java/io.js';
-      const io = globalThis.java.io;
+import { io } from '../../java/io.js';
+      //not GWT import const io = globalThis.java.io;
 
       
-//not game specific package import { net } from '../../java/net.js';
-      const net = globalThis.java.net;
+import { net } from '../../java/net.js';
+      //not GWT import const net = globalThis.java.net;
 
       
-//not game specific package import { servlet } from '../../javax/servlet.js';
-      const servlet = globalThis.javax.servlet;
+import { servlet } from '../../javax/servlet.js';
+      //not GWT import const servlet = globalThis.javax.servlet;
 
       
-//not game specific package import { http } from '../../javax/servlet/http.js';
-      const http = globalThis.javax.servlet.http;
+import { http } from '../../javax/servlet/http.js';
+      //not GWT import const http = globalThis.javax.servlet.http;
 
       
-//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
-      const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+      //not GWT import const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
 
       
-//not game specific package import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js';
-      const RequestWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.RequestWorkFlowFactory;
+import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js';
+      //not GWT import const RequestWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.RequestWorkFlowFactory;
 
       
 

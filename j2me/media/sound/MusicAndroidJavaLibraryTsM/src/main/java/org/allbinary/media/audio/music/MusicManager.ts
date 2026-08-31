@@ -10,71 +10,71 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Activity } from '../../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { Context } from '../../../../../android/content/Context.js';
-      const Context = globalThis.android.content.Context;
+import { Context } from '../../../../../android/content/Context.js';
+      //not GWT import const Context = globalThis.android.content.Context;
 
       
-//not game specific package import { Intent } from '../../../../../android/content/Intent.js';
-      const Intent = globalThis.android.content.Intent;
+import { Intent } from '../../../../../android/content/Intent.js';
+      //not GWT import const Intent = globalThis.android.content.Intent;
 
       
-//not game specific package import { AndroidServicesUtil } from '../../../../../org/allbinary/android/AndroidServicesUtil.js';
-      const AndroidServicesUtil = globalThis.org.allbinary.android.AndroidServicesUtil;
+import { AndroidServicesUtil } from '../../../../../org/allbinary/android/AndroidServicesUtil.js';
+      //not GWT import const AndroidServicesUtil = globalThis.org.allbinary.android.AndroidServicesUtil;
 
       
-//not game specific package import { ResourceUtil } from '../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
-      const NoSound = globalThis.org.allbinary.media.audio.NoSound;
+import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
+      //not GWT import const NoSound = globalThis.org.allbinary.media.audio.NoSound;
 
       
-//not game specific package import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
-      const Sound = globalThis.org.allbinary.media.audio.Sound;
+import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
+      //not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
       
-//not game specific package import { CommonStateStrings } from '../../../../../org/allbinary/string/CommonStateStrings.js';
+//not plain js import { CommonStateStrings } from '../../../../../org/allbinary/string/CommonStateStrings.js';
       const CommonStateStrings = globalThis.org.allbinary.string.CommonStateStrings;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      //not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
 
       
-//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      //not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
+//not plain js import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
       const BasicArrayListUtil = globalThis.org.allbinary.util.BasicArrayListUtil;
 
       

@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Feature } from '../../../../org/allbinary/game/configuration/feature/Feature.js';
-      const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
+import { Feature } from '../../../../org/allbinary/game/configuration/feature/Feature.js';
+      //not GWT import const Feature = globalThis.org.allbinary.game.configuration.feature.Feature;
 
       
-//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

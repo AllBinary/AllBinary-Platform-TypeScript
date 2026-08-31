@@ -22,87 +22,87 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-//not game specific package import { Font } from '../../../../../../../javax/microedition/lcdui/Font.js';
-      const Font = globalThis.javax.microedition.lcdui.Font;
+import { Font } from '../../../../../../../javax/microedition/lcdui/Font.js';
+      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-//not game specific package import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { GameAdStateFactory } from '../../../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
-      const GameAdStateFactory = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
+import { GameAdStateFactory } from '../../../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
+      //not GWT import const GameAdStateFactory = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
 
       
-//not game specific package import { Processor } from '../../../../../../../org/allbinary/canvas/Processor.js';
-      const Processor = globalThis.org.allbinary.canvas.Processor;
+import { Processor } from '../../../../../../../org/allbinary/canvas/Processor.js';
+      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
-//not game specific package import { GameAdState } from '../../../../../../../org/allbinary/game/GameAdState.js';
-      const GameAdState = globalThis.org.allbinary.game.GameAdState;
+import { GameAdState } from '../../../../../../../org/allbinary/game/GameAdState.js';
+      //not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
 
       
 import { GameNotification } from '../../../../../../../org/allbinary/game/ag/layer/hud/basic/notification/GameNotification.js';
-      //not GWT import and is game specific code const GameNotification = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotification;
+      //not GWT import const GameNotification = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotification;
 
       
 import { GameNotificationHud } from '../../../../../../../org/allbinary/game/ag/layer/hud/basic/notification/GameNotificationHud.js';
-      //not GWT import and is game specific code const GameNotificationHud = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotificationHud;
+      //not GWT import const GameNotificationHud = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotificationHud;
 
       
-//not game specific package import { GameNotificationEventHandler } from '../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
-      const GameNotificationEventHandler = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEventHandler;
+import { GameNotificationEventHandler } from '../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
+      //not GWT import const GameNotificationEventHandler = globalThis.org.allbinary.game.layer.hud.event.GameNotificationEventHandler;
 
       
-//not game specific package import { CustomGPoint } from '../../../../../../../org/allbinary/graphics/CustomGPoint.js';
-      const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
+import { CustomGPoint } from '../../../../../../../org/allbinary/graphics/CustomGPoint.js';
+      //not GWT import const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
 
       
-//not game specific package import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { DisplayInfoSingleton } from '../../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+import { DisplayInfoSingleton } from '../../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
-//not game specific package import { UpdateMyFontInterface } from '../../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
-      const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
+import { UpdateMyFontInterface } from '../../../../../../../org/allbinary/graphics/font/UpdateMyFontInterface.js';
+      //not GWT import const UpdateMyFontInterface = globalThis.org.allbinary.graphics.font.UpdateMyFontInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      //not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
 
       
-//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+import { GameTickTimeDelayHelperFactory } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      //not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
-//not game specific package import { CircularIndexUtil } from '../../../../../../../org/allbinary/util/CircularIndexUtil.js';
+//not plain js import { CircularIndexUtil } from '../../../../../../../org/allbinary/util/CircularIndexUtil.js';
       const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       

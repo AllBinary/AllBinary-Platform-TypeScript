@@ -22,16 +22,16 @@
         
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
-//not game specific package import { KeyEvent } from '../../../../../../../../../java/awt/event/KeyEvent.js';
-      const KeyEvent = globalThis.java.awt.event.KeyEvent;
+import { KeyEvent } from '../../../../../../../../../java/awt/event/KeyEvent.js';
+      //not GWT import const KeyEvent = globalThis.java.awt.event.KeyEvent;
 
       
-//not game specific package import { swing } from '../../../../../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
-      const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
+import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
+      //not GWT import const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
 
       
 

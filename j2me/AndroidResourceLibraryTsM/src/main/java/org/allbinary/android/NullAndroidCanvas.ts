@@ -22,12 +22,12 @@
         
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { Canvas } from '../../../android/graphics/Canvas.js';
-      const Canvas = globalThis.android.graphics.Canvas;
+import { Canvas } from '../../../android/graphics/Canvas.js';
+      //not GWT import const Canvas = globalThis.android.graphics.Canvas;
 
       
-//not game specific package import { MediaPlayer } from '../../../android/media/MediaPlayer.js';
-      const MediaPlayer = globalThis.android.media.MediaPlayer;
+import { MediaPlayer } from '../../../android/media/MediaPlayer.js';
+      //not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
 
       
 

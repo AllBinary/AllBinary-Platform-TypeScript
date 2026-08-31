@@ -24,24 +24,24 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { awt } from '../../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { ColorCacheFactory } from '../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-      const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
+import { ColorCacheFactory } from '../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
+      //not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
 
       
-//not game specific package import { ColorCacheable } from '../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-      const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
+import { ColorCacheable } from '../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
+      //not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
 
       
-//not game specific package import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
 

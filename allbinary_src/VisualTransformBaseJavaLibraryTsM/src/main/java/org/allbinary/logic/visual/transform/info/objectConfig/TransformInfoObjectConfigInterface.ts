@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { DomDocumentMappingInterface } from '../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
-      const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+import { DomDocumentMappingInterface } from '../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+      //not GWT import const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 

@@ -20,28 +20,28 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
-      const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
+import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
+      //not GWT import const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
 
       
-//not game specific package import { InventoryHelperFactory } from '../../admin/taghelpers/InventoryHelperFactory.js';
-      const InventoryHelperFactory = globalThis.admin.taghelpers.InventoryHelperFactory;
+import { InventoryHelperFactory } from '../../admin/taghelpers/InventoryHelperFactory.js';
+      //not GWT import const InventoryHelperFactory = globalThis.admin.taghelpers.InventoryHelperFactory;
 
       
-//not game specific package import { InventoryRequestHelperFactory } from '../../admin/taghelpers/InventoryRequestHelperFactory.js';
-      const InventoryRequestHelperFactory = globalThis.admin.taghelpers.InventoryRequestHelperFactory;
+import { InventoryRequestHelperFactory } from '../../admin/taghelpers/InventoryRequestHelperFactory.js';
+      //not GWT import const InventoryRequestHelperFactory = globalThis.admin.taghelpers.InventoryRequestHelperFactory;
 
       
-//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
 

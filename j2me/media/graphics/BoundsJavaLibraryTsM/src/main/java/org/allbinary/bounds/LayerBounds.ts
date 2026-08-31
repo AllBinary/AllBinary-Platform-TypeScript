@@ -20,32 +20,32 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { BoundsChangeEvent } from '../../../org/allbinary/bounds/event/BoundsChangeEvent.js';
-      const BoundsChangeEvent = globalThis.org.allbinary.bounds.event.BoundsChangeEvent;
+import { BoundsChangeEvent } from '../../../org/allbinary/bounds/event/BoundsChangeEvent.js';
+      //not GWT import const BoundsChangeEvent = globalThis.org.allbinary.bounds.event.BoundsChangeEvent;
 
       
-//not game specific package import { BoundsChangeEventListener } from '../../../org/allbinary/bounds/event/BoundsChangeEventListener.js';
-      const BoundsChangeEventListener = globalThis.org.allbinary.bounds.event.BoundsChangeEventListener;
+import { BoundsChangeEventListener } from '../../../org/allbinary/bounds/event/BoundsChangeEventListener.js';
+      //not GWT import const BoundsChangeEventListener = globalThis.org.allbinary.bounds.event.BoundsChangeEventListener;
 
       
-//not game specific package import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not plain js import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
-//not game specific package import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
-      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
+      //not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
 
       
 

@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-      const Layer = globalThis.org.allbinary.layer.Layer;
+import { Layer } from '../../../../org/allbinary/layer/Layer.js';
+      //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
 

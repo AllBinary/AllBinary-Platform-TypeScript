@@ -22,55 +22,55 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
-      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
+      //not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
 
       
-//not game specific package import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
-      const SpriteFactory = globalThis.org.allbinary.game.layer.SpriteFactory;
+import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
+      //not GWT import const SpriteFactory = globalThis.org.allbinary.game.layer.SpriteFactory;
 
       
-//not game specific package import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
-      const OpenGLUtil = globalThis.org.allbinary.graphics.opengles.OpenGLUtil;
+import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
+      //not GWT import const OpenGLUtil = globalThis.org.allbinary.graphics.opengles.OpenGLUtil;
 
       
-//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not game specific package import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
-      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+      //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
 
       
-//not game specific package import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
-      const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
+import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
+      //not GWT import const OpenGLESImageExclusionUtil = globalThis.org.allbinary.image.opengles.OpenGLESImageExclusionUtil;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
-      const J2SEMath = globalThis.org.allbinary.logic.math.J2SEMath;
+import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
+      //not GWT import const J2SEMath = globalThis.org.allbinary.logic.math.J2SEMath;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-      const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
+      //not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
       
-//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

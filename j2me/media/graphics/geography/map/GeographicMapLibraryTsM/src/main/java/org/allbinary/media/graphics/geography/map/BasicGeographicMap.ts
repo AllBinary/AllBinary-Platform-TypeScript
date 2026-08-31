@@ -22,23 +22,23 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-      const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
+      //not GWT import const AllBinaryTiledLayer = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
       
-//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
-      const Layer = globalThis.org.allbinary.layer.Layer;
+import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
+      //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
-//not game specific package import { MathUtil } from '../../../../../../org/allbinary/logic/math/MathUtil.js';
+//not plain js import { MathUtil } from '../../../../../../org/allbinary/logic/math/MathUtil.js';
       const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       

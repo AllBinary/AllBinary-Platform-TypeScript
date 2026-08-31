@@ -28,100 +28,100 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-//not game specific package import { awt } from '../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { File } from '../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { swing } from '../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { XslHelper } from '../../../../org/allbinary/data/tree/dom/XslHelper.js';
-      const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
+import { XslHelper } from '../../../../org/allbinary/data/tree/dom/XslHelper.js';
+      //not GWT import const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
 
       
-//not game specific package import { DomHelper } from '../../../../org/allbinary/dom/DomHelper.js';
-      const DomHelper = globalThis.org.allbinary.dom.DomHelper;
+import { DomHelper } from '../../../../org/allbinary/dom/DomHelper.js';
+      //not GWT import const DomHelper = globalThis.org.allbinary.dom.DomHelper;
 
       
-//not game specific package import { NewWorkAreaJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js';
-      const NewWorkAreaJDialog = globalThis.org.allbinary.graphics.j2me.dialog.NewWorkAreaJDialog;
+import { NewWorkAreaJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js';
+      //not GWT import const NewWorkAreaJDialog = globalThis.org.allbinary.graphics.j2me.dialog.NewWorkAreaJDialog;
 
       
-//not game specific package import { RotateJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js';
-      const RotateJDialog = globalThis.org.allbinary.graphics.j2me.dialog.RotateJDialog;
+import { RotateJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js';
+      //not GWT import const RotateJDialog = globalThis.org.allbinary.graphics.j2me.dialog.RotateJDialog;
 
       
-//not game specific package import { WorkAreaDom } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js';
-      const WorkAreaDom = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaDom;
+import { WorkAreaDom } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js';
+      //not GWT import const WorkAreaDom = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaDom;
 
       
-//not game specific package import { WorkAreaJPanel } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
-      const WorkAreaJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanel;
+import { WorkAreaJPanel } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
+      //not GWT import const WorkAreaJPanel = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanel;
 
       
-//not game specific package import { WorkAreaJPanelInterface } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
-      const WorkAreaJPanelInterface = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanelInterface;
+import { WorkAreaJPanelInterface } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
+      //not GWT import const WorkAreaJPanelInterface = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanelInterface;
 
       
-//not game specific package import { MyCanvasEvent } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
-      const MyCanvasEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEvent;
+import { MyCanvasEvent } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
+      //not GWT import const MyCanvasEvent = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEvent;
 
       
-//not game specific package import { MyCanvasEventService } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
-      const MyCanvasEventService = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventService;
+import { MyCanvasEventService } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
+      //not GWT import const MyCanvasEventService = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventService;
 
       
-//not game specific package import { MyCanvasEventSource } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
-      const MyCanvasEventSource = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventSource;
+import { MyCanvasEventSource } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
+      //not GWT import const MyCanvasEventSource = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventSource;
 
       
-//not game specific package import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
-      const FileJDialog = globalThis.org.allbinary.gui.dialog.FileJDialog;
+import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
+      //not GWT import const FileJDialog = globalThis.org.allbinary.gui.dialog.FileJDialog;
 
       
-//not game specific package import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
-      const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
+import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
+      //not GWT import const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
 
       
-//not game specific package import { HashMapJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
-      const HashMapJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.HashMapJDialogListenerInterface;
+import { HashMapJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
+      //not GWT import const HashMapJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.HashMapJDialogListenerInterface;
 
       
-//not game specific package import { LOGGING } from '../../../../org/allbinary/log/LOGGING.js';
-      const LOGGING = globalThis.org.allbinary.log.LOGGING;
+import { LOGGING } from '../../../../org/allbinary/log/LOGGING.js';
+      //not GWT import const LOGGING = globalThis.org.allbinary.log.LOGGING;
 
       
-//not game specific package import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
-      const GuiLog = globalThis.org.allbinary.logic.communication.log.GuiLog;
+import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
+      //not GWT import const GuiLog = globalThis.org.allbinary.logic.communication.log.GuiLog;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not game specific package import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
+//not plain js import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
       const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

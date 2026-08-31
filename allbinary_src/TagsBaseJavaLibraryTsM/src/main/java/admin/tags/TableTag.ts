@@ -24,52 +24,52 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
-      const Method = globalThis.java.lang.reflect.Method;
+import { Method } from '../../java/lang/reflect/Method.js';
+      //not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
-//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { TagHelperFactoryInterface } from '../../admin/taghelpers/TagHelperFactoryInterface.js';
-      const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+import { TagHelperFactoryInterface } from '../../admin/taghelpers/TagHelperFactoryInterface.js';
+      //not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
 
       
-//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
-      const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
+      //not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
       
-//not game specific package import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
-      const BooleanUtil = globalThis.org.allbinary.logic.java.bool.BooleanUtil;
+import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
+      //not GWT import const BooleanUtil = globalThis.org.allbinary.logic.java.bool.BooleanUtil;
 
       
-//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not game specific package import { PropertiesTag } from '../../tags/PropertiesTag.js';
-      const PropertiesTag = globalThis.tags.PropertiesTag;
+import { PropertiesTag } from '../../tags/PropertiesTag.js';
+      //not GWT import const PropertiesTag = globalThis.tags.PropertiesTag;
 
       
 

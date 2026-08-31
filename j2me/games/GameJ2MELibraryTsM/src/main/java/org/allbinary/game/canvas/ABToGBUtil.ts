@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+      //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
-//not game specific package import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-      const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+      //not GWT import const AllBinaryGameLayerManager = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
 
       
 

@@ -4,27 +4,27 @@
 
 
 
-//not game specific package import { KeyEvent } from '../../../../android/view/KeyEvent.js';
-      const KeyEvent = globalThis.android.view.KeyEvent;
+import { KeyEvent } from '../../../../android/view/KeyEvent.js';
+      //not GWT import const KeyEvent = globalThis.android.view.KeyEvent;
 
       
-//not game specific package import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
-      const ActivityFractureUtil = globalThis.org.allbinary.android.ActivityFractureUtil;
+import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
+      //not GWT import const ActivityFractureUtil = globalThis.org.allbinary.android.ActivityFractureUtil;
 
       
-//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
       const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not game specific package import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

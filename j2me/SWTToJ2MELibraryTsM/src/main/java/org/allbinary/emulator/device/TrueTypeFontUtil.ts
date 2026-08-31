@@ -22,83 +22,83 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-      const SWT = globalThis.org.eclipse.swt.SWT;
+import { SWT } from '../../../../org/eclipse/swt/SWT.js';
+      //not GWT import const SWT = globalThis.org.eclipse.swt.SWT;
 
       
-//not game specific package import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-      const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
+import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
+      //not GWT import const ImageData = globalThis.org.eclipse.swt.graphics.ImageData;
 
       
-//not game specific package import { ImageLoader } from '../../../../org/eclipse/swt/graphics/ImageLoader.js';
-      const ImageLoader = globalThis.org.eclipse.swt.graphics.ImageLoader;
+import { ImageLoader } from '../../../../org/eclipse/swt/graphics/ImageLoader.js';
+      //not GWT import const ImageLoader = globalThis.org.eclipse.swt.graphics.ImageLoader;
 
       
-//not game specific package import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-      const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
+      //not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
 
       
-//not game specific package import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
-      const AvianUtil = globalThis.org.allbinary.AvianUtil;
+import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
+      //not GWT import const AvianUtil = globalThis.org.allbinary.AvianUtil;
 
       
-//not game specific package import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-      const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+      //not GWT import const CanvasStrings = globalThis.org.allbinary.graphics.displayable.CanvasStrings;
 
       
-//not game specific package import { OpenGLCapabilities } from '../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
-      const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
+import { OpenGLCapabilities } from '../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
+      //not GWT import const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
 
       
-//not game specific package import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-      const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
+      //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-//not game specific package import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

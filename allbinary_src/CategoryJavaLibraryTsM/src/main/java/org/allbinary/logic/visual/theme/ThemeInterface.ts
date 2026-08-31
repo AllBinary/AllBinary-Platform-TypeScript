@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
 

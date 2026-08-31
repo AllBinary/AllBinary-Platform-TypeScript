@@ -18,20 +18,20 @@
 
 
 
-//not game specific package import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphics/opengles/NullOpenGLProcessorFactory.js';
-      const NullOpenGLProcessorFactory = globalThis.org.allbinary.graphics.opengles.NullOpenGLProcessorFactory;
+import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphics/opengles/NullOpenGLProcessorFactory.js';
+      //not GWT import const NullOpenGLProcessorFactory = globalThis.org.allbinary.graphics.opengles.NullOpenGLProcessorFactory;
 
       
-//not game specific package import { OpenGLCapabilities } from '../../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
-      const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
+import { OpenGLCapabilities } from '../../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
+      //not GWT import const OpenGLCapabilities = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
 
       
-//not game specific package import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
-      const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
+import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
+      //not GWT import const OpenGLProcessor = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
 
       
 

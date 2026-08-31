@@ -24,12 +24,12 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-//not game specific package import { Parcelable } from '../../../android/os/Parcelable.js';
-      const Parcelable = globalThis.android.os.Parcelable;
+import { Parcelable } from '../../../android/os/Parcelable.js';
+      //not GWT import const Parcelable = globalThis.android.os.Parcelable;
 
       
-//not game specific package import { Parcel } from '../../../android/os/Parcel.js';
-      const Parcel = globalThis.android.os.Parcel;
+import { Parcel } from '../../../android/os/Parcel.js';
+      //not GWT import const Parcel = globalThis.android.os.Parcel;
 
       
 

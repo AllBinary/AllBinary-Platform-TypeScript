@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { RecordFilter } from '../../../../../javax/microedition/rms/RecordFilter.js';
-      const RecordFilter = globalThis.javax.microedition.rms.RecordFilter;
+import { RecordFilter } from '../../../../../javax/microedition/rms/RecordFilter.js';
+      //not GWT import const RecordFilter = globalThis.javax.microedition.rms.RecordFilter;
 
       
 

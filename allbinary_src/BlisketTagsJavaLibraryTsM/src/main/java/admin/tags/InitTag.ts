@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { InitHelperFactory } from '../../admin/taghelpers/InitHelperFactory.js';
-      const InitHelperFactory = globalThis.admin.taghelpers.InitHelperFactory;
+import { InitHelperFactory } from '../../admin/taghelpers/InitHelperFactory.js';
+      //not GWT import const InitHelperFactory = globalThis.admin.taghelpers.InitHelperFactory;
 
       
 

@@ -19,12 +19,12 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { RTSLayerEvent } from '../../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
-      const RTSLayerEvent = globalThis.org.allbinary.game.layer.RTSLayerEvent;
+import { RTSLayerEvent } from '../../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
+      //not GWT import const RTSLayerEvent = globalThis.org.allbinary.game.layer.RTSLayerEvent;
 
       
-//not game specific package import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
 

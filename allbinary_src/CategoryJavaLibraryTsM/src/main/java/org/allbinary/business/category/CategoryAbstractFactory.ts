@@ -24,32 +24,32 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { CategoryPropertiesFactory } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactory.js';
-      const CategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactory;
+import { CategoryPropertiesFactory } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactory.js';
+      //not GWT import const CategoryPropertiesFactory = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactory;
 
       
-//not game specific package import { CategoryPropertiesFactoryInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
-      const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
+import { CategoryPropertiesFactoryInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
+      //not GWT import const CategoryPropertiesFactoryInterface = globalThis.org.allbinary.business.category.properties.CategoryPropertiesFactoryInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

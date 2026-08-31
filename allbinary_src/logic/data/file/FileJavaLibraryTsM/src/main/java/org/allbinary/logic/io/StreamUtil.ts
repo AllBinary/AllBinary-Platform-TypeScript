@@ -22,27 +22,27 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { Closeable } from '../../../../java/io/Closeable.js';
-      const Closeable = globalThis.java.io.Closeable;
+import { Closeable } from '../../../../java/io/Closeable.js';
+      //not GWT import const Closeable = globalThis.java.io.Closeable;
 
       
-//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { OutputStream } from '../../../../java/io/OutputStream.js';
-      const OutputStream = globalThis.java.io.OutputStream;
+import { OutputStream } from '../../../../java/io/OutputStream.js';
+      //not GWT import const OutputStream = globalThis.java.io.OutputStream;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

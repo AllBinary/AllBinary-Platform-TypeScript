@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { EmailEvent } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
-      const EmailEvent = globalThis.org.allbinary.logic.communication.smtp.event.EmailEvent;
+import { EmailEvent } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
+      //not GWT import const EmailEvent = globalThis.org.allbinary.logic.communication.smtp.event.EmailEvent;
 
       
-//not game specific package import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
-      const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
+import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
+      //not GWT import const UserEmailEventListenerInterface = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventListenerInterface;
 
       
 

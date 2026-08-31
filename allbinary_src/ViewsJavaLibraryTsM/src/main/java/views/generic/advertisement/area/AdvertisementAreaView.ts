@@ -20,44 +20,44 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { AdvertisementAreaData } from '../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js';
-      const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
+import { AdvertisementAreaData } from '../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js';
+      //not GWT import const AdvertisementAreaData = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
 
       
-//not game specific package import { AdvertisementAreaInterface } from '../../../../org/allbinary/business/advertisement/area/AdvertisementAreaInterface.js';
-      const AdvertisementAreaInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaInterface;
+import { AdvertisementAreaInterface } from '../../../../org/allbinary/business/advertisement/area/AdvertisementAreaInterface.js';
+      //not GWT import const AdvertisementAreaInterface = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaInterface;
 
       
-//not game specific package import { AdvertisementAreasEntityFactory } from '../../../../org/allbinary/data/tables/advertisement/areas/AdvertisementAreasEntityFactory.js';
-      const AdvertisementAreasEntityFactory = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntityFactory;
+import { AdvertisementAreasEntityFactory } from '../../../../org/allbinary/data/tables/advertisement/areas/AdvertisementAreasEntityFactory.js';
+      //not GWT import const AdvertisementAreasEntityFactory = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntityFactory;
 
       
-//not game specific package import { AdvertisementAreasEntityInterface } from '../../../../org/allbinary/data/tables/advertisement/areas/AdvertisementAreasEntityInterface.js';
-      const AdvertisementAreasEntityInterface = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntityInterface;
+import { AdvertisementAreasEntityInterface } from '../../../../org/allbinary/data/tables/advertisement/areas/AdvertisementAreasEntityInterface.js';
+      //not GWT import const AdvertisementAreasEntityInterface = globalThis.org.allbinary.data.tables.advertisement.areas.AdvertisementAreasEntityInterface;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { Document } from '../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      //not GWT import const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
 
       
 

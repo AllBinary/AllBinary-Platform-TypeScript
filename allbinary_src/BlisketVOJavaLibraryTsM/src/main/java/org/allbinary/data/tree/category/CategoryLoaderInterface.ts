@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

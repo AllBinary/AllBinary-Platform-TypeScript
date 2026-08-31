@@ -24,16 +24,16 @@
         
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
-//not game specific package import { swing } from '../../../../../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { KeyStrokeMap } from '../../../../../../../../../abbot/tester/KeyStrokeMap.js';
-      const KeyStrokeMap = globalThis.abbot.tester.KeyStrokeMap;
+import { KeyStrokeMap } from '../../../../../../../../../abbot/tester/KeyStrokeMap.js';
+      //not GWT import const KeyStrokeMap = globalThis.abbot.tester.KeyStrokeMap;
 
       
-//not game specific package import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
-      const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
+import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
+      //not GWT import const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
 
       
 

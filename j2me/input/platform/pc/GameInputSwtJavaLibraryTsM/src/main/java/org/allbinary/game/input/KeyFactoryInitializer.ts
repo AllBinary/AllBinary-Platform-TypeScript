@@ -18,15 +18,15 @@
 
 
 
-//not game specific package import { Init } from '../../../../org/allbinary/init/Init.js';
-      const Init = globalThis.org.allbinary.init.Init;
+import { Init } from '../../../../org/allbinary/init/Init.js';
+      //not GWT import const Init = globalThis.org.allbinary.init.Init;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       

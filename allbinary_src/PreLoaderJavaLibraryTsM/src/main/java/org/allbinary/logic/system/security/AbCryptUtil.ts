@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { InputStream } from '../../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
-      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
+      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
-//not game specific package import { AbCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
-      const AbCrypt = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.AbCrypt;
+import { AbCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
+      //not GWT import const AbCrypt = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.AbCrypt;
 
       
-//not game specific package import { KeySpecFactory } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js';
-      const KeySpecFactory = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
+import { KeySpecFactory } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js';
+      //not GWT import const KeySpecFactory = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
 
       
 

@@ -18,40 +18,40 @@
 
 
 
-//not game specific package import { AssignWaypointsUtil } from '../../../../org/allbinary/game/input/form/AssignWaypointsUtil.js';
-      const AssignWaypointsUtil = globalThis.org.allbinary.game.input.form.AssignWaypointsUtil;
+import { AssignWaypointsUtil } from '../../../../org/allbinary/game/input/form/AssignWaypointsUtil.js';
+      //not GWT import const AssignWaypointsUtil = globalThis.org.allbinary.game.input.form.AssignWaypointsUtil;
 
       
-//not game specific package import { AdvancedRTSGameLayer } from '../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
-      const AdvancedRTSGameLayer = globalThis.org.allbinary.game.layer.AdvancedRTSGameLayer;
+import { AdvancedRTSGameLayer } from '../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
+      //not GWT import const AdvancedRTSGameLayer = globalThis.org.allbinary.game.layer.AdvancedRTSGameLayer;
 
       
-//not game specific package import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
-      const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
+import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
+      //not GWT import const RTSLayer = globalThis.org.allbinary.game.layer.RTSLayer;
 
       
-//not game specific package import { BuildingLayer } from '../../../../org/allbinary/game/layer/building/BuildingLayer.js';
-      const BuildingLayer = globalThis.org.allbinary.game.layer.building.BuildingLayer;
+import { BuildingLayer } from '../../../../org/allbinary/game/layer/building/BuildingLayer.js';
+      //not GWT import const BuildingLayer = globalThis.org.allbinary.game.layer.building.BuildingLayer;
 
       
-//not game specific package import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-      const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
+import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
+      //not GWT import const CollidableDestroyableDamageableLayer = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableLayer;
 
       
-//not game specific package import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
-      const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
+import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
+      //not GWT import const UnitLayer = globalThis.org.allbinary.game.layer.unit.UnitLayer;
 
       
-//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
-      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      //not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
 
       
 

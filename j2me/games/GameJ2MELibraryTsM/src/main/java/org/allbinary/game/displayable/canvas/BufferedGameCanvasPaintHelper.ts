@@ -20,39 +20,39 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
-      const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
+import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+      //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
-//not game specific package import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
-      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
+      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not game specific package import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
-      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
+      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
-//not game specific package import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-      const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
+import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+      //not GWT import const MyCanvas = globalThis.org.allbinary.graphics.displayable.MyCanvas;
 
       
-//not game specific package import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-      const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+      //not GWT import const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
 
       
-//not game specific package import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
+//not plain js import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
       const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       

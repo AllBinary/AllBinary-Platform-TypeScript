@@ -20,76 +20,76 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
-      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
+      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
-//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { DataInputStream } from '../../../../../java/io/DataInputStream.js';
-      const DataInputStream = globalThis.java.io.DataInputStream;
+import { DataInputStream } from '../../../../../java/io/DataInputStream.js';
+      //not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
 
       
-//not game specific package import { DataOutputStream } from '../../../../../java/io/DataOutputStream.js';
-      const DataOutputStream = globalThis.java.io.DataOutputStream;
+import { DataOutputStream } from '../../../../../java/io/DataOutputStream.js';
+      //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
-//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordEnumeration.js';
-      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordEnumeration.js';
+      //not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-//not game specific package import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
-      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
+      //not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
-//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
+//not plain js import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       
-//not game specific package import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

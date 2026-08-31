@@ -20,32 +20,32 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { Dimension } from '../../../java/awt/Dimension.js';
-      const Dimension = globalThis.java.awt.Dimension;
+import { Dimension } from '../../../java/awt/Dimension.js';
+      //not GWT import const Dimension = globalThis.java.awt.Dimension;
 
       
-//not game specific package import { DisplayMode } from '../../../java/awt/DisplayMode.js';
-      const DisplayMode = globalThis.java.awt.DisplayMode;
+import { DisplayMode } from '../../../java/awt/DisplayMode.js';
+      //not GWT import const DisplayMode = globalThis.java.awt.DisplayMode;
 
       
-//not game specific package import { GraphicsDevice } from '../../../java/awt/GraphicsDevice.js';
-      const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
+import { GraphicsDevice } from '../../../java/awt/GraphicsDevice.js';
+      //not GWT import const GraphicsDevice = globalThis.java.awt.GraphicsDevice;
 
       
-//not game specific package import { GraphicsEnvironment } from '../../../java/awt/GraphicsEnvironment.js';
-      const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
+import { GraphicsEnvironment } from '../../../java/awt/GraphicsEnvironment.js';
+      //not GWT import const GraphicsEnvironment = globalThis.java.awt.GraphicsEnvironment;
 
       
-//not game specific package import { Toolkit } from '../../../java/awt/Toolkit.js';
-      const Toolkit = globalThis.java.awt.Toolkit;
+import { Toolkit } from '../../../java/awt/Toolkit.js';
+      //not GWT import const Toolkit = globalThis.java.awt.Toolkit;
 
       
-//not game specific package import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
 

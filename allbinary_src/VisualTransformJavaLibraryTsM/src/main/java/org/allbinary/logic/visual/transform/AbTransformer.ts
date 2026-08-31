@@ -22,43 +22,43 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { InputStream } from '../../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
-      const StringBufferInputStream = globalThis.java.io.StringBufferInputStream;
+import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
+      //not GWT import const StringBufferInputStream = globalThis.java.io.StringBufferInputStream;
 
       
-//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      //not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
 
       
-//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
-//not game specific package import { XslHelper } from '../../../../../org/allbinary/data/tree/dom/XslHelper.js';
-      const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
+import { XslHelper } from '../../../../../org/allbinary/data/tree/dom/XslHelper.js';
+      //not GWT import const XslHelper = globalThis.org.allbinary.data.tree.dom.XslHelper;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { TransformInfoObjectConfigGenerator } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGenerator.js';
-      const TransformInfoObjectConfigGenerator = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
+import { TransformInfoObjectConfigGenerator } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGenerator.js';
+      //not GWT import const TransformInfoObjectConfigGenerator = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
 
       
-//not game specific package import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js';
-      const TransformInfoObjectConfigGeneratorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactory;
+import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js';
+      //not GWT import const TransformInfoObjectConfigGeneratorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactory;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

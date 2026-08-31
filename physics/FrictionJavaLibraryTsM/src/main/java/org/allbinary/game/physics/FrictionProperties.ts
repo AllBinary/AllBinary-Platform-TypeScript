@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { FrictionData } from '../../../../org/allbinary/game/physics/friction/FrictionData.js';
-      const FrictionData = globalThis.org.allbinary.game.physics.friction.FrictionData;
+import { FrictionData } from '../../../../org/allbinary/game/physics/friction/FrictionData.js';
+      //not GWT import const FrictionData = globalThis.org.allbinary.game.physics.friction.FrictionData;
 
       
-//not game specific package import { DragVelocityBehavior } from '../../../../org/allbinary/game/physics/velocity/DragVelocityBehavior.js';
-      const DragVelocityBehavior = globalThis.org.allbinary.game.physics.velocity.DragVelocityBehavior;
+import { DragVelocityBehavior } from '../../../../org/allbinary/game/physics/velocity/DragVelocityBehavior.js';
+      //not GWT import const DragVelocityBehavior = globalThis.org.allbinary.game.physics.velocity.DragVelocityBehavior;
 
       
-//not game specific package import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
-      const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
+import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
+      //not GWT import const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
 
       
 

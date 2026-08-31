@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-//not game specific package import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
-      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
+      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
 

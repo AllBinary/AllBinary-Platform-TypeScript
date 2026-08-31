@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
-      const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
+import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
+      //not GWT import const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
 
       
-//not game specific package import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-      const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+      //not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
       
 

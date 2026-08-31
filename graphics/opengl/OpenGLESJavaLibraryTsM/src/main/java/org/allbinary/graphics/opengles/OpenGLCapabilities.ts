@@ -24,67 +24,67 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { GL11 } from '../../../../javax/microedition/khronos/opengles/GL11.js';
-      const GL11 = globalThis.javax.microedition.khronos.opengles.GL11;
+import { GL11 } from '../../../../javax/microedition/khronos/opengles/GL11.js';
+      //not GWT import const GL11 = globalThis.javax.microedition.khronos.opengles.GL11;
 
       
-//not game specific package import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
+      //not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
 
       
-//not game specific package import { OpenGLESGL10ImageFactory } from '../../../../org/allbinary/image/opengles/OpenGLESGL10ImageFactory.js';
-      const OpenGLESGL10ImageFactory = globalThis.org.allbinary.image.opengles.OpenGLESGL10ImageFactory;
+import { OpenGLESGL10ImageFactory } from '../../../../org/allbinary/image/opengles/OpenGLESGL10ImageFactory.js';
+      //not GWT import const OpenGLESGL10ImageFactory = globalThis.org.allbinary.image.opengles.OpenGLESGL10ImageFactory;
 
       
-//not game specific package import { OpenGLESGL11VBOImageFactory } from '../../../../org/allbinary/image/opengles/OpenGLESGL11VBOImageFactory.js';
-      const OpenGLESGL11VBOImageFactory = globalThis.org.allbinary.image.opengles.OpenGLESGL11VBOImageFactory;
+import { OpenGLESGL11VBOImageFactory } from '../../../../org/allbinary/image/opengles/OpenGLESGL11VBOImageFactory.js';
+      //not GWT import const OpenGLESGL11VBOImageFactory = globalThis.org.allbinary.image.opengles.OpenGLESGL11VBOImageFactory;
 
       
-//not game specific package import { OpenGLImageSpecificFactory } from '../../../../org/allbinary/image/opengles/OpenGLImageSpecificFactory.js';
-      const OpenGLImageSpecificFactory = globalThis.org.allbinary.image.opengles.OpenGLImageSpecificFactory;
+import { OpenGLImageSpecificFactory } from '../../../../org/allbinary/image/opengles/OpenGLImageSpecificFactory.js';
+      //not GWT import const OpenGLImageSpecificFactory = globalThis.org.allbinary.image.opengles.OpenGLImageSpecificFactory;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { Tokenizer } from '../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
-      const Tokenizer = globalThis.org.allbinary.logic.string.tokens.Tokenizer;
+import { Tokenizer } from '../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
+      //not GWT import const Tokenizer = globalThis.org.allbinary.logic.string.tokens.Tokenizer;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

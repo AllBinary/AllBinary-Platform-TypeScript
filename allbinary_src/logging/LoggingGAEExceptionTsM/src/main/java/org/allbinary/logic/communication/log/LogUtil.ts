@@ -24,19 +24,19 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Level } from '../../../../../java/util/logging/Level.js';
-      const Level = globalThis.java.util.logging.Level;
+import { Level } from '../../../../../java/util/logging/Level.js';
+      //not GWT import const Level = globalThis.java.util.logging.Level;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { Logger } from '../../../../../java/util/logging/Logger.js';
-      const Logger = globalThis.java.util.logging.Logger;
+import { Logger } from '../../../../../java/util/logging/Logger.js';
+      //not GWT import const Logger = globalThis.java.util.logging.Logger;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

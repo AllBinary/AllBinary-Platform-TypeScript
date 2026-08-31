@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { URL } from '../../../../../java/net/URL.js';
-      const URL = globalThis.java.net.URL;
+import { URL } from '../../../../../java/net/URL.js';
+      //not GWT import const URL = globalThis.java.net.URL;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      const HelpSet = globalThis.javax.help.HelpSet;
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
 

@@ -20,16 +20,16 @@
 
             import { Integer } from '../../../../../../../../java/lang/Integer.js';
         
-//not game specific package import { Vector } from '../../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
-      const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
+import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
+      //not GWT import const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
 
       
-//not game specific package import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-      const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
+import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
+      //not GWT import const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
 
       
 

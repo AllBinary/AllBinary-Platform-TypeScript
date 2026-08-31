@@ -22,31 +22,31 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
-      const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
+      //not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
       
-//not game specific package import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
-      const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+      //not GWT import const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

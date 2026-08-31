@@ -24,8 +24,8 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-//not game specific package import { View } from '../../../../android/view/View.js';
-      const View = globalThis.android.view.View;
+import { View } from '../../../../android/view/View.js';
+      //not GWT import const View = globalThis.android.view.View;
 
       
 

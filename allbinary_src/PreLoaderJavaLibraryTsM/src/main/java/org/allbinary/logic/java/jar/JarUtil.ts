@@ -24,24 +24,24 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-//not game specific package import { IOException } from '../../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { URL } from '../../../../../java/net/URL.js';
-      const URL = globalThis.java.net.URL;
+import { URL } from '../../../../../java/net/URL.js';
+      //not GWT import const URL = globalThis.java.net.URL;
 
       
-//not game specific package import { URLConnection } from '../../../../../java/net/URLConnection.js';
-      const URLConnection = globalThis.java.net.URLConnection;
+import { URLConnection } from '../../../../../java/net/URLConnection.js';
+      //not GWT import const URLConnection = globalThis.java.net.URLConnection;
 
       
-//not game specific package import { JarEntry } from '../../../../../java/util/jar/JarEntry.js';
-      const JarEntry = globalThis.java.util.jar.JarEntry;
+import { JarEntry } from '../../../../../java/util/jar/JarEntry.js';
+      //not GWT import const JarEntry = globalThis.java.util.jar.JarEntry;
 
       
-//not game specific package import { JarInputStream } from '../../../../../java/util/jar/JarInputStream.js';
-      const JarInputStream = globalThis.java.util.jar.JarInputStream;
+import { JarInputStream } from '../../../../../java/util/jar/JarInputStream.js';
+      //not GWT import const JarInputStream = globalThis.java.util.jar.JarInputStream;
 
       
 

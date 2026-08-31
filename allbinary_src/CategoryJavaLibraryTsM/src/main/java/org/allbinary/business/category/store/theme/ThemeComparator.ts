@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { Comparator } from '../../../../../../java/util/Comparator.js';
-      const Comparator = globalThis.java.util.Comparator;
+import { Comparator } from '../../../../../../java/util/Comparator.js';
+      //not GWT import const Comparator = globalThis.java.util.Comparator;
 
       
 

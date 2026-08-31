@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
-      const Cipher = globalThis.javax.crypto.Cipher;
+import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
+      //not GWT import const Cipher = globalThis.javax.crypto.Cipher;
 
       
-//not game specific package import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
-      const SecretKey = globalThis.javax.crypto.SecretKey;
+import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
+      //not GWT import const SecretKey = globalThis.javax.crypto.SecretKey;
 
       
-//not game specific package import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
-      const ByteUtil = globalThis.org.allbinary.logic.java.byteutil.ByteUtil;
+import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
+      //not GWT import const ByteUtil = globalThis.org.allbinary.logic.java.byteutil.ByteUtil;
 
       
 

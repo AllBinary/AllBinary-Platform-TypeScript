@@ -22,40 +22,40 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { CategoryComponent } from '../../../../../org/allbinary/business/category/CategoryComponent.js';
-      const CategoryComponent = globalThis.org.allbinary.business.category.CategoryComponent;
+import { CategoryComponent } from '../../../../../org/allbinary/business/category/CategoryComponent.js';
+      //not GWT import const CategoryComponent = globalThis.org.allbinary.business.category.CategoryComponent;
 
       
-//not game specific package import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
-      const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+      //not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
 
       
-//not game specific package import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-      const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
+      //not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
       
-//not game specific package import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
+      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
-      const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
+import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
+      //not GWT import const CryptFileWriter = globalThis.org.allbinary.logic.control.crypt.file.CryptFileWriter;
 
       
-//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
 

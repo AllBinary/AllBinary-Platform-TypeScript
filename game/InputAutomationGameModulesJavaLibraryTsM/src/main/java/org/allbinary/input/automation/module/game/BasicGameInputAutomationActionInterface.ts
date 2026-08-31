@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { awt } from '../../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
-      const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
+import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
+      //not GWT import const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
 
       
 

@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      //not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
       
-//not game specific package import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
-      const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
+      //not GWT import const CacheableInterfaceFactoryInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
 
       
 

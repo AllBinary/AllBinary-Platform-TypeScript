@@ -18,28 +18,28 @@
 
 
 
-//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
-      const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
+import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
+      //not GWT import const CategoryInterface = globalThis.org.allbinary.business.category.CategoryInterface;
 
       
-//not game specific package import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-      const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
+import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
+      //not GWT import const TableMappingInterface = globalThis.org.allbinary.data.tables.TableMappingInterface;
 
       
-//not game specific package import { ValidationInterface } from '../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+import { ValidationInterface } from '../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      //not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
       
-//not game specific package import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
-      const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
+import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
+      //not GWT import const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
 
       
-//not game specific package import { CompositeTransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
-      const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
+import { CompositeTransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
+      //not GWT import const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
 
       
 

@@ -20,32 +20,32 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
-      const Method = globalThis.java.lang.reflect.Method;
+import { Method } from '../../java/lang/reflect/Method.js';
+      //not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { BasicTextEmailHelperFactory } from '../../admin/taghelpers/BasicTextEmailHelperFactory.js';
-      const BasicTextEmailHelperFactory = globalThis.admin.taghelpers.BasicTextEmailHelperFactory;
+import { BasicTextEmailHelperFactory } from '../../admin/taghelpers/BasicTextEmailHelperFactory.js';
+      //not GWT import const BasicTextEmailHelperFactory = globalThis.admin.taghelpers.BasicTextEmailHelperFactory;
 
       
-//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
-      const CustomTagSupport = globalThis.tags.CustomTagSupport;
+import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+      //not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
 
       
 

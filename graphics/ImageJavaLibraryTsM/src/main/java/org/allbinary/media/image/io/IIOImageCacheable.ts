@@ -20,20 +20,20 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { IIOImage } from '../../../../../javax/imageio/IIOImage.js';
-      const IIOImage = globalThis.javax.imageio.IIOImage;
+import { IIOImage } from '../../../../../javax/imageio/IIOImage.js';
+      //not GWT import const IIOImage = globalThis.javax.imageio.IIOImage;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      //not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
       
 

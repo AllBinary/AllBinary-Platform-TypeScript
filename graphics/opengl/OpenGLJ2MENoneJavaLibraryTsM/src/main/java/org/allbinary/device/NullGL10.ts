@@ -20,8 +20,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
 

@@ -18,20 +18,20 @@
 
 
 
-//not game specific package import { MutableTreeNode } from '../../../../../../../../javax/swing/tree/MutableTreeNode.js';
-      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+import { MutableTreeNode } from '../../../../../../../../javax/swing/tree/MutableTreeNode.js';
+      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { ProfileActionScriptItemInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
-      const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
+import { ProfileActionScriptItemInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
+      //not GWT import const ProfileActionScriptItemInterface = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
 
       
-//not game specific package import { CustomTreeNodeInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
-      const CustomTreeNodeInterface = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
+import { CustomTreeNodeInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
+      //not GWT import const CustomTreeNodeInterface = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
 
       
 

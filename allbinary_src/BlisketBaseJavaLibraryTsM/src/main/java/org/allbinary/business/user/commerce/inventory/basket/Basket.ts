@@ -24,36 +24,36 @@
         
             import { Float } from '../../../../../../../java/lang/Float.js';
         
-//not game specific package import { Serializable } from '../../../../../../../java/io/Serializable.js';
-      const Serializable = globalThis.java.io.Serializable;
+import { Serializable } from '../../../../../../../java/io/Serializable.js';
+      //not GWT import const Serializable = globalThis.java.io.Serializable;
 
       
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { ItemInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-      const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
+import { ItemInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
+      //not GWT import const ItemInterface = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
       
-//not game specific package import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      //not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
 
       
-//not game specific package import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-      const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
+      //not GWT import const MoneyException = globalThis.org.allbinary.business.user.commerce.money.MoneyException;
 
       
-//not game specific package import { InventoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
-      const InventoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntity;
+import { InventoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
+      //not GWT import const InventoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntity;
 
       
-//not game specific package import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-      const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
+import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+      //not GWT import const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
 
       
 

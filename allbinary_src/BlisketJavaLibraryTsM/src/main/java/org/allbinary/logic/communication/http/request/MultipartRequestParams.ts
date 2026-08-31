@@ -20,40 +20,40 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { List } from '../../../../../../java/util/List.js';
-      const List = globalThis.java.util.List;
+import { List } from '../../../../../../java/util/List.js';
+      //not GWT import const List = globalThis.java.util.List;
 
       
-//not game specific package import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
-      const AbFileUploadFactory = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUploadFactory;
+import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
+      //not GWT import const AbFileUploadFactory = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUploadFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { FileItem } from '../../../../../../org/apache/commons/fileupload/FileItem.js';
-      const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
+import { FileItem } from '../../../../../../org/apache/commons/fileupload/FileItem.js';
+      //not GWT import const FileItem = globalThis.org.apache.commons.fileupload.FileItem;
 
       
-//not game specific package import { InvalidContentTypeException } from '../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js';
-      const InvalidContentTypeException = globalThis.org.apache.commons.fileupload.FileUploadBase.InvalidContentTypeException;
+import { InvalidContentTypeException } from '../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js';
+      //not GWT import const InvalidContentTypeException = globalThis.org.apache.commons.fileupload.FileUploadBase.InvalidContentTypeException;
 
       
 

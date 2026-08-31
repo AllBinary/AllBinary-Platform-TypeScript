@@ -24,23 +24,23 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-      const Direction = globalThis.org.allbinary.direction.Direction;
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
+      //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
-//not game specific package import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
-      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
+      //not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
       
-//not game specific package import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
+//not plain js import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
       const AngleIncrementInfo = globalThis.org.allbinary.math.AngleIncrementInfo;
 
       
-//not game specific package import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
+//not plain js import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
       const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       

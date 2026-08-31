@@ -24,51 +24,51 @@
         
             import { Thread } from '../../../java/lang/Thread.js';
         
-//not game specific package import { BundleActivator } from '../../../org/osgi/framework/BundleActivator.js';
-      const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
+import { BundleActivator } from '../../../org/osgi/framework/BundleActivator.js';
+      //not GWT import const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
 
       
-//not game specific package import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
-      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
+      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
-//not game specific package import { InputAutomationConfigurationModuleChangeListener } from '../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
-      const InputAutomationConfigurationModuleChangeListener = globalThis.bundle.input.automation.module.configuration.InputAutomationConfigurationModuleChangeListener;
+import { InputAutomationConfigurationModuleChangeListener } from '../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
+      //not GWT import const InputAutomationConfigurationModuleChangeListener = globalThis.bundle.input.automation.module.configuration.InputAutomationConfigurationModuleChangeListener;
 
       
-//not game specific package import { InputAutomationRobotChangeListener } from '../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
-      const InputAutomationRobotChangeListener = globalThis.bundle.input.automation.robot.InputAutomationRobotChangeListener;
+import { InputAutomationRobotChangeListener } from '../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
+      //not GWT import const InputAutomationRobotChangeListener = globalThis.bundle.input.automation.robot.InputAutomationRobotChangeListener;
 
       
-//not game specific package import { InputAutomationJFrame } from '../../../org/allbinary/input/automation/InputAutomationJFrame.js';
-      const InputAutomationJFrame = globalThis.org.allbinary.input.automation.InputAutomationJFrame;
+import { InputAutomationJFrame } from '../../../org/allbinary/input/automation/InputAutomationJFrame.js';
+      //not GWT import const InputAutomationJFrame = globalThis.org.allbinary.input.automation.InputAutomationJFrame;
 
       
-//not game specific package import { InputAutomationModuleServiceConsumer } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceConsumer.js';
-      const InputAutomationModuleServiceConsumer = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceConsumer;
+import { InputAutomationModuleServiceConsumer } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceConsumer.js';
+      //not GWT import const InputAutomationModuleServiceConsumer = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceConsumer;
 
       
-//not game specific package import { InputAutomationNewBundleRunnable } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationNewBundleRunnable.js';
-      const InputAutomationNewBundleRunnable = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationNewBundleRunnable;
+import { InputAutomationNewBundleRunnable } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationNewBundleRunnable.js';
+      //not GWT import const InputAutomationNewBundleRunnable = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationNewBundleRunnable;
 
       
-//not game specific package import { InputAutomationServiceFactory } from '../../../org/allbinary/input/automation/osgi/InputAutomationServiceFactory.js';
-      const InputAutomationServiceFactory = globalThis.org.allbinary.input.automation.osgi.InputAutomationServiceFactory;
+import { InputAutomationServiceFactory } from '../../../org/allbinary/input/automation/osgi/InputAutomationServiceFactory.js';
+      //not GWT import const InputAutomationServiceFactory = globalThis.org.allbinary.input.automation.osgi.InputAutomationServiceFactory;
 
       
-//not game specific package import { InputAutomationRobotServiceConsumer } from '../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotServiceConsumer.js';
-      const InputAutomationRobotServiceConsumer = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotServiceConsumer;
+import { InputAutomationRobotServiceConsumer } from '../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotServiceConsumer.js';
+      //not GWT import const InputAutomationRobotServiceConsumer = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotServiceConsumer;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil.js';
-      const OSGIActivatorUtil = globalThis.org.allbinary.osgi.OSGIActivatorUtil;
+import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil.js';
+      //not GWT import const OSGIActivatorUtil = globalThis.org.allbinary.osgi.OSGIActivatorUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

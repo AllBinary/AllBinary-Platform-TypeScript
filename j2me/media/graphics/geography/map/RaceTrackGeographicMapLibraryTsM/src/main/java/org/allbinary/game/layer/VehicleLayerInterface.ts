@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-      const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
+import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
+      //not GWT import const RotationAnimation = globalThis.org.allbinary.animation.RotationAnimation;
 
       
-//not game specific package import { LayerInterface } from '../../../../org/allbinary/layer/LayerInterface.js';
-      const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
+import { LayerInterface } from '../../../../org/allbinary/layer/LayerInterface.js';
+      //not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
 
       
-//not game specific package import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not plain js import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
       const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       
-//not game specific package import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-      const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
+import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
+      //not GWT import const GeographicMapCellHistory = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellHistory;
 
       
-//not game specific package import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
-      const GeographicMapCellPositionTracking = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionTracking;
+import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
+      //not GWT import const GeographicMapCellPositionTracking = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionTracking;
 
       
 

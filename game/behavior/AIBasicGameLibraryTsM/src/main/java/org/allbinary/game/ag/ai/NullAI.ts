@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ArtificialIntelligence } from '../../../../../org/allbinary/ai/ArtificialIntelligence.js';
-      const ArtificialIntelligence = globalThis.org.allbinary.ai.ArtificialIntelligence;
+import { ArtificialIntelligence } from '../../../../../org/allbinary/ai/ArtificialIntelligence.js';
+      //not GWT import const ArtificialIntelligence = globalThis.org.allbinary.ai.ArtificialIntelligence;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
 

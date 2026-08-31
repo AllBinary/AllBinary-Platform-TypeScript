@@ -20,27 +20,27 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
-      const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
+import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
+      //not GWT import const BasicAI = globalThis.org.allbinary.game.ai.BasicAI;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
-//not game specific package import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-      const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
+import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
+      //not GWT import const Visitor = globalThis.org.allbinary.logic.util.visitor.Visitor;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

@@ -22,88 +22,88 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { PrintStream } from '../../../../../java/io/PrintStream.js';
-      const PrintStream = globalThis.java.io.PrintStream;
+import { PrintStream } from '../../../../../java/io/PrintStream.js';
+      //not GWT import const PrintStream = globalThis.java.io.PrintStream;
 
       
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Properties } from '../../../../../java/util/Properties.js';
-      const Properties = globalThis.java.util.Properties;
+import { Properties } from '../../../../../java/util/Properties.js';
+      //not GWT import const Properties = globalThis.java.util.Properties;
 
       
-//not game specific package import { Address } from '../../../../../javax/mail/Address.js';
-      const Address = globalThis.javax.mail.Address;
+import { Address } from '../../../../../javax/mail/Address.js';
+      //not GWT import const Address = globalThis.javax.mail.Address;
 
       
-//not game specific package import { Authenticator } from '../../../../../javax/mail/Authenticator.js';
-      const Authenticator = globalThis.javax.mail.Authenticator;
+import { Authenticator } from '../../../../../javax/mail/Authenticator.js';
+      //not GWT import const Authenticator = globalThis.javax.mail.Authenticator;
 
       
-//not game specific package import { Message } from '../../../../../javax/mail/Message.js';
-      const Message = globalThis.javax.mail.Message;
+import { Message } from '../../../../../javax/mail/Message.js';
+      //not GWT import const Message = globalThis.javax.mail.Message;
 
       
-//not game specific package import { MessagingException } from '../../../../../javax/mail/MessagingException.js';
-      const MessagingException = globalThis.javax.mail.MessagingException;
+import { MessagingException } from '../../../../../javax/mail/MessagingException.js';
+      //not GWT import const MessagingException = globalThis.javax.mail.MessagingException;
 
       
-//not game specific package import { Session } from '../../../../../javax/mail/Session.js';
-      const Session = globalThis.javax.mail.Session;
+import { Session } from '../../../../../javax/mail/Session.js';
+      //not GWT import const Session = globalThis.javax.mail.Session;
 
       
-//not game specific package import { InternetAddress } from '../../../../../javax/mail/internet/InternetAddress.js';
-      const InternetAddress = globalThis.javax.mail.internet.InternetAddress;
+import { InternetAddress } from '../../../../../javax/mail/internet/InternetAddress.js';
+      //not GWT import const InternetAddress = globalThis.javax.mail.internet.InternetAddress;
 
       
-//not game specific package import { InternetHeaders } from '../../../../../javax/mail/internet/InternetHeaders.js';
-      const InternetHeaders = globalThis.javax.mail.internet.InternetHeaders;
+import { InternetHeaders } from '../../../../../javax/mail/internet/InternetHeaders.js';
+      //not GWT import const InternetHeaders = globalThis.javax.mail.internet.InternetHeaders;
 
       
-//not game specific package import { MimeBodyPart } from '../../../../../javax/mail/internet/MimeBodyPart.js';
-      const MimeBodyPart = globalThis.javax.mail.internet.MimeBodyPart;
+import { MimeBodyPart } from '../../../../../javax/mail/internet/MimeBodyPart.js';
+      //not GWT import const MimeBodyPart = globalThis.javax.mail.internet.MimeBodyPart;
 
       
-//not game specific package import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
-      const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
+import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
+      //not GWT import const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
 
       
-//not game specific package import { MimeMultipart } from '../../../../../javax/mail/internet/MimeMultipart.js';
-      const MimeMultipart = globalThis.javax.mail.internet.MimeMultipart;
+import { MimeMultipart } from '../../../../../javax/mail/internet/MimeMultipart.js';
+      //not GWT import const MimeMultipart = globalThis.javax.mail.internet.MimeMultipart;
 
       
-//not game specific package import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

@@ -22,52 +22,52 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { File } from '../../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
-      const FileInputStream = globalThis.java.io.FileInputStream;
+import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
+      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
 
       
-//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { List } from '../../../../../../java/util/List.js';
-      const List = globalThis.java.util.List;
+import { List } from '../../../../../../java/util/List.js';
+      //not GWT import const List = globalThis.java.util.List;
 
       
-//not game specific package import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
-//not game specific package import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
-      const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
+import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+      //not GWT import const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
 
       
-//not game specific package import { NewInputAutomationModulesData } from '../../../../../../org/allbinary/input/automation/module/NewInputAutomationModulesData.js';
-      const NewInputAutomationModulesData = globalThis.org.allbinary.input.automation.module.NewInputAutomationModulesData;
+import { NewInputAutomationModulesData } from '../../../../../../org/allbinary/input/automation/module/NewInputAutomationModulesData.js';
+      //not GWT import const NewInputAutomationModulesData = globalThis.org.allbinary.input.automation.module.NewInputAutomationModulesData;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-      const NodeList = globalThis.org.w3c.dom.NodeList;
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 

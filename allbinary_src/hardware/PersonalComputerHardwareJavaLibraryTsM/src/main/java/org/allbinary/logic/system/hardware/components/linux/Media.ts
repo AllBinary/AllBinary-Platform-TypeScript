@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-//not game specific package import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-      const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+      //not GWT import const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
 
       
-//not game specific package import { MediaInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MediaInterface.js';
-      const MediaInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.MediaInterface;
+import { MediaInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/MediaInterface.js';
+      //not GWT import const MediaInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.MediaInterface;
 
       
 

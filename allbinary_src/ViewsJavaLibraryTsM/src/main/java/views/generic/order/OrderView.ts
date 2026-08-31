@@ -20,52 +20,52 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { Basket } from '../../../org/allbinary/business/user/commerce/inventory/basket/Basket.js';
-      const Basket = globalThis.org.allbinary.business.user.commerce.inventory.basket.Basket;
+import { Basket } from '../../../org/allbinary/business/user/commerce/inventory/basket/Basket.js';
+      //not GWT import const Basket = globalThis.org.allbinary.business.user.commerce.inventory.basket.Basket;
 
       
-//not game specific package import { BasketReview } from '../../../org/allbinary/business/user/commerce/inventory/basket/BasketReview.js';
-      const BasketReview = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketReview;
+import { BasketReview } from '../../../org/allbinary/business/user/commerce/inventory/basket/BasketReview.js';
+      //not GWT import const BasketReview = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketReview;
 
       
-//not game specific package import { Order } from '../../../org/allbinary/business/user/commerce/inventory/order/Order.js';
-      const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
+import { Order } from '../../../org/allbinary/business/user/commerce/inventory/order/Order.js';
+      //not GWT import const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
 
       
-//not game specific package import { OrderData } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-      const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+import { OrderData } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
+      //not GWT import const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
 
       
-//not game specific package import { OrderHistory } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-      const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
+import { OrderHistory } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
+      //not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
 
       
-//not game specific package import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { Document } from '../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      //not GWT import const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
 
       
 

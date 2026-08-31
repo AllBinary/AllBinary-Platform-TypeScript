@@ -20,7 +20,7 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       

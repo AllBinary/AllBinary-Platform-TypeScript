@@ -20,71 +20,71 @@
 
             import { Exception } from '../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { TagHelper } from '../admin/taghelpers/TagHelper.js';
-      const TagHelper = globalThis.admin.taghelpers.TagHelper;
+import { TagHelper } from '../admin/taghelpers/TagHelper.js';
+      //not GWT import const TagHelper = globalThis.admin.taghelpers.TagHelper;
 
       
-//not game specific package import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { StoreFrontFactory } from '../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+import { StoreFrontFactory } from '../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      //not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
 
       
-//not game specific package import { StoreFrontInterface } from '../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+import { StoreFrontInterface } from '../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
-//not game specific package import { StreetAddress } from '../org/allbinary/business/user/address/StreetAddress.js';
-      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+import { StreetAddress } from '../org/allbinary/business/user/address/StreetAddress.js';
+      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
-//not game specific package import { OrderData } from '../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-      const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+import { OrderData } from '../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
+      //not GWT import const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
 
       
-//not game specific package import { OrderHistoryData } from '../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
-      const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+import { OrderHistoryData } from '../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+      //not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
 
       
-//not game specific package import { OrderHistoryFactory } from '../org/allbinary/business/user/commerce/inventory/order/OrderHistoryFactory.js';
-      const OrderHistoryFactory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryFactory;
+import { OrderHistoryFactory } from '../org/allbinary/business/user/commerce/inventory/order/OrderHistoryFactory.js';
+      //not GWT import const OrderHistoryFactory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryFactory;
 
       
-//not game specific package import { OrderHistoryInterface } from '../org/allbinary/business/user/commerce/inventory/order/OrderHistoryInterface.js';
-      const OrderHistoryInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryInterface;
+import { OrderHistoryInterface } from '../org/allbinary/business/user/commerce/inventory/order/OrderHistoryInterface.js';
+      //not GWT import const OrderHistoryInterface = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryInterface;
 
       
-//not game specific package import { ShippingMethodData } from '../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
-      const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+import { ShippingMethodData } from '../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+      //not GWT import const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
 
       
-//not game specific package import { OrderHistoryEntityFactory } from '../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
-      const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
+import { OrderHistoryEntityFactory } from '../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+      //not GWT import const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
 
       
-//not game specific package import { OrderHistoryEntityInterface } from '../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
-      const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
+import { OrderHistoryEntityInterface } from '../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
+      //not GWT import const OrderHistoryEntityInterface = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityInterface;
 
       
-//not game specific package import { WeblisketSession } from '../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-      const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
+import { WeblisketSession } from '../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
+      //not GWT import const WeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSession;
 
       
-//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { swing } from '../../../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
-      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTreeNode.js';
+      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
 

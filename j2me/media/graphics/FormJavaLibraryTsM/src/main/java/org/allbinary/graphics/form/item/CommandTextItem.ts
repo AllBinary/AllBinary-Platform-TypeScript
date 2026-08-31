@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 

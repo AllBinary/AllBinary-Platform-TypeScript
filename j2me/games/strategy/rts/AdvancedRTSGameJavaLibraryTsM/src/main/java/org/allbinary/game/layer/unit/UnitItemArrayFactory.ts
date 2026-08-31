@@ -22,72 +22,72 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
-      const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
+import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
+      //not GWT import const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
 
       
-//not game specific package import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
-      const RTSGameStrings = globalThis.org.allbinary.game.layer.RTSGameStrings;
+import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
+      //not GWT import const RTSGameStrings = globalThis.org.allbinary.game.layer.RTSGameStrings;
 
       
-//not game specific package import { LayerInterfaceFactoryImageItem } from '../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js';
-      const LayerInterfaceFactoryImageItem = globalThis.org.allbinary.game.layer.item.LayerInterfaceFactoryImageItem;
+import { LayerInterfaceFactoryImageItem } from '../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js';
+      //not GWT import const LayerInterfaceFactoryImageItem = globalThis.org.allbinary.game.layer.item.LayerInterfaceFactoryImageItem;
 
       
-//not game specific package import { RTSLayerTextAnimation } from '../../../../../org/allbinary/game/layer/item/RTSLayerTextAnimation.js';
-      const RTSLayerTextAnimation = globalThis.org.allbinary.game.layer.item.RTSLayerTextAnimation;
+import { RTSLayerTextAnimation } from '../../../../../org/allbinary/game/layer/item/RTSLayerTextAnimation.js';
+      //not GWT import const RTSLayerTextAnimation = globalThis.org.allbinary.game.layer.item.RTSLayerTextAnimation;
 
       
-//not game specific package import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
-      const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
+import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
+      //not GWT import const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
 
       
-//not game specific package import { FlagGameResources } from '../../../../../org/allbinary/game/layer/waypoint/FlagGameResources.js';
-      const FlagGameResources = globalThis.org.allbinary.game.layer.waypoint.FlagGameResources;
+import { FlagGameResources } from '../../../../../org/allbinary/game/layer/waypoint/FlagGameResources.js';
+      //not GWT import const FlagGameResources = globalThis.org.allbinary.game.layer.waypoint.FlagGameResources;
 
       
-//not game specific package import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-      const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+      //not GWT import const ABCustomItem = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
 
       
-//not game specific package import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-      const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
+import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+      //not GWT import const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { CustomItemUtil } from '../../../../../org/allbinary/graphics/form/item/CustomItemUtil.js';
-      const CustomItemUtil = globalThis.org.allbinary.graphics.form.item.CustomItemUtil;
+import { CustomItemUtil } from '../../../../../org/allbinary/graphics/form/item/CustomItemUtil.js';
+      //not GWT import const CustomItemUtil = globalThis.org.allbinary.graphics.form.item.CustomItemUtil;
 
       
-//not game specific package import { ItemArraySingletonFactoryInterface } from '../../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js';
-      const ItemArraySingletonFactoryInterface = globalThis.org.allbinary.graphics.form.item.ItemArraySingletonFactoryInterface;
+import { ItemArraySingletonFactoryInterface } from '../../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js';
+      //not GWT import const ItemArraySingletonFactoryInterface = globalThis.org.allbinary.graphics.form.item.ItemArraySingletonFactoryInterface;
 
       
-//not game specific package import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
-      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
+      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not game specific package import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
-      const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
+import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
+      //not GWT import const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
 
       
 

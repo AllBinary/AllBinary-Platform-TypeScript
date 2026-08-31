@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { awt } from '../../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
-      const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
+      //not GWT import const ImageComparisonResult = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
 
       
-//not game specific package import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
-      const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+      //not GWT import const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
 
       
 

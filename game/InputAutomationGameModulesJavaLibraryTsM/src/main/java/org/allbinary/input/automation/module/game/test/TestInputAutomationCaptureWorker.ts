@@ -20,56 +20,56 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { AbstractInputAutomationWorker } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
-      const AbstractInputAutomationWorker = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationWorker;
+import { AbstractInputAutomationWorker } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
+      //not GWT import const AbstractInputAutomationWorker = globalThis.org.allbinary.input.automation.module.AbstractInputAutomationWorker;
 
       
-//not game specific package import { InputAutomationActionInterface } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
-      const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
+import { InputAutomationActionInterface } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
+      //not GWT import const InputAutomationActionInterface = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
 
       
-//not game specific package import { GenericProfileAction } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
-      const GenericProfileAction = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileAction;
+import { GenericProfileAction } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
+      //not GWT import const GenericProfileAction = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileAction;
 
       
-//not game specific package import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
-      const GenericProfileActions = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActions;
+import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
+      //not GWT import const GenericProfileActions = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActions;
 
       
-//not game specific package import { GenericProfileActionScript } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js';
-      const GenericProfileActionScript = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GenericProfileActionScript;
+import { GenericProfileActionScript } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js';
+      //not GWT import const GenericProfileActionScript = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GenericProfileActionScript;
 
       
-//not game specific package import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
-      const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
+      //not GWT import const CapturedBufferedImagesCacheSingleton = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { J2SECacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
-      const J2SECacheInterface = globalThis.org.allbinary.logic.util.cache.J2SECacheInterface;
+import { J2SECacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
+      //not GWT import const J2SECacheInterface = globalThis.org.allbinary.logic.util.cache.J2SECacheInterface;
 
       
-//not game specific package import { ImageComparatorConstraintsInterface } from '../../../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
-      const ImageComparatorConstraintsInterface = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
+import { ImageComparatorConstraintsInterface } from '../../../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
+      //not GWT import const ImageComparatorConstraintsInterface = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
 
       
-//not game specific package import { MotionRectangleConstraintsInterface } from '../../../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
-      const MotionRectangleConstraintsInterface = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
+import { MotionRectangleConstraintsInterface } from '../../../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
+      //not GWT import const MotionRectangleConstraintsInterface = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
 
       
 

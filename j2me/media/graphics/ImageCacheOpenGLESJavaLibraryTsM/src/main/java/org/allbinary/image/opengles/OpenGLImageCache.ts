@@ -22,52 +22,52 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
+      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not game specific package import { NullGL10 } from '../../../../org/allbinary/device/NullGL10.js';
-      const NullGL10 = globalThis.org.allbinary.device.NullGL10;
+import { NullGL10 } from '../../../../org/allbinary/device/NullGL10.js';
+      //not GWT import const NullGL10 = globalThis.org.allbinary.device.NullGL10;
 
       
-//not game specific package import { AllBinaryRendererBase3 } from '../../../../org/allbinary/graphics/opengles/renderer/AllBinaryRendererBase3.js';
-      const AllBinaryRendererBase3 = globalThis.org.allbinary.graphics.opengles.renderer.AllBinaryRendererBase3;
+import { AllBinaryRendererBase3 } from '../../../../org/allbinary/graphics/opengles/renderer/AllBinaryRendererBase3.js';
+      //not GWT import const AllBinaryRendererBase3 = globalThis.org.allbinary.graphics.opengles.renderer.AllBinaryRendererBase3;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-      const ImageCache = globalThis.org.allbinary.image.ImageCache;
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
+      //not GWT import const ImageCache = globalThis.org.allbinary.image.ImageCache;
 
       
-//not game specific package import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
-      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
+      //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
 
       
-//not game specific package import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-      const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
+      //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-//not game specific package import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
-      const SynchObject = globalThis.org.allbinary.thread.SynchObject;
+import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
+      //not GWT import const SynchObject = globalThis.org.allbinary.thread.SynchObject;
 
       
 

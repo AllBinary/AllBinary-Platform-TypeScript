@@ -22,36 +22,36 @@
         
             import { Integer } from '../java/lang/Integer.js';
         
-//not game specific package import { HashMap } from '../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-      const PageContext = globalThis.javax.servlet.jsp.PageContext;
+import { PageContext } from '../javax/servlet/jsp/PageContext.js';
+      //not GWT import const PageContext = globalThis.javax.servlet.jsp.PageContext;
 
       
-//not game specific package import { TagHelper } from '../admin/taghelpers/TagHelper.js';
-      const TagHelper = globalThis.admin.taghelpers.TagHelper;
+import { TagHelper } from '../admin/taghelpers/TagHelper.js';
+      //not GWT import const TagHelper = globalThis.admin.taghelpers.TagHelper;
 
       
-//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StoreTagWorkFlowFactory } from '../org/allbinary/logic/control/workflow/StoreTagWorkFlowFactory.js';
-      const StoreTagWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.StoreTagWorkFlowFactory;
+import { StoreTagWorkFlowFactory } from '../org/allbinary/logic/control/workflow/StoreTagWorkFlowFactory.js';
+      //not GWT import const StoreTagWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.StoreTagWorkFlowFactory;
 
       
-//not game specific package import { StoreWorkFlowInterface } from '../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
-      const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
+import { StoreWorkFlowInterface } from '../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
+      //not GWT import const StoreWorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.StoreWorkFlowInterface;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
 

@@ -20,27 +20,27 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-      const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
+      //not GWT import const CacheableInterface = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
       
-//not game specific package import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
-      const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
+import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
+      //not GWT import const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
 
       
-//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

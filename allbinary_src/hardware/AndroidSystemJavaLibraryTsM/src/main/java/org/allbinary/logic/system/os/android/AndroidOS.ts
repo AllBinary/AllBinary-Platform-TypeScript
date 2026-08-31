@@ -22,19 +22,19 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/AndroidInfoFactory.js';
-      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/AndroidInfoFactory.js';
+      //not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
 
       
-//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      //not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
 
       
-//not game specific package import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

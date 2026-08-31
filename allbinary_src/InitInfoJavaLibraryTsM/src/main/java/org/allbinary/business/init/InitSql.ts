@@ -24,87 +24,87 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Connection } from '../../../../java/sql/Connection.js';
-      const Connection = globalThis.java.sql.Connection;
+import { Connection } from '../../../../java/sql/Connection.js';
+      //not GWT import const Connection = globalThis.java.sql.Connection;
 
       
-//not game specific package import { DriverManager } from '../../../../java/sql/DriverManager.js';
-      const DriverManager = globalThis.java.sql.DriverManager;
+import { DriverManager } from '../../../../java/sql/DriverManager.js';
+      //not GWT import const DriverManager = globalThis.java.sql.DriverManager;
 
       
-//not game specific package import { ResultSet } from '../../../../java/sql/ResultSet.js';
-      const ResultSet = globalThis.java.sql.ResultSet;
+import { ResultSet } from '../../../../java/sql/ResultSet.js';
+      //not GWT import const ResultSet = globalThis.java.sql.ResultSet;
 
       
-//not game specific package import { ResultSetMetaData } from '../../../../java/sql/ResultSetMetaData.js';
-      const ResultSetMetaData = globalThis.java.sql.ResultSetMetaData;
+import { ResultSetMetaData } from '../../../../java/sql/ResultSetMetaData.js';
+      //not GWT import const ResultSetMetaData = globalThis.java.sql.ResultSetMetaData;
 
       
-//not game specific package import { SQLException } from '../../../../java/sql/SQLException.js';
-      const SQLException = globalThis.java.sql.SQLException;
+import { SQLException } from '../../../../java/sql/SQLException.js';
+      //not GWT import const SQLException = globalThis.java.sql.SQLException;
 
       
-//not game specific package import { Statement } from '../../../../java/sql/Statement.js';
-      const Statement = globalThis.java.sql.Statement;
+import { Statement } from '../../../../java/sql/Statement.js';
+      //not GWT import const Statement = globalThis.java.sql.Statement;
 
       
-//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { Vector } from '../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-      const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
+import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
+      //not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
 
       
-//not game specific package import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-      const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+      //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      //not GWT import const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
 
       
-//not game specific package import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      //not GWT import const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
 
       
-//not game specific package import { SqlStrings } from '../../../../org/allbinary/logic/communication/sql/SqlStrings.js';
-      const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+import { SqlStrings } from '../../../../org/allbinary/logic/communication/sql/SqlStrings.js';
+      //not GWT import const SqlStrings = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
       
-//not game specific package import { SqlTypeStrings } from '../../../../org/allbinary/logic/communication/sql/SqlTypeStrings.js';
-      const SqlTypeStrings = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
+import { SqlTypeStrings } from '../../../../org/allbinary/logic/communication/sql/SqlTypeStrings.js';
+      //not GWT import const SqlTypeStrings = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

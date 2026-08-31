@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { SpecialItemsHelperFactory } from '../../admin/taghelpers/SpecialItemsHelperFactory.js';
-      const SpecialItemsHelperFactory = globalThis.admin.taghelpers.SpecialItemsHelperFactory;
+import { SpecialItemsHelperFactory } from '../../admin/taghelpers/SpecialItemsHelperFactory.js';
+      //not GWT import const SpecialItemsHelperFactory = globalThis.admin.taghelpers.SpecialItemsHelperFactory;
 
       
-//not game specific package import { SpecialItemsRequestHelperFactory } from '../../admin/taghelpers/SpecialItemsRequestHelperFactory.js';
-      const SpecialItemsRequestHelperFactory = globalThis.admin.taghelpers.SpecialItemsRequestHelperFactory;
+import { SpecialItemsRequestHelperFactory } from '../../admin/taghelpers/SpecialItemsRequestHelperFactory.js';
+      //not GWT import const SpecialItemsRequestHelperFactory = globalThis.admin.taghelpers.SpecialItemsRequestHelperFactory;
 
       
 

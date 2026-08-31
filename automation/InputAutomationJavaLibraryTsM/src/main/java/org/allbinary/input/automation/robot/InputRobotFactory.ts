@@ -22,55 +22,55 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { awt } from '../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { Collection } from '../../../../../java/util/Collection.js';
-      const Collection = globalThis.java.util.Collection;
+import { Collection } from '../../../../../java/util/Collection.js';
+      //not GWT import const Collection = globalThis.java.util.Collection;
 
       
-//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { Iterator } from '../../../../../java/util/Iterator.js';
-      const Iterator = globalThis.java.util.Iterator;
+import { Iterator } from '../../../../../java/util/Iterator.js';
+      //not GWT import const Iterator = globalThis.java.util.Iterator;
 
       
-//not game specific package import { Set } from '../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      const HelpSet = globalThis.javax.help.HelpSet;
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
-//not game specific package import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
-      const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
+import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
+      //not GWT import const HelpSetEvent = globalThis.javax.help.event.HelpSetEvent;
 
       
-//not game specific package import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
-      const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
+import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
+      //not GWT import const HelpSetListener = globalThis.javax.help.event.HelpSetListener;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
-      const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
+import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
+      //not GWT import const JavaHelpSetNotifier = globalThis.org.allbinary.logic.java.help.JavaHelpSetNotifier;
 
       
-//not game specific package import { InterfaceUtil } from '../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
-      const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
+import { InterfaceUtil } from '../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
+      //not GWT import const InterfaceUtil = globalThis.org.allbinary.logic.java.anyType.InterfaceUtil;
 
       
-//not game specific package import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js';
-      const SecuredNativeLibraryInterface = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
+import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js';
+      //not GWT import const SecuredNativeLibraryInterface = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

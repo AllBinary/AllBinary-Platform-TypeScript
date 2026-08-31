@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/system/os/OperatingSystemInterface.js';
-      const OperatingSystemInterface = globalThis.org.allbinary.logic.system.os.OperatingSystemInterface;
+import { OperatingSystemInterface } from '../../../../../org/allbinary/logic/system/os/OperatingSystemInterface.js';
+      //not GWT import const OperatingSystemInterface = globalThis.org.allbinary.logic.system.os.OperatingSystemInterface;
 
       
 

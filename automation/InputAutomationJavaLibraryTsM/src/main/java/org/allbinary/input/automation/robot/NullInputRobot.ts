@@ -22,27 +22,27 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not game specific package import { awt } from '../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      const HelpSet = globalThis.javax.help.HelpSet;
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
-//not game specific package import { AbstractInputRobot } from '../../../../../org/allbinary/input/automation/AbstractInputRobot.js';
-      const AbstractInputRobot = globalThis.org.allbinary.input.automation.AbstractInputRobot;
+import { AbstractInputRobot } from '../../../../../org/allbinary/input/automation/AbstractInputRobot.js';
+      //not GWT import const AbstractInputRobot = globalThis.org.allbinary.input.automation.AbstractInputRobot;
 
       
-//not game specific package import { PointFactory } from '../../../../../org/allbinary/input/automation/PointFactory.js';
-      const PointFactory = globalThis.org.allbinary.input.automation.PointFactory;
+import { PointFactory } from '../../../../../org/allbinary/input/automation/PointFactory.js';
+      //not GWT import const PointFactory = globalThis.org.allbinary.input.automation.PointFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

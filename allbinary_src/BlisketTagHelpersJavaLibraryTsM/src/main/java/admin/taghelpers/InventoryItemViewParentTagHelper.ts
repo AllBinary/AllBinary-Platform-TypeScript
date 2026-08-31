@@ -22,32 +22,32 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
-      const RequestMapInterface = globalThis.org.allbinary.logic.communication.http.request.RequestMapInterface;
+import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
+      //not GWT import const RequestMapInterface = globalThis.org.allbinary.logic.communication.http.request.RequestMapInterface;
 
       
-//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { TransformInterface } from '../../org/allbinary/logic/visual/transform/TransformInterface.js';
-      const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
+import { TransformInterface } from '../../org/allbinary/logic/visual/transform/TransformInterface.js';
+      //not GWT import const TransformInterface = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
 
       
-//not game specific package import { ValidationViewHelper } from '../../taghelpers/ValidationViewHelper.js';
-      const ValidationViewHelper = globalThis.taghelpers.ValidationViewHelper;
+import { ValidationViewHelper } from '../../taghelpers/ValidationViewHelper.js';
+      //not GWT import const ValidationViewHelper = globalThis.taghelpers.ValidationViewHelper;
 
       
-//not game specific package import { HelperTag } from '../../tags/HelperTag.js';
-      const HelperTag = globalThis.tags.HelperTag;
+import { HelperTag } from '../../tags/HelperTag.js';
+      //not GWT import const HelperTag = globalThis.tags.HelperTag;
 
       
-//not game specific package import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
-      const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
+import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
+      //not GWT import const InventoryItemView = globalThis.views.admin.inventory.InventoryItemView;
 
       
-//not game specific package import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
-      const DownloadableInventoryItemView = globalThis.views.admin.inventory.download.DownloadableInventoryItemView;
+import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
+      //not GWT import const DownloadableInventoryItemView = globalThis.views.admin.inventory.download.DownloadableInventoryItemView;
 
       
 

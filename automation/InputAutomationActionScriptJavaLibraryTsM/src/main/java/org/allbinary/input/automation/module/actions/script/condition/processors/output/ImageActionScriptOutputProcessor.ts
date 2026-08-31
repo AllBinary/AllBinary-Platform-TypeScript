@@ -24,27 +24,27 @@
         
             import { Long } from '../../../../../../../../../../java/lang/Long.js';
         
-//not game specific package import { Vector } from '../../../../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { InputImageIOInterfaceFactory } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js';
-      const InputImageIOInterfaceFactory = globalThis.org.allbinary.input.media.image.InputImageIOInterfaceFactory;
+import { InputImageIOInterfaceFactory } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js';
+      //not GWT import const InputImageIOInterfaceFactory = globalThis.org.allbinary.input.media.image.InputImageIOInterfaceFactory;
 
       
-//not game specific package import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-      const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
+import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
+      //not GWT import const InputImageType = globalThis.org.allbinary.input.media.image.InputImageType;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-      const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
+import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
+      //not GWT import const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

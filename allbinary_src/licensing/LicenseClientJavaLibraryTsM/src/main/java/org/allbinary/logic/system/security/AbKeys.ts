@@ -22,20 +22,20 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { AbeLicenseInterfaceFactory } from '../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterfaceFactory.js';
-      const AbeLicenseInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterfaceFactory;
+import { AbeLicenseInterfaceFactory } from '../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterfaceFactory.js';
+      //not GWT import const AbeLicenseInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterfaceFactory;
 
       
-//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 

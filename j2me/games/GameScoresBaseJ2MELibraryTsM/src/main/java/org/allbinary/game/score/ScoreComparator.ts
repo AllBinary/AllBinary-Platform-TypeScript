@@ -24,31 +24,31 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-//not game specific package import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
-      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
-//not game specific package import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-      const DataInputStream = globalThis.java.io.DataInputStream;
+import { DataInputStream } from '../../../../java/io/DataInputStream.js';
+      //not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
 
       
-//not game specific package import { EOFException } from '../../../../java/io/EOFException.js';
-      const EOFException = globalThis.java.io.EOFException;
+import { EOFException } from '../../../../java/io/EOFException.js';
+      //not GWT import const EOFException = globalThis.java.io.EOFException;
 
       
-//not game specific package import { IOException } from '../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
-      const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
+import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
+      //not GWT import const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

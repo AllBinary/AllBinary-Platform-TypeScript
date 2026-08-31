@@ -22,47 +22,47 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { InputStream } from '../../../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { OutputStream } from '../../../../../../java/io/OutputStream.js';
-      const OutputStream = globalThis.java.io.OutputStream;
+import { OutputStream } from '../../../../../../java/io/OutputStream.js';
+      //not GWT import const OutputStream = globalThis.java.io.OutputStream;
 
       
-//not game specific package import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      //not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
 
       
-//not game specific package import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { FileStreamFactory } from '../../../../../../org/allbinary/logic/io/FileStreamFactory.js';
-      const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
+import { FileStreamFactory } from '../../../../../../org/allbinary/logic/io/FileStreamFactory.js';
+      //not GWT import const FileStreamFactory = globalThis.org.allbinary.logic.io.FileStreamFactory;
 
       
-//not game specific package import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
-      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
+      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
-//not game specific package import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
-      const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
+import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
+      //not GWT import const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
 
       
-//not game specific package import { SimpleFileUtil } from '../../../../../../org/allbinary/logic/io/file/SimpleFileUtil.js';
-      const SimpleFileUtil = globalThis.org.allbinary.logic.io.file.SimpleFileUtil;
+import { SimpleFileUtil } from '../../../../../../org/allbinary/logic/io/file/SimpleFileUtil.js';
+      //not GWT import const SimpleFileUtil = globalThis.org.allbinary.logic.io.file.SimpleFileUtil;
 
       
-//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

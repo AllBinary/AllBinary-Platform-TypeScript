@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { MESSAGES } from '../../../../org/allbinary/globals/MESSAGES.js';
-      const MESSAGES = globalThis.org.allbinary.globals.MESSAGES;
+import { MESSAGES } from '../../../../org/allbinary/globals/MESSAGES.js';
+      //not GWT import const MESSAGES = globalThis.org.allbinary.globals.MESSAGES;
 
       
-//not game specific package import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      //not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 

@@ -20,64 +20,64 @@
 
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { AndroidResources } from '../../../../../../org/allbinary/AndroidResources.js';
-      const AndroidResources = globalThis.org.allbinary.AndroidResources;
+import { AndroidResources } from '../../../../../../org/allbinary/AndroidResources.js';
+      //not GWT import const AndroidResources = globalThis.org.allbinary.AndroidResources;
 
       
-//not game specific package import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { Init } from '../../../../../../org/allbinary/init/Init.js';
-      const Init = globalThis.org.allbinary.init.Init;
+import { Init } from '../../../../../../org/allbinary/init/Init.js';
+      //not GWT import const Init = globalThis.org.allbinary.init.Init;
 
       
-//not game specific package import { CommonButtons } from '../../../../../../org/allbinary/input/motion/button/CommonButtons.js';
-      const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
+import { CommonButtons } from '../../../../../../org/allbinary/input/motion/button/CommonButtons.js';
+      //not GWT import const CommonButtons = globalThis.org.allbinary.input.motion.button.CommonButtons;
 
       
-//not game specific package import { TouchButtonBlankResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js';
-      const TouchButtonBlankResource = globalThis.org.allbinary.input.motion.button.TouchButtonBlankResource;
+import { TouchButtonBlankResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js';
+      //not GWT import const TouchButtonBlankResource = globalThis.org.allbinary.input.motion.button.TouchButtonBlankResource;
 
       
-//not game specific package import { TouchButtonDownResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonDownResource.js';
-      const TouchButtonDownResource = globalThis.org.allbinary.input.motion.button.TouchButtonDownResource;
+import { TouchButtonDownResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonDownResource.js';
+      //not GWT import const TouchButtonDownResource = globalThis.org.allbinary.input.motion.button.TouchButtonDownResource;
 
       
-//not game specific package import { TouchButtonGenericActionResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonGenericActionResource.js';
-      const TouchButtonGenericActionResource = globalThis.org.allbinary.input.motion.button.TouchButtonGenericActionResource;
+import { TouchButtonGenericActionResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonGenericActionResource.js';
+      //not GWT import const TouchButtonGenericActionResource = globalThis.org.allbinary.input.motion.button.TouchButtonGenericActionResource;
 
       
-//not game specific package import { TouchButtonResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
-      const TouchButtonResource = globalThis.org.allbinary.input.motion.button.TouchButtonResource;
+import { TouchButtonResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
+      //not GWT import const TouchButtonResource = globalThis.org.allbinary.input.motion.button.TouchButtonResource;
 
       
-//not game specific package import { TouchButtonStartResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStartResource.js';
-      const TouchButtonStartResource = globalThis.org.allbinary.input.motion.button.TouchButtonStartResource;
+import { TouchButtonStartResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStartResource.js';
+      //not GWT import const TouchButtonStartResource = globalThis.org.allbinary.input.motion.button.TouchButtonStartResource;
 
       
-//not game specific package import { TouchButtonStrafeLeftResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeLeftResource.js';
-      const TouchButtonStrafeLeftResource = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeLeftResource;
+import { TouchButtonStrafeLeftResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeLeftResource.js';
+      //not GWT import const TouchButtonStrafeLeftResource = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeLeftResource;
 
       
-//not game specific package import { TouchButtonStrafeRightResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeRightResource.js';
-      const TouchButtonStrafeRightResource = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeRightResource;
+import { TouchButtonStrafeRightResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeRightResource.js';
+      //not GWT import const TouchButtonStrafeRightResource = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeRightResource;
 
       
-//not game specific package import { TouchButtonTurnLeftResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonTurnLeftResource.js';
-      const TouchButtonTurnLeftResource = globalThis.org.allbinary.input.motion.button.TouchButtonTurnLeftResource;
+import { TouchButtonTurnLeftResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonTurnLeftResource.js';
+      //not GWT import const TouchButtonTurnLeftResource = globalThis.org.allbinary.input.motion.button.TouchButtonTurnLeftResource;
 
       
-//not game specific package import { TouchButtonTurnRightResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonTurnRightResource.js';
-      const TouchButtonTurnRightResource = globalThis.org.allbinary.input.motion.button.TouchButtonTurnRightResource;
+import { TouchButtonTurnRightResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonTurnRightResource.js';
+      //not GWT import const TouchButtonTurnRightResource = globalThis.org.allbinary.input.motion.button.TouchButtonTurnRightResource;
 
       
-//not game specific package import { TouchButtonUpResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonUpResource.js';
-      const TouchButtonUpResource = globalThis.org.allbinary.input.motion.button.TouchButtonUpResource;
+import { TouchButtonUpResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonUpResource.js';
+      //not GWT import const TouchButtonUpResource = globalThis.org.allbinary.input.motion.button.TouchButtonUpResource;
 
       
-//not game specific package import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-      const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
+import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
+      //not GWT import const OperatingSystemFactory = globalThis.org.allbinary.logic.system.os.OperatingSystemFactory;
 
       
 

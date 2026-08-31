@@ -22,35 +22,35 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { File } from '../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { FileFilter } from '../../../../../java/io/FileFilter.js';
-      const FileFilter = globalThis.java.io.FileFilter;
+import { FileFilter } from '../../../../../java/io/FileFilter.js';
+      //not GWT import const FileFilter = globalThis.java.io.FileFilter;
 
       
-//not game specific package import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
-      const FilenameFilter = globalThis.java.io.FilenameFilter;
+import { FilenameFilter } from '../../../../../java/io/FilenameFilter.js';
+      //not GWT import const FilenameFilter = globalThis.java.io.FilenameFilter;
 
       
-//not game specific package import { IOException } from '../../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { URI } from '../../../../../java/net/URI.js';
-      const URI = globalThis.java.net.URI;
+import { URI } from '../../../../../java/net/URI.js';
+      //not GWT import const URI = globalThis.java.net.URI;
 
       
-//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

@@ -20,12 +20,12 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-//not game specific package import { Image } from '../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-      const Resource = globalThis.org.eclipse.swt.graphics.Resource;
+import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
+      //not GWT import const Resource = globalThis.org.eclipse.swt.graphics.Resource;
 
       
 

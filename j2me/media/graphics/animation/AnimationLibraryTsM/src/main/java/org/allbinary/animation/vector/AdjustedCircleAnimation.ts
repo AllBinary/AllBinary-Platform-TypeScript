@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
+      //not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 

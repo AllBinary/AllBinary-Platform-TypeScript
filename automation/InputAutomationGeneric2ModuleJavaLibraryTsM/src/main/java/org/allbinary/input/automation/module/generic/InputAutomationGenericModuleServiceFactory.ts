@@ -20,15 +20,15 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      //not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
 
       
-//not game specific package import { InputAutomationModuleServiceFactory } from '../../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceFactory.js';
-      const InputAutomationModuleServiceFactory = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceFactory;
+import { InputAutomationModuleServiceFactory } from '../../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceFactory.js';
+      //not GWT import const InputAutomationModuleServiceFactory = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleServiceFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

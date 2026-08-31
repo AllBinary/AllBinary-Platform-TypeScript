@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { Control } from '../../../../javax/sound/sampled/Control.js';
-      const Control = globalThis.javax.sound.sampled.Control;
+import { Control } from '../../../../javax/sound/sampled/Control.js';
+      //not GWT import const Control = globalThis.javax.sound.sampled.Control;
 
       
 

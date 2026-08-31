@@ -20,64 +20,64 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
-      const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
+import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
+      //not GWT import const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
 
       
-//not game specific package import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
-      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
+      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
-//not game specific package import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-      const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+      //not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-      const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+      //not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
 
       
-//not game specific package import { DbWorkFlowFactory } from '../../../../../org/allbinary/logic/control/workflow/DbWorkFlowFactory.js';
-      const DbWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.DbWorkFlowFactory;
+import { DbWorkFlowFactory } from '../../../../../org/allbinary/logic/control/workflow/DbWorkFlowFactory.js';
+      //not GWT import const DbWorkFlowFactory = globalThis.org.allbinary.logic.control.workflow.DbWorkFlowFactory;
 
       
-//not game specific package import { WorkFlowData } from '../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
-      const WorkFlowData = globalThis.org.allbinary.logic.control.workflow.WorkFlowData;
+import { WorkFlowData } from '../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
+      //not GWT import const WorkFlowData = globalThis.org.allbinary.logic.control.workflow.WorkFlowData;
 
       
-//not game specific package import { WorkFlowInterface } from '../../../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
-      const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+import { WorkFlowInterface } from '../../../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
+      //not GWT import const WorkFlowInterface = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+import { ServiceClientInformationInterfaceFactory } from '../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
 

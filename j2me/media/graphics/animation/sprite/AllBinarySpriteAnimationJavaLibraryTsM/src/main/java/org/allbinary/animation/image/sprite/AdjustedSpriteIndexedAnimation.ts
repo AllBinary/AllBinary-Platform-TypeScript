@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
+      //not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
 
       
-//not game specific package import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
-      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
+      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
-      const BasicColorUtil = globalThis.org.allbinary.graphics.color.BasicColorUtil;
+import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
+      //not GWT import const BasicColorUtil = globalThis.org.allbinary.graphics.color.BasicColorUtil;
 
       
 

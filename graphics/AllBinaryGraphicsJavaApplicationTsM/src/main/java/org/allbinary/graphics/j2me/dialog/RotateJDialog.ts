@@ -24,23 +24,23 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not game specific package import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
+//not plain js import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
       const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
-      const HashMapJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.HashMapJDialogListenerInterface;
+import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
+      //not GWT import const HashMapJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.HashMapJDialogListenerInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

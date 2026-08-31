@@ -20,24 +20,24 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HealthInterface } from '../../../../../../../org/allbinary/game/health/HealthInterface.js';
-      const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
+import { HealthInterface } from '../../../../../../../org/allbinary/game/health/HealthInterface.js';
+      //not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
 
       
-//not game specific package import { HealthInterfaceCompositeInterface } from '../../../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js';
-      const HealthInterfaceCompositeInterface = globalThis.org.allbinary.game.health.HealthInterfaceCompositeInterface;
+import { HealthInterfaceCompositeInterface } from '../../../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js';
+      //not GWT import const HealthInterfaceCompositeInterface = globalThis.org.allbinary.game.health.HealthInterfaceCompositeInterface;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { AllBinaryLayerCircularPool } from '../../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-      const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
+import { AllBinaryLayerCircularPool } from '../../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
+      //not GWT import const AllBinaryLayerCircularPool = globalThis.org.allbinary.layer.AllBinaryLayerCircularPool;
 
       
-//not game specific package import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-      const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
+import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
+      //not GWT import const AllBinaryLayerFactoryInterface = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
 
       
 

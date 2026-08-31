@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { LayerInterfaceFactoryInterface } from '../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
-      const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
+import { LayerInterfaceFactoryInterface } from '../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
+      //not GWT import const LayerInterfaceFactoryInterface = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
 
       
 

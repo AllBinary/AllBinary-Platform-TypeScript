@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
-      const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
+import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
+      //not GWT import const UserRole = globalThis.org.allbinary.business.user.role.UserRole;
 
       
-//not game specific package import { UserRoleB } from '../../../../org/allbinary/business/user/role/UserRoleB.js';
-      const UserRoleB = globalThis.org.allbinary.business.user.role.UserRoleB;
+import { UserRoleB } from '../../../../org/allbinary/business/user/role/UserRoleB.js';
+      //not GWT import const UserRoleB = globalThis.org.allbinary.business.user.role.UserRoleB;
 
       
-//not game specific package import { UserRoleData } from '../../../../org/allbinary/business/user/role/UserRoleData.js';
-      const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
+import { UserRoleData } from '../../../../org/allbinary/business/user/role/UserRoleData.js';
+      //not GWT import const UserRoleData = globalThis.org.allbinary.business.user.role.UserRoleData;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 

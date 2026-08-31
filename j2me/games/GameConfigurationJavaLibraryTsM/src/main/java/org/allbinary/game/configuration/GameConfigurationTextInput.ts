@@ -20,15 +20,15 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-      const TextField = globalThis.javax.microedition.lcdui.TextField;
+import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+      //not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

@@ -20,8 +20,8 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-//not game specific package import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-      const Resource = globalThis.org.eclipse.swt.graphics.Resource;
+import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
+      //not GWT import const Resource = globalThis.org.eclipse.swt.graphics.Resource;
 
       
 

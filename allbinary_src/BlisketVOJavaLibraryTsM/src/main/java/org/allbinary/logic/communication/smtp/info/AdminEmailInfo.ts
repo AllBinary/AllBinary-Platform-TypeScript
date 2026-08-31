@@ -20,27 +20,27 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
-      const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
+      //not GWT import const ContextConfigurationInterface = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
 
       
-//not game specific package import { AdminConfiguration } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
-      const AdminConfiguration = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfiguration;
+import { AdminConfiguration } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
+      //not GWT import const AdminConfiguration = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfiguration;
 
       
-//not game specific package import { AdminConfigurationInterface } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
-      const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
+import { AdminConfigurationInterface } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
+      //not GWT import const AdminConfigurationInterface = globalThis.org.allbinary.business.user.modules.admin.configuration.AdminConfigurationInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
-      const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
+import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
+      //not GWT import const EmailServerConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

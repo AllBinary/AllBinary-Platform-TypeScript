@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
-      const LogHelperFactory = globalThis.admin.taghelpers.LogHelperFactory;
+import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
+      //not GWT import const LogHelperFactory = globalThis.admin.taghelpers.LogHelperFactory;
 
       
 

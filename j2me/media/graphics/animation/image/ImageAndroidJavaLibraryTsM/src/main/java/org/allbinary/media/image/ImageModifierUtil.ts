@@ -20,24 +20,24 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Paint } from '../../../../android/graphics/Paint.js';
-      const Paint = globalThis.android.graphics.Paint;
+import { Paint } from '../../../../android/graphics/Paint.js';
+      //not GWT import const Paint = globalThis.android.graphics.Paint;
 
       
-//not game specific package import { PorterDuff } from '../../../../android/graphics/PorterDuff.js';
-      const PorterDuff = globalThis.android.graphics.PorterDuff;
+import { PorterDuff } from '../../../../android/graphics/PorterDuff.js';
+      //not GWT import const PorterDuff = globalThis.android.graphics.PorterDuff;
 
       
-//not game specific package import { PorterDuffColorFilter } from '../../../../android/graphics/PorterDuffColorFilter.js';
-      const PorterDuffColorFilter = globalThis.android.graphics.PorterDuffColorFilter;
+import { PorterDuffColorFilter } from '../../../../android/graphics/PorterDuffColorFilter.js';
+      //not GWT import const PorterDuffColorFilter = globalThis.android.graphics.PorterDuffColorFilter;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 

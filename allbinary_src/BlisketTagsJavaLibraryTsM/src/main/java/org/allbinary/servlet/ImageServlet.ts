@@ -20,55 +20,55 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { IOException } from '../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { ServletException } from '../../../javax/servlet/ServletException.js';
-      const ServletException = globalThis.javax.servlet.ServletException;
+import { ServletException } from '../../../javax/servlet/ServletException.js';
+      //not GWT import const ServletException = globalThis.javax.servlet.ServletException;
 
       
-//not game specific package import { HttpServlet } from '../../../javax/servlet/http/HttpServlet.js';
-      const HttpServlet = globalThis.javax.servlet.http.HttpServlet;
+import { HttpServlet } from '../../../javax/servlet/http/HttpServlet.js';
+      //not GWT import const HttpServlet = globalThis.javax.servlet.http.HttpServlet;
 
       
-//not game specific package import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { HttpServletResponse } from '../../../javax/servlet/http/HttpServletResponse.js';
-      const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
+import { HttpServletResponse } from '../../../javax/servlet/http/HttpServletResponse.js';
+      //not GWT import const HttpServletResponse = globalThis.javax.servlet.http.HttpServletResponse;
 
       
-//not game specific package import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-      const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
+import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
+      //not GWT import const URLGLOBALS = globalThis.org.allbinary.globals.URLGLOBALS;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CloudStreamUtil } from '../../../org/allbinary/logic/io/CloudStreamUtil.js';
-      const CloudStreamUtil = globalThis.org.allbinary.logic.io.CloudStreamUtil;
+import { CloudStreamUtil } from '../../../org/allbinary/logic/io/CloudStreamUtil.js';
+      //not GWT import const CloudStreamUtil = globalThis.org.allbinary.logic.io.CloudStreamUtil;
 
       
-//not game specific package import { StreamUtil } from '../../../org/allbinary/logic/io/StreamUtil.js';
-      const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
+import { StreamUtil } from '../../../org/allbinary/logic/io/StreamUtil.js';
+      //not GWT import const StreamUtil = globalThis.org.allbinary.logic.io.StreamUtil;
 
       
-//not game specific package import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

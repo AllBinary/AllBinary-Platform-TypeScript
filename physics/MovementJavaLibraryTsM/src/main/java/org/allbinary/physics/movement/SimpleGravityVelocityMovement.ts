@@ -20,19 +20,19 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
-      const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
+      //not GWT import const AllBinaryGameLayer = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
 
       
-//not game specific package import { GravityUtil } from '../../../../org/allbinary/game/physics/acceleration/GravityUtil.js';
-      const GravityUtil = globalThis.org.allbinary.game.physics.acceleration.GravityUtil;
+import { GravityUtil } from '../../../../org/allbinary/game/physics/acceleration/GravityUtil.js';
+      //not GWT import const GravityUtil = globalThis.org.allbinary.game.physics.acceleration.GravityUtil;
 
       
-//not game specific package import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
-      const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
+import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
+      //not GWT import const VelocityProperties = globalThis.org.allbinary.game.physics.velocity.VelocityProperties;
 
       
-//not game specific package import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
+//not plain js import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
       const BasicDecimal = globalThis.org.allbinary.logic.math.BasicDecimal;
 
       

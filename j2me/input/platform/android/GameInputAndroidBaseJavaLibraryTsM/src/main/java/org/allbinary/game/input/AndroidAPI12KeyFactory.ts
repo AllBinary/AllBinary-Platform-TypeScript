@@ -4,11 +4,11 @@
 
 
 
-//not game specific package import { KeyEvent } from '../../../../android/view/KeyEvent.js';
-      const KeyEvent = globalThis.android.view.KeyEvent;
+import { KeyEvent } from '../../../../android/view/KeyEvent.js';
+      //not GWT import const KeyEvent = globalThis.android.view.KeyEvent;
 
       
-//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       

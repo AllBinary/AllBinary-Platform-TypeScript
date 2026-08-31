@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
 

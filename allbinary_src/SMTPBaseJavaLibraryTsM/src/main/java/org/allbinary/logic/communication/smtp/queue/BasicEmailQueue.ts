@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Transport } from '../../../../../../javax/mail/Transport.js';
-      const Transport = globalThis.javax.mail.Transport;
+import { Transport } from '../../../../../../javax/mail/Transport.js';
+      //not GWT import const Transport = globalThis.javax.mail.Transport;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
-      const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
+import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
+      //not GWT import const EmailInterface = globalThis.org.allbinary.logic.communication.smtp.EmailInterface;
 
       
-//not game specific package import { BasicQueue } from '../../../../../../org/allbinary/logic/util/queue/BasicQueue.js';
-      const BasicQueue = globalThis.org.allbinary.logic.util.queue.BasicQueue;
+import { BasicQueue } from '../../../../../../org/allbinary/logic/util/queue/BasicQueue.js';
+      //not GWT import const BasicQueue = globalThis.org.allbinary.logic.util.queue.BasicQueue;
 
       
 

@@ -20,20 +20,20 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      //not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
-//not game specific package import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
-      const AppletUtil = globalThis.org.allbinary.AppletUtil;
+import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
+      //not GWT import const AppletUtil = globalThis.org.allbinary.AppletUtil;
 
       
-//not game specific package import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
-      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+      //not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
 
       
-//not game specific package import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-      const Processor = globalThis.org.allbinary.canvas.Processor;
+import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
 

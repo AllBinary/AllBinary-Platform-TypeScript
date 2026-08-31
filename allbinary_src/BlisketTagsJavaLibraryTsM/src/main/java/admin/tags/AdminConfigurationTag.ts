@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { AdminConfigurationHelperFactory } from '../../admin/taghelpers/AdminConfigurationHelperFactory.js';
-      const AdminConfigurationHelperFactory = globalThis.admin.taghelpers.AdminConfigurationHelperFactory;
+import { AdminConfigurationHelperFactory } from '../../admin/taghelpers/AdminConfigurationHelperFactory.js';
+      //not GWT import const AdminConfigurationHelperFactory = globalThis.admin.taghelpers.AdminConfigurationHelperFactory;
 
       
-//not game specific package import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js';
-      const AdminConfigurationRequestHelperFactory = globalThis.admin.taghelpers.AdminConfigurationRequestHelperFactory;
+import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js';
+      //not GWT import const AdminConfigurationRequestHelperFactory = globalThis.admin.taghelpers.AdminConfigurationRequestHelperFactory;
 
       
 

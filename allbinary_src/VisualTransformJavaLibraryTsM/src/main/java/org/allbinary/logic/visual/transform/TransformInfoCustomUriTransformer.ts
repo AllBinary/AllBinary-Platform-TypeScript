@@ -20,32 +20,32 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      //not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
 
       
-//not game specific package import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
-      const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
+      //not GWT import const BasicUriResolver = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
 
       
-//not game specific package import { CustomUriResolver } from '../../../../../org/allbinary/data/tree/dom/CustomUriResolver.js';
-      const CustomUriResolver = globalThis.org.allbinary.data.tree.dom.CustomUriResolver;
+import { CustomUriResolver } from '../../../../../org/allbinary/data/tree/dom/CustomUriResolver.js';
+      //not GWT import const CustomUriResolver = globalThis.org.allbinary.data.tree.dom.CustomUriResolver;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
-      const TransformInfoObjectConfigAndManipulatorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactory;
+import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
+      //not GWT import const TransformInfoObjectConfigAndManipulatorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactory;
 
       
-//not game specific package import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
-      const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
+import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
+      //not GWT import const TransformInfoObjectConfigInterface = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
 
       
 

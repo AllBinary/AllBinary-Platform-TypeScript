@@ -24,63 +24,63 @@
         
             import { System } from '../../../../java/lang/System.js';
         
-//not game specific package import { BufferedInputStream } from '../../../../java/io/BufferedInputStream.js';
-      const BufferedInputStream = globalThis.java.io.BufferedInputStream;
+import { BufferedInputStream } from '../../../../java/io/BufferedInputStream.js';
+      //not GWT import const BufferedInputStream = globalThis.java.io.BufferedInputStream;
 
       
-//not game specific package import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
-      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
-//not game specific package import { IOException } from '../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { Manager } from '../../../../javax/microedition/media/Manager.js';
-      const Manager = globalThis.javax.microedition.media.Manager;
+import { Manager } from '../../../../javax/microedition/media/Manager.js';
+      //not GWT import const Manager = globalThis.javax.microedition.media.Manager;
 
       
-//not game specific package import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      const MediaException = globalThis.javax.microedition.media.MediaException;
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      //not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not game specific package import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      //not GWT import const Player = globalThis.javax.microedition.media.Player;
 
       
-//not game specific package import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/AudioContentTypeDataFactory.js';
-      const AudioContentTypeDataFactory = globalThis.org.allbinary.audio.AudioContentTypeDataFactory;
+import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/AudioContentTypeDataFactory.js';
+      //not GWT import const AudioContentTypeDataFactory = globalThis.org.allbinary.audio.AudioContentTypeDataFactory;
 
       
-//not game specific package import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-      const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
+import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
+      //not GWT import const GameFeatureFactory = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
       
-//not game specific package import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+      //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
-//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

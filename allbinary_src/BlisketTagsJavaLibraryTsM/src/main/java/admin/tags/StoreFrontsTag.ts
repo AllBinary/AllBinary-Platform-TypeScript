@@ -20,40 +20,40 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { Method } from '../../java/lang/reflect/Method.js';
-      const Method = globalThis.java.lang.reflect.Method;
+import { Method } from '../../java/lang/reflect/Method.js';
+      //not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
-//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
-      const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
+import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
+      //not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
 
       
-//not game specific package import { StoreFrontsHelperFactory } from '../../admin/taghelpers/StoreFrontsHelperFactory.js';
-      const StoreFrontsHelperFactory = globalThis.admin.taghelpers.StoreFrontsHelperFactory;
+import { StoreFrontsHelperFactory } from '../../admin/taghelpers/StoreFrontsHelperFactory.js';
+      //not GWT import const StoreFrontsHelperFactory = globalThis.admin.taghelpers.StoreFrontsHelperFactory;
 
       
-//not game specific package import { StoreFrontsRequestHelperFactory } from '../../admin/taghelpers/StoreFrontsRequestHelperFactory.js';
-      const StoreFrontsRequestHelperFactory = globalThis.admin.taghelpers.StoreFrontsRequestHelperFactory;
+import { StoreFrontsRequestHelperFactory } from '../../admin/taghelpers/StoreFrontsRequestHelperFactory.js';
+      //not GWT import const StoreFrontsRequestHelperFactory = globalThis.admin.taghelpers.StoreFrontsRequestHelperFactory;
 
       
-//not game specific package import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 

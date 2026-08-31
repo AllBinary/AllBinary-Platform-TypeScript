@@ -20,23 +20,23 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { BoundsVisitorInterface } from '../../../../../org/allbinary/bounds/BoundsVisitorInterface.js';
-      const BoundsVisitorInterface = globalThis.org.allbinary.bounds.BoundsVisitorInterface;
+import { BoundsVisitorInterface } from '../../../../../org/allbinary/bounds/BoundsVisitorInterface.js';
+      //not GWT import const BoundsVisitorInterface = globalThis.org.allbinary.bounds.BoundsVisitorInterface;
 
       
-//not game specific package import { VelocityInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
-      const VelocityInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterface;
+import { VelocityInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
+      //not GWT import const VelocityInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterface;
 
       
-//not game specific package import { VelocityInterfaceCompositeInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-      const VelocityInterfaceCompositeInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterfaceCompositeInterface;
+import { VelocityInterfaceCompositeInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
+      //not GWT import const VelocityInterfaceCompositeInterface = globalThis.org.allbinary.game.physics.velocity.VelocityInterfaceCompositeInterface;
 
       
-//not game specific package import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
-      const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
+import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
+      //not GWT import const LayerInterface = globalThis.org.allbinary.layer.LayerInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

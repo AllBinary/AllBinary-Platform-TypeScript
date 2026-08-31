@@ -6,12 +6,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { awt } from '../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 

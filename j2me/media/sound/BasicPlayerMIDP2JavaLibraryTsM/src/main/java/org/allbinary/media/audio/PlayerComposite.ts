@@ -24,64 +24,64 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { Control } from '../../../../javax/microedition/media/Control.js';
-      const Control = globalThis.javax.microedition.media.Control;
+import { Control } from '../../../../javax/microedition/media/Control.js';
+      //not GWT import const Control = globalThis.javax.microedition.media.Control;
 
       
-//not game specific package import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
-      const Controllable = globalThis.javax.microedition.media.Controllable;
+import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
+      //not GWT import const Controllable = globalThis.javax.microedition.media.Controllable;
 
       
-//not game specific package import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      const MediaException = globalThis.javax.microedition.media.MediaException;
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      //not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not game specific package import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      //not GWT import const Player = globalThis.javax.microedition.media.Player;
 
       
-//not game specific package import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      //not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-//not game specific package import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-      const TimeBase = globalThis.javax.microedition.media.TimeBase;
+import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
+      //not GWT import const TimeBase = globalThis.javax.microedition.media.TimeBase;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-      const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
+import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
+      //not GWT import const GameTickTimeDelayHelper = globalThis.org.allbinary.time.GameTickTimeDelayHelper;
 
       
-//not game specific package import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-      const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
+import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
+      //not GWT import const GameTickTimeDelayHelperFactory = globalThis.org.allbinary.time.GameTickTimeDelayHelperFactory;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not game specific package import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
-      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

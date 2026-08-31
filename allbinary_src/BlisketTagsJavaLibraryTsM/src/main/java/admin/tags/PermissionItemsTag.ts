@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { PermissionItemsHelperFactory } from '../../admin/taghelpers/PermissionItemsHelperFactory.js';
-      const PermissionItemsHelperFactory = globalThis.admin.taghelpers.PermissionItemsHelperFactory;
+import { PermissionItemsHelperFactory } from '../../admin/taghelpers/PermissionItemsHelperFactory.js';
+      //not GWT import const PermissionItemsHelperFactory = globalThis.admin.taghelpers.PermissionItemsHelperFactory;
 
       
-//not game specific package import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/PermissionItemsRequestHelperFactory.js';
-      const PermissionItemsRequestHelperFactory = globalThis.admin.taghelpers.PermissionItemsRequestHelperFactory;
+import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/PermissionItemsRequestHelperFactory.js';
+      //not GWT import const PermissionItemsRequestHelperFactory = globalThis.admin.taghelpers.PermissionItemsRequestHelperFactory;
 
       
 

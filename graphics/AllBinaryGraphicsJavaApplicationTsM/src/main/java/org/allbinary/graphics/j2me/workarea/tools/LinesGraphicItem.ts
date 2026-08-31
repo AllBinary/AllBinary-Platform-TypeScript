@@ -28,80 +28,80 @@
         
             import { Double } from '../../../../../../java/lang/Double.js';
         
-//not game specific package import { awt } from '../../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-      const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
+import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
+      //not GWT import const DefaultMutableTreeNode = globalThis.javax.swing.tree.DefaultMutableTreeNode;
 
       
-//not game specific package import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-      const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
+import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
+      //not GWT import const MutableTreeNode = globalThis.javax.swing.tree.MutableTreeNode;
 
       
-//not game specific package import { DomHelper } from '../../../../../../org/allbinary/dom/DomHelper.js';
-      const DomHelper = globalThis.org.allbinary.dom.DomHelper;
+import { DomHelper } from '../../../../../../org/allbinary/dom/DomHelper.js';
+      //not GWT import const DomHelper = globalThis.org.allbinary.dom.DomHelper;
 
       
-//not game specific package import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
-      const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
+import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
+      //not GWT import const GameInputStrings = globalThis.org.allbinary.game.input.GameInputStrings;
 
       
-//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
-      const StatusFactory = globalThis.org.allbinary.graphics.j2me.StatusFactory;
+import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
+      //not GWT import const StatusFactory = globalThis.org.allbinary.graphics.j2me.StatusFactory;
 
       
-//not game specific package import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
-      const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
+import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
+      //not GWT import const CanvasDom = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
 
       
-//not game specific package import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
-      const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
+import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
+      //not GWT import const IntegerDimension = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
 
       
-//not game specific package import { BasicGraphicsPipeline } from '../../../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
-      const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
+import { BasicGraphicsPipeline } from '../../../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
+      //not GWT import const BasicGraphicsPipeline = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
+//not plain js import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
       const PositionStrings = globalThis.org.allbinary.math.PositionStrings;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-      const NodeList = globalThis.org.w3c.dom.NodeList;
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 

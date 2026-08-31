@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
-      const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
+import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
+      //not GWT import const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
 
       
-//not game specific package import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-      const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+      //not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
 
       
-//not game specific package import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
-      const NoAllBinarySensor = globalThis.org.allbinary.input.NoAllBinarySensor;
+import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
+      //not GWT import const NoAllBinarySensor = globalThis.org.allbinary.input.NoAllBinarySensor;
 
       
-//not game specific package import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
-      const AccelerometerSensorFactory = globalThis.org.allbinary.input.accelerometer.AccelerometerSensorFactory;
+import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
+      //not GWT import const AccelerometerSensorFactory = globalThis.org.allbinary.input.accelerometer.AccelerometerSensorFactory;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

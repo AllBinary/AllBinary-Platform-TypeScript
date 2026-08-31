@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { File } from '../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { FileFilter } from '../../../../../javax/swing/filechooser/FileFilter.js';
-      const FileFilter = globalThis.javax.swing.filechooser.FileFilter;
+import { FileFilter } from '../../../../../javax/swing/filechooser/FileFilter.js';
+      //not GWT import const FileFilter = globalThis.javax.swing.filechooser.FileFilter;
 
       
 

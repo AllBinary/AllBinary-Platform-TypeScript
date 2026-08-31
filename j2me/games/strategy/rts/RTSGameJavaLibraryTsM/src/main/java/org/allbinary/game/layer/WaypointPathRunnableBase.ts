@@ -26,20 +26,20 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
-      const LayerDistanceUtil = globalThis.org.allbinary.math.LayerDistanceUtil;
+import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
+      //not GWT import const LayerDistanceUtil = globalThis.org.allbinary.math.LayerDistanceUtil;
 
       
-//not game specific package import { PriorityRunnable } from '../../../../org/allbinary/thread/PriorityRunnable.js';
-      const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
+import { PriorityRunnable } from '../../../../org/allbinary/thread/PriorityRunnable.js';
+      //not GWT import const PriorityRunnable = globalThis.org.allbinary.thread.PriorityRunnable;
 
       
-//not game specific package import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
-      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
+      //not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
       
 

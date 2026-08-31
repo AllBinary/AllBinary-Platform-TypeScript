@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
+      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not game specific package import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
-      const SingletonAnimationInterfaceFactory = globalThis.org.allbinary.animation.SingletonAnimationInterfaceFactory;
+import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
+      //not GWT import const SingletonAnimationInterfaceFactory = globalThis.org.allbinary.animation.SingletonAnimationInterfaceFactory;
 
       
-//not game specific package import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
-      const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
+import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
+      //not GWT import const AnimationFrameToImageUtil = globalThis.org.allbinary.image.AnimationFrameToImageUtil;
 
       
 

@@ -18,11 +18,11 @@
 
 
 
-//not game specific package import { BasicGameResources } from '../../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
-      const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
+import { BasicGameResources } from '../../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
+      //not GWT import const BasicGameResources = globalThis.org.allbinary.game.layer.resources.BasicGameResources;
 
       
-//not game specific package import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       

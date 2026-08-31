@@ -22,11 +22,11 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
-      const Layer = globalThis.org.allbinary.layer.Layer;
+import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
+      //not GWT import const Layer = globalThis.org.allbinary.layer.Layer;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

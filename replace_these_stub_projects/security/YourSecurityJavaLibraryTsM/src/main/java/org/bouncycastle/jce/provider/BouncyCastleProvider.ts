@@ -4,8 +4,8 @@
 
 
 
-//not game specific package import { Provider } from '../../../../java/security/Provider.js';
-      const Provider = globalThis.java.security.Provider;
+import { Provider } from '../../../../java/security/Provider.js';
+      //not GWT import const Provider = globalThis.java.security.Provider;
 
       
 

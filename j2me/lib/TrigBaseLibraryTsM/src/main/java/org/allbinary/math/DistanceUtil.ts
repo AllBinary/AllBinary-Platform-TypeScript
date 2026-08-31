@@ -20,7 +20,7 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
+//not plain js import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
       const MathUtil = globalThis.org.allbinary.logic.math.MathUtil;
 
       

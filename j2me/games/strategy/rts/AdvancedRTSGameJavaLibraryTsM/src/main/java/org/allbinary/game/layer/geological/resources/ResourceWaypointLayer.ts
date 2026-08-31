@@ -20,36 +20,36 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { SelectionHudPaintable } from '../../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
-      const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+import { SelectionHudPaintable } from '../../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
+      //not GWT import const SelectionHudPaintable = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
       
-//not game specific package import { WaypointLayer } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
-      const WaypointLayer = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
+import { WaypointLayer } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
+      //not GWT import const WaypointLayer = globalThis.org.allbinary.game.layer.waypoint.WaypointLayer;
 
       
-//not game specific package import { AnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-      const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+import { AnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
+      //not GWT import const AnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
       
-//not game specific package import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
-      const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
+      //not GWT import const ProceduralAnimationInterfaceFactoryInterface = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
       
-//not game specific package import { Group } from '../../../../../../org/allbinary/game/identification/Group.js';
-      const Group = globalThis.org.allbinary.game.identification.Group;
+import { Group } from '../../../../../../org/allbinary/game/identification/Group.js';
+      //not GWT import const Group = globalThis.org.allbinary.game.identification.Group;
 
       
-//not game specific package import { PathFindingLayerInterface } from '../../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-      const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+import { PathFindingLayerInterface } from '../../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
+      //not GWT import const PathFindingLayerInterface = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
       
-//not game specific package import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-      const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
+import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
+      //not GWT import const RemoteInfo = globalThis.org.allbinary.game.multiplayer.layer.RemoteInfo;
 
       
 

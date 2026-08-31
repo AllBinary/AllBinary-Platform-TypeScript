@@ -22,11 +22,11 @@
         
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
+//not plain js import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
       const LogFormatUtil = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
       

@@ -22,39 +22,39 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Enumeration } from '../../../../java/util/Enumeration.js';
-      const Enumeration = globalThis.java.util.Enumeration;
+import { Enumeration } from '../../../../java/util/Enumeration.js';
+      //not GWT import const Enumeration = globalThis.java.util.Enumeration;
 
       
-//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInterfaceFactory.js';
-      const LayerInterfaceFactory = globalThis.org.allbinary.layer.LayerInterfaceFactory;
+import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInterfaceFactory.js';
+      //not GWT import const LayerInterfaceFactory = globalThis.org.allbinary.layer.LayerInterfaceFactory;
 
       
-//not game specific package import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
-      const LayerInterfaceVisitor = globalThis.org.allbinary.layer.LayerInterfaceVisitor;
+import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
+      //not GWT import const LayerInterfaceVisitor = globalThis.org.allbinary.layer.LayerInterfaceVisitor;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
+//not plain js import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
       const EnumerationUtil = globalThis.org.allbinary.util.EnumerationUtil;
 
       

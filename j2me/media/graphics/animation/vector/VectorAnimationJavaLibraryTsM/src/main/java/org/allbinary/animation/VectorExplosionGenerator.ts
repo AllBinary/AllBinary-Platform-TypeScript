@@ -22,31 +22,31 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { RandomRotationFactory } from '../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
-      const RandomRotationFactory = globalThis.org.allbinary.graphics.pipeline.RandomRotationFactory;
+import { RandomRotationFactory } from '../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
+      //not GWT import const RandomRotationFactory = globalThis.org.allbinary.graphics.pipeline.RandomRotationFactory;
 
       
-//not game specific package import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/RandomTranslation.js';
-      const RandomTranslation = globalThis.org.allbinary.graphics.pipeline.RandomTranslation;
+import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/RandomTranslation.js';
+      //not GWT import const RandomTranslation = globalThis.org.allbinary.graphics.pipeline.RandomTranslation;
 
       
-//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
+//not plain js import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
       const BasicArrayListS = globalThis.org.allbinary.util.BasicArrayListS;
 
       

@@ -22,20 +22,20 @@
         
             import { Math } from '../../../java/lang/Math.js';
         
-//not game specific package import { Buffer } from '../../../java/nio/Buffer.js';
-      const Buffer = globalThis.java.nio.Buffer;
+import { Buffer } from '../../../java/nio/Buffer.js';
+      //not GWT import const Buffer = globalThis.java.nio.Buffer;
 
       
-//not game specific package import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
-      const ByteBuffer = globalThis.java.nio.ByteBuffer;
+import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
+      //not GWT import const ByteBuffer = globalThis.java.nio.ByteBuffer;
 
       
-//not game specific package import { ByteOrder } from '../../../java/nio/ByteOrder.js';
-      const ByteOrder = globalThis.java.nio.ByteOrder;
+import { ByteOrder } from '../../../java/nio/ByteOrder.js';
+      //not GWT import const ByteOrder = globalThis.java.nio.ByteOrder;
 
       
-//not game specific package import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
-      const FloatBuffer = globalThis.java.nio.FloatBuffer;
+import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
+      //not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
 
       
 

@@ -22,27 +22,27 @@
         
             import { Runnable } from '../../../../../../java/lang/Runnable.js';
         
-//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';
-      const NullProgressActivity = globalThis.org.allbinary.android.activity.NullProgressActivity;
+import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';
+      //not GWT import const NullProgressActivity = globalThis.org.allbinary.android.activity.NullProgressActivity;
 
       
-//not game specific package import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
-      const ProgressActivityInterface = globalThis.org.allbinary.android.activity.ProgressActivityInterface;
+import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
+      //not GWT import const ProgressActivityInterface = globalThis.org.allbinary.android.activity.ProgressActivityInterface;
 
       
-//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

@@ -4,8 +4,8 @@
 
 
 
-//not game specific package import { Dictionary } from '../../../java/util/Dictionary.js';
-      const Dictionary = globalThis.java.util.Dictionary;
+import { Dictionary } from '../../../java/util/Dictionary.js';
+      //not GWT import const Dictionary = globalThis.java.util.Dictionary;
 
       
 

@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
-      const StreamResult = globalThis.javax.xml.transform.stream.StreamResult;
+import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
+      //not GWT import const StreamResult = globalThis.javax.xml.transform.stream.StreamResult;
 
       
-//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
-//not game specific package import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
 

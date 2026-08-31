@@ -20,20 +20,20 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
-      const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
+import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
+      //not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
 
       
-//not game specific package import { NullABRunnable } from '../../../../org/allbinary/thread/NullABRunnable.js';
-      const NullABRunnable = globalThis.org.allbinary.thread.NullABRunnable;
+import { NullABRunnable } from '../../../../org/allbinary/thread/NullABRunnable.js';
+      //not GWT import const NullABRunnable = globalThis.org.allbinary.thread.NullABRunnable;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
 

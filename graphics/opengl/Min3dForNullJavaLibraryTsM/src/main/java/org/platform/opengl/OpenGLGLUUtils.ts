@@ -8,20 +8,20 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-//not game specific package import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
-      const ByteBuffer = globalThis.java.nio.ByteBuffer;
+import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
+      //not GWT import const ByteBuffer = globalThis.java.nio.ByteBuffer;
 
       
-//not game specific package import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
-      const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
+import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
+      //not GWT import const OpenGLBitmap = globalThis.org.allbinary.graphics.OpenGLBitmap;
 
       
-//not game specific package import { OpenGLESImage } from '../../../org/allbinary/image/opengles/OpenGLESImage.js';
-      const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+import { OpenGLESImage } from '../../../org/allbinary/image/opengles/OpenGLESImage.js';
+      //not GWT import const OpenGLESImage = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
       
 

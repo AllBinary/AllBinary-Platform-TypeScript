@@ -18,15 +18,15 @@
 
 
 
-//not game specific package import { EventObject } from '../../../../../../java/util/EventObject.js';
-      const EventObject = globalThis.java.util.EventObject;
+import { EventObject } from '../../../../../../java/util/EventObject.js';
+      //not GWT import const EventObject = globalThis.java.util.EventObject;
 
       
-//not game specific package import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-      const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
+import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
+      //not GWT import const EmailInfo = globalThis.org.allbinary.logic.communication.smtp.info.EmailInfo;
 
       
-//not game specific package import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

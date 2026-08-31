@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
-      const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
+import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
+      //not GWT import const MimeMessage = globalThis.javax.mail.internet.MimeMessage;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
-      const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
+import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
+      //not GWT import const DomDocumentMappingInterface = globalThis.org.allbinary.data.tree.dom.document.mapping.DomDocumentMappingInterface;
 
       
 

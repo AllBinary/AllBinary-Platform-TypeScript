@@ -18,11 +18,11 @@
 
 
 
-//not game specific package import { TagSupport } from '../javax/servlet/jsp/tagext/TagSupport.js';
-      const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
+import { TagSupport } from '../javax/servlet/jsp/tagext/TagSupport.js';
+      //not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
 
       
-//not game specific package import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

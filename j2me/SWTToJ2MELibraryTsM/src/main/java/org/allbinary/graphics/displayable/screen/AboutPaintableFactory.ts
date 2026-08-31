@@ -20,19 +20,19 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { AboutPaintable } from '../../../../../org/allbinary/game/paint/AboutPaintable.js';
-      const AboutPaintable = globalThis.org.allbinary.game.paint.AboutPaintable;
+import { AboutPaintable } from '../../../../../org/allbinary/game/paint/AboutPaintable.js';
+      //not GWT import const AboutPaintable = globalThis.org.allbinary.game.paint.AboutPaintable;
 
       
-//not game specific package import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-      const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
+import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
+      //not GWT import const NullPaintable = globalThis.org.allbinary.graphics.paint.NullPaintable;
 
       
-//not game specific package import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
+      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

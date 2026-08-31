@@ -22,11 +22,11 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-//not game specific package import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       

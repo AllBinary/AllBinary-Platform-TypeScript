@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
-      const CanvasJPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
+import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
+      //not GWT import const CanvasJPanel = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
 
       
 

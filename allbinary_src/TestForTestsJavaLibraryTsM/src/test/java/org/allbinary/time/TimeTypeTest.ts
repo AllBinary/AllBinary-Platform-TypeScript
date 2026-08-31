@@ -6,20 +6,20 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { Calendar } from '../../../java/util/Calendar.js';
-      const Calendar = globalThis.java.util.Calendar;
+import { Calendar } from '../../../java/util/Calendar.js';
+      //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-//not game specific package import { Assertions } from '../../../org/junit/jupiter/api/Assertions.js';
-      const Assertions = globalThis.org.junit.jupiter.api.Assertions;
+import { Assertions } from '../../../org/junit/jupiter/api/Assertions.js';
+      //not GWT import const Assertions = globalThis.org.junit.jupiter.api.Assertions;
 
       
-//not game specific package import { DisplayName } from '../../../org/junit/jupiter/api/DisplayName.js';
-      const DisplayName = globalThis.org.junit.jupiter.api.DisplayName;
+import { DisplayName } from '../../../org/junit/jupiter/api/DisplayName.js';
+      //not GWT import const DisplayName = globalThis.org.junit.jupiter.api.DisplayName;
 
       
-//not game specific package import { Test } from '../../../org/junit/jupiter/api/Test.js';
-      const Test = globalThis.org.junit.jupiter.api.Test;
+import { Test } from '../../../org/junit/jupiter/api/Test.js';
+      //not GWT import const Test = globalThis.org.junit.jupiter.api.Test;
 
       
 

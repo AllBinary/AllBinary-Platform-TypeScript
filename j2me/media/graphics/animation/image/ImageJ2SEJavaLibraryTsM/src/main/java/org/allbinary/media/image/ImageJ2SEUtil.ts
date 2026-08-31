@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Color } from '../../../../java/awt/Color.js';
-      const Color = globalThis.java.awt.Color;
+import { Color } from '../../../../java/awt/Color.js';
+      //not GWT import const Color = globalThis.java.awt.Color;
 
       
 

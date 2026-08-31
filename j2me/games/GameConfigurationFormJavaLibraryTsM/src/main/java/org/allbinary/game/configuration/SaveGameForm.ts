@@ -24,24 +24,24 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-//not game specific package import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-//not game specific package import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-      const TextField = globalThis.javax.microedition.lcdui.TextField;
+import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+      //not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
-//not game specific package import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-      const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
+import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+      //not GWT import const GameCommandsFactory = globalThis.org.allbinary.game.commands.GameCommandsFactory;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-      const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
+import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+      //not GWT import const CommandForm = globalThis.org.allbinary.graphics.displayable.screen.CommandForm;
 
       
 

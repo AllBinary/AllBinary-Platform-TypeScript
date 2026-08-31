@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { InputAutomationConfigurationFactory } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
-      const InputAutomationConfigurationFactory = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationFactory;
+import { InputAutomationConfigurationFactory } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
+      //not GWT import const InputAutomationConfigurationFactory = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationFactory;
 
       
 

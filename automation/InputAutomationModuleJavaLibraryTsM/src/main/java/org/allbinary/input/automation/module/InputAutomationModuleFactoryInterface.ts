@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      const HelpSet = globalThis.javax.help.HelpSet;
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
-//not game specific package import { swing } from '../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
-      const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
+import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
+      //not GWT import const RunnableInterface = globalThis.org.allbinary.thread.RunnableInterface;
 
       
 

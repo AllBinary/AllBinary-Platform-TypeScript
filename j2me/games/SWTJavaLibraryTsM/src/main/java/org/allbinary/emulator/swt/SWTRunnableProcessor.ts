@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-      const Display = globalThis.org.eclipse.swt.widgets.Display;
+import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
+      //not GWT import const Display = globalThis.org.eclipse.swt.widgets.Display;
 
       
 

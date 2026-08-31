@@ -20,8 +20,8 @@
 
             import { Object } from '../../java/lang/Object.js';
         
-//not game specific package import { Hashtable } from '../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
 

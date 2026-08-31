@@ -24,51 +24,51 @@
         
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { BundleActivator } from '../../../../../../org/osgi/framework/BundleActivator.js';
-      const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
+import { BundleActivator } from '../../../../../../org/osgi/framework/BundleActivator.js';
+      //not GWT import const BundleActivator = globalThis.org.osgi.framework.BundleActivator;
 
       
-//not game specific package import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
-      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
+      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
-//not game specific package import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
-      const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
+import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
+      //not GWT import const ServiceFactory = globalThis.org.osgi.framework.ServiceFactory;
 
       
-//not game specific package import { ServiceReference } from '../../../../../../org/osgi/framework/ServiceReference.js';
-      const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+import { ServiceReference } from '../../../../../../org/osgi/framework/ServiceReference.js';
+      //not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
 
       
-//not game specific package import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';
-      const InputAutomationModuleServiceInterface = globalThis.bundle.input.automation.module.InputAutomationModuleServiceInterface;
+import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';
+      //not GWT import const InputAutomationModuleServiceInterface = globalThis.bundle.input.automation.module.InputAutomationModuleServiceInterface;
 
       
-//not game specific package import { InputAutomationConfigurationModuleChangeListener } from '../../../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
-      const InputAutomationConfigurationModuleChangeListener = globalThis.bundle.input.automation.module.configuration.InputAutomationConfigurationModuleChangeListener;
+import { InputAutomationConfigurationModuleChangeListener } from '../../../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
+      //not GWT import const InputAutomationConfigurationModuleChangeListener = globalThis.bundle.input.automation.module.configuration.InputAutomationConfigurationModuleChangeListener;
 
       
-//not game specific package import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
-      const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
+import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
+      //not GWT import const InputAutomationConfigurationModuleChangeEvent = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationModuleChangeEvent;
 
       
-//not game specific package import { InputAutomationConfigurationUtil } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationUtil.js';
-      const InputAutomationConfigurationUtil = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationUtil;
+import { InputAutomationConfigurationUtil } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationUtil.js';
+      //not GWT import const InputAutomationConfigurationUtil = globalThis.org.allbinary.input.automation.configuration.InputAutomationConfigurationUtil;
 
       
-//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      //not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
-      const OSGIActivatorUtil = globalThis.org.allbinary.osgi.OSGIActivatorUtil;
+import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
+      //not GWT import const OSGIActivatorUtil = globalThis.org.allbinary.osgi.OSGIActivatorUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

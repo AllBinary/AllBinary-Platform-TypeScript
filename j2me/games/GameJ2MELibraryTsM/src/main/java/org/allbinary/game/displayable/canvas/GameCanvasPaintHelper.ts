@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-      const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+      //not GWT import const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
 
       
 

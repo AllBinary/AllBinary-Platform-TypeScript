@@ -20,15 +20,15 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { FilePathData } from '../../../../../org/allbinary/logic/io/file/FilePathData.js';
+//not plain js import { FilePathData } from '../../../../../org/allbinary/logic/io/file/FilePathData.js';
       const FilePathData = globalThis.org.allbinary.logic.io.file.FilePathData;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

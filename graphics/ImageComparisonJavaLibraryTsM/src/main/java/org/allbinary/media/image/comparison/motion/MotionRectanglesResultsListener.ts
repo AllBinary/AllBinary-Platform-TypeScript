@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { BasicEventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js';
-      const BasicEventListenerInterface = globalThis.org.allbinary.logic.util.event.BasicEventListenerInterface;
+import { BasicEventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js';
+      //not GWT import const BasicEventListenerInterface = globalThis.org.allbinary.logic.util.event.BasicEventListenerInterface;
 
       
 

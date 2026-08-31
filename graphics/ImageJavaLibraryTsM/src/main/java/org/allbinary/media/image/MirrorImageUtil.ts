@@ -20,23 +20,23 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { awt } from '../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
-      const AffineTransform = globalThis.java.awt.geom.AffineTransform;
+import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
+      //not GWT import const AffineTransform = globalThis.java.awt.geom.AffineTransform;
 
       
-//not game specific package import { AffineTransformOp } from '../../../../java/awt/image/AffineTransformOp.js';
-      const AffineTransformOp = globalThis.java.awt.image.AffineTransformOp;
+import { AffineTransformOp } from '../../../../java/awt/image/AffineTransformOp.js';
+      //not GWT import const AffineTransformOp = globalThis.java.awt.image.AffineTransformOp;
 
       
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

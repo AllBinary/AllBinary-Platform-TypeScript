@@ -22,31 +22,31 @@
         
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { List } from '../../../java/util/List.js';
-      const List = globalThis.java.util.List;
+import { List } from '../../../java/util/List.js';
+      //not GWT import const List = globalThis.java.util.List;
 
       
-//not game specific package import { ActivityManager } from '../../../android/app/ActivityManager.js';
-      const ActivityManager = globalThis.android.app.ActivityManager;
+import { ActivityManager } from '../../../android/app/ActivityManager.js';
+      //not GWT import const ActivityManager = globalThis.android.app.ActivityManager;
 
       
-//not game specific package import { RunningServiceInfo } from '../../../android/app/ActivityManager/RunningServiceInfo.js';
-      const RunningServiceInfo = globalThis.android.app.ActivityManager.RunningServiceInfo;
+import { RunningServiceInfo } from '../../../android/app/ActivityManager/RunningServiceInfo.js';
+      //not GWT import const RunningServiceInfo = globalThis.android.app.ActivityManager.RunningServiceInfo;
 
       
-//not game specific package import { ComponentName } from '../../../android/content/ComponentName.js';
-      const ComponentName = globalThis.android.content.ComponentName;
+import { ComponentName } from '../../../android/content/ComponentName.js';
+      //not GWT import const ComponentName = globalThis.android.content.ComponentName;
 
       
-//not game specific package import { Context } from '../../../android/content/Context.js';
-      const Context = globalThis.android.content.Context;
+import { Context } from '../../../android/content/Context.js';
+      //not GWT import const Context = globalThis.android.content.Context;
 
       
-//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

@@ -22,28 +22,28 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not game specific package import { Notification } from '../../../android/app/Notification.js';
-      const Notification = globalThis.android.app.Notification;
+import { Notification } from '../../../android/app/Notification.js';
+      //not GWT import const Notification = globalThis.android.app.Notification;
 
       
-//not game specific package import { Builder } from '../../../android/app/Notification/Builder.js';
-      const Builder = globalThis.android.app.Notification.Builder;
+import { Builder } from '../../../android/app/Notification/Builder.js';
+      //not GWT import const Builder = globalThis.android.app.Notification.Builder;
 
       
-//not game specific package import { PendingIntent } from '../../../android/app/PendingIntent.js';
-      const PendingIntent = globalThis.android.app.PendingIntent;
+import { PendingIntent } from '../../../android/app/PendingIntent.js';
+      //not GWT import const PendingIntent = globalThis.android.app.PendingIntent;
 
       
-//not game specific package import { Context } from '../../../android/content/Context.js';
-      const Context = globalThis.android.content.Context;
+import { Context } from '../../../android/content/Context.js';
+      //not GWT import const Context = globalThis.android.content.Context;
 
       
-//not game specific package import { Parcelable } from '../../../android/os/Parcelable.js';
-      const Parcelable = globalThis.android.os.Parcelable;
+import { Parcelable } from '../../../android/os/Parcelable.js';
+      //not GWT import const Parcelable = globalThis.android.os.Parcelable;
 
       
 

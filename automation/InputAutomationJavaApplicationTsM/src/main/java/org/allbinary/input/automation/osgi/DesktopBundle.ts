@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { swing } from '../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
-      const Bundle = globalThis.org.osgi.framework.Bundle;
+import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
+      //not GWT import const Bundle = globalThis.org.osgi.framework.Bundle;
 
       
-//not game specific package import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
-      const BundleContext = globalThis.org.osgi.framework.BundleContext;
+import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
+      //not GWT import const BundleContext = globalThis.org.osgi.framework.BundleContext;
 
       
-//not game specific package import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
-      const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
+import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
+      //not GWT import const InputAutomationBundleActivator = globalThis.bundle.input.automation.InputAutomationBundleActivator;
 
       
-//not game specific package import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
-      const BasicTextJDialog = globalThis.org.allbinary.gui.dialog.BasicTextJDialog;
+import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
+      //not GWT import const BasicTextJDialog = globalThis.org.allbinary.gui.dialog.BasicTextJDialog;
 
       
 

@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { ItemPaintable } from '../../../../../org/allbinary/graphics/form/ItemPaintable.js';
-      const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
+import { ItemPaintable } from '../../../../../org/allbinary/graphics/form/ItemPaintable.js';
+      //not GWT import const ItemPaintable = globalThis.org.allbinary.graphics.form.ItemPaintable;
 
       
-//not game specific package import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
-      const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
+      //not GWT import const ItemPaintableFactory = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
 
       
-//not game specific package import { PaintableForm } from '../../../../../org/allbinary/graphics/form/PaintableForm.js';
-      const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
+import { PaintableForm } from '../../../../../org/allbinary/graphics/form/PaintableForm.js';
+      //not GWT import const PaintableForm = globalThis.org.allbinary.graphics.form.PaintableForm;
 
       
-//not game specific package import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
-      const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
+import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
+      //not GWT import const ScrollCurrentSelectionForm = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
 
       
 

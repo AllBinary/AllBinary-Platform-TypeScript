@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
-      const ActivityFractureUtil = globalThis.org.allbinary.android.ActivityFractureUtil;
+import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
+      //not GWT import const ActivityFractureUtil = globalThis.org.allbinary.android.ActivityFractureUtil;
 
       
-//not game specific package import { Activity } from '../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { WindowManager } from '../../../../android/view/WindowManager.js';
-      const WindowManager = globalThis.android.view.WindowManager;
+import { WindowManager } from '../../../../android/view/WindowManager.js';
+      //not GWT import const WindowManager = globalThis.android.view.WindowManager;
 
       
 

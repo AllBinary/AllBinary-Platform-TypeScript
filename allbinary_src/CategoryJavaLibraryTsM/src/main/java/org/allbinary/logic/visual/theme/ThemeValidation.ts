@@ -22,124 +22,124 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
-      const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
+      //not GWT import const CategoryData = globalThis.org.allbinary.business.category.CategoryData;
 
       
-//not game specific package import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-      const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
+import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
+      //not GWT import const CategoryFactoryInterface = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
       
-//not game specific package import { StoreThemeCategoryFactory } from '../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryFactory.js';
-      const StoreThemeCategoryFactory = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryFactory;
+import { StoreThemeCategoryFactory } from '../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryFactory.js';
+      //not GWT import const StoreThemeCategoryFactory = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryFactory;
 
       
-//not game specific package import { StoreThemeCategoryInterface } from '../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryInterface.js';
-      const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
+import { StoreThemeCategoryInterface } from '../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryInterface.js';
+      //not GWT import const StoreThemeCategoryInterface = globalThis.org.allbinary.business.category.store.theme.StoreThemeCategoryInterface;
 
       
-//not game specific package import { CategoryLoaderFactory } from '../../../../../org/allbinary/data/tree/category/CategoryLoaderFactory.js';
-      const CategoryLoaderFactory = globalThis.org.allbinary.data.tree.category.CategoryLoaderFactory;
+import { CategoryLoaderFactory } from '../../../../../org/allbinary/data/tree/category/CategoryLoaderFactory.js';
+      //not GWT import const CategoryLoaderFactory = globalThis.org.allbinary.data.tree.category.CategoryLoaderFactory;
 
       
-//not game specific package import { CategoryLoaderInterface } from '../../../../../org/allbinary/data/tree/category/CategoryLoaderInterface.js';
-      const CategoryLoaderInterface = globalThis.org.allbinary.data.tree.category.CategoryLoaderInterface;
+import { CategoryLoaderInterface } from '../../../../../org/allbinary/data/tree/category/CategoryLoaderInterface.js';
+      //not GWT import const CategoryLoaderInterface = globalThis.org.allbinary.data.tree.category.CategoryLoaderInterface;
 
       
-//not game specific package import { DomData } from '../../../../../org/allbinary/data/tree/dom/DomData.js';
-      const DomData = globalThis.org.allbinary.data.tree.dom.DomData;
+import { DomData } from '../../../../../org/allbinary/data/tree/dom/DomData.js';
+      //not GWT import const DomData = globalThis.org.allbinary.data.tree.dom.DomData;
 
       
-//not game specific package import { DomNodeHelper } from '../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+import { DomNodeHelper } from '../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
-//not game specific package import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not game specific package import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-      const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
+import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
+      //not GWT import const DomDocumentHelper = globalThis.org.allbinary.data.tree.dom.document.DomDocumentHelper;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
-      const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
+import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
+      //not GWT import const AbSqlData = globalThis.org.allbinary.logic.communication.sql.AbSqlData;
 
       
-//not game specific package import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
-      const CryptFileReader = globalThis.org.allbinary.logic.control.crypt.file.CryptFileReader;
+import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
+      //not GWT import const CryptFileReader = globalThis.org.allbinary.logic.control.crypt.file.CryptFileReader;
 
       
-//not game specific package import { ValidationInterface } from '../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-      const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
+import { ValidationInterface } from '../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
+      //not GWT import const ValidationInterface = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
       
-//not game specific package import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-      const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
+      //not GWT import const AbPath = globalThis.org.allbinary.logic.io.path.AbPath;
 
       
-//not game specific package import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
+//not plain js import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
       const AbPathData = globalThis.org.allbinary.logic.io.path.AbPathData;
 
       
-//not game specific package import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
-      const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
+import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
+      //not GWT import const PathUtil = globalThis.org.allbinary.logic.io.path.PathUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
-      const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
+import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
+      //not GWT import const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { CssStyleValidation } from '../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/template/retail/CssStyleValidation.js';
-      const CssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.template.retail.CssStyleValidation;
+import { CssStyleValidation } from '../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/template/retail/CssStyleValidation.js';
+      //not GWT import const CssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.template.retail.CssStyleValidation;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

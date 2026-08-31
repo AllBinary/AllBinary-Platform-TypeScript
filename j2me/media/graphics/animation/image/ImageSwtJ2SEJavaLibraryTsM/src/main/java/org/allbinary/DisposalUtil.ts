@@ -22,20 +22,20 @@
         
             import { System } from '../../java/lang/System.js';
         
-//not game specific package import { Image } from '../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-      const Resource = globalThis.org.eclipse.swt.graphics.Resource;
+import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
+      //not GWT import const Resource = globalThis.org.eclipse.swt.graphics.Resource;
 
       
-//not game specific package import { SwtMutableImage } from '../../org/microemu/device/swt/SwtMutableImage.js';
-      const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
+import { SwtMutableImage } from '../../org/microemu/device/swt/SwtMutableImage.js';
+      //not GWT import const SwtMutableImage = globalThis.org.microemu.device.swt.SwtMutableImage;
 
       
 

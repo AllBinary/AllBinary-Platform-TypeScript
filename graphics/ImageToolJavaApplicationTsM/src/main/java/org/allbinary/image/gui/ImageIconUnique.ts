@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { swing } from '../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
 

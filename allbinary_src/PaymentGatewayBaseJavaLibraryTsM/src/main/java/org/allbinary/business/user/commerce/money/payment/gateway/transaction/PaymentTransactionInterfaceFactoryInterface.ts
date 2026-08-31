@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-      const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
+import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
+      //not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
 
       
-//not game specific package import { TenderType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js';
-      const TenderType = globalThis.org.allbinary.business.user.commerce.money.payment.types.TenderType;
+import { TenderType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js';
+      //not GWT import const TenderType = globalThis.org.allbinary.business.user.commerce.money.payment.types.TenderType;
 
       
 

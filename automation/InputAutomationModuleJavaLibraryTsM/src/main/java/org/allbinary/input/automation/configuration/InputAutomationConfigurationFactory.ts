@@ -22,47 +22,47 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { File } from '../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
-      const FileInputStream = globalThis.java.io.FileInputStream;
+import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
+      //not GWT import const FileInputStream = globalThis.java.io.FileInputStream;
 
       
-//not game specific package import { List } from '../../../../../java/util/List.js';
-      const List = globalThis.java.util.List;
+import { List } from '../../../../../java/util/List.js';
+      //not GWT import const List = globalThis.java.util.List;
 
       
-//not game specific package import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
-      const JAXBContext = globalThis.javax.xml.bind.JAXBContext;
+import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
+      //not GWT import const JAXBContext = globalThis.javax.xml.bind.JAXBContext;
 
       
-//not game specific package import { JAXBElement } from '../../../../../javax/xml/bind/JAXBElement.js';
-      const JAXBElement = globalThis.javax.xml.bind.JAXBElement;
+import { JAXBElement } from '../../../../../javax/xml/bind/JAXBElement.js';
+      //not GWT import const JAXBElement = globalThis.javax.xml.bind.JAXBElement;
 
       
-//not game specific package import { Unmarshaller } from '../../../../../javax/xml/bind/Unmarshaller.js';
-      const Unmarshaller = globalThis.javax.xml.bind.Unmarshaller;
+import { Unmarshaller } from '../../../../../javax/xml/bind/Unmarshaller.js';
+      //not GWT import const Unmarshaller = globalThis.javax.xml.bind.Unmarshaller;
 
       
-//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
-//not game specific package import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-      const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
+import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
+      //not GWT import const InputAutomationModuleConfiguration = globalThis.org.allbinary.input.automation.module.configuration.InputAutomationModuleConfiguration;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

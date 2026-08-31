@@ -22,28 +22,28 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
-//not game specific package import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-      const Bitmap = globalThis.android.graphics.Bitmap;
+import { Bitmap } from '../../../../android/graphics/Bitmap.js';
+      //not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
 
       
-//not game specific package import { Canvas } from '../../../../android/graphics/Canvas.js';
-      const Canvas = globalThis.android.graphics.Canvas;
+import { Canvas } from '../../../../android/graphics/Canvas.js';
+      //not GWT import const Canvas = globalThis.android.graphics.Canvas;
 
       
-//not game specific package import { Matrix } from '../../../../android/graphics/Matrix.js';
-      const Matrix = globalThis.android.graphics.Matrix;
+import { Matrix } from '../../../../android/graphics/Matrix.js';
+      //not GWT import const Matrix = globalThis.android.graphics.Matrix;
 
       
-//not game specific package import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
+      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 

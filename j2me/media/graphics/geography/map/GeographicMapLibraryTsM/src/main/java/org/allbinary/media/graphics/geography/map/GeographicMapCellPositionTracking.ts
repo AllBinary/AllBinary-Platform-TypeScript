@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { AllBinaryGameCanvasInterface } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvasInterface.js';
-      const AllBinaryGameCanvasInterface = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvasInterface;
+import { AllBinaryGameCanvasInterface } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvasInterface.js';
+      //not GWT import const AllBinaryGameCanvasInterface = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvasInterface;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 

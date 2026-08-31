@@ -22,20 +22,20 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-//not game specific package import { Hashtable } from '../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not game specific package import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelayHelper.js';
-      const NoTimeDelayHelper = globalThis.org.allbinary.time.NoTimeDelayHelper;
+import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelayHelper.js';
+      //not GWT import const NoTimeDelayHelper = globalThis.org.allbinary.time.NoTimeDelayHelper;
 
       
 

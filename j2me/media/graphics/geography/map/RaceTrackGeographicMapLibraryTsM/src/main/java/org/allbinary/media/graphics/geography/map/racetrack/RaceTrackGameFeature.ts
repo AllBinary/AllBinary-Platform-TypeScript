@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { GameFeature } from '../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js';
-      const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
+import { GameFeature } from '../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js';
+      //not GWT import const GameFeature = globalThis.org.allbinary.game.configuration.feature.GameFeature;
 
       
 

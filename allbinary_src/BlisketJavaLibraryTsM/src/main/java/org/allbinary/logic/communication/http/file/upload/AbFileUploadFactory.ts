@@ -22,40 +22,40 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { ArrayList } from '../../../../../../../java/util/ArrayList.js';
-      const ArrayList = globalThis.java.util.ArrayList;
+import { ArrayList } from '../../../../../../../java/util/ArrayList.js';
+      //not GWT import const ArrayList = globalThis.java.util.ArrayList;
 
       
-//not game specific package import { List } from '../../../../../../../java/util/List.js';
-      const List = globalThis.java.util.List;
+import { List } from '../../../../../../../java/util/List.js';
+      //not GWT import const List = globalThis.java.util.List;
 
       
-//not game specific package import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { AbFileItemFactory } from '../../../../../../../org/allbinary/logic/communication/http/AbFileItemFactory.js';
-      const AbFileItemFactory = globalThis.org.allbinary.logic.communication.http.AbFileItemFactory;
+import { AbFileItemFactory } from '../../../../../../../org/allbinary/logic/communication/http/AbFileItemFactory.js';
+      //not GWT import const AbFileItemFactory = globalThis.org.allbinary.logic.communication.http.AbFileItemFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
-      const FileItemIterator = globalThis.org.apache.commons.fileupload.FileItemIterator;
+import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
+      //not GWT import const FileItemIterator = globalThis.org.apache.commons.fileupload.FileItemIterator;
 
       
-//not game specific package import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
-      const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
+import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
+      //not GWT import const FileItemStream = globalThis.org.apache.commons.fileupload.FileItemStream;
 
       
-//not game specific package import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
-      const FileItemUtil = globalThis.org.apache.commons.fileupload.FileItemUtil;
+import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
+      //not GWT import const FileItemUtil = globalThis.org.apache.commons.fileupload.FileItemUtil;
 
       
 

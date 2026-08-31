@@ -20,15 +20,15 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { AnalogLocationInputFactory } from '../../../../org/allbinary/game/input/analog/AnalogLocationInputFactory.js';
-      const AnalogLocationInputFactory = globalThis.org.allbinary.game.input.analog.AnalogLocationInputFactory;
+import { AnalogLocationInputFactory } from '../../../../org/allbinary/game/input/analog/AnalogLocationInputFactory.js';
+      //not GWT import const AnalogLocationInputFactory = globalThis.org.allbinary.game.input.analog.AnalogLocationInputFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

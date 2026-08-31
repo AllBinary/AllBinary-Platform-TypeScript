@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
-      const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
+import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
+      //not GWT import const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
 

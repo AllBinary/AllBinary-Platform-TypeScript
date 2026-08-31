@@ -8,8 +8,8 @@
         
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-//not game specific package import { Stack } from '../../../java/util/Stack.js';
-      const Stack = globalThis.java.util.Stack;
+import { Stack } from '../../../java/util/Stack.js';
+      //not GWT import const Stack = globalThis.java.util.Stack;
 
       
 

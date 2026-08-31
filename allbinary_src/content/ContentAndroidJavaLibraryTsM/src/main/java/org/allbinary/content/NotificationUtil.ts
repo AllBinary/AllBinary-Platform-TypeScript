@@ -22,43 +22,43 @@
         
             import { Integer } from '../../../java/lang/Integer.js';
         
-//not game specific package import { Command } from '../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not game specific package import { Notification } from '../../../android/app/Notification.js';
-      const Notification = globalThis.android.app.Notification;
+import { Notification } from '../../../android/app/Notification.js';
+      //not GWT import const Notification = globalThis.android.app.Notification;
 
       
-//not game specific package import { NotificationManager } from '../../../android/app/NotificationManager.js';
-      const NotificationManager = globalThis.android.app.NotificationManager;
+import { NotificationManager } from '../../../android/app/NotificationManager.js';
+      //not GWT import const NotificationManager = globalThis.android.app.NotificationManager;
 
       
-//not game specific package import { PendingIntent } from '../../../android/app/PendingIntent.js';
-      const PendingIntent = globalThis.android.app.PendingIntent;
+import { PendingIntent } from '../../../android/app/PendingIntent.js';
+      //not GWT import const PendingIntent = globalThis.android.app.PendingIntent;
 
       
-//not game specific package import { Context } from '../../../android/content/Context.js';
-      const Context = globalThis.android.content.Context;
+import { Context } from '../../../android/content/Context.js';
+      //not GWT import const Context = globalThis.android.content.Context;
 
       
-//not game specific package import { Intent } from '../../../android/content/Intent.js';
-      const Intent = globalThis.android.content.Intent;
+import { Intent } from '../../../android/content/Intent.js';
+      //not GWT import const Intent = globalThis.android.content.Intent;
 
       
-//not game specific package import { AndroidInfoFactory } from '../../../org/allbinary/android/AndroidInfoFactory.js';
-      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+import { AndroidInfoFactory } from '../../../org/allbinary/android/AndroidInfoFactory.js';
+      //not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
 
       
-//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

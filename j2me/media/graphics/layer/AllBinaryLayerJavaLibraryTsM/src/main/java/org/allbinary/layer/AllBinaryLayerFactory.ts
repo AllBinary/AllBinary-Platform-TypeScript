@@ -20,16 +20,16 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
-      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
+      //not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
 
       
 

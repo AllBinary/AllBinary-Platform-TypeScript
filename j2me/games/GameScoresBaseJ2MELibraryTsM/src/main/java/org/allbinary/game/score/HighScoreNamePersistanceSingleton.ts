@@ -24,95 +24,95 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
-      const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
+      //not GWT import const ByteArrayInputStream = globalThis.java.io.ByteArrayInputStream;
 
       
-//not game specific package import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
-      const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
+import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
+      //not GWT import const ByteArrayOutputStream = globalThis.java.io.ByteArrayOutputStream;
 
       
-//not game specific package import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-      const DataInputStream = globalThis.java.io.DataInputStream;
+import { DataInputStream } from '../../../../java/io/DataInputStream.js';
+      //not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
 
       
-//not game specific package import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
-      const DataOutputStream = globalThis.java.io.DataOutputStream;
+import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
+      //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
-//not game specific package import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
-      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+      //not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-//not game specific package import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
-      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+      //not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
-//not game specific package import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
-      const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
+      //not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
 
       
-//not game specific package import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not game specific package import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
-      const NullRecordComparator = globalThis.org.allbinary.game.configuration.persistance.NullRecordComparator;
+import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
+      //not GWT import const NullRecordComparator = globalThis.org.allbinary.game.configuration.persistance.NullRecordComparator;
 
       
-//not game specific package import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
-      const NullRecordFilter = globalThis.org.allbinary.game.configuration.persistance.NullRecordFilter;
+import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
+      //not GWT import const NullRecordFilter = globalThis.org.allbinary.game.configuration.persistance.NullRecordFilter;
 
       
-//not game specific package import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
-      const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
+import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
+      //not GWT import const NullRecordStore = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { ExceptionUtil } from '../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
+//not plain js import { ExceptionUtil } from '../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
       const ExceptionUtil = globalThis.org.allbinary.logic.java.exception.ExceptionUtil;
 
       
-//not game specific package import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+//not plain js import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
       const SmallIntegerSingletonFactory = globalThis.org.allbinary.logic.math.SmallIntegerSingletonFactory;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
-      const PlatformRecordIdUtil = globalThis.org.allbinary.persistance.PlatformRecordIdUtil;
+import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
+      //not GWT import const PlatformRecordIdUtil = globalThis.org.allbinary.persistance.PlatformRecordIdUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

@@ -20,28 +20,28 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { HashMap } from '../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
+      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
-//not game specific package import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
-      const TimeCreated = globalThis.org.allbinary.business.time.created.TimeCreated;
+import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
+      //not GWT import const TimeCreated = globalThis.org.allbinary.business.time.created.TimeCreated;
 
       
-//not game specific package import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
-      const TimeLastModified = globalThis.org.allbinary.business.time.modified.TimeLastModified;
+import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
+      //not GWT import const TimeLastModified = globalThis.org.allbinary.business.time.modified.TimeLastModified;
 
       
-//not game specific package import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
-      const UserEmailConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
+import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
+      //not GWT import const UserEmailConfiguration = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfiguration;
 
       
-//not game specific package import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
-      const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
+import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
+      //not GWT import const UserEmailConfigurationInterface = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
 
       
 

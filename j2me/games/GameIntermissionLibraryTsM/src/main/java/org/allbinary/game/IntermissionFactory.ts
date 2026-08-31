@@ -20,12 +20,12 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { GameState } from '../../../org/allbinary/game/state/GameState.js';
-      const GameState = globalThis.org.allbinary.game.state.GameState;
+import { GameState } from '../../../org/allbinary/game/state/GameState.js';
+      //not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
 
       
-//not game specific package import { GameStateFactory } from '../../../org/allbinary/game/state/GameStateFactory.js';
-      const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
+import { GameStateFactory } from '../../../org/allbinary/game/state/GameStateFactory.js';
+      //not GWT import const GameStateFactory = globalThis.org.allbinary.game.state.GameStateFactory;
 
       
 

@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
-      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
-//not game specific package import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
-      const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
+import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
+      //not GWT import const ViewPositionFactoryInterface = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
 
       
 

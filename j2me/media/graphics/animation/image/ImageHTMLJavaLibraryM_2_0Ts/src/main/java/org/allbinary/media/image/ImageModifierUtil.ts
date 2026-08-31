@@ -24,63 +24,63 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-      const Anchor = globalThis.org.allbinary.graphics.Anchor;
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
+      //not GWT import const Anchor = globalThis.org.allbinary.graphics.Anchor;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
+//not plain js import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
       const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
 
       
-//not game specific package import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
-      const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
+import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
+      //not GWT import const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
 
       
-//not game specific package import { Callback } from '../../../../playn/core/Callback.js';
+//not plain js import { Callback } from '../../../../playn/core/Callback.js';
       const Callback = globalThis.playn.core.Callback;
 
       
-//not game specific package import { Canvas } from '../../../../playn/core/Canvas.js';
+//not plain js import { Canvas } from '../../../../playn/core/Canvas.js';
       const Canvas = globalThis.playn.core.Canvas;
 
       
-//not game specific package import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
       const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-//not game specific package import { PlayN } from '../../../../playn/core/PlayN.js';
+//not plain js import { PlayN } from '../../../../playn/core/PlayN.js';
       const PlayN = globalThis.playn.core.PlayN;
 
       
-//not game specific package import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+//not plain js import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
       const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
 
       
-//not game specific package import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+//not plain js import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
       const HtmlImage = globalThis.playn.html.HtmlImage;
 
       

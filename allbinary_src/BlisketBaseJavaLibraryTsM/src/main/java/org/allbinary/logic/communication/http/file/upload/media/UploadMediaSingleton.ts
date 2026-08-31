@@ -20,35 +20,35 @@
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
         
-//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Set } from '../../../../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { MediaData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaData.js';
-      const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
+import { MediaData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaData.js';
+      //not GWT import const MediaData = globalThis.org.allbinary.logic.visual.media.MediaData;
 
       
-//not game specific package import { MediaIOUtil } from '../../../../../../../../org/allbinary/logic/visual/media/MediaIOUtil.js';
-      const MediaIOUtil = globalThis.org.allbinary.logic.visual.media.MediaIOUtil;
+import { MediaIOUtil } from '../../../../../../../../org/allbinary/logic/visual/media/MediaIOUtil.js';
+      //not GWT import const MediaIOUtil = globalThis.org.allbinary.logic.visual.media.MediaIOUtil;
 
       
-//not game specific package import { MediaTypeData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaTypeData.js';
-      const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
+import { MediaTypeData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaTypeData.js';
+      //not GWT import const MediaTypeData = globalThis.org.allbinary.logic.visual.media.MediaTypeData;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

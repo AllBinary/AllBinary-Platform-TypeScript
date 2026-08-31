@@ -22,24 +22,24 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
-      const J2SEImmutableImage = globalThis.org.microemu.device.j2se.J2SEImmutableImage;
+import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
+      //not GWT import const J2SEImmutableImage = globalThis.org.microemu.device.j2se.J2SEImmutableImage;
 
       
-//not game specific package import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
-      const J2SEMutableImage = globalThis.org.microemu.device.j2se.J2SEMutableImage;
+import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
+      //not GWT import const J2SEMutableImage = globalThis.org.microemu.device.j2se.J2SEMutableImage;
 
       
 

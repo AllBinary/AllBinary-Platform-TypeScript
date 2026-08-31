@@ -20,36 +20,36 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Health } from '../../../../org/allbinary/game/health/Health.js';
-      const Health = globalThis.org.allbinary.game.health.Health;
+import { Health } from '../../../../org/allbinary/game/health/Health.js';
+      //not GWT import const Health = globalThis.org.allbinary.game.health.Health;
 
       
-//not game specific package import { HealthBarAnimation } from '../../../../org/allbinary/game/health/HealthBarAnimation.js';
-      const HealthBarAnimation = globalThis.org.allbinary.game.health.HealthBarAnimation;
+import { HealthBarAnimation } from '../../../../org/allbinary/game/health/HealthBarAnimation.js';
+      //not GWT import const HealthBarAnimation = globalThis.org.allbinary.game.health.HealthBarAnimation;
 
       
-//not game specific package import { HealthBarTwodAnimation } from '../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
-      const HealthBarTwodAnimation = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
+import { HealthBarTwodAnimation } from '../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
+      //not GWT import const HealthBarTwodAnimation = globalThis.org.allbinary.game.health.HealthBarTwodAnimation;
 
       
-//not game specific package import { HealthInterface } from '../../../../org/allbinary/game/health/HealthInterface.js';
-      const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
+import { HealthInterface } from '../../../../org/allbinary/game/health/HealthInterface.js';
+      //not GWT import const HealthInterface = globalThis.org.allbinary.game.health.HealthInterface;
 
       
-//not game specific package import { HealthListenerInterface } from '../../../../org/allbinary/game/health/HealthListenerInterface.js';
-      const HealthListenerInterface = globalThis.org.allbinary.game.health.HealthListenerInterface;
+import { HealthListenerInterface } from '../../../../org/allbinary/game/health/HealthListenerInterface.js';
+      //not GWT import const HealthListenerInterface = globalThis.org.allbinary.game.health.HealthListenerInterface;
 
       
-//not game specific package import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
+      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 

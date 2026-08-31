@@ -26,35 +26,35 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
-      const Constructor = globalThis.java.lang.reflect.Constructor;
+import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+      //not GWT import const Constructor = globalThis.java.lang.reflect.Constructor;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { ConstructorUtil } from '../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
-      const ConstructorUtil = globalThis.org.allbinary.logic.java.anyType.ConstructorUtil;
+import { ConstructorUtil } from '../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
+      //not GWT import const ConstructorUtil = globalThis.org.allbinary.logic.java.anyType.ConstructorUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
-      const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
+import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
+      //not GWT import const AbKeys = globalThis.org.allbinary.logic.system.security.AbKeys;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

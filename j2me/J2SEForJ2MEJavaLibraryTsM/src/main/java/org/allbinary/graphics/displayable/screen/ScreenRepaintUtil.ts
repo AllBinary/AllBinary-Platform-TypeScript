@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
+      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 

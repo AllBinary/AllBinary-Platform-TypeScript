@@ -22,31 +22,31 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { BufferedReader } from '../../../../java/io/BufferedReader.js';
-      const BufferedReader = globalThis.java.io.BufferedReader;
+import { BufferedReader } from '../../../../java/io/BufferedReader.js';
+      //not GWT import const BufferedReader = globalThis.java.io.BufferedReader;
 
       
-//not game specific package import { BufferedWriter } from '../../../../java/io/BufferedWriter.js';
-      const BufferedWriter = globalThis.java.io.BufferedWriter;
+import { BufferedWriter } from '../../../../java/io/BufferedWriter.js';
+      //not GWT import const BufferedWriter = globalThis.java.io.BufferedWriter;
 
       
-//not game specific package import { FileReader } from '../../../../java/io/FileReader.js';
-      const FileReader = globalThis.java.io.FileReader;
+import { FileReader } from '../../../../java/io/FileReader.js';
+      //not GWT import const FileReader = globalThis.java.io.FileReader;
 
       
-//not game specific package import { FileWriter } from '../../../../java/io/FileWriter.js';
-      const FileWriter = globalThis.java.io.FileWriter;
+import { FileWriter } from '../../../../java/io/FileWriter.js';
+      //not GWT import const FileWriter = globalThis.java.io.FileWriter;
 
       
-//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
-      const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
+import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
+      //not GWT import const AbFileNativeUtil = globalThis.org.allbinary.logic.io.file.AbFileNativeUtil;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

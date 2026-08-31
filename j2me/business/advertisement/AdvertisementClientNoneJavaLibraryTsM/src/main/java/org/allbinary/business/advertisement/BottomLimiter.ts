@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
-      const GameAdState = globalThis.org.allbinary.game.GameAdState;
+import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
+      //not GWT import const GameAdState = globalThis.org.allbinary.game.GameAdState;
 
       
-//not game specific package import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
 

@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
-      const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
+import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
+      //not GWT import const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
 
       
 

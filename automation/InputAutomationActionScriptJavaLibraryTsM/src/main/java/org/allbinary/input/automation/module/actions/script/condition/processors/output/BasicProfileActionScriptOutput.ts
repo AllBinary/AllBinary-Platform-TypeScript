@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { BasicProfileActionScriptProcessor } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/BasicProfileActionScriptProcessor.js';
-      const BasicProfileActionScriptProcessor = globalThis.org.allbinary.input.automation.actions.script.condition.processors.BasicProfileActionScriptProcessor;
+import { BasicProfileActionScriptProcessor } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/BasicProfileActionScriptProcessor.js';
+      //not GWT import const BasicProfileActionScriptProcessor = globalThis.org.allbinary.input.automation.actions.script.condition.processors.BasicProfileActionScriptProcessor;
 
       
-//not game specific package import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

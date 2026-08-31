@@ -18,19 +18,19 @@
 
 
 
-//not game specific package import { Activity } from '../../../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { MidletActivityBase } from '../../../../../../org/allbinary/android/activity/MidletActivityBase.js';
-      const MidletActivityBase = globalThis.org.allbinary.android.activity.MidletActivityBase;
+import { MidletActivityBase } from '../../../../../../org/allbinary/android/activity/MidletActivityBase.js';
+      //not GWT import const MidletActivityBase = globalThis.org.allbinary.android.activity.MidletActivityBase;
 
       
-//not game specific package import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
-      const SimpleProgressActivityInterface = globalThis.org.allbinary.android.activity.SimpleProgressActivityInterface;
+import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
+      //not GWT import const SimpleProgressActivityInterface = globalThis.org.allbinary.android.activity.SimpleProgressActivityInterface;
 
       
-//not game specific package import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
+//not plain js import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
       const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       

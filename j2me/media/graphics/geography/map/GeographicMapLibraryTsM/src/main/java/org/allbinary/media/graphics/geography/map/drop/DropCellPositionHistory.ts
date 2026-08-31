@@ -20,24 +20,24 @@
 
             import { Object } from '../../../../../../../java/lang/Object.js';
         
-//not game specific package import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
-      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
+      //not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
 
       
-//not game specific package import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
-      const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
+import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
+      //not GWT import const CellPositionFactory = globalThis.org.allbinary.graphics.CellPositionFactory;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
 

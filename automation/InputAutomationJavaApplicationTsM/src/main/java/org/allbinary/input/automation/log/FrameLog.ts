@@ -24,31 +24,31 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-//not game specific package import { File } from '../../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
-      const FileOutputStream = globalThis.java.io.FileOutputStream;
+import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
+      //not GWT import const FileOutputStream = globalThis.java.io.FileOutputStream;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
-      const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
+import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
+      //not GWT import const ImageOutputData = globalThis.org.allbinary.input.automation.ImageOutputData;
 
       
-//not game specific package import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
-      const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
+import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
+      //not GWT import const LongUtil = globalThis.org.allbinary.logic.java.number.LongUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       

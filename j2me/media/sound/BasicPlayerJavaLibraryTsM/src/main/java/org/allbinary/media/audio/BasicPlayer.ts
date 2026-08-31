@@ -20,35 +20,35 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { Control } from '../../../../javax/microedition/media/Control.js';
-      const Control = globalThis.javax.microedition.media.Control;
+import { Control } from '../../../../javax/microedition/media/Control.js';
+      //not GWT import const Control = globalThis.javax.microedition.media.Control;
 
       
-//not game specific package import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      const MediaException = globalThis.javax.microedition.media.MediaException;
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      //not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-//not game specific package import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      const Player = globalThis.javax.microedition.media.Player;
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      //not GWT import const Player = globalThis.javax.microedition.media.Player;
 
       
-//not game specific package import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      //not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-//not game specific package import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       

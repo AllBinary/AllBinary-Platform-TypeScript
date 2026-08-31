@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { InitInfo } from '../../../org/allbinary/business/init/InitInfo.js';
-      const InitInfo = globalThis.org.allbinary.business.init.InitInfo;
+import { InitInfo } from '../../../org/allbinary/business/init/InitInfo.js';
+      //not GWT import const InitInfo = globalThis.org.allbinary.business.init.InitInfo;
 
       
-//not game specific package import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
 

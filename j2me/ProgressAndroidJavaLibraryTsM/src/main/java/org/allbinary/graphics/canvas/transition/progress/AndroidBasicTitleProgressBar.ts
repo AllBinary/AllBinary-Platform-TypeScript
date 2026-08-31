@@ -24,111 +24,111 @@
         
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
-      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
+      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not game specific package import { Activity } from '../../../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
-      const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
+import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
+      //not GWT import const AndroidUtil = globalThis.org.allbinary.AndroidUtil;
 
       
-//not game specific package import { GameFeatureImageCacheFactory } from '../../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-      const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
+import { GameFeatureImageCacheFactory } from '../../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
+      //not GWT import const GameFeatureImageCacheFactory = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
 
       
-//not game specific package import { PreResourceImageUtil } from '../../../../../../org/allbinary/image/PreResourceImageUtil.js';
-      const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
+import { PreResourceImageUtil } from '../../../../../../org/allbinary/image/PreResourceImageUtil.js';
+      //not GWT import const PreResourceImageUtil = globalThis.org.allbinary.image.PreResourceImageUtil;
 
       
-//not game specific package import { ForcedLogUtil } from '../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not plain js import { ForcedLogUtil } from '../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not game specific package import { ExceptionUtil } from '../../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
+//not plain js import { ExceptionUtil } from '../../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
       const ExceptionUtil = globalThis.org.allbinary.logic.java.exception.ExceptionUtil;
 
       
-//not game specific package import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
-      const Animation = globalThis.org.allbinary.animation.Animation;
+import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
+      //not GWT import const Animation = globalThis.org.allbinary.animation.Animation;
 
       
-//not game specific package import { NullAnimationFactory } from '../../../../../../org/allbinary/animation/NullAnimationFactory.js';
-      const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
+import { NullAnimationFactory } from '../../../../../../org/allbinary/animation/NullAnimationFactory.js';
+      //not GWT import const NullAnimationFactory = globalThis.org.allbinary.animation.NullAnimationFactory;
 
       
-//not game specific package import { Features } from '../../../../../../org/allbinary/game/configuration/feature/Features.js';
-      const Features = globalThis.org.allbinary.game.configuration.feature.Features;
+import { Features } from '../../../../../../org/allbinary/game/configuration/feature/Features.js';
+      //not GWT import const Features = globalThis.org.allbinary.game.configuration.feature.Features;
 
       
-//not game specific package import { MainFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-      const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
+import { MainFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+      //not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
 
       
-//not game specific package import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-      const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
+import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
+      //not GWT import const DisplayInfoSingleton = globalThis.org.allbinary.graphics.displayable.DisplayInfoSingleton;
 
       
-//not game specific package import { DisplayChangeEvent } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-      const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
+import { DisplayChangeEvent } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
+      //not GWT import const DisplayChangeEvent = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEvent;
 
       
-//not game specific package import { DisplayChangeEventHandler } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
-      const DisplayChangeEventHandler = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventHandler;
+import { DisplayChangeEventHandler } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
+      //not GWT import const DisplayChangeEventHandler = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventHandler;
 
       
-//not game specific package import { DisplayChangeEventListener } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
-      const DisplayChangeEventListener = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventListener;
+import { DisplayChangeEventListener } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
+      //not GWT import const DisplayChangeEventListener = globalThis.org.allbinary.graphics.displayable.event.DisplayChangeEventListener;
 
       
-//not game specific package import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
-      const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
+import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
+      //not GWT import const ImageCacheFactory = globalThis.org.allbinary.image.ImageCacheFactory;
 
       
-//not game specific package import { ImageScaleUtil } from '../../../../../../org/allbinary/media/image/ImageScaleUtil.js';
-      const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
+import { ImageScaleUtil } from '../../../../../../org/allbinary/media/image/ImageScaleUtil.js';
+      //not GWT import const ImageScaleUtil = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
-//not game specific package import { AnimationBehavior } from '../../../../../../org/allbinary/animation/AnimationBehavior.js';
-      const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
+import { AnimationBehavior } from '../../../../../../org/allbinary/animation/AnimationBehavior.js';
+      //not GWT import const AnimationBehavior = globalThis.org.allbinary.animation.AnimationBehavior;
 
       
-//not game specific package import { ImageAnimation } from '../../../../../../org/allbinary/animation/image/ImageAnimation.js';
-      const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
+import { ImageAnimation } from '../../../../../../org/allbinary/animation/image/ImageAnimation.js';
+      //not GWT import const ImageAnimation = globalThis.org.allbinary.animation.image.ImageAnimation;
 
       
-//not game specific package import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
-      const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
+import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
+      //not GWT import const EventStrings = globalThis.org.allbinary.logic.util.event.EventStrings;
 
       
-//not game specific package import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
+//not plain js import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
       const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
-//not game specific package import { NullRunnable } from '../../../../../../org/allbinary/thread/NullRunnable.js';
+//not plain js import { NullRunnable } from '../../../../../../org/allbinary/thread/NullRunnable.js';
       const NullRunnable = globalThis.org.allbinary.thread.NullRunnable;
 
       

@@ -20,76 +20,76 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-//not game specific package import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
-      const LockedFeatureNotificationUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedFeatureNotificationUtil;
+import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
+      //not GWT import const LockedFeatureNotificationUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedFeatureNotificationUtil;
 
       
-//not game specific package import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
-      const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
+import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
+      //not GWT import const LockedUtil = globalThis.org.allbinary.logic.system.security.licensing.LockedUtil;
 
       
-//not game specific package import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
-      const Processor = globalThis.org.allbinary.canvas.Processor;
+import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
+      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
-//not game specific package import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-      const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+      //not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
       
-//not game specific package import { PreGameSelectorPaintable } from '../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js';
-      const PreGameSelectorPaintable = globalThis.org.allbinary.game.displayable.canvas.PreGameSelectorPaintable;
+import { PreGameSelectorPaintable } from '../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js';
+      //not GWT import const PreGameSelectorPaintable = globalThis.org.allbinary.game.displayable.canvas.PreGameSelectorPaintable;
 
       
-//not game specific package import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
-      const GameKeyEventHandler = globalThis.org.allbinary.game.input.event.GameKeyEventHandler;
+import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
+      //not GWT import const GameKeyEventHandler = globalThis.org.allbinary.game.input.event.GameKeyEventHandler;
 
       
-//not game specific package import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
-      const GameKeyEventUtil = globalThis.org.allbinary.game.input.event.GameKeyEventUtil;
+import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
+      //not GWT import const GameKeyEventUtil = globalThis.org.allbinary.game.input.event.GameKeyEventUtil;
 
       
-//not game specific package import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
-      const GameState = globalThis.org.allbinary.game.state.GameState;
+import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
+      //not GWT import const GameState = globalThis.org.allbinary.game.state.GameState;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
-      const SecondaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.SecondaryPlayerQueueFactory;
+import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
+      //not GWT import const SecondaryPlayerQueueFactory = globalThis.org.allbinary.media.audio.SecondaryPlayerQueueFactory;
 
       
-//not game specific package import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
-      const SelectSound = globalThis.org.allbinary.media.audio.SelectSound;
+import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
+      //not GWT import const SelectSound = globalThis.org.allbinary.media.audio.SelectSound;
 
       
-//not game specific package import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
-      const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
+import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
+      //not GWT import const ABRunnable = globalThis.org.allbinary.thread.ABRunnable;
 
       
-//not game specific package import { ThreadObjectUtil } from '../../../../org/allbinary/thread/ThreadObjectUtil.js';
-      const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
+import { ThreadObjectUtil } from '../../../../org/allbinary/thread/ThreadObjectUtil.js';
+      //not GWT import const ThreadObjectUtil = globalThis.org.allbinary.thread.ThreadObjectUtil;
 
       
-//not game specific package import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-      const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
+      //not GWT import const TimeDelayHelper = globalThis.org.allbinary.time.TimeDelayHelper;
 
       
 

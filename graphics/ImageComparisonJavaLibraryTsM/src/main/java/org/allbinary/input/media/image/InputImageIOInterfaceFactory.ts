@@ -22,20 +22,20 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { CapturedImageInputOutput } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js';
-      const CapturedImageInputOutput = globalThis.org.allbinary.input.media.image.capture.CapturedImageInputOutput;
+import { CapturedImageInputOutput } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js';
+      //not GWT import const CapturedImageInputOutput = globalThis.org.allbinary.input.media.image.capture.CapturedImageInputOutput;
 
       
-//not game specific package import { ComparisonImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js';
-      const ComparisonImageInputOutput = globalThis.org.allbinary.media.image.comparison.ComparisonImageInputOutput;
+import { ComparisonImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js';
+      //not GWT import const ComparisonImageInputOutput = globalThis.org.allbinary.media.image.comparison.ComparisonImageInputOutput;
 
       
-//not game specific package import { MotionRectanglesImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js';
-      const MotionRectanglesImageInputOutput = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesImageInputOutput;
+import { MotionRectanglesImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js';
+      //not GWT import const MotionRectanglesImageInputOutput = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesImageInputOutput;
 
       
-//not game specific package import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-      const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
+import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
+      //not GWT import const ImageIOInterface = globalThis.org.allbinary.media.image.io.ImageIOInterface;
 
       
 

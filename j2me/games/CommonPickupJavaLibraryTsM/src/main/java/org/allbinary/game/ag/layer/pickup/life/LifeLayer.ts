@@ -20,36 +20,36 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { Life } from '../../../../../../../org/allbinary/game/ag/life/Life.js';
-      //not GWT import and is game specific code const Life = globalThis.org.allbinary.game.ag.life.Life;
+      //not GWT import const Life = globalThis.org.allbinary.game.ag.life.Life;
 
       
 import { LifeVisitorInterface } from '../../../../../../../org/allbinary/game/ag/life/LifeVisitorInterface.js';
-      //not GWT import and is game specific code const LifeVisitorInterface = globalThis.org.allbinary.game.ag.life.LifeVisitorInterface;
+      //not GWT import const LifeVisitorInterface = globalThis.org.allbinary.game.ag.life.LifeVisitorInterface;
 
       
-//not game specific package import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { Rectangle } from '../../../../../../../org/allbinary/graphics/Rectangle.js';
-      const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
+import { Rectangle } from '../../../../../../../org/allbinary/graphics/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.org.allbinary.graphics.Rectangle;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { ViewPosition } from '../../../../../../../org/allbinary/view/ViewPosition.js';
-      const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
+import { ViewPosition } from '../../../../../../../org/allbinary/view/ViewPosition.js';
+      //not GWT import const ViewPosition = globalThis.org.allbinary.view.ViewPosition;
 
       
 

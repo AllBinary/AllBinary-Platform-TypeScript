@@ -20,23 +20,23 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { Collection } from '../../../java/util/Collection.js';
-      const Collection = globalThis.java.util.Collection;
+import { Collection } from '../../../java/util/Collection.js';
+      //not GWT import const Collection = globalThis.java.util.Collection;
 
       
-//not game specific package import { Map } from '../../../java/util/Map.js';
-      const Map = globalThis.java.util.Map;
+import { Map } from '../../../java/util/Map.js';
+      //not GWT import const Map = globalThis.java.util.Map;
 
       
-//not game specific package import { Set } from '../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
-//not game specific package import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
-      const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
+import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
+      //not GWT import const ServiceReference = globalThis.org.osgi.framework.ServiceReference;
 
       
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

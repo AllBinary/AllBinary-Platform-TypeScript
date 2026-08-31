@@ -20,23 +20,23 @@
 
             import { Exception } from '../../../java/lang/Exception.js';
         
-//not game specific package import { Direction } from '../../../org/allbinary/direction/Direction.js';
-      const Direction = globalThis.org.allbinary.direction.Direction;
+import { Direction } from '../../../org/allbinary/direction/Direction.js';
+      //not GWT import const Direction = globalThis.org.allbinary.direction.Direction;
 
       
-//not game specific package import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { Angle } from '../../../org/allbinary/math/Angle.js';
+//not plain js import { Angle } from '../../../org/allbinary/math/Angle.js';
       const Angle = globalThis.org.allbinary.math.Angle;
 
       
-//not game specific package import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
+//not plain js import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
       const AngleFactory = globalThis.org.allbinary.math.AngleFactory;
 
       
-//not game specific package import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
+//not plain js import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
       const AngleInfo = globalThis.org.allbinary.math.AngleInfo;
 
       

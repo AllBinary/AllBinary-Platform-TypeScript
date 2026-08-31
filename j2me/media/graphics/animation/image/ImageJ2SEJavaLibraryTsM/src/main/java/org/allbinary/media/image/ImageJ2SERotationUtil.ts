@@ -22,16 +22,16 @@
         
             import { Math } from '../../../../java/lang/Math.js';
         
-//not game specific package import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
-      const Graphics2D = globalThis.java.awt.Graphics2D;
+import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
+      //not GWT import const Graphics2D = globalThis.java.awt.Graphics2D;
 
       
-//not game specific package import { Image } from '../../../../java/awt/Image.js';
-      const Image = globalThis.java.awt.Image;
+import { Image } from '../../../../java/awt/Image.js';
+      //not GWT import const Image = globalThis.java.awt.Image;
 
       
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
 

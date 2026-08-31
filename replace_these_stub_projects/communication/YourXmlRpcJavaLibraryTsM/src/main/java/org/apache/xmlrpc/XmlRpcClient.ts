@@ -6,27 +6,27 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-//not game specific package import { IOException } from '../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { MalformedURLException } from '../../../java/net/MalformedURLException.js';
-      const MalformedURLException = globalThis.java.net.MalformedURLException;
+import { MalformedURLException } from '../../../java/net/MalformedURLException.js';
+      //not GWT import const MalformedURLException = globalThis.java.net.MalformedURLException;
 
       
-//not game specific package import { URL } from '../../../java/net/URL.js';
-      const URL = globalThis.java.net.URL;
+import { URL } from '../../../java/net/URL.js';
+      //not GWT import const URL = globalThis.java.net.URL;
 
       
-//not game specific package import { Vector } from '../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
-      const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
+import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
+      //not GWT import const CryptInterface = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
 
       
-//not game specific package import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       

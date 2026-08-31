@@ -24,63 +24,63 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { InputStream } from '../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { Hashtable } from '../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { Activity } from '../../../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { Context } from '../../../../android/content/Context.js';
-      const Context = globalThis.android.content.Context;
+import { Context } from '../../../../android/content/Context.js';
+      //not GWT import const Context = globalThis.android.content.Context;
 
       
-//not game specific package import { Resources } from '../../../../android/content/res/Resources.js';
-      const Resources = globalThis.android.content.res.Resources;
+import { Resources } from '../../../../android/content/res/Resources.js';
+      //not GWT import const Resources = globalThis.android.content.res.Resources;
 
       
-//not game specific package import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
-      const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
+import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
+      //not GWT import const DebugFactory = globalThis.org.allbinary.debug.DebugFactory;
 
       
-//not game specific package import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
-      const NoDebug = globalThis.org.allbinary.debug.NoDebug;
+import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
+      //not GWT import const NoDebug = globalThis.org.allbinary.debug.NoDebug;
 
       
-//not game specific package import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
+//not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
       const NullUtil = globalThis.org.allbinary.logic.NullUtil;
 
       
-//not game specific package import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+//not plain js import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
       const ForcedLogUtil = globalThis.org.allbinary.logic.communication.log.ForcedLogUtil;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+//not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
       const PreLogUtil = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
+//not plain js import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
       const HashtableUtil = globalThis.org.allbinary.util.HashtableUtil;
 
       

@@ -22,19 +22,19 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-      const DataInputStream = globalThis.java.io.DataInputStream;
+import { DataInputStream } from '../../../../java/io/DataInputStream.js';
+      //not GWT import const DataInputStream = globalThis.java.io.DataInputStream;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

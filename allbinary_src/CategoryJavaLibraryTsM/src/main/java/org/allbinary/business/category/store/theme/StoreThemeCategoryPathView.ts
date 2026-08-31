@@ -20,32 +20,32 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { CategoryView } from '../../../../../../org/allbinary/business/category/CategoryView.js';
-      const CategoryView = globalThis.org.allbinary.business.category.CategoryView;
+import { CategoryView } from '../../../../../../org/allbinary/business/category/CategoryView.js';
+      //not GWT import const CategoryView = globalThis.org.allbinary.business.category.CategoryView;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { ThemeInterface } from '../../../../../../org/allbinary/logic/visual/theme/ThemeInterface.js';
-      const ThemeInterface = globalThis.org.allbinary.logic.visual.theme.ThemeInterface;
+import { ThemeInterface } from '../../../../../../org/allbinary/logic/visual/theme/ThemeInterface.js';
+      //not GWT import const ThemeInterface = globalThis.org.allbinary.logic.visual.theme.ThemeInterface;
 
       
-//not game specific package import { ThemePropertiesView } from '../../../../../../org/allbinary/logic/visual/theme/ThemePropertiesView.js';
-      const ThemePropertiesView = globalThis.org.allbinary.logic.visual.theme.ThemePropertiesView;
+import { ThemePropertiesView } from '../../../../../../org/allbinary/logic/visual/theme/ThemePropertiesView.js';
+      //not GWT import const ThemePropertiesView = globalThis.org.allbinary.logic.visual.theme.ThemePropertiesView;
 
       
-//not game specific package import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
-      const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
+import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
+      //not GWT import const ThemeValidation = globalThis.org.allbinary.logic.visual.theme.ThemeValidation;
 
       
-//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
 

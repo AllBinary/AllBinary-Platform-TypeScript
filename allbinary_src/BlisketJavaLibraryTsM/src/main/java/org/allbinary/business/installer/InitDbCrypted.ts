@@ -20,123 +20,123 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { InitInfoEntity } from '../../../../org/allbinary/business/init/InitInfoEntity.js';
-      const InitInfoEntity = globalThis.org.allbinary.business.init.InitInfoEntity;
+import { InitInfoEntity } from '../../../../org/allbinary/business/init/InitInfoEntity.js';
+      //not GWT import const InitInfoEntity = globalThis.org.allbinary.business.init.InitInfoEntity;
 
       
-//not game specific package import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-      const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
+import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
+      //not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
 
       
-//not game specific package import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-      const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+      //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
-//not game specific package import { HistoryDbInitInfo } from '../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
-      const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
+import { HistoryDbInitInfo } from '../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
+      //not GWT import const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
 
       
-//not game specific package import { InventoryDbInitInfo } from '../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
-      const InventoryDbInitInfo = globalThis.org.allbinary.business.init.db.InventoryDbInitInfo;
+import { InventoryDbInitInfo } from '../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
+      //not GWT import const InventoryDbInitInfo = globalThis.org.allbinary.business.init.db.InventoryDbInitInfo;
 
       
-//not game specific package import { LogDbInitInfo } from '../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
-      const LogDbInitInfo = globalThis.org.allbinary.business.init.db.LogDbInitInfo;
+import { LogDbInitInfo } from '../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
+      //not GWT import const LogDbInitInfo = globalThis.org.allbinary.business.init.db.LogDbInitInfo;
 
       
-//not game specific package import { StaticPagesDbInitInfo } from '../../../../org/allbinary/business/init/db/StaticPagesDbInitInfo.js';
-      const StaticPagesDbInitInfo = globalThis.org.allbinary.business.init.db.StaticPagesDbInitInfo;
+import { StaticPagesDbInitInfo } from '../../../../org/allbinary/business/init/db/StaticPagesDbInitInfo.js';
+      //not GWT import const StaticPagesDbInitInfo = globalThis.org.allbinary.business.init.db.StaticPagesDbInitInfo;
 
       
-//not game specific package import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-      const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
+import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
+      //not GWT import const UserDbInitInfo = globalThis.org.allbinary.business.init.db.UserDbInitInfo;
 
       
-//not game specific package import { StoreFrontsEntityFactory } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
-      const StoreFrontsEntityFactory = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntityFactory;
+import { StoreFrontsEntityFactory } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
+      //not GWT import const StoreFrontsEntityFactory = globalThis.org.allbinary.data.tables.context.module.storefronts.StoreFrontsEntityFactory;
 
       
-//not game specific package import { LogTableEntityFactory } from '../../../../org/allbinary/data/tables/log/LogTableEntityFactory.js';
-      const LogTableEntityFactory = globalThis.org.allbinary.data.tables.log.LogTableEntityFactory;
+import { LogTableEntityFactory } from '../../../../org/allbinary/data/tables/log/LogTableEntityFactory.js';
+      //not GWT import const LogTableEntityFactory = globalThis.org.allbinary.data.tables.log.LogTableEntityFactory;
 
       
-//not game specific package import { StaticPagesEntityFactory } from '../../../../org/allbinary/data/tables/staticpages/StaticPagesEntityFactory.js';
-      const StaticPagesEntityFactory = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntityFactory;
+import { StaticPagesEntityFactory } from '../../../../org/allbinary/data/tables/staticpages/StaticPagesEntityFactory.js';
+      //not GWT import const StaticPagesEntityFactory = globalThis.org.allbinary.data.tables.staticpages.StaticPagesEntityFactory;
 
       
-//not game specific package import { TransformInfoEntityBuilder } from '../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
-      const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
+import { TransformInfoEntityBuilder } from '../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
+      //not GWT import const TransformInfoEntityBuilder = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityBuilder;
 
       
-//not game specific package import { UserEntityFactory } from '../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
-      const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
+import { UserEntityFactory } from '../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
+      //not GWT import const UserEntityFactory = globalThis.org.allbinary.data.tables.user.UserEntityFactory;
 
       
-//not game specific package import { BillingAddressesEntityFactory } from '../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntityFactory.js';
-      const BillingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntityFactory;
+import { BillingAddressesEntityFactory } from '../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntityFactory.js';
+      //not GWT import const BillingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntityFactory;
 
       
-//not game specific package import { ShippingAddressesEntityFactory } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntityFactory.js';
-      const ShippingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntityFactory;
+import { ShippingAddressesEntityFactory } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntityFactory.js';
+      //not GWT import const ShippingAddressesEntityFactory = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntityFactory;
 
       
-//not game specific package import { InventoryEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-      const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
+import { InventoryEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
+      //not GWT import const InventoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.InventoryEntityFactory;
 
       
-//not game specific package import { OrderHistoryEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
-      const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
+import { OrderHistoryEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
+      //not GWT import const OrderHistoryEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntityFactory;
 
       
-//not game specific package import { OrderItemsEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntityFactory.js';
-      const OrderItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntityFactory;
+import { OrderItemsEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntityFactory.js';
+      //not GWT import const OrderItemsEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntityFactory;
 
       
-//not game specific package import { PaymentEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
-      const PaymentEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityFactory;
+import { PaymentEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
+      //not GWT import const PaymentEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntityFactory;
 
       
-//not game specific package import { PaymentGatewayEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
-      const PaymentGatewayEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.gateway.PaymentGatewayEntityFactory;
+import { PaymentGatewayEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
+      //not GWT import const PaymentGatewayEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.gateway.PaymentGatewayEntityFactory;
 
       
-//not game specific package import { TransactionEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/transaction/TransactionEntityFactory.js';
-      const TransactionEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionEntityFactory;
+import { TransactionEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/transaction/TransactionEntityFactory.js';
+      //not GWT import const TransactionEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionEntityFactory;
 
       
-//not game specific package import { TransactionResultEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/transaction/TransactionResultEntityFactory.js';
-      const TransactionResultEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionResultEntityFactory;
+import { TransactionResultEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/transaction/TransactionResultEntityFactory.js';
+      //not GWT import const TransactionResultEntityFactory = globalThis.org.allbinary.data.tables.user.commerce.money.payment.transaction.TransactionResultEntityFactory;
 
       
-//not game specific package import { QuoteRequestEntityFactory } from '../../../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
-      const QuoteRequestEntityFactory = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntityFactory;
+import { QuoteRequestEntityFactory } from '../../../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
+      //not GWT import const QuoteRequestEntityFactory = globalThis.org.allbinary.data.tables.user.quoterequest.QuoteRequestEntityFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbDatabaseManagement } from '../../../../org/allbinary/logic/communication/sql/AbDatabaseManagement.js';
-      const AbDatabaseManagement = globalThis.org.allbinary.logic.communication.sql.AbDatabaseManagement;
+import { AbDatabaseManagement } from '../../../../org/allbinary/logic/communication/sql/AbDatabaseManagement.js';
+      //not GWT import const AbDatabaseManagement = globalThis.org.allbinary.logic.communication.sql.AbDatabaseManagement;
 
       
-//not game specific package import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
-      const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
+      //not GWT import const AbDataOutputStream = globalThis.org.allbinary.logic.io.AbDataOutputStream;
 
       
-//not game specific package import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
-      const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
+import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
+      //not GWT import const DataOutputStreamFactory = globalThis.org.allbinary.logic.io.DataOutputStreamFactory;
 
       
-//not game specific package import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-      const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
+      //not GWT import const AbFile = globalThis.org.allbinary.logic.io.file.AbFile;
 
       
-//not game specific package import { FileFactory } from '../../../../org/allbinary/logic/io/file/FileFactory.js';
-      const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
+import { FileFactory } from '../../../../org/allbinary/logic/io/file/FileFactory.js';
+      //not GWT import const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

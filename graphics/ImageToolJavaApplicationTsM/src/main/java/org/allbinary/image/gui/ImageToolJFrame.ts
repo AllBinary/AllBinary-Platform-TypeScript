@@ -22,67 +22,67 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { File } from '../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { Arrays } from '../../../../java/util/Arrays.js';
-      const Arrays = globalThis.java.util.Arrays;
+import { Arrays } from '../../../../java/util/Arrays.js';
+      //not GWT import const Arrays = globalThis.java.util.Arrays;
 
       
-//not game specific package import { Comparator } from '../../../../java/util/Comparator.js';
-      const Comparator = globalThis.java.util.Comparator;
+import { Comparator } from '../../../../java/util/Comparator.js';
+      //not GWT import const Comparator = globalThis.java.util.Comparator;
 
       
-//not game specific package import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-      const ImageIO = globalThis.javax.imageio.ImageIO;
+import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
+      //not GWT import const ImageIO = globalThis.javax.imageio.ImageIO;
 
       
-//not game specific package import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
-      const FileJDialog = globalThis.org.allbinary.gui.dialog.FileJDialog;
+import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
+      //not GWT import const FileJDialog = globalThis.org.allbinary.gui.dialog.FileJDialog;
 
       
-//not game specific package import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
-      const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
+import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
+      //not GWT import const FileJDialogListenerInterface = globalThis.org.allbinary.gui.dialog.FileJDialogListenerInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-      const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+      //not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
       
-//not game specific package import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-      const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+      //not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
 
       
-//not game specific package import { ColorRange } from '../../../../org/allbinary/media/image/analysis/ColorRange.js';
-      const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
+import { ColorRange } from '../../../../org/allbinary/media/image/analysis/ColorRange.js';
+      //not GWT import const ColorRange = globalThis.org.allbinary.media.image.analysis.ColorRange;
 
       
-//not game specific package import { ColorRangeInterface } from '../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-      const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+import { ColorRangeInterface } from '../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
+      //not GWT import const ColorRangeInterface = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
 
       
-//not game specific package import { ImageAnalysis } from '../../../../org/allbinary/media/image/analysis/ImageAnalysis.js';
-      const ImageAnalysis = globalThis.org.allbinary.media.image.analysis.ImageAnalysis;
+import { ImageAnalysis } from '../../../../org/allbinary/media/image/analysis/ImageAnalysis.js';
+      //not GWT import const ImageAnalysis = globalThis.org.allbinary.media.image.analysis.ImageAnalysis;
 
       
-//not game specific package import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
-      const ImageAnalysisResults = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
+import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
+      //not GWT import const ImageAnalysisResults = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
 
       
-//not game specific package import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not plain js import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
       const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

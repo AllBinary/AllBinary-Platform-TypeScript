@@ -22,11 +22,11 @@
         
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
-      const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
+import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
+      //not GWT import const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
 
       
-//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       

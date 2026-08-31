@@ -18,52 +18,52 @@
 
 
 
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
-      const ColorChangeEventHandler = globalThis.org.allbinary.graphics.color.ColorChangeEventHandler;
+import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
+      //not GWT import const ColorChangeEventHandler = globalThis.org.allbinary.graphics.color.ColorChangeEventHandler;
 
       
-//not game specific package import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/ColorChangeListener.js';
-      const ColorChangeListener = globalThis.org.allbinary.graphics.color.ColorChangeListener;
+import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/ColorChangeListener.js';
+      //not GWT import const ColorChangeListener = globalThis.org.allbinary.graphics.color.ColorChangeListener;
 
       
-//not game specific package import { FormPaintable } from '../../../../org/allbinary/graphics/form/FormPaintable.js';
-      const FormPaintable = globalThis.org.allbinary.graphics.form.FormPaintable;
+import { FormPaintable } from '../../../../org/allbinary/graphics/form/FormPaintable.js';
+      //not GWT import const FormPaintable = globalThis.org.allbinary.graphics.form.FormPaintable;
 
       
-//not game specific package import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-      const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
+      //not GWT import const ScrollSelectionForm = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
 
       
-//not game specific package import { ABStringComponent } from '../../../../org/allbinary/graphics/form/item/ABStringComponent.js';
-      const ABStringComponent = globalThis.org.allbinary.graphics.form.item.ABStringComponent;
+import { ABStringComponent } from '../../../../org/allbinary/graphics/form/item/ABStringComponent.js';
+      //not GWT import const ABStringComponent = globalThis.org.allbinary.graphics.form.item.ABStringComponent;
 
       
-//not game specific package import { ABTextItem } from '../../../../org/allbinary/graphics/form/item/ABTextItem.js';
-      const ABTextItem = globalThis.org.allbinary.graphics.form.item.ABTextItem;
+import { ABTextItem } from '../../../../org/allbinary/graphics/form/item/ABTextItem.js';
+      //not GWT import const ABTextItem = globalThis.org.allbinary.graphics.form.item.ABTextItem;
 
       
-//not game specific package import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-      const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
+      //not GWT import const Paintable = globalThis.org.allbinary.graphics.paint.Paintable;
 
       
-//not game specific package import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-      const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+      //not GWT import const AllBinaryEventObject = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
 
       
-//not game specific package import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
 

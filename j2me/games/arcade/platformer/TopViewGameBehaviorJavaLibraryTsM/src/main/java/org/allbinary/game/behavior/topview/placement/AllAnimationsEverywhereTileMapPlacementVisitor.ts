@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
-      const TiledMap = globalThis.org.mapeditor.core.TiledMap;
+import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
+      //not GWT import const TiledMap = globalThis.org.mapeditor.core.TiledMap;
 
       
 

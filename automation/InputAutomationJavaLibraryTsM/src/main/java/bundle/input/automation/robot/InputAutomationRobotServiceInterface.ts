@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { InputRobotInterface } from '../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-      const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+import { InputRobotInterface } from '../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
+      //not GWT import const InputRobotInterface = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
       
-//not game specific package import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
-      const OSGIServiceInterface = globalThis.org.allbinary.osgi.OSGIServiceInterface;
+import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
+      //not GWT import const OSGIServiceInterface = globalThis.org.allbinary.osgi.OSGIServiceInterface;
 
       
 

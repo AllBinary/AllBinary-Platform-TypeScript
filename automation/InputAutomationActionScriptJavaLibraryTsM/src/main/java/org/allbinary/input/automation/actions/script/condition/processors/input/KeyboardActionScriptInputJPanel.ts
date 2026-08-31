@@ -22,39 +22,39 @@
         
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
-//not game specific package import { swing } from '../../../../../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
-      const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
+import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
+      //not GWT import const KeySingletonFactory = globalThis.org.allbinary.input.KeySingletonFactory;
 
       
-//not game specific package import { InputRobot } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobot.js';
-      const InputRobot = globalThis.org.allbinary.input.automation.robot.InputRobot;
+import { InputRobot } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobot.js';
+      //not GWT import const InputRobot = globalThis.org.allbinary.input.automation.robot.InputRobot;
 
       
-//not game specific package import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-      const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
+import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
+      //not GWT import const InputRobotFactory = globalThis.org.allbinary.input.automation.robot.InputRobotFactory;
 
       
-//not game specific package import { TempInputRobotNames } from '../../../../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
-      const TempInputRobotNames = globalThis.org.allbinary.input.automation.robot.TempInputRobotNames;
+import { TempInputRobotNames } from '../../../../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
+      //not GWT import const TempInputRobotNames = globalThis.org.allbinary.input.automation.robot.TempInputRobotNames;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-      const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
+import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
+      //not GWT import const StringValidationUtil = globalThis.org.allbinary.logic.string.StringValidationUtil;
 
       
-//not game specific package import { CommonPhoneStrings } from '../../../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
+//not plain js import { CommonPhoneStrings } from '../../../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
       const CommonPhoneStrings = globalThis.org.allbinary.string.CommonPhoneStrings;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

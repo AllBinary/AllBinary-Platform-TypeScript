@@ -24,80 +24,80 @@
         
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-//not game specific package import { XmlAccessType } from '../../../../../../javax/xml/bind/annotation/XmlAccessType.js';
-      const XmlAccessType = globalThis.javax.xml.bind.annotation.XmlAccessType;
+import { XmlAccessType } from '../../../../../../javax/xml/bind/annotation/XmlAccessType.js';
+      //not GWT import const XmlAccessType = globalThis.javax.xml.bind.annotation.XmlAccessType;
 
       
-//not game specific package import { XmlAccessorType } from '../../../../../../javax/xml/bind/annotation/XmlAccessorType.js';
-      const XmlAccessorType = globalThis.javax.xml.bind.annotation.XmlAccessorType;
+import { XmlAccessorType } from '../../../../../../javax/xml/bind/annotation/XmlAccessorType.js';
+      //not GWT import const XmlAccessorType = globalThis.javax.xml.bind.annotation.XmlAccessorType;
 
       
-//not game specific package import { XmlElement } from '../../../../../../javax/xml/bind/annotation/XmlElement.js';
-      const XmlElement = globalThis.javax.xml.bind.annotation.XmlElement;
+import { XmlElement } from '../../../../../../javax/xml/bind/annotation/XmlElement.js';
+      //not GWT import const XmlElement = globalThis.javax.xml.bind.annotation.XmlElement;
 
       
-//not game specific package import { XmlRootElement } from '../../../../../../javax/xml/bind/annotation/XmlRootElement.js';
-      const XmlRootElement = globalThis.javax.xml.bind.annotation.XmlRootElement;
+import { XmlRootElement } from '../../../../../../javax/xml/bind/annotation/XmlRootElement.js';
+      //not GWT import const XmlRootElement = globalThis.javax.xml.bind.annotation.XmlRootElement;
 
       
-//not game specific package import { XmlType } from '../../../../../../javax/xml/bind/annotation/XmlType.js';
-      const XmlType = globalThis.javax.xml.bind.annotation.XmlType;
+import { XmlType } from '../../../../../../javax/xml/bind/annotation/XmlType.js';
+      //not GWT import const XmlType = globalThis.javax.xml.bind.annotation.XmlType;
 
       
-//not game specific package import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
-      const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
+import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
+      //not GWT import const DynamicObjectData = globalThis.org.allbinary.business.DynamicObjectData;
 
       
-//not game specific package import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-      const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
+import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
+      //not GWT import const DomNodeHelper = globalThis.org.allbinary.data.tree.dom.DomNodeHelper;
 
       
-//not game specific package import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-      const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
+      //not GWT import const DomSearchHelper = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
       
-//not game specific package import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-      const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
+import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
+      //not GWT import const ModDomHelper = globalThis.org.allbinary.data.tree.dom.ModDomHelper;
 
       
-//not game specific package import { InputAutomationData } from '../../../../../../org/allbinary/input/automation/InputAutomationData.js';
-      const InputAutomationData = globalThis.org.allbinary.input.automation.InputAutomationData;
+import { InputAutomationData } from '../../../../../../org/allbinary/input/automation/InputAutomationData.js';
+      //not GWT import const InputAutomationData = globalThis.org.allbinary.input.automation.InputAutomationData;
 
       
-//not game specific package import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
-      const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
+import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
+      //not GWT import const InputAutomationModuleData = globalThis.org.allbinary.input.automation.module.InputAutomationModuleData;
 
       
-//not game specific package import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-      const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
+      //not GWT import const InputAutomationModuleFactoryInterface = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-      const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
+import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
+      //not GWT import const AbeFactory = globalThis.org.allbinary.logic.system.loader.AbeFactory;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { Document } from '../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-      const NodeList = globalThis.org.w3c.dom.NodeList;
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
+      //not GWT import const NodeList = globalThis.org.w3c.dom.NodeList;
 
       
 

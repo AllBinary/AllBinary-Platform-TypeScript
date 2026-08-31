@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { Scoreable } from '../../../../../../../../org/allbinary/game/score/Scoreable.js';
-      const Scoreable = globalThis.org.allbinary.game.score.Scoreable;
+import { Scoreable } from '../../../../../../../../org/allbinary/game/score/Scoreable.js';
+      //not GWT import const Scoreable = globalThis.org.allbinary.game.score.Scoreable;
 
       
 

@@ -20,28 +20,28 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { TransformsGeneratorUtil } from '../../../../../../org/allbinary/logic/visual/transform/generator/TransformsGeneratorUtil.js';
-      const TransformsGeneratorUtil = globalThis.org.allbinary.logic.visual.transform.generator.TransformsGeneratorUtil;
+import { TransformsGeneratorUtil } from '../../../../../../org/allbinary/logic/visual/transform/generator/TransformsGeneratorUtil.js';
+      //not GWT import const TransformsGeneratorUtil = globalThis.org.allbinary.logic.visual.transform.generator.TransformsGeneratorUtil;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { TransformInfosData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
-      const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
+import { TransformInfosData } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
+      //not GWT import const TransformInfosData = globalThis.org.allbinary.logic.visual.transform.info.TransformInfosData;
 
       
-//not game specific package import { HttpStoreComponentView } from '../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-      const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
+import { HttpStoreComponentView } from '../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
+      //not GWT import const HttpStoreComponentView = globalThis.views.business.context.modules.storefront.HttpStoreComponentView;
 
       
 

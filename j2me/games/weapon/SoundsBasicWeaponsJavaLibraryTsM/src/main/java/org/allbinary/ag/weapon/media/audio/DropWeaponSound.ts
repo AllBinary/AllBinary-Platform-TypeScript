@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { CompositeSound } from '../../../../../../org/allbinary/media/audio/CompositeSound.js';
-      const CompositeSound = globalThis.org.allbinary.media.audio.CompositeSound;
+import { CompositeSound } from '../../../../../../org/allbinary/media/audio/CompositeSound.js';
+      //not GWT import const CompositeSound = globalThis.org.allbinary.media.audio.CompositeSound;
 
       
-//not game specific package import { Sound } from '../../../../../../org/allbinary/media/audio/Sound.js';
-      const Sound = globalThis.org.allbinary.media.audio.Sound;
+import { Sound } from '../../../../../../org/allbinary/media/audio/Sound.js';
+      //not GWT import const Sound = globalThis.org.allbinary.media.audio.Sound;
 
       
 

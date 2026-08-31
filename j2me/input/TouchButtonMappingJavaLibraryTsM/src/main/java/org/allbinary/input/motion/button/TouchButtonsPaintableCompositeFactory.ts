@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
-      const InputMappingInterface = globalThis.org.allbinary.game.input.mapping.InputMappingInterface;
+import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
+      //not GWT import const InputMappingInterface = globalThis.org.allbinary.game.input.mapping.InputMappingInterface;
 
       
-//not game specific package import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
-//not game specific package import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-      const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
+import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
+      //not GWT import const ProcessPaintable = globalThis.org.allbinary.graphics.paint.ProcessPaintable;
 
       
 

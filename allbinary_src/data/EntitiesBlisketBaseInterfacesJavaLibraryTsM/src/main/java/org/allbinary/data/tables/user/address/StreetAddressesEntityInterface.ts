@@ -20,12 +20,12 @@
 
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { StreetAddress } from '../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+import { StreetAddress } from '../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
-//not game specific package import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-      const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
+import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
+      //not GWT import const BasicDataTableInterface = globalThis.org.allbinary.data.tables.BasicDataTableInterface;
 
       
 

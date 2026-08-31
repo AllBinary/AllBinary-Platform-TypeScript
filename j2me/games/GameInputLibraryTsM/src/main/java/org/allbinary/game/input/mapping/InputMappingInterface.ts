@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-      const GameKey = globalThis.org.allbinary.game.input.GameKey;
+import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
+      //not GWT import const GameKey = globalThis.org.allbinary.game.input.GameKey;
 
       
-//not game specific package import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-      const Input = globalThis.org.allbinary.game.input.Input;
+import { Input } from '../../../../../org/allbinary/game/input/Input.js';
+      //not GWT import const Input = globalThis.org.allbinary.game.input.Input;
 
       
 

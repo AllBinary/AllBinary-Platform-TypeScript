@@ -20,24 +20,24 @@
 
             import { Exception } from '../../java/lang/Exception.js';
         
-//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
-      const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
+import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
+      //not GWT import const Tag = globalThis.javax.servlet.jsp.tagext.Tag;
 
       
-//not game specific package import { DownloadItemsHelperFactory } from '../../admin/taghelpers/DownloadItemsHelperFactory.js';
-      const DownloadItemsHelperFactory = globalThis.admin.taghelpers.DownloadItemsHelperFactory;
+import { DownloadItemsHelperFactory } from '../../admin/taghelpers/DownloadItemsHelperFactory.js';
+      //not GWT import const DownloadItemsHelperFactory = globalThis.admin.taghelpers.DownloadItemsHelperFactory;
 
       
-//not game specific package import { DownloadItemsRequestHelperFactory } from '../../admin/taghelpers/DownloadItemsRequestHelperFactory.js';
-      const DownloadItemsRequestHelperFactory = globalThis.admin.taghelpers.DownloadItemsRequestHelperFactory;
+import { DownloadItemsRequestHelperFactory } from '../../admin/taghelpers/DownloadItemsRequestHelperFactory.js';
+      //not GWT import const DownloadItemsRequestHelperFactory = globalThis.admin.taghelpers.DownloadItemsRequestHelperFactory;
 
       
-//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
 

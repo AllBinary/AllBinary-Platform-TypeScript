@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { Set } from '../../../../../java/util/Set.js';
-      const Set = globalThis.java.util.Set;
+import { Set } from '../../../../../java/util/Set.js';
+      //not GWT import const Set = globalThis.java.util.Set;
 
       
 

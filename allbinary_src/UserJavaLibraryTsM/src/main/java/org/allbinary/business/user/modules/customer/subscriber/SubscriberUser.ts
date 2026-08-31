@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { User } from '../../../../../../../org/allbinary/business/user/modules/User.js';
-      const User = globalThis.org.allbinary.business.user.modules.User;
+import { User } from '../../../../../../../org/allbinary/business/user/modules/User.js';
+      //not GWT import const User = globalThis.org.allbinary.business.user.modules.User;
 
       
-//not game specific package import { Subscription } from '../../../../../../../org/allbinary/business/user/subscription/Subscription.js';
-      const Subscription = globalThis.org.allbinary.business.user.subscription.Subscription;
+import { Subscription } from '../../../../../../../org/allbinary/business/user/subscription/Subscription.js';
+      //not GWT import const Subscription = globalThis.org.allbinary.business.user.subscription.Subscription;
 
       
-//not game specific package import { WeblisketSessionInterface } from '../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
-      const WeblisketSessionInterface = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
+import { WeblisketSessionInterface } from '../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
+      //not GWT import const WeblisketSessionInterface = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
 
       
 

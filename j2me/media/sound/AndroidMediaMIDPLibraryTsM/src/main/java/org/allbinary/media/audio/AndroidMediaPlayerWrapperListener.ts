@@ -8,27 +8,27 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      //not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-//not game specific package import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
-      const MediaPlayer = globalThis.android.media.MediaPlayer;
+import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
+      //not GWT import const MediaPlayer = globalThis.android.media.MediaPlayer;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

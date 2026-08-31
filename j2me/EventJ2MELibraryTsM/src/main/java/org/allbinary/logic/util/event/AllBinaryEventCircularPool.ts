@@ -18,11 +18,11 @@
 
 
 
-//not game specific package import { BaseCircularPool } from '../../../../../org/allbinary/logic/util/cache/BaseCircularPool.js';
-      const BaseCircularPool = globalThis.org.allbinary.logic.util.cache.BaseCircularPool;
+import { BaseCircularPool } from '../../../../../org/allbinary/logic/util/cache/BaseCircularPool.js';
+      //not GWT import const BaseCircularPool = globalThis.org.allbinary.logic.util.cache.BaseCircularPool;
 
       
-//not game specific package import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
+//not plain js import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
       const CircularIndexUtil = globalThis.org.allbinary.util.CircularIndexUtil;
 
       

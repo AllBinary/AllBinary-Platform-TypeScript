@@ -18,20 +18,20 @@
 
 
 
-//not game specific package import { Context } from '../../../android/content/Context.js';
-      const Context = globalThis.android.content.Context;
+import { Context } from '../../../android/content/Context.js';
+      //not GWT import const Context = globalThis.android.content.Context;
 
       
-//not game specific package import { Vibrator } from '../../../android/os/Vibrator.js';
-      const Vibrator = globalThis.android.os.Vibrator;
+import { Vibrator } from '../../../android/os/Vibrator.js';
+      //not GWT import const Vibrator = globalThis.android.os.Vibrator;
 
       
-//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      //not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
       
 

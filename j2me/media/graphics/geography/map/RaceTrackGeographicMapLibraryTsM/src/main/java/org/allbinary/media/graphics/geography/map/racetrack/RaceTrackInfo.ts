@@ -22,8 +22,8 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-//not game specific package import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-      const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
+import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
+      //not GWT import const BasicColor = globalThis.org.allbinary.graphics.color.BasicColor;
 
       
 

@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
-      const LocalPlayerInputIdFactory = globalThis.org.allbinary.game.input.LocalPlayerInputIdFactory;
+import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
+      //not GWT import const LocalPlayerInputIdFactory = globalThis.org.allbinary.game.input.LocalPlayerInputIdFactory;
 
       
-//not game specific package import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-      const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
+import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
+      //not GWT import const EventListenerInterface = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
       
 

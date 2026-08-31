@@ -20,44 +20,44 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { IOException } from '../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
-      const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
+import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
+      //not GWT import const AudioFormat = globalThis.javax.sound.sampled.AudioFormat;
 
       
-//not game specific package import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
-      const AudioInputStream = globalThis.javax.sound.sampled.AudioInputStream;
+import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
+      //not GWT import const AudioInputStream = globalThis.javax.sound.sampled.AudioInputStream;
 
       
-//not game specific package import { BooleanControl } from '../../../../javax/sound/sampled/BooleanControl.js';
-      const BooleanControl = globalThis.javax.sound.sampled.BooleanControl;
+import { BooleanControl } from '../../../../javax/sound/sampled/BooleanControl.js';
+      //not GWT import const BooleanControl = globalThis.javax.sound.sampled.BooleanControl;
 
       
-//not game specific package import { Clip } from '../../../../javax/sound/sampled/Clip.js';
-      const Clip = globalThis.javax.sound.sampled.Clip;
+import { Clip } from '../../../../javax/sound/sampled/Clip.js';
+      //not GWT import const Clip = globalThis.javax.sound.sampled.Clip;
 
       
-//not game specific package import { Control } from '../../../../javax/sound/sampled/Control.js';
-      const Control = globalThis.javax.sound.sampled.Control;
+import { Control } from '../../../../javax/sound/sampled/Control.js';
+      //not GWT import const Control = globalThis.javax.sound.sampled.Control;
 
       
-//not game specific package import { Type } from '../../../../javax/sound/sampled/Control/Type.js';
-      const Type = globalThis.javax.sound.sampled.Control.Type;
+import { Type } from '../../../../javax/sound/sampled/Control/Type.js';
+      //not GWT import const Type = globalThis.javax.sound.sampled.Control.Type;
 
       
-//not game specific package import { Info } from '../../../../javax/sound/sampled/Line/Info.js';
-      const Info = globalThis.javax.sound.sampled.Line.Info;
+import { Info } from '../../../../javax/sound/sampled/Line/Info.js';
+      //not GWT import const Info = globalThis.javax.sound.sampled.Line.Info;
 
       
-//not game specific package import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
-      const LineListener = globalThis.javax.sound.sampled.LineListener;
+import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
+      //not GWT import const LineListener = globalThis.javax.sound.sampled.LineListener;
 
       
-//not game specific package import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUnavailableException.js';
-      const LineUnavailableException = globalThis.javax.sound.sampled.LineUnavailableException;
+import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUnavailableException.js';
+      //not GWT import const LineUnavailableException = globalThis.javax.sound.sampled.LineUnavailableException;
 
       
 

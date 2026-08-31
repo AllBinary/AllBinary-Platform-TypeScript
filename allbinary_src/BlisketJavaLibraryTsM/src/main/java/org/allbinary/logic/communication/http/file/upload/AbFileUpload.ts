@@ -18,32 +18,32 @@
 
 
 
-//not game specific package import { IOException } from '../../../../../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../../../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { FileItemFactory } from '../../../../../../../org/apache/commons/fileupload/FileItemFactory.js';
-      const FileItemFactory = globalThis.org.apache.commons.fileupload.FileItemFactory;
+import { FileItemFactory } from '../../../../../../../org/apache/commons/fileupload/FileItemFactory.js';
+      //not GWT import const FileItemFactory = globalThis.org.apache.commons.fileupload.FileItemFactory;
 
       
-//not game specific package import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
-      const FileItemIterator = globalThis.org.apache.commons.fileupload.FileItemIterator;
+import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
+      //not GWT import const FileItemIterator = globalThis.org.apache.commons.fileupload.FileItemIterator;
 
       
-//not game specific package import { FileUpload } from '../../../../../../../org/apache/commons/fileupload/FileUpload.js';
-      const FileUpload = globalThis.org.apache.commons.fileupload.FileUpload;
+import { FileUpload } from '../../../../../../../org/apache/commons/fileupload/FileUpload.js';
+      //not GWT import const FileUpload = globalThis.org.apache.commons.fileupload.FileUpload;
 
       
-//not game specific package import { FileUploadException } from '../../../../../../../org/apache/commons/fileupload/FileUploadException.js';
-      const FileUploadException = globalThis.org.apache.commons.fileupload.FileUploadException;
+import { FileUploadException } from '../../../../../../../org/apache/commons/fileupload/FileUploadException.js';
+      //not GWT import const FileUploadException = globalThis.org.apache.commons.fileupload.FileUploadException;
 
       
-//not game specific package import { ServletRequestContext } from '../../../../../../../org/apache/commons/fileupload/servlet/ServletRequestContext.js';
-      const ServletRequestContext = globalThis.org.apache.commons.fileupload.servlet.ServletRequestContext;
+import { ServletRequestContext } from '../../../../../../../org/apache/commons/fileupload/servlet/ServletRequestContext.js';
+      //not GWT import const ServletRequestContext = globalThis.org.apache.commons.fileupload.servlet.ServletRequestContext;
 
       
 

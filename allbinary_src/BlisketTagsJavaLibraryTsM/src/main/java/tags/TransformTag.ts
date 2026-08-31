@@ -20,36 +20,36 @@
 
             import { Exception } from '../java/lang/Exception.js';
         
-//not game specific package import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
-      const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
+import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
+      //not GWT import const TagHelperFactoryInterface = globalThis.admin.taghelpers.TagHelperFactoryInterface;
 
       
-//not game specific package import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not game specific package import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not game specific package import { ViewHelperFactory } from '../taghelpers/ViewHelperFactory.js';
-      const ViewHelperFactory = globalThis.taghelpers.ViewHelperFactory;
+import { ViewHelperFactory } from '../taghelpers/ViewHelperFactory.js';
+      //not GWT import const ViewHelperFactory = globalThis.taghelpers.ViewHelperFactory;
 
       
-//not game specific package import { TransformInfoTag } from '../tags/transform/info/TransformInfoTag.js';
-      const TransformInfoTag = globalThis.tags.transform.info.TransformInfoTag;
+import { TransformInfoTag } from '../tags/transform/info/TransformInfoTag.js';
+      //not GWT import const TransformInfoTag = globalThis.tags.transform.info.TransformInfoTag;
 
       
 

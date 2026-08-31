@@ -28,40 +28,40 @@
         
             import { Long } from '../../../../../java/lang/Long.js';
         
-//not game specific package import { awt } from '../../../../../java/awt.js';
-      const awt = globalThis.java.awt;
+import { awt } from '../../../../../java/awt.js';
+      //not GWT import const awt = globalThis.java.awt;
 
       
-//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-      const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
+import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
+      //not GWT import const ColorCacheFactory = globalThis.org.allbinary.graphics.color.ColorCacheFactory;
 
       
-//not game specific package import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-      const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
+import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
+      //not GWT import const ColorCacheable = globalThis.org.allbinary.graphics.color.ColorCacheable;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
-//not game specific package import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDeltaFactory.js';
-      const PixelDeltaFactory = globalThis.org.allbinary.media.image.comparison.pixel.PixelDeltaFactory;
+import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDeltaFactory.js';
+      //not GWT import const PixelDeltaFactory = globalThis.org.allbinary.media.image.comparison.pixel.PixelDeltaFactory;
 
       
 

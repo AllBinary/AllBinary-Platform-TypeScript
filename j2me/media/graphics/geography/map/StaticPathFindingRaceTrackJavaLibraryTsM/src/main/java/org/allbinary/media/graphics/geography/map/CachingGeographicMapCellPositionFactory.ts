@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-      const Hashtable = globalThis.java.util.Hashtable;
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
+      //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-//not game specific package import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
-      const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
+import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
+      //not GWT import const CellPosition = globalThis.org.allbinary.graphics.CellPosition;
 
       
 

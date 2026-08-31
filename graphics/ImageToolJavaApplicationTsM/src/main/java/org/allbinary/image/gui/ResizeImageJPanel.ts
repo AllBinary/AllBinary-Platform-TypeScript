@@ -28,43 +28,43 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-//not game specific package import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { Raster } from '../../../../java/awt/image/Raster.js';
-      const Raster = globalThis.java.awt.image.Raster;
+import { Raster } from '../../../../java/awt/image/Raster.js';
+      //not GWT import const Raster = globalThis.java.awt.image.Raster;
 
       
-//not game specific package import { File } from '../../../../java/io/File.js';
-      const File = globalThis.java.io.File;
+import { File } from '../../../../java/io/File.js';
+      //not GWT import const File = globalThis.java.io.File;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-      const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
+import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
+      //not GWT import const FileWrapperUtil = globalThis.org.allbinary.logic.io.file.FileWrapperUtil;
 
       
-//not game specific package import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-      const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
+import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
+      //not GWT import const ImagePersistanceUtil = globalThis.org.allbinary.media.image.ImagePersistanceUtil;
 
       
-//not game specific package import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-      const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
+      //not GWT import const ImageProcessorInput = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
       
-//not game specific package import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-      const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
+      //not GWT import const ImageProcessorInputCompositeInterface = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
 
       
-//not game specific package import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
-      const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
+import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
+      //not GWT import const ImageUtil = globalThis.org.allbinary.media.image.ImageUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

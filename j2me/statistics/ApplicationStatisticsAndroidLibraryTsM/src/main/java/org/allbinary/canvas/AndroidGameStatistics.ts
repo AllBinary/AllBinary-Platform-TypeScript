@@ -20,23 +20,23 @@
 
             import { Long } from '../../../java/lang/Long.js';
         
-//not game specific package import { View } from '../../../android/view/View.js';
-      const View = globalThis.android.view.View;
+import { View } from '../../../android/view/View.js';
+      //not GWT import const View = globalThis.android.view.View;
 
       
-//not game specific package import { BaseViewWrapper } from '../../../org/allbinary/android/view/BaseViewWrapper.js';
-      const BaseViewWrapper = globalThis.org.allbinary.android.view.BaseViewWrapper;
+import { BaseViewWrapper } from '../../../org/allbinary/android/view/BaseViewWrapper.js';
+      //not GWT import const BaseViewWrapper = globalThis.org.allbinary.android.view.BaseViewWrapper;
 
       
-//not game specific package import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js';
-      const ViewWrapper = globalThis.org.allbinary.android.view.ViewWrapper;
+import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js';
+      //not GWT import const ViewWrapper = globalThis.org.allbinary.android.view.ViewWrapper;
 
       
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       

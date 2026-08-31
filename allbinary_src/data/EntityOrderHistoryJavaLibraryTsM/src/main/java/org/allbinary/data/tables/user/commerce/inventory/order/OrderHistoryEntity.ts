@@ -26,156 +26,156 @@
         
             import { Float } from '../../../../../../../../java/lang/Float.js';
         
-//not game specific package import { Calendar } from '../../../../../../../../java/util/Calendar.js';
-      const Calendar = globalThis.java.util.Calendar;
+import { Calendar } from '../../../../../../../../java/util/Calendar.js';
+      //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-//not game specific package import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { Random } from '../../../../../../../../java/util/Random.js';
-      const Random = globalThis.java.util.Random;
+import { Random } from '../../../../../../../../java/util/Random.js';
+      //not GWT import const Random = globalThis.java.util.Random;
 
       
-//not game specific package import { Vector } from '../../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-      const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
+import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
+      //not GWT import const StoreFrontData = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontData;
 
       
-//not game specific package import { StoreFrontFactory } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-      const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
+import { StoreFrontFactory } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
+      //not GWT import const StoreFrontFactory = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontFactory;
 
       
-//not game specific package import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-      const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
+import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
+      //not GWT import const StoreFrontInterface = globalThis.org.allbinary.business.context.modules.storefront.StoreFrontInterface;
 
       
-//not game specific package import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
-      const EntryData = globalThis.org.allbinary.business.entry.EntryData;
+import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
+      //not GWT import const EntryData = globalThis.org.allbinary.business.entry.EntryData;
 
       
-//not game specific package import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
-      const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
+import { HistoryDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
+      //not GWT import const HistoryDbInitInfo = globalThis.org.allbinary.business.init.db.HistoryDbInitInfo;
 
       
-//not game specific package import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
-      const UserData = globalThis.org.allbinary.business.user.UserData;
+import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
+      //not GWT import const UserData = globalThis.org.allbinary.business.user.UserData;
 
       
-//not game specific package import { BillingAddressData } from '../../../../../../../../org/allbinary/business/user/address/BillingAddressData.js';
-      const BillingAddressData = globalThis.org.allbinary.business.user.address.BillingAddressData;
+import { BillingAddressData } from '../../../../../../../../org/allbinary/business/user/address/BillingAddressData.js';
+      //not GWT import const BillingAddressData = globalThis.org.allbinary.business.user.address.BillingAddressData;
 
       
-//not game specific package import { ShippingAddressData } from '../../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
-      const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
+import { ShippingAddressData } from '../../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
+      //not GWT import const ShippingAddressData = globalThis.org.allbinary.business.user.address.ShippingAddressData;
 
       
-//not game specific package import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-      const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
+import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
+      //not GWT import const StreetAddress = globalThis.org.allbinary.business.user.address.StreetAddress;
 
       
-//not game specific package import { Basket } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/Basket.js';
-      const Basket = globalThis.org.allbinary.business.user.commerce.inventory.basket.Basket;
+import { Basket } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/Basket.js';
+      //not GWT import const Basket = globalThis.org.allbinary.business.user.commerce.inventory.basket.Basket;
 
       
-//not game specific package import { BasketInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
-      const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
+import { BasketInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
+      //not GWT import const BasketInterface = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
 
       
-//not game specific package import { Order } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/Order.js';
-      const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
+import { Order } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/Order.js';
+      //not GWT import const Order = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
 
       
-//not game specific package import { OrderData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-      const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+import { OrderData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
+      //not GWT import const OrderData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
 
       
-//not game specific package import { OrderHistory } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-      const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
+import { OrderHistory } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
+      //not GWT import const OrderHistory = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
 
       
-//not game specific package import { OrderHistoryData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
-      const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+import { OrderHistoryData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
+      //not GWT import const OrderHistoryData = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
 
       
-//not game specific package import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-      const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
+import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
+      //not GWT import const Money = globalThis.org.allbinary.business.user.commerce.money.Money;
 
       
-//not game specific package import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
-      const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
+      //not GWT import const PaymentData = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
 
       
-//not game specific package import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
-      const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
+import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
+      //not GWT import const PaymentInterface = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
 
       
-//not game specific package import { TaxFactory } from '../../../../../../../../org/allbinary/business/user/commerce/money/tax/TaxFactory.js';
-      const TaxFactory = globalThis.org.allbinary.business.user.commerce.money.tax.TaxFactory;
+import { TaxFactory } from '../../../../../../../../org/allbinary/business/user/commerce/money/tax/TaxFactory.js';
+      //not GWT import const TaxFactory = globalThis.org.allbinary.business.user.commerce.money.tax.TaxFactory;
 
       
-//not game specific package import { ShippingMethodData } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
-      const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
+import { ShippingMethodData } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
+      //not GWT import const ShippingMethodData = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodData;
 
       
-//not game specific package import { ShippingMethods } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethods.js';
-      const ShippingMethods = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethods;
+import { ShippingMethods } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethods.js';
+      //not GWT import const ShippingMethods = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethods;
 
       
-//not game specific package import { ShippingInterface } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js';
-      const ShippingInterface = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
+import { ShippingInterface } from '../../../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js';
+      //not GWT import const ShippingInterface = globalThis.org.allbinary.business.user.commerce.shipping.modules.ShippingInterface;
 
       
-//not game specific package import { OrderHistoryIdGenerator } from '../../../../../../../../org/allbinary/data/generator/OrderHistoryIdGenerator.js';
-      const OrderHistoryIdGenerator = globalThis.org.allbinary.data.generator.OrderHistoryIdGenerator;
+import { OrderHistoryIdGenerator } from '../../../../../../../../org/allbinary/data/generator/OrderHistoryIdGenerator.js';
+      //not GWT import const OrderHistoryIdGenerator = globalThis.org.allbinary.data.generator.OrderHistoryIdGenerator;
 
       
-//not game specific package import { TableDataFactory } from '../../../../../../../../org/allbinary/data/tables/TableDataFactory.js';
-      const TableDataFactory = globalThis.org.allbinary.data.tables.TableDataFactory;
+import { TableDataFactory } from '../../../../../../../../org/allbinary/data/tables/TableDataFactory.js';
+      //not GWT import const TableDataFactory = globalThis.org.allbinary.data.tables.TableDataFactory;
 
       
-//not game specific package import { BillingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js';
-      const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
+import { BillingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js';
+      //not GWT import const BillingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.billing.BillingAddressesEntity;
 
       
-//not game specific package import { ShippingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
-      const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
+import { ShippingAddressesEntity } from '../../../../../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
+      //not GWT import const ShippingAddressesEntity = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
 
       
-//not game specific package import { PaymentEntity } from '../../../../../../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
-      const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
+import { PaymentEntity } from '../../../../../../../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
+      //not GWT import const PaymentEntity = globalThis.org.allbinary.data.tables.user.commerce.money.payment.PaymentEntity;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-      const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
+import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
+      //not GWT import const AbSqlBean = globalThis.org.allbinary.logic.communication.sql.AbSqlBean;
 
       
-//not game specific package import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
-      const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
+import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
+      //not GWT import const SuperCrypt = globalThis.org.allbinary.logic.control.crypt.SuperCrypt;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { ServiceClientInformationInterfaceFactory } from '../../../../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-      const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
+import { ServiceClientInformationInterfaceFactory } from '../../../../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
+      //not GWT import const ServiceClientInformationInterfaceFactory = globalThis.org.allbinary.logic.system.security.licensing.ServiceClientInformationInterfaceFactory;
 
       
 

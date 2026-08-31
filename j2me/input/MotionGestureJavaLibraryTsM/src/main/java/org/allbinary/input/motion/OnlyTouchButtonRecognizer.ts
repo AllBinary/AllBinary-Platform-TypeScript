@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/button/TouchButtonRecognizer.js';
-      const TouchButtonRecognizer = globalThis.org.allbinary.input.motion.button.TouchButtonRecognizer;
+import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/button/TouchButtonRecognizer.js';
+      //not GWT import const TouchButtonRecognizer = globalThis.org.allbinary.input.motion.button.TouchButtonRecognizer;
 
       
 

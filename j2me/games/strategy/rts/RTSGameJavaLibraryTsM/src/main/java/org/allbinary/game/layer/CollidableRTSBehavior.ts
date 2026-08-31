@@ -20,16 +20,16 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
-      const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
+import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
+      //not GWT import const CollisionType = globalThis.org.allbinary.game.collision.CollisionType;
 
       
-//not game specific package import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
-      const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
+import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
+      //not GWT import const CollisionTypeFactory = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
 
       
-//not game specific package import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
-      const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
+import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
+      //not GWT import const CollidableDestroyableDamageableBehavior = globalThis.org.allbinary.game.layer.special.CollidableDestroyableDamageableBehavior;
 
       
 

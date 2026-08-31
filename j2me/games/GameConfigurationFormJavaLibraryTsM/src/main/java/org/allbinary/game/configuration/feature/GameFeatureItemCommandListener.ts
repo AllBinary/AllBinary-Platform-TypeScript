@@ -22,47 +22,47 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-      const Command = globalThis.javax.microedition.lcdui.Command;
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-//not game specific package import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-      const Item = globalThis.javax.microedition.lcdui.Item;
+import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+      //not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
 
       
-//not game specific package import { ItemCommandListener } from '../../../../../javax/microedition/lcdui/ItemCommandListener.js';
-      const ItemCommandListener = globalThis.javax.microedition.lcdui.ItemCommandListener;
+import { ItemCommandListener } from '../../../../../javax/microedition/lcdui/ItemCommandListener.js';
+      //not GWT import const ItemCommandListener = globalThis.javax.microedition.lcdui.ItemCommandListener;
 
       
-//not game specific package import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
-      const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
+import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
+      //not GWT import const GameConfigurationGauge = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
 
       
-//not game specific package import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
-      const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
+import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
+      //not GWT import const GameConfigurationUtil = globalThis.org.allbinary.game.configuration.GameConfigurationUtil;
 
       
-//not game specific package import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
-      const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
+import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
+      //not GWT import const GameOptionsForm = globalThis.org.allbinary.game.configuration.GameOptionsForm;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { MidletStrings } from '../../../../../org/allbinary/midlet/MidletStrings.js';
-      const MidletStrings = globalThis.org.allbinary.midlet.MidletStrings;
+import { MidletStrings } from '../../../../../org/allbinary/midlet/MidletStrings.js';
+      //not GWT import const MidletStrings = globalThis.org.allbinary.midlet.MidletStrings;
 
       
-//not game specific package import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
+//not plain js import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
       const CommonLabels = globalThis.org.allbinary.string.CommonLabels;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

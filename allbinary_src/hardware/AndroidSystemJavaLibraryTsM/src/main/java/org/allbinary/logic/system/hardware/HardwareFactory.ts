@@ -22,27 +22,27 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-      const TsUtil = globalThis.org.allbinary.TsUtil;
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      //not GWT import const TsUtil = globalThis.org.allbinary.TsUtil;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
-      const AndroidHardware = globalThis.org.allbinary.logic.system.hardware.android.AndroidHardware;
+import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
+      //not GWT import const AndroidHardware = globalThis.org.allbinary.logic.system.hardware.android.AndroidHardware;
 
       
-//not game specific package import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-      const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
+      //not GWT import const GenericOperatingSystem = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
 
       
-//not game specific package import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
-      const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
+import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
+      //not GWT import const OperatingSystems = globalThis.org.allbinary.logic.system.os.OperatingSystems;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

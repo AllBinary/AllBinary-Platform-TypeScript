@@ -22,27 +22,27 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CachePolicyFactory } from '../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
-      const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
+import { CachePolicyFactory } from '../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+      //not GWT import const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
 
       
-//not game specific package import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-      const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
+import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
+      //not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
 
       
-//not game specific package import { PoolInterfaceFactory } from '../../../../../org/allbinary/logic/util/cache/PoolInterfaceFactory.js';
-      const PoolInterfaceFactory = globalThis.org.allbinary.logic.util.cache.PoolInterfaceFactory;
+import { PoolInterfaceFactory } from '../../../../../org/allbinary/logic/util/cache/PoolInterfaceFactory.js';
+      //not GWT import const PoolInterfaceFactory = globalThis.org.allbinary.logic.util.cache.PoolInterfaceFactory;
 
       
-//not game specific package import { PoolTypeFactory } from '../../../../../org/allbinary/logic/util/cache/PoolTypeFactory.js';
-      const PoolTypeFactory = globalThis.org.allbinary.logic.util.cache.PoolTypeFactory;
+import { PoolTypeFactory } from '../../../../../org/allbinary/logic/util/cache/PoolTypeFactory.js';
+      //not GWT import const PoolTypeFactory = globalThis.org.allbinary.logic.util.cache.PoolTypeFactory;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

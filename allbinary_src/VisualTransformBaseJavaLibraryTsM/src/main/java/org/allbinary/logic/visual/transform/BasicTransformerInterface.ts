@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { InputStream } from '../../../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-      const URIResolver = globalThis.javax.xml.transform.URIResolver;
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
+      //not GWT import const URIResolver = globalThis.javax.xml.transform.URIResolver;
 
       
-//not game specific package import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-      const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
+      //not GWT import const StreamSource = globalThis.javax.xml.transform.stream.StreamSource;
 
       
-//not game specific package import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
-      const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
+import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
+      //not GWT import const CompositeTransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.CompositeTransformInfoInterface;
 
       
 

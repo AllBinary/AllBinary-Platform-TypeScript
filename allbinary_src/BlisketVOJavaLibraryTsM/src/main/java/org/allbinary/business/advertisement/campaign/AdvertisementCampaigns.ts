@@ -20,20 +20,20 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { AdvertisementInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementInterface.js';
-      const AdvertisementInterface = globalThis.org.allbinary.business.advertisement.AdvertisementInterface;
+import { AdvertisementInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementInterface.js';
+      //not GWT import const AdvertisementInterface = globalThis.org.allbinary.business.advertisement.AdvertisementInterface;
 
       
-//not game specific package import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
-      const AdvertisementsInterface = globalThis.org.allbinary.business.advertisement.AdvertisementsInterface;
+import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
+      //not GWT import const AdvertisementsInterface = globalThis.org.allbinary.business.advertisement.AdvertisementsInterface;
 
       
-//not game specific package import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
-      const AdvertisementSearchInterface = globalThis.org.allbinary.business.advertisement.search.AdvertisementSearchInterface;
+import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
+      //not GWT import const AdvertisementSearchInterface = globalThis.org.allbinary.business.advertisement.search.AdvertisementSearchInterface;
 
       
 

@@ -18,20 +18,20 @@
 
 
 
-//not game specific package import { URL } from '../../../../../java/net/URL.js';
-      const URL = globalThis.java.net.URL;
+import { URL } from '../../../../../java/net/URL.js';
+      //not GWT import const URL = globalThis.java.net.URL;
 
       
-//not game specific package import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-      const HelpSet = globalThis.javax.help.HelpSet;
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
+      //not GWT import const HelpSet = globalThis.javax.help.HelpSet;
 
       
-//not game specific package import { swing } from '../../../../../javax/swing.js';
-      const swing = globalThis.javax.swing;
+import { swing } from '../../../../../javax/swing.js';
+      //not GWT import const swing = globalThis.javax.swing;
 
       
-//not game specific package import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
-      const JavaHelpUtil = globalThis.org.allbinary.logic.java.help.JavaHelpUtil;
+import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
+      //not GWT import const JavaHelpUtil = globalThis.org.allbinary.logic.java.help.JavaHelpUtil;
 
       
 

@@ -22,76 +22,76 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-//not game specific package import { Calendar } from '../../java/util/Calendar.js';
-      const Calendar = globalThis.java.util.Calendar;
+import { Calendar } from '../../java/util/Calendar.js';
+      //not GWT import const Calendar = globalThis.java.util.Calendar;
 
       
-//not game specific package import { Vector } from '../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-      const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
+      //not GWT import const JspTagException = globalThis.javax.servlet.jsp.JspTagException;
 
       
-//not game specific package import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
-      const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
+import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
+      //not GWT import const TagSupport = globalThis.javax.servlet.jsp.tagext.TagSupport;
 
       
-//not game specific package import { InstallerInfo } from '../../org/allbinary/business/init/InstallerInfo.js';
-      const InstallerInfo = globalThis.org.allbinary.business.init.InstallerInfo;
+import { InstallerInfo } from '../../org/allbinary/business/init/InstallerInfo.js';
+      //not GWT import const InstallerInfo = globalThis.org.allbinary.business.init.InstallerInfo;
 
       
-//not game specific package import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
-      const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
+import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
+      //not GWT import const BasicUserRole = globalThis.org.allbinary.business.user.role.BasicUserRole;
 
       
-//not game specific package import { BasicUserRoleFactory } from '../../org/allbinary/business/user/role/BasicUserRoleFactory.js';
-      const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
+import { BasicUserRoleFactory } from '../../org/allbinary/business/user/role/BasicUserRoleFactory.js';
+      //not GWT import const BasicUserRoleFactory = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
 
       
-//not game specific package import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-      const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
+      //not GWT import const AbResponseHandler = globalThis.org.allbinary.logic.communication.http.request.AbResponseHandler;
 
       
-//not game specific package import { BasicWeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/BasicWeblisketSession.js';
-      const BasicWeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.BasicWeblisketSession;
+import { BasicWeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/BasicWeblisketSession.js';
+      //not GWT import const BasicWeblisketSession = globalThis.org.allbinary.logic.communication.http.request.session.BasicWeblisketSession;
 
       
-//not game specific package import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
-      const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
+      //not GWT import const WeblisketSessionData = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
 
       
-//not game specific package import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { BooleanFactory } from '../../org/allbinary/logic/java/bool/BooleanFactory.js';
-      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+import { BooleanFactory } from '../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
-//not game specific package import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
-      const BooleanUtil = globalThis.org.allbinary.logic.java.bool.BooleanUtil;
+import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
+      //not GWT import const BooleanUtil = globalThis.org.allbinary.logic.java.bool.BooleanUtil;
 
       
-//not game specific package import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-      const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
+      //not GWT import const LicensingException = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
 
       
-//not game specific package import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
-      const CustomTagSupport = globalThis.tags.CustomTagSupport;
+import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
+      //not GWT import const CustomTagSupport = globalThis.tags.CustomTagSupport;
 
       
 

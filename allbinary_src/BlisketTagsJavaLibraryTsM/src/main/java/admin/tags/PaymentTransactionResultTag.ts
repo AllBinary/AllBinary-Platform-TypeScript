@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { PaymentTransactionResultHelperFactory } from '../../admin/taghelpers/PaymentTransactionResultHelperFactory.js';
-      const PaymentTransactionResultHelperFactory = globalThis.admin.taghelpers.PaymentTransactionResultHelperFactory;
+import { PaymentTransactionResultHelperFactory } from '../../admin/taghelpers/PaymentTransactionResultHelperFactory.js';
+      //not GWT import const PaymentTransactionResultHelperFactory = globalThis.admin.taghelpers.PaymentTransactionResultHelperFactory;
 
       
 

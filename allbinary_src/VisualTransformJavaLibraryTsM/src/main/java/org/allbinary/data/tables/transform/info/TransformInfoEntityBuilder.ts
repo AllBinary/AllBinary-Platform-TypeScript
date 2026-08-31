@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { TransformInfoHttpStoreFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreFactory.js';
-      const TransformInfoHttpStoreFactory = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStoreFactory;
+import { TransformInfoHttpStoreFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreFactory.js';
+      //not GWT import const TransformInfoHttpStoreFactory = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStoreFactory;
 
       
-//not game specific package import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
-      const TransformInfoObjectConfigAndManipulatorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactory;
+import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
+      //not GWT import const TransformInfoObjectConfigAndManipulatorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactory;
 
       
-//not game specific package import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js';
-      const TransformInfoObjectConfigGeneratorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactory;
+import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js';
+      //not GWT import const TransformInfoObjectConfigGeneratorFactory = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactory;
 
       
 

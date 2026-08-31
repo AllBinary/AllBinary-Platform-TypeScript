@@ -20,20 +20,20 @@
 
             import { Object } from '../../../../../../java/lang/Object.js';
         
-//not game specific package import { Vector } from '../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { HtmlInput } from '../../../../../../org/allbinary/logic/visual/dhtml/html/input/HtmlInput.js';
-      const HtmlInput = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInput;
+import { HtmlInput } from '../../../../../../org/allbinary/logic/visual/dhtml/html/input/HtmlInput.js';
+      //not GWT import const HtmlInput = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInput;
 
       
-//not game specific package import { HtmlTable } from '../../../../../../org/allbinary/logic/visual/dhtml/html/table/HtmlTable.js';
-      const HtmlTable = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlTable;
+import { HtmlTable } from '../../../../../../org/allbinary/logic/visual/dhtml/html/table/HtmlTable.js';
+      //not GWT import const HtmlTable = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlTable;
 
       
 

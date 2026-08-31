@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { Vector } from '../../../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { LineReader } from '../../../../../../../org/allbinary/logic/io/LineReader.js';
-      const LineReader = globalThis.org.allbinary.logic.io.LineReader;
+import { LineReader } from '../../../../../../../org/allbinary/logic/io/LineReader.js';
+      //not GWT import const LineReader = globalThis.org.allbinary.logic.io.LineReader;
 
       
-//not game specific package import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
-      const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
+import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
+      //not GWT import const HtmlTag = globalThis.org.allbinary.logic.visual.dhtml.html.HtmlTag;
 
       
 

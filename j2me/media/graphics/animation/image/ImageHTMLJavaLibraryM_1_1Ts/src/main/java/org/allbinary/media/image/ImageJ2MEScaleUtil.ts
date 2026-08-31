@@ -22,27 +22,27 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
+//not plain js import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
       const PlaynImmutableImage = globalThis.org.microemu.device.playn.PlaynImmutableImage;
 
       
-//not game specific package import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
+//not plain js import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
       const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-//not game specific package import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+//not plain js import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
       const CanvasImage = globalThis.playn.core.CanvasImage;
 
       
-//not game specific package import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
+//not plain js import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
       const CanvasSurface = globalThis.playn.core.CanvasSurface;
 
       

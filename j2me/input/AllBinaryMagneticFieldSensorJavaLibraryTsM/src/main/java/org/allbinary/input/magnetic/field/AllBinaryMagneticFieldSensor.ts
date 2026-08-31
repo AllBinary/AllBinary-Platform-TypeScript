@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { AllBinarySensor } from '../../../../../org/allbinary/input/AllBinarySensor.js';
-      const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+import { AllBinarySensor } from '../../../../../org/allbinary/input/AllBinarySensor.js';
+      //not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
 
       
 

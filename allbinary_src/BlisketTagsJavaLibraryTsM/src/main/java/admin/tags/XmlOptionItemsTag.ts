@@ -18,12 +18,12 @@
 
 
 
-//not game specific package import { XmlOptionItemsHelperFactory } from '../../admin/taghelpers/XmlOptionItemsHelperFactory.js';
-      const XmlOptionItemsHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsHelperFactory;
+import { XmlOptionItemsHelperFactory } from '../../admin/taghelpers/XmlOptionItemsHelperFactory.js';
+      //not GWT import const XmlOptionItemsHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsHelperFactory;
 
       
-//not game specific package import { XmlOptionItemsRequestHelperFactory } from '../../admin/taghelpers/XmlOptionItemsRequestHelperFactory.js';
-      const XmlOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsRequestHelperFactory;
+import { XmlOptionItemsRequestHelperFactory } from '../../admin/taghelpers/XmlOptionItemsRequestHelperFactory.js';
+      //not GWT import const XmlOptionItemsRequestHelperFactory = globalThis.admin.taghelpers.XmlOptionItemsRequestHelperFactory;
 
       
 

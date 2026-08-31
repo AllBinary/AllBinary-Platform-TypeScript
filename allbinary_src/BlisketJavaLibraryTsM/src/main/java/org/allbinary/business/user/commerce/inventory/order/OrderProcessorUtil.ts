@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { OrderIdGenerator } from '../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js';
-      const OrderIdGenerator = globalThis.org.allbinary.data.generator.OrderIdGenerator;
+import { OrderIdGenerator } from '../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js';
+      //not GWT import const OrderIdGenerator = globalThis.org.allbinary.data.generator.OrderIdGenerator;
 
       
-//not game specific package import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
-      const OrderHistoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
+import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
+      //not GWT import const OrderHistoryEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity;
 
       
-//not game specific package import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntity.js';
-      const OrderItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntity;
+import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntity.js';
+      //not GWT import const OrderItemsEntity = globalThis.org.allbinary.data.tables.user.commerce.inventory.order.OrderItemsEntity;
 
       
 

@@ -26,120 +26,120 @@
         
             import { Thread } from '../../../java/lang/Thread.js';
         
-//not game specific package import { JsType } from '../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
-      const NullImage = globalThis.javax.microedition.lcdui.NullImage;
+import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
+      //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-//not game specific package import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
-      const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
+import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
+      //not GWT import const J2MEUtil = globalThis.org.allbinary.J2MEUtil;
 
       
-//not game specific package import { LazyImageRotationAnimation } from '../../../org/allbinary/animation/image/LazyImageRotationAnimation.js';
-      const LazyImageRotationAnimation = globalThis.org.allbinary.animation.image.LazyImageRotationAnimation;
+import { LazyImageRotationAnimation } from '../../../org/allbinary/animation/image/LazyImageRotationAnimation.js';
+      //not GWT import const LazyImageRotationAnimation = globalThis.org.allbinary.animation.image.LazyImageRotationAnimation;
 
       
-//not game specific package import { GameGlobalsFactory } from '../../../org/allbinary/canvas/GameGlobalsFactory.js';
-      const GameGlobalsFactory = globalThis.org.allbinary.canvas.GameGlobalsFactory;
+import { GameGlobalsFactory } from '../../../org/allbinary/canvas/GameGlobalsFactory.js';
+      //not GWT import const GameGlobalsFactory = globalThis.org.allbinary.canvas.GameGlobalsFactory;
 
       
-//not game specific package import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-      const Processor = globalThis.org.allbinary.canvas.Processor;
+import { Processor } from '../../../org/allbinary/canvas/Processor.js';
+      //not GWT import const Processor = globalThis.org.allbinary.canvas.Processor;
 
       
-//not game specific package import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       
-//not game specific package import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-      const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+      //not GWT import const ResourceUtil = globalThis.org.allbinary.data.resource.ResourceUtil;
 
       
-//not game specific package import { ABToGBUtil } from '../../../org/allbinary/game/canvas/ABToGBUtil.js';
-      const ABToGBUtil = globalThis.org.allbinary.game.canvas.ABToGBUtil;
+import { ABToGBUtil } from '../../../org/allbinary/game/canvas/ABToGBUtil.js';
+      //not GWT import const ABToGBUtil = globalThis.org.allbinary.game.canvas.ABToGBUtil;
 
       
-//not game specific package import { AllBinaryGameCanvas } from '../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-      const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+import { AllBinaryGameCanvas } from '../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+      //not GWT import const AllBinaryGameCanvas = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
       
-//not game specific package import { GDLazyResources } from '../../../org/allbinary/game/gd/resource/GDLazyResources.js';
-      const GDLazyResources = globalThis.org.allbinary.game.gd.resource.GDLazyResources;
+import { GDLazyResources } from '../../../org/allbinary/game/gd/resource/GDLazyResources.js';
+      //not GWT import const GDLazyResources = globalThis.org.allbinary.game.gd.resource.GDLazyResources;
 
       
-//not game specific package import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
-      const GDResources = globalThis.org.allbinary.game.gd.resource.GDResources;
+import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
+      //not GWT import const GDResources = globalThis.org.allbinary.game.gd.resource.GDResources;
 
       
-//not game specific package import { ProgressCanvas } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-      const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+import { ProgressCanvas } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+      //not GWT import const ProgressCanvas = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
       
-//not game specific package import { ProgressCanvasFactory } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-      const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+import { ProgressCanvasFactory } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+      //not GWT import const ProgressCanvasFactory = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 
       
-//not game specific package import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { Memory } from '../../../org/allbinary/system/Memory.js';
-      const Memory = globalThis.org.allbinary.system.Memory;
+import { Memory } from '../../../org/allbinary/system/Memory.js';
+      //not GWT import const Memory = globalThis.org.allbinary.system.Memory;
 
       
-//not game specific package import { BaseImageLoadingProcessor } from '../../../org/allbinary/thread/BaseImageLoadingProcessor.js';
-      const BaseImageLoadingProcessor = globalThis.org.allbinary.thread.BaseImageLoadingProcessor;
+import { BaseImageLoadingProcessor } from '../../../org/allbinary/thread/BaseImageLoadingProcessor.js';
+      //not GWT import const BaseImageLoadingProcessor = globalThis.org.allbinary.thread.BaseImageLoadingProcessor;
 
       
-//not game specific package import { ConcurrentImageLoadingProcessor } from '../../../org/allbinary/thread/ConcurrentImageLoadingProcessor.js';
-      const ConcurrentImageLoadingProcessor = globalThis.org.allbinary.thread.ConcurrentImageLoadingProcessor;
+import { ConcurrentImageLoadingProcessor } from '../../../org/allbinary/thread/ConcurrentImageLoadingProcessor.js';
+      //not GWT import const ConcurrentImageLoadingProcessor = globalThis.org.allbinary.thread.ConcurrentImageLoadingProcessor;
 
       
-//not game specific package import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
-      const SynchObject = globalThis.org.allbinary.thread.SynchObject;
+import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
+      //not GWT import const SynchObject = globalThis.org.allbinary.thread.SynchObject;
 
       
-//not game specific package import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       
-//not game specific package import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
+//not plain js import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
       const BasicArrayListD = globalThis.org.allbinary.util.BasicArrayListD;
 
       
-//not game specific package import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
-      const JsMethod = globalThis.jsinterop.annotations.JsMethod;
+import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
+      //not GWT import const JsMethod = globalThis.jsinterop.annotations.JsMethod;
 
       
-//not game specific package import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
-      const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
+import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
+      //not GWT import const JsConstructor = globalThis.jsinterop.annotations.JsConstructor;
 
       
-//not game specific package import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
-      const JsProperty = globalThis.jsinterop.annotations.JsProperty;
+import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
+      //not GWT import const JsProperty = globalThis.jsinterop.annotations.JsProperty;
 
       
 

@@ -28,15 +28,15 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-//not game specific package import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
-      const Constructor = globalThis.java.lang.reflect.Constructor;
+import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
+      //not GWT import const Constructor = globalThis.java.lang.reflect.Constructor;
 
       
-//not game specific package import { Method } from '../../../../../java/lang/reflect/Method.js';
-      const Method = globalThis.java.lang.reflect.Method;
+import { Method } from '../../../../../java/lang/reflect/Method.js';
+      //not GWT import const Method = globalThis.java.lang.reflect.Method;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

@@ -22,59 +22,59 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-      const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
+import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
+      //not GWT import const LogConfigTypeFactory = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
 
       
-//not game specific package import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-      const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
+import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
+      //not GWT import const LogConfigTypes = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypes;
 
       
-//not game specific package import { ComponentFactory } from '../../../../../../org/allbinary/logic/system/hardware/components/ComponentFactory.js';
-      const ComponentFactory = globalThis.org.allbinary.logic.system.hardware.components.ComponentFactory;
+import { ComponentFactory } from '../../../../../../org/allbinary/logic/system/hardware/components/ComponentFactory.js';
+      //not GWT import const ComponentFactory = globalThis.org.allbinary.logic.system.hardware.components.ComponentFactory;
 
       
-//not game specific package import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-      const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
+import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
+      //not GWT import const HardwareComponentInterface = globalThis.org.allbinary.logic.system.hardware.components.interfaces.HardwareComponentInterface;
 
       
-//not game specific package import { Bridge } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Bridge.js';
-      const Bridge = globalThis.org.allbinary.logic.system.hardware.components.linux.Bridge;
+import { Bridge } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Bridge.js';
+      //not GWT import const Bridge = globalThis.org.allbinary.logic.system.hardware.components.linux.Bridge;
 
       
-//not game specific package import { Ethernet } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Ethernet.js';
-      const Ethernet = globalThis.org.allbinary.logic.system.hardware.components.linux.Ethernet;
+import { Ethernet } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Ethernet.js';
+      //not GWT import const Ethernet = globalThis.org.allbinary.logic.system.hardware.components.linux.Ethernet;
 
       
-//not game specific package import { HardDriveController } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/HardDriveController.js';
-      const HardDriveController = globalThis.org.allbinary.logic.system.hardware.components.linux.HardDriveController;
+import { HardDriveController } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/HardDriveController.js';
+      //not GWT import const HardDriveController = globalThis.org.allbinary.logic.system.hardware.components.linux.HardDriveController;
 
       
-//not game specific package import { Media } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Media.js';
-      const Media = globalThis.org.allbinary.logic.system.hardware.components.linux.Media;
+import { Media } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Media.js';
+      //not GWT import const Media = globalThis.org.allbinary.logic.system.hardware.components.linux.Media;
 
       
-//not game specific package import { PCI } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/PCI.js';
-      const PCI = globalThis.org.allbinary.logic.system.hardware.components.linux.PCI;
+import { PCI } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/PCI.js';
+      //not GWT import const PCI = globalThis.org.allbinary.logic.system.hardware.components.linux.PCI;
 
       
-//not game specific package import { Unknown } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Unknown.js';
-      const Unknown = globalThis.org.allbinary.logic.system.hardware.components.linux.Unknown;
+import { Unknown } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Unknown.js';
+      //not GWT import const Unknown = globalThis.org.allbinary.logic.system.hardware.components.linux.Unknown;
 
       
-//not game specific package import { Usb } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Usb.js';
-      const Usb = globalThis.org.allbinary.logic.system.hardware.components.linux.Usb;
+import { Usb } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Usb.js';
+      //not GWT import const Usb = globalThis.org.allbinary.logic.system.hardware.components.linux.Usb;
 
       
-//not game specific package import { Video } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Video.js';
-      const Video = globalThis.org.allbinary.logic.system.hardware.components.linux.Video;
+import { Video } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Video.js';
+      //not GWT import const Video = globalThis.org.allbinary.logic.system.hardware.components.linux.Video;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

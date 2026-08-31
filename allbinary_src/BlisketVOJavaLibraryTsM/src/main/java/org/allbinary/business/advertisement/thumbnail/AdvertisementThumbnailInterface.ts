@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { AdvertisementImageInterface } from '../../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
-      const AdvertisementImageInterface = globalThis.org.allbinary.business.advertisement.image.AdvertisementImageInterface;
+import { AdvertisementImageInterface } from '../../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
+      //not GWT import const AdvertisementImageInterface = globalThis.org.allbinary.business.advertisement.image.AdvertisementImageInterface;
 
       
 

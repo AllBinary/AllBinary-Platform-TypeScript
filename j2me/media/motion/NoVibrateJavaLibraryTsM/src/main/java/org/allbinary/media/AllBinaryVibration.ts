@@ -18,8 +18,8 @@
 
 
 
-//not game specific package import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-      const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
+      //not GWT import const GameConfigurationCentral = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
       
 

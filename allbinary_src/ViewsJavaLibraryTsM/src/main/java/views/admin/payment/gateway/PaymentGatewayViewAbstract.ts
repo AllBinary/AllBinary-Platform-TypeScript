@@ -18,24 +18,24 @@
 
 
 
-//not game specific package import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
-      const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
+import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
+      //not GWT import const HttpServletRequest = globalThis.javax.servlet.http.HttpServletRequest;
 
       
-//not game specific package import { PaymentGatewayData } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
-      const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+import { PaymentGatewayData } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
+      //not GWT import const PaymentGatewayData = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
 
       
-//not game specific package import { PaymentGatewayPrimaryKey } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayPrimaryKey.js';
-      const PaymentGatewayPrimaryKey = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayPrimaryKey;
+import { PaymentGatewayPrimaryKey } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayPrimaryKey.js';
+      //not GWT import const PaymentGatewayPrimaryKey = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayPrimaryKey;
 
       
-//not game specific package import { TransformInfoHttpComposite } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js';
-      const TransformInfoHttpComposite = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpComposite;
+import { TransformInfoHttpComposite } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js';
+      //not GWT import const TransformInfoHttpComposite = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpComposite;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
 

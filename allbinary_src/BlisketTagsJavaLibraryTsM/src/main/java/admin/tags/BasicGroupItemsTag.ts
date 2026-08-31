@@ -18,16 +18,16 @@
 
 
 
-//not game specific package import { HashMap } from '../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { BasicGroupItemsHelperFactory } from '../../admin/taghelpers/BasicGroupItemsHelperFactory.js';
-      const BasicGroupItemsHelperFactory = globalThis.admin.taghelpers.BasicGroupItemsHelperFactory;
+import { BasicGroupItemsHelperFactory } from '../../admin/taghelpers/BasicGroupItemsHelperFactory.js';
+      //not GWT import const BasicGroupItemsHelperFactory = globalThis.admin.taghelpers.BasicGroupItemsHelperFactory;
 
       
-//not game specific package import { BasicGroupItemsRequestHelperFactory } from '../../admin/taghelpers/BasicGroupItemsRequestHelperFactory.js';
-      const BasicGroupItemsRequestHelperFactory = globalThis.admin.taghelpers.BasicGroupItemsRequestHelperFactory;
+import { BasicGroupItemsRequestHelperFactory } from '../../admin/taghelpers/BasicGroupItemsRequestHelperFactory.js';
+      //not GWT import const BasicGroupItemsRequestHelperFactory = globalThis.admin.taghelpers.BasicGroupItemsRequestHelperFactory;
 
       
 

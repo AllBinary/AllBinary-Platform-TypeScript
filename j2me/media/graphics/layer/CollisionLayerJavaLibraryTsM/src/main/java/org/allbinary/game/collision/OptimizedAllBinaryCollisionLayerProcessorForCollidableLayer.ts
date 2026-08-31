@@ -20,24 +20,24 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-      const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
+import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+      //not GWT import const CollidableCompositeLayer = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-      const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
+      //not GWT import const AllBinaryLayerManager = globalThis.org.allbinary.layer.AllBinaryLayerManager;
 
       
-//not game specific package import { LayerManager } from '../../../../org/allbinary/layer/LayerManager.js';
-      const LayerManager = globalThis.org.allbinary.layer.LayerManager;
+import { LayerManager } from '../../../../org/allbinary/layer/LayerManager.js';
+      //not GWT import const LayerManager = globalThis.org.allbinary.layer.LayerManager;
 
       
-//not game specific package import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
-      const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
+import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
+      //not GWT import const LayerProcessor = globalThis.org.allbinary.layer.LayerProcessor;
 
       
 

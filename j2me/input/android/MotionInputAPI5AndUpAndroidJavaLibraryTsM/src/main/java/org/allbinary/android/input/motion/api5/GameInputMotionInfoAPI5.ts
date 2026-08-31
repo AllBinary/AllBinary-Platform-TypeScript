@@ -20,8 +20,8 @@
 
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
-//not game specific package import { GameInputMotionInfo } from '../../../../../../org/allbinary/android/input/motion/GameInputMotionInfo.js';
-      const GameInputMotionInfo = globalThis.org.allbinary.android.input.motion.GameInputMotionInfo;
+import { GameInputMotionInfo } from '../../../../../../org/allbinary/android/input/motion/GameInputMotionInfo.js';
+      //not GWT import const GameInputMotionInfo = globalThis.org.allbinary.android.input.motion.GameInputMotionInfo;
 
       
 

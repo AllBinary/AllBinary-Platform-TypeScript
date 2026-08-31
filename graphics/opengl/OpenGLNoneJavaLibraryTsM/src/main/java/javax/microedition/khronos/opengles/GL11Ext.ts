@@ -4,20 +4,20 @@
 
 
 
-//not game specific package import { Buffer } from '../../../../java/nio/Buffer.js';
-      const Buffer = globalThis.java.nio.Buffer;
+import { Buffer } from '../../../../java/nio/Buffer.js';
+      //not GWT import const Buffer = globalThis.java.nio.Buffer;
 
       
-//not game specific package import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
-      const FloatBuffer = globalThis.java.nio.FloatBuffer;
+import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
+      //not GWT import const FloatBuffer = globalThis.java.nio.FloatBuffer;
 
       
-//not game specific package import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
-      const IntBuffer = globalThis.java.nio.IntBuffer;
+import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
+      //not GWT import const IntBuffer = globalThis.java.nio.IntBuffer;
 
       
-//not game specific package import { ShortBuffer } from '../../../../java/nio/ShortBuffer.js';
-      const ShortBuffer = globalThis.java.nio.ShortBuffer;
+import { ShortBuffer } from '../../../../java/nio/ShortBuffer.js';
+      //not GWT import const ShortBuffer = globalThis.java.nio.ShortBuffer;
 
       
 

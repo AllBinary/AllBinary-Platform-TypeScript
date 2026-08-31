@@ -24,36 +24,36 @@
         
             import { System } from '../../../../../java/lang/System.js';
         
-//not game specific package import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-      const BufferedImage = globalThis.java.awt.image.BufferedImage;
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
+      //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-//not game specific package import { Vector } from '../../../../../java/util/Vector.js';
-      const Vector = globalThis.java.util.Vector;
+import { Vector } from '../../../../../java/util/Vector.js';
+      //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-//not game specific package import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-      const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
+import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
+      //not GWT import const PoolInterface = globalThis.org.allbinary.logic.util.cache.PoolInterface;
 
       
-//not game specific package import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
-      const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
+import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
+      //not GWT import const BufferedImageCacheable = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
 
       
-//not game specific package import { BufferedImageInfo } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
-      const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
+import { BufferedImageInfo } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
+      //not GWT import const BufferedImageInfo = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
 
       
-//not game specific package import { BufferedImageInfoFactory } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
-      const BufferedImageInfoFactory = globalThis.org.allbinary.media.image.cache.BufferedImageInfoFactory;
+import { BufferedImageInfoFactory } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
+      //not GWT import const BufferedImageInfoFactory = globalThis.org.allbinary.media.image.cache.BufferedImageInfoFactory;
 
       
-//not game specific package import { BufferedImagePoolSingleton } from '../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
-      const BufferedImagePoolSingleton = globalThis.org.allbinary.media.image.cache.BufferedImagePoolSingleton;
+import { BufferedImagePoolSingleton } from '../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
+      //not GWT import const BufferedImagePoolSingleton = globalThis.org.allbinary.media.image.cache.BufferedImagePoolSingleton;
 
       
-//not game specific package import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
-      const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
+import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
+      //not GWT import const PixelDelta = globalThis.org.allbinary.media.image.comparison.pixel.PixelDelta;
 
       
 

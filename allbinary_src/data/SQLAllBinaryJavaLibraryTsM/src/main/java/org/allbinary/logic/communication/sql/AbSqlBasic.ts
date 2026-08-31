@@ -28,47 +28,47 @@
         
             import { Thread } from '../../../../../java/lang/Thread.js';
         
-//not game specific package import { Connection } from '../../../../../java/sql/Connection.js';
-      const Connection = globalThis.java.sql.Connection;
+import { Connection } from '../../../../../java/sql/Connection.js';
+      //not GWT import const Connection = globalThis.java.sql.Connection;
 
       
-//not game specific package import { ResultSet } from '../../../../../java/sql/ResultSet.js';
-      const ResultSet = globalThis.java.sql.ResultSet;
+import { ResultSet } from '../../../../../java/sql/ResultSet.js';
+      //not GWT import const ResultSet = globalThis.java.sql.ResultSet;
 
       
-//not game specific package import { SQLException } from '../../../../../java/sql/SQLException.js';
-      const SQLException = globalThis.java.sql.SQLException;
+import { SQLException } from '../../../../../java/sql/SQLException.js';
+      //not GWT import const SQLException = globalThis.java.sql.SQLException;
 
       
-//not game specific package import { Statement } from '../../../../../java/sql/Statement.js';
-      const Statement = globalThis.java.sql.Statement;
+import { Statement } from '../../../../../java/sql/Statement.js';
+      //not GWT import const Statement = globalThis.java.sql.Statement;
 
       
-//not game specific package import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-      const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
+import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
+      //not GWT import const DatabaseConnectionInfoInterface = globalThis.org.allbinary.business.init.db.DatabaseConnectionInfoInterface;
 
       
-//not game specific package import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-      const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
+      //not GWT import const DbConnectionInfo = globalThis.org.allbinary.business.init.db.DbConnectionInfo;
 
       
-//not game specific package import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communication/sql/connection/pool/SqlConnectionPool.js';
-      const SqlConnectionPool = globalThis.org.allbinary.logic.communication.sql.connection.pool.SqlConnectionPool;
+import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communication/sql/connection/pool/SqlConnectionPool.js';
+      //not GWT import const SqlConnectionPool = globalThis.org.allbinary.logic.communication.sql.connection.pool.SqlConnectionPool;
 
       
-//not game specific package import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+//not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not game specific package import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
+//not plain js import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
       const CommonSeps = globalThis.org.allbinary.string.CommonSeps;
 
       
-//not game specific package import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

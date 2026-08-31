@@ -20,20 +20,20 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { CompleteMotionGestureInputEventListenerInterface } from '../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
-      const CompleteMotionGestureInputEventListenerInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
+import { CompleteMotionGestureInputEventListenerInterface } from '../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
+      //not GWT import const CompleteMotionGestureInputEventListenerInterface = globalThis.org.allbinary.game.input.CompleteMotionGestureInputEventListenerInterface;
 
       
-//not game specific package import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
-      const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
+import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
+      //not GWT import const NoCompleteMotionGestureInputEventListener = globalThis.org.allbinary.game.input.motion.action.NoCompleteMotionGestureInputEventListener;
 
       
-//not game specific package import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-      const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
+import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
+      //not GWT import const AllBinarySensor = globalThis.org.allbinary.input.AllBinarySensor;
 
       
-//not game specific package import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-      const Orientation = globalThis.org.allbinary.logic.math.Orientation;
+import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
+      //not GWT import const Orientation = globalThis.org.allbinary.logic.math.Orientation;
 
       
 

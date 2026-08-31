@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { EventListener } from '../../../../../java/util/EventListener.js';
-      const EventListener = globalThis.java.util.EventListener;
+import { EventListener } from '../../../../../java/util/EventListener.js';
+      //not GWT import const EventListener = globalThis.java.util.EventListener;
 
       
 

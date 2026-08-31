@@ -20,16 +20,16 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-//not game specific package import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
-      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+import { AndroidInfoFactory } from '../../../../../org/allbinary/android/AndroidInfoFactory.js';
+      //not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
 
       
-//not game specific package import { GameInputMotionEventProcessorAPI1 } from '../../../../../org/allbinary/android/input/motion/api1/GameInputMotionEventProcessorAPI1.js';
-      const GameInputMotionEventProcessorAPI1 = globalThis.org.allbinary.android.input.motion.api1.GameInputMotionEventProcessorAPI1;
+import { GameInputMotionEventProcessorAPI1 } from '../../../../../org/allbinary/android/input/motion/api1/GameInputMotionEventProcessorAPI1.js';
+      //not GWT import const GameInputMotionEventProcessorAPI1 = globalThis.org.allbinary.android.input.motion.api1.GameInputMotionEventProcessorAPI1;
 
       
-//not game specific package import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/android/input/motion/api5/GameInputMotionEventProcessorAPI5.js';
-      const GameInputMotionEventProcessorAPI5 = globalThis.org.allbinary.android.input.motion.api5.GameInputMotionEventProcessorAPI5;
+import { GameInputMotionEventProcessorAPI5 } from '../../../../../org/allbinary/android/input/motion/api5/GameInputMotionEventProcessorAPI5.js';
+      //not GWT import const GameInputMotionEventProcessorAPI5 = globalThis.org.allbinary.android.input.motion.api5.GameInputMotionEventProcessorAPI5;
 
       
 

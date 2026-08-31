@@ -20,27 +20,27 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { CustomGPoint } from '../../../../org/allbinary/graphics/CustomGPoint.js';
-      const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
+import { CustomGPoint } from '../../../../org/allbinary/graphics/CustomGPoint.js';
+      //not GWT import const CustomGPoint = globalThis.org.allbinary.graphics.CustomGPoint;
 
       
-//not game specific package import { GPointCircularPool } from '../../../../org/allbinary/graphics/GPointCircularPool.js';
+//not plain js import { GPointCircularPool } from '../../../../org/allbinary/graphics/GPointCircularPool.js';
       const GPointCircularPool = globalThis.org.allbinary.graphics.GPointCircularPool;
 
       
-//not game specific package import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/button/TouchButtonRecognizer.js';
-      const TouchButtonRecognizer = globalThis.org.allbinary.input.motion.button.TouchButtonRecognizer;
+import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/button/TouchButtonRecognizer.js';
+      //not GWT import const TouchButtonRecognizer = globalThis.org.allbinary.input.motion.button.TouchButtonRecognizer;
 
       
-//not game specific package import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/gesture/MotionGestureRecognizer.js';
-      const MotionGestureRecognizer = globalThis.org.allbinary.input.motion.gesture.MotionGestureRecognizer;
+import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/gesture/MotionGestureRecognizer.js';
+      //not GWT import const MotionGestureRecognizer = globalThis.org.allbinary.input.motion.gesture.MotionGestureRecognizer;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       

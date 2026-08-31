@@ -22,15 +22,15 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-//not game specific package import { AnalogControllerConfigurationEvent } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEvent.js';
-      const AnalogControllerConfigurationEvent = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEvent;
+import { AnalogControllerConfigurationEvent } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEvent.js';
+      //not GWT import const AnalogControllerConfigurationEvent = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEvent;
 
       
-//not game specific package import { AnalogControllerConfigurationEventHandler } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEventHandler.js';
-      const AnalogControllerConfigurationEventHandler = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEventHandler;
+import { AnalogControllerConfigurationEventHandler } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEventHandler.js';
+      //not GWT import const AnalogControllerConfigurationEventHandler = globalThis.org.allbinary.android.input.motion.event.AnalogControllerConfigurationEventHandler;
 
       
-//not game specific package import { ScaleFactorFactory } from '../../../../../org/allbinary/logic/math/ScaleFactorFactory.js';
+//not plain js import { ScaleFactorFactory } from '../../../../../org/allbinary/logic/math/ScaleFactorFactory.js';
       const ScaleFactorFactory = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
 
       

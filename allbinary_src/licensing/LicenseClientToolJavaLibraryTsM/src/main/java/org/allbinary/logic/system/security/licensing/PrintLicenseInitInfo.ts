@@ -24,23 +24,23 @@
         
             import { System } from '../../../../../../java/lang/System.js';
         
-//not game specific package import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
-      const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
+import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
+      //not GWT import const LicenseInitInfo = globalThis.org.allbinary.business.init.LicenseInitInfo;
 
       
-//not game specific package import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-      const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
+import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
+      //not GWT import const LicenseInitInfoUtil = globalThis.org.allbinary.business.init.LicenseInitInfoUtil;
 
       
-//not game specific package import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
-      const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
+import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
+      //not GWT import const FileFactory = globalThis.org.allbinary.logic.io.file.FileFactory;
 
       
-//not game specific package import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-      const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
+import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
+      //not GWT import const PATH_GLOBALS = globalThis.org.allbinary.globals.PATH_GLOBALS;
 
       
-//not game specific package import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
+//not plain js import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       const BasicArrayList = globalThis.org.allbinary.util.BasicArrayList;
 
       

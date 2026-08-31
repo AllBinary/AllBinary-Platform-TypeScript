@@ -22,43 +22,43 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-//not game specific package import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
+//not plain js import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
       const GPoint = globalThis.org.allbinary.graphics.GPoint;
 
       
-//not game specific package import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
+//not plain js import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
       const PointFactory = globalThis.org.allbinary.graphics.PointFactory;
 
       
-//not game specific package import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-      const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
+import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
+      //not GWT import const AutomaticCacheInterface = globalThis.org.allbinary.logic.util.cache.AutomaticCacheInterface;
 
       
-//not game specific package import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
-      const CacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.CacheInterfaceFactory;
+import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
+      //not GWT import const CacheInterfaceFactory = globalThis.org.allbinary.logic.util.cache.CacheInterfaceFactory;
 
       
-//not game specific package import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
-      const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
+import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
+      //not GWT import const CachePolicyFactory = globalThis.org.allbinary.logic.util.cache.CachePolicyFactory;
 
       
-//not game specific package import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
-      const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
+import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
+      //not GWT import const CacheTypeFactory = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
 
       
-//not game specific package import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
-      const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
+import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
+      //not GWT import const ColorDelta = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
 
       
-//not game specific package import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDeltaFactory.js';
-      const ColorDeltaFactory = globalThis.org.allbinary.media.image.comparison.color.ColorDeltaFactory;
+import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDeltaFactory.js';
+      //not GWT import const ColorDeltaFactory = globalThis.org.allbinary.media.image.comparison.color.ColorDeltaFactory;
 
       
-//not game specific package import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+//not plain js import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       const CommonStrings = globalThis.org.allbinary.string.CommonStrings;
 
       

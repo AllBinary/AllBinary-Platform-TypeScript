@@ -20,56 +20,56 @@
 
             import { Exception } from '../../../../../../../../../../../java/lang/Exception.js';
         
-//not game specific package import { HashMap } from '../../../../../../../../../../../java/util/HashMap.js';
-      const HashMap = globalThis.java.util.HashMap;
+import { HashMap } from '../../../../../../../../../../../java/util/HashMap.js';
+      //not GWT import const HashMap = globalThis.java.util.HashMap;
 
       
-//not game specific package import { DomNodeInterface } from '../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-      const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
+import { DomNodeInterface } from '../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
+      //not GWT import const DomNodeInterface = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
       
-//not game specific package import { NameSpaceRequestParams } from '../../../../../../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParams.js';
-      const NameSpaceRequestParams = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParams;
+import { NameSpaceRequestParams } from '../../../../../../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParams.js';
+      //not GWT import const NameSpaceRequestParams = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParams;
 
       
-//not game specific package import { LogUtil } from '../../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { ValidationComponentInterface } from '../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-      const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
+import { ValidationComponentInterface } from '../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
+      //not GWT import const ValidationComponentInterface = globalThis.org.allbinary.logic.control.validate.ValidationComponentInterface;
 
       
-//not game specific package import { StringMaker } from '../../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+//not plain js import { StringMaker } from '../../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
       const StringMaker = globalThis.org.allbinary.logic.string.StringMaker;
 
       
-//not game specific package import { TransformInfoInterface } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-      const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+import { TransformInfoInterface } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
+      //not GWT import const TransformInfoInterface = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
       
-//not game specific package import { CssStyleValidation } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/template/retail/CssStyleValidation.js';
-      const CssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.template.retail.CssStyleValidation;
+import { CssStyleValidation } from '../../../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/template/retail/CssStyleValidation.js';
+      //not GWT import const CssStyleValidation = globalThis.org.allbinary.logic.visual.transform.template.customizer.includes.style.css.template.retail.CssStyleValidation;
 
       
-//not game specific package import { Document } from '../../../../../../../../../../../org/w3c/dom/Document.js';
-      const Document = globalThis.org.w3c.dom.Document;
+import { Document } from '../../../../../../../../../../../org/w3c/dom/Document.js';
+      //not GWT import const Document = globalThis.org.w3c.dom.Document;
 
       
-//not game specific package import { Node } from '../../../../../../../../../../../org/w3c/dom/Node.js';
-      const Node = globalThis.org.w3c.dom.Node;
+import { Node } from '../../../../../../../../../../../org/w3c/dom/Node.js';
+      //not GWT import const Node = globalThis.org.w3c.dom.Node;
 
       
-//not game specific package import { CustomizerUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
-      const CustomizerUtil = globalThis.views.business.context.modules.storefront.customizer.CustomizerUtil;
+import { CustomizerUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
+      //not GWT import const CustomizerUtil = globalThis.views.business.context.modules.storefront.customizer.CustomizerUtil;
 
       
-//not game specific package import { StoreCustomizerComponentUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/StoreCustomizerComponentUtil.js';
-      const StoreCustomizerComponentUtil = globalThis.views.business.context.modules.storefront.customizer.StoreCustomizerComponentUtil;
+import { StoreCustomizerComponentUtil } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/StoreCustomizerComponentUtil.js';
+      //not GWT import const StoreCustomizerComponentUtil = globalThis.views.business.context.modules.storefront.customizer.StoreCustomizerComponentUtil;
 
       
-//not game specific package import { CssCustomizerView } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/includes/style/css/CssCustomizerView.js';
-      const CssCustomizerView = globalThis.views.business.context.modules.storefront.customizer.includes.style.css.CssCustomizerView;
+import { CssCustomizerView } from '../../../../../../../../../../../views/business/context/modules/storefront/customizer/includes/style/css/CssCustomizerView.js';
+      //not GWT import const CssCustomizerView = globalThis.views.business.context.modules.storefront.customizer.includes.style.css.CssCustomizerView;
 
       
 

@@ -20,52 +20,52 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { JsType } from '../../../../jsinterop/annotations/JsType.js';
-      const JsType = globalThis.jsinterop.annotations.JsType;
+import { JsType } from '../../../../jsinterop/annotations/JsType.js';
+      //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-//not game specific package import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
+//not plain js import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
       const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
-//not game specific package import { BasicHighScoresGameInfoFactory } from '../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js';
-      const BasicHighScoresGameInfoFactory = globalThis.org.allbinary.game.BasicHighScoresGameInfoFactory;
+import { BasicHighScoresGameInfoFactory } from '../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js';
+      //not GWT import const BasicHighScoresGameInfoFactory = globalThis.org.allbinary.game.BasicHighScoresGameInfoFactory;
 
       
-//not game specific package import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-      const GameInfo = globalThis.org.allbinary.game.GameInfo;
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
+      //not GWT import const GameInfo = globalThis.org.allbinary.game.GameInfo;
 
       
-//not game specific package import { GameType } from '../../../../org/allbinary/game/GameType.js';
-      const GameType = globalThis.org.allbinary.game.GameType;
+import { GameType } from '../../../../org/allbinary/game/GameType.js';
+      //not GWT import const GameType = globalThis.org.allbinary.game.GameType;
 
       
-//not game specific package import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
-      const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
+import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
+      //not GWT import const GameTypeFactory = globalThis.org.allbinary.game.GameTypeFactory;
 
       
-//not game specific package import { RemoteHighScores } from '../../../../org/allbinary/game/score/remote/RemoteHighScores.js';
-      const RemoteHighScores = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
+import { RemoteHighScores } from '../../../../org/allbinary/game/score/remote/RemoteHighScores.js';
+      //not GWT import const RemoteHighScores = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
 
       
-//not game specific package import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+//not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       const LogUtil = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
       
-//not game specific package import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-      const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
+import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
+      //not GWT import const BooleanFactory = globalThis.org.allbinary.logic.java.bool.BooleanFactory;
 
       
-//not game specific package import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-      const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
+import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
+      //not GWT import const SoftwareInformation = globalThis.org.allbinary.logic.system.SoftwareInformation;
 
       
-//not game specific package import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-      const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
+      //not GWT import const AbeClientInformationInterface = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
 
       
-//not game specific package import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryThreadPool.js';
-      const SecondaryThreadPool = globalThis.org.allbinary.thread.SecondaryThreadPool;
+import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryThreadPool.js';
+      //not GWT import const SecondaryThreadPool = globalThis.org.allbinary.thread.SecondaryThreadPool;
 
       
 

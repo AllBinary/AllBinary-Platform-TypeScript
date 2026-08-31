@@ -4,36 +4,36 @@
 
 
 
-//not game specific package import { InputStream } from '../../../java/io/InputStream.js';
-      const InputStream = globalThis.java.io.InputStream;
+import { InputStream } from '../../../java/io/InputStream.js';
+      //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-//not game specific package import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      const Image = globalThis.javax.microedition.lcdui.Image;
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-//not game specific package import { Bitmap } from '../../../android/graphics/Bitmap.js';
-      const Bitmap = globalThis.android.graphics.Bitmap;
+import { Bitmap } from '../../../android/graphics/Bitmap.js';
+      //not GWT import const Bitmap = globalThis.android.graphics.Bitmap;
 
       
-//not game specific package import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
-      const BitmapFactory = globalThis.android.graphics.BitmapFactory;
+import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
+      //not GWT import const BitmapFactory = globalThis.android.graphics.BitmapFactory;
 
       
-//not game specific package import { IOException } from '../../../java/io/IOException.js';
-      const IOException = globalThis.java.io.IOException;
+import { IOException } from '../../../java/io/IOException.js';
+      //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-//not game specific package import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-      const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
+import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
+      //not GWT import const PlatformBitmapBaseFactory = globalThis.org.allbinary.platform.graphics.PlatformBitmapBaseFactory;
 
       
-//not game specific package import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-      const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
+import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
+      //not GWT import const PlatformBitmapBase = globalThis.org.allbinary.platform.graphics.PlatformBitmapBase;
 
       
-//not game specific package import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
-      const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
+import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
+      //not GWT import const AndroidImageInterface = globalThis.org.microemu.android.device.AndroidImageInterface;
 
       
 

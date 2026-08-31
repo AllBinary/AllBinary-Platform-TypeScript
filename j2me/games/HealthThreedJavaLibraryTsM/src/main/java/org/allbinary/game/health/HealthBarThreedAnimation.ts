@@ -20,52 +20,52 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-//not game specific package import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-      const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
+      //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-//not game specific package import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-//not game specific package import { ColorBufferList } from '../../../../min3d/core/ColorBufferList.js';
-      const ColorBufferList = globalThis.min3d.core.ColorBufferList;
+import { ColorBufferList } from '../../../../min3d/core/ColorBufferList.js';
+      //not GWT import const ColorBufferList = globalThis.min3d.core.ColorBufferList;
 
       
-//not game specific package import { Number3dBufferList } from '../../../../min3d/core/Number3dBufferList.js';
-      const Number3dBufferList = globalThis.min3d.core.Number3dBufferList;
+import { Number3dBufferList } from '../../../../min3d/core/Number3dBufferList.js';
+      //not GWT import const Number3dBufferList = globalThis.min3d.core.Number3dBufferList;
 
       
-//not game specific package import { Rectangle } from '../../../../min3d/objectPrimitives/Rectangle.js';
-      const Rectangle = globalThis.min3d.objectPrimitives.Rectangle;
+import { Rectangle } from '../../../../min3d/objectPrimitives/Rectangle.js';
+      //not GWT import const Rectangle = globalThis.min3d.objectPrimitives.Rectangle;
 
       
-//not game specific package import { Number3d } from '../../../../min3d/vos/Number3d.js';
-      const Number3d = globalThis.min3d.vos.Number3d;
+import { Number3d } from '../../../../min3d/vos/Number3d.js';
+      //not GWT import const Number3d = globalThis.min3d.vos.Number3d;
 
       
-//not game specific package import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
-      const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
+import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
+      //not GWT import const OpenGLESGraphics = globalThis.org.allbinary.device.OpenGLESGraphics;
 
       
-//not game specific package import { Object3dProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessor.js';
-      const Object3dProcessor = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessor;
+import { Object3dProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessor.js';
+      //not GWT import const Object3dProcessor = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessor;
 
       
-//not game specific package import { Object3dProcessorUtil } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessorUtil.js';
-      const Object3dProcessorUtil = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessorUtil;
+import { Object3dProcessorUtil } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessorUtil.js';
+      //not GWT import const Object3dProcessorUtil = globalThis.org.allbinary.graphics.threed.min3d.renderer.Object3dProcessorUtil;
 
       
-//not game specific package import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-      const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+      //not GWT import const BasicColorFactory = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
       
-//not game specific package import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-      const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
+      //not GWT import const AllBinaryLayer = globalThis.org.allbinary.layer.AllBinaryLayer;
 
       
-//not game specific package import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
-      const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
+import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBase.js';
+      //not GWT import const ViewPositionBase = globalThis.org.allbinary.view.ViewPositionBase;
 
       
 

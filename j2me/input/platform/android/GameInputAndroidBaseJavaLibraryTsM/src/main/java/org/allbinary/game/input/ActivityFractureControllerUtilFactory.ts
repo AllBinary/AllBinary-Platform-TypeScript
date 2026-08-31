@@ -6,8 +6,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-//not game specific package import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
-      const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
+import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
+      //not GWT import const AndroidInfoFactory = globalThis.org.allbinary.android.AndroidInfoFactory;
 
       
 

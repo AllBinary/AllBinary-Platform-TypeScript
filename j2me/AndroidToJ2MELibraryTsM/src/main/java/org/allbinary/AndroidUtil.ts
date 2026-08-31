@@ -22,12 +22,12 @@
         
             import { Integer } from '../../java/lang/Integer.js';
         
-//not game specific package import { Activity } from '../../android/app/Activity.js';
-      const Activity = globalThis.android.app.Activity;
+import { Activity } from '../../android/app/Activity.js';
+      //not GWT import const Activity = globalThis.android.app.Activity;
 
       
-//not game specific package import { Build } from '../../android/os/Build.js';
-      const Build = globalThis.android.os.Build;
+import { Build } from '../../android/os/Build.js';
+      //not GWT import const Build = globalThis.android.os.Build;
 
       
 

@@ -22,8 +22,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-//not game specific package import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
-      const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
+import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
+      //not GWT import const DirectionFactory = globalThis.org.allbinary.direction.DirectionFactory;
 
       
 
