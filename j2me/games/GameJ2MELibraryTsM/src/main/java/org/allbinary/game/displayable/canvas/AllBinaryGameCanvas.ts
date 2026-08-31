@@ -40,24 +40,24 @@ import { Vector } from '../../../../../java/util/Vector.js';
       //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
-      //not GWT import const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+//not plain js import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-      //not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
+//not plain js import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
 
       
 import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';

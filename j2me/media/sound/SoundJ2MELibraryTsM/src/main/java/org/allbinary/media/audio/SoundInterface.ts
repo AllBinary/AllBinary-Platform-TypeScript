@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
 

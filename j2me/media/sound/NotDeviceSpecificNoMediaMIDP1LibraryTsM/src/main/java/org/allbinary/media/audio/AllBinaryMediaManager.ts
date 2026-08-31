@@ -28,8 +28,8 @@ import { InputStream } from '../../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';

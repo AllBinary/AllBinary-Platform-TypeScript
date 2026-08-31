@@ -24,12 +24,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
@@ -56,32 +56,32 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
       const PlaynImage = globalThis.org.microemu.device.playn.PlaynImage;
 
       
-import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
-      //not GWT import const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
+//not plain js import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
+      const ResourceCallbackStrings = globalThis.org.microemu.device.ResourceCallbackStrings;
 
       
-//not plain js import { Callback } from '../../../../playn/core/Callback.js';
-      const Callback = globalThis.playn.core.Callback;
+import { Callback } from '../../../../playn/core/Callback.js';
+      //not GWT import const Callback = globalThis.playn.core.Callback;
 
       
-//not plain js import { Canvas } from '../../../../playn/core/Canvas.js';
-      const Canvas = globalThis.playn.core.Canvas;
+import { Canvas } from '../../../../playn/core/Canvas.js';
+      //not GWT import const Canvas = globalThis.playn.core.Canvas;
 
       
-//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
-      const ImageImpl = globalThis.playn.core.ImageImpl;
+import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+      //not GWT import const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
-//not plain js import { PlayN } from '../../../../playn/core/PlayN.js';
-      const PlayN = globalThis.playn.core.PlayN;
+import { PlayN } from '../../../../playn/core/PlayN.js';
+      //not GWT import const PlayN = globalThis.playn.core.PlayN;
 
       
-//not plain js import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
-      const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
+import { HtmlGraphics } from '../../../../playn/html/HtmlGraphics.js';
+      //not GWT import const HtmlGraphics = globalThis.playn.html.HtmlGraphics;
 
       
-//not plain js import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
-      const HtmlImage = globalThis.playn.html.HtmlImage;
+import { HtmlImage } from '../../../../playn/html/HtmlImage.js';
+      //not GWT import const HtmlImage = globalThis.playn.html.HtmlImage;
 
       
 

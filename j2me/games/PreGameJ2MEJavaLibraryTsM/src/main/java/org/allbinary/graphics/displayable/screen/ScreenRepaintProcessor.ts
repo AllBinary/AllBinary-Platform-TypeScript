@@ -20,8 +20,8 @@
 
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';

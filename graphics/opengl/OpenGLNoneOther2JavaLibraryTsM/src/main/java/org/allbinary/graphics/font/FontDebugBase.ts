@@ -6,8 +6,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
 
       
 //not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';

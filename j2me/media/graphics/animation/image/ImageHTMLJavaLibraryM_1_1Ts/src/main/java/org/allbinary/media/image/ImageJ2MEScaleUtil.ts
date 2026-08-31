@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -38,12 +38,12 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-//not plain js import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-      const CanvasImage = globalThis.playn.core.CanvasImage;
+import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
+      //not GWT import const CanvasImage = globalThis.playn.core.CanvasImage;
 
       
-//not plain js import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
-      const CanvasSurface = globalThis.playn.core.CanvasSurface;
+import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
+      //not GWT import const CanvasSurface = globalThis.playn.core.CanvasSurface;
 
       
 

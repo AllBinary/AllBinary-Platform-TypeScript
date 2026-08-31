@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 //not plain js import { CommonPhoneStrings } from '../../../../../org/allbinary/string/CommonPhoneStrings.js';

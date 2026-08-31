@@ -28,8 +28,8 @@ import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
       //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
@@ -40,8 +40,8 @@ import { OpenGLESPostLoadPlatformImage } from '../../../../javax/microedition/lc
       //not GWT import const OpenGLESPostLoadPlatformImage = globalThis.javax.microedition.lcdui.OpenGLESPostLoadPlatformImage;
 
       
-import { PostLoadImageProcessor } from '../../../../javax/microedition/lcdui/PostLoadImageProcessor.js';
-      //not GWT import const PostLoadImageProcessor = globalThis.javax.microedition.lcdui.PostLoadImageProcessor;
+//not plain js import { PostLoadImageProcessor } from '../../../../javax/microedition/lcdui/PostLoadImageProcessor.js';
+      const PostLoadImageProcessor = globalThis.javax.microedition.lcdui.PostLoadImageProcessor;
 
       
 import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStrings.js';

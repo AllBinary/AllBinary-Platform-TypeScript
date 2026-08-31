@@ -24,16 +24,16 @@ import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
       //not GWT import const GL = globalThis.javax.microedition.khronos.opengles.GL;
 
       
-import { ChoiceGroupImageFactory } from '../../../javax/microedition/lcdui/ChoiceGroupImageFactory.js';
-      //not GWT import const ChoiceGroupImageFactory = globalThis.javax.microedition.lcdui.ChoiceGroupImageFactory;
+//not plain js import { ChoiceGroupImageFactory } from '../../../javax/microedition/lcdui/ChoiceGroupImageFactory.js';
+      const ChoiceGroupImageFactory = globalThis.javax.microedition.lcdui.ChoiceGroupImageFactory;
 
       
-import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { OpenGLFeatureFactory } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';

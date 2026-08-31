@@ -22,8 +22,8 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { NullImage } from '../../../../../../../javax/microedition/lcdui/NullImage.js';

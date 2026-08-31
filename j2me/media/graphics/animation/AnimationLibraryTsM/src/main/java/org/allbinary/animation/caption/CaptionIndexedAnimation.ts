@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';

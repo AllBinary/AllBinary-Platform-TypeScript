@@ -24,8 +24,8 @@ import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
       //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { ColorBufferList } from '../../../../min3d/core/ColorBufferList.js';

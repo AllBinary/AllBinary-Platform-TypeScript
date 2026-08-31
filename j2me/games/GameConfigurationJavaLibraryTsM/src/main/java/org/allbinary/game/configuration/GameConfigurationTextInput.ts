@@ -24,8 +24,8 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-      //not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
+//not plain js import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+      const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';

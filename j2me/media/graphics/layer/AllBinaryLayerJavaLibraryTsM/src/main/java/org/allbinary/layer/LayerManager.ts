@@ -14,8 +14,8 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';

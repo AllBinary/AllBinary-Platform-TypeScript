@@ -28,12 +28,12 @@ import { Vector } from '../../../../../java/util/Vector.js';
       //not GWT import const Vector = globalThis.java.util.Vector;
 
       
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
-      //not GWT import const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
+//not plain js import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
+      const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
 
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';

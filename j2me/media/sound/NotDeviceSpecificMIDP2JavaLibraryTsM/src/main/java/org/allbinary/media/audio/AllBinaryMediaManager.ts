@@ -28,16 +28,16 @@ import { InputStream } from '../../../../java/io/InputStream.js';
       //not GWT import const InputStream = globalThis.java.io.InputStream;
 
       
-import { Manager } from '../../../../javax/microedition/media/Manager.js';
-      //not GWT import const Manager = globalThis.javax.microedition.media.Manager;
+//not plain js import { Manager } from '../../../../javax/microedition/media/Manager.js';
+      const Manager = globalThis.javax.microedition.media.Manager;
 
       
-import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      //not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
+//not plain js import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
 import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/AudioContentTypeDataFactory.js';

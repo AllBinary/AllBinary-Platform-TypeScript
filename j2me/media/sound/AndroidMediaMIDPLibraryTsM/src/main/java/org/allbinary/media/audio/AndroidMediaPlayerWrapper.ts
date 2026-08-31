@@ -22,16 +22,16 @@
         
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      //not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
+//not plain js import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
-import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      //not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+//not plain js import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';

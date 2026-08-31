@@ -24,12 +24,12 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-      //not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
+//not plain js import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+      const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';

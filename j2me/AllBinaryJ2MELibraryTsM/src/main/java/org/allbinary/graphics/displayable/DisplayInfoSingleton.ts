@@ -26,8 +26,8 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
-      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';

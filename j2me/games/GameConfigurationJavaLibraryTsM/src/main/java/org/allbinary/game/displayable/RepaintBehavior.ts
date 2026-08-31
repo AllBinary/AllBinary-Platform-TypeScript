@@ -28,8 +28,8 @@
       const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
-import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';

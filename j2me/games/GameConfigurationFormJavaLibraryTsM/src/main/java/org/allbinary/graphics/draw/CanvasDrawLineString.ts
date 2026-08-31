@@ -20,12 +20,12 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { MyFontProcessor } from '../../../../org/allbinary/graphics/font/MyFontProcessor.js';

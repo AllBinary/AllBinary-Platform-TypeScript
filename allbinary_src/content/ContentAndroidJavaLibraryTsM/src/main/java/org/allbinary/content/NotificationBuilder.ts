@@ -26,8 +26,8 @@ import { NullParcelable } from '../../../org/allbinary/android/NullParcelable.js
       //not GWT import const NullParcelable = globalThis.org.allbinary.android.NullParcelable;
 
       
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 import { PendingIntent } from '../../../android/app/PendingIntent.js';

@@ -40,16 +40,16 @@ import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
       //not GWT import const DataOutputStream = globalThis.java.io.DataOutputStream;
 
       
-import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
-      //not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+//not plain js import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
-      //not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+//not plain js import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
-import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
-      //not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+//not plain js import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
+      const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
 
       
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';

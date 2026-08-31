@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
-      //not GWT import const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
+//not plain js import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
+      const ImageItem = globalThis.javax.microedition.lcdui.ImageItem;
 
       
 import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';

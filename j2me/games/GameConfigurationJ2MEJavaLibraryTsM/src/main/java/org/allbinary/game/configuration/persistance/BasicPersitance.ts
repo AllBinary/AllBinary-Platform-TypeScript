@@ -28,8 +28,8 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
-      //not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+//not plain js import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
 //not plain js import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';

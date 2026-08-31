@@ -26,8 +26,8 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
-      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
@@ -38,8 +38,8 @@ import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/fe
       //not GWT import const MainFeatureFactory = globalThis.org.allbinary.game.configuration.feature.MainFeatureFactory;
 
       
-import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';

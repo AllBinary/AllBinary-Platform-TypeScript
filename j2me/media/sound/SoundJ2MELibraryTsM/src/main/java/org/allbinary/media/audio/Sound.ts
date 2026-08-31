@@ -28,8 +28,8 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
 //not plain js import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';

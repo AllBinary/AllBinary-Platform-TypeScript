@@ -46,12 +46,12 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
-      //not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+//not plain js import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
-      //not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+//not plain js import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';

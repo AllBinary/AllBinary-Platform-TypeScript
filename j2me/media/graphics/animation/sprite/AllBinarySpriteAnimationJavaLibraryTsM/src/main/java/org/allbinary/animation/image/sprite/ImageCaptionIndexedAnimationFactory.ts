@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-      //not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+//not plain js import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
+      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
 
       
-import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';

@@ -34,8 +34,8 @@ import { WritableRaster } from '../../../../java/awt/image/WritableRaster.js';
       //not GWT import const WritableRaster = globalThis.java.awt.image.WritableRaster;
 
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';

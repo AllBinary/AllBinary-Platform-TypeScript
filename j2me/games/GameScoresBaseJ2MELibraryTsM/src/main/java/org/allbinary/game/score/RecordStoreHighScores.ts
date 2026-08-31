@@ -40,24 +40,24 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
-      //not GWT import const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
+//not plain js import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
+      const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
 
       
-import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
-      //not GWT import const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
+//not plain js import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
+      const RecordEnumeration = globalThis.javax.microedition.rms.RecordEnumeration;
 
       
-import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
-      //not GWT import const RecordStore = globalThis.javax.microedition.rms.RecordStore;
+//not plain js import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
+      const RecordStore = globalThis.javax.microedition.rms.RecordStore;
 
       
-import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
-      //not GWT import const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
+//not plain js import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
+      const RecordStoreException = globalThis.javax.microedition.rms.RecordStoreException;
 
       
-import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
-      //not GWT import const RecordStoreNotFoundException = globalThis.javax.microedition.rms.RecordStoreNotFoundException;
+//not plain js import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
+      const RecordStoreNotFoundException = globalThis.javax.microedition.rms.RecordStoreNotFoundException;
 
       
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';

@@ -16,12 +16,12 @@
       const ARunnable = globalThis.org.allbinary.thread.ARunnable;
 
       
-import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
-import { PlayerListener } from '../../../../../javax/microedition/media/PlayerListener.js';
-      //not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+//not plain js import { PlayerListener } from '../../../../../javax/microedition/media/PlayerListener.js';
+      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
 import { AvianUtil } from '../../../../../org/allbinary/AvianUtil.js';

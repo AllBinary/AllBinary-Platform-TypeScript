@@ -20,12 +20,12 @@
 
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';

@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../../java/lang/Object.js';
         
-import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';

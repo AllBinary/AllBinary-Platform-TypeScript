@@ -38,8 +38,8 @@
       const StringUtil = globalThis.org.allbinary.logic.string.StringUtil;
 
       
-//not plain js import { PlayN } from '../../../../../playn/core/PlayN.js';
-      const PlayN = globalThis.playn.core.PlayN;
+import { PlayN } from '../../../../../playn/core/PlayN.js';
+      //not GWT import const PlayN = globalThis.playn.core.PlayN;
 
       
 

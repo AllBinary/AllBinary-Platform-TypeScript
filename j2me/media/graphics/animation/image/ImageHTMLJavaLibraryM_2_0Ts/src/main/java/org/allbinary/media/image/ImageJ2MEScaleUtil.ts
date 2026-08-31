@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -38,8 +38,8 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       const PlaynMutableImage = globalThis.org.microemu.device.playn.PlaynMutableImage;
 
       
-//not plain js import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
-      const ImageImpl = globalThis.playn.core.ImageImpl;
+import { ImageImpl } from '../../../../playn/core/ImageImpl.js';
+      //not GWT import const ImageImpl = globalThis.playn.core.ImageImpl;
 
       
 

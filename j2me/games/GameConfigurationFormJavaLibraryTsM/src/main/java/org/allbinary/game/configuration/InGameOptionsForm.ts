@@ -24,16 +24,16 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
-      //not GWT import const Choice = globalThis.javax.microedition.lcdui.Choice;
+//not plain js import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
+      const Choice = globalThis.javax.microedition.lcdui.Choice;
 
       
-import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';

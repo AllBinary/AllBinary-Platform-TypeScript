@@ -22,12 +22,12 @@ import { JsType } from '../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
-      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-      //not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+//not plain js import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
 import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';

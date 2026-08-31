@@ -20,8 +20,8 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';

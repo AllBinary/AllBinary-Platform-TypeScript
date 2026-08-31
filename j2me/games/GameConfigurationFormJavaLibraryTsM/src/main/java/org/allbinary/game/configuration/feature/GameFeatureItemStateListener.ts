@@ -22,16 +22,16 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
-      //not GWT import const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+//not plain js import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
       
-import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-      //not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
+//not plain js import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
 
       
-import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
-      //not GWT import const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
+//not plain js import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
+      const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
 
       
 import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';

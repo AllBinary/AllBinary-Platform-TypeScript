@@ -24,8 +24,8 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';

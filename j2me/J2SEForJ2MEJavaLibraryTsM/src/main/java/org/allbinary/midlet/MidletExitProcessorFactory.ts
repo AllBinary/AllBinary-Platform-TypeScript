@@ -20,8 +20,8 @@
 
             import { Object } from '../../../java/lang/Object.js';
         
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-      //not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+//not plain js import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
 import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';

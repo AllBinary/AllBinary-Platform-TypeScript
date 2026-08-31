@@ -24,12 +24,12 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';

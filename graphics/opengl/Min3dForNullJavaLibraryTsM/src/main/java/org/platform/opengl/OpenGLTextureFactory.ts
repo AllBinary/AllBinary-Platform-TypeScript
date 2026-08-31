@@ -10,8 +10,8 @@ import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
       //not GWT import const GL10 = globalThis.javax.microedition.khronos.opengles.GL10;
 
       
-import { Image } from '../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { PlatformTextureBaseFactory } from '../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';

@@ -20,24 +20,24 @@
 
             import { Object } from '../../../../java/lang/Object.js';
         
-import { Control } from '../../../../javax/microedition/media/Control.js';
-      //not GWT import const Control = globalThis.javax.microedition.media.Control;
+//not plain js import { Control } from '../../../../javax/microedition/media/Control.js';
+      const Control = globalThis.javax.microedition.media.Control;
 
       
-import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-      //not GWT import const MediaException = globalThis.javax.microedition.media.MediaException;
+//not plain js import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
+      const MediaException = globalThis.javax.microedition.media.MediaException;
 
       
-import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-      //not GWT import const Player = globalThis.javax.microedition.media.Player;
+//not plain js import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
+      const Player = globalThis.javax.microedition.media.Player;
 
       
-import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-      //not GWT import const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
+//not plain js import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
+      const PlayerListener = globalThis.javax.microedition.media.PlayerListener;
 
       
-import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-      //not GWT import const TimeBase = globalThis.javax.microedition.media.TimeBase;
+//not plain js import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
+      const TimeBase = globalThis.javax.microedition.media.TimeBase;
 
       
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';

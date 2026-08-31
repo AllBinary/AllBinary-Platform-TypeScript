@@ -18,8 +18,8 @@
 
 
 
-import { Control } from '../../../../javax/microedition/media/Control.js';
-      //not GWT import const Control = globalThis.javax.microedition.media.Control;
+//not plain js import { Control } from '../../../../javax/microedition/media/Control.js';
+      const Control = globalThis.javax.microedition.media.Control;
 
       
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';

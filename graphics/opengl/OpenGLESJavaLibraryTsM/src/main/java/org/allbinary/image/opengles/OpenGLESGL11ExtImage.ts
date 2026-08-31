@@ -36,8 +36,8 @@ import { GL11Ext } from '../../../../javax/microedition/khronos/opengles/GL11Ext
       //not GWT import const GL11Ext = globalThis.javax.microedition.khronos.opengles.GL11Ext;
 
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';

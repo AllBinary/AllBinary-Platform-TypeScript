@@ -22,8 +22,8 @@
         
             import { Runnable } from '../../../../../../java/lang/Runnable.js';
         
-import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-      //not GWT import const Graphics = globalThis.javax.microedition.lcdui.Graphics;
+//not plain js import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
+      const Graphics = globalThis.javax.microedition.lcdui.Graphics;
 
       
 import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';

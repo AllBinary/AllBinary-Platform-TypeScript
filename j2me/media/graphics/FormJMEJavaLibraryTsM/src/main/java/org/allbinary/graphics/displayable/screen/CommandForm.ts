@@ -28,16 +28,16 @@ import { Stack } from '../../../../../java/util/Stack.js';
       //not GWT import const Stack = globalThis.java.util.Stack;
 
       
-import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-import { Form } from '../../../../../javax/microedition/lcdui/Form.js';
-      //not GWT import const Form = globalThis.javax.microedition.lcdui.Form;
+//not plain js import { Form } from '../../../../../javax/microedition/lcdui/Form.js';
+      const Form = globalThis.javax.microedition.lcdui.Form;
 
       
 import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';

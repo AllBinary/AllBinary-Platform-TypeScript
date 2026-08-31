@@ -28,12 +28,12 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
-      //not GWT import const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
+//not plain js import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
+      const ItemStateListener = globalThis.javax.microedition.lcdui.ItemStateListener;
 
       
 import { GameStateCompositeInterface } from '../../../../../org/allbinary/game/state/GameStateCompositeInterface.js';

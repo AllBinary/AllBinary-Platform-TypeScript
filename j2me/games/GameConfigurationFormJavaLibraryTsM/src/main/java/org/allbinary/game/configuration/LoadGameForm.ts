@@ -26,28 +26,28 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
-      //not GWT import const Choice = globalThis.javax.microedition.lcdui.Choice;
+//not plain js import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
+      const Choice = globalThis.javax.microedition.lcdui.Choice;
 
       
-import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
-      //not GWT import const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+//not plain js import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
       
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-import { Item } from '../../../../javax/microedition/lcdui/Item.js';
-      //not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
+//not plain js import { Item } from '../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
 
       
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       //not GWT import const NullImage = globalThis.javax.microedition.lcdui.NullImage;
 
       
-import { StringItem } from '../../../../javax/microedition/lcdui/StringItem.js';
-      //not GWT import const StringItem = globalThis.javax.microedition.lcdui.StringItem;
+//not plain js import { StringItem } from '../../../../javax/microedition/lcdui/StringItem.js';
+      const StringItem = globalThis.javax.microedition.lcdui.StringItem;
 
       
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';

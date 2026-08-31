@@ -34,8 +34,8 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
-      //not GWT import const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+//not plain js import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
       
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';

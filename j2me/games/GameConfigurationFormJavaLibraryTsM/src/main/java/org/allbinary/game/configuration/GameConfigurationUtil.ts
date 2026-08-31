@@ -24,8 +24,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Item } from '../../../../javax/microedition/lcdui/Item.js';
-      //not GWT import const Item = globalThis.javax.microedition.lcdui.Item;
+//not plain js import { Item } from '../../../../javax/microedition/lcdui/Item.js';
+      const Item = globalThis.javax.microedition.lcdui.Item;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';

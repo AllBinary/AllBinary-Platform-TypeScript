@@ -28,32 +28,32 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
-import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
-import { Display } from '../../../javax/microedition/lcdui/Display.js';
-      //not GWT import const Display = globalThis.javax.microedition.lcdui.Display;
+//not plain js import { Display } from '../../../javax/microedition/lcdui/Display.js';
+      const Display = globalThis.javax.microedition.lcdui.Display;
 
       
-import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
-      //not GWT import const Displayable = globalThis.javax.microedition.lcdui.Displayable;
+//not plain js import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
+      const Displayable = globalThis.javax.microedition.lcdui.Displayable;
 
       
 import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
       //not GWT import const NullCanvas = globalThis.javax.microedition.lcdui.NullCanvas;
 
       
-import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-      //not GWT import const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
+//not plain js import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
+      const MIDlet = globalThis.javax.microedition.midlet.MIDlet;
 
       
-import { MIDletStateChangeException } from '../../../javax/microedition/midlet/MIDletStateChangeException.js';
-      //not GWT import const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
+//not plain js import { MIDletStateChangeException } from '../../../javax/microedition/midlet/MIDletStateChangeException.js';
+      const MIDletStateChangeException = globalThis.javax.microedition.midlet.MIDletStateChangeException;
 
       
 //not plain js import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';

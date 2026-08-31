@@ -34,8 +34,8 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
       //not GWT import const BufferedImage = globalThis.java.awt.image.BufferedImage;
 
       
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';

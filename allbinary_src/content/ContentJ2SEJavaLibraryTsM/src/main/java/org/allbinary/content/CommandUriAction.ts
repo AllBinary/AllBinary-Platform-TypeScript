@@ -26,8 +26,8 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
       //not GWT import const Hashtable = globalThis.java.util.Hashtable;
 
       
-import { Command } from '../../../javax/microedition/lcdui/Command.js';
-      //not GWT import const Command = globalThis.javax.microedition.lcdui.Command;
+//not plain js import { Command } from '../../../javax/microedition/lcdui/Command.js';
+      const Command = globalThis.javax.microedition.lcdui.Command;
 
       
 //not plain js import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';

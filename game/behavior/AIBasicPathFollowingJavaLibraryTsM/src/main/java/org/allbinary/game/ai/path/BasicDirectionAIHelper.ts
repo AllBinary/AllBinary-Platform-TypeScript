@@ -24,8 +24,8 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-      //not GWT import const Canvas = globalThis.javax.microedition.lcdui.Canvas;
+//not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
+      const Canvas = globalThis.javax.microedition.lcdui.Canvas;
 
       
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';

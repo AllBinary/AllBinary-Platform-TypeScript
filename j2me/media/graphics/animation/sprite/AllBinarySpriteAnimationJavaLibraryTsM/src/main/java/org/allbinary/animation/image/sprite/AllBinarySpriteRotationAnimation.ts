@@ -22,12 +22,12 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
       //not GWT import const JsType = globalThis.jsinterop.annotations.JsType;
 
       
-import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-      //not GWT import const Image = globalThis.javax.microedition.lcdui.Image;
+//not plain js import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
+      const Image = globalThis.javax.microedition.lcdui.Image;
 
       
-import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-      //not GWT import const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
+//not plain js import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
+      const Sprite = globalThis.javax.microedition.lcdui.game.Sprite;
 
       
 import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';

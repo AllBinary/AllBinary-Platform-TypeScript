@@ -22,16 +22,16 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
-      //not GWT import const Choice = globalThis.javax.microedition.lcdui.Choice;
+//not plain js import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
+      const Choice = globalThis.javax.microedition.lcdui.Choice;
 
       
-import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
-      //not GWT import const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
+//not plain js import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
+      const ChoiceGroup = globalThis.javax.microedition.lcdui.ChoiceGroup;
 
       
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
 import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';

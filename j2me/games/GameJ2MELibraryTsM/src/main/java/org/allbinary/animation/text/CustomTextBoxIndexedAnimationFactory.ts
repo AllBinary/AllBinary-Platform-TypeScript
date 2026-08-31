@@ -22,12 +22,12 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-      //not GWT import const Font = globalThis.javax.microedition.lcdui.Font;
+//not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
+      const Font = globalThis.javax.microedition.lcdui.Font;
 
       
-import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-      //not GWT import const TextField = globalThis.javax.microedition.lcdui.TextField;
+//not plain js import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
+      const TextField = globalThis.javax.microedition.lcdui.TextField;
 
       
 import { CustomTextBox } from '../../../../org/allbinary/graphics/form/item/CustomTextBox.js';

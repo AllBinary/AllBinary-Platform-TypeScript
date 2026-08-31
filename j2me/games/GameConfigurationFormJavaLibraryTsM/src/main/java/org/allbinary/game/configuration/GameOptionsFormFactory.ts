@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-      //not GWT import const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
+//not plain js import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
+      const CommandListener = globalThis.javax.microedition.lcdui.CommandListener;
 
       
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';

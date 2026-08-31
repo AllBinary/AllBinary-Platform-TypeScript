@@ -22,8 +22,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
-      //not GWT import const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
+//not plain js import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
+      const TiledLayer = globalThis.javax.microedition.lcdui.game.TiledLayer;
 
       
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';

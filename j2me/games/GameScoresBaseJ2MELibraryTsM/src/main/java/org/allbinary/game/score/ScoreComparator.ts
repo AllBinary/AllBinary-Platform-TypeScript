@@ -40,8 +40,8 @@ import { IOException } from '../../../../java/io/IOException.js';
       //not GWT import const IOException = globalThis.java.io.IOException;
 
       
-import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
-      //not GWT import const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
+//not plain js import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
+      const RecordComparator = globalThis.javax.microedition.rms.RecordComparator;
 
       
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
