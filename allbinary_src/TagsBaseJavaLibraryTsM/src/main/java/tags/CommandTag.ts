@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTagSupport } from './CustomTagSupport.js';
-import { TagStrings } from './TagStrings.js';
+//not GWT import const  = globalThis.tags.CustomTagSupport;
 
+                import { TagStrings } from './TagStrings.js';
+//not GWT import const  = globalThis.tags.TagStrings;
+
+                
 export class CommandTag extends CustomTagSupport {
         
 

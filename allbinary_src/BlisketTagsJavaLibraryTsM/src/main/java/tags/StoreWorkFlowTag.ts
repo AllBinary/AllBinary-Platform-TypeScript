@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Class } from '../java/lang/Class.js';
@@ -71,7 +71,9 @@ import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHel
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
-//and hidden field removal
+//not GWT import const  = globalThis.tags.HelperTag;
+
+                //and hidden field removal
 export class StoreWorkFlowTag extends HelperTag {
         
 

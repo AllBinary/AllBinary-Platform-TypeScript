@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupProcessorInterface } from './PickupProcessorInterface.js';
-import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickupProcessorInterface;
 
+                import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
+
+                
 export interface PickupBehaviorInterface {
         
 

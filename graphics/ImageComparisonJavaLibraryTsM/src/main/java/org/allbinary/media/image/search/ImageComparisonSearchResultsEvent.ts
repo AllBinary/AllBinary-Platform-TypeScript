@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
@@ -41,7 +41,9 @@ import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonSearch } from './ImageComparisonSearch.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.search.ImageComparisonSearch;
 
+                
 export class ImageComparisonSearchResultsEvent extends AllBinaryEventObject {
         
 

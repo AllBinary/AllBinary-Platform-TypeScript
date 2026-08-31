@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { TagSupport } from '../javax/servlet/jsp/tagext/TagSupport.js';
@@ -45,7 +45,9 @@ import { TagSupport } from '../javax/servlet/jsp/tagext/TagSupport.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagStrings } from './TagStrings.js';
+//not GWT import const  = globalThis.tags.TagStrings;
 
+                
 export class CustomTagSupport extends TagSupport {
         
 

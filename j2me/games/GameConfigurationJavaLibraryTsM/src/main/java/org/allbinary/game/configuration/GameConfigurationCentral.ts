@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -103,7 +103,9 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfiguration } from './GameConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfiguration;
 
+                
 export class GameConfigurationCentral
             extends Object
          {

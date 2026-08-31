@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
@@ -57,7 +57,9 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownGameKeyEventHandlerBase } from './DownGameKeyEventHandlerBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.DownGameKeyEventHandlerBase;
 
+                
 export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
         
 

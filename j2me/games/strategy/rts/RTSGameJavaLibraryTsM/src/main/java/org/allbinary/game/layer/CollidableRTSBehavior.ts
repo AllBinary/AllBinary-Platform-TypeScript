@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,7 +51,9 @@ import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.CollidableCompositeLayer;
 
+                
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         
 

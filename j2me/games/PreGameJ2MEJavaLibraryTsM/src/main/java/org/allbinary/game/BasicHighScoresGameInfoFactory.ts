@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -39,10 +39,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInfo } from './GameInfo.js';
-import { GameTypeFactory } from './GameTypeFactory.js';
-import { GameMode } from './GameMode.js';
-import { PlayerTypesFactory } from './PlayerTypesFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameInfo;
 
+                import { GameTypeFactory } from './GameTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameTypeFactory;
+
+                import { GameMode } from './GameMode.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameMode;
+
+                import { PlayerTypesFactory } from './PlayerTypesFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.PlayerTypesFactory;
+
+                
 export class BasicHighScoresGameInfoFactory
             extends Object
          {

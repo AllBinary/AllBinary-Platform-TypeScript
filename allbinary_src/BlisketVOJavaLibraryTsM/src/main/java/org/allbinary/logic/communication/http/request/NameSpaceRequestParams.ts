@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -103,9 +103,15 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestParams } from './RequestParams.js';
-import { NameSpaceRequestParamData } from './NameSpaceRequestParamData.js';
-import { NameSpaceRequestParam } from './NameSpaceRequestParam.js';
-//containing string values and other hashmaps of the like
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.RequestParams;
+
+                import { NameSpaceRequestParamData } from './NameSpaceRequestParamData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParamData;
+
+                import { NameSpaceRequestParam } from './NameSpaceRequestParam.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParam;
+
+                //containing string values and other hashmaps of the like
 export class NameSpaceRequestParams extends RequestParams {
         
 

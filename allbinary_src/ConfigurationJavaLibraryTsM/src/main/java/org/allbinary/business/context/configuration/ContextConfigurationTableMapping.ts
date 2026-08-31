@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-import { ContextConfigurationData } from './ContextConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
 
+                import { ContextConfigurationData } from './ContextConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationData;
+
+                
 export class ContextConfigurationTableMapping
             extends Object
          implements TableMappingInterface {

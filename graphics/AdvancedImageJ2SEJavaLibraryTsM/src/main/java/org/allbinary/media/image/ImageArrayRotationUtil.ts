@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -57,9 +57,15 @@ import { IOException } from '../../../../java/io/IOException.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
-import { ImageProcessorInput } from './ImageProcessorInput.js';
-import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
 
+                import { ImageProcessorInput } from './ImageProcessorInput.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessorInput;
+
+                import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
+
+                
 export class ImageArrayRotationUtil
             extends Object
          {

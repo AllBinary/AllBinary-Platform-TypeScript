@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@ import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementProductInterface } from './AdvertisementProductInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.product.AdvertisementProductInterface;
 
+                
 export class AdvertisementProduct
             extends Object
          implements AdvertisementProductInterface {

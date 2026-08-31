@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -42,8 +42,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Log } from './Log.js';
+        //not plain js import { Log } from './Log.js';
+const  = globalThis.org.allbinary.logic.communication.log.Log;
 
+                
 export class LogFactory
             extends Object
          {

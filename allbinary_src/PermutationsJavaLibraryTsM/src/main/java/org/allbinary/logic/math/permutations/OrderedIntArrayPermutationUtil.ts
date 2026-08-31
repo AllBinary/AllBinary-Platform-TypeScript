@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -45,7 +45,9 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntPermutationVisitor } from './IntPermutationVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.logic.math.permutations.IntPermutationVisitor;
 
+                
 export class OrderedIntArrayPermutationUtil
             extends Object
          {

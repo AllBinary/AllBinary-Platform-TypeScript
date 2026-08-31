@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { swing } from '../../../../../javax/swing.js';
@@ -41,9 +41,15 @@ import { swing } from '../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SwingWorker } from './SwingWorker.js';
-import { JList } from './JList.js';
-import { ListModel } from './ListModel.js';
+//not GWT import const  = globalThis.org.allbinary.gui.swing.workers.SwingWorker;
 
+                import { JList } from './JList.js';
+//not GWT import const  = globalThis.org.allbinary.gui.swing.workers.JList;
+
+                import { ListModel } from './ListModel.js';
+//not GWT import const  = globalThis.org.allbinary.gui.swing.workers.ListModel;
+
+                
 export class JListSwingWorker extends SwingWorker {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -61,7 +61,9 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CryptInterface } from './CryptInterface.js';
+//not GWT import const  = globalThis.org.allbinary.init.crypt.jcehelper.CryptInterface;
 
+                
 export class BasicCryptUtil
             extends Object
          {

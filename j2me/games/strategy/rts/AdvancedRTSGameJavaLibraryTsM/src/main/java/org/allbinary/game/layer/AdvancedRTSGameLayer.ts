@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -215,14 +215,30 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
-import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-import { AdvancedRTSProperties } from './AdvancedRTSProperties.js';
-import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-import { AdvancedRTSPlayerLayerInterface } from './AdvancedRTSPlayerLayerInterface.js';
-import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-import { RTSLayerUtil } from './RTSLayerUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
 
+                import { NullPathFindingLayer } from './NullPathFindingLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
+
+                import { AdvancedRTSProperties } from './AdvancedRTSProperties.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AdvancedRTSProperties;
+
+                import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
+                import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+
+                import { AdvancedRTSPlayerLayerInterface } from './AdvancedRTSPlayerLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AdvancedRTSPlayerLayerInterface;
+
+                import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
+
+                import { RTSLayerUtil } from './RTSLayerUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayerUtil;
+
+                
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         
 

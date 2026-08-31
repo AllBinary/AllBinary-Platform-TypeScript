@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -43,8 +43,12 @@ import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresCanvasInputProcessorFactoryInterface } from './HighScoresCanvasInputProcessorFactoryInterface.js';
-import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessorFactoryInterface;
 
+                import { HighScoresCanvasInputProcessor } from './HighScoresCanvasInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresCanvasInputProcessor;
+
+                
 export class HighScoresCanvasNoInputProcessorFactory
             extends Object
          implements HighScoresCanvasInputProcessorFactoryInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { PaintableInterface } from '../../../org/allbinary/graphics/paint/Painta
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureImageCacheFactory } from './GameFeatureImageCacheFactory.js';
+//not GWT import const  = globalThis.org.allbinary.image.GameFeatureImageCacheFactory;
 
+                
 export class PaintableToImageUtil
             extends Object
          {

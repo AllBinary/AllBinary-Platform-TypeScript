@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -51,8 +51,12 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureListenerInterface } from './GameFeatureListenerInterface.js';
-import { GameFeatureEvent } from './GameFeatureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
 
+                import { GameFeatureEvent } from './GameFeatureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
+
+                
 export class GameFeatureEventHandler extends BasicEventHandler {
         
 

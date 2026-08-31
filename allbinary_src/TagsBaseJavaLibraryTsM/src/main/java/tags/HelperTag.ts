@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../java/lang/Exception.js';
@@ -47,7 +47,9 @@ import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PropertiesTag } from './PropertiesTag.js';
+//not GWT import const  = globalThis.tags.PropertiesTag;
 
+                
 export class HelperTag extends PropertiesTag {
         
 

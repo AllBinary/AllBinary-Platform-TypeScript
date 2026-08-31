@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -63,9 +63,15 @@ import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButton } from './TouchButton.js';
-import { TouchButtonInput } from './TouchButtonInput.js';
-import { TouchButtonResource } from './TouchButtonResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
 
+                import { TouchButtonInput } from './TouchButtonInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonInput;
+
+                import { TouchButtonResource } from './TouchButtonResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonResource;
+
+                
 export class FullTouchButton extends TouchButton {
         
 

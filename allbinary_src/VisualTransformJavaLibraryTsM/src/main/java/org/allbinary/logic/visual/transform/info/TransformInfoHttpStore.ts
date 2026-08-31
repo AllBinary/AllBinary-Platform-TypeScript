@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -79,8 +79,12 @@ import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttp } from './TransformInfoHttp.js';
-import { TransformInfoHttpStoreInterface } from './TransformInfoHttpStoreInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttp;
 
+                import { TransformInfoHttpStoreInterface } from './TransformInfoHttpStoreInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStoreInterface;
+
+                
 export class TransformInfoHttpStore extends TransformInfoHttp implements TransformInfoHttpStoreInterface {
         
 

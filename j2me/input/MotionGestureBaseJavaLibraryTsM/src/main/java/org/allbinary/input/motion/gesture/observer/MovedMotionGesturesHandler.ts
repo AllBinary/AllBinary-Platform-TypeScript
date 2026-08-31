@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -51,8 +51,12 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseMotionGestureEventListener } from './BaseMotionGestureEventListener.js';
-import { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.BaseMotionGestureEventListener;
 
+                import { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+
+                
 export class MovedMotionGesturesHandler extends BasicEventHandler {
         
 

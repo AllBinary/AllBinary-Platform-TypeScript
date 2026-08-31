@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -265,10 +265,18 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MenuListener } from './MenuListener.js';
-import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
-import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-import { ImmediateCommandFormInputProcessor } from './ImmediateCommandFormInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.MenuListener;
 
+                import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.NoMenuInputProcessor;
+
+                import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
+
+                import { ImmediateCommandFormInputProcessor } from './ImmediateCommandFormInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.ImmediateCommandFormInputProcessor;
+
+                
 export class GameCommandCanvas extends MyCanvas implements MenuListener, DisplayChangeEventListener, UpdateMyFontInterface {
         
 

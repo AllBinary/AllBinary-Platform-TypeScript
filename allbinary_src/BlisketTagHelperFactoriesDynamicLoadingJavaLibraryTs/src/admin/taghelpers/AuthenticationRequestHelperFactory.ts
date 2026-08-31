@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../java/lang/Object.js';
@@ -55,8 +55,12 @@ import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactoryInterface } from './TagHelperFactoryInterface.js';
-import { HelperFactory } from './HelperFactory.js';
+//not GWT import const  = globalThis.admin.taghelpers.TagHelperFactoryInterface;
 
+                import { HelperFactory } from './HelperFactory.js';
+//not GWT import const  = globalThis.admin.taghelpers.HelperFactory;
+
+                
 export class AuthenticationRequestHelperFactory
             extends Object
          implements TagHelperFactoryInterface {

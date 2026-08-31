@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -71,9 +71,15 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealLayerCircularStaticPool } from './HealLayerCircularStaticPool.js';
-import { HealLayerFactory } from './HealLayerFactory.js';
-import { HealthResources } from './HealthResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.health.HealLayerCircularStaticPool;
 
+                import { HealLayerFactory } from './HealLayerFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.health.HealLayerFactory;
+
+                import { HealthResources } from './HealthResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.health.HealthResources;
+
+                
 export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 

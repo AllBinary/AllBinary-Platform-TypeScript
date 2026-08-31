@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -63,8 +63,12 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEventListenerInterface } from './TrackingEventListenerInterface.js';
-import { TrackingEvent } from './TrackingEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.tracking.TrackingEventListenerInterface;
 
+                import { TrackingEvent } from './TrackingEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.tracking.TrackingEvent;
+
+                
 export class TrackingEventHandler extends BasicEventHandler {
         
 

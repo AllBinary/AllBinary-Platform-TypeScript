@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -57,8 +57,12 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAI } from './BasicAI.js';
-import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.ai.BasicAI;
 
+                import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.ai.ArtificialIntelligenceInterfaceFactoryInterface;
+
+                
 export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
             extends Object
          {

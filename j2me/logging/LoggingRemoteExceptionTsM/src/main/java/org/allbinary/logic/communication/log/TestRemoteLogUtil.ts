@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -48,8 +48,10 @@ import { Globals } from '../../../../../org/allbinary/globals/Globals.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogUtil } from './LogUtil.js';
+        //not plain js import { LogUtil } from './LogUtil.js';
+const  = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
+                
 export class TestRemoteLogUtil
             extends Object
          {

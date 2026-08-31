@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,11 +37,21 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { GridLayout } from './GridLayout.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
-import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JPanel;
 
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GridLayout;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Short;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Dimension;
+
+                
 export class ActionScriptItemJPanel extends javax.swing.JPanel {
         
 

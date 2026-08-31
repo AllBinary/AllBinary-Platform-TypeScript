@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
@@ -43,7 +43,9 @@ import { UpdateMyFontProcessor } from '../../../../../org/allbinary/graphics/fon
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABCustomItem } from './ABCustomItem.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABCustomItem;
 
+                
 export class CustomCustomItem extends ABCustomItem implements UpdateMyFontInterface {
         
 

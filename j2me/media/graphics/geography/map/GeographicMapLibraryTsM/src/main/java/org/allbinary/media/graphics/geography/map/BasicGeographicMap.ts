@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -61,15 +61,33 @@ import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleGeographicMap } from './SimpleGeographicMap.js';
-import { GeographicMapInterface } from './GeographicMapInterface.js';
-import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
-import { GeographicMapCellPositionBaseFactory } from './GeographicMapCellPositionBaseFactory.js';
-import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
-import { GeographicMapCellType } from './GeographicMapCellType.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.SimpleGeographicMap;
 
+                import { GeographicMapInterface } from './GeographicMapInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapInterface;
+
+                import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
+
+                import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactoryInterface;
+
+                import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellTypeFactory;
+
+                import { GeographicMapCellPositionBaseFactory } from './GeographicMapCellPositionBaseFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionBaseFactory;
+
+                import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
+                import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.SimpleGeographicMapCellPositionFactory;
+
+                import { GeographicMapCellType } from './GeographicMapCellType.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+
+                
 export class BasicGeographicMap extends SimpleGeographicMap implements GeographicMapInterface {
         
 

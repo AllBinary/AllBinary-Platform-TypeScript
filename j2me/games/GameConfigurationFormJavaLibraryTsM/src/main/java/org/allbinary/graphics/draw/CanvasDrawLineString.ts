@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { UpdateMyFontProcessor } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DrawStringUtil } from './DrawStringUtil.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.draw.DrawStringUtil;
 
+                
 export class CanvasDrawLineString
             extends Object
          implements UpdateMyFontInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -73,7 +73,9 @@ import { Visitor } from '../../../../../../org/allbinary/logic/util/visitor/Visi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicRandomAI } from './BasicRandomAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.tactical.BasicRandomAI;
 
+                
 export class BasicRandomAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

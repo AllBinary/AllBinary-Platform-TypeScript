@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -53,9 +53,15 @@ import { HelpSet } from '../../../../../javax/help/HelpSet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-import { Color } from './Color.js';
-import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Rectangle;
 
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Color;
+
+                import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Point;
+
+                
 export interface InputRobotInterface {
         
 

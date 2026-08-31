@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -43,12 +43,24 @@ import { GLU } from '../../../com/jogamp/opengl/glu/GLU.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL10 } from './GL10.js';
-import { GL2 } from './GL2.js';
-import { GL } from './GL.js';
-import { Buffer } from './Buffer.js';
-import { IntBuffer } from './IntBuffer.js';
-import { FloatBuffer } from './FloatBuffer.js';
-//JOGLEToKhronosGL10
+//not GWT import const  = globalThis.org.allbinary.opengles.GL10;
+
+                import { GL2 } from './GL2.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.GL2;
+
+                import { GL } from './GL.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.GL;
+
+                import { Buffer } from './Buffer.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.Buffer;
+
+                import { IntBuffer } from './IntBuffer.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.IntBuffer;
+
+                import { FloatBuffer } from './FloatBuffer.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.FloatBuffer;
+
+                //JOGLEToKhronosGL10
 export class JOGL10
             extends Object
          implements javax.microedition.khronos.opengles.GL10 {

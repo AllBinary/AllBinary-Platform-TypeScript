@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -51,8 +51,12 @@ import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoEntityFactory } from './TransformInfoEntityFactory.js';
-import { TransformInfoEntity } from './TransformInfoEntity.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityFactory;
 
+                import { TransformInfoEntity } from './TransformInfoEntity.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntity;
+
+                
 export class TransformInfoEntityBuilder
             extends Object
          {

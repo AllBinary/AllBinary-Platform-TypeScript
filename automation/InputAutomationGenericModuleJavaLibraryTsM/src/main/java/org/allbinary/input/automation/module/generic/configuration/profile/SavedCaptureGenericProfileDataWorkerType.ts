@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { InputImageType } from '../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
@@ -41,7 +41,9 @@ import { InputImageType } from '../../../../../../../../org/allbinary/input/medi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileDataWorkerType } from './GenericProfileDataWorkerType.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileDataWorkerType;
 
+                
 export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileDataWorkerType {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Long } from '../../../../../../java/lang/Long.js';
@@ -43,7 +43,9 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
 
+                
 export class MotionRectanglesResultsEvent extends AllBinaryEventObject {
         
 

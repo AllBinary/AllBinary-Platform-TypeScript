@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -22,8 +22,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MIDlet } from './MIDlet.js';
+        //not plain js import { MIDlet } from './MIDlet.js';
+const  = globalThis.javax.microedition.midlet.MIDlet;
 
+                
 export class NullMIDlet extends MIDlet {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -65,8 +65,12 @@ import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/Sp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RegistrationConfiguration } from './RegistrationConfiguration.js';
-import { XmlRpcRemoteLicenseRegistrationClient } from './XmlRpcRemoteLicenseRegistrationClient.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.registration.RegistrationConfiguration;
 
+                import { XmlRpcRemoteLicenseRegistrationClient } from './XmlRpcRemoteLicenseRegistrationClient.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.registration.XmlRpcRemoteLicenseRegistrationClient;
+
+                
 export class LicenseRegistrationUtil
             extends Object
          {

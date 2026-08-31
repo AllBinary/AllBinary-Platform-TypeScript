@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -103,8 +103,12 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollCurrentSelectionForm } from './ScrollCurrentSelectionForm.js';
-import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollCurrentSelectionForm;
 
+                import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+
+                
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm implements UpdateMyFontInterface {
         
 

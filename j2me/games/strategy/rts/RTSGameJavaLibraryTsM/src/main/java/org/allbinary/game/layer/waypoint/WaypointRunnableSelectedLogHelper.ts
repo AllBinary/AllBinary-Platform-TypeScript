@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
@@ -53,7 +53,9 @@ import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointRunnableLogHelper;
 
+                
 export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper {
         
 

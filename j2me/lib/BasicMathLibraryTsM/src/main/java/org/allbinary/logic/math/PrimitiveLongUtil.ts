@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -68,9 +68,13 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PrimitiveLongSingleton } from './PrimitiveLongSingleton.js';
-import { MathUtil } from './MathUtil.js';
+        //not plain js import { PrimitiveLongSingleton } from './PrimitiveLongSingleton.js';
+const  = globalThis.org.allbinary.logic.math.PrimitiveLongSingleton;
 
+                //not plain js import { MathUtil } from './MathUtil.js';
+const  = globalThis.org.allbinary.logic.math.MathUtil;
+
+                
 export class PrimitiveLongUtil
             extends Object
          {

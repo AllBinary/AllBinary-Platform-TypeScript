@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -47,10 +47,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingInfoInterface } from './PathFindingInfoInterface.js';
-import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
-import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-import { PathFindingNode } from './PathFindingNode.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfoInterface;
 
+                import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoFactoryBase;
+
+                import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
+
+                import { PathFindingNode } from './PathFindingNode.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
+
+                
 export class PathFindingInfo
             extends Object
          implements PathFindingInfoInterface {

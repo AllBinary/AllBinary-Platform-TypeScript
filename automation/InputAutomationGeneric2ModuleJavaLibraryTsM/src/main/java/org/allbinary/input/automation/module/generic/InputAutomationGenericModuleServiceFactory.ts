@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -51,7 +51,9 @@ import { InputAutomationModuleServiceFactory } from '../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericModuleFactory } from './GenericModuleFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.GenericModuleFactory;
 
+                
 export class InputAutomationGenericModuleServiceFactory extends InputAutomationModuleServiceFactory {
         
 

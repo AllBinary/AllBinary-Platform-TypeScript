@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -141,8 +141,12 @@ import { TransformInfoInterface } from '../../../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionInterfaceFactory } from './PaymentTransactionInterfaceFactory.js';
-import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterfaceFactory;
 
+                import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.transaction.PaymentTransactionInterface;
+
+                
 export class PaymentTransactionInterfaceRequestFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -65,9 +65,15 @@ import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
-import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
-import { ExitRunnable } from './ExitRunnable.js';
-//SWTForJ2ME
+//not GWT import const  = globalThis.org.allbinary.midlet.AllBinaryMidlet;
+
+                import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
+//not GWT import const  = globalThis.org.allbinary.midlet.MidletExitProcessorFactory;
+
+                import { ExitRunnable } from './ExitRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.midlet.ExitRunnable;
+
+                //SWTForJ2ME
 export class ProgressMidlet extends AllBinaryMidlet {
         
 

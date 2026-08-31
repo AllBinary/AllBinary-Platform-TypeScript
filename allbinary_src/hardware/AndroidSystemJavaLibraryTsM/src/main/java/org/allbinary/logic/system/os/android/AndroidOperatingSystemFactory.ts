@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import hilog from '@ohos.hilog';
@@ -71,7 +71,9 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidOS } from './AndroidOS.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.android.AndroidOS;
 
+                
 export class AndroidOperatingSystemFactory
             extends Object
          {

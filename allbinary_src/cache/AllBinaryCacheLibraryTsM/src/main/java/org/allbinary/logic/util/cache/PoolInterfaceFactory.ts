@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -41,10 +41,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PoolInterface } from './PoolInterface.js';
-import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-import { PoolType } from './PoolType.js';
-import { CachePolicy } from './CachePolicy.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.PoolInterface;
 
+                import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+
+                import { PoolType } from './PoolType.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.PoolType;
+
+                import { CachePolicy } from './CachePolicy.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CachePolicy;
+
+                
 export class PoolInterfaceFactory
             extends Object
          {

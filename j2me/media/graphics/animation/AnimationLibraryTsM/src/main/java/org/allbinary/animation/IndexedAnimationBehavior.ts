@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
@@ -53,7 +53,9 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
 
+                
 export class IndexedAnimationBehavior extends AnimationBehavior {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -51,7 +51,9 @@ import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSecretComposite } from './BaseSecretComposite.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.BaseSecretComposite;
 
+                
 export class SecretComposite extends BaseSecretComposite {
         
 

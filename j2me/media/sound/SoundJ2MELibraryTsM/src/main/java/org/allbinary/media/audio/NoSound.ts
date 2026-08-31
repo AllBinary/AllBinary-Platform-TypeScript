@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
@@ -41,8 +41,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-import { NoPlayer } from './NoPlayer.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
 
+                import { NoPlayer } from './NoPlayer.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NoPlayer;
+
+                
 export class NoSound extends Sound {
         
 

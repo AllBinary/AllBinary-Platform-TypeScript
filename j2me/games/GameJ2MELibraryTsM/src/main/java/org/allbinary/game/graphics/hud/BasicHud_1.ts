@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -117,8 +117,12 @@ import { EventStrings } from '../../../../../org/allbinary/logic/util/event/Even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HudGraphicsPosition } from './HudGraphicsPosition.js';
-import { BasicHudFactory } from './BasicHudFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.graphics.hud.HudGraphicsPosition;
 
+                import { BasicHudFactory } from './BasicHudFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.graphics.hud.BasicHudFactory;
+
+                
 export class BasicHud_1
             extends Object
          implements UpdateMyFontInterface {

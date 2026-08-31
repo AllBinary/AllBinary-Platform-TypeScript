@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -41,7 +41,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlInput } from './HtmlInput.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInput;
 
+                
 export class HtmlValueInput extends HtmlInput {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -67,7 +67,9 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontStatisticsComponent } from './StoreFrontStatisticsComponent.js';
-//extends StoreFrontComponent
+//not GWT import const  = globalThis.views.admin.storefront.statistics.StoreFrontStatisticsComponent;
+
+                //extends StoreFrontComponent
 export class ValidationStoreFrontStatisticsView extends StoreFrontStatisticsComponent implements ValidationComponentInterface {
         
 

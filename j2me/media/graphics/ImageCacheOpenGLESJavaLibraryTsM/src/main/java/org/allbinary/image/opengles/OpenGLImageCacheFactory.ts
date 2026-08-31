@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLImageCache } from './OpenGLImageCache.js';
-//ImageCacheOpenGLESJavaLibrary
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLImageCache;
+
+                //ImageCacheOpenGLESJavaLibrary
 export class OpenGLImageCacheFactory
             extends Object
          {

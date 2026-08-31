@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -79,7 +79,9 @@ import { WeblisketSession } from '../../org/allbinary/logic/communication/http/r
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
+//not GWT import const  = globalThis.admin.taghelpers.TagHelper;
 
+                
 export class ShippingHelper extends TagHelper {
         
 

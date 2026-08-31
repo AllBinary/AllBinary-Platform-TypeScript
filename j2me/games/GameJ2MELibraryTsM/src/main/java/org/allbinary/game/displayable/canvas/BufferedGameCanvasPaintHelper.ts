@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -75,7 +75,9 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
+                
 export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
         
 

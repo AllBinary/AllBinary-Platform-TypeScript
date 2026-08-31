@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
 
+                
 export class OrderProcessorUtil
             extends Object
          {

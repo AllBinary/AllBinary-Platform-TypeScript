@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { ImageToolJFrame } from '../../../org/allbinary/image/gui/ImageToolJFram
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventQueue } from './EventQueue.js';
+//not GWT import const  = globalThis.org.allbinary.image.EventQueue;
 
+                
 export class ImageTool
             extends Object
          {

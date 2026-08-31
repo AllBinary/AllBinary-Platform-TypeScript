@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
@@ -69,8 +69,12 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTopViewGeographicMapCellType } from './BasicTopViewGeographicMapCellType.js';
-import { BasicTopViewGeographicMapStrings } from './BasicTopViewGeographicMapStrings.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.topview.BasicTopViewGeographicMapCellType;
 
+                import { BasicTopViewGeographicMapStrings } from './BasicTopViewGeographicMapStrings.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.topview.BasicTopViewGeographicMapStrings;
+
+                
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 

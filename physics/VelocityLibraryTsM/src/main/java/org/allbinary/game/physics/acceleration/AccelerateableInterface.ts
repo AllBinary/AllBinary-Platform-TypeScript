@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';

@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { KeyEvent } from '../../../../android/view/KeyEvent.js';
@@ -47,8 +47,12 @@ import { ActivityFractureUtil } from '../../../../org/allbinary/android/Activity
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidGameKey } from './AndroidGameKey.js';
-import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidGameKey;
 
+                import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+
+                
 export class AndroidKeyFactory extends ActivityFractureUtil {
         
 

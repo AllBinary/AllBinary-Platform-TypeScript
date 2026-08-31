@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -57,9 +57,15 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-import { Point } from './Point.js';
-import { Graphics2D } from './Graphics2D.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
 
+                import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.Point;
+
+                import { Graphics2D } from './Graphics2D.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.Graphics2D;
+
+                
 export class ImagesRatioUtil
             extends Object
          {

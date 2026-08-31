@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -95,9 +95,15 @@ import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/grap
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
-import { FakeLayerManager } from './FakeLayerManager.js';
-import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
 
+                import { FakeLayerManager } from './FakeLayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.FakeLayerManager;
+
+                import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
+                
 export class RTSLayerUtil
             extends Object
          {

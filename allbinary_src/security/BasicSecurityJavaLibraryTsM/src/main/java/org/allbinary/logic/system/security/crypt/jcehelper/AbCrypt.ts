@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -85,9 +85,15 @@ import { BouncyCastleProvider } from '../../../../../../../org/bouncycastle/jce/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSecretComposite } from './BaseSecretComposite.js';
-import { KeySpecFactory } from './KeySpecFactory.js';
-import { SecretComposite } from './SecretComposite.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.BaseSecretComposite;
 
+                import { KeySpecFactory } from './KeySpecFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
+
+                import { SecretComposite } from './SecretComposite.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.SecretComposite;
+
+                
 export class AbCrypt
             extends Object
          implements CryptInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -55,12 +55,24 @@ import { TsUtil } from '../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Context } from './Context.js';
-import { NotificationManager } from './NotificationManager.js';
-import { CommandUriAction } from './CommandUriAction.js';
-import { Intent } from './Intent.js';
-import { Notification } from './Notification.js';
-import { PendingIntent } from './PendingIntent.js';
+//not GWT import const  = globalThis.org.allbinary.content.Context;
 
+                import { NotificationManager } from './NotificationManager.js';
+//not GWT import const  = globalThis.org.allbinary.content.NotificationManager;
+
+                import { CommandUriAction } from './CommandUriAction.js';
+//not GWT import const  = globalThis.org.allbinary.content.CommandUriAction;
+
+                import { Intent } from './Intent.js';
+//not GWT import const  = globalThis.org.allbinary.content.Intent;
+
+                import { Notification } from './Notification.js';
+//not GWT import const  = globalThis.org.allbinary.content.Notification;
+
+                import { PendingIntent } from './PendingIntent.js';
+//not GWT import const  = globalThis.org.allbinary.content.PendingIntent;
+
+                
 export class NotificationUtil
             extends Object
          {

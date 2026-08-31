@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
@@ -39,7 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
 
+                
 export interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 

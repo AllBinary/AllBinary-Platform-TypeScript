@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
+                
 export class GeographicMapDirectionUtil
             extends Object
          {

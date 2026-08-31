@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,12 +37,24 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { JComboBox } from './JComboBox.js';
-import { JLabel } from './JLabel.js';
-import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JPanel;
 
+                import { JComboBox } from './JComboBox.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JComboBox;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JLabel;
+
+                import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.DefaultComboBoxModel;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Short;
+
+                
 export class InputAutomationTypeJPanel extends javax.swing.JPanel {
         
 

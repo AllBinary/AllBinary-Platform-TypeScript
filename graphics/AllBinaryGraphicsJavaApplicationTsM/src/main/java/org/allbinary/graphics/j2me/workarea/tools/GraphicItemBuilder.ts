@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -45,9 +45,15 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsDomUtil } from './PointsDomUtil.js';
-import { LinesGraphicItem } from './LinesGraphicItem.js';
-import { GraphicItemInterface } from './GraphicItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsDomUtil;
 
+                import { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+
+                import { GraphicItemInterface } from './GraphicItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+
+                
 export class GraphicItemBuilder
             extends Object
          {

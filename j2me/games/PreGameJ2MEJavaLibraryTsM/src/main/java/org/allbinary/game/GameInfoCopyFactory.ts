@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -39,7 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInfo } from './GameInfo.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameInfo;
 
+                
 export class GameInfoCopyFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -55,8 +55,12 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperFactory } from './TagHelperFactory.js';
-import { StoreFrontHelper } from './StoreFrontHelper.js';
+//not GWT import const  = globalThis.admin.taghelpers.TagHelperFactory;
 
+                import { StoreFrontHelper } from './StoreFrontHelper.js';
+//not GWT import const  = globalThis.admin.taghelpers.StoreFrontHelper;
+
+                
 export class StoreFrontHelperFactory extends TagHelperFactory {
         
 

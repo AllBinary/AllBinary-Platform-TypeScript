@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Class } from '../java/lang/Class.js';
@@ -61,7 +61,9 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformTag } from './TransformTag.js';
+//not GWT import const  = globalThis.tags.TransformTag;
 
+                
 export class XmlValidationTransformTag extends TransformTag {
         
 

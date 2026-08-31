@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -83,10 +83,18 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
-import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
-import { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidlet;
 
+                import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEvent;
+
+                import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletStateFactory;
+
+                import { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEventHandler;
+
+                
 export class CreateGameRunnable
             extends Object
          implements Runnable {

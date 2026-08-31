@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -77,8 +77,12 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-import { NoSound } from './NoSound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
 
+                import { NoSound } from './NoSound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NoSound;
+
+                
 export class PlayerQueue
             extends Object
          {

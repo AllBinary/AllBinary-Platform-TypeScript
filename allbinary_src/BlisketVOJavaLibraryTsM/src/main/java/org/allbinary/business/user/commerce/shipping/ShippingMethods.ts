@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -65,8 +65,12 @@ import { AbeClientInformationInterface } from '../../../../../../org/allbinary/l
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsInterface } from './ShippingMethodsInterface.js';
-import { ShippingMethodsFactory } from './ShippingMethodsFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsInterface;
 
+                import { ShippingMethodsFactory } from './ShippingMethodsFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.ShippingMethodsFactory;
+
+                
 export class ShippingMethods
             extends Object
          implements ShippingMethodsInterface {

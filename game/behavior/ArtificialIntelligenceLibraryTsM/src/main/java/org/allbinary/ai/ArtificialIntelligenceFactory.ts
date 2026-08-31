@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -43,8 +43,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceFactoryInterface } from './ArtificialIntelligenceFactoryInterface.js';
-import { ArtificialIntelligence } from './ArtificialIntelligence.js';
+//not GWT import const  = globalThis.org.allbinary.ai.ArtificialIntelligenceFactoryInterface;
 
+                import { ArtificialIntelligence } from './ArtificialIntelligence.js';
+//not GWT import const  = globalThis.org.allbinary.ai.ArtificialIntelligence;
+
+                
 export class ArtificialIntelligenceFactory
             extends Object
          implements ArtificialIntelligenceFactoryInterface {

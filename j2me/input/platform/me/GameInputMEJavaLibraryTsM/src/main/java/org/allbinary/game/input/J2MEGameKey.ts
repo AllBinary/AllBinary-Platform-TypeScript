@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
@@ -45,8 +45,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Input } from './Input.js';
-import { InputFactory } from './InputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.Input;
 
+                import { InputFactory } from './InputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+
+                
 export class J2MEGameKey extends Input {
         
 

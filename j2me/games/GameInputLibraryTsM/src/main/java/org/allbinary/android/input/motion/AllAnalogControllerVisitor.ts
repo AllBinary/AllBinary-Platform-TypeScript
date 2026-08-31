@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { AnalogLocationInput } from '../../../../../org/allbinary/game/input/analog/AnalogLocationInput.js';
@@ -53,8 +53,12 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnalogControllerVisitor } from './AnalogControllerVisitor.js';
-import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.android.input.motion.AnalogControllerVisitor;
 
+                import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.android.input.motion.AnalogLocationInputProcessor;
+
+                
 export class AllAnalogControllerVisitor extends AnalogControllerVisitor {
         
 

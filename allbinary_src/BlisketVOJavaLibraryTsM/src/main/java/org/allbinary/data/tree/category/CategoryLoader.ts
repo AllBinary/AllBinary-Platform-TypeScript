@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -95,8 +95,12 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryModifierTree } from './CategoryModifierTree.js';
-import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.category.CategoryModifierTree;
 
+                import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.category.CategoryLoaderInterface;
+
+                
 export class CategoryLoader extends CategoryModifierTree implements CategoryLoaderInterface {
         
 

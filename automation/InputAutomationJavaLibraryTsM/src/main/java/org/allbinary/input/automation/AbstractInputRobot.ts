@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -57,9 +57,15 @@ import { HelpSet } from '../../../../javax/help/HelpSet.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
-import { PointHelper } from './PointHelper.js';
-import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.Point;
 
+                import { PointHelper } from './PointHelper.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.PointHelper;
+
+                import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.Rectangle;
+
+                
 export class AbstractInputRobot
             extends Object
          {

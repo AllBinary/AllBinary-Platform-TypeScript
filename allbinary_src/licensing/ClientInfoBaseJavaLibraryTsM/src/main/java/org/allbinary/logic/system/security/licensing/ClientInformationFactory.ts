@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -55,7 +55,9 @@ import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ClientInformation } from './ClientInformation.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.ClientInformation;
 
+                
 export class ClientInformationFactory
             extends Object
          {

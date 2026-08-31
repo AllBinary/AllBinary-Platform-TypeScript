@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -48,8 +48,10 @@ import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/Ga
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageScaleUtil } from './ImageScaleUtil.js';
+        //not plain js import { ImageScaleUtil } from './ImageScaleUtil.js';
+const  = globalThis.org.allbinary.media.image.ImageScaleUtil;
 
+                
 export class ImageJ2MEScaleUtil
             extends Object
          {

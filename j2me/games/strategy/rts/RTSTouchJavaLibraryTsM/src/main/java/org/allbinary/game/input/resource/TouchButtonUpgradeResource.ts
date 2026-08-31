@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { TouchButtonResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { NoTimeDelayHelper } from '../../../../../org/allbinary/time/NoTimeDelay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputProbability } from './InputProbability.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.InputProbability;
 
+                
 export class BasicProbabilityAIDataFactory
             extends Object
          {

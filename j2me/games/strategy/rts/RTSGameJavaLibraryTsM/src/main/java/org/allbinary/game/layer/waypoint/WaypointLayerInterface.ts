@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -67,9 +67,15 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLogHelper } from './WaypointLogHelper.js';
-import { Waypoint2LogHelper } from './Waypoint2LogHelper.js';
-import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointLogHelper;
 
+                import { Waypoint2LogHelper } from './Waypoint2LogHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.Waypoint2LogHelper;
+
+                import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointRunnableLogHelper;
+
+                
 export interface WaypointLayerInterface {
         
 

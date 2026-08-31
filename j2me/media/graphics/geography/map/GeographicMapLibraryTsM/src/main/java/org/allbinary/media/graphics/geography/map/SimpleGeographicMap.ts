@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -59,9 +59,15 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
-import { GeographicMapCellType } from './GeographicMapCellType.js';
-import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellTypeFactory;
 
+                import { GeographicMapCellType } from './GeographicMapCellType.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+
+                import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
+                
 export class SimpleGeographicMap
             extends Object
          {

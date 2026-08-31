@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -63,8 +63,12 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptProcessorInterface } from './ProfileActionScriptProcessorInterface.js';
-import { GenericProfileActionScriptProcessorData } from './GenericProfileActionScriptProcessorData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.ProfileActionScriptProcessorInterface;
 
+                import { GenericProfileActionScriptProcessorData } from './GenericProfileActionScriptProcessorData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.GenericProfileActionScriptProcessorData;
+
+                
 export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem implements ProfileActionScriptProcessorInterface {
         
 

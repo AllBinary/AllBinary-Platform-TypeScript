@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,8 +51,12 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
-import { InitUpdatePaintableInterface } from './InitUpdatePaintableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.paint.Paintable;
 
+                import { InitUpdatePaintableInterface } from './InitUpdatePaintableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.paint.InitUpdatePaintableInterface;
+
+                
 export class InitUpdatePaintable extends Paintable implements InitUpdatePaintableInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -63,7 +63,9 @@ import { AxisMathVectorUtil } from '../../../../org/allbinary/logic/math/vector/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Movement } from './Movement.js';
+//not GWT import const  = globalThis.org.allbinary.physics.movement.Movement;
 
+                
 export class ConstantVelocityNotifyViewChangeMovement extends Movement {
         
 

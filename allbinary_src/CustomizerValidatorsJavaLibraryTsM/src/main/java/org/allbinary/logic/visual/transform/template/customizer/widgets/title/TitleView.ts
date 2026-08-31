@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -85,7 +85,9 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TitleData } from './TitleData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
 
+                
 export class TitleView
             extends Object
          implements DomNodeInterface {

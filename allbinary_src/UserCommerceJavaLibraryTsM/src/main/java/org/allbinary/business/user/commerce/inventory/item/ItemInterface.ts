@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';

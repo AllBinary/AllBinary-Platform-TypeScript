@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -67,7 +67,9 @@ import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/c
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NumberStringHud } from './NumberStringHud.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.NumberStringHud;
 
+                
 export class NumberStringHudFactory
             extends Object
          {

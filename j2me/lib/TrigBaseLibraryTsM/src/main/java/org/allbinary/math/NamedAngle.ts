@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
@@ -48,8 +48,10 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Angle } from './Angle.js';
+        //not plain js import { Angle } from './Angle.js';
+const  = globalThis.org.allbinary.math.Angle;
 
+                
 export class NamedAngle extends Angle {
         
 

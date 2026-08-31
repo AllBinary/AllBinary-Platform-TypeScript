@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -79,7 +79,9 @@ import { TimeUtil } from '../../../../../../../../org/allbinary/time/TimeUtil.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadItemData } from './DownloadItemData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.download.DownloadItemData;
 
+                
 export class DownloadableItem
             extends Object
          {

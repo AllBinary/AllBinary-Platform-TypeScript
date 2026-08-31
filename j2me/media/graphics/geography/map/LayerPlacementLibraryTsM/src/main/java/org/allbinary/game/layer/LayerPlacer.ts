@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -77,9 +77,15 @@ import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementInterface } from './LayerPlacementInterface.js';
-import { LayerPlacementType } from './LayerPlacementType.js';
-import { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementInterface;
 
+                import { LayerPlacementType } from './LayerPlacementType.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementType;
+
+                import { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.LayerPlacementTypeFactory;
+
+                
 export class LayerPlacer
             extends Object
          {

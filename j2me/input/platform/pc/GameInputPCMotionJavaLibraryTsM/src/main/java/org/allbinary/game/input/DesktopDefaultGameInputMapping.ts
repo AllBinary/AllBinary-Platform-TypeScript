@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
@@ -57,8 +57,12 @@ import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motio
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCKeyFactory } from './PCKeyFactory.js';
-import { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PCKeyFactory;
 
+                import { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameKeyFactory;
+
+                
 export class DesktopDefaultGameInputMapping extends PersistentInputMapping {
         
 

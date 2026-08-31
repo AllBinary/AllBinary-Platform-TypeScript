@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomSearchHelper } from './DomSearchHelper.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.dom.DomSearchHelper;
 
+                
 export class DomNodeHelper
             extends Object
          {

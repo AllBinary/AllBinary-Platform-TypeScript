@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
@@ -45,7 +45,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ModifierBaseProcessor;
 
+                
 export class AlphaProcessor extends ModifierBaseProcessor {
         
 

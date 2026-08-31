@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -89,7 +89,9 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.part.PartInterface;
 
+                
 export class CountedLayerInterfaceFactoryPart
             extends Object
          implements PartInterface, UpdateMyFontInterface {

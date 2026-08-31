@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -55,7 +55,9 @@ import { AdvertisementSearchInterface } from '../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignsInterface } from './AdvertisementCampaignsInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.campaign.AdvertisementCampaignsInterface;
 
+                
 export class AdvertisementCampaigns
             extends Object
          implements AdvertisementCampaignsInterface {

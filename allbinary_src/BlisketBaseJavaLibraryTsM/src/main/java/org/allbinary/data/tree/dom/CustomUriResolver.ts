@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -93,8 +93,12 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { URIResolverStrings } from './URIResolverStrings.js';
-import { BasicUriResolver } from './BasicUriResolver.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.dom.URIResolverStrings;
 
+                import { BasicUriResolver } from './BasicUriResolver.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.dom.BasicUriResolver;
+
+                
 export class CustomUriResolver
             extends Object
          implements URIResolver {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
@@ -45,7 +45,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
 
+                
 export class AlphaProcessor extends AlphaBaseProcessor {
         
 

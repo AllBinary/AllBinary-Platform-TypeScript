@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -87,17 +87,39 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-import { ItemIndexDx } from './ItemIndexDx.js';
-import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { FormTypeFactory } from './FormTypeFactory.js';
-//import { VerticalFormProcessor } from './VerticalFormProcessor.js';
-//import { VerticalItemIndexDx } from './VerticalItemIndexDx.js';
-//import { HorizontalFormProcessor } from './HorizontalFormProcessor.js';
-//import { HorizontalItemIndexDx } from './HorizontalItemIndexDx.js';
-//import { TempHorizontalFormProcessor } from './TempHorizontalFormProcessor.js';
-//import { TempHorizontalItemIndexDx } from './TempHorizontalItemIndexDx.js';
-import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
 
+                import { ItemIndexDx } from './ItemIndexDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemIndexDx;
+
+                import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+
+                import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+
+                //import { VerticalFormProcessor } from './VerticalFormProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.VerticalFormProcessor;
+
+                //import { VerticalItemIndexDx } from './VerticalItemIndexDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.VerticalItemIndexDx;
+
+                //import { HorizontalFormProcessor } from './HorizontalFormProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.HorizontalFormProcessor;
+
+                //import { HorizontalItemIndexDx } from './HorizontalItemIndexDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.HorizontalItemIndexDx;
+
+                //import { TempHorizontalFormProcessor } from './TempHorizontalFormProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.TempHorizontalFormProcessor;
+
+                //import { TempHorizontalItemIndexDx } from './TempHorizontalItemIndexDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.TempHorizontalItemIndexDx;
+
+                import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+
+                
 export class ScrollCurrentSelectionForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
 

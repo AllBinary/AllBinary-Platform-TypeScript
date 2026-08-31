@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -71,9 +71,15 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryFactoryInterface } from './CategoryFactoryInterface.js';
-import { CategoryInterface } from './CategoryInterface.js';
-import { Category } from './Category.js';
+//not GWT import const  = globalThis.org.allbinary.business.category.CategoryFactoryInterface;
 
+                import { CategoryInterface } from './CategoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.category.CategoryInterface;
+
+                import { Category } from './Category.js';
+//not GWT import const  = globalThis.org.allbinary.business.category.Category;
+
+                
 export class CategoryAbstractFactory
             extends Object
          implements CategoryFactoryInterface {

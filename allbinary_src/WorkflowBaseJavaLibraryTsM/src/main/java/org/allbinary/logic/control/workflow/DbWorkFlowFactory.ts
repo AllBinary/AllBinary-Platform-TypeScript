@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -71,8 +71,12 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowWrapper } from './WorkFlowWrapper.js';
-import { WorkFlowInterface } from './WorkFlowInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.control.workflow.WorkFlowWrapper;
 
+                import { WorkFlowInterface } from './WorkFlowInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
+
+                
 export class DbWorkFlowFactory
             extends Object
          {

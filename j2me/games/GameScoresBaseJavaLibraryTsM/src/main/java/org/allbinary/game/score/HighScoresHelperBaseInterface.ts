@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
@@ -45,8 +45,12 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-import { HighScores } from './HighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresResultsListener;
 
+                import { HighScores } from './HighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+
+                
 export interface HighScoresHelperBaseInterface extends HighScoresResultsListener {
         
 

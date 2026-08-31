@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -77,9 +77,15 @@ import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileUpload } from './AbFileUpload.js';
-import { HttpFileUploadUtil } from './HttpFileUploadUtil.js';
-import { AbFileItem } from './AbFileItem.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileUpload;
 
+                import { HttpFileUploadUtil } from './HttpFileUploadUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.file.upload.HttpFileUploadUtil;
+
+                import { AbFileItem } from './AbFileItem.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.file.upload.AbFileItem;
+
+                
 export class AbFileUploadFactory
             extends Object
          {

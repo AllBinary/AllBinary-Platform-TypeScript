@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -409,10 +409,18 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidletStateFactory } from './GameMidletStateFactory.js';
-import { GameMidletEventHandler } from './GameMidletEventHandler.js';
-import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
-import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.GameMidletStateFactory;
 
+                import { GameMidletEventHandler } from './GameMidletEventHandler.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.GameMidletEventHandler;
+
+                import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEvent;
+
+                import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletStateFactory;
+
+                
 export class GameMidlet extends ProgressMidlet implements CommandListener {
         
 

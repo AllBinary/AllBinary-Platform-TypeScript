@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -75,7 +75,9 @@ import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasketInterface } from './BasketInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.basket.BasketInterface;
 
+                
 export class Basket
             extends Object
          implements BasketInterface, Serializable {

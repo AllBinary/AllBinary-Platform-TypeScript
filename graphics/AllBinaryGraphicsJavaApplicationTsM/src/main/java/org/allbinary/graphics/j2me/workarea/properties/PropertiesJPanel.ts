@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { swing } from '../../../../../../javax/swing.js';
@@ -41,11 +41,21 @@ import { swing } from '../../../../../../javax/swing.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { JButton } from './JButton.js';
-import { JTextField } from './JTextField.js';
-import { GridLayout } from './GridLayout.js';
-import { Font } from './Font.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.properties.JPanel;
 
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.properties.JButton;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.properties.JTextField;
+
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.properties.GridLayout;
+
+                import { Font } from './Font.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.properties.Font;
+
+                
 export class PropertiesJPanel extends javax.swing.JPanel {
         
 

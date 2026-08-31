@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -59,7 +59,9 @@ import { EmailServerConfigurationInterface } from '../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicEmailInfo } from './BasicEmailInfo.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.info.BasicEmailInfo;
 
+                
 export class StoreEmailInfo extends BasicEmailInfo {
         
 

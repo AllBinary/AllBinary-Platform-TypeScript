@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
@@ -77,7 +77,9 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HackRotationSpriteIndexedAnimation } from './HackRotationSpriteIndexedAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.HackRotationSpriteIndexedAnimation;
 
+                
 export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedAnimation {
         
 

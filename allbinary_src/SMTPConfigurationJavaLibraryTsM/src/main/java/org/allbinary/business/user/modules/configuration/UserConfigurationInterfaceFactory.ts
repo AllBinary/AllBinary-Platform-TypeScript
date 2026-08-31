@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -81,10 +81,18 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationData } from './UserConfigurationData.js';
-import { UserConfigurationView } from './UserConfigurationView.js';
-import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-import { UserConfiguration } from './UserConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
 
+                import { UserConfigurationView } from './UserConfigurationView.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationView;
+
+                import { UserConfigurationInterface } from './UserConfigurationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
+
+                import { UserConfiguration } from './UserConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
+
+                
 export class UserConfigurationInterfaceFactory
             extends Object
          {

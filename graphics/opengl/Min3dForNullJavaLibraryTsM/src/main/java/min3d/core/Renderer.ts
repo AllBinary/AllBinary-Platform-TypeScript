@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { EGLConfig } from '../../javax/microedition/khronos/egl/EGLConfig.js';

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -73,8 +73,12 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VirtualKeyboardEvent } from './VirtualKeyboardEvent.js';
-import { VirtualKeyboardEventListenerInterface } from './VirtualKeyboardEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.event.VirtualKeyboardEvent;
 
+                import { VirtualKeyboardEventListenerInterface } from './VirtualKeyboardEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.event.VirtualKeyboardEventListenerInterface;
+
+                
 export class VirtualKeyboardEventHandler extends BasicEventHandler {
         
 

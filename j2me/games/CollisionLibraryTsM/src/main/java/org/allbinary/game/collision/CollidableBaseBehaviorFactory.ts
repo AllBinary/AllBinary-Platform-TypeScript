@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -49,8 +49,12 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehaviorFactoryInterface } from './CollidableBaseBehaviorFactoryInterface.js';
-import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableBaseBehaviorFactoryInterface;
 
+                import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+
+                
 export class CollidableBaseBehaviorFactory
             extends Object
          implements CollidableBaseBehaviorFactoryInterface {

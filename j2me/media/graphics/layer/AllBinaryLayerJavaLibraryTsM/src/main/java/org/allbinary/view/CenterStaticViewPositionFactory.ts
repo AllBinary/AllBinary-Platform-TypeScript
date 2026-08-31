@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -55,8 +55,12 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticViewPosition } from './StaticViewPosition.js';
-import { ViewPositionBase } from './ViewPositionBase.js';
+//not GWT import const  = globalThis.org.allbinary.view.StaticViewPosition;
 
+                import { ViewPositionBase } from './ViewPositionBase.js';
+//not GWT import const  = globalThis.org.allbinary.view.ViewPositionBase;
+
+                
 export class CenterStaticViewPositionFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoDebug } from './NoDebug.js';
-import { DebugInterface } from './DebugInterface.js';
+//not GWT import const  = globalThis.org.allbinary.debug.NoDebug;
 
+                import { DebugInterface } from './DebugInterface.js';
+//not GWT import const  = globalThis.org.allbinary.debug.DebugInterface;
+
+                
 export class DebugFactory
             extends Object
          {

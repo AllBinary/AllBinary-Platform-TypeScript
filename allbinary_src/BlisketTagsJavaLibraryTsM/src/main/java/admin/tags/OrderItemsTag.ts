@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Class } from '../../java/lang/Class.js';
@@ -73,7 +73,9 @@ import { LicensingException } from '../../org/allbinary/logic/system/security/li
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
+//not GWT import const  = globalThis.admin.tags.TableTag;
 
+                
 export class OrderItemsTag extends TableTag {
         
 

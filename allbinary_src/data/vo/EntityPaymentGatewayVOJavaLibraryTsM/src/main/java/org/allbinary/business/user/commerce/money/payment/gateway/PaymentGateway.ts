@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -73,9 +73,15 @@ import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-import { PaymentGatewayData } from './PaymentGatewayData.js';
-import { PaymentGatewayPrimaryKey } from './PaymentGatewayPrimaryKey.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
 
+                import { PaymentGatewayData } from './PaymentGatewayData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+
+                import { PaymentGatewayPrimaryKey } from './PaymentGatewayPrimaryKey.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayPrimaryKey;
+
+                
 export class PaymentGateway
             extends Object
          implements PaymentGatewayInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { EventObject } from '../../../../../../java/util/EventObject.js';
@@ -49,7 +49,9 @@ import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventNameData } from './UserEmailEventNameData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.event.UserEmailEventNameData;
 
+                
 export class EmailEvent extends EventObject {
         
 

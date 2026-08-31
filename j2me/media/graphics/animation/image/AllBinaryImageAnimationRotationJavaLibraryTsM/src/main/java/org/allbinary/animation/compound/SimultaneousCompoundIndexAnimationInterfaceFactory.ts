@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -65,7 +65,9 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimultaneousCompoundIndexAnimation } from './SimultaneousCompoundIndexAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.compound.SimultaneousCompoundIndexAnimation;
 
+                
 export class SimultaneousCompoundIndexAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

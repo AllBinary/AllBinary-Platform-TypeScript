@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';

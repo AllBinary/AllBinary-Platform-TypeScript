@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicVelocityProperties } from './BasicVelocityProperties.js';
-import { VelocityInterface } from './VelocityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
 
+                import { VelocityInterface } from './VelocityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.physics.velocity.VelocityInterface;
+
+                
 export class VelocityProperties extends BasicVelocityProperties implements VelocityInterface {
         
 

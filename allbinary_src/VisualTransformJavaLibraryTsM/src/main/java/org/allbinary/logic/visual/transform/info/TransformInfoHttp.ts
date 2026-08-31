@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -95,9 +95,15 @@ import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfo } from './TransformInfo.js';
-import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
-import { TransformInfoData } from './TransformInfoData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfo;
 
+                import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
+
+                import { TransformInfoData } from './TransformInfoData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
+                
 export class TransformInfoHttp extends TransformInfo implements TransformInfoHttpInterface {
         
 

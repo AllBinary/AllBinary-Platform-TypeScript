@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Directory } from './Directory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.file.directory.Directory;
 
+                
 export class SubDirectory
             extends Object
          {

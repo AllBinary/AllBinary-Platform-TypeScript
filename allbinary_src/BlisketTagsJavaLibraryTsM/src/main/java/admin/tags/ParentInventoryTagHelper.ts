@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
+//not GWT import const  = globalThis.admin.tags.HelperTag;
 
+                
 export class ParentInventoryTagHelper
             extends Object
          {

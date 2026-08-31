@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -67,12 +67,24 @@ import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellP
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
-import { CommonButtons } from './CommonButtons.js';
-import { TouchButton } from './TouchButton.js';
-import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
 
+                import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
+
+                import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchButtonCellPositionFactory;
+
+                import { CommonButtons } from './CommonButtons.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.CommonButtons;
+
+                import { TouchButton } from './TouchButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+
+                import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+
+                
 export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
         
 

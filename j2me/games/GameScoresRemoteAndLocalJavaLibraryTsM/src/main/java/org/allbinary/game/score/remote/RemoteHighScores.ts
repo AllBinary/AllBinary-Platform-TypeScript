@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -89,9 +89,15 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresProcessorFactory } from './RemoteHighScoresProcessorFactory.js';
-import { RemoteHighScoresSubmissionProcessorFactory } from './RemoteHighScoresSubmissionProcessorFactory.js';
-import { RemoteHighScoresData } from './RemoteHighScoresData.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresProcessorFactory;
 
+                import { RemoteHighScoresSubmissionProcessorFactory } from './RemoteHighScoresSubmissionProcessorFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresSubmissionProcessorFactory;
+
+                import { RemoteHighScoresData } from './RemoteHighScoresData.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresData;
+
+                
 export class RemoteHighScores extends HighScores {
         
 

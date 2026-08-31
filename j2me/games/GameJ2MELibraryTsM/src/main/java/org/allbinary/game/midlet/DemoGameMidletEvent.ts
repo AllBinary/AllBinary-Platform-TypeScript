@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
@@ -53,7 +53,9 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidletState } from './DemoGameMidletState.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletState;
 
+                
 export class DemoGameMidletEvent extends AllBinaryEventObject {
         
 

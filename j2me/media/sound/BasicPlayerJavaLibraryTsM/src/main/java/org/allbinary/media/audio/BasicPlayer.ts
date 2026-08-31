@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -71,8 +71,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Controllable2 } from './Controllable2.js';
-import { NullControl } from './NullControl.js';
-//BasicPlayerJavaLibrary
+//not GWT import const  = globalThis.org.allbinary.media.audio.Controllable2;
+
+                import { NullControl } from './NullControl.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NullControl;
+
+                //BasicPlayerJavaLibrary
 export class BasicPlayer
             extends Object
          implements Player, Controllable2 {

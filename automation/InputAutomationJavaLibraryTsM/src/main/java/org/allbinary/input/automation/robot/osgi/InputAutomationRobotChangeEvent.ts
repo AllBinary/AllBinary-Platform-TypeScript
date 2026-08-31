@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -39,7 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotInterfaceWrapper } from './InputAutomationRobotInterfaceWrapper.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotInterfaceWrapper;
 
+                
 export class InputAutomationRobotChangeEvent
             extends Object
          {

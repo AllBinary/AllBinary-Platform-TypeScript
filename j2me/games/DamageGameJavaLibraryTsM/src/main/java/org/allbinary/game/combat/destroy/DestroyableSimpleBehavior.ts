@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
@@ -41,8 +41,12 @@ import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/laye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DestroyableBaseBehavior } from './DestroyableBaseBehavior.js';
-import { DestroyedLayerProcessor } from './DestroyedLayerProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.DestroyableBaseBehavior;
 
+                import { DestroyedLayerProcessor } from './DestroyedLayerProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.combat.destroy.DestroyedLayerProcessor;
+
+                
 export class DestroyableSimpleBehavior extends DestroyableBaseBehavior {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -73,7 +73,9 @@ import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageSwtRotationUtil } from './ImageSwtRotationUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageSwtRotationUtil;
 
+                
 export class ImageRotationUtil
             extends Object
          {

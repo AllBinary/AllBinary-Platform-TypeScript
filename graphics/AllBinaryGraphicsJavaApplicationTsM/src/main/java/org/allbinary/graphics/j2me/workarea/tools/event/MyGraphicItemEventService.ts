@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -43,10 +43,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerList } from './EventListenerList.js';
-import { EventListener } from './EventListener.js';
-import { MyGraphicItemEventListener } from './MyGraphicItemEventListener.js';
-import { MyGraphicItemEvent } from './MyGraphicItemEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventListenerList;
 
+                import { EventListener } from './EventListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.EventListener;
+
+                import { MyGraphicItemEventListener } from './MyGraphicItemEventListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEventListener;
+
+                import { MyGraphicItemEvent } from './MyGraphicItemEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.event.MyGraphicItemEvent;
+
+                
 export class MyGraphicItemEventService
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -79,8 +79,12 @@ import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/even
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
-import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickupLayer;
 
+                import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactory;
+
+                
 export class RaceTrackPickupLayer extends PickupLayer {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tabl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistory } from './OrderHistory.js';
-//Retrieves a single order for a user
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistory;
+
+                //Retrieves a single order for a user
 export class OrderHistoryFactory
             extends Object
          {

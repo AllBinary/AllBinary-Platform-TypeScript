@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
@@ -39,7 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameStatistics } from './BaseGameStatistics.js';
-//NoPlatform
+//not GWT import const  = globalThis.org.allbinary.canvas.BaseGameStatistics;
+
+                //NoPlatform
 expect export class GameStatisticsFactory extends BaseGameStatistics {
         
 

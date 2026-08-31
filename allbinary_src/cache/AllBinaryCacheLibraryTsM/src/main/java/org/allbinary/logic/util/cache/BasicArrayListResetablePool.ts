@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -39,9 +39,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbstractArrayListPool } from './AbstractArrayListPool.js';
-import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
-import { CacheableInterface } from './CacheableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.AbstractArrayListPool;
 
+                import { CacheableInterfaceFactoryInterface } from './CacheableInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterfaceFactoryInterface;
+
+                import { CacheableInterface } from './CacheableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
+
+                
 export class BasicArrayListResetablePool extends AbstractArrayListPool {
         
 

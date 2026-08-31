@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -77,9 +77,15 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABCustomForm } from './ABCustomForm.js';
-import { FormTypeFactory } from './FormTypeFactory.js';
-import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ABCustomForm;
 
+                import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+
+                import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+
+                
 export class PaintableForm extends ABCustomForm {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -105,9 +105,15 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfilesData } from './GenericProfilesData.js';
-import { GenericProfileData } from './GenericProfileData.js';
-import { GenericProfile } from './GenericProfile.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfilesData;
 
+                import { GenericProfileData } from './GenericProfileData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileData;
+
+                import { GenericProfile } from './GenericProfile.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfile;
+
+                
 export class GenericProfiles
             extends Object
          implements DomNodeInterface, DomDocumentMappingInterface {

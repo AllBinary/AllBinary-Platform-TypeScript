@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                
 export interface GeographicMapCellPositionFactoryInterface {
         
 

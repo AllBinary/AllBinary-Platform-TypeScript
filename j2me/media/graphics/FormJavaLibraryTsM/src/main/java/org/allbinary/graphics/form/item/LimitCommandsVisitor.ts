@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Command } from '../../../../../javax/microedition/lcdui/Command.js';

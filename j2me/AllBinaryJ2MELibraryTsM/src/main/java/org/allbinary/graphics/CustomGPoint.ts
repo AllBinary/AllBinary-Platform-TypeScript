@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -36,8 +36,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GPoint } from './GPoint.js';
+        //not plain js import { GPoint } from './GPoint.js';
+const  = globalThis.org.allbinary.graphics.GPoint;
 
+                
 export class CustomGPoint extends GPoint {
         
 

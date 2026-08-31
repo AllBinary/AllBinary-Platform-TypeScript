@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,7 +51,9 @@ import { JsType } from '../../../../jsinterop/annotations/JsType.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LicenseLoadingType } from './LicenseLoadingType.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
 
+                
 export class LicenseLoadingTypeFactory
             extends Object
          {

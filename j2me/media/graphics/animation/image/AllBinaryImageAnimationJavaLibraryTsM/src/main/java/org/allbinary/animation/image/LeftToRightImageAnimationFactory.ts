@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,9 +51,15 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-import { LeftToRightImageAnimation } from './LeftToRightImageAnimation.js';
-import { AdjustedLeftToRightImageAnimation } from './AdjustedLeftToRightImageAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
+                import { LeftToRightImageAnimation } from './LeftToRightImageAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.LeftToRightImageAnimation;
+
+                import { AdjustedLeftToRightImageAnimation } from './AdjustedLeftToRightImageAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedLeftToRightImageAnimation;
+
+                
 export class LeftToRightImageAnimationFactory extends BaseImageAnimationFactory {
         
 

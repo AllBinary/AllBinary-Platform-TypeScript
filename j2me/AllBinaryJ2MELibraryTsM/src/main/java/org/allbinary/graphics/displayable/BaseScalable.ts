@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScalableListener } from './ScalableListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.displayable.ScalableListener;
 
+                
 export class BaseScalable
             extends Object
          implements ScalableListener {

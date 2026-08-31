@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -157,10 +157,18 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
-import { UnitWaypointStrings } from './UnitWaypointStrings.js';
-import { UnitLayer } from './UnitLayer.js';
-//import { BuildingSteeringVisitor } from './BuildingSteeringVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitWaypointBehavior;
 
+                import { UnitWaypointStrings } from './UnitWaypointStrings.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitWaypointStrings;
+
+                import { UnitLayer } from './UnitLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.unit.UnitLayer;
+
+                //import { BuildingSteeringVisitor } from './BuildingSteeringVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.unit.BuildingSteeringVisitor;
+
+                
 export class UnitWaypointBehavior2 extends UnitWaypointBehavior {
         
 

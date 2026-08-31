@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -71,8 +71,12 @@ import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allb
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontOrdersHistoryStatisticsInterface } from './StoreFrontOrdersHistoryStatisticsInterface.js';
-import { StoreFrontOrdersHistoryStatisticsData } from './StoreFrontOrdersHistoryStatisticsData.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsInterface;
 
+                import { StoreFrontOrdersHistoryStatisticsData } from './StoreFrontOrdersHistoryStatisticsData.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.orders.history.StoreFrontOrdersHistoryStatisticsData;
+
+                
 export class StoreFrontOrdersHistoryStatistics
             extends Object
          implements StoreFrontOrdersHistoryStatisticsInterface {

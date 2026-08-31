@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssProperty } from './CssProperty.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssProperty;
 
+                
 export class CssPropertyView
             extends Object
          implements DomNodeInterface {

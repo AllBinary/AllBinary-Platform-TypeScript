@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -91,7 +91,9 @@ import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BlisketServletUtil } from './BlisketServletUtil.js';
+//not GWT import const  = globalThis.org.allbinary.servlet.BlisketServletUtil;
 
+                
 export class ImageServlet extends HttpServlet {
         
 

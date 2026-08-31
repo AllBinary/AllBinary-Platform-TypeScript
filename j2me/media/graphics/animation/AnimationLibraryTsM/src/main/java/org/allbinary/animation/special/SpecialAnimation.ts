@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
@@ -61,7 +61,9 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialAnimationInterface } from './SpecialAnimationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.special.SpecialAnimationInterface;
 
+                
 export class SpecialAnimation extends IndexedAnimation implements SpecialAnimationInterface {
         
 

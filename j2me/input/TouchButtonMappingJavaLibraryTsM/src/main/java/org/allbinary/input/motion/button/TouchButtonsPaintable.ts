@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
@@ -57,8 +57,12 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonFactory } from './TouchButtonFactory.js';
-import { TouchButton } from './TouchButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonFactory;
 
+                import { TouchButton } from './TouchButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+
+                
 export class TouchButtonsPaintable extends Paintable {
         
 

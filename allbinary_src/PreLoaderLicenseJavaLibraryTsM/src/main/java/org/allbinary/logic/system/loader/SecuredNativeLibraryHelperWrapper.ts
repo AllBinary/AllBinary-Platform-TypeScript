@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
@@ -49,8 +49,12 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NativeLibraryHelperWrapper } from './NativeLibraryHelperWrapper.js';
-import { SecuredNativeLibraryInterface } from './SecuredNativeLibraryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.loader.NativeLibraryHelperWrapper;
 
+                import { SecuredNativeLibraryInterface } from './SecuredNativeLibraryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.loader.SecuredNativeLibraryInterface;
+
+                
 export class SecuredNativeLibraryHelperWrapper extends NativeLibraryHelperWrapper {
         
 

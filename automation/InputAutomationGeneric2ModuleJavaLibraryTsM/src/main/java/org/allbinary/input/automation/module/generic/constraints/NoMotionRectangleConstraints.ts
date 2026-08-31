@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Integer } from '../../../../../../../java/lang/Integer.js';
@@ -53,8 +53,12 @@ import { MotionRectangleConstraints } from '../../../../../../../org/allbinary/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Dimension } from './Dimension.js';
-import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.constraints.Dimension;
 
+                import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.constraints.Rectangle;
+
+                
 export class NoMotionRectangleConstraints extends MotionRectangleConstraints {
         
 

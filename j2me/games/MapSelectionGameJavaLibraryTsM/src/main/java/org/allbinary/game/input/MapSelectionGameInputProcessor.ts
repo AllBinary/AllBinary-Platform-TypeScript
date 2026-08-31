@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -111,10 +111,18 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
-import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
-import { PlayerGameInput } from './PlayerGameInput.js';
-import { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessorInterface;
 
+                import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
+
+                import { PlayerGameInput } from './PlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+
+                import { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessorComposite;
+
+                
 export class MapSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 

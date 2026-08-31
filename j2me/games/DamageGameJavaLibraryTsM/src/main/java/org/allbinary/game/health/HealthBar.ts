@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,10 +51,18 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthListenerInterface } from './HealthListenerInterface.js';
-import { HealthBarAnimation } from './HealthBarAnimation.js';
-import { HealthInterface } from './HealthInterface.js';
-import { Health } from './Health.js';
+//not GWT import const  = globalThis.org.allbinary.game.health.HealthListenerInterface;
 
+                import { HealthBarAnimation } from './HealthBarAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.game.health.HealthBarAnimation;
+
+                import { HealthInterface } from './HealthInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.health.HealthInterface;
+
+                import { Health } from './Health.js';
+//not GWT import const  = globalThis.org.allbinary.game.health.Health;
+
+                
 export class HealthBar extends Paintable implements HealthListenerInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -55,8 +55,12 @@ import { IOException } from '../../../../java/io/IOException.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageProcessorInput } from './ImageProcessorInput.js';
-import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessorInput;
 
+                import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
+
+                
 export class CanvasTrimUtil
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -65,7 +65,9 @@ import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cac
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorDelta } from './ColorDelta.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.color.ColorDelta;
 
+                
 export class ColorDeltaFactory
             extends Object
          {

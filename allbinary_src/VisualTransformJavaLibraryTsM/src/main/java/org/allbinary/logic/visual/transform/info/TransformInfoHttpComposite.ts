@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { WeblisketSession } from '../../../../../../org/allbinary/logic/communic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
-import { TransformInfoInterface } from './TransformInfoInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpInterface;
 
+                import { TransformInfoInterface } from './TransformInfoInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
+                
 export class TransformInfoHttpComposite
             extends Object
          {

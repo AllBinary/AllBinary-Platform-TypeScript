@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -71,9 +71,15 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapturedImageWorkerResultsListener } from './CapturedImageWorkerResultsListener.js';
-import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
-import { CapturedImageInputOutput } from './CapturedImageInputOutput.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsListener;
 
+                import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
+
+                import { CapturedImageInputOutput } from './CapturedImageInputOutput.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedImageInputOutput;
+
+                
 export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         
 

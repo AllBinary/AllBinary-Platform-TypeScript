@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -63,8 +63,12 @@ import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSScrollSelectionFormFactory } from './RTSScrollSelectionFormFactory.js';
-import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSScrollSelectionFormFactory;
 
+                import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+
+                
 export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {
         
 

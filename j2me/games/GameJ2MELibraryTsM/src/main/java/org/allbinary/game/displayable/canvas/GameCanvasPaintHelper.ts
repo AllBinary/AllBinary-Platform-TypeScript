@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
@@ -45,7 +45,9 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
+                
 export class GameCanvasPaintHelper extends ProcessPaintable {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { FrictionProperties } from '../../../../../org/allbinary/game/physics/FrictionProperties.js';

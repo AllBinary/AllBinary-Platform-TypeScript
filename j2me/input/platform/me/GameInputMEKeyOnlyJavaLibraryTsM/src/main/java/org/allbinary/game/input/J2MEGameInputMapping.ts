@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,9 +51,15 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { J2MEKeyFactory } from './J2MEKeyFactory.js';
-import { GameKeyFactory } from './GameKeyFactory.js';
-import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.J2MEKeyFactory;
 
+                import { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameKeyFactory;
+
+                import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+
+                
 export class J2MEGameInputMapping extends PersistentInputMapping {
         
 

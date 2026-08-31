@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -89,8 +89,12 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BoundBounceAI } from './BoundBounceAI.js';
-import { ReverseVelocityBoundsVisitor } from './ReverseVelocityBoundsVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.BoundBounceAI;
 
+                import { ReverseVelocityBoundsVisitor } from './ReverseVelocityBoundsVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.ReverseVelocityBoundsVisitor;
+
+                
 export class TopUBoundBounceAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

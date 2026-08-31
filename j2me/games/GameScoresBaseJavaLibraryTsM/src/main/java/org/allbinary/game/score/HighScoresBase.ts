@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -65,9 +65,15 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresFactoryInterface } from './HighScoresFactoryInterface.js';
-import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresFactoryInterface;
 
+                import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+
+                import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+
+                
 export class HighScoresBase
             extends Object
          implements HighScoresFactoryInterface {

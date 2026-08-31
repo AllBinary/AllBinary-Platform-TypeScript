@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Activity } from '../../../../../../android/app/Activity.js';
@@ -53,7 +53,9 @@ import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
+                
 export class ProgressRunnable extends ARunnable {
         
 

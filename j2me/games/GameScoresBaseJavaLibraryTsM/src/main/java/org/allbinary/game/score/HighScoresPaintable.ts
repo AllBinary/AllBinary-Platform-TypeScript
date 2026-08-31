@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
@@ -105,9 +105,15 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
-import { HighScores } from './HighScores.js';
-import { HighScore } from './HighScore.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.NullHighScoresSingletonFactory;
 
+                import { HighScores } from './HighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+
+                import { HighScore } from './HighScore.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScore;
+
+                
 export class HighScoresPaintable extends Paintable implements ColorChangeListener, UpdateMyFontInterface {
         
 

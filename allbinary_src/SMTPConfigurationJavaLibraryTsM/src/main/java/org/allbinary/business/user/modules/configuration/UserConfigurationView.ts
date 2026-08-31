@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -85,9 +85,15 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-import { UserConfiguration } from './UserConfiguration.js';
-import { UserConfigurationData } from './UserConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
+                import { UserConfiguration } from './UserConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfiguration;
+
+                import { UserConfigurationData } from './UserConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationData;
+
+                
 export class UserConfigurationView
             extends Object
          implements DomNodeInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
@@ -53,8 +53,12 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
-import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.UpgradableRTSLayerHudPaintable;
 
+                import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+
+                
 export class RTSLayerCompositePaintable extends Paintable {
         
 

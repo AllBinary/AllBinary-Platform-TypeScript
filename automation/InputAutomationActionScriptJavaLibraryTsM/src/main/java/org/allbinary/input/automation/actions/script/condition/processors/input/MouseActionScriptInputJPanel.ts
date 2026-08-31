@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -81,22 +81,54 @@ import { StringValidationUtil } from '../../../../../../../../../org/allbinary/l
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
-import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-import { ComboBoxModel } from './ComboBoxModel.js';
-import { JDialog } from './JDialog.js';
-import { JLabel } from './JLabel.js';
-import { JButton } from './JButton.js';
-import { JCheckBox } from './JCheckBox.js';
-import { JTextField } from './JTextField.js';
-import { JComboBox } from './JComboBox.js';
-import { Dimension } from './Dimension.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { Insets } from './Insets.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JPanel;
 
+                import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputInterface;
+
+                import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.DefaultComboBoxModel;
+
+                import { ComboBoxModel } from './ComboBoxModel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ComboBoxModel;
+
+                import { JDialog } from './JDialog.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JDialog;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JLabel;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JButton;
+
+                import { JCheckBox } from './JCheckBox.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JCheckBox;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JTextField;
+
+                import { JComboBox } from './JComboBox.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.JComboBox;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Dimension;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ActionEvent;
+
+                import { Insets } from './Insets.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Insets;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Short;
+
+                
 export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
         
 

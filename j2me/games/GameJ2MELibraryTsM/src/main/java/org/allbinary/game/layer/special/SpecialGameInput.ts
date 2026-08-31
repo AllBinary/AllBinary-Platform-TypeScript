@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.special.SpecialGameInputInterface;
 
+                
 export class SpecialGameInput
             extends Object
          implements SpecialGameInputInterface {

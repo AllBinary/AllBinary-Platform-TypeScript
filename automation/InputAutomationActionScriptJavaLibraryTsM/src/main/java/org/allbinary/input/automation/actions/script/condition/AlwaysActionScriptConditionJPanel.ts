@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -45,18 +45,42 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { AlwaysActionScriptConditionInterface } from './AlwaysActionScriptConditionInterface.js';
-import { JDialog } from './JDialog.js';
-import { JLabel } from './JLabel.js';
-import { JButton } from './JButton.js';
-import { JComboBox } from './JComboBox.js';
-import { Dimension } from './Dimension.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JPanel;
 
+                import { AlwaysActionScriptConditionInterface } from './AlwaysActionScriptConditionInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionInterface;
+
+                import { JDialog } from './JDialog.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JDialog;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JLabel;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JButton;
+
+                import { JComboBox } from './JComboBox.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JComboBox;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Dimension;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ActionEvent;
+
+                import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.DefaultComboBoxModel;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Short;
+
+                
 export class AlwaysActionScriptConditionJPanel extends javax.swing.JPanel {
         
 

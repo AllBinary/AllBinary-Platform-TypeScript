@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -135,8 +135,12 @@ import { RaceTrackGeographicMapCellTypeFactory } from '../../../../../../../../o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackDropCellPositionGenerator } from './RaceTrackDropCellPositionGenerator.js';
-import { RaceTrackAdjacentDropLayerFactory } from './RaceTrackAdjacentDropLayerFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.drop.RaceTrackDropCellPositionGenerator;
 
+                import { RaceTrackAdjacentDropLayerFactory } from './RaceTrackAdjacentDropLayerFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.drop.RaceTrackAdjacentDropLayerFactory;
+
+                
 export class RaceTrackAdjacentDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         
 

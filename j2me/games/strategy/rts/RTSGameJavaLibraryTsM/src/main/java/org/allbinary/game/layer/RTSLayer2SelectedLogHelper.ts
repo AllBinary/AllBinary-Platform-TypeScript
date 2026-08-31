@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -45,8 +45,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
-import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer2LogHelper;
 
+                import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
+                
 export class RTSLayer2SelectedLogHelper extends RTSLayer2LogHelper {
         
 

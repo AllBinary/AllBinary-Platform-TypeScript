@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -53,8 +53,12 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObject } from './MeteredGameObject.js';
-import { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.MeteredGameObject;
 
+                import { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.MagicGameObjectInterface;
+
+                
 export class MagicGameObject extends MeteredGameObject implements MagicGameObjectInterface {
         
 

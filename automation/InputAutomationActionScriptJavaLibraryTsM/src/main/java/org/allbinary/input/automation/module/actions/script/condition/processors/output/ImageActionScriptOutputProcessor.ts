@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../../java/lang/Object.js';
@@ -67,8 +67,12 @@ import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/me
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageTypes } from './ImageTypes.js';
-import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
 
+                import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
+
+                
 export class ImageActionScriptOutputProcessor
             extends Object
          {

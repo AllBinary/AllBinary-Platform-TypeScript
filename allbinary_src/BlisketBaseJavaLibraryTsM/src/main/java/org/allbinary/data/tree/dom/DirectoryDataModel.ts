@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -81,8 +81,12 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DomNodeInterface } from './DomNodeInterface.js';
-import { FileDomDataModel } from './FileDomDataModel.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.dom.DomNodeInterface;
 
+                import { FileDomDataModel } from './FileDomDataModel.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.dom.FileDomDataModel;
+
+                
 export class DirectoryDataModel
             extends Object
          implements DomNodeInterface, TransformInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -55,16 +55,36 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-import { CommonButtons } from './CommonButtons.js';
-import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
-import { TouchButton } from './TouchButton.js';
-import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-import { TouchButtonUpResource } from './TouchButtonUpResource.js';
-import { TouchButtonDownResource } from './TouchButtonDownResource.js';
-import { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
-import { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
 
+                import { CommonButtons } from './CommonButtons.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.CommonButtons;
+
+                import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
+
+                import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchButtonCellPositionFactory;
+
+                import { TouchButton } from './TouchButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+
+                import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+
+                import { TouchButtonUpResource } from './TouchButtonUpResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonUpResource;
+
+                import { TouchButtonDownResource } from './TouchButtonDownResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonDownResource;
+
+                import { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonTurnLeftResource;
+
+                import { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonTurnRightResource;
+
+                
 export class BasicTouchButtonsBuilder extends BaseTouchInput {
         
 

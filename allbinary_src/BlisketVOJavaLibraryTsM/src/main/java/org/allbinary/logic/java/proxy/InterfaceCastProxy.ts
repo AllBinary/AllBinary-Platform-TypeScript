@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InvocationHandler } from './InvocationHandler.js';
+//not GWT import const  = globalThis.org.allbinary.logic.java.proxy.InvocationHandler;
 
+                
 export class InterfaceCastProxy
             extends Object
          implements java.lang.reflect.InvocationHandler {

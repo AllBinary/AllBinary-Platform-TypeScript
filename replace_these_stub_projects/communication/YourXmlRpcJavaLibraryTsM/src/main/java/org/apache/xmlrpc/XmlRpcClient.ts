@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/Cryp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlRpcHandler } from './XmlRpcHandler.js';
+//not GWT import const  = globalThis.org.apache.xmlrpc.XmlRpcHandler;
 
+                
 export class XmlRpcClient
             extends Object
          implements XmlRpcHandler {

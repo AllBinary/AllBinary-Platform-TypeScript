@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -125,8 +125,12 @@ import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDel
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { SetAndRemoveProcessor } from './SetAndRemoveProcessor.js';
-//import { NextUnremoveableProcessor } from './NextUnremoveableProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.SetAndRemoveProcessor;
 
+                //import { NextUnremoveableProcessor } from './NextUnremoveableProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.NextUnremoveableProcessor;
+
+                
 export class PlayerGameNotificationHud extends GameNotificationHud implements UpdateMyFontInterface {
         
 

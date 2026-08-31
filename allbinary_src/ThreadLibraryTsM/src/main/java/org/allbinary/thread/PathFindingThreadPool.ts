@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Runnable } from '../../../java/lang/Runnable.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
-import { PriorityRunnable } from './PriorityRunnable.js';
-//This is mainly for network communications.
+//not GWT import const  = globalThis.org.allbinary.thread.ThreadPool;
+
+                import { PriorityRunnable } from './PriorityRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.thread.PriorityRunnable;
+
+                //This is mainly for network communications.
 export class PathFindingThreadPool extends ThreadPool {
         
 

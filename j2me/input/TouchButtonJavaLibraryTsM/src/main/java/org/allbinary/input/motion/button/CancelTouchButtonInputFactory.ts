@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -47,8 +47,12 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonInput } from './TouchButtonInput.js';
-import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonInput;
 
+                import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+
+                
 export class CancelTouchButtonInputFactory
             extends Object
          {

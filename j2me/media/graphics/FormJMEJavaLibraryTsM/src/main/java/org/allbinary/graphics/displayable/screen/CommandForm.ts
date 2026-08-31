@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -111,7 +111,9 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenRepaintProcessorFactory } from './ScreenRepaintProcessorFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.displayable.screen.ScreenRepaintProcessorFactory;
 
+                
 export class CommandForm extends Form implements MyCommandInterface, MenuListener {
         
 

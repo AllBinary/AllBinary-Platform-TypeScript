@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -91,8 +91,12 @@ import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communicat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlTypeStrings } from './SqlTypeStrings.js';
-import { SqlStrings } from './SqlStrings.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.SqlTypeStrings;
 
+                import { SqlStrings } from './SqlStrings.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
+
+                
 export class AbSqlBasic
             extends Object
          {

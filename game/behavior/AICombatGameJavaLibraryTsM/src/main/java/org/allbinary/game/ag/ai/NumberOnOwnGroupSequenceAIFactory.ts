@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -79,8 +79,12 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NumberInSameGroupSequence } from './NumberInSameGroupSequence.js';
-import { NumberOnOwnGroupSequenceAI } from './NumberOnOwnGroupSequenceAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.NumberInSameGroupSequence;
 
+                import { NumberOnOwnGroupSequenceAI } from './NumberOnOwnGroupSequenceAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.NumberOnOwnGroupSequenceAI;
+
+                
 export class NumberOnOwnGroupSequenceAIFactory
             extends Object
          {

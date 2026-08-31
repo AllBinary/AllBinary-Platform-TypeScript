@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -45,8 +45,12 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputMappingEventListenerInterface } from './InputMappingEventListenerInterface.js';
-import { InputMappingEvent } from './InputMappingEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.mapping.event.InputMappingEventListenerInterface;
 
+                import { InputMappingEvent } from './InputMappingEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.mapping.event.InputMappingEvent;
+
+                
 export class NullInputMappingEventListener
             extends Object
          implements InputMappingEventListenerInterface {

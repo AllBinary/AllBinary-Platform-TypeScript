@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -53,9 +53,15 @@ import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
 
+                import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                
 export class CellPositionsUtil
             extends Object
          {

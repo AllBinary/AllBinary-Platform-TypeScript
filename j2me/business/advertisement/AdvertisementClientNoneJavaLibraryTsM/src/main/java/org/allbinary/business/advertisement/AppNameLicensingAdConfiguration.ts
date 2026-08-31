@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
@@ -27,7 +27,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdConfiguration } from './AdConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.AdConfiguration;
 
+                
 export class AppNameLicensingAdConfiguration extends AdConfiguration {
         
 

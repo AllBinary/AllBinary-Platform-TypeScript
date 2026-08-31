@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,9 +51,15 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryView } from './OrderHistoryView.js';
-import { Document } from './Document.js';
-import { Node } from './Node.js';
+//not GWT import const  = globalThis.views.generic.order.history.OrderHistoryView;
 
+                import { Document } from './Document.js';
+//not GWT import const  = globalThis.views.generic.order.history.Document;
+
+                import { Node } from './Node.js';
+//not GWT import const  = globalThis.views.generic.order.history.Node;
+
+                
 export class ValidationView extends OrderHistoryView implements ValidationComponentInterface {
         
 

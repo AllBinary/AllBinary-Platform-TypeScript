@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -81,7 +81,9 @@ import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.BasicPlayer;
 
+                
 export class AndroidMediaPlayerWrapper extends BasicPlayer {
         
 

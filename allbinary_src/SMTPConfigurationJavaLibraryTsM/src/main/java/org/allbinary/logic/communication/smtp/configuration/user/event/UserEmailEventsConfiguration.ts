@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -69,9 +69,15 @@ import { AbeClientInformationInterface } from '../../../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
-import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-import { UserEmailEventListenerFactory } from './UserEmailEventListenerFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationInterface;
 
+                import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationInterface;
+
+                import { UserEmailEventListenerFactory } from './UserEmailEventListenerFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventListenerFactory;
+
+                
 export class UserEmailEventsConfiguration
             extends Object
          implements UserEmailEventsConfigurationInterface {

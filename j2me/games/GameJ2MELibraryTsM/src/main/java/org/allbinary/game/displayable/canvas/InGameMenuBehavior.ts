@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -43,9 +43,15 @@ import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseMenuBehavior } from './BaseMenuBehavior.js';
-import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-import { GameCanvasNonBotPaintable } from './GameCanvasNonBotPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BaseMenuBehavior;
 
+                import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+
+                import { GameCanvasNonBotPaintable } from './GameCanvasNonBotPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameCanvasNonBotPaintable;
+
+                
 export class InGameMenuBehavior extends BaseMenuBehavior {
         
 

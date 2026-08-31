@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -67,8 +67,12 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TitleView } from './TitleView.js';
-import { TitleData } from './TitleData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleView;
 
+                import { TitleData } from './TitleData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.widgets.title.TitleData;
+
+                
 export class TitleNotRequiredValidation extends TitleView implements ValidationInterface {
         
 

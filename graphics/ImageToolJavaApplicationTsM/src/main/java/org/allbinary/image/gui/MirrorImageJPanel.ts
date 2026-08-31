@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -85,18 +85,42 @@ import { MirrorImageUtil } from '../../../../org/allbinary/media/image/MirrorIma
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { JLayeredPane } from './JLayeredPane.js';
-import { ButtonGroup } from './ButtonGroup.js';
-import { Graphics } from './Graphics.js';
-import { JCheckBox } from './JCheckBox.js';
-import { JButton } from './JButton.js';
-import { JRadioButton } from './JRadioButton.js';
-import { JLabel } from './JLabel.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
 
+                import { JLayeredPane } from './JLayeredPane.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JLayeredPane;
+
+                import { ButtonGroup } from './ButtonGroup.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ButtonGroup;
+
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Graphics;
+
+                import { JCheckBox } from './JCheckBox.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JCheckBox;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+
+                import { JRadioButton } from './JRadioButton.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JRadioButton;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+
+                
 export class MirrorImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 

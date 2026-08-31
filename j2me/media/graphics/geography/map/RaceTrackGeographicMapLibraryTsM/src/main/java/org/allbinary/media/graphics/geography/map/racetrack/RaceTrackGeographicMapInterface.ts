@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GeographicMapInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapInterface.js';
@@ -41,8 +41,12 @@ import { GeographicMapInterface } from '../../../../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackInfo } from './RaceTrackInfo.js';
-import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
 
+                import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+
+                
 export interface RaceTrackGeographicMapInterface extends GeographicMapInterface {
         
 

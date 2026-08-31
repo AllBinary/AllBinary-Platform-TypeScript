@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -103,8 +103,12 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchMotionGestureFactory } from './TouchMotionGestureFactory.js';
-import { MotionGestureInput } from './MotionGestureInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.TouchMotionGestureFactory;
 
+                import { MotionGestureInput } from './MotionGestureInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
+
+                
 export class MotionGestureRecognizer
             extends Object
          {

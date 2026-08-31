@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -81,13 +81,27 @@ import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { FormType } from './FormType.js';
-import { ItemIndexPaintable } from './ItemIndexPaintable.js';
-import { FormTypeFactory } from './FormTypeFactory.js';
-//import { MultipleScrollSelectionFormVerticalPaintable } from './MultipleScrollSelectionFormVerticalPaintable.js';
-//import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
 
+                import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+
+                import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+
+                import { ItemIndexPaintable } from './ItemIndexPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemIndexPaintable;
+
+                import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+
+                //import { MultipleScrollSelectionFormVerticalPaintable } from './MultipleScrollSelectionFormVerticalPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.MultipleScrollSelectionFormVerticalPaintable;
+
+                //import { MultipleScrollSelectionFormHorizontalPaintable } from './MultipleScrollSelectionFormHorizontalPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.MultipleScrollSelectionFormHorizontalPaintable;
+
+                
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm implements UpdateMyFontInterface {
         
 

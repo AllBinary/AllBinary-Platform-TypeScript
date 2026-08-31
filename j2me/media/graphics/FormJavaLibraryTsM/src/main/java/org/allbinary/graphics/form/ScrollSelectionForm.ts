@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -109,19 +109,45 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableForm } from './PaintableForm.js';
-import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { ItemIndexPaintable } from './ItemIndexPaintable.js';
-import { ItemIndexDx } from './ItemIndexDx.js';
-import { ItemPaintable } from './ItemPaintable.js';
-import { FormTypeFactory } from './FormTypeFactory.js';
-//import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
-//import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
-//import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
-//import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
-//import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
-//import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
-import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.PaintableForm;
 
+                import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
+
+                import { ItemIndexPaintable } from './ItemIndexPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemIndexPaintable;
+
+                import { ItemIndexDx } from './ItemIndexDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemIndexDx;
+
+                import { ItemPaintable } from './ItemPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintable;
+
+                import { FormTypeFactory } from './FormTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormTypeFactory;
+
+                //import { ScrollSelectionFormTempHorizontalPaintable } from './ScrollSelectionFormTempHorizontalPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormTempHorizontalPaintable;
+
+                //import { ScrollSelectionFormTempHorizontalDx } from './ScrollSelectionFormTempHorizontalDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormTempHorizontalDx;
+
+                //import { ScrollSelectionFormVerticalPaintable } from './ScrollSelectionFormVerticalPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormVerticalPaintable;
+
+                //import { ScrollSelectionFormVericalDx } from './ScrollSelectionFormVericalDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormVericalDx;
+
+                //import { ScrollSelectionFormHorizontalPaintable } from './ScrollSelectionFormHorizontalPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormHorizontalPaintable;
+
+                //import { ScrollSelectionFormHorizontalDx } from './ScrollSelectionFormHorizontalDx.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormHorizontalDx;
+
+                import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+
+                
 export class ScrollSelectionForm extends PaintableForm {
         
 

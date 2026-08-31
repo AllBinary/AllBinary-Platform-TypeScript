@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -75,7 +75,9 @@ import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/commun
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialItemsEntityInterface } from './SpecialItemsEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.special.SpecialItemsEntityInterface;
 
+                
 export class SpecialItemsEntity extends AbSqlBean implements SpecialItemsEntityInterface {
         
 

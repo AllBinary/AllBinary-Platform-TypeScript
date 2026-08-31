@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColorFactory } from './BasicColorFactory.js';
-import { BasicColor } from './BasicColor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColorFactory;
 
+                import { BasicColor } from './BasicColor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColor;
+
+                
 export class ColorTemperatureUtil
             extends Object
          {

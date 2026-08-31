@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -77,7 +77,9 @@ import { MotionGestureConfigurationFactory } from '../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.CompleteMotionGestureListenerInterface;
 
+                
 export class ResolveCompleteMotionGestureListener
             extends Object
          implements CompleteMotionGestureListenerInterface {

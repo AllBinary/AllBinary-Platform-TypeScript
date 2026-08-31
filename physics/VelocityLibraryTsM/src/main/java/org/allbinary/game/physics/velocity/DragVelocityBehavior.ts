@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
@@ -41,8 +41,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VelocityBehaviorBase } from './VelocityBehaviorBase.js';
-import { BasicVelocityProperties } from './BasicVelocityProperties.js';
+//not GWT import const  = globalThis.org.allbinary.game.physics.velocity.VelocityBehaviorBase;
 
+                import { BasicVelocityProperties } from './BasicVelocityProperties.js';
+//not GWT import const  = globalThis.org.allbinary.game.physics.velocity.BasicVelocityProperties;
+
+                
 export class DragVelocityBehavior extends VelocityBehaviorBase {
         
 

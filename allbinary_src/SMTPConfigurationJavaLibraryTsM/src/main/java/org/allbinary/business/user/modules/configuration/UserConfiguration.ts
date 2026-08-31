@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -63,7 +63,9 @@ import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
+                
 export class UserConfiguration
             extends Object
          implements UserConfigurationInterface {

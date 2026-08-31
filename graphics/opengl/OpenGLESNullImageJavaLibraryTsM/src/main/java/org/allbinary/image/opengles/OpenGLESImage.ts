@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -79,10 +79,18 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
-import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
-import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
-//OpenGLESNullImageJavaLibrary
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
+
+                import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+
+                import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
+
+                import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageTranslate;
+
+                //OpenGLESNullImageJavaLibrary
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
 

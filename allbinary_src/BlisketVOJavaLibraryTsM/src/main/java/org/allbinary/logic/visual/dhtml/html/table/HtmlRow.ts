@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Vector } from '../../../../../../../java/util/Vector.js';
@@ -49,7 +49,9 @@ import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/h
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlCell } from './HtmlCell.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.html.table.HtmlCell;
 
+                
 export class HtmlRow extends HtmlTag {
         
 

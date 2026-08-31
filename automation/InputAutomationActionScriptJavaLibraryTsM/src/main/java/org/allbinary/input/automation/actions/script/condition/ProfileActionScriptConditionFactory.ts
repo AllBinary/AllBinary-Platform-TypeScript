@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -49,13 +49,27 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptConditionInterface } from './ProfileActionScriptConditionInterface.js';
-import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
-import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
-import { AlwaysActionScriptConditionData } from './AlwaysActionScriptConditionData.js';
-import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
-import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
-import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ProfileActionScriptConditionInterface;
 
+                import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
+
+                import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionData;
+
+                import { AlwaysActionScriptConditionData } from './AlwaysActionScriptConditionData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptConditionData;
+
+                import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.AlwaysActionScriptCondition;
+
+                import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptCondition;
+
+                import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptCondition;
+
+                
 export class ProfileActionScriptConditionFactory
             extends Object
          {

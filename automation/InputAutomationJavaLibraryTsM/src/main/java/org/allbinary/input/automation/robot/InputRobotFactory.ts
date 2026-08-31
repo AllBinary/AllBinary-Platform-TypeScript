@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -93,10 +93,18 @@ import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsEnvironment } from './GraphicsEnvironment.js';
-import { GraphicsDevice } from './GraphicsDevice.js';
-import { InputRobotInterface } from './InputRobotInterface.js';
-import { InputRobot } from './InputRobot.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.GraphicsEnvironment;
 
+                import { GraphicsDevice } from './GraphicsDevice.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.GraphicsDevice;
+
+                import { InputRobotInterface } from './InputRobotInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
+
+                import { InputRobot } from './InputRobot.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.InputRobot;
+
+                
 export class InputRobotFactory
             extends Object
          {

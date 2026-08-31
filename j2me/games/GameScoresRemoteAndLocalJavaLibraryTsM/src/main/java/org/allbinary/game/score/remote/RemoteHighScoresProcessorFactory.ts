@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresProcessor } from './RemoteHighScoresProcessor.js';
-import { RemoteHighScoresProcessorInterface } from './RemoteHighScoresProcessorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresProcessor;
 
+                import { RemoteHighScoresProcessorInterface } from './RemoteHighScoresProcessorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresProcessorInterface;
+
+                
 export class RemoteHighScoresProcessorFactory
             extends Object
          {

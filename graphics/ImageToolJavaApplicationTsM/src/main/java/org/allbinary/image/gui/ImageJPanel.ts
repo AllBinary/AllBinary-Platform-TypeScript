@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { awt } from '../../../../java/awt.js';
@@ -57,10 +57,18 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { Graphics } from './Graphics.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
 
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Graphics;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+
+                
 export class ImageJPanel extends javax.swing.JPanel {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -41,7 +41,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ServiceReference } from './ServiceReference.js';
+//not GWT import const  = globalThis.org.osgi.framework.ServiceReference;
 
+                
 export class BaseServiceReference
             extends Object
          implements ServiceReference {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -111,7 +111,9 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsMappingPaintable } from './TouchButtonsMappingPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonsMappingPaintable;
 
+                
 export class TouchButtonsPaintableComposite extends ProcessPaintable implements CompleteMotionGestureInputEventListenerInterface {
         
 

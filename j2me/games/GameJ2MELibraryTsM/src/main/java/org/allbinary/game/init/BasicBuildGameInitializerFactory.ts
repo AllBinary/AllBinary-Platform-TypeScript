@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,9 +51,15 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterfaceFactoryInterface } from './GameInitializationInterfaceFactoryInterface.js';
-import { BaseGameInitialization } from './BaseGameInitialization.js';
-import { GameInitializationInterface } from './GameInitializationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.init.GameInitializationInterfaceFactoryInterface;
 
+                import { BaseGameInitialization } from './BaseGameInitialization.js';
+//not GWT import const  = globalThis.org.allbinary.game.init.BaseGameInitialization;
+
+                import { GameInitializationInterface } from './GameInitializationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.init.GameInitializationInterface;
+
+                
 export class BasicBuildGameInitializerFactory
             extends Object
          implements GameInitializationInterfaceFactoryInterface {

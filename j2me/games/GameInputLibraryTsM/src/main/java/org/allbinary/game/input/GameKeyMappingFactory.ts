@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -43,9 +43,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputFactory } from './InputFactory.js';
-import { GameKey } from './GameKey.js';
-import { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
 
+                import { GameKey } from './GameKey.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameKey;
+
+                import { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameKeyFactory;
+
+                
 export class GameKeyMappingFactory
             extends Object
          {

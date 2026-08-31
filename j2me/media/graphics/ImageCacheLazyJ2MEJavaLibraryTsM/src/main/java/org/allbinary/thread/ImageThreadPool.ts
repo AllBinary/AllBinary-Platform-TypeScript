@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Runnable } from '../../../java/lang/Runnable.js';
@@ -55,7 +55,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
-//This is mainly for network communications.
+//not GWT import const  = globalThis.org.allbinary.thread.ThreadPool;
+
+                //This is mainly for network communications.
 export class ImageThreadPool extends ThreadPool {
         
 

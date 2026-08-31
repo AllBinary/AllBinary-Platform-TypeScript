@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -99,7 +99,9 @@ import { ServiceClientInformationInterfaceFactory } from '../../../../../org/all
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowEntityInterface } from './WorkFlowEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.workflow.WorkFlowEntityInterface;
 
+                
 export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface {
         
 

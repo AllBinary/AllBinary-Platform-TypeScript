@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -99,7 +99,9 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BodyData } from './BodyData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.bodies.BodyData;
 
+                
 export class GenericBodyValidation extends Validation implements DomNodeInterface {
         
 

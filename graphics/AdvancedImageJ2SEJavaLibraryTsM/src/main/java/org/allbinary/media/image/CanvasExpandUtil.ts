@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -53,9 +53,15 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-import { ImageProcessorInput } from './ImageProcessorInput.js';
-import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
 
+                import { ImageProcessorInput } from './ImageProcessorInput.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessorInput;
+
+                import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessedVisitor;
+
+                
 export class CanvasExpandUtil
             extends Object
          {

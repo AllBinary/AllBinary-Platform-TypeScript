@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -43,10 +43,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerList } from './EventListenerList.js';
-import { EventListener } from './EventListener.js';
-import { MyCanvasEventListener } from './MyCanvasEventListener.js';
-import { MyCanvasEvent } from './MyCanvasEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.EventListenerList;
 
+                import { EventListener } from './EventListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.EventListener;
+
+                import { MyCanvasEventListener } from './MyCanvasEventListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEventListener;
+
+                import { MyCanvasEvent } from './MyCanvasEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.event.MyCanvasEvent;
+
+                
 export class MyCanvasEventService
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -75,8 +75,12 @@ import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
-import { AllBinaryAdjustedSpriteRotationAnimation } from './AllBinaryAdjustedSpriteRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.AllBinarySpriteRotationAnimation;
 
+                import { AllBinaryAdjustedSpriteRotationAnimation } from './AllBinaryAdjustedSpriteRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.AllBinaryAdjustedSpriteRotationAnimation;
+
+                
 export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -73,7 +73,9 @@ import { Replace } from '../../../../../../../../org/allbinary/logic/string/rege
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPaymentTypeUtil } from './BasicPaymentTypeUtil.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.types.BasicPaymentTypeUtil;
 
+                
 export class BasicPaymentType
             extends Object
          {

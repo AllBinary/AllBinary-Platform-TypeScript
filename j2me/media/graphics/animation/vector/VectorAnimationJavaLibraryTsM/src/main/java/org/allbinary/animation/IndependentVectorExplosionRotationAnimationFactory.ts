@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -53,12 +53,24 @@ import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
-import { VectorRotationGenerator } from './VectorRotationGenerator.js';
-import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
-import { IndexedAnimation } from './IndexedAnimation.js';
-import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
+                import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationFactoryInterface;
+
+                import { VectorRotationGenerator } from './VectorRotationGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorRotationGenerator;
+
+                import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorExplosionGenerator;
+
+                import { IndexedAnimation } from './IndexedAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimation;
+
+                import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+
+                
 export class IndependentVectorExplosionRotationAnimationFactory
             extends Object
          implements ProceduralAnimationInterfaceFactoryInterface {

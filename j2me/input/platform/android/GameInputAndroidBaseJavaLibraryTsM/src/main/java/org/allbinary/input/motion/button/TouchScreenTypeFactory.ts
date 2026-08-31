@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -55,8 +55,12 @@ import { Configuration } from '../../../../../android/content/res/Configuration.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenFactory } from './TouchScreenFactory.js';
-import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchScreenFactory;
 
+                import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchScreenTypesFactory;
+
+                
 export class TouchScreenTypeFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -79,7 +79,9 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Controllable2 } from './Controllable2.js';
-//BasicPlayer
+//not GWT import const  = globalThis.org.allbinary.media.audio.Controllable2;
+
+                //BasicPlayer
 export class PlayerComposite
             extends Object
          implements Controllable, Player {

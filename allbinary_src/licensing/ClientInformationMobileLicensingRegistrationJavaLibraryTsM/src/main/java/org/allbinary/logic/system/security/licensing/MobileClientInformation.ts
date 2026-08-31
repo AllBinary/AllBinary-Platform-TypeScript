@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Integer } from '../../../../../../java/lang/Integer.js';
@@ -75,8 +75,12 @@ import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
-import { PartnerIdentifierFileUtil } from './PartnerIdentifierFileUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformation;
 
+                import { PartnerIdentifierFileUtil } from './PartnerIdentifierFileUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.PartnerIdentifierFileUtil;
+
+                
 export class MobileClientInformation extends AbeClientInformation {
         
 

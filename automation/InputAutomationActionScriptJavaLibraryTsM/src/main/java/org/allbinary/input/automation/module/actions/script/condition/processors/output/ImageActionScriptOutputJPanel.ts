@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
@@ -59,23 +59,57 @@ import { InputImageType } from '../../../../../../../../../../org/allbinary/inpu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-import { ImageTypes } from './ImageTypes.js';
-import { DefaultListModel } from './DefaultListModel.js';
-import { JDialog } from './JDialog.js';
-import { JLabel } from './JLabel.js';
-import { JButton } from './JButton.js';
-import { JCheckBox } from './JCheckBox.js';
-import { JScrollPane } from './JScrollPane.js';
-import { JList } from './JList.js';
-import { Dimension } from './Dimension.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { Insets } from './Insets.js';
-import { AbstractListModel } from './AbstractListModel.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JPanel;
 
+                import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
+
+                import { ImageTypes } from './ImageTypes.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
+
+                import { DefaultListModel } from './DefaultListModel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.DefaultListModel;
+
+                import { JDialog } from './JDialog.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JDialog;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JLabel;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JButton;
+
+                import { JCheckBox } from './JCheckBox.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JCheckBox;
+
+                import { JScrollPane } from './JScrollPane.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JScrollPane;
+
+                import { JList } from './JList.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.JList;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Dimension;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ActionEvent;
+
+                import { Insets } from './Insets.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Insets;
+
+                import { AbstractListModel } from './AbstractListModel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.AbstractListModel;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.Short;
+
+                
 export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
         
 

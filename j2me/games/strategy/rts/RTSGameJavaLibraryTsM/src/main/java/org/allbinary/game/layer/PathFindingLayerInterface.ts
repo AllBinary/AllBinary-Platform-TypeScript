@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -59,9 +59,15 @@ import { WaypointLayerInterface } from '../../../../org/allbinary/game/layer/way
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaBase;
 
+                import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+
+                import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer2LogHelper;
+
+                
 export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         
 

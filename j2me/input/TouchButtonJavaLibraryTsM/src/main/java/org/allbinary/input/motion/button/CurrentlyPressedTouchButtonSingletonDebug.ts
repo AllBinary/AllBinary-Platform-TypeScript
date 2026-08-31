@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
@@ -53,8 +53,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CurrentlyPressedTouchButtonSingleton } from './CurrentlyPressedTouchButtonSingleton.js';
-import { TouchButtonInput } from './TouchButtonInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.CurrentlyPressedTouchButtonSingleton;
 
+                import { TouchButtonInput } from './TouchButtonInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonInput;
+
+                
 export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedTouchButtonSingleton {
         
 

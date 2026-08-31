@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
+//not GWT import const  = globalThis.org.allbinary.logic.math.permutations.Comparable;
 
+                
 export class ComparableObject
             extends Object
          implements Comparable<any> {

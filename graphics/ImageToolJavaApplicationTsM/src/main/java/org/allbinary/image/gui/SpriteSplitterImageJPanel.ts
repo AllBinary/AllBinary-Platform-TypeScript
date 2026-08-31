@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -107,18 +107,42 @@ import { SpriteSplitterUtil } from '../../../../org/allbinary/media/image/Sprite
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { JCheckBox } from './JCheckBox.js';
-import { JTextField } from './JTextField.js';
-import { JLabel } from './JLabel.js';
-import { Graphics } from './Graphics.js';
-import { JButton } from './JButton.js';
-import { JComboBox } from './JComboBox.js';
-import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
 
+                import { JCheckBox } from './JCheckBox.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JCheckBox;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JTextField;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Graphics;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+
+                import { JComboBox } from './JComboBox.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JComboBox;
+
+                import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.DefaultComboBoxModel;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+
+                
 export class SpriteSplitterImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         
 

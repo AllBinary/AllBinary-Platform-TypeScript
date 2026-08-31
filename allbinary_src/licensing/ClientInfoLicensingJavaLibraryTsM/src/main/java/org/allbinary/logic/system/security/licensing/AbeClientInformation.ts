@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -87,7 +87,9 @@ import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ClientInformation } from './ClientInformation.js';
-// This is the information sent to the license server
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.ClientInformation;
+
+                // This is the information sent to the license server
 export class AbeClientInformation extends ClientInformation {
         
 

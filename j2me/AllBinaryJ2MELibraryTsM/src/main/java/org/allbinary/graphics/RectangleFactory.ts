@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-import { PointFactory } from './PointFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.Rectangle;
 
+                //not plain js import { PointFactory } from './PointFactory.js';
+const  = globalThis.org.allbinary.graphics.PointFactory;
+
+                
 export class RectangleFactory
             extends Object
          {

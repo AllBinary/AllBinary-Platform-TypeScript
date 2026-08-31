@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -51,8 +51,12 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicAnimationInterfaceFactoryInterface } from './BasicAnimationInterfaceFactoryInterface.js';
-import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.BasicAnimationInterfaceFactoryInterface;
 
+                import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+
+                
 export interface AnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 

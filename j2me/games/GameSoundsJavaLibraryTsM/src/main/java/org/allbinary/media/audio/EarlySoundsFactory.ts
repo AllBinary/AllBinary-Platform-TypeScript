@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -39,10 +39,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseSoundsFactory } from './BaseSoundsFactory.js';
-import { Sound } from './Sound.js';
-import { SelectSound } from './SelectSound.js';
-import { ErrorSound } from './ErrorSound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.BaseSoundsFactory;
 
+                import { Sound } from './Sound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+
+                import { SelectSound } from './SelectSound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.SelectSound;
+
+                import { ErrorSound } from './ErrorSound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.ErrorSound;
+
+                
 export class EarlySoundsFactory extends BaseSoundsFactory {
         
 

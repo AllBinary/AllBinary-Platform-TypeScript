@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -73,7 +73,9 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserData } from './UserData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.UserData;
 
+                
 export class UserDomNode
             extends Object
          implements DomNodeInterface {

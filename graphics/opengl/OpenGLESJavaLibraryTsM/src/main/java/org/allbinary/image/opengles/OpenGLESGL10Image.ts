@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
@@ -81,10 +81,18 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImage } from './OpenGLESImage.js';
-import { OpenGLESImageDraw } from './OpenGLESImageDraw.js';
-import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
+                import { OpenGLESImageDraw } from './OpenGLESImageDraw.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageDraw;
+
+                import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+
+                import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
+
+                
 export class OpenGLESGL10Image extends OpenGLESImage {
         
 

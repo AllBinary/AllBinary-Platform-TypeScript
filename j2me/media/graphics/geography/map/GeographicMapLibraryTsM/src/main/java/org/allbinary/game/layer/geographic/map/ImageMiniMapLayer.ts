@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -67,7 +67,9 @@ import { ViewPositionBase } from '../../../../../../org/allbinary/view/ViewPosit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MiniMapLayer } from './MiniMapLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.geographic.map.MiniMapLayer;
 
+                
 export class ImageMiniMapLayer extends MiniMapLayer {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -61,10 +61,18 @@ import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCus
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionFormNoneFactory } from './ScrollSelectionFormNoneFactory.js';
-import { CommandCurrentSelectionForm } from './CommandCurrentSelectionForm.js';
-import { ScrollSelectionForm } from './ScrollSelectionForm.js';
-import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionFormNoneFactory;
 
+                import { CommandCurrentSelectionForm } from './CommandCurrentSelectionForm.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.CommandCurrentSelectionForm;
+
+                import { ScrollSelectionForm } from './ScrollSelectionForm.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ScrollSelectionForm;
+
+                import { FormType } from './FormType.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.FormType;
+
+                
 export class CommandCurrentSelectionFormFactory
             extends Object
          {

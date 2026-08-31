@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -63,7 +63,9 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementProcessorInterface } from './AdvertisementProcessorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.AdvertisementProcessorInterface;
 
+                
 export class Advertisements
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -73,9 +73,15 @@ import { StringValidationUtil } from '../../../../../../org/allbinary/logic/stri
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttpContext } from './TransformInfoHttpContext.js';
-import { TransformInfoInterface } from './TransformInfoInterface.js';
-import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpContext;
 
+                import { TransformInfoInterface } from './TransformInfoInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
+
+                import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoHttpStore;
+
+                
 export class TransformInfoHttpFactory
             extends Object
          {

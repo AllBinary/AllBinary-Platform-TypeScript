@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -43,9 +43,15 @@ import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/work
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-import { LinesGraphicItem } from './LinesGraphicItem.js';
-import { GraphicItemInterface } from './GraphicItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
 
+                import { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+
+                import { GraphicItemInterface } from './GraphicItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+
+                
 export class LinesGraphicItemFactory
             extends Object
          implements GraphicsItemInterfaceFactoryInterface {

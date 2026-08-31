@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -43,7 +43,9 @@ import { EventListenerInterface } from '../../../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEvent;
 
+                
 export interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -131,7 +131,9 @@ import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/me
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.form.RTSFormInput;
 
+                
 export class TechRTSFormInput extends RTSFormInput {
         
 

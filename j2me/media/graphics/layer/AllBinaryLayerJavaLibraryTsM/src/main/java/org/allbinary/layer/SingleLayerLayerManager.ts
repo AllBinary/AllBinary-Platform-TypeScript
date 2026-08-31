@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManager } from './LayerManager.js';
-import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
+//not GWT import const  = globalThis.org.allbinary.layer.LayerManager;
 
+                import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
+//not GWT import const  = globalThis.org.allbinary.layer.LayerManagerNoDebug;
+
+                
 export class SingleLayerLayerManager extends LayerManager {
         
 

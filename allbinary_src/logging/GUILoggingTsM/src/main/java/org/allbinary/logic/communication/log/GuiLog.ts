@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -54,14 +54,28 @@ import { swing } from '../../../../../javax/swing.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogFormatUtil } from './LogFormatUtil.js';
-import { JDialog } from './JDialog.js';
-import { GridLayout } from './GridLayout.js';
-import { JScrollPane } from './JScrollPane.js';
-import { JLabel } from './JLabel.js';
-import { JTextArea } from './JTextArea.js';
-import { PreLogUtil } from './PreLogUtil.js';
+        //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
 
+                import { JDialog } from './JDialog.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JDialog;
+
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.GridLayout;
+
+                import { JScrollPane } from './JScrollPane.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JScrollPane;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JLabel;
+
+                import { JTextArea } from './JTextArea.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.JTextArea;
+
+                //not plain js import { PreLogUtil } from './PreLogUtil.js';
+const  = globalThis.org.allbinary.logic.communication.log.PreLogUtil;
+
+                
 export class GuiLog
             extends Object
          {

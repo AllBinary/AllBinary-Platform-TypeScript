@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -63,11 +63,21 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
-import { GameConfiguration } from './GameConfiguration.js';
-import { GameOptionsForm } from './GameOptionsForm.js';
-import { GameConfigurationGauge } from './GameConfigurationGauge.js';
-import { GameConfigurationCentral } from './GameConfigurationCentral.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
 
+                import { GameConfiguration } from './GameConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfiguration;
+
+                import { GameOptionsForm } from './GameOptionsForm.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameOptionsForm;
+
+                import { GameConfigurationGauge } from './GameConfigurationGauge.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationGauge;
+
+                import { GameConfigurationCentral } from './GameConfigurationCentral.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
+
+                
 export class GameConfigurationUtil
             extends Object
          {

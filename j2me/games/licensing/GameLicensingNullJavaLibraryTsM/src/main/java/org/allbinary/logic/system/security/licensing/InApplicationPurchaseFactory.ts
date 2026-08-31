@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -55,7 +55,9 @@ import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstru
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LockableFeature } from './LockableFeature.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
 
+                
 export class InApplicationPurchaseFactory
             extends Object
          {

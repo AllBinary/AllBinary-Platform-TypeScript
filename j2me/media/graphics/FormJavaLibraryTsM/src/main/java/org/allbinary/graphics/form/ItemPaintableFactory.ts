@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -47,8 +47,12 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintable } from './ItemPaintable.js';
-import { PaintableForm } from './PaintableForm.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintable;
 
+                import { PaintableForm } from './PaintableForm.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.PaintableForm;
+
+                
 export class ItemPaintableFactory extends ItemPaintable {
         
 

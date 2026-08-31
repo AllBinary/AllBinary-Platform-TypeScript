@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
@@ -41,7 +41,9 @@ import { EventListenerInterface } from '../../../../org/allbinary/logic/util/eve
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEvent;
 
+                
 export interface DemoGameMidletEventListener extends EventListenerInterface {
         
 

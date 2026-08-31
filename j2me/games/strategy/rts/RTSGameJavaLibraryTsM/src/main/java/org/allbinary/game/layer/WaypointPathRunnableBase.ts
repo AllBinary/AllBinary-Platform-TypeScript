@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
 
+                import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
+                
 export class WaypointPathRunnableBase
             extends Object
          implements RunnableInterface, PriorityRunnable {

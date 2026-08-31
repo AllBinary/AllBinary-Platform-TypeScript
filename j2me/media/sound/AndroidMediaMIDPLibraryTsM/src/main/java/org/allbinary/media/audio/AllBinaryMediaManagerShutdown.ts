@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -45,7 +45,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
 
+                
 export class AllBinaryMediaManagerShutdown
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { ResourceUtil } from '../../../../../org/allbinary/data/resource/Resourc
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.file.AbFile;
 
+                
 export class FileFactory
             extends Object
          {

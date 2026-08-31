@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -89,7 +89,9 @@ import { BasicOptionItemsEntityFactory } from '../../org/allbinary/data/tables/u
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
+//not GWT import const  = globalThis.admin.taghelpers.ModifyTable;
 
+                
 export class BasicOptionItemsRequestHelper extends ModifyTable {
         
 

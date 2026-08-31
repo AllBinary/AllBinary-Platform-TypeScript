@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -83,7 +83,9 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheBase } from './ImageCacheBase.js';
+//not GWT import const  = globalThis.org.allbinary.image.ImageCacheBase;
 
+                
 export class ImageCache extends ImageCacheBase {
         
 

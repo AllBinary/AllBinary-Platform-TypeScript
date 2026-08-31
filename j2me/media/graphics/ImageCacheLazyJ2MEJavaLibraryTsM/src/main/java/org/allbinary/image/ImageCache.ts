@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -161,11 +161,21 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheBase } from './ImageCacheBase.js';
-//import { NotHTMLEndProcessor } from './NotHTMLEndProcessor.js';
-//import { FirstProcessor } from './FirstProcessor.js';
-//import { NotHTMLProcessor } from './NotHTMLProcessor.js';
-//import { HTMLEndProcessor } from './HTMLEndProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.ImageCacheBase;
 
+                //import { NotHTMLEndProcessor } from './NotHTMLEndProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.NotHTMLEndProcessor;
+
+                //import { FirstProcessor } from './FirstProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.FirstProcessor;
+
+                //import { NotHTMLProcessor } from './NotHTMLProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.NotHTMLProcessor;
+
+                //import { HTMLEndProcessor } from './HTMLEndProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.HTMLEndProcessor;
+
+                
 export class ImageCache extends ImageCacheBase {
         
 

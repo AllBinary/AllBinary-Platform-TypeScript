@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
@@ -75,8 +75,12 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextAnimation } from './TextAnimation.js';
-import { TextInterface } from './TextInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.text.TextAnimation;
 
+                import { TextInterface } from './TextInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.text.TextInterface;
+
+                
 export class CustomTextAnimation extends TextAnimation implements TextInterface {
         
 

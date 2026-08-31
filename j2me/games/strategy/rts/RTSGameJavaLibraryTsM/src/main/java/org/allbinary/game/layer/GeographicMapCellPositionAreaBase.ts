@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -55,7 +55,9 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaInterface } from './GeographicMapCellPositionAreaInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaInterface;
 
+                
 export class GeographicMapCellPositionAreaBase
             extends Object
          implements GeographicMapCellPositionAreaInterface {

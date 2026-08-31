@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -43,9 +43,15 @@ import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/A
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
-import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickupLayer;
 
+                import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
+
+                import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
+
+                
 export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 

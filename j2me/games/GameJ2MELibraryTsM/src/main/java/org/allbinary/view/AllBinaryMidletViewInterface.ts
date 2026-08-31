@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GameInitializedListenerInterface } from '../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
@@ -35,7 +35,9 @@ import { MidletCompositeInterface } from '../../../org/allbinary/midlet/MidletCo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmulatorViewInterface } from './EmulatorViewInterface.js';
+//not GWT import const  = globalThis.org.allbinary.view.EmulatorViewInterface;
 
+                
 export interface AllBinaryMidletViewInterface extends MidletCompositeInterface, EmulatorViewInterface, DemoGameMidletEventListener, GameInitializedListenerInterface {
         
 

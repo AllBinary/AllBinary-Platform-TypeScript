@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,8 +51,12 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SourceCollisionHelper } from './SourceCollisionHelper.js';
-import { CollisionHelper } from './CollisionHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.SourceCollisionHelper;
 
+                import { CollisionHelper } from './CollisionHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionHelper;
+
+                
 export class CollidableHelperFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -101,7 +101,9 @@ import { BareMain } from '../../../../org/microemu/app/BareMain.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Image } from './Image.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.Image;
 
+                
 export class ImageUtil
             extends Object
          {

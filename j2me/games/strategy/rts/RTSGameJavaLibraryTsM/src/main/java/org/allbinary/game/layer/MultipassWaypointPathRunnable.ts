@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -79,11 +79,21 @@ import { PathFindingInfo } from '../../../../org/allbinary/media/graphics/geogra
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
-//import { FirstRunnable } from './FirstRunnable.js';
-//import { SecondRunnable } from './SecondRunnable.js';
-//import { EndRunnable } from './EndRunnable.js';
-import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointPathRunnableBase;
 
+                //import { FirstRunnable } from './FirstRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.FirstRunnable;
+
+                //import { SecondRunnable } from './SecondRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.SecondRunnable;
+
+                //import { EndRunnable } from './EndRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.EndRunnable;
+
+                import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+
+                
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         
 

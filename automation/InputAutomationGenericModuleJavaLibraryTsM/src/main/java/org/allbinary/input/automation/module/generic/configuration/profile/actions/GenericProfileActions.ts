@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -109,10 +109,18 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileActionsJPanel } from './GenericProfileActionsJPanel.js';
-import { GenericProfileActionsData } from './GenericProfileActionsData.js';
-import { GenericProfileActionData } from './GenericProfileActionData.js';
-import { GenericProfileAction } from './GenericProfileAction.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsJPanel;
 
+                import { GenericProfileActionsData } from './GenericProfileActionsData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionsData;
+
+                import { GenericProfileActionData } from './GenericProfileActionData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionData;
+
+                import { GenericProfileAction } from './GenericProfileAction.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileAction;
+
+                
 export class GenericProfileActions
             extends Object
          implements DomNodeInterface, DomDocumentMappingInterface {

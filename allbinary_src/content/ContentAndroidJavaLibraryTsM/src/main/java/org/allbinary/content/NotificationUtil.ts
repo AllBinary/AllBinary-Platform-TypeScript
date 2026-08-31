@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -81,9 +81,15 @@ import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
-import { NotificationBuilderAPI23 } from './NotificationBuilderAPI23.js';
-import { CommandUriAction } from './CommandUriAction.js';
+//not GWT import const  = globalThis.org.allbinary.content.NotificationBuilder;
 
+                import { NotificationBuilderAPI23 } from './NotificationBuilderAPI23.js';
+//not GWT import const  = globalThis.org.allbinary.content.NotificationBuilderAPI23;
+
+                import { CommandUriAction } from './CommandUriAction.js';
+//not GWT import const  = globalThis.org.allbinary.content.CommandUriAction;
+
+                
 export class NotificationUtil
             extends Object
          {

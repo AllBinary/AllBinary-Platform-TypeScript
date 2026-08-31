@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../java/lang/Object.js';
@@ -51,7 +51,9 @@ import { TagStrings } from '../../tags/TagStrings.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTableInterface } from './ModifyTableInterface.js';
+//not GWT import const  = globalThis.admin.taghelpers.ModifyTableInterface;
 
+                
 export class ModifyTable
             extends Object
          implements ModifyTableInterface {

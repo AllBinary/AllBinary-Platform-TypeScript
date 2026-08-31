@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -67,7 +67,9 @@ import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAni
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterface } from './CompoundAnimationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.compound.CompoundAnimationInterface;
 
+                
 export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {
         
 

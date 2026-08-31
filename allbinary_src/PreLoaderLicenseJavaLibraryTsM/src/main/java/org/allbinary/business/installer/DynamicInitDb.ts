@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
@@ -53,7 +53,9 @@ import { LicensingException } from '../../../../org/allbinary/logic/system/secur
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitDb } from './InitDb.js';
-//Warning you must have sql root access
+//not GWT import const  = globalThis.org.allbinary.business.installer.InitDb;
+
+                //Warning you must have sql root access
 export class DynamicInitDb extends InitDb {
         
 

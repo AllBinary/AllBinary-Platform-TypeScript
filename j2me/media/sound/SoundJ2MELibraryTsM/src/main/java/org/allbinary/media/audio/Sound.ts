@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -71,8 +71,12 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundInterface } from './SoundInterface.js';
-import { NoPlayer } from './NoPlayer.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.SoundInterface;
 
+                import { NoPlayer } from './NoPlayer.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NoPlayer;
+
+                
 export class Sound
             extends Object
          implements SoundInterface, Runnable {

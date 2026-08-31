@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
 
+                
 export class ContextConfiguration
             extends Object
          implements ContextConfigurationInterface {

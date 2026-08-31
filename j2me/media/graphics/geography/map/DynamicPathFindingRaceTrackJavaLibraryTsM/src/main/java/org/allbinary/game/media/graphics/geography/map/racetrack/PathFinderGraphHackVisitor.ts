@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -91,8 +91,12 @@ import { PathFindingNode } from '../../../../../../../../org/allbinary/media/gra
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
-import { CellPositionArray } from './CellPositionArray.js';
+//not GWT import const  = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.BasePathFinderGraphVisitor;
 
+                import { CellPositionArray } from './CellPositionArray.js';
+//not GWT import const  = globalThis.org.allbinary.game.media.graphics.geography.map.racetrack.CellPositionArray;
+
+                
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor<V, E> {
         
 

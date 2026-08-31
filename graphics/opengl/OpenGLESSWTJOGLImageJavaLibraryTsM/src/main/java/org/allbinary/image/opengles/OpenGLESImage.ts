@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -99,11 +99,21 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
-import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
-import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
-import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-import { OpenGLImageCacheFactory } from './OpenGLImageCacheFactory.js';
-//OpenGLESSWTJOGLImageJavaLibrary
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLSurfaceChangedInterface;
+
+                import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProcessor;
+
+                import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageTranslate;
+
+                import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImageProperties;
+
+                import { OpenGLImageCacheFactory } from './OpenGLImageCacheFactory.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLImageCacheFactory;
+
+                //OpenGLESSWTJOGLImageJavaLibrary
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapCellTypeFactory } from './RaceTrackGeographicMapCellTypeFactory.js';
-import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from './EmptyRaceRaceTrackGeographicMapCellTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellTypeFactory;
 
+                import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from './EmptyRaceRaceTrackGeographicMapCellTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.EmptyRaceRaceTrackGeographicMapCellTypeFactory;
+
+                
 export class NormalRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         
 

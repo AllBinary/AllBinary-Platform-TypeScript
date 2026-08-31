@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
@@ -81,7 +81,9 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImage } from './OpenGLESImage.js';
-//This is not actually VBO impl
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImage;
+
+                //This is not actually VBO impl
 export class OpenGLESGL11VBOImage extends OpenGLESImage {
         
 

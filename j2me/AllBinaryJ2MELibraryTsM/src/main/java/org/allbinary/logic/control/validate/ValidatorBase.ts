@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -75,7 +75,9 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidatorBaseInterface } from './ValidatorBaseInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.control.validate.ValidatorBaseInterface;
 
+                
 export class ValidatorBase
             extends Object
          implements ValidatorBaseInterface {

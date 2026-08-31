@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -75,7 +75,9 @@ import { StoreCustomizerComponentUtil } from '../../../../../../../../../views/b
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssCustomizerView } from './CssCustomizerView.js';
+//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.includes.style.css.CssCustomizerView;
 
+                
 export class InsertCssValidationView extends CssCustomizerView implements ValidationComponentInterface {
         
 

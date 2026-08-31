@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -45,9 +45,15 @@ import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEventFactory } from './TerrainEventFactory.js';
-import { TerrainEvent } from './TerrainEvent.js';
-import { BasicTerrainInfo } from './BasicTerrainInfo.js';
+//not GWT import const  = globalThis.org.allbinary.game.terrain.TerrainEventFactory;
 
+                import { TerrainEvent } from './TerrainEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.terrain.TerrainEvent;
+
+                import { BasicTerrainInfo } from './BasicTerrainInfo.js';
+//not GWT import const  = globalThis.org.allbinary.game.terrain.BasicTerrainInfo;
+
+                
 export class TerrainEventCircularStaticPool
             extends Object
          {

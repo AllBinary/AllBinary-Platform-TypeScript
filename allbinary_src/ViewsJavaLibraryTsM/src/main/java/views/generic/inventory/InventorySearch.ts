@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -113,8 +113,12 @@ import { InventoryViewSearchInterface } from '../../../views/admin/inventory/lis
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventorySearchUtil } from './InventorySearchUtil.js';
-import { InventorySearchProductUtil } from './InventorySearchProductUtil.js';
+//not GWT import const  = globalThis.views.generic.inventory.InventorySearchUtil;
 
+                import { InventorySearchProductUtil } from './InventorySearchProductUtil.js';
+//not GWT import const  = globalThis.views.generic.inventory.InventorySearchProductUtil;
+
+                
 export class InventorySearch
             extends Object
          implements InventoryViewSearchInterface {

@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -23,11 +23,21 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL } from './GL.js';
-import { FloatBuffer } from './FloatBuffer.js';
-import { IntBuffer } from './IntBuffer.js';
-import { ShortBuffer } from './ShortBuffer.js';
-import { Buffer } from './Buffer.js';
+//not GWT import const  = globalThis.javax.microedition.khronos.opengles.GL;
 
+                import { FloatBuffer } from './FloatBuffer.js';
+//not GWT import const  = globalThis.javax.microedition.khronos.opengles.FloatBuffer;
+
+                import { IntBuffer } from './IntBuffer.js';
+//not GWT import const  = globalThis.javax.microedition.khronos.opengles.IntBuffer;
+
+                import { ShortBuffer } from './ShortBuffer.js';
+//not GWT import const  = globalThis.javax.microedition.khronos.opengles.ShortBuffer;
+
+                import { Buffer } from './Buffer.js';
+//not GWT import const  = globalThis.javax.microedition.khronos.opengles.Buffer;
+
+                
             //Interfaces do not have static fields for typescript so create a class with the static fields
             export class GL11ExtI {
         

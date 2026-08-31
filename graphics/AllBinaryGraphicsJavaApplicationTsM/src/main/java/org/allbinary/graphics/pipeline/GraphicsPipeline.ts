@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -57,7 +57,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.pipeline.BasicGraphicsPipeline;
 
+                
 export class GraphicsPipeline extends BasicGraphicsPipeline {
         
 

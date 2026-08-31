@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -39,7 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCategoryInterface } from './AdvertisementCategoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.search.category.AdvertisementCategoryInterface;
 
+                
 export class BasicAdvertisementCategory
             extends Object
          implements AdvertisementCategoryInterface {

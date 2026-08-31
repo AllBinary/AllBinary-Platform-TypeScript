@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputFeature } from './InputFeature.js';
-import { Features } from './Features.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.InputFeature;
 
+                import { Features } from './Features.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Features;
+
+                
 export class InputFeatureFactory
             extends Object
          {

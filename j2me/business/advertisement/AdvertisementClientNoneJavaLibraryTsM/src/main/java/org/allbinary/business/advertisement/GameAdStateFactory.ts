@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -43,9 +43,15 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactoryInterface } from './GameAdStateFactoryInterface.js';
-import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
-import { GameAdStateBase } from './GameAdStateBase.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.GameAdStateFactoryInterface;
 
+                import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.AppNameLicensingAdConfiguration;
+
+                import { GameAdStateBase } from './GameAdStateBase.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.GameAdStateBase;
+
+                
 export class GameAdStateFactory
             extends Object
          implements GameAdStateFactoryInterface {

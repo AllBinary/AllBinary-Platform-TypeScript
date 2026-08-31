@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssPropertyData } from './CssPropertyData.js';
-import { CssPropertyValidationFactory } from './CssPropertyValidationFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyData;
 
+                import { CssPropertyValidationFactory } from './CssPropertyValidationFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyValidationFactory;
+
+                
 export class CssPropertiesValidationFactory
             extends Object
          {

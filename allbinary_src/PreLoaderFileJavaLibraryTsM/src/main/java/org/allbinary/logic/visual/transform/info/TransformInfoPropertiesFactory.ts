@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -69,8 +69,12 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoData } from './TransformInfoData.js';
-import { TransformInfoProperties } from './TransformInfoProperties.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
 
+                import { TransformInfoProperties } from './TransformInfoProperties.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoProperties;
+
+                
 export class TransformInfoPropertiesFactory
             extends Object
          {

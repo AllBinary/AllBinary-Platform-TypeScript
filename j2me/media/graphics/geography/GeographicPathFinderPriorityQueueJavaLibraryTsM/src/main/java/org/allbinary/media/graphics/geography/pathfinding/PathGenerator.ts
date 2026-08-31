@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -55,10 +55,18 @@ import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathGeneratorInterface } from './PathGeneratorInterface.js';
-import { PathFindingInfo } from './PathFindingInfo.js';
-import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
-import { MultipassState } from './MultipassState.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathGeneratorInterface;
 
+                import { PathFindingInfo } from './PathFindingInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
+
+                import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.GeographicPathFinderBase;
+
+                import { MultipassState } from './MultipassState.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
+
+                
 export class PathGenerator
             extends Object
          implements PathGeneratorInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EventListenerInterface } from './EventListenerInterface.js';
-import { AllBinaryEventObject } from './AllBinaryEventObject.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.event.EventListenerInterface;
 
+                import { AllBinaryEventObject } from './AllBinaryEventObject.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.event.AllBinaryEventObject;
+
+                
 export class NullEventListener
             extends Object
          implements EventListenerInterface {

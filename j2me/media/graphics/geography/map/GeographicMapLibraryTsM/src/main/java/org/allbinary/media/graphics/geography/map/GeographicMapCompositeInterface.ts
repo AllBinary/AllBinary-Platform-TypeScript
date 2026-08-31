@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellType } from './GeographicMapCellType.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
 
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                
 export interface GeographicMapCompositeInterface {
         
 

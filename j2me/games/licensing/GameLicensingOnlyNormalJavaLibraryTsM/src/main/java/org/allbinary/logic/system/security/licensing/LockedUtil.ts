@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LockedUtilInterface } from './LockedUtilInterface.js';
-import { LockableFeature } from './LockableFeature.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LockedUtilInterface;
 
+                import { LockableFeature } from './LockableFeature.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+
+                
 export class LockedUtil
             extends Object
          implements LockedUtilInterface {

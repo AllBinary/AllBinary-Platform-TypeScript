@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -69,8 +69,12 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
-import { AdjustedImageArrayAnimation } from './AdjustedImageArrayAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayAnimation;
 
+                import { AdjustedImageArrayAnimation } from './AdjustedImageArrayAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedImageArrayAnimation;
+
+                
 export class ImageArrayAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

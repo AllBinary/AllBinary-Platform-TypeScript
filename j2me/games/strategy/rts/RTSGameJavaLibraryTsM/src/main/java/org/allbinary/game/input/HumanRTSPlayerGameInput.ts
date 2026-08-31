@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -219,9 +219,15 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
-import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.RTSPlayerGameInput;
 
+                import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.LayerPositionFinderInterface;
+
+                import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectRTSLayerVisitorFactoryInterface;
+
+                
 export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseMotionGestureEventListener {
         
 

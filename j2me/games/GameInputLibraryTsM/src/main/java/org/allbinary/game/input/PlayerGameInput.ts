@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Integer } from '../../../../java/lang/Integer.js';
@@ -91,8 +91,12 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInput } from './GameInput.js';
-import { GameInputStrings } from './GameInputStrings.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInput;
 
+                import { GameInputStrings } from './GameInputStrings.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInputStrings;
+
+                
 export class PlayerGameInput extends GameInput implements GameKeyEventListenerInterface {
         
 

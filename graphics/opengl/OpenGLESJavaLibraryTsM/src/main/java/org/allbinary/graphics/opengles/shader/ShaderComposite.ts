@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -67,12 +67,24 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Shader } from './Shader.js';
-import { ShaderInitializer } from './ShaderInitializer.js';
-import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
-import { ModelViewProjection } from './ModelViewProjection.js';
-import { NullOpenGLTextureProcessor } from './NullOpenGLTextureProcessor.js';
-import { OpenGLObject3dProcessor } from './OpenGLObject3dProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.Shader;
 
+                import { ShaderInitializer } from './ShaderInitializer.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ShaderInitializer;
+
+                import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.CompositeShaderUpdater;
+
+                import { ModelViewProjection } from './ModelViewProjection.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ModelViewProjection;
+
+                import { NullOpenGLTextureProcessor } from './NullOpenGLTextureProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.NullOpenGLTextureProcessor;
+
+                import { OpenGLObject3dProcessor } from './OpenGLObject3dProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.OpenGLObject3dProcessor;
+
+                
 export class ShaderComposite
             extends Object
          {

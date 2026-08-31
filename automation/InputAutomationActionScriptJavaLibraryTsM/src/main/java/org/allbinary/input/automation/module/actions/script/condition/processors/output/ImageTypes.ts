@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../../java/lang/Object.js';
@@ -73,7 +73,9 @@ import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputData;
 
+                
 export class ImageTypes
             extends Object
          {

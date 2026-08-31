@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -111,8 +111,12 @@ import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WeblisketSessionInterface } from './WeblisketSessionInterface.js';
-import { WeblisketSessionData } from './WeblisketSessionData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionInterface;
 
+                import { WeblisketSessionData } from './WeblisketSessionData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.session.WeblisketSessionData;
+
+                
 export class WeblisketSession
             extends Object
          implements WeblisketSessionInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -123,7 +123,9 @@ import { PathGenerator } from '../../../../../org/allbinary/media/graphics/geogr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointBase } from './WaypointBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointBase;
 
+                
 export class NoCacheWaypoint extends WaypointBase implements BuildingEventListenerInterface {
         
 

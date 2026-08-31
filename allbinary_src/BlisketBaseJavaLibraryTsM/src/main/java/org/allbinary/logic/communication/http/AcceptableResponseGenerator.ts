@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServle
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponseUtil } from './AcceptableResponseUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.AcceptableResponseUtil;
 
+                
 export class AcceptableResponseGenerator
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -63,11 +63,21 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-import { CommonButtons } from './CommonButtons.js';
-import { TouchButton } from './TouchButton.js';
-import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
 
+                import { CommonButtons } from './CommonButtons.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.CommonButtons;
+
+                import { TouchButton } from './TouchButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+
+                import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+
+                import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonBlankResource;
+
+                
 export class TouchButtonsMappingPaintable extends Paintable {
         
 

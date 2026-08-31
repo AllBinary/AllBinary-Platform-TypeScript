@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -59,9 +59,15 @@ import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-import { ImageAnimation } from './ImageAnimation.js';
-import { AdjustedImageAnimation } from './AdjustedImageAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
+                import { ImageAnimation } from './ImageAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageAnimation;
+
+                import { AdjustedImageAnimation } from './AdjustedImageAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedImageAnimation;
+
+                
 export class ImageAnimationFactory extends BaseImageAnimationFactory {
         
 

@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -41,8 +41,12 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPriorityRunnable } from './NullPriorityRunnable.js';
-import { PriorityRunnable } from './PriorityRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.thread.NullPriorityRunnable;
 
+                import { PriorityRunnable } from './PriorityRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.thread.PriorityRunnable;
+
+                
 export class ThreadObjectUtil
             extends Object
          {

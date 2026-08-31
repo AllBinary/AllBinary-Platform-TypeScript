@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -69,8 +69,12 @@ import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/Rand
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorExplosionType } from './VectorExplosionType.js';
-import { VectorAnimationUtil } from './VectorAnimationUtil.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorExplosionType;
 
+                import { VectorAnimationUtil } from './VectorAnimationUtil.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationUtil;
+
+                
 export class VectorExplosionGenerator
             extends Object
          {

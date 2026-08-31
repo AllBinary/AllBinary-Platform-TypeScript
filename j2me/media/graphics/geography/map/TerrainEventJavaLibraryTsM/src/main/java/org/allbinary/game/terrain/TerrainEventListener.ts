@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -45,8 +45,12 @@ import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventSt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEventListenerInterface } from './TerrainEventListenerInterface.js';
-import { TerrainEvent } from './TerrainEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.terrain.TerrainEventListenerInterface;
 
+                import { TerrainEvent } from './TerrainEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.terrain.TerrainEvent;
+
+                
 export class TerrainEventListener
             extends Object
          implements TerrainEventListenerInterface {

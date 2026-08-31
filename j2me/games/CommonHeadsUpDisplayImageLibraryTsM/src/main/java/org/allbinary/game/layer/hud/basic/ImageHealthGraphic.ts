@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -63,7 +63,9 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthGraphic } from './HealthGraphic.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.hud.basic.HealthGraphic;
 
+                
 export class ImageHealthGraphic extends HealthGraphic {
         
 

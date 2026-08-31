@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Shader } from './Shader.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.Shader;
 
+                
 export class ShaderInitializer
             extends Object
          {

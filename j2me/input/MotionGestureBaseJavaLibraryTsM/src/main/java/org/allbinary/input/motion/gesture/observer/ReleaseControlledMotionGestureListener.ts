@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -81,9 +81,15 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureEventListener } from './MotionGestureEventListener.js';
-import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
-import { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEventListener;
 
+                import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.CompleteMotionGestureListenerInterface;
+
+                import { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+
+                
 export class ReleaseControlledMotionGestureListener
             extends Object
          implements MotionGestureEventListener {

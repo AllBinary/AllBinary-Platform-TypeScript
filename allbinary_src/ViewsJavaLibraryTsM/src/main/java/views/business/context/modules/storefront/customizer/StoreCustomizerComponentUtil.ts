@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -69,7 +69,9 @@ import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/vi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomizerUtil } from './CustomizerUtil.js';
+//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.CustomizerUtil;
 
+                
 export class StoreCustomizerComponentUtil
             extends Object
          {

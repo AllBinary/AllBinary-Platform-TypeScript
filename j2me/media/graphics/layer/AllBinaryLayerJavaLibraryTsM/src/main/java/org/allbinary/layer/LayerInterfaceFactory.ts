@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -75,9 +75,15 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
-import { LayerInterfaceFactoryInterface } from './LayerInterfaceFactoryInterface.js';
-import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.Layer;
 
+                import { LayerInterfaceFactoryInterface } from './LayerInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.layer.LayerInterfaceFactoryInterface;
+
+                import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+
+                
 export class LayerInterfaceFactory
             extends Object
          {

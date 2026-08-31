@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -71,8 +71,12 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameRunnable } from './GameRunnable.js';
-import { DemoCanvas } from './DemoCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
 
+                import { DemoCanvas } from './DemoCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoCanvas;
+
+                
 export class DemoGameRunnable extends GameRunnable {
         
 

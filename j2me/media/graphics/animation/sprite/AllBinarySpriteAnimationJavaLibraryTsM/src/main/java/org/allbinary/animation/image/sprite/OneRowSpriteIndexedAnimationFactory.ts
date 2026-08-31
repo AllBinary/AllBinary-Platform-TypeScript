@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -71,8 +71,12 @@ import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
-import { AdjustedSpriteIndexedAnimation } from './AdjustedSpriteIndexedAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.SpriteIndexedAnimation;
 
+                import { AdjustedSpriteIndexedAnimation } from './AdjustedSpriteIndexedAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.AdjustedSpriteIndexedAnimation;
+
+                
 export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFactory {
         
 

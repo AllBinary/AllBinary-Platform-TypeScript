@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
@@ -49,7 +49,9 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ModifierBaseProcessor;
 
+                
 export class SetColorProcessor extends ModifierBaseProcessor {
         
 

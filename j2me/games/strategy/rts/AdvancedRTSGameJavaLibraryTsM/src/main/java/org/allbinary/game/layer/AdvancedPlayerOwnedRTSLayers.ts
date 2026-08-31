@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
@@ -49,9 +49,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
-import { RTSLayer } from './RTSLayer.js';
-import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PlayerOwnedRTSLayers;
 
+                import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+
+                import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayer;
+
+                
 export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {
         
 

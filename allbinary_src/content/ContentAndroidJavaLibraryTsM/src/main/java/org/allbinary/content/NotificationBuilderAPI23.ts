@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { System } from '../../../java/lang/System.js';
@@ -65,7 +65,9 @@ import { Parcelable } from '../../../android/os/Parcelable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NotificationBuilder } from './NotificationBuilder.js';
+//not GWT import const  = globalThis.org.allbinary.content.NotificationBuilder;
 
+                
 export class NotificationBuilderAPI23 extends NotificationBuilder {
         
 

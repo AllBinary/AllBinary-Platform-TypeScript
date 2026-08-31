@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -57,10 +57,18 @@ import { TransformInfoInterface } from '../../../../../../../../org/allbinary/lo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGeneratorFactoryInterface } from './TransformInfoObjectConfigGeneratorFactoryInterface.js';
-import { StoreFileGenerator } from './StoreFileGenerator.js';
-import { BasicGenerator } from './BasicGenerator.js';
-import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGeneratorFactoryInterface;
 
+                import { StoreFileGenerator } from './StoreFileGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.StoreFileGenerator;
+
+                import { BasicGenerator } from './BasicGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.BasicGenerator;
+
+                import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
+
+                
 export class TransformInfoObjectConfigGeneratorFactory
             extends Object
          implements TransformInfoObjectConfigGeneratorFactoryInterface {

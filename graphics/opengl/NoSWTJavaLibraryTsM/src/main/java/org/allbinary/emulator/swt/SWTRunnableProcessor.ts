@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
@@ -41,7 +41,9 @@ import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SWTProcessor } from './SWTProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.emulator.swt.SWTProcessor;
 
+                
 export class SWTRunnableProcessor extends SWTProcessor {
         
 

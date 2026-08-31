@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -99,10 +99,18 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
-import { PickupableInterface } from './PickupableInterface.js';
-import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
-import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterface;
 
+                import { PickupableInterface } from './PickupableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickupableInterface;
+
+                import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactory;
+
+                import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
+
+                
 export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerInterface, PickupableInterface {
         
 

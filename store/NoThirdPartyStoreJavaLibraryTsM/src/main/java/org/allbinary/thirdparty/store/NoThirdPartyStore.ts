@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
@@ -45,7 +45,9 @@ import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThirdPartyStore } from './ThirdPartyStore.js';
+//not GWT import const  = globalThis.org.allbinary.thirdparty.store.ThirdPartyStore;
 
+                
 export class NoThirdPartyStore extends ThirdPartyStore {
         
 

@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -25,8 +25,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PoolType } from './PoolType.js';
-import { CacheTypeFactory } from './CacheTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.PoolType;
 
+                import { CacheTypeFactory } from './CacheTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheTypeFactory;
+
+                
 export class PoolTypeFactory
             extends Object
          {

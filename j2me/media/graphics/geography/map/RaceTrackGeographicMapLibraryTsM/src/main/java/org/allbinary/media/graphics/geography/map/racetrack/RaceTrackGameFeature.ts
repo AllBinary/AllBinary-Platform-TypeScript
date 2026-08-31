@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GameFeature } from '../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js';

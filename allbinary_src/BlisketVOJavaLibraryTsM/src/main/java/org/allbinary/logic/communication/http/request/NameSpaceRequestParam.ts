@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -75,7 +75,9 @@ import { HtmlNameMathData } from '../../../../../../org/allbinary/logic/visual/d
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NameSpaceRequestParamData } from './NameSpaceRequestParamData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.NameSpaceRequestParamData;
 
+                
 export class NameSpaceRequestParam
             extends Object
          {

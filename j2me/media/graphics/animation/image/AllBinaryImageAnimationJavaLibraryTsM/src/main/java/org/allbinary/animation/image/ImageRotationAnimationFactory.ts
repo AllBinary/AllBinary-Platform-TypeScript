@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -67,9 +67,15 @@ import { GameConfigurationCentral } from '../../../../org/allbinary/game/configu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-import { AdjustedImageBaseRotationAnimation } from './AdjustedImageBaseRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
+                import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
+
+                import { AdjustedImageBaseRotationAnimation } from './AdjustedImageBaseRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedImageBaseRotationAnimation;
+
+                
 export class ImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

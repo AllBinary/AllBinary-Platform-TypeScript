@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -53,10 +53,18 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
-import { VectorAnimation } from './VectorAnimation.js';
-import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
+                import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehaviorFactory;
+
+                import { VectorAnimation } from './VectorAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimation;
+
+                import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+
+                
 export class VectorAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

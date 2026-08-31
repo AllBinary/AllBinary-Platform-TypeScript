@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -69,8 +69,12 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserInterface } from './UserInterface.js';
-import { CreateUserFactory } from './CreateUserFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.UserInterface;
 
+                import { CreateUserFactory } from './CreateUserFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.CreateUserFactory;
+
+                
 export class NewUserFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -69,9 +69,15 @@ import { RequestParams } from '../../../../../../../../org/allbinary/logic/commu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterfaceFactoryInterface } from './PaymentGatewayInterfaceFactoryInterface.js';
-import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
-import { PaymentGatewayData } from './PaymentGatewayData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterfaceFactoryInterface;
 
+                import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
+
+                import { PaymentGatewayData } from './PaymentGatewayData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayData;
+
+                
 export class PaymentGatewayInterfaceFactory
             extends Object
          implements PaymentGatewayInterfaceFactoryInterface {

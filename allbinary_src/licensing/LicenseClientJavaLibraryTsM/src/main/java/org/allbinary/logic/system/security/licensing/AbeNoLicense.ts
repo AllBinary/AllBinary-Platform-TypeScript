@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -51,9 +51,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-import { LicenseTypeFactory } from './LicenseTypeFactory.js';
-import { LicenseType } from './LicenseType.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
 
+                import { LicenseTypeFactory } from './LicenseTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LicenseTypeFactory;
+
+                import { LicenseType } from './LicenseType.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LicenseType;
+
+                
 export class AbeNoLicense
             extends Object
          implements AbeLicenseInterface {

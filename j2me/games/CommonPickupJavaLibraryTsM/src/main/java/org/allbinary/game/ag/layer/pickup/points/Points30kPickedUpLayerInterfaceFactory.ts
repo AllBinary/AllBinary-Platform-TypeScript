@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -75,9 +75,15 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsLayerCircularStaticPool } from './PointsLayerCircularStaticPool.js';
-import { PointsLayerFactory } from './PointsLayerFactory.js';
-import { PointsResources } from './PointsResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.points.PointsLayerCircularStaticPool;
 
+                import { PointsLayerFactory } from './PointsLayerFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.points.PointsLayerFactory;
+
+                import { PointsResources } from './PointsResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.points.PointsResources;
+
+                
 export class Points30kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 

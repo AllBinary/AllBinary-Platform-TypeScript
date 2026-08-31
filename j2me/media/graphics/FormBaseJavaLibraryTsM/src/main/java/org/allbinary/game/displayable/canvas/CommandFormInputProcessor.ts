@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -143,8 +143,12 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-import { CommandRunnable } from './CommandRunnable.js';
-//In general allow scrolling of the menu and selection the center item
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
+
+                import { CommandRunnable } from './CommandRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.CommandRunnable;
+
+                //In general allow scrolling of the menu and selection the center item
 export class CommandFormInputProcessor extends BasicMenuInputProcessor {
         
 

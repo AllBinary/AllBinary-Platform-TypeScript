@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -109,8 +109,12 @@ import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLCapabilities } from './OpenGLCapabilities.js';
-import { OpenGLLogUtil } from './OpenGLLogUtil.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLCapabilities;
 
+                import { OpenGLLogUtil } from './OpenGLLogUtil.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLLogUtil;
+
+                
 export class OpenGLUtil
             extends Object
          {

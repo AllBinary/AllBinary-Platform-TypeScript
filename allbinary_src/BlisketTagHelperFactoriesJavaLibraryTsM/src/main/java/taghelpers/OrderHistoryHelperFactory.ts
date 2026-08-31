@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../java/lang/Object.js';
@@ -61,7 +61,9 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryHelper } from './OrderHistoryHelper.js';
+//not GWT import const  = globalThis.taghelpers.OrderHistoryHelper;
 
+                
 export class OrderHistoryHelperFactory
             extends Object
          {

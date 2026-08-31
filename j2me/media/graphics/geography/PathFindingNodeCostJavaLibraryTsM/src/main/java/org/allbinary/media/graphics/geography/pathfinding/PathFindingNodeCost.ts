@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -55,9 +55,15 @@ import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNode } from './PathFindingNode.js';
-import { Comparable } from './Comparable.js';
-import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNode;
 
+                import { Comparable } from './Comparable.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
+
+                import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfo;
+
+                
 export class PathFindingNodeCost extends PathFindingNode implements Comparable<PathFindingNodeCost> {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -75,8 +75,12 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-import { GameCommandCanvas } from './GameCommandCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
 
+                import { GameCommandCanvas } from './GameCommandCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameCommandCanvas;
+
+                
 export class ImmediateCommandFormInputProcessor extends CommandFormInputProcessor {
         
 

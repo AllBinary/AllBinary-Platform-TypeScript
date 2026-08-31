@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -55,9 +55,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonsListBuilder } from './TouchButtonsListBuilder.js';
-import { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
-import { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonsListBuilder;
 
+                import { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchButtonsBuilder;
+
+                import { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BuildingScrollTouchButtonsBuilder;
+
+                
 export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsListBuilder {
         
 

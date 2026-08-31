@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { Method } from '../../../../../java/lang/reflect/Method.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowInterface } from './WorkFlowInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.control.workflow.WorkFlowInterface;
 
+                
 export class WorkFlowWrapper
             extends Object
          implements WorkFlowInterface {

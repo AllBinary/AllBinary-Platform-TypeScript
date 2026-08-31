@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -81,8 +81,12 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerLogHelper } from './RTSLayerLogHelper.js';
-import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayerLogHelper;
 
+                import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
+                
 export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
         
 

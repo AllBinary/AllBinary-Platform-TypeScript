@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -46,8 +46,10 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { FilePathData } from './FilePathData.js';
-//Used to correct user input for paths
+        //not plain js import { FilePathData } from './FilePathData.js';
+const  = globalThis.org.allbinary.logic.io.file.FilePathData;
+
+                //Used to correct user input for paths
 export class FilePathUtil
             extends Object
          {

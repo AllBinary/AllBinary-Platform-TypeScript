@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -57,8 +57,12 @@ import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MeteredGameObjectInterface } from './MeteredGameObjectInterface.js';
-import { GraphicsAnalysisUtil } from './GraphicsAnalysisUtil.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.MeteredGameObjectInterface;
 
+                import { GraphicsAnalysisUtil } from './GraphicsAnalysisUtil.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.GraphicsAnalysisUtil;
+
+                
 export class MeteredGameObject
             extends Object
          implements MeteredGameObjectInterface {

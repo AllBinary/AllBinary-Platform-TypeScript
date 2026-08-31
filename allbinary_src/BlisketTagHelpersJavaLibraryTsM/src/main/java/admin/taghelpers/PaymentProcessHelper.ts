@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -59,7 +59,9 @@ import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProc
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelper } from './TagHelper.js';
+//not GWT import const  = globalThis.admin.taghelpers.TagHelper;
 
+                
 export class PaymentProcessHelper extends TagHelper {
         
 

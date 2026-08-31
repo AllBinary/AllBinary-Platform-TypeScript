@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { awt } from '../../../../../../../java/awt.js';
@@ -45,7 +45,9 @@ import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Point;
 
+                
 export interface ColorAtActionScriptConditionInterface {
         
 

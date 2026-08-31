@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -83,9 +83,15 @@ import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-import { Color } from './Color.js';
-import { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
 
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.Color;
+
+                import { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+
+                
 export class ImageComparator
             extends Object
          {

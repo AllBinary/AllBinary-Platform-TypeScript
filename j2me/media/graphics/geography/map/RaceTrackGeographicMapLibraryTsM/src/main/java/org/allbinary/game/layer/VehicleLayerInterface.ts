@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -63,7 +63,9 @@ import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/med
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.VehiclePropertiesCompositeInterface;
 
+                
 export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -39,10 +39,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintableFactory } from './ItemPaintableFactory.js';
-import { LockablePaintable } from './LockablePaintable.js';
-import { ItemPaintable } from './ItemPaintable.js';
-import { PaintableForm } from './PaintableForm.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintableFactory;
 
+                import { LockablePaintable } from './LockablePaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.LockablePaintable;
+
+                import { ItemPaintable } from './ItemPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.ItemPaintable;
+
+                import { PaintableForm } from './PaintableForm.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.PaintableForm;
+
+                
 export class LockableFormPaintableFactory extends ItemPaintableFactory {
         
 

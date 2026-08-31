@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,8 +51,12 @@ import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/ha
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidletEventListener } from './DemoGameMidletEventListener.js';
-import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEventListener;
 
+                import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidletEvent;
+
+                
 export class DemoGameMidletEventHandler extends BasicEventHandler {
         
 

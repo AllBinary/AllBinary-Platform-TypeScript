@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -67,8 +67,12 @@ import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-import { Image } from './Image.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
 
+                import { Image } from './Image.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.Image;
+
+                
 export class ImageSwtRotationUtil
             extends Object
          {

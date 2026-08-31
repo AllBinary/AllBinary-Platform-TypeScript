@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HitPointGameObjectInterface } from './HitPointGameObjectInterface.js';
-import { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.HitPointGameObjectInterface;
 
+                import { MagicGameObjectInterface } from './MagicGameObjectInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.game.MagicGameObjectInterface;
+
+                
 export interface MagicCharacterGameObjectInterface {
         
 

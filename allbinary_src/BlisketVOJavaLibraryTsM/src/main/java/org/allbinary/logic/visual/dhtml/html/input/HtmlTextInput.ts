@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Integer } from '../../../../../../../java/lang/Integer.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlLengthInput } from './HtmlLengthInput.js';
-import { HtmlInputData } from './HtmlInputData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlLengthInput;
 
+                import { HtmlInputData } from './HtmlInputData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.html.input.HtmlInputData;
+
+                
 export class HtmlTextInput extends HtmlLengthInput {
         
 

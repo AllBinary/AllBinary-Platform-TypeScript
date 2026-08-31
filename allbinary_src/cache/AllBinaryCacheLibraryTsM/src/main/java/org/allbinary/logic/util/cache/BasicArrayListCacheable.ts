@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
@@ -45,7 +45,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CacheableInterface } from './CacheableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.util.cache.CacheableInterface;
 
+                
 export class BasicArrayListCacheable extends BasicArrayListD implements CacheableInterface {
         
 

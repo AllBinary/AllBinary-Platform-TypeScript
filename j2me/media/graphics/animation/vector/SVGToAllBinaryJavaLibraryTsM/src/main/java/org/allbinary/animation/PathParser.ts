@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -31,9 +31,15 @@ import { Vector } from '../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StringBuffer } from './StringBuffer.js';
-import { FixedPoint } from './FixedPoint.js';
-import { PGUtil } from './PGUtil.js';
+//not GWT import const  = globalThis.org.allbinary.animation.StringBuffer;
 
+                import { FixedPoint } from './FixedPoint.js';
+//not GWT import const  = globalThis.org.allbinary.animation.FixedPoint;
+
+                import { PGUtil } from './PGUtil.js';
+//not GWT import const  = globalThis.org.allbinary.animation.PGUtil;
+
+                
 export class PathParser
             extends Object
          {

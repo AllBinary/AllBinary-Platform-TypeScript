@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -55,8 +55,12 @@ import { Activity } from '../../../../../../android/app/Activity.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressRunnable } from './ProgressRunnable.js';
-import { ProgressCanvas } from './ProgressCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressRunnable;
 
+                import { ProgressCanvas } from './ProgressCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
+
+                
 export class ShowTitleProgressBarRunnable extends ProgressRunnable {
         
 

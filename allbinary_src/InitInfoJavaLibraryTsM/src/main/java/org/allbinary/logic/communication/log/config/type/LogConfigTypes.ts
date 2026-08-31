@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -69,9 +69,15 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigTypeFactory } from './LogConfigTypeFactory.js';
-import { LogConfigTypeData } from './LogConfigTypeData.js';
-import { LogConfigType } from './LogConfigType.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory;
 
+                import { LogConfigTypeData } from './LogConfigTypeData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigTypeData;
+
+                import { LogConfigType } from './LogConfigType.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.type.LogConfigType;
+
+                
 export class LogConfigTypes
             extends Object
          {

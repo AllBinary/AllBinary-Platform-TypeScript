@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
@@ -53,11 +53,21 @@ import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShaderComposite } from './ShaderComposite.js';
-import { Shader } from './Shader.js';
-import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
-import { ShaderInitializer } from './ShaderInitializer.js';
-import { ModelViewProjection } from './ModelViewProjection.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ShaderComposite;
 
+                import { Shader } from './Shader.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.Shader;
+
+                import { CompositeShaderUpdater } from './CompositeShaderUpdater.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.CompositeShaderUpdater;
+
+                import { ShaderInitializer } from './ShaderInitializer.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ShaderInitializer;
+
+                import { ModelViewProjection } from './ModelViewProjection.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.shader.ModelViewProjection;
+
+                
 export class NullShaderComposite extends ShaderComposite {
         
 

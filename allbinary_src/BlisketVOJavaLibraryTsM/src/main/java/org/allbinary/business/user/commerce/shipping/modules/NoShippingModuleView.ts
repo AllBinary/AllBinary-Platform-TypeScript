@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -59,8 +59,12 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoShippingModule } from './NoShippingModule.js';
-import { Document } from './Document.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.modules.NoShippingModule;
 
+                import { Document } from './Document.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.shipping.modules.Document;
+
+                
 export class NoShippingModuleView extends NoShippingModule implements DomNodeInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,7 +51,9 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LocationPaintableInterface } from './LocationPaintableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.paint.LocationPaintableInterface;
 
+                
 export class LocationPaintable
             extends Object
          implements LocationPaintableInterface {

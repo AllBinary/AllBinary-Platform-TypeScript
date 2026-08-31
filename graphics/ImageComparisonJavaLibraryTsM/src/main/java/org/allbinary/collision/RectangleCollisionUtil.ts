@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { awt } from '../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.collision.Rectangle;
 
+                
 export class RectangleCollisionUtil
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -70,8 +70,10 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageCompleteUtil } from './ImageCompleteUtil.js';
+        //not plain js import { ImageCompleteUtil } from './ImageCompleteUtil.js';
+const  = globalThis.org.allbinary.media.image.ImageCompleteUtil;
 
+                
 export class ImageWaitCompleteUtil extends ImageCompleteUtil {
         
 

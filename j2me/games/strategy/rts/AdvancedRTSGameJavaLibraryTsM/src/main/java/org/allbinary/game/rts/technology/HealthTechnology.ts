@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@ import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterfa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UnitTechnologySingletonFactory } from './UnitTechnologySingletonFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.rts.technology.UnitTechnologySingletonFactory;
 
+                
 export class HealthTechnology
             extends Object
          implements RTSInterface {

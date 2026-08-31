@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -151,7 +151,9 @@ import { ProductListingFactory } from '../../views/admin/inventory/listings/Prod
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TagHelperInterface } from './TagHelperInterface.js';
+//not GWT import const  = globalThis.admin.taghelpers.TagHelperInterface;
 
+                
 export class StaticPagesRequestHelper extends AbContext implements TagHelperInterface {
         
 

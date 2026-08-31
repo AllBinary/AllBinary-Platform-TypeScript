@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { HashMap } from '../../java/util/HashMap.js';
@@ -49,7 +49,9 @@ import { BasicGroupItemsRequestHelperFactory } from '../../admin/taghelpers/Basi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
+//not GWT import const  = globalThis.admin.tags.TableTag;
 
+                
 export class BasicGroupItemsTag extends TableTag {
         
 

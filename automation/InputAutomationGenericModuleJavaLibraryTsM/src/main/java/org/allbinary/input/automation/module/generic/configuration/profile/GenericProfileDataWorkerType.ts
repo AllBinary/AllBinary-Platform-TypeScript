@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -65,9 +65,15 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileDataWorkerTypeInterface } from './GenericProfileDataWorkerTypeInterface.js';
-import { SavedCaptureGenericProfileDataWorkerType } from './SavedCaptureGenericProfileDataWorkerType.js';
-import { GenericProfileDataWorkerData } from './GenericProfileDataWorkerData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileDataWorkerTypeInterface;
 
+                import { SavedCaptureGenericProfileDataWorkerType } from './SavedCaptureGenericProfileDataWorkerType.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.SavedCaptureGenericProfileDataWorkerType;
+
+                import { GenericProfileDataWorkerData } from './GenericProfileDataWorkerData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.GenericProfileDataWorkerData;
+
+                
 export class GenericProfileDataWorkerType
             extends Object
          implements GenericProfileDataWorkerTypeInterface {

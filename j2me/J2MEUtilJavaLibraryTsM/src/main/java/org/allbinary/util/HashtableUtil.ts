@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -46,10 +46,16 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { EnumerationUtil } from './EnumerationUtil.js';
-import { BasicArrayListS } from './BasicArrayListS.js';
-import { BasicArrayList } from './BasicArrayList.js';
+        //not plain js import { EnumerationUtil } from './EnumerationUtil.js';
+const  = globalThis.org.allbinary.util.EnumerationUtil;
 
+                //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
+const  = globalThis.org.allbinary.util.BasicArrayListS;
+
+                //not plain js import { BasicArrayList } from './BasicArrayList.js';
+const  = globalThis.org.allbinary.util.BasicArrayList;
+
+                
 export class HashtableUtil
             extends Object
          {

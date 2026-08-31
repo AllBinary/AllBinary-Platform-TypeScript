@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { AssignWaypointsUtil } from '../../../../org/allbinary/game/input/form/AssignWaypointsUtil.js';
@@ -73,7 +73,9 @@ import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
 
+                
 export class SelectAdvancedRTSLayerVisitor extends Visitor {
         
 

@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,19 +51,45 @@ import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
-import { OnBufferingUpdateListener } from './OnBufferingUpdateListener.js';
-import { OnPreparedListener } from './OnPreparedListener.js';
-import { OnErrorListener } from './OnErrorListener.js';
-import { OnCompletionListener } from './OnCompletionListener.js';
-//import { MediaPlayerOnBufferingUpdateListener } from './MediaPlayerOnBufferingUpdateListener.js';
-//import { AndroidMediaPlayerOnBufferingUpdateListener } from './AndroidMediaPlayerOnBufferingUpdateListener.js';
-//import { MediaPlayerOnPreparedListener } from './MediaPlayerOnPreparedListener.js';
-//import { AndroidMediaPlayerOnPreparedListener } from './AndroidMediaPlayerOnPreparedListener.js';
-//import { MediaPlayerOnErrorListener } from './MediaPlayerOnErrorListener.js';
-//import { AndroidMediaPlayerOnErrorListener } from './AndroidMediaPlayerOnErrorListener.js';
-//import { MediaPlayerOnCompletionListener } from './MediaPlayerOnCompletionListener.js';
-//import { AndroidMediaPlayerOnCompletionListener } from './AndroidMediaPlayerOnCompletionListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.AndroidMediaPlayerWrapper;
 
+                import { OnBufferingUpdateListener } from './OnBufferingUpdateListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.OnBufferingUpdateListener;
+
+                import { OnPreparedListener } from './OnPreparedListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.OnPreparedListener;
+
+                import { OnErrorListener } from './OnErrorListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.OnErrorListener;
+
+                import { OnCompletionListener } from './OnCompletionListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.OnCompletionListener;
+
+                //import { MediaPlayerOnBufferingUpdateListener } from './MediaPlayerOnBufferingUpdateListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.MediaPlayerOnBufferingUpdateListener;
+
+                //import { AndroidMediaPlayerOnBufferingUpdateListener } from './AndroidMediaPlayerOnBufferingUpdateListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.AndroidMediaPlayerOnBufferingUpdateListener;
+
+                //import { MediaPlayerOnPreparedListener } from './MediaPlayerOnPreparedListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.MediaPlayerOnPreparedListener;
+
+                //import { AndroidMediaPlayerOnPreparedListener } from './AndroidMediaPlayerOnPreparedListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.AndroidMediaPlayerOnPreparedListener;
+
+                //import { MediaPlayerOnErrorListener } from './MediaPlayerOnErrorListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.MediaPlayerOnErrorListener;
+
+                //import { AndroidMediaPlayerOnErrorListener } from './AndroidMediaPlayerOnErrorListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.AndroidMediaPlayerOnErrorListener;
+
+                //import { MediaPlayerOnCompletionListener } from './MediaPlayerOnCompletionListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.MediaPlayerOnCompletionListener;
+
+                //import { AndroidMediaPlayerOnCompletionListener } from './AndroidMediaPlayerOnCompletionListener.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.AndroidMediaPlayerOnCompletionListener;
+
+                
 export class AndroidMediaPlayerWrapperListener
             extends Object
          {

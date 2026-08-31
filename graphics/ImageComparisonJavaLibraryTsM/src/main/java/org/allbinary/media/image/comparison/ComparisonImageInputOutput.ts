@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -87,10 +87,18 @@ import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/Im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
-import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
-import { ImageComparisonResult } from './ImageComparisonResult.js';
-import { ChangedPixelsUtil } from './ChangedPixelsUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultCacheSingleton;
 
+                import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultFrameCacheable;
+
+                import { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+
+                import { ChangedPixelsUtil } from './ChangedPixelsUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ChangedPixelsUtil;
+
+                
 export class ComparisonImageInputOutput
             extends Object
          implements ImageIOInterface {

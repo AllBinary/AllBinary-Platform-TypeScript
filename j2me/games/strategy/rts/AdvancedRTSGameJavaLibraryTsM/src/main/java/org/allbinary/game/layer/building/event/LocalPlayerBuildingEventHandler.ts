@@ -13,8 +13,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -54,7 +54,9 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingEventListenerInterface } from './BuildingEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.building.event.BuildingEventListenerInterface;
 
+                
 export class LocalPlayerBuildingEventHandler extends BasicEventHandler {
         
 

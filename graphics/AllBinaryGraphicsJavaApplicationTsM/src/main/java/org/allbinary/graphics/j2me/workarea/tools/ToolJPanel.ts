@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,15 +37,33 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { JButton } from './JButton.js';
-import { JList } from './JList.js';
-import { GridLayout } from './GridLayout.js';
-import { Font } from './Font.js';
-import { LinesGraphicItem } from './LinesGraphicItem.js';
-import { MouseAdapter } from './MouseAdapter.js';
-import { MouseEvent } from './MouseEvent.js';
-import { ToolFactory } from './ToolFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.JPanel;
 
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.JButton;
+
+                import { JList } from './JList.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.JList;
+
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GridLayout;
+
+                import { Font } from './Font.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Font;
+
+                import { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+
+                import { MouseAdapter } from './MouseAdapter.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseAdapter;
+
+                import { MouseEvent } from './MouseEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
+
+                import { ToolFactory } from './ToolFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.ToolFactory;
+
+                
 export class ToolJPanel extends javax.swing.JPanel {
         
 

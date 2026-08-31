@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -93,9 +93,15 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigsData } from './LogConfigsData.js';
-import { LogConfigData } from './LogConfigData.js';
-import { LogConfig } from './LogConfig.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfigsData;
 
+                import { LogConfigData } from './LogConfigData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfigData;
+
+                import { LogConfig } from './LogConfig.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.config.LogConfig;
+
+                
 export class LoggingInitInfo
             extends Object
          {

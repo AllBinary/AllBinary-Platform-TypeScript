@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -59,13 +59,27 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseRaceTrackGeographicMap } from './BaseRaceTrackGeographicMap.js';
-import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
-import { BasicGeographicMapFactory } from './BasicGeographicMapFactory.js';
-import { RaceTrackInfo } from './RaceTrackInfo.js';
-import { RaceTrackData } from './RaceTrackData.js';
-import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
-import { CustomMapGeneratorBaseFactory } from './CustomMapGeneratorBaseFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.BaseRaceTrackGeographicMap;
 
+                import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.CustomMapGeneratorBase;
+
+                import { BasicGeographicMapFactory } from './BasicGeographicMapFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.BasicGeographicMapFactory;
+
+                import { RaceTrackInfo } from './RaceTrackInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
+
+                import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+
+                import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.AllBinaryTiledLayerFactoryInterface;
+
+                import { CustomMapGeneratorBaseFactory } from './CustomMapGeneratorBaseFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.CustomMapGeneratorBaseFactory;
+
+                
 export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
         
 

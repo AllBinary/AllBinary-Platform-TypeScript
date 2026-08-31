@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -101,7 +101,9 @@ import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.sprite.SpriteIndexedAnimation;
 
+                
 export class ImageCaptionIndexedAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

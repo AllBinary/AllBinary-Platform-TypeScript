@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoAccelerometerSensor } from './NoAccelerometerSensor.js';
+//not GWT import const  = globalThis.org.allbinary.input.accelerometer.NoAccelerometerSensor;
 
+                
 export class AccelerometerSensorFactory
             extends Object
          {

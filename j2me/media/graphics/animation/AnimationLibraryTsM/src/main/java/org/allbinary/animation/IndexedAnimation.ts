@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -63,9 +63,15 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Animation } from './Animation.js';
-import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
-import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.Animation;
 
+                import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimationInterface;
+
+                import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
+
+                
 export class IndexedAnimation extends Animation implements IndexedAnimationInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -43,9 +43,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbPath } from './AbPath.js';
-import { AbPathData } from './AbPathData.js';
-import { PathUtil } from './PathUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.path.AbPath;
 
+                //not plain js import { AbPathData } from './AbPathData.js';
+const  = globalThis.org.allbinary.logic.io.path.AbPathData;
+
+                import { PathUtil } from './PathUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.path.PathUtil;
+
+                
 export class AbFilePath extends AbPath {
         
 

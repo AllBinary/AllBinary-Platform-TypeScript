@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -25,8 +25,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathParser } from './PathParser.js';
-import { FixedPoint } from './FixedPoint.js';
+//not GWT import const  = globalThis.org.allbinary.animation.PathParser;
 
+                import { FixedPoint } from './FixedPoint.js';
+//not GWT import const  = globalThis.org.allbinary.animation.FixedPoint;
+
+                
 export class PolygonRasterizer
             extends Object
          {

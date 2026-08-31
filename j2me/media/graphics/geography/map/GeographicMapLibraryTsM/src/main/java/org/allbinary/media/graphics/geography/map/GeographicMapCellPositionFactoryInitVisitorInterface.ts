@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -43,7 +43,9 @@ import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
+                
 export interface GeographicMapCellPositionFactoryInitVisitorInterface {
         
 

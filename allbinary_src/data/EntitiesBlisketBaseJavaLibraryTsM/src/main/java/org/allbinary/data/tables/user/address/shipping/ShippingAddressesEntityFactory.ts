@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingAddressesEntity } from './ShippingAddressesEntity.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.user.address.shipping.ShippingAddressesEntity;
 
+                
 export class ShippingAddressesEntityFactory
             extends Object
          {

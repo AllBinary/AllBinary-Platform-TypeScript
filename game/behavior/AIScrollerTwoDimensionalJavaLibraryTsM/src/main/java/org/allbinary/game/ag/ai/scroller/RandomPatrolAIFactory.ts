@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -61,7 +61,9 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RandomPatrolAI } from './RandomPatrolAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.scroller.RandomPatrolAI;
 
+                
 export class RandomPatrolAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

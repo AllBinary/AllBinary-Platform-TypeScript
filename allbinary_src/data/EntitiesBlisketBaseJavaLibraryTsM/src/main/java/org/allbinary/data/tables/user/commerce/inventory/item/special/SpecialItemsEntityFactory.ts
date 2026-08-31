@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -49,7 +49,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialItemsEntity } from './SpecialItemsEntity.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.user.commerce.inventory.item.special.SpecialItemsEntity;
 
+                
 export class SpecialItemsEntityFactory
             extends Object
          {

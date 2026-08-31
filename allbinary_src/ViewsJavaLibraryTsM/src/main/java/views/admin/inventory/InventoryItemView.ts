@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -135,7 +135,9 @@ import { HttpStoreComponentView } from '../../../views/business/context/modules/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryUploadMediaUtil } from './InventoryUploadMediaUtil.js';
+//not GWT import const  = globalThis.views.admin.inventory.InventoryUploadMediaUtil;
 
+                
 export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         
 

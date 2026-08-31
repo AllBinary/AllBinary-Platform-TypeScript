@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -73,15 +73,33 @@ import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-import { Dimension } from './Dimension.js';
-import { JTextField } from './JTextField.js';
-import { Frame } from './Frame.js';
-import { JButton } from './JButton.js';
-import { GridLayout } from './GridLayout.js';
-import { JLabel } from './JLabel.js';
-import { WindowAdapter } from './WindowAdapter.js';
-import { WindowEvent } from './WindowEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JDialog;
 
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.Dimension;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JTextField;
+
+                import { Frame } from './Frame.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.Frame;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JButton;
+
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.GridLayout;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JLabel;
+
+                import { WindowAdapter } from './WindowAdapter.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.WindowAdapter;
+
+                import { WindowEvent } from './WindowEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.WindowEvent;
+
+                
 export class NewWorkAreaJDialog extends javax.swing.JDialog {
         
 

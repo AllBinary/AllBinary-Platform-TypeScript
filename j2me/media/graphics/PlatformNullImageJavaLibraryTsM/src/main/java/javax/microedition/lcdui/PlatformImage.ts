@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -53,9 +53,15 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullImage } from './NullImage.js';
-import { Image } from './Image.js';
-import { Graphics } from './Graphics.js';
-//PlatformNullImageJavaLibrary
+//not GWT import const  = globalThis.javax.microedition.lcdui.NullImage;
+
+                //not plain js import { Image } from './Image.js';
+const  = globalThis.javax.microedition.lcdui.Image;
+
+                //not plain js import { Graphics } from './Graphics.js';
+const  = globalThis.javax.microedition.lcdui.Graphics;
+
+                //PlatformNullImageJavaLibrary
 export class PlatformImage
             extends Object
          {

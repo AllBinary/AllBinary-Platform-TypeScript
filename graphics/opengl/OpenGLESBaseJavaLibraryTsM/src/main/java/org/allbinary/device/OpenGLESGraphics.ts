@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -55,8 +55,12 @@ import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/open
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsInterface } from './GraphicsInterface.js';
-import { NullGL10 } from './NullGL10.js';
+//not GWT import const  = globalThis.org.allbinary.device.GraphicsInterface;
 
+                import { NullGL10 } from './NullGL10.js';
+//not GWT import const  = globalThis.org.allbinary.device.NullGL10;
+
+                
 export class OpenGLESGraphics extends Graphics implements OpenGLSurfaceChangedInterface, GraphicsInterface {
         
 

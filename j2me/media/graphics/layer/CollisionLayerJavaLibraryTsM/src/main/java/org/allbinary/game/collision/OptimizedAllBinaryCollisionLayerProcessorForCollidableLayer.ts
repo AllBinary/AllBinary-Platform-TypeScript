@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -59,8 +59,12 @@ import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OptimizedAllBinaryCollisionLayerManager } from './OptimizedAllBinaryCollisionLayerManager.js';
-import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.OptimizedAllBinaryCollisionLayerManager;
 
+                import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
+
+                
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {
         
 

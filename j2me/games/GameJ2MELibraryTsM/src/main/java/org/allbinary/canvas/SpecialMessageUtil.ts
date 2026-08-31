@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameStatisticsFactory } from './GameStatisticsFactory.js';
+//not GWT import const  = globalThis.org.allbinary.canvas.GameStatisticsFactory;
 
+                
 export class SpecialMessageUtil
             extends Object
          {

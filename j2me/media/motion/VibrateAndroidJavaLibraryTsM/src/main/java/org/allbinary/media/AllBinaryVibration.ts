@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Context } from '../../../android/content/Context.js';
@@ -53,8 +53,12 @@ import { GameConfigurationCentral } from '../../../org/allbinary/game/configurat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryVibrationME } from './AllBinaryVibrationME.js';
-import { AllBinaryNoVibration } from './AllBinaryNoVibration.js';
+//not GWT import const  = globalThis.org.allbinary.media.AllBinaryVibrationME;
 
+                import { AllBinaryNoVibration } from './AllBinaryNoVibration.js';
+//not GWT import const  = globalThis.org.allbinary.media.AllBinaryNoVibration;
+
+                
 export class AllBinaryVibration extends AllBinaryVibrationME {
         
 

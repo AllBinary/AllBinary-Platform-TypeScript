@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -61,7 +61,9 @@ import { RequestParams } from '../../../../../../../org/allbinary/logic/communic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Item } from './Item.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.Item;
 
+                
 export class ItemFactoryUnused
             extends Object
          {

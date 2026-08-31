@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -99,7 +99,9 @@ import { CustomizerUtil } from '../../../../../../../../views/business/context/m
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopBarView } from './TopBarView.js';
+//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.hedges.header.TopBarView;
 
+                
 export class InsertHeaderValidationView extends TopBarView implements ValidationComponentInterface {
         
 

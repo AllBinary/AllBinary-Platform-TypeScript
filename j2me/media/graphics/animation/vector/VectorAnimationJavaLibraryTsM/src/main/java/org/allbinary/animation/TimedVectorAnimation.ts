@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
@@ -49,8 +49,12 @@ import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimation } from './VectorAnimation.js';
-import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimation;
 
+                import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
+
+                
 export class TimedVectorAnimation extends VectorAnimation {
         
 

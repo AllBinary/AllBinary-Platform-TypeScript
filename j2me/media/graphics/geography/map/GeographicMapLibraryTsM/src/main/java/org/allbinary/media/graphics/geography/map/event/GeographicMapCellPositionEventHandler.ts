@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -67,8 +67,12 @@ import { BasicEventHandler } from '../../../../../../../org/allbinary/logic/util
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
-import { GeographicMapCellPositionEventListenerInterface } from './GeographicMapCellPositionEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEvent;
 
+                import { GeographicMapCellPositionEventListenerInterface } from './GeographicMapCellPositionEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.event.GeographicMapCellPositionEventListenerInterface;
+
+                
 export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
         
 

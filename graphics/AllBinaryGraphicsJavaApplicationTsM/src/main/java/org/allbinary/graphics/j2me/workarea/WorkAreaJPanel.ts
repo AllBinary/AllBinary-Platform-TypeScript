@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -125,17 +125,39 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { WorkAreaJPanelInterface } from './WorkAreaJPanelInterface.js';
-import { WorkAreaJTreeJPanel } from './WorkAreaJTreeJPanel.js';
-import { Component } from './Component.js';
-import { Dimension } from './Dimension.js';
-import { WorkAreaDom } from './WorkAreaDom.js';
-import { GridLayout } from './GridLayout.js';
-import { GridBagLayout } from './GridBagLayout.js';
-import { GridBagConstraints } from './GridBagConstraints.js';
-import { KeyAdapter } from './KeyAdapter.js';
-import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.JPanel;
 
+                import { WorkAreaJPanelInterface } from './WorkAreaJPanelInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJPanelInterface;
+
+                import { WorkAreaJTreeJPanel } from './WorkAreaJTreeJPanel.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaJTreeJPanel;
+
+                import { Component } from './Component.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.Component;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.Dimension;
+
+                import { WorkAreaDom } from './WorkAreaDom.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.WorkAreaDom;
+
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.GridLayout;
+
+                import { GridBagLayout } from './GridBagLayout.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.GridBagLayout;
+
+                import { GridBagConstraints } from './GridBagConstraints.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.GridBagConstraints;
+
+                import { KeyAdapter } from './KeyAdapter.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.KeyAdapter;
+
+                import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.KeyEvent;
+
+                
 export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, MyCanvasEventListener, EventListener, Runnable {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -43,9 +43,15 @@ import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SensorGameUpdateProcessor } from './SensorGameUpdateProcessor.js';
-import { AccelerometerSensorUpdateProcessor } from './AccelerometerSensorUpdateProcessor.js';
-import { GyroSensorUpdateProcessor } from './GyroSensorUpdateProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.input.gyro.SensorGameUpdateProcessor;
 
+                import { AccelerometerSensorUpdateProcessor } from './AccelerometerSensorUpdateProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.input.gyro.AccelerometerSensorUpdateProcessor;
+
+                import { GyroSensorUpdateProcessor } from './GyroSensorUpdateProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.input.gyro.GyroSensorUpdateProcessor;
+
+                
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
         
 

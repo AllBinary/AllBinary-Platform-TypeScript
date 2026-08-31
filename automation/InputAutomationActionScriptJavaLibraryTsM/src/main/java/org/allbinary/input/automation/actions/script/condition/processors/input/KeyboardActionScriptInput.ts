@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -99,11 +99,21 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
-import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
-import { KeyboardActionScriptInputJPanel } from './KeyboardActionScriptInputJPanel.js';
-import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-import { KeyboardInputAutomationProcessor } from './KeyboardInputAutomationProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.BasicProfileActionScriptInput;
 
+                import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputInterface;
+
+                import { KeyboardActionScriptInputJPanel } from './KeyboardActionScriptInputJPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputJPanel;
+
+                import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputData;
+
+                import { KeyboardInputAutomationProcessor } from './KeyboardInputAutomationProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardInputAutomationProcessor;
+
+                
 export class KeyboardActionScriptInput extends BasicProfileActionScriptInput implements KeyboardActionScriptInputInterface {
         
 

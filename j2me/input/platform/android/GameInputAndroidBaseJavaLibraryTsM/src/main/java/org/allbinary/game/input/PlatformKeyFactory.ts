@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -29,10 +29,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ActivityFractureControllerUtilFactory } from './ActivityFractureControllerUtilFactory.js';
-import { AndroidKeyFactory } from './AndroidKeyFactory.js';
-import { AndroidGameKey } from './AndroidGameKey.js';
-import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.ActivityFractureControllerUtilFactory;
 
+                import { AndroidKeyFactory } from './AndroidKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidKeyFactory;
+
+                import { AndroidGameKey } from './AndroidGameKey.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidGameKey;
+
+                import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+
+                
 export class PlatformKeyFactory
             extends Object
          {

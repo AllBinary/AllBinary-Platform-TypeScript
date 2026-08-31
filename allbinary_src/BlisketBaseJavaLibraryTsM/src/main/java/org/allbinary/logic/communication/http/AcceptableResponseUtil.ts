@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponseFactory } from './AcceptableResponseFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.AcceptableResponseFactory;
 
+                
 export class AcceptableResponseUtil
             extends Object
          {

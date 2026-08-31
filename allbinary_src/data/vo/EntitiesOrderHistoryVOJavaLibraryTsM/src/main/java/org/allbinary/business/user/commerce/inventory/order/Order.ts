@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -97,9 +97,15 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderInterface } from './OrderInterface.js';
-import { OrderHistoryData } from './OrderHistoryData.js';
-import { OrderData } from './OrderData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderInterface;
 
+                import { OrderHistoryData } from './OrderHistoryData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+
+                import { OrderData } from './OrderData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+
+                
 export class Order
             extends Object
          implements OrderInterface, Serializable {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
@@ -41,7 +41,9 @@ import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
+//not GWT import const  = globalThis.admin.tags.TableTag;
 
+                
 export class LogTag extends TableTag {
         
 

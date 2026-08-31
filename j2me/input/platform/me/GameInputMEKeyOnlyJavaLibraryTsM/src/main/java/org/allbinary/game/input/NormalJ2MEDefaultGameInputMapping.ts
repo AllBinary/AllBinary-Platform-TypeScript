@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
@@ -49,7 +49,9 @@ import { PersistentInputMapping } from '../../../../org/allbinary/game/input/map
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyFactory } from './GameKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameKeyFactory;
 
+                
 export class NormalJ2MEDefaultGameInputMapping extends PersistentInputMapping {
         
 

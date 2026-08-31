@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -73,9 +73,15 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
-import { TransformInfoData } from './TransformInfoData.js';
-import { TransformInfo } from './TransformInfo.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoInterface;
 
+                import { TransformInfoData } from './TransformInfoData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfoData;
+
+                import { TransformInfo } from './TransformInfo.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.TransformInfo;
+
+                
 export class TransformInfoDomNode
             extends Object
          {

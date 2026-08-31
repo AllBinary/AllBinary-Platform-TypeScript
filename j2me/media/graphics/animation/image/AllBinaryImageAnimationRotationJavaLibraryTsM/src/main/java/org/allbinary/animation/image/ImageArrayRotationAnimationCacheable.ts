@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -55,8 +55,12 @@ import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/C
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AdjustedImageArrayRotationAnimation;
 
+                import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
+
+                
 export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {
         
 

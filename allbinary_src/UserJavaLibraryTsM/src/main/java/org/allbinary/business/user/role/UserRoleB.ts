@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -51,9 +51,15 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserRole } from './UserRole.js';
-import { BasicUserRole } from './BasicUserRole.js';
-import { UserRoleFactory } from './UserRoleFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.role.UserRole;
 
+                import { BasicUserRole } from './BasicUserRole.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.role.BasicUserRole;
+
+                import { UserRoleFactory } from './UserRoleFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.role.UserRoleFactory;
+
+                
 export class UserRoleB extends UserRole {
         
 

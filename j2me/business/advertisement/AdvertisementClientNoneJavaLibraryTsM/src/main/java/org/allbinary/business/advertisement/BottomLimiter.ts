@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/display
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactory } from './GameAdStateFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.GameAdStateFactory;
 
+                
 export class BottomLimiter
             extends Object
          {

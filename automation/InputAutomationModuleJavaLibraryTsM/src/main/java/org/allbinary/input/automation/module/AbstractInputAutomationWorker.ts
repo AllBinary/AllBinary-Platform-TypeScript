@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -77,7 +77,9 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationActionInterface } from './InputAutomationActionInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.InputAutomationActionInterface;
 
+                
 export class AbstractInputAutomationWorker
             extends Object
          implements RunnableInterface {

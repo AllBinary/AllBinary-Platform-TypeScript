@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@ import { awt } from '../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.Point;
 
+                
 export class PointFactory
             extends Object
          {

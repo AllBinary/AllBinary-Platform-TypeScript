@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -71,13 +71,27 @@ import { PointHelper } from '../../../../../org/allbinary/input/automation/Point
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-import { Robot } from './Robot.js';
-import { GraphicsDevice } from './GraphicsDevice.js';
-import { MouseInfo } from './MouseInfo.js';
-import { Point } from './Point.js';
-import { Rectangle } from './Rectangle.js';
-import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
+                import { Robot } from './Robot.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Robot;
+
+                import { GraphicsDevice } from './GraphicsDevice.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.GraphicsDevice;
+
+                import { MouseInfo } from './MouseInfo.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.MouseInfo;
+
+                import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Point;
+
+                import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Rectangle;
+
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Color;
+
+                
 export class InputRobot
             extends Object
          implements InputRobotInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -59,8 +59,12 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorBaseRotationAnimation } from './VectorBaseRotationAnimation.js';
-import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorBaseRotationAnimation;
 
+                import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
+
+                
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
 

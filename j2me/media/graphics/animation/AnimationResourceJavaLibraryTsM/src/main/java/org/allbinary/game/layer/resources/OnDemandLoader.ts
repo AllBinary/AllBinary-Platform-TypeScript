@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -81,8 +81,12 @@ import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OnDemandResourcesFactory } from './OnDemandResourcesFactory.js';
-import { OnDemandResources } from './OnDemandResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.resources.OnDemandResourcesFactory;
 
+                import { OnDemandResources } from './OnDemandResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.resources.OnDemandResources;
+
+                
 export class OnDemandLoader
             extends Object
          {

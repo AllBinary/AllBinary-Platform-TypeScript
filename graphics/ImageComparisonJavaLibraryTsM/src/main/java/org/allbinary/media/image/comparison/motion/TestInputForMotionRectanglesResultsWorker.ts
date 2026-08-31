@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -95,10 +95,18 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
-import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-import { MotionRectangles } from './MotionRectangles.js';
-import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsListener;
 
+                import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
+
+                import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
+
+                import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
+
+                
 export class TestInputForMotionRectanglesResultsWorker
             extends Object
          implements MotionRectanglesResultsListener {

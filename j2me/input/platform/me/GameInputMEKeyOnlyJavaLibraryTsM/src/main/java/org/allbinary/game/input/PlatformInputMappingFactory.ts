@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { PersistentInputMapping } from '../../../../org/allbinary/game/input/map
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NormalJ2MEGameInputMapping } from './NormalJ2MEGameInputMapping.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.NormalJ2MEGameInputMapping;
 
+                
 export class PlatformInputMappingFactory
             extends Object
          {

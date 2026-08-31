@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -61,9 +61,15 @@ import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
-import { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
 
+                import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageJ2SEUtil;
+
+                //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+const  = globalThis.org.allbinary.media.image.ImageCreationUtil;
+
+                
 export class ImageScaleUtil
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
@@ -41,9 +41,15 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableNeverCollideBehavior } from './CollidableNeverCollideBehavior.js';
-import { CollisionTypeFactory } from './CollisionTypeFactory.js';
-import { CollisionType } from './CollisionType.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableNeverCollideBehavior;
 
+                import { CollisionTypeFactory } from './CollisionTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionTypeFactory;
+
+                import { CollisionType } from './CollisionType.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionType;
+
+                
 export class CollidableAlwaysPickupNeverCollideBehavior extends CollidableNeverCollideBehavior {
         
 

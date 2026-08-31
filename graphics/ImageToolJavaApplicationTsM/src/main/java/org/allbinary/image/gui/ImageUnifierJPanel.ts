@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -119,25 +119,63 @@ import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { ImageIconUnique } from './ImageIconUnique.js';
-import { DefaultListModel } from './DefaultListModel.js';
-import { ImageIcon } from './ImageIcon.js';
-import { Icon } from './Icon.js';
-import { JLabel } from './JLabel.js';
-import { JScrollPane } from './JScrollPane.js';
-import { JList } from './JList.js';
-import { JButton } from './JButton.js';
-import { JTextField } from './JTextField.js';
-import { Dimension } from './Dimension.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { PropertyChangeListener } from './PropertyChangeListener.js';
-import { PropertyChangeEvent } from './PropertyChangeEvent.js';
-import { KeyAdapter } from './KeyAdapter.js';
-import { KeyEvent } from './KeyEvent.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
 
+                import { ImageIconUnique } from './ImageIconUnique.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ImageIconUnique;
+
+                import { DefaultListModel } from './DefaultListModel.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.DefaultListModel;
+
+                import { ImageIcon } from './ImageIcon.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ImageIcon;
+
+                import { Icon } from './Icon.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Icon;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+
+                import { JScrollPane } from './JScrollPane.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JScrollPane;
+
+                import { JList } from './JList.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JList;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JTextField;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Dimension;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+
+                import { PropertyChangeListener } from './PropertyChangeListener.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.PropertyChangeListener;
+
+                import { PropertyChangeEvent } from './PropertyChangeEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.PropertyChangeEvent;
+
+                import { KeyAdapter } from './KeyAdapter.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.KeyAdapter;
+
+                import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.KeyEvent;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+
+                
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 

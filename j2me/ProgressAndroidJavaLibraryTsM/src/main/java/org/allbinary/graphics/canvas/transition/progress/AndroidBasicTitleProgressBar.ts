@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -151,11 +151,21 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressCanvas } from './ProgressCanvas.js';
-import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
-import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
-import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
-import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 
+                import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ShowTitleProgressBarRunnable;
+
+                import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.DismissTitleProgressBarRunnable;
+
+                import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarSetProgressRunnable;
+
+                import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.TitleProgressBarPortionSetProgressRunnable;
+
+                
 export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {
         
 

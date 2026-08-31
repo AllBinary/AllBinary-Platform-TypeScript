@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MathVectorInterface } from './MathVectorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.math.vector.MathVectorInterface;
 
+                
 export class MathVector
             extends Object
          implements MathVectorInterface {

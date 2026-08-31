@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -75,7 +75,9 @@ import { MotionRecognizer } from '../../../../../../org/allbinary/input/motion/M
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputMotionInfoAPI5 } from './GameInputMotionInfoAPI5.js';
+//not GWT import const  = globalThis.org.allbinary.android.input.motion.api5.GameInputMotionInfoAPI5;
 
+                
 export class GameInputMotionEventProcessorAPI5 extends BaseGameInputMotionEventProcessor {
         
 

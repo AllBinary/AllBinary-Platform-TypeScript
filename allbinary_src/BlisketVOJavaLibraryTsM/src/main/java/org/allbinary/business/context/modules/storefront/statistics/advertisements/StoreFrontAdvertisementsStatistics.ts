@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { StoreFrontInterface } from '../../../../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontAdvertisementsStatisticsInterface } from './StoreFrontAdvertisementsStatisticsInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.advertisements.StoreFrontAdvertisementsStatisticsInterface;
 
+                
 export class StoreFrontAdvertisementsStatistics
             extends Object
          implements StoreFrontAdvertisementsStatisticsInterface {

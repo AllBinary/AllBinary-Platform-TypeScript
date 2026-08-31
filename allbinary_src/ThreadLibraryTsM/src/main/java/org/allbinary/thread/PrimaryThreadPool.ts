@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { System } from '../../../java/lang/System.js';
@@ -49,7 +49,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThreadPool } from './ThreadPool.js';
+//not GWT import const  = globalThis.org.allbinary.thread.ThreadPool;
 
+                
 export class PrimaryThreadPool extends ThreadPool {
         
 

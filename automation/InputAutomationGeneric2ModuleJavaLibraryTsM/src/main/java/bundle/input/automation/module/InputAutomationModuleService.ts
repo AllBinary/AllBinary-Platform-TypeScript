@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@ import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleServiceInterface } from './InputAutomationModuleServiceInterface.js';
+//not GWT import const  = globalThis.bundle.input.automation.module.InputAutomationModuleServiceInterface;
 
+                
 export class InputAutomationModuleService
             extends Object
          implements InputAutomationModuleServiceInterface {

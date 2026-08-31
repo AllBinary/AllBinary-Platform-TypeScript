@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
@@ -57,7 +57,9 @@ import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogTableEntityInterface } from './LogTableEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.log.LogTableEntityInterface;
 
+                
 export class LogTableEntity extends AbSqlBean implements LogTableEntityInterface {
         
 

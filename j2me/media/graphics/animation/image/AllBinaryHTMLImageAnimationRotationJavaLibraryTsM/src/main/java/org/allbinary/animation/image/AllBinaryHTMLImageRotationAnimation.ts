@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -83,9 +83,15 @@ import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
-import { AlphaProcessor } from './AlphaProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
 
+                import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaBaseProcessor;
+
+                import { AlphaProcessor } from './AlphaProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaProcessor;
+
+                
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

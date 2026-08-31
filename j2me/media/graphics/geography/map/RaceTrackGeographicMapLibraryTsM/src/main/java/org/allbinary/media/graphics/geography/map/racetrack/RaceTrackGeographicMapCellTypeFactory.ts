@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
@@ -45,8 +45,12 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapCellType } from './RaceTrackGeographicMapCellType.js';
-import { RaceTrackGeographicMapCellTypes } from './RaceTrackGeographicMapCellTypes.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellType;
 
+                import { RaceTrackGeographicMapCellTypes } from './RaceTrackGeographicMapCellTypes.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellTypes;
+
+                
 export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -69,7 +69,9 @@ import { BooleanUtil } from '../../../../org/allbinary/logic/java/bool/BooleanUt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitInfoEntity } from './InitInfoEntity.js';
+//not GWT import const  = globalThis.org.allbinary.business.init.InitInfoEntity;
 
+                
 export class InitInfo
             extends Object
          {

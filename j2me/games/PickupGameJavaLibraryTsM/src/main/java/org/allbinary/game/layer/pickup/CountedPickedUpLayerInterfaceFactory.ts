@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -79,12 +79,24 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactory } from './PickedUpLayerInterfaceFactory.js';
-import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
-import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
-import { IconLayer } from './IconLayer.js';
-import { CountedPickedUpLayerInterfaceFactoryPool } from './CountedPickedUpLayerInterfaceFactoryPool.js';
-import { PickedUpLayerType } from './PickedUpLayerType.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactory;
 
+                import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactoryInterface;
+
+                import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerTypeFactory;
+
+                import { IconLayer } from './IconLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.IconLayer;
+
+                import { CountedPickedUpLayerInterfaceFactoryPool } from './CountedPickedUpLayerInterfaceFactoryPool.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.CountedPickedUpLayerInterfaceFactoryPool;
+
+                import { PickedUpLayerType } from './PickedUpLayerType.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
+
+                
 export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements CountedPickedUpLayerInterfaceFactoryInterface {
         
 

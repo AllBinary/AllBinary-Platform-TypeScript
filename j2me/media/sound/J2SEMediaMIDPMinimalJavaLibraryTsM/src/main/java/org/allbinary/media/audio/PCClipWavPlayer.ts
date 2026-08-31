@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -113,10 +113,18 @@ import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPoo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlayer } from './BasicPlayer.js';
-import { NullAudioFormat } from './NullAudioFormat.js';
-import { NullClip } from './NullClip.js';
-import { NullControl } from './NullControl.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.BasicPlayer;
 
+                import { NullAudioFormat } from './NullAudioFormat.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NullAudioFormat;
+
+                import { NullClip } from './NullClip.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NullClip;
+
+                import { NullControl } from './NullControl.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NullControl;
+
+                
 export class PCClipWavPlayer extends BasicPlayer implements LineListener {
         
 

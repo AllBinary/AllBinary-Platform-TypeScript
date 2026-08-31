@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Enumeration } from '../../../../../../../java/util/Enumeration.js';
@@ -65,7 +65,9 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlatormGeographicMapCellType } from './BasicPlatormGeographicMapCellType.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.platform.BasicPlatormGeographicMapCellType;
 
+                
 export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 

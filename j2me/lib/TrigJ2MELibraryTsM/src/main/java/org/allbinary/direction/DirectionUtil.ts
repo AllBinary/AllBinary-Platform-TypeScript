@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -59,8 +59,12 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DirectionFactory } from './DirectionFactory.js';
-import { Direction } from './Direction.js';
+//not GWT import const  = globalThis.org.allbinary.direction.DirectionFactory;
 
+                import { Direction } from './Direction.js';
+//not GWT import const  = globalThis.org.allbinary.direction.Direction;
+
+                
 export class DirectionUtil
             extends Object
          {

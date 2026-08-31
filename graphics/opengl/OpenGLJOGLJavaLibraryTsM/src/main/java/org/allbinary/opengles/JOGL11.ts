@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GL } from '../../../com/jogamp/opengl/GL.js';
@@ -45,10 +45,18 @@ import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL11 } from './GL11.js';
-import { Buffer } from './Buffer.js';
-import { FloatBuffer } from './FloatBuffer.js';
-import { IntBuffer } from './IntBuffer.js';
-//JOGLEToKhronosGL11
+//not GWT import const  = globalThis.org.allbinary.opengles.GL11;
+
+                import { Buffer } from './Buffer.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.Buffer;
+
+                import { FloatBuffer } from './FloatBuffer.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.FloatBuffer;
+
+                import { IntBuffer } from './IntBuffer.js';
+//not GWT import const  = globalThis.org.allbinary.opengles.IntBuffer;
+
+                //JOGLEToKhronosGL11
 export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengles.GL11 {
         
 

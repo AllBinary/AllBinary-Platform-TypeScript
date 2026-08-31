@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { TableMappingInterface } from '../../../../../../../org/allbinary/data/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailConfigurationInterface } from './UserEmailConfigurationInterface.js';
-import { UserEmailConfigurationData } from './UserEmailConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
 
+                import { UserEmailConfigurationData } from './UserEmailConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationData;
+
+                
 export class UserEmailConfigurationMapping
             extends Object
          implements TableMappingInterface {

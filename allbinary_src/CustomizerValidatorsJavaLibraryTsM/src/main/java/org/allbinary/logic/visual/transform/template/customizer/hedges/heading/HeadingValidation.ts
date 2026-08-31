@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -91,7 +91,9 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HeadingData } from './HeadingData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.template.customizer.hedges.heading.HeadingData;
 
+                
 export class HeadingValidation extends Validation implements DomNodeInterface {
         
 

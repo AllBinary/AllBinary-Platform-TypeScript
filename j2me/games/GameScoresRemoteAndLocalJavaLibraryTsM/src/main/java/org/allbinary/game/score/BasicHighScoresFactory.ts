@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -87,14 +87,30 @@ import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryT
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-import { HighScores } from './HighScores.js';
-import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-import { RecordStoreHighScores } from './RecordStoreHighScores.js';
-import { ScoreComparator } from './ScoreComparator.js';
-import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
-import { HighScoresHelper2 } from './HighScoresHelper2.js';
-import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresBase;
 
+                import { HighScores } from './HighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+
+                import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+
+                import { RecordStoreHighScores } from './RecordStoreHighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.RecordStoreHighScores;
+
+                import { ScoreComparator } from './ScoreComparator.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.ScoreComparator;
+
+                import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.LastFetchHighScoresFactory;
+
+                import { HighScoresHelper2 } from './HighScoresHelper2.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelper2;
+
+                import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+
+                
 export class BasicHighScoresFactory extends HighScoresBase {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
@@ -45,7 +45,9 @@ import { IOException } from '../../../../java/io/IOException.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageProcessorInputCompositeInterface } from './ImageProcessorInputCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageProcessorInputCompositeInterface;
 
+                
 export interface ImageProcessedVisitor extends ImageProcessorInputCompositeInterface {
         
 

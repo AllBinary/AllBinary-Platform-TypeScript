@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -81,8 +81,12 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemInterface } from './ItemInterface.js';
-import { BasicItemData } from './BasicItemData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.ItemInterface;
 
+                import { BasicItemData } from './BasicItemData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItemData;
+
+                
 export class BasicItemView
             extends Object
          implements DomNodeInterface {

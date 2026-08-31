@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -71,9 +71,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
-import { Controllable2 } from './Controllable2.js';
-import { NullControl } from './NullControl.js';
-//BasicPlayerMIDP2JavaLibrary
+//not GWT import const  = globalThis.org.allbinary.media.audio.TimeBaseInterface;
+
+                import { Controllable2 } from './Controllable2.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.Controllable2;
+
+                import { NullControl } from './NullControl.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NullControl;
+
+                //BasicPlayerMIDP2JavaLibrary
 export class BasicPlayer
             extends Object
          implements Player, TimeBaseInterface, Controllable2 {

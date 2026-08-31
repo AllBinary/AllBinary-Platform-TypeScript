@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -63,7 +63,9 @@ import { Node } from '../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingAddressesView } from './ShippingAddressesView.js';
+//not GWT import const  = globalThis.views.generic.address.shipping.ShippingAddressesView;
 
+                
 export class ValidationView extends ShippingAddressesView implements ValidationComponentInterface {
         
 

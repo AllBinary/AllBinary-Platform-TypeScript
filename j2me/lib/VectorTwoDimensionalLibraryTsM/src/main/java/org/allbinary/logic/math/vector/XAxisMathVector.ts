@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
@@ -41,8 +41,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MathVector } from './MathVector.js';
-import { YAxisMathVectorUtil } from './YAxisMathVectorUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.math.vector.MathVector;
 
+                import { YAxisMathVectorUtil } from './YAxisMathVectorUtil.js';
+//not GWT import const  = globalThis.org.allbinary.logic.math.vector.YAxisMathVectorUtil;
+
+                
 export class XAxisMathVector extends MathVector {
         
 

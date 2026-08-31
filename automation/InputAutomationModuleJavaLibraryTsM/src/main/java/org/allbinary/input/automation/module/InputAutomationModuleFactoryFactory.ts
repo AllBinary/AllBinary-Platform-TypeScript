@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -89,8 +89,12 @@ import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/hel
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultListModelHelper } from './DefaultListModelHelper.js';
-import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.DefaultListModelHelper;
 
+                import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
+
+                
 export class InputAutomationModuleFactoryFactory
             extends Object
          {

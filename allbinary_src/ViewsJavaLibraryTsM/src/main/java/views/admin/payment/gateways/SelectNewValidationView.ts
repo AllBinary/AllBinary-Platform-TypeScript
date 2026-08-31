@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -59,7 +59,9 @@ import { HttpStoreComponentView } from '../../../../views/business/context/modul
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectNewView } from './SelectNewView.js';
+//not GWT import const  = globalThis.views.admin.payment.gateways.SelectNewView;
 
+                
 export class SelectNewValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         
 

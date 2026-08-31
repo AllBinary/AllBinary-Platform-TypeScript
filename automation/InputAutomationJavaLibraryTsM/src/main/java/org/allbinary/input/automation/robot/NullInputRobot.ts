@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -65,10 +65,18 @@ import { PointFactory } from '../../../../../org/allbinary/input/automation/Poin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputRobotInterface } from './InputRobotInterface.js';
-import { Point } from './Point.js';
-import { Rectangle } from './Rectangle.js';
-import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.InputRobotInterface;
 
+                import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Point;
+
+                import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Rectangle;
+
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.Color;
+
+                
 export class NullInputRobot extends AbstractInputRobot implements InputRobotInterface {
         
 

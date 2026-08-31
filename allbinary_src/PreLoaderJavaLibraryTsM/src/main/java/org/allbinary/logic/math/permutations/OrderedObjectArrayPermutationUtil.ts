@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ComparableObject } from './ComparableObject.js';
-import { ObjectPermutationVisitor } from './ObjectPermutationVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.logic.math.permutations.ComparableObject;
 
+                import { ObjectPermutationVisitor } from './ObjectPermutationVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.logic.math.permutations.ObjectPermutationVisitor;
+
+                
 export class OrderedObjectArrayPermutationUtil
             extends Object
          {

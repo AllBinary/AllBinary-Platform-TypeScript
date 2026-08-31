@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
@@ -41,7 +41,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidGameStatistics } from './AndroidGameStatistics.js';
-//ActualPlatform
+//not GWT import const  = globalThis.org.allbinary.canvas.AndroidGameStatistics;
+
+                //ActualPlatform
 /*actual*/ export class GameStatisticsFactory extends AndroidGameStatistics {
         
 

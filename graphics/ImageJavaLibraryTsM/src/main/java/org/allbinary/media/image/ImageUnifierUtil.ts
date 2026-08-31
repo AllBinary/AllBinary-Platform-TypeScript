@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -55,12 +55,24 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-import { GraphicsEnvironment } from './GraphicsEnvironment.js';
-import { GraphicsDevice } from './GraphicsDevice.js';
-import { GraphicsConfiguration } from './GraphicsConfiguration.js';
-import { Graphics2D } from './Graphics2D.js';
-import { ImageUnifierProperties } from './ImageUnifierProperties.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
 
+                import { GraphicsEnvironment } from './GraphicsEnvironment.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.GraphicsEnvironment;
+
+                import { GraphicsDevice } from './GraphicsDevice.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.GraphicsDevice;
+
+                import { GraphicsConfiguration } from './GraphicsConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.GraphicsConfiguration;
+
+                import { Graphics2D } from './Graphics2D.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.Graphics2D;
+
+                import { ImageUnifierProperties } from './ImageUnifierProperties.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageUnifierProperties;
+
+                
 export class ImageUnifierUtil
             extends Object
          {

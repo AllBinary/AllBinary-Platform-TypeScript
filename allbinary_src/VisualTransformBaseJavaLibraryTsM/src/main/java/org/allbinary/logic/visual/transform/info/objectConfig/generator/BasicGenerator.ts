@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -41,7 +41,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
 
+                
 export class BasicGenerator extends TransformInfoObjectConfigGenerator {
         
 

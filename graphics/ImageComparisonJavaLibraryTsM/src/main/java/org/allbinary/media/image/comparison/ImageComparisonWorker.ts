@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -81,12 +81,24 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
-import { ImageComparator } from './ImageComparator.js';
-import { ImageComparisonResult } from './ImageComparisonResult.js';
-import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
-import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
-import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparatorConstraintsInterface;
 
+                import { ImageComparator } from './ImageComparator.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparator;
+
+                import { ImageComparisonResult } from './ImageComparisonResult.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResult;
+
+                import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultFrameCacheable;
+
+                import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultCacheSingleton;
+
+                import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
+
+                
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -77,7 +77,9 @@ import { NoHighScoresFactory } from '../../../../../org/allbinary/game/score/NoH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
+                
 export class NullGameCanvas extends AllBinaryGameCanvas {
         
 

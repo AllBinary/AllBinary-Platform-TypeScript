@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -59,8 +59,12 @@ import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicStoreFront } from './BasicStoreFront.js';
-import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFront;
 
+                import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefronts.BasicStoreFrontInterface;
+
+                
 export class BasicStoreFrontsEntity extends InitSql {
         
 

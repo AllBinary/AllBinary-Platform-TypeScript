@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -67,7 +67,9 @@ import { BasicTopViewGeographicMapCellTypeFactory } from '../../../../../org/all
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewGameLayerBehavior } from './TopViewGameLayerBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.TopViewGameLayerBehavior;
 
+                
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {
         
 

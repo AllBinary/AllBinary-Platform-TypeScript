@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -68,10 +68,16 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImmutableBasicArrayList } from './ImmutableBasicArrayList.js';
-import { BasicArrayList } from './BasicArrayList.js';
-import { BasicArrayListD } from './BasicArrayListD.js';
+        //not plain js import { ImmutableBasicArrayList } from './ImmutableBasicArrayList.js';
+const  = globalThis.org.allbinary.util.ImmutableBasicArrayList;
 
+                //not plain js import { BasicArrayList } from './BasicArrayList.js';
+const  = globalThis.org.allbinary.util.BasicArrayList;
+
+                //not plain js import { BasicArrayListD } from './BasicArrayListD.js';
+const  = globalThis.org.allbinary.util.BasicArrayListD;
+
+                
 export class BasicArrayListUtil
             extends Object
          {

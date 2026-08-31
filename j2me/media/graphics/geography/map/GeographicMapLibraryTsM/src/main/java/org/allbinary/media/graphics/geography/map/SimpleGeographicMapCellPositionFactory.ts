@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -39,9 +39,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
-import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactoryInterface;
 
+                import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                
 export class SimpleGeographicMapCellPositionFactory
             extends Object
          implements GeographicMapCellPositionFactoryInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -69,7 +69,9 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySensorListener } from './AllBinarySensorListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.AllBinarySensorListener;
 
+                
 export class AllBinarySensor
             extends Object
          implements AllBinarySensorListener {

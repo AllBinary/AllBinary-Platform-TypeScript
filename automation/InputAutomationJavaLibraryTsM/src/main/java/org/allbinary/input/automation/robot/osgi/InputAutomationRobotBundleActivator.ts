@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -83,8 +83,12 @@ import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotUtil } from './InputAutomationRobotUtil.js';
-import { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotUtil;
 
+                import { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.robot.osgi.InputAutomationRobotChangeEvent;
+
+                
 export class InputAutomationRobotBundleActivator
             extends Object
          implements BundleActivator {

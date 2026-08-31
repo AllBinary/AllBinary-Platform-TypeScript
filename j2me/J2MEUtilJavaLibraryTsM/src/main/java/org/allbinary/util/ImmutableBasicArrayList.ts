@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
@@ -40,8 +40,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicArrayListS } from './BasicArrayListS.js';
+        //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
+const  = globalThis.org.allbinary.util.BasicArrayListS;
 
+                
 export class ImmutableBasicArrayList extends BasicArrayListS {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -39,7 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapCellType } from './RaceTrackGeographicMapCellType.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapCellType;
 
+                
 export class RaceTrackGeographicMapCellTypes
             extends Object
          {

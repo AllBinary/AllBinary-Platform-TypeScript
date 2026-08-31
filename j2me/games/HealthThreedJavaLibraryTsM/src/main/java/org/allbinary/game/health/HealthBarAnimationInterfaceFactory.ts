@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthBarThreedAnimation } from './HealthBarThreedAnimation.js';
-import { HealthBarAnimation } from './HealthBarAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.game.health.HealthBarThreedAnimation;
 
+                import { HealthBarAnimation } from './HealthBarAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.game.health.HealthBarAnimation;
+
+                
 export class HealthBarAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {

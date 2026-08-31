@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -83,7 +83,9 @@ import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackDropCellPositionGenerator } from './RaceTrackDropCellPositionGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.drop.RaceTrackDropCellPositionGenerator;
 
+                
 export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         
 

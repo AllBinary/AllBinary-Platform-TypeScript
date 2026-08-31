@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -71,9 +71,15 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapInterface } from './RaceTrackGeographicMapInterface.js';
-import { RaceTrackInfo } from './RaceTrackInfo.js';
-import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMapInterface;
 
+                import { RaceTrackInfo } from './RaceTrackInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
+
+                import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+
+                
 export class BaseRaceTrackGeographicMap extends BasicGeographicMap implements RaceTrackGeographicMapInterface {
         
 

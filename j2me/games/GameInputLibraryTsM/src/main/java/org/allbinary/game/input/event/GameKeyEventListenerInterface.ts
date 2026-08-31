@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
@@ -41,9 +41,15 @@ import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownGameKeyEventListenerInterface } from './DownGameKeyEventListenerInterface.js';
-import { UpGameKeyEventListenerInterface } from './UpGameKeyEventListenerInterface.js';
-import { PressGameKeyEventListenerInterface } from './PressGameKeyEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.DownGameKeyEventListenerInterface;
 
+                import { UpGameKeyEventListenerInterface } from './UpGameKeyEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.UpGameKeyEventListenerInterface;
+
+                import { PressGameKeyEventListenerInterface } from './PressGameKeyEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.PressGameKeyEventListenerInterface;
+
+                
 export interface GameKeyEventListenerInterface extends DownGameKeyEventListenerInterface, UpGameKeyEventListenerInterface, PressGameKeyEventListenerInterface {
         
 

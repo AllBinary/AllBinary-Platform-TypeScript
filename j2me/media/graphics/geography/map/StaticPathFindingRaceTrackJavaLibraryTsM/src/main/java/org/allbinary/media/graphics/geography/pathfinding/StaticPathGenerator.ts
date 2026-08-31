@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -103,9 +103,15 @@ import { PathData } from '../../../../../../org/allbinary/media/graphics/geograp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathGeneratorInterface } from './PathGeneratorInterface.js';
-import { PathCacheFactory } from './PathCacheFactory.js';
-import { PathFindingInfo } from './PathFindingInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathGeneratorInterface;
 
+                import { PathCacheFactory } from './PathCacheFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathCacheFactory;
+
+                import { PathFindingInfo } from './PathFindingInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingInfo;
+
+                
 export class StaticPathGenerator
             extends Object
          implements PathGeneratorInterface {

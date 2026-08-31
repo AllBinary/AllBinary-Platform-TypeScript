@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -135,7 +135,9 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoreUtil } from './HighScoreUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.displayable.HighScoreUtil;
 
+                
 export class HighScoreTextBox extends CustomTextBox {
         
 

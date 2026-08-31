@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -49,9 +49,15 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
-import { NoPlayerGameInput } from './NoPlayerGameInput.js';
-import { PlayerGameInput } from './PlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInputCompositeInterface;
 
+                import { NoPlayerGameInput } from './NoPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.NoPlayerGameInput;
+
+                import { PlayerGameInput } from './PlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
+
+                
 export class NullPlayerGameInputComposite
             extends Object
          implements PlayerGameInputCompositeInterface {

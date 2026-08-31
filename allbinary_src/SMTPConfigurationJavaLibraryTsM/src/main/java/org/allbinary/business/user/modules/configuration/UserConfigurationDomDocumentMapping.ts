@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -57,8 +57,12 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
-import { UserConfigurationView } from './UserConfigurationView.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationInterface;
 
+                import { UserConfigurationView } from './UserConfigurationView.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.configuration.UserConfigurationView;
+
+                
 export class UserConfigurationDomDocumentMapping
             extends Object
          implements DomDocumentMappingInterface {

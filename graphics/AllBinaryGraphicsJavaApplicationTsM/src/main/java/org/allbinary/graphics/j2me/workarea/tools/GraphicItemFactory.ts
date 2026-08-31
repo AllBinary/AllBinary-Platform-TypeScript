@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -57,12 +57,24 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionToolFactory } from './SelectionToolFactory.js';
-import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
-import { LinesGraphicItem } from './LinesGraphicItem.js';
-import { LinesGraphicItemFactory } from './LinesGraphicItemFactory.js';
-import { GraphicItemBuilder } from './GraphicItemBuilder.js';
-import { GraphicItemInterface } from './GraphicItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.SelectionToolFactory;
 
+                import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicsItemInterfaceFactoryInterface;
+
+                import { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+
+                import { LinesGraphicItemFactory } from './LinesGraphicItemFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItemFactory;
+
+                import { GraphicItemBuilder } from './GraphicItemBuilder.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemBuilder;
+
+                import { GraphicItemInterface } from './GraphicItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
+
+                
 export class GraphicItemFactory
             extends Object
          {

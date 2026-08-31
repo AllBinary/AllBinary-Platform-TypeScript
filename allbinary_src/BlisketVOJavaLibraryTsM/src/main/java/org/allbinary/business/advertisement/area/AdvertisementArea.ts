@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -61,10 +61,18 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementAreaInterface } from './AdvertisementAreaInterface.js';
-import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
-import { AdvertisementAreaData } from './AdvertisementAreaData.js';
-import { AdvertisementAreaConstraints } from './AdvertisementAreaConstraints.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaInterface;
 
+                import { AdvertisementAreaConstraintsInterface } from './AdvertisementAreaConstraintsInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraintsInterface;
+
+                import { AdvertisementAreaData } from './AdvertisementAreaData.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaData;
+
+                import { AdvertisementAreaConstraints } from './AdvertisementAreaConstraints.js';
+//not GWT import const  = globalThis.org.allbinary.business.advertisement.area.AdvertisementAreaConstraints;
+
+                
 export class AdvertisementArea
             extends Object
          implements AdvertisementAreaInterface {

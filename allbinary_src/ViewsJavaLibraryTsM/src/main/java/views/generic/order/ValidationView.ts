@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -71,7 +71,9 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderView } from './OrderView.js';
+//not GWT import const  = globalThis.views.generic.order.OrderView;
 
+                
 export class ValidationView extends OrderView implements ValidationComponentInterface {
         
 

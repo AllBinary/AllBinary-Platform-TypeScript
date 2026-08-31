@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -85,8 +85,12 @@ import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayerCircularStaticPool } from './MineLayerCircularStaticPool.js';
-import { MineWeaponResources } from './MineWeaponResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineLayerCircularStaticPool;
 
+                import { MineWeaponResources } from './MineWeaponResources.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.weapon.mine.MineWeaponResources;
+
+                
 export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLayerInterfaceFactory {
         
 

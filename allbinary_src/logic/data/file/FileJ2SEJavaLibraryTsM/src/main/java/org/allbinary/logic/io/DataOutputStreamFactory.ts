@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -45,9 +45,15 @@ import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFileOutputStream } from './AbFileOutputStream.js';
-import { AbDataOutputStream } from './AbDataOutputStream.js';
-import { FileStreamFactory } from './FileStreamFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.AbFileOutputStream;
 
+                import { AbDataOutputStream } from './AbDataOutputStream.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.AbDataOutputStream;
+
+                import { FileStreamFactory } from './FileStreamFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.FileStreamFactory;
+
+                
 export class DataOutputStreamFactory
             extends Object
          {

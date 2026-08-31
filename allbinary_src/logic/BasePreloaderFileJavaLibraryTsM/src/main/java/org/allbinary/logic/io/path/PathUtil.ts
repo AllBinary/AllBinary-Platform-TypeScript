@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -52,10 +52,16 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbPathData } from './AbPathData.js';
-import { AbFilePath } from './AbFilePath.js';
-import { AbPath } from './AbPath.js';
-//Used to correct user input for paths
+        //not plain js import { AbPathData } from './AbPathData.js';
+const  = globalThis.org.allbinary.logic.io.path.AbPathData;
+
+                import { AbFilePath } from './AbFilePath.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.path.AbFilePath;
+
+                import { AbPath } from './AbPath.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.path.AbPath;
+
+                //Used to correct user input for paths
 export class PathUtil
             extends Object
          {

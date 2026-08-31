@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Font } from '../../../../../../javax/microedition/lcdui/Font.js';
@@ -61,7 +61,9 @@ import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.geological.resources.GeologicalGeographicMapCellPosition;
 
+                
 export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -71,13 +71,27 @@ import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workfl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HttpServlet } from './HttpServlet.js';
-import { ServletConfig } from './ServletConfig.js';
-import { PrintWriter } from './PrintWriter.js';
-import { ServletRequest } from './ServletRequest.js';
-import { ServletResponse } from './ServletResponse.js';
-import { HttpServletRequest } from './HttpServletRequest.js';
-import { HttpServletResponse } from './HttpServletResponse.js';
+//not GWT import const  = globalThis.servlet.request.HttpServlet;
 
+                import { ServletConfig } from './ServletConfig.js';
+//not GWT import const  = globalThis.servlet.request.ServletConfig;
+
+                import { PrintWriter } from './PrintWriter.js';
+//not GWT import const  = globalThis.servlet.request.PrintWriter;
+
+                import { ServletRequest } from './ServletRequest.js';
+//not GWT import const  = globalThis.servlet.request.ServletRequest;
+
+                import { ServletResponse } from './ServletResponse.js';
+//not GWT import const  = globalThis.servlet.request.ServletResponse;
+
+                import { HttpServletRequest } from './HttpServletRequest.js';
+//not GWT import const  = globalThis.servlet.request.HttpServletRequest;
+
+                import { HttpServletResponse } from './HttpServletResponse.js';
+//not GWT import const  = globalThis.servlet.request.HttpServletResponse;
+
+                
 export class RequestHandler extends HttpServlet {
         
 

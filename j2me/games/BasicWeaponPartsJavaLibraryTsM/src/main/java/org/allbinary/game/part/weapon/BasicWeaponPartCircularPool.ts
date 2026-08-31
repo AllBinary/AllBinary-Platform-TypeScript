@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -57,8 +57,12 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWeaponPart } from './BasicWeaponPart.js';
-import { BasicWeaponPartFactoryInterface } from './BasicWeaponPartFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.part.weapon.BasicWeaponPart;
 
+                import { BasicWeaponPartFactoryInterface } from './BasicWeaponPartFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.part.weapon.BasicWeaponPartFactoryInterface;
+
+                
 export class BasicWeaponPartCircularPool
             extends Object
          {

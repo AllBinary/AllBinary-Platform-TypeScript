@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
-import { PickedUpLayerType } from './PickedUpLayerType.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerInterfaceFactoryInterface;
 
+                import { PickedUpLayerType } from './PickedUpLayerType.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.PickedUpLayerType;
+
+                
 export class PickedUpLayerInterfaceFactoryBase
             extends Object
          implements PickedUpLayerInterfaceFactoryInterface {

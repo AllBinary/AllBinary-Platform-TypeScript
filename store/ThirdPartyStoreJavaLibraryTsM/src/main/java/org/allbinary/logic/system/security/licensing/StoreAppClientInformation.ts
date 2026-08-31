@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../../../jsinterop/annotations/JsType.js';
@@ -53,7 +53,9 @@ import { JsConstructor } from '../../../../../../jsinterop/annotations/JsConstru
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformation } from './AbeClientInformation.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformation;
 
+                
 export class StoreAppClientInformation extends AbeClientInformation implements LongArrayIdentifierInterface {
         
 

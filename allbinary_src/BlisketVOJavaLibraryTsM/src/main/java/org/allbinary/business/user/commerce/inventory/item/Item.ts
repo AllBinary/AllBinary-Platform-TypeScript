@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -75,8 +75,12 @@ import { ShippingMethodData } from '../../../../../../../org/allbinary/business/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicItem } from './BasicItem.js';
-import { OrderItemInterface } from './OrderItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.BasicItem;
 
+                import { OrderItemInterface } from './OrderItemInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.item.OrderItemInterface;
+
+                
 export class Item extends BasicItem implements OrderItemInterface {
         
 

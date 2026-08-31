@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -67,8 +67,12 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayViewAbstract } from './PaymentGatewayViewAbstract.js';
-import { PaymentGatewayComponent } from './PaymentGatewayComponent.js';
+//not GWT import const  = globalThis.views.admin.payment.gateway.PaymentGatewayViewAbstract;
 
+                import { PaymentGatewayComponent } from './PaymentGatewayComponent.js';
+//not GWT import const  = globalThis.views.admin.payment.gateway.PaymentGatewayComponent;
+
+                
 export class GatewayView extends PaymentGatewayViewAbstract {
         
 

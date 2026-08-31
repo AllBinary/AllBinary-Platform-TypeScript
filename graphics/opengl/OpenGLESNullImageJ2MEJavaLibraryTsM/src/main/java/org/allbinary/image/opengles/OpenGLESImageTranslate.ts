@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@ import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImage } from './OpenGLESImage.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESImage;
 
+                
 export class OpenGLESImageTranslate
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@ import { Vector } from '../../../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoleFactory } from './BasicUserRoleFactory.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.role.BasicUserRoleFactory;
 
+                
 export class StoreRoleFactory
             extends Object
          {

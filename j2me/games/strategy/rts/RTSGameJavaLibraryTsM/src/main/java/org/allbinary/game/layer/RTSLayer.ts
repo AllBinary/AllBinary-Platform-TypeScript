@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -217,17 +217,39 @@ import { ViewPositionBase } from '../../../../org/allbinary/view/ViewPositionBas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSInterface } from './RTSInterface.js';
-import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
-import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
-import { GeographicMapCellPositionArea } from './GeographicMapCellPositionArea.js';
-import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
-import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
-import { RTSLayerUtil } from './RTSLayerUtil.js';
-import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSInterface;
 
+                import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
+                import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer2LogHelper;
+
+                import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.GeographicMapCellPositionAreaBase;
+
+                import { GeographicMapCellPositionArea } from './GeographicMapCellPositionArea.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.GeographicMapCellPositionArea;
+
+                import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+
+                import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
+                import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSPlayerLayerInterface;
+
+                import { RTSLayerUtil } from './RTSLayerUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayerUtil;
+
+                import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+
+                import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
+
+                
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {
         
 

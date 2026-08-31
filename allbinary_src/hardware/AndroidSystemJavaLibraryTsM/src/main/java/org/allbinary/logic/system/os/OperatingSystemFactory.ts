@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -57,10 +57,18 @@ import { AndroidOperatingSystemFactory } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoOperatingSystem } from './NoOperatingSystem.js';
-import { GenericOperatingSystem } from './GenericOperatingSystem.js';
-import { SystemProperties } from './SystemProperties.js';
-import { OperatingSystems } from './OperatingSystems.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.NoOperatingSystem;
 
+                import { GenericOperatingSystem } from './GenericOperatingSystem.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
+                //not plain js import { SystemProperties } from './SystemProperties.js';
+const  = globalThis.org.allbinary.logic.system.os.SystemProperties;
+
+                import { OperatingSystems } from './OperatingSystems.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.OperatingSystems;
+
+                
 export class OperatingSystemFactory
             extends Object
          {

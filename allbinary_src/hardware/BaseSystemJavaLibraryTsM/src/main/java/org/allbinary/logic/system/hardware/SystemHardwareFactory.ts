@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -61,9 +61,15 @@ import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/syste
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoHardware } from './NoHardware.js';
-import { HardwareInterface } from './HardwareInterface.js';
-import { HardwareFactory } from './HardwareFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.NoHardware;
 
+                import { HardwareInterface } from './HardwareInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.HardwareInterface;
+
+                import { HardwareFactory } from './HardwareFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.HardwareFactory;
+
+                
 export class SystemHardwareFactory
             extends Object
          {

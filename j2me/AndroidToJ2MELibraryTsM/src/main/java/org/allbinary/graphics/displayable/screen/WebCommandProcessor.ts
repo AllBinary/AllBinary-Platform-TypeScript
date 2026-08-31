@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -81,7 +81,9 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AboutCommandProcessor } from './AboutCommandProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.displayable.screen.AboutCommandProcessor;
 
+                
 export class WebCommandProcessor
             extends Object
          {

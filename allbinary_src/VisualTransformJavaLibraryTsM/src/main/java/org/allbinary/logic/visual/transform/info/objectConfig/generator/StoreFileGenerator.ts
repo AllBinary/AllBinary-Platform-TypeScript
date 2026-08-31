@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -123,7 +123,9 @@ import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.generator.TransformInfoObjectConfigGenerator;
 
+                
 export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
         
 

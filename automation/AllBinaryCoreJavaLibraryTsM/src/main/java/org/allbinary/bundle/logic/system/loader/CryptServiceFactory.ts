@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { ServiceRegistration } from '../../../../../../org/osgi/framework/Servic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CryptService } from './CryptService.js';
+//not GWT import const  = globalThis.org.allbinary.bundle.logic.system.loader.CryptService;
 
+                
 export class CryptServiceFactory
             extends Object
          implements ServiceFactory {

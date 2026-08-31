@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -39,10 +39,18 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomMapGeneratorBaseFactory } from './CustomMapGeneratorBaseFactory.js';
-import { CustomMapGenerator } from './CustomMapGenerator.js';
-import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
-import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.CustomMapGeneratorBaseFactory;
 
+                import { CustomMapGenerator } from './CustomMapGenerator.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.CustomMapGenerator;
+
+                import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.CustomMapGeneratorBase;
+
+                import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackGeographicMap;
+
+                
 export class CustomMapGeneratorFactory extends CustomMapGeneratorBaseFactory {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../java/lang/Exception.js';
@@ -59,7 +59,9 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreTagWorkFlowHelper } from './StoreTagWorkFlowHelper.js';
+//not GWT import const  = globalThis.taghelpers.StoreTagWorkFlowHelper;
 
+                
 export class StoreTagWorkFlowHelperFactory extends TagHelperFactory {
         
 

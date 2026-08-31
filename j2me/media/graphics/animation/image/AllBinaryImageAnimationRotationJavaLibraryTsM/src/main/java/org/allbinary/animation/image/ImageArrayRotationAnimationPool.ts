@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -55,9 +55,15 @@ import { PoolInterface } from '../../../../org/allbinary/logic/util/cache/PoolIn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationCacheableInterfaceFactory } from './ImageArrayRotationAnimationCacheableInterfaceFactory.js';
-import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheableInterfaceFactory;
 
+                import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationInfo;
+
+                import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageArrayRotationAnimationCacheable;
+
+                
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {
         
 

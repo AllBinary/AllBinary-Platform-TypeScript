@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -43,8 +43,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThirdPartyInApplicationPurchaseInterface } from './ThirdPartyInApplicationPurchaseInterface.js';
-import { LockableFeature } from './LockableFeature.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.ThirdPartyInApplicationPurchaseInterface;
 
+                import { LockableFeature } from './LockableFeature.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LockableFeature;
+
+                
 export class ThirdPartyInApplicationPurchase
             extends Object
          implements ThirdPartyInApplicationPurchaseInterface {

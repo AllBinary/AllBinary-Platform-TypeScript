@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -75,7 +75,9 @@ import { GameStateFactory } from '../../../../../org/allbinary/game/state/GameSt
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
 
+                
 export class NullGameCanvasRunnable
             extends Object
          implements GameCanvasRunnableInterface {

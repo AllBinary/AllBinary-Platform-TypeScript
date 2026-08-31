@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
@@ -37,7 +37,9 @@ import { PlatformTextureBaseFactory } from '../../../org/allbinary/platform/open
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLGLUUtils } from './OpenGLGLUUtils.js';
+//not GWT import const  = globalThis.org.platform.opengl.OpenGLGLUUtils;
 
+                
 export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
         
 

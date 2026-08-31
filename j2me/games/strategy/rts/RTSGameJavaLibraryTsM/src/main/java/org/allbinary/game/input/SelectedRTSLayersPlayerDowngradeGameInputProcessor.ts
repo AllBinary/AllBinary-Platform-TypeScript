@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -47,8 +47,12 @@ import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectedRTSLayersPlayerGameInputProcessor } from './SelectedRTSLayersPlayerGameInputProcessor.js';
-import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInputProcessor;
 
+                import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
+
+                
 export class SelectedRTSLayersPlayerDowngradeGameInputProcessor extends SelectedRTSLayersPlayerGameInputProcessor {
         
 

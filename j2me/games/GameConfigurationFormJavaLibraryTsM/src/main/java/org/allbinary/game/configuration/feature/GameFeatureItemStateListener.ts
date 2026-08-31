@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -89,9 +89,15 @@ import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureFactory } from './GameFeatureFactory.js';
-import { GameFeature } from './GameFeature.js';
-import { GameFeatureUtil } from './GameFeatureUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureFactory;
 
+                import { GameFeature } from './GameFeature.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeature;
+
+                import { GameFeatureUtil } from './GameFeatureUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
+
+                
 export class GameFeatureItemStateListener
             extends Object
          implements ItemStateListener {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { TransformInterface } from '../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
@@ -41,7 +41,9 @@ import { TransformInterface } from '../../../../../org/allbinary/logic/visual/tr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ValidationInterface } from './ValidationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.control.validate.ValidationInterface;
 
+                
 export interface ValidationComponentInterface extends TransformInterface, ValidationInterface {
         
 

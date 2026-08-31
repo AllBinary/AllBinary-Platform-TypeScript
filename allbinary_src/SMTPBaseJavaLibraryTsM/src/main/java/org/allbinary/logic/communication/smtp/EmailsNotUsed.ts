@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -69,8 +69,12 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailData } from './EmailData.js';
-import { Email } from './Email.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.EmailData;
 
+                import { Email } from './Email.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.Email;
+
+                
 export class EmailsNotUsed
             extends Object
          implements DomNodeInterface {

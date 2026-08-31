@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { SearchRequest } from '../../../../../../org/allbinary/logic/control/sea
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformStoreDocument } from './TransformStoreDocument.js';
-import { TransformDocumentInterface } from './TransformDocumentInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformStoreDocument;
 
+                import { TransformDocumentInterface } from './TransformDocumentInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+
+                
 export class TransformStoreDocumentFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import hilog from '@ohos.hilog';
@@ -40,9 +40,13 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogFormatUtil } from './LogFormatUtil.js';
-import { Log } from './Log.js';
-//ActualPlatform
+        //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+
+                //not plain js import { Log } from './Log.js';
+const  = globalThis.org.allbinary.logic.communication.log.Log;
+
+                //ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { Debug } from '../../../android/os/Debug.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DebugInterface } from './DebugInterface.js';
+//not GWT import const  = globalThis.org.allbinary.debug.DebugInterface;
 
+                
 export class AndroidDebug
             extends Object
          implements DebugInterface {

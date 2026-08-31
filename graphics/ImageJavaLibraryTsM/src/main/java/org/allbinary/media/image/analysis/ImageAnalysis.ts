@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -71,11 +71,21 @@ import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/Colo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageAnalysisResults } from './ImageAnalysisResults.js';
-import { ColorRangeInterface } from './ColorRangeInterface.js';
-import { Color } from './Color.js';
-import { ColorAverage } from './ColorAverage.js';
-import { ImageColorResults } from './ImageColorResults.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ImageAnalysisResults;
 
+                import { ColorRangeInterface } from './ColorRangeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
+
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.Color;
+
+                import { ColorAverage } from './ColorAverage.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ColorAverage;
+
+                import { ImageColorResults } from './ImageColorResults.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ImageColorResults;
+
+                
 export class ImageAnalysis
             extends Object
          {

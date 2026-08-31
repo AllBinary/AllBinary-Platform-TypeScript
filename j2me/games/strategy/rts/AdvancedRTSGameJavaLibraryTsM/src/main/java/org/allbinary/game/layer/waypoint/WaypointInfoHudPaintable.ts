@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Font } from '../../../../../javax/microedition/lcdui/Font.js';

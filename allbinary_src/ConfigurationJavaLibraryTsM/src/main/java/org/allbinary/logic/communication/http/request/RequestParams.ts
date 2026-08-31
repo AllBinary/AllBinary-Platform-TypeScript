@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -85,7 +85,9 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RequestData } from './RequestData.js';
-//Note: if request is destroyed or messed up this will not work. Use fileRequestParams
+//not GWT import const  = globalThis.org.allbinary.logic.communication.http.request.RequestData;
+
+                //Note: if request is destroyed or messed up this will not work. Use fileRequestParams
 export class RequestParams
             extends Object
          {

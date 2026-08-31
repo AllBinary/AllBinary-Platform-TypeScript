@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { GeographicMapCellPositionFactoryInterface } from '../../../../../../org
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
-import { GeologicalResource } from './GeologicalResource.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.geological.resources.GeologicalGeographicMapCellPosition;
 
+                import { GeologicalResource } from './GeologicalResource.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResource;
+
+                
 export class GeologicalGeographicMapCellPositionFactory
             extends Object
          implements GeographicMapCellPositionFactoryInterface {

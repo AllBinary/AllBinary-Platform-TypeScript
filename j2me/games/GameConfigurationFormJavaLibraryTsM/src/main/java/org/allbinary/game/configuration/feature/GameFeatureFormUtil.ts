@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -89,9 +89,15 @@ import { CommandForm } from '../../../../../org/allbinary/graphics/displayable/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Features } from './Features.js';
-import { Feature } from './Feature.js';
-import { GameFeatureUtil } from './GameFeatureUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Features;
 
+                import { Feature } from './Feature.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Feature;
+
+                import { GameFeatureUtil } from './GameFeatureUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureUtil;
+
+                
 export class GameFeatureFormUtil
             extends Object
          {

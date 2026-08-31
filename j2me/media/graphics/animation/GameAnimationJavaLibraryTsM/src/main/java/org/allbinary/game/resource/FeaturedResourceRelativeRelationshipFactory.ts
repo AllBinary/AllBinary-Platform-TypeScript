@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -71,8 +71,12 @@ import { RelativeLayerRelationship } from '../../../../org/allbinary/layer/relat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
-import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
 
+                import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.resource.ResourceRelativeRelationshipFactoryInterface;
+
+                
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {
         
 

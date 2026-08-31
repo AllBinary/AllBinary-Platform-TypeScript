@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
-import { FeaturedResourceRelativeRelationshipFactory } from './FeaturedResourceRelativeRelationshipFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.resource.FeaturedResourceFactory;
 
+                import { FeaturedResourceRelativeRelationshipFactory } from './FeaturedResourceRelativeRelationshipFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.resource.FeaturedResourceRelativeRelationshipFactory;
+
+                
 export class FeatureResourceInitializationUtil
             extends Object
          {

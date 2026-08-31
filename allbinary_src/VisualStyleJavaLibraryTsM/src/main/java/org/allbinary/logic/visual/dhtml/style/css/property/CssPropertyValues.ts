@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -91,8 +91,12 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssPropertyValueData } from './CssPropertyValueData.js';
-import { CssPropertyData } from './CssPropertyData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyValueData;
 
+                import { CssPropertyData } from './CssPropertyData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.property.CssPropertyData;
+
+                
 export class CssPropertyValues
             extends Object
          implements DomNodeInterface {

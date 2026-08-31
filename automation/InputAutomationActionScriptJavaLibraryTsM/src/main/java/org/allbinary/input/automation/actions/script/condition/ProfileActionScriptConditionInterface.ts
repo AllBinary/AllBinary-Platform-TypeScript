@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -53,7 +53,9 @@ import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTreeNodeInterface } from './CustomTreeNodeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.CustomTreeNodeInterface;
 
+                
 export interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
         
 

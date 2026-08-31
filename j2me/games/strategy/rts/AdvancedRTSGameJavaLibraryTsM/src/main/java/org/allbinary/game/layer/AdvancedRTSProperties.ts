@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -71,7 +71,9 @@ import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryV
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
 
+                
 export class AdvancedRTSProperties
             extends Object
          {

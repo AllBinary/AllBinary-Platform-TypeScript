@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -95,8 +95,12 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureListenerInterface } from './GameFeatureListenerInterface.js';
-import { GameFeatureEvent } from './GameFeatureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.event.GameFeatureListenerInterface;
 
+                import { GameFeatureEvent } from './GameFeatureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.event.GameFeatureEvent;
+
+                
 export class BaseChangedGameFeatureListener
             extends Object
          implements GameFeatureListenerInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -71,7 +71,9 @@ import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/Game
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
 
+                
 export class DemoCanvasBasicStartInputProcessor extends BasicMenuInputProcessor {
         
 

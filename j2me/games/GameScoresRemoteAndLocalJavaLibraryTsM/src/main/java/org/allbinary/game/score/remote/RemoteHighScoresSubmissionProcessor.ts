@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -91,10 +91,18 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresSubmissionProcessorInterface } from './RemoteHighScoresSubmissionProcessorInterface.js';
-import { RemoteHighScoresData } from './RemoteHighScoresData.js';
-import { XmlRpcRemoteHighScoresClient } from './XmlRpcRemoteHighScoresClient.js';
-import { RemoteHighScores } from './RemoteHighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresSubmissionProcessorInterface;
 
+                import { RemoteHighScoresData } from './RemoteHighScoresData.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScoresData;
+
+                import { XmlRpcRemoteHighScoresClient } from './XmlRpcRemoteHighScoresClient.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.XmlRpcRemoteHighScoresClient;
+
+                import { RemoteHighScores } from './RemoteHighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.remote.RemoteHighScores;
+
+                
 export class RemoteHighScoresSubmissionProcessor
             extends Object
          implements RemoteHighScoresSubmissionProcessorInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -51,7 +51,9 @@ import { GameInputMotionInfoAPI5 } from '../../../../../org/allbinary/android/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputMotionInfo } from './GameInputMotionInfo.js';
+//not GWT import const  = globalThis.org.allbinary.android.input.motion.GameInputMotionInfo;
 
+                
 export class GameInputMotionInfoFactory
             extends Object
          {

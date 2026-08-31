@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -93,9 +93,15 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Features } from './Features.js';
-import { Feature } from './Feature.js';
-import { GameFeatureChoiceGroups } from './GameFeatureChoiceGroups.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Features;
 
+                import { Feature } from './Feature.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.Feature;
+
+                import { GameFeatureChoiceGroups } from './GameFeatureChoiceGroups.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.feature.GameFeatureChoiceGroups;
+
+                
 export class GameFeatureUtil
             extends Object
          {

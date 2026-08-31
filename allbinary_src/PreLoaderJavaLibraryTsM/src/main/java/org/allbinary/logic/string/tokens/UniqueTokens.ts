@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -77,7 +77,9 @@ import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Tokenizer } from './Tokenizer.js';
+//not GWT import const  = globalThis.org.allbinary.logic.string.tokens.Tokenizer;
 
+                
 export class UniqueTokens
             extends Object
          {

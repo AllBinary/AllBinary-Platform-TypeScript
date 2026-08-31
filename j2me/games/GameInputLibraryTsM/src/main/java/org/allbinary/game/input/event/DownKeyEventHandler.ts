@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
@@ -45,7 +45,9 @@ import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownKeyEventHandlerBase } from './DownKeyEventHandlerBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.DownKeyEventHandlerBase;
 
+                
 export class DownKeyEventHandler extends DownKeyEventHandlerBase {
         
 

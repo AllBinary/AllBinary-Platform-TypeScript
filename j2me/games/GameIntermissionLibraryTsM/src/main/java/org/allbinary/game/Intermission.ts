@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -55,9 +55,15 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntermissionInterface } from './IntermissionInterface.js';
-import { NullIntermissionEnableListener } from './NullIntermissionEnableListener.js';
-import { IntermissionEnableListenerInterface } from './IntermissionEnableListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.IntermissionInterface;
 
+                import { NullIntermissionEnableListener } from './NullIntermissionEnableListener.js';
+//not GWT import const  = globalThis.org.allbinary.game.NullIntermissionEnableListener;
+
+                import { IntermissionEnableListenerInterface } from './IntermissionEnableListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.IntermissionEnableListenerInterface;
+
+                
 export class Intermission
             extends Object
          implements IntermissionInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -117,10 +117,18 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
-import { OrderHistoryInterface } from './OrderHistoryInterface.js';
-import { OrderData } from './OrderData.js';
-import { OrderHistoryData } from './OrderHistoryData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.Order;
 
+                import { OrderHistoryInterface } from './OrderHistoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryInterface;
+
+                import { OrderData } from './OrderData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderData;
+
+                import { OrderHistoryData } from './OrderHistoryData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.inventory.order.OrderHistoryData;
+
+                
 export class OrderHistory extends Order implements OrderHistoryInterface {
         
 

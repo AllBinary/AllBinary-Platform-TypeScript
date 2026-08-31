@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -105,7 +105,9 @@ import { HardwareComponentInterface } from '../../../../../../../org/allbinary/l
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CpuInfo } from './CpuInfo.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.hardware.components.linux.CpuInfo;
 
+                
 export class Cpu
             extends Object
          implements CpuInterface, HardwareComponentInterface {

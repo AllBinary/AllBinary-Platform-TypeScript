@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -105,8 +105,12 @@ import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileCaptureWorkerFactory } from './GenericProfileCaptureWorkerFactory.js';
-import { CaptureWorkerUtil } from './CaptureWorkerUtil.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.GenericProfileCaptureWorkerFactory;
 
+                import { CaptureWorkerUtil } from './CaptureWorkerUtil.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.CaptureWorkerUtil;
+
+                
 export class GenericInputAutomationWorker extends AbstractInputAutomationWorker {
         
 

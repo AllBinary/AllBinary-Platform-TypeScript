@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -63,20 +63,48 @@ import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
-import { Frame } from './Frame.js';
-import { JTextField } from './JTextField.js';
-import { JLabel } from './JLabel.js';
-import { JPanel } from './JPanel.js';
-import { JButton } from './JButton.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
-import { EventQueue } from './EventQueue.js';
-import { JFrame } from './JFrame.js';
-import { WindowAdapter } from './WindowAdapter.js';
-import { WindowEvent } from './WindowEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JDialog;
 
+                import { Frame } from './Frame.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.Frame;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JTextField;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JLabel;
+
+                import { JPanel } from './JPanel.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JPanel;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JButton;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.ActionEvent;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.Short;
+
+                import { EventQueue } from './EventQueue.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.EventQueue;
+
+                import { JFrame } from './JFrame.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.JFrame;
+
+                import { WindowAdapter } from './WindowAdapter.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.WindowAdapter;
+
+                import { WindowEvent } from './WindowEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.dialog.WindowEvent;
+
+                
 export class RotateJDialog extends javax.swing.JDialog {
         
 

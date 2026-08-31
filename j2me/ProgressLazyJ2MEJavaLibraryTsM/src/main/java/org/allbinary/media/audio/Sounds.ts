@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -75,9 +75,15 @@ import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SoundStrings } from './SoundStrings.js';
-import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
-import { Sound } from './Sound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.SoundStrings;
 
+                import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.SoundsFactoryInterface;
+
+                import { Sound } from './Sound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+
+                
 export class Sounds
             extends Object
          {

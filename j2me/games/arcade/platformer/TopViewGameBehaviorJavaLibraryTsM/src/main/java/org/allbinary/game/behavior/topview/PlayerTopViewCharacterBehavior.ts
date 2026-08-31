@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -79,7 +79,9 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterBehavior;
 
+                
 export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         
 

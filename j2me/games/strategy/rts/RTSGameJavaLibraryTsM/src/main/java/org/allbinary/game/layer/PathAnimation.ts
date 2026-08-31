@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -91,11 +91,21 @@ import { SimpleGeographicMapCellPositionFactory } from '../../../../org/allbinar
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LinePathAnimation } from './LinePathAnimation.js';
-import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
-import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
-import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
-import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.LinePathAnimation;
 
+                import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
+                import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryGameLayerManager;
+
+                import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.WaypointBehaviorBase;
+
+                import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
+
+                
 export class PathAnimation extends Animation {
         
 

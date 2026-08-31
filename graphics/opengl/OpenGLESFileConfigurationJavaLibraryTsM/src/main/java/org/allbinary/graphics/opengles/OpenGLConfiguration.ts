@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -121,8 +121,12 @@ import { NullCloseable } from '../../../../org/allbinary/logic/io/NullCloseable.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
-import { OpenGLFeature } from './OpenGLFeature.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 
+                import { OpenGLFeature } from './OpenGLFeature.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLFeature;
+
+                
 export class OpenGLConfiguration
             extends Object
          {

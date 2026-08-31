@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
-import { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationInterface;
 
+                import { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventsConfigurationData;
+
+                
 export class UserEmailEventsConfigurationMapping
             extends Object
          implements TableMappingInterface {

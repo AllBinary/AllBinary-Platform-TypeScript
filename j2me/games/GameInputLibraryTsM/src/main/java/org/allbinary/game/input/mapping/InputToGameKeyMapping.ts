@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Throwable } from '../../../../../java/lang/Throwable.js';
@@ -109,7 +109,9 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputMapping } from './InputMapping.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.mapping.InputMapping;
 
+                
 export class InputToGameKeyMapping extends InputMapping {
         
 

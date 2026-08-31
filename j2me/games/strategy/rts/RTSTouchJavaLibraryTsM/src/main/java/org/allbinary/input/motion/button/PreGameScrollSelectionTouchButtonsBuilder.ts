@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -55,15 +55,33 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
-import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
-import { CommonButtons } from './CommonButtons.js';
-import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
-import { TouchButton } from './TouchButton.js';
-import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
-import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
-import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
-import { TouchButtonStartResource } from './TouchButtonStartResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
 
+                import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonLocationHelper;
+
+                import { CommonButtons } from './CommonButtons.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.CommonButtons;
+
+                import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchButtonCellPositionFactory;
+
+                import { TouchButton } from './TouchButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButton;
+
+                import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BasicTouchInputFactory;
+
+                import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeLeftResource;
+
+                import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeRightResource;
+
+                import { TouchButtonStartResource } from './TouchButtonStartResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonStartResource;
+
+                
 export class PreGameScrollSelectionTouchButtonsBuilder extends BaseTouchInput {
         
 

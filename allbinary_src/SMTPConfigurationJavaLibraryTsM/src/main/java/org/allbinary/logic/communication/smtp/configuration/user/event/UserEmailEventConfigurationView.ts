@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -69,10 +69,18 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
-import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
-import { UserEmailEventConfiguration } from './UserEmailEventConfiguration.js';
-import { UserEmailEventConfigurationMapping } from './UserEmailEventConfigurationMapping.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationInterface;
 
+                import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationData;
+
+                import { UserEmailEventConfiguration } from './UserEmailEventConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfiguration;
+
+                import { UserEmailEventConfigurationMapping } from './UserEmailEventConfigurationMapping.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.event.UserEmailEventConfigurationMapping;
+
+                
 export class UserEmailEventConfigurationView
             extends Object
          implements DomNodeInterface {

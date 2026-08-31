@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -45,7 +45,9 @@ import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFinderGraphVisitorBase } from './PathFinderGraphVisitorBase.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFinderGraphVisitorBase;
 
+                
 export class PathFinderGraphVisitorFactoryBase
             extends Object
          {

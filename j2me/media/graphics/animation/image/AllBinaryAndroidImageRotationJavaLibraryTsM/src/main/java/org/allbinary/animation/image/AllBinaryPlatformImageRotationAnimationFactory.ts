@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -47,7 +47,9 @@ import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/An
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryAndroidImageRotationAnimationFactory } from './AllBinaryAndroidImageRotationAnimationFactory.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryAndroidImageRotationAnimationFactory;
 
+                
 export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryAndroidImageRotationAnimationFactory {
         
 

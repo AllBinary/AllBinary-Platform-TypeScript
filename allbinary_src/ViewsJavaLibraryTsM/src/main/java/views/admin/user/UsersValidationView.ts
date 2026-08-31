@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -79,7 +79,9 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UsersView } from './UsersView.js';
+//not GWT import const  = globalThis.views.admin.user.UsersView;
 
+                
 export class UsersValidationView extends UsersView implements ValidationComponentInterface {
         
 

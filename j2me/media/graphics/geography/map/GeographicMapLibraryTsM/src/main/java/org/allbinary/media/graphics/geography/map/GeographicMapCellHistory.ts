@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -109,8 +109,12 @@ import { UpdateMyFontProcessor } from '../../../../../../org/allbinary/graphics/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
 
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                
 export class GeographicMapCellHistory
             extends Object
          implements UpdateMyFontInterface {

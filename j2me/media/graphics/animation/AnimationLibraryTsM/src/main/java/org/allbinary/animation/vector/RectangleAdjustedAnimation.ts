@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';

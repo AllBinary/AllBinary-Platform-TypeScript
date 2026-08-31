@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
@@ -45,11 +45,21 @@ import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoresBase } from './HighScoresBase.js';
-import { HighScores } from './HighScores.js';
-import { HighScoresResultsListener } from './HighScoresResultsListener.js';
-import { HighScoresHelperBase } from './HighScoresHelperBase.js';
-import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresBase;
 
+                import { HighScores } from './HighScores.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScores;
+
+                import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresResultsListener;
+
+                import { HighScoresHelperBase } from './HighScoresHelperBase.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBase;
+
+                import { HighScoresHelperBaseInterface } from './HighScoresHelperBaseInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoresHelperBaseInterface;
+
+                
 export class NoHighScoresFactory extends HighScoresBase {
         
 

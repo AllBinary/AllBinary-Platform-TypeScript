@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -111,7 +111,9 @@ import { TransformInfoObjectConfigGeneratorFactoryInterface } from '../../../../
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoEntityInterface } from './TransformInfoEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.transform.info.TransformInfoEntityInterface;
 
+                
 export class TransformInfoEntity extends AbSqlBean implements TransformInfoEntityInterface {
         
 

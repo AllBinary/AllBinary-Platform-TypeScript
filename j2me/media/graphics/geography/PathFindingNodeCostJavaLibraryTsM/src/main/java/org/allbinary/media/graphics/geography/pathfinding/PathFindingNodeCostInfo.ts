@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -51,8 +51,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
-import { PathFindingNodeCostInfoData } from './PathFindingNodeCostInfoData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.Comparable;
 
+                import { PathFindingNodeCostInfoData } from './PathFindingNodeCostInfoData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.PathFindingNodeCostInfoData;
+
+                
 export class PathFindingNodeCostInfo
             extends Object
          implements Comparable<PathFindingNodeCostInfo> {

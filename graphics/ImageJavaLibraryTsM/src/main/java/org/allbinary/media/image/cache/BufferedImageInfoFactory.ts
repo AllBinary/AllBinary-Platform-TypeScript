@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { HashMap } from '../../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageInfo } from './BufferedImageInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
 
+                
 export class BufferedImageInfoFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -54,8 +54,10 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GPoint } from './GPoint.js';
+        //not plain js import { GPoint } from './GPoint.js';
+const  = globalThis.org.allbinary.graphics.GPoint;
 
+                
 export class PointFactory
             extends Object
          {

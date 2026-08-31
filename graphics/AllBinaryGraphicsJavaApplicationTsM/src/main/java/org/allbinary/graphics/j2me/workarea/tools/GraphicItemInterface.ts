@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -65,11 +65,21 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
-import { Points } from './Points.js';
-import { Graphics } from './Graphics.js';
-import { MouseEvent } from './MouseEvent.js';
-import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Color;
 
+                import { Points } from './Points.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
+
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics;
+
+                import { MouseEvent } from './MouseEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
+
+                import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.KeyEvent;
+
+                
 export interface GraphicItemInterface {
         
 

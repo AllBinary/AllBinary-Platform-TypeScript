@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../jsinterop/annotations/JsType.js';
@@ -53,7 +53,9 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryMidlet } from './AllBinaryMidlet.js';
+//not GWT import const  = globalThis.org.allbinary.midlet.AllBinaryMidlet;
 
+                
 export interface MidletCompositeInterface {
         
 

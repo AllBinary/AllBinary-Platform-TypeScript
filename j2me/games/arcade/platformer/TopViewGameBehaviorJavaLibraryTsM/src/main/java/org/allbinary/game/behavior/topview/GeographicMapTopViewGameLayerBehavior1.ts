@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -75,8 +75,12 @@ import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapTopViewLayerBehavior } from './GeographicMapTopViewLayerBehavior.js';
-import { TopViewCharacterInterface } from './TopViewCharacterInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.GeographicMapTopViewLayerBehavior;
 
+                import { TopViewCharacterInterface } from './TopViewCharacterInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.TopViewCharacterInterface;
+
+                
 export class GeographicMapTopViewGameLayerBehavior1 extends GeographicMapTopViewLayerBehavior {
         
 

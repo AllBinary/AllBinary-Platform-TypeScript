@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -71,9 +71,15 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptItemInterface } from './ProfileActionScriptItemInterface.js';
-import { JPopupMenu } from './JPopupMenu.js';
-import { JMenuItem } from './JMenuItem.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.ProfileActionScriptItemInterface;
 
+                import { JPopupMenu } from './JPopupMenu.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.JPopupMenu;
+
+                import { JMenuItem } from './JMenuItem.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.JMenuItem;
+
+                
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
         
 

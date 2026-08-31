@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Class } from '../../../../../java/lang/Class.js';
@@ -89,7 +89,9 @@ import { AbCryptUtil } from '../../../../../org/allbinary/logic/system/security/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoClassDefFoundError } from './NoClassDefFoundError.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.loader.NoClassDefFoundError;
 
+                
 export class AbeClassLoader extends ClassLoader {
         
 

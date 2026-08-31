@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,8 +51,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GLHolder } from './GLHolder.js';
-import { RatioProcessor } from './RatioProcessor.js';
-//SWTWithoutJOGL
+//not GWT import const  = globalThis.org.allbinary.graphics.threed.GLHolder;
+
+                import { RatioProcessor } from './RatioProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.threed.RatioProcessor;
+
+                //SWTWithoutJOGL
 export class SWTJOGLProcessor
             extends Object
          implements Runnable {

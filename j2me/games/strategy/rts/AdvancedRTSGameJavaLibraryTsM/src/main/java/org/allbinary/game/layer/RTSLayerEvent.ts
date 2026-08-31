@@ -13,8 +13,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
@@ -44,8 +44,12 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullPathFindingLayer } from './NullPathFindingLayer.js';
-import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.NullPathFindingLayer;
 
+                import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
+
+                
 export class RTSLayerEvent extends AllBinaryEventObject {
         
 

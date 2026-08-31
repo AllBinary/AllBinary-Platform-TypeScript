@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsLayer } from './PointsLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.points.PointsLayer;
 
+                
 export class PointsLayerFactory
             extends Object
          implements AllBinaryLayerFactoryInterface {

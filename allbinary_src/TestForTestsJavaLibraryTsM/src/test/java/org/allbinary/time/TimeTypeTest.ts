@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -41,8 +41,12 @@ import { Test } from '../../../org/junit/jupiter/api/Test.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeTypeUtil } from './TimeTypeUtil.js';
-//import { TestableTimeTypeUtil } from './TestableTimeTypeUtil.js';
+//not GWT import const  = globalThis.org.allbinary.time.TimeTypeUtil;
 
+                //import { TestableTimeTypeUtil } from './TestableTimeTypeUtil.js';
+//not GWT import const  = globalThis.org.allbinary.time.TestableTimeTypeUtil;
+
+                
 export class TimeTypeTest
             extends Object
          {

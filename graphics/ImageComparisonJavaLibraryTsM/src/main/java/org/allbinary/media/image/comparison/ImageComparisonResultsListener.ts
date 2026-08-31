@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { BasicEventListenerInterface } from '../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js';
@@ -41,7 +41,9 @@ import { BasicEventListenerInterface } from '../../../../../org/allbinary/logic/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.ImageComparisonResultsEvent;
 
+                
 export interface ImageComparisonResultsListener extends BasicEventListenerInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -59,8 +59,12 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GroupInterface } from './GroupInterface.js';
-import { GroupCommonFactory } from './GroupCommonFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.identification.GroupInterface;
 
+                import { GroupCommonFactory } from './GroupCommonFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.identification.GroupCommonFactory;
+
+                
 export class Group
             extends Object
          implements GroupInterface {

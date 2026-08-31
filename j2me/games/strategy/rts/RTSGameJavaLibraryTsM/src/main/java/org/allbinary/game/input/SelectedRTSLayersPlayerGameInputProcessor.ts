@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputProcessor } from './GameInputProcessor.js';
-import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessor;
 
+                import { SelectedRTSLayersPlayerGameInput } from './SelectedRTSLayersPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerGameInput;
+
+                
 export class SelectedRTSLayersPlayerGameInputProcessor extends GameInputProcessor {
         
 

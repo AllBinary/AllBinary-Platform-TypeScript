@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -47,10 +47,18 @@ import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosit
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
-import { GeographicMapCellPositionFactory } from './GeographicMapCellPositionFactory.js';
-import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMapCellPositionFactory;
 
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                import { GeographicMapCellPositionFactory } from './GeographicMapCellPositionFactory.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPositionFactory;
+
+                import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
+                
 export class CachingGeographicMapCellPositionFactory extends BasicGeographicMapCellPositionFactory {
         
 

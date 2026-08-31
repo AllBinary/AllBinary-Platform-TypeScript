@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/secu
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidResources } from './AndroidResources.js';
+//not GWT import const  = globalThis.org.allbinary.AndroidResources;
 
+                
 export class AllBinaryAndroidGameInitializationUtil
             extends Object
          {

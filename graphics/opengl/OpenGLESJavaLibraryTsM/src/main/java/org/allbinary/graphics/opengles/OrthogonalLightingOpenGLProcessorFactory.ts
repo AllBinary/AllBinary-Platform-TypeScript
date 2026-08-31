@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullOpenGLProcessorFactory } from './NullOpenGLProcessorFactory.js';
-import { OpenGLProcessor } from './OpenGLProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.NullOpenGLProcessorFactory;
 
+                import { OpenGLProcessor } from './OpenGLProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.opengles.OpenGLProcessor;
+
+                
 export class OrthogonalLightingOpenGLProcessorFactory
             extends Object
          {

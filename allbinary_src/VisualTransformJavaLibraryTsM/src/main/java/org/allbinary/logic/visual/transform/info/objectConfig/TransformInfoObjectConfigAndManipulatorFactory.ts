@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -71,11 +71,21 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigAndManipulatorFactoryBase } from './TransformInfoObjectConfigAndManipulatorFactoryBase.js';
-import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
-import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
-import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
-import { GenericStoreTransformInfoObjectConfig } from './GenericStoreTransformInfoObjectConfig.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigAndManipulatorFactoryBase;
 
+                import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
+
+                import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
+
+                import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfig;
+
+                import { GenericStoreTransformInfoObjectConfig } from './GenericStoreTransformInfoObjectConfig.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.GenericStoreTransformInfoObjectConfig;
+
+                
 export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInfoObjectConfigAndManipulatorFactoryBase {
         
 

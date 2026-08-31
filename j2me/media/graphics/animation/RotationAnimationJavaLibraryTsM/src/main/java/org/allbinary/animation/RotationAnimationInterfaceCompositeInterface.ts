@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimationInterfaceCompositeInterface } from './IndexedAnimationInterfaceCompositeInterface.js';
-import { RotationAnimation } from './RotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.IndexedAnimationInterfaceCompositeInterface;
 
+                import { RotationAnimation } from './RotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.RotationAnimation;
+
+                
 export interface RotationAnimationInterfaceCompositeInterface extends IndexedAnimationInterfaceCompositeInterface {
         
 

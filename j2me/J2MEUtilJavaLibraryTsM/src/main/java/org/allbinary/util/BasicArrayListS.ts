@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { IllegalArgumentException } from '../../../java/lang/IllegalArgumentException.js';
@@ -54,8 +54,10 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicArrayList } from './BasicArrayList.js';
+        //not plain js import { BasicArrayList } from './BasicArrayList.js';
+const  = globalThis.org.allbinary.util.BasicArrayList;
 
+                
 export class BasicArrayListS extends BasicArrayList {
         
 

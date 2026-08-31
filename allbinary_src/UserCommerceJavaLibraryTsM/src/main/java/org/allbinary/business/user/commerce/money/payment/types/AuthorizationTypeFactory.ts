@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -39,7 +39,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AuthorizationType } from './AuthorizationType.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.types.AuthorizationType;
 
+                
 export class AuthorizationTypeFactory
             extends Object
          {

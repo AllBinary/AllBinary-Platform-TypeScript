@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -80,10 +80,16 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Log } from './Log.js';
-import { LogFormatUtil } from './LogFormatUtil.js';
-import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
-//ActualPlatform
+        //not plain js import { Log } from './Log.js';
+const  = globalThis.org.allbinary.logic.communication.log.Log;
+
+                //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+
+                import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.log.XmlRpcRemoteLogClient;
+
+                //ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

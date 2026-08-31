@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -65,10 +65,18 @@ import { Node } from '../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ContextConfigurationData } from './ContextConfigurationData.js';
-import { ContextConfigurationView } from './ContextConfigurationView.js';
-import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
-import { ContextConfigurationPathUtil } from './ContextConfigurationPathUtil.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationData;
 
+                import { ContextConfigurationView } from './ContextConfigurationView.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationView;
+
+                import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationInterface;
+
+                import { ContextConfigurationPathUtil } from './ContextConfigurationPathUtil.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.configuration.ContextConfigurationPathUtil;
+
+                
 export class ContextConfigurationInterfaceFactory
             extends Object
          {

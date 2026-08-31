@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { SearchRequest } from '../../../../org/allbinary/logic/control/search/Se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProductListing } from './ProductListing.js';
-import { ProductListingInterface } from './ProductListingInterface.js';
+//not GWT import const  = globalThis.views.admin.inventory.listings.ProductListing;
 
+                import { ProductListingInterface } from './ProductListingInterface.js';
+//not GWT import const  = globalThis.views.admin.inventory.listings.ProductListingInterface;
+
+                
 export class ProductListingFactory
             extends Object
          {

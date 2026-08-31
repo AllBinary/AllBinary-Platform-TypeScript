@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -101,7 +101,9 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceLoadingLevelFactory } from './ResourceLoadingLevelFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.resource.ResourceLoadingLevelFactory;
 
+                
 export class FeaturedResourceFactory
             extends Object
          {

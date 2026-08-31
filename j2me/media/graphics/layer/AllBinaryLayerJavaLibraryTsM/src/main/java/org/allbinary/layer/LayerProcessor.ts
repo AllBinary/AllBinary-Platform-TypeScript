@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -61,10 +61,18 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerProcessorInterface } from './LayerProcessorInterface.js';
-import { LayerManager } from './LayerManager.js';
-import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.LayerProcessorInterface;
 
+                import { LayerManager } from './LayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.layer.LayerManager;
+
+                import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+                import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+
+                
 export class LayerProcessor
             extends Object
          implements LayerProcessorInterface {

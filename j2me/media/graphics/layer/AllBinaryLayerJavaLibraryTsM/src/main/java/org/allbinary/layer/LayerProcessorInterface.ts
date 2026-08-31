@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -47,10 +47,18 @@ import { JsMethod } from '../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicLayerProcessorInterface } from './BasicLayerProcessorInterface.js';
-import { LayerManager } from './LayerManager.js';
-import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
-import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.BasicLayerProcessorInterface;
 
+                import { LayerManager } from './LayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.layer.LayerManager;
+
+                import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';
+//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayerManager;
+
+                import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+
+                
 export interface LayerProcessorInterface extends BasicLayerProcessorInterface {
         
 

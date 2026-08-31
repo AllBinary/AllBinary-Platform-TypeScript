@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -147,14 +147,30 @@ import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlayerGameInput } from './PlayerGameInput.js';
-import { InputFactory } from './InputFactory.js';
-import { GameInputProcessor } from './GameInputProcessor.js';
-import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
-import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
-import { SelectedRTSLayersPlayerUpgradeGameInputProcessor } from './SelectedRTSLayersPlayerUpgradeGameInputProcessor.js';
-import { SelectedRTSLayersPlayerDowngradeGameInputProcessor } from './SelectedRTSLayersPlayerDowngradeGameInputProcessor.js';
-import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PlayerGameInput;
 
+                import { InputFactory } from './InputFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.InputFactory;
+
+                import { GameInputProcessor } from './GameInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessor;
+
+                import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectRTSLayerVisitorFactoryInterface;
+
+                import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.RTSPlayerGameInput;
+
+                import { SelectedRTSLayersPlayerUpgradeGameInputProcessor } from './SelectedRTSLayersPlayerUpgradeGameInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerUpgradeGameInputProcessor;
+
+                import { SelectedRTSLayersPlayerDowngradeGameInputProcessor } from './SelectedRTSLayersPlayerDowngradeGameInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.SelectedRTSLayersPlayerDowngradeGameInputProcessor;
+
+                import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessorUtil;
+
+                
 export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {
         
 

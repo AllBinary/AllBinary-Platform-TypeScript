@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -57,8 +57,12 @@ import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventFactory } from './MotionEventFactory.js';
-import { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.MotionEventFactory;
 
+                import { MotionGestureEvent } from './MotionGestureEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.MotionGestureEvent;
+
+                
 export class MotionEventCircularPool
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -177,28 +177,72 @@ import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
-import { JLabel } from './JLabel.js';
-import { JTabbedPane } from './JTabbedPane.js';
-import { JPanel } from './JPanel.js';
-import { JScrollPane } from './JScrollPane.js';
-import { JList } from './JList.js';
-import { JMenuBar } from './JMenuBar.js';
-import { JMenu } from './JMenu.js';
-import { JMenuItem } from './JMenuItem.js';
-import { JCheckBoxMenuItem } from './JCheckBoxMenuItem.js';
-import { Dimension } from './Dimension.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
-import { WindowFocusListener } from './WindowFocusListener.js';
-import { WindowEvent } from './WindowEvent.js';
-import { FocusAdapter } from './FocusAdapter.js';
-import { FocusEvent } from './FocusEvent.js';
-import { ListSelectionListener } from './ListSelectionListener.js';
-import { ListSelectionEvent } from './ListSelectionEvent.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { EventQueue } from './EventQueue.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JFrame;
 
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JLabel;
+
+                import { JTabbedPane } from './JTabbedPane.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JTabbedPane;
+
+                import { JPanel } from './JPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JPanel;
+
+                import { JScrollPane } from './JScrollPane.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JScrollPane;
+
+                import { JList } from './JList.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JList;
+
+                import { JMenuBar } from './JMenuBar.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JMenuBar;
+
+                import { JMenu } from './JMenu.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JMenu;
+
+                import { JMenuItem } from './JMenuItem.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JMenuItem;
+
+                import { JCheckBoxMenuItem } from './JCheckBoxMenuItem.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.JCheckBoxMenuItem;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.Dimension;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.Short;
+
+                import { WindowFocusListener } from './WindowFocusListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.WindowFocusListener;
+
+                import { WindowEvent } from './WindowEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.WindowEvent;
+
+                import { FocusAdapter } from './FocusAdapter.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.FocusAdapter;
+
+                import { FocusEvent } from './FocusEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.FocusEvent;
+
+                import { ListSelectionListener } from './ListSelectionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.ListSelectionListener;
+
+                import { ListSelectionEvent } from './ListSelectionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.ListSelectionEvent;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.ActionEvent;
+
+                import { EventQueue } from './EventQueue.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.EventQueue;
+
+                
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         
 

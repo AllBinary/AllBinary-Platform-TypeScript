@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -57,11 +57,21 @@ import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-import { NullRotationAnimation } from './NullRotationAnimation.js';
-import { AnimationBehavior } from './AnimationBehavior.js';
-import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
 
+                import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
+
+                import { NullRotationAnimation } from './NullRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.NullRotationAnimation;
+
+                import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
+
+                import { Animation } from './Animation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.Animation;
+
+                
 export class RotationAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {

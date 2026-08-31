@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
@@ -41,7 +41,9 @@ import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/i
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextFieldItemValidator } from './TextFieldItemValidator.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.item.validation.TextFieldItemValidator;
 
+                
 export class UsernameValidator extends TextFieldItemValidator {
         
 

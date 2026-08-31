@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -81,7 +81,9 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UpKeyEventListenerInterface } from './UpKeyEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.UpKeyEventListenerInterface;
 
+                
 export class UpKeyEventHandlerBase extends BasicEventHandler {
         
 

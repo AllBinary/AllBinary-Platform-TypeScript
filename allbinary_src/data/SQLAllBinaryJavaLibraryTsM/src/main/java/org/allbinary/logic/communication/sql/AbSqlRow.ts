@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -83,7 +83,9 @@ import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlColumn } from './AbSqlColumn.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.AbSqlColumn;
 
+                
 export class AbSqlRow extends AbSqlColumn {
         
 

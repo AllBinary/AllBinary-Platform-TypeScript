@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -101,8 +101,12 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CssElementData } from './CssElementData.js';
-import { CssElementsValidationFactory } from './CssElementsValidationFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.CssElementData;
 
+                import { CssElementsValidationFactory } from './CssElementsValidationFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.css.CssElementsValidationFactory;
+
+                
 export class CssElementView
             extends Object
          implements DomNodeInterface {

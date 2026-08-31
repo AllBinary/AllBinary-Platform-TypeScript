@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -99,17 +99,39 @@ import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { Graphics } from './Graphics.js';
-import { JComboBox } from './JComboBox.js';
-import { JLabel } from './JLabel.js';
-import { JButton } from './JButton.js';
-import { JCheckBox } from './JCheckBox.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
-import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JPanel;
 
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Graphics;
+
+                import { JComboBox } from './JComboBox.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JComboBox;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JLabel;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JButton;
+
+                import { JCheckBox } from './JCheckBox.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.JCheckBox;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.Short;
+
+                import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.DefaultComboBoxModel;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.image.gui.ActionEvent;
+
+                
 export class RotationSpriteImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 

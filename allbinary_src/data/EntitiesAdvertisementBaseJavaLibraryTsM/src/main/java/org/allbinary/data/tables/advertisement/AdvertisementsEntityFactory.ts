@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -49,8 +49,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementsEntity } from './AdvertisementsEntity.js';
-import { AdvertisementsEntityInterface } from './AdvertisementsEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntity;
 
+                import { AdvertisementsEntityInterface } from './AdvertisementsEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.advertisement.AdvertisementsEntityInterface;
+
+                
 export class AdvertisementsEntityFactory
             extends Object
          {

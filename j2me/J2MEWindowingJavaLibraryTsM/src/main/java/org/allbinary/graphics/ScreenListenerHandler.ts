@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScreenEmptyListener } from './ScreenEmptyListener.js';
-import { ScreenListenerInterface } from './ScreenListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.ScreenEmptyListener;
 
+                import { ScreenListenerInterface } from './ScreenListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.ScreenListenerInterface;
+
+                
 export class ScreenListenerHandler
             extends Object
          {

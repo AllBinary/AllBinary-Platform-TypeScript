@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -55,8 +55,12 @@ import { HashMap } from '../../../../../../../java/util/HashMap.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
 
+                import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationData;
+
+                
 export class EmailServerConfiguration
             extends Object
          implements EmailServerConfigurationInterface {

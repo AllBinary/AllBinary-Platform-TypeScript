@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -60,8 +60,10 @@ import { PlayN } from '../../../../../playn/core/PlayN.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogFormatUtil } from './LogFormatUtil.js';
-//ActualPlatform
+        //not plain js import { LogFormatUtil } from './LogFormatUtil.js';
+const  = globalThis.org.allbinary.logic.communication.log.LogFormatUtil;
+
+                //ActualPlatform
 /*actual*/ export class PreLogUtil
             extends Object
          {

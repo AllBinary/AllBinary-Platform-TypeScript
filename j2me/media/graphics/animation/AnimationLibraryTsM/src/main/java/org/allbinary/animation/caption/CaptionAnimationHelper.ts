@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
@@ -73,8 +73,12 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CaptionAnimationHelperBase } from './CaptionAnimationHelperBase.js';
-import { CaptionAnimation } from './CaptionAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.caption.CaptionAnimationHelperBase;
 
+                import { CaptionAnimation } from './CaptionAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.caption.CaptionAnimation;
+
+                
 export class CaptionAnimationHelper extends CaptionAnimationHelperBase {
         
 

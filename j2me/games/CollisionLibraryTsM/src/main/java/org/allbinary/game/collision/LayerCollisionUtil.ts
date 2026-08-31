@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -55,9 +55,15 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollisionProcessor } from './CollisionProcessor.js';
-import { Collision2DProcessor } from './Collision2DProcessor.js';
-import { CollisionThreedProcessor } from './CollisionThreedProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionProcessor;
 
+                import { Collision2DProcessor } from './Collision2DProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.Collision2DProcessor;
+
+                import { CollisionThreedProcessor } from './CollisionThreedProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollisionThreedProcessor;
+
+                
 export class LayerCollisionUtil
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';

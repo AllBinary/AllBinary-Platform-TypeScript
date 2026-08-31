@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -103,16 +103,36 @@ import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/syste
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
-import { TouchButtonResource } from './TouchButtonResource.js';
-import { TouchButtonGenericActionResource } from './TouchButtonGenericActionResource.js';
-import { TouchButtonStartResource } from './TouchButtonStartResource.js';
-import { TouchButtonUpResource } from './TouchButtonUpResource.js';
-import { TouchButtonDownResource } from './TouchButtonDownResource.js';
-import { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
-import { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
-import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
-import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonBlankResource;
 
+                import { TouchButtonResource } from './TouchButtonResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonResource;
+
+                import { TouchButtonGenericActionResource } from './TouchButtonGenericActionResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonGenericActionResource;
+
+                import { TouchButtonStartResource } from './TouchButtonStartResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonStartResource;
+
+                import { TouchButtonUpResource } from './TouchButtonUpResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonUpResource;
+
+                import { TouchButtonDownResource } from './TouchButtonDownResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonDownResource;
+
+                import { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonTurnLeftResource;
+
+                import { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonTurnRightResource;
+
+                import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeLeftResource;
+
+                import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.TouchButtonStrafeRightResource;
+
+                
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
 

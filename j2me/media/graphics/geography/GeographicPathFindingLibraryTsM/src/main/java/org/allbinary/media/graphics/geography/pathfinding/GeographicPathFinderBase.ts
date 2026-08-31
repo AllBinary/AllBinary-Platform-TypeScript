@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -51,7 +51,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultipassState } from './MultipassState.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.pathfinding.MultipassState;
 
+                
 export class GeographicPathFinderBase
             extends Object
          {

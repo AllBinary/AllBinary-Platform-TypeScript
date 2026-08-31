@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/Im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputImageType } from './InputImageType.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.InputImageType;
 
+                
 export class InputImageIOInterfaceFactory
             extends Object
          {

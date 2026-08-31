@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -57,7 +57,9 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LineAnimation } from './LineAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.vector.LineAnimation;
 
+                
 export class LineAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

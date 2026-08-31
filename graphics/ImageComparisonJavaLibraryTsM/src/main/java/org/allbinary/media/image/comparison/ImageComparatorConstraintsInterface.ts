@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -51,8 +51,12 @@ import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Rectangle } from './Rectangle.js';
-import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.Rectangle;
 
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.Color;
+
+                
 export interface ImageComparatorConstraintsInterface {
         
 

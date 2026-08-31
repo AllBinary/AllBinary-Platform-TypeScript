@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
@@ -57,7 +57,9 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ResourceAnimationInterfaceFactoryInterface } from './ResourceAnimationInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.resource.ResourceAnimationInterfaceFactoryInterface;
 
+                
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         
 

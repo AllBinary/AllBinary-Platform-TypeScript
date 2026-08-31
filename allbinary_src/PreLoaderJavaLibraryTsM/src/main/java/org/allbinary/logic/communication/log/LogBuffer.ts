@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -42,9 +42,13 @@ import { Vector } from '../../../../../java/util/Vector.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogUtil } from './LogUtil.js';
-import { Log } from './Log.js';
+        //not plain js import { LogUtil } from './LogUtil.js';
+const  = globalThis.org.allbinary.logic.communication.log.LogUtil;
 
+                //not plain js import { Log } from './Log.js';
+const  = globalThis.org.allbinary.logic.communication.log.Log;
+
+                
 export class LogBuffer
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -51,8 +51,12 @@ import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayerFactoryInterface } from './AllBinaryLayerFactoryInterface.js';
-import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayerFactoryInterface;
 
+                import { AllBinaryLayer } from './AllBinaryLayer.js';
+//not GWT import const  = globalThis.org.allbinary.layer.AllBinaryLayer;
+
+                
 export class AllBinaryLayerFactory
             extends Object
          implements AllBinaryLayerFactoryInterface {

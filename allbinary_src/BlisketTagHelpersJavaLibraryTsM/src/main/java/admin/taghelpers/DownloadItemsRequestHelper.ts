@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -79,8 +79,12 @@ import { DownloadableInventoryItemView } from '../../views/admin/inventory/downl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
+//not GWT import const  = globalThis.admin.taghelpers.ModifyTable;
 
+                import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
+//not GWT import const  = globalThis.admin.taghelpers.InventoryItemViewParentTagHelper;
+
+                
 export class DownloadItemsRequestHelper extends ModifyTable {
         
 

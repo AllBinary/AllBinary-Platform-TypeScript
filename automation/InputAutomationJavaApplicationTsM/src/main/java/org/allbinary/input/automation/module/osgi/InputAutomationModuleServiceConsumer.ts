@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
@@ -49,7 +49,9 @@ import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleOSGIServiceVisitor } from './InputAutomationModuleOSGIServiceVisitor.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.osgi.InputAutomationModuleOSGIServiceVisitor;
 
+                
 export class InputAutomationModuleServiceConsumer extends InputAutomationServiceConsumer {
         
 

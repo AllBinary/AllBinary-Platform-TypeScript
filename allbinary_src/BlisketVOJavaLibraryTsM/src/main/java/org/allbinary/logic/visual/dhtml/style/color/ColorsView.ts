@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -67,8 +67,12 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorData } from './ColorData.js';
-import { ColorsData } from './ColorsData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorData;
 
+                import { ColorsData } from './ColorsData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.color.ColorsData;
+
+                
 export class ColorsView
             extends Object
          implements DomNodeInterface {

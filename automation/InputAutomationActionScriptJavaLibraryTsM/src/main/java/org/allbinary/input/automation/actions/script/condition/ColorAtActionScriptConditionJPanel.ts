@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Integer } from '../../../../../../../java/lang/Integer.js';
@@ -55,17 +55,39 @@ import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/im
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-import { JTextField } from './JTextField.js';
-import { JLabel } from './JLabel.js';
-import { JDialog } from './JDialog.js';
-import { JButton } from './JButton.js';
-import { Dimension } from './Dimension.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JPanel;
 
+                import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionInterface;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JTextField;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JLabel;
+
+                import { JDialog } from './JDialog.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JDialog;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JButton;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Dimension;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ActionEvent;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Short;
+
+                
 export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
         
 

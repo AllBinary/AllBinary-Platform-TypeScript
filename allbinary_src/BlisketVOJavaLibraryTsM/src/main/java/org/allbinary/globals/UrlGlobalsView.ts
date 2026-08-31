@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -61,7 +61,9 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UrlGlobalsData } from './UrlGlobalsData.js';
+//not GWT import const  = globalThis.org.allbinary.globals.UrlGlobalsData;
 
+                
 export class UrlGlobalsView
             extends Object
          implements DomNodeInterface {

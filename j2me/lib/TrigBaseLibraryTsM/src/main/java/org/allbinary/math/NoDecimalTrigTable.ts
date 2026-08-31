@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -78,10 +78,16 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AngleFactory } from './AngleFactory.js';
-import { PositionStrings } from './PositionStrings.js';
-import { Angle } from './Angle.js';
+        //not plain js import { AngleFactory } from './AngleFactory.js';
+const  = globalThis.org.allbinary.math.AngleFactory;
 
+                //not plain js import { PositionStrings } from './PositionStrings.js';
+const  = globalThis.org.allbinary.math.PositionStrings;
+
+                //not plain js import { Angle } from './Angle.js';
+const  = globalThis.org.allbinary.math.Angle;
+
+                
 export class NoDecimalTrigTable
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -121,7 +121,9 @@ import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLES
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
-//TTF
+//not GWT import const  = globalThis.org.allbinary.emulator.device.TrueTypeFontUtilBase;
+
+                //TTF
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 

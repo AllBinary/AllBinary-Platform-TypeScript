@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/c
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
 
+                
 export class MotionRectanglesResultsFrameCacheable
             extends Object
          implements CacheableInterface {

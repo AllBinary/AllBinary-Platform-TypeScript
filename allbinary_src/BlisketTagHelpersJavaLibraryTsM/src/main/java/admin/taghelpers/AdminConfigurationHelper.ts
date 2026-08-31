@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -51,7 +51,9 @@ import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
+//not GWT import const  = globalThis.admin.taghelpers.BasicTable;
 
+                
 export class AdminConfigurationHelper extends BasicTable {
         
 

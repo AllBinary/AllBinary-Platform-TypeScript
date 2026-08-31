@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -71,7 +71,9 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoTemplateTransformInfoObjectConfig } from './NoTemplateTransformInfoObjectConfig.js';
+//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.template.objectConfig.NoTemplateTransformInfoObjectConfig;
 
+                
 export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplateTransformInfoObjectConfig {
         
 

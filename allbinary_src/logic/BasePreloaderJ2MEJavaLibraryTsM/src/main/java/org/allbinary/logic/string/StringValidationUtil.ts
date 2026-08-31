@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -54,8 +54,10 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StringUtil } from './StringUtil.js';
+        //not plain js import { StringUtil } from './StringUtil.js';
+const  = globalThis.org.allbinary.logic.string.StringUtil;
 
+                
 export class StringValidationUtil
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -67,7 +67,9 @@ import { IdGeneratorEntityFactory } from '../../../../org/allbinary/data/tables/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorInterface } from './IdGeneratorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.generator.IdGeneratorInterface;
 
+                
 export class UniqueIdGenerator
             extends Object
          implements IdGeneratorInterface {

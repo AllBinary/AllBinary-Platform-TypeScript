@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -115,15 +115,33 @@ import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-import { MotionRectangles } from './MotionRectangles.js';
-import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-import { Graphics } from './Graphics.js';
-import { MotionRectangle } from './MotionRectangle.js';
-import { Rectangle } from './Rectangle.js';
-import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectanglesResultsCacheSingleton;
 
+                import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsFrameCacheable;
+
+                import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
+
+                import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConsolidatedMotionRectanglesResultsCacheSingleton;
+
+                import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectanglesResultsCacheSingleton;
+
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Graphics;
+
+                import { MotionRectangle } from './MotionRectangle.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangle;
+
+                import { Rectangle } from './Rectangle.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Rectangle;
+
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.Color;
+
+                
 export class MotionRectanglesImageInputOutput
             extends Object
          implements ImageIOInterface {

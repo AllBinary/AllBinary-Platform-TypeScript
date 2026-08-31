@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -89,8 +89,12 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StylesData } from './StylesData.js';
-import { StyleData } from './StyleData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.StylesData;
 
+                import { StyleData } from './StyleData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.dhtml.style.StyleData;
+
+                
 export class StylesValidationFactory
             extends Object
          {

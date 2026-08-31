@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -109,7 +109,9 @@ import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/E
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.scroller.BasePatrolAI;
 
+                
 export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerInterface {
         
 

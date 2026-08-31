@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -63,7 +63,9 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureInput } from './MotionGestureInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.MotionGestureInput;
 
+                
 export class TouchMotionGestureFactory
             extends Object
          {

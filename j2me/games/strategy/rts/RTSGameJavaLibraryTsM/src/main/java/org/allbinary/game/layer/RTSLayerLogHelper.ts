@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graph
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.PathFindingLayerInterface;
 
+                
 export class RTSLayerLogHelper
             extends Object
          {

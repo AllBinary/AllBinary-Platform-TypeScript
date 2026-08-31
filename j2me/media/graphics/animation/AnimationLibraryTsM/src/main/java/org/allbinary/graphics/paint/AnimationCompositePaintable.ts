@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
@@ -45,7 +45,9 @@ import { Animation } from '../../../../org/allbinary/animation/Animation.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitUpdatePaintable } from './InitUpdatePaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.paint.InitUpdatePaintable;
 
+                
 export class AnimationCompositePaintable extends InitUpdatePaintable {
         
 

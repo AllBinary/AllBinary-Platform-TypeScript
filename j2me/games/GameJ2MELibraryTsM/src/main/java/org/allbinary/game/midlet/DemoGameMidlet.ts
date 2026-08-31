@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -87,9 +87,15 @@ import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidlet } from './GameMidlet.js';
-import { DemoRunnable } from './DemoRunnable.js';
-import { CreateGameRunnable } from './CreateGameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.GameMidlet;
 
+                import { DemoRunnable } from './DemoRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoRunnable;
+
+                import { CreateGameRunnable } from './CreateGameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.CreateGameRunnable;
+
+                
 export class DemoGameMidlet extends GameMidlet {
         
 

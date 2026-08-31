@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
@@ -57,10 +57,18 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
-import { LicenseLoadingType } from './LicenseLoadingType.js';
-import { LicensedDemoSetupFactory } from './LicensedDemoSetupFactory.js';
-import { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.DemoGameMidlet;
 
+                import { LicenseLoadingType } from './LicenseLoadingType.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.LicenseLoadingType;
+
+                import { LicensedDemoSetupFactory } from './LicensedDemoSetupFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.LicensedDemoSetupFactory;
+
+                import { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.midlet.LicenseCheckRunnableFactory;
+
+                
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         
 

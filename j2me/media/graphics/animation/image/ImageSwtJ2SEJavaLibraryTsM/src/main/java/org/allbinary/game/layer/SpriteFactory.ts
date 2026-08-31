@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -62,8 +62,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SpriteFactoryInterface } from './SpriteFactoryInterface.js';
+        //not plain js import { SpriteFactoryInterface } from './SpriteFactoryInterface.js';
+const  = globalThis.org.allbinary.game.layer.SpriteFactoryInterface;
 
+                
 export class SpriteFactory
             extends Object
          implements SpriteFactoryInterface {

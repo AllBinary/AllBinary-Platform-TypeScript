@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -105,7 +105,9 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SalvoInterface } from './SalvoInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.part.weapon.SalvoInterface;
 
+                
 export class BasicWeaponPart
             extends Object
          implements PartInterface, SalvoInterface {

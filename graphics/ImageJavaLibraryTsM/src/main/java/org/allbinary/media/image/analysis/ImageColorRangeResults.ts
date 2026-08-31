@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorRangeInterface } from './ColorRangeInterface.js';
-import { ColorRange } from './ColorRange.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ColorRangeInterface;
 
+                import { ColorRange } from './ColorRange.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ColorRange;
+
+                
 export class ImageColorRangeResults
             extends Object
          {

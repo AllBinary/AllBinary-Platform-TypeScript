@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -79,8 +79,12 @@ import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NullJ2SEControl } from './NullJ2SEControl.js';
-import { NullAudioFormat } from './NullAudioFormat.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NullJ2SEControl;
 
+                import { NullAudioFormat } from './NullAudioFormat.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.NullAudioFormat;
+
+                
 export class NullClip
             extends Object
          implements Clip {

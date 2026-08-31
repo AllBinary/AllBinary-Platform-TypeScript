@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -55,7 +55,9 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../../org/allbina
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsLayer } from './PointsLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.pickup.points.PointsLayer;
 
+                
 export class PointsLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 

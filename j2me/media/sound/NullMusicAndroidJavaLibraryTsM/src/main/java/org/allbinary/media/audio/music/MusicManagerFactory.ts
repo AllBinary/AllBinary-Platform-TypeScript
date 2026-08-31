@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -43,8 +43,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MusicManager } from './MusicManager.js';
-import { MusicService } from './MusicService.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.music.MusicManager;
 
+                import { MusicService } from './MusicService.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.music.MusicService;
+
+                
 export class MusicManagerFactory
             extends Object
          {

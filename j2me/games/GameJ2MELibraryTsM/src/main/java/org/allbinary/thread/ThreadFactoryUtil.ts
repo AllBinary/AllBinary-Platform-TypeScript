@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -99,9 +99,15 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABRunnable } from './ABRunnable.js';
-import { PrimaryThreadPool } from './PrimaryThreadPool.js';
-import { ThreadPool } from './ThreadPool.js';
+//not GWT import const  = globalThis.org.allbinary.thread.ABRunnable;
 
+                import { PrimaryThreadPool } from './PrimaryThreadPool.js';
+//not GWT import const  = globalThis.org.allbinary.thread.PrimaryThreadPool;
+
+                import { ThreadPool } from './ThreadPool.js';
+//not GWT import const  = globalThis.org.allbinary.thread.ThreadPool;
+
+                
 export class ThreadFactoryUtil
             extends Object
          {

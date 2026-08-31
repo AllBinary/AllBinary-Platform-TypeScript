@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutab
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
-import { ImageCreationUtil } from './ImageCreationUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageJ2SERotationUtil;
 
+                //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+const  = globalThis.org.allbinary.media.image.ImageCreationUtil;
+
+                
 export class ImageRotationUtil
             extends Object
          {

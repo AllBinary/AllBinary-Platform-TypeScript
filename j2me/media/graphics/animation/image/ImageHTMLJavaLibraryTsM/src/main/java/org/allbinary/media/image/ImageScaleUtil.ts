@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -72,8 +72,10 @@ import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageCreationUtil } from './ImageCreationUtil.js';
+        //not plain js import { ImageCreationUtil } from './ImageCreationUtil.js';
+const  = globalThis.org.allbinary.media.image.ImageCreationUtil;
 
+                
 export class ImageScaleUtil
             extends Object
          {

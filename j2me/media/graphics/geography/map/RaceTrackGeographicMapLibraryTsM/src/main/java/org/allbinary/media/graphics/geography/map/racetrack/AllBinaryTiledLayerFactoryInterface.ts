@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -29,8 +29,12 @@ import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackInfo } from './RaceTrackInfo.js';
-import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
 
+                import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+
+                
 export interface AllBinaryTiledLayerFactoryInterface {
         
 

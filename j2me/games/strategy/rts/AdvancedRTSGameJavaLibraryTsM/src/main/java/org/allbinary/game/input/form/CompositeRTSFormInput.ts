@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -87,9 +87,15 @@ import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/me
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
-import { WaypointRTSFormInput } from './WaypointRTSFormInput.js';
-import { UnitRTSFormInput } from './UnitRTSFormInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.form.RTSFormInput;
 
+                import { WaypointRTSFormInput } from './WaypointRTSFormInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.form.WaypointRTSFormInput;
+
+                import { UnitRTSFormInput } from './UnitRTSFormInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.form.UnitRTSFormInput;
+
+                
 export class CompositeRTSFormInput extends RTSFormInput {
         
 

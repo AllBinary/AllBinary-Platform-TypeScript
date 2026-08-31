@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -36,8 +36,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PlatformImage } from './PlatformImage.js';
-//PlatformNullImageJavaLibrary
+        //not plain js import { PlatformImage } from './PlatformImage.js';
+const  = globalThis.javax.microedition.lcdui.PlatformImage;
+
+                //PlatformNullImageJavaLibrary
 export class PostLoadPlatformImage extends PlatformImage {
         
 

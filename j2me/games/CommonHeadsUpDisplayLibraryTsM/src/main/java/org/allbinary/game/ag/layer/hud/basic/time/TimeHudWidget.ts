@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -63,7 +63,9 @@ import { MyFontProcessor } from '../../../../../../../../org/allbinary/graphics/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Timer } from './Timer.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.time.Timer;
 
+                
 export class TimeHudWidget extends BasicHud {
         
 

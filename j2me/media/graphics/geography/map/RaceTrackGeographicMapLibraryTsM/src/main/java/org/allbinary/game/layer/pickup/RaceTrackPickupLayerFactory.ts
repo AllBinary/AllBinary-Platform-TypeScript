@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackPickupLayer } from './RaceTrackPickupLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.pickup.RaceTrackPickupLayer;
 
+                
 export class RaceTrackPickupLayerFactory
             extends Object
          implements AllBinaryLayerFactoryInterface {

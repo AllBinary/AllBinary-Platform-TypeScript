@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -93,7 +93,9 @@ import { TransformInfoObjectFactory } from '../../../../../org/allbinary/logic/v
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInterface } from './TransformInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.TransformInterface;
 
+                
 export class TransformFactory
             extends Object
          {

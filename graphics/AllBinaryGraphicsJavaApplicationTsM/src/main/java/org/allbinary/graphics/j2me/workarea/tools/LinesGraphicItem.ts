@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -123,16 +123,36 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
-import { Color } from './Color.js';
-import { Points } from './Points.js';
-import { PointsDomUtil } from './PointsDomUtil.js';
-import { Graphics2D } from './Graphics2D.js';
-import { BasicStroke } from './BasicStroke.js';
-import { PointsUtil } from './PointsUtil.js';
-import { Graphics } from './Graphics.js';
-import { MouseEvent } from './MouseEvent.js';
-import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
 
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Color;
+
+                import { Points } from './Points.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
+
+                import { PointsDomUtil } from './PointsDomUtil.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsDomUtil;
+
+                import { Graphics2D } from './Graphics2D.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics2D;
+
+                import { BasicStroke } from './BasicStroke.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.BasicStroke;
+
+                import { PointsUtil } from './PointsUtil.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.PointsUtil;
+
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics;
+
+                import { MouseEvent } from './MouseEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
+
+                import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.KeyEvent;
+
+                
 export class LinesGraphicItem
             extends Object
          implements GraphicItemInterface {

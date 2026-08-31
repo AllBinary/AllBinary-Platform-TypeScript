@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { UserEmailEventsConfigurationInterface } from '../../../../../../../org/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailConfigurationInterface } from './UserEmailConfigurationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.user.UserEmailConfigurationInterface;
 
+                
 export class UserEmailConfiguration
             extends Object
          implements UserEmailConfigurationInterface {

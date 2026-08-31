@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -77,8 +77,12 @@ import { WorkSound } from '../../../../../org/allbinary/media/audio/WorkSound.js
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Waypoint } from './Waypoint.js';
-import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.Waypoint;
 
+                import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.WaypointInfoHudPaintable;
+
+                
 export class WorkWaypoint extends Waypoint {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -47,7 +47,9 @@ import { StringValidationUtil } from '../../../org/allbinary/logic/string/String
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UrlGlobalsInterface } from './UrlGlobalsInterface.js';
+//not GWT import const  = globalThis.org.allbinary.globals.UrlGlobalsInterface;
 
+                
 export class WebAppUrlGlobals extends UrlGlobalsInterface {
         
 

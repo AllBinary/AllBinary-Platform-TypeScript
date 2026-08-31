@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/Scr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayerFormFactoryInterface } from './RTSLayerFormFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.RTSLayerFormFactoryInterface;
 
+                
 export class RTSLayerFormFactory
             extends Object
          implements RTSLayerFormFactoryInterface {

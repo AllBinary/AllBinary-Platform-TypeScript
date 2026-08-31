@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Long } from '../../../java/lang/Long.js';
@@ -59,7 +59,9 @@ import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseGameStatistics } from './BaseGameStatistics.js';
+//not GWT import const  = globalThis.org.allbinary.canvas.BaseGameStatistics;
 
+                
 export class AndroidGameStatistics extends BaseGameStatistics {
         
 

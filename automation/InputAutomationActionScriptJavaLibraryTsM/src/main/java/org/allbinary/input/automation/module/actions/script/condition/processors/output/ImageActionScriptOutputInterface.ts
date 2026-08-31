@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptOutputInterface } from './ProfileActionScriptOutputInterface.js';
-import { ImageTypes } from './ImageTypes.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ProfileActionScriptOutputInterface;
 
+                import { ImageTypes } from './ImageTypes.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
+
+                
 export interface ImageActionScriptOutputInterface extends ProfileActionScriptOutputInterface {
         
 

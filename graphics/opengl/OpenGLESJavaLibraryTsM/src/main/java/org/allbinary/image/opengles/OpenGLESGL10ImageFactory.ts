@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Image } from '../../../../javax/microedition/lcdui/Image.js';
@@ -49,8 +49,12 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLImageFactory } from './OpenGLImageFactory.js';
-import { OpenGLESGL10Image } from './OpenGLESGL10Image.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLImageFactory;
 
+                import { OpenGLESGL10Image } from './OpenGLESGL10Image.js';
+//not GWT import const  = globalThis.org.allbinary.image.opengles.OpenGLESGL10Image;
+
+                
 export class OpenGLESGL10ImageFactory extends OpenGLImageFactory {
         
 

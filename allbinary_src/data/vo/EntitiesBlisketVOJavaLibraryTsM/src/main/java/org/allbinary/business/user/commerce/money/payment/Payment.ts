@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -79,9 +79,15 @@ import { Node } from '../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentInterface } from './PaymentInterface.js';
-import { PaymentData } from './PaymentData.js';
-import { CreditCardType } from './CreditCardType.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentInterface;
 
+                import { PaymentData } from './PaymentData.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.PaymentData;
+
+                import { CreditCardType } from './CreditCardType.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.CreditCardType;
+
+                
 export class Payment
             extends Object
          implements PaymentInterface, DomNodeInterface {

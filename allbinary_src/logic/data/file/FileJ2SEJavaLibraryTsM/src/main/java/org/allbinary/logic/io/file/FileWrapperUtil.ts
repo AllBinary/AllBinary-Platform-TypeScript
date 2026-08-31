@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { File } from '../../../../../java/io/File.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbFile } from './AbFile.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.file.AbFile;
 
+                
 export class FileWrapperUtil
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import hilog from '@ohos.hilog';
@@ -57,7 +57,9 @@ import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/sy
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidSystemProperties } from './AndroidSystemProperties.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.android.AndroidSystemProperties;
 
+                
 export class AndroidOS extends GenericOperatingSystem {
         
 

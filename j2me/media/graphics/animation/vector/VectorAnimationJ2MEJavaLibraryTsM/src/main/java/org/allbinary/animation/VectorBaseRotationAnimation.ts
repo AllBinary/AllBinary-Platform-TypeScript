@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -83,9 +83,15 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RotationAnimation } from './RotationAnimation.js';
-import { VectorAnimationInterface } from './VectorAnimationInterface.js';
-import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.RotationAnimation;
 
+                import { VectorAnimationInterface } from './VectorAnimationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationInterface;
+
+                import { AnimationBehavior } from './AnimationBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationBehavior;
+
+                
 export class VectorBaseRotationAnimation extends RotationAnimation implements VectorAnimationInterface {
         
 

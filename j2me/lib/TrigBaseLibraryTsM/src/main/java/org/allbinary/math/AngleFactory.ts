@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -76,10 +76,16 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Angle } from './Angle.js';
-import { NamedAngle } from './NamedAngle.js';
-import { FrameUtil } from './FrameUtil.js';
+        //not plain js import { Angle } from './Angle.js';
+const  = globalThis.org.allbinary.math.Angle;
 
+                //not plain js import { NamedAngle } from './NamedAngle.js';
+const  = globalThis.org.allbinary.math.NamedAngle;
+
+                //not plain js import { FrameUtil } from './FrameUtil.js';
+const  = globalThis.org.allbinary.math.FrameUtil;
+
+                
 export class AngleFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { NumberStringHud } from '../../../../../org/allbinary/game/ag/layer/hud/basic/NumberStringHud.js';
@@ -41,7 +41,9 @@ import { NumberStringHud } from '../../../../../org/allbinary/game/ag/layer/hud/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Capital } from './Capital.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.capital.Capital;
 
+                
 export class HudCapital extends Capital {
         
 

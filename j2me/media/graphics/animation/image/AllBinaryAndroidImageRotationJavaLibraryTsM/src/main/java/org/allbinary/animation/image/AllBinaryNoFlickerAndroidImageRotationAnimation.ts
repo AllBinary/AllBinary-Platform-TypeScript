@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -75,7 +75,9 @@ import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidI
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
 
+                
 export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

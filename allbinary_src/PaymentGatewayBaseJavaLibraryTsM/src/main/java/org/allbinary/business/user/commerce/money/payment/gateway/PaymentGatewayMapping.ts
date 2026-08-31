@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGatewayInterface;
 
+                
 export class PaymentGatewayMapping
             extends Object
          implements TableMappingInterface {

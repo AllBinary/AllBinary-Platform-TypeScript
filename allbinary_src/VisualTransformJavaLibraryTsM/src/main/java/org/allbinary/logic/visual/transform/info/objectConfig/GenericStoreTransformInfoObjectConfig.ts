@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -107,8 +107,12 @@ import { Document } from '../../../../../../../org/w3c/dom/Document.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
-import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfig;
 
+                import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
+
+                
 export class GenericStoreTransformInfoObjectConfig extends TransformInfoObjectConfig {
         
 

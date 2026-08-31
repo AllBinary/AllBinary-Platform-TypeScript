@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -55,8 +55,12 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FileItemStream } from './FileItemStream.js';
-import { FileItem } from './FileItem.js';
+//not GWT import const  = globalThis.org.apache.commons.fileupload.FileItemStream;
 
+                import { FileItem } from './FileItem.js';
+//not GWT import const  = globalThis.org.apache.commons.fileupload.FileItem;
+
+                
 export class FileItemUtil
             extends Object
          {

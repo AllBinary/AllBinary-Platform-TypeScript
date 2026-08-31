@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -43,7 +43,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
 
+                
 export class TiledLayerFactory
             extends Object
          {

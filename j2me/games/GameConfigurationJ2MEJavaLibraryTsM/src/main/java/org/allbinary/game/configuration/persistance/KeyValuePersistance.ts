@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -111,10 +111,18 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPersitance } from './BasicPersitance.js';
-import { NullRecordStore } from './NullRecordStore.js';
-import { NullRecordFilter } from './NullRecordFilter.js';
-import { NullRecordComparator } from './NullRecordComparator.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.persistance.BasicPersitance;
 
+                import { NullRecordStore } from './NullRecordStore.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.persistance.NullRecordStore;
+
+                import { NullRecordFilter } from './NullRecordFilter.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.persistance.NullRecordFilter;
+
+                import { NullRecordComparator } from './NullRecordComparator.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.persistance.NullRecordComparator;
+
+                
 export class KeyValuePersistance extends BasicPersitance {
         
 

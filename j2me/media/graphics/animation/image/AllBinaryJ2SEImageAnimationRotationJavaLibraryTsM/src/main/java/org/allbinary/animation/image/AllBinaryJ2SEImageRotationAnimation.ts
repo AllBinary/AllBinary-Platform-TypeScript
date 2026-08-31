@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Throwable } from '../../../../java/lang/Throwable.js';
@@ -81,13 +81,27 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
-import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
-import { ScaleProcessor } from './ScaleProcessor.js';
-import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
-import { SetColorProcessor } from './SetColorProcessor.js';
-import { ChangeColorProcessor } from './ChangeColorProcessor.js';
-import { AlphaProcessor } from './AlphaProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ImageBaseRotationAnimation;
 
+                import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ModifierBaseProcessor;
+
+                import { ScaleProcessor } from './ScaleProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ScaleProcessor;
+
+                import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ScaleBaseProcessor;
+
+                import { SetColorProcessor } from './SetColorProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.SetColorProcessor;
+
+                import { ChangeColorProcessor } from './ChangeColorProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.ChangeColorProcessor;
+
+                import { AlphaProcessor } from './AlphaProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AlphaProcessor;
+
+                
 export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimation {
         
 

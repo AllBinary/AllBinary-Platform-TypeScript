@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.gesture.observer.CompleteMotionGestureListenerInterface;
 
+                
 export class NullCompleteMotionGestureReceiver
             extends Object
          implements CompleteMotionGestureListenerInterface {

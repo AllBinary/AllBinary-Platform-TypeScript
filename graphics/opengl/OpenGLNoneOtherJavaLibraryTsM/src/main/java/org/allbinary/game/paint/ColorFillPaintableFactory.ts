@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -55,9 +55,15 @@ import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillPaintable } from './ColorFillPaintable.js';
-import { OverScanColorFillPaintable } from './OverScanColorFillPaintable.js';
-import { ColorFillBasePaintable } from './ColorFillBasePaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.paint.ColorFillPaintable;
 
+                import { OverScanColorFillPaintable } from './OverScanColorFillPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.paint.OverScanColorFillPaintable;
+
+                import { ColorFillBasePaintable } from './ColorFillBasePaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.paint.ColorFillBasePaintable;
+
+                
 export class ColorFillPaintableFactory
             extends Object
          {

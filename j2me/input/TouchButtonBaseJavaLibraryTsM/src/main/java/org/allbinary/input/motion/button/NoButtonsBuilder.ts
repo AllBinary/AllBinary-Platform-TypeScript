@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -51,7 +51,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.motion.button.BaseTouchInput;
 
+                
 export class NoButtonsBuilder extends BaseTouchInput {
         
 

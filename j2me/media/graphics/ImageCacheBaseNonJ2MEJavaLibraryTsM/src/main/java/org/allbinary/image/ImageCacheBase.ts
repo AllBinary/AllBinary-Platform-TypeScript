@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -99,7 +99,9 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageFactory } from './ImageFactory.js';
+//not GWT import const  = globalThis.org.allbinary.image.ImageFactory;
 
+                
 export class ImageCacheBase
             extends Object
          {

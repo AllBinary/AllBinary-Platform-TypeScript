@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -119,9 +119,15 @@ import { OutputStream } from '../../../../../java/io/OutputStream.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlStrings } from './SqlStrings.js';
-import { StringBuilder } from './StringBuilder.js';
-import { AbSqlTable } from './AbSqlTable.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
+                import { StringBuilder } from './StringBuilder.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.StringBuilder;
+
+                import { AbSqlTable } from './AbSqlTable.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.AbSqlTable;
+
+                
 export class AbSqlTableUtil
             extends Object
          {

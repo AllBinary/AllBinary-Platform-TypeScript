@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { BaseCircularPool } from '../../../org/allbinary/logic/util/cache/BaseCircularPool.js';
@@ -45,7 +45,9 @@ import { BaseCircularPool } from '../../../org/allbinary/logic/util/cache/BaseCi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomGPoint } from './CustomGPoint.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.CustomGPoint;
 
+                
 export class GPointCircularPool extends BaseCircularPool {
         
 

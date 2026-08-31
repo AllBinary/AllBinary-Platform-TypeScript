@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Command } from '../../../../javax/microedition/lcdui/Command.js';
@@ -41,8 +41,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HighScoreCommandsBaseFactory } from './HighScoreCommandsBaseFactory.js';
-import { HighScoreCommands } from './HighScoreCommands.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoreCommandsBaseFactory;
 
+                import { HighScoreCommands } from './HighScoreCommands.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.HighScoreCommands;
+
+                
 export class HighScoreCommandsFactory extends HighScoreCommandsBaseFactory {
         
 

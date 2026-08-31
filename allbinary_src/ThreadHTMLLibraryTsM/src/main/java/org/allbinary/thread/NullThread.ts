@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -44,8 +44,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullRunnable } from './NullRunnable.js';
+        //not plain js import { NullRunnable } from './NullRunnable.js';
+const  = globalThis.org.allbinary.thread.NullRunnable;
 
+                
 export class NullThread
             extends Object
          {

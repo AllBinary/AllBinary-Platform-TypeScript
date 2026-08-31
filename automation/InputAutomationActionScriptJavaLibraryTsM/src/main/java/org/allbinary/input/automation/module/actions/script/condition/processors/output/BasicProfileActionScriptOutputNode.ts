@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileActionScriptOutputData } from './GenericProfileActionScriptOutputData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.GenericProfileActionScriptOutputData;
 
+                
 export class BasicProfileActionScriptOutputNode
             extends Object
          {

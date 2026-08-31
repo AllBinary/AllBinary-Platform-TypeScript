@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -63,9 +63,15 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
-import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-import { AbTagData } from './AbTagData.js';
+//not GWT import const  = globalThis.admin.tags.TableTag;
 
+                import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
+//not GWT import const  = globalThis.admin.tags.ParentInventoryTagHelper;
+
+                import { AbTagData } from './AbTagData.js';
+//not GWT import const  = globalThis.admin.tags.AbTagData;
+
+                
 export class InventoryTag extends TableTag {
         
 

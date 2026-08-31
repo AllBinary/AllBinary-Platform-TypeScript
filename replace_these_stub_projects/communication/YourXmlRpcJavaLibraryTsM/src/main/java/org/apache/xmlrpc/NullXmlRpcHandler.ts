@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -49,7 +49,9 @@ import { Vector } from '../../../java/util/Vector.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { XmlRpcHandler } from './XmlRpcHandler.js';
+//not GWT import const  = globalThis.org.apache.xmlrpc.XmlRpcHandler;
 
+                
 export class NullXmlRpcHandler
             extends Object
          implements XmlRpcHandler {

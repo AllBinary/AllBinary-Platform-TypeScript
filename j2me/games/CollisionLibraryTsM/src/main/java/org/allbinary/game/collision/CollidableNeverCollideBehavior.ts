@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -55,8 +55,12 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableBaseBehavior;
 
+                import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.collision.CollidableInterfaceCompositeInterface;
+
+                
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
 

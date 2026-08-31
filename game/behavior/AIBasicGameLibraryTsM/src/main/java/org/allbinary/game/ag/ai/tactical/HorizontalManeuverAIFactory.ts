@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HorizontalManeuverAI } from './HorizontalManeuverAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.tactical.HorizontalManeuverAI;
 
+                
 export class HorizontalManeuverAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { UpdateOrderHelperFactory } from '../../admin/taghelpers/UpdateOrderHelperFactory.js';
@@ -41,7 +41,9 @@ import { UpdateOrderHelperFactory } from '../../admin/taghelpers/UpdateOrderHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
+//not GWT import const  = globalThis.admin.tags.TableTag;
 
+                
 export class UpdateOrderTag extends TableTag {
         
 

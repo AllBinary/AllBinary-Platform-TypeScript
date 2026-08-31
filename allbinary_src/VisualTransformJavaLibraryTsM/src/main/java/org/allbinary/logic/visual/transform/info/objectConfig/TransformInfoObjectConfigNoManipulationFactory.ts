@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -65,9 +65,15 @@ import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
-import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
-import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigData;
 
+                import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfig;
+
+                import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.info.objectConfig.TransformInfoObjectConfigInterface;
+
+                
 export class TransformInfoObjectConfigNoManipulationFactory
             extends Object
          {

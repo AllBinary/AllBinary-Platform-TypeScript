@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
@@ -27,7 +27,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidKeyFactory } from './AndroidKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidKeyFactory;
 
+                
 export class AndroidAPI1KeyFactory extends AndroidKeyFactory {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -73,10 +73,18 @@ import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ThrustAIVisitorFactory } from './ThrustAIVisitorFactory.js';
-import { BasicProbabilityAIDataFactory } from './BasicProbabilityAIDataFactory.js';
-import { LastKeyAIVisitorFactory } from './LastKeyAIVisitorFactory.js';
-import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.ThrustAIVisitorFactory;
 
+                import { BasicProbabilityAIDataFactory } from './BasicProbabilityAIDataFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.BasicProbabilityAIDataFactory;
+
+                import { LastKeyAIVisitorFactory } from './LastKeyAIVisitorFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.LastKeyAIVisitorFactory;
+
+                import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.DiveAndDirectionalTrackingAI;
+
+                
 export class DiveAndDirectionalTrackingAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

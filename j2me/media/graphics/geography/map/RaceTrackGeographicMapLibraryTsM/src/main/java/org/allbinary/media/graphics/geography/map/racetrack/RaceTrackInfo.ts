@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -45,7 +45,9 @@ import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/Ba
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackFrictionProperties } from './RaceTrackFrictionProperties.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackFrictionProperties;
 
+                
 export class RaceTrackInfo
             extends Object
          {

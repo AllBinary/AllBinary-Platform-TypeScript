@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
@@ -41,8 +41,12 @@ import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerBounds } from './LayerBounds.js';
-import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.bounds.LayerBounds;
 
+                import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.bounds.BoundsVisitorInterface;
+
+                
 export class TopULayerBounds extends LayerBounds {
         
 

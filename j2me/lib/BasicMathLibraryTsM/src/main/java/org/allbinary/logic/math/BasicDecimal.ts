@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -56,8 +56,10 @@ import { JsProperty } from '../../../../jsinterop/annotations/JsProperty.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ScaleFactorFactory } from './ScaleFactorFactory.js';
+        //not plain js import { ScaleFactorFactory } from './ScaleFactorFactory.js';
+const  = globalThis.org.allbinary.logic.math.ScaleFactorFactory;
 
+                
 export class BasicDecimal
             extends Object
          {

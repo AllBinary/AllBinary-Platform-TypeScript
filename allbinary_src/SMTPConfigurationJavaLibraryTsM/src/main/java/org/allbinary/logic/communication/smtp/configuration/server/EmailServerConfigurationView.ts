@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -69,10 +69,18 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailServerConfigurationInterface } from './EmailServerConfigurationInterface.js';
-import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
-import { EmailServerConfiguration } from './EmailServerConfiguration.js';
-import { EmailServerConfigurationMapping } from './EmailServerConfigurationMapping.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationInterface;
 
+                import { EmailServerConfigurationData } from './EmailServerConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationData;
+
+                import { EmailServerConfiguration } from './EmailServerConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfiguration;
+
+                import { EmailServerConfigurationMapping } from './EmailServerConfigurationMapping.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.smtp.configuration.server.EmailServerConfigurationMapping;
+
+                
 export class EmailServerConfigurationView
             extends Object
          implements DomNodeInterface {

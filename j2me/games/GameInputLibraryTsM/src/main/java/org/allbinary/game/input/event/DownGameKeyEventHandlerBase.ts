@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -83,8 +83,12 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyEvent } from './GameKeyEvent.js';
-import { DownGameKeyEventListenerInterface } from './DownGameKeyEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.GameKeyEvent;
 
+                import { DownGameKeyEventListenerInterface } from './DownGameKeyEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.event.DownGameKeyEventListenerInterface;
+
+                
 export class DownGameKeyEventHandlerBase extends BasicEventHandler {
         
 

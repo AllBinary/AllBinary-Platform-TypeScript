@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -71,8 +71,12 @@ import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/lay
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeologicalResourceInfoHudPaintableSingleton } from './GeologicalResourceInfoHudPaintableSingleton.js';
-import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResourceInfoHudPaintableSingleton;
 
+                import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.geological.resources.GeologicalResourceInfoHudPaintable;
+
+                
 export class ResourceWaypointLayer extends WaypointLayer {
         
 

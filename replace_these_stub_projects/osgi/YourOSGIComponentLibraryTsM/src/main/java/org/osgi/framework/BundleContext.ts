@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { Dictionary } from '../../../java/util/Dictionary.js';
@@ -27,9 +27,15 @@ import { Dictionary } from '../../../java/util/Dictionary.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Bundle } from './Bundle.js';
-import { ServiceRegistration } from './ServiceRegistration.js';
-import { ServiceReference } from './ServiceReference.js';
+//not GWT import const  = globalThis.org.osgi.framework.Bundle;
 
+                import { ServiceRegistration } from './ServiceRegistration.js';
+//not GWT import const  = globalThis.org.osgi.framework.ServiceRegistration;
+
+                import { ServiceReference } from './ServiceReference.js';
+//not GWT import const  = globalThis.org.osgi.framework.ServiceReference;
+
+                
 export interface BundleContext {
         
 

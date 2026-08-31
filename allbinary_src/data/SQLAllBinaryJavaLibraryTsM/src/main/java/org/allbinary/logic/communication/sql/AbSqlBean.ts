@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -63,7 +63,9 @@ import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbSqlRow } from './AbSqlRow.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.AbSqlRow;
 
+                
 export class AbSqlBean extends AbSqlRow {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -95,10 +95,18 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
-import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
-import { BasicAnimationInterfaceFactoryInterface } from './BasicAnimationInterfaceFactoryInterface.js';
-import { NullAnimationFactory } from './NullAnimationFactory.js';
+//not GWT import const  = globalThis.org.allbinary.animation.ProceduralAnimationInterfaceFactoryInterface;
 
+                import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.AnimationInterfaceFactoryInterface;
+
+                import { BasicAnimationInterfaceFactoryInterface } from './BasicAnimationInterfaceFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.animation.BasicAnimationInterfaceFactoryInterface;
+
+                import { NullAnimationFactory } from './NullAnimationFactory.js';
+//not GWT import const  = globalThis.org.allbinary.animation.NullAnimationFactory;
+
+                
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {
         
 

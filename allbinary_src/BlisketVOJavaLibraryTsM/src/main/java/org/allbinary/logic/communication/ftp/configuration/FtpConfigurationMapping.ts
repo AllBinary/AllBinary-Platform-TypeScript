@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { TableMappingInterface } from '../../../../../../org/allbinary/data/tabl
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-import { FtpConfigurationData } from './FtpConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
 
+                import { FtpConfigurationData } from './FtpConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
+
+                
 export class FtpConfigurationMapping
             extends Object
          implements TableMappingInterface {

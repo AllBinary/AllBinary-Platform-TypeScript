@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -179,20 +179,48 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { MouseListener } from './MouseListener.js';
-import { MouseMotionListener } from './MouseMotionListener.js';
-import { KeyListener } from './KeyListener.js';
-import { IntegerDimension } from './IntegerDimension.js';
-import { CanvasTreeLabel } from './CanvasTreeLabel.js';
-import { Color } from './Color.js';
-import { Grid } from './Grid.js';
-import { Dimension } from './Dimension.js';
-import { CanvasDom } from './CanvasDom.js';
-import { GridLayout } from './GridLayout.js';
-import { Graphics } from './Graphics.js';
-import { MouseEvent } from './MouseEvent.js';
-import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.JPanel;
 
+                import { MouseListener } from './MouseListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseListener;
+
+                import { MouseMotionListener } from './MouseMotionListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseMotionListener;
+
+                import { KeyListener } from './KeyListener.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyListener;
+
+                import { IntegerDimension } from './IntegerDimension.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
+
+                import { CanvasTreeLabel } from './CanvasTreeLabel.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasTreeLabel;
+
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Color;
+
+                import { Grid } from './Grid.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Grid;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Dimension;
+
+                import { CanvasDom } from './CanvasDom.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasDom;
+
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.GridLayout;
+
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Graphics;
+
+                import { MouseEvent } from './MouseEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.MouseEvent;
+
+                import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.KeyEvent;
+
+                
 export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {
         
 

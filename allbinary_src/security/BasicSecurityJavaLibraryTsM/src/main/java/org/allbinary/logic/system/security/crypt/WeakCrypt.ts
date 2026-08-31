@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -65,7 +65,9 @@ import { KeySpecFactory } from '../../../../../../org/allbinary/logic/system/sec
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DatabaseEncoder } from './DatabaseEncoder.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.DatabaseEncoder;
 
+                
 export class WeakCrypt
             extends Object
          {

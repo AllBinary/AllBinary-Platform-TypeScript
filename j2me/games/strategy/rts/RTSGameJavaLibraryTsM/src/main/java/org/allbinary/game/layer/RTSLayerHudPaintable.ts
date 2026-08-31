@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
@@ -65,8 +65,12 @@ import { UpdateMyFontInterface } from '../../../../org/allbinary/graphics/font/U
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
+                import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+
+                
 export class RTSLayerHudPaintable extends SelectionHudPaintable implements UpdateMyFontInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -151,7 +151,9 @@ import { JsProperty } from '../../../../../../jsinterop/annotations/JsProperty.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { ProgressPaintable } from './ProgressPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.canvas.transition.progress.ProgressPaintable;
 
+                
 export class ProgressCanvas extends RunnableCanvas implements PaintableInterface, UpdateMyFontInterface {
         
 

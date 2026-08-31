@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -49,11 +49,21 @@ import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
-import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
-import { MouseActionScriptInput } from './MouseActionScriptInput.js';
-import { KeyboardActionScriptInput } from './KeyboardActionScriptInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
 
+                import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInputData;
+
+                import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputData;
+
+                import { MouseActionScriptInput } from './MouseActionScriptInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInput;
+
+                import { KeyboardActionScriptInput } from './KeyboardActionScriptInput.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.KeyboardActionScriptInput;
+
+                
 export class ProfileActionScriptInputFactory
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -51,23 +51,57 @@ import { DefaultListModelHelper } from '../../../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { GenericProfileActions } from './GenericProfileActions.js';
-import { GenericProfileActionJPanel } from './GenericProfileActionJPanel.js';
-import { JDialog } from './JDialog.js';
-import { JLabel } from './JLabel.js';
-import { JButton } from './JButton.js';
-import { JTextField } from './JTextField.js';
-import { JScrollPane } from './JScrollPane.js';
-import { JList } from './JList.js';
-import { Dimension } from './Dimension.js';
-import { ActionListener } from './ActionListener.js';
-import { ActionEvent } from './ActionEvent.js';
-import { GroupLayout } from './GroupLayout.js';
-import { Short } from './Short.js';
-import { ListSelectionListener } from './ListSelectionListener.js';
-import { ListSelectionEvent } from './ListSelectionEvent.js';
-import { GenericProfileAction } from './GenericProfileAction.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JPanel;
 
+                import { GenericProfileActions } from './GenericProfileActions.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActions;
+
+                import { GenericProfileActionJPanel } from './GenericProfileActionJPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileActionJPanel;
+
+                import { JDialog } from './JDialog.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JDialog;
+
+                import { JLabel } from './JLabel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JLabel;
+
+                import { JButton } from './JButton.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JButton;
+
+                import { JTextField } from './JTextField.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JTextField;
+
+                import { JScrollPane } from './JScrollPane.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JScrollPane;
+
+                import { JList } from './JList.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.JList;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.Dimension;
+
+                import { ActionListener } from './ActionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.ActionListener;
+
+                import { ActionEvent } from './ActionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.ActionEvent;
+
+                import { GroupLayout } from './GroupLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GroupLayout;
+
+                import { Short } from './Short.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.Short;
+
+                import { ListSelectionListener } from './ListSelectionListener.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.ListSelectionListener;
+
+                import { ListSelectionEvent } from './ListSelectionEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.ListSelectionEvent;
+
+                import { GenericProfileAction } from './GenericProfileAction.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.GenericProfileAction;
+
+                
 export class GenericProfileActionsJPanel extends javax.swing.JPanel {
         
 

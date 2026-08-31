@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CategoryLoader } from './CategoryLoader.js';
-import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.category.CategoryLoader;
 
+                import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tree.category.CategoryLoaderInterface;
+
+                
 export class CategoryLoaderFactory
             extends Object
          {

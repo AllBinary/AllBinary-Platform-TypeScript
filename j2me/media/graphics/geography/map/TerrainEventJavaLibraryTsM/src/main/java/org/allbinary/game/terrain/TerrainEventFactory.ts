@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,7 +51,9 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TerrainEvent } from './TerrainEvent.js';
+//not GWT import const  = globalThis.org.allbinary.game.terrain.TerrainEvent;
 
+                
 export class TerrainEventFactory
             extends Object
          implements AllBinaryEventObjectFactoryInterface {

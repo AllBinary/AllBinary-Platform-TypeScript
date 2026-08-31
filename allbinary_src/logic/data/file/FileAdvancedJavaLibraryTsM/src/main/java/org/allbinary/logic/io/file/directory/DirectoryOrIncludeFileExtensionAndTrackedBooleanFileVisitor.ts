@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -69,9 +69,15 @@ import { IncludeFileExtensionsBooleanFileVisitor } from '../../../../../../org/a
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackedStrings } from './TrackedStrings.js';
-import { ProcessBuilder } from './ProcessBuilder.js';
-import { Process } from './Process.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.file.directory.TrackedStrings;
 
+                import { ProcessBuilder } from './ProcessBuilder.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.file.directory.ProcessBuilder;
+
+                import { Process } from './Process.js';
+//not GWT import const  = globalThis.org.allbinary.logic.io.file.directory.Process;
+
+                
 export class DirectoryOrIncludeFileExtensionAndTrackedBooleanFileVisitor extends IncludeFileExtensionsBooleanFileVisitor {
         
 

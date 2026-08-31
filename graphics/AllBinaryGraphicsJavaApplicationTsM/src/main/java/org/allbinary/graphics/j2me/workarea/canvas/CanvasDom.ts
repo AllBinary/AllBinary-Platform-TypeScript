@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -89,10 +89,18 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IntegerDimension } from './IntegerDimension.js';
-import { Grid } from './Grid.js';
-import { CanvasJPanel } from './CanvasJPanel.js';
-import { Document } from './Document.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.IntegerDimension;
 
+                import { Grid } from './Grid.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Grid;
+
+                import { CanvasJPanel } from './CanvasJPanel.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.CanvasJPanel;
+
+                import { Document } from './Document.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.canvas.Document;
+
+                
 export class CanvasDom
             extends Object
          {

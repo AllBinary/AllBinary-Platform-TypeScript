@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -97,14 +97,30 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
-import { Color } from './Color.js';
-import { Points } from './Points.js';
-import { LinesGraphicItem } from './LinesGraphicItem.js';
-import { Graphics } from './Graphics.js';
-import { MouseEvent } from './MouseEvent.js';
-import { MouseStrings } from './MouseStrings.js';
-import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.GraphicItemInterface;
 
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Color;
+
+                import { Points } from './Points.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Points;
+
+                import { LinesGraphicItem } from './LinesGraphicItem.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.LinesGraphicItem;
+
+                import { Graphics } from './Graphics.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.Graphics;
+
+                import { MouseEvent } from './MouseEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseEvent;
+
+                import { MouseStrings } from './MouseStrings.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.MouseStrings;
+
+                import { KeyEvent } from './KeyEvent.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.j2me.workarea.tools.KeyEvent;
+
+                
 export class SelectionTool
             extends Object
          implements GraphicItemInterface {

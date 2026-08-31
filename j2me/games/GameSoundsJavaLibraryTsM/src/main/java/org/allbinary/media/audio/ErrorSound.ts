@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompositeSound } from './CompositeSound.js';
-import { Sound } from './Sound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.CompositeSound;
 
+                import { Sound } from './Sound.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
+
+                
 export class ErrorSound extends CompositeSound {
         
 

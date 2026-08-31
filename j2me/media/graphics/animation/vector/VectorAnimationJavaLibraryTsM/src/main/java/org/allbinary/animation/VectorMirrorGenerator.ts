@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -69,7 +69,9 @@ import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimationUtil } from './VectorAnimationUtil.js';
+//not GWT import const  = globalThis.org.allbinary.animation.VectorAnimationUtil;
 
+                
 export class VectorMirrorGenerator
             extends Object
          {

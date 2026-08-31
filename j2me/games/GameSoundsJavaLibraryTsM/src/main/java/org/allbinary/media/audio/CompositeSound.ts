@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -51,9 +51,15 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Sound } from './Sound.js';
-import { PlayerComposite } from './PlayerComposite.js';
-import { AllBinaryMediaManager } from './AllBinaryMediaManager.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.Sound;
 
+                import { PlayerComposite } from './PlayerComposite.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.PlayerComposite;
+
+                import { AllBinaryMediaManager } from './AllBinaryMediaManager.js';
+//not GWT import const  = globalThis.org.allbinary.media.audio.AllBinaryMediaManager;
+
+                
 export class CompositeSound extends Sound {
         
 

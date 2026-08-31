@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -77,8 +77,12 @@ import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jc
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SunJCE } from './SunJCE.js';
-import { KeySpecFactory } from './KeySpecFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.SunJCE;
 
+                import { KeySpecFactory } from './KeySpecFactory.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.crypt.jcehelper.KeySpecFactory;
+
+                
 export class AbBasicCrypt
             extends Object
          implements CryptInterface {

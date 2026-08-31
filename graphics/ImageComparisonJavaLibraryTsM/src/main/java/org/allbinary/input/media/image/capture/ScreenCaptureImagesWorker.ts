@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -71,11 +71,21 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CaptureWorkerInterface } from './CaptureWorkerInterface.js';
-import { ScreenScavangerRobot } from './ScreenScavangerRobot.js';
-import { ProcessingFrameIndexFactory } from './ProcessingFrameIndexFactory.js';
-import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
-import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CaptureWorkerInterface;
 
+                import { ScreenScavangerRobot } from './ScreenScavangerRobot.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.ScreenScavangerRobot;
+
+                import { ProcessingFrameIndexFactory } from './ProcessingFrameIndexFactory.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.ProcessingFrameIndexFactory;
+
+                import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedBufferedImagesCacheSingleton;
+
+                import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.input.media.image.capture.CapturedImageWorkerResultsEvent;
+
+                
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 

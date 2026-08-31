@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -41,8 +41,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AppUrlGlobals } from './AppUrlGlobals.js';
-import { UrlGlobalsInterface } from './UrlGlobalsInterface.js';
+//not GWT import const  = globalThis.org.allbinary.globals.AppUrlGlobals;
 
+                import { UrlGlobalsInterface } from './UrlGlobalsInterface.js';
+//not GWT import const  = globalThis.org.allbinary.globals.UrlGlobalsInterface;
+
+                
 export class URLGLOBALS
             extends Object
          {

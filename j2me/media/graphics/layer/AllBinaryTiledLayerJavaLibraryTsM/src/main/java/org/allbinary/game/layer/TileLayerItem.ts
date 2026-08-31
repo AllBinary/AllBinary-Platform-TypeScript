@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
@@ -57,7 +57,9 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
+                
 export class TileLayerItem extends ABCustomItem implements ABCustomItemInterface {
         
 

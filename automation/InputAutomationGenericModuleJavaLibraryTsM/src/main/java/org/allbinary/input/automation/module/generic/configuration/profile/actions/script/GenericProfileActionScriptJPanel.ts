@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { MouseEvent } from '../../../../../../../../../../java/awt/event/MouseEvent.js';
@@ -73,15 +73,33 @@ import { CustomTreeNodeInterface } from '../../../../../../../../../../org/allbi
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
-import { GenericProfileActionScript } from './GenericProfileActionScript.js';
-import { JTree } from './JTree.js';
-import { JScrollPane } from './JScrollPane.js';
-import { GridLayout } from './GridLayout.js';
-import { Dimension } from './Dimension.js';
-import { MouseAdapter } from './MouseAdapter.js';
-import { JPopupMenu } from './JPopupMenu.js';
-import { JComponent } from './JComponent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JPanel;
 
+                import { GenericProfileActionScript } from './GenericProfileActionScript.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GenericProfileActionScript;
+
+                import { JTree } from './JTree.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JTree;
+
+                import { JScrollPane } from './JScrollPane.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JScrollPane;
+
+                import { GridLayout } from './GridLayout.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.GridLayout;
+
+                import { Dimension } from './Dimension.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.Dimension;
+
+                import { MouseAdapter } from './MouseAdapter.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.MouseAdapter;
+
+                import { JPopupMenu } from './JPopupMenu.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JPopupMenu;
+
+                import { JComponent } from './JComponent.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.generic.configuration.profile.actions.script.JComponent;
+
+                
 export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {
         
 

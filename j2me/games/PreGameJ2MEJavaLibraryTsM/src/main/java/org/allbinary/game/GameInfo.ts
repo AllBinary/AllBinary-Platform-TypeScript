@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -77,12 +77,24 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameTypeFactory } from './GameTypeFactory.js';
-import { GameMode } from './GameMode.js';
-import { PlayerTypesFactory } from './PlayerTypesFactory.js';
-import { GameInfoData } from './GameInfoData.js';
-import { GameType } from './GameType.js';
-import { PlayerType } from './PlayerType.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameTypeFactory;
 
+                import { GameMode } from './GameMode.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameMode;
+
+                import { PlayerTypesFactory } from './PlayerTypesFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.PlayerTypesFactory;
+
+                import { GameInfoData } from './GameInfoData.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameInfoData;
+
+                import { GameType } from './GameType.js';
+//not GWT import const  = globalThis.org.allbinary.game.GameType;
+
+                import { PlayerType } from './PlayerType.js';
+//not GWT import const  = globalThis.org.allbinary.game.PlayerType;
+
+                
 export class GameInfo
             extends Object
          {

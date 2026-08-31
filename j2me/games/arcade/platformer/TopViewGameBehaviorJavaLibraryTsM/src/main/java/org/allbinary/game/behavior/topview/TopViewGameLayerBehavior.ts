@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { GameLayerBehavior } from '../../../../../org/allbinary/game/layer/behavior/GameLayerBehavior.js';
@@ -49,7 +49,9 @@ import { VelocityProperties } from '../../../../../org/allbinary/game/physics/ve
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitialJumpBehavior } from './InitialJumpBehavior.js';
+//not GWT import const  = globalThis.org.allbinary.game.behavior.topview.InitialJumpBehavior;
 
+                
 export class TopViewGameLayerBehavior extends GameLayerBehavior {
         
 

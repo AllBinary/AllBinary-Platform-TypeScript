@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,7 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Scoreable } from './Scoreable.js';
+//not GWT import const  = globalThis.org.allbinary.game.score.Scoreable;
 
+                
 export class NoScoreable extends Scoreable {
         
 

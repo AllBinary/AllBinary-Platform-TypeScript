@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -41,8 +41,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformDocument } from './TransformDocument.js';
-import { TransformDocumentInterface } from './TransformDocumentInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformDocument;
 
+                import { TransformDocumentInterface } from './TransformDocumentInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.visual.transform.data.TransformDocumentInterface;
+
+                
 export class TransformDocumentFactory
             extends Object
          {

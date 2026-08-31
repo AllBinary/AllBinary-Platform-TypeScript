@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -79,10 +79,18 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-import { TimeIntervalActionScriptConditionInterface } from './TimeIntervalActionScriptConditionInterface.js';
-import { TimeIntervalActionScriptConditionJPanel } from './TimeIntervalActionScriptConditionJPanel.js';
-import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
 
+                import { TimeIntervalActionScriptConditionInterface } from './TimeIntervalActionScriptConditionInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionInterface;
+
+                import { TimeIntervalActionScriptConditionJPanel } from './TimeIntervalActionScriptConditionJPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionJPanel;
+
+                import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.TimeIntervalActionScriptConditionData;
+
+                
 export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptCondition implements TimeIntervalActionScriptConditionInterface {
         
 

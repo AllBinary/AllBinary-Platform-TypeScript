@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -67,8 +67,12 @@ import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BuildingPropertiesFactory } from './BuildingPropertiesFactory.js';
-import { BuildingLayer } from './BuildingLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.building.BuildingPropertiesFactory;
 
+                import { BuildingLayer } from './BuildingLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.building.BuildingLayer;
+
+                
 export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactory {
         
 

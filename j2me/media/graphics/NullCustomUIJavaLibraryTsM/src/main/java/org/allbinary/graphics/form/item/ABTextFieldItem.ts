@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../../jsinterop/annotations/JsType.js';
@@ -55,7 +55,9 @@ import { JsConstructor } from '../../../../../jsinterop/annotations/JsConstructo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ABTextItem } from './ABTextItem.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.form.item.ABTextItem;
 
+                
 export class ABTextFieldItem extends ABTextItem {
         
 

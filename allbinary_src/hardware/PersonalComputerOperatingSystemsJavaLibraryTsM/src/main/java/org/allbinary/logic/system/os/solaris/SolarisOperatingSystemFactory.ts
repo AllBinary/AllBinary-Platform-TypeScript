@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -73,7 +73,9 @@ import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/o
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SolarisOS } from './SolarisOS.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.solaris.SolarisOS;
 
+                
 export class SolarisOperatingSystemFactory
             extends Object
          {

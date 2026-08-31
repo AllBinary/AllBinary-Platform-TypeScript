@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,9 +51,15 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameKey } from './PCGameKey.js';
-import { PCKeyFactory } from './PCKeyFactory.js';
-import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PCGameKey;
 
+                import { PCKeyFactory } from './PCKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PCKeyFactory;
+
+                import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+
+                
 export class PlatformKeyFactory
             extends Object
          {

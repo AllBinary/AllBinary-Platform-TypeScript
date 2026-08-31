@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -51,8 +51,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameKey } from './PCGameKey.js';
-import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.PCGameKey;
 
+                import { Input } from './Input.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.Input;
+
+                
 export class PCKeyFactory
             extends Object
          {

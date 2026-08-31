@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -61,7 +61,9 @@ import { InventorySearch } from '../../../../views/generic/inventory/InventorySe
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryViewSearchInterface } from './InventoryViewSearchInterface.js';
+//not GWT import const  = globalThis.views.admin.inventory.listings.InventoryViewSearchInterface;
 
+                
 export class InventoryViewFactory
             extends Object
          {

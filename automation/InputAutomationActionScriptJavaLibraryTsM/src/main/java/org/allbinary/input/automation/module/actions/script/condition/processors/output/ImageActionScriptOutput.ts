@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
@@ -77,12 +77,24 @@ import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js'
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptOutput } from './BasicProfileActionScriptOutput.js';
-import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
-import { ImageTypes } from './ImageTypes.js';
-import { ImageActionScriptOutputJPanel } from './ImageActionScriptOutputJPanel.js';
-import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
-import { ImageActionScriptOutputProcessor } from './ImageActionScriptOutputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.BasicProfileActionScriptOutput;
 
+                import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputInterface;
+
+                import { ImageTypes } from './ImageTypes.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageTypes;
+
+                import { ImageActionScriptOutputJPanel } from './ImageActionScriptOutputJPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputJPanel;
+
+                import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputData;
+
+                import { ImageActionScriptOutputProcessor } from './ImageActionScriptOutputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.actions.script.condition.processors.output.ImageActionScriptOutputProcessor;
+
+                
 export class ImageActionScriptOutput extends BasicProfileActionScriptOutput implements ImageActionScriptOutputInterface {
         
 

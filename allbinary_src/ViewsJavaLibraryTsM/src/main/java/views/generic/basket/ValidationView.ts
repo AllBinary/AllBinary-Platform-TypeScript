@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../java/lang/Exception.js';
@@ -59,7 +59,9 @@ import { Node } from '../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasketView } from './BasketView.js';
+//not GWT import const  = globalThis.views.generic.basket.BasketView;
 
+                
 export class ValidationView extends BasketView implements ValidationComponentInterface {
         
 

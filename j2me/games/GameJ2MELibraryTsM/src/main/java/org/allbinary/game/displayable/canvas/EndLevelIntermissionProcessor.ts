@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -43,7 +43,9 @@ import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
 
+                
 export class EndLevelIntermissionProcessor extends Processor {
         
 

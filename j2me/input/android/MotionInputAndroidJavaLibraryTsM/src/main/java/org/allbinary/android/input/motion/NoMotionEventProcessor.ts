@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,7 +37,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventProcessor } from './MotionEventProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.android.input.motion.MotionEventProcessor;
 
+                
 export class NoMotionEventProcessor extends MotionEventProcessor {
         
 

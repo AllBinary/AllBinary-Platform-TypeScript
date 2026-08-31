@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Class } from '../java/lang/Class.js';
@@ -77,7 +77,9 @@ import { LicensingException } from '../org/allbinary/logic/system/security/licen
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
+//not GWT import const  = globalThis.tags.HelperTag;
 
+                
 export class ModifyTag extends HelperTag {
         
 

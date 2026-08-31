@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@ import { View } from '../../../../android/view/View.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { KeyInputViewCompositeInterface } from './KeyInputViewCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.android.activity.KeyInputViewCompositeInterface;
 
+                
 export class NullKeyInputViewComposite
             extends Object
          implements KeyInputViewCompositeInterface {

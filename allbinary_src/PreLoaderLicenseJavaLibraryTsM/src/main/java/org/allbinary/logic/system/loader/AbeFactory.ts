@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -77,8 +77,12 @@ import { LicensingException } from '../../../../../org/allbinary/logic/system/se
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WebappClassLoaderInfo } from './WebappClassLoaderInfo.js';
-import { AbeClassLoader } from './AbeClassLoader.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.loader.WebappClassLoaderInfo;
 
+                import { AbeClassLoader } from './AbeClassLoader.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.loader.AbeClassLoader;
+
+                
 export class AbeFactory
             extends Object
          {

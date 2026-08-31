@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -53,8 +53,12 @@ import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
-import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageUtil;
 
+                import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.ImageJ2SEUtil;
+
+                
 export class ImageJ2SERotationUtil
             extends Object
          {

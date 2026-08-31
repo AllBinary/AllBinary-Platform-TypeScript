@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -63,8 +63,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Group } from './Group.js';
-import { GroupCommonFactory } from './GroupCommonFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.identification.Group;
 
+                import { GroupCommonFactory } from './GroupCommonFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.identification.GroupCommonFactory;
+
+                
 export class CompositeGroup
             extends Object
          {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { awt } from '../../../../../../../../../java/awt.js';
@@ -41,8 +41,12 @@ import { awt } from '../../../../../../../../../java/awt.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProfileActionScriptInputInterface } from './ProfileActionScriptInputInterface.js';
-import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.ProfileActionScriptInputInterface;
 
+                import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.Point;
+
+                
 export interface MouseActionScriptInputInterface extends ProfileActionScriptInputInterface {
         
 

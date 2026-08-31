@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -56,9 +56,13 @@ import { JsProperty } from '../../../jsinterop/annotations/JsProperty.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ArrayUtil } from './ArrayUtil.js';
-import { BasicArrayListS } from './BasicArrayListS.js';
-//This is a very fast and simple resizable list.
+        //not plain js import { ArrayUtil } from './ArrayUtil.js';
+const  = globalThis.org.allbinary.util.ArrayUtil;
+
+                //not plain js import { BasicArrayListS } from './BasicArrayListS.js';
+const  = globalThis.org.allbinary.util.BasicArrayListS;
+
+                //This is a very fast and simple resizable list.
 export class BasicArrayList
             extends Object
          {

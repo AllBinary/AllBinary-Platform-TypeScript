@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -79,9 +79,15 @@ import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengle
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-import { AllBinaryFlickerAndroidImageRotationAnimation } from './AllBinaryFlickerAndroidImageRotationAnimation.js';
-import { AllBinaryAdjustedAndroidImageRotationAnimation } from './AllBinaryAdjustedAndroidImageRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
+                import { AllBinaryFlickerAndroidImageRotationAnimation } from './AllBinaryFlickerAndroidImageRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryFlickerAndroidImageRotationAnimation;
+
+                import { AllBinaryAdjustedAndroidImageRotationAnimation } from './AllBinaryAdjustedAndroidImageRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.AllBinaryAdjustedAndroidImageRotationAnimation;
+
+                
 export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

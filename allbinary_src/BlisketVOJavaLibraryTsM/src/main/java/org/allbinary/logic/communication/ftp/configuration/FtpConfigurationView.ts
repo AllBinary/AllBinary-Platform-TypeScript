@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -69,10 +69,18 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
-import { FtpConfiguration } from './FtpConfiguration.js';
-import { FtpConfigurationData } from './FtpConfigurationData.js';
-import { FtpConfigurationMapping } from './FtpConfigurationMapping.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationInterface;
 
+                import { FtpConfiguration } from './FtpConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfiguration;
+
+                import { FtpConfigurationData } from './FtpConfigurationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationData;
+
+                import { FtpConfigurationMapping } from './FtpConfigurationMapping.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.ftp.configuration.FtpConfigurationMapping;
+
+                
 export class FtpConfigurationView
             extends Object
          implements DomNodeInterface {

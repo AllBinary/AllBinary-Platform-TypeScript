@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationCentral } from './GameConfigurationCentral.js';
-import { GameConfiguration } from './GameConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationCentral;
 
+                import { GameConfiguration } from './GameConfiguration.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfiguration;
+
+                
 export class GameSpeed
             extends Object
          {

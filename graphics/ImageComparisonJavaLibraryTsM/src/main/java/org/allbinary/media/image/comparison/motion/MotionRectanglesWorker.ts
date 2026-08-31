@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -79,16 +79,36 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
-import { AllMotionRectangles } from './AllMotionRectangles.js';
-import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
-import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
-import { ConsolidateMotionRectangles } from './ConsolidateMotionRectangles.js';
-import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
-import { ConstrainedMotionRectangles } from './ConstrainedMotionRectangles.js';
-import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
-import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
-import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangleConstraintsInterface;
 
+                import { AllMotionRectangles } from './AllMotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectangles;
+
+                import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.AllMotionRectanglesResultsCacheSingleton;
+
+                import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsFrameCacheable;
+
+                import { ConsolidateMotionRectangles } from './ConsolidateMotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConsolidateMotionRectangles;
+
+                import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConsolidatedMotionRectanglesResultsCacheSingleton;
+
+                import { ConstrainedMotionRectangles } from './ConstrainedMotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectangles;
+
+                import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.ConstrainedMotionRectanglesResultsCacheSingleton;
+
+                import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectanglesResultsEvent;
+
+                import { MotionRectangles } from './MotionRectangles.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.comparison.motion.MotionRectangles;
+
+                
 export class MotionRectanglesWorker extends BasicEventHandler implements ImageComparisonResultsListener {
         
 

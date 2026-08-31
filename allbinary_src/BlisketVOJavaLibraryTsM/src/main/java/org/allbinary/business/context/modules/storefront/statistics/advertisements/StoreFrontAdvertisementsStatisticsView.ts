@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -61,8 +61,12 @@ import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontAdvertisementsStatisticsInterface } from './StoreFrontAdvertisementsStatisticsInterface.js';
-import { StoreFrontAdvertisementsStatisticsData } from './StoreFrontAdvertisementsStatisticsData.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.advertisements.StoreFrontAdvertisementsStatisticsInterface;
 
+                import { StoreFrontAdvertisementsStatisticsData } from './StoreFrontAdvertisementsStatisticsData.js';
+//not GWT import const  = globalThis.org.allbinary.business.context.modules.storefront.statistics.advertisements.StoreFrontAdvertisementsStatisticsData;
+
+                
 export class StoreFrontAdvertisementsStatisticsView
             extends Object
          implements DomNodeInterface {

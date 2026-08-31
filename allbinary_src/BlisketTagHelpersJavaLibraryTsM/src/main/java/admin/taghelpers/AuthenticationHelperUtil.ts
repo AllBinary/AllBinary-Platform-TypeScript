@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../java/lang/Object.js';
@@ -81,7 +81,9 @@ import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AuthenticationHelper } from './AuthenticationHelper.js';
+//not GWT import const  = globalThis.admin.taghelpers.AuthenticationHelper;
 
+                
 export class AuthenticationHelperUtil
             extends Object
          {

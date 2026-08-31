@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 //not plain js import { Font } from '../../../../javax/microedition/lcdui/Font.js';
@@ -65,10 +65,18 @@ import { CommonButtons } from '../../../../org/allbinary/input/motion/button/Com
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SelectionHudPaintable } from './SelectionHudPaintable.js';
-import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
-import { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
-import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.SelectionHudPaintable;
 
+                import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayerCompositePaintable;
+
+                import { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.UpgradableWideRTSLayerPaintable;
+
+                import { RTSLayer } from './RTSLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.RTSLayer;
+
+                
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
         
 

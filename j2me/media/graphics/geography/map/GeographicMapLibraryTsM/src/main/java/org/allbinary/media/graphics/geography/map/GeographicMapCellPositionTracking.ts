@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -49,11 +49,21 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
-import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
-import { GeographicMapCellType } from './GeographicMapCellType.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
-import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.SimpleGeographicMapCellPositionFactory;
 
+                import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellPosition;
+
+                import { GeographicMapCellType } from './GeographicMapCellType.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCellType;
+
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
+
+                
 export class GeographicMapCellPositionTracking
             extends Object
          {

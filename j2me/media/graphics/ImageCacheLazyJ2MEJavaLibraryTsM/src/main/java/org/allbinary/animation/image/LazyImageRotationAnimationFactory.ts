@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -65,8 +65,12 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
-import { LazyImageRotationAnimation } from './LazyImageRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.BaseImageAnimationFactory;
 
+                import { LazyImageRotationAnimation } from './LazyImageRotationAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.image.LazyImageRotationAnimation;
+
+                
 export class LazyImageRotationAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

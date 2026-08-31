@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { PaymentTransactionResultHelperFactory } from '../../admin/taghelpers/PaymentTransactionResultHelperFactory.js';
@@ -41,7 +41,9 @@ import { PaymentTransactionResultHelperFactory } from '../../admin/taghelpers/Pa
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
+//not GWT import const  = globalThis.admin.tags.TableTag;
 
+                
 export class PaymentTransactionResultTag extends TableTag {
         
 

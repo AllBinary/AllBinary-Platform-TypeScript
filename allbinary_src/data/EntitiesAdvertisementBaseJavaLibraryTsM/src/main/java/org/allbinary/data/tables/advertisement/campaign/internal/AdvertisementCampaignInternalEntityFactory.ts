@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -49,8 +49,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInternalEntity } from './AdvertisementCampaignInternalEntity.js';
-import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntity;
 
+                import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
+//not GWT import const  = globalThis.org.allbinary.data.tables.advertisement.campaign.internal.AdvertisementCampaignInternalEntityInterface;
+
+                
 export class AdvertisementCampaignInternalEntityFactory
             extends Object
          {

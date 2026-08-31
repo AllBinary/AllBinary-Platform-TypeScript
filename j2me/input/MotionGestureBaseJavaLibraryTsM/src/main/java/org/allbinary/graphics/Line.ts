@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -38,9 +38,13 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GPoint } from './GPoint.js';
-import { PointFactory } from './PointFactory.js';
+        //not plain js import { GPoint } from './GPoint.js';
+const  = globalThis.org.allbinary.graphics.GPoint;
 
+                //not plain js import { PointFactory } from './PointFactory.js';
+const  = globalThis.org.allbinary.graphics.PointFactory;
+
+                
 export class Line
             extends Object
          {

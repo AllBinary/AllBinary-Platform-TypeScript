@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -64,9 +64,13 @@ import { JsConstructor } from '../../../jsinterop/annotations/JsConstructor.js';
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AngleFactory } from './AngleFactory.js';
-import { FrameUtil } from './FrameUtil.js';
+        //not plain js import { AngleFactory } from './AngleFactory.js';
+const  = globalThis.org.allbinary.math.AngleFactory;
 
+                //not plain js import { FrameUtil } from './FrameUtil.js';
+const  = globalThis.org.allbinary.math.FrameUtil;
+
+                
 export class AngleIncrementInfo
             extends Object
          {

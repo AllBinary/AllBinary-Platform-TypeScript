@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../java/lang/Object.js';
@@ -51,8 +51,12 @@ import { StoreFront } from '../../../../../../../../org/allbinary/business/conte
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Serializable } from './Serializable.js';
-import { PaymentGateway } from './PaymentGateway.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.Serializable;
 
+                import { PaymentGateway } from './PaymentGateway.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.PaymentGateway;
+
+                
 export class PaymentGatewayPrimaryKey
             extends Object
          implements java.io.Serializable {

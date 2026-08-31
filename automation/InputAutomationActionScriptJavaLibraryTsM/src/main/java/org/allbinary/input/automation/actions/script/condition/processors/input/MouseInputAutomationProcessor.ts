@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -59,7 +59,9 @@ import { InputRobotInterface } from '../../../../../../../../../org/allbinary/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.MouseActionScriptInputInterface;
 
+                
 export class MouseInputAutomationProcessor
             extends Object
          {

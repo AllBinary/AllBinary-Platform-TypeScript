@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -61,11 +61,21 @@ import { AbeLicenseClient } from '../../../../../../org/allbinary/logic/system/s
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeLicenseInterface } from './AbeLicenseInterface.js';
-import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
-import { AbeNoLicense } from './AbeNoLicense.js';
-import { AbeClientInformationData } from './AbeClientInformationData.js';
-import { LicensingException } from './LicensingException.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeLicenseInterface;
 
+                import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationInterface;
+
+                import { AbeNoLicense } from './AbeNoLicense.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeNoLicense;
+
+                import { AbeClientInformationData } from './AbeClientInformationData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.AbeClientInformationData;
+
+                import { LicensingException } from './LicensingException.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.security.licensing.LicensingException;
+
+                
 export class AbeLicenseInterfaceFactory
             extends Object
          {

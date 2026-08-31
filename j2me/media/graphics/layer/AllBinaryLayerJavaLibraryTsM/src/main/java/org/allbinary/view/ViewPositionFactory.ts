@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -39,9 +39,15 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionFactoryInterface } from './ViewPositionFactoryInterface.js';
-import { ViewPosition } from './ViewPosition.js';
-import { ViewPositionBase } from './ViewPositionBase.js';
+//not GWT import const  = globalThis.org.allbinary.view.ViewPositionFactoryInterface;
 
+                import { ViewPosition } from './ViewPosition.js';
+//not GWT import const  = globalThis.org.allbinary.view.ViewPosition;
+
+                import { ViewPositionBase } from './ViewPositionBase.js';
+//not GWT import const  = globalThis.org.allbinary.view.ViewPositionBase;
+
+                
 export class ViewPositionFactory
             extends Object
          implements ViewPositionFactoryInterface {

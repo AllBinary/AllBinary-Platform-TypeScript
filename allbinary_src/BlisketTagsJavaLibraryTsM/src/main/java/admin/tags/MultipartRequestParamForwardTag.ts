@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../java/lang/Exception.js';
@@ -75,8 +75,12 @@ import { HelperTag } from '../../tags/HelperTag.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
-import { AbTagData } from './AbTagData.js';
+//not GWT import const  = globalThis.admin.tags.ParentInventoryTagHelper;
 
+                import { AbTagData } from './AbTagData.js';
+//not GWT import const  = globalThis.admin.tags.AbTagData;
+
+                
 export class MultipartRequestParamForwardTag extends CustomTagSupport {
         
 

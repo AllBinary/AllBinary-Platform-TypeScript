@@ -1,7 +1,7 @@
 
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -29,10 +29,18 @@ import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInf
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AndroidAPI12KeyFactory } from './AndroidAPI12KeyFactory.js';
-import { AndroidAPI9KeyFactory } from './AndroidAPI9KeyFactory.js';
-import { AndroidAPI1KeyFactory } from './AndroidAPI1KeyFactory.js';
-import { AndroidKeyFactory } from './AndroidKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidAPI12KeyFactory;
 
+                import { AndroidAPI9KeyFactory } from './AndroidAPI9KeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidAPI9KeyFactory;
+
+                import { AndroidAPI1KeyFactory } from './AndroidAPI1KeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidAPI1KeyFactory;
+
+                import { AndroidKeyFactory } from './AndroidKeyFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.AndroidKeyFactory;
+
+                
 export class ActivityFractureControllerUtilFactory
             extends Object
          {

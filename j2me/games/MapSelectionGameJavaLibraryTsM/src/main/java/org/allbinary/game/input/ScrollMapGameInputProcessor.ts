@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 
@@ -37,8 +37,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInputProcessor } from './GameInputProcessor.js';
-import { ScrollMapPlayerGameInput } from './ScrollMapPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.GameInputProcessor;
 
+                import { ScrollMapPlayerGameInput } from './ScrollMapPlayerGameInput.js';
+//not GWT import const  = globalThis.org.allbinary.game.input.ScrollMapPlayerGameInput;
+
+                
 export class ScrollMapGameInputProcessor extends GameInputProcessor {
         
 

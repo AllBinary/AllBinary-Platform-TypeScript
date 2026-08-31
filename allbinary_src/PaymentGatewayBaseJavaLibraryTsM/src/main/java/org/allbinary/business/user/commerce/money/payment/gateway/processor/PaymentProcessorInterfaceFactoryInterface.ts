@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -47,7 +47,9 @@ import { TransformInfoInterface } from '../../../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.commerce.money.payment.gateway.processor.PaymentProcessorInterface;
 
+                
 export interface PaymentProcessorInterfaceFactoryInterface {
         
 

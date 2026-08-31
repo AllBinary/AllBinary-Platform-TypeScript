@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../java/lang/Object.js';
@@ -65,9 +65,15 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackInfo } from './RaceTrackInfo.js';
-import { RaceTrackData } from './RaceTrackData.js';
-import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackInfo;
 
+                import { RaceTrackData } from './RaceTrackData.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.RaceTrackData;
+
+                import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.racetrack.AllBinaryTiledLayerFactoryInterface;
+
+                
 export class BasicGeographicMapFactory
             extends Object
          {

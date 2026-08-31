@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -73,8 +73,12 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextAnimation } from './CustomTextAnimation.js';
-import { AdjustCustomTextAnimation } from './AdjustCustomTextAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.text.CustomTextAnimation;
 
+                import { AdjustCustomTextAnimation } from './AdjustCustomTextAnimation.js';
+//not GWT import const  = globalThis.org.allbinary.animation.text.AdjustCustomTextAnimation;
+
+                
 export class CustomTextAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -379,14 +379,30 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
-import { MenuListener } from './MenuListener.js';
-import { FormUtil } from './FormUtil.js';
-import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
-import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
-import { GameRunnable } from './GameRunnable.js';
-import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
 
+                import { MenuListener } from './MenuListener.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.MenuListener;
+
+                import { FormUtil } from './FormUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.FormUtil;
+
+                import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.NoMenuInputProcessor;
+
+                import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
+
+                import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.NullWaitGameRunnable;
+
+                import { GameRunnable } from './GameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
+
+                import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingCanvas;
+
+                
 export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener {
         
 

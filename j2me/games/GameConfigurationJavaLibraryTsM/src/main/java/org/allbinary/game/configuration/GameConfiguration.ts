@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -79,7 +79,9 @@ import { JsConstructor } from '../../../../jsinterop/annotations/JsConstructor.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
+//not GWT import const  = globalThis.org.allbinary.game.configuration.GameConfigurationSingleton;
 
+                
 export class GameConfiguration
             extends Object
          {

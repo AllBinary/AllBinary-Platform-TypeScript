@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -47,8 +47,12 @@ import { CacheableInterfaceFactoryInterface } from '../../../../../org/allbinary
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BufferedImageCacheable } from './BufferedImageCacheable.js';
-import { BufferedImageInfo } from './BufferedImageInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.cache.BufferedImageCacheable;
 
+                import { BufferedImageInfo } from './BufferedImageInfo.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.cache.BufferedImageInfo;
+
+                
 export class BufferedImageCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

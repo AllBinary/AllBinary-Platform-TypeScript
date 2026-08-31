@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -59,8 +59,12 @@ import { Portion } from '../../../../../org/allbinary/business/installer/Portion
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlStrings } from './SqlStrings.js';
-import { AbSqlTable } from './AbSqlTable.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.SqlStrings;
 
+                import { AbSqlTable } from './AbSqlTable.js';
+//not GWT import const  = globalThis.org.allbinary.logic.communication.sql.AbSqlTable;
+
+                
 export class AbSqlTableUtil
             extends Object
          {

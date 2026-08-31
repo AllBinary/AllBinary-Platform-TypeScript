@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../java/lang/Object.js';
@@ -51,8 +51,12 @@ import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/colo
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
-import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.GeographicMapCompositeInterface;
 
+                import { BasicGeographicMap } from './BasicGeographicMap.js';
+//not GWT import const  = globalThis.org.allbinary.media.graphics.geography.map.BasicGeographicMap;
+
+                
 export class ColorFromEventUtil
             extends Object
          {

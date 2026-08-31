@@ -13,8 +13,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../java/lang/Exception.js';
@@ -54,7 +54,9 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointEventListenerInterface } from './WaypointEventListenerInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.waypoint.event.WaypointEventListenerInterface;
 
+                
 export class WaypointEventHandler extends BasicEventHandler {
         
 

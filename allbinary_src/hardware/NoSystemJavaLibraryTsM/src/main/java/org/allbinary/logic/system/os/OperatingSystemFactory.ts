@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -55,8 +55,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoOperatingSystem } from './NoOperatingSystem.js';
-import { GenericOperatingSystem } from './GenericOperatingSystem.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.NoOperatingSystem;
 
+                import { GenericOperatingSystem } from './GenericOperatingSystem.js';
+//not GWT import const  = globalThis.org.allbinary.logic.system.os.GenericOperatingSystem;
+
+                
 export class OperatingSystemFactory
             extends Object
          {

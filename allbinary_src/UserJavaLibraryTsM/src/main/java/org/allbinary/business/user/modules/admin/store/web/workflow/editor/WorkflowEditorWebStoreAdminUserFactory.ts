@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { UserInterface } from '../../../../../../../../../../org/allbinary/busin
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkflowEditorWebStoreAdminUser } from './WorkflowEditorWebStoreAdminUser.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.admin.store.web.workflow.editor.WorkflowEditorWebStoreAdminUser;
 
+                
 export class WorkflowEditorWebStoreAdminUserFactory
             extends Object
          implements UserFactoryInterface {

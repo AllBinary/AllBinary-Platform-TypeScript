@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -457,22 +457,54 @@ import { JsProperty } from '../../../../../jsinterop/annotations/JsProperty.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
-import { MenuListener } from './MenuListener.js';
-import { DemoPaintableInterface } from './DemoPaintableInterface.js';
-import { FormUtil } from './FormUtil.js';
-import { NullGameCanvas } from './NullGameCanvas.js';
-import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
-import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
-import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
-import { DemoGameStartupRunnable } from './DemoGameStartupRunnable.js';
-import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
-import { GameRunnable } from './GameRunnable.js';
-import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
-import { DemoLimitedCommandTextItemArrayFactory } from './DemoLimitedCommandTextItemArrayFactory.js';
-import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
-import { DemoCanvasProgressUtil } from './DemoCanvasProgressUtil.js';
-import { DemoGameRunnable } from './DemoGameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameCanvasRunnableInterface;
 
+                import { MenuListener } from './MenuListener.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.MenuListener;
+
+                import { DemoPaintableInterface } from './DemoPaintableInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoPaintableInterface;
+
+                import { FormUtil } from './FormUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.FormUtil;
+
+                import { NullGameCanvas } from './NullGameCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.NullGameCanvas;
+
+                import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.AllBinaryGameCanvas;
+
+                import { NoMenuInputProcessor } from './NoMenuInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.NoMenuInputProcessor;
+
+                import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.BasicMenuInputProcessor;
+
+                import { DemoGameStartupRunnable } from './DemoGameStartupRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoGameStartupRunnable;
+
+                import { NullWaitGameRunnable } from './NullWaitGameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.NullWaitGameRunnable;
+
+                import { GameRunnable } from './GameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameRunnable;
+
+                import { GameInputMappingCanvas } from './GameInputMappingCanvas.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.GameInputMappingCanvas;
+
+                import { DemoLimitedCommandTextItemArrayFactory } from './DemoLimitedCommandTextItemArrayFactory.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoLimitedCommandTextItemArrayFactory;
+
+                import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.CommandFormInputProcessor;
+
+                import { DemoCanvasProgressUtil } from './DemoCanvasProgressUtil.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoCanvasProgressUtil;
+
+                import { DemoGameRunnable } from './DemoGameRunnable.js';
+//not GWT import const  = globalThis.org.allbinary.game.displayable.canvas.DemoGameRunnable;
+
+                
 export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener, DemoPaintableInterface {
         
 

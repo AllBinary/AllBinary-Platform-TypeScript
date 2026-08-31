@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -45,8 +45,12 @@ import { Hashtable } from '../../../../java/util/Hashtable.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
-import { BasicColorFactory } from './BasicColorFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColor;
 
+                import { BasicColorFactory } from './BasicColorFactory.js';
+//not GWT import const  = globalThis.org.allbinary.graphics.color.BasicColorFactory;
+
+                
 export class BasicColorCacheFactory
             extends Object
          {

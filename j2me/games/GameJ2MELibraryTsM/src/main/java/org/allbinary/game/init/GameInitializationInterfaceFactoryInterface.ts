@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { JsType } from '../../../../jsinterop/annotations/JsType.js';
@@ -45,7 +45,9 @@ import { JsMethod } from '../../../../jsinterop/annotations/JsMethod.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameInitializationInterface } from './GameInitializationInterface.js';
+//not GWT import const  = globalThis.org.allbinary.game.init.GameInitializationInterface;
 
+                
 export interface GameInitializationInterfaceFactoryInterface {
         
 

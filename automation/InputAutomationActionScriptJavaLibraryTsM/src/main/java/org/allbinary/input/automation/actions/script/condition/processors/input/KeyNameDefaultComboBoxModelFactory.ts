@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.processors.input.DefaultComboBoxModel;
 
+                
 export class KeyNameDefaultComboBoxModelFactory
             extends Object
          {

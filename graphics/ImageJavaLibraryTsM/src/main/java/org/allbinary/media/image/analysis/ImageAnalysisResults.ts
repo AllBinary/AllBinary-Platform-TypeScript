@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageColorRangeResults } from './ImageColorRangeResults.js';
-import { ImageColorResults } from './ImageColorResults.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ImageColorRangeResults;
 
+                import { ImageColorResults } from './ImageColorResults.js';
+//not GWT import const  = globalThis.org.allbinary.media.image.analysis.ImageColorResults;
+
+                
 export class ImageAnalysisResults
             extends Object
          {

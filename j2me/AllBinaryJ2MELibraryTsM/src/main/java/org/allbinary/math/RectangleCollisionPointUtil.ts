@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -46,8 +46,10 @@
 
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RectangleCollisionUtil } from './RectangleCollisionUtil.js';
+        //not plain js import { RectangleCollisionUtil } from './RectangleCollisionUtil.js';
+const  = globalThis.org.allbinary.math.RectangleCollisionUtil;
 
+                
 export class RectangleCollisionPointUtil
             extends Object
          {

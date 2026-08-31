@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Integer } from '../../../../java/lang/Integer.js';
@@ -59,7 +59,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
+//not GWT import const  = globalThis.org.allbinary.game.layer.AllBinaryTiledLayer;
 
+                
 export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
         
 

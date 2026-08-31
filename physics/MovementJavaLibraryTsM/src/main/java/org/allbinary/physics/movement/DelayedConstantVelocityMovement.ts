@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../java/lang/Exception.js';
@@ -59,7 +59,9 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicConstantVelocityMovement } from './BasicConstantVelocityMovement.js';
+//not GWT import const  = globalThis.org.allbinary.physics.movement.BasicConstantVelocityMovement;
 
+                
 export class DelayedConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 

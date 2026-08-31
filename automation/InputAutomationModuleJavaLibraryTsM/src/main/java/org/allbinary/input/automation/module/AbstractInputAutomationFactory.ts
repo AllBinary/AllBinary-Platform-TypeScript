@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { URL } from '../../../../../java/net/URL.js';
@@ -53,8 +53,12 @@ import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaH
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
-import { JPanel } from './JPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.InputAutomationModuleFactoryInterface;
 
+                import { JPanel } from './JPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.module.JPanel;
+
+                
 export class AbstractInputAutomationFactory extends InputAutomationModuleFactoryInterface {
         
 

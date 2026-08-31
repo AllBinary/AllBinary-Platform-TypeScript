@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -47,7 +47,9 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LongData } from './LongData.js';
+//not GWT import const  = globalThis.org.allbinary.logic.java.number.LongData;
 
+                
 export class LongUtil
             extends Object
          {

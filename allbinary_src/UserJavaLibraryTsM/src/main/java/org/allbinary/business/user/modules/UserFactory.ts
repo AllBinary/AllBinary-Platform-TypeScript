@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -53,7 +53,9 @@ import { UserInterface } from '../../../../../org/allbinary/business/user/UserIn
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { User } from './User.js';
+//not GWT import const  = globalThis.org.allbinary.business.user.modules.User;
 
+                
 export class UserFactory
             extends Object
          implements UserFactoryInterface {

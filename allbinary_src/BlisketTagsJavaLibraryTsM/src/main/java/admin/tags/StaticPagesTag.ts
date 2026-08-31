@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Class } from '../../java/lang/Class.js';
@@ -77,7 +77,9 @@ import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/in
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
+//not GWT import const  = globalThis.admin.tags.TableTag;
 
+                
 export class StaticPagesTag extends TableTag {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../java/lang/Exception.js';
@@ -69,7 +69,9 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { KeyPressesAI } from './KeyPressesAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.KeyPressesAI;
 
+                
 export class MultiKeyPressesAI extends KeyPressesAI {
         
 

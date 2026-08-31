@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../java/lang/Exception.js';
@@ -119,12 +119,24 @@ import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
-import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
-import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
-import { Point } from './Point.js';
-import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
-import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.BasicProfileActionScriptCondition;
 
+                import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionInterface;
+
+                import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionJPanel;
+
+                import { Point } from './Point.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Point;
+
+                import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.ColorAtActionScriptConditionData;
+
+                import { Color } from './Color.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.Color;
+
+                
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         
 

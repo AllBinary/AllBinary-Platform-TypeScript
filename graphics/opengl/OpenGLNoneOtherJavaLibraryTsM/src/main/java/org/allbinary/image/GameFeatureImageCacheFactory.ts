@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../java/lang/Object.js';
@@ -39,8 +39,12 @@
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheFactory } from './ImageCacheFactory.js';
-import { ImageCache } from './ImageCache.js';
+//not GWT import const  = globalThis.org.allbinary.image.ImageCacheFactory;
 
+                import { ImageCache } from './ImageCache.js';
+//not GWT import const  = globalThis.org.allbinary.image.ImageCache;
+
+                
 export class GameFeatureImageCacheFactory
             extends Object
          {

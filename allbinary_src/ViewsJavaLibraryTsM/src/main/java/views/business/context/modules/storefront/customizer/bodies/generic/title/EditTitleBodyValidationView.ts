@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
@@ -71,7 +71,9 @@ import { CustomizerUtil } from '../../../../../../../../../views/business/contex
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TitleBodyCustomizerView } from './TitleBodyCustomizerView.js';
+//not GWT import const  = globalThis.views.business.context.modules.storefront.customizer.bodies.generic.title.TitleBodyCustomizerView;
 
+                
 export class EditTitleBodyValidationView extends TitleBodyCustomizerView implements ValidationComponentInterface {
         
 

@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
 import { swing } from '../../../../../../../javax/swing.js';
@@ -45,7 +45,9 @@ import { MutableTreeNode } from '../../../../../../../javax/swing/tree/MutableTr
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPopupMenu } from './JPopupMenu.js';
+//not GWT import const  = globalThis.org.allbinary.input.automation.actions.script.condition.JPopupMenu;
 
+                
 export interface CustomTreeNodeInterface extends MutableTreeNode {
         
 

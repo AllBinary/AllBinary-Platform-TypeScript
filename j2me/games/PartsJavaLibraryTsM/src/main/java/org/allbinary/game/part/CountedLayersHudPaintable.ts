@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../java/lang/Object.js';
@@ -75,8 +75,12 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PartInterface } from './PartInterface.js';
-import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
+//not GWT import const  = globalThis.org.allbinary.game.part.PartInterface;
 
+                import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
+//not GWT import const  = globalThis.org.allbinary.game.part.CountedLayerInterfaceFactoryPart;
+
+                
 export class CountedLayersHudPaintable
             extends Object
          implements PaintableInterface, UpdateMyFontInterface {

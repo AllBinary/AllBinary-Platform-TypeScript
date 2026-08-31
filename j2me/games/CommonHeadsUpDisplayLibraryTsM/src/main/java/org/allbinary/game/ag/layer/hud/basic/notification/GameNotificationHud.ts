@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
@@ -81,7 +81,9 @@ import { EventStrings } from '../../../../../../../../org/allbinary/logic/util/e
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameNotification } from './GameNotification.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.layer.hud.basic.notification.GameNotification;
 
+                
 export class GameNotificationHud extends BasicHud implements GameNotificationListenerInterface {
         
 

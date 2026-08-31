@@ -14,8 +14,8 @@
         */
         
         /* Generated Code Do Not Modify */
-        
 
+        
 
 
             import { Object } from '../../../../../java/lang/Object.js';
@@ -65,8 +65,12 @@ import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLaye
                                         
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MultiKeyPressesAI } from './MultiKeyPressesAI.js';
-import { KeyPressesAI } from './KeyPressesAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.MultiKeyPressesAI;
 
+                import { KeyPressesAI } from './KeyPressesAI.js';
+//not GWT import const  = globalThis.org.allbinary.game.ag.ai.KeyPressesAI;
+
+                
 export class KeyPressesAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
